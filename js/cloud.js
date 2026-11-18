@@ -125,7 +125,7 @@
       if (val("ac-name").length < 2) { C.err = "Enter the name to show on the leaderboard."; return repaint(); }
       if (!val("ac-class")) { C.err = "Choose your class."; return repaint(); }
       if (!val("ac-email") || val("ac-pw").length < 6) { C.err = "Enter your email and a password of at least 6 characters."; return repaint(); }
-      run(C.sb.auth.signUp({ email: val("ac-email"), password: val("ac-pw"), options: { data: { display_name: val("ac-name"), class_id: val("ac-class") } } }), function (r) {
+      run(C.sb.auth.signUp({ email: val("ac-email"), password: val("ac-pw"), options: { emailRedirectTo: location.origin + location.pathname, data: { display_name: val("ac-name"), class_id: val("ac-class") } } }), function (r) {
         if (!r.data.session) C.msg = "Account created. Check your email for a confirmation link, then sign in.";
       });
     } else if (a === "signout") { run(C.sb.auth.signOut(), function () { C.profile = null; C.user = null; }); }
