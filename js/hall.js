@@ -23,7 +23,7 @@
       fields: [["secs", "Seconds per team", "num", 15, 300], ["pts", "Points per correct", "num", 1, 10], ["foul", "Penalty per foul", "num", 0, 10]] }
   };
 
-  var H = { view: "setup", teams: null, scope: "all", used: {}, cfg: null, pick: null, edit: false, note: "" };
+  var H = { view: "setup", teams: null, topics: [], used: {}, cfg: null, pick: null, edit: false, note: "", flash: null };
   var R = null;
 
   /* ---------- state ---------- */
@@ -33,17 +33,14 @@
     H.teams = (t && t.length >= 2) ? t : [1, 2, 3, 4].map(function (n) { return { name: "Team " + n, cls: "", score: 0 }; });
     var names = DX.store.get("dx.classnames", {});
     DX.curriculum.classes.forEach(function (k) { if (typeof names[k.id] === "string" && names[k.id] && !k.name) k.name = names[k.id]; });
+    H.topics = (DX.store.get("dx.hall.topics", []) || []).filter(function (id) { return DX.topicById[id]; });
     var c = DX.store.get("dx.hall.cfg", {});
     H.cfg = {};
     Object.keys(DEF).forEach(function (k) { H.cfg[k] = Object.assign({}, DEF[k], c[k] || {}); });
   }
   function save() { DX.store.set("dx.hall.teams", H.teams); DX.store.set("dx.hall.cfg", H.cfg); }
 
-  function inScope(x) {
-    if (H.scope === "all") return true;
-    var k = H.scope.slice(0, 2), id = H.scope.slice(2);
-    return k === "s:" ? x.subject === id : x.topic === id;
-  }
+  function inScope(x) { return !H.topics.length || H.topics.indexOf(x.topic) > -1; }
   function poolQs(mode) { return DX.questions.filter(function (q) { return inScope(q) && (mode !== 0 || q.open); }); }
   function poolTerms() { var t = DX.terms.filter(inScope); return t.length ? t : DX.terms; }
   function drawFrom(all, keyOf, n) {
@@ -63,18 +60,52 @@
   function wrapper(mode) { return function (q) { return wrapQ(q, mode); }; }
   function subOf(q) { return q.sub || DX.topicById[q.topic].name; }
 
+  /* ---------- sound: everything is synthesised in the browser, so there are no sound files to load ---------- */
+  var ac = null, master = null;
+  function vol() { var v = parseFloat(DX.store.get("dx.volume", 0.8)); return isNaN(v) ? 0.8 : Math.max(0, Math.min(1, v)); }
+  function audio() {
+    try {
+      if (!ac) {
+        ac = new (window.AudioContext || window.webkitAudioContext)();
+        master = ac.createGain();
+        var comp = ac.createDynamicsCompressor();   /* keeps a loud bell from distorting the speakers */
+        master.connect(comp); comp.connect(ac.destination);
+      }
+      if (ac.state === "suspended") ac.resume();
+      master.gain.value = vol();
+      return ac;
+    } catch (e) { return null; }
+  }
+  function tone(f, t0, dur, type, peak) {
+    var o = ac.createOscillator(), g = ac.createGain();
+    o.type = type || "sine"; o.frequency.setValueAtTime(f, t0);
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(peak, t0 + 0.008);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g); g.connect(master); o.start(t0); o.stop(t0 + dur + 0.03);
+  }
+  function bellStrike(t, amp) {
+    [[1, 1, 2.4], [2.4, 0.55, 1.5], [3.8, 0.35, 1.0], [5.2, 0.2, 0.6]].forEach(function (p) { tone(660 * p[0], t, p[2], "sine", 0.55 * amp * p[1]); });
+  }
+  var SFX = {
+    tick: function (t, last) { tone(last ? 1320 : 990, t, 0.07, "square", last ? 0.2 : 0.13); },
+    bell: function (t) { bellStrike(t, 1); bellStrike(t + 0.55, 0.8); },
+    correct: function (t) { tone(784, t, 0.2, "triangle", 0.3); tone(1047, t + 0.1, 0.35, "triangle", 0.3); },
+    wrong: function (t) { tone(220, t, 0.3, "sawtooth", 0.12); tone(165, t + 0.15, 0.4, "sawtooth", 0.12); },
+    streak: function (t) { [523, 659, 784, 1047, 1319].forEach(function (f, i) { tone(f, t + i * 0.075, i === 4 ? 0.6 : 0.2, "triangle", 0.3); }); },
+    tile: function (t) { tone(600, t, 0.08, "sine", 0.25); tone(900, t + 0.06, 0.12, "sine", 0.25); },
+    go: function (t) { tone(880, t, 0.14, "sine", 0.3); },
+    done: function (t) { [523, 659, 784].forEach(function (f, i) { tone(f, t + i * 0.12, 0.4, "triangle", 0.28); }); },
+    fanfare: function (t) { [[523, 0], [659, 0.14], [784, 0.28], [1047, 0.46]].forEach(function (n) { tone(n[0], t + n[1], 0.7, "triangle", 0.3); tone(n[0] / 2, t + n[1], 0.7, "sine", 0.2); }); }
+  };
+  function sfx(name, arg) {
+    if (!DX.sound) return;
+    var c = audio(); if (!c) return;
+    SFX[name](c.currentTime + 0.01, arg);
+  }
+
   /* ---------- timer ---------- */
   var TM = { left: 0, total: 0, t: null, last: 0, running: false, onEnd: null, lastSec: -1 };
-  var ac = null;
-  function beep(f, d) {
-    if (!DX.sound) return;
-    try {
-      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
-      var o = ac.createOscillator(), g = ac.createGain();
-      o.frequency.value = f; g.gain.value = 0.12; o.connect(g); g.connect(ac.destination);
-      o.start(); o.stop(ac.currentTime + d);
-    } catch (e) { /* audio can be blocked */ }
-  }
   function tmStop() { TM.running = false; clearInterval(TM.t); TM.t = null; }
   function tmSet(sec, onEnd) { tmStop(); TM.total = sec * 1000; TM.left = TM.total; TM.onEnd = onEnd; TM.lastSec = -1; }
   function tmClear() { tmStop(); TM.total = 0; TM.left = 0; TM.onEnd = null; }
@@ -82,9 +113,9 @@
   function tmTick() {
     var n = performance.now(); TM.left -= n - TM.last; TM.last = n;
     var s = Math.ceil(TM.left / 1000);
-    if (s !== TM.lastSec) { TM.lastSec = s; if (s <= 5 && s > 0) beep(660, 0.08); }
+    if (s !== TM.lastSec) { TM.lastSec = s; if (s <= 5 && s > 0) sfx("tick", s === 1); }
     if (TM.left <= 0) {
-      TM.left = 0; tmStop(); beep(440, 0.5);
+      TM.left = 0; tmStop(); sfx("bell");
       var f = TM.onEnd; TM.onEnd = null; if (f) f(); else tmPaint();
       return;
     }
@@ -94,26 +125,66 @@
     var v = document.getElementById("tmv"), b = document.getElementById("tmb"), w = document.getElementById("tm");
     if (v) v.textContent = Math.ceil(TM.left / 1000);
     if (b) b.style.width = (TM.total ? 100 * TM.left / TM.total : 0) + "%";
-    if (w) w.classList.toggle("low", TM.total > 0 && TM.left <= 5000);
+    if (w) {
+      w.classList.toggle("low", TM.total > 0 && TM.left <= 5000);
+      w.classList.toggle("warn", TM.total > 0 && TM.left <= 10000 && TM.left > 5000);
+    }
   }
   function tmPause() { if (TM.running) { tmStop(); } else { tmStart(); } paint(); }
   function timerHTML() { return '<div class="timer" id="tm" role="timer" aria-live="off"><i id="tmb"></i><span id="tmv"></span></div>'; }
+
+  /* ---------- streaks and short messages ---------- */
+  var TIERS = {
+    3: ["Three in a row!", "Hat-trick. Nice.", "Three straight. Warming up."],
+    5: ["Five straight. On fire.", "Five in a row. The revision paid off.", "Five! Somebody read the notes."],
+    7: ["Seven in a row. Are you the examiner?", "Seven straight. Almost unfair."],
+    10: ["Ten in a row. Legend.", "Double digits. Consultant level."]
+  };
+  var BREAK = ["Streak over. Shake it off.", "Streak broken. The next one is yours."];
+  function pickOne(a) { return a[Math.floor(Math.random() * a.length)]; }
+  function bump(i, ok) {
+    var prev = R.streak[i] || 0, n = ok ? prev + 1 : 0;
+    R.streak[i] = n;
+    var key = n >= 10 && n % 5 === 0 ? 10 : n;
+    if (ok && TIERS[key]) return { kind: "up", text: H.teams[i].name + ": " + pickOne(TIERS[key]) };
+    if (!ok && prev >= 3) return { kind: "down", text: H.teams[i].name + ": " + pickOne(BREAK) };
+    return null;
+  }
+  function setFlash(ev) { if (ev) H.flash = { text: ev.text, kind: ev.kind, until: Date.now() + 3200 }; }
+  /* One team answered: update its streak, show a message if there is one, play the right sound. */
+  function outcome(i, ok) {
+    var ev = bump(i, ok); setFlash(ev);
+    sfx(ev && ev.kind === "up" ? "streak" : ok ? "correct" : "wrong");
+  }
+  function flashHTML() {
+    if (!H.flash || Date.now() >= H.flash.until) return "";
+    return '<p class="flash' + (H.flash.kind === "down" ? " down" : "") + '" id="flash" role="status">' + esc(H.flash.text) + '</p>';
+  }
 
   /* ---------- shared pieces ---------- */
   function clsLabel(id) {
     var c = DX.curriculum.classes.filter(function (x) { return x.id === id; })[0];
     return c ? c.label + (c.name ? " · " + c.name : "") : "";
   }
+  function streakChip(i) {
+    if (H.view !== "round" || !R || !R.streak) return "";
+    var n = R.streak[i] || 0;
+    return n >= 2 ? '<span class="streak">' + n + ' in a row</span>' : '<span class="streak" aria-hidden="true">&nbsp;</span>';
+  }
   function scoreboard(active, edit) {
     return '<div class="scoreboard" aria-label="Scores">' + H.teams.map(function (t, i) {
       return '<div class="team' + (i === active ? " active" : "") + '"><span class="tn">' + esc(t.name) + '</span>' +
         (t.cls ? '<span class="tc">' + esc(clsLabel(t.cls)) + '</span>' : "") +
-        '<span class="ts">' + t.score + '</span>' +
+        '<span class="ts">' + t.score + '</span>' + streakChip(i) +
         (edit ? '<span class="adj"><button data-act="adj" data-i="' + i + '" data-d="-1" aria-label="Minus one for ' + esc(t.name) + '">−1</button><button data-act="adj" data-i="' + i + '" data-d="1" aria-label="Plus one for ' + esc(t.name) + '">+1</button></span>' : "") + '</div>';
     }).join("") + '</div>';
   }
+  function endBar() {
+    if (R && R.ending) return '<div class="endbox" role="alertdialog" aria-label="End this round"><p><b>End this round now?</b> Points already earned stay on the board.</p><div class="row tight"><button class="btn bad" data-act="endyes">End round</button><button class="btn ghost" data-act="endno">Keep playing <kbd>Esc</kbd></button></div></div>';
+    return '<div class="row tight endrow"><button class="btn ghost small" data-act="endask">End round <kbd>Esc</kbd></button></div>';
+  }
   function shell(inner, active) {
-    return '<div class="wrap wide stack">' + scoreboard(active, false) + '<section class="stage">' + inner + '</section></div>';
+    return '<div class="wrap wide stack">' + scoreboard(active, false) + '<section class="stage">' + inner + '</section>' + endBar() + '</div>';
   }
   function answerBox(w) {
     var q = w.q, letter = w.opts ? LETTERS[w.order.indexOf(q.answer)] + ". " : "";
@@ -143,22 +214,54 @@
     if (pausable) h += '<button class="btn small" data-act="pause">' + (TM.running ? "Pause" : "Resume") + ' <kbd>Space</kbd></button>';
     return h + '</div>';
   }
-  function paint() { app.innerHTML = view(); tmPaint(); }
+  var flashTimer = null;
+  function barH() {
+    var b = document.querySelector("header.bar");
+    if (b) document.documentElement.style.setProperty("--bar-h", getComputedStyle(b).position === "sticky" ? b.offsetHeight + "px" : "0px");
+  }
+  function paint() {
+    app.innerHTML = view() + flashHTML(); tmPaint(); barH();
+    clearTimeout(flashTimer);
+    if (H.flash && Date.now() < H.flash.until) flashTimer = setTimeout(function () { var f = document.getElementById("flash"); if (f) f.remove(); }, H.flash.until - Date.now());
+  }
+  window.addEventListener("resize", barH);
 
   /* ---------- setup ---------- */
-  function scopeOptions() {
-    var o = '<option value="all"' + (H.scope === "all" ? " selected" : "") + '>Everything (' + DX.questions.length + ' questions)</option>';
+  function termsIn(tid) { return DX.terms.filter(function (x) { return x.topic === tid; }).length; }
+  function areaTopics(a) { return a.topics.filter(function (t) { return t.count || termsIn(t.id); }); }
+  function topicPicker() {
+    var h = '<div class="row tight"><button class="chip toggle" data-act="tpall" aria-pressed="' + !H.topics.length + '">Everything · ' + DX.questions.length + ' questions</button></div>';
     DX.curriculum.subjects.forEach(function (s) {
-      var sc = DX.subjectCount(s.id);
-      if (!sc) return;
-      o += '<option value="s:' + s.id + '"' + (H.scope === "s:" + s.id ? " selected" : "") + '>' + esc(s.name) + ' (' + sc + ')</option>';
-      s.areas.forEach(function (a) {
-        a.topics.forEach(function (t) {
-          if (t.count) o += '<option value="t:' + t.id + '"' + (H.scope === "t:" + t.id ? " selected" : "") + '>— ' + esc(a.name) + ': ' + esc(t.name) + ' (' + t.count + ')</option>';
-        });
-      });
+      var areas = s.areas.map(function (a) {
+        var ts = areaTopics(a);
+        if (!ts.length) return "";
+        var nq = ts.reduce(function (n, t) { return n + t.count; }, 0);
+        return '<details class="acc"' + (ts.some(function (t) { return H.topics.indexOf(t.id) > -1; }) ? " open" : "") + '><summary><span>' + esc(a.name) + '</span><small><span data-areasel="' + a.id + '"></span>' + nq + ' questions</small></summary>' +
+          '<div class="topics"><button class="btn ghost small" data-act="tparea" data-id="' + a.id + '">Select or clear the whole area</button><div class="chips">' +
+          ts.map(function (t) {
+            var tc = termsIn(t.id);
+            return '<button class="chip toggle" data-act="tp" data-id="' + t.id + '" aria-pressed="' + (H.topics.indexOf(t.id) > -1) + '">' + esc(t.name) + ' · ' + t.count + ' q' + (tc ? ' · ' + tc + ' terms' : '') + '</button>';
+          }).join("") + '</div></div></details>';
+      }).join("");
+      if (areas) h += '<div class="section"><h3>' + esc(s.name) + '</h3>' + areas + '</div>';
     });
-    return o;
+    return h;
+  }
+  /* Update the picker in place, so the page does not jump or close the open sections. */
+  function refreshPicker() {
+    document.querySelectorAll('[data-act="tp"]').forEach(function (b) { b.setAttribute("aria-pressed", String(H.topics.indexOf(b.getAttribute("data-id")) > -1)); });
+    var all = document.querySelector('[data-act="tpall"]'); if (all) all.setAttribute("aria-pressed", String(!H.topics.length));
+    DX.curriculum.subjects.forEach(function (s) { s.areas.forEach(function (a) {
+      var el = document.querySelector('[data-areasel="' + a.id + '"]'); if (!el) return;
+      var n = areaTopics(a).filter(function (t) { return H.topics.indexOf(t.id) > -1; }).length;
+      el.textContent = n ? n + " selected · " : "";
+    }); });
+    var hint = document.getElementById("scopehint"); if (hint) hint.textContent = scopeHint();
+    DX.store.set("dx.hall.topics", H.topics);
+  }
+  function soundPanel() {
+    return '<div class="field"><label class="label" for="vol">Volume</label><div class="row tight" style="align-items:center"><input type="range" id="vol" data-vol="1" min="0" max="100" value="' + Math.round(vol() * 100) + '" style="flex:1 1 180px"><button class="btn small" data-act="testbell">Test the bell</button></div>' +
+      '<p class="hint">Turn this up for a hall with a projector. The Sound button in the top bar switches all sounds on or off.</p></div>';
   }
   function classOptions(sel) {
     return '<option value="">Class (optional)</option>' + DX.curriculum.classes.map(function (c) {
@@ -166,7 +269,8 @@
     }).join("");
   }
   function scopeHint() {
-    return poolQs().length + " questions and " + poolTerms().length + " terms in this selection.";
+    var t = DX.terms.filter(inScope).length;
+    return poolQs().length + " questions and " + t + " terms in this selection." + (!t && H.topics.length ? " Describe it and Explain it will use terms from all topics, because none of these have terms yet." : "");
   }
   function setupView() {
     return '<div class="wrap stack"><header><p class="eyebrow">Hall mode</p><h1>Set up the session</h1>' +
@@ -180,7 +284,8 @@
         DX.curriculum.classes.map(function (c) {
           return '<div class="teamrow"><div class="field"><label class="label" for="cn-' + c.id + '">' + esc(c.label) + ' · ' + esc(c.level) + '</label><input type="text" id="cn-' + c.id + '" data-clsname="' + c.id + '" value="' + esc(c.name) + '" placeholder="Class name (not set yet)" maxlength="30"></div></div>';
         }).join("") + '</details>' +
-      '<section class="section"><div class="field"><label class="label" for="scope">Questions and terms from</label><select id="scope" data-f="scope">' + scopeOptions() + '</select></div><p class="hint" id="scopehint">' + scopeHint() + '</p></section>' +
+      '<section class="section"><p class="label">Questions and terms from</p>' + topicPicker() + '<p class="hint" id="scopehint">' + scopeHint() + '</p></section>' +
+      '<section class="section">' + soundPanel() + '</section>' +
       '<section class="row"><button class="btn primary" data-act="begin">Start session</button></section></div>';
   }
 
@@ -206,6 +311,7 @@
     }
     return '<div class="wrap wide stack"><header><p class="eyebrow">Hall mode</p><h1>Choose a round</h1>' + (H.note ? '<p class="lede">' + esc(H.note) + '</p>' : '<p class="lede">' + scopeHint() + '</p>') + '</header>' +
       scoreboard(-1, H.edit) +
+      '<details class="acc"><summary><span>Sound volume</span><small>bell, ticks, streaks</small></summary><div class="topics">' + soundPanel() + '</div></details>' +
       '<div class="row tight"><button class="btn small" data-act="edit">' + (H.edit ? "Done adjusting scores" : "Adjust scores") + '</button><button class="btn small ghost" data-act="setup">Change teams or topics</button><button class="btn small ghost" data-act="final">End session and show standings</button></div>' +
       '<section class="cards">' + cards + '</section>' + panel + '</div>';
   }
@@ -231,13 +337,14 @@
       descTimer();
     }
     if (t === "explain") R = { type: "explain", c: H.cfg.explain, team: 0, phase: "ready", queue: [], cur: null, got: 0, skip: 0, foul: 0 };
+    R.streak = H.teams.map(function () { return 0; }); R.ending = false;
     save(); H.view = "round"; paint();
   }
 
   /* ---------- rapid fire ---------- */
   function rapidNext() { if (!R.queue.length) R.queue = drawQ(8, R.c.show).map(wrapper(R.c.show)); R.cur = R.queue.shift(); R.rev = false; }
   function rapidStart() {
-    R.phase = "run"; R.got = R.miss = R.skip = 0; R.queue = []; rapidNext();
+    R.phase = "run"; R.got = R.miss = R.skip = 0; R.queue = []; R.streak[R.team] = 0; rapidNext(); sfx("go");
     tmSet(R.c.secs, function () { R.phase = R.cur ? "timeup" : "done"; if (R.phase === "done") rapidFinish(); paint(); });
     tmStart(); paint();
   }
@@ -247,7 +354,7 @@
   }
   function rapidMark(res) {
     if (!R.cur || (R.phase !== "run" && R.phase !== "timeup")) return;
-    if (res === "got") R.got++; else if (res === "miss") R.miss++; else { R.skip++; if (R.phase === "run") R.queue.push(R.cur); }
+    if (res === "got") { R.got++; outcome(R.team, true); } else if (res === "miss") { R.miss++; outcome(R.team, false); } else { R.skip++; if (R.phase === "run") R.queue.push(R.cur); }
     if (R.phase === "timeup") { rapidFinish(); paint(); return; }
     rapidNext(); paint();
   }
@@ -290,8 +397,9 @@
     var tile = R.tiles[R.ti], n = H.teams.length;
     if (res === "got") {
       var pts = R.attempt ? Math.ceil(R.c.pts / 2) : R.c.pts;
-      H.teams[R.ans].score += pts; tile.st = "got"; R.last = { res: "got", team: R.ans, pts: pts }; R.phase = "result"; tmClear(); save();
+      H.teams[R.ans].score += pts; tile.st = "got"; R.last = { res: "got", team: R.ans, pts: pts }; R.phase = "result"; tmClear(); save(); outcome(R.ans, true);
     } else if (res === "miss") {
+      outcome(R.ans, false);
       if (R.c.steal && R.attempt === 0 && n > 1) {
         R.attempt = 1; R.ans = (R.team + 1) % n; R.timeup = false; R.rev = false;
         tmSet(R.c.secs, boardTimeup); tmStart();
@@ -317,7 +425,13 @@
       '<div class="row tight"><button class="btn primary" data-act="aaward">' + (R.i === n - 1 ? "Award points and finish" : "Award points, next question") + '</button></div>', -1);
   }
   function allAward() {
-    Object.keys(R.right).forEach(function (i) { if (R.right[i]) H.teams[i].score += R.c.pts; });
+    var up = null, anyRight = false, down = null;
+    H.teams.forEach(function (t, i) {
+      var ok = !!R.right[i]; if (ok) { t.score += R.c.pts; anyRight = true; }
+      var ev = bump(i, ok);
+      if (ev && ev.kind === "up" && !up) up = ev; else if (ev && ev.kind === "down" && !down) down = ev;
+    });
+    setFlash(up || down); sfx(up ? "streak" : anyRight ? "correct" : "wrong");
     save(); R.right = {};
     if (R.i >= R.qs.length - 1) { endRound(); return; }
     R.i++; R.phase = "q"; R.rev = false; R.started = false; tmSet(R.c.secs, allTimeup); paint();
@@ -348,13 +462,15 @@
   }
   function descAward(i) {
     var term = R.terms[R.i], pts = term.clues.length - R.clue;
-    H.teams[i].score += pts; R.result = { who: i, pts: pts }; R.phase = "result"; tmClear(); save(); paint();
+    H.teams[i].score += pts; R.result = { who: i, pts: pts }; R.phase = "result"; tmClear(); save();
+    outcome(i, true); H.teams.forEach(function (t, j) { if (j !== i) bump(j, false); });
+    paint();
   }
 
   /* ---------- explain it ---------- */
   function explainNext() { if (!R.queue.length) R.queue = drawT(8); R.cur = R.queue.shift(); }
   function explainStart() {
-    R.phase = "run"; R.got = R.skip = R.foul = 0; R.queue = []; explainNext();
+    R.phase = "run"; R.got = R.skip = R.foul = 0; R.queue = []; R.streak[R.team] = 0; explainNext(); sfx("go");
     tmSet(R.c.secs, function () { explainFinish(); paint(); });
     tmStart(); paint();
   }
@@ -364,7 +480,7 @@
   }
   function explainMark(res) {
     if (R.phase !== "run" || !R.cur) return;
-    if (res === "got") R.got++; else if (res === "foul") R.foul++; else R.skip++;
+    if (res === "got") { R.got++; outcome(R.team, true); } else if (res === "foul") { R.foul++; outcome(R.team, false); } else R.skip++;
     explainNext(); paint();
   }
   function explainView() {
@@ -382,7 +498,7 @@
   }
 
   /* ---------- end of round and session ---------- */
-  function endRound() { tmClear(); H.view = "roundend"; save(); paint(); }
+  function endRound() { tmClear(); H.view = "roundend"; save(); sfx("done"); paint(); }
   function roundEndView() {
     return '<div class="wrap wide stack"><header><p class="eyebrow">Round complete</p><h1>Scores so far</h1></header>' + scoreboard(-1, H.edit) +
       '<div class="row tight"><button class="btn primary" data-act="menu">Choose the next round</button><button class="btn" data-act="edit">' + (H.edit ? "Done adjusting scores" : "Adjust scores") + '</button><button class="btn ghost" data-act="final">End session</button></div></div>';
@@ -412,23 +528,32 @@
   }
 
   /* ---------- actions ---------- */
+  function endAsk() { if (!R || H.view !== "round") return; R.wasRunning = TM.running; tmStop(); R.ending = true; paint(); }
+  function endNo() { if (!R) return; R.ending = false; if (R.wasRunning) tmStart(); R.wasRunning = false; paint(); }
+  function endYes() {
+    if (!R) return;
+    R.ending = false;
+    if (R.type === "rapid" && (R.phase === "run" || R.phase === "timeup")) rapidFinish();
+    if (R.type === "explain" && R.phase === "run") explainFinish();
+    endRound();
+  }
   function doMark(v) {
-    if (H.view !== "round" || !R) return;
+    if (H.view !== "round" || !R || R.ending) return;
     if (R.type === "rapid") rapidMark(v);
     else if (R.type === "board") boardMark(v);
     else if (R.type === "explain") explainMark(v);
     else if (R.type === "describe" && R.phase === "clue") {
       if (v === "got") { R.phase = "who"; tmStop(); paint(); }
-      else if (v === "miss") { R.phase = "result"; R.result = { who: null }; tmClear(); paint(); }
+      else if (v === "miss") { R.phase = "result"; R.result = { who: null }; tmClear(); H.teams.forEach(function (t, j) { bump(j, false); }); sfx("wrong"); paint(); }
     }
   }
   function doReveal() {
-    if (H.view !== "round" || !R) return;
+    if (H.view !== "round" || !R || R.ending) return;
     if (R.type === "all" && R.phase === "q") { tmStop(); R.phase = "mark"; R.rev = true; paint(); return; }
     if (R.rev !== undefined) { R.rev = !R.rev; paint(); }
   }
   function doPause() {
-    if (H.view !== "round" || !R) return;
+    if (H.view !== "round" || !R || R.ending) return;
     if (R.type === "all" && R.phase === "q" && !TM.running && !R.started) { R.started = true; tmStart(); paint(); return; }
     if (R.type === "all" && R.phase === "q") { R.started = true; tmPause(); return; }
     tmPause();
@@ -438,7 +563,21 @@
     var b = e.target.closest("[data-act]");
     if (!b || b.disabled) return;
     var a = b.getAttribute("data-act"), i = parseInt(b.getAttribute("data-i"), 10);
+    if (DX.sound) audio();   /* browsers only allow sound after a tap, so wake the audio up on the first one */
+    if (H.view === "round" && R && R.ending && a !== "endyes" && a !== "endno") return;
     switch (a) {
+      case "tpall": H.topics = []; refreshPicker(); break;
+      case "tp": var tid = b.getAttribute("data-id"), at = H.topics.indexOf(tid); if (at > -1) H.topics.splice(at, 1); else H.topics.push(tid); refreshPicker(); break;
+      case "tparea":
+        var ar = DX.areaById[b.getAttribute("data-id")], ids = areaTopics(ar).map(function (t) { return t.id; });
+        var every = ids.every(function (x) { return H.topics.indexOf(x) > -1; });
+        H.topics = H.topics.filter(function (x) { return ids.indexOf(x) < 0; });
+        if (!every) H.topics = H.topics.concat(ids);
+        refreshPicker(); break;
+      case "testbell": sfx("bell"); break;
+      case "endask": endAsk(); break;
+      case "endno": endNo(); break;
+      case "endyes": endYes(); break;
       case "addteam": H.teams.push({ name: "Team " + (H.teams.length + 1), cls: "", score: 0 }); save(); paint(); break;
       case "rmteam": if (H.teams.length > 2) { H.teams.pop(); save(); paint(); } break;
       case "begin": H.teams.forEach(function (t) { t.score = 0; }); H.used = {}; H.note = ""; H.view = "menu"; save(); paint(); break;
@@ -448,7 +587,7 @@
       case "launch": launch(); break;
       case "edit": H.edit = !H.edit; paint(); break;
       case "adj": H.teams[i].score += parseInt(b.getAttribute("data-d"), 10); save(); paint(); break;
-      case "final": tmClear(); H.view = "final"; paint(); break;
+      case "final": tmClear(); H.view = "final"; sfx("fanfare"); paint(); break;
       case "reset": H.teams.forEach(function (t) { t.score = 0; }); H.used = {}; save(); H.view = "menu"; paint(); break;
       case "mark": doMark(b.getAttribute("data-v")); break;
       case "reveal": doReveal(); break;
@@ -459,7 +598,7 @@
       case "rend": endRound(); break;
       case "tile":
         R.ti = i; R.ans = R.team; R.attempt = 0; R.phase = "q"; R.rev = false; R.timeup = false;
-        tmSet(R.c.secs, boardTimeup); tmStart(); paint(); break;
+        sfx("tile"); tmSet(R.c.secs, boardTimeup); tmStart(); paint(); break;
       case "bnext":
         if (R.tiles.some(function (x) { return x.st === "open"; })) { R.team = (R.team + 1) % H.teams.length; R.phase = "pick"; paint(); } else endRound();
         break;
@@ -486,9 +625,9 @@
     } else if (el.hasAttribute("data-team")) {
       var t = H.teams[parseInt(el.getAttribute("data-team"), 10)];
       t[el.getAttribute("data-f")] = el.value; save();
-    } else if (el.getAttribute("data-f") === "scope") {
-      H.scope = el.value;
-      var hint = document.getElementById("scopehint"); if (hint) hint.textContent = scopeHint();
+    } else if (el.hasAttribute("data-vol")) {
+      DX.store.set("dx.volume", Math.max(0, Math.min(100, parseInt(el.value, 10) || 0)) / 100);
+      if (ac && master) master.gain.value = vol();
     } else if (el.hasAttribute("data-cfg")) {
       var type = el.getAttribute("data-cfg"), k = el.getAttribute("data-k");
       if (el.type === "checkbox") H.cfg[type][k] = el.checked ? 1 : 0;
@@ -505,6 +644,9 @@
 
   function onKey(e) {
     if (H.view !== "round" || !R) return;
+    if (DX.sound) audio();
+    if (e.key === "Escape") { if (R.ending) endNo(); else endAsk(); return; }
+    if (R.ending) return;
     var k = e.key.toLowerCase();
     if (k === "g") { if (R.type === "describe" || R.type === "board" || R.type === "rapid" || R.type === "explain") { doMark("got"); } }
     else if (k === "m") doMark("miss");
@@ -517,7 +659,7 @@
 
   function render(el) {
     app = el; init();
-    app.innerHTML = view(); tmPaint();
+    paint();
   }
   function leave() { tmStop(); }
 

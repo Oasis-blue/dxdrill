@@ -118,5 +118,32 @@ grant execute on function public.student_leaderboard(int, text) to authenticated
 grant execute on function public.class_leaderboard(int) to authenticated;
 grant execute on function public.is_admin() to authenticated;
 
+-- Question reports: students flag a wrong or unclear question, admins review them.
+create table if not exists public.question_reports (
+  id          bigint generated always as identity primary key,
+  user_id     uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  question_id text not null check (char_length(question_id) <= 60),
+  reason      text not null check (reason in ('wrong_answer','explanation','unclear','typo','other')),
+  note        text not null default '' check (char_length(note) <= 500),
+  status      text not null default 'open' check (status in ('open','resolved','dismissed')),
+  created_at  timestamptz not null default now()
+);
+-- One open report per student per question (they can report again once it is closed).
+create unique index if not exists question_reports_one_open
+  on public.question_reports (user_id, question_id) where status = 'open';
+create index if not exists question_reports_status on public.question_reports (status, created_at);
+
+alter table public.question_reports enable row level security;
+drop policy if exists reports_insert_own  on public.question_reports;
+drop policy if exists reports_read        on public.question_reports;
+drop policy if exists reports_admin_close on public.question_reports;
+create policy reports_insert_own  on public.question_reports for insert with check (user_id = auth.uid());
+create policy reports_read        on public.question_reports for select using (user_id = auth.uid() or public.is_admin());
+create policy reports_admin_close on public.question_reports for update using (public.is_admin()) with check (public.is_admin());
+
+revoke update on public.question_reports from anon, authenticated;
+grant  update (status) on public.question_reports to authenticated;   -- the policy above limits this to admins
+grant  select, insert on public.question_reports to authenticated;
+
 -- AFTER you sign up on the site, make yourself the admin (put your own email in):
 -- update public.profiles set is_admin = true where id = (select id from auth.users where email = 'YOUR-EMAIL-HERE');

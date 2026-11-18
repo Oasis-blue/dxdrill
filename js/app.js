@@ -88,6 +88,19 @@
   paintSound();
   soundBtn.addEventListener("click", function () { DX.sound = !DX.sound; DX.store.set("dx.sound", DX.sound); paintSound(); });
 
+  /* install to home screen + offline support */
+  var installBtn = document.getElementById("btn-install"), installEv = null;
+  window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installEv = e; installBtn.hidden = false; });
+  installBtn.addEventListener("click", function () {
+    if (!installEv) return;
+    installEv.prompt();
+    installEv.userChoice.then(function () { installEv = null; installBtn.hidden = true; });
+  });
+  window.addEventListener("appinstalled", function () { installBtn.hidden = true; });
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () { /* works without it */ }); });
+  }
+
   window.addEventListener("hashchange", route);
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
   DX.load().then(function () { return DX.cloud.init().catch(function () {}); }).then(route).catch(function (e) {

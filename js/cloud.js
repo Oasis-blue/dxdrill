@@ -71,6 +71,50 @@
     flush();
   };
 
+  /* ---------- question reports ---------- */
+  C.reports = { loaded: false, rows: [], error: "" };
+  C.canReport = function () { return C.ok && !!C.user; };
+  /* Resolves to { ok: true } or { error: "message" }. A duplicate open report counts as success. */
+  C.report = function (questionId, reason, note) {
+    if (!C.canReport()) return Promise.resolve({ error: "Sign in to report a problem." });
+    return C.sb.from("question_reports").insert({ question_id: String(questionId), reason: reason, note: (note || "").slice(0, 500) }).then(function (r) {
+      if (r.error && r.error.code !== "23505") return { error: "Could not send the report. Try again in a moment." };
+      return { ok: true };
+    }).catch(function () { return { error: "Could not reach the server. Check your connection and try again." }; });
+  };
+  var REASONS = { wrong_answer: "Wrong answer", explanation: "Explanation is wrong", unclear: "Unclear question", typo: "Typo", other: "Other" };
+  C.reasons = REASONS;
+  function loadReports() {
+    var R = C.reports; R.error = "";
+    C.sb.from("question_reports").select("question_id,reason,note,created_at").eq("status", "open").order("created_at", { ascending: false }).limit(500).then(function (r) {
+      if (r.error) { R.error = "Could not load reports. If this is the first time, run the updated supabase/setup.sql."; R.rows = []; }
+      else R.rows = r.data || [];
+      R.loaded = true; repaint();
+    }).catch(function () { R.error = "Could not reach the server."; R.loaded = true; repaint(); });
+  }
+  function reportsAdminHtml() {
+    var R = C.reports;
+    var head = '<section class="section stack"><h2>Admin: reported questions</h2><p class="hint">Open reports, most reported first. Fix the question in its JSON file, then mark it resolved.</p>';
+    if (!R.loaded) return head + '<p class="muted">Loading…</p></section>';
+    if (R.error) return head + '<p class="note bad">' + esc(R.error) + '</p></section>';
+    if (!R.rows.length) return head + '<p class="muted">No open reports.</p></section>';
+    var by = {}, order = [];
+    R.rows.forEach(function (x) { if (!by[x.question_id]) { by[x.question_id] = []; order.push(x.question_id); } by[x.question_id].push(x); });
+    order.sort(function (a, b) { return by[b].length - by[a].length; });
+    return head + order.map(function (id) {
+      var list = by[id], q = DX.questions.filter(function (x) { return x.id === id; })[0];
+      var reasons = {}; list.forEach(function (x) { reasons[x.reason] = (reasons[x.reason] || 0) + 1; });
+      var rs = Object.keys(reasons).map(function (k) { return (REASONS[k] || k) + " ×" + reasons[k]; }).join(", ");
+      var notes = list.filter(function (x) { return x.note; }).slice(0, 3).map(function (x) { return '<p class="why">“' + esc(x.note) + '”</p>'; }).join("");
+      return '<div class="rep-item"><span class="label">' + esc(id) + ' · ' + list.length + ' report' + (list.length === 1 ? "" : "s") + '</span>' +
+        '<p class="q">' + (q ? esc(q.q) : "Question no longer in the bank") + '</p>' +
+        (q ? '<p class="why">Marked answer: ' + esc(q.options[q.answer]) + '</p>' : "") +
+        '<p class="why">' + esc(rs) + '</p>' + notes +
+        '<div class="row tight"><button class="btn small" data-act="rclose" data-id="' + esc(id) + '" data-v="resolved">Resolved</button>' +
+        '<button class="btn ghost small" data-act="rclose" data-id="' + esc(id) + '" data-v="dismissed">Dismiss</button></div></div>';
+    }).join("") + '</section>';
+  }
+
   /* ---------- account page ---------- */
   function classSelect(id, sel) {
     return '<select id="' + id + '"><option value="">Choose your class</option>' + DX.curriculum.classes.map(function (c) {
@@ -103,7 +147,7 @@
     return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + esc(p.display_name || "Your account") + '</h1><p class="lede">' + esc(C.user.email || "") + (p.is_admin ? " · admin" : "") + '</p></header>' + note +
       '<section class="section stack"><div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" value="' + esc(p.display_name) + '"></div>' +
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
-      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + admin + '</div>';
+      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + admin + (p.is_admin ? reportsAdminHtml() : "") + '</div>';
   }
   function val(id) { var e = document.getElementById(id); return e ? e.value.trim() : ""; }
   function run(p, ok) {
@@ -134,6 +178,12 @@
       run(C.sb.from("profiles").update({ display_name: val("ac-name"), class_id: val("ac-class") || null }).eq("id", C.user.id), function () {
         C.profile.display_name = val("ac-name"); C.profile.class_id = val("ac-class") || null; C.msg = "Saved.";
       });
+    } else if (a === "rclose") {
+      var qid = b.getAttribute("data-id"), st = b.getAttribute("data-v");
+      run(C.sb.from("question_reports").update({ status: st }).eq("question_id", qid).eq("status", "open"), function () {
+        C.reports.rows = C.reports.rows.filter(function (x) { return x.question_id !== qid; });
+        C.msg = "Report closed.";
+      });
     } else if (a === "clsave") {
       var id = b.getAttribute("data-id"), nm = val("cn-" + id);
       run(C.sb.from("classes").update({ name: nm }).eq("id", id), function () {
@@ -142,7 +192,7 @@
       });
     }
   }
-  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); }, onClick: accountClick, onKey: function () { } };
+  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); if (C.ok && C.user && C.profile && C.profile.is_admin && !C.reports.loaded) loadReports(); }, onClick: accountClick, onKey: function () { }, leave: function () { C.reports.loaded = false; } };
 
   /* ---------- leaderboards ---------- */
   function loadBoard() {

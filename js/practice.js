@@ -3,7 +3,7 @@
   var DX = window.DX, esc = DX.esc, app;
   var LETTERS = ["A", "B", "C", "D", "E", "F"];
   var LEVELS = { 1: "Core", 2: "Applied", 3: "Challenge" };
-  var P = { view: "pick", scope: null, subs: [], mode: "study", count: "all", run: null, showAll: false };
+  var P = { view: "pick", scope: null, subs: [], mode: "study", count: "all", run: null, showAll: false, report: null };
 
   function scopeQs(sc) {
     var qs = DX.questions;
@@ -41,7 +41,7 @@
         (sc ? '<button class="btn ghost small" data-act="scope" data-kind="subject" data-id="' + s.id + '">All ' + esc(s.name) + ' · ' + sc + '</button>' : '<span class="muted">No questions yet</span>') + '</div>';
       s.areas.forEach(function (a) {
         var ac = DX.areaCount(a.id);
-        h += '<details class="acc"' + (ac ? " open" : "") + '><summary><span>' + esc(a.name) + '</span><small>' + (ac ? ac + " questions" : "empty") + '</small></summary><div class="topics">';
+        h += '<details class="acc"><summary><span>' + esc(a.name) + '</span><small>' + (ac ? ac + " questions" : "empty") + '</small></summary><div class="topics">';
         if (ac && a.topics.length > 1) h += '<button class="btn ghost small" data-act="scope" data-kind="area" data-id="' + a.id + '">Drill the whole area · ' + ac + '</button>';
         a.topics.forEach(function (t) {
           h += '<button class="topic' + (t.count ? "" : " empty") + '" data-act="scope" data-kind="topic" data-id="' + t.id + '"' + (t.count ? "" : " disabled") + '><span>' + esc(t.name) + '</span><small>' + (t.count ? t.count + " questions" : "none yet") + '</small></button>';
@@ -82,13 +82,35 @@
     return h;
   }
 
+  /* ---------- report a problem ---------- */
+  function reportHtml(q) {
+    var C = DX.cloud;
+    if (!C || !C.ok) return "";
+    var R = P.report && P.report.id === q.id ? P.report : null;
+    if (!R) {
+      if (!C.canReport()) return '<a class="linkbtn" href="#account">Sign in to report a problem</a>';
+      return '<button class="linkbtn" data-act="rep-open" data-id="' + esc(q.id) + '">Report a problem with this question</button>';
+    }
+    if (R.status === "sent") return '<p class="hint" role="status" style="padding:10px 0">Thanks. Your report was sent for review.</p>';
+    var busy = R.status === "sending";
+    var opts = Object.keys(C.reasons).map(function (k) {
+      return '<option value="' + k + '"' + ((R.reason || "wrong_answer") === k ? " selected" : "") + '>' + esc(C.reasons[k]) + '</option>';
+    }).join("");
+    return '<div class="reportbox"><div class="field"><label class="label" for="rp-reason">What is wrong?</label><select id="rp-reason">' + opts + '</select></div>' +
+      '<div class="field"><label class="label" for="rp-note">Details (optional)</label><textarea id="rp-note" maxlength="500" placeholder="For example: the textbook says otherwise, with the page or chapter if you have it">' + esc(R.note || "") + '</textarea></div>' +
+      (R.msg ? '<p class="note bad" role="alert">' + esc(R.msg) + '</p>' : "") +
+      '<div class="row tight"><button class="btn primary small" data-act="rep-send"' + (busy ? " disabled" : "") + '>' + (busy ? "Sending…" : "Send report") + '</button>' +
+      '<button class="btn ghost small" data-act="rep-cancel"' + (busy ? " disabled" : "") + '>Cancel</button></div></div>';
+  }
+  function keepScroll() { var y = window.scrollY; render(); window.scrollTo(0, y); }
+
   /* ---------- run ---------- */
   function startRun(list) {
     var items = DX.shuffle(list).map(function (q) {
       return { q: q, order: DX.shuffle(q.options.map(function (_, i) { return i; })), pick: null };
     });
     P.run = { items: items, i: 0, done: false };
-    P.showAll = false; P.view = "run";
+    P.showAll = false; P.view = "run"; P.report = null;
   }
   function questionView() {
     var r = P.run, it = r.items[r.i], q = it.q, study = P.mode === "study";
@@ -115,7 +137,7 @@
       '<div class="top"><span>Question ' + (r.i + 1) + ' of ' + total + (study ? " · " + right + "/" + answered.length + " correct" : "") + '</span><button data-act="quit">Quit</button></div>' +
       '<div class="track"><i style="width:' + DX.pct(r.i + (locked ? 1 : 0), total) + '%"></i></div>' +
       '<div class="chips" style="margin-top:18px"><span class="chip">' + esc(subOf(q)) + '</span><span class="chip">' + (LEVELS[q.level] || "Core") + '</span>' + (q.verified ? '<span class="chip">Verified</span>' : '<span class="chip warn">Unverified</span>') + '</div>' +
-      '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' + explain +
+      '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' + explain + '<div>' + reportHtml(q) + '</div>' +
       '<div class="actions">' + (showNext ? '<button class="btn primary" style="width:100%" data-act="next"' + (it.pick === null ? ' aria-disabled="true"' : "") + '>' + (last ? "See results" : "Next question") + '</button>' : "") + '</div></div>';
   }
   function finish() {
@@ -157,6 +179,8 @@
   function render(el) {
     if (el) app = el;
     var h;
+    var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
+    if (P.report && rn) { P.report.note = rn.value; if (rr) P.report.reason = rr.value; }
     if (P.view === "pick" || !P.scope) h = pickView();
     else if (P.view === "setup") h = setupView();
     else if (P.run && P.run.done) h = resultsView();
@@ -182,7 +206,20 @@
     var b = e.target.closest("[data-act]");
     if (!b || b.disabled) return;
     var a = b.getAttribute("data-act");
-    if (a === "scope") {
+    if (a === "rep-open") { P.report = { id: b.getAttribute("data-id"), status: "form", reason: "wrong_answer", note: "" }; keepScroll(); }
+    else if (a === "rep-cancel") { P.report = null; keepScroll(); }
+    else if (a === "rep-send") {
+      var R = P.report; if (!R || R.status === "sending") return;
+      var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
+      R.note = rn ? rn.value.trim() : ""; R.reason = rr ? rr.value : "other"; R.status = "sending"; R.msg = "";
+      keepScroll();
+      DX.cloud.report(R.id, R.reason, R.note).then(function (res) {
+        if (P.report !== R) return;
+        if (res.ok) R.status = "sent"; else { R.status = "form"; R.msg = res.error; }
+        keepScroll();
+      });
+    }
+    else if (a === "scope") {
       P.scope = { kind: b.getAttribute("data-kind"), id: b.getAttribute("data-id") };
       P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.view = "setup"; P.run = null;
       render(); window.scrollTo(0, 0);
