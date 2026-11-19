@@ -280,10 +280,10 @@
           '<div class="field"><select data-team="' + i + '" data-f="cls" aria-label="Class of team ' + (i + 1) + '">' + classOptions(t.cls) + '</select></div></div>';
       }).join("") +
       '<div class="row tight"><button class="btn small" data-act="addteam"' + (H.teams.length >= 8 ? " disabled" : "") + '>Add a team</button><button class="btn small ghost" data-act="rmteam"' + (H.teams.length <= 2 ? " disabled" : "") + '>Remove last team</button></div></section>' +
-      '<details class="section classnames"><summary class="label">Class names</summary><p class="hint">Rename a class here. The change is saved in this browser. Once accounts are added, an admin will edit these for everyone.</p>' +
+      (DX.cloud && DX.cloud.ok ? "" : '<details class="section classnames"><summary class="label">Class names</summary><p class="hint">Rename a class here. The change is saved in this browser only. When DxDrill is online, class names are set by the admin on the Account page.</p>' +
         DX.curriculum.classes.map(function (c) {
           return '<div class="teamrow"><div class="field"><label class="label" for="cn-' + c.id + '">' + esc(c.label) + ' · ' + esc(c.level) + '</label><input type="text" id="cn-' + c.id + '" data-clsname="' + c.id + '" value="' + esc(c.name) + '" placeholder="Class name (not set yet)" maxlength="30"></div></div>';
-        }).join("") + '</details>' +
+        }).join("") + '</details>') +
       '<section class="section"><p class="label">Questions and terms from</p>' + topicPicker() + '<p class="hint" id="scopehint">' + scopeHint() + '</p></section>' +
       '<section class="section">' + soundPanel() + '</section>' +
       '<section class="row"><button class="btn primary" data-act="begin">Start session</button></section></div>';
