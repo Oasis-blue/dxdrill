@@ -1,0 +1,455 @@
+{
+ "topic": "ga-muscles",
+ "questions": [
+  {
+   "id": "GAM-01",
+   "level": 1,
+   "sub": "Classification of muscle tissue",
+   "q": "Skeletal muscles are under voluntary somatic control and generally attach to bones, cartilage, or fascia. What structural description applies to their contractile cells?",
+   "options": [
+    "Multinucleated striated cylindrical fibers",
+    "Uninucleated non-striated spindle cells",
+    "Branched cells joined by intercalated discs",
+    "Anucleate contractile plates"
+   ],
+   "answer": 0,
+   "explain": "Skeletal muscle fibers are long, cylindrical, multinucleated cells showing cross-striations due to ordered sarcomeres. Smooth muscle cells are mononucleated and non-striated, while cardiac muscle cells are branched and connected by intercalated discs.",
+   "open": {
+    "q": "How are skeletal muscle fibers described microscopically in terms of nuclei and striations?",
+    "accept": [
+     "multinucleated striated cylindrical fibers",
+     "multinucleated and striated",
+     "striated multinucleated fibers",
+     "cylindrical multinucleated striated cells"
+    ]
+   }
+  },
+  {
+   "id": "GAM-02",
+   "level": 1,
+   "sub": "Classification of muscle tissue",
+   "q": "Which type of muscle tissue lacks visible cross-striations and lines the walls of hollow viscera, blood vessels, and airways?",
+   "options": [
+    "Skeletal muscle",
+    "Smooth muscle",
+    "Cardiac muscle",
+    "Pennate muscle"
+   ],
+   "answer": 1,
+   "explain": "Smooth (visceral/involuntary) muscle lacks sarcomeric cross-striations and is found in walls of hollow organs, blood vessels, and ducts. Skeletal and cardiac muscles are striated.",
+   "open": {
+    "q": "Which type of muscle tissue is non-striated and forms part of the walls of hollow viscera and blood vessels?",
+    "accept": [
+     "smooth muscle",
+     "smooth",
+     "visceral muscle"
+    ]
+   }
+  },
+  {
+   "id": "GAM-03",
+   "level": 1,
+   "sub": "Classification of muscle tissue",
+   "q": "Specialized junctions called intercalated discs allow electrical and mechanical coupling between cells of which muscle type?",
+   "options": [
+    "Skeletal muscle",
+    "Smooth muscle",
+    "Cardiac muscle",
+    "Sphincter muscle"
+   ],
+   "answer": 2,
+   "explain": "Cardiac muscle cells are joined end-to-end by intercalated discs containing gap junctions and mechanical junctions, enabling coordinated contraction of the myocardium. Skeletal and smooth muscles do not have intercalated discs.",
+   "open": {
+    "q": "In which type of muscle tissue do intercalated discs connect adjacent cells?",
+    "accept": [
+     "cardiac muscle",
+     "cardiac",
+     "myocardium"
+    ]
+   }
+  },
+  {
+   "id": "GAM-04",
+   "level": 1,
+   "sub": "Attachment and architecture",
+   "q": "Between the origin and insertion of a skeletal muscle, what is the more proximal or fixed attachment typically called?",
+   "options": [
+    "Insertion",
+    "Belly",
+    "Aponeurosis",
+    "Origin"
+   ],
+   "answer": 3,
+   "explain": "The origin is usually the more proximal or fixed attachment of a muscle, whereas the insertion is typically the more distal or more mobile attachment moved when the muscle contracts. Roles can occasionally reverse depending on movement.",
+   "open": {
+    "q": "What is the usually more fixed or proximal attachment of a skeletal muscle called?",
+    "accept": [
+     "origin",
+     "the origin"
+    ]
+   }
+  },
+  {
+   "id": "GAM-05",
+   "level": 1,
+   "sub": "Attachment and architecture",
+   "q": "What is a broad, flat sheet of dense regular connective tissue that serves as a tendon for a flat muscle?",
+   "options": [
+    "Aponeurosis",
+    "Epimysium",
+    "Perimysium",
+    "Endomysium"
+   ],
+   "answer": 0,
+   "explain": "An aponeurosis is a flattened, sheet-like tendon that attaches flat muscles (such as abdominal wall muscles) to bone, fascia, or linea alba. Epimysium, perimysium, and endomysium are connective tissue sheaths within or around skeletal muscle.",
+   "open": {
+    "q": "What is a flattened, sheet-like tendon attaching a flat muscle called?",
+    "accept": [
+     "aponeurosis",
+     "an aponeurosis"
+    ]
+   }
+  },
+  {
+   "id": "GAM-06",
+   "level": 2,
+   "sub": "Attachment and architecture",
+   "q": "Why does a pennate muscle (such as unipennate, bipennate, or multipennate) generally generate greater force for a given muscle volume than a parallel muscle of the same length?",
+   "options": [
+    "Its fibers are much longer than the entire muscle belly",
+    "More muscle fibers can pack side by side at an angle to a tendon, increasing physiological cross-sectional area",
+    "It lacks connective tissue sheaths around fascicles",
+    "It contracts only by isometric lengthening"
+   ],
+   "answer": 1,
+   "explain": "In pennate muscles, short fibers attach obliquely along a tendon, allowing more fibers to pack in parallel across a larger physiological cross-sectional area and produce greater force, though over a shorter excursion range. Parallel muscles allow greater shortening distance.",
+   "open": {
+    "q": "Why can a pennate muscle produce more force than a parallel muscle of similar size?",
+    "accept": [
+     "more fibers pack obliquely onto a tendon for a larger cross-sectional area",
+     "greater physiological cross-sectional area from angled fibers",
+     "more fibers fit alongside the tendon",
+     "higher cross-sectional area of muscle fibers"
+    ]
+   }
+  },
+  {
+   "id": "GAM-07",
+   "level": 1,
+   "sub": "Attachment and architecture",
+   "q": "Which muscle fiber arrangement has fascicles arranged in concentric rings around an opening or lumen to narrow or close it?",
+   "options": [
+    "Unipennate",
+    "Convergent",
+    "Circular (sphincteric)",
+    "Bipennate"
+   ],
+   "answer": 2,
+   "explain": "Circular muscles (sphincters) encircle body openings or passages, such as orbicularis oris or orbicularis oculi, and constrict the opening upon contraction. Convergent muscles fan out from a broad origin to a narrower insertion.",
+   "open": {
+    "q": "Which muscle arrangement forms rings around an opening to constrict or close it?",
+    "accept": [
+     "circular muscle",
+     "sphincter",
+     "circular",
+     "sphincteric"
+    ]
+   }
+  },
+  {
+   "id": "GAM-08",
+   "level": 1,
+   "sub": "Functional roles of muscles",
+   "q": "Which muscle role describes the primary muscle or group of muscles directly responsible for producing a specific joint movement?",
+   "options": [
+    "Antagonist",
+    "Fixator",
+    "Synergist",
+    "Prime mover (agonist)"
+   ],
+   "answer": 3,
+   "explain": "The prime mover (agonist) is the main muscle whose contraction produces a given movement. An antagonist opposes that movement, while a synergist assists or steadies nearby joints.",
+   "open": {
+    "q": "What term identifies the main muscle directly responsible for producing a particular movement?",
+    "accept": [
+     "prime mover",
+     "agonist",
+     "prime mover or agonist"
+    ]
+   }
+  },
+  {
+   "id": "GAM-09",
+   "level": 2,
+   "sub": "Functional roles of muscles",
+   "q": "When the biceps brachii flexes the elbow, what role does the triceps brachii play during smooth controlled motion?",
+   "options": [
+    "Antagonist that relaxes and modulates speed or opposes the movement",
+    "Prime mover of elbow flexion",
+    "Intrinsic hand muscle",
+    "Fibrous stabilizer of the glenohumeral joint"
+   ],
+   "answer": 0,
+   "explain": "The triceps brachii extends the elbow, making it an antagonist to elbow flexion; controlled relaxation or graded resistance helps smooth and regulate the movement. Co-contraction of antagonists can also stiffen a joint.",
+   "open": {
+    "q": "What role does the triceps brachii play relative to elbow flexion produced by the biceps brachii?",
+    "accept": [
+     "antagonist",
+     "an antagonist",
+     "antagonist muscle"
+    ]
+   }
+  },
+  {
+   "id": "GAM-10",
+   "level": 2,
+   "sub": "Functional roles of muscles",
+   "q": "How does a synergist muscle assist a prime mover when a muscle crosses more than one joint?",
+   "options": [
+    "It blocks all blood flow to the prime mover",
+    "It prevents unwanted motion at an intervening joint so force acts cleanly at the target joint",
+    "It converts skeletal muscle into smooth muscle",
+    "It detaches the tendon from periosteum"
+   ],
+   "answer": 1,
+   "explain": "Synergists can steady or eliminate undesired actions at a joint crossed by a multi-joint prime mover (for instance, wrist extensors stabilize the wrist so finger flexors can grip strongly). Fixators stabilize a proximal bone or origin.",
+   "open": {
+    "q": "How can a synergist muscle improve the action of a multi-joint prime mover?",
+    "accept": [
+     "by preventing unwanted movement at an intermediate joint",
+     "eliminating undesired actions across another joint",
+     "stabilizing joints to focus force on the intended action",
+     "preventing unwanted motion at a joint"
+    ]
+   }
+  },
+  {
+   "id": "GAM-11",
+   "level": 1,
+   "sub": "Innervation and motor units",
+   "q": "What is a motor unit in skeletal muscle physiology and anatomy?",
+   "options": [
+    "A sensory receptor inside a muscle belly",
+    "A bundle of collagen fibers within a tendon",
+    "A single motor neuron and all the skeletal muscle fibers it innervates",
+    "A fascial compartment containing antagonists"
+   ],
+   "answer": 2,
+   "explain": "A motor unit consists of one alpha motor neuron (and its axon) together with the group of skeletal muscle fibers innervated by its terminal branches. Small motor units (few fibers per neuron) allow fine control, while large motor units support powerful gross movements.",
+   "open": {
+    "q": "What structures make up a single motor unit?",
+    "accept": [
+     "a motor neuron and the muscle fibers it innervates",
+     "one motor neuron and all muscle fibers supplied by it",
+     "motor neuron plus its innervated muscle fibers",
+     "single motor neuron and its muscle fibers"
+    ]
+   }
+  },
+  {
+   "id": "GAM-12",
+   "level": 2,
+   "sub": "Innervation and motor units",
+   "q": "Why do muscles that perform fine, precise movements (such as extraocular or intrinsic hand muscles) typically have small motor units?",
+   "options": [
+    "They lack neuromuscular junctions",
+    "Each motor neuron controls relatively few muscle fibers, allowing finer grading of contraction",
+    "They are innervated by cranial sensory ganglia",
+    "Their fibers cannot undergo action potentials"
+   ],
+   "answer": 1,
+   "explain": "Small motor units have a low innervation ratio (few muscle fibers per motor neuron), enabling delicate, finely graded tension adjustments. Muscles requiring coarse power, like gastrocnemius or gluteus maximus, have large motor units.",
+   "open": {
+    "q": "Why are small motor units characteristic of muscles performing fine, delicate movements?",
+    "accept": [
+     "each neuron innervates few fibers for finer control",
+     "few muscle fibers per motor neuron allow precise grading",
+     "low innervation ratio enables fine control",
+     "fewer fibers per motor neuron allow delicate movements"
+    ]
+   }
+  },
+  {
+   "id": "GAM-13",
+   "level": 3,
+   "sub": "Innervation and motor units",
+   "q": "A patient has a laceration of a peripheral motor nerve supplying a limb muscle. Which clinical sign is expected in that muscle shortly after complete denervation?",
+   "options": [
+    "Hyperreflexia with clonus",
+    "Spastic rigidity",
+    "Flaccid paralysis and loss of voluntary contraction",
+    "Increased muscle tone with clasp-knife resistance"
+   ],
+   "answer": 2,
+   "explain": "Lower motor neuron / peripheral nerve injury interrupts motor impulses to skeletal muscle fibers, causing flaccid paralysis, hypotonia/atonia, loss of reflexes, and eventual denervation atrophy. Hyperreflexia and spasticity are classic of upper motor neuron lesions.",
+   "open": {
+    "q": "What motor finding occurs in a skeletal muscle after complete peripheral motor nerve injury?",
+    "accept": [
+     "flaccid paralysis",
+     "flaccid weakness and loss of voluntary movement",
+     "flaccid paralysis and hypotonia",
+     "flaccid paralysis with loss of reflexes"
+    ]
+   }
+  },
+  {
+   "id": "GAM-14",
+   "level": 1,
+   "sub": "Innervation and motor units",
+   "q": "What is the specialized synaptic contact where a somatic motor neuron axon terminal meets a skeletal muscle fiber?",
+   "options": [
+    "Intercalated disc",
+    "Golgi tendon organ",
+    "Sarcomere",
+    "Neuromuscular junction (motor end plate)"
+   ],
+   "answer": 3,
+   "explain": "The neuromuscular junction (motor end plate) is the chemical synapse between a motor neuron terminal and the sarcolemma of a skeletal muscle fiber, releasing acetylcholine to trigger excitation-contraction coupling. Golgi tendon organs monitor tendon tension.",
+   "open": {
+    "q": "What is the junction where a motor neuron axon terminal communicates with a skeletal muscle fiber?",
+    "accept": [
+     "neuromuscular junction",
+     "motor end plate",
+     "myoneural junction",
+     "nmj"
+    ]
+   }
+  },
+  {
+   "id": "GAM-15",
+   "level": 1,
+   "sub": "Proprioceptors and muscle tone",
+   "q": "Which encapsulated sensory receptor lies parallel to extrafusal muscle fibers and detects changes in muscle length and rate of stretch?",
+   "options": [
+    "Muscle spindle",
+    "Golgi tendon organ",
+    "Pacinian corpuscle",
+    "Free nerve ending"
+   ],
+   "answer": 0,
+   "explain": "Muscle spindles contain intrafusal fibers arranged in parallel with extrafusal fibers and sense muscle stretch and velocity of length change, driving the stretch reflex. Golgi tendon organs lie in series within tendons to sense tension.",
+   "open": {
+    "q": "Which sensory receptor lies parallel to muscle fibers and detects muscle stretch and length changes?",
+    "accept": [
+     "muscle spindle",
+     "muscle spindles",
+     "neuromuscular spindle"
+    ]
+   }
+  },
+  {
+   "id": "GAM-16",
+   "level": 2,
+   "sub": "Proprioceptors and muscle tone",
+   "q": "Where is a Golgi tendon organ located, and what mechanical variable does it primarily monitor?",
+   "options": [
+    "Inside muscle bellies; resting heart rate",
+    "Within tendons in series with muscle fibers; muscle tension",
+    "Inside joint cavities; synovial viscosity",
+    "In the epidermis; skin temperature"
+   ],
+   "answer": 1,
+   "explain": "Golgi tendon organs are located in tendons in series with muscle fibers and respond to active muscle contraction and tendon tension, helping protect against excessive force. Muscle spindles detect stretch in parallel.",
+   "open": {
+    "q": "Where is a Golgi tendon organ located and what does it sense?",
+    "accept": [
+     "in tendons in series with muscle fibers and senses tension",
+     "within tendons to monitor muscle tension",
+     "tendon in series; senses muscle tension",
+     "tendons; tension on the tendon"
+    ]
+   }
+  },
+  {
+   "id": "GAM-17",
+   "level": 1,
+   "sub": "Contraction mechanics",
+   "q": "Which type of muscle contraction occurs when a muscle develops tension and shortens while moving a constant load?",
+   "options": [
+    "Isometric contraction",
+    "Eccentric contraction",
+    "Isotonic concentric contraction",
+    "Tetanic relaxation"
+   ],
+   "answer": 2,
+   "explain": "In an isotonic concentric contraction, muscle tension remains roughly constant while the muscle shortens and pulls its attachments closer together. During an eccentric contraction, the muscle lengthens under tension as it brakes a load.",
+   "open": {
+    "q": "What type of contraction occurs when a muscle shortens while generating tension against a constant load?",
+    "accept": [
+     "isotonic concentric contraction",
+     "concentric contraction",
+     "concentric",
+     "isotonic shortening"
+    ]
+   }
+  },
+  {
+   "id": "GAM-18",
+   "level": 2,
+   "sub": "Contraction mechanics",
+   "q": "What happens to muscle length during a purely isometric contraction against an immovable resistance?",
+   "options": [
+    "The muscle shortens rapidly",
+    "The muscle lengthens progressively",
+    "The muscle completely detaches from bone",
+    "Muscle length stays essentially unchanged while tension rises"
+   ],
+   "answer": 3,
+   "explain": "During an isometric contraction, sarcomeres generate tension (cross-bridge cycling occurs), but the external load prevents the muscle as a whole from shortening or lengthening. Isometric activity helps maintain posture and stabilize joints.",
+   "open": {
+    "q": "How does muscle length change during an isometric contraction?",
+    "accept": [
+     "it stays unchanged while tension increases",
+     "no change in overall muscle length",
+     "muscle length remains constant",
+     "remains the same length"
+    ]
+   }
+  },
+  {
+   "id": "GAM-19",
+   "level": 3,
+   "sub": "Contraction mechanics",
+   "q": "A student walks down a steep flight of stairs and quadriceps femoris contracts while lengthening to control knee flexion. Which type of contraction is occurring in the quadriceps?",
+   "options": [
+    "Eccentric contraction",
+    "Isometric contraction",
+    "Concentric contraction",
+    "Refractory contraction"
+   ],
+   "answer": 0,
+   "explain": "An eccentric contraction occurs when an active muscle lengthens under load, acting as a controlled brake against gravity (such as the quadriceps controlling knee flexion when descending stairs). It generates high tension and can cause delayed muscle soreness when unaccustomed.",
+   "open": {
+    "q": "What type of contraction occurs when an active muscle lengthens while resisting a load, such as quadriceps when walking downhill?",
+    "accept": [
+     "eccentric contraction",
+     "eccentric",
+     "isotonic eccentric contraction"
+    ]
+   }
+  },
+  {
+   "id": "GAM-20",
+   "level": 1,
+   "sub": "Blood supply of skeletal muscle",
+   "q": "How do arterial branches typically enter a skeletal muscle belly?",
+   "options": [
+    "Only through the distal tendon insertion",
+    "At a neurovascular hilum or entry point alongside motor nerve branches",
+    "Exclusively through synovial fluid",
+    "Directly from articular cartilage"
+   ],
+   "answer": 1,
+   "explain": "Arteries and veins usually enter skeletal muscles along with motor nerves at a neurovascular entry point and branch within the perimysium and endomysium to supply muscle fibers. Rich capillary networks surround individual muscle fibers to support metabolic demand.",
+   "open": {
+    "q": "How do blood vessels generally enter a skeletal muscle relative to its motor nerve supply?",
+    "accept": [
+     "together with motor nerves at a neurovascular entry point",
+     "alongside motor nerve branches into the muscle",
+     "with motor nerves at a neurovascular hilum",
+     "accompanying motor nerves"
+    ]
+   }
+  }
+ ]
+}
