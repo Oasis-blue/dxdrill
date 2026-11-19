@@ -1,0 +1,280 @@
+{
+ "terms": [
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Classification and Nomenclature",
+   "term": "Holoenzyme",
+   "clues": [
+    "A complete functional unit made of more than one part.",
+    "Consists of a protein apoenzyme together with its required cofactor or coenzyme.",
+    "Loses catalytic activity if its non-protein helper is removed."
+   ],
+   "forbidden": [
+    "apoenzyme",
+    "cofactor",
+    "coenzyme",
+    "protein",
+    "active"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Classification and Nomenclature",
+   "term": "Zymogen",
+   "clues": [
+    "A protective storage form used by digestive and clotting pathways.",
+    "An inactive enzyme precursor that needs cleavage to turn on.",
+    "Trypsinogen and pepsinogen are classic examples."
+   ],
+   "forbidden": [
+    "inactive",
+    "precursor",
+    "cleavage",
+    "trypsinogen",
+    "pepsinogen"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Catalysis and Transition State",
+   "term": "Activation energy",
+   "clues": [
+    "An energetic hurdle along a reaction pathway.",
+    "Represents the free energy difference between reactants and the highest-energy state.",
+    "Enzymes speed up reactions by lowering this barrier."
+   ],
+   "forbidden": [
+    "energy",
+    "barrier",
+    "transition",
+    "enzyme",
+    "reaction"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Catalysis and Transition State",
+   "term": "Induced fit",
+   "clues": [
+    "A dynamic concept describing molecular recognition.",
+    "Suggests a binding site molds its shape when a ligand arrives.",
+    "Contrasts with a rigid lock-and-key model of catalysis."
+   ],
+   "forbidden": [
+    "conformational",
+    "shape",
+    "substrate",
+    "active",
+    "lock",
+    "key"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Kinetics",
+   "term": "Km",
+   "clues": [
+    "A kinetic constant with units of concentration.",
+    "Often used as an inverse measure of substrate affinity in simple systems.",
+    "Equals the substrate concentration at half-maximal reaction velocity."
+   ],
+   "forbidden": [
+    "Michaelis",
+    "substrate",
+    "concentration",
+    "Vmax",
+    "half",
+    "velocity"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Kinetics",
+   "term": "Turnover number",
+   "clues": [
+    "A measure of catalytic speed at full saturation.",
+    "Often denoted as kcat in enzyme kinetics.",
+    "Counts how many substrate molecules one active site processes per second."
+   ],
+   "forbidden": [
+    "kcat",
+    "substrate",
+    "active",
+    "second",
+    "Vmax"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Kinetics",
+   "term": "Competitive inhibitor",
+   "clues": [
+    "A reversible regulator that resembles a natural reactant.",
+    "Binds to the free active site and can be overcome by excess substrate.",
+    "Raises apparent Km without changing Vmax."
+   ],
+   "forbidden": [
+    "substrate",
+    "active",
+    "Km",
+    "Vmax",
+    "bind",
+    "binds"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Regulation",
+   "term": "Allosteric site",
+   "clues": [
+    "A regulatory region distinct from the catalytic pocket.",
+    "Allows effector molecules to alter enzyme activity from a distance.",
+    "Commonly produces sigmoidal kinetics in multisubunit enzymes."
+   ],
+   "forbidden": [
+    "active",
+    "effector",
+    "regulator",
+    "enzyme",
+    "sigmoidal"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Enzyme Regulation",
+   "term": "Isoenzyme",
+   "clues": [
+    "A variant form of a catalytic protein found in tissues.",
+    "Different protein forms that speed up the exact same reaction.",
+    "Lactate dehydrogenase has multiple forms used in clinical diagnostics."
+   ],
+   "forbidden": [
+    "same",
+    "reaction",
+    "enzyme",
+    "form",
+    "forms",
+    "tissue"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Bioenergetics and Free Energy",
+   "term": "Exergonic",
+   "clues": [
+    "A thermodynamic label for a chemical process.",
+    "Indicates a net release of free energy under given conditions.",
+    "Corresponds to a negative delta G."
+   ],
+   "forbidden": [
+    "energy",
+    "free",
+    "negative",
+    "spontaneous",
+    "release"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "High-Energy Phosphate Compounds",
+   "term": "Phosphocreatine",
+   "clues": [
+    "A high-energy phosphate reserve in excitable tissue.",
+    "Donates a phosphoryl group to ADP when energy demand spikes.",
+    "Abundant in resting skeletal muscle."
+   ],
+   "forbidden": [
+    "creatine",
+    "phosphate",
+    "ATP",
+    "ADP",
+    "muscle"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "High-Energy Phosphate Compounds",
+   "term": "Substrate-level phosphorylation",
+   "clues": [
+    "A way of making ATP without needing a membrane proton gradient.",
+    "Occurs during glycolysis and the citric acid cycle.",
+    "Transfers a phosphate group directly from a metabolic intermediate to ADP."
+   ],
+   "forbidden": [
+    "ATP",
+    "ADP",
+    "phosphate",
+    "glycolysis",
+    "electron"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Biological Oxidation and Electron Transport",
+   "term": "Ubiquinone",
+   "clues": [
+    "A mobile hydrophobic carrier inside a lipid bilayer.",
+    "Shuttles electrons in the inner mitochondrial membrane.",
+    "Also known as coenzyme Q."
+   ],
+   "forbidden": [
+    "coenzyme",
+    "electron",
+    "mitochondrial",
+    "membrane",
+    "complex"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Biological Oxidation and Electron Transport",
+   "term": "Cytochrome c oxidase",
+   "clues": [
+    "The final protein complex of the mitochondrial respiratory chain.",
+    "Contains heme and copper centers that transfer electrons.",
+    "Reduces molecular oxygen to water and is blocked by cyanide."
+   ],
+   "forbidden": [
+    "oxygen",
+    "cyanide",
+    "electron",
+    "water",
+    "complex"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Oxidative Phosphorylation and Uncoupling",
+   "term": "Chemiosmotic hypothesis",
+   "clues": [
+    "A foundational bioenergetic mechanism proposed by Peter Mitchell.",
+    "Links transmembrane proton pumping to ATP synthesis.",
+    "Explains how a proton-motive force drives ATP synthase."
+   ],
+   "forbidden": [
+    "proton",
+    "protons",
+    "ATP",
+    "gradient",
+    "membrane"
+   ]
+  },
+  {
+   "topic": "bc-enzymes-and-bioenergetics",
+   "sub": "Oxidative Phosphorylation and Uncoupling",
+   "term": "Uncoupler",
+   "clues": [
+    "An agent that separates electron flow from phosphorylation.",
+    "Allows protons to leak back across the inner mitochondrial membrane.",
+    "Increases heat production while lowering ATP yield."
+   ],
+   "forbidden": [
+    "proton",
+    "ATP",
+    "heat",
+    "membrane",
+    "dinitrophenol"
+   ]
+  }
+ ]
+}
