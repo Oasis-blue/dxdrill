@@ -145,5 +145,575 @@ revoke update on public.question_reports from anon, authenticated;
 grant  update (status) on public.question_reports to authenticated;   -- the policy above limits this to admins
 grant  select, insert on public.question_reports to authenticated;
 
+-- ===== Update 1 (leaderboard hardening) =====
+-- 1. The list of real questions. Only these count on leaderboards.
+create table if not exists public.valid_questions (
+  id text primary key check (char_length(id) <= 60)
+);
+alter table public.valid_questions enable row level security;   -- no policies: students cannot read or change it
+revoke all on public.valid_questions from anon, authenticated;
+
+-- The admin's "Sync questions" button on the Account page fills the list.
+create or replace function public.sync_question_ids(p_ids text[]) returns int
+language plpgsql security definer set search_path = public as $$
+declare n int;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  insert into public.valid_questions (id)
+    select distinct x from unnest(p_ids) as x where x is not null and char_length(x) between 1 and 60
+    on conflict do nothing;
+  select count(*) into n from public.valid_questions;
+  return n;
+end $$;
+revoke all on function public.sync_question_ids(text[]) from public, anon;
+grant execute on function public.sync_question_ids(text[]) to authenticated;
+
+-- 2. Leaderboards count only real questions.
+create or replace function public.student_leaderboard(p_days int default 7, p_class text default null)
+returns table (display_name text, class_id text, points bigint)
+language sql security definer stable set search_path = public as $$
+  select p.display_name, p.class_id, count(distinct a.question_id) as points
+  from public.answers a
+  join public.valid_questions v on v.id = a.question_id
+  join public.profiles p on p.id = a.user_id
+  where a.correct and (p_days = 0 or a.created_at > now() - make_interval(days => p_days))
+    and (p_class is null or p.class_id = p_class)
+  group by p.id, p.display_name, p.class_id
+  order by points desc, p.display_name
+  limit 50
+$$;
+
+create or replace function public.class_leaderboard(p_days int default 7)
+returns table (class_id text, players bigint, points bigint, per_player numeric)
+language sql security definer stable set search_path = public as $$
+  with u as (
+    select p.class_id, p.id, count(distinct a.question_id) as pts
+    from public.answers a
+    join public.valid_questions v on v.id = a.question_id
+    join public.profiles p on p.id = a.user_id
+    where a.correct and p.class_id is not null
+      and (p_days = 0 or a.created_at > now() - make_interval(days => p_days))
+    group by p.class_id, p.id
+  )
+  select u.class_id, count(*) as players, sum(u.pts) as points, round(sum(u.pts)::numeric / count(*), 1) as per_player
+  from u group by u.class_id order by per_player desc
+$$;
+revoke all on function public.student_leaderboard(int, text) from public, anon;
+revoke all on function public.class_leaderboard(int) from public, anon;
+grant execute on function public.student_leaderboard(int, text) to authenticated;
+grant execute on function public.class_leaderboard(int) to authenticated;
+
+-- 3. Daily limits per student, so nobody can flood the tables.
+create or replace function public.limit_daily_inserts() returns trigger
+language plpgsql security definer set search_path = public as $$
+declare n int; cap int := tg_argv[0]::int;
+begin
+  execute format('select count(*) from public.%I where user_id = $1 and created_at > now() - interval ''1 day''', tg_table_name)
+    into n using new.user_id;
+  if n >= cap then raise exception 'daily limit reached'; end if;
+  return new;
+end $$;
+
+drop trigger if exists answers_daily_limit on public.answers;
+create trigger answers_daily_limit before insert on public.answers
+  for each row execute function public.limit_daily_inserts(1500);
+
+drop trigger if exists reports_daily_limit on public.question_reports;
+create trigger reports_daily_limit before insert on public.question_reports
+  for each row execute function public.limit_daily_inserts(30);
+
+-- 4. Names cannot contain hidden or control characters.
+do $$ begin
+  alter table public.profiles add constraint display_name_clean check (display_name !~ '[[:cntrl:]]') not valid;
+exception when duplicate_object then null; end $$;
+
+-- ===== Update 2 (admin member tools) =====
+-- The admin can fix other members' name and class (members still only change their own).
+drop policy if exists profiles_admin_update on public.profiles;
+create policy profiles_admin_update on public.profiles for update using (public.is_admin()) with check (public.is_admin());
+
+-- Member list for the admin: search by name or email, optional class filter, newest first.
+create or replace function public.admin_members(p_search text default '', p_class text default null, p_limit int default 50)
+returns table (user_id uuid, display_name text, class_id text, email text, points bigint, answers_total bigint, joined timestamptz, is_admin boolean)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query
+  select p.id, p.display_name, p.class_id, u.email::text,
+    (select count(distinct a.question_id) from public.answers a join public.valid_questions v on v.id = a.question_id where a.user_id = p.id and a.correct),
+    (select count(*) from public.answers a where a.user_id = p.id),
+    p.created_at, p.is_admin
+  from public.profiles p join auth.users u on u.id = p.id
+  where (coalesce(p_class, '') = '' or p.class_id = p_class)
+    and (coalesce(p_search, '') = '' or p.display_name ilike '%' || p_search || '%' or u.email ilike '%' || p_search || '%')
+  order by p.created_at desc
+  limit least(greatest(p_limit, 1), 200);
+end $$;
+
+create or replace function public.admin_class_counts()
+returns table (class_id text, members bigint)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select p.class_id, count(*) from public.profiles p group by p.class_id order by p.class_id;
+end $$;
+
+-- Remove a member and everything they scored (their answers and reports go with them). Admins cannot be removed here.
+create or replace function public.admin_remove_member(p_id uuid) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  if p_id = auth.uid() or exists (select 1 from public.profiles where id = p_id and is_admin) then raise exception 'not allowed'; end if;
+  delete from auth.users where id = p_id;
+end $$;
+
+-- Keep the member, delete all their scores (for a cheater you want to warn first).
+create or replace function public.admin_clear_points(p_id uuid) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.answers where user_id = p_id;
+end $$;
+
+revoke all on function public.admin_members(text, text, int) from public, anon;
+revoke all on function public.admin_class_counts() from public, anon;
+revoke all on function public.admin_remove_member(uuid) from public, anon;
+revoke all on function public.admin_clear_points(uuid) from public, anon;
+grant execute on function public.admin_members(text, text, int) to authenticated;
+grant execute on function public.admin_class_counts() to authenticated;
+grant execute on function public.admin_remove_member(uuid) to authenticated;
+grant execute on function public.admin_clear_points(uuid) to authenticated;
+
+-- ===== Update 3 (polls) =====
+create table if not exists public.polls (
+  id           bigint generated always as identity primary key,
+  question     text not null check (char_length(question) between 3 and 200),
+  allow_change boolean not null default true,
+  closes_at    timestamptz,
+  is_closed    boolean not null default false,
+  created_at   timestamptz not null default now()
+);
+create table if not exists public.poll_options (
+  id       bigint generated always as identity primary key,
+  poll_id  bigint not null references public.polls(id) on delete cascade,
+  label    text not null check (char_length(label) between 1 and 80),
+  position int not null default 0
+);
+create index if not exists poll_options_poll on public.poll_options (poll_id);
+create table if not exists public.poll_votes (
+  poll_id    bigint not null references public.polls(id) on delete cascade,
+  user_id    uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  option_id  bigint not null references public.poll_options(id) on delete cascade,
+  created_at timestamptz not null default now(),
+  primary key (poll_id, user_id)
+);
+create index if not exists poll_votes_option on public.poll_votes (option_id);
+
+-- Students suggest polls; the admin reads them.
+create table if not exists public.poll_suggestions (
+  id         bigint generated always as identity primary key,
+  user_id    uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  text       text not null check (char_length(text) between 5 and 200),
+  status     text not null default 'open' check (status in ('open','used','dismissed')),
+  created_at timestamptz not null default now()
+);
+
+alter table public.polls             enable row level security;
+alter table public.poll_options      enable row level security;
+alter table public.poll_votes        enable row level security;
+alter table public.poll_suggestions  enable row level security;
+
+drop policy if exists polls_read    on public.polls;
+drop policy if exists options_read  on public.poll_options;
+drop policy if exists votes_own     on public.poll_votes;
+drop policy if exists sugg_insert   on public.poll_suggestions;
+drop policy if exists sugg_read     on public.poll_suggestions;
+drop policy if exists sugg_update   on public.poll_suggestions;
+create policy polls_read   on public.polls        for select to authenticated using (true);
+create policy options_read on public.poll_options for select to authenticated using (true);
+create policy votes_own    on public.poll_votes   for select to authenticated using (user_id = auth.uid());   -- you only see your own vote; results come from poll_results()
+create policy sugg_insert  on public.poll_suggestions for insert to authenticated with check (user_id = auth.uid());
+create policy sugg_read    on public.poll_suggestions for select to authenticated using (user_id = auth.uid() or public.is_admin());
+create policy sugg_update  on public.poll_suggestions for update to authenticated using (public.is_admin()) with check (public.is_admin());
+
+revoke all on public.polls, public.poll_options, public.poll_votes, public.poll_suggestions from anon, authenticated;
+grant select on public.polls, public.poll_options, public.poll_votes to authenticated;
+grant select, insert on public.poll_suggestions to authenticated;
+grant update (status) on public.poll_suggestions to authenticated;   -- the policy limits this to admins
+
+drop trigger if exists sugg_daily_limit on public.poll_suggestions;
+create trigger sugg_daily_limit before insert on public.poll_suggestions
+  for each row execute function public.limit_daily_inserts(5);
+
+-- Voting goes through this function so the rules cannot be bypassed.
+create or replace function public.cast_vote(p_poll bigint, p_option bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare pl public.polls%rowtype;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into pl from public.polls where id = p_poll;
+  if not found then raise exception 'poll not found'; end if;
+  if pl.is_closed or (pl.closes_at is not null and pl.closes_at <= now()) then raise exception 'poll closed'; end if;
+  if not exists (select 1 from public.poll_options where id = p_option and poll_id = p_poll) then raise exception 'bad option'; end if;
+  if exists (select 1 from public.poll_votes where poll_id = p_poll and user_id = auth.uid()) then
+    if not pl.allow_change then raise exception 'already voted'; end if;
+    update public.poll_votes set option_id = p_option, created_at = now() where poll_id = p_poll and user_id = auth.uid();
+  else
+    insert into public.poll_votes (poll_id, user_id, option_id) values (p_poll, auth.uid(), p_option);
+  end if;
+end $$;
+
+-- Results are only shown to people who voted, when a poll is closed, and to the admin.
+create or replace function public.poll_results(p_poll_ids bigint[])
+returns table (poll_id bigint, option_id bigint, votes bigint, class_votes bigint)
+language sql security definer stable set search_path = public as $$
+  with me as (select class_id from public.profiles where id = auth.uid()),
+  allowed as (
+    select p.id from public.polls p
+    where p.id = any(p_poll_ids) and auth.uid() is not null and (
+      public.is_admin() or p.is_closed or (p.closes_at is not null and p.closes_at <= now())
+      or exists (select 1 from public.poll_votes v where v.poll_id = p.id and v.user_id = auth.uid()))
+  )
+  select o.poll_id, o.id, count(v.user_id),
+         count(v.user_id) filter (where pr.class_id is not null and pr.class_id = (select class_id from me))
+  from public.poll_options o
+  join allowed a on a.id = o.poll_id
+  left join public.poll_votes v on v.option_id = o.id
+  left join public.profiles pr on pr.id = v.user_id
+  group by o.poll_id, o.id
+$$;
+
+create or replace function public.admin_create_poll(p_question text, p_options text[], p_closes timestamptz default null, p_allow_change boolean default true)
+returns bigint
+language plpgsql security definer set search_path = public as $$
+declare pid bigint; opts text[];
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  select array_agg(trim(x)) into opts from unnest(p_options) as x where trim(x) <> '';
+  if opts is null or array_length(opts, 1) < 2 or array_length(opts, 1) > 5 then raise exception 'a poll needs 2 to 5 options'; end if;
+  insert into public.polls (question, allow_change, closes_at) values (trim(p_question), p_allow_change, p_closes) returning id into pid;
+  insert into public.poll_options (poll_id, label, position)
+    select pid, left(o.label, 80), o.ord from unnest(opts) with ordinality as o(label, ord);
+  return pid;
+end $$;
+
+create or replace function public.admin_set_poll_closed(p_id bigint, p_closed boolean) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  update public.polls set is_closed = p_closed, closes_at = case when p_closed then closes_at else null end where id = p_id;
+end $$;
+
+create or replace function public.admin_delete_poll(p_id bigint) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.polls where id = p_id;
+end $$;
+
+revoke all on function public.cast_vote(bigint, bigint) from public, anon;
+revoke all on function public.poll_results(bigint[]) from public, anon;
+revoke all on function public.admin_create_poll(text, text[], timestamptz, boolean) from public, anon;
+revoke all on function public.admin_set_poll_closed(bigint, boolean) from public, anon;
+revoke all on function public.admin_delete_poll(bigint) from public, anon;
+grant execute on function public.cast_vote(bigint, bigint) to authenticated;
+grant execute on function public.poll_results(bigint[]) to authenticated;
+grant execute on function public.admin_create_poll(text, text[], timestamptz, boolean) to authenticated;
+grant execute on function public.admin_set_poll_closed(bigint, boolean) to authenticated;
+grant execute on function public.admin_delete_poll(bigint) to authenticated;
+
+-- ===== Update 4 (window competitions) =====
+-- 1. The hidden question bank. Students can never read this table; only the functions below can.
+create table if not exists public.competition_questions (
+  id         text primary key check (char_length(id) <= 60),
+  pool       text not null default 'general' check (char_length(pool) <= 40),
+  q          text not null check (char_length(q) between 3 and 1000),
+  options    text[] not null check (array_length(options, 1) = 4),
+  answer     int  not null check (answer between 0 and 3),
+  explain    text not null default '' check (char_length(explain) <= 2000),
+  created_at timestamptz not null default now()
+);
+
+create table if not exists public.competitions (
+  id               bigint generated always as identity primary key,
+  name             text not null check (char_length(name) between 3 and 80),
+  opens_at         timestamptz not null,
+  closes_at        timestamptz not null,
+  n_questions      int not null check (n_questions between 1 and 100),
+  seconds_per_q    int not null check (seconds_per_q between 5 and 300),
+  pool             text,                       -- null = draw from the whole bank
+  created_at       timestamptz not null default now(),
+  check (closes_at > opens_at)
+);
+
+create table if not exists public.competition_entries (
+  id             bigint generated always as identity primary key,
+  competition_id bigint not null references public.competitions(id) on delete cascade,
+  user_id        uuid not null references auth.users(id) on delete cascade,
+  qids           text[] not null,
+  current_idx    int not null default 0,
+  q_started_at   timestamptz not null default now(),
+  deadline_at    timestamptz not null,
+  started_at     timestamptz not null default now(),
+  finished_at    timestamptz,
+  score          int not null default 0,
+  total_ms       bigint not null default 0,
+  unique (competition_id, user_id)
+);
+create table if not exists public.competition_answers (
+  entry_id    bigint not null references public.competition_entries(id) on delete cascade,
+  idx         int not null,
+  question_id text not null,
+  choice      int not null,                    -- -1 = ran out of time
+  correct     boolean not null,
+  ms          bigint not null,
+  primary key (entry_id, idx)
+);
+
+alter table public.competition_questions enable row level security;
+alter table public.competitions          enable row level security;
+alter table public.competition_entries  enable row level security;
+alter table public.competition_answers  enable row level security;
+
+drop policy if exists comps_read   on public.competitions;
+drop policy if exists entries_read on public.competition_entries;
+create policy comps_read   on public.competitions        for select to authenticated using (true);
+create policy entries_read on public.competition_entries for select to authenticated using (user_id = auth.uid() or public.is_admin());
+
+-- Students may see that they started or finished. They may NOT read score, questions or answers.
+revoke all on public.competition_questions, public.competitions, public.competition_entries, public.competition_answers from anon, authenticated;
+grant select on public.competitions to authenticated;
+grant select (id, competition_id, user_id, current_idx, started_at, finished_at) on public.competition_entries to authenticated;
+
+-- 2. Internal: apply timeouts and the closing time to one entry.
+create or replace function public._comp_tick(p_entry bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare e public.competition_entries; c public.competitions;
+begin
+  select * into e from public.competition_entries where id = p_entry for update;
+  if not found or e.finished_at is not null then return; end if;
+  select * into c from public.competitions where id = e.competition_id;
+  if now() > c.closes_at then
+    update public.competition_entries set finished_at = now() where id = e.id;
+    return;
+  end if;
+  if now() > e.deadline_at + interval '1 second' then
+    insert into public.competition_answers (entry_id, idx, question_id, choice, correct, ms)
+      values (e.id, e.current_idx, e.qids[e.current_idx + 1], -1, false, c.seconds_per_q * 1000);
+    update public.competition_entries set
+      current_idx = current_idx + 1,
+      total_ms = total_ms + c.seconds_per_q * 1000,
+      finished_at = case when current_idx + 1 >= c.n_questions then now() else null end,
+      q_started_at = now(),
+      deadline_at = now() + make_interval(secs => c.seconds_per_q)
+    where id = e.id;
+  end if;
+end $$;
+
+-- 3. What the student sees: the current question WITHOUT its answer.
+create or replace function public.comp_state(p_comp bigint)
+returns table (state text, q_idx int, q_total int, q_text text, q_options text[], secs_left numeric)
+language plpgsql security definer set search_path = public as $$
+declare c public.competitions; e public.competition_entries;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into c from public.competitions where id = p_comp;
+  if not found then raise exception 'competition not found'; end if;
+  select * into e from public.competition_entries where competition_id = p_comp and user_id = auth.uid();
+  if not found then
+    return query select 'none'::text, 0, c.n_questions, null::text, null::text[], 0::numeric; return;
+  end if;
+  perform public._comp_tick(e.id);
+  select * into e from public.competition_entries where id = e.id;
+  if e.finished_at is not null then
+    return query select 'finished'::text, e.current_idx, c.n_questions, null::text, null::text[], 0::numeric; return;
+  end if;
+  return query select 'question'::text, e.current_idx, c.n_questions, cq.q, cq.options,
+                      greatest(0, extract(epoch from (e.deadline_at - now())))::numeric
+               from public.competition_questions cq where cq.id = e.qids[e.current_idx + 1];
+end $$;
+
+create or replace function public.comp_start(p_comp bigint)
+returns table (state text, q_idx int, q_total int, q_text text, q_options text[], secs_left numeric)
+language plpgsql security definer set search_path = public as $$
+declare c public.competitions; ids text[];
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into c from public.competitions where id = p_comp;
+  if not found then raise exception 'competition not found'; end if;
+  if exists (select 1 from public.competition_entries where competition_id = p_comp and user_id = auth.uid()) then
+    return query select * from public.comp_state(p_comp); return;          -- resume
+  end if;
+  if now() < c.opens_at then raise exception 'not open yet'; end if;
+  if now() + make_interval(secs => c.n_questions * c.seconds_per_q + 30) > c.closes_at then raise exception 'too late to start'; end if;
+  select array_agg(s.id) into ids from (
+    select cq.id from public.competition_questions cq where c.pool is null or cq.pool = c.pool order by random() limit c.n_questions) s;
+  if coalesce(array_length(ids, 1), 0) < c.n_questions then raise exception 'not enough questions'; end if;
+  insert into public.competition_entries (competition_id, user_id, qids, q_started_at, deadline_at)
+    values (p_comp, auth.uid(), ids, now(), now() + make_interval(secs => c.seconds_per_q))
+    on conflict do nothing;
+  return query select * from public.comp_state(p_comp);
+end $$;
+
+-- p_choice -1 means the student ran out of time. The result of an answer is never shown during the competition.
+create or replace function public.comp_answer(p_comp bigint, p_idx int, p_choice int)
+returns table (state text, q_idx int, q_total int, q_text text, q_options text[], secs_left numeric)
+language plpgsql security definer set search_path = public as $$
+declare c public.competitions; e public.competition_entries; ans int; ok boolean; spent bigint;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into c from public.competitions where id = p_comp;
+  if not found then raise exception 'competition not found'; end if;
+  select * into e from public.competition_entries where competition_id = p_comp and user_id = auth.uid();
+  if not found then raise exception 'not started'; end if;
+  perform public._comp_tick(e.id);
+  select * into e from public.competition_entries where id = e.id for update;
+  if e.finished_at is not null or p_idx <> e.current_idx then
+    return query select * from public.comp_state(p_comp); return;           -- late or repeated click: ignored
+  end if;
+  select cq.answer into ans from public.competition_questions cq where cq.id = e.qids[e.current_idx + 1];
+  spent := least(c.seconds_per_q * 1000, greatest(0, (extract(epoch from (now() - e.q_started_at)) * 1000)::bigint));
+  ok := p_choice between 0 and 3 and p_choice = ans and now() <= e.deadline_at + interval '1 second';
+  insert into public.competition_answers (entry_id, idx, question_id, choice, correct, ms)
+    values (e.id, e.current_idx, e.qids[e.current_idx + 1], p_choice, ok, spent);
+  update public.competition_entries set
+    score = score + case when ok then 1 else 0 end,
+    total_ms = total_ms + spent,
+    current_idx = current_idx + 1,
+    finished_at = case when current_idx + 1 >= c.n_questions then now() else null end,
+    q_started_at = now(),
+    deadline_at = now() + make_interval(secs => c.seconds_per_q)
+  where id = e.id;
+  return query select * from public.comp_state(p_comp);
+end $$;
+
+-- 4. Results: only after the competition closes (the admin can look any time). Admin entries are left out.
+create or replace function public.comp_leaderboard(p_comp bigint)
+returns table (display_name text, class_id text, score int, total_ms bigint, q_total int)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  if not (public.is_admin() or exists (select 1 from public.competitions where id = p_comp and closes_at <= now())) then raise exception 'results not open'; end if;
+  return query
+    select p.display_name, p.class_id, e.score, e.total_ms, c.n_questions
+    from public.competition_entries e join public.profiles p on p.id = e.user_id join public.competitions c on c.id = e.competition_id
+    where e.competition_id = p_comp and not p.is_admin
+    order by e.score desc, e.total_ms asc, e.started_at asc limit 100;
+end $$;
+
+create or replace function public.comp_class_board(p_comp bigint)
+returns table (class_id text, participants bigint, avg_score numeric, total_score bigint)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  if not (public.is_admin() or exists (select 1 from public.competitions where id = p_comp and closes_at <= now())) then raise exception 'results not open'; end if;
+  return query
+    select p.class_id, count(*), round(avg(e.score), 1), sum(e.score)::bigint
+    from public.competition_entries e join public.profiles p on p.id = e.user_id
+    where e.competition_id = p_comp and not p.is_admin and p.class_id is not null
+    group by p.class_id order by avg(e.score) desc;
+end $$;
+
+create or replace function public.comp_my_result(p_comp bigint)
+returns table (score int, q_total int, my_rank bigint, participants bigint, total_ms bigint)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  if not (public.is_admin() or exists (select 1 from public.competitions where id = p_comp and closes_at <= now())) then raise exception 'results not open'; end if;
+  return query
+    with r as (
+      select e.user_id, e.score, e.total_ms, rank() over (order by e.score desc, e.total_ms asc) as rk
+      from public.competition_entries e join public.profiles p on p.id = e.user_id
+      where e.competition_id = p_comp and not p.is_admin)
+    select r.score, (select n_questions from public.competitions where id = p_comp), r.rk, (select count(*) from r), r.total_ms
+    from r where r.user_id = auth.uid();
+end $$;
+
+create or replace function public.comp_review(p_comp bigint)
+returns table (idx int, q_text text, q_options text[], right_answer int, explain text, your_choice int, was_correct boolean)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  if not (public.is_admin() or exists (select 1 from public.competitions where id = p_comp and closes_at <= now())) then raise exception 'results not open'; end if;
+  return query
+    select a.idx, cq.q, cq.options, cq.answer, cq.explain, a.choice, a.correct
+    from public.competition_entries e join public.competition_answers a on a.entry_id = e.id
+    join public.competition_questions cq on cq.id = a.question_id
+    where e.competition_id = p_comp and e.user_id = auth.uid() order by a.idx;
+end $$;
+
+-- 5. Admin tools.
+create or replace function public.admin_import_comp_questions(p_items jsonb, p_pool text default 'general') returns int
+language plpgsql security definer set search_path = public as $$
+declare it jsonb; n int := 0; opts text[]; pl text := left(coalesce(nullif(trim(p_pool), ''), 'general'), 40);
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  if jsonb_typeof(p_items) <> 'array' or jsonb_array_length(p_items) > 300 then raise exception 'send an array of up to 300 questions'; end if;
+  for it in select * from jsonb_array_elements(p_items) loop
+    select array_agg(x) into opts from jsonb_array_elements_text(it->'options') as x;
+    if opts is null or array_length(opts, 1) <> 4 then raise exception 'question % needs exactly 4 options', coalesce(it->>'id', '?'); end if;
+    insert into public.competition_questions (id, pool, q, options, answer, explain)
+      values (left(it->>'id', 60), pl, it->>'q', opts, (it->>'answer')::int, coalesce(it->>'explain', ''))
+    on conflict (id) do update set pool = excluded.pool, q = excluded.q, options = excluded.options, answer = excluded.answer, explain = excluded.explain;
+    n := n + 1;
+  end loop;
+  return n;
+end $$;
+
+create or replace function public.admin_comp_bank() returns table (pool text, questions bigint)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select cq.pool, count(*) from public.competition_questions cq group by cq.pool order by cq.pool;
+end $$;
+
+create or replace function public.admin_delete_comp_pool(p_pool text) returns int
+language plpgsql security definer set search_path = public as $$
+declare n int;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.competition_questions where pool = p_pool;
+  get diagnostics n = row_count; return n;
+end $$;
+
+create or replace function public.admin_create_competition(p_name text, p_opens timestamptz, p_closes timestamptz, p_n int, p_sec int, p_pool text default null) returns bigint
+language plpgsql security definer set search_path = public as $$
+declare cid bigint; have int;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  select count(*) into have from public.competition_questions cq where coalesce(p_pool, '') = '' or cq.pool = p_pool;
+  if have < p_n then raise exception 'not enough questions in the bank (have %)', have; end if;
+  insert into public.competitions (name, opens_at, closes_at, n_questions, seconds_per_q, pool)
+    values (trim(p_name), p_opens, p_closes, p_n, p_sec, nullif(p_pool, '')) returning id into cid;
+  return cid;
+end $$;
+
+create or replace function public.admin_end_competition(p_id bigint) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  update public.competitions set closes_at = greatest(opens_at + interval '1 second', now()) where id = p_id and closes_at > now();
+end $$;
+
+create or replace function public.admin_delete_competition(p_id bigint) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.competitions where id = p_id;
+end $$;
+
+-- 6. Who may call what.
+revoke all on function public._comp_tick(bigint) from public, anon, authenticated;
+revoke all on function public.comp_state(bigint), public.comp_start(bigint), public.comp_answer(bigint, int, int),
+  public.comp_leaderboard(bigint), public.comp_class_board(bigint), public.comp_my_result(bigint), public.comp_review(bigint),
+  public.admin_import_comp_questions(jsonb, text), public.admin_comp_bank(), public.admin_delete_comp_pool(text),
+  public.admin_create_competition(text, timestamptz, timestamptz, int, int, text), public.admin_end_competition(bigint),
+  public.admin_delete_competition(bigint) from public, anon;
+grant execute on function public.comp_state(bigint), public.comp_start(bigint), public.comp_answer(bigint, int, int),
+  public.comp_leaderboard(bigint), public.comp_class_board(bigint), public.comp_my_result(bigint), public.comp_review(bigint),
+  public.admin_import_comp_questions(jsonb, text), public.admin_comp_bank(), public.admin_delete_comp_pool(text),
+  public.admin_create_competition(text, timestamptz, timestamptz, int, int, text), public.admin_end_competition(bigint),
+  public.admin_delete_competition(bigint) to authenticated;
+
 -- AFTER you sign up on the site, make yourself the admin (put your own email in):
 -- update public.profiles set is_admin = true where id = (select id from auth.users where email = 'YOUR-EMAIL-HERE');
