@@ -1,0 +1,107 @@
+{
+ "terms": [
+  {
+   "topic": "bc-amino-acids-and-proteins",
+   "sub": "Acid-Base Properties",
+   "term": "Isoelectric point",
+   "clues": [
+    "A specific pH value characteristic of each ionizable molecule.",
+    "At this pH, positive and negative charges on the molecule balance out.",
+    "The net electrical charge is zero, so it does not migrate in an electric field."
+   ],
+   "forbidden": [
+    "pH",
+    "charge",
+    "zero",
+    "amino",
+    "zwitterion"
+   ]
+  },
+  {
+   "topic": "bc-amino-acids-and-proteins",
+   "sub": "Peptide Bonds and Primary Structure",
+   "term": "Peptide bond",
+   "clues": [
+    "A covalent linkage formed during protein synthesis.",
+    "Joins a carboxyl group to an amino group with loss of water.",
+    "Has partial double-bond character that keeps it rigid and planar."
+   ],
+   "forbidden": [
+    "amino",
+    "acid",
+    "carboxyl",
+    "protein",
+    "planar",
+    "water"
+   ]
+  },
+  {
+   "topic": "bc-amino-acids-and-proteins",
+   "sub": "Secondary Structure",
+   "term": "Alpha-helix",
+   "clues": [
+    "A common secondary structure motif in proteins.",
+    "A tightly coiled rod-like conformation stabilized by backbone hydrogen bonds.",
+    "Hydrogen bonds form between carbonyl oxygen and amide NH four residues apart."
+   ],
+   "forbidden": [
+    "helix",
+    "coil",
+    "hydrogen",
+    "bond",
+    "secondary"
+   ]
+  },
+  {
+   "topic": "bc-amino-acids-and-proteins",
+   "sub": "Tertiary and Quaternary Structure",
+   "term": "Chaperone",
+   "clues": [
+    "A cellular helper protein involved in quality control.",
+    "Binds exposed hydrophobic patches on newly made chains to prevent clumping.",
+    "Assists proper protein folding without becoming part of the final structure."
+   ],
+   "forbidden": [
+    "protein",
+    "fold",
+    "folding",
+    "hydrophobic",
+    "aggregation"
+   ]
+  },
+  {
+   "topic": "bc-amino-acids-and-proteins",
+   "sub": "Protein Folding and Denaturation",
+   "term": "Denaturation",
+   "clues": [
+    "A loss of native three-dimensional structure caused by heat, pH, or chemicals.",
+    "Disrupts secondary, tertiary, and quaternary interactions while leaving sequence intact.",
+    "Usually leads to loss of a protein's biological function."
+   ],
+   "forbidden": [
+    "protein",
+    "structure",
+    "heat",
+    "function",
+    "primary"
+   ]
+  },
+  {
+   "topic": "bc-amino-acids-and-proteins",
+   "sub": "Heme Proteins and Oxygen Transport",
+   "term": "Bohr effect",
+   "clues": [
+    "A physiological shift in oxygen binding observed in active tissues.",
+    "Lower pH and higher carbon dioxide reduce oxygen affinity.",
+    "Helps hemoglobin release more oxygen where metabolic acid is produced."
+   ],
+   "forbidden": [
+    "hemoglobin",
+    "oxygen",
+    "pH",
+    "affinity",
+    "carbon dioxide"
+   ]
+  }
+ ]
+}
