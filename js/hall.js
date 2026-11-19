@@ -321,6 +321,11 @@
     var t = H.pick; if (!t) return;
     H.note = "";
     if (!DX.questions.length && t !== "describe" && t !== "explain") return;
+    var qm = t === "rapid" ? H.cfg.rapid.show : t === "board" ? H.cfg.board.show : t === "all" ? H.cfg.all.show : null;
+    if (qm !== null && !poolQs(qm).length) {
+      H.note = qm === 0 ? "None of the selected topics have questions that work without options. Choose another answer format or other topics." : "The selected topics have no questions yet (some only have terms). Choose other topics, or Everything.";
+      H.view = "menu"; paint(); return;
+    }
     if (t === "rapid") R = { type: "rapid", c: H.cfg.rapid, team: 0, phase: "ready", queue: [], cur: null, rev: false, got: 0, miss: 0, skip: 0 };
     if (t === "board") {
       var c = H.cfg.board, qs = drawQ(c.tiles, c.show);
