@@ -18,11 +18,14 @@
   C.isDown = function (e) {
     if (!e) return false;
     var m = String(e.message || e);
-    return e.name === "AuthRetryableFetchError" || e.status === 0 || e.status >= 500 || (!e.code && !e.status && /fetch|network|timeout|json|unexpected|load failed/i.test(m));
+    if (/sending (recovery|confirmation|magic|email)|error sending/i.test(m)) return false;   /* the server answered, it just could not send the email */
+    return e.name === "AuthRetryableFetchError" || e.status === 0 || e.status === 502 || e.status === 503 || e.status === 504 || e.status === 540 || (!e.code && !e.status && /fetch|network|timeout|json|unexpected|load failed/i.test(m));
   };
   function niceError(e) {
     if (C.isDown(e)) return DOWN;
     var m = (e && e.message) || "Something went wrong.";
+    if (/sending (recovery|confirmation|magic|email)|error sending/i.test(m)) return "The email could not be sent. The admin needs to finish the email setup in Supabase (custom SMTP).";
+    if (/not authorized/i.test(m) && /email/i.test(m)) return "Emails can only go to the Supabase team until custom email (SMTP) is set up. The admin needs to finish that setup.";
     if (/Invalid login/i.test(m)) return "That email and password do not match.";
     if (/already registered|already been registered/i.test(m)) return "That email already has an account. Use Sign in.";
     if (/Password should/i.test(m)) return "Use a password of at least 6 characters.";
