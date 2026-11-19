@@ -51,6 +51,12 @@ Each topic has one file in `data/questions/`, named after the topic id (for exam
 
 For a topic that has no file yet, create `data/questions/<topic-id>.json` and add its name (without `.json`) to the `questions` list in `data/manifest.json`.
 
+## Adding questions with another AI
+
+1. Open `docs/master-prompt.md`, paste the prompt into the AI, and fill in the topic id (from `docs/topic-ids.txt`), the number of questions and your notes.
+2. Open `checker.html` on your live site (add `/checker.html` to the address), paste the AI's reply and click **Check it**.
+3. Fix anything it lists, download the files it gives you, and upload them to the same folders on GitHub.
+
 ## Add describe-it and explain-it terms
 
 Terms live in files like `data/terms-muscle.json`. Each one has a `topic`, a `term`, three `clues` (vague first, easy last, none containing the term) and a `forbidden` list of words the explainer must avoid. Add new term files to the `terms` list in `data/manifest.json`.
@@ -59,15 +65,27 @@ Terms live in files like `data/terms-muscle.json`. Each one has a `topic`, a `te
 
 The class list (U20 to U26) is in `data/curriculum.json` under `classes`. U25 has no name yet. In hall mode setup, open **Class names** to rename any class. That change is saved in the browser on that device only. Edit `curriculum.json` to change it for everyone until accounts are added.
 
+## Hall mode controls
+
+- **Topics:** on the setup page, tap topics to choose them (several at once, or a whole area). The choice is remembered on that device. With nothing chosen, every topic is used.
+- **End round:** every round has an **End round** button (or press `Esc`). It pauses the clock and asks first. Points already earned stay.
+- **Streaks:** a team that gets answers right in a row shows "3 in a row" on its score card, with a short message at 3, 5, 7 and 10 (and every 5 after). A gentle message appears when a streak of 3 or more ends. Edit the wording in the `TIERS` and `BREAK` lists in `js/hall.js`.
+- **Timer:** it stays pinned at the top of the screen while you scroll, turns amber in the last 10 seconds and red, ticking and pulsing, in the last 5. Time up rings a bell.
+- **Sounds and volume:** bell, ticks, correct, wrong, streak, tile pick and end-of-round sounds are made in the browser, so there are no sound files. Set the volume on the hall setup page or in the round menu, and use **Test the bell** to check the room.
+
 ## Hall mode answer format
 
 Rapid fire, Question board and Everyone answers each have an **Answer format** setting: always show options, no options (open answers) or mixed.
 
-## Adding questions with another AI
+## Install and offline use
 
-1. Open `docs/master-prompt.md`, paste the prompt into the AI, and fill in the topic id (from `docs/topic-ids.txt`), the number of questions and your notes.
-2. Open `checker.html` on your live site (add `/checker.html` to the address), paste the AI's reply and click **Check it**.
-3. Fix anything it lists, download the files it gives you, and upload them to the same folders on GitHub.
+DxDrill is an installable app. Once a student has opened the site online, it keeps working with no connection: all questions load from the saved copy, and practice scores wait on the phone until the next time they are online. On Android Chrome an **Install** button appears in the top bar. On iPhone, use Share, then **Add to Home Screen**.
+
+When you change anything in `js/`, `css/` or `index.html`, open `sw.js` and change `VERSION` (for example `dxdrill-v2` to `dxdrill-v3`) before uploading. New question files and edits to existing ones are picked up without that step, because `sw.js` reads `data/manifest.json`.
+
+## Reported questions
+
+Signed-in students see **Report a problem with this question** under every practice question and in the results review. Reports go to the `question_reports` table. As admin, open the Account page and scroll to **Admin: reported questions**. Questions with the most reports are listed first. Fix the question in its JSON file, then press **Resolved** (or **Dismiss**). If you have already run `setup.sql`, run the updated file again: it only adds what is missing.
 
 ## Accounts and leaderboards (Supabase)
 
@@ -83,6 +101,7 @@ Points are different questions answered correctly in the period. Scores are sent
 
 ## What this version does not do yet
 
+- Reporting is in practice mode only, not hall mode.
 - Admin-run competitions are not built yet. Practice history and hall settings stay on the device in its browser storage.
 - Hall mode runs on one screen. The quizmaster sees answers on the same screen the room sees, so show the answer only when you are ready.
 - Questions are textbook-level and unverified until marked.
