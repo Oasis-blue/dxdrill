@@ -1,0 +1,567 @@
+{
+  "topic": "ga-nerves-and-blood-vessels",
+  "questions": [
+    {
+      "id": "GANBV-01",
+      "level": 1,
+      "sub": "Nervous system organization",
+      "q": "Which anatomical division of the nervous system comprises the brain and spinal cord?",
+      "options": [
+        "Central nervous system",
+        "Peripheral nervous system",
+        "Somatic nervous system",
+        "Enteric nervous system"
+      ],
+      "answer": 0,
+      "explain": "The central nervous system (CNS) consists of the brain and spinal cord, whereas the peripheral nervous system (PNS) consists of cranial nerves, spinal nerves, peripheral branches, and ganglia outside the CNS.",
+      "open": {
+        "q": "Which division of the nervous system consists of the brain and spinal cord?",
+        "accept": [
+          "central nervous system",
+          "cns",
+          "the central nervous system"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-02",
+      "level": 1,
+      "sub": "Nervous system organization",
+      "q": "How many pairs of spinal nerves typically emerge from the human spinal cord?",
+      "options": [
+        "12 pairs",
+        "31 pairs",
+        "24 pairs",
+        "33 pairs"
+      ],
+      "answer": 1,
+      "explain": "There are 31 pairs of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal. There are 12 pairs of cranial nerves.",
+      "open": {
+        "q": "How many pairs of spinal nerves are typically present in the human body?",
+        "accept": [
+          "31 pairs",
+          "31",
+          "thirty-one pairs",
+          "thirty one pairs"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-03",
+      "level": 1,
+      "sub": "Spinal nerves and roots",
+      "q": "Which root of a spinal nerve carries predominantly afferent (sensory) axons into the spinal cord?",
+      "options": [
+        "Ventral root",
+        "Anterior ramus",
+        "Dorsal root",
+        "Gray ramus communicans"
+      ],
+      "answer": 2,
+      "explain": "The dorsal (posterior) root carries afferent sensory fibers from peripheral receptors into the spinal cord, with cell bodies located in the dorsal root ganglion. The ventral (anterior) root carries efferent motor fibers.",
+      "open": {
+        "q": "Which root of a spinal nerve conducts sensory impulses toward the spinal cord?",
+        "accept": [
+          "dorsal root",
+          "posterior root",
+          "dorsal"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-04",
+      "level": 1,
+      "sub": "Spinal nerves and roots",
+      "q": "Where are the cell bodies of somatic and visceral afferent neurons of a spinal nerve typically located?",
+      "options": [
+        "Ventral horn of the spinal cord",
+        "Sympathetic chain ganglion",
+        "Prevertebral ganglion",
+        "Dorsal root ganglion"
+      ],
+      "answer": 3,
+      "explain": "Pseudounipolar sensory neuron cell bodies reside in the dorsal (posterior) root ganglion along the dorsal root of each spinal nerve. Motor cell bodies for skeletal muscle lie in the ventral horn of the spinal cord.",
+      "open": {
+        "q": "Where are the cell bodies of sensory neurons entering a spinal nerve located?",
+        "accept": [
+          "dorsal root ganglion",
+          "posterior root ganglion",
+          "spinal ganglion"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-05",
+      "level": 2,
+      "sub": "Rami and plexuses",
+      "q": "Why do thoracic spinal nerves (T2 to T11) generally run independently as intercostal nerves rather than forming limb plexuses?",
+      "options": [
+        "Their anterior rami remain largely segmented to supply thoracic and abdominal body walls",
+        "They lack dorsal roots and sensory fibers",
+        "They terminate inside the sympathetic trunk without reaching peripheral tissues",
+        "They fuse into a single trunk before leaving the vertebral canal"
+      ],
+      "answer": 0,
+      "explain": "Anterior rami of C5 to T1 form the brachial plexus and L1 to S4 form the lumbar and sacral plexuses for the limbs, whereas most thoracic anterior rami stay segmental as intercostal/subcostal nerves supplying the trunk wall.",
+      "open": {
+        "q": "Why do most thoracic spinal nerves remain segmental instead of forming plexuses like cervical, lumbar, and sacral nerves?",
+        "accept": [
+          "their anterior rami supply the segmented thoracic and abdominal walls",
+          "anterior rami stay segmental for body wall innervation",
+          "they supply segmental intercostal and abdominal wall territories",
+          "their anterior rami do not merge into limb plexuses"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-06",
+      "level": 1,
+      "sub": "Rami and plexuses",
+      "q": "What is a nerve plexus formed by the anterior rami of spinal nerves?",
+      "options": [
+        "A bundle of postganglionic sympathetic fibers inside an artery wall",
+        "An interlacing network of nerve fibers that redistributes axons from multiple spinal levels into named peripheral nerves",
+        "A fibrous sheath surrounding a peripheral nerve fascicle",
+        "A sensory receptor capsule in deep fascia"
+      ],
+      "answer": 1,
+      "explain": "A somatic nerve plexus (such as the cervical, brachial, lumbar, or sacral plexus) is a network where anterior rami exchange fibers so individual peripheral nerves receive axons from more than one spinal cord segment.",
+      "open": {
+        "q": "What is a somatic nerve plexus formed by anterior rami?",
+        "accept": [
+          "an interlacing network of nerves redistributing fibers from multiple spinal segments",
+          "a network of nerve fibers combining multiple spinal levels",
+          "interlacing network of anterior rami",
+          "nerve network redistributing fibers into peripheral nerves"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-07",
+      "level": 1,
+      "sub": "Autonomic nervous system",
+      "q": "From which spinal cord levels do preganglionic sympathetic cell bodies primarily originate in the intermediolateral cell column?",
+      "options": [
+        "C1 to C4",
+        "S2 to S4",
+        "T1 to L2",
+        "L5 to S5"
+      ],
+      "answer": 2,
+      "explain": "The sympathetic outflow is thoracolumbar, arising from preganglionic sympathetic neurons in the lateral horn (intermediolateral column) of spinal segments T1 through L2 (or L3). Craniosacral outflow provides parasympathetic innervation.",
+      "open": {
+        "q": "From which spinal cord segments does the preganglionic sympathetic outflow originate?",
+        "accept": [
+          "t1 to l2",
+          "t1-l2",
+          "thoracolumbar",
+          "t1 through l2"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-08",
+      "level": 1,
+      "sub": "Autonomic nervous system",
+      "q": "Which cranial nerve carries the largest share of parasympathetic preganglionic fibers to thoracic and most abdominal viscera?",
+      "options": [
+        "Accessory nerve (CN XI)",
+        "Hypoglossal nerve (CN XII)",
+        "Trigeminal nerve (CN V)",
+        "Vagus nerve (CN X)"
+      ],
+      "answer": 3,
+      "explain": "The vagus nerve (CN X) provides parasympathetic innervation to the heart, airways, and gastrointestinal tract from the esophagus through the midgut/hindgut transition. Sacral parasympathetic fibers (S2 to S4) supply the distal colon and pelvic viscera.",
+      "open": {
+        "q": "Which cranial nerve supplies parasympathetic fibers to the heart, lungs, and most of the gastrointestinal tract?",
+        "accept": [
+          "vagus nerve",
+          "vagus",
+          "cn x",
+          "cranial nerve x"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-09",
+      "level": 2,
+      "sub": "Autonomic nervous system",
+      "q": "Why do postganglionic sympathetic fibers reach sweat glands, arrector pili muscles, and skin blood vessels throughout the body wall and limbs?",
+      "options": [
+        "Gray rami communicantes return postganglionic sympathetic axons from the sympathetic trunk to spinal nerves",
+        "Parasympathetic ganglia lie directly inside every sweat gland",
+        "Somatic sensory axons convert into sympathetic fibers in the skin",
+        "Sympathetic fibers travel exclusively inside arterial lumens"
+      ],
+      "answer": 0,
+      "explain": "Postganglionic sympathetic fibers leave sympathetic ganglia via gray rami communicantes to join spinal nerves and travel along their branches to effectors in the body wall and limbs. White rami communicantes carry myelinated preganglionic fibers from T1 to L2 into the sympathetic chain.",
+      "open": {
+        "q": "How do postganglionic sympathetic fibers enter spinal nerves to reach effectors in the body wall and limbs?",
+        "accept": [
+          "via gray rami communicantes",
+          "through gray rami communicantes",
+          "gray rami communicantes"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-10",
+      "level": 3,
+      "sub": "Autonomic nervous system",
+      "q": "A patient has a lesion involving the cervical sympathetic trunk on the right side and presents with ptosis, miosis, and anhidrosis on the right face. Which syndrome does this triad describe?",
+      "options": [
+        "Cauda equina syndrome",
+        "Horner syndrome",
+        "Brown-Sequard syndrome",
+        "Carpal tunnel syndrome"
+      ],
+      "answer": 1,
+      "explain": "Interruption of the oculosympathetic pathway produces Horner syndrome, classically characterized by miosis (constricted pupil), partial ptosis (drooping upper eyelid), and facial anhidrosis (loss of sweating) on the affected side.",
+      "open": {
+        "q": "What syndrome is characterized by ipsilateral ptosis, miosis, and facial anhidrosis after sympathetic pathway interruption?",
+        "accept": [
+          "horner syndrome",
+          "horner's syndrome",
+          "horners syndrome"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-11",
+      "level": 1,
+      "sub": "Structure of blood vessels",
+      "q": "Which layer of a blood vessel wall is the innermost lining composed of endothelium and a subendothelial layer?",
+      "options": [
+        "Tunica media",
+        "Tunica adventitia",
+        "Tunica intima",
+        "Vasa vasorum"
+      ],
+      "answer": 2,
+      "explain": "The tunica intima is the innermost layer of arteries and veins, consisting of simple squamous endothelium and delicate subendothelial connective tissue. The tunica media is the middle smooth muscle/elastic layer, and the tunica adventitia is the outer connective tissue layer.",
+      "open": {
+        "q": "What is the innermost endothelial layer of a blood vessel called?",
+        "accept": [
+          "tunica intima",
+          "intima",
+          "the tunica intima"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-12",
+      "level": 2,
+      "sub": "Structure of blood vessels",
+      "q": "How does the tunica media of an elastic (conducting) artery such as the aorta differ from that of a muscular (distributing) artery?",
+      "options": [
+        "It contains only a single layer of flattened cells",
+        "It is rich in concentric sheets of elastin that stretch during systole and recoil during diastole",
+        "It contains prominent one-way valves to prevent backflow",
+        "It lacks smooth muscle and connective tissue"
+      ],
+      "answer": 1,
+      "explain": "Large elastic arteries have abundant elastic lamellae in the tunica media that expand during ventricular systole and recoil in diastole to maintain continuous blood flow and diastolic pressure. Muscular arteries have proportionally more smooth muscle for regulating flow to specific regions.",
+      "open": {
+        "q": "What prominent structural feature in the tunica media of elastic arteries helps maintain pressure during diastole?",
+        "accept": [
+          "abundant elastic fibers or sheets that stretch and recoil",
+          "concentric sheets of elastin",
+          "high elastic tissue content",
+          "elastic lamellae that recoil"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-13",
+      "level": 1,
+      "sub": "Structure of blood vessels",
+      "q": "What are the small blood vessels located in the adventitia and outer media of large blood vessels that nourish the vessel wall itself?",
+      "options": [
+        "Arteriovenous anastomoses",
+        "Sinusoids",
+        "Vasa vasorum",
+        "Lacteals"
+      ],
+      "answer": 2,
+      "explain": "Vasa vasorum (vessels of the vessel) are tiny arteries and veins supplying oxygen and nutrients to the outer walls of large arteries and veins whose thickness exceeds simple diffusion from the lumen.",
+      "open": {
+        "q": "What are the small blood vessels that supply the walls of large blood vessels called?",
+        "accept": [
+          "vasa vasorum",
+          "the vasa vasorum"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-14",
+      "level": 1,
+      "sub": "Arteries and veins",
+      "q": "Which structural feature is typically present in medium-sized veins of the limbs to assist unidirectional blood flow toward the heart against gravity?",
+      "options": [
+        "Thick concentric elastic membranes",
+        "High-pressure muscular sphincters",
+        "Fenestrated sinusoidal endothelia",
+        "Intraluminal bicuspid valves"
+      ],
+      "answer": 3,
+      "explain": "Many medium-sized veins, especially in the limbs, possess folds of tunica intima forming valves (usually bicuspid) that prevent retrograde flow and support venous return during muscle contraction. Arteries generally lack valves except at the aortic and pulmonary roots.",
+      "open": {
+        "q": "What structures inside limb veins help prevent backflow of blood away from the heart?",
+        "accept": [
+          "valves",
+          "venous valves",
+          "intraluminal valves"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-15",
+      "level": 2,
+      "sub": "Arteries and veins",
+      "q": "Why are veins generally thinner-walled and more distensible than companion arteries of similar caliber?",
+      "options": [
+        "They have a thinner tunica media with less smooth muscle and elastic tissue and operate at lower pressure",
+        "They carry blood under higher systolic pressure than the aorta",
+        "They lack a tunica intima and adventitia",
+        "Their walls are calcified in normal adults"
+      ],
+      "answer": 0,
+      "explain": "Veins operate at lower pressure and have a thinner tunica media with less elastic tissue and smooth muscle than arteries, making them more compliant and able to hold a large proportion of total blood volume.",
+      "open": {
+        "q": "Why are veins more compliant and thinner-walled than arteries of comparable size?",
+        "accept": [
+          "they have a thinner tunica media and experience lower pressure",
+          "less smooth muscle and elastic tissue in their wall and lower pressure",
+          "thinner tunica media with less smooth muscle and elastin",
+          "lower intravascular pressure and thinner muscle layer"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-16",
+      "level": 1,
+      "sub": "Capillaries and anastomoses",
+      "q": "At which microscopic vessels does exchange of gases, nutrients, and metabolic waste occur between blood and interstitial fluid?",
+      "options": [
+        "Elastic arteries",
+        "Capillaries",
+        "Venae cavae",
+        "Conducting veins"
+      ],
+      "answer": 1,
+      "explain": "Capillaries consist essentially of a single layer of endothelial cells (and basement membrane), providing a thin barrier and vast surface area for diffusion and filtration between blood and tissues.",
+      "open": {
+        "q": "Which blood vessels serve as the primary site of nutrient, gas, and waste exchange with tissues?",
+        "accept": [
+          "capillaries",
+          "capillary bed",
+          "capillaries and sinusoids"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-17",
+      "level": 1,
+      "sub": "Capillaries and anastomoses",
+      "q": "What is an arterial anastomosis?",
+      "options": [
+        "A valve inside a deep limb vein",
+        "A direct communication between branches of two or more arteries",
+        "A lymphatic trunk emptying into the thoracic duct",
+        "A bundle of sympathetic axons along a nerve"
+      ],
+      "answer": 1,
+      "explain": "An anastomosis is a connection between vessels; an arterial anastomosis links branches of different arteries to provide collateral pathways and equalize pressure around joints or organs. End arteries lack sufficient anastomoses to sustain tissue if occluded.",
+      "open": {
+        "q": "What is an arterial anastomosis?",
+        "accept": [
+          "a connection or communication between branches of arteries",
+          "communication between two or more arteries",
+          "connection between arterial branches",
+          "collateral connection between arteries"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-18",
+      "level": 2,
+      "sub": "Capillaries and anastomoses",
+      "q": "Why does occlusion of a true (anatomical) end artery typically result in tissue ischemia or necrosis of the supplied territory?",
+      "options": [
+        "Lymphatic vessels immediately take over arterial perfusion",
+        "There are insufficient collateral arterial anastomoses to maintain blood flow beyond the block",
+        "Venous blood flows backward through capillaries to oxygenate the tissue",
+        "Smooth muscle in the end artery regenerates a new lumen within minutes"
+      ],
+      "answer": 1,
+      "explain": "True end arteries (such as the central artery of the retina) lack adequate collateral anastomoses with neighboring arteries, so blockage cuts off perfusion to their target tissue and can cause infarction or blindness.",
+      "open": {
+        "q": "Why does blockage of a true end artery often cause ischemia or necrosis in its supplied tissue?",
+        "accept": [
+          "lack of adequate collateral arterial anastomoses",
+          "no sufficient collateral blood supply",
+          "absence of effective anastomoses with adjacent arteries",
+          "insufficient collateral channels"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-19",
+      "level": 3,
+      "sub": "Capillaries and anastomoses",
+      "q": "A patient has gradual narrowing of a major limb artery, yet distal perfusion is partially preserved through smaller vessels bypassing the stenosis around the joint. What are these alternative channels called?",
+      "options": [
+        "Vasa nervorum",
+        "Portal veins",
+        "Collateral circulation",
+        "Thoracic duct tributaries"
+      ],
+      "answer": 2,
+      "explain": "Collateral circulation consists of preexisting or newly recruited anastomotic vessels that bypass an obstructed artery to maintain blood flow to distal tissues. Around joints, rich arterial anastomoses help preserve circulation during limb flexion.",
+      "open": {
+        "q": "What term describes alternative anastomotic blood pathways that bypass a narrowed or blocked artery?",
+        "accept": [
+          "collateral circulation",
+          "collaterals",
+          "collateral vessels",
+          "collateral pathway"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-20",
+      "level": 1,
+      "sub": "Capillaries and anastomoses",
+      "q": "What is a direct vascular connection between an arteriole and a venule that bypasses the intervening capillary bed?",
+      "options": [
+        "True end artery",
+        "Portal system",
+        "Vasa vasorum",
+        "Arteriovenous anastomosis (shunt)"
+      ],
+      "answer": 3,
+      "explain": "An arteriovenous anastomosis (AV shunt) links a small artery/arteriole directly to a vein/venule without passing through capillaries, playing roles in thermoregulation (such as in skin of digits) and local blood flow regulation.",
+      "open": {
+        "q": "What is a direct vessel connection between an arteriole and a venule that bypasses capillaries?",
+        "accept": [
+          "arteriovenous anastomosis",
+          "av shunt",
+          "arteriovenous shunt",
+          "av anastomosis"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-21",
+      "level": 1,
+      "sub": "Neurovascular bundles",
+      "q": "In limbs and body walls, which structures commonly travel together within a common connective tissue sheath as a neurovascular bundle?",
+      "options": [
+        "Artery, vein, and nerve",
+        "Tendon, bursa, and articular cartilage",
+        "Epidermis, dermis, and sebaceous gland",
+        "Suture, fontanelle, and periosteum"
+      ],
+      "answer": 0,
+      "explain": "A neurovascular bundle typically contains an artery, one or more accompanying veins, and a nerve running together along a protected fascial plane or intermuscular groove. Knowing their arrangement helps surgeons avoid injury during dissection.",
+      "open": {
+        "q": "Which three main structures commonly run together in a neurovascular bundle?",
+        "accept": [
+          "artery, vein, and nerve",
+          "arteries, veins, and nerves",
+          "an artery, a vein, and a nerve"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-22",
+      "level": 2,
+      "sub": "Neurovascular bundles",
+      "q": "Why are venae comitantes (paired veins flanking a deep artery in the limbs) helpful for venous return?",
+      "options": [
+        "They secrete vasodilators into the arterial lumen",
+        "Pulsations of the adjacent artery and contraction of surrounding muscles help propel venous blood upward",
+        "They carry arterial blood from the heart to the fingers and toes",
+        "They prevent valves from closing inside deep veins"
+      ],
+      "answer": 1,
+      "explain": "Venae comitantes run closely alongside deep arteries (especially in limbs), where arterial pulsations and adjacent skeletal muscle contraction assist venous return past one-way venous valves.",
+      "open": {
+        "q": "How do venae comitantes running beside a deep limb artery assist venous return?",
+        "accept": [
+          "arterial pulsations and muscle contraction help pump blood along valved veins",
+          "pulsations of the neighboring artery help propel blood",
+          "arterial pulsation and skeletal muscle pump assist flow",
+          "they benefit from adjacent arterial pulsations and muscle compression"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-23",
+      "level": 1,
+      "sub": "Lymphatic vessels",
+      "q": "Which major lymphatic vessel collects lymph from the lower limbs, abdomen, left thorax, left upper limb, and left side of the head and neck?",
+      "options": [
+        "Right lymphatic duct",
+        "Portal vein",
+        "Thoracic duct",
+        "Azygos vein"
+      ],
+      "answer": 2,
+      "explain": "The thoracic duct is the largest lymphatic channel in the body, draining lymph from below the diaphragm plus the left half of the thorax, left arm, and left head/neck into the systemic venous system near the left brachiocephalic/internal jugular-subclavian junction.",
+      "open": {
+        "q": "Which main lymphatic vessel drains lymph from the lower body and the left side of the upper body into the venous system?",
+        "accept": [
+          "thoracic duct",
+          "the thoracic duct"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-24",
+      "level": 2,
+      "sub": "Lymphatic vessels",
+      "q": "Why do lymphatic capillaries have a more permeable endothelial lining and anchoring filaments than typical blood capillaries?",
+      "options": [
+        "They pump red blood cells under high arterial pressure",
+        "They absorb interstitial fluid, large proteins, cellular debris, and pathogens that cannot easily enter blood capillaries",
+        "They filter urine before it enters the ureter",
+        "They store glycogen and triglycerides inside their lumen"
+      ],
+      "answer": 1,
+      "explain": "Lymphatic capillaries have overlapping endothelial junctions and anchoring filaments that open when interstitial fluid pressure rises, allowing uptake of excess tissue fluid, proteins, and particulate matter to form lymph.",
+      "open": {
+        "q": "What functional advantage does the permeable wall of lymphatic capillaries provide?",
+        "accept": [
+          "uptake of interstitial fluid, proteins, and debris",
+          "absorption of excess tissue fluid and large proteins",
+          "draining interstitial fluid and proteins that cannot enter blood capillaries",
+          "collecting tissue fluid and macromolecules"
+        ]
+      }
+    },
+    {
+      "id": "GANBV-25",
+      "level": 3,
+      "sub": "Lymphatic vessels",
+      "q": "A patient undergoes axillary lymph node dissection for breast cancer and later develops persistent swelling of the ipsilateral upper limb. Which mechanism accounts for this swelling?",
+      "options": [
+        "Occlusion of the subclavian artery",
+        "Excessive secretion of synovial fluid into limb muscles",
+        "Impaired lymphatic drainage causing protein-rich interstitial fluid accumulation (lymphedema)",
+        "Hyperactivity of eccrine sweat glands"
+      ],
+      "answer": 2,
+      "explain": "Removal or disruption of regional lymph nodes and lymphatic channels impairs clearance of interstitial fluid and proteins, leading to fluid retention in the subcutaneous tissue known as lymphedema.",
+      "open": {
+        "q": "What mechanism explains persistent arm swelling after axillary lymph node clearance?",
+        "accept": [
+          "impaired lymphatic drainage causing lymphedema",
+          "blocked or disrupted lymphatic outflow leading to fluid retention",
+          "disrupted lymphatic drainage and interstitial fluid buildup",
+          "lymphedema from impaired lymph drainage"
+        ]
+      }
+    }
+  ]
+}
