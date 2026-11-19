@@ -32,6 +32,7 @@
     practice: DX.practice,
     hall: DX.hall,
     board: DX.board,
+    polls: DX.polls,
     account: DX.account
   };
 
