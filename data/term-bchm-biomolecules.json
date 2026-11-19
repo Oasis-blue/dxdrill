@@ -1,0 +1,89 @@
+{
+ "terms": [
+  {
+   "topic": "bc-chemistry-of-biomolecules",
+   "sub": "Carbohydrates",
+   "term": "Epimer",
+   "clues": [
+    "A stereochemical relationship between certain diastereomers.",
+    "Two sugars that differ in configuration at only one chiral carbon.",
+    "Glucose and mannose or glucose and galactose are classic examples of this isomer type."
+   ],
+   "forbidden": [
+    "glucose",
+    "galactose",
+    "mannose",
+    "carbon",
+    "isomer"
+   ]
+  },
+  {
+   "topic": "bc-chemistry-of-biomolecules",
+   "sub": "Carbohydrates",
+   "term": "Anomer",
+   "clues": [
+    "A spatial distinction that appears only when a sugar forms a ring.",
+    "Identified by looking at the configuration of the former carbonyl carbon.",
+    "Designated as alpha or beta depending on hydroxyl orientation."
+   ],
+   "forbidden": [
+    "alpha",
+    "beta",
+    "ring",
+    "carbonyl",
+    "glucose"
+   ]
+  },
+  {
+   "topic": "bc-chemistry-of-biomolecules",
+   "sub": "Lipids",
+   "term": "Sphingomyelin",
+   "clues": [
+    "A phosphorus-containing lipid found in cell membranes and myelin sheaths.",
+    "Built on a long-chain amino alcohol rather than glycerol.",
+    "Contains a phosphocholine head group attached to ceramide."
+   ],
+   "forbidden": [
+    "ceramide",
+    "sphingosine",
+    "myelin",
+    "choline",
+    "phospholipid"
+   ]
+  },
+  {
+   "topic": "bc-chemistry-of-biomolecules",
+   "sub": "Amino Acids and Proteins",
+   "term": "Zwitterion",
+   "clues": [
+    "An electrically neutral molecule with an interesting internal charge balance.",
+    "Carries both a positive charge and a negative charge on different atoms at the same time.",
+    "The predominant form of a neutral amino acid around its isoelectric point."
+   ],
+   "forbidden": [
+    "amino",
+    "charge",
+    "positive",
+    "negative",
+    "isoelectric"
+   ]
+  },
+  {
+   "topic": "bc-chemistry-of-biomolecules",
+   "sub": "Nucleotides and Nucleic Acids",
+   "term": "Phosphodiester bond",
+   "clues": [
+    "A strong covalent linkage that gives nucleic acid strands directionality.",
+    "Connects the 3-carbon of one sugar ring to the 5-carbon of the next.",
+    "Forms the sugar-phosphate backbone of DNA and RNA."
+   ],
+   "forbidden": [
+    "DNA",
+    "RNA",
+    "phosphate",
+    "sugar",
+    "backbone"
+   ]
+  }
+ ]
+}
