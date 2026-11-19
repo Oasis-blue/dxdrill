@@ -38,7 +38,17 @@
 
   function route() {
     var h = (location.hash || "#home").slice(1);
-    if (!routes[h]) h = "home";
+    if (!routes[h]) {
+      /* A menu page whose file did not load: say so, instead of silently showing Home. */
+      if (/^[a-z]+$/.test(h) && document.querySelector('[data-nav="' + h + '"]')) {
+        if (current && current.leave) current.leave();
+        current = null;
+        document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === h) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+        app.innerHTML = '<div class="wrap stack"><h1>This page did not load</h1><p class="lede">One of the site files is missing or out of date. Reload the page. If you still see this, the file js/' + h + '.js is missing from the site.</p></div>';
+        return;
+      }
+      h = "home";
+    }
     if (current && current.leave) current.leave();
     current = routes[h];
     document.querySelectorAll("[data-nav]").forEach(function (a) {
