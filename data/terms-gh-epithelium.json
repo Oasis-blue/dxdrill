@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "gh-epithelium",
+   "sub": "Classification of Epithelia",
+   "term": "Mesothelium",
+   "clues": [
+    "A single layer of flattened polygonal cells derived from embryonic mesoderm.",
+    "It secretes a thin film of lubricating serous fluid that reduces friction between moving viscera.",
+    "It is the specialized name for the simple squamous epithelium lining the pleural, pericardial, and peritoneal cavities."
+   ],
+   "forbidden": [
+    "simple squamous",
+    "pleura",
+    "peritoneum",
+    "serous",
+    "endothelium"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Classification of Epithelia",
+   "term": "Urothelium",
+   "clues": [
+    "A stratified epithelium restricted almost exclusively to the urinary tract from the renal calyces to the proximal urethra.",
+    "Its superficial dome-shaped umbrella cells contain uroplakin plaques and fusiform vesicles.",
+    "It accommodates marked organ distension by flattening from 5-6 layers down to 2-3 layers."
+   ],
+   "forbidden": [
+    "transitional",
+    "bladder",
+    "umbrella",
+    "stretch",
+    "urinary"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Apical Surface Specializations",
+   "term": "Microvilli",
+   "clues": [
+    "Closely packed, non-motile finger-like projections on the apical surface of absorptive epithelial cells.",
+    "Each projection contains a core of cross-linked actin filaments anchored into the terminal web.",
+    "Together they form the striated border of intestinal enterocytes and the brush border of renal proximal tubules."
+   ],
+   "forbidden": [
+    "brush border",
+    "striated border",
+    "actin",
+    "absorption",
+    "cilia"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Apical Surface Specializations",
+   "term": "Stereocilia",
+   "clues": [
+    "Unusually long, branching, non-motile apical projections supported by an internal actin filament core.",
+    "Despite their name, they lack microtubules and basal bodies.",
+    "They are found on principal cells of the epididymis and sensory hair cells of the inner ear."
+   ],
+   "forbidden": [
+    "epididymis",
+    "cilia",
+    "microvilli",
+    "non-motile",
+    "inner ear"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Intercellular Junctions",
+   "term": "Zonula occludens",
+   "clues": [
+    "The most apical component of the epithelial junctional complex.",
+    "Transmembrane claudin and occludin proteins fuse adjacent outer membrane leaflets into anastomosing sealing strands.",
+    "It prevents paracellular leakage between cells and maintains apical-basolateral membrane polarity."
+   ],
+   "forbidden": [
+    "tight junction",
+    "seal",
+    "claudin",
+    "occludin",
+    "apical"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Intercellular Junctions",
+   "term": "Desmosome",
+   "clues": [
+    "A disc-shaped spot-weld anchoring junction abundant in tissues subjected to mechanical stress such as the epidermis.",
+    "Its transmembrane linkers belong to the desmoglein and desmocollin cadherin subfamily.",
+    "Cytoplasmic plaques containing desmoplakin anchor cytokeratin intermediate filaments."
+   ],
+   "forbidden": [
+    "macula adherens",
+    "keratin",
+    "plaque",
+    "pemphigus",
+    "cadherin"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Intercellular Junctions",
+   "term": "Gap junction",
+   "clues": [
+    "A specialized communicating plaque where adjacent plasma membranes are separated by a uniform 2-nanometer cleft.",
+    "Each intercellular channel is formed by two aligned hexameric connexon hemichannels.",
+    "It enables direct electrical and metabolic coupling by passing ions and small second messengers between cells."
+   ],
+   "forbidden": [
+    "nexus",
+    "connexon",
+    "connexin",
+    "channel",
+    "communication"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Basement Membrane and Basal Specializations",
+   "term": "Hemidesmosome",
+   "clues": [
+    "An asymmetric anchoring junction situated along the basal domain of stratified epithelial cells.",
+    "It uses integrin receptors rather than cadherins to bind extracellular laminin.",
+    "It anchors intracellular keratin intermediate filaments to the underlying basal lamina."
+   ],
+   "forbidden": [
+    "basal lamina",
+    "integrin",
+    "desmosome",
+    "basement membrane",
+    "keratin"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Glandular Epithelium",
+   "term": "Goblet cell",
+   "clues": [
+    "A classic unicellular exocrine gland shaped like a wine glass scattered within columnar epithelia.",
+    "Its narrow basal stem houses the nucleus and rough ER, while its expanded apical theca holds mucinogen granules.",
+    "It stains intensely magenta with PAS and secretes protective mucus in the gut and airways."
+   ],
+   "forbidden": [
+    "mucus",
+    "mucin",
+    "unicellular",
+    "gland",
+    "PAS"
+   ]
+  },
+  {
+   "topic": "gh-epithelium",
+   "sub": "Glandular Epithelium",
+   "term": "Holocrine secretion",
+   "clues": [
+    "One of the three classic mechanisms by which exocrine glands discharge their products.",
+    "Secretory cells gradually fill with lipid droplets, undergo programmed cell death, and disintegrate.",
+    "The entire ruptured cell and its contents are shed into the duct, as seen in sebaceous glands."
+   ],
+   "forbidden": [
+    "sebaceous",
+    "merocrine",
+    "apocrine",
+    "cell death",
+    "rupture"
+   ]
+  }
+ ]
+}
