@@ -291,6 +291,298 @@
      "bicarbonate retention"
     ]
    }
+  },
+  {
+   "id": "ren-132",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Acids, bases and buffers",
+   "q": "In acid-base balance, what is an acid?",
+   "options": [
+    "A molecule that can accept hydrogen ions",
+    "A molecule that can release hydrogen ions in solution",
+    "A molecule that releases hydroxide ions only",
+    "Any molecule with a pH above 7"
+   ],
+   "answer": 1,
+   "explain": "Examples are HCl (ionises to H+ and Cl-) and carbonic acid (ionises to H+ and bicarbonate). A base accepts H+, for example bicarbonate or phosphate.",
+   "verified": false,
+   "open": {
+    "q": "In acid-base balance, what is an acid?",
+    "accept": [
+     "releases h+",
+     "donates hydrogen ions"
+    ]
+   }
+  },
+  {
+   "id": "ren-133",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Acids, bases and buffers",
+   "q": "Which pairing is correct?",
+   "options": [
+    "Both are weak acids",
+    "HCl is a weak acid and carbonic acid is a strong acid",
+    "HCl is a strong acid and carbonic acid is a weak acid",
+    "Both are strong acids"
+   ],
+   "answer": 2,
+   "explain": "Strong acids dissociate rapidly and release a lot of H+. Most acids and bases in normal regulation are weak, with carbonic acid and bicarbonate the most important pair.",
+   "verified": false,
+   "optionsOnly": true
+  },
+  {
+   "id": "ren-134",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Acids, bases and buffers",
+   "q": "Which is the most important buffer pair in the extracellular fluid?",
+   "options": [
+    "Phosphate",
+    "Haemoglobin",
+    "Ammonia and ammonium",
+    "Carbonic acid and bicarbonate"
+   ],
+   "answer": 3,
+   "explain": "CO2 combines with water to form carbonic acid, which ionises to H+ and bicarbonate. Sodium bicarbonate is the main base in ECF.",
+   "verified": false,
+   "open": {
+    "q": "Which is the most important buffer pair in the extracellular fluid?",
+    "accept": [
+     "bicarbonate",
+     "carbonic acid and bicarbonate"
+    ]
+   }
+  },
+  {
+   "id": "ren-135",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Acids, bases and buffers",
+   "q": "Why is the phosphate buffer important in tubular fluid and intracellular fluid?",
+   "options": [
+    "It removes carbon dioxide from the blood in the lungs",
+    "Its pK (about 6.8) is near body pH, and it is concentrated there",
+    "It is the main buffer of plasma, where it is most abundant",
+    "Its pK is far from body pH, so it buffers very strongly"
+   ],
+   "answer": 1,
+   "explain": "Hydrogen phosphate accepts H+ to form dihydrogen phosphate. Phosphate is poorly concentrated in ECF but more so in the ICF and in tubular fluid.",
+   "verified": false,
+   "open": {
+    "q": "Why is the phosphate buffer important in tubular fluid and intracellular fluid?",
+    "accept": [
+     "pk near 7.4 and concentrated",
+     "close to body ph"
+    ]
+   }
+  },
+  {
+   "id": "ren-136",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Acids, bases and buffers",
+   "q": "Which buffer system accounts for most of the chemical buffering inside cells?",
+   "options": [
+    "The bicarbonate system, as in the plasma",
+    "Intracellular proteins, including haemoglobin",
+    "The phosphate buffer system within cells",
+    "The ammonia buffer in the renal tubules"
+   ],
+   "answer": 1,
+   "explain": "Proteins supply 60 to 70% of the total chemical buffering of body fluids. In red cells, haemoglobin is an important buffer (H+ + Hb = HHb).",
+   "verified": false,
+   "open": {
+    "q": "Which buffer system accounts for most of the chemical buffering inside cells?",
+    "accept": [
+     "proteins",
+     "protein buffer"
+    ]
+   }
+  },
+  {
+   "id": "ren-137",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Acids, bases and buffers",
+   "q": "Which defence against acid-base disturbance is slowest but most powerful?",
+   "options": [
+    "The liver",
+    "The lungs",
+    "The kidneys",
+    "The chemical buffers"
+   ],
+   "answer": 2,
+   "explain": "Buffers act within seconds, the lungs within minutes and the kidneys take hours to days, but the kidneys can eliminate the excess acid or base completely.",
+   "verified": false,
+   "open": {
+    "q": "Which defence against acid-base disturbance is slowest but most powerful?",
+    "accept": [
+     "kidney",
+     "kidneys"
+    ]
+   }
+  },
+  {
+   "id": "ren-138",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Anion gap",
+   "q": "A patient has Na+ 144, Cl- 108 and HCO3- 24 mEq/L. What is the anion gap?",
+   "options": [
+    "36 mEq/L",
+    "8 mEq/L",
+    "24 mEq/L",
+    "12 mEq/L"
+   ],
+   "answer": 3,
+   "explain": "Anion gap = Na+ - (Cl- + HCO3-) = 144 - 132 = 12 mEq/L.",
+   "verified": false,
+   "open": {
+    "q": "A patient has Na+ 144, Cl- 108 and HCO3- 24 mEq/L. What is the anion gap?",
+    "accept": [
+     "12"
+    ]
+   }
+  },
+  {
+   "id": "ren-139",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Anion gap",
+   "q": "A raised anion gap suggests metabolic acidosis due to which cause?",
+   "options": [
+    "Loss of bicarbonate in diarrhoea, as with watery stools",
+    "Hyperventilation with loss of carbon dioxide",
+    "Persistent vomiting with loss of gastric acid",
+    "Addition of an unmeasured acid, such as lactic acid"
+   ],
+   "answer": 3,
+   "explain": "Added acids replace bicarbonate with unmeasured anions, widening the gap. Diarrhoea loses bicarbonate but gains chloride, so the gap stays normal.",
+   "verified": false,
+   "open": {
+    "q": "A raised anion gap suggests metabolic acidosis due to which cause?",
+    "accept": [
+     "lactic acid",
+     "ketoacids",
+     "unmeasured acid"
+    ]
+   }
+  },
+  {
+   "id": "ren-140",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Renal acid-base handling",
+   "q": "How does a rise in plasma PCO2 affect H+ secretion by the tubules?",
+   "options": [
+    "It decreases H+ secretion",
+    "It stops bicarbonate reabsorption",
+    "It has no effect",
+    "It increases H+ secretion"
+   ],
+   "answer": 3,
+   "explain": "More CO2 gives more carbonic acid inside tubular cells, so H+ secretion rises. This is how the kidney compensates for respiratory acidosis.",
+   "verified": false,
+   "open": {
+    "q": "How does a rise in plasma PCO2 affect H+ secretion by the tubules?",
+    "accept": [
+     "increases",
+     "raises"
+    ]
+   }
+  },
+  {
+   "id": "ren-141",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Renal acid-base handling",
+   "q": "Reabsorption of filtered bicarbonate depends on secretion of which ion?",
+   "options": [
+    "Potassium ions",
+    "Calcium ions",
+    "Chloride ions",
+    "Hydrogen ions"
+   ],
+   "answer": 3,
+   "explain": "Secreted H+ combines with filtered bicarbonate to form CO2 and water. CO2 enters the cell and is converted back to H+ and bicarbonate, and the new bicarbonate passes into the blood.",
+   "verified": false,
+   "open": {
+    "q": "Reabsorption of filtered bicarbonate depends on secretion of which ion?",
+    "accept": [
+     "h+",
+     "hydrogen"
+    ]
+   }
+  },
+  {
+   "id": "ren-142",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Acid-base disturbances",
+   "q": "Persistent vomiting of gastric contents typically causes which acid-base disturbance?",
+   "options": [
+    "Respiratory alkalosis",
+    "Metabolic acidosis",
+    "Respiratory acidosis",
+    "Metabolic alkalosis"
+   ],
+   "answer": 3,
+   "explain": "Loss of gastric HCl removes acid and leaves excess bicarbonate. Volume depletion then maintains it by causing further renal loss of K+ and H+.",
+   "verified": false,
+   "open": {
+    "q": "Persistent vomiting of gastric contents typically causes which acid-base disturbance?",
+    "accept": [
+     "metabolic alkalosis"
+    ]
+   }
+  },
+  {
+   "id": "ren-143",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Renal acid-base handling",
+   "q": "Which acids are excreted by the kidneys and which by the lungs?",
+   "options": [
+    "Both fixed acids and carbon dioxide by the lungs",
+    "Carbon dioxide by the kidneys; fixed acids by the lungs",
+    "Both fixed acids and carbon dioxide by the kidneys",
+    "Fixed acids by the kidneys; carbon dioxide by the lungs"
+   ],
+   "answer": 3,
+   "explain": "Fixed acids from protein and phospholipid metabolism need renal excretion, with buffering by phosphate and ammonia. CO2 from carbonic acid leaves through the lungs.",
+   "verified": false,
+   "open": {
+    "q": "Which acids are excreted by the kidneys and which by the lungs?",
+    "accept": [
+     "fixed acids by kidney and co2 by lungs"
+    ]
+   }
+  },
+  {
+   "id": "ren-144",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Treatment",
+   "q": "Name an agent given orally to treat metabolic alkalosis.",
+   "options": [
+    "Sodium lactate",
+    "Sodium bicarbonate",
+    "Ammonium chloride",
+    "Sodium gluconate"
+   ],
+   "answer": 2,
+   "explain": "Ammonium chloride is converted by the liver to urea, releasing HCl. Lysine monohydrochloride can also be used. Sodium bicarbonate, lactate and gluconate are used for acidosis.",
+   "verified": false,
+   "open": {
+    "q": "Name an agent given orally to treat metabolic alkalosis.",
+    "accept": [
+     "ammonium chloride",
+     "lysine monohydrochloride",
+     "lysine hydrochloride"
+    ]
+   }
   }
  ]
 }

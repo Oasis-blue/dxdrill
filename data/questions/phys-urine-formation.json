@@ -350,6 +350,542 @@
      "UxV/P"
     ]
    }
+  },
+  {
+   "id": "ren-109",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Glomerular filtration",
+   "q": "How does glomerular filtrate differ from plasma?",
+   "options": [
+    "It has essentially no cells and almost no protein",
+    "It contains no glucose or amino acids",
+    "It contains no electrolytes, only water",
+    "It contains twice as much sodium as plasma"
+   ],
+   "answer": 0,
+   "explain": "Filtrate is plasma minus its proteins. It contains water, electrolytes, glucose and amino acids, but no red cells and only a negligible amount of protein.",
+   "verified": false,
+   "open": {
+    "q": "How does glomerular filtrate differ from plasma?",
+    "accept": [
+     "no protein and no cells",
+     "protein free"
+    ]
+   }
+  },
+  {
+   "id": "ren-110",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Measuring GFR",
+   "q": "What are the usual normal GFR values for young adult men and women?",
+   "options": [
+    "About 125 mL/min in men and about 90 to 120 mL/min in women",
+    "About 125 mL/min in women and about 90 to 120 mL/min in men",
+    "About 12.5 mL/min in both men and women",
+    "About 1,250 mL/min in men and about 900 mL/min in women"
+   ],
+   "answer": 0,
+   "explain": "GFR is higher in men because of larger body size and muscle mass. It also depends on age and body size.",
+   "verified": false,
+   "open": {
+    "q": "What are the usual normal GFR values for young adult men and women?",
+    "accept": [
+     "125 in men",
+     "90-120 in women"
+    ]
+   }
+  },
+  {
+   "id": "ren-111",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Measuring GFR",
+   "q": "How does GFR change with age after about 40 years?",
+   "options": [
+    "It falls slowly each year",
+    "It stays constant",
+    "It rises slowly each year",
+    "It falls only in men"
+   ],
+   "answer": 0,
+   "explain": "GFR declines by roughly 0.4 to 1.2 mL/min each year after 40, so older people have a lower reserve. A GFR that is low for age points to kidney disease.",
+   "verified": false,
+   "open": {
+    "q": "How does GFR change with age after about 40 years?",
+    "accept": [
+     "decreases",
+     "falls",
+     "declines"
+    ]
+   }
+  },
+  {
+   "id": "ren-112",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Measuring GFR",
+   "q": "What is the filtered load of a substance?",
+   "options": [
+    "Urine flow multiplied by its urine concentration",
+    "Its plasma concentration divided by GFR",
+    "GFR divided by urine flow",
+    "GFR multiplied by its plasma concentration"
+   ],
+   "answer": 3,
+   "explain": "Filtered load is the amount of a substance filtered per minute. Excretion = filtered load + secretion - reabsorption.",
+   "verified": false,
+   "open": {
+    "q": "What is the filtered load of a substance?",
+    "accept": [
+     "GFR x plasma concentration",
+     "gfr times plasma concentration"
+    ]
+   }
+  },
+  {
+   "id": "ren-113",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Factors affecting GFR",
+   "q": "What happens to GFR if a ureter is blocked, for example by a stone?",
+   "options": [
+    "It is unchanged",
+    "It rises, because plasma oncotic pressure falls",
+    "It falls, because pressure in Bowman's capsule rises",
+    "It rises, because pressure in Bowman's capsule falls"
+   ],
+   "answer": 2,
+   "explain": "Back-pressure raises capsular hydrostatic pressure, which opposes filtration. This is a postrenal cause of reduced GFR.",
+   "verified": false,
+   "open": {
+    "q": "What happens to GFR if a ureter is blocked, for example by a stone?",
+    "accept": [
+     "falls",
+     "decreases",
+     "capsular pressure rises"
+    ]
+   }
+  },
+  {
+   "id": "ren-114",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Factors affecting GFR",
+   "q": "What is the effect of low plasma protein (hypoproteinaemia) on GFR?",
+   "options": [
+    "GFR rises, because plasma oncotic pressure falls",
+    "GFR falls, because the membrane becomes impermeable",
+    "GFR is unchanged",
+    "GFR falls, because filtration pressure falls"
+   ],
+   "answer": 0,
+   "explain": "Plasma proteins pull fluid back into the capillary. When they are low, the net filtration pressure rises. Dehydration, which concentrates the proteins, has the opposite effect.",
+   "verified": false,
+   "open": {
+    "q": "What is the effect of low plasma protein (hypoproteinaemia) on GFR?",
+    "accept": [
+     "rises",
+     "increases"
+    ]
+   }
+  },
+  {
+   "id": "ren-115",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Factors affecting GFR",
+   "q": "What is the immediate effect of mild constriction of the efferent arteriole on glomerular filtration?",
+   "options": [
+    "Filtration stops at once",
+    "Glomerular pressure falls and GFR falls",
+    "Glomerular pressure rises and GFR rises",
+    "There is no effect"
+   ],
+   "answer": 2,
+   "explain": "Narrowing the outflow raises pressure inside the glomerulus. This is why drugs that dilate the efferent arteriole, such as ACE inhibitors, can lower GFR.",
+   "verified": false,
+   "open": {
+    "q": "What is the immediate effect of mild constriction of the efferent arteriole on glomerular filtration?",
+    "accept": [
+     "raises gfr",
+     "gfr increases"
+    ]
+   }
+  },
+  {
+   "id": "ren-116",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Autoregulation",
+   "q": "A fall in NaCl delivery to the macula densa leads to which response?",
+   "options": [
+    "ADH release stops",
+    "The afferent arteriole constricts and GFR falls further",
+    "The efferent arteriole dilates and GFR falls",
+    "The afferent arteriole dilates and renin is released, restoring GFR"
+   ],
+   "answer": 3,
+   "explain": "This is tubuloglomerular feedback. Low NaCl at the macula densa signals low GFR, so afferent resistance falls and renin release rises, which raises glomerular pressure.",
+   "verified": false,
+   "open": {
+    "q": "What response does a fall in NaCl delivery to the macula densa trigger?",
+    "accept": [
+     "afferent dilation",
+     "afferent arteriole dilates",
+     "renin release"
+    ]
+   }
+  },
+  {
+   "id": "ren-117",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Autoregulation",
+   "q": "What is glomerulotubular balance?",
+   "options": [
+    "Reabsorption changes in proportion to GFR, so a constant fraction is reabsorbed",
+    "Filtration and reabsorption are equal in every single nephron",
+    "Tubular secretion always rises to match any rise in filtration",
+    "GFR rises whenever the flow of fluid in the tubule rises"
+   ],
+   "answer": 0,
+   "explain": "When GFR falls, flow in the tubule slows, giving more time for reabsorption of sodium and chloride. The fraction reabsorbed stays roughly constant, which protects against large changes in sodium excretion.",
+   "verified": false,
+   "open": {
+    "q": "What is glomerulotubular balance?",
+    "accept": [
+     "reabsorption matches gfr",
+     "constant fraction reabsorbed"
+    ]
+   }
+  },
+  {
+   "id": "ren-118",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Measuring GFR",
+   "q": "Which variables does the Cockcroft-Gault estimate of creatinine clearance use?",
+   "options": [
+    "Age, weight and plasma creatinine, corrected for sex",
+    "Age, height and 24-hour urine volume",
+    "Body surface area and the haematocrit",
+    "Plasma urea, age and plasma sodium"
+   ],
+   "answer": 0,
+   "explain": "Creatinine clearance = [(140 - age) x weight in kg] / (72 x plasma creatinine in mg/dL), multiplied by 0.85 for women.",
+   "verified": false,
+   "open": {
+    "q": "Which variables does the Cockcroft-Gault estimate of creatinine clearance use?",
+    "accept": [
+     "age weight plasma creatinine",
+     "age, weight, creatinine"
+    ]
+   }
+  },
+  {
+   "id": "ren-119",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Lecture: Measuring GFR",
+   "q": "Using Cockcroft-Gault, [(140 - age) x weight in kg] / (72 x plasma creatinine in mg/dL), what is the estimated creatinine clearance of a 60-year-old man weighing 72 kg with plasma creatinine 1.0 mg/dL?",
+   "options": [
+    "8 mL/min",
+    "80 mL/min",
+    "60 mL/min",
+    "100 mL/min"
+   ],
+   "answer": 1,
+   "explain": "(140 - 60) x 72 = 5,760. Divided by 72 x 1.0 = 72, the answer is 80 mL/min. For a woman, multiply the result by 0.85.",
+   "verified": false,
+   "open": {
+    "q": "Using Cockcroft-Gault, [(140 - age) x weight in kg] / (72 x plasma creatinine in mg/dL), what is the estimated creatinine clearance of a 60-year-old man weighing 72 kg with plasma creatinine 1.0 mg/dL?",
+    "accept": [
+     "80",
+     "80 ml/min"
+    ]
+   }
+  },
+  {
+   "id": "ren-120",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Measuring GFR",
+   "q": "Which drug blocks tubular secretion of creatinine, raising plasma creatinine without a true fall in GFR?",
+   "options": [
+    "Spironolactone",
+    "Amlodipine",
+    "Furosemide",
+    "Cimetidine"
+   ],
+   "answer": 3,
+   "explain": "Part of the creatinine in urine is secreted by the tubules. Cimetidine (and trimethoprim) block this, so the plasma level rises even though filtration is unchanged.",
+   "verified": false,
+   "open": {
+    "q": "Name a drug that blocks tubular secretion of creatinine and raises plasma creatinine without a true fall in GFR.",
+    "accept": [
+     "cimetidine",
+     "trimethoprim"
+    ]
+   }
+  },
+  {
+   "id": "ren-121",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Measuring GFR",
+   "q": "A GFR below which value is end-stage kidney failure, not compatible with long-term life without dialysis or transplant?",
+   "options": [
+    "Below 90 mL/min",
+    "Below 60 mL/min",
+    "Below 15 mL/min",
+    "Below 30 mL/min"
+   ],
+   "answer": 2,
+   "explain": "In the lecture grading, below 90 is mild, below 60 moderate, below 30 severe and below 15 end-stage kidney failure. Formal CKD staging uses slightly different bands, but 15 is the end-stage cut-off in both.",
+   "verified": false,
+   "open": {
+    "q": "A GFR below which value is end-stage kidney failure, not compatible with long-term life without dialysis or transplant?",
+    "accept": [
+     "15",
+     "15 ml/min"
+    ]
+   }
+  },
+  {
+   "id": "ren-122",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Measuring GFR",
+   "q": "A urine albumin-creatinine ratio above which value suggests kidney damage?",
+   "options": [
+    "3 mg/g",
+    "30 mg/g",
+    "3,000 mg/g",
+    "0.3 mg/g"
+   ],
+   "answer": 1,
+   "explain": "Normally very little albumin is lost in urine. A persistently raised albumin-creatinine ratio (above 30 mg/g, equivalent to about 30 mg/day) is an early sign of kidney disease. The lesser the albumin in urine, the better.",
+   "verified": false,
+   "open": {
+    "q": "A urine albumin-creatinine ratio above which value suggests kidney damage?",
+    "accept": [
+     "30"
+    ]
+   }
+  },
+  {
+   "id": "ren-123",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Renal blood flow",
+   "q": "Why is PAH suitable for measuring renal plasma flow?",
+   "options": [
+    "It is filtered only, and none is secreted or reabsorbed",
+    "It is broken down inside the kidney, so none reaches urine",
+    "It is filtered and then completely reabsorbed by the tubules",
+    "It is filtered and secreted, so almost all is removed in one pass"
+   ],
+   "answer": 3,
+   "explain": "PAH has a high extraction ratio (about 90%) because it is filtered and secreted but not reabsorbed. Its clearance therefore approximates renal plasma flow. It must be measurable in renal artery and vein for the Fick principle.",
+   "verified": false,
+   "open": {
+    "q": "Why is PAH suitable for measuring renal plasma flow?",
+    "accept": [
+     "filtered and secreted",
+     "high extraction ratio"
+    ]
+   }
+  },
+  {
+   "id": "ren-124",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Tubular function",
+   "q": "Active sodium reabsorption occurs in all tubular segments except which one?",
+   "options": [
+    "The thick ascending limb of the loop of Henle",
+    "The descending limb of the loop of Henle",
+    "The proximal convoluted tubule of the nephron",
+    "The cortical collecting duct of the nephron"
+   ],
+   "answer": 1,
+   "explain": "The descending limb is permeable to water but not actively transporting sodium. Sodium is actively reabsorbed in the other segments.",
+   "verified": false,
+   "open": {
+    "q": "Active sodium reabsorption occurs in all tubular segments except which one?",
+    "accept": [
+     "descending limb",
+     "descending limb of the loop of henle"
+    ]
+   }
+  },
+  {
+   "id": "ren-125",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Tubular function",
+   "q": "Where is the Na+/K+ ATPase that drives sodium reabsorption located in a tubule cell?",
+   "options": [
+    "On the basolateral membrane",
+    "On the glomerular basement membrane",
+    "On the luminal (apical) membrane",
+    "Inside lysosomes"
+   ],
+   "answer": 0,
+   "explain": "The pump moves sodium out into the interstitium, keeping intracellular sodium low, so sodium flows in from the lumen passively. Water follows by diffusion, so water reabsorption depends on sodium reabsorption.",
+   "verified": false,
+   "open": {
+    "q": "Where is the Na+/K+ ATPase that drives sodium reabsorption located in a tubule cell?",
+    "accept": [
+     "basolateral",
+     "basolateral membrane"
+    ]
+   }
+  },
+  {
+   "id": "ren-126",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Tubular function",
+   "q": "Which statement about active tubular transport is correct?",
+   "options": [
+    "It always moves substances down their electrochemical gradient",
+    "It needs no energy",
+    "It can be saturated, and similar molecules compete for the same carrier",
+    "It cannot be blocked by metabolic poisons"
+   ],
+   "answer": 2,
+   "explain": "Active transport uses energy (so oxygen is consumed), works against the gradient, saturates at a transport maximum, shows competition between similar molecules and can be poisoned.",
+   "verified": false,
+   "open": {
+    "q": "Give two characteristics of active tubular transport.",
+    "accept": [
+     "saturable",
+     "competition",
+     "uses energy",
+     "can be poisoned",
+     "against gradient"
+    ]
+   }
+  },
+  {
+   "id": "ren-127",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Tubular function",
+   "q": "What is the transport maximum (Tm) of a substance?",
+   "options": [
+    "The concentration at which a substance first appears in the blood",
+    "The most a substance can be transported per minute; excess appears in urine",
+    "The total amount of a substance filtered at the glomerulus each minute",
+    "The amount of a substance excreted in the urine each day"
+   ],
+   "answer": 1,
+   "explain": "Carriers can be saturated. Once the filtered load of glucose exceeds its Tm, the unreabsorbed glucose is excreted.",
+   "verified": false,
+   "open": {
+    "q": "What is the transport maximum (Tm) of a substance?",
+    "accept": [
+     "maximum amount transported per minute",
+     "maximum tubular transport rate"
+    ]
+   }
+  },
+  {
+   "id": "ren-128",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Tubular function",
+   "q": "Roughly what is the transport maximum for glucose?",
+   "options": [
+    "About 3,500 mg/min",
+    "About 350 mg/min",
+    "About 35 g/min",
+    "About 35 mg/min"
+   ],
+   "answer": 1,
+   "explain": "The lecture gives 350 mg/min. Textbook values range from about 300 to 375 mg/min, so check which figure your lecturer prefers in exams.",
+   "verified": false,
+   "open": {
+    "q": "Roughly what is the transport maximum for glucose?",
+    "accept": [
+     "350",
+     "350 mg/min",
+     "375 mg/min"
+    ]
+   }
+  },
+  {
+   "id": "ren-129",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Tubular function",
+   "q": "Which substance has a tubular maximum for secretion of about 80 mg/min?",
+   "options": [
+    "PAH",
+    "Inulin",
+    "Glucose",
+    "Urea"
+   ],
+   "answer": 0,
+   "explain": "Tm for PAH is about 80 mg/min. Above that, the carrier is saturated, so clearance of PAH falls and it no longer measures renal plasma flow accurately. Inulin is neither secreted nor reabsorbed, so it has no Tm.",
+   "verified": false,
+   "open": {
+    "q": "Which substance has a tubular maximum for secretion of about 80 mg/min?",
+    "accept": [
+     "PAH",
+     "para-aminohippuric acid",
+     "paraaminohippurate"
+    ]
+   }
+  },
+  {
+   "id": "ren-130",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Tubular function",
+   "q": "How are small proteins and peptides in the filtrate reabsorbed in the proximal tubule?",
+   "options": [
+    "By simple diffusion",
+    "Through aquaporin channels",
+    "By sodium-coupled cotransport",
+    "By endocytosis (pinocytosis)"
+   ],
+   "answer": 3,
+   "explain": "The proximal tubule takes them up into vesicles and breaks them down into amino acids, so almost no protein appears in normal urine.",
+   "verified": false,
+   "open": {
+    "q": "How are small proteins and peptides in the filtrate reabsorbed in the proximal tubule?",
+    "accept": [
+     "endocytosis",
+     "pinocytosis"
+    ]
+   }
+  },
+  {
+   "id": "ren-131",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Tubular function",
+   "q": "About what fraction of filtered urea is reabsorbed in the proximal tubule?",
+   "options": [
+    "About 50%",
+    "None of it",
+    "About 10%",
+    "About 90%"
+   ],
+   "answer": 0,
+   "explain": "About half is reabsorbed in the proximal tubule and the rest enters the loop of Henle, where urea recycling contributes to the medullary gradient.",
+   "verified": false,
+   "open": {
+    "q": "About what fraction of filtered urea is reabsorbed in the proximal tubule?",
+    "accept": [
+     "50",
+     "half"
+    ]
+   }
   }
  ]
 }

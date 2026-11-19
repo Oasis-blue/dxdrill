@@ -390,6 +390,165 @@
      "osmotic"
     ]
    }
+  },
+  {
+   "id": "ren-158",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Types of diuretic",
+   "q": "Which of these is a thiazide or thiazide-like diuretic?",
+   "options": [
+    "Amiloride",
+    "Spironolactone",
+    "Hydrochlorothiazide",
+    "Furosemide"
+   ],
+   "answer": 2,
+   "explain": "Examples are hydrochlorothiazide, chlorthalidone, indapamide and metolazone. They act on the distal convoluted tubule.",
+   "verified": false,
+   "open": {
+    "q": "Name a thiazide or thiazide-like diuretic.",
+    "accept": [
+     "hydrochlorothiazide",
+     "chlorthalidone",
+     "indapamide",
+     "metolazone"
+    ]
+   }
+  },
+  {
+   "id": "ren-159",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Types of diuretic",
+   "q": "Which of these is a loop diuretic?",
+   "options": [
+    "Amiloride",
+    "Bumetanide",
+    "Eplerenone",
+    "Hydrochlorothiazide"
+   ],
+   "answer": 1,
+   "explain": "Loop diuretics are furosemide, bumetanide and torsemide. They block the Na-K-2Cl cotransporter in the thick ascending limb.",
+   "verified": false,
+   "open": {
+    "q": "Name a loop diuretic.",
+    "accept": [
+     "furosemide",
+     "bumetanide",
+     "torsemide"
+    ]
+   }
+  },
+  {
+   "id": "ren-160",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Types of diuretic",
+   "q": "Which of these is a potassium-sparing diuretic?",
+   "options": [
+    "Bumetanide",
+    "Furosemide",
+    "Amiloride",
+    "Indapamide"
+   ],
+   "answer": 2,
+   "explain": "Examples are amiloride, triamterene, spironolactone and eplerenone. They work in the late distal tubule and collecting duct.",
+   "verified": false,
+   "open": {
+    "q": "Name a potassium-sparing diuretic.",
+    "accept": [
+     "amiloride",
+     "triamterene",
+     "spironolactone",
+     "eplerenone"
+    ]
+   }
+  },
+  {
+   "id": "ren-161",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Types of diuretic",
+   "q": "How do amiloride and triamterene differ from spironolactone and eplerenone?",
+   "options": [
+    "Amiloride and triamterene block aldosterone receptors, whereas spironolactone and eplerenone block sodium channels",
+    "Amiloride and triamterene block sodium channels directly, whereas spironolactone and eplerenone block aldosterone receptors",
+    "All four are loop diuretics",
+    "All four block the Na-K-2Cl cotransporter"
+   ],
+   "answer": 1,
+   "explain": "Both groups reduce sodium reabsorption and potassium secretion in the collecting duct, so both can cause hyperkalaemia.",
+   "verified": false,
+   "optionsOnly": true
+  },
+  {
+   "id": "ren-162",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Types of diuretic",
+   "q": "Why does alcohol cause diuresis?",
+   "options": [
+    "It blocks the Na-K-2Cl cotransporter in the thick limb",
+    "It stimulates ANP release from the atria",
+    "It inhibits ADH release, so less water is reabsorbed",
+    "It inhibits aldosterone release from the adrenal cortex"
+   ],
+   "answer": 2,
+   "explain": "With less ADH, the collecting duct stays impermeable to water and dilute urine is passed in large volume.",
+   "verified": false,
+   "open": {
+    "q": "Why does alcohol cause diuresis?",
+    "accept": [
+     "inhibits adh",
+     "adh inhibition"
+    ]
+   }
+  },
+  {
+   "id": "ren-163",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lecture: Types of diuretic",
+   "q": "What is diuresis?",
+   "options": [
+    "A rise in plasma sodium concentration",
+    "A reduction in GFR from low blood pressure",
+    "A fall in urine output with water retention",
+    "An increase in urine output, usually with salt loss"
+   ],
+   "answer": 3,
+   "explain": "Drugs, alcohol, excess water intake and uncontrolled diabetes can all cause it.",
+   "verified": false,
+   "open": {
+    "q": "What is diuresis?",
+    "accept": [
+     "increased urine output",
+     "increased excretion of water and salt"
+    ]
+   }
+  },
+  {
+   "id": "ren-164",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lecture: Types of diuretic",
+   "q": "Which diuretic classes commonly cause hypokalaemia?",
+   "options": [
+    "Spironolactone and eplerenone",
+    "Loop and thiazide diuretics",
+    "Amiloride and triamterene",
+    "None of them"
+   ],
+   "answer": 1,
+   "explain": "They increase sodium delivery to the collecting duct, so more potassium is secreted. Potassium-sparing diuretics do the opposite.",
+   "verified": false,
+   "open": {
+    "q": "Which diuretic classes commonly cause hypokalaemia?",
+    "accept": [
+     "loop and thiazide"
+    ]
+   }
   }
  ]
 }
