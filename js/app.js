@@ -33,6 +33,7 @@
     hall: DX.hall,
     board: DX.board,
     polls: DX.polls,
+    about: DX.about,
     account: DX.account
   };
 

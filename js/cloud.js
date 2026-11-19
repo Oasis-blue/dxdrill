@@ -60,6 +60,7 @@
     C.ok = true;
     C.sb.auth.onAuthStateChange(function (ev, session) {
       C.user = session ? session.user : null;
+      F = {};
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
       loadProfile().then(function () { flush(); repaint(); });
     });
@@ -181,7 +182,7 @@
     var note = (C.err ? '<p class="note bad" role="alert">' + esc(C.err) + '</p>' : "") + (C.msg && C.msg !== "offline" ? '<p class="note">' + esc(C.msg) + '</p>' : "");
     if (C.ok && C.user && C.mode === "reset") {
       return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>Choose a new password</h1><p class="lede">You opened the reset link from your email. Pick a new password for your account.</p></header>' + note +
-        '<section class="section stack"><div class="field"><label class="label" for="ac-pw">New password</label><input type="password" id="ac-pw" autocomplete="new-password"></div>' +
+        '<section class="section stack"><div class="field"><label class="label" for="ac-pw">New password</label><input type="password" id="ac-pw" autocomplete="new-password" aria-describedby="pwhint2"><p class="hint" id="pwhint2">At least 6 characters.</p></div>' +
         '<div class="field"><label class="label" for="ac-pw2">New password again</label><input type="password" id="ac-pw2" autocomplete="new-password"></div>' +
         '<div class="row tight"><button class="btn primary" data-act="newpw"' + (C.busy ? " disabled" : "") + '>Save new password</button></div></section></div>';
     }
@@ -199,7 +200,7 @@
         (up ? '<div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" autocomplete="nickname"></div>' +
               '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", "") + '</div>' : "") +
         '<div class="field"><label class="label" for="ac-email">Email</label><input type="email" id="ac-email" autocomplete="email"></div>' +
-        '<div class="field"><label class="label" for="ac-pw">Password</label><input type="password" id="ac-pw" autocomplete="' + (up ? "new-password" : "current-password") + '" minlength="6"></div>' +
+        '<div class="field"><label class="label" for="ac-pw">Password</label><input type="password" id="ac-pw" autocomplete="' + (up ? "new-password" : "current-password") + '" minlength="6"' + (up ? ' aria-describedby="pwhint"' : "") + '>' + (up ? '<p class="hint" id="pwhint">At least 6 characters.</p>' : "") + '</div>' +
         '<div class="row tight"><button class="btn primary" data-act="' + (up ? "signup" : "signin") + '"' + (C.busy ? " disabled" : "") + '>' + (up ? "Create account" : "Sign in") + '</button>' +
         '<button class="btn ghost" data-act="swap">' + (up ? "I already have an account" : "Create an account") + '</button>' + (up ? "" : '<button class="btn ghost" data-act="forgot">Forgot password?</button>') + '</div></section></div>';
     }
@@ -223,6 +224,11 @@
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
       '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
   }
+  /* What the person has typed on the account form is remembered, so an error message does not wipe their fields. Passwords stay in memory only. */
+  var F = {}, FIELDS = ["ac-name", "ac-class", "ac-email", "ac-pw", "ac-pw2"];
+  function restoreForm() {
+    FIELDS.forEach(function (id) { var el = document.getElementById(id); if (el && F[id] !== undefined) el.value = F[id]; });
+  }
   function val(id) { var e = document.getElementById(id); return e ? e.value.trim() : ""; }
   function run(p, ok) {
     C.busy = true; C.err = ""; C.msg = "";
@@ -235,7 +241,7 @@
   function accountClick(e) {
     var b = e.target.closest("[data-act]"); if (!b || b.disabled || !C.ok) return;
     var a = b.getAttribute("data-act");
-    if (a === "swap") { C.mode = C.mode === "up" ? "in" : "up"; C.err = ""; C.msg = ""; repaint(); }
+    if (a === "swap") { C.mode = C.mode === "up" ? "in" : "up"; C.err = ""; C.msg = ""; F = { "ac-email": F["ac-email"] }; repaint(); }
     else if (a === "signin") {
       if (!val("ac-email") || !val("ac-pw")) { C.err = "Enter your email and password."; return repaint(); }
       run(C.sb.auth.signInWithPassword({ email: val("ac-email"), password: val("ac-pw") }));
@@ -250,7 +256,7 @@
     else if (a === "psave") {
       if (val("ac-name").length < 2) { C.err = "Enter a name of at least 2 characters."; return repaint(); }
       run(C.sb.from("profiles").update({ display_name: val("ac-name"), class_id: val("ac-class") || null }).eq("id", C.user.id), function () {
-        C.profile.display_name = val("ac-name"); C.profile.class_id = val("ac-class") || null; C.msg = "Saved.";
+        C.profile.display_name = val("ac-name"); C.profile.class_id = val("ac-class") || null; C.msg = "Saved."; F = {};
       });
     } else if (a === "rclose") {
       var qid = b.getAttribute("data-id"), st = b.getAttribute("data-v");
@@ -306,7 +312,7 @@
     var map = { "ms-q": "msearch", "ac-pw": null };
     if (e.target.id === "ms-q") { var bt = document.querySelector('[data-act="msearch"]'); if (bt) bt.click(); }
   });
-  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
+  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
 
   /* ---------- leaderboards ---------- */
   function loadBoard() {
