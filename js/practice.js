@@ -32,7 +32,7 @@
   function pickView() {
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
     var h = '<div class="wrap stack"><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
-      '<p class="lede">' + total + ' questions so far. Topics follow the MDCN curriculum. Dimmed topics have no questions yet.</p></header>' +
+      '<p class="lede">' + total + ' questions. Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p></header>' +
       '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button>' +
       (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review what I missed · ' + missed + '</button>' : '') + '</section>';
     DX.curriculum.subjects.forEach(function (s) {
