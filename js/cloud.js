@@ -46,8 +46,9 @@
       C.sb = window.supabase.createClient(CFG.url, CFG.key);
     } catch (e) { return Promise.resolve(); }
     C.ok = true;
-    C.sb.auth.onAuthStateChange(function (_ev, session) {
+    C.sb.auth.onAuthStateChange(function (ev, session) {
       C.user = session ? session.user : null;
+      if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
       loadProfile().then(function () { flush(); repaint(); });
     });
     return C.sb.auth.getSession().then(function (r) {
@@ -119,6 +120,45 @@
     }).join("") + '</section>';
   }
 
+  /* ---------- admin: members ---------- */
+  C.members = { q: "", cls: "", rows: [], counts: [], loaded: false, error: "", confirm: null };
+  function loadMembers() {
+    var M = C.members; M.error = "";
+    Promise.all([C.sb.rpc("admin_members", { p_search: M.q, p_class: M.cls || null, p_limit: 50 }), C.sb.rpc("admin_class_counts")]).then(function (r) {
+      if (r[0].error) { M.error = /admin_members|schema cache/i.test(r[0].error.message || "") ? "Run supabase/update-2.sql in Supabase to turn this on." : "Could not load members."; M.rows = []; }
+      else { M.rows = r[0].data || []; M.counts = (r[1] && r[1].data) || []; }
+      M.loaded = true; M.loading = false; repaint();
+    }).catch(function () { M.error = "Could not reach the server."; M.loaded = true; M.loading = false; repaint(); });
+  }
+  function membersAdminHtml() {
+    var M = C.members, total = 0;
+    M.counts.forEach(function (x) { total += Number(x.members) || 0; });
+    var cc = M.counts.map(function (x) { return esc(x.class_id ? classLabel(x.class_id) || x.class_id : "No class") + " " + x.members; }).join(" · ");
+    var head = '<section class="section stack"><h2>Admin: members</h2>' + (M.loaded && !M.error ? '<p class="hint">' + total + ' member' + (total === 1 ? "" : "s") + (cc ? " · " + cc : "") + '</p>' : "") +
+      '<div class="teamrow"><div class="field"><label class="label" for="ms-q">Search name or email</label><input type="text" id="ms-q" value="' + esc(M.q) + '" maxlength="60"></div>' +
+      '<div class="field"><label class="label" for="ms-class">Class</label><select id="ms-class"><option value="">All classes</option>' + DX.curriculum.classes.map(function (k) {
+        return '<option value="' + k.id + '"' + (M.cls === k.id ? " selected" : "") + '>' + esc(k.label) + '</option>'; }).join("") + '</select></div>' +
+      '<button class="btn small primary" data-act="msearch">Search</button></div>';
+    if (!M.loaded) return head + '<p class="muted">Loading…</p></section>';
+    if (M.error) return head + '<p class="note bad">' + esc(M.error) + '</p></section>';
+    if (!M.rows.length) return head + '<p class="muted">Nobody matches.</p></section>';
+    return head + '<p class="hint">Newest first, up to 50. Search to find someone.</p>' + M.rows.map(function (m) {
+      var id = esc(m.user_id), cf = M.confirm && M.confirm.id === m.user_id ? M.confirm.kind : "";
+      var joined = m.joined ? String(m.joined).slice(0, 10) : "";
+      var acts = m.is_admin ? '<span class="muted">Admin account</span>' :
+        '<button class="btn small" data-act="msave" data-id="' + id + '">Save</button>' +
+        '<button class="btn ghost small" data-act="mask" data-kind="clear" data-id="' + id + '">Reset points</button>' +
+        '<button class="btn ghost small" data-act="mask" data-kind="remove" data-id="' + id + '">Remove</button>';
+      var box = !cf ? "" : '<p class="note bad">' + (cf === "remove" ? "Remove " + esc(m.display_name) + " and everything they have scored? This cannot be undone." : "Delete all of " + esc(m.display_name) + "’s scores? This cannot be undone.") + '</p>' +
+        '<div class="row tight"><button class="btn small primary" data-act="myes" data-kind="' + cf + '" data-id="' + id + '">Yes, ' + (cf === "remove" ? "remove" : "reset") + '</button><button class="btn ghost small" data-act="mno">Cancel</button></div>';
+      return '<div class="rep-item"><span class="label">' + esc(m.email || "") + ' · joined ' + esc(joined) + ' · ' + Number(m.points) + ' points · ' + Number(m.answers_total) + ' answers</span>' +
+        '<div class="teamrow"><div class="field"><input type="text" id="mn-' + id + '" value="' + esc(m.display_name) + '" maxlength="40" aria-label="Name"></div>' +
+        '<div class="field">' + classSelect("mc-" + id, m.class_id || "") + '</div></div>' +
+        '<div class="row tight">' + acts + '</div>' + box + '</div>';
+    }).join("") + '</section>';
+  }
+  function memberRow(id) { return C.members.rows.filter(function (x) { return x.user_id === id; })[0]; }
+
   /* ---------- account page ---------- */
   function classSelect(id, sel) {
     return '<select id="' + id + '"><option value="">Choose your class</option>' + DX.curriculum.classes.map(function (c) {
@@ -127,7 +167,18 @@
   }
   function accountView() {
     var note = (C.err ? '<p class="note bad" role="alert">' + esc(C.err) + '</p>' : "") + (C.msg && C.msg !== "offline" ? '<p class="note">' + esc(C.msg) + '</p>' : "");
+    if (C.ok && C.user && C.mode === "reset") {
+      return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>Choose a new password</h1><p class="lede">You opened the reset link from your email. Pick a new password for your account.</p></header>' + note +
+        '<section class="section stack"><div class="field"><label class="label" for="ac-pw">New password</label><input type="password" id="ac-pw" autocomplete="new-password"></div>' +
+        '<div class="field"><label class="label" for="ac-pw2">New password again</label><input type="password" id="ac-pw2" autocomplete="new-password"></div>' +
+        '<div class="row tight"><button class="btn primary" data-act="newpw"' + (C.busy ? " disabled" : "") + '>Save new password</button></div></section></div>';
+    }
     if (!C.ok) return '<div class="wrap stack"><h1>Account</h1><p class="lede">Accounts could not load. You can still practise and run hall mode. Check your connection and refresh.</p></div>';
+    if (!C.user && C.mode === "forgot") {
+      return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>Reset your password</h1><p class="lede">Enter the email you signed up with. We will send you a link to choose a new password.</p></header>' + note +
+        '<section class="section stack"><div class="field"><label class="label" for="ac-email">Email</label><input type="email" id="ac-email" autocomplete="email"></div>' +
+        '<div class="row tight"><button class="btn primary" data-act="sendreset"' + (C.busy ? " disabled" : "") + '>Send reset link</button><button class="btn ghost" data-act="swap">Back to sign in</button></div></section></div>';
+    }
     if (!C.user) {
       var up = C.mode === "up";
       return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + (up ? "Create your account" : "Sign in") + '</h1>' +
@@ -138,7 +189,7 @@
         '<div class="field"><label class="label" for="ac-email">Email</label><input type="email" id="ac-email" autocomplete="email"></div>' +
         '<div class="field"><label class="label" for="ac-pw">Password</label><input type="password" id="ac-pw" autocomplete="' + (up ? "new-password" : "current-password") + '" minlength="6"></div>' +
         '<div class="row tight"><button class="btn primary" data-act="' + (up ? "signup" : "signin") + '"' + (C.busy ? " disabled" : "") + '>' + (up ? "Create account" : "Sign in") + '</button>' +
-        '<button class="btn ghost" data-act="swap">' + (up ? "I already have an account" : "Create an account") + '</button></div></section></div>';
+        '<button class="btn ghost" data-act="swap">' + (up ? "I already have an account" : "Create an account") + '</button>' + (up ? "" : '<button class="btn ghost" data-act="forgot">Forgot password?</button>') + '</div></section></div>';
     }
     var p = C.profile || { display_name: "", class_id: "", is_admin: false };
     var admin = "";
@@ -155,7 +206,7 @@
     return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + esc(p.display_name || "Your account") + '</h1><p class="lede">' + esc(C.user.email || "") + (p.is_admin ? " · admin" : "") + '</p></header>' + note +
       '<section class="section stack"><div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" value="' + esc(p.display_name) + '"></div>' +
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
-      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + admin + (p.is_admin ? reportsAdminHtml() : "") + '</div>';
+      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
   }
   function val(id) { var e = document.getElementById(id); return e ? e.value.trim() : ""; }
   function run(p, ok) {
@@ -192,6 +243,35 @@
         C.reports.rows = C.reports.rows.filter(function (x) { return x.question_id !== qid; });
         C.msg = "Report closed.";
       });
+    } else if (a === "forgot") { C.mode = "forgot"; C.err = ""; C.msg = ""; repaint();
+    } else if (a === "sendreset") {
+      var em = val("ac-email"); if (!em) { C.err = "Enter your email."; return repaint(); }
+      run(C.sb.auth.resetPasswordForEmail(em, { redirectTo: location.origin + location.pathname }), function () {
+        C.msg = "If that email has an account, a reset link is on its way. Check your spam folder too.";
+      });
+    } else if (a === "newpw") {
+      if (val("ac-pw").length < 6) { C.err = "Use a password of at least 6 characters."; return repaint(); }
+      if (val("ac-pw") !== val("ac-pw2")) { C.err = "The two passwords do not match."; return repaint(); }
+      run(C.sb.auth.updateUser({ password: val("ac-pw") }), function () { C.mode = "in"; C.msg = "Password changed. You are signed in."; });
+    } else if (a === "msearch") {
+      C.members.q = val("ms-q"); C.members.cls = val("ms-class"); C.members.confirm = null; C.members.loaded = false; C.members.loading = true; repaint(); loadMembers();
+    } else if (a === "msave") {
+      var mid = b.getAttribute("data-id"), mnm = val("mn-" + mid), mcl = val("mc-" + mid);
+      if (mnm.length < 2) { C.err = "A name needs at least 2 characters."; return repaint(); }
+      run(C.sb.from("profiles").update({ display_name: mnm, class_id: mcl || null }).eq("id", mid), function () {
+        var row = memberRow(mid); if (row) { row.display_name = mnm; row.class_id = mcl || null; }
+        C.msg = "Saved " + mnm + ".";
+      });
+    } else if (a === "mask") { C.members.confirm = { id: b.getAttribute("data-id"), kind: b.getAttribute("data-kind") }; repaint();
+    } else if (a === "mno") { C.members.confirm = null; repaint();
+    } else if (a === "myes") {
+      var yid = b.getAttribute("data-id"), kind = b.getAttribute("data-kind");
+      C.members.confirm = null;
+      run(C.sb.rpc(kind === "remove" ? "admin_remove_member" : "admin_clear_points", { p_id: yid }), function () {
+        if (kind === "remove") C.members.rows = C.members.rows.filter(function (x) { return x.user_id !== yid; });
+        else { var r2 = memberRow(yid); if (r2) { r2.points = 0; r2.answers_total = 0; } }
+        C.msg = kind === "remove" ? "Member removed." : "Scores reset.";
+      });
     } else if (a === "qsync") {
       var ids = DX.questions.map(function (x) { return String(x.id); });
       run(C.sb.rpc("sync_question_ids", { p_ids: ids }), function (r) {
@@ -205,7 +285,12 @@
       });
     }
   }
-  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); if (C.ok && C.user && C.profile && C.profile.is_admin && !C.reports.loaded) loadReports(); }, onClick: accountClick, onKey: function () { }, leave: function () { C.reports.loaded = false; } };
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter" || !e.target || !e.target.id) return;
+    var map = { "ms-q": "msearch", "ac-pw": null };
+    if (e.target.id === "ms-q") { var bt = document.querySelector('[data-act="msearch"]'); if (bt) bt.click(); }
+  });
+  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
 
   /* ---------- leaderboards ---------- */
   function loadBoard() {
