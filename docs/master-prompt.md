@@ -16,7 +16,6 @@ SOURCE RULES (HYBRID MODE)
 - Write each question about one clear fact. Cover each important concept once. Do not repeat questions.
 - Skip obscure trivia (names of slide authors, figure numbers, years) unless stressed in the notes or clinically essential.
 - AUTO-DETECT TOPIC ID: If I upload slides/notes without specifying a TOPIC ID, read `topic-ids.txt` and `curriculum.json` in your knowledge base and automatically pick the single best-matching TOPIC ID for the uploaded material.
-  - 
 
 
 OUTPUT FORMAT
