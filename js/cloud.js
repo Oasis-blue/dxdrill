@@ -98,13 +98,13 @@
     if (!R.loaded) return head + '<p class="muted">Loading…</p></section>';
     if (R.error) return head + '<p class="note bad">' + esc(R.error) + '</p></section>';
     if (!R.rows.length) return head + '<p class="muted">No open reports.</p></section>';
-    var by = {}, order = [];
+    var by = Object.create(null), order = [];
     R.rows.forEach(function (x) { if (!by[x.question_id]) { by[x.question_id] = []; order.push(x.question_id); } by[x.question_id].push(x); });
     order.sort(function (a, b) { return by[b].length - by[a].length; });
     return head + order.map(function (id) {
       var list = by[id], q = DX.questions.filter(function (x) { return x.id === id; })[0];
-      var reasons = {}; list.forEach(function (x) { reasons[x.reason] = (reasons[x.reason] || 0) + 1; });
-      var rs = Object.keys(reasons).map(function (k) { return (REASONS[k] || k) + " ×" + reasons[k]; }).join(", ");
+      var reasons = Object.create(null); list.forEach(function (x) { reasons[x.reason] = (reasons[x.reason] || 0) + 1; });
+      var rs = Object.keys(reasons).map(function (k) { return (Object.prototype.hasOwnProperty.call(REASONS, k) ? REASONS[k] : k) + " ×" + reasons[k]; }).join(", ");
       var notes = list.filter(function (x) { return x.note; }).slice(0, 3).map(function (x) { return '<p class="why">“' + esc(x.note) + '”</p>'; }).join("");
       return '<div class="rep-item"><span class="label">' + esc(id) + ' · ' + list.length + ' report' + (list.length === 1 ? "" : "s") + '</span>' +
         '<p class="q">' + (q ? esc(q.q) : "Question no longer in the bank") + '</p>' +
