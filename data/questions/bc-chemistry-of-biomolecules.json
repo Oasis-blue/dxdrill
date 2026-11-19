@@ -1,0 +1,957 @@
+{
+ "topic": "bc-chemistry-of-biomolecules",
+ "questions": [
+  {
+   "id": "bc-chemistry-of-biomolecules-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which functional group is present in an aldose sugar?",
+   "options": [
+    "Aldehyde group",
+    "Ketone group",
+    "Carboxylic acid group",
+    "Thiol group"
+   ],
+   "answer": 0,
+   "explain": "Aldoses are monosaccharides that contain an aldehyde carbonyl group at carbon-1 in their open-chain form. Ketoses contain a ketone group instead.",
+   "verified": false,
+   "open": {
+    "q": "Which functional group characterizes an aldose monosaccharide in its open-chain form?",
+    "accept": [
+     "aldehyde",
+     "carbonyl aldehyde",
+     "-CHO group",
+     "formyl group"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which hexose is the principal ketose in human metabolism?",
+   "options": [
+    "Glucose",
+    "Fructose",
+    "Galactose",
+    "Mannose"
+   ],
+   "answer": 1,
+   "explain": "Fructose is a six-carbon ketohexose with its carbonyl group at carbon-2. Glucose, galactose, and mannose are aldohexoses.",
+   "verified": false,
+   "open": {
+    "q": "Identify the six-carbon ketohexose prominent in human carbohydrate metabolism.",
+    "accept": [
+     "D-fructose",
+     "ketohexose fructose",
+     "levulose"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which carbon determines whether a monosaccharide belongs to the D or L stereochemical series?",
+   "options": [
+    "Carbon-1",
+    "Carbon-2",
+    "The penultimate chiral carbon",
+    "The carbonyl carbon"
+   ],
+   "answer": 2,
+   "explain": "The D or L configuration is assigned by comparing the hydroxyl orientation on the highest-numbered chiral carbon (penultimate carbon) to D-glyceraldehyde. In humans, D-sugars predominate.",
+   "verified": false,
+   "open": {
+    "q": "Which chiral carbon in a monosaccharide determines its D or L designation?",
+    "accept": [
+     "penultimate carbon",
+     "highest-numbered chiral carbon",
+     "chiral carbon farthest from the carbonyl group",
+     "next-to-last chiral carbon"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-004",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Carbohydrates",
+   "q": "What structural relationship exists between D-glucose and D-mannose?",
+   "options": [
+    "Enantiomers",
+    "Epimers at C-2",
+    "Anomers",
+    "Constitutional isomers"
+   ],
+   "answer": 1,
+   "explain": "D-glucose and D-mannose differ in configuration around a single asymmetric carbon atom, specifically C-2, making them C-2 epimers. D-galactose is a C-4 epimer of D-glucose.",
+   "verified": false,
+   "open": {
+    "q": "How are D-glucose and D-mannose stereochemically related to each other?",
+    "accept": [
+     "C-2 epimers",
+     "epimers at carbon 2",
+     "epimers at C2",
+     "diastereomers differing at C-2"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "What is the term for cyclic stereoisomers that differ only in configuration at the newly formed hemiacetal or hemiketal carbon?",
+   "options": [
+    "Enantiomers",
+    "Epimers",
+    "Anomers",
+    "Tautomers"
+   ],
+   "answer": 2,
+   "explain": "Cyclization creates a new chiral center called the anomeric carbon, generating alpha and beta anomers. Mutarotation allows alpha and beta forms to interconvert via the open-chain form.",
+   "verified": false,
+   "open": {
+    "q": "What name is given to cyclic sugar isomers that differ solely at the anomeric carbon?",
+    "accept": [
+     "anomeric isomers",
+     "alpha and beta anomers",
+     "cyclic anomers"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which six-membered ring structure is formed when a monosaccharide cyclizes?",
+   "options": [
+    "Furanose ring",
+    "Pyranose ring",
+    "Imidazole ring",
+    "Pyrrole ring"
+   ],
+   "answer": 1,
+   "explain": "A six-membered ring containing five carbons and one oxygen atom is called a pyranose ring. A five-membered ring with four carbons and one oxygen is a furanose ring.",
+   "verified": false,
+   "open": {
+    "q": "What is the name of the six-membered ring structure formed by a cyclic monosaccharide?",
+    "accept": [
+     "pyranose",
+     "six-membered pyranose ring"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Carbohydrates",
+   "q": "Why does sucrose fail to act as a reducing sugar in Benedict's test?",
+   "options": [
+    "It contains two ketone units",
+    "Its anomeric carbons are locked in a glycosidic bond",
+    "It lacks hydroxyl groups",
+    "It cannot undergo mutarotation in water"
+   ],
+   "answer": 1,
+   "explain": "Sucrose is linked via an alpha-1,beta-2 glycosidic bond between the anomeric carbons of glucose and fructose, preventing ring opening to a free aldehyde or ketone group. Therefore it is a non-reducing disaccharide.",
+   "verified": false,
+   "open": {
+    "q": "Why is sucrose classified as a non-reducing disaccharide?",
+    "accept": [
+     "both anomeric carbons are linked in the glycosidic bond",
+     "no free anomeric carbon is available",
+     "anomeric carbons are joined together",
+     "lack of a free aldehyde or ketone group"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which disaccharide consists of two D-glucose units joined by an alpha-1,4-glycosidic linkage?",
+   "options": [
+    "Lactose",
+    "Maltose",
+    "Sucrose",
+    "Cellobiose"
+   ],
+   "answer": 1,
+   "explain": "Maltose is composed of two glucose residues linked by an alpha-1,4 bond and retains a free reducing anomeric carbon. Lactose contains galactose and glucose linked beta-1,4.",
+   "verified": false,
+   "open": {
+    "q": "Which reducing disaccharide is composed of two glucose units joined by an alpha-1,4-glycosidic bond?",
+    "accept": [
+     "D-maltose",
+     "malt sugar"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-009",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which glycosidic linkage connects the main linear chains of amylose and glycogen?",
+   "options": [
+    "Alpha-1,4-glycosidic bond",
+    "Alpha-1,6-glycosidic bond",
+    "Beta-1,4-glycosidic bond",
+    "Beta-1,6-glycosidic bond"
+   ],
+   "answer": 0,
+   "explain": "Linear chains of glucose in both amylose and glycogen are joined by alpha-1,4-glycosidic bonds. Branch points in amylopectin and glycogen are formed by alpha-1,6-glycosidic bonds.",
+   "verified": false,
+   "open": {
+    "q": "Which glycosidic bond links glucose units along the straight chains of glycogen and amylose?",
+    "accept": [
+     "alpha-1,4",
+     "alpha 1-4 linkage",
+     "alpha-1,4 linkage",
+     "alpha-1,4 bond"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-010",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Carbohydrates",
+   "q": "An infant develops bloating, abdominal cramps, and watery diarrhea shortly after drinking breast milk, while stool testing shows reducing substances. Deficiency of which disaccharidase explains this presentation?",
+   "options": [
+    "Sucrase",
+    "Lactase",
+    "Maltase",
+    "Alpha-amylase"
+   ],
+   "answer": 1,
+   "explain": "Lactose is the primary carbohydrate in milk and requires lactase (beta-galactosidase) for hydrolysis into glucose and galactose. Unabsorbed lactose draws water osmotically and is fermented by colonic bacteria into gas and organic acids.",
+   "verified": false,
+   "open": {
+    "q": "Deficiency of which intestinal disaccharidase causes lactose intolerance after milk ingestion?",
+    "accept": [
+     "lactase-phlorizin hydrolase",
+     "beta-galactosidase",
+     "intestinal lactase"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which glycosaminoglycan serves as a natural anticoagulant by activating antithrombin III?",
+   "options": [
+    "Hyaluronic acid",
+    "Heparin",
+    "Chondroitin sulfate",
+    "Keratan sulfate"
+   ],
+   "answer": 1,
+   "explain": "Heparin is a heavily sulfated glycosaminoglycan stored in mast cell granules that binds antithrombin III and accelerates inhibition of coagulation factors such as thrombin and factor Xa.",
+   "verified": false,
+   "open": {
+    "q": "Which sulfated glycosaminoglycan acts as an anticoagulant by enhancing antithrombin III activity?",
+    "accept": [
+     "heparin sulfate",
+     "unfractionated heparin"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Carbohydrates",
+   "q": "Which glycosaminoglycan lacks sulfate ester groups and is a major component of synovial fluid and vitreous humor?",
+   "options": [
+    "Dermatan sulfate",
+    "Hyaluronic acid",
+    "Heparan sulfate",
+    "Chondroitin 4-sulfate"
+   ],
+   "answer": 1,
+   "explain": "Hyaluronic acid (hyaluronan) is an unbranched, non-sulfated glycosaminoglycan made of repeating glucuronic acid and N-acetylglucosamine units. It provides viscosity and shock absorption in joints and eye fluids.",
+   "verified": false,
+   "open": {
+    "q": "Which non-sulfated glycosaminoglycan is abundant in synovial fluid and the vitreous humor of the eye?",
+    "accept": [
+     "hyaluronan",
+     "hyaluronate"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which fatty acid is classified as an essential fatty acid in humans?",
+   "options": [
+    "Palmitic acid",
+    "Stearic acid",
+    "Linoleic acid",
+    "Oleic acid"
+   ],
+   "answer": 2,
+   "explain": "Linoleic acid (an omega-6 polyunsaturated fatty acid) and alpha-linolenic acid (an omega-3 polyunsaturated fatty acid) are essential because human cells lack desaturases to insert double bonds beyond carbon-9. Palmitic and stearic acids are saturated and can be synthesized endogenously.",
+   "verified": false,
+   "open": {
+    "q": "Name one polyunsaturated fatty acid that is essential in the human diet because humans cannot synthesize it.",
+    "accept": [
+     "linoleic acid",
+     "alpha-linolenic acid",
+     "linolenic acid",
+     "omega-6 linoleic acid"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-014",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lipids",
+   "q": "Why do triacylglycerols serve as a more concentrated energy store per gram than glycogen in adipose tissue?",
+   "options": [
+    "They are more oxidized and hydrophilic",
+    "They are more reduced and stored without bound water",
+    "They contain high-energy phosphoanhydride bonds",
+    "They are soluble in plasma without carrier proteins"
+   ],
+   "answer": 1,
+   "explain": "Triacylglycerols are highly reduced hydrophobic molecules stored in nearly anhydrous lipid droplets, whereas glycogen is hydrated with water. Complete oxidation of fatty acyl chains yields more energy per gram than carbohydrate.",
+   "verified": false,
+   "open": {
+    "q": "Why do triacylglycerols provide more metabolic energy per gram than hydrated glycogen?",
+    "accept": [
+     "they are more reduced and anhydrous",
+     "hydrophobic and stored without water",
+     "more reduced state and lack of bound water",
+     "anhydrous hydrophobic storage and higher reduction state"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which phospholipid is the predominant surface-active component of pulmonary surfactant?",
+   "options": [
+    "Phosphatidylserine",
+    "Dipalmitoylphosphatidylcholine",
+    "Phosphatidylinositol",
+    "Cardiolipin"
+   ],
+   "answer": 1,
+   "explain": "Dipalmitoylphosphatidylcholine (lecithin) lowers alveolar surface tension and prevents alveolar collapse at end-expiration. Its deficiency causes neonatal respiratory distress syndrome in premature infants.",
+   "verified": false,
+   "open": {
+    "q": "Which phospholipid is the main surfactant agent reducing surface tension in lung alveoli?",
+    "accept": [
+     "DPPC",
+     "dipalmitoyl phosphatidylcholine",
+     "lecithin"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which phospholipid is localized almost exclusively in the inner mitochondrial membrane?",
+   "options": [
+    "Cardiolipin",
+    "Sphingomyelin",
+    "Phosphatidylcholine",
+    "Cerebroside"
+   ],
+   "answer": 0,
+   "explain": "Cardiolipin (diphosphatidylglycerol) has four fatty acyl chains and two phosphate groups and is concentrated in the inner mitochondrial membrane where it supports oxidative phosphorylation complexes. Antibodies against cardiolipin occur in antiphospholipid syndrome.",
+   "verified": false,
+   "open": {
+    "q": "Which dimeric phospholipid is characteristically enriched in the inner mitochondrial membrane?",
+    "accept": [
+     "diphosphatidylglycerol",
+     "cardiolipin"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-017",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which alcohol forms the backbone of sphingolipids?",
+   "options": [
+    "Glycerol",
+    "Sphingosine",
+    "Cholesterol",
+    "Inositol"
+   ],
+   "answer": 1,
+   "explain": "Sphingolipids are built on the long-chain amino alcohol sphingosine rather than glycerol. Acylation of the amino group of sphingosine with a fatty acid forms ceramide.",
+   "verified": false,
+   "open": {
+    "q": "Which long-chain amino alcohol forms the core backbone of sphingolipids?",
+    "accept": [
+     "D-sphingosine",
+     "sphingosine base"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which glycosphingolipid contains one or more sialic acid (N-acetylneuraminic acid) residues?",
+   "options": [
+    "Cerebroside",
+    "Ganglioside",
+    "Sphingomyelin",
+    "Sulfatide"
+   ],
+   "answer": 1,
+   "explain": "Gangliosides are complex glycosphingolipids containing sialic acid (NANA) and are especially abundant in neuronal membranes and gray matter. Cerebrosides contain only a single sugar such as galactose or glucose.",
+   "verified": false,
+   "open": {
+    "q": "Which class of glycosphingolipids is defined by having one or more sialic acid residues?",
+    "accept": [
+     "gangliosides",
+     "sialylated glycosphingolipids"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-019",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Lipids",
+   "q": "A 9-month-old infant presents with developmental regression, hypotonia, an exaggerated startle response to sound, and a cherry-red spot on the macula without hepatosplenomegaly. Accumulation of which lipid substrate occurs in this condition?",
+   "options": [
+    "GM2 ganglioside",
+    "Glucocerebroside",
+    "Sphingomyelin",
+    "Ceramide trihexoside"
+   ],
+   "answer": 0,
+   "explain": "Tay-Sachs disease results from hexosaminidase A deficiency, causing lysosomal accumulation of GM2 ganglioside predominantly in neurons and producing a macular cherry-red spot. Gaucher disease accumulates glucocerebroside and typically causes hepatosplenomegaly.",
+   "verified": false,
+   "open": {
+    "q": "Which sphingolipid accumulates in neurons in Tay-Sachs disease?",
+    "accept": [
+     "GM2",
+     "GM2-ganglioside",
+     "ganglioside GM2"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "How many fused carbon rings make up the steroid nucleus of cholesterol?",
+   "options": [
+    "Three six-membered rings and one five-membered ring",
+    "Four six-membered rings",
+    "Two six-membered rings and two five-membered rings",
+    "Three five-membered rings and one six-membered ring"
+   ],
+   "answer": 0,
+   "explain": "The cyclopentanoperhydrophenanthrene (steroid) nucleus consists of three fused cyclohexane rings (A, B, C) and one fused cyclopentane ring (D). Cholesterol has 27 carbons with a hydroxyl group at C-3.",
+   "verified": false,
+   "open": {
+    "q": "Describe the ring composition of the cyclopentanoperhydrophenanthrene steroid nucleus in cholesterol.",
+    "accept": [
+     "three six-membered rings and one five-membered ring",
+     "three cyclohexane rings and one cyclopentane ring",
+     "3 six-membered rings and 1 five-membered ring"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-021",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which polyunsaturated fatty acid is the primary precursor for human prostaglandins, thromboxanes, and leukotrienes?",
+   "options": [
+    "Arachidonic acid",
+    "Oleic acid",
+    "Palmitoleic acid",
+    "Butyric acid"
+   ],
+   "answer": 0,
+   "explain": "Arachidonic acid (20:4, omega-6) is released from membrane phospholipids by phospholipase A2 and metabolized via cyclooxygenase and lipoxygenase pathways into eicosanoids.",
+   "verified": false,
+   "open": {
+    "q": "Which 20-carbon polyunsaturated fatty acid serves as the main precursor of human eicosanoids?",
+    "accept": [
+     "arachidonate",
+     "20:4 arachidonic acid"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which amino acid has an achiral alpha-carbon because its side chain is a hydrogen atom?",
+   "options": [
+    "Alanine",
+    "Glycine",
+    "Proline",
+    "Serine"
+   ],
+   "answer": 1,
+   "explain": "Glycine has a single hydrogen atom as its R-group, so its alpha-carbon is bonded to two identical hydrogen atoms and is optically inactive. All other standard proteinogenic alpha-amino acids are chiral.",
+   "verified": false,
+   "open": {
+    "q": "Which standard proteinogenic amino acid lacks an asymmetric alpha-carbon?",
+    "accept": [
+     "glycine",
+     "Gly"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which amino acid contains a cyclic imino acid structure that introduces rigid bends or kinks in alpha-helices?",
+   "options": [
+    "Proline",
+    "Cysteine",
+    "Tryptophan",
+    "Histidine"
+   ],
+   "answer": 0,
+   "explain": "Proline has a pyrrolidine ring linking its side chain back to the alpha-amino nitrogen, forming a secondary amine (imino) structure without an amide NH hydrogen to donate an intra-helical hydrogen bond.",
+   "verified": false,
+   "open": {
+    "q": "Which cyclic amino acid disrupts regular alpha-helices due to its rigid ring and lack of an amide NH hydrogen?",
+    "accept": [
+     "proline",
+     "Pro"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which amino acid side chain can form covalent disulfide cross-links that stabilize tertiary and quaternary protein structure?",
+   "options": [
+    "Methionine",
+    "Cysteine",
+    "Serine",
+    "Asparagine"
+   ],
+   "answer": 1,
+   "explain": "Cysteine possesses a reactive sulfhydryl (-SH) group that can be oxidized with another cysteine sulfhydryl to form a covalent disulfide bond (cystine). Methionine has a thioether sulfur that does not form disulfide bridges.",
+   "verified": false,
+   "open": {
+    "q": "Which amino acid residue forms disulfide bonds between polypeptide chains or loops?",
+    "accept": [
+     "cysteine",
+     "Cys"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-025",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which pair of amino acids has negatively charged side chains at physiological pH (7.4)?",
+   "options": [
+    "Lysine and arginine",
+    "Aspartate and glutamate",
+    "Asparagine and glutamine",
+    "Serine and threonine"
+   ],
+   "answer": 1,
+   "explain": "Aspartate (aspartic acid) and glutamate (glutamic acid) contain side-chain carboxylic acid groups that are deprotonated and negatively charged at pH 7.4. Lysine and arginine are basic and positively charged at physiological pH.",
+   "verified": false,
+   "open": {
+    "q": "Which two acidic amino acids carry a net negative charge on their side chains at physiological pH?",
+    "accept": [
+     "aspartate and glutamate",
+     "aspartic acid and glutamic acid",
+     "glutamate and aspartate"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-026",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which amino acid has an imidazole ring whose side chain pKa is near physiological pH, allowing it to buffer around pH 7?",
+   "options": [
+    "Histidine",
+    "Tyrosine",
+    "Tryptophan",
+    "Arginine"
+   ],
+   "answer": 0,
+   "explain": "Histidine has an imidazole side chain with a pKa around 6.0, enabling it to act as an effective proton donor/acceptor near physiological pH and in enzyme active sites or hemoglobin.",
+   "verified": false,
+   "open": {
+    "q": "Which amino acid contains an imidazole side chain important for buffering near physiological pH?",
+    "accept": [
+     "histidine",
+     "His"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-027",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "What is the net electrical charge of an amino acid at its isoelectric point (pI)?",
+   "options": [
+    "Zero (zwitterionic)",
+    "Positive one",
+    "Negative one",
+    "Equal to its pKa1"
+   ],
+   "answer": 0,
+   "explain": "At the isoelectric point (pI), the pH equals the average of the relevant pKa values so that positively and negatively charged groups balance out to a net charge of zero. The molecule is predominantly in its dipolar zwitterion form.",
+   "verified": false,
+   "open": {
+    "q": "What is the net charge of a molecule at its isoelectric point?",
+    "accept": [
+     "zero",
+     "0",
+     "neutral",
+     "net zero"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Amino Acids and Proteins",
+   "q": "Why does the peptide bond have partial double-bond character and remain planar?",
+   "options": [
+    "Free rotation occurs around the C-N bond",
+    "Resonance delocalizes electrons between the carbonyl carbon and amide nitrogen",
+    "It is a covalent bond between two side-chain hydroxyl groups",
+    "It is stabilized by ionic salt bridges along the backbone"
+   ],
+   "answer": 1,
+   "explain": "Electron resonance between the amide nitrogen lone pair and the carbonyl group gives the peptide C-N bond about 40% double-bond character, restricting rotation around C-N and keeping the six atoms planar. Rotation occurs around the N-Calpha (phi) and Calpha-C (psi) bonds.",
+   "verified": false,
+   "open": {
+    "q": "What molecular mechanism gives the peptide bond partial double-bond character and planarity?",
+    "accept": [
+     "resonance delocalization",
+     "electron resonance",
+     "delocalization of electrons between carbonyl and amide nitrogen"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-029",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which bonding interaction primarily stabilizes the alpha-helix secondary structure of proteins?",
+   "options": [
+    "Intrachain hydrogen bonds between backbone carbonyl oxygen and amide NH",
+    "Disulfide bonds between adjacent beta-strands",
+    "Hydrophobic clustering of polar side chains in the core",
+    "Phosphodiester linkages along the polypeptide backbone"
+   ],
+   "answer": 0,
+   "explain": "In an alpha-helix, hydrogen bonds form parallel to the helical axis between the carbonyl oxygen (C=O) of residue n and the amide hydrogen (N-H) of residue n+4. Side chains project outward from the helix.",
+   "verified": false,
+   "open": {
+    "q": "Which non-covalent interaction maintains the coiled alpha-helix secondary structure in proteins?",
+    "accept": [
+     "backbone hydrogen bonds",
+     "hydrogen bonds between peptide backbone groups",
+     "intrachain hydrogen bonds"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-030",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Amino Acids and Proteins",
+   "q": "Which level of protein structure describes the spatial arrangement of separate polypeptide subunits in a multi-subunit protein?",
+   "options": [
+    "Primary structure",
+    "Secondary structure",
+    "Tertiary structure",
+    "Quaternary structure"
+   ],
+   "answer": 3,
+   "explain": "Quaternary structure refers to the assembly and spatial arrangement of two or more polypeptide chains (subunits), such as the alpha2-beta2 tetramer of adult hemoglobin. Proteins with a single polypeptide chain do not have quaternary structure.",
+   "verified": false,
+   "open": {
+    "q": "Which level of protein organization describes how multiple polypeptide subunits fit together?",
+    "accept": [
+     "quaternary structure",
+     "4th level structure"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-031",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Amino Acids and Proteins",
+   "q": "A patient with sickle cell disease has a single point mutation in the beta-globin gene replacing glutamate at position 6 with valine. How does this alteration change the surface property of hemoglobin S?",
+   "options": [
+    "Introduces a hydrophobic patch that promotes polymerization when deoxygenated",
+    "Increases net negative surface charge and solubility",
+    "Prevents heme iron from binding oxygen in the lungs",
+    "Eliminates all four polypeptide chains from the molecule"
+   ],
+   "answer": 0,
+   "explain": "Replacing hydrophilic, negatively charged glutamate with nonpolar hydrophobic valine creates a sticky hydrophobic patch on deoxygenated hemoglobin S. Deoxygenated HbS molecules aggregate into rigid polymers that deform erythrocytes into a sickle shape.",
+   "verified": false,
+   "open": {
+    "q": "How does the Glu6Val substitution on the beta-globin chain alter the surface of deoxygenated hemoglobin S?",
+    "accept": [
+     "creates a hydrophobic patch",
+     "forms a hydrophobic spot",
+     "introduces a nonpolar hydrophobic region",
+     "adds a hydrophobic site"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-032",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nucleotides and Nucleic Acids",
+   "q": "Which nitrogenous bases are classified as purines in nucleic acids?",
+   "options": [
+    "Adenine and guanine",
+    "Cytosine and thymine",
+    "Uracil and cytosine",
+    "Thymine and uracil"
+   ],
+   "answer": 0,
+   "explain": "Purines have a fused bicyclic pyrimidine-imidazole ring structure and include adenine and guanine. Pyrimidines (cytosine, thymine, and uracil) have a single six-membered aromatic ring.",
+   "verified": false,
+   "open": {
+    "q": "Which two heterocyclic bases found in nucleic acids are purines?",
+    "accept": [
+     "adenine and guanine",
+     "guanine and adenine"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-033",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nucleotides and Nucleic Acids",
+   "q": "How does the sugar component of RNA differ from that of DNA?",
+   "options": [
+    "RNA contains ribose with a 2-hydroxyl group instead of 2-deoxyribose",
+    "RNA contains a six-carbon hexose ring instead of a pentose",
+    "RNA lacks a phosphate group at the 5-position",
+    "RNA contains L-ribose rather than D-ribose"
+   ],
+   "answer": 0,
+   "explain": "RNA nucleotides contain D-ribose with a hydroxyl (-OH) group at carbon-2, whereas DNA contains 2-deoxy-D-ribose with a hydrogen at carbon-2. The 2-OH group makes RNA more susceptible to base-catalyzed hydrolysis.",
+   "verified": false,
+   "open": {
+    "q": "What structural difference distinguishes the pentose sugar in RNA from the pentose sugar in DNA?",
+    "accept": [
+     "RNA has a 2-OH group whereas DNA has 2-deoxyribose",
+     "presence of a hydroxyl group at C-2 in ribose",
+     "2-hydroxyl on ribose versus hydrogen at C-2 in deoxyribose"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-034",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nucleotides and Nucleic Acids",
+   "q": "Which pyrimidine base is present in RNA in place of thymine in DNA?",
+   "options": [
+    "Cytosine",
+    "Uracil",
+    "Hypoxanthine",
+    "Xanthine"
+   ],
+   "answer": 1,
+   "explain": "Uracil pairs with adenine in RNA and lacks the C-5 methyl group found on thymine. Thymine is methylated uracil (5-methyluracil) and is characteristic of DNA.",
+   "verified": false,
+   "open": {
+    "q": "Which pyrimidine base replaces thymine in RNA molecules?",
+    "accept": [
+     "uracil",
+     "U"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-035",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Nucleotides and Nucleic Acids",
+   "q": "How many hydrogen bonds form between a complementary guanine-cytosine base pair in double-stranded B-DNA?",
+   "options": [
+    "One hydrogen bond",
+    "Two hydrogen bonds",
+    "Three hydrogen bonds",
+    "Four hydrogen bonds"
+   ],
+   "answer": 2,
+   "explain": "Guanine and cytosine pair via three hydrogen bonds, whereas adenine and thymine pair via two hydrogen bonds. Consequently, DNA regions with higher G-C content require higher temperatures to denature (higher melting temperature, Tm).",
+   "verified": false,
+   "open": {
+    "q": "How many hydrogen bonds stabilize each guanine-cytosine base pair in double-stranded DNA?",
+    "accept": [
+     "three",
+     "3",
+     "three H-bonds"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-036",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nucleotides and Nucleic Acids",
+   "q": "Which covalent bond links adjacent nucleotides along a nucleic acid strand?",
+   "options": [
+    "3-5-phosphodiester bond",
+    "Peptide bond",
+    "N-glycosidic bond",
+    "Alpha-1,4-glycosidic bond"
+   ],
+   "answer": 0,
+   "explain": "A phosphate group bridges the 3-hydroxyl of one sugar and the 5-hydroxyl of the next sugar via a 3-5-phosphodiester linkage, giving the strand polarity. The base is attached to the C-1 of the sugar via an N-glycosidic bond.",
+   "verified": false,
+   "open": {
+    "q": "Which bond joins consecutive sugar residues along the backbone of a DNA or RNA strand?",
+    "accept": [
+     "phosphodiester bond",
+     "3',5'-phosphodiester linkage",
+     "3-5 phosphodiester bond"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-037",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biomolecular Properties and Water",
+   "q": "Which property of water enables it to dissolve polar and ionic biomolecules and serve as the universal biological solvent?",
+   "options": [
+    "High polarity and ability to form extensive hydrogen bonds",
+    "Nonpolar covalent structure with zero dipole moment",
+    "Absence of lone electron pairs on oxygen",
+    "Inability to ionize into protons and hydroxide ions"
+   ],
+   "answer": 0,
+   "explain": "Water has a bent geometry and electronegative oxygen that creates a strong electric dipole and allows extensive hydrogen bonding. This stabilizes solvation shells around ions and polar solutes.",
+   "verified": false,
+   "open": {
+    "q": "Which chemical property of water allows it to form hydration shells around polar and ionic solutes?",
+    "accept": [
+     "polarity and hydrogen bonding",
+     "dipolar nature and hydrogen bond formation",
+     "high polarity and hydrogen bonds"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-038",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biomolecular Properties and Water",
+   "q": "According to the Henderson-Hasselbalch equation, when is the pH of a buffer solution equal to its pKa?",
+   "options": [
+    "When concentrations of conjugate base and weak acid are equal",
+    "When the concentration of weak acid is tenfold higher than conjugate base",
+    "When no dissociable protons remain in solution",
+    "When temperature is lowered to zero degrees Celsius"
+   ],
+   "answer": 0,
+   "explain": "Because pH = pKa + log([A-]/[HA]), when [A-] equals [HA] the ratio is 1 and log(1) is 0, making pH equal to pKa. At this point, buffering capacity is maximal.",
+   "verified": false,
+   "open": {
+    "q": "Under what condition on a conjugate acid-base pair does pH equal pKa?",
+    "accept": [
+     "when conjugate base and weak acid concentrations are equal",
+     "when [A-] equals [HA]",
+     "equal concentrations of acid and conjugate base"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-039",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lipids",
+   "q": "Which lipoprotein class has the highest triacylglycerol content and transports dietary lipids from the intestine to peripheral tissues?",
+   "options": [
+    "Chylomicrons",
+    "High-density lipoprotein (HDL)",
+    "Low-density lipoprotein (LDL)",
+    "Intermediate-density lipoprotein (IDL)"
+   ],
+   "answer": 0,
+   "explain": "Chylomicrons are synthesized by intestinal enterocytes to transport exogenous (dietary) triacylglycerols and cholesteryl esters via lymph into the bloodstream. HDL is richest in protein and participates in reverse cholesterol transport.",
+   "verified": false,
+   "open": {
+    "q": "Which lipoprotein particle carries dietary triacylglycerols from the intestine into circulation?",
+    "accept": [
+     "chylomicron",
+     "chylomicrons"
+    ]
+   }
+  },
+  {
+   "id": "bc-chemistry-of-biomolecules-040",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biomolecular Properties and Water",
+   "q": "Which non-covalent interaction drives nonpolar hydrocarbon chains together in an aqueous environment to exclude water?",
+   "options": [
+    "Hydrophobic effect",
+    "Covalent disulfide bonding",
+    "Ionic salt bridge",
+    "Phosphodiester bonding"
+   ],
+   "answer": 0,
+   "explain": "The hydrophobic effect is driven largely by the increase in entropy of surrounding water molecules when nonpolar groups cluster together, minimizing ordered water cages. It is a major force in protein folding and lipid bilayer assembly.",
+   "verified": false,
+   "open": {
+    "q": "What thermodynamic effect drives nonpolar molecules to cluster together in aqueous solution?",
+    "accept": [
+     "hydrophobic interaction",
+     "hydrophobic effect"
+    ]
+   }
+  }
+ ]
+}
