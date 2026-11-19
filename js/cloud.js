@@ -239,4 +239,112 @@
     } else if (a === "signup") {
       if (val("ac-name").length < 2) { C.err = "Enter the name to show on the leaderboard."; return repaint(); }
       if (!val("ac-class")) { C.err = "Choose your class."; return repaint(); }
-      if (!val("ac-email") || val("ac-pw").length < 6) { C.err = "Enter your email and a password of at least 6 characters."; return r
+      if (!val("ac-email") || val("ac-pw").length < 6) { C.err = "Enter your email and a password of at least 6 characters."; return repaint(); }
+      run(C.sb.auth.signUp({ email: val("ac-email"), password: val("ac-pw"), options: { emailRedirectTo: location.origin + location.pathname, data: { display_name: val("ac-name"), class_id: val("ac-class") } } }), function (r) {
+        if (!r.data.session) C.msg = "Account created. Check your email for a confirmation link, then sign in.";
+      });
+    } else if (a === "signout") { run(C.sb.auth.signOut(), function () { C.profile = null; C.user = null; }); }
+    else if (a === "psave") {
+      if (val("ac-name").length < 2) { C.err = "Enter a name of at least 2 characters."; return repaint(); }
+      run(C.sb.from("profiles").update({ display_name: val("ac-name"), class_id: val("ac-class") || null }).eq("id", C.user.id), function () {
+        C.profile.display_name = val("ac-name"); C.profile.class_id = val("ac-class") || null; C.msg = "Saved.";
+      });
+    } else if (a === "rclose") {
+      var qid = b.getAttribute("data-id"), st = b.getAttribute("data-v");
+      run(C.sb.from("question_reports").update({ status: st }).eq("question_id", qid).eq("status", "open"), function () {
+        C.reports.rows = C.reports.rows.filter(function (x) { return x.question_id !== qid; });
+        C.msg = "Report closed.";
+      });
+    } else if (a === "retryacc") { run(loadProfile().then(function () { return loadClasses(); }).then(function () { return flush(); }), null);
+    } else if (a === "forgot") { C.mode = "forgot"; C.err = ""; C.msg = ""; repaint();
+    } else if (a === "sendreset") {
+      var em = val("ac-email"); if (!em) { C.err = "Enter your email."; return repaint(); }
+      run(C.sb.auth.resetPasswordForEmail(em, { redirectTo: location.origin + location.pathname }), function () {
+        C.msg = "If that email has an account, a reset link is on its way. Check your spam folder too.";
+      });
+    } else if (a === "newpw") {
+      if (val("ac-pw").length < 6) { C.err = "Use a password of at least 6 characters."; return repaint(); }
+      if (val("ac-pw") !== val("ac-pw2")) { C.err = "The two passwords do not match."; return repaint(); }
+      run(C.sb.auth.updateUser({ password: val("ac-pw") }), function () { C.mode = "in"; C.msg = "Password changed. You are signed in."; });
+    } else if (a === "msearch") {
+      C.members.q = val("ms-q"); C.members.cls = val("ms-class"); C.members.confirm = null; C.members.loaded = false; C.members.loading = true; repaint(); loadMembers();
+    } else if (a === "msave") {
+      var mid = b.getAttribute("data-id"), mnm = val("mn-" + mid), mcl = val("mc-" + mid);
+      if (mnm.length < 2) { C.err = "A name needs at least 2 characters."; return repaint(); }
+      run(C.sb.from("profiles").update({ display_name: mnm, class_id: mcl || null }).eq("id", mid), function () {
+        var row = memberRow(mid); if (row) { row.display_name = mnm; row.class_id = mcl || null; }
+        C.msg = "Saved " + mnm + ".";
+      });
+    } else if (a === "mask") { C.members.confirm = { id: b.getAttribute("data-id"), kind: b.getAttribute("data-kind") }; repaint();
+    } else if (a === "mno") { C.members.confirm = null; repaint();
+    } else if (a === "myes") {
+      var yid = b.getAttribute("data-id"), kind = b.getAttribute("data-kind");
+      C.members.confirm = null;
+      run(C.sb.rpc(kind === "remove" ? "admin_remove_member" : "admin_clear_points", { p_id: yid }), function () {
+        if (kind === "remove") C.members.rows = C.members.rows.filter(function (x) { return x.user_id !== yid; });
+        else { var r2 = memberRow(yid); if (r2) { r2.points = 0; r2.answers_total = 0; } }
+        C.msg = kind === "remove" ? "Member removed." : "Scores reset.";
+      });
+    } else if (a === "qsync") {
+      var ids = DX.questions.map(function (x) { return String(x.id); });
+      run(C.sb.rpc("sync_question_ids", { p_ids: ids }), function (r) {
+        C.msg = "Synced. " + (r && typeof r.data === "number" ? r.data : ids.length) + " questions are now counted on the leaderboards.";
+      });
+    } else if (a === "clsave") {
+      var id = b.getAttribute("data-id"), nm = val("cn-" + id);
+      run(C.sb.from("classes").update({ name: nm }).eq("id", id), function () {
+        DX.curriculum.classes.forEach(function (k) { if (k.id === id) k.name = nm; });
+        C.msg = "Class name saved.";
+      });
+    }
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter" || !e.target || !e.target.id) return;
+    var map = { "ms-q": "msearch", "ac-pw": null };
+    if (e.target.id === "ms-q") { var bt = document.querySelector('[data-act="msearch"]'); if (bt) bt.click(); }
+  });
+  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
+
+  /* ---------- leaderboards ---------- */
+  function loadBoard() {
+    var B = C.board; B.error = "";
+    Promise.all([C.sb.rpc("student_leaderboard", { p_days: B.days, p_class: B.cls || null }), C.sb.rpc("class_leaderboard", { p_days: B.days })]).then(function (r) {
+      var er = r[0].error || r[1].error;
+      if (er) { B.error = C.isDown(er) ? DOWN : "Could not load the leaderboards. If this is the first time, the database setup may not have been run."; B.down = C.isDown(er); } else B.down = false;
+      B.students = r[0].data || []; B.classes = r[1].data || []; B.loaded = true; repaint();
+    }).catch(function () { B.error = DOWN; B.down = true; B.loaded = true; repaint(); });
+  }
+  function boardView() {
+    var B = C.board;
+    if (!C.ok) return '<div class="wrap stack"><h1>Leaderboards</h1><p class="lede">Leaderboards could not load. Check your connection and refresh.</p></div>';
+    if (!C.user) return '<div class="wrap stack"><header><p class="eyebrow">Leaderboards</p><h1>Sign in to see the leaderboards</h1><p class="lede">Create a free account, pick your class, and your practice counts for it.</p></header><a class="btn primary" href="#account" style="text-decoration:none;align-self:flex-start">Sign in or create an account</a></div>';
+    var periods = [[7, "This week"], [30, "This month"], [0, "All time"]].map(function (p) {
+      return '<button class="btn small' + (B.days === p[0] ? " primary" : "") + '" data-act="days" data-v="' + p[0] + '">' + p[1] + '</button>';
+    }).join("");
+    var cls = '<label class="label" for="bd-class">Students from</label><select id="bd-class" data-bd="cls"><option value="">All classes</option>' + DX.curriculum.classes.map(function (c) {
+      return '<option value="' + c.id + '"' + (B.cls === c.id ? " selected" : "") + '>' + esc(c.label + (c.name ? " · " + c.name : "")) + '</option>';
+    }).join("") + '</select>';
+    var rows = function (list, fn) { return list.length ? list.map(fn).join("") : '<p class="muted">Nothing here yet. Answer some practice questions to get on the board.</p>'; };
+    var cl = rows(B.classes, function (x, i) {
+      return '<div class="r' + (i === 0 ? " first" : "") + '"><span class="pos">' + (i + 1) + '</span><span class="nm">' + esc(classLabel(x.class_id)) + ' <span class="muted">· ' + x.players + ' player' + (x.players === 1 ? "" : "s") + '</span></span><span class="pt">' + x.per_player + '</span></div>';
+    });
+    var st = rows(B.students, function (x, i) {
+      return '<div class="r' + (i === 0 ? " first" : "") + '"><span class="pos">' + (i + 1) + '</span><span class="nm">' + esc(x.display_name) + ' <span class="muted">· ' + esc(classLabel(x.class_id)) + '</span></span><span class="pt">' + x.points + '</span></div>';
+    });
+    return '<div class="wrap stack"><header><p class="eyebrow">Leaderboards</p><h1>Who is drilling</h1><p class="lede">Points are different questions answered correctly. Repeating a question does not add points.</p></header>' +
+      '<div class="row tight">' + periods + '</div>' + (B.error ? '<p class="note bad">' + esc(B.error) + '</p>' + (B.down ? '<div class="row tight"><button class="btn small" data-act="retry">Try again</button></div>' : "") : "") +
+      '<section class="section"><h2>Classes</h2><p class="hint">Average points per player, so a bigger class has no advantage.</p><div class="rank">' + (B.loaded ? cl : '<p class="muted">Loading…</p>') + '</div></section>' +
+      '<section class="section"><h2>Students</h2><div class="field">' + cls + '</div><div class="rank">' + (B.loaded ? st : '<p class="muted">Loading…</p>') + '</div></section></div>';
+  }
+  DX.board = {
+    render: function (a) { app = a; a.innerHTML = boardView(); if (C.ok && C.user && !C.board.loaded) loadBoard(); },
+    onClick: function (e) {
+      var rt = e.target.closest('[data-act="retry"]'); if (rt) { C.board.loaded = false; C.board.error = ""; repaint(); loadBoard(); return; }
+      var b = e.target.closest('[data-act="days"]'); if (!b) return;
+      C.board.days = parseInt(b.getAttribute("data-v"), 10); C.board.loaded = false; repaint(); loadBoard();
+    },
+    onInput: function (e) { if (e.target.getAttribute("data-bd") === "cls") { C.board.cls = e.target.value; C.board.loaded = false; repaint(); loadBoard(); } },
+    leave: function () { C.board.loaded = false; },
+    onKey: function () { }
+  };
+})();
