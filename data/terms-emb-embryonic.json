@@ -1,0 +1,140 @@
+{
+ "terms": [
+  {
+   "topic": "emb-embryonic",
+   "sub": "Period of Organogenesis Overview",
+   "term": "Organogenesis",
+   "clues": [
+    "The critical developmental window spanning weeks 4 through 8 after fertilization.",
+    "During this period, the three germ layers differentiate into all major tissues and organ primordia.",
+    "Embryos are maximally susceptible to major structural birth defects from teratogens during this time."
+   ],
+   "forbidden": [
+    "weeks 4",
+    "weeks 8",
+    "embryonic",
+    "organ",
+    "teratogen"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Paraxial Mesoderm and Somites",
+   "term": "Somite",
+   "clues": [
+    "Paired, segmentally arranged blocks of paraxial mesoderm flanking the neural tube and notochord.",
+    "They appear in a craniocaudal sequence starting around day 20 and are used to estimate embryonic age.",
+    "Each block differentiates into a sclerotome, myotome, and dermatome."
+   ],
+   "forbidden": [
+    "paraxial",
+    "sclerotome",
+    "myotome",
+    "dermatome",
+    "vertebrae"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Paraxial Mesoderm and Somites",
+   "term": "Sclerotome",
+   "clues": [
+    "The ventromedial portion of each somite that undergoes epithelial-to-mesenchymal transition.",
+    "Its mesenchymal cells migrate around the notochord and neural tube.",
+    "Through resegmentation, it forms the vertebral bodies, neural arches, and ribs."
+   ],
+   "forbidden": [
+    "somite",
+    "vertebra",
+    "rib",
+    "myotome",
+    "dermatome"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Embryonic Folding (Week 4)",
+   "term": "Vitelline duct",
+   "clues": [
+    "A narrow endoderm-lined channel pinched off during lateral embryonic folding in week 4.",
+    "It connects the midgut loop to the umbilical vesicle (yolk sac) within the umbilical cord.",
+    "Failure of its proximal intra-abdominal portion to obliterate results in Meckel diverticulum."
+   ],
+   "forbidden": [
+    "omphalomesenteric",
+    "Meckel",
+    "yolk sac",
+    "midgut",
+    "diverticulum"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Embryonic Folding (Week 4)",
+   "term": "Gastroschisis",
+   "clues": [
+    "A congenital ventral abdominal wall defect typically located just to the right of a normally inserted umbilical cord.",
+    "It results from incomplete lateral body wall folding during week 4.",
+    "Unlike omphalocele, the herniated bowel loops lack a covering peritoneal or amniotic sac."
+   ],
+   "forbidden": [
+    "omphalocele",
+    "sac",
+    "herniation",
+    "abdominal wall",
+    "umbilicus"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Limb Bud Development",
+   "term": "Apical ectodermal ridge",
+   "clues": [
+    "A specialized thickened strip of epithelium along the distal margin of each emerging limb bud.",
+    "It secretes fibroblast growth factors (FGF4 and FGF8) to keep underlying mesenchymal cells proliferating.",
+    "It controls proximodistal outgrowth of the limb from stylopod to autopod."
+   ],
+   "forbidden": [
+    "AER",
+    "limb bud",
+    "FGF",
+    "proximodistal",
+    "ectoderm"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Limb Bud Development",
+   "term": "Zone of polarizing activity",
+   "clues": [
+    "A small cluster of mesenchymal cells located at the posterior base of a developing limb bud.",
+    "It secretes a morphogen gradient of Sonic hedgehog (SHH) protein.",
+    "It specifies the anteroposterior axis of the hand and foot from thumb to little finger."
+   ],
+   "forbidden": [
+    "ZPA",
+    "Sonic hedgehog",
+    "SHH",
+    "anteroposterior",
+    "digit"
+   ]
+  },
+  {
+   "topic": "emb-embryonic",
+   "sub": "Week-by-Week External Landmarks",
+   "term": "Crown-rump length",
+   "clues": [
+    "A standard biometric linear measurement obtained during first-trimester obstetric ultrasound.",
+    "It measures the distance from the top of the embryonic head to the midpoint of the buttocks.",
+    "It provides the most accurate estimate of gestational age between weeks 7 and 14."
+   ],
+   "forbidden": [
+    "CRL",
+    "ultrasound",
+    "measurement",
+    "gestational age",
+    "buttocks"
+   ]
+  }
+ ]
+}
