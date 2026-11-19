@@ -18,6 +18,8 @@
     if (/Invalid login/i.test(m)) return "That email and password do not match.";
     if (/already registered|already been registered/i.test(m)) return "That email already has an account. Use Sign in.";
     if (/Password should/i.test(m)) return "Use a password of at least 6 characters.";
+    if (/sync_question_ids|schema cache/i.test(m)) return "The database needs the latest update. Run supabase/update-1.sql in Supabase, then try again.";
+    if (/not allowed/i.test(m)) return "Only the admin can do that.";
     if (/rate limit/i.test(m)) return "Too many attempts. Wait a few minutes and try again.";
     if (/fetch|network/i.test(m)) return "Could not reach the server. Check your connection.";
     return m;
@@ -62,11 +64,13 @@
     var batch = q.slice(0, 200);
     return C.sb.from("answers").insert(batch.map(function (x) { return { question_id: x.id, correct: x.ok }; })).then(function (r) {
       if (!r.error) DX.store.set("dx.pending", q.slice(batch.length));
+      else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.pending", []);   /* over the daily cap: do not retry forever */
     }).catch(function () { });
   }
   C.submit = function (items) {
     if (!C.ok) return;
-    var q = queue().concat(items.map(function (x) { return { id: String(x.id), ok: !!x.ok }; }));
+    var q = queue().concat(items.map(function (x) { return { id: String(x.id), ok: !!x.ok }; })), seen = Object.create(null);
+    q = q.filter(function (x) { var k = x.id + "|" + x.ok; if (seen[k]) return false; seen[k] = 1; return true; });   /* one row per question and result is enough for points */
     DX.store.set("dx.pending", q.slice(-500));
     flush();
   };
@@ -144,6 +148,10 @@
           '<button class="btn small" data-act="clsave" data-id="' + c.id + '">Save</button></div>';
       }).join("") + '</section>';
     }
+    if (p.is_admin) {
+      admin += '<section class="section stack"><h2>Admin: question list</h2><p class="hint">Only questions on this list count towards leaderboards. After you upload new questions to GitHub and the site has updated, open the site and press this once.</p>' +
+        '<div class="row tight"><button class="btn small primary" data-act="qsync"' + (C.busy ? " disabled" : "") + '>Sync ' + DX.questions.length + ' questions</button></div></section>';
+    }
     return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + esc(p.display_name || "Your account") + '</h1><p class="lede">' + esc(C.user.email || "") + (p.is_admin ? " · admin" : "") + '</p></header>' + note +
       '<section class="section stack"><div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" value="' + esc(p.display_name) + '"></div>' +
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
@@ -183,6 +191,11 @@
       run(C.sb.from("question_reports").update({ status: st }).eq("question_id", qid).eq("status", "open"), function () {
         C.reports.rows = C.reports.rows.filter(function (x) { return x.question_id !== qid; });
         C.msg = "Report closed.";
+      });
+    } else if (a === "qsync") {
+      var ids = DX.questions.map(function (x) { return String(x.id); });
+      run(C.sb.rpc("sync_question_ids", { p_ids: ids }), function (r) {
+        C.msg = "Synced. " + (r && typeof r.data === "number" ? r.data : ids.length) + " questions are now counted on the leaderboards.";
       });
     } else if (a === "clsave") {
       var id = b.getAttribute("data-id"), nm = val("cn-" + id);
