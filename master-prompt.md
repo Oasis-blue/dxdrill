@@ -8,13 +8,14 @@ How to use it:
 
 --------------------------------------------------------------------
 
-You are writing exam questions for Nigerian MBBS students. Output must be one JSON object that a website loads directly, so follow the format exactly.
+You are writing exam questions for Nigerian MBBS students aligned with the MDCN curriculum. Output must be one JSON object that a website loads directly, so follow the format and rules below strictly.
 
-SOURCE RULES
-- Take every fact from the SOURCE NOTES I paste below. Do not add facts, numbers or values that are not in the notes. If the notes are unclear or look wrong, skip that fact and do not guess.
-- If the notes and a standard textbook differ, follow the notes.
-- Write each question about one clear fact. Cover each important fact once. Do not repeat questions.
-- Skip trivia (names of slide authors, figure numbers, years) unless the notes stress it.
+SOURCE RULES (CURRICULUM MODE)
+- Use `topic-ids.txt` and `curriculum.json` in your knowledge base to verify the exact TOPIC ID, subject, and subtopics.
+- Generate high-yield, medically accurate questions aligned with Nigerian MBBS / MDCN preclinical and clinical standards (FirstMB / SecondMB / Finals).
+- Focus on core mechanisms, anatomical relationships, biochemical pathways, pathology, and clinical correlations.
+- Write each question about one clear fact. Cover each important concept once. Do not repeat questions.
+- Skip obscure trivia (names of slide authors, figure numbers, years) unless clinically essential.
 
 OUTPUT FORMAT
 Reply with one JSON code block and nothing before or after it. The object has this shape:
@@ -25,7 +26,7 @@ Reply with one JSON code block and nothing before or after it. The object has th
     {
       "id": "q1",
       "level": 1,
-      "sub": "Section or chapter heading from the notes",
+      "sub": "Section or chapter heading",
       "q": "The question text.",
       "options": ["Correct answer", "Wrong answer", "Wrong answer", "Wrong answer"],
       "answer": 0,
@@ -42,25 +43,22 @@ RULES FOR EACH QUESTION
 1. Exactly 4 options and exactly 1 correct answer. "answer" is the position of the correct option counting from 0. Spread the correct answers across positions 0, 1, 2 and 3.
 2. Wrong options must be believable: the same kind of thing as the right answer (other drugs, other values, other structures). Never use "all of the above", "none of the above" or "both A and B".
 3. "level": 1 for recall, 2 for understanding or applying a mechanism, 3 for a short clinical scenario. Make about 20% of questions level 2 or 3.
-4. "explain": say why the answer is right. Add a short note on a common wrong choice where it helps. Do not copy long sentences from the notes.
-5. "open.q" must stand on its own. It must never say "which of the following", "the options", "above", "below" or "except". Example: instead of "Which of the following cells secrete renin?" write "Which cells secrete renin?".
+4. "explain": say why the answer is right. Add a short note on a common wrong choice where it helps.
+5. "open.q" must stand on its own. It must never say "which of the following", "the options", "above", "below" or "except".
 6. "open.accept": 2 to 5 other answers a marker should accept (abbreviations, synonyms, other correct spellings). Do not put the main answer in it again.
-7. Some questions only work with options (for example "Which of these is NOT a function of the kidney?" or ordering questions). For those, leave out "open" and add "optionsOnly": true.
-8. For list facts in the notes ("list the 5 functions of X"), write one question per item, such as "Which of these is a function of X?". Never write "list all".
+7. Some questions only work with options (for example "Which of these is NOT a function of X?" or ordering questions). For those, leave out "open" and add "optionsOnly": true.
+8. For list facts ("list the 5 functions of X"), write one question per item, such as "Which of these is a function of X?". Never write "list all".
 9. Use plain text only. No markdown, no line breaks inside strings, no numbering in options, no "A." or "B." in front of options. Use straight quote marks. Do not use trailing commas.
-10. Numbers and units must match the notes exactly.
 
 OPTIONAL SECOND BLOCK (only if I ask for "terms")
 For describe-it and explain-it games, write a second JSON object:
 
 { "terms": [ { "topic": "TOPIC ID", "sub": "heading", "term": "Renin", "clues": ["vague clue", "medium clue", "obvious clue"], "forbidden": ["word that must not be said", "another", "another"] } ] }
 
-Exactly 3 clues, vaguest first and easiest last. No clue may contain the term itself. List 4 to 6 forbidden words that someone explaining the term would naturally say. Choose terms that are single, well-known ideas from the notes.
+Exactly 3 clues, vaguest first and easiest last. No clue may contain the term itself. List 4 to 6 forbidden words that someone explaining the term would naturally say. Choose terms that are single, well-known ideas from the topic.
 
 TOPIC ID: (paste from topic-ids.txt, for example phys-skin)
 HOW MANY QUESTIONS: (for example 20)
 ALSO WRITE TERMS: (yes or no)
-SOURCE NOTES:
-(paste your notes here)
 
 --------------------------------------------------------------------
