@@ -34,6 +34,7 @@
     board: DX.board,
     polls: DX.polls,
     about: DX.about,
+    competitions: DX.comps,
     account: DX.account
   };
 
