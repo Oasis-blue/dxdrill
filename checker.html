@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DxDrill checker</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+textarea{width:100%;min-height:240px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;padding:12px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg)}
+.msg{margin:4px 0;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);overflow-wrap:anywhere}
+.msg.err{border-color:var(--bad);color:var(--bad)} .msg.warn{border-color:var(--warn);color:var(--warn)} .msg.ok{border-color:var(--good);color:var(--good)}
+.pv{border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--surface);margin:8px 0}
+.pv .c{color:var(--good);font-weight:600} code{background:var(--surface2);padding:1px 5px;border-radius:5px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+</style>
+</head>
+<body>
+<main class="gutter"><div class="wrap stack" style="padding:24px 0 48px">
+<header><p class="eyebrow">DxDrill tools</p><h1>Question checker</h1>
+<p class="lede">Paste what the other AI gave you (a questions file or a terms file). This page checks it, fixes the small things, gives every question a fresh id, and lets you download files that are ready to upload to GitHub.</p></header>
+<section class="section stack">
+<div class="field"><label class="label" for="inp">Paste the AI's JSON here</label><textarea id="inp" spellcheck="false" placeholder='{ "topic": "phys-skin", "questions": [ ... ] }'></textarea></div>
+<div class="grid2">
+<div class="field"><label class="label" for="pre">Id prefix for new questions</label><input id="pre" type="text" placeholder="chosen from the topic id"></div>
+<div class="field"><label class="label" for="tf">Terms file name (terms only)</label><input id="tf" type="text" placeholder="terms-renal"></div>
+</div>
+<label class="checkline"><input type="checkbox" id="merge" checked><span>Add to the topic's existing file if there is one (recommended)</span></label>
+<div class="row tight"><button class="btn primary" id="go" type="button">Check it</button><a class="btn ghost" href="index.html" style="text-decoration:none">Back to DxDrill</a></div>
+</section>
+<section id="out" class="stack" aria-live="polite"></section>
+</div></main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var E = { cur: null, man: null, ids: {}, texts: {}, files: {}, termsFiles: {}, terms: {} };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function J(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u + " " + r.status); return r.json(); }); }
+  function norm(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
+
+  var ready = J("data/curriculum.json").then(function (c) {
+    E.cur = c; E.topics = {};
+    c.subjects.forEach(function (s) { s.areas.forEach(function (a) { a.topics.forEach(function (t) { E.topics[t.id] = t.name; }); }); });
+    return J("data/manifest.json");
+  }).then(function (m) {
+    E.man = m;
+    var jobs = (m.questions || []).map(function (f) {
+      return J("data/questions/" + f + ".json").then(function (d) {
+        E.files[d.topic] = { name: f, data: d };
+        d.questions.forEach(function (q) { E.ids[q.id] = f; E.texts[norm(q.q)] = 1; });
+      }).catch(function () { });
+    }).concat((m.terms || []).map(function (f) {
+      return J("data/" + f + ".json").then(function (d) {
+        E.termsFiles[f] = d; d.terms.forEach(function (t) { E.terms[norm(t.term)] = f; });
+      }).catch(function () { });
+    }));
+    return Promise.all(jobs);
+  });
+
+  function parse(text) {
+    var t = text.trim().replace(/^```[a-z]*\s*/i, "").replace(/```\s*$/i, "");
+    var a = t.indexOf("{"), b = t.lastIndexOf("}");
+    if (a < 0 || b < 0) throw new Error("No JSON object found. Paste the whole block, from { to }.");
+    t = t.slice(a, b + 1).replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/,\s*([}\]])/g, "$1");
+    try { return JSON.parse(t); } catch (e) {
+      var m = /position (\d+)/.exec(e.message), hint = "";
+      if (m) { var p = +m[1]; hint = ' Near: "…' + t.slice(Math.max(0, p - 40), p + 40).replace(/\s+/g, " ") + '…"'; }
+      throw new Error("The JSON is broken (" + e.message + ")." + hint + " Ask the AI to resend it, complete and as one JSON block.");
+    }
+  }
+
+  var NEEDS_OPTIONS = /\b(following|above|below|these options|none of the|all of the|which of these|except)\b/i;
+  function checkQuestions(obj, o) {
+    var errs = [], warns = [], fixes = [], out = [];
+    var topic = obj.topic;
+    if (!topic || !E.topics[topic]) errs.push("Topic id <code>" + esc(topic) + "</code> is not in the curriculum. Use an id from the topic list, or ask Claude to add the topic.");
+    if (!Array.isArray(obj.questions) || !obj.questions.length) errs.push("There is no questions list.");
+    if (errs.length) return { errs: errs, warns: warns, fixes: fixes };
+    var existing = E.files[topic], seenText = {}, skipped = 0, pos = [0, 0, 0, 0, 0, 0];
+    // numbering for new ids
+    var prefix = o.prefix || (existing && existing.data.questions[0] ? existing.data.questions[0].id.replace(/-?\d+$/, "") : topic);
+    var maxN = 0, re = new RegExp("^" + prefix.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "-(\\d+)$");
+    Object.keys(E.ids).forEach(function (id) { var m = re.exec(id); if (m) maxN = Math.max(maxN, +m[1]); });
+    var n = maxN;
+    obj.questions.forEach(function (q0, i) {
+      var tag = "Question " + (i + 1), q = {}, bad = false;
+      function er(m) { errs.push(tag + ": " + m); bad = true; }
+      function sv(x) { return typeof x === "string" ? x.replace(/\s+/g, " ").trim() : ""; }
+      q.q = sv(q0.q); if (!q.q) er("the question text is missing.");
+      var opts = Array.isArray(q0.options) ? q0.options.map(sv) : [];
+      var stripped = opts.map(function (x) { return x.replace(/^[A-Fa-f][\.\)]\s+/, ""); });
+      if (stripped.join("|") !== opts.join("|")) { opts = stripped; fixes.push(tag + ": removed A. B. C. letters from the options."); }
+      if (opts.length < 3 || opts.length > 6) er("needs 3 to 6 options (found " + opts.length + ").");
+      else if (opts.length !== 4) warns.push(tag + ": has " + opts.length + " options, the usual is 4.");
+      if (opts.some(function (x) { return !x; })) er("an option is empty.");
+      var set = {}; opts.forEach(function (x) { set[norm(x)] = 1; });
+      if (Object.keys(set).length !== opts.length) er("two options are the same.");
+      var ans = q0.answer;
+      if (typeof ans === "string") {
+        var s = ans.trim();
+        if (/^[A-Fa-f]$/.test(s)) { ans = s.toUpperCase().charCodeAt(0) - 65; fixes.push(tag + ": answer letter turned into a position."); }
+        else { var ix = opts.map(norm).indexOf(norm(s)); if (ix >= 0) { ans = ix; fixes.push(tag + ": answer text turned into a position."); } else if (/^\d+$/.test(s)) ans = +s; }
+      }
+      if (typeof ans !== "number" || ans < 0 || ans >= opts.length || ans % 1) er("the answer must be the position of the correct option, counting from 0.");
+      q.explain = sv(q0.explain); if (!q.explain) er("the explanation is missing.");
+      q.sub = sv(q0.sub); if (!q.sub) { q.sub = E.topics[topic]; warns.push(tag + ": no section name, used the topic name."); }
+      var lv = q0.level; if (lv !== 1 && lv !== 2 && lv !== 3) { lv = 1; warns.push(tag + ": level should be 1, 2 or 3. Set to 1."); }
+      var open = null, optOnly = !!q0.optionsOnly;
+      if (q0.open && typeof q0.open === "object") {
+        var os = sv(q0.open.q), ac = (Array.isArray(q0.open.accept) ? q0.open.accept : []).map(sv).filter(Boolean);
+        if (!os) { optOnly = true; warns.push(tag + ": empty no-options question, marked options-only."); }
+        else if (NEEDS_OPTIONS.test(os)) er("the no-options wording refers to options (“" + os.slice(0, 60) + "…”). Reword it, or make the question options-only.");
+        else {
+          if (!ac.length) warns.push(tag + ": no accepted alternatives for the no-options version.");
+          open = { q: os, accept: ac.filter(function (x, k) { return ac.indexOf(x) === k; }) };
+          if (sv(q0.open.a)) open.a = sv(q0.open.a);
+        }
+      } else if (!optOnly) { optOnly = true; warns.push(tag + ": no no-options version, marked options-only."); }
+      if (!bad) {
+        var key = norm(q.q);
+        if (E.texts[key] || seenText[key]) { skipped++; warns.push(tag + ": the same question already exists. Skipped."); return; }
+        seenText[key] = 1;
+        pos[ans]++;
+        var id = o.renumber ? prefix + "-" + ("00" + (++n)).slice(-3) : sv(q0.id);
+        if (!o.renumber && (!id || E.ids[id])) { er("id “" + id + "” is missing or already used."); return; }
+        var nq = { id: id, type: "mcq", level: lv, sub: q.sub, q: q.q, options: opts, answer: ans, explain: q.explain, verified: false };
+        if (optOnly) nq.optionsOnly = true; else nq.open = open;
+        out.push(nq);
+      }
+    });
+    if (out.length >= 8) {
+      var top = Math.max.apply(null, pos);
+      if (top / out.length >= 0.6) warns.push("Over 60% of the correct answers are in the same position. Students will notice. (DxDrill shuffles options when it shows them, so this is only a warning.)");
+    }
+    if (o.renumber) fixes.push("New questions were numbered " + prefix + "-" + ("00" + (maxN + 1)).slice(-3) + " onwards.");
+    return { errs: errs, warns: warns, fixes: fixes, topic: topic, out: out, skipped: skipped, existing: existing, prefix: prefix };
+  }
+
+  function checkTerms(obj) {
+    var errs = [], warns = [], fixes = [], out = [];
+    if (!Array.isArray(obj.terms) || !obj.terms.length) return { errs: ["There is no terms list."], warns: warns, fixes: fixes };
+    obj.terms.forEach(function (t, i) {
+      var tag = "Term " + (i + 1), bad = false;
+      function er(m) { errs.push(tag + ": " + m); bad = true; }
+      var term = typeof t.term === "string" ? t.term.trim() : "";
+      if (!term) er("the term is missing.");
+      var topic = t.topic || obj.topic;
+      if (!E.topics[topic]) er("topic id “" + esc(topic) + "” is not in the curriculum.");
+      var clues = Array.isArray(t.clues) ? t.clues.map(function (c) { return String(c).trim(); }).filter(Boolean) : [];
+      if (clues.length !== 3) er("needs exactly 3 clues, vague first and easiest last (found " + clues.length + ").");
+      if (term && clues.some(function (c) { return (" " + norm(c) + " ").indexOf(" " + norm(term) + " ") >= 0; })) er("a clue contains the term itself (“" + term + "”).");
+      var fb = Array.isArray(t.forbidden) ? t.forbidden.map(function (c) { return String(c).trim(); }).filter(Boolean) : [];
+      if (fb.length < 3) warns.push(tag + ": fewer than 3 forbidden words.");
+      if (term && E.terms[norm(term)]) { warns.push(tag + " (" + term + "): already exists. Skipped."); return; }
+      if (!bad) out.push({ topic: topic, sub: (t.sub || E.topics[topic] || "").toString().trim(), term: term, clues: clues, forbidden: fb });
+    });
+    return { errs: errs, warns: warns, fixes: fixes, terms: out };
+  }
+
+  function dl(name, text) {
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([text], { type: "application/json" })); a.download = name;
+    document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+  function list(arr, cls) { return arr.map(function (m) { return '<div class="msg ' + cls + '">' + (/<code>/.test(m) ? m : esc(m)) + '</div>'; }).join(""); }
+  var FILES = {};
+  window.dxdl = function (k) { dl(FILES[k].name, FILES[k].text); };
+
+  function show(r, kind) {
+    var h = "";
+    if (r.errs.length) h += '<h2>Fix these first</h2>' + list(r.errs, "err") + '<p class="muted">Copy this list back to the AI and say: “Fix these problems and resend the full JSON.”</p>';
+    if (r.warns.length) h += '<h2>Worth a look</h2>' + list(r.warns, "warn");
+    if (r.fixes && r.fixes.length) h += '<h2>Fixed for you</h2>' + list(r.fixes, "ok");
+    var good = kind === "q" ? (r.out || []) : (r.terms || []);
+    FILES = {};
+    if (!r.errs.length && good.length) {
+      var up = [];
+      if (kind === "q") {
+        var all = (r.existing && $("merge").checked) ? r.existing.data.questions.concat(r.out) : r.out;
+        var fname = r.existing ? r.existing.name : r.topic;
+        FILES.q = { name: fname + ".json", text: JSON.stringify({ topic: r.topic, questions: all }, null, 1) };
+        up.push("<code>data/questions/" + esc(fname) + ".json</code>");
+        h += '<div class="msg ok">' + r.out.length + ' new question' + (r.out.length === 1 ? "" : "s") + ' ready' + (r.skipped ? " (" + r.skipped + " skipped as duplicates)" : "") + (r.existing && $("merge").checked ? ", added to the " + r.existing.data.questions.length + " already in this topic" : "") + '. Total in the file: ' + all.length + '.</div>';
+        h += '<h2>Preview</h2>' + r.out.slice(0, 3).map(function (q) {
+          return '<div class="pv"><p class="label">' + esc(q.sub) + ' · level ' + q.level + ' · ' + esc(q.id) + '</p><p><b>' + esc(q.q) + '</b></p><ol type="A" style="margin:6px 0 6px 20px">' + q.options.map(function (o, i) { return '<li' + (i === q.answer ? ' class="c"' : "") + '>' + esc(o) + '</li>'; }).join("") + '</ol><p class="muted">' + esc(q.explain) + '</p>' +
+            (q.open ? '<p class="muted">No-options: ' + esc(q.open.q) + ' → also accept: ' + esc(q.open.accept.join(" · ")) + '</p>' : '<p class="muted">Options only</p>') + '</div>';
+        }).join("");
+        if (!r.existing) { E.man.questions = E.man.questions.concat([r.topic]); FILES.m = { name: "manifest.json", text: JSON.stringify(E.man, null, 1) }; up.push("<code>data/manifest.json</code>"); }
+      } else {
+        var tf = ($("tf").value.trim() || "terms-new").replace(/\.json$/i, "").replace(/[^A-Za-z0-9_-]/g, "-");
+        var old = E.termsFiles[tf], terms = (old ? old.terms : []).concat(r.terms);
+        FILES.t = { name: tf + ".json", text: JSON.stringify({ terms: terms }, null, 1) };
+        up.push("<code>data/" + esc(tf) + ".json</code>");
+        h += '<div class="msg ok">' + r.terms.length + ' new term' + (r.terms.length === 1 ? "" : "s") + ' ready. Total in the file: ' + terms.length + '.</div>';
+        if (E.man.terms.indexOf(tf) < 0) { E.man.terms = E.man.terms.concat([tf]); FILES.m = { name: "manifest.json", text: JSON.stringify(E.man, null, 1) }; up.push("<code>data/manifest.json</code>"); }
+      }
+      h += '<div class="row tight">' + Object.keys(FILES).map(function (k) { return '<button class="btn primary" type="button" onclick="dxdl(\'' + k + '\')">Download ' + esc(FILES[k].name) + '</button>'; }).join("") + '</div>' +
+        '<p class="hint">Upload ' + up.join(" and ") + ' to GitHub in the same folders. The site updates in a couple of minutes. Questions stay marked “Unverified” until you check them against your notes.</p>';
+    } else if (!r.errs.length) h += '<div class="msg warn">Nothing new to add.</div>';
+    $("out").innerHTML = h;
+  }
+
+  $("go").addEventListener("click", function () {
+    $("out").innerHTML = '<p class="muted">Checking…</p>';
+    ready.then(function () {
+      var obj = parse($("inp").value);
+      var isTerms = Array.isArray(obj.terms) && !obj.questions;
+      var r = isTerms ? checkTerms(obj) : checkQuestions(obj, { prefix: $("pre").value.trim(), renumber: true });
+      show(r, isTerms ? "t" : "q");
+    }).catch(function (e) { $("out").innerHTML = '<div class="msg err">' + esc(e.message) + '</div>'; });
+  });
+})();
+</script>
+</body>
+</html>
