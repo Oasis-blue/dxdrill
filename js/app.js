@@ -35,6 +35,7 @@
     polls: DX.polls,
     about: DX.about,
     competitions: DX.comps,
+    live: DX.rooms,
     account: DX.account
   };
 
