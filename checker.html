@@ -22,7 +22,7 @@ textarea{width:100%;min-height:240px;font:13px/1.45 ui-monospace,Menlo,Consolas,
 <div class="field"><label class="label" for="inp">Paste the AI's JSON here</label><textarea id="inp" spellcheck="false" placeholder='{ "topic": "phys-skin", "questions": [ ... ] }'></textarea></div>
 <div class="grid2">
 <div class="field"><label class="label" for="pre">Id prefix for new questions</label><input id="pre" type="text" placeholder="chosen from the topic id"></div>
-<div class="field"><label class="label" for="tf">Terms file name (terms only)</label><input id="tf" type="text" placeholder="terms-renal"></div>
+<div class="field"><label class="label" for="tf">Terms file name (optional)</label><input id="tf" type="text" placeholder="leave empty to name by topic"></div>
 </div>
 <label class="checkline"><input type="checkbox" id="merge" checked><span>Add to the topic's existing file if there is one (recommended)</span></label>
 <div class="row tight"><button class="btn primary" id="go" type="button">Check it</button><a class="btn ghost" href="index.html" style="text-decoration:none">Back to DxDrill</a></div>
@@ -186,12 +186,25 @@ textarea{width:100%;min-height:240px;font:13px/1.45 ui-monospace,Menlo,Consolas,
         }).join("");
         if (!r.existing) { E.man.questions = E.man.questions.concat([r.topic]); FILES.m = { name: "manifest.json", text: JSON.stringify(E.man, null, 1) }; up.push("<code>data/manifest.json</code>"); }
       } else {
-        var tf = ($("tf").value.trim() || "terms-new").replace(/\.json$/i, "").replace(/[^A-Za-z0-9_-]/g, "-");
-        var old = E.termsFiles[tf], terms = (old ? old.terms : []).concat(r.terms);
-        FILES.t = { name: tf + ".json", text: JSON.stringify({ terms: terms }, null, 1) };
-        up.push("<code>data/" + esc(tf) + ".json</code>");
-        h += '<div class="msg ok">' + r.terms.length + ' new term' + (r.terms.length === 1 ? "" : "s") + ' ready. Total in the file: ' + terms.length + '.</div>';
-        if (E.man.terms.indexOf(tf) < 0) { E.man.terms = E.man.terms.concat([tf]); FILES.m = { name: "manifest.json", text: JSON.stringify(E.man, null, 1) }; up.push("<code>data/manifest.json</code>"); }
+        /* Name each terms file after its topic (terms-<topic>), unless a file name was typed in the box. */
+        var custom = $("tf").value.trim().replace(/\.json$/i, "").replace(/[^A-Za-z0-9_-]/g, "-");
+        var groups = {}, order = [], newNames = [];
+        r.terms.forEach(function (t) {
+          var fn = custom || ("terms-" + t.topic);
+          if (!groups[fn]) { groups[fn] = []; order.push(fn); }
+          groups[fn].push(t);
+        });
+        order.forEach(function (fn) {
+          var old = E.termsFiles[fn], terms = (old ? old.terms : []).concat(groups[fn]);
+          FILES["t_" + fn] = { name: fn + ".json", text: JSON.stringify({ terms: terms }, null, 1) };
+          up.push("<code>data/" + esc(fn) + ".json</code>");
+          h += '<div class="msg ok">' + groups[fn].length + ' new term' + (groups[fn].length === 1 ? "" : "s") + ' for <code>' + esc(fn) + '.json</code>. Total in that file: ' + terms.length + '.</div>';
+          /* remember the new state, so a second batch in the same session builds on this one */
+          E.termsFiles[fn] = { terms: terms };
+          groups[fn].forEach(function (t) { E.terms[norm(t.term)] = fn; });
+          if (E.man.terms.indexOf(fn) < 0) newNames.push(fn);
+        });
+        if (newNames.length) { E.man.terms = E.man.terms.concat(newNames); FILES.m = { name: "manifest.json", text: JSON.stringify(E.man, null, 1) }; up.push("<code>data/manifest.json</code>"); }
       }
       h += '<div class="row tight">' + Object.keys(FILES).map(function (k) { return '<button class="btn primary" type="button" onclick="dxdl(\'' + k + '\')">Download ' + esc(FILES[k].name) + '</button>'; }).join("") + '</div>' +
         '<p class="hint">Upload ' + up.join(" and ") + ' to GitHub in the same folders. The site updates in a couple of minutes. Questions stay marked “Unverified” until you check them against your notes.</p>';
