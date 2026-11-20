@@ -2,7 +2,7 @@
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
 var VERSION = "dxdrill-v7.0";
 var SHELL = [
-  "./", "index.html", "manifest.webmanifest", "css/style.css",
+  "./", "index.html", "checker.html", "manifest.webmanifest", "css/style.css",
   "js/data.js", "js/practice.js", "js/hall.js", "js/cloud.js", "js/polls.js", "js/about.js", "js/comps.js", "js/rooms.js", "js/app.js",
   "data/curriculum.json", "data/manifest.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"
