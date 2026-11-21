@@ -27,8 +27,19 @@
       '</div>';
   }
 
+  /* Play: one place for flashcards, challenges and live quizzes. */
+  var PLAY = { competitions: "play", live: "play", cards: "play" };
+  function playHub(el) {
+    el.innerHTML = '<div class="wrap wide stack"><header><p class="eyebrow">Play</p><h1>Ways to play</h1><p class="lede">Study alone, race the whole school over a few days, or join a live quiz with a code.</p></header>' +
+      '<section class="cards">' +
+      '<article class="card"><h2>Flashcards</h2><p>Recall the answer before you look. Cards you miss come back soon, and cards you know come back later. Just for you, any time.</p><a class="btn primary" href="#cards" style="text-decoration:none">Open flashcards</a></article>' +
+      '<article class="card"><h2>Challenges</h2><p>A timed, ranked quiz that stays open for a few days. Play whenever suits you, one attempt. Results and class rankings appear when it closes.</p><a class="btn" href="#competitions" style="text-decoration:none">See challenges</a></article>' +
+      '<article class="card"><h2>Live quiz</h2><p>Everyone plays together, right now. Type the code from the host and answer on your phone. Faster right answers score more.</p><a class="btn" href="#live" style="text-decoration:none">Join a live quiz</a></article>' +
+      '</section></div>';
+  }
   var routes = {
     home: { render: home },
+    play: { render: playHub },
     practice: DX.practice,
     hall: DX.hall,
     board: DX.board,
@@ -44,10 +55,10 @@
     var h = (location.hash || "#home").slice(1);
     if (!routes[h]) {
       /* A menu page whose file did not load: say so, instead of silently showing Home. */
-      if (/^[a-z]+$/.test(h) && document.querySelector('[data-nav="' + h + '"]')) {
+      if (/^[a-z]+$/.test(h) && document.querySelector('[data-nav="' + (PLAY[h] || h) + '"]')) {
         if (current && current.leave) current.leave();
         current = null;
-        document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === h) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+        document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
         app.innerHTML = '<div class="wrap stack"><h1>This page did not load</h1><p class="lede">One of the site files is missing or out of date. Reload the page. If you still see this, the file js/' + h + '.js is missing from the site.</p></div>';
         return;
       }
@@ -56,7 +67,7 @@
     if (current && current.leave) current.leave();
     current = routes[h];
     document.querySelectorAll("[data-nav]").forEach(function (a) {
-      if (a.getAttribute("data-nav") === h) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+      if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
     current.render(app);
     window.scrollTo(0, 0);
