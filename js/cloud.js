@@ -79,6 +79,7 @@
     } catch (e) { return Promise.resolve(); }
     C.ok = true;
     checkClock();
+    if (DX.features) DX.features.load();
     C.sb.auth.onAuthStateChange(function (ev, session) {
       C.user = session ? session.user : null;
       F = {};
