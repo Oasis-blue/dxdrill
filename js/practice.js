@@ -194,6 +194,11 @@
     if (P.mode === "study" && it.pick !== null) return;
     it.pick = oi;
     var y = window.scrollY; render(); window.scrollTo(0, P.mode === "study" ? y : 0);
+    if (P.mode === "study" && DX.fx) {   /* a quick tick or shake, and a short sound */
+      var ok = oi === it.q.answer;
+      DX.fx.add(document.querySelector(ok ? ".opt.correct" : ".opt.wrong"), ok ? "fx-pop" : "fx-shake");
+      DX.fx.play(ok ? "ok" : "bad"); DX.fx.buzz(ok ? 15 : 40);
+    }
   }
   function next() {
     var r = P.run, it = r.items[r.i];
