@@ -35,17 +35,17 @@
       ["competitions", "Challenges", "A timed, ranked quiz that stays open for a few days. Play whenever suits you, one attempt. Results and class rankings appear when it closes.", "#competitions", "See challenges", false],
       ["live", "Live quiz", "Everyone plays together, right now. Type the code from the host and answer on your phone. Faster right answers score more.", "#live", "Join a live quiz", false],
       ["debates", "Debates", "Take a side on a claim, say why, and react to what your classmates think. Suggest topics too.", "#debates", "Join a debate", false]
-    ].filter(function (c) { return F.on(c[0]); });
+    ].filter(function (c) { return F.on(c[0]) || (c[0] === "live" && F.on("friends")); });
     el.innerHTML = '<div class="wrap wide stack"><header><p class="eyebrow">Play</p><h1>Ways to play</h1><p class="lede">Study alone, race the whole school over a few days, or join a live quiz with a code.</p></header>' +
       '<section class="cards">' + cards.map(function (c, i) {
-        return '<article class="card"><h2>' + c[1] + '</h2>' + (F.visibleToStudents(c[0]) ? "" : '<p><b>Hidden from students</b></p>') + '<p>' + c[2] + '</p><a class="btn' + (i === 0 ? " primary" : "") + '" href="' + c[3] + '" style="text-decoration:none">' + c[4] + '</a></article>';
+        return '<article class="card"><h2>' + c[1] + '</h2>' + (F.visibleToStudents(c[0]) || (c[0] === "live" && F.visibleToStudents("friends")) ? "" : '<p><b>Hidden from students</b></p>') + '<p>' + c[2] + '</p><a class="btn' + (i === 0 ? " primary" : "") + '" href="' + c[3] + '" style="text-decoration:none">' + c[4] + '</a></article>';
       }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Manage which features students can see</a></p>' : "") + '</div>';
   }
   var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
   function navVisibility() {
     var F = DX.features, polls = document.querySelector('[data-nav="polls"]'), play = document.querySelector('[data-nav="play"]');
     if (polls) polls.hidden = !F.on("polls");
-    if (play) play.hidden = !(F.on("cards") || F.on("competitions") || F.on("live") || F.on("debates"));
+    if (play) play.hidden = !(F.on("cards") || F.on("competitions") || F.on("live") || F.on("friends") || F.on("debates"));
   }
   var routes = {
     home: { render: home },
@@ -80,7 +80,7 @@
     }
     if (current && current.leave) current.leave();
     var gate = GATE[h];
-    if (gate && !DX.features.on(gate)) {
+    if (gate && !(DX.features.on(gate) || (h === "live" && DX.features.on("friends")))) {
       current = null;
       document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
       app.innerHTML = '<div class="wrap stack"><h1>Coming soon</h1><p class="lede">This is not open yet. Check back soon.</p><a class="btn primary" href="#home" style="text-decoration:none">Back home</a></div>';
