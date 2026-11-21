@@ -603,7 +603,7 @@
       case "rend": endRound(); break;
       case "tile":
         R.ti = i; R.ans = R.team; R.attempt = 0; R.phase = "q"; R.rev = false; R.timeup = false;
-        sfx("tile"); tmSet(R.c.secs, boardTimeup); tmStart(); paint(); break;
+        sfx("tile"); tmSet(R.c.secs, boardTimeup); tmStart(); paint(); if (window.DX.fx) DX.fx.add(app.firstElementChild, "fx-flipin"); break;
       case "bnext":
         if (R.tiles.some(function (x) { return x.st === "open"; })) { R.team = (R.team + 1) % H.teams.length; R.phase = "pick"; paint(); } else endRound();
         break;
