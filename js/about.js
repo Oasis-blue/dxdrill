@@ -10,6 +10,7 @@
       "When you make an account, DxDrill stores your email, the name you choose, and your class.",
       "It also stores which questions you answered, whether you got them right, and when. This is what builds the leaderboards.",
       "Your name and class appear on the leaderboards. Your email does not.",
+      "If you send feedback, the message is saved with your name and class, and only the admin can read it.",
       "Poll votes are counted per option. The site does not show anyone who voted for what.",
       "Your practice history and settings stay on your own device.",
       "Nothing is sold or shared for advertising. The site runs on GitHub Pages, and accounts and scores are kept in a Supabase database.",
