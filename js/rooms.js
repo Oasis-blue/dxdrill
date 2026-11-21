@@ -239,12 +239,12 @@
   }
   function render(a) {
     app = a; var c = C();
-    if (!c || !c.ok) { a.innerHTML = '<div class="wrap stack"><h1>Live</h1><p class="lede">Live rooms could not load. Check your connection and refresh.</p></div>'; return; }
-    if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Live</p><h1>Sign in to join</h1><p class="lede">Live quizzes run on your phone with a code from the host.</p></header><a class="btn primary" href="#account">Sign in</a></div>'; return; }
+    if (!c || !c.ok) { a.innerHTML = '<div class="wrap stack"><h1>Live quiz</h1><p class="lede">Live quizzes could not load. Check your connection and refresh.</p></div>'; return; }
+    if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Live quiz</p><h1>Sign in to join</h1><p class="lede">Live quizzes run on your phone with a code from the host.</p></header><a class="btn primary" href="#account">Sign in</a></div>'; return; }
     var note = R.err ? '<p class="note bad" role="alert">' + esc(R.err) + '</p>' : "", body, head = "";
     if (R.id && R.st) body = R.st.is_host ? hostHtml(R.st) : playerHtml(R.st);
     else if (R.id) body = '<p class="muted">Joining…</p>';
-    else { head = '<header><p class="eyebrow">Live</p><h1>Live rooms</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
+    else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
     a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
     ["lf-name", "lf-n", "lf-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
     var s0 = R.st;
