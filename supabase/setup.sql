@@ -1092,3 +1092,44 @@ revoke all on function public._room_tick(bigint) from public, anon, authenticate
 -- Lets the site tell a phone whose date or time is wrong (which makes sign-in fail straight away).
 create or replace function public.server_time() returns timestamptz language sql stable as $$ select now() $$;
 grant execute on function public.server_time() to anon, authenticated;
+
+-- ===== Update 7 (feedback box) =====
+  id         bigint generated always as identity primary key,
+  user_id    uuid not null references auth.users(id) on delete cascade,
+  page       text not null default '',
+  message    text not null check (char_length(message) between 5 and 1000),
+  created_at timestamptz not null default now()
+);
+alter table public.feedback enable row level security;
+revoke all on public.feedback from anon, authenticated;            -- only the functions below touch it
+
+create or replace function public.send_feedback(p_message text, p_page text default '') returns void
+language plpgsql security definer set search_path = public as $$
+declare m text := trim(coalesce(p_message, ''));
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  if char_length(m) < 5 then raise exception 'message too short'; end if;
+  if char_length(m) > 1000 then raise exception 'message too long'; end if;
+  if (select count(*) from public.feedback where user_id = auth.uid() and created_at > now() - interval '1 day') >= 5 then raise exception 'too many today'; end if;
+  insert into public.feedback (user_id, page, message) values (auth.uid(), left(coalesce(p_page, ''), 40), m);
+end $$;
+
+create or replace function public.admin_feedback(p_limit int default 100)
+returns table (id bigint, created_at timestamptz, display_name text, class_id text, page text, message text)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select f.id, f.created_at, p.display_name, p.class_id, f.page, f.message
+    from public.feedback f left join public.profiles p on p.id = f.user_id order by f.created_at desc limit least(greatest(p_limit, 1), 300);
+end $$;
+
+create or replace function public.admin_delete_feedback(p_id bigint) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.feedback where id = p_id;
+end $$;
+
+revoke all on function public.send_feedback(text, text), public.admin_feedback(int), public.admin_delete_feedback(bigint) from public, anon;
+grant execute on function public.send_feedback(text, text), public.admin_feedback(int), public.admin_delete_feedback(bigint) to authenticated;
+
