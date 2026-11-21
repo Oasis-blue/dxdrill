@@ -980,3 +980,115 @@ revoke all on function public.room_state(bigint), public.room_join(text), public
 grant execute on function public.room_state(bigint), public.room_join(text), public.room_answer(bigint, int, int), public.room_board(bigint),
   public.room_class_board(bigint), public.room_start(bigint), public.room_next(bigint), public.room_end(bigint), public.admin_delete_room(bigint),
   public.admin_create_room(text, text, int, int, text, text, jsonb) to authenticated;
+
+-- ===== Update 6 (get-ready lead-in, server clock) =====
+drop function if exists public.room_state(bigint);
+
+create or replace function public._room_tick(p_room bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; changed boolean := true; guard int := 0;
+begin
+  select * into r from public.rooms where id = p_room for update;
+  if not found then return; end if;
+  while changed and guard < 60 loop
+    changed := false; guard := guard + 1;
+    if r.status = 'question' and now() >= r.q_started_at + make_interval(secs => r.seconds_per_q) then
+      update public.rooms set status = 'reveal', reveal_at = r.q_started_at + make_interval(secs => r.seconds_per_q) where id = r.id returning * into r;
+      changed := true;
+    elsif r.status = 'reveal' and r.pace = 'auto' and now() >= r.reveal_at + interval '7 seconds' then
+      if r.cur_idx + 1 >= r.n_questions then
+        update public.rooms set status = 'finished' where id = r.id returning * into r;
+      else
+        update public.rooms set status = 'question', cur_idx = cur_idx + 1, q_started_at = r.reveal_at + interval '10 seconds' where id = r.id returning * into r;
+      end if;
+      changed := true;
+    end if;
+  end loop;
+end $$;
+
+create or replace function public.room_state(p_room bigint)
+returns table (room_id bigint, name text, pace text, sec int, n int, status text, cur_idx int, q_text text, q_options text[],
+               secs_left numeric, lead_left numeric, reveal_left numeric, players bigint, answered bigint, right_answer int, explain text,
+               my_choice int, my_points int, my_score int, my_rank bigint, option_counts int[], is_host boolean)
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; me int := null; isn boolean; qrow public.room_questions; mine public.room_answers; ps public.room_players;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if not found then raise exception 'room not found'; end if;
+  isn := (r.host_id = auth.uid());
+  select * into ps from public.room_players rp0 where rp0.room_id = r.id and rp0.user_id = auth.uid();
+  if not isn and not found and not public.is_admin() then raise exception 'not in room'; end if;
+  if r.cur_idx >= 0 then select * into qrow from public.room_questions where room_questions.room_id = r.id and idx = r.cur_idx; end if;
+  select * into mine from public.room_answers where room_answers.room_id = r.id and idx = r.cur_idx and user_id = auth.uid();
+  return query select r.id, r.name, r.pace, r.seconds_per_q, r.n_questions, r.status, r.cur_idx,
+    case when r.status in ('question','reveal') or (r.status = 'finished' and r.cur_idx >= 0) then qrow.q end,
+    case when r.status in ('question','reveal') or (r.status = 'finished' and r.cur_idx >= 0) then qrow.options end,
+    case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at + make_interval(secs => r.seconds_per_q) - now())))::numeric else 0::numeric end,
+    case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at - now())))::numeric else 0::numeric end,
+    case when r.status = 'reveal' and r.pace = 'auto' then greatest(0, 7 - extract(epoch from (now() - r.reveal_at)))::numeric else 0::numeric end,
+    (select count(*) from public.room_players rp where rp.room_id = r.id),
+    (select count(*) from public.room_answers ra where ra.room_id = r.id and ra.idx = r.cur_idx),
+    case when r.status in ('reveal','finished') then qrow.answer end,
+    case when r.status in ('reveal','finished') then qrow.explain end,
+    mine.choice,
+    case when r.status in ('reveal','finished') then mine.points end,
+    coalesce(ps.score, 0),
+    case when ps.user_id is not null then 1 + (select count(*) from public.room_players rp where rp.room_id = r.id and rp.score > ps.score) end,
+    case when r.status in ('reveal','finished') then (select array_agg(c order by g) from (
+        select g, count(a.user_id)::int as c from generate_series(0, 3) g
+        left join public.room_answers a on a.room_id = r.id and a.idx = r.cur_idx and a.choice = g group by g) s) end,
+    isn;
+end $$;
+
+create or replace function public.room_answer(p_room bigint, p_idx int, p_choice int) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; ans int; spent bigint; ok boolean; pts int;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if not found or r.status <> 'question' or r.cur_idx <> p_idx then return; end if;                 -- too late or stale: ignored
+  if not exists (select 1 from public.room_players where room_id = p_room and user_id = auth.uid()) then raise exception 'not in room'; end if;
+  if now() < r.q_started_at then return; end if;                                                    -- still in the get-ready lead-in
+  if now() > r.q_started_at + make_interval(secs => r.seconds_per_q) + interval '1 second' then return; end if;
+  select answer into ans from public.room_questions where room_id = p_room and idx = p_idx;
+  spent := least(r.seconds_per_q * 1000, greatest(0, (extract(epoch from (now() - r.q_started_at)) * 1000)::bigint));
+  ok := p_choice between 0 and 3 and p_choice = ans;
+  pts := case when ok then 500 + round(500 * greatest(0, 1 - spent / (r.seconds_per_q * 1000.0)))::int else 0 end;
+  insert into public.room_answers (room_id, idx, user_id, choice, correct, points, ms)
+    values (p_room, p_idx, auth.uid(), p_choice, ok, pts, spent) on conflict do nothing;       -- the first answer counts
+  if found then update public.room_players set score = score + pts where room_id = p_room and user_id = auth.uid(); end if;
+end $$;
+
+create or replace function public.room_start(p_room bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms;
+begin
+  r := public._room_host(p_room);
+  if r.status = 'lobby' then update public.rooms set status = 'question', cur_idx = 0, q_started_at = now() + interval '3 seconds' where id = r.id; end if;
+end $$;
+
+create or replace function public.room_next(p_room bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms;
+begin
+  r := public._room_host(p_room);
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if r.status = 'question' then
+    update public.rooms set status = 'reveal', reveal_at = greatest(now(), r.q_started_at) where id = r.id;
+  elsif r.status = 'reveal' then
+    if r.cur_idx + 1 >= r.n_questions then update public.rooms set status = 'finished' where id = r.id;
+    else update public.rooms set status = 'question', cur_idx = cur_idx + 1, q_started_at = now() + interval '3 seconds' where id = r.id; end if;
+  end if;
+end $$;
+
+revoke all on function public.room_state(bigint), public.room_answer(bigint, int, int), public.room_start(bigint), public.room_next(bigint) from public, anon;
+grant execute on function public.room_state(bigint), public.room_answer(bigint, int, int), public.room_start(bigint), public.room_next(bigint) to authenticated;
+revoke all on function public._room_tick(bigint) from public, anon, authenticated;
+
+-- Lets the site tell a phone whose date or time is wrong (which makes sign-in fail straight away).
+create or replace function public.server_time() returns timestamptz language sql stable as $$ select now() $$;
+grant execute on function public.server_time() to anon, authenticated;
