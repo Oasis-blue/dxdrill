@@ -1,0 +1,590 @@
+{
+ "topic": "pb-fluid-compartments",
+ "questions": [
+  {
+   "id": "pb-fluid-compartments-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Total Body Water and Distribution",
+   "q": "In a healthy 70 kg adult male, what is the approximate total body water (TBW) expressed as a percentage of body weight and in liters?",
+   "options": [
+    "60% of body weight (42 L)",
+    "40% of body weight (28 L)",
+    "20% of body weight (14 L)",
+    "75% of body weight (52.5 L)"
+   ],
+   "answer": 0,
+   "explain": "Total body water averages 60% of body weight in an adult male (0.60 x 70 kg = 42 L), divided into two-thirds intracellular fluid (28 L) and one-third extracellular fluid (14 L).",
+   "verified": false,
+   "open": {
+    "q": "State the normal total body water volume in liters and as a percentage of body weight for a standard 70 kg adult male.",
+    "accept": [
+     "42 liters or 60%",
+     "60%, 42 L",
+     "42 L (60% of body weight)"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Total Body Water and Distribution",
+   "q": "Why is total body water as a percentage of body weight lower in adult females (about 50%) than in adult males (about 60%)?",
+   "options": [
+    "Females have a larger plasma volume per kilogram",
+    "Females generally have a higher proportion of adipose tissue, which contains very little water",
+    "Females have higher skeletal muscle mass relative to total weight",
+    "Females secrete higher basal levels of aldosterone"
+   ],
+   "answer": 1,
+   "explain": "Adipose tissue is roughly 10% water compared to about 73% in lean skeletal muscle; because women typically have higher body fat percentages, their TBW averages 50% of body weight.",
+   "verified": false,
+   "open": {
+    "q": "Why does total body water account for a smaller percentage of body weight in adult females (~50%) than in adult males (~60%)?",
+    "accept": [
+     "Higher body fat percentage",
+     "Greater adipose tissue proportion",
+     "Adipose tissue contains very little water"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Total Body Water and Distribution",
+   "q": "Which population group has the highest total body water percentage relative to total body weight?",
+   "options": [
+    "Elderly men",
+    "Obese adults",
+    "Newborn infants",
+    "Postmenopausal women"
+   ],
+   "answer": 2,
+   "explain": "Newborn infants have a TBW of approximately 75% to 80% of body weight due to low body fat and relatively expanded extracellular fluid, whereas TBW declines to ~45-50% in old age.",
+   "verified": false,
+   "open": {
+    "q": "Which age group has the highest total body water as a percentage of body weight (approximately 75% to 80%)?",
+    "accept": [
+     "Neonates",
+     "Newborns",
+     "Infants"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Total Body Water and Distribution",
+   "q": "According to the 60-40-20 rule in a 70 kg adult male, how is the 14 L of extracellular fluid (ECF) partitioned between interstitial fluid and plasma?",
+   "options": [
+    "7 L interstitial fluid and 7 L plasma",
+    "3.5 L interstitial fluid and 10.5 L plasma",
+    "12 L interstitial fluid and 2 L plasma",
+    "10.5 L interstitial fluid and 3.5 L plasma"
+   ],
+   "answer": 3,
+   "explain": "Extracellular fluid (20% of body weight = 14 L) consists of roughly three-fourths interstitial fluid (15% of body weight = 10.5 L) and one-fourth intravascular plasma (5% of body weight = 3.5 L).",
+   "verified": false,
+   "open": {
+    "q": "In a 70 kg adult male with 14 L of extracellular fluid, how many liters are in the interstitial compartment versus the plasma compartment?",
+    "accept": [
+     "10.5 L interstitial fluid and 3.5 L plasma",
+     "Interstitial 10.5 L, plasma 3.5 L"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Total Body Water and Distribution",
+   "q": "Which fluid belongs to the transcellular fluid compartment?",
+   "options": [
+    "Cerebrospinal fluid",
+    "Blood plasma",
+    "Intracellular cytosol",
+    "Lymph inside the thoracic duct"
+   ],
+   "answer": 0,
+   "explain": "Transcellular fluids (about 1 to 2 L) are specialized extracellular fluids separated from plasma by an epithelial cell layer, including CSF, synovial, pleural, pericardial, peritoneal, and intraocular fluids.",
+   "verified": false,
+   "open": {
+    "q": "Give two examples of fluids that belong to the transcellular fluid compartment.",
+    "accept": [
+     "Cerebrospinal fluid and synovial fluid",
+     "CSF and pleural fluid",
+     "Peritoneal and pericardial fluid"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ionic Composition of Fluid Compartments",
+   "q": "What are the predominant cation and predominant anion in the extracellular fluid (ECF)?",
+   "options": [
+    "Potassium (K+) and organic phosphates",
+    "Sodium (Na+) and chloride (Cl-)",
+    "Magnesium (Mg2+) and proteins",
+    "Calcium (Ca2+) and sulfate (SO4^2-)"
+   ],
+   "answer": 1,
+   "explain": "ECF is rich in Na+ (~142 mEq/L) as its principal cation and Cl- (~103 mEq/L) followed by HCO3- (~24 mEq/L) as its main anions.",
+   "verified": false,
+   "open": {
+    "q": "Name the predominant cation and the predominant anion in human extracellular fluid.",
+    "accept": [
+     "Sodium and chloride",
+     "Na+ and Cl-"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-007",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ionic Composition of Fluid Compartments",
+   "q": "What are the predominant cation and major intracellular anions within the intracellular fluid (ICF)?",
+   "options": [
+    "Na+ and Cl-",
+    "Ca2+ and HCO3-",
+    "K+ and organic phosphates and proteins",
+    "Mg2+ and Cl-"
+   ],
+   "answer": 2,
+   "explain": "ICF contains high concentrations of K+ (~140-150 mEq/L) and Mg2+, balanced mainly by negatively charged organic phosphates (ATP, creatine phosphate) and intracellular proteins.",
+   "verified": false,
+   "open": {
+    "q": "Name the major cation and the two principal classes of anions found inside the intracellular fluid.",
+    "accept": [
+     "Potassium with organic phosphates and proteins",
+     "K+ and proteins/phosphates"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ionic Composition of Fluid Compartments",
+   "q": "How does the composition of interstitial fluid differ most significantly from that of blood plasma?",
+   "options": [
+    "Interstitial fluid has twice the sodium concentration of plasma",
+    "Interstitial fluid contains ten times more potassium than plasma",
+    "Interstitial fluid lacks glucose and urea",
+    "Interstitial fluid has a much lower protein concentration because capillary walls are largely impermeable to plasma proteins"
+   ],
+   "answer": 3,
+   "explain": "Capillary endothelium restricts large anionic plasma proteins (especially albumin), so plasma has ~7 g/dL protein while interstitial fluid has ~2 g/dL; consequently, via the Gibbs-Donnan effect, interstitial fluid has slightly higher Cl- and slightly lower Na+ than plasma.",
+   "verified": false,
+   "open": {
+    "q": "What is the main compositional difference between blood plasma and interstitial fluid?",
+    "accept": [
+     "Plasma has a much higher protein concentration",
+     "Interstitial fluid contains very little protein compared to plasma"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ionic Composition of Fluid Compartments",
+   "q": "Because anionic plasma proteins cannot freely cross the capillary wall, diffusible anions such as Cl- are slightly more concentrated in interstitial fluid than in plasma. Which physical principle accounts for this asymmetric ion distribution?",
+   "options": [
+    "Gibbs-Donnan equilibrium",
+    "Fick's first law",
+    "Poiseuille's law",
+    "Bohr effect"
+   ],
+   "answer": 0,
+   "explain": "The Gibbs-Donnan effect states that when a non-diffusible polyanion (plasma protein) is confined to one side of a semipermeable membrane, diffusible cations (Na+) are slightly higher on the protein side and diffusible anions (Cl-) are slightly higher on the protein-free side while maintaining electroneutrality.",
+   "verified": false,
+   "open": {
+    "q": "Name the electrochemical equilibrium phenomenon caused by non-diffusible plasma proteins that creates slight differences in Na+ and Cl- concentrations between plasma and interstitial fluid.",
+    "accept": [
+     "Gibbs-Donnan effect",
+     "Donnan equilibrium",
+     "Donnan effect"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "Which formula is used in the indicator-dilution principle to calculate the volume of a body fluid compartment?",
+   "options": [
+    "Volume = Final tracer concentration / Amount of tracer injected",
+    "Volume = (Amount of tracer injected - Amount excreted) / Equilibrium plasma concentration",
+    "Volume = Amount excreted x Equilibrium plasma concentration",
+    "Volume = (Initial concentration + Final concentration) / Amount injected"
+   ],
+   "answer": 1,
+   "explain": "By conservation of mass, V = (Q_administered - Q_excreted or metabolized) / C_equilibrium, provided the tracer distributes exclusively and uniformly within the target compartment.",
+   "verified": false,
+   "open": {
+    "q": "Write the indicator-dilution formula used to measure the volume of a body fluid compartment when some indicator is excreted during equilibration.",
+    "accept": [
+     "Volume = (Amount injected - Amount excreted) / Final concentration",
+     "V = (Q_in - Q_out) / C"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "Which set of indicator substances is suitable for measuring total body water (TBW)?",
+   "options": [
+    "Inulin, mannitol, and sucrose",
+    "Evans blue dye and I-125 labeled albumin",
+    "Tritiated water (3H2O), deuterium oxide (D2O), and antipyrine",
+    "Chromium-51 labeled red blood cells"
+   ],
+   "answer": 2,
+   "explain": "Tritiated water, heavy water (D2O), and lipid-soluble antipyrine cross both capillary walls and cell membranes freely to equilibrate throughout all water compartments.",
+   "verified": false,
+   "open": {
+    "q": "Name two tracer substances used to measure total body water by the indicator-dilution method.",
+    "accept": [
+     "Tritiated water and deuterium oxide",
+     "D2O and antipyrine",
+     "Heavy water and tritiated water"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "Which marker is classically used to measure extracellular fluid (ECF) volume because it crosses capillary endothelia but cannot enter cells?",
+   "options": [
+    "Antipyrine",
+    "Evans blue (T-1824)",
+    "Deuterium oxide (D2O)",
+    "Inulin"
+   ],
+   "answer": 3,
+   "explain": "Inulin (as well as mannitol, sucrose, and radiosulfate) diffuses freely across capillary pores into the interstitial space but is excluded by cell membranes, accurately measuring ECF volume.",
+   "verified": false,
+   "open": {
+    "q": "Name a standard indicator substance used to measure extracellular fluid volume.",
+    "accept": [
+     "Mannitol",
+     "Sucrose",
+     "Radiosulfate"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "Which indicator binds tightly to plasma albumin and therefore remains confined within the intravascular plasma compartment?",
+   "options": [
+    "Evans blue dye (T-1824)",
+    "Inulin",
+    "Tritiated water",
+    "Sucrose"
+   ],
+   "answer": 0,
+   "explain": "Evans blue dye binds avidly to serum albumin (or I-125 radioiodinated human serum albumin is used directly), restricting distribution to plasma.",
+   "verified": false,
+   "open": {
+    "q": "Name the dye that binds to plasma albumin to measure plasma volume via indicator dilution.",
+    "accept": [
+     "Evans blue",
+     "T-1824"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "Why cannot intracellular fluid (ICF) volume and interstitial fluid (ISF) volume be measured directly with a single injected indicator?",
+   "options": [
+    "Because tracers are immediately destroyed by plasma enzymes",
+    "Because no tracer enters cells without first traversing the extracellular and plasma spaces",
+    "Because ICF and ISF have identical protein concentrations",
+    "Because interstitial fluid does not exchange with plasma"
+   ],
+   "answer": 1,
+   "explain": "Any tracer injected into blood must pass through plasma and interstitial fluid before entering cells; hence ICF = TBW - ECF, and ISF = ECF - Plasma volume.",
+   "verified": false,
+   "open": {
+    "q": "How are intracellular fluid (ICF) volume and interstitial fluid (ISF) volume determined experimentally from measured compartment volumes?",
+    "accept": [
+     "ICF = TBW - ECF and ISF = ECF - Plasma volume",
+     "By subtraction: ICF equals TBW minus ECF, and ISF equals ECF minus plasma"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-015",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "A 70 kg patient has a measured plasma volume of 3.0 L and a venous hematocrit of 0.40 (40%). What is the patient's estimated total blood volume?",
+   "options": [
+    "4.2 L",
+    "7.5 L",
+    "5.0 L",
+    "1.2 L"
+   ],
+   "answer": 2,
+   "explain": "Total Blood Volume = Plasma Volume / (1 - Hematocrit) = 3.0 L / (1 - 0.40) = 3.0 / 0.60 = 5.0 L.",
+   "verified": false,
+   "open": {
+    "q": "Calculate total blood volume if plasma volume is 3.0 L and hematocrit is 40% (0.40).",
+    "accept": [
+     "5 liters",
+     "5.0 liters",
+     "5000 mL"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-016",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Measurement of Body Fluid Compartments",
+   "q": "In an indicator-dilution test, 150 mg of inulin is injected intravenously. After equilibration, 30 mg has been excreted in the urine and the plasma inulin concentration is 0.01 mg/mL. What is the extracellular fluid volume?",
+   "options": [
+    "15.0 L",
+    "3.0 L",
+    "18.0 L",
+    "12.0 L"
+   ],
+   "answer": 3,
+   "explain": "Remaining inulin = 150 mg - 30 mg = 120 mg. Volume = 120 mg / 0.01 mg/mL = 12,000 mL = 12.0 L.",
+   "verified": false,
+   "open": {
+    "q": "If 150 mg of inulin is injected, 30 mg is excreted in urine, and the equilibrium plasma concentration is 0.01 mg/mL, what is the extracellular fluid volume in liters?",
+    "accept": [
+     "12 L",
+     "12 liters",
+     "12,000 mL"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-017",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Osmolarity and Darrow-Yannet Shifts",
+   "q": "What is the normal plasma osmolarity in humans, and which solute accounts for nearly half of it?",
+   "options": [
+    "285 to 295 mOsm/L, with Na+ (and its accompanying anions) accounting for over 90% of effective osmoles",
+    "150 to 160 mOsm/L, with glucose accounting for 80%",
+    "400 to 420 mOsm/L, with albumin accounting for 70%",
+    "200 to 210 mOsm/L, with potassium accounting for 90%"
+   ],
+   "answer": 0,
+   "explain": "Normal plasma osmolarity is ~285-295 mOsm/L (estimated by 2[Na+] + Glucose/18 + BUN/2.8 in mg/dL); Na+ (~142 mEq/L) and its associated anions (Cl- and HCO3-) contribute roughly 280 mOsm/L.",
+   "verified": false,
+   "open": {
+    "q": "State the normal plasma osmolarity range in humans and name the primary extracellular cation responsible for it.",
+    "accept": [
+     "285 to 295 mOsm/L; sodium (Na+)",
+     "290 mOsm/L; Na+"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-018",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Osmolarity and Darrow-Yannet Shifts",
+   "q": "Intravenous infusion of 2 liters of isotonic 0.9% NaCl (normal saline) produces which change in intracellular fluid (ICF) and extracellular fluid (ECF) volumes?",
+   "options": [
+    "ECF increases by 1 L and ICF increases by 1 L",
+    "ECF increases by 2 L and ICF remains unchanged",
+    "ECF decreases by 2 L and ICF increases by 2 L",
+    "Both ECF and ICF osmolarity rise sharply while volumes stay constant"
+   ],
+   "answer": 1,
+   "explain": "Isotonic NaCl has the same effective osmolarity as body fluids and remains confined to the extracellular compartment; because there is no osmotic gradient across cell membranes, zero water enters or leaves ICF.",
+   "verified": false,
+   "open": {
+    "q": "When 2 L of isotonic 0.9% NaCl is infused intravenously, how do extracellular fluid volume, intracellular fluid volume, and plasma osmolarity change?",
+    "accept": [
+     "ECF increases by 2 L, ICF is unchanged, and osmolarity is unchanged",
+     "All 2 L stays in ECF with no change in ICF or osmolarity"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Osmolarity and Darrow-Yannet Shifts",
+   "q": "A patient loses 1.5 liters of pure water through profuse sweating in extreme heat without replacing fluids (hyperosmotic volume contraction). How do the fluid compartments change?",
+   "options": [
+    "Only ECF volume decreases while ICF volume expands",
+    "ECF osmolarity falls while ICF osmolarity rises",
+    "Both ECF and ICF volumes decrease, and osmolarity increases equally in both compartments",
+    "ICF volume stays constant while ECF volume drops by 1.5 L"
+   ],
+   "answer": 2,
+   "explain": "Pure water loss concentrates the ECF, creating an osmotic gradient that pulls water out of cells into the ECF until both compartments equilibrate at a higher osmolarity and reduced volume.",
+   "verified": false,
+   "open": {
+    "q": "In pure water dehydration (hyperosmotic volume contraction), what happens to ECF volume, ICF volume, and body fluid osmolarity?",
+    "accept": [
+     "Both ECF and ICF volumes decrease while osmolarity increases in both",
+     "ECF and ICF shrink and osmolarity rises"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Osmolarity and Darrow-Yannet Shifts",
+   "q": "In untreated adrenal insufficiency (Addison disease), renal sodium wasting causes hyposmotic volume contraction. What happens to intracellular fluid (ICF) volume and osmolarity?",
+   "options": [
+    "ICF volume decreases and ICF osmolarity increases",
+    "Both ICF volume and ICF osmolarity remain unchanged",
+    "ICF volume decreases and ICF osmolarity decreases",
+    "ICF volume increases (cells swell) and ICF osmolarity decreases"
+   ],
+   "answer": 3,
+   "explain": "Loss of NaCl in excess of water lowers ECF osmolarity, driving water osmotically from the hypotonic ECF into cells; consequently, ECF shrinks markedly while ICF expands and overall body fluid osmolarity falls.",
+   "verified": false,
+   "open": {
+    "q": "In hyposmotic volume contraction caused by net NaCl loss, in which direction does water shift between ECF and ICF, and what happens to ICF volume?",
+    "accept": [
+     "Water shifts from ECF into ICF, increasing ICF volume",
+     "Water enters cells and ICF volume expands"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Osmolarity and Darrow-Yannet Shifts",
+   "q": "Intravenous infusion of 5% dextrose in water (D5W) initially acts as an isotonic solution in the IV bag, but once the glucose is metabolized by cells, what is its net physiological effect on fluid compartments?",
+   "options": [
+    "It behaves like pure free water, expanding both ECF and ICF proportionally (roughly one-third ECF, two-thirds ICF) and lowering osmolarity",
+    "It remains strictly inside the intravascular plasma space",
+    "It pulls water out of cells and raises plasma osmolarity",
+    "It expands only the interstitial space while shrinking plasma"
+   ],
+   "answer": 0,
+   "explain": "Once cellular uptake and metabolism clear the dextrose, only free water remains, which distributes across total body water in proportion to compartment sizes (~2/3 ICF, 1/3 ECF) and reduces osmolarity.",
+   "verified": false,
+   "open": {
+    "q": "After the infused glucose in 5% dextrose in water (D5W) is metabolized by cells, how does the remaining water distribute between ECF and ICF?",
+    "accept": [
+     "Distributes across both ECF and ICF like pure water (1/3 ECF, 2/3 ICF)",
+     "Expands both ECF and ICF proportionally and lowers osmolarity"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Capillary Starling Forces and Edema",
+   "q": "Which Starling force favors the reabsorption of fluid from the interstitial space back into the blood capillary?",
+   "options": [
+    "Capillary hydrostatic pressure (Pc)",
+    "Plasma colloid osmotic (oncotic) pressure (pi_c)",
+    "Interstitial fluid colloid osmotic pressure (pi_i)",
+    "Negative interstitial fluid hydrostatic pressure (-Pi)"
+   ],
+   "answer": 1,
+   "explain": "Plasma colloid osmotic pressure (~25-28 mmHg), generated chiefly by serum albumin, draws water osmotically into the capillary lumen; Pc, pi_i, and negative Pi all favor filtration out of the capillary.",
+   "verified": false,
+   "open": {
+    "q": "Name the primary Starling force responsible for pulling interstitial fluid back into capillaries at their venular end.",
+    "accept": [
+     "Plasma oncotic pressure",
+     "Plasma colloid osmotic pressure",
+     "Capillary oncotic pressure"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-023",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Capillary Starling Forces and Edema",
+   "q": "Which protein accounts for approximately 75% to 80% of plasma colloid osmotic (oncotic) pressure?",
+   "options": [
+    "Fibrinogen",
+    "Gamma globulin (IgG)",
+    "Albumin",
+    "Transferrin"
+   ],
+   "answer": 2,
+   "explain": "Albumin has the highest molar concentration among plasma proteins and carries a strong net negative charge that attracts Na+ cations (Gibbs-Donnan contribution), generating about 75-80% of plasma oncotic pressure.",
+   "verified": false,
+   "open": {
+    "q": "Name the plasma protein responsible for roughly 75% to 80% of plasma colloid osmotic pressure.",
+    "accept": [
+     "Serum albumin",
+     "Human serum albumin"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-024",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Capillary Starling Forces and Edema",
+   "q": "A 6-year-old child with severe protein-energy malnutrition (kwashiorkor) develops generalized pitting edema and ascites. Which alteration in Starling forces is the primary cause of this edema?",
+   "options": [
+    "Markedly elevated arteriolar hydrostatic pressure",
+    "Obstruction of major lymphatic trunks by parasites",
+    "Increased interstitial fluid hydrostatic pressure",
+    "Decreased plasma colloid osmotic pressure due to hypoalbuminemia"
+   ],
+   "answer": 3,
+   "explain": "Severe dietary protein deficiency impairs hepatic albumin synthesis, lowering plasma oncotic pressure so net outward filtration exceeds lymphatic drainage capacity and fluid accumulates in the interstitial and peritoneal spaces.",
+   "verified": false,
+   "open": {
+    "q": "In kwashiorkor or nephrotic syndrome, which Starling force abnormality directly causes generalized pitting edema?",
+    "accept": [
+     "Decreased plasma oncotic pressure",
+     "Reduced plasma colloid osmotic pressure from hypoalbuminemia"
+    ]
+   }
+  },
+  {
+   "id": "pb-fluid-compartments-025",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Capillary Starling Forces and Edema",
+   "q": "A 38-year-old resident of an endemic tropical region develops chronic unilateral lower-limb non-pitting swelling (elephantiasis) due to Wuchereria bancrofti infection. Which mechanism produces this edema?",
+   "options": [
+    "Obstruction of lymphatic vessels preventing clearance of filtered interstitial fluid and proteins",
+    "Profound hypoalbuminemia from renal protein loss",
+    "Systemic venous hypertension from left ventricular failure",
+    "Excessive antidiuretic hormone secretion"
+   ],
+   "answer": 0,
+   "explain": "Filariasis obstructs lymphatic drainage, trapping filtered fluid and leaked interstitial proteins in the tissue spaces; rising interstitial protein further elevates interstitial oncotic pressure and draws more water out of capillaries.",
+   "verified": false,
+   "open": {
+    "q": "How does lymphatic obstruction (such as in filariasis or after axillary lymph node dissection) lead to lymphedema?",
+    "accept": [
+     "Impaired drainage of excess interstitial fluid and leaked proteins",
+     "Failure of lymphatics to return filtered fluid and proteins to the circulation"
+    ]
+   }
+  }
+ ]
+}
