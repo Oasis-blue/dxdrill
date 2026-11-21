@@ -36,6 +36,7 @@
     about: DX.about,
     competitions: DX.comps,
     live: DX.rooms,
+    cards: DX.cards,
     account: DX.account
   };
 
