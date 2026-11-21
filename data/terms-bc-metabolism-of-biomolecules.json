@@ -1,0 +1,480 @@
+{
+ "terms": [
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Glycolysis",
+   "term": "Phosphofructokinase-1",
+   "clues": [
+    "It commits a six-carbon sugar to breakdown inside the cytosol.",
+    "Citrate and high ATP slow it down, while AMP and fructose 2,6-bisphosphate speed it up.",
+    "It is the main rate-limiting enzyme of glycolysis that converts fructose 6-phosphate into fructose 1,6-bisphosphate."
+   ],
+   "forbidden": [
+    "glycolysis",
+    "rate-limiting",
+    "fructose",
+    "kinase",
+    "ATP"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Glycolysis",
+   "term": "Fructose 2,6-bisphosphate",
+   "clues": [
+    "It is a regulatory signal molecule rather than a direct intermediate of energy production.",
+    "Insulin raises its hepatic levels after a meal, while glucagon causes it to be broken down.",
+    "It is the most potent allosteric activator of phosphofructokinase-1 and inhibitor of fructose 1,6-bisphosphatase."
+   ],
+   "forbidden": [
+    "fructose",
+    "bisphosphate",
+    "PFK-1",
+    "insulin",
+    "glucagon"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Glycolysis",
+   "term": "Glucokinase",
+   "clues": [
+    "This hepatic enzyme only works at full speed right after a carbohydrate-rich meal.",
+    "Unlike its counterpart in other tissues, it is not inhibited by its own phosphorylated product.",
+    "It is the high-Km, high-Vmax hexokinase isozyme found in liver parenchymal cells and pancreatic beta cells."
+   ],
+   "forbidden": [
+    "hexokinase",
+    "liver",
+    "glucose",
+    "Km",
+    "affinity"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Pyruvate Dehydrogenase and TCA Cycle",
+   "term": "Pyruvate dehydrogenase",
+   "clues": [
+    "It acts as the irreversible one-way bridge between cytosolic sugar breakdown and mitochondrial oxidation.",
+    "It requires five cofactors, including thiamine pyrophosphate and lipoic acid.",
+    "This mitochondrial multienzyme complex converts pyruvate into acetyl-CoA, NADH, and carbon dioxide."
+   ],
+   "forbidden": [
+    "pyruvate",
+    "acetyl-CoA",
+    "dehydrogenase",
+    "thiamine",
+    "mitochondria"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Pyruvate Dehydrogenase and TCA Cycle",
+   "term": "Succinate dehydrogenase",
+   "clues": [
+    "It is the only enzyme of its cycle that is not dissolved freely in the mitochondrial matrix.",
+    "Malonate acts as its classic structural competitive inhibitor.",
+    "This inner membrane enzyme oxidizes succinate to fumarate and also serves as Complex II of the electron transport chain."
+   ],
+   "forbidden": [
+    "succinate",
+    "fumarate",
+    "Complex II",
+    "malonate",
+    "TCA"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Gluconeogenesis",
+   "term": "Pyruvate carboxylase",
+   "clues": [
+    "It performs a crucial anaplerotic reaction inside mitochondria when energy is low.",
+    "It requires biotin to fix carbon dioxide and is completely inactive without acetyl-CoA.",
+    "This enzyme converts pyruvate into oxaloacetate as the first bypass step of gluconeogenesis."
+   ],
+   "forbidden": [
+    "pyruvate",
+    "oxaloacetate",
+    "biotin",
+    "gluconeogenesis",
+    "acetyl-CoA"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Gluconeogenesis",
+   "term": "Cori cycle",
+   "clues": [
+    "It prevents muscle fatigue by clearing an acidic byproduct through the bloodstream.",
+    "It shifts the metabolic burden of anaerobic exercise onto the liver at a net cost of four ATP.",
+    "This metabolic loop transports lactate from exercising muscle to the liver to be converted back into glucose."
+   ],
+   "forbidden": [
+    "lactate",
+    "muscle",
+    "liver",
+    "glucose",
+    "cycle"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Glycogen Metabolism",
+   "term": "Glycogen phosphorylase",
+   "clues": [
+    "It breaks down a branched storage polymer without spending any ATP.",
+    "It uses inorganic phosphate and requires pyridoxal phosphate as a covalently bound cofactor.",
+    "This rate-limiting enzyme of glycogenolysis cleaves alpha-1,4 bonds to release glucose 1-phosphate."
+   ],
+   "forbidden": [
+    "glycogen",
+    "phosphorylase",
+    "glucose 1-phosphate",
+    "glycogenolysis",
+    "pyridoxal"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Glycogen Metabolism",
+   "term": "Glycogenin",
+   "clues": [
+    "It sits right at the very center of every cellular carbohydrate storage granule.",
+    "It acts as both an enzyme and its own substrate by attaching sugars to a tyrosine residue.",
+    "This self-glucosylating protein forms the short oligosaccharide primer needed to start glycogen synthesis."
+   ],
+   "forbidden": [
+    "glycogen",
+    "primer",
+    "tyrosine",
+    "synthesis",
+    "glucose"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Glycogen Metabolism",
+   "term": "Von Gierke disease",
+   "clues": [
+    "Affected infants present with doll-like faces, enlarged livers, and severe fasting low blood sugar.",
+    "Trapped phosphorylated sugar leads to lactic acidosis, high triglycerides, and gouty uric acid levels.",
+    "This Type I glycogen storage disease is caused by a deficiency of glucose 6-phosphatase."
+   ],
+   "forbidden": [
+    "glucose 6-phosphatase",
+    "glycogen",
+    "hypoglycemia",
+    "liver",
+    "lactic"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Pentose Phosphate Pathway and Monosaccharide Metabolism",
+   "term": "Glucose 6-phosphate dehydrogenase",
+   "clues": [
+    "Its deficiency is the most common human enzymopathy and offers protection against severe malaria.",
+    "Exposure to fava beans or primaquine triggers Heinz bodies and bite cells when it is lacking.",
+    "This rate-limiting enzyme of the pentose phosphate pathway generates NADPH to keep glutathione reduced."
+   ],
+   "forbidden": [
+    "NADPH",
+    "glutathione",
+    "pentose",
+    "hemolysis",
+    "primaquine"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Pentose Phosphate Pathway and Monosaccharide Metabolism",
+   "term": "Transketolase",
+   "clues": [
+    "Measuring its activity in red blood cells is a clinical laboratory test for thiamine deficiency.",
+    "It operates in the reversible non-oxidative branch of the hexose monophosphate shunt.",
+    "This thiamine pyrophosphate-dependent enzyme transfers two-carbon units between ketose and aldose sugars."
+   ],
+   "forbidden": [
+    "thiamine",
+    "TPP",
+    "pentose",
+    "two-carbon",
+    "non-oxidative"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Electron Transport Chain and Oxidative Phosphorylation",
+   "term": "Coenzyme Q",
+   "clues": [
+    "Unlike cytochromes, this electron carrier is a hydrophobic lipid-soluble quinone rather than a protein.",
+    "It roams freely inside the inner mitochondrial membrane collecting reducing equivalents.",
+    "Also known as ubiquinone, it accepts electrons from both Complex I and Complex II and passes them to Complex III."
+   ],
+   "forbidden": [
+    "ubiquinone",
+    "electron",
+    "Complex I",
+    "Complex II",
+    "Complex III"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Electron Transport Chain and Oxidative Phosphorylation",
+   "term": "Thermogenin",
+   "clues": [
+    "It allows newborns and hibernating animals to stay warm without shivering.",
+    "Norepinephrine triggers fatty acid release to open this inner mitochondrial membrane channel.",
+    "Also called uncoupling protein 1 in brown adipose tissue, it dissipates the proton gradient to generate heat."
+   ],
+   "forbidden": [
+    "uncoupling",
+    "brown fat",
+    "heat",
+    "proton",
+    "UCP1"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Electron Transport Chain and Oxidative Phosphorylation",
+   "term": "Oligomycin",
+   "clues": [
+    "This macrolide antibiotic halts cellular energy production by jamming a rotary proton channel.",
+    "Adding an uncoupler like dinitrophenol restores oxygen consumption after it blocks respiration.",
+    "It inhibits oxidative phosphorylation by directly binding the Fo subunit of ATP synthase."
+   ],
+   "forbidden": [
+    "ATP synthase",
+    "Fo",
+    "proton",
+    "antibiotic",
+    "phosphorylation"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Fatty Acid Synthesis",
+   "term": "Acetyl-CoA carboxylase",
+   "clues": [
+    "Citrate polymerizes and activates it, whereas AMPK phosphorylates and shuts it down.",
+    "It uses biotin and ATP to add a carboxyl group in the cytosol.",
+    "This rate-limiting enzyme of fatty acid synthesis converts acetyl-CoA into malonyl-CoA."
+   ],
+   "forbidden": [
+    "malonyl-CoA",
+    "acetyl-CoA",
+    "fatty acid",
+    "biotin",
+    "carboxylase"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Fatty Acid Oxidation and Ketogenesis",
+   "term": "Malonyl-CoA",
+   "clues": [
+    "It serves as the two-carbon building block donor during lipogenesis.",
+    "Its levels rise after a meal to prevent a futile cycle of simultaneous lipid synthesis and breakdown.",
+    "This product of acetyl-CoA carboxylase allosterically inhibits carnitine palmitoyltransferase I."
+   ],
+   "forbidden": [
+    "carnitine",
+    "CPT-I",
+    "fatty acid",
+    "carboxylase",
+    "synthesis"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Fatty Acid Oxidation and Ketogenesis",
+   "term": "Beta-hydroxybutyrate",
+   "clues": [
+    "Despite its traditional classification, it is chemically a carboxylic acid that lacks a ketone group.",
+    "It rises dramatically in diabetic ketoacidosis but goes undetected by standard urine nitroprusside strips.",
+    "It is the most abundant circulating ketone body produced in liver mitochondria and oxidized by the starving brain."
+   ],
+   "forbidden": [
+    "ketone",
+    "acetoacetate",
+    "nitroprusside",
+    "ketoacidosis",
+    "starvation"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Cholesterol and Lipoprotein Metabolism",
+   "term": "HMG-CoA reductase",
+   "clues": [
+    "Statins competitively block this endoplasmic reticulum membrane enzyme to lower blood lipids.",
+    "High cellular sterols suppress its gene transcription via the SCAP-SREBP-2 sensor.",
+    "It is the rate-limiting enzyme of cholesterol biosynthesis that reduces HMG-CoA to mevalonate."
+   ],
+   "forbidden": [
+    "cholesterol",
+    "statin",
+    "mevalonate",
+    "reductase",
+    "rate-limiting"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Cholesterol and Lipoprotein Metabolism",
+   "term": "Apolipoprotein C-II",
+   "clues": [
+    "Chylomicrons and VLDL must borrow this surface protein from HDL after entering the bloodstream.",
+    "Its genetic deficiency causes massive hypertriglyceridemia and eruptive xanthomas.",
+    "This apolipoprotein acts as an essential cofactor to activate capillary lipoprotein lipase."
+   ],
+   "forbidden": [
+    "lipoprotein lipase",
+    "triglyceride",
+    "chylomicron",
+    "VLDL",
+    "HDL"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Cholesterol and Lipoprotein Metabolism",
+   "term": "Cholesteryl ester transfer protein",
+   "clues": [
+    "It mediates neutral lipid swapping between circulating lipoproteins in plasma.",
+    "Genetic deficiency of this protein leads to markedly elevated HDL cholesterol levels.",
+    "This plasma transfer protein moves cholesteryl esters from HDL to VLDL and LDL in exchange for triglycerides."
+   ],
+   "forbidden": [
+    "HDL",
+    "LDL",
+    "cholesteryl",
+    "triglyceride",
+    "transfer"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Complex Lipids and Eicosanoids",
+   "term": "Phospholipase A2",
+   "clues": [
+    "It is abundant in snake venoms and pancreatic secretions.",
+    "Corticosteroids induce annexin A1 to block this enzyme and shut down inflammation.",
+    "This enzyme hydrolyzes the sn-2 ester bond of membrane phospholipids to release arachidonic acid."
+   ],
+   "forbidden": [
+    "arachidonic acid",
+    "steroids",
+    "prostaglandin",
+    "phospholipid",
+    "inflammation"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Amino Acid Catabolism and Urea Cycle",
+   "term": "Carbamoyl phosphate synthetase I",
+   "clues": [
+    "It works inside hepatocyte mitochondria rather than the cytosol.",
+    "It is completely inactive unless N-acetylglutamate binds to it.",
+    "This rate-limiting enzyme of the urea cycle combines free ammonia, bicarbonate, and two ATP molecules."
+   ],
+   "forbidden": [
+    "urea",
+    "ammonia",
+    "N-acetylglutamate",
+    "mitochondria",
+    "carbamoyl"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Amino Acid Catabolism and Urea Cycle",
+   "term": "Ornithine transcarbamylase",
+   "clues": [
+    "Deficiency of this enzyme is the most common urea cycle disorder and is inherited in an X-linked manner.",
+    "Affected neonates develop hyperammonemia alongside elevated urinary orotic acid.",
+    "This mitochondrial enzyme condenses carbamoyl phosphate with ornithine to form citrulline."
+   ],
+   "forbidden": [
+    "urea",
+    "citrulline",
+    "ornithine",
+    "orotic acid",
+    "ammonia"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Amino Acid Catabolism and Urea Cycle",
+   "term": "Alkaptonuria",
+   "clues": [
+    "Patients develop blue-black ear cartilage pigmentation and painful arthritis in adulthood.",
+    "Freshly passed urine looks normal but turns dark black after standing exposed to air.",
+    "This autosomal recessive disorder of tyrosine catabolism is caused by homogentisate oxidase deficiency."
+   ],
+   "forbidden": [
+    "homogentisate",
+    "tyrosine",
+    "black",
+    "urine",
+    "ochronosis"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Heme Metabolism",
+   "term": "ALA synthase",
+   "clues": [
+    "Barbiturates induce its hepatic isoform, which can precipitate acute porphyria attacks.",
+    "Heme feedback-inhibits its synthesis and mitochondrial import.",
+    "This pyridoxal phosphate-dependent enzyme condenses glycine and succinyl-CoA in the rate-limiting step of heme synthesis."
+   ],
+   "forbidden": [
+    "heme",
+    "glycine",
+    "succinyl-CoA",
+    "porphyria",
+    "aminolevulinic"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Heme Metabolism",
+   "term": "Gilbert syndrome",
+   "clues": [
+    "Stress, illness, or exam-week fasting brings out mild yellowing of the eyes in otherwise healthy young adults.",
+    "Liver enzymes and red cell counts remain completely normal.",
+    "This benign condition causes mild unconjugated hyperbilirubinemia due to reduced UDP-glucuronosyltransferase 1A1 activity."
+   ],
+   "forbidden": [
+    "bilirubin",
+    "jaundice",
+    "glucuronosyltransferase",
+    "unconjugated",
+    "UGT1A1"
+   ]
+  },
+  {
+   "topic": "bc-metabolism-of-biomolecules",
+   "sub": "Nucleotide Metabolism",
+   "term": "Lesch-Nyhan syndrome",
+   "clues": [
+    "Affected boys exhibit severe gout, spasticity, and compulsive self-mutilating biting.",
+    "Orange uric acid crystals often appear in the infant's diaper.",
+    "This X-linked disorder is caused by deficiency of the purine salvage enzyme HGPRT."
+   ],
+   "forbidden": [
+    "HGPRT",
+    "purine",
+    "uric acid",
+    "self-mutilation",
+    "salvage"
+   ]
+  }
+ ]
+}

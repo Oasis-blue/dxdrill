@@ -1,0 +1,89 @@
+{
+ "terms": [
+  {
+   "topic": "ba-biochemistry-of-muscle-contraction",
+   "sub": "Contractile and Regulatory Proteins of Muscle",
+   "term": "Myosin II",
+   "clues": [
+    "It is a hexameric motor protein consisting of two heavy chains and four light chains.",
+    "Its globular S1 heads possess actin-activated ATPase activity.",
+    "It forms the thick filaments of the sarcomere and pulls on thin filaments during the power stroke."
+   ],
+   "forbidden": [
+    "thick filament",
+    "actin",
+    "sarcomere",
+    "ATPase",
+    "power stroke"
+   ]
+  },
+  {
+   "topic": "ba-biochemistry-of-muscle-contraction",
+   "sub": "Contractile and Regulatory Proteins of Muscle",
+   "term": "Troponin C",
+   "clues": [
+    "It is absent in smooth muscle, which relies on calmodulin instead.",
+    "Binding of divalent cations to its four sites triggers a conformational shift in tropomyosin.",
+    "It is the calcium-binding subunit of the troponin complex on striated muscle thin filaments."
+   ],
+   "forbidden": [
+    "calcium",
+    "troponin",
+    "tropomyosin",
+    "thin filament",
+    "bind"
+   ]
+  },
+  {
+   "topic": "ba-biochemistry-of-muscle-contraction",
+   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+   "term": "Ryanodine receptor",
+   "clues": [
+    "In skeletal muscle, it is mechanically coupled to the T-tubule dihydropyridine voltage sensor.",
+    "The muscle relaxant dantrolene blocks this channel to treat malignant hyperthermia.",
+    "It is the large calcium release channel embedded in the sarcoplasmic reticulum membrane."
+   ],
+   "forbidden": [
+    "calcium",
+    "sarcoplasmic reticulum",
+    "dantrolene",
+    "malignant hyperthermia",
+    "channel"
+   ]
+  },
+  {
+   "topic": "ba-biochemistry-of-muscle-contraction",
+   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+   "term": "SERCA",
+   "clues": [
+    "In cardiac muscle, its activity is inhibited by unphosphorylated phospholamban.",
+    "It hydrolyzes one ATP molecule to transport two divalent cations against a steep concentration gradient.",
+    "This sarcoplasmic reticulum calcium ATPase pump lowers cytosolic calcium to induce muscle relaxation."
+   ],
+   "forbidden": [
+    "calcium",
+    "pump",
+    "sarcoplasmic reticulum",
+    "relaxation",
+    "ATPase"
+   ]
+  },
+  {
+   "topic": "ba-biochemistry-of-muscle-contraction",
+   "sub": "Smooth Muscle Contraction",
+   "term": "Myosin light-chain kinase",
+   "clues": [
+    "It is activated by the calcium-calmodulin complex rather than by troponin.",
+    "It transfers a phosphate group onto the 20-kilodalton regulatory subunit of thick filaments.",
+    "This enzyme initiates cross-bridge cycling and contraction in smooth muscle cells."
+   ],
+   "forbidden": [
+    "smooth muscle",
+    "calmodulin",
+    "phosphorylate",
+    "kinase",
+    "myosin"
+   ]
+  }
+ ]
+}
