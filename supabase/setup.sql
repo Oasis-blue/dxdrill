@@ -1316,3 +1316,31 @@ grant execute on function public.debate_list(), public.debate_info(bigint), publ
   public.debate_react(bigint, text), public.debate_suggest(text), public.admin_debate_suggestions(), public.admin_delete_debate_suggestion(bigint),
   public.admin_create_debate(text, text), public.admin_set_debate_closed(bigint, boolean), public.admin_delete_debate(bigint), public.admin_hide_take(bigint, boolean) to authenticated;
 
+-- ===== Update 9 (feature switches) =====
+create table if not exists public.site_features (
+  key        text primary key,
+  enabled    boolean not null default false,
+  updated_at timestamptz not null default now()
+);
+alter table public.site_features enable row level security;
+revoke all on public.site_features from anon, authenticated;
+
+insert into public.site_features (key, enabled) values
+  ('cards', true), ('polls', true), ('competitions', true), ('live', true), ('debates', false)
+on conflict (key) do nothing;
+
+create or replace function public.site_features() returns table (key text, enabled boolean)
+language sql security definer stable set search_path = public as $$ select f.key, f.enabled from public.site_features f $$;
+
+create or replace function public.admin_set_feature(p_key text, p_on boolean) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  insert into public.site_features (key, enabled, updated_at) values (p_key, p_on, now())
+    on conflict (key) do update set enabled = excluded.enabled, updated_at = now();
+end $$;
+
+revoke all on function public.site_features(), public.admin_set_feature(text, boolean) from public, anon, authenticated;
+grant execute on function public.site_features() to anon, authenticated;
+grant execute on function public.admin_set_feature(text, boolean) to authenticated;
+
