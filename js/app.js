@@ -30,13 +30,22 @@
   /* Play: one place for flashcards, challenges and live quizzes. */
   var PLAY = { competitions: "play", live: "play", cards: "play", debates: "play" };
   function playHub(el) {
+    var F = DX.features, cards = [
+      ["cards", "Flashcards", "Recall the answer before you look. Cards you miss come back soon, and cards you know come back later. Just for you, any time.", "#cards", "Open flashcards", true],
+      ["competitions", "Challenges", "A timed, ranked quiz that stays open for a few days. Play whenever suits you, one attempt. Results and class rankings appear when it closes.", "#competitions", "See challenges", false],
+      ["live", "Live quiz", "Everyone plays together, right now. Type the code from the host and answer on your phone. Faster right answers score more.", "#live", "Join a live quiz", false],
+      ["debates", "Debates", "Take a side on a claim, say why, and react to what your classmates think. Suggest topics too.", "#debates", "Join a debate", false]
+    ].filter(function (c) { return F.on(c[0]); });
     el.innerHTML = '<div class="wrap wide stack"><header><p class="eyebrow">Play</p><h1>Ways to play</h1><p class="lede">Study alone, race the whole school over a few days, or join a live quiz with a code.</p></header>' +
-      '<section class="cards">' +
-      '<article class="card"><h2>Flashcards</h2><p>Recall the answer before you look. Cards you miss come back soon, and cards you know come back later. Just for you, any time.</p><a class="btn primary" href="#cards" style="text-decoration:none">Open flashcards</a></article>' +
-      '<article class="card"><h2>Challenges</h2><p>A timed, ranked quiz that stays open for a few days. Play whenever suits you, one attempt. Results and class rankings appear when it closes.</p><a class="btn" href="#competitions" style="text-decoration:none">See challenges</a></article>' +
-      '<article class="card"><h2>Live quiz</h2><p>Everyone plays together, right now. Type the code from the host and answer on your phone. Faster right answers score more.</p><a class="btn" href="#live" style="text-decoration:none">Join a live quiz</a></article>' +
-      '<article class="card"><h2>Debates</h2><p>Take a side on a claim, say why, and react to what your classmates think. Suggest topics too.</p><a class="btn" href="#debates" style="text-decoration:none">Join a debate</a></article>' +
-      '</section></div>';
+      '<section class="cards">' + cards.map(function (c, i) {
+        return '<article class="card"><h2>' + c[1] + '</h2>' + (F.visibleToStudents(c[0]) ? "" : '<p><b>Hidden from students</b></p>') + '<p>' + c[2] + '</p><a class="btn' + (i === 0 ? " primary" : "") + '" href="' + c[3] + '" style="text-decoration:none">' + c[4] + '</a></article>';
+      }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Manage which features students can see</a></p>' : "") + '</div>';
+  }
+  var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
+  function navVisibility() {
+    var F = DX.features, polls = document.querySelector('[data-nav="polls"]'), play = document.querySelector('[data-nav="play"]');
+    if (polls) polls.hidden = !F.on("polls");
+    if (play) play.hidden = !(F.on("cards") || F.on("competitions") || F.on("live") || F.on("debates"));
   }
   var routes = {
     home: { render: home },
@@ -52,6 +61,7 @@
     live: DX.rooms,
     cards: DX.cards,
     debates: DX.debates,
+    features: DX.features,
     account: DX.account
   };
 
@@ -69,6 +79,14 @@
       h = "home";
     }
     if (current && current.leave) current.leave();
+    var gate = GATE[h];
+    if (gate && !DX.features.on(gate)) {
+      current = null;
+      document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+      app.innerHTML = '<div class="wrap stack"><h1>Coming soon</h1><p class="lede">This is not open yet. Check back soon.</p><a class="btn primary" href="#home" style="text-decoration:none">Back home</a></div>';
+      navVisibility(); return;
+    }
+    navVisibility();
     current = routes[h];
     document.querySelectorAll("[data-nav]").forEach(function (a) {
       if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
@@ -127,10 +145,28 @@
     installEv.userChoice.then(function () { installEv = null; installBtn.hidden = true; });
   });
   window.addEventListener("appinstalled", function () { installBtn.hidden = true; });
+  /* When a newer version of the site takes over while a page is open, say so. */
+  if ("serviceWorker" in navigator) {
+    var hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (!hadController || document.getElementById("updbar")) { hadController = true; return; }
+      var d = document.createElement("div"); d.id = "updbar"; d.setAttribute("role", "status");
+      d.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--accent,#0b6b5a);color:#fff;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;font-size:15px";
+      d.innerHTML = '<span>A new version of DxDrill is ready.</span><span><button type="button" style="border:0;border-radius:8px;padding:8px 14px;font:inherit;font-weight:600;background:#fff;color:#111" id="updgo">Reload</button> <button type="button" aria-label="Dismiss" style="border:0;background:transparent;color:inherit;font:inherit;padding:8px" id="updno">\u2715</button></span>';
+      document.body.appendChild(d);
+      document.getElementById("updgo").onclick = function () { location.reload(); };
+      document.getElementById("updno").onclick = function () { d.remove(); };
+    });
+  }
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () { /* works without it */ }); });
   }
 
+  DX.features.onChange = function () {   /* only redraw pages the switches affect, never a page someone is working in */
+    navVisibility();
+    var h = (location.hash || "#home").slice(1);
+    if (h === "play" || h === "features" || GATE[h]) route();
+  };
   window.addEventListener("hashchange", route);
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
   DX.load().then(function () { return DX.cloud.init().catch(function () {}); }).then(route).catch(function (e) {
