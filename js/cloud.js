@@ -52,12 +52,33 @@
     });
   }
 
+
+  /* A phone whose date or time is wrong makes sign-in fail straight away. Ask the server what time it is and warn if the phone is far off. */
+  function checkClock() {
+    try {
+      var t0 = Date.now();
+      C.sb.rpc("server_time").then(function (r) {
+        if (!r || r.error || !r.data) return;
+        var t1 = Date.now(), server = new Date(r.data).getTime(), diff = server - (t0 + t1) / 2;
+        if (isNaN(diff) || Math.abs(diff) < 5 * 60 * 1000) return;
+        var mins = Math.round(Math.abs(diff) / 60000), txt = mins >= 2880 ? Math.round(mins / 1440) + " days" : mins >= 120 ? Math.round(mins / 60) + " hours" : mins + " minutes";
+        var d = document.createElement("div"); d.setAttribute("role", "alert"); d.id = "clockwarn";
+        d.style.cssText = "position:relative;z-index:50;background:#fff3cd;color:#4a3800;border-bottom:2px solid #e0a800;padding:10px 16px;font-size:15px;line-height:1.4";
+        d.innerHTML = "<b>Your device’s date or time looks wrong</b> (about " + txt + " " + (diff > 0 ? "behind" : "ahead") + "). DxDrill may sign you out straight away. Turn on automatic date and time in your phone or computer settings, then reload this page. " +
+          '<button type="button" style="margin-left:6px;border:1.5px solid #4a3800;background:transparent;color:inherit;border-radius:8px;padding:2px 10px;font:inherit">Dismiss</button>';
+        d.querySelector("button").onclick = function () { d.remove(); };
+        document.body.insertBefore(d, document.body.firstChild);
+      }).catch(function () { });
+    } catch (e) { }
+  }
+
   C.init = function () {
     if (!window.supabase || !window.supabase.createClient) { C.msg = "offline"; return Promise.resolve(); }
     try {
       C.sb = window.supabase.createClient(CFG.url, CFG.key);
     } catch (e) { return Promise.resolve(); }
     C.ok = true;
+    checkClock();
     C.sb.auth.onAuthStateChange(function (ev, session) {
       C.user = session ? session.user : null;
       F = {};
