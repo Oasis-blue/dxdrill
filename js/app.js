@@ -28,13 +28,14 @@
   }
 
   /* Play: one place for flashcards, challenges and live quizzes. */
-  var PLAY = { competitions: "play", live: "play", cards: "play" };
+  var PLAY = { competitions: "play", live: "play", cards: "play", debates: "play" };
   function playHub(el) {
     el.innerHTML = '<div class="wrap wide stack"><header><p class="eyebrow">Play</p><h1>Ways to play</h1><p class="lede">Study alone, race the whole school over a few days, or join a live quiz with a code.</p></header>' +
       '<section class="cards">' +
       '<article class="card"><h2>Flashcards</h2><p>Recall the answer before you look. Cards you miss come back soon, and cards you know come back later. Just for you, any time.</p><a class="btn primary" href="#cards" style="text-decoration:none">Open flashcards</a></article>' +
       '<article class="card"><h2>Challenges</h2><p>A timed, ranked quiz that stays open for a few days. Play whenever suits you, one attempt. Results and class rankings appear when it closes.</p><a class="btn" href="#competitions" style="text-decoration:none">See challenges</a></article>' +
       '<article class="card"><h2>Live quiz</h2><p>Everyone plays together, right now. Type the code from the host and answer on your phone. Faster right answers score more.</p><a class="btn" href="#live" style="text-decoration:none">Join a live quiz</a></article>' +
+      '<article class="card"><h2>Debates</h2><p>Take a side on a claim, say why, and react to what your classmates think. Suggest topics too.</p><a class="btn" href="#debates" style="text-decoration:none">Join a debate</a></article>' +
       '</section></div>';
   }
   var routes = {
@@ -50,6 +51,7 @@
     competitions: DX.comps,
     live: DX.rooms,
     cards: DX.cards,
+    debates: DX.debates,
     account: DX.account
   };
 
