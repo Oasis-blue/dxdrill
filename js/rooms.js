@@ -18,10 +18,11 @@
     ".lvtime{font-family:var(--font-display);font-weight:700;font-variant-numeric:tabular-nums}" +
     ".lvf input[type=text],.lvf input[type=number],.lvf select{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px;background:var(--bg)}" +
     ".lvt{width:100%;border-collapse:collapse;font-size:15px}.lvt th,.lvt td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}.lvt td.n,.lvt th.n{text-align:right;font-variant-numeric:tabular-nums}" +
-    ".lvjoin{font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:.2em;text-transform:uppercase;text-align:center}";
+    ".lv h3{white-space:pre-line}.lvjoin{font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:.2em;text-transform:uppercase;text-align:center}";
   document.head.appendChild(css);
 
   function C() { return DX.cloud; }
+  function hostOnly(s) { return !!(s && s.is_host && s.kind !== "friends"); }   /* a friend-room host plays too */
   function admin() { return !!(C().profile && C().profile.is_admin); }
   function clsLabel(id) { var c = DX.curriculum.classes.filter(function (x) { return x.id === id; })[0]; return c ? c.label : (id || ""); }
   function fv(id, d) { return R.form[id] !== undefined ? R.form[id] : d; }
@@ -30,7 +31,12 @@
     if (C().isDown(e)) return "DxDrill’s online part is not answering. It may be waking up, so try again in a minute.";
     if (/room not found/i.test(m)) return "No room has that code. Check it and try again.";
     if (/room finished/i.test(m)) return "That room has already finished.";
-    if (/room full/i.test(m)) return "That room is full (150 players).";
+    if (/room full/i.test(m)) return "That room is full. Ask the host to make a new one.";
+    if (/you have a room open/i.test(m)) return "You already have a room open. Finish it or close it first. Use “Return to room” below.";
+    if (/too many rooms today/i.test(m)) return "You have made all your rooms for today. Try again tomorrow.";
+    if (/busy right now/i.test(m)) return "Lots of groups are playing right now. Try again in a few minutes.";
+    if (/need a friend/i.test(m)) return "You need at least 2 players to start. Share the code with a friend first.";
+    if (/not open yet/i.test(m)) return "Practice with friends is not open yet.";
     if (/not in room/i.test(m)) return "You are not in this room. Join it with the code.";
     if (/not enough questions/i.test(m)) return "There are not enough questions for that. " + (/have (\d+)/.test(m) ? "Only " + m.match(/have (\d+)/)[1] + " available." : "");
     if (/4 options/i.test(m)) return "A question did not have exactly 4 options.";
@@ -69,9 +75,9 @@
     if (s.status === "question" && s.my_choice == null && old && old.cur_idx === s.cur_idx && old.my_choice != null) s.my_choice = old.my_choice;
     R.st = s;
     if (s.status === "question") { R.deadline = performance.now() + Number(s.secs_left) * 1000; R.startAt = R.deadline - Number(s.sec) * 1000; if (performance.now() < R.startAt) R.inLead = true; }
-    var mode = s.is_host ? "all" : "live", fx = DX.fx;
+    var mode = hostOnly(s) ? "all" : "live", fx = DX.fx;
     if (fx && old && old.status !== s.status) {
-      if (s.status === "reveal" && !s.is_host) { var good = s.my_choice != null && s.my_choice === s.right_answer; fx.play(good ? "ok" : "bad", mode); fx.buzz(good ? 15 : 40); }
+      if (s.status === "reveal" && !hostOnly(s)) { var good = s.my_choice != null && s.my_choice === s.right_answer; fx.play(good ? "ok" : "bad", mode); fx.buzz(good ? 15 : 40); }
       else if (s.status === "finished") fx.play("done", mode);
     }
     var sig = [s.status, s.cur_idx, s.players, s.answered, s.my_choice, s.is_host].join("|");
@@ -106,9 +112,32 @@
   }
 
   /* ---------- host: creating a room ---------- */
-  function publicQs(scopeId, n) {
-    var qs = DX.questions.filter(function (q) { return q.options && q.options.length === 4 && typeof q.answer === "number" && q.answer >= 0 && q.answer < 4 && (!scopeId || q.subject === scopeId || q.area === scopeId || q.topic === scopeId); });
+  function inScope(c, scope) {
+    if (!scope) return true;
+    var p = scope.indexOf(":") > 0 ? scope.split(":") : ["s", scope];
+    return p[0] === "s" ? c.subject === p[1] : p[0] === "a" ? c.area === p[1] : c.topic === p[1];
+  }
+  function publicQs(scope, n) {
+    var qs = DX.questions.filter(function (q) { return q.options && q.options.length === 4 && typeof q.answer === "number" && q.answer >= 0 && q.answer < 4 && inScope(q, scope); });
     return DX.shuffle(qs).slice(0, n).map(function (q) { return { q: q.q || q.text || q.stem, options: q.options, answer: q.answer, explain: q.explain || "" }; });
+  }
+  /* "Guess the term": the clues are the question, the term and three look-alike terms are the options. */
+  function termQs(scope, n) {
+    var all = DX.terms.filter(function (t) { return t.clues && t.clues.length; }), mine = all.filter(function (t) { return inScope(t, scope); });
+    return DX.shuffle(mine).slice(0, n).map(function (t) {
+      var near = DX.shuffle(all.filter(function (x) { return x.term !== t.term && x.topic === t.topic; })), far = DX.shuffle(all.filter(function (x) { return x.term !== t.term && x.topic !== t.topic; }));
+      var wrong = near.concat(far).filter(function (x, i, arr) { return arr.findIndex(function (y) { return y.term === x.term; }) === i; }).slice(0, 3).map(function (x) { return x.term; });
+      if (wrong.length < 3) return null;
+      var opts = DX.shuffle(wrong.concat([t.term]));
+      return { q: "Which term fits these clues?\n\u2022 " + t.clues.join("\n\u2022 "), options: opts, answer: opts.indexOf(t.term), explain: t.term };
+    }).filter(Boolean);
+  }
+  function friendCreate() {
+    var name = (fv("ff-name", "") || "").trim() || "Study round", n = Math.max(3, Math.min(20, parseInt(fv("ff-n", "8"), 10) || 8)),
+        sec = Math.max(10, Math.min(60, parseInt(fv("ff-sec", "20"), 10) || 20)), pace = fv("ff-pace", "host"), kind = fv("ff-kind", "q"), scope = fv("ff-scope", "");
+    var items = (kind === "t" ? termQs(scope, n) : publicQs(scope, n));
+    if (items.length < n) { R.err = "Only " + items.length + " " + (kind === "t" ? "terms" : "questions") + " match that choice. Lower the number or pick a wider topic."; repaint(); return; }
+    act("friend_create_room", { p_name: name, p_pace: pace, p_sec: sec, p_n: n, p_items: items }, function (r) { var row = r.data && r.data[0]; if (row) enter(row.room_id, row.code); });
   }
   function create() {
     var name = (fv("lf-name", "") || "").trim() || "Live quiz", n = Math.max(1, Math.min(50, parseInt(fv("lf-n", "10"), 10) || 10)),
@@ -196,12 +225,51 @@
       '<div class="row tight"><button class="btn small" data-act="leaveroom">Done</button></div></section>';
     return out;
   }
+  function scopeOptions() {
+    var cur = fv("ff-scope", ""), out = '<option value="">Everything</option>';
+    DX.curriculum.subjects.forEach(function (s) {
+      out += '<optgroup label="' + esc(s.name) + '"><option value="s:' + esc(s.id) + '"' + (cur === "s:" + s.id ? " selected" : "") + '>All of ' + esc(s.name) + '</option>';
+      s.areas.forEach(function (a) { a.topics.forEach(function (tp) {
+        if (tp.count || DX.terms.some(function (x) { return x.topic === tp.id; })) out += '<option value="t:' + esc(tp.id) + '"' + (cur === "t:" + tp.id ? " selected" : "") + '>' + esc(tp.name) + '</option>';
+      }); });
+      out += "</optgroup>";
+    });
+    return out;
+  }
+  function friendFormHtml() {
+    var kind = fv("ff-kind", "q"), pace = fv("ff-pace", "host");
+    return '<section class="section stack lvf"><h2>Practice with friends</h2><p class="hint">Start a room, share the code, and play together on your phones. You play too. Needs at least 2 players.</p>' +
+      '<div class="field"><label class="label" for="ff-name">Name</label><input type="text" id="ff-name" maxlength="60" value="' + esc(fv("ff-name", "")) + '" placeholder="Study round"></div>' +
+      '<div class="field"><label class="label" for="ff-kind">Round type</label><select id="ff-kind"><option value="q"' + (kind === "q" ? " selected" : "") + '>Questions</option><option value="t"' + (kind === "t" ? " selected" : "") + '>Guess the term from clues</option></select></div>' +
+      '<div class="field"><label class="label" for="ff-scope">Topic</label><select id="ff-scope">' + scopeOptions() + '</select></div>' +
+      '<div class="field"><label class="label" for="ff-pace">Pace</label><select id="ff-pace"><option value="host"' + (pace === "host" ? " selected" : "") + '>I tap Next</option><option value="auto"' + (pace === "auto" ? " selected" : "") + '>Timers move on by themselves</option></select></div>' +
+      '<div class="teamrow"><div class="field"><label class="label" for="ff-n">Rounds (3 to 20)</label><input type="number" id="ff-n" min="3" max="20" value="' + esc(fv("ff-n", "8")) + '"></div>' +
+      '<div class="field"><label class="label" for="ff-sec">Seconds each (10 to 60)</label><input type="number" id="ff-sec" min="10" max="60" value="' + esc(fv("ff-sec", "20")) + '"></div></div>' +
+      '<div class="row tight"><button class="btn primary" data-act="fcreate"' + (R.busy ? " disabled" : "") + '>Create room</button></div></section>';
+  }
+  function inviteUrl() { return location.origin + location.pathname + "?room=" + R.code + "#live"; }
+  function friendHostHtml(s) {
+    var b = R.busy ? " disabled" : "", ctl = "";
+    if (s.status === "lobby") {
+      return '<section class="lv"><p class="tag">Share this code or the invite link with your friends</p><div class="lvcode" aria-label="Room code">' + esc(R.code) + '</div>' +
+        '<p class="tag">' + esc(s.name) + ' · ' + s.players + ' of ' + s.max_players + ' joined' + (s.players < 2 ? " · waiting for a friend" : "") + '</p>' +
+        '<div class="row tight"><a class="btn" style="text-decoration:none" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent("Join my DxDrill study round. Code " + R.code + " " + inviteUrl()) + '">Send on WhatsApp</a><button class="btn ghost" data-act="copyinv">Copy invite link</button></div>' +
+        '<div class="row tight"><button class="btn primary" data-act="start"' + (s.players < 2 || R.busy ? " disabled" : "") + '>Start (' + s.players + ' joined)</button><button class="btn ghost small" data-act="del">Close room</button></div></section>' +
+        (R.confirm ? '<p class="note bad">Close this room? Everyone loses it.</p><div class="row tight"><button class="btn small primary" data-act="delyes">Yes, close it</button><button class="btn ghost small" data-act="delno">Keep</button></div>' : "");
+    }
+    if (s.pace !== "auto" && (s.status === "question" || s.status === "reveal")) {
+      var last = Number(s.cur_idx) + 1 >= Number(s.n);
+      ctl = '<div class="row tight"><button class="btn ' + (s.status === "reveal" ? "primary" : "ghost") + '" data-act="next"' + b + '>' + (s.status === "question" ? "Show the answer now" : last ? "Finish and show results" : "Next question") + '</button></div>';
+    }
+    return playerHtml(s) + ctl;
+  }
   function homeHtml() {
     var out = '<section class="lv"><h3>Join a live quiz</h3><p class="tag">Type the code shown by the host.</p><input class="lvjoin" id="lj-code" type="text" maxlength="5" autocomplete="off" autocapitalize="characters" spellcheck="false" value="' + esc(R.join) + '" aria-label="Room code">' +
       '<div class="row tight"><button class="btn primary" data-act="join"' + (R.busy ? " disabled" : "") + '>Join</button></div></section>';
     var last = DX.store.get("dx.room", null);
     if (last && last.code) out += '<div class="row tight"><button class="btn ghost small" data-act="back" data-id="' + last.id + '" data-code="' + esc(last.code) + '">Return to room ' + esc(last.code) + '</button></div>';
     if (admin()) out += createHtml();
+    else if (DX.features && DX.features.on("friends")) out += friendFormHtml();
     return out;
   }
   function createHtml() {
@@ -223,7 +291,7 @@
   /* ---------- page ---------- */
   function tickNow() {
     var s = R.st; if (!s || s.status !== "question") return;
-    var now = performance.now(), mode = s.is_host ? "all" : "live", fx = DX.fx, toStart = R.startAt - now;
+    var now = performance.now(), mode = hostOnly(s) ? "all" : "live", fx = DX.fx, toStart = R.startAt - now;
     if (toStart > 0) {
       var n = Math.ceil(toStart / 1000), el = document.getElementById("lv-ready");
       if (el) el.textContent = n;
@@ -235,23 +303,26 @@
     if (t) t.textContent = Math.ceil(left) + "s";
     if (bar) { bar.firstChild.style.width = Math.min(100, left * 100 / s.sec) + "%"; bar.className = "lvbar" + (left < 6 ? " low" : ""); }
     var c = Math.ceil(left);
-    if (c <= 3 && c > 0 && c !== R.lastTick) { R.lastTick = c; if (fx && !s.is_host && s.my_choice == null) fx.play("tick", mode); }
+    if (c <= 3 && c > 0 && c !== R.lastTick) { R.lastTick = c; if (fx && !hostOnly(s) && s.my_choice == null) fx.play("tick", mode); }
   }
+  function inviteCode() { try { var m = /[?&]room=([A-Za-z0-9]{5})/.exec(location.search); return m ? m[1].toUpperCase() : ""; } catch (e) { return ""; } }
   function render(a) {
     app = a; var c = C();
     if (!c || !c.ok) { a.innerHTML = '<div class="wrap stack"><h1>Live quiz</h1><p class="lede">Live quizzes could not load. Check your connection and refresh.</p></div>'; return; }
     if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Live quiz</p><h1>Sign in to join</h1><p class="lede">Live quizzes run on your phone with a code from the host.</p></header><a class="btn primary" href="#account">Sign in</a></div>'; return; }
+    var inv = inviteCode();
+    if (inv && !R.id && !R.busy && !R.tried) { R.tried = true; R.join = inv; try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) { } join(); return; }
     var note = R.err ? '<p class="note bad" role="alert">' + esc(R.err) + '</p>' : "", body, head = "";
-    if (R.id && R.st) body = R.st.is_host ? hostHtml(R.st) : playerHtml(R.st);
+    if (R.id && R.st) body = hostOnly(R.st) ? hostHtml(R.st) : R.st.is_host ? friendHostHtml(R.st) : playerHtml(R.st);
     else if (R.id) body = '<p class="muted">Joining…</p>';
     else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
     a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
-    ["lf-name", "lf-n", "lf-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
+    ["lf-name", "lf-n", "lf-sec", "ff-name", "ff-n", "ff-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
     var s0 = R.st;
     if (s0 && (s0.status === "reveal" || s0.status === "finished") && DX.fx) {
       var sc = document.getElementById("lv-score");
       if (sc) { var to = Number(sc.getAttribute("data-to")); DX.fx.countUp(sc, R.shownScore, to); R.shownScore = to; }
-      if (!s0.is_host && R.fxIdx !== s0.cur_idx + ":" + s0.status) {
+      if (!hostOnly(s0) && R.fxIdx !== s0.cur_idx + ":" + s0.status) {
         R.fxIdx = s0.cur_idx + ":" + s0.status;
         var h = a.querySelector(".lv h3"); if (s0.status === "reveal") DX.fx.add(h, s0.my_choice === s0.right_answer ? "fx-pop" : "fx-shake");
         else DX.fx.add(h, "fx-pop");
@@ -271,11 +342,11 @@
   function onInput(e) {
     var id = e.target && e.target.id; if (!id) return;
     if (id === "lj-code") R.join = e.target.value.toUpperCase();
-    else if (/^lf-/.test(id)) R.form[id] = e.target.value;
+    else if (/^(lf|ff)-/.test(id)) R.form[id] = e.target.value;
   }
   function onKey(e) {
     if (e.target && e.target.id === "lj-code" && e.key === "Enter") { join(); return; }
-    if (!R.st || R.st.status !== "question" || R.st.is_host || (e.target && /INPUT|SELECT|TEXTAREA/.test(e.target.tagName))) return;
+    if (!R.st || R.st.status !== "question" || hostOnly(R.st) || (e.target && /INPUT|SELECT|TEXTAREA/.test(e.target.tagName))) return;
     var i = "abcd".indexOf(e.key.toLowerCase()); if (i < 0) i = ["1", "2", "3", "4"].indexOf(e.key);
     if (i >= 0) answer(i);
   }
@@ -287,6 +358,8 @@
     if (a === "lsound") { DX.fx.toggleLiveSound(); repaint(); return; }
     if (a === "lfx") { DX.fx.toggle(); repaint(); return; }
     if (a === "join") join();
+    else if (a === "fcreate") friendCreate();
+    else if (a === "copyinv") { var u = inviteUrl(); try { navigator.clipboard.writeText(u).then(function () { R.err = ""; t.textContent = "Copied"; }, function () { t.textContent = u; }); } catch (er) { t.textContent = u; } }
     else if (a === "pick") answer(parseInt(t.getAttribute("data-i"), 10));
     else if (a === "create") create();
     else if (a === "back") enter(parseInt(t.getAttribute("data-id"), 10), t.getAttribute("data-code"));
