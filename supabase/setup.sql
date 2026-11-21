@@ -1094,6 +1094,9 @@ create or replace function public.server_time() returns timestamptz language sql
 grant execute on function public.server_time() to anon, authenticated;
 
 -- ===== Update 7 (feedback box) =====
+-- DxDrill update 7: a feedback box. Students send a message; only the admin can read them. Needs updates 1 to 6. Safe to run again.
+
+create table if not exists public.feedback (
   id         bigint generated always as identity primary key,
   user_id    uuid not null references auth.users(id) on delete cascade,
   page       text not null default '',
@@ -1134,6 +1137,9 @@ revoke all on function public.send_feedback(text, text), public.admin_feedback(i
 grant execute on function public.send_feedback(text, text), public.admin_feedback(int), public.admin_delete_feedback(bigint) to authenticated;
 
 -- ===== Update 8 (debates) =====
+-- DxDrill update 8: debates. A claim, students take a side with an optional short reason, and react to each other's reasons.
+-- Needs updates 1 to 7. Safe to run again.
+
 create table if not exists public.debates (
   id         bigint generated always as identity primary key,
   claim      text not null check (char_length(claim) between 5 and 200),
@@ -1317,6 +1323,9 @@ grant execute on function public.debate_list(), public.debate_info(bigint), publ
   public.admin_create_debate(text, text), public.admin_set_debate_closed(bigint, boolean), public.admin_delete_debate(bigint), public.admin_hide_take(bigint, boolean) to authenticated;
 
 -- ===== Update 9 (feature switches) =====
+-- DxDrill update 9: feature switches. The admin shows or hides features from students without uploading anything.
+-- Needs updates 1 to 8. Safe to run again (it never resets a switch you have already set).
+
 create table if not exists public.site_features (
   key        text primary key,
   enabled    boolean not null default false,
@@ -1344,3 +1353,144 @@ revoke all on function public.site_features(), public.admin_set_feature(text, bo
 grant execute on function public.site_features() to anon, authenticated;
 grant execute on function public.admin_set_feature(text, boolean) to authenticated;
 
+-- ===== Update 10 (practice with friends) =====
+-- DxDrill update 10: practice with friends. Any signed-in student can host a small room (public questions only), with limits.
+-- Needs updates 1 to 9. Safe to run again.
+
+alter table public.rooms add column if not exists kind text not null default 'admin' check (kind in ('admin','friends'));
+alter table public.rooms add column if not exists max_players int not null default 150 check (max_players between 2 and 150);
+
+create table if not exists public.site_settings (
+  key text primary key,
+  val int not null
+);
+alter table public.site_settings enable row level security;
+revoke all on public.site_settings from anon, authenticated;
+insert into public.site_settings (key, val) values ('friend_max_players', 30), ('friend_active_rooms', 20), ('friend_rooms_per_day', 3)
+  on conflict (key) do nothing;
+insert into public.site_features (key, enabled) values ('friends', false) on conflict (key) do nothing;
+
+create or replace function public.admin_site_settings() returns table (key text, val int)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select s.key, s.val from public.site_settings s order by s.key;
+end $$;
+create or replace function public.admin_set_setting(p_key text, p_val int) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  if p_key not in ('friend_max_players','friend_active_rooms','friend_rooms_per_day') then raise exception 'unknown setting'; end if;
+  update public.site_settings set val = greatest(1, least(coalesce(p_val, 1), case when p_key = 'friend_max_players' then 150 else 500 end)) where key = p_key;
+end $$;
+
+-- A student starts a room. Limits: one open room each, a few per day, a cap on rooms in play at once, a cap on players per room.
+create or replace function public.friend_create_room(p_name text, p_pace text, p_sec int, p_n int, p_items jsonb)
+returns table (room_id bigint, code text)
+language plpgsql security definer set search_path = public as $$
+declare rid bigint; c text; tries int := 0; it jsonb; k int := 0; opts text[]; q text;
+        alphabet text := 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; on_ boolean; mx int; act int; perday int;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select enabled into on_ from public.site_features where key = 'friends';
+  if not coalesce(on_, false) and not public.is_admin() then raise exception 'not open yet'; end if;
+  if p_pace not in ('host','auto') then raise exception 'bad pace'; end if;
+  if p_n < 3 or p_n > 20 then raise exception 'bad count'; end if;
+  if p_sec < 10 or p_sec > 60 then raise exception 'bad seconds'; end if;
+  if char_length(trim(coalesce(p_name, ''))) < 2 or char_length(trim(p_name)) > 60 then raise exception 'bad name'; end if;
+  if p_items is null or jsonb_typeof(p_items) <> 'array' or jsonb_array_length(p_items) < p_n or jsonb_array_length(p_items) > 50 then raise exception 'not enough questions sent'; end if;
+  delete from public.rooms where created_at < now() - interval '2 days';
+  if exists (select 1 from public.rooms where host_id = auth.uid() and status <> 'finished' and created_at > now() - interval '3 hours') then raise exception 'you have a room open'; end if;
+  select val into perday from public.site_settings where key = 'friend_rooms_per_day';
+  if (select count(*) from public.rooms where host_id = auth.uid() and kind = 'friends' and created_at > now() - interval '1 day') >= coalesce(perday, 3) then raise exception 'too many rooms today'; end if;
+  select val into act from public.site_settings where key = 'friend_active_rooms';
+  if (select count(*) from public.rooms where kind = 'friends' and status <> 'finished' and created_at > now() - interval '2 hours') >= coalesce(act, 20) then raise exception 'busy right now'; end if;
+  select val into mx from public.site_settings where key = 'friend_max_players';
+  loop
+    c := ''; for i in 1..5 loop c := c || substr(alphabet, 1 + floor(random() * length(alphabet))::int, 1); end loop;
+    exit when not exists (select 1 from public.rooms where rooms.code = c);
+    tries := tries + 1; if tries > 30 then raise exception 'could not make a code'; end if;
+  end loop;
+  insert into public.rooms (code, host_id, name, pace, seconds_per_q, n_questions, kind, max_players)
+    values (c, auth.uid(), trim(p_name), p_pace, p_sec, p_n, 'friends', greatest(2, coalesce(mx, 30))) returning id into rid;
+  for it in select * from jsonb_array_elements(p_items) loop
+    exit when k >= p_n;
+    q := it->>'q';
+    if q is null or char_length(q) > 600 then raise exception 'bad question'; end if;
+    select array_agg(x) into opts from jsonb_array_elements_text(it->'options') as x;
+    if opts is null or array_length(opts, 1) <> 4 then raise exception 'every question needs exactly 4 options'; end if;
+    if exists (select 1 from unnest(opts) o where char_length(o) > 250) then raise exception 'bad question'; end if;
+    if coalesce((it->>'answer')::int, -1) not between 0 and 3 then raise exception 'bad question'; end if;
+    insert into public.room_questions (room_id, idx, q, options, answer, explain) values (rid, k, q, opts, (it->>'answer')::int, left(coalesce(it->>'explain', ''), 600));
+    k := k + 1;
+  end loop;
+  insert into public.room_players (room_id, user_id) values (rid, auth.uid());   -- the host plays too
+  return query select rid, c;
+end $$;
+
+drop function if exists public.room_state(bigint);
+
+create or replace function public.room_state(p_room bigint)
+returns table (room_id bigint, kind text, max_players int, name text, pace text, sec int, n int, status text, cur_idx int, q_text text, q_options text[],
+               secs_left numeric, lead_left numeric, reveal_left numeric, players bigint, answered bigint, right_answer int, explain text,
+               my_choice int, my_points int, my_score int, my_rank bigint, option_counts int[], is_host boolean)
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; me int := null; isn boolean; qrow public.room_questions; mine public.room_answers; ps public.room_players;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if not found then raise exception 'room not found'; end if;
+  isn := (r.host_id = auth.uid());
+  select * into ps from public.room_players rp0 where rp0.room_id = r.id and rp0.user_id = auth.uid();
+  if not isn and not found and not public.is_admin() then raise exception 'not in room'; end if;
+  if r.cur_idx >= 0 then select * into qrow from public.room_questions where room_questions.room_id = r.id and idx = r.cur_idx; end if;
+  select * into mine from public.room_answers where room_answers.room_id = r.id and idx = r.cur_idx and user_id = auth.uid();
+  return query select r.id, r.kind, r.max_players, r.name, r.pace, r.seconds_per_q, r.n_questions, r.status, r.cur_idx,
+    case when r.status in ('question','reveal') or (r.status = 'finished' and r.cur_idx >= 0) then qrow.q end,
+    case when r.status in ('question','reveal') or (r.status = 'finished' and r.cur_idx >= 0) then qrow.options end,
+    case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at + make_interval(secs => r.seconds_per_q) - now())))::numeric else 0::numeric end,
+    case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at - now())))::numeric else 0::numeric end,
+    case when r.status = 'reveal' and r.pace = 'auto' then greatest(0, 7 - extract(epoch from (now() - r.reveal_at)))::numeric else 0::numeric end,
+    (select count(*) from public.room_players rp where rp.room_id = r.id),
+    (select count(*) from public.room_answers ra where ra.room_id = r.id and ra.idx = r.cur_idx),
+    case when r.status in ('reveal','finished') then qrow.answer end,
+    case when r.status in ('reveal','finished') then qrow.explain end,
+    mine.choice,
+    case when r.status in ('reveal','finished') then mine.points end,
+    coalesce(ps.score, 0),
+    case when ps.user_id is not null then 1 + (select count(*) from public.room_players rp where rp.room_id = r.id and rp.score > ps.score) end,
+    case when r.status in ('reveal','finished') then (select array_agg(c order by g) from (
+        select g, count(a.user_id)::int as c from generate_series(0, 3) g
+        left join public.room_answers a on a.room_id = r.id and a.idx = r.cur_idx and a.choice = g group by g) s) end,
+    isn;
+end $$;
+
+create or replace function public.room_join(p_code text)
+returns table (room_id bigint)
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into r from public.rooms where code = upper(trim(p_code));
+  if not found then raise exception 'room not found'; end if;
+  if r.status = 'finished' then raise exception 'room finished'; end if;
+  if not exists (select 1 from public.room_players where room_players.room_id = r.id and user_id = auth.uid())
+     and (select count(*) from public.room_players where room_players.room_id = r.id) >= r.max_players then raise exception 'room full'; end if;
+  insert into public.room_players (room_id, user_id) values (r.id, auth.uid()) on conflict do nothing;
+  return query select r.id;
+end $$;
+
+create or replace function public.room_start(p_room bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms;
+begin
+  r := public._room_host(p_room);
+  if r.kind = 'friends' and (select count(*) from public.room_players where room_id = r.id) < 2 then raise exception 'need a friend'; end if;
+  if r.status = 'lobby' then update public.rooms set status = 'question', cur_idx = 0, q_started_at = now() + interval '3 seconds' where id = r.id; end if;
+end $$;
+
+revoke all on function public.room_state(bigint), public.room_join(text), public.room_start(bigint), public.friend_create_room(text, text, int, int, jsonb),
+  public.admin_site_settings(), public.admin_set_setting(text, int) from public, anon;
+grant execute on function public.room_state(bigint), public.room_join(text), public.room_start(bigint), public.friend_create_room(text, text, int, int, jsonb),
+  public.admin_site_settings(), public.admin_set_setting(text, int) to authenticated;
