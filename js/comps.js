@@ -176,15 +176,15 @@
 
   function render(a) {
     app = a; var c = C();
-    if (!c || !c.ok) { a.innerHTML = '<div class="wrap stack"><h1>Compete</h1><p class="lede">Competitions could not load. Check your connection and refresh.</p></div>'; return; }
-    if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Compete</p><h1>Sign in to compete</h1><p class="lede">Ranked, timed rounds for the whole school.</p></header><a class="btn primary" href="#account" style="text-decoration:none;align-self:flex-start">Sign in or create an account</a></div>'; return; }
+    if (!c || !c.ok) { a.innerHTML = '<div class="wrap stack"><h1>Challenges</h1><p class="lede">Challenges could not load. Check your connection and refresh.</p></div>'; return; }
+    if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Challenges</p><h1>Sign in to play</h1><p class="lede">Ranked, timed rounds for the whole school.</p></header><a class="btn primary" href="#account" style="text-decoration:none;align-self:flex-start">Sign in or create an account</a></div>'; return; }
     var body = "";
     if (!K.loaded && K.view === "list") { body = '<p class="muted">Loading…</p>'; if (!K.loading) { K.loading = true; load(); } }
     var note = (K.err ? '<p class="note bad" role="alert">' + esc(K.err) + '</p>' + (K.retry ? '<div class="row tight"><button class="btn small" data-act="resume">Try again</button></div>' : K.down ? '<div class="row tight"><button class="btn small" data-act="back">Try again</button></div>' : "") : "") + (K.msg ? '<p class="note">' + esc(K.msg) + '</p>' : "");
     if (K.view === "play") body = playHtml();
     else if (K.view === "results") body = resultsHtml();
     else if (K.loaded) body = (K.comps.length ? K.comps.map(cardHtml).join("") : '<p class="muted">No competitions yet.</p>') + (admin() ? adminHtml() : "");
-    var head = K.view === "list" ? '<header><p class="eyebrow">Compete</p><h1>Competitions</h1><p class="lede">Ranked and timed. Every student gets different questions from a hidden bank, and answers stay secret until it closes.</p></header>' : "";
+    var head = K.view === "list" ? '<header><p class="eyebrow">Challenges</p><h1>Challenges</h1><p class="lede">Ranked and timed. Every student gets different questions from a hidden bank, and answers stay secret until it closes.</p></header>' : "";
     a.innerHTML = '<div class="wrap stack">' + head + note + body + '</div>';
     ["ci-pool", "ci-text", "cf-name", "cf-open", "cf-close", "cf-n", "cf-sec", "cf-pool"].forEach(function (id) { var el = document.getElementById(id); if (el && K.form[id] !== undefined) el.value = K.form[id]; });
     if (K.view === "play" && K.st && K.st.state === "question") tick();
