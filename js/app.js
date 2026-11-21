@@ -45,6 +45,8 @@
     board: DX.board,
     polls: DX.polls,
     about: DX.about,
+    start: DX.start,
+    feedback: DX.feedback,
     competitions: DX.comps,
     live: DX.rooms,
     cards: DX.cards,
