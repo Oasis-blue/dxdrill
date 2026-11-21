@@ -1133,3 +1133,186 @@ end $$;
 revoke all on function public.send_feedback(text, text), public.admin_feedback(int), public.admin_delete_feedback(bigint) from public, anon;
 grant execute on function public.send_feedback(text, text), public.admin_feedback(int), public.admin_delete_feedback(bigint) to authenticated;
 
+-- ===== Update 8 (debates) =====
+create table if not exists public.debates (
+  id         bigint generated always as identity primary key,
+  claim      text not null check (char_length(claim) between 5 and 200),
+  context    text not null default '' check (char_length(context) <= 600),
+  closed     boolean not null default false,
+  created_at timestamptz not null default now()
+);
+create table if not exists public.debate_takes (
+  id         bigint generated always as identity primary key,
+  debate_id  bigint not null references public.debates(id) on delete cascade,
+  user_id    uuid not null references auth.users(id) on delete cascade,
+  side       text not null check (side in ('agree','disagree')),
+  reason     text check (reason is null or char_length(reason) between 1 and 300),
+  hidden     boolean not null default false,
+  created_at timestamptz not null default now(),
+  unique (debate_id, user_id)
+);
+create table if not exists public.debate_reactions (
+  take_id bigint not null references public.debate_takes(id) on delete cascade,
+  user_id uuid not null references auth.users(id) on delete cascade,
+  kind    text not null check (kind in ('good','new','unsure')),
+  primary key (take_id, user_id)
+);
+create table if not exists public.debate_suggestions (
+  id         bigint generated always as identity primary key,
+  user_id    uuid not null references auth.users(id) on delete cascade,
+  topic      text not null check (char_length(topic) between 5 and 200),
+  created_at timestamptz not null default now()
+);
+alter table public.debates            enable row level security;
+alter table public.debate_takes       enable row level security;
+alter table public.debate_reactions   enable row level security;
+alter table public.debate_suggestions enable row level security;
+revoke all on public.debates, public.debate_takes, public.debate_reactions, public.debate_suggestions from anon, authenticated;
+
+create or replace function public.debate_list()
+returns table (id bigint, claim text, closed boolean, created_at timestamptz, takes bigint, my_side text)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  return query select d.id, d.claim, d.closed, d.created_at,
+      (select count(*) from public.debate_takes t where t.debate_id = d.id),
+      (select t.side from public.debate_takes t where t.debate_id = d.id and t.user_id = auth.uid())
+    from public.debates d order by d.closed, d.created_at desc limit 100;
+end $$;
+
+-- The split between sides stays hidden until you have taken a side yourself (or it is closed, or you are the admin).
+create or replace function public.debate_info(p_id bigint)
+returns table (id bigint, claim text, context text, closed boolean, my_side text, my_reason text, n_agree bigint, n_disagree bigint)
+language plpgsql security definer stable set search_path = public as $$
+declare d public.debates; mine public.debate_takes; see boolean;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into d from public.debates where debates.id = p_id;
+  if not found then raise exception 'not found'; end if;
+  select * into mine from public.debate_takes t where t.debate_id = p_id and t.user_id = auth.uid();
+  see := found or d.closed or public.is_admin();
+  return query select d.id, d.claim, d.context, d.closed, mine.side, mine.reason,
+    case when see then (select count(*) from public.debate_takes t where t.debate_id = p_id and t.side = 'agree') end,
+    case when see then (select count(*) from public.debate_takes t where t.debate_id = p_id and t.side = 'disagree') end;
+end $$;
+
+create or replace function public.debate_takes(p_id bigint, p_side text default null, p_limit int default 40)
+returns table (id bigint, display_name text, class_id text, side text, reason text, hidden boolean, created_at timestamptz,
+               good bigint, new_to_me bigint, unsure bigint, my_reaction text, mine boolean)
+language plpgsql security definer stable set search_path = public as $$
+declare d public.debates;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into d from public.debates where debates.id = p_id;
+  if not found then raise exception 'not found'; end if;
+  if not (d.closed or public.is_admin() or exists (select 1 from public.debate_takes t where t.debate_id = p_id and t.user_id = auth.uid())) then raise exception 'take a side first'; end if;
+  return query
+    select t.id, p.display_name, p.class_id, t.side, t.reason, t.hidden, t.created_at,
+      (select count(*) from public.debate_reactions r where r.take_id = t.id and r.kind = 'good'),
+      (select count(*) from public.debate_reactions r where r.take_id = t.id and r.kind = 'new'),
+      (select count(*) from public.debate_reactions r where r.take_id = t.id and r.kind = 'unsure'),
+      (select r.kind from public.debate_reactions r where r.take_id = t.id and r.user_id = auth.uid()),
+      (t.user_id = auth.uid())
+    from public.debate_takes t join public.profiles p on p.id = t.user_id
+    where t.debate_id = p_id and t.reason is not null and (p_side is null or t.side = p_side) and (not t.hidden or public.is_admin())
+    order by (select count(*) from public.debate_reactions r where r.take_id = t.id) desc, t.created_at desc
+    limit least(greatest(p_limit, 1), 100);
+end $$;
+
+create or replace function public.debate_take(p_id bigint, p_side text, p_reason text default null) returns void
+language plpgsql security definer set search_path = public as $$
+declare d public.debates; r text := nullif(trim(coalesce(p_reason, '')), '');
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into d from public.debates where debates.id = p_id;
+  if not found then raise exception 'not found'; end if;
+  if d.closed then raise exception 'debate closed'; end if;
+  if p_side not in ('agree','disagree') then raise exception 'bad side'; end if;
+  if r is not null and char_length(r) > 300 then raise exception 'reason too long'; end if;
+  insert into public.debate_takes (debate_id, user_id, side, reason) values (p_id, auth.uid(), p_side, r)
+    on conflict (debate_id, user_id) do update set side = excluded.side, reason = excluded.reason, hidden = false;
+end $$;
+
+-- One reaction per person per reason. p_kind null removes yours. Not on your own reason.
+create or replace function public.debate_react(p_take bigint, p_kind text) returns void
+language plpgsql security definer set search_path = public as $$
+declare t public.debate_takes; d public.debates;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into t from public.debate_takes where id = p_take;
+  if not found then raise exception 'not found'; end if;
+  select * into d from public.debates where debates.id = t.debate_id;
+  if d.closed then raise exception 'debate closed'; end if;
+  if t.user_id = auth.uid() then raise exception 'not your own'; end if;
+  if not exists (select 1 from public.debate_takes x where x.debate_id = t.debate_id and x.user_id = auth.uid()) then raise exception 'take a side first'; end if;
+  if p_kind is null then delete from public.debate_reactions where take_id = p_take and user_id = auth.uid();
+  else
+    if p_kind not in ('good','new','unsure') then raise exception 'bad kind'; end if;
+    insert into public.debate_reactions (take_id, user_id, kind) values (p_take, auth.uid(), p_kind)
+      on conflict (take_id, user_id) do update set kind = excluded.kind;
+  end if;
+end $$;
+
+create or replace function public.debate_suggest(p_topic text) returns void
+language plpgsql security definer set search_path = public as $$
+declare m text := trim(coalesce(p_topic, ''));
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  if char_length(m) < 5 then raise exception 'too short'; end if;
+  if char_length(m) > 200 then raise exception 'too long'; end if;
+  if (select count(*) from public.debate_suggestions where user_id = auth.uid() and created_at > now() - interval '1 day') >= 5 then raise exception 'too many today'; end if;
+  insert into public.debate_suggestions (user_id, topic) values (auth.uid(), m);
+end $$;
+
+create or replace function public.admin_debate_suggestions()
+returns table (id bigint, created_at timestamptz, display_name text, topic text)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select s.id, s.created_at, p.display_name, s.topic from public.debate_suggestions s left join public.profiles p on p.id = s.user_id order by s.created_at desc limit 100;
+end $$;
+
+create or replace function public.admin_delete_debate_suggestion(p_id bigint) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.debate_suggestions where id = p_id;
+end $$;
+
+create or replace function public.admin_create_debate(p_claim text, p_context text default '') returns bigint
+language plpgsql security definer set search_path = public as $$
+declare rid bigint;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  insert into public.debates (claim, context) values (trim(p_claim), trim(coalesce(p_context, ''))) returning id into rid;
+  return rid;
+end $$;
+
+create or replace function public.admin_set_debate_closed(p_id bigint, p_closed boolean) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  update public.debates set closed = p_closed where id = p_id;
+end $$;
+
+create or replace function public.admin_delete_debate(p_id bigint) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  delete from public.debates where id = p_id;
+end $$;
+
+create or replace function public.admin_hide_take(p_take bigint, p_hide boolean) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  update public.debate_takes set hidden = p_hide where id = p_take;
+end $$;
+
+revoke all on function public.debate_list(), public.debate_info(bigint), public.debate_takes(bigint, text, int), public.debate_take(bigint, text, text),
+  public.debate_react(bigint, text), public.debate_suggest(text), public.admin_debate_suggestions(), public.admin_delete_debate_suggestion(bigint),
+  public.admin_create_debate(text, text), public.admin_set_debate_closed(bigint, boolean), public.admin_delete_debate(bigint), public.admin_hide_take(bigint, boolean) from public, anon;
+grant execute on function public.debate_list(), public.debate_info(bigint), public.debate_takes(bigint, text, int), public.debate_take(bigint, text, text),
+  public.debate_react(bigint, text), public.debate_suggest(text), public.admin_debate_suggestions(), public.admin_delete_debate_suggestion(bigint),
+  public.admin_create_debate(text, text), public.admin_set_debate_closed(bigint, boolean), public.admin_delete_debate(bigint), public.admin_hide_take(bigint, boolean) to authenticated;
+
