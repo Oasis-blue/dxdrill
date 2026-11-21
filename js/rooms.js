@@ -2,7 +2,7 @@
 (function () {
   var DX = window.DX, esc = DX.esc, app = null;
   var R = { id: 0, code: "", st: null, board: null, cls: null, err: "", busy: false, form: {}, join: "", confirm: false,
-            poll: null, tick: null, deadline: 0, sig: "", asked: false, fetching: false, bankPools: null };
+            poll: null, tick: null, deadline: 0, startAt: 0, inLead: false, lastN: 0, lastTick: -1, shownScore: 0, fxIdx: -2, sig: "", asked: false, fetching: false, bankPools: null };
   DX.rooms = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave };
 
   var css = document.createElement("style");
@@ -68,7 +68,12 @@
     var old = R.st;
     if (s.status === "question" && s.my_choice == null && old && old.cur_idx === s.cur_idx && old.my_choice != null) s.my_choice = old.my_choice;
     R.st = s;
-    if (s.status === "question") R.deadline = performance.now() + Number(s.secs_left) * 1000;
+    if (s.status === "question") { R.deadline = performance.now() + Number(s.secs_left) * 1000; R.startAt = R.deadline - Number(s.sec) * 1000; if (performance.now() < R.startAt) R.inLead = true; }
+    var mode = s.is_host ? "all" : "live", fx = DX.fx;
+    if (fx && old && old.status !== s.status) {
+      if (s.status === "reveal" && !s.is_host) { var good = s.my_choice != null && s.my_choice === s.right_answer; fx.play(good ? "ok" : "bad", mode); fx.buzz(good ? 15 : 40); }
+      else if (s.status === "finished") fx.play("done", mode);
+    }
     var sig = [s.status, s.cur_idx, s.players, s.answered, s.my_choice, s.is_host].join("|");
     var changed = sig !== R.sig; R.sig = sig;
     if (s.status !== (old && old.status) || s.cur_idx !== (old && old.cur_idx)) { R.asked = false; R.board = null; R.cls = null; }
@@ -82,7 +87,7 @@
     R.board = R.board || [];
   }
   function enter(id, code) {
-    R.id = id; R.code = code || R.code; R.st = null; R.board = null; R.cls = null; R.sig = ""; R.err = ""; remember(); fetchState();
+    R.id = id; R.code = code || R.code; R.st = null; R.shownScore = 0; R.fxIdx = -2; R.board = null; R.cls = null; R.sig = ""; R.err = ""; remember(); fetchState();
   }
   function act(rpc, args, ok) {
     R.busy = true; R.err = ""; repaint();
@@ -134,14 +139,21 @@
     return '<h3>Class averages</h3><div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Class</th><th class="n">Players</th><th class="n">Average</th></tr></thead><tbody>' +
       rows.map(function (x) { return '<tr><td>' + esc(clsLabel(x.class_id)) + '</td><td class="n">' + x.players + '</td><td class="n">' + x.avg_score + '</td></tr>'; }).join("") + '</tbody></table></div>';
   }
+  function shown(s) { return Math.min(Number(s.sec), Math.max(0, (R.deadline - performance.now()) / 1000)); }
+  function leading() { return !!(R.st && R.st.status === "question" && performance.now() < R.startAt); }
+  function readyHtml(s) {
+    return '<section class="lv" style="text-align:center"><p class="tag">Question ' + (Number(s.cur_idx) + 1) + ' of ' + s.n + '</p><h3>Get ready</h3><div class="lvcode" id="lv-ready">' + Math.max(1, Math.ceil((R.startAt - performance.now()) / 1000)) + '</div></section>';
+  }
   function timerHtml(s) {
-    return '<div class="row tight" style="justify-content:space-between"><span class="tag">Question ' + (Number(s.cur_idx) + 1) + ' of ' + s.n + '</span><span class="lvtime" id="lv-t" aria-live="off">' + Math.ceil(Number(s.secs_left)) + 's</span></div><div class="lvbar" id="lv-b"><i style="width:' + Math.min(100, Number(s.secs_left) * 100 / s.sec) + '%"></i></div>';
+    return '<div class="row tight" style="justify-content:space-between"><span class="tag">Question ' + (Number(s.cur_idx) + 1) + ' of ' + s.n + '</span><span class="lvtime" id="lv-t" aria-live="off">' + Math.ceil(shown(s)) + 's</span></div><div class="lvbar" id="lv-b"><i style="width:' + Math.min(100, shown(s) * 100 / s.sec) + '%"></i></div>';
   }
   function optionsHtml(s, interactive) {
     var reveal = s.status === "reveal" || s.status === "finished";
     return (s.q_options || []).map(function (o, i) {
       var cls = "lvopt" + (reveal && i === s.right_answer ? " right" : "") + (reveal && s.my_choice === i ? " mine" : "") + (!reveal && s.my_choice === i ? " picked" : "");
       var cnt = reveal && s.option_counts ? '<span class="cnt">' + s.option_counts[i] + '</span>' : "";
+      if (reveal && i === s.right_answer) cnt += '<span class="fxmk ok">\u2713 ' + (s.my_choice === i ? "Your answer" : "Right answer") + '</span>';
+      else if (reveal && s.my_choice === i) cnt += '<span class="fxmk no">\u2717 Your answer</span>';
       return '<button class="' + cls + '" data-act="pick" data-i="' + i + '"' + (interactive && s.my_choice == null ? "" : " disabled") + '><b>' + L[i] + '</b>' + cnt + esc(o) + '</button>';
     }).join("");
   }
@@ -151,6 +163,8 @@
     if (s.status === "lobby") {
       out = '<section class="lv"><p class="tag">Go to DxDrill, open Live, and type</p><div class="lvcode" aria-label="Room code">' + esc(R.code) + '</div>' + meta +
         '<div class="row tight"><button class="btn primary" data-act="start"' + b + '>Start (' + s.players + ' joined)</button><button class="btn ghost small" data-act="del">Close room</button></div></section>';
+    } else if (s.status === "question" && leading()) {
+      out = readyHtml(s);
     } else if (s.status === "question") {
       out = '<section class="lv">' + timerHtml(s) + '<h3>' + esc(s.q_text) + '</h3>' + optionsHtml(s, false) + '<p class="tag">' + s.answered + ' of ' + s.players + ' answered</p>' +
         '<div class="row tight"><button class="btn primary" data-act="next"' + b + '>Show the answer now</button></div>' + meta + '</section>';
@@ -169,15 +183,16 @@
   function playerHtml(s) {
     var out;
     if (s.status === "lobby") out = '<section class="lv"><h3>You are in</h3><p>' + esc(s.name) + '</p><p class="tag">' + s.players + ' joined. Waiting for the host to start…</p></section>';
+    else if (s.status === "question" && leading()) out = readyHtml(s);
     else if (s.status === "question") {
       out = '<section class="lv">' + timerHtml(s) + '<h3>' + esc(s.q_text) + '</h3>' + optionsHtml(s, true) +
         (s.my_choice != null ? '<p class="tag">Locked in. Wait for the answer…</p>' : '<p class="tag">Faster right answers earn more points.</p>') + '</section>';
     } else if (s.status === "reveal") {
       var ok = s.my_choice != null && s.my_choice === s.right_answer;
       out = '<section class="lv"><h3>' + (s.my_choice == null ? "No answer in time" : ok ? "Correct! +" + s.my_points : "Not quite") + '</h3>' + optionsHtml(s, false) +
-        (s.explain ? '<p>' + esc(s.explain) + '</p>' : "") + '<p class="tag">Your score ' + s.my_score + ' · rank ' + s.my_rank + ' of ' + s.players + '</p><h3>Top 5</h3>' + boardHtml(R.board, 5) +
+        (s.explain ? '<p>' + esc(s.explain) + '</p>' : "") + '<p class="tag">Your score <b id="lv-score" data-to="' + s.my_score + '">' + R.shownScore + '</b> · rank ' + s.my_rank + ' of ' + s.players + '</p><h3>Top 5</h3>' + boardHtml(R.board, 5) +
         '<p class="tag">' + (s.pace === "auto" ? "Next question starting…" : "Waiting for the host…") + '</p></section>';
-    } else out = '<section class="lv"><h3>Finished</h3><p>You scored <b>' + s.my_score + '</b> and ranked <b>' + s.my_rank + '</b> of ' + s.players + '.</p>' + boardHtml(R.board, 10) + classHtml(R.cls) +
+    } else out = '<section class="lv"><h3>Finished</h3><p>You scored <b id="lv-score" data-to="' + s.my_score + '">' + R.shownScore + '</b> and ranked <b>' + s.my_rank + '</b> of ' + s.players + '.</p>' + boardHtml(R.board, 10) + classHtml(R.cls) +
       '<div class="row tight"><button class="btn small" data-act="leaveroom">Done</button></div></section>';
     return out;
   }
@@ -208,9 +223,19 @@
   /* ---------- page ---------- */
   function tickNow() {
     var s = R.st; if (!s || s.status !== "question") return;
-    var left = Math.max(0, R.deadline - performance.now()), t = document.getElementById("lv-t"), bar = document.getElementById("lv-b");
-    if (t) t.textContent = Math.ceil(left / 1000) + "s";
-    if (bar) { bar.firstChild.style.width = Math.min(100, left * 100 / s.sec) + "%"; bar.className = "lvbar" + (left < 6000 ? " low" : ""); }
+    var now = performance.now(), mode = s.is_host ? "all" : "live", fx = DX.fx, toStart = R.startAt - now;
+    if (toStart > 0) {
+      var n = Math.ceil(toStart / 1000), el = document.getElementById("lv-ready");
+      if (el) el.textContent = n;
+      if (n !== R.lastN) { R.lastN = n; if (fx) { fx.add(el, "fx-beat"); fx.play("ready", mode); } }
+      R.inLead = true; return;
+    }
+    if (R.inLead) { R.inLead = false; R.lastN = 0; R.lastTick = -1; R.sig = ""; if (fx) fx.play("go", mode); repaint(); return; }
+    var left = shown(s), t = document.getElementById("lv-t"), bar = document.getElementById("lv-b");
+    if (t) t.textContent = Math.ceil(left) + "s";
+    if (bar) { bar.firstChild.style.width = Math.min(100, left * 100 / s.sec) + "%"; bar.className = "lvbar" + (left < 6 ? " low" : ""); }
+    var c = Math.ceil(left);
+    if (c <= 3 && c > 0 && c !== R.lastTick) { R.lastTick = c; if (fx && !s.is_host && s.my_choice == null) fx.play("tick", mode); }
   }
   function render(a) {
     app = a; var c = C();
@@ -220,12 +245,28 @@
     if (R.id && R.st) body = R.st.is_host ? hostHtml(R.st) : playerHtml(R.st);
     else if (R.id) body = '<p class="muted">Joining…</p>';
     else { head = '<header><p class="eyebrow">Live</p><h1>Live rooms</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
-    a.innerHTML = '<div class="wrap stack">' + head + note + body + '</div>';
+    a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
     ["lf-name", "lf-n", "lf-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
+    var s0 = R.st;
+    if (s0 && (s0.status === "reveal" || s0.status === "finished") && DX.fx) {
+      var sc = document.getElementById("lv-score");
+      if (sc) { var to = Number(sc.getAttribute("data-to")); DX.fx.countUp(sc, R.shownScore, to); R.shownScore = to; }
+      if (!s0.is_host && R.fxIdx !== s0.cur_idx + ":" + s0.status) {
+        R.fxIdx = s0.cur_idx + ":" + s0.status;
+        var h = a.querySelector(".lv h3"); if (s0.status === "reveal") DX.fx.add(h, s0.my_choice === s0.right_answer ? "fx-pop" : "fx-shake");
+        else DX.fx.add(h, "fx-pop");
+      }
+    }
     if (R.id && !R.poll && !R.fetching) schedule();
     if (R.id && !R.tick) R.tick = setInterval(tickNow, 250);
     if (!R.id && R.tick) { clearInterval(R.tick); R.tick = null; }
     tickNow();
+  }
+  function toggles() {
+    if (!DX.fx) return "";
+    return '<div class="row tight" style="margin-top:6px"><button class="chip toggle" data-act="lsound" aria-pressed="' + DX.fx.liveSound() + '">Live sounds on this device: ' + (DX.fx.liveSound() ? "on" : "off") + '</button>' +
+      '<button class="chip toggle" data-act="lfx" aria-pressed="' + DX.fx.on() + '">Effects: ' + (DX.fx.on() ? "on" : "off") + '</button></div>' +
+      (DX.fx.liveSound() && !DX.sound ? '<p class="hint">The Sound button at the top is off, so nothing will play.</p>' : "");
   }
   function onInput(e) {
     var id = e.target && e.target.id; if (!id) return;
@@ -242,6 +283,9 @@
     var t = e.target.closest ? e.target.closest("[data-act]") : null;
     if (!t) return;
     var a = t.getAttribute("data-act");
+    if (DX.fx && DX.fx.unlock) DX.fx.unlock();   /* browsers only allow sound after a tap */
+    if (a === "lsound") { DX.fx.toggleLiveSound(); repaint(); return; }
+    if (a === "lfx") { DX.fx.toggle(); repaint(); return; }
     if (a === "join") join();
     else if (a === "pick") answer(parseInt(t.getAttribute("data-i"), 10));
     else if (a === "create") create();
