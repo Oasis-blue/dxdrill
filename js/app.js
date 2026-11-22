@@ -169,7 +169,14 @@
   };
   window.addEventListener("hashchange", route);
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
-  DX.load().then(function () { return DX.cloud.init().catch(function () {}); }).then(route).catch(function (e) {
+  DX.load().then(function () {
+    route();   /* show the page as soon as the questions are in; the account check carries on behind it */
+    DX.cloud.init().catch(function () {}).then(function () {
+      navVisibility();
+      var h = (location.hash || "#home").slice(1);
+      if (h === "home" || h === "" || h === "play" || h === "features" || h === "account" || h === "board" || GATE[h]) route();
+    });
+  }).catch(function (e) {
     app.innerHTML = '<div class="wrap stack"><h1>Could not load the data</h1><p class="lede">DxDrill needs to be opened from a web address (for example GitHub Pages or Netlify), not by double-clicking the file. Details: ' + esc(e.message) + '</p></div>';
   });
 })();
