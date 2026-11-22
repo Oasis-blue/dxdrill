@@ -56,3 +56,44 @@
     else if (a === "delyes") { K.confirm = 0; C().sb.rpc("admin_delete_feedback", { p_id: id }).then(function () { K.list = null; repaint(); }); }
   }
 })();
+
+/* A gentle feedback nudge and a back-to-top button. */
+(function () {
+  var DX = window.DX, S = DX.store, now = Date.now();
+  var opens = (S.get("dx.opens", 0) || 0) + 1; S.set("dx.opens", opens);
+
+  /* Feedback toast: from the 5th visit, then at most once a week, only on the home page, never after "Don't ask again". */
+  function nudge() {
+    if (S.get("dx.nudge.off", false)) return;
+    var last = S.get("dx.nudge.last", 0) || 0;
+    if (opens < 5 || now - last < 7 * 86400000) return;
+    var h = (location.hash || "#home").slice(1);
+    if (h !== "home" && h !== "") return;
+    if (document.getElementById("updbar") || document.getElementById("splash")) return setTimeout(nudge, 3000);
+    S.set("dx.nudge.last", now);
+    var d = document.createElement("div"); d.id = "fbnudge"; d.setAttribute("role", "status");
+    d.innerHTML = '<p><b>Enjoying DxDrill?</b> Tell us what to fix or add. It takes a minute.</p>' +
+      '<div class="fbn-row"><button type="button" class="fbn-go">Send feedback</button><button type="button" class="fbn-no">Not now</button><button type="button" class="fbn-off">Don’t ask again</button></div>';
+    function close() { if (d.parentNode) d.parentNode.removeChild(d); }
+    d.querySelector(".fbn-go").onclick = function () { close(); location.hash = "#feedback"; };
+    d.querySelector(".fbn-no").onclick = close;
+    d.querySelector(".fbn-off").onclick = function () { S.set("dx.nudge.off", true); close(); };
+    document.body.appendChild(d);
+    setTimeout(close, 20000);
+  }
+  setTimeout(nudge, 6000);
+
+  /* Back to top: appears after a long scroll. */
+  var up = document.createElement("button");
+  up.id = "totop"; up.type = "button"; up.hidden = true; up.setAttribute("aria-label", "Back to top"); up.textContent = "↑";
+  up.onclick = function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  };
+  document.body.appendChild(up);
+  var tick = false;
+  window.addEventListener("scroll", function () {
+    if (tick) return; tick = true;
+    requestAnimationFrame(function () { tick = false; up.hidden = window.scrollY < 900; });
+  }, { passive: true });
+})();
