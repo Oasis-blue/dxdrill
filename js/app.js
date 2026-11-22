@@ -108,11 +108,12 @@
     cards: DX.cards,
     debates: DX.debates,
     features: DX.features,
-    account: DX.account
+    account: DX.account,
+    screen: DX.screen
   };
 
   function route() {
-    var h = (location.hash || "#home").slice(1);
+    var h = (location.hash || "#home").slice(1).split(/[?\/]/)[0];
     if (!routes[h]) {
       /* A menu page whose file did not load: say so, instead of silently showing Home. */
       if (/^[a-z]+$/.test(h) && document.querySelector('[data-nav="' + (PLAY[h] || h) + '"]')) {
@@ -218,7 +219,7 @@
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
   DX.load().then(function () {
     /* Pages that need the account check wait for it; everything else shows at once. */
-    var CLOUDY = { board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
+    var CLOUDY = { screen: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
     var h0 = (location.hash || "#home").slice(1), waits = !!CLOUDY[h0];
     var initP = Promise.resolve().then(function () { return DX.cloud.init(); }).catch(function () { });
     var timedOut = false, capped = Promise.race([initP, new Promise(function (r) { setTimeout(function () { timedOut = true; r(); }, 4000); })]);
