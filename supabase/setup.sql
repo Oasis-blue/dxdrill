@@ -1606,4 +1606,211 @@ begin
     case when ps.user_id is not null then 1 + (select count(*) from public.room_players rp where rp.room_id = r.id and rp.score > ps.score) end,
     case when r.status in ('reveal','finished') and qrow.kind = 'mcq' then (select array_agg(c order by g) from (
         select g, count(a.user_id)::int as c from generate_series(0, 3) g
-        left join public.room_answers a on a.room_id = r.id and a.idx = r.cur_idx and a.choice = g gro
+        left join public.room_answers a on a.room_id = r.id and a.idx = r.cur_idx and a.choice = g group by g) s) end,
+    isn,
+    case when vis then qrow.kind else null end, r.n_teams, ps.team, rl,
+    case when r.n_teams > 0 then (select array_agg(c order by g) from (
+        select g, count(x.user_id)::int as c from generate_series(1, r.n_teams) g left join public.room_players x on x.room_id = r.id and x.team = g group by g) s) end,
+    case when (isn or public.is_admin()) and r.status = 'question' and qrow.kind = 'describe' then
+      (select jsonb_agg(jsonb_build_object('team', g, 'name', public._team_name(g),
+          'describer', (select p.display_name from public.profiles p where p.id = public._describer(r.id, g, r.cur_idx)),
+          'done', exists (select 1 from public.room_team_points tp where tp.room_id = r.id and tp.idx = r.cur_idx and tp.team = g and tp.points > 0)) order by g)
+       from generate_series(1, r.n_teams) g) end;
+end $$;
+
+-- The describer taps "My team got it": the team scores, faster is better.
+create or replace function public.room_describe_done(p_room bigint, p_idx int) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; ps public.room_players; q public.room_questions; spent bigint; pts int;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if not found or r.status <> 'question' or r.cur_idx <> p_idx then return; end if;
+  if now() < r.q_started_at or now() > r.q_started_at + make_interval(secs => r.seconds_per_q) + interval '1 second' then return; end if;
+  select * into ps from public.room_players where room_id = p_room and user_id = auth.uid();
+  if not found or ps.team is null then raise exception 'not in room'; end if;
+  select * into q from public.room_questions where room_id = p_room and idx = p_idx;
+  if q.kind <> 'describe' then return; end if;
+  if public._describer(p_room, ps.team, p_idx) is distinct from auth.uid() then raise exception 'not your turn to describe'; end if;
+  spent := least(r.seconds_per_q * 1000, greatest(0, (extract(epoch from (now() - r.q_started_at)) * 1000)::bigint));
+  pts := 500 + round(500 * greatest(0, 1 - spent / (r.seconds_per_q * 1000.0)))::int;
+  insert into public.room_team_points (room_id, idx, team, by_user, points) values (p_room, p_idx, ps.team, auth.uid(), pts) on conflict do nothing;
+  if found then update public.room_players set score = score + pts where room_id = p_room and user_id = auth.uid(); end if;
+end $$;
+
+-- The quizmaster can cancel a team's tap (for example if the describer said a forbidden word).
+create or replace function public.room_void_team(p_room bigint, p_idx int, p_team int) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; tp public.room_team_points;
+begin
+  r := public._room_host(p_room);
+  select * into tp from public.room_team_points where room_id = p_room and idx = p_idx and team = p_team;
+  if found and tp.points > 0 then
+    update public.room_players set score = greatest(0, score - tp.points) where room_id = p_room and user_id = tp.by_user;
+    update public.room_team_points set points = 0 where room_id = p_room and idx = p_idx and team = p_team;
+  end if;
+end $$;
+
+create or replace function public.room_team_board(p_room bigint)
+returns table (team int, name text, players bigint, quiz_pts numeric, describe_pts bigint, total numeric)
+language plpgsql security definer stable set search_path = public as $$
+declare r public.rooms;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into r from public.rooms where id = p_room;
+  if not found then raise exception 'room not found'; end if;
+  if not (r.host_id = auth.uid() or public.is_admin() or (r.status in ('reveal','finished') and exists (select 1 from public.room_players where room_id = p_room and user_id = auth.uid()))) then raise exception 'not allowed'; end if;
+  return query
+    select g, public._team_name(g), c.n,
+      round(coalesce((select sum(a.points) from public.room_answers a join public.room_players p on p.room_id = a.room_id and p.user_id = a.user_id where a.room_id = p_room and p.team = g), 0)::numeric / greatest(c.n, 1), 0),
+      coalesce((select sum(tp.points) from public.room_team_points tp where tp.room_id = p_room and tp.team = g), 0)::bigint,
+      round(coalesce((select sum(a.points) from public.room_answers a join public.room_players p on p.room_id = a.room_id and p.user_id = a.user_id where a.room_id = p_room and p.team = g), 0)::numeric / greatest(c.n, 1), 0)
+        + coalesce((select sum(tp.points) from public.room_team_points tp where tp.room_id = p_room and tp.team = g), 0)
+    from generate_series(1, greatest(r.n_teams, 1)) g
+    cross join lateral (select count(*) as n from public.room_players x where x.room_id = p_room and x.team = g) c
+    where r.n_teams > 0 order by 6 desc, 1;
+end $$;
+
+-- Create a team room. Quiz questions come from the hidden bank or from items the admin sends; describe terms are sent as items (term + forbidden words).
+create or replace function public.admin_create_team_room(p_name text, p_pace text, p_sec int, p_teams int, p_source text, p_pool text, p_n_quiz int, p_items jsonb, p_terms jsonb)
+returns table (room_id bigint, code text)
+language plpgsql security definer set search_path = public as $$
+declare rid bigint; c text; tries int := 0; it jsonb; k int := 0; opts text[]; have int; nd int := coalesce(jsonb_array_length(p_terms), 0) / greatest(p_teams, 1); qi int := 0; di int := 0; every int;
+        alphabet text := 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; quiz jsonb[] := '{}'; trm jsonb[] := '{}'; row_ record; extra jsonb; label text; t int;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  if p_teams < 2 or p_teams > 6 then raise exception 'bad teams'; end if;
+  if p_n_quiz < 1 or p_n_quiz + nd > 50 then raise exception 'bad count'; end if;
+  delete from public.rooms where created_at < now() - interval '2 days';
+  loop
+    c := ''; for i in 1..5 loop c := c || substr(alphabet, 1 + floor(random() * length(alphabet))::int, 1); end loop;
+    exit when not exists (select 1 from public.rooms where rooms.code = c);
+    tries := tries + 1; if tries > 30 then raise exception 'could not make a code'; end if;
+  end loop;
+  if p_source = 'bank' then
+    select count(*) into have from public.competition_questions cq where coalesce(p_pool, '') = '' or cq.pool = p_pool;
+    if have < p_n_quiz then raise exception 'not enough questions in the bank (have %)', have; end if;
+    for row_ in select cq.q, cq.options, cq.answer, cq.explain from public.competition_questions cq where coalesce(p_pool, '') = '' or cq.pool = p_pool order by random() limit p_n_quiz loop
+      quiz := quiz || jsonb_build_object('q', row_.q, 'options', to_jsonb(row_.options), 'answer', row_.answer, 'explain', row_.explain);
+    end loop;
+  else
+    if p_items is null or jsonb_typeof(p_items) <> 'array' or jsonb_array_length(p_items) < p_n_quiz then raise exception 'not enough questions sent'; end if;
+    for it in select * from jsonb_array_elements(p_items) loop exit when array_length(quiz, 1) >= p_n_quiz; quiz := quiz || it; end loop;
+  end if;
+  for it in select * from jsonb_array_elements(coalesce(p_terms, '[]'::jsonb)) loop trm := trm || it; end loop;
+  insert into public.rooms (code, host_id, name, pace, seconds_per_q, n_questions, kind, n_teams, max_players)
+    values (c, auth.uid(), trim(p_name), p_pace, p_sec, p_n_quiz + nd, 'team', p_teams, 150) returning id into rid;
+  every := case when nd > 0 then greatest(1, p_n_quiz / nd) else p_n_quiz + 1 end;
+  while qi < p_n_quiz or di < nd loop
+    if qi < p_n_quiz then
+      it := quiz[qi + 1];
+      select array_agg(x) into opts from jsonb_array_elements_text(it->'options') as x;
+      if opts is null or array_length(opts, 1) <> 4 then raise exception 'every question needs exactly 4 options'; end if;
+      insert into public.room_questions (room_id, idx, q, options, answer, explain, kind) values (rid, k, it->>'q', opts, (it->>'answer')::int, coalesce(it->>'explain', ''), 'mcq');
+      k := k + 1; qi := qi + 1;
+    end if;
+    if di < nd and ((qi % every = 0) or qi >= p_n_quiz) then
+      extra := '[]'::jsonb; label := '';
+      for t in 1..p_teams loop
+        it := trm[di * p_teams + t];
+        extra := extra || jsonb_build_array(jsonb_build_object('term', it->>'term', 'forbidden', coalesce(it->'forbidden', '[]'::jsonb)));
+        label := label || case when t > 1 then E'\n' else '' end || public._team_name(t) || ': ' || (it->>'term');
+      end loop;
+      insert into public.room_questions (room_id, idx, q, options, answer, explain, kind, extra) values (rid, k, label, '{}', 0, '', 'describe', extra);
+      k := k + 1; di := di + 1;
+    end if;
+  end loop;
+  return query select rid, c;
+end $$;
+
+create or replace function public.room_answer(p_room bigint, p_idx int, p_choice int) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; ans int; spent bigint; ok boolean; pts int;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if not found or r.status <> 'question' or r.cur_idx <> p_idx then return; end if;                 -- too late or stale: ignored
+  if not exists (select 1 from public.room_players where room_id = p_room and user_id = auth.uid()) then raise exception 'not in room'; end if;
+  if now() < r.q_started_at then return; end if;                                                    -- still in the get-ready lead-in
+  if now() > r.q_started_at + make_interval(secs => r.seconds_per_q) + interval '1 second' then return; end if;
+  select answer into ans from public.room_questions where room_id = p_room and idx = p_idx and kind = 'mcq';
+  if not found then return; end if;                                                                 -- describe rounds are answered with room_describe_done
+  spent := least(r.seconds_per_q * 1000, greatest(0, (extract(epoch from (now() - r.q_started_at)) * 1000)::bigint));
+  ok := p_choice between 0 and 3 and p_choice = ans;
+  pts := case when ok then 500 + round(500 * greatest(0, 1 - spent / (r.seconds_per_q * 1000.0)))::int else 0 end;
+  insert into public.room_answers (room_id, idx, user_id, choice, correct, points, ms)
+    values (p_room, p_idx, auth.uid(), p_choice, ok, pts, spent) on conflict do nothing;       -- the first answer counts
+  if found then update public.room_players set score = score + pts where room_id = p_room and user_id = auth.uid(); end if;
+end $$;
+
+revoke all on function public._team_name(int), public._describer(bigint, int, int) from public, anon, authenticated;
+revoke all on function public.room_set_team(bigint, int), public.room_start(bigint), public.room_state(bigint), public.room_describe_done(bigint, int), public.room_void_team(bigint, int, int),
+  public.room_team_board(bigint), public.admin_create_team_room(text, text, int, int, text, text, int, jsonb, jsonb) from public, anon;
+grant execute on function public.room_set_team(bigint, int), public.room_start(bigint), public.room_state(bigint), public.room_describe_done(bigint, int), public.room_void_team(bigint, int, int),
+  public.room_team_board(bigint), public.admin_create_team_room(text, text, int, int, text, text, int, jsonb, jsonb) to authenticated;
+
+-- ===== update 12: class level editable by admins =====
+-- update 12: admins can change a class's level as well as its name.
+-- Safe to run again. The existing policy classes_admin already limits updates to admins.
+revoke update on public.classes from anon, authenticated;
+grant  update (name, level) on public.classes to authenticated;
+
+-- ===== update 13: anonymous visit counter =====
+-- DxDrill update 13: anonymous visit counter. One row per device per day, no names, no cookies.
+-- Needs updates 1 to 12. Safe to run again.
+
+create table if not exists public.site_visits (
+  day    date    not null,
+  device text    not null,
+  hits   int     not null default 1,
+  signed boolean not null default false,
+  page   text,
+  primary key (day, device)
+);
+alter table public.site_visits enable row level security;
+revoke all on public.site_visits from anon, authenticated;
+
+create or replace function public.visit_ping(p_device text, p_page text, p_signed boolean) returns void
+language plpgsql security definer set search_path = public as $$
+declare d date := (now() at time zone 'Africa/Lagos')::date;
+begin
+  if p_device is null or length(p_device) < 8 or length(p_device) > 40 then return; end if;
+  -- a daily ceiling so nobody can fill the free database with fake devices
+  if (select count(*) from public.site_visits where day = d) >= 5000 then return; end if;
+  insert into public.site_visits (day, device, hits, signed, page)
+    values (d, p_device, 1, coalesce(p_signed, false), left(coalesce(p_page, ''), 24))
+  on conflict (day, device) do update
+    set hits = public.site_visits.hits + 1, signed = public.site_visits.signed or excluded.signed;
+  if random() < 0.01 then delete from public.site_visits where day < d - 120; end if;
+end $$;
+
+create or replace function public.admin_visits(p_days int default 14)
+returns table (day date, visitors bigint, signed_in bigint, hits bigint)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query
+    select v.day, count(*)::bigint, count(*) filter (where v.signed)::bigint, sum(v.hits)::bigint
+    from public.site_visits v
+    where v.day >= (now() at time zone 'Africa/Lagos')::date - (greatest(1, least(coalesce(p_days, 14), 90)) - 1)
+    group by v.day order by v.day desc;
+end $$;
+
+create or replace function public.admin_visit_totals()
+returns table (today bigint, week bigint, month bigint, signed_month bigint)
+language plpgsql security definer stable set search_path = public as $$
+declare d date := (now() at time zone 'Africa/Lagos')::date;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select
+    (select count(distinct device) from public.site_visits where day = d),
+    (select count(distinct device) from public.site_visits where day > d - 7),
+    (select count(distinct device) from public.site_visits where day > d - 30),
+    (select count(distinct device) from public.site_visits where day > d - 30 and signed);
+end $$;
+
+revoke all on function public.visit_ping(text, text, boolean), public.admin_visits(int), public.admin_visit_totals() from public, anon, authenticated;
+grant execute on function public.visit_ping(text, text, boolean) to anon, authenticated;
+grant execute on function public.admin_visits(int), public.admin_visit_totals() to authenticated;
