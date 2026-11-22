@@ -86,10 +86,12 @@
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
       loadProfile().then(function () { flush(); repaint(); });
     });
-    return C.sb.auth.getSession().then(function (r) {
+    /* The page can show as soon as we know who is signed in (read from the device). The profile and class names load behind it. */
+    var got = C.sb.auth.getSession().then(function (r) {
       C.user = r.data && r.data.session ? r.data.session.user : null;
-      return Promise.all([loadProfile(), loadClasses()]);
-    }).then(flush).catch(function () { C.down = true; /* offline is fine */ });
+    });
+    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(flush).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); });
+    return got.catch(function () { C.down = true; });
   };
 
   /* Scores: queued on the device and sent when signed in, so nothing is lost offline. */
