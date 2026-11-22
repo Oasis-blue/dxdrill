@@ -296,3 +296,11 @@ input[type="range"]{accent-color:var(--accent); min-height:44px}
 #totop[hidden]{display:none}
 @keyframes fbn-in{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
 @media (prefers-reduced-motion:reduce){#fbnudge{animation:none}}
+
+/* home: sign-in card and real counts */
+.homesign{border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:14px 16px}
+.homesign p{margin:0 0 10px}
+.statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.stat{border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--surface);text-align:center}
+.stat b{display:block;font-family:"Space Grotesk",system-ui,sans-serif;font-size:32px;line-height:1.1;color:var(--accent)}
+.stat span{display:block;margin-top:4px;color:var(--muted);font-size:15px}
