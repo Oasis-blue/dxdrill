@@ -25,6 +25,52 @@
       '</section>' +
       '<section class="section"><h2>Curriculum coverage</h2><p class="muted">' + doneTopics + ' of ' + totalTopics + ' MDCN topics have questions so far. The rest are waiting to be filled as you study.</p><div class="cov">' + cov + '</div></section>' +
       '</div>';
+    homeExtras();
+  }
+
+  /* Home extras: a sign-in card for visitors without an account, and real counts. Both appear only when the online part has answered. */
+  function countUp(el, to) {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce || to < 2) { el.textContent = to.toLocaleString(); return; }
+    var t0 = Date.now(), dur = 1100;
+    (function step() {
+      var k = Math.min(1, (Date.now() - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * e).toLocaleString();
+      if (k < 1 && el.isConnected) requestAnimationFrame(step); else el.textContent = to.toLocaleString();
+    })();
+  }
+  function showCounts(s) {
+    var hero = app.querySelector(".hero");
+    if (!hero || app.querySelector("#homecounts") || !s) return;
+    var tiles = [];   /* each number appears only once it is big enough to be worth showing; they are real counts, never padded */
+    if (s.members >= 25) tiles.push(["students signed up", s.members]);
+    if (s.answers >= 200) tiles.push(["questions answered", s.answers]);
+    if (s.answers >= 200 && s.answers_today >= 20) tiles.push(["answered today", s.answers_today]);
+    if (!tiles.length) return;
+    var sec = document.createElement("section"); sec.id = "homecounts"; sec.className = "section";
+    sec.innerHTML = '<div class="statrow">' + tiles.map(function (t) { return '<div class="stat"><b class="statn" data-to="' + t[1] + '">0</b><span>' + esc(t[0]) + '</span></div>'; }).join("") + '</div>';
+    hero.parentNode.insertBefore(sec, hero.nextSibling);
+    Array.prototype.forEach.call(sec.querySelectorAll(".statn"), function (n) { countUp(n, Number(n.getAttribute("data-to"))); });
+  }
+  function homeExtras() {
+    var c = DX.cloud; if (!c || !c.ok || !c.sb || (location.hash || "#home").slice(1) !== "home" && location.hash !== "") return;
+    var hero = app.querySelector(".hero"); if (!hero) return;
+    var off = DX.store.get("dx.homecard.off", 0) || 0;
+    if (!c.user && !app.querySelector("#homesign") && Date.now() - off > 7 * 86400000) {
+      var d = document.createElement("section"); d.id = "homesign"; d.className = "homesign";
+      d.innerHTML = '<p><b>Keep your progress.</b> Make a free account to save your practice across phones, join the leaderboards and play live quizzes.</p>' +
+        '<div class="row tight"><a class="btn primary small" href="#account" style="text-decoration:none">Sign in or sign up</a><button type="button" class="btn ghost small" data-homeclose="1" aria-label="Hide this">Not now</button></div>';
+      d.querySelector("[data-homeclose]").onclick = function () { DX.store.set("dx.homecard.off", Date.now()); d.parentNode.removeChild(d); };
+      hero.parentNode.insertBefore(d, hero.nextSibling);
+    }
+    var cached = null; try { cached = JSON.parse(sessionStorage.getItem("dx.pubstats") || "null"); } catch (e) { }
+    if (cached && Date.now() - cached.t < 300000) { showCounts(cached.s); return; }
+    c.sb.rpc("public_stats").then(function (r) {
+      if (r.error || !r.data || !r.data[0]) return;
+      var s = { members: Number(r.data[0].members) || 0, answers: Number(r.data[0].answers) || 0, answers_today: Number(r.data[0].answers_today) || 0 };
+      try { sessionStorage.setItem("dx.pubstats", JSON.stringify({ t: Date.now(), s: s })); } catch (e) { }
+      if ((location.hash || "#home").slice(1) === "home") showCounts(s);
+    }, function () { });
   }
 
   /* Play: one place for flashcards, challenges and live quizzes. */
