@@ -44,10 +44,10 @@
     });
   }
   function loadClasses() {
-    return C.sb.from("classes").select("id,name").then(function (r) {
+    return C.sb.from("classes").select("id,name,level").then(function (r) {
       if (r.error || !r.data) return;
       r.data.forEach(function (row) {
-        DX.curriculum.classes.forEach(function (k) { if (k.id === row.id) k.name = row.name || ""; });
+        DX.curriculum.classes.forEach(function (k) { if (k.id === row.id) { k.name = row.name || ""; if (row.level) k.level = row.level; } });
       });
     });
   }
@@ -200,12 +200,13 @@
       return '<option value="' + c.id + '"' + (sel === c.id ? " selected" : "") + '>' + esc(c.label + (c.name ? " · " + c.name : "") + " · " + c.level) + '</option>';
     }).join("") + '</select>';
   }
+  function showPw() { return '<button type="button" class="btn ghost small" data-act="showpw" aria-pressed="' + (!!C.showpw) + '" style="margin-top:6px">' + (C.showpw ? "Hide password" : "Show password") + '</button>'; }
   function accountView() {
     var note = (C.err ? '<p class="note bad" role="alert">' + esc(C.err) + '</p>' : "") + (C.msg && C.msg !== "offline" ? '<p class="note">' + esc(C.msg) + '</p>' : "");
     if (C.ok && C.user && C.mode === "reset") {
       return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>Choose a new password</h1><p class="lede">You opened the reset link from your email. Pick a new password for your account.</p></header>' + note +
         '<section class="section stack"><div class="field"><label class="label" for="ac-pw">New password</label><input type="password" id="ac-pw" autocomplete="new-password" aria-describedby="pwhint2"><p class="hint" id="pwhint2">At least 6 characters.</p></div>' +
-        '<div class="field"><label class="label" for="ac-pw2">New password again</label><input type="password" id="ac-pw2" autocomplete="new-password"></div>' +
+        '<div class="field"><label class="label" for="ac-pw2">New password again</label><input type="password" id="ac-pw2" autocomplete="new-password">' + showPw() + '</div>' +
         '<div class="row tight"><button class="btn primary" data-act="newpw"' + (C.busy ? " disabled" : "") + '>Save new password</button></div></section></div>';
     }
     if (!C.ok) return '<div class="wrap stack"><h1>Account</h1><p class="lede">Accounts could not load. You can still practise and run hall mode. Check your connection and refresh.</p></div>';
@@ -222,7 +223,7 @@
         (up ? '<div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" autocomplete="nickname"></div>' +
               '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", "") + '</div>' : "") +
         '<div class="field"><label class="label" for="ac-email">Email</label><input type="email" id="ac-email" autocomplete="email"></div>' +
-        '<div class="field"><label class="label" for="ac-pw">Password</label><input type="password" id="ac-pw" autocomplete="' + (up ? "new-password" : "current-password") + '" minlength="6"' + (up ? ' aria-describedby="pwhint"' : "") + '>' + (up ? '<p class="hint" id="pwhint">At least 6 characters.</p>' : "") + '</div>' +
+        '<div class="field"><label class="label" for="ac-pw">Password</label><input type="password" id="ac-pw" autocomplete="' + (up ? "new-password" : "current-password") + '" minlength="6"' + (up ? ' aria-describedby="pwhint"' : "") + '>' + (up ? '<p class="hint" id="pwhint">At least 6 characters.</p>' : "") + showPw() + '</div>' +
         '<div class="row tight"><button class="btn primary" data-act="' + (up ? "signup" : "signin") + '"' + (C.busy ? " disabled" : "") + '>' + (up ? "Create account" : "Sign in") + '</button>' +
         '<button class="btn ghost" data-act="swap">' + (up ? "I already have an account" : "Create an account") + '</button>' + (up ? "" : '<button class="btn ghost" data-act="forgot">Forgot password?</button>') + '</div></section></div>';
     }
@@ -232,8 +233,9 @@
     var p = C.profile || { display_name: "", class_id: "", is_admin: false };
     var admin = "";
     if (p.is_admin) {
-      admin = '<section class="section stack"><h2>Admin: class names</h2><p class="hint">Changes here are saved for everyone.</p>' + DX.curriculum.classes.map(function (c) {
-        return '<div class="teamrow"><div class="field"><label class="label" for="cn-' + c.id + '">' + esc(c.label + " · " + c.level) + '</label><input type="text" id="cn-' + c.id + '" value="' + esc(c.name) + '" maxlength="30" placeholder="Not set yet"></div>' +
+      admin = '<section class="section stack"><h2>Admin: classes</h2><p class="hint">Rename a class or move it to a new level (for example 300L to 400L at the start of a session). Changes are saved for everyone.</p>' + DX.curriculum.classes.map(function (c) {
+        return '<div class="teamrow"><div class="field"><label class="label" for="cn-' + c.id + '">' + esc(c.label) + ' name</label><input type="text" id="cn-' + c.id + '" value="' + esc(c.name) + '" maxlength="30" placeholder="Not set yet"></div>' +
+          '<div class="field"><label class="label" for="cl-' + c.id + '">Level</label><input type="text" id="cl-' + c.id + '" value="' + esc(c.level) + '" maxlength="8" placeholder="300L"></div>' +
           '<button class="btn small" data-act="clsave" data-id="' + c.id + '">Save</button></div>';
       }).join("") + '</section>';
     }
@@ -250,6 +252,7 @@
   var F = {}, FIELDS = ["ac-name", "ac-class", "ac-email", "ac-pw", "ac-pw2"];
   function restoreForm() {
     FIELDS.forEach(function (id) { var el = document.getElementById(id); if (el && F[id] !== undefined) el.value = F[id]; });
+    ["ac-pw", "ac-pw2"].forEach(function (id) { var el = document.getElementById(id); if (el && C.showpw) el.type = "text"; });
   }
   function val(id) { var e = document.getElementById(id); return e ? e.value.trim() : ""; }
   function run(p, ok) {
@@ -263,6 +266,11 @@
   function accountClick(e) {
     var b = e.target.closest("[data-act]"); if (!b || b.disabled || !C.ok) return;
     var a = b.getAttribute("data-act");
+    if (a === "showpw") {
+      C.showpw = !C.showpw;
+      ["ac-pw", "ac-pw2"].forEach(function (id) { var el = document.getElementById(id); if (el) el.type = C.showpw ? "text" : "password"; });
+      b.textContent = C.showpw ? "Hide password" : "Show password"; b.setAttribute("aria-pressed", String(!!C.showpw)); return;
+    }
     if (a === "swap") { C.mode = C.mode === "up" ? "in" : "up"; C.err = ""; C.msg = ""; F = { "ac-email": F["ac-email"] }; repaint(); }
     else if (a === "signin") {
       if (!val("ac-email") || !val("ac-pw")) { C.err = "Enter your email and password."; return repaint(); }
@@ -322,10 +330,11 @@
         C.msg = "Synced. " + (r && typeof r.data === "number" ? r.data : ids.length) + " questions are now counted on the leaderboards.";
       });
     } else if (a === "clsave") {
-      var id = b.getAttribute("data-id"), nm = val("cn-" + id);
-      run(C.sb.from("classes").update({ name: nm }).eq("id", id), function () {
-        DX.curriculum.classes.forEach(function (k) { if (k.id === id) k.name = nm; });
-        C.msg = "Class name saved.";
+      var id = b.getAttribute("data-id"), nm = val("cn-" + id), lv = val("cl-" + id).toUpperCase();
+      if (!/^[0-9A-Z ]{2,8}$/.test(lv)) { C.err = "Write the level like 300L."; return repaint(); }
+      run(C.sb.from("classes").update({ name: nm, level: lv }).eq("id", id), function () {
+        DX.curriculum.classes.forEach(function (k) { if (k.id === id) { k.name = nm; k.level = lv; } });
+        C.msg = "Class saved.";
       });
     }
   }
