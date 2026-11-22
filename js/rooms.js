@@ -273,6 +273,10 @@
       '<div class="row tight"><button class="btn small" data-act="leaveroom">Done</button></div></section>';
     return out;
   }
+  function screenRow(s) {
+    if (!s.is_host || s.status === "finished" || !R.code) return "";
+    return '<p class="hint">For a projector: <a href="' + esc(location.pathname + "#screen?c=" + R.code) + '" target="_blank" rel="noopener">open the big screen</a> in a new tab, then use the full-screen button. It only shows the question and scores, never the answer before the reveal. Anyone with the link can watch without joining.</p>';
+  }
   function exitRow(s) {
     if (s.status !== "question" && s.status !== "reveal") return "";
     var host = !!s.is_host;
@@ -370,7 +374,7 @@
     var inv = inviteCode();
     if (inv && !R.id && !R.busy && !R.tried) { R.tried = true; R.join = inv; try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) { } join(); return; }
     var note = R.err ? '<p class="note bad" role="alert">' + esc(R.err) + '</p>' : "", body, head = "";
-    if (R.id && R.st) body = (hostOnly(R.st) ? hostHtml(R.st) : R.st.is_host ? friendHostHtml(R.st) : playerHtml(R.st)) + exitRow(R.st);
+    if (R.id && R.st) body = (hostOnly(R.st) ? hostHtml(R.st) : R.st.is_host ? friendHostHtml(R.st) : playerHtml(R.st)) + screenRow(R.st) + exitRow(R.st);
     else if (R.id) body = '<p class="muted">Joining…</p>';
     else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
     a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
