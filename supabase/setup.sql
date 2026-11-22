@@ -1494,3 +1494,116 @@ revoke all on function public.room_state(bigint), public.room_join(text), public
   public.admin_site_settings(), public.admin_set_setting(text, int) from public, anon;
 grant execute on function public.room_state(bigint), public.room_join(text), public.room_start(bigint), public.friend_create_room(text, text, int, int, jsonb),
   public.admin_site_settings(), public.admin_set_setting(text, int) to authenticated;
+
+-- ===== update 11: team rooms =====
+-- DxDrill update 11: team rooms with a quizmaster. Players pick a team on their phone; quiz rounds score per team (average per player),
+-- and describe-it rounds give one describer per team a term and forbidden words; the quizmaster can void a team's tap.
+-- Needs updates 1 to 10. Safe to run again.
+
+alter table public.rooms drop constraint if exists rooms_kind_check;
+alter table public.rooms add constraint rooms_kind_check check (kind in ('admin','friends','team'));
+alter table public.rooms add column if not exists n_teams int not null default 0 check (n_teams between 0 and 6);
+alter table public.room_players add column if not exists team int;
+alter table public.room_questions add column if not exists kind text not null default 'mcq' check (kind in ('mcq','describe'));
+alter table public.room_questions add column if not exists extra jsonb;   -- describe rounds: one term (with forbidden words) per team
+alter table public.room_questions drop constraint if exists room_questions_options_check;
+alter table public.room_questions add constraint room_questions_options_check check (kind = 'describe' or array_length(options, 1) = 4);
+
+create table if not exists public.room_team_points (
+  room_id bigint not null references public.rooms(id) on delete cascade,
+  idx     int not null,
+  team    int not null,
+  by_user uuid not null,
+  points  int not null,
+  primary key (room_id, idx, team)
+);
+alter table public.room_team_points enable row level security;
+revoke all on public.room_team_points from anon, authenticated;
+
+create or replace function public._team_name(p_team int) returns text language sql immutable as $$
+  select (array['Red','Blue','Green','Orange','Purple','Teal'])[p_team] $$;
+
+-- Who describes for a team in this question: members take turns in join order.
+create or replace function public._describer(p_room bigint, p_team int, p_idx int) returns uuid
+language sql stable security definer set search_path = public as $$
+  select t.user_id from (
+    select user_id, row_number() over (order by joined_at, user_id) as rn, count(*) over () as cnt
+    from public.room_players where room_id = p_room and team = p_team) t
+  where t.rn = 1 + ((select count(*) from public.room_questions q where q.room_id = p_room and q.kind = 'describe' and q.idx < p_idx) % greatest(t.cnt, 1)) $$;
+
+create or replace function public.room_set_team(p_room bigint, p_team int) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  select * into r from public.rooms where id = p_room;
+  if not found then raise exception 'room not found'; end if;
+  if r.kind <> 'team' or r.status <> 'lobby' then raise exception 'cannot change team now'; end if;
+  if p_team < 1 or p_team > r.n_teams then raise exception 'bad team'; end if;
+  update public.room_players set team = p_team where room_id = p_room and user_id = auth.uid();
+  if not found then raise exception 'not in room'; end if;
+end $$;
+
+create or replace function public.room_start(p_room bigint) returns void
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; pl record;
+begin
+  r := public._room_host(p_room);
+  if r.kind = 'friends' and (select count(*) from public.room_players where room_id = r.id) < 2 then raise exception 'need a friend'; end if;
+  if r.kind = 'team' and r.status = 'lobby' then   -- anyone who did not pick joins the smallest team
+    for pl in select user_id from public.room_players where room_id = r.id and team is null order by joined_at loop
+      update public.room_players set team = (select g from generate_series(1, r.n_teams) g
+        order by (select count(*) from public.room_players x where x.room_id = r.id and x.team = g), g limit 1)
+        where room_id = r.id and user_id = pl.user_id;
+    end loop;
+  end if;
+  if r.status = 'lobby' then update public.rooms set status = 'question', cur_idx = 0, q_started_at = now() + interval '3 seconds' where id = r.id; end if;
+end $$;
+
+drop function if exists public.room_state(bigint);
+create or replace function public.room_state(p_room bigint)
+returns table (room_id bigint, kind text, max_players int, name text, pace text, sec int, n int, status text, cur_idx int, q_text text, q_options text[],
+               secs_left numeric, lead_left numeric, reveal_left numeric, players bigint, answered bigint, right_answer int, explain text,
+               my_choice int, my_points int, my_score int, my_rank bigint, option_counts int[], is_host boolean,
+               q_kind text, n_teams int, my_team int, role text, team_counts int[], describers jsonb)
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; isn boolean; qrow public.room_questions; mine public.room_answers; ps public.room_players; des uuid; vis boolean; rl text := null;
+begin
+  if auth.uid() is null then raise exception 'not allowed'; end if;
+  perform public._room_tick(p_room);
+  select * into r from public.rooms where id = p_room;
+  if not found then raise exception 'room not found'; end if;
+  isn := (r.host_id = auth.uid());
+  select * into ps from public.room_players rp0 where rp0.room_id = r.id and rp0.user_id = auth.uid();
+  if not isn and not found and not public.is_admin() then raise exception 'not in room'; end if;
+  if r.cur_idx >= 0 then select * into qrow from public.room_questions where room_questions.room_id = r.id and idx = r.cur_idx; end if;
+  select * into mine from public.room_answers where room_answers.room_id = r.id and idx = r.cur_idx and user_id = auth.uid();
+  vis := r.status in ('question','reveal') or (r.status = 'finished' and r.cur_idx >= 0);
+  if r.status = 'question' and qrow.kind = 'describe' and ps.team is not null then
+    des := public._describer(r.id, ps.team, r.cur_idx); rl := case when des = auth.uid() then 'describer' else 'guesser' end;
+  end if;
+  return query select r.id, r.kind, r.max_players, r.name, r.pace, r.seconds_per_q, r.n_questions, r.status, r.cur_idx,
+    case when not vis then null
+         when qrow.kind = 'describe' and r.status = 'question' and not isn and rl is distinct from 'describer' then 'Describe round: ' || coalesce((select p.display_name from public.profiles p where p.id = des), 'your teammate') || ' describes a term for your team. Guess it out loud!'
+         when qrow.kind = 'describe' and r.status = 'question' and not isn then qrow.extra->(ps.team - 1)->>'term'
+         else qrow.q end,
+    case when not vis then null
+         when qrow.kind = 'describe' and r.status = 'question' and not isn and rl is distinct from 'describer' then null
+         when qrow.kind = 'describe' and r.status = 'question' and not isn then (select coalesce(array_agg(x), '{}') from jsonb_array_elements_text(coalesce(qrow.extra->(ps.team - 1)->'forbidden', '[]'::jsonb)) x)
+         else qrow.options end,
+    case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at + make_interval(secs => r.seconds_per_q) - now())))::numeric else 0::numeric end,
+    case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at - now())))::numeric else 0::numeric end,
+    case when r.status = 'reveal' and r.pace = 'auto' then greatest(0, 7 - extract(epoch from (now() - r.reveal_at)))::numeric else 0::numeric end,
+    (select count(*) from public.room_players rp where rp.room_id = r.id),
+    case when qrow.kind = 'describe' then (select count(*) from public.room_team_points tp where tp.room_id = r.id and tp.idx = r.cur_idx and tp.points > 0)
+         else (select count(*) from public.room_answers ra where ra.room_id = r.id and ra.idx = r.cur_idx) end,
+    case when r.status in ('reveal','finished') and qrow.kind = 'mcq' then qrow.answer end,
+    case when r.status in ('reveal','finished') then qrow.explain end,
+    mine.choice,
+    case when r.status in ('reveal','finished') then
+      case when qrow.kind = 'describe' then (select tp.points from public.room_team_points tp where tp.room_id = r.id and tp.idx = r.cur_idx and tp.team = ps.team) else mine.points end end,
+    coalesce(ps.score, 0),
+    case when ps.user_id is not null then 1 + (select count(*) from public.room_players rp where rp.room_id = r.id and rp.score > ps.score) end,
+    case when r.status in ('reveal','finished') and qrow.kind = 'mcq' then (select array_agg(c order by g) from (
+        select g, count(a.user_id)::int as c from generate_series(0, 3) g
+        left join public.room_answers a on a.room_id = r.id and a.idx = r.cur_idx and a.choice = g gro
