@@ -1,0 +1,157 @@
+{
+ "terms": [
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Clinical Problem Solving",
+   "term": "Symptom",
+   "clues": [
+    "It cannot be measured directly with a stethoscope or sphygmomanometer",
+    "It represents a subjective departure from normal function experienced by the patient",
+    "Examples include chest pain, nausea, and shortness of breath reported during history taking"
+   ],
+   "forbidden": [
+    "sign",
+    "patient",
+    "subjective",
+    "feel",
+    "history"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Clinical Problem Solving",
+   "term": "Sign",
+   "clues": [
+    "It can be detected even in an unconscious patient",
+    "It is an objective piece of clinical evidence discovered by the clinician",
+    "Examples include jaundice, clubbing, and cardiac murmurs found during physical examination"
+   ],
+   "forbidden": [
+    "symptom",
+    "objective",
+    "examination",
+    "doctor",
+    "find"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Clinical Terminology",
+   "term": "Iatrogenic",
+   "clues": [
+    "It comes from Greek words meaning brought forth by the healer",
+    "It represents an unintended complication of healthcare delivery",
+    "Drug-induced gastritis and post-catheter urinary infection are classic examples"
+   ],
+   "forbidden": [
+    "doctor",
+    "treatment",
+    "caused",
+    "medical",
+    "harm"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Infection Prevention and Control",
+   "term": "Nosocomial",
+   "clues": [
+    "It typically manifests at least 48 hours after admission",
+    "It is acquired inside a healthcare facility rather than in the community",
+    "MRSA wound sepsis and ventilator-associated pneumonia fall into this category"
+   ],
+   "forbidden": [
+    "hospital",
+    "acquired",
+    "infection",
+    "ward",
+    "admission"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Clinical Handover and Communication",
+   "term": "SBAR",
+   "clues": [
+    "It was originally adapted from naval submarine and aviation communication",
+    "It prevents critical omissions when escalating an acutely deteriorating patient",
+    "Its four components are Situation, Background, Assessment, and Recommendation"
+   ],
+   "forbidden": [
+    "handover",
+    "situation",
+    "background",
+    "assessment",
+    "recommendation"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Medical Record Documentation",
+   "term": "SOAP",
+   "clues": [
+    "It organizes daily ward round entries into four logical sections",
+    "It separates what the patient says from what the clinician measures",
+    "Its initials stand for Subjective, Objective, Assessment, and Plan"
+   ],
+   "forbidden": [
+    "notes",
+    "subjective",
+    "objective",
+    "assessment",
+    "plan"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Clinical Reasoning and Diagnosis",
+   "term": "Differential Diagnosis",
+   "clues": [
+    "It narrows down as targeted tests rule possibilities in or out",
+    "It is a ranked shortlist of conditions that could explain a patient's presentation",
+    "For acute chest pain, it includes myocardial infarction, pulmonary embolism, and pericarditis"
+   ],
+   "forbidden": [
+    "list",
+    "possible",
+    "diseases",
+    "diagnosis",
+    "conditions"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Breaking Bad News",
+   "term": "SPIKES",
+   "clues": [
+    "It is a six-step communication framework used in oncology and internal medicine",
+    "It begins with preparing the environment and checking what the patient already knows",
+    "Clinicians use this structured protocol when delivering a terminal or life-altering diagnosis"
+   ],
+   "forbidden": [
+    "bad",
+    "news",
+    "breaking",
+    "protocol",
+    "empathy"
+   ]
+  },
+  {
+   "topic": "mi-introduction-to-clinical-medicine-and-the-health",
+   "sub": "Clinical Clerkship and Bedside Etiquette",
+   "term": "Informed Consent",
+   "clues": [
+    "It requires capacity, voluntariness, and adequate disclosure of risks and benefits",
+    "It upholds the ethical principle of patient autonomy",
+    "A patient gives this permission before undergoing an invasive procedure or surgery"
+   ],
+   "forbidden": [
+    "permission",
+    "agree",
+    "sign",
+    "autonomy",
+    "procedure"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "terms": [
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Anaphylaxis",
+   "term": "Anaphylaxis",
+   "clues": [
+    "Mast cell degranulation triggers widespread histamine and leukotriene release",
+    "It presents rapidly with airway swelling, wheezing, urticaria, and distributive hypotension",
+    "Immediate intramuscular adrenaline into the anterolateral thigh is the life-saving treatment"
+   ],
+   "forbidden": [
+    "allergic",
+    "adrenaline",
+    "reaction",
+    "shock",
+    "epinephrine"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Advanced Life Support (ALS)",
+   "term": "Defibrillation",
+   "clues": [
+    "It depolarizes a critical mass of myocardial cells simultaneously",
+    "It is indicated for ventricular fibrillation and pulseless ventricular tachycardia, not asystole",
+    "An unsynchronized electrical shock is delivered across the chest to restore an organized rhythm"
+   ],
+   "forbidden": [
+    "shock",
+    "electricity",
+    "aed",
+    "fibrillation",
+    "pads"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Cardiac Tamponade",
+   "term": "Cardiac Tamponade",
+   "clues": [
+    "It is one of the four 'T' reversible causes of pulseless electrical activity",
+    "It produces Beck's triad of hypotension, distended neck veins, and muffled heart sounds",
+    "Fluid or blood under pressure inside the pericardial sac compresses the heart chambers and requires pericardiocentesis"
+   ],
+   "forbidden": [
+    "pericardial",
+    "beck",
+    "fluid",
+    "heart",
+    "compression"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Status Epilepticus",
+   "term": "Status Epilepticus",
+   "clues": [
+    "It is defined by continuous seizure activity lasting 5 minutes or more without recovery between episodes",
+    "Prolonged neuronal firing risks excitotoxic brain injury, hypoxia, and rhabdomyolysis",
+    "First-line emergency treatment is a rapid-acting benzodiazepine such as intravenous lorazepam"
+   ],
+   "forbidden": [
+    "seizure",
+    "fit",
+    "convulsion",
+    "lorazepam",
+    "epilepsy"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Acute Poisoning and Overdose",
+   "term": "Naloxone",
+   "clues": [
+    "Its duration of action is shorter than morphine or methadone, requiring close observation for re-sedation",
+    "It acts as a competitive antagonist at mu receptors in the central nervous system",
+    "This emergency antidote rapidly reverses respiratory depression in opioid overdose"
+   ],
+   "forbidden": [
+    "opioid",
+    "overdose",
+    "antidote",
+    "morphine",
+    "heroin"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Acute Poisoning and Overdose",
+   "term": "N-Acetylcysteine",
+   "clues": [
+    "It is maximally effective when started within 8 hours of toxic ingestion",
+    "It replenishes hepatic glutathione to neutralize the toxic metabolite NAPQI",
+    "This intravenous antidote prevents fulminant liver failure after paracetamol overdose"
+   ],
+   "forbidden": [
+    "paracetamol",
+    "acetaminophen",
+    "liver",
+    "glutathione",
+    "overdose"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Sepsis and Septic Shock",
+   "term": "qSOFA",
+   "clues": [
+    "It uses three simple bedside parameters without requiring laboratory tests",
+    "Its criteria are respiratory rate >= 22/min, altered mentation, and systolic BP <= 100 mmHg",
+    "This rapid bedside score screens infected patients for high mortality risk from sepsis"
+   ],
+   "forbidden": [
+    "sepsis",
+    "score",
+    "infection",
+    "respiratory",
+    "pressure"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Airway Management",
+   "term": "Jaw-Thrust",
+   "clues": [
+    "The clinician places fingers behind the angles of the mandible and lifts upward",
+    "It lifts the tongue away from the posterior pharynx without tilting the head",
+    "This airway-opening manoeuvre is mandatory when cervical spine trauma is suspected"
+   ],
+   "forbidden": [
+    "airway",
+    "chin",
+    "neck",
+    "cervical",
+    "mandible"
+   ]
+  },
+  {
+   "topic": "mi-medical-emergencies-and-resuscitation",
+   "sub": "Advanced Life Support (ALS)",
+   "term": "Pulseless Electrical Activity",
+   "clues": [
+    "It is a non-shockable cardiac arrest rhythm managed with CPR, adrenaline, and treating reversible causes",
+    "The ECG monitor displays an organized rhythm, yet no central arterial pulse is palpable",
+    "Hypovolaemia, hypoxia, tension pneumothorax, and tamponade are classic triggers of this arrest state"
+   ],
+   "forbidden": [
+    "pea",
+    "rhythm",
+    "ecg",
+    "pulse",
+    "arrest"
+   ]
+  }
+ ]
+}

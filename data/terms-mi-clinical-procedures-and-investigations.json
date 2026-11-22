@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Arterial Blood Gas Sampling",
+   "term": "Modified Allen's Test",
+   "clues": [
+    "The clinician compresses both wrist arteries while the patient clenches their fist",
+    "Releasing one artery should restore palmar flushing within 5 to 10 seconds",
+    "It confirms collateral ulnar circulation before radial artery puncture"
+   ],
+   "forbidden": [
+    "radial",
+    "ulnar",
+    "artery",
+    "wrist",
+    "hand"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Lumbar Puncture",
+   "term": "Lumbar Puncture",
+   "clues": [
+    "It is performed at the L3-L4 or L4-L5 vertebral interspace",
+    "Papilloedema and focal neurological signs are strict contraindications before brain imaging",
+    "A spinal needle enters the subarachnoid space to measure opening pressure and sample cerebrospinal fluid"
+   ],
+   "forbidden": [
+    "csf",
+    "cerebrospinal",
+    "spinal",
+    "tap",
+    "needle"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Thoracentesis and Pleural Fluid Analysis",
+   "term": "Light's Criteria",
+   "clues": [
+    "It compares protein and lactate dehydrogenase levels between chest fluid and serum",
+    "Meeting even one of its three biochemical rules classifies the fluid as inflammatory or malignant",
+    "Clinicians use this diagnostic rule to distinguish an exudative pleural effusion from a transudate"
+   ],
+   "forbidden": [
+    "pleural",
+    "exudate",
+    "transudate",
+    "protein",
+    "ldh"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Abdominal Paracentesis",
+   "term": "SAAG",
+   "clues": [
+    "It is calculated by subtracting ascitic fluid albumin from serum albumin",
+    "A value of 11 g/L (1.1 g/dL) or higher indicates portal hypertension",
+    "This four-letter biochemical gradient classifies the mechanism of peritoneal fluid accumulation"
+   ],
+   "forbidden": [
+    "albumin",
+    "ascites",
+    "gradient",
+    "serum",
+    "portal"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Thoracentesis and Pleural Fluid Analysis",
+   "term": "Thoracentesis",
+   "clues": [
+    "The needle is inserted just above the upper border of a rib to avoid neurovascular injury",
+    "It can be performed either for diagnostic biochemistry or therapeutic relief of dyspnoea",
+    "This procedure drains fluid or air from the pleural cavity"
+   ],
+   "forbidden": [
+    "pleural",
+    "effusion",
+    "chest",
+    "drain",
+    "tap"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Abdominal Paracentesis",
+   "term": "Paracentesis",
+   "clues": [
+    "The preferred needle entry site is the left lower quadrant lateral to the rectus sheath",
+    "Large-volume drainage requires intravenous albumin replacement to prevent circulatory dysfunction",
+    "This bedside procedure aspirates ascitic fluid from the peritoneal cavity"
+   ],
+   "forbidden": [
+    "ascites",
+    "abdomen",
+    "peritoneal",
+    "fluid",
+    "tap"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Nasogastric Tube Insertion",
+   "term": "Nasogastric Tube",
+   "clues": [
+    "Its insertion length is estimated using the nose-to-earlobe-to-xiphoid distance",
+    "An aspirate pH of 5.5 or lower confirms correct intragastric placement",
+    "This flexible tube passes through the nostril and oesophagus into the stomach for decompression or feeding"
+   ],
+   "forbidden": [
+    "nose",
+    "stomach",
+    "feeding",
+    "ng",
+    "gastric"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Urethral Catheterization",
+   "term": "Foley Catheter",
+   "clues": [
+    "It is held in place inside the bladder by an inflatable retention balloon",
+    "Blood at the urethral meatus after pelvic trauma is a strict contraindication to inserting it blindly",
+    "This indwelling flexible tube drains urine continuously and allows hourly urine output monitoring"
+   ],
+   "forbidden": [
+    "urine",
+    "bladder",
+    "urethra",
+    "balloon",
+    "drain"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Venepuncture and Blood Sampling",
+   "term": "Venepuncture",
+   "clues": [
+    "The median cubital vein in the antecubital fossa is the first-choice site",
+    "Sodium citrate tubes must be filled before EDTA tubes to avoid potassium and calcium artefacts",
+    "This routine clinical procedure punctures a peripheral vein to obtain blood samples"
+   ],
+   "forbidden": [
+    "vein",
+    "blood",
+    "needle",
+    "draw",
+    "phlebotomy"
+   ]
+  },
+  {
+   "topic": "mi-clinical-procedures-and-investigations",
+   "sub": "Point-of-Care Investigations",
+   "term": "Pulse Oximetry",
+   "clues": [
+    "It uses red and infrared light wavelengths across a pulsatile vascular bed",
+    "Cold fingers, nail polish, and carbon monoxide poisoning can distort its reading",
+    "This non-invasive finger clip estimates peripheral arterial oxygen saturation (SpO2)"
+   ],
+   "forbidden": [
+    "oxygen",
+    "spo2",
+    "saturation",
+    "finger",
+    "probe"
+   ]
+  }
+ ]
+}

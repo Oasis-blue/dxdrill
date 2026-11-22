@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "pc-ecg",
+   "sub": "ECG Paper Calibration and Lead Systems",
+   "term": "Einthoven's triangle",
+   "clues": [
+    "Its three apices correspond to the right arm, left arm, and left leg",
+    "It explains why the electrical potential in Lead II equals the sum of Leads I and III",
+    "It is the equilateral geometric arrangement of the three standard bipolar limb leads around the heart"
+   ],
+   "forbidden": [
+    "limb",
+    "lead",
+    "arm",
+    "leg",
+    "bipolar"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Normal ECG Waves and Physiological Basis",
+   "term": "P wave",
+   "clues": [
+    "It is absent and replaced by chaotic baseline oscillations in atrial fibrillation",
+    "Its normal duration is less than 0.12 seconds and amplitude is under 2.5 millimeters in Lead II",
+    "It is the first upward deflection on a normal ECG representing atrial depolarization"
+   ],
+   "forbidden": [
+    "atrial",
+    "depolarization",
+    "first",
+    "wave",
+    "fibrillation"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Normal ECG Waves and Physiological Basis",
+   "term": "QRS complex",
+   "clues": [
+    "Widening beyond 0.12 seconds suggests bundle branch block or ventricular ectopic origin",
+    "It masks the simultaneous wave of atrial repolarization",
+    "It is the prominent three-part ECG deflection representing rapid ventricular depolarization"
+   ],
+   "forbidden": [
+    "ventricular",
+    "depolarization",
+    "bundle",
+    "deflection",
+    "wave"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Normal ECG Waves and Physiological Basis",
+   "term": "T wave",
+   "clues": [
+    "It becomes tall and tented in hyperkalemia and inverted during myocardial ischemia",
+    "It is upright in Lead II because this process moves from epicardium to endocardium",
+    "It is the smooth ECG deflection representing ventricular repolarization"
+   ],
+   "forbidden": [
+    "ventricular",
+    "repolarization",
+    "hyperkalemia",
+    "wave",
+    "epicardium"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Normal ECG Intervals and Segments",
+   "term": "PR interval",
+   "clues": [
+    "Normally it lasts between 0.12 and 0.20 seconds (three to five small squares)",
+    "It is shortened in Wolff-Parkinson-White pre-excitation and prolonged in first-degree heart block",
+    "It measures conduction time from the start of atrial depolarization through the AV node to ventricular onset"
+   ],
+   "forbidden": [
+    "AV node",
+    "interval",
+    "0.12",
+    "0.20",
+    "conduction"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Normal ECG Intervals and Segments",
+   "term": "ST segment",
+   "clues": [
+    "It corresponds temporally to the Phase 2 plateau of the ventricular action potential",
+    "It is normally flat and isoelectric on the baseline",
+    "Elevation of this portion of the ECG is the hallmark of acute transmural myocardial infarction"
+   ],
+   "forbidden": [
+    "elevation",
+    "infarction",
+    "isoelectric",
+    "plateau",
+    "segment"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Normal ECG Intervals and Segments",
+   "term": "QT interval",
+   "clues": [
+    "Bazett's formula divides it by the square root of the RR interval to correct for heart rate",
+    "Hypocalcemia lengthens it while hypercalcemia shortens it",
+    "Marked prolongation of this total ventricular depolarization-plus-repolarization time risks torsades de pointes"
+   ],
+   "forbidden": [
+    "torsades",
+    "Bazett",
+    "interval",
+    "calcium",
+    "repolarization"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Arrhythmias and Conduction Blocks",
+   "term": "Atrial fibrillation",
+   "clues": [
+    "Stasis in the left atrial appendage predisposes patients to cardioembolic stroke",
+    "An irregularly irregular pulse and absent fourth heart sound are classic bedside findings",
+    "This arrhythmia shows absent P waves and irregularly irregular RR intervals on the ECG"
+   ],
+   "forbidden": [
+    "irregular",
+    "atria",
+    "P wave",
+    "arrhythmia",
+    "stroke"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Arrhythmias and Conduction Blocks",
+   "term": "Delta wave",
+   "clues": [
+    "It is accompanied by a short PR interval under 0.12 seconds and a widened QRS",
+    "It reflects early ventricular muscle activation via an abnormal bundle of Kent",
+    "It is the characteristic slurred initial upstroke of the QRS complex in Wolff-Parkinson-White syndrome"
+   ],
+   "forbidden": [
+    "WPW",
+    "Kent",
+    "slurred",
+    "pre-excitation",
+    "QRS"
+   ]
+  },
+  {
+   "topic": "pc-ecg",
+   "sub": "Electrolyte Disturbances on ECG",
+   "term": "U wave",
+   "clues": [
+    "It is thought to reflect delayed repolarization of Purkinje fibers or mid-myocardial M cells",
+    "It appears as a small positive deflection immediately following the T wave",
+    "Prominence of this wave alongside ST depression and flat T waves is classic for hypokalemia"
+   ],
+   "forbidden": [
+    "hypokalemia",
+    "potassium",
+    "T wave",
+    "wave",
+    "deflection"
+   ]
+  }
+ ]
+}
