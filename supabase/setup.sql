@@ -1814,3 +1814,18 @@ end $$;
 revoke all on function public.visit_ping(text, text, boolean), public.admin_visits(int), public.admin_visit_totals() from public, anon, authenticated;
 grant execute on function public.visit_ping(text, text, boolean) to anon, authenticated;
 grant execute on function public.admin_visits(int), public.admin_visit_totals() to authenticated;
+
+-- ===== update 14: public counts for the home page =====
+-- DxDrill update 14: real public counts for the home page (students signed up, questions answered, answered today).
+-- The admin's own account and answers are left out. Safe to run again.
+create or replace function public.public_stats()
+returns table (members bigint, answers bigint, answers_today bigint)
+language sql security definer stable set search_path = public as $$
+  select
+    (select count(*) from public.profiles p where not p.is_admin),
+    (select count(*) from public.answers a where a.user_id not in (select id from public.profiles where is_admin)),
+    (select count(*) from public.answers a where a.created_at >= (date_trunc('day', now() at time zone 'Africa/Lagos') at time zone 'Africa/Lagos')
+        and a.user_id not in (select id from public.profiles where is_admin));
+$$;
+revoke all on function public.public_stats() from public, anon, authenticated;
+grant execute on function public.public_stats() to anon, authenticated;
