@@ -1,0 +1,700 @@
+{
+ "topic": "pc-cardiac-muscle-and-the-cardiac-cycle",
+ "questions": [
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Muscle Structure and Syncytium",
+   "q": "Which specialized intercellular structures at intercalated discs provide low-resistance electrical coupling so that cardiac myocytes function as a functional syncytium?",
+   "options": [
+    "Gap junctions (nexuses)",
+    "Tight junctions (zonula occludens)",
+    "Hemidesmosomes",
+    "Myelin sheaths"
+   ],
+   "answer": 0,
+   "explain": "Intercalated discs contain fasciae adherentes and desmosomes for mechanical anchoring plus gap junctions (connexons) that allow ions to pass rapidly from cell to cell, coordinating synchronous atrial and ventricular contraction.",
+   "verified": false,
+   "open": {
+    "q": "Name the low-resistance channels within intercalated discs that electrically couple adjacent cardiac muscle fibers into a functional syncytium.",
+    "accept": [
+     "Gap junctions",
+     "Nexus",
+     "Connexons"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Muscle Structure and Syncytium",
+   "q": "Why does an action potential originating in the atria normally reach the ventricles exclusively through the atrioventricular (AV) bundle rather than spreading directly across the myocardial wall?",
+   "options": [
+    "Atrial myocytes lack gap junctions completely",
+    "The fibrous skeleton (annuli fibrosi) of the heart electrically insulates the atrial syncytium from the ventricular syncytium",
+    "The epicardium absorbs all electrical impulses at the coronary sulcus",
+    "Ventricular myocytes are permanently refractory to atrial depolarization"
+   ],
+   "answer": 1,
+   "explain": "Dense fibrous rings surrounding the heart valves separate the atrial and ventricular muscle masses electrically, forcing impulses through the AV node and bundle of His so atria finish contracting before ventricles eject.",
+   "verified": false,
+   "open": {
+    "q": "What anatomical structure electrically insulates the atrial syncytium from the ventricular syncytium but NOT at the AV bundle?",
+    "accept": [
+     "Fibrous skeleton of the heart",
+     "Cardiac fibrous skeleton",
+     "Annuli fibrosi"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Muscle Structure and Syncytium",
+   "q": "How does excitation-contraction coupling in ventricular cardiac muscle differ critically from that in skeletal muscle?",
+   "options": [
+    "Cardiac muscle lacks troponin C and uses calmodulin instead",
+    "Cardiac muscle requires zero extracellular calcium for contraction",
+    "Cardiac contraction depends on extracellular Ca2+ influx through L-type sarcolemmal channels to trigger calcium-induced calcium release via RyR2",
+    "Cardiac T-tubules are located at the A-I band junction rather than the Z line"
+   ],
+   "answer": 2,
+   "explain": "In cardiac myocytes, plateau Ca2+ entry via dihydropyridine L-type Ca2+ channels binds ryanodine receptor 2 (RyR2) on the sarcoplasmic reticulum to trigger massive Ca2+-induced Ca2+ release; in skeletal muscle, DHPR mechanically opens RyR1 without needing extracellular Ca2+ influx.",
+   "verified": false,
+   "open": {
+    "q": "Explain why cardiac muscle contraction fails in a calcium-free extracellular solution whereas skeletal muscle can still contract.",
+    "accept": [
+     "Cardiac muscle requires extracellular Ca2+ influx through L-type channels to trigger calcium-induced calcium release",
+     "Calcium-induced calcium release depends on extracellular Ca2+ entry"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Action Potentials",
+   "q": "Which ionic current is responsible for the rapid Phase 0 depolarization upstroke in normal ventricular and atrial working myocytes?",
+   "options": [
+    "Slow inward Ca2+ current through T-type channels",
+    "Outward K+ current through Ik1 inward rectifier channels",
+    "Inward Na+ current through hyperpolarization-activated HCN funny channels",
+    "Rapid inward Na+ current through voltage-gated fast Na+ channels"
+   ],
+   "answer": 3,
+   "explain": "When ventricular myocytes depolarize from -90 mV to threshold (-70 mV), fast voltage-gated Na+ channels open explosively, driving membrane potential toward +20 mV during Phase 0.",
+   "verified": false,
+   "open": {
+    "q": "Which ion channel mediates the rapid Phase 0 upstroke of the ventricular cardiac muscle action potential?",
+    "accept": [
+     "Fast voltage-gated sodium channels",
+     "Voltage-gated Na+ channels",
+     "Fast Na+ channels"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Action Potentials",
+   "q": "Which balance of transmembrane ion currents maintains the prolonged Phase 2 plateau of the ventricular cardiac action potential?",
+   "options": [
+    "Inward Ca2+ influx through L-type Ca2+ channels balanced against outward K+ efflux through delayed rectifier K+ channels",
+    "Inward Cl- influx balanced against Na+/K+-ATPase pumping",
+    "Inward Na+ influx through funny channels balanced against outward Ca2+ extrusion",
+    "Complete closure of all ion channels across the sarcolemma"
+   ],
+   "answer": 0,
+   "explain": "During Phase 2 (~150-200 ms), sustained Ca2+ influx via L-type channels offsets outward K+ current (IKr/IKs), prolonging depolarization and the effective refractory period so cardiac muscle cannot undergo tetanic summation.",
+   "verified": false,
+   "open": {
+    "q": "Which two opposing ionic currents balance each other to produce the Phase 2 plateau of the ventricular action potential?",
+    "accept": [
+     "Inward Ca2+ current (L-type) and outward K+ current (delayed rectifier)",
+     "Calcium influx and potassium efflux"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-006",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cardiac Action Potentials",
+   "q": "Why is cardiac muscle physiologically incapable of undergoing sustained tetanic contraction like skeletal muscle?",
+   "options": [
+    "Cardiac muscle lacks myosin ATPase activity",
+    "The long Phase 2 plateau extends the absolute refractory period almost until mechanical relaxation begins",
+    "Cardiac sarcoplasmic reticulum holds zero calcium",
+    "The vagus nerve continuously inhibits ventricular cross-bridge cycling"
+   ],
+   "answer": 1,
+   "explain": "Because fast Na+ channels remain inactivated throughout the prolonged plateau (~200-250 ms), the cardiac absolute refractory period lasts nearly as long as the mechanical twitch, ensuring adequate ventricular filling between beats.",
+   "verified": false,
+   "open": {
+    "q": "What electrophysiological property prevents cardiac muscle from being tetanized?",
+    "accept": [
+     "Long absolute refractory period caused by the action potential plateau",
+     "Prolonged refractory period matching the duration of mechanical contraction"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-007",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Action Potentials",
+   "q": "Which ionic mechanism underlies the spontaneous Phase 4 pacemaker prepotential in sinoatrial (SA) nodal cells?",
+   "options": [
+    "Opening of fast voltage-gated Na+ channels at -90 mV",
+    "Increased outward K+ conductance through muscarinic K-ACh channels",
+    "Slow inward Na+ current through HCN 'funny' channels (If) followed by T-type Ca2+ influx and declining K+ efflux",
+    "Activation of Na+/K+/2Cl- cotransporters"
+   ],
+   "answer": 2,
+   "explain": "SA nodal cells lack a stable resting membrane potential (~-60 mV maximum diastolic potential); repolarization opens hyperpolarization-activated cyclic nucleotide-gated (HCN) 'funny' channels admitting Na+, aided by T-type Ca2+ channels and K+ channel closure until threshold (-40 mV) triggers an L-type Ca2+ upstroke.",
+   "verified": false,
+   "open": {
+    "q": "Name the primary pacemaker current responsible for spontaneous Phase 4 diastolic depolarization in the sinoatrial node.",
+    "accept": [
+     "Funny current (If)",
+     "HCN channel Na+ current",
+     "Inward Na+ funny current"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cardiac Action Potentials",
+   "q": "Which ion channel mediates the Phase 0 depolarization upstroke in SA node and AV node pacemaker action potentials?",
+   "options": [
+    "Fast voltage-gated Na+ channels",
+    "Inward rectifier K+ channels",
+    "Chloride leak channels",
+    "Slow L-type voltage-gated Ca2+ channels"
+   ],
+   "answer": 3,
+   "explain": "Because SA and AV nodal cells have a less negative maximum diastolic potential (~-60 mV), fast Na+ channels remain inactivated; Phase 0 is driven by slower L-type Ca2+ influx, explaining slow AV nodal conduction velocity.",
+   "verified": false,
+   "open": {
+    "q": "Which ion channels generate the Phase 0 upstroke in sinoatrial and atrioventricular nodal cells?",
+    "accept": [
+     "L-type calcium channels",
+     "Voltage-gated Ca2+ channels",
+     "Slow Ca2+ channels"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-009",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Conduction System of the Heart",
+   "q": "Which sequence accurately traces normal cardiac impulse conduction from initiation to ventricular activation?",
+   "options": [
+    "SA node -> internodal pathways -> AV node -> bundle of His -> right and left bundle branches -> Purkinje fibers",
+    "AV node -> SA node -> Purkinje fibers -> bundle of His -> internodal pathways",
+    "SA node -> bundle of His -> AV node -> Purkinje fibers -> bundle branches",
+    "Purkinje fibers -> bundle branches -> AV node -> SA node -> atrial muscle"
+   ],
+   "answer": 0,
+   "explain": "Impulses originate in the SA node (~70-80 bpm), cross the atria via anterior, middle, and posterior internodal tracts, pause ~0.1 s at the AV node, and descend rapidly through the His-Purkinje system.",
+   "verified": false,
+   "open": {
+    "q": "List the anatomical pathway of electrical impulse conduction through the heart starting at the sinoatrial node.",
+    "accept": [
+     "SA node, internodal pathways, AV node, bundle of His, bundle branches, Purkinje fibers",
+     "SA node -> AV node -> bundle of His -> bundle branches -> Purkinje fibers"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Conduction System of the Heart",
+   "q": "What is the physiological purpose of the ~0.1-second conduction delay at the atrioventricular (AV) node?",
+   "options": [
+    "To slow ventricular ejection velocity",
+    "To allow complete atrial contraction and ventricular filling before ventricular systole begins",
+    "To prevent retrograde coronary venous drainage",
+    "To synchronize aortic and pulmonary valve closure"
+   ],
+   "answer": 1,
+   "explain": "Small fiber diameter, fewer gap junctions, and Ca2+-dependent depolarization slow conduction through the AV node (~0.05 m/s), ensuring atrial systole tops off ventricular end-diastolic volume prior to ventricular contraction.",
+   "verified": false,
+   "open": {
+    "q": "Why is the physiological conduction delay at the atrioventricular (AV) node essential for cardiac pumping efficiency?",
+    "accept": [
+     "Allows atrial contraction to complete ventricular filling before ventricular contraction begins",
+     "Gives atria time to empty blood into the ventricles prior to ventricular systole"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Conduction System of the Heart",
+   "q": "Which component of the cardiac conduction system exhibits the fastest conduction velocity (~4 m/s) to ensure near-simultaneous depolarization of both ventricles?",
+   "options": [
+    "AV nodal transitional zone",
+    "Atrial working myocardium",
+    "Purkinje fibers",
+    "SA nodal pacemaker center"
+   ],
+   "answer": 2,
+   "explain": "Purkinje fibers have large diameters and dense connexin-40 gap junctions, conducting impulses at 1.5 to 4.0 m/s so ventricular contraction proceeds smoothly from apex toward base.",
+   "verified": false,
+   "open": {
+    "q": "Name the cardiac conduction tissue with the highest conduction velocity (~4 m/s).",
+    "accept": [
+     "Purkinje system",
+     "Subendocardial Purkinje network"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Conduction System of the Heart",
+   "q": "Why does the sinoatrial (SA) node normally serve as the dominant pacemaker of the heart rather than the AV node or Purkinje fibers?",
+   "options": [
+    "Only the SA node receives sympathetic nerve fibers",
+    "The AV node and Purkinje fibers lack HCN funny channels",
+    "The SA node is located closest to the left ventricle",
+    "The SA node has the steepest Phase 4 diastolic depolarization slope and fastest intrinsic firing rate (60-100/min), overdriving latent pacemakers"
+   ],
+   "answer": 3,
+   "explain": "SA nodal cells reach threshold fastest (intrinsic ~100/min, resting ~70/min under vagal tone), depolarizing the AV node (intrinsic 40-60/min) and Purkinje fibers (15-40/min) before they can spontaneously fire (overdrive suppression).",
+   "verified": false,
+   "open": {
+    "q": "Why does the sinoatrial node normally dominate over latent pacemakers in the AV node and Purkinje system?",
+    "accept": [
+     "It has the fastest intrinsic depolarization rate and suppresses slower pacemakers via overdrive suppression",
+     "Fastest spontaneous Phase 4 depolarization rate"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Phases of the Cardiac Cycle",
+   "q": "At a normal resting heart rate of 75 beats per minute, what is the total duration of one cardiac cycle and its approximate division between ventricular systole and diastole?",
+   "options": [
+    "0.80 seconds total: 0.30 seconds systole and 0.50 seconds diastole",
+    "1.00 second total: 0.50 seconds systole and 0.50 seconds diastole",
+    "0.60 seconds total: 0.40 seconds systole and 0.20 seconds diastole",
+    "1.20 seconds total: 0.80 seconds systole and 0.40 seconds diastole"
+   ],
+   "answer": 0,
+   "explain": "At 75 bpm, cycle length = 60 / 75 = 0.80 s, comprising ~0.30 s of ventricular systole and ~0.50 s of ventricular diastole; when heart rate increases markedly, diastole shortens disproportionately more than systole.",
+   "verified": false,
+   "open": {
+    "q": "At a heart rate of 75 beats/min, state the total duration of a cardiac cycle and the respective durations of ventricular systole and diastole.",
+    "accept": [
+     "0.8 s total; 0.3 s systole and 0.5 s diastole",
+     "0.80 seconds (0.30 s systole, 0.50 s diastole)"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Phases of the Cardiac Cycle",
+   "q": "What is the status of the atrioventricular (mitral/tricuspid) and semilunar (aortic/pulmonary) valves during isovolumetric ventricular contraction?",
+   "options": [
+    "AV valves open and semilunar valves closed",
+    "Both AV valves and semilunar valves closed",
+    "AV valves closed and semilunar valves open",
+    "Both AV valves and semilunar valves open"
+   ],
+   "answer": 1,
+   "explain": "Isovolumetric contraction begins immediately after AV valve closure (S1) while ventricular pressure rises steeply from ~8 mmHg to ~80 mmHg (left ventricle), before exceeding aortic diastolic pressure to open the semilunar valves; volume remains constant at EDV.",
+   "verified": false,
+   "open": {
+    "q": "Are the atrioventricular and semilunar valves open or closed during isovolumetric ventricular contraction?",
+    "accept": [
+     "All four valves are closed",
+     "Both AV and semilunar valves are closed"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Phases of the Cardiac Cycle",
+   "q": "What event initiates the phase of rapid ventricular ejection during systole?",
+   "options": [
+    "Closure of the mitral and tricuspid valves",
+    "Atrial systole generating the a wave",
+    "Left ventricular pressure exceeding aortic diastolic pressure (~80 mmHg), forcing the aortic valve open",
+    "Isovolumetric relaxation dropping ventricular pressure below atrial pressure"
+   ],
+   "answer": 2,
+   "explain": "Once left ventricular pressure surpasses ~80 mmHg (and right ventricular pressure surpasses ~8-10 mmHg), the semilunar valves open and ~70% of stroke volume is ejected rapidly during the first third of ejection.",
+   "verified": false,
+   "open": {
+    "q": "What pressure event terminates isovolumetric contraction and initiates ventricular ejection?",
+    "accept": [
+     "Ventricular pressure exceeds aortic (and pulmonary) diastolic pressure, opening the semilunar valves",
+     "Left ventricular pressure rises above aortic pressure (~80 mmHg)"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Phases of the Cardiac Cycle",
+   "q": "Which sequence of valve events defines the boundaries of isovolumetric ventricular relaxation?",
+   "options": [
+    "Begins with mitral valve closure and ends with aortic valve opening",
+    "Begins with aortic valve opening and ends with mitral valve closure",
+    "Begins with atrial contraction and ends with tricuspid valve closure",
+    "Begins with aortic/pulmonary valve closure (S2) and ends with mitral/tricuspid valve opening"
+   ],
+   "answer": 3,
+   "explain": "When ventricular pressure falls below aortic/pulmonary pressure at the end of systole, semilunar valves snap shut (S2); ventricular pressure then plummets rapidly with all valves closed at End-Systolic Volume until falling below atrial pressure to open the AV valves.",
+   "verified": false,
+   "open": {
+    "q": "Which valve events mark the start and the end of isovolumetric ventricular relaxation?",
+    "accept": [
+     "Starts with semilunar valve closure and ends with AV valve opening",
+     "Aortic/pulmonary valve closure to mitral/tricuspid valve opening"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Phases of the Cardiac Cycle",
+   "q": "In a healthy young adult at rest, roughly what percentage of ventricular filling occurs passively before atrial contraction (atrial kick) takes place?",
+   "options": [
+    "75% to 80%",
+    "10% to 15%",
+    "40% to 45%",
+    "100%"
+   ],
+   "answer": 0,
+   "explain": "About 75-80% of blood flows passively from atria to ventricles during rapid filling and diastasis; atrial systole contributes the final 20-25% ('atrial kick'), which becomes crucial during tachycardia or ventricular hypertrophy.",
+   "verified": false,
+   "open": {
+    "q": "Approximately what percentage of ventricular filling is contributed by atrial systole ('atrial kick') versus passive filling at rest?",
+    "accept": [
+     "20% to 25% by atrial systole and 75% to 80% passive",
+     "About 20% atrial contraction, 80% passive"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ventricular Volumes and Ejection Fraction",
+   "q": "In a healthy resting adult with an end-diastolic volume (EDV) of 120 mL and an end-systolic volume (ESV) of 50 mL, what are the stroke volume (SV) and ejection fraction (EF)?",
+   "options": [
+    "SV = 170 mL and EF = 42%",
+    "SV = 70 mL and EF = 58.3%",
+    "SV = 50 mL and EF = 70%",
+    "SV = 70 mL and EF = 35%"
+   ],
+   "answer": 1,
+   "explain": "Stroke Volume = EDV - ESV = 120 - 50 = 70 mL. Ejection Fraction = (SV / EDV) x 100 = (70 / 120) x 100 = 58.3% (normal resting EF is 55% to 70%).",
+   "verified": false,
+   "open": {
+    "q": "Calculate stroke volume and ejection fraction if end-diastolic volume is 120 mL and end-systolic volume is 50 mL.",
+    "accept": [
+     "Stroke volume 70 mL and ejection fraction 58.3%",
+     "SV = 70 mL, EF = 58%"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-019",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heart Sounds and Jugular Venous Pulse",
+   "q": "What causes the first heart sound (S1) and the second heart sound (S2), respectively?",
+   "options": [
+    "S1: opening of AV valves; S2: opening of semilunar valves",
+    "S1: rapid ventricular filling; S2: atrial contraction",
+    "S1: closure of mitral and tricuspid (AV) valves at onset of systole; S2: closure of aortic and pulmonary (semilunar) valves at onset of diastole",
+    "S1: closure of aortic valve; S2: closure of mitral valve"
+   ],
+   "answer": 2,
+   "explain": "Heart sounds arise from sudden deceleration of blood and valve leaflet vibration upon closure: S1 ('lub') marks AV valve closure at the start of isovolumetric contraction, while S2 ('dup') marks semilunar valve closure at the start of isovolumetric relaxation.",
+   "verified": false,
+   "open": {
+    "q": "State the valvular events responsible for producing the first (S1) and second (S2) heart sounds.",
+    "accept": [
+     "S1 is closure of AV (mitral and tricuspid) valves; S2 is closure of semilunar (aortic and pulmonary) valves",
+     "AV valve closure for S1 and semilunar valve closure for S2"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heart Sounds and Jugular Venous Pulse",
+   "q": "Why does physiological splitting of the second heart sound (S2) widen during normal inspiration?",
+   "options": [
+    "Inspiration delays aortic valve closure (A2) due to increased left ventricular preload",
+    "Inspiration causes premature closure of the pulmonary valve (P2)",
+    "Inspiration decreases venous return to the right atrium",
+    "Inspiration lowers intrathoracic pressure, increasing right ventricular venous return and delaying pulmonary valve closure (P2) while slightly advancing A2"
+   ],
+   "answer": 3,
+   "explain": "Negative intrathoracic pressure during inspiration augments systemic venous return to the right heart (prolonging RV ejection and delaying P2) while pooling blood in pulmonary vessels (reducing LV preload and advancing A2).",
+   "verified": false,
+   "open": {
+    "q": "Explain why the A2 and P2 components of the second heart sound separate (split) during inspiration.",
+    "accept": [
+     "Inspiration increases venous return to the right ventricle, delaying pulmonary valve closure (P2), while decreasing left ventricular filling and advancing A2",
+     "Delayed P2 from increased right heart filling and earlier A2"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heart Sounds and Jugular Venous Pulse",
+   "q": "When do the third (S3) and fourth (S4) heart sounds occur during the cardiac cycle, and what does S4 indicate in an adult?",
+   "options": [
+    "S3 occurs during rapid passive ventricular filling (volume overload/dilated ventricle); S4 occurs during late diastole due to atrial contraction against a stiff, non-compliant ventricle",
+    "S3 occurs during isovolumetric contraction; S4 occurs during rapid ejection",
+    "S3 occurs during isovolumetric relaxation; S4 occurs immediately after S1",
+    "Both S3 and S4 occur exclusively during ventricular systole"
+   ],
+   "answer": 0,
+   "explain": "S3 is caused by blood oscillating against ventricular walls during rapid early diastolic filling (normal in children/pregnancy, pathologic in systolic heart failure); S4 ('atrial gallop') is always pathologic in adults, caused by forceful atrial contraction into a stiff ventricle (e.g., concentric LVH or ischemia).",
+   "verified": false,
+   "open": {
+    "q": "Identify the phase of the cardiac cycle in which S3 and S4 occur and state what a fourth heart sound (S4) signifies.",
+    "accept": [
+     "S3 occurs in early rapid ventricular filling; S4 occurs in late diastole during atrial contraction into a stiff ventricle",
+     "S3: early diastole; S4: late diastole (atrial kick against a non-compliant ventricle)"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heart Sounds and Jugular Venous Pulse",
+   "q": "In the jugular venous pressure (JVP) tracing, what produces the 'a' wave, the 'c' wave, and the 'v' wave?",
+   "options": [
+    "a wave: ventricular ejection; c wave: atrial relaxation; v wave: tricuspid opening",
+    "a wave: right atrial contraction; c wave: bulging of closed tricuspid valve into right atrium during isovolumetric contraction; v wave: passive right atrial venous filling against a closed tricuspid valve",
+    "a wave: aortic valve closure; c wave: rapid ventricular filling; v wave: atrial systole",
+    "a wave: carotid pulse artifact; c wave: pulmonary valve closure; v wave: isovolumetric relaxation"
+   ],
+   "answer": 1,
+   "explain": "The JVP waveform reflects right atrial pressure changes: 'a' = atrial contraction (absent in atrial fibrillation), 'c' = tricuspid bulging in early systole, 'x' descent = atrial relaxation/downward pulling of tricuspid ring, 'v' = venous filling during late systole, and 'y' descent = passive emptying upon tricuspid opening.",
+   "verified": false,
+   "open": {
+    "q": "State the physiological causes of the a, c, and v waves in the jugular venous pulse (JVP) curve.",
+    "accept": [
+     "a: atrial contraction; c: tricuspid valve bulging during isovolumetric contraction; v: atrial venous filling against closed tricuspid valve",
+     "a wave = atrial systole, c wave = tricuspid bulging, v wave = venous filling"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heart Sounds and Jugular Venous Pulse",
+   "q": "What produces the incisura (dicrotic notch) visible on the descending limb of the aortic pressure curve?",
+   "options": [
+    "Opening of the mitral valve",
+    "Atrial contraction at the end of diastole",
+    "Transient retrograde blood flow and elastic recoil of the aorta immediately following aortic valve closure",
+    "Rapid ventricular ejection at peak systole"
+   ],
+   "answer": 2,
+   "explain": "At the end of systole, brief backflow of aortic blood snaps the aortic valve shut, causing a sharp transient pressure dip (incisura/dicrotic notch) followed by a secondary wave from aortic elastic recoil (Windkessel effect).",
+   "verified": false,
+   "open": {
+    "q": "What physiological event causes the incisura (dicrotic notch) on the aortic pressure tracing?",
+    "accept": [
+     "Closure of the aortic valve and elastic recoil of the aorta",
+     "Sudden closure of the aortic semilunar valve"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Left Ventricular Pressure-Volume Loop",
+   "q": "On a left ventricular pressure-volume (PV) loop, what does the width of the loop along the horizontal volume axis represent, and what does the enclosed area of the loop represent?",
+   "options": [
+    "Width = heart rate; area = total peripheral resistance",
+    "Width = end-systolic pressure; area = myocardial oxygen consumption",
+    "Width = ejection fraction; area = systemic vascular compliance",
+    "Width = stroke volume (EDV minus ESV); area = external stroke work performed by the ventricle"
+   ],
+   "answer": 3,
+   "explain": "The vertical segments represent isovolumetric contraction (right) and isovolumetric relaxation (left) separated horizontally by Stroke Volume (EDV - ESV), while the area inside the loop equals external stroke work (Pressure x Volume).",
+   "verified": false,
+   "open": {
+    "q": "In a left ventricular pressure-volume loop, what physiological quantities are represented by the width of the loop and the area inside the loop?",
+    "accept": [
+     "Width = stroke volume; area = stroke work",
+     "Horizontal width is stroke volume and enclosed area is external stroke work"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Left Ventricular Pressure-Volume Loop",
+   "q": "How does an isolated increase in afterload (such as acute systemic hypertension) alter the left ventricular pressure-volume loop?",
+   "options": [
+    "Higher peak systolic ejection pressure, increased end-systolic volume (ESV), and decreased stroke volume",
+    "Lower peak systolic pressure, decreased ESV, and increased stroke volume",
+    "Leftward shift of the end-systolic pressure-volume relationship (ESPVR) line",
+    "Elimination of the isovolumetric relaxation phase"
+   ],
+   "answer": 0,
+   "explain": "Increased afterload forces the ventricle to generate higher pressure before opening the aortic valve, shortening ejection duration so ESV increases along the unchanged ESPVR line and stroke volume falls.",
+   "verified": false,
+   "open": {
+    "q": "Describe how an acute increase in afterload changes peak ventricular systolic pressure, end-systolic volume (ESV), and stroke volume on a pressure-volume loop.",
+    "accept": [
+     "Increases peak systolic pressure and ESV, and decreases stroke volume",
+     "Higher ejection pressure, higher ESV, lower SV"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-026",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Left Ventricular Pressure-Volume Loop",
+   "q": "How does administration of a positive inotropic agent (such as dobutamine or norepinephrine) affect the end-systolic pressure-volume relationship (ESPVR) and end-systolic volume?",
+   "options": [
+    "Decreases ESPVR slope and increases ESV",
+    "Increases ESPVR slope (shifts upward and leftward), decreasing ESV and increasing stroke volume",
+    "Increases EDV without changing ESV or ESPVR",
+    "Decreases both preload and contractility simultaneously"
+   ],
+   "answer": 1,
+   "explain": "Enhanced myocardial contractility increases the slope (Emax) of the ESPVR line, enabling the ventricle to eject more forcefully to a smaller end-systolic volume (ESV) and larger stroke volume.",
+   "verified": false,
+   "open": {
+    "q": "How does increased myocardial contractility shift the end-systolic pressure-volume relationship (ESPVR) and affect end-systolic volume?",
+    "accept": [
+     "Shifts ESPVR upward and leftward (steeper slope), decreasing ESV",
+     "Increases ESPVR slope and lowers end-systolic volume"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-027",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Frank-Starling Law and Inotropy",
+   "q": "What does the Frank-Starling law of the heart state?",
+   "options": [
+    "Heart rate increases whenever arterial blood pressure rises",
+    "Coronary blood flow occurs primarily during peak ventricular systole",
+    "Within physiological limits, the heart pumps all the blood returned to it by increasing stroke volume proportionally to end-diastolic volume (sarcomere stretch)",
+    "Myocardial contractility is independent of intracellular calcium concentration"
+   ],
+   "answer": 2,
+   "explain": "Greater venous return stretches ventricular myocytes (increasing preload/EDV toward optimal sarcomere length ~2.2 um), increasing troponin C sensitivity to Ca2+ and cross-bridge overlap to augment stroke volume.",
+   "verified": false,
+   "open": {
+    "q": "State the Frank-Starling law of the heart.",
+    "accept": [
+     "Force of cardiac contraction and stroke volume increase in proportion to end-diastolic volume (venous return)",
+     "Within physiological limits, stroke volume increases as end-diastolic fiber length increases"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Autonomic Regulation of Cardiac Function",
+   "q": "How does sympathetic stimulation via beta-1 adrenergic receptors accelerate myocardial relaxation (positive lusitropy)?",
+   "options": [
+    "By inhibiting Na+/K+-ATPase on the sarcolemma",
+    "By opening muscarinic potassium channels",
+    "By blocking ryanodine receptors on the sarcoplasmic reticulum",
+    "By activating protein kinase A to phosphorylate phospholamban, relieving its inhibition of SERCA so Ca2+ is pumped back into the SR faster"
+   ],
+   "answer": 3,
+   "explain": "Beta-1 Gs-cAMP-PKA signaling phosphorylates L-type Ca2+ channels (increasing Ca2+ entry/inotropy), troponin I (accelerating Ca2+ dissociation), and phospholamban (disinhibiting SERCA2a to speed diastolic Ca2+ reuptake/lusitropy).",
+   "verified": false,
+   "open": {
+    "q": "Explain the intracellular mechanism by which beta-1 adrenergic stimulation produces a positive lusitropic (faster relaxation) effect in cardiac myocytes.",
+    "accept": [
+     "PKA phosphorylates phospholamban, stimulating SERCA to rapidly reuptake Ca2+ into the sarcoplasmic reticulum",
+     "Phosphorylation of phospholamban increases SR Ca2+-ATPase activity"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Autonomic Regulation of Cardiac Function",
+   "q": "By which membrane mechanism does vagal parasympathetic stimulation (acetylcholine acting on M2 muscarinic receptors) slow the heart rate (negative chronotropy)?",
+   "options": [
+    "Opening G-protein-coupled K-ACh channels to hyperpolarize SA nodal cells while reducing cAMP to decrease funny (If) and L-type Ca2+ currents",
+    "Increasing intracellular cAMP to accelerate HCN channel opening",
+    "Activating alpha-1 adrenergic receptors on Purkinje fibers",
+    "Opening fast voltage-gated Na+ channels in the AV node"
+   ],
+   "answer": 0,
+   "explain": "M2 receptors couple to Gi proteins: the beta-gamma subunit directly opens GIRK (K-ACh) channels to hyperpolarize maximum diastolic potential, while alpha-i inhibits adenylyl cyclase, flattening Phase 4 slope.",
+   "verified": false,
+   "open": {
+    "q": "How does acetylcholine binding to cardiac M2 muscarinic receptors reduce the firing rate of the sinoatrial node?",
+    "accept": [
+     "Opens K-ACh channels to hyperpolarize the membrane and lowers cAMP to slow Phase 4 funny and Ca2+ currents",
+     "Hyperpolarizes SA nodal cells via K+ efflux and slows diastolic depolarization"
+    ]
+   }
+  },
+  {
+   "id": "pc-cardiac-muscle-and-the-cardiac-cycle-030",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 68-year-old man with long-standing untreated systemic hypertension develops concentric left ventricular hypertrophy and a prominent fourth heart sound (S4) without a murmur. During which phase of the cardiac cycle is S4 generated, and why is it absent if he develops atrial fibrillation?",
+   "options": [
+    "Early rapid ventricular filling; atrial fibrillation speeds ventricular relaxation",
+    "Late diastole during atrial systole; atrial fibrillation abolishes organized atrial contraction",
+    "Isovolumetric contraction; atrial fibrillation prevents mitral valve closure",
+    "Mid-systolic ejection; atrial fibrillation lowers aortic pressure"
+   ],
+   "answer": 1,
+   "explain": "S4 is produced by forceful atrial contraction pushing blood into a stiff, hypertrophied ventricle at the end of diastole; because atrial fibrillation eliminates coordinated atrial contraction (and the JVP 'a' wave), S4 disappears.",
+   "verified": false,
+   "open": {
+    "q": "Why does a fourth heart sound (S4) disappear if a patient with left ventricular hypertrophy develops atrial fibrillation?",
+    "accept": [
+     "Atrial fibrillation eliminates coordinated atrial contraction needed to generate S4",
+     "S4 depends on atrial systole, which is lost in atrial fibrillation"
+    ]
+   }
+  }
+ ]
+}

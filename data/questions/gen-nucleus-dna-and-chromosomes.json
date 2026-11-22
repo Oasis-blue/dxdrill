@@ -1,0 +1,589 @@
+{
+ "topic": "gen-nucleus-dna-and-chromosomes",
+ "questions": [
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nuclear Envelope and Pore Complex",
+   "q": "Which protein family forms the nuclear lamina meshwork lining the inner nuclear membrane and disassembles via hyperphosphorylation during prophase?",
+   "options": [
+    "Lamins (A, B, and C)",
+    "Clathrins",
+    "Spectrins",
+    "Tubulins"
+   ],
+   "answer": 0,
+   "explain": "Nuclear lamins (A, B1, B2, and C) are type V intermediate filament proteins underlying the inner nuclear membrane; cyclin-dependent kinase phosphorylation of lamins drives nuclear envelope breakdown at mitosis.",
+   "verified": false,
+   "open": {
+    "q": "Name the class of intermediate filament proteins that forms the fibrous nuclear lamina beneath the inner nuclear membrane.",
+    "accept": [
+     "lamins",
+     "nuclear lamins",
+     "lamin A, B, and C"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nuclear Envelope and Pore Complex",
+   "q": "With which cytoplasmic organelle is the outer membrane of the nuclear envelope directly continuous, sharing a common perinuclear cisternal space?",
+   "options": [
+    "Rough endoplasmic reticulum (rER)",
+    "Golgi apparatus",
+    "Mitochondrion",
+    "Peroxisome"
+   ],
+   "answer": 0,
+   "explain": "The outer nuclear membrane is studded with ribosomes and is physically continuous with the rough endoplasmic reticulum, so the perinuclear space communicates directly with the rER lumen.",
+   "verified": false,
+   "open": {
+    "q": "Which cytoplasmic organelle is continuous with the outer nuclear membrane and studded with ribosomes?",
+    "accept": [
+     "rough endoplasmic reticulum",
+     "rER",
+     "rough ER"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Nuclear Envelope and Pore Complex",
+   "q": "Active nuclear import of large proteins (> 40 kDa) bearing a basic nuclear localization signal (NLS) through the nuclear pore complex is mediated by importins and powered by a gradient of which small GTPase?",
+   "options": [
+    "Ran (Ran-GTP / Ran-GDP)",
+    "Ras",
+    "Rho",
+    "Rab"
+   ],
+   "answer": 0,
+   "explain": "Nuclear Ran-GEF maintains high Ran-GTP inside the nucleus while cytoplasmic Ran-GAP maintains high Ran-GDP in the cytosol; Ran-GTP binding to importin inside the nucleus dissociates the cargo protein.",
+   "verified": false,
+   "open": {
+    "q": "Name the small GTPase whose nuclear-cytoplasmic GTP/GDP gradient drives directional transport across nuclear pore complexes.",
+    "accept": [
+     "Ran",
+     "Ran GTPase",
+     "Ran-GTP"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nucleolus and Ribosome Biogenesis",
+   "q": "Around which specific chromosomal regions—located on the short arms of the five human acrocentric chromosomes (13, 14, 15, 21, and 22)—is the nucleolus organized?",
+   "options": [
+    "Nucleolar organizer regions (NORs) containing tandem rRNA gene repeats",
+    "Centromeric alpha-satellite repeats",
+    "Telomeric TTAGGG repeats",
+    "Fragile X CGG trinucleotide repeats"
+   ],
+   "answer": 0,
+   "explain": "Nucleolar organizer regions (NORs) reside on the short arms (p12) of acrocentric chromosomes 13, 14, 15, 21, and 22, housing tandem arrays of 45S pre-rRNA genes transcribed by RNA polymerase I.",
+   "verified": false,
+   "open": {
+    "q": "Which five human acrocentric chromosomes carry nucleolar organizer regions (NORs) on their short arms?",
+    "accept": [
+     "chromosomes 13, 14, 15, 21, and 22",
+     "13, 14, 15, 21, 22"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "DNA Structure and Chemistry",
+   "q": "Which type of covalent bond links the 3'-hydroxyl group of one deoxyribose sugar to the 5'-phosphate group of the adjacent nucleotide along a DNA strand?",
+   "options": [
+    "3',5'-phosphodiester bond",
+    "Hydrogen bond",
+    "N-glycosidic bond",
+    "Disulfide bond"
+   ],
+   "answer": 0,
+   "explain": "Adjacent nucleotides in a polynucleotide chain are joined covalently by 3',5'-phosphodiester bonds forming the negatively charged sugar-phosphate backbone, whereas complementary bases pair via hydrogen bonds.",
+   "verified": false,
+   "open": {
+    "q": "Name the covalent linkage connecting the 3'-carbon of one nucleotide sugar to the 5'-phosphate of the next nucleotide in DNA.",
+    "accept": [
+     "phosphodiester bond",
+     "3',5'-phosphodiester bond"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "DNA Structure and Chemistry",
+   "q": "Why does a double-stranded DNA segment rich in guanine-cytosine (G-C) base pairs have a higher melting temperature (Tm) than an adenine-thymine (A-T) rich segment of equal length?",
+   "options": [
+    "G-C pairs are joined by three hydrogen bonds whereas A-T pairs have only two hydrogen bonds",
+    "G-C pairs contain covalent peptide cross-links",
+    "G-C pairs lack deoxyribose sugars",
+    "A-T pairs repel each other electrostatically"
+   ],
+   "answer": 0,
+   "explain": "Guanine and cytosine form three intermolecular hydrogen bonds (plus stronger base-stacking interactions), whereas adenine and thymine form only two hydrogen bonds, requiring higher thermal energy to denature G-C rich DNA.",
+   "verified": false,
+   "open": {
+    "q": "How many hydrogen bonds join a guanine-cytosine (G-C) base pair compared to an adenine-thymine (A-T) base pair in Watson-Crick B-DNA?",
+    "accept": [
+     "three vs two",
+     "3 hydrogen bonds in G-C and 2 in A-T",
+     "3 vs 2"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "DNA Structure and Chemistry",
+   "q": "According to Chargaff's rules for double-stranded DNA, if a human DNA sample contains 30% adenine (A), what percentage of guanine (G) does it contain?",
+   "options": [
+    "20%",
+    "30%",
+    "40%",
+    "60%"
+   ],
+   "answer": 0,
+   "explain": "In double-stranded DNA, [A] = [T] and [G] = [C]. If A = 30%, then T = 30% (total A + T = 60%), leaving 40% for G + C, so G = 20% and C = 20%.",
+   "verified": false,
+   "open": {
+    "q": "If double-stranded DNA consists of 30% adenine, calculate the percentage of cytosine.",
+    "accept": [
+     "20%",
+     "20 percent",
+     "20"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "DNA Structure and Chemistry",
+   "q": "Which structural conformation of double-helical DNA is the predominant right-handed physiological form in living cells, having approximately 10.5 base pairs per helical turn?",
+   "options": [
+    "B-DNA",
+    "A-DNA",
+    "Z-DNA",
+    "Triple-helical H-DNA"
+   ],
+   "answer": 0,
+   "explain": "B-DNA is the classic right-handed Watson-Crick double helix (~10.5 bp/turn, distinct major and minor grooves) predominant under hydrated physiological conditions; A-DNA is a dehydrated compact right-handed form, and Z-DNA is a left-handed zigzag helix.",
+   "verified": false,
+   "open": {
+    "q": "Name the predominant right-handed physiological form of the DNA double helix.",
+    "accept": [
+     "B-DNA",
+     "B form DNA"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-009",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Chromatin Packaging and Histones",
+   "q": "Which five histone proteins form the core octamer and the linker of a eukaryotic nucleosome?",
+   "options": [
+    "Two copies each of H2A, H2B, H3, and H4 in the core octamer, with H1 as the external linker histone",
+    "H1, H2A, H2B, and H3 in the octamer, with H4 as the linker",
+    "Five copies of H1 only",
+    "H3 and H4 only"
+   ],
+   "answer": 0,
+   "explain": "About 146–147 base pairs of negatively charged DNA wrap ~1.65 turns around a positively charged octamer of two H2A-H2B dimers and an (H3-H4)2 tetramer; histone H1 binds the linker DNA to compact nucleosomes into the 30-nm chromatin fiber.",
+   "verified": false,
+   "open": {
+    "q": "Which histone protein binds to the linker DNA outside the nucleosome core particle to stabilize the 30-nm chromatin fiber?",
+    "accept": [
+     "H1",
+     "histone H1"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Chromatin Packaging and Histones",
+   "q": "Which two basic, positively charged amino acids are enriched in histone proteins to allow tight electrostatic binding to the negatively charged phosphate backbone of DNA?",
+   "options": [
+    "Lysine and arginine",
+    "Aspartate and glutamate",
+    "Glycine and proline",
+    "Tryptophan and phenylalanine"
+   ],
+   "answer": 0,
+   "explain": "Histones are small basic proteins rich in positively charged lysine and arginine residues that neutralize the negatively charged phosphodiester backbone of DNA.",
+   "verified": false,
+   "open": {
+    "q": "Name the two positively charged amino acids abundant in histone proteins.",
+    "accept": [
+     "lysine and arginine",
+     "arginine and lysine"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Chromatin Packaging and Histones",
+   "q": "How does histone acetylation by histone acetyltransferases (HATs) affect chromatin structure and gene transcription?",
+   "options": [
+    "It neutralizes positive charges on lysine tails, loosening chromatin into transcriptionally active euchromatin",
+    "It increases positive charge on histones, condensing DNA into silent heterochromatin",
+    "It cleaves phosphodiester bonds to degrade DNA",
+    "It permanently deletes telomeric repeats"
+   ],
+   "answer": 0,
+   "explain": "Acetylation of lysine residues on histone N-terminal tails removes their positive charge, weakening electrostatic attraction to DNA and opening chromatin into euchromatin accessible to transcription factors (histone deacetylases [HDACs] reverse this to repress transcription).",
+   "verified": false,
+   "open": {
+    "q": "Does histone acetylation generally activate or repress gene transcription?",
+    "accept": [
+     "activate",
+     "activates transcription",
+     "promotes transcription"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Chromatin Packaging and Histones",
+   "q": "What is the Barr body seen at the nuclear rim of somatic cells in normal 46,XX females (such as buccal mucosal cells)?",
+   "options": [
+    "A facultatively heterochromatic, transcriptionally inactivated X chromosome (lyonization)",
+    "An extra copy of chromosome 21",
+    "A constitutive heterochromatin block on the Y chromosome",
+    "The nucleolus during metaphase"
+   ],
+   "answer": 0,
+   "explain": "According to the Lyon hypothesis, one of the two X chromosomes in female somatic cells undergoes random epigenetic inactivation (via XIST lncRNA and DNA/histone methylation) into facultative heterochromatin visible as a Barr body; the number of Barr bodies equals (number of X chromosomes minus 1).",
+   "verified": false,
+   "open": {
+    "q": "How many Barr bodies are expected in the somatic cells of an individual with Klinefelter syndrome (47,XXY) versus Turner syndrome (45,X)?",
+    "accept": [
+     "1 in Klinefelter and 0 in Turner",
+     "one in 47,XXY and zero in 45,X",
+     "1 and 0"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Chromosome Anatomy and Classification",
+   "q": "Which constricted chromosomal region holds sister chromatids together and serves as the assembly site for the kinetochore protein complex that attaches to mitotic spindle microtubules?",
+   "options": [
+    "Centromere",
+    "Telomere",
+    "Nucleolar organizer",
+    "Chiasma"
+   ],
+   "answer": 0,
+   "explain": "The centromere is a specialized DNA region rich in alpha-satellite repeats and CENP-A nucleosomes where the trilaminar kinetochore assembles to capture spindle microtubules during cell division.",
+   "verified": false,
+   "open": {
+    "q": "Name the specialized chromosomal constriction where sister chromatids are joined and spindle microtubules attach via the kinetochore.",
+    "accept": [
+     "centromeres",
+     "primary constriction"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Chromosome Anatomy and Classification",
+   "q": "How are human chromosomes classified when the centromere is located very close to one end, resulting in a long q arm and a minuscule p arm bearing satellites (chromosomes 13, 14, 15, 21, and 22)?",
+   "options": [
+    "Acrocentric",
+    "Metacentric",
+    "Submetacentric",
+    "Telocentric"
+   ],
+   "answer": 0,
+   "explain": "Metacentric chromosomes have a central centromere (e.g., 1, 3, 16, 19, 20); submetacentric have an off-center centromere; acrocentric chromosomes (13, 14, 15, 21, 22, plus Y without satellites) have a near-terminal centromere; humans have no true telocentric chromosomes.",
+   "verified": false,
+   "open": {
+    "q": "Which morphological class of human chromosomes has a near-terminal centromere with a tiny short (p) arm, exemplified by chromosomes 13, 14, 15, 21, and 22?",
+    "accept": [
+     "acrocentric",
+     "acrocentric chromosomes"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-015",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Chromosome Anatomy and Classification",
+   "q": "What is the repeating hexanucleotide DNA sequence found at the ends (telomeres) of human chromosomes that protects chromosome tips from end-to-end fusion and progressive shortening?",
+   "options": [
+    "5'-TTAGGG-3'",
+    "5'-TATAAA-3'",
+    "5'-AATAAA-3'",
+    "5'-CGGCGG-3'"
+   ],
+   "answer": 0,
+   "explain": "Human telomeres consist of thousands of tandem repeats of 5'-TTAGGG-3' bound by the shelterin protein complex; telomerase (a ribonucleoprotein reverse transcriptase active in germ cells, stem cells, and cancer cells) extends telomeres using an internal RNA template.",
+   "verified": false,
+   "open": {
+    "q": "Write the 6-nucleotide repeating DNA sequence present in human telomeres.",
+    "accept": [
+     "TTAGGG",
+     "5'-TTAGGG-3'"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-016",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Chromosome Anatomy and Classification",
+   "q": "Why is the ribonucleoprotein enzyme telomerase classified functionally as an RNA-dependent DNA polymerase (reverse transcriptase)?",
+   "options": [
+    "It carries its own intrinsic RNA template molecule to synthesize repetitive TTAGGG DNA onto 3' chromosome ends",
+    "It transcribes ribosomal RNA from telomeric DNA",
+    "It splices introns out of pre-mRNA",
+    "It repairs double-strand DNA breaks by non-homologous end joining"
+   ],
+   "answer": 0,
+   "explain": "Telomerase comprises a catalytic reverse transcriptase subunit (TERT) and an integral RNA template subunit (TERC) that synthesizes telomeric DNA repeats onto 3' overhangs to solve the end-replication problem.",
+   "verified": false,
+   "open": {
+    "q": "What type of nucleic acid template is built directly into the telomerase enzyme complex?",
+    "accept": [
+     "RNA",
+     "RNA template",
+     "TERC"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-017",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Human Karyotype and Cytogenetics",
+   "q": "Which cell-cycle stage is arrested using colchicine or colcemid during standard G-banded karyotyping because chromosomes are maximally condensed and clearly visible?",
+   "options": [
+    "Metaphase",
+    "Interphase (G1)",
+    "Telophase",
+    "Prophase I leptotene"
+   ],
+   "answer": 0,
+   "explain": "PHA-stimulated peripheral blood T-lymphocytes are exposed to colchicine/colcemid to depolymerize spindle microtubules and arrest cells in metaphase, when chromosomes are most condensed for Giemsa (G-banding) analysis.",
+   "verified": false,
+   "open": {
+    "q": "In which phase of mitosis are cells arrested with colchicine to prepare a standard human karyotype?",
+    "accept": [
+     "metaphase stage"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-018",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Human Karyotype and Cytogenetics",
+   "q": "In standard cytogenetic nomenclature (ISCN), what does the notation '46,XY,del(5)(p15.2)' signify?",
+   "options": [
+    "A male karyotype with 46 chromosomes and a deletion in band 15.2 on the short arm of chromosome 5 (Cri-du-chat syndrome)",
+    "A female karyotype with trisomy 5",
+    "A male karyotype with a balanced translocation between chromosomes 5 and 15",
+    "A duplication on the long arm of chromosome 5"
+   ],
+   "answer": 0,
+   "explain": "In ISCN notation, 'p' denotes the short arm (petit), 'q' denotes the long arm, 'del' indicates deletion, and '5p15.2' specifies chromosome 5, short arm, region 1, band 5, sub-band 2 (the critical locus for Cri-du-chat syndrome).",
+   "verified": false,
+   "open": {
+    "q": "In cytogenetic nomenclature, what do the letters 'p' and 'q' denote on a chromosome?",
+    "accept": [
+     "p is the short arm and q is the long arm",
+     "short arm and long arm"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Human Karyotype and Cytogenetics",
+   "q": "What type of chromosomal rearrangement involves breakage at or near the centromeres of two acrocentric chromosomes (such as chromosomes 14 and 21) with fusion of their long (q) arms and loss of their short (p) arms?",
+   "options": [
+    "Robertsonian translocation",
+    "Reciprocal translocation",
+    "Paracentric inversion",
+    "Ring chromosome formation"
+   ],
+   "answer": 0,
+   "explain": "Robertsonian translocations occur exclusively between acrocentric chromosomes (13, 14, 15, 21, 22); a balanced carrier has 45 chromosomes (losing only redundant rRNA genes on the tiny p arms) and is phenotypically normal, but is at risk of producing offspring with translocation trisomy 21 or 13.",
+   "verified": false,
+   "open": {
+    "q": "Name the type of translocation involving fusion of the long arms of two acrocentric chromosomes, leaving a balanced carrier with 45 chromosomes.",
+    "accept": [
+     "Robertsonian translocation",
+     "centric fusion"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-020",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Human Karyotype and Cytogenetics",
+   "q": "A phenotypically normal 28-year-old woman is found to carry a balanced 45,XX,der(21;21)(q10;q10) Robertsonian translocation between both copies of chromosome 21. If she conceives with a chromosomally normal partner, what percentage of her viable pregnancies will have Down syndrome (trisomy 21)?",
+   "options": [
+    "100%",
+    "50%",
+    "25%",
+    "0%"
+   ],
+   "answer": 0,
+   "explain": "Every gamete produced by a carrier of a homologous 21;21 Robertsonian translocation either carries the fused 21;21 chromosome (producing trisomy 21 upon fertilization) or lacks chromosome 21 entirely (producing monosomy 21, which is non-viable), resulting in 100% Down syndrome among live births.",
+   "verified": false,
+   "open": {
+    "q": "Why does a balanced carrier of a homologous 21;21 Robertsonian translocation have a 100% risk of Down syndrome in all live-born offspring?",
+    "accept": [
+     "gametes either carry two copies of 21q (trisomy 21) or zero copies (non-viable monosomy 21)",
+     "monosomy 21 is lethal so all surviving pregnancies have trisomy 21"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-021",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Human Genome Organization and Mitochondrial DNA",
+   "q": "Approximately what percentage of the 3.2 billion base pairs in the human nuclear genome consists of protein-coding exons?",
+   "options": [
+    "1.5% (less than 2%)",
+    "25%",
+    "50%",
+    "85%"
+   ],
+   "answer": 0,
+   "explain": "Protein-coding sequences (exons) make up only ~1.5% of the human nuclear genome, whereas the remainder consists of introns, regulatory elements, non-coding RNAs, and repetitive DNA sequences (LINEs, SINEs, satellites).",
+   "verified": false,
+   "open": {
+    "q": "Approximately what percentage of the human nuclear genome actually codes for proteins?",
+    "accept": [
+     "1.5%",
+     "1-2%",
+     "about 1.5 percent",
+     "less than 2%"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Human Genome Organization and Mitochondrial DNA",
+   "q": "How is human mitochondrial DNA (mtDNA) structurally organized and inherited compared to nuclear DNA?",
+   "options": [
+    "Circular double-stranded DNA (~16.5 kb) lacking histones and transmitted exclusively through the maternal oocyte cytoplasm",
+    "Linear chromosomes bound to histone octamers and inherited equally from both parents",
+    "Single-stranded RNA transmitted exclusively via paternal sperm",
+    "Linear plasmid DNA inherited in an X-linked dominant pattern"
+   ],
+   "answer": 0,
+   "explain": "Human mtDNA is a 16,569-bp circular, intronless, histone-free double-stranded molecule encoding 13 oxidative phosphorylation polypeptides, 2 rRNAs, and 22 tRNAs; it is inherited solely from the mother because sperm mitochondria are degraded after fertilization.",
+   "verified": false,
+   "open": {
+    "q": "From which parent is human mitochondrial DNA exclusively inherited, and what is its physical shape?",
+    "accept": [
+     "maternal and circular",
+     "mother and circular double-stranded"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-023",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Human Genome Organization and Mitochondrial DNA",
+   "q": "A 21-year-old man develops subacute, painless bilateral central vision loss due to retinal ganglion cell degeneration (Leber hereditary optic neuropathy), caused by a point mutation in mitochondrial DNA. Why may his siblings vary widely in disease severity despite inheriting the same maternal mutation?",
+   "options": [
+    "Heteroplasmy (different proportions of mutant versus wild-type mtDNA distributed randomly to daughter cells)",
+    "X-chromosome inactivation (lyonization)",
+    "Genomic imprinting on chromosome 15",
+    "Uniparental paternal disomy"
+   ],
+   "answer": 0,
+   "explain": "Cells contain hundreds to thousands of mitochondria; when a mixture of normal and mutated mtDNA coexists (heteroplasmy), stochastic mitotic segregation determines whether a given tissue exceeds the bioenergetic threshold for clinical disease.",
+   "verified": false,
+   "open": {
+    "q": "What genetic term describes the coexistence of both mutant and wild-type mitochondrial DNA molecules within the same cell or individual?",
+    "accept": [
+     "heteroplasmy"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "DNA Replication and Repair",
+   "q": "Which enzyme relieves positive supercoiling (torsional strain) ahead of the DNA replication fork by transiently nicking and rejoining DNA strands?",
+   "options": [
+    "DNA topoisomerase (gyrase / topoisomerase I and II)",
+    "DNA helicase",
+    "DNA primase",
+    "DNA ligase"
+   ],
+   "answer": 0,
+   "explain": "As DNA helicase unwinds the double helix at the replication fork, positive supercoils accumulate ahead of it; topoisomerases I and II introduce transient single- or double-strand breaks to relax torsional stress.",
+   "verified": false,
+   "open": {
+    "q": "Name the class of enzymes that relieves torsional supercoiling ahead of an advancing DNA replication fork.",
+    "accept": [
+     "topoisomerases",
+     "DNA topoisomerase",
+     "topoisomerase I and II"
+    ]
+   }
+  },
+  {
+   "id": "gen-nucleus-dna-and-chromosomes-025",
+   "type": "mcq",
+   "level": 3,
+   "sub": "DNA Replication and Repair",
+   "q": "A 6-year-old child develops severe sunburns after minimal sunlight exposure, freckling in sun-exposed skin, and early-onset basal and squamous cell carcinomas (xeroderma pigmentosum). Defect in which DNA repair pathway fails to remove ultraviolet-induced pyrimidine dimers?",
+   "options": [
+    "Nucleotide excision repair (NER)",
+    "Base excision repair (BER)",
+    "Mismatch repair (MMR)",
+    "Non-homologous end joining (NHEJ)"
+   ],
+   "answer": 0,
+   "explain": "UV radiation induces bulky thymine-thymine cyclobutane pyrimidine dimers that distort the DNA double helix; nucleotide excision repair (NER) excises an oligonucleotide patch around the lesion, and inherited NER defects cause xeroderma pigmentosum.",
+   "verified": false,
+   "open": {
+    "q": "Which DNA repair pathway removes bulky UV-induced pyrimidine dimers and is defective in xeroderma pigmentosum?",
+    "accept": [
+     "nucleotide excision repair",
+     "NER"
+    ]
+   }
+  }
+ ]
+}
