@@ -18,6 +18,23 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script>
+/* Opening splash: first visit, and again after 6 hours away. Tap to skip. */
+(function () {
+  try {
+    var k = "dx.splash", n = Date.now(), l = Number(localStorage.getItem(k)) || 0;
+    if (n - l < 6 * 3600 * 1000 || /[?&]room=/.test(location.search)) return;
+    localStorage.setItem(k, String(n));
+  } catch (e) { return; }
+  var d = document.createElement("div");
+  d.id = "splash"; d.setAttribute("role", "presentation");
+  d.innerHTML = '<div class="sp-in"><div class="sp-mark" aria-hidden="true"></div><div class="sp-name">DxDrill</div><div class="sp-by">by Mantra</div></div>';
+  document.body.insertBefore(d, document.body.firstChild);
+  function gone() { if (!d.parentNode) return; d.classList.add("sp-out"); setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 450); }
+  d.addEventListener("click", gone);
+  setTimeout(gone, 2200);
+})();
+</script>
 <header class="bar gutter">
   <div class="bar-in">
     <a class="logo" href="#home" aria-label="DxDrill home"><b>Dx</b>Drill</a>
