@@ -284,3 +284,4 @@ input[type="range"]{accent-color:var(--accent); min-height:44px}
 @keyframes sp-rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
 @keyframes sp-ring{from{box-shadow:0 0 0 0 rgba(10,106,134,.45)}to{box-shadow:0 0 0 36px rgba(10,106,134,0)}}
 @media (prefers-reduced-motion:reduce){#splash .sp-mark,#splash .sp-name,#splash .sp-by{animation:none}#splash{transition:none}}
+#splash.sp-quick .sp-mark{animation-duration:.3s,.8s;animation-delay:0s,.2s}#splash.sp-quick .sp-name{animation-duration:.3s;animation-delay:.1s}#splash.sp-quick .sp-by{animation-duration:.3s;animation-delay:.25s}
