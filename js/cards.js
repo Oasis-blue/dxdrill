@@ -102,7 +102,7 @@
       if (!F.shown) out = head + '<p class="tag">Question. Say the answer in your head first.</p><p class="stem">' + esc(c.q) + '</p><div class="row tight"><button class="btn primary" data-act="show">Show answer <kbd>Space</kbd></button></div>';
       else out = head + '<p class="stem">' + esc(c.q) + '</p><p class="tag">Answer</p><p class="big">' + esc(c.answerText) + '</p>' + (c.explain ? '<p>' + esc(c.explain) + '</p>' : "") + rateHtml();
     }
-    return '<section class="fc" id="fc-card">' + out + '</section>';
+    return '<section class="fc" id="fc-card">' + out + '</section><div class="row tight"><button class="btn ghost small" data-act="stop">Stop session <kbd>Esc</kbd></button></div>';
   }
   function rateHtml() {
     return '<p class="tag">Did you remember it?</p><div class="fcrate"><button class="btn" data-act="miss">Not yet <kbd>1</kbd></button><button class="btn primary" data-act="got">Got it <kbd>2</kbd></button></div>';
@@ -140,6 +140,12 @@
     repaint();
     if (DX.fx && F.view === "run") DX.fx.add(document.getElementById("fc-card"), "fx-rise");
   }
+  function stopSession() {
+    if (F.view !== "run") return;
+    var seen = F.got + F.missed.length;
+    if (!seen) { F.view = "setup"; repaint(); return; }
+    F.total = seen; F.view = "done"; repaint();
+  }
   function onInput(e) {
     var id = e.target && e.target.id;
     if (id === "fc-scope") F.scope = e.target.value;
@@ -151,6 +157,7 @@
   function onKey(e) {
     if (F.view !== "run" || (e.target && /INPUT|SELECT|TEXTAREA|BUTTON/.test(e.target.tagName) && e.key === " ")) return;
     var k = e.key;
+    if (k === "Escape") { stopSession(); return; }
     if (!F.shown) {
       if (k === " " || k === "Enter") { e.preventDefault(); reveal(); }
       else if ((k === "c" || k === "C") && F.q[F.i].kind === "term" && F.clue < F.q[F.i].clues.length) { F.clue++; repaint(); }
@@ -167,6 +174,7 @@
     else if (a === "got") answer(true);
     else if (a === "miss") answer(false);
     else if (a === "redo") { var m = F.missed.slice(); F.again = {}; F.missed = []; F.got = 0; begin(DX.shuffle(m)); F.total = m.length; }
+    else if (a === "stop") stopSession();
     else if (a === "home") { F.view = "setup"; repaint(); }
   }
 })();
