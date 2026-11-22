@@ -192,6 +192,36 @@
     var also = (!w.opts && q.open && q.open.accept && q.open.accept.length) ? '<p class="also"><span class="label">Also accept</span> ' + q.open.accept.map(esc).join(" · ") + '</p>' : "";
     return '<div class="answerbox"><p class="label">Answer</p><p class="a">' + letter + esc(text) + '</p>' + also + '<p class="e">' + esc(q.explain) + '</p></div>';
   }
+  /* Private answer key: the quizmaster copies it to their own phone or opens it in a tab, so the answer never has to go on the shared screen. */
+  function keyText() {
+    if (!R) return "";
+    var out = [];
+    if (R.type === "board") {
+      R.tiles.forEach(function (x, i) {
+        var w = x.w, q = w.q, letter = w.opts ? LETTERS[w.order.indexOf(q.answer)] + ". " : "";
+        var text = (!w.opts && q.open && q.open.a) ? q.open.a : q.options[q.answer];
+        var also = (!w.opts && q.open && q.open.accept && q.open.accept.length) ? "\n   Also accept: " + q.open.accept.join(" / ") : "";
+        out.push("Tile " + (i + 1) + " (" + subOf(q) + ")\n   Q: " + (w.opts ? q.q : q.open.q) + "\n   ANSWER: " + letter + text + also + "\n   Why: " + q.explain);
+      });
+    } else if (R.type === "describe") {
+      R.terms.forEach(function (t, i) { out.push("Term " + (i + 1) + ": " + t.term + "\n   Clues: " + t.clues.join(" | ")); });
+    }
+    return "ANSWER KEY (quizmaster only, do not show the room)\n\n" + out.join("\n\n");
+  }
+  function keyRow() {
+    if (!R || (R.type !== "board" && R.type !== "describe")) return "";
+    return '<div class="row tight"><button class="btn small ghost" data-act="keycopy">Copy answer key</button><button class="btn small ghost" data-act="keyopen">Open answer key in a new tab</button></div>' +
+      '<p class="hint">The answer key is for the quizmaster only. Copy it to your own phone so you can check answers without showing them on this screen.</p>' + (H.keyNote ? '<p class="note" role="status">' + esc(H.keyNote) + '</p>' : "");
+  }
+  function keyCopy() {
+    var t = keyText(), done = function (m) { H.keyNote = m; paint(); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function () { done("Copied. Paste it into a note or chat on your own phone."); }, function () { keyOpen(); done("Could not copy, so it opened in a new tab instead."); });
+    else { keyOpen(); done("Could not copy, so it opened in a new tab instead."); }
+  }
+  function keyOpen() {
+    var html = '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Answer key (private)</title><body style="font:17px/1.5 system-ui,sans-serif;max-width:720px;margin:16px auto;padding:0 16px"><pre style="white-space:pre-wrap;font:inherit">' + keyText().replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</pre></body>';
+    try { var u = URL.createObjectURL(new Blob([html], { type: "text/html" })); var w = window.open(u, "_blank"); if (!w) { H.keyNote = "Your browser blocked the new tab. Use Copy answer key instead."; paint(); } } catch (e) { }
+  }
   function qBlock(w, _unused, reveal) {
     var h = '<div class="chips"><span class="chip">' + esc(subOf(w.q)) + '</span>' + (w.opts ? "" : '<span class="chip">No options</span>') + '</div><p class="qbig">' + esc(w.opts ? w.q.q : w.q.open.q) + '</p>';
     if (w.opts) {
@@ -319,7 +349,7 @@
   /* ---------- rounds: launch ---------- */
   function launch() {
     var t = H.pick; if (!t) return;
-    H.note = "";
+    H.note = ""; H.keyNote = "";
     if (!DX.questions.length && t !== "describe" && t !== "explain") return;
     var qm = t === "rapid" ? H.cfg.rapid.show : t === "board" ? H.cfg.board.show : t === "all" ? H.cfg.all.show : null;
     if (qm !== null && !poolQs(qm).length) {
@@ -384,13 +414,14 @@
     if (R.phase === "pick") {
       return shell('<p class="who">' + esc(t.name) + ', choose a tile</p><p class="sub">' + R.tiles.filter(function (x) { return x.st === "open"; }).length + ' tiles left.</p><div class="tiles">' + R.tiles.map(function (x, i) {
         return '<button class="tile ' + (x.st === "got" ? "got" : x.st === "miss" ? "miss" : "") + '" data-act="tile" data-i="' + i + '"' + (x.st !== "open" ? " disabled" : "") + '><b>' + (i + 1) + '</b><small>' + (x.st === "open" ? esc(subOf(x.w.q)) : x.st === "got" ? "Answered" : "Missed") + '</small></button>';
-      }).join("") + '</div>', R.team);
+      }).join("") + '</div>' + keyRow(), R.team);
     }
     var tile = R.tiles[R.ti], a = H.teams[R.ans];
     if (R.phase === "q") {
       var head = R.attempt ? '<p class="who">Steal: ' + esc(a.name) + ' for ' + Math.ceil(R.c.pts / 2) + ' points</p>' : '<p class="who">Tile ' + (R.ti + 1) + ' · ' + esc(a.name) + ' answers</p>';
       return shell(head + timerHTML() + (R.timeup ? '<p class="who" style="color:var(--bad)">Time.</p>' : "") + qBlock(tile.w, 0, R.rev) +
-        marks([["got", "Correct (G)", "good"], ["miss", "Wrong (M)", "bad"]]) + utilRow(R.rev, !R.timeup), R.ans);
+        marks([["got", "Correct (G)", "good"], ["miss", "Wrong (M)", "bad"]]) + utilRow(R.rev, !R.timeup) +
+        (R.c.steal && !R.attempt ? '<p class="hint">If you show the answer now, the next team sees it too and a steal is pointless. Check the answer on your own copy of the answer key, or show it after the steal.</p>' : ""), R.ans);
     }
     var l = R.last;
     var msg = l.res === "got" ? esc(H.teams[l.team].name) + ' +' + l.pts : "Nobody got it";
@@ -457,7 +488,7 @@
       } else {
         body += '<div class="row tight">' + (R.clue < len - 1 ? '<button class="btn" data-act="clue">Next clue <kbd>N</kbd></button>' : "") +
           '<button class="btn good" data-act="mark" data-v="got">Someone guessed it <kbd>G</kbd></button><button class="btn bad" data-act="mark" data-v="miss">Nobody <kbd>M</kbd></button>' +
-          (R.c.secs > 0 ? '<button class="btn small" data-act="pause">' + (TM.running ? "Pause" : "Resume") + '</button>' : "") + '</div>';
+          (R.c.secs > 0 ? '<button class="btn small" data-act="pause">' + (TM.running ? "Pause" : "Resume") + '</button>' : "") + '</div>' + keyRow();
       }
       return shell(body, -1);
     }
@@ -596,6 +627,8 @@
       case "reset": H.teams.forEach(function (t) { t.score = 0; }); H.used = {}; save(); H.view = "menu"; paint(); break;
       case "mark": doMark(b.getAttribute("data-v")); break;
       case "reveal": doReveal(); break;
+      case "keycopy": keyCopy(); break;
+      case "keyopen": keyOpen(); break;
       case "pause": doPause(); break;
       case "rstart": rapidStart(); break;
       case "estart": explainStart(); break;
