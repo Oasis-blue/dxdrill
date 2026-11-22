@@ -29,7 +29,7 @@
   } catch (e) { return; }
   var d = document.createElement("div");
   d.id = "splash"; d.setAttribute("role", "presentation"); if (quick) d.className = "sp-quick";
-  d.innerHTML = '<div class="sp-in"><div class="sp-mark" aria-hidden="true"></div><div class="sp-name">DxDrill</div><div class="sp-by">by Mantra</div></div>';
+  d.innerHTML = '<div class="sp-in"><div class="sp-mark" aria-hidden="true"></div><div class="sp-name">DxDrill</div><div class="sp-by">by Mantra <span aria-hidden="true">🧘</span></div></div>';
   document.body.insertBefore(d, document.body.firstChild);
   function gone() { if (!d.parentNode) return; d.classList.add("sp-out"); setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 450); }
   d.addEventListener("click", gone);
