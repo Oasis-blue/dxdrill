@@ -233,7 +233,7 @@
     var p = C.profile || { display_name: "", class_id: "", is_admin: false };
     var admin = "";
     if (p.is_admin) {
-      admin = '<section class="section stack"><h2>Admin: classes</h2><p class="hint">Rename a class or move it to a new level (for example 300L to 400L at the start of a session). Changes are saved for everyone.</p>' + DX.curriculum.classes.map(function (c) {
+      admin = '<section class="section stack"><h2>Admin: features and visitors</h2><p><a href="#features">Open features and visitors</a></p></section><section class="section stack"><h2>Admin: classes</h2><p class="hint">Rename a class or move it to a new level (for example 300L to 400L at the start of a session). Changes are saved for everyone.</p>' + DX.curriculum.classes.map(function (c) {
         return '<div class="teamrow"><div class="field"><label class="label" for="cn-' + c.id + '">' + esc(c.label) + ' name</label><input type="text" id="cn-' + c.id + '" value="' + esc(c.name) + '" maxlength="30" placeholder="Not set yet"></div>' +
           '<div class="field"><label class="label" for="cl-' + c.id + '">Level</label><input type="text" id="cl-' + c.id + '" value="' + esc(c.level) + '" maxlength="8" placeholder="300L"></div>' +
           '<button class="btn small" data-act="clsave" data-id="' + c.id + '">Save</button></div>';
