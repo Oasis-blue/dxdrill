@@ -139,6 +139,7 @@
     });
     current.render(app);
     window.scrollTo(0, 0);
+    if (DX.tips) DX.tips.page(h);
   }
 
   app.addEventListener("click", function (e) { if (current && current.onClick) current.onClick(e); });
