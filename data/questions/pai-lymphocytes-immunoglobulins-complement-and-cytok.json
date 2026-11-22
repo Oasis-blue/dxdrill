@@ -1,0 +1,587 @@
+{
+ "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+ "questions": [
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lymphocyte Maturation and Surface Markers",
+   "q": "Which cell-surface co-receptor complex is expressed on all mature T lymphocytes and transduces intracellular activation signals following antigen recognition by the T-cell receptor (TCR)?",
+   "options": [
+    "CD3 complex",
+    "CD19-CD21 complex",
+    "CD16 (Fc-gamma RIII)",
+    "CD56 (NCAM)"
+   ],
+   "answer": 0,
+   "explain": "Because the alpha-beta or gamma-delta TCR chains have very short cytoplasmic tails, they associate non-covalently with the invariant CD3 complex (gamma, delta, epsilon, and zeta chains) containing immunoreceptor tyrosine-based activation motifs (ITAMs) to initiate T-cell signaling.",
+   "verified": false,
+   "open": {
+    "q": "Name the invariant pan-T-cell signal-transducing surface protein complex associated with the T-cell receptor.",
+    "accept": [
+     "CD3",
+     "CD3 complex",
+     "T3 complex"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lymphocyte Maturation and Surface Markers",
+   "q": "How does antigen recognition by naive CD4+ helper T cells differ structurally from antigen recognition by naive CD8+ cytotoxic T cells?",
+   "options": [
+    "CD4+ T cells recognize exogenous peptides presented on MHC class II molecules, whereas CD8+ T cells recognize endogenous peptides presented on MHC class I molecules",
+    "CD4+ T cells recognize native soluble polysaccharides directly, whereas CD8+ T cells recognize free bacterial lipopolysaccharide",
+    "CD4+ T cells bind MHC class I on all nucleated cells, whereas CD8+ T cells bind MHC class II exclusively on erythrocytes",
+    "CD4+ T cells recognize lipid antigens on CD1d only, whereas CD8+ T cells recognize intact immunoglobulin Fc domains"
+   ],
+   "answer": 0,
+   "explain": "CD4 binds the non-polymorphic beta-2 domain of MHC class II on professional antigen-presenting cells (dendritic cells, macrophages, B cells), whereas CD8 binds the alpha-3 domain of MHC class I expressed on virtually all nucleated cells.",
+   "verified": false,
+   "open": {
+    "q": "Which class of Major Histocompatibility Complex (MHC) molecule presents peptide antigens to CD4+ helper T cells versus CD8+ cytotoxic T cells?",
+    "accept": [
+     "MHC class II for CD4+ T cells and MHC class I for CD8+ T cells",
+     "Class II and Class I respectively"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lymphocyte Maturation and Surface Markers",
+   "q": "Which pair of lymphoid-specific enzymes mediates somatic V(D)J recombination of immunoglobulin and T-cell receptor genes during early B- and T-cell development in the bone marrow and thymus?",
+   "options": [
+    "RAG-1 and RAG-2 (recombination-activating genes)",
+    "Activation-induced cytidine deaminase (AID) and uracil-DNA glycosylase",
+    "Terminal deoxynucleotidyl transferase (TdT) and telomerase",
+    "Myeloperoxidase and NADPH oxidase"
+   ],
+   "answer": 0,
+   "explain": "RAG-1 and RAG-2 recognize recombination signal sequences flanking V, D, and J gene segments and introduce double-strand DNA breaks; severe loss-of-function mutations in RAG1 or RAG2 cause T-B-NK+ severe combined immunodeficiency (SCID).",
+   "verified": false,
+   "open": {
+    "q": "Name the two recombination-activating enzymes required to initiate V(D)J gene rearrangement in developing B and T lymphocytes.",
+    "accept": [
+     "RAG-1 and RAG-2",
+     "RAG1 and RAG2"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-004",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lymphocyte Maturation and Surface Markers",
+   "q": "Full activation of a naive T lymphocyte requires both signal 1 (TCR engagement with peptide-MHC) and costimulatory signal 2. Which receptor-ligand interaction delivers the primary costimulatory signal to naive T cells?",
+   "options": [
+    "CD28 on the T cell binding B7-1 (CD80) or B7-2 (CD86) on a mature antigen-presenting cell",
+    "CTLA-4 on the T cell binding ICAM-1 on vascular endothelium",
+    "Fas (CD95) on the T cell binding Fas ligand on macrophages",
+    "CD21 on the T cell binding C3d complement fragments"
+   ],
+   "answer": 0,
+   "explain": "Ligation of T-cell CD28 by B7-1 (CD80) or B7-2 (CD86) on activated dendritic cells triggers IL-2 production and clonal proliferation; TCR engagement without CD28 costimulation induces T-cell anergy or apoptosis.",
+   "verified": false,
+   "open": {
+    "q": "Name the T-cell surface receptor and its corresponding ligand on antigen-presenting cells that provide the essential second costimulatory signal for T-cell activation.",
+    "accept": [
+     "CD28 and B7 (CD80/CD86)",
+     "CD28 binding CD80 or CD86"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-005",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lymphocyte Maturation and Surface Markers",
+   "q": "How do Natural Killer (NK) cells (CD16+ CD56+) distinguish virus-infected or malignant host cells from healthy nucleated host cells without prior antigen sensitization?",
+   "options": [
+    "Loss of self MHC class I molecules removes inhibitory signals delivered to NK killer cell immunoglobulin-like receptors (KIRs), allowing activating receptors to trigger cytolysis",
+    "NK cells undergo somatic hypermutation of surface IgM receptors within lymph node germinal centres",
+    "NK cells recognize viral peptides exclusively when bound to MHC class II molecules",
+    "NK cells require prior differentiation into antibody-secreting plasma cells"
+   ],
+   "answer": 0,
+   "explain": "Healthy nucleated cells express self MHC class I molecules that engage inhibitory receptors (KIRs) on NK cells to block killing; viruses and tumours that downregulate MHC class I to evade CD8+ T cells lose this inhibitory signal ('missing-self' recognition) and are lysed via perforin and granzymes.",
+   "verified": false,
+   "open": {
+    "q": "Explain the 'missing-self' mechanism by which Natural Killer (NK) cells selectively kill virus-infected or neoplastic cells.",
+    "accept": [
+     "Downregulation of self MHC class I removes inhibitory KIR signaling on NK cells",
+     "Loss of surface MHC class I relieves inhibition of NK cell cytotoxicity"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "Enzymatic digestion of an intact IgG molecule with papain cleaves above the hinge disulfide bonds to yield which fragments?",
+   "options": [
+    "Two identical monovalent antigen-binding fragments (Fab) and one crystallizable effector fragment (Fc)",
+    "One divalent F(ab')2 fragment and multiple small degraded Fc peptides",
+    "Two isolated heavy chains and two free J chains",
+    "Secretory component and beta-2 microglobulin"
+   ],
+   "answer": 0,
+   "explain": "Papain cleaves IgG above the inter-heavy-chain disulfide bonds, yielding two separate Fab fragments (each containing one antigen-binding site) and one intact Fc fragment responsible for complement fixation and Fc-receptor binding; pepsin cleaves below the hinge to yield divalent F(ab')2.",
+   "verified": false,
+   "open": {
+    "q": "What fragments are generated when an IgG immunoglobulin molecule is digested with the protease papain?",
+    "accept": [
+     "Two Fab fragments and one Fc fragment",
+     "2 Fab and 1 Fc"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-007",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "Which immunoglobulin isotype is the only antibody class actively transported across the human placenta via neonatal Fc receptors (FcRn) to confer passive humoral immunity to the newborn?",
+   "options": [
+    "IgG",
+    "IgM",
+    "IgA",
+    "IgE"
+   ],
+   "answer": 0,
+   "explain": "Maternal IgG is transcytosed across syncytiotrophoblast cells via FcRn during pregnancy (predominantly in the third trimester), protecting infants during the first 3 to 6 months of life while their own antibody production matures.",
+   "verified": false,
+   "open": {
+    "q": "Name the sole immunoglobulin class capable of crossing the human placenta from mother to fetus.",
+    "accept": [
+     "Immunoglobulin G",
+     "IgG subclasses"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "Why is pentameric IgM the most potent immunoglobulin activator of the classical complement pathway on a per-molecule basis?",
+   "options": [
+    "A single antigen-bound IgM pentamer provides multiple closely spaced Fc regions capable of binding two or more globular heads of C1q simultaneously",
+    "IgM possesses the longest serum half-life of 60 days",
+    "IgM is the only antibody produced in mucosal secretions",
+    "IgM activates alternative pathway Factor B directly without C1q"
+   ],
+   "answer": 0,
+   "explain": "Activation of C1 requires C1q to bind at least two adjacent Fc domains; pentameric IgM undergoes a staple-like conformational change upon binding surface antigen, exposing five Fc domains in close proximity, whereas IgG requires two separate IgG molecules bound close together.",
+   "verified": false,
+   "open": {
+    "q": "Why is a single pentameric IgM molecule far more efficient at activating the classical complement pathway than monomeric IgG?",
+    "accept": [
+     "Pentameric IgM provides multiple closely spaced Fc domains on one molecule to cross-link C1q",
+     "Single bound IgM pentamer exposes multiple adjacent Fc regions for C1q binding"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "How is dimeric IgA transported across mucosal epithelial cells into breast milk, saliva, and intestinal secretions, and what protects it from luminal proteolytic degradation?",
+   "options": [
+    "Polymeric immunoglobulin receptor (pIgR) transcytoses J-chain-linked dimeric IgA and cleaves to leave a protective secretory component attached",
+    "Neonatal Fc receptor (FcRn) transports monomeric IgA together with albumin",
+    "Complement receptor CR1 carries pentameric IgA across tight junctions",
+    "Macrophages secrete IgA directly into the intestinal lumen via phagocytosis"
+   ],
+   "answer": 0,
+   "explain": "Subepithelial plasma cells secrete dimeric IgA joined by a J chain; basolateral poly-Ig receptors bind the J chain, endocytose the complex, and release secretory IgA (sIgA) at the apical surface wrapped in the cleaved extracellular domain of pIgR (secretory component).",
+   "verified": false,
+   "open": {
+    "q": "Name the epithelial transport receptor and the retained polypeptide fragment that deliver dimeric IgA into mucosal secretions and protect it from proteases.",
+    "accept": [
+     "Polymeric immunoglobulin receptor (pIgR) and secretory component",
+     "Poly-Ig receptor and secretory component"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "Which immunoglobulin isotype binds with ultra-high affinity to Fc-epsilon RI receptors on tissue mast cells and blood basophils, mediating immediate type I hypersensitivity and defence against helminth parasites?",
+   "options": [
+    "IgE",
+    "IgD",
+    "IgA",
+    "IgG4"
+   ],
+   "answer": 0,
+   "explain": "IgE circulates at the lowest serum concentration because almost all IgE is bound to high-affinity Fc-epsilon RI on mast cells and basophils; cross-linking of bound IgE by allergen or helminth antigens triggers rapid degranulation of histamine and leukotrienes.",
+   "verified": false,
+   "open": {
+    "q": "Name the immunoglobulin class that binds high-affinity Fc receptors on mast cells and basophils to mediate type I hypersensitivity and anti-helminth immunity.",
+    "accept": [
+     "Immunoglobulin E",
+     "Reaginic antibody"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "Which B-cell-specific enzyme is essential for both immunoglobulin class-switch recombination (isotype switching) and somatic hypermutation (affinity maturation) inside lymphoid germinal centres?",
+   "options": [
+    "Activation-induced cytidine deaminase (AID)",
+    "Terminal deoxynucleotidyl transferase (TdT)",
+    "C1 esterase inhibitor",
+    "Bruton tyrosine kinase (BTK)"
+   ],
+   "answer": 0,
+   "explain": "AID deaminates cytosine residues to uracil in actively transcribed immunoglobulin variable and switch regions; error-prone repair generates point mutations for affinity maturation, while double-strand breaks at switch regions mediate class switching from IgM to IgG, IgA, or IgE.",
+   "verified": false,
+   "open": {
+    "q": "Name the germinal-centre B-cell enzyme required for both somatic hypermutation and immunoglobulin class-switch recombination.",
+    "accept": [
+     "AID",
+     "Activation-induced cytidine deaminase",
+     "Activation-induced deaminase"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-012",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Immunoglobulin Structure and Function",
+   "q": "A 9-month-old boy presents with recurrent sinopulmonary bacterial infections and Pneumocystis jirovecii pneumonia. Laboratory studies show markedly elevated serum IgM (4.8 g/L), virtually undetectable serum IgG, IgA, and IgE, and normal circulating B-cell numbers. Lymph nodes lack germinal centres. Which molecular defect explains X-linked hyper-IgM syndrome?",
+   "options": [
+    "Mutation in the CD40 ligand (CD40L / CD154) gene on activated helper T cells",
+    "Complete deletion of the Bruton tyrosine kinase (BTK) gene in pre-B cells",
+    "Deficiency of complement component C3",
+    "Mutation in the IL-2 receptor common gamma chain"
+   ],
+   "answer": 0,
+   "explain": "In X-linked hyper-IgM syndrome, helper T cells fail to express functional CD40L (CD154) and therefore cannot engage CD40 on B cells to induce AID expression, germinal centre formation, or class switching beyond IgM.",
+   "verified": false,
+   "open": {
+    "q": "Which T-cell surface costimulatory molecule is mutated in X-linked hyper-IgM syndrome, preventing B-cell class switching from IgM to IgG, IgA, and IgE?",
+    "accept": [
+     "CD40 ligand",
+     "CD40L",
+     "CD154"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "The Complement System",
+   "q": "All three pathways of complement activation (classical, lectin, and alternative) converge at the enzymatic cleavage of which central plasma complement protein?",
+   "options": [
+    "C3",
+    "C1q",
+    "C5",
+    "C9"
+   ],
+   "answer": 0,
+   "explain": "C3 convertases generated by the classical/lectin pathways (C4b2a) or the alternative pathway (C3bBb) cleave C3 into C3a (anaphylatoxin) and C3b (major opsonin and subunit of C5 convertase).",
+   "verified": false,
+   "open": {
+    "q": "Which central complement component serves as the point of convergence for the classical, lectin, and alternative complement pathways?",
+    "accept": [
+     "Complement component C3",
+     "Component C3"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "The Complement System",
+   "q": "Which complement cleavage fragment acts as the most potent opsonin in human serum by covalently coating microbial surfaces and binding CR1 receptors on neutrophils and macrophages?",
+   "options": [
+    "C3b",
+    "C5a",
+    "C1s",
+    "C9"
+   ],
+   "answer": 0,
+   "explain": "Cleavage of C3 exposes an internal reactive thioester bond on C3b that forms covalent ester or amide bonds with bacterial cell walls, marking pathogens for efficient phagocytosis via complement receptor 1 (CR1 / CD35).",
+   "verified": false,
+   "open": {
+    "q": "Name the principal complement protein fragment that covalently coats pathogens to promote opsonization and phagocytosis.",
+    "accept": [
+     "C3b",
+     "Complement fragment C3b"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "The Complement System",
+   "q": "Which complement split product functions both as a potent anaphylatoxin (triggering mast cell degranulation) and as a major neutrophil chemotactic factor?",
+   "options": [
+    "C5a",
+    "C4b",
+    "C2b",
+    "Factor H"
+   ],
+   "answer": 0,
+   "explain": "C3a, C4a, and C5a are anaphylatoxins that stimulate mast cell histamine release and vascular permeability, with C5a being the most potent anaphylatoxin and a powerful chemoattractant that activates neutrophil integrins.",
+   "verified": false,
+   "open": {
+    "q": "Name the complement cleavage fragment that is both the most potent anaphylatoxin and a major chemoattractant for neutrophils.",
+    "accept": [
+     "C5a",
+     "Complement fragment C5a"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-016",
+   "type": "mcq",
+   "level": 2,
+   "sub": "The Complement System",
+   "q": "Which complement proteins assemble sequentially on target microbial membranes to form the cylindrical transmembrane pore known as the Membrane Attack Complex (MAC)?",
+   "options": [
+    "C5b, C6, C7, C8, and multiple polymerized C9 molecules (C5b-9)",
+    "C1q, C1r, C1s, C2, and C4",
+    "Mannose-binding lectin, MASP-1, and MASP-2",
+    "Factor B, Factor D, and properdin"
+   ],
+   "answer": 0,
+   "explain": "Once C5 convertase cleaves C5 into C5a and C5b, C5b binds C6, C7, and C8 to insert into the lipid bilayer and nucleate polymerization of 10 to 16 C9 molecules into a lytic transmembrane channel.",
+   "verified": false,
+   "open": {
+    "q": "List the terminal complement components that assemble to form the Membrane Attack Complex (MAC).",
+    "accept": [
+     "C5b, C6, C7, C8, and C9",
+     "C5b-9"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "The Complement System",
+   "q": "Inherited deficiency of terminal complement components (C5 through C9) specifically predisposes affected patients to recurrent invasive infections by which genus of encapsulated bacteria?",
+   "options": [
+    "Neisseria (Neisseria meningitidis and Neisseria gonorrhoeae)",
+    "Mycobacterium tuberculosis",
+    "Staphylococcus epidermidis",
+    "Clostridium difficile"
+   ],
+   "answer": 0,
+   "explain": "Thin-walled Gram-negative Neisseria species depend heavily on Membrane Attack Complex (C5b-9)-mediated bacteriolysis for host clearance; defects in C5–C9 or properdin cause recurrent meningococcal meningitis and disseminated gonococcal infection.",
+   "verified": false,
+   "open": {
+    "q": "Deficiency of the terminal complement components (C5-C9) forming the Membrane Attack Complex classically predisposes to recurrent infections with which bacterial genus?",
+    "accept": [
+     "Neisseria",
+     "Neisseria meningitidis and Neisseria gonorrhoeae"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-018",
+   "type": "mcq",
+   "level": 3,
+   "sub": "The Complement System",
+   "q": "A 22-year-old woman presents with recurrent episodes of non-pitting swelling of her lips, eyelids, and laryngeal mucosa triggered by minor dental procedures, without urticaria or pruritus. Serum C4 is markedly reduced while C3 and C1q are normal. Deficiency of which regulatory protein causes hereditary angioedema?",
+   "options": [
+    "C1 esterase inhibitor (C1-INH)",
+    "Decay-accelerating factor (CD55)",
+    "Membrane cofactor protein (CD46)",
+    "Protectin (CD59)"
+   ],
+   "answer": 0,
+   "explain": "C1 inhibitor (SERPING1) inhibits C1r/C1s in the classical complement pathway and also inhibits Factor XIIa and plasma kallikrein; its deficiency causes unrestrained C4/C2 consumption and excessive bradykinin generation, producing non-pruritic angioedema.",
+   "verified": false,
+   "open": {
+    "q": "Name the complement and kallikrein regulatory protein whose deficiency causes hereditary angioedema via excessive bradykinin production.",
+    "accept": [
+     "C1 inhibitor",
+     "C1 esterase inhibitor",
+     "C1-INH"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "The Complement System",
+   "q": "In paroxysmal nocturnal haemoglobinuria (PNH), acquired somatic mutation of the PIGA gene prevents synthesis of glycosylphosphatidylinositol (GPI) anchors, leading to intravascular complement-mediated haemolysis due to absence of which two membrane-bound complement regulators?",
+   "options": [
+    "Decay-accelerating factor (CD55) and protectin (CD59)",
+    "CR1 (CD35) and CR2 (CD21)",
+    "C1q and mannose-binding lectin",
+    "Factor B and Factor D"
+   ],
+   "answer": 0,
+   "explain": "CD55 (DAF) accelerates dissociation of C3/C5 convertases and CD59 (MIRL) blocks C9 polymerization into the MAC; both are GPI-anchored proteins lost on PNH red cells, rendering them vulnerable to spontaneous complement lysis.",
+   "verified": false,
+   "open": {
+    "q": "Name the two GPI-anchored erythrocyte membrane complement regulatory proteins deficient in paroxysmal nocturnal haemoglobinuria (PNH).",
+    "accept": [
+     "CD55 and CD59",
+     "Decay-accelerating factor and protectin"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "q": "Which cytokine, produced predominantly by activated CD4+ T cells, acts as the principal autocrine and paracrine T-cell growth factor driving clonal proliferation of T lymphocytes and regulatory T-cell survival?",
+   "options": [
+    "Interleukin-2 (IL-2)",
+    "Interleukin-4 (IL-4)",
+    "Interleukin-10 (IL-10)",
+    "Interferon-alpha (IFN-alpha)"
+   ],
+   "answer": 0,
+   "explain": "TCR plus CD28 signaling induces expression of both IL-2 and the high-affinity IL-2 receptor alpha chain (CD25), enabling rapid autocrine clonal expansion of antigen-specific T cells.",
+   "verified": false,
+   "open": {
+    "q": "Name the principal autocrine T-cell growth factor cytokine induced upon T-cell activation that drives clonal T-lymphocyte expansion.",
+    "accept": [
+     "IL-2",
+     "Interleukin-2",
+     "T-cell growth factor"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "q": "Which signature cytokine is secreted by Th1 helper T cells to activate macrophages (classical M1 activation), enhance phagolysosomal killing of intracellular pathogens such as Mycobacterium tuberculosis, and promote IgG opsonizing antibody production?",
+   "options": [
+    "Interferon-gamma (IFN-gamma)",
+    "Interleukin-5 (IL-5)",
+    "Interleukin-13 (IL-13)",
+    "Transforming growth factor-beta (TGF-beta)"
+   ],
+   "answer": 0,
+   "explain": "Driven by macrophage-derived IL-12, Th1 cells secrete IFN-gamma, the hallmark macrophage-activating cytokine essential for granulomatous control of mycobacteria and other intracellular microbes.",
+   "verified": false,
+   "open": {
+    "q": "Name the signature macrophage-activating cytokine secreted by Th1 cells that is critical for host defence against intracellular pathogens like Mycobacterium tuberculosis.",
+    "accept": [
+     "IFN-gamma",
+     "Interferon-gamma",
+     "Immune interferon"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "q": "Which pair of Th2-derived cytokines respectively drives B-cell isotype switching to IgE and promotes bone marrow eosinophil differentiation, activation, and survival in allergic diseases and helminth infections?",
+   "options": [
+    "IL-4 (IgE class switching) and IL-5 (eosinophil activation)",
+    "IL-12 (IgE class switching) and IFN-gamma (eosinophil activation)",
+    "IL-17 (IgE class switching) and IL-22 (eosinophil activation)",
+    "TNF-alpha (IgE class switching) and IL-10 (eosinophil activation)"
+   ],
+   "answer": 0,
+   "explain": "Th2 cells orchestrate humoral and mucosal barrier immunity against helminths and allergens: IL-4 induces B-cell class switching to IgE, IL-5 recruits and activates eosinophils, and IL-13 stimulates airway mucus secretion and peristalsis.",
+   "verified": false,
+   "open": {
+    "q": "Which Th2 cytokine stimulates B-cell class switching to IgE, and which Th2 cytokine promotes eosinophil growth and activation?",
+    "accept": [
+     "IL-4 and IL-5",
+     "Interleukin-4 and interleukin-5"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-023",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "q": "Which helper T-cell subset secretes IL-17 and IL-22 to recruit neutrophils and stimulate epithelial antimicrobial peptides against extracellular bacteria and fungi, and is implicated in psoriasis and rheumatoid arthritis?",
+   "options": [
+    "Th17 cells",
+    "Th1 cells",
+    "Th2 cells",
+    "FoxP3+ regulatory T cells (Treg)"
+   ],
+   "answer": 0,
+   "explain": "Induced by TGF-beta plus IL-6 and maintained by IL-23, Th17 cells secrete IL-17A/F and IL-22 to mobilize neutrophils at mucosal surfaces; defects in Th17 immunity cause chronic mucocutaneous candidiasis and Job (hyper-IgE) syndrome.",
+   "verified": false,
+   "open": {
+    "q": "Name the CD4+ effector T-cell subset that produces IL-17 and IL-22 to mediate neutrophil-rich inflammation against extracellular bacteria and fungi.",
+    "accept": [
+     "Th17",
+     "Th17 cells",
+     "T helper 17 cells"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "q": "Which two immunosuppressive cytokines are secreted by CD4+ CD25+ FoxP3+ regulatory T cells (Tregs) to maintain peripheral self-tolerance and terminate excessive immune responses?",
+   "options": [
+    "Interleukin-10 (IL-10) and Transforming Growth Factor-beta (TGF-beta)",
+    "Interleukin-1 (IL-1) and Tumour Necrosis Factor-alpha (TNF-alpha)",
+    "Interleukin-12 (IL-12) and Interleukin-18 (IL-18)",
+    "Interleukin-6 (IL-6) and Interferon-gamma (IFN-gamma)"
+   ],
+   "answer": 0,
+   "explain": "Regulatory T cells express the master transcription factor FoxP3 and suppress autoreactive effector lymphocytes through contact-dependent CTLA-4 inhibition and secretion of anti-inflammatory IL-10 and TGF-beta.",
+   "verified": false,
+   "open": {
+    "q": "Name the two major anti-inflammatory cytokines secreted by FoxP3+ regulatory T cells (Tregs) to maintain peripheral immunological tolerance.",
+    "accept": [
+     "IL-10 and TGF-beta",
+     "Interleukin-10 and transforming growth factor-beta"
+    ]
+   }
+  },
+  {
+   "id": "pai-lymphocytes-immunoglobulins-complement-and-cytok-025",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "q": "Which triad of macrophage-derived pro-inflammatory cytokines mediates the systemic acute-phase response—inducing hypothalamic fever via prostaglandin E2, hepatic synthesis of C-reactive protein and fibrinogen, and leukocytosis?",
+   "options": [
+    "IL-1, IL-6, and TNF-alpha",
+    "IL-4, IL-5, and IL-13",
+    "IL-2, IL-7, and IL-15",
+    "IL-10, TGF-beta, and IL-35"
+   ],
+   "answer": 0,
+   "explain": "Activated tissue macrophages secrete TNF-alpha, IL-1, and IL-6 in response to pathogen-associated molecular patterns; these pyrogenic cytokines act on the hypothalamus, bone marrow, and hepatocytes (with IL-6 being the chief driver of acute-phase proteins).",
+   "verified": false,
+   "open": {
+    "q": "Name the three classical macrophage-derived pro-inflammatory cytokines responsible for fever and the hepatic acute-phase response.",
+    "accept": [
+     "IL-1, IL-6, and TNF-alpha",
+     "Interleukin-1, interleukin-6, and tumour necrosis factor-alpha"
+    ]
+   }
+  }
+ ]
+}

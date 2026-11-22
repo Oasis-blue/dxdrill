@@ -1,0 +1,698 @@
+{
+ "topic": "pam-enteric-infections-and-typhoid",
+ "questions": [
+  {
+   "id": "pam-enteric-infections-and-typhoid-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Pathogenic Mechanisms of Diarrhoeal Disease",
+   "q": "How do non-inflammatory secretory diarrhoeas (such as cholera and enterotoxigenic Escherichia coli) differ clinically and microscopically from invasive inflammatory dysentery (such as shigellosis and amoebiasis)?",
+   "options": [
+    "Secretory diarrhoeas produce profuse watery stools without faecal leukocytes or erythrocytes, whereas dysentery produces small-volume mucoid bloody stools rich in neutrophils",
+    "Secretory diarrhoeas cause high fever and colonic ulceration, whereas dysentery produces painless rice-water stools without mucosal injury",
+    "Secretory diarrhoeas occur exclusively in the distal rectum, whereas dysentery affects only the stomach",
+    "Secretory diarrhoeas are always caused by obligate intracellular viruses, whereas dysentery is caused solely by preformed food toxins"
+   ],
+   "answer": 0,
+   "explain": "Enterotoxin-mediated secretory pathogens act predominantly in the small intestine by stimulating active ion and water secretion without destroying enterocytes (no pus or blood in stool), whereas invasive cytotoxin-producing pathogens destroy colonic mucosa, eliciting acute neutrophilic inflammation, blood, and mucus.",
+   "verified": false,
+   "open": {
+    "q": "Contrast the stool characteristics and presence of faecal leukocytes in non-inflammatory secretory diarrhoea versus invasive inflammatory dysentery.",
+    "accept": [
+     "Secretory diarrhoea produces profuse watery stools without faecal leukocytes or blood; dysentery produces bloody mucoid stools with abundant faecal leukocytes",
+     "Watery stool without pus/blood versus bloody mucoid stool with neutrophils"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-002",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Pathogenic Mechanisms of Diarrhoeal Disease",
+   "q": "Why is oral rehydration salt (ORS) solution containing both glucose and sodium effective in treating severe secretory diarrhoea caused by Vibrio cholerae or enterotoxigenic Escherichia coli?",
+   "options": [
+    "The apical sodium-glucose cotransporter (SGLT1) remains intact in small intestinal enterocytes despite elevated intracellular cAMP, coupling sodium and glucose uptake with passive water absorption",
+    "Glucose directly neutralizes cholera toxin inside the intestinal lumen",
+    "Sodium ions inhibit bacterial RNA polymerase and sterilize the small bowel within 1 hour",
+    "Oral glucose stimulates gastric parietal cells to secrete neutralizing bicarbonate"
+   ],
+   "answer": 0,
+   "explain": "Although cholera toxin and E. coli heat-labile toxin inhibit neutral NaCl absorption and stimulate CFTR chloride secretion via cAMP, coupled sodium-glucose transport via SGLT1 at the brush border is unaffected, enabling water to follow absorbed Na+ and glucose osmotically.",
+   "verified": false,
+   "open": {
+    "q": "What physiological transport mechanism allows glucose-electrolyte oral rehydration therapy (ORT) to restore fluid balance during cholera despite ongoing toxin-induced chloride secretion?",
+    "accept": [
+     "Intact coupled sodium-glucose cotransport (SGLT1) driving passive osmotic water absorption",
+     "Sodium-glucose cotransporter SGLT1 remains functional"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "Which bacterial serovars are the primary causative agents of enteric fever in Nigeria and other endemic regions, and what is their sole natural reservoir?",
+   "options": [
+    "Salmonella enterica serovar Typhi and serovars Paratyphi A, B, and C; humans are the sole reservoir",
+    "Salmonella enterica serovar Typhimurium and serovar Enteritidis; domestic poultry and reptiles are the primary reservoirs",
+    "Shigella dysenteriae type 1 and Shigella flexneri; cattle are the primary reservoir",
+    "Yersinia enterocolitica and Campylobacter jejuni; swine and wild birds are the sole reservoirs"
+   ],
+   "answer": 0,
+   "explain": "Unlike non-typhoidal Salmonella serovars (Enteritidis, Typhimurium) that reside in animals and cause self-limiting gastroenteritis, Salmonella Typhi and Paratyphi A/B/C are strictly human-adapted pathogens transmitted via faecal-oral contamination of food or water.",
+   "verified": false,
+   "open": {
+    "q": "Name the causative bacterial species/serovars of enteric fever and identify their natural reservoir.",
+    "accept": [
+     "Salmonella Typhi and Salmonella Paratyphi (A, B, C); humans are the sole reservoir",
+     "Salmonella enterica serovar Typhi and Paratyphi; human reservoir"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-004",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "Following ingestion of Salmonella enterica serovar Typhi, how does the organism cross the distal ileal mucosa and disseminate systemically during the incubation period?",
+   "options": [
+    "It invades specialized microfold (M) cells overlying ileal Peyer patches, survives and replicates inside mesenteric lymph node and reticuloendothelial macrophages, and enters the bloodstream via the thoracic duct",
+    "It secretes a potent cytotoxin that sloughs the entire gastric mucosa within 6 hours",
+    "It migrates upward through the common bile duct directly from the duodenum without entering lymphatics",
+    "It infects mature circulating erythrocytes and ruptures them in peripheral capillaries"
+   ],
+   "answer": 0,
+   "explain": "Salmonella Typhi uses a type III secretion system to enter ileal M cells over Peyer patches, resists phagolysosomal killing inside macrophages (aided by its Vi capsular polysaccharide), multiplies in mesenteric lymph nodes, and disseminates via the thoracic duct to the liver, spleen, bone marrow, and gallbladder.",
+   "verified": false,
+   "open": {
+    "q": "Describe the anatomical pathway by which ingested Salmonella Typhi crosses the intestinal epithelium and reaches the systemic circulation.",
+    "accept": [
+     "Invades M cells over ileal Peyer patches, replicates in mesenteric lymph node macrophages, and enters blood via the thoracic duct",
+     "Translocates across ileal M cells into Peyer patches and mesenteric lymphatics to bloodstream"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-005",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "What is the role of the Vi (virulence) capsular polysaccharide antigen of Salmonella enterica serovar Typhi in both pathogenesis and preventive medicine?",
+   "options": [
+    "It inhibits complement C3b deposition and macrophage phagocytosis in vivo, and purified Vi polysaccharide serves as the injectable parenteral typhoid vaccine",
+    "It acts as a neurotoxin causing flaccid paralysis and is inactivated to form tetanus toxoid",
+    "It hydrolyzes gastric urea into ammonia and forms the basis of the urea breath test",
+    "It binds penicillin-binding proteins to confer beta-lactam resistance"
+   ],
+   "answer": 0,
+   "explain": "The Vi surface polysaccharide masks underlying O somatic antigens from anti-O antibodies and complement activation, enhancing survival during bacteraemia; purified Vi antigen is used in the single-dose intramuscular typhoid vaccine (alongside the live-attenuated oral Ty21a vaccine).",
+   "verified": false,
+   "open": {
+    "q": "State the dual significance of the Vi antigen of Salmonella Typhi in virulence and immunization.",
+    "accept": [
+     "Antiphagocytic capsular polysaccharide that prevents complement-mediated killing and serves as the injectable Vi typhoid vaccine",
+     "Inhibits phagocytosis/complement activation and is used as a subunit vaccine"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-006",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "In untreated enteric fever, why do life-threatening intestinal haemorrhage and ileal perforation classically occur during the third week of illness?",
+   "options": [
+    "Hyperplastic Peyer patches in the terminal ileum undergo ischaemic necrosis and sloughing, exposing underlying mucosal blood vessels and weakening the bowel wall",
+    "Excessive gastric acid hypersecretion erodes the first part of the duodenum",
+    "Adult Ascaris lumbricoides worms mechanically burrow through the jejunal serosa",
+    "Immune complex vasculitis causes simultaneous infarction of the entire descending colon"
+   ],
+   "answer": 0,
+   "explain": "During week 1–2, monocyte-macrophage proliferation causes longitudinal hyperplasia of terminal ileal Peyer patches; by week 3, thrombosis of small submucosal vessels leads to necrosis and sloughing of the overlying mucosa, producing oval longitudinal typhoid ulcers prone to bleeding or perforation.",
+   "verified": false,
+   "open": {
+    "q": "What is the pathological basis of intestinal bleeding and terminal ileal perforation during the third week of untreated typhoid fever?",
+    "accept": [
+     "Necrosis and sloughing of hyperplastic Peyer patches forming longitudinal typhoid ulcers",
+     "Ischaemic necrosis of hyperplastic ileal Peyer patches"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "When investigating a patient suspected of having typhoid fever in Nigeria, which microbiological specimen yields the highest diagnostic sensitivity during the first week of fever versus the third week of illness?",
+   "options": [
+    "Blood culture (or bone marrow aspirate culture) in the first week; stool and urine cultures in the third week",
+    "Stool culture in the first week; throat swab culture in the third week",
+    "Cerebrospinal fluid culture in the first week; sputum Gram stain in the third week",
+    "Urine dipstick nitrite in the first week; skin biopsy in the third week"
+   ],
+   "answer": 0,
+   "explain": "In enteric fever, bacteraemia peaks during week 1 (blood culture positive in ~60–80%, bone marrow >85% even after prior antibiotics), whereas secondary biliary seeding from the gallbladder into the gut causes stool culture positivity to peak in weeks 2–3 (remembered as 'BASU': Blood week 1, Antibodies/Widal week 2, Stool and Urine weeks 3–4).",
+   "verified": false,
+   "open": {
+    "q": "Which clinical specimens have the highest culture yield for Salmonella Typhi during week 1 versus week 3 of typhoid fever?",
+    "accept": [
+     "Blood (or bone marrow) in week 1, and stool (and urine) in week 3",
+     "Blood culture in the first week; stool culture in the third week"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "Why is a single Widal agglutination test unreliable for diagnosing acute typhoid fever in endemic settings such as Nigeria?",
+   "options": [
+    "Baseline anti-O and anti-H antibody titres are frequently elevated in healthy residents from prior subclinical exposure, TAB/typhoid vaccination, or cross-reacting non-typhoidal Salmonella and malaria",
+    "Salmonella Typhi lacks somatic O and flagellar H surface antigens in West African strains",
+    "Anti-O antibodies appear only 6 months after complete clinical recovery",
+    "The Widal test detects viral capsid antigens rather than bacterial agglutinins"
+   ],
+   "answer": 0,
+   "explain": "In endemic regions, high background seroprevalence, anamnestic polyclonal B-cell activation during febrile illnesses (including Plasmodium falciparum malaria), and cross-reactivity with other Enterobacteriaceae produce frequent false-positive Widal results; diagnosis requires culture isolation or a four-fold rise in paired acute/convalescent sera.",
+   "verified": false,
+   "open": {
+    "q": "Give two major reasons why a single Widal test has poor diagnostic specificity for acute typhoid fever in endemic areas like Nigeria.",
+    "accept": [
+     "High baseline antibody titres from prior exposure/vaccination and cross-reactivity or anamnestic rise during other febrile illnesses like malaria",
+     "Pre-existing background antibodies in endemic populations and false-positive cross-reactions"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "Approximately 2% to 5% of patients recovering from typhoid fever become chronic asymptomatic carriers shedding Salmonella Typhi in their faeces for over 1 year. Which anatomical organ serves as the primary persistent reservoir in chronic carriers, particularly in patients with gallstones?",
+   "options": [
+    "Gallbladder (where bacteria form biofilms on cholesterol gallstones)",
+    "Urinary bladder transitional epithelium",
+    "Palatine tonsillar crypts",
+    "Appendix vermiformis lumen"
+   ],
+   "answer": 0,
+   "explain": "Salmonella Typhi colonizes the gallbladder and forms protective biofilms on the surface of gallstones, intermittently discharging bacteria into bile and faeces; eradication often requires prolonged fluoroquinolone therapy and sometimes cholecystectomy.",
+   "verified": false,
+   "open": {
+    "q": "Which anatomical organ serves as the primary reservoir of persistent infection in chronic asymptomatic typhoid carriers?",
+    "accept": [
+     "The gallbladder",
+     "Gallbladder and biliary tract"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-010",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "q": "A 24-year-old man in Benue State presents with a 9-day history of stepwise rising fever (39.6 degrees Celsius), frontal headache, abdominal tenderness, relative bradycardia (pulse 78/min), and blanching erythematous maculopapules on his upper abdomen. Full blood count shows leukopenia (WBC 3.1 x 10^9/L) and eosinopenia. Which empirical parenteral antibiotic is most appropriate given widespread multidrug resistance in Nigeria?",
+   "options": [
+    "Intravenous ceftriaxone (or azithromycin for uncomplicated oral therapy)",
+    "Oral amoxicillin-clavulanate monotherapy",
+    "Intramuscular gentamicin monotherapy",
+    "Oral metronidazole monotherapy"
+   ],
+   "answer": 0,
+   "explain": "Because multidrug-resistant Salmonella Typhi (resistant to chloramphenicol, ampicillin, and co-trimoxazole) and reduced fluoroquinolone susceptibility are widespread, third-generation cephalosporins (ceftriaxone) or azithromycin are first-line empirical agents (gentamicin fails in vivo despite in vitro susceptibility because it cannot penetrate macrophages).",
+   "verified": false,
+   "open": {
+    "q": "Name a first-line antibiotic recommended for treating multidrug-resistant typhoid fever, and explain why aminoglycosides like gentamicin are clinically ineffective despite in vitro susceptibility.",
+    "accept": [
+     "Ceftriaxone (or azithromycin); aminoglycosides cannot enter macrophages where Salmonella Typhi replicates intracellularly",
+     "Ceftriaxone or azithromycin; poor intracellular penetration of aminoglycosides"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Shigellosis (Bacillary Dysentery)",
+   "q": "Which epidemiological and pathogenic feature explains why Shigella species cause explosive person-to-person outbreaks of bacillary dysentery in crowded settings, daycare centres, and camps?",
+   "options": [
+    "Shigella is acid-resistant and has an extremely low infectious dose of only 10 to 100 organisms",
+    "Shigella forms heat-resistant spores that survive boiling water for 2 hours",
+    "Shigella multiplies rapidly in dry ambient air and spreads via respiratory aerosols",
+    "Shigella requires an infectious dose exceeding 10^9 organisms in alkaline milk"
+   ],
+   "answer": 0,
+   "explain": "Unlike Vibrio cholerae or Salmonella (which require ~10^5–10^8 organisms to survive gastric acidity), Shigella survives stomach acid readily so ingestion of as few as 10–100 bacteria establishes colonic infection.",
+   "verified": false,
+   "open": {
+    "q": "What is the approximate minimum infectious dose of Shigella species, and why is it so much lower than that of Vibrio cholerae?",
+    "accept": [
+     "10 to 100 organisms because Shigella is highly resistant to gastric acidity",
+     "Fewer than 100 bacteria due to acid resistance"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Shigellosis (Bacillary Dysentery)",
+   "q": "How does Shigella spread laterally from one colonic epithelial cell to adjacent enterocytes without entering the extracellular space?",
+   "options": [
+    "It polymerizes host cell actin filaments at one bacterial pole (via IcsA) to propel itself directly into neighbouring cells",
+    "It uses long peritrichous flagella to swim through submucosal blood vessels",
+    "It induces syncytial fusion of all colonic goblet cells",
+    "It travels inside migrating eosinophils across the muscularis mucosae"
+   ],
+   "answer": 0,
+   "explain": "After invading colonic M cells and escaping the phagocytic vacuole into enterocyte cytoplasm, non-flagellated Shigella expresses surface IcsA protein to nucleate host actin tails, propelling bacteria into adjacent colonocytes and causing microabscesses and mucosal sloughing.",
+   "verified": false,
+   "open": {
+    "q": "How does non-flagellated Shigella move within and between colonic epithelial cells during mucosal invasion?",
+    "accept": [
+     "Polymerizes host actin filaments to propel itself directly from cell to cell",
+     "Host actin tail polymerization"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-013",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Shigellosis (Bacillary Dysentery)",
+   "q": "Which Shigella species produces Shiga toxin (an A-B toxin that cleaves 28S rRNA of the 60S ribosomal subunit) and is associated with the most severe dysentery and haemolytic uraemic syndrome (HUS)?",
+   "options": [
+    "Shigella dysenteriae type 1",
+    "Shigella sonnei",
+    "Shigella boydii",
+    "Shigella flexneri"
+   ],
+   "answer": 0,
+   "explain": "Shigella dysenteriae serotype 1 produces potent chromosomally encoded Shiga toxin (homologous to EHEC Shiga-like toxin), causing fulminant necrotic colitis, toxic megacolon, and HUS, whereas S. flexneri predominates in developing countries and S. sonnei in industrialized nations.",
+   "verified": false,
+   "open": {
+    "q": "Name the Shigella species and serotype that produces Shiga toxin and carries the highest risk of severe dysentery and haemolytic uraemic syndrome.",
+    "accept": [
+     "Shigella dysenteriae type 1",
+     "Shigella dysenteriae"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
+   "q": "Which diarrhoeagenic Escherichia coli pathotype is the leading bacterial cause of travellers' diarrhoea and infantile watery diarrhoea in developing nations via plasmid-encoded heat-labile (LT) and heat-stable (ST) enterotoxins?",
+   "options": [
+    "Enterotoxigenic E. coli (ETEC)",
+    "Enteroinvasive E. coli (EIEC)",
+    "Enteroaggregative E. coli (EAEC)",
+    "Enterohaemorrhagic E. coli (EHEC)"
+   ],
+   "answer": 0,
+   "explain": "ETEC adheres to small bowel microvilli via colonization factor antigens (CFAs) and secretes LT (which activates adenylate cyclase to raise cAMP, identical to cholera toxin) and/or ST (which activates guanylate cyclase to raise cGMP), producing non-bloody watery diarrhoea.",
+   "verified": false,
+   "open": {
+    "q": "Name the diarrhoeagenic E. coli pathotype that causes travellers' diarrhoea via heat-labile (LT) and heat-stable (ST) enterotoxins.",
+    "accept": [
+     "ETEC",
+     "Enterotoxigenic Escherichia coli",
+     "Enterotoxigenic E. coli"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-015",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
+   "q": "Enteropathogenic Escherichia coli (EPEC) causes persistent watery diarrhoea in infants under 2 years of age in low-income settings primarily through which ultrastructural intestinal lesion?",
+   "options": [
+    "Attaching and effacing (A/E) lesions with loss of enterocyte microvilli and formation of actin-rich pedestals beneath adherent bacteria",
+    "Deep flask-shaped colonic ulcers extending into the muscularis propria",
+    "Complete replacement of duodenal villi by caseating granulomas",
+    "Massive mucosal pseudomembranes composed of fibrin and neutrophils"
+   ],
+   "answer": 0,
+   "explain": "EPEC uses bundle-forming pili and a type III secretion system (injecting Tir and intimin binding) to efface brush-border microvilli and rearrange host actin into pedestals, impairing absorptive surface area without producing Shiga or cholera-like toxins.",
+   "verified": false,
+   "open": {
+    "q": "Name the characteristic ultrastructural intestinal mucosal lesion induced by enteropathogenic E. coli (EPEC) in infantile diarrhoea.",
+    "accept": [
+     "Attaching and effacing lesions",
+     "A/E lesions"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-016",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
+   "q": "Why are antibiotics and antimotility agents (such as loperamide) generally contraindicated in children presenting with bloody diarrhoea caused by enterohaemorrhagic E. coli (EHEC O157:H7)?",
+   "options": [
+    "Antibiotic-induced bacterial lysis releases large amounts of preformed Shiga-like toxin and induces bacteriophage lytic replication, increasing the risk of haemolytic uraemic syndrome (HUS)",
+    "Antibiotics convert EHEC into Vibrio cholerae via horizontal plasmid transfer",
+    "Loperamide causes immediate perforation of the gastric fundus",
+    "EHEC O157:H7 uses all beta-lactam antibiotics as a carbon energy source"
+   ],
+   "answer": 0,
+   "explain": "Bactericidal antibiotics trigger the bacterial SOS response, inducing prophage-encoded Stx1/Stx2 toxin expression and releasing toxin upon cell lysis, while antimotility drugs prolong mucosal toxin contact—both significantly elevating HUS incidence.",
+   "verified": false,
+   "open": {
+    "q": "Why should antibiotics be avoided when treating confirmed or suspected enterohaemorrhagic E. coli (EHEC O157:H7) haemorrhagic colitis?",
+    "accept": [
+     "Increases release of Shiga-like toxin and raises the risk of haemolytic uraemic syndrome (HUS)",
+     "Triggers phage induction and Shiga toxin release precipitating HUS"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-017",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cholera and Other Foodborne Bacterial Gastroenteritis",
+   "q": "Which selective and differential agar medium containing thiosulfate, citrate, bile salts, and sucrose is used to isolate Vibrio cholerae, yielding characteristic flat yellow colonies?",
+   "options": [
+    "TCBS agar",
+    "Lowenstein-Jensen medium",
+    "Sabouraud dextrose agar",
+    "Tellurite blood agar"
+   ],
+   "answer": 0,
+   "explain": "TCBS (thiosulfate-citrate-bile salts-sucrose) agar has an alkaline pH (~8.6) that suppresses non-vibrio enteric flora; Vibrio cholerae ferments sucrose to produce yellow colonies, whereas non-sucrose-fermenting Vibrio parahaemolyticus produces blue-green colonies.",
+   "verified": false,
+   "open": {
+    "q": "Name the selective alkaline culture medium used to isolate Vibrio cholerae, and state the colony colour produced by sucrose fermentation.",
+    "accept": [
+     "TCBS agar; yellow colonies",
+     "Thiosulfate-citrate-bile salts-sucrose agar; yellow"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-018",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cholera and Other Foodborne Bacterial Gastroenteritis",
+   "q": "A 21-year-old student develops explosive projectile vomiting and nausea 3 hours after eating unrefrigerated fried rice at a cafeteria. No fever is present, and symptoms resolve within 24 hours. Which organism and heat-stable emetic toxin are responsible?",
+   "options": [
+    "Bacillus cereus producing preformed cereulide emetic toxin",
+    "Salmonella Typhi producing Vi capsular polysaccharide",
+    "Clostridioides difficile producing cytotoxin B",
+    "Campylobacter jejuni producing cytolethal distending toxin"
+   ],
+   "answer": 0,
+   "explain": "Bacillus cereus spores survive boiling during rice cooking, germinate when cooked rice is held warm, and secrete heat-stable preformed cereulide (which stimulates vagal 5-HT3 receptors in the gut), causing rapid-onset vomiting within 1–6 hours (similar to Staphylococcus aureus preformed enterotoxin food poisoning).",
+   "verified": false,
+   "open": {
+    "q": "Name the spore-forming bacterium classically associated with rapid-onset emetic food poisoning (1 to 6 hours) after ingestion of reheated fried rice.",
+    "accept": [
+     "Bacillus cereus",
+     "B. cereus"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cholera and Other Foodborne Bacterial Gastroenteritis",
+   "q": "Which Gram-negative rod transmitted via contaminated milk, pork, or puppy faeces multiplies at cold temperatures (4 degrees Celsius), invades ileal Peyer patches, and causes mesenteric lymphadenitis that closely mimics acute appendicitis ('pseudoappendicitis') in children and adolescents?",
+   "options": [
+    "Yersinia enterocolitica",
+    "Vibrio vulnificus",
+    "Clostridium botulinum",
+    "Helicobacter pylori"
+   ],
+   "answer": 0,
+   "explain": "Yersinia enterocolitica (a bipolar-staining pleomorphic rod motile at 25 degrees C but non-motile at 37 degrees C) causes terminal ileitis and mesenteric adenitis presenting with right iliac fossa pain and fever mimicking appendicitis, and can trigger reactive arthritis.",
+   "verified": false,
+   "open": {
+    "q": "Name the cold-tolerant enteropathogenic bacterium that causes terminal ileitis and mesenteric lymphadenitis clinically mimicking acute appendicitis.",
+    "accept": [
+     "Yersinia enterocolitica",
+     "Y. enterocolitica"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Viral Gastroenteritis",
+   "q": "Which non-enveloped, double-stranded RNA virus with a segmented 11-segment genome and wheel-like capsid appearance on electron microscopy is the leading global cause of severe dehydrating watery diarrhoea in infants and young children?",
+   "options": [
+    "Rotavirus",
+    "Norovirus",
+    "Hepatitis A virus",
+    "Enterovirus 71"
+   ],
+   "answer": 0,
+   "explain": "Rotavirus (family Reoviridae) infects and destroys mature absorptive enterocytes at the tips of small intestinal villi and produces the viral enterotoxin NSP4 (which triggers chloride secretion), causing osmotic and secretory watery diarrhoea prevented by live-attenuated oral rotavirus vaccines.",
+   "verified": false,
+   "open": {
+    "q": "Name the segmented double-stranded RNA virus that is the leading cause of severe dehydrating gastroenteritis in infants and young children worldwide.",
+    "accept": [
+     "Rotavirus",
+     "Group A rotavirus"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Viral Gastroenteritis",
+   "q": "Which small, non-enveloped, positive-sense single-stranded RNA calicivirus is the most common cause of acute viral gastroenteritis outbreaks across all age groups in schools, hospitals, cruise ships, and households, characterized by prominent projectile vomiting and watery diarrhoea?",
+   "options": [
+    "Norovirus",
+    "Cytomegalovirus",
+    "Astrovirus",
+    "Coxsackievirus B"
+   ],
+   "answer": 0,
+   "explain": "Norovirus (formerly Norwalk-like virus) has an ultra-low infectious dose (<20 viral particles), resists alcohol hand sanitizers and environmental desiccation, and causes sudden-onset nausea, projectile vomiting, and non-bloody diarrhoea lasting 24–72 hours.",
+   "verified": false,
+   "open": {
+    "q": "Name the non-enveloped single-stranded RNA calicivirus responsible for epidemic outbreaks of acute vomiting and diarrhoea in both children and adults.",
+    "accept": [
+     "Norovirus",
+     "Norwalk virus"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
+   "q": "In intestinal amoebiasis caused by Entamoeba histolytica, which stage is the infective form transmitted via faecally contaminated water/food, and which stage is the invasive tissue-destroying form found in fresh bloody dysenteric stools?",
+   "options": [
+    "Quadrinucleate mature cyst is the infective stage; motile trophozoite containing ingested erythrocytes (haematophagous trophozoite) is the invasive stage",
+    "Uninucleate trophozoite is the infective stage; flagellated promastigote is the invasive stage",
+    "Oocyst containing four sporozoites is the infective stage; bradyzoite tissue cyst is the invasive stage",
+    "Rhabditiform larva is the infective stage; filariform larva is the invasive stage"
+   ],
+   "answer": 0,
+   "explain": "Mature four-nucleated cysts of Entamoeba histolytica survive gastric acid and excyst in the small intestine into motile trophozoites; trophozoites adhere to colonic epithelium via Gal/GalNAc lectin, lyse host cells with amoebapores, and create classic flask-shaped mucosal ulcers.",
+   "verified": false,
+   "open": {
+    "q": "Identify the infective stage and the invasive diagnostic stage of Entamoeba histolytica in amoebic dysentery.",
+    "accept": [
+     "Quadrinucleate cyst is infective; trophozoite with ingested red blood cells is invasive",
+     "Mature 4-nucleated cyst (infective) and haematophagous trophozoite (invasive)"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-023",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
+   "q": "A 38-year-old man in Benue State presents with right upper quadrant abdominal pain, swinging fever, tender hepatomegaly, and intercostal tenderness 2 months after an untreated episode of bloody diarrhoea. Abdominal ultrasound reveals a solitary 8 cm hypoechoic lesion in the right hepatic lobe, and aspiration yields thick reddish-brown 'anchovy-paste' odourless fluid without neutrophils. What is the diagnosis and treatment?",
+   "options": [
+    "Amoebic liver abscess; treated with metronidazole (or tinidazole) followed by a luminal amoebicide such as paromomycin or diloxanide furoate",
+    "Pyogenic Klebsiella liver abscess; treated with oral albendazole monotherapy",
+    "Hydatid echinococcal cyst; treated with high-dose intravenous penicillin G",
+    "Hepatocellular carcinoma; treated with oral vancomycin"
+   ],
+   "answer": 0,
+   "explain": "Entamoeba histolytica trophozoites invade colonic venules and travel via the portal vein to the right liver lobe, causing liquefactive hepatocyte necrosis ('anchovy-sauce' necrotic debris); metronidazole eliminates tissue trophozoites, and a luminal agent eradicates residual colonic cysts.",
+   "verified": false,
+   "open": {
+    "q": "What is the most common extraintestinal complication of Entamoeba histolytica infection, and why must metronidazole therapy be followed by a luminal amoebicide?",
+    "accept": [
+     "Amoebic liver abscess; luminal amoebicide eradicates persistent intraluminal cysts to prevent relapse and transmission",
+     "Amoebic liver abscess; metronidazole does not reliably clear colonic luminal cysts"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
+   "q": "Which binucleate, flagellated intestinal protozoan attaches to duodenal and jejunal enterocytes via a ventral sucking disc—without invading mucosa—to cause foul-smelling, greasy, non-bloody steatorrhoea, bloating, and flatulence?",
+   "options": [
+    "Giardia duodenalis (Giardia lamblia)",
+    "Balantidium coli",
+    "Entamoeba coli",
+    "Trichomonas vaginalis"
+   ],
+   "answer": 0,
+   "explain": "Giardia lamblia pear-shaped trophozoites (having two nuclei, four pairs of flagella, and a ventral adhesive disc resembling a 'smiling face') coat the duodenal brush border, causing villous blunting, disaccharidase deficiency, and fat malabsorption.",
+   "verified": false,
+   "open": {
+    "q": "Name the flagellated protozoan that attaches to the duodenal mucosa via a ventral adhesive disc to cause malabsorptive steatorrhoea and foul-smelling diarrhoea.",
+    "accept": [
+     "Giardia lamblia",
+     "Giardia duodenalis",
+     "Giardia intestinalis"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
+   "q": "In patients with advanced HIV/AIDS (CD4 count <100 cells/uL), which apicomplexan coccidian protozoan causes severe, chronic, cholera-like watery diarrhoea and is identified on stool smear as 4–6 micrometre pink-red acid-fast oocysts using modified Ziehl-Neelsen staining?",
+   "options": [
+    "Cryptosporidium parvum / Cryptosporidium hominis",
+    "Entamoeba hartmanni",
+    "Dientamoeba fragilis",
+    "Blastocystis hominis"
+   ],
+   "answer": 0,
+   "explain": "Cryptosporidium thick-walled oocysts are chlorine-resistant and immediately infectious upon excretion; they reside intracellularly but extracytoplasmically within the intestinal brush border, causing self-limiting diarrhoea in immunocompetent hosts and intractable secretory diarrhoea in AIDS.",
+   "verified": false,
+   "open": {
+    "q": "Name the coccidian protozoan detected as acid-fast oocysts on modified Ziehl-Neelsen stool staining that causes severe chronic watery diarrhoea in patients with advanced HIV/AIDS.",
+    "accept": [
+     "Cryptosporidium",
+     "Cryptosporidium parvum",
+     "Cryptosporidium hominis"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-026",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
+   "q": "Which large soil-transmitted intestinal nematode (roundworm) is acquired by ingesting embryonated eggs, undergoes a pulmonary larval migration phase causing Loeffler eosinophilic pneumonitis, and can cause mechanical small bowel or biliary obstruction in heavily infected children?",
+   "options": [
+    "Ascaris lumbricoides",
+    "Enterobius vermicularis",
+    "Trichuris trichiura",
+    "Strongyloides stercoralis"
+   ],
+   "answer": 0,
+   "explain": "Ascaris lumbricoides larvae hatch in the small intestine, penetrate portal vessels to migrate through the liver and lungs (causing cough, wheezing, and peripheral eosinophilia—Loeffler syndrome), are swallowed, and mature into 15–35 cm adult worms in the small bowel.",
+   "verified": false,
+   "open": {
+    "q": "Name the largest human intestinal nematode whose larval lung migration causes Loeffler eosinophilic pneumonitis and whose adult worms can cause mechanical intestinal obstruction.",
+    "accept": [
+     "Ascaris lumbricoides",
+     "Ascaris"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-027",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
+   "q": "How do human hookworms (Ancylostoma duodenale and Necator americanus) infect humans and cause severe iron-deficiency microcytic anaemia in endemic tropical regions?",
+   "options": [
+    "Infective filariform larvae penetrate intact skin of bare feet, migrate via lungs to the small intestine, and attach via buccal cutting plates/teeth to suck blood and cause chronic mucosal oozing",
+    "Ingestion of raw freshwater fish transmits adult worms that selectively consume vitamin B12 in the ileum",
+    "Ingestion of undercooked pork leads to cysticercus larvae calcifying inside bone marrow sinusoids",
+    "Female worms deposit embryonated eggs on perianal skin at night causing nocturnal pruritus ani"
+   ],
+   "answer": 0,
+   "explain": "Hookworm filariform larvae penetrate bare skin (causing 'ground itch'), migrate via the bloodstream and alveoli to the small intestine, and secrete anticoagulants while feeding on villous capillaries, causing chronic gastrointestinal blood loss.",
+   "verified": false,
+   "open": {
+    "q": "Identify the infective stage and portal of entry of hookworms (Ancylostoma duodenale and Necator americanus), and state their major haematological complication.",
+    "accept": [
+     "Filariform larva penetrating intact skin; causes iron-deficiency anaemia",
+     "Skin penetration by filariform larvae causing microcytic iron-deficiency anaemia"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
+   "q": "Which intestinal nematode is unique in its ability to complete its entire life cycle within the human host via internal autoinfection, placing immunosuppressed patients (especially those receiving corticosteroids or infected with HTLV-1) at risk of fatal hyperinfection syndrome with Gram-negative sepsis?",
+   "options": [
+    "Strongyloides stercoralis",
+    "Trichuris trichiura",
+    "Taenia saginata",
+    "Schistosoma mansoni"
+   ],
+   "answer": 0,
+   "explain": "In Strongyloides stercoralis, rhabditiform larvae passed in stool can transform directly into infective filariform larvae within the gut lumen or perianal skin (autoinfection), enabling decades-long persistence and disseminated hyperinfection carrying enteric bacteria into the bloodstream during corticosteroid immunosuppression.",
+   "verified": false,
+   "open": {
+    "q": "Name the intestinal nematode capable of internal autoinfection that causes disseminated hyperinfection syndrome in patients treated with systemic corticosteroids.",
+    "accept": [
+     "Strongyloides stercoralis",
+     "Strongyloides"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
+   "q": "Heavy chronic infection with the whipworm Trichuris trichiura—diagnosed by barrel-shaped eggs with bipolar mucoid plugs on stool microscopy—classically causes chronic mucoid bloody diarrhoea, tenesmus, and which mechanical complication in young children?",
+   "options": [
+    "Rectal prolapse",
+    "Intussusception of the gastro-oesophageal junction",
+    "Cholelithiasis with porcelain gallbladder",
+    "Spontaneous splenic rupture"
+   ],
+   "answer": 0,
+   "explain": "Adult Trichuris trichiura embed their whip-like anterior ends into the caecal and colonic mucosa; heavy worm burdens induce mucosal oedema, ulceration, chronic dysentery, growth stunting, and straining-induced rectal prolapse.",
+   "verified": false,
+   "open": {
+    "q": "Name the characteristic egg morphology and the classic mechanical rectal complication of heavy Trichuris trichiura (whipworm) infection in children.",
+    "accept": [
+     "Barrel-shaped eggs with bipolar plugs; rectal prolapse",
+     "Bipolar plugged barrel-shaped ova; rectal prolapse"
+    ]
+   }
+  },
+  {
+   "id": "pam-enteric-infections-and-typhoid-030",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
+   "q": "Why does ingestion of Taenia solium eggs (via faecal-oral contamination) cause human neurocysticercosis, whereas ingestion of Taenia solium cysticerci in undercooked pork causes adult intestinal taeniasis?",
+   "options": [
+    "Ingested eggs hatch into oncospheres that penetrate the intestinal wall and encyst as cysticerci in brain and muscle, whereas ingested cysticerci evaginate in the gut to mature into adult tapeworms",
+    "Ingested eggs are destroyed by stomach acid unless accompanied by raw beef",
+    "Taenia solium adult tapeworms migrate directly from the colon up the carotid artery into the brain",
+    "Cysticerci in pork are non-viable dead calcifications that trigger allergic encephalitis"
+   ],
+   "answer": 0,
+   "explain": "Humans serve as the definitive host for adult T. solium tapeworms after eating undercooked pork containing cysticerci, but become accidental intermediate hosts when ingesting T. solium eggs—allowing invasive larvae (cysticerci) to lodge in the CNS (causing seizures and hydrocephalus), eye, and skeletal muscle.",
+   "verified": false,
+   "open": {
+    "q": "Explain the difference in infective stage and resulting clinical disease when humans ingest Taenia solium cysticerci in pork versus Taenia solium eggs.",
+    "accept": [
+     "Ingesting cysticerci causes adult intestinal tapeworm infection (taeniasis); ingesting eggs causes tissue larval cysts (cysticercosis/neurocysticercosis)",
+     "Cysticerci cause intestinal taeniasis whereas eggs cause neurocysticercosis"
+    ]
+   }
+  }
+ ]
+}

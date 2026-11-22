@@ -1,0 +1,842 @@
+{
+ "topic": "pag-genetic-basis-of-disease",
+ "questions": [
+  {
+   "id": "pag-genetic-basis-of-disease-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Mutations and Single-Gene Disorders",
+   "q": "Which type of point mutation replaces a single nucleotide base and introduces a premature stop codon (UAA, UAG, or UGA), resulting in a truncated, non-functional protein?",
+   "options": [
+    "Nonsense mutation",
+    "Missense mutation",
+    "Silent mutation",
+    "Splice-site mutation"
+   ],
+   "answer": 0,
+   "explain": "A nonsense mutation converts an amino acid-coding codon into a termination codon, prematurely halting translation and often triggering nonsense-mediated mRNA decay. A missense mutation substitutes one amino acid for another.",
+   "verified": false,
+   "open": {
+    "q": "Name the type of point mutation that converts an amino acid-coding codon into a premature stop codon, producing a truncated protein.",
+    "accept": [
+     "Stop-gain mutation",
+     "Chain-terminating mutation",
+     "Nonsense point mutation"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Mutations and Single-Gene Disorders",
+   "q": "Insertion or deletion of one or two nucleotide base pairs within a coding exon alters the translational reading frame downstream of the mutation. What is this type of mutation called?",
+   "options": [
+    "Frameshift mutation",
+    "Conservative missense mutation",
+    "Synonymous mutation",
+    "Balanced translocation"
+   ],
+   "answer": 0,
+   "explain": "Because the genetic code is read in non-overlapping triplets, adding or deleting a number of nucleotides not divisible by three shifts the entire reading frame and almost always creates a premature stop codon downstream.",
+   "verified": false,
+   "open": {
+    "q": "Name the mutation caused by insertion or deletion of nucleotides not divisible by three, altering the translational reading frame.",
+    "accept": [
+     "Reading frame shift",
+     "Frameshift"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Mutations and Single-Gene Disorders",
+   "q": "Which genetic phenomenon describes the observation that individuals inheriting the exact same disease-causing genotype exhibit widely varying clinical severity and organ involvement?",
+   "options": [
+    "Variable expressivity",
+    "Incomplete penetrance",
+    "Locus heterogeneity",
+    "Genetic anticipation"
+   ],
+   "answer": 0,
+   "explain": "Variable expressivity means that while all carriers express the trait, the degree of phenotypic severity differs among individuals (e.g., neurofibromatosis type 1). Incomplete penetrance means a proportion of mutation carriers show no phenotypic features at all.",
+   "verified": false,
+   "open": {
+    "q": "Name the genetic principle in which different individuals carrying the exact same pathogenic mutation display differing degrees of clinical severity.",
+    "accept": [
+     "Expressivity",
+     "Variability of expression"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Autosomal Dominant Disorders",
+   "q": "Marfan syndrome is caused by loss-of-function mutations in the FBN1 gene on chromosome 15q21, which encodes which extracellular matrix glycoprotein?",
+   "options": [
+    "Fibrillin-1",
+    "Type I collagen",
+    "Elastin",
+    "Dystrophin"
+   ],
+   "answer": 0,
+   "explain": "Fibrillin-1 is the major structural component of microfibrils that scaffold elastic fibres and sequester latent TGF-beta; FBN1 mutations cause connective tissue weakness (aortic root aneurysm, lens dislocation) and excessive TGF-beta signaling.",
+   "verified": false,
+   "open": {
+    "q": "Name the extracellular matrix microfibrillar glycoprotein mutated in Marfan syndrome.",
+    "accept": [
+     "Fibrillin",
+     "FBN1 protein"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-005",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Autosomal Dominant Disorders",
+   "q": "A 28-year-old tall, slender man with arachnodactyly, pectus excavatum, and upward-and-outward lens subluxation presents with sudden tearing chest pain radiating to his back. What is the most life-threatening cardiovascular complication of his underlying condition?",
+   "options": [
+    "Dissecting aneurysm of the ascending aorta",
+    "Constrictive calcific pericarditis",
+    "Ostium secundum atrial septal defect",
+    "Rheumatic mitral stenosis"
+   ],
+   "answer": 0,
+   "explain": "In Marfan syndrome, loss of fibrillin-1 weakens the aortic media (cystic medial degeneration), predisposing to progressive aortic root dilation, aortic regurgitation, and acute ascending aortic dissection, the leading cause of death.",
+   "verified": false,
+   "open": {
+    "q": "What is the most common life-threatening cardiovascular complication of Marfan syndrome?",
+    "accept": [
+     "Aortic dissection",
+     "Ascending aortic aneurysm and dissection",
+     "Ruptured aortic aneurysm"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-006",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Autosomal Dominant Disorders",
+   "q": "Familial hypercholesterolaemia results most commonly from mutations in the gene encoding which cell-surface receptor, leading to markedly elevated plasma LDL cholesterol and premature atherosclerosis?",
+   "options": [
+    "Low-density lipoprotein (LDL) receptor",
+    "Scavenger receptor class B1",
+    "Chylomicron remnant receptor",
+    "Insulin receptor"
+   ],
+   "answer": 0,
+   "explain": "Mutations in the LDLR gene impair hepatic receptor-mediated endocytosis of LDL particles, doubling plasma LDL in heterozygotes and raising it four- to five-fold in homozygotes, causing tendon xanthomas and childhood myocardial infarction.",
+   "verified": false,
+   "open": {
+    "q": "Name the cell-surface receptor most commonly mutated in familial hypercholesterolaemia.",
+    "accept": [
+     "LDL receptor",
+     "LDLR",
+     "ApoB/E receptor"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-007",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Autosomal Dominant Disorders",
+   "q": "Neurofibromatosis type 1 (von Recklinghausen disease) is caused by mutations in the NF1 tumour suppressor gene, whose protein product neurofibromin normally acts as a negative regulator of which oncoprotein?",
+   "options": [
+    "RAS",
+    "MYC",
+    "BCL-2",
+    "RB1"
+   ],
+   "answer": 0,
+   "explain": "Neurofibromin contains a GTPase-activating protein (GAP) domain that accelerates GTP hydrolysis on RAS, switching RAS to its inactive GDP-bound state; loss of neurofibromin leads to constitutive RAS growth signaling.",
+   "verified": false,
+   "open": {
+    "q": "Which intracellular signal-transducing oncoprotein is normally inactivated by neurofibromin, the protein defective in neurofibromatosis type 1?",
+    "accept": [
+     "RAS oncoprotein",
+     "p21 RAS",
+     "RAS GTPase"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Autosomal Dominant Disorders",
+   "q": "What is the recurrence risk for each future pregnancy when one parent is heterozygous for an autosomal dominant disorder with 100% penetrance and the other parent is unaffected?",
+   "options": [
+    "50% regardless of the child's sex",
+    "25% for sons and 0% for daughters",
+    "100% for daughters and 0% for sons",
+    "25% regardless of the child's sex"
+   ],
+   "answer": 0,
+   "explain": "A heterozygous parent (Aa) transmits the mutant allele to half of all gametes, giving each offspring—male or female—an independent 50% probability of inheriting the disorder.",
+   "verified": false,
+   "open": {
+    "q": "What is the probability that a child will inherit a fully penetrant autosomal dominant condition when one parent is heterozygous affected and the other is unaffected?",
+    "accept": [
+     "50 percent",
+     "1 in 2",
+     "0.5"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-009",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Autosomal Recessive Disorders",
+   "q": "Sickle cell anaemia, highly prevalent in Nigeria, is caused by a single missense point mutation in the beta-globin (HBB) gene that substitutes which amino acid for glutamic acid at position 6?",
+   "options": [
+    "Valine",
+    "Lysine",
+    "Glycine",
+    "Proline"
+   ],
+   "answer": 0,
+   "explain": "Replacement of hydrophilic glutamic acid with hydrophobic valine at the sixth position of the beta-globin chain (Glu6Val) generates HbS, which polymerizes into rigid fibres upon deoxygenation.",
+   "verified": false,
+   "open": {
+    "q": "Name the hydrophobic amino acid substituted for glutamic acid at position 6 of the beta-globin chain in sickle cell disease.",
+    "accept": [
+     "Val",
+     "L-valine"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Autosomal Recessive Disorders",
+   "q": "Cystic fibrosis is caused by autosomal recessive mutations in the CFTR gene on chromosome 7q31, which encodes an epithelial membrane channel responsible for transporting which ion?",
+   "options": [
+    "Chloride",
+    "Calcium",
+    "Magnesium",
+    "Phosphate"
+   ],
+   "answer": 0,
+   "explain": "CFTR is a cAMP-regulated chloride channel (and regulator of ENaC sodium channels); loss of CFTR function dehydrates airway and pancreatic secretions, causing viscous mucus plugging, recurrent sinopulmonary infections, and elevated sweat chloride.",
+   "verified": false,
+   "open": {
+    "q": "Name the anion transported across exocrine epithelial membranes by the CFTR protein defective in cystic fibrosis.",
+    "accept": [
+     "Chloride ion",
+     "Cl-"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Autosomal Recessive Disorders",
+   "q": "A 6-month-old infant presents with developmental delay, microcephaly, hypopigmented skin and hair, and a musty body odour due to deficiency of hepatic phenylalanine hydroxylase. Which amino acid becomes nutritionally essential in this disorder?",
+   "options": [
+    "Tyrosine",
+    "Tryptophan",
+    "Methionine",
+    "Histidine"
+   ],
+   "answer": 0,
+   "explain": "In classic phenylketonuria (PKU), inability to hydroxylate phenylalanine into tyrosine causes neurotoxic hyperphenylalaninaemia and renders tyrosine an essential dietary amino acid needed for melanin and catecholamine synthesis.",
+   "verified": false,
+   "open": {
+    "q": "In classic phenylketonuria caused by phenylalanine hydroxylase deficiency, which normally non-essential amino acid becomes dietarily essential?",
+    "accept": [
+     "L-tyrosine",
+     "Tyr"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Lysosomal Storage Diseases",
+   "q": "Gaucher disease, the most common lysosomal storage disorder, results from an autosomal recessive deficiency of which lysosomal enzyme?",
+   "options": [
+    "Glucocerebrosidase (beta-glucosidase)",
+    "Hexosaminidase A",
+    "Sphingomyelinase",
+    "Alpha-L-iduronidase"
+   ],
+   "answer": 0,
+   "explain": "Deficiency of glucocerebrosidase leads to accumulation of glucosylceramide inside phagocytic macrophages (Gaucher cells with wrinkled-paper cytoplasm) in the spleen, liver, and bone marrow, causing massive hepatosplenomegaly and pancytopenia.",
+   "verified": false,
+   "open": {
+    "q": "Name the lysosomal enzyme deficient in Gaucher disease.",
+    "accept": [
+     "Glucocerebrosidase",
+     "Acid beta-glucosidase",
+     "Beta-glucocerebrosidase"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-013",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lysosomal Storage Diseases",
+   "q": "A 9-month-old infant presents with progressive hypotonia, blindness, an exaggerated startle response to sound, and a cherry-red spot on the macula without hepatosplenomegaly. Deficiency of hexosaminidase A leads to neuronal accumulation of which ganglioside?",
+   "options": [
+    "GM2 ganglioside",
+    "Glucocerebroside",
+    "Sphingomyelin",
+    "Galactocerebroside"
+   ],
+   "answer": 0,
+   "explain": "Tay-Sachs disease is caused by HEXA gene mutations reducing hexosaminidase A activity, causing GM2 ganglioside buildup in central and retinal neurons (producing a macular cherry-red spot) without visceral organomegaly.",
+   "verified": false,
+   "open": {
+    "q": "Name the sphingolipid that accumulates inside neurons in Tay-Sachs disease due to hexosaminidase A deficiency.",
+    "accept": [
+     "GM2",
+     "GM2 ganglioside",
+     "Ganglioside GM2"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-014",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Lysosomal Storage Diseases",
+   "q": "Niemann-Pick disease types A and B are caused by an inherited deficiency of acid sphingomyelinase, resulting in lipid-laden foam cells within the liver, spleen, and bone marrow. Which lipid accumulates in these cells?",
+   "options": [
+    "Sphingomyelin",
+    "Dermatan sulphate",
+    "Glycogen",
+    "Homogentisic acid"
+   ],
+   "answer": 0,
+   "explain": "Acid sphingomyelinase deficiency prevents breakdown of sphingomyelin into ceramide and phosphorylcholine, producing characteristic lipid-laden foam cells and severe hepatosplenomegaly.",
+   "verified": false,
+   "open": {
+    "q": "Name the membrane phospholipid that accumulates in macrophages and neurons in Niemann-Pick disease types A and B.",
+    "accept": [
+     "Sphingomyelin",
+     "Ceramide phosphorylcholine"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "X-Linked Disorders",
+   "q": "Why does an affected male with an X-linked recessive disorder never transmit the disease directly to his sons?",
+   "options": [
+    "Fathers transmit their Y chromosome rather than their X chromosome to male offspring",
+    "The Y chromosome carries a dominant suppressor allele that silences X-linked mutations",
+    "Spermatozoa carrying mutant X chromosomes are non-viable during fertilization",
+    "Male embryos inheriting a paternal mutant X chromosome undergo spontaneous abortion"
+   ],
+   "answer": 0,
+   "explain": "A father passes his Y chromosome to all sons and his single X chromosome to all daughters; consequently, there is no male-to-male transmission in X-linked inheritance, and 100% of daughters of an affected father become obligate carriers.",
+   "verified": false,
+   "open": {
+    "q": "Why is male-to-male transmission impossible in X-linked recessive inheritance?",
+    "accept": [
+     "Fathers pass only their Y chromosome to sons",
+     "Sons inherit their X chromosome exclusively from their mother"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-016",
+   "type": "mcq",
+   "level": 3,
+   "sub": "X-Linked Disorders",
+   "q": "A 4-year-old boy presents with progressive proximal muscle weakness, waddling gait, pseudohypertrophy of the calves, and Gower sign when rising from the floor. Serum creatine kinase is markedly elevated. Which cytoskeletal protein is absent in his skeletal muscle fibres?",
+   "options": [
+    "Dystrophin",
+    "Titin",
+    "Troponin T",
+    "Spectrin"
+   ],
+   "answer": 0,
+   "explain": "Duchenne muscular dystrophy is an X-linked recessive disorder caused by truncating mutations in the DMD gene on Xp21, resulting in complete absence of dystrophin, sarcolemmal tearing during contraction, myofibre necrosis, and fibrofatty calf pseudohypertrophy.",
+   "verified": false,
+   "open": {
+    "q": "Name the subsarcolemmal structural protein completely absent in skeletal and cardiac muscle in Duchenne muscular dystrophy.",
+    "accept": [
+     "Dystrophin",
+     "DMD protein"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "X-Linked Disorders",
+   "q": "How does Becker muscular dystrophy differ molecularly and clinically from Duchenne muscular dystrophy?",
+   "options": [
+    "Becker muscular dystrophy produces a reduced amount of internally truncated, partially functional dystrophin and has later onset",
+    "Becker muscular dystrophy is inherited in an autosomal dominant manner and affects smooth muscle only",
+    "Becker muscular dystrophy is caused by mitochondrial DNA deletion and presents at birth",
+    "Becker muscular dystrophy results from excessive dystrophin overexpression"
+   ],
+   "answer": 0,
+   "explain": "In Becker muscular dystrophy, in-frame DMD deletions preserve the reading frame and generate a shortened but partially functional dystrophin protein, causing milder weakness with onset in later childhood or adolescence.",
+   "verified": false,
+   "open": {
+    "q": "What molecular difference in dystrophin expression explains the milder, later-onset course of Becker muscular dystrophy compared with Duchenne muscular dystrophy?",
+    "accept": [
+     "Partially functional truncated dystrophin is still produced",
+     "In-frame mutation producing reduced or altered dystrophin"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cytogenetics and Autosomal Aneuploidies",
+   "q": "What is the most common chromosomal mechanism responsible for Down syndrome (trisomy 21), accounting for approximately 95% of cases?",
+   "options": [
+    "Maternal meiotic nondisjunction",
+    "Balanced Robertsonian translocation",
+    "Post-zygotic mitotic mosaicism",
+    "Pericentric inversion of chromosome 21"
+   ],
+   "answer": 0,
+   "explain": "Roughly 95% of Down syndrome cases have 47 chromosomes resulting from meiotic nondisjunction (predominantly during maternal meiosis I), which increases strongly with advancing maternal age.",
+   "verified": false,
+   "open": {
+    "q": "What chromosomal error accounts for approximately 95% of cases of Down syndrome?",
+    "accept": [
+     "Meiotic nondisjunction",
+     "Maternal meiotic nondisjunction",
+     "Nondisjunction"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cytogenetics and Autosomal Aneuploidies",
+   "q": "Approximately 4% of patients with Down syndrome have a normal modal chromosome count of 46 due to a Robertsonian translocation. Which two chromosomes are most frequently fused in translocation Down syndrome?",
+   "options": [
+    "Chromosomes 14 and 21",
+    "Chromosomes 9 and 22",
+    "Chromosomes 8 and 14",
+    "Chromosomes 15 and 17"
+   ],
+   "answer": 0,
+   "explain": "Robertsonian translocations involve centric fusion of the long arms of two acrocentric chromosomes (13, 14, 15, 21, 22), most commonly der(14;21)(q10;q10), which can be inherited from an asymptomatic balanced carrier parent.",
+   "verified": false,
+   "open": {
+    "q": "Which two acrocentric chromosomes are most commonly fused in familial Robertsonian translocation Down syndrome?",
+    "accept": [
+     "Chromosomes 14 and 21",
+     "14 and 21",
+     "t(14;21)"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cytogenetics and Autosomal Aneuploidies",
+   "q": "Which autosomal trisomy (47,XX,+18 or 47,XY,+18) is characterized by prominent occiput, micrognathia, low-set malformed ears, overlapping flexed fingers, and rocker-bottom feet?",
+   "options": [
+    "Edwards syndrome",
+    "Patau syndrome",
+    "Cri-du-chat syndrome",
+    "DiGeorge syndrome"
+   ],
+   "answer": 0,
+   "explain": "Edwards syndrome (trisomy 18) presents with severe intellectual disability, micrognathia, prominent occiput, clenched fists with index finger overlapping the third and fifth overlapping the fourth, rocker-bottom feet, and congenital heart defects.",
+   "verified": false,
+   "open": {
+    "q": "Name the clinical syndrome caused by trisomy 18, characterized by micrognathia, overlapping fingers, and rocker-bottom feet.",
+    "accept": [
+     "Trisomy 18",
+     "Edwards' syndrome"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-021",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cytogenetics and Autosomal Aneuploidies",
+   "q": "Which autosomal trisomy (47,XX,+13 or 47,XY,+13) classically presents with holoprosencephaly, microphthalmia, cleft lip and palate, polydactyly, and cutis aplasia of the scalp?",
+   "options": [
+    "Patau syndrome",
+    "Edwards syndrome",
+    "Turner syndrome",
+    "Klinefelter syndrome"
+   ],
+   "answer": 0,
+   "explain": "Patau syndrome (trisomy 13) is characterized by midline developmental defects (holoprosencephaly, cleft lip/palate), microphthalmia, postaxial polydactyly, congenital heart defects, and severe early mortality.",
+   "verified": false,
+   "open": {
+    "q": "Name the clinical syndrome caused by trisomy 13, characterized by holoprosencephaly, cleft lip and palate, microphthalmia, and polydactyly.",
+    "accept": [
+     "Trisomy 13",
+     "Patau's syndrome"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Structural Chromosomal Abnormalities",
+   "q": "A 2-month-old infant has a characteristic high-pitched, cat-like mewing cry, microcephaly, hypertelorism, epicanthic folds, and severe intellectual disability. Which chromosomal deletion is responsible?",
+   "options": [
+    "Terminal deletion of the short arm of chromosome 5 (5p-)",
+    "Microdeletion of the long arm of chromosome 22 (22q11.2)",
+    "Interstitial deletion of the long arm of chromosome 7 (7q11.23)",
+    "Terminal deletion of the short arm of chromosome 4 (4p-)"
+   ],
+   "answer": 0,
+   "explain": "Cri-du-chat syndrome results from a terminal deletion of 5p (5p15), causing laryngeal hypoplasia responsible for the distinctive cat-like cry in infancy alongside microcephaly and intellectual disability.",
+   "verified": false,
+   "open": {
+    "q": "Which specific chromosomal deletion causes cri-du-chat syndrome?",
+    "accept": [
+     "5p deletion",
+     "Deletion of the short arm of chromosome 5",
+     "5p-"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-023",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Structural Chromosomal Abnormalities",
+   "q": "A neonate presents with tetralogy of Fallot, hypocalcaemic tetany, absent thymic shadow on chest radiograph, and recurrent viral and fungal infections. Fluorescence in situ hybridization (FISH) confirms a 22q11.2 microdeletion. Which developmental structures failed to form properly?",
+   "options": [
+    "Third and fourth pharyngeal pouches",
+    "First and second pharyngeal arches",
+    "Urogenital ridge and mesonephric duct",
+    "Neural tube and caudal neuropore"
+   ],
+   "answer": 0,
+   "explain": "22q11.2 deletion syndrome (DiGeorge syndrome) disrupts neural crest migration into the third and fourth pharyngeal pouches, resulting in thymic hypoplasia (T-cell deficiency), parathyroid hypoplasia (hypocalcaemia), and conotruncal cardiac defects.",
+   "verified": false,
+   "open": {
+    "q": "Maldevelopment of which embryonic pharyngeal structures underlies the thymic and parathyroid hypoplasia seen in 22q11.2 deletion (DiGeorge) syndrome?",
+    "accept": [
+     "Third and fourth pharyngeal pouches",
+     "3rd and 4th pharyngeal pouches"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-024",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Sex Chromosome Disorders",
+   "q": "What is the most common karyotype in Klinefelter syndrome, a leading genetic cause of male hypogonadism and azoospermia?",
+   "options": [
+    "47,XXY",
+    "45,X",
+    "47,XYY",
+    "46,XX"
+   ],
+   "answer": 0,
+   "explain": "Klinefelter syndrome most commonly has a 47,XXY karyotype due to meiotic nondisjunction, producing eunuchoid proportions, small firm atrophic testes, gynaecomastia, elevated FSH/LH, and infertility.",
+   "verified": false,
+   "open": {
+    "q": "State the classic karyotype found in the majority of patients with Klinefelter syndrome.",
+    "accept": [
+     "47, XXY",
+     "XXY trisomy"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sex Chromosome Disorders",
+   "q": "How many Barr bodies (inactivated X chromosomes) are visible in the buccal mucosal cell nuclei of a patient with classic 47,XXY Klinefelter syndrome versus a patient with 45,X Turner syndrome?",
+   "options": [
+    "One Barr body in Klinefelter syndrome and zero Barr bodies in Turner syndrome",
+    "Two Barr bodies in Klinefelter syndrome and one Barr body in Turner syndrome",
+    "Zero Barr bodies in Klinefelter syndrome and one Barr body in Turner syndrome",
+    "One Barr body in both Klinefelter syndrome and Turner syndrome"
+   ],
+   "answer": 0,
+   "explain": "According to the Lyon hypothesis, all X chromosomes in excess of one are randomly inactivated as Barr bodies (number of Barr bodies = total X chromosomes minus 1); thus 47,XXY has 1 Barr body, while 45,X has 0.",
+   "verified": false,
+   "open": {
+    "q": "How many Barr bodies are present in somatic cell nuclei of an individual with 47,XXY Klinefelter syndrome and an individual with 45,X Turner syndrome?",
+    "accept": [
+     "One in Klinefelter syndrome and zero in Turner syndrome",
+     "1 and 0"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-026",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Sex Chromosome Disorders",
+   "q": "A 16-year-old girl is evaluated for primary amenorrhoea and short stature. Physical examination reveals a webbed neck (pterygium colli), low posterior hairline, shield-like chest with widely spaced nipples, and absent secondary sexual characteristics. Karyotype is 45,X. Which congenital cardiac anomaly is most strongly associated with her condition?",
+   "options": [
+    "Coarctation of the aorta and bicuspid aortic valve",
+    "Transposition of the great arteries",
+    "Ebstein anomaly of the tricuspid valve",
+    "Truncus arteriosus"
+   ],
+   "answer": 0,
+   "explain": "Turner syndrome (45,X) causes streak ovaries (gonadal dysgenesis), cystic hygroma/webbed neck, short stature, and left-sided obstructive cardiovascular defects, principally bicuspid aortic valve and preductal coarctation of the aorta.",
+   "verified": false,
+   "open": {
+    "q": "Name the two congenital left-sided cardiovascular anomalies most frequently associated with 45,X Turner syndrome.",
+    "accept": [
+     "Bicuspid aortic valve and coarctation of the aorta",
+     "Coarctation of the aorta and bicuspid aortic valve"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-027",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Non-Mendelian Inheritance",
+   "q": "Fragile X syndrome, the most common inherited cause of intellectual disability in males, is caused by expansion of which trinucleotide repeat in the 5' untranslated region of the FMR1 gene on Xq27.3?",
+   "options": [
+    "CGG",
+    "CAG",
+    "CTG",
+    "GAA"
+   ],
+   "answer": 0,
+   "explain": "Expansion of CGG repeats beyond 200 copies in the FMR1 promoter triggers hypermethylation and transcriptional silencing of FMRP, causing intellectual disability, elongated face, large everted ears, and macro-orchidism.",
+   "verified": false,
+   "open": {
+    "q": "Name the trinucleotide repeat sequence expanded in the FMR1 gene in Fragile X syndrome.",
+    "accept": [
+     "CGG repeat",
+     "CGG trinucleotide repeat"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Non-Mendelian Inheritance",
+   "q": "Which genetic phenomenon explains why trinucleotide repeat disorders such as Huntington disease and myotonic dystrophy manifest at an earlier age and with greater clinical severity in successive generations?",
+   "options": [
+    "Anticipation",
+    "Genomic imprinting",
+    "Lyonization",
+    "Pleiotropy"
+   ],
+   "answer": 0,
+   "explain": "Anticipation occurs because unstable trinucleotide repeats (such as CAG in Huntington disease) tend to expand further during gametogenesis, producing earlier onset and more severe disease in subsequent generations.",
+   "verified": false,
+   "open": {
+    "q": "Name the genetic phenomenon in trinucleotide repeat disorders where disease onset becomes progressively earlier and more severe in successive generations.",
+    "accept": [
+     "Genetic anticipation"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Non-Mendelian Inheritance",
+   "q": "How do Prader-Willi syndrome and Angelman syndrome differ in their molecular pathogenesis despite both involving deletions or imprinting defects of chromosome 15q11-q13?",
+   "options": [
+    "Prader-Willi syndrome results from loss of paternally expressed genes, whereas Angelman syndrome results from loss of maternally expressed UBE3A",
+    "Prader-Willi syndrome is caused by mitochondrial DNA deletion, whereas Angelman syndrome is X-linked dominant",
+    "Prader-Willi syndrome results from maternal trisomy 15, whereas Angelman syndrome results from paternal trisomy 15",
+    "Prader-Willi syndrome affects only females, whereas Angelman syndrome affects only males"
+   ],
+   "answer": 0,
+   "explain": "Both disorders exemplify genomic imprinting on 15q11-q13: paternal deletion (or maternal uniparental disomy) silences paternally active genes causing Prader-Willi syndrome (hypotonia, hyperphagia, obesity), whereas maternal deletion (or paternal UPD) loses the maternally expressed UBE3A gene causing Angelman syndrome (ataxia, seizures, inappropriate laughter).",
+   "verified": false,
+   "open": {
+    "q": "Explain how parental origin distinguishes Prader-Willi syndrome from Angelman syndrome at chromosome 15q11-q13.",
+    "accept": [
+     "Prader-Willi is due to loss of paternal genes while Angelman is due to loss of maternal genes",
+     "Paternal 15q11-q13 loss causes Prader-Willi; maternal 15q11-q13 loss causes Angelman"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-030",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Non-Mendelian Inheritance",
+   "q": "Why are disorders caused by mutations in mitochondrial DNA (such as Leber hereditary optic neuropathy and MELAS) transmitted exclusively by affected mothers to all of their children?",
+   "options": [
+    "Oocytes contribute virtually all cytoplasm and mitochondria to the zygote, whereas sperm mitochondria are degraded",
+    "Mitochondrial genes are located on the short arm of the maternal X chromosome",
+    "Paternal mitochondrial DNA is completely methylated during spermatogenesis",
+    "Male zygotes cannot replicate mitochondrial genomes after fertilization"
+   ],
+   "answer": 0,
+   "explain": "Because the ovum supplies the zygote's cytoplasm and organelles while paternal mitochondria from the sperm midpiece are ubiquitinated and destroyed after fertilization, mitochondrial DNA exhibits strictly maternal inheritance.",
+   "verified": false,
+   "open": {
+    "q": "Why do mitochondrial DNA mutations exhibit strictly maternal inheritance?",
+    "accept": [
+     "All zygote mitochondria are inherited from the oocyte cytoplasm",
+     "Sperm do not contribute mitochondria to the zygote"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-031",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Non-Mendelian Inheritance",
+   "q": "In mitochondrial disorders, cells frequently contain a mixture of both wild-type and mutant mitochondrial DNA molecules, and clinical severity depends on the proportion of mutant genomes in a given tissue. What is this phenomenon called?",
+   "options": [
+    "Heteroplasmy",
+    "Homoplasmy",
+    "Chimerism",
+    "Epistasis"
+   ],
+   "answer": 0,
+   "explain": "Heteroplasmy refers to the coexistence of mutant and normal mitochondrial DNA populations within the same cell or tissue; organs with high oxidative energy demand (brain, skeletal muscle, retina, heart) manifest disease once mutant mtDNA exceeds a threshold.",
+   "verified": false,
+   "open": {
+    "q": "Name the coexistence of both normal and mutated mitochondrial DNA molecules within the same cell.",
+    "accept": [
+     "Mitochondrial heteroplasmy"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-032",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Multifactorial Inheritance and Molecular Diagnosis",
+   "q": "Which of the following congenital malformations and common chronic diseases follows multifactorial (polygenic plus environmental) inheritance rather than single-gene Mendelian inheritance?",
+   "options": [
+    "Cleft lip and palate, neural tube defects, and essential hypertension",
+    "Achondroplasia, Marfan syndrome, and Huntington disease",
+    "Sickle cell anaemia, cystic fibrosis, and Tay-Sachs disease",
+    "Haemophilia A, Duchenne muscular dystrophy, and red-green colour blindness"
+   ],
+   "answer": 0,
+   "explain": "Multifactorial traits result from the additive effects of multiple susceptibility alleles interacting with environmental triggers (such as periconceptional folate deficiency in neural tube defects, or diet/obesity in type 2 diabetes and hypertension).",
+   "verified": false,
+   "open": {
+    "q": "Give two examples of human diseases or congenital malformations that follow multifactorial (polygenic and environmental) inheritance.",
+    "accept": [
+     "Neural tube defects and cleft lip/palate",
+     "Type 2 diabetes mellitus and essential hypertension",
+     "Pyloric stenosis and congenital heart defects"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-033",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Multifactorial Inheritance and Molecular Diagnosis",
+   "q": "Which cytogenetic diagnostic technique uses fluorescently labelled DNA probes hybridized directly to metaphase chromosomes or interphase nuclei to detect microdeletions (such as 22q11.2) and gene amplifications (such as HER2)?",
+   "options": [
+    "Fluorescence in situ hybridization (FISH)",
+    "Western blotting",
+    "Enzyme-linked immunosorbent assay (ELISA)",
+    "Flow cytometry forward scatter"
+   ],
+   "answer": 0,
+   "explain": "FISH utilizes locus-specific fluorescent DNA probes that bind complementary target sequences on chromosomes, enabling rapid detection of submicroscopic microdeletions, chromosomal translocations, and aneuploidies even in non-dividing interphase cells.",
+   "verified": false,
+   "open": {
+    "q": "Name the molecular cytogenetic technique that uses fluorescently labelled DNA probes on metaphase or interphase chromosomes to detect submicroscopic microdeletions and gene amplifications.",
+    "accept": [
+     "FISH",
+     "Fluorescent in situ hybridization"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-034",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Multifactorial Inheritance and Molecular Diagnosis",
+   "q": "Which prenatal diagnostic procedure samples placental trophoblastic villi between 10 and 12 weeks of gestation to allow earlier fetal karyotyping and DNA analysis than second-trimester amniocentesis?",
+   "options": [
+    "Chorionic villus sampling (CVS)",
+    "Cordocentesis",
+    "Fetoscopy",
+    "Maternal serum alpha-fetoprotein assay"
+   ],
+   "answer": 0,
+   "explain": "Chorionic villus sampling obtains chorionic villi transcervically or transabdominally at 10-12 weeks of gestation, yielding rapidly dividing trophoblast cells for first-trimester chromosomal and molecular genetic testing.",
+   "verified": false,
+   "open": {
+    "q": "Name the first-trimester invasive prenatal diagnostic procedure performed at 10 to 12 weeks of gestation by biopsying placental villi.",
+    "accept": [
+     "CVS",
+     "Chorionic villus biopsy"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-035",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Multifactorial Inheritance and Molecular Diagnosis",
+   "q": "Which enzyme isolated from Thermus aquaticus enables repeated high-temperature denaturation cycles during the polymerase chain reaction (PCR) to amplify specific target DNA sequences?",
+   "options": [
+    "Taq DNA polymerase",
+    "Reverse transcriptase",
+    "DNA ligase",
+    "Restriction endonuclease EcoRI"
+   ],
+   "answer": 0,
+   "explain": "Taq polymerase is a thermostable DNA-dependent DNA polymerase that withstands 94-95 degrees Celsius denaturation steps without losing catalytic activity, allowing exponential amplification of minute DNA samples.",
+   "verified": false,
+   "open": {
+    "q": "Name the thermostable DNA polymerase enzyme used in the polymerase chain reaction (PCR) to withstand repeated 95 degree Celsius denaturation steps.",
+    "accept": [
+     "Taq polymerase",
+     "Thermus aquaticus DNA polymerase"
+    ]
+   }
+  },
+  {
+   "id": "pag-genetic-basis-of-disease-036",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Multifactorial Inheritance and Molecular Diagnosis",
+   "q": "Southern blot analysis is classically required alongside PCR when diagnosing Fragile X syndrome because PCR across very large CGG trinucleotide expansions (>200 repeats) often fails due to high GC content. What property does Southern blotting directly assess in Fragile X syndrome?",
+   "options": [
+    "Both repeat expansion size and FMR1 promoter methylation status",
+    "Serum levels of free unbound FMRP protein",
+    "Mitochondrial heteroplasmy percentage in leukocytes",
+    "Complete amino acid sequence of the dystrophin rod domain"
+   ],
+   "answer": 0,
+   "explain": "Using methylation-sensitive restriction enzymes on genomic DNA, Southern blotting simultaneously measures full CGG repeat expansion length and detects hypermethylation silencing of the FMR1 promoter.",
+   "verified": false,
+   "open": {
+    "q": "Which two molecular features of the FMR1 locus in Fragile X syndrome are simultaneously detected by Southern blot analysis?",
+    "accept": [
+     "CGG repeat expansion size and promoter methylation",
+     "Repeat length and DNA methylation status"
+    ]
+   }
+  }
+ ]
+}

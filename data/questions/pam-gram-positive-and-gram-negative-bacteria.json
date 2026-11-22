@@ -1,0 +1,698 @@
+{
+ "topic": "pam-gram-positive-and-gram-negative-bacteria",
+ "questions": [
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram Stain Mechanism and Cell Wall Architecture",
+   "q": "Which structural difference in bacterial cell envelopes primarily accounts for the retention of the crystal violet-iodine complex by Gram-positive bacteria during acetone-alcohol decolorization?",
+   "options": [
+    "A thick, multi-layered cross-linked peptidoglycan meshwork that dehydrates and shrinks upon alcohol exposure",
+    "An outer membrane rich in lipopolysaccharide (LPS) that traps crystal violet inside the periplasm",
+    "High concentrations of mycolic acids covalently linked to arabinogalactan",
+    "Absence of a cytoplasmic phospholipid bilayer"
+   ],
+   "answer": 0,
+   "explain": "Gram-positive bacteria possess a thick peptidoglycan layer (20–80 nm) containing teichoic acids; alcohol dehydrates this dense meshwork and closes its pores, trapping the large crystal violet-iodine complex, whereas alcohol dissolves the lipid outer membrane of Gram-negative bacteria and washes the dye out of their thin peptidoglycan layer.",
+   "verified": false,
+   "open": {
+    "q": "Why do Gram-positive bacteria retain the crystal violet-iodine dye complex after alcohol-acetone decolorization whereas Gram-negative bacteria are decolorized?",
+    "accept": [
+     "Thick peptidoglycan layer dehydrates and traps the crystal violet-iodine complex",
+     "Thick multilayered peptidoglycan shrinks in alcohol while Gram-negative outer membrane dissolves"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram Stain Mechanism and Cell Wall Architecture",
+   "q": "Which cell envelope component is unique to Gram-negative bacteria and contains lipid A, the toxic moiety responsible for triggering septic shock via Toll-like receptor 4 (TLR4)?",
+   "options": [
+    "Lipopolysaccharide (LPS / endotoxin)",
+    "Lipoteichoic acid",
+    "Peptidoglycan pentaglycine cross-bridge",
+    "Poly-D-glutamic acid capsule"
+   ],
+   "answer": 0,
+   "explain": "Lipopolysaccharide (endotoxin) is anchored in the outer leaflet of the Gram-negative outer membrane by its hydrophobic lipid A domain; upon bacterial lysis or division, lipid A binds CD14/MD-2/TLR4 on macrophages to trigger massive release of TNF-alpha, IL-1, and IL-6.",
+   "verified": false,
+   "open": {
+    "q": "Name the Gram-negative outer membrane glycolipid whose lipid A moiety acts as endotoxin and binds TLR4 on host macrophages.",
+    "accept": [
+     "Lipopolysaccharide",
+     "LPS",
+     "Endotoxin"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram Stain Mechanism and Cell Wall Architecture",
+   "q": "Which negatively charged amphiphilic polymers are anchored to the cytoplasmic membrane or peptidoglycan of Gram-positive bacteria, contributing to cell wall rigidity, cation homeostasis, and adherence to mucosal surfaces?",
+   "options": [
+    "Teichoic and lipoteichoic acids",
+    "Porins (OmpF and OmpC)",
+    "Lipooligosaccharides (LOS)",
+    "Dipicolinic acid chelates"
+   ],
+   "answer": 0,
+   "explain": "Teichoic acids (polymers of glycerol phosphate or ribitol phosphate) and membrane-anchored lipoteichoic acids are unique to Gram-positive cell walls and serve as major surface antigens and TLR2 ligands.",
+   "verified": false,
+   "open": {
+    "q": "Name the phosphate-containing cell wall polymers unique to Gram-positive bacteria that anchor to peptidoglycan or the plasma membrane.",
+    "accept": [
+     "Teichoic acids",
+     "Lipoteichoic acid",
+     "Teichoic and lipoteichoic acids"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-004",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram Stain Mechanism and Cell Wall Architecture",
+   "q": "Why are Gram-negative bacilli intrinsically resistant to large hydrophilic glycopeptide antibiotics such as vancomycin?",
+   "options": [
+    "Vancomycin molecules are too large to pass through the narrow water-filled outer membrane porin channels to reach peptidoglycan precursors",
+    "Gram-negative bacteria completely lack D-alanyl-D-alanine termini in their peptidoglycan",
+    "Gram-negative bacteria secrete periplasmic vancomycinases that cleave the drug",
+    "Vancomycin binds exclusively to lipopolysaccharide O-antigen side chains"
+   ],
+   "answer": 0,
+   "explain": "Vancomycin has a high molecular weight (~1450 Da) that prevents diffusion across the lipid bilayer or through the small beta-barrel porins of the Gram-negative outer membrane, restricting its spectrum to Gram-positive organisms.",
+   "verified": false,
+   "open": {
+    "q": "What structural feature of Gram-negative bacteria renders them intrinsically resistant to vancomycin?",
+    "accept": [
+     "Outer membrane excludes large vancomycin molecules from passing through porins",
+     "Impermeable outer membrane barrier"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Positive Cocci: Staphylococci",
+   "q": "Which rapid biochemical bench test reliably distinguishes Staphylococcus species from Streptococcus and Enterococcus species?",
+   "options": [
+    "Catalase test (staphylococci are catalase-positive; streptococci are catalase-negative)",
+    "Oxidase test (staphylococci are oxidase-positive; streptococci are oxidase-negative)",
+    "Urease test (staphylococci rapidly hydrolyze urea within 5 minutes)",
+    "Indole test (staphylococci produce a red ring with Kovac reagent)"
+   ],
+   "answer": 0,
+   "explain": "Staphylococci produce the enzyme catalase, which breaks down 3% hydrogen peroxide into water and oxygen gas bubbles, whereas streptococci and enterococci lack catalase.",
+   "verified": false,
+   "open": {
+    "q": "Name the rapid enzyme test used in the microbiology laboratory to separate catalase-positive staphylococci from catalase-negative streptococci.",
+    "accept": [
+     "Catalase test",
+     "Hydrogen peroxide catalase test"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Positive Cocci: Staphylococci",
+   "q": "Which virulence factor produced exclusively by Staphylococcus aureus converts soluble plasma fibrinogen into an insoluble fibrin clot around the bacteria, differentiating it from Staphylococcus epidermidis and Staphylococcus saprophyticus?",
+   "options": [
+    "Coagulase",
+    "Streptokinase",
+    "Hyaluronidase",
+    "Lecithinase"
+   ],
+   "answer": 0,
+   "explain": "Staphylococcus aureus produces both bound coagulase (clumping factor) and free coagulase (staphylocoagulase, which binds prothrombin to form staphylothrombin), distinguishing it from coagulase-negative staphylococci.",
+   "verified": false,
+   "open": {
+    "q": "Name the key diagnostic enzyme that differentiates Staphylococcus aureus from coagulase-negative staphylococci.",
+    "accept": [
+     "Coagulase",
+     "Staphylocoagulase"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Positive Cocci: Staphylococci",
+   "q": "How does Protein A on the surface of Staphylococcus aureus help the bacterium evade humoral immunity and opsonophagocytosis?",
+   "options": [
+    "It binds the Fc region of human IgG antibodies in the wrong orientation, preventing Fc-receptor recognition by neutrophils and blocking classical complement activation",
+    "It cleaves secretory IgA into monomeric Fab fragments at mucosal surfaces",
+    "It degrades C5a anaphylatoxin before neutrophils can migrate to the abscess",
+    "It coats the bacterium in host sialic acid identical to red blood cells"
+   ],
+   "answer": 0,
+   "explain": "Staphylococcal Protein A binds the Fc gamma domain of IgG1, IgG2, and IgG4, inverting the antibody so its Fab arms face outward and blocking phagocyte Fc-gamma receptor binding and C1q fixation.",
+   "verified": false,
+   "open": {
+    "q": "What is the antiphagocytic mechanism of Staphylococcus aureus cell-wall Protein A?",
+    "accept": [
+     "Binds the Fc portion of IgG to prevent opsonization and complement fixation",
+     "Binds IgG Fc region"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Positive Cocci: Staphylococci",
+   "q": "What is the molecular mechanism of methicillin resistance in methicillin-resistant Staphylococcus aureus (MRSA)?",
+   "options": [
+    "Acquisition of the mecA gene encoding an altered penicillin-binding protein (PBP2a) with markedly reduced affinity for beta-lactam antibiotics",
+    "Hyperproduction of a plasmid-encoded narrow-spectrum penicillinase inhibited by clavulanate",
+    "Overexpression of multi-drug efflux pumps that expel vancomycin from the cytoplasm",
+    "Substitution of D-alanyl-D-lactate in peptidoglycan precursors"
+   ],
+   "answer": 0,
+   "explain": "MRSA carries the SCCmec chromosomal cassette containing mecA, which encodes PBP2a—a transpeptidase that continues cross-linking peptidoglycan even when native PBPs are inhibited by penicillins and cephalosporins (except fifth-generation ceftaroline).",
+   "verified": false,
+   "open": {
+    "q": "Name the gene and altered target protein responsible for beta-lactam resistance in methicillin-resistant Staphylococcus aureus (MRSA).",
+    "accept": [
+     "mecA gene encoding PBP2a",
+     "PBP2a (penicillin-binding protein 2a)"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-009",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Gram-Positive Cocci: Staphylococci",
+   "q": "A 20-year-old woman presents with high fever (39.8 degrees Celsius), hypotension (80/50 mmHg), watery diarrhoea, conjunctival hyperaemia, and a diffuse sunburn-like macular erythroderma that desquamates on her palms and soles 10 days later. Blood cultures are negative. Which bacterial toxin acts as a superantigen to trigger this syndrome?",
+   "options": [
+    "Toxic shock syndrome toxin-1 (TSST-1) produced by Staphylococcus aureus",
+    "Tetanospasmin produced by Clostridium tetani",
+    "Heat-labile enterotoxin (LT) produced by enterotoxigenic Escherichia coli",
+    "Exotoxin A produced by Pseudomonas aeruginosa"
+   ],
+   "answer": 0,
+   "explain": "TSST-1 is a staphylococcal superantigen that cross-links MHC class II molecules on antigen-presenting cells directly to the V-beta region of T-cell receptors without antigen processing, polyclonally activating up to 20% of T cells to release a massive cytokine storm (TNF-alpha, IL-1, IL-2, IFN-gamma).",
+   "verified": false,
+   "open": {
+    "q": "Name the staphylococcal superantigen toxin responsible for menstrual and non-menstrual toxic shock syndrome.",
+    "accept": [
+     "TSST-1",
+     "Toxic shock syndrome toxin-1"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Positive Cocci: Streptococci and Enterococci",
+   "q": "Which pair of laboratory tests reliably identifies Streptococcus pyogenes (Group A beta-haemolytic streptococcus) and distinguishes it from other beta-haemolytic streptococci?",
+   "options": [
+    "Bacitracin sensitivity and positive PYR (pyrrolidonyl arylamidase) test",
+    "Optochin sensitivity and positive bile solubility test",
+    "Growth in 6.5% NaCl broth and positive hippurate hydrolysis",
+    "Novobiocin resistance and positive coagulase test"
+   ],
+   "answer": 0,
+   "explain": "Streptococcus pyogenes (Lancefield Group A) shows wide beta-haemolysis on sheep blood agar, is susceptible to a low-concentration bacitracin disc (0.04 U), and is PYR-positive (whereas Streptococcus agalactiae is bacitracin-resistant and CAMP-test positive).",
+   "verified": false,
+   "open": {
+    "q": "Name two phenotypic bench tests used to identify beta-haemolytic Streptococcus pyogenes (Group A streptococcus).",
+    "accept": [
+     "Bacitracin sensitivity and PYR test",
+     "Bacitracin susceptibility and Lancefield Group A grouping"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Positive Cocci: Streptococci and Enterococci",
+   "q": "Which alpha-haemolytic, lancet-shaped Gram-positive diplococcus is the leading cause of community-acquired lobar pneumonia, bacterial meningitis in adults, and acute otitis media, and is identified by optochin sensitivity and bile solubility?",
+   "options": [
+    "Streptococcus pneumoniae",
+    "Streptococcus mutans",
+    "Enterococcus faecalis",
+    "Staphylococcus epidermidis"
+   ],
+   "answer": 0,
+   "explain": "Streptococcus pneumoniae is an encapsulated alpha-haemolytic diplococcus whose polysaccharide capsule is its primary virulence factor (demonstrated by the Quellung capsular swelling reaction); it is lysed by bile salts (sodium deoxycholate) and inhibited by optochin.",
+   "verified": false,
+   "open": {
+    "q": "Name the encapsulated alpha-haemolytic Gram-positive diplococcus that is optochin-sensitive and bile-soluble.",
+    "accept": [
+     "Streptococcus pneumoniae",
+     "Pneumococcus"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Positive Cocci: Streptococci and Enterococci",
+   "q": "Which characteristic property allows Enterococcus faecalis and Enterococcus faecium to survive harsh hospital environments, colonize the biliary and urinary tracts, and be differentiated from non-enterococcal Group D streptococci (such as Streptococcus gallolyticus)?",
+   "options": [
+    "Ability to hydrolyze esculin in the presence of 40% bile and grow in hypertonic 6.5% sodium chloride broth",
+    "Requirement for X (haemin) and V (NAD) growth factors on chocolate agar",
+    "Strict obligate anaerobic growth inhibited by 1% oxygen",
+    "Production of bright blue-green pyocyanin pigment on Mueller-Hinton agar"
+   ],
+   "answer": 0,
+   "explain": "Both enterococci and Group D streptococci are bile-esculin positive (turning the medium black), but only Enterococcus species grow in 6.5% NaCl broth and are PYR-positive.",
+   "verified": false,
+   "open": {
+    "q": "Which two classic physiological growth tests differentiate Enterococcus species from non-enterococcal Group D streptococci?",
+    "accept": [
+     "Bile-esculin hydrolysis and growth in 6.5% NaCl",
+     "Growth in 6.5% NaCl and PYR test"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Positive Bacilli: Spore-Forming and Non-Spore-Forming",
+   "q": "Bacillus anthracis is unique among medically important bacteria because its antiphagocytic capsule is composed of which polymer rather than polysaccharide?",
+   "options": [
+    "Poly-D-glutamic acid (polypeptide)",
+    "Hyaluronic acid",
+    "Sialic acid (N-acetylneuraminic acid)",
+    "Polyribosyl ribitol phosphate"
+   ],
+   "answer": 0,
+   "explain": "Bacillus anthracis, a large Gram-positive spore-forming rod with squared-off ends ('boxcar' appearance), possesses a plasmid-encoded (pXO2) polypeptide capsule made of poly-D-glutamic acid and secretes oedema toxin and lethal toxin (pXO1).",
+   "verified": false,
+   "open": {
+    "q": "What is the unique chemical composition of the antiphagocytic capsule of Bacillus anthracis?",
+    "accept": [
+     "Poly-D-glutamic acid",
+     "Polypeptide of D-glutamic acid"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-014",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Positive Bacilli: Spore-Forming and Non-Spore-Forming",
+   "q": "How do the neurotoxins of Clostridium tetani (tetanospasmin) and Clostridium botulinum (botulinum toxin) produce opposite clinical forms of paralysis despite both being zinc-dependent metalloproteases that cleave SNARE proteins?",
+   "options": [
+    "Tetanospasmin blocks inhibitory glycine and GABA release in spinal Renshaw interneurons (spastic paralysis), whereas botulinum toxin blocks excitatory acetylcholine release at peripheral neuromuscular junctions (flaccid paralysis)",
+    "Tetanospasmin destroys skeletal muscle actin filaments, whereas botulinum toxin stimulates nicotinic receptors continuously",
+    "Tetanospasmin acts exclusively on cardiac Purkinje fibres, whereas botulinum toxin acts on renal tubular cells",
+    "Tetanospasmin blocks voltage-gated sodium channels, whereas botulinum toxin opens chloride channels in the cerebellum"
+   ],
+   "answer": 0,
+   "explain": "Botulinum toxin remains in the periphery and cleaves SNARE proteins (synaptobrevin, SNAP-25, syntaxin) at cholinergic motor nerve terminals, preventing ACh exocytosis (descending flaccid paralysis); tetanospasmin undergoes retrograde axonal transport to the spinal cord and cleaves synaptobrevin in inhibitory interneurons, preventing GABA/glycine release (rigid spastic paralysis, trismus, opisthotonus).",
+   "verified": false,
+   "open": {
+    "q": "Contrast the neurotransmitter blocked and the resulting type of muscle paralysis caused by Clostridium tetani tetanospasmin versus Clostridium botulinum toxin.",
+    "accept": [
+     "Tetanospasmin blocks inhibitory GABA/glycine causing spastic paralysis; botulinum toxin blocks acetylcholine causing flaccid paralysis",
+     "Inhibitory GABA/glycine (spastic) vs excitatory acetylcholine (flaccid)"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-015",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Gram-Positive Bacilli: Spore-Forming and Non-Spore-Forming",
+   "q": "A 68-year-old hospitalized patient treated for 10 days with clindamycin develops profuse foul-smelling watery diarrhoea, fever, and leukocytosis. Sigmoidoscopy reveals raised yellow-white mucosal plaques coalescing over the colonic mucosa. Which anaerobic Gram-positive spore-forming bacillus is responsible?",
+   "options": [
+    "Clostridioides difficile",
+    "Clostridium perfringens",
+    "Listeria monocytogenes",
+    "Corynebacterium diphtheriae"
+   ],
+   "answer": 0,
+   "explain": "Broad-spectrum antibiotics (such as clindamycin, fluoroquinolones, and cephalosporins) disrupt normal colonic microbiota, allowing Clostridioides difficile overgrowth and secretion of enterotoxin A and cytotoxin B, which glucosylate Rho GTPases, disrupt the actin cytoskeleton, and cause pseudomembranous colitis.",
+   "verified": false,
+   "open": {
+    "q": "Name the spore-forming anaerobic Gram-positive rod that causes antibiotic-associated pseudomembranous colitis via toxins A and B.",
+    "accept": [
+     "Clostridioides difficile",
+     "Clostridium difficile",
+     "C. difficile"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-016",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Positive Bacilli: Spore-Forming and Non-Spore-Forming",
+   "q": "How does diphtheria exotoxin, produced by lysogenic beta-prophage-infected Corynebacterium diphtheriae, kill host pharyngeal and myocardial cells?",
+   "options": [
+    "Its catalytic A subunit ADP-ribosylates host elongation factor-2 (EF-2), irreversibly halting ribosomal protein synthesis",
+    "It inserts transmembrane beta-barrel pores into erythrocyte membranes causing intravascular haemolysis",
+    "It activates adenylate cyclase to elevate intracellular cAMP and trigger watery diarrhoea",
+    "It degrades phosphatidylcholine in cell membranes via lecithinase C activity"
+   ],
+   "answer": 0,
+   "explain": "Diphtheria toxin is an A-B exotoxin encoded by the tox gene of a temperate bacteriophage; the B subunit binds heparin-binding EGF-like growth factor on host cells, and the A subunit transfers ADP-ribose from NAD+ onto diphthamide of EF-2, shutting down translation and causing pseudomembranous pharyngitis and myocarditis.",
+   "verified": false,
+   "open": {
+    "q": "What is the intracellular molecular target inactivated by ADP-ribosylation by Corynebacterium diphtheriae exotoxin?",
+    "accept": [
+     "Elongation factor-2",
+     "EF-2",
+     "eEF2"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Positive Bacilli: Spore-Forming and Non-Spore-Forming",
+   "q": "Which facultative intracellular Gram-positive coccobacillus exhibits characteristic tumbling motility at room temperature (22–25 degrees Celsius), grows at refrigerator temperatures (4 degrees Celsius), and causes neonatal meningitis, septic abortion, and meningitis in immunocompromised adults?",
+   "options": [
+    "Listeria monocytogenes",
+    "Bacillus cereus",
+    "Nocardia asteroides",
+    "Actinomyces israelii"
+   ],
+   "answer": 0,
+   "explain": "Listeria monocytogenes is transmitted via unpasteurized dairy or cold deli meats; it escapes phagosomes using listeriolysin O and polymerizes host actin ('actin rockets') via ActA to spread directly from cell to cell without exposure to extracellular antibodies.",
+   "verified": false,
+   "open": {
+    "q": "Name the facultative intracellular Gram-positive rod capable of cold enrichment at 4 degrees Celsius that causes neonatal meningitis and listeriosis in pregnancy.",
+    "accept": [
+     "Listeria monocytogenes",
+     "Listeria"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Negative Cocci: Neisseria",
+   "q": "How can Neisseria meningitidis be differentiated biochemically from Neisseria gonorrhoeae in the clinical microbiology laboratory?",
+   "options": [
+    "Neisseria meningitidis ferments both glucose and maltose, whereas Neisseria gonorrhoeae ferments glucose only",
+    "Neisseria meningitidis is oxidase-negative, whereas Neisseria gonorrhoeae is oxidase-positive",
+    "Neisseria meningitidis is Gram-positive, whereas Neisseria gonorrhoeae is Gram-negative",
+    "Neisseria meningitidis grows on plain nutrient agar at 15 degrees Celsius, whereas Neisseria gonorrhoeae is strictly anaerobic"
+   ],
+   "answer": 0,
+   "explain": "Both pathogenic Neisseria species are oxidase-positive Gram-negative kidney-bean-shaped diplococci isolated on selective Thayer-Martin chocolate agar; carbohydrate utilization testing distinguishes them because N. meningitidis oxidizes both Maltose and Glucose (M+G), while N. gonorrhoeae oxidizes Glucose only (G).",
+   "verified": false,
+   "open": {
+    "q": "Which carbohydrate utilization test differentiates Neisseria meningitidis from Neisseria gonorrhoeae?",
+    "accept": [
+     "Maltose fermentation (N. meningitidis ferments glucose and maltose; N. gonorrhoeae ferments glucose only)",
+     "Maltose utilization"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Negative Cocci: Neisseria",
+   "q": "Why does Neisseria gonorrhoeae lack a polysaccharide capsule yet repeatedly evade host humoral immunity, causing recurrent reinfection and thwarting vaccine development?",
+   "options": [
+    "High-frequency antigenic and phase variation of surface pilin proteins and Opa outer membrane proteins, plus secretion of IgA1 protease",
+    "Production of a poly-D-glutamic acid capsule identical to Bacillus anthracis",
+    "Exclusive intracellular replication inside circulating mature erythrocytes",
+    "Complete absence of surface outer membrane proteins"
+   ],
+   "answer": 0,
+   "explain": "Neisseria gonorrhoeae undergoes gene conversion between silent pilS loci and the expressed pilE locus to generate millions of antigenically distinct pilus variants, alongside slipped-strand mispairing of Opa proteins and cleavage of mucosal secretory IgA1.",
+   "verified": false,
+   "open": {
+    "q": "Which genetic mechanism enables Neisseria gonorrhoeae to constantly alter its surface pilus proteins and evade host antibody responses?",
+    "accept": [
+     "Antigenic variation via recombination of silent pilS genes into the expressed pilE locus",
+     "High-frequency antigenic and phase variation of pili and Opa proteins"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
+   "q": "Which universal biochemical features characterize all members of the family Enterobacteriaceae (such as Escherichia, Klebsiella, Salmonella, Shigella, and Proteus)?",
+   "options": [
+    "Facultative anaerobic Gram-negative rods that ferment glucose, reduce nitrates to nitrites, and are cytochrome oxidase-negative",
+    "Strictly aerobic Gram-negative rods that are oxidase-positive and fail to ferment glucose",
+    "Spore-forming Gram-positive rods that require 10% carbon dioxide for growth",
+    "Acid-fast bacilli rich in mycolic acids that divide every 24 hours"
+   ],
+   "answer": 0,
+   "explain": "All Enterobacteriaceae are oxidase-negative, catalase-positive, glucose-fermenting, nitrate-reducing facultative anaerobic Gram-negative bacilli; MacConkey agar further subdivides them into lactose fermenters (pink colonies: E. coli, Klebsiella, Enterobacter) and non-lactose fermenters (colourless colonies: Salmonella, Shigella, Proteus).",
+   "verified": false,
+   "open": {
+    "q": "State three defining biochemical characteristics shared by all members of the family Enterobacteriaceae.",
+    "accept": [
+     "Glucose fermentation, nitrate reduction to nitrite, and oxidase-negative",
+     "Oxidase-negative, glucose-fermenting, and nitrate-reducing"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
+   "q": "Enterohaemorrhagic Escherichia coli (EHEC, notably serotype O157:H7) causes bloody diarrhoea without fever and can trigger haemolytic uraemic syndrome (HUS) in children via which mechanism?",
+   "options": [
+    "Secretion of Shiga-like toxin (verotoxin) that cleaves the 28S rRNA of the 60S eukaryotic ribosomal subunit, halting protein synthesis in glomerular endothelial cells",
+    "Activation of guanylate cyclase by heat-stable toxin (ST) causing watery secretory diarrhoea",
+    "Direct invasion of ileal Peyer patches and dissemination inside splenic macrophages",
+    "Hydrolysis of urinary urea into ammonia with formation of struvite stones"
+   ],
+   "answer": 0,
+   "explain": "EHEC O157:H7 (which does not ferment sorbitol) produces phage-encoded Shiga-like toxins (Stx1/Stx2) that inactivate 60S ribosomes, damaging colonic mucosa and renal glomerular endothelium to produce the HUS triad of microangiopathic haemolytic anaemia, thrombocytopenia, and acute kidney injury.",
+   "verified": false,
+   "open": {
+    "q": "Name the toxin produced by enterohaemorrhagic E. coli (O157:H7) and describe its molecular mechanism of cytotoxicity in haemolytic uraemic syndrome.",
+    "accept": [
+     "Shiga-like toxin (verotoxin) which inactivates the 60S ribosomal subunit (28S rRNA) to inhibit protein synthesis",
+     "Shiga toxin inhibiting 60S ribosomes"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
+   "q": "Which key microbiological and pathogenic features distinguish Salmonella enterica serovar Typhi from Shigella species on selective enteric media (such as XLD or Hektoen enteric agar) and in vivo?",
+   "options": [
+    "Salmonella Typhi is motile, produces hydrogen sulphide (H2S), has a Vi polysaccharide capsule, and invades bloodstream macrophages, whereas Shigella is non-motile, H2S-negative, lacks flagella, and invades colonic mucosa locally via M cells",
+    "Salmonella Typhi is a rapid lactose fermenter, whereas Shigella produces bright green metallic sheen on EMB agar",
+    "Salmonella Typhi causes disease solely via preformed heat-stable enterotoxin, whereas Shigella causes typhoid fever",
+    "Salmonella Typhi is urease-positive and swarms across blood agar, whereas Shigella is oxidase-positive"
+   ],
+   "answer": 0,
+   "explain": "Both are non-lactose fermenters; however, Salmonella Typhi has peritrichous flagella (motile), produces H2S (black-centred colonies), requires a high infectious dose (~10^5 organisms), and disseminates systemically (typhoid/enteric fever), whereas non-motile Shigella requires a tiny infectious dose (10–100 organisms) and causes bacillary dysentery.",
+   "verified": false,
+   "open": {
+    "q": "Give three laboratory or pathogenic differences between Salmonella Typhi and Shigella species.",
+    "accept": [
+     "Salmonella is motile, H2S-positive, and causes systemic bacteraemia; Shigella is non-motile, H2S-negative, and stays confined to colonic mucosa",
+     "Motility, H2S production, and systemic vs mucosal invasion"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-023",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
+   "q": "Klebsiella pneumoniae classically produces large, glistening mucoid colonies on MacConkey agar and causes severe necrotizing lobar pneumonia with 'currant-jelly' sputum in alcoholics and diabetics due to which prominent virulence factor?",
+   "options": [
+    "A thick, abundant antiphagocytic polysaccharide capsule",
+    "Peritrichous flagella responsible for swarming motility",
+    "Exotoxin A that ADP-ribosylates elongation factor-2",
+    "Cytotoxin-associated gene A (CagA) injected via a type IV secretion system"
+   ],
+   "answer": 0,
+   "explain": "Klebsiella pneumoniae is a non-motile, lactose-fermenting encapsulated rod; its thick mucoid polysaccharide capsule inhibits macrophage phagocytosis and complement-mediated killing, producing thick, blood-tinged mucoid ('currant-jelly') sputum.",
+   "verified": false,
+   "open": {
+    "q": "Which structural virulence factor gives Klebsiella pneumoniae its characteristic mucoid colony appearance and drives severe necrotizing pneumonia?",
+    "accept": [
+     "Thick polysaccharide capsule",
+     "Antiphagocytic polysaccharide capsule"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
+   "q": "Proteus mirabilis exhibits characteristic concentric 'swarming' waves on blood agar and strongly predisposes patients with urinary tract infections to magnesium ammonium phosphate (struvite) staghorn renal calculi via which enzyme?",
+   "options": [
+    "Urease (which hydrolyzes urea into ammonia and carbon dioxide, alkalinizing urine)",
+    "Coagulase",
+    "Neuraminidase",
+    "Collagenase"
+   ],
+   "answer": 0,
+   "explain": "Proteus mirabilis produces potent urease that splits urinary urea into ammonia, raising urinary pH above 8 and precipitating calcium carbonate apatite and magnesium ammonium phosphate (struvite) crystals.",
+   "verified": false,
+   "open": {
+    "q": "Name the enzyme produced by Proteus mirabilis that alkalinizes urine and promotes formation of struvite (magnesium ammonium phosphate) renal stones.",
+    "accept": [
+     "Urease"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
+   "q": "Vibrio cholerae, a curved, comma-shaped, oxidase-positive Gram-negative rod with a single polar flagellum that grows as yellow sucrose-fermenting colonies on TCBS agar, causes massive painless 'rice-water' secretory diarrhoea through which mechanism?",
+   "options": [
+    "Cholera toxin A subunit ADP-ribosylates the Gs-alpha regulatory protein in enterocytes, permanently activating adenylate cyclase to elevate cAMP and drive CFTR-mediated chloride and water efflux",
+    "Cholera toxin cleaves tight junction occludin proteins to cause haemorrhagic mucosal ulceration",
+    "Cholera toxin blocks voltage-gated calcium channels in enteric myenteric neurons",
+    "Cholera toxin inhibits hepatic bile salt synthesis in the gallbladder"
+   ],
+   "answer": 0,
+   "explain": "Cholera toxin B subunits bind GM1 ganglioside receptors on small intestinal enterocytes, while the A1 subunit locks Gs-alpha in its active GTP-bound state; sustained high cAMP opens apical CFTR chloride channels and inhibits NaCl absorption, causing isotonic fluid loss up to 1 litre per hour.",
+   "verified": false,
+   "open": {
+    "q": "Explain the intracellular signal-transduction mechanism by which Vibrio cholerae exotoxin triggers profuse watery secretory diarrhoea.",
+    "accept": [
+     "ADP-ribosylation of Gs-alpha constitutively activates adenylate cyclase, raising cAMP and stimulating CFTR chloride and water secretion",
+     "Activates Gs protein and adenylate cyclase to increase cAMP"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-026",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
+   "q": "Which curved, microaerophilic, oxidase-positive Gram-negative rod grows optimally at 42 degrees Celsius on Skirrow or Campy blood agar, is transmitted via undercooked poultry or unpasteurized milk, and is the most frequent infectious antecedent of Guillain-Barre syndrome?",
+   "options": [
+    "Campylobacter jejuni",
+    "Helicobacter pylori",
+    "Yersinia enterocolitica",
+    "Bacteroides fragilis"
+   ],
+   "answer": 0,
+   "explain": "Campylobacter jejuni is a thermophilic (42 degrees C) gull-wing-shaped rod causing invasive inflammatory enterocolitis; antibodies against its surface lipooligosaccharides cross-react with peripheral nerve GM1 gangliosides via molecular mimicry to trigger Guillain-Barre acute inflammatory demyelinating polyneuropathy.",
+   "verified": false,
+   "open": {
+    "q": "Name the thermophilic (42 degree Celsius) curved Gram-negative bacillus that causes inflammatory gastroenteritis and is the leading infectious trigger of Guillain-Barre syndrome.",
+    "accept": [
+     "Campylobacter jejuni",
+     "C. jejuni"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-027",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
+   "q": "How does Helicobacter pylori survive the extreme acidity of the human gastric lumen to colonize the gastric antral mucus layer and cause peptic ulcer disease?",
+   "options": [
+    "It produces abundant urease that hydrolyzes gastric urea into ammonia and carbon dioxide, creating a localized neutral alkaline microenvironment around the bacterium",
+    "It forms heat- and acid-resistant endospores coated in dipicolinic acid",
+    "It invades parietal cells and permanently destroys all gastric H+/K+-ATPase proton pumps",
+    "It secretes thick chitin cell walls identical to gastric fungi"
+   ],
+   "answer": 0,
+   "explain": "Helicobacter pylori (a helical, oxidase-positive, catalase-positive, strongly urease-positive rod) uses rapid urease activity to buffer gastric acid locally—a property exploited diagnostically by the urea breath test and rapid urease (CLO) biopsy test.",
+   "verified": false,
+   "open": {
+    "q": "Which potent enzyme enables Helicobacter pylori to neutralize gastric acid locally and forms the basis of the non-invasive urea breath test?",
+    "accept": [
+     "Urease"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-028",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
+   "q": "A 34-year-old man with severe full-thickness burn wounds develops hospital-acquired sepsis with necrotic haemorrhagic skin lesions (ecthyma gangrenosum). Blood cultures grow a strictly aerobic, non-lactose-fermenting, oxidase-positive Gram-negative rod producing a grape-like odour and blue-green pyocyanin and yellow-green pyoverdine pigments. Identify the organism.",
+   "options": [
+    "Pseudomonas aeruginosa",
+    "Acinetobacter baumannii",
+    "Burkholderia cepacia",
+    "Serratia marcescens"
+   ],
+   "answer": 0,
+   "explain": "Pseudomonas aeruginosa is an opportunistic, oxidase-positive, non-fermenting Gram-negative bacillus that thrives in moist hospital environments, burn wounds, ventilator circuits, and cystic fibrosis airways; it secretes pyocyanin (blue-green), pyoverdine (fluorescent yellow-green), elastase (causing ecthyma gangrenosum), and exotoxin A (inhibiting EF-2).",
+   "verified": false,
+   "open": {
+    "q": "Name the oxidase-positive, non-fermenting Gram-negative rod that produces blue-green pyocyanin pigment and causes ecthyma gangrenosum in burn and neutropenic patients.",
+    "accept": [
+     "Pseudomonas aeruginosa",
+     "P. aeruginosa"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fastidious Gram-Negative Coccobacilli and Anaerobes",
+   "q": "Why does Haemophilus influenzae require chocolate agar (heated blood agar) rather than standard unheated sheep blood agar for primary laboratory isolation?",
+   "options": [
+    "Heating lyses erythrocytes to release intracellular Factor X (haemin) and Factor V (NAD) while inactivating serum NADases that would otherwise destroy Factor V",
+    "Chocolate agar contains 10% sodium chloride required to prevent osmotic lysis of Haemophilus",
+    "Haemophilus influenzae is an obligate intracellular parasite that grows only inside lysed red cell ghosts",
+    "Chocolate agar lowers the pH to 3.5 to inhibit all competing streptococci"
+   ],
+   "answer": 0,
+   "explain": "Haemophilus influenzae requires both haemin (Factor X) and nicotinamide adenine dinucleotide (Factor V); intact sheep red blood cells retain Factor V intracellularly and sheep serum contains NAD-destroying enzymes, both of which are resolved by heating blood agar to make chocolate agar (or by satellitism around Staphylococcus aureus).",
+   "verified": false,
+   "open": {
+    "q": "Which two essential growth factors are supplied by chocolate agar to support the growth of Haemophilus influenzae?",
+    "accept": [
+     "Factor X (haemin) and Factor V (NAD)",
+     "Haemin and NAD",
+     "X and V factors"
+    ]
+   }
+  },
+  {
+   "id": "pam-gram-positive-and-gram-negative-bacteria-030",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fastidious Gram-Negative Coccobacilli and Anaerobes",
+   "q": "Which obligately anaerobic, pleomorphic Gram-negative bacillus constitutes the predominant commensal of the human colon, possesses an antiphagocytic polysaccharide capsule that promotes intra-abdominal abscess formation, and is intrinsically resistant to aminoglycosides?",
+   "options": [
+    "Bacteroides fragilis",
+    "Bordetella pertussis",
+    "Brucella melitensis",
+    "Legionella pneumophila"
+   ],
+   "answer": 0,
+   "explain": "Bacteroides fragilis is the leading anaerobic pathogen in intra-abdominal and pelvic abscesses following bowel perforation; aminoglycosides require oxygen-dependent active transport across the bacterial inner membrane and are therefore completely ineffective against strict anaerobes (which are treated with metronidazole, carbapenems, or beta-lactam/beta-lactamase inhibitors).",
+   "verified": false,
+   "open": {
+    "q": "Name the predominant obligate anaerobic Gram-negative rod of the human colon that causes intra-abdominal abscesses and why aminoglycosides are ineffective against it.",
+    "accept": [
+     "Bacteroides fragilis; aminoglycosides require oxygen-dependent transport across the cytoplasmic membrane",
+     "Bacteroides fragilis; lacks oxygen-dependent uptake for aminoglycosides"
+    ]
+   }
+  }
+ ]
+}
