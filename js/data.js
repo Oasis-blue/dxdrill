@@ -50,6 +50,8 @@ window.DX = window.DX || {};
 
   DX.load = function () {
     DX.questions = []; DX.terms = []; DX.topicById = {}; DX.areaById = {}; DX.subjectById = {};
+    var manP = getJSON("data/manifest.json");   /* fetched at the same time as the curriculum */
+    manP.catch(function () { });
     return getJSON("data/curriculum.json").then(function (cur) {
       DX.curriculum = cur;
       cur.subjects.forEach(function (s) {
@@ -61,7 +63,7 @@ window.DX = window.DX || {};
           });
         });
       });
-      return getJSON("data/manifest.json");
+      return manP;
     }).then(function (man) {
       var jobs = [];
       (man.questions || []).forEach(function (f) {
