@@ -19,20 +19,21 @@
 </head>
 <body>
 <script>
-/* Opening splash: first visit, and again after 6 hours away. Tap to skip. */
+/* Opening splash on every load: the full version on first visit and after 6 hours away, a quick one otherwise. Tap to skip. */
 (function () {
   try {
     var k = "dx.splash", n = Date.now(), l = Number(localStorage.getItem(k)) || 0;
-    if (n - l < 6 * 3600 * 1000 || /[?&]room=/.test(location.search)) return;
-    localStorage.setItem(k, String(n));
+    if (/[?&]room=/.test(location.search)) return;
+    var quick = n - l < 6 * 3600 * 1000;
+    if (!quick) localStorage.setItem(k, String(n));
   } catch (e) { return; }
   var d = document.createElement("div");
-  d.id = "splash"; d.setAttribute("role", "presentation");
+  d.id = "splash"; d.setAttribute("role", "presentation"); if (quick) d.className = "sp-quick";
   d.innerHTML = '<div class="sp-in"><div class="sp-mark" aria-hidden="true"></div><div class="sp-name">DxDrill</div><div class="sp-by">by Mantra</div></div>';
   document.body.insertBefore(d, document.body.firstChild);
   function gone() { if (!d.parentNode) return; d.classList.add("sp-out"); setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 450); }
   d.addEventListener("click", gone);
-  setTimeout(gone, 2200);
+  setTimeout(gone, quick ? 1100 : 2200);
 })();
 </script>
 <header class="bar gutter">
