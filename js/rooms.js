@@ -36,6 +36,9 @@
     if (/too many rooms today/i.test(m)) return "You have made all your rooms for today. Try again tomorrow.";
     if (/busy right now/i.test(m)) return "Lots of groups are playing right now. Try again in a few minutes.";
     if (/need a friend/i.test(m)) return "You need at least 2 players to start. Share the code with a friend first.";
+    if (/cannot change team now/i.test(m)) return "Teams are locked once the quiz has started.";
+    if (/not your turn to describe/i.test(m)) return "It is not your turn to describe in this round.";
+    if (/bad teams|bad count/i.test(m)) return "Check the number of teams (2 to 6) and the question count (50 at most).";
     if (/not open yet/i.test(m)) return "Practice with friends is not open yet.";
     if (/not in room/i.test(m)) return "You are not in this room. Join it with the code.";
     if (/not enough questions/i.test(m)) return "There are not enough questions for that. " + (/have (\d+)/.test(m) ? "Only " + m.match(/have (\d+)/)[1] + " available." : "");
@@ -77,12 +80,12 @@
     if (s.status === "question") { R.deadline = performance.now() + Number(s.secs_left) * 1000; R.startAt = R.deadline - Number(s.sec) * 1000; if (performance.now() < R.startAt) R.inLead = true; }
     var mode = hostOnly(s) ? "all" : "live", fx = DX.fx;
     if (fx && old && old.status !== s.status) {
-      if (s.status === "reveal" && !hostOnly(s)) { var good = s.my_choice != null && s.my_choice === s.right_answer; fx.play(good ? "ok" : "bad", mode); fx.buzz(good ? 15 : 40); }
+      if (s.status === "reveal" && !hostOnly(s)) { var good = s.q_kind === "describe" ? Number(s.my_points) > 0 : (s.my_choice != null && s.my_choice === s.right_answer); fx.play(good ? "ok" : "bad", mode); fx.buzz(good ? 15 : 40); }
       else if (s.status === "finished") fx.play("done", mode);
     }
-    var sig = [s.status, s.cur_idx, s.players, s.answered, s.my_choice, s.is_host].join("|");
+    var sig = [s.status, s.cur_idx, s.players, s.answered, s.my_choice, s.is_host, s.my_team, s.role, (s.team_counts || []).join(","), JSON.stringify(s.describers || ""), R.descDone === s.cur_idx].join("|");
     var changed = sig !== R.sig; R.sig = sig;
-    if (s.status !== (old && old.status) || s.cur_idx !== (old && old.cur_idx)) { R.asked = false; R.board = null; R.cls = null; }
+    if (s.status !== (old && old.status) || s.cur_idx !== (old && old.cur_idx)) { R.asked = false; R.board = null; R.cls = null; R.teamBoard = null; }
     if ((s.status === "reveal" || s.status === "finished") && !R.board) loadBoards(s);
     if (changed) repaint(); else tickNow();
   }
@@ -90,10 +93,11 @@
     var sb = C().sb, id = R.id, st = s.status;
     sb.rpc("room_board", { p_room: id }).then(function (r) { if (!r.error && R.id === id) { R.board = r.data || []; repaint(); } });
     if (st === "finished") sb.rpc("room_class_board", { p_room: id }).then(function (r) { if (!r.error && R.id === id) { R.cls = r.data || []; repaint(); } });
+    if (s.n_teams > 0) sb.rpc("room_team_board", { p_room: id }).then(function (r) { if (!r.error && R.id === id) { R.teamBoard = r.data || []; repaint(); } });
     R.board = R.board || [];
   }
   function enter(id, code) {
-    R.id = id; R.code = code || R.code; R.st = null; R.shownScore = 0; R.fxIdx = -2; R.board = null; R.cls = null; R.sig = ""; R.err = ""; remember(); fetchState();
+    R.id = id; R.code = code || R.code; R.st = null; R.shownScore = 0; R.fxIdx = -2; R.board = null; R.cls = null; R.teamBoard = null; R.descDone = -1; R.sig = ""; R.err = ""; remember(); fetchState();
   }
   function act(rpc, args, ok) {
     R.busy = true; R.err = ""; repaint();
@@ -143,6 +147,16 @@
     var name = (fv("lf-name", "") || "").trim() || "Live quiz", n = Math.max(1, Math.min(50, parseInt(fv("lf-n", "10"), 10) || 10)),
         sec = Math.max(5, Math.min(300, parseInt(fv("lf-sec", "20"), 10) || 20)), pace = fv("lf-pace", "host"), src = fv("lf-src", "items"), args;
     if (name.length < 2) name = "Live quiz";
+    if (fv("lf-type", "solo") === "team") {
+      var tn = Math.max(2, Math.min(6, parseInt(fv("lf-teams", "3"), 10) || 3)), nd = Math.max(0, Math.min(8, parseInt(fv("lf-nd", "2"), 10) || 0)), scope = fv("lf-scope", "");
+      if (n + nd > 50) { R.err = "Quiz questions plus describe rounds can be 50 at most."; repaint(); return; }
+      var terms = DX.shuffle(DX.terms.filter(function (t) { return t.forbidden && t.forbidden.length && inScope(t, scope); })).slice(0, nd * tn).map(function (t) { return { term: t.term, forbidden: t.forbidden }; });
+      if (terms.length < nd * tn) { R.err = "Only " + terms.length + " usable terms match that subject. You need " + (nd * tn) + " (" + nd + " rounds x " + tn + " teams). Lower the rounds or pick Everything."; repaint(); return; }
+      var items2 = null;
+      if (src !== "bank") { items2 = publicQs(scope, n); if (items2.length < n) { R.err = "Only " + items2.length + " public questions match that choice."; repaint(); return; } }
+      act("admin_create_team_room", { p_name: name, p_pace: pace, p_sec: sec, p_teams: tn, p_source: src === "bank" ? "bank" : "items", p_pool: src === "bank" ? (fv("lf-pool", "") || null) : null, p_n_quiz: n, p_items: items2, p_terms: terms }, function (r) { var row = r.data && r.data[0]; if (row) enter(row.room_id, row.code); });
+      return;
+    }
     if (src === "bank") args = { p_name: name, p_pace: pace, p_sec: sec, p_n: n, p_source: "bank", p_pool: fv("lf-pool", "") || null, p_items: null };
     else {
       var items = publicQs(fv("lf-scope", ""), n);
@@ -157,7 +171,36 @@
   }
 
   /* ---------- pieces of screen ---------- */
-  var L = ["A", "B", "C", "D"];
+  var L = ["A", "B", "C", "D"], TEAMS = ["Red", "Blue", "Green", "Orange", "Purple", "Teal"], TCOL = ["#c0392b", "#2c6fbb", "#1b7f4a", "#c26a10", "#7b4bb3", "#14808a"];
+  function teamTag(i) { return '<span style="color:' + TCOL[i - 1] + ';font-weight:700">\u25CF ' + TEAMS[i - 1] + '</span>'; }
+  function teamBoardHtml(rows) {
+    if (!rows || !rows.length) return "";
+    return '<h3>Teams</h3><div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Team</th><th class="n">Players</th><th class="n">Quiz</th><th class="n">Describe</th><th class="n">Total</th></tr></thead><tbody>' +
+      rows.map(function (x) { return '<tr><td>' + teamTag(x.team) + '</td><td class="n">' + x.players + '</td><td class="n">' + x.quiz_pts + '</td><td class="n">' + x.describe_pts + '</td><td class="n"><b>' + x.total + '</b></td></tr>'; }).join("") + '</tbody></table></div>';
+  }
+  function teamCounts(s) {
+    var out = ""; for (var i = 1; i <= s.n_teams; i++) out += '<span style="margin-right:12px">' + teamTag(i) + ' ' + ((s.team_counts || [])[i - 1] || 0) + '</span>'; return '<p>' + out + '</p>';
+  }
+  function teamPicker(s) {
+    var out = '<p class="tag">Pick your team</p><div class="row tight" style="flex-wrap:wrap">';
+    for (var i = 1; i <= s.n_teams; i++) out += '<button class="btn small' + (s.my_team === i ? " primary" : "") + '" data-act="team" data-t="' + i + '" aria-pressed="' + (s.my_team === i) + '" style="border-color:' + TCOL[i - 1] + '">' + TEAMS[i - 1] + ' (' + ((s.team_counts || [])[i - 1] || 0) + ')</button>';
+    return out + '</div>';
+  }
+  function describeHost(s, b) {
+    var rows = (s.describers || []).map(function (d) {
+      return '<tr><td>' + teamTag(d.team) + '</td><td>' + esc(d.describer || "?") + '</td><td>' + (d.done ? "Tapped \u2713" : "Describing\u2026") + '</td><td>' + (d.done ? '<button class="btn ghost small" data-act="void" data-team="' + d.team + '"' + b + '>Void</button>' : "") + '</td></tr>';
+    }).join("");
+    return '<p class="tag">Each team has its own term. Listen for forbidden words. Void a tap if the team cheated.</p><p class="stem" style="white-space:pre-line">' + esc(s.q_text) + '</p>' +
+      '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Team</th><th>Describer</th><th>Status</th><th></th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+  function describePlayer(s) {
+    if (s.role === "describer") {
+      var forb = (s.q_options || []).map(function (f) { return '<span class="chip">' + esc(f) + '</span>'; }).join(" ");
+      return '<section class="lv">' + timerHtml(s) + '<p class="tag">You describe for your team. Do not say the term or these words:</p><h3 style="font-size:28px">' + esc(s.q_text) + '</h3><p>' + (forb || '<span class="muted">No forbidden words.</span>') + '</p>' +
+        (R.descDone === s.cur_idx ? '<p class="tag">Sent. Wait for the quizmaster\u2026</p>' : '<div class="row tight"><button class="btn primary" data-act="descdone"' + (R.busy ? " disabled" : "") + '>My team got it</button></div>') + '</section>';
+    }
+    return '<section class="lv">' + timerHtml(s) + '<h3>' + esc(s.q_text) + '</h3><p class="tag">Say your guesses out loud. The describer taps when you get it.</p></section>';
+  }
   function boardHtml(rows, cap) {
     if (!rows || !rows.length) return '<p class="muted">No scores yet.</p>';
     return '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th class="n">#</th><th>Name</th><th>Class</th><th class="n">Points</th></tr></thead><tbody>' +
@@ -191,19 +234,22 @@
     var meta = '<p class="tag">' + esc(s.name) + ' · ' + s.players + ' joined · ' + (s.pace === "auto" ? "timers move it on" : "you tap Next") + '</p>';
     if (s.status === "lobby") {
       out = '<section class="lv"><p class="tag">Go to DxDrill, open Live, and type</p><div class="lvcode" aria-label="Room code">' + esc(R.code) + '</div>' + meta +
+        (s.n_teams ? teamCounts(s) + '<p class="tag">Players pick a team on their phone. Anyone who does not pick joins the smallest team when you start.</p>' : "") +
         '<div class="row tight"><button class="btn primary" data-act="start"' + b + '>Start (' + s.players + ' joined)</button><button class="btn ghost small" data-act="del">Close room</button></div></section>';
     } else if (s.status === "question" && leading()) {
       out = readyHtml(s);
+    } else if (s.status === "question" && s.q_kind === "describe") {
+      out = '<section class="lv">' + timerHtml(s) + describeHost(s, b) + '<div class="row tight"><button class="btn primary" data-act="next"' + b + '>Show the answer now</button></div>' + meta + '</section>';
     } else if (s.status === "question") {
       out = '<section class="lv">' + timerHtml(s) + '<h3>' + esc(s.q_text) + '</h3>' + optionsHtml(s, false) + '<p class="tag">' + s.answered + ' of ' + s.players + ' answered</p>' +
         '<div class="row tight"><button class="btn primary" data-act="next"' + b + '>Show the answer now</button></div>' + meta + '</section>';
     } else if (s.status === "reveal") {
       var last = Number(s.cur_idx) + 1 >= Number(s.n);
       out = '<section class="lv"><span class="tag">Question ' + (Number(s.cur_idx) + 1) + ' of ' + s.n + '</span><h3>' + esc(s.q_text) + '</h3>' + optionsHtml(s, false) +
-        (s.explain ? '<p>' + esc(s.explain) + '</p>' : "") + '<h3>Top 5</h3>' + boardHtml(R.board, 5) +
+        (s.explain ? '<p>' + esc(s.explain) + '</p>' : "") + (s.n_teams ? teamBoardHtml(R.teamBoard) : "") + '<h3>Top 5</h3>' + boardHtml(R.board, 5) +
         '<div class="row tight"><button class="btn primary" data-act="next"' + b + '>' + (last ? "Finish and show results" : "Next question") + '</button></div>' + meta + '</section>';
     } else {
-      out = '<section class="lv"><h3>Final results</h3>' + boardHtml(R.board, 10) + classHtml(R.cls) +
+      out = '<section class="lv"><h3>Final results</h3>' + (s.n_teams ? teamBoardHtml(R.teamBoard) + '<h3>Top players</h3>' : "") + boardHtml(R.board, 10) + classHtml(R.cls) +
         '<div class="row tight"><button class="btn ghost small" data-act="leaveroom">Back</button><button class="btn ghost small" data-act="del">Delete room</button></div></section>';
     }
     if (R.confirm) out += '<p class="note bad">Delete this room? Everyone loses it.</p><div class="row tight"><button class="btn small primary" data-act="delyes">Yes, delete</button><button class="btn ghost small" data-act="delno">Keep</button></div>';
@@ -211,17 +257,19 @@
   }
   function playerHtml(s) {
     var out;
-    if (s.status === "lobby") out = '<section class="lv"><h3>You are in</h3><p>' + esc(s.name) + '</p><p class="tag">' + s.players + ' joined. Waiting for the host to start…</p></section>';
-    else if (s.status === "question" && leading()) out = readyHtml(s);
+    var tl = s.my_team ? '<p class="tag">' + teamTag(s.my_team) + ' team</p>' : "";
+    if (s.status === "lobby") out = '<section class="lv"><h3>You are in</h3><p>' + esc(s.name) + '</p>' + (s.n_teams ? teamPicker(s) : "") + '<p class="tag">' + s.players + ' joined. Waiting for the host to start…</p></section>';
+    else if (s.status === "question" && leading()) out = readyHtml(s) + tl;
+    else if (s.status === "question" && s.q_kind === "describe") out = describePlayer(s) + tl;
     else if (s.status === "question") {
       out = '<section class="lv">' + timerHtml(s) + '<h3>' + esc(s.q_text) + '</h3>' + optionsHtml(s, true) +
         (s.my_choice != null ? '<p class="tag">Locked in. Wait for the answer…</p>' : '<p class="tag">Faster right answers earn more points.</p>') + '</section>';
     } else if (s.status === "reveal") {
-      var ok = s.my_choice != null && s.my_choice === s.right_answer;
-      out = '<section class="lv"><h3>' + (s.my_choice == null ? "No answer in time" : ok ? "Correct! +" + s.my_points : "Not quite") + '</h3>' + optionsHtml(s, false) +
-        (s.explain ? '<p>' + esc(s.explain) + '</p>' : "") + '<p class="tag">Your score <b id="lv-score" data-to="' + s.my_score + '">' + R.shownScore + '</b> · rank ' + s.my_rank + ' of ' + s.players + '</p><h3>Top 5</h3>' + boardHtml(R.board, 5) +
+      var ok = s.my_choice != null && s.my_choice === s.right_answer, dsc = s.q_kind === "describe";
+      out = '<section class="lv"><h3>' + (dsc ? (Number(s.my_points) > 0 ? "Your team scored +" + s.my_points : "No points this round") : s.my_choice == null ? "No answer in time" : ok ? "Correct! +" + s.my_points : "Not quite") + '</h3>' + (dsc ? '<p class="stem" style="white-space:pre-line">' + esc(s.q_text) + '</p>' : optionsHtml(s, false)) + tl +
+        (s.explain ? '<p>' + esc(s.explain) + '</p>' : "") + '<p class="tag">Your score <b id="lv-score" data-to="' + s.my_score + '">' + R.shownScore + '</b> · rank ' + s.my_rank + ' of ' + s.players + '</p>' + (s.n_teams ? teamBoardHtml(R.teamBoard) : "") + '<h3>Top 5</h3>' + boardHtml(R.board, 5) +
         '<p class="tag">' + (s.pace === "auto" ? "Next question starting…" : "Waiting for the host…") + '</p></section>';
-    } else out = '<section class="lv"><h3>Finished</h3><p>You scored <b id="lv-score" data-to="' + s.my_score + '">' + R.shownScore + '</b> and ranked <b>' + s.my_rank + '</b> of ' + s.players + '.</p>' + boardHtml(R.board, 10) + classHtml(R.cls) +
+    } else out = '<section class="lv"><h3>Finished</h3><p>You scored <b id="lv-score" data-to="' + s.my_score + '">' + R.shownScore + '</b> and ranked <b>' + s.my_rank + '</b> of ' + s.players + '.</p>' + (s.n_teams ? teamBoardHtml(R.teamBoard) : "") + boardHtml(R.board, 10) + classHtml(R.cls) +
       '<div class="row tight"><button class="btn small" data-act="leaveroom">Done</button></div></section>';
     return out;
   }
@@ -276,8 +324,10 @@
     loadPools();
     var scopes = '<option value="">Everything</option>' + DX.curriculum.subjects.map(function (s) { return '<option value="' + esc(s.id) + '"' + (fv("lf-scope", "") === s.id ? " selected" : "") + '>' + esc(s.name) + '</option>'; }).join("");
     var pools = '<option value="">Whole bank</option>' + (R.bankPools || []).map(function (b) { return '<option value="' + esc(b.pool) + '"' + (fv("lf-pool", "") === b.pool ? " selected" : "") + '>' + esc(b.pool) + ' (' + b.questions + ')</option>'; }).join("");
-    var src = fv("lf-src", "items"), pace = fv("lf-pace", "host");
+    var src = fv("lf-src", "items"), pace = fv("lf-pace", "host"), type = fv("lf-type", "solo");
     return '<section class="section stack lvf"><h2>Host a room</h2>' +
+      '<div class="field"><label class="label" for="lf-type">Room type</label><select id="lf-type"><option value="solo"' + (type === "solo" ? " selected" : "") + '>Everyone for themselves</option><option value="team"' + (type === "team" ? " selected" : "") + '>Teams, with you as quizmaster</option></select></div>' +
+      (type === "team" ? '<div class="teamrow"><div class="field"><label class="label" for="lf-teams">Teams (2 to 6)</label><input type="number" id="lf-teams" min="2" max="6" value="' + esc(fv("lf-teams", "3")) + '"></div><div class="field"><label class="label" for="lf-nd">Describe-it rounds (0 to 8)</label><input type="number" id="lf-nd" min="0" max="8" value="' + esc(fv("lf-nd", "2")) + '"></div></div><p class="hint">Players pick a team. A team scores the average quiz points per member, plus describe points. Each describe-it round gives every team its own term and one member describes it without the forbidden words. Terms come from the subject you choose (only terms that have forbidden words are used).</p>' : "") +
       '<div class="field"><label class="label" for="lf-name">Name</label><input type="text" id="lf-name" maxlength="60" value="' + esc(fv("lf-name", "")) + '" placeholder="Live quiz"></div>' +
       '<div class="field"><label class="label" for="lf-src">Questions from</label><select id="lf-src"><option value="items"' + (src === "items" ? " selected" : "") + '>Public practice questions</option><option value="bank"' + (src === "bank" ? " selected" : "") + '>Hidden bank (students never see them beforehand)</option></select></div>' +
       (src === "bank" ? '<div class="field"><label class="label" for="lf-pool">Pool</label><select id="lf-pool">' + pools + '</select></div>' : '<div class="field"><label class="label" for="lf-scope">Subject</label><select id="lf-scope">' + scopes + '</select></div>') +
@@ -317,7 +367,7 @@
     else if (R.id) body = '<p class="muted">Joining…</p>';
     else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
     a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
-    ["lf-name", "lf-n", "lf-sec", "ff-name", "ff-n", "ff-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
+    ["lf-name", "lf-n", "lf-sec", "lf-teams", "lf-nd", "ff-name", "ff-n", "ff-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
     var s0 = R.st;
     if (s0 && (s0.status === "reveal" || s0.status === "finished") && DX.fx) {
       var sc = document.getElementById("lv-score");
@@ -359,6 +409,9 @@
     if (a === "lfx") { DX.fx.toggle(); repaint(); return; }
     if (a === "join") join();
     else if (a === "fcreate") friendCreate();
+    else if (a === "team") act("room_set_team", { p_room: R.id, p_team: parseInt(t.getAttribute("data-t"), 10) }, fetchState);
+    else if (a === "descdone") { R.descDone = R.st.cur_idx; act("room_describe_done", { p_room: R.id, p_idx: R.st.cur_idx }, fetchState); }
+    else if (a === "void") act("room_void_team", { p_room: R.id, p_idx: R.st.cur_idx, p_team: parseInt(t.getAttribute("data-team"), 10) }, fetchState);
     else if (a === "copyinv") { var u = inviteUrl(); try { navigator.clipboard.writeText(u).then(function () { R.err = ""; t.textContent = "Copied"; }, function () { t.textContent = u; }); } catch (er) { t.textContent = u; } }
     else if (a === "pick") answer(parseInt(t.getAttribute("data-i"), 10));
     else if (a === "create") create();
@@ -373,6 +426,6 @@
   }
   /* The source and pace selects change what the form shows. */
   document.addEventListener("change", function (e) {
-    if ((location.hash || "") === "#live" && e.target && e.target.id === "lf-src") { R.form["lf-src"] = e.target.value; repaint(); }
+    if ((location.hash || "") === "#live" && e.target && (e.target.id === "lf-src" || e.target.id === "lf-type")) { R.form[e.target.id] = e.target.value; repaint(); }
   });
 })();
