@@ -69,6 +69,7 @@
     if (opens < 5 || now - last < 7 * 86400000) return;
     var h = (location.hash || "#home").slice(1);
     if (h !== "home" && h !== "") return;
+    if (document.getElementById("fbnudge")) return;
     if (document.getElementById("updbar") || document.getElementById("splash")) return setTimeout(nudge, 3000);
     S.set("dx.nudge.last", now);
     var d = document.createElement("div"); d.id = "fbnudge"; d.setAttribute("role", "status");
@@ -96,4 +97,28 @@
     if (tick) return; tick = true;
     requestAnimationFrame(function () { tick = false; up.hidden = window.scrollY < 900; });
   }, { passive: true });
+})();
+
+/* Sign-in nudge: for visitors who have practised a bit but have no account. Never blocks anything. */
+(function () {
+  var DX = window.DX, S = DX.store;
+  function answered() { var st = DX.stats(), n = 0; for (var k in st) if (st.hasOwnProperty(k)) n += st[k].n || 0; return n; }
+  function ask() {
+    var c = DX.cloud;
+    if (!c || !c.ok) return;
+    if (c.user || S.get("dx.signnudge.off", false)) return;
+    if (document.getElementById("fbnudge") || document.getElementById("splash")) return;
+    var h = (location.hash || "#home").slice(1); if (h !== "home" && h !== "") return;
+    if (answered() < 10 || Date.now() - (S.get("dx.signnudge.last", 0) || 0) < 2 * 86400000) return;
+    S.set("dx.signnudge.last", Date.now());
+    var d = document.createElement("div"); d.id = "fbnudge"; d.setAttribute("role", "status");
+    d.innerHTML = '<p><b>Keep your progress.</b> Make a free account to save your practice across phones, join the leaderboards and play live quizzes.</p>' +
+      '<div class="fbn-row"><button type="button" class="fbn-go">Sign in or sign up</button><button type="button" class="fbn-no">Not now</button><button type="button" class="fbn-off">Don\u2019t ask again</button></div>';
+    function close() { if (d.parentNode) d.parentNode.removeChild(d); }
+    d.querySelector(".fbn-go").onclick = function () { close(); location.hash = "#account"; };
+    d.querySelector(".fbn-no").onclick = close;
+    d.querySelector(".fbn-off").onclick = function () { S.set("dx.signnudge.off", true); close(); };
+    document.body.appendChild(d); setTimeout(close, 20000);
+  }
+  setTimeout(ask, 5000); setTimeout(ask, 14000);
 })();
