@@ -39,7 +39,7 @@
     el.innerHTML = '<div class="wrap wide stack"><header><p class="eyebrow">Play</p><h1>Ways to play</h1><p class="lede">Study alone, race the whole school over a few days, or join a live quiz with a code.</p></header>' +
       '<section class="cards">' + cards.map(function (c, i) {
         return '<article class="card"><h2>' + c[1] + '</h2>' + (F.visibleToStudents(c[0]) || (c[0] === "live" && F.visibleToStudents("friends")) ? "" : '<p><b>Hidden from students</b></p>') + '<p>' + c[2] + '</p><a class="btn' + (i === 0 ? " primary" : "") + '" href="' + c[3] + '" style="text-decoration:none">' + c[4] + '</a></article>';
-      }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Manage which features students can see</a></p>' : "") + '</div>';
+      }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Features and visitors: choose what students see, and check who is using DxDrill</a></p>' : "") + '</div>';
   }
   var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
   function navVisibility() {
