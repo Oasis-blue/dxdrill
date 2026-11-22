@@ -170,8 +170,13 @@
   window.addEventListener("hashchange", route);
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
   DX.load().then(function () {
-    route();   /* show the page as soon as the questions are in; the account check carries on behind it */
-    DX.cloud.init().catch(function () {}).then(function () {
+    /* Pages that need the account check wait for it; everything else shows at once. */
+    var CLOUDY = { board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
+    var h0 = (location.hash || "#home").slice(1), waits = !!CLOUDY[h0];
+    var initP = Promise.resolve().then(function () { return DX.cloud.init(); }).catch(function () { });
+    var timedOut = false, capped = Promise.race([initP, new Promise(function (r) { setTimeout(function () { timedOut = true; r(); }, 9000); })]);
+    if (waits) app.innerHTML = '<div class="wrap stack"><p class="lede">Loading\u2026</p></div>'; else route();
+    function after() {
       try {   /* anonymous daily visit note: a random device id, no name, no cookie */
         var c = DX.cloud, adm = c && c.profile && c.profile.is_admin;
         if (c && c.ok && c.sb && !adm) {
@@ -180,10 +185,12 @@
           c.sb.rpc("visit_ping", { p_device: dev, p_page: (location.hash || "#home").slice(1, 25), p_signed: !!c.user }).then(function () { }, function () { });
         }
       } catch (e) { }
-      navVisibility();
+      try { navVisibility(); } catch (e) { }
       var h = (location.hash || "#home").slice(1);
-      if (h === "home" || h === "" || h === "play" || h === "features" || h === "account" || h === "board" || GATE[h]) route();
-    });
+      if (waits || h === "home" || h === "" || h === "play" || CLOUDY[h] || GATE[h]) route();
+    }
+    capped.then(after, after);
+    initP.then(function () { var h = (location.hash || "#home").slice(1); if (timedOut && CLOUDY[h] && DX.cloud && DX.cloud.ok) route(); });
   }).catch(function (e) {
     app.innerHTML = '<div class="wrap stack"><h1>Could not load the data</h1><p class="lede">DxDrill needs to be opened from a web address (for example GitHub Pages or Netlify), not by double-clicking the file. Details: ' + esc(e.message) + '</p></div>';
   });
