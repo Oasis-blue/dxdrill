@@ -172,6 +172,14 @@
   DX.load().then(function () {
     route();   /* show the page as soon as the questions are in; the account check carries on behind it */
     DX.cloud.init().catch(function () {}).then(function () {
+      try {   /* anonymous daily visit note: a random device id, no name, no cookie */
+        var c = DX.cloud, adm = c && c.profile && c.profile.is_admin;
+        if (c && c.ok && c.sb && !adm) {
+          var dev = DX.store.get("dx.device", "");
+          if (!dev) { dev = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); DX.store.set("dx.device", dev); }
+          c.sb.rpc("visit_ping", { p_device: dev, p_page: (location.hash || "#home").slice(1, 25), p_signed: !!c.user }).then(function () { }, function () { });
+        }
+      } catch (e) { }
       navVisibility();
       var h = (location.hash || "#home").slice(1);
       if (h === "home" || h === "" || h === "play" || h === "features" || h === "account" || h === "board" || GATE[h]) route();
