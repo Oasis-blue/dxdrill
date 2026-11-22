@@ -272,3 +272,15 @@ input[type="range"]{accent-color:var(--accent); min-height:44px}
 @media (max-width:640px){
   .bar{position:static; padding-top:calc(10px + env(safe-area-inset-top, 0px))}
 }
+
+/* opening splash */
+#splash{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--fg);cursor:pointer;transition:opacity .4s ease}
+#splash.sp-out{opacity:0;pointer-events:none}
+#splash .sp-in{text-align:center}
+#splash .sp-mark{width:64px;height:64px;margin:0 auto 14px;border-radius:18px;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:sp-pop .6s cubic-bezier(.2,1.4,.4,1) both,sp-ring 1.6s .5s ease-out 1}
+#splash .sp-name{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:700;font-size:40px;letter-spacing:-.5px;animation:sp-rise .6s .2s ease both}
+#splash .sp-by{margin-top:4px;color:var(--muted);font-size:16px;letter-spacing:2px;text-transform:uppercase;animation:sp-rise .6s .6s ease both}
+@keyframes sp-pop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes sp-rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+@keyframes sp-ring{from{box-shadow:0 0 0 0 rgba(10,106,134,.45)}to{box-shadow:0 0 0 36px rgba(10,106,134,0)}}
+@media (prefers-reduced-motion:reduce){#splash .sp-mark,#splash .sp-name,#splash .sp-by{animation:none}#splash{transition:none}}
