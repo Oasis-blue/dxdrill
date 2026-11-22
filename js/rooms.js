@@ -273,6 +273,13 @@
       '<div class="row tight"><button class="btn small" data-act="leaveroom">Done</button></div></section>';
     return out;
   }
+  function exitRow(s) {
+    if (s.status !== "question" && s.status !== "reveal") return "";
+    var host = !!s.is_host;
+    return '<div class="row tight" style="margin-top:10px"><button class="btn ghost small" data-act="leaveroom">Leave room</button>' + (host ? '<button class="btn ghost small" data-act="del">Close room</button>' : "") + '</div>' +
+      (host ? '<p class="hint">Leaving keeps the room running. You can come back with the Back button on the Live page. Closing deletes it for everyone.</p>' : '<p class="hint">You can rejoin with the same code while the quiz is running.</p>') +
+      (R.confirm && !hostOnly(s) ? '<p class="note bad">Close this room? Everyone loses it.</p><div class="row tight"><button class="btn small primary" data-act="delyes">Yes, close it</button><button class="btn ghost small" data-act="delno">Keep</button></div>' : "");
+  }
   function scopeOptions() {
     var cur = fv("ff-scope", ""), out = '<option value="">Everything</option>';
     DX.curriculum.subjects.forEach(function (s) {
@@ -363,7 +370,7 @@
     var inv = inviteCode();
     if (inv && !R.id && !R.busy && !R.tried) { R.tried = true; R.join = inv; try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) { } join(); return; }
     var note = R.err ? '<p class="note bad" role="alert">' + esc(R.err) + '</p>' : "", body, head = "";
-    if (R.id && R.st) body = hostOnly(R.st) ? hostHtml(R.st) : R.st.is_host ? friendHostHtml(R.st) : playerHtml(R.st);
+    if (R.id && R.st) body = (hostOnly(R.st) ? hostHtml(R.st) : R.st.is_host ? friendHostHtml(R.st) : playerHtml(R.st)) + exitRow(R.st);
     else if (R.id) body = '<p class="muted">Joining…</p>';
     else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
     a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
@@ -421,7 +428,7 @@
     else if (a === "del") { R.confirm = true; repaint(); }
     else if (a === "delno") { R.confirm = false; repaint(); }
     else if (a === "delyes") { var id = R.id; R.confirm = false; act("admin_delete_room", { p_room: id }, function () { stop(); R.id = 0; R.st = null; remember(); repaint(); }); }
-    else if (a === "leaveroom") { stop(); R.id = 0; R.st = null; R.err = ""; remember(); repaint(); }
+    else if (a === "leaveroom") { var keep = R.st && R.st.status !== "finished", kid = R.id, kcode = R.code; stop(); R.id = 0; R.st = null; R.err = ""; if (keep) DX.store.set("dx.room", { id: kid, code: kcode }); else remember(); repaint(); }
     else if (a === "change") { R.form["lf-src"] = document.getElementById("lf-src").value; repaint(); }
   }
   /* The source and pace selects change what the form shows. */
