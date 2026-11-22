@@ -35,7 +35,7 @@
   function render(a) {
     app = a;
     if (!isAdmin()) { a.innerHTML = '<div class="wrap stack"><h1>Not available</h1><p class="lede">This page is for the admin.</p></div>'; return; }
-    a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Admin</p><h1>Features</h1><p class="lede">Choose what students can see. You always see everything, so you can test a hidden feature on the real site. Changes show up for students the next time they open or reload DxDrill.</p></header>' +
+    a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Admin</p><h1>Features and visitors</h1><p class="lede">Choose what students can see. You always see everything, so you can test a hidden feature on the real site. Changes show up for students the next time they open or reload DxDrill.</p></header>' +
       (F.err ? '<p class="note bad" role="alert">' + esc(F.err) + '</p>' : "") +
       '<section class="stack">' + LIST.map(function (x) {
         var on = F.map[x[0]] === true || (F.map[x[0]] === undefined && !!FALLBACK[x[0]]);
