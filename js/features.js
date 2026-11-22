@@ -40,7 +40,24 @@
       '<section class="stack">' + LIST.map(function (x) {
         var on = F.map[x[0]] === true || (F.map[x[0]] === undefined && !!FALLBACK[x[0]]);
         return '<article class="card"><h2>' + esc(x[1]) + '</h2><p>' + esc(x[2]) + '</p><p><b>' + (on ? "Shown to students" : "Hidden from students") + '</b></p><button class="btn ' + (on ? "ghost" : "primary") + '" data-act="set" data-key="' + x[0] + '" data-on="' + (on ? "0" : "1") + '"' + (F.busy ? " disabled" : "") + '>' + (on ? "Hide" : "Show to students") + '</button></article>';
-      }).join("") + '</section>' + settingsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
+      }).join("") + '</section>' + settingsHtml() + visitsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
+  }
+  function visitsHtml() {
+    if (F.visits === undefined) {
+      F.visits = null;
+      Promise.all([C().sb.rpc("admin_visit_totals"), C().sb.rpc("admin_visits", { p_days: 14 })]).then(function (r) {
+        if (r[0].error || r[1].error) { F.visits = { err: true }; } else { F.visits = { tot: (r[0].data || [])[0] || {}, days: r[1].data || [] }; }
+        repaint();
+      }, function () { F.visits = { err: true }; repaint(); });
+    }
+    var v = F.visits;
+    if (!v) return '<section class="section stack"><h2>Visitors</h2><p class="muted">Loading…</p></section>';
+    if (v.err) return '<section class="section stack"><h2>Visitors</h2><p class="note bad">Run supabase/update-13.sql in Supabase first.</p></section>';
+    var t = v.tot, rows = v.days.map(function (d) { return '<tr><td>' + esc(d.day) + '</td><td class="n">' + d.visitors + '</td><td class="n">' + d.signed_in + '</td><td class="n">' + d.hits + '</td></tr>'; }).join("");
+    return '<section class="section stack"><h2>Visitors</h2><p class="hint">Each phone or browser counts once per day, signed in or not. The same person on two devices counts twice, and your own visits are left out. Counts start from the day you run update 13.</p>' +
+      '<p><b>' + (t.today || 0) + '</b> today · <b>' + (t.week || 0) + '</b> in 7 days · <b>' + (t.month || 0) + '</b> in 30 days (<b>' + (t.signed_month || 0) + '</b> of them signed in at some point)</p>' +
+      (rows ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Day</th><th class="n">Visitors</th><th class="n">Signed in</th><th class="n">Page loads</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p class="muted">No visits recorded yet.</p>') +
+      '<div class="row tight"><button class="btn ghost small" data-act="refvisits">Refresh</button></div></section>';
   }
   function settingsHtml() {
     if (F.settings === null) { F.settings = {}; C().sb.rpc("admin_site_settings").then(function (r) { if (!r.error && r.data) { r.data.forEach(function (x) { F.settings[x.key] = x.val; }); F.settings.__ok = true; repaint(); } }); }
@@ -58,6 +75,7 @@
         .catch(function () { F.busy = false; F.err = "That did not save. Run supabase/update-10.sql first, then try again."; repaint(); });
       return;
     }
+    if (e.target.closest && e.target.closest("[data-act='refvisits']")) { F.visits = undefined; repaint(); return; }
     var t = e.target.closest ? e.target.closest("[data-act='set']") : null; if (!t) return;
     var key = t.getAttribute("data-key"), on = t.getAttribute("data-on") === "1";
     F.busy = true; F.err = ""; repaint();
