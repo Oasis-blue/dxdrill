@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "term": "Salmonella Typhi",
+   "clues": [
+    "Possesses an antiphagocytic Vi capsular polysaccharide antigen and resides exclusively in human hosts.",
+    "Invades ileal Peyer patches via M cells and survives inside reticuloendothelial macrophages.",
+    "The motile, H2S-producing Gram-negative bacillus responsible for classical typhoid fever."
+   ],
+   "forbidden": [
+    "typhoid",
+    "enteric",
+    "fever",
+    "Peyer",
+    "Vi"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "term": "Peyer patches",
+   "clues": [
+    "Overlain by specialized antigen-sampling microfold (M) cells in the lamina propria.",
+    "Become hyperplastic during the first two weeks of enteric fever and undergo necrosis in week three.",
+    "Aggregated lymphoid nodules concentrated in the terminal ileum where longitudinal typhoid ulcers and perforations occur."
+   ],
+   "forbidden": [
+    "ileum",
+    "typhoid",
+    "ulcer",
+    "lymphoid",
+    "perforation"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
+   "term": "Widal test",
+   "clues": [
+    "Measures serum agglutinating antibodies against somatic O and flagellar H antigens.",
+    "Frequently yields false positives in endemic regions due to baseline immunity, vaccination, or malaria.",
+    "A serological agglutination assay historically used to support the diagnosis of enteric fever."
+   ],
+   "forbidden": [
+    "typhoid",
+    "agglutination",
+    "serological",
+    "Salmonella",
+    "titre"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Shigellosis (Bacillary Dysentery)",
+   "term": "Shigella",
+   "clues": [
+    "Non-motile, non-lactose-fermenting, H2S-negative members of the family Enterobacteriaceae.",
+    "Requires an ultra-low infectious dose of 10 to 100 organisms and spreads cell-to-cell via host actin tails.",
+    "The invasive bacterial genus responsible for acute bacillary dysentery with mucoid bloody stools."
+   ],
+   "forbidden": [
+    "dysentery",
+    "bacillary",
+    "Shiga",
+    "actin",
+    "non-motile"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
+   "term": "Enterotoxigenic Escherichia coli",
+   "clues": [
+    "Adheres to small bowel enterocytes via colonization factor antigens without causing mucosal ulceration.",
+    "Secretes plasmid-encoded heat-labile (LT) and heat-stable (ST) enterotoxins.",
+    "The leading bacterial cause of travellers' diarrhoea and infantile watery diarrhoea in developing regions."
+   ],
+   "forbidden": [
+    "ETEC",
+    "travellers",
+    "heat-labile",
+    "heat-stable",
+    "watery"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Cholera and Other Foodborne Bacterial Gastroenteritis",
+   "term": "Vibrio cholerae",
+   "clues": [
+    "Grows as flat yellow sucrose-fermenting colonies on alkaline TCBS agar.",
+    "Appears as a comma-shaped, oxidase-positive Gram-negative rod with a single polar flagellum.",
+    "The waterborne pathogen whose enterotoxin elevates cAMP to produce profuse rice-water secretory diarrhoea."
+   ],
+   "forbidden": [
+    "cholera",
+    "rice-water",
+    "TCBS",
+    "comma",
+    "cAMP"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Viral Gastroenteritis",
+   "term": "Rotavirus",
+   "clues": [
+    "Possesses a segmented 11-segment double-stranded RNA genome and a wheel-like capsid.",
+    "Secretes the NSP4 viral enterotoxin and blunts small intestinal villi.",
+    "The leading global viral cause of severe dehydrating watery diarrhoea in infants and young children."
+   ],
+   "forbidden": [
+    "wheel",
+    "NSP4",
+    "infant",
+    "segmented",
+    "diarrhoea"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
+   "term": "Entamoeba histolytica",
+   "clues": [
+    "Diagnostic motile trophozoites in dysenteric stool contain phagocytosed red blood cells.",
+    "Produces flask-shaped ulcers in the colon and anchovy-paste liver abscesses.",
+    "The tissue-invasive anaerobic protozoan transmitted via quadrinucleate cysts that causes amoebic dysentery."
+   ],
+   "forbidden": [
+    "amoeba",
+    "amoebic",
+    "flask",
+    "anchovy",
+    "cyst"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
+   "term": "Giardia lamblia",
+   "clues": [
+    "Trophozoites possess two nuclei, four pairs of flagella, and a ventral adhesive sucking disc.",
+    "Causes non-invasive duodenal brush-border malabsorption without blood or pus in the stool.",
+    "A flagellated intestinal protozoan that causes foul-smelling, greasy steatorrhoea and bloating."
+   ],
+   "forbidden": [
+    "flagella",
+    "steatorrhoea",
+    "sucking",
+    "duodenal",
+    "giardiasis"
+   ]
+  },
+  {
+   "topic": "pam-enteric-infections-and-typhoid",
+   "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
+   "term": "Ascaris lumbricoides",
+   "clues": [
+    "Larvae migrate through the liver and lungs, triggering Loeffler eosinophilic pneumonitis.",
+    "Diagnosed by identifying mammillated, bile-stained fertilized eggs on stool microscopy.",
+    "The largest human intestinal roundworm, capable of causing mechanical small bowel or biliary obstruction."
+   ],
+   "forbidden": [
+    "roundworm",
+    "Loeffler",
+    "obstruction",
+    "nematode",
+    "egg"
+   ]
+  }
+ ]
+}

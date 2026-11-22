@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Phases of Laboratory Testing",
+   "term": "Pre-analytical error",
+   "clues": [
+    "Accounts for roughly 60% to 70% of all mistakes in the total laboratory testing process.",
+    "Includes patient misidentification, haemolysis, wrong anticoagulant tube, and delayed transport.",
+    "Any error occurring from test ordering and specimen collection up to the moment the sample enters the analyzer."
+   ],
+   "forbidden": [
+    "analytical",
+    "phase",
+    "collection",
+    "haemolysis",
+    "error"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Blood Specimen Collection and Anticoagulants",
+   "term": "Sodium fluoride",
+   "clues": [
+    "Contained in grey-top blood collection tubes alongside potassium oxalate.",
+    "Prevents erythrocytes from consuming glucose at 5% to 7% per hour after venepuncture.",
+    "An antiglycolytic preservative that inhibits the glycolytic enzyme enolase for accurate plasma glucose measurement."
+   ],
+   "forbidden": [
+    "glucose",
+    "glycolysis",
+    "enolase",
+    "grey",
+    "fluoride"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Pre-analytical Variables and Interferences",
+   "term": "Pseudohyperkalaemia",
+   "clues": [
+    "Should be suspected when a markedly elevated potassium result occurs with a normal ECG and no clinical symptoms.",
+    "Can result from fist clenching, in vitro haemolysis, thrombocytosis, or refrigerating unseparated whole blood.",
+    "An artifactual elevation of serum potassium released from cells after blood collection without true in vivo hyperkalaemia."
+   ],
+   "forbidden": [
+    "potassium",
+    "hyperkalaemia",
+    "false",
+    "haemolysis",
+    "artifact"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Analytical Principles and Instrumentation",
+   "term": "Beer-Lambert law",
+   "clues": [
+    "Forms the quantitative physical foundation of clinical spectrophotometry.",
+    "Relates optical absorbance logarithmically to transmittance (A = -log10 T).",
+    "Principle stating that light absorbance is directly proportional to chromogen concentration and optical path length."
+   ],
+   "forbidden": [
+    "absorbance",
+    "concentration",
+    "path",
+    "length",
+    "spectrophotometry"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Analytical Principles and Instrumentation",
+   "term": "High-dose hook effect",
+   "clues": [
+    "Classically encountered with massively elevated serum beta-hCG, prolactin, or ferritin levels.",
+    "Resolved by repeating the immunoassay after serial dilution of the patient's serum.",
+    "Artifact in one-step sandwich immunoassays where extreme antigen excess saturates capture and signal antibodies separately, causing a falsely low reading."
+   ],
+   "forbidden": [
+    "sandwich",
+    "immunoassay",
+    "excess",
+    "dilution",
+    "hook"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Quality Control and Quality Assurance",
+   "term": "Levey-Jennings chart",
+   "clues": [
+    "Evaluated daily using Westgard multi-rules such as 1_3s, 2_2s, and 10_x.",
+    "Displays horizontal lines marking the target mean and +/- 1, 2, and 3 standard deviations.",
+    "A graphical plot of sequential internal quality control results over time used to monitor analytical precision and bias."
+   ],
+   "forbidden": [
+    "Westgard",
+    "control",
+    "standard",
+    "deviation",
+    "chart"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Reference Values and Diagnostic Test Evaluation",
+   "term": "Reference interval",
+   "clues": [
+    "By statistical convention, 5% of healthy individuals fall outside its upper and lower limits.",
+    "Preferred modern terminology over 'normal range' because values vary with age, sex, and population.",
+    "The central 95% distribution of laboratory test values derived from a well-defined healthy population."
+   ],
+   "forbidden": [
+    "normal",
+    "range",
+    "95%",
+    "healthy",
+    "interval"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Reference Values and Diagnostic Test Evaluation",
+   "term": "Diagnostic sensitivity",
+   "clues": [
+    "Calculated as True Positives divided by the sum of True Positives plus False Negatives.",
+    "A test with a very high value for this metric is ideal for ruling out disease when negative (SnNout).",
+    "The probability that a diagnostic test yields a positive result in a patient who truly has the target disease."
+   ],
+   "forbidden": [
+    "positive",
+    "true",
+    "false",
+    "negative",
+    "specificity"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Reference Values and Diagnostic Test Evaluation",
+   "term": "Positive predictive value",
+   "clues": [
+    "Unlike sensitivity and specificity, this metric rises and falls strongly with disease prevalence.",
+    "Calculated as True Positives divided by all positive test results (TP + FP).",
+    "The probability that a patient who receives a positive test result actually has the disease."
+   ],
+   "forbidden": [
+    "prevalence",
+    "positive",
+    "probability",
+    "true",
+    "predictive"
+   ]
+  },
+  {
+   "topic": "pac-laboratory-principles-specimens-and-reference-va",
+   "sub": "Post-analytical Phase, Critical Values, and Point-of-Care Testing",
+   "term": "Delta check",
+   "clues": [
+    "Particularly effective for catching 'wrong blood in tube' specimen labelling errors.",
+    "Automated post-analytical algorithm comparing consecutive results from the same patient.",
+    "A quality verification rule that flags an implausibly large change between a patient's current result and their previous result."
+   ],
+   "forbidden": [
+    "previous",
+    "change",
+    "compare",
+    "patient",
+    "check"
+   ]
+  }
+ ]
+}

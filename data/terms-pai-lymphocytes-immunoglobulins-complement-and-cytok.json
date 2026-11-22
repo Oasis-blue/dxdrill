@@ -1,0 +1,106 @@
+{
+ "terms": [
+  {
+   "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+   "sub": "Lymphocyte Maturation and Surface Markers",
+   "term": "CD3",
+   "clues": [
+    "Composed of invariant gamma, delta, epsilon, and zeta polypeptide chains containing ITAM motifs.",
+    "Serves as the standard immunohistochemical and flow-cytometric lineage marker for all T lymphocytes.",
+    "The signal-transducing protein complex non-covalently associated with the T-cell antigen receptor."
+   ],
+   "forbidden": [
+    "TCR",
+    "receptor",
+    "signal",
+    "ITAM",
+    "marker"
+   ]
+  },
+  {
+   "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+   "sub": "Immunoglobulin Structure and Function",
+   "term": "Immunoglobulin G",
+   "clues": [
+    "The most abundant antibody isotype in human serum, accounting for approximately 75% to 80% of total immunoglobulin.",
+    "Crosses the placenta via FcRn receptors to provide passive immunity to the neonate.",
+    "The predominant monomeric antibody of the secondary humoral immune response that opsonizes pathogens and fixes complement."
+   ],
+   "forbidden": [
+    "IgG",
+    "placenta",
+    "secondary",
+    "serum",
+    "opsonize"
+   ]
+  },
+  {
+   "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+   "sub": "Immunoglobulin Structure and Function",
+   "term": "Somatic hypermutation",
+   "clues": [
+    "Occurs exclusively in proliferating centroblasts within lymphoid germinal centres.",
+    "Requires the enzyme activation-induced cytidine deaminase (AID).",
+    "Introduction of high-frequency point mutations into immunoglobulin variable regions to drive affinity maturation."
+   ],
+   "forbidden": [
+    "affinity",
+    "maturation",
+    "germinal",
+    "AID",
+    "variable"
+   ]
+  },
+  {
+   "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+   "sub": "The Complement System",
+   "term": "Anaphylatoxin",
+   "clues": [
+    "Generated as small proteolytic cleavage fragments C3a, C4a, and C5a during complement activation.",
+    "Can trigger systemic mast cell degranulation, smooth muscle contraction, and increased vascular permeability.",
+    "A complement split product that induces acute inflammatory histamine release and vascular leakage."
+   ],
+   "forbidden": [
+    "C3a",
+    "C5a",
+    "mast",
+    "histamine",
+    "complement"
+   ]
+  },
+  {
+   "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "term": "Interferon-gamma",
+   "clues": [
+    "Secreted primarily by Th1 helper T cells, CD8+ cytotoxic T cells, and Natural Killer cells.",
+    "Upregulates MHC class I and class II expression and stimulates reactive oxygen species in phagocytes.",
+    "The signature macrophage-activating cytokine essential for granulomatous defence against Mycobacterium tuberculosis."
+   ],
+   "forbidden": [
+    "Th1",
+    "macrophage",
+    "tuberculosis",
+    "cytokine",
+    "IFN"
+   ]
+  },
+  {
+   "topic": "pai-lymphocytes-immunoglobulins-complement-and-cytok",
+   "sub": "Cytokines and Helper T-Cell Subsets",
+   "term": "Interleukin-2",
+   "clues": [
+    "Binds to a heterotrimeric receptor whose high-affinity alpha subunit is CD25.",
+    "Blocked indirectly by calcineurin inhibitors such as cyclosporine and tacrolimus.",
+    "The principal autocrine and paracrine T-cell growth factor driving clonal proliferation of activated T lymphocytes."
+   ],
+   "forbidden": [
+    "IL-2",
+    "growth",
+    "factor",
+    "CD25",
+    "clonal"
+   ]
+  }
+ ]
+}

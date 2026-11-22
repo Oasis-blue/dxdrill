@@ -1,0 +1,140 @@
+{
+ "terms": [
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Red Cell Indices and Automated FBC",
+   "term": "Mean Corpuscular Volume",
+   "clues": [
+    "Expressed in femtolitres (fL), with a normal adult reference interval of approximately 80 to 100 fL.",
+    "Used as the primary morphological basis for classifying anaemias into microcytic, normocytic, and macrocytic.",
+    "Calculated by dividing haematocrit by the red blood cell count to determine average erythrocyte size."
+   ],
+   "forbidden": [
+    "MCV",
+    "size",
+    "microcytic",
+    "macrocytic",
+    "femtolitre"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Red Cell Indices and Automated FBC",
+   "term": "Red Cell Distribution Width",
+   "clues": [
+    "Helps differentiate iron deficiency anaemia from uncomplicated beta-thalassaemia minor.",
+    "Quantifies the degree of anisocytosis on an automated full blood count.",
+    "The coefficient of variation of red blood cell volume distribution around the mean."
+   ],
+   "forbidden": [
+    "RDW",
+    "anisocytosis",
+    "variation",
+    "volume",
+    "width"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Peripheral Blood Film: Red Cell Morphology",
+   "term": "Anisocytosis",
+   "clues": [
+    "Corresponds directly to an elevated Red Cell Distribution Width (RDW) on automated analyzers.",
+    "Often paired with poikilocytosis on peripheral blood film reports.",
+    "Abnormal variation in the size of circulating red blood cells."
+   ],
+   "forbidden": [
+    "size",
+    "variation",
+    "RDW",
+    "poikilocytosis",
+    "diameter"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Peripheral Blood Film: Red Cell Morphology",
+   "term": "Schistocyte",
+   "clues": [
+    "Also referred to as helmet cells or bite-like fragmented erythrocytes.",
+    "Generated when red blood cells are mechanically sheared by intravascular fibrin strands or prosthetic heart valves.",
+    "A fragmented red blood cell serving as the morphological hallmark of microangiopathic haemolytic anaemia."
+   ],
+   "forbidden": [
+    "fragment",
+    "helmet",
+    "microangiopathic",
+    "DIC",
+    "sheared"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Peripheral Blood Film: Red Cell Morphology",
+   "term": "Howell-Jolly body",
+   "clues": [
+    "Normally removed ('pitted') from circulating erythrocytes by splenic macrophages.",
+    "Frequently observed on blood smears of Nigerian patients with sickle cell anaemia who have undergone autosplenectomy.",
+    "A small, round, densely basophilic nuclear DNA remnant inside a red blood cell indicating hyposplenism."
+   ],
+   "forbidden": [
+    "spleen",
+    "splenectomy",
+    "DNA",
+    "nucleus",
+    "remnant"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Peripheral Blood Film: Red Cell Morphology",
+   "term": "Heinz body",
+   "clues": [
+    "Cannot be seen on routine Wright or Giemsa smears and requires supravital crystal violet staining.",
+    "Classically triggered by oxidative stress in glucose-6-phosphate dehydrogenase (G6PD) deficiency.",
+    "An intra-erythrocytic inclusion composed of precipitated, denatured haemoglobin."
+   ],
+   "forbidden": [
+    "denatured",
+    "haemoglobin",
+    "G6PD",
+    "supravital",
+    "precipitate"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Peripheral Blood Film: Leukocytes and Platelets",
+   "term": "Auer rod",
+   "clues": [
+    "Stains strongly positive for myeloperoxidase and Sudan Black B.",
+    "Formed by abnormal coalescence of primary azurophilic granules.",
+    "A pink-red needle-shaped cytoplasmic crystalline inclusion pathognomonic of acute myeloid leukaemia blasts."
+   ],
+   "forbidden": [
+    "myeloid",
+    "leukaemia",
+    "blast",
+    "azurophilic",
+    "needle"
+   ]
+  },
+  {
+   "topic": "pah-blood-counts-films-and-routine-tests",
+   "sub": "Bone Marrow Examination",
+   "term": "Trephine biopsy",
+   "clues": [
+    "Obtained exclusively from the posterior or anterior iliac crest and never from the sternum.",
+    "Essential when bone marrow aspiration results in a 'dry tap'.",
+    "A cylindrical core of intact bone and marrow sampled with a Jamshidi needle to assess marrow architecture and cellularity."
+   ],
+   "forbidden": [
+    "aspirate",
+    "core",
+    "iliac",
+    "Jamshidi",
+    "marrow"
+   ]
+  }
+ ]
+}
