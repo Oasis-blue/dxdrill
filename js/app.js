@@ -113,8 +113,17 @@
     remote: DX.remote
   };
 
+  /* A small "back" link above pages that sit one level down. It lives outside #app, so live pages that repaint do not remove it. */
+  var BACK = { cards: ["#play", "Play"], competitions: ["#play", "Play"], live: ["#play", "Play"], debates: ["#play", "Play"], polls: ["#home", "Home"], board: ["#home", "Home"], account: ["#home", "Home"] };
+  function backBar(h) {
+    var bar = document.getElementById("backbar"), a = document.getElementById("backlink"), b = BACK[h];
+    if (!bar || !a) return;
+    if (!b) { bar.hidden = true; return; }
+    a.setAttribute("href", b[0]); a.textContent = "\u2190 " + b[1]; bar.hidden = false;
+  }
   function route() {
     var h = (location.hash || "#home").slice(1).split(/[?\/]/)[0];
+    var bb = document.getElementById("backbar"); if (bb) bb.hidden = true;
     if (!routes[h]) {
       /* A menu page whose file did not load: say so, instead of silently showing Home. */
       if (/^[a-z]+$/.test(h) && document.querySelector('[data-nav="' + (PLAY[h] || h) + '"]')) {
@@ -135,7 +144,7 @@
       navVisibility(); return;
     }
     navVisibility();
-    current = routes[h];
+    current = routes[h]; backBar(h);
     document.querySelectorAll("[data-nav]").forEach(function (a) {
       if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
