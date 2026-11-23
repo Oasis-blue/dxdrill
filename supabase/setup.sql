@@ -1829,3 +1829,121 @@ language sql security definer stable set search_path = public as $$
 $$;
 revoke all on function public.public_stats() from public, anon, authenticated;
 grant execute on function public.public_stats() to anon, authenticated;
+
+-- ===== update 15: big screen for live rooms =====
+-- DxDrill update 15: big screen for live rooms. A read-only view anyone with the room code can open on a projector.
+-- It never shows the answer before the reveal, and never shows describe-it terms while a describe round is running.
+-- Needs updates 1 to 11. Safe to run again.
+
+create or replace function public.room_screen(p_code text) returns jsonb
+language plpgsql security definer set search_path = public as $$
+declare r public.rooms; q public.room_questions; vis boolean; qtext text; qopts text[]; top jsonb; teams jsonb; counts jsonb; tc jsonb;
+begin
+  select * into r from public.rooms where code = upper(trim(coalesce(p_code, '')));
+  if not found then return null; end if;
+  perform public._room_tick(r.id);
+  select * into r from public.rooms where id = r.id;
+  if r.cur_idx >= 0 then select * into q from public.room_questions where room_questions.room_id = r.id and idx = r.cur_idx; end if;
+  vis := r.status in ('question', 'reveal') or (r.status = 'finished' and r.cur_idx >= 0);
+  if vis then
+    if q.kind = 'describe' and r.status = 'question' then
+      qtext := 'Describe round. One person on each team describes a term. Guess it out loud!'; qopts := null;
+    elsif q.kind = 'describe' then qtext := q.q; qopts := null;
+    else qtext := q.q; qopts := q.options; end if;
+  end if;
+  select coalesce(jsonb_agg(jsonb_build_object('name', s.display_name, 'score', s.score) order by s.score desc, s.display_name), '[]'::jsonb) into top
+    from (select p.display_name, rp.score from public.room_players rp join public.profiles p on p.id = rp.user_id where rp.room_id = r.id order by rp.score desc, p.display_name limit 5) s;
+  if r.status in ('reveal', 'finished') and q.kind = 'mcq' then
+    select to_jsonb(array_agg(c order by g)) into counts from (
+      select g, count(a.user_id)::int as c from generate_series(0, 3) g
+      left join public.room_answers a on a.room_id = r.id and a.idx = r.cur_idx and a.choice = g group by g) s;
+  end if;
+  if r.n_teams > 0 then
+    select to_jsonb(array_agg(c order by g)) into tc from (
+      select g, count(x.user_id)::int as c from generate_series(1, r.n_teams) g left join public.room_players x on x.room_id = r.id and x.team = g group by g) s;
+    if r.status in ('reveal', 'finished') then
+      select coalesce(jsonb_agg(jsonb_build_object('team', g, 'name', public._team_name(g), 'total',
+          round(coalesce((select sum(a.points) from public.room_answers a join public.room_players p on p.room_id = a.room_id and p.user_id = a.user_id where a.room_id = r.id and p.team = g), 0)::numeric / greatest(c.n, 1)
+            + coalesce((select sum(tp.points) from public.room_team_points tp where tp.room_id = r.id and tp.team = g), 0)::numeric)) order by g), '[]'::jsonb) into teams
+        from generate_series(1, r.n_teams) g cross join lateral (select count(*) as n from public.room_players x where x.room_id = r.id and x.team = g) c;
+    end if;
+  end if;
+  return jsonb_build_object(
+    'name', r.name, 'code', r.code, 'status', r.status, 'n', r.n_questions, 'cur_idx', r.cur_idx, 'pace', r.pace, 'sec', r.seconds_per_q,
+    'q_kind', case when vis then q.kind end, 'q_text', qtext, 'q_options', to_jsonb(qopts),
+    'secs_left', case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at + make_interval(secs => r.seconds_per_q) - now()))) else 0 end,
+    'lead_left', case when r.status = 'question' then greatest(0, extract(epoch from (r.q_started_at - now()))) else 0 end,
+    'reveal_left', case when r.status = 'reveal' and r.pace = 'auto' then greatest(0, 7 - extract(epoch from (now() - r.reveal_at))) else 0 end,
+    'players', (select count(*) from public.room_players rp where rp.room_id = r.id),
+    'answered', case when not vis then 0 when q.kind = 'describe' then (select count(*) from public.room_team_points tp where tp.room_id = r.id and tp.idx = r.cur_idx and tp.points > 0)
+                     else (select count(*) from public.room_answers ra where ra.room_id = r.id and ra.idx = r.cur_idx) end,
+    'right_answer', case when r.status in ('reveal', 'finished') and q.kind = 'mcq' then q.answer end,
+    'explain', case when r.status in ('reveal', 'finished') then q.explain end,
+    'option_counts', counts, 'n_teams', r.n_teams, 'team_counts', tc, 'top', top, 'teams', teams);
+end $$;
+revoke all on function public.room_screen(text) from public, anon, authenticated;
+grant execute on function public.room_screen(text) to anon, authenticated;
+
+-- ===== update 16 =====
+-- DxDrill update 16: use a phone as the Hall mode quizmaster (optional).
+-- The shared screen publishes a private snapshot (question, answer, buttons) under a short code; the phone reads it and sends button taps back.
+-- Anyone who knows the code can open the quizmaster phone view, so the code is the secret. Sessions are deleted after a day.
+-- Needs updates 1 to 15. Safe to run again.
+
+create table if not exists public.hall_sessions (
+  code       text primary key,
+  payload    jsonb,
+  cmds       jsonb not null default '[]'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+alter table public.hall_sessions enable row level security;
+revoke all on public.hall_sessions from anon, authenticated;
+
+create or replace function public.hall_open() returns text
+language plpgsql security definer set search_path = public as $$
+declare c text; i int := 0; alpha text := 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+begin
+  delete from public.hall_sessions where updated_at < now() - interval '1 day';
+  if (select count(*) from public.hall_sessions where created_at > now() - interval '1 day') >= 400 then raise exception 'busy right now'; end if;
+  loop
+    c := ''; for k in 1..6 loop c := c || substr(alpha, 1 + floor(random() * length(alpha))::int, 1); end loop;
+    begin insert into public.hall_sessions (code) values (c); return c;
+    exception when unique_violation then i := i + 1; if i > 8 then raise exception 'busy right now'; end if; end;
+  end loop;
+end $$;
+
+-- The shared screen: store the latest snapshot and collect any button taps from the phone.
+create or replace function public.hall_sync(p_code text, p_payload jsonb) returns jsonb
+language plpgsql security definer set search_path = public as $$
+declare v jsonb;
+begin
+  select cmds into v from public.hall_sessions where code = upper(trim(coalesce(p_code, ''))) for update;
+  if not found then return null; end if;
+  if p_payload is not null and length(p_payload::text) > 20000 then raise exception 'too big'; end if;
+  update public.hall_sessions set cmds = '[]'::jsonb, updated_at = now(), payload = coalesce(p_payload, payload) where code = upper(trim(p_code));
+  return v;
+end $$;
+
+-- The phone: read the latest snapshot.
+create or replace function public.hall_pull(p_code text) returns jsonb
+language plpgsql security definer stable set search_path = public as $$
+declare s public.hall_sessions;
+begin
+  select * into s from public.hall_sessions where code = upper(trim(coalesce(p_code, '')));
+  if not found then return null; end if;
+  return jsonb_build_object('payload', s.payload, 'age', extract(epoch from (now() - s.updated_at)));
+end $$;
+
+-- The phone: send a button tap.
+create or replace function public.hall_cmd(p_code text, p_cmd jsonb) returns void
+language plpgsql security definer set search_path = public as $$
+declare c text := upper(trim(coalesce(p_code, ''))); clean jsonb;
+begin
+  if jsonb_typeof(p_cmd) <> 'object' or length(coalesce(p_cmd->>'a', '')) not between 1 and 24 then return; end if;
+  clean := jsonb_build_object('a', left(p_cmd->>'a', 24), 'v', left(coalesce(p_cmd->>'v', ''), 24), 'i', left(coalesce(p_cmd->>'i', ''), 4));
+  update public.hall_sessions set cmds = case when jsonb_array_length(cmds) >= 20 then cmds else cmds || jsonb_build_array(clean) end where code = c;
+end $$;
+
+revoke all on function public.hall_open(), public.hall_sync(text, jsonb), public.hall_pull(text), public.hall_cmd(text, jsonb) from public, anon, authenticated;
+grant execute on function public.hall_open(), public.hall_sync(text, jsonb), public.hall_pull(text), public.hall_cmd(text, jsonb) to anon, authenticated;
