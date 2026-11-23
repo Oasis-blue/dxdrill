@@ -15,6 +15,7 @@
       "Your practice history and settings stay on your own device.",
       "Nothing is sold or shared for advertising. The site runs on GitHub Pages, and accounts and scores are kept in a Supabase database.",
       "To count how many people use the site, each phone or browser sends one anonymous note per day with a random code and the page name. It holds no name, email or cookie.",
+      "The site also uses Cloudflare Web Analytics, which counts visits, countries and devices without cookies and without following you across other sites. It is skipped if your browser sends Do Not Track.",
       "The admin can see the account list and scores, and has access to the database. To have your account and scores removed, ask the admin."
     ]
   };
