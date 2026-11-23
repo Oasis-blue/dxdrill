@@ -48,6 +48,7 @@
   function onKey(e) {
     if (!open) return;
     if (e.key === "Escape") { e.stopPropagation(); e.preventDefault(); close(); return; }
+    if (open.className.indexOf("soft") > -1) return;   /* the first-time card does not block the page behind it */
     if (e.key === "Tab") {   /* keep focus inside the pop-up */
       var f = open.querySelectorAll("button"); if (!f.length) return;
       var first = f[0], last = f[f.length - 1];
@@ -55,16 +56,21 @@
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     } else { e.stopPropagation(); }   /* keys such as G or Space must not reach the page behind */
   }
-  function show(key) {
+  function show(key, auto) {
     var t = TIPS[key]; if (!t || open) return;
-    lastFocus = document.activeElement;
-    var d = document.createElement("div"); d.id = "tipmodal"; d.className = "tipback";
-    d.innerHTML = '<div class="tipbox" role="dialog" aria-modal="true" aria-labelledby="tiph"><h2 id="tiph">' + esc(t[0]) + '</h2><ol>' +
+    lastFocus = auto ? null : document.activeElement;
+    var d = document.createElement("div"); d.id = "tipmodal"; d.className = "tipback" + (auto ? " soft" : "");
+    if (auto) d.innerHTML = '<div class="tipbox" role="dialog" aria-modal="false" aria-labelledby="tiph"><h2 id="tiph">' + esc(t[0]) + '</h2><p class="tipsoftp">New here? A 20-second guide is one tap away. You can open it later with the ? button.</p><div class="row tight"><button type="button" class="btn primary small" data-tip="more">Show me</button><button type="button" class="btn ghost small" data-tip="ok">Not now</button></div></div>';
+    else d.innerHTML = '<div class="tipbox" role="dialog" aria-modal="' + (auto ? "false" : "true") + '" aria-labelledby="tiph"><h2 id="tiph">' + esc(t[0]) + '</h2><ol>' +
       t[1].map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ol><div class="row tight"><button type="button" class="btn primary" data-tip="ok">Got it</button></div></div>';
-    d.addEventListener("click", function (e) { if (e.target === d || (e.target.getAttribute && e.target.getAttribute("data-tip") === "ok")) close(); });
+    d.addEventListener("click", function (e) {
+      var tp = e.target.getAttribute && e.target.getAttribute("data-tip");
+      if (tp === "more") { close(); setTimeout(function () { show(key, false); }, 0); return; }
+      if ((e.target === d && !auto) || tp === "ok") close();
+    });
     document.body.appendChild(d); open = d;
     document.addEventListener("keydown", onKey, true);
-    var ok = d.querySelector("[data-tip=ok]"); if (ok) ok.focus();
+    var ok = d.querySelector("[data-tip=ok]"); if (ok && !auto) ok.focus();
     mark(key);
   }
   /* the ? button: only on pages that have a tip */
@@ -83,7 +89,7 @@
       (function wait(n) {
         if ((location.hash || "#home").slice(1) !== h) return;               /* they moved on */
         if (document.getElementById("splash") || document.getElementById("updbar") && n < 3) { if (n < 12) setTimeout(function () { wait(n + 1); }, 800); return; }
-        setTimeout(function () { if ((location.hash || "#home").slice(1) === h) show(h); }, 500);
+        setTimeout(function () { if ((location.hash || "#home").slice(1) === h) show(h, true); }, 500);
       })(0);
     }
   };
