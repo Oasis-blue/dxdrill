@@ -1947,3 +1947,112 @@ end $$;
 
 revoke all on function public.hall_open(), public.hall_sync(text, jsonb), public.hall_pull(text), public.hall_cmd(text, jsonb) from public, anon, authenticated;
 grant execute on function public.hall_open(), public.hall_sync(text, jsonb), public.hall_pull(text), public.hall_cmd(text, jsonb) to anon, authenticated;
+
+-- ===== update 17 =====
+-- DxDrill update 17: which pages people open (admin only view). One row per device, page and day. No names, no cookies.
+-- Needs updates 1 to 13. Safe to run again.
+
+create table if not exists public.page_hits (
+  day    date not null,
+  device text not null,
+  page   text not null,
+  hits   int  not null default 1,
+  primary key (day, device, page)
+);
+alter table public.page_hits enable row level security;
+revoke all on public.page_hits from anon, authenticated;
+
+create or replace function public.page_ping(p_device text, p_page text) returns void
+language plpgsql security definer set search_path = public as $$
+declare d date := (now() at time zone 'Africa/Lagos')::date; pg text := lower(coalesce(p_page, ''));
+begin
+  if p_device is null or length(p_device) < 8 or length(p_device) > 40 then return; end if;
+  if pg !~ '^[a-z]{2,14}$' then return; end if;          -- page names only, nothing else gets stored
+  -- a daily ceiling so nobody can fill the free database with fake rows
+  if (select count(*) from public.page_hits where day = d) >= 20000 then return; end if;
+  insert into public.page_hits (day, device, page, hits) values (d, p_device, pg, 1)
+  on conflict (day, device, page) do update set hits = public.page_hits.hits + 1;
+  if random() < 0.01 then delete from public.page_hits where day < d - 120; end if;
+end $$;
+
+create or replace function public.admin_pages(p_days int default 14)
+returns table (page text, visitors bigint, loads bigint)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query
+    select h.page, count(distinct h.device)::bigint, sum(h.hits)::bigint
+    from public.page_hits h
+    where h.day >= (now() at time zone 'Africa/Lagos')::date - (greatest(1, least(coalesce(p_days, 14), 90)) - 1)
+    group by h.page order by 2 desc, 3 desc;
+end $$;
+
+revoke all on function public.page_ping(text, text), public.admin_pages(int) from public, anon, authenticated;
+grant execute on function public.page_ping(text, text) to anon, authenticated;
+grant execute on function public.admin_pages(int) to authenticated;
+
+-- ===== update 18 =====
+-- DxDrill update 18: admin activity views. Who answers a lot, and which topics are running dry. Admin only.
+-- Needs updates 1 to 14. Safe to run again.
+
+-- Answers today, this week, and how many people (admin accounts are left out).
+create or replace function public.admin_activity_summary()
+returns table (answers_today bigint, answers_7d bigint, people_today bigint, people_7d bigint)
+language plpgsql security definer stable set search_path = public as $$
+declare d date := (now() at time zone 'Africa/Lagos')::date;
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query
+  select count(*) filter (where (a.created_at at time zone 'Africa/Lagos')::date = d),
+         count(*) filter (where (a.created_at at time zone 'Africa/Lagos')::date > d - 7),
+         count(distinct a.user_id) filter (where (a.created_at at time zone 'Africa/Lagos')::date = d),
+         count(distinct a.user_id) filter (where (a.created_at at time zone 'Africa/Lagos')::date > d - 7)
+  from public.answers a join public.profiles p on p.id = a.user_id
+  where not p.is_admin and a.created_at > now() - interval '8 days';
+end $$;
+
+-- The most active people. A repeat is an answer to a question the same person had already answered in this period.
+create or replace function public.admin_active_people(p_days int default 7, p_limit int default 30)
+returns table (display_name text, class_id text, answers bigint, distinct_questions bigint, repeat_pct int)
+language plpgsql security definer stable set search_path = public as $$
+declare since timestamptz := now() - make_interval(days => greatest(1, least(coalesce(p_days, 7), 60)));
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query
+  select p.display_name, p.class_id, count(*)::bigint, count(distinct a.question_id)::bigint,
+         round(100.0 * (count(*) - count(distinct a.question_id)) / count(*))::int
+  from public.answers a join public.profiles p on p.id = a.user_id
+  where a.created_at >= since and not p.is_admin
+  group by p.id, p.display_name, p.class_id
+  order by 3 desc
+  limit least(greatest(coalesce(p_limit, 30), 1), 100);
+end $$;
+
+-- Per topic: how many questions, how many people have tried it, how many have answered at least 80% of its questions.
+-- The page sends {"topic-id": ["question-id", ...], ...} because the database does not know which topic a question is in.
+create or replace function public.admin_topic_coverage(p_map jsonb)
+returns table (topic text, questions int, people bigint, finished bigint, answers bigint, accuracy int)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  if p_map is null or jsonb_typeof(p_map) <> 'object' or length(p_map::text) > 400000 then raise exception 'bad input'; end if;
+  return query
+  with m as (select t.key as tp, e.qid from jsonb_each(p_map) t, jsonb_array_elements_text(t.value) e(qid)),
+  tot as (select m.tp, count(distinct m.qid)::int n from m group by m.tp),
+  ans as (
+    select m.tp, a.user_id, a.question_id, a.correct
+    from m join public.answers a on a.question_id = m.qid
+    join public.profiles p on p.id = a.user_id and not p.is_admin),
+  per as (select s.tp, s.user_id, count(distinct s.question_id) seen from ans s group by s.tp, s.user_id),
+  agg as (select s.tp, count(*) n, count(*) filter (where s.correct) ok from ans s group by s.tp)
+  select tot.tp, tot.n,
+         coalesce((select count(*) from per where per.tp = tot.tp), 0)::bigint,
+         coalesce((select count(*) from per where per.tp = tot.tp and per.seen >= ceil(tot.n * 0.8)), 0)::bigint,
+         coalesce(agg.n, 0)::bigint,
+         case when coalesce(agg.n, 0) = 0 then null else round(100.0 * agg.ok / agg.n)::int end
+  from tot left join agg on agg.tp = tot.tp
+  order by 4 desc, 3 desc, 2;
+end $$;
+
+revoke all on function public.admin_activity_summary(), public.admin_active_people(int, int), public.admin_topic_coverage(jsonb) from public, anon, authenticated;
+grant execute on function public.admin_activity_summary(), public.admin_active_people(int, int), public.admin_topic_coverage(jsonb) to authenticated;
