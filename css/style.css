@@ -374,3 +374,10 @@ body.hr-on #app .marks, body.hr-on #app .row.tight{display:none}
 #backbar a{display:inline-block;padding:8px 12px 8px 0;font-size:15px;font-weight:600;text-decoration:none;color:var(--accent,inherit);min-height:40px}
 #backbar a:hover{text-decoration:underline}
 body.bigscreen #backbar{display:none!important}
+/* first-time tip: a small card at the bottom that does not block the page */
+.tipback.soft{background:transparent;align-items:flex-end;justify-content:center;pointer-events:none;padding:0 12px calc(12px + env(safe-area-inset-bottom,0px))}
+.tipback.soft .tipbox{pointer-events:auto;max-width:420px;padding:14px 16px 12px;box-shadow:0 8px 28px rgba(0,0,0,.28);max-height:60vh}
+.tipback.soft .tipbox h2{font-size:17px;margin:0 0 6px}
+.tipback.soft .tipbox ol{margin:0 0 10px;font-size:14px}
+.tipback.soft .tipbox li{margin:0 0 5px;line-height:1.4}
+.tipsoftp{margin:0 0 10px;font-size:14px;line-height:1.4}
