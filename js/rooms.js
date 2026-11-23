@@ -275,7 +275,8 @@
   }
   function screenRow(s) {
     if (!s.is_host || s.status === "finished" || !R.code) return "";
-    return '<p class="hint">For a projector: <a href="' + esc(location.pathname + "#screen?c=" + R.code) + '" target="_blank" rel="noopener">open the big screen</a> in a new tab, then use the full-screen button. It only shows the question and scores, never the answer before the reveal. Anyone with the link can watch without joining.</p>';
+    return '<p class="hint">For a projector: <a href="' + esc(location.pathname + "#screen?c=" + R.code) + '" target="_blank" rel="noopener">open the big screen</a> in a new tab, then use the full-screen button. It only shows the question and scores, never the answer before the reveal. Anyone with the link can watch without joining.</p>' +
+      '<div class="row tight"><button class="btn small" data-act="scrcopy">Copy big-screen link</button></div>' + (R.scrNote ? '<p class="note" role="status">' + esc(R.scrNote) + '</p>' : "");
   }
   function exitRow(s) {
     if (s.status !== "question" && s.status !== "reveal") return "";
@@ -418,6 +419,13 @@
     if (DX.fx && DX.fx.unlock) DX.fx.unlock();   /* browsers only allow sound after a tap */
     if (a === "lsound") { DX.fx.toggleLiveSound(); repaint(); return; }
     if (a === "lfx") { DX.fx.toggle(); repaint(); return; }
+    if (a === "scrcopy") {
+      var u = location.origin + location.pathname + "#screen?c=" + R.code;
+      if (navigator.share) navigator.share({ url: u, title: "DxDrill big screen" }).catch(function () { });
+      else if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(function () { R.scrNote = "Link copied."; repaint(); }, function () { R.scrNote = u; repaint(); });
+      else { R.scrNote = u; repaint(); }
+      return;
+    }
     if (a === "join") join();
     else if (a === "fcreate") friendCreate();
     else if (a === "team") act("room_set_team", { p_room: R.id, p_team: parseInt(t.getAttribute("data-t"), 10) }, fetchState);
