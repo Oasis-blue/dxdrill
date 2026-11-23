@@ -273,6 +273,11 @@
       '<div class="row tight"><button class="btn small" data-act="leaveroom">Done</button></div></section>';
     return out;
   }
+  function toolsHtml() {
+    return '<section class="lv"><h3>Helper screens (no sign-in needed)</h3><p class="tag">Not playing? Use another device to help run a session.</p>' +
+      '<div class="row tight"><a class="btn small" href="#screen" style="text-decoration:none">Big screen (projector)</a><a class="btn small" href="#remote" style="text-decoration:none">Quizmaster phone (Hall mode)</a></div>' +
+      '<p class="hint">Big screen shows a live room\u2019s questions and scores for the whole room. Quizmaster phone controls a Hall mode session privately. Both ask for the code the host sees.</p></section>';
+  }
   function screenRow(s) {
     if (!s.is_host || s.status === "finished" || !R.code) return "";
     return '<p class="hint">For a projector: <a href="' + esc(location.pathname + "#screen?c=" + R.code) + '" target="_blank" rel="noopener">open the big screen</a> in a new tab, then use the full-screen button. It only shows the question and scores, never the answer before the reveal. Anyone with the link can watch without joining.</p>' +
@@ -371,13 +376,13 @@
   function render(a) {
     app = a; var c = C();
     if (!c || !c.ok) { a.innerHTML = '<div class="wrap stack"><h1>Live quiz</h1><p class="lede">Live quizzes could not load. Check your connection and refresh.</p></div>'; return; }
-    if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Live quiz</p><h1>Sign in to join</h1><p class="lede">Live quizzes run on your phone with a code from the host.</p></header><a class="btn primary" href="#account">Sign in</a></div>'; return; }
+    if (!c.user) { a.innerHTML = '<div class="wrap stack"><header><p class="eyebrow">Live quiz</p><h1>Sign in to join</h1><p class="lede">Live quizzes run on your phone with a code from the host.</p></header><a class="btn primary" href="#account">Sign in</a>' + toolsHtml() + '</div>'; return; }
     var inv = inviteCode();
     if (inv && !R.id && !R.busy && !R.tried) { R.tried = true; R.join = inv; try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) { } join(); return; }
     var note = R.err ? '<p class="note bad" role="alert">' + esc(R.err) + '</p>' : "", body, head = "";
     if (R.id && R.st) body = (hostOnly(R.st) ? hostHtml(R.st) : R.st.is_host ? friendHostHtml(R.st) : playerHtml(R.st)) + screenRow(R.st) + exitRow(R.st);
     else if (R.id) body = '<p class="muted">Joining…</p>';
-    else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml(); }
+    else { head = '<header><p class="eyebrow">Live quiz</p><h1>Join a live quiz</h1><p class="lede">Join with a code and race your classmates. Right answers count more the faster you are.</p></header>'; body = homeHtml() + toolsHtml(); }
     a.innerHTML = '<div class="wrap stack">' + head + note + body + toggles() + '</div>';
     ["lf-name", "lf-n", "lf-sec", "lf-teams", "lf-nd", "ff-name", "ff-n", "ff-sec"].forEach(function (id) { var el = document.getElementById(id); if (el && R.form[id] !== undefined) el.value = R.form[id]; });
     var s0 = R.st;
