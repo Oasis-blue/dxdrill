@@ -264,18 +264,19 @@
       v: 1, view: H.view, round: R && H.view === "round" ? (ROUND_NAMES[R.type] || R.type) : "", heads: heads,
       teams: (H.teams || []).map(function (t) { return { n: t.name, s: t.score }; }),
       active: R && H.view === "round" ? (R.type === "board" && R.ans != null ? R.ans : R.team != null ? R.team : -1) : -1,
-      timer: TM.total > 0 ? { left: Math.max(0, Math.round(TM.left)), run: !!TM.running, total: TM.total } : null,
+      timer: TM.total > 0 ? { left: Math.max(0, Math.ceil(TM.left / 1000)), run: !!TM.running, total: Math.round(TM.total / 1000) } : null,
       item: snapshotItem(), btns: remoteButtons().map(function (b) { return { a: b.a, v: b.v, i: b.i, t: b.t, c: b.c }; })
     };
   }
   function remoteSync() {
     var sb = cloud(); if (!H.remote || !sb || RM.busy) return;
-    var s = JSON.stringify(snapshot()), send = s !== RM.last; RM.busy = true;
-    sb.rpc("hall_sync", { p_code: H.remote, p_payload: send ? JSON.parse(s) : null }).then(function (r) {
+    var snap = snapshot(), s = JSON.stringify(snap), key = JSON.stringify(snap, function (k, v) { return k === "left" && snap.timer && snap.timer.run ? 0 : v; });
+    var send = key !== RM.key || (snap.timer && snap.timer.run) || Date.now() - (RM.sentAt || 0) > 5000; RM.busy = true;
+    sb.rpc("hall_sync", { p_code: H.remote, p_payload: send ? snap : null }).then(function (r) {
       RM.busy = false;
       if (r.error) { H.remoteNote = "Lost contact with the phone link. Trying again…"; return; }
       if (r.data === null) { H.remoteNote = "The phone link has expired. Link a phone again."; remoteOff(true); paint(); return; }
-      if (send) RM.last = s; H.remoteNote = "";
+      if (send) { RM.key = key; RM.sentAt = Date.now(); } H.remoteNote = "";
       (r.data || []).forEach(runCmd);
     }, function () { RM.busy = false; });
   }
@@ -285,11 +286,11 @@
   }
   function remoteKick() { if (!H.remote) return; clearTimeout(RM.kick); RM.kick = setTimeout(remoteSync, 250); }
   function remoteOn(code) {
-    H.remote = code; RM.last = ""; DX.store.set("dx.hall.remote", { code: code, t: Date.now() });
+    H.remote = code; RM.key = ""; DX.store.set("dx.hall.remote", { code: code, t: Date.now() });
     clearInterval(RM.timer); RM.timer = setInterval(remoteSync, 1500); remoteSync();
   }
   function remoteOff(keepNote) {
-    H.remote = null; RM.last = ""; clearInterval(RM.timer); RM.timer = null; clearTimeout(RM.kick); DX.store.set("dx.hall.remote", null);
+    H.remote = null; RM.key = ""; clearInterval(RM.timer); RM.timer = null; clearTimeout(RM.kick); DX.store.set("dx.hall.remote", null);
     var p = document.getElementById("hallremote"); if (p && p.parentNode) p.parentNode.removeChild(p);
   }
   function remoteLink() { return location.origin + location.pathname + "#remote?c=" + H.remote; }
