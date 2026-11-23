@@ -44,10 +44,10 @@
     return h;
   }
   function view() {
-    if (!S.code) return '<div class="rm"><h1>Quizmaster phone</h1><p>Type the code shown on the main screen.</p><div class="row"><input id="rm-code" maxlength="8" autocomplete="off" placeholder="Code" aria-label="Code"><button class="btn" data-act="rmgo">Connect</button></div></div>';
+    if (!S.code) return '<div class="rm"><h1>Quizmaster phone</h1><p>Type the code shown on the main screen. <a href="#hall">Back to Hall mode</a></p><div class="row"><input id="rm-code" maxlength="8" autocomplete="off" placeholder="Code" aria-label="Code"><button class="btn" data-act="rmgo">Connect</button></div></div>';
     if (S.err && !S.p) return '<div class="rm"><h1>Quizmaster phone</h1><p class="note bad" role="status">' + esc(S.err) + '</p></div>';
     var p = S.p; if (!p) return '<div class="rm"><p>Connecting…</p></div>';
-    var h = '<div class="rm"><p class="hint">Quizmaster phone · ' + esc(S.code) + '</p>';
+    var h = '<div class="rm"><p class="hint">Quizmaster phone · ' + esc(S.code) + ' · <a href="#hall">Leave</a></p>';
     if (lost()) h += '<p class="note bad rm-lost" role="status">Lost contact with the main screen. Check that it is still open and online.</p>';
     if (p.teams && p.teams.length) h += '<div class="rm-teams">' + p.teams.map(function (t, i) { return '<span class="rm-team' + (i === p.active ? " on" : "") + '">' + esc(t.n) + ' ' + esc(t.s) + '</span>'; }).join("") + '</div>';
     if (p.view !== "round" && p.view !== "roundend") { return h + '<p>Pick a round on the main screen. Questions and answers will appear here.</p></div>'; }
