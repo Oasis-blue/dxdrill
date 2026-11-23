@@ -1,6 +1,6 @@
 /* DxDrill service worker: lets the site open and run with no connection.
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
-var VERSION = "dxdrill-v12.0";
+var VERSION = "dxdrill-v12.2";
 var SHELL = [
   "./", "index.html", "manifest.webmanifest", "css/style.css",
   "js/data.js", "js/practice.js", "js/fx.js", "js/hall.js", "js/tips.js", "js/screen.js", "js/remote.js", "js/features.js", "js/cloud.js", "js/polls.js", "js/about.js", "js/start.js", "js/feedback.js", "js/comps.js", "js/rooms.js", "js/debates.js", "js/cards.js", "js/app.js",
