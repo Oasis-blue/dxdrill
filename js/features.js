@@ -40,7 +40,39 @@
       '<section class="stack">' + LIST.map(function (x) {
         var on = F.map[x[0]] === true || (F.map[x[0]] === undefined && !!FALLBACK[x[0]]);
         return '<article class="card"><h2>' + esc(x[1]) + '</h2><p>' + esc(x[2]) + '</p><p><b>' + (on ? "Shown to students" : "Hidden from students") + '</b></p><button class="btn ' + (on ? "ghost" : "primary") + '" data-act="set" data-key="' + x[0] + '" data-on="' + (on ? "0" : "1") + '"' + (F.busy ? " disabled" : "") + '>' + (on ? "Hide" : "Show to students") + '</button></article>';
-      }).join("") + '</section>' + settingsHtml() + visitsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
+      }).join("") + '</section>' + settingsHtml() + activityHtml() + visitsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
+  }
+  /* Activity: who answers a lot, and which topics students are finishing. Real data from the answers table; admin accounts are left out. */
+  function topicMap() {
+    var m = {}; (DX.questions || []).forEach(function (q) { (m[q.topic] = m[q.topic] || []).push(String(q.id)); });
+    return m;
+  }
+  function activityHtml() {
+    var sb = C().sb;
+    if (F.act === undefined) {
+      F.act = null;
+      Promise.all([sb.rpc("admin_activity_summary"), sb.rpc("admin_active_people", { p_days: 7, p_limit: 20 }), sb.rpc("admin_topic_coverage", { p_map: topicMap() })]).then(function (r) {
+        F.act = (r[0].error || r[1].error || r[2].error) ? { err: true } : { sum: (r[0].data || [])[0] || {}, people: r[1].data || [], topics: r[2].data || [] };
+        repaint();
+      }, function () { F.act = { err: true }; repaint(); });
+    }
+    var a = F.act;
+    if (!a) return '<section class="section stack"><h2>Activity</h2><p class="muted">Loading…</p></section>';
+    if (a.err) return '<section class="section stack"><h2>Activity</h2><p class="note bad">Run supabase/update-18.sql in Supabase first.</p></section>';
+    var s = a.sum, ppl = a.people.map(function (x) {
+      return '<tr><td>' + esc(x.display_name || "?") + '</td><td>' + esc(x.class_id || "") + '</td><td class="n">' + x.answers + '</td><td class="n">' + x.distinct_questions + '</td><td class="n">' + x.repeat_pct + '%</td></tr>'; }).join("");
+    var shown = F.actAll ? a.topics : a.topics.slice(0, 12);
+    var tps = shown.map(function (x) {
+      var t = DX.topicById && DX.topicById[x.topic]; var nm = t ? t.name : x.topic;
+      return '<tr><td>' + esc(nm) + '</td><td class="n">' + x.questions + '</td><td class="n">' + x.people + '</td><td class="n">' + x.finished + '</td><td class="n">' + x.answers + '</td><td class="n">' + (x.accuracy == null ? "-" : x.accuracy + "%") + '</td></tr>'; }).join("");
+    return '<section class="section stack"><h2>Activity</h2><p class="hint">From signed-in answers only (practice without an account stays on the device). Your own account is left out.</p>' +
+      '<p><b>' + (s.answers_today || 0) + '</b> answers today by <b>' + (s.people_today || 0) + '</b> people · <b>' + (s.answers_7d || 0) + '</b> in 7 days by <b>' + (s.people_7d || 0) + '</b> people</p>' +
+      '<h3>Most active, last 7 days</h3><p class="hint">Repeat % is the share of a person\u2019s answers that were questions they had already answered. A high number means they are running out of fresh questions.</p>' +
+      (ppl ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Name</th><th>Class</th><th class="n">Answers</th><th class="n">Different questions</th><th class="n">Repeat</th></tr></thead><tbody>' + ppl + '</tbody></table></div>' : '<p class="muted">No answers yet.</p>') +
+      '<h3>Topics students are finishing</h3><p class="hint">Finished = people who have answered at least 80% of that topic\u2019s questions. Write new questions for the topics at the top first.</p>' +
+      (tps ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Topic</th><th class="n">Questions</th><th class="n">People</th><th class="n">Finished</th><th class="n">Answers</th><th class="n">Right</th></tr></thead><tbody>' + tps + '</tbody></table></div>' : '<p class="muted">Nothing yet.</p>') +
+      (!F.actAll && a.topics.length > 12 ? '<div class="row tight"><button class="btn ghost small" data-act="allsubj">Show all ' + a.topics.length + ' topics</button></div>' : "") +
+      '<div class="row tight"><button class="btn ghost small" data-act="refact">Refresh</button></div></section>';
   }
   function pagesHtml(list) {
     if (list === null || list === undefined) return '<p class="hint">Run supabase/update-17.sql to see which pages people open.</p>';
@@ -82,6 +114,8 @@
         .catch(function () { F.busy = false; F.err = "That did not save. Run supabase/update-10.sql first, then try again."; repaint(); });
       return;
     }
+    if (e.target.closest && e.target.closest("[data-act='refact']")) { F.act = undefined; repaint(); return; }
+    if (e.target.closest && e.target.closest("[data-act='allsubj']")) { F.actAll = true; repaint(); return; }
     if (e.target.closest && e.target.closest("[data-act='refvisits']")) { F.visits = undefined; repaint(); return; }
     var t = e.target.closest ? e.target.closest("[data-act='set']") : null; if (!t) return;
     var key = t.getAttribute("data-key"), on = t.getAttribute("data-on") === "1";
