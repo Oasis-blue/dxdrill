@@ -209,7 +209,7 @@
     return "ANSWER KEY (quizmaster only, do not show the room)\n\n" + out.join("\n\n");
   }
   function keyRow() {
-    if (!R || (R.type !== "board" && R.type !== "describe")) return "";
+    if (H.remote || !R || (R.type !== "board" && R.type !== "describe")) return "";
     return '<div class="row tight"><button class="btn small ghost" data-act="keycopy">Copy answer key</button><button class="btn small ghost" data-act="keyopen">Open answer key in a new tab</button></div>' +
       '<p class="hint">The answer key is for the quizmaster only. Copy it to your own phone so you can check answers without showing them on this screen.</p>' + (H.keyNote ? '<p class="note" role="status">' + esc(H.keyNote) + '</p>' : "");
   }
@@ -221,6 +221,98 @@
   function keyOpen() {
     var html = '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Answer key (private)</title><body style="font:17px/1.5 system-ui,sans-serif;max-width:720px;margin:16px auto;padding:0 16px"><pre style="white-space:pre-wrap;font:inherit">' + keyText().replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</pre></body>';
     try { var u = URL.createObjectURL(new Blob([html], { type: "text/html" })); var w = window.open(u, "_blank"); if (!w) { H.keyNote = "Your browser blocked the new tab. Use Copy answer key instead."; paint(); } } catch (e) { }
+  }
+  /* ---------- optional: a phone as the quizmaster ----------
+     This screen publishes a private snapshot (the question, its answer and the buttons) under a short code. The phone page (remote.js)
+     reads it and sends button taps back; this screen then presses the same button itself. Needs the internet on both devices. */
+  var RM = { timer: null, last: "", busy: false, kick: null };
+  var ROUND_NAMES = { rapid: "Rapid fire", board: "Question board", all: "Everyone answers", describe: "Describe it", explain: "Explain it" };
+  function cloud() { var c = DX.cloud; return c && c.ok && c.sb ? c.sb : null; }
+  function qInfo(w) {
+    var q = w.q, i = { sub: subOf(q), q: w.opts ? q.q : q.open.q, why: q.explain || "" };
+    if (w.opts) {
+      i.opts = w.order.map(function (oi, k) { return { k: LETTERS[k], t: q.options[oi], ok: oi === q.answer }; });
+      i.ans = LETTERS[w.order.indexOf(q.answer)] + ". " + q.options[q.answer];
+    } else { i.ans = q.open && q.open.a ? q.open.a : q.options[q.answer]; i.also = (q.open && q.open.accept) || []; }
+    return i;
+  }
+  function snapshotItem() {
+    if (H.view !== "round" || !R) return null;
+    if (R.type === "describe") { var t = R.terms[R.i]; return t ? { term: t.term, clues: t.clues.slice(0, R.phase === "result" ? t.clues.length : R.clue + 1), allClues: t.clues, sub: t.sub || "" } : null; }
+    if (R.type === "explain") { return R.cur && R.phase === "run" ? { term: R.cur.term, forbidden: R.cur.forbidden || [] } : null; }
+    var w = R.type === "rapid" ? (R.phase === "run" || R.phase === "timeup" ? R.cur : null)
+          : R.type === "board" ? (R.phase === "q" ? R.tiles[R.ti].w : null)
+          : R.type === "all" ? R.qs[R.i] : null;
+    return w ? qInfo(w) : null;
+  }
+  function remoteButtons() {   /* the buttons a phone may press: only ones that exist on this screen right now */
+    if (H.view !== "round" && H.view !== "roundend") return [];
+    var out = [], els = document.querySelectorAll("#app .wrap button[data-act]");
+    Array.prototype.forEach.call(els, function (b) {
+      var a = b.getAttribute("data-act");
+      if (b.disabled || b.closest(".scoreboard") || /^(key|remote|edit|setup|reset|tp|launch)/.test(a)) return;
+      var c = b.cloneNode(true), kb = c.querySelectorAll("kbd"); Array.prototype.forEach.call(kb, function (k) { k.parentNode.removeChild(k); });
+      var cls = b.classList.contains("good") ? "good" : b.classList.contains("bad") ? "bad" : b.classList.contains("primary") ? "primary" : "";
+      out.push({ el: b, a: a, v: b.getAttribute("data-v") || "", i: b.getAttribute("data-i") || "", t: (c.textContent.replace(/\s+/g, " ").replace(/\s*\([A-Z]\)\s*$/, "").replace(/\s+(Esc|Space)$/, "").trim() || a) + (b.getAttribute("aria-pressed") === "true" ? " ✓" : ""), c: cls });
+    });
+    return out;
+  }
+  function snapshot() {
+    var heads = [], st = document.querySelector("#app .stage");
+    if (st) Array.prototype.forEach.call(st.querySelectorAll(".who,.sub,.tally"), function (e) { var t = e.textContent.replace(/\s+/g, " ").trim(); if (t && heads.length < 4) heads.push(t); });
+    return {
+      v: 1, view: H.view, round: R && H.view === "round" ? (ROUND_NAMES[R.type] || R.type) : "", heads: heads,
+      teams: (H.teams || []).map(function (t) { return { n: t.name, s: t.score }; }),
+      active: R && H.view === "round" ? (R.type === "board" && R.ans != null ? R.ans : R.team != null ? R.team : -1) : -1,
+      timer: TM.total > 0 ? { left: Math.max(0, Math.round(TM.left)), run: !!TM.running, total: TM.total } : null,
+      item: snapshotItem(), btns: remoteButtons().map(function (b) { return { a: b.a, v: b.v, i: b.i, t: b.t, c: b.c }; })
+    };
+  }
+  function remoteSync() {
+    var sb = cloud(); if (!H.remote || !sb || RM.busy) return;
+    var s = JSON.stringify(snapshot()), send = s !== RM.last; RM.busy = true;
+    sb.rpc("hall_sync", { p_code: H.remote, p_payload: send ? JSON.parse(s) : null }).then(function (r) {
+      RM.busy = false;
+      if (r.error) { H.remoteNote = "Lost contact with the phone link. Trying again…"; return; }
+      if (r.data === null) { H.remoteNote = "The phone link has expired. Link a phone again."; remoteOff(true); paint(); return; }
+      if (send) RM.last = s; H.remoteNote = "";
+      (r.data || []).forEach(runCmd);
+    }, function () { RM.busy = false; });
+  }
+  function runCmd(c) {
+    var list = remoteButtons();
+    for (var k = 0; k < list.length; k++) { var b = list[k]; if (b.a === c.a && b.v === (c.v || "") && b.i === (c.i || "")) { b.el.click(); return; } }
+  }
+  function remoteKick() { if (!H.remote) return; clearTimeout(RM.kick); RM.kick = setTimeout(remoteSync, 250); }
+  function remoteOn(code) {
+    H.remote = code; RM.last = ""; DX.store.set("dx.hall.remote", { code: code, t: Date.now() });
+    clearInterval(RM.timer); RM.timer = setInterval(remoteSync, 1500); remoteSync();
+  }
+  function remoteOff(keepNote) {
+    H.remote = null; RM.last = ""; clearInterval(RM.timer); RM.timer = null; clearTimeout(RM.kick); DX.store.set("dx.hall.remote", null);
+    var p = document.getElementById("hallremote"); if (p && p.parentNode) p.parentNode.removeChild(p);
+  }
+  function remoteLink() { return location.origin + location.pathname + "#remote?c=" + H.remote; }
+  function remoteBox() {
+    if (H.remote) {
+      return '<section class="stage"><h3>Phone linked</h3><p>On the quizmaster’s phone, open <b>' + esc(location.origin.replace(/^https?:\/\//, "") + location.pathname.replace(/index\.html$/, "")) + '</b>, add <b>#remote</b> to the end of the address, and type the code <b class="remote-code">' + esc(H.remote) + '</b>. Or open this link on that phone: <a href="' + esc(remoteLink()) + '">' + esc(remoteLink()) + '</a></p>' +
+        '<p class="hint">This screen will now show only the questions. The answers and the Got it / Missed buttons are on the phone.</p>' +
+        (H.remoteNote ? '<p class="note bad" role="status">' + esc(H.remoteNote) + '</p>' : "") +
+        '<div class="row tight"><button class="btn ghost small" data-act="remoteoff">Unlink phone</button></div></section>';
+    }
+    return '<details class="acc"><summary><span>Quizmaster on a phone (optional)</span><small>keeps answers private</small></summary><div class="topics">' +
+      '<p>With one shared screen, the answer has to appear on the screen before you can judge, so the room sees it too. This option fixes that.</p>' +
+      '<ol><li>Tap <b>Link a phone</b>. You get a short code.</li><li>On the quizmaster’s phone, enter the code. It shows the answer, the explanation and the Got it / Missed buttons.</li><li>The shared screen shows only the questions. The room sees an answer only when you tap Show answer on the phone.</li></ol>' +
+      '<p class="hint">Needs the internet on both devices. If you skip it, Hall mode works exactly as before, with no internet.</p>' +
+      (H.remoteNote ? '<p class="note bad" role="status">' + esc(H.remoteNote) + '</p>' : "") +
+      '<div class="row tight"><button class="btn small" data-act="remoteon">Link a phone</button></div></div></details>';
+  }
+  function remotePill() {
+    var p = document.getElementById("hallremote");
+    document.body.classList.toggle("hr-on", !!H.remote && (H.view === "round" || H.view === "roundend"));
+    if (!H.remote) { if (p && p.parentNode) p.parentNode.removeChild(p); return; }
+    if (!p) { p = document.createElement("div"); p.id = "hallremote"; document.body.appendChild(p); }
+    p.textContent = "Phone linked · " + H.remote;
   }
   function qBlock(w, _unused, reveal) {
     var h = '<div class="chips"><span class="chip">' + esc(subOf(w.q)) + '</span>' + (w.opts ? "" : '<span class="chip">No options</span>') + '</div><p class="qbig">' + esc(w.opts ? w.q.q : w.q.open.q) + '</p>';
@@ -250,7 +342,7 @@
     if (b) document.documentElement.style.setProperty("--bar-h", getComputedStyle(b).position === "sticky" ? b.offsetHeight + "px" : "0px");
   }
   function paint() {
-    app.innerHTML = view() + flashHTML(); tmPaint(); barH();
+    app.innerHTML = view() + flashHTML(); tmPaint(); barH(); remotePill(); remoteKick();
     clearTimeout(flashTimer);
     if (H.flash && Date.now() < H.flash.until) flashTimer = setTimeout(function () { var f = document.getElementById("flash"); if (f) f.remove(); }, H.flash.until - Date.now());
   }
@@ -341,7 +433,7 @@
     }
     return '<div class="wrap wide stack"><header><p class="eyebrow">Hall mode</p><h1>Choose a round</h1>' + (H.note ? '<p class="lede">' + esc(H.note) + '</p>' : '<p class="lede">' + scopeHint() + '</p>') + '</header>' +
       scoreboard(-1, H.edit) +
-      '<details class="acc"><summary><span>Sound volume</span><small>bell, ticks, streaks</small></summary><div class="topics">' + soundPanel() + '</div></details>' +
+      '<details class="acc"><summary><span>Sound volume</span><small>bell, ticks, streaks</small></summary><div class="topics">' + soundPanel() + '</div></details>' + remoteBox() +
       '<div class="row tight"><button class="btn small" data-act="edit">' + (H.edit ? "Done adjusting scores" : "Adjust scores") + '</button><button class="btn small ghost" data-act="setup">Change teams or topics</button><button class="btn small ghost" data-act="final">End session and show standings</button></div>' +
       '<section class="cards">' + cards + '</section>' + panel + '</div>';
   }
@@ -628,6 +720,11 @@
       case "mark": doMark(b.getAttribute("data-v")); break;
       case "reveal": doReveal(); break;
       case "keycopy": keyCopy(); break;
+      case "remoteon": (function () {
+        var sb = cloud(); if (!sb) { H.remoteNote = "The online part is not reachable, so a phone cannot be linked. Check the internet connection."; paint(); return; }
+        sb.rpc("hall_open").then(function (r) { if (r.error || !r.data) { H.remoteNote = "Could not start a phone link right now. Try again in a moment."; paint(); return; } H.remoteNote = ""; remoteOn(r.data); paint(); }, function () { H.remoteNote = "Could not start a phone link. Check the internet connection."; paint(); });
+      })(); break;
+      case "remoteoff": remoteOff(); H.remoteNote = ""; paint(); break;
       case "keyopen": keyOpen(); break;
       case "pause": doPause(); break;
       case "rstart": rapidStart(); break;
@@ -699,7 +796,7 @@
     app = el; init();
     paint();
   }
-  function leave() { tmStop(); }
+  function leave() { tmStop(); clearInterval(RM.timer); RM.timer = null; document.body.classList.remove("hr-on"); var p = document.getElementById("hallremote"); if (p && p.parentNode) p.parentNode.removeChild(p); }
 
   DX.hall = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave };
 })();
