@@ -42,11 +42,17 @@
         return '<article class="card"><h2>' + esc(x[1]) + '</h2><p>' + esc(x[2]) + '</p><p><b>' + (on ? "Shown to students" : "Hidden from students") + '</b></p><button class="btn ' + (on ? "ghost" : "primary") + '" data-act="set" data-key="' + x[0] + '" data-on="' + (on ? "0" : "1") + '"' + (F.busy ? " disabled" : "") + '>' + (on ? "Hide" : "Show to students") + '</button></article>';
       }).join("") + '</section>' + settingsHtml() + visitsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
   }
+  function pagesHtml(list) {
+    if (list === null || list === undefined) return '<p class="hint">Run supabase/update-17.sql to see which pages people open.</p>';
+    if (!list.length) return '<h3>Pages people open (last 14 days)</h3><p class="muted">Nothing recorded yet. This starts counting after update 17.</p>';
+    return '<h3>Pages people open (last 14 days)</h3><p class="hint">Visitors = different phones or browsers. Opens = times the page was opened. Your own visits are left out.</p><div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Page</th><th class="n">Visitors</th><th class="n">Opens</th></tr></thead><tbody>' +
+      list.map(function (x) { return '<tr><td>' + esc(String(x.page).charAt(0).toUpperCase() + String(x.page).slice(1)) + '</td><td class="n">' + x.visitors + '</td><td class="n">' + x.loads + '</td></tr>'; }).join("") + '</tbody></table></div>';
+  }
   function visitsHtml() {
     if (F.visits === undefined) {
       F.visits = null;
-      Promise.all([C().sb.rpc("admin_visit_totals"), C().sb.rpc("admin_visits", { p_days: 14 })]).then(function (r) {
-        if (r[0].error || r[1].error) { F.visits = { err: true }; } else { F.visits = { tot: (r[0].data || [])[0] || {}, days: r[1].data || [] }; }
+      Promise.all([C().sb.rpc("admin_visit_totals"), C().sb.rpc("admin_visits", { p_days: 14 }), C().sb.rpc("admin_pages", { p_days: 14 })]).then(function (r) {
+        if (r[0].error || r[1].error) { F.visits = { err: true }; } else { F.visits = { tot: (r[0].data || [])[0] || {}, days: r[1].data || [], pages: r[2].error ? null : (r[2].data || []) }; }
         repaint();
       }, function () { F.visits = { err: true }; repaint(); });
     }
@@ -57,6 +63,7 @@
     return '<section class="section stack"><h2>Visitors</h2><p class="hint">Each phone or browser counts once per day, signed in or not. The same person on two devices counts twice, and your own visits are left out. Counts start from the day you run update 13.</p>' +
       '<p><b>' + (t.today || 0) + '</b> today · <b>' + (t.week || 0) + '</b> in 7 days · <b>' + (t.month || 0) + '</b> in 30 days (<b>' + (t.signed_month || 0) + '</b> of them signed in at some point)</p>' +
       (rows ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Day</th><th class="n">Visitors</th><th class="n">Signed in</th><th class="n">Page loads</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p class="muted">No visits recorded yet.</p>') +
+      pagesHtml(v.pages) +
       '<div class="row tight"><button class="btn ghost small" data-act="refvisits">Refresh</button></div></section>';
   }
   function settingsHtml() {
