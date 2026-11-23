@@ -1,0 +1,2312 @@
+{
+ "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+ "questions": [
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which class of adverse drug reactions (ADRs) is predictable from the known pharmacology of the drug, dose-dependent, and accounts for the vast majority of ADRs?",
+   "options": [
+    "Type A (Augmented) reactions",
+    "Type B (Bizarre) reactions",
+    "Type C (Chronic) reactions",
+    "Type D (Delayed) reactions"
+   ],
+   "answer": 0,
+   "explain": "Type A (augmented) reactions are extensions of a drug's primary or secondary pharmacological actions (such as bradycardia with beta-blockers or bleeding with warfarin), making them predictable and dose-related.",
+   "verified": false,
+   "open": {
+    "q": "Name the adverse drug reaction class that is dose-dependent, predictable from pharmacology, and most common in clinical practice.",
+    "accept": [
+     "Type A",
+     "augmented ADRs",
+     "augmented reactions"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which class of adverse drug reactions is unrelated to the drug's known pharmacology, unpredictable, dose-independent within therapeutic ranges, and often immunologically or genetically mediated?",
+   "options": [
+    "Type A (Augmented) reactions",
+    "Type B (Bizarre) reactions",
+    "Type E (End-of-use) reactions",
+    "Type F (Failure) reactions"
+   ],
+   "answer": 1,
+   "explain": "Type B (bizarre or idiosyncratic) reactions—such as penicillin anaphylaxis, halothane-induced malignant hyperthermia, or G6PD haemolysis—cannot be predicted from normal pharmacological effects and require drug cessation.",
+   "verified": false,
+   "open": {
+    "q": "Identify the class of adverse drug reactions that is bizarre, unpredictable from normal pharmacology, and largely dose-independent.",
+    "accept": [
+     "Type B",
+     "bizarre ADRs",
+     "idiosyncratic reactions"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which class of adverse drug reactions results from cumulative, prolonged, or continuous exposure to a drug over months or years?",
+   "options": [
+    "Type B (Bizarre) reactions",
+    "Type D (Delayed) reactions",
+    "Type C (Chronic) reactions",
+    "Type E (End-of-use) reactions"
+   ],
+   "answer": 2,
+   "explain": "Type C (chronic or continuous) reactions arise from cumulative exposure, such as analgesic nephropathy from chronic NSAIDs, osteonecrosis of the jaw from bisphosphonates, or adrenal suppression from long-term corticosteroids.",
+   "verified": false,
+   "open": {
+    "q": "Name the adverse drug reaction category associated with prolonged or cumulative drug exposure over time.",
+    "accept": [
+     "Type C",
+     "chronic ADRs",
+     "continuous reactions"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which class of adverse drug reactions manifests long after drug exposure has ceased, including teratogenesis and drug-induced carcinogenesis?",
+   "options": [
+    "Type A (Augmented) reactions",
+    "Type B (Bizarre) reactions",
+    "Type F (Failure) reactions",
+    "Type D (Delayed) reactions"
+   ],
+   "answer": 3,
+   "explain": "Type D (delayed) reactions appear well after the drug is discontinued, such as vaginal clear-cell adenocarcinoma years after in utero diethylstilbestrol exposure or secondary leukaemia after alkylating agents.",
+   "verified": false,
+   "open": {
+    "q": "Which ADR classification includes teratogenicity and carcinogenesis appearing long after drug discontinuation?",
+    "accept": [
+     "Type D",
+     "delayed ADRs"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which class of adverse drug reactions occurs shortly after abrupt withdrawal or cessation of a drug, such as rebound hypertension after clonidine discontinuation?",
+   "options": [
+    "Type E (End-of-use / withdrawal) reactions",
+    "Type C (Chronic) reactions",
+    "Type D (Delayed) reactions",
+    "Type B (Bizarre) reactions"
+   ],
+   "answer": 0,
+   "explain": "Type E (end-of-use) reactions happen upon stopping a drug abruptly, including opioid withdrawal, benzodiazepine rebound anxiety/seizures, and beta-blocker rebound angina.",
+   "verified": false,
+   "open": {
+    "q": "Name the ADR class that occurs upon stopping a medication abruptly, such as rebound hypertension or withdrawal syndrome.",
+    "accept": [
+     "Type E",
+     "end-of-use ADRs",
+     "withdrawal reactions"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which class of adverse drug reactions represents unexpected therapeutic failure, commonly caused by drug interactions or resistance?",
+   "options": [
+    "Type A (Augmented) reactions",
+    "Type F (Failure of therapy) reactions",
+    "Type B (Bizarre) reactions",
+    "Type C (Chronic) reactions"
+   ],
+   "answer": 1,
+   "explain": "Type F (failure) reactions reflect unexpectedly reduced efficacy—for example, oral contraceptive failure when co-administered with rifampicin or antimicrobial resistance.",
+   "verified": false,
+   "open": {
+    "q": "Which ADR classification refers to unexpected failure of treatment efficacy, often due to drug interactions or resistance?",
+    "accept": [
+     "Type F",
+     "failure ADRs",
+     "therapeutic failure"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "A 19-year-old man with glucose-6-phosphate dehydrogenase (G6PD) deficiency develops acute intravascular haemolysis, haemoglobinuria, and jaundice after taking primaquine or dapsone. Why does this occur?",
+   "options": [
+    "Primaquine directly inhibits bone marrow erythropoietin receptors",
+    "Deficient G6PD impairs NADPH generation needed to keep glutathione reduced, leaving red cells vulnerable to oxidative damage",
+    "Primaquine triggers an IgE-mediated Type I anaphylactic reaction against reticulocytes",
+    "G6PD deficiency blocks hepatic glucuronidation of bilirubin"
+   ],
+   "answer": 1,
+   "explain": "G6PD is the rate-limiting enzyme of the pentose phosphate pathway in erythrocytes; without adequate NADPH and reduced glutathione (GSH), oxidative drugs cause haemoglobin denaturation (Heinz bodies) and haemolysis.",
+   "verified": false,
+   "open": {
+    "q": "Explain the biochemical mechanism behind drug-induced haemolysis in patients with G6PD deficiency.",
+    "accept": [
+     "impaired NADPH generation reduces glutathione leaving red blood cells susceptible to oxidative stress",
+     "inability to maintain reduced glutathione against oxidant drugs"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "Which of the following drugs is classically associated with precipitating acute haemolytic anaemia in individuals with G6PD deficiency?",
+   "options": [
+    "Paracetamol at standard therapeutic doses",
+    "Lisinopril",
+    "Primaquine, dapsone, and sulfonamides",
+    "Loratadine"
+   ],
+   "answer": 2,
+   "explain": "Oxidant agents such as primaquine, dapsone, nitrofurantoin, rasburicase, and certain sulfonamides/fluoroquinolones can trigger haemolysis in G6PD-deficient individuals.",
+   "verified": false,
+   "open": {
+    "q": "Name two drugs that can trigger haemolysis in patients with G6PD deficiency.",
+    "accept": [
+     "primaquine and dapsone",
+     "primaquine dapsone sulfonamides or nitrofurantoin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "Which pharmacogenetic disorder presents with generalized muscle rigidity, high fever, metabolic acidosis, and hyperkalaemia shortly after exposure to succinylcholine or volatile anesthetics like halothane, and is treated with dantrolene?",
+   "options": [
+    "Acute intermittent porphyria",
+    "Gilbert syndrome",
+    "Pseudocholinesterase deficiency",
+    "Malignant hyperthermia"
+   ],
+   "answer": 3,
+   "explain": "Malignant hyperthermia is an autosomal dominant pharmacogenetic disorder (most often RYR1 ryanodine receptor mutations) causing excessive Ca2+ release from sarcoplasmic reticulum; dantrolene blocks ryanodine receptors to stop Ca2+ release.",
+   "verified": false,
+   "open": {
+    "q": "Name the life-threatening pharmacogenetic anesthetic emergency treated with dantrolene.",
+    "accept": [
+     "malignant hyperthermia"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-010",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "How does dantrolene act to reverse malignant hyperthermia?",
+   "options": [
+    "By blocking ryanodine receptors (RYR1) on the sarcoplasmic reticulum to inhibit excessive Ca2+ release into skeletal muscle",
+    "By acting as a competitive antagonist at neuromuscular nicotinic receptors",
+    "By chelating extracellular calcium in systemic plasma",
+    "By accelerating renal excretion of volatile anesthetics"
+   ],
+   "answer": 0,
+   "explain": "Dantrolene binds to ryanodine receptor channels on the sarcoplasmic reticulum of skeletal muscle, halting pathological Ca2+ efflux, hypermetabolism, and rigidity.",
+   "verified": false,
+   "open": {
+    "q": "State the mechanism of action of dantrolene in treating malignant hyperthermia.",
+    "accept": [
+     "blocks ryanodine receptors to inhibit calcium release from sarcoplasmic reticulum",
+     "inhibits sarcoplasmic reticulum calcium release via ryanodine receptor blockade"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "Which enzyme deficiency causes severe, potentially fatal myelosuppression (neutropenia) when standard doses of azathioprine or 6-mercaptopurine are given?",
+   "options": [
+    "Dihydropyrimidine dehydrogenase (DPD) deficiency",
+    "Thiopurine S-methyltransferase (TPMT) deficiency",
+    "CYP2C9 deficiency",
+    "Monoamine oxidase-B deficiency"
+   ],
+   "answer": 1,
+   "explain": "TPMT methylates and inactivates mercaptopurine metabolites; TPMT deficiency diverts purine analogues toward cytotoxic thioguanine nucleotides in bone marrow.",
+   "verified": false,
+   "open": {
+    "q": "Name the enzyme whose genetic deficiency leads to severe bone marrow toxicity from azathioprine or mercaptopurine.",
+    "accept": [
+     "TPMT",
+     "thiopurine methyltransferase"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "Which enzyme deficiency is linked to severe, life-threatening fluorouracil (5-FU) or capecitabine toxicity (mucositis, myelosuppression, neurotoxicity)?",
+   "options": [
+    "UDP-glucuronosyltransferase 1A1",
+    "Pseudocholinesterase",
+    "Dihydropyrimidine dehydrogenase (DPD)",
+    "Xanthine oxidase"
+   ],
+   "answer": 2,
+   "explain": "Over 80% of administered 5-fluorouracil is catabolized by DPD; partial or complete DPD deficiency causes marked accumulation of 5-FU and severe cytotoxic toxicity.",
+   "verified": false,
+   "open": {
+    "q": "Identify the enzyme deficiency that predisposes patients to severe fluorouracil toxicity.",
+    "accept": [
+     "DPD",
+     "dihydropyrimidine dehydrogenase"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-013",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "q": "Why does codeine fail to provide adequate analgesia in individuals who are CYP2D6 poor metabolizers, whereas CYP2D6 ultrarapid metabolizers risk opioid toxicity and respiratory depression even at standard doses?",
+   "options": [
+    "CYP2D6 converts codeine into inactive glucuronides",
+    "CYP2D6 is required to pump codeine across the blood-brain barrier",
+    "CYP2D6 is the sole enzyme that excretes codeine in bile",
+    "CYP2D6 O-demethylates codeine (a weak prodrug) into morphine, which has much higher mu-opioid affinity"
+   ],
+   "answer": 3,
+   "explain": "Codeine relies on CYP2D6-mediated O-demethylation to form morphine; poor metabolizers get little morphine, while ultrarapid metabolizers convert excessive amounts rapidly.",
+   "verified": false,
+   "open": {
+    "q": "Explain why CYP2D6 genetic variants alter both the efficacy and toxicity of codeine.",
+    "accept": [
+     "CYP2D6 converts codeine into active morphine so poor metabolizers lack analgesia and ultrarapid metabolizers risk morphine toxicity",
+     "CYP2D6 controls bioactivation of codeine to morphine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "Why do most low-molecular-weight drugs (haptens) require binding to host proteins before triggering a true immune-mediated drug allergy?",
+   "options": [
+    "Small molecules alone are generally too small to be recognized effectively as immunogens unless conjugated to carrier proteins to form a complete antigen",
+    "Host proteins convert all drugs into IgA antibodies",
+    "Unbound small drugs are destroyed before reaching lymph nodes",
+    "Haptens only bind to erythrocytes without activating lymphocytes"
+   ],
+   "answer": 0,
+   "explain": "Most drugs or their reactive metabolites act as haptens that bind covalently to host macromolecules (proteins), creating a hapten-carrier complex capable of stimulating an immune response.",
+   "verified": false,
+   "open": {
+    "q": "Why do most low-molecular-weight drugs act as haptens that must bind to host proteins to elicit an allergic reaction?",
+    "accept": [
+     "small molecules need a protein carrier to become immunogenic and form a complete antigen",
+     "hapten-carrier complex is required to stimulate the immune system"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "Which Gell and Coombs hypersensitivity mechanism mediates acute anaphylaxis, urticaria, and bronchospasm following penicillin administration?",
+   "options": [
+    "Type II (cytotoxic antibody-mediated)",
+    "Type I (IgE-mediated immediate hypersensitivity)",
+    "Type III (immune complex-mediated)",
+    "Type IV (T-cell-mediated delayed hypersensitivity)"
+   ],
+   "answer": 1,
+   "explain": "Type I hypersensitivity involves drug-specific IgE bound to tissue mast cells and blood basophils; re-exposure cross-links IgE and triggers release of histamine, leukotrienes, and prostaglandins.",
+   "verified": false,
+   "open": {
+    "q": "Which hypersensitivity type underlies acute IgE-mediated drug anaphylaxis and urticaria?",
+    "accept": [
+     "Type I",
+     "IgE-mediated hypersensitivity",
+     "immediate hypersensitivity"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "Which Gell and Coombs hypersensitivity mechanism causes drug-induced haemolytic anaemia, thrombocytopenia, or agranulocytosis via IgG/IgM antibodies directed against drug-modified cell surfaces?",
+   "options": [
+    "Type I",
+    "Type III",
+    "Type II (cytotoxic hypersensitivity)",
+    "Type IV"
+   ],
+   "answer": 2,
+   "explain": "Type II reactions involve IgG or IgM binding to drug-coated blood cells or haptens on cell membranes, causing complement-mediated lysis or phagocytosis by reticuloendothelial macrophages.",
+   "verified": false,
+   "open": {
+    "q": "Name the hypersensitivity mechanism responsible for drug-induced immune haemolytic anaemia or thrombocytopenia.",
+    "accept": [
+     "Type II",
+     "cytotoxic hypersensitivity",
+     "antibody-dependent cytotoxicity"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-017",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "Which Gell and Coombs hypersensitivity mechanism causes serum sickness (fever, arthralgia, urticaria, lymphadenopathy, glomerulonephritis) due to circulating antigen-antibody complexes?",
+   "options": [
+    "Type I",
+    "Type II",
+    "Type IV",
+    "Type III (immune complex-mediated hypersensitivity)"
+   ],
+   "answer": 3,
+   "explain": "Type III reactions result from deposition of soluble drug-antibody immune complexes in small blood vessels and glomeruli, activating complement and recruiting neutrophils.",
+   "verified": false,
+   "open": {
+    "q": "Which hypersensitivity type causes drug-induced serum sickness via immune complex deposition?",
+    "accept": [
+     "Type III",
+     "immune complex hypersensitivity"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "Which Gell and Coombs hypersensitivity mechanism mediates allergic contact dermatitis appearing 24 to 72 hours after topical drug exposure?",
+   "options": [
+    "Type IV (cell-mediated delayed hypersensitivity)",
+    "Type I (IgE-mediated hypersensitivity)",
+    "Type II (cytotoxic hypersensitivity)",
+    "Type III (immune complex hypersensitivity)"
+   ],
+   "answer": 0,
+   "explain": "Type IV reactions are mediated by sensitized T lymphocytes (CD4+ or CD8+) rather than antibodies, typically developing over 1 to 3 days (e.g., topical neomycin or local anesthetic contact dermatitis).",
+   "verified": false,
+   "open": {
+    "q": "Identify the T-cell-mediated delayed hypersensitivity type responsible for allergic contact dermatitis.",
+    "accept": [
+     "Type IV",
+     "delayed-type hypersensitivity",
+     "cell-mediated hypersensitivity"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-019",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "A 26-year-old patient develops sudden laryngeal stridor, wheezing, generalized urticaria, and hypotension (BP 70/40 mmHg) 10 minutes after receiving intramuscular ceftriaxone. Which drug is the immediate first-line lifesaving treatment?",
+   "options": [
+    "Oral loratadine",
+    "Intramuscular adrenaline (epinephrine) into the anterolateral thigh",
+    "Intravenous calcium gluconate",
+    "Oral prednisolone"
+   ],
+   "answer": 1,
+   "explain": "Intramuscular adrenaline (1:1000, typically 0.5 mg in adults) is first-line in anaphylaxis: alpha-1 agonism reverses hypotension and mucosal oedema, while beta-2 agonism causes bronchodilation and inhibits mast-cell mediator release.",
+   "verified": false,
+   "open": {
+    "q": "Name the immediate first-line drug of choice for acute systemic anaphylaxis.",
+    "accept": [
+     "adrenaline",
+     "epinephrine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Allergy and Hypersensitivity",
+   "q": "Why are corticosteroids and H1 antihistamines considered adjunctive rather than first-line monotherapy for acute anaphylaxis?",
+   "options": [
+    "They cause severe coronary vasoconstriction and worsen shock",
+    "They directly block IgE synthesis within 30 seconds",
+    "They replace the need for airway support and oxygen",
+    "Their onset of action is too slow to rapidly reverse life-threatening bronchospasm and hypotension compared with adrenaline"
+   ],
+   "answer": 3,
+   "explain": "Antihistamines and corticosteroids do not rapidly reverse severe bronchoconstriction or cardiovascular collapse; corticosteroids take hours to reduce late-phase inflammation and prevent biphasic relapse.",
+   "verified": false,
+   "open": {
+    "q": "Explain why antihistamines and corticosteroids do not replace adrenaline as initial therapy in anaphylaxis.",
+    "accept": [
+     "too slow in onset to rapidly reverse shock and bronchospasm",
+     "lack immediate hemodynamic and bronchodilator reversal of life-threatening anaphylaxis"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "During which developmental period of pregnancy is the human fetus most vulnerable to structural congenital malformations (teratogenesis)?",
+   "options": [
+    "The embryonic period of organogenesis (approximately weeks 3 to 8 of gestation)",
+    "The pre-implantation zygote stage (days 1 to 4)",
+    "The third trimester after 32 weeks of gestation",
+    "During active labour and delivery"
+   ],
+   "answer": 0,
+   "explain": "Organogenesis occurs mainly between the 3rd and 8th weeks post-conception (weeks 5 to 10 by LMP), when rapid organ differentiation makes the embryo most susceptible to structural teratogens; third-trimester exposure affects growth and functional maturation.",
+   "verified": false,
+   "open": {
+    "q": "Which period of pregnancy carries the highest risk of drug-induced structural birth defects (teratogenesis)?",
+    "accept": [
+     "organogenesis",
+     "embryonic period weeks 3 to 8",
+     "first trimester organogenesis"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "Which classic teratogen taken in early pregnancy caused phocomelia (limb reduction deformities) and congenital anomalies in the mid-20th century?",
+   "options": [
+    "Folic acid",
+    "Thalidomide",
+    "Amoxicillin",
+    "Magnesium sulfate"
+   ],
+   "answer": 1,
+   "explain": "Thalidomide taken between days 20 and 36 after fertilization caused characteristic limb defects (phocomelia/amelia) and ear/cranial abnormalities, prompting modern teratogenicity testing.",
+   "verified": false,
+   "open": {
+    "q": "Name the sedative-antiemetic drug famous for causing phocomelia when taken during early pregnancy.",
+    "accept": [
+     "thalidomide"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "Which antiepileptic drug is strongly associated with neural tube defects (such as spina bifida), developmental delay, and major congenital malformations when used in pregnancy?",
+   "options": [
+    "Magnesium sulfate",
+    "Cephalexin",
+    "Sodium valproate (valproic acid)",
+    "Lactulose"
+   ],
+   "answer": 2,
+   "explain": "Valproate carries a high risk of neural tube defects (~1% to 5%) and neurodevelopmental impairment in children exposed in utero, so it is avoided in women of childbearing potential whenever effective alternatives exist.",
+   "verified": false,
+   "open": {
+    "q": "Identify the antiepileptic drug strongly linked to neural tube defects and neurodevelopmental harm in pregnancy.",
+    "accept": [
+     "valproate",
+     "valproic acid",
+     "sodium valproate"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-024",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "Which class of antihypertensive drugs is contraindicated throughout pregnancy because it causes fetal renal dysgenesis, oligohydramnios, skull hypoplasia, and neonatal renal failure?",
+   "options": [
+    "Methyldopa",
+    "Labetalol",
+    "Hydralazine",
+    "ACE inhibitors (such as enalapril and lisinopril) and ARBs"
+   ],
+   "answer": 3,
+   "explain": "Inhibiting the renin-angiotensin system lowers fetal renal perfusion pressure and impairs nephrogenesis, leading to oligohydramnios, limb contractures, pulmonary hypoplasia, and fetal/neonatal death.",
+   "verified": false,
+   "open": {
+    "q": "Name the antihypertensive drug class contraindicated in pregnancy due to fetal renal failure and oligohydramnios.",
+    "accept": [
+     "ACE inhibitors and ARBs",
+     "angiotensin converting enzyme inhibitors and angiotensin receptor blockers"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "Why are tetracyclines avoided in pregnant women and children under 8 years of age?",
+   "options": [
+    "They bind calcium in developing teeth and bones, causing permanent tooth discoloration and enamel hypoplasia, and risk maternal hepatotoxicity",
+    "They cause permanent sensorineural deafness by damaging cranial nerve VIII",
+    "They inhibit fetal thyroid hormone synthesis causing cretinism",
+    "They trigger acute haemolysis in all fetuses"
+   ],
+   "answer": 0,
+   "explain": "Tetracyclines chelate calcium in mineralizing tissues, staining deciduous/permanent teeth yellow-brown and inhibiting bone growth; high IV doses in pregnancy can also cause acute fatty liver of pregnancy.",
+   "verified": false,
+   "open": {
+    "q": "State the main dental and skeletal adverse effect of tetracyclines in children and fetuses.",
+    "accept": [
+     "permanent tooth discoloration and enamel hypoplasia or inhibition of bone growth",
+     "staining of teeth and deposition in bone and teeth"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-026",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "Which anti-acne retinoid is a potent human teratogen requiring strict pregnancy prevention before, during, and after treatment?",
+   "options": [
+    "Benzoyl peroxide",
+    "Isotretinoin",
+    "Salicylic acid (topical)",
+    "Calamine"
+   ],
+   "answer": 1,
+   "explain": "Systemic retinoids (isotretinoin, acitretin) cause severe craniofacial, cardiac, thymic, and CNS malformations and require strict contraceptive precautions.",
+   "verified": false,
+   "open": {
+    "q": "Name the systemic retinoid used for severe acne that is a well-known human teratogen.",
+    "accept": [
+     "isotretinoin",
+     "acitretin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-027",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antimicrobial class is characteristically associated with concentration-dependent ototoxicity (vestibular or cochlear damage) and nephrotoxicity?",
+   "options": [
+    "Macrolides",
+    "Beta-lactams",
+    "Aminoglycosides (such as gentamicin and streptomycin)",
+    "Sulfonamides"
+   ],
+   "answer": 2,
+   "explain": "Aminoglycosides accumulate in inner-ear endolymph/perilymph hair cells and renal proximal tubular cells, causing irreversible hearing loss, vestibular dysfunction, and acute tubular injury.",
+   "verified": false,
+   "open": {
+    "q": "Which antibiotic group causes both ototoxicity and nephrotoxicity?",
+    "accept": [
+     "aminoglycosides",
+     "gentamicin streptomycin amikacin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antituberculosis drug classically causes retrobulbar optic neuritis, manifesting as reduced visual acuity and loss of red-green colour discrimination?",
+   "options": [
+    "Isoniazid",
+    "Rifampicin",
+    "Pyrazinamide",
+    "Ethambutol"
+   ],
+   "answer": 3,
+   "explain": "Ethambutol can cause dose-dependent optic neuritis with blurred vision, central scotoma, and red-green colour blindness, which may become irreversible if not stopped promptly.",
+   "verified": false,
+   "open": {
+    "q": "Name the antituberculosis drug associated with optic neuritis and red-green colour vision loss.",
+    "accept": [
+     "ethambutol"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antituberculosis drug causes peripheral neuropathy by interfering with pyridoxine (vitamin B6) metabolism, and can be prevented by co-administering pyridoxine?",
+   "options": [
+    "Isoniazid (INH)",
+    "Ethambutol",
+    "Streptomycin",
+    "Rifampicin"
+   ],
+   "answer": 0,
+   "explain": "Isoniazid promotes urinary excretion and inactivation of pyridoxine (vitamin B6), leading to paraesthesias and peripheral neuropathy, especially in slow acetylators, malnourished patients, or HIV.",
+   "verified": false,
+   "open": {
+    "q": "Name the antituberculosis drug that causes peripheral neuropathy preventable by vitamin B6 (pyridoxine).",
+    "accept": [
+     "isoniazid",
+     "INH"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-030",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which anticancer drug class is famous for causing cumulative, dose-dependent cardiotoxicity (dilated cardiomyopathy and heart failure) mediated by free-radical myocardial injury?",
+   "options": [
+    "Vincristine",
+    "Anthracyclines (such as doxorubicin and daunorubicin)",
+    "Methotrexate",
+    "Tamoxifen"
+   ],
+   "answer": 1,
+   "explain": "Anthracyclines generate reactive oxygen species and iron-mediated lipid peroxidation in cardiomyocytes, limiting lifetime cumulative dosing and sometimes warranting dexrazoxane cardioprotection.",
+   "verified": false,
+   "open": {
+    "q": "Which class of cytotoxic anticancer drugs causes cumulative dose-related cardiomyopathy?",
+    "accept": [
+     "anthracyclines",
+     "doxorubicin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-031",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which cytotoxic alkylating agent causes haemorrhagic cystitis due to its urinary metabolite acrolein, and is prevented using mesna and hydration?",
+   "options": [
+    "Cisplatin",
+    "Bleomycin",
+    "Cyclophosphamide",
+    "5-Fluorouracil"
+   ],
+   "answer": 2,
+   "explain": "Acrolein irritates the urothelium, causing sterile haemorrhagic cystitis; mesna (2-mercaptoethanesulfonate) binds acrolein in the bladder lumen to form a non-toxic thioether.",
+   "verified": false,
+   "open": {
+    "q": "Name the anticancer drug whose metabolite acrolein causes haemorrhagic cystitis, prevented by mesna.",
+    "accept": [
+     "cyclophosphamide",
+     "ifosfamide"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-032",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antitumour antibiotic causes dose-related pulmonary fibrosis and pneumonitis while causing minimal bone marrow suppression?",
+   "options": [
+    "Cytarabine",
+    "Vincristine",
+    "Busulfan",
+    "Bleomycin"
+   ],
+   "answer": 3,
+   "explain": "Bleomycin generates free radicals in lung tissue (which lacks high bleomycin hydrolase activity), risking pulmonary fibrosis; high inspired oxygen concentrations can worsen lung injury.",
+   "verified": false,
+   "open": {
+    "q": "Name the cytotoxic agent classically associated with pulmonary fibrosis and minimal myelosuppression.",
+    "accept": [
+     "bleomycin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-033",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug-induced movement disorder syndrome is characterized by involuntary, repetitive, purposeless choreoathetoid movements of the tongue, lips, and face ('fly-catching' or chewing motions) after prolonged dopamine D2 receptor blockade?",
+   "options": [
+    "Tardive dyskinesia",
+    "Acute dystonia",
+    "Akathisia",
+    "Neuroleptic malignant syndrome"
+   ],
+   "answer": 0,
+   "explain": "Tardive dyskinesia develops after months or years of typical antipsychotic therapy, likely due to striatal dopamine D2 receptor upregulation/supersensitivity, and often responds poorly to anticholinergics.",
+   "verified": false,
+   "open": {
+    "q": "Name the late-onset involuntary orofacial and limb movement disorder associated with chronic antipsychotic exposure.",
+    "accept": [
+     "tardive dyskinesia",
+     "TD"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-034",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "A 24-year-old man started on haloperidol develops severe generalized 'lead-pipe' muscle rigidity, hyperthermia (40.5 C), autonomic instability (tachycardia, labile BP), altered consciousness, and markedly elevated creatine kinase. What is the diagnosis?",
+   "options": [
+    "Serotonin syndrome",
+    "Neuroleptic malignant syndrome (NMS)",
+    "Malignant hyperthermia",
+    "Acute cholinergic crisis"
+   ],
+   "answer": 1,
+   "explain": "NMS is an idiosyncratic, life-threatening reaction to dopamine antagonists characterized by severe muscular rigidity, hyperpyrexia, autonomic instability, and elevated CK; treated with drug cessation, supportive care, dantrolene, and bromocriptine.",
+   "verified": false,
+   "open": {
+    "q": "Identify the syndrome of rigidity, hyperthermia, autonomic instability, and high creatine kinase caused by dopamine receptor blockade.",
+    "accept": [
+     "neuroleptic malignant syndrome",
+     "NMS"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-035",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "A patient taking an SSRI is inadvertently prescribed linezolid or a monoamine oxidase inhibitor and presents within hours with agitation, diaphoresis, tachycardia, hyperreflexia, and inducible clonus. Which condition is most likely?",
+   "options": [
+    "Neuroleptic malignant syndrome",
+    "Oculogyric crisis",
+    "Serotonin syndrome",
+    "Acute dystonia"
+   ],
+   "answer": 2,
+   "explain": "Excessive central and peripheral serotonergic activity produces neuromuscular hyperactivity (clonus, hyperreflexia), autonomic hyperactivity, and mental status changes; cyproheptadine (a 5-HT2A antagonist) may be used in moderate-to-severe cases.",
+   "verified": false,
+   "open": {
+    "q": "Name the drug interaction syndrome marked by clonus, hyperreflexia, agitation, and autonomic hyperactivity from excessive 5-HT activity.",
+    "accept": [
+     "serotonin syndrome",
+     "serotonin toxicity"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-036",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which group of drugs can precipitate drug-induced lupus erythematosus (DILE), typically characterized by antinuclear antibodies and antihistone antibodies while sparing severe renal and CNS involvement?",
+   "options": [
+    "Loop diuretics",
+    "Macrolides",
+    "Proton pump inhibitors",
+    "Hydralazine, procainamide, isoniazid, and minocycline"
+   ],
+   "answer": 3,
+   "explain": "Drug-induced lupus is associated with hydralazine, procainamide, isoniazid, quinidine, and minocycline; symptoms usually resolve after stopping the offending drug.",
+   "verified": false,
+   "open": {
+    "q": "Name two drugs classically associated with drug-induced lupus erythematosus.",
+    "accept": [
+     "hydralazine and procainamide",
+     "hydralazine isoniazid or procainamide"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-037",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug is notorious for causing pulmonary fibrosis, thyroid dysfunction (hypothyroidism or hyperthyroidism), corneal microdeposits, and bluish-grey skin pigmentation during long-term use?",
+   "options": [
+    "Amiodarone",
+    "Digoxin",
+    "Verapamil",
+    "Atenolol"
+   ],
+   "answer": 0,
+   "explain": "Amiodarone is a lipophilic Class III antiarrhythmic with a very long half-life that accumulates in lung, thyroid, cornea, and skin, requiring baseline and periodic pulmonary, thyroid, and liver monitoring.",
+   "verified": false,
+   "open": {
+    "q": "Name the antiarrhythmic drug associated with pulmonary fibrosis, thyroid dysfunction, corneal deposits, and skin discoloration.",
+    "accept": [
+     "amiodarone"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-038",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which serious cutaneous adverse drug reaction is characterized by widespread epidermal detachment (>30% body surface area), mucosal erosions, and a positive Nikolsky sign?",
+   "options": [
+    "Fixed drug eruption",
+    "Toxic epidermal necrolysis (TEN)",
+    "Urticaria",
+    "Lichenoid rash"
+   ],
+   "answer": 1,
+   "explain": "TEN (and Stevens-Johnson syndrome, involving <10% BSA detachment) is a severe mucocutaneous drug reaction requiring immediate withdrawal of the culprit drug and burn-unit-level supportive care.",
+   "verified": false,
+   "open": {
+    "q": "Name the severe mucocutaneous drug reaction involving widespread epidermal detachment over 30% of body surface area.",
+    "accept": [
+     "toxic epidermal necrolysis",
+     "TEN",
+     "Lyell syndrome"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-039",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Interactions",
+   "q": "What is a 'pharmacokinetic' drug interaction?",
+   "options": [
+    "Two drugs acting at the same receptor to block each other's signaling",
+    "Two drugs causing additive central nervous system depression",
+    "One drug altering the absorption, distribution, metabolism, or excretion (ADME) of another drug",
+    "Chemical inactivation of a drug inside an infusion bottle"
+   ],
+   "answer": 2,
+   "explain": "Pharmacokinetic interactions modify the concentration-time profile (ADME) of a drug at its site of action without directly changing the target tissue's sensitivity.",
+   "verified": false,
+   "open": {
+    "q": "Define a pharmacokinetic drug interaction.",
+    "accept": [
+     "one drug alters the absorption distribution metabolism or excretion of another drug",
+     "modification of ADME of one drug by another"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-040",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Interactions",
+   "q": "What is a 'pharmacodynamic' drug interaction?",
+   "options": [
+    "Inhibition of hepatic cytochrome P450 by an azole antifungal",
+    "Displacement of a drug from plasma albumin",
+    "Reduction of gastric absorption by a metal chelate",
+    "One drug modifying the pharmacological effect of another drug at the receptor, second-messenger, or physiological level without altering its plasma concentration"
+   ],
+   "answer": 3,
+   "explain": "Pharmacodynamic interactions involve additive, synergistic, or antagonistic effects on target tissues—for example, alcohol plus benzodiazepines causing additive CNS depression or NSAIDs plus ACE inhibitors impairing renal perfusion.",
+   "verified": false,
+   "open": {
+    "q": "Define a pharmacodynamic drug interaction.",
+    "accept": [
+     "one drug modifies the physiological or receptor effect of another without changing its concentration",
+     "interaction at the site of drug action altering response"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-041",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Why does combining a non-steroidal anti-inflammatory drug (NSAID) with an ACE inhibitor or loop diuretic increase the risk of acute kidney injury in a volume-depleted or elderly patient?",
+   "options": [
+    "NSAIDs inhibit prostaglandin synthesis (PGE2/PGI2), constricting the afferent arteriole while ACE inhibitors dilate the efferent arteriole, reducing glomerular filtration pressure",
+    "ACE inhibitors convert NSAIDs into nephrotoxic oxalates",
+    "NSAIDs block aldosterone receptors in the collecting duct",
+    "ACE inhibitors cause direct crystallization of NSAIDs in renal tubules"
+   ],
+   "answer": 0,
+   "explain": "Glomerular filtration relies on prostaglandins maintaining afferent arteriolar patency and angiotensin II maintaining efferent arteriolar tone; blocking both (especially with diuretic volume depletion) sharply lowers GFR.",
+   "verified": false,
+   "open": {
+    "q": "Explain the hemodynamic mechanism by which NSAIDs can precipitate acute renal failure in patients taking ACE inhibitors.",
+    "accept": [
+     "prostaglandin inhibition constricts afferent arteriole while ACE inhibition dilates efferent arteriole lowering GFR",
+     "loss of prostaglandin-mediated afferent dilation combined with efferent dilation"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-042",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Which combination of drugs carries a high risk of life-threatening hyperkalaemia due to additive potassium retention?",
+   "options": [
+    "Loop diuretic + beta-2 agonist",
+    "ACE inhibitor + potassium-sparing diuretic (such as spironolactone or amiloride)",
+    "Thiazide diuretic + insulin",
+    "Metformin + glibenclamide"
+   ],
+   "answer": 1,
+   "explain": "ACE inhibitors lower aldosterone (reducing distal K+ secretion), while spironolactone antagonizes mineralocorticoid receptors or amiloride blocks ENaC; together they can cause severe hyperkalaemia.",
+   "verified": false,
+   "open": {
+    "q": "Which drug combination increases the risk of hyperkalaemia by impairing renal potassium excretion?",
+    "accept": [
+     "ACE inhibitor and potassium-sparing diuretic",
+     "ACE inhibitor or ARB with spironolactone"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-043",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Why should patients taking monoamine oxidase inhibitors (MAOIs) avoid tyramine-rich foods such as aged cheese, cured meats, and fermented yeast products?",
+   "options": [
+    "Tyramine directly inhibits cholinesterase in the gastrointestinal tract",
+    "MAOI therapy causes severe hypoglycaemia when tyramine is eaten",
+    "Inhibition of MAO prevents breakdown of dietary tyramine in the gut and liver, allowing tyramine to enter systemic circulation and displace noradrenaline, risking a hypertensive crisis",
+    "Tyramine precipitates calcium stones in the renal pelvis"
+   ],
+   "answer": 2,
+   "explain": "Normally, MAO in the gut wall and liver metabolizes ingested tyramine; when MAO is inhibited, absorbed tyramine enters adrenergic neurons and triggers massive noradrenaline release ('cheese effect').",
+   "verified": false,
+   "open": {
+    "q": "Explain why tyramine-rich foods can trigger a hypertensive crisis in patients taking MAO inhibitors.",
+    "accept": [
+     "inhibited MAO allows tyramine to enter circulation and release noradrenaline causing severe vasoconstriction",
+     "tyramine is not broken down and displaces noradrenaline from sympathetic nerve endings"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-044",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Which interaction occurs when ethanol is consumed by a patient taking disulfiram, metronidazole, or chlorpropamide?",
+   "options": [
+    "Complete suppression of alcohol intoxication with zero symptoms",
+    "Rapid conversion of ethanol into non-toxic acetate without flushing",
+    "Direct blockade of muscarinic receptors causing dry mouth only",
+    "Disulfiram-like reaction: inhibition of aldehyde dehydrogenase causes acetaldehyde accumulation, resulting in flushing, throbbing headache, nausea, vomiting, and hypotension"
+   ],
+   "answer": 3,
+   "explain": "Aldehyde dehydrogenase normally oxidizes acetaldehyde to acetic acid; its inhibition causes acetaldehyde buildup and unpleasant systemic symptoms that deter alcohol intake.",
+   "verified": false,
+   "open": {
+    "q": "Describe the disulfiram-ethanol reaction and name the enzyme inhibited.",
+    "accept": [
+     "inhibition of aldehyde dehydrogenase causes acetaldehyde accumulation with flushing headache nausea vomiting and hypotension",
+     "aldehyde dehydrogenase inhibition leading to acetaldehyde buildup"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-045",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "How does co-administration of non-selective beta-blockers (such as propranolol) with insulin or sulfonylureas affect a diabetic patient?",
+   "options": [
+    "They mask sympathetic warning symptoms of hypoglycaemia (tachycardia, tremor) and can prolong hypoglycaemia by inhibiting beta-2-mediated glycogenolysis",
+    "They completely cure type 1 diabetes by regenerating pancreatic beta cells",
+    "They accelerate renal excretion of insulin within 15 minutes",
+    "They prevent glucose absorption across the intestinal brush border"
+   ],
+   "answer": 0,
+   "explain": "Beta-blockers blunt tremor and palpitations (though sweating, mediated by sympathetic cholinergic fibers, usually persists) and impair beta-2-driven hepatic glycogenolysis and recovery from low blood sugar.",
+   "verified": false,
+   "open": {
+    "q": "Explain two hazards of combining non-selective beta-blockers with insulin or sulfonylureas in diabetic patients.",
+    "accept": [
+     "mask tachycardia and tremor of hypoglycaemia and impair glycogenolysis delaying recovery",
+     "blunt sympathetic warning signs and inhibit beta-2 glycogenolysis"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-046",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Which drug interaction is caused by co-administering a macrolide antibiotic (such as erythromycin or clarithromycin) with a statin metabolized by CYP3A4 (such as simvastatin)?",
+   "options": [
+    "Rapid breakdown of simvastatin into inactive metabolites",
+    "Inhibition of CYP3A4 increases simvastatin plasma levels, raising the risk of myopathy and rhabdomyolysis",
+    "Enhanced intestinal absorption of dietary vitamin K",
+    "Antagonism of HMG-CoA reductase upregulation"
+   ],
+   "answer": 1,
+   "explain": "Erythromycin and clarithromycin inhibit CYP3A4, elevating plasma simvastatin concentrations and increasing the risk of skeletal muscle injury (myalgia, myositis, rhabdomyolysis).",
+   "verified": false,
+   "open": {
+    "q": "Explain why combining clarithromycin or erythromycin with simvastatin increases the risk of myopathy or rhabdomyolysis.",
+    "accept": [
+     "CYP3A4 inhibition raises simvastatin levels increasing muscle toxicity risk",
+     "inhibition of simvastatin metabolism by macrolides"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-047",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Which herbal supplement is a well-known inducer of CYP3A4 and P-glycoprotein that lowers plasma concentrations of cyclosporine, tacrolimus, warfarin, and HIV protease inhibitors?",
+   "options": [
+    "Chamomile tea",
+    "Peppermint oil",
+    "St John's wort (Hypericum perforatum)",
+    "Flaxseed"
+   ],
+   "answer": 2,
+   "explain": "St John's wort induces CYP3A4 and P-glycoprotein, potentially causing organ transplant rejection, treatment failure, or unplanned pregnancy.",
+   "verified": false,
+   "open": {
+    "q": "Name the herbal remedy that induces CYP3A4 and P-glycoprotein and reduces levels of cyclosporine and oral contraceptives.",
+    "accept": [
+     "St John's wort",
+     "Hypericum perforatum"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-048",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Why does combining aspirin or other NSAIDs with warfarin increase bleeding risk through both pharmacokinetic and pharmacodynamic mechanisms?",
+   "options": [
+    "Aspirin stimulates hepatic synthesis of clotting factors II, VII, IX, and X",
+    "Warfarin inhibits platelet COX-1 irreversibly",
+    "NSAIDs increase vitamin K absorption in the ileum",
+    "NSAIDs inhibit platelet aggregation via COX-1 blockade, can irritate gastric mucosa, and may displace warfarin from albumin or inhibit its metabolism"
+   ],
+   "answer": 3,
+   "explain": "Impairing primary haemostasis (platelets) and mucosal integrity while anticoagulating via vitamin K epoxide reductase inhibition creates a high risk of gastrointestinal and systemic bleeding.",
+   "verified": false,
+   "open": {
+    "q": "Give two reasons why co-administering an NSAID with warfarin increases bleeding risk.",
+    "accept": [
+     "antiplatelet effect from COX inhibition and gastric mucosal irritation plus protein binding or metabolic effects",
+     "inhibits platelet aggregation and increases GI bleeding risk"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-049",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "How is 'drug tolerance' defined in pharmacology?",
+   "options": [
+    "A decrease in response to a given dose of a drug after repeated administration, requiring a larger dose to achieve the same effect",
+    "An allergic rash appearing after the first dose of an antibiotic",
+    "Complete elimination of a drug from the body within 1 hour",
+    "A genetic mutation preventing drug metabolism"
+   ],
+   "answer": 0,
+   "explain": "Tolerance means a progressively larger dose is needed to produce the same magnitude of effect that was originally produced by a smaller dose.",
+   "verified": false,
+   "open": {
+    "q": "Define drug tolerance.",
+    "accept": [
+     "diminished effect on repeated administration requiring a higher dose for the same response",
+     "reduced responsiveness after repeated dosing"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-050",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "What is 'cross-tolerance'?",
+   "options": [
+    "Tolerance developing to a drug only when taken with food",
+    "Tolerance to one drug conferring reduced sensitivity to another drug, usually within the same pharmacological class or acting via a similar mechanism",
+    "Tolerance that occurs exclusively in elderly patients",
+    "A condition where a drug becomes more potent every day"
+   ],
+   "answer": 1,
+   "explain": "Cross-tolerance occurs among drugs sharing common pathways—for example, tolerance to morphine confers cross-tolerance to heroin or pethidine, and chronic alcohol users show cross-tolerance to benzodiazepines or barbiturates.",
+   "verified": false,
+   "open": {
+    "q": "Define cross-tolerance and give one example.",
+    "accept": [
+     "tolerance to one drug reducing response to another drug of a similar class such as morphine and heroin or alcohol and benzodiazepines",
+     "shared tolerance between drugs acting on common mechanisms"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-051",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "What is 'physical dependence'?",
+   "options": [
+    "An inability to stop taking a drug because of craving alone without any physiological symptoms",
+    "An altered physiological state produced by repeated drug administration that results in a characteristic withdrawal (abstinence) syndrome when the drug is stopped or antagonized",
+    "A permanent structural deformity of a limb",
+    "A preference for intravenous over oral tablets"
+   ],
+   "answer": 1,
+   "explain": "Physical dependence is neuroadaptation to chronic drug exposure such that abrupt cessation or antagonist administration (e.g., naloxone in opioid dependence) precipitates a characteristic withdrawal syndrome.",
+   "verified": false,
+   "open": {
+    "q": "Define physical drug dependence.",
+    "accept": [
+     "neuroadapted physiological state that produces withdrawal symptoms when the drug is stopped or antagonized",
+     "state where cessation or an antagonist triggers an abstinence syndrome"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-052",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "What is 'psychological dependence' (addiction/substance use disorder behavior)?",
+   "options": [
+    "Slowing of glomerular filtration rate after chronic therapy",
+    "Development of a skin rash upon sun exposure",
+    "A compulsive drive or craving to seek and take a drug for its rewarding, pleasurable, or relief-producing effects despite harmful consequences",
+    "Reduction in plasma albumin concentration"
+   ],
+   "answer": 2,
+   "explain": "Psychological dependence involves reward-circuit reinforcement, craving, loss of control over drug use, and continued use despite adverse medical, social, or legal consequences.",
+   "verified": false,
+   "open": {
+    "q": "Define psychological dependence in substance use.",
+    "accept": [
+     "compulsive craving and drug-seeking behavior for reward or relief despite harm",
+     "emotional or psychological drive to keep taking a drug"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-053",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Which brain pathway and neurotransmitter are central to the acute rewarding and reinforcing effects of most addictive drugs (such as opioids, stimulants, nicotine, and alcohol)?",
+   "options": [
+    "The nigrostriatal GABA pathway",
+    "The spinothalamic substance P pathway",
+    "The cerebellar Purkinje glutamate pathway",
+    "The mesolimbic dopaminergic pathway projecting from the ventral tegmental area (VTA) to the nucleus accumbens"
+   ],
+   "answer": 3,
+   "explain": "Most drugs of abuse increase dopamine release in the nucleus accumbens via the mesolimbic reward circuit originating in the ventral tegmental area.",
+   "verified": false,
+   "open": {
+    "q": "Name the main dopaminergic brain reward pathway involved in drug dependence and addiction.",
+    "accept": [
+     "mesolimbic pathway",
+     "mesolimbic dopamine pathway",
+     "VTA to nucleus accumbens"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-054",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Which clinical features characterize acute opioid withdrawal syndrome?",
+   "options": [
+    "Rhinorrhoea, lacrimation, piloerection ('gooseflesh'), yawning, mydriasis, abdominal cramps, diarrhoea, anxiety, and tachycardia",
+    "Deep coma, pinpoint pupils, and respiratory depression",
+    "Severe bradycardia, hypotension, and hypothermia",
+    "Complete absence of autonomic or gastrointestinal symptoms"
+   ],
+   "answer": 0,
+   "explain": "Opioid withdrawal produces a classic sympathetic/autonomic rebound picture—lacrimation, rhinorrhoea, piloerection, dilated pupils, sweating, pilomotor erection, nausea, cramps, and diarrhoea—though it is rarely fatal on its own in healthy adults.",
+   "verified": false,
+   "open": {
+    "q": "List three characteristic physical signs or symptoms of opioid withdrawal.",
+    "accept": [
+     "lacrimation rhinorrhoea piloerection mydriasis cramps or diarrhoea",
+     "dilated pupils gooseflesh yawning cramps or lacrimation"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-055",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Abrupt withdrawal from which two classes of depressant substances is particularly dangerous because it can cause life-threatening generalized tonic-clonic seizures and delirium tremens?",
+   "options": [
+    "Caffeine and nicotine",
+    "Alcohol (ethanol) and benzodiazepines/barbiturates",
+    "Cannabinoids and antihistamines",
+    "SSRIs and statins"
+   ],
+   "answer": 1,
+   "explain": "Chronic alcohol or benzodiazepine use downregulates GABA-A inhibition and upregulates NMDA/glutamate excitation; abrupt cessation can trigger severe autonomic hyperactivity, delirium tremens, and fatal seizures.",
+   "verified": false,
+   "open": {
+    "q": "Which two substance classes can cause life-threatening withdrawal seizures or delirium tremens upon abrupt cessation?",
+    "accept": [
+     "alcohol and benzodiazepines",
+     "ethanol and benzodiazepines or barbiturates"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-056",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Which long-acting opioid agonist is widely used in opioid maintenance therapy to prevent withdrawal cravings and reduce illicit opioid use?",
+   "options": [
+    "Naloxone",
+    "Flumazenil",
+    "Methadone",
+    "Disulfiram"
+   ],
+   "answer": 2,
+   "explain": "Methadone (and buprenorphine) acts at mu-opioid receptors with a long half-life and gradual onset, preventing withdrawal symptoms and reducing high-risk injection behavior.",
+   "verified": false,
+   "open": {
+    "q": "Name a long-acting opioid used in maintenance therapy for opioid dependence.",
+    "accept": [
+     "methadone",
+     "buprenorphine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-057",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Which opioid antagonist is used to prevent relapse in abstinent individuals with opioid use disorder (and also for alcohol use disorder)?",
+   "options": [
+    "Varenicline",
+    "Acamprosate",
+    "Chlordiazepoxide",
+    "Naltrexone"
+   ],
+   "answer": 3,
+   "explain": "Naltrexone is a long-acting oral or depot opioid receptor antagonist that blocks euphoric effects of opioids and reduces alcohol craving.",
+   "verified": false,
+   "open": {
+    "q": "Which oral opioid antagonist is used to support relapse prevention in opioid or alcohol dependence?",
+    "accept": [
+     "naltrexone"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-058",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Which drug is a selective competitive antagonist at benzodiazepine binding sites on GABA-A receptors used to reverse benzodiazepine overdose or excessive sedation?",
+   "options": [
+    "Flumazenil",
+    "Naloxone",
+    "Physostigmine",
+    "Atropine"
+   ],
+   "answer": 0,
+   "explain": "Flumazenil competitively antagonizes the benzodiazepine site on GABA-A receptors, reversing sedation, though it can precipitate seizures in benzodiazepine-dependent patients or mixed tricyclic overdoses.",
+   "verified": false,
+   "open": {
+    "q": "Name the specific antagonist used to reverse benzodiazepine-induced sedation.",
+    "accept": [
+     "flumazenil"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-059",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "Why should routine flumazenil administration be avoided in a patient with suspected mixed overdose of benzodiazepines and tricyclic antidepressants (TCAs) or in chronic benzodiazepine dependence?",
+   "options": [
+    "Flumazenil causes severe hyperglycaemia within 2 minutes",
+    "Reversing GABA-A enhancement can unmask severe tricyclic-induced seizures or arrhythmias and precipitate acute benzodiazepine withdrawal",
+    "Flumazenil converts benzodiazepines into toxic cyanide",
+    "Flumazenil blocks renal filtration of glucose"
+   ],
+   "answer": 1,
+   "explain": "Benzodiazepines provide anticonvulsant protection against TCA toxicity; antagonizing them with flumazenil can trigger refractory seizures and severe withdrawal in dependent patients.",
+   "verified": false,
+   "open": {
+    "q": "Why is flumazenil risky in patients who are chronically dependent on benzodiazepines or have co-ingested tricyclic antidepressants?",
+    "accept": [
+     "can precipitate seizures and acute withdrawal",
+     "unmasks seizures or triggers withdrawal symptoms"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-060",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which specific antidote is administered for paracetamol (acetaminophen) overdose to replenish hepatic glutathione and detoxify NAPQI?",
+   "options": [
+    "Atropine",
+    "Protamine sulfate",
+    "N-acetylcysteine (NAC)",
+    "Vitamin K1 (phytomenadione)"
+   ],
+   "answer": 2,
+   "explain": "N-acetylcysteine serves as a glutathione precursor (providing cysteine) and directly conjugates NAPQI, preventing or limiting centrilobular hepatic necrosis when given early.",
+   "verified": false,
+   "open": {
+    "q": "Name the specific antidote used to treat paracetamol poisoning.",
+    "accept": [
+     "NAC",
+     "acetylcysteine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-061",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which specific antidote reverses excessive anticoagulation and bleeding caused by unfractionated heparin?",
+   "options": [
+    "Vitamin K1",
+    "Protamine sulfate",
+    "Idarucizumab",
+    "Flumazenil"
+   ],
+   "answer": 1,
+   "explain": "Protamine sulfate is a strongly basic polypeptide that binds tightly to acidic heparin via ionic attraction to form a stable, inactive complex.",
+   "verified": false,
+   "open": {
+    "q": "Name the antidote used to neutralize unfractionated heparin.",
+    "accept": [
+     "protamine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-062",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which agent is used to reverse warfarin-induced coagulopathy (alongside prothrombin complex concentrate or fresh frozen plasma in major bleeding)?",
+   "options": [
+    "Protamine sulfate",
+    "Atropine",
+    "Vitamin K1 (phytomenadione)",
+    "Deferoxamine"
+   ],
+   "answer": 2,
+   "explain": "Warfarin inhibits vitamin K epoxide reductase (VKORC1), blocking gamma-carboxylation of clotting factors II, VII, IX, and X; vitamin K1 restores cofactor synthesis (taking several hours).",
+   "verified": false,
+   "open": {
+    "q": "Which vitamin is given to reverse the anticoagulant effect of warfarin?",
+    "accept": [
+     "vitamin K",
+     "phytomenadione",
+     "phytonadione"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-063",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which two drugs are combined in the treatment of organophosphate insecticide poisoning (one to block muscarinic effects and one to reactivate phosphorylated acetylcholinesterase before 'aging')?",
+   "options": [
+    "Naloxone and flumazenil",
+    "Atropine and pralidoxime (2-PAM)",
+    "Digoxin immune Fab and calcium gluconate",
+    "Methylene blue and hydroxocobalamin"
+   ],
+   "answer": 1,
+   "explain": "Atropine antagonizes muscarinic acetylcholine excess (bronchorrhoea, bronchospasm, bradycardia, miosis), while oximes like pralidoxime regenerate active acetylcholinesterase if given before irreversible aging.",
+   "verified": false,
+   "open": {
+    "q": "Name the two main antidotes used together in organophosphate poisoning.",
+    "accept": [
+     "atropine and pralidoxime",
+     "atropine and 2-PAM"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-064",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "In organophosphate poisoning, why does pralidoxime fail to restore acetylcholinesterase activity if administered too late after exposure?",
+   "options": [
+    "Pralidoxime is destroyed by gastric acid",
+    "Pralidoxime cannot cross the glomerular membrane",
+    "The phosphorylated enzyme undergoes 'aging' (dealkylation), becoming resistant to oxime-mediated reactivation",
+    "Organophosphates permanently delete the acetylcholinesterase gene"
+   ],
+   "answer": 2,
+   "explain": "Once the phosphoryl-enzyme complex loses an alkyl group ('aging'), the bond becomes too strong for pralidoxime to cleave, making early administration crucial.",
+   "verified": false,
+   "open": {
+    "q": "What biochemical process limits the effectiveness of pralidoxime when treatment of organophosphate poisoning is delayed?",
+    "accept": [
+     "aging of the phosphorylated enzyme",
+     "dealkylation or aging of the inhibited cholinesterase"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-065",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which antidote is used in beta-blocker or calcium channel blocker poisoning when refractory hypotension and myocardial depression fail to respond to standard vasopressors?",
+   "options": [
+    "Atropine alone",
+    "Deferoxamine",
+    "Pralidoxime",
+    "High-dose insulin euglycaemic therapy (and/or glucagon for beta-blockers)"
+   ],
+   "answer": 3,
+   "explain": "High-dose insulin improves myocardial calcium handling and carbohydrate metabolism in severe beta-blocker and calcium channel blocker toxicity, while glucagon stimulates cardiac cAMP via a non-beta-adrenergic receptor.",
+   "verified": false,
+   "open": {
+    "q": "Name an antidote or specialized therapy used for severe beta-blocker or calcium channel blocker overdose.",
+    "accept": [
+     "high-dose insulin or glucagon",
+     "glucagon and high-dose insulin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-066",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which antidote is used for methanol or ethylene glycol poisoning because it has a much higher affinity for alcohol dehydrogenase than methanol or ethylene glycol?",
+   "options": [
+    "Fomepizole (4-methylpyrazole) or ethanol",
+    "Naloxone",
+    "Vitamin K1",
+    "Flumazenil"
+   ],
+   "answer": 0,
+   "explain": "Blocking alcohol dehydrogenase prevents formation of toxic formic acid (from methanol, causing blindness and metabolic acidosis) and glycolic/oxalic acid (from ethylene glycol, causing renal failure and acidosis).",
+   "verified": false,
+   "open": {
+    "q": "Name the preferred alcohol dehydrogenase inhibitor used to treat methanol or ethylene glycol poisoning.",
+    "accept": [
+     "fomepizole",
+     "4-methylpyrazole",
+     "ethanol"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-067",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which heavy metal chelator is used in severe lead poisoning (often with dimercaprol in encephalopathy)?",
+   "options": [
+    "Flumazenil",
+    "Sodium calcium edetate (CaNa2EDTA) or succimer (DMSA)",
+    "Protamine sulfate",
+    "Atropine"
+   ],
+   "answer": 1,
+   "explain": "Calcium disodium edetate (EDTA) and oral succimer (DMSA) chelate lead to form water-soluble complexes excreted in urine; CaNa2EDTA is used rather than disodium EDTA to avoid fatal hypocalcaemia.",
+   "verified": false,
+   "open": {
+    "q": "Name a chelating agent used to treat lead poisoning.",
+    "accept": [
+     "EDTA",
+     "succimer",
+     "DMSA",
+     "calcium disodium edetate"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-068",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Why must calcium disodium edetate (CaNa2EDTA) rather than disodium edetate (Na2EDTA) be used to chelate lead?",
+   "options": [
+    "Disodium EDTA is insoluble in water",
+    "Calcium disodium EDTA blocks absorption of lead in the colon",
+    "Disodium EDTA binds plasma calcium and can cause fatal hypocalcaemia and tetany",
+    "Calcium disodium EDTA increases blood glucose levels"
+   ],
+   "answer": 2,
+   "explain": "Na2EDTA chelates free calcium ions in plasma, risking severe hypocalcaemia, whereas CaNa2EDTA exchanges its calcium for lead without depleting circulating calcium.",
+   "verified": false,
+   "open": {
+    "q": "Explain why calcium disodium EDTA is used for lead chelation instead of disodium EDTA.",
+    "accept": [
+     "disodium EDTA binds serum calcium causing dangerous hypocalcaemia",
+     "avoids severe hypocalcaemia"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-069",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which chelating agent is used to treat Wilson's disease (hepatolenticular copper overload)?",
+   "options": [
+    "Flumazenil",
+    "Naloxone",
+    "Physostigmine",
+    "Penicillamine (D-penicillamine) or trientine"
+   ],
+   "answer": 3,
+   "explain": "Penicillamine and trientine chelate copper and promote its urinary excretion in Wilson's disease, while zinc salts induce intestinal metallothionein to block copper absorption.",
+   "verified": false,
+   "open": {
+    "q": "Name a copper-chelating drug used in the management of Wilson's disease.",
+    "accept": [
+     "penicillamine",
+     "D-penicillamine",
+     "trientine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-070",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which antidote is used for cyanide poisoning (alongside supportive care and thiosulfate)?",
+   "options": [
+    "Hydroxocobalamin (or sodium nitrite / sodium thiosulfate)",
+    "Atropine",
+    "Protamine sulfate",
+    "Acetylcysteine"
+   ],
+   "answer": 0,
+   "explain": "Cyanide binds cytochrome oxidase and halts cellular respiration; hydroxocobalamin binds cyanide to form non-toxic cyanocobalamin (vitamin B12), while nitrites form methaemoglobin to bind cyanide and thiosulfate donates sulfur to form thiocyanate.",
+   "verified": false,
+   "open": {
+    "q": "Name an antidote used in acute cyanide poisoning.",
+    "accept": [
+     "hydroxocobalamin",
+     "sodium thiosulfate",
+     "sodium nitrite"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-071",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which reducing agent is administered intravenously to treat drug-induced methaemoglobinaemia (such as from dapsone, nitrates, or benzocaine)?",
+   "options": [
+    "Protamine sulfate",
+    "Methylene blue (methylthioninium chloride)",
+    "Flumazenil",
+    "Deferoxamine"
+   ],
+   "answer": 1,
+   "explain": "Methylene blue is reduced to leukomethylene blue via NADPH-dependent reductase, which donates electrons to reduce ferric iron (Fe3+) in methaemoglobin back to ferrous iron (Fe2+) capable of carrying oxygen.",
+   "verified": false,
+   "open": {
+    "q": "Name the antidote used to treat clinically significant drug-induced methaemoglobinaemia.",
+    "accept": [
+     "methylene blue",
+     "methylthioninium"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-072",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Why can methylene blue be ineffective or even worsen haemolysis when used to treat methaemoglobinaemia in a patient with G6PD deficiency?",
+   "options": [
+    "Methylene blue blocks oxygen binding to normal haemoglobin irreversibly",
+    "Methylene blue accelerates renal excretion of glucose",
+    "Methylene blue requires NADPH generated via G6PD to act and can induce oxidative haemolysis in G6PD-deficient red blood cells",
+    "Methylene blue increases conversion of methaemoglobin into carboxyhaemoglobin"
+   ],
+   "answer": 2,
+   "explain": "Reduction of methylene blue depends on NADPH from the G6PD pathway; in G6PD deficiency, NADPH is limited and methylene blue can act as an oxidant causing haemolysis (ascorbic acid is an alternative).",
+   "verified": false,
+   "open": {
+    "q": "Explain why methylene blue can be ineffective and cause haemolysis in patients with G6PD deficiency.",
+    "accept": [
+     "its reduction relies on NADPH from G6PD and it can trigger oxidative haemolysis in G6PD deficiency",
+     "depends on NADPH and may cause haemolysis in G6PD-deficient erythrocytes"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-073",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which specific immunotherapeutic agent is used to reverse life-threatening digoxin toxicity (such as ventricular arrhythmias or severe hyperkalaemia)?",
+   "options": [
+    "Protamine sulfate",
+    "Vitamin K1",
+    "Pralidoxime",
+    "Digoxin-specific antibody fragments (digoxin immune Fab)"
+   ],
+   "answer": 3,
+   "explain": "Digoxin immune Fab binds free and tissue-bound digoxin with high affinity, allowing rapid renal clearance of the Fab-digoxin complex and reversing toxicity.",
+   "verified": false,
+   "open": {
+    "q": "Name the specific antidote used for severe digoxin poisoning.",
+    "accept": [
+     "digoxin immune Fab",
+     "anti-digoxin Fab fragments"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-074",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which agent is used to rescue normal cells after high-dose methotrexate therapy by bypassing dihydrofolate reductase inhibition?",
+   "options": [
+    "Folinic acid (leucovorin)",
+    "Pyridoxine",
+    "Cyanocobalamin",
+    "Ascorbic acid"
+   ],
+   "answer": 0,
+   "explain": "Methotrexate inhibits dihydrofolate reductase; leucovorin (5-formyltetrahydrofolate) supplies reduced folate directly to rescue host cells without requiring dihydrofolate reductase.",
+   "verified": false,
+   "open": {
+    "q": "Name the reduced folate used as 'rescue' therapy after high-dose methotrexate.",
+    "accept": [
+     "leucovorin",
+     "folinic acid"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-075",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which adverse effect is a classic Type A (pharmacological) reaction to angiotensin-converting enzyme (ACE) inhibitors such as captopril or enalapril?",
+   "options": [
+    "Malignant hyperthermia",
+    "Dry, non-productive cough (due to accumulation of bradykinin and substance P)",
+    "Phocomelia",
+    "Agranulocytosis from G6PD deficiency"
+   ],
+   "answer": 1,
+   "explain": "ACE also degrades bradykinin and substance P; their accumulation sensitizes airway sensory C-fibers, causing a persistent dry cough that resolves after stopping the ACE inhibitor.",
+   "verified": false,
+   "open": {
+    "q": "Name a common cough associated with ACE inhibitors and state the endogenous peptide involved.",
+    "accept": [
+     "dry cough due to bradykinin",
+     "persistent dry cough from bradykinin or substance P accumulation"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-076",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Which serious, potentially fatal adverse effect of ACE inhibitors and ARBs involves swelling of the lips, tongue, face, or upper airway and requires immediate airway protection and drug discontinuation?",
+   "options": [
+    "Osteoporosis",
+    "Gout",
+    "Angioedema",
+    "Tardive dyskinesia"
+   ],
+   "answer": 2,
+   "explain": "Bradykinin-mediated vasodilation and increased vascular permeability can cause angioedema of the tongue, glottis, or larynx; adrenaline is used if airway compromise threatens life, and ACE inhibitors are permanently avoided.",
+   "verified": false,
+   "open": {
+    "q": "Name the potentially life-threatening airway-swelling adverse effect associated with ACE inhibitors.",
+    "accept": [
+     "angioedema",
+     "angioneurotic oedema"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-077",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug is classically associated with gingival hyperplasia (overgrowth of gum tissue) and hirsutism during long-term therapy?",
+   "options": [
+    "Ciprofloxacin",
+    "Metformin",
+    "Atenolol",
+    "Phenytoin"
+   ],
+   "answer": 3,
+   "explain": "Chronic phenytoin therapy can cause gingival overgrowth (fibrous hyperplasia), hirsutism, coarsening of facial features, and megaloblastic anaemia or osteomalacia.",
+   "verified": false,
+   "open": {
+    "q": "Name the anticonvulsant drug classically associated with gingival hyperplasia.",
+    "accept": [
+     "phenytoin",
+     "diphenylhydantoin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-078",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antimicrobial class carries a boxed warning for tendinopathy and tendon rupture (especially the Achilles tendon), peripheral neuropathy, and CNS effects?",
+   "options": [
+    "Fluoroquinolones (such as ciprofloxacin and levofloxacin)",
+    "Penicillins",
+    "Lincosamides",
+    "Glycopeptides"
+   ],
+   "answer": 0,
+   "explain": "Fluoroquinolones can damage tendon collagen/fibroblasts—risk is higher in older adults, patients on corticosteroids, and renal impairment—and are generally avoided in children unless clearly indicated.",
+   "verified": false,
+   "open": {
+    "q": "Which class of antibiotics is associated with Achilles tendinitis and tendon rupture?",
+    "accept": [
+     "fluoroquinolones",
+     "quinolones",
+     "ciprofloxacin levofloxacin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-079",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug is classically associated with a 'red man' (infusion-related histamine release) reaction if infused too rapidly intravenously?",
+   "options": [
+    "Gentamicin",
+    "Vancomycin",
+    "Metronidazole",
+    "Aciclovir"
+   ],
+   "answer": 1,
+   "explain": "Rapid IV infusion of vancomycin directly degranulates mast cells and basophils independently of IgE, causing flushing, erythema of the face and upper torso, and hypotension; prevented by slow infusion and antihistamines.",
+   "verified": false,
+   "open": {
+    "q": "Name the glycopeptide antibiotic that causes an infusion-related flushing reaction ('red man syndrome') if infused too fast.",
+    "accept": [
+     "vancomycin"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-080",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug is associated with 'grey-blue' or 'slate-grey' skin pigmentation, corneal deposits, and phototoxicity, and is a classic cause of drug-induced lupus?",
+   "options": [
+    "Chloroquine",
+    "Loratadine",
+    "Minocycline",
+    "Omeprazole"
+   ],
+   "answer": 2,
+   "explain": "Long-term minocycline can cause blue-grey skin/mucosal pigmentation, vestibular toxicity, and autoimmune syndromes including drug-induced lupus and autoimmune hepatitis.",
+   "verified": false,
+   "open": {
+    "q": "Name the tetracycline derivative associated with blue-grey skin pigmentation and drug-induced lupus.",
+    "accept": [
+     "minocycline"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-081",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug requires regular ophthalmological monitoring (visual fields and retinal imaging) during long-term therapy because of irreversible retinopathy?",
+   "options": [
+    "Atorvastatin",
+    "Metformin",
+    "Ciprofloxacin",
+    "Chloroquine or hydroxychloroquine"
+   ],
+   "answer": 3,
+   "explain": "Chloroquine and hydroxychloroquine bind melanin in the retinal pigment epithelium; prolonged high-dose use can cause bull's-eye maculopathy and irreversible visual loss.",
+   "verified": false,
+   "open": {
+    "q": "Name the antimalarial/immunomodulatory drug that requires retinal monitoring due to risk of retinopathy.",
+    "accept": [
+     "chloroquine",
+     "hydroxychloroquine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-082",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which psychotropic drug has a narrow therapeutic window and causes tremor, polyuria/polydipsia (nephrogenic diabetes insipidus), hypothyroidism, and teratogenic Ebstein anomaly in pregnancy?",
+   "options": [
+    "Lithium",
+    "Fluoxetine",
+    "Buspirone",
+    "Risperidone"
+   ],
+   "answer": 0,
+   "explain": "Lithium interferes with ADH-mediated water reabsorption in the collecting duct (nephrogenic diabetes insipidus), inhibits thyroid hormone release, and crosses the placenta.",
+   "verified": false,
+   "open": {
+    "q": "Name the mood stabilizer associated with nephrogenic diabetes insipidus, hypothyroidism, tremor, and Ebstein anomaly.",
+    "accept": [
+     "lithium",
+     "lithium carbonate"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-083",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antipsychotic drug carries a significant risk of agranulocytosis (requiring regular absolute neutrophil count monitoring) as well as myocarditis and metabolic syndrome?",
+   "options": [
+    "Haloperidol",
+    "Clozapine",
+    "Fluphenazine",
+    "Aripiprazole"
+   ],
+   "answer": 1,
+   "explain": "Clozapine is reserved for treatment-resistant schizophrenia because of potentially fatal agranulocytosis (severe neutropenia), myocarditis, and seizures, requiring mandatory blood count monitoring.",
+   "verified": false,
+   "open": {
+    "q": "Which atypical antipsychotic requires routine white blood cell/neutrophil monitoring due to the risk of agranulocytosis?",
+    "accept": [
+     "clozapine"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-084",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which endocrine/metabolic adverse effect is characteristic of prolonged systemic corticosteroid therapy?",
+   "options": [
+    "Primary hyperaldosteronism with hypokalemic alkalosis and hypotension",
+    "Iatrogenic Cushing syndrome, adrenal suppression (HPA axis suppression), osteoporosis, hyperglycaemia, and increased susceptibility to infection",
+    "Acute thyroid storm",
+    "Aplastic anaemia with pancytopenia"
+   ],
+   "answer": 1,
+   "explain": "Exogenous glucocorticoids cause Cushingoid features, catabolic bone loss/osteoporosis, insulin resistance/hyperglycaemia, immunosuppression, and suppression of endogenous ACTH/cortisol.",
+   "verified": false,
+   "open": {
+    "q": "State three characteristic adverse effects of prolonged systemic corticosteroid therapy.",
+    "accept": [
+     "Cushingoid features adrenal suppression osteoporosis hyperglycaemia or infection risk",
+     "adrenal suppression osteoporosis and hyperglycaemia"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-085",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Why must chronic systemic corticosteroid therapy be tapered gradually rather than stopped abruptly?",
+   "options": [
+    "Abrupt stopping causes immediate drug accumulation in adipose tissue",
+    "Corticosteroids are excreted only through sweat glands",
+    "Exogenous steroids suppress the hypothalamic-pituitary-adrenal (HPA) axis, so sudden withdrawal can precipitate acute adrenal crisis (hypotension, shock, hyponatraemia, hypoglycaemia)",
+    "Sudden cessation causes permanent blindness"
+   ],
+   "answer": 2,
+   "explain": "Prolonged steroid exposure inhibits CRH and ACTH secretion and causes adrenocortical atrophy; tapering allows endogenous HPA axis recovery to prevent Addisonian crisis.",
+   "verified": false,
+   "open": {
+    "q": "Explain why prolonged systemic corticosteroid therapy must be tapered gradually rather than discontinued abruptly.",
+    "accept": [
+     "prevents acute adrenal crisis due to suppressed HPA axis and adrenocortical atrophy",
+     "allows recovery of suppressed hypothalamic-pituitary-adrenal axis"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-086",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which adverse effect is associated with prolonged use of proton pump inhibitors (such as omeprazole) due to chronic hypochlorhydria and altered calcium/mineral absorption?",
+   "options": [
+    "Acute angle-closure glaucoma",
+    "Hyperkalaemic metabolic acidosis",
+    "Coronary vasospasm",
+    "Increased risk of bone fractures, hypomagnesaemia, Clostridium difficile infection, and vitamin B12 malabsorption"
+   ],
+   "answer": 3,
+   "explain": "Sustained gastric acid suppression reduces calcium/B12 absorption and impairs the gastric acid barrier against enteric pathogens like Clostridioides difficile.",
+   "verified": false,
+   "open": {
+    "q": "Name two adverse effects associated with long-term proton pump inhibitor therapy.",
+    "accept": [
+     "fracture risk hypomagnesaemia Clostridioides difficile infection or B12 deficiency",
+     "bone fractures and hypomagnesaemia"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-087",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which rare but life-threatening metabolic complication is associated with metformin accumulation, especially in patients with severe renal impairment, hypoxia, or sepsis?",
+   "options": [
+    "Metformin-associated lactic acidosis (MALA)",
+    "Severe ketoacidosis with hyperglycaemia > 40 mmol/L",
+    "Acute rhabdomyolysis with myoglobinuria",
+    "Hypercalcaemic crisis"
+   ],
+   "answer": 0,
+   "explain": "Metformin inhibits mitochondrial complex I and alters hepatic lactate clearance; when renal excretion falls or tissue hypoxia increases lactate production, lactic acidosis can develop.",
+   "verified": false,
+   "open": {
+    "q": "Name the serious metabolic complication linked to metformin accumulation in renal or hypoxic states.",
+    "accept": [
+     "lactic acidosis",
+     "MALA"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-088",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which serious arrhythmia risk is shared by several drugs that prolong the QT interval on the electrocardiogram (such as certain antiarrhythmics, macrolides, fluoroquinolones, and antipsychotics)?",
+   "options": [
+    "Complete heart block with narrow QRS",
+    "Torsades de pointes (polymorphic ventricular tachycardia)",
+    "Sinus arrest with junctional escape",
+    "Atrial flutter with 1:1 conduction"
+   ],
+   "answer": 1,
+   "explain": "Prolongation of ventricular repolarization (delayed IKr potassium current and prolonged QTc) predisposes to early afterdepolarizations and torsades de pointes, which can degenerate into ventricular fibrillation.",
+   "verified": false,
+   "open": {
+    "q": "Name the polymorphic ventricular tachycardia arrhythmia triggered by drug-induced QT interval prolongation.",
+    "accept": [
+     "torsades de pointes",
+     "torsade de pointes"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-089",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Drug Interactions",
+   "q": "What does 'pharmaceutical incompatibility' mean in clinical practice?",
+   "options": [
+    "An interaction occurring at postsynaptic dopamine receptors",
+    "Induction of hepatic CYP2C9 by phenobarbital",
+    "Physicochemical interaction occurring outside the body (e.g., precipitation, inactivation, or turbidity when two drugs are mixed in the same syringe or IV fluid)",
+    "Genetic variation in NAT2 acetylation rate"
+   ],
+   "answer": 2,
+   "explain": "Pharmaceutical incompatibility happens before administration—for example, mixing alkaline phenytoin with acidic dextrose solutions causing precipitation, or mixing beta-lactams with aminoglycosides in the same IV bag.",
+   "verified": false,
+   "open": {
+    "q": "Define pharmaceutical incompatibility and give an example.",
+    "accept": [
+     "in vitro physicochemical interaction such as precipitation or inactivation when drugs are mixed in IV fluids",
+     "physical or chemical incompatibility outside the body before administration"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-090",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "How does cholestyramine reduce the absorption and therapeutic effect of co-administered oral warfarin, digoxin, or levothyroxine if taken at the same time?",
+   "options": [
+    "It stimulates rapid hepatic glucuronidation of those drugs",
+    "It increases renal tubular secretion of those drugs",
+    "It dilates splanchnic arterioles to wash drugs away",
+    "It binds these drugs non-specifically in the intestinal lumen and impairs their gastrointestinal absorption"
+   ],
+   "answer": 3,
+   "explain": "Bile acid resins can adsorb acidic or lipophilic drugs in the gut; separating dosing times (e.g., taking other drugs 1 hour before or 4 hours after cholestyramine) reduces this interaction.",
+   "verified": false,
+   "open": {
+    "q": "How does cholestyramine interfere with the oral absorption of drugs like warfarin or levothyroxine?",
+    "accept": [
+     "binds them in the gut lumen reducing absorption",
+     "intestinal binding preventing absorption"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-091",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "Why does co-administration of cimetidine (unlike famotidine) have a higher potential for pharmacokinetic drug interactions?",
+   "options": [
+    "Cimetidine inhibits hepatic cytochrome P450 enzymes (such as CYP1A2, CYP2D6, CYP3A4), whereas famotidine has minimal effect on CYP enzymes",
+    "Cimetidine is a potent inducer of P-glycoprotein",
+    "Cimetidine irreversibly binds to serum albumin",
+    "Cimetidine blocks renal glomerular filtration completely"
+   ],
+   "answer": 0,
+   "explain": "Cimetidine inhibits CYP enzymes and renal organic cation transport, raising levels of drugs like theophylline, warfarin, and phenytoin, whereas famotidine largely avoids CYP inhibition.",
+   "verified": false,
+   "open": {
+    "q": "Why does cimetidine cause more CYP-mediated drug interactions than famotidine?",
+    "accept": [
+     "cimetidine inhibits hepatic cytochrome P450 enzymes while famotidine does not significantly inhibit them",
+     "cimetidine is a CYP inhibitor"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-092",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Interactions",
+   "q": "What happens when a patient taking a non-selective beta-blocker (such as propranolol) is given adrenaline for acute anaphylaxis or hypotension?",
+   "options": [
+    "Beta-2 vasodilation is enhanced without any rise in blood pressure",
+    "Beta-2-mediated vasodilation is blocked while alpha-1-mediated vasoconstriction persists unopposed, which can cause a sharp rise in blood pressure and reflex bradycardia",
+    "Adrenaline is completely inactivated by beta-blockers in plasma",
+    "Heart rate rises to over 220 bpm immediately"
+   ],
+   "answer": 1,
+   "explain": "Blocking beta-2 receptors removes adrenaline's vasodilatory counterbalance in skeletal muscle beds, leaving unopposed alpha-1 vasoconstriction and risking hypertension and reflex vagal bradycardia.",
+   "verified": false,
+   "open": {
+    "q": "Explain the hemodynamic effect of unopposed alpha-adrenergic stimulation when adrenaline is given to someone on a non-selective beta-blocker.",
+    "accept": [
+     "alpha-1 vasoconstriction occurs without beta-2 vasodilation causing hypertension and reflex bradycardia",
+     "unopposed alpha-mediated vasoconstriction"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-093",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "What is 'pharmacodynamic (cellular) tolerance'?",
+   "options": [
+    "Faster hepatic metabolism of a drug after repeated dosing",
+    "Reduced drug absorption across the intestinal mucosa",
+    "Adaptive changes at the receptor or intracellular signaling level (such as receptor desensitization or downregulation) despite unchanged drug concentrations at the target",
+    "Increased renal excretion of unchanged drug"
+   ],
+   "answer": 2,
+   "explain": "Pharmacodynamic tolerance reflects cellular/receptor adaptation (e.g., opioid receptor desensitization and adenylate cyclase upregulation), whereas dispositional (metabolic) tolerance reflects faster clearance (e.g., enzyme induction).",
+   "verified": false,
+   "open": {
+    "q": "Define pharmacodynamic tolerance and contrast it briefly with metabolic tolerance.",
+    "accept": [
+     "reduced cellular or receptor responsiveness despite constant drug levels whereas metabolic tolerance involves faster drug clearance",
+     "receptor or intracellular adaptation rather than faster elimination"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-094",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug Dependence and Tolerance",
+   "q": "What is 'dispositional (metabolic) tolerance'?",
+   "options": [
+    "Downregulation of postsynaptic receptors in the striatum",
+    "Formation of IgE antibodies against a drug",
+    "Development of a severe skin rash",
+    "Decreased drug concentration at the site of action upon repeated dosing, commonly due to hepatic enzyme induction (autoinduction)"
+   ],
+   "answer": 3,
+   "explain": "Repeated exposure to an enzyme inducer (such as carbamazepine or phenobarbital) increases metabolic enzyme synthesis, accelerating clearance and lowering plasma levels for a given dose.",
+   "verified": false,
+   "open": {
+    "q": "Define dispositional (metabolic) tolerance.",
+    "accept": [
+     "reduced drug levels on repeated dosing due to increased elimination or enzyme induction",
+     "faster clearance or metabolism after repeated exposure"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-095",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "Why is spontaneous adverse drug reaction reporting ('pharmacovigilance') essential even after a drug completes Phase III clinical trials?",
+   "options": [
+    "Pre-marketing trials involve relatively limited sample sizes and selected patients, so rare ADRs (<1 in 1,000 to 1 in 10,000), delayed effects, and real-world interactions may not be detected until wider use",
+    "Phase III trials never test drug safety in any humans",
+    "Drugs are never tested for toxicity before clinical approval",
+    "Post-marketing reporting is only used to set retail prices"
+   ],
+   "answer": 0,
+   "explain": "Clinical trials cannot capture every rare idiosyncratic reaction, long-term toxicity, or interaction in multimorbid populations before licensing, making post-marketing surveillance vital.",
+   "verified": false,
+   "open": {
+    "q": "Explain why post-marketing adverse drug reaction reporting is necessary despite pre-approval clinical trials.",
+    "accept": [
+     "trials have limited sample sizes and selected patients so rare delayed or real-world ADRs emerge during broader clinical use",
+     "detects rare delayed and real-world adverse effects not seen in smaller pre-marketing trials"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-096",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Teratogenicity and Special Populations",
+   "q": "Why are older adults (geriatric patients) more vulnerable to adverse drug reactions than young adults?",
+   "options": [
+    "They have markedly increased glomerular filtration rate and hepatic blood flow",
+    "Age-related decline in renal and hepatic clearance, altered body composition (increased fat, decreased lean mass/total body water), polypharmacy, and altered pharmacodynamic sensitivity",
+    "They absorb zero drugs from the gastrointestinal tract",
+    "They never experience drug-drug interactions"
+   ],
+   "answer": 1,
+   "explain": "Reduced GFR, lower hepatic clearance, changes in volume of distribution, multimorbidity, and polypharmacy increase drug accumulation and ADR risk in older adults ('start low, go slow').",
+   "verified": false,
+   "open": {
+    "q": "Give two reasons why elderly patients have a higher risk of adverse drug reactions.",
+    "accept": [
+     "reduced renal or hepatic clearance polypharmacy altered body composition or increased sensitivity",
+     "declining organ clearance and polypharmacy"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-097",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which antimicrobial drug is associated with disulfiram-like reactions when combined with alcohol, peripheral neuropathy, and metallic taste?",
+   "options": [
+    "Amoxicillin",
+    "Gentamicin",
+    "Metronidazole",
+    "Vancomycin"
+   ],
+   "answer": 2,
+   "explain": "Metronidazole causes a metallic taste, can cause peripheral neuropathy with prolonged or high doses, and can trigger disulfiram-like flushing/nausea with alcohol.",
+   "verified": false,
+   "open": {
+    "q": "Name the nitroimidazole antimicrobial associated with a metallic taste, disulfiram-like alcohol reaction, and peripheral neuropathy.",
+    "accept": [
+     "metronidazole",
+     "tinidazole"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-098",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Drug-Induced Organ Toxicity",
+   "q": "Which drug-induced complication is associated with prolonged use of unfractionated heparin or low-molecular-weight heparin and presents with a falling platelet count and paradoxical thrombosis?",
+   "options": [
+    "Aplastic anaemia",
+    "Gouty arthritis",
+    "Pulmonary fibrosis",
+    "Heparin-induced thrombocytopenia (HIT)"
+   ],
+   "answer": 3,
+   "explain": "HIT is an immune-mediated disorder (antibodies against platelet factor 4-heparin complexes) that activates platelets and causes venous and arterial thrombosis despite low platelet counts, requiring cessation of heparin and a non-heparin anticoagulant.",
+   "verified": false,
+   "open": {
+    "q": "Name the immune-mediated complication of heparin therapy characterized by thrombocytopenia and paradoxical thrombosis.",
+    "accept": [
+     "heparin-induced thrombocytopenia",
+     "HIT"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-099",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Antidotes and Poisoning Management",
+   "q": "Which specific reversing agent is used to rapidly neutralize dabigatran (a direct thrombin inhibitor) in life-threatening bleeding or emergency surgery?",
+   "options": [
+    "Idarucizumab",
+    "Protamine sulfate",
+    "Atropine",
+    "Flumazenil"
+   ],
+   "answer": 0,
+   "explain": "Idarucizumab is a humanized monoclonal antibody fragment that binds dabigatran with very high affinity to rapidly reverse its anticoagulant effect.",
+   "verified": false,
+   "open": {
+    "q": "Name the specific reversal agent for dabigatran.",
+    "accept": [
+     "idarucizumab"
+    ]
+   }
+  },
+  {
+   "id": "pm-adverse-drug-reactions-interactions-and-dependen-100",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Classification of Adverse Drug Reactions",
+   "q": "What is the most important immediate clinical step when a serious adverse drug reaction (such as drug rash with eosinophilia and systemic symptoms, Stevens-Johnson syndrome, or anaphylaxis) is suspected?",
+   "options": [
+    "Double the dose to see if tolerance develops",
+    "Promptly discontinue the suspected causative drug (and treat acute emergencies such as anaphylaxis immediately)",
+    "Wait two weeks without changing therapy to observe if symptoms resolve spontaneously",
+    "Switch to another drug of the exact same chemical class with known cross-reactivity"
+   ],
+   "answer": 1,
+   "explain": "Early recognition and prompt withdrawal of the offending drug—paired with immediate resuscitation for emergencies like anaphylaxis—are critical to prevent progression and morbidity.",
+   "verified": false,
+   "open": {
+    "q": "State the most important initial management step when a serious adverse drug reaction is suspected.",
+    "accept": [
+     "stop or discontinue the suspected drug promptly",
+     "discontinue the offending drug and provide appropriate supportive or emergency care"
+    ]
+   }
+  }
+ ]
+}

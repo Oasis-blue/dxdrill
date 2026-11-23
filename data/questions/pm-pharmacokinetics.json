@@ -1,0 +1,1628 @@
+{
+ "topic": "pm-pharmacokinetics",
+ "questions": [
+  {
+   "id": "pm-pharmacokinetics-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "Which transport mechanism accounts for the gastrointestinal absorption of the vast majority of therapeutic drugs?",
+   "options": [
+    "Passive lipid diffusion",
+    "Primary active transport",
+    "Pinocytosis",
+    "Facilitated diffusion"
+   ],
+   "answer": 0,
+   "explain": "Most drugs are weak acids or weak bases that cross biological lipid bilayers down a concentration gradient via passive diffusion in their non-ionized, lipid-soluble form.",
+   "verified": false,
+   "open": {
+    "q": "Name the primary mechanism by which most drugs cross gastrointestinal cell membranes during absorption.",
+    "accept": [
+     "passive diffusion",
+     "simple diffusion"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "According to Fick's law of diffusion, which factor is inversely proportional to the rate of passive drug diffusion across a biological membrane?",
+   "options": [
+    "Concentration gradient across the membrane",
+    "Membrane thickness",
+    "Surface area available for absorption",
+    "Lipid-water partition coefficient"
+   ],
+   "answer": 1,
+   "explain": "Fick's law states that flux is directly proportional to concentration gradient, surface area, and lipid solubility, and inversely proportional to membrane thickness.",
+   "verified": false,
+   "open": {
+    "q": "According to Fick's law of diffusion, which physical parameter of a membrane reduces the rate of passive drug diffusion when it increases?",
+    "accept": [
+     "thickness of the membrane",
+     "diffusion path length"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "In which state does a weak acid or weak base diffuse most readily across lipid cell membranes?",
+   "options": [
+    "Fully ionized and water-soluble",
+    "Bound to plasma albumin",
+    "Non-ionized and lipid-soluble",
+    "Conjugated with glucuronic acid"
+   ],
+   "answer": 2,
+   "explain": "Charged (ionized) molecules attract a hydration shell and cannot easily penetrate the hydrophobic lipid bilayer, whereas non-ionized molecules diffuse freely.",
+   "verified": false,
+   "open": {
+    "q": "State the ionization and solubility state required for a weak electrolyte drug to passively diffuse across lipid cell membranes.",
+    "accept": [
+     "unionized and lipophilic",
+     "un-ionized and lipid soluble",
+     "non-ionized"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-004",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "A weakly acidic drug has a pKa of 3.5. In which environment will the greatest fraction of this drug exist in its non-ionized, absorbable form?",
+   "options": [
+    "Alkaline pancreatic juice (pH 8.0)",
+    "Normal arterial blood (pH 7.4)",
+    "Jejunal lumen (pH 6.8)",
+    "Acidic gastric juice (pH 1.5)"
+   ],
+   "answer": 3,
+   "explain": "By the Henderson-Hasselbalch equation, weak acids remain predominantly protonated (non-ionized, HA) when the surrounding pH is lower than their pKa.",
+   "verified": false,
+   "open": {
+    "q": "Explain whether a weakly acidic drug with a pKa of 3.5 is predominantly ionized or non-ionized in acidic gastric juice at pH 1.5.",
+    "accept": [
+     "predominantly non-ionized",
+     "mostly unionized"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-005",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "What happens to a weakly basic drug (pKa 8.5) after it is absorbed from the small intestine into the acidic gastric lumen (pH 1.5)?",
+   "options": [
+    "It becomes protonated and trapped in the stomach as a water-soluble cation",
+    "It becomes completely non-ionized and diffuses back into plasma",
+    "It precipitates as an insoluble calcium salt",
+    "It undergoes immediate hepatic glucuronidation in the gastric wall"
+   ],
+   "answer": 0,
+   "explain": "This phenomenon is ion trapping: weak bases accept protons in acidic gastric juice (BH+), becoming ionized and unable to diffuse back across the gastric mucosa.",
+   "verified": false,
+   "open": {
+    "q": "Name the pharmacokinetic phenomenon whereby a weak base accumulates in an acidic compartment because it becomes ionized and cannot diffuse back across the membrane.",
+    "accept": [
+     "pH partitioning",
+     "ion trapping"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-006",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "Why are most orally administered weak acids (such as aspirin) still absorbed predominantly in the small intestine rather than the stomach despite being more non-ionized in gastric acid?",
+   "options": [
+    "The stomach has no blood supply to carry absorbed drugs away",
+    "The small intestine possesses an enormous absorptive surface area due to villi and microvilli and higher blood flow",
+    "Aspirin is actively pumped only by ileal enterocytes",
+    "Gastric mucus completely blocks all passive diffusion"
+   ],
+   "answer": 1,
+   "explain": "Although the non-ionized fraction is higher in the stomach, the huge surface area of the small intestinal villi and microvilli plus rich splanchnic perfusion make the small intestine the primary site of absorption.",
+   "verified": false,
+   "open": {
+    "q": "Give the main anatomical reason why weakly acidic drugs are absorbed mainly in the small intestine rather than the stomach.",
+    "accept": [
+     "enormous surface area of villi and microvilli",
+     "much larger absorptive surface area in the small intestine"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-007",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "Which efflux transporter expressed on the apical membrane of intestinal enterocytes pumps many absorbed drugs back into the gut lumen, reducing oral bioavailability?",
+   "options": [
+    "Na+/K+-ATPase",
+    "Organic anion transporting polypeptide (OATP)",
+    "P-glycoprotein (P-gp)",
+    "GLUT-4"
+   ],
+   "answer": 2,
+   "explain": "P-glycoprotein (MDR1/ABCB1) is an ATP-dependent efflux pump in enterocytes, hepatocytes, renal tubules, and the blood-brain barrier that limits drug entry.",
+   "verified": false,
+   "open": {
+    "q": "Name the ATP-dependent efflux transporter in intestinal enterocytes and the blood-brain barrier that pumps drugs out of cells.",
+    "accept": [
+     "MDR1",
+     "ABCB1",
+     "P-gp"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "How is the oral bioavailability (F) of a drug mathematically defined?",
+   "options": [
+    "Ratio of peak plasma concentration to elimination half-life",
+    "Volume of plasma cleared of drug per unit time",
+    "Ratio of unbound drug to total drug in systemic plasma",
+    "Fraction of an administered dose that reaches the systemic circulation in unchanged active form"
+   ],
+   "answer": 3,
+   "explain": "Bioavailability (F) is calculated as (AUC oral / AUC IV) x 100% for equal doses, representing the fraction of unchanged drug entering systemic circulation.",
+   "verified": false,
+   "open": {
+    "q": "Define bioavailability.",
+    "accept": [
+     "fraction of administered dose reaching systemic circulation unchanged",
+     "percentage of drug dose entering systemic blood in unchanged form"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-009",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "Which pharmacokinetic parameter obtained from a plasma concentration-time curve is directly used to calculate the extent of systemic drug absorption (bioavailability)?",
+   "options": [
+    "Area under the plasma concentration-time curve (AUC)",
+    "Time to peak concentration (Tmax)",
+    "Elimination rate constant (ke)",
+    "Therapeutic index (TI)"
+   ],
+   "answer": 0,
+   "explain": "AUC reflects the total systemic exposure to a drug over time; comparing AUC after extravascular dosing to AUC after intravenous dosing yields absolute bioavailability.",
+   "verified": false,
+   "open": {
+    "q": "Which parameter derived from a plasma drug concentration-time plot measures total systemic drug exposure and is used to calculate bioavailability?",
+    "accept": [
+     "AUC",
+     "area under the curve"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-010",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "A 200 mg oral dose of a drug produces an AUC of 40 mg·h/L, whereas a 100 mg intravenous dose of the same drug produces an AUC of 80 mg·h/L. What is the absolute oral bioavailability (F) of this drug?",
+   "options": [
+    "50%",
+    "25%",
+    "40%",
+    "80%"
+   ],
+   "answer": 1,
+   "explain": "F = (AUC_oral / Dose_oral) / (AUC_IV / Dose_IV) = (40 / 200) / (80 / 100) = 0.2 / 0.8 = 0.25, or 25%.",
+   "verified": false,
+   "open": {
+    "q": "Calculate the absolute oral bioavailability if a 200 mg oral dose yields an AUC of 40 mg·h/L and a 100 mg IV dose yields an AUC of 80 mg·h/L.",
+    "accept": [
+     "0.25",
+     "25 percent"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "What is meant by bioequivalence between two pharmaceutical formulations containing the same active ingredient?",
+   "options": [
+    "They are manufactured by the exact same pharmaceutical company",
+    "They have identical tablet color, shape, and excipient binders",
+    "They show no statistically significant difference in rate (Cmax, Tmax) and extent (AUC) of absorption",
+    "They both achieve 100% absolute bioavailability when swallowed"
+   ],
+   "answer": 2,
+   "explain": "Two drug products are bioequivalent if their bioavailability (rate and extent of systemic absorption) falls within accepted regulatory limits (typically 80% to 125% for 90% CI of AUC and Cmax).",
+   "verified": false,
+   "open": {
+    "q": "Define bioequivalence between two formulations of the same drug.",
+    "accept": [
+     "comparable rate and extent of absorption",
+     "no significant difference in bioavailability Cmax Tmax and AUC"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "Why does co-administration of oral tetracycline with milk or aluminium-magnesium antacids markedly reduce tetracycline absorption?",
+   "options": [
+    "Antacids accelerate gastric emptying into the colon",
+    "Tetracycline is destroyed by alkaline pH",
+    "Milk induces intestinal CYP3A4 enzymes immediately",
+    "Tetracycline forms insoluble chelates with divalent and trivalent cations (Ca2+, Mg2+, Al3+)"
+   ],
+   "answer": 3,
+   "explain": "Tetracyclines and fluoroquinolones chelate polyvalent metal cations in the GI lumen to form non-absorbable complexes.",
+   "verified": false,
+   "open": {
+    "q": "Explain the mechanism by which milk or antacids decrease the oral absorption of tetracycline.",
+    "accept": [
+     "chelation with divalent and trivalent cations",
+     "formation of insoluble complexes with calcium magnesium or aluminium"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Absorption",
+   "q": "What is the first-pass (presystemic) effect?",
+   "options": [
+    "Metabolism of an orally absorbed drug in the gut wall and liver before it reaches the systemic circulation",
+    "Immediate renal excretion of a drug during its first pass through the glomerulus",
+    "Initial binding of a drug to red blood cells in the pulmonary capillaries",
+    "Destruction of an intravenous drug by plasma esterases within one second"
+   ],
+   "answer": 0,
+   "explain": "Drugs absorbed from the GI tract enter the portal venous system and pass through the liver before entering the inferior vena cava, where high hepatic extraction reduces systemic bioavailability.",
+   "verified": false,
+   "open": {
+    "q": "Define first-pass metabolism.",
+    "accept": [
+     "presystemic metabolism in gut wall and liver before reaching systemic circulation",
+     "hepatic extraction of orally absorbed drug prior to systemic entry"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-014",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Absorption",
+   "q": "Which of the following drugs undergoes such extensive hepatic first-pass metabolism that oral administration is completely ineffective and it must be given parenterally?",
+   "options": [
+    "Diazepam",
+    "Lidocaine (lignocaine)",
+    "Warfarin",
+    "Amoxicillin"
+   ],
+   "answer": 1,
+   "explain": "Lidocaine undergoes nearly complete first-pass hepatic de-ethylation when taken orally (forming toxic metabolites without antiarrhythmic efficacy), so it is administered IV or locally.",
+   "verified": false,
+   "open": {
+    "q": "Name a commonly used local anesthetic and class Ib antiarrhythmic drug that cannot be given orally due to nearly 100% hepatic first-pass metabolism.",
+    "accept": [
+     "lignocaine",
+     "lidocaine"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Distribution",
+   "q": "Which plasma protein is the primary binding site for acidic drugs such as warfarin, phenytoin, and salicylates?",
+   "options": [
+    "Alpha-1-acid glycoprotein",
+    "Transcortin",
+    "Albumin",
+    "Ceruloplasmin"
+   ],
+   "answer": 2,
+   "explain": "Human serum albumin binds predominantly acidic and neutral drugs, whereas alpha-1-acid glycoprotein (orosomucoid) binds basic drugs such as lidocaine, propranolol, and quinidine.",
+   "verified": false,
+   "open": {
+    "q": "Name the main plasma protein that binds weakly acidic drugs in the bloodstream.",
+    "accept": [
+     "serum albumin",
+     "plasma albumin"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Distribution",
+   "q": "Which acute-phase plasma protein primarily binds basic drugs such as lidocaine, propranolol, and imipramine?",
+   "options": [
+    "Albumin",
+    "Transferrin",
+    "Haptoglobin",
+    "Alpha-1-acid glycoprotein"
+   ],
+   "answer": 3,
+   "explain": "Alpha-1-acid glycoprotein binds basic drugs and increases during acute inflammation, trauma, or myocardial infarction, altering free drug fractions.",
+   "verified": false,
+   "open": {
+    "q": "Identify the plasma protein that preferentially binds basic drugs.",
+    "accept": [
+     "orosomucoid",
+     "AAG"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "Which fraction of a drug in plasma is pharmacologically active and capable of diffusing across capillary membranes to reach receptor sites and undergo glomerular filtration?",
+   "options": [
+    "The unbound (free) fraction",
+    "The albumin-bound fraction",
+    "The globulin-bound fraction",
+    "The erythrocyte-sequestered fraction"
+   ],
+   "answer": 0,
+   "explain": "Protein-bound drug is too large to cross capillary endothelium or glomerular membranes and acts as an inactive circulating reservoir; only unbound drug is active.",
+   "verified": false,
+   "open": {
+    "q": "Which fraction of a drug in plasma is pharmacologically active and available for tissue distribution and glomerular filtration?",
+    "accept": [
+     "free drug",
+     "unbound drug"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Distribution",
+   "q": "How is the apparent volume of distribution (Vd) defined?",
+   "options": [
+    "Actual anatomical volume of the liver and kidneys combined",
+    "Total amount of drug in the body divided by the plasma drug concentration",
+    "Volume of urine excreted per minute multiplied by plasma concentration",
+    "Total plasma volume minus interstitial fluid volume"
+   ],
+   "answer": 1,
+   "explain": "Vd = Amount of drug in body / Plasma concentration (C0). It is an apparent theoretical volume indicating the extent of extravascular tissue sequestration.",
+   "verified": false,
+   "open": {
+    "q": "State the formula or definition of apparent volume of distribution (Vd).",
+    "accept": [
+     "amount of drug in the body divided by plasma concentration",
+     "Dose divided by C0"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "A 70 kg patient receives an intravenous bolus of 500 mg of a drug, and the extrapolated plasma concentration at time zero (C0) is 10 mg/L. What is the apparent volume of distribution (Vd)?",
+   "options": [
+    "5 L",
+    "20 L",
+    "50 L",
+    "500 L"
+   ],
+   "answer": 2,
+   "explain": "Vd = Dose / C0 = 500 mg / 10 mg/L = 50 L, indicating distribution beyond plasma into total body water and tissues.",
+   "verified": false,
+   "open": {
+    "q": "Calculate the apparent volume of distribution when a 500 mg IV bolus produces an initial plasma concentration of 10 mg/L.",
+    "accept": [
+     "50 liters",
+     "50 litres"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "Chloroquine has an apparent volume of distribution of approximately 15,000 L in a 70 kg adult. What does this exceptionally large Vd indicate?",
+   "options": [
+    "Chloroquine is confined strictly to the intravascular plasma compartment",
+    "Chloroquine is immediately excreted unchanged in exhaled air",
+    "Chloroquine binds 100% irreversibly to plasma albumin",
+    "Chloroquine is extensively concentrated and sequestered inside extravascular tissues"
+   ],
+   "answer": 3,
+   "explain": "A Vd far exceeding total body water (~42 L) means plasma concentration is kept very low because the drug accumulates heavily in tissues (such as liver, retina, and melanin-containing cells).",
+   "verified": false,
+   "open": {
+    "q": "What does an apparent volume of distribution much greater than total body water (e.g., 15,000 L for chloroquine) signify?",
+    "accept": [
+     "extensive tissue binding or sequestration",
+     "heavy accumulation in extravascular tissues"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "Why does an intravenous bolus of thiopental sodium produce general anesthesia within 15 to 20 seconds, yet the patient awakens within 5 to 10 minutes even though the drug's elimination half-life is over 10 hours?",
+   "options": [
+    "Rapid redistribution of thiopental from the highly perfused brain to skeletal muscle and adipose tissue",
+    "Instantaneous renal clearance of unchanged thiopental within 5 minutes",
+    "Rapid conversion of thiopental to inactive metabolites inside neurons",
+    "Development of acute receptor tolerance within 3 minutes"
+   ],
+   "answer": 0,
+   "explain": "Thiopental is highly lipophilic and enters the richly perfused brain immediately, but its action terminates rapidly due to redistribution into less well-perfused muscle and fat stores.",
+   "verified": false,
+   "open": {
+    "q": "Name the pharmacokinetic process responsible for the rapid termination of anesthesia after a single IV bolus of thiopental.",
+    "accept": [
+     "redistribution",
+     "tissue redistribution"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "Which structural feature of cerebral capillaries restricts the entry of polar, water-soluble drugs across the blood-brain barrier?",
+   "options": [
+    "Large fenestrations between endothelial cells",
+    "Tight junctions (zonulae occludentes) between non-fenestrated endothelial cells surrounded by astrocyte foot processes",
+    "Absence of a basement membrane",
+    "High density of pinocytotic vesicles transporting polar solutes"
+   ],
+   "answer": 1,
+   "explain": "Cerebral capillary endothelial cells lack fenestrations, are sealed by tight junctions, are enveloped by glial foot processes, and express efflux transporters like P-glycoprotein.",
+   "verified": false,
+   "open": {
+    "q": "Describe the key anatomical feature of brain capillaries that forms the blood-brain barrier.",
+    "accept": [
+     "tight junctions between non-fenestrated endothelial cells",
+     "continuous endothelium with tight junctions and astrocyte foot processes"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-023",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Distribution",
+   "q": "A patient with acute bacterial meningitis is treated with intravenous benzylpenicillin, which normally penetrates the blood-brain barrier poorly. Why does benzylpenicillin achieve therapeutic CSF concentrations in this patient?",
+   "options": [
+    "Meningeal bacteria actively transport penicillin into neurons",
+    "Fever converts penicillin into a highly lipophilic ester",
+    "Meningeal inflammation disrupts tight junctions and increases blood-brain barrier permeability",
+    "Penicillin binds to cerebrospinal albumin to enter the ventricles"
+   ],
+   "answer": 2,
+   "explain": "Inflammation of the meninges increases capillary permeability and opens tight junctions, allowing hydrophilic antibiotics like penicillin G to reach therapeutic levels in CSF.",
+   "verified": false,
+   "open": {
+    "q": "Explain why hydrophilic antibiotics such as benzylpenicillin penetrate the CSF better during acute meningitis than in healthy individuals.",
+    "accept": [
+     "meningeal inflammation increases blood-brain barrier permeability",
+     "inflammation disrupts tight junctions"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "Why is levodopa administered rather than dopamine itself to treat Parkinson's disease?",
+   "options": [
+    "Dopamine is destroyed immediately by gastric acid",
+    "Levodopa has a half-life of 48 hours",
+    "Dopamine causes severe hepatic necrosis",
+    "Dopamine is too polar to cross the blood-brain barrier, whereas levodopa crosses via an L-amino acid transporter and is decarboxylated to dopamine in the brain"
+   ],
+   "answer": 3,
+   "explain": "Dopamine cannot cross the blood-brain barrier; its precursor levodopa enters the CNS via the LAT1 neutral amino acid carrier and is converted to dopamine by DOPA decarboxylase.",
+   "verified": false,
+   "open": {
+    "q": "Explain why levodopa is used instead of dopamine to replenish central dopamine in Parkinson's disease.",
+    "accept": [
+     "dopamine cannot cross the blood-brain barrier while levodopa crosses via amino acid transport",
+     "levodopa crosses the BBB and is converted to dopamine"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "Which statement accurately describes drug transfer across the human placenta?",
+   "options": [
+    "Lipophilic, non-ionized drugs of low molecular weight cross the placenta readily by passive diffusion",
+    "The placenta is an absolute barrier that blocks all maternal medications",
+    "Only drugs with molecular weight above 10,000 Daltons cross the placenta",
+    "All drugs cross the placenta exclusively by active ATP-dependent pumps"
+   ],
+   "answer": 0,
+   "explain": "The placenta is a lipid membrane; non-ionized lipophilic drugs cross easily by passive diffusion, whereas large macromolecules like heparin and insulin do not cross.",
+   "verified": false,
+   "open": {
+    "q": "What types of drugs cross the placental barrier most readily?",
+    "accept": [
+     "lipophilic non-ionized low molecular weight drugs",
+     "lipid-soluble unionized drugs"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-026",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Distribution",
+   "q": "A pregnant woman with deep vein thrombosis requires anticoagulation. Why is unfractionated heparin or low-molecular-weight heparin preferred over warfarin during the first trimester and near term?",
+   "options": [
+    "Heparin crosses the placenta to protect the fetus from thrombosis",
+    "Heparin is a large, negatively charged polymer that does not cross the placenta, whereas warfarin crosses and causes teratogenicity and fetal bleeding",
+    "Warfarin is completely inactive in pregnant women",
+    "Heparin has a half-life of 2 weeks in pregnancy"
+   ],
+   "answer": 1,
+   "explain": "Heparin's high molecular weight and negative charge prevent placental transfer, avoiding fetal warfarin syndrome (nasal hypoplasia, stippled epiphyses) and fetal hemorrhage.",
+   "verified": false,
+   "open": {
+    "q": "Explain on a pharmacokinetic basis why heparin is safe for the fetus during pregnancy compared with warfarin.",
+    "accept": [
+     "heparin does not cross the placenta due to large size and negative charge",
+     "heparin cannot cross the placental barrier"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-027",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Distribution",
+   "q": "A premature neonate develops unconjugated hyperbilirubinaemia and is inadvertently given sulfisoxazole (a sulfonamide). Soon after, the infant develops kernicterus. What is the pharmacokinetic mechanism?",
+   "options": [
+    "Sulfisoxazole inhibits hepatic glucuronyl transferase directly",
+    "Sulfisoxazole increases intestinal absorption of stercobilin",
+    "Sulfisoxazole displaces unconjugated bilirubin from plasma albumin binding sites, allowing free bilirubin to cross the immature blood-brain barrier",
+    "Sulfisoxazole causes massive intravascular haemolysis in all neonates"
+   ],
+   "answer": 2,
+   "explain": "Sulfonamides compete with bilirubin for albumin binding; displaced free bilirubin crosses the immature neonatal blood-brain barrier and deposits in the basal ganglia (kernicterus).",
+   "verified": false,
+   "open": {
+    "q": "Explain the drug-binding interaction by which sulfonamides precipitate kernicterus in jaundiced neonates.",
+    "accept": [
+     "displacement of bilirubin from plasma albumin",
+     "competes with bilirubin for albumin binding sites"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-028",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "What is the primary chemical objective of drug biotransformation (metabolism) in the body?",
+   "options": [
+    "To convert water-soluble drugs into lipid-soluble compounds for fat storage",
+    "To increase drug binding to plasma albumin",
+    "To enhance passive tubular reabsorption in the nephron",
+    "To convert lipophilic drugs into more polar, water-soluble metabolites for renal or biliary excretion"
+   ],
+   "answer": 3,
+   "explain": "Lipophilic drugs are filtered at the glomerulus but passively reabsorbed across renal tubular cells; biotransformation adds or exposes polar groups so metabolites can be excreted.",
+   "verified": false,
+   "open": {
+    "q": "State the main physiological purpose of hepatic drug metabolism.",
+    "accept": [
+     "convert lipid-soluble drugs into water-soluble polar metabolites for excretion",
+     "increase polarity and water solubility for elimination"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-029",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which types of chemical reactions constitute Phase I drug biotransformation?",
+   "options": [
+    "Oxidation, reduction, and hydrolysis",
+    "Glucuronidation, sulfation, and acetylation",
+    "Methylation, glutathione conjugation, and glycine conjugation",
+    "Glycolysis, beta-oxidation, and transamination"
+   ],
+   "answer": 0,
+   "explain": "Phase I (functionalization) reactions introduce or unmask a polar functional group (-OH, -NH2, -SH, -COOH) via oxidation, reduction, or hydrolysis.",
+   "verified": false,
+   "open": {
+    "q": "Name the three main types of chemical reactions involved in Phase I drug metabolism.",
+    "accept": [
+     "oxidation reduction and hydrolysis",
+     "oxidation, reduction, hydrolysis"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-030",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Where within the hepatocyte are the cytochrome P450 (CYP) monooxygenase enzymes predominantly located?",
+   "options": [
+    "Inner mitochondrial membrane",
+    "Smooth endoplasmic reticulum (microsomes)",
+    "Nuclear envelope",
+    "Lysosomal matrix"
+   ],
+   "answer": 1,
+   "explain": "Cytochrome P450 enzymes and UDP-glucuronosyltransferases are membrane-bound enzymes embedded in the smooth endoplasmic reticulum, isolated experimentally as microsomes.",
+   "verified": false,
+   "open": {
+    "q": "Identify the subcellular organelle in hepatocytes where cytochrome P450 enzymes are located.",
+    "accept": [
+     "smooth endoplasmic reticulum",
+     "SER",
+     "microsomes"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-031",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which cytochrome P450 isoenzyme is responsible for metabolizing the largest proportion (roughly 50%) of clinically used drugs?",
+   "options": [
+    "CYP2E1",
+    "CYP1A2",
+    "CYP3A4",
+    "CYP2A6"
+   ],
+   "answer": 2,
+   "explain": "CYP3A4, abundant in both liver and intestinal enterocytes, metabolizes approximately half of all marketed drugs, including calcium channel blockers, statins, and macrolides.",
+   "verified": false,
+   "open": {
+    "q": "Name the single most abundant cytochrome P450 enzyme in human liver and intestine responsible for metabolizing about half of clinical drugs.",
+    "accept": [
+     "cytochrome P450 3A4",
+     "CYP3A4/5"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-032",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which cofactor is required by cytochrome P450 monooxygenases along with molecular oxygen to oxidize drugs?",
+   "options": [
+    "FADH2",
+    "Acetyl-CoA",
+    "S-adenosylmethionine (SAM)",
+    "NADPH"
+   ],
+   "answer": 3,
+   "explain": "Cytochrome P450 reductase transfers electrons from NADPH to the haem iron of cytochrome P450, activating molecular oxygen to incorporate one oxygen atom into the drug and reduce the other to water.",
+   "verified": false,
+   "open": {
+    "q": "Name the reduced pyridine nucleotide cofactor required by the cytochrome P450 enzyme system.",
+    "accept": [
+     "nicotinamide adenine dinucleotide phosphate",
+     "reduced NADP"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-033",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which Phase II conjugation reaction is the ONLY one catalyzed by microsomal enzymes in the smooth endoplasmic reticulum rather than cytosolic enzymes?",
+   "options": [
+    "Glucuronidation",
+    "Acetylation",
+    "Sulfation",
+    "Glutathione conjugation"
+   ],
+   "answer": 0,
+   "explain": "UDP-glucuronosyltransferases (UGTs) are located in the smooth endoplasmic reticulum and can therefore be induced by microsomal enzyme inducers like phenobarbital and rifampicin.",
+   "verified": false,
+   "open": {
+    "q": "Which Phase II conjugation pathway is catalyzed by microsomal enzymes in the smooth endoplasmic reticulum?",
+    "accept": [
+     "glucuronide conjugation",
+     "UGT"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-034",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "What is the activated endogenous donor molecule required for glucuronidation reactions?",
+   "options": [
+    "3'-Phosphoadenosine-5'-phosphosulfate (PAPS)",
+    "Uridine diphosphate glucuronic acid (UDPGA)",
+    "S-adenosylmethionine (SAM)",
+    "Acetyl coenzyme A"
+   ],
+   "answer": 1,
+   "explain": "UDP-glucuronosyltransferase transfers glucuronic acid from UDPGA to hydroxyl, carboxyl, amino, or thiol groups on drugs and bilirubin.",
+   "verified": false,
+   "open": {
+    "q": "Name the high-energy donor molecule that supplies glucuronic acid during Phase II glucuronidation.",
+    "accept": [
+     "UDPGA",
+     "UDP-glucuronic acid"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-035",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "A newborn infant treated with chloramphenicol develops abdominal distension, vomiting, progressive cyanosis, and vasomotor collapse ('grey baby syndrome'). Which immature hepatic enzyme pathway underlies this toxicity?",
+   "options": [
+    "N-acetyltransferase-2",
+    "Monoamine oxidase",
+    "UDP-glucuronosyltransferase",
+    "Pseudocholinesterase"
+   ],
+   "answer": 2,
+   "explain": "Neonates have deficient hepatic UDP-glucuronosyltransferase activity and immature renal clearance, leading to accumulation of unconjugated chloramphenicol that inhibits mitochondrial electron transport.",
+   "verified": false,
+   "open": {
+    "q": "Which hepatic enzyme deficiency in neonates causes grey baby syndrome upon exposure to chloramphenicol?",
+    "accept": [
+     "UDP-glucuronosyltransferase",
+     "glucuronyl transferase"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-036",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which genetic polymorphism in Phase II drug metabolism predisposes patients taking isoniazid to peripheral neuropathy (in slow metabolizers) or drug-induced hepatitis (in rapid metabolizers)?",
+   "options": [
+    "Glucose-6-phosphate dehydrogenase deficiency",
+    "Pseudocholinesterase deficiency",
+    "Thiopurine methyltransferase deficiency",
+    "N-acetyltransferase-2 (NAT2) acetylation polymorphism"
+   ],
+   "answer": 3,
+   "explain": "Slow acetylators accumulate parent isoniazid, risking pyridoxine-deficiency peripheral neuropathy and drug-induced lupus; rapid acetylators generate more acetylhydrazine hepatotoxic intermediates.",
+   "verified": false,
+   "open": {
+    "q": "Name the Phase II metabolic polymorphism that divides patients into slow and rapid metabolizers of isoniazid, hydralazine, and procainamide.",
+    "accept": [
+     "acetylation polymorphism",
+     "N-acetyltransferase",
+     "NAT2"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-037",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which of the following is a potent cytochrome P450 enzyme inducer capable of accelerating the metabolism of oral contraceptives and warfarin?",
+   "options": [
+    "Rifampicin",
+    "Cimetidine",
+    "Erythromycin",
+    "Ketoconazole"
+   ],
+   "answer": 0,
+   "explain": "Rifampicin, carbamazepine, phenytoin, phenobarbital, and St John's wort induce CYP enzymes, reducing plasma concentrations of co-administered drugs like warfarin and oral contraceptives.",
+   "verified": false,
+   "open": {
+    "q": "Name a first-line antituberculosis drug that is a potent inducer of hepatic cytochrome P450 enzymes.",
+    "accept": [
+     "rifampin",
+     "rifampicin"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-038",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which of the following substances inhibits intestinal CYP3A4 when consumed with oral felodipine or simvastatin, leading to markedly elevated plasma drug levels and toxicity?",
+   "options": [
+    "Tobacco smoke",
+    "Grapefruit juice",
+    "Chargrilled meat",
+    "Chronic ethanol intake"
+   ],
+   "answer": 1,
+   "explain": "Furanocoumarins in grapefruit juice cause mechanism-based (irreversible) inhibition of intestinal CYP3A4, increasing oral bioavailability of CYP3A4 substrates.",
+   "verified": false,
+   "open": {
+    "q": "Name the dietary fruit product that irreversibly inhibits intestinal CYP3A4 and increases the bioavailability of calcium channel blockers and statins.",
+    "accept": [
+     "grapefruit",
+     "grapefruit juice"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-039",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "A 28-year-old woman stabilized on combined oral contraceptive pills is started on rifampicin and isoniazid for pulmonary tuberculosis. Two months later she becomes pregnant despite strict pill adherence. What caused contraceptive failure?",
+   "options": [
+    "Isoniazid blocked oestrogen receptors in the endometrium",
+    "Rifampicin inhibited renal excretion of progesterone",
+    "Rifampicin induced hepatic CYP3A4, accelerating the clearance of ethinylestradiol and progestin",
+    "Rifampicin prevented gastric dissolution of the contraceptive tablets"
+   ],
+   "answer": 2,
+   "explain": "Rifampicin strongly induces hepatic CYP3A4, lowering circulating steroid hormone levels below the threshold required to suppress ovulation.",
+   "verified": false,
+   "open": {
+    "q": "Explain the pharmacokinetic interaction responsible for oral contraceptive failure in a patient started on rifampicin.",
+    "accept": [
+     "CYP3A4 enzyme induction accelerating contraceptive metabolism",
+     "hepatic enzyme induction by rifampicin"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-040",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "A patient stabilized on warfarin is prescribed ketoconazole for a systemic fungal infection and subsequently presents with epistaxis and an INR of 7.2. What is the underlying mechanism?",
+   "options": [
+    "Ketoconazole induces CYP2C9 and speeds up warfarin elimination",
+    "Ketoconazole stimulates hepatic synthesis of vitamin K-dependent clotting factors",
+    "Ketoconazole converts warfarin into an active thrombolytic enzyme",
+    "Ketoconazole inhibits cytochrome P450 enzymes, decreasing warfarin clearance and causing accumulation"
+   ],
+   "answer": 3,
+   "explain": "Azole antifungals (ketoconazole, fluconazole, voriconazole) are potent CYP inhibitors that block warfarin metabolism, elevating plasma levels and bleeding risk.",
+   "verified": false,
+   "open": {
+    "q": "Explain why adding ketoconazole or fluconazole to a patient taking warfarin causes an elevated INR and bleeding.",
+    "accept": [
+     "CYP inhibition decreasing warfarin metabolism",
+     "inhibition of hepatic cytochrome P450 enzymes"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-041",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "During paracetamol (acetaminophen) overdose, depletion of hepatic glutathione leads to hepatocellular necrosis caused by which toxic reactive intermediate?",
+   "options": [
+    "N-acetyl-p-benzoquinone imine (NAPQI)",
+    "Acetaldehyde",
+    "Acetylhydrazine",
+    "Acrolein"
+   ],
+   "answer": 0,
+   "explain": "When glucuronidation and sulfation pathways are saturated in paracetamol overdose, CYP2E1 oxidizes paracetamol to NAPQI, which depletes glutathione and binds covalently to hepatocyte proteins.",
+   "verified": false,
+   "open": {
+    "q": "Name the toxic reactive metabolite responsible for hepatotoxicity in paracetamol overdose.",
+    "accept": [
+     "NAPQI",
+     "N-acetyl-p-benzoquinoneimine"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-042",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which of the following is an example of a drug whose Phase I metabolite is pharmacologically active and prolongs the clinical duration of action?",
+   "options": [
+    "Aspirin converted to salicylic acid, which is immediately inert",
+    "Diazepam converted to desmethyldiazepam (nordiazepam) and oxazepam",
+    "Penicillin G hydrolyzed to penicilloic acid",
+    "Succinylcholine hydrolyzed to succinylmonocholine"
+   ],
+   "answer": 1,
+   "explain": "Diazepam is metabolized to active benzodiazepines (nordiazepam, temazepam, oxazepam) with long half-lives, accounting for prolonged sedation.",
+   "verified": false,
+   "open": {
+    "q": "Name an active metabolite of diazepam that contributes to its prolonged sedative effect.",
+    "accept": [
+     "nordiazepam",
+     "desmethyldiazepam",
+     "oxazepam",
+     "temazepam"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-043",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Excretion",
+   "q": "Which three physiological processes in the nephron determine the net renal excretion of a drug?",
+   "options": [
+    "Pinocytosis, osmosis, and active phagocytosis",
+    "Hepatic extraction, biliary secretion, and enterohepatic cycling",
+    "Glomerular filtration, active tubular secretion, and passive tubular reabsorption",
+    "Alveolar diffusion, mucociliary clearance, and exhalation"
+   ],
+   "answer": 2,
+   "explain": "Renal drug excretion = (Glomerular filtration + Tubular secretion) - Tubular reabsorption.",
+   "verified": false,
+   "open": {
+    "q": "List the three renal physiological processes that govern the urinary excretion of drugs.",
+    "accept": [
+     "glomerular filtration tubular secretion and tubular reabsorption",
+     "filtration secretion reabsorption"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-044",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Excretion",
+   "q": "In which segment of the nephron does active carrier-mediated secretion of organic anions (like penicillins and probenecid) and organic cations (like morphine and cimetidine) occur?",
+   "options": [
+    "Bowman's capsule",
+    "Thin descending limb of Henle",
+    "Collecting duct",
+    "Proximal convoluted tubule"
+   ],
+   "answer": 3,
+   "explain": "The proximal convoluted tubule expresses OAT (organic anion transporters) and OCT (organic cation transporters) that actively secrete both free and protein-bound drugs into tubular fluid.",
+   "verified": false,
+   "open": {
+    "q": "Name the nephron segment where active tubular secretion of organic acids and bases takes place.",
+    "accept": [
+     "proximal tubule",
+     "PCT"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-045",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Excretion",
+   "q": "Why was probenecid historically co-administered with penicillin G during World War II and in single-dose gonorrhoea regimens?",
+   "options": [
+    "Probenecid competes for organic anion transporters in the proximal tubule, inhibiting penicillin secretion and prolonging its half-life",
+    "Probenecid enhances gastrointestinal absorption of penicillin G by 500%",
+    "Probenecid inhibits bacterial beta-lactamase enzymes directly",
+    "Probenecid displaces penicillin from red blood cell haemoglobin"
+   ],
+   "answer": 0,
+   "explain": "Probenecid is an organic acid that competitively inhibits OAT-mediated tubular secretion of penicillin, raising plasma penicillin levels and extending its duration of action.",
+   "verified": false,
+   "open": {
+    "q": "Explain the pharmacokinetic mechanism by which probenecid prolongs the plasma half-life of penicillin.",
+    "accept": [
+     "competitively inhibits active tubular secretion in the proximal tubule",
+     "blocks organic anion transporter secretion of penicillin"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-046",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Excretion",
+   "q": "A 24-year-old patient presents to the emergency room following an intentional overdose of aspirin (salicylate). Intravenous sodium bicarbonate is administered as part of management. How does sodium bicarbonate accelerate salicylate elimination?",
+   "options": [
+    "It neutralizes unabsorbed aspirin tablets inside the stomach",
+    "It alkalinizes the urine, converting salicylic acid into its ionized, water-soluble form and preventing passive tubular reabsorption",
+    "It induces hepatic CYP3A4 to oxidize salicylate within minutes",
+    "It chelates salicylate in plasma for biliary excretion"
+   ],
+   "answer": 1,
+   "explain": "Alkalinizing urine raises tubular fluid pH, shifting weak acids like salicylate and phenobarbital into their ionized (A-) form, trapping them in urine for rapid excretion.",
+   "verified": false,
+   "open": {
+    "q": "Explain how intravenous sodium bicarbonate enhances the renal clearance of aspirin (salicylate) in overdose.",
+    "accept": [
+     "urinary alkalinization ionizes salicylate and prevents tubular reabsorption",
+     "alkalinizes urine causing ion trapping of weak acid"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-047",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Excretion",
+   "q": "Which intervention can be used to accelerate the renal excretion of a weakly basic drug such as amphetamine or phencyclidine in acute poisoning?",
+   "options": [
+    "Alkalinization of urine with sodium bicarbonate",
+    "Administration of oral probenecid",
+    "Acidification of urine with ammonium chloride or ascorbic acid",
+    "Administration of intravenous lipid emulsion only"
+   ],
+   "answer": 2,
+   "explain": "Acidifying the urine protonates weak bases (BH+), increasing their ionized fraction in tubular fluid and reducing passive back-diffusion into peritubular capillaries.",
+   "verified": false,
+   "open": {
+    "q": "How does altering urinary pH accelerate the renal elimination of a weakly basic drug overdose?",
+    "accept": [
+     "acidifying the urine ionizes the weak base and prevents tubular reabsorption",
+     "urine acidification causes ion trapping"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-048",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Excretion",
+   "q": "What is enterohepatic circulation (enterohepatic recycling) and how does it affect a drug's pharmacokinetics?",
+   "options": [
+    "Direct transport of drugs from the colon to the lungs via lymphatics, shortening half-life",
+    "Degradation of drugs by pancreatic lipase, causing immediate faecal loss",
+    "Active secretion of drugs from the stomach into the portal vein, reducing bioavailability",
+    "Biliary excretion of glucuronide conjugates followed by gut bacterial beta-glucuronidase hydrolysis and reabsorption of free drug, prolonging half-life"
+   ],
+   "answer": 3,
+   "explain": "Drugs like morphine, chloramphenicol, and ethinylestradiol are excreted in bile as glucuronides, cleaved by intestinal flora back to active lipophilic drug, and reabsorbed, extending their duration.",
+   "verified": false,
+   "open": {
+    "q": "Describe enterohepatic circulation and state its effect on a drug's plasma half-life.",
+    "accept": [
+     "biliary excretion bacterial deconjugation and intestinal reabsorption prolonging half-life",
+     "recirculation between liver bile and intestine extending duration of action"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-049",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "How is drug clearance (CL) formally defined in pharmacokinetics?",
+   "options": [
+    "The theoretical volume of plasma completely cleared of a drug per unit time",
+    "The total mass of drug excreted in urine over 24 hours",
+    "The time required for plasma drug concentration to decrease by 50%",
+    "The fraction of an oral dose that escapes first-pass metabolism"
+   ],
+   "answer": 0,
+   "explain": "Clearance (expressed in mL/min or L/h) is the proportionality constant relating the rate of drug elimination to the plasma drug concentration (CL = Rate of elimination / Cp).",
+   "verified": false,
+   "open": {
+    "q": "Define drug clearance (CL).",
+    "accept": [
+     "volume of plasma from which drug is completely removed per unit time",
+     "rate of elimination divided by plasma concentration"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-050",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Which characteristic defines first-order elimination kinetics, followed by most drugs at therapeutic concentrations?",
+   "options": [
+    "A constant amount (mg) of drug is eliminated per unit time regardless of plasma concentration",
+    "A constant fraction (percentage) of the drug in the body is eliminated per unit time, proportional to plasma concentration",
+    "Elimination stops completely once steady-state concentration is reached",
+    "The elimination half-life doubles every time the dose is doubled"
+   ],
+   "answer": 1,
+   "explain": "In first-order (linear) kinetics, metabolizing enzymes and transporters are unsaturated, so elimination rate is directly proportional to plasma concentration and half-life remains constant.",
+   "verified": false,
+   "open": {
+    "q": "State the defining feature of first-order drug elimination kinetics.",
+    "accept": [
+     "constant fraction or percentage eliminated per unit time",
+     "rate of elimination is proportional to plasma concentration"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-051",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Which characteristic defines zero-order (saturation) elimination kinetics?",
+   "options": [
+    "A constant percentage of drug is cleared every hour",
+    "Plasma concentration declines exponentially on a linear graph",
+    "A constant amount of drug is eliminated per unit time because metabolizing enzymes are saturated",
+    "Clearance remains constant regardless of how high the dose becomes"
+   ],
+   "answer": 2,
+   "explain": "In zero-order kinetics, elimination capacity is saturated; a fixed mass of drug is removed per hour, and small dose increments cause disproportionately large spikes in plasma concentration.",
+   "verified": false,
+   "open": {
+    "q": "State the defining feature of zero-order drug elimination kinetics.",
+    "accept": [
+     "constant amount of drug eliminated per unit time",
+     "saturated elimination independent of plasma concentration"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-052",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Which group of drugs classically exhibits zero-order (capacity-limited) elimination kinetics at therapeutic or modestly elevated concentrations?",
+   "options": [
+    "Amoxicillin, gentamicin, and atenolol",
+    "Paracetamol, salbutamol, and lorazepam",
+    "Digoxin, furosemide, and captopril",
+    "Ethanol, phenytoin, and high-dose aspirin (salicylates)"
+   ],
+   "answer": 3,
+   "explain": "Ethanol (alcohol dehydrogenase saturation), phenytoin (CYP2C9/2C19 saturation near therapeutic range), and high-dose aspirin show zero-order kinetics.",
+   "verified": false,
+   "open": {
+    "q": "Name three classic drugs that exhibit zero-order elimination kinetics.",
+    "accept": [
+     "ethanol phenytoin and salicylates",
+     "alcohol phenytoin and aspirin"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-053",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Which mathematical equation correctly relates elimination half-life (t1/2), apparent volume of distribution (Vd), and total body clearance (CL) for a drug obeying first-order kinetics?",
+   "options": [
+    "t1/2 = (0.693 x Vd) / CL",
+    "t1/2 = (0.693 x CL) / Vd",
+    "t1/2 = Vd x CL x 0.693",
+    "t1/2 = CL / (0.693 x Vd)"
+   ],
+   "answer": 0,
+   "explain": "Half-life is directly proportional to the volume of distribution and inversely proportional to clearance: t1/2 = (ln 2 x Vd) / CL = (0.693 x Vd) / CL.",
+   "verified": false,
+   "open": {
+    "q": "Write the pharmacokinetic equation relating elimination half-life (t1/2) to volume of distribution (Vd) and clearance (CL).",
+    "accept": [
+     "t1/2 = 0.693 x Vd / CL",
+     "half-life equals 0.693 times Vd divided by CL"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-054",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "A drug has an apparent volume of distribution (Vd) of 40 L and a total body clearance (CL) of 6.93 L/h. What is its elimination half-life (t1/2)?",
+   "options": [
+    "2 hours",
+    "4 hours",
+    "8 hours",
+    "10 hours"
+   ],
+   "answer": 1,
+   "explain": "t1/2 = (0.693 x Vd) / CL = (0.693 x 40) / 6.93 = 27.72 / 6.93 = 4 hours.",
+   "verified": false,
+   "open": {
+    "q": "Calculate the elimination half-life of a drug with a Vd of 40 L and a clearance of 6.93 L/h.",
+    "accept": [
+     "4 h",
+     "four hours"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-055",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Approximately how many elimination half-lives are required for a drug administered at a constant dosing rate to reach over 95% of its steady-state plasma concentration (Css)?",
+   "options": [
+    "1 to 2 half-lives",
+    "2 to 3 half-lives",
+    "4 to 5 half-lives",
+    "10 to 12 half-lives"
+   ],
+   "answer": 2,
+   "explain": "After 1, 2, 3, 4, and 5 half-lives, plasma concentration reaches 50%, 75%, 87.5%, 93.75%, and 96.875% of steady state, respectively; thus 4 to 5 half-lives are needed.",
+   "verified": false,
+   "open": {
+    "q": "How many elimination half-lives does it take for a drug to reach steady-state plasma concentration during continuous infusion or repeated fixed dosing?",
+    "accept": [
+     "4 to 5",
+     "four to five half-lives",
+     "5 half-lives"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-056",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "If the maintenance dosing rate of a drug obeying first-order kinetics is doubled, how does the time required to reach the new steady-state concentration change?",
+   "options": [
+    "It is cut in half",
+    "It doubles",
+    "It increases fourfold",
+    "It remains unchanged because time to steady state depends solely on elimination half-life"
+   ],
+   "answer": 3,
+   "explain": "Doubling the dosing rate doubles the steady-state plasma concentration (Css), but the time taken to reach that plateau still equals 4 to 5 elimination half-lives.",
+   "verified": false,
+   "open": {
+    "q": "If you double the maintenance infusion rate of a first-order drug, what happens to the steady-state concentration and the time required to reach steady state?",
+    "accept": [
+     "Css doubles while time to steady state stays the same",
+     "steady state level doubles and time is unchanged"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-057",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Which pharmacokinetic parameter determines the size of an initial intravenous loading dose required to achieve a target plasma concentration immediately?",
+   "options": [
+    "Apparent volume of distribution (Vd)",
+    "Total body clearance (CL)",
+    "Elimination rate constant (ke)",
+    "Hepatic extraction ratio"
+   ],
+   "answer": 0,
+   "explain": "Loading dose (LD) = (Target plasma concentration x Vd) / Bioavailability (F). It fills the volume of distribution immediately without waiting 4 to 5 half-lives.",
+   "verified": false,
+   "open": {
+    "q": "Which primary pharmacokinetic parameter is used to calculate the loading dose of a drug?",
+    "accept": [
+     "volume of distribution",
+     "Vd"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-058",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Which pharmacokinetic parameter determines the maintenance dosing rate needed to keep plasma drug concentration at a desired steady state?",
+   "options": [
+    "Apparent volume of distribution (Vd)",
+    "Clearance (CL)",
+    "Plasma protein binding percentage",
+    "Dissolution rate constant"
+   ],
+   "answer": 1,
+   "explain": "At steady state, Rate of drug administration = Rate of elimination = CL x Css; thus Maintenance Dose = (CL x Css x dosing interval) / F.",
+   "verified": false,
+   "open": {
+    "q": "Which primary pharmacokinetic parameter determines the maintenance dose rate required to sustain a target steady-state concentration?",
+    "accept": [
+     "drug clearance",
+     "CL"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-059",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "A 65-year-old man with atrial fibrillation is started on digoxin (Vd = 500 L, oral bioavailability = 0.7). To achieve an immediate target plasma concentration of 1.4 mcg/L, what oral loading dose is required?",
+   "options": [
+    "250 mcg",
+    "500 mcg",
+    "1000 mcg (1.0 mg)",
+    "2000 mcg (2.0 mg)"
+   ],
+   "answer": 2,
+   "explain": "Loading dose = (Target Cp x Vd) / F = (1.4 mcg/L x 500 L) / 0.7 = 700 / 0.7 = 1000 mcg (1.0 mg).",
+   "verified": false,
+   "open": {
+    "q": "Calculate the oral loading dose needed to achieve a target plasma concentration of 1.4 mcg/L for a drug with a Vd of 500 L and oral bioavailability of 0.7.",
+    "accept": [
+     "1 mg",
+     "1000 micrograms",
+     "1000 mcg"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-060",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "A patient with severe chronic kidney disease (creatinine clearance 15 mL/min) requires gentamicin, which is eliminated almost exclusively by glomerular filtration. How should the dosing regimen be adjusted?",
+   "options": [
+    "Give a standard loading dose, then reduce the maintenance dose or extend the dosing interval",
+    "Reduce the loading dose by 80% and keep the maintenance dose unchanged",
+    "Double both the loading dose and the maintenance dose",
+    "Switch from intravenous to oral administration to increase clearance"
+   ],
+   "answer": 0,
+   "explain": "Renal failure reduces clearance (CL) and prolongs half-life, while Vd is usually unchanged; therefore a full loading dose is still needed to reach therapeutic levels promptly, followed by a reduced maintenance regimen.",
+   "verified": false,
+   "open": {
+    "q": "How should the loading dose and maintenance dose of a renally cleared drug like gentamicin be modified in severe renal failure?",
+    "accept": [
+     "normal loading dose with reduced maintenance dose or extended interval",
+     "keep loading dose unchanged and lower maintenance dose"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-061",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "After stopping a drug that follows first-order elimination kinetics, approximately what percentage of the drug has been eliminated from the body after 4 half-lives?",
+   "options": [
+    "50%",
+    "93.75%",
+    "75%",
+    "99.9%"
+   ],
+   "answer": 1,
+   "explain": "Remaining drug is (1/2)^4 = 1/16 = 6.25%, meaning 93.75% has been eliminated after 4 half-lives (and 96.875% after 5 half-lives).",
+   "verified": false,
+   "open": {
+    "q": "What percentage of a drug is eliminated from the body after 4 elimination half-lives?",
+    "accept": [
+     "94%",
+     "93.75 percent",
+     "about 94 percent"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-062",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "What does a high hepatic extraction ratio (E > 0.7), as seen with morphine, propranolol, and verapamil, imply for their hepatic clearance?",
+   "options": [
+    "Hepatic clearance depends entirely on plasma protein binding",
+    "Hepatic clearance is unaffected by liver blood flow",
+    "Hepatic clearance is flow-limited and depends primarily on hepatic blood flow",
+    "Hepatic clearance is zero in healthy adults"
+   ],
+   "answer": 2,
+   "explain": "For high-extraction drugs, the liver clears almost all drug delivered to it; thus hepatic clearance equals hepatic blood flow (QH) and drops sharply in heart failure or shock.",
+   "verified": false,
+   "open": {
+    "q": "For a drug with a high hepatic extraction ratio (such as propranolol or lidocaine), which physiological factor is the rate-limiting determinant of hepatic clearance?",
+    "accept": [
+     "hepatic blood flow",
+     "liver blood flow"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-063",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "For a drug with a low hepatic extraction ratio (E < 0.3) such as warfarin or phenytoin, which two factors primarily govern hepatic clearance?",
+   "options": [
+    "Hepatic arterial pressure and biliary sphincter tone",
+    "Gastric emptying rate and intestinal villous height",
+    "Pulmonary tidal volume and alveolar ventilation",
+    "Intrinsic hepatic enzyme activity (CLint) and the unbound fraction of drug in plasma (fu)"
+   ],
+   "answer": 3,
+   "explain": "Low-extraction drugs are capacity-limited; hepatic clearance approximates fu x CLint and is sensitive to CYP enzyme induction/inhibition and changes in plasma protein binding.",
+   "verified": false,
+   "open": {
+    "q": "Name the two main determinants of hepatic clearance for a low-extraction drug such as warfarin.",
+    "accept": [
+     "intrinsic enzyme activity and unbound drug fraction",
+     "CYP metabolic capacity and free fraction"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-064",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Why is therapeutic drug monitoring (TDM) routinely performed for drugs such as digoxin, lithium, phenytoin, gentamicin, and vancomycin?",
+   "options": [
+    "They have a narrow therapeutic index and marked inter-individual pharmacokinetic variability",
+    "They are completely non-toxic at any plasma concentration",
+    "Their clinical efficacy can never be assessed by laboratory tests",
+    "They all have elimination half-lives shorter than 5 minutes"
+   ],
+   "answer": 0,
+   "explain": "TDM guides dosing when the margin between minimum effective concentration and minimum toxic concentration is narrow and pharmacokinetics vary widely across patients.",
+   "verified": false,
+   "open": {
+    "q": "State two key pharmacokinetic or clinical criteria that justify therapeutic drug monitoring (TDM) for a medication.",
+    "accept": [
+     "narrow therapeutic index and wide inter-individual pharmacokinetic variability",
+     "narrow therapeutic window and unpredictable plasma levels"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-065",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which of the following is an example of a non-microsomal Phase I enzyme located in the cytoplasm or plasma rather than the smooth endoplasmic reticulum?",
+   "options": [
+    "CYP2D6",
+    "Plasma pseudocholinesterase (butyrylcholinesterase)",
+    "UDP-glucuronosyltransferase",
+    "CYP3A4"
+   ],
+   "answer": 1,
+   "explain": "Esterases (such as plasma cholinesterase hydrolyzing succinylcholine and procaine), alcohol dehydrogenase, and monoamine oxidase are non-microsomal enzymes.",
+   "verified": false,
+   "open": {
+    "q": "Give an example of a non-microsomal enzyme involved in drug metabolism.",
+    "accept": [
+     "alcohol dehydrogenase",
+     "monoamine oxidase",
+     "plasma esterase",
+     "pseudocholinesterase"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-066",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "A 32-year-old surgical patient receives intravenous succinylcholine for rapid-sequence endotracheal intubation and remains paralysed and apnoeic for 4 hours instead of the usual 5 to 10 minutes. Which pharmacogenetic abnormality explains this prolonged paralysis?",
+   "options": [
+    "Hyperactivity of hepatic CYP3A4",
+    "Deficiency of glucose-6-phosphate dehydrogenase",
+    "Atypical or deficient plasma butyrylcholinesterase (pseudocholinesterase)",
+    "Rapid acetylation by N-acetyltransferase-2"
+   ],
+   "answer": 2,
+   "explain": "Succinylcholine is normally hydrolyzed within minutes by plasma butyrylcholinesterase; patients with an inherited atypical variant experience prolonged neuromuscular blockade ('scoline apnoea').",
+   "verified": false,
+   "open": {
+    "q": "Name the plasma enzyme whose genetic deficiency causes prolonged paralysis (scoline apnoea) after succinylcholine administration.",
+    "accept": [
+     "butyrylcholinesterase",
+     "pseudocholinesterase",
+     "plasma cholinesterase"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-067",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Biotransformation (Metabolism)",
+   "q": "Which statement correctly describes Hofmann elimination, the mechanism by which atracurium is cleared from the body?",
+   "options": [
+    "Active tubular secretion in the distal nephron",
+    "Cytochrome P450 oxidation in the renal cortex",
+    "Biliary excretion requiring intact gallbladder contraction",
+    "Spontaneous non-enzymatic chemical breakdown at physiological plasma pH and temperature"
+   ],
+   "answer": 3,
+   "explain": "Hofmann elimination is spontaneous temperature- and pH-dependent molecular cleavage independent of liver or kidney function, making atracurium safe in hepatic and renal failure.",
+   "verified": false,
+   "open": {
+    "q": "Define Hofmann elimination and name a neuromuscular blocker cleared by this mechanism.",
+    "accept": [
+     "spontaneous non-enzymatic degradation at physiological pH and temperature seen with atracurium",
+     "pH and temperature dependent spontaneous breakdown of atracurium"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-068",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Distribution",
+   "q": "How does extensive hypoalbuminaemia (as seen in nephrotic syndrome or cirrhosis) affect a highly albumin-bound drug like phenytoin?",
+   "options": [
+    "The unbound (free) active fraction increases, risking toxicity even when total plasma concentration appears normal",
+    "The unbound fraction drops to zero",
+    "Renal clearance stops completely",
+    "The drug becomes permanently insoluble in blood"
+   ],
+   "answer": 0,
+   "explain": "Low serum albumin leaves a higher proportion of phenytoin unbound; total measured drug may look normal or low while free active drug is in the toxic range.",
+   "verified": false,
+   "open": {
+    "q": "Explain why a patient with severe hypoalbuminaemia can develop phenytoin toxicity despite a normal total plasma phenytoin level.",
+    "accept": [
+     "increased unbound free fraction of phenytoin",
+     "higher free active drug concentration due to reduced protein binding"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-069",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Pharmacokinetics",
+   "q": "Why does phenytoin exhibit a sudden, steep rise in plasma concentration when its daily dose is increased slightly near the upper end of its therapeutic range?",
+   "options": [
+    "Phenytoin activates intestinal P-glycoprotein at high doses",
+    "Hepatic metabolizing enzymes become saturated, shifting elimination from first-order to zero-order kinetics",
+    "Phenytoin ceases to bind to plasma proteins above 10 mg/L",
+    "Renal tubular secretion reverses direction at high concentrations"
+   ],
+   "answer": 1,
+   "explain": "Phenytoin displays Michaelis-Menten (non-linear) kinetics: once hepatic enzymes approach saturation (Km), clearance falls and small dose increases cause disproportionate jumps in plasma levels.",
+   "verified": false,
+   "open": {
+    "q": "Explain why small increases in the maintenance dose of phenytoin can cause unexpectedly large increases in plasma concentration and toxicity.",
+    "accept": [
+     "saturation of hepatic metabolizing enzymes shifting to zero-order kinetics",
+     "Michaelis-Menten non-linear saturation kinetics"
+    ]
+   }
+  },
+  {
+   "id": "pm-pharmacokinetics-070",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Excretion",
+   "q": "Besides the kidneys and hepatobiliary system, which route is the primary pathway for eliminating volatile general anesthetics such as halothane, isoflurane, and sevoflurane?",
+   "options": [
+    "Sweat glands",
+    "Salivary glands",
+    "Exhalation through the lungs",
+    "Lacrimal secretions"
+   ],
+   "answer": 2,
+   "explain": "Volatile and gaseous anesthetics diffuse down a partial-pressure gradient from pulmonary capillary blood into alveolar gas and are eliminated unchanged via exhalation.",
+   "verified": false,
+   "open": {
+    "q": "Name the principal organ responsible for eliminating volatile general anesthetics from the body.",
+    "accept": [
+     "lungs",
+     "respiratory tract",
+     "pulmonary exhalation"
+    ]
+   }
+  }
+ ]
+}

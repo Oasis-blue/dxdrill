@@ -1,0 +1,479 @@
+{
+ "topic": "ba-body-fluids-and-blood-clotting",
+ "questions": [
+  {
+   "id": "ba-body-fluids-and-blood-clotting-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Body Fluid Compartments and Electrolytes",
+   "q": "In a healthy 70-kg adult male, total body water accounts for approximately 60% of body weight (42 L), with two-thirds located in the intracellular fluid. Which cation is the principal osmotic determinant of intracellular fluid?",
+   "options": [
+    "Potassium",
+    "Sodium",
+    "Calcium",
+    "Magnesium"
+   ],
+   "answer": 0,
+   "explain": "Potassium (K+, ~140-150 mEq/L) is the major intracellular cation maintained by Na+/K+-ATPase, whereas sodium (Na+, ~140 mEq/L) is the principal extracellular cation.",
+   "verified": false,
+   "open": {
+    "q": "Name the predominant intracellular cation that determines intracellular fluid osmolality.",
+    "accept": [
+     "Potassium",
+     "K+",
+     "Potassium ions"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Body Fluid Compartments and Electrolytes",
+   "q": "Which protein accounts for nearly 80% of the colloid oncotic pressure of blood plasma, retaining fluid within the intravascular compartment?",
+   "options": [
+    "Fibrinogen",
+    "Albumin",
+    "Immunoglobulin G",
+    "Transferrin"
+   ],
+   "answer": 1,
+   "explain": "Albumin is the most abundant plasma protein (~3.5-5.0 g/dL) and has a relatively low molecular weight (~66.5 kDa) with a high net negative charge, making it the primary contributor to plasma oncotic pressure.",
+   "verified": false,
+   "open": {
+    "q": "Name the plasma protein responsible for generating approximately 80% of plasma colloid oncotic pressure.",
+    "accept": [
+     "Albumin",
+     "Serum albumin"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Body Fluid Compartments and Electrolytes",
+   "q": "How does cerebrospinal fluid (CSF) composition normally differ from blood plasma?",
+   "options": [
+    "CSF has much higher protein and glucose concentrations than plasma",
+    "CSF has lower chloride and magnesium than plasma",
+    "CSF has markedly lower protein (~15-45 mg/dL) and slightly lower glucose (~60% of plasma glucose), with higher chloride and magnesium",
+    "CSF contains high levels of fibrinogen and bilirubin"
+   ],
+   "answer": 2,
+   "explain": "The blood-CSF barrier restricts large plasma proteins (leaving CSF protein very low), and active choroid plexus transport maintains higher Cl- and Mg2+ in CSF, while glucose is roughly two-thirds of simultaneous blood glucose.",
+   "verified": false,
+   "open": {
+    "q": "What is the normal approximate ratio of cerebrospinal fluid glucose to simultaneous blood glucose?",
+    "accept": [
+     "0.6",
+     "60%",
+     "Two-thirds",
+     "0.6 to 0.7"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Acid-Base Balance and Blood Buffers",
+   "q": "Which buffer system is the most important extracellular chemical buffer in blood plasma, largely because its components can be independently regulated by the lungs and kidneys?",
+   "options": [
+    "Hemoglobin buffer system",
+    "Phosphate buffer system",
+    "Plasma protein buffer system",
+    "Bicarbonate-carbonic acid buffer system"
+   ],
+   "answer": 3,
+   "explain": "Although its pKa (6.1) is slightly below blood pH (7.4), the HCO3-/H2CO3 system is the primary physiological extracellular buffer because PaCO2 is rapidly adjusted by alveolar ventilation and HCO3- by renal tubules.",
+   "verified": false,
+   "open": {
+    "q": "Name the primary physiological extracellular buffer system of blood plasma regulated by the lungs and kidneys.",
+    "accept": [
+     "Bicarbonate buffer system",
+     "Bicarbonate-carbonic acid buffer system",
+     "Bicarbonate"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-005",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Acid-Base Balance and Blood Buffers",
+   "q": "According to the Henderson-Hasselbalch equation for the bicarbonate buffer system (pH = 6.1 + log([HCO3-] / 0.03 x PaCO2)), what molar ratio of bicarbonate to dissolved carbon dioxide maintains a normal arterial blood pH of 7.40?",
+   "options": [
+    "20:1",
+    "10:1",
+    "4:1",
+    "1:20"
+   ],
+   "answer": 0,
+   "explain": "At normal values ([HCO3-] = 24 mEq/L and 0.03 x 40 mmHg = 1.2 mmol/L), the ratio is 24 / 1.2 = 20:1, and 6.1 + log10(20) = 6.1 + 1.3 = 7.40.",
+   "verified": false,
+   "open": {
+    "q": "What ratio of plasma bicarbonate concentration to dissolved carbon dioxide maintains a normal blood pH of 7.40?",
+    "accept": [
+     "20:1",
+     "20 to 1",
+     "20"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Acid-Base Balance and Blood Buffers",
+   "q": "Which amino acid side chain on hemoglobin provides the majority of its physiological intracellular buffering capacity in red blood cells?",
+   "options": [
+    "Cysteine thiol groups",
+    "Histidine imidazole groups",
+    "Lysine epsilon-amino groups",
+    "Glutamate gamma-carboxyl groups"
+   ],
+   "answer": 1,
+   "explain": "The imidazole side chain of histidine has a pKa near physiological pH (~6.8), allowing hemoglobin's numerous histidine residues to buffer H+ ions generated from tissue CO2 hydration (Haldane effect).",
+   "verified": false,
+   "open": {
+    "q": "Name the amino acid residue whose imidazole side chain accounts for hemoglobin's strong intracellular buffering capacity.",
+    "accept": [
+     "Histidine"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-007",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Primary Hemostasis and Platelet Biochemistry",
+   "q": "Which multimeric glycoprotein synthesized by endothelial cells and megakaryocytes bridges subendothelial collagen to platelet glycoprotein Ib (GpIb) receptors during primary hemostasis?",
+   "options": [
+    "Fibrinogen",
+    "Fibronectin",
+    "von Willebrand factor",
+    "Thrombospondin"
+   ],
+   "answer": 2,
+   "explain": "von Willebrand factor (vWF) binds exposed subendothelial collagen and platelet GpIb-IX-V receptors under high shear stress, while also stabilizing Factor VIII in plasma.",
+   "verified": false,
+   "open": {
+    "q": "Name the multimeric adhesive glycoprotein that links subendothelial collagen to platelet GpIb receptors and stabilizes Factor VIII.",
+    "accept": [
+     "von Willebrand factor",
+     "vWF"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Primary Hemostasis and Platelet Biochemistry",
+   "q": "Which platelet surface integrin receptor binds fibrinogen to crosslink adjacent platelets during platelet aggregation, and is deficient in Glanzmann thrombasthenia?",
+   "options": [
+    "GpIb-IX-V",
+    "P2Y12",
+    "PAR-1",
+    "GpIIb/IIIa (integrin alpha-IIb beta-3)"
+   ],
+   "answer": 3,
+   "explain": "Activation of platelets induces a conformational change in GpIIb/IIIa, allowing bivalent fibrinogen molecules to bridge adjacent platelets; its deficiency causes Glanzmann thrombasthenia.",
+   "verified": false,
+   "open": {
+    "q": "Name the platelet fibrinogen receptor required for platelet aggregation that is defective in Glanzmann thrombasthenia.",
+    "accept": [
+     "GpIIb/IIIa",
+     "Glycoprotein IIb/IIIa",
+     "Integrin alpha-IIb beta-3"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Primary Hemostasis and Platelet Biochemistry",
+   "q": "How do endothelial prostacyclin (PGI2) and platelet thromboxane A2 (TXA2) exert opposing biochemical effects on platelet aggregation?",
+   "options": [
+    "TXA2 lowers platelet cAMP and mobilizes Ca2+ to promote aggregation, whereas PGI2 raises platelet cAMP to inhibit aggregation",
+    "TXA2 raises platelet cGMP, whereas PGI2 lowers platelet cGMP",
+    "Both act via nuclear receptors to alter gene transcription",
+    "TXA2 cleaves fibrinogen, whereas PGI2 polymerizes fibrin"
+   ],
+   "answer": 0,
+   "explain": "Platelet COX-1 generates TXA2 (vasoconstrictor and platelet aggregator via Gq/Gi), whereas endothelial COX-2/prostacyclin synthase generates PGI2 (vasodilator and platelet inhibitor via Gs-mediated cAMP elevation).",
+   "verified": false,
+   "open": {
+    "q": "Name the prothrombotic eicosanoid synthesized by platelets via COX-1 that promotes vasoconstriction and platelet aggregation.",
+    "accept": [
+     "Thromboxane A2",
+     "TXA2"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
+   "q": "Which four procoagulant clotting factors require vitamin K-dependent gamma-carboxylation of N-terminal glutamate residues?",
+   "options": [
+    "Factors I, V, VIII, and XIII",
+    "Factors II, VII, IX, and X",
+    "Factors XI, XII, prekallikrein, and HMWK",
+    "Factors III, IV, VIII, and vWF"
+   ],
+   "answer": 1,
+   "explain": "Factors II (prothrombin), VII, IX, and X (plus anticoagulant proteins C and S) undergo gamma-glutamyl carboxylation so they can chelate Ca2+ and bind negatively charged platelet phospholipids.",
+   "verified": false,
+   "open": {
+    "q": "List the four procoagulant clotting factors that depend on vitamin K for gamma-carboxylation.",
+    "accept": [
+     "Factors II, VII, IX, and X",
+     "2, 7, 9, and 10",
+     "II, VII, IX, X"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
+   "q": "How does warfarin exert its anticoagulant effect at the enzymatic level?",
+   "options": [
+    "Directly inhibits thrombin and Factor Xa active sites",
+    "Activates antithrombin III",
+    "Inhibits vitamin K epoxide reductase (VKORC1), preventing regeneration of reduced vitamin K hydroquinone",
+    "Chelates plasma calcium ions"
+   ],
+   "answer": 2,
+   "explain": "Warfarin blocks vitamin K epoxide reductase, halting the recycling of oxidized vitamin K epoxide back to the active reduced hydroquinone cofactor needed by gamma-glutamyl carboxylase.",
+   "verified": false,
+   "open": {
+    "q": "Name the enzyme inhibited by warfarin to block recycling of vitamin K.",
+    "accept": [
+     "Vitamin K epoxide reductase",
+     "VKORC1",
+     "VKOR"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
+   "q": "Which divalent cation (historically designated Factor IV) is essential for bridging gamma-carboxyglutamate (Gla) domains of clotting factors to negatively charged phosphatidylserine on activated platelets?",
+   "options": [
+    "Magnesium",
+    "Zinc",
+    "Ferrous iron",
+    "Calcium"
+   ],
+   "answer": 3,
+   "explain": "Calcium ions (Ca2+) form coordination bridges between negatively charged gamma-carboxyglutamate residues on Factors II, VII, IX, and X and exposed phosphatidylserine on activated platelet membranes.",
+   "verified": false,
+   "open": {
+    "q": "Name the divalent cation essential as a cofactor in multiple steps of the coagulation cascade.",
+    "accept": [
+     "Calcium",
+     "Ca2+",
+     "Calcium ions"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-013",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
+   "q": "A 6-year-old boy presents with recurrent hemarthroses and prolonged bleeding after dental extraction. Laboratory tests show a normal PT, normal bleeding time, and markedly prolonged aPTT that corrects on a 1:1 mixing study. Deficiency of which factor is most common in this X-linked disorder?",
+   "options": [
+    "Factor VIII",
+    "Factor VII",
+    "Factor XII",
+    "Factor XIII"
+   ],
+   "answer": 0,
+   "explain": "Hemophilia A is an X-linked recessive deficiency of Factor VIII (intrinsic pathway cofactor for Factor IXa), causing deep tissue/joint bleeding and an isolated prolonged aPTT.",
+   "verified": false,
+   "open": {
+    "q": "Deficiency of which coagulation factor causes X-linked hemophilia A?",
+    "accept": [
+     "Factor VIII",
+     "Factor 8",
+     "Antihemophilic factor"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
+   "q": "Which coagulation factor is a transglutaminase activated by thrombin that crosslinks adjacent fibrin strands via covalent epsilon-(gamma-glutamyl)lysine isopeptide bonds to stabilize the fibrin clot?",
+   "options": [
+    "Factor X",
+    "Factor XIII",
+    "Factor XI",
+    "Factor V"
+   ],
+   "answer": 1,
+   "explain": "Factor XIIIa (fibrin-stabilizing factor) forms covalent amide crosslinks between glutamine and lysine side chains of fibrin polymers, making the clot mechanically stable and resistant to plasmin.",
+   "verified": false,
+   "open": {
+    "q": "Name the transglutaminase clotting factor that covalently crosslinks fibrin polymers to stabilize the blood clot.",
+    "accept": [
+     "Factor XIII",
+     "Factor 13",
+     "Fibrin-stabilizing factor"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-015",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
+   "q": "Which coagulation complex initiates the extrinsic pathway in vivo upon vascular injury, and which laboratory test evaluates this pathway?",
+   "options": [
+    "Factor XIIa-HMWK complex; activated partial thromboplastin time (aPTT)",
+    "Factor IXa-VIIIa complex; thrombin time (TT)",
+    "Tissue factor (Factor III)-Factor VIIa complex; prothrombin time (PT/INR)",
+    "Fibrinogen-thrombin complex; bleeding time"
+   ],
+   "answer": 2,
+   "explain": "Subendothelial tissue factor (Factor III) binds and activates Factor VII to Factor VIIa, activating Factor X and Factor IX; the extrinsic and common pathways are assessed clinically by the prothrombin time (PT/INR).",
+   "verified": false,
+   "open": {
+    "q": "Name the coagulation test used clinically to monitor warfarin therapy and assess the extrinsic and common coagulation pathways.",
+    "accept": [
+     "Prothrombin time",
+     "PT",
+     "INR",
+     "PT/INR"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-016",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Natural Anticoagulants and Fibrinolysis",
+   "q": "How does unfractionated heparin produce rapid anticoagulation in vivo?",
+   "options": [
+    "Inhibits hepatic synthesis of vitamin K-dependent factors",
+    "Directly degrades fibrin polymers",
+    "Blocks platelet GpIIb/IIIa receptors",
+    "Binds antithrombin III and induces a conformational change that accelerates inactivation of thrombin (Factor IIa) and Factor Xa by 1,000-fold"
+   ],
+   "answer": 3,
+   "explain": "Heparin binds to a lysine-rich site on antithrombin III (ATIII), dramatically enhancing ATIII's ability to neutralize serine proteases, especially thrombin and Factor Xa.",
+   "verified": false,
+   "open": {
+    "q": "Name the endogenous plasma serine protease inhibitor whose activity is accelerated 1,000-fold by heparin.",
+    "accept": [
+     "Antithrombin III",
+     "Antithrombin",
+     "ATIII",
+     "AT-III"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Natural Anticoagulants and Fibrinolysis",
+   "q": "How does the endothelial protein C pathway limit thrombus extension on intact vascular endothelium?",
+   "options": [
+    "Thrombin bound to endothelial thrombomodulin activates protein C, which together with protein S proteolytically inactivates Factors Va and VIIIa",
+    "Protein C activates Factors V and VIII to strengthen clots",
+    "Thrombomodulin converts plasminogen directly to fibrin",
+    "Protein S inhibits antithrombin III"
+   ],
+   "answer": 0,
+   "explain": "Intact endothelial cells express thrombomodulin, which switches thrombin's substrate specificity from fibrinogen to protein C; activated protein C (APC) with cofactor protein S cleaves and inactivates Factors Va and VIIIa.",
+   "verified": false,
+   "open": {
+    "q": "Which two activated coagulation cofactors are proteolytically inactivated by activated protein C and protein S?",
+    "accept": [
+     "Factors Va and VIIIa",
+     "Factor Va and Factor VIIIa",
+     "Va and VIIIa"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-018",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Natural Anticoagulants and Fibrinolysis",
+   "q": "A 29-year-old woman develops a deep vein thrombosis after starting oral contraceptives. Genetic testing reveals Factor V Leiden. What is the specific molecular abnormality in Factor V Leiden?",
+   "options": [
+    "Complete absence of Factor V synthesis",
+    "A point mutation (Arg506Gln) in Factor V that makes Factor Va resistant to cleavage and inactivation by activated protein C",
+    "Overexpression of tissue plasminogen activator",
+    "Gain-of-function mutation in antithrombin III"
+   ],
+   "answer": 1,
+   "explain": "Factor V Leiden replaces arginine with glutamine at position 506, eliminating the primary cleavage site for activated protein C (APC resistance) and causing inherited thrombophilia.",
+   "verified": false,
+   "open": {
+    "q": "Name the inherited thrombophilia caused by a mutation in Factor V that confers resistance to inactivation by activated protein C.",
+    "accept": [
+     "Factor V Leiden",
+     "APC resistance"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-019",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Natural Anticoagulants and Fibrinolysis",
+   "q": "Which serine protease dissolves blood clots by cleaving crosslinked fibrin polymers into fibrin degradation products including D-dimers?",
+   "options": [
+    "Thrombin",
+    "Kallikrein",
+    "Plasmin",
+    "Elastase"
+   ],
+   "answer": 2,
+   "explain": "Tissue plasminogen activator (tPA) converts inactive zymogen plasminogen into active plasmin, which digests fibrin meshes and releases D-dimers from Factor XIIIa-crosslinked fibrin.",
+   "verified": false,
+   "open": {
+    "q": "Name the active fibrinolytic enzyme derived from plasminogen that degrades fibrin clots.",
+    "accept": [
+     "Plasmin"
+    ]
+   }
+  },
+  {
+   "id": "ba-body-fluids-and-blood-clotting-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Natural Anticoagulants and Fibrinolysis",
+   "q": "Why does an elevated plasma D-dimer level specifically indicate degradation of a stabilized fibrin clot rather than simple fibrinogenolysis?",
+   "options": [
+    "D-dimer is synthesized directly by hepatocytes during inflammation",
+    "Unpolymerized fibrinogen contains preformed D-dimer epitopes",
+    "Plasmin generates D-dimer only from uncrosslinked fibrin monomers",
+    "D-dimer consists of two covalently linked D domains formed only after Factor XIIIa crosslinks fibrin polymers and plasmin subsequently cleaves them"
+   ],
+   "answer": 3,
+   "explain": "Free fibrinogen and uncrosslinked fibrin lack covalent bonds between adjacent D domains; D-dimer appears only when a thrombus has been crosslinked by Factor XIIIa and then degraded by plasmin.",
+   "verified": false,
+   "open": {
+    "q": "Which fibrin degradation product specifically reflects plasmin cleavage of Factor XIIIa-crosslinked fibrin?",
+    "accept": [
+     "D-dimer",
+     "D-dimers"
+    ]
+   }
+  }
+ ]
+}
