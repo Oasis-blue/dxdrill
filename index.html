@@ -78,5 +78,15 @@
 <script src="js/debates.js"></script>
 <script src="js/cards.js"></script>
 <script src="js/app.js"></script>
+<!-- Cloudflare Web Analytics: cookie-free visit counts. Skipped when the browser sends Do Not Track. -->
+<script>
+(function () {
+  try { if (navigator.doNotTrack === "1" || window.doNotTrack === "1") return; } catch (e) { }
+  var s = document.createElement("script"); s.type = "module"; s.defer = true;
+  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  s.setAttribute("data-cf-beacon", '{"token": "39c83d6700894e9e819b8ca24d36fb48"}');
+  document.body.appendChild(s);
+})();
+</script>
 </body>
 </html>
