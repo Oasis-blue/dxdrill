@@ -109,7 +109,8 @@
     debates: DX.debates,
     features: DX.features,
     account: DX.account,
-    screen: DX.screen
+    screen: DX.screen,
+    remote: DX.remote
   };
 
   function route() {
@@ -219,7 +220,7 @@
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
   DX.load().then(function () {
     /* Pages that need the account check wait for it; everything else shows at once. */
-    var CLOUDY = { screen: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
+    var CLOUDY = { screen: 1, remote: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
     var h0 = (location.hash || "#home").slice(1), waits = !!CLOUDY[h0];
     var initP = Promise.resolve().then(function () { return DX.cloud.init(); }).catch(function () { });
     var timedOut = false, capped = Promise.race([initP, new Promise(function (r) { setTimeout(function () { timedOut = true; r(); }, 4000); })]);
