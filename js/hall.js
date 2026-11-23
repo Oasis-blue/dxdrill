@@ -298,15 +298,15 @@
     if (H.remote) {
       return '<section class="stage"><h3>Phone linked</h3><p>On the quizmaster’s phone, open <b>' + esc(location.origin.replace(/^https?:\/\//, "") + location.pathname.replace(/index\.html$/, "")) + '</b>, add <b>#remote</b> to the end of the address, and type the code <b class="remote-code">' + esc(H.remote) + '</b>. Or open this link on that phone: <a href="' + esc(remoteLink()) + '">' + esc(remoteLink()) + '</a></p>' +
         '<p class="hint">This screen will now show only the questions. The answers and the Got it / Missed buttons are on the phone.</p>' +
-        (H.remoteNote ? '<p class="note bad" role="status">' + esc(H.remoteNote) + '</p>' : "") +
-        '<div class="row tight"><button class="btn ghost small" data-act="remoteoff">Unlink phone</button></div></section>';
+        (H.remoteNote ? '<p class="note" role="status">' + esc(H.remoteNote) + '</p>' : "") +
+        '<div class="row tight"><a class="btn small" href="' + esc(remoteLink()) + '" target="_blank" rel="noopener" style="text-decoration:none">Open phone view</a><button class="btn small" data-act="remotecopy">' + (navigator.share ? "Share link" : "Copy link") + '</button><button class="btn ghost small" data-act="remoteoff">Unlink phone</button></div></section>';
     }
     return '<details class="acc"><summary><span>Quizmaster on a phone (optional)</span><small>keeps answers private</small></summary><div class="topics">' +
       '<p>With one shared screen, the answer has to appear on the screen before you can judge, so the room sees it too. This option fixes that.</p>' +
       '<ol><li>Tap <b>Link a phone</b>. You get a short code.</li><li>On the quizmaster’s phone, enter the code. It shows the answer, the explanation and the Got it / Missed buttons.</li><li>The shared screen shows only the questions. The room sees an answer only when you tap Show answer on the phone.</li></ol>' +
       '<p class="hint">Needs the internet on both devices. If you skip it, Hall mode works exactly as before, with no internet.</p>' +
       (H.remoteNote ? '<p class="note bad" role="status">' + esc(H.remoteNote) + '</p>' : "") +
-      '<div class="row tight"><button class="btn small" data-act="remoteon">Link a phone</button></div></div></details>';
+      '<div class="row tight"><button class="btn small" data-act="remoteon">Link a phone</button><a class="btn ghost small" href="#remote" style="text-decoration:none">I have a code (phone)</a></div></div></details>';
   }
   function remotePill() {
     var p = document.getElementById("hallremote");
@@ -724,6 +724,12 @@
       case "remoteon": (function () {
         var sb = cloud(); if (!sb) { H.remoteNote = "The online part is not reachable, so a phone cannot be linked. Check the internet connection."; paint(); return; }
         sb.rpc("hall_open").then(function (r) { if (r.error || !r.data) { H.remoteNote = "Could not start a phone link right now. Try again in a moment."; paint(); return; } H.remoteNote = ""; remoteOn(r.data); paint(); }, function () { H.remoteNote = "Could not start a phone link. Check the internet connection."; paint(); });
+      })(); break;
+      case "remotecopy": (function () {
+        var u = remoteLink();
+        if (navigator.share) navigator.share({ url: u, title: "DxDrill quizmaster phone" }).catch(function () { });
+        else if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(function () { H.remoteNote = "Link copied. Send it to the quizmaster's phone."; paint(); }, function () { H.remoteNote = u; paint(); });
+        else { H.remoteNote = u; paint(); }
       })(); break;
       case "remoteoff": remoteOff(); H.remoteNote = ""; paint(); break;
       case "keyopen": keyOpen(); break;
