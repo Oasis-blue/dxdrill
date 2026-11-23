@@ -16,8 +16,8 @@
     c.sb.rpc("hall_pull", { p_code: S.code }).then(function (r) {
       if (r.error) throw r.error;
       if (!r.data) { S.err = "No linked screen with code " + S.code + ". Check the code, or link again on the main screen."; S.p = null; paint(); sched(5000); return; }
-      S.err = ""; S.age = Number(r.data.age) || 0; S.at = Date.now();
-      var sig = JSON.stringify(r.data.payload) + (S.age > 25 ? "L" : "");
+      S.err = ""; S.age = Number(r.data.age) || 0; S.at = Date.now() - S.age * 1000; S.pull = Date.now();
+      var pl = r.data.payload, sig = JSON.stringify(pl, function (k, v) { return k === "left" && pl && pl.timer && pl.timer.run ? 0 : v; }) + (S.age > 25 ? "L" : "");
       S.p = r.data.payload; if (sig !== S.sig) { S.sig = sig; paint(); } else tick();
       sched(1300 + Math.random() * 400);
     }).catch(function () { S.err = "Could not reach the server. Trying again…"; paint(); sched(3000); });
@@ -27,7 +27,7 @@
     var left = p.timer.left; if (p.timer.run) left = Math.max(0, left - Math.floor((Date.now() - S.at) / 1000));
     t.textContent = left; t.className = "rm-timer" + (left <= 5 && p.timer.run ? " low" : "");
   }
-  function lost() { return S.p && (S.age + (Date.now() - S.at) / 1000) > 25; }
+  function lost() { return S.p && (S.age + (Date.now() - S.pull) / 1000) > 25; }
   function itemHtml(it) {
     if (!it) return "";
     var h = "";
