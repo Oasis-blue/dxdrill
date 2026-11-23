@@ -370,3 +370,7 @@ body.hr-on #app .marks, body.hr-on #app .row.tight{display:none}
 .rm-lost{color:#c0392b}
 .bs-exit{position:fixed;top:10px;left:10px;padding:9px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg);font-size:14px;text-decoration:none;opacity:.35}
 .bs-exit:hover,.bs-exit:focus{opacity:1}
+#backbar{padding:10px 0 0}
+#backbar a{display:inline-block;padding:8px 12px 8px 0;font-size:15px;font-weight:600;text-decoration:none;color:var(--accent,inherit);min-height:40px}
+#backbar a:hover{text-decoration:underline}
+body.bigscreen #backbar{display:none!important}
