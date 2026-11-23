@@ -368,3 +368,5 @@ body.hr-on #app .marks, body.hr-on #app .row.tight{display:none}
 .rm-btns{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-top:14px}
 .rm-btns .btn{min-height:58px; font-size:17px}
 .rm-lost{color:#c0392b}
+.bs-exit{position:fixed;top:10px;left:10px;padding:9px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg);font-size:14px;text-decoration:none;opacity:.35}
+.bs-exit:hover,.bs-exit:focus{opacity:1}
