@@ -121,6 +121,18 @@
     if (!b) { bar.hidden = true; return; }
     a.setAttribute("href", b[0]); a.textContent = "\u2190 " + b[1]; bar.hidden = false;
   }
+  /* which pages people open: one anonymous note per device, page and day. Admin visits are left out. */
+  var lastPing = { h: "", t: 0 };
+  function pagePing(h) {
+    try {
+      var c = DX.cloud; if (!c || !c.ok || !c.sb || (c.profile && c.profile.is_admin) || !routes[h]) return;
+      if (lastPing.h === h && Date.now() - lastPing.t < 3000) return;
+      lastPing = { h: h, t: Date.now() };
+      var dev = DX.store.get("dx.device", "");
+      if (!dev) { dev = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); DX.store.set("dx.device", dev); }
+      c.sb.rpc("page_ping", { p_device: dev, p_page: h }).then(function () { }, function () { });
+    } catch (e) { }
+  }
   function route() {
     var h = (location.hash || "#home").slice(1).split(/[?\/]/)[0];
     var bb = document.getElementById("backbar"); if (bb) bb.hidden = true;
@@ -144,7 +156,7 @@
       navVisibility(); return;
     }
     navVisibility();
-    current = routes[h]; backBar(h);
+    current = routes[h]; backBar(h); pagePing(h);
     document.querySelectorAll("[data-nav]").forEach(function (a) {
       if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
