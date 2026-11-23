@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "DNA Replication and Telomeres",
+   "term": "Okazaki fragments",
+   "clues": [
+    "They are typically 1,000 to 2,000 nucleotides long in bacteria and 100 to 200 nucleotides long in eukaryotes.",
+    "Each one begins with a short RNA primer synthesized by primase and is later joined together by DNA ligase.",
+    "These short discontinuous DNA segments are synthesized in the 5' to 3' direction on the lagging strand during DNA replication."
+   ],
+   "forbidden": [
+    "lagging strand",
+    "replication",
+    "DNA",
+    "primer",
+    "fragment"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "DNA Replication and Telomeres",
+   "term": "Telomerase",
+   "clues": [
+    "It is active in germ cells, stem cells, and over eighty-five percent of human cancers, but silent in most somatic cells.",
+    "It carries its own intrinsic RNA molecule that serves as a template for extending chromosome ends.",
+    "This ribonucleoprotein reverse transcriptase adds TTAGGG repeats to the 3' ends of eukaryotic chromosomes to solve the end-replication problem."
+   ],
+   "forbidden": [
+    "chromosome",
+    "telomere",
+    "reverse transcriptase",
+    "TTAGGG",
+    "end"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "DNA Damage and Repair Mechanisms",
+   "term": "Mismatch repair",
+   "clues": [
+    "Germline mutations in MSH2 or MLH1 cause Lynch syndrome and microsatellite instability.",
+    "It distinguishes the newly synthesized daughter strand from the parental template strand.",
+    "This post-replicative DNA repair pathway corrects base-pair errors and insertion-deletion loops missed by DNA polymerase proofreading."
+   ],
+   "forbidden": [
+    "Lynch",
+    "microsatellite",
+    "MSH2",
+    "MLH1",
+    "repair"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Transcription and RNA Processing",
+   "term": "RNA polymerase II",
+   "clues": [
+    "It is potently inhibited by alpha-amanitin found in death cap mushrooms.",
+    "Its C-terminal domain (CTD) is phosphorylated by TFIIH to coordinate capping, splicing, and polyadenylation.",
+    "This eukaryotic enzyme transcribes protein-coding genes into heterogeneous nuclear pre-mRNA."
+   ],
+   "forbidden": [
+    "mRNA",
+    "transcription",
+    "amanitin",
+    "polymerase",
+    "promoter"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Genetic Code and Mutations",
+   "term": "Wobble hypothesis",
+   "clues": [
+    "Proposed by Francis Crick, it explains why fewer than sixty-one tRNA species are needed to read all sense codons.",
+    "Inosine at the 5' position of an anticodon can base-pair with U, C, or A.",
+    "This concept describes flexible non-standard base pairing at the third (3') nucleotide position of an mRNA codon."
+   ],
+   "forbidden": [
+    "codon",
+    "anticodon",
+    "tRNA",
+    "third",
+    "inosine"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Translation and Protein Synthesis",
+   "term": "Shine-Dalgarno sequence",
+   "clues": [
+    "It is absent in eukaryotic mRNAs, which rely instead on a 5' cap and Kozak consensus sequence.",
+    "It is located roughly eight to ten nucleotides upstream of the initiator AUG codon.",
+    "This purine-rich prokaryotic mRNA sequence base-pairs with 16S rRNA to align the 30S ribosomal subunit at the start codon."
+   ],
+   "forbidden": [
+    "ribosome",
+    "16S",
+    "prokaryotic",
+    "AUG",
+    "start"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Translation and Protein Synthesis",
+   "term": "Peptidyl transferase",
+   "clues": [
+    "Chloramphenicol inhibits this catalytic activity on bacterial 50S ribosomal subunits.",
+    "It is a classic example of a ribozyme because its catalytic center is composed entirely of ribosomal RNA rather than protein.",
+    "This enzymatic activity of 23S and 28S rRNA forms peptide bonds between growing polypeptide chains and incoming aminoacyl-tRNAs."
+   ],
+   "forbidden": [
+    "peptide bond",
+    "ribozyme",
+    "rRNA",
+    "ribosome",
+    "translation"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Regulation of Gene Expression",
+   "term": "Lac operon",
+   "clues": [
+    "François Jacob and Jacques Monod won the Nobel Prize for elucidating this bacterial gene cluster.",
+    "It is regulated negatively by a repressor protein and positively by cAMP-activated CAP.",
+    "This inducible E. coli operon encodes beta-galactosidase, permease, and transacetylase when glucose is low and lactose is present."
+   ],
+   "forbidden": [
+    "lactose",
+    "glucose",
+    "operon",
+    "repressor",
+    "cAMP"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Regulation of Gene Expression",
+   "term": "Histone acetylation",
+   "clues": [
+    "Histone deacetylase (HDAC) inhibitors such as vorinostat promote this chromatin modification in cancer therapy.",
+    "It neutralizes positive charges on lysine side chains, weakening electrostatic attraction to negatively charged DNA.",
+    "This epigenetic modification loosens chromatin into transcriptionally active euchromatin."
+   ],
+   "forbidden": [
+    "chromatin",
+    "euchromatin",
+    "lysine",
+    "histone",
+    "acetyl"
+   ]
+  },
+  {
+   "topic": "ba-molecular-biology",
+   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+   "term": "Polymerase chain reaction",
+   "clues": [
+    "Kary Mullis invented this technique, which amplifies a single target DNA segment over a billion-fold in a few hours.",
+    "It relies on a thermostable enzyme isolated from Thermus aquaticus.",
+    "This cyclic in vitro method repeats denaturation, primer annealing, and extension steps to amplify specific DNA sequences."
+   ],
+   "forbidden": [
+    "PCR",
+    "Taq",
+    "denaturation",
+    "annealing",
+    "amplify"
+   ]
+  }
+ ]
+}

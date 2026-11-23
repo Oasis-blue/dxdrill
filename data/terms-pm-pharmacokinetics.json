@@ -1,0 +1,140 @@
+{
+ "terms": [
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Absorption",
+   "term": "Bioavailability",
+   "clues": [
+    "Always equals 100% when a drug is injected directly into a vein.",
+    "Reduced by incomplete gut absorption and hepatic first-pass extraction.",
+    "The fraction of an administered drug dose that reaches the systemic circulation unchanged."
+   ],
+   "forbidden": [
+    "bioavailability",
+    "fraction",
+    "systemic",
+    "circulation",
+    "unchanged"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Absorption",
+   "term": "First-pass metabolism",
+   "clues": [
+    "Explains why oral propranolol requires a much larger dose than intravenous propranolol.",
+    "Bypassed by sublingual, transdermal, and intravenous administration.",
+    "Presystemic breakdown of an orally absorbed drug in the gut wall and liver before reaching general circulation."
+   ],
+   "forbidden": [
+    "first-pass",
+    "liver",
+    "presystemic",
+    "hepatic",
+    "oral"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Distribution",
+   "term": "Volume of distribution",
+   "clues": [
+    "Calculated by dividing the total amount of drug in the body by its plasma concentration.",
+    "Very high values (like 15,000 L for chloroquine) indicate extensive tissue sequestration.",
+    "A theoretical proportionality constant relating plasma drug concentration to total body drug content."
+   ],
+   "forbidden": [
+    "volume",
+    "distribution",
+    "plasma",
+    "concentration",
+    "body"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Biotransformation (Metabolism)",
+   "term": "Glucuronidation",
+   "clues": [
+    "Immaturity of this pathway in neonates causes grey baby syndrome with chloramphenicol.",
+    "Uses UDPGA as its cofactor and is the only microsomal Phase II reaction.",
+    "Conjugation of a drug or bilirubin with glucuronic acid to increase water solubility."
+   ],
+   "forbidden": [
+    "glucuronidation",
+    "glucuronic",
+    "UDPGA",
+    "conjugation",
+    "phase"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Clinical Pharmacokinetics",
+   "term": "Clearance",
+   "clues": [
+    "Determines the maintenance dosing rate needed to sustain a steady-state level.",
+    "Measured in units of volume per unit time, such as mL/min or L/h.",
+    "The theoretical volume of plasma completely cleared of a drug per unit time."
+   ],
+   "forbidden": [
+    "clearance",
+    "volume",
+    "plasma",
+    "removed",
+    "time"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Clinical Pharmacokinetics",
+   "term": "Half-life",
+   "clues": [
+    "Equals 0.693 multiplied by volume of distribution divided by clearance.",
+    "Four to five of these intervals are needed to reach steady-state plasma concentration.",
+    "The time required for the plasma concentration of a drug to decrease by 50%."
+   ],
+   "forbidden": [
+    "half-life",
+    "50%",
+    "half",
+    "time",
+    "concentration"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Clinical Pharmacokinetics",
+   "term": "Zero-order kinetics",
+   "clues": [
+    "Classically exhibited by ethanol, phenytoin, and high-dose salicylates.",
+    "Occurs when metabolizing enzymes become completely saturated.",
+    "Elimination of a constant amount of drug per unit time regardless of plasma concentration."
+   ],
+   "forbidden": [
+    "zero-order",
+    "kinetics",
+    "constant",
+    "amount",
+    "saturated"
+   ]
+  },
+  {
+   "topic": "pm-pharmacokinetics",
+   "sub": "Excretion",
+   "term": "Enterohepatic circulation",
+   "clues": [
+    "Involves cleavage of drug glucuronides by gut bacterial beta-glucuronidase.",
+    "Prolongs the half-life of morphine, chloramphenicol, and oral contraceptives.",
+    "Biliary excretion of a drug into the intestine followed by reabsorption back into portal blood."
+   ],
+   "forbidden": [
+    "enterohepatic",
+    "bile",
+    "biliary",
+    "intestine",
+    "reabsorption"
+   ]
+  }
+ ]
+}

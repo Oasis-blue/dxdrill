@@ -1,0 +1,242 @@
+{
+ "terms": [
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Restriction Endonucleases and DNA Ligase",
+   "term": "Restriction endonuclease",
+   "clues": [
+    "Bacteria use them alongside cognate DNA methyltransferases to defend against bacteriophages.",
+    "Type II enzymes recognize specific four- to eight-base-pair palindromic sequences.",
+    "These molecular scissors cleave double-stranded DNA at specific sites to produce sticky or blunt ends."
+   ],
+   "forbidden": [
+    "cut",
+    "cleave",
+    "palindrome",
+    "sticky ends",
+    "restriction enzyme"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Cloning Vectors and DNA Libraries",
+   "term": "Complementary DNA",
+   "clues": [
+    "It is synthesized in vitro from mature messenger RNA using reverse transcriptase and an oligo(dT) primer.",
+    "Unlike genomic DNA, it lacks introns and promoter regions, allowing eukaryotic proteins to be expressed in E. coli.",
+    "Abbreviated cDNA, it represents only the genes actively transcribed in a given cell or tissue."
+   ],
+   "forbidden": [
+    "cDNA",
+    "mRNA",
+    "reverse transcriptase",
+    "intron",
+    "library"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Cloning Vectors and DNA Libraries",
+   "term": "Blue-white screening",
+   "clues": [
+    "It relies on alpha-complementation of beta-galactosidase on agar plates containing ampicillin, IPTG, and X-gal.",
+    "Non-recombinant plasmids produce colored colonies, whereas insertional inactivation of lacZ-alpha produces colorless colonies.",
+    "This rapid colony selection method identifies bacteria harboring a recombinant plasmid with an inserted DNA fragment."
+   ],
+   "forbidden": [
+    "colony",
+    "X-gal",
+    "lacZ",
+    "plasmid",
+    "white"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Cloning Vectors and DNA Libraries",
+   "term": "Bacterial artificial chromosome",
+   "clues": [
+    "It is engineered from the Escherichia coli fertility (F) plasmid and maintained at low copy number.",
+    "It was a workhorse vector during the Human Genome Project for constructing physical contig maps.",
+    "Abbreviated BAC, this cloning vector stably carries large genomic DNA inserts of 100 to 300 kilobases."
+   ],
+   "forbidden": [
+    "BAC",
+    "vector",
+    "kilobase",
+    "F-plasmid",
+    "clone"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Blotting, Microarrays, and Hybridization",
+   "term": "Southern blot",
+   "clues": [
+    "Named after British biologist Edwin Southern, it inspired the naming of Northern and Western techniques.",
+    "It involves restriction digestion, agarose gel electrophoresis, alkaline denaturation, membrane transfer, and probe hybridization.",
+    "This classic molecular biology method detects specific DNA sequences and restriction fragment length polymorphisms."
+   ],
+   "forbidden": [
+    "DNA",
+    "blot",
+    "probe",
+    "electrophoresis",
+    "RFLP"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Blotting, Microarrays, and Hybridization",
+   "term": "Fluorescence in situ hybridization",
+   "clues": [
+    "Abbreviated FISH, it bridges classical cytogenetics and molecular genetics.",
+    "It is commonly used to detect the 22q11.2 microdeletion in DiGeorge syndrome or HER2 amplification in breast cancer.",
+    "This technique hybridizes fluorescently labeled DNA probes directly onto metaphase chromosomes or interphase nuclei."
+   ],
+   "forbidden": [
+    "FISH",
+    "chromosome",
+    "probe",
+    "fluorescent",
+    "microdeletion"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Blotting, Microarrays, and Hybridization",
+   "term": "DNA microarray",
+   "clues": [
+    "Thousands of microscopic oligonucleotide probes are immobilized in a grid on a glass slide or silicon chip.",
+    "In two-color tumor versus normal comparisons, red, green, and yellow spots indicate relative transcript abundance.",
+    "This high-throughput hybridization platform simultaneously measures the expression levels of thousands of genes or detects copy number variations."
+   ],
+   "forbidden": [
+    "chip",
+    "gene expression",
+    "spot",
+    "probe",
+    "hybridization"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Genetic Diagnosis and Mutation Detection",
+   "term": "Restriction fragment length polymorphism",
+   "clues": [
+    "Abbreviated RFLP, it arises when a mutation creates or abolishes a cleavage site or alters distance between sites.",
+    "The sickle cell mutation abolishes an MstII site in the beta-globin gene, producing a characteristic band shift.",
+    "This genetic variation produces DNA pieces of different sizes after digestion with a specific endonuclease."
+   ],
+   "forbidden": [
+    "RFLP",
+    "restriction",
+    "fragment",
+    "sickle",
+    "band"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Genetic Diagnosis and Mutation Detection",
+   "term": "Short tandem repeats",
+   "clues": [
+    "Also called microsatellites, they consist of two- to six-base-pair motifs repeated head-to-tail.",
+    "Because repeat numbers vary widely between unrelated individuals, multiplex PCR of twenty core loci forms the CODIS database.",
+    "Abbreviated STRs, these highly polymorphic DNA markers are the standard basis of forensic DNA fingerprinting and paternity testing."
+   ],
+   "forbidden": [
+    "STR",
+    "microsatellite",
+    "forensic",
+    "paternity",
+    "repeat"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Genetic Diagnosis and Mutation Detection",
+   "term": "Non-invasive prenatal testing",
+   "clues": [
+    "Abbreviated NIPT, it can be performed from a maternal venous blood draw starting around ten weeks of gestation.",
+    "It analyzes fragmented nucleic acids released by apoptosis of placental trophoblast cells.",
+    "This screening test uses high-throughput sequencing of cell-free fetal DNA in maternal plasma to detect trisomies 21, 18, and 13."
+   ],
+   "forbidden": [
+    "NIPT",
+    "fetal",
+    "trisomy",
+    "prenatal",
+    "plasma"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Next-Generation Sequencing and Genome Editing",
+   "term": "Sanger sequencing",
+   "clues": [
+    "Developed by Frederick Sanger in 1977, it was used to sequence the first human genome.",
+    "It incorporates 2',3'-dideoxynucleoside triphosphates lacking a 3'-hydroxyl group to halt DNA chain extension.",
+    "This chain-termination DNA sequencing method separates fluorescently labeled nested fragments by capillary electrophoresis."
+   ],
+   "forbidden": [
+    "dideoxy",
+    "ddNTP",
+    "chain termination",
+    "capillary",
+    "sequence"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Next-Generation Sequencing and Genome Editing",
+   "term": "CRISPR-Cas9",
+   "clues": [
+    "Originally discovered as an adaptive bacterial immune system against invading bacteriophages.",
+    "It requires a guide RNA complementary to the target sequence and an adjacent PAM site such as 5'-NGG-3'.",
+    "This programmable RNA-guided endonuclease system introduces site-specific double-strand DNA breaks for genome editing."
+   ],
+   "forbidden": [
+    "Cas9",
+    "guide RNA",
+    "PAM",
+    "genome editing",
+    "break"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Gene Therapy and Recombinant Therapeutics",
+   "term": "Adeno-associated virus",
+   "clues": [
+    "Abbreviated AAV, it is a small non-enveloped parvovirus that requires a helper virus for wild-type replication.",
+    "It has a packaging limit of roughly 4.7 kilobases and persists primarily as extrachromosomal episomes.",
+    "This non-pathogenic viral vector is widely used for in vivo gene therapy of non-dividing cells in retina, liver, and motor neurons."
+   ],
+   "forbidden": [
+    "AAV",
+    "vector",
+    "gene therapy",
+    "episome",
+    "virus"
+   ]
+  },
+  {
+   "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+   "sub": "Gene Therapy and Recombinant Therapeutics",
+   "term": "CAR-T cell therapy",
+   "clues": [
+    "It is an autologous ex vivo cellular immunotherapy that can trigger cytokine release syndrome as a major toxicity.",
+    "Patient T lymphocytes are engineered to express a synthetic receptor fusing an antibody scFv domain to CD3-zeta and 4-1BB or CD28.",
+    "This treatment reprograms a patient's own T cells to recognize and kill CD19-positive B-cell malignancies independently of MHC presentation."
+   ],
+   "forbidden": [
+    "CAR-T",
+    "CD19",
+    "chimeric",
+    "T cell",
+    "lymphoma"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "terms": [
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Agonist",
+   "clues": [
+    "Possesses both receptor affinity and positive intrinsic activity.",
+    "Stabilizes the active conformation of a receptor to trigger intracellular signaling.",
+    "A ligand that binds to a receptor and activates it to produce a biological response."
+   ],
+   "forbidden": [
+    "agonist",
+    "bind",
+    "receptor",
+    "activate",
+    "response"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Competitive antagonist",
+   "clues": [
+    "Shifts an agonist's log dose-response curve parallel to the right without lowering Emax.",
+    "Its blockade can be overcome by increasing the concentration of the agonist.",
+    "A drug that binds reversibly to the same receptor site as an agonist with zero intrinsic activity."
+   ],
+   "forbidden": [
+    "competitive",
+    "antagonist",
+    "agonist",
+    "receptor",
+    "right"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Partial agonist",
+   "clues": [
+    "Buprenorphine and pindolol are well-known clinical examples.",
+    "Has an intrinsic activity strictly between 0 and 1.",
+    "Binds to a receptor to produce a submaximal effect and can antagonize a full agonist."
+   ],
+   "forbidden": [
+    "partial",
+    "agonist",
+    "submaximal",
+    "full",
+    "efficacy"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Inverse agonist",
+   "clues": [
+    "Requires a receptor system that exhibits constitutive basal activity.",
+    "Beta-carbolines acting at GABA-A receptors are a classic example.",
+    "A ligand that stabilizes the inactive receptor state and lowers basal activity below baseline."
+   ],
+   "forbidden": [
+    "inverse",
+    "agonist",
+    "constitutive",
+    "basal",
+    "inactive"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Potency",
+   "clues": [
+    "Determined by the drug's affinity for its receptor and receptor reserve.",
+    "Measured by the EC50 or ED50 on a graded dose-response curve.",
+    "The amount or concentration of a drug required to produce an effect of a given magnitude."
+   ],
+   "forbidden": [
+    "potency",
+    "EC50",
+    "ED50",
+    "dose",
+    "concentration"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Efficacy",
+   "clues": [
+    "Represented by the plateau (Emax) on a graded dose-response curve.",
+    "Distinguishes a full agonist from a partial agonist regardless of dose.",
+    "The maximum biological response that a drug can elicit upon binding its receptor."
+   ],
+   "forbidden": [
+    "efficacy",
+    "Emax",
+    "maximum",
+    "maximal",
+    "intrinsic"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Therapeutic index",
+   "clues": [
+    "Drugs like digoxin, lithium, and warfarin have a very narrow value for this parameter.",
+    "Calculated as TD50 (or LD50) divided by ED50.",
+    "A quantitative ratio comparing the toxic dose of a drug to its effective dose as a measure of safety."
+   ],
+   "forbidden": [
+    "therapeutic",
+    "index",
+    "TD50",
+    "LD50",
+    "ED50"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Spare receptors",
+   "clues": [
+    "Occur when EC50 is substantially lower than the receptor dissociation constant Kd.",
+    "Explain why low doses of an irreversible antagonist initially shift the dose-response curve right before lowering Emax.",
+    "Receptor reserve in which a full maximal tissue response is achieved without occupying all available receptors."
+   ],
+   "forbidden": [
+    "spare",
+    "receptors",
+    "reserve",
+    "occupied",
+    "maximal"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Receptor Regulation",
+   "term": "Tachyphylaxis",
+   "clues": [
+    "Classically seen with repeated closely spaced doses of ephedrine or continuous nitroglycerin.",
+    "Occurs within minutes to hours rather than weeks.",
+    "Acute, rapid loss of responsiveness to a drug following repeated administration."
+   ],
+   "forbidden": [
+    "tachyphylaxis",
+    "rapid",
+    "tolerance",
+    "desensitization",
+    "acute"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Receptor Regulation",
+   "term": "Upregulation",
+   "clues": [
+    "Explains why abrupt withdrawal of propranolol can trigger rebound angina or hypertension.",
+    "Triggered by prolonged receptor blockade or chronic denervation.",
+    "An increase in the number of functional cell-surface receptors leading to supersensitivity."
+   ],
+   "forbidden": [
+    "upregulation",
+    "increase",
+    "receptors",
+    "number",
+    "supersensitivity"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Receptor Families and Signal Transduction",
+   "term": "G-protein-coupled receptor",
+   "clues": [
+    "Possesses seven transmembrane alpha-helical domains.",
+    "Includes beta-adrenoceptors, muscarinic receptors, and opioid receptors.",
+    "A metabotropic cell-surface receptor that signals through heterotrimeric GTP-binding proteins."
+   ],
+   "forbidden": [
+    "G-protein",
+    "coupled",
+    "receptor",
+    "seven",
+    "transmembrane"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Receptor Families and Signal Transduction",
+   "term": "Phospholipase C",
+   "clues": [
+    "Activated by Gq-coupled receptors such as alpha-1 adrenergic and M3 muscarinic receptors.",
+    "Cleaves membrane phosphatidylinositol 4,5-bisphosphate (PIP2).",
+    "The effector enzyme that generates the two second messengers IP3 and diacylglycerol."
+   ],
+   "forbidden": [
+    "phospholipase",
+    "PIP2",
+    "IP3",
+    "diacylglycerol",
+    "Gq"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Receptor Families and Signal Transduction",
+   "term": "Ligand-gated ion channel",
+   "clues": [
+    "Produces cellular responses within milliseconds.",
+    "Nicotinic acetylcholine and GABA-A receptors belong to this family.",
+    "An ionotropic receptor that directly opens a transmembrane pore for ions upon neurotransmitter binding."
+   ],
+   "forbidden": [
+    "ligand-gated",
+    "ion",
+    "channel",
+    "ionotropic",
+    "pore"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Enzymes, Ion Channels, and Transporters",
+   "term": "Suicide inhibitor",
+   "clues": [
+    "Allopurinol and clavulanic acid act by this mechanism.",
+    "Also known as mechanism-based enzyme inactivation.",
+    "A substrate analogue converted by the target enzyme itself into a reactive product that covalently inactivates it."
+   ],
+   "forbidden": [
+    "suicide",
+    "inhibitor",
+    "enzyme",
+    "covalent",
+    "mechanism-based"
+   ]
+  },
+  {
+   "topic": "pm-mechanisms-of-drug-action",
+   "sub": "Agonists, Antagonists, and Dose-Response Relationships",
+   "term": "Allosteric modulator",
+   "clues": [
+    "Benzodiazepines act in this manner at the GABA-A receptor.",
+    "Does not compete directly with the endogenous ligand for the primary binding pocket.",
+    "A substance that binds to a distinct regulatory site on a receptor to enhance or reduce agonist activity."
+   ],
+   "forbidden": [
+    "allosteric",
+    "modulator",
+    "site",
+    "orthosteric",
+    "receptor"
+   ]
+  }
+ ]
+}

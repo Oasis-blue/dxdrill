@@ -1,0 +1,327 @@
+{
+ "terms": [
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Classification of Adverse Drug Reactions",
+   "term": "Type A reaction",
+   "clues": [
+    "Represents the majority of adverse drug reactions in clinical practice.",
+    "Predictable from known pharmacology and dose-dependent.",
+    "An exaggerated or augmented extension of a drug's normal pharmacological action."
+   ],
+   "forbidden": [
+    "Type A",
+    "augmented",
+    "dose-dependent",
+    "predictable",
+    "pharmacology"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Classification of Adverse Drug Reactions",
+   "term": "Type B reaction",
+   "clues": [
+    "Unrelated to a drug's normal dose-response pharmacology.",
+    "Includes idiosyncratic drug responses and immune-mediated allergies.",
+    "An unpredictable, bizarre adverse drug reaction often requiring drug withdrawal."
+   ],
+   "forbidden": [
+    "Type B",
+    "bizarre",
+    "idiosyncratic",
+    "unpredictable",
+    "allergy"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "term": "G6PD deficiency",
+   "clues": [
+    "An X-linked enzymopathy affecting the pentose phosphate pathway in red blood cells.",
+    "Reduces NADPH needed to maintain reduced glutathione during oxidative stress.",
+    "Predisposes patients to acute haemolysis after taking primaquine, dapsone, or sulfonamides."
+   ],
+   "forbidden": [
+    "G6PD",
+    "glucose-6-phosphate",
+    "dehydrogenase",
+    "haemolysis",
+    "glutathione"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Idiosyncrasy and Pharmacogenetics",
+   "term": "Malignant hyperthermia",
+   "clues": [
+    "Triggered by succinylcholine or volatile anesthetics such as halothane.",
+    "Involves uncontrolled calcium release from skeletal muscle sarcoplasmic reticulum.",
+    "A hypermetabolic anesthetic emergency with rigidity and high fever treated with dantrolene."
+   ],
+   "forbidden": [
+    "malignant",
+    "hyperthermia",
+    "dantrolene",
+    "rigidity",
+    "calcium"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug-Induced Organ Toxicity",
+   "term": "Tardive dyskinesia",
+   "clues": [
+    "Develops after prolonged blockade of dopamine D2 receptors by antipsychotics.",
+    "Features involuntary movements of the tongue, lips, and jaw.",
+    "A late-onset hyperkinetic movement disorder often persistent after antipsychotic exposure."
+   ],
+   "forbidden": [
+    "tardive",
+    "dyskinesia",
+    "antipsychotic",
+    "tongue",
+    "movements"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug-Induced Organ Toxicity",
+   "term": "Neuroleptic malignant syndrome",
+   "clues": [
+    "Triggered by dopamine receptor antagonists such as haloperidol.",
+    "Marked by lead-pipe rigidity, hyperthermia, autonomic instability, and high creatine kinase.",
+    "A rare, life-threatening drug reaction to antipsychotics treated with drug stop, dantrolene, or bromocriptine."
+   ],
+   "forbidden": [
+    "neuroleptic",
+    "malignant",
+    "syndrome",
+    "rigidity",
+    "hyperthermia"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug-Induced Organ Toxicity",
+   "term": "Serotonin syndrome",
+   "clues": [
+    "Can occur when SSRIs are combined with MAO inhibitors or linezolid.",
+    "Causes agitation, autonomic hyperactivity, hyperreflexia, and clonus.",
+    "A toxic state of excess serotonergic activity in the central and peripheral nervous systems."
+   ],
+   "forbidden": [
+    "serotonin",
+    "syndrome",
+    "SSRI",
+    "clonus",
+    "hyperreflexia"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug-Induced Organ Toxicity",
+   "term": "Toxic epidermal necrolysis",
+   "clues": [
+    "Involves extensive epidermal detachment over more than 30% of body surface area.",
+    "Often affects mucous membranes and carries a positive Nikolsky sign.",
+    "A severe, life-threatening exfoliative drug reaction related to Stevens-Johnson syndrome."
+   ],
+   "forbidden": [
+    "toxic",
+    "epidermal",
+    "necrolysis",
+    "detachment",
+    "skin"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug Interactions",
+   "term": "Enzyme induction",
+   "clues": [
+    "Rifampicin, carbamazepine, phenytoin, and St John's wort are classic triggers.",
+    "Increases synthesis of metabolizing enzymes such as cytochrome P450.",
+    "Accelerates metabolism of co-administered drugs, lowering their plasma levels and efficacy."
+   ],
+   "forbidden": [
+    "enzyme",
+    "induction",
+    "rifampicin",
+    "metabolism",
+    "CYP"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug Dependence and Tolerance",
+   "term": "Drug tolerance",
+   "clues": [
+    "Develops over repeated doses of opioids, nitrates, or benzodiazepines.",
+    "Means the original dose produces a smaller response than it did initially.",
+    "Reduced responsiveness to a drug after repeated administration requiring a higher dose for the same effect."
+   ],
+   "forbidden": [
+    "tolerance",
+    "dose",
+    "repeated",
+    "response",
+    "higher"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug Dependence and Tolerance",
+   "term": "Cross-tolerance",
+   "clues": [
+    "Seen between morphine and heroin or between ethanol and benzodiazepines.",
+    "Occurs among agents acting on shared receptors or pathways.",
+    "Tolerance to one drug that reduces the effectiveness of another related drug."
+   ],
+   "forbidden": [
+    "cross-tolerance",
+    "tolerance",
+    "drug",
+    "another",
+    "same"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug Dependence and Tolerance",
+   "term": "Physical dependence",
+   "clues": [
+    "Results from neuroadaptation to chronic drug exposure.",
+    "Precipitated abruptly by giving naloxone to an opioid-dependent patient.",
+    "A physiological state in which stopping a drug or giving an antagonist triggers a withdrawal syndrome."
+   ],
+   "forbidden": [
+    "physical",
+    "dependence",
+    "withdrawal",
+    "abstinence",
+    "antagonist"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug Dependence and Tolerance",
+   "term": "Withdrawal syndrome",
+   "clues": [
+    "Includes lacrimation, rhinorrhoea, piloerection, and cramps in opioid cessation.",
+    "Can cause seizures and delirium tremens when severe after stopping alcohol or benzodiazepines.",
+    "Characteristic physical and psychological symptoms emerging when a dependent drug is stopped."
+   ],
+   "forbidden": [
+    "withdrawal",
+    "syndrome",
+    "stopping",
+    "symptoms",
+    "abstinence"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Antidotes and Poisoning Management",
+   "term": "Protamine sulfate",
+   "clues": [
+    "A positively charged protein that binds negatively charged anticoagulant molecules.",
+    "Reverses bleeding caused by unfractionated heparin.",
+    "The specific antidote used to neutralize heparin."
+   ],
+   "forbidden": [
+    "protamine",
+    "sulfate",
+    "heparin",
+    "antidote",
+    "anticoagulant"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Antidotes and Poisoning Management",
+   "term": "Pralidoxime",
+   "clues": [
+    "An oxime given alongside atropine in organophosphate poisoning.",
+    "Must be given before the inhibited enzyme undergoes irreversible aging.",
+    "Reactivates acetylcholinesterase inhibited by organophosphate insecticides."
+   ],
+   "forbidden": [
+    "pralidoxime",
+    "organophosphate",
+    "acetylcholinesterase",
+    "oxime",
+    "aging"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Antidotes and Poisoning Management",
+   "term": "Flumazenil",
+   "clues": [
+    "Can precipitate withdrawal or seizures in benzodiazepine-dependent patients.",
+    "Acts competitively at the benzodiazepine binding site on GABA-A receptors.",
+    "The specific antagonist used to reverse benzodiazepine sedation."
+   ],
+   "forbidden": [
+    "flumazenil",
+    "benzodiazepine",
+    "GABA",
+    "sedation",
+    "antagonist"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Antidotes and Poisoning Management",
+   "term": "Methylene blue",
+   "clues": [
+    "Helps convert oxidized ferric iron in haemoglobin back to the ferrous oxygen-carrying state.",
+    "Relies on NADPH and should be used with caution in G6PD deficiency.",
+    "The reducing antidote used to treat drug-induced methaemoglobinaemia."
+   ],
+   "forbidden": [
+    "methylene",
+    "blue",
+    "methaemoglobinaemia",
+    "iron",
+    "haemoglobin"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Antidotes and Poisoning Management",
+   "term": "Leucovorin",
+   "clues": [
+    "Also known as folinic acid.",
+    "Used as rescue therapy after high-dose methotrexate.",
+    "A reduced folate that bypasses dihydrofolate reductase inhibition to rescue normal cells."
+   ],
+   "forbidden": [
+    "leucovorin",
+    "folinic",
+    "methotrexate",
+    "folate",
+    "reductase"
+   ]
+  },
+  {
+   "topic": "pm-adverse-drug-reactions-interactions-and-dependen",
+   "sub": "Drug-Induced Organ Toxicity",
+   "term": "Heparin-induced thrombocytopenia",
+   "clues": [
+    "Involves antibodies against complexes of heparin and platelet factor 4.",
+    "Causes low platelets paradoxically accompanied by venous or arterial clots.",
+    "An immune-mediated complication of heparin therapy requiring stopping heparin and starting an alternative anticoagulant."
+   ],
+   "forbidden": [
+    "heparin",
+    "thrombocytopenia",
+    "platelet",
+    "thrombosis",
+    "HIT"
+   ]
+  }
+ ]
+}
