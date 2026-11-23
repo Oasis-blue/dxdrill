@@ -79,7 +79,7 @@
   function paint() {
     if (!app) return;
     var keep = document.getElementById("bs-code"), v = keep ? keep.value : "";
-    app.innerHTML = '<div class="bs">' + view() + '<button class="bs-fs" data-act="bsfs" aria-label="Full screen">\u26F6</button></div>';
+    app.innerHTML = '<div class="bs">' + view() + '<button class="bs-fs" data-act="bsfs" aria-label="Full screen">\u26F6</button><a class="bs-exit" href="#live">\u2715 Exit big screen</a></div>';
     var k2 = document.getElementById("bs-code"); if (k2) { k2.value = v; if (v) k2.focus(); }
     tick();
   }
