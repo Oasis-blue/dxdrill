@@ -75,13 +75,16 @@ window.DX = window.DX || {};
       var jobs = [];
       (man.questions || []).forEach(function (f) {
         jobs.push(getJSON("data/questions/" + f + ".json").then(function (d) {
-          var t = DX.topicById[d.topic];
-          if (!t) { console.warn("Unknown topic id in " + f + ": " + d.topic); return; }
+          /* One topic for the whole file ("topic"), or a "topic" on each question to mix topics in one file. A question's own topic wins. */
+          var fileT = DX.topicById[d.topic], bad = 0;
+          if (!fileT && !d.questions.some(function (q) { return DX.topicById[q.topic]; })) { console.warn("Unknown topic id in " + f + ": " + d.topic); return; }
           d.questions.forEach(function (q) {
-            q.topic = d.topic; q.area = t.area; q.subject = t.subject;
-            DX.questions.push(q);
+            var t = DX.topicById[q.topic] || fileT;
+            if (!t) { bad++; return; }
+            q.topic = t.id; q.area = t.area; q.subject = t.subject;
+            DX.questions.push(q); t.count++;
           });
-          t.count += d.questions.length;
+          if (bad) console.warn(bad + " question(s) in " + f + " have no known topic and were skipped");
         }).catch(function (e) { console.warn("Could not load question file", e.message); }));
       });
       (man.terms || []).forEach(function (f) {
