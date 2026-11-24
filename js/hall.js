@@ -55,7 +55,7 @@
   /* mode: 1 = always options, 0 = no options (open-answer questions only), 2 = mixed (options-only questions keep their options, the rest are a coin toss) */
   function wrapQ(q, mode) {
     var opts = mode === 1 || !q.open || (mode === 2 && Math.random() < 0.5);
-    return { q: q, opts: opts, order: DX.shuffle(q.options.map(function (_, i) { return i; })) };
+    return { q: q, opts: opts, order: DX.optOrder(q.options) };
   }
   function wrapper(mode) { return function (q) { return wrapQ(q, mode); }; }
   function subOf(q) { return q.sub || DX.topicById[q.topic].name; }
