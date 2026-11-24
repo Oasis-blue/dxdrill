@@ -199,7 +199,7 @@
   function parseItems(text) {
     var d = JSON.parse(text), arr = Array.isArray(d) ? d : (d && d.questions) || [], out = [], skipped = 0;
     arr.forEach(function (x) {
-      if (x && typeof x.q === "string" && Array.isArray(x.options) && x.options.length === 4 && typeof x.answer === "number" && x.id) out.push({ id: String(x.id), q: x.q, options: x.options.map(String), answer: x.answer, explain: x.explain || "" });
+      if (x && typeof x.q === "string" && Array.isArray(x.options) && x.options.length === 4 && typeof x.answer === "number" && x.id) { var ord = DX.optOrder(x.options.map(String)); out.push({ id: String(x.id), q: x.q, options: ord.map(function (i) { return String(x.options[i]); }), answer: ord.indexOf(x.answer), explain: x.explain || "" }); }
       else skipped++;
     });
     return { items: out, skipped: skipped };
