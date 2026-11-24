@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Static Lung Volumes and Capacities",
+   "term": "Vital capacity",
+   "clues": [
+    "It equals the sum of inspiratory reserve volume, tidal volume, and expiratory reserve volume (~4,600 mL)",
+    "Unlike total lung capacity, it can be measured directly with a simple spirometer",
+    "It is the maximum volume of air that can be exhaled after a maximal inspiration"
+   ],
+   "forbidden": [
+    "VC",
+    "FVC",
+    "residual",
+    "capacity",
+    "maximal"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Static Lung Volumes and Capacities",
+   "term": "Residual volume",
+   "clues": [
+    "It averages ~1,200 mL in healthy adult males and increases markedly during air trapping in COPD",
+    "It cannot be measured by simple spirometry and requires gas dilution or body plethysmography",
+    "It is the volume of air remaining in the lungs after a maximal forced expiration"
+   ],
+   "forbidden": [
+    "RV",
+    "1200",
+    "spirometry",
+    "remaining",
+    "expiration"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Measurement of RV, FRC, and TLC",
+   "term": "Helium dilution",
+   "clues": [
+    "It uses an insoluble inert tracer gas in a closed-circuit spirometer to compute unknown lung volume via C1V1 = C2V2",
+    "In bullous emphysema, it underestimates true lung volume because it only measures communicating airspaces",
+    "It is a classic gas-equilibration technique used to measure functional residual capacity"
+   ],
+   "forbidden": [
+    "helium",
+    "tracer",
+    "plethysmography",
+    "FRC",
+    "dilution"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Measurement of RV, FRC, and TLC",
+   "term": "Body plethysmography",
+   "clues": [
+    "The patient sits inside an airtight chamber and pants against a closed shutter",
+    "It applies Boyle's law (P1V1 = P2V2) to measure total compressible thoracic gas volume",
+    "Unlike helium dilution, it includes non-communicating trapped bullous gas in emphysema"
+   ],
+   "forbidden": [
+    "Boyle",
+    "chamber",
+    "box",
+    "plethysmograph",
+    "shutter"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
+   "term": "FEV1/FVC ratio",
+   "clues": [
+    "In healthy young adults, this index is normally 75 to 80 percent",
+    "It falls below 70 percent in obstructive diseases like asthma and COPD",
+    "It stays normal or rises above 80 percent in restrictive lung diseases"
+   ],
+   "forbidden": [
+    "ratio",
+    "FEV1",
+    "FVC",
+    "obstructive",
+    "restrictive"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
+   "term": "FEF25-75%",
+   "clues": [
+    "Also called maximal mid-expiratory flow rate, it is largely independent of patient effort",
+    "It is measured over the middle half of the forced vital capacity curve",
+    "It serves as a sensitive early marker of peripheral small-airway (<2 mm) obstruction"
+   ],
+   "forbidden": [
+    "mid-expiratory",
+    "middle",
+    "small",
+    "25",
+    "75"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Peak Expiratory Flow Rate and Maximal Voluntary Ventilation",
+   "term": "Peak expiratory flow rate",
+   "clues": [
+    "It reaches ~500 to 700 L/min in healthy young adult males and is highly effort-dependent",
+    "It occurs near total lung capacity before dynamic airway compression begins",
+    "Patients with asthma measure it daily at home using a handheld meter to track green, yellow, and red zones"
+   ],
+   "forbidden": [
+    "PEFR",
+    "peak",
+    "asthma",
+    "zone",
+    "meter"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Peak Expiratory Flow Rate and Maximal Voluntary Ventilation",
+   "term": "Maximal voluntary ventilation",
+   "clues": [
+    "It is measured by breathing as rapidly and deeply as possible for 12 to 15 seconds and extrapolating to 1 minute",
+    "Its normal adult male value (~125-170 L/min) approximates 35 to 40 times FEV1",
+    "Comparing it against maximal exercise minute ventilation determines a person's breathing reserve"
+   ],
+   "forbidden": [
+    "MVV",
+    "12",
+    "15",
+    "reserve",
+    "voluntary"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Flow-Volume Loops and Airway Obstruction Patterns",
+   "term": "Flow-volume loop",
+   "clues": [
+    "It plots instantaneous airflow on the vertical axis against lung volume on the horizontal axis during maximal expiration and inspiration",
+    "In COPD, its descending expiratory curve shows a characteristic concave 'scooped-out' shape",
+    "Flattening of its inspiratory, expiratory, or both limbs diagnoses variable versus fixed upper airway obstruction"
+   ],
+   "forbidden": [
+    "loop",
+    "scooped",
+    "flattening",
+    "axis",
+    "curve"
+   ]
+  },
+  {
+   "topic": "pr-pulmonary-function-tests",
+   "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
+   "term": "Air trapping",
+   "clues": [
+    "It occurs when premature small-airway closure prevents complete alveolar emptying during expiration",
+    "It is quantified on PFTs by an elevated residual volume (>120% predicted) and increased RV/TLC ratio",
+    "It leads to hyperinflation in severe asthma and emphysema"
+   ],
+   "forbidden": [
+    "trap",
+    "residual",
+    "RV/TLC",
+    "emptying",
+    "hyperinflation"
+   ]
+  }
+ ]
+}

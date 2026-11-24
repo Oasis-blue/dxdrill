@@ -1,0 +1,157 @@
+{
+ "terms": [
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Presynaptic Exocytosis and SNARE Machinery",
+   "term": "SNARE complex",
+   "clues": [
+    "It consists of vesicular synaptobrevin (VAMP) and target-membrane syntaxin and SNAP-25",
+    "Botulinum and tetanus neurotoxins act as zinc endoproteases that cleave its constituent proteins",
+    "This four-helix protein bundle zippers together upon calcium-synaptotagmin binding to drive synaptic vesicle membrane fusion"
+   ],
+   "forbidden": [
+    "vesicle",
+    "fusion",
+    "botulinum",
+    "tetanus",
+    "synaptobrevin"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Presynaptic Exocytosis and SNARE Machinery",
+   "term": "Synaptotagmin",
+   "clues": [
+    "It is embedded in the synaptic vesicle membrane and contains two C2 domains",
+    "Upon action potential arrival at the bouton, it binds incoming divalent cations to displace complexin",
+    "It serves as the primary fast calcium sensor triggering synchronous neurotransmitter exocytosis"
+   ],
+   "forbidden": [
+    "calcium",
+    "sensor",
+    "SNARE",
+    "exocytosis",
+    "vesicle"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Neuromuscular Junction Physiology",
+   "term": "End-plate potential",
+   "clues": [
+    "In healthy skeletal muscle, it depolarizes the junctional sarcolemma by ~50 to 70 mV, providing a large safety factor",
+    "It represents the summation of roughly 100 to 200 simultaneous miniature quanta",
+    "It is the local graded depolarization produced when acetylcholine opens nicotinic cation channels at the neuromuscular junction"
+   ],
+   "forbidden": [
+    "EPP",
+    "acetylcholine",
+    "nicotinic",
+    "depolarization",
+    "junction"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Postsynaptic Potentials and Synaptic Integration",
+   "term": "Spatial summation",
+   "clues": [
+    "Its effectiveness depends strongly on the membrane length constant (lambda)",
+    "It contrasts with additive potentials arriving sequentially at a single synapse over time",
+    "It is the simultaneous algebraic addition of EPSPs and IPSPs arriving from multiple synapses across the dendritic tree and soma"
+   ],
+   "forbidden": [
+    "temporal",
+    "simultaneous",
+    "multiple",
+    "summation",
+    "synapse"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Presynaptic Inhibition and Facilitation",
+   "term": "Presynaptic inhibition",
+   "clues": [
+    "It typically occurs at axoaxonic synapses using GABA to reduce incoming spike amplitude",
+    "It selectively dampens output from one afferent pathway without hyperpolarizing the postsynaptic neuron",
+    "It decreases neurotransmitter exocytosis by reducing voltage-gated calcium influx into a specific axon terminal"
+   ],
+   "forbidden": [
+    "axoaxonic",
+    "calcium",
+    "presynaptic",
+    "inhibition",
+    "terminal"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Major Central Nervous System Neurotransmitters",
+   "term": "NMDA receptor",
+   "clues": [
+    "At resting membrane potential (-70 mV), its pore is blocked by an extracellular magnesium ion",
+    "Opening requires both glutamate (plus glycine/D-serine) binding and postsynaptic depolarization",
+    "This ionotropic glutamate channel admits calcium to activate CaMKII and trigger long-term potentiation"
+   ],
+   "forbidden": [
+    "glutamate",
+    "magnesium",
+    "LTP",
+    "coincidence",
+    "receptor"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Neuropeptides, Unconventional Transmitters, and Plasticity",
+   "term": "Long-term potentiation",
+   "clues": [
+    "It is extensively studied in CA1 pyramidal neurons of the hippocampus as a cellular model of memory",
+    "Early phases depend on CaMKII-driven insertion of additional AMPA receptors into the postsynaptic membrane",
+    "It is a persistent, activity-dependent strengthening of synaptic transmission following high-frequency stimulation"
+   ],
+   "forbidden": [
+    "LTP",
+    "AMPA",
+    "NMDA",
+    "memory",
+    "strengthening"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Spinal Inhibitory Circuits (Renshaw and Reciprocal)",
+   "term": "Renshaw cell",
+   "clues": [
+    "It is excited by acetylcholine released from recurrent axon collaterals of alpha motor neurons",
+    "Tetanus toxin blocks its inhibitory output, contributing to severe spastic paralysis",
+    "This spinal glycinergic interneuron mediates negative-feedback recurrent inhibition of alpha motor neurons"
+   ],
+   "forbidden": [
+    "glycine",
+    "recurrent",
+    "motor",
+    "interneuron",
+    "spinal"
+   ]
+  },
+  {
+   "topic": "pl-synapses-and-neurotransmitters",
+   "sub": "Neuropeptides, Unconventional Transmitters, and Plasticity",
+   "term": "Endocannabinoids",
+   "clues": [
+    "Anandamide and 2-arachidonoylglycerol (2-AG) are the two principal endogenous examples",
+    "They are lipid-derived molecules synthesized on demand in the postsynaptic neuron upon calcium elevation",
+    "They diffuse backward across the synaptic cleft as retrograde messengers to inhibit presynaptic neurotransmitter release via CB1 receptors"
+   ],
+   "forbidden": [
+    "retrograde",
+    "anandamide",
+    "CB1",
+    "cannabinoid",
+    "backward"
+   ]
+  }
+ ]
+}

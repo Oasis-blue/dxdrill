@@ -1,0 +1,174 @@
+{
+ "terms": [
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Brainstem Respiratory Centers and Rhythmogenesis",
+   "term": "Pre-Botzinger complex",
+   "clues": [
+    "Located in the rostral ventrolateral medulla, it contains intrinsic pacemaker neurons",
+    "Opioids bind mu-receptors here to depress breathing frequency",
+    "It functions as the primary rhythm generator for automatic inspiration"
+   ],
+   "forbidden": [
+    "pacemaker",
+    "rhythm",
+    "medulla",
+    "Botzinger",
+    "generator"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Brainstem Respiratory Centers and Rhythmogenesis",
+   "term": "Pneumotaxic center",
+   "clues": [
+    "Located in the upper pons (parabrachial / Kolliker-Fuse nucleus), it inhibits the apneustic center",
+    "Strong stimulation shortens inspiratory duration, reduces tidal volume, and increases respiratory rate",
+    "It regulates the switch-off point of the medullary inspiratory ramp signal"
+   ],
+   "forbidden": [
+    "pons",
+    "apneustic",
+    "switch-off",
+    "pneumotaxic",
+    "inspiratory"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Brainstem Respiratory Centers and Rhythmogenesis",
+   "term": "Apneustic center",
+   "clues": [
+    "Located in the lower pons, it sends tonic excitatory drive to medullary inspiratory neurons",
+    "Interruption of both the upper pontine center and the vagus nerves leaves it uninhibited",
+    "Unopposed activity produces prolonged inspiratory spasms interrupted by brief expiratory gasps"
+   ],
+   "forbidden": [
+    "apneusis",
+    "prolong",
+    "lower",
+    "pons",
+    "apneustic"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Central and Peripheral Chemoreceptors",
+   "term": "Central chemoreceptors",
+   "clues": [
+    "Located near the ventral surface of the medulla, they sense hydrogen ions in cerebrospinal fluid",
+    "Because CO2 crosses the blood-brain barrier freely while H+ does not, they respond rapidly to arterial hypercapnia",
+    "They account for roughly 70 to 80 percent of the steady-state ventilatory response to CO2"
+   ],
+   "forbidden": [
+    "CSF",
+    "medulla",
+    "blood-brain",
+    "central",
+    "chemoreceptor"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Central and Peripheral Chemoreceptors",
+   "term": "Carotid bodies",
+   "clues": [
+    "Situated at the bifurcation of the common carotid arteries, they signal via the glossopharyngeal nerve (CN IX)",
+    "Hypoxia closes O2-sensitive K+ channels in their Type I glomus cells, triggering depolarization and Ca2+ influx",
+    "They are the sole chemoreceptors in humans mediating the ventilatory response to arterial hypoxemia"
+   ],
+   "forbidden": [
+    "glomus",
+    "bifurcation",
+    "glossopharyngeal",
+    "carotid",
+    "body"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Pulmonary and Airway Reflexes (Hering-Breuer, J-Receptors, Irritant)",
+   "term": "Hering-Breuer inflation reflex",
+   "clues": [
+    "Slowly adapting smooth muscle stretch receptors send signals via myelinated vagal afferents",
+    "In adults it activates at tidal volumes above ~1 to 1.5 liters to prevent lung overdistension",
+    "It inhibits medullary inspiratory neurons upon marked pulmonary expansion"
+   ],
+   "forbidden": [
+    "stretch",
+    "overdistension",
+    "inflation",
+    "Hering",
+    "Breuer"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Pulmonary and Airway Reflexes (Hering-Breuer, J-Receptors, Irritant)",
+   "term": "J-receptors",
+   "clues": [
+    "Located in alveolar walls adjacent to pulmonary capillaries, they signal via unmyelinated vagal C-fibers",
+    "Pulmonary capillary congestion, interstitial edema, and pulmonary embolism stimulate them",
+    "Their activation produces rapid, shallow breathing (tachypnea) and the sensation of dyspnea"
+   ],
+   "forbidden": [
+    "juxtapulmonary",
+    "C-fibers",
+    "edema",
+    "tachypnea",
+    "J-receptor"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Abnormal Breathing Patterns",
+   "term": "Kussmaul respiration",
+   "clues": [
+    "It is classically seen in severe metabolic acidosis such as diabetic ketoacidosis",
+    "Peripheral carotid body chemoreceptors initiate it in response to falling arterial pH",
+    "It manifests as deep, rapid, labored hyperventilation aimed at blowing off CO2"
+   ],
+   "forbidden": [
+    "ketoacidosis",
+    "acidosis",
+    "deep",
+    "Kussmaul",
+    "hunger"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Abnormal Breathing Patterns",
+   "term": "Cheyne-Stokes respiration",
+   "clues": [
+    "In severe congestive heart failure, prolonged lung-to-brain circulation delay precipitates this pattern",
+    "It also occurs during sleep at high altitude and after bilateral cerebral hemispheric injury",
+    "It consists of smooth crescendo-decrescendo cycles of tidal volume separated by regular central apneas"
+   ],
+   "forbidden": [
+    "crescendo",
+    "decrescendo",
+    "periodic",
+    "Cheyne",
+    "Stokes"
+   ]
+  },
+  {
+   "topic": "pr-control-of-respiration",
+   "sub": "Clinical Correlations",
+   "term": "Ondine's curse",
+   "clues": [
+    "Congenital cases are commonly linked to mutations in the PHOX2B transcription factor gene",
+    "Voluntary corticospinal breathing remains intact during wakefulness, while automatic metabolic drive fails",
+    "Patients develop severe hypoventilation and life-threatening central apnea as soon as they fall asleep"
+   ],
+   "forbidden": [
+    "sleep",
+    "PHOX2B",
+    "automatic",
+    "Ondine",
+    "curse"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "terms": [
+  {
+   "topic": "phys-muscle",
+   "sub": "Molecular Architecture of Myofilaments",
+   "term": "Nebulin",
+   "clues": [
+    "It is an inelastic giant sarcomeric protein anchored at the Z-disc",
+    "It acts as a molecular ruler specifying the exact length of thin actin filaments",
+    "Unlike titin, which associates with myosin, this protein runs along the entire length of F-actin"
+   ],
+   "forbidden": [
+    "actin",
+    "thin",
+    "ruler",
+    "titin",
+    "filament"
+   ]
+  },
+  {
+   "topic": "phys-muscle",
+   "sub": "Excitation-Contraction Coupling Across Muscle Types",
+   "term": "Calcium-induced calcium release",
+   "clues": [
+    "It explains why cardiac muscle contraction fails immediately in calcium-free extracellular solution",
+    "Small amounts of Ca2+ entering through L-type Cav1.2 channels bind and open RyR2 channels on the sarcoplasmic reticulum",
+    "This amplification mechanism couples cardiac action potential Phase 2 depolarization to myocardial contraction"
+   ],
+   "forbidden": [
+    "CICR",
+    "cardiac",
+    "RyR2",
+    "L-type",
+    "sarcoplasmic"
+   ]
+  },
+  {
+   "topic": "phys-muscle",
+   "sub": "Muscle Mechanics: Length-Tension and Force-Velocity",
+   "term": "Frank-Starling mechanism",
+   "clues": [
+    "It relies on length-dependent activation and increased troponin C sensitivity to Ca2+ as sarcomeres stretch toward 2.2 um",
+    "It intrinsic-autoregulates stroke volume to match venous return without requiring extrinsic nerves",
+    "It states that the force of ventricular contraction increases proportionally to end-diastolic muscle fiber stretch"
+   ],
+   "forbidden": [
+    "Starling",
+    "preload",
+    "stretch",
+    "stroke",
+    "volume"
+   ]
+  },
+  {
+   "topic": "phys-muscle",
+   "sub": "Muscle Mechanics: Length-Tension and Force-Velocity",
+   "term": "Fenn effect",
+   "clues": [
+    "It reflects accelerated myosin ATPase turnover during cross-bridge shortening",
+    "It demonstrates that muscle energy liberation is not fixed but scales with mechanical load",
+    "It states that a muscle performing external work liberates more total energy (heat plus work) than an isometric contraction"
+   ],
+   "forbidden": [
+    "work",
+    "heat",
+    "energy",
+    "isometric",
+    "ATPase"
+   ]
+  },
+  {
+   "topic": "phys-muscle",
+   "sub": "Smooth Muscle Regulation and Tone",
+   "term": "Myogenic response",
+   "clues": [
+    "Also known as the Bayliss effect, it operates independently of autonomic nerves and endothelium",
+    "Stretch-activated cation channels depolarize vascular smooth muscle and open L-type Ca2+ channels",
+    "It causes resistance arterioles to constrict intrinsically when transmural blood pressure rises"
+   ],
+   "forbidden": [
+    "Bayliss",
+    "arteriole",
+    "stretch",
+    "autoregulation",
+    "pressure"
+   ]
+  },
+  {
+   "topic": "phys-muscle",
+   "sub": "Clinical Correlations",
+   "term": "Rhabdomyolysis",
+   "clues": [
+    "Crush injury, statin toxicity, or extreme exertion triggers sarcolemmal breakdown and serum CK surges",
+    "Massive release of intracellular potassium can provoke fatal cardiac arrhythmias",
+    "Necrosis of skeletal muscle releases nephrotoxic myoglobin into the blood, causing dark brown urine and acute kidney injury"
+   ],
+   "forbidden": [
+    "myoglobin",
+    "crush",
+    "necrosis",
+    "kidney",
+    "creatine"
+   ]
+  },
+  {
+   "topic": "phys-muscle",
+   "sub": "Clinical Correlations",
+   "term": "Myotonia",
+   "clues": [
+    "It is classically demonstrated when a patient cannot promptly release their grip after shaking hands",
+    "Loss of resting ClC-1 chloride conductance or impaired Nav1.4 inactivation underlies this phenomenon",
+    "It is delayed relaxation of skeletal muscle after voluntary contraction due to repetitive sarcolemmal after-discharges"
+   ],
+   "forbidden": [
+    "relaxation",
+    "grip",
+    "chloride",
+    "delayed",
+    "contraction"
+   ]
+  }
+ ]
+}

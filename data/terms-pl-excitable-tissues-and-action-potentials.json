@@ -1,0 +1,259 @@
+{
+ "terms": [
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Resting Membrane Potential and Ionic Basis",
+   "term": "Resting membrane potential",
+   "clues": [
+    "In large mammalian nerve fibers, it typically measures between -70 and -90 millivolts",
+    "It is governed primarily by background leak potassium channels and maintained long-term by the Na+/K+-ATPase pump",
+    "It is the steady electrical voltage difference across the plasma membrane of an unstimulated excitable cell"
+   ],
+   "forbidden": [
+    "resting",
+    "voltage",
+    "-70",
+    "leak",
+    "membrane"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Resting Membrane Potential and Ionic Basis",
+   "term": "Nernst equation",
+   "clues": [
+    "At 37 degrees Celsius, it uses the constant 61.5 divided by ion valence times the base-10 logarithm of the concentration ratio",
+    "Unlike the Goldman-Hodgkin-Katz formula, it considers only one permeant ion species at a time",
+    "It calculates the exact equilibrium electrical potential that balances a single ion's chemical concentration gradient"
+   ],
+   "forbidden": [
+    "equilibrium",
+    "equation",
+    "single",
+    "logarithm",
+    "Goldman"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Resting Membrane Potential and Ionic Basis",
+   "term": "Goldman-Hodgkin-Katz equation",
+   "clues": [
+    "It weights each monovalent ion's concentration gradient by its relative membrane permeability",
+    "Potassium dominates its output at rest because PK is roughly 50 to 100 times larger than PNa",
+    "It calculates the actual membrane potential when Na+, K+, and Cl- are simultaneously permeant"
+   ],
+   "forbidden": [
+    "permeability",
+    "Nernst",
+    "equation",
+    "multiple",
+    "potassium"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Graded Potentials vs Action Potentials",
+   "term": "All-or-none law",
+   "clues": [
+    "Graded receptor and synaptic potentials do not obey this rule",
+    "It explains why stimulus intensity must be encoded by firing frequency rather than spike height",
+    "Once depolarization reaches threshold, a full-amplitude stereotyped action potential fires regardless of further stimulus strength"
+   ],
+   "forbidden": [
+    "amplitude",
+    "threshold",
+    "graded",
+    "spike",
+    "intensity"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Graded Potentials vs Action Potentials",
+   "term": "Threshold potential",
+   "clues": [
+    "In most mammalian neurons, it sits around -55 millivolts",
+    "Hypocalcemia shifts it closer to resting membrane potential, causing tetany",
+    "It is the critical membrane voltage where inward Na+ influx exceeds outward K+ efflux to trigger a regenerative spike"
+   ],
+   "forbidden": [
+    "-55",
+    "critical",
+    "voltage",
+    "depolarization",
+    "trigger"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Refractory Periods and Accommodation",
+   "term": "Absolute refractory period",
+   "clues": [
+    "It prevents retrograde backward propagation and sets the maximum firing frequency of an axon",
+    "In ventricular cardiac muscle, the Phase 2 plateau prolongs it to ~200 milliseconds to prevent tetanus",
+    "During this window, no stimulus of any strength can elicit a second action potential because voltage-gated Na+ channels are inactivated"
+   ],
+   "forbidden": [
+    "inactivated",
+    "second",
+    "stimulus",
+    "refractory",
+    "frequency"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Refractory Periods and Accommodation",
+   "term": "Relative refractory period",
+   "clues": [
+    "It coincides largely with late repolarization and the after-hyperpolarization undershoot",
+    "A second action potential triggered during this phase has a smaller peak amplitude",
+    "During this period, only a suprathreshold stimulus can evoke another spike because some Na+ channels have recovered while K+ conductance remains high"
+   ],
+   "forbidden": [
+    "suprathreshold",
+    "undershoot",
+    "recovered",
+    "refractory",
+    "stronger"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Refractory Periods and Accommodation",
+   "term": "Accommodation",
+   "clues": [
+    "It occurs when a depolarizing current rises very slowly rather than abruptly",
+    "Voltage-gated Na+ inactivation (h) gates close and K+ channels open gradually before threshold firing can occur",
+    "This phenomenon explains why a slow ramp stimulus fails to trigger an action potential even after passing normal threshold voltage"
+   ],
+   "forbidden": [
+    "slow",
+    "ramp",
+    "inactivation",
+    "threshold",
+    "stimulus"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Action Potential Propagation and Cable Properties",
+   "term": "Axon hillock",
+   "clues": [
+    "It is also referred to as the initial segment of the axon",
+    "Summated EPSPs and IPSPs from the soma and dendrites converge here",
+    "It serves as the spike trigger zone of a neuron because it has the highest density of voltage-gated Na+ channels"
+   ],
+   "forbidden": [
+    "initial",
+    "segment",
+    "trigger",
+    "soma",
+    "density"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Action Potential Propagation and Cable Properties",
+   "term": "Length constant",
+   "clues": [
+    "It equals the square root of transverse membrane resistance divided by internal axial resistance",
+    "Both myelination and larger axon diameter increase this cable parameter",
+    "It is the distance over which a passive electrotonic potential decays to 37 percent (1/e) of its original amplitude"
+   ],
+   "forbidden": [
+    "space",
+    "37",
+    "resistance",
+    "distance",
+    "decay"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Myelination and Saltatory Conduction",
+   "term": "Saltatory conduction",
+   "clues": [
+    "Its name comes from the Latin word meaning 'to leap' or 'to jump'",
+    "It conserves metabolic ATP energy by restricting transmembrane Na+ and K+ fluxes to unmyelinated gaps",
+    "Action potentials jump rapidly from one node of Ranvier to the next along myelinated axons"
+   ],
+   "forbidden": [
+    "jump",
+    "Ranvier",
+    "myelin",
+    "node",
+    "conduction"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Graded Potentials vs Action Potentials",
+   "term": "Chronaxie",
+   "clues": [
+    "It is shorter in large fast myelinated axons and markedly prolonged in denervated muscle",
+    "It is measured directly from an excitable tissue's strength-duration curve",
+    "It is the minimum stimulus duration needed to excite a tissue using a current of twice rheobase strength"
+   ],
+   "forbidden": [
+    "rheobase",
+    "duration",
+    "twice",
+    "strength",
+    "curve"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Voltage-Gated Ion Channels and Action Potential Phases",
+   "term": "Tetrodotoxin",
+   "clues": [
+    "It is a potent marine neurotoxin found in pufferfish (fugu) ovaries and liver",
+    "Unlike local anesthetics, it binds the outer pore mouth of the channel rather than the intracellular gate",
+    "It selectively blocks fast voltage-gated Na+ channels, abolishing Phase 0 depolarization in nerves and skeletal muscle"
+   ],
+   "forbidden": [
+    "pufferfish",
+    "TTX",
+    "sodium",
+    "block",
+    "toxin"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Motor Units, Summation, and Muscle Fiber Types",
+   "term": "Henneman's size principle",
+   "clues": [
+    "It relies on Ohm's law because smaller neuron cell bodies have higher input resistance",
+    "It ensures that fatigue-resistant slow oxidative fibers are activated first during gentle movements",
+    "It states that alpha motor neurons are recruited in orderly progression from smallest to largest as force demand rises"
+   ],
+   "forbidden": [
+    "recruit",
+    "smallest",
+    "largest",
+    "motor",
+    "order"
+   ]
+  },
+  {
+   "topic": "pl-excitable-tissues-and-action-potentials",
+   "sub": "Smooth Muscle Physiology",
+   "term": "Latch-bridge mechanism",
+   "clues": [
+    "It allows vascular arterioles and tonic sphincters to maintain pressure for hours without fatigue",
+    "It occurs when myosin light-chain phosphatase dephosphorylates myosin heads while they remain attached to actin",
+    "This smooth muscle state sustains tonic contractile tension with extremely low ATP consumption"
+   ],
+   "forbidden": [
+    "ATP",
+    "dephosphorylated",
+    "tonic",
+    "smooth",
+    "cross-bridge"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "terms": [
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Classification of Hypoxia (Barcroft's Four Types)",
+   "term": "Hypoxic hypoxia",
+   "clues": [
+    "It is the only one of Barcroft's four hypoxia categories characterized by a low arterial PaO2",
+    "Common causes include high altitude, hypoventilation, V/Q mismatch, and right-to-left shunts",
+    "It occurs when inadequate pulmonary gas exchange fails to oxygenate arterial blood normally"
+   ],
+   "forbidden": [
+    "PaO2",
+    "anemic",
+    "stagnant",
+    "histotoxic",
+    "hypoxic"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Classification of Hypoxia (Barcroft's Four Types)",
+   "term": "Histotoxic hypoxia",
+   "clues": [
+    "Cyanide poisoning is the classic lethal cause of this condition",
+    "Venous blood returns bright red with an abnormally narrowed arteriovenous oxygen difference",
+    "Arterial PO2 and blood flow are normal, but poisoned mitochondrial cytochrome oxidase cannot use oxygen"
+   ],
+   "forbidden": [
+    "cyanide",
+    "cytochrome",
+    "mitochondria",
+    "utilize",
+    "histotoxic"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Classification of Hypoxia (Barcroft's Four Types)",
+   "term": "Stagnant hypoxia",
+   "clues": [
+    "It widens the arteriovenous oxygen content difference because slow blood transit maximizes tissue extraction",
+    "Cardiogenic shock, severe heart failure, and acute arterial embolism are typical causes",
+    "Also called ischemic hypoxia, it occurs when tissue perfusion is inadequate despite normal arterial PaO2"
+   ],
+   "forbidden": [
+    "ischemic",
+    "perfusion",
+    "flow",
+    "shock",
+    "stagnant"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Oxygen Toxicity (Paul Bert and Lorrain Smith Effects)",
+   "term": "Paul Bert effect",
+   "clues": [
+    "It occurs during acute exposure to hyperbaric oxygen above 2 atmospheres absolute",
+    "SCUBA divers breathing nitrox too deep risk this complication underwater",
+    "It represents central nervous system oxygen toxicity manifesting with visual auras, twitching, and seizures"
+   ],
+   "forbidden": [
+    "seizure",
+    "CNS",
+    "Lorrain",
+    "hyperbaric",
+    "Bert"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Oxygen Toxicity (Paul Bert and Lorrain Smith Effects)",
+   "term": "Lorrain Smith effect",
+   "clues": [
+    "It develops after prolonged normobaric ventilation with FiO2 greater than 0.60 for over 24 to 48 hours",
+    "Reactive oxygen species injure alveolar epithelium and inactivate pulmonary surfactant",
+    "It represents pulmonary oxygen toxicity causing tracheobronchitis, atelectasis, and ARDS-like edema"
+   ],
+   "forbidden": [
+    "pulmonary",
+    "Paul",
+    "Bert",
+    "surfactant",
+    "Smith"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Cyanosis and Oxygen Therapy",
+   "term": "Absorption atelectasis",
+   "clues": [
+    "Breathing 100% oxygen washes out poorly soluble nitrogen that normally stents alveoli open",
+    "Behind mucus-plugged or poorly ventilated airways, rapid O2 uptake into capillaries collapses the alveolus",
+    "It is a common complication of prolonged high-FiO2 mechanical ventilation"
+   ],
+   "forbidden": [
+    "nitrogen",
+    "collapse",
+    "atelectasis",
+    "stent",
+    "100%"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "High-Altitude Illnesses (AMS, HAPE, HACE, Chronic Mountain Sickness)",
+   "term": "High-altitude pulmonary edema",
+   "clues": [
+    "Exaggerated, uneven hypoxic pulmonary vasoconstriction causes capillary stress failure and protein-rich alveolar fluid",
+    "Patients develop severe exertional then resting dyspnea, crackles, and pink frothy sputum above 2,500 meters",
+    "Immediate descent, supplemental oxygen, and nifedipine are the mainstays of treatment"
+   ],
+   "forbidden": [
+    "HAPE",
+    "HACE",
+    "descent",
+    "edema",
+    "frothy"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "High-Altitude Illnesses (AMS, HAPE, HACE, Chronic Mountain Sickness)",
+   "term": "High-altitude cerebral edema",
+   "clues": [
+    "Truncal ataxia and altered mental status mark its progression from acute mountain sickness",
+    "Hypoxic cerebral vasodilation and blood-brain barrier disruption produce vasogenic brain swelling",
+    "It is treated emergently with descent, oxygen, and dexamethasone"
+   ],
+   "forbidden": [
+    "HACE",
+    "HAPE",
+    "ataxia",
+    "brain",
+    "cerebral"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "High-Altitude Illnesses (AMS, HAPE, HACE, Chronic Mountain Sickness)",
+   "term": "Monge's disease",
+   "clues": [
+    "Also called chronic mountain sickness, it affects long-term high-altitude residents",
+    "Blunted hypoxic ventilatory drive triggers excessive polycythemia, blood hyperviscosity, and cor pulmonale",
+    "Descent to sea level provides definitive cure"
+   ],
+   "forbidden": [
+    "chronic",
+    "mountain",
+    "polycythemia",
+    "Monge",
+    "Andes"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Deep-Sea Diving and Hyperbaric Physiology",
+   "term": "Nitrogen narcosis",
+   "clues": [
+    "Often called 'rapture of the deep,' it appears during air dives deeper than ~30 meters (4 ATA)",
+    "High lipid solubility of dissolved N2 in neuronal membranes mimics alcohol intoxication",
+    "Substituting helium ('heliox') for nitrogen prevents this hazard in deep commercial diving"
+   ],
+   "forbidden": [
+    "rapture",
+    "heliox",
+    "alcohol",
+    "nitrogen",
+    "narcosis"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Decompression Sickness (Caisson Disease / The Bends)",
+   "term": "Decompression sickness",
+   "clues": [
+    "Also known as 'the bends' or Caisson disease, it follows rapid ascent from a deep dive",
+    "Supersaturated nitrogen comes out of solution as bubbles in joints, blood vessels, and spinal cord white matter",
+    "Definitive therapy requires urgent recompression in a hyperbaric oxygen chamber"
+   ],
+   "forbidden": [
+    "bends",
+    "Caisson",
+    "bubbles",
+    "recompression",
+    "decompression"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Deep-Sea Diving and Hyperbaric Physiology",
+   "term": "Shallow-water blackout",
+   "clues": [
+    "Pre-dive hyperventilation precipitates it by lowering PaCO2 and delaying the urge to breathe",
+    "During underwater ascent, falling ambient pressure causes PaO2 to plummet before PaCO2 reaches breakpoint",
+    "It causes sudden hypoxic loss of consciousness near the surface during breath-hold diving"
+   ],
+   "forbidden": [
+    "blackout",
+    "hyperventilation",
+    "breath-hold",
+    "ascent",
+    "shallow"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Aviation, Spaceflight, and Acceleration (G-Forces)",
+   "term": "Armstrong limit",
+   "clues": [
+    "It occurs at approximately 19 kilometers (62,000 feet) altitude where barometric pressure equals 47 mmHg",
+    "At this threshold, atmospheric pressure matches the vapor pressure of water at 37 C",
+    "Unprotected exposure causes exposed body fluids to vaporize spontaneously in a process called ebullism"
+   ],
+   "forbidden": [
+    "ebullism",
+    "47",
+    "boil",
+    "Armstrong",
+    "limit"
+   ]
+  },
+  {
+   "topic": "pr-hypoxia-and-special-environments",
+   "sub": "Exercise Physiology",
+   "term": "Anaerobic threshold",
+   "clues": [
+    "In untrained adults it occurs around 50-65% of VO2max, shifting higher with endurance training",
+    "Bicarbonate buffering of rising lactic acid generates excess non-metabolic CO2",
+    "Above this exercise intensity, minute ventilation rises disproportionately relative to oxygen uptake"
+   ],
+   "forbidden": [
+    "lactate",
+    "threshold",
+    "VO2max",
+    "anaerobic",
+    "glycolysis"
+   ]
+  }
+ ]
+}
