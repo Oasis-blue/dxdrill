@@ -78,13 +78,14 @@
   function playHub(el) {
     var F = DX.features, cards = [
       ["cards", "Flashcards", "Recall the answer before you look. Cards you miss come back soon, and cards you know come back later. Just for you, any time.", "#cards", "Open flashcards", true],
+      ["spotter", "Spotter", "A steeplechase of slide pictures. Each station gives you a picture and a question for a fixed time, then moves on by itself. Just for you, any time.", "#spotter", "Start a spotter run", false],
       ["competitions", "Challenges", "A timed, ranked quiz that stays open for a few days. Play whenever suits you, one attempt. Results and class rankings appear when it closes.", "#competitions", "See challenges", false],
       ["live", "Live quiz", "Everyone plays together, right now. Type the code from the host and answer on your phone. Faster right answers score more.", "#live", "Join a live quiz", false],
       ["debates", "Debates", "Take a side on a claim, say why, and react to what your classmates think. Suggest topics too.", "#debates", "Join a debate", false]
-    ].filter(function (c) { return F.on(c[0]) || (c[0] === "live" && F.on("friends")); });
+    ].filter(function (c) { return c[0] === "spotter" || F.on(c[0]) || (c[0] === "live" && F.on("friends")); });
     el.innerHTML = '<div class="wrap wide stack"><header><p class="eyebrow">Play</p><h1>Ways to play</h1><p class="lede">Study alone, race the whole school over a few days, or join a live quiz with a code.</p></header>' +
       '<section class="cards">' + cards.map(function (c, i) {
-        return '<article class="card"><h2>' + c[1] + '</h2>' + (F.visibleToStudents(c[0]) || (c[0] === "live" && F.visibleToStudents("friends")) ? "" : '<p><b>Hidden from students</b></p>') + '<p>' + c[2] + '</p><a class="btn' + (i === 0 ? " primary" : "") + '" href="' + c[3] + '" style="text-decoration:none">' + c[4] + '</a></article>';
+        return '<article class="card"><h2>' + c[1] + '</h2>' +  (c[0] === "spotter" || F.visibleToStudents(c[0]) || (c[0] === "live" && F.visibleToStudents("friends")) ? "" : '<p><b>Hidden from students</b></p>') + '<p>' + c[2] + '</p><a class="btn' + (i === 0 ? " primary" : "") + '" href="' + c[3] + '" style="text-decoration:none">' + c[4] + '</a></article>';
       }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Features and visitors: choose what students see, and check who is using DxDrill</a></p>' : "") + '</div>';
   }
   var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
@@ -110,11 +111,12 @@
     features: DX.features,
     account: DX.account,
     screen: DX.screen,
-    remote: DX.remote
+    remote: DX.remote,
+    spotter: DX.spotter
   };
 
   /* A small "back" link above pages that sit one level down. It lives outside #app, so live pages that repaint do not remove it. */
-  var BACK = { cards: ["#play", "Play"], competitions: ["#play", "Play"], live: ["#play", "Play"], debates: ["#play", "Play"], polls: ["#home", "Home"], board: ["#home", "Home"], account: ["#home", "Home"] };
+  var BACK = { spotter: ["#play", "Play"], cards: ["#play", "Play"], competitions: ["#play", "Play"], live: ["#play", "Play"], debates: ["#play", "Play"], polls: ["#home", "Home"], board: ["#home", "Home"], account: ["#home", "Home"] };
   function backBar(h) {
     var bar = document.getElementById("backbar"), a = document.getElementById("backlink"), b = BACK[h];
     if (!bar || !a) return;

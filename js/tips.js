@@ -13,6 +13,11 @@
       "One person is the quizmaster. They read or show the question, then tap Got it, Missed or Skip. Scores update on the board.",
       "Quizmaster tip: keep answers off the shared screen until the right moment. In Question board and Describe it, use Copy answer key and check on your own phone.",
       "Keys on a computer: G got, M missed, S skip, F foul, R show answer, N next clue, Space pause."]],
+    spotter: ["How Spotter works", [
+      "Pick the slides, how many stations and how many seconds each.",
+      "Each station shows a slide and a question. Choose an answer. You can change it until the time runs out.",
+      "Then it moves on by itself, and you cannot go back, like the real practical exam.",
+      "At the end you see your score and every station with the answer and explanation."]],
     cards: ["How flashcards work", [
       "Read the front, try to recall the answer, then flip the card.",
       "Say whether you knew it. Cards you miss come back soon, and cards you know come back later.",
