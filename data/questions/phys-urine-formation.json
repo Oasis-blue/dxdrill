@@ -886,6 +886,726 @@
      "half"
     ]
    }
+  },
+  {
+   "id": "ren-196",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Glomerular filtration",
+   "q": "Approximately how much glomerular filtrate do both kidneys form each day in a healthy adult?",
+   "options": [
+    "18 litres",
+    "180 litres",
+    "1.8 litres",
+    "1800 litres"
+   ],
+   "answer": 1,
+   "explain": "A GFR of about 125 mL/min gives roughly 180 L of filtrate per day, yet only 1 to 1.5 L is excreted as urine because most is reabsorbed.",
+   "verified": false,
+   "open": {
+    "q": "Approximately how much glomerular filtrate do both kidneys form each day in a healthy adult?",
+    "accept": [
+     "180 L/day",
+     "About 7.5 litres per hour",
+     "Roughly 125 mL per minute over 24 hours"
+    ]
+   }
+  },
+  {
+   "id": "ren-197",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Glomerular filtration",
+   "q": "What is the normal glomerular filtration rate in a healthy young adult?",
+   "options": [
+    "12.5 mL/min",
+    "50 mL/min",
+    "125 mL/min",
+    "600 mL/min"
+   ],
+   "answer": 2,
+   "explain": "Normal GFR is about 120 to 125 mL/min (roughly 180 L/day) and it falls with age.",
+   "verified": false,
+   "open": {
+    "q": "What is the normal glomerular filtration rate in a healthy young adult, in mL/min?",
+    "accept": [
+     "About 120 mL/min",
+     "Roughly 125 mL per minute",
+     "7.5 L/hour"
+    ]
+   }
+  },
+  {
+   "id": "ren-198",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Glomerular filtration",
+   "q": "Which component of plasma is essentially absent from normal glomerular filtrate?",
+   "options": [
+    "Amino acids",
+    "Plasma proteins",
+    "Urea",
+    "Electrolytes"
+   ],
+   "answer": 1,
+   "explain": "The filtration barrier makes an ultrafiltrate of plasma that is almost protein-free. Small solutes pass freely at the same concentration as in plasma.",
+   "verified": false,
+   "open": {
+    "q": "Which major component of plasma is essentially absent from normal glomerular filtrate?",
+    "accept": [
+     "Albumin",
+     "Large proteins",
+     "Protein"
+    ]
+   }
+  },
+  {
+   "id": "ren-199",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Glomerular filtration",
+   "q": "Which Starling force in the glomerulus is approximately 18 mmHg and opposes filtration?",
+   "options": [
+    "Capillary hydrostatic pressure",
+    "Plasma oncotic pressure",
+    "Bowman's capsule oncotic pressure",
+    "Bowman's capsule hydrostatic pressure"
+   ],
+   "answer": 3,
+   "explain": "Pressure of the fluid in Bowman's space is about 18 mmHg and opposes filtration, as does plasma oncotic pressure of about 32 mmHg. Oncotic pressure in Bowman's space is close to zero because the filtrate has almost no protein.",
+   "verified": false,
+   "open": {
+    "q": "Which Starling force in the glomerulus is approximately 18 mmHg and opposes filtration?",
+    "accept": [
+     "Intracapsular hydrostatic pressure",
+     "Hydrostatic pressure in Bowman's space",
+     "Pressure in the urinary space"
+    ]
+   }
+  },
+  {
+   "id": "ren-200",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "Glomerular capillary hydrostatic pressure is 60 mmHg, Bowman's capsule pressure is 18 mmHg and plasma oncotic pressure is 32 mmHg. What is the net filtration pressure?",
+   "options": [
+    "10 mmHg",
+    "28 mmHg",
+    "42 mmHg",
+    "110 mmHg"
+   ],
+   "answer": 0,
+   "explain": "Net filtration pressure is 60 minus 18 minus 32, which is 10 mmHg driving fluid out of the capillary.",
+   "verified": false,
+   "open": {
+    "q": "Glomerular capillary hydrostatic pressure is 60 mmHg, Bowman's capsule pressure is 18 mmHg and plasma oncotic pressure is 32 mmHg. What is the net filtration pressure?",
+    "accept": [
+     "About 10",
+     "+10 mmHg outward",
+     "10 mm Hg"
+    ]
+   }
+  },
+  {
+   "id": "ren-201",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clearance",
+   "q": "Clearance of which substance is the gold standard for measuring GFR?",
+   "options": [
+    "Glucose",
+    "Para-aminohippuric acid",
+    "Urea",
+    "Inulin"
+   ],
+   "answer": 3,
+   "explain": "Inulin is freely filtered and is neither reabsorbed, secreted nor metabolised, so its clearance equals GFR. PAH instead estimates renal plasma flow.",
+   "verified": false,
+   "open": {
+    "q": "Which exogenous substance, freely filtered and neither reabsorbed nor secreted, is the gold standard marker for measuring GFR?",
+    "accept": [
+     "Polyfructosan",
+     "Fructose polymer",
+     "Plant fructan"
+    ]
+   }
+  },
+  {
+   "id": "ren-202",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clearance",
+   "q": "Which formula gives the renal clearance of substance X, where U is urine concentration, V is urine flow rate and P is plasma concentration?",
+   "options": [
+    "PV/U",
+    "V/UP",
+    "UV/P",
+    "UP/V"
+   ],
+   "answer": 2,
+   "explain": "Clearance equals urinary excretion rate (U times V) divided by plasma concentration (P). It is the volume of plasma cleared of the substance per minute.",
+   "verified": false,
+   "open": {
+    "q": "What is the formula for renal clearance of a substance in terms of urine concentration, urine flow rate and plasma concentration?",
+    "accept": [
+     "U x V / P",
+     "UV over P",
+     "Urine concentration times flow divided by plasma concentration"
+    ]
+   }
+  },
+  {
+   "id": "ren-203",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clearance",
+   "q": "What fraction of renal plasma flow is normally filtered at the glomerulus (the filtration fraction)?",
+   "options": [
+    "About 1%",
+    "About 5%",
+    "About 50%",
+    "About 20%"
+   ],
+   "answer": 3,
+   "explain": "Filtration fraction is GFR divided by renal plasma flow, about 125 divided by 625, which is roughly 0.2.",
+   "verified": false,
+   "open": {
+    "q": "What fraction of renal plasma flow is normally filtered at the glomerulus?",
+    "accept": [
+     "One fifth",
+     "0.2",
+     "GFR over RPF is about 0.2"
+    ]
+   }
+  },
+  {
+   "id": "ren-204",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clearance",
+   "q": "Clearance of para-aminohippuric acid (PAH) is used to estimate which renal parameter?",
+   "options": [
+    "Glomerular filtration rate",
+    "Effective renal plasma flow",
+    "Tubular maximum for glucose",
+    "Filtration fraction only"
+   ],
+   "answer": 1,
+   "explain": "PAH is filtered and almost completely secreted, so about 90% is removed in a single pass. Its clearance therefore approximates effective renal plasma flow.",
+   "verified": false,
+   "open": {
+    "q": "Clearance of para-aminohippuric acid (PAH) is used to estimate which renal parameter?",
+    "accept": [
+     "ERPF",
+     "Renal plasma flow",
+     "Effective RPF"
+    ]
+   }
+  },
+  {
+   "id": "ren-205",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular reabsorption",
+   "q": "Which transporter in the early proximal tubule takes up most of the filtered glucose from the lumen?",
+   "options": [
+    "SGLT2",
+    "GLUT2",
+    "NKCC2",
+    "NCC"
+   ],
+   "answer": 0,
+   "explain": "SGLT2 is a sodium-glucose cotransporter on the apical membrane of the early proximal tubule. GLUT2 then moves glucose out across the basolateral membrane.",
+   "verified": false,
+   "open": {
+    "q": "Which apical sodium-coupled transporter in the early proximal tubule takes up most of the filtered glucose?",
+    "accept": [
+     "Sodium-glucose cotransporter 2",
+     "Na+-glucose cotransporter 2",
+     "Sodium-glucose linked transporter 2"
+    ]
+   }
+  },
+  {
+   "id": "ren-206",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular reabsorption",
+   "q": "At approximately what plasma glucose concentration does glucose normally begin to appear in the urine (the renal threshold)?",
+   "options": [
+    "15 mmol/L",
+    "10 mmol/L",
+    "5 mmol/L",
+    "3 mmol/L"
+   ],
+   "answer": 1,
+   "explain": "The renal threshold is about 10 mmol/L (180 mg/dL). Above this, some nephrons reach their transport maximum and glucose spills into the urine.",
+   "verified": false,
+   "open": {
+    "q": "At approximately what plasma glucose concentration does glucose normally begin to appear in the urine?",
+    "accept": [
+     "180 mg/dL",
+     "About 10 mmol per litre",
+     "Roughly 180 mg per 100 mL"
+    ]
+   }
+  },
+  {
+   "id": "ren-207",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular reabsorption",
+   "q": "By what mechanism are filtered amino acids mainly reabsorbed in the proximal tubule?",
+   "options": [
+    "Sodium-coupled cotransport",
+    "Passive diffusion between cells",
+    "Primary active transport by H+-ATPase",
+    "Receptor-mediated endocytosis only"
+   ],
+   "answer": 0,
+   "explain": "Amino acids enter proximal tubule cells by sodium-coupled secondary active transport. Small filtered proteins are the ones taken up by endocytosis.",
+   "verified": false,
+   "open": {
+    "q": "By what mechanism are filtered amino acids mainly reabsorbed in the proximal tubule?",
+    "accept": [
+     "Secondary active transport",
+     "Na+-dependent cotransport",
+     "Symport with sodium"
+    ]
+   }
+  },
+  {
+   "id": "ren-208",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular reabsorption",
+   "q": "Compared with plasma, tubular fluid leaving the proximal convoluted tubule is:",
+   "options": [
+    "Hypotonic",
+    "Isotonic",
+    "Hypertonic",
+    "Free of sodium"
+   ],
+   "answer": 1,
+   "explain": "Water follows solute through aquaporin-1 and the tight junctions, so proximal reabsorption is iso-osmotic. The fluid volume falls but its osmolality stays the same as plasma.",
+   "verified": false,
+   "open": {
+    "q": "Compared with plasma, what is the osmolality of tubular fluid leaving the proximal convoluted tubule?",
+    "accept": [
+     "Iso-osmotic",
+     "Isosmotic",
+     "Same as plasma"
+    ]
+   }
+  },
+  {
+   "id": "ren-209",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular secretion",
+   "q": "Which process explains why almost all PAH is removed from the plasma in a single pass through the kidney?",
+   "options": [
+    "Glomerular filtration alone",
+    "Tubular reabsorption in the loop of Henle",
+    "Active secretion in the proximal tubule",
+    "Passive diffusion in the collecting duct"
+   ],
+   "answer": 2,
+   "explain": "Filtration removes only about 20% of the PAH reaching the glomerulus. Organic anion transporters in the proximal tubule secrete most of the remainder.",
+   "verified": false,
+   "open": {
+    "q": "Which process, in addition to filtration, explains why almost all PAH is removed from the plasma in a single pass through the kidney?",
+    "accept": [
+     "Proximal tubular secretion",
+     "Organic anion transporter secretion",
+     "Tubular secretion"
+    ]
+   }
+  },
+  {
+   "id": "ren-210",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular reabsorption",
+   "q": "About what percentage of filtered water is eventually reabsorbed along the nephron?",
+   "options": [
+    "50%",
+    "75%",
+    "90%",
+    "99%"
+   ],
+   "answer": 3,
+   "explain": "Of the roughly 180 L filtered each day, only 1 to 1.5 L is excreted, so about 99% of the filtered water is reabsorbed.",
+   "verified": false,
+   "open": {
+    "q": "About what percentage of filtered water is eventually reabsorbed along the nephron?",
+    "accept": [
+     "Over 99%",
+     "About 99 percent",
+     "Nearly all of it"
+    ]
+   }
+  },
+  {
+   "id": "ren-211",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Tubular reabsorption",
+   "q": "Which nephron segment is virtually impermeable to water, even in the presence of ADH?",
+   "options": [
+    "Thick ascending limb",
+    "Proximal convoluted tubule",
+    "Thin descending limb",
+    "Cortical collecting duct"
+   ],
+   "answer": 0,
+   "explain": "The thick ascending limb reabsorbs NaCl actively but has no water channels, so the fluid becomes dilute. This is why it is called the diluting segment.",
+   "verified": false,
+   "open": {
+    "q": "Which nephron segment is virtually impermeable to water, even in the presence of ADH?",
+    "accept": [
+     "TAL",
+     "Diluting segment",
+     "Ascending limb"
+    ]
+   }
+  },
+  {
+   "id": "ren-212",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "Why does plasma oncotic pressure rise along the length of the glomerular capillary?",
+   "options": [
+    "Water leaves while proteins stay behind",
+    "Plasma proteins are secreted into the lumen",
+    "Red cells are lost into Bowman's space",
+    "The capillary wall becomes more permeable"
+   ],
+   "answer": 0,
+   "explain": "Filtration removes protein-free fluid, so the remaining plasma becomes more concentrated in protein. The oncotic pressure therefore rises and net filtration pressure falls along the capillary.",
+   "verified": false,
+   "open": {
+    "q": "Why does plasma oncotic pressure rise along the length of the glomerular capillary?",
+    "accept": [
+     "Protein concentration increases as fluid is filtered",
+     "Plasma proteins become concentrated",
+     "Water removed but protein retained"
+    ]
+   }
+  },
+  {
+   "id": "ren-213",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "What is the effect of constricting the afferent arteriole alone?",
+   "options": [
+    "GFR rises and renal blood flow falls",
+    "Both GFR and renal blood flow fall",
+    "GFR falls and renal blood flow rises",
+    "Both GFR and renal blood flow rise"
+   ],
+   "answer": 1,
+   "explain": "Afferent constriction raises resistance upstream of the glomerulus, so both blood flow and glomerular capillary pressure fall. GFR therefore falls too.",
+   "verified": false,
+   "open": {
+    "q": "What happens to GFR and renal blood flow when the afferent arteriole alone constricts?",
+    "accept": [
+     "Both decrease",
+     "GFR and RBF fall",
+     "Reduced GFR and reduced flow"
+    ]
+   }
+  },
+  {
+   "id": "ren-214",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "What is the effect of mild constriction of the efferent arteriole alone?",
+   "options": [
+    "GFR rises and renal blood flow falls",
+    "GFR falls and renal blood flow rises",
+    "Both GFR and renal blood flow rise",
+    "Both GFR and renal blood flow fall"
+   ],
+   "answer": 0,
+   "explain": "Efferent constriction raises glomerular capillary pressure, so GFR rises. Total flow through the kidney falls because resistance has increased downstream.",
+   "verified": false,
+   "open": {
+    "q": "What happens to GFR and renal blood flow when the efferent arteriole alone undergoes mild constriction?",
+    "accept": [
+     "GFR up and flow down",
+     "Increased GFR with decreased flow",
+     "Raised glomerular pressure with reduced flow"
+    ]
+   }
+  },
+  {
+   "id": "ren-215",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Tubular reabsorption",
+   "q": "Efferent arteriolar constriction increases proximal tubular reabsorption mainly because the peritubular capillaries then have:",
+   "options": [
+    "Higher hydrostatic pressure and lower oncotic pressure",
+    "Lower hydrostatic pressure and lower oncotic pressure",
+    "Higher hydrostatic pressure and higher oncotic pressure",
+    "Lower hydrostatic pressure and higher oncotic pressure"
+   ],
+   "answer": 3,
+   "explain": "Efferent constriction raises the filtration fraction, which concentrates plasma protein, and it lowers pressure downstream. These Starling forces favour uptake of reabsorbed fluid into the peritubular capillaries.",
+   "verified": false,
+   "open": {
+    "q": "Why does efferent arteriolar constriction increase fluid reabsorption in the proximal tubule?",
+    "accept": [
+     "Raised peritubular oncotic pressure with lowered hydrostatic pressure",
+     "Higher filtration fraction concentrates plasma protein",
+     "Starling forces favour uptake in peritubular capillaries"
+    ]
+   }
+  },
+  {
+   "id": "ren-216",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clearance",
+   "q": "If the clearance of a freely filtered substance is greater than the GFR, what does this indicate?",
+   "options": [
+    "Net tubular reabsorption",
+    "Net tubular secretion",
+    "Complete reabsorption",
+    "Strong binding to plasma protein"
+   ],
+   "answer": 1,
+   "explain": "A clearance above GFR means the kidney removes more of the substance than filtration alone can, so the tubules must be adding it by secretion. A clearance below GFR indicates net reabsorption.",
+   "verified": false,
+   "open": {
+    "q": "If the clearance of a freely filtered substance is greater than the GFR, what does this indicate about its tubular handling?",
+    "accept": [
+     "Secretion by the tubules",
+     "Tubular secretion of the substance",
+     "Substance added to the filtrate by the tubule"
+    ]
+   }
+  },
+  {
+   "id": "ren-217",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clearance",
+   "q": "Creatinine clearance slightly overestimates true GFR mainly because creatinine is:",
+   "options": [
+    "Partly reabsorbed in the proximal tubule",
+    "Metabolised by tubular cells",
+    "Slightly secreted by the proximal tubule",
+    "Strongly bound to plasma proteins"
+   ],
+   "answer": 2,
+   "explain": "A small amount of creatinine is secreted by the proximal tubule on top of what is filtered. This overestimate is usually small enough to be accepted clinically.",
+   "verified": false,
+   "open": {
+    "q": "Why does creatinine clearance slightly overestimate true GFR?",
+    "accept": [
+     "Tubular secretion of creatinine",
+     "A small amount is secreted",
+     "Secreted by the proximal tubule"
+    ]
+   }
+  },
+  {
+   "id": "ren-218",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Tubular reabsorption",
+   "q": "Glomerulotubular balance describes the tendency of the proximal tubule to:",
+   "options": [
+    "Reabsorb a constant fraction of the filtered load",
+    "Reabsorb a constant absolute amount regardless of GFR",
+    "Secrete more potassium when GFR rises",
+    "Stop reabsorbing sodium when GFR rises"
+   ],
+   "answer": 0,
+   "explain": "Proximal reabsorption rises and falls with GFR so that a roughly constant fraction (about 65%) is reabsorbed. This stops changes in GFR from causing large changes in sodium and water excretion.",
+   "verified": false,
+   "open": {
+    "q": "What is glomerulotubular balance?",
+    "accept": [
+     "Constant fractional reabsorption in the proximal tubule",
+     "Proximal reabsorption rises with GFR",
+     "Reabsorption keeps pace with filtration"
+    ]
+   }
+  },
+  {
+   "id": "ren-219",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Tubular reabsorption",
+   "q": "A diabetic patient has a plasma glucose of 20 mmol/L and glucose in the urine. Why does glucose appear in the urine?",
+   "options": [
+    "Glucose is secreted by the proximal tubule",
+    "The glomerular barrier becomes leaky to glucose",
+    "Loop of Henle cannot reabsorb glucose",
+    "Filtered load exceeds the transport maximum"
+   ],
+   "answer": 3,
+   "explain": "The filtered load of glucose exceeds the tubular maximum, so the transporters are saturated and the excess is excreted. This causes an osmotic diuresis and polyuria.",
+   "verified": false,
+   "open": {
+    "q": "A diabetic patient has a plasma glucose of 20 mmol/L and glucose in the urine. Why does glucose appear in the urine?",
+    "accept": [
+     "Tm for glucose exceeded",
+     "Renal threshold exceeded",
+     "Transporters are saturated"
+    ]
+   }
+  },
+  {
+   "id": "ren-220",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Glomerular filtration",
+   "q": "A patient with an obstructing ureteric stone has a fall in GFR on that side. Which Starling force has risen to cause this?",
+   "options": [
+    "Glomerular capillary hydrostatic pressure",
+    "Bowman's capsule hydrostatic pressure",
+    "Plasma oncotic pressure",
+    "Bowman's capsule oncotic pressure"
+   ],
+   "answer": 1,
+   "explain": "Obstruction causes urine to back up and raises pressure in the tubule and Bowman's space. This opposes filtration and reduces net filtration pressure.",
+   "verified": false,
+   "open": {
+    "q": "A patient with an obstructing ureteric stone has a fall in GFR on that side. Which Starling force has risen to cause this?",
+    "accept": [
+     "Intratubular pressure",
+     "Hydrostatic pressure in Bowman's space",
+     "Back pressure in the tubule"
+    ]
+   }
+  },
+  {
+   "id": "ren-221",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Glomerular filtration",
+   "q": "After severe haemorrhage a patient's urine output and GFR fall. Which mechanism contributes most to the fall in GFR?",
+   "options": [
+    "Afferent arteriolar constriction",
+    "Efferent arteriolar dilation",
+    "Raised capsular oncotic pressure",
+    "Greater filtration barrier permeability"
+   ],
+   "answer": 0,
+   "explain": "Haemorrhage activates the sympathetic system, which constricts the afferent arteriole and lowers glomerular capillary pressure. Both renal blood flow and GFR fall, conserving volume.",
+   "verified": false,
+   "open": {
+    "q": "After severe haemorrhage a patient's urine output and GFR fall. Which change in the glomerular arterioles contributes most to the fall in GFR?",
+    "accept": [
+     "Sympathetically mediated afferent vasoconstriction",
+     "Afferent vasoconstriction",
+     "Reduced glomerular capillary pressure"
+    ]
+   }
+  },
+  {
+   "id": "ren-222",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clearance",
+   "q": "A patient's plasma inulin is 0.5 mg/mL, urinary inulin is 30 mg/mL and urine flow is 2 mL/min. What is the GFR?",
+   "options": [
+    "15 mL/min",
+    "60 mL/min",
+    "120 mL/min",
+    "240 mL/min"
+   ],
+   "answer": 2,
+   "explain": "GFR equals inulin clearance, which is UV divided by P: 30 times 2 divided by 0.5 gives 120 mL/min.",
+   "verified": false,
+   "open": {
+    "q": "A patient's plasma inulin is 0.5 mg/mL, urinary inulin is 30 mg/mL and urine flow is 2 mL/min. What is the GFR?",
+    "accept": [
+     "0.12 L/min",
+     "7.2 L per hour",
+     "UV/P gives 120"
+    ]
+   }
+  },
+  {
+   "id": "ren-223",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Tubular secretion",
+   "q": "Probenecid is sometimes given with penicillin to prolong its action. Which renal process does probenecid inhibit?",
+   "options": [
+    "Glomerular filtration of penicillin",
+    "Reabsorption of penicillin in the loop of Henle",
+    "Binding of penicillin to plasma albumin",
+    "Proximal tubular secretion of penicillin"
+   ],
+   "answer": 3,
+   "explain": "Penicillin is cleared mainly by secretion through organic anion transporters in the proximal tubule. Probenecid competes for these transporters, so penicillin stays in the plasma for longer.",
+   "verified": false,
+   "open": {
+    "q": "Probenecid is sometimes given with penicillin to prolong its action. Which renal process does probenecid inhibit?",
+    "accept": [
+     "Competition for organic anion transporters",
+     "Tubular secretion",
+     "Renal secretion of organic acids"
+    ]
+   }
+  },
+  {
+   "id": "ren-224",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Tubular reabsorption",
+   "q": "A child has glycosuria despite a normal plasma glucose, along with amino acids and phosphate in the urine. Which nephron segment is dysfunctional?",
+   "options": [
+    "Thick ascending limb",
+    "Distal convoluted tubule",
+    "Cortical collecting duct",
+    "Proximal convoluted tubule"
+   ],
+   "answer": 3,
+   "explain": "Glucose, amino acids and phosphate are all reabsorbed mainly in the proximal tubule. Generalised proximal tubular dysfunction (Fanconi syndrome) causes wasting of all of them.",
+   "verified": false,
+   "open": {
+    "q": "A child has glycosuria despite a normal plasma glucose, along with amino acids and phosphate in the urine. Which nephron segment is dysfunctional?",
+    "accept": [
+     "Proximal tubule",
+     "PCT",
+     "Proximal nephron"
+    ]
+   }
+  },
+  {
+   "id": "ren-225",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clearance",
+   "q": "A patient's PAH clearance is 600 mL/min and the haematocrit is 0.45. What is the approximate renal blood flow?",
+   "options": [
+    "270 mL/min",
+    "600 mL/min",
+    "1100 mL/min",
+    "1330 mL/min"
+   ],
+   "answer": 2,
+   "explain": "Renal blood flow equals renal plasma flow divided by (1 minus haematocrit). That is 600 divided by 0.55, which is about 1100 mL/min.",
+   "verified": false,
+   "open": {
+    "q": "A patient's PAH clearance is 600 mL/min and the haematocrit is 0.45. What is the approximate renal blood flow?",
+    "accept": [
+     "About 1.1 L/min",
+     "Roughly 1090 mL per minute",
+     "RPF divided by 0.55"
+    ]
+   }
   }
  ]
 }
