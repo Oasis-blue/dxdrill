@@ -316,7 +316,7 @@
     p.textContent = "Phone linked · " + H.remote;
   }
   function qBlock(w, _unused, reveal) {
-    var h = '<div class="chips"><span class="chip">' + esc(subOf(w.q)) + '</span>' + (w.opts ? "" : '<span class="chip">No options</span>') + '</div><p class="qbig">' + esc(w.opts ? w.q.q : w.q.open.q) + '</p>';
+    var h = '<div class="chips"><span class="chip">' + esc(subOf(w.q)) + '</span>' + (w.opts ? "" : '<span class="chip">No options</span>') + '</div>' + DX.qImg(w.q, "big") + '<p class="qbig">' + esc(w.opts ? w.q.q : w.q.open.q) + '</p>';
     if (w.opts) {
       h += '<div class="opts big">' + w.order.map(function (oi, k) {
         var cls = "opt" + (reveal && oi === w.q.answer ? " correct" : "");

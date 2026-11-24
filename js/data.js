@@ -25,6 +25,12 @@ window.DX = window.DX || {};
     var fixed = opts.some(function (o) { return /\b(all|none|both|neither)\b[^.]{0,20}\b(above|these|of the)\b|\b(option|choice)s? [A-D]\b|\b[A-D] (and|&|or) [A-D]\b/i.test(String(o)); });
     return fixed ? idx : DX.shuffle(idx);
   };
+  /* A picture for a question: "image" is a file name inside data/img/histo/. Returns "" when the question has none. */
+  DX.qImg = function (q, cls) {
+    if (!q || !q.image || !/^[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp)$/i.test(q.image)) return "";
+    var e = DX.esc || function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+    return '<figure class="qimg ' + (cls || "") + '"><img src="data/img/histo/' + e(q.image) + '" alt="' + e(q.alt || "Microscope slide for this question") + '" loading="lazy" decoding="async"></figure>';
+  };
   DX.shuffle = function (a) {
     a = a.slice();
     for (var i = a.length - 1; i > 0; i--) {

@@ -122,7 +122,7 @@
     return p[0] === "s" ? c.subject === p[1] : p[0] === "a" ? c.area === p[1] : c.topic === p[1];
   }
   function publicQs(scope, n) {
-    var qs = DX.questions.filter(function (q) { return q.options && q.options.length === 4 && typeof q.answer === "number" && q.answer >= 0 && q.answer < 4 && inScope(q, scope); });
+    var qs = DX.questions.filter(function (q) { return q.options && q.options.length === 4 && typeof q.answer === "number" && q.answer >= 0 && q.answer < 4 && !q.image && inScope(q, scope); });
     return DX.shuffle(qs).slice(0, n).map(function (q) {
       var ord = DX.optOrder(q.options);   /* the same shuffled order goes to everyone, so options are not always A-first */
       return { q: q.q || q.text || q.stem, options: ord.map(function (i) { return q.options[i]; }), answer: ord.indexOf(q.answer), explain: q.explain || "" };

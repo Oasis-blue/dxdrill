@@ -35,7 +35,7 @@
   }
   function questionCards() {
     return DX.questions.filter(function (q) { return q.options && typeof q.answer === "number" && q.options[q.answer] != null; }).map(function (q) {
-      return { id: "q|" + q.id, kind: "q", topic: q.topic, area: q.area, subject: q.subject, q: q.q, answerText: q.options[q.answer], explain: q.explain || "", sub: q.sub };
+      return { id: "q|" + q.id, kind: "q", topic: q.topic, area: q.area, subject: q.subject, q: q.q, img: DX.qImg(q), answerText: q.options[q.answer], explain: q.explain || "", sub: q.sub };
     });
   }
   function inScope(c) {
@@ -99,8 +99,8 @@
         out = head + '<p class="tag">The term</p><p class="big">' + esc(c.term) + '</p>' + clues + rateHtml();
       }
     } else {
-      if (!F.shown) out = head + '<p class="tag">Question. Say the answer in your head first.</p><p class="stem">' + esc(c.q) + '</p><div class="row tight"><button class="btn primary" data-act="show">Show answer <kbd>Space</kbd></button></div>';
-      else out = head + '<p class="stem">' + esc(c.q) + '</p><p class="tag">Answer</p><p class="big">' + esc(c.answerText) + '</p>' + (c.explain ? '<p>' + esc(c.explain) + '</p>' : "") + rateHtml();
+      if (!F.shown) out = head + '<p class="tag">Question. Say the answer in your head first.</p>' + (c.img || "") + '<p class="stem">' + esc(c.q) + '</p><div class="row tight"><button class="btn primary" data-act="show">Show answer <kbd>Space</kbd></button></div>';
+      else out = head + (c.img || "") + '<p class="stem">' + esc(c.q) + '</p><p class="tag">Answer</p><p class="big">' + esc(c.answerText) + '</p>' + (c.explain ? '<p>' + esc(c.explain) + '</p>' : "") + rateHtml();
     }
     return '<section class="fc" id="fc-card">' + out + '</section><div class="row tight"><button class="btn ghost small" data-act="stop">Stop session <kbd>Esc</kbd></button></div>';
   }

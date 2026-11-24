@@ -137,7 +137,7 @@
       '<div class="top"><span>Question ' + (r.i + 1) + ' of ' + total + (study ? " · " + right + "/" + answered.length + " correct" : "") + '</span><button data-act="quit">Quit</button></div>' +
       '<div class="track"><i style="width:' + DX.pct(r.i + (locked ? 1 : 0), total) + '%"></i></div>' +
       '<div class="chips" style="margin-top:18px"><span class="chip">' + esc(subOf(q)) + '</span><span class="chip">' + (LEVELS[q.level] || "Core") + '</span>' + (q.verified ? '<span class="chip">Verified</span>' : '<span class="chip warn">Unverified</span>') + '</div>' +
-      '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' + explain + '<div>' + reportHtml(q) + '</div>' +
+      DX.qImg(q) + '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' + explain + '<div>' + reportHtml(q) + '</div>' +
       '<div class="actions">' + (showNext ? '<button class="btn primary" style="width:100%" data-act="next"' + (it.pick === null ? ' aria-disabled="true"' : "") + '>' + (last ? "See results" : "Next question") + '</button>' : "") + '</div></div>';
   }
   function finish() {
@@ -165,7 +165,7 @@
     var show = P.showAll ? items : missed;
     var rev = show.length ? show.map(function (x) {
       var ok = x.pick === x.q.answer;
-      return '<article><span class="st ' + (ok ? "c" : "m") + '">' + (ok ? "Correct" : "Missed") + ' · ' + esc(subOf(x.q)) + '</span><p class="q">' + esc(x.q.q) + '</p><p class="ans">' +
+      return '<article><span class="st ' + (ok ? "c" : "m") + '">' + (ok ? "Correct" : "Missed") + ' · ' + esc(subOf(x.q)) + '</span>' + DX.qImg(x.q, "small") + '<p class="q">' + esc(x.q.q) + '</p><p class="ans">' +
         (ok ? "" : '<span class="x">Your answer: ' + esc(x.q.options[x.pick]) + '</span><br>') + '<span class="v">' + (ok ? "Answer: " : "Correct: ") + esc(x.q.options[x.q.answer]) + '</span></p><p class="why">' + esc(x.q.explain) + '</p></article>';
     }).join("") : '<div class="empty-note">No missed questions. Switch to all answers to re-read the explanations.</div>';
     return '<div class="wrap stack"><header><p class="eyebrow">Results · ' + (P.mode === "exam" ? "Exam" : "Study") + ' · ' + esc(scopeName(P.scope)) + '</p>' +
