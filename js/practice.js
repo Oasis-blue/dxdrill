@@ -176,8 +176,30 @@
       '<section class="section"><div class="row" style="align-items:center"><h2 style="flex:2 1 200px">' + (P.showAll ? "All answers" : "Questions to review") + '</h2><button class="btn ghost" data-act="toggle">' + (P.showAll ? "Show missed only" : "Show all answers") + '</button></div><div class="rev">' + rev + '</div></section></div>';
   }
 
+  /* Keep a practice run in progress on this device, so a phone call, a sleeping phone or a reloaded tab does not lose it. */
+  var KEY = "dx.practice.run", restored = false;
+  function saveRun() {
+    try {
+      if (P.view === "run" && P.run && !P.run.done && P.scope) {
+        DX.store.set(KEY, { t: Date.now(), scope: P.scope, subs: P.subs, mode: P.mode, count: P.count, i: P.run.i,
+          items: P.run.items.map(function (x) { return { id: x.q.id, order: x.order, pick: x.pick }; }) });
+      } else DX.store.set(KEY, null);
+    } catch (e) { }
+  }
+  function restoreRun() {
+    restored = true;
+    try {
+      var s = DX.store.get(KEY, null); if (!s || !s.items || !s.items.length || Date.now() - s.t > 7 * 864e5) { DX.store.set(KEY, null); return; }
+      var byId = {}; DX.questions.forEach(function (q) { byId[q.id] = q; });
+      var items = s.items.map(function (x) { return byId[x.id] ? { q: byId[x.id], order: x.order, pick: x.pick } : null; }).filter(Boolean);
+      if (items.length !== s.items.length) { DX.store.set(KEY, null); return; }   /* the question bank changed, so start fresh rather than guess */
+      P.scope = s.scope; P.subs = s.subs || []; P.mode = s.mode || "study"; P.count = s.count || "all";
+      P.run = { items: items, i: Math.min(s.i || 0, items.length - 1), done: false }; P.view = "run"; P.resumed = true;
+    } catch (e) { }
+  }
   function render(el) {
     if (el) app = el;
+    if (!restored && DX.questions && DX.questions.length && !(P.run && !P.run.done)) restoreRun();
     var h;
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
     if (P.report && rn) { P.report.note = rn.value; if (rr) P.report.reason = rr.value; }
@@ -186,7 +208,8 @@
     else if (P.run && P.run.done) h = resultsView();
     else if (P.run) h = questionView();
     else h = pickView();
-    app.innerHTML = h;
+    if (P.resumed && P.view === "run") { h = '<div class="wrap"><p class="note" role="status">Picked up where you left off.</p></div>' + h; P.resumed = false; }
+    app.innerHTML = h; saveRun();
   }
 
   function pickAnswer(oi) {
@@ -253,5 +276,5 @@
     else if (e.key === "Enter" && it.pick !== null) next();
   }
 
-  DX.practice = { render: render, onClick: onClick, onKey: onKey, leave: function () {}, reset: function () { P.view = "pick"; P.run = null; } };
+  DX.practice = { render: render, onClick: onClick, onKey: onKey, leave: function () {}, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
 })();
