@@ -123,7 +123,10 @@
   }
   function publicQs(scope, n) {
     var qs = DX.questions.filter(function (q) { return q.options && q.options.length === 4 && typeof q.answer === "number" && q.answer >= 0 && q.answer < 4 && inScope(q, scope); });
-    return DX.shuffle(qs).slice(0, n).map(function (q) { return { q: q.q || q.text || q.stem, options: q.options, answer: q.answer, explain: q.explain || "" }; });
+    return DX.shuffle(qs).slice(0, n).map(function (q) {
+      var ord = DX.optOrder(q.options);   /* the same shuffled order goes to everyone, so options are not always A-first */
+      return { q: q.q || q.text || q.stem, options: ord.map(function (i) { return q.options[i]; }), answer: ord.indexOf(q.answer), explain: q.explain || "" };
+    });
   }
   /* "Guess the term": the clues are the question, the term and three look-alike terms are the options. */
   function termQs(scope, n) {
