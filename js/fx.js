@@ -45,6 +45,11 @@
     tick: function (t) { tone(990, t, 0.06, "square", 0.12); },
     ready: function (t) { tone(660, t, 0.12, "sine", 0.28); },
     go: function (t) { tone(988, t, 0.25, "sine", 0.32); },
+    bell: function (t) {
+      [0, 0.55].forEach(function (d, k) {
+        [[1, 1, 2.0], [2.4, 0.55, 1.3], [3.8, 0.35, 0.9]].forEach(function (p) { tone(660 * p[0], t + d, p[2], "sine", 0.3 * (k ? 0.8 : 1) * p[1]); });
+      });
+    },
     done: function (t) { [523, 659, 784, 1047].forEach(function (f, i) { tone(f, t + i * 0.11, 0.4, "triangle", 0.28); }); }
   };
   /* mode: "all" plays whenever the top-bar Sound is on; "live" also needs the Live sound switch (phones default to silent in a crowded room) */
