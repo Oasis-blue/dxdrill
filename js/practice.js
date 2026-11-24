@@ -107,7 +107,7 @@
   /* ---------- run ---------- */
   function startRun(list) {
     var items = DX.shuffle(list).map(function (q) {
-      return { q: q, order: DX.shuffle(q.options.map(function (_, i) { return i; })), pick: null };
+      return { q: q, order: DX.optOrder(q.options), pick: null };
     });
     P.run = { items: items, i: 0, done: false };
     P.showAll = false; P.view = "run"; P.report = null;
