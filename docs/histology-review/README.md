@@ -1,0 +1,53 @@
+# Histology slides held back for checking
+
+These slides were marked unsure by the AI, so their questions are NOT in the live bank. Check each one against your lecturer or atlas, then tell me which to release. Photos are in your original zip.
+
+- **histo-gh-connective-tissue-02.jpg** (gh-connective-tissue): AI says "Loose (areolar) connective tissue". Check: The class deck titles this slide loose connective tissue. The pale band fits, but the tissue on either side is something else; confirm which area is meant.
+- **histo-gh-connective-tissue-04.jpg** (gh-connective-tissue): AI says "Loose (areolar) connective tissue". Check: The image has low contrast and the fibres are hard to see.
+- **histo-gh-connective-tissue-05.jpg** (gh-connective-tissue): AI says "Dense regular connective tissue". Check: The photographer labeled this dense connective tissue; the parallel bands suggest regular. Little detail is visible at this focus.
+- **histo-gh-connective-tissue-06.jpg** (gh-connective-tissue): AI says "Dense regular connective tissue". Check: The image is blurry; only parallel pink streaks are visible.
+- **histo-gh-connective-tissue-08.jpg** (gh-connective-tissue): AI says "Dense irregular connective tissue". Check: Most of the field is densely cellular tissue; the dense irregular connective tissue is a small part of it.
+- **histo-gh-connective-tissue-09.jpg** (gh-connective-tissue): AI says "Compact bone (ground section)". Check: The image is blurry and no label was confirmed for this photo.
+- **histo-gh-connective-tissue-11.jpg** (gh-connective-tissue): AI says "Cancellous (spongy) bone". Check: No cells are resolved, so osteocytes and lacunae cannot be confirmed.
+- **histo-gh-connective-tissue-12.jpg** (gh-connective-tissue): AI says "Cancellous (spongy) bone". Check: No cells are resolved in the plates, so osteocytes and lacunae cannot be confirmed.
+- **histo-gh-epithelium-01.jpg** (gh-epithelium): AI says "Simple cuboidal epithelium (lining follicles; the field looks like thyroid)". Check: The class deck titles this slide simple cuboidal epithelium, but the field looks like thyroid follicles. Confirm the organ and look at higher power for the cuboidal lining cells.
+- **histo-gh-epithelium-02.jpg** (gh-epithelium): AI says "Tube with a branched lumen lined by simple columnar ciliated epithelium (appears to be uterine tube)". Check: The class deck titles this slide simple columnar ciliated epithelium, but the field shows a whole tube at low power and cilia are not visible. The branched lumen fits the uterine tube, but the ductus deferens also has a star-shaped lumen. Confirm the organ at higher power.
+- **histo-gh-epithelium-03.jpg** (gh-epithelium): AI says "Tube with a branched lumen lined by simple columnar ciliated epithelium (appears to be uterine tube)". Check: Same slide as the previous image. Cilia are not visible; confirm the organ and the lining at higher power.
+- **histo-gh-epithelium-04.jpg** (gh-epithelium): AI says "Stratified squamous epithelium". Check: The epithelium looks thin at this power, so layers and surface keratinisation cannot be judged. The organ is not stated; glands and muscle lie beneath it.
+- **histo-gh-epithelium-05.jpg** (gh-epithelium): AI says "Stratified squamous epithelium". Check: The epithelium looks thin at this power, so layers and surface keratinisation cannot be judged. The organ is not stated.
+- **histo-gh-epithelium-08.jpg** (gh-epithelium): AI says "Keratinized stratified squamous epithelium (organ unsure)". Check: The epithelium type was given by the photographer and the organ is not stated. The pink band at the surface is the keratin candidate; confirm at higher power.
+- **histo-gh-epithelium-09.jpg** (gh-epithelium): AI says "Keratinized stratified squamous epithelium (organ unsure)". Check: The class deck titles this slide keratinized stratified squamous epithelium, but the folded tube resembles an oesophagus, which is non-keratinized in humans. Confirm the organ, the species and whether a keratin layer is present.
+- **histo-gh-epithelium-10.jpg** (gh-epithelium): AI says "Keratinized stratified squamous epithelium (organ unsure)". Check: The class deck titles this slide keratinized stratified squamous epithelium, but the folded tube resembles an oesophagus, which is non-keratinized in humans. Confirm the organ, the species and whether a keratin layer is present.
+- **histo-gh-epithelium-11.jpg** (gh-epithelium): AI says "Transitional epithelium (urinary bladder, dilated)". Check: The slide label reads transitional epithelium of a dilated bladder. Layers and umbrella cells are not resolved in this photo, and the rounded cells in clear spaces could be mistaken for cartilage. Confirm at higher power.
+- **histo-gh-epithelium-12.jpg** (gh-epithelium): AI says "Transitional epithelium (urinary bladder, dilated)". Check: The class deck titles this slide transitional epithelium of a dilated bladder. Cell layers are not resolved in this photo; confirm at higher power.
+- **histo-sh-digestive-system-05.jpg** (sh-digestive-system): AI says "Duodenum (small intestine)". Check: The staining is faint and the tissue is fragmented.
+- **histo-sh-digestive-system-06.jpg** (sh-digestive-system): AI says "Duodenum (small intestine)". Check: The staining is faint; villi are small at this power.
+- **histo-sh-digestive-system-07.jpg** (sh-digestive-system): AI says "Duodenum (small intestine)". Check: The image is blurry; only crypts in cross-section are visible.
+- **histo-sh-digestive-system-09.jpg** (sh-digestive-system): AI says "Jejunum (small intestine)". Check: Jejunum is taken from the slide title. Features that separate it from other small intestine segments are not conclusively visible.
+- **histo-sh-digestive-system-10.jpg** (sh-digestive-system): AI says "Ileum (small intestine)". Check: Ileum is taken from the slide title; Peyer's patches are not visible in this field.
+- **histo-sh-digestive-system-18.jpg** (sh-digestive-system): AI says "Liver (lobules)". Check: The class deck titles this slide liver (bile canaliculus). The staining looks like a special stain rather than H&E; confirm what the black network shows.
+- **histo-sh-female-genital-system-02.jpg** (sh-female-genital-system): AI says "Ovary (cortex)". Check: The colour cast makes the stain uncertain and the follicle stage is unclear.
+- **histo-sh-male-genital-system-01.jpg** (sh-male-genital-system): AI says "Prostate gland". Check: No label was given for this photo. Seminal vesicle and other folded glandular tissue look similar; confirm with the slide label.
+- **histo-sh-nervous-system-02.jpg** (sh-nervous-system): AI says "Cerebrum (cerebral cortex, grey matter)". Check: No cells are resolved, so grey matter cannot be confirmed from this photo.
+
+## Live slides that still carry a note
+
+- **histo-gh-connective-tissue-01.jpg** (gh-connective-tissue): Loose (areolar) connective tissue. Note: This looks like a spread preparation rather than a sectioned slide.
+- **histo-gh-epithelium-06.jpg** (gh-epithelium): Stratified squamous epithelium. Note: The organ is not stated in the class deck; the epithelium type is taken from the slide title.
+- **histo-gh-epithelium-07.jpg** (gh-epithelium): Stratified squamous epithelium. Note: The organ is not stated in the class deck; the epithelium type is taken from the slide title.
+- **histo-gh-muscle-tissue-01.jpg** (gh-muscle-tissue): Skeletal muscle (transverse section). Note: No label was given for this photo; it looks like the same tissue as the next skeletal muscle photo.
+- **histo-gh-muscle-tissue-05.jpg** (gh-muscle-tissue): Skeletal muscle (transverse section). Note: The class deck slide covers transverse and longitudinal sections; this field looks transverse.
+- **histo-sh-cardiovascular-system-01.jpg** (sh-cardiovascular-system): Medium-sized artery and vein. Note: Which vessel is the artery and which the vein is judged from wall thickness.
+- **histo-sh-cardiovascular-system-02.jpg** (sh-cardiovascular-system): Medium-sized artery and vein. Note: Which vessel is the artery and which the vein is judged from wall thickness.
+- **histo-sh-digestive-system-01.jpg** (sh-digestive-system): Oesophagus. Note: The room is visible in the photo; crop before publishing.
+- **histo-sh-digestive-system-03.jpg** (sh-digestive-system): Duodenum (small intestine). Note: Villi and Brunner's glands are not in this field, so the duodenum identification relies on the slide label.
+- **histo-sh-digestive-system-04.jpg** (sh-digestive-system): Duodenum (small intestine). Note: Villi and Brunner's glands are not in this field, so the duodenum identification relies on the slide label.
+- **histo-sh-endocrine-system-01.jpg** (sh-endocrine-system): Thyroid gland. Note: No label was given for this photo.
+- **histo-sh-female-genital-system-01.jpg** (sh-female-genital-system): Ovary (cortex). Note: No label was given for this photo; it looks like the class deck ovary slide.
+- **histo-sh-lymphoid-system-02.jpg** (sh-lymphoid-system): Spleen. Note: The room is visible in the photo; crop before publishing.
+- **histo-sh-lymphoid-system-03.jpg** (sh-lymphoid-system): Spleen. Note: The central vessel is small at this power.
+- **histo-sh-lymphoid-system-04.jpg** (sh-lymphoid-system): Spleen. Note: The central vessels are small at this power.
+- **histo-sh-male-genital-system-02.jpg** (sh-male-genital-system): Prostate gland. Note: Corpora amylacea are not visible in this field.
+- **histo-sh-nervous-system-01.jpg** (sh-nervous-system): Cerebrum (cerebral cortex, grey matter). Note: Part of the photo shows the room; crop before publishing.
+- **histo-sh-respiratory-system-01.jpg** (sh-respiratory-system): Lung parenchyma. Note: No label was given for this photo; it looks like the class deck lung slide.
+- **histo-sh-urinary-system-01.jpg** (sh-urinary-system): Kidney (cortex). Note: The room is visible in the photo; crop before publishing.
