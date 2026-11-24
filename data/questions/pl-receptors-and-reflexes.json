@@ -1,0 +1,925 @@
+{
+ "topic": "pl-receptors-and-reflexes",
+ "questions": [
+  {
+   "id": "pl-receptors-and-reflexes-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification and Properties of Sensory Receptors",
+   "q": "According to Sherrington's functional classification of sensory receptors, how do exteroceptors, interoceptors (visceroceptors), and proprioceptors differ?",
+   "options": [
+    "Exteroceptors detect stimuli from the external environment at the body surface (touch, pain, temperature, vision, hearing); interoceptors detect internal visceral/vascular conditions (baroreceptors, chemoreceptors, osmoreceptors); proprioceptors detect body/limb position and movement in space (muscle spindles, Golgi tendon organs, joint receptors, vestibular apparatus)",
+    "Exteroceptors are located exclusively inside the cerebral ventricles",
+    "Proprioceptors detect light waves in the retina",
+    "Interoceptors innervate skeletal extrafusal muscle fibers"
+   ],
+   "answer": 0,
+   "explain": "Sherrington grouped receptors by stimulus source: external world (exteroceptors), internal viscera (interoceptors), and musculoskeletal position/kinesthesia (proprioceptors).",
+   "verified": false,
+   "open": {
+    "q": "Define exteroceptors, interoceptors, and proprioceptors, giving two specific examples of each.",
+    "accept": [
+     "Exteroceptors: external stimuli (cutaneous mechanoreceptors, thermoreceptors, photoreceptors); Interoceptors: internal visceral environment (arterial baroreceptors, carotid chemoreceptors, hypothalamic osmoreceptors); Proprioceptors: body position and movement (muscle spindles, Golgi tendon organs, joint capsule receptors)",
+     "External surface receptors (touch/temperature), visceral receptors (baroreceptors/osmoreceptors), musculoskeletal position receptors (muscle spindles/Golgi tendon organs)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification and Properties of Sensory Receptors",
+   "q": "What is 'Muller's law of specific nerve energies' (the labeled-line principle)?",
+   "options": [
+    "Regardless of how a sensory receptor or its afferent pathway is stimulated (mechanical pressure, electrical shock, or natural stimulus), the conscious sensation perceived depends on the specific sensory pathway activated and its cortical termination (e.g., pressure on the closed eyeball produces a visual flash/phosphene)",
+    "All sensory receptors fire identical action potentials at 1,000 Hz",
+    "Action potential amplitude doubles when stimulus intensity doubles",
+    "A single afferent axon simultaneously carries pain, vision, and hearing"
+   ],
+   "answer": 0,
+   "explain": "Because action potentials are all-or-none electrical events identical in form across neurons, modality specificity is encoded anatomically by which central pathway and primary sensory cortex receives the input.",
+   "verified": false,
+   "open": {
+    "q": "State Muller's law of specific nerve energies (labeled-line coding) and give an everyday example.",
+    "accept": [
+     "Stimulation of a specific sensory receptor or afferent pathway always evokes the characteristic sensation of that pathway regardless of the stimulus modality (e.g., mechanical pressure on the eye evokes light flashes/phosphenes)",
+     "Modality is determined by the specific neural pathway and cortical destination activated rather than the nature of the stimulus"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Sensory Transduction, Receptor Potential, and Adaptation",
+   "q": "How does a 'receptor potential' (generator potential) differ from an 'action potential' in a sensory neuron?",
+   "options": [
+    "A receptor potential is a local, graded, non-propagated membrane potential change whose amplitude increases logarithmically/proportionally with stimulus intensity and decays electrotonically; once it depolarizes the spike-initiating zone (first node of Ranvier) to threshold, it triggers all-or-none propagated action potentials whose frequency encodes stimulus strength",
+    "A receptor potential is all-or-none and propagates unchanged to the thalamus",
+    "Action potentials vary in amplitude with stimulus intensity while receptor potentials are fixed at +100 mV",
+    "Receptor potentials always hyperpolarize mechanoreceptors"
+   ],
+   "answer": 0,
+   "explain": "In Pacinian corpuscles, mechanical deformation opens stretch-sensitive cation channels (Na+ influx) at the unmyelinated nerve ending, generating a graded receptor potential that triggers action potentials at the first node of Ranvier.",
+   "verified": false,
+   "open": {
+    "q": "Contrast four biophysical properties of a sensory receptor potential versus an axonal action potential.",
+    "accept": [
+     "Receptor potential: graded amplitude, decremental/non-propagated, lacks a refractory period (can summate), encodes intensity by amplitude; Action potential: all-or-none, self-propagating, has an absolute refractory period, encodes intensity by firing frequency",
+     "Graded/local/summating (receptor potential) vs all-or-none/propagated/refractory (action potential)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Sensory Transduction, Receptor Potential, and Adaptation",
+   "q": "What is the 'Weber-Fechner law' of sensory intensity coding?",
+   "options": [
+    "Perceived sensation intensity (or receptor firing frequency) is proportional to the logarithm of the physical stimulus intensity (S = k log I), allowing sensory systems to detect subtle changes at low intensities while compressing a vast dynamic range without saturating",
+    "Perceived sensation decreases to zero as stimulus intensity increases",
+    "Action potential velocity is inversely proportional to axon diameter",
+    "Two-point discrimination is identical on the fingertips and back"
+   ],
+   "answer": 0,
+   "explain": "Logarithmic compression (and Stevens' power law) explains why adding 1 candle in a dark room is dramatically noticeable, whereas adding 1 candle in bright sunlight is barely perceptible.",
+   "verified": false,
+   "open": {
+    "q": "State the mathematical relationship and physiological advantage of the Weber-Fechner law.",
+    "accept": [
+     "Perceived sensation intensity is proportional to the logarithm of stimulus intensity; provides high sensitivity at low stimulus levels while spanning a wide dynamic range of intensities",
+     "Sensation proportional to log(stimulus intensity); allows wide dynamic range without receptor saturation"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Sensory Transduction, Receptor Potential, and Adaptation",
+   "q": "How do 'phasic' (rapidly adapting) receptors and 'tonic' (slowly adapting) receptors differ in their firing patterns and physiological functions?",
+   "options": [
+    "Phasic receptors (e.g., Pacinian corpuscles, Meissner corpuscles, hair follicle receptors) fire bursts at stimulus onset and offset and adapt rapidly during constant stimulation (detecting velocity, vibration, and change), whereas tonic receptors (e.g., muscle spindles, nociceptors, baroreceptors, Merkel discs, Ruffini endings) fire continuously throughout a sustained stimulus (monitoring static posture, tissue injury, and arterial pressure)",
+    "Tonic receptors adapt within 2 milliseconds; phasic receptors never adapt over 24 hours",
+    "Nociceptors are the fastest-adapting phasic receptors in the body",
+    "Pacinian corpuscles are non-adapting tonic receptors"
+   ],
+   "answer": 0,
+   "explain": "In the Pacinian corpuscle, concentric fluid-filled connective tissue lamellae redistribute mechanical pressure within milliseconds, dissipating the static deformation on the central neurite so it responds purely to rapid vibration (200-300 Hz).",
+   "verified": false,
+   "open": {
+    "q": "Compare phasic (rapidly adapting) and tonic (slowly adapting) receptors, giving two examples and the primary functional role of each.",
+    "accept": [
+     "Phasic receptors (Pacinian corpuscles, Meissner corpuscles) adapt rapidly to constant stimuli and signal change/velocity/vibration; Tonic receptors (muscle spindles, nociceptors, arterial baroreceptors, Merkel discs) fire persistently during sustained stimuli to signal continuous state/position/danger",
+     "Rapidly adapting signaling change/vibration (Pacinian, Meissner) vs slowly adapting signaling sustained state (muscle spindles, nociceptors, baroreceptors)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cutaneous Mechanoreceptors and Somatosensory Coding",
+   "q": "Match the four major cutaneous tactile mechanoreceptors of glabrous (hairless) skin with their correct receptive field size and adaptation rate:",
+   "options": [
+    "Meissner corpuscles: small receptive field, rapidly adapting (flutter/grip slip); Merkel discs: small receptive field, slowly adapting (fine texture, edges, two-point form); Pacinian corpuscles: large receptive field, very rapidly adapting (high-frequency vibration); Ruffini endings: large receptive field, slowly adapting (skin stretch, joint angle)",
+    "Pacinian corpuscles: tiny receptive field, non-adapting; Merkel discs: huge receptive field, fast-adapting",
+    "Meissner corpuscles: deep subcutaneous, slow-adapting; Ruffini endings: superficial epidermis, fast-adapting",
+    "All four receptors have identical receptive fields and adaptation speeds"
+   ],
+   "answer": 0,
+   "explain": "Superficial receptors (Meissner, Merkel) have small, sharp receptive fields for high spatial acuity (fingertips), whereas deep dermal/subcutaneous receptors (Pacinian, Ruffini) have large receptive fields for vibration and skin stretch.",
+   "verified": false,
+   "open": {
+    "q": "State the receptive field size (small vs large) and adaptation rate (rapid vs slow) for: (1) Meissner corpuscles, (2) Merkel discs, (3) Pacinian corpuscles, and (4) Ruffini endings.",
+    "accept": [
+     "Meissner: small, rapid; Merkel: small, slow; Pacinian: large, very rapid; Ruffini: large, slow",
+     "1) Small/rapid, 2) Small/slow, 3) Large/rapid, 4) Large/slow"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cutaneous Mechanoreceptors and Somatosensory Coding",
+   "q": "What is 'lateral inhibition' in somatosensory relay nuclei (dorsal column nuclei, thalamus, and somatosensory cortex), and how does it enhance spatial acuity?",
+   "options": [
+    "The most strongly excited central afferent neuron activates local inhibitory interneurons (GABAergic/glycinergic) that suppress adjacent weakly excited neighboring pathways, sharpening the contrast between the stimulus center and surround and improving two-point discrimination",
+    "Stimulation of the left hand completely blocks sensation in the right hand",
+    "Lateral inhibition eliminates all action potentials from the center of a stimulus",
+    "It increases receptive field size tenfold"
+   ],
+   "answer": 0,
+   "explain": "Lateral inhibition sharpens spatial borders in tactile localization, vision (horizontal/amacrine cells), and auditory pitch discrimination.",
+   "verified": false,
+   "open": {
+    "q": "Explain the circuit mechanism and perceptual benefit of lateral inhibition in somatosensory pathways.",
+    "accept": [
+     "Strongly activated central sensory neurons excite inhibitory interneurons that suppress neighboring less-active neurons, sharpening center-surround contrast and enhancing spatial localization / two-point discrimination",
+     "Inhibition of surrounding neurons by the most active central neuron to sharpen spatial contrast and acuity"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nociceptors, Thermoreceptors, and Pain Modulation",
+   "q": "How do 'fast (first) pain' and 'slow (second) pain' differ in their afferent nerve fiber types, conduction velocities, neurotransmitters, and perceptual qualities?",
+   "options": [
+    "Fast pain: myelinated A-delta fibers (5-30 m/s), glutamate neurotransmitter, sharp, well-localized pricking sensation; Slow pain: unmyelinated C fibers (0.5-2 m/s), substance P and glutamate, dull, aching, burning, poorly localized pain",
+    "Fast pain: unmyelinated C fibers (0.5 m/s); Slow pain: myelinated A-alpha fibers (100 m/s)",
+    "Both fast and slow pain are carried by A-beta fibers",
+    "Slow pain uses acetylcholine at the neuromuscular junction"
+   ],
+   "answer": 0,
+   "explain": "Stubbing a toe produces an immediate sharp A-delta prick followed ~1 second later by a throbbing, diffuse C-fiber ache.",
+   "verified": false,
+   "open": {
+    "q": "Compare fast pain and slow pain in terms of nerve fiber type, myelination, conduction velocity, and quality of sensation.",
+    "accept": [
+     "Fast pain: myelinated A-delta fibers (~5-30 m/s), sharp/pricking/well-localized; Slow pain: unmyelinated C fibers (~0.5-2 m/s), dull/burning/aching/poorly localized",
+     "A-delta myelinated/fast/sharp vs C unmyelinated/slow/dull burning"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Nociceptors, Thermoreceptors, and Pain Modulation",
+   "q": "What is the 'Gate Control Theory of Pain' (Melzack and Wall), and why does rubbing an injured shin or applying Transcutaneous Electrical Nerve Stimulation (TENS) relieve pain?",
+   "options": [
+    "Stimulation of large-diameter, fast-conducting myelinated A-beta mechanoreceptor afferents excites inhibitory enkephalinergic interneurons in the substantia gelatinosa (lamina II of the spinal dorsal horn), presynaptically and postsynaptically inhibiting pain transmission from A-delta and C nociceptive fibers to second-order spinothalamic projection neurons",
+    "Rubbing the skin destroys unmyelinated C fibers permanently",
+    "A-beta fibers directly release morphine into the systemic bloodstream",
+    "Closing the spinal gate blocks motor outflow to the diaphragm"
+   ],
+   "answer": 0,
+   "explain": "Non-painful tactile input (A-beta) 'closes the gate' in lamina II of the dorsal horn, dampening nociceptive C-fiber signaling to the brain.",
+   "verified": false,
+   "open": {
+    "q": "Explain the spinal dorsal horn mechanism of the Gate Control Theory of pain when large A-beta mechanoreceptor fibers are stimulated.",
+    "accept": [
+     "Large myelinated A-beta tactile afferents activate inhibitory interneurons in the substantia gelatinosa (lamina II) of the dorsal horn, suppressing transmission from A-delta/C pain afferents to spinothalamic projection neurons",
+     "A-beta fibers excite dorsal horn inhibitory interneurons that block A-delta/C nociceptive transmission"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-010",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Nociceptors, Thermoreceptors, and Pain Modulation",
+   "q": "What is the 'descending endogenous analgesia system', and which brainstem nuclei and neurotransmitters suppress dorsal horn pain transmission?",
+   "options": [
+    "Periaqueductal gray (PAG) in the midbrain projects to the nucleus raphe magnus (rostral ventromedial medulla, releasing serotonin/5-HT) and locus coeruleus (releasing norepinephrine), which activate spinal dorsal horn enkephalinergic interneurons that inhibit presynaptic Ca2+ influx (via mu/delta opioid receptors) and hyperpolarize spinothalamic neurons",
+    "Primary motor cortex projects via the vagus nerve to release acetylcholine in the skin",
+    "Cerebellar Purkinje cells release histamine into the CSF",
+    "Substantia nigra releases dopamine directly onto skeletal muscle"
+   ],
+   "answer": 0,
+   "explain": "Endogenous opioids (endorphins, enkephalins, dynorphins), serotonin, and norepinephrine mediate stress-induced analgesia and are mimicked pharmacologically by morphine, tramadol, and SNRIs (duloxetine).",
+   "verified": false,
+   "open": {
+    "q": "Outline the descending endogenous pain-suppression pathway from the midbrain to the spinal dorsal horn and name its key neurotransmitters.",
+    "accept": [
+     "Midbrain periaqueductal gray (PAG) activates nucleus raphe magnus (serotonin) and locus coeruleus (norepinephrine), which stimulate dorsal horn enkephalinergic interneurons to inhibit nociceptive transmission",
+     "PAG -> nucleus raphe magnus (5-HT) & locus coeruleus (NE) -> dorsal horn enkephalin interneurons"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Nociceptors, Thermoreceptors, and Pain Modulation",
+   "q": "What is the neuroanatomical basis of 'referred pain' (such as myocardial ischemic pain felt in the left arm/shoulder or diaphragmatic irritation felt at the C4 shoulder tip)?",
+   "options": [
+    "Convergence-projection theory: visceral nociceptive afferents and somatic cutaneous nociceptive afferents from the same embryonic dermatome converge onto the SAME second-order spinothalamic tract neurons in the spinal dorsal horn; because somatic inputs are far more common, the somatosensory cortex misinterprets the visceral signal as arising from the somatic skin region",
+    "Visceral organs contain no nerve fibers of any kind",
+    "Heart pain travels directly through the optic nerve",
+    "Somatic nerves innervate the myocardium directly"
+   ],
+   "answer": 0,
+   "explain": "For example, central diaphragmatic phrenic afferents (C3-C5) converge on C3-C5 dorsal horn neurons receiving somatic input from the supraclavicular shoulder skin (Kehr's sign).",
+   "verified": false,
+   "open": {
+    "q": "Explain the convergence-projection mechanism of referred pain and give one classic clinical example with its spinal cord segments.",
+    "accept": [
+     "Visceral and somatic pain afferents converge onto the same second-order dorsal horn spinothalamic neurons, causing the cortex to localize visceral pain to the corresponding somatic dermatome (e.g., myocardial ischemia T1-T5 referred to left arm/chest, or diaphragm C3-C5 referred to shoulder tip)",
+     "Convergence of visceral and somatic afferents on shared dorsal horn neurons (e.g., heart T1-T5 to left arm or diaphragm C3-C5 to shoulder)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Muscle Spindles and the Stretch (Myotatic) Reflex",
+   "q": "Describe the internal structure, sensory innervation, and motor innervation of a mammalian 'muscle spindle':",
+   "options": [
+    "Encapsulated intrafusal muscle fibers (nuclear bag fibers and nuclear chain fibers) arranged IN PARALLEL with extrafusal skeletal muscle fibers; innervated by primary Type Ia (annulospiral) and secondary Type II (flower-spray) sensory afferents, and motor-innervated at their contractile polar ends by gamma (A-gamma) motor neurons",
+    "Arranged in series within tendons; innervated solely by Type Ib sensory fibers with no motor innervation",
+    "Located in cardiac ventricles; innervated by the vagus nerve",
+    "Innervated by alpha motor neurons in their central equatorial region"
+   ],
+   "answer": 0,
+   "explain": "Because muscle spindles lie in parallel with extrafusal fibers, stretching the whole muscle stretches the central non-contractile equatorial region of intrafusal fibers, opening mechanosensitive channels on Type Ia and II sensory endings.",
+   "verified": false,
+   "open": {
+    "q": "State the orientation of muscle spindles relative to extrafusal fibers, their two types of intrafusal fibers, their two sensory afferent fiber types, and their motor nerve supply.",
+    "accept": [
+     "Arranged in parallel with extrafusal fibers; nuclear bag and nuclear chain intrafusal fibers; Type Ia (annulospiral) and Type II (flower-spray) sensory afferents; gamma motor neurons",
+     "In parallel; nuclear bag & chain fibers; Type Ia & II afferents; gamma motor neurons"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Muscle Spindles and the Stretch (Myotatic) Reflex",
+   "q": "How do 'nuclear bag fibers' and 'nuclear chain fibers' within the muscle spindle differ in their response to muscle stretch?",
+   "options": [
+    "Nuclear bag fibers (specifically dynamic bag1 fibers, innervated by Type Ia afferents) detect the VELOCITY/RATE of change of muscle length (dynamic response), whereas nuclear chain fibers (and static bag2 fibers, innervated by Type Ia and Type II afferents) detect STATIC sustained muscle length",
+    "Nuclear bag fibers detect only temperature; nuclear chain fibers detect only pain",
+    "Nuclear chain fibers fire exclusively during muscle relaxation",
+    "Both fiber types are innervated by Type Ib afferents"
+   ],
+   "answer": 0,
+   "explain": "Dynamic nuclear bag fibers fire a brisk burst during rapid stretch (driving phasic deep tendon reflexes like the knee jerk), while static nuclear chain fibers fire steadily to maintain tonic posture.",
+   "verified": false,
+   "open": {
+    "q": "Contrast the sensory functions of nuclear bag intrafusal fibers versus nuclear chain intrafusal fibers.",
+    "accept": [
+     "Nuclear bag fibers detect dynamic rate/velocity of muscle stretch (innervated by Type Ia afferents), whereas nuclear chain fibers detect static, sustained muscle length (innervated by Type II and Type Ia afferents)",
+     "Dynamic rate of stretch (nuclear bag) vs static muscle length (nuclear chain)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Muscle Spindles and the Stretch (Myotatic) Reflex",
+   "q": "What is the neural circuit of the 'monosynaptic stretch (myotatic) reflex' (e.g., the patellar tendon reflex), and what is 'reciprocal inhibition'?",
+   "options": [
+    "Tapping the patellar tendon stretches quadriceps muscle spindles -> Type Ia sensory afferents enter the dorsal horn and synapse DIRECTLY (monosynaptically, using glutamate) onto homonymous alpha motor neurons in the ventral horn -> quadriceps contracts; simultaneously, Type Ia collaterals excite spinal Ia inhibitory interneurons (glycinergic) that inhibit alpha motor neurons of the antagonist hamstring muscles (reciprocal inhibition)",
+    "The stretch reflex requires four synapses in the cerebral cortex",
+    "Type Ia afferents inhibit the stretched muscle and contract the antagonist muscle",
+    "The patellar reflex is mediated by Type Ib afferents and gamma motor neurons alone"
+   ],
+   "answer": 0,
+   "explain": "The monosynaptic stretch reflex is the ONLY monosynaptic reflex arc in the human body, providing ultra-fast (~20-30 ms) negative-feedback resistance against unwanted muscle lengthening.",
+   "verified": false,
+   "open": {
+    "q": "Trace the complete reflex arc of the patellar stretch reflex, including both agonist excitation and antagonist reciprocal inhibition.",
+    "accept": [
+     "Muscle stretch -> spindle Type Ia afferent -> monosynaptic excitatory synapse on quadriceps alpha motor neuron (quadriceps contraction) AND disynaptic excitation of Ia inhibitory interneuron inhibiting antagonist hamstring alpha motor neurons",
+     "Stretch -> Type Ia afferent -> direct excitation of agonist alpha motor neuron + Ia inhibitory interneuron suppression of antagonist"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-015",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Muscle Spindles and the Stretch (Myotatic) Reflex",
+   "q": "What is 'alpha-gamma coactivation', and why is it physiologically essential during voluntary skeletal muscle contraction?",
+   "options": [
+    "Upper motor neurons simultaneously stimulate both alpha motor neurons (contracting extrafusal muscle fibers) and gamma motor neurons (contracting the polar ends of intrafusal spindle fibers); this keeps the central equatorial region of the spindle taut so the spindle does NOT go slack and stays sensitive to stretch throughout muscle shortening",
+    "Alpha motor neurons inhibit gamma motor neurons so the spindle goes completely silent during movement",
+    "Gamma motor neurons directly lift heavy weights",
+    "Alpha-gamma coactivation occurs only during REM sleep paralysis"
+   ],
+   "answer": 0,
+   "explain": "Without alpha-gamma coactivation, extrafusal muscle shortening would unload the parallel muscle spindle, causing Type Ia sensory firing to fall silent ('spindle pause') and blinding the CNS to muscle length during movement.",
+   "verified": false,
+   "open": {
+    "q": "Define alpha-gamma coactivation and explain what would happen to muscle spindle sensitivity during voluntary contraction without it.",
+    "accept": [
+     "Simultaneous activation of alpha motor neurons (extrafusal contraction) and gamma motor neurons (intrafusal polar contraction); without it, muscle shortening would slacken the parallel spindle and silence Type Ia sensory feedback",
+     "Co-stimulation of alpha and gamma motor neurons so intrafusal fibers shorten alongside extrafusal fibers, preventing spindle unloading/silence"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Golgi Tendon Organs and the Inverse Stretch Reflex",
+   "q": "How do 'Golgi tendon organs' (GTOs) differ from muscle spindles in anatomical arrangement, stimulus modality, sensory afferent fiber type, and reflex action?",
+   "options": [
+    "GTOs are encapsulated receptors located IN SERIES with extrafusal muscle fibers at the musculotendinous junction; they detect active muscle TENSION/force (not length), fire via myelinated Type Ib afferents, and activate spinal Ib inhibitory interneurons to inhibit homonymous alpha motor neurons (autogenic inhibition / inverse stretch reflex) while exciting antagonist muscles",
+    "GTOs lie in parallel with extrafusal fibers and cause powerful muscle contraction when stretched",
+    "GTOs are innervated by gamma motor neurons and Type II afferents",
+    "GTOs detect skin temperature and trigger sweating"
+   ],
+   "answer": 0,
+   "explain": "When active isometric contraction generates dangerously high tendon tension, collagen strands squeeze intertwined Type Ib endings, triggering disynaptic autogenic inhibition to protect the muscle-tendon unit from avulsion and finely regulate muscle force.",
+   "verified": false,
+   "open": {
+    "q": "Contrast muscle spindles and Golgi tendon organs in terms of: (1) anatomical arrangement, (2) adequate stimulus, (3) sensory afferent fiber, and (4) reflex effect on the homonymous muscle.",
+    "accept": [
+     "Muscle spindle: in parallel, detects muscle length/velocity, Type Ia/II afferents, excites homonymous muscle; Golgi tendon organ: in series at tendon, detects muscle tension/force, Type Ib afferents, inhibits homonymous muscle (autogenic inhibition)",
+     "Spindle (parallel/length/Ia/excitation) vs GTO (in series/tension/Ib/inhibition)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Golgi Tendon Organs and the Inverse Stretch Reflex",
+   "q": "What is the 'clasp-knife phenomenon' (lengthening reaction) seen on neurological examination in a patient with upper motor neuron spasticity?",
+   "options": [
+    "When passively flexing a spastic limb, initial strong velocity-dependent resistance (hyperactive stretch reflex) suddenly gives way abruptly as rising tendon tension activates Golgi tendon organ Type Ib autogenic inhibition (combined with flexor/extensor afferent inhibition), collapsing resistance like closing a pocket knife",
+    "Permanent rigid resistance equal throughout all angles of movement ('lead-pipe rigidity')",
+    "Complete flaccid paralysis with zero resistance to passive stretch",
+    "Rhythmic tremor at 4-6 Hz at rest"
+   ],
+   "answer": 0,
+   "explain": "Clasp-knife spasticity is velocity-dependent and reflects hyperexcitable stretch reflexes abruptly overridden by Golgi tendon organ autogenic inhibition, distinguishing UMN spasticity from basal ganglia lead-pipe/cogwheel rigidity.",
+   "verified": false,
+   "open": {
+    "q": "Explain the physiological mechanism of the clasp-knife phenomenon in upper motor neuron spasticity.",
+    "accept": [
+     "Initial brisk resistance from a hyperactive stretch reflex abruptly collapses when high muscle tension activates Golgi tendon organ Type Ib afferents, triggering autogenic inhibition of the stretched muscle",
+     "Hyperactive stretch reflex resistance suddenly inhibited by Golgi tendon organ autogenic inhibition"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Flexor Withdrawal and Crossed-Extensor Reflexes",
+   "q": "Describe the neural circuit and functional purpose of the 'flexor withdrawal reflex' and the 'crossed-extensor reflex' when stepping on a sharp tack with the right foot:",
+   "options": [
+    "Nociceptive A-delta/C afferents from the right foot activate polysynaptic spinal excitatory interneurons to ipsilateral right flexor alpha motor neurons (withdrawing the right leg away from pain) and inhibit right extensors, while commissural interneurons cross the midline to excite contralateral left extensor alpha motor neurons and inhibit left flexors (supporting body weight so you don't fall)",
+    "Both legs immediately flex simultaneously, dropping the person onto the tack",
+    "It is a monosynaptic reflex involving only Type Ia fibers",
+    "The right leg extends forcefully onto the tack while the left leg flexes"
+   ],
+   "answer": 0,
+   "explain": "The crossed-extensor reflex takes ~200-500 ms (many polysynaptic interneurons) and exhibits prolonged 'afterdischarge' so postural support persists until the injured limb is safely clear.",
+   "verified": false,
+   "open": {
+    "q": "Explain how the flexor withdrawal reflex and crossed-extensor reflex coordinate ipsilateral and contralateral limb muscles when a noxious stimulus strikes one foot.",
+    "accept": [
+     "Polysynaptic nociceptive pathways excite ipsilateral flexors and inhibit ipsilateral extensors (withdrawing the injured limb), while crossing the spinal midline to excite contralateral extensors and inhibit contralateral flexors (supporting body weight)",
+     "Ipsilateral flexion/extensor inhibition to withdraw from pain + contralateral extension/flexor inhibition to bear weight"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Spinal Cord Interneurons and Renshaw Inhibition",
+   "q": "What is 'Renshaw cell inhibition' (recurrent inhibition) in the spinal cord ventral horn?",
+   "options": [
+    "Axon collaterals of firing alpha motor neurons release acetylcholine onto inhibitory Renshaw interneurons, which release glycine back onto the same and neighboring alpha motor neurons—limiting excessive firing rates, stabilizing motor output, and focusing motor unit recruitment",
+    "Renshaw cells excite gamma motor neurons via epinephrine",
+    "Renshaw cells transmit pain signals to the thalamus",
+    "Renshaw cells secrete cerebrospinal fluid"
+   ],
+   "answer": 0,
+   "explain": "Tetanus toxin (tetanospasmin) blocks presynaptic release of glycine and GABA from Renshaw cells and Ia inhibitory interneurons, causing uninhibited alpha motor neuron firing and severe spastic paralysis (trismus/lockjaw, opisthotonos).",
+   "verified": false,
+   "open": {
+    "q": "Describe the recurrent inhibitory circuit mediated by Renshaw cells and name the inhibitory neurotransmitter they release.",
+    "accept": [
+     "Alpha motor neuron axon collaterals excite Renshaw cells (via acetylcholine), which in turn inhibit the same and adjacent alpha motor neurons by releasing glycine",
+     "Negative-feedback inhibition of alpha motor neurons via glycinergic Renshaw interneurons"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "General Properties of Reflexes",
+   "q": "Which of the following are classic physiological properties of polysynaptic spinal reflexes (such as the flexor withdrawal reflex)?",
+   "options": [
+    "1) Central delay (~0.5 ms per synapse); 2) Spatial and temporal summation; 3) Divergence (irradiation to multiple spinal segments) and convergence; 4) Recruitment and afterdischarge (prolonged firing after stimulus ends); 5) Fatigue and habituation/sensitization",
+    "Zero synaptic delay and absolute inability to fatigue",
+    "Complete independence from excitatory or inhibitory postsynaptic potentials",
+    "Conduction exclusively through unmyelinated autonomic postganglionic fibers"
+   ],
+   "answer": 0,
+   "explain": "Afterdischarge in reverberating interneuronal circuits keeps the limb withdrawn for several seconds even after a brief pinprick ends.",
+   "verified": false,
+   "open": {
+    "q": "Define 'afterdischarge', 'irradiation', and 'synaptic fatigue' in polysynaptic spinal reflexes.",
+    "accept": [
+     "Afterdischarge: continued motor output after sensory stimulus ceases due to reverberating interneuron circuits; Irradiation: spread of reflex excitation to adjacent spinal segments with stronger stimuli; Synaptic fatigue: progressive weakening of reflex response during repetitive stimulation due to neurotransmitter vesicle depletion",
+     "Continued firing post-stimulus (afterdischarge), multi-segment spread (irradiation), and vesicle-depletion weakening (fatigue)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Upper vs Lower Motor Neuron Lesions and Spinal Shock",
+   "q": "What is 'spinal shock' immediately following an acute complete spinal cord transection (e.g., at T6), and how do reflexes evolve weeks later?",
+   "options": [
+    "Initially (days to weeks), sudden loss of descending facilitatory reticulospinal/vestibulospinal tonic drive causes complete flaccid paralysis, areflexia (absent deep tendon and cutaneous reflexes), atonic bladder/bowel retention, and loss of sympathetic vasomotor tone below the lesion; later (weeks to months), spinal interneuronal sprouting and denervation supersensitivity produce hyperreflexia, spasticity, clonus, Babinski sign, and automatic reflex bladder emptying",
+    "Immediate extreme spasticity and clonus within 10 seconds of spinal transection",
+    "Permanent loss of all spinal reflexes forever",
+    "Hyperreflexia above the lesion with normal voluntary walking below the lesion"
+   ],
+   "answer": 0,
+   "explain": "Recovery of the bulbocavernosus reflex (S2-S4) is typically the first sign that spinal shock is resolving.",
+   "verified": false,
+   "open": {
+    "q": "Contrast the motor tone and deep tendon reflexes beneath a complete spinal cord transection during acute 'spinal shock' versus the chronic recovery stage months later.",
+    "accept": [
+     "Acute spinal shock: flaccid paralysis, hypotonia, and areflexia (absent reflexes); Chronic stage: hypertonia/spasticity, hyperreflexia, clonus, and positive Babinski sign",
+     "Flaccid areflexia acutely vs spastic hyperreflexia chronically"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Upper vs Lower Motor Neuron Lesions and Spinal Shock",
+   "q": "How do the clinical findings of an Upper Motor Neuron (UMN) lesion differ from a Lower Motor Neuron (LMN) lesion?",
+   "options": [
+    "UMN lesion: spastic paralysis (hypertonia), hyperreflexia, clonus, positive Babinski sign, absent/minimal disuse atrophy, no fasciculations; LMN lesion: flaccid paralysis (hypotonia), hyporeflexia/areflexia, severe neurogenic muscle atrophy, fasciculations, and fibrillations on EMG",
+    "UMN lesion causes severe fasciculations and absent reflexes; LMN lesion causes spasticity and Babinski sign",
+    "Both UMN and LMN lesions produce identical flaccid areflexia",
+    "LMN lesions cause clonus and hypertonia"
+   ],
+   "answer": 0,
+   "explain": "LMN lesions destroy the final common pathway (ventral horn cell or motor axon), denervating skeletal muscle (causing atrophy and spontaneous nicotinic-receptor fasciculations), whereas UMN lesions remove descending cortical inhibition of brainstem/spinal reflex arcs.",
+   "verified": false,
+   "open": {
+    "q": "Compare Upper Motor Neuron (UMN) and Lower Motor Neuron (LMN) lesions across four clinical signs: muscle tone, deep tendon reflexes, muscle atrophy, and fasciculations.",
+    "accept": [
+     "UMN: hypertonia/spasticity, hyperreflexia, mild disuse atrophy only, no fasciculations; LMN: hypotonia/flaccidity, hyporeflexia/areflexia, severe rapid atrophy, fasciculations present",
+     "Spastic/hyperreflexic/no fasciculations (UMN) vs flaccid/areflexic/severe atrophy/fasciculations (LMN)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Upper vs Lower Motor Neuron Lesions and Spinal Shock",
+   "q": "What is the 'Babinski sign' (extensor plantar response), and when is it physiological versus pathological?",
+   "options": [
+    "Stroking the lateral sole of the foot elicits dorsiflexion (extension) of the great toe and fanning of the outer toes; it is normal/physiological in infants under ~12-18 months (due to incomplete corticospinal tract myelination) and pathological in older children/adults as a hallmark of corticospinal (UMN) tract dysfunction",
+    "Plantar flexion of all toes; pathological at all ages",
+    "Dorsiflexion of the great toe; normal in healthy 30-year-old adults",
+    "Extension of the elbow when tapping the biceps tendon"
+   ],
+   "answer": 0,
+   "explain": "In healthy adults with intact myelinated corticospinal tracts, plantar stimulation produces downward plantar flexion of the toes; UMN lesions unmask the primitive spinal extensor synergy.",
+   "verified": false,
+   "open": {
+    "q": "Describe a positive Babinski sign and explain why it is normal in infants but pathological in adults.",
+    "accept": [
+     "Dorsiflexion (upward extension) of the hallux with fanning of the other toes upon stroking the lateral plantar sole; physiological in infants because corticospinal tracts are not yet fully myelinated, and pathological in adults indicating corticospinal (UMN) tract damage",
+     "Great toe dorsiflexion and toe fanning; normal in infants due to incomplete corticospinal myelination, abnormal in adults due to UMN lesion"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Upper vs Lower Motor Neuron Lesions and Spinal Shock",
+   "q": "What is 'ankle clonus', and what neural mechanism produces it in patients with upper motor neuron lesions?",
+   "options": [
+    "Rhythmic, involuntary, oscillating plantar flexion and dorsiflexion contractions (~5-8 Hz) elicited by sudden sustained passive dorsiflexion of the ankle; caused by hyperexcitable gamma-loop/stretch reflex oscillation when descending corticospinal inhibition is lost",
+    "Complete absence of ankle movement when tapping the Achilles tendon",
+    "A resting pill-rolling tremor of the fingers",
+    "Voluntary tapping of the foot during music"
+   ],
+   "answer": 0,
+   "explain": "Sustained stretch triggers a hyperactive gastrocnemius-soleus stretch reflex contraction that briefly unloads spindles, followed by gravity/examiner dorsiflexion restretching the spindles in a self-sustaining oscillation (>3-4 beats is pathological).",
+   "verified": false,
+   "open": {
+    "q": "Define clonus and state what neurological lesion it indicates.",
+    "accept": [
+     "Involuntary rhythmic oscillating muscle contractions triggered by sudden sustained passive stretch; indicates an upper motor neuron (corticospinal) lesion with hyperexcitable stretch reflexes",
+     "Rhythmic stretch-induced oscillating contractions caused by UMN lesion hyperreflexia"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-025",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Deep Tendon and Superficial Reflexes",
+   "q": "Match the five standard clinical deep tendon (muscle stretch) reflexes with their primary spinal cord root levels:",
+   "options": [
+    "Biceps: C5-C6; Brachioradialis: C5-C6; Triceps: C7 (C6-C8); Patellar (knee jerk): L2-L4 (primarily L3-L4); Achilles (ankle jerk): S1 (S1-S2)",
+    "Biceps: L4; Patellar: C5; Achilles: T10",
+    "Triceps: S1; Achilles: C7; Biceps: L2",
+    "All five reflexes are mediated by C1-C2"
+   ],
+   "answer": 0,
+   "explain": "Mnemonic ascending from ankle to elbow: S1,2 (Achilles), L3,4 (Patellar), C5,6 (Biceps/Brachioradialis), C7,8 (Triceps) — '1-2 buckle my shoe, 3-4 kick the door, 5-6 pick up sticks, 7-8 lay them straight.'",
+   "verified": false,
+   "open": {
+    "q": "State the primary spinal nerve root levels tested by: (1) biceps reflex, (2) triceps reflex, (3) patellar reflex, and (4) Achilles reflex.",
+    "accept": [
+     "Biceps: C5-C6; Triceps: C7; Patellar: L2-L4 (L3-L4); Achilles: S1 (S1-S2)",
+     "C5-C6, C7, L3-L4, S1"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-026",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Clinical Deep Tendon and Superficial Reflexes",
+   "q": "What is the 'Jendrassik maneuver' (e.g., hooking fingers together and pulling hard while the examiner taps the patellar tendon), and how does it reinforce weak deep tendon reflexes?",
+   "options": [
+    "Voluntary forceful contraction of distant upper-limb muscles increases descending facilitatory reticulospinal/corticospinal drive to spinal gamma motor neurons (and reduces presynaptic inhibition of Type Ia afferents) throughout the spinal cord, enhancing muscle spindle sensitivity in the lower limbs",
+    "It paralyzes the hamstring muscles with local anesthetic",
+    "It blocks the dorsal column-medial lemniscus pathway",
+    "It directly stimulates the femoral nerve mechanically"
+   ],
+   "answer": 0,
+   "explain": "Jendrassik reinforcement distinguishes true organic areflexia (e.g., peripheral neuropathy/radiculopathy, where the reflex remains absent) from normal physiologic hyporeflexia.",
+   "verified": false,
+   "open": {
+    "q": "Explain the physiological mechanism by which the Jendrassik maneuver enhances deep tendon reflexes.",
+    "accept": [
+     "Forceful voluntary contraction of remote muscles increases descending facilitation of spinal gamma motor neurons and reduces Ia presynaptic inhibition, heightening muscle spindle sensitivity",
+     "Increases generalized gamma motor neuron fusimotor drive and reduces Ia presynaptic inhibition"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-027",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Clinical Deep Tendon and Superficial Reflexes",
+   "q": "Identify the afferent and efferent cranial/spinal nerves for the corneal, pupillary light, and gag reflexes:",
+   "options": [
+    "Corneal reflex: afferent CN V1 (ophthalmic), efferent bilateral CN VII (facial); Pupillary light reflex: afferent CN II (optic), efferent bilateral CN III (oculomotor Edinger-Westphal parasympathetic); Gag reflex: afferent CN IX (glossopharyngeal), efferent CN X (vagus)",
+    "Corneal reflex: afferent CN II, efferent CN XII; Gag reflex: afferent CN I, efferent CN IV",
+    "Pupillary light reflex: afferent CN V, efferent CN VI",
+    "All three reflexes are mediated purely by spinal nerves C1-C4"
+   ],
+   "answer": 0,
+   "explain": "Because all three brainstem reflexes project bilaterally to efferent nuclei, unilateral afferent lesions abolish both direct and consensual responses on that side, whereas unilateral efferent lesions abolish only the ipsilateral motor response.",
+   "verified": false,
+   "open": {
+    "q": "State the afferent and efferent cranial nerves for: (1) the corneal blink reflex, (2) the pupillary light reflex, and (3) the gag reflex.",
+    "accept": [
+     "1) Corneal: afferent CN V1, efferent CN VII; 2) Pupillary light: afferent CN II, efferent CN III; 3) Gag: afferent CN IX, efferent CN X",
+     "V1/VII, II/III, IX/X"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sensory Transduction, Receptor Potential, and Adaptation",
+   "q": "In vertebrate retinal rod and cone photoreceptors (an unusual exception among sensory receptors), how does light stimulation alter membrane potential and neurotransmitter release?",
+   "options": [
+    "In darkness, high intracellular cGMP keeps cGMP-gated Na+/Ca2+ channels open (depolarized 'dark current' ~-40 mV, continuously releasing glutamate); light activates rhodopsin -> transducin -> phosphodiesterase, hydrolyzing cGMP, closing Na+ channels, and HYPERPOLARIZING the photoreceptor (~-70 mV) to reduce glutamate release",
+    "Light opens voltage-gated Na+ channels and depolarizes rods to +40 mV",
+    "Photoreceptors fire rapid all-or-none action potentials at 500 Hz in bright light",
+    "Light increases intracellular cGMP tenfold"
+   ],
+   "answer": 0,
+   "explain": "Unlike cutaneous mechanoreceptors or hair cells that depolarize when stimulated, retinal rods and cones hyperpolarize in response to light.",
+   "verified": false,
+   "open": {
+    "q": "Explain why vertebrate retinal photoreceptors hyperpolarize rather than depolarize when exposed to light.",
+    "accept": [
+     "Light activates transducin and cGMP phosphodiesterase, lowering intracellular cGMP and closing constitutively open cGMP-gated Na+/Ca2+ channels that maintain the depolarized dark current",
+     "Light-induced cGMP breakdown closes Na+ channels, hyperpolarizing the cell"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sensory Transduction, Receptor Potential, and Adaptation",
+   "q": "In cochlear and vestibular hair cells, how does mechanical deflection of stereocilia toward the tallest stereocilium (kinocilium) produce receptor depolarization?",
+   "options": [
+    "Deflection toward the kinocilium stretches extracellular 'tip links' connecting adjacent stereocilia, mechanically pulling open cation channels at the stereociliary tips and allowing K+ influx from K+-rich endolymph (driven by the +80 mV endocochlear potential), depolarizing the hair cell and opening voltage-gated Ca2+ channels",
+    "Deflection closes all Na+ channels and hyperpolarizes the hair cell to -110 mV",
+    "Stereocilia secrete acetylcholine directly into endolymph",
+    "Deflection toward the shortest stereocilium causes depolarization"
+   ],
+   "answer": 0,
+   "explain": "Because cochlear endolymph has uniquely high [K+] (~150 mM) and a +80 mV endocochlear potential, opening apical mechanotransduction channels drives K+ INTO the hair cell to depolarize it!",
+   "verified": false,
+   "open": {
+    "q": "Why does opening apical cation channels in cochlear hair cells cause potassium (K+) INFLUX and depolarization rather than K+ efflux?",
+    "accept": [
+     "The surrounding endolymph has a very high K+ concentration (~150 mM) and a +80 mV positive endocochlear potential, creating a strong electrochemical gradient driving K+ into the negatively charged hair cell",
+     "High endolymph [K+] and the +80 mV endocochlear potential drive K+ inward into the cell"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-030",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cutaneous Mechanoreceptors and Somatosensory Coding",
+   "q": "Why is two-point discrimination threshold smallest on the fingertips and lips (~1-3 mm) and largest on the back or thigh (~40-70 mm)?",
+   "options": [
+    "Fingertips and lips have a much higher innervation density of mechanoreceptors (Meissner and Merkel), smaller individual receptive fields, less convergence onto second-order neurons, and disproportionately large cortical representation in primary somatosensory cortex (S1 sensory homunculus)",
+    "The back contains no tactile receptors whatsoever",
+    "Action potentials travel 100 times faster from the fingertips than from the back",
+    "Fingertips rely solely on unmyelinated C fibers for fine touch"
+   ],
+   "answer": 0,
+   "explain": "High receptor density + small receptive fields + low convergence = high spatial resolution and large cortical magnification on the postcentral gyrus.",
+   "verified": false,
+   "open": {
+    "q": "State three neuroanatomical factors responsible for the tiny two-point discrimination threshold (~2 mm) on the human fingertips.",
+    "accept": [
+     "High density of mechanoreceptors (Merkel/Meissner), small receptive fields, low convergence onto ascending neurons, and large cortical representation in S1",
+     "High receptor density, small receptive fields, and large S1 cortical magnification"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-031",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Nociceptors, Thermoreceptors, and Pain Modulation",
+   "q": "Which transient receptor potential (TRP) ion channels on free nerve endings transduce noxious heat/capsaicin versus innocuous cool/menthol?",
+   "options": [
+    "TRPV1 transduces noxious heat (>43 C), protons (acid), and capsaicin (chili peppers), whereas TRPM8 transduces cool temperatures (<25-28 C) and menthol",
+    "TRPV1 transduces ice-cold temperatures; TRPM8 transduces boiling water",
+    "Both TRPV1 and TRPM8 are voltage-gated sodium channels",
+    "TRPV1 is found exclusively in the retina"
+   ],
+   "answer": 0,
+   "explain": "Discovery of TRPV1 and Piezo1/Piezo2 mechanosensitive channels earned the 2021 Nobel Prize in Physiology or Medicine.",
+   "verified": false,
+   "open": {
+    "q": "Name the TRP receptor channel activated by noxious heat (>43 C) and capsaicin, and the TRP channel activated by cool temperatures and menthol.",
+    "accept": [
+     "TRPV1 (noxious heat and capsaicin) and TRPM8 (cool temperatures and menthol)",
+     "TRPV1 and TRPM8"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-032",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Nociceptors, Thermoreceptors, and Pain Modulation",
+   "q": "How do 'primary hyperalgesia' (peripheral sensitization) and 'secondary hyperalgesia / allodynia' (central sensitization) differ following tissue injury?",
+   "options": [
+    "Primary hyperalgesia occurs AT the site of injury due to inflammatory soup mediators (bradykinin, prostaglandins PGE2, histamine, H+, K+, substance P) lowering the activation threshold of peripheral nociceptors; secondary hyperalgesia/allodynia occurs in surrounding uninjured skin due to spinal dorsal horn NMDA-receptor-mediated central sensitization ('wind-up')",
+    "Primary hyperalgesia means complete absence of pain",
+    "Allodynia means a severed spinal cord",
+    "Prostaglandins block all nociceptor firing"
+   ],
+   "answer": 0,
+   "explain": "In allodynia, normally innocuous touch (via A-beta fibers) is perceived as painful due to dorsal horn central sensitization.",
+   "verified": false,
+   "open": {
+    "q": "Distinguish hyperalgesia from allodynia, and contrast peripheral sensitization versus central sensitization.",
+    "accept": [
+     "Hyperalgesia: exaggerated pain response to a normally painful stimulus (driven peripherally by inflammatory mediators lowering nociceptor threshold); Allodynia: pain elicited by a normally non-painful stimulus like light touch (driven centrally by dorsal horn NMDA-mediated central sensitization)",
+     "Increased pain to noxious stimuli (hyperalgesia/peripheral sensitization) vs pain from innocuous stimuli (allodynia/central sensitization)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-033",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification and Properties of Sensory Receptors",
+   "q": "According to the Erlanger-Gasser (alphabetical) and Lloyd-Hunt (numerical) nerve fiber classifications, which sensory fiber groups have the fastest conduction velocities?",
+   "options": [
+    "A-alpha / Type Ia (muscle spindle primary afferents, 70-120 m/s, heavily myelinated, largest diameter 12-20 um) and Type Ib (Golgi tendon organs, 70-120 m/s), followed by A-beta / Type II (cutaneous mechanoreceptors, 30-70 m/s), A-delta / Type III (fast pain/cold, 5-30 m/s), and unmyelinated C / Type IV (slow pain/warmth, 0.5-2 m/s)",
+    "Unmyelinated C / Type IV fibers conduct at 120 m/s",
+    "A-delta fibers are thicker and faster than A-alpha fibers",
+    "Conduction velocity is identical (10 m/s) in all sensory axons"
+   ],
+   "answer": 0,
+   "explain": "Conduction velocity in myelinated fibers scales linearly with axon diameter (~6 x diameter in micrometers), making proprioceptive Ia/Ib afferents the fastest sensory fibers in the body.",
+   "verified": false,
+   "open": {
+    "q": "Rank these sensory fibers from fastest to slowest conduction velocity: C (Type IV), A-beta (Type II), A-alpha (Type Ia), and A-delta (Type III).",
+    "accept": [
+     "A-alpha (Type Ia) > A-beta (Type II) > A-delta (Type III) > C (Type IV)",
+     "Ia > II > III > IV"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-034",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Muscle Spindles and the Stretch (Myotatic) Reflex",
+   "q": "How do 'dynamic gamma motor neurons' and 'static gamma motor neurons' differentially tune muscle spindle sensitivity?",
+   "options": [
+    "Dynamic gamma motor neurons innervate dynamic nuclear bag1 fibers to enhance sensitivity to the VELOCITY/rate of stretch (important during rapid movements/running), whereas static gamma motor neurons innervate nuclear chain and static bag2 fibers to maintain tonic firing and sensitivity to STATIC muscle length",
+    "Dynamic gamma neurons paralyze extrafusal fibers",
+    "Static gamma neurons innervate Golgi tendon organs",
+    "Both gamma subtypes inhibit Type Ia afferents completely"
+   ],
+   "answer": 0,
+   "explain": "Descending reticulospinal and vestibulospinal tracts independently adjust dynamic and static fusimotor (gamma) gain depending on whether a motor task demands rapid velocity damping or steady postural holding.",
+   "verified": false,
+   "open": {
+    "q": "Compare the targets and functional effects of dynamic gamma motor neurons versus static gamma motor neurons.",
+    "accept": [
+     "Dynamic gamma neurons innervate dynamic nuclear bag fibers to boost velocity-of-stretch sensitivity; static gamma neurons innervate nuclear chain and static bag fibers to maintain steady length sensitivity",
+     "Dynamic gamma -> nuclear bag (velocity sensitivity); static gamma -> nuclear chain (static length sensitivity)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-035",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 64-year-old man with poorly controlled type 2 diabetes mellitus presents with numbness and tingling in a 'stocking-glove' distribution, loss of vibration and joint position sense in his toes, absent Achilles tendon reflexes (even with Jendrassik reinforcement), and a positive Romberg sign (swaying/falling when closing his eyes while standing with feet together). Why does he lose balance specifically when closing his eyes?",
+   "options": [
+    "Diabetic large-fiber peripheral neuropathy has impaired proprioceptive A-beta/Ia afferents from his lower limbs; while his eyes are open, visual input compensates for lost proprioception, but closing his eyes removes visual compensation and unmasks sensory ataxia (positive Romberg sign)",
+    "He has a cerebellar vermis tumor (which causes ataxia even with eyes open)",
+    "He has an acute middle cerebral artery stroke causing spastic hyperreflexia",
+    "Closing his eyes causes acute hypoglycemia"
+   ],
+   "answer": 0,
+   "explain": "A positive Romberg sign specifically diagnoses sensory (proprioceptive) ataxia (dorsal column or large-fiber sensory neuropathy), whereas cerebellar ataxia causes instability with eyes BOTH open and closed.",
+   "verified": false,
+   "open": {
+    "q": "What does a positive Romberg sign indicate neuroanatomically, and how does it distinguish sensory ataxia from cerebellar ataxia?",
+    "accept": [
+     "Proprioceptive sensory loss (dorsal column-medial lemniscus or large-fiber peripheral neuropathy); in sensory ataxia, vision compensates when eyes are open so instability appears only when eyes close, whereas cerebellar ataxia causes instability with eyes both open and closed",
+     "Proprioceptive/dorsal column deficit; instability only with eyes closed (sensory) vs eyes open and closed (cerebellar)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-036",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 58-year-old woman suffers an ischemic stroke in the right internal capsule. Three weeks later, neurological examination of her LEFT upper and lower limbs reveals increased velocity-dependent resistance to passive stretch (spasticity), 4+ hyperactive biceps and patellar reflexes, sustained left ankle clonus, and a left extensor plantar (Babinski) response. Why do deep tendon reflexes become hyperactive after an internal capsule stroke?",
+   "options": [
+    "Loss of descending corticospinal inhibition over brainstem reticulospinal tracts and spinal gamma/alpha motor neurons increases fusimotor (gamma) gain and reduces presynaptic inhibition of Type Ia spindle afferents, hyperexciting the stretch reflex arc",
+    "The stroke directly stimulated left ventral horn alpha motor neurons",
+    "Peripheral Type Ia sensory axons grew twice as thick",
+    "Golgi tendon organs were destroyed in the left leg"
+   ],
+   "answer": 0,
+   "explain": "Capsular lesions interrupt both corticospinal and corticoreticular fibers, disinhibiting facilitatory medullary/pontine reticulospinal drive to spinal stretch reflex circuits.",
+   "verified": false,
+   "open": {
+    "q": "Explain why an upper motor neuron lesion in the internal capsule produces contralateral hyperreflexia and spasticity.",
+    "accept": [
+     "Interruption of descending inhibitory corticospinal/corticoreticular tracts disinhibits spinal gamma and alpha motor neurons and reduces Ia presynaptic inhibition, exaggerating the stretch reflex",
+     "Loss of descending inhibitory control over spinal stretch reflex arcs and gamma motor neurons"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-037",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 46-year-old man presents with sharp, shooting lower back pain radiating down the posterior right thigh and lateral calf into the sole of the foot after lifting heavy boxes. Examination reveals weakness of right plantar flexion, sensory loss over the lateral foot, and an ABSENT right Achilles tendon reflex, while the right patellar reflex is normal (2+). Which nerve root is compressed?",
+   "options": [
+    "Right S1 nerve root (typically compressed by a paracentral L5-S1 intervertebral disc herniation)",
+    "Right L3 nerve root",
+    "Right C7 nerve root",
+    "Left L4 nerve root"
+   ],
+   "answer": 0,
+   "explain": "An L5-S1 disc herniation compresses the traversing S1 nerve root, interrupting the S1 afferent/efferent limb of the Achilles reflex (LMN radiculopathy).",
+   "verified": false,
+   "open": {
+    "q": "Which spinal nerve root and intervertebral disc level are most likely affected in a patient with posterior leg sciatica, weak plantar flexion, lateral foot numbness, and an absent Achilles reflex?",
+    "accept": [
+     "S1 nerve root (L5-S1 intervertebral disc herniation)",
+     "S1 root / L5-S1 disc"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-038",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 35-year-old gardener steps on a rusty nail and develops severe painful jaw spasms (trismus), arched back (opisthotonos), and generalized muscle spasms triggered by minor sounds or touch 7 days later. How does Clostridium tetani toxin (tetanospasmin) produce these violent spasms?",
+   "options": [
+    "Tetanospasmin travels retrogradely up motor axons to the spinal cord and cleaves synaptobrevin (SNARE protein), blocking exocytosis of the inhibitory neurotransmitters glycine and GABA from Renshaw cells and Ia inhibitory interneurons—leaving alpha motor neurons uninhibited and causing simultaneous agonist-antagonist co-contraction",
+    "Tetanospasmin blocks acetylcholine release at the neuromuscular junction (causing flaccid paralysis)",
+    "Tetanospasmin destroys Type Ia sensory receptors in muscle spindles",
+    "Tetanospasmin blocks voltage-gated Na+ channels in peripheral nerves"
+   ],
+   "answer": 0,
+   "explain": "Whereas botulinum toxin acts peripherally at the NMJ to block ACh release (flaccid paralysis), tetanospasmin acts centrally in the spinal cord to block inhibitory glycine/GABA release from Renshaw and Ia interneurons (spastic tetanic paralysis).",
+   "verified": false,
+   "open": {
+    "q": "Contrast the sites of action and clinical motor effects of tetanus toxin versus botulinum toxin.",
+    "accept": [
+     "Tetanus toxin acts centrally in the spinal cord/brainstem to block inhibitory glycine and GABA release from Renshaw/inhibitory interneurons (causing spastic paralysis/tetany); Botulinum toxin acts peripherally at the neuromuscular junction to block acetylcholine release (causing flaccid paralysis)",
+     "Central glycine/GABA blockade -> spastic paralysis (tetanus) vs peripheral NMJ ACh blockade -> flaccid paralysis (botulinum)"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-039",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 28-year-old woman sustains a traumatic hemisection of the right half of the spinal cord at T8 (Brown-Sequard syndrome) from a knife wound. Three months later, what sensory and reflex deficits are present BELOW the T8 level?",
+   "options": [
+    "Ipsilateral (right) spastic paralysis, hyperreflexia, Babinski sign, and loss of vibration/proprioception/fine touch below T8 (crossed corticospinal and uncrossed dorsal column tracts), PLUS contralateral (left) loss of pain and temperature sensation beginning 1-2 segments below T8 (crossed spinothalamic tract)",
+    "Bilateral flaccid paralysis of the arms with intact legs",
+    "Contralateral loss of vibration and ipsilateral loss of pain",
+    "Complete absence of all reflexes above C5"
+   ],
+   "answer": 0,
+   "explain": "Because dorsal columns and lateral corticospinal tracts decussate in the medulla while spinothalamic axons ascend 1-2 segments in Lissauer's tract before decussating in the anterior white commissure, hemisection produces ipsilateral UMN + dorsal column loss and contralateral spinothalamic loss.",
+   "verified": false,
+   "open": {
+    "q": "Summarize the motor, reflex, and sensory deficits beneath the lesion in a right-sided T8 spinal cord hemisection (Brown-Sequard syndrome).",
+    "accept": [
+     "Ipsilateral (right) UMN spastic paralysis, hyperreflexia, Babinski sign, and loss of proprioception/vibration/fine touch below T8; contralateral (left) loss of pain and temperature starting 1-2 segments below T8",
+     "Ipsilateral UMN weakness/hyperreflexia and dorsal column loss + contralateral spinothalamic pain/temperature loss"
+    ]
+   }
+  },
+  {
+   "id": "pl-receptors-and-reflexes-040",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations",
+   "q": "A 60-year-old man presents with acute substernal chest tightness radiating down the medial aspect of his left arm and into his jaw during exertion, accompanied by diaphoresis and ST-segment elevations on ECG. Why is cardiac ischemic pain perceived in the left C8-T1 dermatome (medial arm)?",
+   "options": [
+    "Visceral sympathetic nociceptive fibers from the heart enter the T1-T5 dorsal horns and converge onto the same second-order spinothalamic tract neurons that receive somatic cutaneous afferents from the T1-T4 chest wall and medial arm (convergence-projection mechanism of referred pain)",
+    "Coronary arteries run directly down the left brachial plexus",
+    "The phrenic nerve innervates the left hand",
+    "Myocardial ischemia stimulates Pacinian corpuscles in the palm"
+   ],
+   "answer": 0,
+   "explain": "Convergence of T1-T5 cardiac sympathetic visceral afferents with T1-T4 somatic cutaneous afferents in the spinal dorsal horn causes the somatosensory cortex to project cardiac pain onto the chest and medial left arm.",
+   "verified": false,
+   "open": {
+    "q": "Identify the spinal cord segments and afferent pathway responsible for referring myocardial ischemic pain to the chest wall and medial left arm.",
+    "accept": [
+     "T1-T5 (especially T1-T4) spinal segments via cardiac sympathetic visceral nociceptive afferents converging with T1-T4 somatic afferents on shared spinothalamic dorsal horn neurons",
+     "T1-T5 cardiac sympathetic afferents converging with somatic afferents in the dorsal horn"
+    ]
+   }
+  }
+ ]
+}
