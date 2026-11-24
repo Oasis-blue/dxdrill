@@ -2,7 +2,7 @@
 (function () {
   var DX = window.DX, esc = DX.esc, app = null;
   var LETTERS = ["A", "B", "C", "D"];
-  var S = { view: "setup", topic: "all", n: 10, secs: 45, run: null, timer: null, note: "" };
+  var S = { view: "setup", sel: null, n: 10, secs: 45, bell: true, run: null, timer: null, note: "" };
 
   function pool() { return DX.questions.filter(function (q) { return q.image && q.options && q.options.length === 4 && typeof q.answer === "number"; }); }
   function topicName(id) { var t = DX.topicById && DX.topicById[id]; return t ? t.name : id; }
@@ -23,33 +23,41 @@
   }
 
   function setupView(list) {
-    var topics = {}; list.forEach(function (q) { var m = topics[q.topic] = topics[q.topic] || {}; m[q.image] = 1; });
-    var scoped = S.topic === "all" ? list : list.filter(function (q) { return q.topic === S.topic; });
-    var avail = Object.keys(byImage(scoped)).length;
-    var opts = '<option value="all"' + (S.topic === "all" ? " selected" : "") + '>All slides (' + Object.keys(byImage(list)).length + ')</option>' +
-      Object.keys(topics).sort().map(function (t) { return '<option value="' + esc(t) + '"' + (S.topic === t ? " selected" : "") + '>' + esc(topicName(t)) + ' (' + Object.keys(topics[t]).length + ')</option>'; }).join("");
-    function seg(name, vals, cur, suffix) {
-      return '<div class="chips" role="group" aria-label="' + name + '">' + vals.map(function (v) { return '<button class="chip toggle" data-act="' + (name === "Stations" ? "n" : "secs") + '" data-v="' + v + '" aria-pressed="' + (cur === v) + '">' + v + suffix + '</button>'; }).join("") + '</div>';
+    var tcount = {}, byArea = {};
+    list.forEach(function (q) { var m = tcount[q.topic] = tcount[q.topic] || {}; m[q.image] = 1; });
+    Object.keys(tcount).forEach(function (t) { var a = DX.topicById[t] ? DX.topicById[t].area : "other"; (byArea[a] = byArea[a] || []).push(t); });
+    if (S.sel === null) { S.sel = {}; Object.keys(tcount).forEach(function (t) { S.sel[t] = true; }); }   /* first visit: everything ticked */
+    var chosen = list.filter(function (q) { return S.sel[q.topic]; }), avail = Object.keys(byImage(chosen)).length, nTop = Object.keys(S.sel).filter(function (t) { return S.sel[t] && tcount[t]; }).length;
+    var areas = Object.keys(byArea).sort().map(function (a) {
+      var ts = byArea[a].sort(), allOn = ts.every(function (t) { return S.sel[t]; }), nm = DX.areaById && DX.areaById[a] ? DX.areaById[a].name : a;
+      return '<div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">' + esc(nm) + '</span><button class="chip toggle" data-act="ar" data-id="' + esc(a) + '" aria-pressed="' + allOn + '">Whole area</button></div>' +
+        '<div class="chips">' + ts.map(function (t) { return '<button class="chip toggle" data-act="tp" data-id="' + esc(t) + '" aria-pressed="' + !!S.sel[t] + '">' + esc(topicName(t)) + ' · ' + Object.keys(tcount[t]).length + '</button>'; }).join("") + '</div></div>';
+    }).join("");
+    function seg(name, act, vals, cur, suffix) {
+      return '<div class="chips" role="group" aria-label="' + name + '">' + vals.map(function (v) { return '<button class="chip toggle" data-act="' + act + '" data-v="' + v + '" aria-pressed="' + (cur === v) + '">' + v + suffix + '</button>'; }).join("") + '</div>';
     }
     var n = Math.min(S.n, avail);
     return '<div class="wrap stack"><header><p class="eyebrow">Spotter</p><h1>Steeplechase</h1>' +
       '<p class="lede">A run of stations. Each shows a slide and a question for a fixed time, then moves on by itself. You cannot go back, like the real exam.</p></header>' +
-      '<section class="section stack"><div class="field"><label class="label" for="sp-topic">Slides from</label><select id="sp-topic">' + opts + '</select></div>' +
-      '<div class="field"><span class="label">Stations</span>' + seg("Stations", [5, 10, 15, 20], S.n, "") + '</div>' +
-      '<div class="field"><span class="label">Seconds per station</span>' + seg("Seconds", [30, 45, 60, 90], S.secs, " s") + '</div>' +
-      (avail < S.n ? '<p class="hint">Only ' + avail + ' slide' + (avail === 1 ? "" : "s") + ' here, so the run will have ' + avail + ' station' + (avail === 1 ? "" : "s") + '.</p>' : "") +
+      '<section class="section stack"><div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Slides from</span><span class="row tight"><button class="btn ghost small" data-act="selall">Select all</button><button class="btn ghost small" data-act="selnone">Clear</button></span></div>' + areas +
+      '<p class="hint">' + nTop + ' topic' + (nTop === 1 ? "" : "s") + ' selected · ' + avail + ' slide' + (avail === 1 ? "" : "s") + '. Numbers beside each topic are slides. More subjects appear here as they get pictures.</p></div>' +
+      '<div class="field"><span class="label">Stations</span>' + seg("Stations", "n", [5, 10, 15, 20, 30], S.n, "") + '</div>' +
+      '<div class="field"><span class="label">Seconds per station</span>' + seg("Seconds", "secs", [30, 45, 60, 90], S.secs, " s") + '</div>' +
+      '<div class="field"><button class="chip toggle" data-act="bell" aria-pressed="' + S.bell + '">\uD83D\uDD14 Bell at each station change</button><p class="hint">The bell only sounds if Sound is on in the top bar.</p></div>' +
+      (avail && avail < S.n ? '<p class="hint">Only ' + avail + ' slide' + (avail === 1 ? "" : "s") + ' selected, so the run will have ' + avail + ' station' + (avail === 1 ? "" : "s") + '.</p>' : "") +
       (S.note ? '<p class="note bad" role="status">' + esc(S.note) + '</p>' : "") +
-      '<div class="row"><button class="btn primary" data-act="start"' + (avail ? "" : " disabled") + '>Start ' + n + ' station' + (n === 1 ? "" : "s") + ' · about ' + Math.ceil(n * S.secs / 60) + ' min</button></div></section></div>';
+      '<div class="row"><button class="btn primary" data-act="start"' + (avail ? "" : " disabled") + '>' + (avail ? 'Start ' + n + ' station' + (n === 1 ? "" : "s") + ' · about ' + Math.ceil(n * S.secs / 60) + ' min' : "Tick at least one topic") + '</button></div></section></div>';
   }
 
   function start() {
-    var list = pool().filter(function (q) { return S.topic === "all" || q.topic === S.topic; });
+    var list = pool().filter(function (q) { return S.sel && S.sel[q.topic]; });
     var imgs = byImage(list), keys = DX.shuffle(Object.keys(imgs)).slice(0, S.n);
-    if (!keys.length) { S.note = "No slides for that choice."; paint(); return; }
+    if (!keys.length) { S.note = "Tick at least one topic."; paint(); return; }
     var items = keys.map(function (k) {
       var qs = imgs[k], q = qs[Math.floor(Math.random() * qs.length)];
       return { q: q, order: DX.optOrder(q.options), pick: null };
     });
+    if (DX.fx && DX.fx.unlock) DX.fx.unlock();   /* the tap on Start lets the bell play later */
     S.run = { items: items, i: 0, left: S.secs, done: false, startedAt: Date.now() };
     S.view = "run"; S.note = ""; paint(); tickStart();
   }
@@ -70,11 +78,12 @@
   function next() {
     var r = S.run; if (!r) return;
     if (r.i + 1 >= r.items.length) { finish(); return; }
+    if (S.bell && DX.fx) DX.fx.play("bell");
     r.i++; r.left = S.secs; r.deadline = Date.now() + S.secs * 1000; paint();
     var h = document.getElementById("sp-h"); if (h) h.focus();
   }
   function finish() {
-    stop(); var r = S.run; r.done = true; r.secsUsed = Math.round((Date.now() - r.startedAt) / 1000); S.view = "end";
+    stop(); if (S.bell && DX.fx) DX.fx.play("bell"); var r = S.run; r.done = true; r.secsUsed = Math.round((Date.now() - r.startedAt) / 1000); S.view = "end";
     var res = r.items.map(function (x) { return { id: x.q.id, ok: x.pick === x.q.answer, picked: x.pick !== null }; });
     DX.record(res.map(function (x) { return { id: x.id, ok: x.ok }; }));
     if (DX.cloud && DX.cloud.submit) DX.cloud.submit(res.filter(function (x) { return x.picked; }).map(function (x) { return { id: x.id, ok: x.ok }; }));
@@ -112,6 +121,11 @@
     var b = e.target.closest ? e.target.closest("[data-act]") : null; if (!b) return;
     var a = b.getAttribute("data-act"), v = b.getAttribute("data-v");
     if (a === "n") { S.n = Number(v); paint(); }
+    else if (a === "tp") { var id = b.getAttribute("data-id"); S.sel[id] = !S.sel[id]; paint(); }
+    else if (a === "ar") { var ar = b.getAttribute("data-id"), ts = Object.keys(S.sel).filter(function (t) { return (DX.topicById[t] || {}).area === ar; }), on = ts.every(function (t) { return S.sel[t]; }); ts.forEach(function (t) { S.sel[t] = !on; }); paint(); }
+    else if (a === "selall") { Object.keys(S.sel).forEach(function (t) { S.sel[t] = true; }); paint(); }
+    else if (a === "selnone") { Object.keys(S.sel).forEach(function (t) { S.sel[t] = false; }); paint(); }
+    else if (a === "bell") { S.bell = !S.bell; paint(); }
     else if (a === "secs") { S.secs = Number(v); paint(); }
     else if (a === "start" || a === "again") start();
     else if (a === "setup") { S.view = "setup"; paint(); }
@@ -119,7 +133,7 @@
     else if (a === "skip") next();
     else if (a === "quit") { stop(); S.run = null; S.view = "setup"; paint(); }
   }
-  function onInput(e) { if (e.target && e.target.id === "sp-topic") { S.topic = e.target.value; paint(); } }
+  function onInput() { }
   function onKey(e) {
     if (S.view !== "run" || !S.run || e.ctrlKey || e.metaKey || e.altKey) return;
     var k = LETTERS.indexOf(String(e.key).toUpperCase()); if (k < 0) return;
