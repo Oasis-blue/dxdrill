@@ -2056,3 +2056,26 @@ end $$;
 
 revoke all on function public.admin_activity_summary(), public.admin_active_people(int, int), public.admin_topic_coverage(jsonb) from public, anon, authenticated;
 grant execute on function public.admin_activity_summary(), public.admin_active_people(int, int), public.admin_topic_coverage(jsonb) to authenticated;
+
+-- ===== update 19 =====
+-- DxDrill update 19: the questions students miss most (admin only).
+-- Needs update 18 (or at least the answers table). Safe to run again.
+
+create or replace function public.admin_missed_questions(p_days int default 30, p_min int default 5, p_limit int default 20)
+returns table (question_id text, people bigint, answers bigint, right_pct int)
+language plpgsql security definer stable set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query
+  select a.question_id, count(distinct a.user_id)::bigint, count(*)::bigint,
+         round(100.0 * count(*) filter (where a.correct) / count(*))::int
+  from public.answers a join public.profiles p on p.id = a.user_id
+  where not p.is_admin and a.created_at >= now() - make_interval(days => greatest(1, least(coalesce(p_days, 30), 365)))
+  group by a.question_id
+  having count(*) >= greatest(coalesce(p_min, 5), 3)
+  order by 4 asc, 3 desc
+  limit least(greatest(coalesce(p_limit, 20), 1), 100);
+end $$;
+
+revoke all on function public.admin_missed_questions(int, int, int) from public, anon, authenticated;
+grant execute on function public.admin_missed_questions(int, int, int) to authenticated;
