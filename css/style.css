@@ -386,3 +386,8 @@ body.bigscreen #backbar{display:none!important}
 .qimg img{display:block;max-width:100%;max-height:46vh;width:auto;height:auto;margin:0 auto;border-radius:12px;border:1.5px solid var(--line);background:#000;object-fit:contain}
 .qimg.big img{max-height:52vh}
 .qimg.small img{max-height:140px}
+/* Spotter */
+.sp .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sp-t{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums}
+.sp-t.low{color:#c0392b}
+.sp .opt.sel{border-color:var(--accent);background:rgba(27,127,74,.12)}
