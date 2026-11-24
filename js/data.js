@@ -18,6 +18,13 @@ window.DX = window.DX || {};
     });
   };
 
+  /* A shuffled order for a question's options (a list of indexes). Options that point at each other
+     ("All of the above", "Both A and B") would stop making sense after a shuffle, so those questions keep their order. */
+  DX.optOrder = function (opts) {
+    var idx = opts.map(function (_, i) { return i; });
+    var fixed = opts.some(function (o) { return /\b(all|none|both|neither)\b[^.]{0,20}\b(above|these|of the)\b|\b(option|choice)s? [A-D]\b|\b[A-D] (and|&|or) [A-D]\b/i.test(String(o)); });
+    return fixed ? idx : DX.shuffle(idx);
+  };
   DX.shuffle = function (a) {
     a = a.slice();
     for (var i = a.length - 1; i > 0; i--) {
