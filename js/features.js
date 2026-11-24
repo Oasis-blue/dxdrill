@@ -51,8 +51,8 @@
     var sb = C().sb;
     if (F.act === undefined) {
       F.act = null;
-      Promise.all([sb.rpc("admin_activity_summary"), sb.rpc("admin_active_people", { p_days: 7, p_limit: 20 }), sb.rpc("admin_topic_coverage", { p_map: topicMap() })]).then(function (r) {
-        F.act = (r[0].error || r[1].error || r[2].error) ? { err: true } : { sum: (r[0].data || [])[0] || {}, people: r[1].data || [], topics: r[2].data || [] };
+      Promise.all([sb.rpc("admin_activity_summary"), sb.rpc("admin_active_people", { p_days: 7, p_limit: 20 }), sb.rpc("admin_topic_coverage", { p_map: topicMap() }), sb.rpc("admin_missed_questions", { p_days: 30, p_min: 5, p_limit: 15 })]).then(function (r) {
+        F.act = (r[0].error || r[1].error || r[2].error) ? { err: true } : { sum: (r[0].data || [])[0] || {}, people: r[1].data || [], topics: r[2].data || [], missed: r[3].error ? null : (r[3].data || []) };
         repaint();
       }, function () { F.act = { err: true }; repaint(); });
     }
@@ -65,6 +65,18 @@
     var tps = shown.map(function (x) {
       var t = DX.topicById && DX.topicById[x.topic]; var nm = t ? t.name : x.topic;
       return '<tr><td>' + esc(nm) + '</td><td class="n">' + x.questions + '</td><td class="n">' + x.people + '</td><td class="n">' + x.finished + '</td><td class="n">' + x.answers + '</td><td class="n">' + (x.accuracy == null ? "-" : x.accuracy + "%") + '</td></tr>'; }).join("");
+    var qById = null;
+    function missedHtml(list) {
+      if (list === null) return '<p class="hint">Run supabase/update-19.sql to see the questions students miss most.</p>';
+      if (!qById) { qById = {}; (DX.questions || []).forEach(function (q) { qById[String(q.id)] = q; }); }
+      var rows = list.map(function (x) {
+        var q = qById[x.question_id], t = q && DX.topicById[q.topic];
+        var txt = q ? String(q.q || "") : "(question no longer in the bank)";
+        return '<tr><td class="n">' + x.right_pct + '%</td><td class="n">' + x.answers + '</td><td class="n">' + x.people + '</td><td>' + esc(t ? t.name : "") + '</td><td>' + esc(txt.length > 110 ? txt.slice(0, 107) + "…" : txt) + '<br><small class="muted">' + esc(x.question_id) + '</small></td></tr>';
+      }).join("");
+      return '<h3>Most-missed questions, last 30 days</h3><p class="hint">Questions with at least 5 answers, lowest percentage right first. A very low number can mean the question is hard, or that it is wrong or unclear. Read it before you add more on that topic.</p>' +
+        (rows ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th class="n">Right</th><th class="n">Answers</th><th class="n">People</th><th>Topic</th><th>Question</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p class="muted">No question has 5 answers yet.</p>');
+    }
     return '<section class="section stack"><h2>Activity</h2><p class="hint">From signed-in answers only (practice without an account stays on the device). Your own account is left out.</p>' +
       '<p><b>' + (s.answers_today || 0) + '</b> answers today by <b>' + (s.people_today || 0) + '</b> people · <b>' + (s.answers_7d || 0) + '</b> in 7 days by <b>' + (s.people_7d || 0) + '</b> people</p>' +
       '<h3>Most active, last 7 days</h3><p class="hint">Repeat % is the share of a person\u2019s answers that were questions they had already answered. A high number means they are running out of fresh questions.</p>' +
@@ -72,6 +84,7 @@
       '<h3>Topics students are finishing</h3><p class="hint">Finished = people who have answered at least 80% of that topic\u2019s questions. Write new questions for the topics at the top first.</p>' +
       (tps ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Topic</th><th class="n">Questions</th><th class="n">People</th><th class="n">Finished</th><th class="n">Answers</th><th class="n">Right</th></tr></thead><tbody>' + tps + '</tbody></table></div>' : '<p class="muted">Nothing yet.</p>') +
       (!F.actAll && a.topics.length > 12 ? '<div class="row tight"><button class="btn ghost small" data-act="allsubj">Show all ' + a.topics.length + ' topics</button></div>' : "") +
+      missedHtml(a.missed) +
       '<div class="row tight"><button class="btn ghost small" data-act="refact">Refresh</button></div></section>';
   }
   function pagesHtml(list) {
