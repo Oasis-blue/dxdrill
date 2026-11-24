@@ -1,9 +1,9 @@
 /* DxDrill service worker: lets the site open and run with no connection.
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
-var VERSION = "dxdrill-v12.7";
+var VERSION = "dxdrill-v12.8";
 var SHELL = [
   "./", "index.html", "manifest.webmanifest", "css/style.css",
-  "js/data.js", "js/practice.js", "js/fx.js", "js/hall.js", "js/tips.js", "js/screen.js", "js/remote.js", "js/features.js", "js/cloud.js", "js/polls.js", "js/about.js", "js/start.js", "js/feedback.js", "js/comps.js", "js/rooms.js", "js/debates.js", "js/cards.js", "js/app.js",
+  "js/data.js", "js/practice.js", "js/fx.js", "js/hall.js", "js/tips.js", "js/screen.js", "js/remote.js", "js/spotter.js", "js/features.js", "js/cloud.js", "js/polls.js", "js/about.js", "js/start.js", "js/feedback.js", "js/comps.js", "js/rooms.js", "js/debates.js", "js/cards.js", "js/app.js",
   "data/curriculum.json", "data/manifest.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"
 ];
