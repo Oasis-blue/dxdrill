@@ -25,11 +25,18 @@ window.DX = window.DX || {};
     var fixed = opts.some(function (o) { return /\b(all|none|both|neither)\b[^.]{0,20}\b(above|these|of the)\b|\b(option|choice)s? [A-D]\b|\b[A-D] (and|&|or) [A-D]\b/i.test(String(o)); });
     return fixed ? idx : DX.shuffle(idx);
   };
-  /* A picture for a question: "image" is a file name inside data/img/histo/. Returns "" when the question has none. */
+  /* A picture for a question. "image" is a file name inside data/img/histo/ (as before), or a path with a folder such as
+     "gross/upper-limb-01.jpg" or "clinical/froment-sign.jpg", which lives in data/img/. An optional "credit" is shown under it. */
+  DX.imgSrc = function (name) {
+    name = String(name || "");
+    if (!/^[A-Za-z0-9][A-Za-z0-9._\/-]*\.(jpg|jpeg|png|webp)$/i.test(name) || name.indexOf("..") > -1 || name.indexOf("//") > -1) return "";
+    return "data/img/" + (name.indexOf("/") > -1 ? "" : "histo/") + name;
+  };
   DX.qImg = function (q, cls) {
-    if (!q || !q.image || !/^[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp)$/i.test(q.image)) return "";
+    var src = q && q.image ? DX.imgSrc(q.image) : ""; if (!src) return "";
     var e = DX.esc || function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
-    return '<figure class="qimg ' + (cls || "") + '"><img src="data/img/histo/' + e(q.image) + '" alt="' + e(q.alt || "Microscope slide for this question") + '" loading="lazy" decoding="async"></figure>';
+    return '<figure class="qimg ' + (cls || "") + '"><img src="' + e(src) + '" alt="' + e(q.alt || "Picture for this question") + '" loading="lazy" decoding="async">' +
+      (q.credit && cls !== "small" ? '<figcaption>' + e(q.credit) + '</figcaption>' : "") + '</figure>';
   };
   DX.shuffle = function (a) {
     a = a.slice();
