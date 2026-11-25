@@ -75,7 +75,7 @@ textarea{width:100%;min-height:240px;font:13px/1.45 ui-monospace,Menlo,Consolas,
     if (!topic || !E.topics[topic]) errs.push("Topic id <code>" + esc(topic) + "</code> is not in the curriculum. Use an id from the topic list, or ask Claude to add the topic.");
     if (!Array.isArray(obj.questions) || !obj.questions.length) errs.push("There is no questions list.");
     if (errs.length) return { errs: errs, warns: warns, fixes: fixes };
-    var existing = E.files[topic], seenText = {}, skipped = 0, pos = [0, 0, 0, 0, 0, 0];
+    var existing = E.files[topic], seenText = {}, skipped = 0, pos = [0, 0, 0, 0, 0, 0], longest = 0, longList = [];
     // numbering for new ids
     var prefix = o.prefix || (existing && existing.data.questions[0] ? existing.data.questions[0].id.replace(/-?\d+$/, "") : topic);
     var maxN = 0, re = new RegExp("^" + prefix.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "-(\\d+)$");
@@ -120,6 +120,8 @@ textarea{width:100%;min-height:240px;font:13px/1.45 ui-monospace,Menlo,Consolas,
         if (E.texts[key] || seenText[key]) { skipped++; warns.push(tag + ": the same question already exists. Skipped."); return; }
         seenText[key] = 1;
         pos[ans]++;
+        (function () { var L = opts.map(function (x) { return x.length; }), mx = Math.max.apply(null, L), others = L.filter(function (_, k) { return k !== ans; }), om = Math.max.apply(null, others);
+          if (L.length >= 3 && L[ans] === mx && L[ans] > om) { longest++; longList.push({ tag: tag, r: L[ans] / (others.reduce(function (a, b) { return a + b; }, 0) / others.length || 1) }); } })();
         var id = o.renumber ? prefix + "-" + ("00" + (++n)).slice(-3) : sv(q0.id);
         if (!o.renumber && (!id || E.ids[id])) { er("id “" + id + "” is missing or already used."); return; }
         var nq = { id: id, type: "mcq", level: lv, sub: q.sub, q: q.q, options: opts, answer: ans, explain: q.explain, verified: false };
@@ -130,6 +132,13 @@ textarea{width:100%;min-height:240px;font:13px/1.45 ui-monospace,Menlo,Consolas,
     if (out.length >= 8) {
       var top = Math.max.apply(null, pos);
       if (top / out.length >= 0.6) warns.push("Over 60% of the correct answers are in the same position. Students will notice. (DxDrill shuffles options when it shows them, so this is only a warning.)");
+    }
+    if (out.length >= 8) {
+      var pct = Math.round(100 * longest / out.length);
+      if (pct >= 40) {
+        longList.sort(function (x, y) { return y.r - x.r; });
+        warns.push("The correct answer is the longest option in " + pct + "% of these questions (" + longest + " of " + out.length + "). By chance it would be about 25%. Students will learn to pick the longest. Ask the AI to make the wrong options as long and detailed as the right one, then check again. Most lopsided: " + longList.slice(0, 5).map(function (x) { return x.tag.replace("Question ", "Q"); }).join(", ") + ".");
+      }
     }
     if (o.renumber) fixes.push("New questions were numbered " + prefix + "-" + ("00" + (maxN + 1)).slice(-3) + " onwards.");
     return { errs: errs, warns: warns, fixes: fixes, topic: topic, out: out, skipped: skipped, existing: existing, prefix: prefix };
