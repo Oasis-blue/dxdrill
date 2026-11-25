@@ -242,7 +242,14 @@
   };
   window.addEventListener("hashchange", route);
   app.innerHTML = '<div class="wrap"><p class="muted">Loading questions…</p></div>';
+  var loaded = false;
+  function retryBox(title, text) {
+    app.innerHTML = '<div class="wrap stack"><h1>' + esc(title) + '</h1><p class="lede">' + esc(text) + '</p><div class="row"><button class="btn primary" id="ld-retry" type="button">Try again</button></div></div>';
+    var b = document.getElementById("ld-retry"); if (b) b.onclick = function () { location.reload(); };
+  }
+  setTimeout(function () { if (!loaded) retryBox("Still loading…", "Your connection looks slow. Wait a little longer, or tap Try again. Nothing has been lost: your scores are saved on this phone."); }, 9000);
   DX.load().then(function () {
+    loaded = true;
     /* Pages that need the account check wait for it; everything else shows at once. */
     var CLOUDY = { screen: 1, remote: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
     var h0 = (location.hash || "#home").slice(1), waits = !!CLOUDY[h0];
@@ -270,6 +277,7 @@
       if (DX.cloud && DX.cloud.user && CLOUDY[h] && h !== "account" && h !== "board") route();
     });
   }).catch(function (e) {
-    app.innerHTML = '<div class="wrap stack"><h1>Could not load the data</h1><p class="lede">DxDrill needs to be opened from a web address (for example GitHub Pages or Netlify), not by double-clicking the file. Details: ' + esc(e.message) + '</p></div>';
+    loaded = true;
+    retryBox("Could not load the questions", "DxDrill could not reach its question files. Check your connection and tap Try again. Your scores are saved on this phone. (" + (e && e.message ? e.message : "network error") + ")");
   });
 })();
