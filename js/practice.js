@@ -31,14 +31,15 @@
   /* ---------- picker ---------- */
   function pickView() {
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
-    var h = '<div class="wrap stack"><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
+    var h = '<div class="wrap stack"><a class="backtop" href="#home">\u2190 Home</a><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
       '<p class="lede">' + total + ' questions. Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p></header>' +
       '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button>' +
-      (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review what I missed · ' + missed + '</button>' : '') + '</section>';
+      (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review what I missed · ' + missed + '</button>' : '') + '</section>' +
+      '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
     DX.curriculum.subjects.forEach(function (s) {
       var sc = DX.subjectCount(s.id);
-      h += '<section class="section"><div class="shead"><h2>' + esc(s.name) + '</h2>' +
-        (sc ? '<button class="btn ghost small" data-act="scope" data-kind="subject" data-id="' + s.id + '">All ' + esc(s.name) + ' · ' + sc + '</button>' : '<span class="muted">No questions yet</span>') + '</div>';
+      h += '<details class="acc subj"><summary><span>' + esc(s.name) + '</span><small>' + (sc ? sc + " questions" : "empty") + '</small></summary><section class="section subjbody">' +
+        (sc ? '<div class="shead"><button class="btn ghost small" data-act="scope" data-kind="subject" data-id="' + s.id + '">All ' + esc(s.name) + ' · ' + sc + '</button></div>' : '<span class="muted">No questions yet</span>');
       s.areas.forEach(function (a) {
         var ac = DX.areaCount(a.id);
         h += '<details class="acc"><summary><span>' + esc(a.name) + '</span><small>' + (ac ? ac + " questions" : "empty") + '</small></summary><div class="topics">';
@@ -48,7 +49,7 @@
         });
         h += '</div></details>';
       });
-      h += '</section>';
+      h += '</section></details>';
     });
     return h + '</div>';
   }
@@ -64,12 +65,14 @@
     var sel = filtered().length;
     var counts = [["all", "All " + sel]];
     [15, 30, 50].forEach(function (n) { if (sel > n) counts.push([String(n), String(n)]); });
-    var h = '<div class="wrap stack"><header><p class="eyebrow">Practice setup</p><h1>' + esc(scopeName(P.scope)) + '</h1>' +
+    var h = '<div class="wrap stack"><button class="backtop" data-act="topics" type="button">\u2190 Choose another topic</button><header><p class="eyebrow">Practice setup</p><h1>' + esc(scopeName(P.scope)) + '</h1>' +
       '<p class="lede">' + pool.length + ' questions available.</p></header>';
     if (subs.length > 1) {
-      h += '<section class="section"><p class="label">Sections</p><div class="chips">' + subs.map(function (s) {
+      var chips = '<div class="row tight"><button class="btn ghost small" data-act="suball">Select all</button><button class="btn ghost small" data-act="subnone">Clear</button></div><div class="chips">' + subs.map(function (s) {
         return '<button class="chip toggle" data-act="sub" data-v="' + esc(s) + '" aria-pressed="' + (P.subs.indexOf(s) > -1) + '">' + esc(s) + '</button>';
-      }).join("") + '</div></section>';
+      }).join("") + '</div>';
+      if (subs.length > 12) h += '<details class="acc secs"' + (P.secOpen ? " open" : "") + '><summary><span>Sections</span><small>' + P.subs.length + ' of ' + subs.length + ' selected</small></summary><div class="secbody">' + chips + '</div></details>';
+      else h += '<section class="section"><p class="label">Sections</p>' + chips + '</section>';
     }
     h += '<section class="section"><p class="label">Mode</p><div class="seg">' +
       '<button data-act="mode" data-v="study" aria-pressed="' + (P.mode === "study") + '"><b>Study</b><span>See the explanation after every answer</span></button>' +
@@ -77,7 +80,7 @@
       '<section class="section"><p class="label">How many</p><div class="chips">' + counts.map(function (c) {
         return '<button class="chip toggle" data-act="count" data-v="' + c[0] + '" aria-pressed="' + (P.count === c[0]) + '">' + c[1] + '</button>';
       }).join("") + '</div></section>' +
-      '<section class="row"><button class="btn primary" data-act="start"' + (sel ? "" : " disabled") + '>Start · ' + (P.count === "all" ? sel : Math.min(sel, parseInt(P.count, 10))) + ' questions</button>' +
+      '<section class="row stickystart"><button class="btn primary" data-act="start"' + (sel ? "" : " disabled") + '>Start · ' + (P.count === "all" ? sel : Math.min(sel, parseInt(P.count, 10))) + ' questions</button>' +
       '<button class="btn ghost" data-act="topics">Back</button></section></div>';
     return h;
   }
@@ -249,12 +252,14 @@
     }
     else if (a === "scope") {
       P.scope = { kind: b.getAttribute("data-kind"), id: b.getAttribute("data-id") };
-      P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.view = "setup"; P.run = null;
+      P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.view = "setup"; P.run = null; P.secOpen = false;
       render(); window.scrollTo(0, 0);
-    } else if (a === "sub") {
-      var v = b.getAttribute("data-v"), i = P.subs.indexOf(v);
-      if (i > -1) P.subs.splice(i, 1); else P.subs.push(v);
-      render();
+    } else if (a === "sub" || a === "suball" || a === "subnone") {
+      if (a === "sub") {
+        var v = b.getAttribute("data-v"), i = P.subs.indexOf(v);
+        if (i > -1) P.subs.splice(i, 1); else P.subs.push(v);
+      } else P.subs = a === "suball" ? unique(scopeQs(P.scope).map(subOf)) : [];
+      P.secOpen = true; var y0 = window.scrollY; render(); window.scrollTo(0, y0);
     } else if (a === "mode") { P.mode = b.getAttribute("data-v"); render(); }
     else if (a === "count") { P.count = b.getAttribute("data-v"); render(); }
     else if (a === "start") {
@@ -276,5 +281,22 @@
     else if (e.key === "Enter" && it.pick !== null) next();
   }
 
-  DX.practice = { render: render, onClick: onClick, onKey: onKey, leave: function () {}, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
+  function onInput(e) {
+    if (!e.target || e.target.id !== "pk-find") return;
+    var q = e.target.value.trim().toLowerCase(), root = document.getElementById("app"), any = false;
+    Array.prototype.forEach.call(root.querySelectorAll("details.subj"), function (sub) {
+      var subHit = false;
+      Array.prototype.forEach.call(sub.querySelectorAll("details.acc:not(.subj)"), function (ac) {
+        var hit = false;
+        Array.prototype.forEach.call(ac.querySelectorAll(".topic"), function (t) {
+          var m = !q || t.textContent.toLowerCase().indexOf(q) > -1; t.hidden = !m; if (m) hit = true;
+        });
+        ac.hidden = !hit; if (q) ac.open = hit; if (hit) subHit = true;
+      });
+      sub.hidden = !subHit; if (q) sub.open = subHit; if (subHit) any = true;
+    });
+    var none = document.getElementById("pk-none"); if (none) none.hidden = !q || any;
+  }
+
+  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
 })();
