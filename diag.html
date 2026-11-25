@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DxDrill check</title>
+<style>
+body{font:15px/1.5 system-ui,sans-serif;margin:0;padding:16px;background:#f3f5f7;color:#0e1a26}
+@media (prefers-color-scheme:dark){body{background:#0d161c;color:#e6eef3}}
+h1{font-size:20px;margin:0 0 8px} button{font:inherit;padding:10px 14px;border-radius:8px;border:1.5px solid #0a6a86;background:#0a6a86;color:#fff;margin:4px 6px 4px 0}
+table{border-collapse:collapse;width:100%;margin-top:10px;font-size:13px} td,th{border-bottom:1px solid #8884;padding:5px 6px;text-align:left;word-break:break-all}
+.ok{color:#17794a}.bad{color:#b3261e;font-weight:700}.slow{color:#9a5200;font-weight:700}
+pre{white-space:pre-wrap;font-size:12px;background:#8882;padding:8px;border-radius:8px}
+</style></head><body>
+<h1>DxDrill connection check</h1>
+<p>Tap <b>Run check</b> and wait for "Finished". Then screenshot this page and send it to your helper.</p>
+<button id="go">Run check</button><button id="clr">Clear saved copies</button>
+<pre id="info"></pre>
+<table id="t"><thead><tr><th>File</th><th>Result</th><th>Time</th><th>Size</th></tr></thead><tbody></tbody></table>
+<script>
+(function () {
+  var tb = document.querySelector("#t tbody"), info = document.getElementById("info");
+  function row(name) { var tr = document.createElement("tr"); tr.innerHTML = "<td></td><td>…</td><td></td><td></td>"; tr.children[0].textContent = name; tb.appendChild(tr); return tr; }
+  function check(name, url, opt) {
+    var tr = row(name), t0 = Date.now(), ctl = new AbortController(), timer = setTimeout(function () { ctl.abort(); }, 20000);
+    return fetch(url, { cache: "no-store", signal: ctl.signal, mode: opt && opt.cors ? "cors" : "same-origin" }).then(function (r) {
+      return r.text().then(function (txt) {
+        var ms = Date.now() - t0; clearTimeout(timer);
+        var cls = !r.ok ? "bad" : ms > 4000 ? "slow" : "ok";
+        tr.children[1].innerHTML = '<span class="' + cls + '">' + r.status + "</span>"; tr.children[2].textContent = ms + " ms"; tr.children[3].textContent = Math.round(txt.length / 1024) + " KB";
+        return txt;
+      });
+    }).catch(function (e) {
+      clearTimeout(timer); tr.children[1].innerHTML = '<span class="bad">' + (e.name === "AbortError" ? "TIMED OUT (20 s)" : "FAILED " + e.message) + "</span>"; tr.children[2].textContent = (Date.now() - t0) + " ms"; return null;
+    });
+  }
+  function pool(tasks, n) { var i = 0; return Promise.all(new Array(n).fill(0).map(function () { return (function nx() { if (i >= tasks.length) return Promise.resolve(); return tasks[i++]().then(nx); })(); })); }
+  document.getElementById("go").onclick = function () {
+    tb.innerHTML = "";
+    info.textContent = "Online: " + navigator.onLine + "\nConnection: " + ((navigator.connection && (navigator.connection.effectiveType + ", " + navigator.connection.downlink + " Mbps")) || "unknown") + "\nPage: " + location.href + "\nBrowser: " + navigator.userAgent;
+    var files = [];
+    check("curriculum.json", "data/curriculum.json").then(function () { return check("manifest.json", "data/manifest.json"); }).then(function (m) {
+      try { var man = JSON.parse(m); files = (man.questions || []).map(function (f) { return "data/questions/" + f + ".json"; }); info.textContent += "\nQuestion files listed: " + files.length; } catch (e) { info.textContent += "\nmanifest.json is NOT valid JSON: " + e.message; }
+      var tasks = [
+        function () { return check("app.js", "js/app.js"); }, function () { return check("style.css", "css/style.css"); },
+        function () { return check("sw.js", "sw.js"); }
+      ].concat(files.map(function (u) { return function () { return check(u.replace("data/questions/", ""), u); }; }));
+      return pool(tasks, 6);
+    }).then(function () {
+      return check("jsdelivr supabase script", "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js", { cors: true });
+    }).then(function () {
+      return check("Supabase health", "https://dkullruinrnwjmhlxlpl.supabase.co/auth/v1/health", { cors: true });
+    }).then(function () { info.textContent += "\nFinished."; });
+  };
+  document.getElementById("clr").onclick = function () {
+    var jobs = [];
+    if (navigator.serviceWorker) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
+    if (window.caches) jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }));
+    Promise.all(jobs).then(function () { alert("Saved copies cleared. Now open DxDrill again."); }, function () { alert("Could not clear. Try your browser's site settings."); });
+  };
+})();
+</script></body></html>
