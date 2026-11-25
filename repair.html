@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DxDrill option-length repair</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+textarea{width:100%;min-height:200px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;padding:12px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg)}
+select{width:100%;padding:10px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);font-size:15px}
+.msg{margin:4px 0;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);overflow-wrap:anywhere}
+.msg.err{border-color:var(--bad);color:var(--bad)} .msg.warn{border-color:var(--warn);color:var(--warn)} .msg.ok{border-color:var(--good);color:var(--good)}
+.pv{border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--surface);margin:8px 0}
+.pv .c{color:var(--good);font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+</style>
+</head>
+<body>
+<main class="gutter"><div class="wrap stack" style="padding:24px 0 48px">
+<header><p class="eyebrow">DxDrill tools</p><h1>Option-length repair</h1>
+<p class="lede">In many questions the correct option is the longest, so students can guess it. Pick a file, copy the prompt to Gemini, paste its reply back, and download the fixed file. The correct option's text is never changed, only the wrong options.</p></header>
+
+<section class="section stack">
+<div id="status" class="msg">Loading your question files…</div>
+<div class="field"><label class="label" for="file">1. Choose a file (worst first)</label><select id="file" disabled></select></div>
+<div class="field"><label class="label" for="bs">Questions per batch</label><input id="bs" type="number" min="5" max="40" value="20"></div>
+<div class="row tight"><button class="btn primary" id="mk" type="button" disabled>2. Make the prompt</button></div>
+</section>
+
+<section class="section stack" id="step2" hidden>
+<div class="field"><label class="label" for="prompt">Copy this into Gemini</label><textarea id="prompt" readonly spellcheck="false"></textarea></div>
+<div class="row tight"><button class="btn primary" id="copy" type="button">Copy prompt</button></div>
+<div class="field"><label class="label" for="reply">3. Paste Gemini's reply here</label><textarea id="reply" spellcheck="false" placeholder='[ {"id": "...", "options": ["...", "...", "...", "..."]} ]'></textarea></div>
+<div class="row tight"><button class="btn primary" id="apply" type="button">4. Check and apply</button></div>
+</section>
+
+<section id="out" class="stack" aria-live="polite"></section>
+
+<section class="section stack" id="dlbox" hidden>
+<div id="dlinfo" class="msg"></div>
+<div class="row tight"><button class="btn primary" id="dl" type="button">Download the fixed file</button><a class="btn ghost" href="index.html" style="text-decoration:none">Back to DxDrill</a></div>
+<p class="muted">Upload the downloaded file to <code>data/questions/</code> on GitHub, replacing the old one with the same name. Then raise VERSION in sw.js by one so phones get the new questions.</p>
+</section>
+</div></main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function J(u) { return fetch(u, { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(u + " " + r.status); return r.json(); }); }
+  function norm(s) { return String(s).toLowerCase().replace(/\s+/g, " ").trim(); }
+  function sv(x) { return typeof x === "string" ? x.replace(/\s+/g, " ").trim() : ""; }
+
+  var FILES = {}, NAMES = [], cur = null, batch = [], changed = {};
+
+  function qlist(d) { return Array.isArray(d) ? d : (d && d.questions) || []; }
+  function isLong(q) {
+    var o = q.options, a = q.answer;
+    if (!Array.isArray(o) || o.length < 3 || typeof a !== "number" || a < 0 || a >= o.length) return false;
+    var L = o.map(function (x) { return String(x).length; }), mx = Math.max.apply(null, L);
+    return L[a] === mx && L.filter(function (v) { return v === mx; }).length === 1;
+  }
+  function stats(d) { var qs = qlist(d).filter(function (q) { return Array.isArray(q.options) && typeof q.answer === "number"; }); var n = 0; qs.forEach(function (q) { if (isLong(q)) n++; }); return { total: qs.length, long: n }; }
+
+  function refreshSelect(keep) {
+    var rows = NAMES.map(function (f) { var s = stats(FILES[f]); return { f: f, s: s, p: s.total ? s.long / s.total : 0 }; });
+    rows.sort(function (a, b) { return b.p - a.p || b.s.long - a.s.long; });
+    $("file").innerHTML = rows.filter(function (r) { return r.s.long > 0 || r.f === keep; }).map(function (r) {
+      return '<option value="' + esc(r.f) + '"' + (r.f === keep ? " selected" : "") + ">" + esc(r.f) + " — " + r.s.long + " of " + r.s.total + " longest (" + Math.round(100 * r.p) + "%)</option>";
+    }).join("");
+    var tl = 0, tt = 0; rows.forEach(function (r) { tl += r.s.long; tt += r.s.total; });
+    $("status").className = "msg ok";
+    $("status").textContent = "Whole bank: the correct answer is the strictly longest option in " + tl + " of " + tt + " questions (" + Math.round(100 * tl / Math.max(1, tt)) + "%). Chance would be about 25%.";
+  }
+
+  var ready = J("data/manifest.json").then(function (m) {
+    NAMES = (m.questions || []).slice();
+    return Promise.all(NAMES.map(function (f) {
+      return J("data/questions/" + f + ".json").then(function (d) { FILES[f] = d; }).catch(function () { });
+    }));
+  }).then(function () {
+    NAMES = NAMES.filter(function (f) { return FILES[f]; });
+    refreshSelect(null);
+    $("file").disabled = false; $("mk").disabled = false;
+  }).catch(function (e) { $("status").className = "msg err"; $("status").textContent = "Could not load the files: " + e.message + ". Open this page from your live site, not from a downloaded copy."; });
+
+  function buildPrompt(items) {
+    var payload = items.map(function (q) { return { id: q.id, q: q.q, options: q.options, answer: q.answer, explain: q.explain }; });
+    return [
+      "You are fixing a medical MCQ bank for students. In each question below the correct option is the LONGEST option, which lets students guess without knowing the content. Your job is to rebalance the options.",
+      "",
+      "For every question, return the same id and a new list of options. Rules:",
+      "1. The correct option is the one at position \"answer\" (counting from 0). Copy it back EXACTLY, word for word. Do not change it at all.",
+      "2. Rewrite ONLY the other options (the wrong ones) so each is about the same length and level of detail as the correct option, within about 20%. Add the same kind of qualifiers, units, mechanisms or specifics the correct option has.",
+      "3. Wrong options must stay believable (the same kind of thing as the correct one) but must be clearly wrong for the question. Never make a wrong option correct or partly correct. Never use \"all of the above\", \"none of the above\" or \"both A and B\".",
+      "4. In about 1 of every 3 questions, make one wrong option slightly LONGER than the correct option.",
+      "5. Keep the same number of options and keep the correct option in the same position.",
+      "6. Plain text only. No letters or numbers in front of options, no line breaks, no markdown. Use straight quote marks.",
+      "7. If the \"explain\" text names one of the OLD wrong options and would no longer make sense, also return a corrected \"explain\". Otherwise leave \"explain\" out.",
+      "",
+      "Return ONLY a JSON array with no code fences and no extra words, in this shape:",
+      "[{\"id\":\"the-id\",\"options\":[\"...\",\"...\",\"...\",\"...\"]}]",
+      "",
+      "QUESTIONS:",
+      JSON.stringify(payload, null, 1)
+    ].join("\n");
+  }
+
+  $("file").addEventListener("change", function () { $("step2").hidden = true; $("out").innerHTML = ""; });
+
+  $("mk").addEventListener("click", function () {
+    ready.then(function () {
+      cur = $("file").value; if (!cur) return;
+      var n = Math.max(5, Math.min(40, parseInt($("bs").value, 10) || 20));
+      batch = qlist(FILES[cur]).filter(isLong).slice(0, n);
+      $("out").innerHTML = "";
+      if (!batch.length) { $("step2").hidden = true; $("out").innerHTML = '<div class="msg ok">Nothing left to fix in this file.</div>'; return; }
+      $("prompt").value = buildPrompt(batch); $("reply").value = ""; $("step2").hidden = false;
+      $("out").innerHTML = '<div class="msg">This batch has ' + batch.length + " questions. " + (stats(FILES[cur]).long - batch.length) + " more in this file after it.</div>";
+    });
+  });
+
+  $("copy").addEventListener("click", function () {
+    var t = $("prompt"), done = function () { $("copy").textContent = "Copied"; setTimeout(function () { $("copy").textContent = "Copy prompt"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t.value).then(done, function () { t.select(); document.execCommand("copy"); done(); });
+    else { t.select(); document.execCommand("copy"); done(); }
+  });
+
+  function parseReply(text) {
+    var s = String(text).trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").replace(/[\u201C\u201D]/g, '"').replace(/[\u2018\u2019]/g, "'");
+    var a = s.indexOf("["), b = s.lastIndexOf("]");
+    if (a < 0 || b < a) throw new Error("I could not find a JSON list (it should start with [ and end with ]).");
+    return JSON.parse(s.slice(a, b + 1).replace(/,\s*([\]}])/g, "$1"));
+  }
+
+  $("apply").addEventListener("click", function () {
+    var out = $("out"), arr;
+    try { arr = parseReply($("reply").value); if (!Array.isArray(arr)) throw new Error("The reply is not a list."); }
+    catch (e) { out.innerHTML = '<div class="msg err">' + esc(e.message) + "</div>"; return; }
+    var byId = {}; batch.forEach(function (q) { byId[q.id] = q; });
+    var seen = {}, ok = [], bad = [], still = 0;
+    arr.forEach(function (it) {
+      var id = it && it.id, q = byId[id];
+      function no(m) { bad.push(esc(id) + ": " + m); }
+      if (!q) return no("not one of this batch's ids. Skipped.");
+      if (seen[id]) return no("appears twice. Skipped.");
+      seen[id] = 1;
+      if (!Array.isArray(it.options) || it.options.length !== q.options.length) return no("must have " + q.options.length + " options.");
+      var opts = it.options.map(sv), k, set = {};
+      for (k = 0; k < opts.length; k++) {
+        if (!opts[k]) return no("an option is empty.");
+        if (/^[A-Fa-f][\.\)]\s/.test(opts[k])) return no("an option starts with a letter like A.");
+        if (/\b(all of the above|none of the above|both a and b)\b/i.test(opts[k])) return no("uses \"all/none of the above\".");
+        if (set[norm(opts[k])]) return no("two options are the same.");
+        set[norm(opts[k])] = 1;
+      }
+      if (norm(opts[q.answer]) !== norm(q.options[q.answer])) return no("the correct option was changed. Skipped so the answer stays safe.");
+      ok.push({ q: q, opts: opts, ex: sv(it.explain), old: q.options.slice() });
+    });
+    var missing = batch.filter(function (q) { return !seen[q.id]; }).length;
+    ok.forEach(function (r) {
+      r.q.options = r.opts; if (r.ex) r.q.explain = r.ex; changed[r.q.id] = 1;
+      if (isLong(r.q)) still++;
+    });
+    var h = "";
+    if (ok.length) h += '<div class="msg ok">Applied ' + ok.length + " question" + (ok.length === 1 ? "" : "s") + (still ? "; " + still + " of them still have the correct answer as the longest option, so they will come up again in the next batch" : "") + ".</div>";
+    if (missing) h += '<div class="msg warn">' + missing + " question" + (missing === 1 ? " was" : "s were") + " missing from the reply and unchanged.</div>";
+    bad.forEach(function (m) { h += '<div class="msg err">' + m + "</div>"; });
+    ok.slice(0, 3).forEach(function (r) {
+      h += '<div class="pv"><p class="label">' + esc(r.q.id) + "</p><p><b>" + esc(r.q.q) + '</b></p><ol type="A" style="margin:6px 0 6px 20px">' + r.q.options.map(function (o, i) { return "<li" + (i === r.q.answer ? ' class="c"' : "") + ">" + esc(o) + "</li>"; }).join("") + "</ol></div>";
+    });
+    if (ok.length) h += '<div class="msg">Spot-check a few of the new wrong options against your notes before you upload. Wrong options must be wrong.</div>';
+    out.innerHTML = h;
+    var s = stats(FILES[cur]);
+    refreshSelect(cur);
+    $("dlbox").hidden = false;
+    $("dlinfo").textContent = cur + ": " + Object.keys(changed).filter(function (id) { return qlist(FILES[cur]).some(function (q) { return q.id === id; }); }).length + " questions changed in this session, " + s.long + " still longest-correct. You can run more batches before downloading.";
+    $("step2").hidden = true;
+  });
+
+  $("dl").addEventListener("click", function () {
+    var blob = new Blob([JSON.stringify(FILES[cur], null, 1) + "\n"], { type: "application/json" });
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = cur + ".json";
+    document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  });
+})();
+</script>
+</body>
+</html>
