@@ -1,9 +1,10 @@
 /* DxDrill service worker: lets the site open and run with no connection.
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
-var VERSION = "dxdrill-v13.5";
+var VERSION = "dxdrill-v13.7";
+var IMG = "dxdrill-img";   /* pictures live in their own cache that is kept when VERSION changes, so a bad connection after an update does not lose them */
 var SHELL = [
   "./", "index.html", "manifest.webmanifest", "css/style.css",
-  "js/data.js", "js/streak.js", "js/practice.js", "js/fx.js", "js/hall.js", "js/tips.js", "js/screen.js", "js/remote.js", "js/spotter.js", "js/features.js", "js/cloud.js", "js/polls.js", "js/about.js", "js/start.js", "js/feedback.js", "js/comps.js", "js/rooms.js", "js/debates.js", "js/cards.js", "js/app.js",
+  "js/data.js", "js/streak.js", "js/nuggets.js", "js/practice.js", "js/fx.js", "js/hall.js", "js/tips.js", "js/screen.js", "js/remote.js", "js/spotter.js", "js/features.js", "js/cloud.js", "js/polls.js", "js/about.js", "js/start.js", "js/feedback.js", "js/comps.js", "js/rooms.js", "js/debates.js", "js/cards.js", "js/app.js",
   "data/curriculum.json", "data/manifest.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"
 ];
@@ -30,7 +31,7 @@ self.addEventListener("install", function (e) {
 
 self.addEventListener("activate", function (e) {
   e.waitUntil(caches.keys().then(function (keys) {
-    return Promise.all(keys.filter(function (k) { return k !== VERSION; }).map(function (k) { return caches.delete(k); }));
+    return Promise.all(keys.filter(function (k) { return k !== VERSION && k !== IMG; }).map(function (k) { return caches.delete(k); }));
   }).then(function () { return self.clients.claim(); }));
 });
 
@@ -63,10 +64,22 @@ function staleWhileRevalidate(req) {
   });
 }
 
+/* Pictures: show the saved copy straight away and refresh it quietly in the background. */
+function pictureCache(req) {
+  return caches.open(IMG).then(function (cache) {
+    return cache.match(req).then(function (hit) {
+      var net = fetch(req).then(function (res) { if (res && res.ok) cache.put(req, res.clone()); return res; });
+      if (hit) { net.catch(function () {}); return hit; }
+      return net;
+    });
+  });
+}
+
 self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET") return;
   var url = new URL(req.url);
+  if (url.origin === self.location.origin && url.pathname.indexOf("/data/img/") > -1) { e.respondWith(pictureCache(req)); return; }
   if (url.origin === self.location.origin) { e.respondWith(networkFirst(req)); return; }
   if (CDN.test(req.url)) { e.respondWith(staleWhileRevalidate(req)); return; }
   /* anything else (Supabase accounts and leaderboards) goes straight to the network */
