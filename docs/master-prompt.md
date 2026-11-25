@@ -43,6 +43,7 @@ Reply with one JSON code block and nothing before or after it. The object has th
 RULES FOR EACH QUESTION
 1. Exactly 4 options and exactly 1 correct answer. "answer" is the position of the correct option counting from 0. Spread the correct answers across positions 0, 1, 2 and 3.
 2. Wrong options must be believable: the same kind of thing as the right answer (other drugs, other values, other structures). Never use "all of the above", "none of the above" or "both A and B".
+   LENGTH RULE: the four options must be about the same length and level of detail. The correct answer must NOT be the longest option in more than 1 of every 4 questions. Give the wrong options the same qualifiers, units and specifics as the right one, and where you can, make a wrong option the longest. Check this before you answer.
 3. "level": 1 for recall, 2 for understanding or applying a mechanism, 3 for a short clinical scenario. Make about 20% of questions level 2 or 3.
 4. "explain": say why the answer is right. Add a short note on a common wrong choice where it helps.
 5. "open.q" must stand on its own. It must never say "which of the following", "the options", "above", "below" or "except".
