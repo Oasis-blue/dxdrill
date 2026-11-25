@@ -19,6 +19,7 @@
       '<header class="hero"><p class="eyebrow">For medical students</p>' +
       '<h1>Drill the basics until they <span>stick</span></h1>' +
       '<p class="lede">Practice questions with explanations, and live quiz rounds for the hall. Topics follow the MDCN curriculum, and every question you study here can be added to the bank.</p></header>' +
+      (DX.streakHtml ? DX.streakHtml() : '') +
       '<section class="cards">' +
       '<article class="card"><h2>Practice</h2><p>' + totalQ + ' questions across ' + doneTopics + ' topics. Study mode explains each answer as you go. Exam mode saves the marks for the end.</p><a class="btn primary" href="#practice" style="text-decoration:none">Start practising</a></article>' +
       '<article class="card"><h2>Hall mode</h2><p>One screen, a quizmaster and teams. Rapid fire, a question board, everyone-answers rounds, describe-it and explain-it.</p><a class="btn" href="#hall" style="text-decoration:none">Open hall mode</a></article>' +
