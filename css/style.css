@@ -411,3 +411,5 @@ details.subj .subjbody{padding:12px;gap:10px}
 details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .stickystart{position:sticky;bottom:0;z-index:20;background:var(--bg);padding:10px 0 calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line)}
 [hidden]{display:none!important}
+
+.nugget{margin:6px 0 0;padding:12px 14px;border-left:4px solid var(--accent);background:var(--surface);border-radius:8px;color:var(--fg);font-size:15px}
