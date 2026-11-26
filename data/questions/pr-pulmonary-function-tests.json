@@ -307,13 +307,13 @@
    "sub": "Diffusing Capacity of the Lung for Carbon Monoxide (DLCO)",
    "q": "How is the single-breath diffusing capacity of the lung for carbon monoxide (DLCO) measured, and which clinical conditions DECREASE versus INCREASE DLCO?",
    "options": [
-    "DLCO estimates CO transfer from a single breath; it falls with reduced area, thickening, anaemia or low perfusion and rises with polycythaemia or alveolar bleeding",
+    "DLCO falls with low area, thick membrane, anaemia or low perfusion; rises with polycythaemia or alveolar haemorrhage",
     "DLCO measures airway resistance; it falls in asthma and rises in emphysema",
     "DLCO measures residual volume; it falls in polycythaemia and rises in anaemia",
     "DLCO measures oxygen saturation during exercise and is independent of haemoglobin"
    ],
    "answer": 0,
-   "explain": "DLCO depends on alveolar surface area, membrane thickness, pulmonary capillary blood volume, and hemoglobin concentration: alveolar hemorrhage raises DLCO because extravasated intra-alveolar RBC hemoglobin binds inhaled CO!",
+   "explain": "DLCO depends on alveolar surface area, membrane thickness, pulmonary capillary blood volume, and hemoglobin concentration: alveolar hemorrhage raises DLCO because extravasated intra-alveolar RBC hemoglobin binds inhaled CO! Key detail: DLCO estimates CO transfer from a single breath; it falls with reduced area, thickening, anaemia or low perfusion and rises with polycythaemia or alveolar bleeding.",
    "verified": false,
    "open": {
     "q": "List three conditions that decrease DLCO and two conditions that increase DLCO.",
@@ -445,13 +445,13 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "How do pregnancy and severe obesity affect static lung volumes and capacities?",
    "options": [
-    "Upward diaphragm displacement reduces ERV and FRC by 20-30% and lowers chest wall compliance, while IC rises slightly in pregnancy so TLC and VC are preserved",
+    "Pregnancy/obesity displace the diaphragm upward, reducing ERV and FRC; TLC is largely preserved",
     "Both pregnancy and obesity double FRC and TLC",
     "Pregnancy reduces FEV1/FVC to 45%",
     "Obesity increases ERV by 1,500 mL"
    ],
    "answer": 0,
-   "explain": "Reduced FRC in pregnancy and obesity lowers the body's oxygen reservoir, causing rapid arterial desaturation during apnea or anesthesia induction.",
+   "explain": "Reduced FRC in pregnancy and obesity lowers the body's oxygen reservoir, causing rapid arterial desaturation during apnea or anesthesia induction. Key detail: Upward diaphragm displacement reduces ERV and FRC by 20-30% and lowers chest wall compliance, while IC rises slightly in pregnancy so TLC and VC are preserved.",
    "verified": false,
    "open": {
     "q": "State the characteristic changes in ERV, FRC, and TLC observed in pregnant women and patients with morbid obesity.",
@@ -468,13 +468,13 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "What is 'air trapping' on pulmonary function testing, and which lung volume ratio best quantifies it?",
    "options": [
-    "Incomplete alveolar emptying from premature small-airway closure, giving elevated RV and an elevated RV/TLC ratio (normal ~20-25%, rising above 35-50% in obstruction)",
+    "Air trapping raises RV and RV/TLC due to premature small-airway closure",
     "A residual volume of 0 mL and RV/TLC ratio of 0%",
     "An elevated FEV1/FVC ratio of 95%",
     "A decrease in total lung capacity to 2.0 L"
    ],
    "answer": 0,
-   "explain": "In severe asthma or COPD, RV rises even faster than TLC, driving up the RV/TLC ratio and encroaching on inspiratory capacity (dynamic hyperinflation).",
+   "explain": "In severe asthma or COPD, RV rises even faster than TLC, driving up the RV/TLC ratio and encroaching on inspiratory capacity (dynamic hyperinflation). Key detail: Incomplete alveolar emptying from premature small-airway closure, giving elevated RV and an elevated RV/TLC ratio (normal ~20-25%, rising above 35-50% in obstruction).",
    "verified": false,
    "open": {
     "q": "Which lung volume and lung volume ratio are characteristically elevated in pulmonary air trapping?",
@@ -514,13 +514,13 @@
    "sub": "Diffusing Capacity of the Lung for Carbon Monoxide (DLCO)",
    "q": "Why must measured DLCO be adjusted (corrected) for the patient's hemoglobin concentration before diagnosing an intrinsic alveolar-capillary membrane defect?",
    "options": [
-    "CO uptake depends on both membrane diffusion and capillary hemoglobin; anemia lowers and polycythemia raises DLCO purely by altering the blood-side binding sink",
+    "Anaemia lowers DLCO by reducing capillary haemoglobin binding capacity, independent of membrane structure",
     "Because hemoglobin destroys carbon monoxide inside the spirometer",
     "Because anemia raises alveolar pressure to 50 cmH2O",
     "Hemoglobin concentration has no effect on DLCO"
    ],
    "answer": 0,
-   "explain": "Roughton and Forster showed 1/DLCO = 1/Dm + 1/(theta * Vc); correcting DLCO for hemoglobin prevents misinterpreting anemia as interstitial lung disease.",
+   "explain": "Roughton and Forster showed 1/DLCO = 1/Dm + 1/(theta * Vc); correcting DLCO for hemoglobin prevents misinterpreting anemia as interstitial lung disease. Key detail: CO uptake depends on both membrane diffusion and capillary hemoglobin; anemia lowers and polycythemia raises DLCO purely by altering the blood-side binding sink.",
    "verified": false,
    "open": {
     "q": "Explain why severe anemia lowers measured DLCO even when the alveolar-capillary membrane is completely healthy.",
@@ -560,13 +560,13 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "What is the difference between Slow Vital Capacity (SVC) and Forced Vital Capacity (FVC) in a healthy subject versus a patient with severe obstructive lung disease?",
    "options": [
-    "In health SVC and FVC are nearly identical; in obstruction, FVC is much smaller than SVC because forced expiration triggers dynamic airway collapse and air trapping",
+    "Forced expiration compresses small airways, making FVC lower than SVC in obstruction",
     "FVC is always twice as large as SVC in COPD",
     "SVC is measured during a maximal 1-second cough",
     "Healthy individuals have an SVC of 500 mL and FVC of 5,000 mL"
    ],
    "answer": 0,
-   "explain": "An unhurried slow vital capacity avoids high positive intrapleural pressures and dynamic bronchiolar collapse, allowing fuller emptying than a forced maneuver in obstructive patients.",
+   "explain": "An unhurried slow vital capacity avoids high positive intrapleural pressures and dynamic bronchiolar collapse, allowing fuller emptying than a forced maneuver in obstructive patients. Key detail: In health SVC and FVC are nearly identical; in obstruction, FVC is much smaller than SVC because forced expiration triggers dynamic airway collapse and air trapping.",
    "verified": false,
    "open": {
     "q": "Why is Forced Vital Capacity (FVC) often significantly lower than Slow Vital Capacity (SVC) in patients with emphysema or severe asthma?",

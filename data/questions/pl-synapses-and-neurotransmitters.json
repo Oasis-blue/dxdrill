@@ -125,12 +125,12 @@
    "q": "What type of receptor is the adult skeletal muscle motor end-plate nicotinic acetylcholine receptor (Nm), and what ionic conductance change occurs when two molecules of ACh bind to it?",
    "options": [
     "Gi-protein-coupled metabotropic receptor that opens K+ channels",
-    "Pentameric ligand-gated non-selective cation channel (alpha2-beta-epsilon-delta) that opens to admit Na+ and extrude K+, producing a depolarizing end-plate potential (EPP)",
+    "Nm receptor is a pentameric cation channel; two ACh molecules open it, causing net Na+ influx",
     "Tyrosine kinase receptor that phosphorylates actin directly",
     "Ligand-gated Cl- channel that hyperpolarizes the sarcolemma"
    ],
    "answer": 1,
-   "explain": "Simultaneous binding of two ACh molecules to the two alpha subunits opens the central cation pore; because Na+ has a much larger inward driving force than outward K+ at -90 mV, net Na+ influx depolarizes the end-plate toward ~0 mV (reversal potential).",
+   "explain": "Simultaneous binding of two ACh molecules to the two alpha subunits opens the central cation pore; because Na+ has a much larger inward driving force than outward K+ at -90 mV, net Na+ influx depolarizes the end-plate toward ~0 mV (reversal potential). Key detail: Pentameric ligand-gated non-selective cation channel (alpha2-beta-epsilon-delta) that opens to admit Na+ and extrude K+, producing a depolarizing end-plate potential (EPP).",
    "verified": false,
    "open": {
     "q": "Describe the ion movements and reversal potential (~0 mV) when acetylcholine opens nicotinic receptors at the skeletal muscle motor end-plate.",
@@ -263,12 +263,12 @@
    "q": "Why do inhibitory synapses on a multipolar neuron cluster disproportionately on the soma and axon initial segment (axosomatic and axoaxonic synapses) rather than on distal dendritic tips?",
    "options": [
     "Distal dendrites lack phospholipid bilayers",
-    "Strategic placement near the spike trigger zone (axon hillock) maximizes their ability to shunt and veto summated excitatory currents arriving from the entire dendritic tree",
+    "Perisomatic/initial-segment inhibition shunts dendritic EPSPs near the spike trigger zone",
     "GABA receptors cannot function in dendritic membranes",
     "Axosomatic synapses amplify EPSPs tenfold"
    ],
    "answer": 1,
-   "explain": "Because passive currents decay exponentially with distance (lambda), placing inhibitory shunting conductance right at the soma/initial segment gives inhibition maximal leverage over action potential initiation.",
+   "explain": "Because passive currents decay exponentially with distance (lambda), placing inhibitory shunting conductance right at the soma/initial segment gives inhibition maximal leverage over action potential initiation. Key detail: Strategic placement near the spike trigger zone (axon hillock) maximizes their ability to shunt and veto summated excitatory currents arriving from the entire dendritic tree.",
    "verified": false,
    "open": {
     "q": "Why are inhibitory synapses typically concentrated on the neuronal soma and axon initial segment rather than on distal dendrites?",
@@ -493,12 +493,12 @@
    "q": "How do neuropeptides (such as substance P, endorphins, enkephalins, NPY, and CGRP) differ from classical small-molecule neurotransmitters in their synthesis, storage, and release?",
    "options": [
     "Neuropeptides are made in axon terminals and rapidly taken back up",
-    "Neuropeptides are made in the neuronal soma, packaged in dense-core vesicles and released during stronger activity; extracellular peptidases degrade them",
+    "Soma-synthesised peptides are stored in dense-core vesicles and degraded extracellularly",
     "Neuropeptides bind only to fast ligand-gated Na+ channels",
     "Neuropeptides are never co-released with small-molecule transmitters"
    ],
    "answer": 1,
-   "explain": "Co-transmission (coexistence of a fast small-molecule transmitter in small clear vesicles and a slow modulatory neuropeptide in large dense-core vesicles) allows a single neuron to produce different effects depending on firing frequency.",
+   "explain": "Co-transmission (coexistence of a fast small-molecule transmitter in small clear vesicles and a slow modulatory neuropeptide in large dense-core vesicles) allows a single neuron to produce different effects depending on firing frequency. Key detail: Neuropeptides are made in the neuronal soma, packaged in dense-core vesicles and released during stronger activity; extracellular peptidases degrade them.",
    "verified": false,
    "open": {
     "q": "List three differences between neuropeptides and small-molecule neurotransmitters regarding synthesis site, vesicle type, or clearance mechanism.",
@@ -561,13 +561,13 @@
    "sub": "Synaptic Properties: Delay, Fatigue, Convergence, Divergence",
    "q": "How do 'convergence' and 'divergence' in neuronal circuits support spinal and cortical processing?",
    "options": [
-    "Convergence allows multiple presynaptic inputs to summate onto a single postsynaptic neuron (integration), whereas divergence allows a single neuron to branch and excite/inhibit thousands of downstream target neurons (amplification)",
+    "Convergence: many inputs to one neuron; divergence: one neuron branches to many targets",
     "Convergence occurs only in sensory receptors; divergence occurs only in smooth muscle",
     "Both terms refer to synaptic fatigue during prolonged stimulation",
     "Divergence reduces the number of active neurons to one"
    ],
    "answer": 0,
-   "explain": "An alpha motor neuron receives thousands of converging excitatory and inhibitory inputs from cortex, brainstem, and spinal interneurons, while a single corticospinal or sensory neuron diverges to coordinate entire muscle synergies.",
+   "explain": "An alpha motor neuron receives thousands of converging excitatory and inhibitory inputs from cortex, brainstem, and spinal interneurons, while a single corticospinal or sensory neuron diverges to coordinate entire muscle synergies. Key detail: Convergence allows multiple presynaptic inputs to summate onto a single postsynaptic neuron (integration), whereas divergence allows a single neuron to branch and excite/inhibit thousands of downstream target neurons (amplification).",
    "verified": false,
    "open": {
     "q": "Contrast neuronal convergence and divergence in central nervous system circuits.",
@@ -607,13 +607,13 @@
    "sub": "Synaptic Properties: Delay, Fatigue, Convergence, Divergence",
    "q": "What is 'post-tetanic potentiation' (PTP) following a brief train of high-frequency presynaptic stimuli?",
    "options": [
-    "A transient enhancement of postsynaptic potential amplitude lasting seconds to a few minutes, caused by residual Ca2+ accumulation in the presynaptic terminal increasing vesicle release probability",
+    "Residual presynaptic Ca2+ raises vesicle-release probability for seconds to minutes",
     "Permanent loss of synaptic transmission",
     "Hyperpolarization of the postsynaptic membrane to -120 mV",
     "Destruction of all synaptic cleft enzymes"
    ],
    "answer": 0,
-   "explain": "During a brief tetanus, Ca2+ enters faster than presynaptic mitochondria and Ca2+ pumps can clear it; residual Ca2+ binds high-affinity release sensors so subsequent single impulses release more quanta.",
+   "explain": "During a brief tetanus, Ca2+ enters faster than presynaptic mitochondria and Ca2+ pumps can clear it; residual Ca2+ binds high-affinity release sensors so subsequent single impulses release more quanta. Key detail: A transient enhancement of postsynaptic potential amplitude lasting seconds to a few minutes, caused by residual Ca2+ accumulation in the presynaptic terminal increasing vesicle release probability.",
    "verified": false,
    "open": {
     "q": "What causes post-tetanic potentiation (PTP) immediately after a brief high-frequency burst of presynaptic action potentials?",
@@ -676,13 +676,13 @@
    "sub": "Synaptic Properties: Delay, Fatigue, Convergence, Divergence",
    "q": "How do 'reverberating (oscillatory) neuronal circuits' function in the central nervous system?",
    "options": [
-    "Positive-feedback collateral branches re-excite earlier neurons in the chain, generating sustained rhythmic output (as in brainstem respiratory rhythmogenesis and wakefulness) until synaptic fatigue or external inhibition terminates the loop",
+    "Recurrent collaterals re-excite earlier neurons, sustaining rhythmic output until inhibition or fatigue",
     "They completely block all sensory input to the thalamus",
     "They convert action potentials into hormones",
     "They occur only in peripheral tendons"
    ],
    "answer": 0,
-   "explain": "Reverberating circuits prolong brief trigger signals into sustained rhythmic discharges, such as inspiratory ramp generation in the pre-Botzinger complex.",
+   "explain": "Reverberating circuits prolong brief trigger signals into sustained rhythmic discharges, such as inspiratory ramp generation in the pre-Botzinger complex. Key detail: Positive-feedback collateral branches re-excite earlier neurons in the chain, generating sustained rhythmic output (as in brainstem respiratory rhythmogenesis and wakefulness) until synaptic fatigue or external inhibition terminates the loop.",
    "verified": false,
    "open": {
     "q": "Describe the structural organization of a reverberating neuronal circuit and give one physiological example of its function.",
