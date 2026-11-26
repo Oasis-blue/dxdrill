@@ -8,7 +8,7 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "What are the approximate normal adult male reference values for the four primary static lung volumes: tidal volume (VT), inspiratory reserve volume (IRV), expiratory reserve volume (ERV), and residual volume (RV)?",
    "options": [
-    "VT = 500 mL, IRV = 3,000 mL, ERV = 1,100 mL, RV = 1,200 mL (Total Lung Capacity ~5,800-6,000 mL)",
+    "VT = 500 mL, IRV = 3,000 mL, ERV = 1,100 mL, RV = 1,200 mL (TLC ~5,800-6,000 mL)",
     "VT = 1,200 mL, IRV = 500 mL, ERV = 3,000 mL, RV = 1,100 mL",
     "VT = 150 mL, IRV = 1,000 mL, ERV = 500 mL, RV = 0 mL",
     "All four volumes are equal at 1,500 mL each"
@@ -54,7 +54,7 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "What is the physiological importance of residual volume (RV ~1,200 mL) remaining in the lungs after maximal forced expiration?",
    "options": [
-    "It prevents complete alveolar collapse (atelectasis) at end-expiration and buffers arterial PO2 and PCO2 against wide swings between breaths",
+    "It prevents complete alveolar collapse (atelectasis) at end-expiration and stabilizes alveolar PO2/PCO2 between breaths",
     "It prevents venous blood from entering the left atrium",
     "It increases airway resistance during quiet breathing",
     "It is completely replaced by fresh atmospheric air on every single breath"
@@ -101,7 +101,7 @@
    "q": "Why does whole-body plethysmography yield a significantly LARGER FRC and TLC value than helium dilution or nitrogen washout in a patient with severe bullous emphysema?",
    "options": [
     "Helium dissolves rapidly into pulmonary venous blood in emphysema",
-    "Helium dilution and nitrogen washout measure only ventilated lung units communicating with open airways, whereas body plethysmography applies Boyle's law (P1V1 = P2V2) to measure ALL compressible intrathoracic gas, including poorly ventilated or trapped bullous gas",
+    "Gas dilution measures only ventilated lung units, whereas plethysmography (Boyle's law) includes trapped bullous gas",
     "Body plethysmography measures atmospheric pressure outside the cabin",
     "Nitrogen washout destroys residual volume"
    ],
@@ -146,7 +146,7 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "What does forced mid-expiratory flow (FEF25-75%, or maximal mid-expiratory flow rate) measure, and what is its clinical significance?",
    "options": [
-    "Average expiratory flow rate over the middle 50% of the FVC (between 25% and 75% of exhaled volume); it is largely effort-independent and serves as a sensitive early indicator of small-airway (<2 mm) obstruction",
+    "Average flow over the middle 50% of FVC (25-75% of exhaled volume); largely effort-independent and a sensitive early marker of small-airway obstruction",
     "Peak airflow during the first 10 milliseconds of inspiration",
     "Total volume of air left in the lungs after maximal expiration",
     "Alveolar oxygen partial pressure during exercise"
@@ -192,7 +192,7 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "How is a methacholine bronchial challenge test used and interpreted when a patient has episodic asthma symptoms but normal baseline spirometry?",
    "options": [
-    "Inhaling escalating doses of the muscarinic agonist methacholine triggers bronchoconstriction at much lower concentrations in hyperresponsive airways; a >= 20% fall in FEV1 at a low provocative concentration (PC20 <= 8 mg/mL) confirms airway hyperresponsiveness",
+    "Escalating methacholine doses trigger bronchoconstriction in hyperresponsive airways; a >= 20% FEV1 drop at low PC20 (<= 8 mg/mL) confirms airway hyperresponsiveness",
     "Methacholine increases FEV1 by 40% in asthmatic patients",
     "Methacholine measures alveolar carbon monoxide diffusion",
     "A fall in FEV1 of 1% confirms severe emphysema"
@@ -215,7 +215,7 @@
    "sub": "Peak Expiratory Flow Rate and Maximal Voluntary Ventilation",
    "q": "What is Peak Expiratory Flow Rate (PEFR), what is its normal value in a healthy young adult male, and why is it highly effort-dependent?",
    "options": [
-    "Maximum instantaneous airflow achieved during the first ~100 milliseconds of a forced expiration starting from TLC (~500-700 L/min or ~8-12 L/s); it occurs before the equal pressure point forms and therefore reflects expiratory muscle strength, patient effort, and large-airway caliber",
+    "Maximum instantaneous airflow during the first ~100 ms of forced expiration from TLC (~500-700 L/min); it occurs before the equal pressure point forms, so it reflects effort and large-airway caliber",
     "Lowest airflow measured at residual volume (~10 L/min)",
     "Total volume of air breathed in 1 hour",
     "PEFR is completely independent of patient effort"
@@ -262,7 +262,7 @@
    "q": "On a maximal expiratory and inspiratory flow-volume loop (flow on Y-axis vs lung volume on X-axis from TLC to RV), what is the characteristic shape of the expiratory limb in obstructive lung disease (such as COPD or asthma)?",
    "options": [
     "A tall, narrow, 'witch's hat' loop shifted to the right (low TLC and RV)",
-    "A scooped-out (concave upward) descending expiratory limb with reduced peak expiratory flow and leftward shift toward higher lung volumes (elevated TLC and RV)",
+    "A scooped-out (concave upward) expiratory limb with reduced peak expiratory flow and leftward shift toward higher lung volumes",
     "Flattening of both inspiratory and expiratory limbs at a constant horizontal plateau",
     "An enlarged rectangular box with doubled peak inspiratory flow"
    ],
@@ -284,7 +284,7 @@
    "sub": "Flow-Volume Loops and Airway Obstruction Patterns",
    "q": "How do the three patterns of upper airway obstruction—(1) fixed obstruction, (2) variable extrathoracic obstruction, and (3) variable intrathoracic obstruction—alter the flow-volume loop?",
    "options": [
-    "1) Fixed (e.g., tracheal stenosis/goiter): flattens BOTH inspiratory and expiratory limbs; 2) Variable extrathoracic (e.g., vocal cord paralysis): flattens the INSPIRATORY limb (negative intraluminal airway pressure during inspiration sucks soft extrathoracic airway inward); 3) Variable intrathoracic (e.g., intrathoracic tracheomalacia): flattens the EXPIRATORY limb (positive intrapleural pressure during expiration compresses intrathoracic trachea)",
+    "Fixed: flattens BOTH limbs; Variable extrathoracic: flattens INSPIRATORY limb; Variable intrathoracic: flattens EXPIRATORY limb",
     "Variable extrathoracic obstruction flattens only the expiratory limb; variable intrathoracic flattens only the inspiratory limb",
     "All three upper airway lesions produce normal round flow-volume loops",
     "Fixed upper airway obstruction increases peak inspiratory and expiratory flow"
@@ -330,7 +330,7 @@
    "sub": "Diffusing Capacity of the Lung for Carbon Monoxide (DLCO)",
    "q": "How does DLCO differentiate between the two classic obstructive diseases—emphysema and chronic bronchitis/asthma—when both present with FEV1/FVC < 70%?",
    "options": [
-    "Emphysema destroys alveolar-capillary surface area (markedly LOW DLCO), whereas uncomplicated chronic bronchitis and bronchial asthma spare alveolar walls (NORMAL or slightly elevated DLCO)",
+    "Emphysema destroys alveolar septa (low DLCO); asthma and simple chronic bronchitis preserve alveolar-capillary area (normal DLCO)",
     "Emphysema has a very high DLCO; asthma has a DLCO of zero",
     "Both emphysema and asthma have identical DLCO values",
     "DLCO cannot be measured in obstructive lung disease"
@@ -353,7 +353,7 @@
    "sub": "Restrictive Disorders: Parenchymal vs Extraparenchymal",
    "q": "How do pulmonary function tests differentiate 'intrinsic parenchymal' restrictive lung disease (e.g., idiopathic pulmonary fibrosis) from 'extrinsic extraparenchymal' restrictive disorders (e.g., myasthenia gravis, kyphoscoliosis, morbid obesity)?",
    "options": [
-    "Both show reduced TLC and FVC with normal/high FEV1/FVC (>80%); however, parenchymal fibrosis has a LOW DLCO (thickened alveolar membrane) and low RV, whereas neuromuscular/chest-wall restriction has a NORMAL DLCO (corrected for alveolar volume) and often elevated RV (due to weak expiratory muscles)",
+    "Both show reduced TLC and normal FEV1/FVC; fibrosis lowers DLCO with low RV, whereas neuromuscular/chest wall restriction keeps DLCO normal per alveolar volume and often elevates RV",
     "Extraparenchymal restriction has FEV1/FVC of 35%",
     "Neuromuscular weakness shows a markedly elevated TLC of 9.0 L",
     "Parenchymal fibrosis shows a supernormal DLCO of 180%"
@@ -399,7 +399,7 @@
    "sub": "Nitrogen Washout and Closing Volume",
    "q": "How does the single-breath Fowler nitrogen washout test measure BOTH anatomical dead space and closing volume?",
    "options": [
-    "After a single vital-capacity breath of 100% O2, expired N2 concentration rises through Phase I (pure dead space, 0% N2), Phase II (mixed dead space + alveolar gas, midpoint = anatomical dead space), Phase III (alveolar plateau), and Phase IV (abrupt upward inflection when dependent basal airways close, leaving N2-rich apical alveoli emptying alone)",
+    "After a single VC breath of 100% O2, expired N2 rises through Phase I (dead space, 0% N2), Phase II (transition, midpoint = anatomical dead space), Phase III (alveolar plateau), and Phase IV (upward inflection when dependent basal airways close, leaving N2-rich apical alveoli emptying alone)",
     "The patient inhales 100% nitrogen for 20 minutes until cyanotic",
     "Phase I contains 80% nitrogen and Phase III contains 0% nitrogen",
     "Phase IV represents opening of the mitral valve"
@@ -445,7 +445,7 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "How do pregnancy and severe obesity affect static lung volumes and capacities?",
    "options": [
-    "Elevation of the diaphragm (by the gravid uterus or abdominal adiposity) reduces ERV and FRC (by ~20-30%) and decreases chest wall compliance, while inspiratory capacity (IC) increases slightly in pregnancy to preserve TLC and vital capacity",
+    "Upward diaphragm displacement reduces ERV and FRC by 20-30% and lowers chest wall compliance, while IC rises slightly in pregnancy so TLC and VC are preserved",
     "Both pregnancy and obesity double FRC and TLC",
     "Pregnancy reduces FEV1/FVC to 45%",
     "Obesity increases ERV by 1,500 mL"
@@ -468,7 +468,7 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "What is 'air trapping' on pulmonary function testing, and which lung volume ratio best quantifies it?",
    "options": [
-    "Incomplete emptying of alveoli during expiration due to premature small-airway closure, producing an elevated Residual Volume (RV > 120% predicted) and an elevated RV/TLC ratio (normally ~20-25%, rising to >35-50% in obstructive disease)",
+    "Incomplete alveolar emptying from premature small-airway closure, giving elevated RV and an elevated RV/TLC ratio (normal ~20-25%, rising above 35-50% in obstruction)",
     "A residual volume of 0 mL and RV/TLC ratio of 0%",
     "An elevated FEV1/FVC ratio of 95%",
     "A decrease in total lung capacity to 2.0 L"
@@ -491,7 +491,7 @@
    "sub": "Peak Expiratory Flow Rate and Maximal Voluntary Ventilation",
    "q": "In outpatient asthma management using the 'green-yellow-red zone' Peak Expiratory Flow Rate (PEFR) action plan based on the patient's personal best PEFR, what do the three zones represent?",
    "options": [
-    "Green zone: 80-100% of personal best (well controlled); Yellow zone: 50-79% of personal best (caution/narrowing—use rescue bronchodilator and adjust therapy); Red zone: <50% of personal best (medical alert—severe airway narrowing requiring immediate emergency care)",
+    "Green: 80-100% personal best (well controlled); Yellow: 50-79% (caution, rescue bronchodilator); Red: <50% (severe narrowing, urgent emergency care)",
     "Green zone: <20%; Yellow zone: 20-30%; Red zone: >90%",
     "All three zones indicate normal lung function",
     "Red zone means 100% of personal best"
@@ -514,7 +514,7 @@
    "sub": "Diffusing Capacity of the Lung for Carbon Monoxide (DLCO)",
    "q": "Why must measured DLCO be adjusted (corrected) for the patient's hemoglobin concentration before diagnosing an intrinsic alveolar-capillary membrane defect?",
    "options": [
-    "Because CO uptake depends both on membrane diffusion (Dm) and chemical binding to capillary hemoglobin (theta x Vc); severe anemia lowers measured DLCO simply because fewer RBCs are present to bind CO, whereas polycythemia elevates DLCO",
+    "CO uptake depends on both membrane diffusion and capillary hemoglobin; anemia lowers and polycythemia raises DLCO purely by altering the blood-side binding sink",
     "Because hemoglobin destroys carbon monoxide inside the spirometer",
     "Because anemia raises alveolar pressure to 50 cmH2O",
     "Hemoglobin concentration has no effect on DLCO"
@@ -537,7 +537,7 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "What is the 'breathing reserve' (ventilatory reserve) during maximal exercise, and how is it calculated from Maximal Voluntary Ventilation (MVV) and maximal exercise minute ventilation (VE_max)?",
    "options": [
-    "Breathing reserve = MVV - VE_max (or [1 - VE_max/MVV] x 100%); healthy individuals utilize only ~60-70% of their MVV at maximal exertion (leaving a ~30-40% breathing reserve, proving exercise is normally cardiovascular-limited rather than ventilation-limited)",
+    "Breathing reserve = MVV - VE_max (or [1 - VE_max/MVV] x 100%); healthy individuals use only ~60-70% of MVV at peak exercise, leaving 30-40% reserve",
     "Breathing reserve = Tidal volume minus Residual volume",
     "Healthy individuals exhaust 100% of their MVV during light walking",
     "Breathing reserve equals zero at rest"
@@ -560,7 +560,7 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "What is the difference between Slow Vital Capacity (SVC) and Forced Vital Capacity (FVC) in a healthy subject versus a patient with severe obstructive lung disease?",
    "options": [
-    "In healthy individuals, SVC and FVC are nearly identical; in obstructive lung disease, FVC is markedly smaller than SVC because forceful expiration triggers early dynamic airway compression and air trapping",
+    "In health SVC and FVC are nearly identical; in obstruction, FVC is much smaller than SVC because forced expiration triggers dynamic airway collapse and air trapping",
     "FVC is always twice as large as SVC in COPD",
     "SVC is measured during a maximal 1-second cough",
     "Healthy individuals have an SVC of 500 mL and FVC of 5,000 mL"
@@ -652,7 +652,7 @@
    "sub": "Clinical Correlations",
    "q": "A 57-year-old man with amyotrophic lateral sclerosis (ALS) reports orthopnea and weak cough. PFTs reveal: TLC 62% predicted, FVC 56% predicted (dropping by 28% when moving from sitting to supine), FEV1/FVC 88%, RV 118% predicted, MIP -24 cmH2O (normal < -80), MEP +42 cmH2O (normal > +100), and normal DLCO/VA (102% predicted). What explains these findings?",
    "options": [
-    "Extraparenchymal restrictive defect due to progressive respiratory muscle and diaphragmatic weakness (evidenced by >20% supine drop in FVC, severely reduced MIP/MEP, elevated RV, and intact alveolar-capillary DLCO/VA)",
+    "Extraparenchymal restriction from progressive respiratory muscle and diaphragmatic weakness (FVC drops >20% supine, MIP/MEP severely reduced, RV elevated, DLCO/VA intact)",
     "Severe emphysema with alveolar septal destruction",
     "Interstitial pulmonary fibrosis",
     "Fixed laryngeal stenosis"
@@ -675,7 +675,7 @@
    "sub": "Clinical Correlations",
    "q": "A 68-year-old retired shipbuilder with 45 pack-years of smoking has PFTs showing: FEV1 44% predicted, FVC 78% predicted, FEV1/FVC 46% (no significant response to albuterol), TLC 128% predicted, RV 175% predicted, RV/TLC 58%, and DLCO 38% predicted. What is the complete physiological interpretation?",
    "options": [
-    "Severe irreversible obstructive lung disease with hyperinflation, air trapping, and severe alveolar-capillary destruction (consistent with emphysema-predominant COPD)",
+    "Severe irreversible obstructive disease with hyperinflation, air trapping, and alveolar-capillary destruction (emphysema-predominant COPD)",
     "Mild reversible bronchial asthma",
     "Pure parenchymal restrictive lung disease",
     "Normal age-related pulmonary function"
