@@ -32,7 +32,7 @@
   function pickView() {
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
     var h = '<div class="wrap stack"><a class="backtop" href="#home">\u2190 Home</a><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
-      '<p class="lede">' + total + ' questions. Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p></header>' +
+      '<p class="lede">' + total + (DX.loadingQuestions ? ' questions loaded so far. More are arriving in the background.' : ' questions.') + ' Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p></header>' +
       '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button>' +
       (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review what I missed · ' + missed + '</button>' : '') + '</section>' +
       '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
@@ -66,7 +66,7 @@
     var counts = [["all", "All " + sel]];
     [15, 30, 50].forEach(function (n) { if (sel > n) counts.push([String(n), String(n)]); });
     var h = '<div class="wrap stack"><button class="backtop" data-act="topics" type="button">\u2190 Choose another topic</button><header><p class="eyebrow">Practice setup</p><h1>' + esc(scopeName(P.scope)) + '</h1>' +
-      '<p class="lede">' + pool.length + ' questions available.</p></header>';
+      '<p class="lede">' + pool.length + ' questions available.' + (DX.loadingQuestions ? ' More questions are still loading; this list will update as they arrive.' : '') + '</p></header>';
     if (subs.length > 1) {
       var chips = '<div class="row tight"><button class="btn ghost small" data-act="suball">Select all</button><button class="btn ghost small" data-act="subnone">Clear</button></div><div class="chips">' + subs.map(function (s) {
         return '<button class="chip toggle" data-act="sub" data-v="' + esc(s) + '" aria-pressed="' + (P.subs.indexOf(s) > -1) + '">' + esc(s) + '</button>';
@@ -204,7 +204,7 @@
   }
   function render(el) {
     if (el) app = el;
-    if (!restored && DX.questions && DX.questions.length && !(P.run && !P.run.done)) restoreRun();
+    if (!restored && DX.questions && DX.questions.length && !DX.loadingQuestions && !(P.run && !P.run.done)) restoreRun();
     var h;
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
     if (P.report && rn) { P.report.note = rn.value; if (rr) P.report.reason = rr.value; }
@@ -303,5 +303,5 @@
     var none = document.getElementById("pk-none"); if (none) none.hidden = !q || any;
   }
 
-  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
+  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, isRunning: function () { return P.view === "run" && P.run && !P.run.done; }, needsDataRefresh: function () { return P.view === "setup" && !(P.run && !P.run.done); }, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
 })();
