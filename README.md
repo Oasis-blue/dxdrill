@@ -51,6 +51,15 @@ Each topic has one file in `data/questions/`, named after the topic id (for exam
 
 For a topic that has no file yet, create `data/questions/<topic-id>.json` and add its name (without `.json`) to the `questions` list in `data/manifest.json`.
 
+## Add True/False stems
+
+1. Give the AI `docs/tf-master-prompt.md`, `docs/topic-ids.txt` and `data/curriculum.json`. Add source notes if you want the questions based strictly on them.
+2. Open `tf-checker.html` on the live site (add `/tf-checker.html` to the address) and paste the AI's JSON.
+3. Fix errors, review warnings, and download `tf-core-expansion.json`.
+4. Upload it to `data/questions/tf-core-expansion.json`. This file is already listed in `data/manifest.json`, so no manifest edit is needed.
+
+The checker assigns unique IDs, validates curriculum topic IDs, 4–5 statements, Boolean answers, explanations, HTTPS references and duplicate stem wording. It forces imported stems to remain unverified. It does not establish medical accuracy or confirm that a source supports a claim; that still needs source-by-source review.
+
 ## Add describe-it and explain-it terms
 
 Terms live in files like `data/terms-muscle.json`. Each one has a `topic`, a `term`, three `clues` (vague first, easy last, none containing the term) and a `forbidden` list of words the explainer must avoid. Add new term files to the `terms` list in `data/manifest.json`.
