@@ -1466,10 +1466,10 @@
    "sub": "Comparative Muscle Ultrastructure",
    "q": "Which structural feature distinguishes cardiac muscle fibers from both skeletal and smooth muscle fibers?",
    "options": [
-    "Multinucleated peripheral nuclei and absence of gap junctions",
-    "Branched striated cells with centrally located nuclei, intercalated discs (containing desmosomes and gap junctions), and T-tubules aligned at the Z-lines",
-    "Spindle-shaped non-striated cells lacking sarcomeres and troponin",
-    "Two triads per sarcomere positioned at the A-I band junctions"
+    "Multinucleated fibres with peripheral nuclei and no intercalated discs",
+    "Branched, striated cells with central nuclei and intercalated discs; T-tubules form diads at Z-lines",
+    "Spindle-shaped cells without sarcomeres or troponin",
+    "Striated fibres with triads at every Z-line and multiple peripheral nuclei"
    ],
    "answer": 1,
    "explain": "Cardiac myocytes are branched, mononucleated (or binucleated) striated cells joined end-to-end by intercalated discs (fascia adherens, desmosomes, and connexin-43 gap junctions), with wide T-tubules forming diads at the Z-lines.",
@@ -1489,10 +1489,10 @@
    "sub": "Comparative Muscle Ultrastructure",
    "q": "What is the role of the connective tissue sheaths—epimysium, perimysium, and endomysium—in whole skeletal muscle?",
    "options": [
-    "They synthesize myosin heavy chains during exercise",
-    "They transmit mechanical force from individual muscle fibers to tendons, carry blood vessels and nerves, and contribute to the parallel elastic component of passive tension",
-    "They generate action potentials independently of motor neurons",
-    "They store all intracellular calcium ions at rest"
+    "They synthesize myosin and actin during each contraction",
+    "They transmit force to tendons and provide routes for blood vessels and nerves",
+    "They generate independent action potentials in the absence of motor neurons",
+    "They store most intracellular calcium outside the sarcoplasmic reticulum"
    ],
    "answer": 1,
    "explain": "Endomysium surrounds individual myofibers, perimysium bundles fascicles, and epimysium invests the entire muscle belly, merging into tendons and providing passive resistance against overstretching.",
@@ -1534,10 +1534,10 @@
    "sub": "Molecular Architecture of Myofilaments",
    "q": "What are the enzymatic and structural components of a single myosin II molecule?",
    "options": [
-    "Two heavy chains forming a coiled-coil tail and two globular heads (each with an actin-binding site and a Mg2+-dependent myosin ATPase site) plus four light chains (two essential and two regulatory)",
-    "A single globular monomer containing four calcium-binding pockets",
-    "Seven actin monomers twisted into a double helix",
-    "A transmembrane sodium channel pore"
+    "Two heavy chains form a coiled-coil tail and two actin-binding ATPase heads; four light chains associate with the heads",
+    "A single globular chain contains four calcium-binding sites and no ATPase activity",
+    "Seven actin monomers form a double helix with two tropomyosin strands",
+    "A transmembrane protein forms a sodium-selective pore in the sarcolemma"
    ],
    "answer": 0,
    "explain": "Trypsin and papain cleavage divide myosin II into light meromyosin (tail forming the thick filament backbone) and heavy meromyosin (S2 hinge + two S1 globular heads harboring actin-binding and ATPase catalytic sites).",
@@ -1580,10 +1580,10 @@
    "sub": "Excitation-Contraction Coupling Across Muscle Types",
    "q": "How does beta-adrenergic stimulation (norepinephrine/epinephrine acting on beta-1 receptors) enhance both the force (inotropy) and relaxation speed (lusitropy) of cardiac muscle?",
    "options": [
-    "Gs-cAMP-PKA phosphorylates L-type Ca2+ channels (increasing Ca2+ influx and CICR) and phosphorylates phospholamban, relieving its inhibition of SERCA2a so Ca2+ is pumped back into the SR faster",
-    "It blocks ryanodine receptors and inhibits SERCA2a",
-    "It activates Gi proteins to close all calcium channels",
-    "It degrades troponin C in ventricular myocytes"
+    "β₁–Gs–cAMP–PKA signalling increases Ca²⁺ entry and relieves phospholamban inhibition of SERCA2a",
+    "β₁–Gi signalling closes L-type Ca²⁺ channels and inhibits SERCA2a",
+    "β₁ stimulation blocks ryanodine receptors and prevents calcium release from the SR",
+    "β₁ stimulation degrades troponin C and slows cross-bridge cycling"
    ],
    "answer": 0,
    "explain": "Unphosphorylated phospholamban inhibits cardiac SERCA2a; PKA phosphorylation of phospholamban accelerates SR Ca2+ reuptake (faster relaxation/lusitropy) while loading larger SR Ca2+ stores for subsequent beats (positive inotropy).",
@@ -1626,10 +1626,10 @@
    "sub": "Muscle Mechanics: Length-Tension and Force-Velocity",
    "q": "In a whole skeletal muscle length-tension curve, how is 'active tension' experimentally determined at any given muscle length?",
    "options": [
-    "Active tension equals passive resting tension multiplied by two",
-    "Active tension equals total tension measured during maximal tetanic stimulation MINUS passive tension measured in the unstimulated stretched muscle at that same length",
-    "Active tension is measured only when the muscle is completely detached from both tendons",
-    "Active tension equals maximal shortening velocity divided by time"
+    "Active tension equals passive tension measured before stimulation",
+    "Active tension equals total stimulated tension minus passive tension at the same muscle length",
+    "Active tension equals maximal shortening velocity divided by the applied load",
+    "Active tension equals resting tension multiplied by the number of motor units"
    ],
    "answer": 1,
    "explain": "As a muscle is stretched beyond its resting equilibrium length, passive tension (from titin and extracellular collagen) rises exponentially; subtracting passive tension from total stimulated tension isolates true cross-bridge active tension.",
@@ -1741,10 +1741,10 @@
    "sub": "Muscle Fiber Types and Exercise Adaptation",
    "q": "What is the primary cellular difference between skeletal muscle 'hypertrophy' induced by heavy resistance training and 'hyperplasia'?",
    "options": [
-    "Hypertrophy is an increase in cross-sectional area of existing myofibers via addition of parallel sarcomeres/myofibrils and satellite-cell myonuclear donation, whereas hyperplasia is an increase in total fiber number (minimal in adult humans)",
-    "Hypertrophy is a decrease in muscle fiber diameter during limb casting",
-    "Hyperplasia accounts for 95% of strength gains in adult bodybuilders",
-    "Hypertrophy occurs solely by water retention without new contractile protein synthesis"
+    "Hypertrophy enlarges existing fibres; hyperplasia increases fibre number and is limited in adult human muscle",
+    "Hypertrophy increases fibre number; hyperplasia enlarges each existing fibre",
+    "Both processes increase muscle size only by retaining intracellular water",
+    "Hyperplasia is the main response to resistance training in adult skeletal muscle"
    ],
    "answer": 0,
    "explain": "Post-mitotic skeletal myofibers enlarge primarily by mTORC1-driven myofibrillar protein synthesis and fusion of quiescent Pax7+ satellite cells donating new myonuclei to maintain the myonuclear domain.",
@@ -1879,10 +1879,10 @@
    "sub": "Cross-Bridge Cycle Energetics",
    "q": "Why does 'delayed-onset muscle soreness' (DOMS) peak 24 to 72 hours after unaccustomed eccentric exercise (such as downhill running or lowering heavy weights)?",
    "options": [
-    "Persistent lactic acid accumulation inside the muscle for 3 days",
-    "High mechanical tension distributed across fewer active cross-bridges during active lengthening causes focal Z-disc streaming, sarcolemmal microtears, localized inflammation, and edema sensitizing group III/IV nociceptors",
-    "Complete blockage of coronary arteries",
-    "Conversion of skeletal muscle into bone"
+    "DOMS results from lactic acid remaining trapped in muscle for several days",
+    "Eccentric loading causes sarcomere and Z-disc microdamage, followed by local inflammation and nociceptor sensitization",
+    "DOMS is caused by complete interruption of arterial supply during exercise",
+    "DOMS results from conversion of muscle fibres into fibrous connective tissue"
    ],
    "answer": 1,
    "explain": "Blood and muscle lactate return to baseline within 1 hour of exercise; DOMS reflects ultrastructural sarcomere microdamage and sterile inflammatory repair triggered by high-force eccentric strain.",
@@ -1902,10 +1902,10 @@
    "sub": "Muscle Mechanics: Length-Tension and Force-Velocity",
    "q": "How do 'preload' and 'afterload' affect skeletal muscle contraction mechanics in an isolated muscle lever experiment?",
    "options": [
-    "Preload is the passive stretching force applied before contraction begins (setting initial sarcomere length), whereas afterload is the external load the muscle must overcome before shortening can occur (determining shortening velocity and distance)",
-    "Preload is the weight lifted during shortening; afterload is the resting resting membrane potential",
-    "Increasing afterload increases maximal shortening velocity",
-    "Preload has no effect on initial sarcomere length"
+    "Preload sets initial muscle length; afterload is the external load that must be overcome before shortening begins",
+    "Preload is the load lifted during shortening; afterload is the resting membrane potential",
+    "Preload determines only shortening velocity; afterload determines resting sarcomere length",
+    "Preload and afterload both refer to the passive tension measured before stimulation"
    ],
    "answer": 0,
    "explain": "During an afterloaded isotonic twitch, the muscle first contracts isometrically until active tension equals afterload, then shortens isotonically; higher afterload prolongs the isometric phase and slows shortening velocity.",
@@ -1994,10 +1994,10 @@
    "sub": "Clinical Correlations",
    "q": "A 52-year-old woman with systemic lupus erythematosus treated with high-dose oral prednisone for 6 months develops insidious symmetric proximal hip and shoulder weakness (difficulty climbing stairs and combing hair) with normal serum creatine kinase and normal nerve conduction studies. Which mechanism explains steroid myopathy?",
    "options": [
-    "Glucocorticoid-induced upregulation of ubiquitin-proteasome protein catabolism (atrogin-1/MuRF1) and inhibition of IGF-1/mTOR protein synthesis, causing selective atrophy of Type IIb/IIx fast glycolytic fibers",
-    "Autoimmune destruction of postsynaptic nicotinic acetylcholine receptors",
-    "Gain-of-function mutation in RyR1 channels",
-    "Demyelination of dorsal root ganglia"
+    "Glucocorticoids increase ubiquitin–proteasome protein breakdown and suppress IGF-1/mTOR synthesis, preferentially atrophying fast fibres",
+    "Autoantibodies destroy postsynaptic acetylcholine receptors at the neuromuscular junction",
+    "A gain-of-function mutation in RyR1 causes sustained calcium release from the sarcoplasmic reticulum",
+    "Demyelination of dorsal root ganglia prevents sensory conduction to proximal muscles"
    ],
    "answer": 0,
    "explain": "Exogenous or endogenous glucocorticoids (Cushing syndrome) stimulate myofibrillar protein breakdown and inhibit amino acid uptake, preferentially shrinking fast-twitch Type II fibers without inflammatory necrosis (so serum CK remains normal).",
