@@ -31,10 +31,10 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "How are the four pulmonary capacities—inspiratory capacity (IC), functional residual capacity (FRC), vital capacity (VC), and total lung capacity (TLC)—defined in terms of the four primary lung volumes?",
    "options": [
-    "IC = VT + IRV (~3,500 mL); FRC = ERV + RV (~2,300 mL); VC = IRV + VT + ERV (~4,600 mL); TLC = IRV + VT + ERV + RV (~5,800 mL)",
-    "IC = ERV + RV; FRC = VT + IRV; VC = VT + RV; TLC = VC - RV",
-    "FRC = VT + IRV + ERV; VC = RV + ERV",
-    "TLC = IC + ERV only"
+    "IC = VT + IRV; FRC = ERV + RV; VC = IRV + VT + ERV; TLC = VC + RV",
+    "IC = ERV + RV; FRC = VT + IRV; VC = VT + RV; TLC = VC − RV",
+    "FRC = VT + IRV + ERV; VC = RV + ERV; TLC = IC + RV",
+    "IC = VT + ERV; FRC = IRV + RV; VC = IC + RV; TLC = VC − ERV"
    ],
    "answer": 0,
    "explain": "Every lung capacity is the sum of two or more primary lung volumes; any capacity containing residual volume (FRC and TLC) cannot be measured by simple spirometry.",
@@ -54,10 +54,10 @@
    "sub": "Static Lung Volumes and Capacities",
    "q": "What is the physiological importance of residual volume (RV ~1,200 mL) remaining in the lungs after maximal forced expiration?",
    "options": [
-    "It prevents complete alveolar collapse (atelectasis) at end-expiration and stabilizes alveolar PO2/PCO2 between breaths",
-    "It prevents venous blood from entering the left atrium",
-    "It increases airway resistance during quiet breathing",
-    "It is completely replaced by fresh atmospheric air on every single breath"
+    "It keeps alveoli partly inflated between breaths and helps prevent end-expiratory collapse",
+    "It replaces all alveolar gas with fresh air after every breath",
+    "It increases airway resistance and prevents expiration",
+    "It provides the main force for active expiration during quiet breathing"
    ],
    "answer": 0,
    "explain": "Because RV and ERV dilute incoming fresh tidal air (~350 mL alveolar ventilation), alveolar PO2 (~100 mmHg) and PCO2 (~40 mmHg) remain remarkably stable throughout the respiratory cycle.",
@@ -146,10 +146,10 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "What does forced mid-expiratory flow (FEF25-75%, or maximal mid-expiratory flow rate) measure, and what is its clinical significance?",
    "options": [
-    "Average flow over the middle 50% of FVC (25-75% of exhaled volume); largely effort-independent and a sensitive early marker of small-airway obstruction",
-    "Peak airflow during the first 10 milliseconds of inspiration",
-    "Total volume of air left in the lungs after maximal expiration",
-    "Alveolar oxygen partial pressure during exercise"
+    "Average flow through the middle half of forced expiration; it can indicate small-airway obstruction",
+    "Peak flow during the first part of forced inspiration; it measures upper-airway calibre",
+    "The volume remaining after maximal expiration; it estimates residual volume",
+    "The oxygen pressure in alveoli during exercise; it estimates diffusion capacity"
    ],
    "answer": 0,
    "explain": "Because FEF25-75% is measured during the effort-independent portion of forced expiration, it detects early peripheral small-airway disease (e.g., early smokers or mild asthma) even before FEV1 or FEV1/FVC drops below normal.",
@@ -169,10 +169,10 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "How is a positive bronchodilator reversibility test defined on spirometry to help differentiate bronchial asthma from fixed chronic obstructive pulmonary disease (COPD)?",
    "options": [
-    "An increase in FEV1 and/or FVC of >= 12% AND >= 200 mL above baseline 15 minutes after inhaling a short-acting beta-2 agonist (such as albuterol)",
-    "A decrease in FEV1 by 50% after inhaling saline",
-    "An increase in TLC by 3,000 mL after inhaling oxygen",
-    "A drop in FEV1/FVC ratio from 80% to 40%"
+    "FEV₁ or FVC rises by at least 12% and 200 mL after a bronchodilator",
+    "FEV₁ falls by at least 12% and 200 mL after a bronchodilator",
+    "TLC rises by 3 L after inhaled oxygen",
+    "FEV₁/FVC falls below 0.70 after bronchodilator administration"
    ],
    "answer": 0,
    "explain": "Significant reversibility (>=12% and >=200 mL improvement in FEV1 or FVC post-bronchodilator) supports asthma, whereas persistent airflow limitation (post-bronchodilator FEV1/FVC < 0.70) defines COPD.",
@@ -192,10 +192,10 @@
    "sub": "Dynamic Spirometry: FEV1, FVC, and FEF25-75%",
    "q": "How is a methacholine bronchial challenge test used and interpreted when a patient has episodic asthma symptoms but normal baseline spirometry?",
    "options": [
-    "Escalating methacholine doses trigger bronchoconstriction in hyperresponsive airways; a >= 20% FEV1 drop at low PC20 (<= 8 mg/mL) confirms airway hyperresponsiveness",
-    "Methacholine increases FEV1 by 40% in asthmatic patients",
-    "Methacholine measures alveolar carbon monoxide diffusion",
-    "A fall in FEV1 of 1% confirms severe emphysema"
+    "Methacholine provokes bronchoconstriction; a fall in FEV₁ of at least 20% indicates airway hyperresponsiveness",
+    "Methacholine causes bronchodilation; a rise in FEV₁ of 20% confirms asthma",
+    "Methacholine measures carbon monoxide transfer across the alveolar membrane",
+    "A fall in FEV₁ of 1% confirms severe emphysema"
    ],
    "answer": 0,
    "explain": "Because airway hyperresponsiveness is a hallmark of asthma, a negative methacholine challenge (PC20 > 16 mg/mL) has high negative predictive value for ruling out active asthma.",
@@ -307,10 +307,10 @@
    "sub": "Diffusing Capacity of the Lung for Carbon Monoxide (DLCO)",
    "q": "How is the single-breath diffusing capacity of the lung for carbon monoxide (DLCO) measured, and which clinical conditions DECREASE versus INCREASE DLCO?",
    "options": [
-    "Single-breath CO uptake estimates DLCO; it falls with loss of surface area, membrane thickening, anaemia or reduced perfusion, and rises with polycythaemia or alveolar haemorrhage",
-    "DLCO is measured during forced expiration; it rises in emphysema and pulmonary fibrosis",
-    "DLCO is measured after breathing 100% CO for ten minutes and is independent of haemoglobin",
-    "DLCO is reduced in polycythaemia and increased in severe anaemia"
+    "DLCO estimates CO transfer from a single breath; it falls with reduced area, thickening, anaemia or low perfusion and rises with polycythaemia or alveolar bleeding",
+    "DLCO measures airway resistance; it falls in asthma and rises in emphysema",
+    "DLCO measures residual volume; it falls in polycythaemia and rises in anaemia",
+    "DLCO measures oxygen saturation during exercise and is independent of haemoglobin"
    ],
    "answer": 0,
    "explain": "DLCO depends on alveolar surface area, membrane thickness, pulmonary capillary blood volume, and hemoglobin concentration: alveolar hemorrhage raises DLCO because extravasated intra-alveolar RBC hemoglobin binds inhaled CO!",
