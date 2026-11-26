@@ -1,705 +1,705 @@
 {
- "topic": "se-cardiovascular-system",
- "questions": [
-  {
-   "id": "se-cardiovascular-system-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Early Cardiogenesis and Heart Tube Formation",
-   "q": "From which specific embryonic germ layer and subdivision do the heart tube (endocardium and myocardium) and primitive blood vessels originate during week 3?",
-   "options": [
-    "Splanchnic (visceral) lateral plate mesoderm",
-    "Somatic (parietal) lateral plate mesoderm",
-    "Foregut endoderm",
-    "Surface ectoderm"
-   ],
-   "answer": 0,
-   "explain": "Hemangioblastic angiogenic cell clusters in the splanchnic lateral plate mesoderm of the cardiogenic field form paired endocardial heart tubes, while surrounding splanchnic mesoderm forms the myocardium and epicardial cardiac jelly.",
-   "verified": false,
-   "open": {
-    "q": "Which embryonic mesodermal subdivision gives rise to the endocardium and myocardium of the primitive heart tube?",
-    "accept": [
-     "splanchnic mesoderm",
-     "splanchnic lateral plate mesoderm",
-     "visceral mesoderm"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-002",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Early Cardiogenesis and Heart Tube Formation",
-   "q": "Which structures of the definitive heart are derived from the secondary heart field (SHF) rather than the primary heart field (PHF)?",
-   "options": [
-    "Right ventricle and outflow tract (conus cordis and truncus arteriosus)",
-    "Left ventricle exclusively",
-    "Coronary sinus and left atrium only",
-    "Superior vena cava only"
-   ],
-   "answer": 0,
-   "explain": "The primary heart field forms the atria and left ventricle, whereas pharyngeal splanchnic mesoderm of the secondary heart field (regulated by ISL1, FGF8, and SHH) adds cells to the arterial pole to form the right ventricle and outflow tract (conotruncus).",
-   "verified": false,
-   "open": {
-    "q": "Which cardiac chamber and outflow structures are contributed by the secondary heart field?",
-    "accept": [
-     "right ventricle and outflow tract",
-     "right ventricle, conus cordis, and truncus arteriosus",
-     "right ventricle and conotruncus"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Early Cardiogenesis and Heart Tube Formation",
-   "q": "From cranial (arterial) to caudal (venous), what is the correct sequence of the five primitive dilatations of the embryonic heart tube?",
-   "options": [
-    "Truncus arteriosus → Bulbus cordis → Primitive ventricle → Primitive atrium → Sinus venosus",
-    "Sinus venosus → Primitive atrium → Primitive ventricle → Bulbus cordis → Truncus arteriosus",
-    "Bulbus cordis → Truncus arteriosus → Sinus venosus → Primitive ventricle → Primitive atrium",
-    "Primitive ventricle → Truncus arteriosus → Bulbus cordis → Sinus venosus → Primitive atrium"
-   ],
-   "answer": 0,
-   "explain": "Blood enters the venous pole at the sinus venosus and flows cranially through the primitive atrium, primitive ventricle, bulbus cordis, and truncus arteriosus into the aortic sac and aortic arches.",
-   "verified": false,
-   "open": {
-    "q": "List the five sequential segments of the primitive embryonic heart tube from the venous inflow end to the arterial outflow end.",
-    "accept": [
-     "sinus venosus, primitive atrium, primitive ventricle, bulbus cordis, truncus arteriosus"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Cardiac Looping and Dextrocardia",
-   "q": "During days 23 to 28, normal dextral (D-) cardiac looping bends the bulbus cordis ventrally, caudally, and to the right, while shifting the primitive atrium and sinus venosus:",
-   "options": [
-    "Dorsally and cranially (superiorly)",
-    "Ventrally and caudally",
-    "Into the abdominal cavity",
-    "Directly into the aortic sac"
-   ],
-   "answer": 0,
-   "explain": "Because the elongating heart tube is anchored at both ends within the pericardial cavity, dextral looping swings the bulboventricular loop ventrally, caudally, and to the right while placing the primitive atria and sinus venosus dorsally and cranially.",
-   "verified": false,
-   "open": {
-    "q": "In which direction does the bulboventricular loop bend during normal cardiac looping (days 23–28)?",
-    "accept": [
-     "ventrally, caudally, and to the right",
-     "to the right",
-     "dextral"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-005",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Cardiac Looping and Dextrocardia",
-   "q": "Defective ciliary motility of nodal cells at the primitive node (as in Kartagener syndrome / primary ciliary dyskinesia) disrupts the leftward flow of signaling molecules (Nodal, Lefty2, PITX2) and predisposes to:",
-   "options": [
-    "Dextrocardia and situs inversus",
-    "Tetralogy of Fallot exclusively",
-    "Patent urachus",
-    "Coarctation of the aorta"
-   ],
-   "answer": 0,
-   "explain": "Clockwise rotation of monocilia in the primitive node generates a leftward fluid flow that activates the Nodal-PITX2 left-sidedness cascade; dynein defects randomize laterality, causing situs inversus totalis or isolated dextrocardia.",
-   "verified": false,
-   "open": {
-    "q": "Which transcription factor cascade establishes normal left-right embryonic asymmetry and prevents dextrocardia?",
-    "accept": [
-     "PITX2",
-     "Nodal and PITX2",
-     "Nodal-Lefty-PITX2"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Sinus Venosus and Atrium Fate",
-   "q": "What adult right atrial structure is derived from the incorporated right horn of the embryonic sinus venosus?",
-   "options": [
-    "Smooth-walled sinus venarum (posterior wall of the right atrium)",
-    "Trabeculated right auricle (pectinate muscles)",
-    "Fossa ovalis",
-    "Mitral valve anterior leaflet"
-   ],
-   "answer": 0,
-   "explain": "As venous return shifts from left to right, the right horn of the sinus venosus is absorbed into the right atrium to form the smooth-walled sinus venarum, separated from the trabeculated primitive right atrium (pectinate muscles) by the crista terminalis.",
-   "verified": false,
-   "open": {
-    "q": "Which adult cardiac structure is formed by the persistent left horn and body of the embryonic sinus venosus?",
-    "accept": [
-     "coronary sinus",
-     "coronary sinus and oblique vein of left atrium"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-007",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Sinus Venosus and Atrium Fate",
-   "q": "How is the smooth-walled posterior portion of the adult left atrium formed during cardiac development?",
-   "options": [
-    "By incorporation of the primitive pulmonary vein and its four primary branches into the dorsal left atrial wall",
-    "By absorption of the left horn of the sinus venosus",
-    "By expansion of the bulbus cordis",
-    "By fusion of the endocardial cushions"
-   ],
-   "answer": 0,
-   "explain": "A single primitive pulmonary vein sprouts from the posterior left atrium, connects with the lung bud venous plexus, and is progressively intussuscepted into the left atrial wall so all four pulmonary veins open separately into the smooth posterior left atrium.",
-   "verified": false,
-   "open": {
-    "q": "Which embryonic venous structure is absorbed into the posterior wall of the left atrium to form its smooth-walled portion?",
-    "accept": [
-     "primitive pulmonary vein",
-     "pulmonary veins"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Atrial Septation and Atrial Septal Defects",
-   "q": "What is the correct developmental sequence of openings and septa forming the fetal interatrial partition?",
-   "options": [
-    "Septum primum grows toward endocardial cushions (leaving ostium primum) → apoptosis creates ostium secundum → septum secundum grows on the right, overlapping ostium secundum to leave the foramen ovale",
-    "Septum secundum forms first → ostium primum forms last → foramen ovale closes in week 6",
-    "Endocardial cushions form the entire interatrial septum without any foramen",
-    "Truncus arteriosus divides the atria"
-   ],
-   "answer": 0,
-   "explain": "Septum primum grows down toward the endocardial cushions, narrowing ostium primum while programmed cell death perforates its upper part to form ostium secundum; then the thick crescentic septum secundum grows to the right of septum primum, leaving the oblique oval foramen (foramen ovale).",
-   "verified": false,
-   "open": {
-    "q": "By what cellular process does the ostium secundum form in the upper portion of the septum primum before the ostium primum closes?",
-    "accept": [
-     "apoptosis",
-     "programmed cell death"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-009",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Atrial Septation and Atrial Septal Defects",
-   "q": "What is the most common type of clinically significant atrial septal defect (ASD), accounting for ~70–80% of all ASDs?",
-   "options": [
-    "Ostium secundum ASD (excessive resorption of septum primum and/or inadequate growth of septum secundum)",
-    "Ostium primum ASD",
-    "Sinus venosus ASD",
-    "Coronary sinus ASD"
-   ],
-   "answer": 0,
-   "explain": "Ostium secundum defects occur in the region of the fossa ovalis due to excessive apoptosis of septum primum or defective development of septum secundum; ostium primum ASDs are endocardial cushion defects commonly associated with Down syndrome.",
-   "verified": false,
-   "open": {
-    "q": "Which subtype of atrial septal defect occurs in the region of the fossa ovalis and represents the most common ASD?",
-    "accept": [
-     "ostium secundum ASD",
-     "secundum ASD",
-     "ostium secundum defect"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Atrioventricular Canal and Endocardial Cushions",
-   "q": "Failure of fusion of the superior and inferior atrioventricular endocardial cushions leads to a complete atrioventricular septal defect (endocardial cushion defect), which is strongly associated with which chromosomal syndrome?",
-   "options": [
-    "Down syndrome (trisomy 21)",
-    "Turner syndrome (45,X)",
-    "Marfan syndrome",
-    "Klinefelter syndrome (47,XXY)"
-   ],
-   "answer": 0,
-   "explain": "Endocardial cushions form the lower interatrial septum (ostium primum), upper membranous interventricular septum, and septal leaflets of the mitral and tricuspid valves; complete AV canal defects occur in ~40–50% of infants with Down syndrome.",
-   "verified": false,
-   "open": {
-    "q": "Which chromosomal aneuploidy has a strong clinical association with atrioventricular septal (endocardial cushion) defects?",
-    "accept": [
-     "Down syndrome",
-     "trisomy 21"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-011",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ventricular Septation and VSD",
-   "q": "From which three embryonic sources is the membranous part of the interventricular septum derived?",
-   "options": [
-    "Right bulbar ridge, left bulbar ridge, and fused atrioventricular endocardial cushions",
-    "Septum primum, septum secundum, and sinus venosus",
-    "Left fourth aortic arch, sixth aortic arch, and aortic sac",
-    "Epicardium, parietal pericardium, and septum transversum"
-   ],
-   "answer": 0,
-   "explain": "While the thick muscular interventricular septum grows upward from the floor of the primitive ventricle, the interventricular foramen is closed by the membranous septum formed by fusion of the right and left conotruncal (bulbar) ridges with the inferior endocardial cushion.",
-   "verified": false,
-   "open": {
-    "q": "Which portion of the interventricular septum (muscular or membranous) is the most common site of congenital ventricular septal defects (VSDs)?",
-    "accept": [
-     "membranous",
-     "membranous part",
-     "perimembranous"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ventricular Septation and VSD",
-   "q": "What is the single most common congenital heart defect overall in newborns?",
-   "options": [
-    "Ventricular septal defect (VSD)",
-    "Tetralogy of Fallot",
-    "Transposition of the great arteries",
-    "Coarctation of the aorta"
-   ],
-   "answer": 0,
-   "explain": "Ventricular septal defect (especially involving the membranous interventricular septum) is the most common congenital cardiac malformation, accounting for ~25–30% of all congenital heart defects.",
-   "verified": false,
-   "open": {
-    "q": "Name the single most frequent congenital cardiac anomaly seen at birth.",
-    "accept": [
-     "ventricular septal defect",
-     "VSD"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-013",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Outflow Tract Septation and Conotruncal Anomalies",
-   "q": "Which migratory cell population populates the truncal and bulbar ridges during week 5 to form the spiral aorticopulmonary septum dividing the truncus arteriosus into the ascending aorta and pulmonary trunk?",
-   "options": [
-    "Cardiac neural crest cells (from occipital/postotic hindbrain neural folds)",
-    "Endodermal cells from the fourth pharyngeal pouch",
-    "Hepatoblasts from the septum transversum",
-    "Somatic mesoderm of the lateral body wall"
-   ],
-   "answer": 0,
-   "explain": "Cardiac neural crest cells migrate through pharyngeal arches 3, 4, and 6 into the truncal and conal ridges, driving formation of the 180-degree spiraling aorticopulmonary septum; neural crest ablation or 22q11.2 deletion produces conotruncal heart defects.",
-   "verified": false,
-   "open": {
-    "q": "Which specialized embryonic cell population migrates into the truncal and bulbar cushions to form the spiral aorticopulmonary septum?",
-    "accept": [
-     "cardiac neural crest cells",
-     "neural crest cells",
-     "neural crest"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Outflow Tract Septation and Conotruncal Anomalies",
-   "q": "Why does the aorticopulmonary septum normally follow a 180-degree spiral course as it descends through the truncus arteriosus and conus cordis?",
-   "options": [
-    "So that the pulmonary trunk arises from the right ventricle and winds anteriorly around the ascending aorta arising from the left ventricle",
-    "So that both great vessels arise from the right ventricle",
-    "To prevent closure of the foramen ovale",
-    "To separate the right and left atria"
-   ],
-   "answer": 0,
-   "explain": "Because the right ventricle lies anteriorly and the left ventricle posteriorly, a 180-degree spiral septum connects the right ventricle to the pulmonary trunk and the left ventricle to the ascending aorta.",
-   "verified": false,
-   "open": {
-    "q": "What major cyanotic congenital heart defect results when the aorticopulmonary septum fails to spiral (takes a straight course), leaving the aorta arising from the right ventricle and the pulmonary trunk from the left ventricle?",
-    "accept": [
-     "transposition of the great arteries",
-     "TGA",
-     "dextro-transposition of the great arteries"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-015",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Outflow Tract Septation and Conotruncal Anomalies",
-   "q": "A 2-day-old term male infant develops severe central cyanosis shortly after birth that does not improve with 100% oxygen; chest radiograph shows a narrow superior mediastinum ('egg on a string' silhouette), and echocardiography demonstrates the aorta arising anteriorly from the right ventricle and the pulmonary artery arising posteriorly from the left ventricle. Why is survival until surgical switch dependent on a patent ductus arteriosus or ASD/VSD?",
-   "options": [
-    "The systemic and pulmonary circulations run in parallel rather than in series, so mixing of oxygenated and deoxygenated blood is essential for survival",
-    "The left ventricle is completely absent",
-    "All four pulmonary veins drain into the coronary sinus",
-    "The tricuspid valve is imperforate"
-   ],
-   "answer": 0,
-   "explain": "In complete transposition of the great arteries (d-TGA), deoxygenated systemic blood recirculates through the right heart and aorta while oxygenated pulmonary blood recirculates through the left heart and lungs; prostaglandin E1 infusion is given immediately to keep the ductus arteriosus patent until balloon atrial septostomy or arterial switch surgery.",
-   "verified": false,
-   "open": {
-    "q": "Which intravenous prostaglandin is administered immediately to a newborn with transposition of the great arteries to keep the ductus arteriosus open for blood mixing?",
-    "accept": [
-     "prostaglandin E1",
-     "PGE1",
-     "alprostadil"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-016",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Outflow Tract Septation and Conotruncal Anomalies",
-   "q": "What is the single primary embryological abnormality responsible for all four features of Tetralogy of Fallot?",
-   "options": [
-    "Anterosuperior (anterior and cephalad) malalignment/displacement of the infundibular (conal) septum",
-    "Failure of spiral rotation of the aorticopulmonary septum",
-    "Complete absence of the truncal ridges",
-    "Persistence of the septum primum"
-   ],
-   "answer": 0,
-   "explain": "Anterior and superior displacement of the conal septum narrows the right ventricular outflow tract (infundibular pulmonary stenosis), creates a malalignment VSD, positions the aorta directly over the VSD (overriding aorta), and causes secondary right ventricular hypertrophy.",
-   "verified": false,
-   "open": {
-    "q": "List the four anatomical components of Tetralogy of Fallot.",
-    "accept": [
-     "pulmonary stenosis, ventricular septal defect, overriding aorta, and right ventricular hypertrophy",
-     "VSD, overriding aorta, pulmonary stenosis, right ventricular hypertrophy"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-017",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Outflow Tract Septation and Conotruncal Anomalies",
-   "q": "A newborn with DiGeorge syndrome (22q11.2 microdeletion—hypocalcemia, absent thymic shadow, cleft palate) presents with cyanosis, a single loud S2, and a single large arterial trunk overriding a large VSD that gives rise to the systemic, pulmonary, and coronary circulations. Which embryological defect occurred?",
-   "options": [
-    "Persistent truncus arteriosus due to complete failure of neural crest-mediated truncal ridge fusion into the aorticopulmonary septum",
-    "Premature closure of the foramen ovale",
-    "Persistence of the left superior vena cava",
-    "Absence of the septum secundum"
-   ],
-   "answer": 0,
-   "explain": "Failure of cardiac neural crest cells to populate and fuse the truncal ridges leaves a single undivided truncus arteriosus overriding a VSD, strongly linked to 22q11.2 deletion syndrome.",
-   "verified": false,
-   "open": {
-    "q": "Name the congenital cardiac malformation in which a single great arterial vessel arises from the base of the heart over a VSD due to failure of aorticopulmonary septation.",
-    "accept": [
-     "persistent truncus arteriosus",
-     "truncus arteriosus"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heart Valves and Conducting System",
-   "q": "From which embryonic structures do the semilunar valves (aortic and pulmonary valves) develop during weeks 5 to 9?",
-   "options": [
-    "Three subendocardial mesenchymal swellings (truncal and intercalated cushions) at the junction of the truncus arteriosus and conus cordis",
-    "Septum primum and septum secundum",
-    "Right and left cardinal veins",
-    "Somatic mesoderm of the thoracic wall"
-   ],
-   "answer": 0,
-   "explain": "As partitioning of the truncus arteriosus nears completion, three small mesenchymal tubercles (two from the main truncal ridges and one dorsal/ventral intercalated swelling) hollow out on their upper surfaces to form the three thin-walled cusps of the aortic and pulmonary semilunar valves.",
-   "verified": false,
-   "open": {
-    "q": "How many cusps normally form in each semilunar valve (aortic and pulmonary) from the truncal and intercalated swellings?",
-    "accept": [
-     "3",
-     "three",
-     "three cusps"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
-   "q": "Which adult artery is derived from the THIRD pharyngeal arch arteries bilaterally?",
-   "options": [
-    "Common carotid arteries and proximal internal carotid arteries",
-    "Arch of the aorta (left) and proximal right subclavian artery (right)",
-    "Maxillary arteries",
-    "Ductus arteriosus and proximal pulmonary arteries"
-   ],
-   "answer": 0,
-   "explain": "The 3rd aortic arch arteries form the common carotid arteries and the first (proximal) segment of the internal carotid arteries bilaterally, whereas the distal internal carotid arises from the cranial dorsal aorta.",
-   "verified": false,
-   "open": {
-    "q": "Which major arteries of the head and neck develop from the third pair of pharyngeal arch arteries?",
-    "accept": [
-     "common carotid and proximal internal carotid arteries",
-     "common carotid arteries"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
-   "q": "What are the asymmetric adult derivatives of the LEFT and RIGHT FOURTH pharyngeal arch arteries respectively?",
-   "options": [
-    "Left 4th forms part of the aortic arch (between left common carotid and left subclavian); right 4th forms the proximal right subclavian artery",
-    "Left 4th forms the ductus arteriosus; right 4th forms the coronary sinus",
-    "Left 4th forms the maxillary artery; right 4th forms the stapedial artery",
-    "Both 4th arches disappear completely before week 6"
-   ],
-   "answer": 0,
-   "explain": "The 4th pharyngeal arch arteries develop asymmetrically: the left 4th arch forms the segment of the definitive aortic arch between the left common carotid and left subclavian arteries, while the right 4th arch forms the proximal portion of the right subclavian artery.",
-   "verified": false,
-   "open": {
-    "q": "Which segment of the systemic arterial tree is derived from the left fourth pharyngeal arch artery?",
-    "accept": [
-     "arch of the aorta",
-     "aortic arch"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-021",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
-   "q": "Which adult structures are derived from the proximal and distal segments of the LEFT SIXTH pharyngeal arch artery?",
-   "options": [
-    "Proximal left 6th forms the proximal left pulmonary artery; distal left 6th forms the ductus arteriosus",
-    "Proximal left 6th forms the left subclavian artery; distal left 6th forms the vertebral artery",
-    "Left 6th forms the entire ascending aorta",
-    "Left 6th forms the left common carotid artery"
-   ],
-   "answer": 0,
-   "explain": "The proximal portions of both 6th (pulmonary) arch arteries give rise to the proximal right and left pulmonary arteries; distally, the right 6th arch degenerates while the distal left 6th arch persists as the ductus arteriosus.",
-   "verified": false,
-   "open": {
-    "q": "Which embryonic vascular shunt is derived from the distal segment of the left sixth pharyngeal arch artery?",
-    "accept": [
-     "ductus arteriosus"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-022",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
-   "q": "Why does the left recurrent laryngeal nerve hook underneath the ligamentum arteriosum (arch of the aorta) in the thorax, whereas the right recurrent laryngeal nerve hooks around the right subclavian artery in the root of the neck?",
-   "options": [
-    "The 5th aortic arch disappears on both sides and the distal right 6th arch degenerates, allowing the right nerve to ascend to the 4th arch derivative (right subclavian), whereas the left nerve remains trapped caudal to the persistent distal left 6th arch (ductus/ligamentum arteriosum)",
-    "The vagus nerve splits only on the left side",
-    "The right lung pushes the right nerve upward",
-    "The left recurrent laryngeal nerve develops from the phrenic nerve"
-   ],
-   "answer": 0,
-   "explain": "Initially, both recurrent laryngeal nerves (nerves of the 6th pharyngeal arch) pass caudal to the 6th aortic arches; when the distal right 6th arch and 5th arch regress, the right nerve moves up to hook under the 4th arch (right subclavian artery), while the left nerve stays anchored beneath the persistent left 6th arch (ductus arteriosus/ligamentum arteriosum).",
-   "verified": false,
-   "open": {
-    "q": "Under which vascular structure does the right recurrent laryngeal nerve loop after regression of the distal right sixth aortic arch?",
-    "accept": [
-     "right subclavian artery",
-     "subclavian artery"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-023",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
-   "q": "A 24-year-old woman undergoes evaluation for mild dysphagia to solids ('dysphagia lusoria'); barium esophagogram shows posterior indentation of the upper esophagus, and CT angiography reveals an aberrant right subclavian artery arising as the fourth branch of the aortic arch and passing behind the esophagus. Which embryological error caused this anomaly?",
-   "options": [
-    "Abnormal obliteration of the right fourth aortic arch and cranial right dorsal aorta, with persistence of the distal right dorsal aorta",
-    "Persistence of both left and right fourth aortic arches (double aortic arch)",
-    "Failure of closure of the ductus arteriosus",
-    "Persistence of the left umbilical vein"
-   ],
-   "answer": 0,
-   "explain": "When the right 4th aortic arch and proximal right dorsal aorta involute abnormally, the right subclavian artery forms from the right 7th intersegmental artery and the persistent distal right dorsal aorta, crossing behind the esophagus and trachea from the distal aortic arch.",
-   "verified": false,
-   "open": {
-    "q": "Which embryonic aortic arch normally gives rise to the proximal right subclavian artery, and fails to persist in aberrant right subclavian artery?",
-    "accept": [
-     "right fourth aortic arch",
-     "right 4th pharyngeal arch artery",
-     "right 4th arch"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-024",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
-   "q": "In coarctation of the aorta, where is the discrete shelf-like luminal narrowing of the aortic arch typically located, and which collateral arteries enlarge to bypass the obstruction?",
-   "options": [
-    "Immediately adjacent to the insertion of the ductus arteriosus / ligamentum arteriosum (juxtaductal); bypassed via internal thoracic and posterior intercostal arteries (causing inferior rib notching)",
-    "At the aortic valve root; bypassed via coronary arteries",
-    "At the bifurcation of the abdominal aorta; bypassed via renal arteries",
-    "In the ascending aorta; bypassed via pulmonary veins"
-   ],
-   "answer": 0,
-   "explain": "Coarctation of the aorta occurs almost always juxtaductally near the ligamentum arteriosum (frequently associated with bicuspid aortic valve and Turner syndrome); retrograde flow through internal thoracic → anterior intercostal → posterior intercostal arteries → descending aorta produces characteristic inferior rib notching on chest X-ray.",
-   "verified": false,
-   "open": {
-    "q": "Which radiological sign on the ribs develops in older children and adults with postductal coarctation of the aorta due to enlarged collateral intercostal arteries?",
-    "accept": [
-     "rib notching",
-     "inferior rib notching"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-025",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Embryonic Venous System Development",
-   "q": "Which three pairs of bilateral embryonic veins drain into the sinus venosus of the 4-week embryo?",
-   "options": [
-    "Vitelline veins (from yolk sac), umbilical veins (from placenta), and common cardinal veins (from embryo body)",
-    "Pulmonary veins, renal veins, and hepatic veins",
-    "Azygos, hemiazygos, and internal jugular veins",
-    "Splenic, superior mesenteric, and inferior mesenteric veins"
-   ],
-   "answer": 0,
-   "explain": "At week 4, three paired symmetric venous systems enter the right and left horns of the sinus venosus: vitelline (omphalomesenteric) veins, umbilical veins, and common cardinal veins (formed by anterior and posterior cardinal veins).",
-   "verified": false,
-   "open": {
-    "q": "Name the three paired embryonic venous systems that initially drain into the sinus venosus during week 4.",
-    "accept": [
-     "vitelline, umbilical, and cardinal veins",
-     "vitelline, umbilical, and common cardinal veins"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-026",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Embryonic Venous System Development",
-   "q": "From which embryonic venous system do the hepatic sinusoids, hepatocardiac channel of the inferior vena cava, superior mesenteric vein, and hepatic portal vein develop?",
-   "options": [
-    "Vitelline veins",
-    "Umbilical veins",
-    "Anterior cardinal veins",
-    "Subcardinal veins"
-   ],
-   "answer": 0,
-   "explain": "Growing hepatic cords break up the proximal vitelline veins into hepatic sinusoids; the right hepatocardiac channel forms the terminal IVC, while anastomoses around the duodenum form the portal vein and superior mesenteric vein.",
-   "verified": false,
-   "open": {
-    "q": "Which paired embryonic veins give rise to the hepatic portal vein and hepatic sinusoids?",
-    "accept": [
-     "vitelline veins",
-     "omphalomesenteric veins"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-027",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Embryonic Venous System Development",
-   "q": "Which segments of the two embryonic umbilical veins degenerate during the second month, and which segment persists until birth to carry oxygenated placental blood to the fetus?",
-   "options": [
-    "The entire right umbilical vein and the cranial part of the left umbilical vein degenerate; the caudal left umbilical vein persists",
-    "The entire left umbilical vein degenerates; the right umbilical vein persists",
-    "Both right and left umbilical veins persist equally until birth",
-    "Both umbilical veins obliterate during week 5"
-   ],
-   "answer": 0,
-   "explain": "During weeks 5–7, the entire right umbilical vein and the proximal (hepatic-to-sinus-venosus) portion of the left umbilical vein obliterate; the remaining left umbilical vein connects to the ductus venosus to deliver oxygenated blood to the IVC.",
-   "verified": false,
-   "open": {
-    "q": "Which umbilical vein (left or right) persists throughout fetal life to transport oxygenated blood from the placenta to the liver and ductus venosus?",
-    "accept": [
-     "left umbilical vein",
-     "left"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-028",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Embryonic Venous System Development",
-   "q": "From which embryonic venous vessels do the superior vena cava (SVC) and the left brachiocephalic vein develop?",
-   "options": [
-    "SVC develops from the right anterior cardinal vein and right common cardinal vein; left brachiocephalic vein develops from the inter-anterior cardinal anastomosis",
-    "SVC develops from the left umbilical vein; left brachiocephalic vein develops from the ductus venosus",
-    "SVC develops from the vitelline veins; left brachiocephalic vein develops from the subcardinal veins",
-    "SVC develops from the pulmonary veins"
-   ],
-   "answer": 0,
-   "explain": "An oblique venous shunt between the left and right anterior cardinal veins redirects blood from the left head and upper limb to the right, becoming the left brachiocephalic vein, while the right anterior cardinal vein (caudal to the shunt) and right common cardinal vein form the SVC.",
-   "verified": false,
-   "open": {
-    "q": "Which embryonic anastomosis redirects venous drainage from the left side of the head and upper limb toward the right anterior cardinal vein to form the left brachiocephalic vein?",
-    "accept": [
-     "anastomosis between the anterior cardinal veins",
-     "left brachiocephalic anastomosis",
-     "inter-anterior cardinal anastomosis"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-029",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Embryonic Venous System Development",
-   "q": "From cranial to caudal, which four embryonic venous segments fuse in sequence to form the adult inferior vena cava (IVC)?",
-   "options": [
-    "Hepatic segment (right vitelline vein) → Prerenal segment (right subcardinal vein) → Renal segment (subcardinal-supracardinal anastomosis) → Postrenal segment (right supracardinal vein)",
-    "Left umbilical vein → Ductus arteriosus → Aortic sac → Left anterior cardinal vein",
-    "Posterior cardinal veins exclusively from diaphragm to pelvis",
-    "Coronary sinus → Oblique vein of Marshall → Left pulmonary vein"
-   ],
-   "answer": 0,
-   "explain": "The composite IVC forms from four segments: (1) hepatic (right vitelline hepatocardiac channel), (2) prerenal (right subcardinal vein), (3) renal (subcardinal-supracardinal anastomosis), and (4) postrenal (right supracardinal vein).",
-   "verified": false,
-   "open": {
-    "q": "Which embryonic vein forms the postrenal (infrarenal) segment of the adult inferior vena cava?",
-    "accept": [
-     "right supracardinal vein",
-     "supracardinal vein"
-    ]
-   }
-  },
-  {
-   "id": "se-cardiovascular-system-030",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Postnatal Circulatory Changes",
-   "q": "What are the adult fibrous remnants of the fetal umbilical arteries (distal intra-abdominal parts) and the fetal allantois/urachus respectively?",
-   "options": [
-    "Medial umbilical ligaments (distal umbilical arteries) and median umbilical ligament (urachus)",
-    "Ligamentum teres hepatis and ligamentum venosum",
-    "Ligamentum arteriosum and fossa ovalis",
-    "Round ligament of uterus and broad ligament"
-   ],
-   "answer": 0,
-   "explain": "After birth, the proximal umbilical arteries remain patent as the internal iliac and superior vesical arteries, while their distal obliterated parts form the paired medial umbilical ligaments; the obliterated urachus in the midline forms the single median umbilical ligament.",
-   "verified": false,
-   "open": {
-    "q": "Which adult peritoneal folds/ligaments represent the obliterated distal segments of the paired fetal umbilical arteries?",
-    "accept": [
-     "medial umbilical ligaments",
-     "medial umbilical folds"
-    ]
-   }
-  }
- ]
+  "topic": "se-cardiovascular-system",
+  "questions": [
+    {
+      "id": "se-cardiovascular-system-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Early Cardiogenesis and Heart Tube Formation",
+      "q": "From which specific embryonic germ layer and subdivision do the heart tube (endocardium and myocardium) and primitive blood vessels originate during week 3?",
+      "options": [
+        "Splanchnic (visceral) lateral plate mesoderm",
+        "Somatic (parietal) lateral plate mesoderm",
+        "Foregut endoderm",
+        "Surface ectoderm"
+      ],
+      "answer": 0,
+      "explain": "Hemangioblastic angiogenic cell clusters in the splanchnic lateral plate mesoderm of the cardiogenic field form paired endocardial heart tubes, while surrounding splanchnic mesoderm forms the myocardium and epicardial cardiac jelly.",
+      "verified": false,
+      "open": {
+        "q": "Which embryonic mesodermal subdivision gives rise to the endocardium and myocardium of the primitive heart tube?",
+        "accept": [
+          "splanchnic mesoderm",
+          "splanchnic lateral plate mesoderm",
+          "visceral mesoderm"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-002",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Early Cardiogenesis and Heart Tube Formation",
+      "q": "Which structures of the definitive heart are derived from the secondary heart field (SHF) rather than the primary heart field (PHF)?",
+      "options": [
+        "Right ventricle and outflow tract (conus cordis and truncus arteriosus)",
+        "Left ventricle exclusively",
+        "Coronary sinus and left atrium only",
+        "Superior vena cava only"
+      ],
+      "answer": 0,
+      "explain": "The primary heart field forms the atria and left ventricle, whereas pharyngeal splanchnic mesoderm of the secondary heart field (regulated by ISL1, FGF8, and SHH) adds cells to the arterial pole to form the right ventricle and outflow tract (conotruncus).",
+      "verified": false,
+      "open": {
+        "q": "Which cardiac chamber and outflow structures are contributed by the secondary heart field?",
+        "accept": [
+          "right ventricle and outflow tract",
+          "right ventricle, conus cordis, and truncus arteriosus",
+          "right ventricle and conotruncus"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Early Cardiogenesis and Heart Tube Formation",
+      "q": "From cranial (arterial) to caudal (venous), what is the correct sequence of the five primitive dilatations of the embryonic heart tube?",
+      "options": [
+        "Truncus arteriosus → Bulbus cordis → Primitive ventricle → Primitive atrium → Sinus venosus",
+        "Sinus venosus → Primitive atrium → Primitive ventricle → Bulbus cordis → Truncus arteriosus",
+        "Bulbus cordis → Truncus arteriosus → Sinus venosus → Primitive ventricle → Primitive atrium",
+        "Primitive ventricle → Truncus arteriosus → Bulbus cordis → Sinus venosus → Primitive atrium"
+      ],
+      "answer": 0,
+      "explain": "Blood enters the venous pole at the sinus venosus and flows cranially through the primitive atrium, primitive ventricle, bulbus cordis, and truncus arteriosus into the aortic sac and aortic arches.",
+      "verified": false,
+      "open": {
+        "q": "List the five sequential segments of the primitive embryonic heart tube from the venous inflow end to the arterial outflow end.",
+        "accept": [
+          "sinus venosus, primitive atrium, primitive ventricle, bulbus cordis, truncus arteriosus"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cardiac Looping and Dextrocardia",
+      "q": "During days 23 to 28, normal dextral (D-) cardiac looping bends the bulbus cordis ventrally, caudally, and to the right, while shifting the primitive atrium and sinus venosus:",
+      "options": [
+        "Dorsally and cranially (superiorly)",
+        "Ventrally and caudally",
+        "Into the abdominal cavity",
+        "Directly into the aortic sac"
+      ],
+      "answer": 0,
+      "explain": "Because the elongating heart tube is anchored at both ends within the pericardial cavity, dextral looping swings the bulboventricular loop ventrally, caudally, and to the right while placing the primitive atria and sinus venosus dorsally and cranially.",
+      "verified": false,
+      "open": {
+        "q": "In which direction does the bulboventricular loop bend during normal cardiac looping (days 23–28)?",
+        "accept": [
+          "ventrally, caudally, and to the right",
+          "to the right",
+          "dextral"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cardiac Looping and Dextrocardia",
+      "q": "Defective ciliary motility of nodal cells at the primitive node (as in Kartagener syndrome / primary ciliary dyskinesia) disrupts the leftward flow of signaling molecules (Nodal, Lefty2, PITX2) and predisposes to:",
+      "options": [
+        "Dextrocardia and situs inversus",
+        "Tetralogy of Fallot exclusively",
+        "Patent urachus",
+        "Coarctation of the aorta"
+      ],
+      "answer": 0,
+      "explain": "Clockwise rotation of monocilia in the primitive node generates a leftward fluid flow that activates the Nodal-PITX2 left-sidedness cascade; dynein defects randomize laterality, causing situs inversus totalis or isolated dextrocardia.",
+      "verified": false,
+      "open": {
+        "q": "Which transcription factor cascade establishes normal left-right embryonic asymmetry and prevents dextrocardia?",
+        "accept": [
+          "PITX2",
+          "Nodal and PITX2",
+          "Nodal-Lefty-PITX2"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Sinus Venosus and Atrium Fate",
+      "q": "What adult right atrial structure is derived from the incorporated right horn of the embryonic sinus venosus?",
+      "options": [
+        "Smooth-walled sinus venarum (posterior wall of the right atrium)",
+        "Trabeculated right auricle (pectinate muscles)",
+        "Fossa ovalis",
+        "Mitral valve anterior leaflet"
+      ],
+      "answer": 0,
+      "explain": "As venous return shifts from left to right, the right horn of the sinus venosus is absorbed into the right atrium to form the smooth-walled sinus venarum, separated from the trabeculated primitive right atrium (pectinate muscles) by the crista terminalis.",
+      "verified": false,
+      "open": {
+        "q": "Which adult cardiac structure is formed by the persistent left horn and body of the embryonic sinus venosus?",
+        "accept": [
+          "coronary sinus",
+          "coronary sinus and oblique vein of left atrium"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Sinus Venosus and Atrium Fate",
+      "q": "How is the smooth-walled posterior portion of the adult left atrium formed during cardiac development?",
+      "options": [
+        "By incorporation of the primitive pulmonary vein and its four primary branches into the dorsal left atrial wall",
+        "By absorption of the left horn of the sinus venosus",
+        "By expansion of the bulbus cordis",
+        "By fusion of the endocardial cushions"
+      ],
+      "answer": 0,
+      "explain": "A single primitive pulmonary vein sprouts from the posterior left atrium, connects with the lung bud venous plexus, and is progressively intussuscepted into the left atrial wall so all four pulmonary veins open separately into the smooth posterior left atrium.",
+      "verified": false,
+      "open": {
+        "q": "Which embryonic venous structure is absorbed into the posterior wall of the left atrium to form its smooth-walled portion?",
+        "accept": [
+          "primitive pulmonary vein",
+          "pulmonary veins"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Atrial Septation and Atrial Septal Defects",
+      "q": "What is the correct developmental sequence of openings and septa forming the fetal interatrial partition?",
+      "options": [
+        "Septum primum forms first; ostium secundum develops; septum secundum then leaves the foramen ovale",
+        "Septum secundum forms first and closes the ostium primum before septum primum develops",
+        "Endocardial cushions form the entire septum without any interatrial opening",
+        "The truncus arteriosus divides the atria into right and left chambers"
+      ],
+      "answer": 0,
+      "explain": "Septum primum grows down toward the endocardial cushions, narrowing ostium primum while programmed cell death perforates its upper part to form ostium secundum; then the thick crescentic septum secundum grows to the right of septum primum, leaving the oblique oval foramen (foramen ovale).",
+      "verified": false,
+      "open": {
+        "q": "By what cellular process does the ostium secundum form in the upper portion of the septum primum before the ostium primum closes?",
+        "accept": [
+          "apoptosis",
+          "programmed cell death"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Atrial Septation and Atrial Septal Defects",
+      "q": "What is the most common type of clinically significant atrial septal defect (ASD), accounting for ~70–80% of all ASDs?",
+      "options": [
+        "Ostium secundum ASD (excessive resorption of septum primum and/or inadequate growth of septum secundum)",
+        "Ostium primum ASD",
+        "Sinus venosus ASD",
+        "Coronary sinus ASD"
+      ],
+      "answer": 0,
+      "explain": "Ostium secundum defects occur in the region of the fossa ovalis due to excessive apoptosis of septum primum or defective development of septum secundum; ostium primum ASDs are endocardial cushion defects commonly associated with Down syndrome.",
+      "verified": false,
+      "open": {
+        "q": "Which subtype of atrial septal defect occurs in the region of the fossa ovalis and represents the most common ASD?",
+        "accept": [
+          "ostium secundum ASD",
+          "secundum ASD",
+          "ostium secundum defect"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Atrioventricular Canal and Endocardial Cushions",
+      "q": "Failure of fusion of the superior and inferior atrioventricular endocardial cushions leads to a complete atrioventricular septal defect (endocardial cushion defect), which is strongly associated with which chromosomal syndrome?",
+      "options": [
+        "Down syndrome (trisomy 21)",
+        "Turner syndrome (45,X)",
+        "Marfan syndrome",
+        "Klinefelter syndrome (47,XXY)"
+      ],
+      "answer": 0,
+      "explain": "Endocardial cushions form the lower interatrial septum (ostium primum), upper membranous interventricular septum, and septal leaflets of the mitral and tricuspid valves; complete AV canal defects occur in ~40–50% of infants with Down syndrome.",
+      "verified": false,
+      "open": {
+        "q": "Which chromosomal aneuploidy has a strong clinical association with atrioventricular septal (endocardial cushion) defects?",
+        "accept": [
+          "Down syndrome",
+          "trisomy 21"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ventricular Septation and VSD",
+      "q": "From which three embryonic sources is the membranous part of the interventricular septum derived?",
+      "options": [
+        "Right bulbar ridge, left bulbar ridge, and fused atrioventricular endocardial cushions",
+        "Septum primum, septum secundum, and sinus venosus",
+        "Left fourth aortic arch, sixth aortic arch, and aortic sac",
+        "Epicardium, parietal pericardium, and septum transversum"
+      ],
+      "answer": 0,
+      "explain": "While the thick muscular interventricular septum grows upward from the floor of the primitive ventricle, the interventricular foramen is closed by the membranous septum formed by fusion of the right and left conotruncal (bulbar) ridges with the inferior endocardial cushion.",
+      "verified": false,
+      "open": {
+        "q": "Which portion of the interventricular septum (muscular or membranous) is the most common site of congenital ventricular septal defects (VSDs)?",
+        "accept": [
+          "membranous",
+          "membranous part",
+          "perimembranous"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ventricular Septation and VSD",
+      "q": "What is the single most common congenital heart defect overall in newborns?",
+      "options": [
+        "Ventricular septal defect (VSD)",
+        "Tetralogy of Fallot",
+        "Transposition of the great arteries",
+        "Coarctation of the aorta"
+      ],
+      "answer": 0,
+      "explain": "Ventricular septal defect (especially involving the membranous interventricular septum) is the most common congenital cardiac malformation, accounting for ~25–30% of all congenital heart defects.",
+      "verified": false,
+      "open": {
+        "q": "Name the single most frequent congenital cardiac anomaly seen at birth.",
+        "accept": [
+          "ventricular septal defect",
+          "VSD"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Outflow Tract Septation and Conotruncal Anomalies",
+      "q": "Which migratory cell population populates the truncal and bulbar ridges during week 5 to form the spiral aorticopulmonary septum dividing the truncus arteriosus into the ascending aorta and pulmonary trunk?",
+      "options": [
+        "Cardiac neural crest cells (from occipital/postotic hindbrain neural folds)",
+        "Endodermal cells from the fourth pharyngeal pouch",
+        "Hepatoblasts from the septum transversum",
+        "Somatic mesoderm of the lateral body wall"
+      ],
+      "answer": 0,
+      "explain": "Cardiac neural crest cells migrate through pharyngeal arches 3, 4, and 6 into the truncal and conal ridges, driving formation of the 180-degree spiraling aorticopulmonary septum; neural crest ablation or 22q11.2 deletion produces conotruncal heart defects.",
+      "verified": false,
+      "open": {
+        "q": "Which specialized embryonic cell population migrates into the truncal and bulbar cushions to form the spiral aorticopulmonary septum?",
+        "accept": [
+          "cardiac neural crest cells",
+          "neural crest cells",
+          "neural crest"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Outflow Tract Septation and Conotruncal Anomalies",
+      "q": "Why does the aorticopulmonary septum normally follow a 180-degree spiral course as it descends through the truncus arteriosus and conus cordis?",
+      "options": [
+        "So that the pulmonary trunk arises from the right ventricle and winds anteriorly around the ascending aorta arising from the left ventricle",
+        "So that both great vessels arise from the right ventricle",
+        "To prevent closure of the foramen ovale",
+        "To separate the right and left atria"
+      ],
+      "answer": 0,
+      "explain": "Because the right ventricle lies anteriorly and the left ventricle posteriorly, a 180-degree spiral septum connects the right ventricle to the pulmonary trunk and the left ventricle to the ascending aorta.",
+      "verified": false,
+      "open": {
+        "q": "What major cyanotic congenital heart defect results when the aorticopulmonary septum fails to spiral (takes a straight course), leaving the aorta arising from the right ventricle and the pulmonary trunk from the left ventricle?",
+        "accept": [
+          "transposition of the great arteries",
+          "TGA",
+          "dextro-transposition of the great arteries"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-015",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Outflow Tract Septation and Conotruncal Anomalies",
+      "q": "A 2-day-old term male infant develops severe central cyanosis shortly after birth that does not improve with 100% oxygen; chest radiograph shows a narrow superior mediastinum ('egg on a string' silhouette), and echocardiography demonstrates the aorta arising anteriorly from the right ventricle and the pulmonary artery arising posteriorly from the left ventricle. Why is survival until surgical switch dependent on a patent ductus arteriosus or ASD/VSD?",
+      "options": [
+        "The systemic and pulmonary circuits run in parallel, so blood must mix through a ductus or septal defect",
+        "The left ventricle is completely absent",
+        "All pulmonary veins drain directly into the coronary sinus",
+        "The tricuspid valve is congenitally imperforate"
+      ],
+      "answer": 0,
+      "explain": "In complete transposition of the great arteries (d-TGA), deoxygenated systemic blood recirculates through the right heart and aorta while oxygenated pulmonary blood recirculates through the left heart and lungs; prostaglandin E1 infusion is given immediately to keep the ductus arteriosus patent until balloon atrial septostomy or arterial switch surgery.",
+      "verified": false,
+      "open": {
+        "q": "Which intravenous prostaglandin is administered immediately to a newborn with transposition of the great arteries to keep the ductus arteriosus open for blood mixing?",
+        "accept": [
+          "prostaglandin E1",
+          "PGE1",
+          "alprostadil"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-016",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Outflow Tract Septation and Conotruncal Anomalies",
+      "q": "What is the single primary embryological abnormality responsible for all four features of Tetralogy of Fallot?",
+      "options": [
+        "Anterosuperior (anterior and cephalad) malalignment/displacement of the infundibular (conal) septum",
+        "Failure of spiral rotation of the aorticopulmonary septum",
+        "Complete absence of the truncal ridges",
+        "Persistence of the septum primum"
+      ],
+      "answer": 0,
+      "explain": "Anterior and superior displacement of the conal septum narrows the right ventricular outflow tract (infundibular pulmonary stenosis), creates a malalignment VSD, positions the aorta directly over the VSD (overriding aorta), and causes secondary right ventricular hypertrophy.",
+      "verified": false,
+      "open": {
+        "q": "List the four anatomical components of Tetralogy of Fallot.",
+        "accept": [
+          "pulmonary stenosis, ventricular septal defect, overriding aorta, and right ventricular hypertrophy",
+          "VSD, overriding aorta, pulmonary stenosis, right ventricular hypertrophy"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-017",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Outflow Tract Septation and Conotruncal Anomalies",
+      "q": "A newborn with DiGeorge syndrome (22q11.2 microdeletion—hypocalcemia, absent thymic shadow, cleft palate) presents with cyanosis, a single loud S2, and a single large arterial trunk overriding a large VSD that gives rise to the systemic, pulmonary, and coronary circulations. Which embryological defect occurred?",
+      "options": [
+        "Failure of neural crest-mediated aorticopulmonary septation causes persistent truncus arteriosus",
+        "Premature closure of the foramen ovale causes a single arterial trunk",
+        "Persistence of the left superior vena cava causes a common arterial outlet",
+        "Absence of the septum secundum causes a single arterial trunk"
+      ],
+      "answer": 0,
+      "explain": "Failure of cardiac neural crest cells to populate and fuse the truncal ridges leaves a single undivided truncus arteriosus overriding a VSD, strongly linked to 22q11.2 deletion syndrome.",
+      "verified": false,
+      "open": {
+        "q": "Name the congenital cardiac malformation in which a single great arterial vessel arises from the base of the heart over a VSD due to failure of aorticopulmonary septation.",
+        "accept": [
+          "persistent truncus arteriosus",
+          "truncus arteriosus"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heart Valves and Conducting System",
+      "q": "From which embryonic structures do the semilunar valves (aortic and pulmonary valves) develop during weeks 5 to 9?",
+      "options": [
+        "Mesenchymal swellings in the truncus arteriosus and conus cordis form the semilunar valve cusps",
+        "Septum primum and septum secundum form the semilunar valves",
+        "Right and left cardinal veins fuse to form the aortic and pulmonary valves",
+        "Somatic mesoderm of the thoracic wall forms the semilunar valves"
+      ],
+      "answer": 0,
+      "explain": "As partitioning of the truncus arteriosus nears completion, three small mesenchymal tubercles (two from the main truncal ridges and one dorsal/ventral intercalated swelling) hollow out on their upper surfaces to form the three thin-walled cusps of the aortic and pulmonary semilunar valves.",
+      "verified": false,
+      "open": {
+        "q": "How many cusps normally form in each semilunar valve (aortic and pulmonary) from the truncal and intercalated swellings?",
+        "accept": [
+          "3",
+          "three",
+          "three cusps"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
+      "q": "Which adult artery is derived from the THIRD pharyngeal arch arteries bilaterally?",
+      "options": [
+        "Common carotid arteries and proximal internal carotid arteries",
+        "Arch of the aorta (left) and proximal right subclavian artery (right)",
+        "Maxillary arteries",
+        "Ductus arteriosus and proximal pulmonary arteries"
+      ],
+      "answer": 0,
+      "explain": "The 3rd aortic arch arteries form the common carotid arteries and the first (proximal) segment of the internal carotid arteries bilaterally, whereas the distal internal carotid arises from the cranial dorsal aorta.",
+      "verified": false,
+      "open": {
+        "q": "Which major arteries of the head and neck develop from the third pair of pharyngeal arch arteries?",
+        "accept": [
+          "common carotid and proximal internal carotid arteries",
+          "common carotid arteries"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
+      "q": "What are the asymmetric adult derivatives of the LEFT and RIGHT FOURTH pharyngeal arch arteries respectively?",
+      "options": [
+        "Left 4th forms part of the aortic arch (between left common carotid and left subclavian); right 4th forms the proximal right subclavian artery",
+        "Left 4th forms the ductus arteriosus; right 4th forms the coronary sinus",
+        "Left 4th forms the maxillary artery; right 4th forms the stapedial artery",
+        "Both 4th arches disappear completely before week 6"
+      ],
+      "answer": 0,
+      "explain": "The 4th pharyngeal arch arteries develop asymmetrically: the left 4th arch forms the segment of the definitive aortic arch between the left common carotid and left subclavian arteries, while the right 4th arch forms the proximal portion of the right subclavian artery.",
+      "verified": false,
+      "open": {
+        "q": "Which segment of the systemic arterial tree is derived from the left fourth pharyngeal arch artery?",
+        "accept": [
+          "arch of the aorta",
+          "aortic arch"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
+      "q": "Which adult structures are derived from the proximal and distal segments of the LEFT SIXTH pharyngeal arch artery?",
+      "options": [
+        "Proximal left 6th forms the proximal left pulmonary artery; distal left 6th forms the ductus arteriosus",
+        "Proximal left 6th forms the left subclavian artery; distal left 6th forms the vertebral artery",
+        "Left 6th forms the entire ascending aorta",
+        "Left 6th forms the left common carotid artery"
+      ],
+      "answer": 0,
+      "explain": "The proximal portions of both 6th (pulmonary) arch arteries give rise to the proximal right and left pulmonary arteries; distally, the right 6th arch degenerates while the distal left 6th arch persists as the ductus arteriosus.",
+      "verified": false,
+      "open": {
+        "q": "Which embryonic vascular shunt is derived from the distal segment of the left sixth pharyngeal arch artery?",
+        "accept": [
+          "ductus arteriosus"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
+      "q": "Why does the left recurrent laryngeal nerve hook underneath the ligamentum arteriosum (arch of the aorta) in the thorax, whereas the right recurrent laryngeal nerve hooks around the right subclavian artery in the root of the neck?",
+      "options": [
+        "The right recurrent laryngeal nerve hooks around the right subclavian artery; the left remains beneath the aortic arch near the ligamentum arteriosum",
+        "Both recurrent laryngeal nerves hook around the common carotid arteries",
+        "The left nerve ascends to the right subclavian artery while the right remains beneath the aortic arch",
+        "The recurrent laryngeal nerves develop from the phrenic nerves and do not relate to aortic arches"
+      ],
+      "answer": 0,
+      "explain": "Initially, both recurrent laryngeal nerves (nerves of the 6th pharyngeal arch) pass caudal to the 6th aortic arches; when the distal right 6th arch and 5th arch regress, the right nerve moves up to hook under the 4th arch (right subclavian artery), while the left nerve stays anchored beneath the persistent left 6th arch (ductus arteriosus/ligamentum arteriosum).",
+      "verified": false,
+      "open": {
+        "q": "Under which vascular structure does the right recurrent laryngeal nerve loop after regression of the distal right sixth aortic arch?",
+        "accept": [
+          "right subclavian artery",
+          "subclavian artery"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-023",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
+      "q": "A 24-year-old woman undergoes evaluation for mild dysphagia to solids ('dysphagia lusoria'); barium esophagogram shows posterior indentation of the upper esophagus, and CT angiography reveals an aberrant right subclavian artery arising as the fourth branch of the aortic arch and passing behind the esophagus. Which embryological error caused this anomaly?",
+      "options": [
+        "Abnormal obliteration of the right fourth aortic arch and cranial right dorsal aorta, with persistence of the distal right dorsal aorta",
+        "Persistence of both left and right fourth aortic arches (double aortic arch)",
+        "Failure of closure of the ductus arteriosus",
+        "Persistence of the left umbilical vein"
+      ],
+      "answer": 0,
+      "explain": "When the right 4th aortic arch and proximal right dorsal aorta involute abnormally, the right subclavian artery forms from the right 7th intersegmental artery and the persistent distal right dorsal aorta, crossing behind the esophagus and trachea from the distal aortic arch.",
+      "verified": false,
+      "open": {
+        "q": "Which embryonic aortic arch normally gives rise to the proximal right subclavian artery, and fails to persist in aberrant right subclavian artery?",
+        "accept": [
+          "right fourth aortic arch",
+          "right 4th pharyngeal arch artery",
+          "right 4th arch"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Pharyngeal Arch Arteries (Aortic Arches)",
+      "q": "In coarctation of the aorta, where is the discrete shelf-like luminal narrowing of the aortic arch typically located, and which collateral arteries enlarge to bypass the obstruction?",
+      "options": [
+        "Juxtaductal narrowing near the ligamentum arteriosum; internal thoracic and intercostal collaterals enlarge",
+        "Narrowing at the aortic root; coronary arteries bypass the obstruction",
+        "Narrowing at the aortic bifurcation; renal arteries form the main collaterals",
+        "Narrowing of the ascending aorta; pulmonary veins bypass the lesion"
+      ],
+      "answer": 0,
+      "explain": "Coarctation of the aorta occurs almost always juxtaductally near the ligamentum arteriosum (frequently associated with bicuspid aortic valve and Turner syndrome); retrograde flow through internal thoracic → anterior intercostal → posterior intercostal arteries → descending aorta produces characteristic inferior rib notching on chest X-ray.",
+      "verified": false,
+      "open": {
+        "q": "Which radiological sign on the ribs develops in older children and adults with postductal coarctation of the aorta due to enlarged collateral intercostal arteries?",
+        "accept": [
+          "rib notching",
+          "inferior rib notching"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Embryonic Venous System Development",
+      "q": "Which three pairs of bilateral embryonic veins drain into the sinus venosus of the 4-week embryo?",
+      "options": [
+        "Vitelline veins (from yolk sac), umbilical veins (from placenta), and common cardinal veins (from embryo body)",
+        "Pulmonary veins, renal veins, and hepatic veins",
+        "Azygos, hemiazygos, and internal jugular veins",
+        "Splenic, superior mesenteric, and inferior mesenteric veins"
+      ],
+      "answer": 0,
+      "explain": "At week 4, three paired symmetric venous systems enter the right and left horns of the sinus venosus: vitelline (omphalomesenteric) veins, umbilical veins, and common cardinal veins (formed by anterior and posterior cardinal veins).",
+      "verified": false,
+      "open": {
+        "q": "Name the three paired embryonic venous systems that initially drain into the sinus venosus during week 4.",
+        "accept": [
+          "vitelline, umbilical, and cardinal veins",
+          "vitelline, umbilical, and common cardinal veins"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Embryonic Venous System Development",
+      "q": "From which embryonic venous system do the hepatic sinusoids, hepatocardiac channel of the inferior vena cava, superior mesenteric vein, and hepatic portal vein develop?",
+      "options": [
+        "Vitelline veins",
+        "Umbilical veins",
+        "Anterior cardinal veins",
+        "Subcardinal veins"
+      ],
+      "answer": 0,
+      "explain": "Growing hepatic cords break up the proximal vitelline veins into hepatic sinusoids; the right hepatocardiac channel forms the terminal IVC, while anastomoses around the duodenum form the portal vein and superior mesenteric vein.",
+      "verified": false,
+      "open": {
+        "q": "Which paired embryonic veins give rise to the hepatic portal vein and hepatic sinusoids?",
+        "accept": [
+          "vitelline veins",
+          "omphalomesenteric veins"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-027",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Embryonic Venous System Development",
+      "q": "Which segments of the two embryonic umbilical veins degenerate during the second month, and which segment persists until birth to carry oxygenated placental blood to the fetus?",
+      "options": [
+        "The entire right umbilical vein and the cranial part of the left umbilical vein degenerate; the caudal left umbilical vein persists",
+        "The entire left umbilical vein degenerates; the right umbilical vein persists",
+        "Both right and left umbilical veins persist equally until birth",
+        "Both umbilical veins obliterate during week 5"
+      ],
+      "answer": 0,
+      "explain": "During weeks 5–7, the entire right umbilical vein and the proximal (hepatic-to-sinus-venosus) portion of the left umbilical vein obliterate; the remaining left umbilical vein connects to the ductus venosus to deliver oxygenated blood to the IVC.",
+      "verified": false,
+      "open": {
+        "q": "Which umbilical vein (left or right) persists throughout fetal life to transport oxygenated blood from the placenta to the liver and ductus venosus?",
+        "accept": [
+          "left umbilical vein",
+          "left"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Embryonic Venous System Development",
+      "q": "From which embryonic venous vessels do the superior vena cava (SVC) and the left brachiocephalic vein develop?",
+      "options": [
+        "SVC develops from the right anterior cardinal vein and right common cardinal vein; left brachiocephalic vein develops from the inter-anterior cardinal anastomosis",
+        "SVC develops from the left umbilical vein; left brachiocephalic vein develops from the ductus venosus",
+        "SVC develops from the vitelline veins; left brachiocephalic vein develops from the subcardinal veins",
+        "SVC develops from the pulmonary veins"
+      ],
+      "answer": 0,
+      "explain": "An oblique venous shunt between the left and right anterior cardinal veins redirects blood from the left head and upper limb to the right, becoming the left brachiocephalic vein, while the right anterior cardinal vein (caudal to the shunt) and right common cardinal vein form the SVC.",
+      "verified": false,
+      "open": {
+        "q": "Which embryonic anastomosis redirects venous drainage from the left side of the head and upper limb toward the right anterior cardinal vein to form the left brachiocephalic vein?",
+        "accept": [
+          "anastomosis between the anterior cardinal veins",
+          "left brachiocephalic anastomosis",
+          "inter-anterior cardinal anastomosis"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Embryonic Venous System Development",
+      "q": "From cranial to caudal, which four embryonic venous segments fuse in sequence to form the adult inferior vena cava (IVC)?",
+      "options": [
+        "Hepatic: right vitelline; prerenal: right subcardinal; renal: subcardinal-supracardinal anastomosis; postrenal: right supracardinal",
+        "IVC forms from the left umbilical vein, ductus arteriosus, aortic sac and left cardinal vein",
+        "The entire IVC forms exclusively from the posterior cardinal veins",
+        "The IVC forms from the coronary sinus, pulmonary veins and left renal vein"
+      ],
+      "answer": 0,
+      "explain": "The composite IVC forms from four segments: (1) hepatic (right vitelline hepatocardiac channel), (2) prerenal (right subcardinal vein), (3) renal (subcardinal-supracardinal anastomosis), and (4) postrenal (right supracardinal vein).",
+      "verified": false,
+      "open": {
+        "q": "Which embryonic vein forms the postrenal (infrarenal) segment of the adult inferior vena cava?",
+        "accept": [
+          "right supracardinal vein",
+          "supracardinal vein"
+        ]
+      }
+    },
+    {
+      "id": "se-cardiovascular-system-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Postnatal Circulatory Changes",
+      "q": "What are the adult fibrous remnants of the fetal umbilical arteries (distal intra-abdominal parts) and the fetal allantois/urachus respectively?",
+      "options": [
+        "Medial umbilical ligaments (distal umbilical arteries) and median umbilical ligament (urachus)",
+        "Ligamentum teres hepatis and ligamentum venosum",
+        "Ligamentum arteriosum and fossa ovalis",
+        "Round ligament of uterus and broad ligament"
+      ],
+      "answer": 0,
+      "explain": "After birth, the proximal umbilical arteries remain patent as the internal iliac and superior vesical arteries, while their distal obliterated parts form the paired medial umbilical ligaments; the obliterated urachus in the midline forms the single median umbilical ligament.",
+      "verified": false,
+      "open": {
+        "q": "Which adult peritoneal folds/ligaments represent the obliterated distal segments of the paired fetal umbilical arteries?",
+        "accept": [
+          "medial umbilical ligaments",
+          "medial umbilical folds"
+        ]
+      }
+    }
+  ]
 }
