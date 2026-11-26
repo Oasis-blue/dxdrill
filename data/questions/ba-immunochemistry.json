@@ -8,8 +8,8 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "What is the basic four-chain polypeptide monomer structure of an immunoglobulin molecule?",
    "options": [
-    "Two identical heavy (H) chains and two identical light (L) chains linked by disulfide bonds",
-    "Four identical heavy chains without light chains",
+    "Two identical heavy chains and two identical light chains linked by disulfide bonds",
+    "Four identical heavy chains",
     "One heavy chain and three light chains",
     "Two alpha chains and two beta chains"
    ],
@@ -32,10 +32,10 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "Which two light-chain isotypes exist in human immunoglobulins, and how are they distributed within a single antibody molecule?",
    "options": [
-    "Alpha and beta; both occur on the same antibody",
-    "Kappa (kappa) and lambda (lambda); a single antibody molecule has either two kappa chains or two lambda chains, never both",
-    "Gamma and mu; mixed within each Fab arm",
-    "Epsilon and delta; linked by peptide bonds only"
+    "Alpha and beta chains, both in one antibody",
+    "Two kappa chains or two lambda chains, but not a mixture",
+    "Gamma and mu chains in each Fab arm",
+    "Epsilon and delta chains linked only by peptide bonds"
    ],
    "answer": 1,
    "explain": "Humans have kappa and lambda light chains (~60% kappa and ~40% lambda in serum); within any single immunoglobulin molecule, both light chains are of the same isotype (either both kappa or both lambda).",
@@ -101,10 +101,10 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "Why is pentameric IgM (joined by a J-chain) particularly efficient at activating the classical complement pathway despite having lower affinity per individual binding site than affinity-matured IgG?",
    "options": [
-    "Its ten antigen-binding sites (valency of 10 in pentamer) and planar/staple conformation upon antigen binding allow a single pentameric IgM molecule to bind multiple C1q heads simultaneously",
-    "IgM crosses the placenta in high concentrations",
-    "IgM binds directly to mast cell Fc-epsilon-RI receptors",
-    "IgM lacks constant heavy-chain domains"
+    "Its multivalent binding allows one antigen-bound IgM pentamer to engage multiple C1q heads",
+    "It crosses the placenta in high concentrations",
+    "It binds directly to mast-cell Fc-epsilon-RI receptors",
+    "It lacks constant heavy-chain domains"
    ],
    "answer": 0,
    "explain": "Activating C1q requires binding at least two globular heads of the C1q hexamer; a single pentameric IgM molecule bound to multivalent surface antigens can engage C1q effectively, whereas monomeric IgG requires multiple closely spaced IgG molecules.",
@@ -215,9 +215,9 @@
    "sub": "Genetic Generation of Antibody Diversity",
    "q": "How does terminal deoxynucleotidyl transferase (TdT) increase junctional diversity during V(D)J rearrangement?",
    "options": [
-    "Deletes entire constant-region exons",
-    "Adds non-templated nucleotides (N-nucleotides) at V-D, D-J, and V-J coding junctions before ligation, increasing complementarity-determining region 3 (CDR3) variability",
-    "Performs class-switch recombination in peripheral germinal centers",
+    "Deletes constant-region exons",
+    "Adds non-templated nucleotides at V(D)J coding junctions",
+    "Performs class switching in germinal centres",
     "Methylates non-functional heavy-chain alleles"
    ],
    "answer": 1,
@@ -285,10 +285,10 @@
    "sub": "Antigen-Antibody Interactions and Affinity",
    "q": "Which non-covalent intermolecular forces mediate antigen-antibody binding at the paratope-epitope interface?",
    "options": [
-    "Hydrogen bonds, electrostatic (ionic) interactions, hydrophobic interactions, and van der Waals forces",
-    "Permanent covalent peptide bonds formed after every binding event",
+    "Hydrogen bonds, ionic interactions, hydrophobic forces and van der Waals forces",
+    "Covalent peptide bonds formed during each binding event",
     "Phosphodiester bonds between antigen and Fab",
-    "Glycosidic bonds between light and heavy chains"
+    "Glycosidic bonds between heavy and light chains"
    ],
    "answer": 0,
    "explain": "Antigen-antibody binding is reversible and relies on complementary spatial topography enabling hydrogen bonding, electrostatic attractions, van der Waals contacts, and hydrophobic interactions (releasing ordered water molecules).",
@@ -308,8 +308,8 @@
    "sub": "Antigen-Antibody Interactions and Affinity",
    "q": "How does antibody affinity differ from antibody avidity?",
    "options": [
-    "Affinity and avidity are identical terms",
-    "Affinity is the strength of binding at a single antigen-binding site to a single epitope, whereas avidity is the overall binding strength of a multivalent antibody interacting with a multivalent antigen",
+    "They are identical terms",
+    "Affinity is binding strength at one site; avidity is the combined strength of multivalent binding",
     "Avidity measures only T-cell receptor binding",
     "Affinity applies only to pentameric IgM"
    ],
@@ -330,10 +330,10 @@
    "sub": "Antigen-Antibody Interactions and Affinity",
    "q": "What is cross-reactivity in immunochemistry?",
    "options": [
-    "Binding of a single antibody or T-cell receptor to a different antigen that shares a similar epitope or structural determinant with the original immunogen",
-    "Precipitation of antibodies at 100 C",
-    "Simultaneous synthesis of IgG and IgE by a plasma cell",
-    "Inactivation of complement by heparin"
+    "Binding to a different antigen with a similar epitope",
+    "Antibody precipitation at 100 C",
+    "Simultaneous IgG and IgE synthesis by one plasma cell",
+    "Complement inactivation by heparin"
    ],
    "answer": 0,
    "explain": "Cross-reactivity occurs when two distinct antigens share identical or structurally similar epitopes (molecular mimicry), such as streptococcal M protein sharing epitopes with cardiac myosin in acute rheumatic fever.",
@@ -354,10 +354,10 @@
    "sub": "Antigen-Antibody Interactions and Affinity",
    "q": "What is a hapten?",
    "options": [
-    "A large protein macromolecule (>100 kDa) that always induces strong immunity alone",
-    "A small low-molecular-weight molecule that can bind a specific antibody once formed, but is not immunogenic on its own unless covalently coupled to a larger carrier protein",
-    "A complement regulatory protein on red blood cells",
-    "An MHC Class I heavy chain"
+    "A large protein that is immunogenic on its own",
+    "A small molecule that becomes immunogenic when linked to a carrier protein",
+    "A complement regulator on red cells",
+    "An MHC class I heavy chain"
    ],
    "answer": 1,
    "explain": "Haptens (such as dinitrophenol, urushiol in poison ivy, or penicillin metabolites) are antigenic (bind antibody) but not immunogenic alone because they lack the size/T-cell help needed to trigger adaptive activation without a carrier protein.",
@@ -400,9 +400,9 @@
    "sub": "Antigen Processing and MHC Molecules",
    "q": "How does the invariant chain (Ii / CD74) prevent premature binding of endogenous ER peptides to newly synthesized MHC Class II molecules?",
    "options": [
-    "Phosphorylates the MHC Class II groove",
-    "Occupies the peptide-binding cleft of MHC Class II in the ER via its CLIP region until CLIP is removed by HLA-DM in the endolysosomal MHC class II compartment",
-    "Exports MHC Class II directly to the proteasome",
+    "Phosphorylates the MHC class II peptide-binding groove",
+    "Its CLIP segment occupies the MHC class II groove until HLA-DM facilitates peptide exchange",
+    "Exports MHC class II to the proteasome",
     "Cleaves beta-2-microglobulin"
    ],
    "answer": 1,
@@ -535,10 +535,10 @@
    "sub": "Complement System and Immunoregulation",
    "q": "Why does paroxysmal nocturnal hemoglobinuria (PNH) cause complement-mediated intravascular hemolysis of red blood cells?",
    "options": [
-    "Overproduction of IgE against erythrocytes",
-    "Deficiency of GPI-anchored complement regulators CD55 (DAF) and CD59 (MIRL) on RBCs due to PIGA mutation leaves cells vulnerable to C3 convertase and MAC lysis",
-    "Excessive production of C1 inhibitor",
-    "Mutation in the beta-globin gene"
+    "IgE overproduction against erythrocytes",
+    "Loss of GPI-anchored CD55 and CD59 due to a PIGA mutation",
+    "Excess C1 inhibitor production",
+    "A beta-globin gene mutation"
    ],
    "answer": 1,
    "explain": "PIGA mutation impairs GPI anchor synthesis, stripping protective GPI-linked CD55 (accelerates decay of C3/C5 convertases) and CD59 (blocks C9 polymerization into MAC) from blood cells, causing intravascular hemolysis, thrombosis, and cytopenias.",
@@ -581,10 +581,10 @@
    "sub": "Complement System and Immunoregulation",
    "q": "How does the alternative complement pathway maintain low-level baseline 'tick-over' activation and amplify C3b deposition on microbial surfaces?",
    "options": [
-    "The classical pathway is activated by IgG or IgM bound to antigen",
-    "Spontaneous C3 activation forms C3bBb; properdin stabilizes it, while Factor H and Factor I limit activation on host cells",
-    "The lectin pathway is initiated by antibodies binding C1q",
-    "Factor D directly cleaves C5 to initiate the membrane attack complex"
+    "Antigen-bound IgG or IgM activates the classical pathway",
+    "C3bBb forms spontaneously; properdin stabilises it, while Factors H and I regulate it",
+    "Antibodies activate the lectin pathway through C1q",
+    "Factor D directly cleaves C5"
    ],
    "answer": 1,
    "explain": "The alternative pathway provides an amplification loop via C3bBb (stabilized by properdin); host cells avoid lysis via sialic acid/polyanion binding of Factor H (cofactor for Factor I cleavage of C3b) and membrane CR1/DAF/MCP.",
@@ -604,10 +604,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "In an enzyme-linked immunosorbent assay (ELISA), what is the function of the enzyme conjugated to the detection antibody (such as horseradish peroxidase [HRP] or alkaline phosphatase [AP])?",
    "options": [
-    "Binds directly to plastic wells",
-    "Converts a colorless chromogenic or fluorogenic substrate into a colored or fluorescent product whose intensity is proportional to captured antigen or antibody concentration",
+    "Binds directly to the plastic well",
+    "Converts substrate into a detectable coloured or fluorescent product",
     "Denatures the primary antibody",
-    "Replaces the need for washing steps"
+    "Eliminates the need for washing"
    ],
    "answer": 1,
    "explain": "Enzyme amplification enables sensitive spectrophotometric or fluorometric quantification of target antigens (e.g., HIV p24, HBsAg, cytokines) or specific antibodies (e.g., anti-HIV, autoimmune antibodies).",
@@ -629,10 +629,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "Why is a 'blocking' step (using bovine serum albumin [BSA], casein, or non-fat milk) performed after coating a microtiter plate or blotting membrane in ELISA and Western blotting?",
    "options": [
-    "To elute bound antigens from the plate",
-    "To occupy remaining unoccupied protein-binding sites on the solid phase and prevent non-specific binding of subsequent antibodies, reducing background noise",
-    "To cleave heavy chains off immunoglobulins",
-    "To neutralize all enzyme substrates"
+    "Elutes antigens from the plate",
+    "Blocks unoccupied surface sites to reduce non-specific antibody binding",
+    "Removes heavy chains from immunoglobulins",
+    "Neutralises all enzyme substrates"
    ],
    "answer": 1,
    "explain": "Polystyrene ELISA plates and nitrocellulose/PVDF membranes bind proteins non-specifically; blocking saturates free sites so antibodies bind only to the specific immobilized target.",
@@ -653,10 +653,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "How does a 'sandwich' ELISA differ from an 'indirect' ELISA?",
    "options": [
-    "Sandwich ELISA captures antigen between two antibodies; indirect ELISA detects patient antibodies bound to an immobilised antigen",
-    "Sandwich ELISA detects patient antibodies only; indirect ELISA measures antigen with two capture antibodies",
-    "Both methods detect nucleic acids using fluorescent DNA probes",
-    "Indirect ELISA requires no antigen or antibody binding step"
+    "Sandwich ELISA captures antigen between two antibodies; indirect ELISA detects patient antibodies bound to antigen",
+    "Sandwich ELISA detects only patient antibodies; indirect ELISA measures antigen with two capture antibodies",
+    "Both detect nucleic acids using fluorescent probes",
+    "Indirect ELISA requires no antigen-antibody binding"
    ],
    "answer": 0,
    "explain": "Sandwich ELISA excels at quantifying specific antigens in complex fluids (like serum or urine), whereas indirect ELISA is widely used to screen for specific antibodies (such as viral serologies or autoantibodies).",
@@ -676,10 +676,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "In a Western blot (immunoblot) used as a confirmatory test for HIV or Lyme disease, what does it detect after gel electrophoresis and membrane transfer?",
    "options": [
-    "Specific viral/bacterial antigens or antibodies resolved by molecular weight along distinct protein bands",
-    "Whole intact bacteria under light microscopy",
-    "Messenger RNA splice variants",
-    "Intracellular calcium flux"
+    "Specific proteins are detected as bands after electrophoresis and membrane transfer",
+    "Intact bacteria are visualised by light microscopy",
+    "Messenger RNA splice variants are identified",
+    "Intracellular calcium flux is measured"
    ],
    "answer": 0,
    "explain": "Western blotting separates complex antigen mixtures by SDS-PAGE size, transfers them to a membrane, and probes with patient serum (or specific antibodies) to identify reactivity against individual proteins of defined molecular mass.",
@@ -700,10 +700,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "What is the principle of a lateral flow immunochromatographic rapid diagnostic test (such as a rapid malaria antigen test, pregnancy hCG test, or HIV rapid test)?",
    "options": [
-    "Capillary flow draws fluid sample along a nitrocellulose strip past mobile dye/gold-conjugated antibodies and immobilized test (T) and control (C) lines, where a visible control line confirms valid sample migration",
-    "Requires high-voltage capillary electrophoresis and laser sequencing",
-    "Uses live cell culture over 7 days",
-    "Measures radioactive gamma emission"
+    "Capillary flow carries the sample past labelled antibodies and test/control capture lines",
+    "High-voltage electrophoresis and laser sequencing",
+    "Live-cell culture over seven days",
+    "Radioactive gamma-emission measurement"
    ],
    "answer": 0,
    "explain": "Capillary action moves analyte through a conjugate pad containing antibody-coated gold/latex nanoparticles toward immobilized capture antibodies at the Test line and anti-species antibodies at the Control line.",
@@ -724,10 +724,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "How does flow cytometry analyze individual cells in suspension stained with fluorochrome-conjugated monoclonal antibodies?",
    "options": [
-    "Cells pass single-file through a laser beam; scatter estimates size and granularity, while fluorescence identifies labelled markers",
-    "Cells are separated by molecular weight as they migrate through a polyacrylamide gel",
-    "Antibodies are detected by measuring their electrical charge in a capillary tube",
-    "Cells are fixed to slides and counted by light microscopy only"
+    "Cells pass individually through a laser; scatter and fluorescence reveal cell features and labelled markers",
+    "Cells are separated by molecular weight in a gel",
+    "Antibody charge is measured in a capillary",
+    "Cells are counted only by light microscopy"
    ],
    "answer": 0,
    "explain": "Flow cytometry measures thousands of single cells per second using forward scatter (size), side scatter (granularity), and multi-color fluorescence (immunophenotyping CD markers in leukemias, lymphomas, and HIV CD4 counts).",
@@ -770,10 +770,10 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "In Kohler and Milstein's hybridoma technology for generating monoclonal antibodies, why are fused hybridoma cells grown in HAT (hypoxanthine-aminopterin-thymidine) selection medium?",
    "options": [
-    "Aminopterin blocks de novo synthesis; only fused cells survive by combining B-cell salvage enzymes with myeloma-cell immortality",
-    "HAT medium selects cells that produce the highest-affinity IgG without requiring fusion",
-    "Aminopterin kills B cells while allowing HGPRT-deficient myeloma cells to proliferate",
-    "HAT medium induces antibody class switching in unfused myeloma cells"
+    "Aminopterin blocks de novo synthesis, so only fused cells with B-cell salvage enzymes and myeloma immortality survive",
+    "It selects the highest-affinity IgG without cell fusion",
+    "It allows HGPRT-deficient myeloma cells to survive",
+    "It induces class switching in unfused myeloma cells"
    ],
    "answer": 0,
    "explain": "HGPRT-deficient myeloma cells cannot use hypoxanthine/thymidine when aminopterin blocks de novo purine/pyrimidine synthesis, whereas primary B cells have a short lifespan in culture; hybridomas combine B-cell HGPRT with myeloma immortality.",
@@ -793,10 +793,10 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "How do chimeric, humanized, and fully human monoclonal antibodies differ in sequence composition and immunogenicity (HAMA response)?",
    "options": [
-    "Chimeric antibodies combine mouse variable and human constant regions; humanized antibodies retain mainly mouse CDRs; fully human antibodies have human sequences",
+    "Chimeric antibodies have mouse variable and human constant regions; humanized antibodies retain mainly mouse CDRs; fully human antibodies have human sequences",
     "Chimeric antibodies are entirely human; humanized antibodies are entirely mouse",
-    "Humanized antibodies contain mouse constant regions and human variable regions",
-    "All three formats have identical sequence composition and immunogenicity"
+    "Humanized antibodies have mouse constant and human variable regions",
+    "All three formats have identical sequences"
    ],
    "answer": 0,
    "explain": "Reducing non-human sequence from chimeric (-ximab) to humanized (-zumab) to fully human (-umab) decreases human anti-mouse antibody (HAMA) responses, prolongs half-life, and improves Fc effector compatibility.",
@@ -816,9 +816,9 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "How do immune checkpoint inhibitor monoclonal antibodies such as pembrolizumab or nivolumab (anti-PD-1) and ipilimumab (anti-CTLA-4) enhance anti-tumor immunity?",
    "options": [
-    "Directly phosphorylate tumor cell DNA",
-    "Block inhibitory T-cell checkpoints (PD-1/PD-L1 or CTLA-4), releasing the 'brakes' on effector T-cell activation and cytotoxicity against tumor cells (at the risk of immune-related adverse events)",
-    "Deplete all B lymphocytes permanently",
+    "Directly phosphorylate tumour-cell DNA",
+    "Block inhibitory T-cell checkpoints, restoring anti-tumour T-cell activity",
+    "Permanently deplete all B lymphocytes",
     "Inhibit complement C3 convertase"
    ],
    "answer": 1,
@@ -839,10 +839,10 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "What is Antibody-Dependent Cellular Cytotoxicity (ADCC) mediated by therapeutic IgG1 monoclonal antibodies such as trastuzumab (anti-HER2) or rituximab (anti-CD20)?",
    "options": [
-    "IgG1 binds target antigen on the tumor cell while its Fc region engages Fc-gamma-RIIIa (CD16) on natural killer (NK) cells, triggering NK-mediated perforin/granzyme release and target cell apoptosis",
-    "IgG1 coats the target cell and blocks all glucose uptake",
-    "NK cells bind antigen directly without antibody",
-    "ADCC occurs only in the absence of Fc receptors"
+    "IgG1 binds tumour antigen and its Fc engages CD16 on NK cells, triggering perforin- and granzyme-mediated killing",
+    "IgG1 blocks all glucose uptake in the target cell",
+    "NK cells recognise the antigen directly without antibody",
+    "ADCC occurs only without Fc receptors"
    ],
    "answer": 0,
    "explain": "NK cells express activating Fc-gamma-RIIIa (CD16) and recognize antibody-coated target cells, releasing perforin and granzymes (and Fas ligand) to kill opsonized tumor or infected cells.",
@@ -863,10 +863,10 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "In a quantitative precipitin curve (Heidelberger curve) mixing a fixed amount of antibody with increasing concentrations of soluble multivalent antigen, what occurs in the 'prozone' (antibody excess) and 'postzone' (antigen excess) compared with the 'zone of equivalence'?",
    "options": [
-    "Maximum insoluble antigen-antibody lattice precipitation occurs in the zone of equivalence; in prozone (excess Ab) or postzone (excess Ag), small soluble complexes form rather than a large cross-linked lattice",
-    "Maximum precipitation occurs in extreme antigen excess",
-    "Lattice formation happens only in postzone",
-    "Antibodies precipitate without any antigen in prozone"
+    "Precipitation is greatest at equivalence; antigen or antibody excess limits lattice formation",
+    "Precipitation is greatest in extreme antigen excess",
+    "Lattice formation occurs only in postzone",
+    "Antibodies precipitate without antigen in prozone"
    ],
    "answer": 0,
    "explain": "Multivalent cross-linking requires balanced proportions of multivalent antigen and bivalent/multivalent antibody (equivalence zone); excess antibody saturates individual antigen sites while excess antigen saturates individual antibody sites, preventing large lattice formation.",
@@ -887,8 +887,8 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "How do agglutination assays differ from precipitation assays in immunochemistry?",
    "options": [
-    "Agglutination involves clumping of particulate antigens (such as red blood cells, bacteria, or latex beads coated with antigen), whereas precipitation involves formation of insoluble complexes from soluble antigens",
-    "Precipitation uses red blood cells, whereas agglutination uses soluble proteins",
+    "Agglutination clumps particulate antigens; precipitation forms insoluble complexes from soluble antigens",
+    "Precipitation uses red cells, whereas agglutination uses soluble proteins",
     "Agglutination requires no antibody",
     "Precipitation measures cell size"
    ],
@@ -909,9 +909,9 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "How do nephelometry and turbidimetry quantify specific serum proteins (such as C-reactive protein, immunoglobulins, or complement C3/C4) formed into immune complexes?",
    "options": [
-    "Nephelometry measures light scattered at an angle (typically 15-90 degrees) by suspended immune complexes, whereas turbidimetry measures the reduction in intensity of straight-through transmitted light",
+    "Nephelometry measures scattered light; turbidimetry measures loss of transmitted light",
     "Both measure electrical conductivity of urine",
-    "Nephelometry requires radiolabeled iodine-125",
+    "Nephelometry requires iodine-125 labelling",
     "Turbidimetry counts fluorescent cells"
    ],
    "answer": 0,
@@ -931,10 +931,10 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "What are Bence Jones proteins detected in serum or urine protein electrophoresis and immunofixation in multiple myeloma?",
    "options": [
-    "Free monoclonal immunoglobulin light chains (kappa or lambda) excreted into urine when light-chain production exceeds renal proximal tubular reabsorption capacity",
+    "Free monoclonal immunoglobulin light chains excreted in urine",
     "Intact pentameric IgM molecules",
     "Complement C5b-9 complexes",
-    "Glycosylated hemoglobin chains"
+    "Glycosylated haemoglobin chains"
    ],
    "answer": 0,
    "explain": "In multiple myeloma (malignant plasma cell dyscrasia), monoclonal plasma cells often secrete excess free kappa or lambda light chains (~22-25 kDa) that pass through the glomerulus and appear as Bence Jones proteinuria (classically precipitating upon heating to ~40-60 C and redissolving near 100 C, though immunofixation is the diagnostic standard).",
@@ -955,10 +955,10 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "How does the neonatal Fc receptor (FcRn) extend the serum half-life of IgG and albumin?",
    "options": [
-    "FcRn binds IgG and albumin in acidic endosomes, rescuing them from degradation and recycling them to the cell surface",
-    "FcRn synthesizes new IgG and albumin in endothelial cells",
-    "FcRn cleaves IgG into Fab and Fc fragments in plasma",
-    "FcRn prevents IgG from binding its antigen"
+    "FcRn binds IgG and albumin in acidic endosomes and recycles them to the cell surface",
+    "FcRn synthesises IgG and albumin in endothelial cells",
+    "FcRn cleaves IgG into Fab and Fc fragments",
+    "FcRn prevents IgG from binding antigen"
    ],
    "answer": 0,
    "explain": "pH-dependent binding to FcRn (high affinity at acidic endosomal pH ~6.0, release at physiological pH ~7.4) rescues IgG and albumin from catabolism, giving IgG1, IgG2, and IgG4 a ~3-week half-life (whereas IgG3 lacks high-affinity FcRn binding and has a ~7-day half-life).",
@@ -1048,10 +1048,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "In a direct Coombs test (direct antiglobulin test, DAT), what is being detected on the surface of a patient's red blood cells?",
    "options": [
-    "In vivo binding of patient IgG antibodies and/or complement (C3d) to red blood cell membranes, as seen in autoimmune hemolytic anemia or hemolytic disease of the fetus and newborn",
-    "Serum ferritin levels",
+    "IgG and/or complement bound to the patient's red cells in vivo",
+    "Serum ferritin",
     "Bacterial endotoxin in cerebrospinal fluid",
-    "Free plasma hemoglobin concentration"
+    "Free plasma haemoglobin"
    ],
    "answer": 0,
    "explain": "Adding anti-human globulin (Coombs reagent) to washed patient RBCs causes agglutination if IgG or complement is already bound to the RBC surface in vivo (direct Coombs); the indirect Coombs test detects unbound anti-RBC antibodies in serum.",
@@ -1073,10 +1073,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "What is the 'hook effect' (prozone phenomenon in immunometric/sandwich assays) when an analyte such as hCG or prolactin is present at extremely high concentration?",
    "options": [
-    "Excessive free antigen saturates both capture and detection antibodies separately without bridging them, producing a falsely low or normal signal",
+    "Excess antigen separately saturates capture and detection antibodies, causing a falsely low signal",
     "Antibodies bind to glass instead of plastic",
-    "Substrate concentration exceeds enzyme Vmax permanently",
-    "Sample temperature drops below 0 C"
+    "Substrate concentration permanently exceeds enzyme Vmax",
+    "The sample temperature falls below 0 C"
    ],
    "answer": 0,
    "explain": "At very high antigen concentrations in a one-step sandwich assay, excess antigen independently saturates capture and tracer antibodies, preventing sandwich formation and causing a falsely depressed reading unless the sample is diluted.",
@@ -1097,10 +1097,10 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "What is a bispecific T-cell engager (BiTE) or bispecific monoclonal antibody?",
    "options": [
-    "An engineered antibody construct with two distinct antigen-binding specificities—for example, binding CD3 on T cells and a tumor surface antigen (such as CD19 or BCMA)—to bring cytotoxic T cells into close proximity with tumor cells",
-    "An antibody that binds two identical epitopes on the same monomer",
-    "A complement inhibitor that blocks C1 and C9",
-    "An immunoglobulin lacking variable regions"
+    "An engineered antibody with two different binding specificities, often linking CD3-positive T cells to a tumour antigen",
+    "An antibody binding two identical epitopes on one monomer",
+    "A complement inhibitor blocking C1 and C9",
+    "An immunoglobulin without variable regions"
    ],
    "answer": 0,
    "explain": "Bispecific antibodies bridge two different targets simultaneously, such as recruiting CD3+ T cells directly to tumor cells to trigger T-cell activation and target lysis.",
@@ -1119,10 +1119,10 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "In radial immunodiffusion (Mancini assay), how is the concentration of an antigen (such as a specific serum immunoglobulin) determined?",
    "options": [
-    "Antigen diffuses radially from a well into agar containing uniform polyclonal antibody, forming a precipitin ring whose squared diameter (at endpoint) is proportional to antigen concentration",
-    "Measures radioactivity of iodine-125",
-    "Uses polymerase chain reaction on serum",
-    "Counts white blood cells by impedance"
+    "Antigen diffuses into antibody-containing gel, forming a ring whose squared diameter reflects antigen concentration",
+    "Radioactivity from iodine-125 is measured",
+    "PCR is performed on serum",
+    "White cells are counted by impedance"
    ],
    "answer": 0,
    "explain": "In radial immunodiffusion, antigen diffuses outward into antibody-impregnated gel until equivalence is reached; ring area (proportional to diameter squared) correlates linearly with antigen concentration.",
@@ -1143,10 +1143,10 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "Which variable regions of an immunoglobulin heavy and light chain form the hypervariable complementarity-determining regions (CDRs) that directly contact the antigen epitope?",
    "options": [
-    "Constant heavy (CH1-CH3) domains",
-    "Three hypervariable loops (CDR1, CDR2, CDR3) within each variable domain (VH and VL), separated by more conserved framework regions",
+    "Constant heavy-chain domains",
+    "Three hypervariable loops (CDR1–3) in each variable domain",
     "The J-chain alone",
-    "The hinge region disulfide bonds"
+    "Hinge-region disulfide bonds"
    ],
    "answer": 1,
    "explain": "Each variable domain (VH and VL) contains three hypervariable CDR loops (six CDRs per Fab arm) that assemble at the tip of the Fab to create the antigen-binding site (paratope).",
