@@ -376,13 +376,13 @@
    "sub": "Cerebellar Peduncles and Clinical Cerebellar Signs",
    "q": "Match the classic clinical signs of cerebellar hemisphere dysfunction (mnemonic 'VANISHED' / 'DANISH') with their definitions:",
    "options": [
-    "Dysmetria: inability to judge distance/range of movement (overshooting/past-pointing or undershooting on finger-to-nose test); Dysdiadochokinesia: inability to perform rapid alternating pronation-supination movements; Intention tremor: oscillating tremor that worsens as the limb approaches a target; Scanning dysarthria: slow, slurred, staccato speech with irregular syllable emphasis; Hypotonia and pendular knee jerk",
+    "Dysmetria: range error; dysdiadochokinesia: poor rapid alternation; intention tremor: worsens near target; scanning dysarthria: staccato speech; hypotonia: pendular reflexes",
     "Resting pill-rolling tremor, lead-pipe rigidity, and bradykinesia",
     "Spastic hyperreflexia, sustained ankle clonus, and Babinski sign",
     "Aphasia, apraxia, and homonymous hemianopsia"
    ],
    "answer": 0,
-   "explain": "Unlike basal ganglia disorders (resting tremor, hypertonia/rigidity, akinesia), cerebellar lesions produce action/intention tremor, hypotonia (pendular reflexes), and uncoordinated movement (ataxia, dysmetria, dysdiadochokinesia).",
+   "explain": "Unlike basal ganglia disorders (resting tremor, hypertonia/rigidity, akinesia), cerebellar lesions produce action/intention tremor, hypotonia (pendular reflexes), and uncoordinated movement (ataxia, dysmetria, dysdiadochokinesia). Key detail: Dysmetria: inability to judge distance/range of movement (overshooting/past-pointing or undershooting on finger-to-nose test); Dysdiadochokinesia: inability to perform rapid alternating pronation-supination movements; Intention tremor: oscillating tremor that worsens as the limb approaches a target; Scanning dysarthria: slow, slurred, staccato speech with irregular syllable emphasis; Hypotonia and pendular knee jerk.",
    "verified": false,
    "open": {
     "q": "Define dysmetria, dysdiadochokinesia, and intention tremor as seen in lateral cerebellar hemisphere lesions.",
@@ -422,13 +422,13 @@
    "sub": "Basal Ganglia Anatomy and Direct vs Indirect Pathways",
    "q": "Trace the 'Direct Pathway' of the basal ganglia and explain its net effect on thalamocortical motor facilitation:",
    "options": [
-    "Cerebral cortex (glutamate, +) -> Striatum (D1 medium spiny neurons; GABA, -) -> Globus pallidus internus / Substantia nigra pars reticulata (GPi/SNr; GABA, -) -> Ventral anterior / Ventral lateral (VA/VL) thalamus (glutamate, +) -> Motor cortex; inhibiting the tonically inhibitory GPi DISINHIBITS the thalamus, facilitating desired voluntary movement",
+    "Cortex excites D1 striatal neurons; they inhibit GPi/SNr, disinhibiting VA/VL thalamus and facilitating movement",
     "Cerebral cortex -> STN -> GPi -> inhibits the thalamus to halt all movement",
     "Striatum directly excites alpha motor neurons in the spinal cord via acetylcholine",
     "GPi releases dopamine to inhibit the cerebral cortex"
    ],
    "answer": 0,
-   "explain": "Two inhibitory GABAergic synapses in series (Striatum -| GPi -| Thalamus) equal net excitation (disinhibition) of the thalamocortical motor loop!",
+   "explain": "Two inhibitory GABAergic synapses in series (Striatum -| GPi -| Thalamus) equal net excitation (disinhibition) of the thalamocortical motor loop! Key detail: Cerebral cortex (glutamate, +) -> Striatum (D1 medium spiny neurons; GABA, -) -> Globus pallidus internus / Substantia nigra pars reticulata (GPi/SNr; GABA, -) -> Ventral anterior / Ventral lateral (VA/VL) thalamus (glutamate, +) -> Motor cortex; inhibiting the tonically inhibitory GPi DISINHIBITS the thalamus, facilitating desired voluntary movement.",
    "verified": false,
    "open": {
     "q": "Trace the sequence of structures, neurotransmitters, and net effect on movement of the basal ganglia Direct Pathway.",
@@ -468,13 +468,13 @@
    "sub": "Basal Ganglia Anatomy and Direct vs Indirect Pathways",
    "q": "How does dopamine released by the Substantia Nigra Pars Compacta (SNc) onto the striatum simultaneously activate the Direct Pathway and suppress the Indirect Pathway?",
    "options": [
-    "SNc dopamine binds excitatory Gs-coupled D1 receptors on direct-pathway striatal neurons (stimulating the movement-facilitating direct loop) AND binds inhibitory Gi-coupled D2 receptors on indirect-pathway striatal neurons (inhibiting the movement-suppressing indirect loop)—so dopamine promotes movement through BOTH pathways",
+    "Dopamine excites D1 direct-pathway neurons and inhibits D2 indirect-pathway neurons, promoting movement",
     "Dopamine inhibits both D1 and D2 receptors to paralyze the body",
     "Dopamine excites D2 receptors and inhibits D1 receptors",
     "SNc releases acetylcholine onto the cerebellar cortex"
    ],
    "answer": 0,
-   "explain": "D1 = excitatory (Gs), D2 = inhibitory (Gi). Consequently, loss of SNc dopamine in Parkinson's disease simultaneously under-activates the direct pathway AND over-activates the indirect pathway, locking GPi in hyperactive inhibition of the thalamus (bradykinesia/akinesia).",
+   "explain": "D1 = excitatory (Gs), D2 = inhibitory (Gi). Consequently, loss of SNc dopamine in Parkinson's disease simultaneously under-activates the direct pathway AND over-activates the indirect pathway, locking GPi in hyperactive inhibition of the thalamus (bradykinesia/akinesia). Key detail: SNc dopamine binds excitatory Gs-coupled D1 receptors on direct-pathway striatal neurons (stimulating the movement-facilitating direct loop) AND binds inhibitory Gi-coupled D2 receptors on indirect-pathway striatal neurons (inhibiting the movement-suppressing indirect loop)—so dopamine promotes movement through BOTH pathways.",
    "verified": false,
    "open": {
     "q": "Explain how substantia nigra pars compacta (SNc) dopamine modulates D1 versus D2 striatal receptors and why degeneration of SNc neurons produces bradykinesia in Parkinson's disease.",
@@ -537,13 +537,13 @@
    "sub": "Spinal Cord Ascending Sensory Tracts",
    "q": "What is 'syringomyelia', and why does a central cervical spinal cord syrinx (C8-T1) produce a classic 'cape-like' bilateral loss of pain and temperature over the shoulders and arms with preserved touch and vibration?",
    "options": [
-    "Cystic cavitation of the central canal (often associated with Arnold-Chiari type I malformation) compresses decussating second-order spinothalamic fibers in the anterior white commissure (producing bilateral C8-T1 dissociated pain/temperature loss) while sparing the dorsal columns; as it enlarges laterally, it damages ventral horn alpha motor neurons causing intrinsic hand muscle atrophy",
+    "A central syrinx damages crossing spinothalamic fibres, causing bilateral pain/temperature loss while initially sparing dorsal columns",
     "It destroys the medullary pyramids and spares the anterior white commissure",
     "It selectively destroys dorsal root ganglia in the lumbar spine",
     "It causes pure loss of vibration in the feet with intact pain sensation"
    ],
    "answer": 0,
-   "explain": "Because decussating spinothalamic axons cross right next to the central canal in the anterior white commissure, central canal expansion interrupts pain/temperature bilaterally at those segments ('suspended' cape-like sensory loss).",
+   "explain": "Because decussating spinothalamic axons cross right next to the central canal in the anterior white commissure, central canal expansion interrupts pain/temperature bilaterally at those segments ('suspended' cape-like sensory loss). Key detail: Cystic cavitation of the central canal (often associated with Arnold-Chiari type I malformation) compresses decussating second-order spinothalamic fibers in the anterior white commissure (producing bilateral C8-T1 dissociated pain/temperature loss) while sparing the dorsal columns; as it enlarges laterally, it damages ventral horn alpha motor neurons causing intrinsic hand muscle atrophy.",
    "verified": false,
    "open": {
     "q": "Explain the neuroanatomical reason a central cervical syrinx causes bilateral 'cape-like' loss of pain and temperature while sparing fine touch and vibration.",
@@ -606,13 +606,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "What is 'Internuclear Ophthalmoplegia' (INO), which brainstem tract is lesioned, and what eye movements are seen when a patient with a RIGHT MLF lesion attempts to look to the LEFT?",
    "options": [
-    "Lesion of the myelinated Medial Longitudinal Fasciculus (MLF, connecting contralateral CN VI abducens interneurons to ipsilateral CN III medial rectus subnucleus); on attempted leftward gaze, the RIGHT eye fails to adduct past the midline while the abducting LEFT eye exhibits horizontal monocular nystagmus, WITH preserved convergence (because convergence uses separate supraocular pathways)",
+    "Right MLF lesion: right eye fails to adduct on left gaze; left abducting eye has nystagmus; convergence is preserved",
     "The left eye fails to abduct and convergence is completely absent",
     "Both eyes deviate upward permanently",
     "Lesion of the optic chiasm causing bitemporal hemianopsia"
    ],
    "answer": 0,
-   "explain": "Multiple sclerosis in young adults (often bilateral INO) and lacunar brainstem stroke in older adults are the two classic causes of MLF lesions.",
+   "explain": "Multiple sclerosis in young adults (often bilateral INO) and lacunar brainstem stroke in older adults are the two classic causes of MLF lesions. Key detail: Lesion of the myelinated Medial Longitudinal Fasciculus (MLF, connecting contralateral CN VI abducens interneurons to ipsilateral CN III medial rectus subnucleus); on attempted leftward gaze, the RIGHT eye fails to adduct past the midline while the abducting LEFT eye exhibits horizontal monocular nystagmus, WITH preserved convergence (because convergence uses separate supraocular pathways).",
    "verified": false,
    "open": {
     "q": "Describe the eye movement abnormality seen during horizontal gaze and during convergence in a patient with a lesion of the right Medial Longitudinal Fasciculus (MLF).",
@@ -629,13 +629,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "How do 'Weber syndrome' (ventral midbrain stroke) and 'Benedikt syndrome' (midbrain tegmental stroke) differ clinically?",
    "options": [
-    "Weber syndrome (paramedian midbrain cerebral peduncle + exiting CN III fibers) causes ipsilateral CN III palsy (eye 'down and out', ptosis, dilated pupil) + contralateral spastic hemiparesis; Benedikt syndrome (midbrain tegmentum hitting CN III + red nucleus/dentatorubrothalamic fibers) causes ipsilateral CN III palsy + contralateral ataxia/intention tremor/choreoathetosis",
+    "Weber: ipsilateral CN III palsy with contralateral hemiparesis; Benedikt: CN III palsy with contralateral ataxia/tremor",
     "Weber syndrome causes ipsilateral facial droop and hearing loss",
     "Benedikt syndrome causes pure visual agnosia",
     "Both syndromes are caused by anterior cerebral artery occlusion"
    ],
    "answer": 0,
-   "explain": "Both are ventral/tegmental midbrain syndromes producing ipsilateral oculomotor palsy, distinguished by whether the lesion hits the crus cerebri (contralateral hemiparesis = Weber) or red nucleus/cerebellar outflow (contralateral ataxia/tremor = Benedikt).",
+   "explain": "Both are ventral/tegmental midbrain syndromes producing ipsilateral oculomotor palsy, distinguished by whether the lesion hits the crus cerebri (contralateral hemiparesis = Weber) or red nucleus/cerebellar outflow (contralateral ataxia/tremor = Benedikt). Key detail: Weber syndrome (paramedian midbrain cerebral peduncle + exiting CN III fibers) causes ipsilateral CN III palsy (eye 'down and out', ptosis, dilated pupil) + contralateral spastic hemiparesis; Benedikt syndrome (midbrain tegmentum hitting CN III + red nucleus/dentatorubrothalamic fibers) causes ipsilateral CN III palsy + contralateral ataxia/intention tremor/choreoathetosis.",
    "verified": false,
    "open": {
     "q": "Contrast the contralateral motor signs of midbrain Weber syndrome versus Benedikt syndrome.",
@@ -698,13 +698,13 @@
    "sub": "Cerebellar Functional Divisions (Vestibulo-, Spino-, Cerebrocerebellum)",
    "q": "What is the 'Vestibulo-Ocular Reflex' (VOR), which cerebellar lobe calibrates its gain, and how does it stabilize vision during head rotation?",
    "options": [
-    "When the head rotates rapidly to the right, right horizontal semicircular canal afferents excite the right vestibular nucleus -> contralateral left abducens (CN VI) nucleus (abducts left eye) and via the right MLF excite the right oculomotor (CN III) medial rectus subnucleus (adducts right eye), driving smooth conjugate eye movement to the LEFT at equal velocity; calibrated by the vestibulocerebellum (flocculonodular lobe)",
+    "Right head turn activates the right vestibular nucleus; VOR drives leftward eye movement; flocculonodular lobe calibrates gain",
     "Rotating the head to the right causes both eyes to rotate rapidly to the right",
     "The VOR is mediated by the dorsal columns and primary somatosensory cortex",
     "The VOR functions only when the eyes are tightly closed"
    ],
    "answer": 0,
-   "explain": "The VOR keeps images stabilized on the fovea during head movement; cerebellar flocculonodular lesions impair VOR gain adaptation and cause gaze-evoked nystagmus.",
+   "explain": "The VOR keeps images stabilized on the fovea during head movement; cerebellar flocculonodular lesions impair VOR gain adaptation and cause gaze-evoked nystagmus. Key detail: When the head rotates rapidly to the right, right horizontal semicircular canal afferents excite the right vestibular nucleus -> contralateral left abducens (CN VI) nucleus (abducts left eye) and via the right MLF excite the right oculomotor (CN III) medial rectus subnucleus (adducts right eye), driving smooth conjugate eye movement to the LEFT at equal velocity; calibrated by the vestibulocerebellum (flocculonodular lobe).",
    "verified": false,
    "open": {
     "q": "Trace the excitatory neural pathway that moves both eyes to the left when the head turns rapidly to the right during the vestibulo-ocular reflex (VOR).",
@@ -836,13 +836,13 @@
    "sub": "Cerebellar Functional Divisions (Vestibulo-, Spino-, Cerebrocerebellum)",
    "q": "Where is the 'arbor vitae' located, and what is the histological organization of the three layers of the cerebellar cortex from superficial to deep?",
    "options": [
-    "Arbor vitae is the branching white matter tree inside the cerebellum; the three cortical layers from superficial to deep are: 1) Molecular layer (parallel fibers, stellate and basket inhibitory interneurons, Purkinje dendrites); 2) Purkinje cell layer (single monolayer of large flask-shaped Purkinje somata); 3) Granular layer (densely packed excitatory granule cells, mossy fiber rosettes, and Golgi cells)",
+    "Arbor vitae is cerebellar white matter; cortex has molecular, Purkinje-cell and granular layers",
     "Arbor vitae is in the cerebral frontal lobe; cerebellar cortex has six layers like neocortex",
     "Purkinje cells are located in the deep white matter",
     "Granular layer is the outermost pial layer"
    ],
    "answer": 0,
-   "explain": "Unlike the 6-layered cerebral neocortex, the entire cerebellar cortex has a uniform 3-layered architecture (Molecular, Purkinje, Granular).",
+   "explain": "Unlike the 6-layered cerebral neocortex, the entire cerebellar cortex has a uniform 3-layered architecture (Molecular, Purkinje, Granular). Key detail: Arbor vitae is the branching white matter tree inside the cerebellum; the three cortical layers from superficial to deep are: 1) Molecular layer (parallel fibers, stellate and basket inhibitory interneurons, Purkinje dendrites); 2) Purkinje cell layer (single monolayer of large flask-shaped Purkinje somata); 3) Granular layer (densely packed excitatory granule cells, mossy fiber rosettes, and Golgi cells).",
    "verified": false,
    "open": {
     "q": "List the three histological layers of the cerebellar cortex from outermost (pial) to innermost (white matter).",
@@ -859,13 +859,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "What is the genetic and neurochemical basis of Huntington's disease, and why do choreiform (dance-like) involuntary movements occur early in the disease?",
    "options": [
-    "Autosomal dominant CAG trinucleotide repeat expansion (>36-40 repeats, showing genetic anticipation) in the huntingtin (HTT) gene on chromosome 4p; preferential early degeneration of striatal GABA/enkephalin neurons of the INDIRECT pathway reduces GPi inhibition of the thalamus, unleashing excessive, involuntary dance-like movements (chorea)",
+    "HTT CAG expansion causes striatal indirect-pathway neuron loss and early chorea",
     "X-linked deficiency of dystrophin causing muscle necrosis",
     "Excessive dopamine secretion from the cerebellum",
     "Autoimmune destruction of nicotinic acetylcholine receptors"
    ],
    "answer": 0,
-   "explain": "Early selective loss of indirect-pathway D2 striatal neurons removes the movement-suppressing brake (releasing chorea), whereas later loss of direct-pathway neurons leads to akinetic-rigid end-stage disease.",
+   "explain": "Early selective loss of indirect-pathway D2 striatal neurons removes the movement-suppressing brake (releasing chorea), whereas later loss of direct-pathway neurons leads to akinetic-rigid end-stage disease. Key detail: Autosomal dominant CAG trinucleotide repeat expansion (>36-40 repeats, showing genetic anticipation) in the huntingtin (HTT) gene on chromosome 4p; preferential early degeneration of striatal GABA/enkephalin neurons of the INDIRECT pathway reduces GPi inhibition of the thalamus, unleashing excessive, involuntary dance-like movements (chorea).",
    "verified": false,
    "open": {
     "q": "Explain why early selective degeneration of striatal indirect-pathway neurons in Huntington's disease produces choreiform involuntary movements.",
@@ -882,13 +882,13 @@
    "sub": "Spinal Cord Descending Motor Tracts",
    "q": "At what vertebral level does the adult human spinal cord terminate as the conus medullaris, and what clinical syndrome results from compression of the lumbosacral nerve roots below L1-L2?",
    "options": [
-    "Terminates at the L1-L2 intervertebral disc in adults (L3 in newborns); compression of the lumbosacral roots below L1-L2 produces 'Cauda Equina Syndrome'—characterized by severe radicular pain, asymmetric flaccid LMN leg weakness, areflexia, saddle anesthesia (S2-S4), and early urinary/fecal incontinence",
+    "Adult cord ends at L1–L2; cauda equina compression causes LMN leg signs, saddle anaesthesia and sphincter dysfunction",
     "Terminates at S5; compression produces pure upper motor neuron spasticity",
     "Terminates at C7; compression causes blindness",
     "Terminates at T4; compression causes decerebrate rigidity"
    ],
    "answer": 0,
-   "explain": "Because the conus medullaris ends at L1-L2, lumbar punctures are safely performed at L3-L4 or L4-L5, and large central L4-L5 disc herniations compress peripheral cauda equina roots (LMN deficit) rather than spinal cord parenchyma.",
+   "explain": "Because the conus medullaris ends at L1-L2, lumbar punctures are safely performed at L3-L4 or L4-L5, and large central L4-L5 disc herniations compress peripheral cauda equina roots (LMN deficit) rather than spinal cord parenchyma. Key detail: Terminates at the L1-L2 intervertebral disc in adults (L3 in newborns); compression of the lumbosacral roots below L1-L2 produces 'Cauda Equina Syndrome'—characterized by severe radicular pain, asymmetric flaccid LMN leg weakness, areflexia, saddle anesthesia (S2-S4), and early urinary/fecal incontinence.",
    "verified": false,
    "open": {
     "q": "State the adult vertebral termination level of the spinal cord and list four hallmark clinical features of Cauda Equina Syndrome.",
@@ -905,13 +905,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "What is 'central pontine myelinolysis' (osmotic demyelination syndrome), how is it precipitated, and what neurological picture does it produce?",
    "options": [
-    "Acute demyelination of the basis pontis caused by overly rapid intravenous correction of severe chronic hyponatremia (>8-10 mEq/L in 24 hours), destroying corticospinal and corticobulbar fibers and producing acute quadriparesis, dysarthria, dysphagia, and Locked-In Syndrome",
+    "Rapid correction of chronic hyponatraemia causes pontine demyelination, potentially producing quadriparesis and locked-in syndrome",
     "Slow peripheral neuropathy caused by mild hyperkalemia",
     "Cerebellar hemorrhage caused by hypotension",
     "Optic neuritis caused by vitamin A excess"
    ],
    "answer": 0,
-   "explain": "Brain cells chronically adapted to hyponatremia have extruded organic osmolytes; rapid serum Na+ elevation draws water out of oligodendrocytes in the tightly packed basis pontis, causing osmotic myelinolysis.",
+   "explain": "Brain cells chronically adapted to hyponatremia have extruded organic osmolytes; rapid serum Na+ elevation draws water out of oligodendrocytes in the tightly packed basis pontis, causing osmotic myelinolysis. Key detail: Acute demyelination of the basis pontis caused by overly rapid intravenous correction of severe chronic hyponatremia (>8-10 mEq/L in 24 hours), destroying corticospinal and corticobulbar fibers and producing acute quadriparesis, dysarthria, dysphagia, and Locked-In Syndrome.",
    "verified": false,
    "open": {
     "q": "What electrolyte correction error precipitates osmotic demyelination syndrome (central pontine myelinolysis), and what motor syndrome does it cause?",
@@ -1227,13 +1227,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "Which cranial nerves carry preganglionic PARASYMPATHETIC efferent fibers from brainstem nuclei, and what are their respective nuclei and target ganglia?",
    "options": [
-    "CN III (Edinger-Westphal nucleus -> ciliary ganglion -> sphincter pupillae & ciliary muscle); CN VII (superior salivatory nucleus -> pterygopalatine & submandibular ganglia -> lacrimal, submandibular, sublingual glands); CN IX (inferior salivatory nucleus -> otic ganglion -> parotid gland); CN X (dorsal motor nucleus of vagus & nucleus ambiguus -> intramural ganglia of thoracic & abdominal viscera)",
+    "III: EW→ciliary; VII: superior salivatory→pterygopalatine/submandibular; IX: inferior salivatory→otic; X: dorsal motor/ambiguus→intramural ganglia",
     "CN I, CN II, CN IV, and CN XII carry all parasympathetic fibers",
     "CN V, CN VI, and CN VIII supply parasympathetic innervation to the heart",
     "All brainstem parasympathetic fibers arise from the red nucleus"
    ],
    "answer": 0,
-   "explain": "Craniosacral parasympathetic outflow consists of cranial nerves III, VII, IX, and X plus sacral spinal segments S2-S4.",
+   "explain": "Craniosacral parasympathetic outflow consists of cranial nerves III, VII, IX, and X plus sacral spinal segments S2-S4. Key detail: CN III (Edinger-Westphal nucleus -> ciliary ganglion -> sphincter pupillae & ciliary muscle); CN VII (superior salivatory nucleus -> pterygopalatine & submandibular ganglia -> lacrimal, submandibular, sublingual glands); CN IX (inferior salivatory nucleus -> otic ganglion -> parotid gland); CN X (dorsal motor nucleus of vagus & nucleus ambiguus -> intramural ganglia of thoracic & abdominal viscera).",
    "verified": false,
    "open": {
     "q": "List the four cranial nerves that carry parasympathetic preganglionic fibers along with their brainstem nuclei of origin.",
@@ -1365,13 +1365,13 @@
    "sub": "Cerebellar Functional Divisions (Vestibulo-, Spino-, Cerebrocerebellum)",
    "q": "What is the 'comparator function' of the spinocerebellum during an ongoing voluntary limb movement?",
    "options": [
-    "It receives BOTH an 'efference copy' (internal copy of the intended motor command from motor cortex via pontine nuclei) AND real-time proprioceptive feedback from the moving limb (via spinocerebellar tracts), computing error signals and sending corrective signals via interposed/fastigial nuclei to smooth movement and stop it accurately at the target",
+    "Spinocerebellum compares intended motor command (efference copy) with proprioceptive feedback to correct movement",
     "It compares arterial PO2 with venous PCO2",
     "It stores long-term declarative episodic memories",
     "It regulates renal sodium reabsorption"
    ],
    "answer": 0,
-   "explain": "When this comparator loop fails in cerebellar disease, the limb overshoots or undershoots the target (dysmetria) and oscillates back and forth as visual feedback tries to correct it (intention tremor).",
+   "explain": "When this comparator loop fails in cerebellar disease, the limb overshoots or undershoots the target (dysmetria) and oscillates back and forth as visual feedback tries to correct it (intention tremor). Key detail: It receives BOTH an 'efference copy' (internal copy of the intended motor command from motor cortex via pontine nuclei) AND real-time proprioceptive feedback from the moving limb (via spinocerebellar tracts), computing error signals and sending corrective signals via interposed/fastigial nuclei to smooth movement and stop it accurately at the target.",
    "verified": false,
    "open": {
     "q": "Explain the two inputs compared by the spinocerebellum during voluntary movement to prevent overshoot (dysmetria).",
@@ -1388,13 +1388,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "Why is oral L-DOPA (levodopa) co-administered with carbidopa in the treatment of Parkinson's disease rather than giving dopamine directly?",
    "options": [
-    "Dopamine is hydrophilic and cannot cross the blood-brain barrier (BBB); lipid-soluble L-DOPA crosses the BBB via the large neutral amino acid transporter and is converted to dopamine by central DOPA decarboxylase, while carbidopa inhibits peripheral DOPA decarboxylase outside the BBB (preventing peripheral nausea/arrhythmias and increasing CNS L-DOPA bioavailability)",
+    "L-DOPA crosses the BBB and is converted centrally; carbidopa blocks peripheral decarboxylation",
     "Carbidopa crosses the BBB and destroys the subthalamic nucleus",
     "Dopamine crosses the BBB instantly but is degraded by pepsin in the stomach",
     "L-DOPA blocks D2 receptors in the striatum"
    ],
    "answer": 0,
-   "explain": "Carbidopa cannot cross the blood-brain barrier, so it selectively blocks peripheral conversion of L-DOPA to dopamine in the gut and vasculature without inhibiting dopamine synthesis inside the brain.",
+   "explain": "Carbidopa cannot cross the blood-brain barrier, so it selectively blocks peripheral conversion of L-DOPA to dopamine in the gut and vasculature without inhibiting dopamine synthesis inside the brain. Key detail: Dopamine is hydrophilic and cannot cross the blood-brain barrier (BBB); lipid-soluble L-DOPA crosses the BBB via the large neutral amino acid transporter and is converted to dopamine by central DOPA decarboxylase, while carbidopa inhibits peripheral DOPA decarboxylase outside the BBB (preventing peripheral nausea/arrhythmias and increasing CNS L-DOPA bioavailability).",
    "verified": false,
    "open": {
     "q": "Explain why L-DOPA is used instead of dopamine for Parkinson's disease and why carbidopa is combined with it.",
@@ -1434,13 +1434,13 @@
    "sub": "Spinal Cord Laminae and Blood Supply",
    "q": "How do 'conus medullaris syndrome' (lesion at L1-L2) and 'cauda equina syndrome' (lesion of nerve roots below L2) differ clinically?",
    "options": [
-    "Conus medullaris syndrome presents with sudden, symmetric saddle anesthesia, early severe bladder/bowel incontinence and impotence, minimal leg weakness, and mixed UMN/LMN signs; Cauda equina syndrome presents with gradual, asymmetric severe radicular leg pain, asymmetric flaccid LMN leg weakness/areflexia, asymmetric saddle anesthesia, and late sphincter dysfunction",
+    "Conus: symmetric saddle/sphincter signs early; cauda equina: asymmetric radicular pain, LMN weakness and later sphincter signs",
     "Conus medullaris syndrome causes isolated facial droop",
     "Cauda equina syndrome causes 4+ hyperreflexia and bilateral Babinski signs",
     "Both syndromes present identically with pure aphasia"
    ],
    "answer": 0,
-   "explain": "Conus medullaris is central spinal cord tissue (symmetric sacral autonomic/saddle deficits early), whereas cauda equina consists of peripheral nerve roots (asymmetric radicular pain and LMN leg weakness).",
+   "explain": "Conus medullaris is central spinal cord tissue (symmetric sacral autonomic/saddle deficits early), whereas cauda equina consists of peripheral nerve roots (asymmetric radicular pain and LMN leg weakness). Key detail: Conus medullaris syndrome presents with sudden, symmetric saddle anesthesia, early severe bladder/bowel incontinence and impotence, minimal leg weakness, and mixed UMN/LMN signs; Cauda equina syndrome presents with gradual, asymmetric severe radicular leg pain, asymmetric flaccid LMN leg weakness/areflexia, asymmetric saddle anesthesia, and late sphincter dysfunction.",
    "verified": false,
    "open": {
     "q": "Contrast conus medullaris syndrome and cauda equina syndrome in terms of symmetry, radicular pain severity, and onset of sphincter dysfunction.",
@@ -1480,13 +1480,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "Where do the cranial nerves emerge on the ventral surface of the brainstem?",
    "options": [
-    "CN I & II: forebrain; CN III: interpeduncular fossa of midbrain; CN IV: dorsal midbrain (only cranial nerve exiting dorsally, and decussates before exiting); CN V: mid-lateral pons; CN VI, VII, VIII: pontomedullary junction (medial to lateral); CN IX, X, XI: postolivary sulcus of medulla; CN XII: preolivary sulcus (between pyramid and olive)",
+    "III: interpeduncular; IV: dorsal midbrain; V: lateral pons; VI–VIII: pontomedullary junction; IX–XI: postolivary; XII: preolivary",
     "All twelve cranial nerves exit through the foramen magnum",
     "CN XII exits from the dorsal midbrain and CN IV exits from the preolivary sulcus",
     "CN VI, VII, and VIII exit from the cerebral peduncles"
    ],
    "answer": 0,
-   "explain": "Notice the landmarks around the medullary olive: CN XII exits medially in the preolivary sulcus (between pyramid and olive), whereas CN IX, X, and XI exit laterally in the postolivary (retro-olivary) sulcus.",
+   "explain": "Notice the landmarks around the medullary olive: CN XII exits medially in the preolivary sulcus (between pyramid and olive), whereas CN IX, X, and XI exit laterally in the postolivary (retro-olivary) sulcus. Key detail: CN I & II: forebrain; CN III: interpeduncular fossa of midbrain; CN IV: dorsal midbrain (only cranial nerve exiting dorsally, and decussates before exiting); CN V: mid-lateral pons; CN VI, VII, VIII: pontomedullary junction (medial to lateral); CN IX, X, XI: postolivary sulcus of medulla; CN XII: preolivary sulcus (between pyramid and olive).",
    "verified": false,
    "open": {
     "q": "Which cranial nerve exits the dorsal aspect of the brainstem, and which cranial nerves exit in the preolivary versus postolivary sulci of the medulla?",
@@ -1503,13 +1503,13 @@
    "sub": "Reticular Formation, ARAS, and Decorticate vs Decerebrate Posturing",
    "q": "What is the 'corticospinal-reticulospinal control of micturition' mediated by the Pontine Micturition Center (Barrington's nucleus)?",
    "options": [
-    "Barrington's nucleus in the dorsal pons coordinates voiding by simultaneously exciting sacral (S2-S4) parasympathetic pelvic splanchnic neurons (contracting the detrusor muscle) and inhibiting lumbar sympathetic and Onuf's nucleus pudendal somatic motor neurons (relaxing internal and external urethral sphincters), under inhibitory control from the medial prefrontal cortex",
+    "Barrington's nucleus contracts detrusor via S2–S4 and relaxes urethral sphincters by inhibiting sympathetic/pudendal outflow",
     "The pontine micturition center paralyzes the detrusor muscle during urination",
     "Micturition is controlled solely by the cerebellar flocculonodular lobe",
     "Onuf's nucleus is located in the midbrain red nucleus"
    ],
    "answer": 0,
-   "explain": "Damage to the frontal micturition center (e.g., parasagittal meningioma, normal pressure hydrocephalus, ACA stroke) removes cortical inhibition over Barrington's nucleus, causing urge urinary incontinence.",
+   "explain": "Damage to the frontal micturition center (e.g., parasagittal meningioma, normal pressure hydrocephalus, ACA stroke) removes cortical inhibition over Barrington's nucleus, causing urge urinary incontinence. Key detail: Barrington's nucleus in the dorsal pons coordinates voiding by simultaneously exciting sacral (S2-S4) parasympathetic pelvic splanchnic neurons (contracting the detrusor muscle) and inhibiting lumbar sympathetic and Onuf's nucleus pudendal somatic motor neurons (relaxing internal and external urethral sphincters), under inhibitory control from the medial prefrontal cortex.",
    "verified": false,
    "open": {
     "q": "How does the Pontine Micturition Center (Barrington's nucleus) coordinate detrusor contraction with urethral sphincter relaxation during voiding?",
@@ -1526,13 +1526,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "What is 'Wilson's disease' (hepatolenticular degeneration), and which basal ganglia structures are preferentially damaged?",
    "options": [
-    "Autosomal recessive mutation in the ATP7B copper-transporting ATPase gene causing impaired biliary copper excretion and ceruloplasmin incorporation; copper accumulates in the liver, cornea (Kayser-Fleischer rings), and lentiform nucleus (putamen and globus pallidus), producing Parkinsonism, dystonia, wing-beating tremor, dysarthria, and psychiatric changes",
+    "ATP7B mutation causes copper accumulation in liver, cornea and lentiform nucleus, producing hepatic and extrapyramidal signs",
     "Autoimmune demyelination of the optic nerve",
     "Iron accumulation in the spinal dorsal columns",
     "Excessive vitamin D deposition in the cerebellum"
    ],
    "answer": 0,
-   "explain": "Copper deposition causes cystic degeneration of the putamen and globus pallidus (lentiform nucleus), treated with copper chelators (penicillamine, trientine) and oral zinc.",
+   "explain": "Copper deposition causes cystic degeneration of the putamen and globus pallidus (lentiform nucleus), treated with copper chelators (penicillamine, trientine) and oral zinc. Key detail: Autosomal recessive mutation in the ATP7B copper-transporting ATPase gene causing impaired biliary copper excretion and ceruloplasmin incorporation; copper accumulates in the liver, cornea (Kayser-Fleischer rings), and lentiform nucleus (putamen and globus pallidus), producing Parkinsonism, dystonia, wing-beating tremor, dysarthria, and psychiatric changes.",
    "verified": false,
    "open": {
     "q": "State the mutated gene, accumulated metal, and primary basal ganglia structures damaged in Wilson's disease.",
@@ -1572,13 +1572,13 @@
    "sub": "Spinal Cord Ascending Sensory Tracts",
    "q": "How do 'fasciculus gracilis' and 'fasciculus cuneatus' differ in their spinal cord levels of origin and anatomical presence?",
    "options": [
-    "Fasciculus gracilis carries sensory afferents from the lower limbs and lower trunk (below T6) and is present throughout the ENTIRE length of the spinal cord (medial dorsal column); fasciculus cuneatus carries afferents from the upper trunk, upper limbs, and neck (T6 and above) and is present ONLY in the upper thoracic and cervical spinal cord (lateral dorsal column)",
+    "Gracilis: lower body, present at all levels; cuneatus: upper body, present above T6",
     "Fasciculus cuneatus is present in the sacral cord and carries toe sensation",
     "Fasciculus gracilis is located in the anterior horn",
     "Both fasciculi carry motor axons to skeletal muscle"
    ],
    "answer": 0,
-   "explain": "A transverse section of the lumbar spinal cord shows ONLY the fasciculus gracilis in the dorsal funiculus, whereas a cervical section shows both gracilis (medial) and cuneatus (lateral).",
+   "explain": "A transverse section of the lumbar spinal cord shows ONLY the fasciculus gracilis in the dorsal funiculus, whereas a cervical section shows both gracilis (medial) and cuneatus (lateral). Key detail: Fasciculus gracilis carries sensory afferents from the lower limbs and lower trunk (below T6) and is present throughout the ENTIRE length of the spinal cord (medial dorsal column); fasciculus cuneatus carries afferents from the upper trunk, upper limbs, and neck (T6 and above) and is present ONLY in the upper thoracic and cervical spinal cord (lateral dorsal column).",
    "verified": false,
    "open": {
     "q": "Compare the body regions represented and spinal cord levels where fasciculus gracilis and fasciculus cuneatus are found.",
@@ -1595,13 +1595,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "What is 'Wallenberg's lateral medullary syndrome' dysphagia mechanism, and why does the uvula deviate AWAY from the side of a unilateral vagus/nucleus ambiguus lesion?",
    "options": [
-    "Lesion of the nucleus ambiguus paralyzes the ipsilateral levator veli palatini and pharyngeal constrictors; when the patient says 'ahh,' the intact contralateral palatal muscles pull the uvula AWAY from the paralyzed lesioned side (whereas a hypoglossal CN XII lesion causes the tongue to deviate TOWARD the lesioned side)",
+    "Nucleus ambiguus lesion weakens the ipsilateral palate; intact muscles pull the uvula away from the lesion",
     "Both the uvula and tongue deviate toward the intact side",
     "Both the uvula and tongue deviate away from the lesion",
     "The uvula is innervated by the optic nerve"
    ],
    "answer": 0,
-   "explain": "Classic board contrast: Palate/uvula deviates AWAY from a CN X/nucleus ambiguus lesion (pulled by intact contralateral muscles), whereas protruded tongue deviates TOWARD a CN XII lesion (pushed by intact contralateral genioglossus).",
+   "explain": "Classic board contrast: Palate/uvula deviates AWAY from a CN X/nucleus ambiguus lesion (pulled by intact contralateral muscles), whereas protruded tongue deviates TOWARD a CN XII lesion (pushed by intact contralateral genioglossus). Key detail: Lesion of the nucleus ambiguus paralyzes the ipsilateral levator veli palatini and pharyngeal constrictors; when the patient says 'ahh,' the intact contralateral palatal muscles pull the uvula AWAY from the paralyzed lesioned side (whereas a hypoglossal CN XII lesion causes the tongue to deviate TOWARD the lesioned side).",
    "verified": false,
    "open": {
     "q": "State the direction of deviation (toward vs away from the lesion) for: (1) the uvula in a unilateral CN X/nucleus ambiguus lesion and (2) the protruded tongue in a unilateral CN XII lesion.",
