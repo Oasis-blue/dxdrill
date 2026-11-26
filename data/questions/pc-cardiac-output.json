@@ -600,6 +600,50 @@
           "lower end diastolic volume decreases stroke volume"
         ]
       }
+    },
+    {
+      "id": "pc-cardiac-output-NEW01",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Frank-Starling mechanism",
+      "q": "A patient receives a rapid intravenous fluid bolus. Before reflex changes occur, the increased venous return raises stroke volume through which intrinsic cardiac mechanism?",
+      "options": [
+        "Increased end-diastolic fibre length increasing force of contraction",
+        "Reduced ventricular preload",
+        "Reduced sarcomere length and calcium sensitivity",
+        "Increased afterload reducing end-systolic volume"
+      ],
+      "answer": 0,
+      "explain": "The Frank-Starling mechanism relates increased ventricular filling to increased myocardial fibre stretch and a stronger contraction, increasing stroke volume within physiological limits.",
+      "verified": false,
+      "open": {
+        "q": "How does increased venous return increase stroke volume through the Frank-Starling mechanism?",
+        "accept": [
+          "It increases end-diastolic fibre length, producing a stronger contraction"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-NEW02",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Afterload",
+      "q": "A patient with severe systemic hypertension has increased left ventricular afterload. If contractility and preload are initially unchanged, what happens to stroke volume?",
+      "options": [
+        "It tends to decrease",
+        "It increases markedly",
+        "It remains fixed by heart rate",
+        "It becomes independent of end-systolic volume"
+      ],
+      "answer": 0,
+      "explain": "An increase in afterload makes ventricular ejection more difficult. With preload and contractility unchanged, end-systolic volume tends to rise and stroke volume falls.",
+      "verified": false,
+      "open": {
+        "q": "What is the immediate effect of increased afterload on stroke volume when preload and contractility are unchanged?",
+        "accept": [
+          "Stroke volume decreases"
+        ]
+      }
     }
   ]
 }
