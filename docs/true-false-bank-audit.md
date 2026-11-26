@@ -15,7 +15,7 @@ The nine original stems cover radial nerve, ulnar nerve, scaphoid, right lung, j
 
 ## First expansion batch
 
-Added 16 draft stems across eight topics:
+Added 36 draft stems in the expansion file (16 in the first batch plus 20 in the second batch), across the covered topics:
 - Anatomical position and terminology
 - Upper limb
 - Cell physiology and membrane transport
