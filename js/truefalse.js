@@ -7,7 +7,7 @@
   var T = { view: "pick", sel: null, n: 10, mode: "exam", only: false, run: null, note: "", timed: false, minutes: 15, timer: null };
 
   function stats() { return DX.store.get(SKEY, {}); }
-  function topicName(id) { var t = DX.topicById && DX.topicById[id]; return t ? t.name : id; }
+  function topicName(id) { var shortNames = {"phys-renal-structure":"Kidney structure & renal circulation","phys-urine-concentration":"Urine concentration","phys-renal-tests-failure":"Renal function & failure","pg-cell-physiology-and-membrane-transport":"Cell physiology & transport","ga-anatomical-position-and-terminology":"Anatomical terminology"}; if (shortNames[id]) return shortNames[id]; var t = DX.topicById && DX.topicById[id]; return t ? t.name : id; }
   function stemById(id) { for (var i = 0; i < DX.tfStems.length; i++) if (DX.tfStems[i].id === id) return DX.tfStems[i]; return null; }
   function sid(stem, i) { return stem.id + "~" + i; }
 
@@ -27,7 +27,7 @@
   function paint() { if (app) app.innerHTML = view(); }
 
   function view() {
-    if (!DX.tfStems || !DX.tfStems.length) return '<div class="wrap stack"><h1>True or false</h1><p class="lede"><i class="spin"></i>' + (DX.loadingQuestions ? "Loading the first true/false stems…" : "No true/false stems are available yet.") + '</p><p class="hint">You can use Practice while this question bank loads.</p></div>';
+    if (!DX.tfStems || !DX.tfStems.length) return '<div class="wrap stack"><h1>True or false</h1><p class="lede"><i class="spin"></i>' + (DX.loadingQuestions ? "Loading the first true/false stems…" : "No true/false stems are available yet.") + '</p><p class="hint tfstemmeta">You can use Practice while this question bank loads.</p></div>';
     if (T.view === "run") return runView();
     if (T.view === "end") return endView();
     return pickView();
@@ -111,7 +111,7 @@
     var last = r.i + 1 >= r.items.length, net = 0;
     if (it.checked) it.order.forEach(function (oi) { var p = it.ans[oi] || "", x = stem.items[oi]; if (p) net += ((p === "t") === x.answer) ? 1 : (r.mode === "exam" ? -1 : 0); });
     return '<div class="wrap stack"><div class="row tight" style="justify-content:space-between;align-items:center"><span class="eyebrow">Stem ' + (r.i + 1) + ' of ' + r.items.length + ' · ' + (r.mode === "exam" ? "Exam marking" : "Practice marking") + (r.timed ? ' · <b id="tfclock" aria-live="off">' + formatTime(Math.max(0, Math.ceil((r.deadline - Date.now()) / 1000))) + '</b>' : "") + '</span><button class="chip" data-act="quit" type="button">Stop</button></div>' +
-      '<h2 class="qtext">' + esc(stem.q) + '</h2><p class="hint">' + esc(topicName(stem.topic)) + '. Leave a statement blank to skip it.</p>' +
+      '<h2 class="qtext tfstemtitle">' + esc(stem.q) + '</h2><p class="hint">' + esc(topicName(stem.topic)) + '. Mark each statement True or False; leave it blank to skip.</p>' +
       '<ol class="tflist">' + rows + '</ol>' +
       (it.checked ? '<p class="tfnet"><b>' + (net > 0 ? "+" : net < 0 ? "−" : "") + Math.abs(net) + ' mark' + (Math.abs(net) === 1 ? "" : "s") + '</b> on this stem</p>' : "") +
       '<section class="row stickystart">' + (it.checked ? '<button class="btn primary" data-act="next">' + (last ? "See results" : "Next stem") + '</button>' : '<button class="btn primary" data-act="check">Check answers</button>') + '</section></div>';
@@ -154,7 +154,7 @@
     stems.forEach(function (stem) { stem.items.forEach(function (x, i) { var v = st[sid(stem, i)]; if (!v || !v.n) return; var a = by[stem.topic] || (by[stem.topic] = { n: 0, c: 0 }); a.n += v.n; a.c += v.c; }); });
     var rows = Object.keys(by).map(function (id) { var a = by[id]; return { id: id, n: a.n, pct: Math.round(100 * a.c / a.n) }; }).sort(function (a, b) { return a.pct - b.pct; });
     if (!rows.length) return '<p class="hint">No marked statements yet. Your topic breakdown will build as you practise.</p>';
-    return '<div class="stack">' + rows.map(function (x) { return '<div class="field"><div class="row tight" style="justify-content:space-between"><b>' + esc(topicName(x.id)) + '</b><span>' + x.pct + '% · ' + x.n + ' attempts</span></div><div class="meter"><i style="width:' + x.pct + '%"></i></div></div>'; }).join("") + '</div><button type="button" class="chip" data-act="weak">Revise topics below 70%</button>';
+    return '<div class="stack">' + rows.map(function (x) { return '<div class="field"><div class="row tight" style="justify-content:space-between"><b>' + esc(topicName(x.id)) + '</b><span>' + x.pct + '% · ' + x.n + ' statements answered</span></div><div class="meter"><i style="width:' + x.pct + '%"></i></div></div>'; }).join("") + '</div><button type="button" class="chip" data-act="weak">Revise topics below 70%</button>';
   }
   function reviseWeak() {
     var st = stats(), totals = {};

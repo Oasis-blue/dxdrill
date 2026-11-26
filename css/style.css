@@ -465,3 +465,7 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 
 /* True/False v2: readable timed-exam clock. */
 #tfclock{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent,#0b6b5a)}
+
+/* True/False stem hierarchy and compact analytics labels. */
+.tfstemtitle{font-size:clamp(1.25rem,4.5vw,1.55rem);font-weight:700;line-height:1.3;letter-spacing:-.02em;margin:12px 0 2px}
+.tfstemmeta{margin:0 0 4px}
