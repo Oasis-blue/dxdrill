@@ -94,7 +94,7 @@
         item._score = imageScore(item, term, profile);
         item._order = index;
         return item;
-      }).filter(Boolean).filter(function (item) { return !/\b(logo|icon|flag|coat of arms)\b/i.test(item.title); });
+      }).filter(Boolean).filter(function (item) { return item._score >= 8; });
       out.sort(function (a, b) { return b._score - a._score || a._order - b._order; });
       return out.slice(0, 4).map(function (item) {
         delete item._score; delete item._order; return item;
