@@ -1,8 +1,8 @@
 /* Optional Wikimedia-powered learning media. Never required by the question engine. */
 (function () {
   var DX = window.DX, esc = DX.esc;
-  /* v2 deliberately bypasses older generic-search cache entries. */
-  var PREFIX = "dx.media.v2.", TTL = 7 * 24 * 60 * 60 * 1000;
+  /* v3 bypasses older, poorly ranked search results. */
+  var PREFIX = "dx.media.v3.", TTL = 7 * 24 * 60 * 60 * 1000;
 
   function cached(key) {
     var item = DX.store.get(PREFIX + key, null);
@@ -24,6 +24,9 @@
   }
   function profileFor(term) {
     var t = String(term || "").toLowerCase();
+    if (/diuretic|diuretics|furosemide|frusemide|thiazide|spironolactone|amiloride|mannitol|acetazolamide/.test(t)) {
+      return { kind: "Renal physiology", hint: "nephron site of action mechanism diagram", boost: ["diuretic", "nephron", "loop", "thiazide", "collecting duct", "mechanism", "site of action"] };
+    }
     if (/histolog|microscop|epitheli|connective tissue|cartilage|bone tissue|blood smear|tissue section/.test(t)) {
       return { kind: "Histology", hint: "histology micrograph microscope slide", boost: ["histology", "micrograph", "microscopic", "stained", "slide", "tissue"] };
     }
@@ -33,7 +36,7 @@
     if (/froment|dinner.?fork|wrist drop|foot drop|claw hand|waiter.?s tip|clinical sign|clinical examination|deformity|palsy/.test(t)) {
       return { kind: "Clinical signs", hint: "clinical sign medical photograph illustration", boost: ["clinical", "sign", "photograph", "illustration", "deformity", "palsy"] };
     }
-    if (/physiolog|cardiovascular|respiratory physiology|renal physiology|gastrointestinal physiology|endocrine physiology|reproductive physiology|blood and body fluids|fluid balance|thermoregulation|neuromuscular|nerve conduction|ecg|electrocardio|spirom|lung volume|oxygen dissociation|oxy.?haemoglobin|oxy.?hemoglobin|cardiac cycle|wiggers|action potential|membrane potential|gfr|glomerular filtration|renal clearance|blood pressure|ventilation perfusion/.test(t)) {
+    if (/physiolog|renal|kidney|nephron|glomerul|tubular|cardiovascular|respiratory physiology|renal physiology|gastrointestinal physiology|endocrine physiology|reproductive physiology|blood and body fluids|fluid balance|thermoregulation|neuromuscular|nerve conduction|ecg|electrocardio|spirom|lung volume|oxygen dissociation|oxy.?haemoglobin|oxy.?hemoglobin|cardiac cycle|wiggers|action potential|membrane potential|gfr|glomerular filtration|renal clearance|blood pressure|ventilation perfusion/.test(t)) {
       return { kind: "Physiology", hint: "physiology diagram graph medical illustration", boost: ["physiology", "diagram", "graph", "waveform", "curve", "cycle"] };
     }
     if (/biochem|glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|lipid metabolism|carbohydrate metabolism|amino acid|nucleic acid|protein metabolism|protein synthesis|purine|pyrimidine|vitamin|heme|haem|buffer|acid.?base|metabolic pathway|dna replication|rna transcription|enzyme kinetics/.test(t)) {
@@ -52,12 +55,18 @@
   }
   function imageScore(item, term, profile) {
     var title = String(item.title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
+    var description = String(item.description || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
+    var text = title + " " + description;
     var topic = String(term || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    var words = topic.split(/\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system)$/.test(w); });
-    var score = topic && title.indexOf(topic) > -1 ? 12 : 0;
-    words.forEach(function (w) { if (title.indexOf(w) > -1) score += 3; });
-    profile.boost.forEach(function (w) { if (title.indexOf(w) > -1) score += 2; });
-    if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) score -= 8;
+    var words = topic.split(/\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system|types|type)$/.test(w); });
+    /* Publication scans and covers are not useful visual-learning references. */
+    if (/\b(book|cover|textbook|atlas|syllabus|lecture|catalog|catalogue|journal|magazine|publisher|publication|title page|front matter|table of contents|pdf scan)\b/.test(text)) return -100;
+    if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) return -100;
+    var score = topic && text.indexOf(topic) > -1 ? 12 : 0;
+    var matched = 0;
+    words.forEach(function (w) { if (text.indexOf(w) > -1) { score += 4; matched++; } });
+    profile.boost.forEach(function (w) { if (text.indexOf(w) > -1) score += 3; });
+    if (score < 8 || (!matched && !profile.boost.some(function (w) { return text.indexOf(w) > -1; }))) return -100;
     return score;
   }
   function commonsSearch(query, term, profile) {
@@ -79,12 +88,13 @@
           image: info.thumburl || info.url,
           page: info.descriptionurl || "",
           license: cleanText(meta.LicenseShortName && meta.LicenseShortName.value) || "Check licence",
-          artist: cleanText(meta.Artist && meta.Artist.value) || "Author not listed"
+          artist: cleanText(meta.Artist && meta.Artist.value) || "Author not listed",
+          description: cleanText(meta.ImageDescription && meta.ImageDescription.value) || cleanText(meta.ObjectName && meta.ObjectName.value) || ""
         };
         item._score = imageScore(item, term, profile);
         item._order = index;
         return item;
-      }).filter(Boolean).filter(function (item) { return !/\b(logo|icon|flag|coat of arms)\b/i.test(item.title); });
+      }).filter(Boolean).filter(function (item) { return item._score >= 8; });
       out.sort(function (a, b) { return b._score - a._score || a._order - b._order; });
       return out.slice(0, 4).map(function (item) {
         delete item._score; delete item._order; return item;
@@ -95,10 +105,8 @@
     var key = "images." + term.toLowerCase(), hit = cached(key);
     if (hit) return Promise.resolve(hit);
     var profile = profileFor(term);
-    /* Try the medical-specific query first, then broaden to the exact topic if it is too restrictive. */
+    /* Focused visual query only: do not broaden into unqualified publication searches. */
     return commonsSearch(term + " " + profile.hint, term, profile).then(function (out) {
-      return out.length ? out : commonsSearch(term, term, profile);
-    }).then(function (out) {
       save(key, out); return out;
     }).catch(function () { return []; });
   }
