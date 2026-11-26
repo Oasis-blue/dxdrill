@@ -26,14 +26,15 @@ This reconciliation adds original, syllabus-aligned questions informed by concep
 | mcqs and emqs in physiology - Copy.pdf | 361 | Text extracted; commercial 6th-edition MCQ/EMQ textbook. Full question-by-question reconciliation remains outstanding; no verbatim textbook items imported. |
 | MCQs in Biochemistry - by G. Vidya Sagar-Ussama Maqbool--1.pdf | 301 | Exact duplicate of epdf.tips_mcqs-in-biochemistry-2008.pdf; treated as one source. Text extracted; broad 5,000-MCQ collection, not bulk-transcribed. |
 | epdf.tips_mcqs-in-biochemistry-2008.pdf | 301 | Exact duplicate of G. Vidya Sagar PDF by SHA-256; treated as same source. |
-| 5000 MCQs-in-Biochemistry.pdf | 301 | Distinct file; text extracted. Broad question collection; full question-by-question reconciliation remains outstanding. |
+| 5000 MCQs-in-Biochemistry.pdf | 301 | PDF bytes differ, but its extracted text is byte-for-byte identical to the G. Vidya Sagar / epdf.tips text extraction. Treated as the same textual source, not additional question coverage. |
 
-## Exact duplicate pairs
+## Exact duplicate pairs and repeated content
 
 - `Klm Anatomy Mcqs (1).pdf` and `Klm Anatomy Mcqs (1)(1).pdf`
 - `Physiology MCQs Book (1).pdf` and `Physiology MCQs Book (1)(1).pdf`
 - `Upper Limb MCQs.pdf` and `Upper Limb MCQs(1).pdf`
-- `MCQs in Biochemistry - by G. Vidya Sagar-Ussama Maqbool--1.pdf` and `epdf.tips_mcqs-in-biochemistry-2008.pdf`
+- `MCQs in Biochemistry - by G. Vidya Sagar-Ussama Maqbool--1.pdf` and `epdf.tips_mcqs-in-biochemistry-2008.pdf` (exact PDF duplicate)
+- `5000 MCQs-in-Biochemistry.pdf` has different PDF bytes but its extracted text is identical to the same G. Vidya Sagar source; it contributes no additional textual coverage.
 
 ## DxDrill changes in this reconciliation
 
