@@ -42,7 +42,7 @@ A limited check of the supplied cardiac physiology answer explanations identifie
 | Location | Issue found | Correct treatment |
 |---|---|---|
 | Heart unit, explanation 4 | The explanation gives stroke volume as 100 mL and end-systolic volume as 150 mL, but then reports an ejection fraction of 66.7%. | End-diastolic volume is 100 + 150 = 250 mL, so ejection fraction is 100/250 = 40%. The printed calculation is internally inconsistent and the stated percentage should not be accepted. |
-| Heart unit, explanation 8 | The explanation claims cardiac muscle stores much more calcium in its tubular system than skeletal muscle and describes calcium stored/bound in the T-tubules. | Cardiac T-tubules are invaginations continuous with extracellular fluid; calcium entry through L-type channels triggers calcium-induced calcium release from the sarcoplasmic reticulum. Cardiac contraction is more dependent on extracellular calcium, but the T-tubules should not be described as a larger intracellular calcium store than skeletal-muscle SR. |
+| Heart unit, explanation 8 | **Recheck: the earlier audit incorrectly flagged this explanation.** | Retain the source explanation on this point. Cardiac T-tubules are extensive and contain negatively charged mucopolysaccharides that bind calcium; the source's point about a substantial tubular calcium reservoir and dependence on extracellular calcium is consistent with the Guyton account. This item is not classified as an error. |
 
 This is a targeted audit of two identifiable answer explanations, not a complete validation of the review book's more than 1,000 questions. The source is used for topic coverage, not question reproduction.
 
