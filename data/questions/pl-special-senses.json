@@ -1249,13 +1249,13 @@
    "sub": "Audition: Tympanic Membrane, Ossicles, and Impedance Matching",
    "q": "What is the 'decibel (dB) sound pressure level (SPL)' scale, and how much does sound intensity (power) increase for every +20 dB increase in sound pressure level?",
    "options": [
-    "Decibel is a logarithmic ratio scale (dB = 20 log10 [P / P0]); every +20 dB increases sound PRESSURE 10-fold and sound INTENSITY (energy) 100-fold (every +10 dB = 10-fold intensity increase)",
+    "dB = 20 log10(P/P0); +20 dB means 10× pressure and 100× intensity",
     "Decibel is a linear scale where 100 dB is twice as intense as 50 dB",
     "0 dB represents a complete vacuum with zero air molecules",
     "Every +20 dB doubles sound intensity"
    ],
    "answer": 0,
-   "explain": "Because human hearing spans a trillion-fold range of sound intensities (from 0 dB hearing threshold at 20 micropascals to ~120-130 dB pain threshold), sound loudness is compressed onto a logarithmic decibel scale.",
+   "explain": "Because human hearing spans a trillion-fold range of sound intensities (from 0 dB hearing threshold at 20 micropascals to ~120-130 dB pain threshold), sound loudness is compressed onto a logarithmic decibel scale. Key detail: Decibel is a logarithmic ratio scale (dB = 20 log10 [P / P0]); every +20 dB increases sound PRESSURE 10-fold and sound INTENSITY (energy) 100-fold (every +10 dB = 10-fold intensity increase).",
    "verified": false,
    "open": {
     "q": "State how much sound pressure and sound intensity increase for a +20 dB rise on the logarithmic decibel scale.",
@@ -1272,13 +1272,13 @@
    "sub": "Audition: Cochlear Mechanics, Organ of Corti, and Hair Cell Transduction",
    "q": "What is the 'helicotrema' at the apex of the cochlea, and which two cochlear chambers communicate through it?",
    "options": [
-    "A small opening at the cochlear apex connecting the perilymph-filled SCALA VESTIBULI with the perilymph-filled SCALA TYMPANI (while the endolymph-filled scala media remains a blind-ended sealed tube)",
+    "Helicotrema connects the perilymph-filled scala vestibuli and scala tympani",
     "An opening connecting the scala media with the middle ear cavity",
     "The hole in the stapes footplate where the auditory nerve exits",
     "A canal linking the utricle directly to the nasopharynx"
    ],
    "answer": 0,
-   "explain": "Very low-frequency pressure waves (<20 Hz) pass lazily around the helicotrema from scala vestibuli to scala tympani without deflecting the basilar membrane, defining the lower frequency cutoff of human hearing (~20 Hz).",
+   "explain": "Very low-frequency pressure waves (<20 Hz) pass lazily around the helicotrema from scala vestibuli to scala tympani without deflecting the basilar membrane, defining the lower frequency cutoff of human hearing (~20 Hz). Key detail: A small opening at the cochlear apex connecting the perilymph-filled SCALA VESTIBULI with the perilymph-filled SCALA TYMPANI (while the endolymph-filled scala media remains a blind-ended sealed tube).",
    "verified": false,
    "open": {
     "q": "Identify the helicotrema and name the two cochlear fluid chambers it connects at the apex of the cochlea.",
@@ -1295,13 +1295,13 @@
    "sub": "Audition: Cochlear Mechanics, Organ of Corti, and Hair Cell Transduction",
    "q": "Which specialized vascular epithelium on the lateral wall of the scala media secretes K+-rich endolymph and generates the +80 mV endocochlear potential, and why do loop diuretics (furosemide, ethacrynic acid) cause ototoxicity?",
    "options": [
-    "Stria vascularis — loop diuretics inhibit its basolateral Na+-K+-2Cl- (NKCC1) cotransporter, collapsing K+ secretion and the +80 mV endocochlear potential",
+    "Stria vascularis secretes K+-rich endolymph; loop diuretics inhibit its NKCC1",
     "Tectorial membrane — loop diuretics dissolve its collagen fibers",
     "Reissner's membrane — loop diuretics rupture the oval window",
     "Spiral limbus — loop diuretics block acetylcholine release"
    ],
    "answer": 0,
-   "explain": "The stria vascularis expresses the exact same NKCC1 cotransporter found in the thick ascending limb of Henle, explaining why high-dose IV loop diuretics (especially ethacrynic acid) abolish the endocochlear potential and cause acute ototoxicity.",
+   "explain": "The stria vascularis expresses the exact same NKCC1 cotransporter found in the thick ascending limb of Henle, explaining why high-dose IV loop diuretics (especially ethacrynic acid) abolish the endocochlear potential and cause acute ototoxicity. Key detail: Stria vascularis — loop diuretics inhibit its basolateral Na+-K+-2Cl- (NKCC1) cotransporter, collapsing K+ secretion and the +80 mV endocochlear potential.",
    "verified": false,
    "open": {
     "q": "Name the cochlear structure that secretes endolymph and generates the +80 mV endocochlear potential, and explain the mechanism of loop-diuretic ototoxicity.",
@@ -1387,13 +1387,13 @@
    "sub": "Gustation (Taste) and Olfaction (Smell) Transduction and Pathways",
    "q": "What is 'umami' taste, which dietary molecules trigger it, and which taste receptor heterodimer mediates it?",
    "options": [
-    "Savory/meaty taste triggered by L-glutamate (e.g., monosodium glutamate, aged cheese, meat broths) and enhanced synergistically by 5'-ribonucleotides (IMP, GMP); mediated by the G-protein coupled receptor heterodimer T1R1 + T1R3",
+    "Umami: L-glutamate (enhanced by IMP/GMP) activates T1R1/T1R3",
     "Metallic taste mediated by voltage-gated Ca2+ channels",
     "Spicy heat sensation mediated by TRPV1 capsaicin receptors on trigeminal pain fibers",
     "Astringent sensation mediated by sweet T1R2 receptors"
    ],
    "answer": 0,
-   "explain": "Note that spicy 'heat' (capsaicin) and menthol 'coolness' are NOT tastes—they are chemesthetic sensations mediated by trigeminal (CN V) TRPV1 and TRPM8 somatosensory fibers!",
+   "explain": "Note that spicy 'heat' (capsaicin) and menthol 'coolness' are NOT tastes—they are chemesthetic sensations mediated by trigeminal (CN V) TRPV1 and TRPM8 somatosensory fibers! Key detail: Savory/meaty taste triggered by L-glutamate (e.g., monosodium glutamate, aged cheese, meat broths) and enhanced synergistically by 5'-ribonucleotides (IMP, GMP); mediated by the G-protein coupled receptor heterodimer T1R1 + T1R3.",
    "verified": false,
    "open": {
     "q": "State the primary dietary ligand and GPCR heterodimer responsible for umami taste, and identify which cranial nerve mediates spicy capsaicin sensation.",
@@ -1502,13 +1502,13 @@
    "sub": "Clinical Correlations",
    "q": "A 68-year-old man with poorly controlled diabetes mellitus and hypertension presents with sudden-onset painless vertical/diagonal diplopia that worsens when walking down stairs or reading in bed, and he unconsciously tilts his head to the LEFT to eliminate the double vision. Which cranial nerve and eye muscle are paralyzed?",
    "options": [
-    "Right Trochlear nerve (CN IV) — paralysis of the right superior oblique muscle (extorsion and depression in adduction; head tilt away from the lesion compensates via intact left superior oblique intorsion)",
+    "Right CN IV/superior oblique palsy causes vertical diplopia and compensatory left head tilt",
     "Left Abducens nerve (CN VI) — left lateral rectus palsy",
     "Right Oculomotor nerve (CN III) — right medial rectus palsy",
     "Right Optic nerve (CN II)"
    ],
    "answer": 0,
-   "explain": "Vertical diplopia worse on looking down and inward (reading/stairs) with compensatory head tilt AWAY from the affected side (Bielschowsky head-tilt test) is pathognomonic for CN IV (superior oblique) palsy.",
+   "explain": "Vertical diplopia worse on looking down and inward (reading/stairs) with compensatory head tilt AWAY from the affected side (Bielschowsky head-tilt test) is pathognomonic for CN IV (superior oblique) palsy. Key detail: Right Trochlear nerve (CN IV) — paralysis of the right superior oblique muscle (extorsion and depression in adduction; head tilt away from the lesion compensates via intact left superior oblique intorsion).",
    "verified": false,
    "open": {
     "q": "Identify the paralyzed cranial nerve, extraocular muscle, and side in a patient with vertical diplopia worse when walking down stairs who tilts his head to the left.",
@@ -1571,13 +1571,13 @@
    "sub": "Vision: Retinal Layers, Rods vs Cones, and Phototransduction",
    "q": "Which vitamin is the essential dietary precursor for synthesizing the chromophore '11-cis-retinal' in both rod rhodopsin and cone iodopsins, and what is the earliest visual symptom of its deficiency?",
    "options": [
-    "Vitamin A (retinol); earliest symptom is nyctalopia (night blindness) due to impaired rod dark adaptation, progressing to xerophthalmia and Bitot spots",
+    "Vitamin A supplies 11-cis-retinal; deficiency first causes night blindness",
     "Vitamin C (ascorbic acid); earliest symptom is green-yellow color blindness",
     "Vitamin D (cholecalciferol); earliest symptom is bitemporal hemianopsia",
     "Vitamin K; earliest symptom is acute angle-closure glaucoma"
    ],
    "answer": 0,
-   "explain": "Because rods have much lower rhodopsin regeneration efficiency and mediate scotopic night vision, Vitamin A deficiency impairs rod function first (nyctalopia).",
+   "explain": "Because rods have much lower rhodopsin regeneration efficiency and mediate scotopic night vision, Vitamin A deficiency impairs rod function first (nyctalopia). Key detail: Vitamin A (retinol); earliest symptom is nyctalopia (night blindness) due to impaired rod dark adaptation, progressing to xerophthalmia and Bitot spots.",
    "verified": false,
    "open": {
     "q": "Name the vitamin required to form 11-cis-retinal and state the earliest clinical visual symptom of its deficiency.",
@@ -1594,13 +1594,13 @@
    "sub": "Vision: Retinal Layers, Rods vs Cones, and Phototransduction",
    "q": "Why does X-linked recessive 'red-green color blindness' (protanopia / deuteranopia) affect ~8% of males yet <0.5% of females?",
    "options": [
-    "The genes encoding the L-cone (red) and M-cone (green) opsins reside in tandem on the X chromosome (Xq28), making males hemizygous and prone to unequal homologous recombination/deletion, whereas the S-cone (blue) opsin gene is autosomal on chromosome 7",
+    "L/M cone opsin genes are X-linked; S-cone opsin is autosomal",
     "Females lack S-cones and L-cones entirely",
     "The Y chromosome carries a gene that destroys red cones",
     "Color blindness is caused by a mitochondrial mutation in the lens"
    ],
    "answer": 0,
-   "explain": "Tandem duplication of red and green opsin genes on Xq28 predisposes to unequal crossing over during meiosis, explaining both the high prevalence and X-linked male predominance of red-green color vision defects.",
+   "explain": "Tandem duplication of red and green opsin genes on Xq28 predisposes to unequal crossing over during meiosis, explaining both the high prevalence and X-linked male predominance of red-green color vision defects. Key detail: The genes encoding the L-cone (red) and M-cone (green) opsins reside in tandem on the X chromosome (Xq28), making males hemizygous and prone to unequal homologous recombination/deletion, whereas the S-cone (blue) opsin gene is autosomal on chromosome 7.",
    "verified": false,
    "open": {
     "q": "Explain the chromosomal location of the red/green cone opsin genes versus the blue cone opsin gene and why red-green color blindness is much more common in males.",
@@ -1617,13 +1617,13 @@
    "sub": "Vision: Optics, Refraction, Accommodation, and Refractive Errors",
    "q": "How do 'topical beta-blockers (timolol)', 'carbonic anhydrase inhibitors (acetazolamide)', 'prostaglandin F2-alpha analogs (latanoprost)', and 'muscarinic agonists (pilocarpine)' lower intraocular pressure in glaucoma?",
    "options": [
-    "Timolol and acetazolamide DECREASE aqueous humor secretion by the ciliary body epithelium; Latanoprost INCREASES uveoscleral outflow; Pilocarpine contracts the ciliary muscle to open the trabecular meshwork and INCREASES trabecular outflow",
+    "Timolol/acetazolamide reduce production; latanoprost increases uveoscleral and pilocarpine trabecular outflow",
     "All four drugs contract the radial dilator pupillae to widen the pupil",
     "Latanoprost increases aqueous humor secretion by 300%",
     "Pilocarpine paralyzes the ciliary muscle (cycloplegia)"
    ],
    "answer": 0,
-   "explain": "Glaucoma pharmacology either reduces inflow at the ciliary epithelium (beta-blockers, alpha-2 agonists, carbonic anhydrase inhibitors) or increases outflow via trabecular (pilocarpine) or uveoscleral (prostaglandin analogs) routes.",
+   "explain": "Glaucoma pharmacology either reduces inflow at the ciliary epithelium (beta-blockers, alpha-2 agonists, carbonic anhydrase inhibitors) or increases outflow via trabecular (pilocarpine) or uveoscleral (prostaglandin analogs) routes. Key detail: Timolol and acetazolamide DECREASE aqueous humor secretion by the ciliary body epithelium; Latanoprost INCREASES uveoscleral outflow; Pilocarpine contracts the ciliary muscle to open the trabecular meshwork and INCREASES trabecular outflow.",
    "verified": false,
    "open": {
     "q": "Contrast the mechanisms by which timolol/acetazolamide versus latanoprost and pilocarpine lower intraocular pressure.",
@@ -1640,13 +1640,13 @@
    "sub": "Vision: Visual Pathways, Field Defects, and Pupillary Light Reflex",
    "q": "What is 'Anton-Babinski syndrome' (cortical blindness with visual anosognosia)?",
    "options": [
-    "Bilateral destruction of the primary visual cortices (V1, e.g., top-of-the-basilar / bilateral PCA stroke) causing complete cortical blindness WITH preserved pupillary light reflexes, accompanied by denial of blindness and confabulation of visual descriptions",
+    "Bilateral V1 lesions cause cortical blindness with intact pupils and visual anosognosia",
     "Unilateral optic nerve transection with absent direct pupillary light reflex",
     "Bilateral cataract formation with normal occipital cortex",
     "Inability to recognize faces with intact reading"
    ],
    "answer": 0,
-   "explain": "Intact pupillary light reflexes (mediated by subcortical pretectal pathways) in a completely blind patient who insists they can see is classic for bilateral occipital V1 infarction (Anton syndrome).",
+   "explain": "Intact pupillary light reflexes (mediated by subcortical pretectal pathways) in a completely blind patient who insists they can see is classic for bilateral occipital V1 infarction (Anton syndrome). Key detail: Bilateral destruction of the primary visual cortices (V1, e.g., top-of-the-basilar / bilateral PCA stroke) causing complete cortical blindness WITH preserved pupillary light reflexes, accompanied by denial of blindness and confabulation of visual descriptions.",
    "verified": false,
    "open": {
     "q": "State the lesion site, status of the pupillary light reflex, and hallmark behavioral feature of Anton syndrome.",
@@ -1663,13 +1663,13 @@
    "sub": "Audition: Cochlear Mechanics, Organ of Corti, and Hair Cell Transduction",
    "q": "What is the role of the 'round window' (fenestra cochleae) at the basal end of the scala tympani?",
    "options": [
-    "Because cochlear perilymph is incompressible inside rigid bony walls, the flexible round window membrane bulges outward into the middle ear whenever the stapes footplate pushes inward at the oval window, allowing fluid pressure waves to displace the basilar membrane",
+    "Round window bulges to relieve pressure as the stapes moves at the oval window",
     "The round window transmits sound waves from the cochlea directly into the cerebellum",
     "The round window secretes endolymph into the scala media",
     "The round window holds the malleus handle in place"
    ],
    "answer": 0,
-   "explain": "Without a compliant pressure-relief membrane at the round window, inward movement of the stapes at the oval window could not displace incompressible perilymph along the cochlear duct.",
+   "explain": "Without a compliant pressure-relief membrane at the round window, inward movement of the stapes at the oval window could not displace incompressible perilymph along the cochlear duct. Key detail: Because cochlear perilymph is incompressible inside rigid bony walls, the flexible round window membrane bulges outward into the middle ear whenever the stapes footplate pushes inward at the oval window, allowing fluid pressure waves to displace the basilar membrane.",
    "verified": false,
    "open": {
     "q": "Explain why a compliant round window membrane is mechanically essential for hearing.",
@@ -1686,13 +1686,13 @@
    "sub": "Vestibular System: Semicircular Canals, Otolith Organs, and Nystagmus",
    "q": "What is 'motion sickness' (kinetosis), and what sensory mismatch triggers nausea, pallor, and diaphoresis?",
    "options": [
-    "Conflicting sensory signals between the vestibular labyrinth (detecting passive acceleration/roll on a boat or car) and the visual/proprioceptive systems (seeing a stationary cabin interior), activating vestibular-autonomic projections to the area postrema and medullary vomiting center",
+    "Vestibular–visual mismatch activates vestibular-autonomic pathways to the vomiting centre",
     "Excessive dopamine release in the substantia nigra",
     "Occlusion of the central retinal artery",
     "Hyperglycemia suppressing the vagus nerve"
    ],
    "answer": 0,
-   "explain": "Antimuscarinic drugs (scopolamine patch) and H1 antihistamines (dimenhydrinate, meclizine) block cholinergic/histaminergic transmission between vestibular nuclei and the vomiting center.",
+   "explain": "Antimuscarinic drugs (scopolamine patch) and H1 antihistamines (dimenhydrinate, meclizine) block cholinergic/histaminergic transmission between vestibular nuclei and the vomiting center. Key detail: Conflicting sensory signals between the vestibular labyrinth (detecting passive acceleration/roll on a boat or car) and the visual/proprioceptive systems (seeing a stationary cabin interior), activating vestibular-autonomic projections to the area postrema and medullary vomiting center.",
    "verified": false,
    "open": {
     "q": "Explain the sensory-conflict mechanism of motion sickness and name two receptor classes blocked by anti-motion-sickness drugs.",
@@ -1709,13 +1709,13 @@
    "sub": "Gustation (Taste) and Olfaction (Smell) Transduction and Pathways",
    "q": "How do 'taste receptor cells' and 'olfactory sensory neurons' compare in their cellular lifespan and regenerative capacity?",
    "options": [
-    "Both continuously regenerate throughout adult life from local basal stem cells (taste bud cells turn over every ~10-14 days; olfactory receptor neurons turn over every ~30-60 days)—making them rare examples of adult neurogenesis/epithelial sensory renewal",
+    "Taste cells renew in ~10–14 days; olfactory neurons in ~30–60 days from basal cells",
     "Neither taste cells nor olfactory neurons ever divide after embryonic week 12",
     "Taste cells live for 100 years while olfactory neurons divide every 5 minutes",
     "Only spinal motor neurons regenerate in adults"
    ],
    "answer": 0,
-   "explain": "Because taste cells and olfactory neurons are directly exposed to chemical toxins, heat, and pathogens in food and inspired air, continuous renewal from basal cells preserves chemosensory function (though chemotherapy or radiation transiently causes ageusia/anosmia by halting basal cell division).",
+   "explain": "Because taste cells and olfactory neurons are directly exposed to chemical toxins, heat, and pathogens in food and inspired air, continuous renewal from basal cells preserves chemosensory function (though chemotherapy or radiation transiently causes ageusia/anosmia by halting basal cell division). Key detail: Both continuously regenerate throughout adult life from local basal stem cells (taste bud cells turn over every ~10-14 days; olfactory receptor neurons turn over every ~30-60 days)—making them rare examples of adult neurogenesis/epithelial sensory renewal.",
    "verified": false,
    "open": {
     "q": "State the approximate turnover time of adult taste bud receptor cells and olfactory sensory neurons and explain why chemotherapy often causes temporary loss of taste and smell.",
@@ -1962,13 +1962,13 @@
    "sub": "Audition: Tonotopic Organization, Auditory Pathway, and Hearing Loss Tests",
    "q": "What is 'presbycusis' (age-related sensorineural hearing loss), and which frequencies are lost first?",
    "options": [
-    "Symmetric, progressive, bilateral HIGH-FREQUENCY sensorineural hearing loss (typically >2,000-4,000 Hz, impairing consonant discrimination in noisy environments) caused by cumulative degeneration of hair cells, spiral ganglion neurons, and stria vascularis in the basal turn of the cochlea",
+    "Presbycusis is progressive bilateral high-frequency sensorineural loss from basal cochlear degeneration",
     "Unilateral low-frequency conductive hearing loss caused by earwax",
     "Sudden complete deafness in the left ear at age 12",
     "Excessive sensitivity to ultrasound above 50,000 Hz"
    ],
    "answer": 0,
-   "explain": "Because high-frequency consonants (s, f, t, k, sh) carry speech intelligibility while low-frequency vowels carry volume, presbycusis patients often say 'I can hear people talking, I just can't make out the words.'",
+   "explain": "Because high-frequency consonants (s, f, t, k, sh) carry speech intelligibility while low-frequency vowels carry volume, presbycusis patients often say 'I can hear people talking, I just can't make out the words.' Key detail: Symmetric, progressive, bilateral HIGH-FREQUENCY sensorineural hearing loss (typically >2,000-4,000 Hz, impairing consonant discrimination in noisy environments) caused by cumulative degeneration of hair cells, spiral ganglion neurons, and stria vascularis in the basal turn of the cochlea.",
    "verified": false,
    "open": {
     "q": "Define presbycusis, identify which sound frequencies are affected earliest, and name the cochlear region that degenerates first.",
@@ -1985,13 +1985,13 @@
    "sub": "Vestibular System: Semicircular Canals, Otolith Organs, and Nystagmus",
    "q": "What is 'vestibular compensation' following an acute unilateral labyrinthine lesion (e.g., vestibular neuronitis or labyrinthectomy)?",
    "options": [
-    "Within days to weeks, central brainstem vestibular nuclei and the vestibulocerebellum rebalance resting tonic firing rates between the intact and deafferented sides, resolving spontaneous nystagmus and severe vertigo at rest even though the peripheral labyrinth remains damaged",
+    "Brainstem/cerebellar recalibration restores balance after unilateral vestibular loss",
     "The damaged semicircular canal grows back completely within 48 hours",
     "The optic nerve takes over sensing angular head rotation",
     "Vertigo persists at full intensity for 50 years without any improvement"
    ],
    "answer": 0,
-   "explain": "Because vestibular compensation relies on active cerebellar and brainstem recalibration, prolonged use of vestibular suppressants (meclizine, benzodiazepines) beyond the first 48-72 hours delays central recovery!",
+   "explain": "Because vestibular compensation relies on active cerebellar and brainstem recalibration, prolonged use of vestibular suppressants (meclizine, benzodiazepines) beyond the first 48-72 hours delays central recovery! Key detail: Within days to weeks, central brainstem vestibular nuclei and the vestibulocerebellum rebalance resting tonic firing rates between the intact and deafferented sides, resolving spontaneous nystagmus and severe vertigo at rest even though the peripheral labyrinth remains damaged.",
    "verified": false,
    "open": {
     "q": "Explain how central vestibular compensation resolves spontaneous vertigo after unilateral vestibular loss and why prolonged vestibular-suppressant medication should be avoided.",
@@ -2077,13 +2077,13 @@
    "sub": "Clinical Correlations",
    "q": "A 35-year-old man is diagnosed with severe open-angle glaucoma and is prescribed topical latanoprost eye drops once nightly. After 6 months, his intraocular pressure is well controlled at 14 mmHg, and he notices his blue-hazel iris has gradually darkened to brown and his eyelashes have grown longer and thicker. How did latanoprost lower his IOP?",
    "options": [
-    "As a prostaglandin F2-alpha analog, it relaxes ciliary muscle bundles and remodels extracellular matrix to INCREASE uveoscleral outflow of aqueous humor",
+    "Latanoprost, a PGF2α analogue, increases uveoscleral aqueous outflow",
     "It blocks carbonic anhydrase in the choroid plexus",
     "It constricts the pupil via muscarinic M3 agonism",
     "It blocks beta-1 receptors on the sinoatrial node"
    ],
    "answer": 0,
-   "explain": "Prostaglandin analogs (latanoprost, bimatoprost) are first-line topical agents for open-angle glaucoma because they potently increase uveoscleral outflow with once-daily dosing (causing harmless iris hyperpigmentation and lash hypertrichosis).",
+   "explain": "Prostaglandin analogs (latanoprost, bimatoprost) are first-line topical agents for open-angle glaucoma because they potently increase uveoscleral outflow with once-daily dosing (causing harmless iris hyperpigmentation and lash hypertrichosis). Key detail: As a prostaglandin F2-alpha analog, it relaxes ciliary muscle bundles and remodels extracellular matrix to INCREASE uveoscleral outflow of aqueous humor.",
    "verified": false,
    "open": {
     "q": "State the drug class and aqueous-humor drainage mechanism of latanoprost in open-angle glaucoma.",
@@ -2215,13 +2215,13 @@
    "sub": "Vision: Optics, Refraction, Accommodation, and Refractive Errors",
    "q": "Which ocular structures form the 'blood-aqueous barrier' and 'blood-retinal barrier' to keep the optical media crystal clear and immune-privileged?",
    "options": [
-    "Tight junctions between non-pigmented ciliary body epithelial cells and iris capillary endothelium (blood-aqueous barrier), plus tight junctions between retinal capillary endothelial cells and retinal pigment epithelial (RPE) cells (blood-retinal barrier)",
+    "Tight junctions in ciliary epithelium/iris vessels and retinal endothelium/RPE form the eye's blood barriers",
     "Fenestrated capillaries of the conjunctiva",
     "Sweat glands of the eyelid",
     "Tendons of the extraocular muscles"
    ],
    "answer": 0,
-   "explain": "Tight junctions in the ciliary epithelium, retinal capillary endothelium, and RPE prevent plasma proteins and leukocytes from clouding the aqueous humor, vitreous humor, and retina.",
+   "explain": "Tight junctions in the ciliary epithelium, retinal capillary endothelium, and RPE prevent plasma proteins and leukocytes from clouding the aqueous humor, vitreous humor, and retina. Key detail: Tight junctions between non-pigmented ciliary body epithelial cells and iris capillary endothelium (blood-aqueous barrier), plus tight junctions between retinal capillary endothelial cells and retinal pigment epithelial (RPE) cells (blood-retinal barrier).",
    "verified": false,
    "open": {
     "q": "Name the two cellular barriers that maintain the optical clarity and immune privilege of the eye.",
@@ -2261,13 +2261,13 @@
    "sub": "Audition: Cochlear Mechanics, Organ of Corti, and Hair Cell Transduction",
    "q": "How do 'auditory brainstem response (ABR / BAER)' evoked potentials clinically evaluate hearing and brainstem integrity in infants or comatose patients?",
    "options": [
-    "ABR records short-latency scalp potentials after clicks; successive waves reflect activity from CN VIII through the auditory brainstem to the inferior colliculus",
+    "ABR click-evoked waves track CN VIII through the auditory brainstem to the inferior colliculus",
     "ABR records retinal responses to flashes and localises lesions in the optic tract",
     "ABR measures cochlear hair-cell movement using tympanic membrane pressure",
     "ABR records cortical slow waves during sleep and cannot assess brainstem pathways"
    ],
    "answer": 0,
-   "explain": "ABR waves I-V map directly onto the brainstem auditory pathway (CN VIII -> Cochlear nucleus -> Superior olive -> Lateral lemniscus -> Inferior colliculus) to detect newborn sensorineural deafness or vestibular schwannoma conduction delay.",
+   "explain": "ABR waves I-V map directly onto the brainstem auditory pathway (CN VIII -> Cochlear nucleus -> Superior olive -> Lateral lemniscus -> Inferior colliculus) to detect newborn sensorineural deafness or vestibular schwannoma conduction delay. Key detail: ABR records short-latency scalp potentials after clicks; successive waves reflect activity from CN VIII through the auditory brainstem to the inferior colliculus.",
    "verified": false,
    "open": {
     "q": "Match Waves I, III, and V of the Auditory Brainstem Response (ABR) with their corresponding anatomical generators.",
@@ -2284,13 +2284,13 @@
    "sub": "Vestibular System: Semicircular Canals, Otolith Organs, and Nystagmus",
    "q": "How is the direction of 'nystagmus' named clinically (e.g., 'right-beating nystagmus'), and which phase is the pathological vestibular drift versus the brainstem/cortical corrective reset?",
    "options": [
-    "Nystagmus is named by the direction of its FAST corrective saccadic phase; the SLOW phase is the primary pathological vestibular drift (usually toward the hypofunctioning labyrinth), while the FAST phase is the rapid corrective snap back in the opposite direction",
+    "Nystagmus is named by its fast corrective phase; the slow phase is vestibular drift",
     "Nystagmus is named by the slow phase; the fast phase occurs only during deep sleep",
     "Both slow and fast phases move in the exact same direction continuously",
     "Nystagmus is caused by contraction of the stapedius muscle"
    ],
    "answer": 0,
-   "explain": "In acute left vestibular neuronitis, impaired left vestibular tone allows the intact right labyrinth to push the eyes slowly to the LEFT (slow phase), triggering a fast corrective beat to the RIGHT ('right-beating nystagmus' away from the lesioned ear).",
+   "explain": "In acute left vestibular neuronitis, impaired left vestibular tone allows the intact right labyrinth to push the eyes slowly to the LEFT (slow phase), triggering a fast corrective beat to the RIGHT ('right-beating nystagmus' away from the lesioned ear). Key detail: Nystagmus is named by the direction of its FAST corrective saccadic phase; the SLOW phase is the primary pathological vestibular drift (usually toward the hypofunctioning labyrinth), while the FAST phase is the rapid corrective snap back in the opposite direction.",
    "verified": false,
    "open": {
     "q": "State which phase (slow vs fast) gives nystagmus its clinical name and explain which phase represents the primary vestibular drift versus the corrective reset.",
@@ -2329,13 +2329,13 @@
    "sub": "Clinical Correlations",
    "q": "A 69-year-old man who underwent bilateral cataract surgery years ago develops sudden painless vision loss in his right eye after a minor fall. On examination, he has a superotemporal visual field defect and a shimmering grey membrane billowing inside the vitreous cavity on fundoscopy. Why does pseudophakia (prior cataract surgery) increase the risk of retinal detachment?",
    "options": [
-    "Cataract extraction accelerates posterior vitreous detachment and vitreous liquefaction, increasing tractional tears in the peripheral neurosensory retina that allow liquefied vitreous to dissect beneath the retina",
+    "Cataract extraction can promote vitreous liquefaction/PVD and tractional retinal tears",
     "Cataract surgery destroys the optic chiasm",
     "Artificial intraocular lenses secrete hydrochloric acid",
     "Cataract surgery causes acute angle-closure glaucoma in 90% of patients"
    ],
    "answer": 0,
-   "explain": "High myopia, prior intraocular surgery (cataract extraction), and ocular trauma are the three classic risk factors for rhegmatogenous retinal detachment.",
+   "explain": "High myopia, prior intraocular surgery (cataract extraction), and ocular trauma are the three classic risk factors for rhegmatogenous retinal detachment. Key detail: Cataract extraction accelerates posterior vitreous detachment and vitreous liquefaction, increasing tractional tears in the peripheral neurosensory retina that allow liquefied vitreous to dissect beneath the retina.",
    "verified": false,
    "open": {
     "q": "List three major clinical risk factors for rhegmatogenous retinal detachment.",
@@ -2352,13 +2352,13 @@
    "sub": "Clinical Correlations",
    "q": "A 55-year-old man with chronic open-angle glaucoma is accidentally given tropicamide (a muscarinic antagonist mydriatic) eye drops before a routine dilated fundus exam, and within 45 minutes develops excruciating eye pain, corneal clouding, nausea, and IOP of 52 mmHg. Why did tropicamide precipitate this crisis?",
    "options": [
-    "Muscarinic M3 blockade paralyzed the iris sphincter pupillae, causing mydriasis that crowded the peripheral iris into an anatomically narrow iridocorneal angle and blocked trabecular aqueous drainage",
+    "Mydriasis crowds the peripheral iris into the angle, blocking trabecular aqueous outflow",
     "Tropicamide constricted the pupil to 0.5 mm",
     "Tropicamide caused central retinal artery embolism",
     "Tropicamide paralyzed the lateral rectus muscle"
    ],
    "answer": 0,
-   "explain": "Anticholinergic mydriatics (tropicamide, atropine) and sympathomimetic alpha-1 agonists (phenylephrine) can precipitate acute angle-closure glaucoma in patients with anatomically shallow anterior chambers.",
+   "explain": "Anticholinergic mydriatics (tropicamide, atropine) and sympathomimetic alpha-1 agonists (phenylephrine) can precipitate acute angle-closure glaucoma in patients with anatomically shallow anterior chambers. Key detail: Muscarinic M3 blockade paralyzed the iris sphincter pupillae, causing mydriasis that crowded the peripheral iris into an anatomically narrow iridocorneal angle and blocked trabecular aqueous drainage.",
    "verified": false,
    "open": {
     "q": "Explain why anticholinergic mydriatic drops (e.g., tropicamide) can trigger acute angle-closure glaucoma in predisposed eyes.",
