@@ -303,5 +303,46 @@
     var none = document.getElementById("pk-none"); if (none) none.hidden = !q || any;
   }
 
-  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, isRunning: function () { return P.view === "run" && P.run && !P.run.done; }, needsDataRefresh: function () { return P.view === "setup" && !(P.run && !P.run.done); }, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
+    function refreshProgress() {
+    if ((P.view !== "pick" && P.view !== "setup") || (P.run && !P.run.done)) return;
+    var root = document.getElementById("app");
+    var y = window.scrollY;
+    var find = document.getElementById("pk-find");
+    var query = find ? find.value : "";
+    var focused = find && document.activeElement === find;
+    var start = focused && typeof find.selectionStart === "number" ? find.selectionStart : null;
+    var end = focused && typeof find.selectionEnd === "number" ? find.selectionEnd : null;
+    var open = [];
+    if (P.view === "pick" && root) {
+      Array.prototype.forEach.call(root.querySelectorAll("details.subj"), function (sub) {
+        var areas = [];
+        Array.prototype.forEach.call(sub.querySelectorAll("details.acc:not(.subj)"), function (area) { areas.push(!!area.open); });
+        open.push({ subject: !!sub.open, areas: areas });
+      });
+    }
+    render();
+    if (P.view === "pick" && root) {
+      var subjects = root.querySelectorAll("details.subj");
+      Array.prototype.forEach.call(subjects, function (sub, i) {
+        var state = open[i];
+        if (!state) return;
+        sub.open = state.subject;
+        Array.prototype.forEach.call(sub.querySelectorAll("details.acc:not(.subj)"), function (area, j) {
+          if (typeof state.areas[j] === "boolean") area.open = state.areas[j];
+        });
+      });
+      var input = document.getElementById("pk-find");
+      if (input && query) {
+        input.value = query;
+        onInput({ target: input });
+      }
+      if (input && focused) {
+        input.focus();
+        if (start !== null && end !== null && input.setSelectionRange) input.setSelectionRange(start, end);
+      }
+    }
+    window.scrollTo(0, y);
+  }
+
+  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, isRunning: function () { return P.view === "run" && P.run && !P.run.done; }, needsDataRefresh: function () { return (P.view === "pick" || P.view === "setup") && !(P.run && !P.run.done); }, refreshProgress: refreshProgress, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
 })();
