@@ -49,8 +49,8 @@
     var source = [context.correctAnswer, context.topic, context.curriculumTopic,
       context.question, context.explanation, context.area].filter(Boolean).join(" ");
     var stop = /^(the|and|for|with|from|that|this|into|than|when|where|which|what|does|show|shown|following|correct|answer|question|because|there|their|they|them|over|under|after|before|during|between|through|using|used|most|likely|patient|patients|clinical|correlation|correlations|lecture|types|type|describe|state|explain|select|choose|true|false|except|only|also|some|such|more|less|each|both|been|being|were|was|are|is|has|have|had|can|may|will|would|should|could|not|all|any|one|two|three|four|five|its|his|her|which|who|whom|a|an|of|to|in|on|at|by|as|or|if|medical|medicine|system|function|process|normal|usually|main|primary|important)$/i;
-    var words = source.toLowerCase().replace(/[^a-z0-9+.-]+/g, " ").split(/\\s+/).filter(function (w) {
-      return w.length > 2 && !stop.test(w) && !/^\\d+$/.test(w);
+    var words = source.toLowerCase().replace(/[^a-z0-9+.-]+/g, " ").split(/\s+/).filter(function (w) {
+      return w.length > 2 && !stop.test(w) && !/^\d+$/.test(w);
     });
     var unique = [];
     words.forEach(function (w) { if (unique.indexOf(w) < 0 && unique.length < 8) unique.push(w); });
@@ -74,8 +74,8 @@
     var description = String(item.description || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
     var text = title + " " + description;
     /* Reject obvious publication material, but don't require the whole search phrase to match. */
-    if (/\\b(book|cover|textbook|atlas|syllabus|lecture|catalog|catalogue|journal|magazine|publisher|publication|title page|front matter|table of contents|pdf scan)\\b/.test(text)) return -100;
-    if (/\\b(logo|icon|flag|coat of arms)\\b/.test(title)) return -100;
+    if (/\b(book|cover|textbook|atlas|syllabus|lecture|catalog|catalogue|journal|magazine|publisher|publication|title page|front matter|table of contents|pdf scan)\b/.test(text)) return -100;
+    if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) return -100;
     var terms = searchTerms(context), matched = 0, score = 0;
     terms.forEach(function (w) {
       if (w.length > 2 && text.indexOf(w) > -1) { score += 5; matched++; }
@@ -113,7 +113,7 @@
         item._score = imageScore(item, context, profile);
         item._order = index;
         return item;
-      }).filter(Boolean).filter(function (item) { return item._score >= 8; });
+      }).filter(Boolean).filter(function (item) { return item._score >= 5; });
       out.sort(function (a, b) { return b._score - a._score || a._order - b._order; });
       return out.slice(0, 4).map(function (item) {
         delete item._score; delete item._order; return item;
