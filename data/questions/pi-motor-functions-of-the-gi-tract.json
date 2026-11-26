@@ -30,6 +30,190 @@
       ],
       "answer": 1,
       "explain": "Segmentation consists of localised rhythmic contractions of circular smooth muscle. It mixes chyme with digestive secretions and repeatedly exposes it to the absorptive surface; peristalsis is the principal propulsive pattern."
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-003",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enteric nervous system",
+      "q": "A drug selectively suppresses activity in the myenteric plexus while leaving the submucosal plexus relatively intact. Which change is most likely?",
+      "options": [
+        "Reduced intestinal motility and propulsion",
+        "Complete loss of mucosal blood flow",
+        "Increased gastric acid secretion",
+        "Failure of pancreatic enzyme synthesis"
+      ],
+      "answer": 0,
+      "explain": "The myenteric (Auerbach) plexus is principally concerned with gastrointestinal motility, including tone, peristalsis and propagation of contractions. The submucosal (Meissner) plexus has a stronger role in local secretion and blood-flow regulation.",
+      "verified": false,
+      "open": {
+        "q": "State the principal function of the myenteric plexus and contrast it with that of the submucosal plexus.",
+        "accept": [
+          "Myenteric plexus regulates motility; submucosal plexus regulates secretion and local blood flow",
+          "Auerbach controls motility; Meissner controls secretion"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enteric nervous system",
+      "q": "A local intestinal reflex increases epithelial secretion after stimulation of the mucosa. Which enteric plexus is most directly associated with this response?",
+      "options": [
+        "Myenteric plexus",
+        "Submucosal plexus",
+        "Celiac ganglion",
+        "Pelvic splanchnic ganglion"
+      ],
+      "answer": 1,
+      "explain": "The submucosal (Meissner) plexus lies in the submucosa and regulates mucosal secretion, absorption-related activity and local blood flow. The myenteric plexus is more closely associated with gastrointestinal motility.",
+      "verified": false,
+      "open": {
+        "q": "Which enteric plexus is most directly involved in regulating intestinal mucosal secretion?",
+        "accept": [
+          "Submucosal plexus",
+          "Meissner plexus"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gastrointestinal hormones",
+      "q": "Acidic chyme enters the duodenum and stimulates a hormone that increases pancreatic bicarbonate-rich fluid secretion. Which cell type releases this hormone?",
+      "options": [
+        "G cells of the gastric antrum",
+        "S cells of the duodenal mucosa",
+        "I cells of the jejunum",
+        "K cells of the proximal small intestine"
+      ],
+      "answer": 1,
+      "explain": "Acid in the duodenal lumen stimulates S cells to release secretin. Secretin acts principally on pancreatic ductal cells to increase bicarbonate-rich fluid secretion, helping neutralise gastric acid.",
+      "verified": false,
+      "open": {
+        "q": "Name the hormone released by duodenal S cells in response to acid and state its principal pancreatic effect.",
+        "accept": [
+          "Secretin; increases bicarbonate-rich pancreatic fluid secretion",
+          "Secretin stimulates pancreatic ductal HCO3 secretion"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gastrointestinal hormones",
+      "q": "Fatty acids and amino acid products enter the duodenum after a meal. Which response is most characteristic of cholecystokinin?",
+      "options": [
+        "Gallbladder contraction and increased pancreatic enzyme secretion",
+        "Increased gastric emptying and reduced pancreatic secretion",
+        "Increased gastric acid secretion with relaxation of the gallbladder",
+        "Suppression of pancreatic enzyme secretion"
+      ],
+      "answer": 0,
+      "explain": "Cholecystokinin (CCK), released mainly by I cells in the proximal small intestine in response to fats and protein digestion products, contracts the gallbladder and stimulates pancreatic acinar enzyme secretion. It also slows gastric emptying and potentiates secretin's pancreatic action.",
+      "verified": false,
+      "open": {
+        "q": "Give two major digestive actions of cholecystokinin (CCK).",
+        "accept": [
+          "Contracts gallbladder and stimulates pancreatic enzyme secretion",
+          "Stimulates pancreatic enzyme secretion; contracts gallbladder"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gastrointestinal hormones",
+      "q": "A nutrient-containing meal stimulates K cells in the proximal small intestine. Which hormone is released and what is one of its important actions?",
+      "options": [
+        "Gastrin; stimulates gastric acid secretion",
+        "GIP; enhances glucose-dependent insulin secretion",
+        "Secretin; stimulates gallbladder contraction",
+        "CCK; inhibits pancreatic enzyme secretion"
+      ],
+      "answer": 1,
+      "explain": "Glucose-dependent insulinotropic peptide (GIP), also called glucose-dependent insulinotropic polypeptide, is released from K cells in the proximal small intestine in response to oral nutrients, especially glucose and fat. It enhances insulin secretion in a glucose-dependent manner and can inhibit gastric activity.",
+      "verified": false,
+      "open": {
+        "q": "Which hormone is released from intestinal K cells after oral nutrient intake, and what is its incretin action?",
+        "accept": [
+          "GIP; increases glucose-dependent insulin secretion",
+          "Glucose-dependent insulinotropic peptide enhances insulin release"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-008",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gastric secretion regulation",
+      "q": "A patient has marked gastric acid secretion after a protein-rich meal. Which mechanism normally helps limit further gastrin release as the antral contents become highly acidic?",
+      "options": [
+        "Low antral pH suppresses gastrin release, partly through somatostatin",
+        "Low antral pH stimulates G cells to release more gastrin",
+        "Secretin directly stimulates G cells",
+        "Acid activates the myenteric plexus to release gastrin"
+      ],
+      "answer": 0,
+      "explain": "Gastrin release is stimulated by peptides, gastric distension and vagal input, but strongly acidic antral contents inhibit G-cell activity. Somatostatin from antral D cells contributes to this negative-feedback control.",
+      "verified": false,
+      "open": {
+        "q": "How does a very low antral pH regulate gastrin secretion?",
+        "accept": [
+          "It inhibits gastrin release, with somatostatin contributing to the inhibition",
+          "Low pH suppresses G cells via somatostatin"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enteric neurotransmitters",
+      "q": "During an intestinal inhibitory reflex, enteric neurons release a mediator that relaxes gastrointestinal smooth muscle and contributes to sphincter relaxation. Which mediator is most likely?",
+      "options": [
+        "Gastrin",
+        "Vasoactive intestinal peptide (VIP)",
+        "Secretin",
+        "GIP"
+      ],
+      "answer": 1,
+      "explain": "VIP is an inhibitory enteric neurotransmitter that promotes smooth-muscle relaxation and can stimulate intestinal secretion. It participates in relaxation responses, including receptive relaxation and sphincter relaxation.",
+      "verified": false,
+      "open": {
+        "q": "Name an inhibitory enteric neurotransmitter that relaxes gastrointestinal smooth muscle.",
+        "accept": [
+          "Vasoactive intestinal peptide",
+          "VIP"
+        ]
+      }
+    },
+    {
+      "id": "pi-motor-functions-of-the-gi-tract-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gastrointestinal hormones",
+      "q": "A patient receives an oral glucose load. Compared with an equivalent intravenous glucose load, the oral load produces a greater insulin response. Which gastrointestinal signal helps explain this difference?",
+      "options": [
+        "Gastrin released from antral G cells",
+        "GIP released from intestinal K cells",
+        "Secretin released from duodenal S cells",
+        "Motilin released during fasting"
+      ],
+      "answer": 1,
+      "explain": "The incretin effect is partly mediated by GIP from intestinal K cells (and GLP-1 from L cells). These hormones enhance glucose-dependent insulin secretion after oral nutrient exposure, so oral glucose evokes a greater insulin response than intravenous glucose at a matched glycaemia.",
+      "verified": false,
+      "open": {
+        "q": "Which intestinal incretin hormone is released from K cells and contributes to the greater insulin response after oral glucose?",
+        "accept": [
+          "GIP",
+          "Glucose-dependent insulinotropic peptide"
+        ]
+      }
     }
   ]
 }
