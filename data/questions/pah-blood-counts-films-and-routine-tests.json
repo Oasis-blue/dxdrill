@@ -1,585 +1,585 @@
 {
- "topic": "pah-blood-counts-films-and-routine-tests",
- "questions": [
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Anticoagulants and Sample Handling",
-   "q": "Which anticoagulant is the standard choice for automated full blood count (FBC) and peripheral blood film preparation because it preserves cellular morphology and prevents platelet clumping?",
-   "options": [
-    "Dipotassium or tripotassium EDTA",
-    "Trisodium citrate",
-    "Lithium heparin",
-    "Sodium fluoride"
-   ],
-   "answer": 0,
-   "explain": "EDTA (ethylenediaminetetraacetic acid) chelates calcium to prevent clotting while preserving red cell, leukocyte, and platelet morphology; heparin causes a blue background staining artifact and platelet aggregation.",
-   "verified": false,
-   "open": {
-    "q": "Name the standard anticoagulant used in blood collection tubes for routine full blood counts and peripheral blood films.",
-    "accept": [
-     "EDTA",
-     "K2EDTA",
-     "Ethylenediaminetetraacetic acid"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-002",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Anticoagulants and Sample Handling",
-   "q": "Why should peripheral blood films be prepared within 2 to 4 hours of collecting blood into an EDTA tube?",
-   "options": [
-    "Prolonged EDTA exposure causes red cell swelling, echinocyte crenation, neutrophil nuclear lobulation artifacts, and vacuolation",
-    "EDTA converts all haemoglobin into methaemoglobin within 4 hours",
-    "EDTA stimulates rapid mitotic division of mature lymphocytes in vitro",
-    "Prolonged storage in EDTA dissolves all eosinophil granules"
-   ],
-   "answer": 0,
-   "explain": "Storage of EDTA-anticoagulated blood at room temperature beyond 4 hours induces osmotic red cell swelling (falsely raising MCV and lowering MCHC), crenation, and degenerative nuclear swelling or cytoplasmic vacuolation in neutrophils.",
-   "verified": false,
-   "open": {
-    "q": "What morphological and automated index artifacts occur when EDTA blood samples are left at room temperature for more than 4 to 6 hours before testing?",
-    "accept": [
-     "Red cell swelling raising MCV and degenerative leukocyte vacuolation",
-     "Spurious MCV elevation and neutrophil degeneration"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Red Cell Indices and Automated FBC",
-   "q": "How is the Mean Corpuscular Volume (MCV) calculated from the haematocrit (PCV) and red blood cell (RBC) count?",
-   "options": [
-    "MCV (fL) = (Haematocrit [L/L] / RBC count [x 10^12/L]) x 1000",
-    "MCV (fL) = (Haemoglobin [g/dL] / RBC count [x 10^12/L]) x 10",
-    "MCV (fL) = (Haemoglobin [g/dL] / Haematocrit [%]) x 100",
-    "MCV (fL) = (RBC count [x 10^12/L] / Haemoglobin [g/dL]) x 100"
-   ],
-   "answer": 0,
-   "explain": "MCV expresses the average volume of a single erythrocyte in femtolitres (fL), calculated by dividing packed cell volume (expressed as a decimal or percentage x 10) by the red cell count in millions per microlitre (x 10^12/L).",
-   "verified": false,
-   "open": {
-    "q": "Write the formula used to calculate Mean Corpuscular Volume (MCV) from haematocrit (PCV) and red blood cell count.",
-    "accept": [
-     "(PCV / RBC count) x 10",
-     "(Haematocrit [L/L] / RBC [x10^12/L]) x 1000"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Red Cell Indices and Automated FBC",
-   "q": "Which red cell index quantifies the average concentration of haemoglobin within a given volume of packed red blood cells (Hb / PCV) and rises characteristically in hereditary spherocytosis?",
-   "options": [
-    "Mean Corpuscular Haemoglobin Concentration (MCHC)",
-    "Mean Corpuscular Volume (MCV)",
-    "Red Cell Distribution Width (RDW)",
-    "Mean Platelet Volume (MPV)"
-   ],
-   "answer": 0,
-   "explain": "MCHC (normal ~32-36 g/dL) reflects cellular haemoglobin density; loss of membrane surface area relative to cell volume in hereditary spherocytosis dehydrates red cells and elevates MCHC above 36 g/dL.",
-   "verified": false,
-   "open": {
-    "q": "Name the red cell index calculated as haemoglobin divided by haematocrit that is characteristically elevated over 36 g/dL in hereditary spherocytosis.",
-    "accept": [
-     "MCHC",
-     "Mean corpuscular haemoglobin concentration"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-005",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Red Cell Indices and Automated FBC",
-   "q": "How does the Red Cell Distribution Width (RDW) help distinguish uncomplicated beta-thalassaemia trait from iron deficiency anaemia when both present with microcytosis (low MCV)?",
-   "options": [
-    "RDW is typically normal in beta-thalassaemia trait (uniform microcytosis) and elevated in iron deficiency anaemia (marked anisocytosis)",
-    "RDW is markedly elevated in beta-thalassaemia trait and near zero in iron deficiency anaemia",
-    "RDW measures platelet size variation and is unaffected by red cell volume",
-    "RDW is elevated only when macrocytes exceed 120 fL"
-   ],
-   "answer": 0,
-   "explain": "RDW is the coefficient of variation of red cell volume distribution; thalassaemia trait produces a homogeneous population of small red cells (normal RDW), whereas progressive iron depletion generates microcytes alongside older normocytes (high RDW).",
-   "verified": false,
-   "open": {
-    "q": "How does Red Cell Distribution Width (RDW) differ between iron deficiency anaemia and uncomplicated beta-thalassaemia minor?",
-    "accept": [
-     "Elevated in iron deficiency anaemia and normal in beta-thalassaemia trait",
-     "High RDW in iron deficiency versus normal RDW in thalassaemia trait"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-006",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Red Cell Indices and Automated FBC",
-   "q": "Which physical principle is employed by most automated haematology analyzers (the Coulter principle) to count and size erythrocytes, leukocytes, and platelets simultaneously?",
-   "options": [
-    "Electrical impedance (measuring changes in electrical resistance as cells pass through a narrow aperture)",
-    "Atomic absorption spectroscopy",
-    "Radioimmunoassay competitive binding",
-    "Paper chromatography capillary migration"
-   ],
-   "answer": 0,
-   "explain": "In the Coulter electrical impedance method, poorly conductive cells suspended in an electrolyte diluent pass one by one through a micro-aperture between two electrodes, generating voltage pulses whose number equals cell count and whose amplitude is proportional to cell volume.",
-   "verified": false,
-   "open": {
-    "q": "Name the physical counting and sizing principle (Coulter principle) used by standard automated haematology analyzers.",
-    "accept": [
-     "Electrical impedance",
-     "Aperture impedance",
-     "Impedance counting"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-007",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Red Cell Indices and Automated FBC",
-   "q": "A 50-year-old man with cold agglutinin disease has an automated FBC performed at room temperature showing a haemoglobin of 9.2 g/dL, a spuriously low RBC count of 1.8 x 10^12/L, a markedly elevated MCV of 132 fL, and an impossible MCHC of 46 g/dL. What simple laboratory step corrects these spurious indices?",
-   "options": [
-    "Warming the blood sample to 37 degrees Celsius before re-running it on the analyzer",
-    "Diluting the blood sample 1:10 with ice-cold distilled water",
-    "Centrifuging the sample and measuring the buffy coat only",
-    "Adding excess sodium fluoride to the EDTA tube"
-   ],
-   "answer": 0,
-   "explain": "IgM cold agglutinins cause red cells to clump at room temperature; automated impedance counters read doublets and triplets as single giant cells, falsely lowering RBC count and raising MCV and MCHC. Warming to 37 degrees Celsius dissociates the agglutinins and restores true indices.",
-   "verified": false,
-   "open": {
-    "q": "How do you resolve spurious macrocytosis and impossibly high MCHC caused by cold agglutinins on an automated FBC analyzer?",
-    "accept": [
-     "Warm the blood specimen to 37 degrees Celsius before analysis",
-     "Incubate sample at 37 C"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Reticulocyte Count",
-   "q": "Which supravital stain is used to precipitate residual ribosomal RNA in reticulocytes as a dark-blue reticular network so they can be counted by light microscopy?",
-   "options": [
-    "New methylene blue or brilliant cresyl blue",
-    "Prussian blue",
-    "Ziehl-Neelsen carbol fuchsin",
-    "Congo red"
-   ],
-   "answer": 0,
-   "explain": "Reticulocytes are immature non-nucleated red cells newly released from bone marrow that still contain ribosomal RNA; supravital staining of unfixed living cells with new methylene blue or brilliant cresyl blue precipitates this RNA into a visible blue meshwork.",
-   "verified": false,
-   "open": {
-    "q": "Name a supravital stain used to demonstrate residual ribosomal RNA in reticulocytes.",
-    "accept": [
-     "New methylene blue",
-     "Brilliant cresyl blue"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-009",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Reticulocyte Count",
-   "q": "Why must a percentage reticulocyte count be converted into an absolute reticulocyte count or corrected for haematocrit (Corrected Reticulocyte Count) when evaluating an anaemic patient?",
-   "options": [
-    "A reduced total red cell mass falsely inflates the relative percentage of reticulocytes even when bone marrow production is inadequate",
-    "Reticulocytes lose all haemoglobin when haematocrit drops below 30%",
-    "Automated analyzers mistake lymphocytes for reticulocytes in severe anaemia",
-    "Erythropoietin stops binding marrow precursors whenever haematocrit is low"
-   ],
-   "answer": 0,
-   "explain": "Because reticulocyte percentage is expressed relative to total RBCs, a low denominator in severe anaemia makes a normal number of circulating reticulocytes appear falsely elevated; multiplying by (patient PCV / normal PCV) or reporting the absolute reticulocyte count accurately reflects erythropoietic output.",
-   "verified": false,
-   "open": {
-    "q": "Why is the absolute reticulocyte count or corrected reticulocyte count clinically superior to the uncorrected reticulocyte percentage in anaemia?",
-    "accept": [
-     "Low total red cell count in anaemia falsely elevates the relative reticulocyte percentage",
-     "Corrects for the reduced red cell denominator in anaemia"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-010",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peripheral Blood Film Preparation and Staining",
-   "q": "Which Romanowsky stain combination—containing oxidized methylene blue (azure B) and eosin—is the standard routine stain for peripheral blood films and bone marrow aspirates?",
-   "options": [
-    "Leishman, Wright, or Giemsa stain",
-    "Periodic acid-Schiff (PAS) stain",
-    "Masson trichrome stain",
-    "Auramine-rhodamine stain"
-   ],
-   "answer": 0,
-   "explain": "Romanowsky stains (Leishman, Wright, Giemsa, May-Grunwald-Giemsa) use acidic eosin to stain basic haemoglobin and eosinophil granules pink-orange, and basic azure B to stain acidic nuclear chromatin and RNA blue-purple.",
-   "verified": false,
-   "open": {
-    "q": "Name a standard Romanowsky stain routinely used to stain peripheral blood films.",
-    "accept": [
-     "Leishman stain",
-     "Wright stain",
-     "Giemsa stain"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Peripheral Blood Film Preparation and Staining",
-   "q": "If the phosphate buffer used during Romanowsky staining of a blood film is too acidic (pH < 6.4), how will the stained blood smear appear under the microscope?",
-   "options": [
-    "Red cells appear overly bright pink-red and leukocyte nuclei stain pale blue-grey",
-    "Red cells stain dark blue-green and neutrophil granules appear jet black",
-    "All red cells undergo complete osmotic lysis leaving only bare nuclei",
-    "Eosinophil granules dissolve completely into colourless vacuoles"
-   ],
-   "answer": 0,
-   "explain": "Optimal Romanowsky staining requires a buffered pH of 6.8; excessive acidity (low pH) enhances binding of acidic eosin (making erythrocytes overly pink/red) and inhibits uptake of basic azure B (leaving leukocyte nuclei pale).",
-   "verified": false,
-   "open": {
-    "q": "How does an excessively acidic buffer pH (<6.4) alter the colour appearance of erythrocytes and leukocyte nuclei on a Romanowsky-stained blood film?",
-    "accept": [
-     "Erythrocytes stain overly bright pink-red and leukocyte nuclei stain pale",
-     "Excessively pink red cells and pale nuclei"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peripheral Blood Film: Red Cell Morphology",
-   "q": "Which term describes significant variation in the size of red blood cells on a peripheral blood film?",
-   "options": [
-    "Anisocytosis",
-    "Poikilocytosis",
-    "Polychromasia",
-    "Rouleaux formation"
-   ],
-   "answer": 0,
-   "explain": "Anisocytosis refers to abnormal variation in red cell diameter/volume (quantified by elevated RDW), whereas poikilocytosis denotes abnormal variation in red cell shape.",
-   "verified": false,
-   "open": {
-    "q": "Name the morphological term describing abnormal variation in the size of erythrocytes on a peripheral blood smear.",
-    "accept": [
-     "Anisocytosis"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peripheral Blood Film: Red Cell Morphology",
-   "q": "Fragmented red blood cells (helmet cells and triangular fragments) seen on a peripheral blood film as a hallmark of microangiopathic haemolytic anaemia (such as DIC, TTP, or HUS) are called what?",
-   "options": [
-    "Schistocytes",
-    "Acanthocytes",
-    "Dacrocytes",
-    "Codocytes"
-   ],
-   "answer": 0,
-   "explain": "Schistocytes are mechanically sheared erythrocyte fragments formed when red cells are sliced by fibrin strands in microthrombi or damaged prosthetic heart valves.",
-   "verified": false,
-   "open": {
-    "q": "Name the mechanically fragmented erythrocytes (helmet or triangular cells) characteristic of microangiopathic haemolytic anaemia.",
-    "accept": [
-     "Schistocytes",
-     "Fragmented red cells",
-     "Helmet cells"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Peripheral Blood Film: Red Cell Morphology",
-   "q": "Target cells (codocytes), which have an increased surface membrane-to-volume ratio producing a central bull's-eye of haemoglobin, are classically seen on blood films in which group of conditions?",
-   "options": [
-    "Thalassaemias, haemoglobin C or S disease, obstructive liver disease, and post-splenectomy",
-    "Hereditary spherocytosis and warm autoimmune haemolytic anaemia",
-    "Acute iron poisoning and acute respiratory alkalosis",
-    "Aplastic anaemia and pure red cell aplasia"
-   ],
-   "answer": 0,
-   "explain": "Target cells result either from excess cell membrane lipid (obstructive jaundice, LCAT deficiency, post-splenectomy) or reduced cytoplasmic haemoglobin content (thalassaemias, HbC, HbS, severe iron deficiency).",
-   "verified": false,
-   "open": {
-    "q": "Name two major clinical conditions associated with target cells (codocytes) on a peripheral blood film.",
-    "accept": [
-     "Thalassaemia and obstructive liver disease",
-     "Haemoglobin C disease and post-splenectomy",
-     "Sickle cell disease and liver disease"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-015",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Peripheral Blood Film: Red Cell Morphology",
-   "q": "Teardrop-shaped erythrocytes (dacrocytes) alongside nucleated red blood cells and immature myeloid precursors (leukoerythroblastic blood picture) on a peripheral film strongly suggest which underlying bone marrow pathology?",
-   "options": [
-    "Primary myelofibrosis or metastatic marrow infiltration (myelophthisis)",
-    "Acute blood loss from peptic ulceration",
-    "Uncomplicated vitamin B12 deficiency",
-    "Hereditary elliptocytosis"
-   ],
-   "answer": 0,
-   "explain": "Dacrocytes form when erythrocytes squeeze out of fibrotic or tumour-infiltrated bone marrow sinusoids (myelophthisis) and extramedullary splenic haematopoietic sites.",
-   "verified": false,
-   "open": {
-    "q": "What underlying bone marrow condition is strongly suggested by teardrop red cells (dacrocytes) accompanied by a leukoerythroblastic blood picture?",
-    "accept": [
-     "Myelofibrosis or bone marrow infiltration",
-     "Myelophthisis",
-     "Primary myelofibrosis"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-016",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Peripheral Blood Film: Red Cell Morphology",
-   "q": "Small, round, densely basophilic nuclear DNA remnants inside circulating erythrocytes—normally pitted out by splenic macrophages—are known as what?",
-   "options": [
-    "Howell-Jolly bodies",
-    "Heinz bodies",
-    "Auer rods",
-    "Barr bodies"
-   ],
-   "answer": 0,
-   "explain": "Howell-Jolly bodies are micronuclei of residual DNA left behind after erythroblast nuclear extrusion; their presence on a peripheral smear indicates anatomical splenectomy or functional hyposplenism (such as autosplenectomy in sickle cell anaemia).",
-   "verified": false,
-   "open": {
-    "q": "Name the basophilic nuclear DNA inclusions inside red blood cells whose presence indicates splenectomy or functional hyposplenism.",
-    "accept": [
-     "Howell-Jolly bodies",
-     "Howell Jolly bodies"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Peripheral Blood Film: Red Cell Morphology",
-   "q": "Why are precipitated denatured haemoglobin inclusions (Heinz bodies) invisible on routine Romanowsky-stained blood smears and require supravital staining with crystal violet or brilliant cresyl blue?",
-   "options": [
-    "Heinz bodies share the same eosinophilic staining affinity as surrounding normal cytoplasmic haemoglobin",
-    "Methanol fixation dissolves all denatured globin chains instantaneously",
-    "Heinz bodies are located exclusively inside leukocyte nuclei",
-    "Romanowsky dyes oxidize Heinz bodies into colourless bilirubin"
-   ],
-   "answer": 0,
-   "explain": "Because Heinz bodies consist of denatured precipitated haemoglobin (seen in G6PD deficiency and unstable haemoglobinopathies), they stain identically to intact haemoglobin on Wright/Giemsa films and require supravital dyes to visualize membrane-bound inclusions.",
-   "verified": false,
-   "open": {
-    "q": "Why are Heinz bodies not visible on routine Romanowsky-stained peripheral blood films, and which type of stain is required to detect them?",
-    "accept": [
-     "They stain the same colour as surrounding haemoglobin and require supravital staining",
-     "Same staining affinity as normal haemoglobin; requires supravital stain such as crystal violet"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-018",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peripheral Blood Film: Leukocytes and Platelets",
-   "q": "Which pink-red, needle-shaped crystalline cytoplasmic inclusions composed of fused azurophilic granules are pathognomonic of myeloid blasts in acute myeloid leukaemia (AML)?",
-   "options": [
-    "Auer rods",
-    "Dohle bodies",
-    "Russell bodies",
-    "Pappenheimer bodies"
-   ],
-   "answer": 0,
-   "explain": "Auer rods are peroxidase-positive crystalline rods formed by aberrant fusion of primary azurophilic granules in myeloblasts and promyelocytes, definitively confirming myeloid lineage over lymphoblasts.",
-   "verified": false,
-   "open": {
-    "q": "Name the needle-shaped, peroxidase-positive azurophilic cytoplasmic inclusions diagnostic of acute myeloid leukaemia blasts.",
-    "accept": [
-     "Auer rods",
-     "Auer bodies"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peripheral Blood Film: Leukocytes and Platelets",
-   "q": "What is the normal adult reference range for the peripheral blood platelet count?",
-   "options": [
-    "150 to 400 x 10^9/L",
-    "4.0 to 11.0 x 10^9/L",
-    "4.5 to 6.0 x 10^12/L",
-    "10 to 50 x 10^9/L"
-   ],
-   "answer": 0,
-   "explain": "Normal circulating platelet count in adults is 150-400 x 10^9/L (150,000-400,000/uL); counts below 150 x 10^9/L define thrombocytopenia, and spontaneous mucocutaneous bleeding risk rises sharply below 20 x 10^9/L.",
-   "verified": false,
-   "open": {
-    "q": "State the normal adult reference interval for the peripheral blood platelet count.",
-    "accept": [
-     "150 to 400 x 10^9/L",
-     "150,000 to 400,000 per microlitre"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-020",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Peripheral Blood Film: Leukocytes and Platelets",
-   "q": "An asymptomatic 35-year-old woman has an automated platelet count of 28 x 10^9/L reported from an EDTA tube, with no bleeding symptoms and normal coagulation tests. Examination of the peripheral blood smear reveals numerous large platelet clumps along the feathered edge. What is the diagnosis?",
-   "options": [
-    "EDTA-dependent pseudothrombocytopenia",
-    "Acute immune thrombocytopenic purpura",
-    "Thrombotic thrombocytopenic purpura",
-    "Aplastic crisis"
-   ],
-   "answer": 0,
-   "explain": "In ~0.1% of individuals, naturally occurring cold-reactive IgG/IgM autoantibodies bind cryptic epitopes on platelet GpIIb/IIIa exposed when EDTA chelates calcium, causing in vitro platelet clumping that automated impedance counters misread as leukocytes or ignore; repeating the count in sodium citrate resolves the artifact.",
-   "verified": false,
-   "open": {
-    "q": "What laboratory artifact is confirmed when a patient with an unexpectedly low automated platelet count shows extensive platelet clumping on the blood film, and how should the count be verified?",
-    "accept": [
-     "EDTA-dependent pseudothrombocytopenia; repeat FBC using a sodium citrate tube",
-     "Pseudothrombocytopenia; re-collect in sodium citrate"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Erythrocyte Sedimentation Rate (ESR)",
-   "q": "Which standard anticoagulated tube and dilution ratio are prescribed by the International Council for Standardization in Haematology (ICSH) for the Westergren Erythrocyte Sedimentation Rate (ESR) method?",
-   "options": [
-    "Four parts whole blood mixed with one part 3.8% (109 mmol/L) trisodium citrate",
-    "Nine parts whole blood mixed with one part potassium EDTA",
-    "One part whole blood mixed with nine parts lithium heparin",
-    "Undiluted clotted blood incubated in a 37 degree Celsius water bath"
-   ],
-   "answer": 0,
-   "explain": "The reference Westergren ESR method dilutes 4 volumes of venous blood with 1 volume of 109 mmol/L (3.8%) trisodium citrate and measures the vertical fall of erythrocytes in a 200 mm pipette after exactly 1 hour.",
-   "verified": false,
-   "open": {
-    "q": "Specify the anticoagulant and blood-to-anticoagulant dilution ratio used in the standard Westergren ESR method.",
-    "accept": [
-     "Trisodium citrate in a 4:1 blood-to-citrate ratio",
-     "4 parts blood to 1 part 3.8% sodium citrate"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-022",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Erythrocyte Sedimentation Rate (ESR)",
-   "q": "How do elevated acute-phase plasma proteins such as fibrinogen and immunoglobulins accelerate the Erythrocyte Sedimentation Rate (ESR)?",
-   "options": [
-    "They neutralize the negative surface zeta potential of erythrocytes, promoting rouleaux stacking and faster gravitational settling",
-    "They increase plasma viscosity to push red cells downward by active convection",
-    "They cause intravascular red cell fragmentation into heavy schistocytes",
-    "They cross-link platelets directly to the glass Westergren pipette wall"
-   ],
-   "answer": 0,
-   "explain": "Normally negatively charged sialic acid residues on red cell membranes repel adjacent erythrocytes (zeta potential); asymmetric macromolecules like fibrinogen and paraproteins bridge cells and neutralize repulsion, promoting rouleaux aggregates that sediment faster.",
-   "verified": false,
-   "open": {
-    "q": "Explain the biophysical mechanism by which elevated plasma fibrinogen or immunoglobulins increase the erythrocyte sedimentation rate (ESR).",
-    "accept": [
-     "Neutralize negative red cell surface zeta potential to promote rouleaux formation",
-     "Reduce zeta potential and increase rouleaux stacking"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-023",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Erythrocyte Sedimentation Rate (ESR)",
-   "q": "Why is the Erythrocyte Sedimentation Rate (ESR) paradoxically normal or very low (0 to 2 mm/hr) in patients with sickle cell anaemia even during severe acute inflammatory crises?",
-   "options": [
-    "Rigid, abnormally shaped sickle erythrocytes cannot align into flat coin-like rouleaux stacks",
-    "Patients with sickle cell anaemia completely lack hepatic fibrinogen synthesis",
-    "Sickle haemoglobin carries a triple positive charge that repels plasma globulins",
-    "Erythrocytes in sickle cell disease have a lower specific gravity than plasma"
-   ],
-   "answer": 0,
-   "explain": "Poikilocytes—particularly sickled cells, spherocytes, and acanthocytes—physically prevent the face-to-face alignment required for rouleaux formation, keeping ESR artificially low despite active inflammation or infection.",
-   "verified": false,
-   "open": {
-    "q": "Why does the erythrocyte sedimentation rate (ESR) remain paradoxically low in patients with sickle cell disease even during acute infection?",
-    "accept": [
-     "Abnormally shaped sickle red cells cannot form rouleaux",
-     "Poikilocytosis prevents rouleaux stacking"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-024",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bone Marrow Examination",
-   "q": "What is the preferred anatomical site for performing both bone marrow aspiration and trephine core biopsy in adults?",
-   "options": [
-    "Posterior superior iliac spine (iliac crest)",
-    "Mid-shaft of the femur",
-    "Manubrium of the sternum",
-    "Lateral malleolus of the fibula"
-   ],
-   "answer": 0,
-   "explain": "The posterior superior iliac spine is safe, accessible, contains active red haematopoietic marrow throughout life, and has sufficient bone depth for both aspiration and trephine biopsy without risking underlying mediastinal vessels (unlike the sternum, where trephine biopsy is contraindicated).",
-   "verified": false,
-   "open": {
-    "q": "Name the safest and most commonly used anatomical site for obtaining both bone marrow aspirate and trephine core biopsy in adults.",
-    "accept": [
-     "Posterior superior iliac spine",
-     "Posterior iliac crest"
-    ]
-   }
-  },
-  {
-   "id": "pah-blood-counts-films-and-routine-tests-025",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Bone Marrow Examination",
-   "q": "When is a bone marrow trephine biopsy mandatory in addition to (or when unable to obtain) a liquid bone marrow aspirate?",
-   "options": [
-    "When aspiration yields a 'dry tap' (such as in myelofibrosis or hairy cell leukaemia) and to assess marrow cellularity, architecture, and focal tumour or granuloma infiltration",
-    "Whenever a routine peripheral blood count shows mild neutrophilia in acute appendicitis",
-    "To measure serum ferritin and transferrin saturation directly",
-    "Exclusively to perform ABO blood group forward typing"
-   ],
-   "answer": 0,
-   "explain": "A liquid aspirate reveals fine cytological detail of individual precursors but disrupts spatial architecture and fails in fibrotic or tightly packed marrows ('dry tap'); a trephine core biopsy preserves intact trabecular architecture, true cellularity, reticulin fibrosis, and focal lymphoma or metastatic deposits.",
-   "verified": false,
-   "open": {
-    "q": "Give two key diagnostic indications for performing a bone marrow trephine biopsy alongside or after a bone marrow aspirate.",
-    "accept": [
-     "Dry tap on aspiration and evaluation of marrow cellularity, architecture, or focal infiltration",
-     "Myelofibrosis (dry tap) and assessing intact marrow architecture or focal metastases"
-    ]
-   }
-  }
- ]
+  "topic": "pah-blood-counts-films-and-routine-tests",
+  "questions": [
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Anticoagulants and Sample Handling",
+      "q": "Which anticoagulant is the standard choice for automated full blood count (FBC) and peripheral blood film preparation because it preserves cellular morphology and prevents platelet clumping?",
+      "options": [
+        "Dipotassium or tripotassium EDTA",
+        "Trisodium citrate",
+        "Lithium heparin",
+        "Sodium fluoride"
+      ],
+      "answer": 0,
+      "explain": "EDTA (ethylenediaminetetraacetic acid) chelates calcium to prevent clotting while preserving red cell, leukocyte, and platelet morphology; heparin causes a blue background staining artifact and platelet aggregation.",
+      "verified": false,
+      "open": {
+        "q": "Name the standard anticoagulant used in blood collection tubes for routine full blood counts and peripheral blood films.",
+        "accept": [
+          "EDTA",
+          "K2EDTA",
+          "Ethylenediaminetetraacetic acid"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-002",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Anticoagulants and Sample Handling",
+      "q": "Why should peripheral blood films be prepared within 2 to 4 hours of collecting blood into an EDTA tube?",
+      "options": [
+        "Storage alters cell morphology, causing red-cell swelling and degenerative leukocyte changes",
+        "EDTA converts all haemoglobin into methaemoglobin within minutes",
+        "EDTA causes mature lymphocytes to undergo rapid mitosis",
+        "Storage selectively removes all eosinophils from the specimen"
+      ],
+      "answer": 0,
+      "explain": "Storage of EDTA-anticoagulated blood at room temperature beyond 4 hours induces osmotic red cell swelling (falsely raising MCV and lowering MCHC), crenation, and degenerative nuclear swelling or cytoplasmic vacuolation in neutrophils.",
+      "verified": false,
+      "open": {
+        "q": "What morphological and automated index artifacts occur when EDTA blood samples are left at room temperature for more than 4 to 6 hours before testing?",
+        "accept": [
+          "Red cell swelling raising MCV and degenerative leukocyte vacuolation",
+          "Spurious MCV elevation and neutrophil degeneration"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Red Cell Indices and Automated FBC",
+      "q": "How is the Mean Corpuscular Volume (MCV) calculated from the haematocrit (PCV) and red blood cell (RBC) count?",
+      "options": [
+        "MCV (fL) = (Haematocrit [L/L] / RBC count [x 10^12/L]) x 1000",
+        "MCV (fL) = (Haemoglobin [g/dL] / RBC count [x 10^12/L]) x 10",
+        "MCV (fL) = (Haemoglobin [g/dL] / Haematocrit [%]) x 100",
+        "MCV (fL) = (RBC count [x 10^12/L] / Haemoglobin [g/dL]) x 100"
+      ],
+      "answer": 0,
+      "explain": "MCV expresses the average volume of a single erythrocyte in femtolitres (fL), calculated by dividing packed cell volume (expressed as a decimal or percentage x 10) by the red cell count in millions per microlitre (x 10^12/L).",
+      "verified": false,
+      "open": {
+        "q": "Write the formula used to calculate Mean Corpuscular Volume (MCV) from haematocrit (PCV) and red blood cell count.",
+        "accept": [
+          "(PCV / RBC count) x 10",
+          "(Haematocrit [L/L] / RBC [x10^12/L]) x 1000"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Red Cell Indices and Automated FBC",
+      "q": "Which red cell index quantifies the average concentration of haemoglobin within a given volume of packed red blood cells (Hb / PCV) and rises characteristically in hereditary spherocytosis?",
+      "options": [
+        "Mean Corpuscular Haemoglobin Concentration (MCHC)",
+        "Mean Corpuscular Volume (MCV)",
+        "Red Cell Distribution Width (RDW)",
+        "Mean Platelet Volume (MPV)"
+      ],
+      "answer": 0,
+      "explain": "MCHC (normal ~32-36 g/dL) reflects cellular haemoglobin density; loss of membrane surface area relative to cell volume in hereditary spherocytosis dehydrates red cells and elevates MCHC above 36 g/dL.",
+      "verified": false,
+      "open": {
+        "q": "Name the red cell index calculated as haemoglobin divided by haematocrit that is characteristically elevated over 36 g/dL in hereditary spherocytosis.",
+        "accept": [
+          "MCHC",
+          "Mean corpuscular haemoglobin concentration"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Red Cell Indices and Automated FBC",
+      "q": "How does the Red Cell Distribution Width (RDW) help distinguish uncomplicated beta-thalassaemia trait from iron deficiency anaemia when both present with microcytosis (low MCV)?",
+      "options": [
+        "RDW is often normal in thalassaemia trait but increased in iron deficiency due to greater size variation",
+        "RDW is always higher in thalassaemia trait and absent in iron deficiency",
+        "RDW measures platelet size and is unaffected by red-cell volume",
+        "RDW rises only when the mean cell volume exceeds 120 fL"
+      ],
+      "answer": 0,
+      "explain": "RDW is the coefficient of variation of red cell volume distribution; thalassaemia trait produces a homogeneous population of small red cells (normal RDW), whereas progressive iron depletion generates microcytes alongside older normocytes (high RDW).",
+      "verified": false,
+      "open": {
+        "q": "How does Red Cell Distribution Width (RDW) differ between iron deficiency anaemia and uncomplicated beta-thalassaemia minor?",
+        "accept": [
+          "Elevated in iron deficiency anaemia and normal in beta-thalassaemia trait",
+          "High RDW in iron deficiency versus normal RDW in thalassaemia trait"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Red Cell Indices and Automated FBC",
+      "q": "Which physical principle is employed by most automated haematology analyzers (the Coulter principle) to count and size erythrocytes, leukocytes, and platelets simultaneously?",
+      "options": [
+        "Electrical impedance: cells passing through an aperture produce pulses proportional to their number and volume",
+        "Atomic absorption: cells emit light according to their haemoglobin concentration",
+        "Radioimmunoassay: cells bind radiolabelled antibodies in suspension",
+        "Chromatography: cells separate according to their DNA sequence"
+      ],
+      "answer": 0,
+      "explain": "In the Coulter electrical impedance method, poorly conductive cells suspended in an electrolyte diluent pass one by one through a micro-aperture between two electrodes, generating voltage pulses whose number equals cell count and whose amplitude is proportional to cell volume.",
+      "verified": false,
+      "open": {
+        "q": "Name the physical counting and sizing principle (Coulter principle) used by standard automated haematology analyzers.",
+        "accept": [
+          "Electrical impedance",
+          "Aperture impedance",
+          "Impedance counting"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-007",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Red Cell Indices and Automated FBC",
+      "q": "A 50-year-old man with cold agglutinin disease has an automated FBC performed at room temperature showing a haemoglobin of 9.2 g/dL, a spuriously low RBC count of 1.8 x 10^12/L, a markedly elevated MCV of 132 fL, and an impossible MCHC of 46 g/dL. What simple laboratory step corrects these spurious indices?",
+      "options": [
+        "Warming the blood sample to 37 degrees Celsius before re-running it on the analyzer",
+        "Diluting the blood sample 1:10 with ice-cold distilled water",
+        "Centrifuging the sample and measuring the buffy coat only",
+        "Adding excess sodium fluoride to the EDTA tube"
+      ],
+      "answer": 0,
+      "explain": "IgM cold agglutinins cause red cells to clump at room temperature; automated impedance counters read doublets and triplets as single giant cells, falsely lowering RBC count and raising MCV and MCHC. Warming to 37 degrees Celsius dissociates the agglutinins and restores true indices.",
+      "verified": false,
+      "open": {
+        "q": "How do you resolve spurious macrocytosis and impossibly high MCHC caused by cold agglutinins on an automated FBC analyzer?",
+        "accept": [
+          "Warm the blood specimen to 37 degrees Celsius before analysis",
+          "Incubate sample at 37 C"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Reticulocyte Count",
+      "q": "Which supravital stain is used to precipitate residual ribosomal RNA in reticulocytes as a dark-blue reticular network so they can be counted by light microscopy?",
+      "options": [
+        "New methylene blue or brilliant cresyl blue",
+        "Prussian blue",
+        "Ziehl-Neelsen carbol fuchsin",
+        "Congo red"
+      ],
+      "answer": 0,
+      "explain": "Reticulocytes are immature non-nucleated red cells newly released from bone marrow that still contain ribosomal RNA; supravital staining of unfixed living cells with new methylene blue or brilliant cresyl blue precipitates this RNA into a visible blue meshwork.",
+      "verified": false,
+      "open": {
+        "q": "Name a supravital stain used to demonstrate residual ribosomal RNA in reticulocytes.",
+        "accept": [
+          "New methylene blue",
+          "Brilliant cresyl blue"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Reticulocyte Count",
+      "q": "Why must a percentage reticulocyte count be converted into an absolute reticulocyte count or corrected for haematocrit (Corrected Reticulocyte Count) when evaluating an anaemic patient?",
+      "options": [
+        "Because anaemia lowers the red-cell denominator, the percentage may overstate marrow output unless corrected",
+        "Reticulocytes lose haemoglobin whenever haematocrit falls below 30%",
+        "Automated analysers always count lymphocytes as reticulocytes in anaemia",
+        "Erythropoietin cannot bind marrow receptors when haematocrit is low"
+      ],
+      "answer": 0,
+      "explain": "Because reticulocyte percentage is expressed relative to total RBCs, a low denominator in severe anaemia makes a normal number of circulating reticulocytes appear falsely elevated; multiplying by (patient PCV / normal PCV) or reporting the absolute reticulocyte count accurately reflects erythropoietic output.",
+      "verified": false,
+      "open": {
+        "q": "Why is the absolute reticulocyte count or corrected reticulocyte count clinically superior to the uncorrected reticulocyte percentage in anaemia?",
+        "accept": [
+          "Low total red cell count in anaemia falsely elevates the relative reticulocyte percentage",
+          "Corrects for the reduced red cell denominator in anaemia"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-010",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peripheral Blood Film Preparation and Staining",
+      "q": "Which Romanowsky stain combination—containing oxidized methylene blue (azure B) and eosin—is the standard routine stain for peripheral blood films and bone marrow aspirates?",
+      "options": [
+        "Leishman, Wright, or Giemsa stain",
+        "Periodic acid-Schiff (PAS) stain",
+        "Masson trichrome stain",
+        "Auramine-rhodamine stain"
+      ],
+      "answer": 0,
+      "explain": "Romanowsky stains (Leishman, Wright, Giemsa, May-Grunwald-Giemsa) use acidic eosin to stain basic haemoglobin and eosinophil granules pink-orange, and basic azure B to stain acidic nuclear chromatin and RNA blue-purple.",
+      "verified": false,
+      "open": {
+        "q": "Name a standard Romanowsky stain routinely used to stain peripheral blood films.",
+        "accept": [
+          "Leishman stain",
+          "Wright stain",
+          "Giemsa stain"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Peripheral Blood Film Preparation and Staining",
+      "q": "If the phosphate buffer used during Romanowsky staining of a blood film is too acidic (pH < 6.4), how will the stained blood smear appear under the microscope?",
+      "options": [
+        "Red cells appear overly bright pink-red and leukocyte nuclei stain pale blue-grey",
+        "Red cells stain dark blue-green and neutrophil granules appear jet black",
+        "All red cells undergo complete osmotic lysis leaving only bare nuclei",
+        "Eosinophil granules dissolve completely into colourless vacuoles"
+      ],
+      "answer": 0,
+      "explain": "Optimal Romanowsky staining requires a buffered pH of 6.8; excessive acidity (low pH) enhances binding of acidic eosin (making erythrocytes overly pink/red) and inhibits uptake of basic azure B (leaving leukocyte nuclei pale).",
+      "verified": false,
+      "open": {
+        "q": "How does an excessively acidic buffer pH (<6.4) alter the colour appearance of erythrocytes and leukocyte nuclei on a Romanowsky-stained blood film?",
+        "accept": [
+          "Erythrocytes stain overly bright pink-red and leukocyte nuclei stain pale",
+          "Excessively pink red cells and pale nuclei"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peripheral Blood Film: Red Cell Morphology",
+      "q": "Which term describes significant variation in the size of red blood cells on a peripheral blood film?",
+      "options": [
+        "Anisocytosis",
+        "Poikilocytosis",
+        "Polychromasia",
+        "Rouleaux formation"
+      ],
+      "answer": 0,
+      "explain": "Anisocytosis refers to abnormal variation in red cell diameter/volume (quantified by elevated RDW), whereas poikilocytosis denotes abnormal variation in red cell shape.",
+      "verified": false,
+      "open": {
+        "q": "Name the morphological term describing abnormal variation in the size of erythrocytes on a peripheral blood smear.",
+        "accept": [
+          "Anisocytosis"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peripheral Blood Film: Red Cell Morphology",
+      "q": "Fragmented red blood cells (helmet cells and triangular fragments) seen on a peripheral blood film as a hallmark of microangiopathic haemolytic anaemia (such as DIC, TTP, or HUS) are called what?",
+      "options": [
+        "Schistocytes",
+        "Acanthocytes",
+        "Dacrocytes",
+        "Codocytes"
+      ],
+      "answer": 0,
+      "explain": "Schistocytes are mechanically sheared erythrocyte fragments formed when red cells are sliced by fibrin strands in microthrombi or damaged prosthetic heart valves.",
+      "verified": false,
+      "open": {
+        "q": "Name the mechanically fragmented erythrocytes (helmet or triangular cells) characteristic of microangiopathic haemolytic anaemia.",
+        "accept": [
+          "Schistocytes",
+          "Fragmented red cells",
+          "Helmet cells"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Peripheral Blood Film: Red Cell Morphology",
+      "q": "Target cells (codocytes), which have an increased surface membrane-to-volume ratio producing a central bull's-eye of haemoglobin, are classically seen on blood films in which group of conditions?",
+      "options": [
+        "Thalassaemias, haemoglobin C or S disease, obstructive liver disease, and post-splenectomy",
+        "Hereditary spherocytosis and warm autoimmune haemolytic anaemia",
+        "Acute iron poisoning and acute respiratory alkalosis",
+        "Aplastic anaemia and pure red cell aplasia"
+      ],
+      "answer": 0,
+      "explain": "Target cells result either from excess cell membrane lipid (obstructive jaundice, LCAT deficiency, post-splenectomy) or reduced cytoplasmic haemoglobin content (thalassaemias, HbC, HbS, severe iron deficiency).",
+      "verified": false,
+      "open": {
+        "q": "Name two major clinical conditions associated with target cells (codocytes) on a peripheral blood film.",
+        "accept": [
+          "Thalassaemia and obstructive liver disease",
+          "Haemoglobin C disease and post-splenectomy",
+          "Sickle cell disease and liver disease"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-015",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Peripheral Blood Film: Red Cell Morphology",
+      "q": "Teardrop-shaped erythrocytes (dacrocytes) alongside nucleated red blood cells and immature myeloid precursors (leukoerythroblastic blood picture) on a peripheral film strongly suggest which underlying bone marrow pathology?",
+      "options": [
+        "Primary myelofibrosis or metastatic marrow infiltration (myelophthisis)",
+        "Acute blood loss from peptic ulceration",
+        "Uncomplicated vitamin B12 deficiency",
+        "Hereditary elliptocytosis"
+      ],
+      "answer": 0,
+      "explain": "Dacrocytes form when erythrocytes squeeze out of fibrotic or tumour-infiltrated bone marrow sinusoids (myelophthisis) and extramedullary splenic haematopoietic sites.",
+      "verified": false,
+      "open": {
+        "q": "What underlying bone marrow condition is strongly suggested by teardrop red cells (dacrocytes) accompanied by a leukoerythroblastic blood picture?",
+        "accept": [
+          "Myelofibrosis or bone marrow infiltration",
+          "Myelophthisis",
+          "Primary myelofibrosis"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-016",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Peripheral Blood Film: Red Cell Morphology",
+      "q": "Small, round, densely basophilic nuclear DNA remnants inside circulating erythrocytes—normally pitted out by splenic macrophages—are known as what?",
+      "options": [
+        "Howell-Jolly bodies",
+        "Heinz bodies",
+        "Auer rods",
+        "Barr bodies"
+      ],
+      "answer": 0,
+      "explain": "Howell-Jolly bodies are micronuclei of residual DNA left behind after erythroblast nuclear extrusion; their presence on a peripheral smear indicates anatomical splenectomy or functional hyposplenism (such as autosplenectomy in sickle cell anaemia).",
+      "verified": false,
+      "open": {
+        "q": "Name the basophilic nuclear DNA inclusions inside red blood cells whose presence indicates splenectomy or functional hyposplenism.",
+        "accept": [
+          "Howell-Jolly bodies",
+          "Howell Jolly bodies"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Peripheral Blood Film: Red Cell Morphology",
+      "q": "Why are precipitated denatured haemoglobin inclusions (Heinz bodies) invisible on routine Romanowsky-stained blood smears and require supravital staining with crystal violet or brilliant cresyl blue?",
+      "options": [
+        "On routine Romanowsky stains, Heinz bodies may blend with haemoglobin and require supravital staining",
+        "Methanol fixation dissolves all denatured globin within seconds",
+        "Heinz bodies occur only inside leukocyte nuclei",
+        "Romanowsky dyes convert Heinz bodies into bilirubin"
+      ],
+      "answer": 0,
+      "explain": "Because Heinz bodies consist of denatured precipitated haemoglobin (seen in G6PD deficiency and unstable haemoglobinopathies), they stain identically to intact haemoglobin on Wright/Giemsa films and require supravital dyes to visualize membrane-bound inclusions.",
+      "verified": false,
+      "open": {
+        "q": "Why are Heinz bodies not visible on routine Romanowsky-stained peripheral blood films, and which type of stain is required to detect them?",
+        "accept": [
+          "They stain the same colour as surrounding haemoglobin and require supravital staining",
+          "Same staining affinity as normal haemoglobin; requires supravital stain such as crystal violet"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-018",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peripheral Blood Film: Leukocytes and Platelets",
+      "q": "Which pink-red, needle-shaped crystalline cytoplasmic inclusions composed of fused azurophilic granules are pathognomonic of myeloid blasts in acute myeloid leukaemia (AML)?",
+      "options": [
+        "Auer rods",
+        "Dohle bodies",
+        "Russell bodies",
+        "Pappenheimer bodies"
+      ],
+      "answer": 0,
+      "explain": "Auer rods are peroxidase-positive crystalline rods formed by aberrant fusion of primary azurophilic granules in myeloblasts and promyelocytes, definitively confirming myeloid lineage over lymphoblasts.",
+      "verified": false,
+      "open": {
+        "q": "Name the needle-shaped, peroxidase-positive azurophilic cytoplasmic inclusions diagnostic of acute myeloid leukaemia blasts.",
+        "accept": [
+          "Auer rods",
+          "Auer bodies"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peripheral Blood Film: Leukocytes and Platelets",
+      "q": "What is the normal adult reference range for the peripheral blood platelet count?",
+      "options": [
+        "150 to 400 x 10^9/L",
+        "4.0 to 11.0 x 10^9/L",
+        "4.5 to 6.0 x 10^12/L",
+        "10 to 50 x 10^9/L"
+      ],
+      "answer": 0,
+      "explain": "Normal circulating platelet count in adults is 150-400 x 10^9/L (150,000-400,000/uL); counts below 150 x 10^9/L define thrombocytopenia, and spontaneous mucocutaneous bleeding risk rises sharply below 20 x 10^9/L.",
+      "verified": false,
+      "open": {
+        "q": "State the normal adult reference interval for the peripheral blood platelet count.",
+        "accept": [
+          "150 to 400 x 10^9/L",
+          "150,000 to 400,000 per microlitre"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-020",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Peripheral Blood Film: Leukocytes and Platelets",
+      "q": "An asymptomatic 35-year-old woman has an automated platelet count of 28 x 10^9/L reported from an EDTA tube, with no bleeding symptoms and normal coagulation tests. Examination of the peripheral blood smear reveals numerous large platelet clumps along the feathered edge. What is the diagnosis?",
+      "options": [
+        "EDTA-dependent pseudothrombocytopenia",
+        "Acute immune thrombocytopenic purpura",
+        "Thrombotic thrombocytopenic purpura",
+        "Aplastic crisis"
+      ],
+      "answer": 0,
+      "explain": "In ~0.1% of individuals, naturally occurring cold-reactive IgG/IgM autoantibodies bind cryptic epitopes on platelet GpIIb/IIIa exposed when EDTA chelates calcium, causing in vitro platelet clumping that automated impedance counters misread as leukocytes or ignore; repeating the count in sodium citrate resolves the artifact.",
+      "verified": false,
+      "open": {
+        "q": "What laboratory artifact is confirmed when a patient with an unexpectedly low automated platelet count shows extensive platelet clumping on the blood film, and how should the count be verified?",
+        "accept": [
+          "EDTA-dependent pseudothrombocytopenia; repeat FBC using a sodium citrate tube",
+          "Pseudothrombocytopenia; re-collect in sodium citrate"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Erythrocyte Sedimentation Rate (ESR)",
+      "q": "Which standard anticoagulated tube and dilution ratio are prescribed by the International Council for Standardization in Haematology (ICSH) for the Westergren Erythrocyte Sedimentation Rate (ESR) method?",
+      "options": [
+        "Four parts whole blood mixed with one part 3.8% (109 mmol/L) trisodium citrate",
+        "Nine parts whole blood mixed with one part potassium EDTA",
+        "One part whole blood mixed with nine parts lithium heparin",
+        "Undiluted clotted blood incubated in a 37 degree Celsius water bath"
+      ],
+      "answer": 0,
+      "explain": "The reference Westergren ESR method dilutes 4 volumes of venous blood with 1 volume of 109 mmol/L (3.8%) trisodium citrate and measures the vertical fall of erythrocytes in a 200 mm pipette after exactly 1 hour.",
+      "verified": false,
+      "open": {
+        "q": "Specify the anticoagulant and blood-to-anticoagulant dilution ratio used in the standard Westergren ESR method.",
+        "accept": [
+          "Trisodium citrate in a 4:1 blood-to-citrate ratio",
+          "4 parts blood to 1 part 3.8% sodium citrate"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Erythrocyte Sedimentation Rate (ESR)",
+      "q": "How do elevated acute-phase plasma proteins such as fibrinogen and immunoglobulins accelerate the Erythrocyte Sedimentation Rate (ESR)?",
+      "options": [
+        "Fibrinogen and immunoglobulins reduce red-cell zeta-potential repulsion, promoting rouleaux and faster settling",
+        "They increase plasma viscosity and actively push red cells down the tube",
+        "They fragment red cells into heavier schistocytes",
+        "They bind directly to the glass tube and pull erythrocytes downward"
+      ],
+      "answer": 0,
+      "explain": "Normally negatively charged sialic acid residues on red cell membranes repel adjacent erythrocytes (zeta potential); asymmetric macromolecules like fibrinogen and paraproteins bridge cells and neutralize repulsion, promoting rouleaux aggregates that sediment faster.",
+      "verified": false,
+      "open": {
+        "q": "Explain the biophysical mechanism by which elevated plasma fibrinogen or immunoglobulins increase the erythrocyte sedimentation rate (ESR).",
+        "accept": [
+          "Neutralize negative red cell surface zeta potential to promote rouleaux formation",
+          "Reduce zeta potential and increase rouleaux stacking"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Erythrocyte Sedimentation Rate (ESR)",
+      "q": "Why is the Erythrocyte Sedimentation Rate (ESR) paradoxically normal or very low (0 to 2 mm/hr) in patients with sickle cell anaemia even during severe acute inflammatory crises?",
+      "options": [
+        "Rigid, abnormally shaped sickle erythrocytes cannot align into flat coin-like rouleaux stacks",
+        "Patients with sickle cell anaemia completely lack hepatic fibrinogen synthesis",
+        "Sickle haemoglobin carries a triple positive charge that repels plasma globulins",
+        "Erythrocytes in sickle cell disease have a lower specific gravity than plasma"
+      ],
+      "answer": 0,
+      "explain": "Poikilocytes—particularly sickled cells, spherocytes, and acanthocytes—physically prevent the face-to-face alignment required for rouleaux formation, keeping ESR artificially low despite active inflammation or infection.",
+      "verified": false,
+      "open": {
+        "q": "Why does the erythrocyte sedimentation rate (ESR) remain paradoxically low in patients with sickle cell disease even during acute infection?",
+        "accept": [
+          "Abnormally shaped sickle red cells cannot form rouleaux",
+          "Poikilocytosis prevents rouleaux stacking"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-024",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bone Marrow Examination",
+      "q": "What is the preferred anatomical site for performing both bone marrow aspiration and trephine core biopsy in adults?",
+      "options": [
+        "Posterior superior iliac spine (iliac crest)",
+        "Mid-shaft of the femur",
+        "Manubrium of the sternum",
+        "Lateral malleolus of the fibula"
+      ],
+      "answer": 0,
+      "explain": "The posterior superior iliac spine is safe, accessible, contains active red haematopoietic marrow throughout life, and has sufficient bone depth for both aspiration and trephine biopsy without risking underlying mediastinal vessels (unlike the sternum, where trephine biopsy is contraindicated).",
+      "verified": false,
+      "open": {
+        "q": "Name the safest and most commonly used anatomical site for obtaining both bone marrow aspirate and trephine core biopsy in adults.",
+        "accept": [
+          "Posterior superior iliac spine",
+          "Posterior iliac crest"
+        ]
+      }
+    },
+    {
+      "id": "pah-blood-counts-films-and-routine-tests-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Bone Marrow Examination",
+      "q": "When is a bone marrow trephine biopsy mandatory in addition to (or when unable to obtain) a liquid bone marrow aspirate?",
+      "options": [
+        "A trephine preserves marrow architecture and is useful after a dry tap or when cellularity and focal infiltration must be assessed",
+        "It measures serum ferritin and transferrin saturation directly",
+        "It is required for every mild neutrophilia on a routine blood count",
+        "It is used exclusively for ABO blood grouping"
+      ],
+      "answer": 0,
+      "explain": "A liquid aspirate reveals fine cytological detail of individual precursors but disrupts spatial architecture and fails in fibrotic or tightly packed marrows ('dry tap'); a trephine core biopsy preserves intact trabecular architecture, true cellularity, reticulin fibrosis, and focal lymphoma or metastatic deposits.",
+      "verified": false,
+      "open": {
+        "q": "Give two key diagnostic indications for performing a bone marrow trephine biopsy alongside or after a bone marrow aspirate.",
+        "accept": [
+          "Dry tap on aspiration and evaluation of marrow cellularity, architecture, or focal infiltration",
+          "Myelofibrosis (dry tap) and assessing intact marrow architecture or focal metastases"
+        ]
+      }
+    }
+  ]
 }
