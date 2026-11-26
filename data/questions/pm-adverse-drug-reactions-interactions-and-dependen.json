@@ -151,10 +151,10 @@
    "sub": "Idiosyncrasy and Pharmacogenetics",
    "q": "A 19-year-old man with glucose-6-phosphate dehydrogenase (G6PD) deficiency develops acute intravascular haemolysis, haemoglobinuria, and jaundice after taking primaquine or dapsone. Why does this occur?",
    "options": [
-    "Primaquine directly inhibits bone marrow erythropoietin receptors",
-    "Deficient G6PD impairs NADPH generation needed to keep glutathione reduced, leaving red cells vulnerable to oxidative damage",
-    "Primaquine triggers an IgE-mediated Type I anaphylactic reaction against reticulocytes",
-    "G6PD deficiency blocks hepatic glucuronidation of bilirubin"
+    "Primaquine blocks erythropoietin receptors",
+    "G6PD deficiency lowers NADPH, impairing reduced-glutathione regeneration and antioxidant defence",
+    "Primaquine causes IgE-mediated red-cell allergy",
+    "G6PD deficiency blocks bilirubin conjugation"
    ],
    "answer": 1,
    "explain": "G6PD is the rate-limiting enzyme of the pentose phosphate pathway in erythrocytes; without adequate NADPH and reduced glutathione (GSH), oxidative drugs cause haemoglobin denaturation (Heinz bodies) and haemolysis.",
@@ -219,10 +219,10 @@
    "sub": "Idiosyncrasy and Pharmacogenetics",
    "q": "How does dantrolene act to reverse malignant hyperthermia?",
    "options": [
-    "By blocking ryanodine receptors (RYR1) on the sarcoplasmic reticulum to inhibit excessive Ca2+ release into skeletal muscle",
-    "By acting as a competitive antagonist at neuromuscular nicotinic receptors",
-    "By chelating extracellular calcium in systemic plasma",
-    "By accelerating renal excretion of volatile anesthetics"
+    "Dantrolene inhibits skeletal-muscle RyR1, reducing calcium release",
+    "It blocks nicotinic receptors at the NMJ",
+    "It chelates extracellular calcium",
+    "It accelerates renal clearance of anaesthetics"
    ],
    "answer": 0,
    "explain": "Dantrolene binds to ryanodine receptor channels on the sarcoplasmic reticulum of skeletal muscle, halting pathological Ca2+ efflux, hypermetabolism, and rigidity.",
@@ -288,10 +288,10 @@
    "sub": "Idiosyncrasy and Pharmacogenetics",
    "q": "Why does codeine fail to provide adequate analgesia in individuals who are CYP2D6 poor metabolizers, whereas CYP2D6 ultrarapid metabolizers risk opioid toxicity and respiratory depression even at standard doses?",
    "options": [
-    "CYP2D6 converts codeine into inactive glucuronides",
-    "CYP2D6 is required to pump codeine across the blood-brain barrier",
-    "CYP2D6 is the sole enzyme that excretes codeine in bile",
-    "CYP2D6 O-demethylates codeine (a weak prodrug) into morphine, which has much higher mu-opioid affinity"
+    "CYP2D6 converts codeine to inactive glucuronides",
+    "CYP2D6 transports codeine across the BBB",
+    "CYP2D6 excretes codeine in bile",
+    "CYP2D6 converts codeine to morphine"
    ],
    "answer": 3,
    "explain": "Codeine relies on CYP2D6-mediated O-demethylation to form morphine; poor metabolizers get little morphine, while ultrarapid metabolizers convert excessive amounts rapidly.",
@@ -311,10 +311,10 @@
    "sub": "Drug Allergy and Hypersensitivity",
    "q": "Why do most low-molecular-weight drugs (haptens) require binding to host proteins before triggering a true immune-mediated drug allergy?",
    "options": [
-    "Small molecules alone are generally too small to be recognized effectively as immunogens unless conjugated to carrier proteins to form a complete antigen",
-    "Host proteins convert all drugs into IgA antibodies",
-    "Unbound small drugs are destroyed before reaching lymph nodes",
-    "Haptens only bind to erythrocytes without activating lymphocytes"
+    "Small drugs often need a carrier protein to become immunogenic haptens",
+    "Host proteins convert all drugs into IgA",
+    "Unbound drugs are destroyed before reaching lymph nodes",
+    "Haptens bind only erythrocytes"
    ],
    "answer": 0,
    "explain": "Most drugs or their reactive metabolites act as haptens that bind covalently to host macromolecules (proteins), creating a hapten-carrier complex capable of stimulating an immune response.",
@@ -385,7 +385,7 @@
     "Type I",
     "Type II",
     "Type IV",
-    "Type III (immune complex-mediated hypersensitivity)"
+    "Type III (immune-complex mediated)"
    ],
    "answer": 3,
    "explain": "Type III reactions result from deposition of soluble drug-antibody immune complexes in small blood vessels and glomeruli, activating complement and recruiting neutrophils.",
@@ -430,8 +430,8 @@
    "q": "A 26-year-old patient develops sudden laryngeal stridor, wheezing, generalized urticaria, and hypotension (BP 70/40 mmHg) 10 minutes after receiving intramuscular ceftriaxone. Which drug is the immediate first-line lifesaving treatment?",
    "options": [
     "Oral loratadine",
-    "Intramuscular adrenaline (epinephrine) into the anterolateral thigh",
-    "Intravenous calcium gluconate",
+    "IM adrenaline into the anterolateral thigh",
+    "IV calcium gluconate",
     "Oral prednisolone"
    ],
    "answer": 1,
@@ -452,10 +452,10 @@
    "sub": "Drug Allergy and Hypersensitivity",
    "q": "Why are corticosteroids and H1 antihistamines considered adjunctive rather than first-line monotherapy for acute anaphylaxis?",
    "options": [
-    "They cause severe coronary vasoconstriction and worsen shock",
-    "They directly block IgE synthesis within 30 seconds",
-    "They replace the need for airway support and oxygen",
-    "Their onset of action is too slow to rapidly reverse life-threatening bronchospasm and hypotension compared with adrenaline"
+    "They cause coronary vasoconstriction and worsen shock",
+    "They block IgE synthesis immediately",
+    "They replace airway support and oxygen",
+    "Their onset is too slow to reverse acute bronchospasm and hypotension"
    ],
    "answer": 3,
    "explain": "Antihistamines and corticosteroids do not rapidly reverse severe bronchoconstriction or cardiovascular collapse; corticosteroids take hours to reduce late-phase inflammation and prevent biphasic relapse.",
@@ -475,10 +475,10 @@
    "sub": "Teratogenicity and Special Populations",
    "q": "During which developmental period of pregnancy is the human fetus most vulnerable to structural congenital malformations (teratogenesis)?",
    "options": [
-    "The embryonic period of organogenesis (approximately weeks 3 to 8 of gestation)",
-    "The pre-implantation zygote stage (days 1 to 4)",
-    "The third trimester after 32 weeks of gestation",
-    "During active labour and delivery"
+    "Embryonic organogenesis, approximately weeks 3–8",
+    "Preimplantation stage, days 1–4",
+    "Third trimester after 32 weeks",
+    "Labour and delivery"
    ],
    "answer": 0,
    "explain": "Organogenesis occurs mainly between the 3rd and 8th weeks post-conception (weeks 5 to 10 by LMP), when rapid organ differentiation makes the embryo most susceptible to structural teratogens; third-trimester exposure affects growth and functional maturation.",
@@ -548,7 +548,7 @@
     "Methyldopa",
     "Labetalol",
     "Hydralazine",
-    "ACE inhibitors (such as enalapril and lisinopril) and ARBs"
+    "ACE inhibitors and angiotensin-receptor blockers"
    ],
    "answer": 3,
    "explain": "Inhibiting the renin-angiotensin system lowers fetal renal perfusion pressure and impairs nephrogenesis, leading to oligohydramnios, limb contractures, pulmonary hypoplasia, and fetal/neonatal death.",
@@ -568,10 +568,10 @@
    "sub": "Teratogenicity and Special Populations",
    "q": "Why are tetracyclines avoided in pregnant women and children under 8 years of age?",
    "options": [
-    "They bind calcium in developing teeth and bones, causing permanent tooth discoloration and enamel hypoplasia, and risk maternal hepatotoxicity",
-    "They cause permanent sensorineural deafness by damaging cranial nerve VIII",
-    "They inhibit fetal thyroid hormone synthesis causing cretinism",
-    "They trigger acute haemolysis in all fetuses"
+    "Tetracyclines bind calcium in teeth and bone, causing staining and enamel defects",
+    "They cause permanent CN VIII deafness",
+    "They inhibit fetal thyroid synthesis",
+    "They cause haemolysis in all fetuses"
    ],
    "answer": 0,
    "explain": "Tetracyclines chelate calcium in mineralizing tissues, staining deciduous/permanent teeth yellow-brown and inhibiting bone growth; high IV doses in pregnancy can also cause acute fatty liver of pregnancy.",
@@ -888,10 +888,10 @@
    "sub": "Drug Interactions",
    "q": "What is a 'pharmacokinetic' drug interaction?",
    "options": [
-    "Two drugs acting at the same receptor to block each other's signaling",
-    "Two drugs causing additive central nervous system depression",
-    "One drug altering the absorption, distribution, metabolism, or excretion (ADME) of another drug",
-    "Chemical inactivation of a drug inside an infusion bottle"
+    "Two drugs compete at the same receptor",
+    "Two drugs cause additive CNS depression",
+    "One drug alters another's absorption, distribution, metabolism or excretion",
+    "Drugs react chemically in an infusion bag"
    ],
    "answer": 2,
    "explain": "Pharmacokinetic interactions modify the concentration-time profile (ADME) of a drug at its site of action without directly changing the target tissue's sensitivity.",
@@ -911,10 +911,10 @@
    "sub": "Drug Interactions",
    "q": "What is a 'pharmacodynamic' drug interaction?",
    "options": [
-    "Inhibition of hepatic cytochrome P450 by an azole antifungal",
-    "Displacement of a drug from plasma albumin",
-    "Reduction of gastric absorption by a metal chelate",
-    "One drug modifying the pharmacological effect of another drug at the receptor, second-messenger, or physiological level without altering its plasma concentration"
+    "An azole inhibits hepatic CYP enzymes",
+    "A drug displaces another from albumin",
+    "A metal chelate reduces gastric absorption",
+    "One drug changes another's effect at its receptor or signalling pathway"
    ],
    "answer": 3,
    "explain": "Pharmacodynamic interactions involve additive, synergistic, or antagonistic effects on target tissues—for example, alcohol plus benzodiazepines causing additive CNS depression or NSAIDs plus ACE inhibitors impairing renal perfusion.",
@@ -934,10 +934,10 @@
    "sub": "Drug Interactions",
    "q": "Why does combining a non-steroidal anti-inflammatory drug (NSAID) with an ACE inhibitor or loop diuretic increase the risk of acute kidney injury in a volume-depleted or elderly patient?",
    "options": [
-    "NSAIDs inhibit prostaglandin synthesis (PGE2/PGI2), constricting the afferent arteriole while ACE inhibitors dilate the efferent arteriole, reducing glomerular filtration pressure",
-    "ACE inhibitors convert NSAIDs into nephrotoxic oxalates",
-    "NSAIDs block aldosterone receptors in the collecting duct",
-    "ACE inhibitors cause direct crystallization of NSAIDs in renal tubules"
+    "NSAIDs constrict the afferent arteriole; ACE inhibitors dilate the efferent arteriole, reducing filtration pressure",
+    "ACE inhibitors convert NSAIDs to oxalates",
+    "NSAIDs block collecting-duct aldosterone receptors",
+    "NSAIDs crystallise in renal tubules"
    ],
    "answer": 0,
    "explain": "Glomerular filtration relies on prostaglandins maintaining afferent arteriolar patency and angiotensin II maintaining efferent arteriolar tone; blocking both (especially with diuretic volume depletion) sharply lowers GFR.",
@@ -980,10 +980,10 @@
    "sub": "Drug Interactions",
    "q": "Why should patients taking monoamine oxidase inhibitors (MAOIs) avoid tyramine-rich foods such as aged cheese, cured meats, and fermented yeast products?",
    "options": [
-    "Tyramine directly inhibits cholinesterase in the gastrointestinal tract",
-    "MAOI therapy causes severe hypoglycaemia when tyramine is eaten",
-    "Inhibition of MAO prevents breakdown of dietary tyramine in the gut and liver, allowing tyramine to enter systemic circulation and displace noradrenaline, risking a hypertensive crisis",
-    "Tyramine precipitates calcium stones in the renal pelvis"
+    "Tyramine inhibits gut cholinesterase",
+    "MAOIs cause hypoglycaemia after tyramine",
+    "MAO inhibition allows tyramine absorption and noradrenaline release, risking hypertensive crisis",
+    "Tyramine causes renal calcium stones"
    ],
    "answer": 2,
    "explain": "Normally, MAO in the gut wall and liver metabolizes ingested tyramine; when MAO is inhibited, absorbed tyramine enters adrenergic neurons and triggers massive noradrenaline release ('cheese effect').",
@@ -1003,10 +1003,10 @@
    "sub": "Drug Interactions",
    "q": "Which interaction occurs when ethanol is consumed by a patient taking disulfiram, metronidazole, or chlorpropamide?",
    "options": [
-    "Complete suppression of alcohol intoxication with zero symptoms",
-    "Rapid conversion of ethanol into non-toxic acetate without flushing",
-    "Direct blockade of muscarinic receptors causing dry mouth only",
-    "Disulfiram-like reaction: inhibition of aldehyde dehydrogenase causes acetaldehyde accumulation, resulting in flushing, throbbing headache, nausea, vomiting, and hypotension"
+    "Alcohol intoxication is completely suppressed",
+    "Ethanol is converted rapidly to acetate without symptoms",
+    "Muscarinic receptors are blocked, causing dry mouth",
+    "Aldehyde dehydrogenase inhibition causes acetaldehyde accumulation and flushing, nausea and hypotension"
    ],
    "answer": 3,
    "explain": "Aldehyde dehydrogenase normally oxidizes acetaldehyde to acetic acid; its inhibition causes acetaldehyde buildup and unpleasant systemic symptoms that deter alcohol intake.",
@@ -1026,10 +1026,10 @@
    "sub": "Drug Interactions",
    "q": "How does co-administration of non-selective beta-blockers (such as propranolol) with insulin or sulfonylureas affect a diabetic patient?",
    "options": [
-    "They mask sympathetic warning symptoms of hypoglycaemia (tachycardia, tremor) and can prolong hypoglycaemia by inhibiting beta-2-mediated glycogenolysis",
-    "They completely cure type 1 diabetes by regenerating pancreatic beta cells",
-    "They accelerate renal excretion of insulin within 15 minutes",
-    "They prevent glucose absorption across the intestinal brush border"
+    "Beta-blockers mask adrenergic warning signs and may prolong hypoglycaemia",
+    "They regenerate pancreatic beta cells",
+    "They rapidly increase renal insulin excretion",
+    "They block intestinal glucose absorption"
    ],
    "answer": 0,
    "explain": "Beta-blockers blunt tremor and palpitations (though sweating, mediated by sympathetic cholinergic fibers, usually persists) and impair beta-2-driven hepatic glycogenolysis and recovery from low blood sugar.",
@@ -1049,10 +1049,10 @@
    "sub": "Drug Interactions",
    "q": "Which drug interaction is caused by co-administering a macrolide antibiotic (such as erythromycin or clarithromycin) with a statin metabolized by CYP3A4 (such as simvastatin)?",
    "options": [
-    "Rapid breakdown of simvastatin into inactive metabolites",
-    "Inhibition of CYP3A4 increases simvastatin plasma levels, raising the risk of myopathy and rhabdomyolysis",
-    "Enhanced intestinal absorption of dietary vitamin K",
-    "Antagonism of HMG-CoA reductase upregulation"
+    "Simvastatin is rapidly converted to inactive metabolites",
+    "CYP3A4 inhibition raises simvastatin levels and myopathy risk",
+    "Vitamin K absorption increases",
+    "HMG-CoA reductase is upregulated"
    ],
    "answer": 1,
    "explain": "Erythromycin and clarithromycin inhibit CYP3A4, elevating plasma simvastatin concentrations and increasing the risk of skeletal muscle injury (myalgia, myositis, rhabdomyolysis).",
@@ -1095,10 +1095,10 @@
    "sub": "Drug Interactions",
    "q": "Why does combining aspirin or other NSAIDs with warfarin increase bleeding risk through both pharmacokinetic and pharmacodynamic mechanisms?",
    "options": [
-    "Aspirin stimulates hepatic synthesis of clotting factors II, VII, IX, and X",
-    "Warfarin inhibits platelet COX-1 irreversibly",
-    "NSAIDs increase vitamin K absorption in the ileum",
-    "NSAIDs inhibit platelet aggregation via COX-1 blockade, can irritate gastric mucosa, and may displace warfarin from albumin or inhibit its metabolism"
+    "Aspirin increases hepatic clotting-factor synthesis",
+    "Warfarin irreversibly blocks platelet COX-1",
+    "NSAIDs increase vitamin K absorption",
+    "NSAIDs impair platelet function and may increase bleeding risk with warfarin"
    ],
    "answer": 3,
    "explain": "Impairing primary haemostasis (platelets) and mucosal integrity while anticoagulating via vitamin K epoxide reductase inhibition creates a high risk of gastrointestinal and systemic bleeding.",
@@ -1118,10 +1118,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "How is 'drug tolerance' defined in pharmacology?",
    "options": [
-    "A decrease in response to a given dose of a drug after repeated administration, requiring a larger dose to achieve the same effect",
-    "An allergic rash appearing after the first dose of an antibiotic",
-    "Complete elimination of a drug from the body within 1 hour",
-    "A genetic mutation preventing drug metabolism"
+    "Reduced response after repeated dosing, requiring a higher dose",
+    "An allergic rash after the first antibiotic dose",
+    "Complete drug elimination within an hour",
+    "A genetic block in drug metabolism"
    ],
    "answer": 0,
    "explain": "Tolerance means a progressively larger dose is needed to produce the same magnitude of effect that was originally produced by a smaller dose.",
@@ -1141,10 +1141,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "What is 'cross-tolerance'?",
    "options": [
-    "Tolerance developing to a drug only when taken with food",
-    "Tolerance to one drug conferring reduced sensitivity to another drug, usually within the same pharmacological class or acting via a similar mechanism",
-    "Tolerance that occurs exclusively in elderly patients",
-    "A condition where a drug becomes more potent every day"
+    "Tolerance only when a drug is taken with food",
+    "Tolerance to one drug reduces response to a related drug",
+    "Tolerance occurs only in older adults",
+    "A drug becomes more potent each day"
    ],
    "answer": 1,
    "explain": "Cross-tolerance occurs among drugs sharing common pathways—for example, tolerance to morphine confers cross-tolerance to heroin or pethidine, and chronic alcohol users show cross-tolerance to benzodiazepines or barbiturates.",
@@ -1164,10 +1164,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "What is 'physical dependence'?",
    "options": [
-    "An inability to stop taking a drug because of craving alone without any physiological symptoms",
-    "An altered physiological state produced by repeated drug administration that results in a characteristic withdrawal (abstinence) syndrome when the drug is stopped or antagonized",
-    "A permanent structural deformity of a limb",
-    "A preference for intravenous over oral tablets"
+    "Craving without physiological adaptation",
+    "Physiological adaptation causing withdrawal when a drug is stopped",
+    "Permanent limb deformity",
+    "Preference for intravenous over oral medication"
    ],
    "answer": 1,
    "explain": "Physical dependence is neuroadaptation to chronic drug exposure such that abrupt cessation or antagonist administration (e.g., naloxone in opioid dependence) precipitates a characteristic withdrawal syndrome.",
@@ -1187,10 +1187,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "What is 'psychological dependence' (addiction/substance use disorder behavior)?",
    "options": [
-    "Slowing of glomerular filtration rate after chronic therapy",
-    "Development of a skin rash upon sun exposure",
-    "A compulsive drive or craving to seek and take a drug for its rewarding, pleasurable, or relief-producing effects despite harmful consequences",
-    "Reduction in plasma albumin concentration"
+    "Reduced GFR after chronic therapy",
+    "Photosensitive rash",
+    "Compulsive drug-seeking despite harmful consequences",
+    "Low plasma albumin"
    ],
    "answer": 2,
    "explain": "Psychological dependence involves reward-circuit reinforcement, craving, loss of control over drug use, and continued use despite adverse medical, social, or legal consequences.",
@@ -1210,10 +1210,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "Which brain pathway and neurotransmitter are central to the acute rewarding and reinforcing effects of most addictive drugs (such as opioids, stimulants, nicotine, and alcohol)?",
    "options": [
-    "The nigrostriatal GABA pathway",
-    "The spinothalamic substance P pathway",
-    "The cerebellar Purkinje glutamate pathway",
-    "The mesolimbic dopaminergic pathway projecting from the ventral tegmental area (VTA) to the nucleus accumbens"
+    "Nigrostriatal GABA pathway",
+    "Spinothalamic substance P pathway",
+    "Cerebellar Purkinje glutamate pathway",
+    "Mesolimbic dopamine pathway from VTA to nucleus accumbens"
    ],
    "answer": 3,
    "explain": "Most drugs of abuse increase dopamine release in the nucleus accumbens via the mesolimbic reward circuit originating in the ventral tegmental area.",
@@ -1234,10 +1234,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "Which clinical features characterize acute opioid withdrawal syndrome?",
    "options": [
-    "Rhinorrhoea, lacrimation, piloerection ('gooseflesh'), yawning, mydriasis, abdominal cramps, diarrhoea, anxiety, and tachycardia",
-    "Deep coma, pinpoint pupils, and respiratory depression",
-    "Severe bradycardia, hypotension, and hypothermia",
-    "Complete absence of autonomic or gastrointestinal symptoms"
+    "Rhinorrhoea, lacrimation, piloerection, yawning, mydriasis and diarrhoea",
+    "Coma, pinpoint pupils and respiratory depression",
+    "Bradycardia, hypotension and hypothermia",
+    "No autonomic or gastrointestinal symptoms"
    ],
    "answer": 0,
    "explain": "Opioid withdrawal produces a classic sympathetic/autonomic rebound picture—lacrimation, rhinorrhoea, piloerection, dilated pupils, sweating, pilomotor erection, nausea, cramps, and diarrhoea—though it is rarely fatal on its own in healthy adults.",
@@ -1347,10 +1347,10 @@
    "sub": "Drug Dependence and Tolerance",
    "q": "Why should routine flumazenil administration be avoided in a patient with suspected mixed overdose of benzodiazepines and tricyclic antidepressants (TCAs) or in chronic benzodiazepine dependence?",
    "options": [
-    "Flumazenil causes severe hyperglycaemia within 2 minutes",
-    "Reversing GABA-A enhancement can unmask severe tricyclic-induced seizures or arrhythmias and precipitate acute benzodiazepine withdrawal",
-    "Flumazenil converts benzodiazepines into toxic cyanide",
-    "Flumazenil blocks renal filtration of glucose"
+    "Flumazenil causes severe hyperglycaemia",
+    "It may precipitate seizures or arrhythmias in mixed overdose and acute benzodiazepine withdrawal",
+    "It converts benzodiazepines into cyanide",
+    "It blocks renal glucose filtration"
    ],
    "answer": 1,
    "explain": "Benzodiazepines provide anticonvulsant protection against TCA toxicity; antagonizing them with flumazenil can trigger refractory seizures and severe withdrawal in dependent patients.",
@@ -1463,9 +1463,9 @@
    "q": "In organophosphate poisoning, why does pralidoxime fail to restore acetylcholinesterase activity if administered too late after exposure?",
    "options": [
     "Pralidoxime is destroyed by gastric acid",
-    "Pralidoxime cannot cross the glomerular membrane",
-    "The phosphorylated enzyme undergoes 'aging' (dealkylation), becoming resistant to oxime-mediated reactivation",
-    "Organophosphates permanently delete the acetylcholinesterase gene"
+    "It cannot cross the glomerular membrane",
+    "Aging of phosphorylated AChE makes it resistant to oxime reactivation",
+    "Organophosphates delete the AChE gene"
    ],
    "answer": 2,
    "explain": "Once the phosphoryl-enzyme complex loses an alkyl group ('aging'), the bond becomes too strong for pralidoxime to cleave, making early administration crucial.",
@@ -1557,10 +1557,10 @@
    "sub": "Antidotes and Poisoning Management",
    "q": "Why must calcium disodium edetate (CaNa2EDTA) rather than disodium edetate (Na2EDTA) be used to chelate lead?",
    "options": [
-    "Disodium EDTA is insoluble in water",
-    "Calcium disodium EDTA blocks absorption of lead in the colon",
-    "Disodium EDTA binds plasma calcium and can cause fatal hypocalcaemia and tetany",
-    "Calcium disodium EDTA increases blood glucose levels"
+    "Disodium EDTA is water-insoluble",
+    "CaNa2EDTA blocks colonic lead absorption",
+    "Disodium EDTA chelates calcium and can cause severe hypocalcaemia",
+    "CaNa2EDTA raises blood glucose"
    ],
    "answer": 2,
    "explain": "Na2EDTA chelates free calcium ions in plasma, risking severe hypocalcaemia, whereas CaNa2EDTA exchanges its calcium for lead without depleting circulating calcium.",
@@ -1651,10 +1651,10 @@
    "sub": "Antidotes and Poisoning Management",
    "q": "Why can methylene blue be ineffective or even worsen haemolysis when used to treat methaemoglobinaemia in a patient with G6PD deficiency?",
    "options": [
-    "Methylene blue blocks oxygen binding to normal haemoglobin irreversibly",
-    "Methylene blue accelerates renal excretion of glucose",
-    "Methylene blue requires NADPH generated via G6PD to act and can induce oxidative haemolysis in G6PD-deficient red blood cells",
-    "Methylene blue increases conversion of methaemoglobin into carboxyhaemoglobin"
+    "Methylene blue irreversibly blocks oxygen binding",
+    "It accelerates urinary glucose excretion",
+    "It requires G6PD-derived NADPH and may worsen haemolysis in G6PD deficiency",
+    "It converts methaemoglobin to carboxyhaemoglobin"
    ],
    "answer": 2,
    "explain": "Reduction of methylene blue depends on NADPH from the G6PD pathway; in G6PD deficiency, NADPH is limited and methylene blue can act as an oxidant causing haemolysis (ascorbic acid is an alternative).",
@@ -1721,9 +1721,9 @@
    "q": "Which adverse effect is a classic Type A (pharmacological) reaction to angiotensin-converting enzyme (ACE) inhibitors such as captopril or enalapril?",
    "options": [
     "Malignant hyperthermia",
-    "Dry, non-productive cough (due to accumulation of bradykinin and substance P)",
+    "Dry cough from bradykinin accumulation",
     "Phocomelia",
-    "Agranulocytosis from G6PD deficiency"
+    "G6PD-related agranulocytosis"
    ],
    "answer": 1,
    "explain": "ACE also degrades bradykinin and substance P; their accumulation sensitizes airway sensory C-fibers, causing a persistent dry cough that resolves after stopping the ACE inhibitor.",
