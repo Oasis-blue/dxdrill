@@ -1151,6 +1151,70 @@
       ],
       "verified": false,
       "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-protein-005",
+      "type": "tf",
+      "topic": "bc-amino-acids-and-proteins",
+      "level": 2,
+      "sub": "Protein structure",
+      "q": "Regarding protein structure, all the following statements are true except:",
+      "items": [
+        {
+          "text": "The primary structure of a protein is its amino-acid sequence.",
+          "answer": true,
+          "explain": "Primary structure is the linear sequence of amino-acid residues joined by peptide bonds."
+        },
+        {
+          "text": "Alpha helices and beta-pleated sheets are forms of secondary structure.",
+          "answer": true,
+          "explain": "These regular local folding patterns are stabilised mainly by hydrogen bonds involving peptide-backbone groups."
+        },
+        {
+          "text": "Tertiary structure describes the overall three-dimensional conformation of a single polypeptide chain.",
+          "answer": true,
+          "explain": "Tertiary structure is the overall three-dimensional folding of one polypeptide, involving side-chain interactions and other stabilising forces."
+        },
+        {
+          "text": "Ordinary denaturation necessarily hydrolyses peptide bonds and destroys the primary structure.",
+          "answer": false,
+          "explain": "Denaturation disrupts higher-order structure and biological activity but usually does not cleave the covalent peptide bonds of the primary sequence."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-protein-006",
+      "type": "tf",
+      "topic": "bc-amino-acids-and-proteins",
+      "level": 2,
+      "sub": "Amino acids",
+      "q": "Regarding amino acids, all the following statements are false except:",
+      "items": [
+        {
+          "text": "Glycine is the only standard amino acid whose alpha carbon is not chiral.",
+          "answer": true,
+          "explain": "Glycine has two hydrogen atoms attached to its alpha carbon, so that carbon is not an asymmetric centre."
+        },
+        {
+          "text": "All amino acids have an aromatic side chain.",
+          "answer": false,
+          "explain": "Only a subset, including phenylalanine, tyrosine and tryptophan, have aromatic side chains."
+        },
+        {
+          "text": "Humans can synthesise every amino acid in quantities sufficient for all physiological needs.",
+          "answer": false,
+          "explain": "Several amino acids are essential and must be supplied by the diet in adequate amounts."
+        },
+        {
+          "text": "The peptide bond freely rotates because it is a simple single bond.",
+          "answer": false,
+          "explain": "Resonance gives the peptide C–N bond partial double-bond character, restricting rotation and favouring a planar arrangement."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
     }
   ]
 }
