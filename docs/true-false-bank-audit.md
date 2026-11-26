@@ -33,3 +33,12 @@ These checks reduce preventable editorial defects; they do not guarantee that a 
 - Continue source-checking existing and new stems individually.
 - Expand into additional uncovered Anatomy, Physiology and Medical Biochemistry topics.
 - Add the automated checks to the repository's normal validation workflow so future imports cannot silently reintroduce these defects.
+
+
+## Batch 4 — 2026-11-26
+
+Eight additional stems were added across gastrointestinal physiology, pancreatic and adrenal endocrinology, lipid metabolism, inguinal canal anatomy and femoral triangle anatomy. New stems each have four statements, individually written explanations and per-stem reference links.
+
+The True/False loader was also changed to schedule the two True/False data files before the ordinary question files in the existing concurrent loading pool. While the first True/False stems are pending, the loading screen now displays a rotating nugget from the existing DxDrill nugget collection. The nugget rotation stops as soon as stems arrive or loading finishes.
+
+Current composition after this batch: 65 stems, 265 statements, across 30 topics. All content remains draft/unverified pending independent textbook and source review.
