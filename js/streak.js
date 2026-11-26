@@ -26,12 +26,37 @@
 
   /* Toasts: one at a time, polite for screen readers, never blocks a tap. */
   var queue = [], showing = false;
-  DX.toast = function (msg) { queue.push(String(msg)); if (!showing) next(); };
+  DX.toast = function (msg, kind) {
+    queue.push({ message: String(msg), kind: kind === "loading" || kind === "success" ? kind : "" });
+    if (!showing) next();
+  };
   function next() {
-    var m = queue.shift();
-    if (!m) { showing = false; return; }
+    var item = queue.shift();
+    if (!item) { showing = false; return; }
     showing = true;
-    var d = document.createElement("div"); d.className = "dxtoast"; d.setAttribute("role", "status"); d.textContent = m;
+    var d = document.createElement("div");
+    d.className = "dxtoast" + (item.kind ? " dxtoast--" + item.kind : "");
+    d.setAttribute("role", "status");
+    if (item.kind) {
+      var icon = document.createElement("span");
+      icon.className = "dxtoast__icon";
+      icon.setAttribute("aria-hidden", "true");
+      icon.textContent = item.kind === "success" ? "✓" : "";
+      var copy = document.createElement("span");
+      copy.className = "dxtoast__copy";
+      var title = document.createElement("strong");
+      title.className = "dxtoast__title";
+      title.textContent = item.kind === "loading" ? "Loading more questions" : "Question bank ready";
+      var detail = document.createElement("span");
+      detail.className = "dxtoast__detail";
+      detail.textContent = item.message;
+      copy.appendChild(title);
+      copy.appendChild(detail);
+      d.appendChild(icon);
+      d.appendChild(copy);
+    } else {
+      d.textContent = item.message;
+    }
     document.body.appendChild(d);
     setTimeout(function () { d.classList.add("out"); }, 3600);
     setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); next(); }, 4000);
