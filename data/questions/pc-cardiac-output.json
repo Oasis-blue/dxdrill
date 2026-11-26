@@ -1,582 +1,582 @@
 {
- "topic": "pc-cardiac-output",
- "questions": [
-  {
-   "id": "pc-cardiac-output-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Definitions and Normal Values",
-   "q": "What is the standard formula defining cardiac output (CO) and its normal resting value in a healthy 70 kg adult male?",
-   "options": [
-    "CO = Stroke Volume x Heart Rate; approximately 5.0 to 5.5 L/min",
-    "CO = End-Diastolic Volume x Heart Rate; approximately 9.0 L/min",
-    "CO = Mean Arterial Pressure x Total Peripheral Resistance; approximately 500 mL/min",
-    "CO = Stroke Volume / Heart Rate; approximately 1.0 L/min"
-   ],
-   "answer": 0,
-   "explain": "Cardiac output is the volume of blood pumped by each ventricle per minute (CO = SV x HR). At a resting stroke volume of ~70 mL and heart rate of ~72 bpm, resting CO averages ~5.0 to 5.5 L/min.",
-   "verified": false,
-   "open": {
-    "q": "State the mathematical formula for cardiac output and give its normal resting value in liters per minute for a healthy 70 kg adult male.",
-    "accept": [
-     "CO = Stroke volume x Heart rate; 5 to 5.5 L/min",
-     "Stroke volume multiplied by heart rate; ~5 L/min"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Definitions and Normal Values",
-   "q": "What is the cardiac index (CI), and what is its normal resting value in healthy adults?",
-   "options": [
-    "Stroke volume divided by end-diastolic volume; normally 60%",
-    "Cardiac output divided by total body surface area (BSA); normally 3.0 to 3.4 L/min/m2",
-    "Heart rate divided by systolic blood pressure; normally 0.6",
-    "Cardiac output multiplied by body weight in kilograms; normally 350 L/min"
-   ],
-   "answer": 1,
-   "explain": "Because resting cardiac output varies directly with body size, normalizing CO to body surface area (average BSA ~1.7 m2) yields the cardiac index (CI = CO / BSA), normally ~3.0 to 3.4 L/min/m2.",
-   "verified": false,
-   "open": {
-    "q": "Define cardiac index and state its normal resting reference value in healthy adults.",
-    "accept": [
-     "Cardiac output divided by body surface area; 3.0 to 3.4 L/min/m2",
-     "CO / BSA; approximately 3.2 L/min/m2"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Definitions and Normal Values",
-   "q": "What is cardiac reserve, and roughly how much can cardiac output increase in a healthy untrained young adult versus a trained endurance athlete during maximal exercise?",
-   "options": [
-    "The difference between right and left ventricular outputs; increases by 20%",
-    "The residual blood remaining in the ventricle after systole; increases by 50%",
-    "The maximum percentage that cardiac output can rise above normal resting level; ~300-400% (up to ~20-25 L/min) in untrained adults and ~500-600% (up to ~30-35 L/min) in elite athletes",
-    "The volume of blood stored in the spleen; increases by 10%"
-   ],
-   "answer": 2,
-   "explain": "Cardiac reserve is the capacity to elevate CO above resting baseline (Maximum CO minus Resting CO, or expressed as a percentage). Untrained adults reach ~20-25 L/min (~300-400% reserve), while elite marathon runners can exceed 30-35 L/min.",
-   "verified": false,
-   "open": {
-    "q": "Define cardiac reserve and give the approximate maximal cardiac output achievable during strenuous exercise in an untrained adult versus a trained endurance athlete.",
-    "accept": [
-     "Maximum CO minus resting CO; ~20-25 L/min in untrained adults and ~30-35 L/min in trained athletes",
-     "Percentage increase in CO above rest; 300-400% untrained vs 500-600% athlete"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Measurement of Cardiac Output",
-   "q": "Which equation expresses the direct Fick principle for measuring cardiac output?",
-   "options": [
-    "CO = (Arterial O2 content - Venous O2 content) / Whole-body O2 consumption",
-    "CO = Whole-body O2 consumption x (Arterial O2 content - Mixed venous O2 content)",
-    "CO = Mixed venous O2 content / Arterial O2 content",
-    "CO = Whole-body O2 consumption (VO2) / (Arterial O2 content - Mixed venous O2 content)"
-   ],
-   "answer": 3,
-   "explain": "By conservation of mass across the pulmonary capillaries, O2 uptake by lungs (VO2) equals blood flow (CO) multiplied by the arteriovenous O2 content difference (CaO2 - CvO2); rearranging gives CO = VO2 / (CaO2 - CvO2).",
-   "verified": false,
-   "open": {
-    "q": "Write the Fick principle formula used to calculate cardiac output from oxygen consumption and blood oxygen contents.",
-    "accept": [
-     "CO = VO2 / (CaO2 - CvO2)",
-     "Cardiac output = Oxygen consumption / (Arterial O2 content - Mixed venous O2 content)"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-005",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Measurement of Cardiac Output",
-   "q": "In a Fick principle determination, a patient has an oxygen consumption (VO2) of 250 mL/min, a systemic arterial O2 content of 200 mL O2/L blood, and a pulmonary artery mixed venous O2 content of 150 mL O2/L blood. What is the cardiac output?",
-   "options": [
-    "5.0 L/min",
-    "2.5 L/min",
-    "12.5 L/min",
-    "1.25 L/min"
-   ],
-   "answer": 0,
-   "explain": "CO = VO2 / (CaO2 - CvO2) = 250 mL/min / (200 - 150 mL/L) = 250 / 50 = 5.0 L/min.",
-   "verified": false,
-   "open": {
-    "q": "Calculate cardiac output if oxygen consumption is 250 mL/min, arterial oxygen content is 200 mL/L, and mixed venous oxygen content is 150 mL/L.",
-    "accept": [
-     "5 L/min",
-     "5.0 liters per minute",
-     "5000 mL/min"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Measurement of Cardiac Output",
-   "q": "From which anatomical site must a blood sample be drawn to obtain true mixed venous oxygen content (CvO2) for the Fick cardiac output calculation?",
-   "options": [
-    "Antecubital vein",
-    "Pulmonary artery (via a Swan-Ganz catheter)",
-    "Inferior vena cava",
-    "Coronary sinus"
-   ],
-   "answer": 1,
-   "explain": "Different organs extract varying amounts of O2 (for example, myocardium extracts ~65% whereas kidneys extract ~10%), so venous blood from the SVC, IVC, and coronary sinus does not fully mix until reaching the right ventricle and pulmonary artery.",
-   "verified": false,
-   "open": {
-    "q": "From which blood vessel must blood be sampled to measure true mixed venous oxygen content in the direct Fick method?",
-    "accept": [
-     "Pulmonary artery",
-     "Main pulmonary artery"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Measurement of Cardiac Output",
-   "q": "In the thermodilution (Stewart-Hamilton indicator dilution) technique using a pulmonary artery catheter, how does the area under the downstream temperature-time curve relate to cardiac output?",
-   "options": [
-    "Cardiac output is directly proportional to the area under the curve",
-    "Cardiac output is independent of the area under the curve",
-    "Cardiac output is inversely proportional to the area under the curve",
-    "Cardiac output equals the square of the peak temperature drop"
-   ],
-   "answer": 2,
-   "explain": "When cold saline is injected into the right atrium, rapid blood flow washes the cold bolus past the pulmonary artery thermistor quickly, producing a small area under the curve; slow blood flow produces a broad curve with a large area (CO = Indicator dose / Area under curve).",
-   "verified": false,
-   "open": {
-    "q": "In indicator-dilution and thermodilution measurements of cardiac output, how is cardiac output mathematically related to the area under the primary concentration-time or temperature-time curve?",
-    "accept": [
-     "Inversely proportional to the area under the curve",
-     "CO equals amount of indicator divided by area under the curve"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Regulation of Stroke Volume",
-   "q": "Which three primary physiological determinants govern ventricular stroke volume?",
-   "options": [
-    "Heart rate, blood viscosity, and plasma osmolarity",
-    "Coronary blood flow, bronchial tone, and glomerular filtration rate",
-    "Carotid sinus firing, jugular venous pressure, and hematocrit",
-    "Preload, myocardial contractility (inotropy), and afterload"
-   ],
-   "answer": 3,
-   "explain": "Stroke volume is determined by preload (end-diastolic sarcomere stretch/EDV), intrinsic myocardial contractility (force generated at a given preload), and afterload (arterial impedance opposing ejection).",
-   "verified": false,
-   "open": {
-    "q": "Name the three principal physiological factors that determine ventricular stroke volume.",
-    "accept": [
-     "Preload, contractility, and afterload",
-     "Preload, inotropy, and afterload"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-009",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Stroke Volume",
-   "q": "How does homeometric autoregulation (the Anrep effect) differ from heterometric autoregulation (the Frank-Starling mechanism)?",
-   "options": [
-    "The Anrep effect increases myocardial contractility at a constant end-diastolic fiber length in response to sustained elevated afterload, whereas the Frank-Starling mechanism increases force via increased end-diastolic sarcomere stretch",
-    "The Anrep effect lowers heart rate during inspiration, whereas the Frank-Starling mechanism raises heart rate during expiration",
-    "The Anrep effect depends on vagal acetylcholine release, whereas the Frank-Starling mechanism depends on aldosterone",
-    "The Anrep effect occurs only in skeletal muscle, whereas the Frank-Starling mechanism occurs only in smooth muscle"
-   ],
-   "answer": 0,
-   "explain": "Heterometric regulation adjusts force through changes in initial sarcomere length (EDV); homeometric regulation (Anrep effect and Bowditch staircase/Treppe phenomenon) enhances contractility independently of fiber length by increasing intracellular Ca2+ availability.",
-   "verified": false,
-   "open": {
-    "q": "Contrast heterometric autoregulation (Frank-Starling mechanism) with homeometric autoregulation (Anrep effect) in cardiac muscle.",
-    "accept": [
-     "Heterometric depends on changes in end-diastolic fiber length, whereas homeometric increases contractility without changing resting fiber length",
-     "Frank-Starling acts via increased preload/length; Anrep increases contractility at constant fiber length after raised afterload"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Stroke Volume",
-   "q": "What is the Bowditch effect (treppe or force-frequency relationship) in ventricular myocardium?",
-   "options": [
-    "A progressive fall in stroke volume whenever venous return rises",
-    "A stepwise increase in myocardial contractile force as heart rate increases, caused by cumulative intracellular Ca2+ loading",
-    "Immediate cardiac arrest triggered by carotid sinus massage",
-    "Reflex vasodilation of skeletal muscle arterioles during sleep"
-   ],
-   "answer": 1,
-   "explain": "Higher heart rates produce more action potentials per minute, increasing total L-type Ca2+ influx and outpacing NCX extrusion so sarcoplasmic reticulum Ca2+ stores build up and strengthen contraction.",
-   "verified": false,
-   "open": {
-    "q": "Explain the physiological mechanism behind the Bowditch (treppe or staircase) phenomenon when heart rate increases.",
-    "accept": [
-     "Increased frequency of depolarization causes cumulative intracellular Ca2+ accumulation in the sarcoplasmic reticulum, boosting contractility",
-     "More frequent Ca2+ influx per minute increases SR Ca2+ stores and contractile force"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-011",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Venous Return and Guyton Vascular Function Curves",
-   "q": "According to Guyton's hemodynamic equation for venous return (VR), which formula defines venous return?",
-   "options": [
-    "VR = Right atrial pressure / Mean systemic filling pressure",
-    "VR = Mean arterial pressure x Venous compliance",
-    "VR = (Mean systemic filling pressure - Right atrial pressure) / Resistance to venous return",
-    "VR = Stroke volume x Right atrial pressure"
-   ],
-   "answer": 2,
-   "explain": "Blood flows back to the right atrium down the pressure gradient between the mean systemic filling pressure (Pmsf, ~7 mmHg) and right atrial pressure (Pra, ~0-2 mmHg), divided by resistance to venous return (Rvr).",
-   "verified": false,
-   "open": {
-    "q": "Write Guyton's equation relating venous return (VR) to mean systemic filling pressure (Pmsf), right atrial pressure (Pra), and resistance to venous return (Rvr).",
-    "accept": [
-     "VR = (Pmsf - Pra) / Rvr",
-     "Venous return = (Mean systemic filling pressure - Right atrial pressure) / Resistance to venous return"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Venous Return and Guyton Vascular Function Curves",
-   "q": "What is the mean systemic filling pressure (Pmsf), and what is its normal value in a healthy resting adult?",
-   "options": [
-    "Peak aortic pressure during systole; normally 120 mmHg",
-    "Capillary hydrostatic pressure at the arteriolar end; normally 35 mmHg",
-    "Pulmonary artery wedge pressure; normally 25 mmHg",
-    "The equilibrium pressure throughout the systemic circulation if the heart were stopped instantaneously and pressures allowed to equalize; normally ~7 mmHg"
-   ],
-   "answer": 3,
-   "explain": "Pmsf (~7 mmHg) reflects the degree of filling (stressed blood volume) relative to systemic vascular compliance; it rises with blood transfusion or sympathetic venoconstriction and falls with hemorrhage.",
-   "verified": false,
-   "open": {
-    "q": "Define mean systemic filling pressure (Pmsf) and state its normal value in mmHg.",
-    "accept": [
-     "Equilibrium pressure throughout the systemic circulation when the heart is stopped; ~7 mmHg",
-     "Static pressure in systemic vessels at zero flow; about 7 mmHg"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-013",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Venous Return and Guyton Vascular Function Curves",
-   "q": "On Guyton's venous return (vascular function) curve, why does venous return reach a flat plateau when right atrial pressure drops below 0 mmHg?",
-   "options": [
-    "Great veins entering the thorax collapse when extramural atmospheric/intrathoracic pressure exceeds negative intraluminal venous pressure",
-    "The tricuspid valve locks shut permanently below 0 mmHg",
-    "Skeletal muscle pumps stop contracting at negative right atrial pressure",
-    "The sinoatrial node ceases firing when right atrial pressure is negative"
-   ],
-   "answer": 0,
-   "explain": "Because thin-walled extrathoracic veins (such as the venae cavae entering the chest) are collapsible, suction below ~0 mmHg collapses the vessel wall and prevents any further increase in venous return.",
-   "verified": false,
-   "open": {
-    "q": "Why does venous return fail to increase further when right atrial pressure falls lower than 0 mmHg?",
-    "accept": [
-     "Collapse of the great veins entering the thorax",
-     "Collapsible venae cavae pinch shut when intraluminal pressure becomes negative"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Venous Return and Guyton Vascular Function Curves",
-   "q": "How do acute blood volume expansion (transfusion) and sympathetic venoconstriction shift the Guyton venous return curve?",
-   "options": [
-    "They shift the curve downward and leftward by lowering mean systemic filling pressure",
-    "They increase mean systemic filling pressure (Pmsf), shifting the venous return curve upward and rightward to a higher equilibrium cardiac output",
-    "They alter only the cardiac function curve without changing the vascular function curve",
-    "They collapse the pulmonary veins and reduce left atrial pressure to zero"
-   ],
-   "answer": 1,
-   "explain": "Both increased blood volume and alpha-1-mediated constriction of compliant venous capacitance reservoirs raise Pmsf, shifting the vascular function curve right/upward and intersecting the cardiac curve at higher right atrial pressure and higher cardiac output.",
-   "verified": false,
-   "open": {
-    "q": "How do blood transfusion and sympathetic venoconstriction affect mean systemic filling pressure (Pmsf) and the position of the venous return curve?",
-    "accept": [
-     "They increase Pmsf and shift the venous return curve upward and to the right",
-     "Raise mean systemic filling pressure and shift the vascular function curve rightward"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-015",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Venous Return and Guyton Vascular Function Curves",
-   "q": "In an arteriovenous (AV) fistula, blood bypasses high-resistance arterioles and flows directly from an artery into a vein. How does this alter resistance to venous return and steady-state cardiac output?",
-   "options": [
-    "Increases resistance to venous return and lowers cardiac output",
-    "Has no effect on venous return or cardiac output",
-    "Decreases resistance to venous return, rotating the venous return curve clockwise upward and markedly increasing cardiac output",
-    "Lowers heart rate to 30 beats/min via the Bainbridge reflex"
-   ],
-   "answer": 2,
-   "explain": "Shunting blood directly from artery to vein dramatically drops total peripheral resistance and resistance to venous return (Rvr), increasing the upward slope of the venous return curve and producing high-output cardiac states.",
-   "verified": false,
-   "open": {
-    "q": "How does a large arteriovenous (AV) shunt affect resistance to venous return and steady-state cardiac output?",
-    "accept": [
-     "Decreases resistance to venous return and increases cardiac output",
-     "Lowers Rvr, steepens the venous return curve, and elevates CO"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Factors Facilitating Venous Return",
-   "q": "Which four physiological mechanisms assist venous return from the lower extremities and abdomen back to the right atrium against gravity?",
-   "options": [
-    "Arteriolar constriction, lymphatic blockade, bronchoconstriction, and Valsalva maneuver",
-    "Mitral valve closure, carotid sinus baroreflex, renal natriuresis, and sweating",
-    "Aortic elastic recoil, coronary sinus flow, cerebrospinal fluid absorption, and peristalsis",
-    "Skeletal muscle pump with one-way venous valves, respiratory (abdominothoracic) pump, sympathetic venoconstriction, and cardiac suction"
-   ],
-   "answer": 3,
-   "explain": "Rhythmic calf muscle contraction compresses deep veins past bicuspid valves (muscle pump); inspiration lowers intrathoracic pressure while raising intra-abdominal pressure (respiratory pump); sympathetic tone mobilizes unstressed venous blood; and downward displacement of the AV valve ring during ventricular ejection draws blood into the atria.",
-   "verified": false,
-   "open": {
-    "q": "List three physiological mechanisms that promote venous return from the lower body to the heart.",
-    "accept": [
-     "Skeletal muscle pump, respiratory pump, and sympathetic venoconstriction",
-     "Venous valves with muscle pump, thoracic respiratory pump, and cardiac suction"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Heart Rate and Bainbridge Reflex",
-   "q": "What is the Bainbridge (atrial) reflex?",
-   "options": [
-    "Reflex tachycardia triggered by stretch of atrial volume receptors when venous return and right atrial pressure rise acutely",
-    "Reflex bradycardia triggered by high pressure in the carotid sinus",
-    "Apnea and bradycardia triggered by cold water on the face",
-    "Coronary vasodilation triggered by myocardial adenosine release"
-   ],
-   "answer": 0,
-   "explain": "Rapid intravenous infusion stretches low-pressure type B atrial mechanoreceptors, sending vagal afferents to the medulla to increase sympathetic outflow to the SA node (preventing blood damming in the veins and atria).",
-   "verified": false,
-   "open": {
-    "q": "Describe the stimulus and cardiovascular response of the Bainbridge reflex.",
-    "accept": [
-     "Increased right atrial filling/stretch causes reflex tachycardia to prevent venous congestion",
-     "Atrial volume receptor stretch triggers an increase in heart rate"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Heart Rate and Bainbridge Reflex",
-   "q": "Why does cardiac output fall precipitously if ventricular heart rate rises excessively above 180 to 200 beats per minute (such as in severe supraventricular tachycardia)?",
-   "options": [
-    "Myocardial actin and myosin filaments denature above 180 bpm",
-    "Diastolic filling time becomes so abbreviated that end-diastolic volume and stroke volume plummet faster than heart rate rises",
-    "The aortic valve cannot open more than 150 times per minute",
-    "Vagal tone overrides sympathetic stimulation at high heart rates"
-   ],
-   "answer": 1,
-   "explain": "Because tachycardia encroaches primarily on diastole, extreme heart rates shorten ventricular filling time severely, reducing preload and stroke volume so markedly that CO = HR x SV declines.",
-   "verified": false,
-   "open": {
-    "q": "Why does extreme tachycardia (higher than ~180-200 beats/min) reduce rather than increase cardiac output?",
-    "accept": [
-     "Diastolic filling time becomes too short, markedly reducing end-diastolic volume and stroke volume",
-     "Shortened diastole impairs ventricular filling and lowers stroke volume"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Physiological Variations in Cardiac Output",
-   "q": "What happens to cardiac output when a person moves rapidly from a supine (lying) position to an upright standing position?",
-   "options": [
-    "Cardiac output increases by 40% due to enhanced venous return",
-    "Cardiac output remains completely unchanged",
-    "Cardiac output decreases by approximately 20% due to gravitational pooling of ~500 mL of blood in lower-limb veins reducing preload",
-    "Cardiac output doubles because of the respiratory pump"
-   ],
-   "answer": 2,
-   "explain": "Standing pools roughly 500 mL of blood in compliant lower-extremity veins, decreasing venous return, EDV, and stroke volume by ~30-40%; baroreceptor-mediated reflex tachycardia partially compensates, leaving net CO ~20% lower than supine.",
-   "verified": false,
-   "open": {
-    "q": "How and why does cardiac output change when transitioning from lying supine to standing upright?",
-    "accept": [
-     "Decreases by about 20% due to gravitational venous pooling in the legs lowering venous return and stroke volume",
-     "CO falls (~20%) because venous pooling reduces preload"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Physiological Variations in Cardiac Output",
-   "q": "Which physiological state increases resting cardiac output by 30% to 50%, peaking around the end of the second to early third trimester?",
-   "options": [
-    "Deep non-REM sleep",
-    "Hypothyroidism",
-    "Acute hemorrhage",
-    "Normal pregnancy"
-   ],
-   "answer": 3,
-   "explain": "During pregnancy, blood volume expansion, low-resistance uteroplacental circulation, and elevated metabolic demand boost cardiac output by 30-50% above non-pregnant baseline.",
-   "verified": false,
-   "open": {
-    "q": "By approximately what percentage does maternal cardiac output increase during normal pregnancy?",
-    "accept": [
-     "30% to 50%",
-     "About 40%"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-021",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Physiological Variations in Cardiac Output",
-   "q": "During dynamic isotonic exercise (such as running), how do heart rate, stroke volume, and total peripheral resistance change to elevate cardiac output up to 4- or 5-fold?",
-   "options": [
-    "Heart rate increases markedly, stroke volume increases moderately (via increased venous return and beta-1 inotropy), and total peripheral resistance falls due to metabolic vasodilation in active skeletal muscles",
-    "Heart rate stays constant while stroke volume increases 5-fold",
-    "Total peripheral resistance doubles while stroke volume drops by half",
-    "Venous return decreases while myocardial contractility falls"
-   ],
-   "answer": 0,
-   "explain": "In dynamic exercise, sympathetic activation and vagal withdrawal raise HR (up to ~180-200 bpm) and contractility, muscle/respiratory pumps boost venous return and SV, and local metabolites (adenosine, K+, H+, NO) dilate muscle arterioles to lower TPR.",
-   "verified": false,
-   "open": {
-    "q": "Summarize the changes in heart rate, stroke volume, and total peripheral resistance that enable a large rise in cardiac output during dynamic aerobic exercise.",
-    "accept": [
-     "Heart rate rises sharply, stroke volume increases moderately, and total peripheral resistance decreases",
-     "Increased HR and SV combined with reduced TPR"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-022",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Pathological Variations in Cardiac Output",
-   "q": "Which group of clinical conditions produces a 'high-output' state characterized by chronically elevated resting cardiac output alongside reduced systemic vascular resistance?",
-   "options": [
-    "Myocardial infarction, cardiac tamponade, and severe hypothyroidism",
-    "Severe anemia, thyrotoxicosis (hyperthyroidism), beriberi (thiamine deficiency), and arteriovenous fistula",
-    "Hemorrhagic shock, aortic stenosis, and restrictive cardiomyopathy",
-    "Complete heart block, acute pulmonary embolism, and dehydration"
-   ],
-   "answer": 1,
-   "explain": "High-output states occur when reduced blood viscosity/tissue hypoxia (severe anemia), systemic vasodilation/hypermetabolism (thyrotoxicosis, wet beriberi), or direct vascular shunting (AV fistula, Paget bone disease) lower TPR and boost venous return.",
-   "verified": false,
-   "open": {
-    "q": "Name three pathological conditions that cause a high-output cardiac state.",
-    "accept": [
-     "Severe anemia, thyrotoxicosis, and beriberi",
-     "Anemia, hyperthyroidism, and arteriovenous fistula"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-023",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Pathological Variations in Cardiac Output",
-   "q": "A 42-year-old man involved in a high-speed road traffic accident presents with hypotension (BP 78/50 mmHg), tachycardia (132 bpm), distended jugular veins, and muffled heart sounds (Beck's triad). Echocardiography confirms acute pericardial tamponade. What is the direct hemodynamic mechanism reducing his cardiac output?",
-   "options": [
-    "Primary loss of SA node automaticity",
-    "Massive systemic arteriolar vasodilation",
-    "External intrapericardial fluid compression restricts ventricular diastolic expansion, equalizing diastolic pressures and severely reducing preload and stroke volume",
-    "Obstruction of the descending thoracic aorta"
-   ],
-   "answer": 2,
-   "explain": "In cardiac tamponade, fluid trapped inside the non-compliant pericardial sac compresses all cardiac chambers, preventing normal diastolic filling (impaired preload) so stroke volume and cardiac output fall precipitously despite high venous pressure.",
-   "verified": false,
-   "open": {
-    "q": "Explain how acute cardiac tamponade causes a rapid drop in cardiac output.",
-    "accept": [
-     "Intrapericardial pressure compresses the heart and prevents ventricular diastolic filling, reducing preload and stroke volume",
-     "Restricted diastolic expansion severely lowers ventricular preload and stroke volume"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-024",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Pathological Variations in Cardiac Output",
-   "q": "A 65-year-old man with decompensated left ventricular systolic heart failure receives an intravenous infusion of dobutamine (a beta-1 adrenergic agonist) and a venodilator. On Guyton's cardiac and vascular function curves, how does dobutamine alone shift the cardiac function curve?",
-   "options": [
-    "Downward and rightward (reduced output at every right atrial pressure)",
-    "It shifts only the venous return curve without affecting the heart",
-    "It eliminates the plateau of the cardiac function curve",
-    "Upward and leftward (steeper slope), increasing cardiac output at any given right atrial pressure while lowering right atrial pressure"
-   ],
-   "answer": 3,
-   "explain": "Positive inotropic stimulation shifts the cardiac output curve upward/leftward; intersecting the unchanged venous return curve yields a higher steady-state cardiac output and lower right atrial pressure (relieving venous congestion).",
-   "verified": false,
-   "open": {
-    "q": "How does a positive inotropic agent shift Guyton's cardiac output curve, and what happens to steady-state cardiac output and right atrial pressure?",
-    "accept": [
-     "Shifts the cardiac function curve upward and leftward, increasing cardiac output and lowering right atrial pressure",
-     "Upward shift of cardiac curve leading to higher CO and lower Pra"
-    ]
-   }
-  },
-  {
-   "id": "pc-cardiac-output-025",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Measurement of Cardiac Output",
-   "q": "Which non-invasive bedside imaging method measures cardiac output by combining the cross-sectional area of the left ventricular outflow tract (LVOT) with the velocity-time integral (VTI) of blood flow across the aortic valve?",
-   "options": [
-    "Doppler echocardiography",
-    "Chest radiography",
-    "Standard 12-lead surface ECG",
-    "Pulse oximetry"
-   ],
-   "answer": 0,
-   "explain": "Doppler echocardiography calculates stroke volume as LVOT area x LVOT VTI (velocity-time integral) and multiplies by heart rate to estimate cardiac output non-invasively without vascular catheterization.",
-   "verified": false,
-   "open": {
-    "q": "Name the non-invasive ultrasound technique used clinically to measure stroke volume and cardiac output across the left ventricular outflow tract.",
-    "accept": [
-     "Doppler echocardiography",
-     "Echocardiography",
-     "Transthoracic Doppler echo"
-    ]
-   }
-  }
- ]
+  "topic": "pc-cardiac-output",
+  "questions": [
+    {
+      "id": "pc-cardiac-output-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Definitions and Normal Values",
+      "q": "What is the standard formula defining cardiac output (CO) and its normal resting value in a healthy 70 kg adult male?",
+      "options": [
+        "CO = Stroke Volume x Heart Rate; approximately 5.0 to 5.5 L/min",
+        "CO = End-Diastolic Volume x Heart Rate; approximately 9.0 L/min",
+        "CO = Mean Arterial Pressure x Total Peripheral Resistance; approximately 500 mL/min",
+        "CO = Stroke Volume / Heart Rate; approximately 1.0 L/min"
+      ],
+      "answer": 0,
+      "explain": "Cardiac output is the volume of blood pumped by each ventricle per minute (CO = SV x HR). At a resting stroke volume of ~70 mL and heart rate of ~72 bpm, resting CO averages ~5.0 to 5.5 L/min.",
+      "verified": false,
+      "open": {
+        "q": "State the mathematical formula for cardiac output and give its normal resting value in liters per minute for a healthy 70 kg adult male.",
+        "accept": [
+          "CO = Stroke volume x Heart rate; 5 to 5.5 L/min",
+          "Stroke volume multiplied by heart rate; ~5 L/min"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Definitions and Normal Values",
+      "q": "What is the cardiac index (CI), and what is its normal resting value in healthy adults?",
+      "options": [
+        "Stroke volume divided by end-diastolic volume; normally 60%",
+        "Cardiac output divided by total body surface area (BSA); normally 3.0 to 3.4 L/min/m2",
+        "Heart rate divided by systolic blood pressure; normally 0.6",
+        "Cardiac output multiplied by body weight in kilograms; normally 350 L/min"
+      ],
+      "answer": 1,
+      "explain": "Because resting cardiac output varies directly with body size, normalizing CO to body surface area (average BSA ~1.7 m2) yields the cardiac index (CI = CO / BSA), normally ~3.0 to 3.4 L/min/m2.",
+      "verified": false,
+      "open": {
+        "q": "Define cardiac index and state its normal resting reference value in healthy adults.",
+        "accept": [
+          "Cardiac output divided by body surface area; 3.0 to 3.4 L/min/m2",
+          "CO / BSA; approximately 3.2 L/min/m2"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Definitions and Normal Values",
+      "q": "What is cardiac reserve, and roughly how much can cardiac output increase in a healthy untrained young adult versus a trained endurance athlete during maximal exercise?",
+      "options": [
+        "Cardiac reserve is the difference between right and left ventricular output",
+        "Cardiac reserve is the residual volume remaining after systole",
+        "Cardiac reserve is the capacity to raise output above rest; it is greater in trained endurance athletes",
+        "Cardiac reserve is the volume of blood stored in the spleen"
+      ],
+      "answer": 2,
+      "explain": "Cardiac reserve is the capacity to elevate CO above resting baseline (Maximum CO minus Resting CO, or expressed as a percentage). Untrained adults reach ~20-25 L/min (~300-400% reserve), while elite marathon runners can exceed 30-35 L/min.",
+      "verified": false,
+      "open": {
+        "q": "Define cardiac reserve and give the approximate maximal cardiac output achievable during strenuous exercise in an untrained adult versus a trained endurance athlete.",
+        "accept": [
+          "Maximum CO minus resting CO; ~20-25 L/min in untrained adults and ~30-35 L/min in trained athletes",
+          "Percentage increase in CO above rest; 300-400% untrained vs 500-600% athlete"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Measurement of Cardiac Output",
+      "q": "Which equation expresses the direct Fick principle for measuring cardiac output?",
+      "options": [
+        "CO = (Arterial O2 content - Venous O2 content) / Whole-body O2 consumption",
+        "CO = Whole-body O2 consumption x (Arterial O2 content - Mixed venous O2 content)",
+        "CO = Mixed venous O2 content / Arterial O2 content",
+        "CO = Whole-body O2 consumption (VO2) / (Arterial O2 content - Mixed venous O2 content)"
+      ],
+      "answer": 3,
+      "explain": "By conservation of mass across the pulmonary capillaries, O2 uptake by lungs (VO2) equals blood flow (CO) multiplied by the arteriovenous O2 content difference (CaO2 - CvO2); rearranging gives CO = VO2 / (CaO2 - CvO2).",
+      "verified": false,
+      "open": {
+        "q": "Write the Fick principle formula used to calculate cardiac output from oxygen consumption and blood oxygen contents.",
+        "accept": [
+          "CO = VO2 / (CaO2 - CvO2)",
+          "Cardiac output = Oxygen consumption / (Arterial O2 content - Mixed venous O2 content)"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Measurement of Cardiac Output",
+      "q": "In a Fick principle determination, a patient has an oxygen consumption (VO2) of 250 mL/min, a systemic arterial O2 content of 200 mL O2/L blood, and a pulmonary artery mixed venous O2 content of 150 mL O2/L blood. What is the cardiac output?",
+      "options": [
+        "5.0 L/min",
+        "2.5 L/min",
+        "12.5 L/min",
+        "1.25 L/min"
+      ],
+      "answer": 0,
+      "explain": "CO = VO2 / (CaO2 - CvO2) = 250 mL/min / (200 - 150 mL/L) = 250 / 50 = 5.0 L/min.",
+      "verified": false,
+      "open": {
+        "q": "Calculate cardiac output if oxygen consumption is 250 mL/min, arterial oxygen content is 200 mL/L, and mixed venous oxygen content is 150 mL/L.",
+        "accept": [
+          "5 L/min",
+          "5.0 liters per minute",
+          "5000 mL/min"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Measurement of Cardiac Output",
+      "q": "From which anatomical site must a blood sample be drawn to obtain true mixed venous oxygen content (CvO2) for the Fick cardiac output calculation?",
+      "options": [
+        "Antecubital vein",
+        "Pulmonary artery (via a Swan-Ganz catheter)",
+        "Inferior vena cava",
+        "Coronary sinus"
+      ],
+      "answer": 1,
+      "explain": "Different organs extract varying amounts of O2 (for example, myocardium extracts ~65% whereas kidneys extract ~10%), so venous blood from the SVC, IVC, and coronary sinus does not fully mix until reaching the right ventricle and pulmonary artery.",
+      "verified": false,
+      "open": {
+        "q": "From which blood vessel must blood be sampled to measure true mixed venous oxygen content in the direct Fick method?",
+        "accept": [
+          "Pulmonary artery",
+          "Main pulmonary artery"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Measurement of Cardiac Output",
+      "q": "In the thermodilution (Stewart-Hamilton indicator dilution) technique using a pulmonary artery catheter, how does the area under the downstream temperature-time curve relate to cardiac output?",
+      "options": [
+        "Cardiac output is directly proportional to the area under the curve",
+        "Cardiac output is independent of the area under the curve",
+        "Cardiac output is inversely proportional to the area under the curve",
+        "Cardiac output equals the square of the peak temperature drop"
+      ],
+      "answer": 2,
+      "explain": "When cold saline is injected into the right atrium, rapid blood flow washes the cold bolus past the pulmonary artery thermistor quickly, producing a small area under the curve; slow blood flow produces a broad curve with a large area (CO = Indicator dose / Area under curve).",
+      "verified": false,
+      "open": {
+        "q": "In indicator-dilution and thermodilution measurements of cardiac output, how is cardiac output mathematically related to the area under the primary concentration-time or temperature-time curve?",
+        "accept": [
+          "Inversely proportional to the area under the curve",
+          "CO equals amount of indicator divided by area under the curve"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Regulation of Stroke Volume",
+      "q": "Which three primary physiological determinants govern ventricular stroke volume?",
+      "options": [
+        "Heart rate, blood viscosity, and plasma osmolarity",
+        "Coronary blood flow, bronchial tone, and glomerular filtration rate",
+        "Carotid sinus firing, jugular venous pressure, and hematocrit",
+        "Preload, myocardial contractility (inotropy), and afterload"
+      ],
+      "answer": 3,
+      "explain": "Stroke volume is determined by preload (end-diastolic sarcomere stretch/EDV), intrinsic myocardial contractility (force generated at a given preload), and afterload (arterial impedance opposing ejection).",
+      "verified": false,
+      "open": {
+        "q": "Name the three principal physiological factors that determine ventricular stroke volume.",
+        "accept": [
+          "Preload, contractility, and afterload",
+          "Preload, inotropy, and afterload"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Stroke Volume",
+      "q": "How does homeometric autoregulation (the Anrep effect) differ from heterometric autoregulation (the Frank-Starling mechanism)?",
+      "options": [
+        "Anrep increases contractility at a given fibre length; Frank-Starling increases force through greater end-diastolic stretch",
+        "Anrep slows heart rate during inspiration; Frank-Starling raises it during expiration",
+        "Anrep depends on vagal acetylcholine; Frank-Starling depends on aldosterone",
+        "Anrep occurs only in skeletal muscle; Frank-Starling occurs only in smooth muscle"
+      ],
+      "answer": 0,
+      "explain": "Heterometric regulation adjusts force through changes in initial sarcomere length (EDV); homeometric regulation (Anrep effect and Bowditch staircase/Treppe phenomenon) enhances contractility independently of fiber length by increasing intracellular Ca2+ availability.",
+      "verified": false,
+      "open": {
+        "q": "Contrast heterometric autoregulation (Frank-Starling mechanism) with homeometric autoregulation (Anrep effect) in cardiac muscle.",
+        "accept": [
+          "Heterometric depends on changes in end-diastolic fiber length, whereas homeometric increases contractility without changing resting fiber length",
+          "Frank-Starling acts via increased preload/length; Anrep increases contractility at constant fiber length after raised afterload"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Stroke Volume",
+      "q": "What is the Bowditch effect (treppe or force-frequency relationship) in ventricular myocardium?",
+      "options": [
+        "A progressive fall in stroke volume whenever venous return rises",
+        "A stepwise increase in myocardial contractile force as heart rate increases, caused by cumulative intracellular Ca2+ loading",
+        "Immediate cardiac arrest triggered by carotid sinus massage",
+        "Reflex vasodilation of skeletal muscle arterioles during sleep"
+      ],
+      "answer": 1,
+      "explain": "Higher heart rates produce more action potentials per minute, increasing total L-type Ca2+ influx and outpacing NCX extrusion so sarcoplasmic reticulum Ca2+ stores build up and strengthen contraction.",
+      "verified": false,
+      "open": {
+        "q": "Explain the physiological mechanism behind the Bowditch (treppe or staircase) phenomenon when heart rate increases.",
+        "accept": [
+          "Increased frequency of depolarization causes cumulative intracellular Ca2+ accumulation in the sarcoplasmic reticulum, boosting contractility",
+          "More frequent Ca2+ influx per minute increases SR Ca2+ stores and contractile force"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Venous Return and Guyton Vascular Function Curves",
+      "q": "According to Guyton's hemodynamic equation for venous return (VR), which formula defines venous return?",
+      "options": [
+        "VR = Right atrial pressure / Mean systemic filling pressure",
+        "VR = Mean arterial pressure x Venous compliance",
+        "VR = (Mean systemic filling pressure - Right atrial pressure) / Resistance to venous return",
+        "VR = Stroke volume x Right atrial pressure"
+      ],
+      "answer": 2,
+      "explain": "Blood flows back to the right atrium down the pressure gradient between the mean systemic filling pressure (Pmsf, ~7 mmHg) and right atrial pressure (Pra, ~0-2 mmHg), divided by resistance to venous return (Rvr).",
+      "verified": false,
+      "open": {
+        "q": "Write Guyton's equation relating venous return (VR) to mean systemic filling pressure (Pmsf), right atrial pressure (Pra), and resistance to venous return (Rvr).",
+        "accept": [
+          "VR = (Pmsf - Pra) / Rvr",
+          "Venous return = (Mean systemic filling pressure - Right atrial pressure) / Resistance to venous return"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Venous Return and Guyton Vascular Function Curves",
+      "q": "What is the mean systemic filling pressure (Pmsf), and what is its normal value in a healthy resting adult?",
+      "options": [
+        "Peak aortic systolic pressure, normally 120 mmHg",
+        "Capillary hydrostatic pressure, normally 35 mmHg",
+        "Pulmonary artery wedge pressure, normally 25 mmHg",
+        "The pressure after circulatory pressures equilibrate when the heart stops, normally about 7 mmHg"
+      ],
+      "answer": 3,
+      "explain": "Pmsf (~7 mmHg) reflects the degree of filling (stressed blood volume) relative to systemic vascular compliance; it rises with blood transfusion or sympathetic venoconstriction and falls with hemorrhage.",
+      "verified": false,
+      "open": {
+        "q": "Define mean systemic filling pressure (Pmsf) and state its normal value in mmHg.",
+        "accept": [
+          "Equilibrium pressure throughout the systemic circulation when the heart is stopped; ~7 mmHg",
+          "Static pressure in systemic vessels at zero flow; about 7 mmHg"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Venous Return and Guyton Vascular Function Curves",
+      "q": "On Guyton's venous return (vascular function) curve, why does venous return reach a flat plateau when right atrial pressure drops below 0 mmHg?",
+      "options": [
+        "Great veins entering the thorax collapse when intraluminal pressure becomes sufficiently negative",
+        "The tricuspid valve locks shut below zero right atrial pressure",
+        "Skeletal muscle pumps stop contracting at negative right atrial pressure",
+        "The SA node stops firing when right atrial pressure falls below zero"
+      ],
+      "answer": 0,
+      "explain": "Because thin-walled extrathoracic veins (such as the venae cavae entering the chest) are collapsible, suction below ~0 mmHg collapses the vessel wall and prevents any further increase in venous return.",
+      "verified": false,
+      "open": {
+        "q": "Why does venous return fail to increase further when right atrial pressure falls lower than 0 mmHg?",
+        "accept": [
+          "Collapse of the great veins entering the thorax",
+          "Collapsible venae cavae pinch shut when intraluminal pressure becomes negative"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Venous Return and Guyton Vascular Function Curves",
+      "q": "How do acute blood volume expansion (transfusion) and sympathetic venoconstriction shift the Guyton venous return curve?",
+      "options": [
+        "They shift the curve downward and leftward by lowering mean systemic filling pressure",
+        "They increase mean systemic filling pressure (Pmsf), shifting the venous return curve upward and rightward to a higher equilibrium cardiac output",
+        "They alter only the cardiac function curve without changing the vascular function curve",
+        "They collapse the pulmonary veins and reduce left atrial pressure to zero"
+      ],
+      "answer": 1,
+      "explain": "Both increased blood volume and alpha-1-mediated constriction of compliant venous capacitance reservoirs raise Pmsf, shifting the vascular function curve right/upward and intersecting the cardiac curve at higher right atrial pressure and higher cardiac output.",
+      "verified": false,
+      "open": {
+        "q": "How do blood transfusion and sympathetic venoconstriction affect mean systemic filling pressure (Pmsf) and the position of the venous return curve?",
+        "accept": [
+          "They increase Pmsf and shift the venous return curve upward and to the right",
+          "Raise mean systemic filling pressure and shift the vascular function curve rightward"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-015",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Venous Return and Guyton Vascular Function Curves",
+      "q": "In an arteriovenous (AV) fistula, blood bypasses high-resistance arterioles and flows directly from an artery into a vein. How does this alter resistance to venous return and steady-state cardiac output?",
+      "options": [
+        "Increases resistance to venous return and lowers cardiac output",
+        "Has no effect on venous return or cardiac output",
+        "Decreases resistance to venous return, rotating the venous return curve clockwise upward and markedly increasing cardiac output",
+        "Lowers heart rate to 30 beats/min via the Bainbridge reflex"
+      ],
+      "answer": 2,
+      "explain": "Shunting blood directly from artery to vein dramatically drops total peripheral resistance and resistance to venous return (Rvr), increasing the upward slope of the venous return curve and producing high-output cardiac states.",
+      "verified": false,
+      "open": {
+        "q": "How does a large arteriovenous (AV) shunt affect resistance to venous return and steady-state cardiac output?",
+        "accept": [
+          "Decreases resistance to venous return and increases cardiac output",
+          "Lowers Rvr, steepens the venous return curve, and elevates CO"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Factors Facilitating Venous Return",
+      "q": "Which four physiological mechanisms assist venous return from the lower extremities and abdomen back to the right atrium against gravity?",
+      "options": [
+        "Arteriolar constriction, lymphatic blockade, bronchoconstriction, and Valsalva maneuver",
+        "Mitral valve closure, carotid sinus baroreflex, renal natriuresis, and sweating",
+        "Aortic elastic recoil, coronary sinus flow, cerebrospinal fluid absorption, and peristalsis",
+        "Skeletal muscle pump with one-way venous valves, respiratory (abdominothoracic) pump, sympathetic venoconstriction, and cardiac suction"
+      ],
+      "answer": 3,
+      "explain": "Rhythmic calf muscle contraction compresses deep veins past bicuspid valves (muscle pump); inspiration lowers intrathoracic pressure while raising intra-abdominal pressure (respiratory pump); sympathetic tone mobilizes unstressed venous blood; and downward displacement of the AV valve ring during ventricular ejection draws blood into the atria.",
+      "verified": false,
+      "open": {
+        "q": "List three physiological mechanisms that promote venous return from the lower body to the heart.",
+        "accept": [
+          "Skeletal muscle pump, respiratory pump, and sympathetic venoconstriction",
+          "Venous valves with muscle pump, thoracic respiratory pump, and cardiac suction"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Heart Rate and Bainbridge Reflex",
+      "q": "What is the Bainbridge (atrial) reflex?",
+      "options": [
+        "Reflex tachycardia triggered by stretch of atrial volume receptors when venous return and right atrial pressure rise acutely",
+        "Reflex bradycardia triggered by high pressure in the carotid sinus",
+        "Apnea and bradycardia triggered by cold water on the face",
+        "Coronary vasodilation triggered by myocardial adenosine release"
+      ],
+      "answer": 0,
+      "explain": "Rapid intravenous infusion stretches low-pressure type B atrial mechanoreceptors, sending vagal afferents to the medulla to increase sympathetic outflow to the SA node (preventing blood damming in the veins and atria).",
+      "verified": false,
+      "open": {
+        "q": "Describe the stimulus and cardiovascular response of the Bainbridge reflex.",
+        "accept": [
+          "Increased right atrial filling/stretch causes reflex tachycardia to prevent venous congestion",
+          "Atrial volume receptor stretch triggers an increase in heart rate"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Heart Rate and Bainbridge Reflex",
+      "q": "Why does cardiac output fall precipitously if ventricular heart rate rises excessively above 180 to 200 beats per minute (such as in severe supraventricular tachycardia)?",
+      "options": [
+        "Myocardial actin and myosin filaments denature above 180 bpm",
+        "Diastolic filling time becomes so abbreviated that end-diastolic volume and stroke volume plummet faster than heart rate rises",
+        "The aortic valve cannot open more than 150 times per minute",
+        "Vagal tone overrides sympathetic stimulation at high heart rates"
+      ],
+      "answer": 1,
+      "explain": "Because tachycardia encroaches primarily on diastole, extreme heart rates shorten ventricular filling time severely, reducing preload and stroke volume so markedly that CO = HR x SV declines.",
+      "verified": false,
+      "open": {
+        "q": "Why does extreme tachycardia (higher than ~180-200 beats/min) reduce rather than increase cardiac output?",
+        "accept": [
+          "Diastolic filling time becomes too short, markedly reducing end-diastolic volume and stroke volume",
+          "Shortened diastole impairs ventricular filling and lowers stroke volume"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Physiological Variations in Cardiac Output",
+      "q": "What happens to cardiac output when a person moves rapidly from a supine (lying) position to an upright standing position?",
+      "options": [
+        "Cardiac output rises by 40% because standing increases venous return",
+        "Cardiac output remains completely unchanged",
+        "Venous pooling reduces preload and stroke volume, so cardiac output initially falls",
+        "Cardiac output doubles because the respiratory pump becomes more effective"
+      ],
+      "answer": 2,
+      "explain": "Standing pools roughly 500 mL of blood in compliant lower-extremity veins, decreasing venous return, EDV, and stroke volume by ~30-40%; baroreceptor-mediated reflex tachycardia partially compensates, leaving net CO ~20% lower than supine.",
+      "verified": false,
+      "open": {
+        "q": "How and why does cardiac output change when transitioning from lying supine to standing upright?",
+        "accept": [
+          "Decreases by about 20% due to gravitational venous pooling in the legs lowering venous return and stroke volume",
+          "CO falls (~20%) because venous pooling reduces preload"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Physiological Variations in Cardiac Output",
+      "q": "Which physiological state increases resting cardiac output by 30% to 50%, peaking around the end of the second to early third trimester?",
+      "options": [
+        "Deep non-REM sleep",
+        "Hypothyroidism",
+        "Acute hemorrhage",
+        "Normal pregnancy"
+      ],
+      "answer": 3,
+      "explain": "During pregnancy, blood volume expansion, low-resistance uteroplacental circulation, and elevated metabolic demand boost cardiac output by 30-50% above non-pregnant baseline.",
+      "verified": false,
+      "open": {
+        "q": "By approximately what percentage does maternal cardiac output increase during normal pregnancy?",
+        "accept": [
+          "30% to 50%",
+          "About 40%"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Physiological Variations in Cardiac Output",
+      "q": "During dynamic isotonic exercise (such as running), how do heart rate, stroke volume, and total peripheral resistance change to elevate cardiac output up to 4- or 5-fold?",
+      "options": [
+        "Heart rate and stroke volume rise, while metabolic vasodilation lowers total peripheral resistance",
+        "Heart rate remains constant while stroke volume increases fivefold",
+        "Total peripheral resistance doubles while stroke volume halves",
+        "Venous return falls and myocardial contractility decreases"
+      ],
+      "answer": 0,
+      "explain": "In dynamic exercise, sympathetic activation and vagal withdrawal raise HR (up to ~180-200 bpm) and contractility, muscle/respiratory pumps boost venous return and SV, and local metabolites (adenosine, K+, H+, NO) dilate muscle arterioles to lower TPR.",
+      "verified": false,
+      "open": {
+        "q": "Summarize the changes in heart rate, stroke volume, and total peripheral resistance that enable a large rise in cardiac output during dynamic aerobic exercise.",
+        "accept": [
+          "Heart rate rises sharply, stroke volume increases moderately, and total peripheral resistance decreases",
+          "Increased HR and SV combined with reduced TPR"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Pathological Variations in Cardiac Output",
+      "q": "Which group of clinical conditions produces a 'high-output' state characterized by chronically elevated resting cardiac output alongside reduced systemic vascular resistance?",
+      "options": [
+        "Myocardial infarction, cardiac tamponade, and severe hypothyroidism",
+        "Severe anemia, thyrotoxicosis (hyperthyroidism), beriberi (thiamine deficiency), and arteriovenous fistula",
+        "Hemorrhagic shock, aortic stenosis, and restrictive cardiomyopathy",
+        "Complete heart block, acute pulmonary embolism, and dehydration"
+      ],
+      "answer": 1,
+      "explain": "High-output states occur when reduced blood viscosity/tissue hypoxia (severe anemia), systemic vasodilation/hypermetabolism (thyrotoxicosis, wet beriberi), or direct vascular shunting (AV fistula, Paget bone disease) lower TPR and boost venous return.",
+      "verified": false,
+      "open": {
+        "q": "Name three pathological conditions that cause a high-output cardiac state.",
+        "accept": [
+          "Severe anemia, thyrotoxicosis, and beriberi",
+          "Anemia, hyperthyroidism, and arteriovenous fistula"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-023",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Pathological Variations in Cardiac Output",
+      "q": "A 42-year-old man involved in a high-speed road traffic accident presents with hypotension (BP 78/50 mmHg), tachycardia (132 bpm), distended jugular veins, and muffled heart sounds (Beck's triad). Echocardiography confirms acute pericardial tamponade. What is the direct hemodynamic mechanism reducing his cardiac output?",
+      "options": [
+        "Loss of SA-node automaticity is the primary cause of reduced output",
+        "Systemic arteriolar vasodilation is the main mechanism",
+        "Pericardial pressure restricts diastolic filling, reducing preload and stroke volume",
+        "Descending aortic obstruction prevents ventricular ejection"
+      ],
+      "answer": 2,
+      "explain": "In cardiac tamponade, fluid trapped inside the non-compliant pericardial sac compresses all cardiac chambers, preventing normal diastolic filling (impaired preload) so stroke volume and cardiac output fall precipitously despite high venous pressure.",
+      "verified": false,
+      "open": {
+        "q": "Explain how acute cardiac tamponade causes a rapid drop in cardiac output.",
+        "accept": [
+          "Intrapericardial pressure compresses the heart and prevents ventricular diastolic filling, reducing preload and stroke volume",
+          "Restricted diastolic expansion severely lowers ventricular preload and stroke volume"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-024",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Pathological Variations in Cardiac Output",
+      "q": "A 65-year-old man with decompensated left ventricular systolic heart failure receives an intravenous infusion of dobutamine (a beta-1 adrenergic agonist) and a venodilator. On Guyton's cardiac and vascular function curves, how does dobutamine alone shift the cardiac function curve?",
+      "options": [
+        "Downward and rightward (reduced output at every right atrial pressure)",
+        "It shifts only the venous return curve without affecting the heart",
+        "It eliminates the plateau of the cardiac function curve",
+        "Upward and leftward (steeper slope), increasing cardiac output at any given right atrial pressure while lowering right atrial pressure"
+      ],
+      "answer": 3,
+      "explain": "Positive inotropic stimulation shifts the cardiac output curve upward/leftward; intersecting the unchanged venous return curve yields a higher steady-state cardiac output and lower right atrial pressure (relieving venous congestion).",
+      "verified": false,
+      "open": {
+        "q": "How does a positive inotropic agent shift Guyton's cardiac output curve, and what happens to steady-state cardiac output and right atrial pressure?",
+        "accept": [
+          "Shifts the cardiac function curve upward and leftward, increasing cardiac output and lowering right atrial pressure",
+          "Upward shift of cardiac curve leading to higher CO and lower Pra"
+        ]
+      }
+    },
+    {
+      "id": "pc-cardiac-output-025",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Measurement of Cardiac Output",
+      "q": "Which non-invasive bedside imaging method measures cardiac output by combining the cross-sectional area of the left ventricular outflow tract (LVOT) with the velocity-time integral (VTI) of blood flow across the aortic valve?",
+      "options": [
+        "Doppler echocardiography",
+        "Chest radiography",
+        "Standard 12-lead surface ECG",
+        "Pulse oximetry"
+      ],
+      "answer": 0,
+      "explain": "Doppler echocardiography calculates stroke volume as LVOT area x LVOT VTI (velocity-time integral) and multiplies by heart rate to estimate cardiac output non-invasively without vascular catheterization.",
+      "verified": false,
+      "open": {
+        "q": "Name the non-invasive ultrasound technique used clinically to measure stroke volume and cardiac output across the left ventricular outflow tract.",
+        "accept": [
+          "Doppler echocardiography",
+          "Echocardiography",
+          "Transthoracic Doppler echo"
+        ]
+      }
+    }
+  ]
 }
