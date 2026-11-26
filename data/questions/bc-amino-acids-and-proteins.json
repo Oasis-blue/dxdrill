@@ -1,484 +1,667 @@
 {
- "topic": "bc-amino-acids-and-proteins",
- "questions": [
-  {
-   "id": "bc-amino-acids-and-proteins-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Amino Acid Classification",
-   "q": "Which standard proteinogenic amino acid contains a guanidinium group on its side chain?",
-   "options": [
-    "Arginine",
-    "Histidine",
-    "Lysine",
-    "Glutamine"
-   ],
-   "answer": 0,
-   "explain": "Arginine has a side chain containing a guanidinium group with a high pKa (~12.5), keeping it positively charged at physiological pH. Lysine has an epsilon-amino group, and histidine has an imidazole ring.",
-   "verified": false,
-   "open": {
-    "q": "Which standard amino acid features a guanidinium group in its side chain?",
-    "accept": [
-     "arginine",
-     "Arg",
-     "L-arginine"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Amino Acid Classification",
-   "q": "Which aromatic amino acid contains a phenolic hydroxyl group that can be phosphorylated by protein kinases?",
-   "options": [
-    "Tryptophan",
-    "Phenylalanine",
-    "Tyrosine",
-    "Histidine"
-   ],
-   "answer": 2,
-   "explain": "Tyrosine possesses a phenolic -OH group that serves as a site for reversible phosphorylation in cell signaling and is a precursor for catecholamines and thyroid hormones. Phenylalanine lacks this hydroxyl group, and tryptophan has an indole ring.",
-   "verified": false,
-   "open": {
-    "q": "Which aromatic amino acid has a phenolic hydroxyl group capable of phosphorylation?",
-    "accept": [
-     "tyrosine",
-     "Tyr",
-     "L-tyrosine"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Amino Acid Classification",
-   "q": "Which group consists entirely of branched-chain amino acids?",
-   "options": [
-    "Isoleucine, leucine, and valine",
-    "Alanine, glycine, and serine",
-    "Methionine, cysteine, and proline",
-    "Aspartate, glutamate, and asparagine"
-   ],
-   "answer": 0,
-   "explain": "Isoleucine, leucine, and valine are the three branched-chain amino acids (BCAAs) with aliphatic branched hydrocarbon side chains. They are essential amino acids metabolized primarily in extrahepatic tissues such as skeletal muscle.",
-   "verified": false,
-   "open": {
-    "q": "Name the three branched-chain amino acids found in proteins.",
-    "accept": [
-     "isoleucine, leucine, and valine",
-     "leucine, isoleucine, and valine",
-     "valine, leucine, and isoleucine"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Acid-Base Properties",
-   "q": "Which stereochemical configuration predominates in amino acids incorporated into human proteins?",
-   "options": [
-    "D-configuration",
-    "L-configuration",
-    "Racemic D/L mixture",
-    "Achiral configuration"
-   ],
-   "answer": 1,
-   "explain": "Ribosomes synthesize proteins exclusively using L-alpha-amino acids. D-amino acids occur rarely in nature, such as in certain bacterial cell walls or peptide antibiotics.",
-   "verified": false,
-   "open": {
-    "q": "Which stereochemical series do amino acids in human proteins belong to?",
-    "accept": [
-     "L-amino acids",
-     "L-configuration",
-     "L isomer",
-     "levo configuration"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-005",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Acid-Base Properties",
-   "q": "For a neutral amino acid with ionizable alpha-carboxyl (pKa1 = 2.2) and alpha-amino (pKa2 = 9.4) groups, what is its isoelectric point (pI)?",
-   "options": [
-    "2.2",
-    "5.8",
-    "9.4",
-    "11.6"
-   ],
-   "answer": 1,
-   "explain": "For a neutral amino acid without an ionizable side chain, pI equals (pKa1 + pKa2) / 2, which is (2.2 + 9.4) / 2 = 5.8. At pH 5.8, the net charge is zero.",
-   "verified": false,
-   "open": {
-    "q": "Calculate the isoelectric point of a neutral amino acid with pKa1 of 2.2 and pKa2 of 9.4.",
-    "accept": [
-     "5.8",
-     "5.80"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-006",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Acid-Base Properties",
-   "q": "When a neutral amino acid is placed in a strongly acidic solution well below its pKa1, what is its predominant ionic form?",
-   "options": [
-    "Cationic form with a net charge of +1",
-    "Zwitterionic form with a net charge of 0",
-    "Anionic form with a net charge of -1",
-    "Uncharged non-ionic form with no protons"
-   ],
-   "answer": 0,
-   "explain": "At pH well below pKa1, both the carboxyl group (-COOH) and amino group (-NH3+) are protonated, giving a net positive charge of +1. Raising pH above pKa1 deprotonates the carboxyl group to form the zwitterion.",
-   "verified": false,
-   "open": {
-    "q": "What is the predominant charge state of a neutral amino acid at a pH much lower than its pKa1?",
-    "accept": [
-     "net +1",
-     "positive 1",
-     "positively charged (+1)",
-     "cationic (+1)"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peptide Bonds and Primary Structure",
-   "q": "Which chemical reaction joins two amino acids to form a peptide bond?",
-   "options": [
-    "Condensation (dehydration synthesis)",
-    "Hydrolysis",
-    "Transamination",
-    "Decarboxylation"
-   ],
-   "answer": 0,
-   "explain": "Formation of an amide (peptide) bond between the alpha-carboxyl group of one amino acid and the alpha-amino group of another releases one molecule of water (condensation). Breaking the bond requires addition of water (hydrolysis).",
-   "verified": false,
-   "open": {
-    "q": "What type of reaction forms a peptide bond between two amino acids with elimination of water?",
-    "accept": [
-     "condensation reaction",
-     "dehydration synthesis",
-     "condensation"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Peptide Bonds and Primary Structure",
-   "q": "By convention, in which direction is the primary amino acid sequence of a polypeptide written?",
-   "options": [
-    "From C-terminus to N-terminus",
-    "From N-terminus to C-terminus",
-    "From interior disulfide bond to C-terminus",
-    "From highest pKa residue to lowest pKa residue"
-   ],
-   "answer": 1,
-   "explain": "Polypeptide sequences are standardly written starting with the free alpha-amino (N-) terminal residue on the left and ending with the free alpha-carboxyl (C-) terminal residue on the right, matching the direction of translation.",
-   "verified": false,
-   "open": {
-    "q": "From which end to which end is a polypeptide primary sequence conventionally written?",
-    "accept": [
-     "N-terminus to C-terminus",
-     "amino terminal to carboxyl terminal",
-     "N to C terminus"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Secondary Structure",
-   "q": "In a beta-pleated sheet, how do the R-groups of adjacent amino acid residues along a single strand project?",
-   "options": [
-    "Alternating above and below the plane of the sheet",
-    "All pointing straight into the central hydrophobic core",
-    "All pointing parallel to the hydrogen bonds",
-    "Restricted to the interior of a right-handed coil"
-   ],
-   "answer": 0,
-   "explain": "In a beta-strand, the polypeptide backbone is extended in a zig-zag conformation so successive side chains point alternately above and below the plane of the sheet. This minimizes steric hindrance between adjacent R-groups.",
-   "verified": false,
-   "open": {
-    "q": "How are side chains oriented along a single beta-strand in a beta-pleated sheet?",
-    "accept": [
-     "alternating above and below the plane",
-     "alternately up and down",
-     "above and below the sheet plane"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-010",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Secondary Structure",
-   "q": "Which fibrous protein has a triple-helix structure rich in glycine-X-Y repeats, where X is frequently proline and Y is hydroxyproline?",
-   "options": [
-    "Collagen",
-    "Keratin",
-    "Elastin",
-    "Myosin"
-   ],
-   "answer": 0,
-   "explain": "Collagen consists of three intertwined alpha-chains forming a triple helix with repeating Gly-X-Y triplets. Glycine is required every third position because its tiny hydrogen side chain fits inside the crowded central axis of the triple helix.",
-   "verified": false,
-   "open": {
-    "q": "Which structural protein forms a triple helix composed of repeating Gly-X-Y motifs?",
-    "accept": [
-     "collagen",
-     "tropocollagen"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-011",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Secondary Structure",
-   "q": "A patient presents with easy bruising, bleeding gums, poor wound healing, and perifollicular hemorrhages after a diet lacking fresh fruits and vegetables. Impaired hydroxylation of proline and lysine in collagen synthesis is caused by deficiency of which vitamin?",
-   "options": [
-    "Vitamin C (ascorbic acid)",
-    "Vitamin B12 (cobalamin)",
-    "Vitamin K (phylloquinone)",
-    "Vitamin D (cholecalciferol)"
-   ],
-   "answer": 0,
-   "explain": "Scurvy results from vitamin C deficiency, which impairs prolyl and lysyl hydroxylases by failing to keep iron in its reduced ferrous (Fe2+) state. Without adequate hydroxyproline and hydroxylysine, collagen triple helices are unstable and cross-linking is defective.",
-   "verified": false,
-   "open": {
-    "q": "Deficiency of which vitamin impairs proline and lysine hydroxylation in collagen synthesis, causing scurvy?",
-    "accept": [
-     "vitamin C",
-     "ascorbic acid",
-     "ascorbate"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Tertiary and Quaternary Structure",
-   "q": "In a water-soluble globular protein folded in an aqueous environment, where are hydrophobic amino acid side chains typically located?",
-   "options": [
-    "Buried in the interior core away from water",
-    "Exposed evenly across the entire outer surface",
-    "exclusively at the N-terminal and C-terminal ends",
-    "Linked exclusively to surface carbohydrate chains"
-   ],
-   "answer": 0,
-   "explain": "Globular proteins fold so nonpolar hydrophobic side chains cluster in the interior away from aqueous solvent, while polar and charged side chains generally face outward to interact with water. This arrangement stabilizes tertiary structure via the hydrophobic effect.",
-   "verified": false,
-   "open": {
-    "q": "Where are nonpolar amino acid side chains typically positioned in a folded water-soluble globular protein?",
-    "accept": [
-     "buried in the interior",
-     "inside the hydrophobic core",
-     "internal core"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Tertiary and Quaternary Structure",
-   "q": "Which proteins assist newly synthesized polypeptides in folding properly and prevent inappropriate aggregation?",
-   "options": [
-    "Molecular chaperones",
-    "Topoisomerases",
-    "Restriction endonucleases",
-    "Lipases"
-   ],
-   "answer": 0,
-   "explain": "Molecular chaperones (such as Hsp70 and chaperonins like GroEL/Hsp60) bind exposed hydrophobic regions on folding intermediates to guide proper tertiary folding and prevent aggregation. They do not dictate final structure independently of primary sequence.",
-   "verified": false,
-   "open": {
-    "q": "Which class of proteins helps nascent polypeptides fold correctly and prevents unwanted aggregation?",
-    "accept": [
-     "chaperones",
-     "heat shock proteins",
-     "chaperonins"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Protein Folding and Denaturation",
-   "q": "What is preserved when a globular protein undergoes reversible denaturation by urea or heat?",
-   "options": [
-    "Primary amino acid sequence (peptide bonds)",
-    "Alpha-helical hydrogen bonding",
-    "Native three-dimensional tertiary fold",
-    "Biological catalytic or binding activity"
-   ],
-   "answer": 0,
-   "explain": "Denaturation disrupts non-covalent interactions (hydrogen bonds, ionic interactions, hydrophobic packing) that maintain secondary, tertiary, and quaternary structure, while peptide bonds of the primary structure remain intact. If mild, refolding can restore native structure.",
-   "verified": false,
-   "open": {
-    "q": "Which structural feature of a protein remains intact during denaturation?",
-    "accept": [
-     "primary structure",
-     "amino acid sequence",
-     "peptide bonds"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Protein Classification",
-   "q": "Which class of conjugated proteins contains a non-amino-acid lipid prosthetic group?",
-   "options": [
-    "Lipoproteins",
-    "Glycoproteins",
-    "Metalloproteins",
-    "Phosphoproteins"
-   ],
-   "answer": 0,
-   "explain": "Lipoproteins combine a protein component (apoprotein) with lipids such as triacylglycerols, phospholipids, and cholesterol to transport hydrophobic lipids in blood. Glycoproteins contain covalently attached oligosaccharide chains.",
-   "verified": false,
-   "open": {
-    "q": "Which class of conjugated proteins consists of protein combined with lipid components?",
-    "accept": [
-     "lipoproteins",
-     "lipoprotein"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Heme Proteins and Oxygen Transport",
-   "q": "Which oxidation state of iron in the heme prosthetic group is required for reversible oxygen binding in hemoglobin and myoglobin?",
-   "options": [
-    "Ferrous state (Fe2+)",
-    "Ferric state (Fe3+)",
-    "Zero-valent metallic iron (Fe0)",
-    "Ferrous sulfate complex (FeSO4)"
-   ],
-   "answer": 0,
-   "explain": "Heme binds molecular oxygen reversibly only when its iron atom is in the ferrous (Fe2+) oxidation state. Oxidation to the ferric (Fe3+) state forms methemoglobin, which cannot bind oxygen.",
-   "verified": false,
-   "open": {
-    "q": "In which oxidation state must heme iron be to bind oxygen reversibly in hemoglobin?",
-    "accept": [
-     "Fe2+",
-     "ferrous",
-     "ferrous iron",
-     "plus two ferrous"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heme Proteins and Oxygen Transport",
-   "q": "Why does myoglobin display a hyperbolic oxygen-binding curve rather than the sigmoidal curve of hemoglobin?",
-   "options": [
-    "Myoglobin is monomeric and lacks subunit cooperativity",
-    "Myoglobin contains four heme groups per molecule",
-    "Myoglobin binds oxygen only in acidic tissues",
-    "Myoglobin has lower oxygen affinity than hemoglobin at all pO2 values"
-   ],
-   "answer": 0,
-   "explain": "Myoglobin is a single-chain (monomeric) protein with one heme group, so oxygen binding shows no cooperative allosteric interaction between subunits, yielding a hyperbolic curve. Hemoglobin is a tetramer exhibiting positive cooperativity (sigmoidal curve).",
-   "verified": false,
-   "open": {
-    "q": "Why does myoglobin have a hyperbolic oxygen dissociation curve instead of a sigmoidal one?",
-    "accept": [
-     "it is monomeric without cooperativity",
-     "single polypeptide chain lacking cooperative binding",
-     "no subunit cooperativity"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heme Proteins and Oxygen Transport",
-   "q": "How does an increase in hydrogen ion concentration (lower pH) in metabolically active tissues affect hemoglobin's affinity for oxygen (the Bohr effect)?",
-   "options": [
-    "Decreases oxygen affinity to promote oxygen unloading",
-    "Increases oxygen affinity to prevent oxygen release",
-    "Has no effect on oxygen binding",
-    "Converts hemoglobin permanently into fetal hemoglobin"
-   ],
-   "answer": 0,
-   "explain": "Higher H+ concentration (and higher CO2) protonates specific histidine residues and stabilizes the low-affinity T (tense) state of hemoglobin, lowering oxygen affinity and facilitating oxygen delivery to active tissues.",
-   "verified": false,
-   "open": {
-    "q": "How does a decrease in pH (increased H+) alter hemoglobin oxygen affinity during the Bohr effect?",
-    "accept": [
-     "lowers oxygen affinity",
-     "decreases affinity for oxygen",
-     "reduces oxygen affinity"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-019",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Heme Proteins and Oxygen Transport",
-   "q": "A patient exposed to incomplete combustion fumes presents with headache, confusion, cherry-red skin, and normal arterial pO2 on blood gas analysis despite severe cellular hypoxia. Which molecule binds hemoglobin with roughly 200-fold greater affinity than oxygen?",
-   "options": [
-    "Carbon monoxide",
-    "Nitric oxide",
-    "Hydrogen sulfide",
-    "Ammonia"
-   ],
-   "answer": 0,
-   "explain": "Carbon monoxide binds tightly to heme Fe2+ with about 200 times the affinity of oxygen, displacing O2 and shifting the remaining bound O2 curve to the left so tissues cannot extract oxygen effectively. Standard PaO2 measures dissolved O2 and can appear normal.",
-   "verified": false,
-   "open": {
-    "q": "Which gas binds hemoglobin with about 200 times the affinity of oxygen, causing functional hypoxia?",
-    "accept": [
-     "carbon monoxide",
-     "CO"
-    ]
-   }
-  },
-  {
-   "id": "bc-amino-acids-and-proteins-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Protein Separation and Analysis",
-   "q": "In SDS-PAGE (sodium dodecyl sulfate-polyacrylamide gel electrophoresis), what is the primary role of sodium dodecyl sulfate?",
-   "options": [
-    "Denatures proteins and imparts a uniform negative charge proportional to mass",
-    "Separates proteins strictly by their native isoelectric point",
-    "Cleave peptide bonds at specific basic amino acids",
-    "Precipitates proteins selectively using heavy metal ions"
-   ],
-   "answer": 0,
-   "explain": "SDS binds along polypeptide chains at a roughly constant mass ratio, denaturing them and conferring a uniform negative charge per unit mass so migration through polyacrylamide pores separates primarily by molecular weight.",
-   "verified": false,
-   "open": {
-    "q": "What does SDS do to proteins during SDS-PAGE separation?",
-    "accept": [
-     "denatures them and gives a uniform negative charge per mass",
-     "linearizes proteins and coats them with negative charge",
-     "denatures and imparts uniform negative charge"
-    ]
-   }
-  }
- ]
+  "topic": "bc-amino-acids-and-proteins",
+  "questions": [
+    {
+      "id": "bc-amino-acids-and-proteins-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Amino Acid Classification",
+      "q": "Which standard proteinogenic amino acid contains a guanidinium group on its side chain?",
+      "options": [
+        "Arginine",
+        "Histidine",
+        "Lysine",
+        "Glutamine"
+      ],
+      "answer": 0,
+      "explain": "Arginine has a side chain containing a guanidinium group with a high pKa (~12.5), keeping it positively charged at physiological pH. Lysine has an epsilon-amino group, and histidine has an imidazole ring.",
+      "verified": false,
+      "open": {
+        "q": "Which standard amino acid features a guanidinium group in its side chain?",
+        "accept": [
+          "arginine",
+          "Arg",
+          "L-arginine"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Amino Acid Classification",
+      "q": "Which aromatic amino acid contains a phenolic hydroxyl group that can be phosphorylated by protein kinases?",
+      "options": [
+        "Tryptophan",
+        "Phenylalanine",
+        "Tyrosine",
+        "Histidine"
+      ],
+      "answer": 2,
+      "explain": "Tyrosine possesses a phenolic -OH group that serves as a site for reversible phosphorylation in cell signaling and is a precursor for catecholamines and thyroid hormones. Phenylalanine lacks this hydroxyl group, and tryptophan has an indole ring.",
+      "verified": false,
+      "open": {
+        "q": "Which aromatic amino acid has a phenolic hydroxyl group capable of phosphorylation?",
+        "accept": [
+          "tyrosine",
+          "Tyr",
+          "L-tyrosine"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Amino Acid Classification",
+      "q": "Which group consists entirely of branched-chain amino acids?",
+      "options": [
+        "Isoleucine, leucine, and valine",
+        "Alanine, glycine, and serine",
+        "Methionine, cysteine, and proline",
+        "Aspartate, glutamate, and asparagine"
+      ],
+      "answer": 0,
+      "explain": "Isoleucine, leucine, and valine are the three branched-chain amino acids (BCAAs) with aliphatic branched hydrocarbon side chains. They are essential amino acids metabolized primarily in extrahepatic tissues such as skeletal muscle.",
+      "verified": false,
+      "open": {
+        "q": "Name the three branched-chain amino acids found in proteins.",
+        "accept": [
+          "isoleucine, leucine, and valine",
+          "leucine, isoleucine, and valine",
+          "valine, leucine, and isoleucine"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Acid-Base Properties",
+      "q": "Which stereochemical configuration predominates in amino acids incorporated into human proteins?",
+      "options": [
+        "D-configuration",
+        "L-configuration",
+        "Racemic D/L mixture",
+        "Achiral configuration"
+      ],
+      "answer": 1,
+      "explain": "Ribosomes synthesize proteins exclusively using L-alpha-amino acids. D-amino acids occur rarely in nature, such as in certain bacterial cell walls or peptide antibiotics.",
+      "verified": false,
+      "open": {
+        "q": "Which stereochemical series do amino acids in human proteins belong to?",
+        "accept": [
+          "L-amino acids",
+          "L-configuration",
+          "L isomer",
+          "levo configuration"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Acid-Base Properties",
+      "q": "For a neutral amino acid with ionizable alpha-carboxyl (pKa1 = 2.2) and alpha-amino (pKa2 = 9.4) groups, what is its isoelectric point (pI)?",
+      "options": [
+        "2.2",
+        "5.8",
+        "9.4",
+        "11.6"
+      ],
+      "answer": 1,
+      "explain": "For a neutral amino acid without an ionizable side chain, pI equals (pKa1 + pKa2) / 2, which is (2.2 + 9.4) / 2 = 5.8. At pH 5.8, the net charge is zero.",
+      "verified": false,
+      "open": {
+        "q": "Calculate the isoelectric point of a neutral amino acid with pKa1 of 2.2 and pKa2 of 9.4.",
+        "accept": [
+          "5.8",
+          "5.80"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Acid-Base Properties",
+      "q": "When a neutral amino acid is placed in a strongly acidic solution well below its pKa1, what is its predominant ionic form?",
+      "options": [
+        "Cationic form with a net charge of +1",
+        "Zwitterionic form with a net charge of 0",
+        "Anionic form with a net charge of -1",
+        "Uncharged non-ionic form with no protons"
+      ],
+      "answer": 0,
+      "explain": "At pH well below pKa1, both the carboxyl group (-COOH) and amino group (-NH3+) are protonated, giving a net positive charge of +1. Raising pH above pKa1 deprotonates the carboxyl group to form the zwitterion.",
+      "verified": false,
+      "open": {
+        "q": "What is the predominant charge state of a neutral amino acid at a pH much lower than its pKa1?",
+        "accept": [
+          "net +1",
+          "positive 1",
+          "positively charged (+1)",
+          "cationic (+1)"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peptide Bonds and Primary Structure",
+      "q": "Which chemical reaction joins two amino acids to form a peptide bond?",
+      "options": [
+        "Condensation (dehydration synthesis)",
+        "Hydrolysis",
+        "Transamination",
+        "Decarboxylation"
+      ],
+      "answer": 0,
+      "explain": "Formation of an amide (peptide) bond between the alpha-carboxyl group of one amino acid and the alpha-amino group of another releases one molecule of water (condensation). Breaking the bond requires addition of water (hydrolysis).",
+      "verified": false,
+      "open": {
+        "q": "What type of reaction forms a peptide bond between two amino acids with elimination of water?",
+        "accept": [
+          "condensation reaction",
+          "dehydration synthesis",
+          "condensation"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Peptide Bonds and Primary Structure",
+      "q": "By convention, in which direction is the primary amino acid sequence of a polypeptide written?",
+      "options": [
+        "From C-terminus to N-terminus",
+        "From N-terminus to C-terminus",
+        "From interior disulfide bond to C-terminus",
+        "From highest pKa residue to lowest pKa residue"
+      ],
+      "answer": 1,
+      "explain": "Polypeptide sequences are standardly written starting with the free alpha-amino (N-) terminal residue on the left and ending with the free alpha-carboxyl (C-) terminal residue on the right, matching the direction of translation.",
+      "verified": false,
+      "open": {
+        "q": "From which end to which end is a polypeptide primary sequence conventionally written?",
+        "accept": [
+          "N-terminus to C-terminus",
+          "amino terminal to carboxyl terminal",
+          "N to C terminus"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary Structure",
+      "q": "In a beta-pleated sheet, how do the R-groups of adjacent amino acid residues along a single strand project?",
+      "options": [
+        "Alternating above and below the plane of the sheet",
+        "All pointing straight into the central hydrophobic core",
+        "All pointing parallel to the hydrogen bonds",
+        "Restricted to the interior of a right-handed coil"
+      ],
+      "answer": 0,
+      "explain": "In a beta-strand, the polypeptide backbone is extended in a zig-zag conformation so successive side chains point alternately above and below the plane of the sheet. This minimizes steric hindrance between adjacent R-groups.",
+      "verified": false,
+      "open": {
+        "q": "How are side chains oriented along a single beta-strand in a beta-pleated sheet?",
+        "accept": [
+          "alternating above and below the plane",
+          "alternately up and down",
+          "above and below the sheet plane"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-010",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary Structure",
+      "q": "Which fibrous protein has a triple-helix structure rich in glycine-X-Y repeats, where X is frequently proline and Y is hydroxyproline?",
+      "options": [
+        "Collagen",
+        "Keratin",
+        "Elastin",
+        "Myosin"
+      ],
+      "answer": 0,
+      "explain": "Collagen consists of three intertwined alpha-chains forming a triple helix with repeating Gly-X-Y triplets. Glycine is required every third position because its tiny hydrogen side chain fits inside the crowded central axis of the triple helix.",
+      "verified": false,
+      "open": {
+        "q": "Which structural protein forms a triple helix composed of repeating Gly-X-Y motifs?",
+        "accept": [
+          "collagen",
+          "tropocollagen"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-011",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Secondary Structure",
+      "q": "A patient presents with easy bruising, bleeding gums, poor wound healing, and perifollicular hemorrhages after a diet lacking fresh fruits and vegetables. Impaired hydroxylation of proline and lysine in collagen synthesis is caused by deficiency of which vitamin?",
+      "options": [
+        "Vitamin C (ascorbic acid)",
+        "Vitamin B12 (cobalamin)",
+        "Vitamin K (phylloquinone)",
+        "Vitamin D (cholecalciferol)"
+      ],
+      "answer": 0,
+      "explain": "Scurvy results from vitamin C deficiency, which impairs prolyl and lysyl hydroxylases by failing to keep iron in its reduced ferrous (Fe2+) state. Without adequate hydroxyproline and hydroxylysine, collagen triple helices are unstable and cross-linking is defective.",
+      "verified": false,
+      "open": {
+        "q": "Deficiency of which vitamin impairs proline and lysine hydroxylation in collagen synthesis, causing scurvy?",
+        "accept": [
+          "vitamin C",
+          "ascorbic acid",
+          "ascorbate"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Tertiary and Quaternary Structure",
+      "q": "In a water-soluble globular protein folded in an aqueous environment, where are hydrophobic amino acid side chains typically located?",
+      "options": [
+        "Buried in the interior core away from water",
+        "Exposed evenly across the entire outer surface",
+        "exclusively at the N-terminal and C-terminal ends",
+        "Linked exclusively to surface carbohydrate chains"
+      ],
+      "answer": 0,
+      "explain": "Globular proteins fold so nonpolar hydrophobic side chains cluster in the interior away from aqueous solvent, while polar and charged side chains generally face outward to interact with water. This arrangement stabilizes tertiary structure via the hydrophobic effect.",
+      "verified": false,
+      "open": {
+        "q": "Where are nonpolar amino acid side chains typically positioned in a folded water-soluble globular protein?",
+        "accept": [
+          "buried in the interior",
+          "inside the hydrophobic core",
+          "internal core"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Tertiary and Quaternary Structure",
+      "q": "Which proteins assist newly synthesized polypeptides in folding properly and prevent inappropriate aggregation?",
+      "options": [
+        "Molecular chaperones",
+        "Topoisomerases",
+        "Restriction endonucleases",
+        "Lipases"
+      ],
+      "answer": 0,
+      "explain": "Molecular chaperones (such as Hsp70 and chaperonins like GroEL/Hsp60) bind exposed hydrophobic regions on folding intermediates to guide proper tertiary folding and prevent aggregation. They do not dictate final structure independently of primary sequence.",
+      "verified": false,
+      "open": {
+        "q": "Which class of proteins helps nascent polypeptides fold correctly and prevents unwanted aggregation?",
+        "accept": [
+          "chaperones",
+          "heat shock proteins",
+          "chaperonins"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Protein Folding and Denaturation",
+      "q": "What is preserved when a globular protein undergoes reversible denaturation by urea or heat?",
+      "options": [
+        "Primary amino acid sequence (peptide bonds)",
+        "Alpha-helical hydrogen bonding",
+        "Native three-dimensional tertiary fold",
+        "Biological catalytic or binding activity"
+      ],
+      "answer": 0,
+      "explain": "Denaturation disrupts non-covalent interactions (hydrogen bonds, ionic interactions, hydrophobic packing) that maintain secondary, tertiary, and quaternary structure, while peptide bonds of the primary structure remain intact. If mild, refolding can restore native structure.",
+      "verified": false,
+      "open": {
+        "q": "Which structural feature of a protein remains intact during denaturation?",
+        "accept": [
+          "primary structure",
+          "amino acid sequence",
+          "peptide bonds"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Protein Classification",
+      "q": "Which class of conjugated proteins contains a non-amino-acid lipid prosthetic group?",
+      "options": [
+        "Lipoproteins",
+        "Glycoproteins",
+        "Metalloproteins",
+        "Phosphoproteins"
+      ],
+      "answer": 0,
+      "explain": "Lipoproteins combine a protein component (apoprotein) with lipids such as triacylglycerols, phospholipids, and cholesterol to transport hydrophobic lipids in blood. Glycoproteins contain covalently attached oligosaccharide chains.",
+      "verified": false,
+      "open": {
+        "q": "Which class of conjugated proteins consists of protein combined with lipid components?",
+        "accept": [
+          "lipoproteins",
+          "lipoprotein"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Heme Proteins and Oxygen Transport",
+      "q": "Which oxidation state of iron in the heme prosthetic group is required for reversible oxygen binding in hemoglobin and myoglobin?",
+      "options": [
+        "Ferrous state (Fe2+)",
+        "Ferric state (Fe3+)",
+        "Zero-valent metallic iron (Fe0)",
+        "Ferrous sulfate complex (FeSO4)"
+      ],
+      "answer": 0,
+      "explain": "Heme binds molecular oxygen reversibly only when its iron atom is in the ferrous (Fe2+) oxidation state. Oxidation to the ferric (Fe3+) state forms methemoglobin, which cannot bind oxygen.",
+      "verified": false,
+      "open": {
+        "q": "In which oxidation state must heme iron be to bind oxygen reversibly in hemoglobin?",
+        "accept": [
+          "Fe2+",
+          "ferrous",
+          "ferrous iron",
+          "plus two ferrous"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heme Proteins and Oxygen Transport",
+      "q": "Why does myoglobin display a hyperbolic oxygen-binding curve rather than the sigmoidal curve of hemoglobin?",
+      "options": [
+        "Myoglobin is monomeric and lacks subunit cooperativity",
+        "Myoglobin contains four heme groups per molecule",
+        "Myoglobin binds oxygen only in acidic tissues",
+        "Myoglobin has lower oxygen affinity than hemoglobin at all pO2 values"
+      ],
+      "answer": 0,
+      "explain": "Myoglobin is a single-chain (monomeric) protein with one heme group, so oxygen binding shows no cooperative allosteric interaction between subunits, yielding a hyperbolic curve. Hemoglobin is a tetramer exhibiting positive cooperativity (sigmoidal curve).",
+      "verified": false,
+      "open": {
+        "q": "Why does myoglobin have a hyperbolic oxygen dissociation curve instead of a sigmoidal one?",
+        "accept": [
+          "it is monomeric without cooperativity",
+          "single polypeptide chain lacking cooperative binding",
+          "no subunit cooperativity"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heme Proteins and Oxygen Transport",
+      "q": "How does an increase in hydrogen ion concentration (lower pH) in metabolically active tissues affect hemoglobin's affinity for oxygen (the Bohr effect)?",
+      "options": [
+        "Decreases oxygen affinity to promote oxygen unloading",
+        "Increases oxygen affinity to prevent oxygen release",
+        "Has no effect on oxygen binding",
+        "Converts hemoglobin permanently into fetal hemoglobin"
+      ],
+      "answer": 0,
+      "explain": "Higher H+ concentration (and higher CO2) protonates specific histidine residues and stabilizes the low-affinity T (tense) state of hemoglobin, lowering oxygen affinity and facilitating oxygen delivery to active tissues.",
+      "verified": false,
+      "open": {
+        "q": "How does a decrease in pH (increased H+) alter hemoglobin oxygen affinity during the Bohr effect?",
+        "accept": [
+          "lowers oxygen affinity",
+          "decreases affinity for oxygen",
+          "reduces oxygen affinity"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-019",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Heme Proteins and Oxygen Transport",
+      "q": "A patient exposed to incomplete combustion fumes presents with headache, confusion, cherry-red skin, and normal arterial pO2 on blood gas analysis despite severe cellular hypoxia. Which molecule binds hemoglobin with roughly 200-fold greater affinity than oxygen?",
+      "options": [
+        "Carbon monoxide",
+        "Nitric oxide",
+        "Hydrogen sulfide",
+        "Ammonia"
+      ],
+      "answer": 0,
+      "explain": "Carbon monoxide binds tightly to heme Fe2+ with about 200 times the affinity of oxygen, displacing O2 and shifting the remaining bound O2 curve to the left so tissues cannot extract oxygen effectively. Standard PaO2 measures dissolved O2 and can appear normal.",
+      "verified": false,
+      "open": {
+        "q": "Which gas binds hemoglobin with about 200 times the affinity of oxygen, causing functional hypoxia?",
+        "accept": [
+          "carbon monoxide",
+          "CO"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Protein Separation and Analysis",
+      "q": "In SDS-PAGE (sodium dodecyl sulfate-polyacrylamide gel electrophoresis), what is the primary role of sodium dodecyl sulfate?",
+      "options": [
+        "Denatures proteins and imparts a uniform negative charge proportional to mass",
+        "Separates proteins strictly by their native isoelectric point",
+        "Cleave peptide bonds at specific basic amino acids",
+        "Precipitates proteins selectively using heavy metal ions"
+      ],
+      "answer": 0,
+      "explain": "SDS binds along polypeptide chains at a roughly constant mass ratio, denaturing them and conferring a uniform negative charge per unit mass so migration through polyacrylamide pores separates primarily by molecular weight.",
+      "verified": false,
+      "open": {
+        "q": "What does SDS do to proteins during SDS-PAGE separation?",
+        "accept": [
+          "denatures them and gives a uniform negative charge per mass",
+          "linearizes proteins and coats them with negative charge",
+          "denatures and imparts uniform negative charge"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Amino Acid Metabolism",
+      "q": "A child develops musty-smelling urine, developmental delay and seizures. Which enzyme deficiency is classically responsible for phenylketonuria?",
+      "options": [
+        "Phenylalanine hydroxylase",
+        "Tyrosinase",
+        "Homogentisate oxidase",
+        "Branched-chain alpha-ketoacid dehydrogenase"
+      ],
+      "answer": 0,
+      "explain": "Classic phenylketonuria most commonly results from phenylalanine hydroxylase deficiency, causing phenylalanine accumulation and reduced tyrosine formation. Some cases result from impaired tetrahydrobiopterin metabolism.",
+      "verified": false,
+      "open": {
+        "q": "What is the usual enzyme defect in classic phenylketonuria?",
+        "accept": [
+          "Phenylalanine hydroxylase deficiency",
+          "Deficiency of phenylalanine hydroxylase"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Amino Acid Metabolism",
+      "q": "A neonate has poor feeding, vomiting, lethargy and a characteristic sweet odour to the urine. Which enzyme complex is most likely deficient?",
+      "options": [
+        "Branched-chain alpha-ketoacid dehydrogenase",
+        "Phenylalanine hydroxylase",
+        "Cystathionine beta-synthase",
+        "Glutamate dehydrogenase"
+      ],
+      "answer": 0,
+      "explain": "Maple syrup urine disease is caused by deficiency of the branched-chain alpha-ketoacid dehydrogenase complex, impairing oxidative decarboxylation of leucine-, isoleucine- and valine-derived alpha-ketoacids.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme complex is deficient in maple syrup urine disease?",
+        "accept": [
+          "Branched-chain alpha-ketoacid dehydrogenase complex",
+          "BCKD complex"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Amino Acid Metabolism",
+      "q": "A patient has lens dislocation, a tendency to thrombosis and elevated plasma homocysteine. Which enzyme deficiency is a classic cause?",
+      "options": [
+        "Cystathionine beta-synthase",
+        "Tyrosine aminotransferase",
+        "Phenylalanine hydroxylase",
+        "Arginase"
+      ],
+      "answer": 0,
+      "explain": "Classical homocystinuria commonly results from cystathionine beta-synthase deficiency, impairing conversion of homocysteine and serine to cystathionine. Elevated homocysteine increases thrombotic risk and may cause ectopia lentis and skeletal features.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme deficiency causes classical homocystinuria?",
+        "accept": [
+          "Cystathionine beta-synthase deficiency",
+          "CBS deficiency"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Urea Cycle",
+      "q": "Which enzyme incorporates free ammonia into carbamoyl phosphate in the mitochondrial urea cycle?",
+      "options": [
+        "Carbamoyl phosphate synthetase I",
+        "Carbamoyl phosphate synthetase II",
+        "Argininosuccinate lyase",
+        "Ornithine aminotransferase"
+      ],
+      "answer": 0,
+      "explain": "Mitochondrial carbamoyl phosphate synthetase I uses free ammonia, bicarbonate and two ATP to form carbamoyl phosphate. It is activated by N-acetylglutamate; CPS II is cytosolic and uses glutamine in pyrimidine synthesis.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme incorporates free ammonia into carbamoyl phosphate in the mitochondrial urea cycle?",
+        "accept": [
+          "Carbamoyl phosphate synthetase I",
+          "CPS I"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transamination",
+      "q": "During transamination, the amino group from most amino acids is transferred to which acceptor to form glutamate?",
+      "options": [
+        "Alpha-ketoglutarate",
+        "Oxaloacetate",
+        "Pyruvate",
+        "Acetyl-CoA"
+      ],
+      "answer": 0,
+      "explain": "Aminotransferases commonly transfer amino groups to alpha-ketoglutarate, producing glutamate and the corresponding alpha-ketoacid. Pyridoxal phosphate (vitamin B6) is the coenzyme for these reactions.",
+      "verified": false,
+      "open": {
+        "q": "Which ketoacid commonly accepts amino groups during transamination to form glutamate?",
+        "accept": [
+          "Alpha-ketoglutarate",
+          "α-ketoglutarate"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nitrogen Transport",
+      "q": "Which amino acid carries much of the amino nitrogen from skeletal muscle to the liver in the glucose-alanine cycle?",
+      "options": [
+        "Alanine",
+        "Tyrosine",
+        "Tryptophan",
+        "Methionine"
+      ],
+      "answer": 0,
+      "explain": "Alanine transports amino nitrogen from skeletal muscle to the liver in the glucose-alanine cycle. In the liver, its amino group can enter nitrogen disposal pathways, while its carbon skeleton is used for gluconeogenesis.",
+      "verified": false,
+      "open": {
+        "q": "Which amino acid carries much of the amino nitrogen from skeletal muscle to the liver in the glucose-alanine cycle?",
+        "accept": [
+          "Alanine"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-027",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Amino Acid Metabolism",
+      "q": "A patient has alkaptonuria with darkening urine on standing and ochronosis. Which enzyme is deficient?",
+      "options": [
+        "Homogentisate 1,2-dioxygenase",
+        "Phenylalanine hydroxylase",
+        "Tyrosinase",
+        "Fumarylacetoacetate hydrolase"
+      ],
+      "answer": 0,
+      "explain": "Alkaptonuria results from deficiency of homogentisate 1,2-dioxygenase in tyrosine degradation. Homogentisic acid accumulates, oxidises on standing and deposits as pigment in connective tissues, causing ochronosis.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme deficiency causes alkaptonuria?",
+        "accept": [
+          "Homogentisate 1,2-dioxygenase deficiency",
+          "Homogentisic acid oxidase deficiency"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nitrogen Balance",
+      "q": "A patient recovering from major surgery is receiving adequate energy and protein. Which state is most consistent with net tissue protein synthesis during recovery?",
+      "options": [
+        "Positive nitrogen balance",
+        "Negative nitrogen balance",
+        "Zero nitrogen balance",
+        "Obligate nitrogen loss exceeding intake"
+      ],
+      "answer": 0,
+      "explain": "Positive nitrogen balance occurs when nitrogen intake exceeds nitrogen loss, indicating net retention of nitrogen for tissue growth or repair. It is expected during growth, pregnancy and recovery from catabolic illness when nutrition is adequate.",
+      "verified": false,
+      "open": {
+        "q": "Define positive nitrogen balance and give one setting in which it occurs.",
+        "accept": [
+          "Nitrogen intake exceeds nitrogen loss; occurs in growth, pregnancy or tissue repair",
+          "Net nitrogen retention during growth or recovery"
+        ]
+      }
+    }
+  ]
 }
