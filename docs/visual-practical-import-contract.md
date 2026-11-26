@@ -2,6 +2,8 @@
 
 **Status:** Stage 1 contract. This document defines validation and conversion requirements; it does not claim that an importer or visual-station runtime is implemented.
 
+> **Backward-compatibility guarantee:** The new attribution, provenance and intake-validation rules apply only to new assets submitted through this visual-practical import workflow. They do not retroactively invalidate, hide, quarantine or require re-import of existing histology images or existing question-bank records. Existing histology image paths, credits and rendering behaviour must be preserved. Any future change to legacy assets must be handled as a separate, explicitly reviewed migration.
+
 ## 1. Two distinct formats
 
 The AI output described in `docs/gross-clinical-prompt.md` is an **intake document**. It is not directly loadable by DxDrill.
