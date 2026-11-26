@@ -262,7 +262,11 @@
   };
   DX.onQuestionsProgress = function () {
     var h = (location.hash || "#home").slice(1);
-    if (h === "practice" && DX.practice && DX.practice.isRunning && !DX.practice.isRunning()) route();
+    if (h === "practice" && DX.practice && DX.practice.needsDataRefresh && DX.practice.needsDataRefresh()) {
+      var y = window.scrollY;
+      route();
+      window.scrollTo(0, y);
+    }
   };
   DX.load().then(function () {
     loaded = true; clearInterval(nTimer);
