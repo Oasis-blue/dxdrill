@@ -147,9 +147,9 @@
    "sub": "Neuromuscular Junction Physiology",
    "q": "Why does a single motor nerve action potential at a healthy mammalian neuromuscular junction virtually always trigger a skeletal muscle action potential (high safety factor)?",
    "options": [
-    "A single nerve impulse releases many ACh quanta, producing an end-plate potential well above the threshold for a muscle action potential",
-    "The motor end-plate potential is an all-or-none spike",
     "Acetylcholine is never degraded in the synaptic cleft",
+    "The motor end-plate potential is an all-or-none spike",
+    "A single nerve impulse releases many ACh quanta, producing an end-plate potential well above the threshold for a muscle action potential",
     "Gap junctions connect motor axons directly to muscle fibres"
    ],
    "answer": 2,
@@ -170,10 +170,10 @@
    "sub": "Neuromuscular Junction Physiology",
    "q": "How is acetylcholine action terminated in the neuromuscular junction synaptic cleft?",
    "options": [
-    "Acetylcholinesterase hydrolyses ACh into choline and acetate; choline is then taken back up",
+    "COMT methylates ACh",
     "Intact ACh is transported directly into the nerve terminal",
     "Monoamine oxidase oxidises ACh in mitochondria",
-    "COMT methylates ACh"
+    "Acetylcholinesterase hydrolyses ACh into choline and acetate; choline is then taken back up"
    ],
    "answer": 3,
    "explain": "AChE is one of the fastest known enzymes (~25,000 ACh molecules hydrolyzed per second per active site), clearing ACh within <1 ms so the end-plate can repolarize and respond to the next impulse.",
@@ -377,9 +377,9 @@
    "sub": "Major Central Nervous System Neurotransmitters",
    "q": "Why does the ionotropic NMDA glutamate receptor function as a molecular 'coincidence detector' essential for Hebbian synaptic plasticity?",
    "options": [
-    "NMDA channels require glutamate binding and postsynaptic depolarisation to relieve Mg2+ block",
-    "They open only when GABA and glycine bind simultaneously",
     "They conduct only chloride ions during sleep",
+    "They open only when GABA and glycine bind simultaneously",
+    "NMDA channels require glutamate binding and postsynaptic depolarisation to relieve Mg2+ block",
     "They remain open at rest without ligand"
    ],
    "answer": 2,
@@ -446,8 +446,8 @@
    "sub": "Catecholamines, Serotonin, and Biogenic Amines",
    "q": "Which brainstem nuclei are the principal sources of central noradrenergic, serotonergic, and histaminergic projections across the brain?",
    "options": [
-    "Locus coeruleus (noradrenaline), raphe nuclei (serotonin) and tuberomammillary nucleus (histamine)",
     "Substantia nigra (noradrenaline), red nucleus (serotonin) and cerebellum (histamine)",
+    "Locus coeruleus (noradrenaline), raphe nuclei (serotonin) and tuberomammillary nucleus (histamine)",
     "Basal nucleus of Meynert (dopamine), amygdala (glycine) and thalamus (epinephrine)",
     "Subthalamic nucleus (serotonin), globus pallidus (histamine) and hippocampus (noradrenaline)"
    ],
@@ -469,8 +469,8 @@
    "sub": "Catecholamines, Serotonin, and Biogenic Amines",
    "q": "How is the synaptic action of monoamine neurotransmitters (norepinephrine, dopamine, and serotonin) primarily terminated?",
    "options": [
-    "Presynaptic reuptake by NET, DAT and SERT, followed by vesicular recycling or intracellular metabolism",
     "Acetylcholinesterase cleavage in the synaptic cleft",
+    "Presynaptic reuptake by NET, DAT and SERT, followed by vesicular recycling or intracellular metabolism",
     "Diffusion into CSF without reuptake",
     "Binding to postsynaptic myosin"
    ],
@@ -492,8 +492,8 @@
    "sub": "Neuropeptides, Unconventional Transmitters, and Plasticity",
    "q": "How do neuropeptides (such as substance P, endorphins, enkephalins, NPY, and CGRP) differ from classical small-molecule neurotransmitters in their synthesis, storage, and release?",
    "options": [
-    "Neuropeptides are made in the neuronal soma, packaged in dense-core vesicles and released during stronger activity; extracellular peptidases degrade them",
     "Neuropeptides are made in axon terminals and rapidly taken back up",
+    "Neuropeptides are made in the neuronal soma, packaged in dense-core vesicles and released during stronger activity; extracellular peptidases degrade them",
     "Neuropeptides bind only to fast ligand-gated Na+ channels",
     "Neuropeptides are never co-released with small-molecule transmitters"
    ],
@@ -515,8 +515,8 @@
    "sub": "Neuropeptides, Unconventional Transmitters, and Plasticity",
    "q": "How do endocannabinoids (anandamide and 2-arachidonoylglycerol) and nitric oxide (NO) act as 'retrograde messengers' at central synapses?",
    "options": [
-    "Postsynaptic activity triggers their synthesis; endocannabinoids and NO diffuse backward to modulate presynaptic release",
     "They are stored in presynaptic vesicles and released before an action potential",
+    "Postsynaptic activity triggers their synthesis; endocannabinoids and NO diffuse backward to modulate presynaptic release",
     "They permanently destroy the presynaptic terminal",
     "They travel from spinal cord to cortex through blood vessels"
    ],
@@ -538,8 +538,8 @@
    "sub": "Neuropeptides, Unconventional Transmitters, and Plasticity",
    "q": "What cellular mechanism underlies long-term potentiation (LTP) in hippocampal CA1 pyramidal neurons following high-frequency tetanic stimulation?",
    "options": [
-    "NMDA-dependent Ca2+ entry activates CaMKII and promotes insertion of AMPA receptors into the postsynaptic membrane",
     "All AMPA receptors are removed from the postsynaptic density",
+    "NMDA-dependent Ca2+ entry activates CaMKII and promotes insertion of AMPA receptors into the postsynaptic membrane",
     "Presynaptic Ca2+ channels are permanently blocked",
     "Glutamate is converted into glycine"
    ],
@@ -630,8 +630,8 @@
    "sub": "Spinal Inhibitory Circuits (Renshaw and Reciprocal)",
    "q": "How does Renshaw cell recurrent inhibition regulate alpha motor neuron firing in the spinal cord?",
    "options": [
-    "Alpha-motor axon collaterals excite Renshaw cells, which release glycine to inhibit motor neurons",
     "Alpha-motor axon collaterals release glutamate onto Renshaw cells",
+    "Alpha-motor axon collaterals excite Renshaw cells, which release glycine to inhibit motor neurons",
     "Renshaw cells excite gamma motor neurons to cause spasm",
     "Renshaw cells inhibit only dorsal root ganglion cells"
    ],
@@ -653,8 +653,8 @@
    "sub": "Spinal Inhibitory Circuits (Renshaw and Reciprocal)",
    "q": "What is 'reciprocal innervation' (reciprocal inhibition) in spinal motor control?",
    "options": [
-    "Agonist motor neurons are excited while Ia inhibitory interneurons suppress antagonist motor neurons",
     "Agonist and antagonist muscles contract maximally together",
+    "Agonist motor neurons are excited while Ia inhibitory interneurons suppress antagonist motor neurons",
     "Both muscle groups are inhibited during walking",
     "Flexor and extensor motor neurons are directly electrically coupled"
    ],
@@ -814,8 +814,8 @@
    "sub": "Clinical Correlations",
    "q": "A 32-year-old woman presents with fluctuating diplopia, bilateral ptosis, dysarthria, and proximal limb weakness that worsens toward the evening and improves with rest. Repetitive nerve stimulation shows a decremental compound muscle action potential response, and intravenous edrophonium rapidly restores muscle strength. Which autoantibody causes myasthenia gravis?",
    "options": [
-    "IgG autoantibodies target postsynaptic nicotinic ACh receptors at the neuromuscular junction",
     "Autoantibodies target presynaptic P/Q-type Ca2+ channels",
+    "IgG autoantibodies target postsynaptic nicotinic ACh receptors at the neuromuscular junction",
     "Autoantibodies target spinal glycine receptors",
     "Autoantibodies target oligodendrocyte myelin basic protein"
    ],
@@ -837,8 +837,8 @@
    "sub": "Clinical Correlations",
    "q": "A 61-year-old chronic smoker presents with proximal lower-limb weakness, dry mouth, and hyporeflexia that paradoxically IMPROVES transiently after brief vigorous muscle contraction, accompanied by an incremental response on high-frequency repetitive nerve stimulation. Chest CT shows a small-cell lung carcinoma. What is the mechanism of Lambert-Eaton myasthenic syndrome (LEMS)?",
    "options": [
-    "Autoantibodies target presynaptic P/Q-type Ca2+ channels, reducing ACh release",
     "Autoantibodies target postsynaptic nicotinic ACh receptors",
+    "Autoantibodies target presynaptic P/Q-type Ca2+ channels, reducing ACh release",
     "Acetylcholinesterase is deficient in the synaptic cleft",
     "Autoantibodies target skeletal-muscle titin"
    ],
@@ -883,8 +883,8 @@
    "sub": "Clinical Correlations",
    "q": "A 67-year-old man develops resting 'pill-rolling' tremor, cogwheel rigidity, bradykinesia, and postural instability due to degeneration of pigmented dopaminergic neurons in the substantia nigra pars compacta. Why is oral L-DOPA combined with carbidopa rather than administering dopamine directly?",
    "options": [
-    "L-DOPA crosses the blood-brain barrier; carbidopa limits its peripheral conversion to dopamine",
     "Dopamine crosses the blood-brain barrier, but L-DOPA does not",
+    "L-DOPA crosses the blood-brain barrier; carbidopa limits its peripheral conversion to dopamine",
     "Carbidopa converts dopamine into serotonin in the liver",
     "Dopamine destroys striatal GABA-A receptors"
    ],
