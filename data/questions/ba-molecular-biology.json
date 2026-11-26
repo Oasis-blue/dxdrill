@@ -102,10 +102,10 @@
    "sub": "DNA Replication and Telomeres",
    "q": "How do Type II topoisomerases (such as bacterial DNA gyrase and human topoisomerase II) relieve positive supercoils ahead of the replication fork?",
    "options": [
-    "Create transient ATP-dependent double-strand DNA breaks, pass an intact duplex through the break, and religate both strands",
-    "Nick a single DNA strand without requiring ATP",
-    "Hydrolyze phosphodiester bonds permanently at telomeres",
-    "Cleave hydrogen bonds between adenine and thymine"
+    "Make transient ATP-dependent double-strand breaks, pass another duplex through, then reseal the DNA",
+    "Nick one DNA strand without ATP",
+    "Permanently hydrolyse phosphodiester bonds at telomeres",
+    "Break hydrogen bonds between adenine and thymine"
    ],
    "answer": 0,
    "explain": "Type II topoisomerases introduce transient double-stranded cuts using ATP to remove positive supercoils and decatenate daughter chromosomes; fluoroquinolones inhibit bacterial DNA gyrase, and etoposide/doxorubicin target human topoisomerase II.",
@@ -127,8 +127,8 @@
    "q": "Why do linear eukaryotic chromosomes progressively shorten with each round of somatic cell division in the absence of telomerase?",
    "options": [
     "DNA ligase degrades chromosome ends during mitosis",
-    "Removal of the terminal RNA primer at the extreme 5' end of the lagging strand leaves a gap with no upstream 3'-OH for DNA polymerase to extend",
-    "Leading-strand synthesis stops 500 base pairs before the centromere",
+    "Removal of the terminal lagging-strand RNA primer leaves a gap that DNA polymerase cannot fill",
+    "Leading-strand synthesis stops before the centromere",
     "Topoisomerase I cleaves telomeric repeats during S phase"
    ],
    "answer": 1,
@@ -150,7 +150,7 @@
    "options": [
     "DNA-dependent DNA polymerase using a protein template",
     "RNA-dependent RNA polymerase using mitochondrial rRNA",
-    "RNA-dependent DNA polymerase (reverse transcriptase) using an integral intrinsic RNA template (TERC)",
+    "RNA-dependent DNA polymerase using its own RNA template",
     "DNA ligase using Okazaki fragments"
    ],
    "answer": 2,
@@ -265,10 +265,10 @@
    "sub": "DNA Damage and Repair Mechanisms",
    "q": "Why do BRCA1 and BRCA2 mutations strongly predispose carriers to breast, ovarian, and prostate cancers?",
    "options": [
-    "They impair removal of uracil from DNA",
-    "They prevent RNA primer removal during lagging-strand synthesis",
+    "They impair uracil removal from DNA",
+    "They prevent RNA-primer removal",
     "They hyperactivate telomerase in somatic cells",
-    "They impair error-free homologous recombination repair of double-strand DNA breaks, forcing reliance on error-prone non-homologous end joining"
+    "They impair homologous recombination repair of double-strand breaks"
    ],
    "answer": 3,
    "explain": "BRCA1 and BRCA2 are tumor suppressors essential for homologous recombination repair of double-strand breaks during S and G2 phases; loss forces cells to use error-prone non-homologous end joining (NHEJ), accumulating genomic instability.",
@@ -338,8 +338,8 @@
    "q": "How does the antibiotic rifampicin inhibit bacterial transcription?",
    "options": [
     "Binds the 30S ribosomal subunit",
-    "Inhibits DNA gyrase supercoiling",
-    "Binds the beta subunit of prokaryotic DNA-dependent RNA polymerase, blocking RNA chain initiation",
+    "Inhibits DNA gyrase",
+    "Binds the beta subunit of bacterial RNA polymerase and blocks transcription initiation",
     "Cleaves the 5' mRNA cap"
    ],
    "answer": 2,
@@ -434,7 +434,7 @@
    "options": [
     "Small ribosomal 40S subunits",
     "Aminoacyl-tRNA synthetases",
-    "Core proteins of small nuclear ribonucleoproteins (snRNPs) of the spliceosome",
+    "Core proteins of spliceosomal small nuclear ribonucleoproteins",
     "Histone H1 linker proteins"
    ],
    "answer": 2,
@@ -455,9 +455,9 @@
    "sub": "Transcription and RNA Processing",
    "q": "How does tissue-specific RNA editing produce ApoB-48 in small intestinal enterocytes versus full-length ApoB-100 in hepatocytes from the exact same APOB gene?",
    "options": [
-    "Alternative splicing removes 52% of the exons in the intestine",
-    "Intestinal proteases cleave ApoB-100 in half after secretion",
-    "Intestinal cytidine deaminase (APOBEC-1) converts a CAA (glutamine) codon in APOB mRNA into a UAA premature stop codon",
+    "Alternative splicing removes over half the exons in the intestine",
+    "Intestinal proteases cleave ApoB-100 after secretion",
+    "APOBEC-1 edits a CAA codon to a premature UAA stop codon in intestinal APOB mRNA",
     "Hepatocytes methylate the APOB promoter"
    ],
    "answer": 2,
@@ -549,10 +549,10 @@
    "sub": "Genetic Code and Mutations",
    "q": "What is the functional difference between a missense mutation, a nonsense mutation, and a frameshift mutation?",
    "options": [
-    "Missense introduces a stop codon; nonsense substitutes one amino acid; frameshift preserves the reading frame",
-    "Missense deletes a chromosome; nonsense changes gene expression; frameshift affects only introns",
-    "Missense substitutes an amino acid; nonsense creates a premature stop; frameshift alters downstream codons after a non-triplet insertion or deletion",
-    "All three mutations are silent and leave the encoded protein unchanged"
+    "Missense creates a stop; nonsense changes one amino acid; frameshift preserves the reading frame",
+    "Missense deletes a chromosome; nonsense alters expression; frameshift affects only introns",
+    "Missense changes an amino acid; nonsense creates a stop codon; frameshift alters downstream codons",
+    "All three mutations leave the protein unchanged"
    ],
    "answer": 2,
    "explain": "Missense mutations (e.g., Glu6Val in sickle cell disease) replace one amino acid; nonsense mutations introduce a premature stop codon (often triggering nonsense-mediated mRNA decay); indels not divisible by 3 shift the translational reading frame.",
@@ -596,10 +596,10 @@
    "sub": "Translation and Protein Synthesis",
    "q": "How do prokaryotic ribosomes accurately locate the initiator AUG start codon on polycistronic mRNA?",
    "options": [
-    "The 40S ribosomal subunit scans from the 5' 7-methylguanosine cap",
-    "The 16S rRNA of the 30S small subunit base-pairs directly with a purine-rich Shine-Dalgarno sequence (~8-10 nucleotides upstream of AUG)",
-    "Rho factor places the ribosome onto the start codon",
-    "Poly(A)-binding protein loops the 3' tail to the start codon"
+    "The 40S subunit scans from the 5' cap",
+    "16S rRNA pairs with the Shine-Dalgarno sequence upstream of AUG",
+    "Rho factor positions the ribosome",
+    "Poly(A)-binding protein recruits the ribosome"
    ],
    "answer": 1,
    "explain": "In prokaryotes, the 3' end of 16S rRNA binds the complementary Shine-Dalgarno consensus sequence (5'-AGGAGGU-3') upstream of the start codon, whereas eukaryotes use Kozak-sequence scanning from the 5' cap.",
@@ -667,7 +667,7 @@
    "options": [
     "Cleave 28S rRNA at the sarcin-ricin loop",
     "Bind the 30S ribosomal subunit",
-    "ADP-ribosylate and inactivate eukaryotic elongation factor 2 (eEF-2), blocking ribosomal translocation",
+    "ADP-ribosylate eEF-2 and block ribosomal translocation",
     "Inhibit RNA polymerase II"
    ],
    "answer": 2,
@@ -689,10 +689,10 @@
    "sub": "Translation and Protein Synthesis",
    "q": "How are nascent secretory and integral membrane proteins targeted to the rough endoplasmic reticulum during translation?",
    "options": [
-    "Ubiquitin chains guide ribosomes to the nuclear pore",
-    "SRP binds the emerging signal peptide, pauses translation and docks the ribosome at the ER translocon",
-    "Hsp60 transports secretory proteins through the mitochondrial membrane",
-    "Mannose-6-phosphate directs ribosomes to the rough ER"
+    "Ubiquitin chains direct ribosomes to nuclear pores",
+    "SRP binds the signal peptide, pauses translation and docks the ribosome at the ER",
+    "Hsp60 transports proteins through mitochondrial membranes",
+    "Mannose-6-phosphate directs ribosomes to the ER"
    ],
    "answer": 1,
    "explain": "SRP recognizes the hydrophobic N-terminal signal sequence, arrests elongation, and brings the ribosome-nascent chain complex to the ER membrane SRP receptor and Sec61 channel for co-translational translocation.",
@@ -713,9 +713,9 @@
    "q": "In the E. coli lac operon, under which combination of extracellular conditions is transcription maximally induced?",
    "options": [
     "High glucose and high lactose",
-    "High glucose and absent lactose",
-    "Low glucose (high cAMP-CAP) and high lactose (allolactose removes the lac repressor)",
-    "Low glucose and absent lactose"
+    "High glucose and no lactose",
+    "Low glucose and high lactose",
+    "Low glucose and no lactose"
    ],
    "answer": 2,
    "explain": "Maximal lac operon transcription requires both removal of negative control (allolactose binds and inactivates the lacI repressor) and activation of positive control (low glucose raises cAMP, activating CAP/CRP to recruit RNA polymerase).",
@@ -734,10 +734,10 @@
    "sub": "Regulation of Gene Expression",
    "q": "How do histone acetyltransferases (HATs) and histone deacetylases (HDACs) epigenetically regulate eukaryotic chromatin structure and transcription?",
    "options": [
-    "HATs condense chromatin, whereas HDACs loosen histone-DNA binding",
-    "HATs acetylate histone lysines and generally open chromatin; HDACs remove acetyl groups and generally promote compaction",
-    "HATs methylate DNA CpG islands, whereas HDACs remove DNA methylation",
-    "Both enzymes degrade histones during DNA replication"
+    "HATs compact chromatin; HDACs loosen it",
+    "HATs acetylate histone lysines and generally open chromatin; HDACs remove acetyl groups and promote compaction",
+    "HATs methylate DNA; HDACs remove DNA methylation",
+    "Both enzymes degrade histones"
    ],
    "answer": 1,
    "explain": "Acetylating epsilon-amino groups of histone lysine residues eliminates their positive charge, weakening electrostatic attraction to negatively charged DNA phosphate backbones and opening euchromatin for transcription factors.",
@@ -756,10 +756,10 @@
    "sub": "Regulation of Gene Expression",
    "q": "What is the usual effect of DNA methylation at cytosine residues within promoter CpG islands on gene expression?",
    "options": [
-    "Strongly activates transcription by recruiting RNA polymerase II",
+    "Activates transcription by recruiting RNA polymerase II",
     "Triggers alternative exon inclusion",
-    "Represses gene transcription by blocking transcription factor binding and recruiting methyl-CpG-binding proteins and HDACs",
-    "Increases mRNA half-life in the cytosol"
+    "Represses transcription, partly by recruiting methyl-CpG-binding proteins and HDACs",
+    "Increases cytosolic mRNA stability"
    ],
    "answer": 2,
    "explain": "DNA methyltransferases convert cytosine to 5-methylcytosine at promoter CpG islands, leading to stable transcriptional silencing (important in genomic imprinting, X-inactivation, and tumor suppressor silencing).",
@@ -781,9 +781,9 @@
    "sub": "Regulation of Gene Expression",
    "q": "How do microRNAs (miRNAs) and small interfering RNAs (siRNAs) post-transcriptionally silence gene expression in the cytoplasm?",
    "options": [
-    "Bind promoter TATA boxes to block RNA polymerase II",
-    "Associate with the RNA-induced silencing complex (RISC) and base-pair with target mRNAs to trigger mRNA cleavage or translational repression",
-    "Splice out introns from pre-mRNA",
+    "Bind promoter TATA boxes",
+    "Guide RISC to target mRNA, causing cleavage or translational repression",
+    "Remove introns from pre-mRNA",
     "Methylate tRNA anticodons"
    ],
    "answer": 1,
@@ -803,10 +803,10 @@
    "sub": "Regulation of Gene Expression",
    "q": "How does iron deficiency post-transcriptionally regulate the translation of ferritin mRNA versus the stability of transferrin receptor (TfR) mRNA?",
    "options": [
-    "Iron regulatory proteins (IRPs) bind 5'-IRE on ferritin mRNA to block its translation and bind 3'-IREs on transferrin receptor mRNA to stabilize it and increase iron uptake",
-    "IRPs enhance ferritin translation and degrade transferrin receptor mRNA",
+    "IRPs bind ferritin 5'-IREs to inhibit translation and TfR 3'-IREs to stabilise its mRNA",
+    "IRPs increase ferritin translation and degrade TfR mRNA",
     "Iron directly cleaves both mRNAs",
-    "IRPs promote transcription of hepcidin"
+    "IRPs stimulate hepcidin transcription"
    ],
    "answer": 0,
    "explain": "When cellular iron is low, IRPs bind iron-responsive elements (IREs): binding at the 5'-UTR of ferritin (and ALAS2) blocks ribosome initiation, while binding at the 3'-UTR of TfR mRNA protects it from endonuclease degradation.",
@@ -851,10 +851,10 @@
    "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
    "q": "Why is Taq DNA polymerase (isolated from Thermus aquaticus) essential for automated PCR thermal cycling?",
    "options": [
-    "It possesses high 3' to 5' proofreading exonuclease activity",
-    "It can synthesize DNA without oligonucleotide primers",
-    "It is thermostable and retains enzymatic activity after repeated heating to 95 C during denaturation cycles",
-    "It uses RNA as a template directly"
+    "It has strong 3' to 5' proofreading activity",
+    "It synthesises DNA without primers",
+    "It remains active after repeated high-temperature denaturation steps",
+    "It uses RNA directly as a template"
    ],
    "answer": 2,
    "explain": "Standard E. coli DNA polymerase denatures at 95 C; thermostable Taq polymerase (optimal at ~72 C) survives repeated high-temperature strand-separation cycles without needing fresh enzyme each cycle.",
@@ -874,7 +874,7 @@
    "q": "Which modification of PCR is required to detect and quantify RNA viruses (such as HIV, HCV, or SARS-CoV-2) or measure cellular mRNA expression levels?",
    "options": [
     "Nested DNA PCR without reverse transcriptase",
-    "Reverse transcription PCR (RT-PCR), which first converts RNA into complementary DNA (cDNA) using reverse transcriptase",
+    "RT-PCR first converts RNA into cDNA using reverse transcriptase",
     "Southern blotting",
     "Western blotting"
    ],
@@ -943,9 +943,9 @@
    "q": "In Sanger dideoxy DNA sequencing, how do 2',3'-dideoxynucleoside triphosphates (ddNTPs) terminate DNA chain elongation?",
    "options": [
     "They lack a 5'-triphosphate group",
-    "They lack a 3'-hydroxyl (-OH) group required to form a phosphodiester bond with the next incoming dNTP",
-    "They cleave double-stranded DNA at palindromic sites",
-    "They irreversibly inhibit Taq polymerase active sites"
+    "They lack the 3'-OH needed to add the next nucleotide",
+    "They cleave DNA at palindromic sites",
+    "They irreversibly inhibit Taq polymerase"
    ],
    "answer": 1,
    "explain": "ddNTPs lack both 2'-OH and 3'-OH groups on the ribose sugar; once incorporated into a growing DNA strand, no further nucleotides can be added, generating nested fragments separated by capillary electrophoresis.",
@@ -1014,10 +1014,10 @@
    "sub": "Transcription and RNA Processing",
    "q": "What is the role of enhancers in eukaryotic gene transcription?",
    "options": [
-    "Enhancers encode the catalytic subunit of RNA polymerase II",
-    "Enhancers are regulatory DNA sequences that bind activators and stimulate transcription through promoter interactions",
-    "Enhancers terminate transcription by forming GC-rich hairpins",
-    "Enhancers are RNA sequences that degrade cytoplasmic mRNA"
+    "Encode the catalytic subunit of RNA polymerase II",
+    "Bind activators and stimulate transcription through promoter interactions",
+    "Terminate transcription through GC-rich hairpins",
+    "Act as RNA sequences that degrade cytoplasmic mRNA"
    ],
    "answer": 1,
    "explain": "Enhancers are position- and orientation-independent DNA elements that bind tissue-specific transcription factors (activators) and interact with general transcription factors at the promoter via DNA looping and Mediator.",
@@ -1037,9 +1037,9 @@
    "sub": "Transcription and RNA Processing",
    "q": "How does alternative splicing increase proteomic diversity in humans?",
    "options": [
-    "Mutates genomic DNA sequences in somatic tissues",
-    "Allows a single pre-mRNA transcript to be spliced in different exon combinations to produce multiple distinct protein isoforms",
-    "Translates introns into functional enzymes",
+    "Mutates genomic DNA in somatic tissues",
+    "Allows one pre-mRNA to produce different exon combinations and protein isoforms",
+    "Translates introns into enzymes",
     "Converts mRNA back into genomic DNA"
    ],
    "answer": 1,
@@ -1060,10 +1060,10 @@
    "sub": "Translation and Protein Synthesis",
    "q": "In eukaryotic translation, how does the 40S ribosomal subunit recognize the 5' end of mature mRNA?",
    "options": [
-    "Binds directly to the Shine-Dalgarno sequence",
-    "The cap-binding complex eIF4F (specifically eIF4E) recognizes the 5' 7-methylguanosine cap and recruits the 43S pre-initiation complex",
-    "Binds directly to the stop codon",
-    "Recognizes internal poly(U) tracts"
+    "Bind directly to the Shine-Dalgarno sequence",
+    "eIF4E binds the 5' cap; eIF4F helps recruit the 43S pre-initiation complex",
+    "Bind directly to the stop codon",
+    "Recognise internal poly(U) tracts"
    ],
    "answer": 1,
    "explain": "eIF4E binds the 5' 7-methylguanosine cap, eIF4G bridges eIF4E to poly(A)-binding protein (circularizing the mRNA), and eIF4A unwinds 5'-UTR secondary structure so the 40S subunit can scan to the Kozak AUG start codon.",
@@ -1105,10 +1105,10 @@
    "sub": "Regulation of Gene Expression",
    "q": "In the E. coli trp operon, how does attenuation finely regulate transcription in response to intracellular tryptophan levels?",
    "options": [
-    "Tryptophan directly binds RNA polymerase and causes premature termination",
-    "Low tryptophan stalls the leader-peptide ribosome, favouring an antiterminator; high tryptophan permits a terminator hairpin to form",
-    "Tryptophan methylates the promoter and prevents RNA polymerase binding",
-    "The trp repressor degrades the completed mRNA when tryptophan is scarce"
+    "Tryptophan binds RNA polymerase and causes premature termination",
+    "Low tryptophan stalls the leader-peptide ribosome; high tryptophan favours terminator formation",
+    "Tryptophan methylates the promoter",
+    "The trp repressor degrades mRNA when tryptophan is scarce"
    ],
    "answer": 1,
    "explain": "Because bacteria lack a nuclear membrane, ribosomes translate the leader peptide (trpL) while RNA polymerase is still transcribing; low Trp-tRNA stalls the ribosome at Trp codons, favoring the 2:3 antiterminator loop instead of the 3:4 terminator hairpin.",
@@ -1152,8 +1152,8 @@
    "sub": "Translation and Protein Synthesis",
    "q": "What is a polyribosome (polysome)?",
    "options": [
-    "A cluster of multiple ribosomes simultaneously translating a single mRNA molecule",
-    "A ribosome composed of 50S and 60S subunits",
+    "Several ribosomes translating one mRNA simultaneously",
+    "A ribosome made of 50S and 60S subunits",
     "A storage granule of inactive tRNAs",
     "A complex of DNA polymerase and helicase"
    ],
