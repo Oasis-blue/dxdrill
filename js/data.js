@@ -38,6 +38,22 @@ window.DX = window.DX || {};
     return '<figure class="qimg ' + (cls || "") + '"><img src="' + e(src) + '" alt="' + e(q.alt || "Picture for this question") + '" loading="lazy" decoding="async">' +
       (q.credit && cls !== "small" ? '<figcaption>' + e(q.credit) + '</figcaption>' : "") + '</figure>';
   };
+
+  /* If a picture cannot load (weak connection, missing file), show a clear note with a retry button instead of a blank gap. */
+  document.addEventListener("error", function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== "IMG" || !img.closest || !img.closest(".qimg") || img.getAttribute("data-failed")) return;
+    img.setAttribute("data-failed", "1");
+    var fig = img.closest(".qimg"), box = document.createElement("div");
+    box.className = "qimgfail"; box.setAttribute("role", "status");
+    box.innerHTML = '<span>The picture could not load.</span> <button type="button" class="btn small">Try again</button>';
+    box.querySelector("button").onclick = function () {
+      var src = img.getAttribute("src").split("?")[0];
+      box.parentNode.removeChild(box); img.removeAttribute("data-failed"); img.hidden = false;
+      img.src = src + "?r=" + Date.now();
+    };
+    img.hidden = true; fig.insertBefore(box, img);
+  }, true);
   DX.shuffle = function (a) {
     a = a.slice();
     for (var i = a.length - 1; i > 0; i--) {
