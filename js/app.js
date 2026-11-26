@@ -258,9 +258,9 @@
   setTimeout(function () { if (!loaded) retryBox("Still loading…", "Your connection looks slow. Wait a little longer, or tap Try again. Nothing has been lost: your scores are saved on this phone."); }, 9000);
   DX.load().then(function () {
     loaded = true; clearInterval(nTimer);
-    if (DX.partial && DX.toast) DX.toast("Still loading the rest of the questions…");
+    if (DX.partial && DX.toast) DX.toast("You can keep exploring while we finish.", "loading");
     DX.onMore = function () {
-      if (DX.toast) DX.toast("All questions loaded.");
+      if (DX.toast) DX.toast("All questions have loaded successfully.", "success");
       var h = (location.hash || "#home").slice(1);
       if (h === "home" || h === "") route();
       else if (DATA_PAGES[h]) { if (h === "practice" && DX.practice && DX.practice.reset) DX.practice.reset(); route(); }
