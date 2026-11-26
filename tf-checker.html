@@ -3,13 +3,13 @@ textarea{width:100%;min-height:260px;font:13px/1.45 ui-monospace,monospace;paddi
 </style></head><body><main class="gutter"><div class="wrap stack" style="padding:24px 0 48px"><header><p class="eyebrow">DxDrill tools</p><h1>True/False checker</h1><p class="lede">Paste AI-generated stems. This checks structure, topics, answer types, explanations, references and duplicates, then downloads an updated True/False bank file.</p></header><section class="section stack"><div class="field"><label class="label" for="inp">Paste the AI's JSON here</label><textarea id="inp" spellcheck="false" placeholder='{ "topic": "pas-central-nervous-system", "questions": [ ... ] }'></textarea></div><div class="row tight"><button class="btn primary" id="go">Check it</button><a class="btn ghost" href="checker.html">Normal question checker</a><a class="btn ghost" href="index.html">Back to DxDrill</a></div></section><section id="out" class="stack" aria-live="polite"></section></div></main>
 <script>
 (function(){
-var $=function(x){return document.getElementById(x)},E={topics:{},existing:[],ids:{},stems:{}};
+var $=function(x){return document.getElementById(x)},E={topics:{},existing:[],core:[],ids:{},stems:{}};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function get(u){return fetch(u).then(function(r){if(!r.ok)throw Error(u+" ("+r.status+")");return r.json()})}
 function norm(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim()}
 var ready=Promise.all([get("data/curriculum.json"),get("data/manifest.json")]).then(function(a){
 a[0].subjects.forEach(function(s){s.areas.forEach(function(ar){ar.topics.forEach(function(t){E.topics[t.id]=t.name})})});
-return Promise.all((a[1].questions||[]).filter(function(f){return f.indexOf("tf-")===0}).map(function(f){return get("data/questions/"+f+".json").then(function(d){(d.questions||[]).forEach(function(q){E.existing.push(q);E.ids[q.id]=1;E.stems[norm(q.q)]=1})}).catch(function(e){console.warn(e)})}))
+return Promise.all((a[1].questions||[]).filter(function(f){return f.indexOf("tf-")===0}).map(function(f){return get("data/questions/"+f+".json").then(function(d){if(f==="tf-core-expansion")E.core=d.questions||[];(d.questions||[]).forEach(function(q){E.existing.push(q);E.ids[q.id]=1;E.stems[norm(q.q)]=1})}).catch(function(e){console.warn(e)})}))
 });
 function parse(s){var t=s.trim().replace(/^```[a-z]*\s*/i,"").replace(/```\s*$/i,""),a=t.indexOf("{"),b=t.lastIndexOf("}");if(a<0||b<0)throw Error("Paste one complete JSON object.");t=t.slice(a,b+1).replace(/[“”]/g,'"').replace(/[‘’]/g,"'").replace(/,\s*([}\]])/g,"$1");return JSON.parse(t)}
 function check(o){
@@ -34,7 +34,7 @@ function show(r){
 var h="";if(r.errors.length)h+="<h2>Fix these first</h2>"+r.errors.map(function(x){return'<div class="msg err">'+esc(x)+'</div>'}).join("")+'<p class="hint">Send these errors to the AI and ask it to correct and resend the full JSON.</p>';
 if(r.warnings.length)h+="<h2>Review these</h2>"+r.warnings.map(function(x){return'<div class="msg warn">'+esc(x)+'</div>'}).join("");
 if(!r.errors.length&&r.out.length){
-var all=E.existing.concat(r.out),nums={};all.forEach(function(q){var p="tf-"+q.topic+"-",re=new RegExp("^"+p.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(\\d+)$"),m=re.exec(q.id||"");if(m)nums[q.topic]=Math.max(nums[q.topic]||0,+m[1])});
+var all=E.core.concat(r.out),nums={};all.forEach(function(q){var p="tf-"+q.topic+"-",re=new RegExp("^"+p.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(\\d+)$"),m=re.exec(q.id||"");if(m)nums[q.topic]=Math.max(nums[q.topic]||0,+m[1])});
 r.out.forEach(function(q){var n=++nums[q.topic]|| (nums[q.topic]=1);q.id="tf-"+q.topic+"-"+String(n).padStart(3,"0")});
 h+='<div class="msg ok">'+r.out.length+" stems / "+r.out.reduce(function(n,q){return n+q.items.length},0)+" statements ready. All imported stems are marked unverified.</div>";
 h+="<h2>Preview</h2>"+r.out.slice(0,3).map(function(q){return'<div class="pv"><p class="label">'+esc(E.topics[q.topic])+" · "+esc(q.sub)+" · "+esc(q.id)+'</p><b>'+esc(q.q)+'</b><ol>'+q.items.map(function(x){return"<li>"+esc(x.text)+" — <b>"+(x.answer?"True":"False")+"</b><p>"+esc(x.explain)+"</p></li>"}).join("")+"</ol><small>References: "+q.references.map(esc).join(" · ")+"</small></div>"}).join("");
