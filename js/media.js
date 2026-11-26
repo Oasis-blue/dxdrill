@@ -33,10 +33,10 @@
     if (/froment|dinner.?fork|wrist drop|foot drop|claw hand|waiter.?s tip|clinical sign|clinical examination|deformity|palsy/.test(t)) {
       return { kind: "Clinical signs", hint: "clinical sign medical photograph illustration", boost: ["clinical", "sign", "photograph", "illustration", "deformity", "palsy"] };
     }
-    if (/physiolog|ecg|electrocardio|spirom|lung volume|oxygen dissociation|oxy.?haemoglobin|oxy.?hemoglobin|cardiac cycle|wiggers|action potential|membrane potential|gfr|glomerular filtration|renal clearance|blood pressure|ventilation perfusion/.test(t)) {
+    if (/physiolog|cardiovascular|respiratory physiology|renal physiology|gastrointestinal physiology|endocrine physiology|reproductive physiology|blood and body fluids|fluid balance|thermoregulation|neuromuscular|nerve conduction|ecg|electrocardio|spirom|lung volume|oxygen dissociation|oxy.?haemoglobin|oxy.?hemoglobin|cardiac cycle|wiggers|action potential|membrane potential|gfr|glomerular filtration|renal clearance|blood pressure|ventilation perfusion/.test(t)) {
       return { kind: "Physiology", hint: "physiology diagram graph medical illustration", boost: ["physiology", "diagram", "graph", "waveform", "curve", "cycle"] };
     }
-    if (/biochem|glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|lipid metabolism|carbohydrate metabolism|amino acid metabolism|metabolic pathway|dna replication|rna transcription|enzyme kinetics/.test(t)) {
+    if (/biochem|glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|lipid metabolism|carbohydrate metabolism|amino acid|nucleic acid|protein metabolism|protein synthesis|purine|pyrimidine|vitamin|heme|haem|buffer|acid.?base|metabolic pathway|dna replication|rna transcription|enzyme kinetics/.test(t)) {
       return { kind: "Biochemistry", hint: "biochemistry pathway diagram molecular illustration", boost: ["biochemistry", "pathway", "metabolism", "molecular", "diagram", "enzyme"] };
     }
     return { kind: "Anatomy", hint: "anatomy labelled medical diagram specimen", boost: ["anatomy", "diagram", "labelled", "labeled", "specimen", "dissection"] };
@@ -60,13 +60,10 @@
     if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) score -= 8;
     return score;
   }
-  function images(term) {
-    var key = "images." + term.toLowerCase(), hit = cached(key);
-    if (hit) return Promise.resolve(hit);
-    var profile = profileFor(term), u = new URL("https://commons.wikimedia.org/w/api.php");
+  function commonsSearch(query, term, profile) {
+    var u = new URL("https://commons.wikimedia.org/w/api.php");
     var params = {
-      action: "query", generator: "search",
-      gsrsearch: term + " " + profile.hint,
+      action: "query", generator: "search", gsrsearch: query,
       gsrnamespace: "6", gsrlimit: "16", prop: "imageinfo",
       iiprop: "url|extmetadata", iiurlwidth: "640", format: "json", origin: "*"
     };
@@ -89,9 +86,19 @@
         return item;
       }).filter(Boolean);
       out.sort(function (a, b) { return b._score - a._score || a._order - b._order; });
-      out = out.slice(0, 4).map(function (item) {
+      return out.slice(0, 4).map(function (item) {
         delete item._score; delete item._order; return item;
       });
+    }).catch(function () { return []; });
+  }
+  function images(term) {
+    var key = "images." + term.toLowerCase(), hit = cached(key);
+    if (hit) return Promise.resolve(hit);
+    var profile = profileFor(term);
+    /* Try the medical-specific query first, then broaden to the exact topic if it is too restrictive. */
+    return commonsSearch(term + " " + profile.hint, term, profile).then(function (out) {
+      return out.length ? out : commonsSearch(term, term, profile);
+    }).then(function (out) {
       save(key, out); return out;
     }).catch(function () { return []; });
   }
