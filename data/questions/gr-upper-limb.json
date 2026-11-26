@@ -2396,7 +2396,7 @@
         "Flexor carpi ulnaris"
       ],
       "answer": 3,
-      "explain": "The humeral and ulnar heads of flexor carpi ulnaris bridge the cubital tunnel, which is a site of ulnar nerve compression.",
+      "explain": "After passing behind the medial epicondyle through the cubital tunnel, the ulnar nerve enters the forearm between the humeral and ulnar heads of flexor carpi ulnaris. It then passes deep to this muscle.",
       "verified": false,
       "open": {
         "q": "The ulnar nerve enters the forearm between the two heads of which muscle?",
@@ -4665,6 +4665,74 @@
         "q": "Identify the structure or concept tested in this clinical scenario.",
         "accept": [
           "median nerve"
+        ]
+      }
+    },
+    {
+      "id": "gr-upper-limb-200",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Shoulder and Rotator Cuff",
+      "q": "During full abduction of the arm to approximately 180°, which movement pattern best describes the usual scapulohumeral rhythm?",
+      "options": [
+        "About 120° at the glenohumeral joint and 60° by scapular upward rotation",
+        "About 60° at the glenohumeral joint and 120° by scapular rotation",
+        "All 180° occurs at the glenohumeral joint",
+        "All 180° occurs by scapular rotation"
+      ],
+      "answer": 0,
+      "explain": "The approximate 2:1 rhythm divides full elevation into about 120° of glenohumeral movement and 60° of scapular upward rotation; the exact ratio varies during the movement.",
+      "verified": false,
+      "open": {
+        "q": "What is the approximate glenohumeral-to-scapular contribution during full arm abduction?",
+        "accept": [
+          "2:1",
+          "120 degrees glenohumeral and 60 degrees scapular"
+        ]
+      }
+    },
+    {
+      "id": "gr-upper-limb-201",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Shoulder and Rotator Cuff",
+      "q": "A patient has weakness initiating abduction and reduced lateral rotation of the arm after compression of a nerve at the suprascapular notch. Which muscles are most directly affected?",
+      "options": [
+        "Deltoid and teres minor",
+        "Supraspinatus and infraspinatus",
+        "Subscapularis and teres major",
+        "Pectoralis major and latissimus dorsi"
+      ],
+      "answer": 1,
+      "explain": "The suprascapular nerve supplies supraspinatus and infraspinatus. A lesion proximal to their branches weakens initiation of abduction and lateral rotation.",
+      "verified": false,
+      "open": {
+        "q": "Which two muscles are supplied by the suprascapular nerve?",
+        "accept": [
+          "supraspinatus and infraspinatus"
+        ]
+      }
+    },
+    {
+      "id": "gr-upper-limb-202",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Wrist and hand",
+      "q": "A cyclist develops compression of the ulnar nerve in Guyon's canal at the wrist. Which combination is most likely?",
+      "options": [
+        "Weak intrinsic hand muscles with palmar sensory loss over the medial 1½ digits, but relative preservation of dorsal ulnar hand sensation",
+        "Weak flexor carpi ulnaris and medial flexor digitorum profundus with sensory loss over both palmar and dorsal medial hand",
+        "Thenar weakness and sensory loss over the lateral 3½ digits",
+        "Loss of wrist and finger extension with sensory loss over the first dorsal web space"
+      ],
+      "answer": 0,
+      "explain": "The dorsal cutaneous branch of the ulnar nerve leaves the nerve proximal to Guyon's canal. A canal lesion can therefore affect palmar ulnar sensation and intrinsic hand muscles while sparing much of the dorsal ulnar hand.",
+      "verified": false,
+      "open": {
+        "q": "Why can a Guyon's canal lesion spare dorsal ulnar hand sensation?",
+        "accept": [
+          "the dorsal cutaneous branch leaves the ulnar nerve proximal to the canal",
+          "dorsal ulnar cutaneous branch arises proximal to Guyon's canal"
         ]
       }
     }
