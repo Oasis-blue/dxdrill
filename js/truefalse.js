@@ -23,7 +23,7 @@
     if (T.view === "run") startTimer();
     paint();
   }
-  function leave() { }
+  function leave() { stopTimer(); }
   function paint() { if (app) app.innerHTML = view(); }
 
   function view() {
