@@ -147,3 +147,22 @@ The new statements, keys and explanations were checked against the listed NCBI B
 - Structural issues: 0
 
 The four new stems are attached to existing curriculum IDs. This is still initial coverage, not comprehensive coverage of systemic pathology or pharmacology. Unreviewed older stems remain unverified.
+
+
+## Systemic Pathology and cardiovascular Pharmacology expansion — 2026-11-26 (follow-up)
+
+Added four four-statement stems to extend systemic coverage:
+
+- Systemic Pathology: ischaemic stroke tissue injury, COPD pathology, and obstructive uropathy.
+- Systemic Pharmacology: calcium channel blockers.
+
+The new statements, keys and explanations were checked against the listed NCBI Bookshelf sources during drafting. Two older stems were also individually reviewed and promoted to verified: `tf-pg-cell-002` (membrane potentials) and `tf-gr-upper-limb-006` (median nerve).
+
+- New stems: 4 (16 statements)
+- Additional older stems verified: 2
+- Combined bank: 111 stems / 449 statements
+- Verified: 37
+- Still draft/unverified: 74
+- Duplicate IDs: 0
+
+These additions provide further initial coverage only; they do not make the Pathology or Pharmacology bank comprehensive. Verification flags apply only to the six stems reviewed in this pass.
