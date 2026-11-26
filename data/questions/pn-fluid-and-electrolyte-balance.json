@@ -1,862 +1,885 @@
 {
- "topic": "pn-fluid-and-electrolyte-balance",
- "questions": [
-  {
-   "id": "fl-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Water balance",
-   "q": "About how much water does a healthy adult gain per day in total from drinks, food and metabolism?",
-   "options": [
-    "About 6,000 mL",
-    "About 2,500 mL",
-    "About 4,000 mL",
-    "About 1,000 mL"
-   ],
-   "answer": 1,
-   "explain": "Roughly 1,200 mL from drinks, 1,000 mL from food and 350 mL produced by metabolism, about 2,550 mL a day. In balance, the same amount is lost.",
-   "verified": false,
-   "open": {
-    "q": "About how much water does a healthy adult gain per day in total from drinks, food and metabolism?",
-    "accept": [
-     "2.5 litres",
-     "2500 mL",
-     "2550 mL"
-    ]
-   }
-  },
-  {
-   "id": "fl-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Water balance",
-   "q": "How much metabolic water does the body produce per day?",
-   "options": [
-    "About 1,500 mL",
-    "About 50 mL",
-    "About 350 mL",
-    "About 900 mL"
-   ],
-   "answer": 2,
-   "explain": "Oxidation of food produces about 350 mL of water a day, on top of drinks (about 1,200 mL) and food (about 1,000 mL).",
-   "verified": false,
-   "open": {
-    "q": "How much metabolic water does the body produce per day?",
-    "accept": [
-     "350"
-    ]
-   }
-  },
-  {
-   "id": "fl-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Water balance",
-   "q": "Which route accounts for the largest daily water loss in a healthy adult?",
-   "options": [
-    "Urine",
-    "Faeces",
-    "Sweat",
-    "Insensible loss from skin and lungs"
-   ],
-   "answer": 0,
-   "explain": "Urine is about 1,500 mL a day, insensible loss about 900 mL, faeces about 100 mL and sweat about 50 mL in normal conditions.",
-   "verified": false,
-   "open": {
-    "q": "Which route accounts for the largest daily water loss in a healthy adult?",
-    "accept": [
-     "urine",
-     "kidney"
-    ]
-   }
-  },
-  {
-   "id": "fl-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Water balance",
-   "q": "What is meant by insensible water loss, and about how much is lost per day?",
-   "options": [
-    "Sweating in hot weather, about 900 mL",
-    "Evaporation from skin and lungs, about 900 mL",
-    "Water lost in faeces, about 100 mL",
-    "Urine passed each day, about 1,500 mL"
-   ],
-   "answer": 1,
-   "explain": "It is called insensible because it is not noticed. It continues even in cold weather and is separate from visible sweating.",
-   "verified": false,
-   "open": {
-    "q": "What is meant by insensible water loss, and about how much is lost per day?",
-    "accept": [
-     "evaporation from skin and lungs",
-     "skin and lungs"
-    ]
-   }
-  },
-  {
-   "id": "fl-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Sodium balance",
-   "q": "What is the main route by which sodium leaves the body in health?",
-   "options": [
-    "Faeces",
-    "Expired air",
-    "Sweat",
-    "Urine"
-   ],
-   "answer": 3,
-   "explain": "Nearly all sodium loss is through the kidneys. Sweat and faeces each lose only a small amount, so the kidney controls sodium balance.",
-   "verified": false,
-   "open": {
-    "q": "What is the main route by which sodium leaves the body in health?",
-    "accept": [
-     "urine",
-     "kidney"
-    ]
-   }
-  },
-  {
-   "id": "fl-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Fluid loss and gain",
-   "q": "Severe diarrhoea mainly causes loss of which of these?",
-   "options": [
-    "Protein and glucose",
-    "Water and sodium",
-    "Calcium only",
-    "Water only"
-   ],
-   "answer": 1,
-   "explain": "Diarrhoea loses water and sodium, along with bicarbonate and potassium, which can lead to dehydration and metabolic acidosis.",
-   "verified": false,
-   "open": {
-    "q": "Severe diarrhoea mainly causes loss of which substances from the body?",
-    "accept": [
-     "water and sodium",
-     "water, sodium, bicarbonate and potassium"
-    ]
-   }
-  },
-  {
-   "id": "fl-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Fluid loss and gain",
-   "q": "Which condition causes loss of water alone, as very dilute urine?",
-   "options": [
-    "Diabetes mellitus",
-    "Diabetes insipidus",
-    "Haemorrhage",
-    "Severe sweating"
-   ],
-   "answer": 1,
-   "explain": "Diabetes insipidus is a lack of ADH or of the kidney's response to it. Diabetes mellitus loses water and glucose, haemorrhage loses water and all electrolytes, and sweating loses water and sodium.",
-   "verified": false,
-   "open": {
-    "q": "Which condition causes loss of water alone, as very dilute urine?",
-    "accept": [
-     "diabetes insipidus"
-    ]
-   }
-  },
-  {
-   "id": "fl-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Fluid loss and gain",
-   "q": "Which of these is a cause of fluid overload (excess fluid gain)?",
-   "options": [
-    "Severe sweating",
-    "Over-transfusion",
-    "Haemorrhage",
-    "Diabetes insipidus"
-   ],
-   "answer": 1,
-   "explain": "Fluid excess follows over-transfusion, over-hydration or excessive water drinking (polydipsia). The other options all lose fluid.",
-   "verified": false,
-   "open": {
-    "q": "Name a cause of fluid overload (excess fluid gain).",
-    "accept": [
-     "over-transfusion",
-     "polydipsia",
-     "excessive water drinking",
-     "over hydration",
-     "overhydration"
-    ]
-   }
-  },
-  {
-   "id": "fl-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: ECF volume",
-   "q": "What mainly determines the volume of the extracellular fluid?",
-   "options": [
-    "The plasma protein concentration alone",
-    "The total amount of potassium",
-    "The volume of intracellular water",
-    "The total amount of sodium in the body"
-   ],
-   "answer": 3,
-   "explain": "Sodium and its associated anions make up about 90% of ECF solute, so changes in total body sodium cause matching changes in ECF volume, which in turn drives the controls on sodium excretion.",
-   "verified": false,
-   "open": {
-    "q": "What mainly determines the volume of the extracellular fluid?",
-    "accept": [
-     "body sodium",
-     "total body sodium",
-     "sodium"
-    ]
-   }
-  },
-  {
-   "id": "fl-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Pressure natriuresis",
-   "q": "What is pressure natriuresis?",
-   "options": [
-    "Increased sodium retention when arterial pressure rises",
-    "Increased sodium excretion when arterial pressure rises",
-    "Sodium loss caused by diuretic drugs",
-    "Increased potassium loss when pressure falls"
-   ],
-   "answer": 1,
-   "explain": "A rise in arterial pressure acts directly on the tubules to reduce sodium reabsorption and also suppresses the renin-angiotensin-aldosterone system, so more sodium and water are excreted and pressure returns toward normal.",
-   "verified": false,
-   "open": {
-    "q": "What is pressure natriuresis?",
-    "accept": [
-     "more sodium excreted when blood pressure rises",
-     "increased sodium excretion with raised blood pressure"
-    ]
-   }
-  },
-  {
-   "id": "fl-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Pressure natriuresis",
-   "q": "What happens to sodium excretion when arterial blood pressure falls?",
-   "options": [
-    "It falls, because the renin-angiotensin system is stimulated and tubules retain sodium",
-    "It is unchanged, because blood pressure has no effect on how the kidney handles sodium",
-    "It rises, because aldosterone secretion is switched off when pressure drops",
-    "It rises, because the tubules reabsorb less sodium to lower the blood volume"
-   ],
-   "answer": 0,
-   "explain": "A fall in pressure stimulates renin release and enhances sodium reabsorption directly in the tubules, so sodium and water are retained.",
-   "verified": false,
-   "open": {
-    "q": "What happens to sodium excretion when arterial blood pressure falls, and why?",
-    "accept": [
-     "falls",
-     "decreases",
-     "sodium retained"
-    ]
-   }
-  },
-  {
-   "id": "fl-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Body fluid compartments",
-   "q": "Total body water in an average adult male is approximately what percentage of body weight?",
-   "options": [
-    "60%",
-    "40%",
-    "20%",
-    "75%"
-   ],
-   "answer": 0,
-   "explain": "Total body water is about 60% of body weight in an adult male and about 50% in an adult female, because females have more body fat.",
-   "verified": false,
-   "open": {
-    "q": "Approximately what percentage of an average adult male's body weight is total body water?",
-    "accept": [
-     "About 60%",
-     "Sixty percent",
-     "0.6 of body weight"
-    ]
-   }
-  },
-  {
-   "id": "fl-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Body fluid compartments",
-   "q": "What fraction of total body water is intracellular fluid?",
-   "options": [
-    "One-third",
-    "Two-thirds",
-    "One-half",
-    "One-quarter"
-   ],
-   "answer": 1,
-   "explain": "Intracellular fluid makes up about two-thirds of total body water and extracellular fluid about one-third.",
-   "verified": false,
-   "open": {
-    "q": "What fraction of total body water lies inside cells?",
-    "accept": [
-     "2/3",
-     "Two thirds",
-     "About 67%"
-    ]
-   }
-  },
-  {
-   "id": "fl-014",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Body fluid compartments",
-   "q": "What fraction of the extracellular fluid is plasma?",
-   "options": [
-    "One-half",
-    "Three-quarters",
-    "One-quarter",
-    "Two-thirds"
-   ],
-   "answer": 2,
-   "explain": "Extracellular fluid is about one-quarter plasma and three-quarters interstitial fluid. Many students wrongly pick one-half.",
-   "verified": false,
-   "open": {
-    "q": "What fraction of the extracellular fluid volume is plasma?",
-    "accept": [
-     "1/4",
-     "A quarter",
-     "25%"
-    ]
-   }
-  },
-  {
-   "id": "fl-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Electrolyte composition",
-   "q": "Which is the major cation of the extracellular fluid?",
-   "options": [
-    "Potassium",
-    "Calcium",
-    "Magnesium",
-    "Sodium"
-   ],
-   "answer": 3,
-   "explain": "Sodium is the principal extracellular cation and the main determinant of extracellular osmolality and volume. Potassium is the main intracellular cation.",
-   "verified": false,
-   "open": {
-    "q": "Which is the major cation of the extracellular fluid?",
-    "accept": [
-     "Na+",
-     "Na",
-     "Sodium ion"
-    ]
-   }
-  },
-  {
-   "id": "fl-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Electrolyte composition",
-   "q": "Which is the major cation of the intracellular fluid?",
-   "options": [
-    "Potassium",
-    "Sodium",
-    "Calcium",
-    "Hydrogen"
-   ],
-   "answer": 0,
-   "explain": "Potassium is concentrated inside cells, maintained by the Na+/K+ ATPase pump.",
-   "verified": false,
-   "open": {
-    "q": "Which is the major cation of the intracellular fluid?",
-    "accept": [
-     "K+",
-     "K",
-     "Potassium ion"
-    ]
-   }
-  },
-  {
-   "id": "fl-017",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Electrolyte composition",
-   "q": "Which is the major anion of the extracellular fluid?",
-   "options": [
-    "Bicarbonate",
-    "Chloride",
-    "Phosphate",
-    "Sulphate"
-   ],
-   "answer": 1,
-   "explain": "Chloride is the most abundant extracellular anion, followed by bicarbonate. Phosphate and proteins are the main intracellular anions.",
-   "verified": false,
-   "open": {
-    "q": "Which is the major anion of the extracellular fluid?",
-    "accept": [
-     "Cl-",
-     "Chloride ion",
-     "Cl"
-    ]
-   }
-  },
-  {
-   "id": "fl-018",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Osmolality",
-   "q": "What is the normal range of plasma osmolality?",
-   "options": [
-    "150 to 170 mOsm/kg",
-    "195 to 215 mOsm/kg",
-    "275 to 295 mOsm/kg",
-    "350 to 400 mOsm/kg"
-   ],
-   "answer": 2,
-   "explain": "Normal plasma osmolality is about 275 to 295 mOsm/kg, held in a narrow range mainly by ADH and thirst.",
-   "verified": false,
-   "open": {
-    "q": "What is the normal range of plasma osmolality in mOsm/kg?",
-    "accept": [
-     "About 285 mOsm/kg",
-     "280 to 295 mOsm/kg",
-     "Approximately 290 mOsm/kg"
-    ]
-   }
-  },
-  {
-   "id": "fl-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Fluid exchange across capillaries",
-   "q": "Which Starling force mainly favours movement of fluid out of the capillary into the interstitium?",
-   "options": [
-    "Plasma oncotic pressure",
-    "Interstitial hydrostatic pressure",
-    "Lymphatic drainage",
-    "Capillary hydrostatic pressure"
-   ],
-   "answer": 3,
-   "explain": "Capillary hydrostatic pressure pushes fluid out of the capillary. Plasma oncotic pressure pulls fluid back in.",
-   "verified": false,
-   "open": {
-    "q": "Which Starling force chiefly drives fluid out of the capillary into the interstitial space?",
-    "accept": [
-     "Blood pressure within the capillary",
-     "Hydrostatic pressure of capillary blood",
-     "Capillary pressure"
-    ]
-   }
-  },
-  {
-   "id": "fl-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "From which structure is antidiuretic hormone (ADH) released into the circulation?",
-   "options": [
-    "Posterior pituitary",
-    "Anterior pituitary",
-    "Adrenal cortex",
-    "Juxtaglomerular apparatus"
-   ],
-   "answer": 0,
-   "explain": "ADH is made in the supraoptic and paraventricular nuclei of the hypothalamus and released from the posterior pituitary.",
-   "verified": false,
-   "open": {
-    "q": "From which structure is ADH released into the blood after being synthesised in the hypothalamus?",
-    "accept": [
-     "Neurohypophysis",
-     "Pars nervosa",
-     "Posterior lobe of the pituitary"
-    ]
-   }
-  },
-  {
-   "id": "fl-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "What is the main renal action of ADH?",
-   "options": [
-    "Inserts aquaporin-1 into the proximal tubule",
-    "Inserts aquaporin-2 into collecting duct principal cells",
-    "Inhibits the Na-K-2Cl cotransporter in the thick ascending limb",
-    "Blocks the epithelial sodium channel in the collecting duct"
-   ],
-   "answer": 1,
-   "explain": "ADH acts on V2 receptors and causes insertion of aquaporin-2 water channels into the apical membrane of collecting duct principal cells, increasing water reabsorption.",
-   "verified": false,
-   "open": {
-    "q": "Through which water channel, inserted in collecting duct principal cells, does ADH increase water reabsorption?",
-    "accept": [
-     "AQP2",
-     "AQP-2",
-     "Aquaporin 2"
-    ]
-   }
-  },
-  {
-   "id": "fl-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "Which is the most important physiological stimulus for ADH secretion?",
-   "options": [
-    "Decreased plasma potassium",
-    "Increased atrial natriuretic peptide",
-    "Increased plasma osmolality",
-    "Hypercalcaemia"
-   ],
-   "answer": 2,
-   "explain": "Hypothalamic osmoreceptors detect a rise in plasma osmolality and stimulate ADH release. Large falls in blood volume or pressure also stimulate ADH.",
-   "verified": false,
-   "open": {
-    "q": "What change in the blood is the most important physiological stimulus for ADH secretion?",
-    "accept": [
-     "Raised osmolality",
-     "Hyperosmolality",
-     "Hypertonic plasma"
-    ]
-   }
-  },
-  {
-   "id": "fl-023",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "Aldosterone is secreted by which part of the adrenal gland?",
-   "options": [
-    "Zona fasciculata",
-    "Zona reticularis",
-    "Adrenal medulla",
-    "Zona glomerulosa"
-   ],
-   "answer": 3,
-   "explain": "The zona glomerulosa, the outermost zone of the cortex, secretes aldosterone. The fasciculata secretes cortisol and the reticularis secretes androgens.",
-   "verified": false,
-   "open": {
-    "q": "Which zone of the adrenal cortex secretes aldosterone?",
-    "accept": [
-     "Glomerulosa",
-     "Outermost zone of the adrenal cortex",
-     "Outer cortex"
-    ]
-   }
-  },
-  {
-   "id": "fl-024",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "What is the effect of aldosterone on the distal nephron?",
-   "options": [
-    "Increases sodium reabsorption and potassium secretion",
-    "Decreases sodium reabsorption and potassium secretion",
-    "Increases both sodium and potassium reabsorption",
-    "Increases sodium excretion and potassium reabsorption"
-   ],
-   "answer": 0,
-   "explain": "Aldosterone acts on principal cells of the late distal tubule and collecting duct. It promotes sodium retention and potassium loss.",
-   "verified": false,
-   "open": {
-    "q": "What is the effect of aldosterone on sodium and potassium handling in the distal nephron?",
-    "accept": [
-     "Sodium retention and potassium excretion",
-     "Raises Na reabsorption and K secretion",
-     "Retains sodium and wastes potassium"
-    ]
-   }
-  },
-  {
-   "id": "fl-025",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "Which cells of the kidney secrete renin?",
-   "options": [
-    "Macula densa cells",
-    "Juxtaglomerular cells of the afferent arteriole",
-    "Podocytes",
-    "Extraglomerular mesangial cells"
-   ],
-   "answer": 1,
-   "explain": "Juxtaglomerular (granular) cells of the afferent arteriole secrete renin. The macula densa senses distal tubular sodium chloride delivery and signals to them.",
-   "verified": false,
-   "open": {
-    "q": "Which kidney cells, located in the wall of the afferent arteriole, secrete renin?",
-    "accept": [
-     "JG cells",
-     "Granular cells",
-     "Juxtaglomerular cells"
-    ]
-   }
-  },
-  {
-   "id": "fl-026",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Hormonal control",
-   "q": "What is the main renal effect of atrial natriuretic peptide (ANP)?",
-   "options": [
-    "Increased renin release",
-    "Increased aldosterone secretion",
-    "Increased urinary sodium excretion",
-    "Increased ADH secretion"
-   ],
-   "answer": 2,
-   "explain": "ANP is released when the atria are stretched by volume expansion. It promotes natriuresis and diuresis and inhibits renin and aldosterone.",
-   "verified": false,
-   "open": {
-    "q": "What is the main effect of atrial natriuretic peptide on renal sodium handling?",
-    "accept": [
-     "Natriuresis",
-     "Sodium loss in urine",
-     "Promotes sodium excretion"
-    ]
-   }
-  },
-  {
-   "id": "fl-027",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Renal handling",
-   "q": "Which nephron segment reabsorbs the largest fraction of filtered sodium?",
-   "options": [
-    "Distal convoluted tubule",
-    "Collecting duct",
-    "Thick ascending limb",
-    "Proximal tubule"
-   ],
-   "answer": 3,
-   "explain": "The proximal tubule reabsorbs about 65% of filtered sodium and water. The thick ascending limb reabsorbs about 25%.",
-   "verified": false,
-   "open": {
-    "q": "Which nephron segment reabsorbs the largest proportion of filtered sodium?",
-    "accept": [
-     "PCT",
-     "Proximal convoluted tubule",
-     "Proximal nephron"
-    ]
-   }
-  },
-  {
-   "id": "fl-028",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Renal handling",
-   "q": "Furosemide produces diuresis by inhibiting which transporter?",
-   "options": [
-    "Na-K-2Cl cotransporter in the thick ascending limb",
-    "Na-Cl cotransporter in the distal convoluted tubule",
-    "Epithelial sodium channel in the collecting duct",
-    "Carbonic anhydrase in the proximal tubule"
-   ],
-   "answer": 0,
-   "explain": "Loop diuretics block NKCC2 in the thick ascending limb. Thiazides block the Na-Cl cotransporter in the distal convoluted tubule, and amiloride blocks ENaC.",
-   "verified": false,
-   "open": {
-    "q": "On which transporter, and in which nephron segment, does furosemide act?",
-    "accept": [
-     "NKCC2",
-     "Na-K-2Cl cotransporter",
-     "Thick ascending limb of the loop of Henle"
-    ]
-   }
-  },
-  {
-   "id": "fl-029",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Potassium disorders",
-   "q": "Which ECG finding is characteristic of hypokalaemia?",
-   "options": [
-    "Tall peaked T waves",
-    "Prominent U waves",
-    "Shortened QT with ST elevation",
-    "Delta waves"
-   ],
-   "answer": 1,
-   "explain": "Hypokalaemia causes flattened T waves, ST depression and prominent U waves. Tall peaked T waves occur in hyperkalaemia.",
-   "verified": false,
-   "open": {
-    "q": "Which wave appearing after the T wave is characteristic of hypokalaemia on ECG?",
-    "accept": [
-     "U wave",
-     "U waves",
-     "U-wave appearance"
-    ]
-   }
-  },
-  {
-   "id": "fl-030",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Potassium disorders",
-   "q": "Which is the earliest ECG change in hyperkalaemia?",
-   "options": [
-    "U waves",
-    "Prominent Q waves",
-    "Tall peaked T waves",
-    "ST elevation"
-   ],
-   "answer": 2,
-   "explain": "Tall tented T waves appear first. With rising potassium, the PR interval lengthens, P waves flatten and the QRS widens, which can progress to a sine wave pattern.",
-   "verified": false,
-   "open": {
-    "q": "What is the earliest ECG change seen in hyperkalaemia?",
-    "accept": [
-     "Peaked T waves",
-     "Tented T waves",
-     "Tall T waves"
-    ]
-   }
-  },
-  {
-   "id": "fl-031",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Potassium disorders",
-   "q": "A patient with renal failure has a serum potassium of 7.2 mmol/L with tall peaked T waves and a widened QRS complex. Which is the first immediate treatment to stabilise the myocardium?",
-   "options": [
-    "Oral calcium resonium",
-    "Intravenous furosemide",
-    "Haemodialysis",
-    "Intravenous calcium gluconate"
-   ],
-   "answer": 3,
-   "explain": "IV calcium gluconate antagonises the effect of potassium on cardiac membranes and acts within minutes but does not lower potassium. Insulin with dextrose, salbutamol and later removal of potassium follow.",
-   "verified": false,
-   "open": {
-    "q": "A patient with renal failure has a serum potassium of 7.2 mmol/L with peaked T waves and a widened QRS. What is the first immediate drug treatment to stabilise the myocardium?",
-    "accept": [
-     "IV calcium",
-     "Calcium chloride",
-     "Cardioprotective calcium"
-    ]
-   }
-  },
-  {
-   "id": "fl-032",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Sodium disorders",
-   "q": "A patient with small cell lung cancer has serum sodium of 120 mmol/L, low serum osmolality, inappropriately concentrated urine and clinical euvolaemia. What is the most likely diagnosis?",
-   "options": [
-    "SIADH",
-    "Diabetes insipidus",
-    "Primary polydipsia",
-    "Addison disease"
-   ],
-   "answer": 0,
-   "explain": "Ectopic ADH from the tumour causes SIADH, with water retention, dilutional hyponatraemia and euvolaemia. Diabetes insipidus gives dilute urine and hypernatraemia.",
-   "verified": false,
-   "open": {
-    "q": "A patient with small cell lung cancer has serum sodium of 120 mmol/L, low serum osmolality, inappropriately concentrated urine and clinical euvolaemia. What is the most likely diagnosis?",
-    "accept": [
-     "Syndrome of inappropriate ADH secretion",
-     "Inappropriate antidiuretic hormone secretion",
-     "Paraneoplastic ADH secretion"
-    ]
-   }
-  },
-  {
-   "id": "fl-033",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical fluid management",
-   "q": "Which is the preferred first-line fluid for a child with diarrhoea and mild to moderate dehydration who can drink?",
-   "options": [
-    "Intravenous 5% dextrose",
-    "Oral rehydration solution",
-    "Plain boiled water alone",
-    "Undiluted fruit juice"
-   ],
-   "answer": 1,
-   "explain": "Oral rehydration solution uses sodium-glucose cotransport to drive water absorption. Plain water lacks sodium and juice is hyperosmolar, which can worsen diarrhoea.",
-   "verified": false,
-   "open": {
-    "q": "What is the preferred first-line fluid for a child with diarrhoea and mild to moderate dehydration who can still drink?",
-    "accept": [
-     "ORS",
-     "Oral rehydration therapy",
-     "Oral rehydration salts"
-    ]
-   }
-  },
-  {
-   "id": "fl-034",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Sodium disorders",
-   "q": "After a head injury a patient passes large volumes of dilute urine and has a serum sodium of 152 mmol/L. Deficiency of which hormone is most likely?",
-   "options": [
-    "Aldosterone",
-    "Cortisol",
-    "ADH",
-    "Renin"
-   ],
-   "answer": 2,
-   "explain": "Damage to the hypothalamus or posterior pituitary causes cranial diabetes insipidus. The kidneys cannot concentrate urine, leading to water loss and hypernatraemia.",
-   "verified": false,
-   "open": {
-    "q": "After a head injury a patient passes large volumes of dilute urine and has a serum sodium of 152 mmol/L. Deficiency of which hormone is most likely?",
-    "accept": [
-     "Vasopressin",
-     "Antidiuretic hormone",
-     "AVP"
-    ]
-   }
-  },
-  {
-   "id": "fl-035",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical fluid management",
-   "q": "Which intravenous crystalloid is isotonic and stays mainly in the extracellular compartment?",
-   "options": [
-    "5% dextrose in water",
-    "0.45% sodium chloride",
-    "3% sodium chloride",
-    "0.9% sodium chloride"
-   ],
-   "answer": 3,
-   "explain": "0.9% saline has an osmolality close to plasma, so it expands the extracellular fluid without shifting water into cells. 5% dextrose in water distributes across all compartments once the glucose is metabolised.",
-   "verified": false,
-   "open": {
-    "q": "Which commonly used intravenous crystalloid is isotonic and stays mainly in the extracellular fluid?",
-    "accept": [
-     "Normal saline",
-     "Isotonic saline",
-     "NaCl 0.9%"
-    ]
-   }
-  },
-  {
-   "id": "fl-036",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Calcium disorders",
-   "q": "Carpopedal spasm with a positive Chvostek sign suggests which electrolyte disturbance?",
-   "options": [
-    "Hypocalcaemia",
-    "Hypercalcaemia",
-    "Hyperkalaemia",
-    "Hypernatraemia"
-   ],
-   "answer": 0,
-   "explain": "Low ionised calcium increases neuromuscular excitability, causing tetany, perioral paraesthesia and positive Chvostek and Trousseau signs.",
-   "verified": false,
-   "open": {
-    "q": "Which electrolyte disturbance causes carpopedal spasm and a positive Chvostek sign?",
-    "accept": [
-     "Low serum calcium",
-     "Hypocalcemia",
-     "Low calcium"
-    ]
-   }
-  }
- ]
+  "topic": "pn-fluid-and-electrolyte-balance",
+  "questions": [
+    {
+      "id": "fl-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Water balance",
+      "q": "About how much water does a healthy adult gain per day in total from drinks, food and metabolism?",
+      "options": [
+        "About 6,000 mL",
+        "About 2,500 mL",
+        "About 4,000 mL",
+        "About 1,000 mL"
+      ],
+      "answer": 1,
+      "explain": "Roughly 1,200 mL from drinks, 1,000 mL from food and 350 mL produced by metabolism, about 2,550 mL a day. In balance, the same amount is lost.",
+      "verified": false,
+      "open": {
+        "q": "About how much water does a healthy adult gain per day in total from drinks, food and metabolism?",
+        "accept": [
+          "2.5 litres",
+          "2500 mL",
+          "2550 mL"
+        ]
+      }
+    },
+    {
+      "id": "fl-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Water balance",
+      "q": "How much metabolic water does the body produce per day?",
+      "options": [
+        "About 1,500 mL",
+        "About 50 mL",
+        "About 350 mL",
+        "About 900 mL"
+      ],
+      "answer": 2,
+      "explain": "Oxidation of food produces about 350 mL of water a day, on top of drinks (about 1,200 mL) and food (about 1,000 mL).",
+      "verified": false,
+      "open": {
+        "q": "How much metabolic water does the body produce per day?",
+        "accept": [
+          "350"
+        ]
+      }
+    },
+    {
+      "id": "fl-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Water balance",
+      "q": "Which route accounts for the largest daily water loss in a healthy adult?",
+      "options": [
+        "Urine",
+        "Faeces",
+        "Sweat",
+        "Insensible loss from skin and lungs"
+      ],
+      "answer": 0,
+      "explain": "Urine is about 1,500 mL a day, insensible loss about 900 mL, faeces about 100 mL and sweat about 50 mL in normal conditions.",
+      "verified": false,
+      "open": {
+        "q": "Which route accounts for the largest daily water loss in a healthy adult?",
+        "accept": [
+          "urine",
+          "kidney"
+        ]
+      }
+    },
+    {
+      "id": "fl-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Water balance",
+      "q": "What is meant by insensible water loss, and about how much is lost per day?",
+      "options": [
+        "Sweating in hot weather, about 900 mL",
+        "Evaporation from skin and lungs, about 900 mL",
+        "Water lost in faeces, about 100 mL",
+        "Urine passed each day, about 1,500 mL"
+      ],
+      "answer": 1,
+      "explain": "It is called insensible because it is not noticed. It continues even in cold weather and is separate from visible sweating.",
+      "verified": false,
+      "open": {
+        "q": "What is meant by insensible water loss, and about how much is lost per day?",
+        "accept": [
+          "evaporation from skin and lungs",
+          "skin and lungs"
+        ]
+      }
+    },
+    {
+      "id": "fl-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Sodium balance",
+      "q": "What is the main route by which sodium leaves the body in health?",
+      "options": [
+        "Faeces",
+        "Expired air",
+        "Sweat",
+        "Urine"
+      ],
+      "answer": 3,
+      "explain": "Nearly all sodium loss is through the kidneys. Sweat and faeces each lose only a small amount, so the kidney controls sodium balance.",
+      "verified": false,
+      "open": {
+        "q": "What is the main route by which sodium leaves the body in health?",
+        "accept": [
+          "urine",
+          "kidney"
+        ]
+      }
+    },
+    {
+      "id": "fl-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Fluid loss and gain",
+      "q": "Severe diarrhoea mainly causes loss of which of these?",
+      "options": [
+        "Protein and glucose",
+        "Water and sodium",
+        "Calcium only",
+        "Water only"
+      ],
+      "answer": 1,
+      "explain": "Diarrhoea loses water and sodium, along with bicarbonate and potassium, which can lead to dehydration and metabolic acidosis.",
+      "verified": false,
+      "open": {
+        "q": "Severe diarrhoea mainly causes loss of which substances from the body?",
+        "accept": [
+          "water and sodium",
+          "water, sodium, bicarbonate and potassium"
+        ]
+      }
+    },
+    {
+      "id": "fl-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Fluid loss and gain",
+      "q": "Which condition causes loss of water alone, as very dilute urine?",
+      "options": [
+        "Diabetes mellitus",
+        "Diabetes insipidus",
+        "Haemorrhage",
+        "Severe sweating"
+      ],
+      "answer": 1,
+      "explain": "Diabetes insipidus is a lack of ADH or of the kidney's response to it. Diabetes mellitus loses water and glucose, haemorrhage loses water and all electrolytes, and sweating loses water and sodium.",
+      "verified": false,
+      "open": {
+        "q": "Which condition causes loss of water alone, as very dilute urine?",
+        "accept": [
+          "diabetes insipidus"
+        ]
+      }
+    },
+    {
+      "id": "fl-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Fluid loss and gain",
+      "q": "Which of these is a cause of fluid overload (excess fluid gain)?",
+      "options": [
+        "Severe sweating",
+        "Over-transfusion",
+        "Haemorrhage",
+        "Diabetes insipidus"
+      ],
+      "answer": 1,
+      "explain": "Fluid excess follows over-transfusion, over-hydration or excessive water drinking (polydipsia). The other options all lose fluid.",
+      "verified": false,
+      "open": {
+        "q": "Name a cause of fluid overload (excess fluid gain).",
+        "accept": [
+          "over-transfusion",
+          "polydipsia",
+          "excessive water drinking",
+          "over hydration",
+          "overhydration"
+        ]
+      }
+    },
+    {
+      "id": "fl-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: ECF volume",
+      "q": "What mainly determines the volume of the extracellular fluid?",
+      "options": [
+        "The plasma protein concentration alone",
+        "The total amount of potassium",
+        "The volume of intracellular water",
+        "The total amount of sodium in the body"
+      ],
+      "answer": 3,
+      "explain": "Sodium and its associated anions make up about 90% of ECF solute, so changes in total body sodium cause matching changes in ECF volume, which in turn drives the controls on sodium excretion.",
+      "verified": false,
+      "open": {
+        "q": "What mainly determines the volume of the extracellular fluid?",
+        "accept": [
+          "body sodium",
+          "total body sodium",
+          "sodium"
+        ]
+      }
+    },
+    {
+      "id": "fl-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Pressure natriuresis",
+      "q": "What is pressure natriuresis?",
+      "options": [
+        "Increased sodium retention when arterial pressure rises",
+        "Increased sodium excretion when arterial pressure rises",
+        "Sodium loss caused by diuretic drugs",
+        "Increased potassium loss when pressure falls"
+      ],
+      "answer": 1,
+      "explain": "A rise in arterial pressure acts directly on the tubules to reduce sodium reabsorption and also suppresses the renin-angiotensin-aldosterone system, so more sodium and water are excreted and pressure returns toward normal.",
+      "verified": false,
+      "open": {
+        "q": "What is pressure natriuresis?",
+        "accept": [
+          "more sodium excreted when blood pressure rises",
+          "increased sodium excretion with raised blood pressure"
+        ]
+      }
+    },
+    {
+      "id": "fl-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Pressure natriuresis",
+      "q": "What happens to sodium excretion when arterial blood pressure falls?",
+      "options": [
+        "It falls, because the renin-angiotensin system is stimulated and tubules retain sodium",
+        "It is unchanged, because blood pressure has no effect on how the kidney handles sodium",
+        "It rises, because aldosterone secretion is switched off when pressure drops",
+        "It rises, because the tubules reabsorb less sodium to lower the blood volume"
+      ],
+      "answer": 0,
+      "explain": "A fall in pressure stimulates renin release and enhances sodium reabsorption directly in the tubules, so sodium and water are retained.",
+      "verified": false,
+      "open": {
+        "q": "What happens to sodium excretion when arterial blood pressure falls, and why?",
+        "accept": [
+          "falls",
+          "decreases",
+          "sodium retained"
+        ]
+      }
+    },
+    {
+      "id": "fl-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Body fluid compartments",
+      "q": "Total body water in an average adult male is approximately what percentage of body weight?",
+      "options": [
+        "60%",
+        "40%",
+        "20%",
+        "75%"
+      ],
+      "answer": 0,
+      "explain": "Total body water is about 60% of body weight in an adult male and about 50% in an adult female, because females have more body fat.",
+      "verified": false,
+      "open": {
+        "q": "Approximately what percentage of an average adult male's body weight is total body water?",
+        "accept": [
+          "About 60%",
+          "Sixty percent",
+          "0.6 of body weight"
+        ]
+      }
+    },
+    {
+      "id": "fl-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Body fluid compartments",
+      "q": "What fraction of total body water is intracellular fluid?",
+      "options": [
+        "One-third",
+        "Two-thirds",
+        "One-half",
+        "One-quarter"
+      ],
+      "answer": 1,
+      "explain": "Intracellular fluid makes up about two-thirds of total body water and extracellular fluid about one-third.",
+      "verified": false,
+      "open": {
+        "q": "What fraction of total body water lies inside cells?",
+        "accept": [
+          "2/3",
+          "Two thirds",
+          "About 67%"
+        ]
+      }
+    },
+    {
+      "id": "fl-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Body fluid compartments",
+      "q": "What fraction of the extracellular fluid is plasma?",
+      "options": [
+        "One-half",
+        "Three-quarters",
+        "One-quarter",
+        "Two-thirds"
+      ],
+      "answer": 2,
+      "explain": "Extracellular fluid is about one-quarter plasma and three-quarters interstitial fluid. Many students wrongly pick one-half.",
+      "verified": false,
+      "open": {
+        "q": "What fraction of the extracellular fluid volume is plasma?",
+        "accept": [
+          "1/4",
+          "A quarter",
+          "25%"
+        ]
+      }
+    },
+    {
+      "id": "fl-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Electrolyte composition",
+      "q": "Which is the major cation of the extracellular fluid?",
+      "options": [
+        "Potassium",
+        "Calcium",
+        "Magnesium",
+        "Sodium"
+      ],
+      "answer": 3,
+      "explain": "Sodium is the principal extracellular cation and the main determinant of extracellular osmolality and volume. Potassium is the main intracellular cation.",
+      "verified": false,
+      "open": {
+        "q": "Which is the major cation of the extracellular fluid?",
+        "accept": [
+          "Na+",
+          "Na",
+          "Sodium ion"
+        ]
+      }
+    },
+    {
+      "id": "fl-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Electrolyte composition",
+      "q": "Which is the major cation of the intracellular fluid?",
+      "options": [
+        "Potassium",
+        "Sodium",
+        "Calcium",
+        "Hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Potassium is concentrated inside cells, maintained by the Na+/K+ ATPase pump.",
+      "verified": false,
+      "open": {
+        "q": "Which is the major cation of the intracellular fluid?",
+        "accept": [
+          "K+",
+          "K",
+          "Potassium ion"
+        ]
+      }
+    },
+    {
+      "id": "fl-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Electrolyte composition",
+      "q": "Which is the major anion of the extracellular fluid?",
+      "options": [
+        "Bicarbonate",
+        "Chloride",
+        "Phosphate",
+        "Sulphate"
+      ],
+      "answer": 1,
+      "explain": "Chloride is the most abundant extracellular anion, followed by bicarbonate. Phosphate and proteins are the main intracellular anions.",
+      "verified": false,
+      "open": {
+        "q": "Which is the major anion of the extracellular fluid?",
+        "accept": [
+          "Cl-",
+          "Chloride ion",
+          "Cl"
+        ]
+      }
+    },
+    {
+      "id": "fl-018",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Osmolality",
+      "q": "What is the normal range of plasma osmolality?",
+      "options": [
+        "150 to 170 mOsm/kg",
+        "195 to 215 mOsm/kg",
+        "275 to 295 mOsm/kg",
+        "350 to 400 mOsm/kg"
+      ],
+      "answer": 2,
+      "explain": "Normal plasma osmolality is about 275 to 295 mOsm/kg, held in a narrow range mainly by ADH and thirst.",
+      "verified": false,
+      "open": {
+        "q": "What is the normal range of plasma osmolality in mOsm/kg?",
+        "accept": [
+          "About 285 mOsm/kg",
+          "280 to 295 mOsm/kg",
+          "Approximately 290 mOsm/kg"
+        ]
+      }
+    },
+    {
+      "id": "fl-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Fluid exchange across capillaries",
+      "q": "Which Starling force mainly favours movement of fluid out of the capillary into the interstitium?",
+      "options": [
+        "Plasma oncotic pressure",
+        "Interstitial hydrostatic pressure",
+        "Lymphatic drainage",
+        "Capillary hydrostatic pressure"
+      ],
+      "answer": 3,
+      "explain": "Capillary hydrostatic pressure pushes fluid out of the capillary. Plasma oncotic pressure pulls fluid back in.",
+      "verified": false,
+      "open": {
+        "q": "Which Starling force chiefly drives fluid out of the capillary into the interstitial space?",
+        "accept": [
+          "Blood pressure within the capillary",
+          "Hydrostatic pressure of capillary blood",
+          "Capillary pressure"
+        ]
+      }
+    },
+    {
+      "id": "fl-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "From which structure is antidiuretic hormone (ADH) released into the circulation?",
+      "options": [
+        "Posterior pituitary",
+        "Anterior pituitary",
+        "Adrenal cortex",
+        "Juxtaglomerular apparatus"
+      ],
+      "answer": 0,
+      "explain": "ADH is made in the supraoptic and paraventricular nuclei of the hypothalamus and released from the posterior pituitary.",
+      "verified": false,
+      "open": {
+        "q": "From which structure is ADH released into the blood after being synthesised in the hypothalamus?",
+        "accept": [
+          "Neurohypophysis",
+          "Pars nervosa",
+          "Posterior lobe of the pituitary"
+        ]
+      }
+    },
+    {
+      "id": "fl-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "What is the main renal action of ADH?",
+      "options": [
+        "Inserts aquaporin-1 into the proximal tubule",
+        "Inserts aquaporin-2 into collecting duct principal cells",
+        "Inhibits the Na-K-2Cl cotransporter in the thick ascending limb",
+        "Blocks the epithelial sodium channel in the collecting duct"
+      ],
+      "answer": 1,
+      "explain": "ADH acts on V2 receptors and causes insertion of aquaporin-2 water channels into the apical membrane of collecting duct principal cells, increasing water reabsorption.",
+      "verified": false,
+      "open": {
+        "q": "Through which water channel, inserted in collecting duct principal cells, does ADH increase water reabsorption?",
+        "accept": [
+          "AQP2",
+          "AQP-2",
+          "Aquaporin 2"
+        ]
+      }
+    },
+    {
+      "id": "fl-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "Which is the most important physiological stimulus for ADH secretion?",
+      "options": [
+        "Decreased plasma potassium",
+        "Increased atrial natriuretic peptide",
+        "Increased plasma osmolality",
+        "Hypercalcaemia"
+      ],
+      "answer": 2,
+      "explain": "Hypothalamic osmoreceptors detect a rise in plasma osmolality and stimulate ADH release. Large falls in blood volume or pressure also stimulate ADH.",
+      "verified": false,
+      "open": {
+        "q": "What change in the blood is the most important physiological stimulus for ADH secretion?",
+        "accept": [
+          "Raised osmolality",
+          "Hyperosmolality",
+          "Hypertonic plasma"
+        ]
+      }
+    },
+    {
+      "id": "fl-023",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "Aldosterone is secreted by which part of the adrenal gland?",
+      "options": [
+        "Zona fasciculata",
+        "Zona reticularis",
+        "Adrenal medulla",
+        "Zona glomerulosa"
+      ],
+      "answer": 3,
+      "explain": "The zona glomerulosa, the outermost zone of the cortex, secretes aldosterone. The fasciculata secretes cortisol and the reticularis secretes androgens.",
+      "verified": false,
+      "open": {
+        "q": "Which zone of the adrenal cortex secretes aldosterone?",
+        "accept": [
+          "Glomerulosa",
+          "Outermost zone of the adrenal cortex",
+          "Outer cortex"
+        ]
+      }
+    },
+    {
+      "id": "fl-024",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "What is the effect of aldosterone on the distal nephron?",
+      "options": [
+        "Increases sodium reabsorption and potassium secretion",
+        "Decreases sodium reabsorption and potassium secretion",
+        "Increases both sodium and potassium reabsorption",
+        "Increases sodium excretion and potassium reabsorption"
+      ],
+      "answer": 0,
+      "explain": "Aldosterone acts on principal cells of the late distal tubule and collecting duct. It promotes sodium retention and potassium loss.",
+      "verified": false,
+      "open": {
+        "q": "What is the effect of aldosterone on sodium and potassium handling in the distal nephron?",
+        "accept": [
+          "Sodium retention and potassium excretion",
+          "Raises Na reabsorption and K secretion",
+          "Retains sodium and wastes potassium"
+        ]
+      }
+    },
+    {
+      "id": "fl-025",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "Which cells of the kidney secrete renin?",
+      "options": [
+        "Macula densa cells",
+        "Juxtaglomerular cells of the afferent arteriole",
+        "Podocytes",
+        "Extraglomerular mesangial cells"
+      ],
+      "answer": 1,
+      "explain": "Juxtaglomerular (granular) cells of the afferent arteriole secrete renin. The macula densa senses distal tubular sodium chloride delivery and signals to them.",
+      "verified": false,
+      "open": {
+        "q": "Which kidney cells, located in the wall of the afferent arteriole, secrete renin?",
+        "accept": [
+          "JG cells",
+          "Granular cells",
+          "Juxtaglomerular cells"
+        ]
+      }
+    },
+    {
+      "id": "fl-026",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hormonal control",
+      "q": "What is the main renal effect of atrial natriuretic peptide (ANP)?",
+      "options": [
+        "Increased renin release",
+        "Increased aldosterone secretion",
+        "Increased urinary sodium excretion",
+        "Increased ADH secretion"
+      ],
+      "answer": 2,
+      "explain": "ANP is released when the atria are stretched by volume expansion. It promotes natriuresis and diuresis and inhibits renin and aldosterone.",
+      "verified": false,
+      "open": {
+        "q": "What is the main effect of atrial natriuretic peptide on renal sodium handling?",
+        "accept": [
+          "Natriuresis",
+          "Sodium loss in urine",
+          "Promotes sodium excretion"
+        ]
+      }
+    },
+    {
+      "id": "fl-027",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Renal handling",
+      "q": "Which nephron segment reabsorbs the largest fraction of filtered sodium?",
+      "options": [
+        "Distal convoluted tubule",
+        "Collecting duct",
+        "Thick ascending limb",
+        "Proximal tubule"
+      ],
+      "answer": 3,
+      "explain": "The proximal tubule reabsorbs about 65% of filtered sodium and water. The thick ascending limb reabsorbs about 25%.",
+      "verified": false,
+      "open": {
+        "q": "Which nephron segment reabsorbs the largest proportion of filtered sodium?",
+        "accept": [
+          "PCT",
+          "Proximal convoluted tubule",
+          "Proximal nephron"
+        ]
+      }
+    },
+    {
+      "id": "fl-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Renal handling",
+      "q": "Furosemide produces diuresis by inhibiting which transporter?",
+      "options": [
+        "Na-K-2Cl cotransporter in the thick ascending limb",
+        "Na-Cl cotransporter in the distal convoluted tubule",
+        "Epithelial sodium channel in the collecting duct",
+        "Carbonic anhydrase in the proximal tubule"
+      ],
+      "answer": 0,
+      "explain": "Loop diuretics block NKCC2 in the thick ascending limb. Thiazides block the Na-Cl cotransporter in the distal convoluted tubule, and amiloride blocks ENaC.",
+      "verified": false,
+      "open": {
+        "q": "On which transporter, and in which nephron segment, does furosemide act?",
+        "accept": [
+          "NKCC2",
+          "Na-K-2Cl cotransporter",
+          "Thick ascending limb of the loop of Henle"
+        ]
+      }
+    },
+    {
+      "id": "fl-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Potassium disorders",
+      "q": "Which ECG finding is characteristic of hypokalaemia?",
+      "options": [
+        "Tall peaked T waves",
+        "Prominent U waves",
+        "Shortened QT with ST elevation",
+        "Delta waves"
+      ],
+      "answer": 1,
+      "explain": "Hypokalaemia causes flattened T waves, ST depression and prominent U waves. Tall peaked T waves occur in hyperkalaemia.",
+      "verified": false,
+      "open": {
+        "q": "Which wave appearing after the T wave is characteristic of hypokalaemia on ECG?",
+        "accept": [
+          "U wave",
+          "U waves",
+          "U-wave appearance"
+        ]
+      }
+    },
+    {
+      "id": "fl-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Potassium disorders",
+      "q": "Which is the earliest ECG change in hyperkalaemia?",
+      "options": [
+        "U waves",
+        "Prominent Q waves",
+        "Tall peaked T waves",
+        "ST elevation"
+      ],
+      "answer": 2,
+      "explain": "Tall tented T waves appear first. With rising potassium, the PR interval lengthens, P waves flatten and the QRS widens, which can progress to a sine wave pattern.",
+      "verified": false,
+      "open": {
+        "q": "What is the earliest ECG change seen in hyperkalaemia?",
+        "accept": [
+          "Peaked T waves",
+          "Tented T waves",
+          "Tall T waves"
+        ]
+      }
+    },
+    {
+      "id": "fl-031",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Potassium disorders",
+      "q": "A patient with renal failure has a serum potassium of 7.2 mmol/L with tall peaked T waves and a widened QRS complex. Which is the first immediate treatment to stabilise the myocardium?",
+      "options": [
+        "Oral calcium resonium",
+        "Intravenous furosemide",
+        "Haemodialysis",
+        "Intravenous calcium gluconate"
+      ],
+      "answer": 3,
+      "explain": "IV calcium gluconate antagonises the effect of potassium on cardiac membranes and acts within minutes but does not lower potassium. Insulin with dextrose, salbutamol and later removal of potassium follow.",
+      "verified": false,
+      "open": {
+        "q": "A patient with renal failure has a serum potassium of 7.2 mmol/L with peaked T waves and a widened QRS. What is the first immediate drug treatment to stabilise the myocardium?",
+        "accept": [
+          "IV calcium",
+          "Calcium chloride",
+          "Cardioprotective calcium"
+        ]
+      }
+    },
+    {
+      "id": "fl-032",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Sodium disorders",
+      "q": "A patient with small cell lung cancer has serum sodium of 120 mmol/L, low serum osmolality, inappropriately concentrated urine and clinical euvolaemia. What is the most likely diagnosis?",
+      "options": [
+        "SIADH",
+        "Diabetes insipidus",
+        "Primary polydipsia",
+        "Addison disease"
+      ],
+      "answer": 0,
+      "explain": "Ectopic ADH from the tumour causes SIADH, with water retention, dilutional hyponatraemia and euvolaemia. Diabetes insipidus gives dilute urine and hypernatraemia.",
+      "verified": false,
+      "open": {
+        "q": "A patient with small cell lung cancer has serum sodium of 120 mmol/L, low serum osmolality, inappropriately concentrated urine and clinical euvolaemia. What is the most likely diagnosis?",
+        "accept": [
+          "Syndrome of inappropriate ADH secretion",
+          "Inappropriate antidiuretic hormone secretion",
+          "Paraneoplastic ADH secretion"
+        ]
+      }
+    },
+    {
+      "id": "fl-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical fluid management",
+      "q": "Which is the preferred first-line fluid for a child with diarrhoea and mild to moderate dehydration who can drink?",
+      "options": [
+        "Intravenous 5% dextrose",
+        "Oral rehydration solution",
+        "Plain boiled water alone",
+        "Undiluted fruit juice"
+      ],
+      "answer": 1,
+      "explain": "Oral rehydration solution uses sodium-glucose cotransport to drive water absorption. Plain water lacks sodium and juice is hyperosmolar, which can worsen diarrhoea.",
+      "verified": false,
+      "open": {
+        "q": "What is the preferred first-line fluid for a child with diarrhoea and mild to moderate dehydration who can still drink?",
+        "accept": [
+          "ORS",
+          "Oral rehydration therapy",
+          "Oral rehydration salts"
+        ]
+      }
+    },
+    {
+      "id": "fl-034",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Sodium disorders",
+      "q": "After a head injury a patient passes large volumes of dilute urine and has a serum sodium of 152 mmol/L. Deficiency of which hormone is most likely?",
+      "options": [
+        "Aldosterone",
+        "Cortisol",
+        "ADH",
+        "Renin"
+      ],
+      "answer": 2,
+      "explain": "Damage to the hypothalamus or posterior pituitary causes cranial diabetes insipidus. The kidneys cannot concentrate urine, leading to water loss and hypernatraemia.",
+      "verified": false,
+      "open": {
+        "q": "After a head injury a patient passes large volumes of dilute urine and has a serum sodium of 152 mmol/L. Deficiency of which hormone is most likely?",
+        "accept": [
+          "Vasopressin",
+          "Antidiuretic hormone",
+          "AVP"
+        ]
+      }
+    },
+    {
+      "id": "fl-035",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical fluid management",
+      "q": "Which intravenous crystalloid is isotonic and stays mainly in the extracellular compartment?",
+      "options": [
+        "5% dextrose in water",
+        "0.45% sodium chloride",
+        "3% sodium chloride",
+        "0.9% sodium chloride"
+      ],
+      "answer": 3,
+      "explain": "0.9% saline has an osmolality close to plasma, so it expands the extracellular fluid without shifting water into cells. 5% dextrose in water distributes across all compartments once the glucose is metabolised.",
+      "verified": false,
+      "open": {
+        "q": "Which commonly used intravenous crystalloid is isotonic and stays mainly in the extracellular fluid?",
+        "accept": [
+          "Normal saline",
+          "Isotonic saline",
+          "NaCl 0.9%"
+        ]
+      }
+    },
+    {
+      "id": "fl-036",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Calcium disorders",
+      "q": "Carpopedal spasm with a positive Chvostek sign suggests which electrolyte disturbance?",
+      "options": [
+        "Hypocalcaemia",
+        "Hypercalcaemia",
+        "Hyperkalaemia",
+        "Hypernatraemia"
+      ],
+      "answer": 0,
+      "explain": "Low ionised calcium increases neuromuscular excitability, causing tetany, perioral paraesthesia and positive Chvostek and Trousseau signs.",
+      "verified": false,
+      "open": {
+        "q": "Which electrolyte disturbance causes carpopedal spasm and a positive Chvostek sign?",
+        "accept": [
+          "Low serum calcium",
+          "Hypocalcemia",
+          "Low calcium"
+        ]
+      }
+    },
+    {
+      "id": "fl-037",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Osmolality and Water Balance",
+      "q": "A patient with severe diarrhoea loses hypotonic fluid and develops increased plasma osmolality. Which hormonal response helps conserve water?",
+      "options": [
+        "Increased antidiuretic hormone secretion",
+        "Suppression of antidiuretic hormone secretion",
+        "Suppression of thirst",
+        "Reduced collecting-duct water permeability"
+      ],
+      "answer": 0,
+      "explain": "An increase in plasma osmolality stimulates hypothalamic osmoreceptors, promoting thirst and antidiuretic hormone (ADH) release. ADH increases collecting-duct water permeability through aquaporin-2 insertion.",
+      "verified": false,
+      "open": {
+        "q": "What happens to ADH secretion when plasma osmolality rises?",
+        "accept": [
+          "ADH secretion increases",
+          "increased antidiuretic hormone release"
+        ]
+      }
+    }
+  ]
 }
