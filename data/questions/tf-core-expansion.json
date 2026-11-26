@@ -29,12 +29,11 @@
           "explain": "Medial means nearer the median plane; lateral means farther from it."
         }
       ],
-      "verified": false,
-      "reviewStatus": "draft-unverified",
+      "verified": true,
+      "reviewStatus": "verified",
       "references": [
-        "https://openstax.org/books/anatomy-and-physiology/pages/1-6-anatomical-terminology"
-      ],
-      "referenceScope": "topic-level supporting references; individual claims still require review"
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology"
+      ]
     },
     {
       "id": "tf-ga-terminology-002",
@@ -65,12 +64,11 @@
           "explain": "Superficial and deep express relative distance from the external surface."
         }
       ],
-      "verified": false,
-      "reviewStatus": "draft-unverified",
+      "verified": true,
+      "reviewStatus": "verified",
       "references": [
-        "https://openstax.org/books/anatomy-and-physiology/pages/1-6-anatomical-terminology"
-      ],
-      "referenceScope": "topic-level supporting references; individual claims still require review"
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology"
+      ]
     },
     {
       "id": "tf-gr-upper-limb-004",
@@ -172,14 +170,13 @@
           "explain": "Osmosis is passive net water movement down a water-potential gradient; it does not directly consume ATP."
         }
       ],
-      "verified": false,
-      "reviewStatus": "draft-unverified",
+      "verified": true,
+      "reviewStatus": "verified",
       "references": [
-        "https://www.ncbi.nlm.nih.gov/sites/books/NBK538211/",
-        "https://www.ncbi.nlm.nih.gov/sites/books/NBK538338/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538211/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538338/",
         "https://www.ncbi.nlm.nih.gov/books/NBK538143/"
-      ],
-      "referenceScope": "topic-level supporting references; individual claims still require review"
+      ]
     },
     {
       "id": "tf-pg-cell-002",
@@ -3393,6 +3390,151 @@
       "references": [
         "https://www.ncbi.nlm.nih.gov/books/NBK534230/",
         "https://www.ncbi.nlm.nih.gov/sites/books/NBK595003/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pas-cardiovascular-001",
+      "type": "tf",
+      "topic": "pas-cardiovascular-system",
+      "level": 2,
+      "sub": "Acute myocardial infarction",
+      "q": "About the pathology of acute myocardial infarction:",
+      "items": [
+        {
+          "text": "Acute myocardial infarction commonly follows acute coronary thrombosis after rupture or erosion of an atherosclerotic plaque.",
+          "answer": true,
+          "explain": "Plaque disruption exposes thrombogenic material and can trigger thrombus formation that acutely reduces coronary blood flow."
+        },
+        {
+          "text": "Prolonged myocardial ischaemia typically produces coagulative necrosis.",
+          "answer": true,
+          "explain": "Ischaemic injury in most solid organs, including myocardium, produces coagulative necrosis; the brain is a notable exception."
+        },
+        {
+          "text": "Neutrophils are typically absent from the infarcted myocardium during the first day after infarction.",
+          "answer": false,
+          "explain": "Neutrophilic infiltration is an early histological feature and is commonly seen within the first 12–24 hours."
+        },
+        {
+          "text": "The infarcted myocardium is ultimately replaced by a collagenous scar because adult cardiac muscle has very limited regenerative capacity.",
+          "answer": true,
+          "explain": "Necrotic myocardium is cleared and repaired by granulation tissue and collagen deposition rather than meaningful regeneration of contractile cardiomyocytes."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK459269/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK536915/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ps-diuretics-001",
+      "type": "tf",
+      "topic": "ps-diuretics-and-the-urinary-system",
+      "level": 2,
+      "sub": "Diuretic mechanisms",
+      "q": "About commonly used diuretic drugs:",
+      "items": [
+        {
+          "text": "Furosemide inhibits the Na⁺-K⁺-2Cl⁻ cotransporter in the thick ascending limb of the loop of Henle.",
+          "answer": true,
+          "explain": "Loop diuretics inhibit NKCC2 on the luminal membrane of the thick ascending limb, reducing sodium chloride reabsorption."
+        },
+        {
+          "text": "Thiazide diuretics inhibit the Na⁺-Cl⁻ cotransporter in the distal convoluted tubule.",
+          "answer": true,
+          "explain": "Thiazides inhibit NCC in the distal convoluted tubule, increasing sodium and chloride excretion."
+        },
+        {
+          "text": "Thiazide diuretics generally increase urinary calcium excretion more than loop diuretics.",
+          "answer": false,
+          "explain": "Thiazides tend to increase calcium reabsorption and reduce urinary calcium, whereas loop diuretics increase calcium excretion."
+        },
+        {
+          "text": "Spironolactone acts by antagonising mineralocorticoid receptors in the distal nephron.",
+          "answer": true,
+          "explain": "Spironolactone competitively blocks aldosterone receptors in principal cells, reducing sodium reabsorption and potassium secretion."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK557838/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK532918/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK554579/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ps-cardiovascular-001",
+      "type": "tf",
+      "topic": "ps-drugs-acting-on-the-cardiovascular-system",
+      "level": 2,
+      "sub": "ACE inhibitors",
+      "q": "About angiotensin-converting enzyme inhibitors:",
+      "items": [
+        {
+          "text": "ACE inhibitors reduce the conversion of angiotensin I to angiotensin II.",
+          "answer": true,
+          "explain": "They inhibit ACE, reducing formation of the potent vasoconstrictor angiotensin II."
+        },
+        {
+          "text": "Reduced angiotensin II formation can decrease aldosterone secretion.",
+          "answer": true,
+          "explain": "Lower angiotensin II reduces stimulation of the adrenal zona glomerulosa, lowering aldosterone release."
+        },
+        {
+          "text": "ACE inhibitors increase bradykinin degradation.",
+          "answer": false,
+          "explain": "ACE also degrades bradykinin; inhibiting ACE can increase bradykinin concentrations, contributing to cough and angioedema risk."
+        },
+        {
+          "text": "Dilation of the renal efferent arteriole can reduce intraglomerular pressure during ACE inhibitor treatment.",
+          "answer": true,
+          "explain": "Reduced angiotensin II-mediated efferent arteriolar constriction lowers intraglomerular pressure and may reduce albuminuria in appropriate patients."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK430896/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK431051/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ps-antibacterial-001",
+      "type": "tf",
+      "topic": "ps-antibacterial-drugs-and-tuberculosis-and-leprosy",
+      "level": 2,
+      "sub": "Beta-lactam antibiotics",
+      "q": "About beta-lactam antibacterial drugs:",
+      "items": [
+        {
+          "text": "Beta-lactam antibiotics inhibit bacterial cell-wall peptidoglycan cross-linking by binding penicillin-binding proteins.",
+          "answer": true,
+          "explain": "Their beta-lactam ring acylates transpeptidases (penicillin-binding proteins), inhibiting the final cross-linking step in peptidoglycan synthesis."
+        },
+        {
+          "text": "Beta-lactam antibiotics act primarily by inhibiting bacterial ribosomal protein synthesis.",
+          "answer": false,
+          "explain": "They target cell-wall synthesis, whereas drugs such as tetracyclines and macrolides act on bacterial ribosomes."
+        },
+        {
+          "text": "Beta-lactamase production is one mechanism by which bacteria can resist beta-lactam antibiotics.",
+          "answer": true,
+          "explain": "Beta-lactamases hydrolyse the beta-lactam ring and can inactivate susceptible agents."
+        },
+        {
+          "text": "Vancomycin is a beta-lactam antibiotic that inhibits penicillin-binding proteins in the same way as penicillin.",
+          "answer": false,
+          "explain": "Vancomycin is a glycopeptide; it binds D-Ala-D-Ala termini of peptidoglycan precursors rather than acting as a beta-lactam PBP acylator."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK545311/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK7986/"
       ],
       "verified": true,
       "reviewStatus": "verified"
