@@ -2525,6 +2525,51 @@
           "lowers internal resistance allowing faster current spread"
         ]
       }
+    },
+    {
+      "id": "pl-excitable-tissues-and-action-potentials-NEW11",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Refractory periods",
+      "q": "A motor axon has repolarised enough for some voltage-gated Na+ channels to recover from inactivation, but the membrane is still in its after-hyperpolarisation. Which statement best describes its excitability at this moment?",
+      "options": [
+        "A second action potential is impossible regardless of stimulus strength",
+        "A stronger-than-usual stimulus may evoke an action potential",
+        "A weaker-than-usual stimulus will evoke an action potential",
+        "The axon is in the absolute refractory period because all Na+ channels remain inactivated"
+      ],
+      "answer": 1,
+      "explain": "This is the relative refractory period. Some voltage-gated Na+ channels have recovered from inactivation, so another action potential is possible, but the after-hyperpolarisation and often increased K+ conductance mean a stronger-than-normal depolarising stimulus is required. During the absolute refractory period, Na+ channel inactivation prevents a second action potential regardless of stimulus strength."
+    },
+    {
+      "id": "pl-excitable-tissues-and-action-potentials-NEW12",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cardiac action potentials",
+      "q": "An experimental drug selectively reduces L-type Ca2+ current in ventricular contractile cells but leaves fast voltage-gated Na+ channels intact. Which action-potential change is expected?",
+      "options": [
+        "The phase 0 upstroke is abolished",
+        "The phase 2 plateau is reduced or shortened",
+        "The resting membrane potential becomes markedly more positive",
+        "The rapid phase 0 upstroke becomes slower because it is carried mainly by Ca2+"
+      ],
+      "answer": 1,
+      "explain": "In ventricular contractile myocytes, phase 0 is produced mainly by rapid Na+ influx through fast voltage-gated Na+ channels. L-type Ca2+ influx sustains the phase 2 plateau and contributes to excitation–contraction coupling, so reducing this current attenuates or shortens the plateau. This differs from sinoatrial nodal pacemaker cells, where Ca2+ current contributes importantly to the phase 0 upstroke."
+    },
+    {
+      "id": "pl-excitable-tissues-and-action-potentials-NEW13",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Threshold and regenerative depolarisation",
+      "q": "A depolarising current is applied to a neuron. Which event most accurately defines the threshold for initiating a regenerative action potential?",
+      "options": [
+        "The first opening of any voltage-gated Na+ channel",
+        "The point at which inward depolarising current becomes sufficient to trigger further Na+ channel opening and a self-amplifying upstroke",
+        "The membrane potential at which all K+ channels close",
+        "The point at which the membrane potential reaches the Na+ equilibrium potential"
+      ],
+      "answer": 1,
+      "explain": "Threshold is a functional point, not simply the opening of the first Na+ channel. A small number of Na+ channels may open below threshold, but an action potential begins when inward depolarising current becomes large enough to produce further depolarisation and recruit additional voltage-gated Na+ channels. This positive-feedback process creates the regenerative upstroke."
     }
   ]
 }
