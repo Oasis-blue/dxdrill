@@ -72,3 +72,14 @@ The earlier audit identified a missing-reference metadata gap. This cleanup adds
 - Entries with malformed non-HTTPS reference values: 0
 
 Important qualification: these are **topic-level supporting references**, not proof that each individual statement has been independently checked against every cited source. A reference field is provenance assistance, not a verification flag. All questions remain draft/unverified until a human subject reviewer checks the complete stem, answer key and explanation against the relevant source. The `referenceScope` field identifies the older stems whose links were added at topic level.
+
+
+## Content verification pass — 2026-11-26
+
+A first claim-level review was completed for the following 7 stems. Each statement's truth value and explanation was checked against the cited subject reference(s), and the stem remains in the existing question bank.
+
+- Verified stems: tf-gr-upper-limb-004, tf-gr-upper-limb-005, tf-phys-muscle-001, tf-bc-enzymes-001, tf-phys-renal-structure-002, tf-phys-temperature-002, tf-phys-temperature-001
+- Total bank: 89 stems
+- Still draft/unverified: 82 stems
+
+This is an initial targeted pass, not a complete audit of the bank. The remaining stems must be reviewed individually before their verification status changes. Reference presence alone does not qualify a stem as verified.
