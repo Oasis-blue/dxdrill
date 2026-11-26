@@ -161,7 +161,7 @@
     }
     if ((h === "practice" && !DX.questionsReady) || (h !== "practice" && DX.loadingQuestions && DATA_PAGES[h])) {
       current = null;
-      app.innerHTML = '<div class="wrap stack"><p class="lede" role="status"><i class="spin"></i>Loading the question bank…</p><p class="muted">The homepage is ready. higher-priority question files are still arriving. Practice will open as soon as the first usable questions are ready.</p></div>';
+      app.innerHTML = '<div class="wrap stack"><p class="lede" role="status"><i class="spin"></i>Loading the question bank…</p><p class="muted">The homepage is ready. Some question files are still downloading. Practice will open as soon as the first usable questions are ready.</p></div>';
       return;
     }
     navVisibility();
