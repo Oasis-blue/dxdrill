@@ -1,698 +1,698 @@
 {
-  "topic": "pc-arterial-pressure-and-peripheral-resistance",
-  "questions": [
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-001",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "According to Ohm's hydrodynamic law applied to the systemic circulation, how is mean arterial pressure (MAP) related to cardiac output (CO) and total peripheral resistance (TPR)?",
-      "options": [
-        "MAP - Right Atrial Pressure = CO x TPR",
-        "MAP = CO / TPR",
-        "MAP = TPR / CO",
-        "MAP = CO + TPR (CO plus TPR)"
-      ],
-      "answer": 0,
-      "explain": "Blood flow equals pressure gradient divided by resistance (CO = (MAP - Pra) / TPR). Because right atrial pressure (~0-2 mmHg) is negligible compared to MAP (~93 mmHg), MAP approximates CO x TPR.",
-      "verified": false,
-      "open": {
-        "q": "Write the hemodynamic equation relating mean arterial pressure (MAP), right atrial pressure (Pra), cardiac output (CO), and total peripheral resistance (TPR).",
-        "accept": [
-          "MAP - Pra = CO x TPR",
-          "MAP = (CO x TPR) + Pra",
-          "MAP approximates CO x TPR"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-002",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "According to Poiseuille's equation, which vascular parameter exerts the greatest influence on resistance to laminar blood flow?",
-      "options": [
-        "Vessel length",
-        "Internal vessel radius (raised to the fourth power)",
-        "Blood plasma osmolarity",
-        "Arterial wall thickness"
-      ],
-      "answer": 1,
-      "explain": "Poiseuille's law states R = (8 * viscosity * length) / (pi * r^4). Because resistance is inversely proportional to the fourth power of the radius, halving arteriolar radius increases vascular resistance 16-fold.",
-      "verified": false,
-      "open": {
-        "q": "According to Poiseuille's law, by what factor does vascular resistance increase if the internal radius of an arteriole is reduced by half?",
-        "accept": [
-          "16-fold",
-          "16 times",
-          "By a factor of 16"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-003",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "Which segment of the systemic vascular tree accounts for the greatest single drop in mean blood pressure (~50-60 mmHg) and acts as the primary site of variable peripheral resistance?",
-      "options": [
-        "Aorta and large elastic arteries",
-        "Systemic capillaries",
-        "Arterioles",
-        "Venae cavae and large veins"
-      ],
-      "answer": 2,
-      "explain": "Arterioles have narrow lumens and thick, heavily innervated smooth muscle walls that allow rapid vasoconstriction and vasodilation, making them the principal resistance vessels of the circulation.",
-      "verified": false,
-      "open": {
-        "q": "Which blood vessels serve as the main resistance vessels of the systemic circulation and produce the largest pressure drop?",
-        "accept": [
-          "Arterioles",
-          "Systemic arterioles"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-004",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "Why does the cross-sectional velocity of blood flow reach its lowest value (~0.5 mm/s) in the systemic capillaries despite individual capillaries having the smallest diameters?",
-      "options": [
-        "Capillaries have the highest smooth muscle tone in the body",
-        "Blood viscosity increases tenfold inside capillaries",
-        "Capillary hydrostatic pressure is higher than aortic pressure",
-        "The total combined cross-sectional area of all parallel capillaries (~2,500-4,500 cm2) is vastly larger than that of the aorta (~2.5 cm2)"
-      ],
-      "answer": 3,
-      "explain": "Velocity = Flow / Total Cross-Sectional Area (v = Q / A). Because total flow Q is constant across the series circuit, the huge parallel cross-sectional area of the capillary bed slows velocity to ~0.5 mm/s, maximizing transit time for nutrient and gas exchange.",
-      "verified": false,
-      "open": {
-        "q": "Why is linear blood flow velocity slowest in the capillaries even though individual capillary radius is tiny?",
-        "accept": [
-          "Total combined cross-sectional area of all capillaries is the largest in the vascular tree",
-          "Velocity is inversely proportional to total cross-sectional area"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-005",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "When three identical systemic vascular beds are arranged in parallel rather than in series, how does the total resistance of the parallel network compare to the resistance of a single bed (R)?",
-      "options": [
-        "Total resistance equals R / 3 (less than any individual bed)",
-        "Total resistance equals 3R",
-        "Total resistance equals R^3",
-        "Total resistance equals R"
-      ],
-      "answer": 0,
-      "explain": "For parallel circuits, 1/R_total = 1/R1 + 1/R2 + 1/R3; thus parallel organ circulations keep overall TPR low and allow independent regional blood flow regulation.",
-      "verified": false,
-      "open": {
-        "q": "If three identical vascular beds each with resistance R are connected in parallel, what is their combined total resistance?",
-        "accept": [
-          "R/3",
-          "One-third of R"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-006",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "What does a Reynolds number (Re) exceeding approximately 2,000 to 3,000 in a blood vessel predict, and what clinical sign does it often generate?",
-      "options": [
-        "Silent laminar parabolic flow; absent pulse",
-        "Turbulent blood flow; audible murmurs or vascular bruits",
-        "Complete reversal of arterial flow; elevated central venous pressure",
-        "Zero shear stress on endothelial cells; capillary collapse"
-      ],
-      "answer": 1,
-      "explain": "Re = (density x diameter x velocity) / viscosity. High flow velocity, wide vessel diameter, or low blood viscosity (severe anemia) pushes Re above ~2,000, converting silent laminar flow into noisy turbulent flow (bruits/murmurs).",
-      "verified": false,
-      "open": {
-        "q": "What flow pattern occurs when the Reynolds number exceeds ~2,000-3,000 in a blood vessel, and how is it detected clinically?",
-        "accept": [
-          "Turbulent flow, heard as a bruit or murmur",
-          "Turbulence producing an audible bruit or heart murmur"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-007",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemodynamics and Poiseuille's Law",
-      "q": "According to the Law of Laplace for a thin-walled cylinder (Wall Tension = Transmural Pressure x Radius), why are systemic capillaries able to withstand internal pressures of 25 to 35 mmHg without rupturing despite having walls only one endothelial cell thick?",
-      "options": [
-        "Capillary walls contain thick layers of cross-linked elastin and collagen",
-        "Capillaries have negative internal hydrostatic pressure",
-        "Their microscopic radius (~3-4 micrometers) keeps circumferential wall tension extremely small",
-        "Pericytes pump interstitial fluid inward to neutralize pressure"
-      ],
-      "answer": 2,
-      "explain": "Because wall tension T = P x r, a capillary radius ~3,000 times smaller than the aorta generates roughly 3,000 to 10,000 times less wall tension per unit pressure, preventing rupture.",
-      "verified": false,
-      "open": {
-        "q": "Using the Law of Laplace, explain why thin-walled capillaries do not rupture under normal capillary blood pressure.",
-        "accept": [
-          "Their extremely small radius results in very low circumferential wall tension (T = P x r)",
-          "Tiny vessel radius keeps wall tension minimal"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-008",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Arterial Pressure Components and Windkessel Effect",
-      "q": "In a healthy resting adult with a systemic blood pressure of 120/80 mmHg, what are the pulse pressure and the estimated mean arterial pressure (MAP)?",
-      "options": [
-        "Pulse pressure = 100 mmHg; MAP = 100 mmHg",
-        "Pulse pressure = 40 mmHg; MAP = 100 mmHg",
-        "Pulse pressure = 80 mmHg; MAP = 93.3 mmHg",
-        "Pulse pressure = 40 mmHg; MAP = 93.3 mmHg"
-      ],
-      "answer": 3,
-      "explain": "Pulse pressure = Systolic BP - Diastolic BP = 120 - 80 = 40 mmHg. Because diastole lasts roughly twice as long as systole at rest, MAP = Diastolic BP + 1/3(Pulse Pressure) = 80 + 40/3 = 93.3 mmHg.",
-      "verified": false,
-      "open": {
-        "q": "Calculate the pulse pressure and mean arterial pressure (MAP) for a resting blood pressure of 120/80 mmHg.",
-        "accept": [
-          "Pulse pressure 40 mmHg and MAP 93.3 mmHg",
-          "PP = 40 mmHg, MAP = 93 mmHg"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-009",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Arterial Pressure Components and Windkessel Effect",
-      "q": "Which two physiological factors are the primary determinants of arterial pulse pressure?",
-      "options": [
-        "Left ventricular stroke volume and arterial compliance (distensibility)",
-        "Heart rate and plasma albumin concentration",
-        "Venous capacitance and right atrial pressure",
-        "Renal blood flow and hematocrit"
-      ],
-      "answer": 0,
-      "explain": "Pulse pressure approximates Stroke Volume / Arterial Compliance (PP ~ SV / C). It widens when stroke volume increases (e.g., exercise, aortic regurgitation) or when arterial compliance decreases (e.g., atherosclerosis/aging).",
-      "verified": false,
-      "open": {
-        "q": "State the two primary physiological determinants of arterial pulse pressure.",
-        "accept": [
-          "Stroke volume and arterial compliance",
-          "Left ventricular stroke volume and arterial distensibility"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-010",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Arterial Pressure Components and Windkessel Effect",
-      "q": "What is the Windkessel effect of the aorta and large elastic arteries?",
-      "options": [
-        "Active rhythmic contraction of aortic smooth muscle during diastole",
-        "Elastic arteries stretch during systole and recoil during diastole to sustain forward blood flow",
-        "The aortic root collapses completely after valve closure",
-        "Venous valves form within the thoracic aorta"
-      ],
-      "answer": 1,
-      "explain": "Elastin fibers in the aortic wall stretch during systole (buffering systolic peak pressure) and recoil during diastole after aortic valve closure, converting intermittent cardiac ejection into continuous peripheral blood flow.",
-      "verified": false,
-      "open": {
-        "q": "Describe the Windkessel effect of the aorta and large elastic arteries.",
-        "accept": [
-          "Elastic expansion during systole and recoil during diastole to sustain continuous blood flow",
-          "Storing elastic energy during systole and recoiling in diastole to maintain diastolic pressure and flow"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-011",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Arterial Pressure Components and Windkessel Effect",
-      "q": "As the arterial pressure pulse wave travels from the ascending aorta toward the femoral and dorsalis pedis arteries, how do systolic pressure and pulse pressure normally change?",
-      "options": [
-        "Systolic pressure and pulse pressure both fall sharply in peripheral arteries",
-        "Mean arterial pressure rises markedly toward the feet",
-        "Systolic and pulse pressures are amplified distally, while mean pressure falls slightly",
-        "The pulse wave disappears before reaching the radial artery"
-      ],
-      "answer": 2,
-      "explain": "Distal arteries are stiffer (less compliant) and reflect pressure waves back from arterial branch points, amplifying systolic and pulse pressure peaks even though MAP drops slightly (~2-4 mmHg) to drive forward flow.",
-      "verified": false,
-      "open": {
-        "q": "Why are systolic blood pressure and pulse pressure slightly higher in the femoral or dorsalis pedis artery than in the ascending aorta?",
-        "accept": [
-          "Decreased arterial compliance distally and reflection of pressure waves from branch points",
-          "Wave reflection and stiffer peripheral arteries"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-012",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Arterial Pressure Components and Windkessel Effect",
-      "q": "In an elderly patient with severe arteriosclerosis (loss of aortic elastin and decreased arterial compliance), what happens to systolic pressure, diastolic pressure, and pulse pressure?",
-      "options": [
-        "Systolic pressure falls, diastolic pressure rises, and pulse pressure narrows",
-        "Both systolic and diastolic pressures remain normal while MAP doubles",
-        "Diastolic pressure rises to 120 mmHg while systolic pressure stays at 120 mmHg",
-        "Systolic pressure rises markedly, diastolic pressure stays normal or falls, and pulse pressure widens (isolated systolic hypertension)"
-      ],
-      "answer": 3,
-      "explain": "Rigid, non-compliant arteries cannot expand during systole (spiking systolic BP) nor recoil effectively during diastole (lowering diastolic BP), producing wide pulse pressure.",
-      "verified": false,
-      "open": {
-        "q": "How does age-related loss of arterial compliance (arteriosclerosis) alter systolic blood pressure, diastolic blood pressure, and pulse pressure?",
-        "accept": [
-          "Increases systolic pressure, lowers or maintains diastolic pressure, and widens pulse pressure",
-          "Causes isolated systolic hypertension with a wide pulse pressure"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-013",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vascular Smooth Muscle and Local Control of Blood Flow",
-      "q": "Which local metabolic vasodilators accumulate in active tissues such as exercising skeletal muscle or myocardium to trigger active hyperemia?",
-      "options": [
-        "Adenosine, potassium ions (K+), hydrogen ions (H+), carbon dioxide (CO2), and lactate",
-        "Endothelin-1, angiotensin II, and thromboxane A2",
-        "Norepinephrine, vasopressin, and serotonin",
-        "Oxygen (high PO2) and calcium ions"
-      ],
-      "answer": 0,
-      "explain": "Increased cellular metabolism consumes O2 and releases vasodilator metabolites (adenosine, K+, H+, CO2, lactate, nitric oxide) that relax precapillary sphincters and arteriolar smooth muscle to match blood flow to metabolic demand.",
-      "verified": false,
-      "open": {
-        "q": "Name four local metabolic factors that increase during tissue activity and cause arteriolar vasodilation (active hyperemia).",
-        "accept": [
-          "Adenosine, K+, H+, and CO2",
-          "Decreased O2, increased CO2, H+, K+, and adenosine"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-014",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vascular Smooth Muscle and Local Control of Blood Flow",
-      "q": "What is reactive hyperemia?",
-      "options": [
-        "Vasoconstriction of skin vessels upon exposure to cold air",
-        "A transient surge in tissue blood flow above baseline immediately after release of a temporary arterial occlusion",
-        "Progressive drop in blood pressure upon standing upright",
-        "Chronic collateral vessel growth over several months"
-      ],
-      "answer": 1,
-      "explain": "During temporary arterial occlusion (such as inflating a blood pressure cuff), hypoxia and vasodilator metabolites accumulate in the ischemic tissue, maximally dilating arterioles so flow surges transiently once occlusion is released.",
-      "verified": false,
-      "open": {
-        "q": "Define reactive hyperemia and explain its underlying mechanism.",
-        "accept": [
-          "Transient overshoot in blood flow after release of temporary arterial occlusion due to accumulation of vasodilator metabolites and hypoxia",
-          "Surge in blood flow following ischemia caused by local metabolic vasodilation"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-015",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vascular Smooth Muscle and Local Control of Blood Flow",
-      "q": "How does the Bayliss myogenic mechanism contribute to the autoregulation of organ blood flow when arterial perfusion pressure rises abruptly?",
-      "options": [
-        "Endothelial stretch releases nitric oxide and dilates the arteriole",
-        "Sympathetic nerves relax vascular smooth muscle",
-        "Stretch of arteriolar smooth muscle promotes calcium entry and vasoconstriction, stabilising flow",
-        "Renin secretion stops completely within seconds"
-      ],
-      "answer": 2,
-      "explain": "Intrinsic to vascular smooth muscle (especially in renal, cerebral, and coronary arterioles), increased transmural pressure stretches smooth muscle membranes, causing depolarization, Ca2+ influx, and vasoconstriction so Flow = Pressure / Resistance remains constant.",
-      "verified": false,
-      "open": {
-        "q": "Explain the Bayliss myogenic response of arteriolar smooth muscle when arterial perfusion pressure suddenly increases.",
-        "accept": [
-          "Vascular stretch opens stretch-activated Ca2+ channels and depolarizes smooth muscle, causing vasoconstriction to maintain constant blood flow",
-          "Stretch-induced arteriolar constriction that keeps blood flow constant"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-016",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Endothelial Vasoactive Factors",
-      "q": "From which amino acid is endothelium-derived nitric oxide (NO) synthesized by endothelial nitric oxide synthase (eNOS), and which second messenger mediates its vasodilatory action in vascular smooth muscle?",
-      "options": [
-        "Tyrosine; cyclic AMP (cAMP)",
-        "Tryptophan; inositol trisphosphate (IP3)",
-        "Glutamate; diacylglycerol (DAG)",
-        "L-arginine; cyclic GMP (cGMP)"
-      ],
-      "answer": 3,
-      "explain": "Shear stress, acetylcholine, and bradykinin activate eNOS to convert L-arginine into NO + L-citrulline; NO diffuses into vascular smooth muscle, activates soluble guanylyl cyclase to raise cGMP, and stimulates myosin light-chain phosphatase to cause relaxation.",
-      "verified": false,
-      "open": {
-        "q": "Name the amino acid precursor of nitric oxide (NO) and the intracellular second messenger through which NO relaxes vascular smooth muscle.",
-        "accept": [
-          "L-arginine and cyclic GMP (cGMP)",
-          "Arginine; cGMP"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-017",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Endothelial Vasoactive Factors",
-      "q": "Which peptide synthesized by vascular endothelial cells is the most potent endogenous vasoconstrictor known?",
-      "options": [
-        "Endothelin-1 (ET-1)",
-        "Prostacyclin (PGI2)",
-        "Atrial natriuretic peptide (ANP)",
-        "Bradykinin"
-      ],
-      "answer": 0,
-      "explain": "Endothelin-1 is a 21-amino-acid peptide released by endothelial cells in response to vascular injury, hypoxia, angiotensin II, and thrombin; it binds ETA receptors on smooth muscle to cause potent, sustained vasoconstriction.",
-      "verified": false,
-      "open": {
-        "q": "Name the potent 21-amino-acid vasoconstrictor peptide produced by vascular endothelial cells.",
-        "accept": [
-          "Endothelin",
-          "ET-1",
-          "Endothelin-1"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-018",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Endothelial Vasoactive Factors",
-      "q": "When endothelial cells are denuded or damaged (for example, over an atherosclerotic plaque), why does intracoronary infusion of acetylcholine cause paradoxical vasoconstriction rather than vasodilation?",
-      "options": [
-        "Acetylcholine directly activates beta-2 receptors on vascular smooth muscle",
-        "Without endothelial NO release, acetylcholine can act directly on smooth muscle muscarinic receptors and cause constriction",
-        "Endothelial damage converts acetylcholine into angiotensin II",
-        "Damaged endothelium releases excess prostacyclin, causing constriction"
-      ],
-      "answer": 1,
-      "explain": "In healthy vessels, endothelial M3 activation stimulates eNOS to release NO, overriding smooth muscle constriction; when endothelium is absent, direct M3-Gq-IP3 activation on smooth muscle causes vasospasm.",
-      "verified": false,
-      "open": {
-        "q": "Why does acetylcholine cause vasoconstriction instead of vasodilation in blood vessels with damaged or denuded endothelium?",
-        "accept": [
-          "Loss of endothelial nitric oxide production unmasks direct M3 muscarinic contraction of vascular smooth muscle",
-          "Without endothelial NO release, acetylcholine directly stimulates smooth muscle M3 receptors to constrict"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-019",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
-      "q": "Where are the high-pressure arterial baroreceptors located, and which cranial nerves carry their afferent impulses to the nucleus tractus solitarius (NTS) in the medulla?",
-      "options": [
-        "Right atrium and venae cavae; vagus nerve only",
-        "Renal juxtaglomerular apparatus; hypoglossal nerve",
-        "Carotid sinus (via glossopharyngeal nerve, CN IX) and aortic arch (via vagus nerve, CN X)",
-        "Pulmonary alveoli; phrenic nerve"
-      ],
-      "answer": 2,
-      "explain": "Carotid sinus stretch receptors transmit via Hering's nerve to CN IX (glossopharyngeal), while aortic arch stretch receptors transmit via CN X (vagus) to the medullary NTS.",
-      "verified": false,
-      "open": {
-        "q": "Name the two anatomical locations of the high-pressure arterial baroreceptors and the cranial nerve innervating each.",
-        "accept": [
-          "Carotid sinus (CN IX / glossopharyngeal) and aortic arch (CN X / vagus)",
-          "Carotid sinus via CN IX and aortic arch via CN X"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-020",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
-      "q": "During an acute drop in arterial blood pressure (such as standing up rapidly or acute hemorrhage), how does the carotid sinus baroreceptor reflex restore blood pressure?",
-      "options": [
-        "Increased baroreceptor firing stimulates the nucleus ambiguus and inhibits the rostral ventrolateral medulla (RVLM)",
-        "Increased baroreceptor firing causes systemic vasodilation and bradycardia",
-        "Baroreceptors secrete norepinephrine directly into the carotid artery",
-        "Decreased baroreceptor stretch reduces afferent firing to the NTS, disinhibiting the RVLM to increase sympathetic vasoconstriction, contractility, and heart rate while reducing vagal tone"
-      ],
-      "answer": 3,
-      "explain": "Baroreceptors are tonically active at normal BP (~95 mmHg). A fall in BP decreases stretch and NTS firing, which reduces parasympathetic vagal output and disinhibits sympathetic vasomotor neurons in the RVLM, raising HR, SV, and TPR.",
-      "verified": false,
-      "open": {
-        "q": "Trace the neural pathway and autonomic changes of the baroreceptor reflex in response to an acute fall in arterial blood pressure.",
-        "accept": [
-          "Decreased baroreceptor stretch lowers CN IX/X firing to NTS, reducing vagal tone and disinhibiting RVLM sympathetic output to increase HR, contractility, and vasoconstriction",
-          "Reduced afferent firing to NTS increases sympathetic tone and decreases parasympathetic tone, raising HR and TPR"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-021",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
-      "q": "What is the CNS ischemic response (and Cushing reflex), and at what arterial pressure threshold does it become maximally activated?",
-      "options": [
-        "A powerful sympathetic response to severe cerebral ischaemia occurs as MAP falls markedly, with maximal activation at very low pressures",
-        "Reflex vasodilation occurs when MAP rises above 140 mmHg",
-        "Vagal slowing of the heart is the main response to mild exercise",
-        "Renal sodium excretion is triggered by reduced plasma osmolarity"
-      ],
-      "answer": 0,
-      "explain": "When brain perfusion is severely compromised (MAP under 60 mmHg, maximal at 15-20 mmHg) or intracranial pressure exceeds MAP (Cushing triad: hypertension, bradycardia, irregular respiration), local CO2/acidosis directly excites the medullary vasomotor center to drive extreme sympathetic vasoconstriction.",
-      "verified": false,
-      "open": {
-        "q": "What triggers the CNS ischemic response, and what is the clinical triad of the Cushing reflex caused by raised intracranial pressure?",
-        "accept": [
-          "Medullary ischemia/CO2 buildup (MAP < 60 mmHg); Cushing triad is hypertension, bradycardia, and irregular breathing",
-          "Brainstem hypoxia/hypercapnia; widened pulse pressure/hypertension, bradycardia, irregular respiration"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-022",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
-      "q": "Which enzyme converts inactive decapeptide angiotensin I into the potent octapeptide vasoconstrictor angiotensin II, and where is this enzyme most abundant?",
-      "options": [
-        "Renin; renal macula densa",
-        "Angiotensin-converting enzyme (ACE); luminal surface of pulmonary capillary endothelium",
-        "Chymase; adrenal medulla",
-        "Aldosterone synthase; zona glomerulosa"
-      ],
-      "answer": 1,
-      "explain": "Renin from juxtaglomerular granular cells cleaves hepatic angiotensinogen to angiotensin I; ACE on pulmonary vascular endothelial cells converts angiotensin I to angiotensin II (and also degrades bradykinin).",
-      "verified": false,
-      "open": {
-        "q": "Name the enzyme that converts angiotensin I to angiotensin II and the primary organ where this conversion occurs.",
-        "accept": [
-          "Angiotensin-converting enzyme (ACE) in the lungs (pulmonary capillary endothelium)",
-          "ACE; lungs"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-023",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
-      "q": "Which three stimuli directly trigger renin release from renal juxtaglomerular (JG) granular cells?",
-      "options": [
-        "High renal perfusion pressure, elevated macula densa NaCl delivery, and atrial natriuretic peptide",
-        "Hyperkalemia, high blood volume, and vagal stimulation",
-        "Reduced renal perfusion pressure (intrarenal baroreceptors), decreased NaCl delivery to the macula densa, and beta-1 adrenergic sympathetic stimulation",
-        "Elevated plasma angiotensin II, high aldosterone, and alkalosis"
-      ],
-      "answer": 2,
-      "explain": "JG cells release renin in response to: (1) reduced afferent arteriolar stretch, (2) low tubular Na+/Cl- sensed by macula densa cells (via PGE2/prostacyclin), and (3) renal sympathetic nerve activation of beta-1 receptors.",
-      "verified": false,
-      "open": {
-        "q": "State the three physiological stimuli that stimulate renin secretion from renal juxtaglomerular cells.",
-        "accept": [
-          "Decreased renal perfusion pressure, decreased NaCl delivery to macula densa, and beta-1 sympathetic stimulation",
-          "Low afferent arteriolar pressure, low macula densa NaCl, and sympathetic beta-1 activation"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-024",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
-      "q": "How does angiotensin II raise arterial blood pressure across both short-term and long-term time frames?",
-      "options": [
-        "Blocks aldosterone and promotes renal sodium excretion",
-        "Activates endothelial nitric oxide synthase and dilates systemic arterioles",
-        "Inhibits thirst and suppresses ADH release",
-        "Causes AT1-mediated vasoconstriction and promotes aldosterone, sodium retention, thirst and ADH release"
-      ],
-      "answer": 3,
-      "explain": "Angiotensin II acts on AT1 receptors to raise TPR immediately (vasoconstriction) and expand extracellular fluid volume over hours to days (aldosterone release, Na+/H+ exchange in proximal tubule, ADH release, and thirst).",
-      "verified": false,
-      "open": {
-        "q": "List three mechanisms by which angiotensin II increases arterial blood pressure.",
-        "accept": [
-          "Arteriolar vasoconstriction, stimulation of aldosterone secretion, and stimulation of ADH release/thirst",
-          "Vasoconstriction, increased renal sodium reabsorption, and aldosterone/ADH secretion"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-025",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
-      "q": "How does atrial natriuretic peptide (ANP), secreted by atrial myocytes in response to atrial stretch, lower blood volume and arterial pressure?",
-      "options": [
-        "Dilates afferent and constricts efferent arterioles, promotes natriuresis and suppresses RAAS",
-        "Constricts afferent arterioles and stimulates aldosterone",
-        "Activates alpha-1 receptors on systemic veins",
-        "Stimulates posterior pituitary vasopressin release"
-      ],
-      "answer": 0,
-      "explain": "ANP (and BNP) acts via particulate guanylyl cyclase (cGMP) to increase GFR, promote natriuresis and diuresis, relax vascular smooth muscle, and inhibit RAAS.",
-      "verified": false,
-      "open": {
-        "q": "Summarize the renal and vascular actions of atrial natriuretic peptide (ANP) when released in response to volume overload.",
-        "accept": [
-          "Increases GFR, promotes natriuresis/diuresis, causes vasodilation, and inhibits renin and aldosterone",
-          "Dilates afferent arterioles, increases sodium and water excretion, and suppresses RAAS"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-026",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
-      "q": "Why is the renal pressure natriuresis and diuresis mechanism considered the dominant long-term controller of arterial blood pressure?",
-      "options": [
-        "Because renal baroreceptors reset completely within 24 hours like carotid sinus baroreceptors",
-        "Because it does not adapt and continues adjusting renal salt and water excretion until extracellular fluid volume and arterial pressure return to the exact equilibrium set point",
-        "Because the kidneys secrete epinephrine directly into the renal vein",
-        "Because glomerular filtration rate drops to zero whenever MAP exceeds 100 mmHg"
-      ],
-      "answer": 1,
-      "explain": "Unlike neural baroreceptors that adapt within 1 to 2 days, the renal-body fluid pressure natriuresis curve maintains infinite gain over days to weeks: any sustained hypertension requires a rightward shift of the renal function curve.",
-      "verified": false,
-      "open": {
-        "q": "Explain why pressure natriuresis and diuresis governs long-term arterial blood pressure whereas the baroreceptor reflex only regulates short-term pressure.",
-        "accept": [
-          "Baroreceptors adapt within 1-2 days, whereas pressure natriuresis does not adapt and alters ECF volume until pressure returns to the renal equilibrium point",
-          "Pressure natriuresis has infinite long-term gain and lacks receptor adaptation"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-027",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Measurement of Arterial Blood Pressure",
-      "q": "What causes the Korotkoff sounds heard through a stethoscope over the brachial artery during auscultatory sphygmomanometry?",
-      "options": [
-        "Closure of the mitral and tricuspid heart valves",
-        "Laminar flow through a fully uncompressed brachial artery",
-        "Turbulent blood jets spurting through a partially compressed artery when cuff pressure lies between systolic and diastolic pressure",
-        "Contraction of the biceps brachii muscle beneath the cuff"
-      ],
-      "answer": 2,
-      "explain": "Above systolic pressure, the artery is occluded (silent); between systolic and diastolic pressure, intermittent turbulent spurts generate Korotkoff sounds (Phase I onset = systolic BP); below diastolic pressure, uninterrupted laminar flow resumes and sounds disappear (Phase V = diastolic BP).",
-      "verified": false,
-      "open": {
-        "q": "What physical phenomenon produces Korotkoff sounds during manual blood pressure measurement?",
-        "accept": [
-          "Turbulent blood flow spurting through a partially occluded artery when cuff pressure is between systolic and diastolic pressure",
-          "Intermittent turbulent flow through the compressed brachial artery"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-028",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Measurement of Arterial Blood Pressure",
-      "q": "Using an adult blood pressure cuff that is too narrow or too short for a patient with a large muscular or obese arm produces which measurement error?",
-      "options": [
-        "Falsely low blood pressure reading",
-        "No effect on systolic pressure, only zero diastolic pressure",
-        "Elimination of all Korotkoff sounds",
-        "Falsely high (overestimated) blood pressure reading because higher cuff inflation pressure is required to compress the deep brachial artery"
-      ],
-      "answer": 3,
-      "explain": "Cuff bladder width should be ~40% of arm circumference and length ~80%; an undersized cuff fails to transmit pressure effectively to the artery, artificially elevating both systolic and diastolic readings.",
-      "verified": false,
-      "open": {
-        "q": "What blood pressure measurement error occurs when a sphygmomanometer cuff is too small (narrow) for the patient's arm?",
-        "accept": [
-          "Falsely high blood pressure reading",
-          "Overestimation of blood pressure"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-029",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Clinical Correlations: Hypertension and Shock",
-      "q": "A 34-year-old woman presents with severe resistant hypertension (BP 188/114 mmHg) and an abdominal bruit heard just to the left of the umbilicus. Renal angiography reveals 85% atherosclerotic stenosis of the left renal artery. Which hormonal cascade is driving her secondary renovascular hypertension?",
-      "options": [
-        "Activation of the renin-angiotensin-aldosterone system (RAAS) triggered by reduced perfusion pressure to the stenotic left kidney",
-        "Excessive secretion of atrial natriuretic peptide from the left atrium",
-        "Inhibition of sympathetic vasoconstrictor tone by the carotid sinus",
-        "Deficiency of posterior pituitary antidiuretic hormone"
-      ],
-      "answer": 0,
-      "explain": "Renal artery stenosis lowers perfusion pressure distal to the narrowing in the affected kidney, tricking its juxtaglomerular apparatus into secreting excess renin, which elevates angiotensin II and aldosterone to cause systemic hypertension.",
-      "verified": false,
-      "open": {
-        "q": "Explain the pathophysiological mechanism by which unilateral renal artery stenosis causes secondary systemic hypertension.",
-        "accept": [
-          "Reduced perfusion pressure distal to the stenosis stimulates renin release and activates the renin-angiotensin-aldosterone system",
-          "Hypoperfusion of the affected kidney activates RAAS"
-        ]
-      }
-    },
-    {
-      "id": "pc-arterial-pressure-and-peripheral-resistance-030",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Clinical Correlations: Hypertension and Shock",
-      "q": "A 26-year-old man presents with fever, urinary tract infection, warm flushed skin, bounding pulses, a blood pressure of 82/40 mmHg, and an elevated cardiac output of 9.2 L/min. Which hemodynamic abnormality is the primary cause of his hypotension in early septic shock?",
-      "options": [
-        "Severe primary left ventricular pump failure",
-        "Profound loss of total peripheral resistance due to widespread nitric oxide- and cytokine-mediated systemic vasodilation",
-        "Mechanical obstruction of the pulmonary trunk by a saddle embolus",
-        "Extreme arteriolar vasoconstriction raising afterload"
-      ],
-      "answer": 1,
-      "explain": "Septic shock is a distributive shock: bacterial endotoxins induce inducible nitric oxide synthase (iNOS) and inflammatory cytokines, causing massive arteriolar and venular vasodilation that drops TPR precipitously (MAP = CO x TPR) despite high early CO.",
-      "verified": false,
-      "open": {
-        "q": "What is the primary hemodynamic cause of hypotension in early distributive (septic) shock despite an elevated cardiac output?",
-        "accept": [
-          "Markedly decreased total peripheral resistance from widespread systemic vasodilation",
-          "Profound systemic vasodilation lowering TPR"
-        ]
-      }
-    }
-  ]
+ "topic": "pc-arterial-pressure-and-peripheral-resistance",
+ "questions": [
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "According to Ohm's hydrodynamic law applied to the systemic circulation, how is mean arterial pressure (MAP) related to cardiac output (CO) and total peripheral resistance (TPR)?",
+   "options": [
+    "MAP - Right Atrial Pressure = CO x TPR",
+    "MAP = CO / TPR",
+    "MAP = TPR / CO",
+    "MAP = CO + TPR (CO plus TPR)"
+   ],
+   "answer": 0,
+   "explain": "Blood flow equals pressure gradient divided by resistance (CO = (MAP - Pra) / TPR). Because right atrial pressure (~0-2 mmHg) is negligible compared to MAP (~93 mmHg), MAP approximates CO x TPR.",
+   "verified": false,
+   "open": {
+    "q": "Write the hemodynamic equation relating mean arterial pressure (MAP), right atrial pressure (Pra), cardiac output (CO), and total peripheral resistance (TPR).",
+    "accept": [
+     "MAP - Pra = CO x TPR",
+     "MAP = (CO x TPR) + Pra",
+     "MAP approximates CO x TPR"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "According to Poiseuille's equation, which vascular parameter exerts the greatest influence on resistance to laminar blood flow?",
+   "options": [
+    "Vessel length",
+    "Internal vessel radius (raised to the fourth power)",
+    "Blood plasma osmolarity",
+    "Arterial wall thickness"
+   ],
+   "answer": 1,
+   "explain": "Poiseuille's law states R = (8 * viscosity * length) / (pi * r^4). Because resistance is inversely proportional to the fourth power of the radius, halving arteriolar radius increases vascular resistance 16-fold.",
+   "verified": false,
+   "open": {
+    "q": "According to Poiseuille's law, by what factor does vascular resistance increase if the internal radius of an arteriole is reduced by half?",
+    "accept": [
+     "16-fold",
+     "16 times",
+     "By a factor of 16"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-003",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "Which segment of the systemic vascular tree accounts for the greatest single drop in mean blood pressure (~50-60 mmHg) and acts as the primary site of variable peripheral resistance?",
+   "options": [
+    "Aorta and large elastic arteries",
+    "Systemic capillaries",
+    "Arterioles",
+    "Venae cavae and large veins"
+   ],
+   "answer": 2,
+   "explain": "Arterioles have narrow lumens and thick, heavily innervated smooth muscle walls that allow rapid vasoconstriction and vasodilation, making them the principal resistance vessels of the circulation.",
+   "verified": false,
+   "open": {
+    "q": "Which blood vessels serve as the main resistance vessels of the systemic circulation and produce the largest pressure drop?",
+    "accept": [
+     "Arterioles",
+     "Systemic arterioles"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "Why does the cross-sectional velocity of blood flow reach its lowest value (~0.5 mm/s) in the systemic capillaries despite individual capillaries having the smallest diameters?",
+   "options": [
+    "Capillaries have the highest smooth muscle tone in the body",
+    "Blood viscosity increases tenfold inside capillaries",
+    "Capillary hydrostatic pressure is higher than aortic pressure",
+    "The total combined cross-sectional area of all parallel capillaries (~2,500-4,500 cm2) is vastly larger than that of the aorta (~2.5 cm2)"
+   ],
+   "answer": 3,
+   "explain": "Velocity = Flow / Total Cross-Sectional Area (v = Q / A). Because total flow Q is constant across the series circuit, the huge parallel cross-sectional area of the capillary bed slows velocity to ~0.5 mm/s, maximizing transit time for nutrient and gas exchange.",
+   "verified": false,
+   "open": {
+    "q": "Why is linear blood flow velocity slowest in the capillaries even though individual capillary radius is tiny?",
+    "accept": [
+     "Total combined cross-sectional area of all capillaries is the largest in the vascular tree",
+     "Velocity is inversely proportional to total cross-sectional area"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-005",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "When three identical systemic vascular beds are arranged in parallel rather than in series, how does the total resistance of the parallel network compare to the resistance of a single bed (R)?",
+   "options": [
+    "Total resistance equals R / 3 (less than any individual bed)",
+    "Total resistance equals 3R",
+    "Total resistance equals R^3",
+    "Total resistance equals R"
+   ],
+   "answer": 0,
+   "explain": "For parallel circuits, 1/R_total = 1/R1 + 1/R2 + 1/R3; thus parallel organ circulations keep overall TPR low and allow independent regional blood flow regulation.",
+   "verified": false,
+   "open": {
+    "q": "If three identical vascular beds each with resistance R are connected in parallel, what is their combined total resistance?",
+    "accept": [
+     "R/3",
+     "One-third of R"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "What does a Reynolds number (Re) exceeding approximately 2,000 to 3,000 in a blood vessel predict, and what clinical sign does it often generate?",
+   "options": [
+    "Silent laminar parabolic flow; absent pulse",
+    "Turbulent blood flow; audible murmurs or vascular bruits",
+    "Complete reversal of arterial flow; elevated central venous pressure",
+    "Zero shear stress on endothelial cells; capillary collapse"
+   ],
+   "answer": 1,
+   "explain": "Re = (density x diameter x velocity) / viscosity. High flow velocity, wide vessel diameter, or low blood viscosity (severe anemia) pushes Re above ~2,000, converting silent laminar flow into noisy turbulent flow (bruits/murmurs).",
+   "verified": false,
+   "open": {
+    "q": "What flow pattern occurs when the Reynolds number exceeds ~2,000-3,000 in a blood vessel, and how is it detected clinically?",
+    "accept": [
+     "Turbulent flow, heard as a bruit or murmur",
+     "Turbulence producing an audible bruit or heart murmur"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemodynamics and Poiseuille's Law",
+   "q": "According to the Law of Laplace for a thin-walled cylinder (Wall Tension = Transmural Pressure x Radius), why are systemic capillaries able to withstand internal pressures of 25 to 35 mmHg without rupturing despite having walls only one endothelial cell thick?",
+   "options": [
+    "Capillary walls contain thick layers of cross-linked elastin and collagen",
+    "Capillaries have negative internal hydrostatic pressure",
+    "Their microscopic radius (~3-4 micrometers) keeps circumferential wall tension extremely small",
+    "Pericytes pump interstitial fluid inward to neutralize pressure"
+   ],
+   "answer": 2,
+   "explain": "Because wall tension T = P x r, a capillary radius ~3,000 times smaller than the aorta generates roughly 3,000 to 10,000 times less wall tension per unit pressure, preventing rupture.",
+   "verified": false,
+   "open": {
+    "q": "Using the Law of Laplace, explain why thin-walled capillaries do not rupture under normal capillary blood pressure.",
+    "accept": [
+     "Their extremely small radius results in very low circumferential wall tension (T = P x r)",
+     "Tiny vessel radius keeps wall tension minimal"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-008",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Arterial Pressure Components and Windkessel Effect",
+   "q": "In a healthy resting adult with a systemic blood pressure of 120/80 mmHg, what are the pulse pressure and the estimated mean arterial pressure (MAP)?",
+   "options": [
+    "Pulse pressure = 100 mmHg; MAP = 100 mmHg",
+    "Pulse pressure = 40 mmHg; MAP = 100 mmHg",
+    "Pulse pressure = 80 mmHg; MAP = 93.3 mmHg",
+    "Pulse pressure = 40 mmHg; MAP = 93.3 mmHg"
+   ],
+   "answer": 3,
+   "explain": "Pulse pressure = Systolic BP - Diastolic BP = 120 - 80 = 40 mmHg. Because diastole lasts roughly twice as long as systole at rest, MAP = Diastolic BP + 1/3(Pulse Pressure) = 80 + 40/3 = 93.3 mmHg.",
+   "verified": false,
+   "open": {
+    "q": "Calculate the pulse pressure and mean arterial pressure (MAP) for a resting blood pressure of 120/80 mmHg.",
+    "accept": [
+     "Pulse pressure 40 mmHg and MAP 93.3 mmHg",
+     "PP = 40 mmHg, MAP = 93 mmHg"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-009",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Arterial Pressure Components and Windkessel Effect",
+   "q": "Which two physiological factors are the primary determinants of arterial pulse pressure?",
+   "options": [
+    "Left ventricular stroke volume and arterial compliance (distensibility)",
+    "Heart rate and plasma albumin concentration",
+    "Venous capacitance and right atrial pressure",
+    "Renal blood flow and hematocrit"
+   ],
+   "answer": 0,
+   "explain": "Pulse pressure approximates Stroke Volume / Arterial Compliance (PP ~ SV / C). It widens when stroke volume increases (e.g., exercise, aortic regurgitation) or when arterial compliance decreases (e.g., atherosclerosis/aging).",
+   "verified": false,
+   "open": {
+    "q": "State the two primary physiological determinants of arterial pulse pressure.",
+    "accept": [
+     "Stroke volume and arterial compliance",
+     "Left ventricular stroke volume and arterial distensibility"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Arterial Pressure Components and Windkessel Effect",
+   "q": "What is the Windkessel effect of the aorta and large elastic arteries?",
+   "options": [
+    "Active rhythmic contraction of aortic smooth muscle during diastole",
+    "Elastic arteries stretch during systole and recoil during diastole to sustain forward blood flow",
+    "The aortic root collapses completely after valve closure",
+    "Venous valves form within the thoracic aorta"
+   ],
+   "answer": 1,
+   "explain": "Elastin fibers in the aortic wall stretch during systole (buffering systolic peak pressure) and recoil during diastole after aortic valve closure, converting intermittent cardiac ejection into continuous peripheral blood flow.",
+   "verified": false,
+   "open": {
+    "q": "Describe the Windkessel effect of the aorta and large elastic arteries.",
+    "accept": [
+     "Elastic expansion during systole and recoil during diastole to sustain continuous blood flow",
+     "Storing elastic energy during systole and recoiling in diastole to maintain diastolic pressure and flow"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Arterial Pressure Components and Windkessel Effect",
+   "q": "As the arterial pressure pulse wave travels from the ascending aorta toward the femoral and dorsalis pedis arteries, how do systolic pressure and pulse pressure normally change?",
+   "options": [
+    "Systolic pressure and pulse pressure both fall sharply in peripheral arteries",
+    "Mean arterial pressure rises markedly toward the feet",
+    "Systolic and pulse pressures are amplified distally, while mean pressure falls slightly",
+    "The pulse wave disappears before reaching the radial artery"
+   ],
+   "answer": 2,
+   "explain": "Distal arteries are stiffer (less compliant) and reflect pressure waves back from arterial branch points, amplifying systolic and pulse pressure peaks even though MAP drops slightly (~2-4 mmHg) to drive forward flow.",
+   "verified": false,
+   "open": {
+    "q": "Why are systolic blood pressure and pulse pressure slightly higher in the femoral or dorsalis pedis artery than in the ascending aorta?",
+    "accept": [
+     "Decreased arterial compliance distally and reflection of pressure waves from branch points",
+     "Wave reflection and stiffer peripheral arteries"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-012",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Arterial Pressure Components and Windkessel Effect",
+   "q": "In an elderly patient with severe arteriosclerosis (loss of aortic elastin and decreased arterial compliance), what happens to systolic pressure, diastolic pressure, and pulse pressure?",
+   "options": [
+    "Systolic pressure falls, diastolic pressure rises, and pulse pressure narrows",
+    "Both systolic and diastolic pressures remain normal while MAP doubles",
+    "Diastolic pressure rises to 120 mmHg while systolic pressure stays at 120 mmHg",
+    "Systolic pressure rises markedly, diastolic pressure stays normal or falls, and pulse pressure widens (isolated systolic hypertension)"
+   ],
+   "answer": 3,
+   "explain": "Rigid, non-compliant arteries cannot expand during systole (spiking systolic BP) nor recoil effectively during diastole (lowering diastolic BP), producing wide pulse pressure.",
+   "verified": false,
+   "open": {
+    "q": "How does age-related loss of arterial compliance (arteriosclerosis) alter systolic blood pressure, diastolic blood pressure, and pulse pressure?",
+    "accept": [
+     "Increases systolic pressure, lowers or maintains diastolic pressure, and widens pulse pressure",
+     "Causes isolated systolic hypertension with a wide pulse pressure"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-013",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Vascular Smooth Muscle and Local Control of Blood Flow",
+   "q": "Which local metabolic vasodilators accumulate in active tissues such as exercising skeletal muscle or myocardium to trigger active hyperemia?",
+   "options": [
+    "Adenosine, potassium ions (K+), hydrogen ions (H+), carbon dioxide (CO2), and lactate",
+    "Endothelin-1, angiotensin II, and thromboxane A2",
+    "Norepinephrine, vasopressin, and serotonin",
+    "Oxygen (high PO2) and calcium ions"
+   ],
+   "answer": 0,
+   "explain": "Increased cellular metabolism consumes O2 and releases vasodilator metabolites (adenosine, K+, H+, CO2, lactate, nitric oxide) that relax precapillary sphincters and arteriolar smooth muscle to match blood flow to metabolic demand.",
+   "verified": false,
+   "open": {
+    "q": "Name four local metabolic factors that increase during tissue activity and cause arteriolar vasodilation (active hyperemia).",
+    "accept": [
+     "Adenosine, K+, H+, and CO2",
+     "Decreased O2, increased CO2, H+, K+, and adenosine"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Vascular Smooth Muscle and Local Control of Blood Flow",
+   "q": "What is reactive hyperemia?",
+   "options": [
+    "Vasoconstriction of skin vessels upon exposure to cold air",
+    "A transient surge in tissue blood flow above baseline immediately after release of a temporary arterial occlusion",
+    "Progressive drop in blood pressure upon standing upright",
+    "Chronic collateral vessel growth over several months"
+   ],
+   "answer": 1,
+   "explain": "During temporary arterial occlusion (such as inflating a blood pressure cuff), hypoxia and vasodilator metabolites accumulate in the ischemic tissue, maximally dilating arterioles so flow surges transiently once occlusion is released.",
+   "verified": false,
+   "open": {
+    "q": "Define reactive hyperemia and explain its underlying mechanism.",
+    "accept": [
+     "Transient overshoot in blood flow after release of temporary arterial occlusion due to accumulation of vasodilator metabolites and hypoxia",
+     "Surge in blood flow following ischemia caused by local metabolic vasodilation"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-015",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Vascular Smooth Muscle and Local Control of Blood Flow",
+   "q": "How does the Bayliss myogenic mechanism contribute to the autoregulation of organ blood flow when arterial perfusion pressure rises abruptly?",
+   "options": [
+    "Endothelial stretch releases nitric oxide and dilates the arteriole",
+    "Sympathetic nerves relax vascular smooth muscle",
+    "Stretch of arteriolar smooth muscle promotes calcium entry and vasoconstriction, stabilising flow",
+    "Renin secretion stops completely within seconds"
+   ],
+   "answer": 2,
+   "explain": "Intrinsic to vascular smooth muscle (especially in renal, cerebral, and coronary arterioles), increased transmural pressure stretches smooth muscle membranes, causing depolarization, Ca2+ influx, and vasoconstriction so Flow = Pressure / Resistance remains constant.",
+   "verified": false,
+   "open": {
+    "q": "Explain the Bayliss myogenic response of arteriolar smooth muscle when arterial perfusion pressure suddenly increases.",
+    "accept": [
+     "Vascular stretch opens stretch-activated Ca2+ channels and depolarizes smooth muscle, causing vasoconstriction to maintain constant blood flow",
+     "Stretch-induced arteriolar constriction that keeps blood flow constant"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Endothelial Vasoactive Factors",
+   "q": "From which amino acid is endothelium-derived nitric oxide (NO) synthesized by endothelial nitric oxide synthase (eNOS), and which second messenger mediates its vasodilatory action in vascular smooth muscle?",
+   "options": [
+    "Tyrosine; cyclic AMP (cAMP)",
+    "Tryptophan; inositol trisphosphate (IP3)",
+    "Glutamate; diacylglycerol (DAG)",
+    "L-arginine; cyclic GMP (cGMP)"
+   ],
+   "answer": 3,
+   "explain": "Shear stress, acetylcholine, and bradykinin activate eNOS to convert L-arginine into NO + L-citrulline; NO diffuses into vascular smooth muscle, activates soluble guanylyl cyclase to raise cGMP, and stimulates myosin light-chain phosphatase to cause relaxation.",
+   "verified": false,
+   "open": {
+    "q": "Name the amino acid precursor of nitric oxide (NO) and the intracellular second messenger through which NO relaxes vascular smooth muscle.",
+    "accept": [
+     "L-arginine and cyclic GMP (cGMP)",
+     "Arginine; cGMP"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-017",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Endothelial Vasoactive Factors",
+   "q": "Which peptide synthesized by vascular endothelial cells is the most potent endogenous vasoconstrictor known?",
+   "options": [
+    "Endothelin-1 (ET-1)",
+    "Prostacyclin (PGI2)",
+    "Atrial natriuretic peptide (ANP)",
+    "Bradykinin"
+   ],
+   "answer": 0,
+   "explain": "Endothelin-1 is a 21-amino-acid peptide released by endothelial cells in response to vascular injury, hypoxia, angiotensin II, and thrombin; it binds ETA receptors on smooth muscle to cause potent, sustained vasoconstriction.",
+   "verified": false,
+   "open": {
+    "q": "Name the potent 21-amino-acid vasoconstrictor peptide produced by vascular endothelial cells.",
+    "accept": [
+     "Endothelin",
+     "ET-1",
+     "Endothelin-1"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-018",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Endothelial Vasoactive Factors",
+   "q": "When endothelial cells are denuded or damaged (for example, over an atherosclerotic plaque), why does intracoronary infusion of acetylcholine cause paradoxical vasoconstriction rather than vasodilation?",
+   "options": [
+    "Acetylcholine directly activates beta-2 receptors on vascular smooth muscle",
+    "Without endothelial NO release, acetylcholine can act directly on smooth muscle muscarinic receptors and cause constriction",
+    "Endothelial damage converts acetylcholine into angiotensin II",
+    "Damaged endothelium releases excess prostacyclin, causing constriction"
+   ],
+   "answer": 1,
+   "explain": "In healthy vessels, endothelial M3 activation stimulates eNOS to release NO, overriding smooth muscle constriction; when endothelium is absent, direct M3-Gq-IP3 activation on smooth muscle causes vasospasm.",
+   "verified": false,
+   "open": {
+    "q": "Why does acetylcholine cause vasoconstriction instead of vasodilation in blood vessels with damaged or denuded endothelium?",
+    "accept": [
+     "Loss of endothelial nitric oxide production unmasks direct M3 muscarinic contraction of vascular smooth muscle",
+     "Without endothelial NO release, acetylcholine directly stimulates smooth muscle M3 receptors to constrict"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-019",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
+   "q": "Where are the high-pressure arterial baroreceptors located, and which cranial nerves carry their afferent impulses to the nucleus tractus solitarius (NTS) in the medulla?",
+   "options": [
+    "Right atrium and venae cavae; vagus nerve only",
+    "Renal juxtaglomerular apparatus; hypoglossal nerve",
+    "Carotid sinus (via glossopharyngeal nerve, CN IX) and aortic arch (via vagus nerve, CN X)",
+    "Pulmonary alveoli; phrenic nerve"
+   ],
+   "answer": 2,
+   "explain": "Carotid sinus stretch receptors transmit via Hering's nerve to CN IX (glossopharyngeal), while aortic arch stretch receptors transmit via CN X (vagus) to the medullary NTS.",
+   "verified": false,
+   "open": {
+    "q": "Name the two anatomical locations of the high-pressure arterial baroreceptors and the cranial nerve innervating each.",
+    "accept": [
+     "Carotid sinus (CN IX / glossopharyngeal) and aortic arch (CN X / vagus)",
+     "Carotid sinus via CN IX and aortic arch via CN X"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
+   "q": "During an acute drop in arterial blood pressure (such as standing up rapidly or acute hemorrhage), how does the carotid sinus baroreceptor reflex restore blood pressure?",
+   "options": [
+    "Increased baroreceptor firing stimulates the nucleus ambiguus and inhibits the rostral ventrolateral medulla (RVLM)",
+    "Increased baroreceptor firing causes systemic vasodilation and bradycardia",
+    "Baroreceptors secrete norepinephrine directly into the carotid artery",
+    "Decreased baroreceptor stretch reduces afferent firing to the NTS, disinhibiting the RVLM to increase sympathetic vasoconstriction, contractility, and heart rate while reducing vagal tone"
+   ],
+   "answer": 3,
+   "explain": "Baroreceptors are tonically active at normal BP (~95 mmHg). A fall in BP decreases stretch and NTS firing, which reduces parasympathetic vagal output and disinhibits sympathetic vasomotor neurons in the RVLM, raising HR, SV, and TPR.",
+   "verified": false,
+   "open": {
+    "q": "Trace the neural pathway and autonomic changes of the baroreceptor reflex in response to an acute fall in arterial blood pressure.",
+    "accept": [
+     "Decreased baroreceptor stretch lowers CN IX/X firing to NTS, reducing vagal tone and disinhibiting RVLM sympathetic output to increase HR, contractility, and vasoconstriction",
+     "Reduced afferent firing to NTS increases sympathetic tone and decreases parasympathetic tone, raising HR and TPR"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
+   "q": "What is the CNS ischemic response (and Cushing reflex), and at what arterial pressure threshold does it become maximally activated?",
+   "options": [
+    "A powerful sympathetic response to severe cerebral ischaemia occurs as MAP falls markedly, with maximal activation at very low pressures",
+    "Reflex vasodilation occurs when MAP rises above 140 mmHg",
+    "Vagal slowing of the heart is the main response to mild exercise",
+    "Renal sodium excretion is triggered by reduced plasma osmolarity"
+   ],
+   "answer": 0,
+   "explain": "When brain perfusion is severely compromised (MAP under 60 mmHg, maximal at 15-20 mmHg) or intracranial pressure exceeds MAP (Cushing triad: hypertension, bradycardia, irregular respiration), local CO2/acidosis directly excites the medullary vasomotor center to drive extreme sympathetic vasoconstriction.",
+   "verified": false,
+   "open": {
+    "q": "What triggers the CNS ischemic response, and what is the clinical triad of the Cushing reflex caused by raised intracranial pressure?",
+    "accept": [
+     "Medullary ischemia/CO2 buildup (MAP < 60 mmHg); Cushing triad is hypertension, bradycardia, and irregular breathing",
+     "Brainstem hypoxia/hypercapnia; widened pulse pressure/hypertension, bradycardia, irregular respiration"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
+   "q": "Which enzyme converts inactive decapeptide angiotensin I into the potent octapeptide vasoconstrictor angiotensin II, and where is this enzyme most abundant?",
+   "options": [
+    "Renin; renal macula densa",
+    "Angiotensin-converting enzyme (ACE); luminal surface of pulmonary capillary endothelium",
+    "Chymase; adrenal medulla",
+    "Aldosterone synthase; zona glomerulosa"
+   ],
+   "answer": 1,
+   "explain": "Renin from juxtaglomerular granular cells cleaves hepatic angiotensinogen to angiotensin I; ACE on pulmonary vascular endothelial cells converts angiotensin I to angiotensin II (and also degrades bradykinin).",
+   "verified": false,
+   "open": {
+    "q": "Name the enzyme that converts angiotensin I to angiotensin II and the primary organ where this conversion occurs.",
+    "accept": [
+     "Angiotensin-converting enzyme (ACE) in the lungs (pulmonary capillary endothelium)",
+     "ACE; lungs"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
+   "q": "Which three stimuli directly trigger renin release from renal juxtaglomerular (JG) granular cells?",
+   "options": [
+    "High renal perfusion pressure, elevated macula densa NaCl delivery, and atrial natriuretic peptide",
+    "Hyperkalemia, high blood volume, and vagal stimulation",
+    "Reduced renal perfusion pressure (intrarenal baroreceptors), decreased NaCl delivery to the macula densa, and beta-1 adrenergic sympathetic stimulation",
+    "Elevated plasma angiotensin II, high aldosterone, and alkalosis"
+   ],
+   "answer": 2,
+   "explain": "JG cells release renin in response to: (1) reduced afferent arteriolar stretch, (2) low tubular Na+/Cl- sensed by macula densa cells (via PGE2/prostacyclin), and (3) renal sympathetic nerve activation of beta-1 receptors.",
+   "verified": false,
+   "open": {
+    "q": "State the three physiological stimuli that stimulate renin secretion from renal juxtaglomerular cells.",
+    "accept": [
+     "Decreased renal perfusion pressure, decreased NaCl delivery to macula densa, and beta-1 sympathetic stimulation",
+     "Low afferent arteriolar pressure, low macula densa NaCl, and sympathetic beta-1 activation"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-024",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
+   "q": "How does angiotensin II raise arterial blood pressure across both short-term and long-term time frames?",
+   "options": [
+    "Blocks aldosterone and promotes renal sodium excretion",
+    "Activates endothelial nitric oxide synthase and dilates systemic arterioles",
+    "Inhibits thirst and suppresses ADH release",
+    "Causes AT1-mediated vasoconstriction and promotes aldosterone, sodium retention, thirst and ADH release"
+   ],
+   "answer": 3,
+   "explain": "Angiotensin II acts on AT1 receptors to raise TPR immediately (vasoconstriction) and expand extracellular fluid volume over hours to days (aldosterone release, Na+/H+ exchange in proximal tubule, ADH release, and thirst).",
+   "verified": false,
+   "open": {
+    "q": "List three mechanisms by which angiotensin II increases arterial blood pressure.",
+    "accept": [
+     "Arteriolar vasoconstriction, stimulation of aldosterone secretion, and stimulation of ADH release/thirst",
+     "Vasoconstriction, increased renal sodium reabsorption, and aldosterone/ADH secretion"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-025",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
+   "q": "How does atrial natriuretic peptide (ANP), secreted by atrial myocytes in response to atrial stretch, lower blood volume and arterial pressure?",
+   "options": [
+    "Dilates afferent and constricts efferent arterioles, promotes natriuresis and suppresses RAAS",
+    "Constricts afferent arterioles and stimulates aldosterone",
+    "Activates alpha-1 receptors on systemic veins",
+    "Stimulates posterior pituitary vasopressin release"
+   ],
+   "answer": 0,
+   "explain": "ANP (and BNP) acts via particulate guanylyl cyclase (cGMP) to increase GFR, promote natriuresis and diuresis, relax vascular smooth muscle, and inhibit RAAS.",
+   "verified": false,
+   "open": {
+    "q": "Summarize the renal and vascular actions of atrial natriuretic peptide (ANP) when released in response to volume overload.",
+    "accept": [
+     "Increases GFR, promotes natriuresis/diuresis, causes vasodilation, and inhibits renin and aldosterone",
+     "Dilates afferent arterioles, increases sodium and water excretion, and suppresses RAAS"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-026",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
+   "q": "Why is the renal pressure natriuresis and diuresis mechanism considered the dominant long-term controller of arterial blood pressure?",
+   "options": [
+    "Because renal baroreceptors reset completely within 24 hours like carotid sinus baroreceptors",
+    "Because it does not adapt and continues adjusting renal salt and water excretion until extracellular fluid volume and arterial pressure return to the exact equilibrium set point",
+    "Because the kidneys secrete epinephrine directly into the renal vein",
+    "Because glomerular filtration rate drops to zero whenever MAP exceeds 100 mmHg"
+   ],
+   "answer": 1,
+   "explain": "Unlike neural baroreceptors that adapt within 1 to 2 days, the renal-body fluid pressure natriuresis curve maintains infinite gain over days to weeks: any sustained hypertension requires a rightward shift of the renal function curve.",
+   "verified": false,
+   "open": {
+    "q": "Explain why pressure natriuresis and diuresis governs long-term arterial blood pressure whereas the baroreceptor reflex only regulates short-term pressure.",
+    "accept": [
+     "Baroreceptors adapt within 1-2 days, whereas pressure natriuresis does not adapt and alters ECF volume until pressure returns to the renal equilibrium point",
+     "Pressure natriuresis has infinite long-term gain and lacks receptor adaptation"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-027",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Measurement of Arterial Blood Pressure",
+   "q": "What causes the Korotkoff sounds heard through a stethoscope over the brachial artery during auscultatory sphygmomanometry?",
+   "options": [
+    "Closure of the mitral and tricuspid heart valves",
+    "Laminar flow through a fully uncompressed brachial artery",
+    "Turbulent blood jets spurting through a partially compressed artery when cuff pressure lies between systolic and diastolic pressure",
+    "Contraction of the biceps brachii muscle beneath the cuff"
+   ],
+   "answer": 2,
+   "explain": "Above systolic pressure, the artery is occluded (silent); between systolic and diastolic pressure, intermittent turbulent spurts generate Korotkoff sounds (Phase I onset = systolic BP); below diastolic pressure, uninterrupted laminar flow resumes and sounds disappear (Phase V = diastolic BP).",
+   "verified": false,
+   "open": {
+    "q": "What physical phenomenon produces Korotkoff sounds during manual blood pressure measurement?",
+    "accept": [
+     "Turbulent blood flow spurting through a partially occluded artery when cuff pressure is between systolic and diastolic pressure",
+     "Intermittent turbulent flow through the compressed brachial artery"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-028",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Measurement of Arterial Blood Pressure",
+   "q": "Using an adult blood pressure cuff that is too narrow or too short for a patient with a large muscular or obese arm produces which measurement error?",
+   "options": [
+    "Falsely low blood pressure reading",
+    "No effect on systolic pressure, only zero diastolic pressure",
+    "Elimination of all Korotkoff sounds",
+    "Falsely high (overestimated) blood pressure reading because higher cuff inflation pressure is required to compress the deep brachial artery"
+   ],
+   "answer": 3,
+   "explain": "Cuff bladder width should be ~40% of arm circumference and length ~80%; an undersized cuff fails to transmit pressure effectively to the artery, artificially elevating both systolic and diastolic readings.",
+   "verified": false,
+   "open": {
+    "q": "What blood pressure measurement error occurs when a sphygmomanometer cuff is too small (narrow) for the patient's arm?",
+    "accept": [
+     "Falsely high blood pressure reading",
+     "Overestimation of blood pressure"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-029",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations: Hypertension and Shock",
+   "q": "A 34-year-old woman presents with severe resistant hypertension (BP 188/114 mmHg) and an abdominal bruit heard just to the left of the umbilicus. Renal angiography reveals 85% atherosclerotic stenosis of the left renal artery. Which hormonal cascade is driving her secondary renovascular hypertension?",
+   "options": [
+    "Activation of the renin-angiotensin-aldosterone system (RAAS) triggered by reduced perfusion pressure to the stenotic left kidney",
+    "Excessive secretion of atrial natriuretic peptide from the left atrium",
+    "Inhibition of sympathetic vasoconstrictor tone by the carotid sinus",
+    "Deficiency of posterior pituitary antidiuretic hormone"
+   ],
+   "answer": 0,
+   "explain": "Renal artery stenosis lowers perfusion pressure distal to the narrowing in the affected kidney, tricking its juxtaglomerular apparatus into secreting excess renin, which elevates angiotensin II and aldosterone to cause systemic hypertension.",
+   "verified": false,
+   "open": {
+    "q": "Explain the pathophysiological mechanism by which unilateral renal artery stenosis causes secondary systemic hypertension.",
+    "accept": [
+     "Reduced perfusion pressure distal to the stenosis stimulates renin release and activates the renin-angiotensin-aldosterone system",
+     "Hypoperfusion of the affected kidney activates RAAS"
+    ]
+   }
+  },
+  {
+   "id": "pc-arterial-pressure-and-peripheral-resistance-030",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Clinical Correlations: Hypertension and Shock",
+   "q": "A 26-year-old man presents with fever, urinary tract infection, warm flushed skin, bounding pulses, a blood pressure of 82/40 mmHg, and an elevated cardiac output of 9.2 L/min. Which hemodynamic abnormality is the primary cause of his hypotension in early septic shock?",
+   "options": [
+    "Severe primary left ventricular pump failure",
+    "Profound loss of total peripheral resistance due to widespread nitric oxide- and cytokine-mediated systemic vasodilation",
+    "Mechanical obstruction of the pulmonary trunk by a saddle embolus",
+    "Extreme arteriolar vasoconstriction raising afterload"
+   ],
+   "answer": 1,
+   "explain": "Septic shock is a distributive shock: bacterial endotoxins induce inducible nitric oxide synthase (iNOS) and inflammatory cytokines, causing massive arteriolar and venular vasodilation that drops TPR precipitously (MAP = CO x TPR) despite high early CO.",
+   "verified": false,
+   "open": {
+    "q": "What is the primary hemodynamic cause of hypotension in early distributive (septic) shock despite an elevated cardiac output?",
+    "accept": [
+     "Markedly decreased total peripheral resistance from widespread systemic vasodilation",
+     "Profound systemic vasodilation lowering TPR"
+    ]
+   }
+  }
+ ]
 }
