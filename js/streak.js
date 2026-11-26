@@ -57,10 +57,9 @@
     } else {
       d.textContent = item.message;
     }
-    /* Keep the toast below the responsive navigation bar instead of covering its links. */
-    var bar = document.querySelector(".bar");
-    if (bar) d.style.top = Math.max(12, Math.ceil(bar.getBoundingClientRect().bottom + 10)) + "px";
-    document.body.appendChild(d);
+    /* Use a reserved in-flow notification area between navigation and page content. */
+    var region = document.getElementById("toast-region");
+    (region || document.body).appendChild(d);
     setTimeout(function () { d.classList.add("out"); }, 3600);
     setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); next(); }, 4000);
   }
