@@ -30,6 +30,51 @@
       ],
       "answer": 0,
       "explain": "Glucagon acts on hepatocytes through cAMP-dependent signalling to stimulate glycogenolysis and gluconeogenesis while inhibiting glycogen synthesis. Glycogenolysis is an important early source of glucose during fasting."
+    },
+    {
+      "id": "pe-pancreas-NEW01",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Insulin secretion",
+      "q": "A rise in blood glucose stimulates insulin release from pancreatic beta cells. Which event directly triggers voltage-gated calcium-channel opening?",
+      "options": [
+        "Closure of ATP-sensitive potassium channels and membrane depolarisation",
+        "Opening of ATP-sensitive potassium channels and hyperpolarisation",
+        "Inhibition of glucose metabolism and reduced ATP production",
+        "Activation of chloride secretion into the islets"
+      ],
+      "answer": 0,
+      "explain": "Glucose metabolism raises the ATP/ADP ratio, closing ATP-sensitive K+ channels. Reduced K+ efflux depolarises the beta-cell membrane, opening voltage-gated Ca2+ channels and promoting insulin exocytosis.",
+      "verified": false,
+      "open": {
+        "q": "What sequence links increased beta-cell glucose metabolism to insulin exocytosis?",
+        "accept": [
+          "ATP rises, KATP channels close, the membrane depolarises, Ca2+ channels open and insulin is released"
+        ]
+      }
+    },
+    {
+      "id": "pe-pancreas-NEW02",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Glucagon",
+      "q": "A fasting patient has increased hepatic glucose output. Which intracellular second messenger is primarily increased when glucagon binds its hepatocyte receptor?",
+      "options": [
+        "cAMP",
+        "cGMP",
+        "IP3 alone",
+        "Intracellular chloride"
+      ],
+      "answer": 0,
+      "explain": "The hepatic glucagon receptor is Gs-coupled. Activation stimulates adenylyl cyclase, raises cAMP and activates protein kinase A, promoting glycogenolysis and gluconeogenesis.",
+      "verified": false,
+      "open": {
+        "q": "Which second messenger mediates much of glucagon's action in hepatocytes?",
+        "accept": [
+          "cAMP",
+          "Cyclic AMP"
+        ]
+      }
     }
   ]
 }
