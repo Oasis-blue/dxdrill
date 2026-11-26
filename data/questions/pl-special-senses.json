@@ -422,13 +422,13 @@
    "sub": "Vision: Visual Pathways, Field Defects, and Pupillary Light Reflex",
    "q": "Contrast the 'magnocellular (M-pathway)' and 'parvocellular (P-pathway)' streams from the retina through the lateral geniculate nucleus (LGN) to the visual cortex:",
    "options": [
-    "Magnocellular (LGN layers 1-2 -> dorsal 'where/how' parietal stream): large receptive fields, fast conduction, high contrast sensitivity, specialized for MOTION and depth detection; Parvocellular (LGN layers 3-6 -> ventral 'what' temporal stream): small receptive fields, slow conduction, specialized for fine spatial FORM and red-green COLOR vision",
+    "M: motion/depth, LGN layers 1–2 → dorsal stream; P: fine form/colour, layers 3–6 → ventral stream",
     "Magnocellular pathways process red-green color while parvocellular pathways detect rapid motion",
     "Both M and P pathways bypass the LGN and terminate in the cochlea",
     "Parvocellular layers are layers 1 and 2 of the LGN"
    ],
    "answer": 0,
-   "explain": "Remember: M = Motion / Magnocellular / LGN layers 1-2 -> Dorsal ('where'); P = Parvocellular / LGN layers 3-6 -> Ventral ('what': pattern, form, color).",
+   "explain": "Remember: M = Motion / Magnocellular / LGN layers 1-2 -> Dorsal ('where'); P = Parvocellular / LGN layers 3-6 -> Ventral ('what': pattern, form, color). Key detail: Magnocellular (LGN layers 1-2 -> dorsal 'where/how' parietal stream): large receptive fields, fast conduction, high contrast sensitivity, specialized for MOTION and depth detection; Parvocellular (LGN layers 3-6 -> ventral 'what' temporal stream): small receptive fields, slow conduction, specialized for fine spatial FORM and red-green COLOR vision.",
    "verified": false,
    "open": {
     "q": "Distinguish the functional specializations and cortical destinations (dorsal vs ventral streams) of the magnocellular and parvocellular visual pathways.",
@@ -629,13 +629,13 @@
    "sub": "Audition: Tonotopic Organization, Auditory Pathway, and Hearing Loss Tests",
    "q": "Trace the central ascending auditory pathway from the spiral ganglion to the primary auditory cortex ('E-COLI' mnemonic):",
    "options": [
-    "Spiral ganglion (CN VIII) -> dorsal & ventral cochlear nuclei (pontomedullary junction) -> bilateral superior olivary complexes (sound localization) -> lateral lemniscus -> inferior colliculus (midbrain) -> medial geniculate nucleus (MGN) of thalamus -> primary auditory cortex (Heschl's transverse temporal gyrus, Brodmann areas 41/42)",
+    "Cochlear nuclei → superior olive → lateral lemniscus → inferior colliculus → MGN → auditory cortex",
     "Spiral ganglion -> lateral geniculate nucleus -> calcarine sulcus of occipital lobe",
     "Spiral ganglion -> ventral posterolateral (VPL) nucleus -> postcentral gyrus",
     "Spiral ganglion -> olfactory bulb -> piriform cortex"
    ],
    "answer": 0,
-   "explain": "Because auditory projections cross bilaterally starting at the cochlear nuclei/superior olive, a unilateral cortical stroke in Heschl's gyrus causes bilateral difficulty localizing sounds rather than complete unilateral deafness!",
+   "explain": "Because auditory projections cross bilaterally starting at the cochlear nuclei/superior olive, a unilateral cortical stroke in Heschl's gyrus causes bilateral difficulty localizing sounds rather than complete unilateral deafness! Key detail: Spiral ganglion (CN VIII) -> dorsal & ventral cochlear nuclei (pontomedullary junction) -> bilateral superior olivary complexes (sound localization) -> lateral lemniscus -> inferior colliculus (midbrain) -> medial geniculate nucleus (MGN) of thalamus -> primary auditory cortex (Heschl's transverse temporal gyrus, Brodmann areas 41/42).",
    "verified": false,
    "open": {
     "q": "List the sequential central relay nuclei of the ascending auditory pathway from the cochlear nuclei to the primary auditory cortex.",
@@ -721,13 +721,13 @@
    "sub": "Vestibular System: Semicircular Canals, Otolith Organs, and Nystagmus",
    "q": "Contrast the adequate physiological stimuli detected by the 'semicircular canals' versus the 'otolith organs (utricle and saccule)':",
    "options": [
-    "Semicircular canals (anterior, posterior, horizontal): detect ANGULAR (rotational) head acceleration via endolymph inertial deflection of the cupula in the crista ampullaris; Otolith organs: detect LINEAR acceleration and static head tilt relative to gravity via CaCO3 otoconia shifting the otolithic membrane over the macula (utricle = horizontal plane; saccule = vertical plane)",
+    "Semicircular canals: angular acceleration; utricle/saccule: linear acceleration and tilt (horizontal/vertical)",
     "Semicircular canals detect static gravity while otolith organs detect rotational acceleration",
     "Utricle detects sound waves at 10 kHz while saccule detects sweet taste",
     "Both semicircular canals and otolith organs detect only constant-velocity linear motion"
    ],
    "answer": 0,
-   "explain": "Because endolymph catches up to the canal walls during constant-velocity spinning, semicircular canals respond strictly to angular ACCELERATION/DECELERATION, whereas weighted otoconia let the utricle and saccule sense static head tilt and linear acceleration.",
+   "explain": "Because endolymph catches up to the canal walls during constant-velocity spinning, semicircular canals respond strictly to angular ACCELERATION/DECELERATION, whereas weighted otoconia let the utricle and saccule sense static head tilt and linear acceleration. Key detail: Semicircular canals (anterior, posterior, horizontal): detect ANGULAR (rotational) head acceleration via endolymph inertial deflection of the cupula in the crista ampullaris; Otolith organs: detect LINEAR acceleration and static head tilt relative to gravity via CaCO3 otoconia shifting the otolithic membrane over the macula (utricle = horizontal plane; saccule = vertical plane).",
    "verified": false,
    "open": {
     "q": "Contrast the stimuli detected by the semicircular canals versus the utricle and saccule, specifying the plane of orientation of each otolith organ.",
@@ -744,13 +744,13 @@
    "sub": "Vestibular System: Semicircular Canals, Otolith Organs, and Nystagmus",
    "q": "How does turning the head horizontally to the LEFT affect hair cell firing in the left versus right horizontal semicircular canals, and how does the 'vestibulo-ocular reflex (VOR)' keep your gaze fixed on a target?",
    "options": [
-    "Turning the head LEFT causes endolymph inertia to lag to the right, bending stereocilia TOWARD the kinocilium in the LEFT horizontal canal (DEPOLARIZING/exciting left CN VIII afferents) and AWAY from the kinocilium in the RIGHT horizontal canal (HYPERPOLARIZING/inhibiting right CN VIII afferents), driving conjugate compensatory eye rotation to the RIGHT at equal speed",
+    "Left head turn excites the left horizontal canal, inhibits the right; the VOR drives the eyes right",
     "Turning the head left inhibits both horizontal semicircular canals equally",
     "The VOR rotates the eyes in the exact same direction (left) as the head turn",
     "In the horizontal semicircular canal, stereocilia bend away from the kinocilium to cause depolarization"
    ],
    "answer": 0,
-   "explain": "In the horizontal semicircular canals, kinocilia sit on the utricular side; turning the head left deflects the cupula toward the utricle on the left (excitation) and away from the utricle on the right (inhibition), driving conjugate rightward eye movement.",
+   "explain": "In the horizontal semicircular canals, kinocilia sit on the utricular side; turning the head left deflects the cupula toward the utricle on the left (excitation) and away from the utricle on the right (inhibition), driving conjugate rightward eye movement. Key detail: Turning the head LEFT causes endolymph inertia to lag to the right, bending stereocilia TOWARD the kinocilium in the LEFT horizontal canal (DEPOLARIZING/exciting left CN VIII afferents) and AWAY from the kinocilium in the RIGHT horizontal canal (HYPERPOLARIZING/inhibiting right CN VIII afferents), driving conjugate compensatory eye rotation to the RIGHT at equal speed.",
    "verified": false,
    "open": {
     "q": "Explain how turning the head horizontally to the left alters vestibular hair cell firing in the left vs right horizontal semicircular canals and produces the vestibulo-ocular reflex.",
@@ -859,13 +859,13 @@
    "sub": "Gustation (Taste) and Olfaction (Smell) Transduction and Pathways",
    "q": "What is the intracellular signal transduction cascade in olfactory cilia when an odorant binds to an 'olfactory G-protein-coupled receptor'?",
    "options": [
-    "Odorant binds GPCR -> activates G-olf -> stimulates adenylyl cyclase III -> increases intracellular cAMP -> opens cAMP-gated Na+/Ca2+ channels -> Ca2+ influx opens Ca2+-activated Cl- channels (ANO2), causing Cl- EFFLUX (because olfactory cilia maintain high intracellular Cl-) and strong depolarization",
+    "Odorant → Golf → adenylyl cyclase III → cAMP → cation influx → Ca2+-activated Cl− efflux",
     "Odorant closes Na+ channels and hyperpolarizes the olfactory neuron",
     "Odorant activates cGMP phosphodiesterase to lower cGMP",
     "Odorant binds directly to voltage-gated K+ channels to hyperpolarize the cell"
    ],
    "answer": 0,
-   "explain": "A unique amplifier in olfactory transduction is Ca2+-activated Cl- EFFLUX: because olfactory cilia accumulate high intracellular Cl- via NKCC1, opening Cl- channels lets negatively charged Cl- exit, boosting depolarization!",
+   "explain": "A unique amplifier in olfactory transduction is Ca2+-activated Cl- EFFLUX: because olfactory cilia accumulate high intracellular Cl- via NKCC1, opening Cl- channels lets negatively charged Cl- exit, boosting depolarization! Key detail: Odorant binds GPCR -> activates G-olf -> stimulates adenylyl cyclase III -> increases intracellular cAMP -> opens cAMP-gated Na+/Ca2+ channels -> Ca2+ influx opens Ca2+-activated Cl- channels (ANO2), causing Cl- EFFLUX (because olfactory cilia maintain high intracellular Cl-) and strong depolarization.",
    "verified": false,
    "open": {
     "q": "Trace the intracellular signaling cascade in olfactory receptor cilia from odorant binding to membrane depolarization, highlighting the unusual role of chloride ions.",
@@ -1088,13 +1088,13 @@
    "sub": "Clinical Correlations",
    "q": "A 66-year-old man with diabetes and hypertension wakes up with double vision (diplopia). On exam, his right eye is deviated 'down and out' with severe right upper lid ptosis, YET both pupils are 3 mm and constrict briskly to light. Why is the pupil spared in diabetic CN III ischemia compared with a posterior communicating artery (PCom) aneurysm?",
    "options": [
-    "Preganglionic parasympathetic pupillomotor fibers travel superficially on the outer periphery of CN III (nourished by pial vessels, so they are compressed early by an external PCom aneurysm), whereas microvascular diabetes infarcts the central vasa nervorum core of CN III, sparing the superficial pupillary fibers",
+    "Diabetes causes central CN III ischaemia; a PCom aneurysm compresses superficial parasympathetic fibres",
     "Parasympathetic pupillary fibers travel inside the optic nerve",
     "Diabetic neuropathy selectively destroys only the superior oblique muscle",
     "PCom aneurysms never affect the oculomotor nerve"
    ],
    "answer": 0,
-   "explain": "Surgical compression (PCom aneurysm, uncal herniation) hits superficial parasympathetic fibers early -> 'pupil-blown' CN III palsy; medical microvascular ischemia (diabetes, hypertension) damages central somatic motor fibers -> 'pupil-sparing' CN III palsy.",
+   "explain": "Surgical compression (PCom aneurysm, uncal herniation) hits superficial parasympathetic fibers early -> 'pupil-blown' CN III palsy; medical microvascular ischemia (diabetes, hypertension) damages central somatic motor fibers -> 'pupil-sparing' CN III palsy. Key detail: Preganglionic parasympathetic pupillomotor fibers travel superficially on the outer periphery of CN III (nourished by pial vessels, so they are compressed early by an external PCom aneurysm), whereas microvascular diabetes infarcts the central vasa nervorum core of CN III, sparing the superficial pupillary fibers.",
    "verified": false,
    "open": {
     "q": "Explain anatomically why diabetic microvascular oculomotor (CN III) palsy typically spares the pupil whereas a posterior communicating artery aneurysm causes a dilated, unreactive pupil.",
@@ -1226,13 +1226,13 @@
    "sub": "Vision: Visual Pathways, Field Defects, and Pupillary Light Reflex",
    "q": "What is 'stereopsis (binocular depth perception)', and how do 'binocular disparity-tuned neurons' in the primary visual cortex (V1) compute it?",
    "options": [
-    "Because the two eyes are separated horizontally by ~6.5 cm, slightly different 2D retinal images fall on non-corresponding points of the left and right retinas ('binocular/retinal disparity'); ocular dominance columns converge onto binocular V1 neurons tuned to specific horizontal disparities to construct 3D depth",
+    "Retinal disparity is integrated by binocular V1 neurons to encode stereoscopic depth",
     "Stereopsis depends solely on the size of the pupil in one eye",
     "Binocular disparity occurs only when one eye is closed",
     "Stereopsis is computed in the medial geniculate nucleus"
    ],
    "answer": 0,
-   "explain": "Stereopsis requires overlapping binocular visual fields (central ~120 degrees) and precise ocular alignment; childhood strabismus disrupts binocular V1 column development and abolishes stereopsis (amblyopia).",
+   "explain": "Stereopsis requires overlapping binocular visual fields (central ~120 degrees) and precise ocular alignment; childhood strabismus disrupts binocular V1 column development and abolishes stereopsis (amblyopia). Key detail: Because the two eyes are separated horizontally by ~6.5 cm, slightly different 2D retinal images fall on non-corresponding points of the left and right retinas ('binocular/retinal disparity'); ocular dominance columns converge onto binocular V1 neurons tuned to specific horizontal disparities to construct 3D depth.",
    "verified": false,
    "open": {
     "q": "Explain the optical and cortical basis of stereopsis (true binocular 3D depth perception).",
@@ -1318,13 +1318,13 @@
    "sub": "Audition: Tonotopic Organization, Auditory Pathway, and Hearing Loss Tests",
    "q": "How does the 'volley principle' (phase-locking) complement 'place coding' to encode low-frequency sounds (<500-4,000 Hz) in auditory nerve fibers?",
    "options": [
-    "Because individual spiral ganglion neurons have a refractory period limiting single-fiber firing to <1,000 Hz, groups of auditory nerve fibers fire phase-locked in alternating 'volleys' on successive cycles of a low-frequency sound wave, encoding pitch temporally alongside apical basilar membrane place coding",
+    "Phase-locked volleys across auditory fibres encode low-frequency pitch beyond single-fibre firing limits",
     "A single auditory nerve fiber fires at 20,000 Hz continuously without a refractory period",
     "Low frequencies are encoded solely by closing the Eustachian tube",
     "Volley coding operates only above 18,000 Hz"
    ],
    "answer": 0,
-   "explain": "Place coding dominates at high frequencies (>4 kHz), whereas both place coding and temporal phase-locking ('volley principle') encode low-to-mid frequencies.",
+   "explain": "Place coding dominates at high frequencies (>4 kHz), whereas both place coding and temporal phase-locking ('volley principle') encode low-to-mid frequencies. Key detail: Because individual spiral ganglion neurons have a refractory period limiting single-fiber firing to <1,000 Hz, groups of auditory nerve fibers fire phase-locked in alternating 'volleys' on successive cycles of a low-frequency sound wave, encoding pitch temporally alongside apical basilar membrane place coding.",
    "verified": false,
    "open": {
     "q": "Explain how the 'volley principle' enables auditory nerve fibers to encode sound frequencies higher than an individual neuron's maximum firing rate.",
@@ -1410,13 +1410,13 @@
    "sub": "Vision: Optics, Refraction, Accommodation, and Refractive Errors",
    "q": "How do 'cataracts' impair vision, and what are the most common risk factors?",
    "options": [
-    "Painless, progressive opacification/clouding of the crystalline lens proteins (crystallins) causing blurred vision, glare/halos at night, and loss of red reflex; major risk factors include aging, UV-B sunlight exposure, smoking, diabetes mellitus (sorbitol accumulation via aldose reductase), and chronic corticosteroid use",
+    "Lens protein opacification causes painless progressive blur, glare and loss of the red reflex",
     "Acute painful elevation of intraocular pressure to 60 mmHg",
     "Autoimmune demyelination of the optic chiasm",
     "Excessive tear secretion from the lacrimal gland"
    ],
    "answer": 0,
-   "explain": "In diabetes mellitus and galactosemia, aldose reductase converts excess glucose/galactose into osmotic sorbitol/galactitol inside lens fibers, drawing in water and causing osmotic cataract formation.",
+   "explain": "In diabetes mellitus and galactosemia, aldose reductase converts excess glucose/galactose into osmotic sorbitol/galactitol inside lens fibers, drawing in water and causing osmotic cataract formation. Key detail: Painless, progressive opacification/clouding of the crystalline lens proteins (crystallins) causing blurred vision, glare/halos at night, and loss of red reflex; major risk factors include aging, UV-B sunlight exposure, smoking, diabetes mellitus (sorbitol accumulation via aldose reductase), and chronic corticosteroid use.",
    "verified": false,
    "open": {
     "q": "Define cataract and explain the osmotic mechanism by which diabetes mellitus accelerates cataract formation.",
@@ -1456,13 +1456,13 @@
    "sub": "Audition: Cochlear Mechanics, Organ of Corti, and Hair Cell Transduction",
    "q": "What are 'Otoacoustic Emissions (OAEs)', which cells generate them, and how are they used clinically?",
    "options": [
-    "Low-intensity acoustic sounds generated by prestin-driven electromotile contractions of healthy cochlear OUTER HAIR CELLS and measured by a sensitive microphone in the ear canal; used as a rapid, objective newborn hearing screening test (absent OAEs indicate outer hair cell or middle ear dysfunction)",
+    "Prestin-driven outer hair-cell motility generates otoacoustic emissions, used in newborn hearing screening",
     "Sounds produced by vocal cord vibration during snoring",
     "Electrical spikes recorded from the primary visual cortex",
     "Clicks generated by the temporomandibular joint"
    ],
    "answer": 0,
-   "explain": "Because otoacoustic emissions depend on intact middle ear conduction and functioning outer hair cells, passing OAE screening rules out significant cochlear outer hair cell hearing loss in newborns.",
+   "explain": "Because otoacoustic emissions depend on intact middle ear conduction and functioning outer hair cells, passing OAE screening rules out significant cochlear outer hair cell hearing loss in newborns. Key detail: Low-intensity acoustic sounds generated by prestin-driven electromotile contractions of healthy cochlear OUTER HAIR CELLS and measured by a sensitive microphone in the ear canal; used as a rapid, objective newborn hearing screening test (absent OAEs indicate outer hair cell or middle ear dysfunction).",
    "verified": false,
    "open": {
     "q": "Which cochlear cells generate otoacoustic emissions (OAEs) and what is their major clinical application?",
@@ -1479,13 +1479,13 @@
    "sub": "Gustation (Taste) and Olfaction (Smell) Transduction and Pathways",
    "q": "How does 'olfactory receptor combinatorial coding' allow humans with ~350-400 functional olfactory receptor genes to discriminate tens of thousands of distinct odors?",
    "options": [
-    "Each olfactory sensory neuron expresses only ONE olfactory receptor gene type, and all neurons expressing that receptor converge onto the same pair of glomeruli in the olfactory bulb; a single odorant molecule activates a unique combination of multiple receptor types with varying affinities, generating a distinct spatial glomerular 'odor map'",
+    "One receptor type per neuron; each odour activates a unique combination of olfactory glomeruli",
     "Humans possess 100,000 different olfactory lobes in the cerebellum",
     "Each odorant activates only a single receptor with zero overlap",
     "Olfactory discrimination relies solely on temperature differences in nasal airflow"
    ],
    "answer": 0,
-   "explain": "Linda Buck and Richard Axel won the 2004 Nobel Prize for discovering this 'one-neuron-one-receptor' rule and combinatorial glomerular coding in the olfactory system.",
+   "explain": "Linda Buck and Richard Axel won the 2004 Nobel Prize for discovering this 'one-neuron-one-receptor' rule and combinatorial glomerular coding in the olfactory system. Key detail: Each olfactory sensory neuron expresses only ONE olfactory receptor gene type, and all neurons expressing that receptor converge onto the same pair of glomeruli in the olfactory bulb; a single odorant molecule activates a unique combination of multiple receptor types with varying affinities, generating a distinct spatial glomerular 'odor map'.",
    "verified": false,
    "open": {
     "q": "Explain the 'one-neuron-one-receptor' rule and how combinatorial coding enables ~400 olfactory receptor types to distinguish thousands of smells.",
@@ -1847,13 +1847,13 @@
    "sub": "Vision: Optics, Refraction, Accommodation, and Refractive Errors",
    "q": "What is the 'blind spot (Mariotte's spot)' in the visual field, and why are we normally unaware of it during everyday monocular or binocular vision?",
    "options": [
-    "A physiological scotoma ~15 degrees temporal to the point of fixation corresponding to the photoreceptor-free optic disc (nasal retina); we do not notice it because the opposite eye's visual field overlaps it during binocular viewing AND the visual cortex perceptually 'fills in' the gap using surrounding surface patterns",
+    "The optic disc creates a temporal visual-field scotoma, masked by fellow-eye overlap and cortical fill-in",
     "A blind area directly in the center of the fovea caused by blood vessels",
     "An area of complete blindness covering the entire upper visual field",
     "A region of the cornea lacking epithelial cells"
    ],
    "answer": 0,
-   "explain": "Because the optic disc lies ~15 degrees nasal to the fovea on the retina, optical inversion projects the physiological blind spot ~15 degrees temporal to fixation in each eye's visual field.",
+   "explain": "Because the optic disc lies ~15 degrees nasal to the fovea on the retina, optical inversion projects the physiological blind spot ~15 degrees temporal to fixation in each eye's visual field. Key detail: A physiological scotoma ~15 degrees temporal to the point of fixation corresponding to the photoreceptor-free optic disc (nasal retina); we do not notice it because the opposite eye's visual field overlaps it during binocular viewing AND the visual cortex perceptually 'fills in' the gap using surrounding surface patterns.",
    "verified": false,
    "open": {
     "q": "State the anatomical location of the physiological blind spot on the retina, its position in the visual field relative to fixation, and why it goes unnoticed.",
@@ -1893,13 +1893,13 @@
    "sub": "Vision: Visual Pathways, Field Defects, and Pupillary Light Reflex",
    "q": "What is 'blindsight' following unilateral destruction of the primary visual cortex (V1)?",
    "options": [
-    "Patients report complete conscious blindness in the contralateral hemifield, yet can accurately point to, reach for, or guess the direction of moving stimuli presented in their blind hemifield via intact subcortical projections from the retina to the superior colliculus and pulvinar -> extrastriate visual cortex (V5/MT)",
+    "V1 damage causes conscious field blindness but preserves unconscious subcortical visual guidance",
     "Ability to see in total darkness without any photons",
     "Complete restoration of 20/10 reading acuity after bilateral occipital removal",
     "Ability to hear colors through the medial geniculate nucleus"
    ],
    "answer": 0,
-   "explain": "Blindsight demonstrates that subcortical retinotectal (superior colliculus -> pulvinar -> extrastriate motion cortex) pathways guide unconscious visuomotor localization even when conscious V1 perception is lost.",
+   "explain": "Blindsight demonstrates that subcortical retinotectal (superior colliculus -> pulvinar -> extrastriate motion cortex) pathways guide unconscious visuomotor localization even when conscious V1 perception is lost. Key detail: Patients report complete conscious blindness in the contralateral hemifield, yet can accurately point to, reach for, or guess the direction of moving stimuli presented in their blind hemifield via intact subcortical projections from the retina to the superior colliculus and pulvinar -> extrastriate visual cortex (V5/MT).",
    "verified": false,
    "open": {
     "q": "Define blindsight and name the subcortical visual pathway that mediates unconscious visuomotor localization when primary visual cortex (V1) is destroyed.",
@@ -1916,13 +1916,13 @@
    "sub": "Audition: Tympanic Membrane, Ossicles, and Impedance Matching",
    "q": "Compare 'air conduction' and 'bone conduction' of sound to the cochlea:",
    "options": [
-    "Air conduction (normally ~2x more sensitive/longer-lasting than bone conduction) transmits airborne sound waves via the pinna, external auditory canal, tympanic membrane, and ossicular chain to the oval window; Bone conduction transmits skull vibrations directly through the temporal bone to the cochlea, bypassing the external and middle ear",
+    "Air conduction uses the tympanic membrane/ossicles; bone conduction transmits skull vibration directly to the cochlea",
     "Bone conduction is normally three times louder than air conduction in healthy ears",
     "Air conduction bypasses the tympanic membrane and ossicles completely",
     "Bone conduction requires an intact stapes footplate to vibrate"
    ],
    "answer": 0,
-   "explain": "Because bone conduction bypasses the external ear canal, tympanic membrane, and ossicles, preserved bone conduction with reduced air conduction (Rinne negative, BC > AC) diagnoses conductive hearing loss.",
+   "explain": "Because bone conduction bypasses the external ear canal, tympanic membrane, and ossicles, preserved bone conduction with reduced air conduction (Rinne negative, BC > AC) diagnoses conductive hearing loss. Key detail: Air conduction (normally ~2x more sensitive/longer-lasting than bone conduction) transmits airborne sound waves via the pinna, external auditory canal, tympanic membrane, and ossicular chain to the oval window; Bone conduction transmits skull vibrations directly through the temporal bone to the cochlea, bypassing the external and middle ear.",
    "verified": false,
    "open": {
     "q": "Explain why bone conduction remains intact while air conduction is reduced in conductive hearing loss.",
@@ -1939,13 +1939,13 @@
    "sub": "Audition: Cochlear Mechanics, Organ of Corti, and Hair Cell Transduction",
    "q": "How do 'tip links' and 'myosin motors' in cochlear hair cell stereocilia maintain optimal mechanotransduction sensitivity ('adaptation')?",
    "options": [
-    "Cadherin-23/protocadherin-15 tip links connect shorter stereocilia to taller adjacent stereocilia; during sustained deflection, Ca2+ influx through open MET channels triggers myosin-1c/VIIa motors to slip down the actin core, relaxing tip-link tension so the channel can respond to new high-frequency oscillations",
+    "Tip links gate MET channels; Ca2+-dependent myosin adaptation resets their tension",
     "Tip links are myelinated axons that conduct action potentials to the brainstem",
     "Myosin motors contract the tympanic membrane",
     "Tip links dissolve permanently after every single sound wave"
    ],
    "answer": 0,
-   "explain": "Fast Ca2+-dependent myosin adaptation resets the resting tension of stereociliary tip links within milliseconds so hair cells can track vibrations up to 20,000 Hz.",
+   "explain": "Fast Ca2+-dependent myosin adaptation resets the resting tension of stereociliary tip links within milliseconds so hair cells can track vibrations up to 20,000 Hz. Key detail: Cadherin-23/protocadherin-15 tip links connect shorter stereocilia to taller adjacent stereocilia; during sustained deflection, Ca2+ influx through open MET channels triggers myosin-1c/VIIa motors to slip down the actin core, relaxing tip-link tension so the channel can respond to new high-frequency oscillations.",
    "verified": false,
    "open": {
     "q": "Describe the structural role of stereociliary 'tip links' in hair cell mechanotransduction.",
@@ -2008,13 +2008,13 @@
    "sub": "Gustation (Taste) and Olfaction (Smell) Transduction and Pathways",
    "q": "How do 'retronasal olfaction' and 'gustation' combine to produce the perception of food 'flavor'?",
    "options": [
-    "Volatile aroma molecules released from warm food in the mouth travel upward behind the soft palate through the nasopharynx to stimulate the olfactory epithelium (retronasal olfaction), integrating with gustatory (taste) and trigeminal texture/temperature inputs in the orbitofrontal cortex—which is why a nasal cold makes food seem 'tasteless'",
+    "Retronasal aroma combines with taste and trigeminal input to create flavour",
     "Taste buds on the tongue detect 10,000 different volatile aromas directly",
     "The Eustachian tube carries food particles to the olfactory bulb",
     "Flavor is processed exclusively in the spinal dorsal horn"
    ],
    "answer": 0,
-   "explain": "What patients call 'loss of taste' during viral rhinitis or COVID-19 is almost always loss of retronasal olfaction (anosmia), while true sweet/salty/sour/bitter/umami tongue sensation remains intact.",
+   "explain": "What patients call 'loss of taste' during viral rhinitis or COVID-19 is almost always loss of retronasal olfaction (anosmia), while true sweet/salty/sour/bitter/umami tongue sensation remains intact. Key detail: Volatile aroma molecules released from warm food in the mouth travel upward behind the soft palate through the nasopharynx to stimulate the olfactory epithelium (retronasal olfaction), integrating with gustatory (taste) and trigeminal texture/temperature inputs in the orbitofrontal cortex—which is why a nasal cold makes food seem 'tasteless'.",
    "verified": false,
    "open": {
     "q": "Explain why patients with nasal congestion or viral anosmia report that food 'has no taste' even when their lingual taste buds are intact.",
@@ -2192,13 +2192,13 @@
    "sub": "Clinical Correlations",
    "q": "A 65-year-old man is brought to the emergency department comatose after a brainstem hemorrhage. When the physician irrigates his right external auditory canal with ice-cold water, BOTH eyes deviate slowly and conjugately to the RIGHT and remain stuck looking right without any fast corrective beat back to the left. What does this tell you about his brainstem versus cerebral cortex?",
    "options": [
-    "His brainstem VOR pathways (CN VIII -> vestibular nuclei -> PPRF/MLF -> CN VI & CN III) are INTACT (producing the tonic slow drift toward the cold-irrigated ear), whereas his cerebral cortex/frontal eye fields are suppressed by coma (eliminating the fast cortical corrective saccade)",
+    "Cold calorics cause slow eye deviation toward the irrigated ear; absent fast phase suggests cortical coma with intact brainstem VOR",
     "His entire brainstem is completely dead",
     "He is awake and feigning coma",
     "His right optic nerve is transected"
    ],
    "answer": 0,
-   "explain": "Tonic conjugate eye deviation toward cold water without a fast corrective phase confirms intact brainstem oculomotor/vestibular circuitry alongside diffuse cortical coma.",
+   "explain": "Tonic conjugate eye deviation toward cold water without a fast corrective phase confirms intact brainstem oculomotor/vestibular circuitry alongside diffuse cortical coma. Key detail: His brainstem VOR pathways (CN VIII -> vestibular nuclei -> PPRF/MLF -> CN VI & CN III) are INTACT (producing the tonic slow drift toward the cold-irrigated ear), whereas his cerebral cortex/frontal eye fields are suppressed by coma (eliminating the fast cortical corrective saccade).",
    "verified": false,
    "open": {
     "q": "Interpret the finding when cold caloric irrigation of the right ear in a comatose patient produces tonic conjugate eye deviation to the right without a fast corrective nystagmus phase.",
@@ -2238,13 +2238,13 @@
    "sub": "Vision: Visual Pathways, Field Defects, and Pupillary Light Reflex",
    "q": "What is 'hemianopic macular splitting' versus 'macular sparing', and why does a lesion of the right optic tract cause macular splitting whereas a right PCA occipital infarct often shows macular sparing?",
    "options": [
-    "In the optic tract, macular and peripheral fibers from the left visual hemifield run tightly intermingled without dual blood supply (so a tract lesion splits the macula cleanly down the vertical midline); in the occipital cortex, the large macular representation at the occipital pole receives dual perfusion from both the PCA and MCA",
+    "Optic tract lesions split the macula; dual PCA/MCA supply to the occipital pole can spare it",
     "The optic tract contains only rod axons from the far periphery",
     "Macular fibers cross twice in the corpus callosum",
     "The occipital lobe has zero blood vessels"
    ],
    "answer": 0,
-   "explain": "Macular sparing is a hallmark localizing feature of occipital cortical (PCA) strokes versus optic tract or LGN lesions.",
+   "explain": "Macular sparing is a hallmark localizing feature of occipital cortical (PCA) strokes versus optic tract or LGN lesions. Key detail: In the optic tract, macular and peripheral fibers from the left visual hemifield run tightly intermingled without dual blood supply (so a tract lesion splits the macula cleanly down the vertical midline); in the occipital cortex, the large macular representation at the occipital pole receives dual perfusion from both the PCA and MCA.",
    "verified": false,
    "open": {
     "q": "Explain why an optic tract lesion causes macular splitting whereas a Posterior Cerebral Artery occipital stroke commonly exhibits macular sparing.",
@@ -2604,13 +2604,13 @@
    "sub": "Vestibular System: Semicircular Canals, Otolith Organs, and Nystagmus",
    "q": "How do the 'vestibulospinal tracts' (lateral and medial) use otolith and semicircular canal inputs to prevent falling when you trip?",
    "options": [
-    "When the head tilts suddenly, otolith and canal afferents excite the lateral vestibular nucleus (Deiters'), which drives the ipsilateral lateral vestibulospinal tract to strongly excite antigravity limb extensor motor neurons on the side of tilt while the medial vestibulospinal tract stabilizes head position via neck muscles",
+    "Lateral vestibulospinal: ipsilateral extensor tone; medial vestibulospinal: head/neck stabilisation",
     "Vestibulospinal tracts inhibit all limb extensors so the person collapses immediately",
     "Vestibulospinal tracts project exclusively to the primary visual cortex",
     "Otolith organs inhibit the diaphragm during standing"
    ],
    "answer": 0,
-   "explain": "Rapid otolith-vestibulospinal extensor reflexes extend the ipsilateral limb to catch your weight before conscious cortical awareness even registers a stumble.",
+   "explain": "Rapid otolith-vestibulospinal extensor reflexes extend the ipsilateral limb to catch your weight before conscious cortical awareness even registers a stumble. Key detail: When the head tilts suddenly, otolith and canal afferents excite the lateral vestibular nucleus (Deiters'), which drives the ipsilateral lateral vestibulospinal tract to strongly excite antigravity limb extensor motor neurons on the side of tilt while the medial vestibulospinal tract stabilizes head position via neck muscles.",
    "verified": false,
    "open": {
     "q": "State the functional roles of the lateral vestibulospinal tract and medial vestibulospinal tract in postural balance.",
@@ -2719,13 +2719,13 @@
    "sub": "Clinical Correlations",
    "q": "A 7-year-old child with congenital bilateral profound sensorineural deafness due to non-functional cochlear hair cells is evaluated for a 'cochlear implant'. How does a cochlear implant restore auditory perception?",
    "options": [
-    "An external microphone and speech processor convert sound into frequency-filtered electrical pulses delivered directly via a tonotopically arranged electrode array inserted into the scala tympani to stimulate intact spiral ganglion (CN VIII) nerve fibers directly, bypassing damaged hair cells",
+    "A cochlear electrode array stimulates spiral ganglion neurons, bypassing damaged hair cells",
     "It amplifies airborne sound waves by 200 dB against the tympanic membrane",
     "It replaces the cerebellar dentate nucleus",
     "It stimulates the optic nerve to convert light into sound"
    ],
    "answer": 0,
-   "explain": "Because a cochlear implant directly depolarizes spiral ganglion neurons along the tonotopic axis of the cochlea, it requires an intact auditory nerve (CN VIII) to succeed.",
+   "explain": "Because a cochlear implant directly depolarizes spiral ganglion neurons along the tonotopic axis of the cochlea, it requires an intact auditory nerve (CN VIII) to succeed. Key detail: An external microphone and speech processor convert sound into frequency-filtered electrical pulses delivered directly via a tonotopically arranged electrode array inserted into the scala tympani to stimulate intact spiral ganglion (CN VIII) nerve fibers directly, bypassing damaged hair cells.",
    "verified": false,
    "open": {
     "q": "Explain how a cochlear implant bypasses damaged cochlear hair cells and which neural structure it stimulates directly.",
