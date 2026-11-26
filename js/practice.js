@@ -25,7 +25,19 @@
     if (sc.kind === "topic") return DX.topicById[sc.id].name;
     return "";
   }
-  function subOf(q) { return q.sub || DX.topicById[q.topic].name; }
+  function subOf(q) { return q.sub || (DX.topicById[q.topic] && DX.topicById[q.topic].name) || "Medical topic"; }
+  function mediaContext(q) {
+    var topic = DX.topicById[q.topic], area = DX.areaById[q.area], subject = DX.subjectById[q.subject];
+    return {
+      question: q.q || "",
+      correctAnswer: q.options && q.options[q.answer] || "",
+      explanation: q.explain || "",
+      topic: subOf(q),
+      curriculumTopic: topic && topic.name || "",
+      area: area && area.name || "",
+      subject: subject && subject.name || ""
+    };
+  }
   function unique(a) { return a.filter(function (x, i) { return a.indexOf(x) === i; }); }
 
   /* ---------- picker ---------- */
@@ -241,7 +253,7 @@
     var a = b.getAttribute("data-act");
     if (a === "media") {
       var item = P.run && P.run.items[P.run.i], target = document.getElementById("dx-media-results");
-      if (item && target && DX.media) DX.media.render(target, subOf(item.q));
+      if (item && target && DX.media) DX.media.render(target, mediaContext(item.q));
     } else if (a === "rep-open") { P.report = { id: b.getAttribute("data-id"), status: "form", reason: "wrong_answer", note: "" }; keepScroll(); }
     else if (a === "rep-cancel") { P.report = null; keepScroll(); }
     else if (a === "rep-send") {
