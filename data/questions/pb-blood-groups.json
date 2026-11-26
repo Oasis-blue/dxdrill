@@ -1,0 +1,35 @@
+{
+  "topic": "pb-blood-groups",
+  "questions": [
+    {
+      "id": "pb-blood-groups-001",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ABO compatibility",
+      "q": "A patient with blood group A is mistakenly transfused with group B red cells. Which antibody-mediated reaction is most likely?",
+      "options": [
+        "Recipient anti-B IgM binds donor red-cell B antigen and causes intravascular haemolysis",
+        "Recipient anti-A IgG binds donor red-cell A antigen without complement activation",
+        "Donor anti-B antibodies destroy the recipient's platelets",
+        "Recipient anti-D antibodies cause immediate haemolysis in every first exposure"
+      ],
+      "answer": 0,
+      "explain": "A group A recipient has naturally occurring anti-B antibodies, predominantly IgM. These bind B antigens on transfused red cells, activate complement and can cause acute intravascular haemolysis. ABO-incompatible transfusion is a medical emergency."
+    },
+    {
+      "id": "pb-blood-groups-002",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Rh incompatibility",
+      "q": "An RhD-negative woman has delivered an RhD-positive infant and has no evidence of prior sensitisation. What is the purpose of administering anti-D immunoglobulin postpartum?",
+      "options": [
+        "Prevent maternal sensitisation by clearing fetal RhD-positive red cells before an active immune response develops",
+        "Treat fetal anaemia by stimulating erythropoiesis",
+        "Destroy maternal anti-D antibodies already formed",
+        "Prevent ABO incompatibility in a subsequent pregnancy"
+      ],
+      "answer": 0,
+      "explain": "Anti-D immunoglobulin binds fetal RhD-positive erythrocytes that enter the maternal circulation, promoting their clearance before the mother mounts an active anti-D immune response. It prevents sensitisation and reduces the risk of haemolytic disease in a future RhD-positive pregnancy."
+    }
+  ]
+}
