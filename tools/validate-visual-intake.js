@@ -8,6 +8,7 @@
  */
 const fs = require("node:fs");
 const path = require("node:path");
+const { spawnSync } = require("node:child_process");
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const IMAGE_EXT = new Set([".jpg", ".jpeg", ".png", ".gif", ".webp"]);
@@ -152,6 +153,12 @@ function validateIntake(intake, options={}) {
         try {
           const bytes=fs.readFileSync(full), info=imageInfo(bytes,path.extname(full).toLowerCase());
           if (!bytes.length || !info) issue(localErrors,"INVALID_IMAGE",base+".file","Image is empty, corrupt, truncated or does not match its extension.");
+          else {
+            const decoder=path.join(__dirname,"decode-image.py");
+            const decoded=spawnSync(process.env.PYTHON || "python3",[decoder,full],{encoding:"utf8"});
+            if (decoded.error || decoded.status===null) issue(localErrors,"IMAGE_DECODER_UNAVAILABLE",base+".file","Full image decoding requires Python 3 and Pillow. Install requirements-visual-validation.txt.");
+            else if(decoded.status!==0) issue(localErrors,"IMAGE_DECODE_FAILED",base+".file",(decoded.stderr||decoded.stdout||"Pillow could not decode this image.").trim());
+          }
         } catch(e) { issue(localErrors,"IMAGE_NOT_FOUND",base+".file","Referenced image file is missing: "+asset.file); }
       }
     }

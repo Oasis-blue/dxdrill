@@ -8,7 +8,7 @@ const {validateIntake}=require("../tools/validate-visual-intake.js");
 
 function png1x1(){
   // Small structurally valid PNG fixture; test-only, never a production visual.
-  return Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p2cAAAAASUVORK5CYII=","base64");
+  return Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4//8/AAX+Av4N70a4AAAAAElFTkSuQmCC","base64");
 }
 function setup(){
   const root=fs.mkdtempSync(path.join(os.tmpdir(),"dxdrill-visual-"));
@@ -91,5 +91,15 @@ test("fails closed when the curriculum cannot be read",()=>{
   const result=validateIntake(valid(),{root});
   assert.ok(result.errors.some(e=>e.code==="CURRICULUM_READ_ERROR"));
   assert.ok(result.errors.some(e=>e.code==="UNKNOWN_TOPIC"));
+  fs.rmSync(root,{recursive:true,force:true});
+});
+
+test("rejects a PNG with a valid signature but corrupt encoded image data",()=>{
+  const root=setup(), intake=valid();
+  const corrupt=Buffer.from(png1x1());
+  corrupt[41]^=0xff; // Corrupt IDAT pixel data while preserving PNG chunk structure.
+  fs.writeFileSync(path.join(root,"data/img/gross/liver.png"),corrupt);
+  const result=validateIntake(intake,{root});
+  assert.ok(result.errors.some(e=>e.code==="IMAGE_DECODE_FAILED"));
   fs.rmSync(root,{recursive:true,force:true});
 });
