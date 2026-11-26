@@ -2772,26 +2772,27 @@
       "verified": false
     },
     {
-      "id": "gr-lower-limb-121",
       "type": "mcq",
       "level": 2,
-      "sub": "Knee and popliteal fossa",
-      "q": "A patient has a posterior knee injury with weak plantarflexion and sensory loss over much of the sole. Which terminal branch of the sciatic nerve is most likely damaged?",
+      "sub": "Knee joint and ligaments",
+      "q": "A driver sustains a dashboard injury with posterior displacement of the tibia relative to the femur. Which ligament is most likely torn if the posterior drawer test is positive?",
       "options": [
-        "Tibial nerve",
-        "Common fibular nerve",
-        "Sural nerve",
-        "Saphenous nerve"
+        "Posterior cruciate ligament",
+        "Anterior cruciate ligament",
+        "Tibial collateral ligament",
+        "Fibular collateral ligament"
       ],
       "answer": 0,
-      "explain": "The tibial nerve supplies the posterior compartment of the leg and most intrinsic plantar foot muscles through its plantar branches. Injury can impair plantarflexion and plantar sensation.",
+      "explain": "A posterior drawer test assesses the posterior cruciate ligament (PCL), which restrains posterior displacement of the tibia relative to the femur. A dashboard impact to a flexed knee is a classic mechanism of PCL injury.",
       "open": {
-        "q": "Which terminal branch of the sciatic nerve supplies the posterior leg compartment and plantar foot?",
+        "q": "Which knee ligament is assessed by the posterior drawer test?",
         "accept": [
-          "Tibial nerve"
+          "Posterior cruciate ligament",
+          "PCL"
         ]
       },
-      "verified": false
+      "verified": false,
+      "id": "gr-lower-limb-121"
     }
   ]
 }
