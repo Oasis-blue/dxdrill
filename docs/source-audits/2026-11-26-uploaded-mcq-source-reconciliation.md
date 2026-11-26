@@ -85,3 +85,13 @@ Across the two passes, **36 original questions** have been added in total. The l
 ## Source coverage still not complete
 
 The scanned 336-page `Anatomy MCQ.pdf` requires full OCR before it can be reconciled; only pages 10–25 were sampled during this continuation. The 145-page text-based `Anatomy MCQ ( PDFDrive ).pdf`, the 157-page KLM anatomy question book, the 361-page physiology MCQ/EMQ textbook, and the large biochemistry question collections still need systematic question-level coverage analysis. Their extraction into text files is not equivalent to having reconciled every question. The small GIT, upper-limb, lower-limb, head-and-neck, thorax, CNS motor and cardiovascular source documents have been used as topic references, but the additions above are not a page-complete transcription of those sources either.
+
+
+A further targeted pass added 4 questions from the physiology review coverage areas:
+
+| Topic bank | Added | Current total |
+|---|---:|---:|
+| pi-accessory-organs | 2 | 4 |
+| pc-cardiac-output | 2 | 28 |
+
+The cumulative total is now **40 original questions** added during this reconciliation work. The two new topic files were also structurally checked after commit.
