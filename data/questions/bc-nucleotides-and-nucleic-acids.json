@@ -1,711 +1,887 @@
 {
- "topic": "bc-nucleotides-and-nucleic-acids",
- "questions": [
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bases, Nucleosides, and Nucleotides",
-   "q": "What components make up a nucleoside?",
-   "options": [
-    "A nitrogenous base and a pentose sugar",
-    "A nitrogenous base and a phosphate group",
-    "A pentose sugar and a phosphate group",
-    "A purine ring and a fatty acid"
-   ],
-   "answer": 0,
-   "explain": "A nucleoside consists of a nitrogenous base (purine or pyrimidine) covalently attached to a pentose sugar (ribose or 2-deoxyribose) via a beta-N-glycosidic bond. Adding one or more phosphate groups converts it into a nucleotide.",
-   "verified": false,
-   "open": {
-    "q": "Which two chemical components form a nucleoside?",
-    "accept": [
-     "nitrogenous base and pentose sugar",
-     "a base and a sugar",
-     "purine or pyrimidine base and ribose or deoxyribose"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bases, Nucleosides, and Nucleotides",
-   "q": "Which nucleoside is formed when adenine is linked to D-ribose?",
-   "options": [
-    "Adenosine",
-    "Guanosine",
-    "Cytidine",
-    "Uridine"
-   ],
-   "answer": 0,
-   "explain": "Adenine attached to ribose is adenosine (and to deoxyribose is deoxyadenosine). Guanosine contains guanine, cytidine contains cytosine, and uridine contains uracil.",
-   "verified": false,
-   "open": {
-    "q": "What is the name of the ribonucleoside composed of adenine and ribose?",
-    "accept": [
-     "adenosine",
-     "beta-D-adenosine"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bases, Nucleosides, and Nucleotides",
-   "q": "Which pyrimidine base is 5-methyluracil?",
-   "options": [
-    "Cytosine",
-    "Thymine",
-    "Uracil",
-    "Orotic acid"
-   ],
-   "answer": 1,
-   "explain": "Thymine is chemically 5-methyl-2,4-dioxopyrimidine, differing from uracil by a methyl group at position 5. It is found predominantly in DNA rather than RNA.",
-   "verified": false,
-   "open": {
-    "q": "Which pyrimidine base has the chemical name 5-methyluracil?",
-    "accept": [
-     "thymine",
-     "T"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bases, Nucleosides, and Nucleotides",
-   "q": "At which carbon of the pentose sugar is a nitrogenous base attached in a standard nucleotide?",
-   "options": [
-    "C-1",
-    "C-2",
-    "C-3",
-    "C-5"
-   ],
-   "answer": 0,
-   "explain": "The nitrogenous base forms a beta-N-glycosidic bond with C-1 (the anomeric carbon) of ribose or 2-deoxyribose. Phosphate groups esterify at the 5-hydroxyl (or 3-hydroxyl) position.",
-   "verified": false,
-   "open": {
-    "q": "To which sugar carbon atom is the nitrogenous base joined in a nucleoside or nucleotide?",
-    "accept": [
-     "C-1",
-     "carbon 1",
-     "1-prime carbon",
-     "anomeric carbon"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bases, Nucleosides, and Nucleotides",
-   "q": "Which bond connects the alpha and beta phosphate groups in a nucleoside triphosphate such as ATP?",
-   "options": [
-    "Phosphoanhydride bond",
-    "Phosphoester bond",
-    "Peptide bond",
-    "Disulfide bond"
-   ],
-   "answer": 0,
-   "explain": "The bond between the first (alpha) and sugar hydroxyl is a phosphoester bond, whereas the bonds linking adjacent phosphates (alpha-beta and beta-gamma) are high-energy phosphoanhydride bonds. Hydrolysis of phosphoanhydride bonds releases substantial free energy.",
-   "verified": false,
-   "open": {
-    "q": "What type of high-energy bond joins adjacent phosphate groups in ATP?",
-    "accept": [
-     "phosphoanhydride bond",
-     "acid anhydride bond",
-     "phosphoanhydride linkage"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nucleotide Functions",
-   "q": "Which cyclic nucleotide acts as a major intracellular second messenger activated by adenylyl cyclase?",
-   "options": [
-    "Cyclic AMP (cAMP)",
-    "UDP-glucose",
-    "S-adenosylmethionine",
-    "Phosphocreatine"
-   ],
-   "answer": 0,
-   "explain": "Adenylyl cyclase converts ATP into cyclic AMP (3,5-cyclic adenosine monophosphate), which activates protein kinase A (PKA) to mediate hormonal signals. Cyclic GMP (cGMP) is another second messenger synthesized by guanylyl cyclase.",
-   "verified": false,
-   "open": {
-    "q": "Which cyclic nucleotide second messenger is synthesized from ATP by adenylyl cyclase?",
-    "accept": [
-     "cAMP",
-     "cyclic AMP",
-     "3,5-cyclic AMP",
-     "adenosine 3,5-monophosphate"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nucleotide Functions",
-   "q": "Which activated nucleotide sugar serves as the glucosyl donor in glycogen synthesis?",
-   "options": [
-    "UDP-glucose",
-    "CDP-choline",
-    "GDP-mannose",
-    "ADP-ribose"
-   ],
-   "answer": 0,
-   "explain": "UDP-glucose (uridine diphosphate glucose) is the activated glucose donor used by glycogen synthase to add glucose residues to growing glycogen chains. CDP-diacylglycerol and CDP-choline participate in phospholipid synthesis.",
-   "verified": false,
-   "open": {
-    "q": "Which nucleotide-linked sugar donates glucose units during glycogen synthesis?",
-    "accept": [
-     "UDP-glucose",
-     "uridine diphosphate glucose"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-008",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Nucleotide Functions",
-   "q": "Which nucleotide derivative serves as a major biological methyl group donor in transmethylation reactions?",
-   "options": [
-    "S-adenosylmethionine (SAM)",
-    "Inosine monophosphate (IMP)",
-    "Nicotinamide adenine dinucleotide (NAD+)",
-    "Uridine triphosphate (UTP)"
-   ],
-   "answer": 0,
-   "explain": "S-adenosylmethionine is formed from ATP and methionine and contains a sulfonium ion with an activated methyl group easily transferred by methyltransferases. Demethylation yields S-adenosylhomocysteine.",
-   "verified": false,
-   "open": {
-    "q": "Which nucleotide-containing coenzyme donates methyl groups in metabolic transmethylation reactions?",
-    "accept": [
-     "S-adenosylmethionine",
-     "SAM",
-     "AdoMet"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Structure",
-   "q": "According to Chargaff's rules for double-stranded DNA, what is the molar relationship between purines and pyrimidines?",
-   "options": [
-    "Purines equal pyrimidines ([A] + [G] = [T] + [C])",
-    "Adenine equals guanine ([A] = [G])",
-    "Cytosine equals adenine ([C] = [A])",
-    "Purines are twice as abundant as pyrimidines"
-   ],
-   "answer": 0,
-   "explain": "In double-stranded DNA, adenine pairs with thymine ([A] = [T]) and guanine pairs with cytosine ([G] = [C]), so total purines equal total pyrimidines. Base composition varies between species.",
-   "verified": false,
-   "open": {
-    "q": "What relationship holds between total purine and total pyrimidine content in double-stranded DNA under Chargaff's rules?",
-    "accept": [
-     "they are equal",
-     "purines equal pyrimidines",
-     "[A]+[G] equals [T]+[C]"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-010",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Structure",
-   "q": "What is the orientation of the two complementary strands in the Watson-Crick DNA double helix?",
-   "options": [
-    "Antiparallel (one runs 5-to-3 and the other 3-to-5)",
-    "Parallel (both run 5-to-3 in the same direction)",
-    "Circular with no free 5 or 3 ends",
-    "Triple-stranded with parallel sugar backbones"
-   ],
-   "answer": 0,
-   "explain": "The two strands of double-stranded DNA run in opposite (antiparallel) directions: one strand has a 5-to-3 phosphodiester polarity while its complement runs 3-to-5. This allows base pairing across the helix axis.",
-   "verified": false,
-   "open": {
-    "q": "How are the two strands of a DNA double helix oriented relative to each other in terms of 5-to-3 directionality?",
-    "accept": [
-     "antiparallel",
-     "anti-parallel",
-     "in opposite directions"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-011",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Structure",
-   "q": "Which conformation is the predominant right-handed double helix of DNA under physiological conditions?",
-   "options": [
-    "B-DNA",
-    "Z-DNA",
-    "A-DNA",
-    "Hairpin RNA"
-   ],
-   "answer": 0,
-   "explain": "B-DNA is the standard right-handed double helix under physiological salt and hydration conditions, with about 10 to 10.5 base pairs per turn. Z-DNA is a left-handed zig-zag helix favored by alternating purine-pyrimidine sequences.",
-   "verified": false,
-   "open": {
-    "q": "Which form of double-helical DNA is the standard right-handed structure under physiological conditions?",
-    "accept": [
-     "B-DNA",
-     "B form DNA",
-     "B-form DNA"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Structure",
-   "q": "Which DNA conformation forms a left-handed double helix with a zig-zag sugar-phosphate backbone?",
-   "options": [
-    "Z-DNA",
-    "B-DNA",
-    "A-DNA",
-    "Supercoiled plasmid"
-   ],
-   "answer": 0,
-   "explain": "Z-DNA is a left-handed double helix with a zig-zag backbone and alternating guanine (syn) and cytosine (anti) conformations. A-DNA is a wider, right-handed form seen in dehydrated DNA or RNA-DNA hybrids.",
-   "verified": false,
-   "open": {
-    "q": "Which left-handed double-helical form of DNA has a zig-zag backbone?",
-    "accept": [
-     "Z-DNA",
-     "Z form DNA",
-     "Z-form DNA"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-013",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Structure",
-   "q": "Between two double-stranded DNA molecules of equal length, which one will have a higher melting temperature (Tm)?",
-   "options": [
-    "The molecule with a higher guanine-cytosine (G-C) percentage",
-    "The molecule with a higher adenine-thymine (A-T) percentage",
-    "The molecule with fewer phosphodiester bonds",
-    "The molecule lacking hydrogen bonds between bases"
-   ],
-   "answer": 0,
-   "explain": "Each G-C base pair has three hydrogen bonds compared with two in an A-T base pair, and base-stacking interactions also differ. Higher G-C content increases thermal stability and raises the melting temperature (Tm).",
-   "verified": false,
-   "open": {
-    "q": "Which base composition feature increases the melting temperature (Tm) of double-stranded DNA?",
-    "accept": [
-     "higher GC content",
-     "higher G-C percentage",
-     "more guanine and cytosine base pairs"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-014",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Structure",
-   "q": "At what ultraviolet wavelength do purine and pyrimidine bases in nucleic acids maximally absorb light?",
-   "options": [
-    "260 nm",
-    "280 nm",
-    "340 nm",
-    "540 nm"
-   ],
-   "answer": 0,
-   "explain": "Aromatic purine and pyrimidine rings absorb ultraviolet light maximally at 260 nm, whereas aromatic amino acids (tryptophan and tyrosine) in proteins absorb maximally around 280 nm. The A260/A280 ratio assesses nucleic acid purity.",
-   "verified": false,
-   "open": {
-    "q": "At what approximate ultraviolet wavelength do nucleic acids show peak absorbance?",
-    "accept": [
-     "260 nm",
-     "260 nanometers"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-015",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Structure",
-   "q": "What happens to ultraviolet absorbance at 260 nm when double-stranded DNA denatures into single strands (hyperchromic effect)?",
-   "options": [
-    "Absorbance increases because base stacking decreases",
-    "Absorbance decreases because bases become covalently linked",
-    "Absorbance drops to zero immediately",
-    "Absorbance shifts exclusively to visible red light"
-   ],
-   "answer": 0,
-   "explain": "In native double-stranded DNA, stacked bases partially quench UV absorption; separation of strands during denaturation (melting) unstacks the bases and increases A260, known as the hyperchromic effect.",
-   "verified": false,
-   "open": {
-    "q": "Why does UV absorbance at 260 nm rise when double-stranded DNA melts into single strands?",
-    "accept": [
-     "loss of base stacking",
-     "unstacking of bases",
-     "hyperchromic effect from base unstacking"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Chromatin and Histones",
-   "q": "Which group of basic proteins packages eukaryotic DNA into nucleosomes?",
-   "options": [
-    "Histones",
-    "Albumin",
-    "Actin",
-    "Tubulin"
-   ],
-   "answer": 0,
-   "explain": "Histones are small, positively charged (basic) proteins rich in lysine and arginine that bind the negatively charged sugar-phosphate backbone of DNA. Eight histone subunits form the nucleosome core particle.",
-   "verified": false,
-   "open": {
-    "q": "Which positively charged nuclear proteins form the core around which eukaryotic DNA wraps in nucleosomes?",
-    "accept": [
-     "histones",
-     "histone proteins"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-017",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Chromatin and Histones",
-   "q": "Which histone protein seals DNA where it enters and exits the nucleosome core and facilitates higher-order chromatin compaction?",
-   "options": [
-    "Histone H1",
-    "Histone H2A",
-    "Histone H3",
-    "Histone H4"
-   ],
-   "answer": 0,
-   "explain": "Linker histone H1 binds DNA at the entry and exit points of the nucleosome octamer (composed of two each of H2A, H2B, H3, and H4). It helps condense nucleosome arrays into higher-order chromatin structures.",
-   "verified": false,
-   "open": {
-    "q": "Which linker histone binds at the entry and exit sites of DNA on the nucleosome?",
-    "accept": [
-     "H1",
-     "histone H1"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Chromatin and Histones",
-   "q": "How does acetylation of lysine residues on histone tails generally affect chromatin structure and gene transcription?",
-   "options": [
-    "Neutralizes positive charge to loosen chromatin and promote transcription",
-    "Increases positive charge to tighten chromatin and silence transcription",
-    "Cleaves the DNA backbone into short fragments",
-    "Converts ribose into 2-deoxyribose"
-   ],
-   "answer": 0,
-   "explain": "Histone acetyltransferases add acetyl groups to lysine epsilon-amino groups, removing positive charge that attracts negatively charged DNA. This relaxes chromatin into a more open euchromatin state accessible to transcription.",
-   "verified": false,
-   "open": {
-    "q": "How does histone lysine acetylation typically influence chromatin compactness?",
-    "accept": [
-     "loosens chromatin",
-     "relaxes chromatin structure",
-     "creates more open chromatin"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Chromatin and Histones",
-   "q": "Which form of chromatin is generally less condensed, transcriptionally active, and replicates earlier in S phase?",
-   "options": [
-    "Euchromatin",
-    "Heterochromatin",
-    "Nucleolus",
-    "Centromere"
-   ],
-   "answer": 0,
-   "explain": "Euchromatin is dispersed and open in interphase nuclei and contains most actively transcribed genes. Heterochromatin is densely packed and generally transcriptionally inactive.",
-   "verified": false,
-   "open": {
-    "q": "Which term describes dispersed, transcriptionally active eukaryotic chromatin?",
-    "accept": [
-     "euchromatin",
-     "eu-chromatin"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Types of RNA",
-   "q": "Which type of RNA carries genetic codons from nuclear DNA to cytoplasmic ribosomes for protein synthesis?",
-   "options": [
-    "Messenger RNA (mRNA)",
-    "Transfer RNA (tRNA)",
-    "Ribosomal RNA (rRNA)",
-    "Small nuclear RNA (snRNA)"
-   ],
-   "answer": 0,
-   "explain": "Messenger RNA (mRNA) is transcribed from DNA templates and specifies the amino acid sequence of polypeptides via three-nucleotide codons. tRNA brings amino acids, and rRNA forms structural and catalytic parts of ribosomes.",
-   "verified": false,
-   "open": {
-    "q": "Which class of RNA carries codon information from DNA to the ribosome to direct polypeptide synthesis?",
-    "accept": [
-     "mRNA",
-     "messenger RNA"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Types of RNA",
-   "q": "Which structural feature of transfer RNA (tRNA) base-pairs with a complementary codon on mRNA during translation?",
-   "options": [
-    "Anticodon loop",
-    "Poly(A) tail",
-    "5-methylguanosine cap",
-    "Shine-Dalgarno sequence"
-   ],
-   "answer": 0,
-   "explain": "Each tRNA molecule contains an anticodon triplet that pairs antiparallel with the mRNA codon, while its 3-CCA terminus carries the corresponding amino acid. tRNA also contains modified nucleosides such as pseudouridine and dihydrouridine.",
-   "verified": false,
-   "open": {
-    "q": "Which sequence region on a tRNA molecule recognizes and pairs with an mRNA codon?",
-    "accept": [
-     "anticodon",
-     "anticodon loop"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Types of RNA",
-   "q": "Which RNA species catalyzes peptide bond formation (peptidyl transferase activity) on the ribosome?",
-   "options": [
-    "Ribosomal RNA (rRNA)",
-    "Small interfering RNA (siRNA)",
-    "MicroRNA (miRNA)",
-    "Heterogeneous nuclear RNA (hnRNA)"
-   ],
-   "answer": 0,
-   "explain": "Large-subunit ribosomal RNA acts as a ribozyme catalyzing peptide bond formation between the aminoacyl-tRNA and peptidyl-tRNA. Proteins stabilize ribosome architecture but rRNA provides the peptidyl transferase catalysis.",
-   "verified": false,
-   "open": {
-    "q": "Which type of RNA serves as the catalytic ribozyme for peptide bond formation in ribosomes?",
-    "accept": [
-     "rRNA",
-     "ribosomal RNA"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-023",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Types of RNA",
-   "q": "Which small RNA complexes with proteins to form spliceosomes that remove introns from eukaryotic pre-mRNA?",
-   "options": [
-    "Small nuclear RNA (snRNA)",
-    "Transfer-messenger RNA (tmRNA)",
-    "Piwi-interacting RNA (piRNA)",
-    "7SL signal recognition RNA"
-   ],
-   "answer": 0,
-   "explain": "Small nuclear RNAs (such as U1, U2, U4, U5, and U6 snRNAs) combine with proteins into snRNPs that assemble into the spliceosome to excise introns and join exons. This occurs in the nucleus prior to mRNA export.",
-   "verified": false,
-   "open": {
-    "q": "Which class of nuclear RNA participates in pre-mRNA splicing within the spliceosome?",
-    "accept": [
-     "snRNA",
-     "small nuclear RNA"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-024",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "Which enzyme catalyzes the rate-limiting committed step of de novo purine nucleotide synthesis?",
-   "options": [
-    "Glutamine-PRPP amidotransferase",
-    "Carbamoyl phosphate synthetase II",
-    "Xanthine oxidase",
-    "Adenosine deaminase"
-   ],
-   "answer": 0,
-   "explain": "Glutamine-phosphoribosylpyrophosphate (PRPP) amidotransferase transfers an amino group from glutamine to PRPP to form 5-phosphoribosylamine, the committed step of de novo purine synthesis. Carbamoyl phosphate synthetase II initiates de novo pyrimidine synthesis.",
-   "verified": false,
-   "open": {
-    "q": "Which enzyme catalyzes the committed step of de novo purine biosynthesis using PRPP and glutamine?",
-    "accept": [
-     "glutamine-PRPP amidotransferase",
-     "PRPP amidotransferase",
-     "amidophosphoribosyltransferase"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-025",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "A male child presents with developmental delay, spasticity, self-injurious behavior, choreoathetosis, and hyperuricemia with gouty tophi. Deficiency of which purine salvage enzyme causes Lesch-Nyhan syndrome?",
-   "options": [
-    "Hypoxanthine-guanine phosphoribosyltransferase (HGPRT)",
-    "Adenosine deaminase (ADA)",
-    "Purine nucleoside phosphorylase (PNP)",
-    "Uridine monophosphate synthase"
-   ],
-   "answer": 0,
-   "explain": "Lesch-Nyhan syndrome is an X-linked disorder caused by deficiency or absence of HGPRT, preventing salvage of hypoxanthine to IMP and guanine to GMP. Elevated PRPP drives de novo purine synthesis and excess purines are degraded to uric acid.",
-   "verified": false,
-   "open": {
-    "q": "Deficiency of which purine salvage enzyme causes Lesch-Nyhan syndrome with hyperuricemia and neurological features?",
-    "accept": [
-     "HGPRT",
-     "hypoxanthine-guanine phosphoribosyltransferase",
-     "HPRT1"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-026",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "An infant presents with severe recurrent viral, bacterial, and fungal infections from early infancy, failure to thrive, and marked lymphopenia affecting both T and B lymphocytes. Deficiency of which enzyme in purine catabolism causes this form of severe combined immunodeficiency (SCID)?",
-   "options": [
-    "Adenosine deaminase (ADA)",
-    "Xanthine oxidase",
-    "Thymidylate synthase",
-    "Dihydroorotate dehydrogenase"
-   ],
-   "answer": 0,
-   "explain": "Adenosine deaminase deficiency leads to accumulation of adenosine and deoxyadenosine, which is phosphorylated to dATP. Elevated dATP inhibits ribonucleotide reductase and impairs DNA synthesis/lymphocyte proliferation, causing severe combined immunodeficiency.",
-   "verified": false,
-   "open": {
-    "q": "Deficiency of which purine-metabolizing enzyme causes an autosomal recessive form of severe combined immunodeficiency (SCID)?",
-    "accept": [
-     "adenosine deaminase",
-     "ADA"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-027",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "What is the final metabolic end product of purine catabolism in humans?",
-   "options": [
-    "Uric acid",
-    "Urea",
-    "Allantoin",
-    "Beta-alanine"
-   ],
-   "answer": 0,
-   "explain": "In humans, purines (adenine and guanine) are degraded via xanthine to uric acid, which is excreted in urine. Unlike most other mammals, humans lack uricase (urate oxidase) to convert uric acid into more soluble allantoin.",
-   "verified": false,
-   "open": {
-    "q": "Which compound is the terminal end product of purine breakdown in humans?",
-    "accept": [
-     "uric acid",
-     "urate"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-028",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "How does allopurinol lower serum uric acid levels in patients with chronic gout?",
-   "options": [
-    "Inhibits xanthine oxidase",
-    "Stimulates renal tubular reabsorption of urate",
-    "Converts uric acid into allantoin in the liver",
-    "Directly degrades DNA in circulating leukocytes"
-   ],
-   "answer": 0,
-   "explain": "Allopurinol (and its active metabolite oxypurinol) acts as a suicide/competitive inhibitor of xanthine oxidase, reducing conversion of hypoxanthine to xanthine and xanthine to uric acid. More soluble hypoxanthine and xanthine are excreted instead.",
-   "verified": false,
-   "open": {
-    "q": "Which enzyme does allopurinol inhibit to decrease uric acid production?",
-    "accept": [
-     "xanthine oxidase",
-     "xanthine oxidoreductase"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-029",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "Which enzyme converts deoxyuridine monophosphate (dUMP) into deoxythymidine monophosphate (dTMP) using N5,N10-methylenetetrahydrofolate?",
-   "options": [
-    "Thymidylate synthase",
-    "Ribonucleotide reductase",
-    "Orotate phosphoribosyltransferase",
-    "Nucleoside diphosphate kinase"
-   ],
-   "answer": 0,
-   "explain": "Thymidylate synthase methylates dUMP at position 5 to produce dTMP, utilizing N5,N10-methylenetetrahydrofolate as the one-carbon donor and oxidizing folate to dihydrofolate. It is a major target of anticancer drugs such as 5-fluorouracil.",
-   "verified": false,
-   "open": {
-    "q": "Which enzyme methylates dUMP to form dTMP during thymidylate synthesis?",
-    "accept": [
-     "thymidylate synthase",
-     "TMP synthase"
-    ]
-   }
-  },
-  {
-   "id": "bc-nucleotides-and-nucleic-acids-030",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Nucleotide Metabolism and Clinical Correlations",
-   "q": "Which enzyme converts ribonucleoside diphosphates (NDPs) into deoxyribonucleoside diphosphates (dNDPs) for DNA synthesis?",
-   "options": [
-    "Ribonucleotide reductase",
-    "DNA polymerase alpha",
-    "RNA polymerase II",
-    "Deoxyribonuclease I"
-   ],
-   "answer": 0,
-   "explain": "Ribonucleotide reductase reduces the 2-hydroxyl group on the ribose ring of NDPs (ADP, GDP, CDP, UDP) to form 2-deoxyribonucleoside diphosphates (dNDPs) required for DNA replication. It uses thioredoxin or glutaredoxin as reducing equivalents.",
-   "verified": false,
-   "open": {
-    "q": "Which enzyme reduces ribonucleotides to deoxyribonucleotides for DNA synthesis?",
-    "accept": [
-     "ribonucleotide reductase",
-     "RNR"
-    ]
-   }
-  }
- ]
+  "topic": "bc-nucleotides-and-nucleic-acids",
+  "questions": [
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bases, Nucleosides, and Nucleotides",
+      "q": "What components make up a nucleoside?",
+      "options": [
+        "A nitrogenous base and a pentose sugar",
+        "A nitrogenous base and a phosphate group",
+        "A pentose sugar and a phosphate group",
+        "A purine ring and a fatty acid"
+      ],
+      "answer": 0,
+      "explain": "A nucleoside consists of a nitrogenous base (purine or pyrimidine) covalently attached to a pentose sugar (ribose or 2-deoxyribose) via a beta-N-glycosidic bond. Adding one or more phosphate groups converts it into a nucleotide.",
+      "verified": false,
+      "open": {
+        "q": "Which two chemical components form a nucleoside?",
+        "accept": [
+          "nitrogenous base and pentose sugar",
+          "a base and a sugar",
+          "purine or pyrimidine base and ribose or deoxyribose"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bases, Nucleosides, and Nucleotides",
+      "q": "Which nucleoside is formed when adenine is linked to D-ribose?",
+      "options": [
+        "Adenosine",
+        "Guanosine",
+        "Cytidine",
+        "Uridine"
+      ],
+      "answer": 0,
+      "explain": "Adenine attached to ribose is adenosine (and to deoxyribose is deoxyadenosine). Guanosine contains guanine, cytidine contains cytosine, and uridine contains uracil.",
+      "verified": false,
+      "open": {
+        "q": "What is the name of the ribonucleoside composed of adenine and ribose?",
+        "accept": [
+          "adenosine",
+          "beta-D-adenosine"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bases, Nucleosides, and Nucleotides",
+      "q": "Which pyrimidine base is 5-methyluracil?",
+      "options": [
+        "Cytosine",
+        "Thymine",
+        "Uracil",
+        "Orotic acid"
+      ],
+      "answer": 1,
+      "explain": "Thymine is chemically 5-methyl-2,4-dioxopyrimidine, differing from uracil by a methyl group at position 5. It is found predominantly in DNA rather than RNA.",
+      "verified": false,
+      "open": {
+        "q": "Which pyrimidine base has the chemical name 5-methyluracil?",
+        "accept": [
+          "thymine",
+          "T"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bases, Nucleosides, and Nucleotides",
+      "q": "At which carbon of the pentose sugar is a nitrogenous base attached in a standard nucleotide?",
+      "options": [
+        "C-1",
+        "C-2",
+        "C-3",
+        "C-5"
+      ],
+      "answer": 0,
+      "explain": "The nitrogenous base forms a beta-N-glycosidic bond with C-1 (the anomeric carbon) of ribose or 2-deoxyribose. Phosphate groups esterify at the 5-hydroxyl (or 3-hydroxyl) position.",
+      "verified": false,
+      "open": {
+        "q": "To which sugar carbon atom is the nitrogenous base joined in a nucleoside or nucleotide?",
+        "accept": [
+          "C-1",
+          "carbon 1",
+          "1-prime carbon",
+          "anomeric carbon"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bases, Nucleosides, and Nucleotides",
+      "q": "Which bond connects the alpha and beta phosphate groups in a nucleoside triphosphate such as ATP?",
+      "options": [
+        "Phosphoanhydride bond",
+        "Phosphoester bond",
+        "Peptide bond",
+        "Disulfide bond"
+      ],
+      "answer": 0,
+      "explain": "The bond between the first (alpha) and sugar hydroxyl is a phosphoester bond, whereas the bonds linking adjacent phosphates (alpha-beta and beta-gamma) are high-energy phosphoanhydride bonds. Hydrolysis of phosphoanhydride bonds releases substantial free energy.",
+      "verified": false,
+      "open": {
+        "q": "What type of high-energy bond joins adjacent phosphate groups in ATP?",
+        "accept": [
+          "phosphoanhydride bond",
+          "acid anhydride bond",
+          "phosphoanhydride linkage"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nucleotide Functions",
+      "q": "Which cyclic nucleotide acts as a major intracellular second messenger activated by adenylyl cyclase?",
+      "options": [
+        "Cyclic AMP (cAMP)",
+        "UDP-glucose",
+        "S-adenosylmethionine",
+        "Phosphocreatine"
+      ],
+      "answer": 0,
+      "explain": "Adenylyl cyclase converts ATP into cyclic AMP (3,5-cyclic adenosine monophosphate), which activates protein kinase A (PKA) to mediate hormonal signals. Cyclic GMP (cGMP) is another second messenger synthesized by guanylyl cyclase.",
+      "verified": false,
+      "open": {
+        "q": "Which cyclic nucleotide second messenger is synthesized from ATP by adenylyl cyclase?",
+        "accept": [
+          "cAMP",
+          "cyclic AMP",
+          "3,5-cyclic AMP",
+          "adenosine 3,5-monophosphate"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nucleotide Functions",
+      "q": "Which activated nucleotide sugar serves as the glucosyl donor in glycogen synthesis?",
+      "options": [
+        "UDP-glucose",
+        "CDP-choline",
+        "GDP-mannose",
+        "ADP-ribose"
+      ],
+      "answer": 0,
+      "explain": "UDP-glucose (uridine diphosphate glucose) is the activated glucose donor used by glycogen synthase to add glucose residues to growing glycogen chains. CDP-diacylglycerol and CDP-choline participate in phospholipid synthesis.",
+      "verified": false,
+      "open": {
+        "q": "Which nucleotide-linked sugar donates glucose units during glycogen synthesis?",
+        "accept": [
+          "UDP-glucose",
+          "uridine diphosphate glucose"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-008",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Functions",
+      "q": "Which nucleotide derivative serves as a major biological methyl group donor in transmethylation reactions?",
+      "options": [
+        "S-adenosylmethionine (SAM)",
+        "Inosine monophosphate (IMP)",
+        "Nicotinamide adenine dinucleotide (NAD+)",
+        "Uridine triphosphate (UTP)"
+      ],
+      "answer": 0,
+      "explain": "S-adenosylmethionine is formed from ATP and methionine and contains a sulfonium ion with an activated methyl group easily transferred by methyltransferases. Demethylation yields S-adenosylhomocysteine.",
+      "verified": false,
+      "open": {
+        "q": "Which nucleotide-containing coenzyme donates methyl groups in metabolic transmethylation reactions?",
+        "accept": [
+          "S-adenosylmethionine",
+          "SAM",
+          "AdoMet"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Structure",
+      "q": "According to Chargaff's rules for double-stranded DNA, what is the molar relationship between purines and pyrimidines?",
+      "options": [
+        "Purines equal pyrimidines ([A] + [G] = [T] + [C])",
+        "Adenine equals guanine ([A] = [G])",
+        "Cytosine equals adenine ([C] = [A])",
+        "Purines are twice as abundant as pyrimidines"
+      ],
+      "answer": 0,
+      "explain": "In double-stranded DNA, adenine pairs with thymine ([A] = [T]) and guanine pairs with cytosine ([G] = [C]), so total purines equal total pyrimidines. Base composition varies between species.",
+      "verified": false,
+      "open": {
+        "q": "What relationship holds between total purine and total pyrimidine content in double-stranded DNA under Chargaff's rules?",
+        "accept": [
+          "they are equal",
+          "purines equal pyrimidines",
+          "[A]+[G] equals [T]+[C]"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-010",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Structure",
+      "q": "What is the orientation of the two complementary strands in the Watson-Crick DNA double helix?",
+      "options": [
+        "Antiparallel (one runs 5-to-3 and the other 3-to-5)",
+        "Parallel (both run 5-to-3 in the same direction)",
+        "Circular with no free 5 or 3 ends",
+        "Triple-stranded with parallel sugar backbones"
+      ],
+      "answer": 0,
+      "explain": "The two strands of double-stranded DNA run in opposite (antiparallel) directions: one strand has a 5-to-3 phosphodiester polarity while its complement runs 3-to-5. This allows base pairing across the helix axis.",
+      "verified": false,
+      "open": {
+        "q": "How are the two strands of a DNA double helix oriented relative to each other in terms of 5-to-3 directionality?",
+        "accept": [
+          "antiparallel",
+          "anti-parallel",
+          "in opposite directions"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Structure",
+      "q": "Which conformation is the predominant right-handed double helix of DNA under physiological conditions?",
+      "options": [
+        "B-DNA",
+        "Z-DNA",
+        "A-DNA",
+        "Hairpin RNA"
+      ],
+      "answer": 0,
+      "explain": "B-DNA is the standard right-handed double helix under physiological salt and hydration conditions, with about 10 to 10.5 base pairs per turn. Z-DNA is a left-handed zig-zag helix favored by alternating purine-pyrimidine sequences.",
+      "verified": false,
+      "open": {
+        "q": "Which form of double-helical DNA is the standard right-handed structure under physiological conditions?",
+        "accept": [
+          "B-DNA",
+          "B form DNA",
+          "B-form DNA"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Structure",
+      "q": "Which DNA conformation forms a left-handed double helix with a zig-zag sugar-phosphate backbone?",
+      "options": [
+        "Z-DNA",
+        "B-DNA",
+        "A-DNA",
+        "Supercoiled plasmid"
+      ],
+      "answer": 0,
+      "explain": "Z-DNA is a left-handed double helix with a zig-zag backbone and alternating guanine (syn) and cytosine (anti) conformations. A-DNA is a wider, right-handed form seen in dehydrated DNA or RNA-DNA hybrids.",
+      "verified": false,
+      "open": {
+        "q": "Which left-handed double-helical form of DNA has a zig-zag backbone?",
+        "accept": [
+          "Z-DNA",
+          "Z form DNA",
+          "Z-form DNA"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Structure",
+      "q": "Between two double-stranded DNA molecules of equal length, which one will have a higher melting temperature (Tm)?",
+      "options": [
+        "The molecule with a higher guanine-cytosine (G-C) percentage",
+        "The molecule with a higher adenine-thymine (A-T) percentage",
+        "The molecule with fewer phosphodiester bonds",
+        "The molecule lacking hydrogen bonds between bases"
+      ],
+      "answer": 0,
+      "explain": "Each G-C base pair has three hydrogen bonds compared with two in an A-T base pair, and base-stacking interactions also differ. Higher G-C content increases thermal stability and raises the melting temperature (Tm).",
+      "verified": false,
+      "open": {
+        "q": "Which base composition feature increases the melting temperature (Tm) of double-stranded DNA?",
+        "accept": [
+          "higher GC content",
+          "higher G-C percentage",
+          "more guanine and cytosine base pairs"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Structure",
+      "q": "At what ultraviolet wavelength do purine and pyrimidine bases in nucleic acids maximally absorb light?",
+      "options": [
+        "260 nm",
+        "280 nm",
+        "340 nm",
+        "540 nm"
+      ],
+      "answer": 0,
+      "explain": "Aromatic purine and pyrimidine rings absorb ultraviolet light maximally at 260 nm, whereas aromatic amino acids (tryptophan and tyrosine) in proteins absorb maximally around 280 nm. The A260/A280 ratio assesses nucleic acid purity.",
+      "verified": false,
+      "open": {
+        "q": "At what approximate ultraviolet wavelength do nucleic acids show peak absorbance?",
+        "accept": [
+          "260 nm",
+          "260 nanometers"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-015",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Structure",
+      "q": "What happens to ultraviolet absorbance at 260 nm when double-stranded DNA denatures into single strands (hyperchromic effect)?",
+      "options": [
+        "Absorbance increases because base stacking decreases",
+        "Absorbance decreases because bases become covalently linked",
+        "Absorbance drops to zero immediately",
+        "Absorbance shifts exclusively to visible red light"
+      ],
+      "answer": 0,
+      "explain": "In native double-stranded DNA, stacked bases partially quench UV absorption; separation of strands during denaturation (melting) unstacks the bases and increases A260, known as the hyperchromic effect.",
+      "verified": false,
+      "open": {
+        "q": "Why does UV absorbance at 260 nm rise when double-stranded DNA melts into single strands?",
+        "accept": [
+          "loss of base stacking",
+          "unstacking of bases",
+          "hyperchromic effect from base unstacking"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Chromatin and Histones",
+      "q": "Which group of basic proteins packages eukaryotic DNA into nucleosomes?",
+      "options": [
+        "Histones",
+        "Albumin",
+        "Actin",
+        "Tubulin"
+      ],
+      "answer": 0,
+      "explain": "Histones are small, positively charged (basic) proteins rich in lysine and arginine that bind the negatively charged sugar-phosphate backbone of DNA. Eight histone subunits form the nucleosome core particle.",
+      "verified": false,
+      "open": {
+        "q": "Which positively charged nuclear proteins form the core around which eukaryotic DNA wraps in nucleosomes?",
+        "accept": [
+          "histones",
+          "histone proteins"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Chromatin and Histones",
+      "q": "Which histone protein seals DNA where it enters and exits the nucleosome core and facilitates higher-order chromatin compaction?",
+      "options": [
+        "Histone H1",
+        "Histone H2A",
+        "Histone H3",
+        "Histone H4"
+      ],
+      "answer": 0,
+      "explain": "Linker histone H1 binds DNA at the entry and exit points of the nucleosome octamer (composed of two each of H2A, H2B, H3, and H4). It helps condense nucleosome arrays into higher-order chromatin structures.",
+      "verified": false,
+      "open": {
+        "q": "Which linker histone binds at the entry and exit sites of DNA on the nucleosome?",
+        "accept": [
+          "H1",
+          "histone H1"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Chromatin and Histones",
+      "q": "How does acetylation of lysine residues on histone tails generally affect chromatin structure and gene transcription?",
+      "options": [
+        "Neutralizes positive charge to loosen chromatin and promote transcription",
+        "Increases positive charge to tighten chromatin and silence transcription",
+        "Cleaves the DNA backbone into short fragments",
+        "Converts ribose into 2-deoxyribose"
+      ],
+      "answer": 0,
+      "explain": "Histone acetyltransferases add acetyl groups to lysine epsilon-amino groups, removing positive charge that attracts negatively charged DNA. This relaxes chromatin into a more open euchromatin state accessible to transcription.",
+      "verified": false,
+      "open": {
+        "q": "How does histone lysine acetylation typically influence chromatin compactness?",
+        "accept": [
+          "loosens chromatin",
+          "relaxes chromatin structure",
+          "creates more open chromatin"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Chromatin and Histones",
+      "q": "Which form of chromatin is generally less condensed, transcriptionally active, and replicates earlier in S phase?",
+      "options": [
+        "Euchromatin",
+        "Heterochromatin",
+        "Nucleolus",
+        "Centromere"
+      ],
+      "answer": 0,
+      "explain": "Euchromatin is dispersed and open in interphase nuclei and contains most actively transcribed genes. Heterochromatin is densely packed and generally transcriptionally inactive.",
+      "verified": false,
+      "open": {
+        "q": "Which term describes dispersed, transcriptionally active eukaryotic chromatin?",
+        "accept": [
+          "euchromatin",
+          "eu-chromatin"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Types of RNA",
+      "q": "Which type of RNA carries genetic codons from nuclear DNA to cytoplasmic ribosomes for protein synthesis?",
+      "options": [
+        "Messenger RNA (mRNA)",
+        "Transfer RNA (tRNA)",
+        "Ribosomal RNA (rRNA)",
+        "Small nuclear RNA (snRNA)"
+      ],
+      "answer": 0,
+      "explain": "Messenger RNA (mRNA) is transcribed from DNA templates and specifies the amino acid sequence of polypeptides via three-nucleotide codons. tRNA brings amino acids, and rRNA forms structural and catalytic parts of ribosomes.",
+      "verified": false,
+      "open": {
+        "q": "Which class of RNA carries codon information from DNA to the ribosome to direct polypeptide synthesis?",
+        "accept": [
+          "mRNA",
+          "messenger RNA"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Types of RNA",
+      "q": "Which structural feature of transfer RNA (tRNA) base-pairs with a complementary codon on mRNA during translation?",
+      "options": [
+        "Anticodon loop",
+        "Poly(A) tail",
+        "5-methylguanosine cap",
+        "Shine-Dalgarno sequence"
+      ],
+      "answer": 0,
+      "explain": "Each tRNA molecule contains an anticodon triplet that pairs antiparallel with the mRNA codon, while its 3-CCA terminus carries the corresponding amino acid. tRNA also contains modified nucleosides such as pseudouridine and dihydrouridine.",
+      "verified": false,
+      "open": {
+        "q": "Which sequence region on a tRNA molecule recognizes and pairs with an mRNA codon?",
+        "accept": [
+          "anticodon",
+          "anticodon loop"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Types of RNA",
+      "q": "Which RNA species catalyzes peptide bond formation (peptidyl transferase activity) on the ribosome?",
+      "options": [
+        "Ribosomal RNA (rRNA)",
+        "Small interfering RNA (siRNA)",
+        "MicroRNA (miRNA)",
+        "Heterogeneous nuclear RNA (hnRNA)"
+      ],
+      "answer": 0,
+      "explain": "Large-subunit ribosomal RNA acts as a ribozyme catalyzing peptide bond formation between the aminoacyl-tRNA and peptidyl-tRNA. Proteins stabilize ribosome architecture but rRNA provides the peptidyl transferase catalysis.",
+      "verified": false,
+      "open": {
+        "q": "Which type of RNA serves as the catalytic ribozyme for peptide bond formation in ribosomes?",
+        "accept": [
+          "rRNA",
+          "ribosomal RNA"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-023",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Types of RNA",
+      "q": "Which small RNA complexes with proteins to form spliceosomes that remove introns from eukaryotic pre-mRNA?",
+      "options": [
+        "Small nuclear RNA (snRNA)",
+        "Transfer-messenger RNA (tmRNA)",
+        "Piwi-interacting RNA (piRNA)",
+        "7SL signal recognition RNA"
+      ],
+      "answer": 0,
+      "explain": "Small nuclear RNAs (such as U1, U2, U4, U5, and U6 snRNAs) combine with proteins into snRNPs that assemble into the spliceosome to excise introns and join exons. This occurs in the nucleus prior to mRNA export.",
+      "verified": false,
+      "open": {
+        "q": "Which class of nuclear RNA participates in pre-mRNA splicing within the spliceosome?",
+        "accept": [
+          "snRNA",
+          "small nuclear RNA"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-024",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "Which enzyme catalyzes the rate-limiting committed step of de novo purine nucleotide synthesis?",
+      "options": [
+        "Glutamine-PRPP amidotransferase",
+        "Carbamoyl phosphate synthetase II",
+        "Xanthine oxidase",
+        "Adenosine deaminase"
+      ],
+      "answer": 0,
+      "explain": "Glutamine-phosphoribosylpyrophosphate (PRPP) amidotransferase transfers an amino group from glutamine to PRPP to form 5-phosphoribosylamine, the committed step of de novo purine synthesis. Carbamoyl phosphate synthetase II initiates de novo pyrimidine synthesis.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme catalyzes the committed step of de novo purine biosynthesis using PRPP and glutamine?",
+        "accept": [
+          "glutamine-PRPP amidotransferase",
+          "PRPP amidotransferase",
+          "amidophosphoribosyltransferase"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-025",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "A male child presents with developmental delay, spasticity, self-injurious behavior, choreoathetosis, and hyperuricemia with gouty tophi. Deficiency of which purine salvage enzyme causes Lesch-Nyhan syndrome?",
+      "options": [
+        "Hypoxanthine-guanine phosphoribosyltransferase (HGPRT)",
+        "Adenosine deaminase (ADA)",
+        "Purine nucleoside phosphorylase (PNP)",
+        "Uridine monophosphate synthase"
+      ],
+      "answer": 0,
+      "explain": "Lesch-Nyhan syndrome is an X-linked disorder caused by deficiency or absence of HGPRT, preventing salvage of hypoxanthine to IMP and guanine to GMP. Elevated PRPP drives de novo purine synthesis and excess purines are degraded to uric acid.",
+      "verified": false,
+      "open": {
+        "q": "Deficiency of which purine salvage enzyme causes Lesch-Nyhan syndrome with hyperuricemia and neurological features?",
+        "accept": [
+          "HGPRT",
+          "hypoxanthine-guanine phosphoribosyltransferase",
+          "HPRT1"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-026",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "An infant presents with severe recurrent viral, bacterial, and fungal infections from early infancy, failure to thrive, and marked lymphopenia affecting both T and B lymphocytes. Deficiency of which enzyme in purine catabolism causes this form of severe combined immunodeficiency (SCID)?",
+      "options": [
+        "Adenosine deaminase (ADA)",
+        "Xanthine oxidase",
+        "Thymidylate synthase",
+        "Dihydroorotate dehydrogenase"
+      ],
+      "answer": 0,
+      "explain": "Adenosine deaminase deficiency leads to accumulation of adenosine and deoxyadenosine, which is phosphorylated to dATP. Elevated dATP inhibits ribonucleotide reductase and impairs DNA synthesis/lymphocyte proliferation, causing severe combined immunodeficiency.",
+      "verified": false,
+      "open": {
+        "q": "Deficiency of which purine-metabolizing enzyme causes an autosomal recessive form of severe combined immunodeficiency (SCID)?",
+        "accept": [
+          "adenosine deaminase",
+          "ADA"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-027",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "What is the final metabolic end product of purine catabolism in humans?",
+      "options": [
+        "Uric acid",
+        "Urea",
+        "Allantoin",
+        "Beta-alanine"
+      ],
+      "answer": 0,
+      "explain": "In humans, purines (adenine and guanine) are degraded via xanthine to uric acid, which is excreted in urine. Unlike most other mammals, humans lack uricase (urate oxidase) to convert uric acid into more soluble allantoin.",
+      "verified": false,
+      "open": {
+        "q": "Which compound is the terminal end product of purine breakdown in humans?",
+        "accept": [
+          "uric acid",
+          "urate"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "How does allopurinol lower serum uric acid levels in patients with chronic gout?",
+      "options": [
+        "Inhibits xanthine oxidase",
+        "Stimulates renal tubular reabsorption of urate",
+        "Converts uric acid into allantoin in the liver",
+        "Directly degrades DNA in circulating leukocytes"
+      ],
+      "answer": 0,
+      "explain": "Allopurinol (and its active metabolite oxypurinol) acts as a suicide/competitive inhibitor of xanthine oxidase, reducing conversion of hypoxanthine to xanthine and xanthine to uric acid. More soluble hypoxanthine and xanthine are excreted instead.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme does allopurinol inhibit to decrease uric acid production?",
+        "accept": [
+          "xanthine oxidase",
+          "xanthine oxidoreductase"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-029",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "Which enzyme converts deoxyuridine monophosphate (dUMP) into deoxythymidine monophosphate (dTMP) using N5,N10-methylenetetrahydrofolate?",
+      "options": [
+        "Thymidylate synthase",
+        "Ribonucleotide reductase",
+        "Orotate phosphoribosyltransferase",
+        "Nucleoside diphosphate kinase"
+      ],
+      "answer": 0,
+      "explain": "Thymidylate synthase methylates dUMP at position 5 to produce dTMP, utilizing N5,N10-methylenetetrahydrofolate as the one-carbon donor and oxidizing folate to dihydrofolate. It is a major target of anticancer drugs such as 5-fluorouracil.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme methylates dUMP to form dTMP during thymidylate synthesis?",
+        "accept": [
+          "thymidylate synthase",
+          "TMP synthase"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "Which enzyme converts ribonucleoside diphosphates (NDPs) into deoxyribonucleoside diphosphates (dNDPs) for DNA synthesis?",
+      "options": [
+        "Ribonucleotide reductase",
+        "DNA polymerase alpha",
+        "RNA polymerase II",
+        "Deoxyribonuclease I"
+      ],
+      "answer": 0,
+      "explain": "Ribonucleotide reductase reduces the 2-hydroxyl group on the ribose ring of NDPs (ADP, GDP, CDP, UDP) to form 2-deoxyribonucleoside diphosphates (dNDPs) required for DNA replication. It uses thioredoxin or glutaredoxin as reducing equivalents.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme reduces ribonucleotides to deoxyribonucleotides for DNA synthesis?",
+        "accept": [
+          "ribonucleotide reductase",
+          "RNR"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-031",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "A patient with gout is treated with a drug that inhibits xanthine oxidase. Which pair of purine metabolites is expected to accumulate upstream of uric acid?",
+      "options": [
+        "Hypoxanthine and xanthine",
+        "Adenosine and guanosine",
+        "IMP and GMP",
+        "Carbamoyl phosphate and orotate"
+      ],
+      "answer": 0,
+      "explain": "Xanthine oxidase catalyses hypoxanthine to xanthine and xanthine to uric acid. Its inhibition reduces urate formation and increases the upstream substrates hypoxanthine and xanthine.",
+      "verified": false,
+      "open": {
+        "q": "A patient with gout is treated with a drug that inhibits xanthine oxidase. Which pair of purine metabolites is expected to accumulate upstream of uric acid?",
+        "accept": [
+          "Hypoxanthine and xanthine"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-032",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "A child with Lesch-Nyhan syndrome has hyperuricaemia and self-injurious behaviour. Which enzyme activity is deficient?",
+      "options": [
+        "Hypoxanthine-guanine phosphoribosyltransferase",
+        "Adenosine deaminase",
+        "Xanthine oxidase",
+        "Orotate phosphoribosyltransferase"
+      ],
+      "answer": 0,
+      "explain": "Lesch-Nyhan syndrome is caused by severe deficiency of HGPRT, a purine salvage enzyme that converts hypoxanthine and guanine to IMP and GMP using PRPP. Increased de novo purine synthesis and degradation contribute to hyperuricaemia.",
+      "verified": false,
+      "open": {
+        "q": "A child with Lesch-Nyhan syndrome has hyperuricaemia and self-injurious behaviour. Which enzyme activity is deficient?",
+        "accept": [
+          "Hypoxanthine-guanine phosphoribosyltransferase (HGPRT)"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "A patient receiving methotrexate develops impaired DNA synthesis. Which enzyme is directly inhibited by methotrexate?",
+      "options": [
+        "Dihydrofolate reductase",
+        "Thymidylate synthase",
+        "Ribonucleotide reductase",
+        "DNA polymerase α"
+      ],
+      "answer": 0,
+      "explain": "Methotrexate inhibits dihydrofolate reductase, limiting regeneration of tetrahydrofolate derivatives required for one-carbon transfer reactions, including thymidylate and purine synthesis.",
+      "verified": false,
+      "open": {
+        "q": "A patient receiving methotrexate develops impaired DNA synthesis. Which enzyme is directly inhibited by methotrexate?",
+        "accept": [
+          "Dihydrofolate reductase"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-034",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "A deficiency of orotic acid phosphoribosyltransferase and OMP decarboxylase causes which biochemical pattern?",
+      "options": [
+        "Orotic aciduria with megaloblastic anaemia and no hyperammonaemia",
+        "Hyperammonaemia with low urinary orotate",
+        "Increased uric acid with gout",
+        "Lactic acidosis with hypoglycaemia"
+      ],
+      "answer": 0,
+      "explain": "Hereditary orotic aciduria results from deficient UMP synthase activity (orotic acid phosphoribosyltransferase and OMP decarboxylase). Pyrimidine synthesis is impaired, causing orotate accumulation and megaloblastic anaemia; unlike OTC deficiency, hyperammonaemia is absent.",
+      "verified": false,
+      "open": {
+        "q": "A deficiency of orotic acid phosphoribosyltransferase and OMP decarboxylase causes which biochemical pattern?",
+        "accept": [
+          "Orotic aciduria with megaloblastic anaemia and no hyperammonaemia"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-035",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Structure",
+      "q": "Which bond links adjacent nucleotides within a single DNA strand?",
+      "options": [
+        "3′–5′ phosphodiester bond",
+        "Hydrogen bond",
+        "N-glycosidic bond",
+        "Peptide bond"
+      ],
+      "answer": 0,
+      "explain": "Adjacent nucleotides in a DNA strand are joined by 3′–5′ phosphodiester bonds between the 3′ hydroxyl of one sugar and the 5′ phosphate of the next. Hydrogen bonds pair complementary bases across the two strands.",
+      "verified": false,
+      "open": {
+        "q": "Which bond links adjacent nucleotides within a single DNA strand?",
+        "accept": [
+          "3′–5′ phosphodiester bond"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-036",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Types of RNA",
+      "q": "During translation, which RNA molecule carries an amino acid and pairs its anticodon with an mRNA codon?",
+      "options": [
+        "Transfer RNA",
+        "Ribosomal RNA",
+        "Heterogeneous nuclear RNA",
+        "Small nuclear RNA"
+      ],
+      "answer": 0,
+      "explain": "Transfer RNA acts as an adaptor in translation. Its anticodon base-pairs with the complementary mRNA codon, while its 3′ CCA terminus carries the corresponding amino acid.",
+      "verified": false,
+      "open": {
+        "q": "During translation, which RNA molecule carries an amino acid and pairs its anticodon with an mRNA codon?",
+        "accept": [
+          "Transfer RNA (tRNA)"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-037",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Structure",
+      "q": "A laboratory assay detects DNA synthesis proceeding discontinuously on one template strand. What are the short newly synthesised fragments called?",
+      "options": [
+        "Okazaki fragments",
+        "Holliday junctions",
+        "Telomeres",
+        "Primosomes"
+      ],
+      "answer": 0,
+      "explain": "DNA polymerase synthesises DNA only in the 5′ to 3′ direction. The lagging strand is therefore made discontinuously as Okazaki fragments, which are subsequently joined by DNA ligase.",
+      "verified": false,
+      "open": {
+        "q": "A laboratory assay detects DNA synthesis proceeding discontinuously on one template strand. What are the short newly synthesised fragments called?",
+        "accept": [
+          "Okazaki fragments"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-038",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Nucleotide Metabolism and Clinical Correlations",
+      "q": "A patient with severe combined immunodeficiency has a deficiency of adenosine deaminase. Which metabolite accumulation is particularly toxic to lymphocytes?",
+      "options": [
+        "Deoxyadenosine nucleotides, especially dATP",
+        "Uric acid",
+        "Orotic acid",
+        "Thymidine monophosphate"
+      ],
+      "answer": 0,
+      "explain": "Adenosine deaminase deficiency causes accumulation of adenosine and deoxyadenosine metabolites. Increased dATP inhibits ribonucleotide reductase, disrupting deoxynucleotide production and impairing lymphocyte DNA synthesis.",
+      "verified": false,
+      "open": {
+        "q": "A patient with severe combined immunodeficiency has a deficiency of adenosine deaminase. Which metabolite accumulation is particularly toxic to lymphocytes?",
+        "accept": [
+          "Deoxyadenosine nucleotides, especially dATP"
+        ]
+      }
+    }
+  ]
 }
