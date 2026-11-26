@@ -122,7 +122,11 @@ window.DX = window.DX || {};
       DX.questionsLoading = true;
       DX.questionFilesLoaded = 0;
       DX.questionFilesTotal = (man.questions || []).length;
-      (man.questions || []).forEach(function (f) {
+      /* Start True/False files first so that mode can become usable before the full bank finishes. */
+      var questionFiles = (man.questions || []).slice().sort(function (a, b) {
+        return (String(b).indexOf("tf-") === 0 ? 1 : 0) - (String(a).indexOf("tf-") === 0 ? 1 : 0);
+      });
+      questionFiles.forEach(function (f) {
         jobs.push(function () { return getJSON("data/questions/" + f + ".json").then(function (d) {
           /* One topic for the whole file ("topic"), or a "topic" on each question to mix topics in one file. A question's own topic wins. */
           var beforeTf = DX.tfStems.length;
