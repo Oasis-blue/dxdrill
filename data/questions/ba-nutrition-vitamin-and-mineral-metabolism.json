@@ -470,10 +470,10 @@
    "sub": "Water-Soluble Vitamins (B-Complex and Vitamin C)",
    "q": "How does folate deficiency cause megaloblastic anemia without causing the subacute combined degeneration of the spinal cord seen in vitamin B12 deficiency?",
    "options": [
-    "Folate (as N5,N10-methylene-THF) is required for thymidylate synthase (dTMP synthesis) and purine synthesis needed for DNA replication and RBC maturation, whereas vitamin B12 is uniquely required for methionine synthase and methylmalonyl-CoA mutase (whose failure leads to abnormal fatty acid incorporation into neuronal myelin)",
-    "Folate blocks erythropoietin receptor transcription",
-    "Vitamin B12 is needed only for hemoglobin iron insertion",
-    "Folate deficiency increases serum homocysteine less than B12 deficiency"
+    "Folate deficiency impairs DNA synthesis; B12 deficiency also disrupts myelin maintenance through methylmalonyl-CoA mutase",
+    "Folate deficiency selectively blocks haem synthesis, whereas B12 deficiency blocks iron absorption",
+    "Folate is stored in the liver for years, whereas B12 is rapidly excreted",
+    "Only folate is needed for red-cell maturation; B12 is needed only for nerve conduction"
    ],
    "answer": 0,
    "explain": "Both folate and B12 deficiencies impair thymidylate synthesis and cause megaloblastic anemia ('methyl trap' in B12 deficiency traps folate as N5-methyl-THF), while only B12 deficiency impairs methylmalonyl-CoA mutase (accumulating methylmalonic acid) and causes demyelination.",
@@ -584,10 +584,10 @@
    "sub": "Major Minerals and Calcium-Phosphate Homeostasis",
    "q": "How does parathyroid hormone (PTH) regulate serum calcium and phosphate levels across bone, kidney, and indirectly the intestine?",
    "options": [
-    "Lowers serum calcium and raises serum phosphate",
-    "Increases serum calcium by stimulating bone resorption (indirectly via RANKL on osteoblasts) and renal distal calcium reabsorption, lowers serum phosphate by inhibiting renal proximal phosphate reabsorption, and stimulates renal 1-alpha-hydroxylase to increase calcitriol (enhancing intestinal Ca2+ absorption)",
-    "Stimulates calcitonin secretion directly from thyroid C-cells to deposit calcium into bone",
-    "Blocks all renal calcium reabsorption"
+    "Lowers serum calcium and raises phosphate by inhibiting osteoclast activity",
+    "Raises serum calcium and lowers phosphate through effects on bone and kidney; it also stimulates calcitriol production",
+    "Raises both calcium and phosphate by increasing their renal reabsorption",
+    "Lowers both calcium and phosphate by suppressing intestinal absorption"
    ],
    "answer": 1,
    "explain": "PTH acts rapidly on bone and kidney to raise serum Ca2+ and lower serum PO4^3-, while inducing renal CYP27B1 to boost calcitriol for sustained intestinal calcium uptake.",
@@ -677,10 +677,10 @@
    "sub": "Major Minerals and Calcium-Phosphate Homeostasis",
    "q": "How do aldosterone and antidiuretic hormone (ADH / vasopressin) regulate sodium, potassium, and water balance differently?",
    "options": [
-    "Aldosterone acts on the principal cells of the renal collecting duct to increase Na+ reabsorption and K+/H+ excretion (raising blood volume/pressure), whereas ADH increases water permeability of the collecting duct via aquaporin-2 insertion (concentrating urine and lowering serum osmolality when in excess)",
-    "Aldosterone promotes water excretion; ADH promotes potassium excretion",
-    "Both hormones act exclusively in the proximal convoluted tubule",
-    "Neither hormone affects the renal collecting duct"
+    "Aldosterone increases renal sodium reabsorption and potassium secretion; ADH increases collecting-duct water permeability",
+    "Aldosterone increases free-water excretion; ADH increases potassium secretion",
+    "Both hormones act mainly in the proximal tubule to increase glucose reabsorption",
+    "ADH increases sodium excretion, whereas aldosterone inhibits water reabsorption"
    ],
    "answer": 0,
    "explain": "Aldosterone (a mineralocorticoid) upregulates ENaC, Na+/K+-ATPase, and H+-ATPase/ROMK in collecting duct principal/intercalated cells, whereas ADH (vasopressin) promotes insertion of aquaporin-2 water channels into the apical membrane of collecting duct principal cells.",
@@ -701,10 +701,10 @@
    "sub": "Iron, Copper, Zinc, and Iodine Metabolism",
    "q": "How does hepcidin (a peptide hormone synthesized primarily by the liver) regulate systemic iron homeostasis?",
    "options": [
-    "Stimulates ferroportin to export more iron from enterocytes and macrophages",
-    "Binds to ferroportin (the sole known cellular iron exporter) on enterocytes, macrophages, and hepatocytes, inducing its internalization and lysosomal degradation to decrease dietary iron absorption and trap iron in macrophages (causing anemia of inflammation when elevated)",
-    "Increases intestinal transferrin receptor synthesis",
-    "Converts ferric iron into hemoglobin directly"
+    "Activates ferroportin to increase iron release into plasma",
+    "Binds ferroportin and promotes its degradation, reducing intestinal iron absorption and macrophage iron release",
+    "Increases transferrin synthesis to deliver more iron to marrow",
+    "Converts ferric iron into ferrous iron within circulating erythrocytes"
    ],
    "answer": 1,
    "explain": "Hepcidin rises with high iron stores or inflammation (via IL-6), degrading ferroportin to limit iron entry into plasma; conversely, hepcidin deficiency (e.g., HFE mutation) causes excessive iron absorption and hereditary hemochromatosis.",
@@ -879,10 +879,10 @@
    "sub": "Nutrition in Special States and Refeeding Syndrome",
    "q": "Why does refeeding syndrome occur when malnourished or prolonged-fasting patients are rapidly fed high-carbohydrate calories without adequate electrolyte and vitamin supplementation?",
    "options": [
-    "Carbohydrate-induced insulin surge drives intracellular shift of potassium, phosphate, and magnesium (plus increased ATP/glucose phosphorylation consuming phosphate and thiamine), causing potentially fatal hypophosphatemia, hypokalemia, hypomagnesemia, arrhythmias, respiratory muscle weakness, and Wernicke encephalopathy",
-    "Rapid feeding causes severe hypernatremia and hypercalcemia immediately",
-    "Refeeding increases serum albumin to 8 g/dL",
-    "Refeeding blocks all intestinal nutrient absorption"
+    "Insulin drives phosphate, potassium and magnesium into cells, causing potentially dangerous serum depletion",
+    "Rapid feeding causes immediate hypercalcaemia and sodium retention",
+    "Refeeding suppresses insulin and causes severe hyperglycaemia",
+    "High-carbohydrate feeding prevents cellular ATP synthesis"
    ],
    "answer": 0,
    "explain": "During starvation, intracellular phosphate, potassium, and magnesium stores are depleted despite near-normal serum levels; refeeding insulin shifts these ions into cells and consumes phosphate/thiamine in anabolic phosphorylation, requiring slow caloric advancement, electrolyte repletion, and thiamine supplementation.",
@@ -902,10 +902,10 @@
    "sub": "Nutrition in Special States and Refeeding Syndrome",
    "q": "What is the biochemical basis of lactose intolerance in adults with lactase non-persistence?",
    "options": [
-    "Deficiency of intestinal brush-border lactase (beta-galactosidase) leaves unhydrolyzed lactose in the intestinal lumen, drawing water osmotically (causing osmotic diarrhea) while colonic bacteria ferment lactose into hydrogen, methane, and short-chain fatty acids (causing bloating, flatulence, and abdominal cramps)",
-    "Allergic IgE-mediated mast cell degranulation to milk sugar",
-    "Excessive hepatic gluconeogenesis from galactose",
-    "Inability to absorb free glucose in the jejunum"
+    "Low brush-border lactase leaves lactose unabsorbed, causing osmotic diarrhoea and bacterial fermentation",
+    "IgE-mediated allergy to milk proteins causes immediate mast-cell degranulation",
+    "Excess hepatic galactose production overwhelms renal excretion",
+    "Failure of intestinal glucose transport prevents lactose digestion"
    ],
    "answer": 0,
    "explain": "Primary adult-type hypolactasia (lactase non-persistence) is the most common cause of lactose intolerance worldwide; unabsorbed osmotically active disaccharide increases luminal water and undergoes bacterial fermentation.",
@@ -1200,10 +1200,10 @@
    "sub": "Water-Soluble Vitamins (B-Complex and Vitamin C)",
    "q": "How does nicotinic acid (niacin at pharmacological doses, typically grams/day) alter plasma lipoproteins?",
    "options": [
-    "Inhibits adipose tissue hormone-sensitive lipase (reducing free fatty acid flux to the liver) and decreases hepatic VLDL/triglyceride synthesis, lowering LDL cholesterol and raising HDL cholesterol (though limited by prostaglandin-mediated flushing and hepatotoxicity/hyperglycemia/hyperuricemia)",
-    "Blocks all intestinal cholesterol absorption via NPC1L1",
-    "Directly degrades HDL apolipoproteins",
-    "Increases chylomicron secretion in the small intestine"
+    "Reduces adipose lipolysis and hepatic VLDL production, lowering triglycerides and LDL while raising HDL",
+    "Blocks intestinal NPC1L1 and prevents dietary cholesterol absorption",
+    "Directly activates lipoprotein lipase to clear chylomicrons",
+    "Increases hepatic cholesterol synthesis and suppresses HDL formation"
    ],
    "answer": 0,
    "explain": "Pharmacological niacin acts via adipocyte HCAR2/GPR109A receptors to suppress lipolysis and lowers hepatic VLDL assembly, raising HDL and lowering LDL/triglycerides.",

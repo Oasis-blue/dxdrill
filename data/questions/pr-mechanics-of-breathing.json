@@ -238,10 +238,10 @@
    "sub": "Lung and Chest Wall Compliance",
    "q": "What is 'hysteresis' on a static lung pressure-volume loop, and why is it dramatically reduced when an excised lung is inflated with isotonic saline instead of air?",
    "options": [
-    "Hysteresis is the difference between inflation and deflation pressure-volume paths (greater volume at a given pressure during deflation than inflation); saline abolishes the air-liquid interface and surface tension, proving that alveolar surface tension accounts for ~two-thirds of total lung elastic recoil and hysteresis",
-    "Hysteresis is complete airway closure during inspiration; saline dissolves alveolar surfactant",
-    "Hysteresis occurs only in skeletal muscle fibers",
-    "Saline inflation makes the lung ten times stiffer than air inflation"
+    "Hysteresis is the difference between inflation and deflation pressure-volume curves; saline reduces it by removing the air-liquid surface tension",
+    "Hysteresis is airway closure during inspiration and is increased by saline",
+    "Hysteresis occurs only in skeletal muscle and is unrelated to lung mechanics",
+    "Saline increases alveolar surface tension and makes the lung markedly stiffer"
    ],
    "answer": 0,
    "explain": "During air inflation, higher pressure is needed to overcome surface tension and recruit closed alveoli, whereas during deflation surfactant concentrates and lowers surface tension; saline eliminates surface tension, leaving only tissue elastin/collagen recoil.",
@@ -284,10 +284,10 @@
    "sub": "Alveolar Surface Tension, Laplace's Law, and Surfactant",
    "q": "Which alveolar cells synthesize pulmonary surfactant, what is its major phospholipid component, and how does surfactant stabilize alveoli of varying radii?",
    "options": [
-    "Type I pneumocytes; sphingomyelin; increases surface tension during expiration",
-    "Type II pneumocytes (granular pneumocytes); dipalmitoylphosphatidylcholine (DPPC / lecithin) plus surfactant proteins SP-A, B, C, D; DPPC molecules pack more densely as alveolar radius shrinks during expiration, lowering surface tension (T) proportionally to radius (r) to equalize collapsing pressure",
-    "Alveolar macrophages; cholesterol; paralyzes bronchial smooth muscle",
-    "Goblet cells; mucin; blocks water evaporation"
+    "Type I pneumocytes; sphingomyelin; raises surface tension during expiration",
+    "Type II pneumocytes produce DPPC-rich surfactant, which lowers surface tension and stabilises small alveoli",
+    "Alveolar macrophages; cholesterol; relaxes bronchial smooth muscle",
+    "Goblet cells; mucin; prevents water evaporation from the pleural cavity"
    ],
    "answer": 1,
    "explain": "Amphipathic DPPC inserts between water molecules at the air-liquid interface, disrupting hydrogen bonds; as an alveolus shrinks, DPPC surface concentration rises, dropping T dramatically to prevent end-expiratory collapse and reduce work of breathing.",
@@ -399,10 +399,10 @@
    "sub": "Dynamic Airway Compression and Equal Pressure Point",
    "q": "What is 'dynamic airway compression' during a forced expiration, and what is the 'equal pressure point' (EPP)?",
    "options": [
-    "During forced expiration, high positive intrapleural pressure exceeds intraluminal airway pressure downstream of the equal pressure point (where intraluminal pressure equals intrapleural pressure) in cartilaginous-lacking bronchioles, compressing airways and making peak expiratory flow effort-independent",
-    "Dynamic compression occurs during quiet inspiration when intrapleural pressure becomes +30 cmH2O",
-    "The equal pressure point is where alveolar PO2 equals venous PCO2",
-    "Cartilage rings in alveoli prevent any airway compression"
+    "During forced expiration, intraluminal pressure falls along the airway; beyond the equal-pressure point, positive pleural pressure compresses collapsible airways",
+    "Dynamic compression occurs during quiet inspiration when pleural pressure becomes strongly positive",
+    "The equal-pressure point is where alveolar oxygen equals venous carbon dioxide",
+    "Cartilage prevents compression of all airways, including small bronchioles"
    ],
    "answer": 0,
    "explain": "As air flows from alveoli toward the mouth during forced expiration, resistive pressure drops along the airway; once intraluminal pressure falls below surrounding positive intrapleural pressure, non-cartilaginous airways compress, limiting maximal flow regardless of greater expiratory effort.",
@@ -491,10 +491,10 @@
    "sub": "Work of Breathing and Closing Capacity",
    "q": "What is 'closing capacity' (CC), and what happens when closing capacity exceeds functional residual capacity (FRC), such as with advancing age or supine posture?",
    "options": [
-    "Closing capacity is the lung volume (closing volume + residual volume) at which small dependent airways at the lung base begin to collapse during expiration; when CC > FRC, dependent airways close during normal tidal breathing, causing ventilation-perfusion (V/Q) mismatch and hypoxemia",
-    "Closing capacity is the maximal volume inhaled after a forced expiration",
-    "Closing capacity is zero in elderly individuals",
-    "When CC > FRC, arterial PO2 rises to 150 mmHg"
+    "Closing capacity is the volume at which small airways begin to close; if it exceeds FRC, airway closure occurs during tidal breathing",
+    "Closing capacity is the maximum volume inhaled after a forced expiration",
+    "Closing capacity is always zero in older adults",
+    "When closing capacity exceeds FRC, arterial oxygen tension rises"
    ],
    "answer": 0,
    "explain": "As elastic recoil declines with age, closing capacity rises from ~30% of TLC in young adults to exceed FRC (~45% of TLC) around age 65 upright (and ~44 supine), explaining the age-related decline in resting PaO2.",
@@ -537,10 +537,10 @@
    "sub": "Lung Volumes, Capacities, and Dead Space",
    "q": "How do 'anatomical dead space' and 'physiological dead space' differ in a healthy person versus a patient with pulmonary embolism?",
    "options": [
-    "Anatomical dead space (~150 mL) is the volume of conducting airways (nose to terminal bronchioles) where no gas exchange occurs; physiological dead space equals anatomical dead space plus alveolar dead space (ventilated alveoli lacking perfusion), so they are nearly equal in health (~150 mL) but physiological dead space rises markedly in pulmonary embolism",
-    "Anatomical dead space is 1,500 mL and physiological dead space is 0 mL in healthy adults",
-    "Physiological dead space is measured using the Nernst equation",
-    "Pulmonary embolism eliminates anatomical dead space completely"
+    "Anatomical dead space is conducting airway volume; physiological dead space also includes ventilated but underperfused alveoli and rises in pulmonary embolism",
+    "Anatomical dead space is the volume of perfused alveoli; physiological dead space excludes alveolar dead space",
+    "Both terms describe the same volume in health and disease",
+    "Pulmonary embolism increases anatomical dead space by collapsing the trachea"
    ],
    "answer": 0,
    "explain": "Physiological dead space (VD) is calculated via the Bohr equation: VD / VT = (PaCO2 - PECO2) / PaCO2; pulmonary embolism blocks capillary perfusion to ventilated alveoli, creating large alveolar dead space.",
@@ -629,10 +629,10 @@
    "sub": "Clinical Correlations",
    "q": "A 58-year-old man with a 40-pack-year smoking history presents with progressive exertional dyspnea, barrel chest, hyperresonant lung fields, prolonged expiratory phase, and spirometry showing FEV1/FVC of 52% (normal >70-75%) and elevated TLC and RV. What is the mechanical basis of his barrel chest and reduced FEV1/FVC?",
    "options": [
-    "Destruction of alveolar septal elastin increases lung compliance and reduces inward elastic recoil, so equilibrium between outward chest wall recoil and inward lung recoil occurs at a higher lung volume (hyperinflation/barrel chest), while loss of radial traction causes early dynamic airway collapse during forced expiration",
-    "Excessive collagen deposition stiffens the alveoli and shrinks total lung capacity",
-    "Surfactant overproduction blocks the trachea",
-    "Phrenic nerve paralysis increases FEV1/FVC to 98%"
+    "Loss of elastic recoil increases compliance and causes hyperinflation; reduced radial traction promotes expiratory airway collapse",
+    "Excess collagen stiffens the lungs, increasing TLC and causing a barrel chest",
+    "Surfactant overproduction obstructs the trachea and lowers residual volume",
+    "Phrenic nerve paralysis increases elastic recoil and raises FEV1/FVC"
    ],
    "answer": 0,
    "explain": "In emphysema, weak inward lung elastic recoil shifts FRC upward (chest wall springs outward into a barrel configuration) and diminishes radial tethering of small airways, markedly slowing forced expiration (low FEV1 and low FEV1/FVC).",
@@ -675,10 +675,10 @@
    "sub": "Clinical Correlations",
    "q": "A 34-year-old woman sustains a complete traumatic spinal cord transection at the C2 vertebral level in a motor vehicle collision and immediately develops apneic respiratory arrest requiring mechanical ventilation. Why does a C2 transection cause complete paralysis of breathing whereas a C6 transection spares quiet diaphragmatic breathing?",
    "options": [
-    "The phrenic nerve arises from C3, C4, and C5 ('C3, 4, 5 keep the diaphragm alive'); a C2 lesion interrupts descending medullary bulbospinal drive above C3-C5, paralyzing both the diaphragm and intercostals, whereas a C6 lesion leaves the phrenic nerve intact",
-    "The phrenic nerve arises from T1-T6",
-    "A C2 lesion destroys the vagus nerve in the neck",
-    "Intercostal muscles alone can sustain normal breathing without the diaphragm"
+    "A C2 lesion interrupts descending drive to phrenic motor neurons (C3–C5); a C6 lesion usually spares diaphragmatic innervation",
+    "The phrenic nerve arises from T1–T6, so both lesions spare diaphragmatic breathing",
+    "A C2 lesion affects only the vagus nerve and leaves respiratory muscles intact",
+    "Intercostal muscles alone maintain normal quiet breathing after a C2 lesion"
    ],
    "answer": 0,
    "explain": "High cervical lesions above C3 sever descending respiratory drive from the medullary ventral/dorsal respiratory groups to phrenic motor neurons (C3-C5), whereas lesions below C5 paralyze intercostal and abdominal muscles while preserving phrenic diaphragmatic inspiration.",

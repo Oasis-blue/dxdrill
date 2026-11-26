@@ -147,10 +147,10 @@
    "sub": "Scope of Pharmacology",
    "q": "How is a drug formally defined by the World Health Organization?",
    "options": [
-    "Any chemical agent that cures an infectious disease",
-    "A synthetic compound prescribed exclusively by physicians",
-    "Any substance used to modify physiological systems or pathological states for the benefit of the recipient",
-    "Any alkaloid extracted from medicinal plants for therapeutic trials"
+    "Any agent that cures infection",
+    "A synthetic medicine prescribed only by doctors",
+    "A substance used to modify physiological function or disease for benefit",
+    "A plant-derived alkaloid used in trials"
    ],
    "answer": 2,
    "explain": "The WHO defines a drug broadly as any substance or product used or intended to be used to modify or explore physiological systems or pathological states for the benefit of the recipient.",
@@ -801,10 +801,10 @@
    "sub": "Routes of Administration",
    "q": "Why should irritating drugs NOT be injected via the subcutaneous route?",
    "options": [
-    "Subcutaneous fat degrades all water-soluble drugs instantly",
+    "Subcutaneous tissue has abundant sensory nerves and relatively limited perfusion, so irritants can cause pain and tissue injury",
+    "Subcutaneous tissue rapidly degrades every water-soluble drug",
     "Subcutaneous capillaries drain directly into the portal vein",
-    "Subcutaneous tissue has rich sensory innervation and poor vascularity, risking severe pain and tissue sloughing",
-    "Subcutaneous injections cause immediate systemic anaphylaxis"
+    "Subcutaneous injections always cause systemic anaphylaxis"
    ],
    "answer": 2,
    "explain": "Subcutaneous tissue has abundant pain receptors and slower blood flow than muscle; irritants cause severe pain, sterile abscesses, or necrosis.",
@@ -940,10 +940,10 @@
    "sub": "Routes of Administration",
    "q": "Why is the inhalational route particularly advantageous for administering salbutamol in bronchial asthma?",
    "options": [
-    "It delivers high local drug concentrations directly to bronchial smooth muscle with minimal systemic side effects",
-    "It guarantees 100% of the actuated dose reaches the alveoli",
-    "It converts salbutamol into an active metabolite in the nasal mucosa",
-    "It prolongs the drug half-life to 72 hours"
+    "It delivers high local airway concentrations with less systemic exposure",
+    "All inhaled drug reaches the alveoli",
+    "It activates salbutamol in nasal mucosa",
+    "It extends drug half-life to 72 hours"
    ],
    "answer": 0,
    "explain": "Inhaled bronchodilators act directly on beta-2 receptors in the airways with rapid onset and low systemic plasma levels, reducing tremors and tachycardia.",
@@ -963,10 +963,10 @@
    "sub": "Routes of Administration",
    "q": "Which inhalational anesthetic property allows rapid induction and rapid recovery when administered via the lungs?",
    "options": [
-    "High protein binding",
-    "Large alveolar surface area and rapid gas exchange across the alveolar-capillary membrane",
+    "High protein binding and extensive hepatic metabolism",
+    "Large alveolar area and a thin alveolar-capillary barrier",
     "Extensive biliary excretion",
-    "Active tubular secretion in the nephron"
+    "Active renal tubular secretion"
    ],
    "answer": 1,
    "explain": "The huge surface area of the alveoli and thin alveolar-capillary membrane allow volatile anesthetics to equilibrate rapidly between alveolar air and arterial blood.",
@@ -1055,10 +1055,10 @@
    "sub": "Routes of Administration",
    "q": "Why are sustained-release (controlled-release) oral tablets NOT suitable for crushing or chewing before swallowing?",
    "options": [
-    "Crushing inactivates the drug into toxic free radicals",
-    "Destroying the release matrix dumps the entire multi-hour dose at once, risking acute toxicity",
-    "Crushed tablets permanently stain dental enamel",
-    "The drug can only be absorbed in the oral cavity"
+    "Crushing creates toxic free radicals",
+    "Breaking the release system may release the full dose rapidly",
+    "Crushing permanently stains teeth",
+    "Absorption occurs only through oral mucosa"
    ],
    "answer": 1,
    "explain": "Controlled-release formulations contain a large total dose designed to release slowly; crushing destroys the matrix and causes rapid dose-dumping and overdose.",
@@ -1078,10 +1078,10 @@
    "sub": "Routes of Administration",
    "q": "What is the primary purpose of enteric-coating an oral tablet such as aspirin or omeprazole?",
    "options": [
-    "To increase drug absorption in the stomach",
-    "To mask the bitter taste in the mouth only",
-    "To prevent drug degradation by gastric acid or protect the gastric mucosa from irritation",
-    "To bypass hepatic portal blood flow completely"
+    "To increase gastric absorption",
+    "To mask taste",
+    "To resist gastric acid and release drug in the intestine",
+    "To eliminate hepatic first-pass metabolism"
    ],
    "answer": 2,
    "explain": "Enteric coatings resist dissolution in acidic gastric juice and dissolve only in the alkaline pH of the small intestine, protecting acid-labile drugs (omeprazole) or the stomach lining (aspirin).",
@@ -1194,10 +1194,10 @@
    "sub": "Routes of Administration",
    "q": "Why is vasoconstrictor adrenaline (epinephrine) often co-administered with local anesthetics like lidocaine during subcutaneous infiltration?",
    "options": [
-    "To accelerate systemic clearance of lidocaine by the liver",
-    "To increase systemic toxicity and central nervous stimulation",
-    "To neutralize the acidic pH of the subcutaneous tissue",
-    "To produce local vasoconstriction that prolongs local anesthesia and reduces systemic absorption"
+    "To speed hepatic lidocaine clearance",
+    "To increase systemic toxicity",
+    "To neutralise tissue acidity",
+    "Local vasoconstriction slows absorption and prolongs anaesthesia"
    ],
    "answer": 3,
    "explain": "Adrenaline stimulates alpha-1 receptors on local blood vessels, slowing systemic washout of lidocaine, prolonging nerve block duration, and lowering peak plasma toxicity.",
@@ -1265,10 +1265,10 @@
    "sub": "Scope of Pharmacology",
    "q": "What distinguishes a prodrug from an active drug?",
    "options": [
-    "A prodrug is excreted completely unchanged in the faeces",
-    "A prodrug is only used in veterinary medicine",
-    "A prodrug is pharmacologically inactive until converted into an active metabolite in vivo",
-    "A prodrug binds covalently and irreversibly to plasma albumin"
+    "A prodrug is excreted unchanged",
+    "A prodrug is used only in veterinary medicine",
+    "A prodrug is converted in vivo to an active metabolite",
+    "A prodrug binds irreversibly to albumin"
    ],
    "answer": 2,
    "explain": "Prodrugs (such as levodopa, enalapril, and clopidogrel) are inactive precursors designed to improve oral bioavailability, tissue penetration, or stability before enzymatic activation in the body.",

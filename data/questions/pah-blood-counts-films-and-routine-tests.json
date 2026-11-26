@@ -32,10 +32,10 @@
    "sub": "Anticoagulants and Sample Handling",
    "q": "Why should peripheral blood films be prepared within 2 to 4 hours of collecting blood into an EDTA tube?",
    "options": [
-    "Prolonged EDTA exposure causes red cell swelling, echinocyte crenation, neutrophil nuclear lobulation artifacts, and vacuolation",
-    "EDTA converts all haemoglobin into methaemoglobin within 4 hours",
-    "EDTA stimulates rapid mitotic division of mature lymphocytes in vitro",
-    "Prolonged storage in EDTA dissolves all eosinophil granules"
+    "Storage alters cell morphology, causing red-cell swelling and degenerative leukocyte changes",
+    "EDTA converts all haemoglobin into methaemoglobin within minutes",
+    "EDTA causes mature lymphocytes to undergo rapid mitosis",
+    "Storage selectively removes all eosinophils from the specimen"
    ],
    "answer": 0,
    "explain": "Storage of EDTA-anticoagulated blood at room temperature beyond 4 hours induces osmotic red cell swelling (falsely raising MCV and lowering MCHC), crenation, and degenerative nuclear swelling or cytoplasmic vacuolation in neutrophils.",
@@ -101,10 +101,10 @@
    "sub": "Red Cell Indices and Automated FBC",
    "q": "How does the Red Cell Distribution Width (RDW) help distinguish uncomplicated beta-thalassaemia trait from iron deficiency anaemia when both present with microcytosis (low MCV)?",
    "options": [
-    "RDW is typically normal in beta-thalassaemia trait (uniform microcytosis) and elevated in iron deficiency anaemia (marked anisocytosis)",
-    "RDW is markedly elevated in beta-thalassaemia trait and near zero in iron deficiency anaemia",
-    "RDW measures platelet size variation and is unaffected by red cell volume",
-    "RDW is elevated only when macrocytes exceed 120 fL"
+    "RDW is often normal in thalassaemia trait but increased in iron deficiency due to greater size variation",
+    "RDW is always higher in thalassaemia trait and absent in iron deficiency",
+    "RDW measures platelet size and is unaffected by red-cell volume",
+    "RDW rises only when the mean cell volume exceeds 120 fL"
    ],
    "answer": 0,
    "explain": "RDW is the coefficient of variation of red cell volume distribution; thalassaemia trait produces a homogeneous population of small red cells (normal RDW), whereas progressive iron depletion generates microcytes alongside older normocytes (high RDW).",
@@ -124,10 +124,10 @@
    "sub": "Red Cell Indices and Automated FBC",
    "q": "Which physical principle is employed by most automated haematology analyzers (the Coulter principle) to count and size erythrocytes, leukocytes, and platelets simultaneously?",
    "options": [
-    "Electrical impedance (measuring changes in electrical resistance as cells pass through a narrow aperture)",
-    "Atomic absorption spectroscopy",
-    "Radioimmunoassay competitive binding",
-    "Paper chromatography capillary migration"
+    "Electrical impedance: cells passing through an aperture produce pulses proportional to their number and volume",
+    "Atomic absorption: cells emit light according to their haemoglobin concentration",
+    "Radioimmunoassay: cells bind radiolabelled antibodies in suspension",
+    "Chromatography: cells separate according to their DNA sequence"
    ],
    "answer": 0,
    "explain": "In the Coulter electrical impedance method, poorly conductive cells suspended in an electrolyte diluent pass one by one through a micro-aperture between two electrodes, generating voltage pulses whose number equals cell count and whose amplitude is proportional to cell volume.",
@@ -194,10 +194,10 @@
    "sub": "Reticulocyte Count",
    "q": "Why must a percentage reticulocyte count be converted into an absolute reticulocyte count or corrected for haematocrit (Corrected Reticulocyte Count) when evaluating an anaemic patient?",
    "options": [
-    "A reduced total red cell mass falsely inflates the relative percentage of reticulocytes even when bone marrow production is inadequate",
-    "Reticulocytes lose all haemoglobin when haematocrit drops below 30%",
-    "Automated analyzers mistake lymphocytes for reticulocytes in severe anaemia",
-    "Erythropoietin stops binding marrow precursors whenever haematocrit is low"
+    "Because anaemia lowers the red-cell denominator, the percentage may overstate marrow output unless corrected",
+    "Reticulocytes lose haemoglobin whenever haematocrit falls below 30%",
+    "Automated analysers always count lymphocytes as reticulocytes in anaemia",
+    "Erythropoietin cannot bind marrow receptors when haematocrit is low"
    ],
    "answer": 0,
    "explain": "Because reticulocyte percentage is expressed relative to total RBCs, a low denominator in severe anaemia makes a normal number of circulating reticulocytes appear falsely elevated; multiplying by (patient PCV / normal PCV) or reporting the absolute reticulocyte count accurately reflects erythropoietic output.",
@@ -381,10 +381,10 @@
    "sub": "Peripheral Blood Film: Red Cell Morphology",
    "q": "Why are precipitated denatured haemoglobin inclusions (Heinz bodies) invisible on routine Romanowsky-stained blood smears and require supravital staining with crystal violet or brilliant cresyl blue?",
    "options": [
-    "Heinz bodies share the same eosinophilic staining affinity as surrounding normal cytoplasmic haemoglobin",
-    "Methanol fixation dissolves all denatured globin chains instantaneously",
-    "Heinz bodies are located exclusively inside leukocyte nuclei",
-    "Romanowsky dyes oxidize Heinz bodies into colourless bilirubin"
+    "On routine Romanowsky stains, Heinz bodies may blend with haemoglobin and require supravital staining",
+    "Methanol fixation dissolves all denatured globin within seconds",
+    "Heinz bodies occur only inside leukocyte nuclei",
+    "Romanowsky dyes convert Heinz bodies into bilirubin"
    ],
    "answer": 0,
    "explain": "Because Heinz bodies consist of denatured precipitated haemoglobin (seen in G6PD deficiency and unstable haemoglobinopathies), they stain identically to intact haemoglobin on Wright/Giemsa films and require supravital dyes to visualize membrane-bound inclusions.",
@@ -496,10 +496,10 @@
    "sub": "Erythrocyte Sedimentation Rate (ESR)",
    "q": "How do elevated acute-phase plasma proteins such as fibrinogen and immunoglobulins accelerate the Erythrocyte Sedimentation Rate (ESR)?",
    "options": [
-    "They neutralize the negative surface zeta potential of erythrocytes, promoting rouleaux stacking and faster gravitational settling",
-    "They increase plasma viscosity to push red cells downward by active convection",
-    "They cause intravascular red cell fragmentation into heavy schistocytes",
-    "They cross-link platelets directly to the glass Westergren pipette wall"
+    "Fibrinogen and immunoglobulins reduce red-cell zeta-potential repulsion, promoting rouleaux and faster settling",
+    "They increase plasma viscosity and actively push red cells down the tube",
+    "They fragment red cells into heavier schistocytes",
+    "They bind directly to the glass tube and pull erythrocytes downward"
    ],
    "answer": 0,
    "explain": "Normally negatively charged sialic acid residues on red cell membranes repel adjacent erythrocytes (zeta potential); asymmetric macromolecules like fibrinogen and paraproteins bridge cells and neutralize repulsion, promoting rouleaux aggregates that sediment faster.",
@@ -565,10 +565,10 @@
    "sub": "Bone Marrow Examination",
    "q": "When is a bone marrow trephine biopsy mandatory in addition to (or when unable to obtain) a liquid bone marrow aspirate?",
    "options": [
-    "When aspiration yields a 'dry tap' (such as in myelofibrosis or hairy cell leukaemia) and to assess marrow cellularity, architecture, and focal tumour or granuloma infiltration",
-    "Whenever a routine peripheral blood count shows mild neutrophilia in acute appendicitis",
-    "To measure serum ferritin and transferrin saturation directly",
-    "Exclusively to perform ABO blood group forward typing"
+    "A trephine preserves marrow architecture and is useful after a dry tap or when cellularity and focal infiltration must be assessed",
+    "It measures serum ferritin and transferrin saturation directly",
+    "It is required for every mild neutrophilia on a routine blood count",
+    "It is used exclusively for ABO blood grouping"
    ],
    "answer": 0,
    "explain": "A liquid aspirate reveals fine cytological detail of individual precursors but disrupts spatial architecture and fails in fibrotic or tightly packed marrows ('dry tap'); a trephine core biopsy preserves intact trabecular architecture, true cellularity, reticulin fibrosis, and focal lymphoma or metastatic deposits.",

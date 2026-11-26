@@ -426,10 +426,10 @@
    "sub": "Type III Hypersensitivity: Immune Complex Disease",
    "q": "Once circulating immune complexes lodge in glomerular capillary walls or small blood vessels, which sequence of events causes acute tissue necrosis?",
    "options": [
-    "Classical complement activation generates C3a and C5a, which recruit and activate neutrophils to release lysosomal enzymes and reactive oxygen species, causing fibrinoid necrosis",
-    "CD8+ cytotoxic T cells inject granzyme B into vascular endothelial nuclei",
-    "Mast cells undergo IgE-independent apoptosis without neutrophil infiltration",
-    "Platelets synthesize excess nitric oxide that dissolves vascular collagen"
+    "Complement activation recruits neutrophils, which release enzymes and oxidants that damage vessel walls",
+    "CD8 cells inject granzyme B into endothelial nuclei",
+    "Mast cells undergo apoptosis without neutrophil recruitment",
+    "Platelets release nitric oxide that dissolves vascular collagen"
    ],
    "answer": 0,
    "explain": "Deposited immune complexes fix C1q and activate complement, releasing C5a to attract neutrophils; unable to phagocytose basement-membrane-bound complexes ('frustrated phagocytosis'), neutrophils discharge proteases and free radicals, causing leukocytoclastic vasculitis and fibrinoid necrosis.",
@@ -472,10 +472,10 @@
    "sub": "Type III Hypersensitivity: Immune Complex Disease",
    "q": "What is an Arthus reaction?",
    "options": [
-    "A localized area of acute immune-complex vasculitis and tissue necrosis occurring 4 to 8 hours after intradermal injection of antigen into an individual who already has high titres of circulating IgG antibody",
-    "An immediate anaphylactic collapse occurring within 30 seconds of a bee sting",
-    "A chronic granulomatous skin nodule appearing 4 weeks after BCG vaccination",
-    "A transient erythematous flare caused by mechanical stroking of the skin"
+    "A local type III immune-complex reaction causing vasculitis and tissue injury several hours after antigen exposure",
+    "An immediate IgE-mediated collapse occurring seconds after a bee sting",
+    "A chronic granuloma appearing weeks after BCG vaccination",
+    "A transient wheal caused by stroking normal skin"
    ],
    "answer": 0,
    "explain": "In an Arthus reaction (localized Type III hypersensitivity), injected antigen diffuses into dermal vessel walls where high levels of pre-existing circulating IgG precipitate with the antigen in situ, triggering local complement activation, neutrophil vasculitis, oedema, and haemorrhage peaking at 4–8 hours.",
@@ -518,10 +518,10 @@
    "sub": "Type IV Hypersensitivity: Delayed-Type and T-Cell Cytotoxicity",
    "q": "Why does a classic delayed-type hypersensitivity (DTH) skin test, such as the tuberculin (Mantoux) purified protein derivative (PPD) test, take 48 to 72 hours to reach peak induration?",
    "options": [
-    "Memory CD4+ Th1 cells must migrate to the site, recognize antigen on dendritic cells/macrophages, and secrete cytokines that recruit and activate blood monocytes and lymphocytes",
-    "IgE antibodies require 48 hours to diffuse from the bone marrow to the forearm dermis",
-    "Neutrophils take 72 hours to synthesize histamine after ingesting tuberculin",
-    "Complement C3 requires 3 days of enzymatic cleavage in cold peripheral skin"
+    "Memory Th1 cells recognise antigen and recruit activated macrophages over 48–72 hours",
+    "IgE requires several days to diffuse from marrow into the dermis",
+    "Neutrophils take three days to synthesise histamine after phagocytosis",
+    "Complement C3 requires three days to be cleaved in the skin"
    ],
    "answer": 0,
    "explain": "Unlike preformed mediators in Type I reactions, Type IV DTH requires local endothelial activation, recruitment of circulating memory Th1 cells, secretion of IFN-gamma and TNF, and accumulation of activated macrophages and fibrin (causing firm induration rather than soft oedema) over 48–72 hours.",
@@ -634,10 +634,10 @@
    "sub": "Drug Hypersensitivity Reactions",
    "q": "Why can penicillin elicit all four Gell and Coombs types of hypersensitivity reactions (Types I, II, III, and IV) in different sensitized patients?",
    "options": [
-    "Penicillin's reactive beta-lactam ring acts as a hapten that covalently modifies soluble serum proteins, erythrocyte membranes, or tissue proteins to elicit IgE, IgG, or T-cell responses",
-    "Penicillin is a large 500 kDa bacterial glycoprotein contaminated with equine serum",
-    "Penicillin directly activates the alternative complement pathway without binding any host protein",
-    "Penicillin contains preformed histamine and leukotrienes inside every tablet"
+    "Penicillin can act as a hapten by binding host proteins, triggering different immune mechanisms",
+    "Penicillin is a large bacterial glycoprotein contaminated with equine serum",
+    "Penicillin directly activates complement without interacting with host proteins",
+    "Penicillin tablets contain preformed histamine and leukotrienes"
    ],
    "answer": 0,
    "explain": "Penicillin spontaneously opens its beta-lactam ring to form penicilloyl hapten determinants covalently bound to host proteins—on mast cell IgE (Type I anaphylaxis), on red blood cell membranes (Type II drug-induced haemolytic anaemia), in circulation (Type III serum sickness), or in skin (Type IV maculopapular/contact rash).",
@@ -657,10 +657,10 @@
    "sub": "Drug Hypersensitivity Reactions",
    "q": "How do pseudoallergic (anaphylactoid) reactions—such as those triggered by intravenous radiocontrast media, vancomycin ('red man syndrome'), or opiates—differ mechanistically from true IgE-mediated anaphylaxis?",
    "options": [
-    "They directly trigger mast cell or basophil degranulation (e.g., via MRGPRX2 receptors or direct osmotic/complement effects) without requiring prior allergen sensitization or cross-linking of specific IgE",
-    "They are mediated exclusively by CD4+ Th1 cells and take 72 hours to develop",
-    "They occur only after at least ten prior exposures to the same drug",
-    "They are mediated by IgA immune complexes depositing in renal tubules"
+    "They directly activate mast cells or basophils without requiring allergen-specific IgE sensitisation",
+    "They are mediated exclusively by Th1 cells and take several days to develop",
+    "They occur only after repeated exposure to the same drug",
+    "They are caused by IgA complexes depositing in renal tubules"
    ],
    "answer": 0,
    "explain": "Anaphylactoid (non-IgE-mediated) reactions clinically mimic anaphylaxis through direct non-immunological mast cell activation (for instance, vancomycin or morphine activating MRGPRX2 on cutaneous mast cells) and can therefore occur on first-ever exposure.",
@@ -703,10 +703,10 @@
    "sub": "Diagnostic Testing in Allergy and Hypersensitivity",
    "q": "Why must oral H1 antihistamines be discontinued 3 to 7 days before performing allergy skin prick testing, whereas serum allergen-specific IgE immunoassay testing does not require stopping antihistamines?",
    "options": [
-    "Antihistamines block cutaneous H1 receptors and suppress the histamine-induced wheal-and-flare response (causing false-negative skin tests), whereas serum assays directly measure circulating IgE antibodies in vitro",
-    "Antihistamines destroy all circulating serum IgE molecules within 24 hours",
-    "Antihistamines cause severe anaphylaxis whenever a lancet touches the epidermis",
-    "Serum specific IgE testing measures blood eosinophil count rather than antibodies"
+    "Antihistamines block cutaneous H1 responses and can suppress the wheal-and-flare reaction; serum IgE assays are performed in vitro",
+    "Antihistamines destroy circulating IgE and invalidate serum assays",
+    "Antihistamines cause anaphylaxis whenever the skin is pricked",
+    "Serum specific-IgE tests measure eosinophil counts rather than antibodies"
    ],
    "answer": 0,
    "explain": "H1 receptor antagonists blunt the vascular wheal-and-flare response to both allergen and the positive histamine control in vivo, whereas in vitro immunoassays (ImmunoCAP/RAST) quantify free serum allergen-specific IgE unaffected by antihistamines or widespread eczema.",
@@ -795,10 +795,10 @@
    "sub": "Integrated Clinical Hypersensitivity Scenarios",
    "q": "Why does hyperacute renal allograft rejection occur within minutes to hours of vascular anastomosis and represent a classic Type II hypersensitivity reaction?",
    "options": [
-    "Pre-formed circulating recipient IgG antibodies (against donor ABO or HLA antigens) immediately bind graft vascular endothelium, activating complement and causing widespread intravascular thrombosis and ischaemic necrosis",
-    "Donor passenger T lymphocytes attack recipient skin and liver 6 months after transplantation",
-    "Recipient naive T cells require 2 weeks to migrate into draining lymph nodes",
-    "Inhaled fungal spores deposit IgE immune complexes in the renal pelvis"
+    "Preformed recipient antibodies bind graft endothelium, activate complement and cause thrombosis",
+    "Donor T cells attack recipient skin and liver months after transplantation",
+    "Naive recipient T cells require weeks to migrate into lymph nodes",
+    "Inhaled fungal spores deposit IgE complexes in the renal pelvis"
    ],
    "answer": 0,
    "explain": "Hyperacute rejection occurs when the recipient already possesses preformed anti-donor antibodies (from prior transfusions, pregnancies, or transplants); binding to graft endothelium triggers immediate complement fixation, neutrophil recruitment, endothelial injury, and fibrin-platelet thrombosis.",

@@ -284,10 +284,10 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "Compare the physiological changes (brain metabolism, autonomic tone, muscle tone, dreaming, and timing across the night) in NREM slow-wave sleep versus REM sleep:",
    "options": [
-    "NREM sleep: reduced cerebral blood flow/O2 consumption, parasympathetic dominance (bradycardia, lower BP, regular slow breathing), preserved muscle tone, growth hormone pulse in N3, predominates in the first third of the night; REM sleep ('paradoxical sleep'): high cortical O2 consumption/blood flow exceeding wakefulness, vivid narrative dreaming, irregular heart rate/respiration, penile/clitoral tumescence, active glycinergic/GABAergic skeletal muscle atonia (sparing diaphragm and extraocular muscles), cycles every ~90-110 min and lengthens in the last third of the night",
-    "REM sleep features complete parasympathetic bradycardia and zero cortical blood flow",
-    "NREM sleep features vivid dreaming and complete skeletal muscle paralysis",
-    "Growth hormone is secreted exclusively during REM sleep"
+    "NREM: reduced cerebral activity with preserved tone; REM: active dreaming, variable autonomic activity and skeletal muscle atonia",
+    "NREM: vivid dreams with muscle atonia; REM: slow waves, stable autonomic tone and increased muscle tone",
+    "NREM and REM both have identical EEG, autonomic and muscle activity",
+    "REM occurs only in the first part of the night and becomes shorter toward morning"
    ],
    "answer": 0,
    "explain": "REM sleep is called 'paradoxical sleep' because the EEG and cerebral metabolic rate resemble active wakefulness while the sleeper is hardest to arouse and skeletal muscles are actively paralyzed.",
@@ -307,10 +307,10 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "Which hypothalamic nuclei and neurotransmitters regulate the circadian sleep-wake 'flip-flop switch' and REM sleep generation?",
    "options": [
-    "Suprachiasmatic nucleus (SCN, master circadian clock entrained by retinal melanopsin ganglion cells via retinohypothalamic tract) drives pineal melatonin secretion at night; Ventrolateral preoptic nucleus (VLPO) releases GABA and galanin to promote NREM sleep by inhibiting arousal nuclei (tuberomammillary histamine, locus coeruleus NE, raphe 5-HT, basal forebrain ACh); Lateral hypothalamic orexin (hypocretin) neurons stabilize wakefulness; Pontine pedunculopontine/laterodorsal tegmental (PPT/LDT) cholinergic 'REM-on' neurons trigger REM sleep",
-    "Red nucleus releases epinephrine to trigger REM sleep",
-    "Cerebellar dentate nucleus secretes melatonin in response to bright sunlight",
-    "Substantia nigra releases GABA onto the optic chiasm to induce N3 sleep"
+    "SCN sets circadian timing; VLPO promotes sleep via GABA/galanin; orexin stabilises wakefulness; pontine cholinergic circuits promote REM",
+    "SCN initiates REM directly; VLPO promotes wakefulness; orexin suppresses arousal; pontine nuclei generate melatonin",
+    "Suprachiasmatic nucleus produces GABA for NREM; cerebellum releases orexin for wakefulness",
+    "All sleep stages are controlled exclusively by the pineal gland"
    ],
    "answer": 0,
    "explain": "Mutual inhibition between sleep-promoting VLPO (GABA/galanin) and wake-promoting monoaminergic/histaminergic/cholinergic nuclei forms a bistable 'flip-flop' switch stabilized by orexin (hypocretin).",
@@ -652,10 +652,10 @@
    "sub": "CSF Production, Circulation, Blood-Brain Barrier, and Hydrocephalus",
    "q": "How do the anatomical basis and neuroprotective functions of the 'Blood-Brain Barrier (BBB)' differ from those of the 'Circumventricular Organs (CVOs)'?",
    "options": [
-    "The BBB consists of non-fenestrated brain capillary endothelial cells sealed by tight junctions (zonula occludens), a thick basement membrane, and astrocyte foot processes—restricting hydrophilic drugs, proteins, and pathogens while allowing lipid-soluble gases/steroids and carrier-mediated glucose (GLUT1)/amino acid transport; CVOs (area postrema, OVLT, subfornical organ, median eminence, neurohypophysis, pineal gland) have fenestrated capillaries lacking a BBB so neurons can sample blood osmolarity, hormones, and toxins",
-    "Astrocyte foot processes destroy capillary tight junctions throughout the cortex",
-    "The area postrema has the tightest blood-brain barrier in the human body",
-    "Glucose crosses the BBB solely by simple passive diffusion"
+    "BBB: tight-junctioned brain capillary endothelium restricts entry; CVOs: specialised regions with fenestrated capillaries that sample blood-borne signals",
+    "BBB: fenestrated capillaries allow free protein entry; CVOs: tight junctions exclude circulating hormones",
+    "BBB and CVOs both have identical endothelial permeability and function",
+    "Astrocytes alone form the BBB, while CVOs are located only in the spinal cord"
    ],
    "answer": 0,
    "explain": "Circumventricular organs act as neuroendocrine and chemosensory 'windows' into the bloodstream (e.g., OVLT/SFO sense plasma hyperosmolarity and angiotensin II for thirst/ADH; area postrema senses emetic toxins).",
@@ -675,10 +675,10 @@
    "sub": "CSF Production, Circulation, Blood-Brain Barrier, and Hydrocephalus",
    "q": "How do 'non-communicating (obstructive) hydrocephalus', 'communicating hydrocephalus', and 'normal pressure hydrocephalus (NPH)' differ in mechanism and clinical presentation?",
    "options": [
-    "Non-communicating hydrocephalus: structural blockage within the ventricular system (e.g., congenital aqueductal stenosis, colloid cyst at foramen of Monro, fourth ventricle tumor) enlarging ventricles proximal to the block; Communicating hydrocephalus: impaired CSF reabsorption at arachnoid granulations (e.g., post-subarachnoid hemorrhage or meningitis fibrosis) enlarging all ventricles; Normal Pressure Hydrocephalus (NPH): chronic communicating ventriculomegaly in older adults with normal opening ICP on lumbar puncture and the classic triad of magnetic gait apraxia ('wet, wobbly, and wacky': urinary incontinence, ataxia, dementia)",
-    "NPH causes high opening pressure on lumbar puncture and isolated blindness",
-    "Aqueductal stenosis enlarges only the spinal central canal",
-    "Communicating hydrocephalus is caused by excessive liver bile production"
+    "Obstructive: blockage within the ventricular system; communicating: impaired CSF absorption; NPH: chronic communicating hydrocephalus with gait, urinary and cognitive symptoms",
+    "Obstructive: impaired arachnoid absorption; communicating: aqueductal blockage; NPH: acute high-pressure hydrocephalus",
+    "Obstructive: excess CSF production only; communicating: reduced CSF production; NPH: isolated visual loss",
+    "All three are caused by cerebral atrophy and have identical imaging findings"
    ],
    "answer": 0,
    "explain": "Mnemonic for Normal Pressure Hydrocephalus (NPH) triad: 'Wet, wobbly, and wacky' (urinary incontinence, wide-based magnetic gait, cognitive decline)—reversible with CSF shunting.",
@@ -790,10 +790,10 @@
    "sub": "Electroencephalogram (EEG) Waves and Clinical Applications",
    "q": "How do 'focal (partial) seizures' and 'generalized seizures' differ on EEG and clinically, and what is 'status epilepticus'?",
    "options": [
-    "Focal seizures originate in a localized cortical network of one hemisphere (aware = simple partial; impaired awareness = complex partial, often temporal lobe with automatisms/deja vu) and may evolve to bilateral tonic-clonic; Generalized seizures involve bilateral thalamocortical networks simultaneously from onset (absence, tonic-clonic, myoclonic, atonic); Status epilepticus is continuous seizure activity >= 5 minutes (or >= 2 seizures without recovery of consciousness between them), a medical emergency treated first-line with IV benzodiazepines (lorazepam)",
-    "Generalized seizures start in one finger with intact consciousness",
-    "Status epilepticus is a normal physiological stage of REM sleep",
-    "Focal seizures always show 3 Hz spike-and-wave across both hemispheres from millisecond zero"
+    "Focal seizures begin in one hemisphere; generalized seizures engage bilateral networks from onset; status epilepticus is a seizure lasting at least 5 minutes or recurrent seizures without recovery",
+    "Focal seizures always involve both hemispheres; generalized seizures begin in one limb; status epilepticus is any brief absence seizure",
+    "Focal seizures arise only from the brainstem; generalized seizures arise only from the spinal cord",
+    "Status epilepticus is defined by two seizures separated by full recovery of consciousness"
    ],
    "answer": 0,
    "explain": "Prolonged status epilepticus (>5-30 min) causes excitotoxic glutamate-mediated neuronal death, hyperthermia, rhabdomyolysis, and lactic acidosis.",
@@ -951,10 +951,10 @@
    "sub": "Language Pathways and Aphasias (Broca, Wernicke, Conduction, Global)",
    "q": "How do 'visual agnosia' (associative vs apperceptive), 'astereognosis', and 'apraxia' differ as higher cortical association deficits?",
    "options": [
-    "Visual agnosia (occipitotemporal association cortex): inability to recognize familiar objects by sight despite intact visual acuity (can identify the object immediately by touch or sound); Astereognosis (parietal somatosensory association cortex): inability to identify a familiar object (e.g., key, coin) placed in the hand with eyes closed despite intact primary touch/proprioception; Apraxia (dominant parietal/premotor cortex): inability to execute learned purposeful motor tasks on command despite intact strength, sensation, and comprehension",
-    "Apraxia means complete flaccid muscle paralysis",
-    "Astereognosis means complete blindness in both eyes",
-    "Visual agnosia is caused by corneal scarring"
+    "Visual agnosia: failure to recognise by sight; astereognosis: failure to identify by touch; apraxia: inability to perform learned acts despite adequate strength and comprehension",
+    "Visual agnosia: loss of visual acuity; astereognosis: complete anaesthesia; apraxia: flaccid paralysis",
+    "Visual agnosia: inability to name spoken words; astereognosis: loss of hearing; apraxia: loss of proprioception",
+    "All three are primary sensory deficits caused by peripheral nerve lesions"
    ],
    "answer": 0,
    "explain": "All three reflect disconnection or damage to secondary/tertiary cortical association areas while primary sensory or motor cortex remains intact.",

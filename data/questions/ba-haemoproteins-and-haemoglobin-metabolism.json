@@ -295,9 +295,9 @@
    "sub": "Heme Biosynthesis and Porphyrias",
    "q": "How is hepatic ALA synthase (ALAS1) regulated differently from erythroid ALA synthase (ALAS2)?",
    "options": [
-    "ALAS1 is feedback-inhibited and transcriptionally repressed by heme (hematin) and induced by CYP450-inducing drugs, whereas ALAS2 is regulated by intracellular iron availability via iron-responsive elements",
+    "ALAS1 is repressed by heme and induced by some drugs; ALAS2 is regulated mainly by iron availability",
     "ALAS1 is activated by heme, whereas ALAS2 is inhibited by heme",
-    "ALAS1 is located in the cytosol, whereas ALAS2 is in the nucleus",
+    "ALAS1 is cytosolic, whereas ALAS2 is nuclear",
     "ALAS1 requires biotin, whereas ALAS2 requires vitamin B12"
    ],
    "answer": 0,
@@ -390,10 +390,10 @@
    "sub": "Heme Biosynthesis and Porphyrias",
    "q": "Why do late-step porphyrias such as porphyria cutanea tarda (uroporphyrinogen decarboxylase deficiency) cause blistering cutaneous photosensitivity, whereas acute intermittent porphyria does not?",
    "options": [
-    "Cyclic tetrapyrrole porphyrinogens oxidize to conjugated porphyrins that absorb ~400 nm light and generate reactive oxygen species in the skin, whereas linear precursors ALA and PBG do not absorb light",
+    "Porphyrins absorb visible light and generate reactive oxygen species; ALA and PBG do not have this photoreactive ring structure",
     "Uroporphyrinogen decarboxylase is expressed only in epidermal keratinocytes",
     "ALA and PBG are excreted exclusively in sweat",
-    "Porphyria cutanea tarda causes severe iron deficiency"
+    "Porphyria cutanea tarda is caused by severe iron deficiency"
    ],
    "answer": 0,
    "explain": "Early precursors (ALA and PBG) are non-cyclic and non-fluorescent, causing neurovisceral symptoms only; downstream tetrapyrrole rings (uroporphyrin, coproporphyrin, protoporphyrin) absorb Soret-band light (~400 nm) and generate tissue-damaging singlet oxygen.",
@@ -579,10 +579,10 @@
    "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
    "q": "How does carbon monoxide (CO) poisoning impair tissue oxygen delivery in two distinct ways?",
    "options": [
-    "Competes with O2 at heme binding sites with ~200-fold higher affinity AND locks remaining subunits in the high-affinity R state, shifting the oxygen dissociation curve to the left",
-    "Oxidizes all heme iron to Fe3+ and precipitates globin chains",
-    "Cleaves protoporphyrin IX and depletes 2,3-BPG",
-    "Inhibits carbonic anhydrase and causes severe metabolic alkalosis"
+    "CO binds haemoglobin with high affinity and shifts remaining oxygen binding toward higher affinity",
+    "CO oxidises all haem iron to Fe3+ and precipitates globin chains",
+    "CO cleaves protoporphyrin IX and depletes 2,3-BPG",
+    "CO inhibits carbonic anhydrase and causes metabolic alkalosis"
    ],
    "answer": 0,
    "explain": "CO binds heme Fe2+ ~200 times more tightly than O2 and allosterically stabilizes the R state of partially occupied hemoglobin tetramers, preventing the remaining bound O2 from unloading in peripheral tissues.",
@@ -671,10 +671,10 @@
    "sub": "Heme Catabolism and Bilirubin Metabolism",
    "q": "Why is unconjugated bilirubin neurotoxic to neonates (kernicterus) when its plasma concentration exceeds albumin-binding capacity?",
    "options": [
-    "It is lipophilic, crosses the immature blood-brain barrier, and deposits in the basal ganglia and brainstem nuclei where it uncouples oxidative phosphorylation",
-    "It is water-soluble and clogs cerebral ventricles",
-    "It directly activates NMDA receptors in the cortex",
-    "It destroys myelin via autoimmune antibodies"
+    "Unbound unconjugated bilirubin can cross the immature BBB and injure basal ganglia and brainstem nuclei",
+    "It is water-soluble and blocks cerebral ventricles",
+    "It directly activates cortical NMDA receptors",
+    "It destroys myelin through autoimmune antibodies"
    ],
    "answer": 0,
    "explain": "Free unbound unconjugated bilirubin is lipid-soluble and penetrates the neonatal blood-brain barrier, injuring mitochondria and neurons in the basal ganglia (globus pallidus) and subthalamic nuclei.",
@@ -694,10 +694,10 @@
    "sub": "Heme Catabolism and Bilirubin Metabolism",
    "q": "How does blue-light phototherapy (wavelength ~450-460 nm) reduce serum unconjugated bilirubin in neonatal jaundice?",
    "options": [
-    "Induces hepatic UDP-glucuronosyltransferase transcription",
-    "Photoisomerizes insoluble Z,Z-bilirubin in skin capillaries into water-soluble structural and configurational isomers (such as lumirubin) that can be excreted in bile and urine without conjugation",
-    "Oxidizes bilirubin directly into carbon dioxide",
-    "Increases serum albumin synthesis"
+    "Phototherapy induces hepatic UDP-glucuronosyltransferase transcription",
+    "Blue light converts bilirubin into more water-soluble photoisomers that can be excreted without conjugation",
+    "Blue light oxidises bilirubin directly into carbon dioxide",
+    "Phototherapy increases serum albumin synthesis"
    ],
    "answer": 1,
    "explain": "Blue light converts native 4Z,15Z-bilirubin into polar photoisomers (4Z,15E-bilirubin and irreversible cyclized lumirubin) that bypass hepatic glucuronidation for biliary and renal excretion.",
@@ -717,8 +717,8 @@
    "q": "What is the fate of conjugated bilirubin after it is secreted into the duodenum via bile?",
    "options": [
     "It is reabsorbed intact in the stomach",
-    "It is converted back into heme by pancreatic lipase",
-    "Intestinal bacteria deconjugate and reduce it to colorless urobilinogens, most of which oxidize to brown stercobilin in stool while a fraction undergoes enterohepatic recirculation or renal excretion as urobilin",
+    "It is converted back into haem by pancreatic lipase",
+    "Intestinal bacteria form urobilinogen; most is converted to stercobilin, while a small fraction is reabsorbed or excreted as urobilin",
     "It is degraded into urea by enterocytes"
    ],
    "answer": 2,
@@ -878,10 +878,10 @@
    "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
    "q": "Why should methylene blue be avoided in a patient with methemoglobinemia who also has severe glucose 6-phosphate dehydrogenase (G6PD) deficiency?",
    "options": [
-    "Methylene blue requires NADPH (generated by G6PD) to be reduced to leukomethylene blue, so it is ineffective and can worsen oxidative hemolysis in G6PD deficiency",
-    "Methylene blue irreversibly binds hemoglobin A2",
+    "Methylene blue needs NADPH for activation; in G6PD deficiency it may be ineffective and worsen oxidative haemolysis",
+    "Methylene blue irreversibly binds haemoglobin A2",
     "G6PD-deficient patients lack cytochrome b5 reductase completely",
-    "Methylene blue converts methemoglobin into carboxyhemoglobin"
+    "Methylene blue converts methaemoglobin into carboxyhaemoglobin"
    ],
    "answer": 0,
    "explain": "Methylene blue acts as an electron shuttle using NADPH from the pentose phosphate pathway; in severe G6PD deficiency, NADPH is lacking and methylene blue acts as an oxidant causing hemolysis (ascorbic acid is used instead).",

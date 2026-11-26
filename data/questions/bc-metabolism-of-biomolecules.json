@@ -1984,7 +1984,7 @@
    "options": [
     "Ammonia directly lyses neuronal membranes",
     "Ammonia inhibits acetylcholinesterase",
-    "Excess ammonia depletes alpha-ketoglutarate to form glutamate and glutamine, impairing the TCA cycle and causing osmotic astrocyte swelling",
+    "Ammonia consumes alpha-ketoglutarate and raises astrocytic glutamine, impairing energy metabolism and causing swelling",
     "Ammonia blocks voltage-gated sodium channels"
    ],
    "answer": 2,
@@ -2932,10 +2932,10 @@
    "sub": "Electron Transport Chain and Oxidative Phosphorylation",
    "q": "Why does oxidation of cytosolic NADH via the glycerol 3-phosphate shuttle yield only 1.5 ATP instead of 2.5 ATP?",
    "options": [
-    "It requires active ATP transport across the outer membrane",
-    "It consumes 1 ATP per NADH transported",
+    "It requires ATP transport across the outer mitochondrial membrane",
+    "It consumes one ATP per NADH transported",
     "It bypasses Complex III",
-    "Mitochondrial glycerol 3-phosphate dehydrogenase transfers electrons to FAD and coenzyme Q, bypassing Complex I"
+    "Electrons enter the ubiquinone pool via FAD, bypassing proton-pumping Complex I"
    ],
    "answer": 3,
    "explain": "Unlike the malate-aspartate shuttle, the glycerol 3-phosphate shuttle transfers electrons via FAD directly to coenzyme Q, bypassing the proton pumping of Complex I.",
@@ -3073,7 +3073,7 @@
    "q": "How do PCSK9 inhibitors such as evolocumab lower plasma LDL cholesterol levels?",
    "options": [
     "Inhibit intestinal NPC1L1 cholesterol absorption",
-    "Prevent lysosomal degradation of LDL receptors, increasing their recycling to the hepatocyte surface",
+    "Prevent LDL-receptor degradation, increasing receptor recycling and hepatic LDL clearance",
     "Directly inhibit hepatic HMG-CoA reductase",
     "Activate lipoprotein lipase in adipose tissue"
    ],
@@ -3141,10 +3141,10 @@
    "sub": "Amino Acid Catabolism and Urea Cycle",
    "q": "How do sodium phenylbutyrate and sodium benzoate lower blood ammonia levels in patients with urea cycle disorders?",
    "options": [
-    "Conjugate with glutamine and glycine to provide alternative renal pathways for nitrogen excretion",
-    "Directly stimulate hepatic arginase activity",
-    "Inhibit intestinal bacterial urease",
-    "Convert ammonia into uric acid"
+    "Benzoate and phenylacetate conjugate with glycine and glutamine, respectively, allowing urinary nitrogen excretion",
+    "They directly activate hepatic arginase",
+    "They inhibit intestinal bacterial urease",
+    "They convert ammonia directly into uric acid"
    ],
    "answer": 0,
    "explain": "Benzoate conjugates with glycine to form hippurate, and phenylacetate (from phenylbutyrate) conjugates with glutamine to form phenylacetylglutamine; both are water-soluble and excreted in urine, bypassing the urea cycle.",
@@ -3234,9 +3234,9 @@
    "sub": "Heme Metabolism",
    "q": "Why does conjugated hyperbilirubinemia cause dark tea-colored urine, whereas unconjugated hyperbilirubinemia does not?",
    "options": [
-    "Conjugated bilirubin is water-soluble and filtered at the glomerulus, whereas albumin-bound unconjugated bilirubin is not",
+    "Conjugated bilirubin is water-soluble and filtered; unconjugated bilirubin is albumin-bound",
     "Unconjugated bilirubin is destroyed by renal tubular enzymes",
-    "Conjugated bilirubin stimulates red blood cell lysis in the kidney",
+    "Conjugated bilirubin stimulates red-cell lysis in the kidney",
     "Unconjugated bilirubin is excreted exclusively in sweat"
    ],
    "answer": 0,
@@ -3374,8 +3374,8 @@
    "options": [
     "Increased breakdown of skeletal muscle DNA",
     "Direct inhibition of xanthine oxidase by glucose 6-phosphate",
-    "Accumulated glucose 6-phosphate enters the pentose phosphate pathway to increase PRPP and purine synthesis, while lactate competes with renal urate excretion",
-    "Excess glucagon stimulates hepatic uric acid synthesis"
+    "Excess G6P increases purine synthesis and lactate reduces renal urate excretion",
+    "Excess glucagon directly stimulates uric acid synthesis"
    ],
    "answer": 2,
    "explain": "Trapped G6P feeds into the pentose phosphate pathway to generate excess ribose 5-phosphate and PRPP (accelerating de novo purine synthesis and degradation to uric acid), while lactic acidosis blocks renal tubular urate secretion.",
@@ -3395,10 +3395,10 @@
    "sub": "Pentose Phosphate Pathway and Monosaccharide Metabolism",
    "q": "Why does glucose 6-phosphate dehydrogenase deficiency confer partial protection against severe Plasmodium falciparum malaria?",
    "options": [
-    "The parasite cannot metabolize glucose 6-phosphate",
-    "G6PD-deficient erythrocytes lack hemoglobin A",
+    "The parasite cannot metabolise glucose 6-phosphate",
+    "G6PD-deficient erythrocytes lack haemoglobin A",
     "Excess NADPH directly kills malaria merozoites",
-    "Parasitized G6PD-deficient erythrocytes undergo premature oxidative lysis and splenic clearance before parasite maturation"
+    "Oxidative damage promotes premature clearance of parasitised erythrocytes by the spleen"
    ],
    "answer": 3,
    "explain": "Malaria parasites generate high oxidative stress inside erythrocytes; G6PD-deficient red cells undergo accelerated membrane damage and phagocytosis by splenic macrophages before the parasite completes schizogony.",

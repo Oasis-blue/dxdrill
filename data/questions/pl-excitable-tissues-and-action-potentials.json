@@ -470,10 +470,10 @@
    "sub": "Refractory Periods and Accommodation",
    "q": "Why can a suprathreshold stimulus elicit a second action potential during the relative refractory period, and why does that second spike have a lower peak amplitude?",
    "options": [
-    "All Na+ channels have recovered and K+ channels are closed",
-    "Voltage-gated Ca2+ channels replace Na+ channels completely",
-    "The Na+/K+ pump reverses direction",
-    "Some voltage-gated Na+ channels have recovered from inactivation (h gates reopened), while elevated K+ conductance (after-hyperpolarization) opposes depolarization so a stronger stimulus is needed and fewer Na+ channels are available"
+    "All sodium channels have recovered and potassium channels are fully closed",
+    "Voltage-gated calcium channels replace sodium channels during the second spike",
+    "The sodium-potassium pump reverses direction during the relative refractory period",
+    "Some sodium channels have recovered, but elevated potassium conductance means a stronger stimulus is needed and fewer channels are available"
    ],
    "answer": 3,
    "explain": "During late repolarization and undershoot, a fraction of Nav channels has reset to the resting state, but remaining open K+ channels hyperpolarize the cell and incomplete Nav recovery lowers the upstroke amplitude.",
@@ -1021,10 +1021,10 @@
    "sub": "Motor Units, Summation, and Muscle Fiber Types",
    "q": "How does temporal (wave) summation produce complete tetanus in a skeletal muscle fiber?",
    "options": [
-    "Because skeletal muscle has a 250 ms plateau phase",
-    "Because motor neurons stop releasing acetylcholine during tetanus",
-    "Because extracellular sodium enters through T-tubules to bind troponin",
-    "Because the skeletal muscle action potential (~2-5 ms) is much shorter than the mechanical twitch (~20-100 ms), allowing rapid repetitive stimuli to trigger new Ca2+ release before SERCA can reuptake Ca2+, maintaining saturating cytosolic Ca2+"
+    "Skeletal muscle has a prolonged plateau phase similar to cardiac muscle",
+    "Motor neurons stop releasing acetylcholine during repeated stimulation",
+    "Extracellular sodium binds directly to troponin and maintains contraction",
+    "Repeated stimuli arrive before calcium is fully resequestered, allowing twitches to summate into sustained tension"
    ],
    "answer": 3,
    "explain": "Unlike cardiac muscle (where the 200 ms refractory period prevents summation), skeletal muscle's brief refractory period permits high-frequency stimulation to fuse twitches into smooth maximal tetanic tension (~3-4 times single twitch force).",
@@ -1343,10 +1343,10 @@
    "sub": "Action Potential Propagation and Cable Properties",
    "q": "How does increasing axon diameter (for example, in the squid giant axon up to 500-1,000 micrometers) increase action potential conduction velocity?",
    "options": [
-    "It increases internal axial resistance (ri)",
-    "It decreases the length constant (lambda)",
-    "It eliminates all voltage-gated Na+ channels",
-    "It markedly decreases internal longitudinal (axial) resistance (ri, which scales inversely with cross-sectional area r^2), increasing the length constant (lambda) so local depolarizing currents spread farther ahead"
+    "Increasing diameter raises axial resistance and slows local current spread",
+    "It decreases the length constant and prevents saltatory conduction",
+    "It removes voltage-gated sodium channels from the axon membrane",
+    "It lowers axial resistance, allowing depolarising current to spread farther along the axon"
    ],
    "answer": 3,
    "explain": "Because axial resistance ri scales as 1/r^2 while membrane resistance rm scales as 1/r, the length constant lambda = sqrt(rm/ri) increases proportionally to the square root of radius, speeding longitudinal current spread.",
@@ -1734,10 +1734,10 @@
    "sub": "Smooth Muscle Physiology",
    "q": "What is the 'stress-relaxation' (plasticity) property of visceral smooth muscle (such as in the urinary bladder wall or gastric fundus)?",
    "options": [
-    "Permanent rupture of smooth muscle whenever stretched by 10%",
-    "Immediate tetanic spasm whenever volume increases",
+    "Permanent rupture of smooth muscle whenever it is stretched slightly",
+    "Immediate tetanic spasm whenever organ volume increases",
     "Loss of all gap junctions during filling",
-    "When stretched to a greater length, smooth muscle initially develops high passive/active tension that gradually returns back toward baseline over seconds to minutes, allowing hollow organs to store large volumes at low internal pressure"
+    "After an initial rise in tension, stretched visceral smooth muscle gradually relaxes toward baseline tension"
    ],
    "answer": 3,
    "explain": "Reorganization of non-sarcomeric actin-myosin cross-bridges and dense-body attachments lets the urinary bladder and stomach accommodate large volume increases with minimal rise in intraluminal pressure.",
@@ -1827,7 +1827,7 @@
    "q": "What clinical bedside signs elicit latent neuromuscular hyperexcitability (tetany) in a patient with hypocalcemia?",
    "options": [
     "Babinski sign and Kernig sign",
-    "Chvostek sign (ipsilateral facial muscle twitching upon tapping the facial nerve anterior to the ear) and Trousseau sign (carpopedal spasm upon inflating a blood pressure cuff above systolic pressure for 3 minutes)",
+    "Chvostek sign and Trousseau sign",
     "Murphy sign and McBurney sign",
     "Rinne test and Weber test"
    ],
@@ -1988,9 +1988,9 @@
    "q": "Why do patients with multiple sclerosis (a CNS demyelinating disease) often experience transient worsening of neurological symptoms during a fever or hot shower (Uhthoff's phenomenon)?",
    "options": [
     "Heat melts the phospholipid bilayer of unmyelinated dendrites",
-    "Elevated body temperature accelerates the inactivation rate of voltage-gated Na+ channels and increases K+ channel conductance, reducing the duration of nodal inward current below the safety factor needed to excite demyelinated internodes",
-    "Fever causes massive release of tetrodotoxin from astrocytes",
-    "Warm temperatures hyperpolarize all axons to -130 mV"
+    "Raised temperature can impair conduction in demyelinated axons by altering ion-channel kinetics and reducing the safety factor",
+    "Fever causes astrocytes to release tetrodotoxin",
+    "Warm temperatures hyperpolarise all axons to −130 mV"
    ],
    "answer": 1,
    "explain": "At higher temperatures, Nav channels inactivate faster (shortening spike duration and total charge entry per node); in healthy axons the high safety factor (5-7) tolerates this, but in demyelinated axons with a safety factor near 1.0, warming precipitates reversible conduction block.",
@@ -2010,10 +2010,10 @@
    "sub": "Action Potential Propagation and Cable Properties",
    "q": "What is a 'compound action potential' recorded extracellularly from a whole mixed peripheral nerve trunk (such as the sciatic nerve), and why does it appear graded with stimulus intensity unlike a single-axon spike?",
    "options": [
-    "Because single axons violate the all-or-none law inside whole nerves",
-    "Because extracellular electrodes measure synaptic vesicles directly",
-    "Because a whole nerve contains thousands of individual axons with different thresholds and conduction velocities; stronger stimuli recruit higher-threshold fibers (summating amplitudes) and separate into distinct A-alpha, A-beta, A-delta, and C peaks over distance",
-    "Because myelin amplifies voltage by 1,000 volts"
+    "Single axons obey the all-or-none law, so a compound nerve response has a fixed amplitude at every stimulus strength",
+    "Extracellular electrodes measure neurotransmitter release rather than axonal activity",
+    "A mixed nerve contains axons with different thresholds and conduction speeds; stronger stimuli recruit more fibres and increase the summed response",
+    "Myelin amplifies the action potential voltage as it travels along the nerve"
    ],
    "answer": 2,
    "explain": "Each individual axon still obeys the all-or-none law, but the extracellular sum of thousands of fibers grows smoothly from threshold to maximal stimulus (recruiting larger then smaller axons) and disperses temporally by conduction speed.",

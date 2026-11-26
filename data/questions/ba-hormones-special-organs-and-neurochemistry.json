@@ -1218,9 +1218,9 @@
    "sub": "Hormone Classification and Signal Transduction",
    "q": "Why do peptide hormones such as insulin and glucagon circulate freely in plasma with short half-lives, whereas steroid and thyroid hormones circulate bound to carrier proteins with long half-lives?",
    "options": [
-    "Peptide hormones are water-soluble and rapidly cleared by peptidases and renal filtration, whereas lipophilic hormones require plasma binding proteins that protect them from clearance",
-    "Peptide hormones are covalently attached to albumin",
-    "Steroid hormones cannot be degraded by the liver",
+    "Peptides are water-soluble and cleared rapidly; lipophilic hormones bind plasma proteins and have longer half-lives",
+    "Peptides are covalently attached to albumin",
+    "Steroid hormones cannot be metabolised by the liver",
     "Thyroid hormones are stored inside red blood cells"
    ],
    "answer": 0,
@@ -1335,7 +1335,7 @@
    "q": "Why does chronic exogenous glucocorticoid therapy cause adrenal cortical atrophy and risk of adrenal crisis if stopped abruptly?",
    "options": [
     "Glucocorticoids directly destroy zona fasciculata cells",
-    "Exogenous glucocorticoids exert negative feedback on hypothalamic CRH and pituitary ACTH, removing trophic stimulation of the adrenal cortex",
+    "Negative feedback suppresses CRH and ACTH, reducing trophic stimulation and causing adrenal cortical atrophy",
     "Glucocorticoids induce antibodies against 21-hydroxylase",
     "Exogenous steroids accelerate renal cortisol clearance"
    ],
@@ -1404,8 +1404,8 @@
    "sub": "Liver Biochemistry",
    "q": "How does the liver detoxify lipophilic xenobiotics and drugs in Phase I and Phase II biotransformation reactions?",
    "options": [
-    "Phase I introduces or exposes polar groups via CYP450 oxidation/reduction/hydrolysis; Phase II conjugates them with glucuronate, sulfate, or glutathione for excretion",
-    "Phase I conjugates drugs with albumin; Phase II oxidizes them via catalase",
+    "Phase I reactions add or expose polar groups; Phase II reactions conjugate metabolites to increase water solubility",
+    "Phase I conjugates drugs with albumin; Phase II oxidises them via catalase",
     "Phase I methylates drugs in mitochondria; Phase II stores them in bile salts",
     "Phase I cleaves peptide bonds; Phase II decarboxylates amino acids"
    ],
@@ -1660,7 +1660,7 @@
     "Lens cells lack mitochondria completely",
     "Insulin directly precipitates lens crystallin proteins",
     "Glucose is converted to uric acid inside the lens",
-    "Aldose reductase reduces excess glucose to sorbitol, which cannot easily cross lens membranes and lacks sufficient sorbitol dehydrogenase for clearance"
+    "Aldose reductase converts excess glucose to sorbitol, which accumulates and draws water into lens fibres"
    ],
    "answer": 3,
    "explain": "Insulin-independent glucose entry into the lens saturates hexokinase, shunting glucose through aldose reductase to sorbitol; low lens sorbitol dehydrogenase traps sorbitol, drawing water inward and opacifying lens fibers.",
@@ -1794,10 +1794,10 @@
    "sub": "Neurochemistry and Brain Metabolism",
    "q": "Why are neurons especially vulnerable to hypoxic-ischemic injury within minutes of cerebral blood flow cessation?",
    "options": [
-    "Neurons store excess glycogen that ferments to toxic ethanol",
-    "Neurons have high continuous ATP demand for Na+/K+-ATPase, lack glycogen stores, and ischemic ATP loss triggers massive glutamate release and NMDA-mediated Ca2+ excitotoxicity",
+    "Neurons store excess glycogen that is converted to toxic ethanol",
+    "High ATP demand and limited energy reserves make neurons vulnerable to pump failure and glutamate-mediated calcium injury",
     "The blood-brain barrier dissolves immediately during hypoxia",
-    "Neurons switch exclusively to fatty acid oxidation during ischemia"
+    "Neurons switch exclusively to fatty-acid oxidation during ischaemia"
    ],
    "answer": 1,
    "explain": "ATP depletion halts Na+/K+-ATPase, depolarizing neurons to release excessive glutamate, which overactivates NMDA receptors and floods cells with Ca2+ that activates proteases, phospholipases, and endonucleases.",
@@ -2052,10 +2052,10 @@
    "sub": "Neurochemistry and Brain Metabolism",
    "q": "A 62-year-old patient with hepatic cirrhosis develops asterixis (flapping tremor), confusion, and stupor after a high-protein meal. Elevated arterial ammonia crosses the blood-brain barrier and disrupts neurotransmission primarily by which mechanism?",
    "options": [
-    "Depleting astrocytic alpha-ketoglutarate to form glutamine, causing osmotic astrocyte swelling and altered glutamate/GABA balance",
-    "Directly activating dopamine D2 receptors",
-    "Inhibiting choline acetyltransferase in the cortex",
-    "Stimulating excess serotonin synthesis"
+    "Astrocytic ammonia detoxification raises glutamine, depletes TCA intermediates and causes cellular swelling",
+    "Direct activation of dopamine D2 receptors",
+    "Inhibition of choline acetyltransferase in the cortex",
+    "Excess serotonin synthesis in the brainstem"
    ],
    "answer": 0,
    "explain": "In hepatic encephalopathy, detoxifying ammonia via glutamine synthetase in astrocytes accumulates osmotically active glutamine (causing cerebral edema) and depletes TCA intermediates and excitatory glutamate pools.",
@@ -2075,9 +2075,9 @@
    "q": "What is the biochemical basis of the blood-brain barrier's selective permeability to circulating solutes?",
    "options": [
     "Absence of mitochondria in brain capillaries",
-    "Continuous tight junctions (zonulae occludentes) between non-fenestrated brain capillary endothelial cells surrounded by astrocyte foot processes, requiring specific carriers for hydrophilic molecules",
-    "A thick collagen basement membrane that blocks all lipid-soluble molecules",
-    "High concentrations of extracellular albumin in cerebrospinal fluid"
+    "Tight junctions between non-fenestrated endothelial cells restrict paracellular entry; selective transporters carry essential solutes",
+    "A thick collagen basement membrane blocks all lipid-soluble molecules",
+    "High albumin concentration in CSF forms the main barrier"
    ],
    "answer": 1,
    "explain": "Tight junctions eliminate paracellular diffusion across brain capillaries; lipophilic molecules (O2, CO2, ethanol, steroid hormones) diffuse freely, while glucose (GLUT1) and large neutral amino acids (LAT1) require specific transporters.",

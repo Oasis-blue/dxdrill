@@ -77,10 +77,10 @@
    "sub": "Alveolar-Capillary Diffusion and Fick's Law",
    "q": "How do 'perfusion-limited' gas exchange (exemplified by nitrous oxide N2O and resting O2) and 'diffusion-limited' gas exchange (exemplified by carbon monoxide CO) differ along a pulmonary capillary?",
    "options": [
-    "N2O equilibrates quickly (0.1-0.25 s) with blood, so its transfer depends on blood flow; CO binds Hb so avidly that plasma PCO stays near zero, so its transfer depends on diffusion",
-    "N2O never crosses the alveolar membrane; CO equilibrates in 0.05 seconds",
-    "Resting O2 transfer is always diffusion-limited in healthy lungs",
-    "CO does not bind to hemoglobin"
+    "N2O equilibrates rapidly and is perfusion-limited; CO binds haemoglobin and remains diffusion-limited",
+    "N2O cannot cross the alveolar membrane; CO equilibrates immediately",
+    "Resting oxygen transfer is always diffusion-limited in healthy lungs",
+    "CO does not bind to haemoglobin"
    ],
    "answer": 0,
    "explain": "In a healthy resting lung (capillary transit time ~0.75 s), O2 equilibrates by ~0.25 s (perfusion-limited); during strenuous exercise (transit time drops to ~0.25 s) or interstitial fibrosis/emphysema, O2 transfer can become diffusion-limited.",
@@ -100,10 +100,10 @@
    "sub": "Alveolar-Capillary Diffusion and Fick's Law",
    "q": "What are the sequential histological layers of the alveolar-capillary respiratory membrane (total thickness ~0.2 to 0.6 micrometers) that oxygen traverses from alveolar gas to red blood cell hemoglobin?",
    "options": [
-    "Surfactant fluid → Type I pneumocyte → fused basal lamina → capillary endothelium → plasma → RBC membrane",
-    "Goblet cell mucus → cartilage ring → smooth muscle → pericyte → RBC membrane",
-    "Type II pneumocyte → pleural mesothelium → basement membrane → RBC membrane",
-    "Alveolar macrophage → collagen bundle → elastic lamina → RBC membrane"
+    "Surfactant, type I epithelium, fused basal laminae, capillary endothelium, plasma and erythrocyte membrane",
+    "Goblet cell mucus, cartilage, smooth muscle, pericyte and erythrocyte membrane",
+    "Type II epithelium, pleura, basement membrane and erythrocyte membrane",
+    "Alveolar macrophage, collagen, elastic lamina and erythrocyte membrane"
    ],
    "answer": 0,
    "explain": "In the thin gas-exchanging portion of the alveolar septum, the epithelial and endothelial basal laminae fuse, minimizing diffusion distance (T) to ~0.2-0.6 um.",
@@ -215,10 +215,10 @@
    "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
    "q": "How does 2,3-bisphosphoglycerate (2,3-BPG, synthesized via the Rapoport-Luebering shunt in RBCs) decrease adult hemoglobin's oxygen affinity, and why does fetal hemoglobin (HbF, alpha2-gamma2) exhibit a LEFT-shifted dissociation curve (P50 ~19 mmHg)?",
    "options": [
-    "2,3-BPG binds the central beta-chain cavity to stabilize the T-state; HbF binds it weakly, so HbF extracts O2 from maternal HbA",
-    "2,3-BPG oxidizes heme Fe2+ to Fe3+; HbF contains iron-free porphyrin",
-    "HbF binds 2,3-BPG ten times more tightly than HbA",
-    "2,3-BPG binds exclusively to the alpha chains of myoglobin"
+    "2,3-BPG stabilises the T state; HbF binds it less avidly and therefore has higher oxygen affinity",
+    "2,3-BPG oxidises haem iron from Fe2+ to Fe3+",
+    "HbF binds 2,3-BPG more tightly than HbA",
+    "2,3-BPG binds exclusively to myoglobin"
    ],
    "answer": 0,
    "explain": "Because HbF has lower affinity for 2,3-BPG, its O2 dissociation curve lies to the left of maternal HbA, driving placental oxygen transfer from maternal to fetal blood even at low intervillous PO2 (~30 mmHg).",
@@ -307,9 +307,9 @@
    "sub": "Carbon Dioxide Transport and Chloride Shift",
    "q": "What is the 'Haldane effect', and how does it facilitate CO2 pickup in systemic tissues and CO2 unloading in the lungs?",
    "options": [
-    "Deoxyhemoglobin buffers H+ better and forms carbamino-Hb more readily, so it carries more CO2; O2 binding in the lungs reverses this",
-    "Elevated PCO2 reduces hemoglobin's affinity for oxygen",
-    "High arterial PO2 prevents CO2 from leaving pulmonary capillaries",
+    "Deoxyhaemoglobin buffers H+ and carries more CO2; oxygenation in the lungs reverses these effects",
+    "Elevated carbon dioxide reduces haemoglobin oxygen affinity",
+    "High arterial oxygen prevents carbon dioxide leaving pulmonary capillaries",
     "Carbonic anhydrase is inactivated by oxygen"
    ],
    "answer": 0,
@@ -399,10 +399,10 @@
    "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
    "q": "Why does administering 100% inspired oxygen (FiO2 = 1.0) fail to fully correct hypoxemia caused by a true right-to-left shunt (such as an intracardiac septal defect or complete lobar atelectasis), whereas it readily corrects hypoxemia from V/Q mismatch or diffusion impairment?",
    "options": [
-    "Shunt blood bypasses ventilated alveoli; ventilated blood is already ~98-100% saturated on the flat curve",
+    "Shunted blood bypasses ventilated alveoli, and already-saturated haemoglobin in ventilated units cannot fully compensate",
     "100% oxygen causes immediate bronchospasm in healthy alveoli",
-    "Hemoglobin refuses to bind oxygen when FiO2 exceeds 0.5",
-    "Shunted blood flows backward into the pulmonary veins"
+    "Haemoglobin stops binding oxygen above an inspired fraction of 0.5",
+    "Shunted blood flows backward into pulmonary veins"
    ],
    "answer": 0,
    "explain": "Because of the flat upper plateau of the O2-Hb dissociation curve, raising PAO2 from 100 to 660 mmHg in ventilated units adds minimal extra O2 content (~1.7 mL/dL dissolved) to compensate for unoxygenated shunted blood.",
@@ -629,10 +629,10 @@
    "sub": "Clinical Correlations",
    "q": "A 66-year-old man with severe COPD and chronic hypercapnia (baseline PaCO2 58 mmHg, PaO2 54 mmHg) is placed on high-flow 100% oxygen via non-rebreather mask in the ambulance and becomes somnolent with PaCO2 rising to 84 mmHg and respiratory acidosis (pH 7.21). Which two physiological mechanisms explain oxygen-induced hypercapnia in severe COPD?",
    "options": [
-    "Reversal of hypoxic vasoconstriction worsens V/Q mismatch; the Haldane effect releases CO2",
-    "100% oxygen paralyzes the phrenic nerve directly",
-    "High oxygen converts bicarbonate into solid calcium carbonate",
-    "Oxygen blocks carbonic anhydrase in red blood cells"
+    "Reversal of hypoxic vasoconstriction worsens V/Q matching, while the Haldane effect releases CO2 from haemoglobin",
+    "High oxygen directly paralyses the phrenic nerve",
+    "Oxygen converts bicarbonate into solid calcium carbonate",
+    "Oxygen blocks carbonic anhydrase in erythrocytes"
    ],
    "answer": 0,
    "explain": "Worsened V/Q mismatch (from reversing regional hypoxic vasoconstriction in damaged alveoli) and the Haldane effect account for the majority of O2-induced PaCO2 rise, which is why target SpO2 in COPD is titrated to 88-92%.",
@@ -652,10 +652,10 @@
    "sub": "Clinical Correlations",
    "q": "A 45-year-old man with severe alcoholic cirrhosis develops progressive dyspnea that paradoxically worsens when sitting upright (platypnea) and improves when lying flat (orthodeoxia), with arterial PaO2 dropping from 76 mmHg supine to 54 mmHg standing. Contrast echocardiography shows microbubbles appearing in the left atrium 5 cardiac cycles after right atrial injection. What is the mechanism of hepatopulmonary syndrome?",
    "options": [
-    "NO-mediated basilar vascular dilatation causes functional right-to-left shunt; upright posture worsens it",
-    "Cirrhosis causes severe pulmonary fibrosis at the lung apices",
-    "Bilirubin binds irreversibly to hemoglobin heme groups",
-    "Ascites pushes the diaphragm upward during standing"
+    "Pulmonary vascular dilatation creates intrapulmonary shunting; upright posture increases basilar perfusion and worsens hypoxaemia",
+    "Cirrhosis causes severe apical pulmonary fibrosis",
+    "Bilirubin binds irreversibly to haemoglobin",
+    "Ascites pushes the diaphragm upward only when standing"
    ],
    "answer": 0,
    "explain": "Dilated basilar pulmonary capillaries have diameters too wide for O2 molecules from adjacent alveoli to diffuse to the center of the erythrocyte stream before transit ends; upright posture increases basilar hydrostatic perfusion and worsens shunting.",

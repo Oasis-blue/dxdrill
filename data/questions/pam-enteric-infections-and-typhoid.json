@@ -31,10 +31,10 @@
    "sub": "Pathogenic Mechanisms of Diarrhoeal Disease",
    "q": "Why is oral rehydration salt (ORS) solution containing both glucose and sodium effective in treating severe secretory diarrhoea caused by Vibrio cholerae or enterotoxigenic Escherichia coli?",
    "options": [
-    "The apical sodium-glucose cotransporter (SGLT1) remains intact in small intestinal enterocytes despite elevated intracellular cAMP, coupling sodium and glucose uptake with passive water absorption",
-    "Glucose directly neutralizes cholera toxin inside the intestinal lumen",
-    "Sodium ions inhibit bacterial RNA polymerase and sterilize the small bowel within 1 hour",
-    "Oral glucose stimulates gastric parietal cells to secrete neutralizing bicarbonate"
+    "SGLT1-mediated sodium-glucose uptake remains functional and promotes osmotic water absorption",
+    "Glucose directly neutralises cholera toxin in the intestinal lumen",
+    "Sodium sterilises the small bowel by inhibiting bacterial RNA polymerase",
+    "Oral glucose stimulates gastric acid secretion to neutralise enterotoxin"
    ],
    "answer": 0,
    "explain": "Although cholera toxin and E. coli heat-labile toxin inhibit neutral NaCl absorption and stimulate CFTR chloride secretion via cAMP, coupled sodium-glucose transport via SGLT1 at the brush border is unaffected, enabling water to follow absorbed Na+ and glucose osmotically.",
@@ -77,10 +77,10 @@
    "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
    "q": "Following ingestion of Salmonella enterica serovar Typhi, how does the organism cross the distal ileal mucosa and disseminate systemically during the incubation period?",
    "options": [
-    "It invades specialized microfold (M) cells overlying ileal Peyer patches, survives and replicates inside mesenteric lymph node and reticuloendothelial macrophages, and enters the bloodstream via the thoracic duct",
-    "It secretes a potent cytotoxin that sloughs the entire gastric mucosa within 6 hours",
-    "It migrates upward through the common bile duct directly from the duodenum without entering lymphatics",
-    "It infects mature circulating erythrocytes and ruptures them in peripheral capillaries"
+    "It enters through ileal M cells and Peyer patches, survives in macrophages and disseminates via lymph and blood",
+    "It destroys the gastric mucosa with a preformed cytotoxin",
+    "It ascends the common bile duct directly without entering lymphatics",
+    "It infects mature erythrocytes and replicates inside them"
    ],
    "answer": 0,
    "explain": "Salmonella Typhi uses a type III secretion system to enter ileal M cells over Peyer patches, resists phagolysosomal killing inside macrophages (aided by its Vi capsular polysaccharide), multiplies in mesenteric lymph nodes, and disseminates via the thoracic duct to the liver, spleen, bone marrow, and gallbladder.",
@@ -123,10 +123,10 @@
    "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
    "q": "In untreated enteric fever, why do life-threatening intestinal haemorrhage and ileal perforation classically occur during the third week of illness?",
    "options": [
-    "Hyperplastic Peyer patches in the terminal ileum undergo ischaemic necrosis and sloughing, exposing underlying mucosal blood vessels and weakening the bowel wall",
-    "Excessive gastric acid hypersecretion erodes the first part of the duodenum",
-    "Adult Ascaris lumbricoides worms mechanically burrow through the jejunal serosa",
-    "Immune complex vasculitis causes simultaneous infarction of the entire descending colon"
+    "Necrosis and sloughing of hyperplastic terminal ileal Peyer patches expose vessels and weaken the bowel wall",
+    "Gastric acid erodes the first part of the duodenum",
+    "Ascaris worms burrow through the jejunal serosa",
+    "Immune-complex vasculitis infarcts the entire descending colon"
    ],
    "answer": 0,
    "explain": "During week 1–2, monocyte-macrophage proliferation causes longitudinal hyperplasia of terminal ileal Peyer patches; by week 3, thrombosis of small submucosal vessels leads to necrosis and sloughing of the overlying mucosa, producing oval longitudinal typhoid ulcers prone to bleeding or perforation.",
@@ -169,10 +169,10 @@
    "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
    "q": "Why is a single Widal agglutination test unreliable for diagnosing acute typhoid fever in endemic settings such as Nigeria?",
    "options": [
-    "Baseline anti-O and anti-H antibody titres are frequently elevated in healthy residents from prior subclinical exposure, TAB/typhoid vaccination, or cross-reacting non-typhoidal Salmonella and malaria",
-    "Salmonella Typhi lacks somatic O and flagellar H surface antigens in West African strains",
-    "Anti-O antibodies appear only 6 months after complete clinical recovery",
-    "The Widal test detects viral capsid antigens rather than bacterial agglutinins"
+    "Background antibodies and cross-reactions in endemic areas make a single titre difficult to interpret",
+    "Salmonella Typhi lacks O and H antigens in West Africa",
+    "Anti-O antibodies appear only six months after recovery",
+    "The Widal test detects viral capsid antigens"
    ],
    "answer": 0,
    "explain": "In endemic regions, high background seroprevalence, anamnestic polyclonal B-cell activation during febrile illnesses (including Plasmodium falciparum malaria), and cross-reactivity with other Enterobacteriaceae produce frequent false-positive Widal results; diagnosis requires culture isolation or a four-fold rise in paired acute/convalescent sera.",
@@ -354,10 +354,10 @@
    "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
    "q": "Why are antibiotics and antimotility agents (such as loperamide) generally contraindicated in children presenting with bloody diarrhoea caused by enterohaemorrhagic E. coli (EHEC O157:H7)?",
    "options": [
-    "Antibiotic-induced bacterial lysis releases large amounts of preformed Shiga-like toxin and induces bacteriophage lytic replication, increasing the risk of haemolytic uraemic syndrome (HUS)",
-    "Antibiotics convert EHEC into Vibrio cholerae via horizontal plasmid transfer",
-    "Loperamide causes immediate perforation of the gastric fundus",
-    "EHEC O157:H7 uses all beta-lactam antibiotics as a carbon energy source"
+    "Antibiotics may increase Shiga-toxin release; antimotility drugs can prolong toxin exposure and increase HUS risk",
+    "Antibiotics convert EHEC into Vibrio cholerae",
+    "Loperamide causes immediate gastric perforation",
+    "EHEC uses all beta-lactams as its main energy source"
    ],
    "answer": 0,
    "explain": "Bactericidal antibiotics trigger the bacterial SOS response, inducing prophage-encoded Stx1/Stx2 toxin expression and releasing toxin upon cell lysis, while antimotility drugs prolong mucosal toxin contact—both significantly elevating HUS incidence.",
@@ -609,10 +609,10 @@
    "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
    "q": "How do human hookworms (Ancylostoma duodenale and Necator americanus) infect humans and cause severe iron-deficiency microcytic anaemia in endemic tropical regions?",
    "options": [
-    "Infective filariform larvae penetrate intact skin of bare feet, migrate via lungs to the small intestine, and attach via buccal cutting plates/teeth to suck blood and cause chronic mucosal oozing",
-    "Ingestion of raw freshwater fish transmits adult worms that selectively consume vitamin B12 in the ileum",
-    "Ingestion of undercooked pork leads to cysticercus larvae calcifying inside bone marrow sinusoids",
-    "Female worms deposit embryonated eggs on perianal skin at night causing nocturnal pruritus ani"
+    "Filariform larvae penetrate skin, migrate via the lungs to the intestine and feed on mucosal blood",
+    "Raw fish transmits adult worms that consume vitamin B12 in the ileum",
+    "Undercooked pork transmits larvae that calcify in marrow",
+    "Eggs deposited on perianal skin cause nocturnal itching"
    ],
    "answer": 0,
    "explain": "Hookworm filariform larvae penetrate bare skin (causing 'ground itch'), migrate via the bloodstream and alveoli to the small intestine, and secrete anticoagulants while feeding on villous capillaries, causing chronic gastrointestinal blood loss.",
@@ -678,10 +678,10 @@
    "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
    "q": "Why does ingestion of Taenia solium eggs (via faecal-oral contamination) cause human neurocysticercosis, whereas ingestion of Taenia solium cysticerci in undercooked pork causes adult intestinal taeniasis?",
    "options": [
-    "Ingested eggs hatch into oncospheres that penetrate the intestinal wall and encyst as cysticerci in brain and muscle, whereas ingested cysticerci evaginate in the gut to mature into adult tapeworms",
-    "Ingested eggs are destroyed by stomach acid unless accompanied by raw beef",
-    "Taenia solium adult tapeworms migrate directly from the colon up the carotid artery into the brain",
-    "Cysticerci in pork are non-viable dead calcifications that trigger allergic encephalitis"
+    "Ingested eggs release invasive oncospheres that form tissue cysticerci; ingested pork cysticerci mature into intestinal tapeworms",
+    "Eggs are destroyed by gastric acid unless eaten with raw beef",
+    "Adult tapeworms migrate from the colon into the brain through the carotid artery",
+    "Pork cysticerci are always dead and cause only allergic encephalitis"
    ],
    "answer": 0,
    "explain": "Humans serve as the definitive host for adult T. solium tapeworms after eating undercooked pork containing cysticerci, but become accidental intermediate hosts when ingesting T. solium eggs—allowing invasive larvae (cysticerci) to lodge in the CNS (causing seizures and hydrocephalus), eye, and skeletal muscle.",

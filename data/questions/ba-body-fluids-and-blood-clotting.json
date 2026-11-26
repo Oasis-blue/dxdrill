@@ -55,10 +55,10 @@
    "sub": "Body Fluid Compartments and Electrolytes",
    "q": "How does cerebrospinal fluid (CSF) composition normally differ from blood plasma?",
    "options": [
-    "CSF has much higher protein and glucose concentrations than plasma",
+    "CSF has much higher protein and glucose than plasma",
     "CSF has lower chloride and magnesium than plasma",
-    "CSF has markedly lower protein (~15-45 mg/dL) and slightly lower glucose (~60% of plasma glucose), with higher chloride and magnesium",
-    "CSF contains high levels of fibrinogen and bilirubin"
+    "CSF has low protein, glucose below plasma, and relatively higher chloride and magnesium",
+    "CSF contains high concentrations of fibrinogen and bilirubin"
    ],
    "answer": 2,
    "explain": "The blood-CSF barrier restricts large plasma proteins (leaving CSF protein very low), and active choroid plexus transport maintains higher Cl- and Mg2+ in CSF, while glucose is roughly two-thirds of simultaneous blood glucose.",
@@ -197,10 +197,10 @@
    "sub": "Primary Hemostasis and Platelet Biochemistry",
    "q": "How do endothelial prostacyclin (PGI2) and platelet thromboxane A2 (TXA2) exert opposing biochemical effects on platelet aggregation?",
    "options": [
-    "TXA2 lowers platelet cAMP and mobilizes Ca2+ to promote aggregation, whereas PGI2 raises platelet cAMP to inhibit aggregation",
+    "TXA2 promotes platelet aggregation; PGI2 raises platelet cAMP and inhibits aggregation",
     "TXA2 raises platelet cGMP, whereas PGI2 lowers platelet cGMP",
-    "Both act via nuclear receptors to alter gene transcription",
-    "TXA2 cleaves fibrinogen, whereas PGI2 polymerizes fibrin"
+    "Both act through nuclear receptors to alter gene transcription",
+    "TXA2 cleaves fibrinogen, whereas PGI2 polymerises fibrin"
    ],
    "answer": 0,
    "explain": "Platelet COX-1 generates TXA2 (vasoconstrictor and platelet aggregator via Gq/Gi), whereas endothelial COX-2/prostacyclin synthase generates PGI2 (vasodilator and platelet inhibitor via Gs-mediated cAMP elevation).",
@@ -244,9 +244,9 @@
    "sub": "Coagulation Cascade and Vitamin K-Dependent Factors",
    "q": "How does warfarin exert its anticoagulant effect at the enzymatic level?",
    "options": [
-    "Directly inhibits thrombin and Factor Xa active sites",
+    "Directly inhibits thrombin and factor Xa active sites",
     "Activates antithrombin III",
-    "Inhibits vitamin K epoxide reductase (VKORC1), preventing regeneration of reduced vitamin K hydroquinone",
+    "Inhibits vitamin K epoxide reductase, reducing active vitamin K regeneration",
     "Chelates plasma calcium ions"
    ],
    "answer": 2,
@@ -368,7 +368,7 @@
     "Inhibits hepatic synthesis of vitamin K-dependent factors",
     "Directly degrades fibrin polymers",
     "Blocks platelet GpIIb/IIIa receptors",
-    "Binds antithrombin III and induces a conformational change that accelerates inactivation of thrombin (Factor IIa) and Factor Xa by 1,000-fold"
+    "Enhances antithrombin activity against thrombin and factor Xa"
    ],
    "answer": 3,
    "explain": "Heparin binds to a lysine-rich site on antithrombin III (ATIII), dramatically enhancing ATIII's ability to neutralize serine proteases, especially thrombin and Factor Xa.",
@@ -390,9 +390,9 @@
    "sub": "Natural Anticoagulants and Fibrinolysis",
    "q": "How does the endothelial protein C pathway limit thrombus extension on intact vascular endothelium?",
    "options": [
-    "Thrombin bound to endothelial thrombomodulin activates protein C, which together with protein S proteolytically inactivates Factors Va and VIIIa",
+    "Thrombin-thrombomodulin activates protein C; activated protein C with protein S inactivates Va and VIIIa",
     "Protein C activates Factors V and VIII to strengthen clots",
-    "Thrombomodulin converts plasminogen directly to fibrin",
+    "Thrombomodulin converts plasminogen directly into fibrin",
     "Protein S inhibits antithrombin III"
    ],
    "answer": 0,
@@ -415,7 +415,7 @@
    "q": "A 29-year-old woman develops a deep vein thrombosis after starting oral contraceptives. Genetic testing reveals Factor V Leiden. What is the specific molecular abnormality in Factor V Leiden?",
    "options": [
     "Complete absence of Factor V synthesis",
-    "A point mutation (Arg506Gln) in Factor V that makes Factor Va resistant to cleavage and inactivation by activated protein C",
+    "Factor V Leiden resists inactivation by activated protein C because of an Arg506Gln substitution",
     "Overexpression of tissue plasminogen activator",
     "Gain-of-function mutation in antithrombin III"
    ],
@@ -459,10 +459,10 @@
    "sub": "Natural Anticoagulants and Fibrinolysis",
    "q": "Why does an elevated plasma D-dimer level specifically indicate degradation of a stabilized fibrin clot rather than simple fibrinogenolysis?",
    "options": [
-    "D-dimer is synthesized directly by hepatocytes during inflammation",
-    "Unpolymerized fibrinogen contains preformed D-dimer epitopes",
+    "D-dimer is synthesised directly by hepatocytes during inflammation",
+    "Unpolymerised fibrinogen contains preformed D-dimer epitopes",
     "Plasmin generates D-dimer only from uncrosslinked fibrin monomers",
-    "D-dimer consists of two covalently linked D domains formed only after Factor XIIIa crosslinks fibrin polymers and plasmin subsequently cleaves them"
+    "D-dimer is released when plasmin degrades factor XIIIa-crosslinked fibrin"
    ],
    "answer": 3,
    "explain": "Free fibrinogen and uncrosslinked fibrin lack covalent bonds between adjacent D domains; D-dimer appears only when a thrombus has been crosslinked by Factor XIIIa and then degraded by plasmin.",

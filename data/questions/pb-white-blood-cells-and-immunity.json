@@ -402,9 +402,9 @@
    "sub": "Innate vs Adaptive Immunity",
    "q": "Which characteristic distinguishes innate immunity from adaptive (acquired) immunity?",
    "options": [
-    "Innate immunity requires 5 to 7 days of clonal expansion before acting",
-    "Innate immunity responds rapidly within minutes to hours using germline-encoded pattern recognition receptors and lacks immunological memory",
-    "Innate immunity relies on somatic V(D)J gene rearrangement",
+    "Innate immunity requires several days of clonal expansion before acting",
+    "Innate immunity acts rapidly through germline-encoded pattern-recognition receptors and lacks antigen-specific memory",
+    "Innate immunity depends on somatic V(D)J recombination",
     "Innate immunity is mediated exclusively by plasma cells and cytotoxic T cells"
    ],
    "answer": 1,
@@ -449,10 +449,10 @@
    "sub": "Innate vs Adaptive Immunity",
    "q": "How do Natural Killer (NK) cells recognize and destroy virus-infected cells or tumor cells without prior antigen sensitization?",
    "options": [
-    "By binding specific peptides presented on MHC class II",
-    "By secreting high-affinity neutralizing IgG antibodies",
-    "By phagocytosing whole tumor cells intact",
-    "By detecting downregulation of self MHC class I molecules (missing-self) alongside stress-induced activating ligands"
+    "By recognising viral peptides presented on MHC class II",
+    "By secreting high-affinity neutralising IgG antibodies",
+    "By phagocytosing whole tumour cells intact",
+    "By detecting reduced MHC I expression and other stress signals on target cells"
    ],
    "answer": 3,
    "explain": "NK cells possess inhibitory receptors (KIRs) that recognize normal self MHC class I; when viruses or tumors downregulate MHC class I to evade CD8+ T cells, inhibition is lost and NK cells release perforin and granzymes to induce apoptosis.",
@@ -1007,10 +1007,10 @@
    "sub": "Humoral Immunity and Immunoglobulins",
    "q": "How does a secondary (anamnestic) humoral immune response differ from a primary immune response upon re-exposure to the same protein antigen?",
    "options": [
-    "Longer lag phase, lower peak titer, and predominantly IgM antibodies",
+    "Longer lag phase, lower peak titre and predominantly IgM",
     "Absence of memory B cells and no affinity maturation",
     "Exclusive production of IgD without class switching",
-    "Shorter lag phase, much higher peak antibody titer, prolonged persistence, and predominance of high-affinity class-switched IgG"
+    "Shorter lag phase, higher titre and predominantly high-affinity class-switched antibodies"
    ],
    "answer": 3,
    "explain": "Pre-existing long-lived memory B and T cells that already underwent somatic hypermutation and class switching respond within 1 to 3 days (versus 7 to 10 days in primary exposure) with robust high-affinity IgG.",
@@ -1125,10 +1125,10 @@
    "sub": "Clinical Correlations and Immunodeficiencies",
    "q": "A 28-year-old man with untreated HIV infection presents with Pneumocystis jirovecii pneumonia and oral candidiasis, and his CD4+ T-cell count is 140 cells/uL. Why does selective depletion of CD4+ T helper cells cripple both cell-mediated and humoral immunity?",
    "options": [
-    "CD4+ T cells provide essential cytokines (IL-2, IFN-gamma, IL-4) and CD40L costimulation required to activate macrophages, CD8+ T cells, and B-cell class switching",
-    "CD4+ T cells are the sole cells capable of phagocytosing fungi in alveoli",
-    "CD4+ T cells directly synthesize serum IgM and IgG antibodies",
-    "CD4+ T cells produce complement C3 in the liver"
+    "CD4 cells provide cytokines and CD40L signals needed to coordinate macrophages, CD8 cells and B cells",
+    "CD4 cells are the only cells that phagocytose fungi in alveoli",
+    "CD4 cells directly synthesise serum IgM and IgG",
+    "CD4 cells produce complement C3 in the liver"
    ],
    "answer": 0,
    "explain": "CD4+ helper T cells act as the central orchestrators of adaptive immunity: without their cytokines and CD40L signals, macrophages fail to clear intracellular microbes, CTL responses weaken, and B cells cannot mount T-dependent high-affinity IgG/IgA/IgE responses.",
@@ -1218,10 +1218,10 @@
    "sub": "Lymphoid Organs and Circulation",
    "q": "Why are asplenic or splenectomized patients particularly susceptible to fulminant sepsis caused by encapsulated bacteria such as Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria meningitidis?",
    "options": [
-    "The spleen is the major site for clearing opsonized encapsulated bacteria from blood and producing IgM antibodies against polysaccharide capsules",
+    "The spleen clears opsonised encapsulated bacteria and supports IgM responses to capsular polysaccharides",
     "The spleen is the sole site of neutrophil production in adults",
-    "Splenectomy eliminates all CD4+ T lymphocytes from the body",
-    "The spleen synthesizes all serum complement C3 and C4"
+    "Splenectomy removes all CD4 T lymphocytes",
+    "The spleen synthesises all serum complement proteins"
    ],
    "answer": 0,
    "explain": "Splenic marginal zone B cells generate T-independent IgM against bacterial capsular polysaccharides, and splenic red pulp macrophages efficiently filter IgG/C3b-opsonized encapsulated organisms from the bloodstream.",
@@ -1311,10 +1311,10 @@
    "sub": "Humoral Immunity and Immunoglobulins",
    "q": "Which mechanisms generate the vast diversity of antigen-binding receptors on B and T lymphocytes prior to antigen exposure?",
    "options": [
-    "Somatic V(D)J gene recombination mediated by RAG1/RAG2 recombinase, junctional diversity via TdT, and random heavy-light chain pairing",
-    "Post-translational glycosylation in the Golgi apparatus after infection",
-    "Direct inheritance of millions of complete preformed antibody genes in the germline",
-    "Phagocytosis of bacterial DNA plasmids by bone marrow stem cells"
+    "V(D)J recombination, junctional diversity and random chain pairing generate receptor diversity",
+    "Post-translational glycosylation creates all receptor diversity after infection",
+    "Millions of complete antibody genes are inherited directly in the germline",
+    "Phagocytosis of bacterial plasmids by bone marrow stem cells creates antigen receptors"
    ],
    "answer": 0,
    "explain": "Random combinatorial joining of Variable (V), Diversity (D), and Joining (J) gene segments by RAG1/RAG2 plus non-templated nucleotide addition by terminal deoxynucleotidyl transferase (TdT) generates over 10^11 distinct antigen receptors before antigen encounter.",
@@ -1381,10 +1381,10 @@
    "sub": "Active vs Passive Immunity and Hypersensitivity",
    "q": "How do bacterial superantigens (such as Staphylococcus aureus toxic shock syndrome toxin-1, TSST-1) cause massive cytokine storm and vasodilatory shock?",
    "options": [
-    "By blocking all MHC class I and class II expression on macrophages",
-    "By destroying all circulating B cells within minutes",
-    "By inhibiting IL-1 and TNF-alpha transcription in monocytes",
-    "By simultaneously cross-linking the outer variable beta (V-beta) region of TCRs and MHC class II outside the peptide-binding groove, non-specifically activating up to 20% of all T cells"
+    "Blocks all MHC class I and II expression on macrophages",
+    "Destroys circulating B cells within minutes",
+    "Inhibits IL-1 and TNF-alpha release from monocytes",
+    "Bridges MHC II and T-cell receptor V-beta regions, activating many T cells and releasing cytokines"
    ],
    "answer": 3,
    "explain": "Unlike conventional peptide antigens that activate ~0.01% of T cells, superantigens bridge MHC class II and TCR V-beta chains directly without antigen processing, triggering polyclonal activation of ~10-20% of T cells and massive release of IL-2, IFN-gamma, and TNF-alpha.",

@@ -651,10 +651,10 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "Why is methanol (wood alcohol) or ethylene glycol (antifreeze) ingestion dangerous, and how do fomepizole or ethanol treat this poisoning?",
    "options": [
-    "Alcohol dehydrogenase (ADH) oxidizes methanol to formaldehyde/formic acid (causing optic nerve damage and metabolic acidosis) and ethylene glycol to glycolic/oxalic acid (causing renal tubular calcium oxalate injury); fomepizole or ethanol competitively inhibits ADH to slow toxic metabolite formation",
-    "Methanol directly inhibits hemoglobin synthesis without metabolism",
-    "Fomepizole neutralizes formic acid in the stomach by raising pH",
-    "Ethanol accelerates conversion of methanol into formic acid"
+    "ADH converts them to toxic acids; fomepizole or ethanol competes for ADH and slows toxic metabolite formation",
+    "They directly destroy haemoglobin without undergoing metabolism",
+    "Fomepizole neutralizes the parent alcohol in the stomach after absorption",
+    "Ethanol accelerates their conversion into harmless metabolites"
    ],
    "answer": 0,
    "explain": "Methanol and ethylene glycol themselves cause mild CNS depression, but their ADH-derived metabolites (formic acid and oxalic acid) drive severe high-anion-gap metabolic acidosis, blindness, and acute renal failure; competitive ADH blockade by fomepizole (or ethanol) allows slower renal excretion of unchanged parent alcohol.",
@@ -789,10 +789,10 @@
    "sub": "Chemical Carcinogenesis and Reactive Intermediates",
    "q": "What is the difference between a direct-acting carcinogen and a procarcinogen (indirect carcinogen)?",
    "options": [
+    "Direct carcinogens always require CYP450 activation; procarcinogens are active without metabolism",
+    "Direct carcinogens are already reactive; procarcinogens require metabolic activation to become carcinogenic",
     "Direct carcinogens act only in the kidneys; procarcinogens act only in the brain",
-    "Direct carcinogens are already electrophilic and can react with cellular nucleophiles (DNA/RNA/proteins) without metabolic activation, whereas procarcinogens require metabolic conversion (typically by Phase I enzymes) into an ultimate carcinogen",
-    "Procarcinogens never mutate DNA",
-    "Direct carcinogens require vitamin K for activation"
+    "Procarcinogens cannot interact with DNA or cause mutations"
    ],
    "answer": 1,
    "explain": "Most environmental and dietary chemical carcinogens (such as polycyclic aromatic hydrocarbons like benzo[a]pyrene, aromatic amines, and aflatoxin B1) are procarcinogens that must be metabolically activated into electrophilic ultimate carcinogens.",
@@ -907,10 +907,10 @@
    "sub": "Heavy Metals and Chelation Biochemistry",
    "q": "Which chelating agents or metal-binding proteins are clinically used to bind and promote excretion of heavy metals or excess copper/iron?",
    "options": [
-    "Penicillamine or trientine for Wilson disease (copper excess); deferoxamine/deferasirox for iron overload; dimercaprol (BAL), succimer (DMSA), or CaNa2-EDTA for lead/heavy metal poisoning",
-    "Warfarin for iron overload",
-    "Heparin for lead poisoning",
-    "Atropine for copper toxicity"
+    "Wilson disease: penicillamine or trientine; iron overload: deferoxamine or deferasirox; lead: succimer or CaNa2-EDTA",
+    "Warfarin is used to chelate excess iron and copper",
+    "Heparin binds lead and promotes its renal excretion",
+    "Atropine is the standard chelator for copper and iron"
    ],
    "answer": 0,
    "explain": "Chelators form water-soluble coordination complexes with toxic or excess metal ions that can be excreted in urine or bile (e.g., penicillamine/trientine for Wilson disease, deferoxamine for iron, DMSA/EDTA for lead).",
@@ -1025,10 +1025,10 @@
    "sub": "Phase II Conjugation Reactions",
    "q": "What is enterohepatic circulation of glucuronidated xenobiotics or bilirubin conjugates?",
    "options": [
-    "Direct filtration from blood into the appendix",
-    "Biliary excretion of polar conjugates into the intestine, followed by bacterial beta-glucuronidase deconjugation back to lipophilic compounds that can be reabsorbed across the intestinal mucosa into portal blood",
-    "Conversion of bile acids into thyroid hormones",
-    "Active pumping of toxins from sweat glands into arteries"
+    "Direct filtration of unchanged compounds from blood into the appendix",
+    "Biliary conjugates enter the gut, may be deconjugated by bacteria, and can be reabsorbed into portal blood",
+    "Bile acids are converted into thyroid hormones before intestinal absorption",
+    "Toxins are transported from sweat glands directly into systemic arteries"
    ],
    "answer": 1,
    "explain": "Bacterial beta-glucuronidases in the gut can cleave glucuronide groups off excreted conjugates, regenerating less polar molecules that re-enter portal circulation and prolong drug/metabolite half-life.",
@@ -1049,10 +1049,10 @@
    "sub": "Phase II Conjugation Reactions",
    "q": "Why are patients with inherited thiopurine S-methyltransferase (TPMT) deficiency at high risk of severe myelosuppression when given standard doses of azathioprine or 6-mercaptopurine?",
    "options": [
-    "TPMT normally methylates and shunts thiopurines away from cytotoxic thioguanine nucleotide incorporation into DNA; TPMT deficiency increases accumulation of cytotoxic 6-thioguanine nucleotides in hematopoietic precursors",
-    "TPMT is required to absorb azathioprine from the stomach",
+    "TPMT normally inactivates thiopurines; deficiency increases cytotoxic thioguanine nucleotide accumulation and myelosuppression",
+    "TPMT is required for intestinal absorption of azathioprine",
     "TPMT converts azathioprine into vitamin K",
-    "TPMT blocks iron uptake in the bone marrow"
+    "TPMT deficiency prevents thiopurines from entering bone marrow cells"
    ],
    "answer": 0,
    "explain": "Reduced or absent TPMT activity diverts thiopurine metabolism toward excess 6-thioguanine nucleotides, causing life-threatening leukopenia/neutropenia unless the dose is substantially reduced.",
@@ -1189,10 +1189,10 @@
    "sub": "Antioxidant Defense Against Xenobiotic Stress",
    "q": "How does lipid peroxidation initiated by xenobiotic-induced free radicals damage cell membranes?",
    "options": [
-    "Free radicals abstract a hydrogen atom from polyunsaturated fatty acyl chains (PUFAs), forming lipid radicals and lipid hydroperoxides in a self-propagating chain reaction that disrupts membrane fluidity and integrity",
-    "Converts cholesterol into glycogen",
-    "Strengthens disulfide bonds across the bilayer",
-    "Increases active transport by Na+/K+-ATPase"
+    "Free radicals attack polyunsaturated fatty acids, initiating a chain reaction that disrupts membrane integrity",
+    "It converts membrane cholesterol into glycogen",
+    "It strengthens disulphide bonds between phospholipid head groups",
+    "It activates Na+/K+-ATPase and increases membrane transport"
    ],
    "answer": 0,
    "explain": "Polyunsaturated fatty acids with bis-allylic methylene hydrogens are especially vulnerable to radical chain lipid peroxidation (producing malondialdehyde and 4-hydroxynonenal), which is terminated by chain-breaking antioxidants like alpha-tocopherol (vitamin E).",
@@ -1263,10 +1263,10 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "What is the biochemical mechanism of paraquat (a bipyridyl herbicide) toxicity, particularly in lung alveolar epithelial cells?",
    "options": [
-    "Concentrated in alveolar cells via the polyamine uptake system and undergoes redox cycling (reduction by NADPH/diaphorase followed by re-oxidation by O2), generating massive superoxide radicals and oxidative lung injury/fibrosis",
-    "Inhibits acetylcholinesterase in the brain",
-    "Binds calcium in bone matrix",
-    "Acts as a competitive antagonist at opioid receptors"
+    "Paraquat undergoes redox cycling in lung cells, generating reactive oxygen species and severe oxidative injury",
+    "It inhibits acetylcholinesterase at the neuromuscular junction",
+    "It chelates calcium from bone and causes osteomalacia",
+    "It activates opioid receptors and suppresses respiration"
    ],
    "answer": 0,
    "explain": "Paraquat is actively taken up by Type I and Type II pneumocytes and undergoes cyclic reduction-oxidation with molecular oxygen, generating continuous superoxide and hydroxyl radicals that cause fatal pulmonary edema and fibrosis.",

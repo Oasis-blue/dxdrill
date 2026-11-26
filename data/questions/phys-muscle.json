@@ -1557,10 +1557,10 @@
    "sub": "Excitation-Contraction Coupling Across Muscle Types",
    "q": "How does calcium mobilization during excitation-contraction coupling differ fundamentally between skeletal muscle and cardiac muscle?",
    "options": [
-    "Skeletal muscle requires extracellular Ca2+ influx through L-type channels to trigger SR release, whereas cardiac muscle uses direct mechanical DHP-RyR1 coupling",
-    "Skeletal muscle relies on direct mechanical coupling between T-tubule DHP sensors (Cav1.1) and SR RyR1 channels without requiring extracellular Ca2+ entry, whereas cardiac muscle requires extracellular Ca2+ influx through L-type channels (Cav1.2) during Phase 2 to trigger calcium-induced calcium release (CICR) via RyR2",
-    "Neither skeletal nor cardiac muscle uses sarcoplasmic reticulum Ca2+ stores",
-    "Cardiac muscle lacks ryanodine receptors completely"
+    "Skeletal muscle requires extracellular calcium entry to trigger SR release; cardiac muscle uses direct DHP-RyR coupling",
+    "Skeletal muscle uses mechanical Cav1.1-RyR1 coupling; cardiac muscle uses calcium entry through Cav1.2 to trigger CICR via RyR2",
+    "Neither muscle type uses sarcoplasmic reticulum calcium stores",
+    "Cardiac muscle lacks ryanodine receptors"
    ],
    "answer": 1,
    "explain": "Because cardiac muscle depends on extracellular Ca2+ entry during the action potential plateau to trigger CICR via RyR2, cardiac contractility is directly sensitive to extracellular [Ca2+] and L-type Ca2+ channel blockers (verapamil/diltiazem), unlike skeletal muscle.",
@@ -1649,8 +1649,8 @@
    "sub": "Muscle Mechanics: Length-Tension and Force-Velocity",
    "q": "Why does cardiac muscle normally operate on the ascending limb of its length-tension curve (Frank-Starling mechanism), and why is it far stiffer passively than skeletal muscle?",
    "options": [
-    "Cardiac myocytes lack titin and collagen",
-    "Cardiac sarcomeres rest at ~1.6-1.8 um (below optimal 2.2 um) and contain a stiffer N2B titin isoform plus dense collagen network, preventing overstretching while allowing increased venous return (preload) to increase cross-bridge overlap and Ca2+ sensitivity",
+    "Cardiac muscle lacks titin and collagen",
+    "Short resting sarcomeres, stiff titin and collagen permit preload recruitment while limiting overstretch",
     "Cardiac muscle has no sarcoplasmic reticulum",
     "Cardiac muscle generates maximal force at zero preload"
    ],
@@ -1764,10 +1764,10 @@
    "sub": "Muscle Fiber Types and Exercise Adaptation",
    "q": "What occurs during 'disuse atrophy' and 'denervation atrophy' of skeletal muscle?",
    "options": [
-    "Ubiquitin-proteasome (MuRF1/atrogin-1) and autophagy-lysosome pathways degrade sarcomeric proteins faster than synthesis, shrinking fiber cross-sectional area; denervation additionally causes fibrillation potentials, hypersensitivity to acetylcholine (extrareceptor spread), and eventual fibrofatty replacement",
+    "Reduced loading increases muscle protein breakdown; denervation also causes spontaneous activity and extrajunctional acetylcholine receptors",
     "Denervated muscle doubles in mass and develops stronger tetanic force",
     "Disuse atrophy increases mitochondrial density tenfold",
-    "Denervation eliminates all acetylcholine receptors from the sarcolemma"
+    "Denervation removes all acetylcholine receptors from the sarcolemma"
    ],
    "answer": 0,
    "explain": "Without motor nerve trophic input and mechanical load, FoxO transcription factors upregulate muscle-specific E3 ubiquitin ligases; denervated fibers also express fetal-type nicotinic receptors across the entire sarcolemma ('denervation supersensitivity') and spontaneous single-fiber fibrillations.",
@@ -1787,8 +1787,8 @@
    "sub": "Electromyography (EMG) and Motor Unit Assessment",
    "q": "What does a clinical needle electromyogram (EMG) record, and how does the motor unit action potential (MUAP) pattern differ between a primary myopathy and chronic neurogenic denervation/reinnervation?",
    "options": [
-    "EMG records extracellular summed action potentials of muscle fibers within motor units; myopathy shows small-amplitude, short-duration polyphasic MUAPs with early recruitment, whereas chronic neurogenic disease shows large-amplitude, long-duration MUAPs (due to collateral sprouting) with reduced recruitment",
-    "EMG directly measures serum creatine kinase levels",
+    "EMG records muscle electrical activity; myopathy gives small, short MUAPs, while chronic neurogenic disease gives large, long MUAPs",
+    "EMG directly measures serum creatine kinase",
     "Myopathy produces giant long-duration MUAPs; neuropathy produces tiny short MUAPs",
     "Normal relaxed skeletal muscle shows continuous high-voltage fibrillation potentials"
    ],
@@ -1810,9 +1810,9 @@
    "sub": "Smooth Muscle Regulation and Tone",
    "q": "Which four pathways clear cytosolic Ca2+ to allow smooth muscle relaxation once excitatory stimulation ends?",
    "options": [
-    "Only diffusion of Ca2+ through nuclear pores",
-    "SERCA pumping Ca2+ into the sarcoplasmic reticulum, plasma membrane Ca2+-ATPase (PMCA) extruding Ca2+ out of the cell, Na+/Ca2+ exchanger (NCX) extruding Ca2+, and mitochondrial Ca2+ uniporter uptake, accompanied by myosin light-chain phosphatase (MLCP) dephosphorylating myosin",
-    "Opening of L-type voltage-gated Ca2+ channels and activation of MLCK",
+    "Only diffusion of calcium through nuclear pores",
+    "SERCA, PMCA, NCX and mitochondrial uptake lower cytosolic calcium; MLCP dephosphorylates myosin",
+    "Opening L-type calcium channels and activating MLCK",
     "Hydrolysis of actin by calpain proteases"
    ],
    "answer": 1,
@@ -1833,8 +1833,8 @@
    "sub": "Smooth Muscle Regulation and Tone",
    "q": "What is the 'myogenic response' (Bayliss effect) in arteriolar vascular smooth muscle?",
    "options": [
-    "Reflex vasodilation triggered by parasympathetic vagal stimulation",
-    "Intrinsic vasoconstriction of resistance arterioles in response to increased transmural stretch/intraluminal pressure, mediated by stretch-activated cation channels depolarizing smooth muscle and opening L-type Ca2+ channels to autoregulate organ blood flow",
+    "Reflex vasodilation caused by parasympathetic vagal stimulation",
+    "Raised pressure stretches arteriolar smooth muscle, causing depolarisation, calcium entry and vasoconstriction",
     "Release of acetylcholine from vascular endothelial cells",
     "Skeletal muscle shivering in cold weather"
    ],
@@ -1856,10 +1856,10 @@
    "sub": "Comparative Muscle Ultrastructure",
    "q": "Compare the sarcoplasmic reticulum (SR) abundance and T-tubule presence across skeletal, cardiac, and smooth muscle.",
    "options": [
-    "Skeletal muscle has an extensive SR and narrow T-tubules at A-I junctions; cardiac muscle has a moderately developed SR and wide T-tubules at Z-lines; smooth muscle has a sparse peripheral SR and lacks T-tubules (using caveolae instead)",
-    "Smooth muscle has the most extensive T-tubule system of all three muscle types",
-    "Skeletal muscle lacks sarcoplasmic reticulum completely",
-    "Cardiac muscle has no T-tubules in ventricular myocytes"
+    "Skeletal: extensive SR and T-tubules; cardiac: moderate SR and T-tubules; smooth: sparse SR and caveolae instead of T-tubules",
+    "Smooth muscle has the most extensive T-tubule system",
+    "Skeletal muscle lacks sarcoplasmic reticulum",
+    "Cardiac ventricular myocytes have no T-tubules"
    ],
    "answer": 0,
    "explain": "Because skeletal fibers are large (up to 100 um diameter) and contract rapidly without extracellular Ca2+, they require dense SR stores and rapid T-tubule conduction; small spindle-shaped smooth muscle cells (2-10 um) rely largely on extracellular Ca2+ entry.",
@@ -1925,10 +1925,10 @@
    "sub": "Clinical Correlations",
    "q": "A 22-year-old man presents with progressive inability to relax his grip after shaking hands (grip myotonia), frontal balding, cataracts, cardiac conduction block, and distal muscle weakness. Genetic testing shows an expanded CTG trinucleotide repeat in the DMPK gene (myotonic dystrophy type 1). What is the molecular pathogenesis of myotonic dystrophy type 1?",
    "options": [
-    "Expanded CUG-repeat mutant mRNA accumulates in nuclear foci, sequestering splicing factors (MBNL1) and causing aberrant alternative splicing of the skeletal muscle ClC-1 chloride channel (CLCN1), reducing resting Cl- conductance so K+ accumulation in T-tubules triggers repetitive sarcolemmal firing",
+    "Expanded CUG-repeat RNA sequesters MBNL1, disrupting ClC-1 splicing and reducing muscle chloride conductance",
     "Complete absence of dystrophin protein at the Z-disc",
     "Autoantibodies against presynaptic P/Q-type calcium channels",
-    "Deficiency of muscle acid maltase in lysosomes"
+    "Deficiency of lysosomal acid maltase"
    ],
    "answer": 0,
    "explain": "Normally, high resting Cl- conductance (~70-80% of resting sarcolemmal conductance) stabilizes skeletal muscle membrane potential against K+ buildup inside narrow T-tubules during repetitive firing; loss of ClC-1 channels causes T-tubular K+ depolarization to trigger after-discharges (myotonia).",
@@ -1948,10 +1948,10 @@
    "sub": "Clinical Correlations",
    "q": "A 17-year-old male athlete develops severe painful muscle cramps, dark tea-colored urine (myoglobinuria), and a 'second-wind' phenomenon (marked improvement in exercise tolerance after ~10 minutes of moderate exertion) during sprint workouts. Forearm ischemic exercise testing shows no rise in venous lactate. Which enzyme deficiency causes McArdle disease (glycogen storage disease type V)?",
    "options": [
-    "Skeletal muscle glycogen phosphorylase (myophosphorylase), impairing glycogenolysis during anaerobic bursts until increased blood flow delivers glucose and free fatty acids ('second wind')",
-    "Hepatic glucose-6-phosphatase",
-    "Skeletal muscle dystrophin",
-    "Acetylcholinesterase"
+    "Muscle glycogen phosphorylase deficiency limits glycogen use during exercise, causing cramps and a second-wind phenomenon",
+    "Hepatic glucose-6-phosphatase deficiency",
+    "Skeletal muscle dystrophin deficiency",
+    "Acetylcholinesterase deficiency"
    ],
    "answer": 0,
    "explain": "Without myophosphorylase, skeletal muscle cannot mobilize endogenous glycogen for rapid anaerobic glycolysis at exercise onset, causing cramps and rhabdomyolysis until exercise-induced vasodilation supplies exogenous blood glucose and fatty acids.",
@@ -1971,9 +1971,9 @@
    "sub": "Clinical Correlations",
    "q": "A 38-year-old man is trapped under collapsed concrete for 8 hours following an earthquake. Shortly after extrication, he develops dark brown urine, oliguric acute kidney injury, serum creatine kinase of 85,000 U/L, and peaked T waves with serum K+ of 7.4 mEq/L. What is the pathophysiological cascade of traumatic rhabdomyolysis?",
    "options": [
-    "Crush ischemia depletes sarcolemmal ATP, causing Na+/K+-ATPase and SERCA failure, intracellular Na+ and Ca2+ overload, calpain protease lysis of myofibers, and massive release of intracellular K+, phosphate, uric acid, and nephrotoxic myoglobin into the circulation",
-    "Excessive synthesis of dystrophin inside renal tubules",
-    "Hyperpolarization of skeletal muscle membranes to -150 mV",
+    "ATP depletion impairs ion pumps, causing calcium overload, muscle breakdown and release of potassium and myoglobin",
+    "Excess dystrophin synthesis damages renal tubules",
+    "Hyperpolarisation of muscle membranes to −150 mV",
     "Autoimmune destruction of Schwann cells"
    ],
    "answer": 0,

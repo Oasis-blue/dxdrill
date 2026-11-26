@@ -33,9 +33,9 @@
    "q": "Why is total body water as a percentage of body weight lower in adult females (about 50%) than in adult males (about 60%)?",
    "options": [
     "Females have a larger plasma volume per kilogram",
-    "Females generally have a higher proportion of adipose tissue, which contains very little water",
-    "Females have higher skeletal muscle mass relative to total weight",
-    "Females secrete higher basal levels of aldosterone"
+    "A higher average proportion of adipose tissue lowers total body water as a fraction of body weight",
+    "Females have more skeletal muscle relative to body weight",
+    "Females secrete more aldosterone at baseline"
    ],
    "answer": 1,
    "explain": "Adipose tissue is roughly 10% water compared to about 73% in lean skeletal muscle; because women typically have higher body fat percentages, their TBW averages 50% of body weight.",
@@ -176,7 +176,7 @@
     "Interstitial fluid has twice the sodium concentration of plasma",
     "Interstitial fluid contains ten times more potassium than plasma",
     "Interstitial fluid lacks glucose and urea",
-    "Interstitial fluid has a much lower protein concentration because capillary walls are largely impermeable to plasma proteins"
+    "Interstitial fluid contains much less protein because capillary walls restrict plasma proteins"
    ],
    "answer": 3,
    "explain": "Capillary endothelium restricts large anionic plasma proteins (especially albumin), so plasma has ~7 g/dL protein while interstitial fluid has ~2 g/dL; consequently, via the Gibbs-Donnan effect, interstitial fluid has slightly higher Cl- and slightly lower Na+ than plasma.",
@@ -314,10 +314,10 @@
    "sub": "Measurement of Body Fluid Compartments",
    "q": "Why cannot intracellular fluid (ICF) volume and interstitial fluid (ISF) volume be measured directly with a single injected indicator?",
    "options": [
-    "Because tracers are immediately destroyed by plasma enzymes",
-    "Because no tracer enters cells without first traversing the extracellular and plasma spaces",
-    "Because ICF and ISF have identical protein concentrations",
-    "Because interstitial fluid does not exchange with plasma"
+    "Tracers are immediately destroyed by plasma enzymes",
+    "ICF and interstitial fluid cannot be measured directly with one tracer; derive them from total body water and ECF",
+    "ICF and interstitial fluid have identical protein concentrations",
+    "Interstitial fluid does not exchange with plasma"
    ],
    "answer": 1,
    "explain": "Any tracer injected into blood must pass through plasma and interstitial fluid before entering cells; hence ICF = TBW - ECF, and ISF = ECF - Plasma volume.",
@@ -385,10 +385,10 @@
    "sub": "Osmolarity and Darrow-Yannet Shifts",
    "q": "What is the normal plasma osmolarity in humans, and which solute accounts for nearly half of it?",
    "options": [
-    "285 to 295 mOsm/L, with Na+ (and its accompanying anions) accounting for over 90% of effective osmoles",
-    "150 to 160 mOsm/L, with glucose accounting for 80%",
-    "400 to 420 mOsm/L, with albumin accounting for 70%",
-    "200 to 210 mOsm/L, with potassium accounting for 90%"
+    "About 285–295 mOsm/L; sodium and accompanying anions account for most of it",
+    "About 150–160 mOsm/L, mostly from glucose",
+    "About 400–420 mOsm/L, mostly from albumin",
+    "About 200–210 mOsm/L, mostly from potassium"
    ],
    "answer": 0,
    "explain": "Normal plasma osmolarity is ~285-295 mOsm/L (estimated by 2[Na+] + Glucose/18 + BUN/2.8 in mg/dL); Na+ (~142 mEq/L) and its associated anions (Cl- and HCO3-) contribute roughly 280 mOsm/L.",
@@ -431,10 +431,10 @@
    "sub": "Osmolarity and Darrow-Yannet Shifts",
    "q": "A patient loses 1.5 liters of pure water through profuse sweating in extreme heat without replacing fluids (hyperosmotic volume contraction). How do the fluid compartments change?",
    "options": [
-    "Only ECF volume decreases while ICF volume expands",
+    "Only ECF volume falls while ICF volume expands",
     "ECF osmolarity falls while ICF osmolarity rises",
-    "Both ECF and ICF volumes decrease, and osmolarity increases equally in both compartments",
-    "ICF volume stays constant while ECF volume drops by 1.5 L"
+    "Water shifts from ICF to ECF; both compartments shrink and osmolarity rises",
+    "ICF volume remains constant while ECF falls"
    ],
    "answer": 2,
    "explain": "Pure water loss concentrates the ECF, creating an osmotic gradient that pulls water out of cells into the ECF until both compartments equilibrate at a higher osmolarity and reduced volume.",
@@ -477,10 +477,10 @@
    "sub": "Osmolarity and Darrow-Yannet Shifts",
    "q": "Intravenous infusion of 5% dextrose in water (D5W) initially acts as an isotonic solution in the IV bag, but once the glucose is metabolized by cells, what is its net physiological effect on fluid compartments?",
    "options": [
-    "It behaves like pure free water, expanding both ECF and ICF proportionally (roughly one-third ECF, two-thirds ICF) and lowering osmolarity",
-    "It remains strictly inside the intravascular plasma space",
-    "It pulls water out of cells and raises plasma osmolarity",
-    "It expands only the interstitial space while shrinking plasma"
+    "After glucose metabolism, D5W acts as free water and distributes across ECF and ICF",
+    "It remains exclusively in the intravascular plasma space",
+    "It draws water out of cells and raises plasma osmolarity",
+    "It expands only interstitial fluid while shrinking plasma"
    ],
    "answer": 0,
    "explain": "Once cellular uptake and metabolism clear the dextrose, only free water remains, which distributes across total body water in proportion to compartment sizes (~2/3 ICF, 1/3 ECF) and reduces osmolarity.",
@@ -570,10 +570,10 @@
    "sub": "Capillary Starling Forces and Edema",
    "q": "A 38-year-old resident of an endemic tropical region develops chronic unilateral lower-limb non-pitting swelling (elephantiasis) due to Wuchereria bancrofti infection. Which mechanism produces this edema?",
    "options": [
-    "Obstruction of lymphatic vessels preventing clearance of filtered interstitial fluid and proteins",
-    "Profound hypoalbuminemia from renal protein loss",
+    "Lymphatic obstruction prevents clearance of filtered fluid and interstitial proteins",
+    "Severe hypoalbuminaemia from renal protein loss",
     "Systemic venous hypertension from left ventricular failure",
-    "Excessive antidiuretic hormone secretion"
+    "Excessive ADH secretion"
    ],
    "answer": 0,
    "explain": "Filariasis obstructs lymphatic drainage, trapping filtered fluid and leaked interstitial proteins in the tissue spaces; rising interstitial protein further elevates interstitial oncotic pressure and draws more water out of capillaries.",

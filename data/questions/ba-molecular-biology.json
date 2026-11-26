@@ -549,10 +549,10 @@
    "sub": "Genetic Code and Mutations",
    "q": "What is the functional difference between a missense mutation, a nonsense mutation, and a frameshift mutation?",
    "options": [
-    "Missense creates a stop codon; nonsense changes one amino acid; frameshift leaves the reading frame intact",
-    "Missense has no amino acid change; nonsense deletes a whole chromosome; frameshift substitutes one base",
-    "Missense substitutes one amino acid for another; nonsense converts an amino acid codon into a premature stop codon; frameshift inserts or deletes nucleotides not divisible by three, altering all downstream codons",
-    "All three alter only intronic non-coding DNA"
+    "Missense introduces a stop codon; nonsense substitutes one amino acid; frameshift preserves the reading frame",
+    "Missense deletes a chromosome; nonsense changes gene expression; frameshift affects only introns",
+    "Missense substitutes an amino acid; nonsense creates a premature stop; frameshift alters downstream codons after a non-triplet insertion or deletion",
+    "All three mutations are silent and leave the encoded protein unchanged"
    ],
    "answer": 2,
    "explain": "Missense mutations (e.g., Glu6Val in sickle cell disease) replace one amino acid; nonsense mutations introduce a premature stop codon (often triggering nonsense-mediated mRNA decay); indels not divisible by 3 shift the translational reading frame.",
@@ -690,9 +690,9 @@
    "q": "How are nascent secretory and integral membrane proteins targeted to the rough endoplasmic reticulum during translation?",
    "options": [
     "Ubiquitin chains guide ribosomes to the nuclear pore",
-    "The signal recognition particle (SRP) binds the N-terminal hydrophobic signal peptide as it emerges from the ribosome, pauses translation, and docks with the SRP receptor on the ER translocon (Sec61)",
-    "Chaperonin Hsp60 pulls the mRNA through the outer mitochondrial membrane",
-    "Mannose 6-phosphate tags direct ribosomes to the ER"
+    "SRP binds the emerging signal peptide, pauses translation and docks the ribosome at the ER translocon",
+    "Hsp60 transports secretory proteins through the mitochondrial membrane",
+    "Mannose-6-phosphate directs ribosomes to the rough ER"
    ],
    "answer": 1,
    "explain": "SRP recognizes the hydrophobic N-terminal signal sequence, arrests elongation, and brings the ribosome-nascent chain complex to the ER membrane SRP receptor and Sec61 channel for co-translational translocation.",
@@ -734,10 +734,10 @@
    "sub": "Regulation of Gene Expression",
    "q": "How do histone acetyltransferases (HATs) and histone deacetylases (HDACs) epigenetically regulate eukaryotic chromatin structure and transcription?",
    "options": [
-    "HATs condense chromatin into heterochromatin; HDACs open chromatin into euchromatin",
-    "HATs neutralize positive charges on histone lysine tails to loosen DNA-histone binding (euchromatin, active transcription), whereas HDACs restore positive charges to condense chromatin (heterochromatin, silencing)",
-    "HATs methylate CpG islands; HDACs demethylate them",
-    "Both enzymes degrade histones in the proteasome"
+    "HATs condense chromatin, whereas HDACs loosen histone-DNA binding",
+    "HATs acetylate histone lysines and generally open chromatin; HDACs remove acetyl groups and generally promote compaction",
+    "HATs methylate DNA CpG islands, whereas HDACs remove DNA methylation",
+    "Both enzymes degrade histones during DNA replication"
    ],
    "answer": 1,
    "explain": "Acetylating epsilon-amino groups of histone lysine residues eliminates their positive charge, weakening electrostatic attraction to negatively charged DNA phosphate backbones and opening euchromatin for transcription factors.",
@@ -1014,10 +1014,10 @@
    "sub": "Transcription and RNA Processing",
    "q": "What is the role of enhancers in eukaryotic gene transcription?",
    "options": [
-    "Encode the catalytic subunit of RNA polymerase II",
-    "Cis-acting DNA regulatory sequences that bind activator proteins and loop via the Mediator complex to stimulate transcription from promoters located thousands of base pairs upstream, downstream, or within introns",
-    "Terminate transcription by forming GC-rich hairpins",
-    "Degrade cytoplasmic mRNA"
+    "Enhancers encode the catalytic subunit of RNA polymerase II",
+    "Enhancers are regulatory DNA sequences that bind activators and stimulate transcription through promoter interactions",
+    "Enhancers terminate transcription by forming GC-rich hairpins",
+    "Enhancers are RNA sequences that degrade cytoplasmic mRNA"
    ],
    "answer": 1,
    "explain": "Enhancers are position- and orientation-independent DNA elements that bind tissue-specific transcription factors (activators) and interact with general transcription factors at the promoter via DNA looping and Mediator.",
@@ -1083,10 +1083,10 @@
    "sub": "Translation and Protein Synthesis",
    "q": "How does the ubiquitin-proteasome system target misfolded or short-lived regulatory intracellular proteins (such as cyclins and p53) for degradation?",
    "options": [
-    "Cleaves them inside acidic lysosomes via cathepsins",
-    "E1, E2, and E3 enzymes covalently attach a polyubiquitin chain (linked via Lys48) to target lysine residues, marking the protein for ATP-dependent unfolding and proteolysis by the 26S proteasome",
-    "Exports them out of the cell via exocytosis",
-    "Phosphorylates their C-terminus for RNase digestion"
+    "Lysosomal enzymes digest proteins after they are secreted from the cell",
+    "E1, E2 and E3 enzymes attach polyubiquitin chains that target proteins to the 26S proteasome",
+    "Proteins are exported from the cell in vesicles for extracellular degradation",
+    "Ribosomal RNA binds cyclins and directs them to the nucleus"
    ],
    "answer": 1,
    "explain": "Ubiquitin-activating (E1), ubiquitin-conjugating (E2), and ubiquitin-ligase (E3) enzymes attach Lys48-linked polyubiquitin chains that are recognized by the 19S regulatory cap of the 26S proteasome.",
@@ -1105,10 +1105,10 @@
    "sub": "Regulation of Gene Expression",
    "q": "In the E. coli trp operon, how does attenuation finely regulate transcription in response to intracellular tryptophan levels?",
    "options": [
-    "Tryptophan binds directly to RNA polymerase to cleave it",
-    "In prokaryotes, coupled transcription and translation allows ribosome stalling at tandem Trp codons (when Trp is low) to favor an antiterminator hairpin, whereas rapid translation (when Trp is high) allows a rho-independent terminator hairpin to form",
-    "Tryptophan methylates the trp promoter",
-    "The trp repressor degrades tryptophan mRNA"
+    "Tryptophan directly binds RNA polymerase and causes premature termination",
+    "Low tryptophan stalls the leader-peptide ribosome, favouring an antiterminator; high tryptophan permits a terminator hairpin to form",
+    "Tryptophan methylates the promoter and prevents RNA polymerase binding",
+    "The trp repressor degrades the completed mRNA when tryptophan is scarce"
    ],
    "answer": 1,
    "explain": "Because bacteria lack a nuclear membrane, ribosomes translate the leader peptide (trpL) while RNA polymerase is still transcribing; low Trp-tRNA stalls the ribosome at Trp codons, favoring the 2:3 antiterminator loop instead of the 3:4 terminator hairpin.",
@@ -1128,10 +1128,10 @@
    "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
    "q": "Why must PCR primers be designed as two distinct oligonucleotides (forward and reverse) flanking the target DNA region in opposite orientations?",
    "options": [
-    "To digest intervening introns",
-    "Because DNA polymerase can only extend from a 3'-OH group, each primer anneals to one complementary strand at opposite ends with their 3' ends pointing inward toward the target sequence",
-    "To prevent Taq polymerase from binding DNA",
-    "To convert RNA into protein"
+    "Primers bind the same DNA strand at the same end to prevent polymerase binding",
+    "Primers bind opposite strands with their 3′ ends facing inward, allowing DNA polymerase to copy the target",
+    "Primers bind RNA and direct reverse transcription of the entire genome",
+    "Primers remove introns before DNA amplification"
    ],
    "answer": 1,
    "explain": "Forward and reverse primers hybridize to opposite strands at the 3' boundaries of the target sequence so that 5' to 3' extension from each primer's 3'-OH copies across the target region.",

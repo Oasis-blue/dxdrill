@@ -56,10 +56,10 @@
    "sub": "Blood Specimen Collection and Anticoagulants",
    "q": "Why must blood collected into a potassium EDTA (lavender-top) tube never be used for routine serum or plasma electrolyte analysis?",
    "options": [
-    "Potassium EDTA falsely elevates measured potassium and causes severe pseudohypocalcaemia and pseudohypomagnesaemia by chelating divalent cations",
-    "Potassium EDTA precipitates sodium ions and converts bicarbonate into carbon dioxide gas",
-    "Potassium EDTA activates alkaline phosphatase and destroys serum albumin within 5 minutes",
-    "Potassium EDTA causes immediate intravascular haemolysis inside the syringe barrel"
+    "K-EDTA falsely raises potassium and chelates calcium and magnesium",
+    "It precipitates sodium and converts bicarbonate to CO2",
+    "It activates alkaline phosphatase and destroys albumin",
+    "It causes immediate intravascular haemolysis"
    ],
    "answer": 0,
    "explain": "K2-EDTA or K3-EDTA introduces exogenous potassium (raising measured K+ above 10 mmol/L) and chelates calcium and magnesium, yielding near-zero Ca2+ and Mg2+ results and inhibiting metalloenzymes like alkaline phosphatase.",
@@ -150,10 +150,10 @@
    "sub": "Pre-analytical Variables and Interferences",
    "q": "In vitro haemolysis of a venous blood sample—such as from forceful aspiration through a narrow-gauge needle or vigorous shaking—falsely elevates the measured serum concentration of which intracellular analytes?",
    "options": [
-    "Potassium, lactate dehydrogenase (LDH), and aspartate aminotransferase (AST)",
-    "Sodium, chloride, and bicarbonate",
-    "Albumin, prealbumin, and retinol-binding protein",
-    "Thyroid-stimulating hormone (TSH) and free thyroxine"
+    "Potassium, LDH and AST",
+    "Sodium, chloride and bicarbonate",
+    "Albumin, prealbumin and retinol-binding protein",
+    "TSH and free thyroxine"
    ],
    "answer": 0,
    "explain": "Erythrocytes contain roughly 20 to 25 times more potassium and over 100 times more LDH and AST than extracellular plasma; red cell lysis releases these analytes into serum and also releases haemoglobin that interferes spectrophotometrically.",
@@ -197,10 +197,10 @@
    "sub": "Pre-analytical Variables and Interferences",
    "q": "A 42-year-old outpatient has a routine serum potassium of 6.8 mmol/L reported on a sample drawn at a peripheral clinic and transported uncentrifuged in a cold box at 4 degrees Celsius for 5 hours. His ECG is completely normal and he is asymptomatic. What is the most likely explanation?",
    "options": [
-    "Pseudohyperkalaemia due to cold inhibition of erythrocyte Na+/K+-ATPase during delayed separation",
-    "Acute aldosterone deficiency secondary to silent adrenal infarction",
-    "Severe diabetic ketoacidosis with normal blood glucose",
-    "Laboratory calibrator drift affecting all sodium channels"
+    "Pseudohyperkalaemia from delayed separation and cold-induced pump inhibition",
+    "Acute aldosterone deficiency",
+    "Diabetic ketoacidosis with normal glucose",
+    "Laboratory sodium-calibrator drift"
    ],
    "answer": 0,
    "explain": "Refrigerating unseparated whole blood inhibits the temperature-sensitive erythrocyte Na+/K+-ATPase pump, allowing intracellular potassium to leak passively into serum before centrifugation (pseudohyperkalaemia).",
@@ -220,10 +220,10 @@
    "sub": "Pre-analytical Variables and Interferences",
    "q": "Gross lipaemia (turbid, milky serum due to chylomicrons or VLDL) can cause artifactually low serum sodium readings (pseudohyponatraemia) on indirect ion-selective electrode (ISE) analyzers via which physical mechanism?",
    "options": [
-    "Volume displacement (electrolyte exclusion effect) reducing the aqueous water fraction per unit volume of diluted plasma",
-    "Direct covalent binding of sodium ions to triglyceride ester bonds",
-    "Stimulation of renal sodium excretion by circulating chylomicrons",
-    "Conversion of sodium ions into insoluble fatty acid soaps"
+    "Lipid-related volume displacement reduces plasma water fraction, causing pseudohyponatraemia with indirect ISE",
+    "Sodium binds covalently to triglycerides",
+    "Chylomicrons stimulate renal sodium loss",
+    "Sodium forms insoluble fatty-acid soaps"
    ],
    "answer": 0,
    "explain": "Normally plasma is ~93% water and 7% solid proteins/lipids; extreme hypertriglyceridaemia or hyperproteinaemia expands the non-aqueous lipid/protein phase, so fixed-volume pre-dilution in indirect ISE assays underestimates sodium concentration in plasma water (whereas direct undiluted ISE gives the true sodium).",
@@ -243,10 +243,10 @@
    "sub": "Urine and Other Body Fluid Specimens",
    "q": "Why is an early-morning first-void midstream urine specimen preferred for qualitative proteinuria, pregnancy testing, and microscopic sediment examination?",
    "options": [
-    "It is maximally concentrated after overnight fluid restriction and has an acidic pH that preserves cellular casts",
-    "It contains the highest concentration of postprandial glucose and alkaline bicarbonate",
-    "It is completely free of urothelial cells and bacterial flora",
-    "It eliminates the need for preservative refrigeration for up to 7 days"
+    "It is concentrated after overnight fasting and helps preserve formed elements",
+    "It contains the most postprandial glucose and bicarbonate",
+    "It is free of urothelial cells and bacteria",
+    "It needs no refrigeration for seven days"
    ],
    "answer": 0,
    "explain": "Overnight water conservation concentrates solutes, proteins, and hormones (such as hCG) in the first-morning urine, while its lower pH and higher osmolality prevent lysis of red cells, leukocytes, and casts.",
@@ -266,8 +266,8 @@
    "sub": "Urine and Other Body Fluid Specimens",
    "q": "Which chemical preservative is routinely added to a 24-hour urine collection bottle when measuring urinary catecholamines, metanephrines, or vanillylmandelic acid (VMA) to prevent oxidative degradation?",
    "options": [
-    "Concentrated hydrochloric acid (to maintain pH below 3)",
-    "Sodium hydroxide (to maintain pH above 11)",
+    "Concentrated hydrochloric acid",
+    "Sodium hydroxide",
     "Sodium fluoride",
     "Isopropyl alcohol"
    ],
@@ -290,10 +290,10 @@
    "sub": "Urine and Other Body Fluid Specimens",
    "q": "When collecting arterial blood for blood gas and pH analysis, why must all air bubbles be expelled immediately from the heparinized syringe and the sample analyzed promptly or placed on ice?",
    "options": [
-    "Air bubbles equilibrate with blood to falsely raise pO2 and lower pCO2, while ongoing leukocyte metabolism consumes oxygen and generates acid",
-    "Air bubbles oxidize haemoglobin to methaemoglobin and precipitate bicarbonate crystals",
-    "Cooling causes heparin to release bound calcium into the arterial plasma",
-    "Room air increases blood pCO2 to 100 mmHg within 30 seconds"
+    "Air raises pO2 and lowers pCO2; ongoing cell metabolism consumes O2 and generates acid",
+    "Air oxidises haemoglobin and precipitates bicarbonate",
+    "Cooling releases calcium from heparin",
+    "Room air raises pCO2 to 100 mmHg"
    ],
    "answer": 0,
    "explain": "Room air has a pO2 of ~150 mmHg and pCO2 near 0 mmHg, so trapped air bubbles shift arterial gas tensions toward atmospheric values; meanwhile, uncooled leukocytes consume O2 and produce CO2 and lactate, lowering pH and pO2.",
@@ -336,10 +336,10 @@
    "sub": "Biological Variation and Timing of Collection",
    "q": "Which physiological change occurs when a patient moves from a supine to an upright standing posture for 20 minutes, causing a 10% to 15% increase in measured serum albumin, cholesterol, and total calcium?",
    "options": [
-    "Gravitational pooling in lower-limb veins increases hydrostatic pressure and shifts protein-free fluid into interstitial spaces",
-    "Standing stimulates acute hepatic synthesis of albumin and apolipoproteins",
-    "Upright posture triggers immediate suppression of renal glomerular filtration",
-    "Standing releases stored albumin from splenic sinusoidal reservoirs"
+    "Standing raises leg venous pressure and shifts protein-poor fluid into interstitial spaces",
+    "Standing increases hepatic albumin synthesis",
+    "Upright posture immediately suppresses GFR",
+    "Standing releases splenic albumin"
    ],
    "answer": 0,
    "explain": "Assuming an upright posture increases hydrostatic pressure in dependent lower-extremity capillaries, filtering ~600-700 mL of water into the interstitium and concentrating intravascular macromolecules and protein-bound analytes.",
@@ -382,10 +382,10 @@
    "sub": "Analytical Principles and Instrumentation",
    "q": "How does turbidimetry differ from nephelometry when measuring immune complexes or particulate suspensions in clinical chemistry?",
    "options": [
-    "Turbidimetry measures the decrease in transmitted light straight through the sample (180 degrees), whereas nephelometry measures light scattered at an angle (typically 30 to 90 degrees)",
-    "Turbidimetry requires radioactive tracers, whereas nephelometry uses beta-emitting isotopes",
-    "Turbidimetry measures fluorescent emission, whereas nephelometry measures electrical conductivity",
-    "Turbidimetry is used only for gases, whereas nephelometry is used only for solid biopsies"
+    "Turbidimetry measures reduced transmitted light; nephelometry measures scattered light",
+    "Turbidimetry uses radioactive tracers; nephelometry uses beta emitters",
+    "Turbidimetry measures fluorescence; nephelometry conductivity",
+    "Turbidimetry tests gases; nephelometry biopsies"
    ],
    "answer": 0,
    "explain": "Both techniques exploit light scattering by suspended antigen-antibody complexes: turbidimetry measures reduced light transmission along the incident axis using a standard spectrophotometer, while nephelometry detects scattered light off-axis for higher sensitivity at low concentrations.",
@@ -428,10 +428,10 @@
    "sub": "Analytical Principles and Instrumentation",
    "q": "Why are sandwich (non-competitive) immunoassays generally more sensitive and specific than competitive immunoassays for measuring large polypeptide hormones such as TSH, hCG, and troponin?",
    "options": [
-    "They use excess capture and signal antibodies directed against two distinct epitopes on the analyte, producing a signal directly proportional to analyte concentration",
-    "They rely on a single low-affinity polyclonal antibody incubated without washing steps",
-    "They measure the displacement of radiolabelled antigen, yielding a signal inversely proportional to concentration",
-    "They require gas-liquid chromatography prior to antibody binding"
+    "Capture and signal antibodies bind separate analyte epitopes, producing a signal proportional to concentration",
+    "A single low-affinity antibody is used without washing",
+    "Radiolabelled antigen is displaced, giving an inverse signal",
+    "Gas chromatography precedes antibody binding"
    ],
    "answer": 0,
    "explain": "Two-site immunometric (sandwich) assays bind two separate epitopes on large antigens with excess reagent antibodies, achieving lower detection limits, wider linear dynamic ranges, and a positive signal-concentration relationship.",
@@ -475,10 +475,10 @@
    "sub": "Method Performance and Analytical Reliability",
    "q": "How do analytical accuracy and analytical precision differ in clinical laboratory method evaluation?",
    "options": [
-    "Accuracy is closeness of a measurement to the true value, whereas precision is agreement among repeated measurements of the same sample",
-    "Accuracy measures random scatter, whereas precision measures systematic bias from a reference method",
-    "Accuracy applies only to qualitative dipsticks, whereas precision applies only to blood gas analyzers",
-    "Accuracy increases with higher coefficient of variation, whereas precision increases with larger bias"
+    "Accuracy is closeness to the true value; precision is agreement between repeated measurements",
+    "Accuracy is random scatter; precision is systematic bias",
+    "Accuracy applies only to dipsticks; precision only to blood gases",
+    "Accuracy rises with CV; precision rises with bias"
    ],
    "answer": 0,
    "explain": "Accuracy (trueness) reflects how close a measured result is to the accepted reference value (inversely related to systematic error/bias), while precision (reproducibility) describes the closeness of replicate measurements to one another (inversely related to random error/SD).",
@@ -545,10 +545,10 @@
    "sub": "Quality Control and Quality Assurance",
    "q": "What is the primary purpose of daily internal quality control (IQC) using stabilized control sera at normal and abnormal concentrations alongside patient samples?",
    "options": [
-    "To monitor real-time analytical precision and detect random or systematic errors before patient results are released",
-    "To compare the laboratory's bias retrospectively against hundreds of external peer laboratories once a month",
-    "To establish new population reference intervals for every incoming patient",
-    "To sterilize reagent probes between consecutive patient serum aspirations"
+    "To monitor analytical precision and detect errors before releasing patient results",
+    "To compare monthly bias with external laboratories",
+    "To establish population reference intervals",
+    "To sterilise analyser probes"
    ],
    "answer": 0,
    "explain": "Internal quality control (IQC) provides immediate run-by-run verification that analytical performance remains within acceptable precision and bias limits before validating patient reports.",
@@ -615,10 +615,10 @@
    "sub": "Quality Control and Quality Assurance",
    "q": "How does External Quality Assessment (EQA / proficiency testing) complement Internal Quality Control (IQC)?",
    "options": [
-    "EQA assesses long-term accuracy and inter-laboratory comparability by analyzing blinded specimens distributed by an independent external agency",
-    "EQA replaces daily calibrators on automated chemistry analyzers",
-    "EQA is performed exclusively by bedside nurses using urine dipsticks",
-    "EQA measures only the turnaround time of phlebotomy staff"
+    "EQA compares laboratory accuracy with other laboratories using blinded external samples",
+    "It replaces daily internal controls",
+    "It is performed only by bedside nurses",
+    "It measures phlebotomy turnaround time"
    ],
    "answer": 0,
    "explain": "In EQA programs, participating laboratories analyze identical unknown samples distributed periodically by an external reference organizer, comparing each lab's result against the peer-group or reference-method target to evaluate accuracy (bias).",
@@ -730,10 +730,10 @@
    "sub": "Reference Values and Diagnostic Test Evaluation",
    "q": "Unlike diagnostic sensitivity and specificity, which remain intrinsic properties of an assay, how does the Positive Predictive Value (PPV) of a test change when applied to a population with a lower disease prevalence?",
    "options": [
-    "Positive predictive value decreases substantially because false positives outnumber true positives",
-    "Positive predictive value increases toward 100%",
-    "Positive predictive value remains completely unchanged regardless of prevalence",
-    "Positive predictive value becomes equal to the false-negative rate"
+    "PPV falls because false positives form a larger share of positive results",
+    "PPV approaches 100%",
+    "PPV is independent of prevalence",
+    "PPV equals the false-negative rate"
    ],
    "answer": 0,
    "explain": "According to Bayes' theorem, PPV = TP / (TP + FP) depends heavily on pre-test disease prevalence; in low-prevalence screening populations, even a test with 99% specificity generates many false positives relative to true cases, lowering PPV.",
@@ -753,10 +753,10 @@
    "sub": "Reference Values and Diagnostic Test Evaluation",
    "q": "On a Receiver Operating Characteristic (ROC) curve plotting diagnostic sensitivity (y-axis) against 1 minus specificity (x-axis), what does an Area Under the Curve (AUC) of 1.0 represent versus an AUC of 0.5?",
    "options": [
-    "AUC of 1.0 indicates a perfect discriminatory test, whereas AUC of 0.5 indicates a useless test no better than random chance",
-    "AUC of 1.0 indicates pure random chance, whereas AUC of 0.5 indicates 100% specificity",
-    "AUC of 1.0 indicates zero sensitivity, whereas AUC of 0.5 indicates 50% disease prevalence",
-    "AUC of 1.0 applies only to qualitative tests, whereas AUC of 0.5 applies only to imaging"
+    "AUC 1.0 indicates perfect discrimination; AUC 0.5 indicates chance-level discrimination",
+    "AUC 1.0 is chance; AUC 0.5 is perfect specificity",
+    "AUC 1.0 means zero sensitivity; AUC 0.5 means 50% prevalence",
+    "AUC applies only to qualitative tests"
    ],
    "answer": 0,
    "explain": "An ROC curve plots true-positive rate against false-positive rate across all cut-off thresholds; an ideal test hugs the top-left corner with AUC = 1.0, whereas a diagonal line with AUC = 0.5 offers zero diagnostic discrimination.",
@@ -776,10 +776,10 @@
    "sub": "Post-analytical Phase, Critical Values, and Point-of-Care Testing",
    "q": "What is a 'critical value' (panic value) in clinical pathology reporting?",
    "options": [
-    "A test result so far outside the reference interval that it signifies an imminent life-threatening pathophysiological state requiring immediate physician notification",
-    "Any result that falls 0.1 units above the upper reference limit in an outpatient",
-    "The internal quality control target mean calculated at the end of each calendar year",
-    "The lowest reagent volume remaining in an automated analyzer reservoir"
+    "A result indicating a potentially life-threatening state that requires urgent clinician notification",
+    "Any result just outside the reference interval",
+    "The annual internal-control mean",
+    "The analyser's remaining reagent volume"
    ],
    "answer": 0,
    "explain": "Critical values (e.g., serum potassium >6.5 or <2.5 mmol/L, plasma glucose <2.2 mmol/L, serum calcium <1.5 mmol/L) require urgent, documented read-back telephone communication directly to the responsible clinician.",
@@ -799,10 +799,10 @@
    "sub": "Post-analytical Phase, Critical Values, and Point-of-Care Testing",
    "q": "What is the 'delta check' used as an automated post-analytical validation tool in clinical laboratories?",
    "options": [
-    "Comparing a patient's current test result with their previous result to flag implausible rapid changes caused by specimen mix-up or analytical error",
-    "Measuring the difference between serum and urine osmolality in every specimen",
-    "Checking the temperature difference between the reagent fridge and room air",
-    "Subtracting total bilirubin from direct bilirubin in neonatal samples"
+    "Comparing current and prior results to flag implausible changes or possible error",
+    "Comparing serum and urine osmolality",
+    "Checking reagent and room temperatures",
+    "Subtracting direct from total bilirubin"
    ],
    "answer": 0,
    "explain": "A delta check compares consecutive results from the same patient over a defined time window; an abrupt, physiologically implausible shift (such as a sudden jump in MCV or creatinine within hours) alerts staff to possible mislabelled specimens ('wrong blood in tube').",
@@ -822,10 +822,10 @@
    "sub": "Post-analytical Phase, Critical Values, and Point-of-Care Testing",
    "q": "Why do capillary whole-blood glucose readings obtained on a bedside point-of-care glucometer occasionally read inaccurately low in a patient with severe septic or hypovolaemic shock?",
    "options": [
-    "Peripheral vasoconstriction and poor capillary perfusion reduce glucose delivery to fingertip capillaries compared with central venous or arterial blood",
-    "Shock increases erythrocyte haematocrit to 95%, blocking glucose oxidase enzymes",
-    "Hypotension converts D-glucose into L-glucose in peripheral tissues",
-    "Point-of-care glucometers measure serum insulin rather than glucose during hypotension"
+    "Peripheral vasoconstriction reduces fingertip perfusion, making capillary glucose unreliable",
+    "Haematocrit rises to 95% and blocks glucose oxidase",
+    "Hypotension converts D-glucose to L-glucose",
+    "Glucometers measure insulin during shock"
    ],
    "answer": 0,
    "explain": "In hypotensive, vasoconstricted, or oedematous patients, sluggish peripheral capillary blood flow leads to increased local tissue glucose extraction, making fingertip capillary blood glucose significantly lower than central venous or arterial plasma glucose.",
@@ -845,10 +845,10 @@
    "sub": "Laboratory Safety and Standard Precautions",
    "q": "Under universal/standard biosafety precautions in clinical pathology laboratories, how must all human blood and body fluid specimens be handled?",
    "options": [
-    "As potentially infectious for blood-borne pathogens such as HIV, hepatitis B, and hepatitis C regardless of patient diagnosis",
-    "With gloves only if a red biohazard sticker has been attached by the ward nurse",
-    "By recapping all used phlebotomy needles with two hands before discarding into general waste",
-    "By mouth-pipetting clear serum supernatants after centrifugation"
+    "Treat every blood specimen as potentially infectious with blood-borne pathogens",
+    "Use gloves only when a biohazard label is present",
+    "Recap used needles before general-waste disposal",
+    "Mouth-pipette clear serum"
    ],
    "answer": 0,
    "explain": "Standard precautions mandate treating every human blood and body fluid specimen as potentially infectious, wearing appropriate personal protective equipment (gloves, lab coat, eye protection), prohibiting mouth pipetting or needle recapping, and disposing of sharps immediately into puncture-resistant containers.",
@@ -868,10 +868,10 @@
    "sub": "Analytical Principles and Instrumentation",
    "q": "In clinical toxicology and therapeutic drug monitoring, why is liquid chromatography-tandem mass spectrometry (LC-MS/MS) considered the gold-standard confirmatory method over automated immunoassays?",
    "options": [
-    "LC-MS/MS separates compounds physically and identifies molecules by their exact mass-to-charge ratio, eliminating antibody cross-reactivity",
-    "LC-MS/MS requires no sample preparation and operates without electricity or vacuum pumps",
-    "LC-MS/MS detects only inorganic electrolytes such as sodium and chloride",
-    "LC-MS/MS relies on visual colour changes read by the naked eye"
+    "LC-MS/MS separates compounds and identifies them by mass-to-charge ratio, avoiding antibody cross-reactivity",
+    "It needs no sample preparation or electricity",
+    "It detects only inorganic electrolytes",
+    "It relies on visual colour changes"
    ],
    "answer": 0,
    "explain": "Automated drug screening immunoassays suffer from false positives due to structural cross-reactivity with metabolites or structurally similar drugs; LC-MS/MS combines chromatographic separation with mass-to-charge fragmentation spectra for definitive molecular identification.",

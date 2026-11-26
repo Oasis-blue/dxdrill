@@ -32,10 +32,10 @@
    "sub": "Structure and Properties of Erythrocytes",
    "q": "Which physiological advantage is conferred by the biconcave disc shape of mature red blood cells?",
    "options": [
-    "It increases DNA transcription rate inside the erythrocyte",
-    "It maximizes surface area-to-volume ratio for rapid gas diffusion and allows deformability through narrow capillaries",
-    "It enables active amoeboid diapedesis across venular walls",
-    "It provides storage space for glycogen granules and mitochondria"
+    "It increases erythrocyte DNA transcription",
+    "Its high surface-area-to-volume ratio aids gas exchange and deformability",
+    "It permits amoeboid movement through venules",
+    "It stores glycogen and mitochondria"
    ],
    "answer": 1,
    "explain": "The biconcave geometry provides about 30% extra surface area relative to a sphere of equal volume, accelerating O2 and CO2 diffusion and letting the 7.5 micrometer cell fold through 3 micrometer splenic and capillary channels.",
@@ -173,10 +173,10 @@
    "sub": "Erythropoiesis and Its Regulation",
    "q": "What is the normal reticulocyte count in peripheral venous blood, and what does an elevated reticulocyte count indicate in an anemic patient?",
    "options": [
-    "10% to 15%; indicates bone marrow aplasia",
-    "0.01% to 0.05%; indicates iron deficiency",
-    "20% to 30%; indicates vitamin B12 deficiency",
-    "0.5% to 2.0%; indicates an active, appropriate bone marrow erythropoietic response"
+    "10–15%; suggests marrow aplasia",
+    "0.01–0.05%; suggests iron deficiency",
+    "20–30%; suggests B12 deficiency",
+    "0.5–2%; usually reflects normal marrow output"
    ],
    "answer": 3,
    "explain": "Reticulocytes normally constitute 0.5% to 2.0% of circulating red cells and mature into erythrocytes within 1 to 2 days; a high reticulocyte count in anemia signals brisk marrow regeneration (e.g., after hemolysis or acute hemorrhage).",
@@ -243,10 +243,10 @@
    "sub": "Maturation Factors: Vitamin B12, Folate, and Iron",
    "q": "Why does deficiency of either vitamin B12 or folic acid produce megaloblastic anemia?",
    "options": [
-    "Both are structural subunits of the porphyrin ring in heme",
-    "Both are required to synthesize spectrin in the red cell cytoskeleton",
-    "Both are essential cofactors for thymidylate and DNA synthesis, slowing nuclear division while cytoplasmic hemoglobin synthesis continues",
-    "Both directly activate renal erythropoietin receptors"
+    "Both form parts of the haem porphyrin ring",
+    "Both are needed to make red-cell spectrin",
+    "Both support DNA synthesis, limiting nuclear division while haemoglobin accumulates",
+    "Both activate renal erythropoietin receptors"
    ],
    "answer": 2,
    "explain": "Vitamin B12 and folate are required for one-carbon transfer reactions needed to synthesize thymidine triphosphate (dTTP) for DNA replication; impaired DNA synthesis delays nuclear division, yielding large macrocytic precursors (megaloblasts).",
@@ -289,10 +289,10 @@
    "sub": "Maturation Factors: Vitamin B12, Folate, and Iron",
    "q": "Why must clinicians distinguish vitamin B12 deficiency from folate deficiency before treating a patient with megaloblastic anemia using folic acid alone?",
    "options": [
-    "Folic acid corrects the hematologic anemia of B12 deficiency but fails to prevent or reverse subacute combined degeneration of the spinal cord",
-    "Folic acid precipitates acute hemolytic crisis in vitamin B12 deficiency",
-    "Folic acid blocks iron absorption in the duodenum",
-    "Folic acid suppresses endogenous erythropoietin secretion"
+    "Folate corrects anaemia but not the neurological injury of B12 deficiency",
+    "Folate triggers haemolysis in B12 deficiency",
+    "Folate blocks duodenal iron uptake",
+    "Folate suppresses erythropoietin"
    ],
    "answer": 0,
    "explain": "High-dose folate bypasses the methylfolate trap to restore DNA synthesis and resolve megaloblastic anemia, but vitamin B12 is uniquely required for myelin maintenance via methylmalonyl-CoA mutase, so neurological damage progresses if B12 is not replaced.",
@@ -335,10 +335,10 @@
    "sub": "Maturation Factors: Vitamin B12, Folate, and Iron",
    "q": "How does the hepatic peptide hormone hepcidin regulate systemic iron homeostasis?",
    "options": [
-    "It stimulates duodenal ferroportin expression to maximize iron absorption",
-    "It converts ferric iron to ferrous iron in the stomach",
-    "It binds and induces degradation of ferroportin on enterocytes and macrophages, reducing plasma iron levels",
-    "It increases transferrin receptor synthesis on erythroblasts"
+    "It increases duodenal ferroportin",
+    "It reduces gastric ferric-to-ferrous iron conversion",
+    "It binds ferroportin and promotes its degradation, lowering plasma iron",
+    "It increases erythroblast transferrin receptors"
    ],
    "answer": 2,
    "explain": "Hepcidin is the master negative regulator of iron release: it internalizes and degrades ferroportin on duodenal enterocytes and splenic macrophages, blocking dietary iron absorption and iron recycling during iron overload or inflammation.",
@@ -381,10 +381,10 @@
    "sub": "Hemoglobin Structure and Types",
    "q": "How many oxygen molecules can one fully saturated hemoglobin tetramer bind, and to which chemical component does oxygen attach?",
    "options": [
-    "4 molecules of O2, bound reversibly to the ferrous (Fe2+) iron atom at the center of each of the 4 heme rings",
-    "2 molecules of O2, bound covalently to the beta-globin chains",
-    "4 molecules of O2, bound to ferric (Fe3+) iron in the porphyrin ring",
-    "8 molecules of O2, bound to histidine residues on alpha-globin"
+    "Four O2 molecules bind reversibly to ferrous iron in haem",
+    "Two O2 molecules bind covalently to beta chains",
+    "Four O2 molecules bind ferric iron",
+    "Eight O2 molecules bind globin histidines"
    ],
    "answer": 0,
    "explain": "Each hemoglobin molecule has four polypeptide subunits, each housing a heme group with a central ferrous (Fe2+) ion capable of reversibly binding one O2 molecule (oxygenation, not oxidation), totaling 4 O2 molecules (1.34 mL O2 per gram of Hb).",
@@ -404,10 +404,10 @@
    "sub": "Hemoglobin Structure and Types",
    "q": "Why does fetal hemoglobin (HbF) have a higher affinity for oxygen than adult hemoglobin (HbA)?",
    "options": [
-    "HbF contains six heme groups instead of four",
-    "The gamma-globin chains of HbF bind 2,3-bisphosphoglycerate (2,3-BPG) much less avidly than beta-globin chains",
-    "HbF maintains iron in the ferric (Fe3+) state",
-    "HbF lacks histidine residues near the heme pocket"
+    "HbF contains six haem groups",
+    "HbF gamma chains bind 2,3-BPG less avidly than HbA beta chains",
+    "HbF keeps iron in the ferric state",
+    "HbF lacks haem-pocket histidines"
    ],
    "answer": 1,
    "explain": "Gamma chains replace a positively charged histidine (His143) in beta chains with neutral serine, reducing electrostatic binding to negatively charged 2,3-BPG; this shifts the HbF dissociation curve left, aiding placental oxygen transfer from mother to fetus.",
@@ -427,10 +427,10 @@
    "sub": "Hemoglobin Structure and Types",
    "q": "What occurs when the ferrous iron (Fe2+) of hemoglobin is oxidized to the ferric state (Fe3+) by nitrites, dapsone, or oxidant drugs?",
    "options": [
-    "Carboxyhemoglobin forms with increased oxygen unloading to tissues",
-    "Carbaminohemoglobin forms and causes respiratory alkalosis",
-    "Methemoglobin forms, which cannot bind oxygen and shifts the dissociation curve of remaining heme sites to the left",
-    "Sulfhemoglobin forms and increases hematocrit acutely"
+    "Carboxyhaemoglobin increases oxygen unloading",
+    "Carbaminohaemoglobin causes respiratory alkalosis",
+    "Methaemoglobin cannot bind oxygen and increases affinity at remaining sites",
+    "Sulfhaemoglobin acutely raises haematocrit"
    ],
    "answer": 2,
    "explain": "Oxidation of Fe2+ to Fe3+ produces methemoglobin, which cannot bind O2 and increases the O2 affinity of remaining Fe2+ subunits (left shift), causing chocolate-brown blood and functional tissue hypoxia; NADH-cytochrome b5 reductase normally reduces it back to Fe2+.",
@@ -450,10 +450,10 @@
    "sub": "Hemoglobin Structure and Types",
    "q": "Carbon monoxide (CO) binds to hemoglobin with an affinity approximately 200 to 250 times greater than that of oxygen. Besides occupying oxygen-binding sites, how else does carboxyhemoglobin impair tissue oxygenation?",
    "options": [
-    "It shifts the oxygen-hemoglobin dissociation curve sharply to the right",
-    "It accelerates renal erythropoietin degradation within minutes",
-    "It oxidizes all four heme groups to methemoglobin",
-    "It shifts the oxygen-hemoglobin dissociation curve to the left, preventing unloading of bound oxygen in peripheral tissues"
+    "It shifts the oxygen curve right",
+    "It accelerates renal erythropoietin breakdown",
+    "It oxidises all haem groups to methaemoglobin",
+    "It shifts the oxygen curve left, impairing tissue unloading"
    ],
    "answer": 3,
    "explain": "CO locks hemoglobin in the high-affinity R (relaxed) conformation, shifting the O2 dissociation curve leftward and making it hyperbolic so tissues cannot extract whatever O2 remains bound.",
@@ -473,10 +473,10 @@
    "sub": "Erythrocyte Destruction and Bilirubin Metabolism",
    "q": "What is the normal lifespan of a circulating human erythrocyte, and where are senescent red blood cells primarily destroyed?",
    "options": [
-    "120 days; destroyed by macrophages of the reticuloendothelial system, chiefly in the spleen",
-    "30 days; destroyed by renal tubular epithelial cells",
-    "7 to 10 days; destroyed by pulmonary capillary endothelium",
-    "365 days; destroyed by circulating neutrophils"
+    "About 120 days; macrophages remove senescent cells, mainly in spleen",
+    "About 30 days; renal tubules destroy them",
+    "About 7–10 days; lung endothelium removes them",
+    "About one year; neutrophils destroy them"
    ],
    "answer": 0,
    "explain": "Without a nucleus to synthesize new enzymes, erythrocyte glycolytic and antioxidant enzymes decline over ~120 days; rigid, aged RBCs become trapped in splenic red pulp cords of Billroth and are phagocytosed by macrophages.",
@@ -519,10 +519,10 @@
    "sub": "Erythrocyte Destruction and Bilirubin Metabolism",
    "q": "How is water-insoluble unconjugated bilirubin transported in plasma to the liver, and which hepatic enzyme conjugates it for biliary excretion?",
    "options": [
-    "Bound to haptoglobin; conjugated by glucose-6-phosphate dehydrogenase",
-    "Bound to transferrin; conjugated by biliverdin reductase",
-    "Bound to serum albumin; conjugated with glucuronic acid by UDP-glucuronosyltransferase (UGT1A1)",
-    "Dissolved freely in plasma water; conjugated by carbonic anhydrase"
+    "Haptoglobin-bound; conjugated by G6PD",
+    "Transferrin-bound; conjugated by biliverdin reductase",
+    "Albumin-bound; conjugated with glucuronic acid by UGT1A1",
+    "Free in plasma; conjugated by carbonic anhydrase"
    ],
    "answer": 2,
    "explain": "Unconjugated (indirect) bilirubin binds albumin in blood, enters hepatocytes, and is conjugated with glucuronic acid via UDP-glucuronosyltransferase (UGT1A1) into water-soluble conjugated (direct) bilirubin diglucuronide excreted in bile.",
@@ -588,10 +588,10 @@
    "sub": "Erythrocyte Sedimentation Rate (ESR) and Osmotic Fragility",
    "q": "What is the primary physical mechanism that accelerates the Erythrocyte Sedimentation Rate (ESR) during acute inflammation or pregnancy?",
    "options": [
-    "Increased red blood cell diameter due to megaloblastic change",
-    "Elevated plasma fibrinogen and immunoglobulins neutralize negative RBC surface zeta potential, promoting rouleaux formation",
-    "Decreased plasma viscosity due to hypoalbuminemia",
-    "Increased osmotic fragility causing rapid intravascular hemolysis"
+    "Increased RBC diameter from megaloblastosis",
+    "Plasma proteins reduce the negative zeta potential, promoting rouleaux",
+    "Low plasma viscosity from hypoalbuminaemia",
+    "Increased osmotic fragility causes haemolysis"
    ],
    "answer": 1,
    "explain": "Sialic acid in the RBC glycocalyx creates a repulsive negative zeta potential; positively charged acute-phase proteins like fibrinogen neutralize this charge so RBCs stack like coins (rouleaux) and fall faster.",
@@ -634,10 +634,10 @@
    "sub": "Erythrocyte Sedimentation Rate (ESR) and Osmotic Fragility",
    "q": "In an osmotic fragility test, red blood cells from a patient with hereditary spherocytosis begin to hemolyze at 0.65% NaCl (compared to normal onset at ~0.45% NaCl). Why do spherocytes show increased osmotic fragility?",
    "options": [
-    "They contain excess intracellular hemoglobin crystals",
-    "Their cell membranes are completely permeable to sodium ions",
-    "They have an abnormally high surface area-to-volume ratio",
-    "They have a reduced surface area-to-volume ratio and cannot expand further when water enters in hypotonic saline"
+    "They contain intracellular haemoglobin crystals",
+    "Their membranes are freely permeable to sodium",
+    "They have excessive surface area relative to volume",
+    "Their low surface-area-to-volume ratio limits swelling in hypotonic fluid"
    ],
    "answer": 3,
    "explain": "Loss of membrane spectrin/ankyrin causes RBCs to shed membrane fragments and become spherical; spheres already hold maximum volume for their surface area, so even mild hypotonic swelling ruptures them.",
@@ -657,10 +657,10 @@
    "sub": "Anemias and Hemoglobinopathies",
    "q": "A 19-year-old Nigerian undergraduate presents with severe bone pain crisis, dactylitis history, jaundice, and sickled erythrocytes on peripheral blood smear after a bout of malaria and dehydration. Which exact amino acid substitution in the beta-globin chain causes sickle cell disease (HbS)?",
    "options": [
-    "Replacement of hydrophilic glutamate with hydrophobic valine at position 6 of the beta-globin chain",
-    "Replacement of valine with glutamate at position 6 of the alpha-globin chain",
-    "Replacement of glutamate with lysine at position 6 of the beta-globin chain",
-    "Deletion of all four alpha-globin genes on chromosome 16"
+    "Glutamate is replaced by valine at beta-globin position 6",
+    "Valine is replaced by glutamate at alpha-globin position 6",
+    "Glutamate is replaced by lysine at beta-globin position 6",
+    "All four alpha-globin genes are deleted"
    ],
    "answer": 0,
    "explain": "A single point mutation (GAG to GTG) substitutes nonpolar valine for polar glutamic acid at codon 6 of beta-globin; upon deoxygenation, hydrophobic valine residues polymerize into rigid fibers that distort RBCs into sickles.",
@@ -703,10 +703,10 @@
    "sub": "Anemias and Hemoglobinopathies",
    "q": "A 45-year-old woman with chronic fatigue, glossitis, and numbness/tingling in her feet has macrocytic anemia (MCV 118 fL), hypersegmented neutrophils, and anti-parietal cell antibodies. Why does autoimmune gastritis lead to vitamin B12 deficiency?",
    "options": [
-    "Loss of chief cells stops pepsinogen activation",
-    "Loss of enteroendocrine G cells prevents gastrin release",
-    "Destruction of gastric parietal cells eliminates intrinsic factor secretion required for ileal B12 absorption",
-    "Hyperchlorhydria destroys dietary cobalamin in the stomach"
+    "Chief-cell loss prevents pepsinogen activation",
+    "G-cell loss prevents gastrin secretion",
+    "Parietal-cell loss removes intrinsic factor needed for B12 absorption",
+    "Excess gastric acid destroys dietary cobalamin"
    ],
    "answer": 2,
    "explain": "Pernicious anemia is caused by autoimmune destruction of gastric parietal cells (or antibodies against intrinsic factor itself), preventing intrinsic factor-mediated absorption of vitamin B12 in the terminal ileum.",
@@ -773,10 +773,10 @@
    "sub": "Polycythemia",
    "q": "How does primary polycythemia (polycythemia vera) differ hormonally from secondary physiological polycythemia seen at high altitude?",
    "options": [
-    "Both conditions exhibit markedly elevated serum erythropoietin levels",
-    "Polycythemia vera has low serum erythropoietin due to autonomous clonal marrow proliferation, whereas high-altitude polycythemia has elevated erythropoietin",
-    "Polycythemia vera is driven by hypoxia, whereas high-altitude polycythemia is caused by a JAK2 mutation",
-    "Both conditions show normal hematocrit with expanded plasma volume"
+    "Both have high serum erythropoietin",
+    "PV has low EPO; high-altitude polycythaemia has elevated EPO",
+    "PV is hypoxia-driven; high-altitude disease is JAK2-driven",
+    "Both have normal haematocrit"
    ],
    "answer": 1,
    "explain": "Polycythemia vera is a myeloproliferative neoplasm (commonly JAK2 V617F positive) with autonomous RBC production that suppresses endogenous EPO via negative feedback, whereas chronic hypoxia raises EPO in secondary polycythemia.",
@@ -796,10 +796,10 @@
    "sub": "Polycythemia",
    "q": "When hematocrit rises above 60% in severe polycythemia, why can tissue oxygen delivery actually become impaired despite the higher hemoglobin concentration?",
    "options": [
-    "Excess red blood cells cannot bind oxygen in pulmonary capillaries",
-    "High hematocrit eliminates plasma bicarbonate buffering",
-    "Exponentially rising blood viscosity increases vascular resistance and reduces blood flow",
-    "Polycythemic red cells lack 2,3-bisphosphoglycerate"
+    "Excess RBCs cannot bind pulmonary oxygen",
+    "High haematocrit removes bicarbonate buffering",
+    "Increased viscosity raises vascular resistance and reduces blood flow",
+    "Polycythaemic cells lack 2,3-BPG"
    ],
    "answer": 2,
    "explain": "Blood viscosity increases steeply once hematocrit exceeds ~55-60%, elevating total peripheral resistance and slowing capillary blood flow (Poiseuille's law) to a greater extent than arterial O2 content rises.",

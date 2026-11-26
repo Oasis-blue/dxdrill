@@ -1,660 +1,660 @@
 {
-  "topic": "bc-enzymes-and-bioenergetics",
-  "questions": [
-    {
-      "id": "enzmeng-01",
-      "level": 1,
-      "sub": "Enzyme Classification and Nomenclature",
-      "q": "Which International Union of Biochemistry and Molecular Biology (IUBMB) enzyme class catalyzes oxidation-reduction reactions?",
-      "options": [
-        "Oxidoreductases (EC 1)",
-        "Transferases (EC 2)",
-        "Hydrolases (EC 3)",
-        "Ligases (EC 6)"
-      ],
-      "answer": 0,
-      "explain": "EC 1 (oxidoreductases) catalyze electron or hydrogen transfer in oxidation-reduction reactions, such as dehydrogenases and oxidases. Transferases (EC 2) move functional groups, hydrolases (EC 3) cleave bonds using water, and ligases (EC 6) join molecules using ATP.",
-      "open": {
-        "q": "Which main IUBMB enzyme class (EC 1) catalyzes oxidation-reduction reactions?",
-        "accept": [
-          "oxidoreductases",
-          "EC 1",
-          "oxidoreductase"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-02",
-      "level": 1,
-      "sub": "Enzyme Classification and Nomenclature",
-      "q": "Which enzyme class catalyzes the joining of two substrates coupled to the cleavage of a nucleoside triphosphate such as ATP?",
-      "options": [
-        "Lyases",
-        "Isomerases",
-        "Ligases",
-        "Hydrolases"
-      ],
-      "answer": 2,
-      "explain": "Ligases (EC 6, synthetases) form new covalent bonds (such as C-C, C-S, C-O, or C-N) using energy from ATP or another nucleoside triphosphate. Lyases (EC 4) cleave or form bonds without hydrolysis or oxidation, often creating double bonds.",
-      "open": {
-        "q": "Which class of enzymes (EC 6) catalyzes bond formation coupled to ATP hydrolysis?",
-        "accept": [
-          "ligases",
-          "synthetases",
-          "EC 6"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-03",
-      "level": 1,
-      "sub": "Enzyme Classification and Nomenclature",
-      "q": "Which enzyme class catalyzes intramolecular structural or geometric rearrangements within a single molecule?",
-      "options": [
-        "Isomerases",
-        "Transferases",
-        "Hydrolases",
-        "Oxidoreductases"
-      ],
-      "answer": 0,
-      "explain": "Isomerases (EC 5) catalyze isomerization within a single substrate, including racemases, epimerases, and mutases (such as phosphoglycerate mutase). Transferases (EC 2) transfer groups between different molecules.",
-      "open": {
-        "q": "Which enzyme class (EC 5) catalyzes intramolecular rearrangement to form isomers?",
-        "accept": [
-          "isomerases",
-          "EC 5",
-          "isomerase"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-04",
-      "level": 1,
-      "sub": "Enzyme Classification and Nomenclature",
-      "q": "What is the non-protein organic molecule tightly or covalently bound to an enzyme required for its catalytic activity?",
-      "options": [
-        "Prosthetic group",
-        "Holoenzyme",
-        "Zymogen",
-        "Isoenzyme"
-      ],
-      "answer": 0,
-      "explain": "A prosthetic group is a tightly or covalently attached non-protein organic cofactor (such as FAD in succinate dehydrogenase or heme). An apoenzyme plus its required cofactor(s) forms a catalytically active holoenzyme.",
-      "open": {
-        "q": "What term describes a tightly or covalently bound non-protein organic group essential for an enzyme's function?",
-        "accept": [
-          "prosthetic group",
-          "bound cofactor"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-05",
-      "level": 1,
-      "sub": "Enzyme Classification and Nomenclature",
-      "q": "What is an inactive precursor of an enzyme that requires proteolytic cleavage to become catalytically active?",
-      "options": [
-        "Zymogen (proenzyme)",
-        "Ribozyme",
-        "Isozyme",
-        "Allosteric activator"
-      ],
-      "answer": 0,
-      "explain": "Zymogens (proenzymes), such as pepsinogen, trypsinogen, and chymotrypsinogen, are synthesized as inactive precursors and activated by selective peptide bond cleavage. This prevents premature self-digestion of producing cells or tissues.",
-      "open": {
-        "q": "What term denotes an inactive enzyme precursor activated by proteolytic cleavage?",
-        "accept": [
-          "zymogen",
-          "proenzyme",
-          "zymogens"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-06",
-      "level": 1,
-      "sub": "Catalysis and Transition State",
-      "q": "How does an enzyme accelerate the rate of a biochemical reaction?",
-      "options": [
-        "Lowers the activation energy barrier of the transition state",
-        "Makes a thermodynamically unfavorable reaction have a negative delta G",
-        "Changes the equilibrium constant (Keq) of the reaction",
-        "Is permanently consumed during each catalytic cycle"
-      ],
-      "answer": 0,
-      "explain": "Enzymes stabilize the transition state and lower activation energy (delta G double-dagger), increasing both forward and reverse reaction rates equally without altering delta G or Keq. They emerge unchanged at the end of catalysis.",
-      "open": {
-        "q": "By what energetic mechanism do enzymes increase the rate of a chemical reaction?",
-        "accept": [
-          "lowering activation energy",
-          "stabilizing the transition state and lowering activation energy",
-          "decreasing activation energy barrier"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-07",
-      "level": 2,
-      "sub": "Catalysis and Transition State",
-      "q": "According to transition-state theory, why does an enzyme bind the transition state much more tightly than the ground-state substrate?",
-      "options": [
-        "Tighter transition-state binding lowers the free energy barrier between substrate and transition state",
-        "Tighter ground-state binding deep in an energy well speeds up catalysis",
-        "Transition-state binding reverses the equilibrium constant of the reaction",
-        "Transition-state binding prevents product release from the active site"
-      ],
-      "answer": 0,
-      "explain": "Preferential binding and stabilization of the transition state relative to the ground-state substrate lowers the activation energy required to reach the transition state. Excessively tight binding to the ground state would deepen the energy well and slow reaction rate.",
-      "open": {
-        "q": "Why must an enzyme's active site be complementary to the transition state rather than the ground-state substrate?",
-        "accept": [
-          "to lower activation energy",
-          "stabilizing the transition state lowers the activation energy barrier",
-          "reduces activation energy"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-08",
-      "level": 1,
-      "sub": "Catalysis and Transition State",
-      "q": "Which model of enzyme-substrate interaction proposes that the enzyme's active site undergoes a conformational change upon substrate binding?",
-      "options": [
-        "Induced-fit model",
-        "Lock-and-key model",
-        "Fluid-mosaic model",
-        "Chemiosmotic model"
-      ],
-      "answer": 0,
-      "explain": "The induced-fit model (Koshland) states that substrate binding induces a conformational change in the enzyme to align catalytic groups precisely. The rigid lock-and-key model assumes a pre-shaped active site matching the substrate.",
-      "open": {
-        "q": "Which model describes conformational adjustment of an enzyme's active site upon binding substrate?",
-        "accept": [
-          "induced fit",
-          "induced-fit model",
-          "induced fit model"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-09",
-      "level": 1,
-      "sub": "Enzyme Kinetics",
-      "q": "In Michaelis-Menten kinetics, what does the Michaelis constant (Km) represent?",
-      "options": [
-        "The substrate concentration at which reaction velocity is half of Vmax",
-        "The maximum reaction velocity at saturating substrate concentration",
-        "The turnover number of a single enzyme active site per second",
-        "The inhibitor concentration that reduces Vmax by half"
-      ],
-      "answer": 0,
-      "explain": "Km is defined as the substrate concentration [S] required to achieve 0.5 Vmax. Under standard assumptions (k-1 + k2 >> k1), a lower Km indicates higher apparent affinity of the enzyme for its substrate.",
-      "open": {
-        "q": "How is the Michaelis constant (Km) defined in enzyme kinetics?",
-        "accept": [
-          "substrate concentration at half Vmax",
-          "[S] giving half-maximal velocity",
-          "substrate concentration at 1/2 Vmax"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-10",
-      "level": 2,
-      "sub": "Enzyme Kinetics",
-      "q": "What does the turnover number (kcat) of an enzyme measure?",
-      "options": [
-        "Number of substrate molecules converted to product per active site per unit time at saturation",
-        "Substrate concentration needed to reach half-maximal velocity",
-        "Change in free energy between reactants and products",
-        "Total enzyme mass present in a tissue sample"
-      ],
-      "answer": 0,
-      "explain": "Turnover number (kcat = Vmax / [E]total) expresses how many catalytic cycles one enzyme molecule or active site completes per second under saturating substrate. Catalytic efficiency is often assessed by the kcat/Km ratio.",
-      "open": {
-        "q": "What quantity does the turnover number (kcat) of an enzyme represent?",
-        "accept": [
-          "catalytic events per active site per second",
-          "substrate molecules converted per enzyme per second at saturation",
-          "number of turnovers per unit time per enzyme site"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-11",
-      "level": 1,
-      "sub": "Enzyme Kinetics",
-      "q": "On a Lineweaver-Burk (double-reciprocal) plot of 1/V versus 1/[S], what does the y-intercept equal?",
-      "options": [
-        "1 / Vmax",
-        "-1 / Km",
-        "Km / Vmax",
-        "Vmax / Km"
-      ],
-      "answer": 0,
-      "explain": "Rearranging the Michaelis-Menten equation gives 1/V = (Km/Vmax)(1/[S]) + 1/Vmax, which is linear with slope Km/Vmax and y-intercept 1/Vmax. Extrapolating the line to 1/V = 0 gives an x-intercept of -1/Km.",
-      "open": {
-        "q": "What value corresponds to the y-intercept on a Lineweaver-Burk double-reciprocal plot?",
-        "accept": [
-          "1/Vmax",
-          "reciprocal of Vmax",
-          "one over Vmax"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-12",
-      "level": 2,
-      "sub": "Enzyme Kinetics",
-      "q": "What is the characteristic kinetic effect of a pure competitive inhibitor on an enzyme-catalyzed reaction?",
-      "options": [
-        "Increases apparent Km while leaving Vmax unchanged",
-        "Decreases Vmax while leaving Km unchanged",
-        "Decreases both Km and Vmax equally",
-        "Increases Vmax without affecting Km"
-      ],
-      "answer": 0,
-      "explain": "A competitive inhibitor binds reversibly to the free enzyme active site, competing with substrate and increasing apparent Km (requiring higher [S] for half-maximal rate). Because high [S] outcompetes the inhibitor, Vmax can still be reached.",
-      "open": {
-        "q": "How does a competitive inhibitor alter apparent Km and Vmax of an enzyme?",
-        "accept": [
-          "increases apparent Km and leaves Vmax unchanged",
-          "raises Km with no change in Vmax"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-13",
-      "level": 2,
-      "sub": "Enzyme Kinetics",
-      "q": "Which type of reversible inhibitor binds exclusively to the enzyme-substrate (ES) complex rather than free enzyme, lowering both apparent Km and Vmax?",
-      "options": [
-        "Uncompetitive inhibitor",
-        "Competitive inhibitor",
-        "Irreversible suicide inhibitor",
-        "Allosteric homotropic activator"
-      ],
-      "answer": 0,
-      "explain": "Uncompetitive inhibition occurs when an inhibitor binds only to the ES complex, forming an inactive ESI species and reducing both Vmax and apparent Km by the same factor. On a Lineweaver-Burk plot, this produces parallel lines.",
-      "open": {
-        "q": "Which reversible inhibitor binds only to the ES complex and lowers both apparent Km and Vmax?",
-        "accept": [
-          "uncompetitive inhibitor",
-          "uncompetitive"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-14",
-      "level": 3,
-      "sub": "Enzyme Kinetics and Clinical Correlations",
-      "q": "A patient presents with severe metabolic acidosis and visual disturbances after ingesting methanol. Ethanol is administered intravenously because it competes with methanol for which hepatic enzyme?",
-      "options": [
-        "Alcohol dehydrogenase",
-        "Xanthine oxidase",
-        "Monoamine oxidase",
-        "Carbonic anhydrase"
-      ],
-      "answer": 0,
-      "explain": "Alcohol dehydrogenase oxidizes methanol to formaldehyde and formic acid, which causes optic nerve toxicity and metabolic acidosis. Ethanol acts as a competitive substrate for alcohol dehydrogenase, slowing toxic metabolite formation until methanol is cleared.",
-      "open": {
-        "q": "Ethanol treats methanol poisoning by competing with methanol for which enzyme?",
-        "accept": [
-          "alcohol dehydrogenase",
-          "ADH"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-15",
-      "level": 3,
-      "sub": "Enzyme Kinetics and Clinical Correlations",
-      "q": "A patient develops prolonged muscle paralysis after receiving succinylcholine during anesthesia because of a genetic variant of which plasma enzyme?",
-      "options": [
-        "Butyrylcholinesterase (pseudocholinesterase)",
-        "Acetylcholinesterase at the neuromuscular junction",
-        "Glucose-6-phosphate dehydrogenase",
-        "Cytochrome P450 2D6"
-      ],
-      "answer": 0,
-      "explain": "Plasma butyrylcholinesterase (pseudocholinesterase) normally hydrolyzes succinylcholine before most of it reaches the motor end-plate. Variants with markedly reduced activity prolong succinylcholine action and cause prolonged apnea.",
-      "open": {
-        "q": "Deficiency or variant form of which plasma enzyme prolongs neuromuscular blockade after succinylcholine?",
-        "accept": [
-          "butyrylcholinesterase",
-          "pseudocholinesterase",
-          "plasma cholinesterase",
-          "BChE"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-16",
-      "level": 1,
-      "sub": "Enzyme Regulation",
-      "q": "Which sigmoidal kinetic behavior is characteristic of many allosteric enzymes?",
-      "options": [
-        "Cooperative binding of substrate across multiple subunits",
-        "Strict compliance with first-order kinetics at all substrate levels",
-        "Complete absence of regulatory effector sites",
-        "Irreversible covalent modification with every catalytic turn"
-      ],
-      "answer": 0,
-      "explain": "Allosteric enzymes frequently possess multiple subunits and regulatory sites, showing cooperative substrate binding that produces a sigmoidal velocity-versus-[S] curve. Allosteric effectors shift the curve left (activators) or right (inhibitors).",
-      "open": {
-        "q": "What property of multimeric allosteric enzymes produces a sigmoidal substrate-saturation curve?",
-        "accept": [
-          "cooperativity",
-          "cooperative substrate binding",
-          "subunit cooperativity"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-17",
-      "level": 1,
-      "sub": "Enzyme Regulation",
-      "q": "Which covalent modification commonly regulates metabolic enzymes by adding a phosphoryl group from ATP to serine, threonine, or tyrosine residues?",
-      "options": [
-        "Phosphorylation catalyzed by protein kinases",
-        "Acetylation catalyzed by dehydrogenases",
-        "Ubiquitination catalyzed by isomerases",
-        "Glycosylation catalyzed by peroxidases"
-      ],
-      "answer": 0,
-      "explain": "Protein kinases transfer the gamma-phosphate of ATP onto hydroxyl groups of serine, threonine, or tyrosine residues, while protein phosphatases remove it. Phosphorylation can activate or inhibit target enzymes depending on the pathway.",
-      "open": {
-        "q": "Which covalent modification is catalyzed by protein kinases on serine, threonine, or tyrosine residues?",
-        "accept": [
-          "phosphorylation",
-          "protein phosphorylation"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-18",
-      "level": 1,
-      "sub": "Enzyme Regulation",
-      "q": "What are isoenzymes (isozymes)?",
-      "options": [
-        "Different protein forms of an enzyme that catalyze the same reaction",
-        "Enzymes that catalyze completely different chemical reactions",
-        "Cofactors bound to apoenzymes during electron transfer",
-        "Lipid-soluble hormones that induce gene transcription"
-      ],
-      "answer": 0,
-      "explain": "Isoenzymes are distinct molecular forms of an enzyme (often encoded by different genes or differing in subunit composition, such as lactate dehydrogenase LDH1-LDH5) that catalyze the same reaction. They often differ in tissue distribution and kinetic properties.",
-      "open": {
-        "q": "How are isoenzymes defined in biochemistry?",
-        "accept": [
-          "different forms of an enzyme catalyzing the same reaction",
-          "distinct enzyme variants with the same catalytic activity"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-19",
-      "level": 3,
-      "sub": "Enzyme Regulation and Clinical Correlations",
-      "q": "In a patient with acute myocardial infarction, which cardiac-specific biomarker rises in plasma within hours and remains elevated for several days?",
-      "options": [
-        "Cardiac troponin (troponin I or T)",
-        "Alkaline phosphatase",
-        "Alanine aminotransferase (ALT)",
-        "Amylase"
-      ],
-      "answer": 0,
-      "explain": "Cardiac troponins I and T are highly specific and sensitive markers of myocardial cell injury, rising within 3 to 6 hours and remaining elevated for days. CK-MB (creatine kinase-MB) also rises early in myocardial injury but normalizes sooner.",
-      "open": {
-        "q": "Which cardiac biomarker is preferred for diagnosing acute myocardial injury due to its high cardiac specificity and prolonged elevation?",
-        "accept": [
-          "cardiac troponin",
-          "troponin I",
-          "troponin T",
-          "troponin"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-20",
-      "level": 1,
-      "sub": "Bioenergetics and Free Energy",
-      "q": "What does a negative standard free energy change (delta G-nought < 0) indicate about a chemical reaction under standard conditions?",
-      "options": [
-        "The forward reaction is exergonic and spontaneous under standard conditions",
-        "The reaction rate is infinitely fast",
-        "The reaction requires continuous heat input to proceed",
-        "The equilibrium constant Keq is less than 1"
-      ],
-      "answer": 0,
-      "explain": "A negative standard free energy change (delta G-nought < 0) means products have lower standard free energy than reactants, corresponding to an equilibrium constant Keq > 1. Free energy change determines thermodynamic spontaneity, not reaction velocity.",
-      "open": {
-        "q": "What does a negative delta G-nought value indicate about a reaction under standard conditions?",
-        "accept": [
-          "exergonic and spontaneous",
-          "thermodynamically favorable",
-          "spontaneous forward reaction"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-21",
-      "level": 2,
-      "sub": "Bioenergetics and Free Energy",
-      "q": "How is the actual free energy change (delta G) of a reaction related to the standard free energy change (delta G-nought) and reaction quotient (Q)?",
-      "options": [
-        "delta G = delta G-nought + RT ln(Q)",
-        "delta G = delta G-nought - RT ln(Q)",
-        "delta G = delta G-nought * RT * Q",
-        "delta G = RT / (delta G-nought + ln Q)"
-      ],
-      "answer": 0,
-      "explain": "The actual free energy change is given by delta G = delta G-nought + RT ln([products]/[reactants]), where R is the gas constant and T is absolute temperature. Even a reaction with positive delta G-nought can proceed in cells if product levels are kept very low.",
-      "open": {
-        "q": "Write the equation relating actual free energy change (delta G) to standard free energy change (delta G-nought) and reactant/product concentrations.",
-        "accept": [
-          "delta G = delta G-nought + RT ln([products]/[reactants])",
-          "dG = dG0 + RT ln Q"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-22",
-      "level": 1,
-      "sub": "High-Energy Phosphate Compounds",
-      "q": "Why does ATP hydrolysis to ADP and inorganic phosphate release a large amount of free energy under physiological conditions?",
-      "options": [
-        "Relief of electrostatic repulsion among negatively charged phosphates and resonance stabilization of products",
-        "Formation of a single covalent bond with zero water involvement",
-        "Conversion of inorganic phosphate into a strong acid with no resonance",
-        "Elimination of all carbon-carbon bonds in the adenine ring"
-      ],
-      "answer": 0,
-      "explain": "At physiological pH, ATP carries multiple negatively charged phosphate oxygens that repel one another; hydrolysis relieves this electrostatic repulsion and yields products (ADP and Pi) with greater resonance stabilization and solvation. Thus ATP has a high phosphoryl group transfer potential.",
-      "open": {
-        "q": "What structural factors account for the large negative free energy of ATP hydrolysis?",
-        "accept": [
-          "electrostatic repulsion relief and resonance stabilization",
-          "charge repulsion and resonance stabilization of products",
-          "relief of electrostatic repulsion"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-23",
-      "level": 2,
-      "sub": "High-Energy Phosphate Compounds",
-      "q": "Which high-energy compound has a higher phosphoryl transfer potential than ATP and can donate a phosphate group to ADP to regenerate ATP in skeletal muscle?",
-      "options": [
-        "Phosphocreatine (creatine phosphate)",
-        "Glucose-6-phosphate",
-        "Glycerol-3-phosphate",
-        "AMP"
-      ],
-      "answer": 0,
-      "explain": "Phosphocreatine has a more negative standard free energy of phosphate hydrolysis (about -43 kJ/mol) than ATP (about -30.5 kJ/mol), allowing creatine kinase to transfer phosphate to ADP during intense muscle contraction. Glucose-6-phosphate has a lower phosphoryl transfer potential than ATP.",
-      "open": {
-        "q": "Which high-energy phosphagen stores phosphoryl groups in muscle to rapidly regenerate ATP from ADP?",
-        "accept": [
-          "phosphocreatine",
-          "creatine phosphate",
-          "PCr"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-24",
-      "level": 1,
-      "sub": "High-Energy Phosphate Compounds",
-      "q": "What is substrate-level phosphorylation?",
-      "options": [
-        "Direct transfer of a phosphoryl group from a high-energy phosphorylated metabolic intermediate to ADP",
-        "ATP synthesis driven by a proton gradient across the inner mitochondrial membrane",
-        "Phosphorylation of a protein kinase by cyclic AMP",
-        "Addition of phosphate to a sugar without generating ATP"
-      ],
-      "answer": 0,
-      "explain": "Substrate-level phosphorylation synthesizes ATP or GTP directly by transferring a high-energy phosphate group from a substrate intermediate (such as 1,3-bisphosphoglycerate or phosphoenolpyruvate) to ADP. It does not require oxygen or an electron transport chain.",
-      "open": {
-        "q": "How is ATP synthesized during substrate-level phosphorylation?",
-        "accept": [
-          "direct phosphoryl transfer from a phosphorylated substrate to ADP",
-          "transfer of phosphate from a high-energy metabolic intermediate to ADP"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-25",
-      "level": 1,
-      "sub": "Biological Oxidation and Electron Transport",
-      "q": "In which cellular compartment is the mitochondrial electron transport chain (respiratory chain) located in eukaryotes?",
-      "options": [
-        "Inner mitochondrial membrane",
-        "Outer mitochondrial membrane",
-        "Cytosol",
-        "Smooth endoplasmic reticulum"
-      ],
-      "answer": 0,
-      "explain": "The respiratory chain complexes (Complexes I-IV) and ATP synthase are embedded in the inner mitochondrial membrane, which is impermeable to ions and maintains the proton electrochemical gradient. The citric acid cycle occurs in the mitochondrial matrix (except succinate dehydrogenase on the inner membrane).",
-      "open": {
-        "q": "In which membrane of the mitochondrion are the electron transport chain complexes located?",
-        "accept": [
-          "inner mitochondrial membrane",
-          "inner membrane"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-26",
-      "level": 1,
-      "sub": "Biological Oxidation and Electron Transport",
-      "q": "Which molecule serves as the final electron acceptor at Complex IV (cytochrome c oxidase) of the mitochondrial electron transport chain?",
-      "options": [
-        "Molecular oxygen (O2)",
-        "NAD+",
-        "Ubiquinone (Coenzyme Q)",
-        "Fumarate"
-      ],
-      "answer": 0,
-      "explain": "Complex IV (cytochrome c oxidase) transfers electrons from reduced cytochrome c to molecular oxygen, reducing O2 to water (H2O). Without oxygen as the terminal electron acceptor, electron flow backs up and oxidative phosphorylation stops.",
-      "open": {
-        "q": "Which molecule accepts electrons at the end of the mitochondrial electron transport chain to form water?",
-        "accept": [
-          "molecular oxygen",
-          "oxygen",
-          "O2",
-          "dioxygen"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-27",
-      "level": 1,
-      "sub": "Biological Oxidation and Electron Transport",
-      "q": "Which mobile lipid carrier shuttles electrons from Complexes I and II to Complex III within the inner mitochondrial membrane?",
-      "options": [
-        "Ubiquinone (Coenzyme Q)",
-        "Cytochrome c",
-        "FADH2",
-        "Myoglobin"
-      ],
-      "answer": 0,
-      "explain": "Coenzyme Q (ubiquinone) is a lipid-soluble benzoquinone carrier that diffuses within the inner mitochondrial membrane core, accepting electrons from NADH dehydrogenase (Complex I) and succinate dehydrogenase (Complex II) and passing them to Complex III. Cytochrome c is a peripheral heme protein on the outer face of the inner membrane.",
-      "open": {
-        "q": "Which lipid-soluble electron carrier transfers electrons from Complexes I and II to Complex III?",
-        "accept": [
-          "ubiquinone",
-          "coenzyme Q",
-          "CoQ",
-          "Q"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-28",
-      "level": 2,
-      "sub": "Oxidative Phosphorylation and Uncoupling",
-      "q": "According to Mitchell's chemiosmotic hypothesis, what directly drives ATP synthesis by ATP synthase (Complex V)?",
-      "options": [
-        "Flow of protons (H+) down their electrochemical gradient across the inner mitochondrial membrane",
-        "Direct oxidation of glucose in the intermembrane space",
-        "Hydrolysis of GTP in the cytosol",
-        "Diffusion of sodium ions through voltage-gated channels"
-      ],
-      "answer": 0,
-      "explain": "Electron transport pumps protons from the matrix into the intermembrane space, creating a proton-motive force (pH and electrical gradient). Re-entry of protons through ATP synthase drives rotary catalysis to phosphorylate ADP into ATP.",
-      "open": {
-        "q": "What gradient across the inner mitochondrial membrane drives ATP synthesis via ATP synthase?",
-        "accept": [
-          "proton gradient",
-          "electrochemical proton gradient",
-          "proton-motive force",
-          "H+ gradient"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-29",
-      "level": 2,
-      "sub": "Oxidative Phosphorylation and Uncoupling",
-      "q": "What happens to electron transport and oxygen consumption when a chemical uncoupler (such as 2,4-dinitrophenol) dissipates the proton gradient across the inner mitochondrial membrane?",
-      "options": [
-        "Electron transport and oxygen consumption continue or increase while ATP synthesis decreases and energy is released as heat",
-        "Electron transport and oxygen consumption stop completely",
-        "ATP synthesis increases markedly while oxygen consumption drops to zero",
-        "NADH is no longer oxidized by Complex I"
-      ],
-      "answer": 0,
-      "explain": "Uncouplers carry protons back across the inner membrane independently of ATP synthase, collapsing the proton gradient so ATP synthesis falls while electron transport and O2 consumption proceed rapidly and release free energy as heat. Physiological uncoupling via UCP1 (thermogenin) generates heat in brown adipose tissue.",
-      "open": {
-        "q": "How does an uncoupler of oxidative phosphorylation affect oxygen consumption and ATP synthesis?",
-        "accept": [
-          "maintains or increases oxygen consumption while reducing ATP synthesis",
-          "uncouples respiration from ATP synthesis and increases heat"
-        ]
-      }
-    },
-    {
-      "id": "enzmeng-30",
-      "level": 3,
-      "sub": "Oxidative Phosphorylation and Uncoupling",
-      "q": "A patient exposed to cyanide presents with sudden collapse, lactic acidosis, bright venous blood, and severe cellular hypoxia because cyanide binds tightly to which component of the respiratory chain?",
-      "options": [
-        "Cytochrome c oxidase (Complex IV)",
-        "Succinate dehydrogenase (Complex II)",
-        "ATP synthase (Complex V)",
-        "Malate dehydrogenase"
-      ],
-      "answer": 0,
-      "explain": "Cyanide binds tightly to the ferric/heme iron of cytochrome c oxidase (Complex IV), halting terminal electron transfer to oxygen and blocking both electron transport and oxidative phosphorylation. Cells rely on anaerobic glycolysis, producing excess lactate and lactic acidosis.",
-      "open": {
-        "q": "Which respiratory chain complex is inhibited by cyanide poisoning?",
-        "accept": [
-          "cytochrome c oxidase",
-          "Complex IV",
-          "cytochrome a3"
-        ]
-      }
-    }
-  ]
+ "topic": "bc-enzymes-and-bioenergetics",
+ "questions": [
+  {
+   "id": "enzmeng-01",
+   "level": 1,
+   "sub": "Enzyme Classification and Nomenclature",
+   "q": "Which International Union of Biochemistry and Molecular Biology (IUBMB) enzyme class catalyzes oxidation-reduction reactions?",
+   "options": [
+    "Oxidoreductases (EC 1)",
+    "Transferases (EC 2)",
+    "Hydrolases (EC 3)",
+    "Ligases (EC 6)"
+   ],
+   "answer": 0,
+   "explain": "EC 1 (oxidoreductases) catalyze electron or hydrogen transfer in oxidation-reduction reactions, such as dehydrogenases and oxidases. Transferases (EC 2) move functional groups, hydrolases (EC 3) cleave bonds using water, and ligases (EC 6) join molecules using ATP.",
+   "open": {
+    "q": "Which main IUBMB enzyme class (EC 1) catalyzes oxidation-reduction reactions?",
+    "accept": [
+     "oxidoreductases",
+     "EC 1",
+     "oxidoreductase"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-02",
+   "level": 1,
+   "sub": "Enzyme Classification and Nomenclature",
+   "q": "Which enzyme class catalyzes the joining of two substrates coupled to the cleavage of a nucleoside triphosphate such as ATP?",
+   "options": [
+    "Lyases",
+    "Isomerases",
+    "Ligases",
+    "Hydrolases"
+   ],
+   "answer": 2,
+   "explain": "Ligases (EC 6, synthetases) form new covalent bonds (such as C-C, C-S, C-O, or C-N) using energy from ATP or another nucleoside triphosphate. Lyases (EC 4) cleave or form bonds without hydrolysis or oxidation, often creating double bonds.",
+   "open": {
+    "q": "Which class of enzymes (EC 6) catalyzes bond formation coupled to ATP hydrolysis?",
+    "accept": [
+     "ligases",
+     "synthetases",
+     "EC 6"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-03",
+   "level": 1,
+   "sub": "Enzyme Classification and Nomenclature",
+   "q": "Which enzyme class catalyzes intramolecular structural or geometric rearrangements within a single molecule?",
+   "options": [
+    "Isomerases",
+    "Transferases",
+    "Hydrolases",
+    "Oxidoreductases"
+   ],
+   "answer": 0,
+   "explain": "Isomerases (EC 5) catalyze isomerization within a single substrate, including racemases, epimerases, and mutases (such as phosphoglycerate mutase). Transferases (EC 2) transfer groups between different molecules.",
+   "open": {
+    "q": "Which enzyme class (EC 5) catalyzes intramolecular rearrangement to form isomers?",
+    "accept": [
+     "isomerases",
+     "EC 5",
+     "isomerase"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-04",
+   "level": 1,
+   "sub": "Enzyme Classification and Nomenclature",
+   "q": "What is the non-protein organic molecule tightly or covalently bound to an enzyme required for its catalytic activity?",
+   "options": [
+    "Prosthetic group",
+    "Holoenzyme",
+    "Zymogen",
+    "Isoenzyme"
+   ],
+   "answer": 0,
+   "explain": "A prosthetic group is a tightly or covalently attached non-protein organic cofactor (such as FAD in succinate dehydrogenase or heme). An apoenzyme plus its required cofactor(s) forms a catalytically active holoenzyme.",
+   "open": {
+    "q": "What term describes a tightly or covalently bound non-protein organic group essential for an enzyme's function?",
+    "accept": [
+     "prosthetic group",
+     "bound cofactor"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-05",
+   "level": 1,
+   "sub": "Enzyme Classification and Nomenclature",
+   "q": "What is an inactive precursor of an enzyme that requires proteolytic cleavage to become catalytically active?",
+   "options": [
+    "Zymogen (proenzyme)",
+    "Ribozyme",
+    "Isozyme",
+    "Allosteric activator"
+   ],
+   "answer": 0,
+   "explain": "Zymogens (proenzymes), such as pepsinogen, trypsinogen, and chymotrypsinogen, are synthesized as inactive precursors and activated by selective peptide bond cleavage. This prevents premature self-digestion of producing cells or tissues.",
+   "open": {
+    "q": "What term denotes an inactive enzyme precursor activated by proteolytic cleavage?",
+    "accept": [
+     "zymogen",
+     "proenzyme",
+     "zymogens"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-06",
+   "level": 1,
+   "sub": "Catalysis and Transition State",
+   "q": "How does an enzyme accelerate the rate of a biochemical reaction?",
+   "options": [
+    "Lowers the activation energy barrier of the transition state",
+    "Makes a thermodynamically unfavorable reaction have a negative delta G",
+    "Changes the equilibrium constant (Keq) of the reaction",
+    "Is permanently consumed during each catalytic cycle"
+   ],
+   "answer": 0,
+   "explain": "Enzymes stabilize the transition state and lower activation energy (delta G double-dagger), increasing both forward and reverse reaction rates equally without altering delta G or Keq. They emerge unchanged at the end of catalysis.",
+   "open": {
+    "q": "By what energetic mechanism do enzymes increase the rate of a chemical reaction?",
+    "accept": [
+     "lowering activation energy",
+     "stabilizing the transition state and lowering activation energy",
+     "decreasing activation energy barrier"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-07",
+   "level": 2,
+   "sub": "Catalysis and Transition State",
+   "q": "According to transition-state theory, why does an enzyme bind the transition state much more tightly than the ground-state substrate?",
+   "options": [
+    "Tighter transition-state binding lowers the free energy barrier between substrate and transition state",
+    "Tighter ground-state binding deep in an energy well speeds up catalysis",
+    "Transition-state binding reverses the equilibrium constant of the reaction",
+    "Transition-state binding prevents product release from the active site"
+   ],
+   "answer": 0,
+   "explain": "Preferential binding and stabilization of the transition state relative to the ground-state substrate lowers the activation energy required to reach the transition state. Excessively tight binding to the ground state would deepen the energy well and slow reaction rate.",
+   "open": {
+    "q": "Why must an enzyme's active site be complementary to the transition state rather than the ground-state substrate?",
+    "accept": [
+     "to lower activation energy",
+     "stabilizing the transition state lowers the activation energy barrier",
+     "reduces activation energy"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-08",
+   "level": 1,
+   "sub": "Catalysis and Transition State",
+   "q": "Which model of enzyme-substrate interaction proposes that the enzyme's active site undergoes a conformational change upon substrate binding?",
+   "options": [
+    "Induced-fit model",
+    "Lock-and-key model",
+    "Fluid-mosaic model",
+    "Chemiosmotic model"
+   ],
+   "answer": 0,
+   "explain": "The induced-fit model (Koshland) states that substrate binding induces a conformational change in the enzyme to align catalytic groups precisely. The rigid lock-and-key model assumes a pre-shaped active site matching the substrate.",
+   "open": {
+    "q": "Which model describes conformational adjustment of an enzyme's active site upon binding substrate?",
+    "accept": [
+     "induced fit",
+     "induced-fit model",
+     "induced fit model"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-09",
+   "level": 1,
+   "sub": "Enzyme Kinetics",
+   "q": "In Michaelis-Menten kinetics, what does the Michaelis constant (Km) represent?",
+   "options": [
+    "The substrate concentration at which reaction velocity is half of Vmax",
+    "The maximum reaction velocity at saturating substrate concentration",
+    "The turnover number of a single enzyme active site per second",
+    "The inhibitor concentration that reduces Vmax by half"
+   ],
+   "answer": 0,
+   "explain": "Km is defined as the substrate concentration [S] required to achieve 0.5 Vmax. Under standard assumptions (k-1 + k2 >> k1), a lower Km indicates higher apparent affinity of the enzyme for its substrate.",
+   "open": {
+    "q": "How is the Michaelis constant (Km) defined in enzyme kinetics?",
+    "accept": [
+     "substrate concentration at half Vmax",
+     "[S] giving half-maximal velocity",
+     "substrate concentration at 1/2 Vmax"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-10",
+   "level": 2,
+   "sub": "Enzyme Kinetics",
+   "q": "What does the turnover number (kcat) of an enzyme measure?",
+   "options": [
+    "Substrate molecules converted per active site per unit time at saturation",
+    "Substrate concentration at half Vmax",
+    "Free-energy change between reactants and products",
+    "Total enzyme mass in tissue"
+   ],
+   "answer": 0,
+   "explain": "Turnover number (kcat = Vmax / [E]total) expresses how many catalytic cycles one enzyme molecule or active site completes per second under saturating substrate. Catalytic efficiency is often assessed by the kcat/Km ratio.",
+   "open": {
+    "q": "What quantity does the turnover number (kcat) of an enzyme represent?",
+    "accept": [
+     "catalytic events per active site per second",
+     "substrate molecules converted per enzyme per second at saturation",
+     "number of turnovers per unit time per enzyme site"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-11",
+   "level": 1,
+   "sub": "Enzyme Kinetics",
+   "q": "On a Lineweaver-Burk (double-reciprocal) plot of 1/V versus 1/[S], what does the y-intercept equal?",
+   "options": [
+    "1 / Vmax",
+    "-1 / Km",
+    "Km / Vmax",
+    "Vmax / Km"
+   ],
+   "answer": 0,
+   "explain": "Rearranging the Michaelis-Menten equation gives 1/V = (Km/Vmax)(1/[S]) + 1/Vmax, which is linear with slope Km/Vmax and y-intercept 1/Vmax. Extrapolating the line to 1/V = 0 gives an x-intercept of -1/Km.",
+   "open": {
+    "q": "What value corresponds to the y-intercept on a Lineweaver-Burk double-reciprocal plot?",
+    "accept": [
+     "1/Vmax",
+     "reciprocal of Vmax",
+     "one over Vmax"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-12",
+   "level": 2,
+   "sub": "Enzyme Kinetics",
+   "q": "What is the characteristic kinetic effect of a pure competitive inhibitor on an enzyme-catalyzed reaction?",
+   "options": [
+    "Increases apparent Km while leaving Vmax unchanged",
+    "Decreases Vmax while leaving Km unchanged",
+    "Decreases both Km and Vmax equally",
+    "Increases Vmax without affecting Km"
+   ],
+   "answer": 0,
+   "explain": "A competitive inhibitor binds reversibly to the free enzyme active site, competing with substrate and increasing apparent Km (requiring higher [S] for half-maximal rate). Because high [S] outcompetes the inhibitor, Vmax can still be reached.",
+   "open": {
+    "q": "How does a competitive inhibitor alter apparent Km and Vmax of an enzyme?",
+    "accept": [
+     "increases apparent Km and leaves Vmax unchanged",
+     "raises Km with no change in Vmax"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-13",
+   "level": 2,
+   "sub": "Enzyme Kinetics",
+   "q": "Which type of reversible inhibitor binds exclusively to the enzyme-substrate (ES) complex rather than free enzyme, lowering both apparent Km and Vmax?",
+   "options": [
+    "Uncompetitive inhibitor",
+    "Competitive inhibitor",
+    "Irreversible suicide inhibitor",
+    "Allosteric homotropic activator"
+   ],
+   "answer": 0,
+   "explain": "Uncompetitive inhibition occurs when an inhibitor binds only to the ES complex, forming an inactive ESI species and reducing both Vmax and apparent Km by the same factor. On a Lineweaver-Burk plot, this produces parallel lines.",
+   "open": {
+    "q": "Which reversible inhibitor binds only to the ES complex and lowers both apparent Km and Vmax?",
+    "accept": [
+     "uncompetitive inhibitor",
+     "uncompetitive"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-14",
+   "level": 3,
+   "sub": "Enzyme Kinetics and Clinical Correlations",
+   "q": "A patient presents with severe metabolic acidosis and visual disturbances after ingesting methanol. Ethanol is administered intravenously because it competes with methanol for which hepatic enzyme?",
+   "options": [
+    "Alcohol dehydrogenase",
+    "Xanthine oxidase",
+    "Monoamine oxidase",
+    "Carbonic anhydrase"
+   ],
+   "answer": 0,
+   "explain": "Alcohol dehydrogenase oxidizes methanol to formaldehyde and formic acid, which causes optic nerve toxicity and metabolic acidosis. Ethanol acts as a competitive substrate for alcohol dehydrogenase, slowing toxic metabolite formation until methanol is cleared.",
+   "open": {
+    "q": "Ethanol treats methanol poisoning by competing with methanol for which enzyme?",
+    "accept": [
+     "alcohol dehydrogenase",
+     "ADH"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-15",
+   "level": 3,
+   "sub": "Enzyme Kinetics and Clinical Correlations",
+   "q": "A patient develops prolonged muscle paralysis after receiving succinylcholine during anesthesia because of a genetic variant of which plasma enzyme?",
+   "options": [
+    "Butyrylcholinesterase (pseudocholinesterase)",
+    "Acetylcholinesterase at the neuromuscular junction",
+    "Glucose-6-phosphate dehydrogenase",
+    "Cytochrome P450 2D6"
+   ],
+   "answer": 0,
+   "explain": "Plasma butyrylcholinesterase (pseudocholinesterase) normally hydrolyzes succinylcholine before most of it reaches the motor end-plate. Variants with markedly reduced activity prolong succinylcholine action and cause prolonged apnea.",
+   "open": {
+    "q": "Deficiency or variant form of which plasma enzyme prolongs neuromuscular blockade after succinylcholine?",
+    "accept": [
+     "butyrylcholinesterase",
+     "pseudocholinesterase",
+     "plasma cholinesterase",
+     "BChE"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-16",
+   "level": 1,
+   "sub": "Enzyme Regulation",
+   "q": "Which sigmoidal kinetic behavior is characteristic of many allosteric enzymes?",
+   "options": [
+    "Cooperative binding of substrate across multiple subunits",
+    "Strict compliance with first-order kinetics at all substrate levels",
+    "Complete absence of regulatory effector sites",
+    "Irreversible covalent modification with every catalytic turn"
+   ],
+   "answer": 0,
+   "explain": "Allosteric enzymes frequently possess multiple subunits and regulatory sites, showing cooperative substrate binding that produces a sigmoidal velocity-versus-[S] curve. Allosteric effectors shift the curve left (activators) or right (inhibitors).",
+   "open": {
+    "q": "What property of multimeric allosteric enzymes produces a sigmoidal substrate-saturation curve?",
+    "accept": [
+     "cooperativity",
+     "cooperative substrate binding",
+     "subunit cooperativity"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-17",
+   "level": 1,
+   "sub": "Enzyme Regulation",
+   "q": "Which covalent modification commonly regulates metabolic enzymes by adding a phosphoryl group from ATP to serine, threonine, or tyrosine residues?",
+   "options": [
+    "Phosphorylation catalyzed by protein kinases",
+    "Acetylation catalyzed by dehydrogenases",
+    "Ubiquitination catalyzed by isomerases",
+    "Glycosylation catalyzed by peroxidases"
+   ],
+   "answer": 0,
+   "explain": "Protein kinases transfer the gamma-phosphate of ATP onto hydroxyl groups of serine, threonine, or tyrosine residues, while protein phosphatases remove it. Phosphorylation can activate or inhibit target enzymes depending on the pathway.",
+   "open": {
+    "q": "Which covalent modification is catalyzed by protein kinases on serine, threonine, or tyrosine residues?",
+    "accept": [
+     "phosphorylation",
+     "protein phosphorylation"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-18",
+   "level": 1,
+   "sub": "Enzyme Regulation",
+   "q": "What are isoenzymes (isozymes)?",
+   "options": [
+    "Different protein forms of an enzyme that catalyze the same reaction",
+    "Enzymes that catalyze completely different chemical reactions",
+    "Cofactors bound to apoenzymes during electron transfer",
+    "Lipid-soluble hormones that induce gene transcription"
+   ],
+   "answer": 0,
+   "explain": "Isoenzymes are distinct molecular forms of an enzyme (often encoded by different genes or differing in subunit composition, such as lactate dehydrogenase LDH1-LDH5) that catalyze the same reaction. They often differ in tissue distribution and kinetic properties.",
+   "open": {
+    "q": "How are isoenzymes defined in biochemistry?",
+    "accept": [
+     "different forms of an enzyme catalyzing the same reaction",
+     "distinct enzyme variants with the same catalytic activity"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-19",
+   "level": 3,
+   "sub": "Enzyme Regulation and Clinical Correlations",
+   "q": "In a patient with acute myocardial infarction, which cardiac-specific biomarker rises in plasma within hours and remains elevated for several days?",
+   "options": [
+    "Cardiac troponin (troponin I or T)",
+    "Alkaline phosphatase",
+    "Alanine aminotransferase (ALT)",
+    "Amylase"
+   ],
+   "answer": 0,
+   "explain": "Cardiac troponins I and T are highly specific and sensitive markers of myocardial cell injury, rising within 3 to 6 hours and remaining elevated for days. CK-MB (creatine kinase-MB) also rises early in myocardial injury but normalizes sooner.",
+   "open": {
+    "q": "Which cardiac biomarker is preferred for diagnosing acute myocardial injury due to its high cardiac specificity and prolonged elevation?",
+    "accept": [
+     "cardiac troponin",
+     "troponin I",
+     "troponin T",
+     "troponin"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-20",
+   "level": 1,
+   "sub": "Bioenergetics and Free Energy",
+   "q": "What does a negative standard free energy change (delta G-nought < 0) indicate about a chemical reaction under standard conditions?",
+   "options": [
+    "The forward reaction is exergonic under standard conditions",
+    "The reaction rate is infinitely fast",
+    "Continuous heat input is required",
+    "Keq is less than 1"
+   ],
+   "answer": 0,
+   "explain": "A negative standard free energy change (delta G-nought < 0) means products have lower standard free energy than reactants, corresponding to an equilibrium constant Keq > 1. Free energy change determines thermodynamic spontaneity, not reaction velocity.",
+   "open": {
+    "q": "What does a negative delta G-nought value indicate about a reaction under standard conditions?",
+    "accept": [
+     "exergonic and spontaneous",
+     "thermodynamically favorable",
+     "spontaneous forward reaction"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-21",
+   "level": 2,
+   "sub": "Bioenergetics and Free Energy",
+   "q": "How is the actual free energy change (delta G) of a reaction related to the standard free energy change (delta G-nought) and reaction quotient (Q)?",
+   "options": [
+    "delta G = delta G-nought + RT ln(Q)",
+    "delta G = delta G-nought - RT ln(Q)",
+    "delta G = delta G-nought * RT * Q",
+    "delta G = RT / (delta G-nought + ln Q)"
+   ],
+   "answer": 0,
+   "explain": "The actual free energy change is given by delta G = delta G-nought + RT ln([products]/[reactants]), where R is the gas constant and T is absolute temperature. Even a reaction with positive delta G-nought can proceed in cells if product levels are kept very low.",
+   "open": {
+    "q": "Write the equation relating actual free energy change (delta G) to standard free energy change (delta G-nought) and reactant/product concentrations.",
+    "accept": [
+     "delta G = delta G-nought + RT ln([products]/[reactants])",
+     "dG = dG0 + RT ln Q"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-22",
+   "level": 1,
+   "sub": "High-Energy Phosphate Compounds",
+   "q": "Why does ATP hydrolysis to ADP and inorganic phosphate release a large amount of free energy under physiological conditions?",
+   "options": [
+    "Relief of phosphate repulsion and resonance stabilisation of products",
+    "Formation of a covalent bond without water",
+    "Inorganic phosphate becomes a strong acid",
+    "All adenine carbon bonds are broken"
+   ],
+   "answer": 0,
+   "explain": "At physiological pH, ATP carries multiple negatively charged phosphate oxygens that repel one another; hydrolysis relieves this electrostatic repulsion and yields products (ADP and Pi) with greater resonance stabilization and solvation. Thus ATP has a high phosphoryl group transfer potential.",
+   "open": {
+    "q": "What structural factors account for the large negative free energy of ATP hydrolysis?",
+    "accept": [
+     "electrostatic repulsion relief and resonance stabilization",
+     "charge repulsion and resonance stabilization of products",
+     "relief of electrostatic repulsion"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-23",
+   "level": 2,
+   "sub": "High-Energy Phosphate Compounds",
+   "q": "Which high-energy compound has a higher phosphoryl transfer potential than ATP and can donate a phosphate group to ADP to regenerate ATP in skeletal muscle?",
+   "options": [
+    "Phosphocreatine (creatine phosphate)",
+    "Glucose-6-phosphate",
+    "Glycerol-3-phosphate",
+    "AMP"
+   ],
+   "answer": 0,
+   "explain": "Phosphocreatine has a more negative standard free energy of phosphate hydrolysis (about -43 kJ/mol) than ATP (about -30.5 kJ/mol), allowing creatine kinase to transfer phosphate to ADP during intense muscle contraction. Glucose-6-phosphate has a lower phosphoryl transfer potential than ATP.",
+   "open": {
+    "q": "Which high-energy phosphagen stores phosphoryl groups in muscle to rapidly regenerate ATP from ADP?",
+    "accept": [
+     "phosphocreatine",
+     "creatine phosphate",
+     "PCr"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-24",
+   "level": 1,
+   "sub": "High-Energy Phosphate Compounds",
+   "q": "What is substrate-level phosphorylation?",
+   "options": [
+    "Direct transfer of phosphate from a high-energy intermediate to ADP",
+    "ATP synthesis driven by the mitochondrial proton gradient",
+    "PKA-mediated protein phosphorylation",
+    "Phosphate addition to sugar without ATP formation"
+   ],
+   "answer": 0,
+   "explain": "Substrate-level phosphorylation synthesizes ATP or GTP directly by transferring a high-energy phosphate group from a substrate intermediate (such as 1,3-bisphosphoglycerate or phosphoenolpyruvate) to ADP. It does not require oxygen or an electron transport chain.",
+   "open": {
+    "q": "How is ATP synthesized during substrate-level phosphorylation?",
+    "accept": [
+     "direct phosphoryl transfer from a phosphorylated substrate to ADP",
+     "transfer of phosphate from a high-energy metabolic intermediate to ADP"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-25",
+   "level": 1,
+   "sub": "Biological Oxidation and Electron Transport",
+   "q": "In which cellular compartment is the mitochondrial electron transport chain (respiratory chain) located in eukaryotes?",
+   "options": [
+    "Inner mitochondrial membrane",
+    "Outer mitochondrial membrane",
+    "Cytosol",
+    "Smooth endoplasmic reticulum"
+   ],
+   "answer": 0,
+   "explain": "The respiratory chain complexes (Complexes I-IV) and ATP synthase are embedded in the inner mitochondrial membrane, which is impermeable to ions and maintains the proton electrochemical gradient. The citric acid cycle occurs in the mitochondrial matrix (except succinate dehydrogenase on the inner membrane).",
+   "open": {
+    "q": "In which membrane of the mitochondrion are the electron transport chain complexes located?",
+    "accept": [
+     "inner mitochondrial membrane",
+     "inner membrane"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-26",
+   "level": 1,
+   "sub": "Biological Oxidation and Electron Transport",
+   "q": "Which molecule serves as the final electron acceptor at Complex IV (cytochrome c oxidase) of the mitochondrial electron transport chain?",
+   "options": [
+    "Molecular oxygen (O2)",
+    "NAD+",
+    "Ubiquinone (Coenzyme Q)",
+    "Fumarate"
+   ],
+   "answer": 0,
+   "explain": "Complex IV (cytochrome c oxidase) transfers electrons from reduced cytochrome c to molecular oxygen, reducing O2 to water (H2O). Without oxygen as the terminal electron acceptor, electron flow backs up and oxidative phosphorylation stops.",
+   "open": {
+    "q": "Which molecule accepts electrons at the end of the mitochondrial electron transport chain to form water?",
+    "accept": [
+     "molecular oxygen",
+     "oxygen",
+     "O2",
+     "dioxygen"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-27",
+   "level": 1,
+   "sub": "Biological Oxidation and Electron Transport",
+   "q": "Which mobile lipid carrier shuttles electrons from Complexes I and II to Complex III within the inner mitochondrial membrane?",
+   "options": [
+    "Ubiquinone (Coenzyme Q)",
+    "Cytochrome c",
+    "FADH2",
+    "Myoglobin"
+   ],
+   "answer": 0,
+   "explain": "Coenzyme Q (ubiquinone) is a lipid-soluble benzoquinone carrier that diffuses within the inner mitochondrial membrane core, accepting electrons from NADH dehydrogenase (Complex I) and succinate dehydrogenase (Complex II) and passing them to Complex III. Cytochrome c is a peripheral heme protein on the outer face of the inner membrane.",
+   "open": {
+    "q": "Which lipid-soluble electron carrier transfers electrons from Complexes I and II to Complex III?",
+    "accept": [
+     "ubiquinone",
+     "coenzyme Q",
+     "CoQ",
+     "Q"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-28",
+   "level": 2,
+   "sub": "Oxidative Phosphorylation and Uncoupling",
+   "q": "According to Mitchell's chemiosmotic hypothesis, what directly drives ATP synthesis by ATP synthase (Complex V)?",
+   "options": [
+    "Protons move down their electrochemical gradient across the inner mitochondrial membrane",
+    "Glucose is oxidised in the intermembrane space",
+    "GTP is hydrolysed in the cytosol",
+    "Sodium diffuses through voltage-gated channels"
+   ],
+   "answer": 0,
+   "explain": "Electron transport pumps protons from the matrix into the intermembrane space, creating a proton-motive force (pH and electrical gradient). Re-entry of protons through ATP synthase drives rotary catalysis to phosphorylate ADP into ATP.",
+   "open": {
+    "q": "What gradient across the inner mitochondrial membrane drives ATP synthesis via ATP synthase?",
+    "accept": [
+     "proton gradient",
+     "electrochemical proton gradient",
+     "proton-motive force",
+     "H+ gradient"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-29",
+   "level": 2,
+   "sub": "Oxidative Phosphorylation and Uncoupling",
+   "q": "What happens to electron transport and oxygen consumption when a chemical uncoupler (such as 2,4-dinitrophenol) dissipates the proton gradient across the inner mitochondrial membrane?",
+   "options": [
+    "Electron transport and O2 use continue, but ATP synthesis falls and heat is released",
+    "Electron transport and O2 consumption stop",
+    "ATP synthesis rises while oxygen use stops",
+    "Complex I no longer oxidises NADH"
+   ],
+   "answer": 0,
+   "explain": "Uncouplers carry protons back across the inner membrane independently of ATP synthase, collapsing the proton gradient so ATP synthesis falls while electron transport and O2 consumption proceed rapidly and release free energy as heat. Physiological uncoupling via UCP1 (thermogenin) generates heat in brown adipose tissue.",
+   "open": {
+    "q": "How does an uncoupler of oxidative phosphorylation affect oxygen consumption and ATP synthesis?",
+    "accept": [
+     "maintains or increases oxygen consumption while reducing ATP synthesis",
+     "uncouples respiration from ATP synthesis and increases heat"
+    ]
+   }
+  },
+  {
+   "id": "enzmeng-30",
+   "level": 3,
+   "sub": "Oxidative Phosphorylation and Uncoupling",
+   "q": "A patient exposed to cyanide presents with sudden collapse, lactic acidosis, bright venous blood, and severe cellular hypoxia because cyanide binds tightly to which component of the respiratory chain?",
+   "options": [
+    "Cytochrome c oxidase (Complex IV)",
+    "Succinate dehydrogenase (Complex II)",
+    "ATP synthase (Complex V)",
+    "Malate dehydrogenase"
+   ],
+   "answer": 0,
+   "explain": "Cyanide binds tightly to the ferric/heme iron of cytochrome c oxidase (Complex IV), halting terminal electron transfer to oxygen and blocking both electron transport and oxidative phosphorylation. Cells rely on anaerobic glycolysis, producing excess lactate and lactic acidosis.",
+   "open": {
+    "q": "Which respiratory chain complex is inhibited by cyanide poisoning?",
+    "accept": [
+     "cytochrome c oxidase",
+     "Complex IV",
+     "cytochrome a3"
+    ]
+   }
+  }
+ ]
 }

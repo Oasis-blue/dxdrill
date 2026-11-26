@@ -78,10 +78,10 @@
    "sub": "Presynaptic Exocytosis and SNARE Machinery",
    "q": "How do botulinum neurotoxin (Clostridium botulinum) and tetanus neurotoxin (Clostridium tetani) produce flaccid versus spastic paralysis despite both being zinc-dependent endoproteases that cleave SNARE proteins?",
    "options": [
-    "Botulinum toxin destroys postsynaptic muscle actin; tetanus toxin blocks renal sodium channels",
+    "Botulinum toxin destroys muscle actin; tetanus toxin blocks renal sodium channels",
     "Both toxins act exclusively on the cerebral motor cortex",
-    "Botulinum toxin stimulates excess acetylcholine synthesis; tetanus toxin blocks dopamine reuptake",
-    "Botulinum toxin acts peripherally at neuromuscular junctions to block acetylcholine release (flaccid paralysis), whereas tetanus toxin travels retrogradely into the spinal cord to cleave SNAREs in Renshaw/inhibitory interneurons, blocking glycine and GABA release (spastic paralysis)"
+    "Botulinum toxin increases acetylcholine synthesis; tetanus toxin blocks dopamine reuptake",
+    "Botulinum toxin blocks ACh release at the NMJ; tetanus toxin blocks inhibitory GABA/glycine release in the CNS"
    ],
    "answer": 3,
    "explain": "Both cleave SNAREs (synaptobrevin, SNAP-25, or syntaxin), but differential axonal transport targets peripheral cholinergic motor terminals (botulism) versus spinal inhibitory interneurons (tetanus disinhibition).",
@@ -193,10 +193,10 @@
    "sub": "Neuromuscular Junction Physiology",
    "q": "How do competitive non-depolarizing neuromuscular blockers (such as tubocurarine or rocuronium) differ in mechanism from depolarizing blockers (such as succinylcholine)?",
    "options": [
-    "Non-depolarizing agents competitively antagonize Nm receptors without opening the channel (reversible by AChE inhibitors like neostigmine), whereas succinylcholine binds and opens Nm channels persistently, causing initial fasciculations followed by Phase I depolarization block (inactivating adjacent Nav1.4 channels)",
-    "Non-depolarizing agents inhibit acetylcholinesterase; succinylcholine blocks presynaptic Ca2+ channels",
-    "Succinylcholine is rapidly hydrolyzed by plasma acetylcholinesterase within 1 millisecond",
-    "Both classes act exclusively in the central nervous system"
+    "Non-depolarizing drugs competitively block Nm receptors; succinylcholine persistently activates them and causes depolarisation block",
+    "Non-depolarizing drugs inhibit acetylcholinesterase; succinylcholine blocks presynaptic calcium channels",
+    "Succinylcholine is rapidly destroyed by synaptic acetylcholinesterase",
+    "Both drug classes act only on receptors in the central nervous system"
    ],
    "answer": 0,
    "explain": "Curare/rocuronium compete with ACh at the alpha subunit (overcome by raising cleft ACh with neostigmine), whereas succinylcholine resists AChE (hydrolyzed slowly by plasma butyrylcholinesterase), holding the end-plate depolarized so surrounding Nav1.4 channels stay inactivated.",
@@ -239,10 +239,10 @@
    "sub": "Postsynaptic Potentials and Synaptic Integration",
    "q": "How do temporal summation and spatial summation differ during postsynaptic integration of graded potentials?",
    "options": [
-    "Temporal summation occurs across different neurons in the spinal cord; spatial summation occurs over days",
-    "Temporal summation applies only to IPSPs; spatial summation applies only to EPSPs",
-    "Temporal summation is the additive overlap of repeated postsynaptic potentials arriving rapidly at the same synapse before the previous potential decays (governed by membrane time constant tau); spatial summation is the simultaneous addition of postsynaptic potentials arriving from multiple different synapses across the dendritic tree/soma (governed by length constant lambda)",
-    "Neither temporal nor spatial summation can bring the axon hillock to threshold"
+    "Temporal summation occurs across different neurons; spatial summation occurs over time at one synapse",
+    "Temporal summation applies only to inhibitory potentials; spatial summation only to excitatory potentials",
+    "Temporal summation combines successive inputs at one synapse; spatial summation combines inputs from multiple synapses",
+    "Neither form of summation can influence firing at the axon hillock"
    ],
    "answer": 2,
    "explain": "A single CNS EPSP (~0.5-1 mV) is usually far below the ~15 mV depolarization needed to reach threshold at the axon hillock, requiring combined temporal and spatial summation to trigger a spike.",
@@ -285,9 +285,9 @@
    "sub": "Presynaptic Inhibition and Facilitation",
    "q": "What is the mechanism of presynaptic inhibition at an axoaxonic synapse in the central nervous system (such as on primary sensory Ia afferents in the spinal cord)?",
    "options": [
-    "Hyperpolarization of the postsynaptic motor neuron soma by glycine",
+    "Hyperpolarisation of the postsynaptic motor neuron by glycine",
     "Destruction of postsynaptic glutamate receptors by proteases",
-    "GABA released at an axoaxonic terminal opens Cl- (or K+) channels on the excitatory presynaptic terminal, reducing incoming action potential amplitude, decreasing presynaptic Ca2+ influx, and releasing less glutamate without altering postsynaptic excitability to other inputs",
+    "GABA at an axoaxonic synapse reduces presynaptic calcium entry and transmitter release",
     "Direct electrical coupling between the inhibitory axon and postsynaptic dendrite"
    ],
    "answer": 2,
@@ -585,9 +585,9 @@
    "q": "What is 'synaptic fatigue' during prolonged, repetitive high-frequency stimulation of an excitatory synapse, and what is its protective physiological role?",
    "options": [
     "Complete depletion of postsynaptic actin filaments",
-    "Progressive exhaustion of the readily releasable pool of presynaptic neurotransmitter vesicles faster than they can be resynthesized and recycled, acting as a natural protective mechanism against runaway excitation and epileptic seizures",
-    "Permanent death of the presynaptic soma",
-    "Overproduction of myelin sheaths"
+    "Repeated activity exhausts the readily releasable vesicle pool faster than it can be replenished",
+    "Permanent death of the presynaptic neuronal cell body",
+    "Overproduction of myelin around the postsynaptic membrane"
    ],
    "answer": 1,
    "explain": "When firing frequency outpaces vesicle recycling and transmitter synthesis, EPSP amplitude declines progressively, preventing sustained epileptiform discharges.",
@@ -745,9 +745,9 @@
    "sub": "Postsynaptic Potentials and Synaptic Integration",
    "q": "How does a metabotropic (G-protein-coupled) neurotransmitter receptor differ functionally from an ionotropic (ligand-gated ion channel) receptor?",
    "options": [
-    "Ionotropic receptors act over minutes via gene transcription; metabotropic receptors open within 0.1 ms",
-    "Ionotropic receptors directly form an ion-conducting pore that opens within milliseconds for fast point-to-point signaling, whereas metabotropic receptors activate intracellular G-proteins and second messengers (cAMP, IP3/DAG) to modulate channels and gene expression over hundreds of milliseconds to minutes",
-    "Metabotropic receptors never affect membrane ion channels",
+    "Ionotropic receptors act through gene transcription; metabotropic receptors form fast ion channels",
+    "Ionotropic receptors are ligand-gated channels; metabotropic receptors signal through G proteins and second messengers",
+    "Metabotropic receptors never influence membrane ion channels",
     "Ionotropic receptors are found only in the adrenal cortex"
    ],
    "answer": 1,
@@ -883,10 +883,10 @@
    "sub": "Clinical Correlations",
    "q": "A 67-year-old man develops resting 'pill-rolling' tremor, cogwheel rigidity, bradykinesia, and postural instability due to degeneration of pigmented dopaminergic neurons in the substantia nigra pars compacta. Why is oral L-DOPA combined with carbidopa rather than administering dopamine directly?",
    "options": [
-    "Dopamine crosses the blood-brain barrier too rapidly and causes mania",
-    "Dopamine cannot cross the blood-brain barrier, whereas L-DOPA crosses via the LAT1 large neutral amino acid transporter; carbidopa inhibits peripheral DOPA decarboxylase without crossing the BBB, boosting CNS L-DOPA delivery and preventing peripheral nausea/arrhythmias",
+    "Dopamine crosses the blood-brain barrier, but L-DOPA does not",
+    "L-DOPA crosses the blood-brain barrier; carbidopa limits its peripheral conversion to dopamine",
     "Carbidopa converts dopamine into serotonin inside the liver",
-    "Dopamine permanently destroys GABA-A receptors"
+    "Dopamine destroys GABA-A receptors in the striatum"
    ],
    "answer": 1,
    "explain": "Peripheral aromatic L-amino acid decarboxylase converts >95% of unprotected L-DOPA into dopamine outside the brain; carbidopa blocks peripheral decarboxylation so more L-DOPA enters the striatum.",

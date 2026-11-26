@@ -148,10 +148,10 @@
    "sub": "Gram-Positive Cocci: Staphylococci",
    "q": "How does Protein A on the surface of Staphylococcus aureus help the bacterium evade humoral immunity and opsonophagocytosis?",
    "options": [
-    "It binds the Fc region of human IgG antibodies in the wrong orientation, preventing Fc-receptor recognition by neutrophils and blocking classical complement activation",
-    "It cleaves secretory IgA into monomeric Fab fragments at mucosal surfaces",
-    "It degrades C5a anaphylatoxin before neutrophils can migrate to the abscess",
-    "It coats the bacterium in host sialic acid identical to red blood cells"
+    "Protein A binds the Fc region of IgG, impairing opsonisation and phagocyte recognition",
+    "It cleaves secretory IgA into Fab fragments",
+    "It degrades C5a before neutrophils can migrate",
+    "It coats the bacterium with red-cell sialic acid"
    ],
    "answer": 0,
    "explain": "Staphylococcal Protein A binds the Fc gamma domain of IgG1, IgG2, and IgG4, inverting the antibody so its Fab arms face outward and blocking phagocyte Fc-gamma receptor binding and C1q fixation.",
@@ -309,10 +309,10 @@
    "sub": "Gram-Positive Bacilli: Spore-Forming and Non-Spore-Forming",
    "q": "How do the neurotoxins of Clostridium tetani (tetanospasmin) and Clostridium botulinum (botulinum toxin) produce opposite clinical forms of paralysis despite both being zinc-dependent metalloproteases that cleave SNARE proteins?",
    "options": [
-    "Tetanospasmin blocks inhibitory glycine and GABA release in spinal Renshaw interneurons (spastic paralysis), whereas botulinum toxin blocks excitatory acetylcholine release at peripheral neuromuscular junctions (flaccid paralysis)",
-    "Tetanospasmin destroys skeletal muscle actin filaments, whereas botulinum toxin stimulates nicotinic receptors continuously",
-    "Tetanospasmin acts exclusively on cardiac Purkinje fibres, whereas botulinum toxin acts on renal tubular cells",
-    "Tetanospasmin blocks voltage-gated sodium channels, whereas botulinum toxin opens chloride channels in the cerebellum"
+    "Tetanus blocks inhibitory GABA/glycine release in the CNS; botulinum blocks acetylcholine release at the NMJ",
+    "Tetanus destroys muscle actin; botulinum continuously stimulates nicotinic receptors",
+    "Tetanus acts only on cardiac Purkinje fibres; botulinum acts on renal tubules",
+    "Tetanus blocks sodium channels; botulinum opens chloride channels in the cerebellum"
    ],
    "answer": 0,
    "explain": "Botulinum toxin remains in the periphery and cleaves SNARE proteins (synaptobrevin, SNAP-25, syntaxin) at cholinergic motor nerve terminals, preventing ACh exocytosis (descending flaccid paralysis); tetanospasmin undergoes retrograde axonal transport to the spinal cord and cleaves synaptobrevin in inhibitory interneurons, preventing GABA/glycine release (rigid spastic paralysis, trismus, opisthotonus).",
@@ -472,10 +472,10 @@
    "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
    "q": "Enterohaemorrhagic Escherichia coli (EHEC, notably serotype O157:H7) causes bloody diarrhoea without fever and can trigger haemolytic uraemic syndrome (HUS) in children via which mechanism?",
    "options": [
-    "Secretion of Shiga-like toxin (verotoxin) that cleaves the 28S rRNA of the 60S eukaryotic ribosomal subunit, halting protein synthesis in glomerular endothelial cells",
-    "Activation of guanylate cyclase by heat-stable toxin (ST) causing watery secretory diarrhoea",
-    "Direct invasion of ileal Peyer patches and dissemination inside splenic macrophages",
-    "Hydrolysis of urinary urea into ammonia with formation of struvite stones"
+    "Shiga-like toxin inactivates the 60S ribosomal subunit, injuring colonic and renal endothelial cells",
+    "Heat-stable toxin activates guanylate cyclase to cause watery diarrhoea",
+    "It invades ileal Peyer patches and replicates in macrophages",
+    "Urease converts urinary urea into ammonia and stones"
    ],
    "answer": 0,
    "explain": "EHEC O157:H7 (which does not ferment sorbitol) produces phage-encoded Shiga-like toxins (Stx1/Stx2) that inactivate 60S ribosomes, damaging colonic mucosa and renal glomerular endothelium to produce the HUS triad of microangiopathic haemolytic anaemia, thrombocytopenia, and acute kidney injury.",
@@ -495,10 +495,10 @@
    "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
    "q": "Which key microbiological and pathogenic features distinguish Salmonella enterica serovar Typhi from Shigella species on selective enteric media (such as XLD or Hektoen enteric agar) and in vivo?",
    "options": [
-    "Salmonella Typhi is motile, produces hydrogen sulphide (H2S), has a Vi polysaccharide capsule, and invades bloodstream macrophages, whereas Shigella is non-motile, H2S-negative, lacks flagella, and invades colonic mucosa locally via M cells",
-    "Salmonella Typhi is a rapid lactose fermenter, whereas Shigella produces bright green metallic sheen on EMB agar",
-    "Salmonella Typhi causes disease solely via preformed heat-stable enterotoxin, whereas Shigella causes typhoid fever",
-    "Salmonella Typhi is urease-positive and swarms across blood agar, whereas Shigella is oxidase-positive"
+    "Salmonella Typhi is motile and H2S-positive; Shigella is non-motile and H2S-negative",
+    "Salmonella Typhi ferments lactose; Shigella produces a metallic sheen on EMB agar",
+    "Salmonella Typhi causes disease only through preformed enterotoxin; Shigella causes typhoid fever",
+    "Salmonella Typhi is urease-positive and swarming; Shigella is oxidase-positive"
    ],
    "answer": 0,
    "explain": "Both are non-lactose fermenters; however, Salmonella Typhi has peritrichous flagella (motile), produces H2S (black-centred colonies), requires a high infectious dose (~10^5 organisms), and disseminates systemically (typhoid/enteric fever), whereas non-motile Shigella requires a tiny infectious dose (10–100 organisms) and causes bacillary dysentery.",
@@ -541,10 +541,10 @@
    "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
    "q": "Proteus mirabilis exhibits characteristic concentric 'swarming' waves on blood agar and strongly predisposes patients with urinary tract infections to magnesium ammonium phosphate (struvite) staghorn renal calculi via which enzyme?",
    "options": [
-    "Urease (which hydrolyzes urea into ammonia and carbon dioxide, alkalinizing urine)",
-    "Coagulase",
-    "Neuraminidase",
-    "Collagenase"
+    "Urease hydrolyses urea to ammonia, alkalinising urine and promoting struvite stones",
+    "Coagulase converts fibrinogen to fibrin",
+    "Neuraminidase removes sialic acid from erythrocytes",
+    "Collagenase destroys connective tissue"
    ],
    "answer": 0,
    "explain": "Proteus mirabilis produces potent urease that splits urinary urea into ammonia, raising urinary pH above 8 and precipitating calcium carbonate apatite and magnesium ammonium phosphate (struvite) crystals.",
@@ -563,10 +563,10 @@
    "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
    "q": "Vibrio cholerae, a curved, comma-shaped, oxidase-positive Gram-negative rod with a single polar flagellum that grows as yellow sucrose-fermenting colonies on TCBS agar, causes massive painless 'rice-water' secretory diarrhoea through which mechanism?",
    "options": [
-    "Cholera toxin A subunit ADP-ribosylates the Gs-alpha regulatory protein in enterocytes, permanently activating adenylate cyclase to elevate cAMP and drive CFTR-mediated chloride and water efflux",
-    "Cholera toxin cleaves tight junction occludin proteins to cause haemorrhagic mucosal ulceration",
-    "Cholera toxin blocks voltage-gated calcium channels in enteric myenteric neurons",
-    "Cholera toxin inhibits hepatic bile salt synthesis in the gallbladder"
+    "Cholera toxin ADP-ribosylates Gs-alpha, raising cAMP and stimulating CFTR-mediated chloride secretion",
+    "Cholera toxin cleaves tight junction proteins and causes haemorrhagic ulceration",
+    "Cholera toxin blocks voltage-gated calcium channels in enteric neurons",
+    "Cholera toxin inhibits bile salt synthesis in the liver"
    ],
    "answer": 0,
    "explain": "Cholera toxin B subunits bind GM1 ganglioside receptors on small intestinal enterocytes, while the A1 subunit locks Gs-alpha in its active GTP-bound state; sustained high cAMP opens apical CFTR chloride channels and inhibits NaCl absorption, causing isotonic fluid loss up to 1 litre per hour.",
@@ -609,10 +609,10 @@
    "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
    "q": "How does Helicobacter pylori survive the extreme acidity of the human gastric lumen to colonize the gastric antral mucus layer and cause peptic ulcer disease?",
    "options": [
-    "It produces abundant urease that hydrolyzes gastric urea into ammonia and carbon dioxide, creating a localized neutral alkaline microenvironment around the bacterium",
-    "It forms heat- and acid-resistant endospores coated in dipicolinic acid",
-    "It invades parietal cells and permanently destroys all gastric H+/K+-ATPase proton pumps",
-    "It secretes thick chitin cell walls identical to gastric fungi"
+    "Urease generates ammonia from urea, buffering acid around the organism in gastric mucus",
+    "It forms endospores coated with dipicolinic acid",
+    "It invades parietal cells and destroys all proton pumps",
+    "It secretes chitin cell walls like fungi"
    ],
    "answer": 0,
    "explain": "Helicobacter pylori (a helical, oxidase-positive, catalase-positive, strongly urease-positive rod) uses rapid urease activity to buffer gastric acid locally—a property exploited diagnostically by the urea breath test and rapid urease (CLO) biopsy test.",

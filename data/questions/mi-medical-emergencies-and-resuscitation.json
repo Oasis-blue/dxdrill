@@ -127,10 +127,10 @@
    "sub": "Anaphylaxis",
    "q": "What is the immediate first-line pharmacological treatment and route of administration for acute severe anaphylaxis in an adult?",
    "options": [
-    "Hydrocortisone 200 mg intravenously",
-    "Adrenaline (epinephrine) 0.5 mg (0.5 mL of 1:1,000) intramuscularly into the anterolateral thigh",
-    "Chlorphenamine 10 mg orally",
-    "Salbutamol 5 mg via nebulizer alone"
+    "IV hydrocortisone 200 mg",
+    "IM adrenaline 0.5 mg into the anterolateral thigh",
+    "Oral chlorphenamine 10 mg",
+    "Nebulised salbutamol alone"
    ],
    "answer": 1,
    "explain": "Intramuscular adrenaline 0.5 mg (1:1,000) into the mid-anterolateral thigh (vastus lateralis) rapidly reverses bronchospasm, laryngeal oedema, and vasodilatory shock; antihistamines and steroids are secondary adjuncts.",
@@ -151,10 +151,10 @@
    "sub": "Airway Management",
    "q": "Which airway opening manoeuvre is indicated in an unconscious trauma patient with suspected cervical spine injury?",
    "options": [
-    "Hyperextension of the neck with head tilt-chin lift",
-    "Flexion of the neck onto the chest",
-    "Jaw-thrust manoeuvre with manual in-line cervical spine stabilization",
-    "Insertion of a rigid oesophagoscope"
+    "Head-tilt chin-lift",
+    "Neck flexion onto the chest",
+    "Jaw thrust with manual in-line cervical stabilisation",
+    "Rigid oesophagoscopy"
    ],
    "answer": 2,
    "explain": "The jaw-thrust lifts the mandible forward to relieve tongue-induced airway obstruction without extending or flexing the potentially unstable cervical spine.",
@@ -247,10 +247,10 @@
    "sub": "Sepsis and Septic Shock",
    "q": "Which three bedside clinical criteria constitute the quick Sequential Organ Failure Assessment (qSOFA) score for identifying patients with suspected infection at high risk of poor sepsis outcomes?",
    "options": [
-    "Fever >38.5 C, WBC >12,000/microL, and heart rate >100 bpm",
-    "Oliguria <0.5 mL/kg/h, jaundice, and platelet count <100,000/microL",
-    "Respiratory rate >= 22/min, altered mentation (GCS < 15), and systolic blood pressure <= 100 mmHg",
-    "Serum lactate >4 mmol/L, PaO2 <60 mmHg, and hypoglycaemia"
+    "Fever, leukocytosis and tachycardia",
+    "Oliguria, jaundice and thrombocytopenia",
+    "RR ≥22, altered mentation and systolic BP ≤100 mmHg",
+    "High lactate, hypoxaemia and hypoglycaemia"
    ],
    "answer": 2,
    "explain": "The qSOFA bedside screen assigns 1 point each for respiratory rate >= 22/min, altered mental status, and systolic BP <= 100 mmHg; a score >= 2 warrants urgent evaluation for sepsis-related organ dysfunction.",
@@ -364,9 +364,9 @@
    "q": "What is the first-line emergency pharmacological treatment to terminate generalized convulsive status epilepticus?",
    "options": [
     "Oral carbamazepine",
-    "Intravenous phenytoin loading before any other drug",
-    "Intramuscular haloperidol",
-    "Intravenous lorazepam or diazepam (or buccal midazolam / rectal diazepam if no IV access)"
+    "IV phenytoin before initial treatment",
+    "IM haloperidol",
+    "IV lorazepam or diazepam; use buccal/rectal alternatives if needed"
    ],
    "answer": 3,
    "explain": "Rapid-acting benzodiazepines (IV lorazepam 4 mg or IV diazepam 10 mg) enhance GABA-A inhibition to abort seizures immediately, followed by a second-line anticonvulsant such as levetiracetam, phenytoin, or sodium valproate.",
@@ -411,10 +411,10 @@
    "sub": "Diabetic Emergencies",
    "q": "During the initial resuscitation of an adult presenting with diabetic ketoacidosis (DKA), what is the single most urgent first intervention?",
    "options": [
-    "Intravenous sodium bicarbonate bolus",
-    "Rapid intravenous isotonic crystalloid (0.9% sodium chloride) fluid replacement",
-    "Subcutaneous long-acting basal insulin injection",
-    "Immediate intravenous potassium chloride 40 mmol bolus"
+    "IV sodium bicarbonate bolus",
+    "Rapid IV isotonic crystalloid replacement",
+    "Subcutaneous long-acting insulin",
+    "IV potassium chloride bolus"
    ],
    "answer": 1,
    "explain": "Patients in DKA typically have a 5-8 litre fluid deficit; restoring intravascular volume and renal perfusion with 0.9% saline first lowers blood glucose and counter-regulatory hormones before starting fixed-rate IV insulin.",
@@ -506,9 +506,9 @@
    "q": "What is the standard emergency treatment for severe symptomatic hypoglycaemia in an unconscious adult with established intravenous access?",
    "options": [
     "Subcutaneous glucagon 0.1 mg",
-    "Intravenous 10% or 20% dextrose (glucose) infusion (e.g., 150-200 mL of 10% dextrose)",
-    "Oral glucose gel placed under the tongue",
-    "Intramuscular regular insulin 10 units"
+    "IV 10% or 20% dextrose",
+    "Sublingual glucose gel",
+    "IM regular insulin 10 units"
    ],
    "answer": 1,
    "explain": "Unconscious hypoglycaemic patients cannot swallow safely due to aspiration risk and require immediate IV glucose (10% or 20% dextrose, avoiding hypertonic 50% extravasation tissue necrosis), or IM glucagon 1 mg if IV access is unavailable.",
@@ -528,10 +528,10 @@
    "sub": "Chest Trauma and Pleural Emergencies",
    "q": "A 29-year-old man stabbed in the left chest becomes severely hypotensive (BP 70/40 mmHg), tachycardic, and hypoxic with distended neck veins, absent left breath sounds, hyper-resonance on the left, and tracheal shift to the right. What is the immediate life-saving bedside intervention?",
    "options": [
-    "Urgent portable chest X-ray before any intervention",
-    "Endotracheal intubation with high positive end-expiratory pressure",
-    "Immediate needle decompression (thoracostomy) followed by intercostal chest drain insertion",
-    "Pericardiocentesis via the subxiphoid approach"
+    "Chest X-ray before intervention",
+    "Endotracheal intubation with high PEEP",
+    "Immediate needle decompression, followed by chest drain",
+    "Subxiphoid pericardiocentesis"
    ],
    "answer": 2,
    "explain": "Tension pneumothorax is a clinical diagnosis that must be decompressed immediately without waiting for a chest radiograph, relieving trapped intrapleural air that compresses the vena cava and contralateral lung.",

@@ -581,10 +581,10 @@
    "sub": "Complement System and Immunoregulation",
    "q": "How does the alternative complement pathway maintain low-level baseline 'tick-over' activation and amplify C3b deposition on microbial surfaces?",
    "options": [
-    "Requires IgG exclusively",
-    "Spontaneous low-rate hydrolysis of C3 (C3(H2O)) binds Factor B (cleaved by Factor D to Bb), forming fluid-phase C3 convertase that deposits C3b, which Factor P (properdin) stabilizes on microbes while host Factor H and Factor I downregulate it on self cells",
-    "Uses reverse transcriptase to synthesize C3",
-    "Requires T-cell receptor engagement"
+    "The classical pathway is activated by IgG or IgM bound to antigen",
+    "Spontaneous C3 activation forms C3bBb; properdin stabilizes it, while Factor H and Factor I limit activation on host cells",
+    "The lectin pathway is initiated by antibodies binding C1q",
+    "Factor D directly cleaves C5 to initiate the membrane attack complex"
    ],
    "answer": 1,
    "explain": "The alternative pathway provides an amplification loop via C3bBb (stabilized by properdin); host cells avoid lysis via sialic acid/polyanion binding of Factor H (cofactor for Factor I cleavage of C3b) and membrane CR1/DAF/MCP.",
@@ -653,10 +653,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "How does a 'sandwich' ELISA differ from an 'indirect' ELISA?",
    "options": [
-    "Sandwich ELISA uses two antibodies recognizing non-overlapping epitopes on a multivalent antigen (a capture antibody immobilized on the well and a labeled detection antibody), whereas indirect ELISA immobilizes antigen and detects bound patient antibody using a labeled anti-immunoglobulin secondary antibody",
-    "Indirect ELISA uses no antibodies",
-    "Sandwich ELISA cannot measure antigen concentration",
-    "Indirect ELISA detects only nucleic acids"
+    "Sandwich ELISA captures antigen between two antibodies; indirect ELISA detects patient antibodies bound to an immobilised antigen",
+    "Sandwich ELISA detects patient antibodies only; indirect ELISA measures antigen with two capture antibodies",
+    "Both methods detect nucleic acids using fluorescent DNA probes",
+    "Indirect ELISA requires no antigen or antibody binding step"
    ],
    "answer": 0,
    "explain": "Sandwich ELISA excels at quantifying specific antigens in complex fluids (like serum or urine), whereas indirect ELISA is widely used to screen for specific antibodies (such as viral serologies or autoantibodies).",
@@ -724,10 +724,10 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "How does flow cytometry analyze individual cells in suspension stained with fluorochrome-conjugated monoclonal antibodies?",
    "options": [
-    "Hydrodynamic focusing passes single cells past laser beams; forward scatter (FSC) estimates cell size, side scatter (SSC) reflects internal granularity/complexity, and fluorescence detectors measure fluorochrome-tagged surface or intracellular markers",
-    "Grinds cells into a homogeneous lysate",
-    "Separates proteins solely by isoelectric point",
-    "Fixes cells onto glass slides for 24 hours"
+    "Cells pass single-file through a laser beam; scatter estimates size and granularity, while fluorescence identifies labelled markers",
+    "Cells are separated by molecular weight as they migrate through a polyacrylamide gel",
+    "Antibodies are detected by measuring their electrical charge in a capillary tube",
+    "Cells are fixed to slides and counted by light microscopy only"
    ],
    "answer": 0,
    "explain": "Flow cytometry measures thousands of single cells per second using forward scatter (size), side scatter (granularity), and multi-color fluorescence (immunophenotyping CD markers in leukemias, lymphomas, and HIV CD4 counts).",
@@ -770,10 +770,10 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "In Kohler and Milstein's hybridoma technology for generating monoclonal antibodies, why are fused hybridoma cells grown in HAT (hypoxanthine-aminopterin-thymidine) selection medium?",
    "options": [
-    "Aminopterin blocks de novo nucleotide synthesis; unfused myeloma cells lack HGPRT so they die, unfused B cells die naturally in culture, and only fused hybridoma cells (inheriting HGPRT from B cells and immortality from myeloma) survive using the salvage pathway",
-    "HAT medium stimulates somatic hypermutation in vitro",
-    "HAT medium converts mouse antibodies into human IgE",
-    "HAT medium lyses red blood cells"
+    "Aminopterin blocks de novo synthesis; only fused cells survive by combining B-cell salvage enzymes with myeloma-cell immortality",
+    "HAT medium selects cells that produce the highest-affinity IgG without requiring fusion",
+    "Aminopterin kills B cells while allowing HGPRT-deficient myeloma cells to proliferate",
+    "HAT medium induces antibody class switching in unfused myeloma cells"
    ],
    "answer": 0,
    "explain": "HGPRT-deficient myeloma cells cannot use hypoxanthine/thymidine when aminopterin blocks de novo purine/pyrimidine synthesis, whereas primary B cells have a short lifespan in culture; hybridomas combine B-cell HGPRT with myeloma immortality.",
@@ -793,10 +793,10 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "How do chimeric, humanized, and fully human monoclonal antibodies differ in sequence composition and immunogenicity (HAMA response)?",
    "options": [
-    "Chimeric antibodies fuse mouse variable domains to human constant domains; humanized antibodies graft only mouse complementarity-determining regions (CDRs) onto a human IgG framework; fully human antibodies have entirely human sequences, progressively lowering anti-drug immunogenicity",
-    "Fully human antibodies contain mouse constant domains",
-    "Chimeric antibodies contain only light chains",
-    "Humanized antibodies are produced only in plants"
+    "Chimeric antibodies combine mouse variable and human constant regions; humanized antibodies retain mainly mouse CDRs; fully human antibodies have human sequences",
+    "Chimeric antibodies are entirely human; humanized antibodies are entirely mouse",
+    "Humanized antibodies contain mouse constant regions and human variable regions",
+    "All three formats have identical sequence composition and immunogenicity"
    ],
    "answer": 0,
    "explain": "Reducing non-human sequence from chimeric (-ximab) to humanized (-zumab) to fully human (-umab) decreases human anti-mouse antibody (HAMA) responses, prolongs half-life, and improves Fc effector compatibility.",
@@ -955,10 +955,10 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "How does the neonatal Fc receptor (FcRn) extend the serum half-life of IgG and albumin?",
    "options": [
-    "Binds internalized IgG (and albumin) inside acidic endosomes (pH ~6.0) of endothelial/monocytic cells, protecting them from lysosomal degradation and recycling them back to the cell surface where neutral blood pH (~7.4) releases them",
-    "Synthesizes new IgG in renal tubules",
-    "Cleaves IgG into Fab fragments in plasma",
-    "Prevents IgG from binding antigens"
+    "FcRn binds IgG and albumin in acidic endosomes, rescuing them from degradation and recycling them to the cell surface",
+    "FcRn synthesizes new IgG and albumin in endothelial cells",
+    "FcRn cleaves IgG into Fab and Fc fragments in plasma",
+    "FcRn prevents IgG from binding its antigen"
    ],
    "answer": 0,
    "explain": "pH-dependent binding to FcRn (high affinity at acidic endosomal pH ~6.0, release at physiological pH ~7.4) rescues IgG and albumin from catabolism, giving IgG1, IgG2, and IgG4 a ~3-week half-life (whereas IgG3 lacks high-affinity FcRn binding and has a ~7-day half-life).",
@@ -977,10 +977,10 @@
    "sub": "Antigen Processing and MHC Molecules",
    "q": "What is the structural difference between MHC Class I and MHC Class II peptide-binding grooves that determines the length of peptides each can bind?",
    "options": [
-    "MHC Class I has a closed groove at both ends (formed by alpha-1 and alpha-2 domains), constraining bound peptides to ~8-10 amino acids; MHC Class II has an open groove at both ends (formed by alpha-1 and beta-1 domains), accommodating longer peptides (~13-25+ amino acids)",
-    "MHC Class I binds only lipids; MHC Class II binds only carbohydrates",
-    "MHC Class II has a closed groove that binds 4-amino-acid peptides",
-    "Neither molecule has a peptide-binding groove"
+    "MHC I has a closed-ended groove for short peptides; MHC II has an open-ended groove that accommodates longer peptides",
+    "MHC I binds long peptides in an open groove; MHC II binds short peptides in a closed groove",
+    "Both classes have identical grooves and bind peptides of the same length",
+    "MHC I binds carbohydrates, whereas MHC II binds lipids"
    ],
    "answer": 0,
    "explain": "Because the MHC Class I cleft is closed at both ends, peptides typically bulge slightly and measure 8-10 residues, whereas the open-ended MHC Class II cleft allows longer peptides to extend out of both ends.",
