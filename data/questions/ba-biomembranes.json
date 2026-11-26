@@ -8,12 +8,12 @@
    "sub": "Membrane Architecture and Lipid Composition",
    "q": "According to the Singer and Nicolson fluid mosaic model, how are biological membranes structurally organized?",
    "options": [
-    "A fluid phospholipid bilayer with amphipathic proteins embedded in or associated with its surfaces",
     "A rigid trilaminar protein-lipid-protein sandwich with fixed pores",
+    "A fluid phospholipid bilayer with amphipathic proteins embedded in or on it",
     "A monolayer of triglycerides coated by cholesterol esters",
     "A covalently crosslinked carbohydrate meshwork"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "The fluid mosaic model describes membranes as a two-dimensional fluid lipid bilayer in which integral and peripheral membrane proteins diffuse laterally.",
    "verified": false,
    "open": {
@@ -32,7 +32,7 @@
    "q": "Which property of phospholipids drives their spontaneous self-assembly into bilayers in an aqueous environment?",
    "options": [
     "Covalent crosslinks between fatty acyl tails",
-    "Amphipathic nature, possessing both hydrophilic polar head groups and hydrophobic fatty acyl tails",
+    "Amphipathic nature, with polar heads and hydrophobic tails",
     "Net positive charge on all head groups",
     "High solubility of fatty acyl chains in water"
    ],
@@ -77,12 +77,12 @@
    "sub": "Membrane Architecture and Lipid Composition",
    "q": "How does cholesterol modulate the fluidity of eukaryotic plasma membranes across varying temperatures?",
    "options": [
-    "Increases fluidity at high temperatures and decreases fluidity at low temperatures",
+    "Restrains acyl chains at high temperature and prevents tight packing at low temperature",
     "Eliminates all lateral diffusion of membrane proteins",
     "Forms covalent ester bonds with sphingomyelin",
-    "Decreases fluidity at high temperatures by restraining acyl chain motion, and increases fluidity at low temperatures by preventing tight crystal packing"
+    "Increases fluidity at high temperature and decreases it at low temperature"
    ],
-   "answer": 3,
+   "answer": 0,
    "explain": "Cholesterol acts as a bidirectional fluidity buffer: its rigid steroid ring restricts fatty acyl chain movement at warm temperatures while disrupting ordered crystalline packing of saturated chains at cold temperatures.",
    "verified": false,
    "open": {
@@ -99,7 +99,7 @@
    "sub": "Membrane Architecture and Lipid Composition",
    "q": "How do cis double bonds in unsaturated fatty acyl chains affect membrane fluidity and transition temperature (Tm)?",
    "options": [
-    "Introduce kinks that prevent tight packing, increasing fluidity and lowering Tm",
+    "Introduce kinks that prevent packing, raising fluidity and lowering Tm",
     "Allow tighter van der Waals packing, decreasing fluidity and raising Tm",
     "Crosslink adjacent phospholipids covalently",
     "Eliminate the hydrophobic core of the bilayer"
@@ -146,12 +146,12 @@
    "sub": "Membrane Asymmetry and Lipid Rafts",
    "q": "Externalization of which inner-leaflet aminophospholipid to the outer plasma membrane surface serves as an 'eat-me' signal for macrophage phagocytosis during apoptosis and promotes coagulation on activated platelets?",
    "options": [
-    "Phosphatidylcholine",
-    "Sphingomyelin",
     "Phosphatidylserine",
+    "Sphingomyelin",
+    "Phosphatidylcholine",
     "Phosphatidylglycerol"
    ],
-   "answer": 2,
+   "answer": 0,
    "explain": "Phosphatidylserine carries a net negative charge and is normally restricted to the inner leaflet by flippases; scramblase-mediated exposure on the outer leaflet triggers apoptotic clearance and provides a docking surface for clotting factor complexes.",
    "verified": false,
    "open": {
@@ -193,10 +193,10 @@
    "sub": "Membrane Asymmetry and Lipid Rafts",
    "q": "What are lipid rafts in eukaryotic plasma membranes?",
    "options": [
-    "Ordered microdomains enriched in cholesterol, sphingolipids, and GPI-anchored signaling proteins",
+    "Ordered microdomains rich in cholesterol, sphingolipids, and GPI-anchored proteins",
     "Water-filled pores formed by aquaporins",
     "Cytosolic triglyceride droplets",
-    "Areas devoid of cholesterol composed purely of short-chain fatty acids"
+    "Cholesterol-free areas made only of short-chain fatty acids"
    ],
    "answer": 0,
    "explain": "Lipid rafts are detergent-resistant, liquid-ordered membrane microdomains densely packed with cholesterol and saturated sphingolipids that organize signal transduction complexes and caveolae.",
@@ -242,7 +242,7 @@
    "options": [
     "Mild isotonic saline washes",
     "High-salt buffers or EDTA chelating agents",
-    "Detergents or organic solvents that disrupt the hydrophobic lipid bilayer",
+    "Detergents or organic solvents that disrupt the bilayer",
     "Changes in extracellular pH alone"
    ],
    "answer": 2,
@@ -267,7 +267,7 @@
     "Collagen triple helix",
     "Parallel beta-sheet",
     "Random coil",
-    "Hydrophobic alpha-helix (~20-25 amino acids)"
+    "Hydrophobic alpha-helix of ~20-25 amino acids"
    ],
    "answer": 3,
    "explain": "An alpha-helix of ~20-25 hydrophobic amino acids (~3.6 residues per turn, 0.15 nm rise per residue) spans the ~3.0-3.5 nm hydrocarbon core while satisfying all backbone hydrogen bonds internally.",
@@ -383,7 +383,7 @@
    "sub": "Passive Transport and Ion Channels",
    "q": "How does facilitated diffusion differ kinetically from simple diffusion across a lipid bilayer?",
    "options": [
-    "Facilitated diffusion exhibits saturation kinetics (Vmax and Km) and stereospecificity, whereas simple diffusion increases linearly with concentration gradient",
+    "Facilitated diffusion shows saturation kinetics (Vmax, Km) and stereospecificity, unlike simple diffusion",
     "Facilitated diffusion requires direct ATP hydrolysis",
     "Simple diffusion requires transmembrane carrier proteins",
     "Facilitated diffusion moves solutes against their electrochemical gradient"
@@ -433,7 +433,7 @@
    "options": [
     "Na+ carries a divalent charge",
     "The channel pore is physically narrower than a dehydrated Na+ ion",
-    "Backbone carbonyl oxygens in the selectivity filter precisely mimic the hydration shell of dehydrated K+, whereas smaller Na+ cannot interact closely enough to offset its dehydration energy",
+    "Carbonyl oxygens in the filter mimic K+'s hydration shell, which Na+ is too small to match",
     "K+ ions bind covalently to ATP inside the pore"
    ],
    "answer": 2,
@@ -456,11 +456,11 @@
    "q": "Which family of tetrameric transmembrane water channels permits rapid osmotic water movement across cell membranes while excluding protons (H3O+)?",
    "options": [
     "Porins",
-    "Connexins",
+    "Aquaporins",
     "Claudins",
-    "Aquaporins"
+    "Connexins"
    ],
-   "answer": 3,
+   "answer": 1,
    "explain": "Aquaporins contain conserved NPA (Asn-Pro-Ala) motifs and an electrostatic arginine/histidine filter that orient water molecules to prevent proton hopping along a water wire.",
    "verified": false,
    "open": {
@@ -479,7 +479,7 @@
    "sub": "Passive Transport and Ion Channels",
    "q": "How does valinomycin act as a mobile carrier ionophore to dissipate mitochondrial membrane potentials?",
    "options": [
-    "Forms a hydrophobic cyclic peptide complex around a dehydrated K+ ion and shuttles it across the lipid bilayer down its electrochemical gradient",
+    "Encapsulates K+ in a hydrophobic cyclic peptide and shuttles it down its gradient",
     "Punches permanent 10-nm holes in the plasma membrane",
     "Inhibits Na+/K+-ATPase directly",
     "Transports protons exclusively via a beta-barrel pore"
@@ -600,7 +600,7 @@
    "q": "How does secondary active transport (such as intestinal and renal SGLT1 glucose uptake) drive uphill solute accumulation against its concentration gradient?",
    "options": [
     "Directly hydrolyzes ATP at the SGLT1 binding site",
-    "Couples uphill glucose transport to the downhill electrochemical Na+ gradient established by basolateral Na+/K+-ATPase",
+    "Couples uphill glucose uptake to the downhill Na+ gradient",
     "Uses light energy to isomerize retinal",
     "Exchanges glucose for intracellular potassium"
    ],
@@ -623,7 +623,7 @@
    "q": "What is the physiological rationale for including both glucose and sodium in oral rehydration therapy (ORT) for acute secretory diarrhea such as cholera?",
    "options": [
     "Glucose directly kills Vibrio cholerae bacteria",
-    "Sodium-coupled glucose cotransport via SGLT1 remains intact during cholera toxin-induced cAMP elevation, driving osmotic water absorption",
+    "SGLT1-mediated Na+-glucose cotransport still works in cholera, driving water absorption",
     "Glucose inhibits intestinal aquaporins",
     "Sodium activates pepsinogen in the colon"
    ],
@@ -670,7 +670,7 @@
    "q": "How does P-glycoprotein (MDR1 / ABCB1) confer multidrug resistance to cancer cells?",
    "options": [
     "Degrades chemotherapy drugs inside lysosomes",
-    "Acts as an ATP-dependent ABC efflux pump that actively exports hydrophobic cytotoxic drugs out of the cell",
+    "Acts as an ATP-dependent efflux pump that exports hydrophobic cytotoxic drugs",
     "Blocks nuclear pore complexes",
     "Converts prodrugs into inactive metabolites via methylation"
    ],
@@ -763,7 +763,7 @@
    "options": [
     "Hydrolyze ATP to dissolve target membranes",
     "Form pore-forming beta-barrels across two bilayers",
-    "Vesicular v-SNAREs (e.g., synaptobrevin) intertwine with target t-SNAREs (e.g., syntaxin and SNAP-25) into a four-helix bundle that pulls bilayers together to expel water and fuse",
+    "v-SNAREs and t-SNAREs twist into a four-helix bundle that pulls bilayers together",
     "Cleave phospholipids with phospholipase activity"
    ],
    "answer": 2,
@@ -787,10 +787,10 @@
    "options": [
     "Gap junctions",
     "Desmosomes",
-    "Hemidesmosomes",
-    "Tight junctions (zonulae occludentes)"
+    "Tight junctions (zonulae occludentes)",
+    "Hemidesmosomes"
    ],
-   "answer": 3,
+   "answer": 2,
    "explain": "Tight junctions composed of claudins and occludins seal the paracellular space and act as a 'fence' preventing apical and basolateral membrane proteins/lipids from mixing.",
    "verified": false,
    "open": {
@@ -857,7 +857,7 @@
    "options": [
     "It functions primarily as a passive storage barrier",
     "It is synthesized in the Golgi apparatus",
-    "It houses densely packed electron transport chain complexes, ATP synthase, and metabolite translocases while requiring impermeability to protons",
+    "It is packed with respiratory chain complexes and translocases while blocking proton leak",
     "It must undergo constant phagocytosis"
    ],
    "answer": 2,
@@ -881,7 +881,7 @@
     "Myelin catalyzes glycolysis",
     "Myelin actively pumps sodium ions across axons",
     "Myelin transports oxygen to neurons",
-    "High lipid content (cholesterol, galactocerebroside, sphingomyelin) provides high electrical resistance and low capacitance for rapid saltatory conduction"
+    "High lipid content insulates axons, raising resistance and lowering capacitance"
    ],
    "answer": 3,
    "explain": "Myelin acts as an electrical insulator around axons; its ~80% lipid composition minimizes transmembrane ion leakage and accelerates action potential propagation between nodes of Ranvier.",
@@ -926,7 +926,7 @@
    "q": "What is the biochemical basis of the resting membrane potential (~-70 mV) across a typical mammalian plasma membrane?",
    "options": [
     "Equal permeability of the resting membrane to Na+ and K+",
-    "High resting K+ leak channel permeability allowing K+ efflux down the concentration gradient created by Na+/K+-ATPase until balanced by the inside-negative electrical potential",
+    "High K+ leak conductance pulls the membrane toward E_K",
     "Inward diffusion of negatively charged plasma albumin",
     "Active inward pumping of chloride ions by ATP synthase"
    ],
@@ -951,7 +951,7 @@
    "options": [
     "Blocks histamine H2 G-protein-coupled receptors",
     "Inhibits carbonic anhydrase inside parietal cells",
-    "Irreversibly forms a covalent disulfide bond with the P-type H+/K+-ATPase proton pump",
+    "Covalently inactivates the P-type H+/K+-ATPase proton pump",
     "Neutralizes secreted HCl directly in the stomach lumen"
    ],
    "answer": 2,
@@ -1021,7 +1021,7 @@
    "q": "How do hemidesmosomes differ structurally and functionally from desmosomes?",
    "options": [
     "Hemidesmosomes use cadherins to link adjacent cells, whereas desmosomes use integrins",
-    "Hemidesmosomes use integrins (such as alpha-6 beta-4) to anchor basal epithelial keratin filaments to the extracellular basement membrane (laminin), whereas desmosomes link adjacent cells via cadherins",
+    "Hemidesmosomes use integrins to anchor keratin to the basement membrane; desmosomes join cells via cadherins",
     "Hemidesmosomes connect actin microfilaments, whereas desmosomes connect microtubules",
     "Hemidesmosomes allow ion passage between cells, whereas desmosomes block diffusion"
    ],
