@@ -58,10 +58,10 @@
     var description = String(item.description || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
     var text = title + " " + description;
     var topic = String(term || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    var words = topic.split(/\\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system|types|type)$/.test(w); });
+    var words = topic.split(/\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system|types|type)$/.test(w); });
     /* Publication scans and covers are not useful visual-learning references. */
-    if (/\\b(book|cover|textbook|atlas|syllabus|lecture|catalog|catalogue|journal|magazine|publisher|publication|title page|front matter|table of contents|pdf scan)\\b/.test(text)) return -100;
-    if (/\\b(logo|icon|flag|coat of arms)\\b/.test(title)) return -100;
+    if (/\b(book|cover|textbook|atlas|syllabus|lecture|catalog|catalogue|journal|magazine|publisher|publication|title page|front matter|table of contents|pdf scan)\b/.test(text)) return -100;
+    if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) return -100;
     var score = topic && text.indexOf(topic) > -1 ? 12 : 0;
     var matched = 0;
     words.forEach(function (w) { if (text.indexOf(w) > -1) { score += 4; matched++; } });
