@@ -3861,6 +3861,187 @@
         "https://www.who.int/teams/global-malaria-programme/case-management/treatment",
         "https://www.ncbi.nlm.nih.gov/books/NBK588130/"
       ]
+    },
+    {
+      "id": "tf-pag-neoplasia-001",
+      "type": "tf",
+      "topic": "pag-neoplasia",
+      "level": 2,
+      "sub": "Neoplasia: benign and malignant tumours",
+      "q": "About the biological behaviour and spread of neoplasms:",
+      "items": [
+        {
+          "text": "Anaplasia refers to a lack of differentiation in neoplastic cells.",
+          "answer": true,
+          "explain": "Anaplasia is loss of structural and functional differentiation and is a feature of many malignant neoplasms."
+        },
+        {
+          "text": "Metastasis is the defining feature that distinguishes malignant from benign tumours.",
+          "answer": true,
+          "explain": "Metastasis is unequivocal evidence of malignancy, although not every malignant tumour has metastasised at the time of diagnosis."
+        },
+        {
+          "text": "Carcinomas usually spread through lymphatic vessels, whereas sarcomas commonly spread haematogenously.",
+          "answer": true,
+          "explain": "This is the usual pattern, although important exceptions occur and either route may be used by malignant tumours."
+        },
+        {
+          "text": "A well-differentiated tumour is necessarily benign.",
+          "answer": false,
+          "explain": "Some malignant tumours are well differentiated; differentiation alone does not establish benign behaviour."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9957/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK459243/"
+      ]
+    },
+    {
+      "id": "tf-pas-endocrine-system-001",
+      "type": "tf",
+      "topic": "pas-endocrine-system",
+      "level": 2,
+      "sub": "Thyroid follicular neoplasms",
+      "q": "About thyroid follicular adenomas and carcinomas:",
+      "items": [
+        {
+          "text": "Follicular thyroid carcinoma is diagnosed by demonstrating capsular and/or vascular invasion.",
+          "answer": true,
+          "explain": "Invasion through the tumour capsule and/or into blood vessels distinguishes follicular carcinoma from follicular adenoma."
+        },
+        {
+          "text": "Fine-needle aspiration cytology alone can reliably distinguish follicular adenoma from follicular carcinoma.",
+          "answer": false,
+          "explain": "Cytology cannot assess capsular or vascular invasion; definitive distinction generally requires histological examination of the excised lesion."
+        },
+        {
+          "text": "Papillary thyroid carcinoma commonly shows optically clear nuclei with grooves and intranuclear inclusions.",
+          "answer": true,
+          "explain": "These nuclear features are characteristic of papillary thyroid carcinoma."
+        },
+        {
+          "text": "Papillary thyroid carcinoma typically spreads predominantly by haematogenous dissemination to bone and lung.",
+          "answer": false,
+          "explain": "Papillary thyroid carcinoma commonly spreads through lymphatics to regional cervical lymph nodes; follicular carcinoma more often spreads haematogenously."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK459243/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK536943/"
+      ]
+    },
+    {
+      "id": "tf-pah-haemostasis-and-bleeding-disorders-001",
+      "type": "tf",
+      "topic": "pah-haemostasis-and-bleeding-disorders",
+      "level": 2,
+      "sub": "Haemophilia A and B",
+      "q": "About the inherited coagulation disorders haemophilia A and B:",
+      "items": [
+        {
+          "text": "Haemophilia A results from deficiency or dysfunction of coagulation factor VIII.",
+          "answer": true,
+          "explain": "Haemophilia A is caused by pathogenic variants affecting the F8 gene and reduced or dysfunctional factor VIII."
+        },
+        {
+          "text": "Haemophilia B is caused by deficiency of coagulation factor IX.",
+          "answer": true,
+          "explain": "Haemophilia B, also called Christmas disease, results from factor IX deficiency or dysfunction."
+        },
+        {
+          "text": "Both haemophilia A and haemophilia B usually produce an isolated prolongation of prothrombin time.",
+          "answer": false,
+          "explain": "They affect the intrinsic pathway and typically prolong the activated partial thromboplastin time; prothrombin time is usually normal."
+        },
+        {
+          "text": "Haemophilia A and B are commonly inherited in an X-linked recessive pattern.",
+          "answer": true,
+          "explain": "Both are classically X-linked recessive disorders, so affected males and carrier females are typical inheritance patterns."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK1404/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK1495/"
+      ]
+    },
+    {
+      "id": "tf-ps-drugs-acting-on-blood-forming-organs-and-coagulation-001",
+      "type": "tf",
+      "topic": "ps-drugs-acting-on-blood-forming-organs-and-coagulation",
+      "level": 2,
+      "sub": "Heparin and warfarin",
+      "q": "About the anticoagulant drugs heparin and warfarin:",
+      "items": [
+        {
+          "text": "Unfractionated heparin enhances the activity of antithrombin, particularly against thrombin and factor Xa.",
+          "answer": true,
+          "explain": "Heparin binds antithrombin and accelerates inhibition of activated coagulation factors, especially thrombin and factor Xa."
+        },
+        {
+          "text": "Warfarin inhibits vitamin K epoxide reductase and reduces the regeneration of active vitamin K.",
+          "answer": true,
+          "explain": "Warfarin inhibits VKORC1, impairing gamma-carboxylation and functional production of factors II, VII, IX and X and proteins C and S."
+        },
+        {
+          "text": "The anticoagulant effect of warfarin is routinely monitored using the activated partial thromboplastin time.",
+          "answer": false,
+          "explain": "Warfarin is monitored using the prothrombin time expressed as the international normalised ratio (INR)."
+        },
+        {
+          "text": "Protamine sulphate can be used to reverse the anticoagulant effect of unfractionated heparin.",
+          "answer": true,
+          "explain": "Protamine forms a stable complex with heparin and neutralises much of its anticoagulant activity."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538247/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK470313/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK557737/"
+      ]
+    },
+    {
+      "id": "tf-ps-endocrine-pharmacology-001",
+      "type": "tf",
+      "topic": "ps-endocrine-pharmacology",
+      "level": 2,
+      "sub": "Insulin preparations and adverse effects",
+      "q": "About therapeutic insulin:",
+      "items": [
+        {
+          "text": "Insulin promotes glucose uptake in skeletal muscle and adipose tissue by increasing GLUT4 translocation to the cell membrane.",
+          "answer": true,
+          "explain": "Insulin receptor signalling promotes GLUT4 vesicle translocation in insulin-sensitive skeletal muscle and adipose tissue."
+        },
+        {
+          "text": "Insulin stimulates hepatic glycogen synthesis and suppresses hepatic gluconeogenesis.",
+          "answer": true,
+          "explain": "Insulin promotes glycogen storage and suppresses hepatic glucose production through effects on metabolic enzymes and gene expression."
+        },
+        {
+          "text": "Hypoglycaemia is an important dose-related adverse effect of insulin therapy.",
+          "answer": true,
+          "explain": "Excess insulin relative to food intake, activity or physiological requirements can cause clinically significant hypoglycaemia."
+        },
+        {
+          "text": "All insulin preparations are suitable for intravenous administration in the treatment of diabetic ketoacidosis.",
+          "answer": false,
+          "explain": "Regular (soluble) insulin is used intravenously for DKA; long-acting preparations are not interchangeable for IV use."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK560688/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK279141/"
+      ]
     }
   ]
 }
