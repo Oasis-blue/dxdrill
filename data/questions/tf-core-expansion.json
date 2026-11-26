@@ -3182,6 +3182,220 @@
       ],
       "verified": true,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pa-general-005",
+      "type": "tf",
+      "topic": "pag-disturbances-of-haemodynamics",
+      "level": 2,
+      "sub": "Oedema and thrombosis",
+      "q": "About disturbances of haemodynamics:",
+      "items": [
+        {
+          "text": "Oedema is the abnormal accumulation of fluid in the interstitial tissues or body cavities.",
+          "answer": true,
+          "explain": "Oedema describes excess fluid in the interstitial compartment; fluid accumulation in a body cavity may be termed an effusion."
+        },
+        {
+          "text": "Increased hydrostatic pressure in the venous circulation can contribute to oedema.",
+          "answer": true,
+          "explain": "Raised venous pressure increases capillary hydrostatic pressure and favours filtration of fluid into the interstitium."
+        },
+        {
+          "text": "Reduced plasma albumin concentration tends to oppose the development of oedema.",
+          "answer": false,
+          "explain": "Albumin is a major contributor to plasma colloid osmotic pressure; hypoalbuminaemia lowers this force and favours movement of fluid out of capillaries."
+        },
+        {
+          "text": "Virchow's triad includes endothelial injury, abnormal blood flow and hypercoagulability.",
+          "answer": true,
+          "explain": "These three broad factors promote thrombosis: endothelial injury, stasis or turbulence, and increased tendency of blood to clot."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537065/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538336/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pa-chemical-001",
+      "type": "tf",
+      "topic": "pac-glucose-homeostasis-and-diabetes-mellitus",
+      "level": 2,
+      "sub": "Laboratory diagnosis of diabetes mellitus",
+      "q": "About laboratory assessment of diabetes mellitus:",
+      "items": [
+        {
+          "text": "A laboratory HbA1c result of 6.5% or higher is one accepted diagnostic criterion for diabetes in nonpregnant adults.",
+          "answer": true,
+          "explain": "An HbA1c at or above 6.5% (48 mmol/mol), measured with an appropriately standardised laboratory method, meets a recognised diagnostic threshold."
+        },
+        {
+          "text": "A fasting plasma glucose of 7.0 mmol/L or higher is a diagnostic threshold for diabetes in nonpregnant adults.",
+          "answer": true,
+          "explain": "The fasting threshold is 126 mg/dL (7.0 mmol/L) after at least eight hours without caloric intake."
+        },
+        {
+          "text": "A random plasma glucose of 11.1 mmol/L or higher establishes diabetes in every asymptomatic person without further confirmation.",
+          "answer": false,
+          "explain": "Random plasma glucose at or above 11.1 mmol/L is diagnostic when accompanied by classic hyperglycaemic symptoms or a hyperglycaemic crisis; in an asymptomatic person, confirmation is generally required."
+        },
+        {
+          "text": "A 2-hour plasma glucose of 11.1 mmol/L or higher during a 75-g oral glucose tolerance test is a diagnostic criterion.",
+          "answer": true,
+          "explain": "The 2-hour value of at least 200 mg/dL (11.1 mmol/L) after a 75-g oral glucose load is an accepted diagnostic threshold."
+        }
+      ],
+      "references": [
+        "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Classification-and-Diagnosis-of-Diabetes"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pa-haematology-001",
+      "type": "tf",
+      "topic": "pah-anaemias",
+      "level": 2,
+      "sub": "Iron deficiency anaemia",
+      "q": "About iron deficiency anaemia:",
+      "items": [
+        {
+          "text": "Iron deficiency commonly produces a microcytic, hypochromic anaemia when sufficiently established.",
+          "answer": true,
+          "explain": "Reduced haemoglobin synthesis leads to smaller red cells with increased central pallor, although early iron deficiency may not yet be microcytic."
+        },
+        {
+          "text": "Serum ferritin is generally reduced in uncomplicated absolute iron deficiency.",
+          "answer": true,
+          "explain": "Ferritin reflects iron stores and is usually low when body iron stores are depleted; inflammation can complicate interpretation because ferritin is an acute-phase reactant."
+        },
+        {
+          "text": "Total iron-binding capacity is typically reduced in uncomplicated iron deficiency.",
+          "answer": false,
+          "explain": "Transferrin and total iron-binding capacity are commonly increased in iron deficiency, while serum iron and transferrin saturation fall."
+        },
+        {
+          "text": "A normal haemoglobin concentration always excludes iron deficiency.",
+          "answer": false,
+          "explain": "Iron stores can become depleted before haemoglobin falls, so iron deficiency may precede overt anaemia."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK560876/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-general-005",
+      "type": "tf",
+      "topic": "pm-scope-sources-and-routes-of-administration",
+      "level": 2,
+      "sub": "Routes of drug administration",
+      "q": "About routes of drug administration:",
+      "items": [
+        {
+          "text": "Intravenous administration provides complete systemic bioavailability for the administered dose.",
+          "answer": true,
+          "explain": "An intravenous dose enters systemic circulation directly, so its systemic bioavailability is conventionally 100%."
+        },
+        {
+          "text": "Sublingual administration can avoid hepatic first-pass metabolism.",
+          "answer": true,
+          "explain": "Drug absorbed through the oral mucosa drains into systemic venous circulation rather than first entering the hepatic portal circulation."
+        },
+        {
+          "text": "Intramuscular administration bypasses the need for absorption before a drug reaches systemic circulation.",
+          "answer": false,
+          "explain": "An intramuscular drug must be absorbed from muscle tissue into the circulation; the rate depends on formulation and local perfusion."
+        },
+        {
+          "text": "The oral route is suitable for every patient, including those who are unconscious or unable to swallow safely.",
+          "answer": false,
+          "explain": "Oral administration may be unsafe or impractical in an unconscious patient or one with impaired swallowing and aspiration risk."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK568677/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK557744/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-neurohumoral-001",
+      "type": "tf",
+      "topic": "pn2-cholinergic-agonists-and-antagonists",
+      "level": 2,
+      "sub": "Cholinergic agonists and antagonists",
+      "q": "About cholinergic pharmacology:",
+      "items": [
+        {
+          "text": "Muscarinic receptor activation can produce bradycardia and increased gastrointestinal motility.",
+          "answer": true,
+          "explain": "Muscarinic receptor effects include slowing of the heart and stimulation of gastrointestinal smooth muscle and secretions."
+        },
+        {
+          "text": "Atropine is a muscarinic receptor antagonist.",
+          "answer": true,
+          "explain": "Atropine competitively blocks muscarinic acetylcholine receptors and reduces parasympathetic effects at target organs."
+        },
+        {
+          "text": "Neostigmine increases acetylcholine availability by inhibiting acetylcholinesterase.",
+          "answer": true,
+          "explain": "Neostigmine is a reversible acetylcholinesterase inhibitor, so acetylcholine persists longer at cholinergic synapses."
+        },
+        {
+          "text": "A muscarinic antagonist such as atropine typically causes miosis and increased salivation.",
+          "answer": false,
+          "explain": "Muscarinic blockade commonly causes mydriasis and reduced secretions, including dry mouth."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538163/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK526134/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-neurohumoral-002",
+      "type": "tf",
+      "topic": "pn2-adrenergic-stimulants-and-blockers",
+      "level": 2,
+      "sub": "Adrenergic agonists and antagonists",
+      "q": "About adrenergic receptor pharmacology:",
+      "items": [
+        {
+          "text": "Stimulation of beta-1 adrenergic receptors in the heart increases heart rate and contractility.",
+          "answer": true,
+          "explain": "Cardiac beta-1 receptor activation increases chronotropy and inotropy, raising cardiac work and output."
+        },
+        {
+          "text": "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle promotes bronchodilation.",
+          "answer": true,
+          "explain": "Beta-2 receptor activation relaxes bronchial smooth muscle and is the basis for the bronchodilator action of drugs such as salbutamol."
+        },
+        {
+          "text": "Phenylephrine produces its principal decongestant effect through alpha-1 receptor-mediated vasoconstriction.",
+          "answer": true,
+          "explain": "Alpha-1 receptor activation constricts vascular smooth muscle in nasal mucosa, reducing mucosal congestion."
+        },
+        {
+          "text": "A non-selective beta blocker such as propranolol selectively blocks beta-1 receptors while sparing beta-2 receptors.",
+          "answer": false,
+          "explain": "Propranolol blocks both beta-1 and beta-2 receptors; beta-2 blockade can provoke bronchoconstriction in susceptible patients."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK534230/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK595003/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
     }
   ]
 }
