@@ -1,6 +1,6 @@
 /* DxDrill service worker: lets the site open and run with no connection.
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
-var VERSION = "dxdrill-v13.9";
+var VERSION = "dxdrill-v14.0";
 var IMG = "dxdrill-img";   /* pictures live in their own cache that is kept when VERSION changes, so a bad connection after an update does not lose them */
 var SHELL = [
   "./", "index.html", "help.html", "manifest.webmanifest", "css/style.css",
@@ -8,7 +8,7 @@ var SHELL = [
   "data/curriculum.json", "data/manifest.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"
 ];
-var CDN = /^https:\/\/(cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//;
+var CDN = /^https:\/\/(cdn\\.jsdelivr\\.net|fonts\\.googleapis\\.com|fonts\\.gstatic\\.com)\\//;
 var NETWORK_WAIT = 1500; /* on a slow connection, use the saved copy after 4 seconds */
 
 self.addEventListener("install", function (e) {
