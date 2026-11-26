@@ -20,7 +20,7 @@
     }).finally(function () { clearTimeout(timer); });
   }
   function cleanText(value) {
-    return String(value || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\\s+/g, " ").trim();
+    return String(value || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
   }
   function profileFor(term) {
     var t = String(term || "").toLowerCase();
@@ -44,7 +44,7 @@
   function summary(term) {
     var key = "summary." + term.toLowerCase(), hit = cached(key);
     if (hit) return Promise.resolve(hit);
-    var slug = encodeURIComponent(term.trim().replace(/\\s+/g, "_"));
+    var slug = encodeURIComponent(term.trim().replace(/\s+/g, "_"));
     return request("https://en.wikipedia.org/api/rest_v1/page/summary/" + slug).then(function (d) {
       var out = { title: d.title || term, extract: d.extract || "", thumbnail: d.thumbnail && d.thumbnail.source || "", page: d.content_urls && d.content_urls.desktop && d.content_urls.desktop.page || "" };
       save(key, out); return out;
@@ -53,11 +53,11 @@
   function imageScore(item, term, profile) {
     var title = String(item.title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
     var topic = String(term || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    var words = topic.split(/\\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system)$/.test(w); });
+    var words = topic.split(/\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system)$/.test(w); });
     var score = topic && title.indexOf(topic) > -1 ? 12 : 0;
     words.forEach(function (w) { if (title.indexOf(w) > -1) score += 3; });
     profile.boost.forEach(function (w) { if (title.indexOf(w) > -1) score += 2; });
-    if (/\\b(logo|icon|flag|coat of arms)\\b/.test(title)) score -= 8;
+    if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) score -= 8;
     return score;
   }
   function images(term) {
@@ -115,8 +115,7 @@
       }
       if (!html) html = '<p class="muted">No external media was found. Your question and explanation are still available above.</p>';
       target.innerHTML = '<section class="dx-media-panel"><div class="dx-media-head"><b>Visual learning · ' + esc(term) + '</b><button type="button" class="btn ghost small" data-media-close>Close</button></div>' +
-        '<p class="dx-media-note">Search focus: ' + esc(profile.kind) + '. Supplementary references only. Check medical facts against your trusted course texts. Image licences and attribution are shown where available.</p>' + html +
-        '<p class="dx-media-note">Supplementary references only. Check medical facts against your trusted course texts. Image licences and attribution are shown where available.</p></section>';
+        '<p class="dx-media-note">Search focus: ' + esc(profile.kind) + '. Images are supplementary; verify medical facts against trusted course texts. Source and licence details are shown where available.</p>' + html + '</section>';
       var close = target.querySelector("[data-media-close]");
       if (close) close.addEventListener("click", function () { target.innerHTML = ""; });
     });
