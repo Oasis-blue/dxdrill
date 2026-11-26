@@ -243,7 +243,7 @@
   window.addEventListener("hashchange", route);
   var loaded = false, nTimer = null;
   function nuggetHtml() { return DX.nugget ? '<p class="nugget"><b>Did you know?</b> <span id="nugtext">' + esc(DX.nugget()) + '</span></p>' : ""; }
-  app.innerHTML = '<div class="wrap stack"><p class="muted">Loading questions…</p>' + nuggetHtml() + '</div>';
+  app.innerHTML = '<div class="wrap stack"><p class="muted" role="status"><i class="spin"></i>Loading questions…</p>' + nuggetHtml() + '</div>';
   nTimer = setInterval(function () { var t = document.getElementById("nugtext"); if (loaded || !t) { clearInterval(nTimer); return; } t.textContent = DX.nugget(); }, 7000);
   function retryBox(title, text) {
     app.innerHTML = '<div class="wrap stack"><h1>' + esc(title) + '</h1><p class="lede">' + esc(text) + '</p><div class="row"><button class="btn primary" id="ld-retry" type="button">Try again</button><a class="btn" href="help.html" style="text-decoration:none">Check my connection</a></div>' + nuggetHtml() + '</div>';
