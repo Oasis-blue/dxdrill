@@ -1550,13 +1550,13 @@
    "sub": "Cross-Bridge Cycle and Muscle Mechanics",
    "q": "What is the difference between an isometric contraction, a concentric isotonic contraction, and an eccentric isotonic contraction?",
    "options": [
-    "Isometric: muscle develops tension without changing length; Concentric: muscle shortens while overcoming a load; Eccentric: muscle lengthens while actively developing tension against a heavier load",
+    "Isometric: constant length; concentric: shortening; eccentric: active lengthening",
     "Isometric: muscle shortens at zero load; Concentric: muscle never develops tension; Eccentric: occurs only in cardiac muscle",
     "Isometric: ATP is not used; Concentric: Ca2+ is not required; Eccentric: actin is absent",
     "All three contractions involve identical changes in sarcomere length"
    ],
    "answer": 0,
-   "explain": "Holding a heavy weight steady is isometric; lifting it upward is concentric; slowly lowering it against gravity is eccentric (which generates the highest absolute force per fiber and causes the most delayed-onset muscle soreness).",
+   "explain": "Holding a heavy weight steady is isometric; lifting it upward is concentric; slowly lowering it against gravity is eccentric (which generates the highest absolute force per fiber and causes the most delayed-onset muscle soreness). Key detail: Isometric: muscle develops tension without changing length; Concentric: muscle shortens while overcoming a load; Eccentric: muscle lengthens while actively developing tension against a heavier load.",
    "verified": false,
    "open": {
     "q": "Contrast isometric, concentric, and eccentric muscle contractions in terms of muscle tension and overall muscle length.",
@@ -1574,12 +1574,12 @@
    "q": "Even during a purely 'isometric' contraction where overall muscle-tendon length does not change, why do the contractile elements (sarcomeres) still shorten slightly?",
    "options": [
     "Because bones bend inward during every contraction",
-    "Because shortening of the contractile component stretches the series elastic component (tendons, titin, cross-bridges) to transmit tension to the bony attachments",
+    "Contractile elements shorten while series elastic elements stretch, keeping total length constant",
     "Because the Z-discs dissolve temporarily",
     "Because extracellular fluid enters the sarcomere"
    ],
    "answer": 1,
-   "explain": "According to Hill's three-element muscle model (contractile component + series elastic component + parallel elastic component), internal sarcomere shortening stretches the series elastic elements before external force is registered.",
+   "explain": "According to Hill's three-element muscle model (contractile component + series elastic component + parallel elastic component), internal sarcomere shortening stretches the series elastic elements before external force is registered. Key detail: Because shortening of the contractile component stretches the series elastic component (tendons, titin, cross-bridges) to transmit tension to the bony attachments.",
    "verified": false,
    "open": {
     "q": "Using Hill's mechanical model of muscle, explain how internal sarcomere shortening occurs during an external isometric contraction.",
@@ -1622,10 +1622,10 @@
     "Complete depletion of intracellular ATP to zero",
     "Destruction of all motor end-plates in the muscle",
     "Permanent loss of myosin heavy chains",
-    "Accumulation of inorganic phosphate (Pi), H+ ions, and extracellular K+ (impairing T-tubule excitability, SR Ca2+ release, and cross-bridge sensitivity to Ca2+) combined with muscle glycogen depletion"
+    "Pi, H+, extracellular K+ and glycogen depletion impair excitation–contraction coupling"
    ],
    "answer": 3,
-   "explain": "Cellular ATP rarely falls below 60-70% of resting levels even at exhaustion (preventing rigor); instead, elevated Pi, H+, reactive oxygen species, interstitial K+ accumulation, and glycogen depletion impair excitation-contraction coupling.",
+   "explain": "Cellular ATP rarely falls below 60-70% of resting levels even at exhaustion (preventing rigor); instead, elevated Pi, H+, reactive oxygen species, interstitial K+ accumulation, and glycogen depletion impair excitation-contraction coupling. Key detail: Accumulation of inorganic phosphate (Pi), H+ ions, and extracellular K+ (impairing T-tubule excitability, SR Ca2+ release, and cross-bridge sensitivity to Ca2+) combined with muscle glycogen depletion.",
    "verified": false,
    "open": {
     "q": "Name three intracellular or interstitial metabolic factors responsible for peripheral skeletal muscle fatigue during intense exertion.",
@@ -1642,13 +1642,13 @@
    "sub": "Cross-Bridge Cycle and Muscle Mechanics",
    "q": "What is excess post-exercise oxygen consumption (EPOC, formerly termed 'oxygen debt')?",
    "options": [
-    "Elevated oxygen uptake after exercise ceases, used to replenish muscle myoglobin O2 and phosphocreatine stores, clear/convert lactate via the Cori cycle, and support elevated post-exercise body temperature and catecholamines",
+    "Post-exercise O2 use restores ATP/PCr and myoglobin O2, clears lactate and supports thermoregulation",
     "Complete cessation of pulmonary ventilation for 10 minutes after sprinting",
     "Excretion of molecular oxygen in the urine after marathon running",
     "A permanent drop in resting basal metabolic rate after training"
    ],
    "answer": 0,
-   "explain": "EPOC consists of a fast alactacid component (resynthesizing ATP/phosphocreatine and reloading myoglobin/hemoglobin within minutes) and a slow component (hepatic gluconeogenesis from lactate, elevated temperature, and sympathetic hormone clearance).",
+   "explain": "EPOC consists of a fast alactacid component (resynthesizing ATP/phosphocreatine and reloading myoglobin/hemoglobin within minutes) and a slow component (hepatic gluconeogenesis from lactate, elevated temperature, and sympathetic hormone clearance). Key detail: Elevated oxygen uptake after exercise ceases, used to replenish muscle myoglobin O2 and phosphocreatine stores, clear/convert lactate via the Cori cycle, and support elevated post-exercise body temperature and catecholamines.",
    "verified": false,
    "open": {
     "q": "List three physiological processes accounted for by excess post-exercise oxygen consumption (EPOC).",
@@ -1689,12 +1689,12 @@
    "q": "What are caveolae in smooth muscle cells, and what functional role do they play?",
    "options": [
     "Deep T-tubules forming triads with Z-discs",
-    "Small flask-shaped invaginations of the sarcolemma (analogous to rudimentary T-tubules) that cluster ion channels, GPCRs, and Ca2+ signaling microdomains near peripheral sarcoplasmic reticulum",
+    "Caveolae are sarcolemmal invaginations that organise Ca2+ signalling near peripheral SR",
     "Nuclear pores that export myosin mRNA",
     "Mitochondrial cristae that synthesize acetylcholine"
    ],
    "answer": 1,
-   "explain": "Smooth muscle lacks T-tubules; instead, abundant caveolin-lined plasma membrane invaginations (caveolae) lie close to peripheral SR cisternae to coordinate Ca2+ entry and release.",
+   "explain": "Smooth muscle lacks T-tubules; instead, abundant caveolin-lined plasma membrane invaginations (caveolae) lie close to peripheral SR cisternae to coordinate Ca2+ entry and release. Key detail: Small flask-shaped invaginations of the sarcolemma (analogous to rudimentary T-tubules) that cluster ion channels, GPCRs, and Ca2+ signaling microdomains near peripheral sarcoplasmic reticulum.",
    "verified": false,
    "open": {
     "q": "What are caveolae in smooth muscle cells, and which striated muscle structure do they functionally replace?",
@@ -1713,11 +1713,11 @@
    "options": [
     "Opening voltage-gated Na+ channels and activating SERCA",
     "Inhibiting phospholipase C and lowering IP3",
-    "Extracellular Ca2+ influx through L-type voltage-gated or receptor-operated Ca2+ channels, plus Gq-phospholipase C generation of IP3 to release Ca2+ from sarcoplasmic reticulum IP3 receptors",
+    "Ca2+ enters through membrane channels and IP3 releases SR Ca2+ via Gq–PLC signalling",
     "Opening chloride leak channels to hyperpolarize the membrane"
    ],
    "answer": 2,
-   "explain": "Smooth muscle uses both electromechanical coupling (depolarization opening L-type Cav1.2 channels) and pharmacomechanical coupling (agonists like norepinephrine/angiotensin II activating Gq -> PLC -> IP3 -> SR Ca2+ release at constant membrane potential).",
+   "explain": "Smooth muscle uses both electromechanical coupling (depolarization opening L-type Cav1.2 channels) and pharmacomechanical coupling (agonists like norepinephrine/angiotensin II activating Gq -> PLC -> IP3 -> SR Ca2+ release at constant membrane potential). Key detail: Extracellular Ca2+ influx through L-type voltage-gated or receptor-operated Ca2+ channels, plus Gq-phospholipase C generation of IP3 to release Ca2+ from sarcoplasmic reticulum IP3 receptors.",
    "verified": false,
    "open": {
     "q": "Distinguish electromechanical coupling from pharmacomechanical coupling in smooth muscle contraction.",
@@ -1757,13 +1757,13 @@
    "sub": "Smooth Muscle Physiology",
    "q": "How do beta-2 adrenergic agonists (such as albuterol in bronchial smooth muscle) and nitric oxide donors (such as nitroglycerin in vascular smooth muscle) cause smooth muscle relaxation?",
    "options": [
-    "Beta-2 agonists increase cAMP (activating PKA) and nitric oxide increases cGMP (activating PKG); both kinases inhibit MLCK, stimulate MLCP, and promote Ca2+ sequestration/hyperpolarization",
+    "β2–cAMP/PKA and NO–cGMP/PKG inhibit MLCK and promote MLCP, lowering smooth-muscle tone",
     "Both open L-type voltage-gated Ca2+ channels to flood the cytoplasm with Ca2+",
     "Both activate Rho-kinase to inhibit myosin light-chain phosphatase",
     "Both release acetylcholine from parasympathetic varicosities"
    ],
    "answer": 0,
-   "explain": "Cyclic nucleotide pathways (Gs-cAMP-PKA and NO-sGC-cGMP-PKG) relax smooth muscle by lowering cytosolic Ca2+, opening K+ channels, phosphorylating/inhibiting MLCK, and activating MLCP.",
+   "explain": "Cyclic nucleotide pathways (Gs-cAMP-PKA and NO-sGC-cGMP-PKG) relax smooth muscle by lowering cytosolic Ca2+, opening K+ channels, phosphorylating/inhibiting MLCK, and activating MLCP. Key detail: Beta-2 agonists increase cAMP (activating PKA) and nitric oxide increases cGMP (activating PKG); both kinases inhibit MLCK, stimulate MLCP, and promote Ca2+ sequestration/hyperpolarization.",
    "verified": false,
    "open": {
     "q": "Identify the second messengers mediating smooth muscle relaxation by beta-2 adrenergic agonists and by nitric oxide.",
@@ -1781,12 +1781,12 @@
    "q": "What are 'slow waves' (basic electrical rhythm) in gastrointestinal unitary smooth muscle, and which specialized pacemaker cells generate them?",
    "options": [
     "All-or-none Na+ spikes generated by Schwann cells",
-    "Subthreshold undulating oscillations of resting membrane potential generated by interstitial cells of Cajal (ICCs) that bring smooth muscle near threshold so superimposed Ca2+-mediated spikes trigger contraction",
+    "Interstitial cells of Cajal generate subthreshold GI slow waves; Ca2+ spikes trigger contraction",
     "Hyperpolarizing IPSPs generated by skeletal motor neurons",
     "Mechanical vibrations caused by blood flow in the aorta"
    ],
    "answer": 1,
-   "explain": "Interstitial cells of Cajal act as electrical pacemakers in the gut wall, generating rhythmic slow waves (3/min in stomach, 12/min in duodenum) via cyclic SR Ca2+ release and Ca2+-activated Cl- channels; when excitatory input depolarizes the slow-wave crest above threshold, voltage-gated Ca2+ spikes fire.",
+   "explain": "Interstitial cells of Cajal act as electrical pacemakers in the gut wall, generating rhythmic slow waves (3/min in stomach, 12/min in duodenum) via cyclic SR Ca2+ release and Ca2+-activated Cl- channels; when excitatory input depolarizes the slow-wave crest above threshold, voltage-gated Ca2+ spikes fire. Key detail: Subthreshold undulating oscillations of resting membrane potential generated by interstitial cells of Cajal (ICCs) that bring smooth muscle near threshold so superimposed Ca2+-mediated spikes trigger contraction.",
    "verified": false,
    "open": {
     "q": "Name the pacemaker cells that generate slow waves in gastrointestinal smooth muscle and identify the ion responsible for the superimposed spike potentials.",
@@ -1918,13 +1918,13 @@
    "sub": "Cross-Bridge Cycle and Muscle Mechanics",
    "q": "What is the 'latent period' observed between an electrical stimulus applied to a motor nerve/muscle and the onset of measurable mechanical tension in a single muscle twitch?",
    "options": [
-    "The 2-to-5 millisecond delay required for action potential propagation along the sarcolemma/T-tubules, DHP-RyR1 signaling, Ca2+ release from the SR, Ca2+ binding to troponin C, and initial cross-bridge attachment",
+    "The latent period is the brief delay for excitation–contraction coupling and initial cross-bridge formation",
     "The 30-second period after death before rigor mortis begins",
     "The time during which SERCA pumps Ca2+ back into the SR",
     "The absolute refractory period of the spinal cord"
    ],
    "answer": 0,
-   "explain": "Excitation-contraction coupling steps precede actual cross-bridge force generation, creating a brief mechanical lag (latent period) after electrical depolarization.",
+   "explain": "Excitation-contraction coupling steps precede actual cross-bridge force generation, creating a brief mechanical lag (latent period) after electrical depolarization. Key detail: The 2-to-5 millisecond delay required for action potential propagation along the sarcolemma/T-tubules, DHP-RyR1 signaling, Ca2+ release from the SR, Ca2+ binding to troponin C, and initial cross-bridge attachment.",
    "verified": false,
    "open": {
     "q": "List the physiological events occurring during the latent period of a skeletal muscle twitch.",
@@ -1942,12 +1942,12 @@
    "q": "What is 'treppe' (the staircase phenomenon) in skeletal muscle stimulated repeatedly at a low frequency that allows complete relaxation between twitches?",
    "options": [
     "A progressive decrease in twitch tension due to ATP exhaustion",
-    "A progressive stepwise increase in peak twitch tension over the first several contractions, caused by incomplete Ca2+ reuptake between beats and warming of muscle enzymes",
+    "Treppe is a stepwise rise in twitch force, partly from increased Ca2+ availability and warming",
     "Complete failure of the neuromuscular junction",
     "Conversion of Type I fibers into smooth muscle"
    ],
    "answer": 1,
-   "explain": "Even when tension returns to baseline between stimuli, residual cytosolic Ca2+ and increased temperature/myosin light-chain phosphorylation slightly enhance force over the initial few twitches before a plateau is reached.",
+   "explain": "Even when tension returns to baseline between stimuli, residual cytosolic Ca2+ and increased temperature/myosin light-chain phosphorylation slightly enhance force over the initial few twitches before a plateau is reached. Key detail: A progressive stepwise increase in peak twitch tension over the first several contractions, caused by incomplete Ca2+ reuptake between beats and warming of muscle enzymes.",
    "verified": false,
    "open": {
     "q": "Define the treppe (staircase) phenomenon in skeletal muscle and state its primary ionic cause.",
@@ -2057,12 +2057,12 @@
    "q": "How do 'voltage-clamp' experiments (developed by Cole, Hodgkin, and Huxley) allow electrophysiologists to measure individual transmembrane ionic currents (INa and IK)?",
    "options": [
     "By freezing the axon in liquid nitrogen",
-    "By clamping the membrane potential at a fixed command voltage via a feedback amplifier so capacitive current (Cm * dV/dt) drops to zero and measured feedback current equals pure ionic current",
+    "Voltage clamp holds Vm constant; feedback current then measures ionic current after capacitive current is removed",
     "By removing all lipids from the cell membrane",
     "By injecting potassium directly into the nucleus"
    ],
    "answer": 1,
-   "explain": "Because total membrane current I_m = I_ionic + Cm*(dV/dt), holding dV/dt = 0 eliminates capacitive current, enabling direct measurement of voltage- and time-dependent Na+ and K+ conductances.",
+   "explain": "Because total membrane current I_m = I_ionic + Cm*(dV/dt), holding dV/dt = 0 eliminates capacitive current, enabling direct measurement of voltage- and time-dependent Na+ and K+ conductances. Key detail: By clamping the membrane potential at a fixed command voltage via a feedback amplifier so capacitive current (Cm * dV/dt) drops to zero and measured feedback current equals pure ionic current.",
    "verified": false,
    "open": {
     "q": "Explain the biophysical principle behind the voltage-clamp technique used by Hodgkin and Huxley.",
@@ -2081,11 +2081,11 @@
    "options": [
     "Recording whole-brain EEG from the scalp",
     "Measuring blood flow in single capillaries",
-    "Forming a high-resistance gigaohm seal with a glass micropipette onto a tiny membrane patch to record picoampere currents flowing through a single ion channel molecule in real time",
+    "Patch clamp forms a gigaohm seal to record single-channel picoampere currents",
     "Staining myelin sheaths with silver nitrate"
    ],
    "answer": 2,
-   "explain": "Patch-clamping proved that macroscopic membrane currents are the statistical sum of discrete, stochastic all-or-none opening and closing transitions of individual protein ion channels.",
+   "explain": "Patch-clamping proved that macroscopic membrane currents are the statistical sum of discrete, stochastic all-or-none opening and closing transitions of individual protein ion channels. Key detail: Forming a high-resistance gigaohm seal with a glass micropipette onto a tiny membrane patch to record picoampere currents flowing through a single ion channel molecule in real time.",
    "verified": false,
    "open": {
     "q": "What is the patch-clamp technique, and what did it demonstrate about ion channel behavior?",
@@ -2105,10 +2105,10 @@
     "The muscle degenerates into fibrous scar tissue",
     "The muscle becomes completely unresponsive to acetylcholine",
     "No change occurs because muscle fiber type is permanently fixed before birth",
-    "The slow muscle acquires fast contractile kinetics, faster SERCA pumping, and fast myosin heavy-chain isoforms dictated by the firing pattern of its new motor neuron"
+    "Motor-neuron firing pattern can switch muscle fibre contractile and metabolic phenotype"
    ],
    "answer": 3,
-   "explain": "Classic Buller-Eccles cross-innervation experiments proved that motor neuron firing frequency (tonic low-frequency 10-20 Hz vs phasic high-frequency bursts) controls intracellular Ca2+/calcineurin-NFAT signaling and myosin isoform gene expression.",
+   "explain": "Classic Buller-Eccles cross-innervation experiments proved that motor neuron firing frequency (tonic low-frequency 10-20 Hz vs phasic high-frequency bursts) controls intracellular Ca2+/calcineurin-NFAT signaling and myosin isoform gene expression. Key detail: The slow muscle acquires fast contractile kinetics, faster SERCA pumping, and fast myosin heavy-chain isoforms dictated by the firing pattern of its new motor neuron.",
    "verified": false,
    "open": {
     "q": "What do cross-innervation experiments demonstrate about the determinant of skeletal muscle fiber phenotype (slow vs fast)?",
@@ -2125,13 +2125,13 @@
    "sub": "Smooth Muscle Physiology",
    "q": "Why can smooth muscle generate substantial active tension across a much wider range of resting lengths (from 0.5x to 2.0x resting length) than skeletal muscle?",
    "options": [
-    "Smooth muscle lacks rigid Z-disc boundaries and possesses side-polar myosin filaments (with cross-bridges oriented along the entire shaft rather than a bare central zone), allowing actin filaments to slide much farther",
+    "Side-polar myosin and flexible dense-body attachments allow force across wide lengths",
     "Smooth muscle contains twice as many Z-discs per micrometer as skeletal muscle",
     "Smooth muscle uses tubulin instead of actin and myosin",
     "Smooth muscle does not require calcium for contraction"
    ],
    "answer": 0,
-   "explain": "Side-polar myosin organization and flexible dense-body attachment allow hollow organs (uterus, bladder, gut) to contract forcefully even when markedly distended or collapsed.",
+   "explain": "Side-polar myosin organization and flexible dense-body attachment allow hollow organs (uterus, bladder, gut) to contract forcefully even when markedly distended or collapsed. Key detail: Smooth muscle lacks rigid Z-disc boundaries and possesses side-polar myosin filaments (with cross-bridges oriented along the entire shaft rather than a bare central zone), allowing actin filaments to slide much farther.",
    "verified": false,
    "open": {
     "q": "Explain the structural basis that enables smooth muscle to shorten by up to 80% of its resting length and generate force over a wide length range.",
@@ -2172,12 +2172,12 @@
    "q": "A 35-year-old man experiences episodic severe muscle stiffness and painful cramps immediately after brief exercise, during which his muscles fail to relax promptly (myotonia). Genetic testing reveals a gain-of-function mutation in the skeletal muscle voltage-gated Na+ channel (SCN4A / Nav1.4) that impairs fast inactivation. How does defective Nav1.4 inactivation cause myotonia?",
    "options": [
     "Nav1.4 channels fail to open during Phase 0, causing complete flaccid paralysis",
-    "Impaired h-gate inactivation allows persistent inward Na+ leak after an action potential, causing repetitive self-sustaining sarcolemmal firing and delayed muscle relaxation",
+    "Impaired Nav1.4 inactivation causes persistent Na+ current and repetitive sarcolemmal firing",
     "Mutation destroys SERCA pumps in the sarcoplasmic reticulum",
     "Mutation blocks acetylcholine release from alpha motor neurons"
    ],
    "answer": 1,
-   "explain": "In paramyotonia congenita / potassium-aggravated myotonia, incomplete Nav1.4 inactivation generates persistent inward Na+ current that repeatedly re-excites the sarcolemma after voluntary contraction stops.",
+   "explain": "In paramyotonia congenita / potassium-aggravated myotonia, incomplete Nav1.4 inactivation generates persistent inward Na+ current that repeatedly re-excites the sarcolemma after voluntary contraction stops. Key detail: Impaired h-gate inactivation allows persistent inward Na+ leak after an action potential, causing repetitive self-sustaining sarcolemmal firing and delayed muscle relaxation.",
    "verified": false,
    "open": {
     "q": "Explain how a mutation that slows or impairs inactivation of skeletal muscle voltage-gated Na+ channels (Nav1.4) produces myotonia.",
@@ -2195,12 +2195,12 @@
    "q": "A 19-year-old man awakens with profound generalized flaccid muscle paralysis the morning after eating a large high-carbohydrate meal following intense exercise. Serum K+ is 2.1 mEq/L (hypokalemic periodic paralysis), and EMG shows electrical inexcitability of the sarcolemma. Why does severe hypokalemia paradoxically depolarize and inactivate skeletal muscle fibers in this channelopathy?",
    "options": [
     "Low extracellular K+ activates Na+/K+-ATPase to hyperpolarize the fiber to -150 mV",
-    "Insulin-driven K+ uptake lowers extracellular K+, triggering paradoxical depolarization via leaky gating-pore currents or reduced inward-rectifier K+ conductance, which chronically inactivates voltage-gated Na+ channels",
+    "Insulin-driven K+ shift and abnormal leak depolarise fibres, inactivating Nav1.4 and blocking spikes",
     "Hypokalemia destroys all actin filaments within 1 hour",
     "Hypokalemia causes massive acetylcholine release at the motor end-plate"
    ],
    "answer": 1,
-   "explain": "In hypokalemic periodic paralysis (Cav1.1 or Nav1.4 voltage-sensor mutations), carbohydrate-induced insulin shifts K+ intracellularly; reduced inward-rectifier K+ current plus aberrant gating-pore leak locks the sarcolemma in a depolarized state (~-50 mV), inactivating Nav1.4 channels so action potentials cannot fire.",
+   "explain": "In hypokalemic periodic paralysis (Cav1.1 or Nav1.4 voltage-sensor mutations), carbohydrate-induced insulin shifts K+ intracellularly; reduced inward-rectifier K+ current plus aberrant gating-pore leak locks the sarcolemma in a depolarized state (~-50 mV), inactivating Nav1.4 channels so action potentials cannot fire. Key detail: Insulin-driven K+ uptake lowers extracellular K+, triggering paradoxical depolarization via leaky gating-pore currents or reduced inward-rectifier K+ conductance, which chronically inactivates voltage-gated Na+ channels.",
    "verified": false,
    "open": {
     "q": "Why does sustained membrane depolarization (whether from severe hyperkalemia or paradoxical depolarization in periodic paralysis) cause flaccid muscle paralysis rather than continuous contraction?",
@@ -2217,13 +2217,13 @@
    "sub": "Clinical Correlations",
    "q": "A 44-year-old man undergoes general anesthesia with inhaled halothane and intravenous succinylcholine and rapidly develops extreme muscle rigidity, hypercapnia, tachycardia, hyperkalemia, and a core temperature rising to 41.2 C (malignant hyperthermia). Mutation in which receptor causes this life-threatening syndrome, and what is the specific antidote?",
    "options": [
-    "Mutation in skeletal muscle ryanodine receptor (RyR1) causing uncontrolled SR Ca2+ release; treated with intravenous dantrolene (which binds RyR1 to inhibit SR Ca2+ release)",
+    "RyR1 mutation causes uncontrolled SR Ca2+ release; dantrolene inhibits RyR1",
     "Mutation in nicotinic acetylcholine receptor; treated with atropine",
     "Mutation in cardiac beta-1 receptor; treated with epinephrine",
     "Mutation in aquaporin-2; treated with vasopressin"
    ],
    "answer": 0,
-   "explain": "Triggering agents open defective RyR1 channels continuously, flooding myoplasm with Ca2+ and driving relentless cross-bridge cycling and SERCA ATP hydrolysis (generating massive heat, CO2, and rhabdomyolysis); dantrolene directly blocks RyR1.",
+   "explain": "Triggering agents open defective RyR1 channels continuously, flooding myoplasm with Ca2+ and driving relentless cross-bridge cycling and SERCA ATP hydrolysis (generating massive heat, CO2, and rhabdomyolysis); dantrolene directly blocks RyR1. Key detail: Mutation in skeletal muscle ryanodine receptor (RyR1) causing uncontrolled SR Ca2+ release; treated with intravenous dantrolene (which binds RyR1 to inhibit SR Ca2+ release).",
    "verified": false,
    "open": {
     "q": "Identify the mutated sarcoplasmic reticulum channel responsible for malignant hyperthermia and name the specific pharmacological agent used to treat it.",
@@ -2241,12 +2241,12 @@
    "q": "A 5-year-old boy presents with progressive proximal pelvic-girdle muscle weakness, Gowers' sign (using his hands to 'walk up' his thighs when standing from the floor), calf pseudohypertrophy, and a serum creatine kinase (CK) of 18,000 U/L. Which genetic and cellular defect underlies Duchenne muscular dystrophy?",
    "options": [
     "Autoantibodies against presynaptic voltage-gated Ca2+ channels",
-    "X-linked frameshift/nonsense mutation in the DMD gene causing complete absence of dystrophin, leading to sarcolemmal tearing, Ca2+ overload, and progressive myofiber necrosis",
+    "DMD frameshift/nonsense mutation abolishes dystrophin, destabilising sarcolemma and causing myofibre necrosis",
     "Gain-of-function mutation in voltage-gated K+ channels",
     "Deficiency of hepatic glycogen phosphorylase"
    ],
    "answer": 1,
-   "explain": "Without dystrophin to anchor F-actin to the sarcolemmal dystroglycan complex, mechanical contraction shears the plasma membrane, allowing unregulated extracellular Ca2+ entry that activates calpain proteases and destroys muscle fibers.",
+   "explain": "Without dystrophin to anchor F-actin to the sarcolemmal dystroglycan complex, mechanical contraction shears the plasma membrane, allowing unregulated extracellular Ca2+ entry that activates calpain proteases and destroys muscle fibers. Key detail: X-linked frameshift/nonsense mutation in the DMD gene causing complete absence of dystrophin, leading to sarcolemmal tearing, Ca2+ overload, and progressive myofiber necrosis.",
    "verified": false,
    "open": {
     "q": "Explain the cellular sequence linking dystrophin deficiency to myofiber necrosis and elevated serum creatine kinase in Duchenne muscular dystrophy.",
@@ -2288,11 +2288,11 @@
    "options": [
     "Calcium excretes potassium into the urine within 30 seconds",
     "Calcium binds directly to potassium ions in plasma to neutralize their charge",
-    "Calcium increases external membrane surface charge screening, shifting the threshold potential of voltage-gated Na+ channels to a less negative value and restoring the voltage difference between resting potential and threshold",
+    "Extracellular Ca2+ shifts Na+ channel threshold positive, restoring the resting-to-threshold gap",
     "Calcium inhibits the Na+/K+-ATPase pump"
    ],
    "answer": 2,
-   "explain": "Hyperkalemia depolarizes resting membrane potential closer to threshold; raising extracellular Ca2+ shifts threshold potential upward (less negative) in parallel, restoring membrane excitability until insulin/glucose or beta-2 agonists shift K+ intracellularly.",
+   "explain": "Hyperkalemia depolarizes resting membrane potential closer to threshold; raising extracellular Ca2+ shifts threshold potential upward (less negative) in parallel, restoring membrane excitability until insulin/glucose or beta-2 agonists shift K+ intracellularly. Key detail: Calcium increases external membrane surface charge screening, shifting the threshold potential of voltage-gated Na+ channels to a less negative value and restoring the voltage difference between resting potential and threshold.",
    "verified": false,
    "open": {
     "q": "Explain the electrophysiological mechanism by which intravenous calcium gluconate protects excitable membranes during life-threatening hyperkalemia.",
