@@ -102,13 +102,13 @@
    "sub": "Resting Membrane Potential and Ionic Basis",
    "q": "How does the Goldman-Hodgkin-Katz (GHK) constant-field equation differ from the Nernst equation?",
    "options": [
-    "It calculates membrane potential when multiple monovalent ions (Na+, K+, Cl-) are simultaneously permeable, weighting each ion by its relative membrane permeability",
+    "GHK combines ion concentration gradients with relative permeabilities of Na+, K+ and Cl−",
     "It applies only to divalent cations such as Ca2+ and Mg2+",
     "It ignores ion concentration gradients completely",
     "It measures action potential conduction velocity in unmyelinated fibers"
    ],
    "answer": 0,
-   "explain": "Because real membranes at rest are slightly permeable to Na+ and Cl- in addition to K+, the GHK equation sums each ion's concentration weighted by its relative permeability (PK, PNa, PCl) to determine actual resting Vm.",
+   "explain": "Because real membranes at rest are slightly permeable to Na+ and Cl- in addition to K+, the GHK equation sums each ion's concentration weighted by its relative permeability (PK, PNa, PCl) to determine actual resting Vm. Key detail: It calculates membrane potential when multiple monovalent ions (Na+, K+, Cl-) are simultaneously permeable, weighting each ion by its relative membrane permeability.",
    "verified": false,
    "open": {
     "q": "What additional factor does the Goldman-Hodgkin-Katz (GHK) equation incorporate compared to the Nernst equation when determining resting membrane potential?",
@@ -126,12 +126,12 @@
    "q": "What is the direct electrogenic contribution of the Na+/K+-ATPase pump to the resting membrane potential, and what is its essential indirect role?",
    "options": [
     "Direct contribution of -40 mV; indirect role is synthesizing ATP",
-    "Direct electrogenic contribution of about -3 to -4 mV (pumping 3 Na+ out for every 2 K+ in); indirect role is maintaining the steep transmembrane Na+ and K+ concentration gradients",
+    "3 Na+ out/2 K+ in; net +1 charge out (~−3 to −4 mV) and maintenance of Na+/K+ gradients",
     "Direct contribution of +20 mV; indirect role is opening voltage-gated Ca2+ channels",
     "Zero direct or indirect contribution to membrane potential"
    ],
    "answer": 1,
-   "explain": "Extruding 3 positive charges (Na+) while importing 2 positive charges (K+) generates a small net outward current (~-4 mV), while its primary role is sustaining the chemical gradients on which K+ and Na+ diffusion potentials depend.",
+   "explain": "Extruding 3 positive charges (Na+) while importing 2 positive charges (K+) generates a small net outward current (~-4 mV), while its primary role is sustaining the chemical gradients on which K+ and Na+ diffusion potentials depend. Key detail: Direct electrogenic contribution of about -3 to -4 mV (pumping 3 Na+ out for every 2 K+ in); indirect role is maintaining the steep transmembrane Na+ and K+ concentration gradients.",
    "verified": false,
    "open": {
     "q": "State the stoichiometry of the Na+/K+-ATPase pump and its approximate direct electrogenic voltage contribution to the resting membrane potential.",
@@ -218,12 +218,12 @@
    "q": "What is the 'all-or-none' principle of the action potential?",
    "options": [
     "Either every neuron in the brain fires simultaneously or none fires",
-    "Once membrane depolarization reaches or exceeds threshold potential, a full-amplitude, stereotyped action potential is generated; subthreshold stimuli produce no action potential",
+    "Threshold triggers a full-amplitude spike; subthreshold input produces none",
     "Action potential amplitude doubles whenever stimulus intensity doubles",
     "All ion channels open simultaneously during every graded potential"
    ],
    "answer": 1,
-   "explain": "Above threshold (typically ~-55 mV), the regenerative positive-feedback opening of voltage-gated Na+ channels drives peak amplitude to a fixed height regardless of how far above threshold the stimulus was.",
+   "explain": "Above threshold (typically ~-55 mV), the regenerative positive-feedback opening of voltage-gated Na+ channels drives peak amplitude to a fixed height regardless of how far above threshold the stimulus was. Key detail: Once membrane depolarization reaches or exceeds threshold potential, a full-amplitude, stereotyped action potential is generated; subthreshold stimuli produce no action potential.",
    "verified": false,
    "open": {
     "q": "Define the all-or-none law as it applies to neuronal action potentials.",
@@ -425,12 +425,12 @@
    "q": "Why are local anesthetics markedly less effective when injected into acutely infected, acidic inflamed tissue (such as a dental abscess)?",
    "options": [
     "Bacteria metabolize lidocaine within 1 second",
-    "Acidic pH increases the ionized (protonated) fraction of the weak-base anesthetic outside the axon, preventing it from diffusing across the lipophilic axonal membrane",
+    "Acidosis protonates weak-base local anaesthetic outside the axon, limiting membrane entry",
     "Inflammation increases axonal myelination tenfold",
     "Low extracellular pH opens all voltage-gated Ca2+ channels"
    ],
    "answer": 1,
-   "explain": "Because local anesthetics are weak bases (pKa ~7.6-8.9), low tissue pH shifts equilibrium toward the charged cationic form (BH+), which cannot penetrate the lipid membrane to reach its intracellular binding site on Nav channels.",
+   "explain": "Because local anesthetics are weak bases (pKa ~7.6-8.9), low tissue pH shifts equilibrium toward the charged cationic form (BH+), which cannot penetrate the lipid membrane to reach its intracellular binding site on Nav channels. Key detail: Acidic pH increases the ionized (protonated) fraction of the weak-base anesthetic outside the axon, preventing it from diffusing across the lipophilic axonal membrane.",
    "verified": false,
    "open": {
     "q": "Why does tissue acidosis (such as in an abscess) reduce the clinical efficacy of weak-base local anesthetics?",
@@ -609,12 +609,12 @@
    "q": "What is the membrane time constant (tau), and how does a shorter time constant affect action potential propagation?",
    "options": [
     "tau = rm / ri; a shorter time constant slows conduction velocity",
-    "tau = rm x cm (membrane resistance times membrane capacitance); a shorter tau allows the membrane to charge and reach threshold faster, increasing conduction velocity",
+    "τ = Rm×Cm; myelin lowers Cm, so the membrane reaches threshold faster",
     "tau = cm / rm; a shorter tau prevents saltatory conduction",
     "tau = ENa - EK; a shorter tau abolishes the refractory period"
    ],
    "answer": 1,
-   "explain": "tau = rm * cm is the time for Vm to reach 63% (1 - 1/e) of its steady-state change during a constant current step; myelination dramatically reduces membrane capacitance (cm), shortening tau so nodes depolarize rapidly.",
+   "explain": "tau = rm * cm is the time for Vm to reach 63% (1 - 1/e) of its steady-state change during a constant current step; myelination dramatically reduces membrane capacitance (cm), shortening tau so nodes depolarize rapidly. Key detail: tau = rm x cm (membrane resistance times membrane capacitance); a shorter tau allows the membrane to charge and reach threshold faster, increasing conduction velocity.",
    "verified": false,
    "open": {
     "q": "Write the formula for the membrane time constant (tau) and explain how myelination alters membrane capacitance (cm) to speed conduction.",
@@ -908,11 +908,11 @@
    "options": [
     "Ca2+ diffuses passively out of the muscle fiber into blood plasma",
     "Myosin heads degrade all intracellular troponin C",
-    "SERCA (sarco/endoplasmic reticulum Ca2+-ATPase) actively pumps Ca2+ back into the sarcoplasmic reticulum (where calsequestrin binds it), lowering cytosolic Ca2+ so tropomyosin re-covers actin",
+    "SERCA pumps Ca2+ into SR; calsequestrin stores it, allowing troponin C to release Ca2+",
     "Voltage-gated Na+ channels pump Ca2+ into the T-tubules"
    ],
    "answer": 2,
-   "explain": "Active re-sequestration of Ca2+ into the SR by SERCA (requiring 1 ATP per 2 Ca2+ pumped) drops cytosolic [Ca2+] back below 10^-7 M, allowing Ca2+ to dissociate from TnC and tropomyosin to block myosin binding.",
+   "explain": "Active re-sequestration of Ca2+ into the SR by SERCA (requiring 1 ATP per 2 Ca2+ pumped) drops cytosolic [Ca2+] back below 10^-7 M, allowing Ca2+ to dissociate from TnC and tropomyosin to block myosin binding. Key detail: SERCA (sarco/endoplasmic reticulum Ca2+-ATPase) actively pumps Ca2+ back into the sarcoplasmic reticulum (where calsequestrin binds it), lowering cytosolic Ca2+ so tropomyosin re-covers actin.",
    "verified": false,
    "open": {
     "q": "Name the ATP-dependent pump responsible for sequestering Ca2+ back into the sarcoplasmic reticulum to initiate skeletal muscle relaxation, and the Ca2+-binding storage protein inside the SR lumen.",
@@ -932,10 +932,10 @@
     "At 2.0-2.2 um, thick and thin filaments do not overlap at all",
     "At 2.0-2.2 um, titin completely prevents cross-bridge formation",
     "At 2.0-2.2 um, the Z-discs collide with the thick filaments",
-    "At 2.0-2.2 um, there is optimal overlap between myosin cross-bridges and actin filaments without thin-filament double overlap or thick-filament collision with Z-discs"
+    "Optimal actin–myosin overlap at 2.0–2.2 μm maximises cross-bridge formation"
    ],
    "answer": 3,
-   "explain": "Overstretching beyond ~3.6 um eliminates overlap (zero active tension), whereas shortening below ~2.0 um causes opposing thin filaments to overlap and thick filaments to abut Z-discs, reducing force (length-tension relationship).",
+   "explain": "Overstretching beyond ~3.6 um eliminates overlap (zero active tension), whereas shortening below ~2.0 um causes opposing thin filaments to overlap and thick filaments to abut Z-discs, reducing force (length-tension relationship). Key detail: At 2.0-2.2 um, there is optimal overlap between myosin cross-bridges and actin filaments without thin-filament double overlap or thick-filament collision with Z-discs.",
    "verified": false,
    "open": {
     "q": "Explain the sarcomere length-tension relationship in skeletal muscle.",
@@ -1000,11 +1000,11 @@
    "options": [
     "Large, fast-fatigable Type IIb motor units are always recruited first",
     "Motor units are recruited randomly regardless of axon diameter",
-    "Small, low-threshold alpha motor neurons innervating slow oxidative (Type I) fatigue-resistant fibers are recruited first, followed progressively by larger motor neurons innervating Type IIa and Type IIx/IIb fast fibers",
+    "Small, high-input-resistance Type I motor units recruit first; larger fast units follow",
     "All motor units fire simultaneously even during light finger tapping"
    ],
    "answer": 2,
-   "explain": "Because small motor neurons have smaller surface area and higher input resistance (Ohm's law: V = I * R), a given synaptic input depolarizes them to threshold first, ensuring smooth force gradation and fatigue resistance for posture.",
+   "explain": "Because small motor neurons have smaller surface area and higher input resistance (Ohm's law: V = I * R), a given synaptic input depolarizes them to threshold first, ensuring smooth force gradation and fatigue resistance for posture. Key detail: Small, low-threshold alpha motor neurons innervating slow oxidative (Type I) fatigue-resistant fibers are recruited first, followed progressively by larger motor neurons innervating Type IIa and Type IIx/IIb fast fibers.",
    "verified": false,
    "open": {
     "q": "State Henneman's size principle of motor unit recruitment and explain its biophysical basis.",
@@ -1116,10 +1116,10 @@
     "Rapid hydrolysis of 100 ATP molecules per cross-bridge cycle",
     "Irreversible death of smooth muscle cells during vasoconstriction",
     "Opening of voltage-gated Na+ channels during sleep",
-    "Dephosphorylation of attached myosin cross-bridges by myosin light-chain phosphatase (MLCP) while still bound to actin, drastically slowing detachment rate so tonic force is maintained for hours with minimal ATP consumption"
+    "MLCP dephosphorylates attached myosin, slowing detachment and sustaining low-ATP tone"
    ],
    "answer": 3,
-   "explain": "The latch state allows tonic sphincters and arterioles to sustain continuous tension at ~1/100th to 1/300th the ATP cost of skeletal muscle.",
+   "explain": "The latch state allows tonic sphincters and arterioles to sustain continuous tension at ~1/100th to 1/300th the ATP cost of skeletal muscle. Key detail: Dephosphorylation of attached myosin cross-bridges by myosin light-chain phosphatase (MLCP) while still bound to actin, drastically slowing detachment rate so tonic force is maintained for hours with minimal ATP consumption.",
    "verified": false,
    "open": {
     "q": "Explain the latch-bridge phenomenon in smooth muscle and its physiological advantage.",
@@ -1136,13 +1136,13 @@
    "sub": "Smooth Muscle Physiology",
    "q": "How does Rho-kinase (ROCK) activation (such as by angiotensin II or endothelin-1) produce 'calcium sensitization' in vascular smooth muscle?",
    "options": [
-    "Rho-kinase phosphorylates and inhibits myosin light-chain phosphatase (MLCP), keeping myosin light chains phosphorylated and contracted even without a further rise in cytosolic Ca2+",
+    "ROCK inhibits MLCP, maintaining myosin phosphorylation and contraction at unchanged Ca2+",
     "Rho-kinase pumps Ca2+ out of the cell via the plasma membrane Ca2+-ATPase",
     "Rho-kinase degrades calmodulin in the cytoplasm",
     "Rho-kinase opens BKCa potassium channels to hyperpolarize the membrane"
    ],
    "answer": 0,
-   "explain": "Agonists coupled to G12/13 activate RhoA -> Rho-kinase, which inhibits MLCP; conversely, nitric oxide/cGMP activates protein kinase G (PKG) to stimulate MLCP (calcium desensitization and vasodilation).",
+   "explain": "Agonists coupled to G12/13 activate RhoA -> Rho-kinase, which inhibits MLCP; conversely, nitric oxide/cGMP activates protein kinase G (PKG) to stimulate MLCP (calcium desensitization and vasodilation). Key detail: Rho-kinase phosphorylates and inhibits myosin light-chain phosphatase (MLCP), keeping myosin light chains phosphorylated and contracted even without a further rise in cytosolic Ca2+.",
    "verified": false,
    "open": {
     "q": "Explain how Rho-kinase induces calcium sensitization in vascular smooth muscle.",
@@ -1230,11 +1230,11 @@
    "options": [
     "Depolarization makes membrane potential more negative; hyperpolarization makes it less negative",
     "Both terms mean returning membrane potential to -70 mV",
-    "Depolarization is a shift in membrane potential toward a less negative (more positive) value than resting potential; hyperpolarization is a shift toward a more negative value than resting potential",
+    "Depolarisation: less negative; repolarisation: return to rest; hyperpolarisation: more negative",
     "Depolarization occurs only when Cl- enters the cell"
    ],
    "answer": 2,
-   "explain": "Because resting potential is polarized (-70 mV), moving toward 0 mV (e.g., -70 to -50 mV) reduces polarization (depolarization), whereas moving to -85 mV increases polarization (hyperpolarization).",
+   "explain": "Because resting potential is polarized (-70 mV), moving toward 0 mV (e.g., -70 to -50 mV) reduces polarization (depolarization), whereas moving to -85 mV increases polarization (hyperpolarization). Key detail: Depolarization is a shift in membrane potential toward a less negative (more positive) value than resting potential; hyperpolarization is a shift toward a more negative value than resting potential.",
    "verified": false,
    "open": {
     "q": "Distinguish depolarization, repolarization, and hyperpolarization in terms of membrane potential changes relative to a -70 mV resting state.",
@@ -1254,10 +1254,10 @@
     "Rheobase is the shortest duration at zero voltage; chronaxie is maximal voltage",
     "Rheobase is action potential peak height; chronaxie is total duration of the spike",
     "Rheobase is conduction velocity; chronaxie is axon diameter",
-    "Rheobase is the minimum constant current strength required to excite a tissue regardless of stimulus duration; chronaxie is the minimum duration required to excite the tissue using a current of twice rheobase strength"
+    "Rheobase: minimum long-duration current; chronaxie: duration at twice rheobase"
    ],
    "answer": 3,
-   "explain": "Chronaxie (time required at 2x rheobase) is a standard index of tissue excitability: fast large myelinated axons have short chronaxies (~0.1-0.3 ms), whereas denervated skeletal muscle or smooth muscle has a much longer chronaxie.",
+   "explain": "Chronaxie (time required at 2x rheobase) is a standard index of tissue excitability: fast large myelinated axons have short chronaxies (~0.1-0.3 ms), whereas denervated skeletal muscle or smooth muscle has a much longer chronaxie. Key detail: Rheobase is the minimum constant current strength required to excite a tissue regardless of stimulus duration; chronaxie is the minimum duration required to excite the tissue using a current of twice rheobase strength.",
    "verified": false,
    "open": {
     "q": "Define rheobase and chronaxie on an excitable tissue's strength-duration curve.",
@@ -1274,13 +1274,13 @@
    "sub": "Voltage-Gated Ion Channels and Action Potential Phases",
    "q": "Why does the peak of a neuronal action potential (~+30 to +35 mV) fall short of the theoretical sodium Nernst equilibrium potential (ENa ~ +60 mV)?",
    "options": [
-    "Because Na+ inactivation (h) gates begin closing and delayed-rectifier K+ channels begin opening before Vm can reach +60 mV, creating opposing outward K+ current",
+    "Early Na+ inactivation and rising K+ conductance limit the overshoot to ~+35 mV",
     "Because intracellular Na+ concentration suddenly rises to 500 mM during a single spike",
     "Because the Na+/K+ pump reverses during the peak",
     "Because voltage-gated Cl- channels open at +30 mV"
    ],
    "answer": 0,
-   "explain": "During a single action potential, only ~1 in 100,000 intracellular ions changes concentration, so ENa stays near +60 mV; however, rapid Nav inactivation and Kv activation shift the chord conductance back toward EK before Vm reaches ENa.",
+   "explain": "During a single action potential, only ~1 in 100,000 intracellular ions changes concentration, so ENa stays near +60 mV; however, rapid Nav inactivation and Kv activation shift the chord conductance back toward EK before Vm reaches ENa. Key detail: Because Na+ inactivation (h) gates begin closing and delayed-rectifier K+ channels begin opening before Vm can reach +60 mV, creating opposing outward K+ current.",
    "verified": false,
    "open": {
     "q": "Explain why the neuronal action potential overshoot peaks around +35 mV rather than reaching ENa (+60 mV).",
@@ -1298,12 +1298,12 @@
    "q": "How many transmembrane alpha-helical segments (S1-S6) comprise each of the four homologous domains of a voltage-gated Na+ channel alpha-subunit, and which segment acts as the primary positively charged voltage sensor?",
    "options": [
     "Two segments (S1-S2); S1 is the voltage sensor",
-    "Six segments (S1-S6) per domain; the S4 segment (containing positively charged arginine/lysine residues every third position) moves outward upon depolarization to open the channel",
+    "Each of four domains has six S1–S6 helices; S4 is the positive-charge voltage sensor",
     "Ten segments (S1-S10); S10 is the voltage sensor",
     "Four segments (S1-S4); S2 is the selectivity filter"
    ],
    "answer": 1,
-   "explain": "The Nav alpha-subunit has four domains (I-IV), each with 6 transmembrane helices (S1-S6); S4 is the voltage sensor, the S5-S6 P-loop forms the DEKA Na+-selectivity filter, and the cytoplasmic linker between domains III and IV forms the hinged-lid inactivation (h) gate.",
+   "explain": "The Nav alpha-subunit has four domains (I-IV), each with 6 transmembrane helices (S1-S6); S4 is the voltage sensor, the S5-S6 P-loop forms the DEKA Na+-selectivity filter, and the cytoplasmic linker between domains III and IV forms the hinged-lid inactivation (h) gate. Key detail: Six segments (S1-S6) per domain; the S4 segment (containing positively charged arginine/lysine residues every third position) moves outward upon depolarization to open the channel.",
    "verified": false,
    "open": {
     "q": "Identify the voltage-sensing transmembrane segment and the intracellular inactivation gate linker of a voltage-gated Na+ channel alpha-subunit.",
@@ -1322,11 +1322,11 @@
    "options": [
     "No action potential can be initiated at all",
     "The action potential becomes 10 times shorter",
-    "The Phase 0 upstroke still occurs normally, but repolarization is markedly delayed (prolonging action potential duration) because repolarization must rely solely on Na+ inactivation and passive K+ leak",
+    "TEA leaves the upstroke intact but delays K+-dependent repolarisation and removes the undershoot",
     "The resting membrane potential jumps to +60 mV"
    ],
    "answer": 2,
-   "explain": "Because voltage-gated K+ channels do not participate in Phase 0, TEA leaves the upstroke intact while slowing repolarization and abolishing the after-hyperpolarization undershoot.",
+   "explain": "Because voltage-gated K+ channels do not participate in Phase 0, TEA leaves the upstroke intact while slowing repolarization and abolishing the after-hyperpolarization undershoot. Key detail: The Phase 0 upstroke still occurs normally, but repolarization is markedly delayed (prolonging action potential duration) because repolarization must rely solely on Na+ inactivation and passive K+ leak.",
    "verified": false,
    "open": {
     "q": "Describe how blocking voltage-gated K+ channels with tetraethylammonium (TEA) alters the shape of a neuronal action potential.",
@@ -1366,13 +1366,13 @@
    "sub": "Myelination and Saltatory Conduction",
    "q": "Where are voltage-gated Na+ channels concentrated in a healthy myelinated axon, and where are voltage-gated K+ channels predominantly located?",
    "options": [
-    "Voltage-gated Na+ channels are densely clustered at the nodes of Ranvier (~1,000-2,000/um2), whereas voltage-gated K+ channels are largely sequestered under the myelin in the juxtaparanodal region",
+    "Na+ channels cluster at nodes of Ranvier; K+ channels concentrate in juxtaparanodes",
     "Both Na+ and K+ channels are uniformly absent from nodes of Ranvier",
     "Na+ channels are restricted exclusively to the internodal myelin sheath",
     "K+ channels outnumber Na+ channels 100:1 at the nodes of Ranvier"
    ],
    "answer": 0,
-   "explain": "Ankyrin-G anchors dense Nav1.6 channels at nodes of Ranvier for rapid inward current generation, while juxtaparanodal Kv1 channels under the paranodal seal help stabilize internodal resting potential (and become exposed during demyelination, worsening conduction block).",
+   "explain": "Ankyrin-G anchors dense Nav1.6 channels at nodes of Ranvier for rapid inward current generation, while juxtaparanodal Kv1 channels under the paranodal seal help stabilize internodal resting potential (and become exposed during demyelination, worsening conduction block). Key detail: Voltage-gated Na+ channels are densely clustered at the nodes of Ranvier (~1,000-2,000/um2), whereas voltage-gated K+ channels are largely sequestered under the myelin in the juxtaparanodal region.",
    "verified": false,
    "open": {
     "q": "Compare the distribution of voltage-gated Na+ channels and voltage-gated K+ channels along a myelinated axon.",
@@ -1390,12 +1390,12 @@
    "q": "What is the 'safety factor' for action potential propagation in a healthy myelinated nerve fiber?",
    "options": [
     "The ratio of axon diameter to myelin thickness (g-ratio = 1.0)",
-    "The ratio of the local axial depolarizing current generated at an active node to the minimum current required to depolarize the next node to threshold (typically 5 to 7 in healthy myelinated axons)",
+    "Safety factor = available depolarising current ÷ threshold current at the next node (~5–7)",
     "The number of Schwann cells in the brain",
     "The resting voltage of the astrocyte membrane"
    ],
    "answer": 1,
-   "explain": "A high safety factor (~5-7) ensures reliable signal transmission even during high-frequency firing, mild cooling, or metabolic stress; demyelination erodes the safety factor below 1.0, causing conduction failure.",
+   "explain": "A high safety factor (~5-7) ensures reliable signal transmission even during high-frequency firing, mild cooling, or metabolic stress; demyelination erodes the safety factor below 1.0, causing conduction failure. Key detail: The ratio of the local axial depolarizing current generated at an active node to the minimum current required to depolarize the next node to threshold (typically 5 to 7 in healthy myelinated axons).",
    "verified": false,
    "open": {
     "q": "Define the safety factor for nerve impulse propagation.",
@@ -1414,11 +1414,11 @@
    "options": [
     "Orthodromically toward the axon terminal only",
     "Antidromically toward the soma only",
-    "Bidirectionally—both orthodromically toward the axon terminals and antidromically toward the cell body—because unexcited membrane on both sides is non-refractory",
+    "Mid-axon stimulation produces both orthodromic and antidromic spikes",
     "Neither direction; mid-axon stimulation never triggers a spike"
    ],
    "answer": 2,
-   "explain": "Normally, spikes originate at the axon hillock and travel orthodromically because upstream membrane is refractory; artificial mid-axon depolarization excites non-refractory membrane on both sides, producing both orthodromic and antidromic spikes.",
+   "explain": "Normally, spikes originate at the axon hillock and travel orthodromically because upstream membrane is refractory; artificial mid-axon depolarization excites non-refractory membrane on both sides, producing both orthodromic and antidromic spikes. Key detail: Bidirectionally—both orthodromically toward the axon terminals and antidromically toward the cell body—because unexcited membrane on both sides is non-refractory.",
    "verified": false,
    "open": {
     "q": "Contrast orthodromic and antidromic conduction, and explain why artificial mid-axon electrical stimulation generates both.",
@@ -1458,13 +1458,13 @@
    "sub": "Nerve Fiber Classification (Erlanger-Gasser and Lloyd)",
    "q": "Which nerve fiber types carry preganglionic autonomic fibers versus postganglionic sympathetic fibers?",
    "options": [
-    "Preganglionic autonomic fibers are thinly myelinated Type B fibers (3-15 m/s); postganglionic autonomic fibers are unmyelinated Type C fibers (0.5-2 m/s)",
+    "Preganglionic autonomic: myelinated B fibres; postganglionic: unmyelinated C fibres",
     "Preganglionic fibers are A-alpha; postganglionic fibers are A-beta",
     "Both preganglionic and postganglionic fibers are heavily myelinated A-alpha fibers",
     "Preganglionic fibers are Type C; postganglionic fibers are Type B"
    ],
    "answer": 0,
-   "explain": "Type B fibers are small myelinated preganglionic autonomic axons, while postganglionic autonomic fibers (except rare myelinated ciliary ganglion fibers) are unmyelinated C fibers.",
+   "explain": "Type B fibers are small myelinated preganglionic autonomic axons, while postganglionic autonomic fibers (except rare myelinated ciliary ganglion fibers) are unmyelinated C fibers. Key detail: Preganglionic autonomic fibers are thinly myelinated Type B fibers (3-15 m/s); postganglionic autonomic fibers are unmyelinated Type C fibers (0.5-2 m/s).",
    "verified": false,
    "open": {
     "q": "Identify the Erlanger-Gasser fiber classes for preganglionic autonomic axons and postganglionic autonomic axons.",
@@ -1482,12 +1482,12 @@
    "q": "What is a 'triad' in mammalian skeletal muscle, and where is it located relative to the sarcomere bands?",
    "options": [
     "Two T-tubules flanking one Z-disc, located at the M-line",
-    "One central transverse (T) tubule flanked by two terminal cisternae of the sarcoplasmic reticulum, located at the junction of the A band and I band (two triads per sarcomere)",
+    "One T-tubule flanked by two SR terminal cisternae at each A–I junction",
     "Three mitochondria surrounding a nucleus",
     "Three myosin heads bound to one troponin molecule"
    ],
    "answer": 1,
-   "explain": "Mammalian skeletal muscle has two triads per sarcomere positioned at the A-I junctions (whereas cardiac muscle has diads—one T-tubule + one SR cisterna—located at the Z-lines).",
+   "explain": "Mammalian skeletal muscle has two triads per sarcomere positioned at the A-I junctions (whereas cardiac muscle has diads—one T-tubule + one SR cisterna—located at the Z-lines). Key detail: One central transverse (T) tubule flanked by two terminal cisternae of the sarcoplasmic reticulum, located at the junction of the A band and I band (two triads per sarcomere).",
    "verified": false,
    "open": {
     "q": "Describe the structural components and sarcomeric location of a triad in mammalian skeletal muscle.",
