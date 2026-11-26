@@ -232,6 +232,6 @@
     if (document.activeElement && document.activeElement.tagName === "BUTTON") return;
     e.preventDefault(); if (it.checked) next(); else check();
   }
-  function refreshProgress() { if (app && T.view === "pick") paint(); }
+  function refreshProgress() { if (T.sel !== null) DX.tfStems.forEach(function (s) { if (!Object.prototype.hasOwnProperty.call(T.sel, s.topic)) T.sel[s.topic] = true; }); if (app && T.view === "pick") paint(); }
   DX.truefalse = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave, refreshProgress: refreshProgress };
 })();
