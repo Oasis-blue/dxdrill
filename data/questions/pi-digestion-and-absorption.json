@@ -30,6 +30,51 @@
       ],
       "answer": 0,
       "explain": "Bile salts emulsify dietary fat and form mixed micelles that keep fatty acids and monoglycerides soluble in the intestinal lumen and deliver them to the brush border. Reduced bile delivery impairs lipid absorption and can cause steatorrhoea even when pancreatic lipase is present."
+    },
+    {
+      "id": "pi-digestion-and-absorption-003",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Carbohydrate absorption",
+      "q": "A patient with brush-border damage has reduced absorption of glucose and galactose but relatively preserved fructose absorption. Which transporter is most likely impaired?",
+      "options": [
+        "SGLT1",
+        "GLUT5",
+        "GLUT2",
+        "Na+/K+-ATPase"
+      ],
+      "answer": 0,
+      "explain": "Glucose and galactose enter enterocytes apically through sodium-dependent SGLT1. Fructose uses GLUT5; monosaccharides leave basolaterally mainly through GLUT2.",
+      "verified": false,
+      "open": {
+        "q": "Which apical transporter mediates sodium-dependent uptake of glucose and galactose?",
+        "accept": [
+          "SGLT1",
+          "Sodium-glucose linked transporter 1"
+        ]
+      }
+    },
+    {
+      "id": "pi-digestion-and-absorption-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Protein digestion",
+      "q": "Which pancreatic zymogen is activated in the duodenal lumen by enteropeptidase?",
+      "options": [
+        "Trypsinogen",
+        "Pepsinogen",
+        "Aminopeptidase",
+        "Dipeptidase"
+      ],
+      "answer": 0,
+      "explain": "Enteropeptidase on the duodenal brush border converts trypsinogen to trypsin. Trypsin then activates several other pancreatic zymogens.",
+      "verified": false,
+      "open": {
+        "q": "Which pancreatic zymogen is activated by enteropeptidase?",
+        "accept": [
+          "Trypsinogen"
+        ]
+      }
     }
   ]
 }
