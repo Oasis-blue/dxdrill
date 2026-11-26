@@ -55,7 +55,7 @@
    "q": "Which forms of hypoxia are associated with a NORMAL arterial PaO2 (~95-100 mmHg) and normal pulse oximetry (SpO2 ~97-99%) on standard two-wavelength oximeters?",
    "options": [
     "All forms of hypoxia cause low PaO₂ and low pulse oximetry readings",
-    "Anemic, stagnant and histotoxic hypoxia can occur with normal PaO₂; CO poisoning may also give falsely normal pulse oximetry",
+    "Anaemic, stagnant and histotoxic hypoxia may have normal PaO2; CO can falsely normalise SpO2",
     "Only high-altitude hypoxia preserves normal PaO₂ and oxygen saturation",
     "Histotoxic hypoxia always lowers PaO₂ because mitochondria cannot use oxygen"
    ],
@@ -101,7 +101,7 @@
    "q": "How do 'central cyanosis' and 'peripheral cyanosis' differ clinically and mechanistically?",
    "options": [
     "Central cyanosis affects only the toenails; peripheral cyanosis affects only the tongue",
-    "Central cyanosis: warm mucosa (tongue, lips) from low arterial SaO2; peripheral: cold extremities from sluggish flow with normal SaO2",
+    "Central: low arterial SaO2; peripheral: slow flow with increased local O2 extraction",
     "Central cyanosis is caused exclusively by cold weather",
     "Peripheral cyanosis always indicates a right-to-left intracardiac shunt"
    ],
@@ -123,7 +123,7 @@
    "sub": "Cyanosis and Oxygen Therapy",
    "q": "In which clinical conditions is hyperbaric oxygen therapy (100% O2 delivered at 2.0 to 3.0 atmospheres absolute, boosting dissolved plasma O2 from 0.3 to ~6.0 mL/dL) specifically indicated?",
    "options": [
-    "Decompression sickness, gas embolism, severe CO poisoning, gas gangrene, and radiation injuries",
+    "Decompression sickness, gas embolism, severe CO poisoning, gas gangrene and radiation injury",
     "Mild seasonal allergic rhinitis and uncomplicated tension headache",
     "Routine management of stable mild asthma",
     "Primary treatment of acute hemorrhagic stroke"
@@ -146,7 +146,7 @@
    "sub": "Oxygen Toxicity (Paul Bert and Lorrain Smith Effects)",
    "q": "How do the two classic syndromes of oxygen toxicity—the 'Lorrain Smith effect' (pulmonary O2 toxicity) and the 'Paul Bert effect' (central nervous system O2 toxicity)—differ in cause, mechanism, and clinical presentation?",
    "options": [
-    "Lorrain Smith: prolonged high FiO2 damages alveolar epithelium and surfactant; Paul Bert: acute hyperbaric O2 causes seizures",
+    "Lorrain Smith: prolonged high-FiO2 lung injury; Paul Bert: acute hyperbaric CNS seizures",
     "Paul Bert causes chronic pulmonary fibrosis after 10 years; Lorrain Smith causes immediate seizures at 21% O2",
     "Both syndromes are caused by severe carbon dioxide deficiency",
     "Oxygen toxicity occurs only when FiO2 is below 0.15"
@@ -169,7 +169,7 @@
    "sub": "Cyanosis and Oxygen Therapy",
    "q": "What is 'absorption atelectasis', and how does breathing 100% oxygen precipitate it in poorly ventilated lung units?",
    "options": [
-    "High inspired oxygen washes out nitrogen; oxygen absorption from a poorly ventilated unit can then collapse its alveoli",
+    "Nitrogen washout allows rapid O2 absorption and collapse of poorly ventilated alveoli",
     "High inspired oxygen crystallizes surfactant and blocks alveolar ducts",
     "Nitrogen is absorbed faster than oxygen, causing overdistension and rupture",
     "Absorption atelectasis occurs only when ambient pressure falls during ascent"
@@ -193,7 +193,7 @@
    "q": "What is 'retinopathy of prematurity' (retrolental fibroplasia), and how does excessive supplemental oxygen trigger it in premature neonates?",
    "options": [
     "High PaO2 dissolves the crystalline lens directly",
-    "High PaO2 suppresses VEGF (vaso-obliteration); on return to room air, rebound VEGF drives neovascularization and detachment",
+    "Hyperoxia suppresses retinal VEGF; later hypoxia drives abnormal neovascularisation",
     "Excessive O2 causes congenital glaucoma by blocking the canal of Schlemm",
     "Retinopathy of prematurity is caused by vitamin C excess"
    ],
@@ -264,7 +264,7 @@
     "Severe hypoventilation; suppressed EPO and anemia; loss of muscle mitochondria",
     "Systemic vasodilation dropping blood pressure to 60/30 mmHg; decreased 2,3-BPG",
     "Complete closure of carotid body chemoreceptors",
-    "Sustained hyperventilation with renal HCO3- loss; EPO-driven polycythemia; increased 2,3-BPG and tissue capillarity"
+    "Hyperventilation with renal HCO3− loss, EPO-driven erythrocytosis and increased 2,3-BPG"
    ],
    "answer": 3,
    "explain": "HIF-1 alpha acts as the master oxygen-sensing transcription factor at altitude, upregulating EPO, VEGF (angiogenesis), and glycolytic enzymes while renal HCO3- excretion sustains alveolar ventilation.",
@@ -330,7 +330,7 @@
    "sub": "High-Altitude Illnesses (AMS, HAPE, HACE, Chronic Mountain Sickness)",
    "q": "How do Acute Mountain Sickness (AMS) and High-Altitude Cerebral Edema (HACE) develop upon rapid ascent above 2,500-3,000 m, and how does acetazolamide prevent AMS?",
    "options": [
-    "Hypoxia dilates cerebral vessels and raises ICP; acetazolamide causes renal HCO3- loss and metabolic acidosis, driving ventilation",
+    "Cerebral vasodilation raises ICP; acetazolamide causes bicarbonate loss and stimulates ventilation",
     "Hypoxia causes severe cerebral vasoconstriction and brain shrinkage; acetazolamide blocks carotid body firing",
     "AMS is caused by hypercapnic narcosis; acetazolamide retains bicarbonate",
     "HACE is caused by systemic hypertension above 250 mmHg"
@@ -353,7 +353,7 @@
    "sub": "High-Altitude Illnesses (AMS, HAPE, HACE, Chronic Mountain Sickness)",
    "q": "What is 'Chronic Mountain Sickness' (Monge's disease) seen in long-term residents living above 3,000-4,000 m (such as in the Andes)?",
    "options": [
-    "Blunted hypoxic drive, excessive polycythemia with hyperviscosity, pulmonary hypertension, and cor pulmonale",
+    "Blunted hypoxic drive with excessive polycythaemia, hyperviscosity and cor pulmonale",
     "Severe iron-deficiency anemia with hematocrit of 18%",
     "Systemic hypotension with low blood viscosity",
     "Acute decompression sickness upon descending to sea level"
@@ -399,7 +399,7 @@
    "sub": "Deep-Sea Diving and Hyperbaric Physiology",
    "q": "Why must a SCUBA diver breathing compressed air at depth NEVER hold their breath during ascent to the surface?",
    "options": [
-    "During ascent, expanding trapped gas can overdistend and rupture alveoli, causing pneumothorax or arterial gas embolism",
+    "Ascent expands trapped gas, risking alveolar rupture and arterial gas embolism",
     "Breath-holding during ascent causes nitrogen narcosis by increasing nitrogen solubility",
     "Ambient pressure rises during ascent and compresses the thorax",
     "Holding the breath during ascent causes hypothermia"
@@ -423,7 +423,7 @@
    "q": "Which physical law governs the dissolution of nitrogen into body tissues at high underwater partial pressures, and what is 'nitrogen narcosis' ('rapture of the deep')?",
    "options": [
     "Dalton's law; nitrogen freezes inside blood vessels",
-    "Henry's law; high dissolved lipid-soluble N2 in neuronal membranes acts like an anesthetic at depth",
+    "Henry's law; dissolved nitrogen in neuronal lipids produces narcosis",
     "Poiseuille's law; nitrogen causes explosive hyperventilation",
     "Fick's law; nitrogen replaces iron in hemoglobin"
    ],
@@ -445,7 +445,7 @@
    "sub": "Decompression Sickness (Caisson Disease / The Bends)",
    "q": "What causes 'decompression sickness' (the bends / Caisson disease) upon rapid ascent from a deep dive, and why are adipose tissue and central nervous system white matter especially vulnerable?",
    "options": [
-    "Dissolved N2 comes out of solution as bubbles during rapid decompression, especially from lipid-rich tissues",
+    "Rapid decompression forms N2 bubbles, especially in lipid-rich tissues",
     "Oxygen bubbles form inside red blood cells during descent",
     "Carbon dioxide freezes in the synovial fluid of joints",
     "Water enters the pleural cavity through skin pores"
@@ -491,7 +491,7 @@
    "sub": "Deep-Sea Diving and Hyperbaric Physiology",
    "q": "What is the 'High-Pressure Nervous Syndrome' (HPNS) observed in deep saturation divers breathing heliox at depths greater than 150-200 meters (>15-20 ATA)?",
    "options": [
-    "Tremors and myoclonus from direct pressure excitation, mitigated by adding small amounts of narcotic nitrogen ('trimix')",
+    "Extreme pressure excites CNS neurons; small N2 admixture counteracts HPNS",
     "Severe alcohol-like euphoria caused by helium narcosis",
     "Complete paralysis of the diaphragm",
     "Collapse of the bony skull"
@@ -514,7 +514,7 @@
    "sub": "Aviation, Spaceflight, and Acceleration (G-Forces)",
    "q": "At what cabin altitude are modern commercial airliners typically pressurized when cruising at 11,000-12,000 meters (36,000-40,000 ft), and what is the expected arterial PaO2 of a healthy passenger at that cabin altitude?",
    "options": [
-    "Cabins are usually pressurised to about 6,000–8,000 ft, where healthy passengers may have PaO2 around 55–65 mmHg",
+    "6,000–8,000 ft cabin altitude; healthy PaO2 may fall to ~55–65 mmHg",
     "Cabins are maintained at sea-level pressure, so PaO2 remains 100 mmHg",
     "Cabins are pressurised to Everest summit altitude, giving PaO2 around 28 mmHg",
     "Cabins are pressurised to 3 atmospheres, producing PaO2 above 1,800 mmHg"
@@ -540,7 +540,7 @@
     "+Gz forces excess blood into the brain, causing hemorrhagic stroke ('red-out')",
     "+Gz increases heart rate to 400 bpm and doubles cerebral perfusion",
     "Blackout is caused by high cabin oxygen pressure",
-    "+Gz pools blood in the legs and drops cerebral perfusion; retinal perfusion fails first (grey-out/blackout) before cerebral ischemia (G-LOC)"
+    "+Gz pools blood in the legs, reducing cerebral perfusion; retinal loss precedes G-LOC"
    ],
    "answer": 3,
    "explain": "Conversely, negative Gz (-Gz, foot-to-head force during an outside loop) engorges cerebral and retinal vessels, causing 'red-out' (lower eyelid engorgement) and severe bradycardia via carotid sinus baroreceptor activation.",
@@ -561,7 +561,7 @@
    "q": "Which physiological adaptations occur during prolonged exposure to microgravity (0 G) in spaceflight?",
    "options": [
     "Massive fluid pooling in the ankles and doubling of plasma volume; rapid hypertrophy of calf muscles and bone thickening",
-    "Cephalad fluid shift and diuresis lower plasma volume; antigravity muscle and bone mass are lost",
+    "Cephalad fluid shift and diuresis reduce plasma volume; antigravity muscle and bone atrophy",
     "Permanent cessation of alveolar gas exchange",
     "Increase in resting heart rate to 180 bpm"
    ],
@@ -607,7 +607,7 @@
    "q": "What is the 'anaerobic threshold' (lactate threshold) during graded incremental exercise, and how does it manifest in respiratory gas exchange?",
    "options": [
     "The point at which heart rate drops below 40 bpm",
-    "The exercise intensity above which lactic-acid buffering releases excess CO2, driving a disproportionate rise in VE relative to VO2",
+    "Above lactate threshold, bicarbonate buffering adds CO2 and drives ventilation",
     "The intensity at which skeletal muscle stops consuming ATP",
     "The point at which arterial PaO2 rises to 300 mmHg"
    ],
@@ -629,7 +629,7 @@
    "sub": "Exercise Physiology",
    "q": "What is 'Excess Post-Exercise Oxygen Consumption' (EPOC, formerly termed 'oxygen debt'), and what physiological processes account for elevated VO2 after strenuous exercise stops?",
    "options": [
-    "EPOC is elevated oxygen uptake after exercise, supporting restoration of stores and ongoing recovery metabolism",
+    "EPOC is raised post-exercise O2 uptake supporting restoration and recovery",
     "EPOC is the absence of ventilation after exercise due to medullary inhibition",
     "EPOC is oxygen stored permanently in bone marrow during strenuous activity",
     "EPOC is conversion of haemoglobin into bilirubin during muscle recovery"
@@ -675,7 +675,7 @@
    "sub": "High-Altitude Physiology and Acclimatization",
    "q": "Why does pulmonary artery pressure increase at high altitude, and what happens to this pulmonary hypertension over years of high-altitude residence?",
    "options": [
-    "Alveolar hypoxia inhibits K+ channels in pulmonary vascular smooth muscle, causing depolarization, Ca2+ influx, and HPV",
+    "Alveolar hypoxia inhibits pulmonary smooth-muscle K+ channels, causing Ca2+-mediated constriction",
     "Alveolar hypoxia causes profound pulmonary vasodilation and systemic hypertension",
     "Left atrial pressure rises to 45 mmHg at altitude",
     "Pulmonary artery pressure drops to 2 mmHg at 4,000 meters"
@@ -698,7 +698,7 @@
    "sub": "Deep-Sea Diving and Hyperbaric Physiology",
    "q": "What is 'central nervous system oxygen toxicity' risk for SCUBA divers breathing compressed air (21% O2) or enriched-air nitrox at deep depths?",
    "options": [
-    "Inspired PO2 rises with depth; nitrox reaches toxic PO2 at shallow depths, risking underwater seizures",
+    "Inspired PO2 rises with depth; nitrox can reach seizure-inducing levels at shallower depths",
     "Breathing compressed air at 70 meters causes severe hypoxia (PiO2 = 20 mmHg)",
     "Oxygen toxicity cannot occur underwater",
     "Nitrox prevents all oxygen toxicity down to 300 meters"
@@ -721,7 +721,7 @@
    "sub": "Deep-Sea Diving and Hyperbaric Physiology",
    "q": "What is 'immersion diuresis' experienced by swimmers and divers upon entering water up to the neck?",
    "options": [
-    "Hydrostatic pressure shifts blood centrally, raising ANP and suppressing ADH, causing diuresis",
+    "Immersion shifts blood centrally, raising ANP and suppressing ADH to cause diuresis",
     "Water enters the bladder directly through the urethra",
     "Cold water stimulates massive aldosterone and ADH secretion",
     "Immersion causes complete anuria"
@@ -745,7 +745,7 @@
    "q": "What is the 'mammalian diving reflex' triggered by immersion of the face in cold water during breath-holding?",
    "options": [
     "Immediate tachycardia to 200 bpm and cutaneous vasodilation",
-    "Trigeminal cold stimulation causes vagal bradycardia, peripheral vasoconstriction, and splenic contraction",
+    "Cold facial stimulation triggers trigeminal-vagal bradycardia and peripheral vasoconstriction",
     "Bronchodilation and rapid hyperventilation underwater",
     "Hypoglycemia and systemic hypotension"
    ],
@@ -791,7 +791,7 @@
    "q": "How do anti-G suits and the 'anti-G straining maneuver' (AGSM / Hick maneuver) protect fighter pilots against G-induced Loss of Consciousness (G-LOC) during high +Gz maneuvers?",
    "options": [
     "Anti-G suits cool the pilot's skin to 4 C to induce hibernation",
-    "Suit bladders compress the legs while the AGSM raises arterial pressure, sustaining cerebral perfusion",
+    "Suit bladders limit leg pooling; AGSM raises thoracic and arterial pressure",
     "The AGSM lowers systemic blood pressure to 50/20 mmHg",
     "Anti-G suits administer intravenous epinephrine"
    ],
@@ -836,7 +836,7 @@
    "sub": "Exercise Physiology",
    "q": "What is the 'respiratory exchange ratio' (R = VCO2 / VO2) during steady-state submaximal exercise versus above the anaerobic threshold?",
    "options": [
-    "R is ~0.70 on fat, ~0.80-0.85 on mixed diet, ~1.00 on carbohydrate; above the lactate threshold, buffering adds CO2 and R rises above 1.00",
+    "RER: ~0.70 fat, ~0.85 mixed diet, ~1.0 carbohydrate; rises above 1 with buffering",
     "R equals 0.10 during sprinting and 5.0 during sleep",
     "R is always fixed at 0.80 regardless of diet or exercise intensity",
     "R drops below 0.30 above the lactate threshold"
@@ -859,7 +859,7 @@
    "sub": "High-Altitude Physiology and Acclimatization",
    "q": "What is 'Cheyne-Stokes periodic breathing' commonly observed during sleep in unacclimatized newcomers at high altitude?",
    "options": [
-    "Hypoxic hyperventilation lowers PaCO2 below the apneic threshold, producing central apnea and cyclic breathing",
+    "Hypoxic hyperventilation lowers PaCO2 below the apnoeic threshold, causing central apnoea",
     "Continuous hyperventilation at 80 breaths/min throughout the night",
     "Obstructive snoring caused by tongue swelling",
     "Periodic breathing occurs only at sea level during REM sleep"
@@ -883,7 +883,7 @@
    "q": "What is 'alveolar-capillary squeeze' (thoracic squeeze) that limits the maximum depth of a breath-hold dive?",
    "options": [
     "Compression of the sciatic nerve by cold water",
-    "Below residual volume, negative alveolar pressure causes pulmonary vascular engorgement and hemorrhage",
+    "Below residual volume, negative alveolar pressure engorges and may rupture pulmonary capillaries",
     "Overexpansion of the lungs during descent",
     "Hypercapnic paralysis of the external intercostals"
    ],
@@ -906,7 +906,7 @@
    "q": "Why do astronauts performing extravehicular activity (EVA / spacewalks) pre-breathe 100% oxygen for 1-4 hours before exiting the spacecraft?",
    "options": [
     "Pre-breathing 100% O2 prevents solar radiation burns",
-    "Washes out dissolved nitrogen so the cabin-to-suit pressure drop does not cause decompression sickness",
+    "Pre-breathing oxygen washes out tissue nitrogen before suit depressurisation",
     "Pre-breathing O2 increases bone calcium deposition during the spacewalk",
     "Spacesuits are filled with 100% liquid helium"
    ],
@@ -928,7 +928,7 @@
    "sub": "Classification of Hypoxia (Barcroft's Four Types)",
    "q": "Why does cyanide (CN-) cause rapid, lethal histotoxic hypoxia despite normal arterial PO2, normal hemoglobin saturation, and normal cardiac output?",
    "options": [
-    "Cyanide binds ferric cytochrome c oxidase (Complex IV), blocking oxidative phosphorylation",
+    "Cyanide inhibits cytochrome c oxidase (Complex IV), blocking oxidative phosphorylation",
     "Cyanide destroys alveolar Type II pneumocytes",
     "Cyanide binds to plasma albumin and blocks renal filtration",
     "Cyanide causes complete airway obstruction"
@@ -951,7 +951,7 @@
    "sub": "High-Altitude Physiology and Acclimatization",
    "q": "What is the 'Armstrong limit' in aerospace physiology, located at approximately 19,000 meters (62,000-63,000 feet) altitude?",
    "options": [
-    "Altitude where ambient pressure equals water vapor pressure at 37 C, causing body fluids to vaporize",
+    "Altitude where barometric pressure equals water vapour pressure at 37°C (~47 mmHg)",
     "The altitude at which gravity drops to zero",
     "The altitude at which atmospheric oxygen reaches 50%",
     "The maximum height commercial airliners fly"
@@ -974,7 +974,7 @@
    "sub": "Exercise Physiology",
    "q": "In competitive endurance athletes, what is 'exercise-induced arterial hypoxemia' (EIAH), and why can it occur even in healthy lungs at extreme cardiac outputs (>30-35 L/min)?",
    "options": [
-    "Extreme cardiac output shortens pulmonary capillary transit time, preventing complete O2 equilibration",
+    "High cardiac output shortens pulmonary capillary transit, limiting O2 equilibration",
     "Athletes stop breathing completely during sprints",
     "Exercise destroys hemoglobin in the spleen",
     "EIAH occurs because alveolar PO2 drops to 20 mmHg at sea level"
@@ -1043,7 +1043,7 @@
    "sub": "Clinical Correlations",
    "q": "A 41-year-old factory worker is brought to the emergency department after inhaling smoke from burning polyurethane foam in an industrial fire. He is comatose, hypotensive, tachypneic, has severe high-anion-gap lactic acidosis (lactate 14 mmol/L), and shows an unusually elevated central venous oxygen saturation (ScvO2 = 91%) with bright-red venous blood. What poisoning is present and what is the mechanism?",
    "options": [
-    "Cyanide poisoning: cytochrome oxidase inhibition causes high venous O2 and lactic acidosis",
+    "Cyanide blocks cytochrome oxidase, causing high venous O2 and lactic acidosis",
     "Severe iron-deficiency anemia",
     "Simple hyperventilation syndrome",
     "Pulmonary embolism causing stagnant hypoxia"
@@ -1066,7 +1066,7 @@
    "sub": "Clinical Correlations",
    "q": "A 65-year-old woman with severe emphysema (baseline sea-level PaO2 57 mmHg, SpO2 89%, PaCO2 46 mmHg) plans to take a 6-hour commercial airline flight. During pre-flight evaluation, a hypoxia-altitude simulation test (breathing 15.1% O2 to mimic 8,000 ft cabin altitude) drops her PaO2 to 43 mmHg (SpO2 78%). Why does her oxygenation fall so sharply during flight, and what should be prescribed?",
    "options": [
-    "Cabin altitude lowers PiO2, pushing her onto the steep O2-Hb curve; prescribe in-flight O2 (2-4 L/min)",
+    "Low cabin PiO2 shifts PaO2 onto the steep O2-Hb curve; prescribe in-flight oxygen",
     "Commercial cabins drop to 0 mmHg barometric pressure; she must never travel",
     "Her hemoglobin shifts to fetal hemoglobin during takeoff",
     "No oxygen is needed unless SpO2 falls below 40%"
@@ -1112,7 +1112,7 @@
    "sub": "Clinical Correlations",
    "q": "A 24-year-old aerobatic pilot pulls out of a steep dive at +6.5 Gz without wearing an anti-G suit. She experiences progressive loss of peripheral vision ('tunnel vision'), complete loss of vision ('blackout') while still able to hear radio calls, and then loses consciousness for 12 seconds before recovering with clonic limb jerks as the aircraft levels off. What explains her recovery phase?",
    "options": [
-    "Relief of cerebral hypoperfusion can produce brief post-ischaemic myoclonic movements and a period of confusion",
+    "Reperfusion after cerebral ischaemia can cause brief myoclonus and confusion",
     "Recovery is caused by sudden severe hypoglycaemia from hepatic failure",
     "The symptoms indicate permanent spinal cord transection",
     "The recovery phase is caused by acute decompression sickness"
