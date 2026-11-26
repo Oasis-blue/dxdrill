@@ -73,6 +73,8 @@
       if (!html) html = '<p class="muted">No external media was found. Your question and explanation are still available above.</p>';
       target.innerHTML = '<section class="dx-media-panel"><div class="dx-media-head"><b>Visual learning · ' + esc(term) + '</b><button type="button" class="btn ghost small" data-media-close>Close</button></div>' + html +
         '<p class="dx-media-note">Supplementary references only. Check medical facts against your trusted course texts. Image licences and attribution are shown where available.</p></section>';
+      var close = target.querySelector("[data-media-close]");
+      if (close) close.addEventListener("click", function () { target.innerHTML = ""; });
     });
   }
   DX.media = { render: render };
