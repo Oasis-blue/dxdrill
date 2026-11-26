@@ -204,7 +204,7 @@
   }
   function render(el) {
     if (el) app = el;
-    if (!restored && DX.questions && DX.questions.length && !(P.run && !P.run.done)) restoreRun();
+    if (!restored && DX.questions && DX.questions.length && !DX.loadingQuestions && !(P.run && !P.run.done)) restoreRun();
     var h;
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
     if (P.report && rn) { P.report.note = rn.value; if (rr) P.report.reason = rr.value; }
