@@ -1,0 +1,35 @@
+{
+  "topic": "pe-pancreas",
+  "questions": [
+    {
+      "id": "pe-pancreas-001",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Insulin secretion",
+      "q": "A rise in blood glucose enters pancreatic beta cells and is metabolised. Which event links this metabolism to insulin granule exocytosis?",
+      "options": [
+        "Opening of ATP-sensitive K+ channels and membrane hyperpolarisation",
+        "Closure of ATP-sensitive K+ channels, membrane depolarisation and opening of voltage-gated Ca2+ channels",
+        "Inhibition of Ca2+ entry and reduced intracellular calcium",
+        "Activation of alpha-cell glucagon receptors on beta cells"
+      ],
+      "answer": 1,
+      "explain": "Glucose metabolism raises the ATP/ADP ratio in beta cells. ATP-sensitive K+ channels close, depolarising the membrane; voltage-gated Ca2+ channels then open and Ca2+ entry triggers insulin granule exocytosis."
+    },
+    {
+      "id": "pe-pancreas-002",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Glucagon",
+      "q": "During an overnight fast, plasma glucose is maintained partly by glucagon. Which hepatic process is stimulated early by this hormone?",
+      "options": [
+        "Glycogenolysis",
+        "Glycogen synthesis",
+        "Conversion of glucose to fatty acids",
+        "Suppression of gluconeogenesis"
+      ],
+      "answer": 0,
+      "explain": "Glucagon acts on hepatocytes through cAMP-dependent signalling to stimulate glycogenolysis and gluconeogenesis while inhibiting glycogen synthesis. Glycogenolysis is an important early source of glucose during fasting."
+    }
+  ]
+}
