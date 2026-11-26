@@ -246,12 +246,19 @@
   app.innerHTML = '<div class="wrap stack"><p class="muted">Loading questions…</p>' + nuggetHtml() + '</div>';
   nTimer = setInterval(function () { var t = document.getElementById("nugtext"); if (loaded || !t) { clearInterval(nTimer); return; } t.textContent = DX.nugget(); }, 7000);
   function retryBox(title, text) {
-    app.innerHTML = '<div class="wrap stack"><h1>' + esc(title) + '</h1><p class="lede">' + esc(text) + '</p><div class="row"><button class="btn primary" id="ld-retry" type="button">Try again</button></div>' + nuggetHtml() + '</div>';
+    app.innerHTML = '<div class="wrap stack"><h1>' + esc(title) + '</h1><p class="lede">' + esc(text) + '</p><div class="row"><button class="btn primary" id="ld-retry" type="button">Try again</button><a class="btn" href="help.html" style="text-decoration:none">Check my connection</a></div>' + nuggetHtml() + '</div>';
     var b = document.getElementById("ld-retry"); if (b) b.onclick = function () { location.reload(); };
   }
   setTimeout(function () { if (!loaded) retryBox("Still loading…", "Your connection looks slow. Wait a little longer, or tap Try again. Nothing has been lost: your scores are saved on this phone."); }, 9000);
   DX.load().then(function () {
     loaded = true; clearInterval(nTimer);
+    if (DX.partial && DX.toast) DX.toast("Still loading the rest of the questions…");
+    DX.onMore = function () {
+      if (DX.toast) DX.toast("All questions loaded.");
+      var h = (location.hash || "#home").slice(1);
+      if (h === "home" || h === "") route();
+      else if (h === "practice" && DX.practice && DX.practice.reset) { DX.practice.reset(); route(); }
+    };
     /* Pages that need the account check wait for it; everything else shows at once. */
     var CLOUDY = { screen: 1, remote: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
     var h0 = (location.hash || "#home").slice(1), waits = !!CLOUDY[h0];
