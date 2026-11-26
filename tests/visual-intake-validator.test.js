@@ -77,3 +77,19 @@ test("rejects duplicate IDs and malformed MCQ options",()=>{
   assert.ok(codes.includes("INVALID_OPTIONS"));
   fs.rmSync(root,{recursive:true,force:true});
 });
+
+test("rejects an image reference whose file is missing",()=>{
+  const root=setup(), intake=valid();
+  intake.assets[0].file="gross/not-present.png";
+  const result=validateIntake(intake,{root});
+  assert.ok(result.errors.some(e=>e.code==="IMAGE_NOT_FOUND"));
+  fs.rmSync(root,{recursive:true,force:true});
+});
+test("fails closed when the curriculum cannot be read",()=>{
+  const root=setup();
+  fs.rmSync(path.join(root,"data/curriculum.json"));
+  const result=validateIntake(valid(),{root});
+  assert.ok(result.errors.some(e=>e.code==="CURRICULUM_READ_ERROR"));
+  assert.ok(result.errors.some(e=>e.code==="UNKNOWN_TOPIC"));
+  fs.rmSync(root,{recursive:true,force:true});
+});
