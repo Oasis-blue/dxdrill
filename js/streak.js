@@ -24,6 +24,24 @@
     return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span>' + line + '</span><small>on this device' + (i.best > 1 ? " · best " + i.best : "") + '</small></div>';
   };
 
+  /* True/false statements count toward the daily streak without entering normal question history or leaderboards. */
+  DX.streakTick = function (count) {
+    count = Math.max(0, Number(count) || 0);
+    if (!count) return;
+    var s = load(), t = today(), msg = "";
+    if (s.d !== t) { s.d = t; s.n = 0; }
+    s.n += count;
+    if (s.last !== t && s.n >= DAY_MIN) {
+      s.c = (s.last === yesterday()) ? (s.c || 0) + 1 : 1;
+      s.last = t;
+      if (s.c > (s.best || 0)) s.best = s.c;
+      msg = s.c === 1 ? "Streak started. Come back tomorrow to keep it going." :
+        ([3, 7, 14, 30, 60, 100].indexOf(s.c) > -1 ? s.c + " days in a row. Well done." : s.c + "-day streak. See you tomorrow.");
+    }
+    S.set(KEY, s);
+    if (msg) setTimeout(function () { DX.toast(msg); }, 700);
+  };
+
   /* Toasts: one at a time, polite for screen readers, never blocks a tap. */
   var queue = [], showing = false;
   DX.toast = function (msg, kind) {

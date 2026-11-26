@@ -101,7 +101,7 @@ window.DX = window.DX || {};
   }
 
   DX.load = function () {
-    DX.questions = []; DX.terms = []; DX.topicById = {}; DX.areaById = {}; DX.subjectById = {};
+    DX.questions = []; DX.tfStems = []; DX.terms = []; DX.topicById = {}; DX.areaById = {}; DX.subjectById = {};
     var manP = getJSON("data/manifest.json");   /* fetched at the same time as the curriculum */
     manP.catch(function () { });
     return getJSON("data/curriculum.json").then(function (cur) {
@@ -131,6 +131,15 @@ window.DX = window.DX || {};
             var t = DX.topicById[q.topic] || fileT;
             if (!t) { bad++; return; }
             q.topic = t.id; q.area = t.area; q.subject = t.subject;
+            if (q.type === "tf") {
+              /* Keep true/false stems separate from every existing question mode. */
+              var okTf = q.id && q.q && Array.isArray(q.items) && q.items.length >= 4 && q.items.length <= 5 &&
+                q.items.every(function (x) { return x && x.text && typeof x.answer === "boolean" && x.explain; });
+              if (!okTf) { console.warn("Skipped a malformed true/false stem: " + q.id); return; }
+              if (DX.tfStems.some(function (x) { return x.id === q.id; })) { console.warn("Duplicate true/false id: " + q.id); return; }
+              DX.tfStems.push(q); t.tfCount = (t.tfCount || 0) + 1;
+              return;
+            }
             DX.questions.push(q); t.count++;
           });
           if (bad) console.warn(bad + " question(s) in " + f + " have no known topic and were skipped");
