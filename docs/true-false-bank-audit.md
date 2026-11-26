@@ -1,7 +1,7 @@
 # True/False bank quality audit — initial pass
 
 Date: 2026-11-26  
-Scope: the original nine-stem `tf-sample` file and the first expansion batch.
+Scope: the original nine-stem `tf-sample` file and the first two expansion batches.
 
 ## Editorial review of the original nine stems
 
@@ -37,6 +37,10 @@ Every new stem is explicitly marked `verified: false` and `reviewStatus: "draft-
 6. Explanations should teach the mechanism and correct the misconception.
 7. Keep source attribution and verification status separate from editorial review.
 8. Do not set `verified: true` until the answer key and explanations have been checked against a named authoritative source.
+
+## Structural validation
+
+The combined bank currently contains 45 stems across 17 curriculum topics. Automated checks on the branch found 45 unique IDs, valid topic references, 4–5 statements per stem, mixed True/False keys in every stem, non-empty explanations, and both files registered in the manifest. No structural issues were reported.
 
 ## Remaining work
 

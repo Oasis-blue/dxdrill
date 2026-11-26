@@ -161,7 +161,7 @@
     DX.tfStems.forEach(function (stem) { stem.items.forEach(function (x, i) { var v = st[sid(stem, i)]; if (!v || !v.n) return; var a = totals[stem.topic] || (totals[stem.topic] = { n: 0, c: 0 }); a.n += v.n; a.c += v.c; }); });
     var weak = {}; Object.keys(totals).forEach(function (id) { if (totals[id].n >= 3 && totals[id].c / totals[id].n < 0.7) weak[id] = true; });
     if (!Object.keys(weak).length) { T.note = "No topic has enough attempts below 70% yet. Keep practising to build a reliable picture."; paint(); return; }
-    T.sel = {}; DX.tfStems.forEach(function (s) { T.sel[s.topic] = !!weak[s.topic]; }); T.only = true; T.note = "Showing topics below 70% accuracy (at least 3 attempts)."; paint(); window.scrollTo(0, 0);
+    T.sel = {}; DX.tfStems.forEach(function (s) { T.sel[s.topic] = !!weak[s.topic]; }); T.only = false; T.note = "Showing all stems from topics below 70% accuracy (at least 3 attempts)."; paint(); window.scrollTo(0, 0);
   }
 
   /* ---------- results ---------- */
