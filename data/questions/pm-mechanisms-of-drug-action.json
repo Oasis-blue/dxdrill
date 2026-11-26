@@ -79,10 +79,10 @@
    "sub": "Non-Receptor Mechanisms",
    "q": "Which mechanism explains how cholestyramine lowers plasma LDL cholesterol?",
    "options": [
-    "Competitive inhibition of hepatic HMG-CoA reductase",
-    "Activation of peroxisome proliferator-activated receptor alpha",
-    "Inhibition of pancreatic lipase in the duodenum",
-    "Binding of negatively charged bile acids in the intestinal lumen to prevent enterohepatic reabsorption"
+    "HMG-CoA reductase inhibition",
+    "PPAR-alpha activation",
+    "Pancreatic lipase inhibition",
+    "Binding intestinal bile acids and reducing their reabsorption"
    ],
    "answer": 3,
    "explain": "Cholestyramine is a non-absorbable anion-exchange resin that sequesters bile acids in the gut, forcing hepatocytes to convert more cholesterol into bile acids and upregulate LDL receptors.",
@@ -102,10 +102,10 @@
    "sub": "Non-Receptor Mechanisms",
    "q": "How does mannitol reduce intracranial pressure in cerebral oedema?",
    "options": [
-    "By creating an osmotic gradient that draws water out of brain parenchyma into the intravascular space",
-    "By constricting cerebral arterioles via alpha-1 adrenoceptor stimulation",
-    "By inhibiting carbonic anhydrase in the choroid plexus",
-    "By blocking aquaporin-4 channels in astrocytes"
+    "It creates an osmotic gradient that draws water from brain tissue into blood",
+    "It constricts cerebral arterioles via alpha-1 receptors",
+    "It inhibits choroid-plexus carbonic anhydrase",
+    "It blocks astrocyte aquaporin-4 channels"
    ],
    "answer": 0,
    "explain": "Mannitol is a pharmacologically inert, freely filtered sugar alcohol that remains confined to the vascular space and draws interstitial fluid out of oedematous brain tissue via osmosis.",
@@ -171,10 +171,10 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "What is a suicide inhibitor (mechanism-based enzyme inactivator), as exemplified by allopurinol or clavulanic acid?",
    "options": [
-    "A drug that destroys the host cell nucleus immediately upon binding",
-    "A reversible antagonist displaced easily by high substrate concentrations",
-    "An antibody that precipitates enzymes out of the bloodstream",
-    "A substrate analogue converted by the target enzyme itself into a reactive intermediate that covalently inactivates the enzyme"
+    "A drug that immediately destroys the host-cell nucleus",
+    "A reversible antagonist displaced by high substrate levels",
+    "An antibody that precipitates circulating enzymes",
+    "A substrate analogue converted by its target enzyme into a reactive inhibitor"
    ],
    "answer": 3,
    "explain": "In suicide inhibition, the target enzyme catalyzes the conversion of the drug into a reactive product that forms a covalent bond with the enzyme's active site (e.g., allopurinol to oxypurinol on xanthine oxidase).",
@@ -217,10 +217,10 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "How do local anesthetics such as lidocaine and bupivacaine block nerve impulse conduction?",
    "options": [
-    "By opening voltage-gated potassium channels to hyperpolarize axons",
-    "By binding to the intracellular side of voltage-gated Na+ channels and blocking sodium influx",
-    "By inhibiting Na+/K+-ATPase pumps in Schwann cells",
-    "By depleting acetylcholine vesicles at nodes of Ranvier"
+    "Opening voltage-gated K+ channels to hyperpolarise axons",
+    "Binding the intracellular Na+ channel pore and blocking sodium influx",
+    "Inhibiting Schwann-cell Na+/K+-ATPase",
+    "Depleting acetylcholine vesicles"
    ],
    "answer": 1,
    "explain": "Local anesthetics diffuse across the axonal membrane in their uncharged form, re-ionize intracellularly, and block voltage-gated Na+ channels preferentially in their open and inactivated states.",
@@ -286,10 +286,10 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "How do selective serotonin reuptake inhibitors (SSRIs) such as fluoxetine and sertraline exert their pharmacological action?",
    "options": [
-    "By blocking the presynaptic serotonin transporter (SERT) to increase synaptic 5-HT concentration",
-    "By inhibiting monoamine oxidase-A in the mitochondrial outer membrane",
-    "By directly stimulating postsynaptic 5-HT3 receptors",
-    "By increasing hepatic synthesis of L-tryptophan"
+    "Blocking presynaptic SERT to increase synaptic serotonin",
+    "Inhibiting mitochondrial MAO-A",
+    "Stimulating postsynaptic 5-HT3 receptors",
+    "Increasing hepatic tryptophan synthesis"
    ],
    "answer": 0,
    "explain": "SSRIs selectively inhibit the Na+/Cl--dependent serotonin reuptake transporter (SERT) on presynaptic nerve endings, enhancing serotonergic neurotransmission.",
@@ -495,10 +495,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "What is the specific intracellular role of inositol 1,4,5-trisphosphate (IP3) following Gq-coupled receptor activation?",
    "options": [
-    "It directly activates protein kinase A in the cytosol",
-    "It binds IP3 receptors on the endoplasmic/sarcoplasmic reticulum to release stored Ca2+ into the cytosol",
-    "It degrades cyclic AMP into 5'-AMP",
-    "It hyperpolarizes the cell membrane by exporting K+ ions"
+    "Direct activation of cytosolic PKA",
+    "Binding IP3 receptors to release stored intracellular Ca2+",
+    "Breaking down cAMP to 5′-AMP",
+    "Exporting K+ to hyperpolarise the membrane"
    ],
    "answer": 1,
    "explain": "Water-soluble IP3 diffuses through the cytosol and opens ligand-gated Ca2+ channels on the endoplasmic or sarcoplasmic reticulum, causing a rapid spike in cytosolic free Ca2+.",
@@ -541,10 +541,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "How does cholera toxin cause massive secretory diarrhoea at the G-protein signaling level in intestinal epithelial cells?",
    "options": [
-    "It irreversibly inactivates Gi via ADP-ribosylation",
-    "It blocks IP3 receptors on the endoplasmic reticulum",
-    "It destroys all transmembrane adenylyl cyclase molecules",
-    "It ADP-ribosylates Gs-alpha, inhibiting its intrinsic GTPase activity and locking adenylyl cyclase permanently active"
+    "ADP-ribosylating Gi",
+    "Blocking ER IP3 receptors",
+    "Destroying adenylyl cyclase",
+    "ADP-ribosylating Gs, keeping adenylyl cyclase active"
    ],
    "answer": 3,
    "explain": "Cholera toxin permanently activates Gs-alpha by preventing GTP hydrolysis, causing continuous cAMP production, CFTR chloride channel opening, and massive water/electrolyte loss.",
@@ -564,10 +564,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "How does pertussis toxin (from Bordetella pertussis) disrupt G-protein-coupled signaling?",
    "options": [
-    "It ADP-ribosylates Gi-alpha, locking it in the inactive GDP-bound state and preventing inhibition of adenylyl cyclase",
-    "It permanently activates Gq-alpha to deplete intracellular calcium",
-    "It cleaves nuclear steroid receptors",
-    "It blocks voltage-gated sodium channels in cardiac muscle"
+    "ADP-ribosylating Gi, preventing inhibition of adenylyl cyclase",
+    "Activating Gq to deplete intracellular calcium",
+    "Cleaving nuclear steroid receptors",
+    "Blocking cardiac Na+ channels"
    ],
    "answer": 0,
    "explain": "Pertussis toxin uncouples Gi from its receptor by ADP-ribosylating Gi-alpha in its GDP-bound form, abolishing Gi-mediated inhibition of adenylyl cyclase.",
@@ -611,10 +611,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "How do nitric oxide (NO) and organic nitrates (such as glyceryl trinitrate) relax vascular smooth muscle?",
    "options": [
-    "By activating membrane-bound adenylyl cyclase to raise cAMP",
-    "By opening L-type voltage-gated Ca2+ channels",
-    "By activating soluble guanylyl cyclase to increase cGMP, stimulating protein kinase G and myosin light-chain dephosphorylation",
-    "By binding directly to nuclear glucocorticoid response elements"
+    "Activating membrane adenylyl cyclase to raise cAMP",
+    "Opening L-type calcium channels",
+    "Activating soluble guanylyl cyclase, raising cGMP and PKG activity",
+    "Binding nuclear glucocorticoid response elements"
    ],
    "answer": 2,
    "explain": "Nitric oxide binds the haem moiety of cytosolic soluble guanylyl cyclase, raising cGMP and activating PKG, which lowers cytosolic Ca2+ and activates myosin light-chain phosphatase.",
@@ -658,10 +658,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "Where are receptors for glucocorticoids, mineralocorticoids, sex steroids, thyroid hormones, and vitamin D located?",
    "options": [
-    "Intracellularly (in the cytoplasm or nucleus), acting as ligand-regulated transcription factors",
-    "On the outer surface of the plasma membrane coupled to Gs proteins",
-    "Inside synaptic vesicles awaiting exocytosis",
-    "Within the lumen of the rough endoplasmic reticulum"
+    "Inside cells, where they regulate gene transcription",
+    "On the cell surface via Gs proteins",
+    "Inside synaptic vesicles",
+    "In the rough ER lumen"
    ],
    "answer": 0,
    "explain": "Lipophilic hormones diffuse across the plasma membrane to bind intracellular nuclear receptors, which dimerize and bind hormone response elements (HREs) on DNA to alter gene transcription.",
@@ -681,10 +681,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "Why do corticosteroids and thyroid hormones exhibit a characteristic lag period of several hours before their full clinical effects appear, even after intravenous administration?",
    "options": [
-    "They require active uptake by hepatic Kupffer cells first",
-    "Their mechanism requires modulation of DNA transcription and de novo synthesis of new proteins",
-    "They are bound 99.99% to red blood cell membranes",
-    "They must first be converted into active glycosides in the kidney"
+    "They require uptake by Kupffer cells",
+    "They alter transcription and require new protein synthesis",
+    "They bind almost exclusively to RBC membranes",
+    "They must be activated in the kidney"
    ],
    "answer": 1,
    "explain": "Because nuclear receptors alter mRNA transcription and protein translation, clinical effects develop slowly over hours to days and persist after plasma hormone levels fall.",
@@ -727,10 +727,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "Which signaling pathway is utilized by cytokines such as erythropoietin, interferons, and growth hormone?",
    "options": [
-    "Gs-adenylyl cyclase-cAMP pathway",
-    "Gq-phospholipase C-IP3 pathway",
-    "Voltage-gated sodium channel opening",
-    "JAK-STAT (Janus kinase - Signal Transducer and Activator of Transcription) pathway"
+    "Gs–adenylyl cyclase–cAMP",
+    "Gq–PLC–IP3",
+    "Voltage-gated sodium-channel opening",
+    "JAK–STAT signalling"
    ],
    "answer": 3,
    "explain": "Cytokine receptors lack intrinsic kinase domains; ligand-induced dimerization activates associated Janus kinases (JAKs), which phosphorylate STAT proteins that dimerize and enter the nucleus.",
@@ -750,10 +750,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "In receptor pharmacology, how is 'affinity' distinguished from 'intrinsic activity' (efficacy)?",
    "options": [
-    "Affinity is the ability of a drug to bind to a receptor, whereas intrinsic activity is its ability to activate the receptor and produce a biological response",
-    "Affinity is the maximum clinical effect produced, whereas intrinsic activity is the dose required for 50% binding",
-    "Affinity applies only to antagonists, whereas intrinsic activity applies only to enzymes",
-    "Affinity is measured in hours, whereas intrinsic activity is measured in litres"
+    "Affinity is receptor binding; intrinsic activity is receptor activation and response",
+    "Affinity is maximal effect; intrinsic activity is dose for half-binding",
+    "Affinity applies only to antagonists",
+    "Affinity is measured in hours; intrinsic activity in litres"
    ],
    "answer": 0,
    "explain": "Both agonists and antagonists possess affinity for the receptor, but only agonists possess intrinsic activity (efficacy > 0) to stabilize the active receptor conformation.",
@@ -819,10 +819,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "How does an inverse agonist (such as beta-carbolines at GABA-A receptors) differ pharmacologically from a neutral competitive antagonist?",
    "options": [
-    "An inverse agonist increases the constitutive basal activity of the receptor",
-    "An inverse agonist binds only to intracellular DNA",
-    "An inverse agonist acts exclusively by chelating extracellular ions",
-    "An inverse agonist preferentially stabilizes the inactive receptor conformation, reducing basal constitutive activity below resting baseline"
+    "An inverse agonist increases basal receptor activity",
+    "It binds only to intracellular DNA",
+    "It chelates extracellular ions",
+    "It stabilises inactive receptors and lowers constitutive activity"
    ],
    "answer": 3,
    "explain": "In receptor systems with constitutive (ligand-independent) activity, a neutral antagonist blocks agonists without changing basal tone, whereas an inverse agonist actively suppresses basal signaling.",
@@ -842,10 +842,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "How does the presence of a reversible competitive antagonist (such as atropine against acetylcholine) alter the log dose-response curve of an agonist?",
    "options": [
-    "Shifts the curve parallel to the right (increasing EC50) without reducing the maximal response (Emax)",
-    "Lowers the maximal response (Emax) without changing the EC50",
-    "Shifts the curve parallel to the left (decreasing EC50)",
-    "Converts a hyperbolic curve into a vertical straight line"
+    "Shifts the curve right (higher EC50) without lowering Emax",
+    "Lowers Emax without changing EC50",
+    "Shifts the curve left",
+    "Makes the curve vertical"
    ],
    "answer": 0,
    "explain": "Because reversible competitive inhibition is surmountable by increasing agonist concentration, a higher agonist dose is needed for 50% effect (higher EC50), but the same Emax can still be achieved.",
@@ -865,10 +865,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "How does a non-competitive or irreversible antagonist (such as phenoxybenzamine at alpha-adrenoceptors) affect the agonist log dose-response curve when no spare receptors exist?",
    "options": [
-    "Shifts the curve parallel to the left with higher Emax",
-    "Depresses the maximal response (Emax) downward because inhibition cannot be overcome by excess agonist",
-    "Leaves both EC50 and Emax completely unchanged",
-    "Doubles the slope of the curve while increasing Emax"
+    "Shifts the curve left and raises Emax",
+    "Lowers Emax because excess agonist cannot overcome the block",
+    "Leaves EC50 and Emax unchanged",
+    "Doubles slope and raises Emax"
    ],
    "answer": 1,
    "explain": "Irreversible or allosteric non-competitive antagonists remove functional receptors from the pool, making the block insurmountable and lowering Emax.",
@@ -888,10 +888,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is the concept of 'spare receptors' (receptor reserve)?",
    "options": [
-    "Receptors stored inside hepatic lysosomes for emergency synthesis",
-    "Mutated receptors that have lost all ability to bind ligands",
-    "A maximal biological response (Emax) is achieved when only a small fraction of total tissue receptors is occupied by an agonist",
-    "Receptors found exclusively in fetal life that disappear after birth"
+    "Receptors stored in hepatic lysosomes",
+    "Receptors unable to bind ligands",
+    "A maximal response occurs despite occupancy of only some receptors",
+    "Receptors found only in fetal life"
    ],
    "answer": 2,
    "explain": "When spare receptors exist (e.g., myocardial beta-1 receptors), EC50 is much lower than the dissociation constant Kd, and low doses of an irreversible antagonist initially shift the curve right before Emax falls.",
@@ -980,10 +980,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "Why is the Certain Safety Factor (LD1 / ED99) sometimes preferred over the standard Therapeutic Index (LD50 / ED50) when evaluating drug safety?",
    "options": [
-    "It uses fewer experimental animals",
-    "It eliminates the need to measure plasma concentrations",
-    "It accounts for the slopes of the dose-response curves, ensuring the dose effective in 99% of subjects does not kill even 1%",
-    "It measures drug potency rather than toxicity"
+    "It uses fewer animals",
+    "It removes the need for plasma measurements",
+    "It compares dose-response slopes to assess effective and lethal dose separation",
+    "It measures potency rather than toxicity"
    ],
    "answer": 2,
    "explain": "Two drugs can share the same LD50/ED50 ratio, yet if the toxicity curve has a shallow slope, an ED99 dose might overlap with the lethal range; LD1/ED99 detects this overlap.",
@@ -1049,10 +1049,10 @@
    "sub": "Receptor Regulation",
    "q": "What is 'tachyphylaxis'?",
    "options": [
-    "A gradual increase in drug response after months of therapy",
-    "Acute, rapid development of tolerance (diminished response) after just a few closely spaced doses of a drug",
-    "A severe allergic anaphylactic reaction to the very first dose",
-    "Abnormally rapid renal clearance of a drug in children"
+    "Tolerance developing over months",
+    "Rapid tolerance after closely spaced doses",
+    "Anaphylaxis after the first dose",
+    "Rapid renal drug clearance in children"
    ],
    "answer": 1,
    "explain": "Tachyphylaxis is rapid desensitization occurring over minutes to hours (e.g., repeated ephedrine or tyramine doses depleting noradrenaline stores, or continuous nitroglycerin infusion depleting sulfhydryl groups).",
@@ -1072,10 +1072,10 @@
    "sub": "Receptor Regulation",
    "q": "Which molecular sequence mediates homologous desensitization and internalization of activated G-protein-coupled receptors?",
    "options": [
-    "Cleavage of the receptor by plasma pseudocholinesterase",
-    "Transcription of new receptor mRNA in the nucleolus",
-    "Phosphorylation of the receptor by G-protein-coupled receptor kinases (GRKs) followed by beta-arrestin binding and endocytosis",
-    "Direct binding of cyclic GMP to the extracellular N-terminus"
+    "Receptor cleavage by plasma cholinesterase",
+    "New receptor mRNA synthesis",
+    "GRK phosphorylation followed by beta-arrestin binding and endocytosis",
+    "cGMP binding to the receptor exterior"
    ],
    "answer": 2,
    "explain": "GRKs phosphorylate the intracellular C-terminal tail of persistently stimulated GPCRs, recruiting beta-arrestin which sterically uncouples the G-protein and promotes clathrin-mediated endocytosis.",
@@ -1095,10 +1095,10 @@
    "sub": "Receptor Regulation",
    "q": "What happens to myocardial beta-1 adrenoceptor density during prolonged therapy with a beta-blocker like propranolol, and why must the drug NOT be stopped abruptly?",
    "options": [
-    "Receptors are destroyed, causing permanent bradycardia",
-    "Receptors convert into muscarinic M2 receptors",
-    "Receptor density remains fixed, so abrupt withdrawal has no effect",
-    "Receptor upregulation can cause rebound tachycardia, hypertension or ischaemia after abrupt withdrawal"
+    "Receptor destruction causes permanent bradycardia",
+    "Receptors convert into M2 receptors",
+    "Receptor density stays fixed after withdrawal",
+    "Upregulation may cause rebound tachycardia, hypertension or ischaemia"
    ],
    "answer": 3,
    "explain": "Chronic receptor blockade increases surface receptor synthesis/externalization (upregulation/supersensitivity); sudden cessation precipitates rebound hypertension, tachycardia, and ischaemia.",
@@ -1141,10 +1141,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "A patient with phaeochromocytoma is prepared for surgery using phenoxybenzamine, which forms a covalent bond with alpha-1 and alpha-2 adrenoceptors. Why does the alpha-blockade persist for several days even after the drug is cleared from plasma?",
    "options": [
-    "Phenoxybenzamine is stored in dental enamel",
-    "Recovery requires synthesis of brand-new alpha-adrenoceptor proteins because receptor inactivation is irreversible",
-    "Phenoxybenzamine inhibits renal clearance of catecholamines",
-    "Phenoxybenzamine acts as a partial agonist at beta-2 receptors"
+    "Phenoxybenzamine is stored in enamel",
+    "Recovery requires synthesis of new alpha-adrenoceptors because blockade is irreversible",
+    "It reduces renal catecholamine clearance",
+    "It partially activates beta-2 receptors"
    ],
    "answer": 1,
    "explain": "Phenoxybenzamine is a haloalkylamine that alkylates alpha-adrenoceptors irreversibly; restoration of sympathetic vasoconstriction depends on de novo receptor protein turnover.",
@@ -1164,10 +1164,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "How do benzodiazepines such as diazepam act as positive allosteric modulators (PAMs) at the GABA-A receptor?",
    "options": [
-    "They bind directly to the GABA orthosteric site and open the Cl- channel even in the complete absence of GABA",
-    "They block the Cl- pore to prevent neuronal hyperpolarization",
-    "They bind to a distinct allosteric site on the GABA-A receptor, increasing the affinity for endogenous GABA and the frequency of Cl- channel opening",
-    "They inhibit GABA transaminase inside glial mitochondria"
+    "They open GABA-A channels without GABA",
+    "They block the chloride pore",
+    "They bind an allosteric GABA-A site, increasing GABA affinity and channel-opening frequency",
+    "They inhibit GABA transaminase"
    ],
    "answer": 2,
    "explain": "Benzodiazepines bind at the interface between alpha and gamma subunits of GABA-A receptors (an allosteric site separate from the GABA binding site) and require endogenous GABA to increase Cl- channel opening frequency.",
@@ -1209,7 +1209,7 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "Which enzyme is inhibited by captopril, enalapril, and lisinopril?",
    "options": [
-    "Angiotensin-converting enzyme (peptidyl dipeptidase)",
+    "Angiotensin-converting enzyme",
     "Renin",
     "Neprilysin",
     "Aldosterone synthase"
@@ -1259,8 +1259,8 @@
    "options": [
     "Loop diuretics",
     "ACE inhibitors",
-    "Dihydropyridines (amlodipine, nifedipine) and non-dihydropyridines (verapamil, diltiazem)",
-    "Alpha-1 blockers (prazosin)"
+    "Dihydropyridine and non-dihydropyridine calcium-channel blockers",
+    "Alpha-1 blockers"
    ],
    "answer": 2,
    "explain": "Calcium channel blockers bind the alpha-1 subunit of L-type voltage-gated Ca2+ channels, reducing Ca2+ influx, peripheral vascular resistance, and (for verapamil/diltiazem) SA/AV nodal conduction.",
@@ -1326,10 +1326,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "How is the signal of an activated G-alpha-GTP subunit terminated physiologically?",
    "options": [
-    "Exocytosis of the G-alpha subunit into the extracellular fluid",
-    "Hydrolysis of bound GTP to GDP by the intrinsic GTPase activity of G-alpha, accelerated by RGS proteins",
-    "Complete proteolysis of the entire GPCR by plasma thrombin",
-    "Phosphorylation of GDP back to GTP by adenylyl cyclase"
+    "G-alpha is exocytosed",
+    "G-alpha hydrolyses GTP to GDP, a process accelerated by RGS proteins",
+    "The GPCR is cleaved by thrombin",
+    "Adenylyl cyclase phosphorylates GDP to GTP"
    ],
    "answer": 1,
    "explain": "G-alpha possesses intrinsic GTPase activity (enhanced by Regulators of G-protein Signaling, RGS) that hydrolyzes GTP to GDP, allowing G-alpha-GDP to reassociate with G-beta-gamma.",
@@ -1372,10 +1372,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is a 'biased agonist' (functional selectivity) at a G-protein-coupled receptor?",
    "options": [
-    "A drug that works only in male patients",
-    "A drug that binds only mutated cancer receptors",
-    "A drug with equal potency at all receptor types",
-    "A ligand that preferentially activates one downstream signalling pathway over another"
+    "A drug effective only in men",
+    "A drug that binds only mutant cancer receptors",
+    "A drug equally potent at all receptors",
+    "A ligand that preferentially activates one signalling pathway"
    ],
    "answer": 3,
    "explain": "Biased agonists selectively engage specific intracellular effectors (such as G-protein signaling without beta-arrestin recruitment), offering the potential for therapeutic efficacy with fewer adverse effects.",
@@ -1395,10 +1395,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What does a quantal dose-response curve measure across a population of subjects?",
    "options": [
-    "The cumulative percentage of individuals exhibiting a specified all-or-none (binary) response at each dose",
-    "The continuous increase in heart rate in a single isolated atrium",
-    "The plasma half-life of a drug across different age groups",
-    "The rate of hepatic enzyme induction over 30 days"
+    "Cumulative proportion of people showing an all-or-none response at each dose",
+    "Continuous heart-rate increase in one atrium",
+    "Plasma half-life across age groups",
+    "Rate of hepatic enzyme induction"
    ],
    "answer": 0,
    "explain": "Unlike graded dose-response curves (which measure continuous intensity in one biological system), quantal curves plot the frequency of a defined all-or-none endpoint (e.g., sleep, seizure prevention, death) in a population.",
@@ -1418,10 +1418,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "Why are drug dose-response relationships conventionally plotted with the logarithm of the drug concentration on the horizontal axis?",
    "options": [
-    "Because drugs are excreted logarithmically by the glomerulus",
-    "It compresses a wide concentration range and gives a sigmoid curve with a near-linear middle section",
-    "It removes the need to measure maximal efficacy",
-    "Because receptors bind drugs only at logarithmic intervals"
+    "Because renal excretion is logarithmic",
+    "It compresses the concentration range and produces a sigmoid curve",
+    "It removes the need to measure efficacy",
+    "Receptors bind only at logarithmic intervals"
    ],
    "answer": 1,
    "explain": "A semilogarithmic plot allows comparison of drugs differing in potency by orders of magnitude and yields a nearly linear central segment between 20% and 80% of Emax.",
@@ -1487,10 +1487,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "A 19-year-old student with severe acute asthma receives nebulized salbutamol (a beta-2 agonist) alongside intravenous hydrocortisone. Why does hydrocortisone restore responsiveness to salbutamol in a patient who had become refractory to beta-2 agonists?",
    "options": [
-    "Glucocorticoids upregulate transcription and surface expression of beta-2 adrenoceptors and reverse receptor desensitization",
-    "Hydrocortisone directly cleaves salbutamol into adrenaline",
-    "Hydrocortisone blocks muscarinic M2 receptors on airway epithelium",
-    "Hydrocortisone acts as an osmotic diuretic in the alveoli"
+    "Glucocorticoids increase beta-2 receptor expression and reverse desensitisation",
+    "Hydrocortisone converts salbutamol to adrenaline",
+    "It blocks airway M2 receptors",
+    "It acts as an alveolar osmotic diuretic"
    ],
    "answer": 0,
    "explain": "Glucocorticoids increase beta-2 adrenoceptor gene transcription and prevent receptor downregulation, restoring bronchodilator sensitivity in status asthmaticus.",
@@ -1533,10 +1533,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is 'potentiation' in pharmacology, as illustrated by combining carbidopa with levodopa?",
    "options": [
-    "Two active drugs producing identical effects at the same receptor",
-    "A drug losing its effect after repeated administration",
-    "An inactive compound (carbidopa) enhancing the therapeutic effect of an active drug (levodopa)",
-    "Chemical precipitation of two drugs inside an intravenous infusion bag"
+    "Two active drugs produce the same effect at one receptor",
+    "A drug loses effect after repeated dosing",
+    "Carbidopa enhances levodopa by inhibiting peripheral metabolism",
+    "Two drugs precipitate in an infusion bag"
    ],
    "answer": 2,
    "explain": "Carbidopa has no antiparkinsonian action on its own, but by inhibiting peripheral DOPA decarboxylase, it markedly increases the CNS delivery and efficacy of levodopa.",
@@ -1558,8 +1558,8 @@
    "options": [
     "Nuclear zinc-finger receptor",
     "Ligand-gated sodium channel",
-    "G-protein-coupled Gi receptor",
-    "Transmembrane receptor guanylyl cyclase (particulate guanylyl cyclase)"
+    "Gi-coupled receptor",
+    "Membrane guanylyl-cyclase receptor"
    ],
    "answer": 3,
    "explain": "NPR-A and NPR-B are single-transmembrane receptors possessing intrinsic intracellular guanylyl cyclase domains that generate cGMP directly upon ANP/BNP binding.",
@@ -1601,10 +1601,10 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "How do statins such as atorvastatin and rosuvastatin lower hepatic cholesterol synthesis?",
    "options": [
-    "By activating lipoprotein lipase in adipose tissue",
-    "By competitively inhibiting HMG-CoA reductase, the rate-limiting enzyme of cholesterol biosynthesis",
-    "By blocking intestinal NPC1L1 cholesterol transporters",
-    "By inhibiting pancreatic cholesterol esterase"
+    "Activating adipose lipoprotein lipase",
+    "Competitively inhibiting HMG-CoA reductase",
+    "Blocking intestinal NPC1L1",
+    "Inhibiting pancreatic cholesterol esterase"
    ],
    "answer": 1,
    "explain": "Statins are structural analogues of HMG-CoA that competitively inhibit HMG-CoA reductase, depleting hepatocyte cholesterol and upregulating hepatic LDL receptors.",
@@ -1624,10 +1624,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "Why does cardiac beta-1 adrenoceptor activation increase heart rate (positive chronotropy) and contractility (positive inotropy)?",
    "options": [
-    "It stimulates Gi and closes L-type calcium channels",
-    "It opens GABA-gated chloride channels in the SA node",
-    "It activates Gs-cAMP-PKA signalling, increasing calcium entry and accelerating pacemaker activity",
-    "It activates soluble guanylyl cyclase and raises cGMP"
+    "Stimulating Gi and closing L-type Ca2+ channels",
+    "Opening GABA-gated chloride channels in the SA node",
+    "Activating Gs–cAMP–PKA to increase calcium entry and pacemaker rate",
+    "Activating soluble guanylyl cyclase"
    ],
    "answer": 2,
    "explain": "Gs-cAMP-PKA signaling enhances Ca2+ influx through L-type channels, accelerates SERCA Ca2+ reuptake via phospholamban phosphorylation, and speeds diastolic depolarization in the SA node.",
@@ -1647,10 +1647,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "Why does bronchial beta-2 adrenoceptor stimulation cause smooth muscle relaxation (bronchodilation) via the exact same Gs-cAMP-PKA pathway that causes contraction in cardiac muscle?",
    "options": [
-    "Bronchial smooth muscle contains no actin or myosin",
-    "Pulmonary beta-2 receptors are coupled to Gi rather than Gs",
-    "PKA destroys intracellular ATP in bronchial smooth muscle",
-    "PKA inhibits myosin light-chain kinase, reducing myosin phosphorylation and promoting relaxation"
+    "Bronchial smooth muscle lacks actin and myosin",
+    "Beta-2 receptors couple to Gi",
+    "PKA depletes ATP in airway muscle",
+    "PKA inhibits myosin light-chain kinase, promoting relaxation"
    ],
    "answer": 3,
    "explain": "Tissue-specific intracellular substrates determine the physiological outcome: in smooth muscle, PKA inhibits MLCK and promotes Ca2+ sequestration, whereas in myocardium PKA enhances Ca2+ cycling.",
@@ -1670,10 +1670,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is 'heterologous desensitization' of receptors?",
    "options": [
-    "Activation of one receptor pathway reduces responses of other receptors that share downstream signalling machinery",
-    "Desensitisation is limited to the stimulated receptor subtype",
-    "Chronic antagonism increases receptor sensitivity",
-    "Hepatic enzyme induction reduces receptor binding"
+    "One receptor pathway reduces another's response through shared signalling components",
+    "Only the stimulated receptor can desensitise",
+    "Chronic antagonism always increases sensitivity",
+    "Enzyme induction reduces receptor binding"
    ],
    "answer": 0,
    "explain": "In heterologous desensitization, second-messenger kinases (PKA or PKC) activated by one receptor phosphorylate other nearby receptors or signaling effectors, dampening responses across multiple receptor classes.",
@@ -1693,8 +1693,8 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "Which antidepressant class acts by inhibiting the mitochondrial enzyme that oxidatively deaminates noradrenaline, serotonin, and dopamine in presynaptic nerve terminals?",
    "options": [
-    "Selective serotonin reuptake inhibitors",
-    "Monoamine oxidase inhibitors (MAOIs, such as phenelzine and tranylcypromine)",
+    "SSRIs",
+    "Monoamine oxidase inhibitors (MAOIs)",
     "Tricyclic antidepressants",
     "Benzodiazepines"
    ],
@@ -1716,10 +1716,10 @@
    "sub": "Non-Receptor Mechanisms",
    "q": "How does activated charcoal prevent systemic toxicity in acute oral drug poisoning?",
    "options": [
-    "By chemically oxidizing toxins into carbon dioxide and water",
-    "By stimulating brisk osmotic diarrhoea in the colon",
-    "By physical adsorption of drug molecules onto its large porous surface area in the gastrointestinal lumen",
-    "By inducing hepatic CYP3A4 enzymes"
+    "Chemical oxidation of toxins to carbon dioxide and water",
+    "Osmotic diarrhoea",
+    "Adsorption of drug molecules onto a porous GI surface",
+    "Induction of hepatic CYP3A4"
    ],
    "answer": 2,
    "explain": "Activated charcoal possesses an enormous microporous surface area that physically adsorbs many organic toxins in the gut lumen, preventing their mucosal absorption.",
@@ -1739,10 +1739,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "Which pharmacokinetic interaction exemplifies 'pharmacokinetic antagonism', where one drug reduces the plasma concentration of another drug at its site of action?",
    "options": [
-    "Atropine blocking acetylcholine at muscarinic M3 receptors",
-    "Protamine sulfate binding directly to heparin in plasma",
-    "Glucagon reversing beta-blocker-induced bradycardia via Gs receptors",
-    "Phenobarbital inducing hepatic CYP enzymes to accelerate warfarin metabolism and diminish its anticoagulant effect"
+    "Atropine blocks M3 receptors",
+    "Protamine binds heparin",
+    "Glucagon reverses beta-blocker bradycardia",
+    "Phenobarbital induces hepatic CYP enzymes and increases warfarin metabolism"
    ],
    "answer": 3,
    "explain": "Pharmacokinetic antagonism occurs when the antagonist reduces absorption, increases metabolism, or accelerates excretion of the active drug, lowering its effective concentration at the target receptor.",
@@ -1784,10 +1784,10 @@
    "sub": "Enzymes, Ion Channels, and Transporters",
    "q": "A 60-year-old man with heart failure taking digoxin is started on furosemide and develops ventricular arrhythmias and yellow-green visual halos. How does furosemide-induced hypokalaemia precipitate digoxin toxicity at the molecular target?",
    "options": [
-    "Low serum K+ accelerates hepatic conversion of digoxin to a toxic alkaloid",
-    "Potassium normally competes with digoxin for binding to Na+/K+-ATPase, so hypokalaemia increases digoxin binding and excessive pump inhibition",
-    "Hypokalaemia converts digoxin into a calcium channel agonist",
-    "Low serum K+ opens cardiac K_ATP channels permanently"
+    "Low K+ accelerates digoxin conversion to a toxic alkaloid",
+    "K+ competes with digoxin at Na+/K+-ATPase; hypokalaemia increases digoxin binding",
+    "Hypokalaemia makes digoxin a calcium-channel agonist",
+    "Low K+ permanently opens cardiac KATP channels"
    ],
    "answer": 1,
    "explain": "Extracellular K+ and digoxin compete for the same extracellular binding site on the alpha subunit of Na+/K+-ATPase; hypokalaemia enhances digoxin binding and precipitates toxicity.",
