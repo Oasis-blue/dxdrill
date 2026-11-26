@@ -118,6 +118,10 @@ window.DX = window.DX || {};
       return manP;
     }).then(function (man) {
       var jobs = [];
+      DX.questionsReady = false;
+      DX.questionsLoading = true;
+      DX.questionFilesLoaded = 0;
+      DX.questionFilesTotal = (man.questions || []).length;
       (man.questions || []).forEach(function (f) {
         jobs.push(function () { return getJSON("data/questions/" + f + ".json").then(function (d) {
           /* One topic for the whole file ("topic"), or a "topic" on each question to mix topics in one file. A question's own topic wins. */
@@ -130,6 +134,11 @@ window.DX = window.DX || {};
             DX.questions.push(q); t.count++;
           });
           if (bad) console.warn(bad + " question(s) in " + f + " have no known topic and were skipped");
+          DX.questionFilesLoaded++;
+          if (!DX.questionsReady && DX.questions.length) {
+            DX.questionsReady = true;
+            if (DX.onQuestionsReady) DX.onQuestionsReady();
+          } else if (DX.questionsReady && DX.onQuestionsProgress) DX.onQuestionsProgress();
         }).catch(function (e) { console.warn("Could not load question file", e.message); }); });
       });
       (man.terms || []).forEach(function (f) {
@@ -150,6 +159,7 @@ window.DX = window.DX || {};
       DX.partial = true;
       pool(jobs, 6).then(function () {
         DX.loadingQuestions = false;
+        DX.questionsLoading = false;
         DX.questionsReady = true;
         DX.partial = false;
         if (DX.onMore) DX.onMore();
