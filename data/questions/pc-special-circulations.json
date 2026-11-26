@@ -56,11 +56,11 @@
    "options": [
     "It lacks beta-adrenergic receptors completely",
     "It is perfused exclusively by the right coronary artery",
-    "It experiences the highest extravascular compressive pressure during systole and relies entirely on diastole, which shortens disproportionately during tachycardia",
+    "Systolic compression limits subendocardial perfusion to diastole, which shortens in tachycardia",
     "Its baseline oxygen extraction is only 10%"
    ],
    "answer": 2,
-   "explain": "Intramyocardial tissue pressure is highest near the endocardium (equaling intraventricular pressure during systole), making subendocardial vessels wholly dependent on diastolic filling time and aortic diastolic pressure.",
+   "explain": "Intramyocardial tissue pressure is highest near the endocardium (equaling intraventricular pressure during systole), making subendocardial vessels wholly dependent on diastolic filling time and aortic diastolic pressure. Key detail: It experiences the highest extravascular compressive pressure during systole and relies entirely on diastole, which shortens disproportionately during tachycardia.",
    "verified": false,
    "open": {
     "q": "Why is the subendocardium of the left ventricle more susceptible to ischemic injury than the subepicardium?",
@@ -123,12 +123,12 @@
    "q": "During sympathetic nervous system activation, direct stimulation of vascular alpha-1 receptors constricts coronary vessels, yet net coronary blood flow increases substantially. What explains this apparent paradox?",
    "options": [
     "Sympathetic nerves release acetylcholine onto coronary arterioles",
-    "Beta-1-mediated increases in heart rate and contractility boost myocardial metabolism and adenosine/NO release, overriding direct alpha-1 vasoconstriction",
+    "Metabolic vasodilation (adenosine/NO) overrides α1 constriction as myocardial work rises",
     "Alpha-1 receptors are absent from all human coronary arteries",
     "Coronary veins constrict to push blood backward into capillaries"
    ],
    "answer": 1,
-   "explain": "Metabolic autoregulation dominates neural vasoconstriction in the coronary bed: sympathetic chronotropy and inotropy raise MVO2, generating vasodilator metabolites that dilate resistance arterioles.",
+   "explain": "Metabolic autoregulation dominates neural vasoconstriction in the coronary bed: sympathetic chronotropy and inotropy raise MVO2, generating vasodilator metabolites that dilate resistance arterioles. Key detail: Beta-1-mediated increases in heart rate and contractility boost myocardial metabolism and adenosine/NO release, overriding direct alpha-1 vasoconstriction.",
    "verified": false,
    "open": {
     "q": "Why does sympathetic stimulation produce net coronary vasodilation despite the presence of alpha-1 vasoconstrictor receptors on coronary vessels?",
@@ -214,12 +214,12 @@
    "q": "Why does acute voluntary hyperventilation frequently cause lightheadedness, dizziness, and paresthesias?",
    "options": [
     "Hyperventilation raises arterial PO2 to toxic levels that block ATP synthesis",
-    "Hyperventilation blows off CO2 (hypocapnia), raising cerebral interstitial pH and causing marked cerebral vasoconstriction that reduces cerebral blood flow",
+    "Hypocapnia causes cerebral vasoconstriction, reducing cerebral blood flow",
     "Hyperventilation stimulates massive parasympathetic vasodilation in the brain",
     "Hyperventilation causes sudden systemic arterial hypertension"
    ],
    "answer": 1,
-   "explain": "Lowering PaCO2 from 40 to ~20 mmHg reduces interstitial H+ in the brain, constricting cerebral arterioles and cutting cerebral blood flow by up to 40-50%, while respiratory alkalosis also increases Ca2+ binding to albumin (causing paresthesias).",
+   "explain": "Lowering PaCO2 from 40 to ~20 mmHg reduces interstitial H+ in the brain, constricting cerebral arterioles and cutting cerebral blood flow by up to 40-50%, while respiratory alkalosis also increases Ca2+ binding to albumin (causing paresthesias). Key detail: Hyperventilation blows off CO2 (hypocapnia), raising cerebral interstitial pH and causing marked cerebral vasoconstriction that reduces cerebral blood flow.",
    "verified": false,
    "open": {
     "q": "Explain the cerebrovascular mechanism by which hyperventilation causes dizziness and lightheadedness.",
@@ -423,11 +423,11 @@
    "options": [
     "Hepatic sinusoids followed by central veins",
     "Alveolar capillaries followed by bronchial veins",
-    "High-pressure glomerular capillaries (filtering) connected via the efferent arteriole to low-pressure peritubular capillaries (reabsorbing)",
+    "Glomerular capillaries → efferent arteriole → peritubular capillaries",
     "Coronary capillaries followed by Thebesian veins"
    ],
    "answer": 2,
-   "explain": "The efferent arteriole separates the high-pressure glomerular capillary tuft (~55-60 mmHg, specialized for filtration) from the low-pressure peritubular capillary network (~13-15 mmHg, specialized for tubular fluid reabsorption).",
+   "explain": "The efferent arteriole separates the high-pressure glomerular capillary tuft (~55-60 mmHg, specialized for filtration) from the low-pressure peritubular capillary network (~13-15 mmHg, specialized for tubular fluid reabsorption). Key detail: High-pressure glomerular capillaries (filtering) connected via the efferent arteriole to low-pressure peritubular capillaries (reabsorbing).",
    "verified": false,
    "open": {
     "q": "Name the two capillary beds arranged in series in the renal cortex and the blood vessel that connects them.",
@@ -515,11 +515,11 @@
    "options": [
     "Reflex constriction of the hepatic artery whenever portal venous flow drops",
     "Storage of excess red blood cells inside hepatic sinusoids during exercise",
-    "Compensatory dilation of the hepatic artery when portal venous blood flow decreases (and vice versa), mediated by local adenosine washout",
+    "Reduced portal flow decreases adenosine washout, dilating the hepatic artery",
     "Conversion of portal venous blood directly into bile salts"
    ],
    "answer": 2,
-   "explain": "Adenosine is continuously secreted into the space of Mall around hepatic arterioles and portal venules; when portal flow falls, less adenosine is washed away, so local adenosine accumulates and dilates the hepatic artery to stabilize total liver perfusion.",
+   "explain": "Adenosine is continuously secreted into the space of Mall around hepatic arterioles and portal venules; when portal flow falls, less adenosine is washed away, so local adenosine accumulates and dilates the hepatic artery to stabilize total liver perfusion. Key detail: Compensatory dilation of the hepatic artery when portal venous blood flow decreases (and vice versa), mediated by local adenosine washout.",
    "verified": false,
    "open": {
     "q": "Describe the hepatic arterial buffer response and name the local vasodilator mediator that regulates it.",
@@ -583,12 +583,12 @@
    "q": "What is the primary physiological function of the cutaneous circulation in humans, and across what wide range can skin blood flow vary?",
    "options": [
     "Meeting high basal skin oxygen demand; varies narrowly between 200 and 250 mL/min",
-    "Thermoregulation (heat conservation vs heat dissipation); varies from as low as 20-30 mL/min in extreme cold to 2,000-3,000 mL/min in severe heat stress",
+    "Skin blood flow supports thermoregulation and can rise from ~20–30 to 2,000–3,000 mL/min",
     "Filtering metabolic nitrogenous wastes; varies between 1,000 and 1,200 mL/min",
     "Oxygenating systemic venous blood; fixed at 500 mL/min"
    ],
    "answer": 1,
-   "explain": "Nutritional blood flow required by skin cells is tiny (~20-30 mL/min), so skin perfusion is governed chiefly by hypothalamic thermoregulatory signals, expanding over 100-fold in extreme heat to radiate and conduct heat.",
+   "explain": "Nutritional blood flow required by skin cells is tiny (~20-30 mL/min), so skin perfusion is governed chiefly by hypothalamic thermoregulatory signals, expanding over 100-fold in extreme heat to radiate and conduct heat. Key detail: Thermoregulation (heat conservation vs heat dissipation); varies from as low as 20-30 mL/min in extreme cold to 2,000-3,000 mL/min in severe heat stress.",
    "verified": false,
    "open": {
     "q": "What is the primary physiological role of cutaneous blood flow, and roughly how wide is its flow range from extreme cold to extreme heat?",
@@ -652,13 +652,13 @@
    "sub": "Cutaneous Circulation",
    "q": "What are the three sequential components of the Lewis triple response observed when the skin is firmly stroked with a blunt pointed instrument?",
    "options": [
-    "Red reaction (local capillary dilation), flare (arteriolar dilation via axon reflex), and wheal (local edema from increased capillary permeability)",
+    "Red reaction, axon-reflex flare and permeability-related wheal",
     "Blanching, cyanosis, and gangrene",
     "Sweating, piloerection, and shivering",
     "Petechiae, purpura, and ecchymosis"
    ],
    "answer": 0,
-   "explain": "Firm mechanical trauma causes: (1) Red line at the stroke site (direct histamine/NO capillary dilation), (2) Surrounding red flare (antidromic C-fiber axon reflex releasing substance P and CGRP), and (3) Raised wheal (histamine-mediated venular exudation).",
+   "explain": "Firm mechanical trauma causes: (1) Red line at the stroke site (direct histamine/NO capillary dilation), (2) Surrounding red flare (antidromic C-fiber axon reflex releasing substance P and CGRP), and (3) Raised wheal (histamine-mediated venular exudation). Key detail: Red reaction (local capillary dilation), flare (arteriolar dilation via axon reflex), and wheal (local edema from increased capillary permeability).",
    "verified": false,
    "open": {
     "q": "List the three components of Lewis's triple response in skin and identify which component is mediated by a local nociceptive axon reflex.",
@@ -676,12 +676,12 @@
    "q": "What is the hunting reaction of Lewis (cold-induced vasodilation) during prolonged immersion of the fingers in ice water?",
    "options": [
     "Permanent irreversible vasoconstriction leading to immediate frostbite",
-    "Initial intense cold vasoconstriction followed after 5 to 10 minutes by periodic waves of vasodilation that rewarm the digits to prevent cold injury",
+    "Cold vasoconstriction is interrupted by periodic vasodilation that rewarms the digits",
     "Continuous sweating of the palms in freezing temperatures",
     "Complete cessation of systemic arterial blood pressure"
    ],
    "answer": 1,
-   "explain": "Severe cold initially constricts cutaneous vessels, but below ~10-15 C smooth muscle loses responsiveness to norepinephrine and cold paralyzes sympathetic nerve conduction, causing transient vasodilation that rewarms the finger before constriction cycles again.",
+   "explain": "Severe cold initially constricts cutaneous vessels, but below ~10-15 C smooth muscle loses responsiveness to norepinephrine and cold paralyzes sympathetic nerve conduction, causing transient vasodilation that rewarms the finger before constriction cycles again. Key detail: Initial intense cold vasoconstriction followed after 5 to 10 minutes by periodic waves of vasodilation that rewarm the digits to prevent cold injury.",
    "verified": false,
    "open": {
     "q": "Describe Lewis's hunting reaction (cold-induced vasodilation) in extremities exposed to severe cold.",
