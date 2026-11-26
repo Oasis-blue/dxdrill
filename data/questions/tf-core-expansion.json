@@ -1572,6 +1572,293 @@
       ],
       "verified": false,
       "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pi-gihormones-001",
+      "type": "tf",
+      "topic": "pi-digestion-and-absorption",
+      "level": 2,
+      "sub": "Gastrointestinal hormones",
+      "q": "Regarding gastrointestinal hormones:",
+      "items": [
+        {
+          "text": "Gastrin is secreted by G cells, principally in the gastric antrum.",
+          "answer": true,
+          "explain": "G cells in the gastric antrum are the principal source of gastrin; the hormone promotes gastric acid secretion and supports gastric mucosal growth."
+        },
+        {
+          "text": "Secretin is released from duodenal S cells in response to acidic chyme entering the duodenum.",
+          "answer": true,
+          "explain": "Acid in the duodenal lumen stimulates S cells to release secretin, which promotes bicarbonate-rich pancreatic and biliary secretion."
+        },
+        {
+          "text": "Cholecystokinin is released mainly in response to fatty acids and amino acids in the small intestine.",
+          "answer": true,
+          "explain": "CCK is released from I cells in the duodenum and jejunum when digestion products, particularly fatty acids and amino acids, enter the lumen."
+        },
+        {
+          "text": "Gastrin is the principal hormone that stimulates gallbladder contraction after a fatty meal.",
+          "answer": false,
+          "explain": "CCK is the principal gut hormone that contracts the gallbladder and promotes delivery of bile after a meal; gastrin's major actions are on gastric secretion and mucosal growth."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537284/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK544242/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pi-stomach-001",
+      "type": "tf",
+      "topic": "pi-motor-functions-of-the-gi-tract",
+      "level": 2,
+      "sub": "Gastric secretion and motility",
+      "q": "About the stomach:",
+      "items": [
+        {
+          "text": "Parietal cells secrete hydrochloric acid and intrinsic factor.",
+          "answer": true,
+          "explain": "Gastric parietal cells produce hydrochloric acid and intrinsic factor, which is required for normal vitamin B12 absorption in the terminal ileum."
+        },
+        {
+          "text": "Chief cells are the principal source of pepsinogen.",
+          "answer": true,
+          "explain": "Chief cells secrete pepsinogen, which is converted to active pepsin in the acidic gastric lumen."
+        },
+        {
+          "text": "The stomach has only two layers of smooth muscle in its muscularis externa.",
+          "answer": false,
+          "explain": "The stomach has three muscular layers: inner oblique, middle circular and outer longitudinal; the oblique layer assists mixing and churning."
+        },
+        {
+          "text": "Fat entering the duodenum tends to slow gastric emptying.",
+          "answer": true,
+          "explain": "Duodenal fat stimulates feedback mechanisms, including CCK release and enterogastric neural reflexes, that slow gastric emptying and regulate nutrient delivery."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK535425/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK545268/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pi-pancreas-001",
+      "type": "tf",
+      "topic": "pi-accessory-organs",
+      "level": 2,
+      "sub": "Pancreatic endocrine function",
+      "q": "Regarding the endocrine pancreas:",
+      "items": [
+        {
+          "text": "Insulin is secreted by the beta cells of the pancreatic islets.",
+          "answer": true,
+          "explain": "Pancreatic islet beta cells synthesise and secrete insulin in response to increased blood glucose and other nutrient signals."
+        },
+        {
+          "text": "Glucagon is secreted by pancreatic alpha cells and acts importantly on the liver.",
+          "answer": true,
+          "explain": "Alpha cells release glucagon, which acts predominantly on hepatocytes to promote glycogenolysis and gluconeogenesis."
+        },
+        {
+          "text": "Insulin secretion is stimulated when ATP-sensitive potassium channels in beta cells open.",
+          "answer": false,
+          "explain": "Glucose metabolism raises beta-cell ATP, which closes ATP-sensitive potassium channels; membrane depolarisation then opens voltage-gated calcium channels and promotes insulin exocytosis."
+        },
+        {
+          "text": "C-peptide is released together with endogenous insulin when proinsulin is processed.",
+          "answer": true,
+          "explain": "Cleavage of proinsulin produces insulin and C-peptide, which are released in approximately equimolar amounts and make C-peptide useful as a marker of endogenous insulin secretion."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK459261/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538498/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pe-adrenal-001",
+      "type": "tf",
+      "topic": "pe-adrenal-glands",
+      "level": 2,
+      "sub": "Adrenal gland hormones",
+      "q": "About the adrenal glands:",
+      "items": [
+        {
+          "text": "The adrenal cortex has three zones: zona glomerulosa, zona fasciculata and zona reticularis.",
+          "answer": true,
+          "explain": "From outer to inner, the adrenal cortex is arranged into zona glomerulosa, fasciculata and reticularis."
+        },
+        {
+          "text": "Aldosterone is produced mainly by the zona glomerulosa.",
+          "answer": true,
+          "explain": "The zona glomerulosa synthesises mineralocorticoids, principally aldosterone, under regulation mainly by angiotensin II and plasma potassium."
+        },
+        {
+          "text": "Cortisol is produced mainly by the zona fasciculata.",
+          "answer": true,
+          "explain": "The zona fasciculata is the major glucocorticoid-producing zone and secretes cortisol under ACTH influence."
+        },
+        {
+          "text": "The adrenal medulla is derived from mesoderm and secretes aldosterone.",
+          "answer": false,
+          "explain": "The adrenal medulla is derived from neural crest cells and secretes catecholamines, principally epinephrine and norepinephrine; aldosterone is made in the cortical zona glomerulosa."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK482264/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK279056/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-betaoxidation-001",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Fatty acid beta-oxidation",
+      "q": "Regarding fatty acid beta-oxidation:",
+      "items": [
+        {
+          "text": "Beta-oxidation of most fatty acids occurs mainly in the mitochondrial matrix.",
+          "answer": true,
+          "explain": "For most short-, medium- and long-chain fatty acids, beta-oxidation occurs in mitochondria; very-long-chain fatty acids are initially shortened in peroxisomes."
+        },
+        {
+          "text": "Long-chain fatty acyl groups enter the mitochondrial matrix using the carnitine shuttle.",
+          "answer": true,
+          "explain": "The carnitine shuttle transfers long-chain acyl groups across the inner mitochondrial membrane using CPT-I, carnitine-acylcarnitine translocase and CPT-II."
+        },
+        {
+          "text": "Each complete cycle of beta-oxidation of an even-chain fatty acyl-CoA yields one acetyl-CoA, one NADH and one FADH2.",
+          "answer": true,
+          "explain": "A typical beta-oxidation cycle produces one FADH2, one NADH and one acetyl-CoA; the final cleavage of an even-chain substrate yields two acetyl-CoA molecules."
+        },
+        {
+          "text": "Malonyl-CoA activates CPT-I and therefore accelerates mitochondrial entry of long-chain fatty acids.",
+          "answer": false,
+          "explain": "Malonyl-CoA inhibits CPT-I, limiting mitochondrial import of long-chain fatty acyl groups when fatty acid synthesis is active."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK534877/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK546690/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-ketogenesis-001",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Ketone body metabolism",
+      "q": "About ketone body metabolism:",
+      "items": [
+        {
+          "text": "Ketogenesis occurs mainly in the mitochondria of liver cells.",
+          "answer": true,
+          "explain": "Hepatic mitochondria contain the enzymes that convert excess acetyl-CoA into the ketone bodies acetoacetate and beta-hydroxybutyrate."
+        },
+        {
+          "text": "The principal ketone bodies are acetoacetate, beta-hydroxybutyrate and acetone.",
+          "answer": true,
+          "explain": "Acetoacetate and beta-hydroxybutyrate are the main circulating ketone bodies; acetone is formed from acetoacetate and is largely exhaled."
+        },
+        {
+          "text": "The liver can use ketone bodies as its own major fuel because it contains abundant thiophorase.",
+          "answer": false,
+          "explain": "The liver lacks succinyl-CoA:acetoacetate CoA transferase (thiophorase/SCOT), so it exports ketone bodies rather than oxidising them for its own energy."
+        },
+        {
+          "text": "During prolonged fasting, the brain can increase its use of ketone bodies as an energy source.",
+          "answer": true,
+          "explain": "Ketone bodies cross the blood-brain barrier and become an important alternative cerebral fuel during prolonged fasting, reducing but not eliminating the brain's glucose requirement."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK493179/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK554523/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-ga-inguinal-001",
+      "type": "tf",
+      "topic": "gr-abdomen-pelvis-and-perineum",
+      "level": 2,
+      "sub": "Inguinal canal",
+      "q": "Regarding the inguinal canal:",
+      "items": [
+        {
+          "text": "The inguinal canal lies immediately superior to the medial part of the inguinal ligament.",
+          "answer": true,
+          "explain": "The inguinal canal is an oblique passage through the lower anterior abdominal wall, situated just above the inguinal ligament."
+        },
+        {
+          "text": "The anterior wall is formed mainly by the external oblique aponeurosis and is reinforced laterally by internal oblique fibres.",
+          "answer": true,
+          "explain": "The external oblique aponeurosis forms the anterior wall; laterally, internal oblique fibres provide additional reinforcement."
+        },
+        {
+          "text": "The posterior wall is formed mainly by transversalis fascia and is reinforced medially by the conjoint tendon.",
+          "answer": true,
+          "explain": "The transversalis fascia forms the principal posterior wall, with medial reinforcement from the conjoint tendon in the usual anatomical description."
+        },
+        {
+          "text": "The deep inguinal ring lies medial to the inferior epigastric vessels.",
+          "answer": false,
+          "explain": "The deep inguinal ring is an opening in transversalis fascia lateral to the inferior epigastric vessels; an indirect inguinal hernia enters through it."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK470204/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-ga-femoraltriangle-001",
+      "type": "tf",
+      "topic": "gr-lower-limb",
+      "level": 2,
+      "sub": "Femoral triangle",
+      "q": "About the femoral triangle:",
+      "items": [
+        {
+          "text": "The inguinal ligament forms its superior boundary.",
+          "answer": true,
+          "explain": "The femoral triangle is bounded superiorly by the inguinal ligament, medially by adductor longus and laterally by sartorius."
+        },
+        {
+          "text": "The sartorius forms its medial boundary.",
+          "answer": false,
+          "explain": "Sartorius forms the lateral boundary; adductor longus forms the medial boundary of the femoral triangle."
+        },
+        {
+          "text": "From lateral to medial, the principal contents are femoral nerve, femoral artery, femoral vein and lymphatics.",
+          "answer": true,
+          "explain": "The familiar lateral-to-medial arrangement is nerve, artery, vein and lymphatics (NAVEL); the femoral nerve lies outside the femoral sheath."
+        },
+        {
+          "text": "The femoral nerve is enclosed within the femoral sheath alongside the femoral artery and vein.",
+          "answer": false,
+          "explain": "The femoral sheath encloses the femoral artery, femoral vein and femoral canal/lymphatics; the femoral nerve lies lateral to and outside the sheath."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK541140/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538501/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
     }
   ]
 }
