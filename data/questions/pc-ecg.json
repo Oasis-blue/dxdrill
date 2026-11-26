@@ -1,585 +1,630 @@
 {
- "topic": "pc-ecg",
- "questions": [
-  {
-   "id": "pc-ecg-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ECG Paper Calibration and Lead Systems",
-   "q": "At the standard electrocardiogram paper recording speed of 25 mm/s and vertical calibration of 10 mm/mV, what time duration and voltage are represented by one small (1 mm) square?",
-   "options": [
-    "0.04 seconds and 0.1 mV",
-    "0.20 seconds and 0.5 mV",
-    "0.02 seconds and 1.0 mV",
-    "0.10 seconds and 0.2 mV"
-   ],
-   "answer": 0,
-   "explain": "At 25 mm/s, 1 mm horizontally equals 1/25 s = 0.04 s (and 1 large 5 mm box equals 0.20 s); at 10 mm/mV, 1 mm vertically equals 0.1 mV (and 1 large 5 mm box equals 0.5 mV).",
-   "verified": false,
-   "open": {
-    "q": "At standard ECG paper speed (25 mm/s) and gain (10 mm/mV), state the time interval and voltage represented by one small 1 mm square.",
-    "accept": [
-     "0.04 s and 0.1 mV",
-     "40 ms and 0.1 mV",
-     "0.04 seconds horizontally, 0.1 millivolts vertically"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ECG Paper Calibration and Lead Systems",
-   "q": "Which limb electrode positions form the positive and negative poles of standard bipolar limb lead II?",
-   "options": [
-    "Positive electrode on the left arm (LA) and negative electrode on the right arm (RA)",
-    "Positive electrode on the left leg (LL) and negative electrode on the right arm (RA)",
-    "Positive electrode on the left leg (LL) and negative electrode on the left arm (LA)",
-    "Positive electrode on the right arm (RA) and negative electrode on the left leg (LL)"
-   ],
-   "answer": 1,
-   "explain": "By Einthoven's triangle convention, Lead I records LA (+) minus RA (-), Lead II records LL (+) minus RA (-), and Lead III records LL (+) minus LA (-), with the right leg serving as the ground reference.",
-   "verified": false,
-   "open": {
-    "q": "Specify the positive and negative limb electrode placements for standard bipolar limb lead II.",
-    "accept": [
-     "Positive on left leg (LL) and negative on right arm (RA)",
-     "Left leg (+), right arm (-)"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ECG Paper Calibration and Lead Systems",
-   "q": "According to Einthoven's law, what is the mathematical relationship among the instantaneous electrical potentials recorded in bipolar limb leads I, II, and III?",
-   "options": [
-    "Lead I + Lead II = Lead III",
-    "Lead II + Lead III = Lead I",
-    "Lead I + Lead III = Lead II",
-    "Lead I + Lead II + Lead III = 1"
-   ],
-   "answer": 2,
-   "explain": "Einthoven's law states that at any instant in the cardiac cycle, the potential in Lead II equals the sum of the potentials in Lead I and Lead III (II = I + III).",
-   "verified": false,
-   "open": {
-    "q": "Write the equation expressing Einthoven's law relating bipolar limb leads I, II, and III.",
-    "accept": [
-     "Lead II = Lead I + Lead III",
-     "I + III = II"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ECG Paper Calibration and Lead Systems",
-   "q": "Which group of ECG leads views the electrical activity of the heart in the horizontal (transverse) plane?",
-   "options": [
-    "Leads I, II, and III",
-    "Leads aVR, aVL, and aVF",
-    "Leads II, III, and aVF",
-    "Precordial leads V1 through V6"
-   ],
-   "answer": 3,
-   "explain": "The six limb leads (I, II, III, aVR, aVL, aVF) record electrical vectors in the frontal plane, whereas the six unipolar chest (precordial) leads V1 to V6 record vectors in the horizontal plane.",
-   "verified": false,
-   "open": {
-    "q": "Which ECG leads record cardiac electrical vectors in the horizontal (transverse) plane?",
-    "accept": [
-     "V1 to V6",
-     "Precordial leads",
-     "Chest leads V1-V6"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ECG Paper Calibration and Lead Systems",
-   "q": "Where is precordial chest lead V4 placed on the anterior chest wall?",
-   "options": [
-    "Fifth intercostal space in the left midclavicular line",
-    "Fourth intercostal space at the right sternal border",
-    "Fourth intercostal space at the left sternal border",
-    "Fifth intercostal space in the left midaxillary line"
-   ],
-   "answer": 0,
-   "explain": "V1 is placed at the 4th right intercostal space (ICS) sternal border, V2 at the 4th left ICS sternal border, V3 midway between V2 and V4, V4 at the 5th left ICS midclavicular line, V5 at the 5th left ICS anterior axillary line, and V6 at the 5th left ICS midaxillary line.",
-   "verified": false,
-   "open": {
-    "q": "State the exact anatomical landmark for placing chest electrode V4.",
-    "accept": [
-     "Fifth left intercostal space at the midclavicular line",
-     "5th ICS, left midclavicular line"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Waves and Physiological Basis",
-   "q": "What electrical event in the heart generates the normal P wave on the surface ECG?",
-   "options": [
-    "SA nodal firing alone",
-    "Atrial depolarisation",
-    "Atrial repolarisation",
-    "Septal depolarisation"
-   ],
-   "answer": 1,
-   "explain": "SA nodal depolarization itself is too small to register on a surface ECG; the P wave reflects the wave of atrial myocardial depolarization (normally less than 0.12 s wide and less than 2.5 mm tall in lead II).",
-   "verified": false,
-   "open": {
-    "q": "Which cardiac electrical event produces the P wave on an electrocardiogram?",
-    "accept": [
-     "Atrial depolarization",
-     "Depolarization of the atria"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Waves and Physiological Basis",
-   "q": "Why is the atrial repolarization wave (Ta wave) normally not visible as a separate deflection on a resting ECG?",
-   "options": [
-    "Atrial cells do not repolarise",
-    "Atrial repolarisation occurs after the T wave",
-    "Low-voltage atrial repolarisation is obscured by the QRS complex",
-    "The AV node blocks atrial repolarisation"
-   ],
-   "answer": 2,
-   "explain": "Atrial repolarization occurs roughly 0.15 to 0.20 s after the P wave, coinciding directly with ventricular depolarization (QRS complex), which masks it unless complete AV block dissociates P waves from QRS complexes.",
-   "verified": false,
-   "open": {
-    "q": "Why is the wave of atrial repolarization usually invisible on a standard surface ECG?",
-    "accept": [
-     "It is buried within or obscured by the simultaneous QRS complex",
-     "Occurs at the same time as ventricular depolarization (QRS)"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Waves and Physiological Basis",
-   "q": "Which part of the ventricles depolarizes first, producing the normal small physiological Q wave in left lateral leads (I, aVL, V5, V6)?",
-   "options": [
-    "Posterior basal right ventricle",
-    "Left ventricular apex",
-    "Right atrial appendage",
-    "Left-to-right septal depolarisation"
-   ],
-   "answer": 3,
-   "explain": "The left bundle branch activates the left mid-septum first, creating a small initial depolarization vector directed from left to right and anteriorly—away from left lateral leads (small Q wave) and toward V1 (small R wave).",
-   "verified": false,
-   "open": {
-    "q": "Which region of the ventricular myocardium depolarizes first and generates the normal septal Q wave in left lateral ECG leads?",
-    "accept": [
-     "Interventricular septum (left-to-right depolarization)",
-     "Left side of the interventricular septum"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Waves and Physiological Basis",
-   "q": "What does the T wave represent, and why is it normally upright in the same leads that have an upright QRS complex (such as lead II and V5)?",
-   "options": [
-    "Ventricular repolarisation; epicardium repolarises before endocardium",
-    "Ventricular depolarisation toward the apex",
-    "His–Purkinje conduction",
-    "Papillary muscle contraction"
-   ],
-   "answer": 0,
-   "explain": "Endocardial myocytes have longer action potential durations than epicardial cells, so ventricular repolarization moves from epicardium toward endocardium; a negative repolarization wave moving away from the positive electrode produces an upright deflection.",
-   "verified": false,
-   "open": {
-    "q": "Why does the normal T wave have the same polarity (upright) as the QRS complex in leads like Lead II despite representing ventricular repolarization?",
-    "accept": [
-     "Ventricular repolarization proceeds from epicardium to endocardium, opposite to depolarization",
-     "Epicardium repolarizes before endocardium"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-010",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Intervals and Segments",
-   "q": "What is the normal duration of the PR interval in adults, and what physiological event does it primarily reflect?",
-   "options": [
-    "0.04–0.08 s; His–Purkinje conduction",
-    "0.12–0.20 s; atrial depolarisation and AV nodal delay",
-    "0.25–0.35 s; ventricular plateau",
-    "0.40–0.44 s; total ventricular systole"
-   ],
-   "answer": 1,
-   "explain": "Measured from the onset of the P wave to the onset of the QRS complex, the PR interval normally spans 0.12 to 0.20 s and is governed chiefly by slow conduction through the AV node.",
-   "verified": false,
-   "open": {
-    "q": "State the normal adult duration of the PR interval and the main physiological process it measures.",
-    "accept": [
-     "0.12 to 0.20 seconds; atrial depolarization and AV nodal conduction delay",
-     "120-200 ms; conduction time from SA node/atria through the AV node to ventricles"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-011",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Intervals and Segments",
-   "q": "What is the normal upper limit for QRS complex duration in a healthy adult, and what does widening beyond this limit indicate?",
-   "options": [
-    "0.04 s; sinus bradycardia",
-    "0.20 s; first-degree AV block",
-    "0.10–0.12 s; widening suggests delayed ventricular conduction",
-    "0.44 s; hypercalcaemia"
-   ],
-   "answer": 2,
-   "explain": "Rapid conduction via the His-Purkinje system normally depolarizes both ventricles within 0.08 to 0.10 s (less than 0.12 s); QRS duration of 0.12 s or more indicates bundle branch block, hyperkalemia, or ventricular origin of the beat.",
-   "verified": false,
-   "open": {
-    "q": "State the normal duration of the QRS complex and give one cause of a widened QRS complex (0.12 s or greater).",
-    "accept": [
-     "0.08 to 0.10 s (under 0.12 s); bundle branch block or ventricular ectopic beat",
-     "Less than 0.12 seconds; left or right bundle branch block"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Normal ECG Intervals and Segments",
-   "q": "Which phase of the ventricular cardiac myocyte action potential corresponds temporally to the isoelectric ST segment on the surface ECG?",
-   "options": [
-    "Phase 0: rapid depolarisation",
-    "Phase 1: early repolarisation",
-    "Phase 3: rapid repolarisation",
-    "Phase 2: plateau"
-   ],
-   "answer": 3,
-   "explain": "During the Phase 2 plateau, the entire ventricular myocardium is equally depolarized, creating no extracellular potential difference between electrodes and keeping the ST segment flat at the isoelectric baseline.",
-   "verified": false,
-   "open": {
-    "q": "Which phase of the ventricular action potential corresponds to the isoelectric ST segment on the ECG?",
-    "accept": [
-     "Phase 2",
-     "Plateau phase",
-     "Phase 2 plateau"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-013",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Normal ECG Intervals and Segments",
-   "q": "Which formula (Bazett's formula) is used to calculate the heart-rate-corrected QT interval (QTc), and what is the clinical danger of marked QTc prolongation?",
-   "options": [
-    "QTc = QT/√RR; prolongation predisposes to torsades",
-    "QTc = QT × RR; predisposes to sinus arrest",
-    "QTc = RR/QT; predisposes to AV block",
-    "QTc = QT + PR; predisposes to flutter"
-   ],
-   "answer": 0,
-   "explain": "Because QT shortens as heart rate increases, Bazett's formula normalizes QT to 60 bpm (QTc = QT / sqrt(RR in seconds), normal under ~0.44 s in men and ~0.46 s in women); prolonged QTc delays repolarization and triggers early afterdepolarizations leading to torsades de pointes.",
-   "verified": false,
-   "open": {
-    "q": "Write Bazett's formula for corrected QT interval (QTc) and name the life-threatening arrhythmia associated with marked QT prolongation.",
-    "accept": [
-     "QTc = QT / sqrt(RR); torsades de pointes",
-     "QT divided by square root of RR interval; polymorphic ventricular tachycardia"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heart Rate and Mean Electrical Axis",
-   "q": "On an ECG recorded at 25 mm/s with a regular rhythm, the distance between two consecutive R waves is exactly 4 large squares (20 mm). What is the ventricular heart rate?",
-   "options": [
-    "60 beats/min",
-    "75 beats/min",
-    "100 beats/min",
-    "150 beats/min"
-   ],
-   "answer": 1,
-   "explain": "At 25 mm/s, 300 large squares equal 1 minute; therefore Heart Rate = 300 / (number of large squares between R waves) = 300 / 4 = 75 beats/min.",
-   "verified": false,
-   "open": {
-    "q": "Calculate the heart rate on a standard 25 mm/s ECG when consecutive R waves are separated by 4 large squares.",
-    "accept": [
-     "75 bpm",
-     "75 beats per minute"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Heart Rate and Mean Electrical Axis",
-   "q": "What is the normal range of the mean QRS electrical axis in the frontal plane in a healthy adult?",
-   "options": [
-    "-90 degrees to -30 degrees",
-    "+100 degrees to +180 degrees",
-    "-30 degrees to +90 degrees (up to +100 degrees)",
-    "-180 degrees to -90 degrees"
-   ],
-   "answer": 2,
-   "explain": "Because the left ventricle has much greater muscle mass than the right ventricle, the mean ventricular depolarization vector points downward and to the left between -30 degrees and +90 degrees (occasionally +100 degrees).",
-   "verified": false,
-   "open": {
-    "q": "State the normal range in degrees for the mean frontal plane QRS electrical axis in adults.",
-    "accept": [
-     "-30 to +90 degrees",
-     "-30° to +90°",
-     "-30 to +100 degrees"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-016",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heart Rate and Mean Electrical Axis",
-   "q": "An adult ECG shows a predominantly positive (upright) QRS complex in Lead I and a predominantly negative (deep S wave) QRS complex in Lead aVF (and Lead II). How is this frontal plane QRS axis classified?",
-   "options": [
-    "Normal electrical axis",
-    "Right axis deviation",
-    "Extreme (northwest) axis deviation",
-    "Left axis deviation"
-   ],
-   "answer": 3,
-   "explain": "Positive QRS in Lead I (0 degrees) with negative QRS in Lead aVF (+90 degrees) and Lead II (+60 degrees) places the mean vector beyond -30 degrees, defining left axis deviation (seen in left anterior fascicular block, LVH, or inferior MI).",
-   "verified": false,
-   "open": {
-    "q": "What QRS axis deviation is present when Lead I has a predominantly positive QRS complex while Leads II and aVF have predominantly negative QRS complexes?",
-    "accept": [
-     "Left axis deviation",
-     "LAD"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heart Rate and Mean Electrical Axis",
-   "q": "Which condition typically causes right axis deviation (negative QRS in Lead I, positive QRS in Lead aVF) on a 12-lead ECG?",
-   "options": [
-    "Right ventricular hypertrophy from pulmonary hypertension",
-    "Left anterior fascicular block",
-    "Concentric left ventricular hypertrophy",
-    "Lateral myocardial infarction"
-   ],
-   "answer": 0,
-   "explain": "Right ventricular hypertrophy shifts the net ventricular depolarization vector rightward and anteriorly, producing a negative QRS in Lead I, positive QRS in aVF, and tall R wave in V1.",
-   "verified": false,
-   "open": {
-    "q": "Give two clinical causes of right axis deviation on a 12-lead ECG.",
-    "accept": [
-     "Right ventricular hypertrophy and left posterior fascicular block",
-     "Cor pulmonale and lateral myocardial infarction"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Electrolyte Disturbances on ECG",
-   "q": "Which sequence of progressive ECG changes is characteristic of worsening hyperkalemia?",
-   "options": [
-    "Flat T waves, U waves and ST depression",
-    "Tall peaked T waves, prolonged PR, loss of P waves and wide QRS",
-    "Short QT with Osborne waves",
-    "Sinus tachycardia with narrow QRS"
-   ],
-   "answer": 1,
-   "explain": "Elevated extracellular K+ accelerates Phase 3 repolarization (tall tented T waves) while partially depolarizing resting membrane potential and inactivating fast Na+ channels, slowing conduction (prolonged PR, absent P, wide QRS, sine wave, and asystole/VF).",
-   "verified": false,
-   "open": {
-    "q": "Describe the earliest and progressive ECG abnormalities seen as serum potassium rises in hyperkalemia.",
-    "accept": [
-     "Tall peaked T waves followed by PR prolongation, loss of P waves, and QRS widening (sine wave)",
-     "Peaked T waves, flat/absent P waves, prolonged PR, wide QRS"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-019",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Electrolyte Disturbances on ECG",
-   "q": "Which classic triad of ECG changes occurs in moderate-to-severe hypokalemia?",
-   "options": [
-    "Tall peaked T waves, shortened QT interval, and elevated ST segments",
-    "Shortened PR interval, delta waves, and narrow QRS",
-    "ST-segment depression, flattened or inverted T waves, and prominent U waves",
-    "Deep Q waves in V1-V3 with right bundle branch block"
-   ],
-   "answer": 2,
-   "explain": "Hypokalemia reduces outward K+ channel conductance (IKr), slowing Phase 3 repolarization and producing ST depression, T-wave flattening/inversion, prominent U waves (after the T wave), and prolonged QU interval.",
-   "verified": false,
-   "open": {
-    "q": "State the characteristic ECG abnormalities seen in hypokalemia.",
-    "accept": [
-     "ST depression, flattened/inverted T waves, and prominent U waves",
-     "Prominent U waves, T-wave flattening, and ST depression"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-020",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Electrolyte Disturbances on ECG",
-   "q": "How do hypocalcemia and hypercalcemia alter the QT interval on an electrocardiogram?",
-   "options": [
-    "Hypocalcaemia shortens QT; hypercalcaemia prolongs it",
-    "Neither affects QT",
-    "Both prolong PR without changing QT",
-    "Hypocalcaemia prolongs QT; hypercalcaemia shortens it"
-   ],
-   "answer": 3,
-   "explain": "Low extracellular Ca2+ prolongs Phase 2 plateau duration, lengthening the ST segment and QTc interval; elevated extracellular Ca2+ accelerates Phase 2 closure, shortening the ST segment and QTc.",
-   "verified": false,
-   "open": {
-    "q": "Contrast the effects of hypocalcemia and hypercalcemia on the ECG QT interval.",
-    "accept": [
-     "Hypocalcemia prolongs the QT interval; hypercalcemia shortens the QT interval",
-     "Low calcium lengthens QT, high calcium shortens QT"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-021",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Arrhythmias and Conduction Blocks",
-   "q": "Which ECG findings define Mobitz type I (Wenckebach) second-degree atrioventricular block?",
-   "options": [
-    "PR lengthens progressively until a QRS is dropped, then the cycle repeats",
-    "PR remains constant before a dropped QRS",
-    "P waves and QRS complexes are completely dissociated",
-    "PR is prolonged but every P conducts"
-   ],
-   "answer": 0,
-   "explain": "Mobitz type I (Wenckebach) reflects progressive decremental conduction fatigue within the AV node (grouped beating with progressive PR prolongation before a dropped beat), whereas Mobitz type II occurs below the AV node with fixed PR intervals and higher risk of progression to complete heart block.",
-   "verified": false,
-   "open": {
-    "q": "Describe the hallmark ECG pattern of Mobitz type I (Wenckebach) second-degree AV block.",
-    "accept": [
-     "Progressive PR interval prolongation until a P wave is blocked (dropped QRS), then the cycle repeats",
-     "Gradually lengthening PR intervals followed by a dropped QRS complex"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-022",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Arrhythmias and Conduction Blocks",
-   "q": "Which three hallmark ECG features characterize atrial fibrillation?",
-   "options": [
-    "Regular sawtooth waves with regular RR intervals",
-    "No distinct P waves and irregularly irregular RR intervals",
-    "Prolonged PR with regular RR and peaked T waves",
-    "Normal sinus P waves before each QRS"
-   ],
-   "answer": 1,
-   "explain": "Multiple disorganized atrial re-entrant wavelets fire at 350-600/min without coordinated atrial contraction (eliminating P waves and increasing left atrial appendage thromboembolism risk), while variable AV nodal filtering produces irregularly irregular ventricular RR intervals.",
-   "verified": false,
-   "open": {
-    "q": "State the two classic diagnostic ECG features of atrial fibrillation.",
-    "accept": [
-     "Absent P waves (fibrillatory baseline) and irregularly irregular RR intervals",
-     "Irregularly irregular rhythm with absent P waves"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-023",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Arrhythmias and Conduction Blocks",
-   "q": "A 21-year-old athlete with recurrent paroxysmal supraventricular tachycardia has a resting ECG showing a short PR interval (less than 0.12 s), a slurred initial upstroke of the QRS complex (delta wave), and a widened QRS. Which accessory conduction pathway produces this Wolff-Parkinson-White (WPW) pattern?",
-   "options": [
-    "Bachmann's interatrial bundle",
-    "Left posterior fascicle",
-    "Bundle of Kent",
-    "Moderator band"
-   ],
-   "answer": 2,
-   "explain": "The bundle of Kent is an abnormal congenital muscular bridge connecting atrium and ventricle directly, bypassing the slow AV node to pre-excite ventricular myocardium early (short PR + slurred delta wave) and creating an anatomical circuit for AV re-entrant tachycardia.",
-   "verified": false,
-   "open": {
-    "q": "Name the congenital accessory pathway responsible for ventricular pre-excitation (short PR interval and delta wave) in Wolff-Parkinson-White syndrome.",
-    "accept": [
-     "Bundle of Kent",
-     "Accessory atrioventricular pathway"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-024",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Ischemia and Myocardial Infarction Localization",
-   "q": "A 58-year-old man presents with crushing retrosternal chest pain for 45 minutes. His 12-lead ECG shows marked ST-segment elevation in leads II, III, and aVF, with reciprocal ST depression in leads I and aVL. Which coronary artery is most likely acutely occluded?",
-   "options": [
-    "Left anterior descending (LAD) artery",
-    "Left circumflex (LCx) artery in a left-dominant system only",
-    "First diagonal branch supplying the high lateral wall",
-    "Right coronary artery (RCA) supplying the inferior myocardial wall"
-   ],
-   "answer": 3,
-   "explain": "Leads II, III, and aVF view the inferior wall of the left ventricle, which is supplied by the posterior descending artery arising from the right coronary artery (RCA) in ~80-85% of individuals.",
-   "verified": false,
-   "open": {
-    "q": "ST-segment elevation in leads II, III, and aVF indicates acute myocardial injury in which anatomical wall of the heart, and which coronary artery is most commonly occluded?",
-    "accept": [
-     "Inferior wall; right coronary artery (RCA)",
-     "Inferior myocardial wall; RCA"
-    ]
-   }
-  },
-  {
-   "id": "pc-ecg-025",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Ischemia and Myocardial Infarction Localization",
-   "q": "Which group of ECG leads demonstrates ST-segment elevation during an acute anterior/anteroseptal myocardial infarction caused by occlusion of the left anterior descending (LAD) coronary artery?",
-   "options": [
-    "Leads V1, V2, V3, and V4",
-    "Leads II, III, and aVF",
-    "Leads V5, V6, I, and aVL",
-    "Lead aVR alone"
-   ],
-   "answer": 0,
-   "explain": "Precordial leads V1-V2 overlie the interventricular septum and V3-V4 overlie the anterior left ventricular wall, both perfused by the left anterior descending (LAD) artery; V5-V6, I, and aVL reflect the lateral wall (left circumflex artery).",
-   "verified": false,
-   "open": {
-    "q": "Which ECG leads show ST-segment elevation in an acute anteroseptal myocardial infarction due to left anterior descending (LAD) artery occlusion?",
-    "accept": [
-     "V1 to V4",
-     "V1, V2, V3, and V4",
-     "Precordial leads V1-V4"
-    ]
-   }
-  }
- ]
+  "topic": "pc-ecg",
+  "questions": [
+    {
+      "id": "pc-ecg-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ECG Paper Calibration and Lead Systems",
+      "q": "At the standard electrocardiogram paper recording speed of 25 mm/s and vertical calibration of 10 mm/mV, what time duration and voltage are represented by one small (1 mm) square?",
+      "options": [
+        "0.04 seconds and 0.1 mV",
+        "0.20 seconds and 0.5 mV",
+        "0.02 seconds and 1.0 mV",
+        "0.10 seconds and 0.2 mV"
+      ],
+      "answer": 0,
+      "explain": "At 25 mm/s, 1 mm horizontally equals 1/25 s = 0.04 s (and 1 large 5 mm box equals 0.20 s); at 10 mm/mV, 1 mm vertically equals 0.1 mV (and 1 large 5 mm box equals 0.5 mV).",
+      "verified": false,
+      "open": {
+        "q": "At standard ECG paper speed (25 mm/s) and gain (10 mm/mV), state the time interval and voltage represented by one small 1 mm square.",
+        "accept": [
+          "0.04 s and 0.1 mV",
+          "40 ms and 0.1 mV",
+          "0.04 seconds horizontally, 0.1 millivolts vertically"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ECG Paper Calibration and Lead Systems",
+      "q": "Which limb electrode positions form the positive and negative poles of standard bipolar limb lead II?",
+      "options": [
+        "Positive electrode on the left arm (LA) and negative electrode on the right arm (RA)",
+        "Positive electrode on the left leg (LL) and negative electrode on the right arm (RA)",
+        "Positive electrode on the left leg (LL) and negative electrode on the left arm (LA)",
+        "Positive electrode on the right arm (RA) and negative electrode on the left leg (LL)"
+      ],
+      "answer": 1,
+      "explain": "By Einthoven's triangle convention, Lead I records LA (+) minus RA (-), Lead II records LL (+) minus RA (-), and Lead III records LL (+) minus LA (-), with the right leg serving as the ground reference.",
+      "verified": false,
+      "open": {
+        "q": "Specify the positive and negative limb electrode placements for standard bipolar limb lead II.",
+        "accept": [
+          "Positive on left leg (LL) and negative on right arm (RA)",
+          "Left leg (+), right arm (-)"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ECG Paper Calibration and Lead Systems",
+      "q": "According to Einthoven's law, what is the mathematical relationship among the instantaneous electrical potentials recorded in bipolar limb leads I, II, and III?",
+      "options": [
+        "Lead I + Lead II = Lead III",
+        "Lead II + Lead III = Lead I",
+        "Lead I + Lead III = Lead II",
+        "Lead I + Lead II + Lead III = 1"
+      ],
+      "answer": 2,
+      "explain": "Einthoven's law states that at any instant in the cardiac cycle, the potential in Lead II equals the sum of the potentials in Lead I and Lead III (II = I + III).",
+      "verified": false,
+      "open": {
+        "q": "Write the equation expressing Einthoven's law relating bipolar limb leads I, II, and III.",
+        "accept": [
+          "Lead II = Lead I + Lead III",
+          "I + III = II"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ECG Paper Calibration and Lead Systems",
+      "q": "Which group of ECG leads views the electrical activity of the heart in the horizontal (transverse) plane?",
+      "options": [
+        "Leads I, II, and III",
+        "Leads aVR, aVL, and aVF",
+        "Leads II, III, and aVF",
+        "Precordial leads V1 through V6"
+      ],
+      "answer": 3,
+      "explain": "The six limb leads (I, II, III, aVR, aVL, aVF) record electrical vectors in the frontal plane, whereas the six unipolar chest (precordial) leads V1 to V6 record vectors in the horizontal plane.",
+      "verified": false,
+      "open": {
+        "q": "Which ECG leads record cardiac electrical vectors in the horizontal (transverse) plane?",
+        "accept": [
+          "V1 to V6",
+          "Precordial leads",
+          "Chest leads V1-V6"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ECG Paper Calibration and Lead Systems",
+      "q": "Where is precordial chest lead V4 placed on the anterior chest wall?",
+      "options": [
+        "Fifth intercostal space in the left midclavicular line",
+        "Fourth intercostal space at the right sternal border",
+        "Fourth intercostal space at the left sternal border",
+        "Fifth intercostal space in the left midaxillary line"
+      ],
+      "answer": 0,
+      "explain": "V1 is placed at the 4th right intercostal space (ICS) sternal border, V2 at the 4th left ICS sternal border, V3 midway between V2 and V4, V4 at the 5th left ICS midclavicular line, V5 at the 5th left ICS anterior axillary line, and V6 at the 5th left ICS midaxillary line.",
+      "verified": false,
+      "open": {
+        "q": "State the exact anatomical landmark for placing chest electrode V4.",
+        "accept": [
+          "Fifth left intercostal space at the midclavicular line",
+          "5th ICS, left midclavicular line"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Waves and Physiological Basis",
+      "q": "What electrical event in the heart generates the normal P wave on the surface ECG?",
+      "options": [
+        "SA nodal firing alone",
+        "Atrial depolarisation",
+        "Atrial repolarisation",
+        "Septal depolarisation"
+      ],
+      "answer": 1,
+      "explain": "SA nodal depolarization itself is too small to register on a surface ECG; the P wave reflects the wave of atrial myocardial depolarization (normally less than 0.12 s wide and less than 2.5 mm tall in lead II).",
+      "verified": false,
+      "open": {
+        "q": "Which cardiac electrical event produces the P wave on an electrocardiogram?",
+        "accept": [
+          "Atrial depolarization",
+          "Depolarization of the atria"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Waves and Physiological Basis",
+      "q": "Why is the atrial repolarization wave (Ta wave) normally not visible as a separate deflection on a resting ECG?",
+      "options": [
+        "Atrial cells do not repolarise",
+        "Atrial repolarisation occurs after the T wave",
+        "Low-voltage atrial repolarisation is obscured by the QRS complex",
+        "The AV node blocks atrial repolarisation"
+      ],
+      "answer": 2,
+      "explain": "Atrial repolarization occurs roughly 0.15 to 0.20 s after the P wave, coinciding directly with ventricular depolarization (QRS complex), which masks it unless complete AV block dissociates P waves from QRS complexes.",
+      "verified": false,
+      "open": {
+        "q": "Why is the wave of atrial repolarization usually invisible on a standard surface ECG?",
+        "accept": [
+          "It is buried within or obscured by the simultaneous QRS complex",
+          "Occurs at the same time as ventricular depolarization (QRS)"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Waves and Physiological Basis",
+      "q": "Which part of the ventricles depolarizes first, producing the normal small physiological Q wave in left lateral leads (I, aVL, V5, V6)?",
+      "options": [
+        "Posterior basal right ventricle",
+        "Left ventricular apex",
+        "Right atrial appendage",
+        "Left-to-right septal depolarisation"
+      ],
+      "answer": 3,
+      "explain": "The left bundle branch activates the left mid-septum first, creating a small initial depolarization vector directed from left to right and anteriorly—away from left lateral leads (small Q wave) and toward V1 (small R wave).",
+      "verified": false,
+      "open": {
+        "q": "Which region of the ventricular myocardium depolarizes first and generates the normal septal Q wave in left lateral ECG leads?",
+        "accept": [
+          "Interventricular septum (left-to-right depolarization)",
+          "Left side of the interventricular septum"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Waves and Physiological Basis",
+      "q": "What does the T wave represent, and why is it normally upright in the same leads that have an upright QRS complex (such as lead II and V5)?",
+      "options": [
+        "Ventricular repolarisation; epicardium repolarises before endocardium",
+        "Ventricular depolarisation toward the apex",
+        "His–Purkinje conduction",
+        "Papillary muscle contraction"
+      ],
+      "answer": 0,
+      "explain": "Endocardial myocytes have longer action potential durations than epicardial cells, so ventricular repolarization moves from epicardium toward endocardium; a negative repolarization wave moving away from the positive electrode produces an upright deflection.",
+      "verified": false,
+      "open": {
+        "q": "Why does the normal T wave have the same polarity (upright) as the QRS complex in leads like Lead II despite representing ventricular repolarization?",
+        "accept": [
+          "Ventricular repolarization proceeds from epicardium to endocardium, opposite to depolarization",
+          "Epicardium repolarizes before endocardium"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-010",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Intervals and Segments",
+      "q": "What is the normal duration of the PR interval in adults, and what physiological event does it primarily reflect?",
+      "options": [
+        "0.04–0.08 s; His–Purkinje conduction",
+        "0.12–0.20 s; atrial depolarisation and AV nodal delay",
+        "0.25–0.35 s; ventricular plateau",
+        "0.40–0.44 s; total ventricular systole"
+      ],
+      "answer": 1,
+      "explain": "Measured from the onset of the P wave to the onset of the QRS complex, the PR interval normally spans 0.12 to 0.20 s and is governed chiefly by slow conduction through the AV node.",
+      "verified": false,
+      "open": {
+        "q": "State the normal adult duration of the PR interval and the main physiological process it measures.",
+        "accept": [
+          "0.12 to 0.20 seconds; atrial depolarization and AV nodal conduction delay",
+          "120-200 ms; conduction time from SA node/atria through the AV node to ventricles"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Intervals and Segments",
+      "q": "What is the normal upper limit for QRS complex duration in a healthy adult, and what does widening beyond this limit indicate?",
+      "options": [
+        "0.04 s; sinus bradycardia",
+        "0.20 s; first-degree AV block",
+        "0.10–0.12 s; widening suggests delayed ventricular conduction",
+        "0.44 s; hypercalcaemia"
+      ],
+      "answer": 2,
+      "explain": "Rapid conduction via the His-Purkinje system normally depolarizes both ventricles within 0.08 to 0.10 s (less than 0.12 s); QRS duration of 0.12 s or more indicates bundle branch block, hyperkalemia, or ventricular origin of the beat.",
+      "verified": false,
+      "open": {
+        "q": "State the normal duration of the QRS complex and give one cause of a widened QRS complex (0.12 s or greater).",
+        "accept": [
+          "0.08 to 0.10 s (under 0.12 s); bundle branch block or ventricular ectopic beat",
+          "Less than 0.12 seconds; left or right bundle branch block"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Normal ECG Intervals and Segments",
+      "q": "Which phase of the ventricular cardiac myocyte action potential corresponds temporally to the isoelectric ST segment on the surface ECG?",
+      "options": [
+        "Phase 0: rapid depolarisation",
+        "Phase 1: early repolarisation",
+        "Phase 3: rapid repolarisation",
+        "Phase 2: plateau"
+      ],
+      "answer": 3,
+      "explain": "During the Phase 2 plateau, the entire ventricular myocardium is equally depolarized, creating no extracellular potential difference between electrodes and keeping the ST segment flat at the isoelectric baseline.",
+      "verified": false,
+      "open": {
+        "q": "Which phase of the ventricular action potential corresponds to the isoelectric ST segment on the ECG?",
+        "accept": [
+          "Phase 2",
+          "Plateau phase",
+          "Phase 2 plateau"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Normal ECG Intervals and Segments",
+      "q": "Which formula (Bazett's formula) is used to calculate the heart-rate-corrected QT interval (QTc), and what is the clinical danger of marked QTc prolongation?",
+      "options": [
+        "QTc = QT/√RR; prolongation predisposes to torsades",
+        "QTc = QT × RR; predisposes to sinus arrest",
+        "QTc = RR/QT; predisposes to AV block",
+        "QTc = QT + PR; predisposes to flutter"
+      ],
+      "answer": 0,
+      "explain": "Because QT shortens as heart rate increases, Bazett's formula normalizes QT to 60 bpm (QTc = QT / sqrt(RR in seconds), normal under ~0.44 s in men and ~0.46 s in women); prolonged QTc delays repolarization and triggers early afterdepolarizations leading to torsades de pointes.",
+      "verified": false,
+      "open": {
+        "q": "Write Bazett's formula for corrected QT interval (QTc) and name the life-threatening arrhythmia associated with marked QT prolongation.",
+        "accept": [
+          "QTc = QT / sqrt(RR); torsades de pointes",
+          "QT divided by square root of RR interval; polymorphic ventricular tachycardia"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heart Rate and Mean Electrical Axis",
+      "q": "On an ECG recorded at 25 mm/s with a regular rhythm, the distance between two consecutive R waves is exactly 4 large squares (20 mm). What is the ventricular heart rate?",
+      "options": [
+        "60 beats/min",
+        "75 beats/min",
+        "100 beats/min",
+        "150 beats/min"
+      ],
+      "answer": 1,
+      "explain": "At 25 mm/s, 300 large squares equal 1 minute; therefore Heart Rate = 300 / (number of large squares between R waves) = 300 / 4 = 75 beats/min.",
+      "verified": false,
+      "open": {
+        "q": "Calculate the heart rate on a standard 25 mm/s ECG when consecutive R waves are separated by 4 large squares.",
+        "accept": [
+          "75 bpm",
+          "75 beats per minute"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Heart Rate and Mean Electrical Axis",
+      "q": "What is the normal range of the mean QRS electrical axis in the frontal plane in a healthy adult?",
+      "options": [
+        "-90 degrees to -30 degrees",
+        "+100 degrees to +180 degrees",
+        "-30 degrees to +90 degrees (up to +100 degrees)",
+        "-180 degrees to -90 degrees"
+      ],
+      "answer": 2,
+      "explain": "Because the left ventricle has much greater muscle mass than the right ventricle, the mean ventricular depolarization vector points downward and to the left between -30 degrees and +90 degrees (occasionally +100 degrees).",
+      "verified": false,
+      "open": {
+        "q": "State the normal range in degrees for the mean frontal plane QRS electrical axis in adults.",
+        "accept": [
+          "-30 to +90 degrees",
+          "-30° to +90°",
+          "-30 to +100 degrees"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-016",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heart Rate and Mean Electrical Axis",
+      "q": "An adult ECG shows a predominantly positive (upright) QRS complex in Lead I and a predominantly negative (deep S wave) QRS complex in Lead aVF (and Lead II). How is this frontal plane QRS axis classified?",
+      "options": [
+        "Normal electrical axis",
+        "Right axis deviation",
+        "Extreme (northwest) axis deviation",
+        "Left axis deviation"
+      ],
+      "answer": 3,
+      "explain": "Positive QRS in Lead I (0 degrees) with negative QRS in Lead aVF (+90 degrees) and Lead II (+60 degrees) places the mean vector beyond -30 degrees, defining left axis deviation (seen in left anterior fascicular block, LVH, or inferior MI).",
+      "verified": false,
+      "open": {
+        "q": "What QRS axis deviation is present when Lead I has a predominantly positive QRS complex while Leads II and aVF have predominantly negative QRS complexes?",
+        "accept": [
+          "Left axis deviation",
+          "LAD"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heart Rate and Mean Electrical Axis",
+      "q": "Which condition typically causes right axis deviation (negative QRS in Lead I, positive QRS in Lead aVF) on a 12-lead ECG?",
+      "options": [
+        "Right ventricular hypertrophy from pulmonary hypertension",
+        "Left anterior fascicular block",
+        "Concentric left ventricular hypertrophy",
+        "Lateral myocardial infarction"
+      ],
+      "answer": 0,
+      "explain": "Right ventricular hypertrophy shifts the net ventricular depolarization vector rightward and anteriorly, producing a negative QRS in Lead I, positive QRS in aVF, and tall R wave in V1.",
+      "verified": false,
+      "open": {
+        "q": "Give two clinical causes of right axis deviation on a 12-lead ECG.",
+        "accept": [
+          "Right ventricular hypertrophy and left posterior fascicular block",
+          "Cor pulmonale and lateral myocardial infarction"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Electrolyte Disturbances on ECG",
+      "q": "Which sequence of progressive ECG changes is characteristic of worsening hyperkalemia?",
+      "options": [
+        "Flat T waves, U waves and ST depression",
+        "Tall peaked T waves, prolonged PR, loss of P waves and wide QRS",
+        "Short QT with Osborne waves",
+        "Sinus tachycardia with narrow QRS"
+      ],
+      "answer": 1,
+      "explain": "Elevated extracellular K+ accelerates Phase 3 repolarization (tall tented T waves) while partially depolarizing resting membrane potential and inactivating fast Na+ channels, slowing conduction (prolonged PR, absent P, wide QRS, sine wave, and asystole/VF).",
+      "verified": false,
+      "open": {
+        "q": "Describe the earliest and progressive ECG abnormalities seen as serum potassium rises in hyperkalemia.",
+        "accept": [
+          "Tall peaked T waves followed by PR prolongation, loss of P waves, and QRS widening (sine wave)",
+          "Peaked T waves, flat/absent P waves, prolonged PR, wide QRS"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-019",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Electrolyte Disturbances on ECG",
+      "q": "Which classic triad of ECG changes occurs in moderate-to-severe hypokalemia?",
+      "options": [
+        "Tall peaked T waves, shortened QT interval, and elevated ST segments",
+        "Shortened PR interval, delta waves, and narrow QRS",
+        "ST-segment depression, flattened or inverted T waves, and prominent U waves",
+        "Deep Q waves in V1-V3 with right bundle branch block"
+      ],
+      "answer": 2,
+      "explain": "Hypokalemia reduces outward K+ channel conductance (IKr), slowing Phase 3 repolarization and producing ST depression, T-wave flattening/inversion, prominent U waves (after the T wave), and prolonged QU interval.",
+      "verified": false,
+      "open": {
+        "q": "State the characteristic ECG abnormalities seen in hypokalemia.",
+        "accept": [
+          "ST depression, flattened/inverted T waves, and prominent U waves",
+          "Prominent U waves, T-wave flattening, and ST depression"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-020",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Electrolyte Disturbances on ECG",
+      "q": "How do hypocalcemia and hypercalcemia alter the QT interval on an electrocardiogram?",
+      "options": [
+        "Hypocalcaemia shortens QT; hypercalcaemia prolongs it",
+        "Neither affects QT",
+        "Both prolong PR without changing QT",
+        "Hypocalcaemia prolongs QT; hypercalcaemia shortens it"
+      ],
+      "answer": 3,
+      "explain": "Low extracellular Ca2+ prolongs Phase 2 plateau duration, lengthening the ST segment and QTc interval; elevated extracellular Ca2+ accelerates Phase 2 closure, shortening the ST segment and QTc.",
+      "verified": false,
+      "open": {
+        "q": "Contrast the effects of hypocalcemia and hypercalcemia on the ECG QT interval.",
+        "accept": [
+          "Hypocalcemia prolongs the QT interval; hypercalcemia shortens the QT interval",
+          "Low calcium lengthens QT, high calcium shortens QT"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Arrhythmias and Conduction Blocks",
+      "q": "Which ECG findings define Mobitz type I (Wenckebach) second-degree atrioventricular block?",
+      "options": [
+        "PR lengthens progressively until a QRS is dropped, then the cycle repeats",
+        "PR remains constant before a dropped QRS",
+        "P waves and QRS complexes are completely dissociated",
+        "PR is prolonged but every P conducts"
+      ],
+      "answer": 0,
+      "explain": "Mobitz type I (Wenckebach) reflects progressive decremental conduction fatigue within the AV node (grouped beating with progressive PR prolongation before a dropped beat), whereas Mobitz type II occurs below the AV node with fixed PR intervals and higher risk of progression to complete heart block.",
+      "verified": false,
+      "open": {
+        "q": "Describe the hallmark ECG pattern of Mobitz type I (Wenckebach) second-degree AV block.",
+        "accept": [
+          "Progressive PR interval prolongation until a P wave is blocked (dropped QRS), then the cycle repeats",
+          "Gradually lengthening PR intervals followed by a dropped QRS complex"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Arrhythmias and Conduction Blocks",
+      "q": "Which three hallmark ECG features characterize atrial fibrillation?",
+      "options": [
+        "Regular sawtooth waves with regular RR intervals",
+        "No distinct P waves and irregularly irregular RR intervals",
+        "Prolonged PR with regular RR and peaked T waves",
+        "Normal sinus P waves before each QRS"
+      ],
+      "answer": 1,
+      "explain": "Multiple disorganized atrial re-entrant wavelets fire at 350-600/min without coordinated atrial contraction (eliminating P waves and increasing left atrial appendage thromboembolism risk), while variable AV nodal filtering produces irregularly irregular ventricular RR intervals.",
+      "verified": false,
+      "open": {
+        "q": "State the two classic diagnostic ECG features of atrial fibrillation.",
+        "accept": [
+          "Absent P waves (fibrillatory baseline) and irregularly irregular RR intervals",
+          "Irregularly irregular rhythm with absent P waves"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Arrhythmias and Conduction Blocks",
+      "q": "A 21-year-old athlete with recurrent paroxysmal supraventricular tachycardia has a resting ECG showing a short PR interval (less than 0.12 s), a slurred initial upstroke of the QRS complex (delta wave), and a widened QRS. Which accessory conduction pathway produces this Wolff-Parkinson-White (WPW) pattern?",
+      "options": [
+        "Bachmann's interatrial bundle",
+        "Left posterior fascicle",
+        "Bundle of Kent",
+        "Moderator band"
+      ],
+      "answer": 2,
+      "explain": "The bundle of Kent is an abnormal congenital muscular bridge connecting atrium and ventricle directly, bypassing the slow AV node to pre-excite ventricular myocardium early (short PR + slurred delta wave) and creating an anatomical circuit for AV re-entrant tachycardia.",
+      "verified": false,
+      "open": {
+        "q": "Name the congenital accessory pathway responsible for ventricular pre-excitation (short PR interval and delta wave) in Wolff-Parkinson-White syndrome.",
+        "accept": [
+          "Bundle of Kent",
+          "Accessory atrioventricular pathway"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-024",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Ischemia and Myocardial Infarction Localization",
+      "q": "A 58-year-old man presents with crushing retrosternal chest pain for 45 minutes. His 12-lead ECG shows marked ST-segment elevation in leads II, III, and aVF, with reciprocal ST depression in leads I and aVL. Which coronary artery is most likely acutely occluded?",
+      "options": [
+        "Left anterior descending (LAD) artery",
+        "Left circumflex (LCx) artery in a left-dominant system only",
+        "First diagonal branch supplying the high lateral wall",
+        "Right coronary artery (RCA) supplying the inferior myocardial wall"
+      ],
+      "answer": 3,
+      "explain": "Leads II, III, and aVF view the inferior wall of the left ventricle, which is supplied by the posterior descending artery arising from the right coronary artery (RCA) in ~80-85% of individuals.",
+      "verified": false,
+      "open": {
+        "q": "ST-segment elevation in leads II, III, and aVF indicates acute myocardial injury in which anatomical wall of the heart, and which coronary artery is most commonly occluded?",
+        "accept": [
+          "Inferior wall; right coronary artery (RCA)",
+          "Inferior myocardial wall; RCA"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-025",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Ischemia and Myocardial Infarction Localization",
+      "q": "Which group of ECG leads demonstrates ST-segment elevation during an acute anterior/anteroseptal myocardial infarction caused by occlusion of the left anterior descending (LAD) coronary artery?",
+      "options": [
+        "Leads V1, V2, V3, and V4",
+        "Leads II, III, and aVF",
+        "Leads V5, V6, I, and aVL",
+        "Lead aVR alone"
+      ],
+      "answer": 0,
+      "explain": "Precordial leads V1-V2 overlie the interventricular septum and V3-V4 overlie the anterior left ventricular wall, both perfused by the left anterior descending (LAD) artery; V5-V6, I, and aVL reflect the lateral wall (left circumflex artery).",
+      "verified": false,
+      "open": {
+        "q": "Which ECG leads show ST-segment elevation in an acute anteroseptal myocardial infarction due to left anterior descending (LAD) artery occlusion?",
+        "accept": [
+          "V1 to V4",
+          "V1, V2, V3, and V4",
+          "Precordial leads V1-V4"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ECG intervals",
+      "q": "An ECG shows a prolonged PR interval, but every atrial impulse is followed by a QRS complex. Which conduction abnormality is present?",
+      "options": [
+        "First-degree atrioventricular block",
+        "Second-degree atrioventricular block",
+        "Third-degree atrioventricular block",
+        "Bundle branch block"
+      ],
+      "answer": 0,
+      "explain": "First-degree AV block is a PR interval longer than 200 ms with 1:1 atrioventricular conduction. Every P wave is conducted, but conduction is delayed.",
+      "verified": false,
+      "open": {
+        "q": "What ECG finding defines first-degree AV block?",
+        "accept": [
+          "PR interval greater than 200 ms with every P wave conducted"
+        ]
+      }
+    },
+    {
+      "id": "pc-ecg-027",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cardiac electrical activity",
+      "q": "A patient with hyperkalaemia develops tall, narrow-based peaked T waves. Which change is primarily responsible for this early ECG manifestation?",
+      "options": [
+        "Altered potassium equilibrium potential affecting ventricular repolarisation",
+        "Increased calcium entry during phase 0 of ventricular action potentials",
+        "Prolonged AV nodal conduction due to reduced sodium current",
+        "Delayed atrial depolarisation from reduced chloride conductance"
+      ],
+      "answer": 0,
+      "explain": "Elevated extracellular potassium alters the potassium equilibrium potential and ventricular repolarisation, classically producing peaked T waves early in hyperkalaemia. More severe cases can cause QRS widening and dangerous conduction abnormalities.",
+      "verified": false,
+      "open": {
+        "q": "What is the classic early ECG change in hyperkalaemia?",
+        "accept": [
+          "Tall peaked T waves",
+          "Peaked T waves"
+        ]
+      }
+    }
+  ]
 }
