@@ -30,6 +30,50 @@
       ],
       "answer": 1,
       "explain": "Fatty acids and amino acids in the duodenum stimulate I cells to release cholecystokinin (CCK). CCK contracts the gallbladder and stimulates pancreatic acinar enzyme secretion; secretin primarily promotes bicarbonate-rich ductal secretion."
+    },
+    {
+      "id": "pi-accessory-organs-003",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Pancreatic secretion",
+      "q": "Acidic chyme enters the duodenum. Which hormone is released from S cells and stimulates bicarbonate-rich pancreatic ductal secretion?",
+      "options": [
+        "Secretin",
+        "Cholecystokinin",
+        "Gastrin",
+        "Motilin"
+      ],
+      "answer": 0,
+      "explain": "Acid in the duodenum stimulates S cells to release secretin. Secretin acts mainly on pancreatic ductal cells to increase bicarbonate-rich fluid secretion, helping neutralise gastric acid.",
+      "verified": false,
+      "open": {
+        "q": "Which hormone stimulates bicarbonate-rich pancreatic secretion in response to duodenal acid?",
+        "accept": [
+          "Secretin"
+        ]
+      }
+    },
+    {
+      "id": "pi-accessory-organs-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Bile secretion",
+      "q": "A patient with terminal ileal disease develops impaired enterohepatic circulation of bile salts. Which consequence is most likely?",
+      "options": [
+        "Reduced bile salt pool and impaired micelle formation",
+        "Increased recycling of bile salts to the liver",
+        "Increased absorption of fat-soluble vitamins",
+        "Increased conversion of bilirubin to urobilinogen in the ileum"
+      ],
+      "answer": 0,
+      "explain": "Bile salts are actively reabsorbed mainly in the terminal ileum and returned to the liver through portal blood. Ileal disease reduces the bile salt pool, impairing micelle formation and absorption of dietary lipids and fat-soluble vitamins.",
+      "verified": false,
+      "open": {
+        "q": "Where are bile salts actively reabsorbed for enterohepatic circulation?",
+        "accept": [
+          "Terminal ileum"
+        ]
+      }
     }
   ]
 }
