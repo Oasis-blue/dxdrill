@@ -530,11 +530,11 @@
    "options": [
     "Excess unconjugated bilirubin is filtered by the kidneys",
     "Bacterial overgrowth destroys urobilinogen in the colon",
-    "Conjugated bilirubin cannot enter the intestine to form stercobilin, so it regurgitates into blood and is excreted in urine",
+    "Conjugated bilirubin cannot reach gut stercobilin; it refluxes into blood and urine",
     "Heme oxygenase is inhibited by gallstones"
    ],
    "answer": 2,
-   "explain": "Biliary obstruction prevents conjugated bilirubin from reaching gut bacteria (eliminating brown stercobilin in stool) and forces water-soluble bilirubin diglucuronide into plasma for glomerular filtration into urine.",
+   "explain": "Biliary obstruction prevents conjugated bilirubin from reaching gut bacteria (eliminating brown stercobilin in stool) and forces water-soluble bilirubin diglucuronide into plasma for glomerular filtration into urine. Key detail: Conjugated bilirubin cannot enter the intestine to form stercobilin, so it regurgitates into blood and is excreted in urine.",
    "verified": false,
    "open": {
     "q": "Which pigment derived from intestinal bacterial metabolism of bilirubin is absent in acholic stools during biliary obstruction?",
@@ -554,10 +554,10 @@
     "ALT is secreted directly into bile",
     "Ethanol induces mitochondrial ALT transcription",
     "AST is synthesized in skeletal muscle only",
-    "Alcoholism causes pyridoxal phosphate (vitamin B6) deficiency, which impairs ALT activity more severely than AST"
+    "B6 deficiency reduces ALT activity more than AST, raising the AST:ALT ratio"
    ],
    "answer": 3,
-   "explain": "Both AST and ALT require pyridoxal phosphate (B6), which is depleted in chronic alcoholism; ALT is more sensitive to B6 depletion, and ethanol-induced mitochondrial injury releases mitochondrial AST.",
+   "explain": "Both AST and ALT require pyridoxal phosphate (B6), which is depleted in chronic alcoholism; ALT is more sensitive to B6 depletion, and ethanol-induced mitochondrial injury releases mitochondrial AST. Key detail: Alcoholism causes pyridoxal phosphate (vitamin B6) deficiency, which impairs ALT activity more severely than AST.",
    "verified": false,
    "open": {
     "q": "Deficiency of which vitamin cofactor contributes to the characteristic AST:ALT ratio greater than 2:1 in alcoholic liver disease?",
@@ -600,12 +600,12 @@
    "q": "Why is prothrombin time (PT/INR) a more sensitive marker of acute hepatic synthetic failure than serum albumin?",
    "options": [
     "Albumin is not synthesized by the liver",
-    "Coagulation factors like Factor VII have half-lives of hours, whereas albumin has a half-life of ~20 days",
+    "Factor VII has a short half-life, so PT/INR changes before albumin falls",
     "Prothrombin is excreted by the kidneys",
     "Albumin is stored in large reserves in the spleen"
    ],
    "answer": 1,
-   "explain": "Vitamin K-dependent clotting factors (especially Factor VII, half-life ~6 hours) turn over rapidly, so PT prolongs within 24 hours of acute liver necrosis, whereas albumin (half-life ~20 days) takes weeks to fall.",
+   "explain": "Vitamin K-dependent clotting factors (especially Factor VII, half-life ~6 hours) turn over rapidly, so PT prolongs within 24 hours of acute liver necrosis, whereas albumin (half-life ~20 days) takes weeks to fall. Key detail: Coagulation factors like Factor VII have half-lives of hours, whereas albumin has a half-life of ~20 days.",
    "verified": false,
    "open": {
     "q": "Why does prothrombin time prolong much earlier than serum albumin falls in acute liver failure?",
@@ -757,13 +757,13 @@
    "sub": "Renal Biochemistry",
    "q": "Why does severe renal parenchymal disease cause secondary hyperparathyroidism and renal osteodystrophy?",
    "options": [
-    "Phosphate retention and loss of renal 1-alpha-hydroxylase lower calcitriol and ionized calcium, stimulating PTH secretion",
+    "Phosphate retention and reduced calcitriol cause hypocalcaemia, driving PTH",
     "Excess renal calcitriol synthesis suppresses osteoblast activity",
     "Uremic toxins directly destroy the parathyroid glands",
     "Increased urinary calcium excretion causes hypercalcemia"
    ],
    "answer": 0,
-   "explain": "Failing kidneys retain phosphate (which complexes free Ca2+) and lose 1-alpha-hydroxylase activity (lowering calcitriol and gut Ca2+ absorption), producing hypocalcemia that chronically stimulates PTH.",
+   "explain": "Failing kidneys retain phosphate (which complexes free Ca2+) and lose 1-alpha-hydroxylase activity (lowering calcitriol and gut Ca2+ absorption), producing hypocalcemia that chronically stimulates PTH. Key detail: Phosphate retention and loss of renal 1-alpha-hydroxylase lower calcitriol and ionized calcium, stimulating PTH secretion.",
    "verified": false,
    "open": {
     "q": "Loss of which renal enzyme in chronic kidney disease leads to calcitriol deficiency and hypocalcemia?",
@@ -806,11 +806,11 @@
    "options": [
     "Accelerated TCA cycle activity produces excess carbonic acid",
     "Ketone body uptake increases sharply",
-    "Oxygen deprivation halts oxidative phosphorylation and forces anaerobic glycolysis with lactate and H+ accumulation",
+    "Ischaemia shifts myocardium to anaerobic glycolysis, accumulating lactate and H+",
     "Fatty acid beta-oxidation accelerates"
    ],
    "answer": 2,
-   "explain": "Ischemia blocks mitochondrial electron transport, forcing cardiomyocytes to rely on anaerobic glycolysis and ATP hydrolysis, which accumulates lactate and protons that inhibit contractile proteins and calcium handling.",
+   "explain": "Ischemia blocks mitochondrial electron transport, forcing cardiomyocytes to rely on anaerobic glycolysis and ATP hydrolysis, which accumulates lactate and protons that inhibit contractile proteins and calcium handling. Key detail: Oxygen deprivation halts oxidative phosphorylation and forces anaerobic glycolysis with lactate and H+ accumulation.",
    "verified": false,
    "open": {
     "q": "Which glycolytic end product accumulates in ischemic myocardium to lower intracellular pH?",
@@ -896,11 +896,11 @@
    "options": [
     "Activates adenylyl cyclase to open Na+ channels",
     "Directly opens voltage-gated K+ channels",
-    "Activates transducin (Gt) and cGMP phosphodiesterase, lowering cGMP and closing cGMP-gated Na+/Ca2+ channels",
+    "Rhodopsin activates transducin/PDE, lowering cGMP and closing cation channels",
     "Inhibits Na+/K+-ATPase"
    ],
    "answer": 2,
-   "explain": "Transducin activates cGMP phosphodiesterase (PDE), hydrolyzing cGMP to 5'-GMP; falling cGMP closes cGMP-gated cation channels, hyperpolarizing the rod cell and reducing glutamate release.",
+   "explain": "Transducin activates cGMP phosphodiesterase (PDE), hydrolyzing cGMP to 5'-GMP; falling cGMP closes cGMP-gated cation channels, hyperpolarizing the rod cell and reducing glutamate release. Key detail: Activates transducin (Gt) and cGMP phosphodiesterase, lowering cGMP and closing cGMP-gated Na+/Ca2+ channels.",
    "verified": false,
    "open": {
     "q": "Name the G-protein in retinal photoreceptors activated by metarhodopsin II to stimulate cGMP phosphodiesterase.",
@@ -1126,13 +1126,13 @@
    "sub": "Neurochemistry and Brain Metabolism",
    "q": "How does the glutamate-glutamine cycle prevent excitotoxicity after synaptic glutamate release?",
    "options": [
-    "Astrocytes take up synaptic glutamate via EAATs and convert it via glutamine synthetase into non-neuroactive glutamine for return to neurons",
+    "Astrocytes take up glutamate and convert it to glutamine for neuronal recycling",
     "Neurons oxidize glutamate directly to urea in the synaptic cleft",
     "Acetylcholinesterase cleaves glutamate into glycine",
     "Glutamate diffuses freely across the blood-brain barrier into venous blood"
    ],
    "answer": 0,
-   "explain": "Perisynaptic astrocytes clear glutamate via excitatory amino acid transporters (EAAT1/2) and convert it via ATP-dependent glutamine synthetase to inert glutamine, which shuttles back to neurons for hydrolysis by glutaminase.",
+   "explain": "Perisynaptic astrocytes clear glutamate via excitatory amino acid transporters (EAAT1/2) and convert it via ATP-dependent glutamine synthetase to inert glutamine, which shuttles back to neurons for hydrolysis by glutaminase. Key detail: Astrocytes take up synaptic glutamate via EAATs and convert it via glutamine synthetase into non-neuroactive glutamine for return to neurons.",
    "verified": false,
    "open": {
     "q": "Name the glial enzyme that converts cleared synaptic glutamate into non-neuroactive glutamine in astrocytes.",
@@ -1218,13 +1218,13 @@
    "sub": "Hormone Classification and Signal Transduction",
    "q": "Why do peptide hormones such as insulin and glucagon circulate freely in plasma with short half-lives, whereas steroid and thyroid hormones circulate bound to carrier proteins with long half-lives?",
    "options": [
-    "Peptides are water-soluble and cleared rapidly; lipophilic hormones bind plasma proteins and have longer half-lives",
+    "Peptides are water-soluble and rapidly cleared; lipophilic hormones bind plasma carriers",
     "Peptides are covalently attached to albumin",
     "Steroid hormones cannot be metabolised by the liver",
     "Thyroid hormones are stored inside red blood cells"
    ],
    "answer": 0,
-   "explain": "Hydrophilic peptide hormones dissolve in plasma and have half-lives of minutes, whereas hydrophobic steroid and thyroid hormones bind transport globulins (CBG, SHBG, TBG) and albumin, creating a circulating reservoir with half-lives of hours to days.",
+   "explain": "Hydrophilic peptide hormones dissolve in plasma and have half-lives of minutes, whereas hydrophobic steroid and thyroid hormones bind transport globulins (CBG, SHBG, TBG) and albumin, creating a circulating reservoir with half-lives of hours to days. Key detail: Peptides are water-soluble and cleared rapidly; lipophilic hormones bind plasma proteins and have longer half-lives.",
    "verified": false,
    "open": {
     "q": "Name the primary specific plasma transport protein that binds thyroxine (T4) and triiodothyronine (T3) in blood.",
@@ -1335,12 +1335,12 @@
    "q": "Why does chronic exogenous glucocorticoid therapy cause adrenal cortical atrophy and risk of adrenal crisis if stopped abruptly?",
    "options": [
     "Glucocorticoids directly destroy zona fasciculata cells",
-    "Negative feedback suppresses CRH and ACTH, reducing trophic stimulation and causing adrenal cortical atrophy",
+    "Negative feedback lowers CRH/ACTH, causing zona fasciculata/reticularis atrophy",
     "Glucocorticoids induce antibodies against 21-hydroxylase",
     "Exogenous steroids accelerate renal cortisol clearance"
    ],
    "answer": 1,
-   "explain": "Sustained suppression of CRH and ACTH deprives the zona fasciculata and reticularis of trophic signaling, leading to cortical atrophy and secondary adrenal insufficiency upon sudden withdrawal.",
+   "explain": "Sustained suppression of CRH and ACTH deprives the zona fasciculata and reticularis of trophic signaling, leading to cortical atrophy and secondary adrenal insufficiency upon sudden withdrawal. Key detail: Negative feedback suppresses CRH and ACTH, reducing trophic stimulation and causing adrenal cortical atrophy.",
    "verified": false,
    "open": {
     "q": "Which anterior pituitary trophic hormone is suppressed by exogenous glucocorticoids, leading to adrenal cortical atrophy?",
@@ -1476,10 +1476,10 @@
     "Stimulates duodenal DMT1 expression to increase iron absorption",
     "Enhances macrophage iron release into plasma",
     "Converts Fe3+ to Fe2+ in the stomach",
-    "Binds and induces degradation of ferroportin on enterocytes and macrophages, trapping iron intracellularly"
+    "Hepcidin binds ferroportin and triggers its degradation, trapping cellular iron"
    ],
    "answer": 3,
-   "explain": "Hepcidin, upregulated by iron overload and IL-6 during inflammation, internalizes and degrades the iron exporter ferroportin, lowering serum iron and causing anemia of chronic disease.",
+   "explain": "Hepcidin, upregulated by iron overload and IL-6 during inflammation, internalizes and degrades the iron exporter ferroportin, lowering serum iron and causing anemia of chronic disease. Key detail: Binds and induces degradation of ferroportin on enterocytes and macrophages, trapping iron intracellularly.",
    "verified": false,
    "open": {
     "q": "Name the cellular iron exporter degraded by hepcidin to reduce intestinal iron absorption and macrophage iron release.",
@@ -1543,11 +1543,11 @@
    "options": [
     "Directly phosphorylates apical aquaporin-2",
     "Inhibits basolateral Na+/K+-ATPase",
-    "Binds mineralocorticoid receptors to induce transcription of apical ENaC sodium channels and basolateral Na+/K+-ATPase",
+    "Aldosterone induces ENaC and basolateral Na+/K+-ATPase in principal cells",
     "Blocks carbonic anhydrase in the proximal tubule"
    ],
    "answer": 2,
-   "explain": "Aldosterone binds cytosolic mineralocorticoid receptors, inducing expression of epithelial sodium channels (ENaC), ROMK potassium channels, and basolateral Na+/K+-ATPase pumps.",
+   "explain": "Aldosterone binds cytosolic mineralocorticoid receptors, inducing expression of epithelial sodium channels (ENaC), ROMK potassium channels, and basolateral Na+/K+-ATPase pumps. Key detail: Binds mineralocorticoid receptors to induce transcription of apical ENaC sodium channels and basolateral Na+/K+-ATPase.",
    "verified": false,
    "open": {
     "q": "Name the apical sodium channel upregulated by aldosterone in renal collecting duct principal cells.",
@@ -1751,10 +1751,10 @@
     "Directly inhibit glutamate decarboxylase",
     "Block presynaptic GABA reuptake transporters",
     "Act as competitive antagonists at glycine receptors",
-    "Bind allosteric sites on the GABA-A chloride channel to increase chloride influx and hyperpolarize neurons"
+    "Benzodiazepines increase GABA-A opening frequency; barbiturates prolong opening"
    ],
    "answer": 3,
-   "explain": "GABA-A receptors are ligand-gated Cl- channels; benzodiazepines increase the frequency of channel opening in the presence of GABA, whereas barbiturates increase the duration of channel opening.",
+   "explain": "GABA-A receptors are ligand-gated Cl- channels; benzodiazepines increase the frequency of channel opening in the presence of GABA, whereas barbiturates increase the duration of channel opening. Key detail: Bind allosteric sites on the GABA-A chloride channel to increase chloride influx and hyperpolarize neurons.",
    "verified": false,
    "open": {
     "q": "Which ion flows into neurons through the GABA-A receptor channel to produce hyperpolarization?",
@@ -1795,12 +1795,12 @@
    "q": "Why are neurons especially vulnerable to hypoxic-ischemic injury within minutes of cerebral blood flow cessation?",
    "options": [
     "Neurons store excess glycogen that is converted to toxic ethanol",
-    "High ATP demand and limited energy reserves make neurons vulnerable to pump failure and glutamate-mediated calcium injury",
+    "ATP depletion disables ion pumps and triggers glutamate/Ca2+-mediated neuronal injury",
     "The blood-brain barrier dissolves immediately during hypoxia",
     "Neurons switch exclusively to fatty-acid oxidation during ischaemia"
    ],
    "answer": 1,
-   "explain": "ATP depletion halts Na+/K+-ATPase, depolarizing neurons to release excessive glutamate, which overactivates NMDA receptors and floods cells with Ca2+ that activates proteases, phospholipases, and endonucleases.",
+   "explain": "ATP depletion halts Na+/K+-ATPase, depolarizing neurons to release excessive glutamate, which overactivates NMDA receptors and floods cells with Ca2+ that activates proteases, phospholipases, and endonucleases. Key detail: High ATP demand and limited energy reserves make neurons vulnerable to pump failure and glutamate-mediated calcium injury.",
    "verified": false,
    "open": {
     "q": "Which ion enters neurons excessively through overactivated NMDA receptors during ischemic glutamate excitotoxicity?",
