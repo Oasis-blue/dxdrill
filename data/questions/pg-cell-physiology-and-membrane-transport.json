@@ -1,592 +1,615 @@
 {
- "topic": "pg-cell-physiology-and-membrane-transport",
- "questions": [
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cell Organelles and Structure",
-   "q": "Which organelle contains hydrolytic acid enzymes responsible for intracellular digestion of worn-out organelles and engulfed bacteria?",
-   "options": [
-    "Lysosome",
-    "Peroxisome",
-    "Smooth endoplasmic reticulum",
-    "Golgi apparatus"
-   ],
-   "answer": 0,
-   "explain": "Lysosomes are membrane-bound vesicles pinched off from the Golgi apparatus containing acid hydrolases that digest cellular debris and phagocytosed pathogens. Peroxisomes contain oxidases and catalase rather than acid hydrolases.",
-   "verified": false,
-   "open": {
-    "q": "Name the membrane-bound organelle that contains acid hydrolases for intracellular digestion of cellular debris and engulfed bacteria.",
-    "accept": [
-     "Lysosomes",
-     "Primary lysosome",
-     "Secondary lysosome"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cell Organelles and Structure",
-   "q": "Which cytoplasmic organelle detoxifies alcohol and hydrogen peroxide using oxidases and catalase?",
-   "options": [
-    "Rough endoplasmic reticulum",
-    "Peroxisome",
-    "Ribosome",
-    "Centrosome"
-   ],
-   "answer": 1,
-   "explain": "Peroxisomes replicate by self-replication and contain oxidases that generate hydrogen peroxide and catalase that immediately breaks it down into water and oxygen. This protects the cell from oxidative damage and detoxifies substances like ethanol in hepatocytes.",
-   "verified": false,
-   "open": {
-    "q": "Name the organelle rich in oxidases and catalase that detoxifies alcohol and breaks down hydrogen peroxide.",
-    "accept": [
-     "Peroxisomes",
-     "Microbody",
-     "Microbodies"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cell Organelles and Structure",
-   "q": "What is the primary site of steroid hormone synthesis and calcium ion storage in skeletal muscle cells?",
-   "options": [
-    "Nucleolus",
-    "Mitochondrial matrix",
-    "Smooth endoplasmic reticulum",
-    "Nuclear envelope"
-   ],
-   "answer": 2,
-   "explain": "The smooth endoplasmic reticulum lacks ribosomes and houses enzymes for lipid and steroid synthesis; in skeletal and cardiac muscle, its specialized form (sarcoplasmic reticulum) sequesters calcium ions.",
-   "verified": false,
-   "open": {
-    "q": "Which organelle is responsible for lipid and steroid hormone synthesis and serves as the main intracellular calcium store in muscle?",
-    "accept": [
-     "Smooth ER",
-     "SER",
-     "Sarcoplasmic reticulum"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cell Organelles and Structure",
-   "q": "Where within the nucleus does ribosomal RNA transcription and ribosome subunit assembly occur?",
-   "options": [
-    "Nuclear pore complex",
-    "Heterochromatin",
-    "Nuclear lamina",
-    "Nucleolus"
-   ],
-   "answer": 3,
-   "explain": "The nucleolus is a non-membrane-bound dense structure inside the nucleus where ribosomal RNA (rRNA) is synthesized and combined with proteins to form ribosomal subunits.",
-   "verified": false,
-   "open": {
-    "q": "Name the non-membrane-bound region inside the nucleus where ribosomal RNA is transcribed and ribosomal subunits are assembled.",
-    "accept": [
-     "Nucleoli"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cytoskeleton and Intercellular Junctions",
-   "q": "Which cytoskeletal protein polymers form the mitotic spindle, centrioles, and the axoneme of cilia and flagella?",
-   "options": [
-    "Microtubules",
-    "Actin microfilaments",
-    "Keratin intermediate filaments",
-    "Desmin filaments"
-   ],
-   "answer": 0,
-   "explain": "Microtubules are hollow 25 nm tubes built from alpha- and beta-tubulin dimers that guide chromosome segregation during mitosis and power ciliary beating via dynein motor proteins.",
-   "verified": false,
-   "open": {
-    "q": "Name the 25 nm hollow cytoskeletal polymers composed of tubulin dimers that form the mitotic spindle and cilia.",
-    "accept": [
-     "Microtubule",
-     "Tubulin microtubules"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-006",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Cytoskeleton and Intercellular Junctions",
-   "q": "A patient with recurrent sinusitis, bronchiectasis, and male infertility due to immotile spermatozoa most likely has a congenital defect in which molecular motor protein?",
-   "options": [
-    "Kinesin",
-    "Dynein",
-    "Myosin II",
-    "Clathrin"
-   ],
-   "answer": 1,
-   "explain": "Kartagener syndrome (primary ciliary dyskinesia) results from defective axonemal dynein arms, preventing the sliding of microtubule doublets required for respiratory ciliary clearance and sperm flagellar motility.",
-   "verified": false,
-   "open": {
-    "q": "In primary ciliary dyskinesia (Kartagener syndrome), congenital deficiency of which microtubule motor protein causes immotile cilia and sperm flagella?",
-    "accept": [
-     "Axonemal dynein",
-     "Dynein arms"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cytoskeleton and Intercellular Junctions",
-   "q": "Which type of intercellular junction forms a low-resistance electrical pathway allowing ions and small signaling molecules to pass directly between adjacent cardiac myocytes?",
-   "options": [
-    "Tight junction",
-    "Desmosome",
-    "Gap junction",
-    "Hemidesmosome"
-   ],
-   "answer": 2,
-   "explain": "Gap junctions (nexuses) consist of paired connexon hemichannels made of connexin proteins that permit rapid ion flow and electrical coupling across cardiac and visceral smooth muscle syncytia.",
-   "verified": false,
-   "open": {
-    "q": "Name the intercellular junction composed of connexon channels that allows direct electrical and chemical coupling between adjacent cells.",
-    "accept": [
-     "Gap junctions",
-     "Nexus",
-     "Macula communicans"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cytoskeleton and Intercellular Junctions",
-   "q": "Which intercellular junction seals the apical paracellular space between intestinal epithelial cells to prevent leakage of luminal contents?",
-   "options": [
-    "Spot desmosome",
-    "Focal adhesion",
-    "Gap junction",
-    "Tight junction"
-   ],
-   "answer": 3,
-   "explain": "Tight junctions (zonula occludens) use claudin and occludin strands to fuse adjacent apical membranes, restricting paracellular movement and maintaining apical-basolateral cell polarity.",
-   "verified": false,
-   "open": {
-    "q": "Name the apical intercellular junction formed by claudins and occludins that seals the paracellular space between epithelial cells.",
-    "accept": [
-     "Tight junctions",
-     "Zonula occludens",
-     "Occluding junction"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cell Membrane Structure",
-   "q": "How does cholesterol modulate the physical properties of the plasma membrane lipid bilayer?",
-   "options": [
-    "It stabilises membrane fluidity and reduces permeability to polar molecules",
-    "It forms voltage-gated Na+ and K+ channels",
-    "It is the main receptor for peptide hormones",
-    "It anchors the membrane to extracellular collagen"
-   ],
-   "answer": 0,
-   "explain": "Cholesterol intercalates between phospholipid fatty acid tails, preventing tight crystalline packing at low temperatures while restraining excessive acyl-chain motion at high temperatures.",
-   "verified": false,
-   "open": {
-    "q": "State the main structural role of cholesterol within the phospholipid bilayer of the plasma membrane.",
-    "accept": [
-     "Regulates membrane fluidity",
-     "Maintains membrane stability and fluidity",
-     "Buffers membrane fluidity"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-010",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cell Membrane Structure",
-   "q": "What is the primary function of the carbohydrate-rich glycocalyx coating the outer surface of eukaryotic plasma membranes?",
-   "options": [
-    "ATP synthesis by oxidative phosphorylation",
-    "Cell recognition, immune identity and receptor binding",
-    "Calcium extrusion from the cytoplasm",
-    "Action potentials in unmyelinated axons"
-   ],
-   "answer": 1,
-   "explain": "The glycocalyx consists of oligosaccharide chains attached to membrane glycoproteins and glycolipids on the extracellular face, imparting a negative surface charge and serving as recognition markers such as ABO blood group antigens.",
-   "verified": false,
-   "open": {
-    "q": "What is the main physiological role of the glycocalyx on the extracellular surface of the cell membrane?",
-    "accept": [
-     "Cell recognition and adhesion",
-     "Cell-to-cell recognition",
-     "Immune recognition and cell adhesion"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-011",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Passive Transport",
-   "q": "According to Fick's law of diffusion, which change increases the net rate of simple diffusion across a biological membrane?",
-   "options": [
-    "Increasing membrane thickness",
-    "Increasing molecular weight of the diffusing solute",
-    "Increasing lipid solubility and surface area of the membrane",
-    "Decreasing the concentration gradient across the membrane"
-   ],
-   "answer": 2,
-   "explain": "Net diffusion rate is directly proportional to surface area, lipid solubility (partition coefficient), and concentration gradient, and inversely proportional to membrane thickness and the square root of molecular weight.",
-   "verified": false,
-   "open": {
-    "q": "According to Fick's law of diffusion, how do membrane surface area and membrane thickness each affect the rate of simple diffusion?",
-    "accept": [
-     "Surface area increases rate and thickness decreases rate",
-     "Directly proportional to surface area and inversely proportional to thickness"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Passive Transport",
-   "q": "Which transport feature distinguishes facilitated diffusion from simple diffusion across the cell membrane?",
-   "options": [
-    "Direct ATP hydrolysis",
-    "Movement against an electrochemical gradient",
-    "A linear rise in transport at any concentration",
-    "Carrier saturation producing a transport maximum (Tm)"
-   ],
-   "answer": 3,
-   "explain": "Facilitated diffusion moves solutes down their electrochemical gradient without ATP expenditure, but because it relies on conformational changes in specific carrier proteins (such as GLUT transporters), its rate plateaus at Vmax/Tm.",
-   "verified": false,
-   "open": {
-    "q": "Why does the rate of facilitated diffusion plateau at high solute concentrations whereas simple diffusion continues to rise linearly?",
-    "accept": [
-     "Carrier protein saturation",
-     "Saturation of transport carriers",
-     "Reaching transport maximum"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-013",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Passive Transport",
-   "q": "Which glucose transporter is rapidly translocated from intracellular vesicles to the plasma membrane of skeletal muscle and adipose cells in response to insulin?",
-   "options": [
-    "GLUT4",
-    "GLUT1",
-    "GLUT2",
-    "SGLT1"
-   ],
-   "answer": 0,
-   "explain": "Insulin binding stimulates exocytosis of GLUT4-containing vesicles into the sarcolemma and adipocyte membrane, dramatically increasing facilitated glucose uptake; GLUT1 and GLUT2 are insulin-independent, while SGLT1 is a secondary active symporter.",
-   "verified": false,
-   "open": {
-    "q": "Name the insulin-dependent facilitated glucose transporter found primarily in skeletal muscle and adipose tissue.",
-    "accept": [
-     "Glucose transporter 4",
-     "GLUT-4"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-014",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Osmosis and Tonicity",
-   "q": "What occurs when human erythrocytes are placed in a 0.3% sodium chloride solution?",
-   "options": [
-    "They undergo crenation as water leaves the cells",
-    "They swell and undergo osmotic hemolysis as water enters the cells",
-    "Their volume remains unchanged because the solution is isotonic",
-    "Sodium ions rapidly exit the cells via primary active transport"
-   ],
-   "answer": 1,
-   "explain": "Normal isotonic saline is 0.9% NaCl (~290 mOsm/L); a 0.3% NaCl solution is markedly hypotonic, creating an osmotic gradient that drives water into red blood cells until they swell and rupture (hemolysis).",
-   "verified": false,
-   "open": {
-    "q": "What happens to red blood cells placed in a hypotonic 0.3% NaCl solution?",
-    "accept": [
-     "Osmotic lysis",
-     "Hemolysis",
-     "They swell and burst"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-015",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Osmosis and Tonicity",
-   "q": "A solution has a measured osmolarity of 300 mOsm/L, composed entirely of urea, which freely permeates red blood cell membranes (reflection coefficient = 0). What is the effective tonicity of this solution relative to normal erythrocytes?",
-   "options": [
-    "Isotonic",
-    "Hypertonic",
-    "Hypotonic",
-    "Iso-oncotic"
-   ],
-   "answer": 2,
-   "explain": "Tonicity depends only on the concentration of non-penetrating (effective) osmoles. Because urea freely crosses the red cell membrane, it exerts zero sustained osmotic pressure across it, making pure urea solution functionally hypotonic and causing hemolysis.",
-   "verified": false,
-   "open": {
-    "q": "Why is a 300 mOsm/L solution of urea iso-osmotic yet hypotonic to human red blood cells?",
-    "accept": [
-     "Urea freely crosses the cell membrane",
-     "Urea is a penetrating solute with a reflection coefficient of zero",
-     "Urea enters the cell and draws water in"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Primary Active Transport",
-   "q": "What is the exact ion stoichiometry transported per ATP molecule hydrolyzed by the Na+/K+-ATPase pump?",
-   "options": [
-    "2 Na+ pumped out and 3 K+ pumped in",
-    "3 Na+ pumped in and 2 K+ pumped out",
-    "1 Na+ pumped out and 1 K+ pumped in",
-    "3 Na+ pumped out and 2 K+ pumped in"
-   ],
-   "answer": 3,
-   "explain": "For every ATP split, the alpha-subunit of Na+/K+-ATPase extrudes 3 sodium ions to the extracellular fluid and imports 2 potassium ions into the cytosol, making the pump electrogenic (net +1 outward charge per cycle).",
-   "verified": false,
-   "open": {
-    "q": "State the exact number and direction of sodium and potassium ions moved per ATP hydrolyzed by the Na+/K+-ATPase pump.",
-    "accept": [
-     "3 Na+ out and 2 K+ in",
-     "Three sodium ions out and two potassium ions in"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Primary Active Transport",
-   "q": "Cardiac glycosides such as digoxin inhibit Na+/K+-ATPase on cardiac myocytes. How does this inhibition ultimately increase myocardial contractility?",
-   "options": [
-    "Higher intracellular Na+ reduces Na+/Ca2+ exchanger activity, increasing intracellular Ca2+ stores",
-    "Direct activation of beta-1 adrenergic receptors increases cyclic AMP",
-    "Enhanced K+ influx hyperpolarizes the sarcolemma and opens L-type Ca2+ channels",
-    "Increased ATP availability directly accelerates myosin ATPase cross-bridge cycling"
-   ],
-   "answer": 0,
-   "explain": "Inhibiting Na+/K+-ATPase raises cytosolic Na+, which diminishes the inward Na+ gradient driving the basolateral Na+/Ca2+ exchanger (NCX); less Ca2+ is extruded, so more Ca2+ is sequestered in the sarcoplasmic reticulum for subsequent release.",
-   "verified": false,
-   "open": {
-    "q": "Explain how inhibition of Na+/K+-ATPase by digoxin leads to elevated intracellular calcium in cardiac myocytes.",
-    "accept": [
-     "Increased intracellular Na+ reduces Na+/Ca2+ exchange",
-     "Reduced sodium gradient decreases calcium extrusion via the Na+/Ca2+ exchanger"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-018",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Primary Active Transport",
-   "q": "Which primary active transport pump is responsible for acidifying the gastric lumen by secreting protons in exchange for potassium ions?",
-   "options": [
-    "SERCA Ca2+-ATPase",
-    "H+/K+-ATPase",
-    "Na+/H+ exchanger (NHE1)",
-    "V-type H+-ATPase"
-   ],
-   "answer": 1,
-   "explain": "Gastric parietal cells express apical H+/K+-ATPase (the proton pump), which directly hydrolyzes ATP to pump H+ into the stomach lumen against a million-fold concentration gradient in exchange for K+; it is the target of omeprazole.",
-   "verified": false,
-   "open": {
-    "q": "Name the primary active transport pump on the apical membrane of gastric parietal cells that secretes H+ in exchange for K+.",
-    "accept": [
-     "Hydrogen potassium ATPase",
-     "Gastric proton pump",
-     "Proton pump"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Secondary Active Transport",
-   "q": "How is glucose absorbed across the apical brush-border membrane of proximal renal tubular and small intestinal epithelial cells?",
-   "options": [
-    "Simple diffusion through lipid pores",
-    "Primary active transport via a glucose-ATPase",
-    "Secondary active symport coupled to the inward Na+ gradient via SGLT",
-    "Antiport exchange with intracellular chloride ions"
-   ],
-   "answer": 2,
-   "explain": "Sodium-glucose linked transporters (SGLT1 in intestine, SGLT2/SGLT1 in proximal tubule) use the steep inward electrochemical Na+ gradient maintained by basolateral Na+/K+-ATPase to co-transport glucose uphill into the cell.",
-   "verified": false,
-   "open": {
-    "q": "By what membrane transport mechanism do SGLT1 and SGLT2 move glucose across the apical membrane of intestinal and renal tubular cells?",
-    "accept": [
-     "Secondary active transport",
-     "Na+-glucose cotransport",
-     "Secondary active symport"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Secondary Active Transport",
-   "q": "Which membrane carrier is an example of secondary active antiport (counter-transport)?",
-   "options": [
-    "SGLT1 sodium-glucose cotransporter",
-    "NKCC2 Na+/K+/2Cl- cotransporter",
-    "Aquaporin-2 water channel",
-    "NCX Na+/Ca2+ exchanger"
-   ],
-   "answer": 3,
-   "explain": "The Na+/Ca2+ exchanger (NCX) moves 3 Na+ ions down their gradient into the cell while extruding 1 Ca2+ ion in the opposite direction against its gradient, defining counter-transport (antiport).",
-   "verified": false,
-   "open": {
-    "q": "Give an example of a secondary active antiporter (counter-transporter) that uses the inward Na+ gradient to extrude Ca2+ from cells.",
-    "accept": [
-     "Na+/Ca2+ exchanger",
-     "NCX",
-     "Sodium-calcium exchanger"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-021",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Secondary Active Transport",
-   "q": "Oral rehydration therapy (ORT) combines sodium chloride and glucose in water to treat secretory diarrhea such as cholera. Why is glucose essential in the solution?",
-   "options": [
-    "SGLT1 remains intact during cholera and co-transports Na+ and glucose, driving osmotic water absorption",
-    "Glucose directly neutralizes Vibrio cholerae enterotoxin inside the intestinal lumen",
-    "Glucose inhibits apical CFTR chloride channels to stop fluid secretion",
-    "Glucose activates basolateral Na+/K+-ATPase directly without requiring ATP"
-   ],
-   "answer": 0,
-   "explain": "Cholera toxin elevates cAMP and opens apical CFTR Cl- channels, causing massive watery diarrhea, but leaves apical SGLT1 undamaged; providing both Na+ and glucose drives coupled absorption followed osmotically by water.",
-   "verified": false,
-   "open": {
-    "q": "Explain the physiological basis for including both glucose and sodium in oral rehydration salts (ORS) for secretory diarrhea.",
-    "accept": [
-     "Coupled absorption via SGLT1 draws water osmotically",
-     "SGLT1 cotransports sodium and glucose together, promoting water reabsorption"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Vesicular Transport",
-   "q": "Which coat protein polymerizes into a triskelion lattice to drive invagination of plasma membrane pits during receptor-mediated endocytosis?",
-   "options": [
-    "Spectrin",
-    "Clathrin",
-    "Vimentin",
-    "Tropomyosin"
-   ],
-   "answer": 1,
-   "explain": "Clathrin triskelions assemble on the cytosolic face of coated pits after ligands such as LDL or transferrin bind their receptors, curving the membrane before dynamin pinches off the vesicle.",
-   "verified": false,
-   "open": {
-    "q": "Name the cytosolic coat protein composed of triskelions that mediates receptor-mediated endocytosis at coated pits.",
-    "accept": [
-     "Clathrin coat"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-023",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Vesicular Transport",
-   "q": "Which intracellular ion triggers the fusion of synaptic and secretory vesicles with the plasma membrane during regulated exocytosis?",
-   "options": [
-    "Magnesium (Mg2+)",
-    "Potassium (K+)",
-    "Calcium (Ca2+)",
-    "Chloride (Cl-)"
-   ],
-   "answer": 2,
-   "explain": "An influx of cytosolic Ca2+ binds to synaptotagmin on the vesicle membrane, triggering SNARE protein complex zipping and membrane fusion to release neurotransmitters or hormones.",
-   "verified": false,
-   "open": {
-    "q": "Which intracellular ion triggers vesicle fusion with the plasma membrane during regulated exocytosis?",
-    "accept": [
-     "Calcium",
-     "Ca2+",
-     "Calcium ions"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-024",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Vesicular Transport",
-   "q": "A 24-year-old man presents with tendon xanthomas and a serum LDL cholesterol of 420 mg/dL. Genetic testing reveals a mutation in the cytoplasmic tail of the LDL receptor preventing its clustering into coated pits. Which cellular transport process is defective?",
-   "options": [
-    "Phagocytosis",
-    "Pinocytosis",
-    "Constitutive exocytosis",
-    "Receptor-mediated endocytosis"
-   ],
-   "answer": 3,
-   "explain": "Familial hypercholesterolemia commonly involves defective LDL receptors that either fail to bind ApoB-100 or lack the NPXY cytoplasmic motif needed to bind adaptor proteins and clathrin during receptor-mediated endocytosis.",
-   "verified": false,
-   "open": {
-    "q": "In familial hypercholesterolemia caused by defective LDL receptors, which specific vesicular transport mechanism is impaired?",
-    "accept": [
-     "Clathrin-mediated endocytosis",
-     "Receptor mediated endocytosis"
-    ]
-   }
-  },
-  {
-   "id": "pg-cell-physiology-and-membrane-transport-025",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Membrane Potential Basics",
-   "q": "Which equation calculates the equilibrium (Nernst) potential for a single permeant ion across a cell membrane?",
-   "options": [
-    "Nernst equation",
-    "Goldman-Hodgkin-Katz equation",
-    "Henderson-Hasselbalch equation",
-    "Starling equation"
-   ],
-   "answer": 0,
-   "explain": "The Nernst equation calculates the exact electrical potential needed to balance the concentration gradient of a single ion at 37 C (E = +/- 61.5/z * log10([Ion]out/[Ion]in)), whereas the Goldman equation accounts for multiple ions weighted by permeability.",
-   "verified": false,
-   "open": {
-    "q": "Name the equation used to calculate the electrical equilibrium potential for a single permeant ion based on its intracellular and extracellular concentrations.",
-    "accept": [
-     "Nernst",
-     "The Nernst equation"
-    ]
-   }
-  }
- ]
+  "topic": "pg-cell-physiology-and-membrane-transport",
+  "questions": [
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cell Organelles and Structure",
+      "q": "Which organelle contains hydrolytic acid enzymes responsible for intracellular digestion of worn-out organelles and engulfed bacteria?",
+      "options": [
+        "Lysosome",
+        "Peroxisome",
+        "Smooth endoplasmic reticulum",
+        "Golgi apparatus"
+      ],
+      "answer": 0,
+      "explain": "Lysosomes are membrane-bound vesicles pinched off from the Golgi apparatus containing acid hydrolases that digest cellular debris and phagocytosed pathogens. Peroxisomes contain oxidases and catalase rather than acid hydrolases.",
+      "verified": false,
+      "open": {
+        "q": "Name the membrane-bound organelle that contains acid hydrolases for intracellular digestion of cellular debris and engulfed bacteria.",
+        "accept": [
+          "Lysosomes",
+          "Primary lysosome",
+          "Secondary lysosome"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cell Organelles and Structure",
+      "q": "Which cytoplasmic organelle detoxifies alcohol and hydrogen peroxide using oxidases and catalase?",
+      "options": [
+        "Rough endoplasmic reticulum",
+        "Peroxisome",
+        "Ribosome",
+        "Centrosome"
+      ],
+      "answer": 1,
+      "explain": "Peroxisomes replicate by self-replication and contain oxidases that generate hydrogen peroxide and catalase that immediately breaks it down into water and oxygen. This protects the cell from oxidative damage and detoxifies substances like ethanol in hepatocytes.",
+      "verified": false,
+      "open": {
+        "q": "Name the organelle rich in oxidases and catalase that detoxifies alcohol and breaks down hydrogen peroxide.",
+        "accept": [
+          "Peroxisomes",
+          "Microbody",
+          "Microbodies"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cell Organelles and Structure",
+      "q": "What is the primary site of steroid hormone synthesis and calcium ion storage in skeletal muscle cells?",
+      "options": [
+        "Nucleolus",
+        "Mitochondrial matrix",
+        "Smooth endoplasmic reticulum",
+        "Nuclear envelope"
+      ],
+      "answer": 2,
+      "explain": "The smooth endoplasmic reticulum lacks ribosomes and houses enzymes for lipid and steroid synthesis; in skeletal and cardiac muscle, its specialized form (sarcoplasmic reticulum) sequesters calcium ions.",
+      "verified": false,
+      "open": {
+        "q": "Which organelle is responsible for lipid and steroid hormone synthesis and serves as the main intracellular calcium store in muscle?",
+        "accept": [
+          "Smooth ER",
+          "SER",
+          "Sarcoplasmic reticulum"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cell Organelles and Structure",
+      "q": "Where within the nucleus does ribosomal RNA transcription and ribosome subunit assembly occur?",
+      "options": [
+        "Nuclear pore complex",
+        "Heterochromatin",
+        "Nuclear lamina",
+        "Nucleolus"
+      ],
+      "answer": 3,
+      "explain": "The nucleolus is a non-membrane-bound dense structure inside the nucleus where ribosomal RNA (rRNA) is synthesized and combined with proteins to form ribosomal subunits.",
+      "verified": false,
+      "open": {
+        "q": "Name the non-membrane-bound region inside the nucleus where ribosomal RNA is transcribed and ribosomal subunits are assembled.",
+        "accept": [
+          "Nucleoli"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cytoskeleton and Intercellular Junctions",
+      "q": "Which cytoskeletal protein polymers form the mitotic spindle, centrioles, and the axoneme of cilia and flagella?",
+      "options": [
+        "Microtubules",
+        "Actin microfilaments",
+        "Keratin intermediate filaments",
+        "Desmin filaments"
+      ],
+      "answer": 0,
+      "explain": "Microtubules are hollow 25 nm tubes built from alpha- and beta-tubulin dimers that guide chromosome segregation during mitosis and power ciliary beating via dynein motor proteins.",
+      "verified": false,
+      "open": {
+        "q": "Name the 25 nm hollow cytoskeletal polymers composed of tubulin dimers that form the mitotic spindle and cilia.",
+        "accept": [
+          "Microtubule",
+          "Tubulin microtubules"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cytoskeleton and Intercellular Junctions",
+      "q": "A patient with recurrent sinusitis, bronchiectasis, and male infertility due to immotile spermatozoa most likely has a congenital defect in which molecular motor protein?",
+      "options": [
+        "Kinesin",
+        "Dynein",
+        "Myosin II",
+        "Clathrin"
+      ],
+      "answer": 1,
+      "explain": "Kartagener syndrome (primary ciliary dyskinesia) results from defective axonemal dynein arms, preventing the sliding of microtubule doublets required for respiratory ciliary clearance and sperm flagellar motility.",
+      "verified": false,
+      "open": {
+        "q": "In primary ciliary dyskinesia (Kartagener syndrome), congenital deficiency of which microtubule motor protein causes immotile cilia and sperm flagella?",
+        "accept": [
+          "Axonemal dynein",
+          "Dynein arms"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cytoskeleton and Intercellular Junctions",
+      "q": "Which type of intercellular junction forms a low-resistance electrical pathway allowing ions and small signaling molecules to pass directly between adjacent cardiac myocytes?",
+      "options": [
+        "Tight junction",
+        "Desmosome",
+        "Gap junction",
+        "Hemidesmosome"
+      ],
+      "answer": 2,
+      "explain": "Gap junctions (nexuses) consist of paired connexon hemichannels made of connexin proteins that permit rapid ion flow and electrical coupling across cardiac and visceral smooth muscle syncytia.",
+      "verified": false,
+      "open": {
+        "q": "Name the intercellular junction composed of connexon channels that allows direct electrical and chemical coupling between adjacent cells.",
+        "accept": [
+          "Gap junctions",
+          "Nexus",
+          "Macula communicans"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cytoskeleton and Intercellular Junctions",
+      "q": "Which intercellular junction seals the apical paracellular space between intestinal epithelial cells to prevent leakage of luminal contents?",
+      "options": [
+        "Spot desmosome",
+        "Focal adhesion",
+        "Gap junction",
+        "Tight junction"
+      ],
+      "answer": 3,
+      "explain": "Tight junctions (zonula occludens) use claudin and occludin strands to fuse adjacent apical membranes, restricting paracellular movement and maintaining apical-basolateral cell polarity.",
+      "verified": false,
+      "open": {
+        "q": "Name the apical intercellular junction formed by claudins and occludins that seals the paracellular space between epithelial cells.",
+        "accept": [
+          "Tight junctions",
+          "Zonula occludens",
+          "Occluding junction"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cell Membrane Structure",
+      "q": "How does cholesterol modulate the physical properties of the plasma membrane lipid bilayer?",
+      "options": [
+        "It stabilises membrane fluidity and reduces permeability to polar molecules",
+        "It forms voltage-gated Na+ and K+ channels",
+        "It is the main receptor for peptide hormones",
+        "It anchors the membrane to extracellular collagen"
+      ],
+      "answer": 0,
+      "explain": "Cholesterol intercalates between phospholipid fatty acid tails, preventing tight crystalline packing at low temperatures while restraining excessive acyl-chain motion at high temperatures.",
+      "verified": false,
+      "open": {
+        "q": "State the main structural role of cholesterol within the phospholipid bilayer of the plasma membrane.",
+        "accept": [
+          "Regulates membrane fluidity",
+          "Maintains membrane stability and fluidity",
+          "Buffers membrane fluidity"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-010",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cell Membrane Structure",
+      "q": "What is the primary function of the carbohydrate-rich glycocalyx coating the outer surface of eukaryotic plasma membranes?",
+      "options": [
+        "ATP synthesis by oxidative phosphorylation",
+        "Cell recognition, immune identity and receptor binding",
+        "Calcium extrusion from the cytoplasm",
+        "Action potentials in unmyelinated axons"
+      ],
+      "answer": 1,
+      "explain": "The glycocalyx consists of oligosaccharide chains attached to membrane glycoproteins and glycolipids on the extracellular face, imparting a negative surface charge and serving as recognition markers such as ABO blood group antigens.",
+      "verified": false,
+      "open": {
+        "q": "What is the main physiological role of the glycocalyx on the extracellular surface of the cell membrane?",
+        "accept": [
+          "Cell recognition and adhesion",
+          "Cell-to-cell recognition",
+          "Immune recognition and cell adhesion"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Passive Transport",
+      "q": "According to Fick's law of diffusion, which change increases the net rate of simple diffusion across a biological membrane?",
+      "options": [
+        "Increasing membrane thickness",
+        "Increasing molecular weight of the diffusing solute",
+        "Increasing lipid solubility and surface area of the membrane",
+        "Decreasing the concentration gradient across the membrane"
+      ],
+      "answer": 2,
+      "explain": "Net diffusion rate is directly proportional to surface area, lipid solubility (partition coefficient), and concentration gradient, and inversely proportional to membrane thickness and the square root of molecular weight.",
+      "verified": false,
+      "open": {
+        "q": "According to Fick's law of diffusion, how do membrane surface area and membrane thickness each affect the rate of simple diffusion?",
+        "accept": [
+          "Surface area increases rate and thickness decreases rate",
+          "Directly proportional to surface area and inversely proportional to thickness"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Passive Transport",
+      "q": "Which transport feature distinguishes facilitated diffusion from simple diffusion across the cell membrane?",
+      "options": [
+        "Direct ATP hydrolysis",
+        "Movement against an electrochemical gradient",
+        "A linear rise in transport at any concentration",
+        "Carrier saturation producing a transport maximum (Tm)"
+      ],
+      "answer": 3,
+      "explain": "Facilitated diffusion moves solutes down their electrochemical gradient without ATP expenditure, but because it relies on conformational changes in specific carrier proteins (such as GLUT transporters), its rate plateaus at Vmax/Tm.",
+      "verified": false,
+      "open": {
+        "q": "Why does the rate of facilitated diffusion plateau at high solute concentrations whereas simple diffusion continues to rise linearly?",
+        "accept": [
+          "Carrier protein saturation",
+          "Saturation of transport carriers",
+          "Reaching transport maximum"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Passive Transport",
+      "q": "Which glucose transporter is rapidly translocated from intracellular vesicles to the plasma membrane of skeletal muscle and adipose cells in response to insulin?",
+      "options": [
+        "GLUT4",
+        "GLUT1",
+        "GLUT2",
+        "SGLT1"
+      ],
+      "answer": 0,
+      "explain": "Insulin binding stimulates exocytosis of GLUT4-containing vesicles into the sarcolemma and adipocyte membrane, dramatically increasing facilitated glucose uptake; GLUT1 and GLUT2 are insulin-independent, while SGLT1 is a secondary active symporter.",
+      "verified": false,
+      "open": {
+        "q": "Name the insulin-dependent facilitated glucose transporter found primarily in skeletal muscle and adipose tissue.",
+        "accept": [
+          "Glucose transporter 4",
+          "GLUT-4"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Osmosis and Tonicity",
+      "q": "What occurs when human erythrocytes are placed in a 0.3% sodium chloride solution?",
+      "options": [
+        "They undergo crenation as water leaves the cells",
+        "They swell and undergo osmotic hemolysis as water enters the cells",
+        "Their volume remains unchanged because the solution is isotonic",
+        "Sodium ions rapidly exit the cells via primary active transport"
+      ],
+      "answer": 1,
+      "explain": "Normal isotonic saline is 0.9% NaCl (~290 mOsm/L); a 0.3% NaCl solution is markedly hypotonic, creating an osmotic gradient that drives water into red blood cells until they swell and rupture (hemolysis).",
+      "verified": false,
+      "open": {
+        "q": "What happens to red blood cells placed in a hypotonic 0.3% NaCl solution?",
+        "accept": [
+          "Osmotic lysis",
+          "Hemolysis",
+          "They swell and burst"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-015",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Osmosis and Tonicity",
+      "q": "A solution has a measured osmolarity of 300 mOsm/L, composed entirely of urea, which freely permeates red blood cell membranes (reflection coefficient = 0). What is the effective tonicity of this solution relative to normal erythrocytes?",
+      "options": [
+        "Isotonic",
+        "Hypertonic",
+        "Hypotonic",
+        "Iso-oncotic"
+      ],
+      "answer": 2,
+      "explain": "Tonicity depends only on the concentration of non-penetrating (effective) osmoles. Because urea freely crosses the red cell membrane, it exerts zero sustained osmotic pressure across it, making pure urea solution functionally hypotonic and causing hemolysis.",
+      "verified": false,
+      "open": {
+        "q": "Why is a 300 mOsm/L solution of urea iso-osmotic yet hypotonic to human red blood cells?",
+        "accept": [
+          "Urea freely crosses the cell membrane",
+          "Urea is a penetrating solute with a reflection coefficient of zero",
+          "Urea enters the cell and draws water in"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Primary Active Transport",
+      "q": "What is the exact ion stoichiometry transported per ATP molecule hydrolyzed by the Na+/K+-ATPase pump?",
+      "options": [
+        "2 Na+ pumped out and 3 K+ pumped in",
+        "3 Na+ pumped in and 2 K+ pumped out",
+        "1 Na+ pumped out and 1 K+ pumped in",
+        "3 Na+ pumped out and 2 K+ pumped in"
+      ],
+      "answer": 3,
+      "explain": "For every ATP split, the alpha-subunit of Na+/K+-ATPase extrudes 3 sodium ions to the extracellular fluid and imports 2 potassium ions into the cytosol, making the pump electrogenic (net +1 outward charge per cycle).",
+      "verified": false,
+      "open": {
+        "q": "State the exact number and direction of sodium and potassium ions moved per ATP hydrolyzed by the Na+/K+-ATPase pump.",
+        "accept": [
+          "3 Na+ out and 2 K+ in",
+          "Three sodium ions out and two potassium ions in"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Primary Active Transport",
+      "q": "Cardiac glycosides such as digoxin inhibit Na+/K+-ATPase on cardiac myocytes. How does this inhibition ultimately increase myocardial contractility?",
+      "options": [
+        "Higher intracellular Na+ reduces Na+/Ca2+ exchanger activity, increasing intracellular Ca2+ stores",
+        "Direct activation of beta-1 adrenergic receptors increases cyclic AMP",
+        "Enhanced K+ influx hyperpolarizes the sarcolemma and opens L-type Ca2+ channels",
+        "Increased ATP availability directly accelerates myosin ATPase cross-bridge cycling"
+      ],
+      "answer": 0,
+      "explain": "Inhibiting Na+/K+-ATPase raises cytosolic Na+, which diminishes the inward Na+ gradient driving the basolateral Na+/Ca2+ exchanger (NCX); less Ca2+ is extruded, so more Ca2+ is sequestered in the sarcoplasmic reticulum for subsequent release.",
+      "verified": false,
+      "open": {
+        "q": "Explain how inhibition of Na+/K+-ATPase by digoxin leads to elevated intracellular calcium in cardiac myocytes.",
+        "accept": [
+          "Increased intracellular Na+ reduces Na+/Ca2+ exchange",
+          "Reduced sodium gradient decreases calcium extrusion via the Na+/Ca2+ exchanger"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-018",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Primary Active Transport",
+      "q": "Which primary active transport pump is responsible for acidifying the gastric lumen by secreting protons in exchange for potassium ions?",
+      "options": [
+        "SERCA Ca2+-ATPase",
+        "H+/K+-ATPase",
+        "Na+/H+ exchanger (NHE1)",
+        "V-type H+-ATPase"
+      ],
+      "answer": 1,
+      "explain": "Gastric parietal cells express apical H+/K+-ATPase (the proton pump), which directly hydrolyzes ATP to pump H+ into the stomach lumen against a million-fold concentration gradient in exchange for K+; it is the target of omeprazole.",
+      "verified": false,
+      "open": {
+        "q": "Name the primary active transport pump on the apical membrane of gastric parietal cells that secretes H+ in exchange for K+.",
+        "accept": [
+          "Hydrogen potassium ATPase",
+          "Gastric proton pump",
+          "Proton pump"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary Active Transport",
+      "q": "How is glucose absorbed across the apical brush-border membrane of proximal renal tubular and small intestinal epithelial cells?",
+      "options": [
+        "Simple diffusion through lipid pores",
+        "Primary active transport via a glucose-ATPase",
+        "Secondary active symport coupled to the inward Na+ gradient via SGLT",
+        "Antiport exchange with intracellular chloride ions"
+      ],
+      "answer": 2,
+      "explain": "Sodium-glucose linked transporters (SGLT1 in intestine, SGLT2/SGLT1 in proximal tubule) use the steep inward electrochemical Na+ gradient maintained by basolateral Na+/K+-ATPase to co-transport glucose uphill into the cell.",
+      "verified": false,
+      "open": {
+        "q": "By what membrane transport mechanism do SGLT1 and SGLT2 move glucose across the apical membrane of intestinal and renal tubular cells?",
+        "accept": [
+          "Secondary active transport",
+          "Na+-glucose cotransport",
+          "Secondary active symport"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary Active Transport",
+      "q": "Which membrane carrier is an example of secondary active antiport (counter-transport)?",
+      "options": [
+        "SGLT1 sodium-glucose cotransporter",
+        "NKCC2 Na+/K+/2Cl- cotransporter",
+        "Aquaporin-2 water channel",
+        "NCX Na+/Ca2+ exchanger"
+      ],
+      "answer": 3,
+      "explain": "The Na+/Ca2+ exchanger (NCX) moves 3 Na+ ions down their gradient into the cell while extruding 1 Ca2+ ion in the opposite direction against its gradient, defining counter-transport (antiport).",
+      "verified": false,
+      "open": {
+        "q": "Give an example of a secondary active antiporter (counter-transporter) that uses the inward Na+ gradient to extrude Ca2+ from cells.",
+        "accept": [
+          "Na+/Ca2+ exchanger",
+          "NCX",
+          "Sodium-calcium exchanger"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Secondary Active Transport",
+      "q": "Oral rehydration therapy (ORT) combines sodium chloride and glucose in water to treat secretory diarrhea such as cholera. Why is glucose essential in the solution?",
+      "options": [
+        "SGLT1 remains intact during cholera and co-transports Na+ and glucose, driving osmotic water absorption",
+        "Glucose directly neutralizes Vibrio cholerae enterotoxin inside the intestinal lumen",
+        "Glucose inhibits apical CFTR chloride channels to stop fluid secretion",
+        "Glucose activates basolateral Na+/K+-ATPase directly without requiring ATP"
+      ],
+      "answer": 0,
+      "explain": "Cholera toxin elevates cAMP and opens apical CFTR Cl- channels, causing massive watery diarrhea, but leaves apical SGLT1 undamaged; providing both Na+ and glucose drives coupled absorption followed osmotically by water.",
+      "verified": false,
+      "open": {
+        "q": "Explain the physiological basis for including both glucose and sodium in oral rehydration salts (ORS) for secretory diarrhea.",
+        "accept": [
+          "Coupled absorption via SGLT1 draws water osmotically",
+          "SGLT1 cotransports sodium and glucose together, promoting water reabsorption"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Vesicular Transport",
+      "q": "Which coat protein polymerizes into a triskelion lattice to drive invagination of plasma membrane pits during receptor-mediated endocytosis?",
+      "options": [
+        "Spectrin",
+        "Clathrin",
+        "Vimentin",
+        "Tropomyosin"
+      ],
+      "answer": 1,
+      "explain": "Clathrin triskelions assemble on the cytosolic face of coated pits after ligands such as LDL or transferrin bind their receptors, curving the membrane before dynamin pinches off the vesicle.",
+      "verified": false,
+      "open": {
+        "q": "Name the cytosolic coat protein composed of triskelions that mediates receptor-mediated endocytosis at coated pits.",
+        "accept": [
+          "Clathrin coat"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-023",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Vesicular Transport",
+      "q": "Which intracellular ion triggers the fusion of synaptic and secretory vesicles with the plasma membrane during regulated exocytosis?",
+      "options": [
+        "Magnesium (Mg2+)",
+        "Potassium (K+)",
+        "Calcium (Ca2+)",
+        "Chloride (Cl-)"
+      ],
+      "answer": 2,
+      "explain": "An influx of cytosolic Ca2+ binds to synaptotagmin on the vesicle membrane, triggering SNARE protein complex zipping and membrane fusion to release neurotransmitters or hormones.",
+      "verified": false,
+      "open": {
+        "q": "Which intracellular ion triggers vesicle fusion with the plasma membrane during regulated exocytosis?",
+        "accept": [
+          "Calcium",
+          "Ca2+",
+          "Calcium ions"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-024",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Vesicular Transport",
+      "q": "A 24-year-old man presents with tendon xanthomas and a serum LDL cholesterol of 420 mg/dL. Genetic testing reveals a mutation in the cytoplasmic tail of the LDL receptor preventing its clustering into coated pits. Which cellular transport process is defective?",
+      "options": [
+        "Phagocytosis",
+        "Pinocytosis",
+        "Constitutive exocytosis",
+        "Receptor-mediated endocytosis"
+      ],
+      "answer": 3,
+      "explain": "Familial hypercholesterolemia commonly involves defective LDL receptors that either fail to bind ApoB-100 or lack the NPXY cytoplasmic motif needed to bind adaptor proteins and clathrin during receptor-mediated endocytosis.",
+      "verified": false,
+      "open": {
+        "q": "In familial hypercholesterolemia caused by defective LDL receptors, which specific vesicular transport mechanism is impaired?",
+        "accept": [
+          "Clathrin-mediated endocytosis",
+          "Receptor mediated endocytosis"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-025",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Membrane Potential Basics",
+      "q": "Which equation calculates the equilibrium (Nernst) potential for a single permeant ion across a cell membrane?",
+      "options": [
+        "Nernst equation",
+        "Goldman-Hodgkin-Katz equation",
+        "Henderson-Hasselbalch equation",
+        "Starling equation"
+      ],
+      "answer": 0,
+      "explain": "The Nernst equation calculates the exact electrical potential needed to balance the concentration gradient of a single ion at 37 C (E = +/- 61.5/z * log10([Ion]out/[Ion]in)), whereas the Goldman equation accounts for multiple ions weighted by permeability.",
+      "verified": false,
+      "open": {
+        "q": "Name the equation used to calculate the electrical equilibrium potential for a single permeant ion based on its intracellular and extracellular concentrations.",
+        "accept": [
+          "Nernst",
+          "The Nernst equation"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Membrane Transport and Cell Physiology",
+      "q": "A patient with a hereditary defect in Na+/K+-ATPase activity has impaired maintenance of transmembrane ion gradients. Which direct transport stoichiometry is normally produced by each pump cycle?",
+      "options": [
+        "Three Na+ leave the cell and two K+ enter",
+        "Two Na+ leave the cell and three K+ enter",
+        "Three K+ leave the cell and two Na+ enter",
+        "Equal numbers of Na+ and K+ move in opposite directions"
+      ],
+      "answer": 0,
+      "explain": "The Na+/K+-ATPase hydrolyses one ATP to move three Na+ ions out of the cell and two K+ ions into it. This is electrogenic and helps maintain the Na+ and K+ gradients required for cell volume regulation and secondary active transport.",
+      "verified": false,
+      "open": {
+        "q": "State the ion stoichiometry of one Na+/K+-ATPase cycle.",
+        "accept": [
+          "3 sodium out and 2 potassium in",
+          "three Na+ out, two K+ in"
+        ]
+      }
+    }
+  ]
 }
