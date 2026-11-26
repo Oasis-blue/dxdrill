@@ -3862,6 +3862,48 @@
           "Increased medium-chain acylcarnitines"
         ]
       }
+    },
+    {
+      "id": "bc-metabolism-of-biomolecules-167",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Glycolysis and regulation",
+      "q": "A patient with severe hypoxia has increased lactate production in skeletal muscle. Which reaction regenerates the coenzyme needed to sustain glycolysis under these conditions?",
+      "options": [
+        "Reduction of pyruvate to lactate by lactate dehydrogenase",
+        "Oxidation of lactate to pyruvate by lactate dehydrogenase",
+        "Conversion of acetyl-CoA to citrate",
+        "Carboxylation of pyruvate to oxaloacetate"
+      ],
+      "answer": 0,
+      "explain": "Under anaerobic conditions, lactate dehydrogenase reduces pyruvate to lactate while oxidising NADH to NAD+. Regenerated NAD+ permits the glyceraldehyde-3-phosphate dehydrogenase step of glycolysis to continue.",
+      "open": {
+        "q": "How does lactate dehydrogenase help maintain glycolysis during anaerobic conditions?",
+        "accept": [
+          "It converts pyruvate to lactate and regenerates NAD+ from NADH"
+        ]
+      }
+    },
+    {
+      "id": "bc-metabolism-of-biomolecules-168",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Glycogen metabolism",
+      "q": "A child develops fasting hypoglycaemia and hepatomegaly due to impaired hepatic glycogen breakdown. Which enzyme catalyses the release of glucose-1-phosphate from glycogen?",
+      "options": [
+        "Glycogen phosphorylase",
+        "Glycogen synthase",
+        "Branching enzyme",
+        "Glucose-6-phosphatase"
+      ],
+      "answer": 0,
+      "explain": "Glycogen phosphorylase cleaves alpha-1,4 glycosidic bonds at non-reducing ends of glycogen by phosphorolysis, releasing glucose-1-phosphate. Debranching enzyme handles alpha-1,6 branch points.",
+      "open": {
+        "q": "Which enzyme releases glucose-1-phosphate from alpha-1,4 linkages during glycogenolysis?",
+        "accept": [
+          "Glycogen phosphorylase"
+        ]
+      }
     }
   ]
 }
