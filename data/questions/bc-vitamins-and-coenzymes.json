@@ -529,10 +529,10 @@
    "sub": "Fat-Soluble Vitamins: E (Tocopherols)",
    "q": "What is the primary biochemical role of vitamin E (alpha-tocopherol) in cell membranes?",
    "options": [
-    "Chain-breaking lipid-soluble antioxidant that protects polyunsaturated fatty acids from peroxidation",
-    "Coenzyme for carboxylation of coagulation factors II, VII, IX, and X",
-    "Visual chromophore required for rod cell rhodopsin regeneration",
-    "Carrier of activated one-carbon units in purine synthesis"
+    "Lipid-soluble antioxidant that protects membrane fatty acids from peroxidation",
+    "Cofactor for gamma-carboxylation of clotting factors",
+    "Retinal chromophore for rhodopsin",
+    "One-carbon carrier in purine synthesis"
    ],
    "answer": 0,
    "explain": "Alpha-tocopherol is a lipid-soluble antioxidant embedded in membranes that donates a hydrogen atom to lipid peroxyl radicals, terminating lipid peroxidation chains. It works alongside selenium-dependent glutathione peroxidase.",
@@ -578,10 +578,10 @@
    "sub": "Fat-Soluble Vitamins: K (Phylloquinone and Menaquinones)",
    "q": "Which post-translational modification of clotting factors II, VII, IX, and X requires vitamin K as a cofactor?",
    "options": [
-    "Gamma-carboxylation of glutamate residues to form gamma-carboxyglutamate (Gla)",
-    "Phosphorylation of serine residues by ATP",
-    "Hydroxylation of proline residues in collagen",
-    "Acetylation of N-terminal lysine residues"
+    "Gamma-carboxylation of glutamate to form Gla residues",
+    "ATP-dependent serine phosphorylation",
+    "Proline hydroxylation in collagen",
+    "N-terminal lysine acetylation"
    ],
    "answer": 0,
    "explain": "Vitamin K is an essential cofactor for gamma-glutamyl carboxylase, which converts specific glutamate (Glu) residues into gamma-carboxyglutamate (Gla) on clotting factors II, VII, IX, and X and proteins C and S. Gla residues chelate calcium ions needed for phospholipid membrane binding.",
@@ -603,10 +603,10 @@
    "sub": "Fat-Soluble Vitamins: K (Phylloquinone and Menaquinones)",
    "q": "How does warfarin exert its anticoagulant effect in relation to the vitamin K cycle?",
    "options": [
-    "Inhibits vitamin K epoxide reductase, preventing regeneration of reduced active vitamin K",
-    "Directly activates factor Xa and thrombin in plasma",
-    "Chelates dietary calcium in the intestinal lumen",
-    "Stimulates hepatic synthesis of fibrinogen"
+    "Inhibits vitamin K epoxide reductase, preventing active vitamin K recycling",
+    "Activates factor Xa and thrombin",
+    "Chelates dietary calcium in the gut",
+    "Stimulates hepatic fibrinogen synthesis"
    ],
    "answer": 0,
    "explain": "During gamma-carboxylation, reduced vitamin K (hydroquinone) is oxidized to vitamin K epoxide, which must be reduced back by vitamin K epoxide reductase (VKORC1). Warfarin inhibits VKORC1, depleting active reduced vitamin K and reducing functional Gla-modified clotting factors.",
