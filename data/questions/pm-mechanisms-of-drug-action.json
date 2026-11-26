@@ -796,10 +796,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is a partial agonist, such as buprenorphine or pindolol?",
    "options": [
-    "A drug that binds to only half of the organs in the body",
-    "A drug that produces a greater maximal response (Emax) than a full agonist",
-    "A drug that binds to a receptor with high affinity but has submaximal intrinsic activity (0 < IA < 1), acting as an antagonist in the presence of a full agonist",
-    "A drug that irreversibly destroys receptor proteins after one binding event"
+    "A drug that binds to only half the organs in the body",
+    "A drug with a greater maximal response than a full agonist",
+    "A high-affinity ligand with submaximal efficacy that can oppose a full agonist",
+    "A drug that irreversibly destroys receptor proteins"
    ],
    "answer": 2,
    "explain": "A partial agonist cannot elicit 100% maximal tissue response even at full receptor occupancy, and when co-administered with a full agonist, it competes for receptors and lowers the net response.",
@@ -1097,8 +1097,8 @@
    "options": [
     "Receptors are destroyed, causing permanent bradycardia",
     "Receptors convert into muscarinic M2 receptors",
-    "Receptor density remains fixed, so abrupt withdrawal causes no symptoms",
-    "Receptor upregulation occurs, so abrupt withdrawal exposes sensitized myocardium to endogenous catecholamines, risking rebound angina or myocardial infarction"
+    "Receptor density remains fixed, so abrupt withdrawal has no effect",
+    "Receptor upregulation can cause rebound tachycardia, hypertension or ischaemia after abrupt withdrawal"
    ],
    "answer": 3,
    "explain": "Chronic receptor blockade increases surface receptor synthesis/externalization (upregulation/supersensitivity); sudden cessation precipitates rebound hypertension, tachycardia, and ischaemia.",
@@ -1373,9 +1373,9 @@
    "q": "What is a 'biased agonist' (functional selectivity) at a G-protein-coupled receptor?",
    "options": [
     "A drug that works only in male patients",
-    "A drug that binds exclusively to mutated cancer receptors",
-    "A drug that has equal potency at all receptors in the human body",
-    "A ligand that preferentially stabilizes a receptor conformation activating one downstream pathway (e.g., G-protein) over another (e.g., beta-arrestin)"
+    "A drug that binds only mutated cancer receptors",
+    "A drug with equal potency at all receptor types",
+    "A ligand that preferentially activates one downstream signalling pathway over another"
    ],
    "answer": 3,
    "explain": "Biased agonists selectively engage specific intracellular effectors (such as G-protein signaling without beta-arrestin recruitment), offering the potential for therapeutic efficacy with fewer adverse effects.",
@@ -1419,9 +1419,9 @@
    "q": "Why are drug dose-response relationships conventionally plotted with the logarithm of the drug concentration on the horizontal axis?",
    "options": [
     "Because drugs are excreted logarithmically by the glomerulus",
-    "It compresses a wide range of concentrations and transforms the hyperbolic curve into a sigmoid curve with a linear mid-portion (20% to 80% Emax)",
-    "It eliminates the need to measure maximal efficacy (Emax)",
-    "Because receptors only bind drugs at logarithmic intervals"
+    "It compresses a wide concentration range and gives a sigmoid curve with a near-linear middle section",
+    "It removes the need to measure maximal efficacy",
+    "Because receptors bind drugs only at logarithmic intervals"
    ],
    "answer": 1,
    "explain": "A semilogarithmic plot allows comparison of drugs differing in potency by orders of magnitude and yields a nearly linear central segment between 20% and 80% of Emax.",
@@ -1624,10 +1624,10 @@
    "sub": "Receptor Families and Signal Transduction",
    "q": "Why does cardiac beta-1 adrenoceptor activation increase heart rate (positive chronotropy) and contractility (positive inotropy)?",
    "options": [
-    "It stimulates Gi to close L-type calcium channels",
+    "It stimulates Gi and closes L-type calcium channels",
     "It opens GABA-gated chloride channels in the SA node",
-    "It stimulates Gs to raise cAMP and activate PKA, which phosphorylates L-type Ca2+ channels, phospholamban, and HCN funny channels",
-    "It activates soluble guanylyl cyclase to raise cGMP"
+    "It activates Gs-cAMP-PKA signalling, increasing calcium entry and accelerating pacemaker activity",
+    "It activates soluble guanylyl cyclase and raises cGMP"
    ],
    "answer": 2,
    "explain": "Gs-cAMP-PKA signaling enhances Ca2+ influx through L-type channels, accelerates SERCA Ca2+ reuptake via phospholamban phosphorylation, and speeds diastolic depolarization in the SA node.",
@@ -1648,9 +1648,9 @@
    "q": "Why does bronchial beta-2 adrenoceptor stimulation cause smooth muscle relaxation (bronchodilation) via the exact same Gs-cAMP-PKA pathway that causes contraction in cardiac muscle?",
    "options": [
     "Bronchial smooth muscle contains no actin or myosin",
-    "Beta-2 receptors in the lungs are coupled to Gi rather than Gs",
-    "PKA destroys all intracellular ATP in bronchial smooth muscle",
-    "In smooth muscle, PKA phosphorylates and inactivates myosin light-chain kinase (MLCK), reducing myosin phosphorylation and causing relaxation"
+    "Pulmonary beta-2 receptors are coupled to Gi rather than Gs",
+    "PKA destroys intracellular ATP in bronchial smooth muscle",
+    "PKA inhibits myosin light-chain kinase, reducing myosin phosphorylation and promoting relaxation"
    ],
    "answer": 3,
    "explain": "Tissue-specific intracellular substrates determine the physiological outcome: in smooth muscle, PKA inhibits MLCK and promotes Ca2+ sequestration, whereas in myocardium PKA enhances Ca2+ cycling.",
@@ -1670,10 +1670,10 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is 'heterologous desensitization' of receptors?",
    "options": [
-    "Prolonged stimulation of one receptor type causes diminished responsiveness not only to itself but also to other receptors sharing the same downstream signaling pathway",
-    "Desensitization restricted exclusively to a single receptor subtype",
-    "Increased sensitivity of a receptor after chronic antagonist administration",
-    "Loss of receptor binding due to hepatic enzyme induction"
+    "Activation of one receptor pathway reduces responses of other receptors that share downstream signalling machinery",
+    "Desensitisation is limited to the stimulated receptor subtype",
+    "Chronic antagonism increases receptor sensitivity",
+    "Hepatic enzyme induction reduces receptor binding"
    ],
    "answer": 0,
    "explain": "In heterologous desensitization, second-messenger kinases (PKA or PKC) activated by one receptor phosphorylate other nearby receptors or signaling effectors, dampening responses across multiple receptor classes.",
