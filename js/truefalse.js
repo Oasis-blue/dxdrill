@@ -4,7 +4,7 @@
 (function () {
   var DX = window.DX, esc = DX.esc, app = null;
   var RUNKEY = "dx.tf.run", SKEY = "dx.tfstats";
-  var T = { view: "pick", sel: null, n: 10, mode: "exam", only: false, run: null, note: "", timed: false, minutes: 15, timer: null };
+  var T = { view: "pick", sel: null, n: 10, mode: "exam", only: false, run: null, note: "", timed: false, minutes: 15, timer: null, nugTimer: null };
 
   function stats() { return DX.store.get(SKEY, {}); }
   function topicName(id) { var shortNames = {"phys-renal-structure":"Kidney structure & renal circulation","phys-urine-concentration":"Urine concentration","phys-renal-tests-failure":"Renal function & failure","pg-cell-physiology-and-membrane-transport":"Cell physiology & transport","ga-anatomical-position-and-terminology":"Anatomical terminology"}; if (shortNames[id]) return shortNames[id]; var t = DX.topicById && DX.topicById[id]; return t ? t.name : id; }
@@ -24,10 +24,26 @@
     paint();
   }
   function leave() { stopTimer(); }
-  function paint() { if (app) app.innerHTML = view(); }
+  function paint() {
+    if (app) app.innerHTML = view();
+    syncLoadingNugget();
+  }
+  function syncLoadingNugget() {
+    var loading = !DX.tfStems.length && DX.loadingQuestions && typeof DX.nugget === "function";
+    if (loading) {
+      if (!T.nugTimer) T.nugTimer = setInterval(function () {
+        var el = app && app.querySelector("#tf-nugtext");
+        if (el) el.textContent = DX.nugget();
+      }, 7000);
+    } else if (T.nugTimer) {
+      clearInterval(T.nugTimer); T.nugTimer = null;
+    }
+  }
 
   function view() {
-    if (!DX.tfStems || !DX.tfStems.length) return '<div class="wrap stack"><h1>True or false</h1><p class="lede"><i class="spin"></i>' + (DX.loadingQuestions ? "Loading the first true/false stems…" : "No true/false stems are available yet.") + '</p><p class="hint tfstemmeta">You can use Practice while this question bank loads.</p></div>';
+    if (!DX.tfStems || !DX.tfStems.length) return '<div class="wrap stack"><h1>True or false</h1><p class="lede"><i class="spin"></i>' + (DX.loadingQuestions ? "Loading the first true/false stems…" : "No true/false stems are available yet.") + '</p>' +
+      (typeof DX.nugget === "function" ? '<aside class="nugget tf-loading-nugget" aria-live="polite"><b>Did you know?</b> <span id="tf-nugtext">' + esc(DX.nugget()) + '</span></aside>' : '') +
+      '<p class="hint tfstemmeta">You can use Practice while this question bank loads.</p></div>';
     if (T.view === "run") return runView();
     if (T.view === "end") return endView();
     return pickView();
