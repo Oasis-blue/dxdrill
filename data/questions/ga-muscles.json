@@ -1,1292 +1,1409 @@
 {
- "topic": "ga-muscles",
- "questions": [
-  {
-   "id": "GAM-01",
-   "level": 1,
-   "sub": "Classification of muscle tissue",
-   "q": "Skeletal muscles are under voluntary somatic control and generally attach to bones, cartilage, or fascia. What structural description applies to their contractile cells?",
-   "options": [
-    "Multinucleated striated cylindrical fibers",
-    "Uninucleated non-striated spindle cells",
-    "Branched cells joined by intercalated discs",
-    "Anucleate contractile plates"
-   ],
-   "answer": 0,
-   "explain": "Skeletal muscle fibers are long, cylindrical, multinucleated cells showing cross-striations due to ordered sarcomeres. Smooth muscle cells are mononucleated and non-striated, while cardiac muscle cells are branched and connected by intercalated discs.",
-   "open": {
-    "q": "How are skeletal muscle fibers described microscopically in terms of nuclei and striations?",
-    "accept": [
-     "multinucleated striated cylindrical fibers",
-     "multinucleated and striated",
-     "striated multinucleated fibers",
-     "cylindrical multinucleated striated cells"
-    ]
-   }
-  },
-  {
-   "id": "GAM-02",
-   "level": 1,
-   "sub": "Classification of muscle tissue",
-   "q": "Which type of muscle tissue lacks visible cross-striations and lines the walls of hollow viscera, blood vessels, and airways?",
-   "options": [
-    "Skeletal muscle",
-    "Smooth muscle",
-    "Cardiac muscle",
-    "Pennate muscle"
-   ],
-   "answer": 1,
-   "explain": "Smooth (visceral/involuntary) muscle lacks sarcomeric cross-striations and is found in walls of hollow organs, blood vessels, and ducts. Skeletal and cardiac muscles are striated.",
-   "open": {
-    "q": "Which type of muscle tissue is non-striated and forms part of the walls of hollow viscera and blood vessels?",
-    "accept": [
-     "smooth muscle",
-     "smooth",
-     "visceral muscle"
-    ]
-   }
-  },
-  {
-   "id": "GAM-03",
-   "level": 1,
-   "sub": "Classification of muscle tissue",
-   "q": "Specialized junctions called intercalated discs allow electrical and mechanical coupling between cells of which muscle type?",
-   "options": [
-    "Skeletal muscle",
-    "Smooth muscle",
-    "Cardiac muscle",
-    "Sphincter muscle"
-   ],
-   "answer": 2,
-   "explain": "Cardiac muscle cells are joined end-to-end by intercalated discs containing gap junctions and mechanical junctions, enabling coordinated contraction of the myocardium. Skeletal and smooth muscles do not have intercalated discs.",
-   "open": {
-    "q": "In which type of muscle tissue do intercalated discs connect adjacent cells?",
-    "accept": [
-     "cardiac muscle",
-     "cardiac",
-     "myocardium"
-    ]
-   }
-  },
-  {
-   "id": "GAM-04",
-   "level": 1,
-   "sub": "Attachment and architecture",
-   "q": "Between the origin and insertion of a skeletal muscle, what is the more proximal or fixed attachment typically called?",
-   "options": [
-    "Insertion",
-    "Belly",
-    "Aponeurosis",
-    "Origin"
-   ],
-   "answer": 3,
-   "explain": "The origin is usually the more proximal or fixed attachment of a muscle, whereas the insertion is typically the more distal or more mobile attachment moved when the muscle contracts. Roles can occasionally reverse depending on movement.",
-   "open": {
-    "q": "What is the usually more fixed or proximal attachment of a skeletal muscle called?",
-    "accept": [
-     "origin",
-     "the origin"
-    ]
-   }
-  },
-  {
-   "id": "GAM-05",
-   "level": 1,
-   "sub": "Attachment and architecture",
-   "q": "What is a broad, flat sheet of dense regular connective tissue that serves as a tendon for a flat muscle?",
-   "options": [
-    "Aponeurosis",
-    "Epimysium",
-    "Perimysium",
-    "Endomysium"
-   ],
-   "answer": 0,
-   "explain": "An aponeurosis is a flattened, sheet-like tendon that attaches flat muscles (such as abdominal wall muscles) to bone, fascia, or linea alba. Epimysium, perimysium, and endomysium are connective tissue sheaths within or around skeletal muscle.",
-   "open": {
-    "q": "What is a flattened, sheet-like tendon attaching a flat muscle called?",
-    "accept": [
-     "aponeurosis",
-     "an aponeurosis"
-    ]
-   }
-  },
-  {
-   "id": "GAM-06",
-   "level": 2,
-   "sub": "Attachment and architecture",
-   "q": "Why does a pennate muscle (such as unipennate, bipennate, or multipennate) generally generate greater force for a given muscle volume than a parallel muscle of the same length?",
-   "options": [
-    "Its fibres are longer than the muscle belly",
-    "Oblique fibres pack more contractile tissue beside a tendon, increasing physiological cross-sectional area",
-    "It lacks fascial sheaths",
-    "It contracts only isometrically"
-   ],
-   "answer": 1,
-   "explain": "In pennate muscles, short fibers attach obliquely along a tendon, allowing more fibers to pack in parallel across a larger physiological cross-sectional area and produce greater force, though over a shorter excursion range. Parallel muscles allow greater shortening distance.",
-   "open": {
-    "q": "Why can a pennate muscle produce more force than a parallel muscle of similar size?",
-    "accept": [
-     "more fibers pack obliquely onto a tendon for a larger cross-sectional area",
-     "greater physiological cross-sectional area from angled fibers",
-     "more fibers fit alongside the tendon",
-     "higher cross-sectional area of muscle fibers"
-    ]
-   }
-  },
-  {
-   "id": "GAM-07",
-   "level": 1,
-   "sub": "Attachment and architecture",
-   "q": "Which muscle fiber arrangement has fascicles arranged in concentric rings around an opening or lumen to narrow or close it?",
-   "options": [
-    "Unipennate",
-    "Convergent",
-    "Circular (sphincteric)",
-    "Bipennate"
-   ],
-   "answer": 2,
-   "explain": "Circular muscles (sphincters) encircle body openings or passages, such as orbicularis oris or orbicularis oculi, and constrict the opening upon contraction. Convergent muscles fan out from a broad origin to a narrower insertion.",
-   "open": {
-    "q": "Which muscle arrangement forms rings around an opening to constrict or close it?",
-    "accept": [
-     "circular muscle",
-     "sphincter",
-     "circular",
-     "sphincteric"
-    ]
-   }
-  },
-  {
-   "id": "GAM-08",
-   "level": 1,
-   "sub": "Functional roles of muscles",
-   "q": "Which muscle role describes the primary muscle or group of muscles directly responsible for producing a specific joint movement?",
-   "options": [
-    "Antagonist",
-    "Fixator",
-    "Synergist",
-    "Prime mover (agonist)"
-   ],
-   "answer": 3,
-   "explain": "The prime mover (agonist) is the main muscle whose contraction produces a given movement. An antagonist opposes that movement, while a synergist assists or steadies nearby joints.",
-   "open": {
-    "q": "What term identifies the main muscle directly responsible for producing a particular movement?",
-    "accept": [
-     "prime mover",
-     "agonist",
-     "prime mover or agonist"
-    ]
-   }
-  },
-  {
-   "id": "GAM-09",
-   "level": 2,
-   "sub": "Functional roles of muscles",
-   "q": "When the biceps brachii flexes the elbow, what role does the triceps brachii play during smooth controlled motion?",
-   "options": [
-    "An antagonist that controls or opposes the movement",
-    "The prime mover of elbow flexion",
-    "An intrinsic hand muscle",
-    "A glenohumeral stabiliser"
-   ],
-   "answer": 0,
-   "explain": "The triceps brachii extends the elbow, making it an antagonist to elbow flexion; controlled relaxation or graded resistance helps smooth and regulate the movement. Co-contraction of antagonists can also stiffen a joint.",
-   "open": {
-    "q": "What role does the triceps brachii play relative to elbow flexion produced by the biceps brachii?",
-    "accept": [
-     "antagonist",
-     "an antagonist",
-     "antagonist muscle"
-    ]
-   }
-  },
-  {
-   "id": "GAM-10",
-   "level": 2,
-   "sub": "Functional roles of muscles",
-   "q": "How does a synergist muscle assist a prime mover when a muscle crosses more than one joint?",
-   "options": [
-    "It stops blood flow to the prime mover",
-    "It stabilises an intermediate joint so force acts at the target joint",
-    "It converts skeletal to smooth muscle",
-    "It detaches tendon from bone"
-   ],
-   "answer": 1,
-   "explain": "Synergists can steady or eliminate undesired actions at a joint crossed by a multi-joint prime mover (for instance, wrist extensors stabilize the wrist so finger flexors can grip strongly). Fixators stabilize a proximal bone or origin.",
-   "open": {
-    "q": "How can a synergist muscle improve the action of a multi-joint prime mover?",
-    "accept": [
-     "by preventing unwanted movement at an intermediate joint",
-     "eliminating undesired actions across another joint",
-     "stabilizing joints to focus force on the intended action",
-     "preventing unwanted motion at a joint"
-    ]
-   }
-  },
-  {
-   "id": "GAM-11",
-   "level": 1,
-   "sub": "Innervation and motor units",
-   "q": "What is a motor unit in skeletal muscle physiology and anatomy?",
-   "options": [
-    "A sensory receptor inside a muscle belly",
-    "A bundle of collagen fibers within a tendon",
-    "A single motor neuron and all the skeletal muscle fibers it innervates",
-    "A fascial compartment containing antagonists"
-   ],
-   "answer": 2,
-   "explain": "A motor unit consists of one alpha motor neuron (and its axon) together with the group of skeletal muscle fibers innervated by its terminal branches. Small motor units (few fibers per neuron) allow fine control, while large motor units support powerful gross movements.",
-   "open": {
-    "q": "What structures make up a single motor unit?",
-    "accept": [
-     "a motor neuron and the muscle fibers it innervates",
-     "one motor neuron and all muscle fibers supplied by it",
-     "motor neuron plus its innervated muscle fibers",
-     "single motor neuron and its muscle fibers"
-    ]
-   }
-  },
-  {
-   "id": "GAM-12",
-   "level": 2,
-   "sub": "Innervation and motor units",
-   "q": "Why do muscles that perform fine, precise movements (such as extraocular or intrinsic hand muscles) typically have small motor units?",
-   "options": [
-    "They lack neuromuscular junctions",
-    "Each motor neuron supplies few fibres, allowing fine control",
-    "They receive only sensory innervation",
-    "Their fibres cannot generate action potentials"
-   ],
-   "answer": 1,
-   "explain": "Small motor units have a low innervation ratio (few muscle fibers per motor neuron), enabling delicate, finely graded tension adjustments. Muscles requiring coarse power, like gastrocnemius or gluteus maximus, have large motor units.",
-   "open": {
-    "q": "Why are small motor units characteristic of muscles performing fine, delicate movements?",
-    "accept": [
-     "each neuron innervates few fibers for finer control",
-     "few muscle fibers per motor neuron allow precise grading",
-     "low innervation ratio enables fine control",
-     "fewer fibers per motor neuron allow delicate movements"
-    ]
-   }
-  },
-  {
-   "id": "GAM-13",
-   "level": 3,
-   "sub": "Innervation and motor units",
-   "q": "A patient has a laceration of a peripheral motor nerve supplying a limb muscle. Which clinical sign is expected in that muscle shortly after complete denervation?",
-   "options": [
-    "Hyperreflexia with clonus",
-    "Spastic rigidity",
-    "Flaccid paralysis with loss of voluntary contraction",
-    "Increased tone with clasp-knife resistance"
-   ],
-   "answer": 2,
-   "explain": "Lower motor neuron / peripheral nerve injury interrupts motor impulses to skeletal muscle fibers, causing flaccid paralysis, hypotonia/atonia, loss of reflexes, and eventual denervation atrophy. Hyperreflexia and spasticity are classic of upper motor neuron lesions.",
-   "open": {
-    "q": "What motor finding occurs in a skeletal muscle after complete peripheral motor nerve injury?",
-    "accept": [
-     "flaccid paralysis",
-     "flaccid weakness and loss of voluntary movement",
-     "flaccid paralysis and hypotonia",
-     "flaccid paralysis with loss of reflexes"
-    ]
-   }
-  },
-  {
-   "id": "GAM-14",
-   "level": 1,
-   "sub": "Innervation and motor units",
-   "q": "What is the specialized synaptic contact where a somatic motor neuron axon terminal meets a skeletal muscle fiber?",
-   "options": [
-    "Intercalated disc",
-    "Golgi tendon organ",
-    "Sarcomere",
-    "Neuromuscular junction (motor end plate)"
-   ],
-   "answer": 3,
-   "explain": "The neuromuscular junction (motor end plate) is the chemical synapse between a motor neuron terminal and the sarcolemma of a skeletal muscle fiber, releasing acetylcholine to trigger excitation-contraction coupling. Golgi tendon organs monitor tendon tension.",
-   "open": {
-    "q": "What is the junction where a motor neuron axon terminal communicates with a skeletal muscle fiber?",
-    "accept": [
-     "neuromuscular junction",
-     "motor end plate",
-     "myoneural junction",
-     "nmj"
-    ]
-   }
-  },
-  {
-   "id": "GAM-15",
-   "level": 1,
-   "sub": "Proprioceptors and muscle tone",
-   "q": "Which encapsulated sensory receptor lies parallel to extrafusal muscle fibers and detects changes in muscle length and rate of stretch?",
-   "options": [
-    "Muscle spindle",
-    "Golgi tendon organ",
-    "Pacinian corpuscle",
-    "Free nerve ending"
-   ],
-   "answer": 0,
-   "explain": "Muscle spindles contain intrafusal fibers arranged in parallel with extrafusal fibers and sense muscle stretch and velocity of length change, driving the stretch reflex. Golgi tendon organs lie in series within tendons to sense tension.",
-   "open": {
-    "q": "Which sensory receptor lies parallel to muscle fibers and detects muscle stretch and length changes?",
-    "accept": [
-     "muscle spindle",
-     "muscle spindles",
-     "neuromuscular spindle"
-    ]
-   }
-  },
-  {
-   "id": "GAM-16",
-   "level": 2,
-   "sub": "Proprioceptors and muscle tone",
-   "q": "Where is a Golgi tendon organ located, and what mechanical variable does it primarily monitor?",
-   "options": [
-    "Inside muscle bellies; resting heart rate",
-    "Within tendons in series with muscle fibers; muscle tension",
-    "Inside joint cavities; synovial viscosity",
-    "In the epidermis; skin temperature"
-   ],
-   "answer": 1,
-   "explain": "Golgi tendon organs are located in tendons in series with muscle fibers and respond to active muscle contraction and tendon tension, helping protect against excessive force. Muscle spindles detect stretch in parallel.",
-   "open": {
-    "q": "Where is a Golgi tendon organ located and what does it sense?",
-    "accept": [
-     "in tendons in series with muscle fibers and senses tension",
-     "within tendons to monitor muscle tension",
-     "tendon in series; senses muscle tension",
-     "tendons; tension on the tendon"
-    ]
-   }
-  },
-  {
-   "id": "GAM-17",
-   "level": 1,
-   "sub": "Contraction mechanics",
-   "q": "Which type of muscle contraction occurs when a muscle develops tension and shortens while moving a constant load?",
-   "options": [
-    "Isometric contraction",
-    "Eccentric contraction",
-    "Isotonic concentric contraction",
-    "Tetanic relaxation"
-   ],
-   "answer": 2,
-   "explain": "In an isotonic concentric contraction, muscle tension remains roughly constant while the muscle shortens and pulls its attachments closer together. During an eccentric contraction, the muscle lengthens under tension as it brakes a load.",
-   "open": {
-    "q": "What type of contraction occurs when a muscle shortens while generating tension against a constant load?",
-    "accept": [
-     "isotonic concentric contraction",
-     "concentric contraction",
-     "concentric",
-     "isotonic shortening"
-    ]
-   }
-  },
-  {
-   "id": "GAM-18",
-   "level": 2,
-   "sub": "Contraction mechanics",
-   "q": "What happens to muscle length during a purely isometric contraction against an immovable resistance?",
-   "options": [
-    "The muscle shortens rapidly",
-    "The muscle lengthens progressively",
-    "The muscle completely detaches from bone",
-    "Muscle length stays essentially unchanged while tension rises"
-   ],
-   "answer": 3,
-   "explain": "During an isometric contraction, sarcomeres generate tension (cross-bridge cycling occurs), but the external load prevents the muscle as a whole from shortening or lengthening. Isometric activity helps maintain posture and stabilize joints.",
-   "open": {
-    "q": "How does muscle length change during an isometric contraction?",
-    "accept": [
-     "it stays unchanged while tension increases",
-     "no change in overall muscle length",
-     "muscle length remains constant",
-     "remains the same length"
-    ]
-   }
-  },
-  {
-   "id": "GAM-19",
-   "level": 3,
-   "sub": "Contraction mechanics",
-   "q": "A student walks down a steep flight of stairs and quadriceps femoris contracts while lengthening to control knee flexion. Which type of contraction is occurring in the quadriceps?",
-   "options": [
-    "Eccentric contraction",
-    "Isometric contraction",
-    "Concentric contraction",
-    "Refractory contraction"
-   ],
-   "answer": 0,
-   "explain": "An eccentric contraction occurs when an active muscle lengthens under load, acting as a controlled brake against gravity (such as the quadriceps controlling knee flexion when descending stairs). It generates high tension and can cause delayed muscle soreness when unaccustomed.",
-   "open": {
-    "q": "What type of contraction occurs when an active muscle lengthens while resisting a load, such as quadriceps when walking downhill?",
-    "accept": [
-     "eccentric contraction",
-     "eccentric",
-     "isotonic eccentric contraction"
-    ]
-   }
-  },
-  {
-   "id": "GAM-20",
-   "level": 1,
-   "sub": "Blood supply of skeletal muscle",
-   "q": "How do arterial branches typically enter a skeletal muscle belly?",
-   "options": [
-    "Only at the distal tendon insertion",
-    "At a neurovascular hilum with motor nerve branches",
-    "Through synovial fluid",
-    "Directly from articular cartilage"
-   ],
-   "answer": 1,
-   "explain": "Arteries and veins usually enter skeletal muscles along with motor nerves at a neurovascular entry point and branch within the perimysium and endomysium to supply muscle fibers. Rich capillary networks surround individual muscle fibers to support metabolic demand.",
-   "open": {
-    "q": "How do blood vessels generally enter a skeletal muscle relative to its motor nerve supply?",
-    "accept": [
-     "together with motor nerves at a neurovascular entry point",
-     "alongside motor nerve branches into the muscle",
-     "with motor nerves at a neurovascular hilum",
-     "accompanying motor nerves"
-    ]
-   }
-  },
-  {
-   "id": "GAM-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Connective tissue sheaths of muscle",
-   "q": "What is the connective tissue sheath that surrounds the entire muscle belly called?",
-   "options": [
-    "Epimysium",
-    "Perimysium",
-    "Endomysium",
-    "Aponeurosis"
-   ],
-   "answer": 0,
-   "explain": "The epimysium is the outermost dense irregular connective tissue sheath enveloping the whole muscle, continuous with its tendon.",
-   "verified": false,
-   "open": {
-    "q": "What is the outermost connective tissue sheath of a whole skeletal muscle called?",
-    "accept": [
-     "epimysium",
-     "epimysial sheath"
-    ]
-   }
-  },
-  {
-   "id": "GAM-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Connective tissue sheaths of muscle",
-   "q": "What is the connective tissue sheath surrounding each fascicle of muscle fibres called?",
-   "options": [
-    "Epimysium",
-    "Perimysium",
-    "Endomysium",
-    "Tendon"
-   ],
-   "answer": 1,
-   "explain": "The perimysium surrounds each fascicle (bundle) of muscle fibres and carries blood vessels and nerves into the muscle.",
-   "verified": false,
-   "open": {
-    "q": "Which sheath surrounds a fascicle of muscle fibres?",
-    "accept": [
-     "perimysium",
-     "perimysial sheath"
-    ]
-   }
-  },
-  {
-   "id": "GAM-023",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Connective tissue sheaths of muscle",
-   "q": "What is the delicate connective tissue surrounding each individual muscle fibre called?",
-   "options": [
-    "Epimysium",
-    "Perimysium",
-    "Endomysium",
-    "Periosteum"
-   ],
-   "answer": 2,
-   "explain": "The endomysium is the fine reticular connective tissue around individual muscle fibres, carrying capillaries and nerve endings.",
-   "verified": false,
-   "open": {
-    "q": "Which sheath surrounds a single muscle fibre?",
-    "accept": [
-     "endomysium",
-     "endomysial sheath"
-    ]
-   }
-  },
-  {
-   "id": "GAM-024",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Tendons and ligaments",
-   "q": "What is the main structural difference between a tendon and a ligament?",
-   "options": [
-    "Tendons attach muscle to bone; ligaments attach bone to bone",
-    "Tendons attach bone to bone; ligaments attach muscle to bone",
-    "Tendons contain elastin only; ligaments contain collagen only",
-    "Tendons are found only in the limbs; ligaments only in the spine"
-   ],
-   "answer": 0,
-   "explain": "Tendons are dense regular connective tissue attaching muscle to bone, while ligaments attach bone to bone (or support organs) and are usually more elastic.",
-   "verified": false,
-   "open": {
-    "q": "What does a tendon attach, and what does a ligament attach?",
-    "accept": [
-     "tendon muscle to bone and ligament bone to bone",
-     "tendon attaches muscle to bone; ligament bone to bone",
-     "muscle to bone versus bone to bone"
-    ]
-   }
-  },
-  {
-   "id": "GAM-025",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle architecture",
-   "q": "What is a parallel (fusiform) muscle arrangement?",
-   "options": [
-    "Fascicles run parallel to the long axis of the muscle",
-    "Fascicles attach obliquely to a central tendon",
-    "Fascicles converge from a broad origin to a narrow insertion",
-    "Fascicles form concentric rings"
-   ],
-   "answer": 0,
-   "explain": "In a parallel or fusiform muscle, fascicles run along the long axis, giving a greater range of shortening than pennate muscles.",
-   "verified": false,
-   "open": {
-    "q": "How are fascicles arranged in a parallel muscle?",
-    "accept": [
-     "parallel to the long axis",
-     "along the long axis",
-     "longitudinally"
-    ]
-   }
-  },
-  {
-   "id": "GAM-026",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle architecture",
-   "q": "How does a convergent muscle differ from a parallel muscle?",
-   "options": [
-    "Fibres converge from a broad origin to a narrow insertion",
-    "Fibres run parallel to the long axis",
-    "Fibres attach obliquely to one side of a tendon",
-    "Fibres form circular rings around an opening"
-   ],
-   "answer": 0,
-   "explain": "Convergent (triangular) muscles have a broad origin whose fibres converge to a single tendon, as in pectoralis major.",
-   "verified": false,
-   "open": {
-    "q": "What is the arrangement of fibres in a convergent muscle?",
-    "accept": [
-     "broad origin converging to narrow insertion",
-     "fibres converge to a tendon",
-     "fan-shaped",
-     "converging fibres"
-    ]
-   }
-  },
-  {
-   "id": "GAM-027",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle architecture",
-   "q": "In a unipennate muscle, how do fibres attach to the tendon?",
-   "options": [
-    "Obliquely along one side of a tendon",
-    "Obliquely along both sides of a central tendon",
-    "Obliquely along multiple tendinous intersections",
-    "Parallel to the tendon"
-   ],
-   "answer": 0,
-   "explain": "In a unipennate muscle, all fibres attach obliquely to one side of a tendon, like one side of a feather (e.g., extensor digitorum longus).",
-   "verified": false,
-   "open": {
-    "q": "How do fibres attach to the tendon in a unipennate muscle?",
-    "accept": [
-     "obliquely to one side of the tendon",
-     "one side of a tendon",
-     "one-sided pennate"
-    ]
-   }
-  },
-  {
-   "id": "GAM-028",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle architecture",
-   "q": "Which muscle shape is described as having two bellies separated by an intermediate tendon?",
-   "options": [
-    "Digastric",
-    "Quadrate",
-    "Fusiform",
-    "Strap"
-   ],
-   "answer": 0,
-   "explain": "A digastric muscle has two bellies joined by an intermediate tendon, as in digastric (submandibular region) or rectus abdominis with tendinous intersections.",
-   "verified": false,
-   "open": {
-    "q": "What is a muscle with two bellies separated by an intermediate tendon called?",
-    "accept": [
-     "digastric",
-     "biventral"
-    ]
-   }
-  },
-  {
-   "id": "GAM-029",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Muscle architecture",
-   "q": "What term describes a muscle with four-sided, flat, parallel fibres, such as quadratus lumborum?",
-   "options": [
-    "Quadrate",
-    "Fusiform",
-    "Pennate",
-    "Sphincteric"
-   ],
-   "answer": 0,
-   "explain": "A quadrate muscle is four-sided and flat with parallel fibres, as in quadratus lumborum.",
-   "verified": false,
-   "open": {
-    "q": "What term describes a four-sided, flat muscle with parallel fibres?",
-    "accept": [
-     "quadrate",
-     "quadratus"
-    ]
-   }
-  },
-  {
-   "id": "GAM-030",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Functional roles of muscles",
-   "q": "What is the role of a fixator muscle?",
-   "options": [
-    "Stabilising the prime mover's origin",
-    "Producing the main movement",
-    "Opposing the prime mover",
-    "Moving a distant joint"
-   ],
-   "answer": 0,
-   "explain": "A fixator stabilizes the proximal attachment (origin) or a nearby joint so the prime mover can act efficiently on the target joint.",
-   "verified": false,
-   "open": {
-    "q": "What is the role of a fixator muscle?",
-    "accept": [
-     "stabilizing the origin of a prime mover",
-     "stabilizes the proximal attachment",
-     "fixing a joint or bone",
-     "stabilizing a joint"
-    ]
-   }
-  },
-  {
-   "id": "GAM-031",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Functional roles of muscles",
-   "q": "What is reverse muscle action?",
-   "options": [
-    "When the usual insertion becomes fixed and the origin moves",
-    "When a muscle relaxes completely",
-    "When a muscle acts only isometrically",
-    "When an antagonist becomes the prime mover"
-   ],
-   "answer": 0,
-   "explain": "In reverse muscle action, the distal attachment (insertion) is fixed, so contraction moves the proximal attachment (origin), as when the humerus is fixed and latissimus dorsi raises the trunk.",
-   "verified": false,
-   "open": {
-    "q": "What is it called when the insertion is fixed and contraction moves the origin?",
-    "accept": [
-     "reverse muscle action",
-     "reverse action",
-     "reversed origin-insertion"
-    ]
-   }
-  },
-  {
-   "id": "GAM-032",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Levers and pulleys",
-   "q": "In a first-class lever in the body, where is the fulcrum relative to the effort and load?",
-   "options": [
-    "Between the effort and load",
-    "At one end, with effort in the middle",
-    "At one end, with load in the middle",
-    "There is no fulcrum"
-   ],
-   "answer": 0,
-   "explain": "In a first-class lever, the fulcrum lies between the effort and load, as in the triceps extending the elbow with the elbow joint as fulcrum.",
-   "verified": false,
-   "open": {
-    "q": "Where is the fulcrum in a first-class lever?",
-    "accept": [
-     "between effort and load",
-     "between the effort and the load",
-     "in the middle"
-    ]
-   }
-  },
-  {
-   "id": "GAM-033",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Levers and pulleys",
-   "q": "Which class of lever is most common in the human body and always has the effort between the fulcrum and load?",
-   "options": [
-    "Third-class lever",
-    "First-class lever",
-    "Second-class lever",
-    "Fourth-class lever"
-   ],
-   "answer": 0,
-   "explain": "Third-class levers, with effort between fulcrum and load, are the most common in the body (e.g., biceps flexing the elbow) and favour speed and range over force.",
-   "verified": false,
-   "open": {
-    "q": "Which lever class is most common in the body and has effort between fulcrum and load?",
-    "accept": [
-     "third-class",
-     "third class",
-     "class 3",
-     "type III"
-    ]
-   }
-  },
-  {
-   "id": "GAM-034",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Levers and pulleys",
-   "q": "What is the function of a bony pulley (sesamoid) such as the patella in the quadriceps mechanism?",
-   "options": [
-    "Improving the angle of pull and mechanical advantage",
-    "Producing synovial fluid",
-    "Anchoring muscle to bone",
-    "Producing erythrocytes"
-   ],
-   "answer": 0,
-   "explain": "A sesamoid bone like the patella acts as a pulley, improving the angle of pull and mechanical advantage of the quadriceps tendon and protecting the tendon from wear.",
-   "verified": false,
-   "open": {
-    "q": "What mechanical function does the patella serve in the quadriceps mechanism?",
-    "accept": [
-     "improves angle of pull",
-     "pulley function",
-     "increases mechanical advantage",
-     "improves leverage"
-    ]
-   }
-  },
-  {
-   "id": "GAM-035",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Muscle adaptation",
-   "q": "What is muscle hypertrophy?",
-   "options": [
-    "Increase in muscle fibre size and mass",
-    "Decrease in muscle fibre number",
-    "Replacement of muscle by fat",
-    "Formation of new muscle fibres only"
-   ],
-   "answer": 0,
-   "explain": "Hypertrophy is an increase in the size of existing muscle fibres (not number), typically in response to resistance training.",
-   "verified": false,
-   "open": {
-    "q": "What is an increase in muscle fibre size called?",
-    "accept": [
-     "hypertrophy",
-     "muscle hypertrophy"
-    ]
-   }
-  },
-  {
-   "id": "GAM-036",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle adaptation",
-   "q": "What is muscle atrophy?",
-   "options": [
-    "Reduction in muscle fibre size and mass",
-    "Increase in fibre size",
-    "Conversion of muscle to bone",
-    "Formation of new fibres"
-   ],
-   "answer": 0,
-   "explain": "Atrophy is a reduction in muscle fibre size and mass, as in disuse, denervation, or malnutrition.",
-   "verified": false,
-   "open": {
-    "q": "What is a reduction in muscle fibre size and mass called?",
-    "accept": [
-     "atrophy",
-     "muscle atrophy",
-     "wasting"
-    ]
-   }
-  },
-  {
-   "id": "GAM-037",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle contraction types",
-   "q": "What is delayed onset muscle soreness (DOMS)?",
-   "options": [
-    "Delayed soreness 24–72 hours after unaccustomed eccentric exercise",
-    "Pain only during exercise",
-    "Fracture-related pain",
-    "Infective myalgia"
-   ],
-   "answer": 0,
-   "explain": "DOMS is muscle soreness and stiffness appearing 24 to 72 hours after unaccustomed, especially eccentric, exercise due to microdamage and inflammation.",
-   "verified": false,
-   "open": {
-    "q": "What is the term for muscle soreness appearing 24 to 72 hours after unaccustomed exercise?",
-    "accept": [
-     "delayed onset muscle soreness",
-     "DOMS",
-     "muscle soreness after exercise"
-    ]
-   }
-  },
-  {
-   "id": "GAM-038",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Muscle contraction types",
-   "q": "A patient has a crush injury of the anterior leg compartment with severe pain, tense swelling, and loss of dorsiflexion. What is the diagnosis?",
-   "options": [
-    "Compartment syndrome",
-    "Deep vein thrombosis",
-    "Achilles tendon rupture",
-    "Plantar fasciitis"
-   ],
-   "answer": 0,
-   "explain": "Compartment syndrome results from increased pressure in a closed fascial compartment, causing ischaemia, severe pain, and nerve/muscle dysfunction; it is a surgical emergency.",
-   "verified": false,
-   "open": {
-    "q": "What is the condition called when raised pressure within a fascial compartment compromises blood flow and function?",
-    "accept": [
-     "compartment syndrome",
-     "acute compartment syndrome"
-    ]
-   }
-  },
-  {
-   "id": "GAM-039",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle contraction types",
-   "q": "What is a muscle strain?",
-   "options": [
-    "Overstretching or tearing of muscle or its tendon",
-    "Dislocation of a joint",
-    "Fracture of a bone",
-    "Inflammation of a bursa"
-   ],
-   "answer": 0,
-   "explain": "A muscle strain is overstretching or tearing of muscle fibres or the musculotendinous junction, graded I to III.",
-   "verified": false,
-   "open": {
-    "q": "What is an overstretching or tearing of muscle fibres called?",
-    "accept": [
-     "muscle strain",
-     "strain",
-     "muscle tear"
-    ]
-   }
-  },
-  {
-   "id": "GAM-040",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Muscle contraction types",
-   "q": "A middle-aged man feels a sudden snap in the back of his calf while playing squash and cannot stand on tiptoe. What is the most likely injury?",
-   "options": [
-    "Achilles tendon rupture",
-    "Anterior cruciate ligament tear",
-    "Medial meniscus tear",
-    "Quadriceps tendon rupture"
-   ],
-   "answer": 0,
-   "explain": "Achilles tendon rupture causes a sudden snap, a palpable gap in the tendon, and loss of active plantarflexion (cannot stand on tiptoe); Thompson test is positive.",
-   "verified": false,
-   "open": {
-    "q": "Which tendon rupture causes inability to stand on tiptoe and a positive Thompson test?",
-    "accept": [
-     "Achilles tendon",
-     "calcaneal tendon",
-     "Achilles"
-    ]
-   }
-  },
-  {
-   "id": "GAM-041",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle fibre types",
-   "q": "Which muscle fibre type is slow-twitch, rich in mitochondria and myoglobin, and resistant to fatigue?",
-   "options": [
-    "Type I fibres",
-    "Type IIa fibres",
-    "Type IIb fibres",
-    "Type III fibres"
-   ],
-   "answer": 0,
-   "explain": "Type I (slow oxidative) fibres have high mitochondria and myoglobin content and are resistant to fatigue, suited for endurance and posture.",
-   "verified": false,
-   "open": {
-    "q": "Which muscle fibre type is slow-twitch and fatigue-resistant?",
-    "accept": [
-     "type I",
-     "slow twitch",
-     "slow oxidative",
-     "type 1"
-    ]
-   }
-  },
-  {
-   "id": "GAM-042",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle fibre types",
-   "q": "Which muscle fibre type is fast-twitch and suited for rapid, powerful movements?",
-   "options": [
-    "Type I",
-    "Type II",
-    "Type III",
-    "Type IV"
-   ],
-   "answer": 1,
-   "explain": "Type II (fast) fibres have high myosin ATPase activity and glycolytic capacity, suited for rapid powerful contractions but fatiguing more quickly.",
-   "verified": false,
-   "open": {
-    "q": "Which muscle fibre type is fast-twitch and fatigues rapidly?",
-    "accept": [
-     "type II",
-     "fast twitch",
-     "type 2",
-     "fast glycolytic"
-    ]
-   }
-  },
-  {
-   "id": "GAM-043",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle fibre types",
-   "q": "What is the Henneman size principle of motor unit recruitment?",
-   "options": [
-    "Small motor units are recruited before large ones as force increases",
-    "Large motor units are always recruited first",
-    "Motor units are recruited randomly",
-    "Only type II fibres are ever recruited"
-   ],
-   "answer": 0,
-   "explain": "The size principle states that as force demand rises, smaller (slow) motor units are recruited first, followed by progressively larger (fast) units.",
-   "verified": false,
-   "open": {
-    "q": "What is the principle that small motor units are recruited before large ones called?",
-    "accept": [
-     "Henneman size principle",
-     "size principle",
-     "Henneman principle"
-    ]
-   }
-  },
-  {
-   "id": "GAM-044",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Muscle disease",
-   "q": "A boy has progressive proximal muscle weakness, calf pseudohypertrophy, and a positive Gowers sign. Which condition is most likely?",
-   "options": [
-    "Duchenne muscular dystrophy",
-    "Myasthenia gravis",
-    "Polio",
-    "Guillain-Barre syndrome"
-   ],
-   "answer": 0,
-   "explain": "Duchenne muscular dystrophy is an X-linked recessive dystrophinopathy causing progressive proximal weakness, calf pseudohypertrophy, and Gowers sign in boys.",
-   "verified": false,
-   "open": {
-    "q": "Which X-linked muscular dystrophy causes proximal weakness, calf pseudohypertrophy, and Gowers sign?",
-    "accept": [
-     "Duchenne muscular dystrophy",
-     "Duchenne",
-     "DMD"
-    ]
-   }
-  },
-  {
-   "id": "GAM-045",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Muscle disease",
-   "q": "A patient has fluctuating weakness of the eyelids and chewing muscles that worsens with activity and improves with rest. Which condition is most likely?",
-   "options": [
-    "Myasthenia gravis",
-    "Duchenne muscular dystrophy",
-    "Polymyositis",
-    "Lambert-Eaton syndrome"
-   ],
-   "answer": 0,
-   "explain": "Myasthenia gravis causes fatigable weakness due to autoantibodies against postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction; ptosis and diplopia are common.",
-   "verified": false,
-   "open": {
-    "q": "Which condition causes fatigable weakness due to antibodies against acetylcholine receptors?",
-    "accept": [
-     "myasthenia gravis",
-     "myasthenia"
-    ]
-   }
-  },
-  {
-   "id": "GAM-046",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Muscle pathology",
-   "q": "What causes rigor mortis after death?",
-   "options": [
-    "Loss of ATP preventing cross-bridge detachment in muscle",
-    "Excess ATP causing overcontraction",
-    "Loss of calcium from the sarcoplasmic reticulum",
-    "Breakdown of actin filaments"
-   ],
-   "answer": 0,
-   "explain": "After death, ATP falls and cross-bridges cannot detach from actin, causing muscles to stiffen (rigor mortis) until proteolysis and putrefaction follow.",
-   "verified": false,
-   "open": {
-    "q": "What biochemical change causes rigor mortis?",
-    "accept": [
-     "loss of ATP",
-     "ATP depletion",
-     "absence of ATP",
-     "fall in ATP"
-    ]
-   }
-  },
-  {
-   "id": "GAM-047",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Fascial compartments",
-   "q": "What is a fascial compartment of a limb?",
-   "options": [
-    "Muscles enclosed by deep fascia and separated by septa",
-    "A synovial-fluid space around a joint",
-    "A bursa beneath a tendon",
-    "A cavity in cancellous bone"
-   ],
-   "answer": 0,
-   "explain": "A fascial compartment is a group of muscles and associated vessels and nerves enclosed by deep fascia and separated from neighbours by intermuscular septa; each has a distinct nerve supply.",
-   "verified": false,
-   "open": {
-    "q": "What is a group of muscles enclosed by deep fascia and septa called?",
-    "accept": [
-     "fascial compartment",
-     "muscle compartment",
-     "compartment"
-    ]
-   }
-  },
-  {
-   "id": "GAM-048",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Fascial compartments",
-   "q": "What is muscle herniation?",
-   "options": [
-    "Muscle protrusion through a defect in deep fascia",
-    "Tendon avulsion",
-    "Joint dislocation",
-    "Muscle inflammation"
-   ],
-   "answer": 0,
-   "explain": "Muscle herniation occurs when muscle bulges through a defect in the overlying deep fascia, often after trauma or fascia weakening, causing a soft reducible swelling.",
-   "verified": false,
-   "open": {
-    "q": "What is protrusion of muscle through a defect in its fascia called?",
-    "accept": [
-     "muscle herniation",
-     "muscle hernia",
-     "fascial hernia"
-    ]
-   }
-  },
-  {
-   "id": "GAM-049",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Smooth muscle",
-   "q": "What is the difference between single-unit and multi-unit smooth muscle?",
-   "options": [
-    "Single-unit cells are gap-junction coupled; multi-unit cells act more independently",
-    "Single-unit muscle is striated",
-    "Single-unit muscle is voluntary",
-    "Single-unit cells lack nuclei"
-   ],
-   "answer": 0,
-   "explain": "Single-unit (unitary) smooth muscle cells are coupled by gap junctions and contract as a unit (gut, uterus); multi-unit smooth muscle cells act independently (iris, large airways).",
-   "verified": false,
-   "open": {
-    "q": "How does single-unit smooth muscle differ from multi-unit smooth muscle?",
-    "accept": [
-     "single-unit cells are coupled by gap junctions; multi-unit act independently",
-     "single-unit gap junctions, multi-unit independent",
-     "unitary coupled vs multi-unit separate"
-    ]
-   }
-  },
-  {
-   "id": "GAM-050",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cardiac muscle",
-   "q": "Which component of the intercalated disc allows electrical coupling between cardiac muscle cells?",
-   "options": [
-    "Gap junctions",
-    "Desmosomes",
-    "Fascia adherens",
-    "T-tubules"
-   ],
-   "answer": 0,
-   "explain": "Gap junctions within intercalated discs allow ions to pass between cardiac muscle cells, enabling electrical coupling and coordinated contraction; desmosomes and fascia adherens provide mechanical coupling.",
-   "verified": false,
-   "open": {
-    "q": "Which junctional component of the intercalated disc provides electrical coupling between cardiac cells?",
-    "accept": [
-     "gap junctions",
-     "gap junction"
-    ]
-   }
-  },
-  {
-   "id": "GAM-051",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle mechanics",
-   "q": "What is the difference between muscle twitch summation and tetanus?",
-   "options": [
-    "Summation adds twitches before full relaxation; tetanus is sustained contraction",
-    "Summation is a single twitch; tetanus is post-mortem relaxation",
-    "Summation occurs only in cardiac muscle",
-    "Summation and tetanus are identical"
-   ],
-   "answer": 0,
-   "explain": "Summation occurs when a second stimulus arrives before the muscle fully relaxes, adding tension; with high-frequency stimulation, relaxation is lost entirely, producing a sustained tetanic contraction.",
-   "verified": false,
-   "open": {
-    "q": "What is sustained muscle contraction without relaxation between stimuli called?",
-    "accept": [
-     "tetanus",
-     "tetanic contraction",
-     "complete tetanus"
-    ]
-   }
-  },
-  {
-   "id": "GAM-052",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle mechanics",
-   "q": "What is muscle fatigue?",
-   "options": [
-    "Decline in muscle performance after prolonged activity",
-    "Increase in muscle strength after exercise",
-    "Complete paralysis due to nerve injury",
-    "Rigidity after death"
-   ],
-   "answer": 0,
-   "explain": "Muscle fatigue is a reversible decline in force-generating capacity after prolonged or intense activity, due to multiple factors including metabolite accumulation.",
-   "verified": false,
-   "open": {
-    "q": "What is the reversible decline in muscle performance after prolonged activity called?",
-    "accept": [
-     "muscle fatigue",
-     "fatigue",
-     "muscular fatigue"
-    ]
-   }
-  },
-  {
-   "id": "GAM-053",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Tendons",
-   "q": "What is the difference between a tendon and an aponeurosis?",
-   "options": [
-    "A tendon is cord-like; an aponeurosis is a flattened sheet",
-    "A tendon is flat; an aponeurosis is cord-like",
-    "A tendon attaches bone to bone; an aponeurosis attaches muscle to muscle",
-    "A tendon contains no collagen"
-   ],
-   "answer": 0,
-   "explain": "Both are dense regular connective tissue attaching muscle to bone, but a tendon is cord-like while an aponeurosis is a flattened sheet.",
-   "verified": false,
-   "open": {
-    "q": "How does an aponeurosis differ from a tendon in shape?",
-    "accept": [
-     "aponeurosis is a flat sheet; tendon is cord-like",
-     "flat sheet vs cord",
-     "aponeurosis flattened and tendon rounded"
-    ]
-   }
-  },
-  {
-   "id": "GAM-054",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Extrinsic and intrinsic muscles",
-   "q": "What is the difference between intrinsic and extrinsic muscles?",
-   "options": [
-    "Intrinsic muscles attach within a region; extrinsic muscles have an attachment outside it",
-    "Intrinsic muscles attach outside the region",
-    "Intrinsic muscles are striated; extrinsic are smooth",
-    "Intrinsic muscles are voluntary; extrinsic are involuntary"
-   ],
-   "answer": 0,
-   "explain": "Intrinsic muscles have both attachments within the region they act on, while extrinsic muscles have at least one attachment outside that region (e.g., extrinsic tongue muscles arise outside the tongue).",
-   "verified": false,
-   "open": {
-    "q": "What distinguishes an intrinsic muscle from an extrinsic muscle?",
-    "accept": [
-     "intrinsic has both attachments within a region; extrinsic has one outside",
-     "intrinsic inside, extrinsic outside",
-     "both attachments within vs one outside the region"
-    ]
-   }
-  },
-  {
-   "id": "GAM-055",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Tendons and aponeuroses",
-   "q": "What is the linea alba?",
-   "options": [
-    "A midline raphe formed by abdominal aponeuroses",
-    "A palmar tendon",
-    "A knee ligament",
-    "A prepatellar bursa"
-   ],
-   "answer": 0,
-   "explain": "The linea alba is a median fibrous raphe formed by fusion of the aponeuroses of the abdominal wall muscles, extending from xiphoid to pubis.",
-   "verified": false,
-   "open": {
-    "q": "What is the median aponeurotic structure formed by fusion of abdominal wall muscles called?",
-    "accept": [
-     "linea alba",
-     "white line"
-    ]
-   }
-  }
- ]
+  "topic": "ga-muscles",
+  "questions": [
+    {
+      "id": "GAM-01",
+      "level": 1,
+      "sub": "Classification of muscle tissue",
+      "q": "Skeletal muscles are under voluntary somatic control and generally attach to bones, cartilage, or fascia. What structural description applies to their contractile cells?",
+      "options": [
+        "Multinucleated striated cylindrical fibers",
+        "Uninucleated non-striated spindle cells",
+        "Branched cells joined by intercalated discs",
+        "Anucleate contractile plates"
+      ],
+      "answer": 0,
+      "explain": "Skeletal muscle fibers are long, cylindrical, multinucleated cells showing cross-striations due to ordered sarcomeres. Smooth muscle cells are mononucleated and non-striated, while cardiac muscle cells are branched and connected by intercalated discs.",
+      "open": {
+        "q": "How are skeletal muscle fibers described microscopically in terms of nuclei and striations?",
+        "accept": [
+          "multinucleated striated cylindrical fibers",
+          "multinucleated and striated",
+          "striated multinucleated fibers",
+          "cylindrical multinucleated striated cells"
+        ]
+      }
+    },
+    {
+      "id": "GAM-02",
+      "level": 1,
+      "sub": "Classification of muscle tissue",
+      "q": "Which type of muscle tissue lacks visible cross-striations and lines the walls of hollow viscera, blood vessels, and airways?",
+      "options": [
+        "Skeletal muscle",
+        "Smooth muscle",
+        "Cardiac muscle",
+        "Pennate muscle"
+      ],
+      "answer": 1,
+      "explain": "Smooth (visceral/involuntary) muscle lacks sarcomeric cross-striations and is found in walls of hollow organs, blood vessels, and ducts. Skeletal and cardiac muscles are striated.",
+      "open": {
+        "q": "Which type of muscle tissue is non-striated and forms part of the walls of hollow viscera and blood vessels?",
+        "accept": [
+          "smooth muscle",
+          "smooth",
+          "visceral muscle"
+        ]
+      }
+    },
+    {
+      "id": "GAM-03",
+      "level": 1,
+      "sub": "Classification of muscle tissue",
+      "q": "Specialized junctions called intercalated discs allow electrical and mechanical coupling between cells of which muscle type?",
+      "options": [
+        "Skeletal muscle",
+        "Smooth muscle",
+        "Cardiac muscle",
+        "Sphincter muscle"
+      ],
+      "answer": 2,
+      "explain": "Cardiac muscle cells are joined end-to-end by intercalated discs containing gap junctions and mechanical junctions, enabling coordinated contraction of the myocardium. Skeletal and smooth muscles do not have intercalated discs.",
+      "open": {
+        "q": "In which type of muscle tissue do intercalated discs connect adjacent cells?",
+        "accept": [
+          "cardiac muscle",
+          "cardiac",
+          "myocardium"
+        ]
+      }
+    },
+    {
+      "id": "GAM-04",
+      "level": 1,
+      "sub": "Attachment and architecture",
+      "q": "Between the origin and insertion of a skeletal muscle, what is the more proximal or fixed attachment typically called?",
+      "options": [
+        "Insertion",
+        "Belly",
+        "Aponeurosis",
+        "Origin"
+      ],
+      "answer": 3,
+      "explain": "The origin is usually the more proximal or fixed attachment of a muscle, whereas the insertion is typically the more distal or more mobile attachment moved when the muscle contracts. Roles can occasionally reverse depending on movement.",
+      "open": {
+        "q": "What is the usually more fixed or proximal attachment of a skeletal muscle called?",
+        "accept": [
+          "origin",
+          "the origin"
+        ]
+      }
+    },
+    {
+      "id": "GAM-05",
+      "level": 1,
+      "sub": "Attachment and architecture",
+      "q": "What is a broad, flat sheet of dense regular connective tissue that serves as a tendon for a flat muscle?",
+      "options": [
+        "Aponeurosis",
+        "Epimysium",
+        "Perimysium",
+        "Endomysium"
+      ],
+      "answer": 0,
+      "explain": "An aponeurosis is a flattened, sheet-like tendon that attaches flat muscles (such as abdominal wall muscles) to bone, fascia, or linea alba. Epimysium, perimysium, and endomysium are connective tissue sheaths within or around skeletal muscle.",
+      "open": {
+        "q": "What is a flattened, sheet-like tendon attaching a flat muscle called?",
+        "accept": [
+          "aponeurosis",
+          "an aponeurosis"
+        ]
+      }
+    },
+    {
+      "id": "GAM-06",
+      "level": 2,
+      "sub": "Attachment and architecture",
+      "q": "Why does a pennate muscle (such as unipennate, bipennate, or multipennate) generally generate greater force for a given muscle volume than a parallel muscle of the same length?",
+      "options": [
+        "Its fibres are longer than the muscle belly",
+        "Oblique fibres pack more contractile tissue beside a tendon, increasing physiological cross-sectional area",
+        "It lacks fascial sheaths",
+        "It contracts only isometrically"
+      ],
+      "answer": 1,
+      "explain": "In pennate muscles, short fibers attach obliquely along a tendon, allowing more fibers to pack in parallel across a larger physiological cross-sectional area and produce greater force, though over a shorter excursion range. Parallel muscles allow greater shortening distance.",
+      "open": {
+        "q": "Why can a pennate muscle produce more force than a parallel muscle of similar size?",
+        "accept": [
+          "more fibers pack obliquely onto a tendon for a larger cross-sectional area",
+          "greater physiological cross-sectional area from angled fibers",
+          "more fibers fit alongside the tendon",
+          "higher cross-sectional area of muscle fibers"
+        ]
+      }
+    },
+    {
+      "id": "GAM-07",
+      "level": 1,
+      "sub": "Attachment and architecture",
+      "q": "Which muscle fiber arrangement has fascicles arranged in concentric rings around an opening or lumen to narrow or close it?",
+      "options": [
+        "Unipennate",
+        "Convergent",
+        "Circular (sphincteric)",
+        "Bipennate"
+      ],
+      "answer": 2,
+      "explain": "Circular muscles (sphincters) encircle body openings or passages, such as orbicularis oris or orbicularis oculi, and constrict the opening upon contraction. Convergent muscles fan out from a broad origin to a narrower insertion.",
+      "open": {
+        "q": "Which muscle arrangement forms rings around an opening to constrict or close it?",
+        "accept": [
+          "circular muscle",
+          "sphincter",
+          "circular",
+          "sphincteric"
+        ]
+      }
+    },
+    {
+      "id": "GAM-08",
+      "level": 1,
+      "sub": "Functional roles of muscles",
+      "q": "Which muscle role describes the primary muscle or group of muscles directly responsible for producing a specific joint movement?",
+      "options": [
+        "Antagonist",
+        "Fixator",
+        "Synergist",
+        "Prime mover (agonist)"
+      ],
+      "answer": 3,
+      "explain": "The prime mover (agonist) is the main muscle whose contraction produces a given movement. An antagonist opposes that movement, while a synergist assists or steadies nearby joints.",
+      "open": {
+        "q": "What term identifies the main muscle directly responsible for producing a particular movement?",
+        "accept": [
+          "prime mover",
+          "agonist",
+          "prime mover or agonist"
+        ]
+      }
+    },
+    {
+      "id": "GAM-09",
+      "level": 2,
+      "sub": "Functional roles of muscles",
+      "q": "When the biceps brachii flexes the elbow, what role does the triceps brachii play during smooth controlled motion?",
+      "options": [
+        "An antagonist that controls or opposes the movement",
+        "The prime mover of elbow flexion",
+        "An intrinsic hand muscle",
+        "A glenohumeral stabiliser"
+      ],
+      "answer": 0,
+      "explain": "The triceps brachii extends the elbow, making it an antagonist to elbow flexion; controlled relaxation or graded resistance helps smooth and regulate the movement. Co-contraction of antagonists can also stiffen a joint.",
+      "open": {
+        "q": "What role does the triceps brachii play relative to elbow flexion produced by the biceps brachii?",
+        "accept": [
+          "antagonist",
+          "an antagonist",
+          "antagonist muscle"
+        ]
+      }
+    },
+    {
+      "id": "GAM-10",
+      "level": 2,
+      "sub": "Functional roles of muscles",
+      "q": "How does a synergist muscle assist a prime mover when a muscle crosses more than one joint?",
+      "options": [
+        "It stops blood flow to the prime mover",
+        "It stabilises an intermediate joint so force acts at the target joint",
+        "It converts skeletal to smooth muscle",
+        "It detaches tendon from bone"
+      ],
+      "answer": 1,
+      "explain": "Synergists can steady or eliminate undesired actions at a joint crossed by a multi-joint prime mover (for instance, wrist extensors stabilize the wrist so finger flexors can grip strongly). Fixators stabilize a proximal bone or origin.",
+      "open": {
+        "q": "How can a synergist muscle improve the action of a multi-joint prime mover?",
+        "accept": [
+          "by preventing unwanted movement at an intermediate joint",
+          "eliminating undesired actions across another joint",
+          "stabilizing joints to focus force on the intended action",
+          "preventing unwanted motion at a joint"
+        ]
+      }
+    },
+    {
+      "id": "GAM-11",
+      "level": 1,
+      "sub": "Innervation and motor units",
+      "q": "What is a motor unit in skeletal muscle physiology and anatomy?",
+      "options": [
+        "A sensory receptor inside a muscle belly",
+        "A bundle of collagen fibers within a tendon",
+        "A single motor neuron and all the skeletal muscle fibers it innervates",
+        "A fascial compartment containing antagonists"
+      ],
+      "answer": 2,
+      "explain": "A motor unit consists of one alpha motor neuron (and its axon) together with the group of skeletal muscle fibers innervated by its terminal branches. Small motor units (few fibers per neuron) allow fine control, while large motor units support powerful gross movements.",
+      "open": {
+        "q": "What structures make up a single motor unit?",
+        "accept": [
+          "a motor neuron and the muscle fibers it innervates",
+          "one motor neuron and all muscle fibers supplied by it",
+          "motor neuron plus its innervated muscle fibers",
+          "single motor neuron and its muscle fibers"
+        ]
+      }
+    },
+    {
+      "id": "GAM-12",
+      "level": 2,
+      "sub": "Innervation and motor units",
+      "q": "Why do muscles that perform fine, precise movements (such as extraocular or intrinsic hand muscles) typically have small motor units?",
+      "options": [
+        "They lack neuromuscular junctions",
+        "Each motor neuron supplies few fibres, allowing fine control",
+        "They receive only sensory innervation",
+        "Their fibres cannot generate action potentials"
+      ],
+      "answer": 1,
+      "explain": "Small motor units have a low innervation ratio (few muscle fibers per motor neuron), enabling delicate, finely graded tension adjustments. Muscles requiring coarse power, like gastrocnemius or gluteus maximus, have large motor units.",
+      "open": {
+        "q": "Why are small motor units characteristic of muscles performing fine, delicate movements?",
+        "accept": [
+          "each neuron innervates few fibers for finer control",
+          "few muscle fibers per motor neuron allow precise grading",
+          "low innervation ratio enables fine control",
+          "fewer fibers per motor neuron allow delicate movements"
+        ]
+      }
+    },
+    {
+      "id": "GAM-13",
+      "level": 3,
+      "sub": "Innervation and motor units",
+      "q": "A patient has a laceration of a peripheral motor nerve supplying a limb muscle. Which clinical sign is expected in that muscle shortly after complete denervation?",
+      "options": [
+        "Hyperreflexia with clonus",
+        "Spastic rigidity",
+        "Flaccid paralysis with loss of voluntary contraction",
+        "Increased tone with clasp-knife resistance"
+      ],
+      "answer": 2,
+      "explain": "Lower motor neuron / peripheral nerve injury interrupts motor impulses to skeletal muscle fibers, causing flaccid paralysis, hypotonia/atonia, loss of reflexes, and eventual denervation atrophy. Hyperreflexia and spasticity are classic of upper motor neuron lesions.",
+      "open": {
+        "q": "What motor finding occurs in a skeletal muscle after complete peripheral motor nerve injury?",
+        "accept": [
+          "flaccid paralysis",
+          "flaccid weakness and loss of voluntary movement",
+          "flaccid paralysis and hypotonia",
+          "flaccid paralysis with loss of reflexes"
+        ]
+      }
+    },
+    {
+      "id": "GAM-14",
+      "level": 1,
+      "sub": "Innervation and motor units",
+      "q": "What is the specialized synaptic contact where a somatic motor neuron axon terminal meets a skeletal muscle fiber?",
+      "options": [
+        "Intercalated disc",
+        "Golgi tendon organ",
+        "Sarcomere",
+        "Neuromuscular junction (motor end plate)"
+      ],
+      "answer": 3,
+      "explain": "The neuromuscular junction (motor end plate) is the chemical synapse between a motor neuron terminal and the sarcolemma of a skeletal muscle fiber, releasing acetylcholine to trigger excitation-contraction coupling. Golgi tendon organs monitor tendon tension.",
+      "open": {
+        "q": "What is the junction where a motor neuron axon terminal communicates with a skeletal muscle fiber?",
+        "accept": [
+          "neuromuscular junction",
+          "motor end plate",
+          "myoneural junction",
+          "nmj"
+        ]
+      }
+    },
+    {
+      "id": "GAM-15",
+      "level": 1,
+      "sub": "Proprioceptors and muscle tone",
+      "q": "Which encapsulated sensory receptor lies parallel to extrafusal muscle fibers and detects changes in muscle length and rate of stretch?",
+      "options": [
+        "Muscle spindle",
+        "Golgi tendon organ",
+        "Pacinian corpuscle",
+        "Free nerve ending"
+      ],
+      "answer": 0,
+      "explain": "Muscle spindles contain intrafusal fibers arranged in parallel with extrafusal fibers and sense muscle stretch and velocity of length change, driving the stretch reflex. Golgi tendon organs lie in series within tendons to sense tension.",
+      "open": {
+        "q": "Which sensory receptor lies parallel to muscle fibers and detects muscle stretch and length changes?",
+        "accept": [
+          "muscle spindle",
+          "muscle spindles",
+          "neuromuscular spindle"
+        ]
+      }
+    },
+    {
+      "id": "GAM-16",
+      "level": 2,
+      "sub": "Proprioceptors and muscle tone",
+      "q": "Where is a Golgi tendon organ located, and what mechanical variable does it primarily monitor?",
+      "options": [
+        "Inside muscle bellies; resting heart rate",
+        "Within tendons in series with muscle fibers; muscle tension",
+        "Inside joint cavities; synovial viscosity",
+        "In the epidermis; skin temperature"
+      ],
+      "answer": 1,
+      "explain": "Golgi tendon organs are located in tendons in series with muscle fibers and respond to active muscle contraction and tendon tension, helping protect against excessive force. Muscle spindles detect stretch in parallel.",
+      "open": {
+        "q": "Where is a Golgi tendon organ located and what does it sense?",
+        "accept": [
+          "in tendons in series with muscle fibers and senses tension",
+          "within tendons to monitor muscle tension",
+          "tendon in series; senses muscle tension",
+          "tendons; tension on the tendon"
+        ]
+      }
+    },
+    {
+      "id": "GAM-17",
+      "level": 1,
+      "sub": "Contraction mechanics",
+      "q": "Which type of muscle contraction occurs when a muscle develops tension and shortens while moving a constant load?",
+      "options": [
+        "Isometric contraction",
+        "Eccentric contraction",
+        "Isotonic concentric contraction",
+        "Tetanic relaxation"
+      ],
+      "answer": 2,
+      "explain": "In an isotonic concentric contraction, muscle tension remains roughly constant while the muscle shortens and pulls its attachments closer together. During an eccentric contraction, the muscle lengthens under tension as it brakes a load.",
+      "open": {
+        "q": "What type of contraction occurs when a muscle shortens while generating tension against a constant load?",
+        "accept": [
+          "isotonic concentric contraction",
+          "concentric contraction",
+          "concentric",
+          "isotonic shortening"
+        ]
+      }
+    },
+    {
+      "id": "GAM-18",
+      "level": 2,
+      "sub": "Contraction mechanics",
+      "q": "What happens to muscle length during a purely isometric contraction against an immovable resistance?",
+      "options": [
+        "The muscle shortens rapidly",
+        "The muscle lengthens progressively",
+        "The muscle completely detaches from bone",
+        "Muscle length stays essentially unchanged while tension rises"
+      ],
+      "answer": 3,
+      "explain": "During an isometric contraction, sarcomeres generate tension (cross-bridge cycling occurs), but the external load prevents the muscle as a whole from shortening or lengthening. Isometric activity helps maintain posture and stabilize joints.",
+      "open": {
+        "q": "How does muscle length change during an isometric contraction?",
+        "accept": [
+          "it stays unchanged while tension increases",
+          "no change in overall muscle length",
+          "muscle length remains constant",
+          "remains the same length"
+        ]
+      }
+    },
+    {
+      "id": "GAM-19",
+      "level": 3,
+      "sub": "Contraction mechanics",
+      "q": "A student walks down a steep flight of stairs and quadriceps femoris contracts while lengthening to control knee flexion. Which type of contraction is occurring in the quadriceps?",
+      "options": [
+        "Eccentric contraction",
+        "Isometric contraction",
+        "Concentric contraction",
+        "Refractory contraction"
+      ],
+      "answer": 0,
+      "explain": "An eccentric contraction occurs when an active muscle lengthens under load, acting as a controlled brake against gravity (such as the quadriceps controlling knee flexion when descending stairs). It generates high tension and can cause delayed muscle soreness when unaccustomed.",
+      "open": {
+        "q": "What type of contraction occurs when an active muscle lengthens while resisting a load, such as quadriceps when walking downhill?",
+        "accept": [
+          "eccentric contraction",
+          "eccentric",
+          "isotonic eccentric contraction"
+        ]
+      }
+    },
+    {
+      "id": "GAM-20",
+      "level": 1,
+      "sub": "Blood supply of skeletal muscle",
+      "q": "How do arterial branches typically enter a skeletal muscle belly?",
+      "options": [
+        "Only at the distal tendon insertion",
+        "At a neurovascular hilum with motor nerve branches",
+        "Through synovial fluid",
+        "Directly from articular cartilage"
+      ],
+      "answer": 1,
+      "explain": "Arteries and veins usually enter skeletal muscles along with motor nerves at a neurovascular entry point and branch within the perimysium and endomysium to supply muscle fibers. Rich capillary networks surround individual muscle fibers to support metabolic demand.",
+      "open": {
+        "q": "How do blood vessels generally enter a skeletal muscle relative to its motor nerve supply?",
+        "accept": [
+          "together with motor nerves at a neurovascular entry point",
+          "alongside motor nerve branches into the muscle",
+          "with motor nerves at a neurovascular hilum",
+          "accompanying motor nerves"
+        ]
+      }
+    },
+    {
+      "id": "GAM-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Connective tissue sheaths of muscle",
+      "q": "What is the connective tissue sheath that surrounds the entire muscle belly called?",
+      "options": [
+        "Epimysium",
+        "Perimysium",
+        "Endomysium",
+        "Aponeurosis"
+      ],
+      "answer": 0,
+      "explain": "The epimysium is the outermost dense irregular connective tissue sheath enveloping the whole muscle, continuous with its tendon.",
+      "verified": false,
+      "open": {
+        "q": "What is the outermost connective tissue sheath of a whole skeletal muscle called?",
+        "accept": [
+          "epimysium",
+          "epimysial sheath"
+        ]
+      }
+    },
+    {
+      "id": "GAM-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Connective tissue sheaths of muscle",
+      "q": "What is the connective tissue sheath surrounding each fascicle of muscle fibres called?",
+      "options": [
+        "Epimysium",
+        "Perimysium",
+        "Endomysium",
+        "Tendon"
+      ],
+      "answer": 1,
+      "explain": "The perimysium surrounds each fascicle (bundle) of muscle fibres and carries blood vessels and nerves into the muscle.",
+      "verified": false,
+      "open": {
+        "q": "Which sheath surrounds a fascicle of muscle fibres?",
+        "accept": [
+          "perimysium",
+          "perimysial sheath"
+        ]
+      }
+    },
+    {
+      "id": "GAM-023",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Connective tissue sheaths of muscle",
+      "q": "What is the delicate connective tissue surrounding each individual muscle fibre called?",
+      "options": [
+        "Epimysium",
+        "Perimysium",
+        "Endomysium",
+        "Periosteum"
+      ],
+      "answer": 2,
+      "explain": "The endomysium is the fine reticular connective tissue around individual muscle fibres, carrying capillaries and nerve endings.",
+      "verified": false,
+      "open": {
+        "q": "Which sheath surrounds a single muscle fibre?",
+        "accept": [
+          "endomysium",
+          "endomysial sheath"
+        ]
+      }
+    },
+    {
+      "id": "GAM-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Tendons and ligaments",
+      "q": "What is the main structural difference between a tendon and a ligament?",
+      "options": [
+        "Tendons attach muscle to bone; ligaments attach bone to bone",
+        "Tendons attach bone to bone; ligaments attach muscle to bone",
+        "Tendons contain elastin only; ligaments contain collagen only",
+        "Tendons are found only in the limbs; ligaments only in the spine"
+      ],
+      "answer": 0,
+      "explain": "Tendons are dense regular connective tissue attaching muscle to bone, while ligaments attach bone to bone (or support organs) and are usually more elastic.",
+      "verified": false,
+      "open": {
+        "q": "What does a tendon attach, and what does a ligament attach?",
+        "accept": [
+          "tendon muscle to bone and ligament bone to bone",
+          "tendon attaches muscle to bone; ligament bone to bone",
+          "muscle to bone versus bone to bone"
+        ]
+      }
+    },
+    {
+      "id": "GAM-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle architecture",
+      "q": "What is a parallel (fusiform) muscle arrangement?",
+      "options": [
+        "Fascicles run parallel to the long axis of the muscle",
+        "Fascicles attach obliquely to a central tendon",
+        "Fascicles converge from a broad origin to a narrow insertion",
+        "Fascicles form concentric rings"
+      ],
+      "answer": 0,
+      "explain": "In a parallel or fusiform muscle, fascicles run along the long axis, giving a greater range of shortening than pennate muscles.",
+      "verified": false,
+      "open": {
+        "q": "How are fascicles arranged in a parallel muscle?",
+        "accept": [
+          "parallel to the long axis",
+          "along the long axis",
+          "longitudinally"
+        ]
+      }
+    },
+    {
+      "id": "GAM-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle architecture",
+      "q": "How does a convergent muscle differ from a parallel muscle?",
+      "options": [
+        "Fibres converge from a broad origin to a narrow insertion",
+        "Fibres run parallel to the long axis",
+        "Fibres attach obliquely to one side of a tendon",
+        "Fibres form circular rings around an opening"
+      ],
+      "answer": 0,
+      "explain": "Convergent (triangular) muscles have a broad origin whose fibres converge to a single tendon, as in pectoralis major.",
+      "verified": false,
+      "open": {
+        "q": "What is the arrangement of fibres in a convergent muscle?",
+        "accept": [
+          "broad origin converging to narrow insertion",
+          "fibres converge to a tendon",
+          "fan-shaped",
+          "converging fibres"
+        ]
+      }
+    },
+    {
+      "id": "GAM-027",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle architecture",
+      "q": "In a unipennate muscle, how do fibres attach to the tendon?",
+      "options": [
+        "Obliquely along one side of a tendon",
+        "Obliquely along both sides of a central tendon",
+        "Obliquely along multiple tendinous intersections",
+        "Parallel to the tendon"
+      ],
+      "answer": 0,
+      "explain": "In a unipennate muscle, all fibres attach obliquely to one side of a tendon, like one side of a feather (e.g., extensor digitorum longus).",
+      "verified": false,
+      "open": {
+        "q": "How do fibres attach to the tendon in a unipennate muscle?",
+        "accept": [
+          "obliquely to one side of the tendon",
+          "one side of a tendon",
+          "one-sided pennate"
+        ]
+      }
+    },
+    {
+      "id": "GAM-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle architecture",
+      "q": "Which muscle shape is described as having two bellies separated by an intermediate tendon?",
+      "options": [
+        "Digastric",
+        "Quadrate",
+        "Fusiform",
+        "Strap"
+      ],
+      "answer": 0,
+      "explain": "A digastric muscle has two bellies joined by an intermediate tendon, as in digastric (submandibular region) or rectus abdominis with tendinous intersections.",
+      "verified": false,
+      "open": {
+        "q": "What is a muscle with two bellies separated by an intermediate tendon called?",
+        "accept": [
+          "digastric",
+          "biventral"
+        ]
+      }
+    },
+    {
+      "id": "GAM-029",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Muscle architecture",
+      "q": "What term describes a muscle with four-sided, flat, parallel fibres, such as quadratus lumborum?",
+      "options": [
+        "Quadrate",
+        "Fusiform",
+        "Pennate",
+        "Sphincteric"
+      ],
+      "answer": 0,
+      "explain": "A quadrate muscle is four-sided and flat with parallel fibres, as in quadratus lumborum.",
+      "verified": false,
+      "open": {
+        "q": "What term describes a four-sided, flat muscle with parallel fibres?",
+        "accept": [
+          "quadrate",
+          "quadratus"
+        ]
+      }
+    },
+    {
+      "id": "GAM-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Functional roles of muscles",
+      "q": "What is the role of a fixator muscle?",
+      "options": [
+        "Stabilising the prime mover's origin",
+        "Producing the main movement",
+        "Opposing the prime mover",
+        "Moving a distant joint"
+      ],
+      "answer": 0,
+      "explain": "A fixator stabilizes the proximal attachment (origin) or a nearby joint so the prime mover can act efficiently on the target joint.",
+      "verified": false,
+      "open": {
+        "q": "What is the role of a fixator muscle?",
+        "accept": [
+          "stabilizing the origin of a prime mover",
+          "stabilizes the proximal attachment",
+          "fixing a joint or bone",
+          "stabilizing a joint"
+        ]
+      }
+    },
+    {
+      "id": "GAM-031",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Functional roles of muscles",
+      "q": "What is reverse muscle action?",
+      "options": [
+        "When the usual insertion becomes fixed and the origin moves",
+        "When a muscle relaxes completely",
+        "When a muscle acts only isometrically",
+        "When an antagonist becomes the prime mover"
+      ],
+      "answer": 0,
+      "explain": "In reverse muscle action, the distal attachment (insertion) is fixed, so contraction moves the proximal attachment (origin), as when the humerus is fixed and latissimus dorsi raises the trunk.",
+      "verified": false,
+      "open": {
+        "q": "What is it called when the insertion is fixed and contraction moves the origin?",
+        "accept": [
+          "reverse muscle action",
+          "reverse action",
+          "reversed origin-insertion"
+        ]
+      }
+    },
+    {
+      "id": "GAM-032",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Levers and pulleys",
+      "q": "In a first-class lever in the body, where is the fulcrum relative to the effort and load?",
+      "options": [
+        "Between the effort and load",
+        "At one end, with effort in the middle",
+        "At one end, with load in the middle",
+        "There is no fulcrum"
+      ],
+      "answer": 0,
+      "explain": "In a first-class lever, the fulcrum lies between the effort and load, as in the triceps extending the elbow with the elbow joint as fulcrum.",
+      "verified": false,
+      "open": {
+        "q": "Where is the fulcrum in a first-class lever?",
+        "accept": [
+          "between effort and load",
+          "between the effort and the load",
+          "in the middle"
+        ]
+      }
+    },
+    {
+      "id": "GAM-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Levers and pulleys",
+      "q": "Which class of lever is most common in the human body and always has the effort between the fulcrum and load?",
+      "options": [
+        "Third-class lever",
+        "First-class lever",
+        "Second-class lever",
+        "Fourth-class lever"
+      ],
+      "answer": 0,
+      "explain": "Third-class levers, with effort between fulcrum and load, are the most common in the body (e.g., biceps flexing the elbow) and favour speed and range over force.",
+      "verified": false,
+      "open": {
+        "q": "Which lever class is most common in the body and has effort between fulcrum and load?",
+        "accept": [
+          "third-class",
+          "third class",
+          "class 3",
+          "type III"
+        ]
+      }
+    },
+    {
+      "id": "GAM-034",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Levers and pulleys",
+      "q": "What is the function of a bony pulley (sesamoid) such as the patella in the quadriceps mechanism?",
+      "options": [
+        "Improving the angle of pull and mechanical advantage",
+        "Producing synovial fluid",
+        "Anchoring muscle to bone",
+        "Producing erythrocytes"
+      ],
+      "answer": 0,
+      "explain": "A sesamoid bone like the patella acts as a pulley, improving the angle of pull and mechanical advantage of the quadriceps tendon and protecting the tendon from wear.",
+      "verified": false,
+      "open": {
+        "q": "What mechanical function does the patella serve in the quadriceps mechanism?",
+        "accept": [
+          "improves angle of pull",
+          "pulley function",
+          "increases mechanical advantage",
+          "improves leverage"
+        ]
+      }
+    },
+    {
+      "id": "GAM-035",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Muscle adaptation",
+      "q": "What is muscle hypertrophy?",
+      "options": [
+        "Increase in muscle fibre size and mass",
+        "Decrease in muscle fibre number",
+        "Replacement of muscle by fat",
+        "Formation of new muscle fibres only"
+      ],
+      "answer": 0,
+      "explain": "Hypertrophy is an increase in the size of existing muscle fibres (not number), typically in response to resistance training.",
+      "verified": false,
+      "open": {
+        "q": "What is an increase in muscle fibre size called?",
+        "accept": [
+          "hypertrophy",
+          "muscle hypertrophy"
+        ]
+      }
+    },
+    {
+      "id": "GAM-036",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle adaptation",
+      "q": "What is muscle atrophy?",
+      "options": [
+        "Reduction in muscle fibre size and mass",
+        "Increase in fibre size",
+        "Conversion of muscle to bone",
+        "Formation of new fibres"
+      ],
+      "answer": 0,
+      "explain": "Atrophy is a reduction in muscle fibre size and mass, as in disuse, denervation, or malnutrition.",
+      "verified": false,
+      "open": {
+        "q": "What is a reduction in muscle fibre size and mass called?",
+        "accept": [
+          "atrophy",
+          "muscle atrophy",
+          "wasting"
+        ]
+      }
+    },
+    {
+      "id": "GAM-037",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle contraction types",
+      "q": "What is delayed onset muscle soreness (DOMS)?",
+      "options": [
+        "Delayed soreness 24–72 hours after unaccustomed eccentric exercise",
+        "Pain only during exercise",
+        "Fracture-related pain",
+        "Infective myalgia"
+      ],
+      "answer": 0,
+      "explain": "DOMS is muscle soreness and stiffness appearing 24 to 72 hours after unaccustomed, especially eccentric, exercise due to microdamage and inflammation.",
+      "verified": false,
+      "open": {
+        "q": "What is the term for muscle soreness appearing 24 to 72 hours after unaccustomed exercise?",
+        "accept": [
+          "delayed onset muscle soreness",
+          "DOMS",
+          "muscle soreness after exercise"
+        ]
+      }
+    },
+    {
+      "id": "GAM-038",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Muscle contraction types",
+      "q": "A patient has a crush injury of the anterior leg compartment with severe pain, tense swelling, and loss of dorsiflexion. What is the diagnosis?",
+      "options": [
+        "Compartment syndrome",
+        "Deep vein thrombosis",
+        "Achilles tendon rupture",
+        "Plantar fasciitis"
+      ],
+      "answer": 0,
+      "explain": "Compartment syndrome results from increased pressure in a closed fascial compartment, causing ischaemia, severe pain, and nerve/muscle dysfunction; it is a surgical emergency.",
+      "verified": false,
+      "open": {
+        "q": "What is the condition called when raised pressure within a fascial compartment compromises blood flow and function?",
+        "accept": [
+          "compartment syndrome",
+          "acute compartment syndrome"
+        ]
+      }
+    },
+    {
+      "id": "GAM-039",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle contraction types",
+      "q": "What is a muscle strain?",
+      "options": [
+        "Overstretching or tearing of muscle or its tendon",
+        "Dislocation of a joint",
+        "Fracture of a bone",
+        "Inflammation of a bursa"
+      ],
+      "answer": 0,
+      "explain": "A muscle strain is overstretching or tearing of muscle fibres or the musculotendinous junction, graded I to III.",
+      "verified": false,
+      "open": {
+        "q": "What is an overstretching or tearing of muscle fibres called?",
+        "accept": [
+          "muscle strain",
+          "strain",
+          "muscle tear"
+        ]
+      }
+    },
+    {
+      "id": "GAM-040",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Muscle contraction types",
+      "q": "A middle-aged man feels a sudden snap in the back of his calf while playing squash and cannot stand on tiptoe. What is the most likely injury?",
+      "options": [
+        "Achilles tendon rupture",
+        "Anterior cruciate ligament tear",
+        "Medial meniscus tear",
+        "Quadriceps tendon rupture"
+      ],
+      "answer": 0,
+      "explain": "Achilles tendon rupture causes a sudden snap, a palpable gap in the tendon, and loss of active plantarflexion (cannot stand on tiptoe); Thompson test is positive.",
+      "verified": false,
+      "open": {
+        "q": "Which tendon rupture causes inability to stand on tiptoe and a positive Thompson test?",
+        "accept": [
+          "Achilles tendon",
+          "calcaneal tendon",
+          "Achilles"
+        ]
+      }
+    },
+    {
+      "id": "GAM-041",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle fibre types",
+      "q": "Which muscle fibre type is slow-twitch, rich in mitochondria and myoglobin, and resistant to fatigue?",
+      "options": [
+        "Type I fibres",
+        "Type IIa fibres",
+        "Type IIb fibres",
+        "Type III fibres"
+      ],
+      "answer": 0,
+      "explain": "Type I (slow oxidative) fibres have high mitochondria and myoglobin content and are resistant to fatigue, suited for endurance and posture.",
+      "verified": false,
+      "open": {
+        "q": "Which muscle fibre type is slow-twitch and fatigue-resistant?",
+        "accept": [
+          "type I",
+          "slow twitch",
+          "slow oxidative",
+          "type 1"
+        ]
+      }
+    },
+    {
+      "id": "GAM-042",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle fibre types",
+      "q": "Which muscle fibre type is fast-twitch and suited for rapid, powerful movements?",
+      "options": [
+        "Type I",
+        "Type II",
+        "Type III",
+        "Type IV"
+      ],
+      "answer": 1,
+      "explain": "Type II (fast) fibres have high myosin ATPase activity and glycolytic capacity, suited for rapid powerful contractions but fatiguing more quickly.",
+      "verified": false,
+      "open": {
+        "q": "Which muscle fibre type is fast-twitch and fatigues rapidly?",
+        "accept": [
+          "type II",
+          "fast twitch",
+          "type 2",
+          "fast glycolytic"
+        ]
+      }
+    },
+    {
+      "id": "GAM-043",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle fibre types",
+      "q": "What is the Henneman size principle of motor unit recruitment?",
+      "options": [
+        "Small motor units are recruited before large ones as force increases",
+        "Large motor units are always recruited first",
+        "Motor units are recruited randomly",
+        "Only type II fibres are ever recruited"
+      ],
+      "answer": 0,
+      "explain": "The size principle states that as force demand rises, smaller (slow) motor units are recruited first, followed by progressively larger (fast) units.",
+      "verified": false,
+      "open": {
+        "q": "What is the principle that small motor units are recruited before large ones called?",
+        "accept": [
+          "Henneman size principle",
+          "size principle",
+          "Henneman principle"
+        ]
+      }
+    },
+    {
+      "id": "GAM-044",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Muscle disease",
+      "q": "A boy has progressive proximal muscle weakness, calf pseudohypertrophy, and a positive Gowers sign. Which condition is most likely?",
+      "options": [
+        "Duchenne muscular dystrophy",
+        "Myasthenia gravis",
+        "Polio",
+        "Guillain-Barre syndrome"
+      ],
+      "answer": 0,
+      "explain": "Duchenne muscular dystrophy is an X-linked recessive dystrophinopathy causing progressive proximal weakness, calf pseudohypertrophy, and Gowers sign in boys.",
+      "verified": false,
+      "open": {
+        "q": "Which X-linked muscular dystrophy causes proximal weakness, calf pseudohypertrophy, and Gowers sign?",
+        "accept": [
+          "Duchenne muscular dystrophy",
+          "Duchenne",
+          "DMD"
+        ]
+      }
+    },
+    {
+      "id": "GAM-045",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Muscle disease",
+      "q": "A patient has fluctuating weakness of the eyelids and chewing muscles that worsens with activity and improves with rest. Which condition is most likely?",
+      "options": [
+        "Myasthenia gravis",
+        "Duchenne muscular dystrophy",
+        "Polymyositis",
+        "Lambert-Eaton syndrome"
+      ],
+      "answer": 0,
+      "explain": "Myasthenia gravis causes fatigable weakness due to autoantibodies against postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction; ptosis and diplopia are common.",
+      "verified": false,
+      "open": {
+        "q": "Which condition causes fatigable weakness due to antibodies against acetylcholine receptors?",
+        "accept": [
+          "myasthenia gravis",
+          "myasthenia"
+        ]
+      }
+    },
+    {
+      "id": "GAM-046",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Muscle pathology",
+      "q": "What causes rigor mortis after death?",
+      "options": [
+        "Loss of ATP preventing cross-bridge detachment in muscle",
+        "Excess ATP causing overcontraction",
+        "Loss of calcium from the sarcoplasmic reticulum",
+        "Breakdown of actin filaments"
+      ],
+      "answer": 0,
+      "explain": "After death, ATP falls and cross-bridges cannot detach from actin, causing muscles to stiffen (rigor mortis) until proteolysis and putrefaction follow.",
+      "verified": false,
+      "open": {
+        "q": "What biochemical change causes rigor mortis?",
+        "accept": [
+          "loss of ATP",
+          "ATP depletion",
+          "absence of ATP",
+          "fall in ATP"
+        ]
+      }
+    },
+    {
+      "id": "GAM-047",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Fascial compartments",
+      "q": "What is a fascial compartment of a limb?",
+      "options": [
+        "Muscles enclosed by deep fascia and separated by septa",
+        "A synovial-fluid space around a joint",
+        "A bursa beneath a tendon",
+        "A cavity in cancellous bone"
+      ],
+      "answer": 0,
+      "explain": "A fascial compartment is a group of muscles and associated vessels and nerves enclosed by deep fascia and separated from neighbours by intermuscular septa; each has a distinct nerve supply.",
+      "verified": false,
+      "open": {
+        "q": "What is a group of muscles enclosed by deep fascia and septa called?",
+        "accept": [
+          "fascial compartment",
+          "muscle compartment",
+          "compartment"
+        ]
+      }
+    },
+    {
+      "id": "GAM-048",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Fascial compartments",
+      "q": "What is muscle herniation?",
+      "options": [
+        "Muscle protrusion through a defect in deep fascia",
+        "Tendon avulsion",
+        "Joint dislocation",
+        "Muscle inflammation"
+      ],
+      "answer": 0,
+      "explain": "Muscle herniation occurs when muscle bulges through a defect in the overlying deep fascia, often after trauma or fascia weakening, causing a soft reducible swelling.",
+      "verified": false,
+      "open": {
+        "q": "What is protrusion of muscle through a defect in its fascia called?",
+        "accept": [
+          "muscle herniation",
+          "muscle hernia",
+          "fascial hernia"
+        ]
+      }
+    },
+    {
+      "id": "GAM-049",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Smooth muscle",
+      "q": "What is the difference between single-unit and multi-unit smooth muscle?",
+      "options": [
+        "Single-unit cells are gap-junction coupled; multi-unit cells act more independently",
+        "Single-unit muscle is striated",
+        "Single-unit muscle is voluntary",
+        "Single-unit cells lack nuclei"
+      ],
+      "answer": 0,
+      "explain": "Single-unit (unitary) smooth muscle cells are coupled by gap junctions and contract as a unit (gut, uterus); multi-unit smooth muscle cells act independently (iris, large airways).",
+      "verified": false,
+      "open": {
+        "q": "How does single-unit smooth muscle differ from multi-unit smooth muscle?",
+        "accept": [
+          "single-unit cells are coupled by gap junctions; multi-unit act independently",
+          "single-unit gap junctions, multi-unit independent",
+          "unitary coupled vs multi-unit separate"
+        ]
+      }
+    },
+    {
+      "id": "GAM-050",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cardiac muscle",
+      "q": "Which component of the intercalated disc allows electrical coupling between cardiac muscle cells?",
+      "options": [
+        "Gap junctions",
+        "Desmosomes",
+        "Fascia adherens",
+        "T-tubules"
+      ],
+      "answer": 0,
+      "explain": "Gap junctions within intercalated discs allow ions to pass between cardiac muscle cells, enabling electrical coupling and coordinated contraction; desmosomes and fascia adherens provide mechanical coupling.",
+      "verified": false,
+      "open": {
+        "q": "Which junctional component of the intercalated disc provides electrical coupling between cardiac cells?",
+        "accept": [
+          "gap junctions",
+          "gap junction"
+        ]
+      }
+    },
+    {
+      "id": "GAM-051",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle mechanics",
+      "q": "What is the difference between muscle twitch summation and tetanus?",
+      "options": [
+        "Summation adds twitches before full relaxation; tetanus is sustained contraction",
+        "Summation is a single twitch; tetanus is post-mortem relaxation",
+        "Summation occurs only in cardiac muscle",
+        "Summation and tetanus are identical"
+      ],
+      "answer": 0,
+      "explain": "Summation occurs when a second stimulus arrives before the muscle fully relaxes, adding tension; with high-frequency stimulation, relaxation is lost entirely, producing a sustained tetanic contraction.",
+      "verified": false,
+      "open": {
+        "q": "What is sustained muscle contraction without relaxation between stimuli called?",
+        "accept": [
+          "tetanus",
+          "tetanic contraction",
+          "complete tetanus"
+        ]
+      }
+    },
+    {
+      "id": "GAM-052",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle mechanics",
+      "q": "What is muscle fatigue?",
+      "options": [
+        "Decline in muscle performance after prolonged activity",
+        "Increase in muscle strength after exercise",
+        "Complete paralysis due to nerve injury",
+        "Rigidity after death"
+      ],
+      "answer": 0,
+      "explain": "Muscle fatigue is a reversible decline in force-generating capacity after prolonged or intense activity, due to multiple factors including metabolite accumulation.",
+      "verified": false,
+      "open": {
+        "q": "What is the reversible decline in muscle performance after prolonged activity called?",
+        "accept": [
+          "muscle fatigue",
+          "fatigue",
+          "muscular fatigue"
+        ]
+      }
+    },
+    {
+      "id": "GAM-053",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Tendons",
+      "q": "What is the difference between a tendon and an aponeurosis?",
+      "options": [
+        "A tendon is cord-like; an aponeurosis is a flattened sheet",
+        "A tendon is flat; an aponeurosis is cord-like",
+        "A tendon attaches bone to bone; an aponeurosis attaches muscle to muscle",
+        "A tendon contains no collagen"
+      ],
+      "answer": 0,
+      "explain": "Both are dense regular connective tissue attaching muscle to bone, but a tendon is cord-like while an aponeurosis is a flattened sheet.",
+      "verified": false,
+      "open": {
+        "q": "How does an aponeurosis differ from a tendon in shape?",
+        "accept": [
+          "aponeurosis is a flat sheet; tendon is cord-like",
+          "flat sheet vs cord",
+          "aponeurosis flattened and tendon rounded"
+        ]
+      }
+    },
+    {
+      "id": "GAM-054",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Extrinsic and intrinsic muscles",
+      "q": "What is the difference between intrinsic and extrinsic muscles?",
+      "options": [
+        "Intrinsic muscles attach within a region; extrinsic muscles have an attachment outside it",
+        "Intrinsic muscles attach outside the region",
+        "Intrinsic muscles are striated; extrinsic are smooth",
+        "Intrinsic muscles are voluntary; extrinsic are involuntary"
+      ],
+      "answer": 0,
+      "explain": "Intrinsic muscles have both attachments within the region they act on, while extrinsic muscles have at least one attachment outside that region (e.g., extrinsic tongue muscles arise outside the tongue).",
+      "verified": false,
+      "open": {
+        "q": "What distinguishes an intrinsic muscle from an extrinsic muscle?",
+        "accept": [
+          "intrinsic has both attachments within a region; extrinsic has one outside",
+          "intrinsic inside, extrinsic outside",
+          "both attachments within vs one outside the region"
+        ]
+      }
+    },
+    {
+      "id": "GAM-055",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Tendons and aponeuroses",
+      "q": "What is the linea alba?",
+      "options": [
+        "A midline raphe formed by abdominal aponeuroses",
+        "A palmar tendon",
+        "A knee ligament",
+        "A prepatellar bursa"
+      ],
+      "answer": 0,
+      "explain": "The linea alba is a median fibrous raphe formed by fusion of the aponeuroses of the abdominal wall muscles, extending from xiphoid to pubis.",
+      "verified": false,
+      "open": {
+        "q": "What is the median aponeurotic structure formed by fusion of abdominal wall muscles called?",
+        "accept": [
+          "linea alba",
+          "white line"
+        ]
+      }
+    },
+    {
+      "id": "GAM-056",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Extrinsic and intrinsic muscles",
+      "q": "A deep muscle dissected immediately adjacent to the vertebral column is found to receive its motor supply from posterior (dorsal) rami of spinal nerves. How should it be classified?",
+      "options": [
+        "An intrinsic back muscle",
+        "A superficial extrinsic back muscle",
+        "A muscle of the anterior abdominal wall",
+        "A muscle of the pectoral region"
+      ],
+      "answer": 0,
+      "explain": "Intrinsic (deep) back muscles are supplied segmentally by posterior rami of spinal nerves. Most extrinsic back muscles are supplied by anterior rami, with trapezius being the notable exception because it receives the accessory nerve with cervical contributions for proprioception.",
+      "open": {
+        "q": "Which group of back muscles is supplied by posterior rami of spinal nerves?",
+        "accept": [
+          "intrinsic back muscles",
+          "deep back muscles"
+        ]
+      },
+      "verified": false
+    },
+    {
+      "id": "GAM-057",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Extrinsic and intrinsic muscles",
+      "q": "During dissection, three longitudinal columns of erector spinae are identified. Which sequence correctly lists them from lateral to medial?",
+      "options": [
+        "Spinalis, longissimus, iliocostalis",
+        "Iliocostalis, longissimus, spinalis",
+        "Longissimus, iliocostalis, spinalis",
+        "Iliocostalis, spinalis, longissimus"
+      ],
+      "answer": 1,
+      "explain": "The erector spinae group is arranged from lateral to medial as iliocostalis, longissimus and spinalis. These muscles collectively extend the vertebral column when acting bilaterally and contribute to ipsilateral lateral flexion when acting unilaterally.",
+      "open": {
+        "q": "Name the three erector spinae columns in lateral-to-medial order.",
+        "accept": [
+          "iliocostalis, longissimus, spinalis",
+          "iliocostalis longissimus spinalis"
+        ]
+      },
+      "verified": false
+    },
+    {
+      "id": "GAM-058",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Extrinsic and intrinsic muscles",
+      "q": "A patient is asked to bend the trunk to the right against resistance. Which action is primarily produced by unilateral contraction of the right erector spinae?",
+      "options": [
+        "Left lateral flexion",
+        "Right lateral flexion",
+        "Flexion of the vertebral column",
+        "Rotation of the trunk to the left"
+      ],
+      "answer": 1,
+      "explain": "Unilateral contraction of the erector spinae produces lateral flexion of the vertebral column to the same side. Bilateral contraction extends the vertebral column and helps control forward flexion eccentrically.",
+      "open": {
+        "q": "What movement of the vertebral column is produced by unilateral contraction of the right erector spinae?",
+        "accept": [
+          "right lateral flexion",
+          "ipsilateral lateral flexion",
+          "lateral flexion to the right"
+        ]
+      },
+      "verified": false
+    },
+    {
+      "id": "GAM-059",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Extrinsic and intrinsic muscles",
+      "q": "A patient with chronic mechanical low-back pain has impaired segmental control of the lumbar vertebrae. Which deep intrinsic muscle group is especially important for local intersegmental stabilization?",
+      "options": [
+        "Latissimus dorsi",
+        "Multifidus",
+        "Trapezius",
+        "Serratus posterior superior"
+      ],
+      "answer": 1,
+      "explain": "Multifidus is part of the transversospinalis group. Its short, overlapping fascicles span a small number of vertebral segments and contribute importantly to segmental stabilization and control of vertebral movement.",
+      "open": {
+        "q": "Which deep transversospinalis muscle is particularly important for segmental stabilization of the lumbar vertebrae?",
+        "accept": [
+          "multifidus",
+          "the multifidus"
+        ]
+      },
+      "verified": false
+    },
+    {
+      "id": "GAM-060",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Extrinsic and intrinsic muscles",
+      "q": "A patient turns the head to look over the right shoulder while keeping the trunk still. Which action is produced by unilateral contraction of the right splenius capitis?",
+      "options": [
+        "Rotation of the head to the left",
+        "Rotation of the head to the right",
+        "Flexion of the neck",
+        "Depression of the mandible"
+      ],
+      "answer": 1,
+      "explain": "Unilateral contraction of splenius capitis rotates and laterally flexes the head and neck to the same side. Bilateral contraction of the splenius muscles extends the head and neck.",
+      "open": {
+        "q": "To which side does the head rotate when the right splenius capitis contracts unilaterally?",
+        "accept": [
+          "right",
+          "to the right",
+          "ipsilateral side"
+        ]
+      },
+      "verified": false
+    }
+  ]
 }
