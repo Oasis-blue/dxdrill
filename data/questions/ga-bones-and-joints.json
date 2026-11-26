@@ -1,1449 +1,1443 @@
 {
-  "topic": "ga-bones-and-joints",
-  "questions": [
-    {
-      "id": "GABJ-01",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "A bone of the upper limb consists of a tubular shaft and two expanded ends that articulate with adjacent bones. Which structural class of bone is this?",
-      "options": [
-        "Long bone",
-        "Short bone",
-        "Flat bone",
-        "Irregular bone"
-      ],
-      "answer": 0,
-      "explain": "Long bones have an elongated shaft (diaphysis) and two ends (epiphyses), typically found in the limbs such as the humerus and femur. Short bones are roughly cube-shaped, as seen in the carpus and tarsus.",
-      "open": {
-        "q": "A limb bone has a tubular shaft and expanded ends that articulate with neighboring bones. What morphological class of bone is this?",
-        "accept": [
-          "long bone",
-          "long bones"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-02",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "The carpal bones of the wrist and tarsal bones of the ankle are placed in which morphological category of bones?",
-      "options": [
-        "Pneumatic bones",
-        "Short bones",
-        "Sesamoid bones",
-        "Flat bones"
-      ],
-      "answer": 1,
-      "explain": "Short bones are roughly cuboidal or polyhedral in shape and composed mainly of spongy bone covered by a thin layer of compact bone, exemplified by carpal and tarsal bones. Sesamoid bones develop inside tendons.",
-      "open": {
-        "q": "Into which morphological bone category do the carpal and tarsal bones fall?",
-        "accept": [
-          "short bone",
-          "short bones"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-03",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "Which type of bone develops within a tendon where it passes over a bony prominence or joint?",
-      "options": [
-        "Flat bone",
-        "Pneumatic bone",
-        "Sesamoid bone",
-        "Short bone"
-      ],
-      "answer": 2,
-      "explain": "Sesamoid bones form inside tendons subjected to friction and compression, such as the patella in the quadriceps tendon, helping reduce friction and alter the line of pull. Pneumatic bones contain air-filled spaces.",
-      "open": {
-        "q": "What type of bone forms within a tendon passing over a joint or bony surface?",
-        "accept": [
-          "sesamoid bone",
-          "sesamoid bones",
-          "sesamoid"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-04",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "Which bones of the skull contain air-filled cavities lined by mucoperiosteum that lighten the skull and add resonance to the voice?",
-      "options": [
-        "Sesamoid bones",
-        "Short bones",
-        "Irregular bones",
-        "Pneumatic bones"
-      ],
-      "answer": 3,
-      "explain": "Pneumatic bones, such as the maxilla, sphenoid, ethmoid, and temporal (mastoid air cells), contain air spaces communicating with the nasal cavity or middle ear. These spaces reduce skull weight and serve as resonant chambers.",
-      "open": {
-        "q": "Which class of bones contains air-filled cavities that lighten the skull and contribute to voice resonance?",
-        "accept": [
-          "pneumatic bone",
-          "pneumatic bones",
-          "pneumatic"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-05",
-      "level": 1,
-      "sub": "Gross structure of a long bone",
-      "q": "What is the elongated tubular shaft of a growing long bone called?",
-      "options": [
-        "Diaphysis",
-        "Epiphysis",
-        "Metaphysis",
-        "Epiphyseal plate"
-      ],
-      "answer": 0,
-      "explain": "The diaphysis is the shaft of a long bone, consisting of a thick collar of compact bone surrounding a medullary cavity. The epiphyses are the ends of the bone.",
-      "open": {
-        "q": "What is the shaft of a long bone called?",
-        "accept": [
-          "diaphysis",
-          "the diaphysis"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-06",
-      "level": 2,
-      "sub": "Gross structure of a long bone",
-      "q": "Why does longitudinal growth of a long bone stop after adolescence when the epiphyseal plate is replaced by bone?",
-      "options": [
-        "Periosteal osteogenesis ceases completely",
-        "Hyaline cartilage proliferation at the growth plate is no longer occurring",
-        "The medullary cavity fills with compact bone",
-        "Articular cartilage converts into red marrow"
-      ],
-      "answer": 1,
-      "explain": "Longitudinal growth of long bones depends on chondrocyte proliferation and endochondral ossification within the epiphyseal growth plate. Once ossification fuses the diaphysis and epiphysis (forming the epiphyseal line), lengthwise growth ends.",
-      "open": {
-        "q": "Why does lengthwise growth of a long bone cease after fusion of the epiphyseal plate?",
-        "accept": [
-          "cartilage proliferation at the growth plate stops",
-          "growth plate cartilage is replaced by bone",
-          "no cartilage remains at the epiphyseal plate to proliferate",
-          "endochondral growth at the epiphyseal plate ends"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-07",
-      "level": 1,
-      "sub": "Periosteum and endosteum",
-      "q": "Why is the periosteum tightly anchored to the underlying bone at sites of muscle and tendon attachment?",
-      "options": [
-        "Synovial villi penetrate the cortical bone",
-        "Articular cartilage blends directly into the outer fibrous layer",
-        "Collagenous Sharpey fibers pass from periosteum into bone",
-        "Nutrient arteries pull the periosteum inward"
-      ],
-      "answer": 2,
-      "explain": "Perforating (Sharpey) fibers are bundles of collagen fibers extending from the periosteum into the outer lamellae of bone, anchoring the periosteum firmly and transmitting tension from tendons and muscles.",
-      "open": {
-        "q": "Which fibers anchor the periosteum firmly to the underlying bone matrix?",
-        "accept": [
-          "sharpey fibers",
-          "sharpeys fibers",
-          "sharpey's fibers",
-          "perforating fibers"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-08",
-      "level": 1,
-      "sub": "Periosteum and endosteum",
-      "q": "Which thin cellular membrane lines the medullary cavity and trabeculae of spongy bone?",
-      "options": [
-        "Periosteum",
-        "Perichondrium",
-        "Synovial membrane",
-        "Endosteum"
-      ],
-      "answer": 3,
-      "explain": "Endosteum is a delicate connective tissue layer containing osteogenic cells that lines the medullary cavity and surfaces of spongy bone trabeculae. Periosteum covers the external surface of bone except at articular surfaces.",
-      "open": {
-        "q": "Which membrane lines the medullary cavity and spongy bone trabeculae?",
-        "accept": [
-          "endosteum",
-          "the endosteum"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-09",
-      "level": 2,
-      "sub": "Bone development and growth",
-      "q": "How do the flat bones of the vault of the skull primarily form during development?",
-      "options": [
-        "Intramembranous ossification",
-        "Endochondral ossification",
-        "Secondary epiphyseal ossification",
-        "Metaplasia of synovial tissue"
-      ],
-      "answer": 0,
-      "explain": "Flat bones of the cranial vault (calvaria), most facial bones, and part of the clavicle develop via intramembranous ossification directly from mesenchymal condensations without a cartilage model. Most long and axial bones form by endochondral ossification.",
-      "open": {
-        "q": "By which ossification process do the flat bones of the cranial vault mainly form?",
-        "accept": [
-          "intramembranous ossification",
-          "intramembranous"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-10",
-      "level": 1,
-      "sub": "Bone development and growth",
-      "q": "In endochondral ossification, what replaces the initial hyaline cartilage model as bone forms?",
-      "options": [
-        "Elastic cartilage",
-        "Bone tissue",
-        "Fibrocartilage",
-        "Dense regular connective tissue"
-      ],
-      "answer": 1,
-      "explain": "In endochondral ossification, a hyaline cartilage template serves as a scaffold that is eroded and progressively replaced by bone tissue. It is the main mechanism for forming long bones and weight-bearing bones of the axial skeleton.",
-      "open": {
-        "q": "What tissue replaces the hyaline cartilage model during endochondral ossification?",
-        "accept": [
-          "bone",
-          "bone tissue",
-          "osseous tissue"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-11",
-      "level": 2,
-      "sub": "Blood supply of bone",
-      "q": "A displaced mid-shaft fracture of a long bone disrupts the nutrient artery entering the diaphysis. Which part of the bone's blood supply is directly interrupted?",
-      "options": [
-        "Periosteal arteries",
-        "Metaphyseal arteries",
-        "Medullary blood supply to the inner cortex and marrow",
-        "Epiphyseal arteries"
-      ],
-      "answer": 2,
-      "explain": "The nutrient artery enters through the nutrient foramen and branches within the medullary cavity to supply the marrow and inner two-thirds of the compact cortex. Periosteal vessels mainly supply the outer cortex.",
-      "open": {
-        "q": "Disruption of the nutrient artery of a long bone directly compromises blood flow to which structures?",
-        "accept": [
-          "marrow and inner cortex",
-          "medullary cavity and inner compact bone",
-          "bone marrow and inner cortex",
-          "medullary supply"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-12",
-      "level": 3,
-      "sub": "Blood supply of bone",
-      "q": "A patient sustains a displaced fracture of the femoral neck and later develops collapse of the femoral head due to interrupted blood supply. Which pathological process explains this complication?",
-      "options": [
-        "Osteomalacia",
-        "Achondroplasia",
-        "Osteomyelitis",
-        "Avascular necrosis"
-      ],
-      "answer": 3,
-      "explain": "Avascular necrosis (osteonecrosis) occurs when bone tissue loses its blood supply, leading to osteocyte death, structural weakening, and subchondral collapse. Because retinacular arteries supplying the femoral head can be torn in femoral neck fractures, it is a classic complication.",
-      "open": {
-        "q": "What complication occurs when a displaced fracture interrupts blood supply to the femoral head and causes bone death?",
-        "accept": [
-          "avascular necrosis",
-          "osteonecrosis",
-          "avascular necrosis of the femoral head"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-13",
-      "level": 1,
-      "sub": "Classification of joints",
-      "q": "Which major structural joint class unites bones using dense fibrous connective tissue with no joint cavity?",
-      "options": [
-        "Fibrous joint",
-        "Cartilaginous joint",
-        "Synovial joint",
-        "Gomphosis-free joint"
-      ],
-      "answer": 0,
-      "explain": "Fibrous joints join articulating bones directly by dense fibrous connective tissue and lack a synovial cavity, permitting little or no movement. Examples include cranial sutures, syndesmoses, and gomphoses.",
-      "open": {
-        "q": "Which structural class of joints connects bones via dense fibrous connective tissue without a joint cavity?",
-        "accept": [
-          "fibrous joint",
-          "fibrous joints",
-          "fibrous"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-14",
-      "level": 1,
-      "sub": "Classification of joints",
-      "q": "Sutures between the flat bones of the skull and the peg-and-socket attachment of a tooth in its alveolar socket are examples of which joint class?",
-      "options": [
-        "Synovial joints",
-        "Fibrous joints",
-        "Secondary cartilaginous joints",
-        "Plane joints"
-      ],
-      "answer": 1,
-      "explain": "Both cranial sutures and gomphoses (dentoalveolar joints) are fibrous joints uniting bones/structures via fibrous tissue without a joint cavity. Sutures allow skull growth in infancy and later ossify into synostoses.",
-      "open": {
-        "q": "To which joint class do cranial sutures and tooth-in-socket gomphoses belong?",
-        "accept": [
-          "fibrous joints",
-          "fibrous joint",
-          "fibrous"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-15",
-      "level": 1,
-      "sub": "Classification of joints",
-      "q": "Which type of cartilaginous joint unites bones strictly by hyaline cartilage, such as the epiphyseal plate or first sternocostal joint?",
-      "options": [
-        "Symphysis",
-        "Secondary cartilaginous joint",
-        "Primary cartilaginous joint (synchondrosis)",
-        "Syndesmosis"
-      ],
-      "answer": 2,
-      "explain": "A primary cartilaginous joint (synchondrosis) consists of hyaline cartilage uniting bones and is typically temporary (like the epiphyseal plate) or permits minimal movement. Secondary cartilaginous joints (symphyses) contain a fibrocartilage pad.",
-      "open": {
-        "q": "What is a cartilaginous joint in which bones are joined solely by hyaline cartilage called?",
-        "accept": [
-          "primary cartilaginous joint",
-          "synchondrosis",
-          "primary cartilaginous"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-16",
-      "level": 1,
-      "sub": "Classification of joints",
-      "q": "The intervertebral discs and the pubic symphysis are classic examples of which type of joint?",
-      "options": [
-        "Fibrous syndesmosis",
-        "Primary cartilaginous joint",
-        "Pivot synovial joint",
-        "Secondary cartilaginous joint (symphysis)"
-      ],
-      "answer": 3,
-      "explain": "Secondary cartilaginous joints (symphyses) feature hyaline cartilage covering the ends of the bones joined by a compressible fibrocartilage disc or pad, providing strength and shock absorption along the midline. Examples include the pubic symphysis and intervertebral discs.",
-      "open": {
-        "q": "What type of joint is represented by the pubic symphysis and intervertebral discs?",
-        "accept": [
-          "secondary cartilaginous joint",
-          "symphysis",
-          "secondary cartilaginous"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-17",
-      "level": 1,
-      "sub": "Features of synovial joints",
-      "q": "Which type of cartilage covers the articulating bone surfaces inside a typical synovial joint?",
-      "options": [
-        "Hyaline cartilage",
-        "Elastic cartilage",
-        "Fibrocartilage",
-        "Calcified periosteum"
-      ],
-      "answer": 0,
-      "explain": "Articular surfaces of synovial joints are coated with smooth, low-friction hyaline cartilage (articular cartilage) that lacks a perichondrium. Fibrocartilage forms intra-articular discs or menisci in select joints.",
-      "open": {
-        "q": "What type of cartilage covers the articulating surfaces of bones in a typical synovial joint?",
-        "accept": [
-          "hyaline cartilage",
-          "articular hyaline cartilage",
-          "hyaline"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-18",
-      "level": 2,
-      "sub": "Features of synovial joints",
-      "q": "How does synovial fluid secreted by the synovial membrane assist movement inside a synovial joint?",
-      "options": [
-        "Ossifies the joint capsule",
-        "Lubricates surfaces and nourishes avascular cartilage",
-        "Anchors collateral ligaments",
-        "Produces muscle contraction"
-      ],
-      "answer": 1,
-      "explain": "Synovial fluid reduces friction between articular surfaces through lubrication and supplies nutrients and metabolic exchange to the avascular articular cartilage. It is enclosed within the joint cavity bounded by the synovial membrane and fibrous capsule.",
-      "open": {
-        "q": "What are the two main functions of synovial fluid within a synovial joint cavity?",
-        "accept": [
-          "lubrication and nourishment of articular cartilage",
-          "lubricating the joint and nourishing cartilage",
-          "lubrication and nutrition of cartilage",
-          "reduces friction and nourishes articular cartilage"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-19",
-      "level": 1,
-      "sub": "Types of synovial joints",
-      "q": "The elbow (humeroulnar joint) and interphalangeal joints permit flexion and extension around a single transverse axis and belong to which synovial subtype?",
-      "options": [
-        "Pivot joint",
-        "Saddle joint",
-        "Hinge joint",
-        "Ball-and-socket joint"
-      ],
-      "answer": 2,
-      "explain": "Hinge (ginglymus) joints are uniaxial synovial joints allowing flexion and extension around a transverse axis, such as the humeroulnar and interphalangeal joints. Pivot joints allow rotation around a longitudinal axis.",
-      "open": {
-        "q": "Which subtype of synovial joint allows flexion and extension around a single axis, as seen at the humeroulnar joint?",
-        "accept": [
-          "hinge joint",
-          "hinge",
-          "ginglymus"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-20",
-      "level": 1,
-      "sub": "Types of synovial joints",
-      "q": "The atlantoaxial joint where the dens of the axis rotates within a ring formed by the anterior arch and transverse ligament of the atlas is which type of joint?",
-      "options": [
-        "Ellipsoid joint",
-        "Condylar joint",
-        "Plane joint",
-        "Pivot joint"
-      ],
-      "answer": 3,
-      "explain": "A pivot (trochoid) joint is a uniaxial joint in which a rounded or pointed bony process rotates within a ring of bone and ligament, permitting rotation around a longitudinal axis. The median atlantoaxial joint and proximal radioulnar joint are classic examples.",
-      "open": {
-        "q": "Which type of synovial joint is formed where the dens of the axis pivots within the ring of the atlas?",
-        "accept": [
-          "pivot joint",
-          "pivot",
-          "trochoid joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-21",
-      "level": 1,
-      "sub": "Types of synovial joints",
-      "q": "Which subtype of synovial joint has reciprocally concave and convex surfaces shaped like a saddle, such as the first carpometacarpal joint of the thumb?",
-      "options": [
-        "Saddle joint",
-        "Plane joint",
-        "Hinge joint",
-        "Pivot joint"
-      ],
-      "answer": 0,
-      "explain": "A saddle (sellar) joint has articular surfaces that are concave in one direction and convex in the perpendicular direction, permitting biaxial movement plus some conjunct rotation. The thumb carpometacarpal joint is the prime example in humans.",
-      "open": {
-        "q": "Which synovial joint subtype has saddle-shaped reciprocal surfaces, exemplified by the first carpometacarpal joint?",
-        "accept": [
-          "saddle joint",
-          "saddle",
-          "sellar joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-22",
-      "level": 2,
-      "sub": "Types of synovial joints",
-      "q": "Why does the ball-and-socket (spheroidal) joint allow movement in multiple planes and around multiple axes?",
-      "options": [
-        "Its articular surfaces are flat gliding facets",
-        "A spherical head moves within a cup-like socket around three axes",
-        "A fibrocartilage disc locks two axes of motion",
-        "It is reinforced only by a single transverse ligament"
-      ],
-      "answer": 1,
-      "explain": "Ball-and-socket joints (such as the shoulder and hip) have a rounded head fitting into a concave socket, permitting flexion/extension, abduction/adduction, medial/lateral rotation, and circumduction. The shoulder sacrifices bony stability for mobility, whereas the hip has a deeper acetabular socket.",
-      "open": {
-        "q": "What structural arrangement allows a ball-and-socket joint to move around multiple axes?",
-        "accept": [
-          "a spherical head fitting into a concave socket",
-          "rounded head in a cup-shaped socket",
-          "spherical head within a socket",
-          "ball-like head inside a socket"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-23",
-      "level": 1,
-      "sub": "Types of synovial joints",
-      "q": "At which synovial joint subtype do relatively flat articular surfaces slide or glide against one another, as between intercarpal bones?",
-      "options": [
-        "Saddle joint",
-        "Pivot joint",
-        "Plane joint",
-        "Ball-and-socket joint"
-      ],
-      "answer": 2,
-      "explain": "Plane (gliding) joints have nearly flat articular surfaces that permit sliding or gliding movements limited by the joint capsule and ligaments. Examples include intercarpal, intertarsal, and acromioclavicular joints.",
-      "open": {
-        "q": "Which synovial joint subtype features flat surfaces that permit gliding movements, such as between intercarpal bones?",
-        "accept": [
-          "plane joint",
-          "plane",
-          "gliding joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-24",
-      "level": 1,
-      "sub": "Types of synovial joints",
-      "q": "The radiocarpal (wrist) joint, where an oval convex proximal surface articulates with a concave socket, is classified as which type of synovial joint?",
-      "options": [
-        "Pivot joint",
-        "Saddle joint",
-        "Plane joint",
-        "Ellipsoid joint"
-      ],
-      "answer": 3,
-      "explain": "An ellipsoid (condyloid) joint has an oval convex surface fitting into an elliptical concave socket, permitting flexion/extension and abduction/adduction as well as circumduction, but no axial rotation. The wrist (radiocarpal) and metacarpophalangeal joints are examples.",
-      "open": {
-        "q": "Which biaxial synovial joint subtype is exemplified by the radiocarpal (wrist) joint?",
-        "accept": [
-          "ellipsoid joint",
-          "ellipsoid",
-          "condyloid joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-25",
-      "level": 2,
-      "sub": "Joint stability and innervation",
-      "q": "According to Hilton law, what is the innervation relationship of a joint?",
-      "options": [
-        "Nerves to muscles acting across a joint also supply the joint and overlying skin",
-        "All joints receive vagal parasympathetic fibres",
-        "Articular cartilage has dense pain innervation",
-        "Joint capsules receive only dorsal-root fibres"
-      ],
-      "answer": 0,
-      "explain": "Hilton law states that nerves innervating muscles crossing a joint also supply sensory branches to the joint capsule and often to the skin overlying the joint's insertions. This helps coordinate protective muscle reflexes and explains referred pain patterns.",
-      "open": {
-        "q": "What does Hilton law state about the nerve supply of a joint?",
-        "accept": [
-          "nerves supplying muscles moving a joint also supply the joint capsule and overlying skin",
-          "muscles crossing a joint share innervation with its capsule and overlying skin",
-          "nerves to muscles acting on a joint also innervate the joint capsule",
-          "joint capsule shares innervation with muscles crossing the joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-26",
-      "level": 3,
-      "sub": "Joint stability and innervation",
-      "q": "Why does a patient with osteoarthritis or inflammation of the hip joint sometimes report pain referred to the medial side of the knee?",
-      "options": [
-        "The knee compresses the femoral artery",
-        "Shared sensory supply, including the obturator nerve, can refer pain to the knee",
-        "Synovial fluid drains into the knee bursa",
-        "The patella shares the acetabular blood supply"
-      ],
-      "answer": 1,
-      "explain": "Nerves such as the obturator nerve supply branches to the hip joint and cutaneous or articular branches toward the medial thigh and knee region. Central convergence of sensory pathways can cause hip pathology to be perceived as knee pain.",
-      "open": {
-        "q": "Why can hip joint pathology produce referred pain felt around the medial knee?",
-        "accept": [
-          "shared sensory innervation such as the obturator nerve",
-          "common nerve supply and central sensory convergence",
-          "branches of nerves like the obturator nerve supply both regions",
-          "overlapping sensory nerve pathways"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-27",
-      "level": 1,
-      "sub": "Joint stability and innervation",
-      "q": "Which component of a synovial joint primarily limits excessive movement and reinforces the joint capsule externally?",
-      "options": [
-        "Synovial membrane",
-        "Articular disc",
-        "Ligaments",
-        "Epiphyseal line"
-      ],
-      "answer": 2,
-      "explain": "Ligaments are bands of dense regular connective tissue that bind articulating bones together, reinforce the fibrous capsule, and restrain excessive or abnormal joint motion. Articular discs/menisci improve congruency and shock absorption.",
-      "open": {
-        "q": "Which fibrous structures connect articulating bones and limit excessive joint movement?",
-        "accept": [
-          "ligaments",
-          "ligament"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-28",
-      "level": 1,
-      "sub": "Bursae and tendon sheaths",
-      "q": "What is a bursa located near a joint or bony prominence?",
-      "options": [
-        "A fibrocartilaginous plate between vertebrae",
-        "A fibrous partition between muscle compartments",
-        "A peripheral nerve plexus",
-        "A synovial-lined sac that reduces friction"
-      ],
-      "answer": 3,
-      "explain": "A bursa is a small closed sac containing lubricating fluid that reduces friction where tendons, muscles, or skin glide over bony prominences or joints. Examples include the subacromial and prepatellar bursae.",
-      "open": {
-        "q": "What is a bursa in musculoskeletal anatomy?",
-        "accept": [
-          "a fluid-filled sac that reduces friction around joints or tendons",
-          "synovial-lined sac reducing friction",
-          "lubricating fluid sac reducing friction",
-          "fluid sac that decreases friction"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-29",
-      "level": 2,
-      "sub": "Bursae and tendon sheaths",
-      "q": "How does a synovial tendon sheath differ functionally from a simple bursa?",
-      "options": [
-        "Surrounds tendons as they pass through fibrous or osseous tunnels",
-        "Fuses tendons to periosteum to prevent movement",
-        "Contains red marrow",
-        "Occurs only around cranial sutures"
-      ],
-      "answer": 0,
-      "explain": "A synovial tendon sheath is an elongated tubular sac that wraps around a tendon, especially inside narrow fibrous or osseofibrous tunnels like the carpal tunnel or digital sheaths, allowing smooth gliding. Bursae are typically flattened sacs between adjacent moving structures.",
-      "open": {
-        "q": "How is a synovial tendon sheath arranged relative to a tendon passing through a tunnel?",
-        "accept": [
-          "it wraps around a tendon to allow smooth gliding",
-          "it encloses or wraps around a tendon",
-          "tubular sac wrapping around a tendon",
-          "surrounds a tendon in a tunnel to reduce friction"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-30",
-      "level": 2,
-      "sub": "Joint stability and innervation",
-      "q": "Why does the shoulder (glenohumeral) joint have a wider range of motion but lower inherent bony stability than the hip joint?",
-      "options": [
-        "The glenoid cavity is shallow compared with the deep acetabulum",
-        "The shoulder joint is a primary cartilaginous joint",
-        "The hip joint lacks a fibrous capsule",
-        "The shoulder contains a thick fibrocartilage labrum that locks the humerus"
-      ],
-      "answer": 0,
-      "explain": "The shallow glenoid cavity of the scapula provides minimal bony containment of the humeral head, allowing wide mobility while relying heavily on the rotator cuff muscles, glenoid labrum, and ligaments for stability. By contrast, the deep acetabulum closely encompasses the femoral head.",
-      "open": {
-        "q": "Why does the shoulder joint have greater mobility but less bony stability than the hip joint?",
-        "accept": [
-          "the glenoid cavity is shallow compared with the deep acetabulum",
-          "shallow glenoid fossa and minimal bony socket depth",
-          "shallow glenoid cavity",
-          "less bony socket coverage than the hip"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-031",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "Which type of bone is the patella?",
-      "options": [
-        "Sesamoid bone",
-        "Long bone",
-        "Flat bone",
-        "Irregular bone"
-      ],
-      "answer": 0,
-      "explain": "The patella is a sesamoid bone that develops within the tendon of quadriceps femoris.",
-      "verified": false,
-      "open": {
-        "q": "What type of bone is the patella?",
-        "accept": [
-          "sesamoid",
-          "sesamoid bone"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-032",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "Which type of bone is the sternum?",
-      "options": [
-        "Long bone",
-        "Flat bone",
-        "Short bone",
-        "Irregular bone"
-      ],
-      "answer": 1,
-      "explain": "The sternum is a flat bone with two compact tables enclosing spongy bone.",
-      "verified": false,
-      "open": {
-        "q": "What type of bone is the sternum?",
-        "accept": [
-          "flat",
-          "flat bone"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-033",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Classification of bones",
-      "q": "Which type of bone is a vertebra?",
-      "options": [
-        "Flat bone",
-        "Long bone",
-        "Short bone",
-        "Irregular bone"
-      ],
-      "answer": 3,
-      "explain": "Vertebrae have a complex, irregular shape and are classed as irregular bones.",
-      "verified": false,
-      "open": {
-        "q": "What type of bone is a vertebra?",
-        "accept": [
-          "irregular",
-          "irregular bone"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-034",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Structure of a long bone",
-      "q": "What is the shaft of a long bone called?",
-      "options": [
-        "Epiphysis",
-        "Diaphysis",
-        "Metaphysis",
-        "Apophysis"
-      ],
-      "answer": 1,
-      "explain": "The diaphysis is the tubular shaft, with a medullary cavity containing marrow.",
-      "verified": false,
-      "open": {
-        "q": "What is the shaft of a long bone called?",
-        "accept": [
-          "diaphysis",
-          "shaft"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-035",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Structure of a long bone",
-      "q": "In a growing child, which region contains the epiphyseal (growth) plate?",
-      "options": [
-        "Metaphysis",
-        "Diaphysis",
-        "Apophysis",
-        "Periosteum"
-      ],
-      "answer": 0,
-      "explain": "The epiphyseal plate lies at the metaphysis between epiphysis and diaphysis.",
-      "verified": false,
-      "open": {
-        "q": "In which region of a growing long bone is the epiphyseal plate located?",
-        "accept": [
-          "metaphysis",
-          "growth plate"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-036",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of a long bone",
-      "q": "What is the fibrous membrane covering the outer surface of bone called?",
-      "options": [
-        "Endosteum",
-        "Periosteum",
-        "Perichondrium",
-        "Pericranium"
-      ],
-      "answer": 1,
-      "explain": "The periosteum covers bone except at articular surfaces and is important for growth and repair.",
-      "verified": false,
-      "open": {
-        "q": "What is the membrane covering the outer surface of bone called?",
-        "accept": [
-          "periosteum",
-          "periosteal membrane"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-037",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Structure of a long bone",
-      "q": "What is the inner lining of the medullary cavity called?",
-      "options": [
-        "Periosteum",
-        "Endosteum",
-        "Perichondrium",
-        "Synovium"
-      ],
-      "answer": 1,
-      "explain": "The endosteum lines the medullary cavity and contains osteoprogenitor cells.",
-      "verified": false,
-      "open": {
-        "q": "What is the membrane lining the medullary cavity of bone called?",
-        "accept": [
-          "endosteum",
-          "endosteal lining"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-038",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Bone tissue",
-      "q": "Which cell type is responsible for bone resorption?",
-      "options": [
-        "Osteoblast",
-        "Osteoclast",
-        "Osteocyte",
-        "Osteoprogenitor cell"
-      ],
-      "answer": 1,
-      "explain": "Osteoclasts are multinucleated cells that resorb bone by secreting acid and enzymes.",
-      "verified": false,
-      "open": {
-        "q": "Which cell type resorbs bone?",
-        "accept": [
-          "osteoclast",
-          "osteoclasts"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-039",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Bone tissue",
-      "q": "Which cell type forms new bone matrix?",
-      "options": [
-        "Osteoclast",
-        "Osteocyte",
-        "Osteoblast",
-        "Chondrocyte"
-      ],
-      "answer": 2,
-      "explain": "Osteoblasts synthesize and secrete the organic matrix (osteoid) that later mineralizes.",
-      "verified": false,
-      "open": {
-        "q": "Which cell type synthesizes new bone matrix?",
-        "accept": [
-          "osteoblast",
-          "osteoblasts"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-040",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Bone tissue",
-      "q": "Which type of bone has a characteristic lamellar arrangement with Haversian systems?",
-      "options": [
-        "Woven bone",
-        "Compact bone",
-        "Fibrous bone",
-        "Cancellous bone only"
-      ],
-      "answer": 1,
-      "explain": "Compact bone is organized into osteons (Haversian systems) with concentric lamellae around central canals.",
-      "verified": false,
-      "open": {
-        "q": "Which type of bone is organized into osteons with concentric lamellae?",
-        "accept": [
-          "compact bone",
-          "compact",
-          "cortical bone"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-041",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Bone tissue",
-      "q": "What is the function of the Haversian canal?",
-      "options": [
-        "Transmitting forces across joints",
-        "Carrying blood vessels and nerves",
-        "Storing yellow marrow",
-        "Producing synovial fluid"
-      ],
-      "answer": 1,
-      "explain": "Haversian canals contain blood vessels and nerves that supply osteocytes in the osteon.",
-      "verified": false,
-      "open": {
-        "q": "What do Haversian canals carry through compact bone?",
-        "accept": [
-          "blood vessels and nerves",
-          "vessels",
-          "blood vessels"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-042",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Bone development",
-      "q": "Which process forms the flat bones of the skull?",
-      "options": [
-        "Endochondral ossification",
-        "Intramembranous ossification",
-        "Calcification of cartilage",
-        "Appositional growth"
-      ],
-      "answer": 1,
-      "explain": "Intramembranous ossification forms flat bones of the skull directly from mesenchyme.",
-      "verified": false,
-      "open": {
-        "q": "Which type of ossification forms the flat bones of the skull?",
-        "accept": [
-          "intramembranous",
-          "intramembranous ossification",
-          "membranous ossification"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-043",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Bone development",
-      "q": "Which process forms most long bones of the limbs?",
-      "options": [
-        "Intramembranous ossification",
-        "Endochondral ossification",
-        "Direct calcification of mesenchyme",
-        "Appositional ossification"
-      ],
-      "answer": 1,
-      "explain": "Long bones develop by endochondral ossification, replacing a hyaline cartilage model.",
-      "verified": false,
-      "open": {
-        "q": "Which type of ossification forms the long bones of the limbs?",
-        "accept": [
-          "endochondral",
-          "endochondral ossification",
-          "cartilaginous ossification"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-044",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Bone development",
-      "q": "A child has a disorder affecting the epiphyseal plates of long bones. Which process is most directly impaired?",
-      "options": [
-        "Longitudinal growth of the bone",
-        "Formation of the medullary cavity",
-        "Production of red marrow",
-        "Formation of the periosteum"
-      ],
-      "answer": 0,
-      "explain": "The epiphyseal plate is responsible for longitudinal growth; its damage stunts bone lengthening.",
-      "verified": false,
-      "open": {
-        "q": "Damage to the epiphyseal plate impairs which aspect of bone growth?",
-        "accept": [
-          "longitudinal growth",
-          "length growth",
-          "lengthening",
-          "growth in length"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-045",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Joints",
-      "q": "Which type of joint is the elbow joint?",
-      "options": [
-        "Fibrous joint",
-        "Cartilaginous joint",
-        "Synovial joint",
-        "Symphysis"
-      ],
-      "answer": 2,
-      "explain": "The elbow is a synovial hinge joint with a joint cavity and synovial membrane.",
-      "verified": false,
-      "open": {
-        "q": "What type of joint is the elbow?",
-        "accept": [
-          "synovial",
-          "synovial joint",
-          "hinge joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-046",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Joints",
-      "q": "Which type of joint is the shoulder joint?",
-      "options": [
-        "Ball and socket synovial joint",
-        "Hinge synovial joint",
-        "Pivot synovial joint",
-        "Saddle synovial joint"
-      ],
-      "answer": 0,
-      "explain": "The shoulder (glenohumeral) joint is a ball and socket synovial joint allowing wide movement.",
-      "verified": false,
-      "open": {
-        "q": "What type of synovial joint is the shoulder?",
-        "accept": [
-          "ball and socket",
-          "ball-and-socket",
-          "spheroidal"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-047",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Joints",
-      "q": "What is the main function of synovial fluid?",
-      "options": [
-        "Lubricating the joint and nourishing cartilage",
-        "Producing red blood cells",
-        "Anchoring muscle to bone",
-        "Forming the joint capsule"
-      ],
-      "answer": 0,
-      "explain": "Synovial fluid lubricates articular surfaces and supplies nutrients to avascular cartilage.",
-      "verified": false,
-      "open": {
-        "q": "What are the main functions of synovial fluid?",
-        "accept": [
-          "lubrication",
-          "lubricates joint",
-          "nourishes cartilage",
-          "lubrication and nutrition"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-048",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Joints",
-      "q": "Which type of joint is a suture of the skull?",
-      "options": [
-        "Fibrous joint",
-        "Synovial joint",
-        "Cartilaginous joint",
-        "Symphysis"
-      ],
-      "answer": 0,
-      "explain": "Sutures are fibrous joints where bones are united by dense connective tissue.",
-      "verified": false,
-      "open": {
-        "q": "What type of joint is a skull suture?",
-        "accept": [
-          "fibrous",
-          "fibrous joint",
-          "suture"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-049",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Joints",
-      "q": "Which type of joint is the intervertebral joint between vertebral bodies?",
-      "options": [
-        "Secondary cartilaginous joint (symphysis)",
-        "Primary cartilaginous joint",
-        "Fibrous joint",
-        "Synovial joint"
-      ],
-      "answer": 0,
-      "explain": "Intervertebral joints between bodies are secondary cartilaginous (symphyses) with fibrocartilage discs.",
-      "verified": false,
-      "open": {
-        "q": "What type of joint unites adjacent vertebral bodies?",
-        "accept": [
-          "symphysis",
-          "secondary cartilaginous",
-          "cartilaginous joint"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-050",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Joints",
-      "q": "A patient has osteoarthritis with loss of articular cartilage in the knee. Which tissue is primarily affected?",
-      "options": [
-        "Hyaline cartilage",
-        "Fibrocartilage",
-        "Elastic cartilage",
-        "Dense regular connective tissue"
-      ],
-      "answer": 0,
-      "explain": "Articular surfaces of synovial joints are covered by hyaline cartilage, which degenerates in osteoarthritis.",
-      "verified": false,
-      "open": {
-        "q": "Which type of cartilage covers the articular surfaces of synovial joints?",
-        "accept": [
-          "hyaline",
-          "hyaline cartilage",
-          "articular cartilage"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-051",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vertebral column",
-      "q": "How many cervical vertebrae are there in the adult vertebral column?",
-      "options": [
-        "5",
-        "7",
-        "12",
-        "5 fused"
-      ],
-      "answer": 1,
-      "explain": "There are 7 cervical vertebrae, named C1 to C7.",
-      "verified": false,
-      "open": {
-        "q": "How many cervical vertebrae are in the adult vertebral column?",
-        "accept": [
-          "7",
-          "seven"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-052",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vertebral column",
-      "q": "How many thoracic vertebrae are there?",
-      "options": [
-        "7",
-        "12",
-        "5",
-        "9"
-      ],
-      "answer": 1,
-      "explain": "There are 12 thoracic vertebrae, T1 to T12.",
-      "verified": false,
-      "open": {
-        "q": "How many thoracic vertebrae are there?",
-        "accept": [
-          "12",
-          "twelve"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-053",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vertebral column",
-      "q": "How many lumbar vertebrae are there?",
-      "options": [
-        "5",
-        "7",
-        "12",
-        "4"
-      ],
-      "answer": 0,
-      "explain": "There are 5 lumbar vertebrae, L1 to L5.",
-      "verified": false,
-      "open": {
-        "q": "How many lumbar vertebrae are there?",
-        "accept": [
-          "5",
-          "five"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-054",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "Which vertebrae are fused to form the sacrum in the adult?",
-      "options": [
-        "Five sacral vertebrae",
-        "Seven cervical vertebrae",
-        "Twelve thoracic vertebrae",
-        "Four coccygeal vertebrae"
-      ],
-      "answer": 0,
-      "explain": "Five sacral vertebrae fuse in the adult to form the sacrum.",
-      "verified": false,
-      "open": {
-        "q": "Which vertebrae fuse to form the sacrum?",
-        "accept": [
-          "sacral",
-          "five sacral",
-          "sacral vertebrae"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-055",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "Which vertebra is called the atlas and supports the skull?",
-      "options": [
-        "C1",
-        "C2",
-        "T1",
-        "L1"
-      ],
-      "answer": 0,
-      "explain": "C1 is the atlas; it lacks a body and articulates with the occipital condyles.",
-      "verified": false,
-      "open": {
-        "q": "Which vertebra is called the atlas?",
-        "accept": [
-          "C1",
-          "first cervical",
-          "first cervical vertebra"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-056",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "Which vertebra is called the axis and provides the pivot for head rotation?",
-      "options": [
-        "C1",
-        "C2",
-        "C7",
-        "T1"
-      ],
-      "answer": 1,
-      "explain": "C2 is the axis; its dens (odontoid process) forms a pivot around which the atlas rotates.",
-      "verified": false,
-      "open": {
-        "q": "Which vertebra is called the axis?",
-        "accept": [
-          "C2",
-          "second cervical",
-          "second cervical vertebra"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-057",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "What is the name of the upward projection of the axis that acts as a pivot?",
-      "options": [
-        "Dens (odontoid process)",
-        "Spinous process",
-        "Transverse process",
-        "Lamina"
-      ],
-      "answer": 0,
-      "explain": "The dens (odontoid process) of C2 projects upward and articulates with the anterior arch of C1.",
-      "verified": false,
-      "open": {
-        "q": "What is the name of the pivot projection of the axis?",
-        "accept": [
-          "dens",
-          "odontoid process",
-          "odontoid"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-058",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "What is the main function of the intervertebral discs?",
-      "options": [
-        "Shock absorption and flexibility",
-        "Producing red blood cells",
-        "Anchoring muscles to bone",
-        "Forming the spinal cord canal"
-      ],
-      "answer": 0,
-      "explain": "Intervertebral discs absorb shock and allow movement between vertebrae.",
-      "verified": false,
-      "open": {
-        "q": "What is the main function of intervertebral discs?",
-        "accept": [
-          "shock absorption",
-          "cushioning",
-          "flexibility",
-          "shock absorption and flexibility"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-059",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "Which part of an intervertebral disc is the outer ring of fibrocartilage?",
-      "options": [
-        "Annulus fibrosus",
-        "Nucleus pulposus",
-        "Ligamentum flavum",
-        "Supraspinous ligament"
-      ],
-      "answer": 0,
-      "explain": "The annulus fibrosus is the outer fibrocartilage ring surrounding the nucleus pulposus.",
-      "verified": false,
-      "open": {
-        "q": "What is the outer fibrocartilage ring of an intervertebral disc called?",
-        "accept": [
-          "annulus fibrosus",
-          "annulus"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-060",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Vertebral column",
-      "q": "A patient has a herniated intervertebral disc with the nucleus pulposus pressing on a spinal nerve. What is the central part of the disc called?",
-      "options": [
-        "Nucleus pulposus",
-        "Annulus fibrosus",
-        "Ligamentum flavum",
-        "Dura mater"
-      ],
-      "answer": 0,
-      "explain": "The nucleus pulposus is the central gelatinous core of the disc; herniation compresses nearby nerve roots.",
-      "verified": false,
-      "open": {
-        "q": "What is the central gelatinous part of an intervertebral disc called?",
-        "accept": [
-          "nucleus pulposus",
-          "nucleus"
-        ]
-      }
-    },
-    {
-      "id": "GABJ-061",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Vertebral column",
-      "q": "During a practical examination, a student identifies the short bony bridges connecting the body of a vertebra to its posterior arch. Which structures are being examined?",
-      "options": [
-        "Laminae",
-        "Pedicles",
-        "Spinous processes",
-        "Articular facets"
-      ],
-      "answer": 1,
-      "explain": "The paired pedicles project posteriorly from the vertebral body and connect it to the vertebral arch. The laminae extend from the pedicles toward the midline to complete the posterior part of the arch.",
-      "open": {
-        "q": "Which paired parts of a vertebra connect its body to the vertebral arch?",
-        "accept": [
-          "pedicles",
-          "the pedicles"
-        ]
-      },
-      "verified": false
-    },
-    {
-      "id": "GABJ-062",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "A radiograph shows a vertebra with small openings in its transverse processes. Which vertebral region does this finding most strongly indicate?",
-      "options": [
-        "Thoracic",
-        "Lumbar",
-        "Cervical",
-        "Sacral"
-      ],
-      "answer": 2,
-      "explain": "Transverse foramina are characteristic of cervical vertebrae. They transmit the vertebral vessels in the typical arrangement, although the vertebral artery usually enters the foramina at C6 and anatomical variations occur.",
-      "open": {
-        "q": "Which region of the vertebral column is identified by transverse foramina in its vertebrae?",
-        "accept": [
-          "cervical region",
-          "cervical vertebrae",
-          "cervical"
-        ]
-      },
-      "verified": false
-    },
-    {
-      "id": "GABJ-063",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Vertebral column",
-      "q": "A vertebra has a heart-shaped body, a relatively circular vertebral foramen and facets for articulation with ribs. Which region is it from?",
-      "options": [
-        "Cervical",
-        "Thoracic",
-        "Lumbar",
-        "Coccygeal"
-      ],
-      "answer": 1,
-      "explain": "Typical thoracic vertebrae have heart-shaped bodies, relatively circular vertebral foramina and costal facets for articulation with the heads and/or tubercles of ribs.",
-      "open": {
-        "q": "Which vertebral region typically has heart-shaped bodies and costal facets for rib articulation?",
-        "accept": [
-          "thoracic vertebrae",
-          "thoracic region",
-          "thoracic"
-        ]
-      },
-      "verified": false
-    }
-  ]
+ "topic": "ga-bones-and-joints",
+ "questions": [
+  {
+   "id": "GABJ-01",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "A bone of the upper limb consists of a tubular shaft and two expanded ends that articulate with adjacent bones. Which structural class of bone is this?",
+   "options": [
+    "Long bone",
+    "Short bone",
+    "Flat bone",
+    "Irregular bone"
+   ],
+   "answer": 0,
+   "explain": "Long bones have an elongated shaft (diaphysis) and two ends (epiphyses), typically found in the limbs such as the humerus and femur. Short bones are roughly cube-shaped, as seen in the carpus and tarsus.",
+   "open": {
+    "q": "A limb bone has a tubular shaft and expanded ends that articulate with neighboring bones. What morphological class of bone is this?",
+    "accept": [
+     "long bone",
+     "long bones"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-02",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "The carpal bones of the wrist and tarsal bones of the ankle are placed in which morphological category of bones?",
+   "options": [
+    "Pneumatic bones",
+    "Short bones",
+    "Sesamoid bones",
+    "Flat bones"
+   ],
+   "answer": 1,
+   "explain": "Short bones are roughly cuboidal or polyhedral in shape and composed mainly of spongy bone covered by a thin layer of compact bone, exemplified by carpal and tarsal bones. Sesamoid bones develop inside tendons.",
+   "open": {
+    "q": "Into which morphological bone category do the carpal and tarsal bones fall?",
+    "accept": [
+     "short bone",
+     "short bones"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-03",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "Which type of bone develops within a tendon where it passes over a bony prominence or joint?",
+   "options": [
+    "Flat bone",
+    "Pneumatic bone",
+    "Sesamoid bone",
+    "Short bone"
+   ],
+   "answer": 2,
+   "explain": "Sesamoid bones form inside tendons subjected to friction and compression, such as the patella in the quadriceps tendon, helping reduce friction and alter the line of pull. Pneumatic bones contain air-filled spaces.",
+   "open": {
+    "q": "What type of bone forms within a tendon passing over a joint or bony surface?",
+    "accept": [
+     "sesamoid bone",
+     "sesamoid bones",
+     "sesamoid"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-04",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "Which bones of the skull contain air-filled cavities lined by mucoperiosteum that lighten the skull and add resonance to the voice?",
+   "options": [
+    "Sesamoid bones",
+    "Short bones",
+    "Irregular bones",
+    "Pneumatic bones"
+   ],
+   "answer": 3,
+   "explain": "Pneumatic bones, such as the maxilla, sphenoid, ethmoid, and temporal (mastoid air cells), contain air spaces communicating with the nasal cavity or middle ear. These spaces reduce skull weight and serve as resonant chambers.",
+   "open": {
+    "q": "Which class of bones contains air-filled cavities that lighten the skull and contribute to voice resonance?",
+    "accept": [
+     "pneumatic bone",
+     "pneumatic bones",
+     "pneumatic"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-05",
+   "level": 1,
+   "sub": "Gross structure of a long bone",
+   "q": "What is the elongated tubular shaft of a growing long bone called?",
+   "options": [
+    "Diaphysis",
+    "Epiphysis",
+    "Metaphysis",
+    "Epiphyseal plate"
+   ],
+   "answer": 0,
+   "explain": "The diaphysis is the shaft of a long bone, consisting of a thick collar of compact bone surrounding a medullary cavity. The epiphyses are the ends of the bone.",
+   "open": {
+    "q": "What is the shaft of a long bone called?",
+    "accept": [
+     "diaphysis",
+     "the diaphysis"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-06",
+   "level": 2,
+   "sub": "Gross structure of a long bone",
+   "q": "Why does longitudinal growth of a long bone stop after adolescence when the epiphyseal plate is replaced by bone?",
+   "options": [
+    "Periosteal osteogenesis ceases completely",
+    "Hyaline cartilage proliferation at the growth plate is no longer occurring",
+    "The medullary cavity fills with compact bone",
+    "Articular cartilage converts into red marrow"
+   ],
+   "answer": 1,
+   "explain": "Longitudinal growth of long bones depends on chondrocyte proliferation and endochondral ossification within the epiphyseal growth plate. Once ossification fuses the diaphysis and epiphysis (forming the epiphyseal line), lengthwise growth ends.",
+   "open": {
+    "q": "Why does lengthwise growth of a long bone cease after fusion of the epiphyseal plate?",
+    "accept": [
+     "cartilage proliferation at the growth plate stops",
+     "growth plate cartilage is replaced by bone",
+     "no cartilage remains at the epiphyseal plate to proliferate",
+     "endochondral growth at the epiphyseal plate ends"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-07",
+   "level": 1,
+   "sub": "Periosteum and endosteum",
+   "q": "Why is the periosteum tightly anchored to the underlying bone at sites of muscle and tendon attachment?",
+   "options": [
+    "Synovial villi penetrate the cortical bone",
+    "Articular cartilage blends directly into the outer fibrous layer",
+    "Collagenous Sharpey fibers pass from periosteum into bone",
+    "Nutrient arteries pull the periosteum inward"
+   ],
+   "answer": 2,
+   "explain": "Perforating (Sharpey) fibers are bundles of collagen fibers extending from the periosteum into the outer lamellae of bone, anchoring the periosteum firmly and transmitting tension from tendons and muscles.",
+   "open": {
+    "q": "Which fibers anchor the periosteum firmly to the underlying bone matrix?",
+    "accept": [
+     "sharpey fibers",
+     "sharpeys fibers",
+     "sharpey's fibers",
+     "perforating fibers"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-08",
+   "level": 1,
+   "sub": "Periosteum and endosteum",
+   "q": "Which thin cellular membrane lines the medullary cavity and trabeculae of spongy bone?",
+   "options": [
+    "Periosteum",
+    "Perichondrium",
+    "Synovial membrane",
+    "Endosteum"
+   ],
+   "answer": 3,
+   "explain": "Endosteum is a delicate connective tissue layer containing osteogenic cells that lines the medullary cavity and surfaces of spongy bone trabeculae. Periosteum covers the external surface of bone except at articular surfaces.",
+   "open": {
+    "q": "Which membrane lines the medullary cavity and spongy bone trabeculae?",
+    "accept": [
+     "endosteum",
+     "the endosteum"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-09",
+   "level": 2,
+   "sub": "Bone development and growth",
+   "q": "How do the flat bones of the vault of the skull primarily form during development?",
+   "options": [
+    "Intramembranous ossification",
+    "Endochondral ossification",
+    "Secondary epiphyseal ossification",
+    "Metaplasia of synovial tissue"
+   ],
+   "answer": 0,
+   "explain": "Flat bones of the cranial vault (calvaria), most facial bones, and part of the clavicle develop via intramembranous ossification directly from mesenchymal condensations without a cartilage model. Most long and axial bones form by endochondral ossification.",
+   "open": {
+    "q": "By which ossification process do the flat bones of the cranial vault mainly form?",
+    "accept": [
+     "intramembranous ossification",
+     "intramembranous"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-10",
+   "level": 1,
+   "sub": "Bone development and growth",
+   "q": "In endochondral ossification, what replaces the initial hyaline cartilage model as bone forms?",
+   "options": [
+    "Elastic cartilage",
+    "Bone tissue",
+    "Fibrocartilage",
+    "Dense regular connective tissue"
+   ],
+   "answer": 1,
+   "explain": "In endochondral ossification, a hyaline cartilage template serves as a scaffold that is eroded and progressively replaced by bone tissue. It is the main mechanism for forming long bones and weight-bearing bones of the axial skeleton.",
+   "open": {
+    "q": "What tissue replaces the hyaline cartilage model during endochondral ossification?",
+    "accept": [
+     "bone",
+     "bone tissue",
+     "osseous tissue"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-11",
+   "level": 2,
+   "sub": "Blood supply of bone",
+   "q": "A displaced mid-shaft fracture of a long bone disrupts the nutrient artery entering the diaphysis. Which part of the bone's blood supply is directly interrupted?",
+   "options": [
+    "Periosteal arteries",
+    "Metaphyseal arteries",
+    "Medullary blood supply to the inner cortex and marrow",
+    "Epiphyseal arteries"
+   ],
+   "answer": 2,
+   "explain": "The nutrient artery enters through the nutrient foramen and branches within the medullary cavity to supply the marrow and inner two-thirds of the compact cortex. Periosteal vessels mainly supply the outer cortex.",
+   "open": {
+    "q": "Disruption of the nutrient artery of a long bone directly compromises blood flow to which structures?",
+    "accept": [
+     "marrow and inner cortex",
+     "medullary cavity and inner compact bone",
+     "bone marrow and inner cortex",
+     "medullary supply"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-12",
+   "level": 3,
+   "sub": "Blood supply of bone",
+   "q": "A patient sustains a displaced fracture of the femoral neck and later develops collapse of the femoral head due to interrupted blood supply. Which pathological process explains this complication?",
+   "options": [
+    "Osteomalacia",
+    "Achondroplasia",
+    "Osteomyelitis",
+    "Avascular necrosis"
+   ],
+   "answer": 3,
+   "explain": "Avascular necrosis (osteonecrosis) occurs when bone tissue loses its blood supply, leading to osteocyte death, structural weakening, and subchondral collapse. Because retinacular arteries supplying the femoral head can be torn in femoral neck fractures, it is a classic complication.",
+   "open": {
+    "q": "What complication occurs when a displaced fracture interrupts blood supply to the femoral head and causes bone death?",
+    "accept": [
+     "avascular necrosis",
+     "osteonecrosis",
+     "avascular necrosis of the femoral head"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-13",
+   "level": 1,
+   "sub": "Classification of joints",
+   "q": "Which major structural joint class unites bones using dense fibrous connective tissue with no joint cavity?",
+   "options": [
+    "Fibrous joint",
+    "Cartilaginous joint",
+    "Synovial joint",
+    "Gomphosis-free joint"
+   ],
+   "answer": 0,
+   "explain": "Fibrous joints join articulating bones directly by dense fibrous connective tissue and lack a synovial cavity, permitting little or no movement. Examples include cranial sutures, syndesmoses, and gomphoses.",
+   "open": {
+    "q": "Which structural class of joints connects bones via dense fibrous connective tissue without a joint cavity?",
+    "accept": [
+     "fibrous joint",
+     "fibrous joints",
+     "fibrous"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-14",
+   "level": 1,
+   "sub": "Classification of joints",
+   "q": "Sutures between the flat bones of the skull and the peg-and-socket attachment of a tooth in its alveolar socket are examples of which joint class?",
+   "options": [
+    "Synovial joints",
+    "Fibrous joints",
+    "Secondary cartilaginous joints",
+    "Plane joints"
+   ],
+   "answer": 1,
+   "explain": "Both cranial sutures and gomphoses (dentoalveolar joints) are fibrous joints uniting bones/structures via fibrous tissue without a joint cavity. Sutures allow skull growth in infancy and later ossify into synostoses.",
+   "open": {
+    "q": "To which joint class do cranial sutures and tooth-in-socket gomphoses belong?",
+    "accept": [
+     "fibrous joints",
+     "fibrous joint",
+     "fibrous"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-15",
+   "level": 1,
+   "sub": "Classification of joints",
+   "q": "Which type of cartilaginous joint unites bones strictly by hyaline cartilage, such as the epiphyseal plate or first sternocostal joint?",
+   "options": [
+    "Symphysis",
+    "Secondary cartilaginous joint",
+    "Primary cartilaginous joint (synchondrosis)",
+    "Syndesmosis"
+   ],
+   "answer": 2,
+   "explain": "A primary cartilaginous joint (synchondrosis) consists of hyaline cartilage uniting bones and is typically temporary (like the epiphyseal plate) or permits minimal movement. Secondary cartilaginous joints (symphyses) contain a fibrocartilage pad.",
+   "open": {
+    "q": "What is a cartilaginous joint in which bones are joined solely by hyaline cartilage called?",
+    "accept": [
+     "primary cartilaginous joint",
+     "synchondrosis",
+     "primary cartilaginous"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-16",
+   "level": 1,
+   "sub": "Classification of joints",
+   "q": "The intervertebral discs and the pubic symphysis are classic examples of which type of joint?",
+   "options": [
+    "Fibrous syndesmosis",
+    "Primary cartilaginous joint",
+    "Pivot synovial joint",
+    "Secondary cartilaginous joint (symphysis)"
+   ],
+   "answer": 3,
+   "explain": "Secondary cartilaginous joints (symphyses) feature hyaline cartilage covering the ends of the bones joined by a compressible fibrocartilage disc or pad, providing strength and shock absorption along the midline. Examples include the pubic symphysis and intervertebral discs.",
+   "open": {
+    "q": "What type of joint is represented by the pubic symphysis and intervertebral discs?",
+    "accept": [
+     "secondary cartilaginous joint",
+     "symphysis",
+     "secondary cartilaginous"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-17",
+   "level": 1,
+   "sub": "Features of synovial joints",
+   "q": "Which type of cartilage covers the articulating bone surfaces inside a typical synovial joint?",
+   "options": [
+    "Hyaline cartilage",
+    "Elastic cartilage",
+    "Fibrocartilage",
+    "Calcified periosteum"
+   ],
+   "answer": 0,
+   "explain": "Articular surfaces of synovial joints are coated with smooth, low-friction hyaline cartilage (articular cartilage) that lacks a perichondrium. Fibrocartilage forms intra-articular discs or menisci in select joints.",
+   "open": {
+    "q": "What type of cartilage covers the articulating surfaces of bones in a typical synovial joint?",
+    "accept": [
+     "hyaline cartilage",
+     "articular hyaline cartilage",
+     "hyaline"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-18",
+   "level": 2,
+   "sub": "Features of synovial joints",
+   "q": "How does synovial fluid secreted by the synovial membrane assist movement inside a synovial joint?",
+   "options": [
+    "Ossifies the joint capsule",
+    "Lubricates surfaces and nourishes avascular cartilage",
+    "Anchors collateral ligaments",
+    "Produces muscle contraction"
+   ],
+   "answer": 1,
+   "explain": "Synovial fluid reduces friction between articular surfaces through lubrication and supplies nutrients and metabolic exchange to the avascular articular cartilage. It is enclosed within the joint cavity bounded by the synovial membrane and fibrous capsule.",
+   "open": {
+    "q": "What are the two main functions of synovial fluid within a synovial joint cavity?",
+    "accept": [
+     "lubrication and nourishment of articular cartilage",
+     "lubricating the joint and nourishing cartilage",
+     "lubrication and nutrition of cartilage",
+     "reduces friction and nourishes articular cartilage"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-19",
+   "level": 1,
+   "sub": "Types of synovial joints",
+   "q": "The elbow (humeroulnar joint) and interphalangeal joints permit flexion and extension around a single transverse axis and belong to which synovial subtype?",
+   "options": [
+    "Pivot joint",
+    "Saddle joint",
+    "Hinge joint",
+    "Ball-and-socket joint"
+   ],
+   "answer": 2,
+   "explain": "Hinge (ginglymus) joints are uniaxial synovial joints allowing flexion and extension around a transverse axis, such as the humeroulnar and interphalangeal joints. Pivot joints allow rotation around a longitudinal axis.",
+   "open": {
+    "q": "Which subtype of synovial joint allows flexion and extension around a single axis, as seen at the humeroulnar joint?",
+    "accept": [
+     "hinge joint",
+     "hinge",
+     "ginglymus"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-20",
+   "level": 1,
+   "sub": "Types of synovial joints",
+   "q": "The atlantoaxial joint where the dens of the axis rotates within a ring formed by the anterior arch and transverse ligament of the atlas is which type of joint?",
+   "options": [
+    "Ellipsoid joint",
+    "Condylar joint",
+    "Plane joint",
+    "Pivot joint"
+   ],
+   "answer": 3,
+   "explain": "A pivot (trochoid) joint is a uniaxial joint in which a rounded or pointed bony process rotates within a ring of bone and ligament, permitting rotation around a longitudinal axis. The median atlantoaxial joint and proximal radioulnar joint are classic examples.",
+   "open": {
+    "q": "Which type of synovial joint is formed where the dens of the axis pivots within the ring of the atlas?",
+    "accept": [
+     "pivot joint",
+     "pivot",
+     "trochoid joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-21",
+   "level": 1,
+   "sub": "Types of synovial joints",
+   "q": "Which subtype of synovial joint has reciprocally concave and convex surfaces shaped like a saddle, such as the first carpometacarpal joint of the thumb?",
+   "options": [
+    "Saddle joint",
+    "Plane joint",
+    "Hinge joint",
+    "Pivot joint"
+   ],
+   "answer": 0,
+   "explain": "A saddle (sellar) joint has articular surfaces that are concave in one direction and convex in the perpendicular direction, permitting biaxial movement plus some conjunct rotation. The thumb carpometacarpal joint is the prime example in humans.",
+   "open": {
+    "q": "Which synovial joint subtype has saddle-shaped reciprocal surfaces, exemplified by the first carpometacarpal joint?",
+    "accept": [
+     "saddle joint",
+     "saddle",
+     "sellar joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-22",
+   "level": 2,
+   "sub": "Types of synovial joints",
+   "q": "Why does the ball-and-socket (spheroidal) joint allow movement in multiple planes and around multiple axes?",
+   "options": [
+    "Its articular surfaces are flat gliding facets",
+    "A spherical head moves within a cup-like socket around three axes",
+    "A fibrocartilage disc locks two axes of motion",
+    "It is reinforced only by a single transverse ligament"
+   ],
+   "answer": 1,
+   "explain": "Ball-and-socket joints (such as the shoulder and hip) have a rounded head fitting into a concave socket, permitting flexion/extension, abduction/adduction, medial/lateral rotation, and circumduction. The shoulder sacrifices bony stability for mobility, whereas the hip has a deeper acetabular socket.",
+   "open": {
+    "q": "What structural arrangement allows a ball-and-socket joint to move around multiple axes?",
+    "accept": [
+     "a spherical head fitting into a concave socket",
+     "rounded head in a cup-shaped socket",
+     "spherical head within a socket",
+     "ball-like head inside a socket"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-23",
+   "level": 1,
+   "sub": "Types of synovial joints",
+   "q": "At which synovial joint subtype do relatively flat articular surfaces slide or glide against one another, as between intercarpal bones?",
+   "options": [
+    "Saddle joint",
+    "Pivot joint",
+    "Plane joint",
+    "Ball-and-socket joint"
+   ],
+   "answer": 2,
+   "explain": "Plane (gliding) joints have nearly flat articular surfaces that permit sliding or gliding movements limited by the joint capsule and ligaments. Examples include intercarpal, intertarsal, and acromioclavicular joints.",
+   "open": {
+    "q": "Which synovial joint subtype features flat surfaces that permit gliding movements, such as between intercarpal bones?",
+    "accept": [
+     "plane joint",
+     "plane",
+     "gliding joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-24",
+   "level": 1,
+   "sub": "Types of synovial joints",
+   "q": "The radiocarpal (wrist) joint, where an oval convex proximal surface articulates with a concave socket, is classified as which type of synovial joint?",
+   "options": [
+    "Pivot joint",
+    "Saddle joint",
+    "Plane joint",
+    "Ellipsoid joint"
+   ],
+   "answer": 3,
+   "explain": "An ellipsoid (condyloid) joint has an oval convex surface fitting into an elliptical concave socket, permitting flexion/extension and abduction/adduction as well as circumduction, but no axial rotation. The wrist (radiocarpal) and metacarpophalangeal joints are examples.",
+   "open": {
+    "q": "Which biaxial synovial joint subtype is exemplified by the radiocarpal (wrist) joint?",
+    "accept": [
+     "ellipsoid joint",
+     "ellipsoid",
+     "condyloid joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-25",
+   "level": 2,
+   "sub": "Joint stability and innervation",
+   "q": "According to Hilton law, what is the innervation relationship of a joint?",
+   "options": [
+    "Nerves to muscles acting across a joint also supply the joint and overlying skin",
+    "All joints receive vagal parasympathetic fibres",
+    "Articular cartilage has dense pain innervation",
+    "Joint capsules receive only dorsal-root fibres"
+   ],
+   "answer": 0,
+   "explain": "Hilton law states that nerves innervating muscles crossing a joint also supply sensory branches to the joint capsule and often to the skin overlying the joint's insertions. This helps coordinate protective muscle reflexes and explains referred pain patterns.",
+   "open": {
+    "q": "What does Hilton law state about the nerve supply of a joint?",
+    "accept": [
+     "nerves supplying muscles moving a joint also supply the joint capsule and overlying skin",
+     "muscles crossing a joint share innervation with its capsule and overlying skin",
+     "nerves to muscles acting on a joint also innervate the joint capsule",
+     "joint capsule shares innervation with muscles crossing the joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-26",
+   "level": 3,
+   "sub": "Joint stability and innervation",
+   "q": "Why does a patient with osteoarthritis or inflammation of the hip joint sometimes report pain referred to the medial side of the knee?",
+   "options": [
+    "The knee compresses the femoral artery",
+    "Shared sensory supply, including the obturator nerve, can refer pain to the knee",
+    "Synovial fluid drains into the knee bursa",
+    "The patella shares the acetabular blood supply"
+   ],
+   "answer": 1,
+   "explain": "Nerves such as the obturator nerve supply branches to the hip joint and cutaneous or articular branches toward the medial thigh and knee region. Central convergence of sensory pathways can cause hip pathology to be perceived as knee pain.",
+   "open": {
+    "q": "Why can hip joint pathology produce referred pain felt around the medial knee?",
+    "accept": [
+     "shared sensory innervation such as the obturator nerve",
+     "common nerve supply and central sensory convergence",
+     "branches of nerves like the obturator nerve supply both regions",
+     "overlapping sensory nerve pathways"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-27",
+   "level": 1,
+   "sub": "Joint stability and innervation",
+   "q": "Which component of a synovial joint primarily limits excessive movement and reinforces the joint capsule externally?",
+   "options": [
+    "Synovial membrane",
+    "Articular disc",
+    "Ligaments",
+    "Epiphyseal line"
+   ],
+   "answer": 2,
+   "explain": "Ligaments are bands of dense regular connective tissue that bind articulating bones together, reinforce the fibrous capsule, and restrain excessive or abnormal joint motion. Articular discs/menisci improve congruency and shock absorption.",
+   "open": {
+    "q": "Which fibrous structures connect articulating bones and limit excessive joint movement?",
+    "accept": [
+     "ligaments",
+     "ligament"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-28",
+   "level": 1,
+   "sub": "Bursae and tendon sheaths",
+   "q": "What is a bursa located near a joint or bony prominence?",
+   "options": [
+    "A fibrocartilaginous plate between vertebrae",
+    "A fibrous partition between muscle compartments",
+    "A peripheral nerve plexus",
+    "A synovial-lined sac that reduces friction"
+   ],
+   "answer": 3,
+   "explain": "A bursa is a small closed sac containing lubricating fluid that reduces friction where tendons, muscles, or skin glide over bony prominences or joints. Examples include the subacromial and prepatellar bursae.",
+   "open": {
+    "q": "What is a bursa in musculoskeletal anatomy?",
+    "accept": [
+     "a fluid-filled sac that reduces friction around joints or tendons",
+     "synovial-lined sac reducing friction",
+     "lubricating fluid sac reducing friction",
+     "fluid sac that decreases friction"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-29",
+   "level": 2,
+   "sub": "Bursae and tendon sheaths",
+   "q": "How does a synovial tendon sheath differ functionally from a simple bursa?",
+   "options": [
+    "Surrounds tendons as they pass through fibrous or osseous tunnels",
+    "Fuses tendons to periosteum to prevent movement",
+    "Contains red marrow",
+    "Occurs only around cranial sutures"
+   ],
+   "answer": 0,
+   "explain": "A synovial tendon sheath is an elongated tubular sac that wraps around a tendon, especially inside narrow fibrous or osseofibrous tunnels like the carpal tunnel or digital sheaths, allowing smooth gliding. Bursae are typically flattened sacs between adjacent moving structures.",
+   "open": {
+    "q": "How is a synovial tendon sheath arranged relative to a tendon passing through a tunnel?",
+    "accept": [
+     "it wraps around a tendon to allow smooth gliding",
+     "it encloses or wraps around a tendon",
+     "tubular sac wrapping around a tendon",
+     "surrounds a tendon in a tunnel to reduce friction"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-30",
+   "level": 2,
+   "sub": "Joint stability and innervation",
+   "q": "Why does the shoulder (glenohumeral) joint have a wider range of motion but lower inherent bony stability than the hip joint?",
+   "options": [
+    "The glenoid cavity is shallow compared with the deep acetabulum",
+    "The shoulder joint is a primary cartilaginous joint",
+    "The hip joint lacks a fibrous capsule",
+    "The shoulder contains a thick fibrocartilage labrum that locks the humerus"
+   ],
+   "answer": 0,
+   "explain": "The shallow glenoid cavity of the scapula provides minimal bony containment of the humeral head, allowing wide mobility while relying heavily on the rotator cuff muscles, glenoid labrum, and ligaments for stability. By contrast, the deep acetabulum closely encompasses the femoral head.",
+   "open": {
+    "q": "Why does the shoulder joint have greater mobility but less bony stability than the hip joint?",
+    "accept": [
+     "the glenoid cavity is shallow compared with the deep acetabulum",
+     "shallow glenoid fossa and minimal bony socket depth",
+     "shallow glenoid cavity",
+     "less bony socket coverage than the hip"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-031",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "Which type of bone is the patella?",
+   "options": [
+    "Sesamoid bone",
+    "Long bone",
+    "Flat bone",
+    "Irregular bone"
+   ],
+   "answer": 0,
+   "explain": "The patella is a sesamoid bone that develops within the tendon of quadriceps femoris.",
+   "verified": false,
+   "open": {
+    "q": "What type of bone is the patella?",
+    "accept": [
+     "sesamoid",
+     "sesamoid bone"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-032",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "Which type of bone is the sternum?",
+   "options": [
+    "Long bone",
+    "Flat bone",
+    "Short bone",
+    "Irregular bone"
+   ],
+   "answer": 1,
+   "explain": "The sternum is a flat bone with two compact tables enclosing spongy bone.",
+   "verified": false,
+   "open": {
+    "q": "What type of bone is the sternum?",
+    "accept": [
+     "flat",
+     "flat bone"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-033",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Classification of bones",
+   "q": "Which type of bone is a vertebra?",
+   "options": [
+    "Flat bone",
+    "Long bone",
+    "Short bone",
+    "Irregular bone"
+   ],
+   "answer": 3,
+   "explain": "Vertebrae have a complex, irregular shape and are classed as irregular bones.",
+   "verified": false,
+   "open": {
+    "q": "What type of bone is a vertebra?",
+    "accept": [
+     "irregular",
+     "irregular bone"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-034",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Structure of a long bone",
+   "q": "What is the shaft of a long bone called?",
+   "options": [
+    "Epiphysis",
+    "Diaphysis",
+    "Metaphysis",
+    "Apophysis"
+   ],
+   "answer": 1,
+   "explain": "The diaphysis is the tubular shaft, with a medullary cavity containing marrow.",
+   "verified": false,
+   "open": {
+    "q": "What is the shaft of a long bone called?",
+    "accept": [
+     "diaphysis",
+     "shaft"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-035",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Structure of a long bone",
+   "q": "In a growing child, which region contains the epiphyseal (growth) plate?",
+   "options": [
+    "Metaphysis",
+    "Diaphysis",
+    "Apophysis",
+    "Periosteum"
+   ],
+   "answer": 0,
+   "explain": "The epiphyseal plate lies at the metaphysis between epiphysis and diaphysis.",
+   "verified": false,
+   "open": {
+    "q": "In which region of a growing long bone is the epiphyseal plate located?",
+    "accept": [
+     "metaphysis",
+     "growth plate"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-036",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of a long bone",
+   "q": "What is the fibrous membrane covering the outer surface of bone called?",
+   "options": [
+    "Endosteum",
+    "Periosteum",
+    "Perichondrium",
+    "Pericranium"
+   ],
+   "answer": 1,
+   "explain": "The periosteum covers bone except at articular surfaces and is important for growth and repair.",
+   "verified": false,
+   "open": {
+    "q": "What is the membrane covering the outer surface of bone called?",
+    "accept": [
+     "periosteum",
+     "periosteal membrane"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-037",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Structure of a long bone",
+   "q": "What is the inner lining of the medullary cavity called?",
+   "options": [
+    "Periosteum",
+    "Endosteum",
+    "Perichondrium",
+    "Synovium"
+   ],
+   "answer": 1,
+   "explain": "The endosteum lines the medullary cavity and contains osteoprogenitor cells.",
+   "verified": false,
+   "open": {
+    "q": "What is the membrane lining the medullary cavity of bone called?",
+    "accept": [
+     "endosteum",
+     "endosteal lining"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-038",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Bone tissue",
+   "q": "Which cell type is responsible for bone resorption?",
+   "options": [
+    "Osteoblast",
+    "Osteoclast",
+    "Osteocyte",
+    "Osteoprogenitor cell"
+   ],
+   "answer": 1,
+   "explain": "Osteoclasts are multinucleated cells that resorb bone by secreting acid and enzymes.",
+   "verified": false,
+   "open": {
+    "q": "Which cell type resorbs bone?",
+    "accept": [
+     "osteoclast",
+     "osteoclasts"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-039",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Bone tissue",
+   "q": "Which cell type forms new bone matrix?",
+   "options": [
+    "Osteoclast",
+    "Osteocyte",
+    "Osteoblast",
+    "Chondrocyte"
+   ],
+   "answer": 2,
+   "explain": "Osteoblasts synthesize and secrete the organic matrix (osteoid) that later mineralizes.",
+   "verified": false,
+   "open": {
+    "q": "Which cell type synthesizes new bone matrix?",
+    "accept": [
+     "osteoblast",
+     "osteoblasts"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-040",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Bone tissue",
+   "q": "Which type of bone has a characteristic lamellar arrangement with Haversian systems?",
+   "options": [
+    "Woven bone",
+    "Compact bone",
+    "Fibrous bone",
+    "Cancellous bone only"
+   ],
+   "answer": 1,
+   "explain": "Compact bone is organized into osteons (Haversian systems) with concentric lamellae around central canals.",
+   "verified": false,
+   "open": {
+    "q": "Which type of bone is organized into osteons with concentric lamellae?",
+    "accept": [
+     "compact bone",
+     "compact",
+     "cortical bone"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-041",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Bone tissue",
+   "q": "What is the function of the Haversian canal?",
+   "options": [
+    "Transmitting forces across joints",
+    "Carrying blood vessels and nerves",
+    "Storing yellow marrow",
+    "Producing synovial fluid"
+   ],
+   "answer": 1,
+   "explain": "Haversian canals contain blood vessels and nerves that supply osteocytes in the osteon.",
+   "verified": false,
+   "open": {
+    "q": "What do Haversian canals carry through compact bone?",
+    "accept": [
+     "blood vessels and nerves",
+     "vessels",
+     "blood vessels"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-042",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Bone development",
+   "q": "Which process forms the flat bones of the skull?",
+   "options": [
+    "Endochondral ossification",
+    "Intramembranous ossification",
+    "Calcification of cartilage",
+    "Appositional growth"
+   ],
+   "answer": 1,
+   "explain": "Intramembranous ossification forms flat bones of the skull directly from mesenchyme.",
+   "verified": false,
+   "open": {
+    "q": "Which type of ossification forms the flat bones of the skull?",
+    "accept": [
+     "intramembranous",
+     "intramembranous ossification",
+     "membranous ossification"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-043",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Bone development",
+   "q": "Which process forms most long bones of the limbs?",
+   "options": [
+    "Intramembranous ossification",
+    "Endochondral ossification",
+    "Direct calcification of mesenchyme",
+    "Appositional ossification"
+   ],
+   "answer": 1,
+   "explain": "Long bones develop by endochondral ossification, replacing a hyaline cartilage model.",
+   "verified": false,
+   "open": {
+    "q": "Which type of ossification forms the long bones of the limbs?",
+    "accept": [
+     "endochondral",
+     "endochondral ossification",
+     "cartilaginous ossification"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-044",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Bone development",
+   "q": "A child has a disorder affecting the epiphyseal plates of long bones. Which process is most directly impaired?",
+   "options": [
+    "Longitudinal growth of the bone",
+    "Formation of the medullary cavity",
+    "Production of red marrow",
+    "Formation of the periosteum"
+   ],
+   "answer": 0,
+   "explain": "The epiphyseal plate is responsible for longitudinal growth; its damage stunts bone lengthening.",
+   "verified": false,
+   "open": {
+    "q": "Damage to the epiphyseal plate impairs which aspect of bone growth?",
+    "accept": [
+     "longitudinal growth",
+     "length growth",
+     "lengthening",
+     "growth in length"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-045",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Joints",
+   "q": "Which type of joint is the elbow joint?",
+   "options": [
+    "Fibrous joint",
+    "Cartilaginous joint",
+    "Synovial joint",
+    "Symphysis"
+   ],
+   "answer": 2,
+   "explain": "The elbow is a synovial hinge joint with a joint cavity and synovial membrane.",
+   "verified": false,
+   "open": {
+    "q": "What type of joint is the elbow?",
+    "accept": [
+     "synovial",
+     "synovial joint",
+     "hinge joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-046",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Joints",
+   "q": "Which type of joint is the shoulder joint?",
+   "options": [
+    "Ball and socket synovial joint",
+    "Hinge synovial joint",
+    "Pivot synovial joint",
+    "Saddle synovial joint"
+   ],
+   "answer": 0,
+   "explain": "The shoulder (glenohumeral) joint is a ball and socket synovial joint allowing wide movement.",
+   "verified": false,
+   "open": {
+    "q": "What type of synovial joint is the shoulder?",
+    "accept": [
+     "ball and socket",
+     "ball-and-socket",
+     "spheroidal"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-047",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Joints",
+   "q": "What is the main function of synovial fluid?",
+   "options": [
+    "Lubricating the joint and nourishing cartilage",
+    "Producing red blood cells",
+    "Anchoring muscle to bone",
+    "Forming the joint capsule"
+   ],
+   "answer": 0,
+   "explain": "Synovial fluid lubricates articular surfaces and supplies nutrients to avascular cartilage.",
+   "verified": false,
+   "open": {
+    "q": "What are the main functions of synovial fluid?",
+    "accept": [
+     "lubrication",
+     "lubricates joint",
+     "nourishes cartilage",
+     "lubrication and nutrition"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-048",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Joints",
+   "q": "Which type of joint is a suture of the skull?",
+   "options": [
+    "Fibrous joint",
+    "Synovial joint",
+    "Cartilaginous joint",
+    "Symphysis"
+   ],
+   "answer": 0,
+   "explain": "Sutures are fibrous joints where bones are united by dense connective tissue.",
+   "verified": false,
+   "open": {
+    "q": "What type of joint is a skull suture?",
+    "accept": [
+     "fibrous",
+     "fibrous joint",
+     "suture"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-049",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Joints",
+   "q": "Which type of joint is the intervertebral joint between vertebral bodies?",
+   "options": [
+    "Secondary cartilaginous joint (symphysis)",
+    "Primary cartilaginous joint",
+    "Fibrous joint",
+    "Synovial joint"
+   ],
+   "answer": 0,
+   "explain": "Intervertebral joints between bodies are secondary cartilaginous (symphyses) with fibrocartilage discs.",
+   "verified": false,
+   "open": {
+    "q": "What type of joint unites adjacent vertebral bodies?",
+    "accept": [
+     "symphysis",
+     "secondary cartilaginous",
+     "cartilaginous joint"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-050",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Joints",
+   "q": "A patient has osteoarthritis with loss of articular cartilage in the knee. Which tissue is primarily affected?",
+   "options": [
+    "Hyaline cartilage",
+    "Fibrocartilage",
+    "Elastic cartilage",
+    "Dense regular connective tissue"
+   ],
+   "answer": 0,
+   "explain": "Articular surfaces of synovial joints are covered by hyaline cartilage, which degenerates in osteoarthritis.",
+   "verified": false,
+   "open": {
+    "q": "Which type of cartilage covers the articular surfaces of synovial joints?",
+    "accept": [
+     "hyaline",
+     "hyaline cartilage",
+     "articular cartilage"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-051",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Vertebral column",
+   "q": "How many cervical vertebrae are there in the adult vertebral column?",
+   "options": [
+    "5",
+    "7",
+    "12",
+    "5 fused"
+   ],
+   "answer": 1,
+   "explain": "There are 7 cervical vertebrae, named C1 to C7.",
+   "verified": false,
+   "open": {
+    "q": "How many cervical vertebrae are in the adult vertebral column?",
+    "accept": [
+     "7",
+     "seven"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-052",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Vertebral column",
+   "q": "How many thoracic vertebrae are there?",
+   "options": [
+    "7",
+    "12",
+    "5",
+    "9"
+   ],
+   "answer": 1,
+   "explain": "There are 12 thoracic vertebrae, T1 to T12.",
+   "verified": false,
+   "open": {
+    "q": "How many thoracic vertebrae are there?",
+    "accept": [
+     "12",
+     "twelve"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-053",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Vertebral column",
+   "q": "How many lumbar vertebrae are there?",
+   "options": [
+    "5",
+    "7",
+    "12",
+    "4"
+   ],
+   "answer": 0,
+   "explain": "There are 5 lumbar vertebrae, L1 to L5.",
+   "verified": false,
+   "open": {
+    "q": "How many lumbar vertebrae are there?",
+    "accept": [
+     "5",
+     "five"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-054",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "Which vertebrae are fused to form the sacrum in the adult?",
+   "options": [
+    "Five sacral vertebrae",
+    "Seven cervical vertebrae",
+    "Twelve thoracic vertebrae",
+    "Four coccygeal vertebrae"
+   ],
+   "answer": 0,
+   "explain": "Five sacral vertebrae fuse in the adult to form the sacrum.",
+   "verified": false,
+   "open": {
+    "q": "Which vertebrae fuse to form the sacrum?",
+    "accept": [
+     "sacral",
+     "five sacral",
+     "sacral vertebrae"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-055",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "Which vertebra is called the atlas and supports the skull?",
+   "options": [
+    "C1",
+    "C2",
+    "T1",
+    "L1"
+   ],
+   "answer": 0,
+   "explain": "C1 is the atlas; it lacks a body and articulates with the occipital condyles.",
+   "verified": false,
+   "open": {
+    "q": "Which vertebra is called the atlas?",
+    "accept": [
+     "C1",
+     "first cervical",
+     "first cervical vertebra"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-056",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "Which vertebra is called the axis and provides the pivot for head rotation?",
+   "options": [
+    "C1",
+    "C2",
+    "C7",
+    "T1"
+   ],
+   "answer": 1,
+   "explain": "C2 is the axis; its dens (odontoid process) forms a pivot around which the atlas rotates.",
+   "verified": false,
+   "open": {
+    "q": "Which vertebra is called the axis?",
+    "accept": [
+     "C2",
+     "second cervical",
+     "second cervical vertebra"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-057",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "What is the name of the upward projection of the axis that acts as a pivot?",
+   "options": [
+    "Dens (odontoid process)",
+    "Spinous process",
+    "Transverse process",
+    "Lamina"
+   ],
+   "answer": 0,
+   "explain": "The dens (odontoid process) of C2 projects upward and articulates with the anterior arch of C1.",
+   "verified": false,
+   "open": {
+    "q": "What is the name of the pivot projection of the axis?",
+    "accept": [
+     "dens",
+     "odontoid process",
+     "odontoid"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-058",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "What is the main function of the intervertebral discs?",
+   "options": [
+    "Shock absorption and flexibility",
+    "Producing red blood cells",
+    "Anchoring muscles to bone",
+    "Forming the spinal cord canal"
+   ],
+   "answer": 0,
+   "explain": "Intervertebral discs absorb shock and allow movement between vertebrae.",
+   "verified": false,
+   "open": {
+    "q": "What is the main function of intervertebral discs?",
+    "accept": [
+     "shock absorption",
+     "cushioning",
+     "flexibility",
+     "shock absorption and flexibility"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-059",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "Which part of an intervertebral disc is the outer ring of fibrocartilage?",
+   "options": [
+    "Annulus fibrosus",
+    "Nucleus pulposus",
+    "Ligamentum flavum",
+    "Supraspinous ligament"
+   ],
+   "answer": 0,
+   "explain": "The annulus fibrosus is the outer fibrocartilage ring surrounding the nucleus pulposus.",
+   "verified": false,
+   "open": {
+    "q": "What is the outer fibrocartilage ring of an intervertebral disc called?",
+    "accept": [
+     "annulus fibrosus",
+     "annulus"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-060",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Vertebral column",
+   "q": "A patient has a herniated intervertebral disc with the nucleus pulposus pressing on a spinal nerve. What is the central part of the disc called?",
+   "options": [
+    "Nucleus pulposus",
+    "Annulus fibrosus",
+    "Ligamentum flavum",
+    "Dura mater"
+   ],
+   "answer": 0,
+   "explain": "The nucleus pulposus is the central gelatinous core of the disc; herniation compresses nearby nerve roots.",
+   "verified": false,
+   "open": {
+    "q": "What is the central gelatinous part of an intervertebral disc called?",
+    "accept": [
+     "nucleus pulposus",
+     "nucleus"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-061",
+   "level": 1,
+   "sub": "Vertebral column",
+   "q": "During a practical examination, a student identifies the short bony bridges connecting the body of a vertebra to its posterior arch. Which structures are being examined?",
+   "options": [
+    "Laminae",
+    "Pedicles",
+    "Spinous processes",
+    "Articular facets"
+   ],
+   "answer": 1,
+   "explain": "The paired pedicles project posteriorly from the vertebral body and connect it to the vertebral arch. The laminae extend from the pedicles toward the midline to complete the posterior part of the arch.",
+   "open": {
+    "q": "Which paired parts of a vertebra connect its body to the vertebral arch?",
+    "accept": [
+     "pedicles",
+     "the pedicles"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-062",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "A radiograph shows a vertebra with small openings in its transverse processes. Which vertebral region does this finding most strongly indicate?",
+   "options": [
+    "Thoracic",
+    "Lumbar",
+    "Cervical",
+    "Sacral"
+   ],
+   "answer": 2,
+   "explain": "Transverse foramina are characteristic of cervical vertebrae. They transmit the vertebral vessels in the typical arrangement, although the vertebral artery usually enters the foramina at C6 and anatomical variations occur.",
+   "open": {
+    "q": "Which region of the vertebral column is identified by transverse foramina in its vertebrae?",
+    "accept": [
+     "cervical region",
+     "cervical vertebrae",
+     "cervical"
+    ]
+   }
+  },
+  {
+   "id": "GABJ-063",
+   "level": 2,
+   "sub": "Vertebral column",
+   "q": "A vertebra has a heart-shaped body, a relatively circular vertebral foramen and facets for articulation with ribs. Which region is it from?",
+   "options": [
+    "Cervical",
+    "Thoracic",
+    "Lumbar",
+    "Coccygeal"
+   ],
+   "answer": 1,
+   "explain": "Typical thoracic vertebrae have heart-shaped bodies, relatively circular vertebral foramina and costal facets for articulation with the heads and/or tubercles of ribs.",
+   "open": {
+    "q": "Which vertebral region typically has heart-shaped bodies and costal facets for rib articulation?",
+    "accept": [
+     "thoracic vertebrae",
+     "thoracic region",
+     "thoracic"
+    ]
+   }
+  }
+ ]
 }
