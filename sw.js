@@ -8,7 +8,7 @@ var SHELL = [
   "data/curriculum.json", "data/manifest.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"
 ];
-var CDN = /^https:\/\/(cdn\\.jsdelivr\\.net|fonts\\.googleapis\\.com|fonts\\.gstatic\\.com)\\//;
+var CDN = /^https:\/\/(cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//;
 var NETWORK_WAIT = 1500; /* on a slow connection, use the saved copy after 4 seconds */
 
 self.addEventListener("install", function (e) {
