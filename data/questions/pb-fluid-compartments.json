@@ -33,12 +33,12 @@
    "q": "Why is total body water as a percentage of body weight lower in adult females (about 50%) than in adult males (about 60%)?",
    "options": [
     "Females have a larger plasma volume per kilogram",
-    "A higher average proportion of adipose tissue lowers total body water as a fraction of body weight",
+    "A higher average body-fat percentage lowers total body water per kilogram",
     "Females have more skeletal muscle relative to body weight",
     "Females secrete more aldosterone at baseline"
    ],
    "answer": 1,
-   "explain": "Adipose tissue is roughly 10% water compared to about 73% in lean skeletal muscle; because women typically have higher body fat percentages, their TBW averages 50% of body weight.",
+   "explain": "Adipose tissue contains much less water (~10%) than lean skeletal muscle (~73%). The average difference in body composition explains why total body water is about 50% of body weight in adult females and about 60% in adult males.",
    "verified": false,
    "open": {
     "q": "Why does total body water account for a smaller percentage of body weight in adult females (~50%) than in adult males (~60%)?",
@@ -176,10 +176,10 @@
     "Interstitial fluid has twice the sodium concentration of plasma",
     "Interstitial fluid contains ten times more potassium than plasma",
     "Interstitial fluid lacks glucose and urea",
-    "Interstitial fluid contains much less protein because capillary walls restrict plasma proteins"
+    "Capillary walls restrict plasma proteins, so interstitial fluid contains less protein"
    ],
    "answer": 3,
-   "explain": "Capillary endothelium restricts large anionic plasma proteins (especially albumin), so plasma has ~7 g/dL protein while interstitial fluid has ~2 g/dL; consequently, via the Gibbs-Donnan effect, interstitial fluid has slightly higher Cl- and slightly lower Na+ than plasma.",
+   "explain": "Capillary endothelium limits passage of large plasma proteins, especially albumin. Plasma protein is about 7 g/dL compared with roughly 2 g/dL in interstitial fluid; the Gibbs–Donnan effect also produces small ionic differences.",
    "verified": false,
    "open": {
     "q": "What is the main compositional difference between blood plasma and interstitial fluid?",
@@ -315,12 +315,12 @@
    "q": "Why cannot intracellular fluid (ICF) volume and interstitial fluid (ISF) volume be measured directly with a single injected indicator?",
    "options": [
     "Tracers are immediately destroyed by plasma enzymes",
-    "ICF and interstitial fluid cannot be measured directly with one tracer; derive them from total body water and ECF",
+    "ICF = TBW − ECF; ISF = ECF − plasma volume",
     "ICF and interstitial fluid have identical protein concentrations",
     "Interstitial fluid does not exchange with plasma"
    ],
    "answer": 1,
-   "explain": "Any tracer injected into blood must pass through plasma and interstitial fluid before entering cells; hence ICF = TBW - ECF, and ISF = ECF - Plasma volume.",
+   "explain": "These spaces are calculated by subtraction because suitable tracers measure total body water, extracellular fluid and plasma volume, rather than directly measuring ICF or interstitial fluid.",
    "verified": false,
    "open": {
     "q": "How are intracellular fluid (ICF) volume and interstitial fluid (ISF) volume determined experimentally from measured compartment volumes?",
@@ -570,13 +570,13 @@
    "sub": "Capillary Starling Forces and Edema",
    "q": "A 38-year-old resident of an endemic tropical region develops chronic unilateral lower-limb non-pitting swelling (elephantiasis) due to Wuchereria bancrofti infection. Which mechanism produces this edema?",
    "options": [
-    "Lymphatic obstruction prevents clearance of filtered fluid and interstitial proteins",
+    "Lymphatic obstruction prevents return of filtered fluid and interstitial proteins",
     "Severe hypoalbuminaemia from renal protein loss",
     "Systemic venous hypertension from left ventricular failure",
     "Excessive ADH secretion"
    ],
    "answer": 0,
-   "explain": "Filariasis obstructs lymphatic drainage, trapping filtered fluid and leaked interstitial proteins in the tissue spaces; rising interstitial protein further elevates interstitial oncotic pressure and draws more water out of capillaries.",
+   "explain": "Filariasis obstructs lymphatic drainage, trapping filtered fluid and leaked proteins in tissues. The retained proteins raise interstitial oncotic pressure and draw additional water from capillaries, producing chronic lymphedema.",
    "verified": false,
    "open": {
     "q": "How does lymphatic obstruction (such as in filariasis or after axillary lymph node dissection) lead to lymphedema?",
