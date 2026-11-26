@@ -127,12 +127,12 @@
    "q": "Why is cardiac muscle physiologically incapable of undergoing sustained tetanic contraction like skeletal muscle?",
    "options": [
     "Cardiac muscle lacks myosin ATPase",
-    "The phase-2 plateau prolongs refractoriness until near the end of contraction",
+    "The prolonged phase-2 plateau extends the absolute refractory period through most of the twitch",
     "Cardiac SR contains no calcium",
     "Vagal activity continuously blocks ventricular cross-bridges"
    ],
    "answer": 1,
-   "explain": "Because fast Na+ channels remain inactivated throughout the prolonged plateau (~200-250 ms), the cardiac absolute refractory period lasts nearly as long as the mechanical twitch, ensuring adequate ventricular filling between beats.",
+   "explain": "Because fast Na+ channels remain inactivated throughout the prolonged plateau (~200-250 ms), the cardiac absolute refractory period lasts nearly as long as the mechanical twitch, ensuring adequate ventricular filling between beats. Key detail: The phase-2 plateau prolongs refractoriness until near the end of contraction.",
    "verified": false,
    "open": {
     "q": "What electrophysiological property prevents cardiac muscle from being tetanized?",
@@ -272,7 +272,7 @@
     "The SA node has the steepest phase-4 depolarisation and fastest intrinsic rate"
    ],
    "answer": 3,
-   "explain": "SA nodal cells reach threshold fastest (intrinsic ~100/min, resting ~70/min under vagal tone), depolarizing the AV node (intrinsic 40-60/min) and Purkinje fibers (15-40/min) before they can spontaneously fire (overdrive suppression).",
+   "explain": "SA nodal cells reach threshold fastest (intrinsic ~100/min, resting ~70/min under vagal tone), depolarizing the AV node (intrinsic 40-60/min) and Purkinje fibers (15-40/min) before they can spontaneously fire (overdrive suppression). Key detail: The SA node has the steepest phase-4 depolarisation and fastest intrinsic rate.",
    "verified": false,
    "open": {
     "q": "Why does the sinoatrial node normally dominate over latent pacemakers in the AV node and Purkinje system?",
@@ -453,10 +453,10 @@
     "Inspiration delays A2",
     "Inspiration causes premature P2",
     "Inspiration reduces right atrial return",
-    "Inspiration increases right ventricular filling, delaying P2 and slightly advancing A2"
+    "Inspiration increases RV filling, delaying P2 and slightly advancing A2"
    ],
    "answer": 3,
-   "explain": "Negative intrathoracic pressure during inspiration augments systemic venous return to the right heart (prolonging RV ejection and delaying P2) while pooling blood in pulmonary vessels (reducing LV preload and advancing A2).",
+   "explain": "Negative intrathoracic pressure during inspiration augments systemic venous return to the right heart (prolonging RV ejection and delaying P2) while pooling blood in pulmonary vessels (reducing LV preload and advancing A2). Key detail: Inspiration increases right ventricular filling, delaying P2 and slightly advancing A2.",
    "verified": false,
    "open": {
     "q": "Explain why the A2 and P2 components of the second heart sound separate (split) during inspiration.",
@@ -473,13 +473,13 @@
    "sub": "Heart Sounds and Jugular Venous Pulse",
    "q": "When do the third (S3) and fourth (S4) heart sounds occur during the cardiac cycle, and what does S4 indicate in an adult?",
    "options": [
-    "S3 occurs during rapid filling; S4 occurs when atria contract against a stiff ventricle",
+    "S3: early rapid filling; S4: atrial contraction into a stiff ventricle",
     "S3 occurs during isovolumetric contraction; S4 during ejection",
     "S3 occurs during relaxation; S4 after S1",
     "Both occur only during systole"
    ],
    "answer": 0,
-   "explain": "S3 is caused by blood oscillating against ventricular walls during rapid early diastolic filling (normal in children/pregnancy, pathologic in systolic heart failure); S4 ('atrial gallop') is always pathologic in adults, caused by forceful atrial contraction into a stiff ventricle (e.g., concentric LVH or ischemia).",
+   "explain": "S3 is caused by blood oscillating against ventricular walls during rapid early diastolic filling (normal in children/pregnancy, pathologic in systolic heart failure); S4 ('atrial gallop') is always pathologic in adults, caused by forceful atrial contraction into a stiff ventricle (e.g., concentric LVH or ischemia). Key detail: S3 occurs during rapid filling; S4 occurs when atria contract against a stiff ventricle.",
    "verified": false,
    "open": {
     "q": "Identify the phase of the cardiac cycle in which S3 and S4 occur and state what a fourth heart sound (S4) signifies.",
@@ -497,12 +497,12 @@
    "q": "In the jugular venous pressure (JVP) tracing, what produces the 'a' wave, the 'c' wave, and the 'v' wave?",
    "options": [
     "a: ventricular ejection; c: atrial relaxation; v: tricuspid opening",
-    "a: atrial contraction; c: tricuspid bulging during isovolumetric contraction; v: venous filling against closed tricuspid valve",
+    "a: atrial contraction; c: tricuspid bulging; v: atrial filling against a closed valve",
     "a: aortic closure; c: rapid filling; v: atrial systole",
     "a: carotid artefact; c: P2 closure; v: isovolumetric relaxation"
    ],
    "answer": 1,
-   "explain": "The JVP waveform reflects right atrial pressure changes: 'a' = atrial contraction (absent in atrial fibrillation), 'c' = tricuspid bulging in early systole, 'x' descent = atrial relaxation/downward pulling of tricuspid ring, 'v' = venous filling during late systole, and 'y' descent = passive emptying upon tricuspid opening.",
+   "explain": "The JVP waveform reflects right atrial pressure changes: 'a' = atrial contraction (absent in atrial fibrillation), 'c' = tricuspid bulging in early systole, 'x' descent = atrial relaxation/downward pulling of tricuspid ring, 'v' = venous filling during late systole, and 'y' descent = passive emptying upon tricuspid opening. Key detail: a: atrial contraction; c: tricuspid bulging during isovolumetric contraction; v: venous filling against closed tricuspid valve.",
    "verified": false,
    "open": {
     "q": "State the physiological causes of the a, c, and v waves in the jugular venous pulse (JVP) curve.",
@@ -657,13 +657,13 @@
    "sub": "Autonomic Regulation of Cardiac Function",
    "q": "By which membrane mechanism does vagal parasympathetic stimulation (acetylcholine acting on M2 muscarinic receptors) slow the heart rate (negative chronotropy)?",
    "options": [
-    "Opening K-ACh channels hyperpolarises SA cells and lowers cAMP-dependent currents",
+    "M2–Gi opens K-ACh channels and lowers cAMP, hyperpolarising SA cells and slowing phase 4",
     "Increasing cAMP accelerates HCN opening",
     "Activating alpha-1 receptors on Purkinje fibres",
     "Opening fast Na+ channels in the AV node"
    ],
    "answer": 0,
-   "explain": "M2 receptors couple to Gi proteins: the beta-gamma subunit directly opens GIRK (K-ACh) channels to hyperpolarize maximum diastolic potential, while alpha-i inhibits adenylyl cyclase, flattening Phase 4 slope.",
+   "explain": "M2 receptors couple to Gi proteins: the beta-gamma subunit directly opens GIRK (K-ACh) channels to hyperpolarize maximum diastolic potential, while alpha-i inhibits adenylyl cyclase, flattening Phase 4 slope. Key detail: Opening K-ACh channels hyperpolarises SA cells and lowers cAMP-dependent currents.",
    "verified": false,
    "open": {
     "q": "How does acetylcholine binding to cardiac M2 muscarinic receptors reduce the firing rate of the sinoatrial node?",
