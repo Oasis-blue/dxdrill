@@ -123,10 +123,10 @@
    "sub": "Energy Balance and Macronutrient Metabolism",
    "q": "How do soluble fermentable dietary fibers (such as beta-glucans, pectins, and inulin) exert metabolic benefits in the gastrointestinal tract?",
    "options": [
-    "Directly absorbed intact into arterial blood as high-energy monosaccharides",
-    "Form viscous gels that slow gastric emptying and glucose/bile acid absorption, while colonic microbiota ferment them into short-chain fatty acids (acetate, propionate, butyrate) that nourish colonocytes (butyrate) and support metabolic/gut health",
-    "Inhibit all pancreatic amylase secretion permanently",
-    "Prevent all water absorption in the colon"
+    "Are absorbed intact as monosaccharides and provide more energy than digestible starch.",
+    "Form viscous gels and are fermented to short-chain fatty acids that support gut and metabolic health.",
+    "Suppress pancreatic amylase permanently and prevent digestion of all dietary carbohydrate.",
+    "Prevent colonic water absorption and cause obligatory fluid loss in the stool."
    ],
    "answer": 1,
    "explain": "Fermentable fibers yield short-chain fatty acids (SCFAs): butyrate is the primary fuel for colonic epithelial cells and promotes anti-inflammatory regulatory T cells, propionate enters hepatic gluconeogenesis/lipid regulation, and binding bile acids promotes cholesterol clearance.",
@@ -239,10 +239,10 @@
    "sub": "Fat-Soluble Vitamins (A, D, E, K)",
    "q": "How does calcitriol (1,25-dihydroxyvitamin D3) raise serum calcium and phosphate concentrations while supporting bone mineralization?",
    "options": [
-    "Directly inhibits all intestinal ion transport",
-    "Increases intestinal calcium and phosphate absorption (via TRPV6, calbindin-D9k, and NaPi-IIb), promotes renal calcium reabsorption, and mobilizes calcium/phosphate from bone with PTH to maintain extracellular Ca x PO4 supersaturation for osteoid mineralization",
-    "Promotes renal phosphate wasting exclusively without affecting calcium",
-    "Converts osteoid into collagenase"
+    "Reduces intestinal calcium and phosphate uptake while increasing their urinary excretion.",
+    "Increases intestinal calcium and phosphate absorption and supports renal calcium retention and bone mineral balance.",
+    "Promotes renal phosphate loss without affecting intestinal calcium absorption.",
+    "Breaks down osteoid collagen to release calcium without affecting phosphate."
    ],
    "answer": 1,
    "explain": "Adequate serum Ca2+ and PO4^3- supplied by calcitriol action are required to mineralize osteoid; vitamin D deficiency or severe renal 1-alpha-hydroxylase loss causes rickets in children and osteomalacia in adults.",
@@ -285,10 +285,10 @@
    "sub": "Fat-Soluble Vitamins (A, D, E, K)",
    "q": "Why do exclusively breastfed newborns routinely receive intramuscular vitamin K shortly after birth?",
    "options": [
-    "Breast milk contains high levels of warfarin",
-    "Newborns have sterile guts (lacking vitamin K2-producing intestinal bacteria), low transplacental vitamin K stores, and low vitamin K content in breast milk, putting them at risk for vitamin K deficiency bleeding (VKDB / hemorrhagic disease of the newborn)",
-    "Vitamin K prevents physiological neonatal jaundice by blocking bilirubin production",
-    "Newborns cannot absorb water from milk"
+    "Breast milk contains anticoagulant proteins that neutralise vitamin K-dependent clotting factors.",
+    "Newborns have low vitamin K stores, little gut bacterial synthesis, and low breast-milk vitamin K.",
+    "Vitamin K prevents physiological neonatal jaundice by accelerating bilirubin conjugation.",
+    "Newborn kidneys cannot retain vitamin K, so it is lost rapidly in the urine."
    ],
    "answer": 1,
    "explain": "Vitamin K is required for gamma-glutamyl carboxylation of clotting factors II, VII, IX, and X and proteins C and S; neonatal prophylaxis prevents intracranial and gastrointestinal hemorrhage.",
@@ -424,10 +424,10 @@
    "sub": "Water-Soluble Vitamins (B-Complex and Vitamin C)",
    "q": "In its active coenzyme form pyridoxal phosphate (PLP), which biochemical reactions depend on vitamin B6?",
    "options": [
-    "Fatty acid beta-oxidation and ketogenesis",
-    "Purine ring de novo synthesis exclusively",
-    "Transaminases (aminotransferases), decarboxylases (e.g., heme ALA synthase, neurotransmitter synthesis of GABA/serotonin/dopamine/norepinephrine/histamine), and glycogen phosphorylase",
-    "Methylmalonyl-CoA mutase"
+    "Fatty-acid beta-oxidation and ketogenesis, which depend mainly on carnitine and FAD.",
+    "Purine-ring synthesis, which depends primarily on folate-derived one-carbon units.",
+    "Transamination, amino-acid decarboxylation, ALA synthase, and glycogen phosphorylase reactions.",
+    "Methylmalonyl-CoA mutase activity, which requires adenosylcobalamin."
    ],
    "answer": 2,
    "explain": "PLP forms a Schiff base (aldimine) with amino substrates to facilitate transamination, alpha/beta-elimination, racemization, and decarboxylation, and also serves as a cofactor for glycogen phosphorylase.",
@@ -492,10 +492,10 @@
    "sub": "Water-Soluble Vitamins (B-Complex and Vitamin C)",
    "q": "Why is periconceptional folic acid supplementation recommended before and during early pregnancy?",
    "options": [
-    "Prevents gestational diabetes mellitus",
-    "Reduces the risk of neural tube defects (such as spina bifida and anencephaly) by supporting rapid nucleotide synthesis and one-carbon methylation during neural tube closure",
-    "Increases maternal red blood cell lifespan to 200 days",
-    "Replaces dietary calcium intake"
+    "Prevents gestational diabetes by increasing maternal insulin sensitivity during early pregnancy.",
+    "Reduces neural-tube defect risk by supporting nucleotide synthesis during early embryonic development.",
+    "Extends maternal red-cell lifespan and prevents physiological anaemia of pregnancy.",
+    "Replaces calcium supplementation by supporting fetal skeletal mineralisation."
    ],
    "answer": 1,
    "explain": "Neural tube closure occurs within the first ~28 days post-conception—often before a pregnancy is recognized—making adequate folate status prior to conception critical for DNA synthesis and neural tube closure.",
@@ -538,10 +538,10 @@
    "sub": "Water-Soluble Vitamins (B-Complex and Vitamin C)",
    "q": "Which post-translational hydroxylation reaction requires vitamin C (ascorbic acid) as an electron donor to maintain iron in its reduced ferrous (Fe2+) state inside dioxygenase enzymes?",
    "options": [
-    "Gamma-carboxylation of glutamate",
-    "Biotinylation of lysine",
-    "Methylation of cytosine",
-    "Hydroxylation of proline and lysine residues in procollagen (via prolyl and lysyl hydroxylases) to stabilize the collagen triple helix"
+    "Gamma-carboxylation of glutamate residues in vitamin K-dependent clotting proteins.",
+    "Biotin attachment to lysine residues of carboxylase enzymes.",
+    "Methylation of cytosine residues during DNA and RNA processing.",
+    "Hydroxylation of proline and lysine residues during collagen synthesis."
    ],
    "answer": 3,
    "explain": "Hydroxyproline forms stabilizing interchain hydrogen bonds in the collagen triple helix, and hydroxylysine provides sites for glycosylation and cross-linking; scurvy (vitamin C deficiency) causes defective collagen, fragile capillaries, bleeding gums, petechiae, perifollicular hemorrhage, and poor wound healing.",
@@ -632,10 +632,10 @@
    "sub": "Major Minerals and Calcium-Phosphate Homeostasis",
    "q": "How does FGF23 (fibroblast growth factor 23), secreted mainly by osteocytes and osteoblasts, regulate phosphate and vitamin D metabolism?",
    "options": [
-    "Increases renal phosphate reabsorption and stimulates calcitriol",
-    "Acts as a phosphaturic hormone by downregulating renal proximal sodium-phosphate cotransporters (NaPi-IIa/NaPi-IIc) to increase urinary phosphate excretion and inhibiting renal 1-alpha-hydroxylase while inducing 24-hydroxylase (CYP24A1) to lower calcitriol",
-    "Stimulates PTH secretion from parathyroid chief cells",
-    "Increases intestinal phosphate absorption"
+    "Promotes renal phosphate reabsorption and increases calcitriol synthesis.",
+    "Promotes renal phosphate excretion and reduces calcitriol synthesis and availability.",
+    "Stimulates parathyroid chief cells directly to increase PTH secretion.",
+    "Increases intestinal phosphate uptake by upregulating renal transporters."
    ],
    "answer": 1,
    "explain": "Excess FGF23 (as in X-linked hypophosphatemic rickets or tumor-induced osteomalacia) causes renal phosphate wasting and inappropriately low calcitriol, resulting in hypophosphatemic rickets/osteomalacia.",
@@ -655,10 +655,10 @@
    "sub": "Major Minerals and Calcium-Phosphate Homeostasis",
    "q": "Why is magnesium (Mg2+) essential as a cofactor for ATP-utilizing enzymes and parathyroid hormone function?",
    "options": [
-    "Mg2+ coordinates with phosphate groups of ATP (forming biologically active Mg-ATP2-) in kinases and ATPases, and severe hypomagnesemia impairs PTH secretion and target-organ responsiveness ('functional hypoparathyroidism')",
-    "Mg2+ replaces hemoglobin iron in red blood cells",
-    "Mg2+ is the primary extracellular anion",
-    "Mg2+ prevents all neuromuscular excitability"
+    "Mg2+ complexes with ATP for enzyme reactions; severe deficiency can impair PTH release and action.",
+    "Mg2+ replaces iron in haemoglobin and increases oxygen binding by red cells.",
+    "Mg2+ is the main extracellular anion and determines plasma bicarbonate concentration.",
+    "Mg2+ blocks neuromuscular transmission and abolishes skeletal-muscle excitability."
    ],
    "answer": 0,
    "explain": "Most kinases, synthetases, and ATPases recognize the Mg-ATP complex as their true substrate; severe magnesium depletion blunts PTH release and causes refractory hypocalcemia until magnesium is repleted.",
@@ -745,10 +745,10 @@
    "sub": "Iron, Copper, Zinc, and Iodine Metabolism",
    "q": "A 46-year-old man presents with fatigue, arthralgias, bronze skin pigmentation, hepatomegaly, elevated serum ferritin and transferrin saturation (>45%), and diabetes mellitus ('bronze diabetes'). Why does excess iron cause multiorgan damage?",
    "options": [
-    "Iron catalyzes Fenton and Haber-Weiss reactions to generate highly reactive hydroxyl radicals (.OH) that cause lipid peroxidation, DNA damage, and tissue fibrosis in liver, pancreas, heart, joints, and pituitary",
-    "Iron directly inhibits insulin receptors without radical formation",
-    "Iron depletes all dietary vitamins",
-    "Excess iron causes acute hypokalemia"
+    "Excess iron drives reactive oxygen species formation, causing lipid peroxidation and tissue injury.",
+    "Iron directly blocks insulin receptors without generating oxidative stress or tissue damage.",
+    "Iron excess prevents absorption of all fat-soluble vitamins in the small intestine.",
+    "Excess iron causes hypokalaemia by increasing renal potassium secretion."
    ],
    "answer": 0,
    "explain": "Free redox-active iron catalyzes Fenton chemistry (Fe2+ + H2O2 -> Fe3+ + .OH + OH-), driving oxidative injury and fibrosis (cirrhosis, restrictive/dilated cardiomyopathy, diabetes, hypogonadotropic hypogonadism); treated with therapeutic phlebotomy or iron chelators (deferoxamine, deferasirox).",
@@ -768,10 +768,10 @@
    "sub": "Iron, Copper, Zinc, and Iodine Metabolism",
    "q": "How does copper participate in iron metabolism and connective tissue crosslinking?",
    "options": [
-    "Copper is required for ferroxidase activity of ceruloplasmin (and hephaestin) to oxidize Fe2+ to Fe3+ for transferrin loading, and for lysyl oxidase to crosslink collagen and elastin",
-    "Copper replaces magnesium in ATP",
-    "Copper is a component of vitamin B12",
-    "Copper inhibits cytochrome c oxidase"
+    "Supports ceruloplasmin-mediated iron oxidation and lysyl-oxidase crosslinking of collagen and elastin.",
+    "Acts as the central metal ion in haemoglobin and binds oxygen in red cells.",
+    "Forms the cobalt-containing centre of vitamin B12 and supports methionine synthesis.",
+    "Inhibits cytochrome c oxidase and prevents mitochondrial electron transport."
    ],
    "answer": 0,
    "explain": "Ceruloplasmin is the major copper-carrying plasma protein and acts as a ferroxidase required for iron mobilization/transferrin binding; copper is also a cofactor for cytochrome c oxidase and superoxide dismutase.",
@@ -995,10 +995,10 @@
    "sub": "Energy Balance and Macronutrient Metabolism",
    "q": "What is the thermic effect of food (specific dynamic action), and which macronutrient typically elicits the highest thermic effect?",
    "options": [
-    "The energy expended in digesting, absorbing, transporting, and metabolizing nutrients; protein (~20-30% of its energy) has a higher thermic effect than carbohydrate (~5-10%) or fat (~0-3%)",
-    "Heat generated strictly by shivering in cold weather",
-    "Calories lost in feces due to constipation",
-    "Energy spent chewing gum"
+    "Energy used to digest, absorb, and process food; protein has a higher thermic effect than carbohydrate or fat.",
+    "Heat produced by skeletal-muscle shivering during exposure to cold environments.",
+    "Energy lost in faeces because dietary nutrients are not absorbed in the intestine.",
+    "Energy used only for chewing and swallowing meals, excluding digestion."
    ],
    "answer": 0,
    "explain": "Amino acid deamination, urea synthesis, and peptide bond formation require substantial ATP expenditure, giving dietary protein a higher thermic effect than carbohydrates or fats.",
@@ -1062,10 +1062,10 @@
    "sub": "Fat-Soluble Vitamins (A, D, E, K)",
    "q": "Why does combined deficiency of vitamin E and selenium exacerbate oxidative tissue injury?",
    "options": [
-    "Vitamin E scavenges lipid peroxyl radicals inside membranes while selenium-dependent glutathione peroxidase reduces hydrogen peroxide and lipid hydroperoxides in the cytosol/mitochondria, providing complementary antioxidant protection",
-    "Both vitamins are required to synthesize fibrinogen",
-    "Selenium converts vitamin E into vitamin D",
-    "Vitamin E requires selenium to bind opsin"
+    "Vitamin E limits membrane lipid peroxidation; selenium-dependent glutathione peroxidase reduces peroxides.",
+    "Both nutrients act mainly as cofactors for clotting-factor gamma-carboxylation in the liver.",
+    "Selenium converts vitamin E into an active vitamin D metabolite in the kidney.",
+    "Vitamin E supports retinal phototransduction only when bound to selenium."
    ],
    "answer": 0,
    "explain": "Working in tandem, alpha-tocopherol interrupts radical chains in lipid bilayers and glutathione peroxidase detoxifies peroxides, lowering the burden of reactive oxygen species on cellular membranes.",
@@ -1177,10 +1177,10 @@
    "sub": "Water-Soluble Vitamins (B-Complex and Vitamin C)",
    "q": "In the treatment of severe folate deficiency, why must vitamin B12 deficiency be ruled out or treated before giving high-dose folic acid alone?",
    "options": [
-    "Folic acid can partially correct the megaloblastic anemia of B12 deficiency while allowing B12-deficient neurological demyelination (subacute combined degeneration) to progress unchecked",
-    "Folic acid precipitates calcium oxalate stones",
-    "Folic acid destroys intrinsic factor",
-    "Folic acid causes severe hypoglycemia"
+    "Folate may correct the anaemia while allowing B12-related neurological injury to progress.",
+    "Folate directly causes demyelination by inhibiting myelin lipid synthesis in the spinal cord.",
+    "Folate prevents intrinsic-factor secretion and blocks intestinal B12 uptake.",
+    "Folate causes severe hypoglycaemia by increasing insulin secretion after meals."
    ],
    "answer": 0,
    "explain": "High-dose folate supplies tetrahydrofolate intermediates bypassing the B12 methyl trap for DNA synthesis/hematopoiesis, masking anemia while leaving methylmalonyl-CoA mutase and myelin maintenance impaired.",
@@ -1224,10 +1224,10 @@
    "sub": "Major Minerals and Calcium-Phosphate Homeostasis",
    "q": "Why does chronic kidney disease (CKD) with reduced glomerular filtration rate frequently lead to secondary hyperparathyroidism and renal osteodystrophy?",
    "options": [
-    "Phosphate retention raises serum phosphate (stimulating FGF23 and binding Ca2+) while impaired renal 1-alpha-hydroxylase lowers calcitriol (reducing intestinal Ca2+ absorption), causing hypocalcemia that chronically stimulates PTH secretion",
-    "Kidneys secrete excess thyroxine in CKD",
-    "CKD increases intestinal calcium absorption ten-fold",
-    "CKD lowers serum phosphate to zero"
+    "Phosphate retention and reduced calcitriol lower serum calcium, chronically stimulating PTH secretion.",
+    "Reduced renal phosphate excretion raises calcium and suppresses PTH release.",
+    "Excess renal calcitriol production increases intestinal calcium absorption and suppresses PTH.",
+    "Loss of renal phosphate reabsorption lowers phosphate and directly stimulates PTH secretion."
    ],
    "answer": 0,
    "explain": "Reduced phosphate clearance, hyperphosphatemia, falling calcitriol, and hypocalcemia drive continuous parathyroid chief-cell hyperplasia and PTH hypersecretion in chronic kidney disease-mineral and bone disorder (CKD-MBD).",
@@ -1273,10 +1273,10 @@
    "sub": "Iron, Copper, Zinc, and Iodine Metabolism",
    "q": "How do phytates (inositol hexakisphosphate) in unfermented whole grains, legumes, and seeds affect mineral nutrition?",
    "options": [
-    "Chelate divalent cations (such as zinc, iron, and calcium) in the intestinal lumen into insoluble complexes that reduce their absorption, which can be partially reduced by soaking, sprouting, or fermentation (phytase activity)",
-    "Increase vitamin D synthesis in the skin",
-    "Convert dietary protein into essential fatty acids",
-    "Eliminate the need for dietary iron"
+    "Bind minerals such as iron, zinc, and calcium in the gut, reducing their absorption; soaking or fermentation can lower phytate content.",
+    "Increase mineral absorption by keeping iron and zinc soluble in the intestinal lumen.",
+    "Convert dietary proteins into essential fatty acids during intestinal digestion.",
+    "Supply vitamin D directly and remove the need for dietary calcium."
    ],
    "answer": 0,
    "explain": "Phytic acid binds positively charged metal ions (Zn2+, Fe2+, Ca2+, Mg2+), lowering mineral bioavailability unless degraded by food processing (fermentation, sourdough leavening, germination) or endogenous/dietary phytases.",
@@ -1319,10 +1319,10 @@
    "sub": "Iron, Copper, Zinc, and Iodine Metabolism",
    "q": "Why does chronic antacid or proton pump inhibitor (PPI) therapy or prior gastrectomy impair non-heme iron and vitamin B12 absorption?",
    "options": [
-    "Reduced gastric acid (hypochlorhydria/achlorhydria) impairs solubilization and Fe3+ release from food and reduces acid/pepsin-mediated cleavage of food-bound vitamin B12 from dietary proteins",
-    "Gastric acid is needed to synthesize vitamin D",
-    "Antacids convert ferritin into hemoglobin",
-    "Gastric acid absorbs all dietary potassium"
+    "Low gastric acidity impairs non-haem iron solubilisation and release of food-bound vitamin B12.",
+    "Gastric acid is required to convert dietary vitamin D into its active renal metabolite.",
+    "Antacids convert stored ferritin directly into haemoglobin inside intestinal cells.",
+    "Gastric acid is the principal transporter responsible for potassium absorption in the ileum."
    ],
    "answer": 0,
    "explain": "Stomach acid helps solubilize dietary iron and cleaves dietary proteins to release vitamin B12 for transfer to haptocorrin and subsequently intrinsic factor.",
@@ -1342,10 +1342,10 @@
    "sub": "Nutrition in Special States and Refeeding Syndrome",
    "q": "Why do pregnant and lactating individuals have elevated requirements for iron, folate, calcium, and protein?",
    "options": [
-    "To support expanded maternal blood volume and red cell mass, fetal/placental tissue growth and fetal iron/calcium accretion, and milk synthesis (lactose, casein/whey proteins, and calcium)",
-    "Because metabolic rate drops to zero during pregnancy",
-    "Because the kidneys stop filtering nutrients during lactation",
-    "Only to replace sweat losses"
+    "Support maternal blood and tissue expansion, fetal growth, placental function, and milk production.",
+    "Compensate for a complete cessation of maternal metabolism during pregnancy and lactation.",
+    "Replace nutrients lost because renal filtration stops during the second and third trimesters.",
+    "Meet only increased sweat losses caused by higher maternal body temperature."
    ],
    "answer": 0,
    "explain": "Maternal erythropoiesis expansion, fetal/placental growth, and human milk production (~700-800 mL/day in established lactation) substantially increase demands for energy, protein, iron, folate, iodine, and micronutrients.",
@@ -1365,10 +1365,10 @@
    "sub": "Energy Balance and Macronutrient Metabolism",
    "q": "What is basal metabolic rate (BMR) / resting energy expenditure (REE), and which organ contributes the largest share of resting energy expenditure per kilogram of tissue?",
    "options": [
-    "Energy expended at rest in a thermoneutral, post-absorptive state to maintain vital organ/cellular functions; brain, liver, heart, and kidneys have very high metabolic rates per unit mass (while skeletal muscle is large in total mass)",
-    "Energy expended during maximum sprinting",
-    "Energy lost exclusively through urine",
-    "Energy consumed by sleeping less than 4 hours"
+    "Energy used at rest under thermoneutral, post-absorptive conditions; liver and brain contribute large shares, while kidney and heart have high rates per gram.",
+    "Energy used during vigorous exercise, with skeletal muscle accounting for nearly all expenditure.",
+    "Energy lost mainly through urine and faeces during normal daily activity.",
+    "Energy required only during sleep, excluding the work of vital organs."
    ],
    "answer": 0,
    "explain": "Basal/resting metabolic rate accounts for roughly 60-75% of total daily energy expenditure in sedentary individuals and is influenced by lean body mass, age, sex, thyroid hormone status, and body surface area/temperature.",
