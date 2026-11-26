@@ -1261,6 +1261,121 @@
    "answer": 0,
    "explain": "The myogenic response is an intrinsic renal autoregulatory mechanism: increased pressure stretches afferent arteriolar smooth muscle, which contracts and limits the rise in renal blood flow and glomerular capillary pressure. Tubuloglomerular feedback provides a complementary mechanism: increased NaCl delivery to the macula densa promotes afferent arteriolar constriction and suppresses renin release. Autoregulation helps stabilise renal blood flow and GFR over the usual autoregulatory pressure range; it does not make them completely pressure-independent.",
    "verified": true
+  },
+  {
+   "id": "ren-256",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "A dehydrated patient has a rise in plasma protein concentration. Which direct change in glomerular Starling forces tends to reduce GFR?",
+   "options": [
+    "Increased glomerular capillary oncotic pressure",
+    "Reduced hydrostatic pressure in Bowman's space",
+    "Reduced oncotic pressure in glomerular capillaries",
+    "Increased glomerular filtration coefficient"
+   ],
+   "answer": 0,
+   "explain": "Higher plasma protein concentration raises glomerular capillary oncotic pressure, opposing movement of fluid into Bowman's space and lowering net filtration pressure.",
+   "verified": false,
+   "open": {
+    "q": "How does increased plasma protein concentration affect glomerular filtration?",
+    "accept": [
+     "raises glomerular oncotic pressure and reduces GFR",
+     "increases plasma oncotic pressure"
+    ]
+   }
+  },
+  {
+   "id": "ren-257",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Regulation of renal blood flow",
+   "q": "A healthy adult receives a drug that selectively dilates the afferent arteriole without changing efferent arteriolar tone. What is the immediate expected effect?",
+   "options": [
+    "Reduced renal blood flow and reduced GFR",
+    "Increased renal blood flow and increased GFR",
+    "Increased renal blood flow but reduced GFR",
+    "No change in glomerular capillary pressure"
+   ],
+   "answer": 1,
+   "explain": "Afferent dilation lowers resistance before the glomerulus, increasing renal blood flow and glomerular capillary hydrostatic pressure; GFR therefore rises.",
+   "verified": false,
+   "open": {
+    "q": "What happens to renal blood flow and GFR when the afferent arteriole dilates?",
+    "accept": [
+     "both increase",
+     "increases renal blood flow and GFR"
+    ]
+   }
+  },
+  {
+   "id": "ren-258",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Regulation of renal blood flow",
+   "q": "During severe haemorrhage, marked sympathetic activation helps preserve arterial pressure. What is its direct effect on renal arterioles at high sympathetic activity?",
+   "options": [
+    "Afferent arteriolar constriction, reducing renal blood flow and GFR",
+    "Afferent arteriolar dilation, increasing renal blood flow",
+    "Selective efferent dilation, increasing GFR",
+    "Relaxation of all renal arterioles"
+   ],
+   "answer": 0,
+   "explain": "Strong renal sympathetic activity constricts renal arterioles, particularly the afferent arteriole, reducing renal perfusion and filtration while supporting systemic blood pressure.",
+   "verified": false,
+   "open": {
+    "q": "What does strong renal sympathetic activation do to afferent arteriolar tone and GFR?",
+    "accept": [
+     "constricts afferent arteriole and reduces GFR",
+     "afferent constriction"
+    ]
+   }
+  },
+  {
+   "id": "ren-259",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "A glomerulus has a capillary hydrostatic pressure of 55 mmHg, Bowman's space hydrostatic pressure of 15 mmHg, and glomerular capillary oncotic pressure of 25 mmHg. If Bowman's space oncotic pressure is negligible, what is the net filtration pressure?",
+   "options": [
+    "5 mmHg",
+    "10 mmHg",
+    "15 mmHg",
+    "25 mmHg"
+   ],
+   "answer": 2,
+   "explain": "Net filtration pressure is 55 − 15 − 25 = 15 mmHg when Bowman's space oncotic pressure is negligible.",
+   "verified": false,
+   "open": {
+    "q": "How is net filtration pressure calculated from glomerular hydrostatic and oncotic pressures?",
+    "accept": [
+     "glomerular hydrostatic pressure minus Bowman's space hydrostatic and glomerular oncotic pressures",
+     "Pgc minus Pbs minus πgc"
+    ]
+   }
+  },
+  {
+   "id": "ren-260",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Glomerular filtration",
+   "q": "A patient with chronic glomerulosclerosis has fewer functioning filtration capillary loops, while the measured Starling pressures remain similar. Which variable in the GFR equation is most directly reduced?",
+   "options": [
+    "Renal plasma flow",
+    "Filtration coefficient (Kf)",
+    "Bowman's space oncotic pressure",
+    "Filtration fraction"
+   ],
+   "answer": 1,
+   "explain": "Loss of functioning filtration surface area lowers the filtration coefficient (Kf), reducing GFR even if the pressure gradients are unchanged.",
+   "verified": false,
+   "open": {
+    "q": "Which GFR variable falls when functioning glomerular filtration surface area is lost?",
+    "accept": [
+     "filtration coefficient",
+     "Kf"
+    ]
+   }
   }
  ]
 }
