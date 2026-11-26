@@ -1,0 +1,22 @@
+name: Visual intake validator
+on:
+  pull_request:
+    paths:
+      - "tools/validate-visual-intake.js"
+      - "tests/visual-intake-validator.test.js"
+      - ".github/workflows/visual-intake-validator.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/validate-visual-intake.js"
+      - "tests/visual-intake-validator.test.js"
+      - ".github/workflows/visual-intake-validator.yml"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node --test tests/visual-intake-validator.test.js
