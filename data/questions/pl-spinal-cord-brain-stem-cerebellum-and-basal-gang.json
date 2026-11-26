@@ -284,13 +284,13 @@
    "sub": "Cerebellar Functional Divisions (Vestibulo-, Spino-, Cerebrocerebellum)",
    "q": "Match the three functional/phylogenetic divisions of the cerebellum with their corresponding deep cerebellar nuclei and primary functions:",
    "options": [
-    "Vestibulocerebellum → vestibular nuclei (balance/eye movements); spinocerebellum → fastigial and interposed nuclei (posture/gait and limb correction); cerebrocerebellum → dentate nucleus (motor planning/timing)",
+    "Vestibulocerebellum: balance/VOR; spinocerebellum: posture and limb correction; cerebrocerebellum: motor planning",
     "Vestibulocerebellum: language; spinocerebellum: hearing; cerebrocerebellum: pupillary reflexes",
     "Vestibulocerebellum: fine finger movement; spinocerebellum: smell; cerebrocerebellum: balance only",
     "All three divisions have the same inputs, outputs and motor functions"
    ],
    "answer": 0,
-   "explain": "Mnemonic for deep cerebellar nuclei from lateral to medial: 'Don't Eat Greasy Food' = Dentate, Emboliform, Globose (together = Interposed), Fastigial.",
+   "explain": "Mnemonic for deep cerebellar nuclei from lateral to medial: 'Don't Eat Greasy Food' = Dentate, Emboliform, Globose (together = Interposed), Fastigial. Key detail: Vestibulocerebellum → vestibular nuclei (balance/eye movements); spinocerebellum → fastigial and interposed nuclei (posture/gait and limb correction); cerebrocerebellum → dentate nucleus (motor planning/timing).",
    "verified": false,
    "open": {
     "q": "Match the three functional divisions of the cerebellum (vestibulocerebellum, spinocerebellum, cerebrocerebellum) with their anatomical regions, output nuclei, and primary functions.",
@@ -353,13 +353,13 @@
    "sub": "Cerebellar Peduncles and Clinical Cerebellar Signs",
    "q": "Which cerebellar peduncle carries the primary EFFERENT output of the cerebellum (from dentate and interposed nuclei to the contralateral red nucleus and thalamic VL nucleus), and why do unilateral cerebellar hemisphere lesions produce IPSILATERAL motor deficits?",
    "options": [
-    "Superior cerebellar peduncle (brachium conjunctivum); its efferent fibers decussate in the caudal midbrain to synapse in the contralateral red nucleus and VL thalamus -> contralateral motor cortex, whose corticospinal tract then decussates AGAIN in the caudal medulla—producing double decussation and ipsilateral clinical signs",
+    "Superior peduncle carries cerebellar output; double crossing produces ipsilateral limb signs",
     "Middle cerebellar peduncle (brachium pontis); it carries all cerebellar efferents to the spinal cord",
     "Inferior cerebellar peduncle (restiform body); it carries corticopontocerebellar afferents exclusively",
     "Cerebellar lesions cause contralateral paralysis because cerebellar axons never cross"
    ],
    "answer": 0,
-   "explain": "Mnemonic: 'Middle = Motor input (pontocerebellar afferents only); Superior = Sending output (primary efferent peduncle).' Double crossing (superior cerebellar peduncle + medullary pyramids) means right cerebellum controls right limbs!",
+   "explain": "Mnemonic: 'Middle = Motor input (pontocerebellar afferents only); Superior = Sending output (primary efferent peduncle).' Double crossing (superior cerebellar peduncle + medullary pyramids) means right cerebellum controls right limbs! Key detail: Superior cerebellar peduncle (brachium conjunctivum); its efferent fibers decussate in the caudal midbrain to synapse in the contralateral red nucleus and VL thalamus -> contralateral motor cortex, whose corticospinal tract then decussates AGAIN in the caudal medulla—producing double decussation and ipsilateral clinical signs.",
    "verified": false,
    "open": {
     "q": "Identify the major fiber tracts passing through each of the three cerebellar peduncles (inferior, middle, superior) and explain why cerebellar signs are ipsilateral.",
@@ -399,13 +399,13 @@
    "sub": "Basal Ganglia Anatomy and Direct vs Indirect Pathways",
    "q": "Which nuclei constitute the 'striatum' (neostriatum) and the 'lentiform nucleus' of the basal ganglia?",
    "options": [
-    "Striatum = Caudate nucleus + Putamen; Lentiform nucleus = Putamen + Globus pallidus (internus and externus); functional basal ganglia circuitry also includes the Subthalamic nucleus (STN) and Substantia nigra (pars compacta and pars reticulata)",
+    "Striatum = caudate + putamen; lentiform = putamen + globus pallidus",
     "Striatum = Thalamus + Hypothalamus; Lentiform nucleus = Amygdala + Hippocampus",
     "Striatum = Dentate nucleus + Red nucleus",
     "Lentiform nucleus = Pons + Medulla oblongata"
    ],
    "answer": 0,
-   "explain": "The caudate and putamen share identical histology and developmental origin (separated by the anterior limb of the internal capsule) and serve as the major input hub of the basal ganglia.",
+   "explain": "The caudate and putamen share identical histology and developmental origin (separated by the anterior limb of the internal capsule) and serve as the major input hub of the basal ganglia. Key detail: Striatum = Caudate nucleus + Putamen; Lentiform nucleus = Putamen + Globus pallidus (internus and externus); functional basal ganglia circuitry also includes the Subthalamic nucleus (STN) and Substantia nigra (pars compacta and pars reticulata).",
    "verified": false,
    "open": {
     "q": "State the anatomical components of: (1) the striatum and (2) the lentiform nucleus.",
@@ -445,13 +445,13 @@
    "sub": "Basal Ganglia Anatomy and Direct vs Indirect Pathways",
    "q": "Trace the 'Indirect Pathway' of the basal ganglia and explain its net effect on movement:",
    "options": [
-    "Cerebral cortex (+ glutamate) -> Striatum (D2 neurons; - GABA) -> Globus pallidus externus (GPe; - GABA) -> Subthalamic nucleus (STN; + glutamate) -> GPi/SNr (- GABA) -> VA/VL thalamus -> Motor cortex; net effect is EXCITATION of GPi/SNr, which INHIBITS the thalamus and suppresses unwanted competing movements",
+    "Indirect: striatum inhibits GPe → disinhibits STN → excites GPi/SNr → inhibits thalamus",
     "Striatum directly excites the VA/VL thalamus via serotonin",
     "Subthalamic nucleus releases GABA to inhibit GPi",
     "Indirect pathway increases thalamocortical excitation to initiate movement"
    ],
    "answer": 0,
-   "explain": "Three inhibitory GABAergic steps plus one excitatory glutamatergic step (STN -> GPi) produce net inhibition of the thalamus, acting as a brake on unwanted motor programs.",
+   "explain": "Three inhibitory GABAergic steps plus one excitatory glutamatergic step (STN -> GPi) produce net inhibition of the thalamus, acting as a brake on unwanted motor programs. Key detail: Cerebral cortex (+ glutamate) -> Striatum (D2 neurons; - GABA) -> Globus pallidus externus (GPe; - GABA) -> Subthalamic nucleus (STN; + glutamate) -> GPi/SNr (- GABA) -> VA/VL thalamus -> Motor cortex; net effect is EXCITATION of GPi/SNr, which INHIBITS the thalamus and suppresses unwanted competing movements.",
    "verified": false,
    "open": {
     "q": "Trace the sequence of nuclei and net motor effect of the basal ganglia Indirect Pathway.",
@@ -514,13 +514,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "How do 'resting tremor' (basal ganglia / Parkinsonian) and 'intention tremor' (cerebellar) differ clinically?",
    "options": [
-    "Resting tremor (4-6 Hz 'pill-rolling') is maximal at rest when the limb is supported and diminishes or disappears during purposeful voluntary movement; intention tremor is absent at rest and emerges/worsens as the limb approaches a visual target during voluntary movement",
+    "Resting tremor occurs at rest and eases with movement; intention tremor worsens near target",
     "Resting tremor occurs only while lifting heavy weights; intention tremor occurs only during deep sleep",
     "Both tremors are caused by lesions of the primary visual cortex",
     "Intention tremor disappears completely when reaching for a cup"
    ],
    "answer": 0,
-   "explain": "Asking a patient to touch the examiner's finger cleanly separates resting tremor (improves with action) from cerebellar intention tremor (crescendos near the target).",
+   "explain": "Asking a patient to touch the examiner's finger cleanly separates resting tremor (improves with action) from cerebellar intention tremor (crescendos near the target). Key detail: Resting tremor (4-6 Hz 'pill-rolling') is maximal at rest when the limb is supported and diminishes or disappears during purposeful voluntary movement; intention tremor is absent at rest and emerges/worsens as the limb approaches a visual target during voluntary movement.",
    "verified": false,
    "open": {
     "q": "Contrast resting tremor and intention tremor in terms of when each appears and its anatomical localization.",
@@ -560,13 +560,13 @@
    "sub": "Spinal Cord Ascending Sensory Tracts",
    "q": "Which spinal cord tracts degenerate in 'Subacute Combined Degeneration' caused by Vitamin B12 (cobalamin) deficiency?",
    "options": [
-    "Bilateral dorsal columns (fasciculus gracilis and cuneatus -> loss of vibration, proprioception, sensory ataxia, positive Romberg sign) AND bilateral lateral corticospinal tracts (spastic paraparesis, hyperreflexia, Babinski sign), plus peripheral neuropathy",
+    "B12 deficiency damages dorsal columns and lateral corticospinal tracts, causing sensory ataxia and UMN signs",
     "Anterior white commissure only",
     "Isolated trochlear nerve nuclei",
     "Olfactory bulbs and optic chiasm"
    ],
    "answer": 0,
-   "explain": "Vitamin B12 is required for methylmalonyl-CoA mutase and methionine synthase; its deficiency impairs myelin synthesis in the heavily myelinated dorsal columns and lateral corticospinal tracts.",
+   "explain": "Vitamin B12 is required for methylmalonyl-CoA mutase and methionine synthase; its deficiency impairs myelin synthesis in the heavily myelinated dorsal columns and lateral corticospinal tracts. Key detail: Bilateral dorsal columns (fasciculus gracilis and cuneatus -> loss of vibration, proprioception, sensory ataxia, positive Romberg sign) AND bilateral lateral corticospinal tracts (spastic paraparesis, hyperreflexia, Babinski sign), plus peripheral neuropathy.",
    "verified": false,
    "open": {
     "q": "Name the two major spinal cord tracts affected in Vitamin B12 deficiency (subacute combined degeneration) and their corresponding clinical deficits.",
@@ -583,13 +583,13 @@
    "sub": "Spinal Cord Ascending Sensory Tracts",
    "q": "What is 'Tabes Dorsalis' (tertiary neurosyphilis), and how does it alter gait, reflexes, and sensory testing?",
    "options": [
-    "Demyelination and degeneration of dorsal nerve roots and dorsal columns, causing loss of vibration and proprioception, severe sensory ataxia with a high-stepping 'stamping' gait, positive Romberg sign, lightning lancinating pains, absent lower-limb deep tendon reflexes (areflexia), and Argyll Robertson pupils",
+    "Tabes dorsalis damages dorsal roots/columns, causing sensory ataxia, areflexia and lightning pains",
     "Pure upper motor neuron spasticity with 4+ patellar reflexes",
     "Isolated loss of pain and temperature with intact proprioception",
     "Resting pill-rolling tremor and bradykinesia"
    ],
    "answer": 0,
-   "explain": "Because dorsal root entry zone degeneration interrupts the afferent limb of muscle stretch reflexes as well as dorsal column proprioception, patients lose both position sense and knee/ankle reflexes.",
+   "explain": "Because dorsal root entry zone degeneration interrupts the afferent limb of muscle stretch reflexes as well as dorsal column proprioception, patients lose both position sense and knee/ankle reflexes. Key detail: Demyelination and degeneration of dorsal nerve roots and dorsal columns, causing loss of vibration and proprioception, severe sensory ataxia with a high-stepping 'stamping' gait, positive Romberg sign, lightning lancinating pains, absent lower-limb deep tendon reflexes (areflexia), and Argyll Robertson pupils.",
    "verified": false,
    "open": {
     "q": "Which spinal structures degenerate in tabes dorsalis, and why are deep tendon reflexes absent rather than hyperactive?",
@@ -767,13 +767,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "Why are cholinergic striatal interneurons overactive in Parkinson's disease, and why do centrally acting muscarinic antagonists (e.g., benztropine, trihexyphenidyl) reduce Parkinsonian resting tremor?",
    "options": [
-    "Normally, SNc dopamine inhibits tonically active striatal cholinergic (ACh) interneurons via D2 receptors; loss of dopamine disinhibits striatal ACh release, tipping the dopamine/ACh balance toward excessive indirect-pathway activity—so antimuscarinic drugs restore neurochemical balance and dampen tremor",
+    "Dopamine normally inhibits striatal ACh interneurons via D2; dopamine loss causes relative cholinergic excess",
     "Striatal interneurons release dopamine onto the diaphragm",
     "Benztropine converts acetylcholine into levodopa",
     "Parkinson's disease is caused by excess brain dopamine"
    ],
    "answer": 0,
-   "explain": "In the striatum, dopamine and acetylcholine act antagonistically; restoring dopamine (levodopa, dopamine agonists) or blocking excess acetylcholine (benztropine) rebalances striatal output.",
+   "explain": "In the striatum, dopamine and acetylcholine act antagonistically; restoring dopamine (levodopa, dopamine agonists) or blocking excess acetylcholine (benztropine) rebalances striatal output. Key detail: Normally, SNc dopamine inhibits tonically active striatal cholinergic (ACh) interneurons via D2 receptors; loss of dopamine disinhibits striatal ACh release, tipping the dopamine/ACh balance toward excessive indirect-pathway activity—so antimuscarinic drugs restore neurochemical balance and dampen tremor.",
    "verified": false,
    "open": {
     "q": "Explain the opposing functional relationship between dopamine and acetylcholine within the striatum in Parkinson's disease.",
@@ -790,13 +790,13 @@
    "sub": "Spinal Cord Laminae and Blood Supply",
    "q": "Match Rexed laminae of the spinal cord gray matter with their key functional nuclei:",
    "options": [
-    "Lamina II: substantia gelatinosa (pain/temperature modulation, enkephalin interneurons); Lamina VII: intermediolateral cell column (T1-L2 sympathetic preganglionic neurons) and Clarke's column (C8-L2 dorsal spinocerebellar origin); Lamina IX: alpha and gamma lower motor neurons in the ventral horn",
+    "II: substantia gelatinosa; VII: IML/Clarke's column; IX: alpha/gamma motor neurons",
     "Lamina II contains alpha motor neurons innervating the quadriceps",
     "Lamina IX contains primary visual cortex photoreceptors",
     "Clarke's column is located in the sacral S4 segment exclusively"
    ],
    "answer": 0,
-   "explain": "Rexed laminae I-VI form the dorsal sensory horn, lamina VII forms the intermediate zone (autonomic IML and Clarke's column), and laminae VIII-IX form the ventral motor horn.",
+   "explain": "Rexed laminae I-VI form the dorsal sensory horn, lamina VII forms the intermediate zone (autonomic IML and Clarke's column), and laminae VIII-IX form the ventral motor horn. Key detail: Lamina II: substantia gelatinosa (pain/temperature modulation, enkephalin interneurons); Lamina VII: intermediolateral cell column (T1-L2 sympathetic preganglionic neurons) and Clarke's column (C8-L2 dorsal spinocerebellar origin); Lamina IX: alpha and gamma lower motor neurons in the ventral horn.",
    "verified": false,
    "open": {
     "q": "State the functional nuclei located in: (1) Rexed lamina II, (2) Rexed lamina VII (T1-L2), and (3) Rexed lamina IX.",
@@ -1158,13 +1158,13 @@
    "sub": "Spinal Cord Ascending Sensory Tracts",
    "q": "How are fibers somatotopically organized within the dorsal columns (fasciculus gracilis vs fasciculus cuneatus) and within the lateral spinothalamic tract?",
    "options": [
-    "In the dorsal columns, sacral/lower-limb fibers lie MEDIALLY (fasciculus gracilis) and cervical/upper-limb fibers are added LATERALLY (fasciculus cuneatus); in the lateral spinothalamic tract, cervical fibers lie MEDIALLY and sacral/lower-limb fibers lie LATERALLY (closest to the outer surface)",
+    "Dorsal columns: sacral medial, cervical lateral; spinothalamic: cervical medial, sacral lateral",
     "Sacral fibers lie laterally in the dorsal columns and medially in the spinothalamic tract",
     "All spinal tracts are randomly mixed with zero somatotopic map",
     "Cervical fibers travel in the cauda equina"
    ],
    "answer": 0,
-   "explain": "Because sacral spinothalamic fibers sit superficially on the lateral periphery of the cord, an extramedullary tumor compressing the cord from the outside affects sacral/leg pain and temperature FIRST ('sacral loss'), whereas an intramedullary central tumor spares sacral fibers until late ('sacral sparing').",
+   "explain": "Because sacral spinothalamic fibers sit superficially on the lateral periphery of the cord, an extramedullary tumor compressing the cord from the outside affects sacral/leg pain and temperature FIRST ('sacral loss'), whereas an intramedullary central tumor spares sacral fibers until late ('sacral sparing'). Key detail: In the dorsal columns, sacral/lower-limb fibers lie MEDIALLY (fasciculus gracilis) and cervical/upper-limb fibers are added LATERALLY (fasciculus cuneatus); in the lateral spinothalamic tract, cervical fibers lie MEDIALLY and sacral/lower-limb fibers lie LATERALLY (closest to the outer surface).",
    "verified": false,
    "open": {
     "q": "State the medial-to-lateral somatotopic order of cervical, thoracic, lumbar, and sacral fibers in: (1) the dorsal columns and (2) the lateral spinothalamic tract.",
@@ -1227,13 +1227,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "Which cranial nerves carry preganglionic PARASYMPATHETIC efferent fibers from brainstem nuclei, and what are their respective nuclei and target ganglia?",
    "options": [
-    "III: EW→ciliary; VII: superior salivatory→pterygopalatine/submandibular; IX: inferior salivatory→otic; X: dorsal motor/ambiguus→intramural ganglia",
+    "III/EW→ciliary; VII/SupSal→pterygopalatine+submandibular; IX/InfSal→otic; X/DMV+ambiguus→intramural",
     "CN I, CN II, CN IV, and CN XII carry all parasympathetic fibers",
     "CN V, CN VI, and CN VIII supply parasympathetic innervation to the heart",
     "All brainstem parasympathetic fibers arise from the red nucleus"
    ],
    "answer": 0,
-   "explain": "Craniosacral parasympathetic outflow consists of cranial nerves III, VII, IX, and X plus sacral spinal segments S2-S4. Key detail: CN III (Edinger-Westphal nucleus -> ciliary ganglion -> sphincter pupillae & ciliary muscle); CN VII (superior salivatory nucleus -> pterygopalatine & submandibular ganglia -> lacrimal, submandibular, sublingual glands); CN IX (inferior salivatory nucleus -> otic ganglion -> parotid gland); CN X (dorsal motor nucleus of vagus & nucleus ambiguus -> intramural ganglia of thoracic & abdominal viscera).",
+   "explain": "Craniosacral parasympathetic outflow consists of cranial nerves III, VII, IX, and X plus sacral spinal segments S2-S4. Key detail: CN III (Edinger-Westphal nucleus -> ciliary ganglion -> sphincter pupillae & ciliary muscle); CN VII (superior salivatory nucleus -> pterygopalatine & submandibular ganglia -> lacrimal, submandibular, sublingual glands); CN IX (inferior salivatory nucleus -> otic ganglion -> parotid gland); CN X (dorsal motor nucleus of vagus & nucleus ambiguus -> intramural ganglia of thoracic & abdominal viscera). Key detail: III: EW→ciliary; VII: superior salivatory→pterygopalatine/submandibular; IX: inferior salivatory→otic; X: dorsal motor/ambiguus→intramural ganglia.",
    "verified": false,
    "open": {
     "q": "List the four cranial nerves that carry parasympathetic preganglionic fibers along with their brainstem nuclei of origin.",
@@ -1250,13 +1250,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "Why does an upper motor neuron (corticobulbar) lesion cause paralysis of ONLY the contralateral LOWER half of the face (sparing the forehead), whereas a lower motor neuron lesion of the facial nerve (CN VII, e.g., Bell's palsy) paralyzes BOTH the upper and lower halves of the ipsilateral face?",
    "options": [
-    "The dorsal subnucleus of the facial motor nucleus (innervating the upper face/forehead frontalis and orbicularis oculi) receives BILATERAL corticobulbar innervation from both cerebral hemispheres, whereas the ventral subnucleus (innervating the lower face) receives ONLY CONTRALATERAL corticobulbar input",
+    "Upper face receives bilateral corticobulbar input; lower face receives mainly contralateral input",
     "The forehead is innervated by the trigeminal nerve (CN V)",
     "The lower face receives bilateral corticobulbar input while the forehead receives ipsilateral input",
     "Bell's palsy affects the primary motor cortex"
    ],
    "answer": 0,
-   "explain": "Similarly, corticobulbar innervation to the hypoglossal nucleus (genioglossus) is predominantly contralateral, while nucleus ambiguus and trigeminal motor nuclei receive bilateral corticobulbar input.",
+   "explain": "Similarly, corticobulbar innervation to the hypoglossal nucleus (genioglossus) is predominantly contralateral, while nucleus ambiguus and trigeminal motor nuclei receive bilateral corticobulbar input. Key detail: The dorsal subnucleus of the facial motor nucleus (innervating the upper face/forehead frontalis and orbicularis oculi) receives BILATERAL corticobulbar innervation from both cerebral hemispheres, whereas the ventral subnucleus (innervating the lower face) receives ONLY CONTRALATERAL corticobulbar input.",
    "verified": false,
    "open": {
     "q": "Explain the corticobulbar innervation pattern of the facial motor nucleus (CN VII) that explains forehead sparing in a unilateral stroke.",
@@ -1273,13 +1273,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "What are the clinical features of 'Lateral Pontine Syndrome' (Anterior Inferior Cerebellar Artery / AICA stroke) that distinguish it from Lateral Medullary (PICA) Syndrome?",
    "options": [
-    "Ipsilateral facial paralysis (CN VII nucleus/fascicles), ipsilateral sensorineural hearing loss and tinnitus (cochlear nuclei/internal auditory artery), and loss of corneal blink reflex, in addition to crossed pain/temperature loss, vertigo, ipsilateral ataxia, and Horner syndrome",
+    "AICA: ipsilateral facial palsy and deafness; PICA: dysphagia/hoarseness",
     "Ipsilateral tongue deviation and contralateral hemiplegia",
     "Isolated downward and outward eye deviation",
     "Bilateral lower extremity paraplegia"
    ],
    "answer": 0,
-   "explain": "Mnemonic: 'Facial droop means AICA's pooped' (CN VII & VIII in lateral pons), whereas 'Hoarseness and dysphagia mean PICA' (nucleus ambiguus CN IX/X in lateral medulla).",
+   "explain": "Mnemonic: 'Facial droop means AICA's pooped' (CN VII & VIII in lateral pons), whereas 'Hoarseness and dysphagia mean PICA' (nucleus ambiguus CN IX/X in lateral medulla). Key detail: Ipsilateral facial paralysis (CN VII nucleus/fascicles), ipsilateral sensorineural hearing loss and tinnitus (cochlear nuclei/internal auditory artery), and loss of corneal blink reflex, in addition to crossed pain/temperature loss, vertigo, ipsilateral ataxia, and Horner syndrome.",
    "verified": false,
    "open": {
     "q": "Which cranial nerve deficits distinguish Lateral Pontine (AICA) syndrome from Lateral Medullary (PICA) syndrome?",
@@ -1296,13 +1296,13 @@
    "sub": "Brainstem Anatomy, Cranial Nerve Nuclei, and Rule of 4s",
    "q": "Which structure in the dorsal pons serves as the horizontal gaze center coordinating conjugate lateral eye movements?",
    "options": [
-    "Paramedian Pontine Reticular Formation (PPRF), which projects to the ipsilateral abducens (CN VI) nucleus (abducting the ipsilateral eye) and via the contralateral Medial Longitudinal Fasciculus (MLF) to the contralateral oculomotor (CN III) medial rectus subnucleus (adducting the contralateral eye)",
+    "PPRF activates ipsilateral CN VI and contralateral CN III via MLF for conjugate horizontal gaze",
     "Superior colliculus",
     "Inferior olivary nucleus",
     "Substantia nigra pars reticulata"
    ],
    "answer": 0,
-   "explain": "A destructive lesion of the right PPRF or right CN VI nucleus causes inability to look to the right (conjugate gaze palsy to the side of the lesion), whereas a destructive right frontal eye field lesion causes gaze deviation toward the right (inability to look away from the lesion).",
+   "explain": "A destructive lesion of the right PPRF or right CN VI nucleus causes inability to look to the right (conjugate gaze palsy to the side of the lesion), whereas a destructive right frontal eye field lesion causes gaze deviation toward the right (inability to look away from the lesion). Key detail: Paramedian Pontine Reticular Formation (PPRF), which projects to the ipsilateral abducens (CN VI) nucleus (abducting the ipsilateral eye) and via the contralateral Medial Longitudinal Fasciculus (MLF) to the contralateral oculomotor (CN III) medial rectus subnucleus (adducting the contralateral eye).",
    "verified": false,
    "open": {
     "q": "Trace the pathway from the right Paramedian Pontine Reticular Formation (PPRF) that produces conjugate horizontal gaze to the right.",
@@ -1342,13 +1342,13 @@
    "sub": "Cerebellar Microcircuitry: Purkinje, Granule, Climbing, and Mossy Fibers",
    "q": "How do 'basket cells' and 'stellate cells' in the cerebellar molecular layer shape Purkinje cell activity?",
    "options": [
-    "Excited by granule cell parallel fibers, basket and stellate cells release GABA onto adjacent off-beam Purkinje cells (basket cells form dense inhibitory pericellular baskets around Purkinje somata/axon hillocks), creating lateral inhibition that focuses active Purkinje cell beams",
+    "Basket/stellate cells release GABA to inhibit neighbouring Purkinje cells, sharpening output",
     "They release glutamate to excite Purkinje cells directly",
     "They myelinate spinal motor axons",
     "They secrete cerebrospinal fluid into the cisterna magna"
    ],
    "answer": 0,
-   "explain": "Parallel fibers excite an on-beam row of Purkinje cells while simultaneously exciting basket and stellate interneurons that inhibit flanking off-beam Purkinje cells—a cerebellar form of spatial lateral inhibition.",
+   "explain": "Parallel fibers excite an on-beam row of Purkinje cells while simultaneously exciting basket and stellate interneurons that inhibit flanking off-beam Purkinje cells—a cerebellar form of spatial lateral inhibition. Key detail: Excited by granule cell parallel fibers, basket and stellate cells release GABA onto adjacent off-beam Purkinje cells (basket cells form dense inhibitory pericellular baskets around Purkinje somata/axon hillocks), creating lateral inhibition that focuses active Purkinje cell beams.",
    "verified": false,
    "open": {
     "q": "What neurotransmitter do cerebellar basket and stellate cells release, and how do they sharpen cerebellar cortical output?",
@@ -1411,13 +1411,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "How does Deep Brain Stimulation (DBS) of the subthalamic nucleus (STN) or globus pallidus internus (GPi) relieve motor symptoms in advanced Parkinson's disease?",
    "options": [
-    "High-frequency electrical stimulation (~130 Hz) overrides and suppresses abnormal, hyperactive oscillatory burst firing in the STN or GPi, releasing the VA/VL thalamus from excessive GABAergic inhibition and restoring smoother thalamocortical motor drive",
+    "High-frequency STN/GPi stimulation suppresses pathological basal-ganglia activity and reduces thalamic inhibition",
     "DBS destroys the primary motor cortex",
     "DBS stimulates insulin secretion from the pancreas",
     "DBS increases GABA release from GPi onto the thalamus by 500%"
    ],
    "answer": 0,
-   "explain": "In Parkinson's disease, loss of SNc dopamine causes pathological hyperactivity of the STN and GPi; high-frequency DBS functionally dampens STN/GPi output.",
+   "explain": "In Parkinson's disease, loss of SNc dopamine causes pathological hyperactivity of the STN and GPi; high-frequency DBS functionally dampens STN/GPi output. Key detail: High-frequency electrical stimulation (~130 Hz) overrides and suppresses abnormal, hyperactive oscillatory burst firing in the STN or GPi, releasing the VA/VL thalamus from excessive GABAergic inhibition and restoring smoother thalamocortical motor drive.",
    "verified": false,
    "open": {
     "q": "Name the two primary basal ganglia targets for Deep Brain Stimulation (DBS) in Parkinson's disease and explain why suppressing their overactivity improves movement.",
@@ -1549,13 +1549,13 @@
    "sub": "Basal Ganglia Disorders (Parkinsonism, Huntington's, Hemiballismus)",
    "q": "Why do antipsychotic (neuroleptic) drugs such as haloperidol cause 'drug-induced Parkinsonism' acutely and 'tardive dyskinesia' after months to years of use?",
    "options": [
-    "Acute D2 receptor blockade in the striatum removes dopaminergic inhibition of the indirect pathway (mimicking Parkinson's disease); chronic D2 blockade induces compensatory upregulation and supersensitivity of striatal D2 receptors, causing hyperkinetic choreoathetoid oro-facial movements (tardive dyskinesia)",
+    "Acute D2 blockade increases indirect-pathway inhibition; chronic D2 supersensitivity causes tardive dyskinesia",
     "Haloperidol destroys the cerebellar dentate nucleus",
     "Tardive dyskinesia is caused by acute D1 receptor destruction",
     "Haloperidol increases striatal dopamine release by 1,000%"
    ],
    "answer": 0,
-   "explain": "Recognizing D2 antagonism (acute hypokinetic Parkinsonism) vs chronic D2 receptor supersensitivity (late hyperkinetic tardive dyskinesia) directly illustrates basal ganglia D2 physiology.",
+   "explain": "Recognizing D2 antagonism (acute hypokinetic Parkinsonism) vs chronic D2 receptor supersensitivity (late hyperkinetic tardive dyskinesia) directly illustrates basal ganglia D2 physiology. Key detail: Acute D2 receptor blockade in the striatum removes dopaminergic inhibition of the indirect pathway (mimicking Parkinson's disease); chronic D2 blockade induces compensatory upregulation and supersensitivity of striatal D2 receptors, causing hyperkinetic choreoathetoid oro-facial movements (tardive dyskinesia).",
    "verified": false,
    "open": {
     "q": "Contrast the striatal D2 receptor mechanisms underlying acute neuroleptic-induced Parkinsonism versus chronic tardive dyskinesia.",
@@ -1756,13 +1756,13 @@
    "sub": "Clinical Correlations",
    "q": "A 66-year-old man suffers a large right cerebral hemisphere stroke. In the ICU, his level of consciousness deteriorates and he exhibits sustained flexion of his left elbow, wrist, and fingers with rigid extension and internal rotation of his left leg ('decorticate posturing'). Six hours later, his right pupil dilates to 7 mm and BOTH upper and lower limbs become rigidly extended ('decerebrate posturing'). What anatomical progression occurred?",
    "options": [
-    "Transtentorial (uncal/central) brain herniation compressed the ipsilateral CN III (dilated pupil) and progressed downward to damage the midbrain at or below the red nucleus, eliminating rubrospinal flexor drive and leaving unopposed vestibulospinal/pontine reticulospinal extensor tone",
+    "Progression below red nucleus removes rubrospinal flexor drive, leaving extensor pathways unopposed",
     "His stroke resolved spontaneously and motor function recovered",
     "He developed a peripheral radial nerve palsy in the left arm",
     "Cerebellar Purkinje cells began firing at 1,000 Hz"
    ],
    "answer": 0,
-   "explain": "Transition from decorticate (lesion above red nucleus) to decerebrate posturing (lesion at/below red nucleus) accompanied by ipsilateral CN III mydriasis signals life-threatening downward transtentorial herniation.",
+   "explain": "Transition from decorticate (lesion above red nucleus) to decerebrate posturing (lesion at/below red nucleus) accompanied by ipsilateral CN III mydriasis signals life-threatening downward transtentorial herniation. Key detail: Transtentorial (uncal/central) brain herniation compressed the ipsilateral CN III (dilated pupil) and progressed downward to damage the midbrain at or below the red nucleus, eliminating rubrospinal flexor drive and leaving unopposed vestibulospinal/pontine reticulospinal extensor tone.",
    "verified": false,
    "open": {
     "q": "What clinical event is signaled when a comatose stroke patient transitions from decorticate posturing to decerebrate posturing with an ipsilateral dilated pupil?",
@@ -1779,13 +1779,13 @@
    "sub": "Clinical Correlations",
    "q": "A 59-year-old woman with severe chronic schizophrenia treated with high-dose haloperidol for 12 years develops continuous involuntary lip-smacking, tongue protrusion, chewing movements, and choreiform finger movements ('tardive dyskinesia'). Which neurotransmitter mechanism explains this condition?",
    "options": [
-    "Chronic blockade of striatal D2 dopamine receptors induces compensatory D2 receptor upregulation and supersensitivity, over-inhibiting the indirect pathway and disinhibiting thalamocortical motor drive",
+    "Chronic D2 blockade causes receptor upregulation/supersensitivity and excessive thalamocortical drive",
     "Complete destruction of the cerebellar vermis",
     "Acute acetylcholine toxicity at the neuromuscular junction",
     "Deficiency of vitamin B12 in the dorsal columns"
    ],
    "answer": 0,
-   "explain": "Tardive dyskinesia is treated by tapering/switching to an atypical antipsychotic (e.g., clozapine, quetiapine) or prescribing a VMAT2 inhibitor (valbenazine, deutetrabenazine) to reduce presynaptic vesicular dopamine release.",
+   "explain": "Tardive dyskinesia is treated by tapering/switching to an atypical antipsychotic (e.g., clozapine, quetiapine) or prescribing a VMAT2 inhibitor (valbenazine, deutetrabenazine) to reduce presynaptic vesicular dopamine release. Key detail: Chronic blockade of striatal D2 dopamine receptors induces compensatory D2 receptor upregulation and supersensitivity, over-inhibiting the indirect pathway and disinhibiting thalamocortical motor drive.",
    "verified": false,
    "open": {
     "q": "What receptor adaptation in the basal ganglia causes tardive dyskinesia after years of typical antipsychotic therapy?",
@@ -1825,13 +1825,13 @@
    "sub": "Clinical Correlations",
    "q": "A 56-year-old man presents with progressive asymmetric hand weakness, muscle cramps, fasciculations in his tongue and deltoids, severe atrophy of his thenar muscles, AND brisk 4+ patellar reflexes with bilateral Babinski signs. Sensation, eye movements, and bowel/bladder function are completely normal. Which motor neurons are degenerating?",
    "options": [
-    "Combined degeneration of BOTH Upper Motor Neurons (betz cells/corticospinal & corticobulbar tracts) AND Lower Motor Neurons (ventral horn alpha motor neurons & brainstem motor nuclei) — Amyotrophic Lateral Sclerosis (ALS / Lou Gehrig's disease)",
+    "ALS degenerates both UMNs and LMNs while largely sparing sensory, ocular and sphincter pathways",
     "Isolated degeneration of dorsal root ganglia",
     "Isolated degeneration of substantia nigra pars compacta",
     "Autoimmune destruction of Schwann cell myelin only"
    ],
    "answer": 0,
-   "explain": "Coexistence of LMN signs (atrophy, fasciculations) and UMN signs (hyperreflexia, spasticity, Babinski) in the same limb with spared sensory, ocular, and sphincter functions is diagnostic of ALS.",
+   "explain": "Coexistence of LMN signs (atrophy, fasciculations) and UMN signs (hyperreflexia, spasticity, Babinski) in the same limb with spared sensory, ocular, and sphincter functions is diagnostic of ALS. Key detail: Combined degeneration of BOTH Upper Motor Neurons (betz cells/corticospinal & corticobulbar tracts) AND Lower Motor Neurons (ventral horn alpha motor neurons & brainstem motor nuclei) — Amyotrophic Lateral Sclerosis (ALS / Lou Gehrig's disease).",
    "verified": false,
    "open": {
     "q": "Which two motor neuron populations degenerate in Amyotrophic Lateral Sclerosis (ALS), and which neurological systems remain characteristically spared?",
