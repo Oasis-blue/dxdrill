@@ -121,7 +121,7 @@ function validateIntake(intake, options={}) {
       existing=readExistingIds(root,manifest,errors);
     } catch(e) { issue(errors,"MANIFEST_READ_ERROR","data/manifest.json",e.message); }
   } else if (options.topics) topics=new Set(options.topics);
-  if (!nonempty(intake.topic) || (topics.size && !topics.has(intake.topic))) issue(errors,"UNKNOWN_TOPIC","topic","Topic must be an exact ID in data/curriculum.json.");
+  if (!nonempty(intake.topic) || (options.checkRepository !== false && !topics.has(intake.topic)) || (options.checkRepository === false && options.topics && !topics.has(intake.topic))) issue(errors,"UNKNOWN_TOPIC","topic","Topic must be an exact ID in data/curriculum.json.");
   if (!Array.isArray(intake.assets) || intake.assets.length===0) {
     issue(errors,"EMPTY_ASSETS","assets","At least one asset is required.");
     return report(accepted,quarantined,errors);
