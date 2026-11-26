@@ -1534,13 +1534,13 @@
    "sub": "Molecular Architecture of Myofilaments",
    "q": "What are the enzymatic and structural components of a single myosin II molecule?",
    "options": [
-    "Two heavy chains form a coiled-coil tail and two actin-binding ATPase heads; four light chains associate with the heads",
+    "Two heavy chains form the tail and two ATPase/actin-binding heads; four light chains bind the heads",
     "A single globular chain contains four calcium-binding sites and no ATPase activity",
     "Seven actin monomers form a double helix with two tropomyosin strands",
     "A transmembrane protein forms a sodium-selective pore in the sarcolemma"
    ],
    "answer": 0,
-   "explain": "Trypsin and papain cleavage divide myosin II into light meromyosin (tail forming the thick filament backbone) and heavy meromyosin (S2 hinge + two S1 globular heads harboring actin-binding and ATPase catalytic sites).",
+   "explain": "Trypsin and papain cleavage divide myosin II into light meromyosin (tail forming the thick filament backbone) and heavy meromyosin (S2 hinge + two S1 globular heads harboring actin-binding and ATPase catalytic sites). Key detail: Two heavy chains form a coiled-coil tail and two actin-binding ATPase heads; four light chains associate with the heads.",
    "verified": false,
    "open": {
     "q": "State the two functional binding sites located on each globular S1 head of a myosin II heavy chain.",
@@ -1558,12 +1558,12 @@
    "q": "How does calcium mobilization during excitation-contraction coupling differ fundamentally between skeletal muscle and cardiac muscle?",
    "options": [
     "Skeletal muscle requires extracellular calcium entry to trigger SR release; cardiac muscle uses direct DHP-RyR coupling",
-    "Skeletal muscle uses mechanical Cav1.1-RyR1 coupling; cardiac muscle uses calcium entry through Cav1.2 to trigger CICR via RyR2",
+    "Skeletal: mechanical DHP–RyR1 coupling; cardiac: Ca2+ entry via Cav1.2 triggers RyR2-mediated CICR",
     "Neither muscle type uses sarcoplasmic reticulum calcium stores",
     "Cardiac muscle lacks ryanodine receptors"
    ],
    "answer": 1,
-   "explain": "Because cardiac muscle depends on extracellular Ca2+ entry during the action potential plateau to trigger CICR via RyR2, cardiac contractility is directly sensitive to extracellular [Ca2+] and L-type Ca2+ channel blockers (verapamil/diltiazem), unlike skeletal muscle.",
+   "explain": "Because cardiac muscle depends on extracellular Ca2+ entry during the action potential plateau to trigger CICR via RyR2, cardiac contractility is directly sensitive to extracellular [Ca2+] and L-type Ca2+ channel blockers (verapamil/diltiazem), unlike skeletal muscle. Key detail: Skeletal muscle uses mechanical Cav1.1-RyR1 coupling; cardiac muscle uses calcium entry through Cav1.2 to trigger CICR via RyR2.",
    "verified": false,
    "open": {
     "q": "Explain why removing extracellular Ca2+ immediately abolishes cardiac muscle contraction while skeletal muscle continues to contract for many twitches.",
@@ -1605,11 +1605,11 @@
    "options": [
     "Binding of unhydrolyzed ATP to the myosin head",
     "Hydrolysis of ATP into ADP and Pi prior to actin attachment",
-    "Release of inorganic phosphate (Pi) from the myosin-ADP-Pi complex upon tight binding to actin, followed by ADP release",
+    "Pi release from actin-bound myosin-ADP-Pi triggers the power stroke",
     "Binding of Ca2+ directly to the myosin light chain in skeletal muscle"
    ],
    "answer": 2,
-   "explain": "ATP hydrolysis cocks the myosin head before strong actin binding; once Ca2+ uncovers actin sites and myosin binds weakly, release of Pi triggers the conformational power stroke, followed by ADP release leaving myosin tightly bound until a new ATP binds.",
+   "explain": "ATP hydrolysis cocks the myosin head before strong actin binding; once Ca2+ uncovers actin sites and myosin binds weakly, release of Pi triggers the conformational power stroke, followed by ADP release leaving myosin tightly bound until a new ATP binds. Key detail: Release of inorganic phosphate (Pi) from the myosin-ADP-Pi complex upon tight binding to actin, followed by ADP release.",
    "verified": false,
    "open": {
     "q": "Place these four steps of the skeletal muscle cross-bridge cycle in correct sequential order: (A) Power stroke upon Pi release, (B) ATP binding and myosin detachment from actin, (C) Cross-bridge binding to actin, (D) ATP hydrolysis cocking the myosin head.",
@@ -1650,12 +1650,12 @@
    "q": "Why does cardiac muscle normally operate on the ascending limb of its length-tension curve (Frank-Starling mechanism), and why is it far stiffer passively than skeletal muscle?",
    "options": [
     "Cardiac muscle lacks titin and collagen",
-    "Short resting sarcomeres, stiff titin and collagen permit preload recruitment while limiting overstretch",
+    "Stiff titin/collagen and short resting sarcomeres limit stretch while allowing preload recruitment",
     "Cardiac muscle has no sarcoplasmic reticulum",
     "Cardiac muscle generates maximal force at zero preload"
    ],
    "answer": 1,
-   "explain": "High passive stiffness prevents cardiac sarcomeres from slipping onto the descending limb during ventricular filling, while stretch enhances troponin C Ca2+ affinity and optimal filament geometry (length-dependent activation).",
+   "explain": "High passive stiffness prevents cardiac sarcomeres from slipping onto the descending limb during ventricular filling, while stretch enhances troponin C Ca2+ affinity and optimal filament geometry (length-dependent activation). Key detail: Short resting sarcomeres, stiff titin and collagen permit preload recruitment while limiting overstretch.",
    "verified": false,
    "open": {
     "q": "Explain the sarcomeric basis of the Frank-Starling law of the heart (length-dependent activation).",
@@ -1697,11 +1697,11 @@
    "options": [
     "At zero load (Vmax) where force is zero",
     "At maximal isometric load (Po) where velocity is zero",
-    "At intermediate load and velocity—specifically around one-third of Po (~0.3 Po) and one-third of Vmax (~0.3 Vmax)",
+    "Peak power occurs at intermediate load and velocity, about 0.3 Po and 0.3 Vmax",
     "Only during complete relaxation"
    ],
    "answer": 2,
-   "explain": "Because Power = Force * Velocity, power is zero at both extremes (zero load and isometric load) and peaks at approximately 30% of maximal isometric force and 30% of Vmax (which is why bicycle gears keep pedaling near optimal velocity).",
+   "explain": "Because Power = Force * Velocity, power is zero at both extremes (zero load and isometric load) and peaks at approximately 30% of maximal isometric force and 30% of Vmax (which is why bicycle gears keep pedaling near optimal velocity). Key detail: At intermediate load and velocity—specifically around one-third of Po (~0.3 Po) and one-third of Vmax (~0.3 Vmax).",
    "verified": false,
    "open": {
     "q": "Why is mechanical power output zero at both Vmax and Po, and approximately where along the force-velocity curve does peak power occur?",
@@ -1764,13 +1764,13 @@
    "sub": "Muscle Fiber Types and Exercise Adaptation",
    "q": "What occurs during 'disuse atrophy' and 'denervation atrophy' of skeletal muscle?",
    "options": [
-    "Reduced loading increases muscle protein breakdown; denervation also causes spontaneous activity and extrajunctional acetylcholine receptors",
+    "Disuse increases protein breakdown; denervation adds fibrillations and extrajunctional ACh receptors",
     "Denervated muscle doubles in mass and develops stronger tetanic force",
     "Disuse atrophy increases mitochondrial density tenfold",
     "Denervation removes all acetylcholine receptors from the sarcolemma"
    ],
    "answer": 0,
-   "explain": "Without motor nerve trophic input and mechanical load, FoxO transcription factors upregulate muscle-specific E3 ubiquitin ligases; denervated fibers also express fetal-type nicotinic receptors across the entire sarcolemma ('denervation supersensitivity') and spontaneous single-fiber fibrillations.",
+   "explain": "Without motor nerve trophic input and mechanical load, FoxO transcription factors upregulate muscle-specific E3 ubiquitin ligases; denervated fibers also express fetal-type nicotinic receptors across the entire sarcolemma ('denervation supersensitivity') and spontaneous single-fiber fibrillations. Key detail: Reduced loading increases muscle protein breakdown; denervation also causes spontaneous activity and extrajunctional acetylcholine receptors.",
    "verified": false,
    "open": {
     "q": "State two electrophysiological or receptor changes that develop in skeletal muscle fibers subsequent to lower motor neuron denervation.",
@@ -1787,13 +1787,13 @@
    "sub": "Electromyography (EMG) and Motor Unit Assessment",
    "q": "What does a clinical needle electromyogram (EMG) record, and how does the motor unit action potential (MUAP) pattern differ between a primary myopathy and chronic neurogenic denervation/reinnervation?",
    "options": [
-    "EMG records muscle electrical activity; myopathy gives small, short MUAPs, while chronic neurogenic disease gives large, long MUAPs",
+    "Myopathy: small, short MUAPs; chronic neurogenic disease: large, long MUAPs",
     "EMG directly measures serum creatine kinase",
     "Myopathy produces giant long-duration MUAPs; neuropathy produces tiny short MUAPs",
     "Normal relaxed skeletal muscle shows continuous high-voltage fibrillation potentials"
    ],
    "answer": 0,
-   "explain": "In myopathies, loss of individual myofibers within motor units shrinks MUAP amplitude/duration so more units must be recruited early; in chronic neuropathies, surviving motor axons sprout to reinnervate orphaned fibers, creating giant MUAPs with reduced recruitment.",
+   "explain": "In myopathies, loss of individual myofibers within motor units shrinks MUAP amplitude/duration so more units must be recruited early; in chronic neuropathies, surviving motor axons sprout to reinnervate orphaned fibers, creating giant MUAPs with reduced recruitment. Key detail: EMG records muscle electrical activity; myopathy gives small, short MUAPs, while chronic neurogenic disease gives large, long MUAPs.",
    "verified": false,
    "open": {
     "q": "Contrast needle EMG motor unit action potential (MUAP) amplitude, duration, and recruitment in a primary myopathy versus chronic neurogenic denervation.",
@@ -1811,12 +1811,12 @@
    "q": "Which four pathways clear cytosolic Ca2+ to allow smooth muscle relaxation once excitatory stimulation ends?",
    "options": [
     "Only diffusion of calcium through nuclear pores",
-    "SERCA, PMCA, NCX and mitochondrial uptake lower cytosolic calcium; MLCP dephosphorylates myosin",
+    "SERCA, PMCA, NCX and mitochondria lower Ca2+; MLCP dephosphorylates myosin",
     "Opening L-type calcium channels and activating MLCK",
     "Hydrolysis of actin by calpain proteases"
    ],
    "answer": 1,
-   "explain": "Unlike skeletal muscle (where SERCA alone handles nearly all Ca2+ cycling), smooth muscle relies heavily on both SR SERCA and sarcolemmal Ca2+ extrusion (PMCA and NCX) plus MLCP activation to terminate contraction.",
+   "explain": "Unlike skeletal muscle (where SERCA alone handles nearly all Ca2+ cycling), smooth muscle relies heavily on both SR SERCA and sarcolemmal Ca2+ extrusion (PMCA and NCX) plus MLCP activation to terminate contraction. Key detail: SERCA, PMCA, NCX and mitochondrial uptake lower cytosolic calcium; MLCP dephosphorylates myosin.",
    "verified": false,
    "open": {
     "q": "Name three Ca2+ transport mechanisms that lower cytosolic Ca2+ to initiate smooth muscle relaxation.",
@@ -1834,12 +1834,12 @@
    "q": "What is the 'myogenic response' (Bayliss effect) in arteriolar vascular smooth muscle?",
    "options": [
     "Reflex vasodilation caused by parasympathetic vagal stimulation",
-    "Raised pressure stretches arteriolar smooth muscle, causing depolarisation, calcium entry and vasoconstriction",
+    "Pressure stretch depolarises arteriolar muscle, increasing Ca2+ entry and constriction",
     "Release of acetylcholine from vascular endothelial cells",
     "Skeletal muscle shivering in cold weather"
    ],
    "answer": 1,
-   "explain": "Independent of extrinsic nerves or endothelium, elevated arterial pressure stretches arteriolar smooth muscle, opening mechanosensitive channels (TRPC6/TRPM4/ENaC) and Cav1.2 channels to maintain constant renal, cerebral, and coronary blood flow.",
+   "explain": "Independent of extrinsic nerves or endothelium, elevated arterial pressure stretches arteriolar smooth muscle, opening mechanosensitive channels (TRPC6/TRPM4/ENaC) and Cav1.2 channels to maintain constant renal, cerebral, and coronary blood flow. Key detail: Raised pressure stretches arteriolar smooth muscle, causing depolarisation, calcium entry and vasoconstriction.",
    "verified": false,
    "open": {
     "q": "Explain the Bayliss myogenic response in vascular smooth muscle and its physiological purpose.",
@@ -1856,13 +1856,13 @@
    "sub": "Comparative Muscle Ultrastructure",
    "q": "Compare the sarcoplasmic reticulum (SR) abundance and T-tubule presence across skeletal, cardiac, and smooth muscle.",
    "options": [
-    "Skeletal: extensive SR and T-tubules; cardiac: moderate SR and T-tubules; smooth: sparse SR and caveolae instead of T-tubules",
+    "Skeletal: abundant SR/T-tubules; cardiac: moderate SR/T-tubules; smooth: sparse SR/caveolae",
     "Smooth muscle has the most extensive T-tubule system",
     "Skeletal muscle lacks sarcoplasmic reticulum",
     "Cardiac ventricular myocytes have no T-tubules"
    ],
    "answer": 0,
-   "explain": "Because skeletal fibers are large (up to 100 um diameter) and contract rapidly without extracellular Ca2+, they require dense SR stores and rapid T-tubule conduction; small spindle-shaped smooth muscle cells (2-10 um) rely largely on extracellular Ca2+ entry.",
+   "explain": "Because skeletal fibers are large (up to 100 um diameter) and contract rapidly without extracellular Ca2+, they require dense SR stores and rapid T-tubule conduction; small spindle-shaped smooth muscle cells (2-10 um) rely largely on extracellular Ca2+ entry. Key detail: Skeletal: extensive SR and T-tubules; cardiac: moderate SR and T-tubules; smooth: sparse SR and caveolae instead of T-tubules.",
    "verified": false,
    "open": {
     "q": "Compare T-tubule presence and sarcoplasmic reticulum development among skeletal, cardiac, and smooth muscle.",
@@ -1880,12 +1880,12 @@
    "q": "Why does 'delayed-onset muscle soreness' (DOMS) peak 24 to 72 hours after unaccustomed eccentric exercise (such as downhill running or lowering heavy weights)?",
    "options": [
     "DOMS results from lactic acid remaining trapped in muscle for several days",
-    "Eccentric loading causes sarcomere and Z-disc microdamage, followed by local inflammation and nociceptor sensitization",
+    "Eccentric contractions cause sarcomere/Z-disc microdamage and delayed inflammation",
     "DOMS is caused by complete interruption of arterial supply during exercise",
     "DOMS results from conversion of muscle fibres into fibrous connective tissue"
    ],
    "answer": 1,
-   "explain": "Blood and muscle lactate return to baseline within 1 hour of exercise; DOMS reflects ultrastructural sarcomere microdamage and sterile inflammatory repair triggered by high-force eccentric strain.",
+   "explain": "Blood and muscle lactate return to baseline within 1 hour of exercise; DOMS reflects ultrastructural sarcomere microdamage and sterile inflammatory repair triggered by high-force eccentric strain. Key detail: Eccentric loading causes sarcomere and Z-disc microdamage, followed by local inflammation and nociceptor sensitization.",
    "verified": false,
    "open": {
     "q": "Why are eccentric contractions more likely to cause delayed-onset muscle soreness (DOMS) than concentric contractions, and why is lactic acid NOT the cause?",
@@ -1925,13 +1925,13 @@
    "sub": "Clinical Correlations",
    "q": "A 22-year-old man presents with progressive inability to relax his grip after shaking hands (grip myotonia), frontal balding, cataracts, cardiac conduction block, and distal muscle weakness. Genetic testing shows an expanded CTG trinucleotide repeat in the DMPK gene (myotonic dystrophy type 1). What is the molecular pathogenesis of myotonic dystrophy type 1?",
    "options": [
-    "Expanded CUG-repeat RNA sequesters MBNL1, disrupting ClC-1 splicing and reducing muscle chloride conductance",
+    "Expanded CUG RNA sequesters MBNL1, disrupting ClC-1 splicing and reducing chloride conductance",
     "Complete absence of dystrophin protein at the Z-disc",
     "Autoantibodies against presynaptic P/Q-type calcium channels",
     "Deficiency of lysosomal acid maltase"
    ],
    "answer": 0,
-   "explain": "Normally, high resting Cl- conductance (~70-80% of resting sarcolemmal conductance) stabilizes skeletal muscle membrane potential against K+ buildup inside narrow T-tubules during repetitive firing; loss of ClC-1 channels causes T-tubular K+ depolarization to trigger after-discharges (myotonia).",
+   "explain": "Normally, high resting Cl- conductance (~70-80% of resting sarcolemmal conductance) stabilizes skeletal muscle membrane potential against K+ buildup inside narrow T-tubules during repetitive firing; loss of ClC-1 channels causes T-tubular K+ depolarization to trigger after-discharges (myotonia). Key detail: Expanded CUG-repeat RNA sequesters MBNL1, disrupting ClC-1 splicing and reducing muscle chloride conductance.",
    "verified": false,
    "open": {
     "q": "Explain why skeletal muscle normally has an unusually high resting Cl- permeability (~70-80% of resting conductance) and what happens when ClC-1 channels are lost (myotonia congenita / myotonic dystrophy).",
@@ -1948,13 +1948,13 @@
    "sub": "Clinical Correlations",
    "q": "A 17-year-old male athlete develops severe painful muscle cramps, dark tea-colored urine (myoglobinuria), and a 'second-wind' phenomenon (marked improvement in exercise tolerance after ~10 minutes of moderate exertion) during sprint workouts. Forearm ischemic exercise testing shows no rise in venous lactate. Which enzyme deficiency causes McArdle disease (glycogen storage disease type V)?",
    "options": [
-    "Muscle glycogen phosphorylase deficiency limits glycogen use during exercise, causing cramps and a second-wind phenomenon",
+    "Myophosphorylase deficiency blocks muscle glycogen use, causing cramps and second wind",
     "Hepatic glucose-6-phosphatase deficiency",
     "Skeletal muscle dystrophin deficiency",
     "Acetylcholinesterase deficiency"
    ],
    "answer": 0,
-   "explain": "Without myophosphorylase, skeletal muscle cannot mobilize endogenous glycogen for rapid anaerobic glycolysis at exercise onset, causing cramps and rhabdomyolysis until exercise-induced vasodilation supplies exogenous blood glucose and fatty acids.",
+   "explain": "Without myophosphorylase, skeletal muscle cannot mobilize endogenous glycogen for rapid anaerobic glycolysis at exercise onset, causing cramps and rhabdomyolysis until exercise-induced vasodilation supplies exogenous blood glucose and fatty acids. Key detail: Muscle glycogen phosphorylase deficiency limits glycogen use during exercise, causing cramps and a second-wind phenomenon.",
    "verified": false,
    "open": {
     "q": "Identify the deficient enzyme in McArdle disease and explain the physiological basis of its characteristic 'second-wind' phenomenon.",
@@ -1971,13 +1971,13 @@
    "sub": "Clinical Correlations",
    "q": "A 38-year-old man is trapped under collapsed concrete for 8 hours following an earthquake. Shortly after extrication, he develops dark brown urine, oliguric acute kidney injury, serum creatine kinase of 85,000 U/L, and peaked T waves with serum K+ of 7.4 mEq/L. What is the pathophysiological cascade of traumatic rhabdomyolysis?",
    "options": [
-    "ATP depletion impairs ion pumps, causing calcium overload, muscle breakdown and release of potassium and myoglobin",
+    "ATP depletion causes Ca2+ overload and myocyte rupture, releasing K+ and myoglobin",
     "Excess dystrophin synthesis damages renal tubules",
     "Hyperpolarisation of muscle membranes to −150 mV",
     "Autoimmune destruction of Schwann cells"
    ],
    "answer": 0,
-   "explain": "Skeletal muscle holds the body's largest intracellular K+ and myoglobin stores; sarcolemmal rupture releases K+ (causing fatal arrhythmias) and myoglobin (causing renal tubular obstruction, heme-induced free radical injury, and renal vasoconstriction).",
+   "explain": "Skeletal muscle holds the body's largest intracellular K+ and myoglobin stores; sarcolemmal rupture releases K+ (causing fatal arrhythmias) and myoglobin (causing renal tubular obstruction, heme-induced free radical injury, and renal vasoconstriction). Key detail: ATP depletion impairs ion pumps, causing calcium overload, muscle breakdown and release of potassium and myoglobin.",
    "verified": false,
    "open": {
     "q": "Explain why extensive skeletal muscle crush injury (rhabdomyolysis) causes both life-threatening hyperkalemia and acute kidney injury.",
@@ -1994,13 +1994,13 @@
    "sub": "Clinical Correlations",
    "q": "A 52-year-old woman with systemic lupus erythematosus treated with high-dose oral prednisone for 6 months develops insidious symmetric proximal hip and shoulder weakness (difficulty climbing stairs and combing hair) with normal serum creatine kinase and normal nerve conduction studies. Which mechanism explains steroid myopathy?",
    "options": [
-    "Glucocorticoids increase ubiquitin–proteasome protein breakdown and suppress IGF-1/mTOR synthesis, preferentially atrophying fast fibres",
+    "Glucocorticoids increase ubiquitin–proteasome breakdown and suppress IGF-1/mTOR synthesis, atrophying type II fibres",
     "Autoantibodies destroy postsynaptic acetylcholine receptors at the neuromuscular junction",
     "A gain-of-function mutation in RyR1 causes sustained calcium release from the sarcoplasmic reticulum",
     "Demyelination of dorsal root ganglia prevents sensory conduction to proximal muscles"
    ],
    "answer": 0,
-   "explain": "Exogenous or endogenous glucocorticoids (Cushing syndrome) stimulate myofibrillar protein breakdown and inhibit amino acid uptake, preferentially shrinking fast-twitch Type II fibers without inflammatory necrosis (so serum CK remains normal).",
+   "explain": "Exogenous or endogenous glucocorticoids (Cushing syndrome) stimulate myofibrillar protein breakdown and inhibit amino acid uptake, preferentially shrinking fast-twitch Type II fibers without inflammatory necrosis (so serum CK remains normal). Key detail: Glucocorticoids increase ubiquitin–proteasome protein breakdown and suppress IGF-1/mTOR synthesis, preferentially atrophying fast fibres.",
    "verified": false,
    "open": {
     "q": "Which skeletal muscle fiber type is preferentially atrophied in glucocorticoid-induced (steroid) myopathy, and why is serum creatine kinase typically normal?",
@@ -2017,13 +2017,13 @@
    "sub": "Clinical Correlations",
    "q": "A 46-year-old woman presents with progressive painless proximal muscle weakness, heliotrope violaceous rash around the eyelids, Gottron papules over the knuckles, and elevated serum creatine kinase (4,200 U/L). Muscle biopsy shows perifascicular atrophy and perivascular CD4+ T-cell/B-cell infiltrates with complement membrane attack complex deposition in endomysial capillaries. What is the diagnosis?",
    "options": [
-    "Dermatomyositis (complement-mediated microangiopathy leading to perifascicular myofiber ischemia and necrosis)",
+    "Dermatomyositis: complement-mediated capillary injury causes perifascicular muscle atrophy",
     "Lambert-Eaton myasthenic syndrome",
     "Myasthenia gravis",
     "McArdle glycogen storage disease"
    ],
    "answer": 0,
-   "explain": "Dermatomyositis is an idiopathic inflammatory myopathy characterized by humoral complement-mediated destruction of endomysial capillaries causing perifascicular atrophy and classic cutaneous findings, whereas polymyositis involves direct CD8+ T-cell invasion of healthy MHC-I-expressing myofibers.",
+   "explain": "Dermatomyositis is an idiopathic inflammatory myopathy characterized by humoral complement-mediated destruction of endomysial capillaries causing perifascicular atrophy and classic cutaneous findings, whereas polymyositis involves direct CD8+ T-cell invasion of healthy MHC-I-expressing myofibers. Key detail: Dermatomyositis (complement-mediated microangiopathy leading to perifascicular myofiber ischemia and necrosis).",
    "verified": false,
    "open": {
     "q": "Contrast the primary immunopathological mechanisms of dermatomyositis versus polymyositis on muscle biopsy.",
