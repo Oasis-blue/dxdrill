@@ -79,10 +79,10 @@
    "sub": "Gram Stain Mechanism and Cell Wall Architecture",
    "q": "Why are Gram-negative bacilli intrinsically resistant to large hydrophilic glycopeptide antibiotics such as vancomycin?",
    "options": [
-    "Vancomycin molecules are too large to pass through the narrow water-filled outer membrane porin channels to reach peptidoglycan precursors",
-    "Gram-negative bacteria completely lack D-alanyl-D-alanine termini in their peptidoglycan",
-    "Gram-negative bacteria secrete periplasmic vancomycinases that cleave the drug",
-    "Vancomycin binds exclusively to lipopolysaccharide O-antigen side chains"
+    "Vancomycin is too large to cross Gram-negative outer-membrane porins and reach peptidoglycan",
+    "Gram-negative bacteria lack D-alanyl-D-alanine termini",
+    "Gram-negative bacteria secrete vancomycinases",
+    "Vancomycin binds only to lipopolysaccharide O-antigen"
    ],
    "answer": 0,
    "explain": "Vancomycin has a high molecular weight (~1450 Da) that prevents diffusion across the lipid bilayer or through the small beta-barrel porins of the Gram-negative outer membrane, restricting its spectrum to Gram-positive organisms.",
@@ -148,9 +148,9 @@
    "sub": "Gram-Positive Cocci: Staphylococci",
    "q": "How does Protein A on the surface of Staphylococcus aureus help the bacterium evade humoral immunity and opsonophagocytosis?",
    "options": [
-    "Protein A binds the Fc region of IgG, impairing opsonisation and phagocyte recognition",
+    "Protein A binds the Fc region of IgG, impairing opsonisation",
     "It cleaves secretory IgA into Fab fragments",
-    "It degrades C5a before neutrophils can migrate",
+    "It degrades C5a before neutrophil migration",
     "It coats the bacterium with red-cell sialic acid"
    ],
    "answer": 0,
@@ -171,10 +171,10 @@
    "sub": "Gram-Positive Cocci: Staphylococci",
    "q": "What is the molecular mechanism of methicillin resistance in methicillin-resistant Staphylococcus aureus (MRSA)?",
    "options": [
-    "Acquisition of the mecA gene encoding an altered penicillin-binding protein (PBP2a) with markedly reduced affinity for beta-lactam antibiotics",
-    "Hyperproduction of a plasmid-encoded narrow-spectrum penicillinase inhibited by clavulanate",
-    "Overexpression of multi-drug efflux pumps that expel vancomycin from the cytoplasm",
-    "Substitution of D-alanyl-D-lactate in peptidoglycan precursors"
+    "The mecA gene encodes PBP2a, which has low affinity for beta-lactams",
+    "A plasmid penicillinase is overproduced and inhibited by clavulanate",
+    "Efflux pumps remove vancomycin from the cytoplasm",
+    "D-alanyl-D-lactate replaces D-alanyl-D-alanine"
    ],
    "answer": 0,
    "explain": "MRSA carries the SCCmec chromosomal cassette containing mecA, which encodes PBP2a—a transpeptidase that continues cross-linking peptidoglycan even when native PBPs are inhibited by penicillins and cephalosporins (except fifth-generation ceftaroline).",
@@ -426,10 +426,10 @@
    "sub": "Gram-Negative Cocci: Neisseria",
    "q": "Why does Neisseria gonorrhoeae lack a polysaccharide capsule yet repeatedly evade host humoral immunity, causing recurrent reinfection and thwarting vaccine development?",
    "options": [
-    "High-frequency antigenic and phase variation of surface pilin proteins and Opa outer membrane proteins, plus secretion of IgA1 protease",
-    "Production of a poly-D-glutamic acid capsule identical to Bacillus anthracis",
-    "Exclusive intracellular replication inside circulating mature erythrocytes",
-    "Complete absence of surface outer membrane proteins"
+    "Antigenic and phase variation of pilin and Opa proteins, together with IgA1 protease",
+    "A poly-D-glutamic acid capsule",
+    "Exclusive replication inside mature erythrocytes",
+    "Complete absence of outer-membrane proteins"
    ],
    "answer": 0,
    "explain": "Neisseria gonorrhoeae undergoes gene conversion between silent pilS loci and the expressed pilE locus to generate millions of antigenically distinct pilus variants, alongside slipped-strand mispairing of Opa proteins and cleavage of mucosal secretory IgA1.",
@@ -449,10 +449,10 @@
    "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
    "q": "Which universal biochemical features characterize all members of the family Enterobacteriaceae (such as Escherichia, Klebsiella, Salmonella, Shigella, and Proteus)?",
    "options": [
-    "Facultative anaerobic Gram-negative rods that ferment glucose, reduce nitrates to nitrites, and are cytochrome oxidase-negative",
-    "Strictly aerobic Gram-negative rods that are oxidase-positive and fail to ferment glucose",
-    "Spore-forming Gram-positive rods that require 10% carbon dioxide for growth",
-    "Acid-fast bacilli rich in mycolic acids that divide every 24 hours"
+    "Facultative anaerobic Gram-negative rods that ferment glucose, reduce nitrate and are oxidase-negative",
+    "Strictly aerobic Gram-negative rods that are oxidase-positive",
+    "Spore-forming Gram-positive rods requiring 10% carbon dioxide",
+    "Acid-fast bacilli rich in mycolic acids"
    ],
    "answer": 0,
    "explain": "All Enterobacteriaceae are oxidase-negative, catalase-positive, glucose-fermenting, nitrate-reducing facultative anaerobic Gram-negative bacilli; MacConkey agar further subdivides them into lactose fermenters (pink colonies: E. coli, Klebsiella, Enterobacter) and non-lactose fermenters (colourless colonies: Salmonella, Shigella, Proteus).",
@@ -541,7 +541,7 @@
    "sub": "Gram-Negative Bacilli: Enterobacteriaceae",
    "q": "Proteus mirabilis exhibits characteristic concentric 'swarming' waves on blood agar and strongly predisposes patients with urinary tract infections to magnesium ammonium phosphate (struvite) staghorn renal calculi via which enzyme?",
    "options": [
-    "Urease hydrolyses urea to ammonia, alkalinising urine and promoting struvite stones",
+    "Urease converts urea to ammonia, alkalinising urine and promoting struvite stones",
     "Coagulase converts fibrinogen to fibrin",
     "Neuraminidase removes sialic acid from erythrocytes",
     "Collagenase destroys connective tissue"
@@ -609,10 +609,10 @@
    "sub": "Curved and Non-Fermenting Gram-Negative Bacilli",
    "q": "How does Helicobacter pylori survive the extreme acidity of the human gastric lumen to colonize the gastric antral mucus layer and cause peptic ulcer disease?",
    "options": [
-    "Urease generates ammonia from urea, buffering acid around the organism in gastric mucus",
+    "Urease generates ammonia from urea, buffering acid around the organism",
     "It forms endospores coated with dipicolinic acid",
-    "It invades parietal cells and destroys all proton pumps",
-    "It secretes chitin cell walls like fungi"
+    "It invades parietal cells and destroys proton pumps",
+    "It secretes chitin cell walls"
    ],
    "answer": 0,
    "explain": "Helicobacter pylori (a helical, oxidase-positive, catalase-positive, strongly urease-positive rod) uses rapid urease activity to buffer gastric acid locally—a property exploited diagnostically by the urea breath test and rapid urease (CLO) biopsy test.",
@@ -654,10 +654,10 @@
    "sub": "Fastidious Gram-Negative Coccobacilli and Anaerobes",
    "q": "Why does Haemophilus influenzae require chocolate agar (heated blood agar) rather than standard unheated sheep blood agar for primary laboratory isolation?",
    "options": [
-    "Heating lyses erythrocytes to release intracellular Factor X (haemin) and Factor V (NAD) while inactivating serum NADases that would otherwise destroy Factor V",
-    "Chocolate agar contains 10% sodium chloride required to prevent osmotic lysis of Haemophilus",
-    "Haemophilus influenzae is an obligate intracellular parasite that grows only inside lysed red cell ghosts",
-    "Chocolate agar lowers the pH to 3.5 to inhibit all competing streptococci"
+    "Heating lyses red cells, releasing Factors X and V and inactivating NADases",
+    "Chocolate agar contains 10% sodium chloride",
+    "H. influenzae grows only inside red-cell ghosts",
+    "Chocolate agar has a pH of 3.5"
    ],
    "answer": 0,
    "explain": "Haemophilus influenzae requires both haemin (Factor X) and nicotinamide adenine dinucleotide (Factor V); intact sheep red blood cells retain Factor V intracellularly and sheep serum contains NAD-destroying enzymes, both of which are resolved by heating blood agar to make chocolate agar (or by satellitism around Staphylococcus aureus).",
