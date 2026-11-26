@@ -635,6 +635,101 @@
           "+132"
         ]
       }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-028",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Gene Expression and Protein Synthesis",
+      "q": "A mature red blood cell lacks a nucleus and cannot transcribe new messenger RNA. In a nucleated hepatocyte, which RNA molecule carries a protein-coding sequence from DNA-derived transcripts to ribosomes for translation?",
+      "options": [
+        "Transfer RNA (tRNA)",
+        "Messenger RNA (mRNA)",
+        "Ribosomal RNA (rRNA)",
+        "MicroRNA (miRNA)"
+      ],
+      "answer": 1,
+      "explain": "Messenger RNA carries the codon sequence copied from a gene to the ribosome, where it serves as the template for protein synthesis. Transfer RNA delivers amino acids, ribosomal RNA forms the structural and catalytic core of ribosomes, and microRNAs regulate gene expression by binding target mRNAs.",
+      "verified": false,
+      "open": {
+        "q": "Which type of RNA carries the protein-coding message from a transcribed gene to ribosomes for translation?",
+        "accept": [
+          "Messenger RNA",
+          "mRNA"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Endocytosis and Intracellular Digestion",
+      "q": "A macrophage engulfs a bacterium by extending pseudopodia around it. Which sequence best describes the subsequent intracellular handling of the bacterium?",
+      "options": [
+        "Formation of a phagosome, fusion with lysosomes, and enzymatic digestion",
+        "Fusion of the bacterium directly with the nucleolus, followed by DNA degradation",
+        "Transport into the Golgi apparatus for packaging into secretory vesicles",
+        "Passive diffusion of the bacterium through the plasma membrane into the cytosol"
+      ],
+      "answer": 0,
+      "explain": "Phagocytosis is an energy-dependent form of endocytosis in which the cell membrane and actin cytoskeleton help enclose a large particle in a phagosome. The phagosome then matures and fuses with lysosomes; lysosomal hydrolases digest the engulfed material. Pinocytosis similarly internalises extracellular fluid and dissolved substances, but does not require engulfment of a large particle.",
+      "verified": false,
+      "open": {
+        "q": "Name the vesicle formed around an engulfed bacterium during phagocytosis and the organelle with which it fuses for intracellular digestion.",
+        "accept": [
+          "Phagosome; lysosome",
+          "Phagosome and lysosome",
+          "Phagolysosome formation"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gene Expression and Protein Synthesis",
+      "q": "Neurons and hepatocytes in the same individual contain essentially the same genome but produce markedly different sets of proteins. What best accounts for this difference?",
+      "options": [
+        "Each cell type contains a different number of genes",
+        "Each cell type selectively expresses and represses different genes",
+        "The DNA sequence is routinely replaced as cells differentiate",
+        "Hepatocytes translate genes while neurons do not"
+      ],
+      "answer": 1,
+      "explain": "Most somatic cells retain the same genome, but differentiation produces cell-specific patterns of gene expression. Regulatory mechanisms determine which genes are transcribed and how their RNA products are processed, translated and regulated. Consequently, different cell types synthesise different protein complements without needing different sets of genes.",
+      "verified": false,
+      "open": {
+        "q": "Why do neurons and hepatocytes express different protein profiles despite having essentially the same genome?",
+        "accept": [
+          "Cell-specific differential gene expression",
+          "Selective expression and repression of genes",
+          "Different patterns of gene expression"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-031",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Gene Expression and Protein Synthesis",
+      "q": "A regulatory RNA in a cell binds complementary sequences in a target messenger RNA and reduces production of the encoded protein. Which mechanism is most consistent with this finding?",
+      "options": [
+        "A microRNA-containing silencing complex represses translation or promotes target mRNA degradation",
+        "A transfer RNA removes the coding sequence from DNA",
+        "Ribosomal RNA initiates DNA replication at the target gene",
+        "A microRNA acts as the amino-acid template during translation"
+      ],
+      "answer": 0,
+      "explain": "MicroRNAs are short regulatory RNAs processed from precursor molecules. Incorporated into an RNA-induced silencing complex, they recognise complementary sequences in target mRNAs and can inhibit translation or promote mRNA destabilisation and degradation. They do not serve as templates for protein synthesis.",
+      "verified": false,
+      "open": {
+        "q": "How can a microRNA reduce the expression of a target protein after binding to its messenger RNA?",
+        "accept": [
+          "By repressing translation or promoting mRNA degradation",
+          "Translation repression and/or mRNA degradation",
+          "Through an RNA-induced silencing complex"
+        ]
+      }
     }
   ]
 }
