@@ -448,10 +448,10 @@
    "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
    "q": "During an acute drop in arterial blood pressure (such as standing up rapidly or acute hemorrhage), how does the carotid sinus baroreceptor reflex restore blood pressure?",
    "options": [
-    "Increased baroreceptor firing stimulates the nucleus ambiguus and inhibits the rostral ventrolateral medulla (RVLM)",
-    "Increased baroreceptor firing causes systemic vasodilation and bradycardia",
-    "Baroreceptors secrete norepinephrine directly into the carotid artery",
-    "Decreased baroreceptor stretch reduces afferent firing to the NTS, disinhibiting the RVLM to increase sympathetic vasoconstriction, contractility, and heart rate while reducing vagal tone"
+    "Increased baroreceptor firing stimulates the nucleus ambiguus and inhibits the RVLM",
+    "Increased baroreceptor firing causes vasodilation and bradycardia",
+    "Baroreceptors secrete norepinephrine into the carotid artery",
+    "Reduced baroreceptor stretch lowers NTS firing, increasing sympathetic and reducing vagal output"
    ],
    "answer": 3,
    "explain": "Baroreceptors are tonically active at normal BP (~95 mmHg). A fall in BP decreases stretch and NTS firing, which reduces parasympathetic vagal output and disinhibits sympathetic vasomotor neurons in the RVLM, raising HR, SV, and TPR.",
@@ -471,10 +471,10 @@
    "sub": "Short-Term Neural Regulation: Baroreceptor Reflex",
    "q": "What is the CNS ischemic response (and Cushing reflex), and at what arterial pressure threshold does it become maximally activated?",
    "options": [
-    "CNS ischaemic response: powerful sympathetic vasoconstriction when MAP falls below about 60 mmHg, maximal at roughly 15–20 mmHg; raised ICP can trigger the Cushing response",
-    "Reflex vasodilation occurs when MAP rises above 140 mmHg",
-    "Vagal slowing of the heart is the main response to mild exercise",
-    "Renal sodium excretion is triggered by reduced plasma osmolarity"
+    "Severe cerebral hypoperfusion triggers intense sympathetic vasoconstriction, maximal near MAP 15–20 mmHg",
+    "Reflex vasodilation occurs when MAP exceeds 140 mmHg",
+    "Vagal slowing is the main response to mild exercise",
+    "Reduced plasma osmolarity triggers renal sodium excretion"
    ],
    "answer": 0,
    "explain": "When brain perfusion is severely compromised (MAP under 60 mmHg, maximal at 15-20 mmHg) or intracranial pressure exceeds MAP (Cushing triad: hypertension, bradycardia, irregular respiration), local CO2/acidosis directly excites the medullary vasomotor center to drive extreme sympathetic vasoconstriction.",
@@ -586,10 +586,10 @@
    "sub": "Humoral and Long-Term Regulation of Arterial Pressure",
    "q": "Why is the renal pressure natriuresis and diuresis mechanism considered the dominant long-term controller of arterial blood pressure?",
    "options": [
-    "Because renal baroreceptors reset completely within 24 hours like carotid sinus baroreceptors",
-    "Because it does not adapt and continues adjusting renal salt and water excretion until extracellular fluid volume and arterial pressure return to the exact equilibrium set point",
-    "Because the kidneys secrete epinephrine directly into the renal vein",
-    "Because glomerular filtration rate drops to zero whenever MAP exceeds 100 mmHg"
+    "Renal baroreceptors reset completely within 24 hours",
+    "It adjusts renal salt and water excretion until extracellular volume and pressure reach equilibrium",
+    "The kidneys secrete epinephrine directly into the renal vein",
+    "GFR falls to zero whenever MAP exceeds 100 mmHg"
    ],
    "answer": 1,
    "explain": "Unlike neural baroreceptors that adapt within 1 to 2 days, the renal-body fluid pressure natriuresis curve maintains infinite gain over days to weeks: any sustained hypertension requires a rightward shift of the renal function curve.",
@@ -632,10 +632,10 @@
    "sub": "Measurement of Arterial Blood Pressure",
    "q": "Using an adult blood pressure cuff that is too narrow or too short for a patient with a large muscular or obese arm produces which measurement error?",
    "options": [
-    "Falsely low blood pressure reading",
-    "No effect on systolic pressure, only zero diastolic pressure",
-    "Elimination of all Korotkoff sounds",
-    "Falsely high (overestimated) blood pressure reading because higher cuff inflation pressure is required to compress the deep brachial artery"
+    "Falsely low blood pressure",
+    "No effect on systolic pressure; diastolic pressure reads zero",
+    "Korotkoff sounds disappear",
+    "An undersized cuff overestimates blood pressure"
    ],
    "answer": 3,
    "explain": "Cuff bladder width should be ~40% of arm circumference and length ~80%; an undersized cuff fails to transmit pressure effectively to the artery, artificially elevating both systolic and diastolic readings.",
