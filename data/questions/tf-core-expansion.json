@@ -4042,6 +4042,186 @@
         "https://www.ncbi.nlm.nih.gov/books/NBK560688/",
         "https://www.ncbi.nlm.nih.gov/books/NBK279141/"
       ]
+    },
+    {
+      "id": "tf-pai-hypersensitivity-002",
+      "type": "tf",
+      "topic": "pai-hypersensitivity-and-allergy",
+      "level": 2,
+      "sub": "Mechanisms of hypersensitivity",
+      "q": "About the mechanisms of hypersensitivity reactions:",
+      "items": [
+        {
+          "text": "Type I hypersensitivity is mediated by allergen-specific IgE bound to mast cells and basophils.",
+          "answer": true,
+          "explain": "On re-exposure, allergen cross-links cell-bound IgE and triggers mediator release from mast cells and basophils."
+        },
+        {
+          "text": "Type II hypersensitivity typically involves antibodies directed against cell-surface or extracellular-matrix antigens.",
+          "answer": true,
+          "explain": "IgG or IgM can cause cell injury, inflammation or altered receptor function by binding to these targets."
+        },
+        {
+          "text": "Type III hypersensitivity is caused primarily by antigen-specific cytotoxic T lymphocytes.",
+          "answer": false,
+          "explain": "Type III reactions are driven by deposited antigen-antibody immune complexes; T-cell-mediated injury characterises type IV reactions."
+        },
+        {
+          "text": "Type IV hypersensitivity is mediated by sensitised T lymphocytes rather than antibodies.",
+          "answer": true,
+          "explain": "Delayed-type reactions involve T-cell cytokines and/or cytotoxic T-cell activity, typically developing over 48–72 hours."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK534841/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK560561/"
+      ]
+    },
+    {
+      "id": "tf-pai-hiv-001",
+      "type": "tf",
+      "topic": "pai-hiv-and-aids",
+      "level": 2,
+      "sub": "HIV pathogenesis",
+      "q": "About human immunodeficiency virus (HIV):",
+      "items": [
+        {
+          "text": "HIV is an enveloped retrovirus with an RNA genome.",
+          "answer": true,
+          "explain": "HIV belongs to the retrovirus family and carries two copies of positive-sense single-stranded RNA."
+        },
+        {
+          "text": "HIV reverse transcriptase converts viral RNA into DNA after entry into a susceptible cell.",
+          "answer": true,
+          "explain": "The resulting viral DNA can be transported into the nucleus and integrated into host-cell DNA."
+        },
+        {
+          "text": "The viral envelope glycoprotein gp120 binds to CD4 and a chemokine co-receptor during cell entry.",
+          "answer": true,
+          "explain": "After CD4 attachment, gp120 engages CCR5 or CXCR4, facilitating the conformational changes required for fusion."
+        },
+        {
+          "text": "HIV primarily targets mature erythrocytes because they express abundant CD4 receptors.",
+          "answer": false,
+          "explain": "HIV targets CD4-expressing cells, particularly CD4 T lymphocytes and cells of the monocyte/macrophage lineage; mature erythrocytes lack nuclei and CD4 receptors."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558989/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK554615/"
+      ]
+    },
+    {
+      "id": "tf-ps-antifungal-001",
+      "type": "tf",
+      "topic": "ps-antifungal-antiviral-and-antiprotozoal-drugs",
+      "level": 2,
+      "sub": "Antifungal drug mechanisms",
+      "q": "About commonly used systemic antifungal drugs:",
+      "items": [
+        {
+          "text": "Azole antifungals inhibit fungal lanosterol 14-alpha-demethylase and impair ergosterol synthesis.",
+          "answer": true,
+          "explain": "Inhibition of this cytochrome P450 enzyme disrupts ergosterol production and fungal cell-membrane function."
+        },
+        {
+          "text": "Amphotericin B binds ergosterol in fungal membranes and promotes membrane pore formation.",
+          "answer": true,
+          "explain": "Binding to ergosterol increases membrane permeability, causing leakage of intracellular contents."
+        },
+        {
+          "text": "Echinocandins inhibit synthesis of beta-(1,3)-D-glucan in the fungal cell wall.",
+          "answer": true,
+          "explain": "They inhibit the glucan synthase complex, weakening the fungal cell wall."
+        },
+        {
+          "text": "Flucytosine acts by directly inhibiting human thymidylate synthase after conversion by human cells.",
+          "answer": false,
+          "explain": "Fungal cells convert flucytosine to fluorinated metabolites, including 5-fluorouracil derivatives, which interfere with fungal RNA and DNA synthesis."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538168/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK548162/"
+      ]
+    },
+    {
+      "id": "tf-ps-anticonvulsants-001",
+      "type": "tf",
+      "topic": "ps-anticonvulsants-and-drugs-for-parkinsonism",
+      "level": 2,
+      "sub": "Valproate pharmacology",
+      "q": "About sodium valproate:",
+      "items": [
+        {
+          "text": "Valproate can increase central nervous system GABA concentrations.",
+          "answer": true,
+          "explain": "Its antiseizure actions include enhancement of GABAergic inhibition, alongside effects on voltage-gated ion channels."
+        },
+        {
+          "text": "Valproate can reduce high-frequency neuronal firing by affecting voltage-gated sodium channels.",
+          "answer": true,
+          "explain": "Use-dependent inhibition of voltage-gated sodium channels contributes to its broad-spectrum antiseizure activity."
+        },
+        {
+          "text": "Exposure to valproate during pregnancy is associated with an increased risk of neural tube defects.",
+          "answer": true,
+          "explain": "Valproate is a significant teratogen; prenatal exposure is associated with neural tube defects and other adverse neurodevelopmental outcomes."
+        },
+        {
+          "text": "Valproate is a suitable first-choice antiseizure medicine for every pregnant patient because it has no clinically important fetal risks.",
+          "answer": false,
+          "explain": "Valproate carries substantial fetal risks and should generally be avoided in pregnancy when clinically appropriate alternatives are available."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK559112/",
+        "https://www.gov.uk/drug-safety-update/valproate-use-by-women-and-girls"
+      ]
+    },
+    {
+      "id": "tf-pq-good-prescribing-001",
+      "type": "tf",
+      "topic": "pq-essential-drugs-list-and-good-prescribing",
+      "level": 2,
+      "sub": "Principles of rational prescribing",
+      "q": "About rational prescribing and the selection of medicines:",
+      "items": [
+        {
+          "text": "A rational prescription should be based on a clearly defined clinical problem and an appropriate therapeutic objective.",
+          "answer": true,
+          "explain": "The prescriber should identify the patient's problem, define the treatment goal and select a suitable intervention."
+        },
+        {
+          "text": "The prescriber's personal formulary or P-drug selection should take account of efficacy, safety, suitability and cost.",
+          "answer": true,
+          "explain": "A P-drug is selected for a defined indication using these practical criteria, then tailored to the individual patient."
+        },
+        {
+          "text": "Writing a generic medicine name can reduce ambiguity when equivalent products are available.",
+          "answer": true,
+          "explain": "Generic prescribing identifies the active ingredient and can reduce confusion caused by multiple brand names."
+        },
+        {
+          "text": "Once a medicine has been prescribed, checking adherence and monitoring response are unnecessary if the initial diagnosis was correct.",
+          "answer": false,
+          "explain": "Rational prescribing includes follow-up: assess effectiveness, adverse effects, adherence and whether treatment should be continued, changed or stopped."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://apps.who.int/iris/handle/10665/59001",
+        "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"
+      ]
     }
   ]
 }
