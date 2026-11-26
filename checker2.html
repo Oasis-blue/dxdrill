@@ -11,14 +11,20 @@
          margin: 0; padding: 16px; max-width: 1100px; line-height: 1.4; }
   h1 { font-size: 1.2rem; margin: 0 0 4px; }
   .sub { font-size: 0.85rem; opacity: 0.7; margin-bottom: 12px; }
-  textarea { width: 100%; min-height: 180px; font-family: ui-monospace, Menlo, monospace;
+  textarea { width: 100%; min-height: 160px; font-family: ui-monospace, Menlo, monospace;
              font-size: 0.85rem; padding: 8px; border-radius: 6px;
              border: 1px solid #888; background: transparent; color: inherit; }
   .row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; align-items: center; }
-  button { font: inherit; font-size: 0.9rem; padding: 6px 12px; border-radius: 6px;
-           border: 1px solid #555; background: #2a6df4; color: white; cursor: pointer; }
-  button.secondary { background: transparent; color: inherit; border-color: #888; }
+  button, label.btn {
+    font: inherit; font-size: 0.9rem; padding: 6px 12px; border-radius: 6px;
+    border: 1px solid #555; background: #2a6df4; color: white; cursor: pointer;
+    display: inline-block;
+  }
+  button.secondary, label.btn.secondary { background: transparent; color: inherit; border-color: #888; }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .fileRow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .fileRow input[type=file] { display: none; }
+  .fileName { font-size: 0.85rem; opacity: 0.7; font-family: ui-monospace, Menlo, monospace; }
   .stats { font-size: 0.9rem; margin: 8px 0; }
   .stats b { font-size: 1.05rem; }
   table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 8px; }
@@ -41,11 +47,17 @@
 
 <h1>DxDrill Option-Length Checker</h1>
 <div class="sub">
-  Flags MCQ questions where the correct option is conspicuously the longest
-  (a giveaway pattern in AI-generated questions). Paste one JSON file at a time.
+  Flags MCQ questions where the correct option is conspicuously the longest.
+  Upload a JSON file or paste the contents. Nothing leaves the browser.
 </div>
 
-<textarea id="input" placeholder='Paste the whole question file here, e.g.
+<div class="fileRow">
+  <label class="btn secondary" for="fileInput">Choose JSON file…</label>
+  <input type="file" id="fileInput" accept=".json,application/json">
+  <span class="fileName" id="fileName">No file chosen</span>
+</div>
+
+<textarea id="input" placeholder='Or paste the whole question file here, e.g.
 { "topic": "pr-...", "questions": [ {...}, {...} ] }
 or paste just an array: [ {...}, {...} ]'></textarea>
 
@@ -105,6 +117,8 @@ or paste just an array: [ {...}, {...} ]'></textarea>
 
   var $ = function (id) { return document.getElementById(id); };
   var inputEl    = $("input");
+  var fileInput  = $("fileInput");
+  var fileName   = $("fileName");
   var checkBtn   = $("checkBtn");
   var clearBtn   = $("clearBtn");
   var copyBtn    = $("copyBtn");
@@ -117,8 +131,6 @@ or paste just an array: [ {...}, {...} ]'></textarea>
   var cleanSummary = $("cleanSummary");
 
   var lastFlaggedIds = [];
-
-  // ---- helpers ---------------------------------------------------------
 
   function trimLen(str) {
     return String(str == null ? "" : str).replace(/^\s+|\s+$/g, "").length;
@@ -145,7 +157,7 @@ or paste just an array: [ {...}, {...} ]'></textarea>
     try {
       parsed = JSON.parse(text);
     } catch (e) {
-      throw new Error("JSON did not parse. Make sure you pasted the whole file and nothing else.\n\nParser said: " + e.message);
+      throw new Error("JSON did not parse.\n\nParser said: " + e.message);
     }
     var questions;
     if (Array.isArray(parsed)) {
@@ -159,20 +171,17 @@ or paste just an array: [ {...}, {...} ]'></textarea>
   }
 
   function analyse(q, threshold) {
-    // Only MCQ questions with 4 options participate.
     if (!q || q.type !== "mcq") return { skip: true };
     if (!Array.isArray(q.options) || q.options.length < 2) return { skip: true, reason: "no options" };
     var idx = q.answer;
     if (typeof idx !== "number" || idx < 0 || idx >= q.options.length) {
       return { skip: true, reason: "bad answer index" };
     }
-
     var lens = q.options.map(trimLen);
     var correct = lens[idx];
     var others = lens.filter(function (_, i) { return i !== idx; });
     var maxOther = Math.max.apply(null, others);
     var ratio = maxOther > 0 ? (correct / maxOther) : 0;
-
     return {
       skip: false,
       id: q.id || "(no id)",
@@ -194,52 +203,29 @@ or paste just an array: [ {...}, {...} ]'></textarea>
 
   function buildRow(a) {
     var tr = document.createElement("tr");
-
     var tdId = document.createElement("td");
-    tdId.className = "id";
-    tdId.textContent = a.id;
-    tr.appendChild(tdId);
-
+    tdId.className = "id"; tdId.textContent = a.id; tr.appendChild(tdId);
     var tdSlot = document.createElement("td");
-    tdSlot.className = "slot";
-    tdSlot.textContent = a.slot;
-    tr.appendChild(tdSlot);
-
+    tdSlot.className = "slot"; tdSlot.textContent = a.slot; tr.appendChild(tdSlot);
     var tdCorrect = document.createElement("td");
-    tdCorrect.textContent = a.correctLen;
-    tr.appendChild(tdCorrect);
-
+    tdCorrect.textContent = a.correctLen; tr.appendChild(tdCorrect);
     var tdMax = document.createElement("td");
-    tdMax.textContent = a.maxOtherLen;
-    tr.appendChild(tdMax);
-
+    tdMax.textContent = a.maxOtherLen; tr.appendChild(tdMax);
     var tdRatio = document.createElement("td");
     tdRatio.className = ratioClass(a.ratio, parseFloat(thresholdEl.value));
-    tdRatio.textContent = a.ratio.toFixed(2) + "x";
-    tr.appendChild(tdRatio);
-
-    // Option lengths row (only for flagged table)
+    tdRatio.textContent = a.ratio.toFixed(2) + "x"; tr.appendChild(tdRatio);
     var tdLens = document.createElement("td");
-    tdLens.className = "snippet";
-    tdLens.textContent = a.lens.join(" / ");
+    tdLens.className = "snippet"; tdLens.textContent = a.lens.join(" / ");
     tr.appendChild(tdLens);
-
     return tr;
   }
-
-  // ---- main action -----------------------------------------------------
 
   function runCheck() {
     clearError();
     var threshold = parseFloat(thresholdEl.value);
-
     var questions;
-    try {
-      questions = normaliseInput(inputEl.value);
-    } catch (e) {
-      setError(e.message);
-      return;
-    }
+    try { questions = normaliseInput(inputEl.value); }
+    catch (e) { setError(e.message); return; }
 
     var analysed = [];
     for (var i = 0; i < questions.length; i++) {
@@ -247,30 +233,24 @@ or paste just an array: [ {...}, {...} ]'></textarea>
       if (a.skip) continue;
       analysed.push(a);
     }
-
     if (analysed.length === 0) {
-      setError("No usable MCQ questions found. (Skipped non-mcq, or none had valid options/answer index.)");
+      setError("No usable MCQ questions found.");
       return;
     }
 
     var flagged = analysed.filter(function (a) { return a.flagged; });
     var clean   = analysed.filter(function (a) { return !a.flagged; });
 
-    // Fill tables
     flaggedTbody.innerHTML = "";
-    for (var f = 0; f < flagged.length; f++) {
-      flaggedTbody.appendChild(buildRow(flagged[f]));
-    }
+    for (var f = 0; f < flagged.length; f++) flaggedTbody.appendChild(buildRow(flagged[f]));
     cleanTbody.innerHTML = "";
     for (var c = 0; c < clean.length; c++) {
       var tr = buildRow(clean[c]);
-      // remove the last cell (options snippet) for the clean table
       tr.removeChild(tr.lastChild);
       cleanTbody.appendChild(tr);
     }
     cleanSummary.textContent = "Questions that pass (" + clean.length + ")";
 
-    // Stats
     var total = analysed.length;
     var pctFlagged = (flagged.length / total) * 100;
     statsBox.innerHTML =
@@ -278,9 +258,8 @@ or paste just an array: [ {...}, {...} ]'></textarea>
       "<b>" + flagged.length + "</b> flagged (" + pctFlagged.toFixed(0) + "%), " +
       "<b>" + clean.length + "</b> passing." +
       (flagged.length > 0
-        ? " <span style='opacity:0.7'>(correct option is the length outlier at threshold &gt; " + threshold.toFixed(2) + "x the next longest)</span>"
+        ? " <span style='opacity:0.7'>(threshold &gt; " + threshold.toFixed(2) + "x next longest)</span>"
         : " <span class='good'>File looks clean at this threshold.</span>");
-
     statsBox.classList.remove("hidden");
     resultsBox.classList.remove("hidden");
 
@@ -288,12 +267,28 @@ or paste just an array: [ {...}, {...} ]'></textarea>
     copyBtn.disabled = lastFlaggedIds.length === 0;
   }
 
-  // ---- buttons ---------------------------------------------------------
+  // ---- file upload -----------------------------------------------------
+  fileInput.addEventListener("change", function () {
+    var f = fileInput.files && fileInput.files[0];
+    if (!f) { fileName.textContent = "No file chosen"; return; }
+    fileName.textContent = f.name;
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      inputEl.value = ev.target.result || "";
+      runCheck();   // auto-run after upload
+    };
+    reader.onerror = function () {
+      setError("Could not read the file. Try again, or paste the contents instead.");
+    };
+    reader.readAsText(f);
+  });
 
   checkBtn.addEventListener("click", runCheck);
 
   clearBtn.addEventListener("click", function () {
     inputEl.value = "";
+    fileInput.value = "";
+    fileName.textContent = "No file chosen";
     clearError();
     statsBox.classList.add("hidden");
     resultsBox.classList.add("hidden");
@@ -318,18 +313,12 @@ or paste just an array: [ {...}, {...} ]'></textarea>
 
   function fallbackCopy(text, done) {
     var t = document.createElement("textarea");
-    t.value = text;
-    t.setAttribute("readonly", "");
-    t.style.position = "absolute";
-    t.style.left = "-9999px";
-    document.body.appendChild(t);
-    t.select();
+    t.value = text; t.setAttribute("readonly", ""); t.style.position = "absolute"; t.style.left = "-9999px";
+    document.body.appendChild(t); t.select();
     try { document.execCommand("copy"); } catch (e) {}
-    document.body.removeChild(t);
-    done();
+    document.body.removeChild(t); done();
   }
 
-  // Re-run automatically when the threshold changes
   thresholdEl.addEventListener("change", function () {
     if (inputEl.value.trim()) runCheck();
   });
