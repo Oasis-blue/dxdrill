@@ -124,10 +124,10 @@
    "sub": "Absorption",
    "q": "Why are most orally administered weak acids (such as aspirin) still absorbed predominantly in the small intestine rather than the stomach despite being more non-ionized in gastric acid?",
    "options": [
-    "The stomach has no blood supply to carry absorbed drugs away",
-    "The small intestine possesses an enormous absorptive surface area due to villi and microvilli and higher blood flow",
-    "Aspirin is actively pumped only by ileal enterocytes",
-    "Gastric mucus completely blocks all passive diffusion"
+    "The stomach has no blood supply",
+    "The small intestine has extensive villi, microvilli and blood flow",
+    "Aspirin is absorbed only by ileal pumps",
+    "Gastric mucus blocks all passive diffusion"
    ],
    "answer": 1,
    "explain": "Although the non-ionized fraction is higher in the stomach, the huge surface area of the small intestinal villi and microvilli plus rich splanchnic perfusion make the small intestine the primary site of absorption.",
@@ -171,10 +171,10 @@
    "sub": "Absorption",
    "q": "How is the oral bioavailability (F) of a drug mathematically defined?",
    "options": [
-    "Ratio of peak plasma concentration to elimination half-life",
-    "Volume of plasma cleared of drug per unit time",
-    "Ratio of unbound drug to total drug in systemic plasma",
-    "Fraction of an administered dose that reaches the systemic circulation in unchanged active form"
+    "Peak concentration divided by half-life",
+    "Plasma volume cleared of drug per unit time",
+    "Unbound-to-total plasma drug ratio",
+    "Fraction of dose reaching systemic blood unchanged"
    ],
    "answer": 3,
    "explain": "Bioavailability (F) is calculated as (AUC oral / AUC IV) x 100% for equal doses, representing the fraction of unchanged drug entering systemic circulation.",
@@ -240,10 +240,10 @@
    "sub": "Absorption",
    "q": "What is meant by bioequivalence between two pharmaceutical formulations containing the same active ingredient?",
    "options": [
-    "They are manufactured by the exact same pharmaceutical company",
-    "They have identical tablet color, shape, and excipient binders",
-    "They show no statistically significant difference in rate (Cmax, Tmax) and extent (AUC) of absorption",
-    "They both achieve 100% absolute bioavailability when swallowed"
+    "They are made by the same manufacturer",
+    "They have identical appearance and excipients",
+    "They show similar Cmax, Tmax and AUC",
+    "Both have 100% absolute bioavailability"
    ],
    "answer": 2,
    "explain": "Two drug products are bioequivalent if their bioavailability (rate and extent of systemic absorption) falls within accepted regulatory limits (typically 80% to 125% for 90% CI of AUC and Cmax).",
@@ -263,10 +263,10 @@
    "sub": "Absorption",
    "q": "Why does co-administration of oral tetracycline with milk or aluminium-magnesium antacids markedly reduce tetracycline absorption?",
    "options": [
-    "Antacids accelerate gastric emptying into the colon",
+    "Antacids accelerate gastric emptying",
     "Tetracycline is destroyed by alkaline pH",
-    "Milk induces intestinal CYP3A4 enzymes immediately",
-    "Tetracycline forms insoluble chelates with divalent and trivalent cations (Ca2+, Mg2+, Al3+)"
+    "Milk induces intestinal CYP3A4",
+    "Tetracycline chelates calcium, magnesium and aluminium"
    ],
    "answer": 3,
    "explain": "Tetracyclines and fluoroquinolones chelate polyvalent metal cations in the GI lumen to form non-absorbable complexes.",
@@ -470,10 +470,10 @@
    "sub": "Distribution",
    "q": "Why does an intravenous bolus of thiopental sodium produce general anesthesia within 15 to 20 seconds, yet the patient awakens within 5 to 10 minutes even though the drug's elimination half-life is over 10 hours?",
    "options": [
-    "Rapid redistribution of thiopental from the highly perfused brain to skeletal muscle and adipose tissue",
-    "Instantaneous renal clearance of unchanged thiopental within 5 minutes",
-    "Rapid conversion of thiopental to inactive metabolites inside neurons",
-    "Development of acute receptor tolerance within 3 minutes"
+    "Thiopental rapidly redistributes from brain to muscle and fat",
+    "The kidneys clear it unchanged within five minutes",
+    "Neurons rapidly metabolise it",
+    "Receptor tolerance develops within minutes"
    ],
    "answer": 0,
    "explain": "Thiopental is highly lipophilic and enters the richly perfused brain immediately, but its action terminates rapidly due to redistribution into less well-perfused muscle and fat stores.",
@@ -493,10 +493,10 @@
    "sub": "Distribution",
    "q": "Which structural feature of cerebral capillaries restricts the entry of polar, water-soluble drugs across the blood-brain barrier?",
    "options": [
-    "Large fenestrations between endothelial cells",
-    "Tight junctions (zonulae occludentes) between non-fenestrated endothelial cells surrounded by astrocyte foot processes",
-    "Absence of a basement membrane",
-    "High density of pinocytotic vesicles transporting polar solutes"
+    "Large endothelial fenestrations",
+    "Tight junctions between non-fenestrated endothelial cells, supported by astrocyte end-feet",
+    "Absence of basement membrane",
+    "High endothelial pinocytosis"
    ],
    "answer": 1,
    "explain": "Cerebral capillary endothelial cells lack fenestrations, are sealed by tight junctions, are enveloped by glial foot processes, and express efflux transporters like P-glycoprotein.",
@@ -516,10 +516,10 @@
    "sub": "Distribution",
    "q": "A patient with acute bacterial meningitis is treated with intravenous benzylpenicillin, which normally penetrates the blood-brain barrier poorly. Why does benzylpenicillin achieve therapeutic CSF concentrations in this patient?",
    "options": [
-    "Meningeal bacteria actively transport penicillin into neurons",
-    "Fever converts penicillin into a highly lipophilic ester",
-    "Meningeal inflammation disrupts tight junctions and increases blood-brain barrier permeability",
-    "Penicillin binds to cerebrospinal albumin to enter the ventricles"
+    "Bacteria actively transport penicillin into neurons",
+    "Fever converts penicillin into a lipid-soluble ester",
+    "Meningeal inflammation increases BBB permeability",
+    "Penicillin binds CSF albumin"
    ],
    "answer": 2,
    "explain": "Inflammation of the meninges increases capillary permeability and opens tight junctions, allowing hydrophilic antibiotics like penicillin G to reach therapeutic levels in CSF.",
@@ -539,10 +539,10 @@
    "sub": "Distribution",
    "q": "Why is levodopa administered rather than dopamine itself to treat Parkinson's disease?",
    "options": [
-    "Dopamine is destroyed by gastric acid before absorption",
-    "Levodopa has a half-life of 48 hours",
-    "Dopamine causes severe hepatic necrosis",
-    "Dopamine does not cross the BBB; levodopa enters via an amino-acid transporter and is converted in the brain"
+    "Dopamine is destroyed by gastric acid",
+    "Levodopa has a 48-hour half-life",
+    "Dopamine causes hepatic necrosis",
+    "Levodopa crosses the BBB via an amino-acid transporter and is converted to dopamine"
    ],
    "answer": 3,
    "explain": "Dopamine cannot cross the blood-brain barrier; its precursor levodopa enters the CNS via the LAT1 neutral amino acid carrier and is converted to dopamine by DOPA decarboxylase.",
@@ -585,10 +585,10 @@
    "sub": "Distribution",
    "q": "A pregnant woman with deep vein thrombosis requires anticoagulation. Why is unfractionated heparin or low-molecular-weight heparin preferred over warfarin during the first trimester and near term?",
    "options": [
-    "Heparin crosses the placenta and prevents fetal thrombosis",
-    "Heparin does not cross the placenta, whereas warfarin can cause fetal harm",
+    "Heparin crosses the placenta",
+    "Heparin does not cross placenta; warfarin can harm the fetus",
     "Warfarin is inactive during pregnancy",
-    "Heparin has a half-life of two weeks in pregnancy"
+    "Heparin has a two-week half-life"
    ],
    "answer": 1,
    "explain": "Heparin's high molecular weight and negative charge prevent placental transfer, avoiding fetal warfarin syndrome (nasal hypoplasia, stippled epiphyses) and fetal hemorrhage.",
@@ -608,10 +608,10 @@
    "sub": "Distribution",
    "q": "A premature neonate develops unconjugated hyperbilirubinaemia and is inadvertently given sulfisoxazole (a sulfonamide). Soon after, the infant develops kernicterus. What is the pharmacokinetic mechanism?",
    "options": [
-    "Sulfisoxazole directly inhibits hepatic glucuronyl transferase",
-    "It increases intestinal absorption of stercobilin",
-    "It displaces unconjugated bilirubin from albumin, increasing free bilirubin able to enter the brain",
-    "It causes severe haemolysis in every neonate"
+    "Sulfisoxazole inhibits glucuronyl transferase",
+    "It increases stercobilin absorption",
+    "It displaces unconjugated bilirubin from albumin, increasing free bilirubin",
+    "It causes haemolysis in every neonate"
    ],
    "answer": 2,
    "explain": "Sulfonamides compete with bilirubin for albumin binding; displaced free bilirubin crosses the immature neonatal blood-brain barrier and deposits in the basal ganglia (kernicterus).",
@@ -631,10 +631,10 @@
    "sub": "Biotransformation (Metabolism)",
    "q": "What is the primary chemical objective of drug biotransformation (metabolism) in the body?",
    "options": [
-    "To convert water-soluble drugs into lipid-soluble compounds for fat storage",
-    "To increase drug binding to plasma albumin",
-    "To enhance passive tubular reabsorption in the nephron",
-    "To convert lipophilic drugs into more polar, water-soluble metabolites for renal or biliary excretion"
+    "Make water-soluble drugs lipid-soluble for storage",
+    "Increase albumin binding",
+    "Increase passive tubular reabsorption",
+    "Make lipophilic drugs more polar for renal or biliary excretion"
    ],
    "answer": 3,
    "explain": "Lipophilic drugs are filtered at the glomerulus but passively reabsorbed across renal tubular cells; biotransformation adds or exposes polar groups so metabolites can be excreted.",
@@ -886,10 +886,10 @@
    "sub": "Biotransformation (Metabolism)",
    "q": "A 28-year-old woman stabilized on combined oral contraceptive pills is started on rifampicin and isoniazid for pulmonary tuberculosis. Two months later she becomes pregnant despite strict pill adherence. What caused contraceptive failure?",
    "options": [
-    "Isoniazid blocked oestrogen receptors in the endometrium",
-    "Rifampicin inhibited renal excretion of progesterone",
-    "Rifampicin induced hepatic CYP3A4, accelerating the clearance of ethinylestradiol and progestin",
-    "Rifampicin prevented gastric dissolution of the contraceptive tablets"
+    "Isoniazid blocks endometrial oestrogen receptors",
+    "Rifampicin inhibits progesterone excretion",
+    "Rifampicin induces CYP3A4, increasing contraceptive hormone clearance",
+    "Rifampicin prevents tablet dissolution"
    ],
    "answer": 2,
    "explain": "Rifampicin strongly induces hepatic CYP3A4, lowering circulating steroid hormone levels below the threshold required to suppress ovulation.",
@@ -909,10 +909,10 @@
    "sub": "Biotransformation (Metabolism)",
    "q": "A patient stabilized on warfarin is prescribed ketoconazole for a systemic fungal infection and subsequently presents with epistaxis and an INR of 7.2. What is the underlying mechanism?",
    "options": [
-    "Ketoconazole induces CYP2C9 and speeds up warfarin elimination",
-    "Ketoconazole stimulates hepatic synthesis of vitamin K-dependent clotting factors",
-    "Ketoconazole converts warfarin into an active thrombolytic enzyme",
-    "Ketoconazole inhibits cytochrome P450 enzymes, decreasing warfarin clearance and causing accumulation"
+    "Ketoconazole induces CYP2C9",
+    "Ketoconazole increases clotting-factor synthesis",
+    "Ketoconazole converts warfarin into a thrombolytic",
+    "Ketoconazole inhibits CYP enzymes, reducing warfarin clearance"
    ],
    "answer": 3,
    "explain": "Azole antifungals (ketoconazole, fluconazole, voriconazole) are potent CYP inhibitors that block warfarin metabolism, elevating plasma levels and bleeding risk.",
@@ -980,10 +980,10 @@
    "sub": "Excretion",
    "q": "Which three physiological processes in the nephron determine the net renal excretion of a drug?",
    "options": [
-    "Pinocytosis, osmosis, and active phagocytosis",
-    "Hepatic extraction, biliary secretion, and enterohepatic cycling",
-    "Glomerular filtration, active tubular secretion, and passive tubular reabsorption",
-    "Alveolar diffusion, mucociliary clearance, and exhalation"
+    "Pinocytosis, osmosis and phagocytosis",
+    "Hepatic extraction, biliary secretion and enterohepatic cycling",
+    "Glomerular filtration, tubular secretion and reabsorption",
+    "Alveolar diffusion and exhalation"
    ],
    "answer": 2,
    "explain": "Renal drug excretion = (Glomerular filtration + Tubular secretion) - Tubular reabsorption.",
@@ -1026,10 +1026,10 @@
    "sub": "Excretion",
    "q": "Why was probenecid historically co-administered with penicillin G during World War II and in single-dose gonorrhoea regimens?",
    "options": [
-    "Probenecid competes for proximal tubular organic anion transport and reduces penicillin secretion",
-    "It increases intestinal absorption of penicillin G by 500%",
-    "It directly inhibits bacterial beta-lactamase",
-    "It binds penicillin to erythrocyte haemoglobin"
+    "Probenecid competes for tubular organic-anion transport, reducing penicillin secretion",
+    "It increases intestinal absorption of penicillin",
+    "It inhibits bacterial beta-lactamase",
+    "It binds penicillin to haemoglobin"
    ],
    "answer": 0,
    "explain": "Probenecid is an organic acid that competitively inhibits OAT-mediated tubular secretion of penicillin, raising plasma penicillin levels and extending its duration of action.",
@@ -1049,9 +1049,9 @@
    "sub": "Excretion",
    "q": "A 24-year-old patient presents to the emergency room following an intentional overdose of aspirin (salicylate). Intravenous sodium bicarbonate is administered as part of management. How does sodium bicarbonate accelerate salicylate elimination?",
    "options": [
-    "It neutralises aspirin tablets in the stomach",
-    "It alkalinises urine, increasing ionisation and reducing tubular reabsorption of salicylate",
-    "It induces CYP3A4 to oxidise salicylate rapidly",
+    "It neutralises aspirin in the stomach",
+    "Urine alkalinisation increases salicylate ionisation and reduces reabsorption",
+    "It induces CYP3A4",
     "It chelates salicylate for biliary excretion"
    ],
    "answer": 1,
@@ -1095,10 +1095,10 @@
    "sub": "Excretion",
    "q": "What is enterohepatic circulation (enterohepatic recycling) and how does it affect a drug's pharmacokinetics?",
    "options": [
-    "Direct transport of drugs from the colon to the lungs via lymphatics, shortening half-life",
-    "Degradation of drugs by pancreatic lipase, causing immediate faecal loss",
-    "Active secretion of drugs from the stomach into the portal vein, reducing bioavailability",
-    "Biliary excretion of glucuronide conjugates followed by gut bacterial beta-glucuronidase hydrolysis and reabsorption of free drug, prolonging half-life"
+    "Drugs pass directly from colon to lungs",
+    "Pancreatic lipase degrades drugs",
+    "The stomach secretes drugs into portal blood",
+    "Biliary conjugates are deconjugated by gut bacteria and reabsorbed"
    ],
    "answer": 3,
    "explain": "Drugs like morphine, chloramphenicol, and ethinylestradiol are excreted in bile as glucuronides, cleaved by intestinal flora back to active lipophilic drug, and reabsorbed, extending their duration.",
@@ -1141,10 +1141,10 @@
    "sub": "Clinical Pharmacokinetics",
    "q": "Which characteristic defines first-order elimination kinetics, followed by most drugs at therapeutic concentrations?",
    "options": [
-    "A constant amount (mg) of drug is eliminated per unit time regardless of plasma concentration",
-    "A constant fraction (percentage) of the drug in the body is eliminated per unit time, proportional to plasma concentration",
-    "Elimination stops completely once steady-state concentration is reached",
-    "The elimination half-life doubles every time the dose is doubled"
+    "A fixed amount is eliminated per unit time",
+    "A fixed fraction is eliminated per unit time",
+    "Elimination stops at steady state",
+    "Half-life doubles with each dose increase"
    ],
    "answer": 1,
    "explain": "In first-order (linear) kinetics, metabolizing enzymes and transporters are unsaturated, so elimination rate is directly proportional to plasma concentration and half-life remains constant.",
@@ -1164,10 +1164,10 @@
    "sub": "Clinical Pharmacokinetics",
    "q": "Which characteristic defines zero-order (saturation) elimination kinetics?",
    "options": [
-    "A constant percentage of drug is cleared every hour",
-    "Plasma concentration declines exponentially on a linear graph",
-    "A constant amount of drug is eliminated per unit time because metabolizing enzymes are saturated",
-    "Clearance remains constant regardless of how high the dose becomes"
+    "A fixed percentage is cleared each hour",
+    "Concentration declines exponentially",
+    "A fixed amount is eliminated per unit time when enzymes are saturated",
+    "Clearance is unchanged at all doses"
    ],
    "answer": 2,
    "explain": "In zero-order kinetics, elimination capacity is saturated; a fixed mass of drug is removed per hour, and small dose increments cause disproportionately large spikes in plasma concentration.",
@@ -1282,8 +1282,8 @@
    "options": [
     "It is halved",
     "It doubles",
-    "It increases fourfold",
-    "It is unchanged because time to steady state depends on elimination half-life"
+    "It quadruples",
+    "It is unchanged because steady state depends on half-life"
    ],
    "answer": 3,
    "explain": "Doubling the dosing rate doubles the steady-state plasma concentration (Css), but the time taken to reach that plateau still equals 4 to 5 elimination half-lives.",
@@ -1373,10 +1373,10 @@
    "sub": "Clinical Pharmacokinetics",
    "q": "A patient with severe chronic kidney disease (creatinine clearance 15 mL/min) requires gentamicin, which is eliminated almost exclusively by glomerular filtration. How should the dosing regimen be adjusted?",
    "options": [
-    "Give a standard loading dose, then reduce the maintenance dose or extend the dosing interval",
-    "Reduce the loading dose by 80% and keep the maintenance dose unchanged",
-    "Double both the loading dose and the maintenance dose",
-    "Switch from intravenous to oral administration to increase clearance"
+    "Give a usual loading dose, then reduce maintenance dose or extend interval",
+    "Reduce loading dose by 80% only",
+    "Double both loading and maintenance doses",
+    "Switch to oral dosing to increase clearance"
    ],
    "answer": 0,
    "explain": "Renal failure reduces clearance (CL) and prolongs half-life, while Vd is usually unchanged; therefore a full loading dose is still needed to reach therapeutic levels promptly, followed by a reduced maintenance regimen.",
@@ -1444,9 +1444,9 @@
    "q": "For a drug with a low hepatic extraction ratio (E < 0.3) such as warfarin or phenytoin, which two factors primarily govern hepatic clearance?",
    "options": [
     "Hepatic arterial pressure and biliary sphincter tone",
-    "Gastric emptying rate and intestinal villous height",
-    "Pulmonary tidal volume and alveolar ventilation",
-    "Intrinsic hepatic enzyme activity (CLint) and the unbound fraction of drug in plasma (fu)"
+    "Gastric emptying and villous height",
+    "Pulmonary ventilation and tidal volume",
+    "Intrinsic hepatic clearance and unbound fraction"
    ],
    "answer": 3,
    "explain": "Low-extraction drugs are capacity-limited; hepatic clearance approximates fu x CLint and is sensitive to CYP enzyme induction/inhibition and changes in plasma protein binding.",
@@ -1466,10 +1466,10 @@
    "sub": "Clinical Pharmacokinetics",
    "q": "Why is therapeutic drug monitoring (TDM) routinely performed for drugs such as digoxin, lithium, phenytoin, gentamicin, and vancomycin?",
    "options": [
-    "They have a narrow therapeutic index and marked inter-individual pharmacokinetic variability",
-    "They are completely non-toxic at any plasma concentration",
-    "Their clinical efficacy can never be assessed by laboratory tests",
-    "They all have elimination half-lives shorter than 5 minutes"
+    "They have narrow therapeutic indices and variable kinetics",
+    "They are non-toxic at any concentration",
+    "Their effects cannot be monitored",
+    "All have half-lives under five minutes"
    ],
    "answer": 0,
    "explain": "TDM guides dosing when the margin between minimum effective concentration and minimum toxic concentration is narrow and pharmacokinetics vary widely across patients.",
@@ -1490,7 +1490,7 @@
    "q": "Which of the following is an example of a non-microsomal Phase I enzyme located in the cytoplasm or plasma rather than the smooth endoplasmic reticulum?",
    "options": [
     "CYP2D6",
-    "Plasma pseudocholinesterase (butyrylcholinesterase)",
+    "Plasma butyrylcholinesterase (pseudocholinesterase)",
     "UDP-glucuronosyltransferase",
     "CYP3A4"
    ],
@@ -1514,10 +1514,10 @@
    "sub": "Biotransformation (Metabolism)",
    "q": "A 32-year-old surgical patient receives intravenous succinylcholine for rapid-sequence endotracheal intubation and remains paralysed and apnoeic for 4 hours instead of the usual 5 to 10 minutes. Which pharmacogenetic abnormality explains this prolonged paralysis?",
    "options": [
-    "Hyperactivity of hepatic CYP3A4",
-    "Deficiency of glucose-6-phosphate dehydrogenase",
-    "Atypical or deficient plasma butyrylcholinesterase (pseudocholinesterase)",
-    "Rapid acetylation by N-acetyltransferase-2"
+    "Hepatic CYP3A4 hyperactivity",
+    "G6PD deficiency",
+    "Deficient or atypical plasma butyrylcholinesterase",
+    "Rapid NAT2 acetylation"
    ],
    "answer": 2,
    "explain": "Succinylcholine is normally hydrolyzed within minutes by plasma butyrylcholinesterase; patients with an inherited atypical variant experience prolonged neuromuscular blockade ('scoline apnoea').",
@@ -1538,10 +1538,10 @@
    "sub": "Biotransformation (Metabolism)",
    "q": "Which statement correctly describes Hofmann elimination, the mechanism by which atracurium is cleared from the body?",
    "options": [
-    "Active tubular secretion in the distal nephron",
-    "Cytochrome P450 oxidation in the renal cortex",
-    "Biliary excretion requiring intact gallbladder contraction",
-    "Spontaneous non-enzymatic chemical breakdown at physiological plasma pH and temperature"
+    "Active tubular secretion",
+    "CYP oxidation in renal cortex",
+    "Biliary excretion requiring gallbladder contraction",
+    "Spontaneous non-enzymatic breakdown at physiological pH"
    ],
    "answer": 3,
    "explain": "Hofmann elimination is spontaneous temperature- and pH-dependent molecular cleavage independent of liver or kidney function, making atracurium safe in hepatic and renal failure.",
@@ -1561,10 +1561,10 @@
    "sub": "Distribution",
    "q": "How does extensive hypoalbuminaemia (as seen in nephrotic syndrome or cirrhosis) affect a highly albumin-bound drug like phenytoin?",
    "options": [
-    "The unbound fraction rises, so toxicity can occur despite a seemingly normal total concentration",
+    "The unbound fraction rises, increasing toxicity despite a normal total level",
     "The free fraction falls to zero",
-    "Renal clearance stops completely",
-    "The drug becomes permanently insoluble in plasma"
+    "Renal clearance stops",
+    "The drug becomes insoluble"
    ],
    "answer": 0,
    "explain": "Low serum albumin leaves a higher proportion of phenytoin unbound; total measured drug may look normal or low while free active drug is in the toxic range.",
@@ -1584,10 +1584,10 @@
    "sub": "Clinical Pharmacokinetics",
    "q": "Why does phenytoin exhibit a sudden, steep rise in plasma concentration when its daily dose is increased slightly near the upper end of its therapeutic range?",
    "options": [
-    "Phenytoin activates intestinal P-glycoprotein at high doses",
-    "Hepatic metabolizing enzymes become saturated, shifting elimination from first-order to zero-order kinetics",
-    "Phenytoin ceases to bind to plasma proteins above 10 mg/L",
-    "Renal tubular secretion reverses direction at high concentrations"
+    "Phenytoin activates intestinal P-glycoprotein",
+    "Enzyme saturation shifts elimination toward zero-order kinetics",
+    "Phenytoin stops binding plasma proteins",
+    "Renal secretion reverses direction"
    ],
    "answer": 1,
    "explain": "Phenytoin displays Michaelis-Menten (non-linear) kinetics: once hepatic enzymes approach saturation (Km), clearance falls and small dose increases cause disproportionate jumps in plasma levels.",
