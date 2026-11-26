@@ -101,3 +101,29 @@ Added eight four-statement True/False stems directly to the core bank: four Gene
 - Duplicate IDs: 0
 
 The new subject coverage uses existing curriculum topic IDs `pa-general` and `pm-general`; no new subject-specific loader or UI was required for this initial batch. The bank now has initial coverage for both subjects, with subsequent batches planned across the remaining Pathology and Pharmacology curriculum areas. Verification status applies only to the stems explicitly reviewed; reference presence alone is not verification.
+
+
+## Integrated Pathology and Pharmacology expansion — 2026-11-26
+
+Added six further four-statement stems to the core expansion bank. The new material broadens coverage beyond introductory topics:
+
+- General Pathology: oedema and Virchow's triad of thrombosis.
+- Chemical Pathology: laboratory diagnostic criteria for diabetes mellitus.
+- Haematology: iron deficiency anaemia and interpretation of iron studies.
+- General Pharmacology: routes of administration and first-pass metabolism.
+- Neurohumoral Pharmacology: cholinergic agonists/antagonists and adrenergic receptor pharmacology.
+
+Each new stem was checked statement-by-statement against the listed references while being drafted. Wording and keys were revised before being added; all six are marked verified. The thrombosis reference was corrected after a separate URL check.
+
+- New stems: 6 (24 statements)
+- Combined bank, including the 9-stem sample file: 103 stems / 417 statements
+- Verified: 24
+- Still draft/unverified: 79
+- Duplicate IDs: 0
+- Structural issues in the combined files: 0
+
+The curriculum now has initial coverage across more Pathology and Pharmacology strands, but these subjects remain far from comprehensively covered. The 79 older unverified stems remain unverified; no blanket status change was made. References support review but do not independently certify a question.
+
+## Audit count correction
+
+The current source files contain 94 stems in `tf-core-expansion.json` and 9 in `tf-sample.json`, for 103 total. Earlier audit sections describe historical snapshots and should not be read as current totals. The current combined validation above is the source of truth for the present count.
