@@ -1,1389 +1,1489 @@
 {
- "topic": "gr-thorax",
- "questions": [
-  {
-   "id": "GRTH-01",
-   "level": 1,
-   "sub": "Thoracic cage and ribs",
-   "q": "Which bony landmark marks the junction between the manubrium and body of the sternum at approximately the level of the second costal cartilage and the T4/T5 intervertebral disc?",
-   "options": [
-    "Sternal angle (angle of Louis)",
-    "Xiphisternal joint",
-    "Jugular (suprasternal) notch",
-    "Costal margin"
-   ],
-   "answer": 0,
-   "explain": "The sternal angle is a palpable transverse ridge where the manubrium meets the sternal body, serving as a key surface landmark for counting ribs (starting at the second costal cartilage), locating the aortic arch/bifurcation of trachea, and marking the T4/T5 disc plane.",
-   "open": {
-    "q": "What palpable ridge marks the junction of the manubrium and sternal body at the level of the second costal cartilage?",
-    "accept": [
-     "sternal angle",
-     "angle of louis",
-     "manubriosternal angle"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-02",
-   "level": 1,
-   "sub": "Thoracic cage and ribs",
-   "q": "Ribs 1 through 7 are classified as true (vertebrosternal) ribs because of how they attach anteriorly?",
-   "options": [
-    "They articulate with the sternum only via the seventh costal cartilage",
-    "Each connects directly to the sternum via its own costal cartilage",
-    "They end freely within the anterior abdominal wall musculature",
-    "They lack costal cartilages completely"
-   ],
-   "answer": 1,
-   "explain": "True ribs (ribs 1 to 7) each have their own costal cartilage that articulates directly with the sternum. False ribs (8 to 10) join the costal cartilage above, while floating ribs (11 and 12) have no anterior attachment to the sternum.",
-   "open": {
-    "q": "How do true ribs (ribs 1 to 7) attach anteriorly to the sternum?",
-    "accept": [
-     "each attaches directly to the sternum via its own costal cartilage",
-     "each has its own costal cartilage joining the sternum directly",
-     "direct attachment to the sternum by their own costal cartilages"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-03",
-   "level": 1,
-   "sub": "Thoracic cage and ribs",
-   "q": "Which ribs are classified as floating (vertebral) ribs because their cartilaginous tips end freely in the posterior abdominal wall musculature without reaching the sternum?",
-   "options": [
-    "Ribs 1 and 2",
-    "Ribs 7 and 8",
-    "Ribs 11 and 12",
-    "Ribs 9 and 10"
-   ],
-   "answer": 2,
-   "explain": "Ribs 11 and 12 are floating ribs whose small cartilaginous tips end freely in the musculature of the posterior abdominal wall rather than articulating with the sternum or another rib cartilage.",
-   "open": {
-    "q": "Which two ribs are floating ribs whose tips end freely in musculature?",
-    "accept": [
-     "ribs 11 and 12",
-     "11th and 12th ribs",
-     "11 and 12"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-04",
-   "level": 1,
-   "sub": "Thoracic cage and ribs",
-   "q": "Along which part of a typical rib does the costal groove run to protect the intercostal vein, artery, and nerve?",
-   "options": [
-    "Superior border of the shaft",
-    "Anterior surface of the head",
-    "Articular facet of the tubercle",
-    "Inferior internal aspect of the shaft"
-   ],
-   "answer": 3,
-   "explain": "The costal groove lies along the inferior internal margin of a typical rib shaft, sheltering the intercostal vein (most superior), intercostal artery, and intercostal nerve (most inferior, VAN from above downward).",
-   "open": {
-    "q": "Along which border/aspect of a typical rib does the costal groove run?",
-    "accept": [
-     "inferior internal aspect of the shaft",
-     "inferior inner surface",
-     "lower inner border of the rib"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-05",
-   "level": 2,
-   "sub": "Thoracic wall and mechanics",
-   "q": "Why should a thoracentesis or intercostal chest tube insertion pass just above the superior border of the lower rib in an intercostal space?",
-   "options": [
-    "To avoid the main intercostal neurovascular bundle beneath the rib above",
-    "There are no muscles above a rib",
-    "The diaphragm attaches only to rib superior borders",
-    "To puncture costal cartilage"
-   ],
-   "answer": 0,
-   "explain": "The main intercostal vein, artery, and nerve run in the costal groove along the inferior margin of the rib above, so inserting just superior to the lower rib avoids the main neurovascular bundle (though collateral branches can exist).",
-   "open": {
-    "q": "Why is a needle or chest tube inserted just above the superior border of a rib during intercostal procedures?",
-    "accept": [
-     "to avoid the main neurovascular bundle in the costal groove of the rib above",
-     "to stay clear of the intercostal vessels and nerve below the upper rib",
-     "to avoid injuring the intercostal vein, artery, and nerve"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-06",
-   "level": 1,
-   "sub": "Thoracic wall and mechanics",
-   "q": "Which intercostal muscles run inferoanteriorly from the rib above to the rib below and assist inspiration by elevating the ribs?",
-   "options": [
-    "Innermost intercostals",
-    "External intercostals",
-    "Transversus thoracis",
-    "Subcostals"
-   ],
-   "answer": 1,
-   "explain": "External intercostal muscles have fibers directed inferoanteriorly (hands in pockets anteriorly) and extend from tubercles posteriorly to near the costochondral junctions anteriorly, elevating ribs during quiet/active inspiration.",
-   "open": {
-    "q": "Which intercostal muscles have fibers running inferoanteriorly and help elevate the ribs during inspiration?",
-    "accept": [
-     "external intercostals",
-     "external intercostal muscles",
-     "external intercostal"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-07",
-   "level": 2,
-   "sub": "Thoracic wall and mechanics",
-   "q": "How does the pump-handle movement of the ribs increase the anteroposterior diameter of the thoracic cavity during inspiration?",
-   "options": [
-    "Ribs rotate around a vertical sternal axis",
-    "The diaphragm relaxes upward",
-    "Anterior rib elevation moves the sternum forward and up, increasing AP diameter",
-    "Costal cartilages shorten and pull the sternum back"
-   ],
-   "answer": 2,
-   "explain": "Because the anterior ends of the ribs lie lower than their posterior vertebral attachments, elevating the rib bodies causes the sternum and anterior rib ends to move forward and upward (pump-handle motion), expanding anteroposterior thoracic dimension.",
-   "open": {
-    "q": "How does pump-handle motion of the ribs expand the anteroposterior diameter of the thorax?",
-    "accept": [
-     "anterior ends of the ribs and sternum rise and move forward",
-     "elevation of rib shafts pushes the anterior ends and sternum anteriorly",
-     "raising the anterior rib ends increases anteroposterior chest depth"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-08",
-   "level": 1,
-   "sub": "Diaphragm",
-   "q": "At which vertebral level does the aortic hiatus pass through the diaphragm?",
-   "options": [
-    "T8",
-    "T10",
-    "L1",
-    "T12"
-   ],
-   "answer": 3,
-   "explain": "Using the classic levels: caval opening is at T8 (IVC), esophageal hiatus is at T10 (esophagus and vagal trunks), and aortic hiatus is at T12 (aorta, thoracic duct, and often azygos vein).",
-   "open": {
-    "q": "At which vertebral level does the aortic hiatus pass through the diaphragm?",
-    "accept": [
-     "t12",
-     "twelfth thoracic vertebra",
-     "t12 vertebra"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-09",
-   "level": 1,
-   "sub": "Diaphragm",
-   "q": "Which nerve provides the primary motor innervation to the diaphragm?",
-   "options": [
-    "Phrenic nerve (C3 to C5)",
-    "Vagus nerve (CN X)",
-    "Intercostobrachial nerve (T2)",
-    "Subcostal nerve (T12)"
-   ],
-   "answer": 0,
-   "explain": "The phrenic nerve arises from cervical spinal segments C3, C4, and C5 (C3, 4, 5 keep the diaphragm alive), descending through the thorax to supply motor fibers to the diaphragm and sensory fibers to its central tendon and mediastinal/diaphragmatic pleura.",
-   "open": {
-    "q": "Which nerve provides motor supply to the diaphragm?",
-    "accept": [
-     "phrenic nerve",
-     "the phrenic nerve"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-10",
-   "level": 3,
-   "sub": "Diaphragm",
-   "q": "A patient has irritation of the diaphragmatic pleura or peritoneum beneath the central tendon of the diaphragm and feels referred pain over the ipsilateral shoulder tip. Which nerve pathway explains this referred pain?",
-   "options": [
-    "Sympathetic chain (T12)",
-    "Phrenic afferents (C3–C5) share segments with shoulder sensation",
-    "Ilioinguinal nerve (L1)",
-    "Long thoracic nerve (C5–C7)"
-   ],
-   "answer": 1,
-   "explain": "Sensory fibers from the central diaphragm travel in the phrenic nerve (C3 to C5) to the same cervical cord levels that receive cutaneous input from the shoulder via supraclavicular nerves (C3 to C4), producing referred shoulder-tip pain.",
-   "open": {
-    "q": "Which nerve explains referred pain to the shoulder tip from irritation of the central diaphragm?",
-    "accept": [
-     "phrenic nerve",
-     "c3 to c5 phrenic and supraclavicular pathway"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-11",
-   "level": 1,
-   "sub": "Pleura and lungs",
-   "q": "Which layer of the pleura adheres directly to the surface of the lung and dips into its fissures?",
-   "options": [
-    "Parietal pleura",
-    "Endothoracic fascia",
-    "Visceral (pulmonary) pleura",
-    "Fibrous pericardium"
-   ],
-   "answer": 2,
-   "explain": "The visceral (pulmonary) pleura covers the lung surfaces and lines the interlobar fissures, whereas the parietal pleura lines the thoracic wall, mediastinum, and diaphragm.",
-   "open": {
-    "q": "Which pleural layer closely covers the lung surfaces and enters its fissures?",
-    "accept": [
-     "visceral pleura",
-     "pulmonary pleura",
-     "visceral"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-12",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "Why does the inferior margin of the parietal pleura extend lower than the inferior border of the lung (for example, to the 10th rib at the midaxillary line)?",
-   "options": [
-    "To prevent lung expansion",
-    "It forms a recess into which the lung expands on deep inspiration",
-    "Parietal pleura attaches to the xiphoid",
-    "It houses the heart laterally"
-   ],
-   "answer": 1,
-   "explain": "Because the inferior border of the lung sits higher than the inferior reflection of parietal pleura, a potential space called the costodiaphragmatic recess is formed, allowing the lower lung margin to descend during deep inspiration.",
-   "open": {
-    "q": "What space is created because the parietal pleura extends lower than the inferior border of the lung?",
-    "accept": [
-     "costodiaphragmatic recess",
-     "costodiaphragmatic pleural recess"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-13",
-   "level": 1,
-   "sub": "Pleura and lungs",
-   "q": "How many lobes and fissures does the right lung typically possess?",
-   "options": [
-    "Two lobes and one oblique fissure",
-    "Three lobes and one horizontal fissure only",
-    "Three lobes divided by oblique and horizontal fissures",
-    "Four lobes and three fissures"
-   ],
-   "answer": 2,
-   "explain": "The right lung has three lobes—superior, middle, and inferior—separated by an oblique fissure and a horizontal fissure. The left lung has two lobes (superior and inferior) separated by an oblique fissure.",
-   "open": {
-    "q": "How many lobes and fissures does the right lung typically have?",
-    "accept": [
-     "three lobes and two fissures",
-     "3 lobes with oblique and horizontal fissures",
-     "three lobes, oblique and horizontal fissures"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-14",
-   "level": 1,
-   "sub": "Pleura and lungs",
-   "q": "Which structural feature on the medial surface of the left lung accommodates the apex and left side of the heart?",
-   "options": [
-    "Middle lobe impression",
-    "Azygos arch groove",
-    "Costodiaphragmatic notch",
-    "Cardiac notch"
-   ],
-   "answer": 3,
-   "explain": "The anterior border of the left lung presents a prominent cardiac notch (with a tongue-like lingula below it) where the left heart borders approach the thoracic wall.",
-   "open": {
-    "q": "What indentation on the anterior border of the left lung accommodates the heart?",
-    "accept": [
-     "cardiac notch",
-     "the cardiac notch"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-15",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "Why are inhaled foreign bodies more likely to enter the right main bronchus than the left main bronchus?",
-   "options": [
-    "The right main bronchus is wider, shorter and more vertical",
-    "The left bronchus lacks cartilage",
-    "The right bronchus is narrower and more horizontal",
-    "The carina directs all particles left"
-   ],
-   "answer": 0,
-   "explain": "The right main bronchus is wider, shorter, and takes a steeper, more vertical path from the trachea than the narrower, longer, more horizontal left main bronchus, making aspirated objects more common on the right.",
-   "open": {
-    "q": "Why are aspirated foreign bodies more likely to enter the right main bronchus than the left?",
-    "accept": [
-     "it is wider, shorter, and more vertical",
-     "wider, shorter, and steeper alignment with the trachea",
-     "more vertical, wider, and shorter"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-16",
-   "level": 3,
-   "sub": "Pleura and lungs",
-   "q": "A trauma patient has absent breath sounds, hyperresonance to percussion, and tracheal deviation away from the affected side with distended neck veins and hypotension. Which life-threatening condition is present?",
-   "options": [
-    "Simple pleural effusion",
-    "Tension pneumothorax",
-    "Pulmonary embolism",
-    "Pericardial tamponade without air"
-   ],
-   "answer": 1,
-   "explain": "A one-way air leak into the pleural space creates a tension pneumothorax, increasing intrapleural pressure, collapsing the ipsilateral lung, shifting the mediastinum/trachea contralaterally, and impairing venous return to the heart.",
-   "open": {
-    "q": "Which condition causes hyperresonance, absent breath sounds, contralateral tracheal shift, and hemodynamic compromise from trapped pleural air?",
-    "accept": [
-     "tension pneumothorax",
-     "a tension pneumothorax"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-17",
-   "level": 1,
-   "sub": "Pleura and lungs",
-   "q": "What is a bronchopulmonary segment?",
-   "options": [
-    "A subdivision of a lung lobe supplied by a secondary (lobar) bronchus and lobar pulmonary artery.",
-    "A subdivision of a lung lobe supplied by a segmental bronchus and a corresponding branch of the pulmonary artery.",
-    "A microscopic unit of lung parenchyma supplied by a terminal bronchiole and bounded by connective-tissue septa.",
-    "A region of lung supplied by a segmental bronchus but enclosed within its own separate pleural sac."
-   ],
-   "answer": 1,
-   "explain": "A bronchopulmonary segment is a distinct, roughly pyramidal subdivision of a lung lobe supplied by its own segmental (tertiary) bronchus and a corresponding segmental branch of the pulmonary artery. Its base faces the pleural surface and its apex points toward the hilum. Connective-tissue septa separate adjacent segments, while pulmonary veins usually run between them; this anatomical independence allows a segment to be removed surgically (segmentectomy) while preserving the rest of the lobe.",
-   "open": {
-    "q": "What is a bronchopulmonary segment?",
-    "accept": [
-     "a discrete functional lung unit supplied by a tertiary bronchus and segmental artery",
-     "functional unit of a lung lobe supplied by a segmental bronchus",
-     "wedge-shaped lung unit supplied by a tertiary bronchus"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-18",
-   "level": 1,
-   "sub": "Mediastinum",
-   "q": "Which division of the mediastinum contains the heart within the pericardium?",
-   "options": [
-    "Superior mediastinum",
-    "Posterior mediastinum",
-    "Anterior mediastinum",
-    "Middle mediastinum"
-   ],
-   "answer": 3,
-   "explain": "The inferior mediastinum is divided into anterior, middle, and posterior parts relative to the pericardial sac; the middle mediastinum contains the pericardium, heart, ascending aorta, pulmonary trunk, and SVC termination.",
-   "open": {
-    "q": "Which division of the mediastinum houses the pericardium and heart?",
-    "accept": [
-     "middle mediastinum",
-     "the middle mediastinum"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-19",
-   "level": 1,
-   "sub": "Mediastinum",
-   "q": "Which major structure passes through the superior mediastinum and arches over the root of the left lung and left main bronchus?",
-   "options": [
-    "Arch of the aorta",
-    "Inferior vena cava",
-    "Thoracic duct termination",
-    "Right atrium"
-   ],
-   "answer": 0,
-   "explain": "The aortic arch lies in the superior mediastinum, arching posteriorly and to the left above the left pulmonary hilum/bronchus as it continues as the thoracic aorta.",
-   "open": {
-    "q": "Which major vessel arches over the left main bronchus in the superior mediastinum?",
-    "accept": [
-     "arch of the aorta",
-     "aortic arch"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-20",
-   "level": 2,
-   "sub": "Mediastinum",
-   "q": "How does the course of the left recurrent laryngeal nerve differ from that of the right recurrent laryngeal nerve?",
-   "options": [
-    "Left loops under right subclavian; right under aortic arch",
-    "Left loops under aortic arch; right under right subclavian",
-    "Neither nerve loops beneath a vessel",
-    "Both pass through the T8 caval opening"
-   ],
-   "answer": 1,
-   "explain": "The left recurrent laryngeal nerve hooks beneath the aortic arch (just lateral to the ligamentum arteriosum) and ascends in the tracheoesophageal groove, whereas the right recurrent laryngeal nerve loops under the right subclavian artery.",
-   "open": {
-    "q": "Beneath which vessel does the left recurrent laryngeal nerve hook compared with the right?",
-    "accept": [
-     "under the aortic arch while the right hooks under the right subclavian artery",
-     "aortic arch on the left and right subclavian artery on the right",
-     "arch of the aorta"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-21",
-   "level": 1,
-   "sub": "Pericardium and heart",
-   "q": "Which layer of the pericardium is a tough, inelastic outer sac that prevents sudden overdistension of the heart and blends inferiorly with the central tendon of the diaphragm?",
-   "options": [
-    "Parietal layer of serous pericardium",
-    "Visceral layer of serous pericardium (epicardium)",
-    "Fibrous pericardium",
-    "Myocardium"
-   ],
-   "answer": 2,
-   "explain": "The fibrous pericardium is the tough outer dense connective tissue sac of the pericardium, lined internally by the parietal serous pericardium. Together with the visceral serous layer (epicardium), they enclose the pericardial cavity.",
-   "open": {
-    "q": "Which tough outer layer of the pericardium resists acute overdistension of the heart?",
-    "accept": [
-     "fibrous pericardium",
-     "the fibrous pericardium"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-22",
-   "level": 2,
-   "sub": "Pericardium and heart",
-   "q": "What is the clinical significance of the transverse pericardial sinus located behind the ascending aorta and pulmonary trunk and anterior to the superior vena cava?",
-   "options": [
-    "It drains left ventricular blood",
-    "It permits clamping of the aorta and pulmonary trunk",
-    "It contains the SA node",
-    "It separates tricuspid valve from right atrium"
-   ],
-   "answer": 1,
-   "explain": "The transverse pericardial sinus lies between the arterial outflow vessels (aorta and pulmonary trunk) anteriorly and the great veins/atria posteriorly, allowing surgical access to pass a finger or clamp around the aorta and pulmonary trunk.",
-   "open": {
-    "q": "How is the transverse pericardial sinus useful during cardiac surgery?",
-    "accept": [
-     "it allows passing a clamp or ligature around the aorta and pulmonary trunk",
-     "surgeons can pass a finger or clamp behind the aorta and pulmonary trunk",
-     "isolating the ascending aorta and pulmonary trunk"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-23",
-   "level": 1,
-   "sub": "Pericardium and heart",
-   "q": "Which chamber of the heart forms most of the sternocostal (anterior) surface of the heart?",
-   "options": [
-    "Left atrium",
-    "Left ventricle",
-    "Right ventricle",
-    "Coronary sinus"
-   ],
-   "answer": 2,
-   "explain": "The right ventricle makes up the largest portion of the anterior (sternocostal) surface of the heart, while the left ventricle forms most of the diaphragmatic (inferior) surface and the apex.",
-   "open": {
-    "q": "Which heart chamber forms most of the anterior (sternocostal) surface?",
-    "accept": [
-     "right ventricle",
-     "the right ventricle"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-24",
-   "level": 1,
-   "sub": "Pericardium and heart",
-   "q": "Where is the apex of the normal adult heart typically located on the anterior chest wall?",
-   "options": [
-    "Right 2nd intercostal space, parasternal",
-    "Left 3rd intercostal space, anterior axillary line",
-    "Right 6th intercostal space, midclavicular",
-    "Left 5th intercostal space, near the midclavicular line"
-   ],
-   "answer": 3,
-   "explain": "The heart apex is formed by the inferolateral left ventricle and typically lies in the fifth left intercostal space (often about 7 to 9 cm from the midline or just medial to the midclavicular line in adults).",
-   "open": {
-    "q": "In which intercostal space is the normal adult cardiac apex typically located?",
-    "accept": [
-     "fifth left intercostal space",
-     "5th left intercostal space",
-     "left 5th intercostal space"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-25",
-   "level": 1,
-   "sub": "Pericardium and heart",
-   "q": "Which valve guards the right atrioventricular orifice between the right atrium and right ventricle?",
-   "options": [
-    "Tricuspid valve (right atrioventricular valve)",
-    "Mitral (bicuspid) valve",
-    "Aortic valve",
-    "Pulmonary valve"
-   ],
-   "answer": 0,
-   "explain": "The tricuspid (right atrioventricular) valve has three cusps (anterior, septal, and posterior) attached via chordae tendineae to papillary muscles of the right ventricle.",
-   "open": {
-    "q": "Which valve lies between the right atrium and right ventricle?",
-    "accept": [
-     "tricuspid valve",
-     "right atrioventricular valve",
-     "tricuspid"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-26",
-   "level": 2,
-   "sub": "Pericardium and heart",
-   "q": "Why do chordae tendineae and papillary muscles prevent prolapse of the atrioventricular valves into the atria during ventricular systole?",
-   "options": [
-    "They close semilunar valves in diastole",
-    "They tense chordae during systole, preventing AV valve prolapse",
-    "They pump coronary-sinus blood into ventricles",
-    "They fuse valve leaflets to the septum"
-   ],
-   "answer": 1,
-   "explain": "As ventricular pressure rises during systole, papillary muscles contract and pull on the chordae tendineae, anchoring the atrioventricular valve cusps so they do not evert/prolapse back into the atria.",
-   "open": {
-    "q": "How do papillary muscles and chordae tendineae prevent atrioventricular valve prolapse during systole?",
-    "accept": [
-     "they tense the cusps so rising ventricular pressure does not push them into the atria",
-     "papillary contraction pulls chordae tendineae to keep valve leaflets from everting",
-     "holding valve cusps taut during ventricular contraction"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-27",
-   "level": 1,
-   "sub": "Coronary circulation and conduction",
-   "q": "From which sinuses do the right and left coronary arteries arise?",
-   "options": [
-    "Pulmonary trunk sinuses",
-    "Coronary sinus",
-    "Aortic sinuses of the ascending aorta",
-    "Brachiocephalic trunk"
-   ],
-   "answer": 2,
-   "explain": "The right and left coronary arteries arise from the right and left aortic sinuses of the ascending aorta just superior to the aortic valve cusps (the posterior non-coronary sinus gives rise to no coronary artery).",
-   "open": {
-    "q": "From which structures do the right and left coronary arteries originate?",
-    "accept": [
-     "aortic sinuses",
-     "sinuses of the ascending aorta",
-     "aortic sinuses of ascending aorta"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-28",
-   "level": 2,
-   "sub": "Coronary circulation and conduction",
-   "q": "Which major branch of the left coronary artery runs down the anterior interventricular sulcus and supplies much of the anterior interventricular septum and anterior left ventricular wall?",
-   "options": [
-    "Right marginal artery",
-    "Posterior interventricular artery",
-    "Circumflex artery",
-    "Anterior interventricular (left anterior descending) artery"
-   ],
-   "answer": 3,
-   "explain": "The anterior interventricular artery (left anterior descending, LAD) courses along the anterior interventricular sulcus toward the apex, supplying the anterior left ventricle, right ventricle adjacent to the groove, and anterior two-thirds of the interventricular septum.",
-   "open": {
-    "q": "Which branch of the left coronary artery runs in the anterior interventricular sulcus?",
-    "accept": [
-     "anterior interventricular artery",
-     "left anterior descending artery",
-     "lad"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-29",
-   "level": 3,
-   "sub": "Coronary circulation and conduction",
-   "q": "A patient has an acute occlusion of the anterior interventricular (LAD) artery. Which region of the heart is most directly at risk of ischemia or infarction?",
-   "options": [
-    "Anterior LV wall and anterior interventricular septum",
-    "Right auricle only",
-    "Left superior pulmonary vein",
-    "SVC wall"
-   ],
-   "answer": 0,
-   "explain": "Occlusion of the anterior interventricular (LAD) artery classically causes ischemia/infarction of the anterior wall of the left ventricle, the apex, and the anterior two-thirds of the interventricular septum.",
-   "open": {
-    "q": "Which heart regions are primarily threatened by occlusion of the anterior interventricular artery?",
-    "accept": [
-     "anterior left ventricular wall and anterior interventricular septum",
-     "anterior left ventricle and anterior septum",
-     "anterior wall of left ventricle and septum"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-30",
-   "level": 1,
-   "sub": "Coronary circulation and conduction",
-   "q": "Where is the sinoatrial (SA) node, the normal pacemaker of the heart, typically located?",
-   "options": [
-    "At the LV apex",
-    "Upper right atrium near SVC opening",
-    "Inside the mitral annulus",
-    "In the left atrial appendage"
-   ],
-   "answer": 1,
-   "explain": "The sinoatrial (SA) node lies in the epicardial/myocardial wall of the upper right atrium near the entry of the superior vena cava and superior end of the crista terminalis.",
-   "open": {
-    "q": "Where in the heart is the sinoatrial (SA) node typically located?",
-    "accept": [
-     "upper right atrium near the superior vena cava opening",
-     "right atrium near superior vena cava",
-     "upper right atrium at junction with superior vena cava"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-31",
-   "level": 1,
-   "sub": "Coronary circulation and conduction",
-   "q": "Into which heart chamber does the coronary sinus—the main venous channel draining most of the heart wall—empty?",
-   "options": [
-    "Left atrium",
-    "Right atrium",
-    "Left ventricle",
-    "Pulmonary trunk"
-   ],
-   "answer": 1,
-   "explain": "The coronary sinus runs in the posterior atrioventricular groove and empties deoxygenated cardiac venous blood into the right atrium between the inferior vena cava opening and the right atrioventricular orifice.",
-   "open": {
-    "q": "Into which chamber of the heart does the coronary sinus drain?",
-    "accept": [
-     "right atrium",
-     "the right atrium"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-32",
-   "level": 2,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "Which vein ascends along the posterior thoracic wall to the right of the vertebral bodies and arches over the root of the right lung to join the superior vena cava?",
-   "options": [
-    "Hemiazygos vein",
-    "Azygos vein",
-    "Left brachiocephalic vein",
-    "Internal thoracic vein"
-   ],
-   "answer": 1,
-   "explain": "The azygos vein drains posterior intercostal veins, bronchial/esophageal/pericardial veins, and the hemiazygos/accessory hemiazygos systems, arching over the right lung root at about T4 to empty into the superior vena cava.",
-   "open": {
-    "q": "Which longitudinal vein of the posterior thorax arches over the right lung root to enter the superior vena cava?",
-    "accept": [
-     "azygos vein",
-     "the azygos vein"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-33",
-   "level": 1,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "Which pair of arteries arises directly from the internal thoracic (internal mammary) artery in each of the anterior intercostal spaces 1 through 6?",
-   "options": [
-    "Posterior intercostal arteries",
-    "Bronchial arteries",
-    "Anterior intercostal arteries",
-    "Celiac trunk branches"
-   ],
-   "answer": 2,
-   "explain": "The internal thoracic artery descends behind the upper six costal cartilages and gives off anterior intercostal arteries to the anterior intercostal spaces 1 to 6, dividing inferiorly at the sixth intercostal space into musculophrenic and superior epigastric arteries.",
-   "open": {
-    "q": "Which arteries arise from the internal thoracic artery to supply the anterior intercostal spaces?",
-    "accept": [
-     "anterior intercostal arteries",
-     "anterior intercostals"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-34",
-   "level": 1,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "Into which two terminal branches does the internal thoracic artery bifurcate at about the sixth intercostal space?",
-   "options": [
-    "Subclavian and carotid arteries",
-    "Thoracoacromial and lateral thoracic arteries",
-    "Azygos and hemiazygos arteries",
-    "Musculophrenic and superior epigastric arteries"
-   ],
-   "answer": 3,
-   "explain": "At approximately the sixth intercostal space, the internal thoracic artery divides into the musculophrenic artery (following the costal margin) and the superior epigastric artery (entering the rectus sheath).",
-   "open": {
-    "q": "What are the two terminal branches of the internal thoracic artery?",
-    "accept": [
-     "musculophrenic and superior epigastric arteries",
-     "superior epigastric and musculophrenic arteries"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-35",
-   "level": 2,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "How does the esophagus change its anatomical relationship to the aorta as it descends through the posterior mediastinum?",
-   "options": [
-    "It begins anterior/right of the aorta and moves leftward toward the oesophageal hiatus",
-    "It stays posterior to the aorta throughout",
-    "It crosses the diaphragm at T8 with the IVC",
-    "It lies wholly inside the pericardium"
-   ],
-   "answer": 0,
-   "explain": "In the posterior mediastinum, the esophagus initially lies to the right and anterior to the descending thoracic aorta, then inclines anteriorly and to the left so it lies anterior to the lower aorta before passing through the T10 esophageal hiatus.",
-   "open": {
-    "q": "How does the esophagus shift position relative to the descending thoracic aorta in the posterior mediastinum?",
-    "accept": [
-     "from right/anterior to more anterior and left of the lower thoracic aorta",
-     "it moves anteriorly and to the left relative to the descending aorta",
-     "from right of the aorta to anterior to the lower aorta"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-36",
-   "level": 3,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "A patient with severe coarctation of the aorta has increased pressure proximal to the narrowing and develops enlarged collateral arteries along the posterior intercostal spaces that groove the inferior borders of ribs on chest radiograph. Which radiological sign is this?",
-   "options": [
-    "Kerley B lines",
-    "Rib notching (Roesler sign)",
-    "Air bronchogram",
-    "Silhouette sign of middle lobe"
-   ],
-   "answer": 1,
-   "explain": "Collateral blood flow from internal thoracic/subscapular/transverse cervical pathways into posterior intercostal arteries increases flow and pressure in these vessels, causing pressure erosion or notching along the inferior rib margins (rib notching).",
-   "open": {
-    "q": "What radiographic finding on the ribs can result from dilated collateral posterior intercostal arteries in aortic coarctation?",
-    "accept": [
-     "rib notching",
-     "notching of the ribs",
-     "inferior rib notching"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-37",
-   "level": 1,
-   "sub": "Thoracic wall and mechanics",
-   "q": "Where is the intercostobrachial nerve (typically lateral cutaneous branch of T2) distributed?",
-   "options": [
-    "Sole of foot",
-    "Lateral shoulder over deltoid",
-    "Axillary floor and proximal medial arm",
-    "Anterior abdomen above umbilicus"
-   ],
-   "answer": 2,
-   "explain": "The intercostobrachial nerve is the lateral cutaneous branch of the second intercostal nerve (T2) that crosses the axilla to supply skin of the axillary floor and medial side of the upper arm, explaining why cardiac pain can refer to the medial arm.",
-   "open": {
-    "q": "Which cutaneous territory is supplied by the intercostobrachial nerve?",
-    "accept": [
-     "axilla and medial aspect of the upper arm",
-     "floor of the axilla and medial upper arm",
-     "axillary floor and medial arm"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-38",
-   "level": 2,
-   "sub": "Pericardium and heart",
-   "q": "Why does cardiac ischemic pain sometimes radiate to the medial aspect of the left arm and forearm?",
-   "options": [
-    "Left phrenic nerve directly innervates ulnar nerve",
-    "Cardiac afferents enter T1–T4/5, overlapping with medial-arm somatic input",
-    "Left coronary artery continues as radial artery",
-    "Myocardium receives brachial plexus motor fibres"
-   ],
-   "answer": 1,
-   "explain": "Visceral sensory fibers from the heart travel via sympathetic pathways to upper thoracic spinal cord segments (T1 to T4/T5), sharing dorsal horn neurons with somatic afferents from the medial arm/axilla (T1 to T2 via intercostobrachial/medial brachial cutaneous pathways).",
-   "open": {
-    "q": "Why can cardiac pain refer to the medial left arm and forearm?",
-    "accept": [
-     "shared upper thoracic spinal cord segments between cardiac afferents and medial arm sensory fibers",
-     "convergence of cardiac sympathetic afferents and t1-t2 medial arm somatic afferents",
-     "overlapping upper thoracic spinal cord segments"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-39",
-   "level": 1,
-   "sub": "Pleura and lungs",
-   "q": "Which structures form the root (hilum) of each lung where bronchi, vessels, nerves, and lymphatics enter or leave?",
-   "options": [
-    "Main bronchus, pulmonary vessels, bronchial vessels, nerves and lymphatics",
-    "Phrenic nerve and thoracic duct only",
-    "Aorta, IVC and oesophagus",
-    "Coronary sinus and great cardiac vein"
-   ],
-   "answer": 0,
-   "explain": "The root of the lung consists of the main bronchus, pulmonary artery, two pulmonary veins, bronchial arteries and veins, pulmonary nerve plexus, and bronchopulmonary lymph nodes enclosed by a cuff of pleura.",
-   "open": {
-    "q": "What main structures make up the root of the lung?",
-    "accept": [
-     "bronchus, pulmonary artery, pulmonary veins, bronchial vessels, nerves, and lymphatics",
-     "main bronchus, pulmonary artery, and pulmonary veins with bronchial vessels, nerves, and lymphatics"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-40",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "In the right lung root, how is the pulmonary artery positioned relative to the bronchi?",
-   "options": [
-    "It lies above all bronchi",
-    "It lies inferior and anterior to the right eparterial bronchus",
-    "It lies behind the oesophagus",
-    "It passes below the diaphragm before entering the lung"
-   ],
-   "answer": 1,
-   "explain": "In the right lung root, the superior lobar (eparterial) bronchus lies superior to the right pulmonary artery, while the right pulmonary artery lies anterior and inferior to it and anterior to the continuation of the bronchus.",
-   "open": {
-    "q": "How does the right pulmonary artery relate to the superior lobar bronchus at the right hilum?",
-    "accept": [
-     "it lies inferior and anterior to the superior lobar bronchus",
-     "inferior and anterior to the eparterial bronchus",
-     "below and in front of the superior lobar bronchus"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-41",
-   "level": 1,
-   "sub": "Thoracic cage and ribs",
-   "q": "Which bone articulates with the medial end of the clavicle and the first seven costal cartilages?",
-   "options": [
-    "Scapula",
-    "Sternum",
-    "Manubrium alone",
-    "Xiphoid process alone"
-   ],
-   "answer": 1,
-   "explain": "The sternum—comprising the manubrium, body, and xiphoid process—articulates with the clavicles at the clavicular notches of the manubrium and receives costal cartilages 1 through 7 along its lateral borders.",
-   "open": {
-    "q": "Which bone articulates with the medial end of the clavicle and costal cartilages 1 to 7?",
-    "accept": [
-     "sternum",
-     "the sternum"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-42",
-   "level": 1,
-   "sub": "Diaphragm",
-   "q": "At which vertebral level does the caval opening (foramen venae cavae) pierce the central tendon of the diaphragm?",
-   "options": [
-    "T6",
-    "T10",
-    "T8",
-    "T12"
-   ],
-   "answer": 2,
-   "explain": "The caval opening lies in the central tendon of the diaphragm at approximately the T8 vertebral level and transmits the inferior vena cava and right phrenic nerve branches.",
-   "open": {
-    "q": "At which vertebral level does the inferior vena cava pass through the diaphragm?",
-    "accept": [
-     "t8",
-     "eighth thoracic vertebra",
-     "t8 vertebra"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-43",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "What is the role of pulmonary surfactant produced by type II alveolar pneumocytes?",
-   "options": [
-    "It raises surface tension and collapses alveoli",
-    "It lowers surface tension and reduces alveolar collapse",
-    "It carries oxygen from pulmonary veins",
-    "It forms tracheal cartilage rings"
-   ],
-   "answer": 1,
-   "explain": "Pulmonary surfactant reduces surface tension at the alveolar air-liquid interface, preventing alveolar collapse (atelectasis) at low lung volumes and making inflation easier (higher compliance).",
-   "open": {
-    "q": "How does pulmonary surfactant affect surface tension and stability in the alveoli?",
-    "accept": [
-     "it lowers surface tension and helps prevent alveolar collapse",
-     "reduces surface tension and increases lung compliance",
-     "decreases surface tension to keep alveoli open"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-44",
-   "level": 3,
-   "sub": "Pericardium and heart",
-   "q": "A patient develops fluid accumulation in the pericardial space after pericarditis, causing elevated jugular venous pressure, muffled heart sounds, and hypotension. Which triad is described?",
-   "options": [
-    "Charcot triad",
-    "Beck triad",
-    "Virchow triad",
-    "Cushing triad"
-   ],
-   "answer": 1,
-   "explain": "Beck triad consists of hypotension, distended neck veins (elevated JVP), and muffled/distant heart sounds, classic for acute cardiac tamponade when pericardial fluid compresses the heart chambers.",
-   "open": {
-    "q": "What clinical triad of hypotension, elevated JVP, and muffled heart sounds is associated with cardiac tamponade?",
-    "accept": [
-     "beck triad",
-     "beck's triad",
-     "becks triad"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-45",
-   "level": 1,
-   "sub": "Pericardium and heart",
-   "q": "Which structure forms the muscular interventricular septum that separates the right and left ventricles?",
-   "options": [
-    "A muscular partition with a smaller superior membranous part",
-    "A serous pericardial fold",
-    "An atrial cartilage disc",
-    "The ligamentum arteriosum"
-   ],
-   "answer": 0,
-   "explain": "The interventricular septum is mostly a thick muscular wall between the right and left ventricles, with a smaller superior membranous portion near the right fibrous trigone and tricuspid septal leaflet.",
-   "open": {
-    "q": "What is the main structural composition of the interventricular septum of the heart?",
-    "accept": [
-     "a thick muscular septum with a smaller superior membranous portion",
-     "mostly muscular tissue with a membranous part superiorly",
-     "muscular wall with a small membranous part"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-46",
-   "level": 2,
-   "sub": "Coronary circulation and conduction",
-   "q": "Which artery gives rise to the posterior interventricular (posterior descending) artery in a right-dominant heart?",
-   "options": [
-    "Left circumflex artery",
-    "Right coronary artery",
-    "Internal thoracic artery",
-    "Left subclavian artery"
-   ],
-   "answer": 1,
-   "explain": "In right coronary dominance (the most common pattern), the right coronary artery gives off the posterior interventricular (descending) artery in the posterior interventricular sulcus to supply the posterior septum and inferior left ventricular wall.",
-   "open": {
-    "q": "In a right-dominant heart, which artery gives rise to the posterior interventricular artery?",
-    "accept": [
-     "right coronary artery",
-     "the right coronary artery"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-47",
-   "level": 1,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "Which remnant connects the arch of the aorta to the proximal left pulmonary artery and represents the obliterated fetal ductus arteriosus?",
-   "options": [
-    "Ligamentum teres",
-    "Ligamentum venosum",
-    "Ligamentum arteriosum",
-    "Median umbilical ligament"
-   ],
-   "answer": 2,
-   "explain": "The ligamentum arteriosum is the fibrous remnant of the fetal ductus arteriosus, stretching from the inferior aspect of the aortic arch to the superior aspect of the left pulmonary artery.",
-   "open": {
-    "q": "What fibrous cord connects the aortic arch to the left pulmonary artery after closure of the ductus arteriosus?",
-    "accept": [
-     "ligamentum arteriosum",
-     "the ligamentum arteriosum"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-48",
-   "level": 2,
-   "sub": "Thoracic wall and mechanics",
-   "q": "How does bucket-handle movement of lower ribs (approximately ribs 7 to 10) increase the transverse diameter of the thorax?",
-   "options": [
-    "Ribs rotate inward toward midline",
-    "Elevated rib shafts swing their outward-bowed midpoints upward and laterally",
-    "The sternum moves down toward the pelvis",
-    "The diaphragm pulls ribs medially"
-   ],
-   "answer": 1,
-   "explain": "Because the middle/lateral aspects of ribs 7 to 10 bow outward and downward, elevating them rotates them like a bucket handle so their lateral arches move outward and upward, widening the transverse thoracic diameter.",
-   "open": {
-    "q": "How does bucket-handle motion of the ribs widen the transverse diameter of the thorax?",
-    "accept": [
-     "elevating the curved rib shafts swings their lateral arches outward and upward",
-     "lateral rib arcs move outward and upward as the ribs elevate",
-     "outward and upward swing of the rib shafts"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-49",
-   "level": 1,
-   "sub": "Mediastinum",
-   "q": "Which lymphoid organ lies predominantly in the anterior/superior mediastinum and is prominent in infants and children before undergoing involution after puberty?",
-   "options": [
-    "Spleen",
-    "Thymus",
-    "Palatine tonsil",
-    "Cisterna chyli"
-   ],
-   "answer": 1,
-   "explain": "The thymus is a bilobed lymphoid organ located in the anterior and superior mediastinum (retrosternal/anterior to the great vessels and pericardium) where T lymphocytes mature, gradually undergoing fatty involution after puberty.",
-   "open": {
-    "q": "Which bilobed lymphoid organ sits in the anterior/superior mediastinum and involutes after puberty?",
-    "accept": [
-     "thymus",
-     "the thymus",
-     "thymus gland"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-50",
-   "level": 3,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "A patient has a tumor or enlarged lymph node in the posterior mediastinum compressing the thoracic duct. Along which side of the body is chylothorax or impaired lymphatic drainage from the lower body most classically associated?",
-   "options": [
-    "Left pleural cavity/left thoracic side",
-    "Right foot sole only",
-    "Left external ear only",
-    "Right thyroid lobe only"
-   ],
-   "answer": 0,
-   "explain": "The thoracic duct ascends through the posterior mediastinum and crosses toward the left around T4 to T6 to drain into the left systemic venous junction; injury or obstruction can cause chylothorax (often left-sided or bilateral) and impair lower-body lymph return.",
-   "open": {
-    "q": "Toward which side of the thorax does the thoracic duct incline superiorly to drain into the systemic veins?",
-    "accept": [
-     "left side",
-     "left",
-     "left thoracic side"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-51",
-   "level": 1,
-   "sub": "Thoracic cage and ribs",
-   "q": "During dissection of a typical rib, the articular facet on its tubercle is identified. Which structure does this facet normally meet?",
-   "options": [
-    "The body of the corresponding thoracic vertebra",
-    "The transverse process of the corresponding thoracic vertebra",
-    "The spinous process of the vertebra above",
-    "The costal cartilage of the rib below"
-   ],
-   "answer": 1,
-   "explain": "The tubercle of a typical rib has an articular facet that meets the transverse costal facet on the transverse process of the corresponding thoracic vertebra. The head of the rib articulates with vertebral bodies and the intervening disc.",
-   "open": {
-    "q": "What does the articular facet on the tubercle of a typical rib articulate with?",
-    "accept": [
-     "transverse process of the corresponding thoracic vertebra",
-     "transverse costal facet",
-     "transverse costal facet of the corresponding vertebra"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-52",
-   "level": 2,
-   "sub": "Thoracic wall and mechanics",
-   "q": "A surgeon exposes the internal thoracic artery from the posterior aspect of the anterior chest wall. Which muscle lies posterior to this artery along much of its course?",
-   "options": [
-    "External intercostal",
-    "Transversus thoracis",
-    "Serratus anterior",
-    "Pectoralis minor"
-   ],
-   "answer": 1,
-   "explain": "The internal thoracic artery descends on the inner surface of the anterior thoracic wall, posterior to the costal cartilages and anterior to the transversus thoracis muscle. It terminates around the sixth intercostal space as the superior epigastric and musculophrenic arteries.",
-   "open": {
-    "q": "Which muscle lies posterior to the internal thoracic artery on the inner anterior thoracic wall?",
-    "accept": [
-     "transversus thoracis",
-     "transversus thoracis muscle"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-53",
-   "level": 1,
-   "sub": "Thoracic wall and mechanics",
-   "q": "During breast surgery, the surgeon identifies a loose connective-tissue plane that allows the mammary gland to move over the deep fascia covering pectoralis major. What is this plane called?",
-   "options": [
-    "Suspensory ligament",
-    "Retromammary space",
-    "Inframammary fold",
-    "Lactiferous sinus"
-   ],
-   "answer": 1,
-   "explain": "The retromammary space is a loose connective-tissue plane between the posterior surface of the breast and the deep pectoral fascia. It permits mobility of the breast over the pectoral region.",
-   "open": {
-    "q": "What is the loose connective-tissue plane between the breast and deep pectoral fascia called?",
-    "accept": [
-     "retromammary space",
-     "retromammary plane"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-54",
-   "level": 2,
-   "sub": "Thoracic wall and mechanics",
-   "q": "A woman with carcinoma in the lateral part of the breast undergoes assessment for regional spread. Which lymph-node group is the most frequent initial destination for lymph from much of the breast?",
-   "options": [
-    "Parasternal nodes",
-    "Axillary nodes, especially the pectoral group",
-    "Posterior mediastinal nodes",
-    "Deep cervical nodes"
-   ],
-   "answer": 1,
-   "explain": "Most lymph from the breast, particularly its lateral quadrants, drains to the axillary nodes, especially the anterior (pectoral) group. Medial breast regions also drain to parasternal nodes, and cross-midline drainage can occur.",
-   "open": {
-    "q": "Which regional lymph-node basin receives most lymph from the breast, particularly its lateral part?",
-    "accept": [
-     "axillary lymph nodes",
-     "axillary nodes",
-     "pectoral group of axillary nodes"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-55",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "A patient with pleurisy reports sharp pain when the inflamed pleura is stretched during breathing. Which part of the pleura is most directly responsible for well-localized pain?",
-   "options": [
-    "Visceral pleura covering the lung",
-    "Parietal pleura lining the thoracic wall",
-    "Both pleural layers equally",
-    "The alveolar epithelium"
-   ],
-   "answer": 1,
-   "explain": "The parietal pleura has somatic sensory innervation from intercostal and phrenic nerves and is sensitive to pain. The visceral pleura is supplied by autonomic fibres and is relatively insensitive to ordinary pain, touch and temperature.",
-   "open": {
-    "q": "Which pleural layer is sensitive to pain and produces well-localized pleuritic pain?",
-    "accept": [
-     "parietal pleura",
-     "the parietal layer"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-56",
-   "level": 1,
-   "sub": "Pleura and lungs",
-   "q": "A histological section of lung shows a very thin squamous epithelial cell lining that forms most of the alveolar surface and minimizes the diffusion distance for gases. Which cell type is being observed?",
-   "options": [
-    "Type I pneumocyte",
-    "Type II pneumocyte",
-    "Alveolar macrophage",
-    "Ciliated columnar epithelial cell"
-   ],
-   "answer": 0,
-   "explain": "Type I pneumocytes are thin squamous cells covering most of the alveolar surface and form a major part of the blood–air barrier. Type II pneumocytes secrete pulmonary surfactant and can proliferate to replace damaged alveolar epithelial cells.",
-   "open": {
-    "q": "Which pneumocyte type forms most of the thin gas-exchanging alveolar surface?",
-    "accept": [
-     "type I pneumocyte",
-     "type I alveolar cell",
-     "type one pneumocyte"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-57",
-   "level": 2,
-   "sub": "Coronary circulation and conduction",
-   "q": "A patient has an infarct involving the posterior wall of the right atrium near the opening of the superior vena cava. Which normal pacemaker structure is located in this region?",
-   "options": [
-    "Atrioventricular node",
-    "Sinoatrial node",
-    "Bundle of His",
-    "Left bundle branch"
-   ],
-   "answer": 1,
-   "explain": "The sinoatrial node lies subepicardially near the superior end of the crista terminalis at the junction of the superior vena cava and right atrium. It normally initiates the cardiac impulse.",
-   "open": {
-    "q": "Which cardiac pacemaker lies near the junction of the superior vena cava and right atrium?",
-    "accept": [
-     "sinoatrial node",
-     "sa node"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-58",
-   "level": 2,
-   "sub": "Coronary circulation and conduction",
-   "q": "In a typical right-dominant coronary circulation, which artery most commonly gives rise to the posterior interventricular artery?",
-   "options": [
-    "Left anterior descending artery",
-    "Right coronary artery",
-    "Circumflex artery",
-    "Left marginal artery"
-   ],
-   "answer": 1,
-   "explain": "In right-dominant circulation, the posterior interventricular (posterior descending) artery arises from the right coronary artery. Coronary dominance is defined by the artery that gives rise to this vessel; left dominance occurs when it arises from the circumflex artery.",
-   "open": {
-    "q": "Which coronary artery usually gives rise to the posterior interventricular artery in right-dominant circulation?",
-    "accept": [
-     "right coronary artery",
-     "right coronary"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-59",
-   "level": 2,
-   "sub": "Posterior mediastinum and vessels",
-   "q": "A surgeon identifies the greater thoracic splanchnic nerve descending from the thoracic sympathetic trunk. Where do most of its preganglionic sympathetic fibres synapse?",
-   "options": [
-    "Celiac ganglion",
-    "Superior cervical ganglion",
-    "Inferior mesenteric ganglion",
-    "Atrioventricular node"
-   ],
-   "answer": 0,
-   "explain": "The greater thoracic splanchnic nerve is formed mainly by preganglionic sympathetic fibres from approximately T5–T9 (with variation) and usually synapses in the celiac ganglia. Its postganglionic fibres then distribute to foregut structures.",
-   "open": {
-    "q": "In which prevertebral ganglion do most greater thoracic splanchnic nerve fibres synapse?",
-    "accept": [
-     "celiac ganglion",
-     "coeliac ganglion",
-     "celiac ganglia",
-     "coeliac ganglia"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-60",
-   "level": 2,
-   "sub": "Diaphragm",
-   "q": "During an operation, the surgeon identifies the opening in the diaphragm transmitting the inferior vena cava. At which vertebral level is this opening usually found?",
-   "options": [
-    "T8",
-    "T10",
-    "T12",
-    "L1"
-   ],
-   "answer": 0,
-   "explain": "The caval opening lies in the central tendon of the diaphragm at approximately T8 and transmits the inferior vena cava and terminal branches of the right phrenic nerve. The oesophageal hiatus is at T10 and the aortic hiatus at T12.",
-   "open": {
-    "q": "At what vertebral level is the caval opening of the diaphragm located?",
-    "accept": [
-     "t8",
-     "t8 level",
-     "eighth thoracic vertebra"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-61",
-   "level": 2,
-   "sub": "Diaphragm",
-   "q": "A patient undergoes repair of a congenital diaphragmatic defect. Which combination correctly lists the major embryological components that contribute to formation of the diaphragm?",
-   "options": [
-    "Septum transversum, pleuroperitoneal membranes, dorsal mesentery of the oesophagus, and muscular ingrowth from the body wall",
-    "Neural crest, notochord, and pharyngeal arches",
-    "Pleuropericardial membranes and the ventral mesentery of the stomach",
-    "Endoderm of the foregut and ectoderm of the thoracic wall"
-   ],
-   "answer": 0,
-   "explain": "The diaphragm develops from four major components: septum transversum, pleuroperitoneal membranes, dorsal mesentery of the oesophagus, and muscular ingrowth from the lateral body walls. Their incomplete fusion can result in congenital diaphragmatic hernia.",
-   "open": {
-    "q": "Name the four major embryological components that form the diaphragm.",
-    "accept": [
-     "septum transversum, pleuroperitoneal membranes, dorsal mesentery of the oesophagus, and body wall musculature",
-     "septum transversum pleuroperitoneal membranes dorsal mesentery of oesophagus muscular ingrowth from body wall"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-62",
-   "level": 2,
-   "sub": "Mediastinum",
-   "q": "A developmental abnormality prevents normal formation of the pleuropericardial folds. Which adult structure would be most directly affected by failure of these folds to develop and fuse normally?",
-   "options": [
-    "Fibrous pericardium and separation of the pleural from pericardial cavities",
-    "Visceral pleura covering the lungs only",
-    "Central tendon of the diaphragm",
-    "Muscular interventricular septum"
-   ],
-   "answer": 0,
-   "explain": "Pleuropericardial folds grow medially and fuse to separate the pericardial cavity from the pleural cavities. They contribute to the fibrous pericardium and the parietal layer of serous pericardium.",
-   "open": {
-    "q": "Which cavities are separated by fusion of the pleuropericardial membranes?",
-    "accept": [
-     "pericardial and pleural cavities",
-     "pleural cavities from the pericardial cavity"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-63",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "A congenital anomaly affects formation of the respiratory diverticulum. From which embryonic structure does this diverticulum normally arise?",
-   "options": [
-    "Dorsal wall of the hindgut",
-    "Ventral wall of the foregut",
-    "Neural tube",
-    "Septum transversum"
-   ],
-   "answer": 1,
-   "explain": "The respiratory diverticulum (lung bud) develops as an outgrowth from the ventral wall of the foregut endoderm. Endoderm forms the epithelial lining of the respiratory tract, while surrounding splanchnic mesoderm contributes cartilage, smooth muscle and connective tissue.",
-   "open": {
-    "q": "From which part of the embryonic gut does the respiratory diverticulum arise?",
-    "accept": [
-     "ventral wall of the foregut",
-     "ventral foregut endoderm",
-     "foregut"
-    ]
-   }
-  },
-  {
-   "id": "GRTH-64",
-   "level": 2,
-   "sub": "Pleura and lungs",
-   "q": "A medical student is asked to arrange the major stages of lung development in chronological order. Which sequence is correct?",
-   "options": [
-    "Canalicular, pseudoglandular, alveolar, terminal sac",
-    "Pseudoglandular, canalicular, terminal sac, alveolar",
-    "Terminal sac, pseudoglandular, canalicular, alveolar",
-    "Alveolar, terminal sac, canalicular, pseudoglandular"
-   ],
-   "answer": 1,
-   "explain": "The major stages of lung development proceed through the pseudoglandular, canalicular, terminal sac (saccular), and alveolar periods. These stages overlap in time, and alveolar maturation continues after birth.",
-   "open": {
-    "q": "List the four major periods of lung development in chronological order.",
-    "accept": [
-     "pseudoglandular, canalicular, terminal sac, alveolar",
-     "pseudoglandular canalicular saccular alveolar"
-    ]
-   }
-  }
- ]
+  "topic": "gr-thorax",
+  "questions": [
+    {
+      "id": "GRTH-01",
+      "level": 1,
+      "sub": "Thoracic cage and ribs",
+      "q": "Which bony landmark marks the junction between the manubrium and body of the sternum at approximately the level of the second costal cartilage and the T4/T5 intervertebral disc?",
+      "options": [
+        "Sternal angle (angle of Louis)",
+        "Xiphisternal joint",
+        "Jugular (suprasternal) notch",
+        "Costal margin"
+      ],
+      "answer": 0,
+      "explain": "The sternal angle is a palpable transverse ridge where the manubrium meets the sternal body, serving as a key surface landmark for counting ribs (starting at the second costal cartilage), locating the aortic arch/bifurcation of trachea, and marking the T4/T5 disc plane.",
+      "open": {
+        "q": "What palpable ridge marks the junction of the manubrium and sternal body at the level of the second costal cartilage?",
+        "accept": [
+          "sternal angle",
+          "angle of louis",
+          "manubriosternal angle"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-02",
+      "level": 1,
+      "sub": "Thoracic cage and ribs",
+      "q": "Ribs 1 through 7 are classified as true (vertebrosternal) ribs because of how they attach anteriorly?",
+      "options": [
+        "They articulate with the sternum only via the seventh costal cartilage",
+        "Each connects directly to the sternum via its own costal cartilage",
+        "They end freely within the anterior abdominal wall musculature",
+        "They lack costal cartilages completely"
+      ],
+      "answer": 1,
+      "explain": "True ribs (ribs 1 to 7) each have their own costal cartilage that articulates directly with the sternum. False ribs (8 to 10) join the costal cartilage above, while floating ribs (11 and 12) have no anterior attachment to the sternum.",
+      "open": {
+        "q": "How do true ribs (ribs 1 to 7) attach anteriorly to the sternum?",
+        "accept": [
+          "each attaches directly to the sternum via its own costal cartilage",
+          "each has its own costal cartilage joining the sternum directly",
+          "direct attachment to the sternum by their own costal cartilages"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-03",
+      "level": 1,
+      "sub": "Thoracic cage and ribs",
+      "q": "Which ribs are classified as floating (vertebral) ribs because their cartilaginous tips end freely in the posterior abdominal wall musculature without reaching the sternum?",
+      "options": [
+        "Ribs 1 and 2",
+        "Ribs 7 and 8",
+        "Ribs 11 and 12",
+        "Ribs 9 and 10"
+      ],
+      "answer": 2,
+      "explain": "Ribs 11 and 12 are floating ribs whose small cartilaginous tips end freely in the musculature of the posterior abdominal wall rather than articulating with the sternum or another rib cartilage.",
+      "open": {
+        "q": "Which two ribs are floating ribs whose tips end freely in musculature?",
+        "accept": [
+          "ribs 11 and 12",
+          "11th and 12th ribs",
+          "11 and 12"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-04",
+      "level": 1,
+      "sub": "Thoracic cage and ribs",
+      "q": "Along which part of a typical rib does the costal groove run to protect the intercostal vein, artery, and nerve?",
+      "options": [
+        "Superior border of the shaft",
+        "Anterior surface of the head",
+        "Articular facet of the tubercle",
+        "Inferior internal aspect of the shaft"
+      ],
+      "answer": 3,
+      "explain": "The costal groove lies along the inferior internal margin of a typical rib shaft, sheltering the intercostal vein (most superior), intercostal artery, and intercostal nerve (most inferior, VAN from above downward).",
+      "open": {
+        "q": "Along which border/aspect of a typical rib does the costal groove run?",
+        "accept": [
+          "inferior internal aspect of the shaft",
+          "inferior inner surface",
+          "lower inner border of the rib"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-05",
+      "level": 2,
+      "sub": "Thoracic wall and mechanics",
+      "q": "Why should a thoracentesis or intercostal chest tube insertion pass just above the superior border of the lower rib in an intercostal space?",
+      "options": [
+        "To avoid the main intercostal neurovascular bundle beneath the rib above",
+        "There are no muscles above a rib",
+        "The diaphragm attaches only to rib superior borders",
+        "To puncture costal cartilage"
+      ],
+      "answer": 0,
+      "explain": "The main intercostal vein, artery, and nerve run in the costal groove along the inferior margin of the rib above, so inserting just superior to the lower rib avoids the main neurovascular bundle (though collateral branches can exist).",
+      "open": {
+        "q": "Why is a needle or chest tube inserted just above the superior border of a rib during intercostal procedures?",
+        "accept": [
+          "to avoid the main neurovascular bundle in the costal groove of the rib above",
+          "to stay clear of the intercostal vessels and nerve below the upper rib",
+          "to avoid injuring the intercostal vein, artery, and nerve"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-06",
+      "level": 1,
+      "sub": "Thoracic wall and mechanics",
+      "q": "Which intercostal muscles run inferoanteriorly from the rib above to the rib below and assist inspiration by elevating the ribs?",
+      "options": [
+        "Innermost intercostals",
+        "External intercostals",
+        "Transversus thoracis",
+        "Subcostals"
+      ],
+      "answer": 1,
+      "explain": "External intercostal muscles have fibers directed inferoanteriorly (hands in pockets anteriorly) and extend from tubercles posteriorly to near the costochondral junctions anteriorly, elevating ribs during quiet/active inspiration.",
+      "open": {
+        "q": "Which intercostal muscles have fibers running inferoanteriorly and help elevate the ribs during inspiration?",
+        "accept": [
+          "external intercostals",
+          "external intercostal muscles",
+          "external intercostal"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-07",
+      "level": 2,
+      "sub": "Thoracic wall and mechanics",
+      "q": "How does the pump-handle movement of the ribs increase the anteroposterior diameter of the thoracic cavity during inspiration?",
+      "options": [
+        "Ribs rotate around a vertical sternal axis",
+        "The diaphragm relaxes upward",
+        "Anterior rib elevation moves the sternum forward and up, increasing AP diameter",
+        "Costal cartilages shorten and pull the sternum back"
+      ],
+      "answer": 2,
+      "explain": "Because the anterior ends of the ribs lie lower than their posterior vertebral attachments, elevating the rib bodies causes the sternum and anterior rib ends to move forward and upward (pump-handle motion), expanding anteroposterior thoracic dimension.",
+      "open": {
+        "q": "How does pump-handle motion of the ribs expand the anteroposterior diameter of the thorax?",
+        "accept": [
+          "anterior ends of the ribs and sternum rise and move forward",
+          "elevation of rib shafts pushes the anterior ends and sternum anteriorly",
+          "raising the anterior rib ends increases anteroposterior chest depth"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-08",
+      "level": 1,
+      "sub": "Diaphragm",
+      "q": "At which vertebral level does the aortic hiatus pass through the diaphragm?",
+      "options": [
+        "T8",
+        "T10",
+        "L1",
+        "T12"
+      ],
+      "answer": 3,
+      "explain": "Using the classic levels: caval opening is at T8 (IVC), esophageal hiatus is at T10 (esophagus and vagal trunks), and aortic hiatus is at T12 (aorta, thoracic duct, and often azygos vein).",
+      "open": {
+        "q": "At which vertebral level does the aortic hiatus pass through the diaphragm?",
+        "accept": [
+          "t12",
+          "twelfth thoracic vertebra",
+          "t12 vertebra"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-09",
+      "level": 1,
+      "sub": "Diaphragm",
+      "q": "Which nerve provides the primary motor innervation to the diaphragm?",
+      "options": [
+        "Phrenic nerve (C3 to C5)",
+        "Vagus nerve (CN X)",
+        "Intercostobrachial nerve (T2)",
+        "Subcostal nerve (T12)"
+      ],
+      "answer": 0,
+      "explain": "The phrenic nerve arises from cervical spinal segments C3, C4, and C5 (C3, 4, 5 keep the diaphragm alive), descending through the thorax to supply motor fibers to the diaphragm and sensory fibers to its central tendon and mediastinal/diaphragmatic pleura.",
+      "open": {
+        "q": "Which nerve provides motor supply to the diaphragm?",
+        "accept": [
+          "phrenic nerve",
+          "the phrenic nerve"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-10",
+      "level": 3,
+      "sub": "Diaphragm",
+      "q": "A patient has irritation of the diaphragmatic pleura or peritoneum beneath the central tendon of the diaphragm and feels referred pain over the ipsilateral shoulder tip. Which nerve pathway explains this referred pain?",
+      "options": [
+        "Sympathetic chain (T12)",
+        "Phrenic afferents (C3–C5) share segments with shoulder sensation",
+        "Ilioinguinal nerve (L1)",
+        "Long thoracic nerve (C5–C7)"
+      ],
+      "answer": 1,
+      "explain": "Sensory fibers from the central diaphragm travel in the phrenic nerve (C3 to C5) to the same cervical cord levels that receive cutaneous input from the shoulder via supraclavicular nerves (C3 to C4), producing referred shoulder-tip pain.",
+      "open": {
+        "q": "Which nerve explains referred pain to the shoulder tip from irritation of the central diaphragm?",
+        "accept": [
+          "phrenic nerve",
+          "c3 to c5 phrenic and supraclavicular pathway"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-11",
+      "level": 1,
+      "sub": "Pleura and lungs",
+      "q": "Which layer of the pleura adheres directly to the surface of the lung and dips into its fissures?",
+      "options": [
+        "Parietal pleura",
+        "Endothoracic fascia",
+        "Visceral (pulmonary) pleura",
+        "Fibrous pericardium"
+      ],
+      "answer": 2,
+      "explain": "The visceral (pulmonary) pleura covers the lung surfaces and lines the interlobar fissures, whereas the parietal pleura lines the thoracic wall, mediastinum, and diaphragm.",
+      "open": {
+        "q": "Which pleural layer closely covers the lung surfaces and enters its fissures?",
+        "accept": [
+          "visceral pleura",
+          "pulmonary pleura",
+          "visceral"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-12",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "Why does the inferior margin of the parietal pleura extend lower than the inferior border of the lung (for example, to the 10th rib at the midaxillary line)?",
+      "options": [
+        "To prevent lung expansion",
+        "It forms a recess into which the lung expands on deep inspiration",
+        "Parietal pleura attaches to the xiphoid",
+        "It houses the heart laterally"
+      ],
+      "answer": 1,
+      "explain": "Because the inferior border of the lung sits higher than the inferior reflection of parietal pleura, a potential space called the costodiaphragmatic recess is formed, allowing the lower lung margin to descend during deep inspiration.",
+      "open": {
+        "q": "What space is created because the parietal pleura extends lower than the inferior border of the lung?",
+        "accept": [
+          "costodiaphragmatic recess",
+          "costodiaphragmatic pleural recess"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-13",
+      "level": 1,
+      "sub": "Pleura and lungs",
+      "q": "How many lobes and fissures does the right lung typically possess?",
+      "options": [
+        "Two lobes and one oblique fissure",
+        "Three lobes and one horizontal fissure only",
+        "Three lobes divided by oblique and horizontal fissures",
+        "Four lobes and three fissures"
+      ],
+      "answer": 2,
+      "explain": "The right lung has three lobes—superior, middle, and inferior—separated by an oblique fissure and a horizontal fissure. The left lung has two lobes (superior and inferior) separated by an oblique fissure.",
+      "open": {
+        "q": "How many lobes and fissures does the right lung typically have?",
+        "accept": [
+          "three lobes and two fissures",
+          "3 lobes with oblique and horizontal fissures",
+          "three lobes, oblique and horizontal fissures"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-14",
+      "level": 1,
+      "sub": "Pleura and lungs",
+      "q": "Which structural feature on the medial surface of the left lung accommodates the apex and left side of the heart?",
+      "options": [
+        "Middle lobe impression",
+        "Azygos arch groove",
+        "Costodiaphragmatic notch",
+        "Cardiac notch"
+      ],
+      "answer": 3,
+      "explain": "The anterior border of the left lung presents a prominent cardiac notch (with a tongue-like lingula below it) where the left heart borders approach the thoracic wall.",
+      "open": {
+        "q": "What indentation on the anterior border of the left lung accommodates the heart?",
+        "accept": [
+          "cardiac notch",
+          "the cardiac notch"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-15",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "Why are inhaled foreign bodies more likely to enter the right main bronchus than the left main bronchus?",
+      "options": [
+        "The right main bronchus is wider, shorter and more vertical",
+        "The left bronchus lacks cartilage",
+        "The right bronchus is narrower and more horizontal",
+        "The carina directs all particles left"
+      ],
+      "answer": 0,
+      "explain": "The right main bronchus is wider, shorter, and takes a steeper, more vertical path from the trachea than the narrower, longer, more horizontal left main bronchus, making aspirated objects more common on the right.",
+      "open": {
+        "q": "Why are aspirated foreign bodies more likely to enter the right main bronchus than the left?",
+        "accept": [
+          "it is wider, shorter, and more vertical",
+          "wider, shorter, and steeper alignment with the trachea",
+          "more vertical, wider, and shorter"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-16",
+      "level": 3,
+      "sub": "Pleura and lungs",
+      "q": "A trauma patient has absent breath sounds, hyperresonance to percussion, and tracheal deviation away from the affected side with distended neck veins and hypotension. Which life-threatening condition is present?",
+      "options": [
+        "Simple pleural effusion",
+        "Tension pneumothorax",
+        "Pulmonary embolism",
+        "Pericardial tamponade without air"
+      ],
+      "answer": 1,
+      "explain": "A one-way air leak into the pleural space creates a tension pneumothorax, increasing intrapleural pressure, collapsing the ipsilateral lung, shifting the mediastinum/trachea contralaterally, and impairing venous return to the heart.",
+      "open": {
+        "q": "Which condition causes hyperresonance, absent breath sounds, contralateral tracheal shift, and hemodynamic compromise from trapped pleural air?",
+        "accept": [
+          "tension pneumothorax",
+          "a tension pneumothorax"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-17",
+      "level": 1,
+      "sub": "Pleura and lungs",
+      "q": "What is a bronchopulmonary segment?",
+      "options": [
+        "A subdivision of a lung lobe supplied by a secondary (lobar) bronchus and lobar pulmonary artery.",
+        "A subdivision of a lung lobe supplied by a segmental bronchus and a corresponding branch of the pulmonary artery.",
+        "A microscopic unit of lung parenchyma supplied by a terminal bronchiole and bounded by connective-tissue septa.",
+        "A region of lung supplied by a segmental bronchus but enclosed within its own separate pleural sac."
+      ],
+      "answer": 1,
+      "explain": "A bronchopulmonary segment is a distinct, roughly pyramidal subdivision of a lung lobe supplied by its own segmental (tertiary) bronchus and a corresponding segmental branch of the pulmonary artery. Its base faces the pleural surface and its apex points toward the hilum. Connective-tissue septa separate adjacent segments, while pulmonary veins usually run between them; this anatomical independence allows a segment to be removed surgically (segmentectomy) while preserving the rest of the lobe.",
+      "open": {
+        "q": "What is a bronchopulmonary segment?",
+        "accept": [
+          "a discrete functional lung unit supplied by a tertiary bronchus and segmental artery",
+          "functional unit of a lung lobe supplied by a segmental bronchus",
+          "wedge-shaped lung unit supplied by a tertiary bronchus"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-18",
+      "level": 1,
+      "sub": "Mediastinum",
+      "q": "Which division of the mediastinum contains the heart within the pericardium?",
+      "options": [
+        "Superior mediastinum",
+        "Posterior mediastinum",
+        "Anterior mediastinum",
+        "Middle mediastinum"
+      ],
+      "answer": 3,
+      "explain": "The inferior mediastinum is divided into anterior, middle, and posterior parts relative to the pericardial sac; the middle mediastinum contains the pericardium, heart, ascending aorta, pulmonary trunk, and SVC termination.",
+      "open": {
+        "q": "Which division of the mediastinum houses the pericardium and heart?",
+        "accept": [
+          "middle mediastinum",
+          "the middle mediastinum"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-19",
+      "level": 1,
+      "sub": "Mediastinum",
+      "q": "Which major structure passes through the superior mediastinum and arches over the root of the left lung and left main bronchus?",
+      "options": [
+        "Arch of the aorta",
+        "Inferior vena cava",
+        "Thoracic duct termination",
+        "Right atrium"
+      ],
+      "answer": 0,
+      "explain": "The aortic arch lies in the superior mediastinum, arching posteriorly and to the left above the left pulmonary hilum/bronchus as it continues as the thoracic aorta.",
+      "open": {
+        "q": "Which major vessel arches over the left main bronchus in the superior mediastinum?",
+        "accept": [
+          "arch of the aorta",
+          "aortic arch"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-20",
+      "level": 2,
+      "sub": "Mediastinum",
+      "q": "How does the course of the left recurrent laryngeal nerve differ from that of the right recurrent laryngeal nerve?",
+      "options": [
+        "Left loops under right subclavian; right under aortic arch",
+        "Left loops under aortic arch; right under right subclavian",
+        "Neither nerve loops beneath a vessel",
+        "Both pass through the T8 caval opening"
+      ],
+      "answer": 1,
+      "explain": "The left recurrent laryngeal nerve hooks beneath the aortic arch (just lateral to the ligamentum arteriosum) and ascends in the tracheoesophageal groove, whereas the right recurrent laryngeal nerve loops under the right subclavian artery.",
+      "open": {
+        "q": "Beneath which vessel does the left recurrent laryngeal nerve hook compared with the right?",
+        "accept": [
+          "under the aortic arch while the right hooks under the right subclavian artery",
+          "aortic arch on the left and right subclavian artery on the right",
+          "arch of the aorta"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-21",
+      "level": 1,
+      "sub": "Pericardium and heart",
+      "q": "Which layer of the pericardium is a tough, inelastic outer sac that prevents sudden overdistension of the heart and blends inferiorly with the central tendon of the diaphragm?",
+      "options": [
+        "Parietal layer of serous pericardium",
+        "Visceral layer of serous pericardium (epicardium)",
+        "Fibrous pericardium",
+        "Myocardium"
+      ],
+      "answer": 2,
+      "explain": "The fibrous pericardium is the tough outer dense connective tissue sac of the pericardium, lined internally by the parietal serous pericardium. Together with the visceral serous layer (epicardium), they enclose the pericardial cavity.",
+      "open": {
+        "q": "Which tough outer layer of the pericardium resists acute overdistension of the heart?",
+        "accept": [
+          "fibrous pericardium",
+          "the fibrous pericardium"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-22",
+      "level": 2,
+      "sub": "Pericardium and heart",
+      "q": "What is the clinical significance of the transverse pericardial sinus located behind the ascending aorta and pulmonary trunk and anterior to the superior vena cava?",
+      "options": [
+        "It drains left ventricular blood",
+        "It permits clamping of the aorta and pulmonary trunk",
+        "It contains the SA node",
+        "It separates tricuspid valve from right atrium"
+      ],
+      "answer": 1,
+      "explain": "The transverse pericardial sinus lies between the arterial outflow vessels (aorta and pulmonary trunk) anteriorly and the great veins/atria posteriorly, allowing surgical access to pass a finger or clamp around the aorta and pulmonary trunk.",
+      "open": {
+        "q": "How is the transverse pericardial sinus useful during cardiac surgery?",
+        "accept": [
+          "it allows passing a clamp or ligature around the aorta and pulmonary trunk",
+          "surgeons can pass a finger or clamp behind the aorta and pulmonary trunk",
+          "isolating the ascending aorta and pulmonary trunk"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-23",
+      "level": 1,
+      "sub": "Pericardium and heart",
+      "q": "Which chamber of the heart forms most of the sternocostal (anterior) surface of the heart?",
+      "options": [
+        "Left atrium",
+        "Left ventricle",
+        "Right ventricle",
+        "Coronary sinus"
+      ],
+      "answer": 2,
+      "explain": "The right ventricle makes up the largest portion of the anterior (sternocostal) surface of the heart, while the left ventricle forms most of the diaphragmatic (inferior) surface and the apex.",
+      "open": {
+        "q": "Which heart chamber forms most of the anterior (sternocostal) surface?",
+        "accept": [
+          "right ventricle",
+          "the right ventricle"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-24",
+      "level": 1,
+      "sub": "Pericardium and heart",
+      "q": "Where is the apex of the normal adult heart typically located on the anterior chest wall?",
+      "options": [
+        "Right 2nd intercostal space, parasternal",
+        "Left 3rd intercostal space, anterior axillary line",
+        "Right 6th intercostal space, midclavicular",
+        "Left 5th intercostal space, near the midclavicular line"
+      ],
+      "answer": 3,
+      "explain": "The heart apex is formed by the inferolateral left ventricle and typically lies in the fifth left intercostal space (often about 7 to 9 cm from the midline or just medial to the midclavicular line in adults).",
+      "open": {
+        "q": "In which intercostal space is the normal adult cardiac apex typically located?",
+        "accept": [
+          "fifth left intercostal space",
+          "5th left intercostal space",
+          "left 5th intercostal space"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-25",
+      "level": 1,
+      "sub": "Pericardium and heart",
+      "q": "Which valve guards the right atrioventricular orifice between the right atrium and right ventricle?",
+      "options": [
+        "Tricuspid valve (right atrioventricular valve)",
+        "Mitral (bicuspid) valve",
+        "Aortic valve",
+        "Pulmonary valve"
+      ],
+      "answer": 0,
+      "explain": "The tricuspid (right atrioventricular) valve has three cusps (anterior, septal, and posterior) attached via chordae tendineae to papillary muscles of the right ventricle.",
+      "open": {
+        "q": "Which valve lies between the right atrium and right ventricle?",
+        "accept": [
+          "tricuspid valve",
+          "right atrioventricular valve",
+          "tricuspid"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-26",
+      "level": 2,
+      "sub": "Pericardium and heart",
+      "q": "Why do chordae tendineae and papillary muscles prevent prolapse of the atrioventricular valves into the atria during ventricular systole?",
+      "options": [
+        "They close semilunar valves in diastole",
+        "They tense chordae during systole, preventing AV valve prolapse",
+        "They pump coronary-sinus blood into ventricles",
+        "They fuse valve leaflets to the septum"
+      ],
+      "answer": 1,
+      "explain": "As ventricular pressure rises during systole, papillary muscles contract and pull on the chordae tendineae, anchoring the atrioventricular valve cusps so they do not evert/prolapse back into the atria.",
+      "open": {
+        "q": "How do papillary muscles and chordae tendineae prevent atrioventricular valve prolapse during systole?",
+        "accept": [
+          "they tense the cusps so rising ventricular pressure does not push them into the atria",
+          "papillary contraction pulls chordae tendineae to keep valve leaflets from everting",
+          "holding valve cusps taut during ventricular contraction"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-27",
+      "level": 1,
+      "sub": "Coronary circulation and conduction",
+      "q": "From which sinuses do the right and left coronary arteries arise?",
+      "options": [
+        "Pulmonary trunk sinuses",
+        "Coronary sinus",
+        "Aortic sinuses of the ascending aorta",
+        "Brachiocephalic trunk"
+      ],
+      "answer": 2,
+      "explain": "The right and left coronary arteries arise from the right and left aortic sinuses of the ascending aorta just superior to the aortic valve cusps (the posterior non-coronary sinus gives rise to no coronary artery).",
+      "open": {
+        "q": "From which structures do the right and left coronary arteries originate?",
+        "accept": [
+          "aortic sinuses",
+          "sinuses of the ascending aorta",
+          "aortic sinuses of ascending aorta"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-28",
+      "level": 2,
+      "sub": "Coronary circulation and conduction",
+      "q": "Which major branch of the left coronary artery runs down the anterior interventricular sulcus and supplies much of the anterior interventricular septum and anterior left ventricular wall?",
+      "options": [
+        "Right marginal artery",
+        "Posterior interventricular artery",
+        "Circumflex artery",
+        "Anterior interventricular (left anterior descending) artery"
+      ],
+      "answer": 3,
+      "explain": "The anterior interventricular artery (left anterior descending, LAD) courses along the anterior interventricular sulcus toward the apex, supplying the anterior left ventricle, right ventricle adjacent to the groove, and anterior two-thirds of the interventricular septum.",
+      "open": {
+        "q": "Which branch of the left coronary artery runs in the anterior interventricular sulcus?",
+        "accept": [
+          "anterior interventricular artery",
+          "left anterior descending artery",
+          "lad"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-29",
+      "level": 3,
+      "sub": "Coronary circulation and conduction",
+      "q": "A patient has an acute occlusion of the anterior interventricular (LAD) artery. Which region of the heart is most directly at risk of ischemia or infarction?",
+      "options": [
+        "Anterior LV wall and anterior interventricular septum",
+        "Right auricle only",
+        "Left superior pulmonary vein",
+        "SVC wall"
+      ],
+      "answer": 0,
+      "explain": "Occlusion of the anterior interventricular (LAD) artery classically causes ischemia/infarction of the anterior wall of the left ventricle, the apex, and the anterior two-thirds of the interventricular septum.",
+      "open": {
+        "q": "Which heart regions are primarily threatened by occlusion of the anterior interventricular artery?",
+        "accept": [
+          "anterior left ventricular wall and anterior interventricular septum",
+          "anterior left ventricle and anterior septum",
+          "anterior wall of left ventricle and septum"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-30",
+      "level": 1,
+      "sub": "Coronary circulation and conduction",
+      "q": "Where is the sinoatrial (SA) node, the normal pacemaker of the heart, typically located?",
+      "options": [
+        "At the LV apex",
+        "Upper right atrium near SVC opening",
+        "Inside the mitral annulus",
+        "In the left atrial appendage"
+      ],
+      "answer": 1,
+      "explain": "The sinoatrial (SA) node lies in the epicardial/myocardial wall of the upper right atrium near the entry of the superior vena cava and superior end of the crista terminalis.",
+      "open": {
+        "q": "Where in the heart is the sinoatrial (SA) node typically located?",
+        "accept": [
+          "upper right atrium near the superior vena cava opening",
+          "right atrium near superior vena cava",
+          "upper right atrium at junction with superior vena cava"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-31",
+      "level": 1,
+      "sub": "Coronary circulation and conduction",
+      "q": "Into which heart chamber does the coronary sinus—the main venous channel draining most of the heart wall—empty?",
+      "options": [
+        "Left atrium",
+        "Right atrium",
+        "Left ventricle",
+        "Pulmonary trunk"
+      ],
+      "answer": 1,
+      "explain": "The coronary sinus runs in the posterior atrioventricular groove and empties deoxygenated cardiac venous blood into the right atrium between the inferior vena cava opening and the right atrioventricular orifice.",
+      "open": {
+        "q": "Into which chamber of the heart does the coronary sinus drain?",
+        "accept": [
+          "right atrium",
+          "the right atrium"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-32",
+      "level": 2,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "Which vein ascends along the posterior thoracic wall to the right of the vertebral bodies and arches over the root of the right lung to join the superior vena cava?",
+      "options": [
+        "Hemiazygos vein",
+        "Azygos vein",
+        "Left brachiocephalic vein",
+        "Internal thoracic vein"
+      ],
+      "answer": 1,
+      "explain": "The azygos vein drains posterior intercostal veins, bronchial/esophageal/pericardial veins, and the hemiazygos/accessory hemiazygos systems, arching over the right lung root at about T4 to empty into the superior vena cava.",
+      "open": {
+        "q": "Which longitudinal vein of the posterior thorax arches over the right lung root to enter the superior vena cava?",
+        "accept": [
+          "azygos vein",
+          "the azygos vein"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-33",
+      "level": 1,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "Which pair of arteries arises directly from the internal thoracic (internal mammary) artery in each of the anterior intercostal spaces 1 through 6?",
+      "options": [
+        "Posterior intercostal arteries",
+        "Bronchial arteries",
+        "Anterior intercostal arteries",
+        "Celiac trunk branches"
+      ],
+      "answer": 2,
+      "explain": "The internal thoracic artery descends behind the upper six costal cartilages and gives off anterior intercostal arteries to the anterior intercostal spaces 1 to 6, dividing inferiorly at the sixth intercostal space into musculophrenic and superior epigastric arteries.",
+      "open": {
+        "q": "Which arteries arise from the internal thoracic artery to supply the anterior intercostal spaces?",
+        "accept": [
+          "anterior intercostal arteries",
+          "anterior intercostals"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-34",
+      "level": 1,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "Into which two terminal branches does the internal thoracic artery bifurcate at about the sixth intercostal space?",
+      "options": [
+        "Subclavian and carotid arteries",
+        "Thoracoacromial and lateral thoracic arteries",
+        "Azygos and hemiazygos arteries",
+        "Musculophrenic and superior epigastric arteries"
+      ],
+      "answer": 3,
+      "explain": "At approximately the sixth intercostal space, the internal thoracic artery divides into the musculophrenic artery (following the costal margin) and the superior epigastric artery (entering the rectus sheath).",
+      "open": {
+        "q": "What are the two terminal branches of the internal thoracic artery?",
+        "accept": [
+          "musculophrenic and superior epigastric arteries",
+          "superior epigastric and musculophrenic arteries"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-35",
+      "level": 2,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "How does the esophagus change its anatomical relationship to the aorta as it descends through the posterior mediastinum?",
+      "options": [
+        "It begins anterior/right of the aorta and moves leftward toward the oesophageal hiatus",
+        "It stays posterior to the aorta throughout",
+        "It crosses the diaphragm at T8 with the IVC",
+        "It lies wholly inside the pericardium"
+      ],
+      "answer": 0,
+      "explain": "In the posterior mediastinum, the esophagus initially lies to the right and anterior to the descending thoracic aorta, then inclines anteriorly and to the left so it lies anterior to the lower aorta before passing through the T10 esophageal hiatus.",
+      "open": {
+        "q": "How does the esophagus shift position relative to the descending thoracic aorta in the posterior mediastinum?",
+        "accept": [
+          "from right/anterior to more anterior and left of the lower thoracic aorta",
+          "it moves anteriorly and to the left relative to the descending aorta",
+          "from right of the aorta to anterior to the lower aorta"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-36",
+      "level": 3,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "A patient with severe coarctation of the aorta has increased pressure proximal to the narrowing and develops enlarged collateral arteries along the posterior intercostal spaces that groove the inferior borders of ribs on chest radiograph. Which radiological sign is this?",
+      "options": [
+        "Kerley B lines",
+        "Rib notching (Roesler sign)",
+        "Air bronchogram",
+        "Silhouette sign of middle lobe"
+      ],
+      "answer": 1,
+      "explain": "Collateral blood flow from internal thoracic/subscapular/transverse cervical pathways into posterior intercostal arteries increases flow and pressure in these vessels, causing pressure erosion or notching along the inferior rib margins (rib notching).",
+      "open": {
+        "q": "What radiographic finding on the ribs can result from dilated collateral posterior intercostal arteries in aortic coarctation?",
+        "accept": [
+          "rib notching",
+          "notching of the ribs",
+          "inferior rib notching"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-37",
+      "level": 1,
+      "sub": "Thoracic wall and mechanics",
+      "q": "Where is the intercostobrachial nerve (typically lateral cutaneous branch of T2) distributed?",
+      "options": [
+        "Sole of foot",
+        "Lateral shoulder over deltoid",
+        "Axillary floor and proximal medial arm",
+        "Anterior abdomen above umbilicus"
+      ],
+      "answer": 2,
+      "explain": "The intercostobrachial nerve is the lateral cutaneous branch of the second intercostal nerve (T2) that crosses the axilla to supply skin of the axillary floor and medial side of the upper arm, explaining why cardiac pain can refer to the medial arm.",
+      "open": {
+        "q": "Which cutaneous territory is supplied by the intercostobrachial nerve?",
+        "accept": [
+          "axilla and medial aspect of the upper arm",
+          "floor of the axilla and medial upper arm",
+          "axillary floor and medial arm"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-38",
+      "level": 2,
+      "sub": "Pericardium and heart",
+      "q": "Why does cardiac ischemic pain sometimes radiate to the medial aspect of the left arm and forearm?",
+      "options": [
+        "Left phrenic nerve directly innervates ulnar nerve",
+        "Cardiac afferents enter T1–T4/5, overlapping with medial-arm somatic input",
+        "Left coronary artery continues as radial artery",
+        "Myocardium receives brachial plexus motor fibres"
+      ],
+      "answer": 1,
+      "explain": "Visceral sensory fibers from the heart travel via sympathetic pathways to upper thoracic spinal cord segments (T1 to T4/T5), sharing dorsal horn neurons with somatic afferents from the medial arm/axilla (T1 to T2 via intercostobrachial/medial brachial cutaneous pathways).",
+      "open": {
+        "q": "Why can cardiac pain refer to the medial left arm and forearm?",
+        "accept": [
+          "shared upper thoracic spinal cord segments between cardiac afferents and medial arm sensory fibers",
+          "convergence of cardiac sympathetic afferents and t1-t2 medial arm somatic afferents",
+          "overlapping upper thoracic spinal cord segments"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-39",
+      "level": 1,
+      "sub": "Pleura and lungs",
+      "q": "Which structures form the root (hilum) of each lung where bronchi, vessels, nerves, and lymphatics enter or leave?",
+      "options": [
+        "Main bronchus, pulmonary vessels, bronchial vessels, nerves and lymphatics",
+        "Phrenic nerve and thoracic duct only",
+        "Aorta, IVC and oesophagus",
+        "Coronary sinus and great cardiac vein"
+      ],
+      "answer": 0,
+      "explain": "The root of the lung consists of the main bronchus, pulmonary artery, two pulmonary veins, bronchial arteries and veins, pulmonary nerve plexus, and bronchopulmonary lymph nodes enclosed by a cuff of pleura.",
+      "open": {
+        "q": "What main structures make up the root of the lung?",
+        "accept": [
+          "bronchus, pulmonary artery, pulmonary veins, bronchial vessels, nerves, and lymphatics",
+          "main bronchus, pulmonary artery, and pulmonary veins with bronchial vessels, nerves, and lymphatics"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-40",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "In the right lung root, how is the pulmonary artery positioned relative to the bronchi?",
+      "options": [
+        "It lies above all bronchi",
+        "It lies inferior and anterior to the right eparterial bronchus",
+        "It lies behind the oesophagus",
+        "It passes below the diaphragm before entering the lung"
+      ],
+      "answer": 1,
+      "explain": "In the right lung root, the superior lobar (eparterial) bronchus lies superior to the right pulmonary artery, while the right pulmonary artery lies anterior and inferior to it and anterior to the continuation of the bronchus.",
+      "open": {
+        "q": "How does the right pulmonary artery relate to the superior lobar bronchus at the right hilum?",
+        "accept": [
+          "it lies inferior and anterior to the superior lobar bronchus",
+          "inferior and anterior to the eparterial bronchus",
+          "below and in front of the superior lobar bronchus"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-41",
+      "level": 1,
+      "sub": "Thoracic cage and ribs",
+      "q": "Which bone articulates with the medial end of the clavicle and the first seven costal cartilages?",
+      "options": [
+        "Scapula",
+        "Sternum",
+        "Manubrium alone",
+        "Xiphoid process alone"
+      ],
+      "answer": 1,
+      "explain": "The sternum—comprising the manubrium, body, and xiphoid process—articulates with the clavicles at the clavicular notches of the manubrium and receives costal cartilages 1 through 7 along its lateral borders.",
+      "open": {
+        "q": "Which bone articulates with the medial end of the clavicle and costal cartilages 1 to 7?",
+        "accept": [
+          "sternum",
+          "the sternum"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-42",
+      "level": 1,
+      "sub": "Diaphragm",
+      "q": "At which vertebral level does the caval opening (foramen venae cavae) pierce the central tendon of the diaphragm?",
+      "options": [
+        "T6",
+        "T10",
+        "T8",
+        "T12"
+      ],
+      "answer": 2,
+      "explain": "The caval opening lies in the central tendon of the diaphragm at approximately the T8 vertebral level and transmits the inferior vena cava and right phrenic nerve branches.",
+      "open": {
+        "q": "At which vertebral level does the inferior vena cava pass through the diaphragm?",
+        "accept": [
+          "t8",
+          "eighth thoracic vertebra",
+          "t8 vertebra"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-43",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "What is the role of pulmonary surfactant produced by type II alveolar pneumocytes?",
+      "options": [
+        "It raises surface tension and collapses alveoli",
+        "It lowers surface tension and reduces alveolar collapse",
+        "It carries oxygen from pulmonary veins",
+        "It forms tracheal cartilage rings"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary surfactant reduces surface tension at the alveolar air-liquid interface, preventing alveolar collapse (atelectasis) at low lung volumes and making inflation easier (higher compliance).",
+      "open": {
+        "q": "How does pulmonary surfactant affect surface tension and stability in the alveoli?",
+        "accept": [
+          "it lowers surface tension and helps prevent alveolar collapse",
+          "reduces surface tension and increases lung compliance",
+          "decreases surface tension to keep alveoli open"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-44",
+      "level": 3,
+      "sub": "Pericardium and heart",
+      "q": "A patient develops fluid accumulation in the pericardial space after pericarditis, causing elevated jugular venous pressure, muffled heart sounds, and hypotension. Which triad is described?",
+      "options": [
+        "Charcot triad",
+        "Beck triad",
+        "Virchow triad",
+        "Cushing triad"
+      ],
+      "answer": 1,
+      "explain": "Beck triad consists of hypotension, distended neck veins (elevated JVP), and muffled/distant heart sounds, classic for acute cardiac tamponade when pericardial fluid compresses the heart chambers.",
+      "open": {
+        "q": "What clinical triad of hypotension, elevated JVP, and muffled heart sounds is associated with cardiac tamponade?",
+        "accept": [
+          "beck triad",
+          "beck's triad",
+          "becks triad"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-45",
+      "level": 1,
+      "sub": "Pericardium and heart",
+      "q": "Which structure forms the muscular interventricular septum that separates the right and left ventricles?",
+      "options": [
+        "A muscular partition with a smaller superior membranous part",
+        "A serous pericardial fold",
+        "An atrial cartilage disc",
+        "The ligamentum arteriosum"
+      ],
+      "answer": 0,
+      "explain": "The interventricular septum is mostly a thick muscular wall between the right and left ventricles, with a smaller superior membranous portion near the right fibrous trigone and tricuspid septal leaflet.",
+      "open": {
+        "q": "What is the main structural composition of the interventricular septum of the heart?",
+        "accept": [
+          "a thick muscular septum with a smaller superior membranous portion",
+          "mostly muscular tissue with a membranous part superiorly",
+          "muscular wall with a small membranous part"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-46",
+      "level": 2,
+      "sub": "Coronary circulation and conduction",
+      "q": "Which artery gives rise to the posterior interventricular (posterior descending) artery in a right-dominant heart?",
+      "options": [
+        "Left circumflex artery",
+        "Right coronary artery",
+        "Internal thoracic artery",
+        "Left subclavian artery"
+      ],
+      "answer": 1,
+      "explain": "In right coronary dominance (the most common pattern), the right coronary artery gives off the posterior interventricular (descending) artery in the posterior interventricular sulcus to supply the posterior septum and inferior left ventricular wall.",
+      "open": {
+        "q": "In a right-dominant heart, which artery gives rise to the posterior interventricular artery?",
+        "accept": [
+          "right coronary artery",
+          "the right coronary artery"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-47",
+      "level": 1,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "Which remnant connects the arch of the aorta to the proximal left pulmonary artery and represents the obliterated fetal ductus arteriosus?",
+      "options": [
+        "Ligamentum teres",
+        "Ligamentum venosum",
+        "Ligamentum arteriosum",
+        "Median umbilical ligament"
+      ],
+      "answer": 2,
+      "explain": "The ligamentum arteriosum is the fibrous remnant of the fetal ductus arteriosus, stretching from the inferior aspect of the aortic arch to the superior aspect of the left pulmonary artery.",
+      "open": {
+        "q": "What fibrous cord connects the aortic arch to the left pulmonary artery after closure of the ductus arteriosus?",
+        "accept": [
+          "ligamentum arteriosum",
+          "the ligamentum arteriosum"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-48",
+      "level": 2,
+      "sub": "Thoracic wall and mechanics",
+      "q": "How does bucket-handle movement of lower ribs (approximately ribs 7 to 10) increase the transverse diameter of the thorax?",
+      "options": [
+        "Ribs rotate inward toward midline",
+        "Elevated rib shafts swing their outward-bowed midpoints upward and laterally",
+        "The sternum moves down toward the pelvis",
+        "The diaphragm pulls ribs medially"
+      ],
+      "answer": 1,
+      "explain": "Because the middle/lateral aspects of ribs 7 to 10 bow outward and downward, elevating them rotates them like a bucket handle so their lateral arches move outward and upward, widening the transverse thoracic diameter.",
+      "open": {
+        "q": "How does bucket-handle motion of the ribs widen the transverse diameter of the thorax?",
+        "accept": [
+          "elevating the curved rib shafts swings their lateral arches outward and upward",
+          "lateral rib arcs move outward and upward as the ribs elevate",
+          "outward and upward swing of the rib shafts"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-49",
+      "level": 1,
+      "sub": "Mediastinum",
+      "q": "Which lymphoid organ lies predominantly in the anterior/superior mediastinum and is prominent in infants and children before undergoing involution after puberty?",
+      "options": [
+        "Spleen",
+        "Thymus",
+        "Palatine tonsil",
+        "Cisterna chyli"
+      ],
+      "answer": 1,
+      "explain": "The thymus is a bilobed lymphoid organ located in the anterior and superior mediastinum (retrosternal/anterior to the great vessels and pericardium) where T lymphocytes mature, gradually undergoing fatty involution after puberty.",
+      "open": {
+        "q": "Which bilobed lymphoid organ sits in the anterior/superior mediastinum and involutes after puberty?",
+        "accept": [
+          "thymus",
+          "the thymus",
+          "thymus gland"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-50",
+      "level": 3,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "A patient has a tumor or enlarged lymph node in the posterior mediastinum compressing the thoracic duct. Along which side of the body is chylothorax or impaired lymphatic drainage from the lower body most classically associated?",
+      "options": [
+        "Left pleural cavity/left thoracic side",
+        "Right foot sole only",
+        "Left external ear only",
+        "Right thyroid lobe only"
+      ],
+      "answer": 0,
+      "explain": "The thoracic duct ascends through the posterior mediastinum and crosses toward the left around T4 to T6 to drain into the left systemic venous junction; injury or obstruction can cause chylothorax (often left-sided or bilateral) and impair lower-body lymph return.",
+      "open": {
+        "q": "Toward which side of the thorax does the thoracic duct incline superiorly to drain into the systemic veins?",
+        "accept": [
+          "left side",
+          "left",
+          "left thoracic side"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-51",
+      "level": 1,
+      "sub": "Thoracic cage and ribs",
+      "q": "During dissection of a typical rib, the articular facet on its tubercle is identified. Which structure does this facet normally meet?",
+      "options": [
+        "The body of the corresponding thoracic vertebra",
+        "The transverse process of the corresponding thoracic vertebra",
+        "The spinous process of the vertebra above",
+        "The costal cartilage of the rib below"
+      ],
+      "answer": 1,
+      "explain": "The tubercle of a typical rib has an articular facet that meets the transverse costal facet on the transverse process of the corresponding thoracic vertebra. The head of the rib articulates with vertebral bodies and the intervening disc.",
+      "open": {
+        "q": "What does the articular facet on the tubercle of a typical rib articulate with?",
+        "accept": [
+          "transverse process of the corresponding thoracic vertebra",
+          "transverse costal facet",
+          "transverse costal facet of the corresponding vertebra"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-52",
+      "level": 2,
+      "sub": "Thoracic wall and mechanics",
+      "q": "A surgeon exposes the internal thoracic artery from the posterior aspect of the anterior chest wall. Which muscle lies posterior to this artery along much of its course?",
+      "options": [
+        "External intercostal",
+        "Transversus thoracis",
+        "Serratus anterior",
+        "Pectoralis minor"
+      ],
+      "answer": 1,
+      "explain": "The internal thoracic artery descends on the inner surface of the anterior thoracic wall, posterior to the costal cartilages and anterior to the transversus thoracis muscle. It terminates around the sixth intercostal space as the superior epigastric and musculophrenic arteries.",
+      "open": {
+        "q": "Which muscle lies posterior to the internal thoracic artery on the inner anterior thoracic wall?",
+        "accept": [
+          "transversus thoracis",
+          "transversus thoracis muscle"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-53",
+      "level": 1,
+      "sub": "Thoracic wall and mechanics",
+      "q": "During breast surgery, the surgeon identifies a loose connective-tissue plane that allows the mammary gland to move over the deep fascia covering pectoralis major. What is this plane called?",
+      "options": [
+        "Suspensory ligament",
+        "Retromammary space",
+        "Inframammary fold",
+        "Lactiferous sinus"
+      ],
+      "answer": 1,
+      "explain": "The retromammary space is a loose connective-tissue plane between the posterior surface of the breast and the deep pectoral fascia. It permits mobility of the breast over the pectoral region.",
+      "open": {
+        "q": "What is the loose connective-tissue plane between the breast and deep pectoral fascia called?",
+        "accept": [
+          "retromammary space",
+          "retromammary plane"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-54",
+      "level": 2,
+      "sub": "Thoracic wall and mechanics",
+      "q": "A woman with carcinoma in the lateral part of the breast undergoes assessment for regional spread. Which lymph-node group is the most frequent initial destination for lymph from much of the breast?",
+      "options": [
+        "Parasternal nodes",
+        "Axillary nodes, especially the pectoral group",
+        "Posterior mediastinal nodes",
+        "Deep cervical nodes"
+      ],
+      "answer": 1,
+      "explain": "Most lymph from the breast, particularly its lateral quadrants, drains to the axillary nodes, especially the anterior (pectoral) group. Medial breast regions also drain to parasternal nodes, and cross-midline drainage can occur.",
+      "open": {
+        "q": "Which regional lymph-node basin receives most lymph from the breast, particularly its lateral part?",
+        "accept": [
+          "axillary lymph nodes",
+          "axillary nodes",
+          "pectoral group of axillary nodes"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-55",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "A patient with pleurisy reports sharp pain when the inflamed pleura is stretched during breathing. Which part of the pleura is most directly responsible for well-localized pain?",
+      "options": [
+        "Visceral pleura covering the lung",
+        "Parietal pleura lining the thoracic wall",
+        "Both pleural layers equally",
+        "The alveolar epithelium"
+      ],
+      "answer": 1,
+      "explain": "The parietal pleura has somatic sensory innervation from intercostal and phrenic nerves and is sensitive to pain. The visceral pleura is supplied by autonomic fibres and is relatively insensitive to ordinary pain, touch and temperature.",
+      "open": {
+        "q": "Which pleural layer is sensitive to pain and produces well-localized pleuritic pain?",
+        "accept": [
+          "parietal pleura",
+          "the parietal layer"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-56",
+      "level": 1,
+      "sub": "Pleura and lungs",
+      "q": "A histological section of lung shows a very thin squamous epithelial cell lining that forms most of the alveolar surface and minimizes the diffusion distance for gases. Which cell type is being observed?",
+      "options": [
+        "Type I pneumocyte",
+        "Type II pneumocyte",
+        "Alveolar macrophage",
+        "Ciliated columnar epithelial cell"
+      ],
+      "answer": 0,
+      "explain": "Type I pneumocytes are thin squamous cells covering most of the alveolar surface and form a major part of the blood–air barrier. Type II pneumocytes secrete pulmonary surfactant and can proliferate to replace damaged alveolar epithelial cells.",
+      "open": {
+        "q": "Which pneumocyte type forms most of the thin gas-exchanging alveolar surface?",
+        "accept": [
+          "type I pneumocyte",
+          "type I alveolar cell",
+          "type one pneumocyte"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-57",
+      "level": 2,
+      "sub": "Coronary circulation and conduction",
+      "q": "A patient has an infarct involving the posterior wall of the right atrium near the opening of the superior vena cava. Which normal pacemaker structure is located in this region?",
+      "options": [
+        "Atrioventricular node",
+        "Sinoatrial node",
+        "Bundle of His",
+        "Left bundle branch"
+      ],
+      "answer": 1,
+      "explain": "The sinoatrial node lies subepicardially near the superior end of the crista terminalis at the junction of the superior vena cava and right atrium. It normally initiates the cardiac impulse.",
+      "open": {
+        "q": "Which cardiac pacemaker lies near the junction of the superior vena cava and right atrium?",
+        "accept": [
+          "sinoatrial node",
+          "sa node"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-58",
+      "level": 2,
+      "sub": "Coronary circulation and conduction",
+      "q": "In a typical right-dominant coronary circulation, which artery most commonly gives rise to the posterior interventricular artery?",
+      "options": [
+        "Left anterior descending artery",
+        "Right coronary artery",
+        "Circumflex artery",
+        "Left marginal artery"
+      ],
+      "answer": 1,
+      "explain": "In right-dominant circulation, the posterior interventricular (posterior descending) artery arises from the right coronary artery. Coronary dominance is defined by the artery that gives rise to this vessel; left dominance occurs when it arises from the circumflex artery.",
+      "open": {
+        "q": "Which coronary artery usually gives rise to the posterior interventricular artery in right-dominant circulation?",
+        "accept": [
+          "right coronary artery",
+          "right coronary"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-59",
+      "level": 2,
+      "sub": "Posterior mediastinum and vessels",
+      "q": "A surgeon identifies the greater thoracic splanchnic nerve descending from the thoracic sympathetic trunk. Where do most of its preganglionic sympathetic fibres synapse?",
+      "options": [
+        "Celiac ganglion",
+        "Superior cervical ganglion",
+        "Inferior mesenteric ganglion",
+        "Atrioventricular node"
+      ],
+      "answer": 0,
+      "explain": "The greater thoracic splanchnic nerve is formed mainly by preganglionic sympathetic fibres from approximately T5–T9 (with variation) and usually synapses in the celiac ganglia. Its postganglionic fibres then distribute to foregut structures.",
+      "open": {
+        "q": "In which prevertebral ganglion do most greater thoracic splanchnic nerve fibres synapse?",
+        "accept": [
+          "celiac ganglion",
+          "coeliac ganglion",
+          "celiac ganglia",
+          "coeliac ganglia"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-60",
+      "level": 2,
+      "sub": "Diaphragm",
+      "q": "During an operation, the surgeon identifies the opening in the diaphragm transmitting the inferior vena cava. At which vertebral level is this opening usually found?",
+      "options": [
+        "T8",
+        "T10",
+        "T12",
+        "L1"
+      ],
+      "answer": 0,
+      "explain": "The caval opening lies in the central tendon of the diaphragm at approximately T8 and transmits the inferior vena cava and terminal branches of the right phrenic nerve. The oesophageal hiatus is at T10 and the aortic hiatus at T12.",
+      "open": {
+        "q": "At what vertebral level is the caval opening of the diaphragm located?",
+        "accept": [
+          "t8",
+          "t8 level",
+          "eighth thoracic vertebra"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-61",
+      "level": 2,
+      "sub": "Diaphragm",
+      "q": "A patient undergoes repair of a congenital diaphragmatic defect. Which combination correctly lists the major embryological components that contribute to formation of the diaphragm?",
+      "options": [
+        "Septum transversum, pleuroperitoneal membranes, dorsal mesentery of the oesophagus, and muscular ingrowth from the body wall",
+        "Neural crest, notochord, and pharyngeal arches",
+        "Pleuropericardial membranes and the ventral mesentery of the stomach",
+        "Endoderm of the foregut and ectoderm of the thoracic wall"
+      ],
+      "answer": 0,
+      "explain": "The diaphragm develops from four major components: septum transversum, pleuroperitoneal membranes, dorsal mesentery of the oesophagus, and muscular ingrowth from the lateral body walls. Their incomplete fusion can result in congenital diaphragmatic hernia.",
+      "open": {
+        "q": "Name the four major embryological components that form the diaphragm.",
+        "accept": [
+          "septum transversum, pleuroperitoneal membranes, dorsal mesentery of the oesophagus, and body wall musculature",
+          "septum transversum pleuroperitoneal membranes dorsal mesentery of oesophagus muscular ingrowth from body wall"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-62",
+      "level": 2,
+      "sub": "Mediastinum",
+      "q": "A developmental abnormality prevents normal formation of the pleuropericardial folds. Which adult structure would be most directly affected by failure of these folds to develop and fuse normally?",
+      "options": [
+        "Fibrous pericardium and separation of the pleural from pericardial cavities",
+        "Visceral pleura covering the lungs only",
+        "Central tendon of the diaphragm",
+        "Muscular interventricular septum"
+      ],
+      "answer": 0,
+      "explain": "Pleuropericardial folds grow medially and fuse to separate the pericardial cavity from the pleural cavities. They contribute to the fibrous pericardium and the parietal layer of serous pericardium.",
+      "open": {
+        "q": "Which cavities are separated by fusion of the pleuropericardial membranes?",
+        "accept": [
+          "pericardial and pleural cavities",
+          "pleural cavities from the pericardial cavity"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-63",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "A congenital anomaly affects formation of the respiratory diverticulum. From which embryonic structure does this diverticulum normally arise?",
+      "options": [
+        "Dorsal wall of the hindgut",
+        "Ventral wall of the foregut",
+        "Neural tube",
+        "Septum transversum"
+      ],
+      "answer": 1,
+      "explain": "The respiratory diverticulum (lung bud) develops as an outgrowth from the ventral wall of the foregut endoderm. Endoderm forms the epithelial lining of the respiratory tract, while surrounding splanchnic mesoderm contributes cartilage, smooth muscle and connective tissue.",
+      "open": {
+        "q": "From which part of the embryonic gut does the respiratory diverticulum arise?",
+        "accept": [
+          "ventral wall of the foregut",
+          "ventral foregut endoderm",
+          "foregut"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-64",
+      "level": 2,
+      "sub": "Pleura and lungs",
+      "q": "A medical student is asked to arrange the major stages of lung development in chronological order. Which sequence is correct?",
+      "options": [
+        "Canalicular, pseudoglandular, alveolar, terminal sac",
+        "Pseudoglandular, canalicular, terminal sac, alveolar",
+        "Terminal sac, pseudoglandular, canalicular, alveolar",
+        "Alveolar, terminal sac, canalicular, pseudoglandular"
+      ],
+      "answer": 1,
+      "explain": "The major stages of lung development proceed through the pseudoglandular, canalicular, terminal sac (saccular), and alveolar periods. These stages overlap in time, and alveolar maturation continues after birth.",
+      "open": {
+        "q": "List the four major periods of lung development in chronological order.",
+        "accept": [
+          "pseudoglandular, canalicular, terminal sac, alveolar",
+          "pseudoglandular canalicular saccular alveolar"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-65",
+      "level": 2,
+      "sub": "Mediastinum and Great Vessels",
+      "q": "A penetrating injury just posterior to the sternum at the level of the second intercostal space damages a structure in the superior mediastinum. Which vessel lies immediately posterior to the manubrium and anterior to the branches of the aortic arch?",
+      "options": [
+        "Left brachiocephalic vein",
+        "Azygos vein",
+        "Descending thoracic aorta",
+        "Thoracic duct"
+      ],
+      "answer": 0,
+      "explain": "The left brachiocephalic vein crosses obliquely behind the manubrium, anterior to the branches of the aortic arch, to join the right brachiocephalic vein and form the superior vena cava.",
+      "open": {
+        "q": "Name the structure or anatomical relationship tested in this clinical scenario.",
+        "accept": [
+          "left brachiocephalic vein"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-66",
+      "level": 2,
+      "sub": "Pleura and Lungs",
+      "q": "A central lung tumour obstructs the right main bronchus. Compared with the left main bronchus, which anatomical feature predisposes the right main bronchus to aspiration of foreign bodies?",
+      "options": [
+        "It is wider, shorter and more vertical",
+        "It is narrower, longer and more horizontal",
+        "It passes beneath the aortic arch",
+        "It has no cartilaginous support"
+      ],
+      "answer": 0,
+      "explain": "The right main bronchus is wider, shorter and more vertical than the left, making aspirated objects more likely to enter it.",
+      "open": {
+        "q": "Name the structure or anatomical relationship tested in this clinical scenario.",
+        "accept": [
+          "it is wider, shorter and more vertical"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-67",
+      "level": 2,
+      "sub": "Heart and Pericardium",
+      "q": "During cardiac surgery, the surgeon opens the pericardial cavity posterior to the ascending aorta and pulmonary trunk. Which space is entered?",
+      "options": [
+        "Transverse pericardial sinus",
+        "Oblique pericardial sinus",
+        "Costomediastinal recess",
+        "Superior mediastinal compartment"
+      ],
+      "answer": 0,
+      "explain": "The transverse pericardial sinus lies posterior to the ascending aorta and pulmonary trunk and anterior to the superior vena cava and atria.",
+      "open": {
+        "q": "Name the structure or anatomical relationship tested in this clinical scenario.",
+        "accept": [
+          "transverse pericardial sinus"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-68",
+      "level": 2,
+      "sub": "Thoracic Wall and Diaphragm",
+      "q": "A patient has a penetrating wound at the eighth intercostal space near the midaxillary line. To avoid the main intercostal neurovascular bundle, where should a chest tube be introduced relative to the rib?",
+      "options": [
+        "Immediately superior to the upper border of the rib below",
+        "Immediately inferior to the lower border of the rib above",
+        "Through the centre of the intercostal space",
+        "Directly through the costal groove"
+      ],
+      "answer": 0,
+      "explain": "The main intercostal vein, artery and nerve run in the costal groove along the inferior border of the rib above. A tube is passed just superior to the upper border of the rib below.",
+      "open": {
+        "q": "Name the structure or anatomical relationship tested in this clinical scenario.",
+        "accept": [
+          "immediately superior to the upper border of the rib below"
+        ]
+      }
+    },
+    {
+      "id": "GRTH-69",
+      "level": 2,
+      "sub": "Mediastinum and Great Vessels",
+      "q": "A patient with an enlarged left atrium develops dysphagia. Which structure is compressed by the enlarged chamber?",
+      "options": [
+        "Oesophagus",
+        "Trachea",
+        "Thoracic duct",
+        "Azygos vein"
+      ],
+      "answer": 0,
+      "explain": "The oesophagus lies immediately posterior to the left atrium, so marked left atrial enlargement may compress it and cause dysphagia.",
+      "open": {
+        "q": "Name the structure or anatomical relationship tested in this clinical scenario.",
+        "accept": [
+          "oesophagus"
+        ]
+      }
+    }
+  ]
 }
