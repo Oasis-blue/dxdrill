@@ -1336,6 +1336,50 @@
           "Dysmetria, intention tremor, decomposition of movement"
         ]
       }
+    },
+    {
+      "id": "pl-control-of-posture-and-movement-059",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cerebellar function",
+      "q": "A patient walks with a broad-based gait and has difficulty performing a finger-to-nose test on the same side as a cerebellar lesion. Which additional finding is most likely?",
+      "options": [
+        "Ipsilateral intention tremor",
+        "Contralateral resting tremor that disappears with movement",
+        "Spasticity with an extensor plantar response as the defining cerebellar sign",
+        "Loss of pain and temperature on the opposite side of the body"
+      ],
+      "answer": 0,
+      "explain": "Cerebellar hemisphere lesions typically produce ipsilateral limb ataxia, dysmetria and intention tremor because cerebellar output pathways ultimately influence the ipsilateral side of the body.",
+      "open": {
+        "q": "Which side of the body is usually affected by a unilateral cerebellar hemisphere lesion, and name one limb sign.",
+        "accept": [
+          "Ipsilateral side; intention tremor",
+          "Ipsilateral limb ataxia or dysmetria"
+        ]
+      }
+    },
+    {
+      "id": "pl-control-of-posture-and-movement-060",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Basal ganglia",
+      "q": "A patient with Parkinson disease has bradykinesia. Reduced activity in which pathway normally contributes to this difficulty initiating movement?",
+      "options": [
+        "Direct striatal pathway facilitating thalamocortical activity",
+        "Nigrostriatal dopaminergic projection that modulates striatal output",
+        "Spinocerebellar pathway carrying unconscious proprioception",
+        "Lateral vestibulospinal tract maintaining extensor tone"
+      ],
+      "answer": 1,
+      "explain": "Loss of dopaminergic neurons in the substantia nigra pars compacta reduces facilitation of the direct pathway and removes inhibition of the indirect pathway, increasing inhibitory basal ganglia output to the thalamus.",
+      "open": {
+        "q": "Which dopaminergic projection degenerates in Parkinson disease?",
+        "accept": [
+          "Nigrostriatal pathway",
+          "Substantia nigra pars compacta to striatum"
+        ]
+      }
     }
   ]
 }
