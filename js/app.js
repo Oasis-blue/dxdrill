@@ -263,9 +263,8 @@
   DX.onQuestionsProgress = function () {
     var h = (location.hash || "#home").slice(1);
     if (h === "practice" && DX.practice && DX.practice.needsDataRefresh && DX.practice.needsDataRefresh()) {
-      var y = window.scrollY;
-      route();
-      window.scrollTo(0, y);
+      if (DX.practice.refreshProgress) DX.practice.refreshProgress();
+      else route();
     }
   };
   DX.load().then(function () {
