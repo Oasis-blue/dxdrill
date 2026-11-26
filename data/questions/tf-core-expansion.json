@@ -2288,6 +2288,431 @@
       ],
       "verified": false,
       "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-ga-bones-001",
+      "type": "tf",
+      "topic": "ga-bones-and-joints",
+      "level": 2,
+      "sub": "Bone structure and remodelling",
+      "q": "Regarding bone tissue:",
+      "items": [
+        {
+          "text": "Osteoclasts are multinucleated cells responsible for bone resorption.",
+          "answer": true,
+          "explain": "Osteoclasts are large multinucleated cells derived from the monocyte-macrophage lineage; they resorb mineralised bone using acid and proteolytic enzymes."
+        },
+        {
+          "text": "Osteoblasts produce osteoid, the unmineralised organic component of bone matrix.",
+          "answer": true,
+          "explain": "Osteoblasts synthesise osteoid, which is rich in type I collagen and other matrix proteins and subsequently undergoes mineralisation."
+        },
+        {
+          "text": "Osteocytes are mature bone cells located in lacunae within the mineralised matrix.",
+          "answer": true,
+          "explain": "Osteocytes are former osteoblasts enclosed within lacunae; their processes extend through canaliculi and help coordinate bone maintenance and mechanosensing."
+        },
+        {
+          "text": "The epiphyseal growth plate is composed mainly of fibrocartilage.",
+          "answer": false,
+          "explain": "The epiphyseal plate is hyaline cartilage organised into zones of chondrocyte proliferation, hypertrophy and matrix calcification before replacement by bone."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507688/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-gr-neuro-001",
+      "type": "tf",
+      "topic": "gr-neuroanatomy",
+      "level": 2,
+      "sub": "Meninges and cerebrospinal fluid",
+      "q": "About the meninges and cerebrospinal fluid:",
+      "items": [
+        {
+          "text": "The dura mater is the outermost meningeal covering of the brain.",
+          "answer": true,
+          "explain": "The cranial meninges are arranged from superficial to deep as dura mater, arachnoid mater and pia mater."
+        },
+        {
+          "text": "The subarachnoid space contains cerebrospinal fluid and major cerebral blood vessels.",
+          "answer": true,
+          "explain": "The subarachnoid space lies between arachnoid and pia and contains CSF, arteries and veins travelling over the surface of the brain."
+        },
+        {
+          "text": "Cerebrospinal fluid is produced mainly by the arachnoid granulations.",
+          "answer": false,
+          "explain": "Most CSF is produced by the choroid plexuses in the ventricles; arachnoid granulations are important sites for CSF absorption into dural venous sinuses."
+        },
+        {
+          "text": "The cerebral aqueduct connects the third and fourth ventricles.",
+          "answer": true,
+          "explain": "The cerebral aqueduct passes through the midbrain and connects the third ventricle to the fourth ventricle."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538овор/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK519007/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-sh-respiratory-001",
+      "type": "tf",
+      "topic": "sh-respiratory-system",
+      "level": 2,
+      "sub": "Respiratory system histology",
+      "q": "Regarding respiratory system histology:",
+      "items": [
+        {
+          "text": "Type I pneumocytes form most of the thin alveolar surface across which gas exchange occurs.",
+          "answer": true,
+          "explain": "Type I alveolar cells are extremely thin squamous cells covering most of the alveolar surface and forming a major part of the air-blood barrier."
+        },
+        {
+          "text": "Type II pneumocytes secrete pulmonary surfactant.",
+          "answer": true,
+          "explain": "Type II pneumocytes produce and release surfactant, which reduces surface tension and helps prevent alveolar collapse."
+        },
+        {
+          "text": "Alveolar macrophages contribute to pulmonary defence by phagocytosing inhaled particles and microbes.",
+          "answer": true,
+          "explain": "Alveolar macrophages patrol the alveolar spaces and remove particles and microorganisms by phagocytosis."
+        },
+        {
+          "text": "The conducting portion of the respiratory tract is the principal site of oxygen and carbon dioxide exchange.",
+          "answer": false,
+          "explain": "The conducting airways transport, warm, humidify and filter air; significant gas exchange occurs in the respiratory portion, especially alveoli."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK482456/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-se-ossification-001",
+      "type": "tf",
+      "topic": "se-musculoskeletal-system-and-ossification",
+      "level": 2,
+      "sub": "Bone development and ossification",
+      "q": "About bone development:",
+      "items": [
+        {
+          "text": "Intramembranous ossification forms bone directly from mesenchymal tissue.",
+          "answer": true,
+          "explain": "In intramembranous ossification, mesenchymal cells differentiate into osteoblasts and lay down bone without a pre-existing cartilage model."
+        },
+        {
+          "text": "Endochondral ossification involves replacement of a hyaline cartilage model by bone.",
+          "answer": true,
+          "explain": "Most long bones develop by endochondral ossification, in which a cartilage template is progressively replaced by bone."
+        },
+        {
+          "text": "The clavicle develops entirely by endochondral ossification.",
+          "answer": false,
+          "explain": "The clavicle is unusual because most of it develops by intramembranous ossification, although its ends have endochondral contributions."
+        },
+        {
+          "text": "The primary ossification centre of a typical long bone appears in its diaphysis.",
+          "answer": true,
+          "explain": "The primary ossification centre usually develops in the shaft (diaphysis), while secondary centres commonly develop later in the epiphyses."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK539718/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pc-ecg-001",
+      "type": "tf",
+      "topic": "pc-ecg",
+      "level": 2,
+      "sub": "Electrocardiography",
+      "q": "Regarding a normal electrocardiogram:",
+      "items": [
+        {
+          "text": "The P wave represents atrial depolarisation.",
+          "answer": true,
+          "explain": "The P wave reflects depolarisation spreading through the atrial myocardium before atrial contraction."
+        },
+        {
+          "text": "The QRS complex represents ventricular depolarisation.",
+          "answer": true,
+          "explain": "The QRS complex records ventricular depolarisation; atrial repolarisation occurs at approximately the same time and is usually obscured."
+        },
+        {
+          "text": "The T wave represents ventricular repolarisation.",
+          "answer": true,
+          "explain": "The T wave reflects the process of ventricular myocardial repolarisation."
+        },
+        {
+          "text": "The PR interval is measured from the beginning of the QRS complex to the end of the T wave.",
+          "answer": false,
+          "explain": "The PR interval extends from the onset of the P wave to the onset of the QRS complex and reflects atrial-to-ventricular conduction time."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK549803/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pc-cardiacoutput-001",
+      "type": "tf",
+      "topic": "pc-cardiac-output",
+      "level": 2,
+      "sub": "Cardiac output",
+      "q": "About cardiac output:",
+      "items": [
+        {
+          "text": "Cardiac output is the product of heart rate and stroke volume.",
+          "answer": true,
+          "explain": "Cardiac output is the volume of blood pumped by one ventricle per minute and is calculated as heart rate multiplied by stroke volume."
+        },
+        {
+          "text": "An increase in venous return can increase stroke volume through the Frank-Starling mechanism.",
+          "answer": true,
+          "explain": "Within physiological limits, greater ventricular filling stretches myocardial fibres and increases the force of contraction, raising stroke volume."
+        },
+        {
+          "text": "Ejection fraction is the proportion of end-diastolic volume ejected with each beat.",
+          "answer": true,
+          "explain": "Ejection fraction is stroke volume divided by end-diastolic volume, usually expressed as a percentage."
+        },
+        {
+          "text": "A rise in afterload always increases stroke volume in an otherwise unchanged ventricle.",
+          "answer": false,
+          "explain": "An acute increase in afterload tends to reduce stroke volume if contractility and preload are unchanged, because the ventricle must eject against a higher pressure."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK470455/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pb-bloodgroups-001",
+      "type": "tf",
+      "topic": "pb-blood-groups",
+      "level": 2,
+      "sub": "ABO and Rh blood groups",
+      "q": "Regarding the ABO and Rh blood group systems:",
+      "items": [
+        {
+          "text": "Group A red cells express A antigen on their surface.",
+          "answer": true,
+          "explain": "Individuals with group A blood express A antigen on their red blood cells and usually have anti-B antibodies in plasma."
+        },
+        {
+          "text": "Group O red cells lack both A and B antigens.",
+          "answer": true,
+          "explain": "Group O erythrocytes lack A and B antigens, although the plasma normally contains both anti-A and anti-B antibodies."
+        },
+        {
+          "text": "An RhD-negative person has the D antigen on their red blood cells.",
+          "answer": false,
+          "explain": "RhD-negative individuals lack the D antigen; exposure to RhD-positive red cells can lead to anti-D alloimmunisation."
+        },
+        {
+          "text": "Anti-D immunoglobulin can help prevent RhD-negative mothers from becoming sensitised to fetal RhD-positive red cells.",
+          "answer": true,
+          "explain": "Prophylactic anti-D binds fetal RhD-positive red cells entering maternal circulation and reduces the risk of maternal immune sensitisation."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK2263/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK557423/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pe-gonadal-001",
+      "type": "tf",
+      "topic": "pe-gonadal-hormones",
+      "level": 2,
+      "sub": "Gonadal hormones",
+      "q": "About gonadal hormone secretion:",
+      "items": [
+        {
+          "text": "Leydig cells in the testes produce testosterone in response to luteinising hormone.",
+          "answer": true,
+          "explain": "LH acts on Leydig cells to stimulate testosterone synthesis; FSH acts mainly on Sertoli cells in the seminiferous tubules."
+        },
+        {
+          "text": "Sertoli cells support developing germ cells and respond to follicle-stimulating hormone.",
+          "answer": true,
+          "explain": "Sertoli cells provide structural and metabolic support to spermatogenic cells and respond to FSH; they also produce inhibin B."
+        },
+        {
+          "text": "Inhibin from the gonads selectively suppresses pituitary FSH secretion.",
+          "answer": true,
+          "explain": "Inhibin provides negative feedback that preferentially reduces FSH secretion from the anterior pituitary."
+        },
+        {
+          "text": "Testosterone is produced mainly by Sertoli cells in response to FSH.",
+          "answer": false,
+          "explain": "Testosterone is produced mainly by Leydig cells under LH stimulation; Sertoli cells support spermatogenesis and secrete inhibin and androgen-binding protein."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK279054/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK279070/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-heme-001",
+      "type": "tf",
+      "topic": "ba-haemoproteins-and-haemoglobin-metabolism",
+      "level": 2,
+      "sub": "Haemoglobin and haem metabolism",
+      "q": "Regarding haemoglobin and haem metabolism:",
+      "items": [
+        {
+          "text": "Adult haemoglobin A is composed of two alpha and two beta globin chains.",
+          "answer": true,
+          "explain": "HbA, the predominant adult haemoglobin, is an alpha-2 beta-2 tetramer, with each globin chain carrying a haem group."
+        },
+        {
+          "text": "Each haem group contains an iron atom in the ferrous (Fe2+) state when binding oxygen normally.",
+          "answer": true,
+          "explain": "Functional haemoglobin contains ferrous iron, Fe2+, which reversibly binds oxygen; oxidation to Fe3+ produces methaemoglobin."
+        },
+        {
+          "text": "Heme degradation in macrophages produces biliverdin, which is then converted to bilirubin.",
+          "answer": true,
+          "explain": "Reticuloendothelial macrophages degrade haem to biliverdin through haem oxygenase; biliverdin reductase then forms unconjugated bilirubin."
+        },
+        {
+          "text": "Unconjugated bilirubin is freely water-soluble and is excreted directly in urine under normal conditions.",
+          "answer": false,
+          "explain": "Unconjugated bilirubin is poorly water-soluble and circulates bound to albumin; after hepatic conjugation, bilirubin becomes more water-soluble and is secreted into bile."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK10082/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK470290/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-biomembrane-001",
+      "type": "tf",
+      "topic": "ba-biomembranes",
+      "level": 2,
+      "sub": "Biological membranes",
+      "q": "About biological membranes:",
+      "items": [
+        {
+          "text": "The phospholipid bilayer forms the basic structural framework of most cell membranes.",
+          "answer": true,
+          "explain": "Amphipathic phospholipids arrange into a bilayer with hydrophilic heads facing aqueous environments and hydrophobic tails directed inward."
+        },
+        {
+          "text": "Cholesterol can influence membrane fluidity and permeability.",
+          "answer": true,
+          "explain": "Cholesterol intercalates between phospholipids and modulates membrane fluidity and permeability in a temperature-dependent manner."
+        },
+        {
+          "text": "Integral membrane proteins can be removed from the lipid bilayer simply by changing the ionic strength of the surrounding solution.",
+          "answer": false,
+          "explain": "Integral membrane proteins are embedded in or span the hydrophobic bilayer and usually require detergents or other disruptive methods for extraction; peripheral proteins are more readily removed by changing ionic conditions."
+        },
+        {
+          "text": "The plasma membrane is selectively permeable rather than freely permeable to all dissolved substances.",
+          "answer": true,
+          "explain": "The lipid bilayer and its transport proteins regulate movement of ions and molecules, allowing selective exchange between the cell and its environment."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26871/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-haemostasis-001",
+      "type": "tf",
+      "topic": "ba-body-fluids-and-blood-clotting",
+      "level": 2,
+      "sub": "Haemostasis and coagulation",
+      "q": "Regarding haemostasis:",
+      "items": [
+        {
+          "text": "Platelets adhere to exposed subendothelial structures during primary haemostasis.",
+          "answer": true,
+          "explain": "Vascular injury exposes subendothelial matrix; von Willebrand factor helps platelets adhere, initiating platelet activation and aggregation."
+        },
+        {
+          "text": "Thrombin converts fibrinogen into fibrin.",
+          "answer": true,
+          "explain": "Thrombin cleaves fibrinopeptides from fibrinogen, allowing fibrin monomers to polymerise and form the clot framework."
+        },
+        {
+          "text": "Vitamin K is required for gamma-carboxylation of several coagulation factors.",
+          "answer": true,
+          "explain": "Vitamin K-dependent gamma-carboxylation enables factors II, VII, IX and X, as well as proteins C and S, to bind calcium and function on phospholipid surfaces."
+        },
+        {
+          "text": "Heparin produces anticoagulation mainly by directly dissolving an already formed fibrin clot.",
+          "answer": false,
+          "explain": "Heparin potentiates antithrombin and inhibits activated coagulation factors, especially thrombin and factor Xa; it is an anticoagulant, not a fibrinolytic drug."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507708/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538247/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pg-homeostasis-001",
+      "type": "tf",
+      "topic": "pg-homeostasis",
+      "level": 2,
+      "sub": "Homeostasis",
+      "q": "About homeostatic control systems:",
+      "items": [
+        {
+          "text": "Negative feedback generally opposes a change in a regulated variable.",
+          "answer": true,
+          "explain": "Negative feedback responses act to reduce deviations from a regulated set point or operating range, helping maintain internal stability."
+        },
+        {
+          "text": "In a typical homeostatic control system, receptors detect changes in the regulated variable.",
+          "answer": true,
+          "explain": "Receptors or sensors detect a stimulus and send information to an integrating centre, which coordinates an appropriate effector response."
+        },
+        {
+          "text": "Positive feedback is the usual mechanism for maintaining most physiological variables within a stable range.",
+          "answer": false,
+          "explain": "Most routine homeostatic regulation relies on negative feedback; positive feedback amplifies a change and is used in specific processes such as labour and blood clotting."
+        },
+        {
+          "text": "The hypothalamus participates in regulation of body temperature.",
+          "answer": true,
+          "explain": "The hypothalamus integrates thermal information and coordinates autonomic, endocrine and behavioural responses that help regulate body temperature."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK559138/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
     }
   ]
 }
