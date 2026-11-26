@@ -1,695 +1,695 @@
 {
- "topic": "pr-transport-of-respiratory-gases",
- "questions": [
-  {
-   "id": "pr-transport-of-respiratory-gases-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Alveolar Gas Equation and Partial Pressures",
-   "q": "At sea level (barometric pressure PB = 760 mmHg) where inspired air is warmed to 37 C and fully humidified (water vapor pressure PH2O = 47 mmHg) with FiO2 = 0.21, what is the inspired tracheal oxygen partial pressure (PiO2)?",
-   "options": [
-    "160 mmHg",
-    "150 mmHg (0.21 x 713)",
-    "100 mmHg",
-    "40 mmHg"
-   ],
-   "answer": 1,
-   "explain": "Because humidification in the upper airways adds 47 mmHg of water vapor pressure at 37 C, dry gas pressure drops to 760 - 47 = 713 mmHg, giving PiO2 = 0.21 x 713 = 149.7 (~150) mmHg.",
-   "verified": false,
-   "open": {
-    "q": "Calculate the tracheal inspired oxygen partial pressure (PiO2) at sea level (PB = 760 mmHg, PH2O = 47 mmHg, FiO2 = 0.21).",
-    "accept": [
-     "150 mmHg (149.7 mmHg)",
-     "150 mmHg"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Alveolar Gas Equation and Partial Pressures",
-   "q": "According to the simplified alveolar gas equation (PAO2 = PiO2 - PaCO2 / R), what is the normal alveolar oxygen partial pressure (PAO2) when PiO2 = 150 mmHg, PaCO2 = 40 mmHg, and respiratory quotient R = 0.8?",
-   "options": [
-    "150 mmHg",
-    "110 mmHg",
-    "100 mmHg (150 - 50)",
-    "40 mmHg"
-   ],
-   "answer": 2,
-   "explain": "PAO2 = 150 - (40 / 0.8) = 150 - 50 = 100 mmHg (often ~100-104 mmHg). Hypoventilation raises PaCO2 and directly lowers PAO2.",
-   "verified": false,
-   "open": {
-    "q": "Write the alveolar gas equation and calculate PAO2 when PiO2 = 150 mmHg, PaCO2 = 40 mmHg, and respiratory exchange ratio R = 0.8.",
-    "accept": [
-     "PAO2 = PiO2 - (PaCO2 / R); 100 mmHg",
-     "100 mmHg"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Alveolar-Capillary Diffusion and Fick's Law",
-   "q": "According to Fick's law of diffusion (V_gas = [A x D x (P1 - P2)] / T), why does carbon dioxide diffuse across the alveolar-capillary membrane roughly 20 times faster than oxygen for a given partial pressure gradient?",
-   "options": [
-    "CO2 has a much smaller molecular weight than O2",
-    "CO2 has roughly 24-fold higher solubility than O2 in water",
-    "CO2 is actively pumped across Type I pneumocytes by ATPases",
-    "The alveolar membrane is thinner for CO2 than for O2"
-   ],
-   "answer": 1,
-   "explain": "Although CO2 (MW 44) is slightly heavier than O2 (MW 32), its aqueous solubility is ~24-fold higher, giving a ~20-fold greater diffusion constant so CO2 transfer is rarely diffusion-limited.",
-   "verified": false,
-   "open": {
-    "q": "State Fick's law of gas diffusion across the alveolar-capillary membrane and explain why CO2 diffuses ~20 times faster than O2 despite a smaller pressure gradient (6 mmHg vs 60 mmHg).",
-    "accept": [
-     "Rate of diffusion is proportional to surface area (A), diffusion coefficient (D), and partial pressure gradient (P1 - P2), and inversely proportional to membrane thickness (T); CO2 diffuses ~20x faster because its aqueous solubility is ~24 times higher than O2",
-     "V_gas = A * D * (P1 - P2) / T; higher solubility of CO2 in water/membranes"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Alveolar-Capillary Diffusion and Fick's Law",
-   "q": "How do 'perfusion-limited' gas exchange (exemplified by nitrous oxide N2O and resting O2) and 'diffusion-limited' gas exchange (exemplified by carbon monoxide CO) differ along a pulmonary capillary?",
-   "options": [
-    "N2O equilibrates quickly (0.1-0.25 s) with blood, so its transfer depends on blood flow; CO binds Hb so avidly that plasma PCO stays near zero, so its transfer depends on diffusion",
-    "N2O never crosses the alveolar membrane; CO equilibrates in 0.05 seconds",
-    "Resting O2 transfer is always diffusion-limited in healthy lungs",
-    "CO does not bind to hemoglobin"
-   ],
-   "answer": 0,
-   "explain": "In a healthy resting lung (capillary transit time ~0.75 s), O2 equilibrates by ~0.25 s (perfusion-limited); during strenuous exercise (transit time drops to ~0.25 s) or interstitial fibrosis/emphysema, O2 transfer can become diffusion-limited.",
-   "verified": false,
-   "open": {
-    "q": "Explain why carbon monoxide (CO) is used clinically to measure the diffusing capacity of the lung (DLCO).",
-    "accept": [
-     "CO binds hemoglobin with ultra-high affinity so plasma PCO remains near zero throughout the capillary, making CO uptake strictly limited by alveolar-capillary membrane diffusion rather than pulmonary blood flow",
-     "Avid Hb binding keeps plasma PCO negligible, so transfer depends purely on membrane diffusion properties"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Alveolar-Capillary Diffusion and Fick's Law",
-   "q": "What are the sequential histological layers of the alveolar-capillary respiratory membrane (total thickness ~0.2 to 0.6 micrometers) that oxygen traverses from alveolar gas to red blood cell hemoglobin?",
-   "options": [
-    "Surfactant fluid → Type I pneumocyte → fused basal lamina → capillary endothelium → plasma → RBC membrane",
-    "Goblet cell mucus → cartilage ring → smooth muscle → pericyte → RBC membrane",
-    "Type II pneumocyte → pleural mesothelium → basement membrane → RBC membrane",
-    "Alveolar macrophage → collagen bundle → elastic lamina → RBC membrane"
-   ],
-   "answer": 0,
-   "explain": "In the thin gas-exchanging portion of the alveolar septum, the epithelial and endothelial basal laminae fuse, minimizing diffusion distance (T) to ~0.2-0.6 um.",
-   "verified": false,
-   "open": {
-    "q": "List the anatomical layers of the alveolar-capillary diffusion barrier from the alveolar air space to the capillary lumen.",
-    "accept": [
-     "Surfactant/fluid layer, Type I alveolar epithelial cell, fused epithelial-endothelial basement membrane, and capillary endothelial cell",
-     "Surfactant layer, Type I pneumocyte, fused basal lamina, capillary endothelium"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Oxygen Transport and Hemoglobin Binding",
-   "q": "In healthy arterial blood (PaO2 = 100 mmHg, hemoglobin = 15 g/dL, SaO2 = 97.5%), what is the total arterial oxygen content (CaO2), and what percentages are carried bound to hemoglobin versus dissolved in plasma?",
-   "options": [
-    "Total ~20 mL O2/dL: ~98.5% (19.7 mL/dL) bound to Hb, ~1.5% (0.3 mL/dL) dissolved in plasma",
-    "Total ~5 mL O2/dL blood: 50% dissolved and 50% bound to hemoglobin",
-    "Total ~50 mL O2/dL blood: 90% dissolved in plasma",
-    "Total ~20 mL O2/dL blood: 100% physically dissolved in plasma"
-   ],
-   "answer": 0,
-   "explain": "Using CaO2 = (1.34 x Hb x SaO2) + (0.003 x PaO2): bound O2 = 1.34 x 15 x 0.975 = 19.6 mL/dL, while dissolved O2 = 0.003 x 100 = 0.3 mL/dL (total ~19.9-20.1 mL/dL).",
-   "verified": false,
-   "open": {
-    "q": "Write the formula for total arterial oxygen content (CaO2) and calculate CaO2 when Hb = 15 g/dL, SaO2 = 100%, and PaO2 = 100 mmHg (assuming Hufner's constant = 1.34 mL O2/g Hb).",
-    "accept": [
-     "CaO2 = (1.34 x Hb x SaO2) + (0.003 x PaO2); 20.4 mL O2/dL blood",
-     "20.4 mL/dL (20.1 bound + 0.3 dissolved)"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Oxygen Transport and Hemoglobin Binding",
-   "q": "Why is the oxygen-hemoglobin dissociation curve sigmoidal (S-shaped) rather than hyperbolic like myoglobin?",
-   "options": [
-    "Because hemoglobin is a monomer with a single heme group",
-    "Because the tetramer shows positive cooperativity between T and R states",
-    "Because dissolved plasma oxygen blocks hemoglobin binding above 60 mmHg",
-    "Because hemoglobin binds O2 irreversibly via covalent bonds"
-   ],
-   "answer": 1,
-   "explain": "Positive cooperativity creates a flat upper plateau (60-100 mmHg, safeguarding arterial O2 loading even at moderate altitude or mild lung disease) and a steep middle unloading slope (15-40 mmHg, releasing large O2 volumes to metabolically active tissues).",
-   "verified": false,
-   "open": {
-    "q": "Explain the structural basis (T and R conformational states) of the sigmoidal shape of the oxygen-hemoglobin dissociation curve and its two physiological advantages.",
-    "accept": [
-     "Positive cooperativity among the four heme subunits shifts Hb from the low-affinity T (tense) state to the high-affinity R (relaxed) state upon O2 binding; this provides a flat upper plateau for safe pulmonary loading (60-100 mmHg) and a steep unloading slope in peripheral tissues (20-40 mmHg)",
-     "Cooperative T-to-R transition; flat loading plateau above 60 mmHg and steep unloading curve at tissue PO2"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Oxygen Transport and Hemoglobin Binding",
-   "q": "What are the normal P50, arterial saturation (SaO2 at PaO2 100 mmHg), and mixed-venous saturation (SvO2 at PvO2 40 mmHg) on the standard adult human oxygen-hemoglobin dissociation curve?",
-   "options": [
-    "P50 = 26-27 mmHg; SaO2 = ~97.5%; SvO2 = ~75%",
-    "P50 = 5 mmHg; SaO2 = 100%; SvO2 = 10%",
-    "P50 = 60 mmHg; SaO2 = 75%; SvO2 = 25%",
-    "P50 = 40 mmHg; SaO2 = 90%; SvO2 = 50%"
-   ],
-   "answer": 0,
-   "explain": "P50 (~26.8 mmHg) is the PO2 at which hemoglobin is 50% saturated; at rest, systemic tissues extract ~25% of delivered O2 (dropping saturation from 97.5% to 75%, ~5 mL O2/dL), leaving a large 75% venous reserve for exercise.",
-   "verified": false,
-   "open": {
-    "q": "Define P50 on the oxygen-hemoglobin dissociation curve and state its normal value (in mmHg) in adult human blood.",
-    "accept": [
-     "The partial pressure of oxygen (PO2) at which hemoglobin is 50% saturated with O2; normally ~26 to 27 mmHg",
-     "PO2 for 50% Hb saturation; ~26.8 mmHg (26-27 mmHg)"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
-   "q": "Which physiological changes in metabolically active peripheral tissues shift the oxygen-hemoglobin dissociation curve to the RIGHT (increasing P50 and facilitating O2 unloading)?",
-   "options": [
-    "Decreased temperature, alkalosis, decreased PCO2, decreased 2,3-BPG",
-    "Increased temperature, acidosis, increased PCO2, increased 2,3-BPG",
-    "Presence of fetal hemoglobin (HbF) and carbon monoxide",
-    "Hypothermia and stored bank blood depleted of 2,3-BPG"
-   ],
-   "answer": 1,
-   "explain": "Mnemonic 'CADET, face RIGHT': CO2, Acid (low pH), 2,3-DPG/BPG, Exercise, and Temperature stabilize the T (tense) deoxyhemoglobin state, lowering O2 affinity so exercising muscles extract more O2.",
-   "verified": false,
-   "open": {
-    "q": "List four physiological factors that shift the oxygen-hemoglobin dissociation curve to the right and state the effect on P50 and tissue O2 unloading.",
-    "accept": [
-     "Increased PCO2, decreased pH (increased H+), increased temperature, and increased 2,3-BPG; shifts increase P50 (decrease Hb affinity) and enhance O2 unloading to tissues",
-     "High CO2, acidosis, fever/heat, elevated 2,3-BPG; raises P50 and promotes O2 release"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
-   "q": "How does 2,3-bisphosphoglycerate (2,3-BPG, synthesized via the Rapoport-Luebering shunt in RBCs) decrease adult hemoglobin's oxygen affinity, and why does fetal hemoglobin (HbF, alpha2-gamma2) exhibit a LEFT-shifted dissociation curve (P50 ~19 mmHg)?",
-   "options": [
-    "2,3-BPG binds the central beta-chain cavity to stabilize the T-state; HbF binds it weakly, so HbF extracts O2 from maternal HbA",
-    "2,3-BPG oxidizes heme Fe2+ to Fe3+; HbF contains iron-free porphyrin",
-    "HbF binds 2,3-BPG ten times more tightly than HbA",
-    "2,3-BPG binds exclusively to the alpha chains of myoglobin"
-   ],
-   "answer": 0,
-   "explain": "Because HbF has lower affinity for 2,3-BPG, its O2 dissociation curve lies to the left of maternal HbA, driving placental oxygen transfer from maternal to fetal blood even at low intervillous PO2 (~30 mmHg).",
-   "verified": false,
-   "open": {
-    "q": "Explain why fetal hemoglobin (HbF) has a higher oxygen affinity (lower P50) than adult hemoglobin (HbA) and why this is essential in utero.",
-    "accept": [
-     "HbF (alpha2-gamma2) binds 2,3-BPG much less avidly than HbA (alpha2-beta2), shifting its dissociation curve left so fetal blood can load O2 from maternal blood across the placenta",
-     "Reduced 2,3-BPG binding by gamma chains gives HbF higher O2 affinity to extract oxygen from maternal HbA"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
-   "q": "How does carbon monoxide (CO) affect BOTH arterial oxygen content and the position of the oxygen-hemoglobin dissociation curve?",
-   "options": [
-    "CO binds heme with 200-240x higher affinity than O2 and left-shifts the curve",
-    "CO shifts the curve to the right and doubles PaO2",
-    "CO increases both SaO2 and tissue O2 release",
-    "CO has lower affinity for hemoglobin than O2"
-   ],
-   "answer": 0,
-   "explain": "Binding of CO to one or two heme subunits locks the tetramer into the high-affinity R state, preventing the remaining O2 molecules from unloading in peripheral capillaries despite a normal dissolved PaO2 (~100 mmHg).",
-   "verified": false,
-   "open": {
-    "q": "Describe the dual mechanism by which carbon monoxide poisoning causes severe tissue hypoxia even when arterial PaO2 is normal.",
-    "accept": [
-     "CO occupies heme binding sites with ~200-240x higher affinity than O2 (lowering O2 content) and shifts the dissociation curve of remaining bound O2 to the left, blocking O2 unloading in tissues",
-     "High-affinity heme competition reduces O2 binding capacity and left-shifts the curve to prevent tissue O2 release"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Carbon Dioxide Transport and Chloride Shift",
-   "q": "In what three chemical forms is carbon dioxide transported in human venous blood, and what are their approximate percentages?",
-   "options": [
-    "~70% as HCO3-, ~20-23% as carbamino compounds, ~7-10% dissolved",
-    "~98% bound to heme iron and ~2% as bicarbonate",
-    "~70% physically dissolved in plasma and ~30% as carbonic acid",
-    "~50% as carboxyhemoglobin and ~50% as methemoglobin"
-   ],
-   "answer": 0,
-   "explain": "CO2 diffuses into red blood cells where abundant carbonic anhydrase rapidly hydrates CO2 + H2O -> H2CO3 -> H+ + HCO3-, accounting for ~70% of total CO2 transport.",
-   "verified": false,
-   "open": {
-    "q": "State the three forms in which CO2 is transported in venous blood along with their approximate percentage contributions.",
-    "accept": [
-     "Bicarbonate ions (~70%), carbamino compounds / carbaminohemoglobin (~20-23%), and physically dissolved CO2 (~7-10%)",
-     "70% HCO3-, 20-23% carbaminohemoglobin, 7-10% dissolved CO2"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Carbon Dioxide Transport and Chloride Shift",
-   "q": "What is the 'chloride shift' (Hamburger phenomenon) in systemic capillaries, and which membrane transporter mediates it?",
-   "options": [
-    "HCO3- exits RBCs in exchange for Cl- via the Band 3 (AE1) exchanger",
-    "Cl- is pumped out of RBCs by Na+/K+-ATPase during inspiration",
-    "Na+ enters RBCs in exchange for Ca2+ in pulmonary capillaries",
-    "HCO3- is synthesized in plasma by extracellular carbonic anhydrase"
-   ],
-   "answer": 0,
-   "explain": "Because intracellular Cl- and HCO3- increase total osmotically active particles inside venous erythrocytes, water enters slightly via AQP1, making venous hematocrit ~3% higher than arterial hematocrit; the reverse chloride shift occurs in the lungs.",
-   "verified": false,
-   "open": {
-    "q": "Explain the chloride shift (Hamburger phenomenon) in systemic tissue capillaries and name the red blood cell membrane protein responsible.",
-    "accept": [
-     "Bicarbonate (HCO3-) formed inside RBCs is exported into plasma in exchange for Cl- influx via the Band 3 (AE1) anion exchanger to preserve electroneutrality",
-     "Exchange of intracellular HCO3- out for extracellular Cl- in via Band 3 (AE1)"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Carbon Dioxide Transport and Chloride Shift",
-   "q": "What is the 'Haldane effect', and how does it facilitate CO2 pickup in systemic tissues and CO2 unloading in the lungs?",
-   "options": [
-    "Deoxyhemoglobin buffers H+ better and forms carbamino-Hb more readily, so it carries more CO2; O2 binding in the lungs reverses this",
-    "Elevated PCO2 reduces hemoglobin's affinity for oxygen",
-    "High arterial PO2 prevents CO2 from leaving pulmonary capillaries",
-    "Carbonic anhydrase is inactivated by oxygen"
-   ],
-   "answer": 0,
-   "explain": "Whereas the Bohr effect describes how CO2/H+ affects O2 binding, the Haldane effect describes how O2 binding affects CO2/H+ transport—accounting for roughly half of the physiological CO2 exchange between tissues and lungs.",
-   "verified": false,
-   "open": {
-    "q": "Contrast the Bohr effect and the Haldane effect in respiratory gas transport.",
-    "accept": [
-     "Bohr effect: elevated PCO2 and H+ decrease hemoglobin's affinity for O2 (promoting O2 unloading in tissues); Haldane effect: deoxygenation of hemoglobin increases its capacity to bind H+ and form carbaminohemoglobin (promoting CO2 loading in tissues and unloading upon oxygenation in the lungs)",
-     "Bohr = CO2/H+ promotes O2 release; Haldane = O2 release promotes CO2/H+ carriage (and oxygenation promotes CO2 release)"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Carbon Dioxide Transport and Chloride Shift",
-   "q": "How do carbamino compounds form when CO2 binds to hemoglobin?",
-   "options": [
-    "CO2 binds reversibly to the ferrous (Fe2+) iron at the heme center",
-    "CO2 binds N-terminal alpha-amino groups of globin, not heme iron",
-    "CO2 is converted to glucose inside the mitochondria",
-    "CO2 binds covalently to membrane phospholipids"
-   ],
-   "answer": 1,
-   "explain": "CO2 binds terminal amino groups of globin (not heme iron), and deoxygenated T-state hemoglobin exposes more reactive amino groups than oxygenated R-state hemoglobin.",
-   "verified": false,
-   "open": {
-    "q": "Where on the hemoglobin molecule does CO2 bind to form carbaminohemoglobin, and does it compete directly with O2 for the same binding site?",
-    "accept": [
-     "Terminal alpha-amino (-NH2) groups of the globin chains; no, it does not compete directly with O2 (which binds the heme Fe2+ iron)",
-     "N-terminal amino groups of globin polypeptides; does not bind heme iron"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
-   "q": "What is the normal overall alveolar ventilation-to-perfusion ratio (VA/Q) across the entire resting lung, and how does VA/Q vary regionally from the apex to the base of an upright lung?",
-   "options": [
-    "Overall VA/Q ~ 0.8; highest at apex (~3.0), lowest at base (~0.6)",
-    "Overall VA/Q = 5.0; VA/Q is lowest at the apex (0.1) and highest at the base (4.0)",
-    "VA/Q is completely uniform (1.0) from apex to base in an upright human",
-    "Overall VA/Q = 0.1"
-   ],
-   "answer": 0,
-   "explain": "Gravity creates a steeper vertical gradient in pulmonary blood flow than in ventilation: consequently, apical alveoli have higher PO2 (~132 mmHg) and lower PCO2 (~28 mmHg) than basal alveoli (PO2 ~89 mmHg, PCO2 ~42 mmHg).",
-   "verified": false,
-   "open": {
-    "q": "Explain why the ventilation-perfusion ratio (VA/Q) is higher at the apex (~3.0) than at the base (~0.6) of an upright lung.",
-    "accept": [
-     "Both ventilation and perfusion increase from apex to base due to gravity, but perfusion increases much more steeply than ventilation, making VA/Q high at the apex and low at the base",
-     "Blood flow decreases more rapidly toward the apex than ventilation does"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
-   "q": "What are the alveolar gas tensions (PAO2 and PACO2) at the two extreme theoretical limits of ventilation-perfusion mismatch: (1) pure intrapulmonary shunt (VA/Q = 0, airway obstruction) and (2) pure alveolar dead space (VA/Q = infinity, pulmonary embolism)?",
-   "options": [
-    "VA/Q = 0: PO2 40, PCO2 46; VA/Q = infinity: PO2 150, PCO2 0",
-    "At VA/Q = 0: PO2 = 150 mmHg; at VA/Q = infinity: PO2 = 40 mmHg",
-    "Both extremes yield PO2 = 100 mmHg and PCO2 = 40 mmHg",
-    "At VA/Q = infinity: PCO2 = 80 mmHg"
-   ],
-   "answer": 0,
-   "explain": "On the O2-CO2 diagram, all lung units lie along the V/Q line connecting mixed venous blood (VA/Q = 0: PO2 40, PCO2 46) to inspired air (VA/Q = infinity: PO2 150, PCO2 0).",
-   "verified": false,
-   "open": {
-    "q": "State the alveolar PO2 and PCO2 values in: (1) a completely obstructed, perfused alveolus (VA/Q = 0) and (2) a ventilated, completely unperfused alveolus (VA/Q = infinity).",
-    "accept": [
-     "1) VA/Q = 0: PO2 = 40 mmHg, PCO2 = 46 mmHg (mixed venous values); 2) VA/Q = infinity: PO2 = 150 mmHg, PCO2 = 0 mmHg (inspired air values)",
-     "VA/Q = 0 -> 40/46 mmHg; VA/Q = infinity -> 150/0 mmHg"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
-   "q": "Why does administering 100% inspired oxygen (FiO2 = 1.0) fail to fully correct hypoxemia caused by a true right-to-left shunt (such as an intracardiac septal defect or complete lobar atelectasis), whereas it readily corrects hypoxemia from V/Q mismatch or diffusion impairment?",
-   "options": [
-    "Shunt blood bypasses ventilated alveoli; ventilated blood is already ~98-100% saturated on the flat curve",
-    "100% oxygen causes immediate bronchospasm in healthy alveoli",
-    "Hemoglobin refuses to bind oxygen when FiO2 exceeds 0.5",
-    "Shunted blood flows backward into the pulmonary veins"
-   ],
-   "answer": 0,
-   "explain": "Because of the flat upper plateau of the O2-Hb dissociation curve, raising PAO2 from 100 to 660 mmHg in ventilated units adds minimal extra O2 content (~1.7 mL/dL dissolved) to compensate for unoxygenated shunted blood.",
-   "verified": false,
-   "open": {
-    "q": "Explain why hypoxemia due to a right-to-left shunt responds poorly to 100% supplemental oxygen compared to hypoxemia from V/Q mismatch.",
-    "accept": [
-     "Shunted blood never contacts ventilated alveoli, and blood from ventilated alveoli is already nearly 100% Hb-saturated on the flat upper plateau of the dissociation curve, so extra dissolved O2 cannot compensate for the venous admixture",
-     "Bypassed shunted blood is unaffected by FiO2, and ventilated capillary blood is already Hb-saturated"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
-   "q": "What is the normal alveolar-arterial oxygen gradient (A-a gradient = PAO2 - PaO2) in a young healthy adult breathing room air, and what anatomical shunts account for this small physiological difference?",
-   "options": [
-    "~5-15 mmHg, from bronchial and Thebesian venous admixture",
-    "Normally 60 mmHg, caused by hemoglobin degradation",
-    "Normally 0 mmHg, because zero venous blood ever enters the left heart",
-    "Normally 100 mmHg"
-   ],
-   "answer": 0,
-   "explain": "Bronchial venous blood (supplying conducting airways) and Thebesian coronary venous blood (~1-2% of cardiac output) bypass alveolar oxygenation, slightly lowering systemic PaO2 (~95 mmHg) below mean PAO2 (~100-104 mmHg).",
-   "verified": false,
-   "open": {
-    "q": "State the normal alveolar-arterial (A-a) oxygen gradient in a young adult on room air and name the two normal anatomical sources of right-to-left venous admixture.",
-    "accept": [
-     "5 to 15 mmHg (<15 mmHg); bronchial veins draining into pulmonary veins and cardiac Thebesian veins draining into the left atrium/ventricle",
-     "~5-15 mmHg; bronchial circulation and Thebesian veins"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-020",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
-   "q": "How does calculating the alveolar-arterial (A-a) oxygen gradient help distinguish hypoxemia caused by pure hypoventilation (e.g., opioid overdose) from hypoxemia caused by V/Q mismatch, diffusion defect, or shunt?",
-   "options": [
-    "Hypoventilation has a normal A-a gradient; V/Q mismatch and shunt raise the A-a gradient",
-    "Pure hypoventilation produces an A-a gradient above 80 mmHg",
-    "V/Q mismatch and shunt always have a normal A-a gradient of 5 mmHg",
-    "The A-a gradient cannot be calculated from arterial blood gases"
-   ],
-   "answer": 0,
-   "explain": "Because PAO2 = PiO2 - PaCO2/R already accounts for rising PaCO2 during hypoventilation, PAO2 and PaO2 drop in parallel (normal A-a gradient), whereas parenchymal or vascular lung pathology widens PAO2 - PaO2.",
-   "verified": false,
-   "open": {
-    "q": "How does the A-a oxygen gradient differ between hypoxemia caused by narcotic-induced hypoventilation versus hypoxemia caused by pneumonia or pulmonary embolism?",
-    "accept": [
-     "Hypoventilation has a normal A-a gradient (PAO2 and PaO2 fall equally), whereas pneumonia (V/Q mismatch/shunt) and pulmonary embolism (V/Q mismatch) produce an elevated A-a gradient",
-     "Normal A-a gradient in hypoventilation vs elevated A-a gradient in V/Q mismatch or shunt"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Oxygen-Hemoglobin vs Myoglobin Dissociation Curves",
-   "q": "How does the oxygen dissociation curve of skeletal/cardiac muscle myoglobin compare with that of adult hemoglobin, and what is myoglobin's physiological function?",
-   "options": [
-    "Hyperbolic, left-shifted (P50 ~2.5-5 mmHg), no cooperativity; releases O2 only at very low PO2",
-    "Myoglobin has a sigmoidal curve with P50 = 60 mmHg",
-    "Myoglobin carries 80% of arterial oxygen in blood plasma",
-    "Myoglobin exhibits stronger Bohr and 2,3-BPG shifts than hemoglobin"
-   ],
-   "answer": 0,
-   "explain": "Monomeric myoglobin binds 1 O2 per molecule with high affinity (unaffected by pH, PCO2, or 2,3-BPG), acting as an intramuscular O2 buffer/facilitator during peak contractile compression of muscle capillaries.",
-   "verified": false,
-   "open": {
-    "q": "Compare the shape, P50, and cooperativity of myoglobin's oxygen dissociation curve with adult hemoglobin's curve.",
-    "accept": [
-     "Myoglobin has a hyperbolic curve, low P50 (~2.5-5 mmHg), and no cooperativity (monomer); adult hemoglobin has a sigmoidal curve, higher P50 (~26-27 mmHg), and positive cooperativity (tetramer)",
-     "Hyperbolic/left-shifted/non-cooperative (myoglobin) vs sigmoidal/right-shifted/cooperative (hemoglobin)"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-022",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Oxygen Transport and Hemoglobin Binding",
-   "q": "How does pure anemia (e.g., hemoglobin reduced from 15 g/dL to 7.5 g/dL with normal lungs) affect arterial PO2 (PaO2), arterial Hb saturation (SaO2), and total arterial oxygen content (CaO2)?",
-   "options": [
-    "PaO2 and SaO2 stay normal; CaO2 falls by ~50%",
-    "PaO2 drops to 40 mmHg and SaO2 drops to 50%",
-    "Total arterial O2 content remains 20 mL/dL",
-    "Dissolved plasma O2 increases tenfold to compensate"
-   ],
-   "answer": 0,
-   "explain": "Because PaO2 reflects only physically dissolved O2 equilibrated with normal alveolar gas, and remaining hemoglobin molecules saturate normally, both PaO2 and pulse oximetry (SaO2) are normal in uncomplicated anemia despite severe reduction in CaO2.",
-   "verified": false,
-   "open": {
-    "q": "State what happens to arterial PO2, hemoglobin saturation (SaO2), and total arterial O2 content (CaO2) in a patient with severe iron-deficiency anemia and healthy lungs.",
-    "accept": [
-     "PaO2 is normal (~100 mmHg), SaO2 is normal (~97-98%), and total arterial oxygen content (CaO2) is markedly decreased",
-     "Normal PaO2, normal SaO2, decreased CaO2"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-023",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Oxygen Transport and Hemoglobin Binding",
-   "q": "What is 'methemoglobinemia', how does oxidation of heme iron from Fe2+ (ferrous) to Fe3+ (ferric) alter oxygen transport, and what is the specific antidote?",
-   "options": [
-    "Fe3+ heme cannot bind O2 and left-shifts remaining subunits; treat with methylene blue",
-    "Fe3+ heme binds O2 ten times more tightly than Fe2+; treated with naloxone",
-    "Methemoglobinemia causes bright cherry-red blood; treated with atropine",
-    "Fe3+ heme accelerates CO2 hydration; treated with acetazolamide"
-   ],
-   "answer": 0,
-   "explain": "Oxidizing drugs (dapsone, benzocaine, nitrates) convert Fe2+ to Fe3+; methylene blue is reduced by NADPH-methemoglobin reductase to leukomethylene blue, which reduces Fe3+ back to functional Fe2+.",
-   "verified": false,
-   "open": {
-    "q": "Explain why methemoglobinemia impairs tissue oxygenation and name its first-line intravenous antidote.",
-    "accept": [
-     "Oxidation of heme iron from Fe2+ to Fe3+ prevents O2 binding at oxidized sites and shifts the dissociation curve of remaining subunits left (impairing tissue O2 unloading); treated with methylene blue",
-     "Fe3+ cannot bind O2 and left-shifts remaining Hb; antidote is methylene blue"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-024",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Carbon Dioxide Transport and Chloride Shift",
-   "q": "How does inhibiting red blood cell carbonic anhydrase with acetazolamide affect arterial and venous PCO2 and tissue CO2 elimination?",
-   "options": [
-    "Slows CO2 hydration in tissues and dehydration in lungs, raising tissue PCO2",
-    "It increases bicarbonate transport by 500%",
-    "It eliminates all dissolved CO2 from plasma",
-    "It has no effect on red blood cells because carbonic anhydrase is absent in erythrocytes"
-   ],
-   "answer": 0,
-   "explain": "Uncatalyzed hydration of CO2 in plasma is ~5,000 times slower than carbonic-anhydrase-catalyzed hydration inside RBCs; blocking RBC carbonic anhydrase creates a disequilibrium PCO2 gradient.",
-   "verified": false,
-   "open": {
-    "q": "Why is red blood cell carbonic anhydrase essential for efficient CO2 transport between systemic tissues and pulmonary alveoli?",
-    "accept": [
-     "It accelerates the reversible hydration of CO2 to H2CO3 (and dissociation to H+ + HCO3-) thousands of times within the brief ~0.75-second capillary transit time",
-     "Rapidly catalyzes CO2 <-> H2CO3 <-> H+ + HCO3- within capillary transit time"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-025",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
-   "q": "How is the anatomical/physiological right-to-left shunt fraction (Qs / Qt) calculated using the clinical shunt equation?",
-   "options": [
-    "Qs/Qt = (CcO2 - CaO2) / (CcO2 - CvO2)",
-    "Qs / Qt = (PaCO2 - PECO2) / PaCO2",
-    "Qs / Qt = Tidal volume / Vital capacity",
-    "Qs / Qt = PaO2 / FiO2"
-   ],
-   "answer": 0,
-   "explain": "The shunt equation partitions total cardiac output (Qt) into shunted blood (Qs, having mixed venous content CvO2) and ventilated capillary blood (Qt - Qs, having ideal end-capillary content CcO2).",
-   "verified": false,
-   "open": {
-    "q": "Write the physiological shunt equation relating shunt fraction (Qs/Qt) to end-capillary (CcO2), arterial (CaO2), and mixed-venous (CvO2) oxygen contents.",
-    "accept": [
-     "Qs / Qt = (CcO2 - CaO2) / (CcO2 - CvO2)",
-     "(CcO2 - CaO2) divided by (CcO2 - CvO2)"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-026",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical Correlations",
-   "q": "A 29-year-old fire victim rescued from a closed burning garage presents with headache, confusion, cherry-red mucous membranes, normal arterial PaO2 (98 mmHg) on standard blood gas, and elevated carboxyhemoglobin (34%) on co-oximetry. Why is 100% normobaric or hyperbaric oxygen administered immediately?",
-   "options": [
-    "High PO2 displaces CO from heme by mass action, shortening COHb half-life to ~60-80 min",
-    "100% O2 oxidizes CO directly into bicarbonate inside plasma",
-    "Hyperbaric oxygen converts carboxyhemoglobin into fetal hemoglobin",
-    "High O2 inhibits carbonic anhydrase in the brain"
-   ],
-   "answer": 0,
-   "explain": "Standard pulse oximeters cannot distinguish oxyhemoglobin from carboxyhemoglobin (falsely reading ~98-100%); co-oximetry diagnoses CO poisoning, and high PO2 accelerates CO dissociation from hemoglobin and cytochrome c oxidase.",
-   "verified": false,
-   "open": {
-    "q": "Why does standard two-wavelength pulse oximetry give a falsely normal SpO2 reading in carbon monoxide poisoning, and how does 100% oxygen accelerate recovery?",
-    "accept": [
-     "Carboxyhemoglobin absorbs red light similarly to oxyhemoglobin so pulse oximetry overestimates true SaO2; 100% O2 increases dissolved PaO2 to competitively displace CO from hemoglobin and shorten carboxyhemoglobin half-life",
-     "Pulse oximetry confuses carboxyhemoglobin with oxyhemoglobin; high PO2 competitively displaces CO and boosts dissolved O2"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-027",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical Correlations",
-   "q": "A 54-year-old woman develops sudden-onset pleuritic chest pain, tachypnea, tachycardia, and hypoxemia (PaO2 56 mmHg, PaCO2 31 mmHg, A-a gradient 55 mmHg) 5 days after pelvic surgery. CT pulmonary angiography confirms a large saddle pulmonary embolus occluding the right pulmonary artery. How does acute pulmonary embolism produce BOTH increased physiological dead space and hypoxemia?",
-   "options": [
-    "Embolus creates dead space in occluded areas and overperfuses the rest (low VA/Q)",
-    "Pulmonary embolism increases hemoglobin affinity for oxygen",
-    "Pulmonary embolism completely stops diaphragmatic contraction",
-    "Pulmonary embolism lowers the A-a gradient to 0 mmHg"
-   ],
-   "answer": 0,
-   "explain": "Embolic occlusion creates dead space in affected regions and overperfuses unobstructed regions (low VA/Q), widening the A-a gradient while hypoxic tachypnea initially lowers PaCO2.",
-   "verified": false,
-   "open": {
-    "q": "Explain the two ventilation-perfusion (VA/Q) abnormalities produced simultaneously in different lung regions by an acute pulmonary embolism.",
-    "accept": [
-     "Occluded vessels create high VA/Q (alveolar dead space), while shunting of blood flow to unobstructed areas creates low VA/Q regions causing hypoxemia and an elevated A-a gradient",
-     "High VA/Q dead space in embolized regions and low VA/Q overperfusion in non-embolized regions"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-028",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical Correlations",
-   "q": "A 66-year-old man with severe COPD and chronic hypercapnia (baseline PaCO2 58 mmHg, PaO2 54 mmHg) is placed on high-flow 100% oxygen via non-rebreather mask in the ambulance and becomes somnolent with PaCO2 rising to 84 mmHg and respiratory acidosis (pH 7.21). Which two physiological mechanisms explain oxygen-induced hypercapnia in severe COPD?",
-   "options": [
-    "Reversal of hypoxic vasoconstriction worsens V/Q mismatch; the Haldane effect releases CO2",
-    "100% oxygen paralyzes the phrenic nerve directly",
-    "High oxygen converts bicarbonate into solid calcium carbonate",
-    "Oxygen blocks carbonic anhydrase in red blood cells"
-   ],
-   "answer": 0,
-   "explain": "Worsened V/Q mismatch (from reversing regional hypoxic vasoconstriction in damaged alveoli) and the Haldane effect account for the majority of O2-induced PaCO2 rise, which is why target SpO2 in COPD is titrated to 88-92%.",
-   "verified": false,
-   "open": {
-    "q": "State the two primary pulmonary gas-exchange mechanisms by which excessive supplemental oxygen worsens hypercapnia in severe COPD.",
-    "accept": [
-     "Reversal of hypoxic pulmonary vasoconstriction (worsening V/Q mismatch/dead space) and the Haldane effect (oxygenation displaces CO2 from hemoglobin), along with reduced hypoxic ventilatory drive",
-     "Loss of hypoxic vasoconstriction increasing V/Q mismatch and Haldane effect"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-029",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical Correlations",
-   "q": "A 45-year-old man with severe alcoholic cirrhosis develops progressive dyspnea that paradoxically worsens when sitting upright (platypnea) and improves when lying flat (orthodeoxia), with arterial PaO2 dropping from 76 mmHg supine to 54 mmHg standing. Contrast echocardiography shows microbubbles appearing in the left atrium 5 cardiac cycles after right atrial injection. What is the mechanism of hepatopulmonary syndrome?",
-   "options": [
-    "NO-mediated basilar vascular dilatation causes functional right-to-left shunt; upright posture worsens it",
-    "Cirrhosis causes severe pulmonary fibrosis at the lung apices",
-    "Bilirubin binds irreversibly to hemoglobin heme groups",
-    "Ascites pushes the diaphragm upward during standing"
-   ],
-   "answer": 0,
-   "explain": "Dilated basilar pulmonary capillaries have diameters too wide for O2 molecules from adjacent alveoli to diffuse to the center of the erythrocyte stream before transit ends; upright posture increases basilar hydrostatic perfusion and worsens shunting.",
-   "verified": false,
-   "open": {
-    "q": "Define platypnea and orthodeoxia and explain their vascular mechanism in hepatopulmonary syndrome.",
-    "accept": [
-     "Platypnea is dyspnea induced by upright posture and relieved by recumbency; orthodeoxia is arterial oxygen desaturation upon standing; caused by gravity-dependent increased blood flow through dilated basilar intrapulmonary capillaries (functional right-to-left shunt)",
-     "Upright dyspnea and hypoxemia caused by gravity increasing perfusion through dilated basilar pulmonary vessels"
-    ]
-   }
-  },
-  {
-   "id": "pr-transport-of-respiratory-gases-030",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical Correlations",
-   "q": "A 70-year-old man with idiopathic pulmonary fibrosis has a normal resting PaO2 (88 mmHg) at rest, but during a 6-minute walk test his pulse oximetry drops precipitously from 96% to 82%. Why does interstitial lung fibrosis cause severe exertional hypoxemia even when resting oxygenation is preserved?",
-   "options": [
-    "Exercise shortens capillary transit time, unmasking diffusion limitation",
-    "Exercise destroys red blood cell hemoglobin",
-    "Pulmonary fibrosis increases lung compliance during walking",
-    "Exercise lowers alveolar PO2 to 30 mmHg"
-   ],
-   "answer": 0,
-   "explain": "In fibrotic thickened membranes, O2 equilibration takes longer along the capillary; shortening capillary transit time during exercise cuts off equilibration prematurely, unmasking diffusion limitation.",
-   "verified": false,
-   "open": {
-    "q": "Explain why patients with interstitial pulmonary fibrosis often maintain normal PaO2 at rest yet develop marked hypoxemia during exercise.",
-    "accept": [
-     "Thickened alveolar-capillary membranes slow O2 diffusion; at rest the ~0.75 s capillary transit time suffices for equilibration, but exercise shortens transit time (~0.25 s) so blood leaves the capillary before O2 equilibrates (diffusion limitation)",
-     "Shortened pulmonary capillary transit time during exercise unmasks impaired membrane diffusing capacity"
-    ]
-   }
-  }
- ]
+  "topic": "pr-transport-of-respiratory-gases",
+  "questions": [
+    {
+      "id": "pr-transport-of-respiratory-gases-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Alveolar Gas Equation and Partial Pressures",
+      "q": "At sea level (barometric pressure PB = 760 mmHg) where inspired air is warmed to 37 C and fully humidified (water vapor pressure PH2O = 47 mmHg) with FiO2 = 0.21, what is the inspired tracheal oxygen partial pressure (PiO2)?",
+      "options": [
+        "160 mmHg",
+        "150 mmHg (0.21 x 713)",
+        "100 mmHg",
+        "40 mmHg"
+      ],
+      "answer": 1,
+      "explain": "Because humidification in the upper airways adds 47 mmHg of water vapor pressure at 37 C, dry gas pressure drops to 760 - 47 = 713 mmHg, giving PiO2 = 0.21 x 713 = 149.7 (~150) mmHg.",
+      "verified": false,
+      "open": {
+        "q": "Calculate the tracheal inspired oxygen partial pressure (PiO2) at sea level (PB = 760 mmHg, PH2O = 47 mmHg, FiO2 = 0.21).",
+        "accept": [
+          "150 mmHg (149.7 mmHg)",
+          "150 mmHg"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Alveolar Gas Equation and Partial Pressures",
+      "q": "According to the simplified alveolar gas equation (PAO2 = PiO2 - PaCO2 / R), what is the normal alveolar oxygen partial pressure (PAO2) when PiO2 = 150 mmHg, PaCO2 = 40 mmHg, and respiratory quotient R = 0.8?",
+      "options": [
+        "150 mmHg",
+        "110 mmHg",
+        "100 mmHg (150 - 50)",
+        "40 mmHg"
+      ],
+      "answer": 2,
+      "explain": "PAO2 = 150 - (40 / 0.8) = 150 - 50 = 100 mmHg (often ~100-104 mmHg). Hypoventilation raises PaCO2 and directly lowers PAO2.",
+      "verified": false,
+      "open": {
+        "q": "Write the alveolar gas equation and calculate PAO2 when PiO2 = 150 mmHg, PaCO2 = 40 mmHg, and respiratory exchange ratio R = 0.8.",
+        "accept": [
+          "PAO2 = PiO2 - (PaCO2 / R); 100 mmHg",
+          "100 mmHg"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Alveolar-Capillary Diffusion and Fick's Law",
+      "q": "According to Fick's law of diffusion (V_gas = [A x D x (P1 - P2)] / T), why does carbon dioxide diffuse across the alveolar-capillary membrane roughly 20 times faster than oxygen for a given partial pressure gradient?",
+      "options": [
+        "CO2 has a much smaller molecular weight than O2",
+        "CO2 has roughly 24-fold higher solubility than O2 in water",
+        "CO2 is actively pumped across Type I pneumocytes by ATPases",
+        "The alveolar membrane is thinner for CO2 than for O2"
+      ],
+      "answer": 1,
+      "explain": "Although CO2 (MW 44) is slightly heavier than O2 (MW 32), its aqueous solubility is ~24-fold higher, giving a ~20-fold greater diffusion constant so CO2 transfer is rarely diffusion-limited.",
+      "verified": false,
+      "open": {
+        "q": "State Fick's law of gas diffusion across the alveolar-capillary membrane and explain why CO2 diffuses ~20 times faster than O2 despite a smaller pressure gradient (6 mmHg vs 60 mmHg).",
+        "accept": [
+          "Rate of diffusion is proportional to surface area (A), diffusion coefficient (D), and partial pressure gradient (P1 - P2), and inversely proportional to membrane thickness (T); CO2 diffuses ~20x faster because its aqueous solubility is ~24 times higher than O2",
+          "V_gas = A * D * (P1 - P2) / T; higher solubility of CO2 in water/membranes"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Alveolar-Capillary Diffusion and Fick's Law",
+      "q": "How do 'perfusion-limited' gas exchange (exemplified by nitrous oxide N2O and resting O2) and 'diffusion-limited' gas exchange (exemplified by carbon monoxide CO) differ along a pulmonary capillary?",
+      "options": [
+        "N2O equilibrates rapidly and is perfusion-limited; CO binds haemoglobin and remains diffusion-limited",
+        "N2O cannot cross the alveolar membrane; CO equilibrates immediately",
+        "Resting oxygen transfer is always diffusion-limited in healthy lungs",
+        "CO does not bind to haemoglobin"
+      ],
+      "answer": 0,
+      "explain": "In a healthy resting lung (capillary transit time ~0.75 s), O2 equilibrates by ~0.25 s (perfusion-limited); during strenuous exercise (transit time drops to ~0.25 s) or interstitial fibrosis/emphysema, O2 transfer can become diffusion-limited.",
+      "verified": false,
+      "open": {
+        "q": "Explain why carbon monoxide (CO) is used clinically to measure the diffusing capacity of the lung (DLCO).",
+        "accept": [
+          "CO binds hemoglobin with ultra-high affinity so plasma PCO remains near zero throughout the capillary, making CO uptake strictly limited by alveolar-capillary membrane diffusion rather than pulmonary blood flow",
+          "Avid Hb binding keeps plasma PCO negligible, so transfer depends purely on membrane diffusion properties"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Alveolar-Capillary Diffusion and Fick's Law",
+      "q": "What are the sequential histological layers of the alveolar-capillary respiratory membrane (total thickness ~0.2 to 0.6 micrometers) that oxygen traverses from alveolar gas to red blood cell hemoglobin?",
+      "options": [
+        "Surfactant, type I epithelium, fused basal laminae, capillary endothelium, plasma and erythrocyte membrane",
+        "Goblet cell mucus, cartilage, smooth muscle, pericyte and erythrocyte membrane",
+        "Type II epithelium, pleura, basement membrane and erythrocyte membrane",
+        "Alveolar macrophage, collagen, elastic lamina and erythrocyte membrane"
+      ],
+      "answer": 0,
+      "explain": "In the thin gas-exchanging portion of the alveolar septum, the epithelial and endothelial basal laminae fuse, minimizing diffusion distance (T) to ~0.2-0.6 um.",
+      "verified": false,
+      "open": {
+        "q": "List the anatomical layers of the alveolar-capillary diffusion barrier from the alveolar air space to the capillary lumen.",
+        "accept": [
+          "Surfactant/fluid layer, Type I alveolar epithelial cell, fused epithelial-endothelial basement membrane, and capillary endothelial cell",
+          "Surfactant layer, Type I pneumocyte, fused basal lamina, capillary endothelium"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Oxygen Transport and Hemoglobin Binding",
+      "q": "In healthy arterial blood (PaO2 = 100 mmHg, hemoglobin = 15 g/dL, SaO2 = 97.5%), what is the total arterial oxygen content (CaO2), and what percentages are carried bound to hemoglobin versus dissolved in plasma?",
+      "options": [
+        "Total ~20 mL O2/dL: ~98.5% (19.7 mL/dL) bound to Hb, ~1.5% (0.3 mL/dL) dissolved in plasma",
+        "Total ~5 mL O2/dL blood: 50% dissolved and 50% bound to hemoglobin",
+        "Total ~50 mL O2/dL blood: 90% dissolved in plasma",
+        "Total ~20 mL O2/dL blood: 100% physically dissolved in plasma"
+      ],
+      "answer": 0,
+      "explain": "Using CaO2 = (1.34 x Hb x SaO2) + (0.003 x PaO2): bound O2 = 1.34 x 15 x 0.975 = 19.6 mL/dL, while dissolved O2 = 0.003 x 100 = 0.3 mL/dL (total ~19.9-20.1 mL/dL).",
+      "verified": false,
+      "open": {
+        "q": "Write the formula for total arterial oxygen content (CaO2) and calculate CaO2 when Hb = 15 g/dL, SaO2 = 100%, and PaO2 = 100 mmHg (assuming Hufner's constant = 1.34 mL O2/g Hb).",
+        "accept": [
+          "CaO2 = (1.34 x Hb x SaO2) + (0.003 x PaO2); 20.4 mL O2/dL blood",
+          "20.4 mL/dL (20.1 bound + 0.3 dissolved)"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Oxygen Transport and Hemoglobin Binding",
+      "q": "Why is the oxygen-hemoglobin dissociation curve sigmoidal (S-shaped) rather than hyperbolic like myoglobin?",
+      "options": [
+        "Because hemoglobin is a monomer with a single heme group",
+        "Because the tetramer shows positive cooperativity between T and R states",
+        "Because dissolved plasma oxygen blocks hemoglobin binding above 60 mmHg",
+        "Because hemoglobin binds O2 irreversibly via covalent bonds"
+      ],
+      "answer": 1,
+      "explain": "Positive cooperativity creates a flat upper plateau (60-100 mmHg, safeguarding arterial O2 loading even at moderate altitude or mild lung disease) and a steep middle unloading slope (15-40 mmHg, releasing large O2 volumes to metabolically active tissues).",
+      "verified": false,
+      "open": {
+        "q": "Explain the structural basis (T and R conformational states) of the sigmoidal shape of the oxygen-hemoglobin dissociation curve and its two physiological advantages.",
+        "accept": [
+          "Positive cooperativity among the four heme subunits shifts Hb from the low-affinity T (tense) state to the high-affinity R (relaxed) state upon O2 binding; this provides a flat upper plateau for safe pulmonary loading (60-100 mmHg) and a steep unloading slope in peripheral tissues (20-40 mmHg)",
+          "Cooperative T-to-R transition; flat loading plateau above 60 mmHg and steep unloading curve at tissue PO2"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Oxygen Transport and Hemoglobin Binding",
+      "q": "What are the normal P50, arterial saturation (SaO2 at PaO2 100 mmHg), and mixed-venous saturation (SvO2 at PvO2 40 mmHg) on the standard adult human oxygen-hemoglobin dissociation curve?",
+      "options": [
+        "P50 = 26-27 mmHg; SaO2 = ~97.5%; SvO2 = ~75%",
+        "P50 = 5 mmHg; SaO2 = 100%; SvO2 = 10%",
+        "P50 = 60 mmHg; SaO2 = 75%; SvO2 = 25%",
+        "P50 = 40 mmHg; SaO2 = 90%; SvO2 = 50%"
+      ],
+      "answer": 0,
+      "explain": "P50 (~26.8 mmHg) is the PO2 at which hemoglobin is 50% saturated; at rest, systemic tissues extract ~25% of delivered O2 (dropping saturation from 97.5% to 75%, ~5 mL O2/dL), leaving a large 75% venous reserve for exercise.",
+      "verified": false,
+      "open": {
+        "q": "Define P50 on the oxygen-hemoglobin dissociation curve and state its normal value (in mmHg) in adult human blood.",
+        "accept": [
+          "The partial pressure of oxygen (PO2) at which hemoglobin is 50% saturated with O2; normally ~26 to 27 mmHg",
+          "PO2 for 50% Hb saturation; ~26.8 mmHg (26-27 mmHg)"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
+      "q": "Which physiological changes in metabolically active peripheral tissues shift the oxygen-hemoglobin dissociation curve to the RIGHT (increasing P50 and facilitating O2 unloading)?",
+      "options": [
+        "Decreased temperature, alkalosis, decreased PCO2, decreased 2,3-BPG",
+        "Increased temperature, acidosis, increased PCO2, increased 2,3-BPG",
+        "Presence of fetal hemoglobin (HbF) and carbon monoxide",
+        "Hypothermia and stored bank blood depleted of 2,3-BPG"
+      ],
+      "answer": 1,
+      "explain": "Mnemonic 'CADET, face RIGHT': CO2, Acid (low pH), 2,3-DPG/BPG, Exercise, and Temperature stabilize the T (tense) deoxyhemoglobin state, lowering O2 affinity so exercising muscles extract more O2.",
+      "verified": false,
+      "open": {
+        "q": "List four physiological factors that shift the oxygen-hemoglobin dissociation curve to the right and state the effect on P50 and tissue O2 unloading.",
+        "accept": [
+          "Increased PCO2, decreased pH (increased H+), increased temperature, and increased 2,3-BPG; shifts increase P50 (decrease Hb affinity) and enhance O2 unloading to tissues",
+          "High CO2, acidosis, fever/heat, elevated 2,3-BPG; raises P50 and promotes O2 release"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
+      "q": "How does 2,3-bisphosphoglycerate (2,3-BPG, synthesized via the Rapoport-Luebering shunt in RBCs) decrease adult hemoglobin's oxygen affinity, and why does fetal hemoglobin (HbF, alpha2-gamma2) exhibit a LEFT-shifted dissociation curve (P50 ~19 mmHg)?",
+      "options": [
+        "2,3-BPG stabilises the T state; HbF binds it less avidly and therefore has higher oxygen affinity",
+        "2,3-BPG oxidises haem iron from Fe2+ to Fe3+",
+        "HbF binds 2,3-BPG more tightly than HbA",
+        "2,3-BPG binds exclusively to myoglobin"
+      ],
+      "answer": 0,
+      "explain": "Because HbF has lower affinity for 2,3-BPG, its O2 dissociation curve lies to the left of maternal HbA, driving placental oxygen transfer from maternal to fetal blood even at low intervillous PO2 (~30 mmHg).",
+      "verified": false,
+      "open": {
+        "q": "Explain why fetal hemoglobin (HbF) has a higher oxygen affinity (lower P50) than adult hemoglobin (HbA) and why this is essential in utero.",
+        "accept": [
+          "HbF (alpha2-gamma2) binds 2,3-BPG much less avidly than HbA (alpha2-beta2), shifting its dissociation curve left so fetal blood can load O2 from maternal blood across the placenta",
+          "Reduced 2,3-BPG binding by gamma chains gives HbF higher O2 affinity to extract oxygen from maternal HbA"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
+      "q": "How does carbon monoxide (CO) affect BOTH arterial oxygen content and the position of the oxygen-hemoglobin dissociation curve?",
+      "options": [
+        "CO binds heme with 200-240x higher affinity than O2 and left-shifts the curve",
+        "CO shifts the curve to the right and doubles PaO2",
+        "CO increases both SaO2 and tissue O2 release",
+        "CO has lower affinity for hemoglobin than O2"
+      ],
+      "answer": 0,
+      "explain": "Binding of CO to one or two heme subunits locks the tetramer into the high-affinity R state, preventing the remaining O2 molecules from unloading in peripheral capillaries despite a normal dissolved PaO2 (~100 mmHg).",
+      "verified": false,
+      "open": {
+        "q": "Describe the dual mechanism by which carbon monoxide poisoning causes severe tissue hypoxia even when arterial PaO2 is normal.",
+        "accept": [
+          "CO occupies heme binding sites with ~200-240x higher affinity than O2 (lowering O2 content) and shifts the dissociation curve of remaining bound O2 to the left, blocking O2 unloading in tissues",
+          "High-affinity heme competition reduces O2 binding capacity and left-shifts the curve to prevent tissue O2 release"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Carbon Dioxide Transport and Chloride Shift",
+      "q": "In what three chemical forms is carbon dioxide transported in human venous blood, and what are their approximate percentages?",
+      "options": [
+        "~70% as HCO3-, ~20-23% as carbamino compounds, ~7-10% dissolved",
+        "~98% bound to heme iron and ~2% as bicarbonate",
+        "~70% physically dissolved in plasma and ~30% as carbonic acid",
+        "~50% as carboxyhemoglobin and ~50% as methemoglobin"
+      ],
+      "answer": 0,
+      "explain": "CO2 diffuses into red blood cells where abundant carbonic anhydrase rapidly hydrates CO2 + H2O -> H2CO3 -> H+ + HCO3-, accounting for ~70% of total CO2 transport.",
+      "verified": false,
+      "open": {
+        "q": "State the three forms in which CO2 is transported in venous blood along with their approximate percentage contributions.",
+        "accept": [
+          "Bicarbonate ions (~70%), carbamino compounds / carbaminohemoglobin (~20-23%), and physically dissolved CO2 (~7-10%)",
+          "70% HCO3-, 20-23% carbaminohemoglobin, 7-10% dissolved CO2"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Carbon Dioxide Transport and Chloride Shift",
+      "q": "What is the 'chloride shift' (Hamburger phenomenon) in systemic capillaries, and which membrane transporter mediates it?",
+      "options": [
+        "HCO3- exits RBCs in exchange for Cl- via the Band 3 (AE1) exchanger",
+        "Cl- is pumped out of RBCs by Na+/K+-ATPase during inspiration",
+        "Na+ enters RBCs in exchange for Ca2+ in pulmonary capillaries",
+        "HCO3- is synthesized in plasma by extracellular carbonic anhydrase"
+      ],
+      "answer": 0,
+      "explain": "Because intracellular Cl- and HCO3- increase total osmotically active particles inside venous erythrocytes, water enters slightly via AQP1, making venous hematocrit ~3% higher than arterial hematocrit; the reverse chloride shift occurs in the lungs.",
+      "verified": false,
+      "open": {
+        "q": "Explain the chloride shift (Hamburger phenomenon) in systemic tissue capillaries and name the red blood cell membrane protein responsible.",
+        "accept": [
+          "Bicarbonate (HCO3-) formed inside RBCs is exported into plasma in exchange for Cl- influx via the Band 3 (AE1) anion exchanger to preserve electroneutrality",
+          "Exchange of intracellular HCO3- out for extracellular Cl- in via Band 3 (AE1)"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Carbon Dioxide Transport and Chloride Shift",
+      "q": "What is the 'Haldane effect', and how does it facilitate CO2 pickup in systemic tissues and CO2 unloading in the lungs?",
+      "options": [
+        "Deoxyhaemoglobin buffers H+ and carries more CO2; oxygenation in the lungs reverses these effects",
+        "Elevated carbon dioxide reduces haemoglobin oxygen affinity",
+        "High arterial oxygen prevents carbon dioxide leaving pulmonary capillaries",
+        "Carbonic anhydrase is inactivated by oxygen"
+      ],
+      "answer": 0,
+      "explain": "Whereas the Bohr effect describes how CO2/H+ affects O2 binding, the Haldane effect describes how O2 binding affects CO2/H+ transport—accounting for roughly half of the physiological CO2 exchange between tissues and lungs.",
+      "verified": false,
+      "open": {
+        "q": "Contrast the Bohr effect and the Haldane effect in respiratory gas transport.",
+        "accept": [
+          "Bohr effect: elevated PCO2 and H+ decrease hemoglobin's affinity for O2 (promoting O2 unloading in tissues); Haldane effect: deoxygenation of hemoglobin increases its capacity to bind H+ and form carbaminohemoglobin (promoting CO2 loading in tissues and unloading upon oxygenation in the lungs)",
+          "Bohr = CO2/H+ promotes O2 release; Haldane = O2 release promotes CO2/H+ carriage (and oxygenation promotes CO2 release)"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Carbon Dioxide Transport and Chloride Shift",
+      "q": "How do carbamino compounds form when CO2 binds to hemoglobin?",
+      "options": [
+        "CO2 binds reversibly to the ferrous (Fe2+) iron at the heme center",
+        "CO2 binds N-terminal alpha-amino groups of globin, not heme iron",
+        "CO2 is converted to glucose inside the mitochondria",
+        "CO2 binds covalently to membrane phospholipids"
+      ],
+      "answer": 1,
+      "explain": "CO2 binds terminal amino groups of globin (not heme iron), and deoxygenated T-state hemoglobin exposes more reactive amino groups than oxygenated R-state hemoglobin.",
+      "verified": false,
+      "open": {
+        "q": "Where on the hemoglobin molecule does CO2 bind to form carbaminohemoglobin, and does it compete directly with O2 for the same binding site?",
+        "accept": [
+          "Terminal alpha-amino (-NH2) groups of the globin chains; no, it does not compete directly with O2 (which binds the heme Fe2+ iron)",
+          "N-terminal amino groups of globin polypeptides; does not bind heme iron"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
+      "q": "What is the normal overall alveolar ventilation-to-perfusion ratio (VA/Q) across the entire resting lung, and how does VA/Q vary regionally from the apex to the base of an upright lung?",
+      "options": [
+        "Overall VA/Q ~ 0.8; highest at apex (~3.0), lowest at base (~0.6)",
+        "Overall VA/Q = 5.0; VA/Q is lowest at the apex (0.1) and highest at the base (4.0)",
+        "VA/Q is completely uniform (1.0) from apex to base in an upright human",
+        "Overall VA/Q = 0.1"
+      ],
+      "answer": 0,
+      "explain": "Gravity creates a steeper vertical gradient in pulmonary blood flow than in ventilation: consequently, apical alveoli have higher PO2 (~132 mmHg) and lower PCO2 (~28 mmHg) than basal alveoli (PO2 ~89 mmHg, PCO2 ~42 mmHg).",
+      "verified": false,
+      "open": {
+        "q": "Explain why the ventilation-perfusion ratio (VA/Q) is higher at the apex (~3.0) than at the base (~0.6) of an upright lung.",
+        "accept": [
+          "Both ventilation and perfusion increase from apex to base due to gravity, but perfusion increases much more steeply than ventilation, making VA/Q high at the apex and low at the base",
+          "Blood flow decreases more rapidly toward the apex than ventilation does"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
+      "q": "What are the alveolar gas tensions (PAO2 and PACO2) at the two extreme theoretical limits of ventilation-perfusion mismatch: (1) pure intrapulmonary shunt (VA/Q = 0, airway obstruction) and (2) pure alveolar dead space (VA/Q = infinity, pulmonary embolism)?",
+      "options": [
+        "VA/Q = 0: PO2 40, PCO2 46; VA/Q = infinity: PO2 150, PCO2 0",
+        "At VA/Q = 0: PO2 = 150 mmHg; at VA/Q = infinity: PO2 = 40 mmHg",
+        "Both extremes yield PO2 = 100 mmHg and PCO2 = 40 mmHg",
+        "At VA/Q = infinity: PCO2 = 80 mmHg"
+      ],
+      "answer": 0,
+      "explain": "On the O2-CO2 diagram, all lung units lie along the V/Q line connecting mixed venous blood (VA/Q = 0: PO2 40, PCO2 46) to inspired air (VA/Q = infinity: PO2 150, PCO2 0).",
+      "verified": false,
+      "open": {
+        "q": "State the alveolar PO2 and PCO2 values in: (1) a completely obstructed, perfused alveolus (VA/Q = 0) and (2) a ventilated, completely unperfused alveolus (VA/Q = infinity).",
+        "accept": [
+          "1) VA/Q = 0: PO2 = 40 mmHg, PCO2 = 46 mmHg (mixed venous values); 2) VA/Q = infinity: PO2 = 150 mmHg, PCO2 = 0 mmHg (inspired air values)",
+          "VA/Q = 0 -> 40/46 mmHg; VA/Q = infinity -> 150/0 mmHg"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
+      "q": "Why does administering 100% inspired oxygen (FiO2 = 1.0) fail to fully correct hypoxemia caused by a true right-to-left shunt (such as an intracardiac septal defect or complete lobar atelectasis), whereas it readily corrects hypoxemia from V/Q mismatch or diffusion impairment?",
+      "options": [
+        "Shunted blood bypasses ventilated alveoli, and already-saturated haemoglobin in ventilated units cannot fully compensate",
+        "100% oxygen causes immediate bronchospasm in healthy alveoli",
+        "Haemoglobin stops binding oxygen above an inspired fraction of 0.5",
+        "Shunted blood flows backward into pulmonary veins"
+      ],
+      "answer": 0,
+      "explain": "Because of the flat upper plateau of the O2-Hb dissociation curve, raising PAO2 from 100 to 660 mmHg in ventilated units adds minimal extra O2 content (~1.7 mL/dL dissolved) to compensate for unoxygenated shunted blood.",
+      "verified": false,
+      "open": {
+        "q": "Explain why hypoxemia due to a right-to-left shunt responds poorly to 100% supplemental oxygen compared to hypoxemia from V/Q mismatch.",
+        "accept": [
+          "Shunted blood never contacts ventilated alveoli, and blood from ventilated alveoli is already nearly 100% Hb-saturated on the flat upper plateau of the dissociation curve, so extra dissolved O2 cannot compensate for the venous admixture",
+          "Bypassed shunted blood is unaffected by FiO2, and ventilated capillary blood is already Hb-saturated"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
+      "q": "What is the normal alveolar-arterial oxygen gradient (A-a gradient = PAO2 - PaO2) in a young healthy adult breathing room air, and what anatomical shunts account for this small physiological difference?",
+      "options": [
+        "~5-15 mmHg, from bronchial and Thebesian venous admixture",
+        "Normally 60 mmHg, caused by hemoglobin degradation",
+        "Normally 0 mmHg, because zero venous blood ever enters the left heart",
+        "Normally 100 mmHg"
+      ],
+      "answer": 0,
+      "explain": "Bronchial venous blood (supplying conducting airways) and Thebesian coronary venous blood (~1-2% of cardiac output) bypass alveolar oxygenation, slightly lowering systemic PaO2 (~95 mmHg) below mean PAO2 (~100-104 mmHg).",
+      "verified": false,
+      "open": {
+        "q": "State the normal alveolar-arterial (A-a) oxygen gradient in a young adult on room air and name the two normal anatomical sources of right-to-left venous admixture.",
+        "accept": [
+          "5 to 15 mmHg (<15 mmHg); bronchial veins draining into pulmonary veins and cardiac Thebesian veins draining into the left atrium/ventricle",
+          "~5-15 mmHg; bronchial circulation and Thebesian veins"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-020",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
+      "q": "How does calculating the alveolar-arterial (A-a) oxygen gradient help distinguish hypoxemia caused by pure hypoventilation (e.g., opioid overdose) from hypoxemia caused by V/Q mismatch, diffusion defect, or shunt?",
+      "options": [
+        "Hypoventilation has a normal A-a gradient; V/Q mismatch and shunt raise the A-a gradient",
+        "Pure hypoventilation produces an A-a gradient above 80 mmHg",
+        "V/Q mismatch and shunt always have a normal A-a gradient of 5 mmHg",
+        "The A-a gradient cannot be calculated from arterial blood gases"
+      ],
+      "answer": 0,
+      "explain": "Because PAO2 = PiO2 - PaCO2/R already accounts for rising PaCO2 during hypoventilation, PAO2 and PaO2 drop in parallel (normal A-a gradient), whereas parenchymal or vascular lung pathology widens PAO2 - PaO2.",
+      "verified": false,
+      "open": {
+        "q": "How does the A-a oxygen gradient differ between hypoxemia caused by narcotic-induced hypoventilation versus hypoxemia caused by pneumonia or pulmonary embolism?",
+        "accept": [
+          "Hypoventilation has a normal A-a gradient (PAO2 and PaO2 fall equally), whereas pneumonia (V/Q mismatch/shunt) and pulmonary embolism (V/Q mismatch) produce an elevated A-a gradient",
+          "Normal A-a gradient in hypoventilation vs elevated A-a gradient in V/Q mismatch or shunt"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Oxygen-Hemoglobin vs Myoglobin Dissociation Curves",
+      "q": "How does the oxygen dissociation curve of skeletal/cardiac muscle myoglobin compare with that of adult hemoglobin, and what is myoglobin's physiological function?",
+      "options": [
+        "Hyperbolic, left-shifted (P50 ~2.5-5 mmHg), no cooperativity; releases O2 only at very low PO2",
+        "Myoglobin has a sigmoidal curve with P50 = 60 mmHg",
+        "Myoglobin carries 80% of arterial oxygen in blood plasma",
+        "Myoglobin exhibits stronger Bohr and 2,3-BPG shifts than hemoglobin"
+      ],
+      "answer": 0,
+      "explain": "Monomeric myoglobin binds 1 O2 per molecule with high affinity (unaffected by pH, PCO2, or 2,3-BPG), acting as an intramuscular O2 buffer/facilitator during peak contractile compression of muscle capillaries.",
+      "verified": false,
+      "open": {
+        "q": "Compare the shape, P50, and cooperativity of myoglobin's oxygen dissociation curve with adult hemoglobin's curve.",
+        "accept": [
+          "Myoglobin has a hyperbolic curve, low P50 (~2.5-5 mmHg), and no cooperativity (monomer); adult hemoglobin has a sigmoidal curve, higher P50 (~26-27 mmHg), and positive cooperativity (tetramer)",
+          "Hyperbolic/left-shifted/non-cooperative (myoglobin) vs sigmoidal/right-shifted/cooperative (hemoglobin)"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Oxygen Transport and Hemoglobin Binding",
+      "q": "How does pure anemia (e.g., hemoglobin reduced from 15 g/dL to 7.5 g/dL with normal lungs) affect arterial PO2 (PaO2), arterial Hb saturation (SaO2), and total arterial oxygen content (CaO2)?",
+      "options": [
+        "PaO2 and SaO2 stay normal; CaO2 falls by ~50%",
+        "PaO2 drops to 40 mmHg and SaO2 drops to 50%",
+        "Total arterial O2 content remains 20 mL/dL",
+        "Dissolved plasma O2 increases tenfold to compensate"
+      ],
+      "answer": 0,
+      "explain": "Because PaO2 reflects only physically dissolved O2 equilibrated with normal alveolar gas, and remaining hemoglobin molecules saturate normally, both PaO2 and pulse oximetry (SaO2) are normal in uncomplicated anemia despite severe reduction in CaO2.",
+      "verified": false,
+      "open": {
+        "q": "State what happens to arterial PO2, hemoglobin saturation (SaO2), and total arterial O2 content (CaO2) in a patient with severe iron-deficiency anemia and healthy lungs.",
+        "accept": [
+          "PaO2 is normal (~100 mmHg), SaO2 is normal (~97-98%), and total arterial oxygen content (CaO2) is markedly decreased",
+          "Normal PaO2, normal SaO2, decreased CaO2"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Oxygen Transport and Hemoglobin Binding",
+      "q": "What is 'methemoglobinemia', how does oxidation of heme iron from Fe2+ (ferrous) to Fe3+ (ferric) alter oxygen transport, and what is the specific antidote?",
+      "options": [
+        "Fe3+ heme cannot bind O2 and left-shifts remaining subunits; treat with methylene blue",
+        "Fe3+ heme binds O2 ten times more tightly than Fe2+; treated with naloxone",
+        "Methemoglobinemia causes bright cherry-red blood; treated with atropine",
+        "Fe3+ heme accelerates CO2 hydration; treated with acetazolamide"
+      ],
+      "answer": 0,
+      "explain": "Oxidizing drugs (dapsone, benzocaine, nitrates) convert Fe2+ to Fe3+; methylene blue is reduced by NADPH-methemoglobin reductase to leukomethylene blue, which reduces Fe3+ back to functional Fe2+.",
+      "verified": false,
+      "open": {
+        "q": "Explain why methemoglobinemia impairs tissue oxygenation and name its first-line intravenous antidote.",
+        "accept": [
+          "Oxidation of heme iron from Fe2+ to Fe3+ prevents O2 binding at oxidized sites and shifts the dissociation curve of remaining subunits left (impairing tissue O2 unloading); treated with methylene blue",
+          "Fe3+ cannot bind O2 and left-shifts remaining Hb; antidote is methylene blue"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Carbon Dioxide Transport and Chloride Shift",
+      "q": "How does inhibiting red blood cell carbonic anhydrase with acetazolamide affect arterial and venous PCO2 and tissue CO2 elimination?",
+      "options": [
+        "Slows CO2 hydration in tissues and dehydration in lungs, raising tissue PCO2",
+        "It increases bicarbonate transport by 500%",
+        "It eliminates all dissolved CO2 from plasma",
+        "It has no effect on red blood cells because carbonic anhydrase is absent in erythrocytes"
+      ],
+      "answer": 0,
+      "explain": "Uncatalyzed hydration of CO2 in plasma is ~5,000 times slower than carbonic-anhydrase-catalyzed hydration inside RBCs; blocking RBC carbonic anhydrase creates a disequilibrium PCO2 gradient.",
+      "verified": false,
+      "open": {
+        "q": "Why is red blood cell carbonic anhydrase essential for efficient CO2 transport between systemic tissues and pulmonary alveoli?",
+        "accept": [
+          "It accelerates the reversible hydration of CO2 to H2CO3 (and dissociation to H+ + HCO3-) thousands of times within the brief ~0.75-second capillary transit time",
+          "Rapidly catalyzes CO2 <-> H2CO3 <-> H+ + HCO3- within capillary transit time"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
+      "q": "How is the anatomical/physiological right-to-left shunt fraction (Qs / Qt) calculated using the clinical shunt equation?",
+      "options": [
+        "Qs/Qt = (CcO2 - CaO2) / (CcO2 - CvO2)",
+        "Qs / Qt = (PaCO2 - PECO2) / PaCO2",
+        "Qs / Qt = Tidal volume / Vital capacity",
+        "Qs / Qt = PaO2 / FiO2"
+      ],
+      "answer": 0,
+      "explain": "The shunt equation partitions total cardiac output (Qt) into shunted blood (Qs, having mixed venous content CvO2) and ventilated capillary blood (Qt - Qs, having ideal end-capillary content CcO2).",
+      "verified": false,
+      "open": {
+        "q": "Write the physiological shunt equation relating shunt fraction (Qs/Qt) to end-capillary (CcO2), arterial (CaO2), and mixed-venous (CvO2) oxygen contents.",
+        "accept": [
+          "Qs / Qt = (CcO2 - CaO2) / (CcO2 - CvO2)",
+          "(CcO2 - CaO2) divided by (CcO2 - CvO2)"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-026",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical Correlations",
+      "q": "A 29-year-old fire victim rescued from a closed burning garage presents with headache, confusion, cherry-red mucous membranes, normal arterial PaO2 (98 mmHg) on standard blood gas, and elevated carboxyhemoglobin (34%) on co-oximetry. Why is 100% normobaric or hyperbaric oxygen administered immediately?",
+      "options": [
+        "High PO2 displaces CO from heme by mass action, shortening COHb half-life to ~60-80 min",
+        "100% O2 oxidizes CO directly into bicarbonate inside plasma",
+        "Hyperbaric oxygen converts carboxyhemoglobin into fetal hemoglobin",
+        "High O2 inhibits carbonic anhydrase in the brain"
+      ],
+      "answer": 0,
+      "explain": "Standard pulse oximeters cannot distinguish oxyhemoglobin from carboxyhemoglobin (falsely reading ~98-100%); co-oximetry diagnoses CO poisoning, and high PO2 accelerates CO dissociation from hemoglobin and cytochrome c oxidase.",
+      "verified": false,
+      "open": {
+        "q": "Why does standard two-wavelength pulse oximetry give a falsely normal SpO2 reading in carbon monoxide poisoning, and how does 100% oxygen accelerate recovery?",
+        "accept": [
+          "Carboxyhemoglobin absorbs red light similarly to oxyhemoglobin so pulse oximetry overestimates true SaO2; 100% O2 increases dissolved PaO2 to competitively displace CO from hemoglobin and shorten carboxyhemoglobin half-life",
+          "Pulse oximetry confuses carboxyhemoglobin with oxyhemoglobin; high PO2 competitively displaces CO and boosts dissolved O2"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-027",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical Correlations",
+      "q": "A 54-year-old woman develops sudden-onset pleuritic chest pain, tachypnea, tachycardia, and hypoxemia (PaO2 56 mmHg, PaCO2 31 mmHg, A-a gradient 55 mmHg) 5 days after pelvic surgery. CT pulmonary angiography confirms a large saddle pulmonary embolus occluding the right pulmonary artery. How does acute pulmonary embolism produce BOTH increased physiological dead space and hypoxemia?",
+      "options": [
+        "Embolus creates dead space in occluded areas and overperfuses the rest (low VA/Q)",
+        "Pulmonary embolism increases hemoglobin affinity for oxygen",
+        "Pulmonary embolism completely stops diaphragmatic contraction",
+        "Pulmonary embolism lowers the A-a gradient to 0 mmHg"
+      ],
+      "answer": 0,
+      "explain": "Embolic occlusion creates dead space in affected regions and overperfuses unobstructed regions (low VA/Q), widening the A-a gradient while hypoxic tachypnea initially lowers PaCO2.",
+      "verified": false,
+      "open": {
+        "q": "Explain the two ventilation-perfusion (VA/Q) abnormalities produced simultaneously in different lung regions by an acute pulmonary embolism.",
+        "accept": [
+          "Occluded vessels create high VA/Q (alveolar dead space), while shunting of blood flow to unobstructed areas creates low VA/Q regions causing hypoxemia and an elevated A-a gradient",
+          "High VA/Q dead space in embolized regions and low VA/Q overperfusion in non-embolized regions"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-028",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical Correlations",
+      "q": "A 66-year-old man with severe COPD and chronic hypercapnia (baseline PaCO2 58 mmHg, PaO2 54 mmHg) is placed on high-flow 100% oxygen via non-rebreather mask in the ambulance and becomes somnolent with PaCO2 rising to 84 mmHg and respiratory acidosis (pH 7.21). Which two physiological mechanisms explain oxygen-induced hypercapnia in severe COPD?",
+      "options": [
+        "Reversal of hypoxic vasoconstriction worsens V/Q matching, while the Haldane effect releases CO2 from haemoglobin",
+        "High oxygen directly paralyses the phrenic nerve",
+        "Oxygen converts bicarbonate into solid calcium carbonate",
+        "Oxygen blocks carbonic anhydrase in erythrocytes"
+      ],
+      "answer": 0,
+      "explain": "Worsened V/Q mismatch (from reversing regional hypoxic vasoconstriction in damaged alveoli) and the Haldane effect account for the majority of O2-induced PaCO2 rise, which is why target SpO2 in COPD is titrated to 88-92%.",
+      "verified": false,
+      "open": {
+        "q": "State the two primary pulmonary gas-exchange mechanisms by which excessive supplemental oxygen worsens hypercapnia in severe COPD.",
+        "accept": [
+          "Reversal of hypoxic pulmonary vasoconstriction (worsening V/Q mismatch/dead space) and the Haldane effect (oxygenation displaces CO2 from hemoglobin), along with reduced hypoxic ventilatory drive",
+          "Loss of hypoxic vasoconstriction increasing V/Q mismatch and Haldane effect"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-029",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical Correlations",
+      "q": "A 45-year-old man with severe alcoholic cirrhosis develops progressive dyspnea that paradoxically worsens when sitting upright (platypnea) and improves when lying flat (orthodeoxia), with arterial PaO2 dropping from 76 mmHg supine to 54 mmHg standing. Contrast echocardiography shows microbubbles appearing in the left atrium 5 cardiac cycles after right atrial injection. What is the mechanism of hepatopulmonary syndrome?",
+      "options": [
+        "Pulmonary vascular dilatation creates intrapulmonary shunting; upright posture increases basilar perfusion and worsens hypoxaemia",
+        "Cirrhosis causes severe apical pulmonary fibrosis",
+        "Bilirubin binds irreversibly to haemoglobin",
+        "Ascites pushes the diaphragm upward only when standing"
+      ],
+      "answer": 0,
+      "explain": "Dilated basilar pulmonary capillaries have diameters too wide for O2 molecules from adjacent alveoli to diffuse to the center of the erythrocyte stream before transit ends; upright posture increases basilar hydrostatic perfusion and worsens shunting.",
+      "verified": false,
+      "open": {
+        "q": "Define platypnea and orthodeoxia and explain their vascular mechanism in hepatopulmonary syndrome.",
+        "accept": [
+          "Platypnea is dyspnea induced by upright posture and relieved by recumbency; orthodeoxia is arterial oxygen desaturation upon standing; caused by gravity-dependent increased blood flow through dilated basilar intrapulmonary capillaries (functional right-to-left shunt)",
+          "Upright dyspnea and hypoxemia caused by gravity increasing perfusion through dilated basilar pulmonary vessels"
+        ]
+      }
+    },
+    {
+      "id": "pr-transport-of-respiratory-gases-030",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical Correlations",
+      "q": "A 70-year-old man with idiopathic pulmonary fibrosis has a normal resting PaO2 (88 mmHg) at rest, but during a 6-minute walk test his pulse oximetry drops precipitously from 96% to 82%. Why does interstitial lung fibrosis cause severe exertional hypoxemia even when resting oxygenation is preserved?",
+      "options": [
+        "Exercise shortens capillary transit time, unmasking diffusion limitation",
+        "Exercise destroys red blood cell hemoglobin",
+        "Pulmonary fibrosis increases lung compliance during walking",
+        "Exercise lowers alveolar PO2 to 30 mmHg"
+      ],
+      "answer": 0,
+      "explain": "In fibrotic thickened membranes, O2 equilibration takes longer along the capillary; shortening capillary transit time during exercise cuts off equilibration prematurely, unmasking diffusion limitation.",
+      "verified": false,
+      "open": {
+        "q": "Explain why patients with interstitial pulmonary fibrosis often maintain normal PaO2 at rest yet develop marked hypoxemia during exercise.",
+        "accept": [
+          "Thickened alveolar-capillary membranes slow O2 diffusion; at rest the ~0.75 s capillary transit time suffices for equilibration, but exercise shortens transit time (~0.25 s) so blood leaves the capillary before O2 equilibrates (diffusion limitation)",
+          "Shortened pulmonary capillary transit time during exercise unmasks impaired membrane diffusing capacity"
+        ]
+      }
+    }
+  ]
 }
