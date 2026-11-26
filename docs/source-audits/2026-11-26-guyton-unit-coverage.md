@@ -46,6 +46,15 @@ A limited check of the supplied cardiac physiology answer explanations identifie
 
 This is a targeted audit of two identifiable answer explanations, not a complete validation of the review book's more than 1,000 questions. The source is used for topic coverage, not question reproduction.
 
+### Additional membrane-physiology answer-key findings
+
+| Location | Issue found | Correct treatment |
+|---|---|---|
+| Unit II, Q1 explanation | The solution containing 140 mM NaCl plus 20 mM urea is described as “hypertonic” because its total osmolarity is higher. | It is initially hyperosmotic, but urea is permeant and therefore does not contribute a sustained effective tonicity across the red-cell membrane. The explanation's predicted transient shrinkage followed by return toward original volume is reasonable; the terminology should be corrected to distinguish osmolarity from tonicity. |
+| Unit II, Q5 explanation | The calcium equilibrium potential is stated as +525 mV for intracellular calcium 10⁻⁴ mM and extracellular calcium 2 mM. | Using the divalent-ion Nernst equation at 37 °C, (E_{Ca} \approx 30.5\log_{10}(2/10^{-4})\), giving approximately +131 mV, not +525 mV. Calcium remains the ion with the greatest driving force at Vm = −80 mV, so the keyed option is unchanged, but the numerical explanation is wrong. |
+
+These are additional answer-explanation corrections from the source's membrane physiology unit. No question text is reproduced.
+
 ## Limits
 
 This is a coverage map, not a claim that all 15 source units have been exhaustively transcribed or that every source answer has been independently peer-reviewed. The copyrighted review book is used for unit/topic coverage only. All added questions are independently authored. Content-level review and lecturer validation remain separate quality gates.
