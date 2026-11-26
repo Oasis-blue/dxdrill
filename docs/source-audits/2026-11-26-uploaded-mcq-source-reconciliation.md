@@ -2,7 +2,7 @@
 
 ## Scope and handling
 
-The recent Library upload batch contains 20 PDF files representing 16 distinct byte-level sources. Three pairs are exact duplicates (SHA-256 checked); they are treated as one source each. PDFs were materialised and text-extracted with page counts recorded. The 11-page Elhariry physiology scan was OCR-processed; its visible GIT section substantially overlaps the separately uploaded GIT MCQ file.
+The recent Library upload batch contains 20 PDF files representing 16 distinct byte-level sources. Four pairs are exact duplicates (SHA-256 checked); they are treated as one source each. PDFs were materialised and text-extracted with page counts recorded. The 11-page Elhariry physiology scan was OCR-processed; its visible GIT section substantially overlaps the separately uploaded GIT MCQ file.
 
 This reconciliation adds original, syllabus-aligned questions informed by concepts in the supplied sources. It does not reproduce textbook question wording or answer explanations. Several uploads are complete commercial question books (including a 5,000-MCQ biochemistry collection and a 6th-edition physiology MCQ/EMQ textbook); these were not bulk-copied into DxDrill. The app's question schema has no source-attribution field, so this document records provenance for this batch.
 
@@ -56,7 +56,7 @@ The additions use existing topic files, so no manifest changes were required.
 
 ## Important limitations / remaining work
 
-- This is not a claim that every question on every page of all 17 distinct sources has been imported. Full line-by-line reconciliation of the large commercial textbooks and broad Anatomy MCQ books remains outstanding.
+- This is not a claim that every question on every page of all 16 distinct byte-level sources has been imported. Full line-by-line reconciliation of the large commercial textbooks and broad Anatomy MCQ books remains outstanding.
 - Some scanned pages have OCR uncertainty. The Elhariry GIT scan was used to identify overlap, not to transcribe uncertain wording into the app.
 - The commercial books' question text and explanations were not copied wholesale. New questions are independently worded and clinically/contextually adapted.
 - New items remain unverified pending lecturer/senior-student review. Do not set `verified: true` automatically.
@@ -108,3 +108,15 @@ A question-stem comparison across the 20 affected topic-bank files, followed by 
 After these replacements, the 20 affected topic files were re-fetched from the current `main` branch and structurally checked again. All 20 parsed as JSON; question IDs were unique within each file; all records had a non-empty stem, four options, an in-range integer answer index and an explanation. A follow-up stem-similarity scan found no remaining close pairs in the four corrected banks. Other older similar-looking items elsewhere in the bank were not changed in this pass.
 
 All replacement items remain `verified: false`. This is a structural and redundancy check, not expert academic verification. Full page-by-page source reconciliation and OCR of the 336-page scanned Anatomy MCQ book remain outstanding.
+
+## Large-source chapter map — scope review, not full reconciliation
+
+The extracted tables of contents were checked to make the outstanding work more specific. This is a chapter-to-bank scope map only; it does not mean every question in those chapters has been matched, imported or academically checked.
+
+- **Appleton & Lange Review of Anatomy, 6th ed. (KLM; 157 pages):** its seven question sections are Back, Upper Limb, Thorax, Abdomen, Pelvis and Perineum, Lower Limb, and Head and Neck. The latter six have corresponding regional banks in DxDrill. Back questions need a separate coverage pass against the existing general anatomy and neuroanatomy material; no claim of a dedicated back-bank reconciliation is made.
+- **Anatomy MCQ (PDFDrive; 145 pages):** its contents list 25 regional chapters spanning thoracic wall, abdominopelvic wall/diaphragm, breast, mediastinum, lungs/pleura, trachea/bronchi, heart/pericardium, oesophagus/vagus, stomach, small and large bowel, rectum/anus, liver, gallbladder, pancreas, spleen, kidney/ureters, suprarenal glands, male and female pelvic organs, vessels/nerves, peritoneum, and pelvis/perineum. These map broadly to the existing gross-anatomy regional banks, but the source still needs question-by-question reconciliation.
+- **Guyton & Hall Physiology Review, 2nd ed. (433 pages):** its 15 units cover cell/general physiology; membrane, nerve and muscle; heart; circulation; body fluids/kidneys; blood/immunity/coagulation; respiration; aviation/space/deep-sea physiology; general/sensory nervous-system principles; special senses; motor/integrative neurophysiology; gastrointestinal physiology; metabolism/temperature; endocrinology/reproduction; and sports physiology. Most core MB topics map to existing banks. Aviation/sports material should be prioritised only where it aligns with the FUHSO/MDCN teaching scope.
+- **Human Physiology MCQs & EMQs, 6th ed. (361 pages):** its 12 sections are body fluids, cardiovascular, respiratory, alimentary, neuromuscular, special senses, urinary, endocrine, reproductive, general, sport/exercise, and interpretative questions. It includes both MCQs and EMQs; the extracted contents list 714 numbered items across the MCQ and EMQ sections. These sections broadly map to existing physiology banks, but the EMQ sets have not yet been individually reconciled.
+- **5000 MCQs in Biochemistry (301 pages):** its 10 chapters cover introduction, carbohydrates, proteins, fats, vitamins, enzymes, minerals, hormones, nucleic acids, and water/electrolyte balance. The extracted text contains approximately 3,549 numbered entries; this is a text-pattern count, not a verified count of unique, complete questions. Existing biochemistry banks cover the principal chapter areas, but the book remains unprocessed question by question. The G. Vidya Sagar and epdf.tips files are duplicate text content and are not counted as additional coverage.
+
+The inventory correction above is important: the batch is **20 uploaded PDFs, 16 distinct byte-level sources, four exact duplicate pairs, and 15 distinct extracted text contents** (because the separate 5,000-MCQ PDF has different bytes but text identical to the G. Vidya Sagar source). The scanned 336-page Anatomy MCQ book remains outside this text-based chapter map until full OCR is completed.
