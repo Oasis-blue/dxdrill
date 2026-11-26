@@ -7,12 +7,20 @@ on:
       - "tools/import-visual-intake.js"
       - "tests/visual-intake-importer.test.js"
       - ".github/workflows/visual-intake-validator.yml"
+      - "data/manifest.json"
+      - "data/visual-*.json"
+      - "data/questions/visual-*.json"
+      - "data/img/**"
   push:
     branches: [main]
     paths:
       - "tools/validate-visual-intake.js"
       - "tests/visual-intake-validator.test.js"
       - ".github/workflows/visual-intake-validator.yml"
+      - "data/manifest.json"
+      - "data/visual-*.json"
+      - "data/questions/visual-*.json"
+      - "data/img/**"
 jobs:
   test:
     runs-on: ubuntu-latest
