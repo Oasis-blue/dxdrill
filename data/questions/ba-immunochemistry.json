@@ -8,7 +8,7 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "What is the basic four-chain polypeptide monomer structure of an immunoglobulin molecule?",
    "options": [
-    "Two identical heavy chains and two identical light chains linked by disulfide bonds",
+    "Two identical heavy chains and two identical light chains",
     "Four identical heavy chains",
     "One heavy chain and three light chains",
     "Two alpha chains and two beta chains"
@@ -101,7 +101,7 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "Why is pentameric IgM (joined by a J-chain) particularly efficient at activating the classical complement pathway despite having lower affinity per individual binding site than affinity-matured IgG?",
    "options": [
-    "Its multivalent binding allows one antigen-bound IgM pentamer to engage multiple C1q heads",
+    "Multivalent IgM engages multiple C1q heads when bound to antigen",
     "It crosses the placenta in high concentrations",
     "It binds directly to mast-cell Fc-epsilon-RI receptors",
     "It lacks constant heavy-chain domains"
@@ -309,7 +309,7 @@
    "q": "How does antibody affinity differ from antibody avidity?",
    "options": [
     "They are identical terms",
-    "Affinity is binding strength at one site; avidity is the combined strength of multivalent binding",
+    "Affinity: single-site strength; avidity: total multivalent binding strength",
     "Avidity measures only T-cell receptor binding",
     "Affinity applies only to pentameric IgM"
    ],
@@ -401,7 +401,7 @@
    "q": "How does the invariant chain (Ii / CD74) prevent premature binding of endogenous ER peptides to newly synthesized MHC Class II molecules?",
    "options": [
     "Phosphorylates the MHC class II peptide-binding groove",
-    "Its CLIP segment occupies the MHC class II groove until HLA-DM facilitates peptide exchange",
+    "CLIP blocks the MHC II groove until HLA-DM exchanges it for antigen peptide",
     "Exports MHC class II to the proteasome",
     "Cleaves beta-2-microglobulin"
    ],
@@ -653,7 +653,7 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "How does a 'sandwich' ELISA differ from an 'indirect' ELISA?",
    "options": [
-    "Sandwich ELISA captures antigen between two antibodies; indirect ELISA detects patient antibodies bound to antigen",
+    "Sandwich ELISA detects antigen; indirect ELISA detects patient antibodies",
     "Sandwich ELISA detects only patient antibodies; indirect ELISA measures antigen with two capture antibodies",
     "Both detect nucleic acids using fluorescent probes",
     "Indirect ELISA requires no antigen-antibody binding"
@@ -676,7 +676,7 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "In a Western blot (immunoblot) used as a confirmatory test for HIV or Lyme disease, what does it detect after gel electrophoresis and membrane transfer?",
    "options": [
-    "Specific proteins are detected as bands after electrophoresis and membrane transfer",
+    "Specific proteins appear as bands after electrophoresis and membrane transfer",
     "Intact bacteria are visualised by light microscopy",
     "Messenger RNA splice variants are identified",
     "Intracellular calcium flux is measured"
@@ -700,7 +700,7 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "What is the principle of a lateral flow immunochromatographic rapid diagnostic test (such as a rapid malaria antigen test, pregnancy hCG test, or HIV rapid test)?",
    "options": [
-    "Capillary flow carries the sample past labelled antibodies and test/control capture lines",
+    "Capillary flow carries sample and labelled antibodies across test/control lines",
     "High-voltage electrophoresis and laser sequencing",
     "Live-cell culture over seven days",
     "Radioactive gamma-emission measurement"
@@ -724,7 +724,7 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "How does flow cytometry analyze individual cells in suspension stained with fluorochrome-conjugated monoclonal antibodies?",
    "options": [
-    "Cells pass individually through a laser; scatter and fluorescence reveal cell features and labelled markers",
+    "Laser-based single-cell analysis of light scatter and fluorescence",
     "Cells are separated by molecular weight in a gel",
     "Antibody charge is measured in a capillary",
     "Cells are counted only by light microscopy"
@@ -770,7 +770,7 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "In Kohler and Milstein's hybridoma technology for generating monoclonal antibodies, why are fused hybridoma cells grown in HAT (hypoxanthine-aminopterin-thymidine) selection medium?",
    "options": [
-    "Aminopterin blocks de novo synthesis, so only fused cells with B-cell salvage enzymes and myeloma immortality survive",
+    "Hybridomas survive via B-cell HGPRT salvage activity and myeloma immortality",
     "It selects the highest-affinity IgG without cell fusion",
     "It allows HGPRT-deficient myeloma cells to survive",
     "It induces class switching in unfused myeloma cells"
@@ -839,7 +839,7 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "What is Antibody-Dependent Cellular Cytotoxicity (ADCC) mediated by therapeutic IgG1 monoclonal antibodies such as trastuzumab (anti-HER2) or rituximab (anti-CD20)?",
    "options": [
-    "IgG1 binds tumour antigen and its Fc engages CD16 on NK cells, triggering perforin- and granzyme-mediated killing",
+    "IgG1 Fc binds NK-cell CD16, triggering perforin/granzyme release",
     "IgG1 blocks all glucose uptake in the target cell",
     "NK cells recognise the antigen directly without antibody",
     "ADCC occurs only without Fc receptors"
@@ -863,7 +863,7 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "In a quantitative precipitin curve (Heidelberger curve) mixing a fixed amount of antibody with increasing concentrations of soluble multivalent antigen, what occurs in the 'prozone' (antibody excess) and 'postzone' (antigen excess) compared with the 'zone of equivalence'?",
    "options": [
-    "Precipitation is greatest at equivalence; antigen or antibody excess limits lattice formation",
+    "Precipitation peaks at equivalence; antigen or antibody excess prevents lattice formation",
     "Precipitation is greatest in extreme antigen excess",
     "Lattice formation occurs only in postzone",
     "Antibodies precipitate without antigen in prozone"
@@ -887,7 +887,7 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "How do agglutination assays differ from precipitation assays in immunochemistry?",
    "options": [
-    "Agglutination clumps particulate antigens; precipitation forms insoluble complexes from soluble antigens",
+    "Agglutination clumps particles; precipitation forms complexes from soluble antigens",
     "Precipitation uses red cells, whereas agglutination uses soluble proteins",
     "Agglutination requires no antibody",
     "Precipitation measures cell size"
@@ -909,7 +909,7 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "How do nephelometry and turbidimetry quantify specific serum proteins (such as C-reactive protein, immunoglobulins, or complement C3/C4) formed into immune complexes?",
    "options": [
-    "Nephelometry measures scattered light; turbidimetry measures loss of transmitted light",
+    "Nephelometry detects scattered light; turbidimetry detects reduced transmitted light",
     "Both measure electrical conductivity of urine",
     "Nephelometry requires iodine-125 labelling",
     "Turbidimetry counts fluorescent cells"
@@ -955,7 +955,7 @@
    "sub": "Immunoglobulins: Structure and Isotypes",
    "q": "How does the neonatal Fc receptor (FcRn) extend the serum half-life of IgG and albumin?",
    "options": [
-    "FcRn binds IgG and albumin in acidic endosomes and recycles them to the cell surface",
+    "FcRn binds IgG/albumin in acidic endosomes and recycles them",
     "FcRn synthesises IgG and albumin in endothelial cells",
     "FcRn cleaves IgG into Fab and Fc fragments",
     "FcRn prevents IgG from binding antigen"
@@ -1073,7 +1073,7 @@
    "sub": "Immunochemical Assays and Diagnostics",
    "q": "What is the 'hook effect' (prozone phenomenon in immunometric/sandwich assays) when an analyte such as hCG or prolactin is present at extremely high concentration?",
    "options": [
-    "Excess antigen separately saturates capture and detection antibodies, causing a falsely low signal",
+    "Excess antigen saturates both assay antibodies, causing a falsely low signal",
     "Antibodies bind to glass instead of plastic",
     "Substrate concentration permanently exceeds enzyme Vmax",
     "The sample temperature falls below 0 C"
@@ -1097,7 +1097,7 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "What is a bispecific T-cell engager (BiTE) or bispecific monoclonal antibody?",
    "options": [
-    "An engineered antibody with two different binding specificities, often linking CD3-positive T cells to a tumour antigen",
+    "Engineered antibody with two binding specificities, e.g. CD3 and tumour antigen",
     "An antibody binding two identical epitopes on one monomer",
     "A complement inhibitor blocking C1 and C9",
     "An immunoglobulin without variable regions"
@@ -1119,7 +1119,7 @@
    "sub": "Precipitation, Agglutination, and Nephelometry",
    "q": "In radial immunodiffusion (Mancini assay), how is the concentration of an antigen (such as a specific serum immunoglobulin) determined?",
    "options": [
-    "Antigen diffuses into antibody-containing gel, forming a ring whose squared diameter reflects antigen concentration",
+    "Antigen diffuses into antibody gel; ring diameter squared reflects concentration",
     "Radioactivity from iodine-125 is measured",
     "PCR is performed on serum",
     "White cells are counted by impedance"
