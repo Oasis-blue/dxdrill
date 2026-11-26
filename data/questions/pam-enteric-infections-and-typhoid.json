@@ -8,10 +8,10 @@
    "sub": "Pathogenic Mechanisms of Diarrhoeal Disease",
    "q": "How do non-inflammatory secretory diarrhoeas (such as cholera and enterotoxigenic Escherichia coli) differ clinically and microscopically from invasive inflammatory dysentery (such as shigellosis and amoebiasis)?",
    "options": [
-    "Secretory diarrhoeas produce profuse watery stools without faecal leukocytes or erythrocytes, whereas dysentery produces small-volume mucoid bloody stools rich in neutrophils",
-    "Secretory diarrhoeas cause high fever and colonic ulceration, whereas dysentery produces painless rice-water stools without mucosal injury",
-    "Secretory diarrhoeas occur exclusively in the distal rectum, whereas dysentery affects only the stomach",
-    "Secretory diarrhoeas are always caused by obligate intracellular viruses, whereas dysentery is caused solely by preformed food toxins"
+    "Secretory diarrhoea causes profuse watery stools without blood or faecal leukocytes; dysentery causes bloody, mucoid stools with neutrophils",
+    "Secretory diarrhoea causes fever and colonic ulcers; dysentery causes painless rice-water stools",
+    "Secretory diarrhoea affects only the rectum; dysentery affects only the stomach",
+    "Secretory diarrhoea is always viral; dysentery is caused only by preformed toxins"
    ],
    "answer": 0,
    "explain": "Enterotoxin-mediated secretory pathogens act predominantly in the small intestine by stimulating active ion and water secretion without destroying enterocytes (no pus or blood in stool), whereas invasive cytotoxin-producing pathogens destroy colonic mucosa, eliciting acute neutrophilic inflammation, blood, and mucus.",
@@ -77,10 +77,10 @@
    "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
    "q": "Following ingestion of Salmonella enterica serovar Typhi, how does the organism cross the distal ileal mucosa and disseminate systemically during the incubation period?",
    "options": [
-    "It enters through ileal M cells and Peyer patches, survives in macrophages and disseminates via lymph and blood",
-    "It destroys the gastric mucosa with a preformed cytotoxin",
-    "It ascends the common bile duct directly without entering lymphatics",
-    "It infects mature erythrocytes and replicates inside them"
+    "It enters through ileal M cells and Peyer patches, then survives in macrophages and disseminates",
+    "It destroys gastric mucosa with a preformed cytotoxin",
+    "It ascends the bile duct without entering lymphatics",
+    "It replicates inside mature erythrocytes"
    ],
    "answer": 0,
    "explain": "Salmonella Typhi uses a type III secretion system to enter ileal M cells over Peyer patches, resists phagolysosomal killing inside macrophages (aided by its Vi capsular polysaccharide), multiplies in mesenteric lymph nodes, and disseminates via the thoracic duct to the liver, spleen, bone marrow, and gallbladder.",
@@ -100,10 +100,10 @@
    "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
    "q": "What is the role of the Vi (virulence) capsular polysaccharide antigen of Salmonella enterica serovar Typhi in both pathogenesis and preventive medicine?",
    "options": [
-    "It inhibits complement C3b deposition and macrophage phagocytosis in vivo, and purified Vi polysaccharide serves as the injectable parenteral typhoid vaccine",
-    "It acts as a neurotoxin causing flaccid paralysis and is inactivated to form tetanus toxoid",
-    "It hydrolyzes gastric urea into ammonia and forms the basis of the urea breath test",
-    "It binds penicillin-binding proteins to confer beta-lactam resistance"
+    "It helps the organism evade complement and phagocytosis; purified Vi polysaccharide is used in typhoid vaccine",
+    "It is a neurotoxin that causes flaccid paralysis",
+    "It hydrolyses gastric urea and is used in breath testing",
+    "It binds penicillin-binding proteins to cause beta-lactam resistance"
    ],
    "answer": 0,
    "explain": "The Vi surface polysaccharide masks underlying O somatic antigens from anti-O antibodies and complement activation, enhancing survival during bacteraemia; purified Vi antigen is used in the single-dose intramuscular typhoid vaccine (alongside the live-attenuated oral Ty21a vaccine).",
@@ -123,10 +123,10 @@
    "sub": "Enteric Fever (Typhoid and Paratyphoid Fever)",
    "q": "In untreated enteric fever, why do life-threatening intestinal haemorrhage and ileal perforation classically occur during the third week of illness?",
    "options": [
-    "Necrosis and sloughing of hyperplastic terminal ileal Peyer patches expose vessels and weaken the bowel wall",
+    "Necrosis and sloughing of terminal ileal Peyer patches expose vessels and weaken the bowel wall",
     "Gastric acid erodes the first part of the duodenum",
     "Ascaris worms burrow through the jejunal serosa",
-    "Immune-complex vasculitis infarcts the entire descending colon"
+    "Immune-complex vasculitis infarcts the descending colon"
    ],
    "answer": 0,
    "explain": "During week 1–2, monocyte-macrophage proliferation causes longitudinal hyperplasia of terminal ileal Peyer patches; by week 3, thrombosis of small submucosal vessels leads to necrosis and sloughing of the overlying mucosa, producing oval longitudinal typhoid ulcers prone to bleeding or perforation.",
@@ -261,10 +261,10 @@
    "sub": "Shigellosis (Bacillary Dysentery)",
    "q": "How does Shigella spread laterally from one colonic epithelial cell to adjacent enterocytes without entering the extracellular space?",
    "options": [
-    "It polymerizes host cell actin filaments at one bacterial pole (via IcsA) to propel itself directly into neighbouring cells",
-    "It uses long peritrichous flagella to swim through submucosal blood vessels",
-    "It induces syncytial fusion of all colonic goblet cells",
-    "It travels inside migrating eosinophils across the muscularis mucosae"
+    "Shigella uses IcsA-mediated actin polymerisation to move directly into adjacent enterocytes",
+    "It swims through submucosal vessels using flagella",
+    "It induces fusion of colonic goblet cells",
+    "It travels inside eosinophils across the muscularis mucosae"
    ],
    "answer": 0,
    "explain": "After invading colonic M cells and escaping the phagocytic vacuole into enterocyte cytoplasm, non-flagellated Shigella expresses surface IcsA protein to nucleate host actin tails, propelling bacteria into adjacent colonocytes and causing microabscesses and mucosal sloughing.",
@@ -331,10 +331,10 @@
    "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
    "q": "Enteropathogenic Escherichia coli (EPEC) causes persistent watery diarrhoea in infants under 2 years of age in low-income settings primarily through which ultrastructural intestinal lesion?",
    "options": [
-    "Attaching and effacing (A/E) lesions with loss of enterocyte microvilli and formation of actin-rich pedestals beneath adherent bacteria",
-    "Deep flask-shaped colonic ulcers extending into the muscularis propria",
-    "Complete replacement of duodenal villi by caseating granulomas",
-    "Massive mucosal pseudomembranes composed of fibrin and neutrophils"
+    "Attaching-and-effacing lesions destroy microvilli and form actin-rich pedestals",
+    "Deep flask-shaped ulcers extend into the muscularis propria",
+    "Duodenal villi are replaced by caseating granulomas",
+    "Pseudomembranes form from fibrin and neutrophils"
    ],
    "answer": 0,
    "explain": "EPEC uses bundle-forming pili and a type III secretion system (injecting Tir and intimin binding) to efface brush-border microvilli and rearrange host actin into pedestals, impairing absorptive surface area without producing Shiga or cholera-like toxins.",
@@ -354,10 +354,10 @@
    "sub": "Diarrhoeagenic Escherichia coli Pathotypes",
    "q": "Why are antibiotics and antimotility agents (such as loperamide) generally contraindicated in children presenting with bloody diarrhoea caused by enterohaemorrhagic E. coli (EHEC O157:H7)?",
    "options": [
-    "Antibiotics may increase Shiga-toxin release; antimotility drugs can prolong toxin exposure and increase HUS risk",
+    "Antibiotics may increase Shiga-toxin release; antimotility drugs can increase toxin exposure and HUS risk",
     "Antibiotics convert EHEC into Vibrio cholerae",
     "Loperamide causes immediate gastric perforation",
-    "EHEC uses all beta-lactams as its main energy source"
+    "EHEC uses beta-lactams as its main energy source"
    ],
    "answer": 0,
    "explain": "Bactericidal antibiotics trigger the bacterial SOS response, inducing prophage-encoded Stx1/Stx2 toxin expression and releasing toxin upon cell lysis, while antimotility drugs prolong mucosal toxin contact—both significantly elevating HUS incidence.",
@@ -492,10 +492,10 @@
    "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
    "q": "In intestinal amoebiasis caused by Entamoeba histolytica, which stage is the infective form transmitted via faecally contaminated water/food, and which stage is the invasive tissue-destroying form found in fresh bloody dysenteric stools?",
    "options": [
-    "Quadrinucleate mature cyst is the infective stage; motile trophozoite containing ingested erythrocytes (haematophagous trophozoite) is the invasive stage",
-    "Uninucleate trophozoite is the infective stage; flagellated promastigote is the invasive stage",
-    "Oocyst containing four sporozoites is the infective stage; bradyzoite tissue cyst is the invasive stage",
-    "Rhabditiform larva is the infective stage; filariform larva is the invasive stage"
+    "Mature quadrinucleate cysts are infective; erythrophagocytic trophozoites invade tissue",
+    "Uninucleate trophozoites are infective; promastigotes invade tissue",
+    "Oocysts are infective; bradyzoites invade tissue",
+    "Rhabditiform larvae are infective; filariform larvae invade tissue"
    ],
    "answer": 0,
    "explain": "Mature four-nucleated cysts of Entamoeba histolytica survive gastric acid and excyst in the small intestine into motile trophozoites; trophozoites adhere to colonic epithelium via Gal/GalNAc lectin, lyse host cells with amoebapores, and create classic flask-shaped mucosal ulcers.",
@@ -515,10 +515,10 @@
    "sub": "Intestinal Protozoa: Amoebiasis, Giardiasis, and Cryptosporidiosis",
    "q": "A 38-year-old man in Benue State presents with right upper quadrant abdominal pain, swinging fever, tender hepatomegaly, and intercostal tenderness 2 months after an untreated episode of bloody diarrhoea. Abdominal ultrasound reveals a solitary 8 cm hypoechoic lesion in the right hepatic lobe, and aspiration yields thick reddish-brown 'anchovy-paste' odourless fluid without neutrophils. What is the diagnosis and treatment?",
    "options": [
-    "Amoebic liver abscess; treated with metronidazole (or tinidazole) followed by a luminal amoebicide such as paromomycin or diloxanide furoate",
-    "Pyogenic Klebsiella liver abscess; treated with oral albendazole monotherapy",
-    "Hydatid echinococcal cyst; treated with high-dose intravenous penicillin G",
-    "Hepatocellular carcinoma; treated with oral vancomycin"
+    "Amoebic liver abscess; give metronidazole or tinidazole, followed by a luminal amoebicide",
+    "Pyogenic Klebsiella abscess; give albendazole alone",
+    "Hydatid cyst; give intravenous penicillin G",
+    "Hepatocellular carcinoma; give oral vancomycin"
    ],
    "answer": 0,
    "explain": "Entamoeba histolytica trophozoites invade colonic venules and travel via the portal vein to the right liver lobe, causing liquefactive hepatocyte necrosis ('anchovy-sauce' necrotic debris); metronidazole eliminates tissue trophozoites, and a luminal agent eradicates residual colonic cysts.",
@@ -678,9 +678,9 @@
    "sub": "Intestinal Helminths: Nematodes, Cestodes, and Trematodes",
    "q": "Why does ingestion of Taenia solium eggs (via faecal-oral contamination) cause human neurocysticercosis, whereas ingestion of Taenia solium cysticerci in undercooked pork causes adult intestinal taeniasis?",
    "options": [
-    "Ingested eggs release invasive oncospheres that form tissue cysticerci; ingested pork cysticerci mature into intestinal tapeworms",
+    "Ingested eggs release oncospheres that form tissue cysticerci; pork cysticerci mature into adult intestinal tapeworms",
     "Eggs are destroyed by gastric acid unless eaten with raw beef",
-    "Adult tapeworms migrate from the colon into the brain through the carotid artery",
+    "Adult tapeworms migrate from the colon to the brain through the carotid artery",
     "Pork cysticerci are always dead and cause only allergic encephalitis"
    ],
    "answer": 0,
