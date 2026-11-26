@@ -1,77 +1,116 @@
-# Prompt for specimen, diagram and clinical-sign pictures
+# Prompt for visual practical and clinical-image question intake
 
-For gross anatomy specimens and models, diagrams (anatomy or physiology), X-rays and clinical signs. It is like the histology prompt, with a few extras for marked structures, credits and consent.
+Use this prompt for gross anatomy specimens and models, anatomical or physiology diagrams, radiographs, and clinical signs. It produces a **reviewable intake file**, not a file that the website can load directly.
 
-Before you start:
-- Only use pictures you took yourself, drew yourself, or that have a free licence (for example Wikimedia Commons, where the licence is stated). Do not copy from textbooks or search results.
-- No identifiable patients and no faces. Do not upload a patient photo without written consent. For dissection-hall pictures, check your department allows photos and keep anything identifying out of the frame.
-- Mark structures by drawing a letter or arrow on the picture (any phone photo editor or PowerPoint works). One picture can be marked A and B. Keep the markers large enough to read on a phone.
+## Before starting
 
-How to use it:
-1. Open the AI that has your pictures. Paste everything between the two lines as your message, then attach 5 to 10 pictures.
-2. Fill in TOPIC ID, HOW MANY and NOTES at the bottom (what each picture is, where you got it, and which letters are marked).
-3. Check every answer yourself before using it. Labelled structures and clinical signs are where AI is most often confidently wrong.
-4. Photo files go in the site folder `data/img/gross/` (specimens and models), `data/img/diagrams/` or `data/img/clinical/`. Name them as the prompt says. Compress each to about 1200 px wide.
+- Use only pictures you took yourself, drew yourself, or that have a licence permitting the intended reuse. Record the source, author and exact licence.
+- Do not copy textbook scans or arbitrary search-result images.
+- Do not include identifiable patients or identifying metadata. Obtain written consent for clinical photographs of people and follow institutional rules for dissection-hall photography.
+- Mark structures on the image itself for this first release (letters/arrows). Keep markers readable on a phone and do not obscure the structure.
+- Put the actual image files in the repository under `data/img/` before import. Use `gross/`, `diagrams/`, `clinical/` or `xray/`. Do not invent a filename for an image that has not been supplied.
+- Compress images sensibly for mobile while retaining enough detail for identification.
 
---------------------------------------------------------------------
+## How to use
 
-You are helping make picture-based practice questions for Nigerian MBBS students. I will give you pictures and my own notes. Output one JSON object that a website loads directly.
+1. Attach 5–10 actual image files and provide the topic ID, source/licence information, what each image shows, and the meaning of any markers.
+2. Generate one intake JSON object using the schema below.
+3. Check every image, label, answer, distractor and explanation.
+4. Do not import until a reviewer confirms that every referenced image exists in the repository, loads successfully, has acceptable attribution, and has been anatomically/clinically checked.
 
-HONESTY RULES
-- Describe only what is clearly visible or stated in my NOTES. If you cannot tell what a structure is, or which letter marks which structure, do not guess: set "unsure": true and say what I should check in "check".
-- Use only standard medical knowledge that agrees with my notes. Do not invent facts, measurements or eponyms.
-- Do not mention patient names or any identifying detail. Do not draw or add labels. Refer only to the letters that are already on the picture.
+---
 
-OUTPUT FORMAT
-Reply with one JSON code block and nothing before or after it:
+## Prompt to give the AI
 
+You are helping prepare image-based learning questions for medical students. I will provide actual image files and notes. Return **one JSON object only**, in a single JSON code block. This is an intake format for a human-reviewed importer; it is **not** the website's final question-file format.
+
+### Honesty and safety rules
+
+- Describe only what is clearly visible or stated in my notes. If you cannot confidently identify a structure, marker, view, sign or finding, set `unsure` to `true` and explain exactly what needs checking in `check`.
+- Never guess a marker-to-structure mapping. Never silently convert uncertainty into a verified answer.
+- Do not invent image sources, authors, licences, patient consent, measurements or eponyms.
+- Do not include patient names or identifying details.
+- Do not add, remove or move labels on the supplied image. Refer only to labels already visible.
+- Use medically sound explanations, but flag discrepancies with source notes rather than silently overriding them.
+- Every question must be answerable from the supplied image plus the stated subject knowledge. Do not make the image decorative when it is essential to the question.
+
+### Intake JSON schema
+
+Return this structure:
+
+```json
 {
-  "topic": "TOPIC ID FROM ME",
-  "slides": [
+  "schemaVersion": 1,
+  "topic": "VALID CURRICULUM TOPIC ID SUPPLIED BY ME",
+  "assets": [
     {
-      "file": "gross/<topic>-01.jpg",
-      "alt": "One plain sentence describing the picture for someone who cannot see it, naming the marked letters.",
-      "kind": "specimen | model | diagram | xray | clinical-sign",
-      "shows": "What the picture is, in a few words",
-      "marks": "Which letter marks which structure, e.g. A = left lobe of liver, B = gallbladder. Empty if nothing is marked.",
-      "credit": "Photo: own  (or the source and licence, e.g. Wikimedia Commons, CC BY-SA 4.0, author name)",
+      "id": "unique-lowercase-asset-id",
+      "file": "gross/example-specimen-01.jpg",
+      "kind": "specimen",
+      "alt": "One plain sentence describing the image and any visible markers.",
+      "credit": "Photo: own",
+      "sourceUrl": "",
+      "licence": "Own original photograph",
+      "shows": "Short description of what the image depicts",
+      "marks": { "A": "Structure identified by marker A" },
       "unsure": false,
-      "check": "Anything I should verify, or empty",
+      "check": "",
+      "station": {
+        "id": "unique-lowercase-station-id",
+        "title": "Short station title",
+        "instructions": "Candidate instruction, if needed",
+        "seconds": 60
+      },
       "questions": [
         {
-          "id": "<topic>-p01a",
+          "id": "unique-lowercase-question-id",
           "level": 1,
-          "sub": "Section heading",
-          "q": "What is the structure marked A?",
-          "options": ["Correct answer", "Wrong answer", "Wrong answer", "Wrong answer"],
+          "sub": "Relevant section heading",
+          "q": "Identify the structure marked A.",
+          "options": ["Correct answer", "Plausible distractor 1", "Plausible distractor 2", "Plausible distractor 3"],
           "answer": 0,
-          "explain": "Why it is right, naming the clue that identifies it, in one to three sentences.",
-          "image": "gross/<topic>-01.jpg",
-          "alt": "Same text as the slide alt",
-          "credit": "Same as the slide credit",
-          "verified": false
+          "explain": "A concise teaching explanation.",
+          "unsure": false,
+          "check": ""
         }
       ]
     }
   ]
 }
+```
 
-RULES FOR QUESTIONS
-- 2 to 3 questions per picture. Use a mix, depending on the kind:
-  * specimen or model: identify the marked structure (A, then B); name a relation or a nerve or vessel that runs with it; a function or a clinical point about it.
-  * diagram or graph: read a value or a feature, or what changes if one thing changes.
-  * x-ray: name the view or finding, or the structure marked.
-  * clinical sign: name the sign, the nerve or structure involved, and what condition it suggests.
-- Each question stands on its own and does not say "see above". If a picture has two marked structures, ask about A and B in separate questions.
-- The correct option is always first in "options" and "answer" is always 0. The website shuffles them.
-- Wrong options must be believable look-alikes. Never use "all of the above" or "both A and B".
-- Every question carries the same "image", "alt" and "credit" as its slide.
-- ids are unique, lowercase, letters, numbers and hyphens only.
-- Use Unicode for symbols (Na⁺, H₂O, →, ≥). No LaTeX or HTML tags.
+### Field rules
 
-TOPIC ID: 
-HOW MANY PICTURES IN THIS BATCH: 
-NOTES (what each picture is, source and licence if not mine, which letters are marked and on what): 
---------------------------------------------------------------------
+- `schemaVersion` must be the number `1`.
+- `topic` must be an exact topic ID supplied by me from the site's curriculum. Do not make one up.
+- `assets` contains one entry per actual attached image. Every `file` must be a relative path beneath `data/img/`, including its folder. Initial folders: `gross/`, `diagrams/`, `clinical/`, `xray/`.
+- `kind` must be one of `specimen`, `model`, `diagram`, `xray` or `clinical-sign`.
+- Asset, station and question IDs must be unique lowercase kebab-case identifiers.
+- `credit`, `sourceUrl` and `licence` must reflect the actual source. Never infer a licence. For an original image use a clear credit such as `Photo: own`.
+- `marks` maps each visible marker label to the proposed structure. Use an empty object if there are no markers. If any mapping is uncertain, set the asset's `unsure` to true and explain in `check`.
+- Each asset represents one visual station in this first version. The station's ordered `questionIds` will be derived from its `questions` array during import; do not output a second copy of the question list.
+- Use 2–4 focused questions per image where the image supports them. Do not pad the set with weak questions.
+- Each question must have exactly four plausible options. `answer` is a zero-based index; put the correct answer first and set it to 0 for intake consistency. The website shuffles options later.
+- Distractors must be plausible but unambiguously wrong. Avoid "all of the above", "none of the above", "both A and B", and overlapping options.
+- Question IDs must be unique across the batch and must not collide with IDs already in the bank.
+- Do not put `image`, `alt`, `credit` or `visualStationId` on each intake question. The importer copies these from the asset and creates normal question records.
+- Use `unsure: true` and a non-empty `check` whenever an image, label, answer, source or explanation needs human verification. An uncertain asset or any question under it must be held out of import.
+- Use Unicode symbols (Na⁺, H₂O, →, ≥). Do not use LaTeX or HTML.
 
-What to do with the result: tell me the topic ids and send the JSON and pictures, as you did for histology. I will move slides marked "unsure" to a review list, like before.
+### Question-writing guidance
+
+- Specimen/model: identify marked structures; ask about relations, contents, attachments, supply, function or clinical relevance only where supported.
+- Diagram/graph: identify components, interpret a trace or trend, or reason about a change shown.
+- X-ray: state the view/findings, identify a marked structure, or interpret a clearly visible abnormality. Do not infer details not visible.
+- Clinical sign: identify the sign, likely nerve/muscle/structure involved, and clinical implication. Do not diagnose a real person from an image.
+- Keep each question self-contained. Avoid "as above" and references to another question.
+- A question that depends on an image must retain that image when converted into an ordinary DxDrill question.
+
+---
+
+## Batch details to supply
+
+TOPIC ID:
+NUMBER OF ACTUAL IMAGES ATTACHED:
+NOTES FOR EACH IMAGE (what it shows, source/author/licence, visible markers and proposed meanings):
+ANY SPECIFIC LEARNING OBJECTIVES:
