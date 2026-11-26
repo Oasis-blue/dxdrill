@@ -28,6 +28,15 @@ This note records answer-key and wording problems identified while reviewing the
 
 The book uses true/false-style statement sets and provides explanatory answers. The extractable text is extensive; this pass did not establish a complete error list for every statement. Items should be checked individually before any source-derived answer is treated as authoritative. No question text has been copied into DxDrill.
 
+### Additional Pelvis and Perineum findings
+
+| Item | Issue found | Correct treatment |
+|---|---|---|
+| Q127, statement D | The explanation says contraction of puborectalis helps defaecation. This reverses its principal continence role. | Puborectalis contraction maintains the anorectal angle and supports continence. Defaecation requires relaxation of the puborectalis sling, with straightening of the anorectal angle. |
+| Q131, statement E | The explanation presents portal hypertension as the mechanism producing internal haemorrhoids through the portosystemic anastomosis. | The superior and middle/inferior rectal venous channels do form a portosystemic connection, but internal haemorrhoids are principally enlargement/displacement of the normal anal vascular cushions; portal hypertension should not be presented as their general or defining cause. Distinguish rectal varices from haemorrhoids. |
+
+These are targeted findings from the answer/explanation section, not evidence that every item in the volume has been checked. The source's true/false format is retained only as context; no source question text is reproduced.
+
 ## DxDrill policy and follow-up
 
 - Source answer-key errors are not imported into DxDrill.
