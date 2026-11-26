@@ -1,50 +1,35 @@
-# True/False bank quality audit — follow-up pass
+# True/False bank quality audit — batch 3
 
 Date: 2026-11-26  
-Scope: the original nine-stem sample file, the 36-stem expansion and two exception-worded examples.
+Scope: the existing 47-stem bank plus 10 additional source-referenced stems.
 
-## Original sample bank: explanation repair
+## New coverage
 
-A follow-up inspection found that multiple explanations in the original nine stems had been copied across unrelated statements. This was a substantive quality defect, not merely a style issue. All explanations in the nine original stems have now been rewritten to match their individual statements, including radial and ulnar nerve anatomy, scaphoid blood supply, right lung features, juxtaglomerular apparatus, loop of Henle, GFR/clearance, thermoregulation and skeletal muscle histology.
+Added 10 stems across 10 curriculum topics:
+- Physiology: mechanics of breathing, transport of respiratory gases, platelet haemostasis, cardiac cycle, red-cell oxygen delivery.
+- Anatomy / embryology: neural tube development and early heart development.
+- Medical Biochemistry: glycolysis, gluconeogenesis and the pentose phosphate pathway.
 
-The answer keys were retained during this explanation repair. The content remains unverified against named external references; an editorial correction is not independent source verification.
+The new material uses the same statement-by-statement True/False interaction. Each stem has four independently judgeable statements, a mixed True/False key, a statement-specific explanation, and source links recorded on the stem.
 
-## Bank composition
+## Explanation quality controls
 
-The bank now contains 47 stems:
-- 9 original sample stems.
-- 36 expansion stems from the first two batches.
-- 2 additional exception-worded examples.
+For this batch:
+- Every explanation was authored for its own statement and explicitly supports the associated answer key.
+- The answer and explanation were reviewed together for the relevant mechanism or anatomical relationship.
+- No identical explanation strings are reused within the combined bank.
+- Automated checks cover missing/short explanations, repeated explanations, duplicate statement wording, duplicate IDs, topic validity, statement counts, mixed keys and manifest registration.
 
-The 47 stems span 17 curriculum topics. The two new examples demonstrate both common examination instructions:
-- “All the following statements are true except…”
-- “All the following statements are false except…”
+These checks reduce preventable editorial defects; they do not guarantee that a medical statement is infallible. New stems remain marked `verified: false` and `draft-unverified` pending a second independent subject-matter review against the linked references and the course's preferred textbooks.
 
-**Important format rule:** these are still True/False stem questions. Students judge each numbered statement True or False individually. The exception wording describes the expected pattern across the set; it does not change the interaction into a single-select A/B/C/D question.
+## Current bank composition
 
-## Presentation and analytics
-
-- Stem heading is visually stronger and separated from the topic/instruction line.
-- The instruction line explicitly reminds students to mark each statement True or False.
-- Topic analytics use shorter display labels for selected long topic names while retaining the original curriculum topic IDs and names.
-- The analytics count is labelled “statements answered”, not “attempts”. It counts answered individual statements, not stems; blank/skipped statements do not add to this count.
-
-## Quality and verification status
-
-All content remains explicitly unverified. The newly added examples and the earlier expansion are drafts pending independent checking against named authoritative textbooks or references. Do not promote any stem to `verified: true` until its key and explanation have been source-checked.
-
-## Structural checks to run
-
-- Unique stem IDs.
-- Every topic ID exists in the curriculum.
-- Each stem contains 4–5 independently judgeable statements.
-- Each stem includes both True and False keys.
-- Every statement has a non-empty explanation.
-- Both question files are registered in the manifest.
-- Exception-worded stems have the intended key pattern (exactly one exception).
+- 57 total stems: 9 original + 38 in the expansion file + 10 batch-3 additions.
+- 24 curriculum topics represented.
+- All content remains unverified unless a future audit explicitly records source verification.
 
 ## Remaining work
 
-- Independently source-verify all 47 stems.
-- Expand coverage across remaining Anatomy, Physiology and Medical Biochemistry topics.
-- Add automated schema and exception-pattern validation to the bank validation workflow.
+- Continue source-checking existing and new stems individually.
+- Expand into additional uncovered Anatomy, Physiology and Medical Biochemistry topics.
+- Add the automated checks to the repository's normal validation workflow so future imports cannot silently reintroduce these defects.

@@ -1215,6 +1215,363 @@
       ],
       "verified": false,
       "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pr-resp-001",
+      "type": "tf",
+      "topic": "pr-mechanics-of-breathing",
+      "level": 2,
+      "sub": "Mechanics of breathing",
+      "q": "About the mechanics of breathing:",
+      "items": [
+        {
+          "text": "During quiet inspiration, contraction of the diaphragm increases the vertical dimension of the thoracic cavity.",
+          "answer": true,
+          "explain": "The diaphragm contracts and descends during quiet inspiration, increasing the vertical thoracic dimension and helping lower intrathoracic pressure."
+        },
+        {
+          "text": "Quiet expiration normally requires active contraction of the internal intercostal muscles.",
+          "answer": false,
+          "explain": "Quiet expiration is usually passive. Relaxation of inspiratory muscles and elastic recoil of the lungs and chest wall reduce thoracic volume; internal intercostals are recruited during forced expiration."
+        },
+        {
+          "text": "Intrapleural pressure is normally subatmospheric at the end of a quiet expiration.",
+          "answer": true,
+          "explain": "At functional residual capacity, opposing recoil forces of the lungs inward and chest wall outward maintain a normally negative intrapleural pressure."
+        },
+        {
+          "text": "Pulmonary surfactant increases alveolar surface tension and makes the lungs harder to expand.",
+          "answer": false,
+          "explain": "Surfactant reduces surface tension at the air–liquid interface, increases lung compliance and helps prevent alveolar collapse, especially at low lung volumes."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK607438/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5299792/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pr-gas-001",
+      "type": "tf",
+      "topic": "pr-transport-of-respiratory-gases",
+      "level": 2,
+      "sub": "Transport of respiratory gases",
+      "q": "Regarding transport of respiratory gases:",
+      "items": [
+        {
+          "text": "Most oxygen in arterial blood is transported bound to haemoglobin.",
+          "answer": true,
+          "explain": "The great majority of blood oxygen is reversibly bound to haemoglobin inside erythrocytes; only a small fraction is physically dissolved in plasma."
+        },
+        {
+          "text": "An increase in temperature and a decrease in pH shift the oxyhaemoglobin dissociation curve to the left.",
+          "answer": false,
+          "explain": "Increased temperature and decreased pH reduce haemoglobin's oxygen affinity and shift the curve to the right, promoting oxygen unloading in metabolically active tissues."
+        },
+        {
+          "text": "Carbon monoxide can impair tissue oxygen delivery by binding haemoglobin with high affinity.",
+          "answer": true,
+          "explain": "Carbon monoxide forms carboxyhaemoglobin, reducing available oxygen-binding sites and increasing the affinity of remaining sites, which impairs oxygen unloading."
+        },
+        {
+          "text": "A rightward shift of the oxyhaemoglobin dissociation curve means haemoglobin has increased affinity for oxygen.",
+          "answer": false,
+          "explain": "A right shift means decreased oxygen affinity and a higher P50, facilitating oxygen release to tissues."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538336/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK539815/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pb-haemostasis-001",
+      "type": "tf",
+      "topic": "pb-platelets-and-haemostasis",
+      "level": 2,
+      "sub": "Platelets and haemostasis",
+      "q": "About primary haemostasis and platelet function:",
+      "items": [
+        {
+          "text": "Platelet adhesion to exposed subendothelial structures is facilitated by von Willebrand factor.",
+          "answer": true,
+          "explain": "Von Willebrand factor binds exposed subendothelial collagen and platelet GPIb, helping platelets adhere at sites of vascular injury."
+        },
+        {
+          "text": "Platelet aggregation is mediated in part by fibrinogen binding to activated platelet GPIIb/IIIa receptors.",
+          "answer": true,
+          "explain": "Activated GPIIb/IIIa receptors bind fibrinogen, which bridges adjacent platelets and supports aggregation."
+        },
+        {
+          "text": "Thrombin converts fibrinogen into fibrin during coagulation.",
+          "answer": true,
+          "explain": "Thrombin cleaves fibrinopeptides from fibrinogen, producing fibrin monomers that polymerise and are subsequently stabilised by factor XIIIa."
+        },
+        {
+          "text": "Aspirin promotes platelet aggregation by irreversibly activating cyclo-oxygenase-1.",
+          "answer": false,
+          "explain": "Aspirin irreversibly acetylates platelet COX-1, reducing thromboxane A2 synthesis and thereby inhibiting platelet activation and aggregation."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK470328/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK507795/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pc-cycle-001",
+      "type": "tf",
+      "topic": "pc-cardiac-muscle-and-the-cardiac-cycle",
+      "level": 2,
+      "sub": "Cardiac cycle",
+      "q": "Regarding the cardiac cycle:",
+      "items": [
+        {
+          "text": "The first heart sound is associated mainly with closure of the atrioventricular valves.",
+          "answer": true,
+          "explain": "S1 occurs at the onset of ventricular systole and is associated with closure of the mitral and tricuspid valves."
+        },
+        {
+          "text": "During isovolumetric ventricular contraction, both the atrioventricular and semilunar valves are closed.",
+          "answer": true,
+          "explain": "Ventricular pressure rises after AV valve closure but before aortic and pulmonary valve opening, so all four valves are closed and ventricular volume is unchanged."
+        },
+        {
+          "text": "The aortic valve opens when left ventricular pressure falls below aortic pressure.",
+          "answer": false,
+          "explain": "The aortic valve opens when left ventricular pressure exceeds aortic pressure during systole, allowing ventricular ejection."
+        },
+        {
+          "text": "The T wave on a normal ECG represents ventricular depolarisation.",
+          "answer": false,
+          "explain": "The QRS complex represents ventricular depolarisation. The T wave represents ventricular repolarisation."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK459327/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK594995/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pb-rbc-oxygen-001",
+      "type": "tf",
+      "topic": "pb-red-blood-cells",
+      "level": 2,
+      "sub": "Red blood cells and oxygen delivery",
+      "q": "About red blood cells and oxygen delivery:",
+      "items": [
+        {
+          "text": "Mature human erythrocytes lack mitochondria.",
+          "answer": true,
+          "explain": "Mature erythrocytes lose their mitochondria during maturation, so they generate ATP mainly through anaerobic glycolysis and do not consume the oxygen they transport."
+        },
+        {
+          "text": "Erythropoietin is produced mainly by renal peritubular interstitial cells in adults.",
+          "answer": true,
+          "explain": "In adults, renal peritubular interstitial cells are the principal source of erythropoietin in response to reduced tissue oxygen availability."
+        },
+        {
+          "text": "A low haemoglobin concentration can reduce arterial oxygen content even when arterial oxygen saturation is normal.",
+          "answer": true,
+          "explain": "Oxygen content depends strongly on haemoglobin concentration as well as saturation; normal saturation does not compensate fully for a markedly reduced haemoglobin level."
+        },
+        {
+          "text": "Pulse oximetry directly measures the total oxygen content of blood.",
+          "answer": false,
+          "explain": "Pulse oximetry estimates peripheral arterial haemoglobin oxygen saturation. It does not directly measure haemoglobin concentration or total arterial oxygen content."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538336/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-emb-neural-001",
+      "type": "tf",
+      "topic": "se-nervous-system-and-endocrine-glands",
+      "level": 2,
+      "sub": "Neural tube development",
+      "q": "About early development of the central nervous system:",
+      "items": [
+        {
+          "text": "The neural tube develops from ectoderm.",
+          "answer": true,
+          "explain": "The notochord induces the overlying ectoderm to form the neural plate, which folds and closes to create the neural tube."
+        },
+        {
+          "text": "The neural tube gives rise to the brain and spinal cord.",
+          "answer": true,
+          "explain": "The neural tube is the embryonic precursor of the central nervous system, including the brain and spinal cord."
+        },
+        {
+          "text": "The neural crest contributes to structures of the peripheral nervous system.",
+          "answer": true,
+          "explain": "Neural crest cells migrate extensively and contribute to peripheral ganglia, Schwann cells and several other tissues."
+        },
+        {
+          "text": "Failure of cranial neuropore closure is classically associated with spina bifida.",
+          "answer": false,
+          "explain": "Failure of cranial neuropore closure is associated with severe cranial neural tube defects such as anencephaly; caudal neuropore closure failure is associated with spina bifida."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK542179/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-emb-heart-001",
+      "type": "tf",
+      "topic": "se-cardiovascular-system",
+      "level": 2,
+      "sub": "Early heart development",
+      "q": "Regarding embryological development of the heart:",
+      "items": [
+        {
+          "text": "The primitive heart begins to beat during the fourth week of development.",
+          "answer": true,
+          "explain": "The embryonic heart begins rhythmic activity around day 22, during the fourth week when age is expressed in gestational weeks."
+        },
+        {
+          "text": "The paired endocardial heart tubes fuse to form a single primitive heart tube.",
+          "answer": true,
+          "explain": "The paired endocardial tubes approach and fuse in the midline, forming the primitive heart tube."
+        },
+        {
+          "text": "The primitive heart tube develops from ectoderm.",
+          "answer": false,
+          "explain": "The heart develops primarily from splanchnic lateral plate mesoderm within the cardiogenic region, not ectoderm."
+        },
+        {
+          "text": "The primitive heart tube undergoes looping as it develops into the four-chambered heart.",
+          "answer": true,
+          "explain": "Cardiac looping establishes the spatial arrangement of the primitive chambers and outflow tract and is an essential step in later septation and alignment."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK499934/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK537313/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-glycolysis-001",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Glycolysis",
+      "q": "About glycolysis:",
+      "items": [
+        {
+          "text": "The glycolytic pathway converts one six-carbon glucose molecule into two three-carbon pyruvate molecules.",
+          "answer": true,
+          "explain": "The ten reactions of glycolysis split one six-carbon glucose into two three-carbon pyruvate molecules; the pathway occurs in the cytosol."
+        },
+        {
+          "text": "The net yield of glycolysis per molecule of glucose is two ATP.",
+          "answer": true,
+          "explain": "Four ATP are generated and two ATP are consumed in the preparatory steps, giving a net yield of two ATP per glucose."
+        },
+        {
+          "text": "Glycolysis can proceed in the absence of oxygen.",
+          "answer": true,
+          "explain": "Glycolysis itself does not directly require oxygen. Under anaerobic conditions, pyruvate can be reduced to lactate to regenerate NAD+."
+        },
+        {
+          "text": "The conversion of glucose to glucose-6-phosphate by hexokinase directly produces ATP.",
+          "answer": false,
+          "explain": "Hexokinase transfers a phosphate group from ATP to glucose, consuming ATP and forming glucose-6-phosphate."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK482303/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK560599/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-gluconeo-001",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Gluconeogenesis",
+      "q": "Regarding gluconeogenesis:",
+      "items": [
+        {
+          "text": "Gluconeogenesis produces glucose from non-carbohydrate precursors.",
+          "answer": true,
+          "explain": "Gluconeogenesis synthesises glucose from precursors such as lactate, glycerol and glucogenic amino acids, particularly during fasting."
+        },
+        {
+          "text": "During fasting, hepatic gluconeogenesis helps maintain the circulating glucose concentration.",
+          "answer": true,
+          "explain": "As fasting progresses and hepatic glycogen becomes depleted, the liver synthesises glucose from non-carbohydrate precursors to support glucose-dependent tissues."
+        },
+        {
+          "text": "Even-chain fatty acids are a major net source of glucose carbon in humans.",
+          "answer": false,
+          "explain": "Even-chain fatty acids yield acetyl-CoA, which cannot provide net glucose in humans because the pyruvate dehydrogenase reaction is irreversible and acetyl-CoA carbons are lost in the TCA cycle."
+        },
+        {
+          "text": "Pyruvate carboxylase catalyses the conversion of pyruvate to oxaloacetate.",
+          "answer": true,
+          "explain": "Mitochondrial pyruvate carboxylase uses ATP and bicarbonate to convert pyruvate to oxaloacetate, the first bypass step in gluconeogenesis."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK541119/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK544346/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-ppp-001",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Pentose phosphate pathway",
+      "q": "About the pentose phosphate pathway:",
+      "items": [
+        {
+          "text": "The oxidative phase of the pentose phosphate pathway generates NADPH.",
+          "answer": true,
+          "explain": "The oxidative phase converts glucose-6-phosphate toward ribulose-5-phosphate and generates NADPH, which supports reductive biosynthesis and antioxidant defence."
+        },
+        {
+          "text": "The pathway is an important source of ribose-5-phosphate for nucleotide synthesis.",
+          "answer": true,
+          "explain": "Ribose-5-phosphate produced by the pathway provides the pentose sugar required for nucleotide and nucleic acid synthesis."
+        },
+        {
+          "text": "The pentose phosphate pathway directly generates ATP as one of its principal products.",
+          "answer": false,
+          "explain": "The pathway's main products are NADPH and pentose phosphates; it is not an ATP-generating pathway."
+        },
+        {
+          "text": "Glucose-6-phosphate dehydrogenase catalyses the first and rate-limiting step of the oxidative phase.",
+          "answer": true,
+          "explain": "Glucose-6-phosphate dehydrogenase catalyses the first oxidative reaction and is a major regulatory step, producing NADPH."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK551687/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
     }
   ]
 }
