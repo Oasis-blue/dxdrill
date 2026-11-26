@@ -103,10 +103,10 @@
    "sub": "Components of a Homeostatic Control System",
    "q": "In a physiological reflex arc, what is the role of the sensor (receptor)?",
    "options": [
-    "Detecting changes in a regulated variable and transmitting afferent signals to the control center",
-    "Comparing actual input against a stored reference value",
-    "Executing mechanical or secretory changes to alter the regulated variable",
-    "Generating hormones directly into the systemic venous circulation"
+    "Detecting a change and sending afferent information to the control centre",
+    "Comparing the value with a set point",
+    "Producing the corrective response",
+    "Secreting hormones into systemic blood"
    ],
    "answer": 0,
    "explain": "Sensors (such as carotid sinus baroreceptors or hypothalamic osmoreceptors) transduce changes in a regulated variable into afferent neural or humoral signals sent to an integrating center.",
@@ -219,10 +219,10 @@
    "sub": "Negative Feedback",
    "q": "A rise in arterial blood pressure stretches baroreceptors in the carotid sinus and aortic arch, leading to reflex bradycardia and arteriolar vasodilation. Why is this reflex classified as negative feedback?",
    "options": [
-    "Because heart rate decreases rather than increases",
-    "Because the combined cardiovascular response lowers arterial pressure back toward its set point",
-    "Because parasympathetic nerve firing inhibits sympathetic ganglia directly",
-    "Because baroreceptors adapt completely within seconds of pressure elevation"
+    "Because heart rate falls",
+    "The cardiovascular response lowers arterial pressure toward its set point",
+    "Parasympathetic firing directly blocks sympathetic ganglia",
+    "Baroreceptors adapt completely within seconds"
    ],
    "answer": 1,
    "explain": "Negative feedback is defined by the direction of the effect on the regulated variable relative to the initial perturbation: an initial rise in blood pressure triggers responses that decrease blood pressure.",
@@ -290,10 +290,10 @@
    "sub": "Positive Feedback",
    "q": "Which statement accurately describes a physiological positive feedback mechanism?",
    "options": [
-    "The output reinforces and amplifies the initial stimulus in the same direction until a discrete endpoint terminates the cycle",
-    "It always indicates fatal organ decompensation and never serves a normal bodily function",
-    "It is the primary mechanism maintaining resting blood glucose and core body temperature",
-    "It dampens oscillations in plasma calcium concentration within narrow limits"
+    "The response amplifies the initial stimulus until an endpoint stops it",
+    "It always causes fatal organ failure",
+    "It maintains resting glucose and temperature",
+    "It suppresses all plasma calcium variation"
    ],
    "answer": 0,
    "explain": "Positive feedback amplifies an initial change in the same direction; although uncontrolled positive feedback causes vicious cycles (such as hemorrhagic shock), controlled positive feedback drives essential biological events like parturition, ovulation, and action potentials.",
@@ -385,10 +385,10 @@
    "sub": "Feedforward Control",
    "q": "What is the defining feature of feedforward (adaptive) control in physiology?",
    "options": [
-    "Initiating corrective responses in anticipation of a disturbance before the regulated variable actually changes",
-    "Waiting until a variable exceeds toxic thresholds before activating effectors",
-    "Amplifying a blood electrolyte disturbance until renal failure occurs",
-    "Eliminating the need for any central nervous system involvement"
+    "Activating effectors before the regulated variable changes",
+    "Waiting for toxic levels before responding",
+    "Amplifying electrolyte disturbance until renal failure",
+    "Removing all CNS involvement"
    ],
    "answer": 0,
    "explain": "Feedforward control predicts an impending perturbation using sensory cues (such as sight, smell, or GI distension) and activates effectors preemptively to minimize fluctuations in the internal environment.",
@@ -408,10 +408,10 @@
    "sub": "Feedforward Control",
    "q": "Which physiological response is an example of feedforward regulation?",
    "options": [
-    "Secretion of aldosterone in response to hyperkalemia",
-    "Cephalic-phase insulin and gastric acid secretion triggered by the sight and smell of food before blood glucose rises",
-    "Release of antidiuretic hormone (ADH) after plasma osmolarity increases to 300 mOsm/L",
-    "Parathyroid hormone secretion following a drop in ionized plasma calcium"
+    "Aldosterone release after hyperkalaemia",
+    "Cephalic-phase insulin and acid secretion before food absorption",
+    "ADH release after raised plasma osmolality",
+    "PTH release after reduced ionised calcium"
    ],
    "answer": 1,
    "explain": "Seeing, smelling, or tasting food triggers vagally mediated insulin and gastric secretion before nutrients are absorbed into the bloodstream, blunting the subsequent postprandial glucose spike.",
@@ -432,10 +432,10 @@
    "sub": "Feedforward Control",
    "q": "At the very onset of dynamic exercise, pulmonary ventilation increases abruptly within seconds even before arterial PCO2, PO2, or pH have changed. Which regulatory mechanism accounts for this immediate hyperpnea?",
    "options": [
-    "Central chemoreceptor stimulation by CSF acidosis",
-    "Peripheral chemoreceptor activation by arterial hypoxemia",
-    "Feedforward neural signals from motor cortex collaterals and joint proprioceptors",
-    "Renal bicarbonate excretion altering blood pH"
+    "Central chemoreceptors sensing CSF acidosis",
+    "Peripheral chemoreceptors sensing hypoxaemia",
+    "Motor-cortex and joint-proprioceptor feedforward signals",
+    "Renal bicarbonate excretion"
    ],
    "answer": 2,
    "explain": "Central command from the motor cortex and afferent feedback from moving limb proprioceptors stimulate the medullary respiratory center immediately at exercise onset in a feedforward manner, keeping arterial blood gases remarkably constant.",
@@ -455,10 +455,10 @@
    "sub": "Set Point Resetting and Rhythms",
    "q": "During a bacterial infection, endogenous pyrogens act on the hypothalamus to produce fever. What happens to the thermoregulatory control system during the chill (onset) phase of fever?",
    "options": [
-    "The hypothalamic set point drops to 35 C while skin blood vessels dilate",
-    "Negative feedback is permanently destroyed and replaced by positive feedback",
-    "Sweat glands are maximally stimulated despite normal core temperature",
-    "The hypothalamic set point is elevated to a higher temperature, causing the body to conserve and generate heat via shivering"
+    "Set point falls to 35°C and skin vessels dilate",
+    "Negative feedback is replaced permanently by positive feedback",
+    "Sweating increases despite normal core temperature",
+    "Raised hypothalamic set point triggers heat conservation and shivering"
    ],
    "answer": 3,
    "explain": "Prostaglandin E2 raises the hypothalamic thermoregulatory set point (e.g., to 39 C); because actual blood temperature is initially lower than the new set point, the body perceives itself as cold and triggers cutaneous vasoconstriction and shivering.",
@@ -547,10 +547,10 @@
    "sub": "Redundancy and Hierarchy in Homeostasis",
    "q": "Why are vital homeostatic variables such as arterial blood pressure and plasma glucose regulated by multiple overlapping control systems rather than a single mechanism?",
    "options": [
-    "To ensure all hormones are secreted at identical rates throughout the day",
-    "Because single feedback loops cannot operate in extracellular fluid",
-    "To eliminate all neural input from the autonomic nervous system",
-    "To provide functional redundancy and cover both rapid short-term corrections and sustained long-term stability"
+    "To make all hormones secrete at the same rate",
+    "Because single feedback loops cannot function in ECF",
+    "To remove autonomic nervous system input",
+    "To combine rapid correction with sustained stability"
    ],
    "answer": 3,
    "explain": "Multiple overlapping mechanisms (such as fast neural baroreceptors, intermediate hormonal renin-angiotensin-aldosterone, and slow renal fluid control) operate across different time scales and provide backup if one system fails.",
