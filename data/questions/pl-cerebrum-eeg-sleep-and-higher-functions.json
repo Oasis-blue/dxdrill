@@ -77,13 +77,13 @@
    "sub": "Cerebral Cortex Layers, Functional Areas, and Hemispheric Lateralization",
    "q": "What are the functional specializations of the 'categorical (left in ~95% of right-handers and ~70% of left-handers)' versus 'representational (right, visuospatial)' cerebral hemispheres?",
    "options": [
-    "Left (categorical) hemisphere dominates sequential language processing (comprehension, speech, reading, writing) and analytical/mathematical calculation; Right (representational) hemisphere dominates visuospatial awareness, three-dimensional construction, facial recognition, musical prosody, and emotional tone of speech",
-    "Right hemisphere controls all language in 99% of people; left hemisphere controls only vision",
-    "Both hemispheres are functionally identical in every cognitive domain",
-    "The corpus callosum prevents any communication between the two hemispheres"
+    "Left: language and analytical/sequential processing; right: visuospatial processing, face recognition and emotional prosody",
+    "Left: visuospatial processing and face recognition; right: language and mathematical calculation",
+    "Left: primary vision and hearing; right: primary motor control and language",
+    "Both hemispheres specialise identically; the corpus callosum prevents functional lateralisation"
    ],
    "answer": 0,
-   "explain": "Split-brain (callosotomy) studies by Roger Sperry demonstrated that objects shown solely to the left visual field (processed by the right hemisphere) cannot be verbally named because the right hemisphere lacks direct access to left-hemisphere speech centers.",
+   "explain": "Split-brain (callosotomy) studies by Roger Sperry demonstrated that objects shown solely to the left visual field (processed by the right hemisphere) cannot be verbally named because the right hemisphere lacks direct access to left-hemisphere speech centers. The left (categorical) hemisphere usually dominates sequential language processing and analytical calculation. The right (representational) hemisphere contributes more to visuospatial awareness, three-dimensional construction, facial recognition, musical prosody and emotional tone of speech.",
    "verified": false,
    "open": {
     "q": "Contrast the primary cognitive specializations of the left (categorical) hemisphere versus the right (representational) hemisphere.",
@@ -123,13 +123,13 @@
    "sub": "Thalamic Nuclei and Thalamocortical Projections",
    "q": "Match the specific thalamic relay nuclei with their sensory/motor inputs and cortical targets:",
    "options": [
-    "VPL (Ventral Posterolateral): spinothalamic & medial lemniscus -> primary somatosensory cortex (S1, body); VPM (Ventral Posteromedial): trigeminothalamic & gustatory (NTS) -> S1 (face & taste); LGN (Lateral Geniculate Nucleus): optic tract -> primary visual cortex (V1); MGN (Medial Geniculate Nucleus): inferior colliculus -> primary auditory cortex (A1); VA/VL (Ventral Anterior/Lateral): basal ganglia & cerebellum -> motor/premotor cortex",
-    "LGN -> primary auditory cortex; MGN -> primary visual cortex",
-    "VPM -> spinal motor neurons; VPL -> retina",
-    "Pulvinar -> cerebellar dentate nucleus"
+    "VPL: body → S1; VPM: face/taste → S1; LGN: vision → V1; MGN: audition → A1; VA/VL: basal ganglia/cerebellum → motor cortex",
+    "VPL: face/taste → S1; VPM: body → S1; LGN: audition → A1; MGN: vision → V1; VA/VL: basal ganglia/cerebellum → motor cortex",
+    "VPL: body → motor cortex; VPM: face → visual cortex; LGN: vision → auditory cortex; MGN: audition → S1; VA/VL: spinal cord → cerebellum",
+    "VPL: vision → V1; VPM: audition → A1; LGN: body → S1; MGN: face → S1; VA/VL: taste → insula"
    ],
    "answer": 0,
-   "explain": "Quick mnemonics: LGN = Light (vision), MGN = Music (audition), VPM = Makeup/Mouth (face somatosensation & taste), VPL = Limbs/body somatosensation.",
+   "explain": "Quick mnemonics: LGN = Light (vision), MGN = Music (audition), VPM = Makeup/Mouth (face somatosensation & taste), VPL = Limbs/body somatosensation. VPL relays body somatosensation via the medial lemniscus and spinothalamic tract; VPM relays facial sensation and taste; LGN relays vision; MGN relays audition; VA/VL relay basal ganglia and cerebellar output to motor and premotor cortex.",
    "verified": false,
    "open": {
     "q": "State the input pathway and cortical target for: (1) VPL, (2) VPM, (3) Lateral Geniculate Nucleus (LGN), and (4) Medial Geniculate Nucleus (MGN).",
@@ -169,13 +169,13 @@
    "sub": "Electroencephalogram (EEG) Waves and Clinical Applications",
    "q": "What is the physiological generator of the scalp Electroencephalogram (EEG) signal?",
    "options": [
-    "Summated extracellular excitatory and inhibitory postsynaptic potentials (EPSPs and IPSPs) generated synchronously across thousands of vertically oriented cortical pyramidal neuron apical dendrites (dipoles) beneath the scalp electrode—NOT axonal action potentials",
-    "Individual action potentials firing inside deep thalamic myelinated axons",
-    "Contraction of scalp skeletal muscles only",
-    "Pulsatile arterial blood flow in the dural venous sinuses"
+    "Summated EPSPs and IPSPs in synchronously active cortical pyramidal-cell dendrites",
+    "Action potentials travelling in deep thalamic axons",
+    "Motor-unit potentials from scalp and facial muscles",
+    "Pulsatile blood flow in cortical and dural vessels"
    ],
    "answer": 0,
-   "explain": "Because action potentials are brief (~1 ms) and asynchronous, they cancel out at the scalp, whereas longer-lasting (~15-200 ms) dendritic postsynaptic potentials sum into measurable microvolt (~10-100 uV) scalp EEG waves.",
+   "explain": "Because action potentials are brief (~1 ms) and asynchronous, they cancel out at the scalp, whereas longer-lasting (~15-200 ms) dendritic postsynaptic potentials sum into measurable microvolt (~10-100 uV) scalp EEG waves. EEG reflects summed extracellular postsynaptic potentials in aligned cortical pyramidal-cell dendrites. Brief, asynchronous action potentials largely cancel at the scalp, whereas longer-lasting dendritic potentials can summate into measurable signals.",
    "verified": false,
    "open": {
     "q": "Which electrical events and cortical neurons generate the voltage fluctuations recorded on a scalp EEG?",
@@ -215,13 +215,13 @@
    "sub": "Electroencephalogram (EEG) Waves and Clinical Applications",
    "q": "What is 'alpha block' (alpha desynchronization / Berger effect) on an EEG?",
    "options": [
-    "When a relaxed awake person with eyes closed (showing prominent 8-13 Hz occipital alpha waves) opens their eyes or performs mental arithmetic, the synchronized alpha rhythm immediately disappears and is replaced by low-voltage, high-frequency (>13 Hz) asynchronous beta activity",
-    "Complete flat-line isoelectric EEG lasting 10 minutes upon opening the eyes",
-    "Appearance of high-amplitude 1 Hz delta waves when solving math problems",
-    "3 Hz spike-and-wave discharges triggered by closing the eyes"
+    "Opening the eyes or mental effort suppresses alpha and produces low-voltage beta activity",
+    "Opening the eyes increases alpha amplitude and suppresses beta activity",
+    "Closing the eyes replaces alpha with high-amplitude delta waves",
+    "Mental effort produces generalised 3-Hz spike-and-wave discharges"
    ],
    "answer": 0,
-   "explain": "Sensory input or cognitive effort desynchronizes thalamocortical alpha pacemakers into fast, low-amplitude beta waves (also called arousal or orienting response).",
+   "explain": "Sensory input or cognitive effort desynchronizes thalamocortical alpha pacemakers into fast, low-amplitude beta waves (also called arousal or orienting response). In a relaxed awake person with eyes closed, prominent 8–13 Hz occipital alpha activity is present. Visual input or cognitive effort desynchronises this rhythm, replacing it with low-voltage, higher-frequency beta activity.",
    "verified": false,
    "open": {
     "q": "Describe what happens to the occipital alpha rhythm on an EEG when a relaxed subject opens their eyes ('alpha block').",
@@ -238,13 +238,13 @@
    "sub": "Electroencephalogram (EEG) Waves and Clinical Applications",
    "q": "Which EEG waveform is pathognomonic for typical childhood 'absence (petit mal) seizures', and which ion channel is targeted by first-line ethosuximide therapy?",
    "options": [
-    "Generalized, symmetric 3 Hz spike-and-wave discharges starting and ending abruptly; ethosuximide blocks low-threshold T-type Ca2+ channels in thalamic relay neurons to prevent synchronized thalamocortical burst oscillations",
-    "Continuous 25 Hz beta waves; treated with intravenous epinephrine",
-    "Periodic sharp wave complexes every 1 second; treated with vitamin C",
-    "Unilateral temporal theta slowing; treated with atropine"
+    "Generalised 3-Hz spike-and-wave discharges; ethosuximide blocks thalamic T-type Ca2+ channels",
+    "Generalised 1-Hz periodic sharp waves; ethosuximide blocks voltage-gated Na+ channels",
+    "Focal temporal spikes; ethosuximide activates GABA-A receptors",
+    "High-amplitude delta waves; ethosuximide blocks NMDA receptors"
    ],
    "answer": 0,
-   "explain": "Hyperventilation for 3 minutes classically provokes the diagnostic 3 Hz spike-and-wave bursts in absence epilepsy, driven by thalamic T-type Ca2+ channel pacemaker oscillations.",
+   "explain": "Hyperventilation for 3 minutes classically provokes the diagnostic 3 Hz spike-and-wave bursts in absence epilepsy, driven by thalamic T-type Ca2+ channel pacemaker oscillations. Typical absence seizures produce abrupt, generalised, symmetric 3-Hz spike-and-wave discharges. Ethosuximide reduces thalamocortical burst activity by blocking low-threshold T-type calcium channels; hyperventilation may provoke the pattern.",
    "verified": false,
    "open": {
     "q": "State the classic EEG pattern of absence seizures and the specific thalamic ion channel blocked by ethosuximide.",
@@ -330,13 +330,13 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "What is the pathophysiological basis of 'Narcolepsy with Cataplexy', and why do patients experience sudden emotionally triggered muscle collapse (cataplexy), sleep paralysis, and hypnagogic hallucinations?",
    "options": [
-    "Autoimmune destruction of lateral hypothalamic neurons producing orexin (hypocretin-1 and -2), destabilizing the sleep-wake flip-flop switch so REM sleep phenomena (skeletal muscle atonia = cataplexy/sleep paralysis; dream imagery = hypnagogic hallucinations) intrude abruptly into wakefulness, with sleep-onset REM periods (SOREMPs)",
-    "Excessive production of melatonin by the pituitary gland",
-    "Degeneration of cerebellar Purkinje cells",
-    "Hyperactivity of the spinal corticospinal tract"
+    "Loss of hypothalamic orexin destabilises wakefulness, allowing REM features to intrude",
+    "Excess pituitary melatonin suppresses REM sleep and causes cataplexy",
+    "Cerebellar Purkinje-cell loss causes REM atonia during wakefulness",
+    "Increased spinal corticospinal activity causes emotionally triggered paralysis"
    ],
    "answer": 0,
-   "explain": "Low or undetectable CSF hypocretin-1 (orexin-A) is diagnostic of narcolepsy type 1, strongly associated with HLA-DQB1*06:02.",
+   "explain": "Low or undetectable CSF hypocretin-1 (orexin-A) is diagnostic of narcolepsy type 1, strongly associated with HLA-DQB1*06:02. Narcolepsy type 1 is associated with loss of orexin (hypocretin)-producing lateral hypothalamic neurons. This destabilises sleep-wake control, allowing REM-related muscle atonia and dream phenomena to intrude into wakefulness; low CSF hypocretin supports the diagnosis.",
    "verified": false,
    "open": {
     "q": "Name the deficient hypothalamic neuropeptide in narcolepsy with cataplexy and explain how its loss causes cataplexy.",
@@ -353,13 +353,13 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "How do 'REM Sleep Behavior Disorder (RBD)' and 'Somnambulism (sleepwalking) / Night Terrors' differ in their sleep stage of occurrence and pathophysiology?",
    "options": [
-    "REM Sleep Behavior Disorder occurs during REM sleep due to failure of pontomedullary descending muscle atonia (subcoeruleus / ventromedial medulla lesion), causing patients to physically act out vivid dreams (punching, kicking, shouting) and strongly heralding alpha-synucleinopathies (Parkinson's disease, Lewy body dementia); Sleepwalking and night terrors occur during Stage N3 slow-wave sleep (arousal parasomnias) with amnesia for the event",
-    "Sleepwalking occurs during REM sleep; REM behavior disorder occurs during stage N1",
-    "Both disorders occur exclusively during awake alpha rhythm",
-    "REM behavior disorder is caused by excess muscle paralysis"
+    "RBD: REM sleep with loss of atonia; sleepwalking/night terrors: N3 arousal parasomnias",
+    "RBD: N3 sleep with loss of atonia; sleepwalking: REM dream enactment",
+    "Both occur during N1 sleep and result from excess alpha activity",
+    "RBD occurs during wakefulness; sleepwalking occurs during REM atonia"
    ],
    "answer": 0,
-   "explain": "Over 80% of older adults with idiopathic REM sleep behavior disorder eventually develop Parkinson's disease, dementia with Lewy bodies, or multiple system atrophy.",
+   "explain": "Over 80% of older adults with idiopathic REM sleep behavior disorder eventually develop Parkinson's disease, dementia with Lewy bodies, or multiple system atrophy. REM sleep behaviour disorder involves failure of normal brainstem-mediated REM atonia, allowing dream enactment. Sleepwalking and night terrors are partial arousals from N3 slow-wave sleep and are commonly followed by amnesia.",
    "verified": false,
    "open": {
     "q": "Contrast REM Sleep Behavior Disorder and sleepwalking (somnambulism) in terms of sleep stage and underlying mechanism.",
@@ -422,13 +422,13 @@
    "sub": "Language Pathways and Aphasias (Broca, Wernicke, Conduction, Global)",
    "q": "How do 'Transcortical Motor Aphasia' and 'Transcortical Sensory Aphasia' differ from Broca's and Wernicke's aphasias?",
    "options": [
-    "Transcortical aphasias result from watershed/borderzone infarcts sparing the perisylvian language loop (Wernicke's area, arcuate fasciculus, Broca's area), so REPETITION IS INTACT (often with echolalia), whereas Broca's, Wernicke's, Conduction, and Global aphasias all have IMPAIRED repetition",
-    "Transcortical aphasias abolish repetition while sparing spontaneous speech and comprehension",
-    "Transcortical motor aphasia is caused by cerebellar infarction",
-    "There is no difference in repetition between transcortical and perisylvian aphasias"
+    "Transcortical aphasias preserve repetition; perisylvian aphasias impair it",
+    "Transcortical aphasias impair repetition; perisylvian aphasias preserve it",
+    "Both groups preserve repetition because the arcuate fasciculus is intact",
+    "Both groups impair repetition because all language pathways are interrupted"
    ],
    "answer": 0,
-   "explain": "Diagnostic algorithm for aphasias: 1) Check Repetition (impaired = Broca, Wernicke, Conduction, Global; intact = Transcortical); 2) Check Fluency; 3) Check Comprehension.",
+   "explain": "Diagnostic algorithm for aphasias: 1) Check Repetition (impaired = Broca, Wernicke, Conduction, Global; intact = Transcortical); 2) Check Fluency; 3) Check Comprehension. Transcortical aphasias usually follow watershed lesions that spare the perisylvian language loop, so repetition is preserved and echolalia may occur. Broca's, Wernicke's, conduction and global aphasias generally impair repetition.",
    "verified": false,
    "open": {
     "q": "Which single bedside language test reliably distinguishes transcortical aphasias from perisylvian aphasias (Broca, Wernicke, Conduction)?",
@@ -468,13 +468,13 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "How are human memory systems classified by duration and conscious awareness (declarative/explicit vs non-declarative/implicit)?",
    "options": [
-    "Working (immediate) memory: prefrontal cortex (~seconds, limited capacity ~7+/-2 items); Explicit (declarative) long-term memory: conscious recall of facts (semantic) and personal events (episodic), requiring the hippocampus/medial temporal lobe for consolidation into neocortex; Implicit (non-declarative) memory: unconscious procedural motor skills (basal ganglia & cerebellum), priming (neocortex), and classical/operant conditioning (amygdala/cerebellum)",
-    "Procedural motor skills like riding a bicycle require the hippocampus permanently",
-    "Working memory is stored in the spinal cord dorsal horn",
-    "Episodic memory is stored exclusively in the cerebellar vermis"
+    "Working: prefrontal; explicit: hippocampal/neocortical; implicit: basal ganglia, cerebellum and amygdala",
+    "Working: hippocampal; explicit: spinal; implicit: prefrontal and thalamic",
+    "Working: cerebellar; explicit: basal ganglia; implicit: hippocampal only",
+    "Working: amygdala; explicit: cerebellar; implicit: medial temporal only"
    ],
    "answer": 0,
-   "explain": "Patient H.M. (bilateral medial temporal lobe/hippocampal resection) developed profound anterograde amnesia for new declarative facts/events while retaining intact working memory, old childhood memories, and new procedural motor learning (mirror-drawing).",
+   "explain": "Patient H.M. (bilateral medial temporal lobe/hippocampal resection) developed profound anterograde amnesia for new declarative facts/events while retaining intact working memory, old childhood memories, and new procedural motor learning (mirror-drawing). Working memory depends heavily on prefrontal networks. Explicit (declarative) memory includes episodic and semantic memory and requires the hippocampus/medial temporal lobe for consolidation into neocortex. Implicit memory includes procedural skills (basal ganglia/cerebellum), priming (neocortex) and conditioning (amygdala/cerebellum).",
    "verified": false,
    "open": {
     "q": "Contrast explicit (declarative) memory and implicit (non-declarative) memory in terms of conscious awareness, subtypes, and primary brain structures.",
@@ -514,13 +514,13 @@
    "sub": "Limbic System, Papez Circuit, and Amygdala",
    "q": "Trace the anatomical loop of the 'Papez Circuit' involved in emotion and declarative memory consolidation:",
    "options": [
-    "Hippocampal formation -> Fornix -> Mammillary bodies (hypothalamus) -> Mammillothalamic tract -> Anterior nucleus of thalamus -> Cingulate gyrus -> Entorhinal cortex -> back to Hippocampus",
-    "Retina -> Lateral geniculate nucleus -> Calcarine cortex -> Spinal cord",
-    "Putamen -> Globus pallidus -> Subthalamic nucleus -> Red nucleus",
-    "Cochlea -> Inferior colliculus -> Medial geniculate nucleus -> Heschl's gyrus"
+    "Hippocampus → fornix → mammillary bodies → mammillothalamic tract → anterior thalamus → cingulate gyrus → entorhinal cortex",
+    "Hippocampus → internal capsule → caudate → red nucleus → cerebellum",
+    "Amygdala → optic tract → lateral geniculate → calcarine cortex → hippocampus",
+    "Cingulate gyrus → corticospinal tract → spinal cord → mammillary bodies → hippocampus"
    ],
    "answer": 0,
-   "explain": "Damage to the mammillary bodies and dorsomedial/anterior thalamus in thiamine deficiency (Wernicke-Korsakoff syndrome) disrupts the Papez circuit, producing severe anterograde/retrograde amnesia and confabulation.",
+   "explain": "Damage to the mammillary bodies and dorsomedial/anterior thalamus in thiamine deficiency (Wernicke-Korsakoff syndrome) disrupts the Papez circuit, producing severe anterograde/retrograde amnesia and confabulation. The Papez circuit runs from the hippocampal formation through the fornix to the mammillary bodies, then via the mammillothalamic tract to the anterior thalamic nucleus, cingulate gyrus and entorhinal cortex before returning to the hippocampus.",
    "verified": false,
    "open": {
     "q": "List the sequential structures of the Papez circuit starting and ending at the hippocampus.",
@@ -537,13 +537,13 @@
    "sub": "Limbic System, Papez Circuit, and Amygdala",
    "q": "What is 'Kluver-Bucy syndrome', and which bilateral brain lesion produces it?",
    "options": [
-    "Bilateral destruction of the AMYGDALA (and anterior medial temporal lobes, e.g., in herpes simplex virus-1 encephalitis), causing placidity/loss of fear and anger, hyperorality (putting non-food objects in the mouth), hypersexuality, and visual agnosia (psychic blindness)",
-    "Unilateral lesion of the left broca's area causing non-fluent speech",
-    "Bilateral lesion of the caudate nucleus causing chorea",
-    "Infarction of the left occipital lobe causing alexia"
+    "Bilateral amygdala damage causes placidity, hyperorality, hypersexuality and visual agnosia",
+    "Unilateral Broca-area damage causes hyperorality, aphasia and visual agnosia",
+    "Bilateral caudate damage causes chorea, disinhibition and loss of fear",
+    "Occipital cortex damage causes hypersexuality, placidity and facial blindness"
    ],
    "answer": 0,
-   "explain": "Because HSV-1 encephalitis has a strong tropism for the inferior frontal and anterior temporal lobes (including the amygdala and hippocampus), bilateral temporal necrosis can produce Kluver-Bucy syndrome.",
+   "explain": "Because HSV-1 encephalitis has a strong tropism for the inferior frontal and anterior temporal lobes (including the amygdala and hippocampus), bilateral temporal necrosis can produce Kluver-Bucy syndrome. Klüver–Bucy syndrome follows bilateral amygdala/anterior temporal damage. Features include placidity or loss of fear, hyperorality, hypersexuality and visual agnosia; herpes simplex encephalitis is a recognised cause.",
    "verified": false,
    "open": {
     "q": "Name the brain structure whose bilateral damage causes Kluver-Bucy syndrome and list four hallmark behavioral features.",
@@ -560,13 +560,13 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "What is 'Wernicke-Korsakoff syndrome', what nutritional deficiency precipitates it, and how do its acute reversible triad and chronic amnestic features differ?",
    "options": [
-    "Thiamine (Vitamin B1) deficiency (most often in chronic alcoholism or hyperemesis gravidarum); Acute Wernicke encephalopathy triad: confusion/encephalopathy, ophthalmoplegia/nystagmus (CN VI/III/MLF), and gait ataxia; Chronic Korsakoff psychosis: irreversible anterograde and retrograde amnesia with 'confabulation' (inventing plausible stories to fill memory gaps) due to hemorrhagic necrosis of the mammillary bodies and dorsomedial thalamus",
-    "Vitamin C deficiency causing scurvy and peripheral sensory loss",
-    "Vitamin B12 deficiency causing isolated Broca's aphasia",
-    "Copper excess causing Kayser-Fleischer rings and chorea"
+    "Thiamine deficiency causes acute Wernicke triad and chronic Korsakoff amnesia/confabulation",
+    "Vitamin B12 deficiency causes acute ophthalmoplegia and chronic chorea",
+    "Vitamin C deficiency causes acute confusion and chronic retrograde amnesia",
+    "Copper excess causes acute ataxia and chronic aphasia"
    ],
    "answer": 0,
-   "explain": "Always administer intravenous THIAMINE BEFORE GLUCOSE in malnourished or alcoholic patients, because a glucose load rapidly consumes remaining thiamine-dependent pyruvate dehydrogenase/transketolase cofactors and precipitates acute Wernicke encephalopathy!",
+   "explain": "Always administer intravenous THIAMINE BEFORE GLUCOSE in malnourished or alcoholic patients, because a glucose load rapidly consumes remaining thiamine-dependent pyruvate dehydrogenase/transketolase cofactors and precipitates acute Wernicke encephalopathy! Wernicke encephalopathy presents with confusion, ophthalmoplegia/nystagmus and gait ataxia. Chronic Korsakoff syndrome causes severe anterograde and retrograde amnesia with confabulation; mammillary bodies and dorsomedial thalamus are commonly affected. Give thiamine before glucose in at-risk patients.",
    "verified": false,
    "open": {
     "q": "State the vitamin deficiency, acute clinical triad, chronic memory hallmark, and damaged diencephalic structures in Wernicke-Korsakoff syndrome.",
@@ -606,13 +606,13 @@
    "sub": "Hypothalamus: Autonomic, Endocrine, Feeding, and Thermoregulatory Nuclei",
    "q": "How do 'leptin' and 'ghrelin' act antagonistically on the hypothalamic arcuate nucleus to regulate appetite and energy balance?",
    "options": [
-    "Leptin (secreted by adipocytes in proportion to fat stores) stimulates anorexigenic POMC/CART neurons (releasing alpha-MSH onto MC4R to suppress appetite) and inhibits orexigenic NPY/AgRP neurons; Ghrelin (secreted by gastric fundus X/A-like cells during fasting) stimulates orexigenic NPY/AgRP neurons to trigger hunger",
-    "Ghrelin is secreted by adipocytes to suppress appetite; leptin is secreted by the stomach to stimulate hunger",
-    "Both leptin and ghrelin stimulate POMC neurons to cause starvation",
-    "Leptin acts directly on skeletal muscle to block insulin receptors"
+    "Leptin activates POMC/CART and inhibits NPY/AgRP; ghrelin activates NPY/AgRP",
+    "Leptin activates NPY/AgRP and inhibits POMC/CART; ghrelin activates POMC/CART",
+    "Both hormones activate POMC/CART and suppress hunger",
+    "Both hormones inhibit NPY/AgRP and stimulate feeding"
    ],
    "answer": 0,
-   "explain": "Mnemonic: 'Ghrelin makes your stomach growl' (fasting hunger hormone activating NPY/AgRP), while 'Leptin makes you lean' (adipose satiety hormone activating POMC/alpha-MSH).",
+   "explain": "Mnemonic: 'Ghrelin makes your stomach growl' (fasting hunger hormone activating NPY/AgRP), while 'Leptin makes you lean' (adipose satiety hormone activating POMC/alpha-MSH). Leptin is released by adipocytes in proportion to fat stores; it promotes anorexigenic POMC/CART activity and inhibits orexigenic NPY/AgRP neurons. Ghrelin is released by the stomach during fasting and activates NPY/AgRP neurons to stimulate hunger.",
    "verified": false,
    "open": {
     "q": "Contrast the tissue source, nutritional trigger, and arcuate nucleus neuronal targets of leptin versus ghrelin.",
@@ -698,13 +698,13 @@
    "sub": "Cerebral Cortex Layers, Functional Areas, and Hemispheric Lateralization",
    "q": "What is 'Gerstmann syndrome', and which specific cortical gyrus is lesioned?",
    "options": [
-    "Lesion of the DOMINANT (left) angular gyrus in the inferior parietal lobule, producing the classic tetrad of: 1) Agraphia (inability to write), 2) Acalculia (inability to perform arithmetic), 3) Finger agnosia (inability to identify one's own fingers), and 4) Left-right disorientation",
-    "Lesion of the right amygdala causing hyperorality and loss of fear",
-    "Lesion of the left precentral gyrus causing right arm paralysis",
-    "Lesion of the cerebellar flocculonodular lobe causing vertigo"
+    "Dominant angular gyrus lesion: agraphia, acalculia, finger agnosia and left-right disorientation",
+    "Non-dominant occipital lesion: agraphia, acalculia, prosopagnosia and neglect",
+    "Dominant precentral lesion: aphasia, hemianopia, anosmia and ataxia",
+    "Bilateral amygdala lesion: agraphia, acalculia, hyperorality and deafness"
    ],
    "answer": 0,
-   "explain": "Whereas non-dominant (right) parietal lesions cause left hemispatial neglect, dominant (left) angular gyrus lesions cause Gerstmann syndrome.",
+   "explain": "Whereas non-dominant (right) parietal lesions cause left hemispatial neglect, dominant (left) angular gyrus lesions cause Gerstmann syndrome. Gerstmann syndrome is associated with a lesion of the dominant (usually left) angular gyrus in the inferior parietal lobule. Its classic features are agraphia, acalculia, finger agnosia and left-right disorientation.",
    "verified": false,
    "open": {
     "q": "State the anatomical lesion site and the four hallmark clinical deficits of Gerstmann syndrome.",
@@ -744,13 +744,13 @@
    "sub": "Cerebral Cortex Layers, Functional Areas, and Hemispheric Lateralization",
    "q": "What are the distinct functional roles of the 'Supplementary Motor Area (SMA)' and the 'Premotor Cortex (PMA)' located in Brodmann area 6 anterior to M1?",
    "options": [
-    "Supplementary Motor Area (medial area 6) plans and initiates internally generated, complex bimanual motor sequences from memory (active even during mental rehearsal before movement); Premotor Cortex (lateral area 6) guides externally cued, sensory-guided movements (reaching toward a visual target) and stabilizes proximal girdle posture",
-    "SMA controls primary pupillary constriction; PMA controls hearing",
-    "Both SMA and PMA are located in the occipital lobe",
-    "SMA directly innervates the diaphragm via the vagus nerve"
+    "SMA: internally generated sequences; premotor cortex: externally cued movements and posture",
+    "SMA: visually cued movements; premotor cortex: internally generated bimanual sequences",
+    "SMA: primary sensation; premotor cortex: language comprehension",
+    "SMA and premotor cortex both directly activate lower motor neurons without M1"
    ],
    "answer": 0,
-   "explain": "Regional cerebral blood flow studies show that thinking about a complex finger sequence activates the SMA without M1, whereas executing the sequence activates both SMA and M1.",
+   "explain": "Regional cerebral blood flow studies show that thinking about a complex finger sequence activates the SMA without M1, whereas executing the sequence activates both SMA and M1. The medial supplementary motor area helps plan internally generated, sequential and bimanual movements. The lateral premotor cortex helps select externally or sensory-cued movements and stabilise proximal posture.",
    "verified": false,
    "open": {
     "q": "Distinguish the roles of the Supplementary Motor Area (SMA) and Premotor Cortex (PMA) in motor planning.",
@@ -767,13 +767,13 @@
    "sub": "Thalamic Nuclei and Thalamocortical Projections",
    "q": "What is the unique inhibitory role of the 'Thalamic Reticular Nucleus (TRN)' in gating thalamocortical transmission?",
    "options": [
-    "The TRN forms a thin GABAergic shell around the lateral thalamus that receives excitatory collaterals from both thalamocortical and corticothalamic axons and projects exclusively BACK onto thalamic relay nuclei (never to cortex), gating sensory attention and generating sleep spindles during Stage N2 sleep",
-    "The TRN projects directly to skeletal muscles via the pyramidal tract",
-    "The TRN releases glutamate onto the spinal cord",
-    "The TRN is located inside the fourth ventricle"
+    "GABAergic TRN inhibits thalamic relay nuclei, gating sensory transmission and generating N2 spindles",
+    "Glutamatergic TRN excites cortical pyramidal neurons and generates N3 delta waves",
+    "GABAergic TRN projects directly to spinal motor neurons to produce reflexes",
+    "TRN relays retinal signals directly to the primary visual cortex"
    ],
    "answer": 0,
-   "explain": "Because every thalamocortical and corticothalamic axon passes through and sends collaterals to the GABAergic TRN, the TRN acts as an attentional 'searchlight' and generates 12-14 Hz sleep spindles.",
+   "explain": "Because every thalamocortical and corticothalamic axon passes through and sends collaterals to the GABAergic TRN, the TRN acts as an attentional 'searchlight' and generates 12-14 Hz sleep spindles. The thalamic reticular nucleus is a GABAergic shell around the lateral thalamus. It receives collaterals from thalamocortical and corticothalamic fibres and projects back to thalamic relay nuclei, contributing to sensory gating and N2 sleep spindles.",
    "verified": false,
    "open": {
     "q": "Name the thalamic nucleus that uses GABA to gate thalamic relay nuclei and generate 12-14 Hz sleep spindles.",
@@ -836,13 +836,13 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "Why does 'adenosine' accumulate in the basal forebrain during prolonged wakefulness, and how does caffeine promote alertness?",
    "options": [
-    "ATP breakdown during prolonged neuronal activity increases extracellular adenosine, which binds inhibitory A1 and excitatory A2A receptors to inhibit wake-promoting basal forebrain neurons and activate sleep-promoting VLPO neurons (creating 'sleep pressure'); Caffeine is a competitive antagonist at adenosine A1/A2A receptors, blocking sleep pressure",
-    "Caffeine increases adenosine synthesis tenfold",
-    "Adenosine is released exclusively during Stage N3 sleep to wake the brain",
-    "Caffeine acts as a GABA-A agonist"
+    "Adenosine builds sleep pressure during wakefulness; caffeine blocks A1/A2A receptors",
+    "Adenosine builds sleep pressure only during N3; caffeine activates A1/A2A receptors",
+    "Caffeine increases adenosine release and activates VLPO neurons",
+    "Adenosine blocks sleep-promoting neurons; caffeine stimulates GABA-A receptors"
    ],
    "answer": 0,
-   "explain": "Homeostatic sleep drive (Process S) rises steadily during wakefulness via adenosine accumulation and clears during sleep, interacting with the circadian clock (Process C, SCN).",
+   "explain": "Homeostatic sleep drive (Process S) rises steadily during wakefulness via adenosine accumulation and clears during sleep, interacting with the circadian clock (Process C, SCN). ATP metabolism during wakefulness increases extracellular adenosine, contributing to homeostatic sleep pressure. Caffeine promotes alertness by competitively antagonising adenosine A1 and A2A receptors; sleep reduces the accumulated drive.",
    "verified": false,
    "open": {
     "q": "Explain the role of extracellular adenosine in homeostatic sleep drive and the receptor mechanism by which caffeine promotes wakefulness.",
@@ -859,13 +859,13 @@
    "sub": "Language Pathways and Aphasias (Broca, Wernicke, Conduction, Global)",
    "q": "What is 'Prosopagnosia', and which specific cortical region is damaged?",
    "options": [
-    "Inability to recognize familiar faces (even one's own reflection or spouse, while still recognizing people by their voice or clothing), caused by bilateral (or right-dominant) lesions of the FUSIFORM GYRUS (fusiform face area) in the inferior occipitotemporal cortex",
-    "Inability to name colors due to left frontal lobe injury",
-    "Inability to move the facial muscles due to CN VII palsy",
-    "Inability to comprehend spoken language due to Wernicke's area infarction"
+    "Fusiform gyrus damage causes impaired familiar-face recognition despite intact vision",
+    "Primary visual cortex damage causes face blindness with preserved visual fields",
+    "Wernicke-area damage causes inability to recognise faces but preserves language",
+    "Facial nerve palsy causes visual agnosia and impaired object recognition"
    ],
    "answer": 0,
-   "explain": "The fusiform face area on the ventral occipitotemporal 'what' visual stream is specialized for holistic facial recognition.",
+   "explain": "The fusiform face area on the ventral occipitotemporal 'what' visual stream is specialized for holistic facial recognition. Prosopagnosia is impaired recognition of familiar faces despite adequate basic vision. It is associated with bilateral or right-dominant lesions of the fusiform face area in the inferior occipitotemporal cortex.",
    "verified": false,
    "open": {
     "q": "Define prosopagnosia and name the specific gyrus damaged in this condition.",
@@ -882,13 +882,13 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "Which basal forebrain cholinergic nucleus degenerates early in Alzheimer's disease, contributing to profound cholinergic deficit and cognitive/memory decline?",
    "options": [
-    "Nucleus basalis of Meynert (which projects widespread acetylcholine throughout the cerebral neocortex and hippocampus; targeted therapeutically by acetylcholinesterase inhibitors such as donepezil, rivastigmine, and galantamine)",
-    "Locus coeruleus only",
-    "Red nucleus in the midbrain",
-    "Inferior olivary nucleus"
+    "Nucleus basalis of Meynert, which provides widespread cortical acetylcholine",
+    "Locus coeruleus, which provides widespread cortical acetylcholine",
+    "Red nucleus, which provides widespread cortical dopamine",
+    "Inferior olive, which provides widespread cortical serotonin"
    ],
    "answer": 0,
-   "explain": "Degeneration of cholinergic neurons in the nucleus basalis of Meynert and medial septal nucleus underpins the rationale for central cholinesterase inhibitors in Alzheimer's disease.",
+   "explain": "Degeneration of cholinergic neurons in the nucleus basalis of Meynert and medial septal nucleus underpins the rationale for central cholinesterase inhibitors in Alzheimer's disease. Cholinergic neurons in the nucleus basalis of Meynert project widely to the cerebral cortex, while the medial septal nucleus projects to the hippocampus. Their degeneration contributes to cholinergic deficits in Alzheimer's disease; central acetylcholinesterase inhibitors increase synaptic acetylcholine.",
    "verified": false,
    "open": {
     "q": "Name the basal forebrain cholinergic nucleus that degenerates in Alzheimer's disease and the drug class used to boost its synaptic neurotransmitter.",
@@ -905,13 +905,13 @@
    "sub": "CSF Production, Circulation, Blood-Brain Barrier, and Hydrocephalus",
    "q": "How does normal Cerebrospinal Fluid (CSF) composition compare with arterial plasma in terms of protein, glucose, Cl-, Mg2+, K+, and Ca2+ concentrations?",
    "options": [
-    "CSF has markedly LOWER protein (~15-45 mg/dL vs ~7,000 mg/dL in plasma), LOWER glucose (~60% of serum glucose, ~50-75 mg/dL), LOWER K+ (~2.9 vs 4.5 mEq/L) and Ca2+, and slightly HIGHER Cl- (~125 vs 103 mEq/L) and Mg2+, with 0-5 lymphocytes/uL and zero RBCs",
-    "CSF contains 10,000 mg/dL albumin and 500 neutrophils/uL normally",
-    "CSF glucose is normally three times higher than blood glucose",
-    "CSF has identical protein concentration to whole blood plasma"
+    "CSF has low protein, glucose, K+ and Ca2+, but higher Cl− and Mg2+ than plasma",
+    "CSF has high protein, glucose, K+ and Ca2+, but lower Cl− and Mg2+ than plasma",
+    "CSF has the same protein and electrolyte composition as plasma",
+    "CSF normally contains abundant neutrophils and red blood cells"
    ],
    "answer": 0,
-   "explain": "Because CSF is actively secreted by choroid plexus Na+/K+-ATPase and carbonic anhydrase transport (not a passive ultrafiltrate), it has higher Cl-/Mg2+ and lower K+/Ca2+/protein than plasma.",
+   "explain": "Because CSF is actively secreted by choroid plexus Na+/K+-ATPase and carbonic anhydrase transport (not a passive ultrafiltrate), it has higher Cl-/Mg2+ and lower K+/Ca2+/protein than plasma. Normal CSF has very low protein (~15–45 mg/dL), glucose around 60% of plasma, lower K+ and Ca2+, and slightly higher Cl− and Mg2+. It normally contains 0–5 lymphocytes/µL and no red blood cells.",
    "verified": false,
    "open": {
     "q": "Compare normal CSF versus blood plasma for: (1) protein concentration, (2) glucose concentration, (3) K+ concentration, and (4) Cl- concentration.",
@@ -928,13 +928,13 @@
    "sub": "CSF Production, Circulation, Blood-Brain Barrier, and Hydrocephalus",
    "q": "What is the 'Monro-Kellie doctrine' of intracranial pressure (ICP), and what is the 'Cushing reflex' (Cushing triad) when ICP rises critically?",
    "options": [
-    "Monro-Kellie doctrine: because the adult cranium is a rigid, non-expansile vault containing brain parenchyma (~80%), blood (~10%), and CSF (~10%), an increase in any one component (tumor, hematoma, edema) must be compensated by displacement of venous blood and CSF before ICP rises steeply; Cushing triad of severe intracranial hypertension: 1) Hypertension (widening pulse pressure), 2) Reflex Bradycardia (baroreceptor-mediated), and 3) Irregular respirations (Cheyne-Stokes/Biot's)",
-    "Cushing triad consists of severe hypotension, tachycardia, and hyperventilation",
-    "The adult skull expands freely to accommodate large subdural hematomas without ICP change",
-    "Cushing reflex is triggered by low intraocular pressure"
+    "Rigid skull limits total brain/blood/CSF volume; raised ICP may cause hypertension, bradycardia and irregular breathing",
+    "Rigid skull permits brain volume to expand without displacing blood or CSF; raised ICP causes hypotension and tachycardia",
+    "Monro–Kellie describes spinal CSF pressure only; Cushing triad is hypotension, tachycardia and regular breathing",
+    "Cushing reflex is caused by low ICP and produces bradycardia, hypotension and apnoea"
    ],
    "answer": 0,
-   "explain": "Cerebral perfusion pressure (CPP) = MAP - ICP. When rising ICP compresses brainstem arterioles, medullary ischemia triggers massive sympathetic vasoconstriction (raising MAP to preserve CPP), which then triggers carotid/aortic baroreceptor reflex bradycardia!",
+   "explain": "Cerebral perfusion pressure (CPP) = MAP - ICP. When rising ICP compresses brainstem arterioles, medullary ischemia triggers massive sympathetic vasoconstriction (raising MAP to preserve CPP), which then triggers carotid/aortic baroreceptor reflex bradycardia! The Monro–Kellie doctrine states that total intracranial volume (brain, blood and CSF) is constrained by the rigid skull. Rising ICP may trigger sympathetic hypertension to preserve cerebral perfusion, followed by baroreflex bradycardia and irregular respirations (Cushing triad).",
    "verified": false,
    "open": {
     "q": "State the Monro-Kellie doctrine and list the three components of Cushing's triad in severe intracranial hypertension.",
@@ -974,13 +974,13 @@
    "sub": "Limbic System, Papez Circuit, and Amygdala",
    "q": "What are the physiological roles of the 'nucleus accumbens (ventral striatum)' and the 'mesolimbic dopamine pathway' from the Ventral Tegmental Area (VTA)?",
    "options": [
-    "VTA dopaminergic projections to the nucleus accumbens, amygdala, and prefrontal cortex encode reward prediction error, motivation, salience, and reinforcement learning; virtually all addictive drugs (cocaine, amphetamines, opioids, nicotine, ethanol) surge extracellular dopamine in the nucleus accumbens",
-    "VTA releases glycine onto the spinal cord to inhibit knee jerks",
-    "Nucleus accumbens regulates renal potassium excretion",
-    "Mesolimbic pathway controls pupillary constriction to light"
+    "VTA dopamine projections to nucleus accumbens support reward, motivation and reinforcement",
+    "Substantia nigra dopamine projections to spinal cord control nociception and reflexes",
+    "Locus coeruleus noradrenaline projections to nucleus accumbens suppress reward",
+    "Red nucleus glutamate projections to amygdala regulate renal function"
    ],
    "answer": 0,
-   "explain": "Midbrain VTA dopamine neurons fire bursts when a reward is better than predicted (positive reward prediction error), reinforcing motivated behaviors and driving addiction neuroplasticity.",
+   "explain": "Midbrain VTA dopamine neurons fire bursts when a reward is better than predicted (positive reward prediction error), reinforcing motivated behaviors and driving addiction neuroplasticity. The mesolimbic pathway originates in the ventral tegmental area and projects to the nucleus accumbens and other limbic regions. Dopamine signalling contributes to reward prediction, motivation, salience and reinforcement learning and is altered by addictive drugs.",
    "verified": false,
    "open": {
     "q": "Name the origin, target nucleus, primary neurotransmitter, and core behavioral function of the mesolimbic reward pathway.",
@@ -997,13 +997,13 @@
    "sub": "Hypothalamus: Autonomic, Endocrine, Feeding, and Thermoregulatory Nuclei",
    "q": "What is 'Diabetes Insipidus' (central vs nephrogenic), and how does a lesion of the supraoptic/paraventricular hypothalamic nuclei or pituitary stalk affect plasma and urine osmolarity?",
    "options": [
-    "Loss of hypothalamic ADH (arginine vasopressin) synthesis/secretion (central DI) or renal V2 receptor unresponsiveness (nephrogenic DI) impairs water reabsorption in the renal collecting ducts, causing massive polyuria (>3-10 L/day of dilute urine with urine osmolarity <100-200 mOsm/kg), polydipsia, and hypernatremia/elevated plasma osmolarity (>295 mOsm/kg)",
-    "Excess ADH secretion causing concentrated urine and severe hyponatremia",
-    "Hyperglycemia with glucosuria due to insulin deficiency",
-    "Complete anuria with urine osmolarity of 1,400 mOsm/kg"
+    "ADH deficiency or renal V2 resistance causes dilute polyuria, polydipsia and hypernatraemia",
+    "Excess ADH causes dilute polyuria, polydipsia and hypernatraemia",
+    "Insulin deficiency causes concentrated urine and reduced plasma osmolarity",
+    "Aldosterone deficiency causes anuria with highly concentrated urine"
    ],
    "answer": 0,
-   "explain": "Central DI responds to exogenous desmopressin (DDAVP, a V2 agonist) with a >50% rise in urine osmolarity, whereas nephrogenic DI fails to concentrate urine after desmopressin.",
+   "explain": "Central DI responds to exogenous desmopressin (DDAVP, a V2 agonist) with a >50% rise in urine osmolarity, whereas nephrogenic DI fails to concentrate urine after desmopressin. Central diabetes insipidus results from deficient ADH synthesis or release; nephrogenic DI results from renal resistance, often involving V2 receptors. Both impair collecting-duct water reabsorption, causing large volumes of dilute urine, thirst and possible hypernatraemia. Central DI responds to desmopressin.",
    "verified": false,
    "open": {
     "q": "State the hypothalamic nuclei damaged in central diabetes insipidus and the resulting changes in urine volume, urine osmolarity, and plasma sodium.",
@@ -1066,13 +1066,13 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "How do 'anterograde amnesia' and 'retrograde amnesia' differ, and why does bilateral hippocampal damage spare distant childhood memories ('Ribot's law')?",
    "options": [
-    "Anterograde amnesia is inability to form NEW long-term declarative memories after the brain injury; Retrograde amnesia is loss of memories formed BEFORE the injury; distant childhood memories are spared because over months to years, systems consolidation transfers long-term memory storage from the hippocampus into distributed neocortical networks",
-    "Anterograde amnesia erases memories from 40 years ago while allowing new learning",
-    "The hippocampus permanently stores every memory for 90 years without neocortical involvement",
-    "Ribot's law states that recent memories are preserved while childhood memories are always lost first"
+    "Anterograde: impaired new learning; retrograde: loss of pre-injury memories; remote memories are relatively spared",
+    "Anterograde: loss of childhood memories; retrograde: inability to form new memories",
+    "Both terms describe loss of procedural motor skills after cerebellar injury",
+    "Hippocampal injury selectively erases remote memories while preserving recent memories"
    ],
    "answer": 0,
-   "explain": "Ribot's gradient (recent memories are more vulnerable than remote consolidated memories after medial temporal damage) reflects gradual hippocampal-to-neocortical memory consolidation.",
+   "explain": "Ribot's gradient (recent memories are more vulnerable than remote consolidated memories after medial temporal damage) reflects gradual hippocampal-to-neocortical memory consolidation. Anterograde amnesia impairs formation of new long-term declarative memories; retrograde amnesia affects memories formed before injury. Remote memories are often less vulnerable because systems consolidation gradually distributes long-term storage across neocortical networks.",
    "verified": false,
    "open": {
     "q": "Distinguish anterograde amnesia from retrograde amnesia and explain why remote memories are preserved after hippocampal damage.",
@@ -1112,13 +1112,13 @@
    "sub": "Clinical Correlations",
    "q": "A 64-year-old right-handed man presents with sudden difficulty speaking after an ischemic stroke. His speech is slow, halting, and telegraphic ('Walk... dog... park'), omitting small grammatical connecting words, and he appears visibly frustrated by his errors. He follows three-step verbal commands accurately, cannot repeat 'No ifs, ands, or buts,' and has right facial droop and right arm weakness. Which artery and cortical area are infarcted?",
    "options": [
-    "Superior division of the Left Middle Cerebral Artery (MCA) supplying Broca's area (left inferior frontal gyrus, Brodmann 44/45) and adjacent precentral motor cortex",
-    "Inferior division of the Left MCA supplying Wernicke's area",
-    "Left Posterior Cerebral Artery supplying the occipital pole",
-    "Right Anterior Cerebral Artery supplying the medial frontal lobe"
+    "Superior division of left MCA supplying Broca's area and adjacent motor cortex",
+    "Inferior division of left MCA supplying Wernicke's area and auditory cortex",
+    "Left PCA supplying the occipital visual cortex and splenium",
+    "Right ACA supplying the medial frontal and paracentral regions"
    ],
    "answer": 0,
-   "explain": "Non-fluent telegraphic speech + intact comprehension + impaired repetition + right face/arm hemiparesis localizes to Broca's area and adjacent M1 (superior division of left MCA).",
+   "explain": "Non-fluent telegraphic speech + intact comprehension + impaired repetition + right face/arm hemiparesis localizes to Broca's area and adjacent M1 (superior division of left MCA). Non-fluent telegraphic speech, intact comprehension, impaired repetition and right face/arm weakness localise to Broca's area and adjacent primary motor cortex, supplied by the superior division of the left MCA.",
    "verified": false,
    "open": {
     "q": "Identify the aphasia type, cortical area, and occluded arterial branch in a patient with non-fluent telegraphic speech, intact comprehension, impaired repetition, and right face/arm weakness.",
@@ -1457,13 +1457,13 @@
    "sub": "Clinical Correlations",
    "q": "A 33-year-old man sustains an acute epidural hematoma from a middle meningeal artery tear. In the emergency department, his blood pressure rises to 198/112 mmHg, his heart rate drops to 44 bpm, and his breathing becomes irregular. Why is his heart rate dropping despite severe intracranial emergency?",
    "options": [
-    "Cushing reflex: rising ICP compresses brainstem vessels, triggering massive sympathetic vasoconstriction (hypertension) to maintain cerebral perfusion pressure, which activates carotid sinus and aortic arch baroreceptors to induce vagal reflex bradycardia",
-    "The epidural hematoma directly stimulates the sinoatrial node",
-    "Hyperventilation directly paralyzes cardiac pacemaker cells",
-    "Low intracranial pressure stimulates sympathetic cardiac nerves"
+    "Raised ICP causes sympathetic hypertension, followed by baroreflex vagal bradycardia",
+    "Raised ICP directly stimulates the SA node, causing tachycardia and hypertension",
+    "Low ICP activates vagal withdrawal, causing hypertension and bradycardia",
+    "Raised ICP suppresses sympathetic output, causing hypotension and tachycardia"
    ],
    "answer": 0,
-   "explain": "Cushing's triad (hypertension, bradycardia, irregular respirations) is an ominous sign of critically elevated ICP and impending brainstem herniation.",
+   "explain": "Cushing's triad (hypertension, bradycardia, irregular respirations) is an ominous sign of critically elevated ICP and impending brainstem herniation. Critically raised ICP compromises brainstem perfusion and triggers intense sympathetic vasoconstriction to preserve cerebral perfusion pressure. The resulting hypertension activates arterial baroreceptors, increasing vagal output and slowing the heart; irregular respirations complete Cushing's triad.",
    "verified": false,
    "open": {
     "q": "Explain the physiological mechanism producing bradycardia during Cushing's triad in a patient with critically elevated intracranial pressure.",
