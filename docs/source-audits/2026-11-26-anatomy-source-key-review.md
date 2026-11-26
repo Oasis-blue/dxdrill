@@ -35,6 +35,10 @@ The book uses true/false-style statement sets and provides explanatory answers. 
 | Q127, statement D | The explanation says contraction of puborectalis helps defaecation. This reverses its principal continence role. | Puborectalis contraction maintains the anorectal angle and supports continence. Defaecation requires relaxation of the puborectalis sling, with straightening of the anorectal angle. |
 | Q131, statement E | The explanation presents portal hypertension as the mechanism producing internal haemorrhoids through the portosystemic anastomosis. | The superior and middle/inferior rectal venous channels do form a portosystemic connection, but internal haemorrhoids are principally enlargement/displacement of the normal anal vascular cushions; portal hypertension should not be presented as their general or defining cause. Distinguish rectal varices from haemorrhoids. |
 
+| Q133, statement B | The explanation suggests the female urethra may lengthen from about 4 cm to 10 cm in later pregnancy. | The female urethra is generally about 4 cm long. The stated pregnancy-related increase to 10 cm is not a standard anatomical fact and should not be taught without a reliable, specific source. |
+| Q135, statement E | The explanation calls “secondary spermatogonia” haploid. | Spermatogonia are diploid. Meiosis produces haploid secondary spermatocytes; spermatids and spermatozoa are also haploid. “Secondary spermatogonia” is incorrect terminology. |
+| Q139, statement A | The explanation assigns the seminal vesicles and ejaculatory ducts to the pelvic part of the urogenital sinus. | The seminal vesicles and ejaculatory ducts develop from the mesonephric (Wolffian) ducts. The prostate and much of the urethral epithelium arise from the urogenital sinus. Do not attribute the seminal vesicles/ejaculatory ducts to the urogenital sinus. |
+
 These are targeted findings from the answer/explanation section, not evidence that every item in the volume has been checked. The source's true/false format is retained only as context; no source question text is reproduced.
 
 ## DxDrill policy and follow-up
