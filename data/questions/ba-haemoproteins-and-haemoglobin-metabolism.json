@@ -1,943 +1,943 @@
 {
-  "topic": "ba-haemoproteins-and-haemoglobin-metabolism",
-  "questions": [
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-001",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "Which oxidation state of iron is required inside the protoporphyrin IX ring of hemoglobin and myoglobin to bind molecular oxygen reversibly?",
-      "options": [
-        "Ferrous (Fe2+)",
-        "Ferric (Fe3+)",
-        "Elemental (Fe0)",
-        "Ferryl (Fe4+)"
-      ],
-      "answer": 0,
-      "explain": "Only ferrous iron (Fe2+) in heme can form a reversible coordination bond with oxygen; oxidation to ferric iron (Fe3+) produces methemoglobin, which cannot bind oxygen.",
-      "verified": false,
-      "open": {
-        "q": "State the oxidation state of iron required in hemoglobin to bind molecular oxygen reversibly.",
-        "accept": [
-          "Ferrous",
-          "Fe2+",
-          "Ferrous iron",
-          "+2"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-002",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "Which specific histidine residue in the globin pocket forms a direct covalent coordination bond with the fifth coordination site of heme iron?",
-      "options": [
-        "Distal histidine (E7)",
-        "Proximal histidine (F8)",
-        "C-terminal histidine (HC3)",
-        "N-terminal valine"
-      ],
-      "answer": 1,
-      "explain": "The proximal histidine (His F8) coordinates directly with the fifth coordination position of Fe2+, pulling the iron into the porphyrin plane upon oxygen binding to trigger allosteric subunit shifts.",
-      "verified": false,
-      "open": {
-        "q": "Name the histidine residue in globin chains that coordinates directly with the fifth coordination site of heme iron.",
-        "accept": [
-          "Proximal histidine",
-          "His F8",
-          "Histidine F8"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-003",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "What is the primary structural role of the distal histidine (His E7) in myoglobin and hemoglobin?",
-      "options": [
-        "Covalently anchors the vinyl side chains of protoporphyrin IX",
-        "Binds 2,3-bisphosphoglycerate in the central cavity",
-        "Forms a hydrogen bond with bound O2 and sterically hinders linear binding of carbon monoxide",
-        "Donates electrons to reduce ferric iron back to ferrous iron"
-      ],
-      "answer": 2,
-      "explain": "The distal histidine (His E7) stabilizes bound bent O2 via hydrogen bonding while forcing carbon monoxide to bind at an angle, reducing CO affinity from ~25,000-fold in free heme to ~200-fold in intact hemoglobin.",
-      "verified": false,
-      "open": {
-        "q": "Name the globin residue that forms a hydrogen bond with bound oxygen and sterically reduces carbon monoxide affinity.",
-        "accept": [
-          "Distal histidine",
-          "His E7",
-          "Histidine E7"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-004",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "What is the polypeptide subunit composition of normal adult hemoglobin A (HbA)?",
-      "options": [
-        "Two alpha and two gamma chains",
-        "Two alpha and two delta chains",
-        "Four beta chains",
-        "Two alpha and two beta chains"
-      ],
-      "answer": 3,
-      "explain": "Adult hemoglobin A (HbA, ~97% of adult hemoglobin) is an alpha2-beta2 heterotetramer, whereas HbA2 is alpha2-delta2 (~2-3%) and fetal hemoglobin (HbF) is alpha2-gamma2.",
-      "verified": false,
-      "open": {
-        "q": "State the globin chain composition of normal major adult hemoglobin (HbA).",
-        "accept": [
-          "Two alpha and two beta chains",
-          "alpha2 beta2",
-          "Two alpha, two beta"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-005",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "Besides hemoglobin and myoglobin, which group of heme-containing enzymes utilizes heme iron cycling between Fe2+ and Fe3+ to transfer single electrons in the mitochondrial respiratory chain?",
-      "options": [
-        "Cytochromes",
-        "Carbonic anhydrases",
-        "Superoxide dismutases",
-        "Glutathione peroxidases"
-      ],
-      "answer": 0,
-      "explain": "Cytochromes (a, b, c) are haemoproteins whose iron reversibly alternates between ferrous (Fe2+) and ferric (Fe3+) states to carry electrons along the electron transport chain.",
-      "verified": false,
-      "open": {
-        "q": "Name the class of electron-transferring haemoproteins in the electron transport chain whose iron cycles between Fe2+ and Fe3+.",
-        "accept": [
-          "Cytochromes",
-          "Cytochrome"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-006",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oxygen Transport and Allosteric Regulation",
-      "q": "Why does hemoglobin exhibit a sigmoidal oxygen dissociation curve whereas myoglobin exhibits a hyperbolic curve?",
-      "options": [
-        "Myoglobin has a higher P50 than hemoglobin",
-        "Hemoglobin is a tetramer exhibiting positive cooperativity as oxygen binding shifts it from the T (taut) state to the R (relaxed) state",
-        "Myoglobin binds four molecules of 2,3-bisphosphoglycerate",
-        "Hemoglobin contains ferric iron while myoglobin contains ferrous iron"
-      ],
-      "answer": 1,
-      "explain": "Binding of the first O2 molecule to deoxyhemoglobin (T state) pulls Fe2+ into the heme plane, breaking inter-subunit salt bridges and shifting the tetramer toward the high-affinity R state (Hill coefficient ~2.8).",
-      "verified": false,
-      "open": {
-        "q": "What term describes the phenomenon in hemoglobin whereby binding of one oxygen molecule increases the oxygen affinity of the remaining subunits?",
-        "accept": [
-          "Positive cooperativity",
-          "Cooperativity",
-          "Allosteric cooperativity"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-007",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oxygen Transport and Allosteric Regulation",
-      "q": "How do elevated H+ (low pH) and increased PaCO2 facilitate oxygen unloading in metabolically active peripheral tissues (the Bohr effect)?",
-      "options": [
-        "They covalently oxidize heme iron to Fe3+",
-        "They bind directly to the heme iron in place of oxygen",
-        "Protonation of specific histidine residues stabilizes salt bridges of the low-affinity T state, shifting the oxygen dissociation curve to the right",
-        "They stimulate red blood cell synthesis of fetal hemoglobin"
-      ],
-      "answer": 2,
-      "explain": "In metabolically active tissues, high CO2 and H+ protonate residues such as His146 on beta-chains, stabilizing ionic salt bridges of the deoxy T state and shifting the curve rightward (increasing P50) to unload O2.",
-      "verified": false,
-      "open": {
-        "q": "Name the physiological effect by which decreased pH and increased CO2 promote oxygen release from hemoglobin in peripheral tissues.",
-        "accept": [
-          "Bohr effect",
-          "The Bohr effect"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-008",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oxygen Transport and Allosteric Regulation",
-      "q": "Where does 2,3-bisphosphoglycerate (2,3-BPG) bind on adult deoxyhemoglobin to decrease its oxygen affinity?",
-      "options": [
-        "Directly to the sixth coordination site of each heme iron",
-        "To the exterior surface of the alpha chains",
-        "To the proximal histidine F8 residue",
-        "In the positively charged central cavity between the two beta-globin subunits"
-      ],
-      "answer": 3,
-      "explain": "Negatively charged 2,3-BPG binds positively charged lysine and histidine residues lining the central cavity between the beta chains of T-state deoxyhemoglobin, stabilizing the T state and promoting O2 unloading.",
-      "verified": false,
-      "open": {
-        "q": "Between which two globin subunits does 2,3-bisphosphoglycerate bind in the central cavity of adult deoxyhemoglobin?",
-        "accept": [
-          "Beta subunits",
-          "Beta chains",
-          "Two beta chains",
-          "Beta-globin chains"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-009",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oxygen Transport and Allosteric Regulation",
-      "q": "Why does fetal hemoglobin (HbF, alpha2-gamma2) have a higher oxygen affinity than maternal adult hemoglobin (HbA, alpha2-beta2)?",
-      "options": [
-        "Gamma-globin chains have serine instead of histidine at position 143, reducing positive charge and lowering affinity for 2,3-BPG",
-        "HbF lacks proximal histidine residues",
-        "HbF binds eight molecules of oxygen per tetramer",
-        "Fetal erythrocytes lack carbonic anhydrase"
-      ],
-      "answer": 0,
-      "explain": "Replacing positively charged His143 in beta chains with neutral Ser143 in gamma chains weakens 2,3-BPG binding to HbF, keeping HbF shifted toward the high-affinity R state to extract O2 across the placenta.",
-      "verified": false,
-      "open": {
-        "q": "Which amino acid substitution in gamma-globin chains (replacing His143 of beta-globin) decreases 2,3-BPG binding to fetal hemoglobin?",
-        "accept": [
-          "Serine",
-          "Ser143",
-          "Serine 143"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-010",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oxygen Transport and Allosteric Regulation",
-      "q": "How is the majority of carbon dioxide transported in venous blood from peripheral tissues to the lungs?",
-      "options": [
-        "Dissolved physically in plasma",
-        "As plasma bicarbonate ions (HCO3-) generated via erythrocyte carbonic anhydrase and exported via the chloride shift",
-        "Bound directly to heme iron as carboxyhemoglobin",
-        "Bound to plasma albumin"
-      ],
-      "answer": 1,
-      "explain": "About 70-80% of CO2 enters RBCs, is hydrated by carbonic anhydrase to H2CO3, dissociates into H+ (buffered by deoxyhemoglobin) and HCO3-, and exits into plasma in exchange for Cl- via Band 3 (AE1); ~10-15% forms carbaminohemoglobin on N-terminal amino groups.",
-      "verified": false,
-      "open": {
-        "q": "In what chemical form is approximately 70 to 80% of carbon dioxide transported in blood from tissues to the lungs?",
-        "accept": [
-          "Bicarbonate",
-          "Bicarbonate ions",
-          "HCO3-"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-011",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "In which two subcellular compartments do the eight enzymatic steps of heme biosynthesis occur?",
-      "options": [
-        "Nucleus and Golgi apparatus",
-        "Rough endoplasmic reticulum and lysosomes",
-        "Mitochondria and cytosol",
-        "Peroxisomes and plasma membrane"
-      ],
-      "answer": 2,
-      "explain": "The first step (ALA synthase) and final three steps (coproporphyrinogen oxidase, protoporphyrinogen oxidase, ferrochelatase) occur in mitochondria, while the four intermediate steps occur in the cytosol.",
-      "verified": false,
-      "open": {
-        "q": "Name the two cellular compartments across which the pathway of heme biosynthesis is divided.",
-        "accept": [
-          "Mitochondria and cytosol",
-          "Cytosol and mitochondria"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-012",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "Which enzyme catalyzes the rate-limiting step of heme synthesis by condensing glycine and succinyl-CoA into delta-aminolevulinic acid (ALA)?",
-      "options": [
-        "ALA dehydratase",
-        "Porphobilinogen deaminase",
-        "Ferrochelatase",
-        "ALA synthase"
-      ],
-      "answer": 3,
-      "explain": "Delta-aminolevulinic acid synthase (ALAS1 in liver, ALAS2 in erythroid precursors) requires pyridoxal phosphate (vitamin B6) and catalyzes the committed, rate-limiting step of heme synthesis.",
-      "verified": false,
-      "open": {
-        "q": "Name the rate-limiting enzyme of heme biosynthesis.",
-        "accept": [
-          "ALA synthase",
-          "Delta-aminolevulinic acid synthase",
-          "ALAS"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-013",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "How is hepatic ALA synthase (ALAS1) regulated differently from erythroid ALA synthase (ALAS2)?",
-      "options": [
-        "ALAS1 is repressed by heme and induced by some drugs; ALAS2 is regulated mainly by iron availability",
-        "ALAS1 is activated by heme, whereas ALAS2 is inhibited by heme",
-        "ALAS1 is cytosolic, whereas ALAS2 is nuclear",
-        "ALAS1 requires biotin, whereas ALAS2 requires vitamin B12"
-      ],
-      "answer": 0,
-      "explain": "In hepatocytes, free heme represses ALAS1 transcription, blocks its mitochondrial import, and inhibits its activity; in developing erythroblasts, iron deficiency stabilizes IRP binding to the 5'-IRE of ALAS2 mRNA to prevent excess protoporphyrin synthesis without iron.",
-      "verified": false,
-      "open": {
-        "q": "What clinical therapeutic agent (oxidized heme) is infused in acute intermittent porphyria to repress hepatic ALAS1?",
-        "accept": [
-          "Hemin",
-          "Hematin",
-          "Heme arginate"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-014",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "Which mitochondrial enzyme catalyzes the final step of heme biosynthesis by inserting ferrous iron (Fe2+) into protoporphyrin IX?",
-      "options": [
-        "Uroporphyrinogen III synthase",
-        "Ferrochelatase",
-        "ALA dehydratase",
-        "Protoporphyrinogen oxidase"
-      ],
-      "answer": 1,
-      "explain": "Ferrochelatase (heme synthase) inserts Fe2+ into protoporphyrin IX; its inhibition by lead or genetic deficiency in erythropoietic protoporphyria causes accumulation of free erythrocyte protoporphyrin.",
-      "verified": false,
-      "open": {
-        "q": "Name the final enzyme of heme biosynthesis that inserts ferrous iron into protoporphyrin IX.",
-        "accept": [
-          "Ferrochelatase",
-          "Heme synthase"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-015",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "A 3-year-old child living in an old building with peeling paint presents with microcytic anemia, basophilic stippling of erythrocytes, abdominal colic, and elevated blood free erythrocyte protoporphyrin and urinary delta-ALA. Which two heme synthesis enzymes are inhibited?",
-      "options": [
-        "ALA synthase and PBG deaminase",
-        "Uroporphyrinogen III synthase and coproporphyrinogen oxidase",
-        "ALA dehydratase and ferrochelatase",
-        "Heme oxygenase and biliverdin reductase"
-      ],
-      "answer": 2,
-      "explain": "Lead binds sulfhydryl groups and displaces zinc in cytoplasmic ALA dehydratase (elevating delta-ALA) and inhibits mitochondrial ferrochelatase (elevating protoporphyrin IX and causing sideroblastic anemia).",
-      "verified": false,
-      "open": {
-        "q": "Name the two enzymes in heme biosynthesis inhibited by lead poisoning.",
-        "accept": [
-          "ALA dehydratase and ferrochelatase",
-          "Delta-aminolevulinic acid dehydratase and ferrochelatase"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-016",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "A 27-year-old woman develops severe abdominal pain, constipation, peripheral neuropathy, and acute psychosis after taking phenobarbital. Her urine turns dark reddish-brown upon standing, and she has no skin photosensitivity. Which enzyme is deficient?",
-      "options": [
-        "Uroporphyrinogen decarboxylase",
-        "Ferrochelatase",
-        "ALA dehydratase",
-        "Porphobilinogen deaminase"
-      ],
-      "answer": 3,
-      "explain": "Acute intermittent porphyria (AIP) is an autosomal dominant deficiency of porphobilinogen deaminase (hydroxymethylbilane synthase), causing accumulation of early non-photoreactive neurotoxic precursors (ALA and PBG).",
-      "verified": false,
-      "open": {
-        "q": "Deficiency of which enzyme causes acute intermittent porphyria?",
-        "accept": [
-          "Porphobilinogen deaminase",
-          "Hydroxymethylbilane synthase",
-          "PBG deaminase",
-          "HMBS"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-017",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "Why do late-step porphyrias such as porphyria cutanea tarda (uroporphyrinogen decarboxylase deficiency) cause blistering cutaneous photosensitivity, whereas acute intermittent porphyria does not?",
-      "options": [
-        "Porphyrins absorb visible light and generate reactive oxygen species; ALA and PBG do not have this photoreactive ring structure",
-        "Uroporphyrinogen decarboxylase is expressed only in epidermal keratinocytes",
-        "ALA and PBG are excreted exclusively in sweat",
-        "Porphyria cutanea tarda is caused by severe iron deficiency"
-      ],
-      "answer": 0,
-      "explain": "Early precursors (ALA and PBG) are non-cyclic and non-fluorescent, causing neurovisceral symptoms only; downstream tetrapyrrole rings (uroporphyrin, coproporphyrin, protoporphyrin) absorb Soret-band light (~400 nm) and generate tissue-damaging singlet oxygen.",
-      "verified": false,
-      "open": {
-        "q": "Deficiency of which enzyme causes porphyria cutanea tarda?",
-        "accept": [
-          "Uroporphyrinogen decarboxylase",
-          "UROD"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-018",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "What is the exact molecular mutation responsible for sickle cell hemoglobin (HbS)?",
-      "options": [
-        "Substitution of lysine for glutamate at position 6 of the beta-globin chain",
-        "Substitution of valine for glutamate at position 6 of the beta-globin chain",
-        "Deletion of both alpha-globin genes on chromosome 16",
-        "Substitution of tyrosine for proximal histidine F8"
-      ],
-      "answer": 1,
-      "explain": "In HbS (Glu6Val in beta-globin), replacing hydrophilic negatively charged glutamate with hydrophobic valine creates a sticky hydrophobic patch on deoxygenated HbS that polymerizes into rigid fibers.",
-      "verified": false,
-      "open": {
-        "q": "State the specific amino acid substitution in the beta-globin chain that produces hemoglobin S (HbS).",
-        "accept": [
-          "Glutamate to valine at position 6",
-          "Glu6Val",
-          "Valine replaces glutamate at position 6"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-019",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "How does hydroxyurea reduce vaso-occlusive crises in patients with sickle cell disease?",
-      "options": [
-        "Directly chelates ferrous iron in HbS",
-        "Converts valine-6 back to glutamate via post-translational modification",
-        "Increases synthesis of fetal hemoglobin (HbF), which interferes with deoxy-HbS polymerization",
-        "Inhibits red cell 2,3-bisphosphoglycerate synthesis"
-      ],
-      "answer": 2,
-      "explain": "Hydroxyurea induces gamma-globin expression and raises HbF levels; alpha2-gamma2 and hybrid alpha2-betaS-gamma tetramers cannot incorporate into deoxy-HbS polymers, preventing red cell sickling.",
-      "verified": false,
-      "open": {
-        "q": "Which type of hemoglobin is upregulated by hydroxyurea therapy to inhibit HbS polymerization in sickle cell disease?",
-        "accept": [
-          "Fetal hemoglobin",
-          "HbF",
-          "Hemoglobin F"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-020",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "In hemoglobin C disease (HbC), which amino acid replaces glutamate at position 6 of the beta-globin chain, leading to intracellular rod-shaped HbC crystals and target cells?",
-      "options": [
-        "Valine",
-        "Alanine",
-        "Aspartate",
-        "Lysine"
-      ],
-      "answer": 3,
-      "explain": "HbC results from a Glu6Lys substitution in beta-globin, reducing solubility and causing electrostatic crystallization of HbC within erythrocytes and mild chronic hemolytic anemia.",
-      "verified": false,
-      "open": {
-        "q": "Which amino acid replaces glutamate at position 6 of the beta-globin chain in hemoglobin C?",
-        "accept": [
-          "Lysine",
-          "Lys"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-021",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "Why does beta-thalassemia major typically become clinically apparent at 4 to 6 months of age rather than at birth?",
-      "options": [
-        "High fetal hemoglobin (HbF, alpha2-gamma2) levels at birth compensate for absent beta-globin until gamma-globin synthesis declines after infancy",
-        "Maternal IgG protects fetal red cells until 6 months",
-        "Beta-globin genes are not inherited until after birth",
-        "Bone marrow erythropoiesis does not begin until 6 months"
-      ],
-      "answer": 0,
-      "explain": "Fetal hemoglobin uses gamma-globin rather than beta-globin; symptoms appear around 6 months when physiological hemoglobin switching from gamma to beta fails, leaving unpaired alpha-globin chains to precipitate.",
-      "verified": false,
-      "open": {
-        "q": "Which insoluble globin chains precipitate inside erythroid precursors to cause ineffective erythropoiesis in beta-thalassemia major?",
-        "accept": [
-          "Alpha-globin chains",
-          "Unpaired alpha chains",
-          "Alpha chains"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-022",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "In four-gene deletion alpha-thalassemia (hydrops fetalis), which abnormal homotetramer forms in utero and causes severe fetal hypoxia due to its extremely high oxygen affinity?",
-      "options": [
-        "Hemoglobin H (beta4)",
-        "Hemoglobin Bart (gamma4)",
-        "Hemoglobin A2 (alpha2-delta2)",
-        "Hemoglobin S (alpha2-betaS2)"
-      ],
-      "answer": 1,
-      "explain": "Complete absence of alpha-globin chains in utero forces excess fetal gamma chains to form gamma4 tetramers (Hb Bart), which lack cooperativity and hold oxygen so tightly that tissues suffer fatal hypoxia.",
-      "verified": false,
-      "open": {
-        "q": "Name the abnormal gamma-globin homotetramer (gamma4) formed in severe four-gene deletion alpha-thalassemia.",
-        "accept": [
-          "Hemoglobin Bart",
-          "Hb Bart",
-          "Hb Barts",
-          "Hemoglobin Barts"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-023",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "What characteristic hemoglobin electrophoresis finding supports the diagnosis of beta-thalassemia minor (trait)?",
-      "options": [
-        "Markedly elevated HbS (>80%)",
-        "Presence of Hb Bart",
-        "Elevated HbA2 (>3.5%) and mildly elevated HbF",
-        "Complete absence of HbA"
-      ],
-      "answer": 2,
-      "explain": "Reduced synthesis of one beta-globin allele allows excess alpha chains to pair with delta and gamma chains, raising HbA2 (alpha2-delta2) above 3.5%.",
-      "verified": false,
-      "open": {
-        "q": "Which minor adult hemoglobin fraction (alpha2-delta2) is classically elevated over 3.5% on electrophoresis in beta-thalassemia trait?",
-        "accept": [
-          "HbA2",
-          "Hemoglobin A2"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-024",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
-      "q": "A 22-year-old patient treated with dapsone develops central cyanosis unresponsive to 100% supplemental oxygen, chocolate-brown arterial blood, and an oxygen saturation gap on pulse oximetry. Which enzyme system normally prevents this condition, and what is the first-line antidote?",
-      "options": [
-        "Superoxide dismutase; N-acetylcysteine",
-        "Carbonic anhydrase; sodium bicarbonate",
-        "Ferrochelatase; deferoxamine",
-        "Cytochrome b5 reductase (NADH-methemoglobin reductase); methylene blue"
-      ],
-      "answer": 3,
-      "explain": "Oxidizing drugs like dapsone, benzocaine, and nitrates oxidize heme Fe2+ to Fe3+ (methemoglobinemia); NADH-dependent cytochrome b5 reductase normally reduces Fe3+ back to Fe2+, and intravenous methylene blue accelerates NADPH-methemoglobin reductase to restore Fe2+.",
-      "verified": false,
-      "open": {
-        "q": "Name the first-line intravenous antidote used to treat acquired methemoglobinemia.",
-        "accept": [
-          "Methylene blue",
-          "Methylthioninium chloride"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-025",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
-      "q": "How does carbon monoxide (CO) poisoning impair tissue oxygen delivery in two distinct ways?",
-      "options": [
-        "CO binds haemoglobin with high affinity and shifts remaining oxygen binding toward higher affinity",
-        "CO oxidises all haem iron to Fe3+ and precipitates globin chains",
-        "CO cleaves protoporphyrin IX and depletes 2,3-BPG",
-        "CO inhibits carbonic anhydrase and causes metabolic alkalosis"
-      ],
-      "answer": 0,
-      "explain": "CO binds heme Fe2+ ~200 times more tightly than O2 and allosterically stabilizes the R state of partially occupied hemoglobin tetramers, preventing the remaining bound O2 from unloading in peripheral tissues.",
-      "verified": false,
-      "open": {
-        "q": "In which direction (left or right) does carbon monoxide shift the oxyhemoglobin dissociation curve of the remaining oxygen-binding sites?",
-        "accept": [
-          "Left",
-          "To the left",
-          "Leftward"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-026",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
-      "q": "Glycated hemoglobin (HbA1c) is formed non-enzymatically by the attachment of glucose to which specific amino acid residue of the beta-globin chain?",
-      "options": [
-        "Proximal histidine (F8)",
-        "N-terminal valine",
-        "Glutamate-6",
-        "Cysteine-93"
-      ],
-      "answer": 1,
-      "explain": "Glucose forms a reversible Schiff base with the N-terminal valine of beta-globin that undergoes an Amadori rearrangement into a stable ketoamine (HbA1c), reflecting average glycemia over the ~120-day erythrocyte lifespan.",
-      "verified": false,
-      "open": {
-        "q": "Name the N-terminal amino acid residue of the beta-globin chain that undergoes non-enzymatic glycation to form HbA1c.",
-        "accept": [
-          "Valine",
-          "N-terminal valine"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-027",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "Which microsomal enzyme in reticuloendothelial macrophages catalyzes the rate-limiting step of heme degradation, cleaving the porphyrin ring into biliverdin, ferrous iron, and carbon monoxide?",
-      "options": [
-        "Biliverdin reductase",
-        "UDP-glucuronosyltransferase",
-        "Heme oxygenase",
-        "Ferrochelatase"
-      ],
-      "answer": 2,
-      "explain": "Heme oxygenase uses NADPH and O2 to oxidize the alpha-methene bridge of heme, releasing green biliverdin, Fe2+ (recycled via transferrin/ferritin), and carbon monoxide.",
-      "verified": false,
-      "open": {
-        "q": "Name the enzyme in macrophages that cleaves the heme ring to produce biliverdin, iron, and carbon monoxide.",
-        "accept": [
-          "Heme oxygenase",
-          "HO-1"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-028",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "Which cytosolic NADPH-dependent enzyme reduces green biliverdin into orange-yellow unconjugated bilirubin in macrophages?",
-      "options": [
-        "Heme oxygenase",
-        "Beta-glucuronidase",
-        "Cytochrome P450 reductase",
-        "Biliverdin reductase"
-      ],
-      "answer": 3,
-      "explain": "Biliverdin reductase reduces the central methene bridge of biliverdin using NADPH to yield lipophilic unconjugated bilirubin.",
-      "verified": false,
-      "open": {
-        "q": "Name the NADPH-dependent enzyme that reduces biliverdin to unconjugated bilirubin.",
-        "accept": [
-          "Biliverdin reductase"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-029",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "Why is unconjugated bilirubin neurotoxic to neonates (kernicterus) when its plasma concentration exceeds albumin-binding capacity?",
-      "options": [
-        "Unbound unconjugated bilirubin can cross the immature BBB and injure basal ganglia and brainstem nuclei",
-        "It is water-soluble and blocks cerebral ventricles",
-        "It directly activates cortical NMDA receptors",
-        "It destroys myelin through autoimmune antibodies"
-      ],
-      "answer": 0,
-      "explain": "Free unbound unconjugated bilirubin is lipid-soluble and penetrates the neonatal blood-brain barrier, injuring mitochondria and neurons in the basal ganglia (globus pallidus) and subthalamic nuclei.",
-      "verified": false,
-      "open": {
-        "q": "Name the neurological syndrome caused by deposition of unconjugated bilirubin in the neonatal basal ganglia and brainstem.",
-        "accept": [
-          "Kernicterus",
-          "Bilirubin encephalopathy"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-030",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "How does blue-light phototherapy (wavelength ~450-460 nm) reduce serum unconjugated bilirubin in neonatal jaundice?",
-      "options": [
-        "Phototherapy induces hepatic UDP-glucuronosyltransferase transcription",
-        "Blue light converts bilirubin into more water-soluble photoisomers that can be excreted without conjugation",
-        "Blue light oxidises bilirubin directly into carbon dioxide",
-        "Phototherapy increases serum albumin synthesis"
-      ],
-      "answer": 1,
-      "explain": "Blue light converts native 4Z,15Z-bilirubin into polar photoisomers (4Z,15E-bilirubin and irreversible cyclized lumirubin) that bypass hepatic glucuronidation for biliary and renal excretion.",
-      "verified": false,
-      "open": {
-        "q": "Name the irreversible water-soluble structural photoisomer of bilirubin formed during neonatal phototherapy.",
-        "accept": [
-          "Lumirubin"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-031",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "What is the fate of conjugated bilirubin after it is secreted into the duodenum via bile?",
-      "options": [
-        "It is reabsorbed intact in the stomach",
-        "It is converted back into haem by pancreatic lipase",
-        "Intestinal bacteria form urobilinogen; most is converted to stercobilin, while a small fraction is reabsorbed or excreted as urobilin",
-        "It is degraded into urea by enterocytes"
-      ],
-      "answer": 2,
-      "explain": "Colonic anaerobes remove glucuronide groups and reduce bilirubin to urobilinogen; ~80% is excreted as brown stercobilin in feces, ~15-20% enters enterohepatic circulation, and ~2-5% is filtered by kidneys as yellow urobilin.",
-      "verified": false,
-      "open": {
-        "q": "Name the brown pigment formed by intestinal bacterial metabolism of bilirubin that gives normal feces its color.",
-        "accept": [
-          "Stercobilin"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-032",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "A 15-year-old girl presents with asymptomatic fluctuating jaundice since childhood. Laboratory workup shows total bilirubin of 4.2 mg/dL with 3.6 mg/dL conjugated (direct), normal liver transaminases, and a grossly black-pigmented liver on biopsy due to impaired canalicular excretion. Which syndrome does she have?",
-      "options": [
-        "Gilbert syndrome",
-        "Crigler-Najjar syndrome type I",
-        "Rotor syndrome",
-        "Dubin-Johnson syndrome"
-      ],
-      "answer": 3,
-      "explain": "Dubin-Johnson syndrome is an autosomal recessive mutation in the canalicular multidrug resistance-associated protein 2 (MRP2 / ABCC2) transporter, causing conjugated hyperbilirubinemia and black melanin-like pigment deposition in lysosomes (unlike Rotor syndrome, which lacks black liver pigmentation).",
-      "verified": false,
-      "open": {
-        "q": "Name the hereditary conjugated hyperbilirubinemia caused by MRP2 transporter deficiency that produces a characteristic black liver.",
-        "accept": [
-          "Dubin-Johnson syndrome"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-033",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "How do Crigler-Najjar syndrome type I and Crigler-Najjar syndrome type II differ in severity and response to phenobarbital?",
-      "options": [
-        "Type I has complete absence of UGT1A1 with fatal kernicterus risk and no response to phenobarbital, whereas Type II has partial UGT1A1 activity that improves with phenobarbital induction",
-        "Type I causes conjugated hyperbilirubinemia, whereas Type II causes unconjugated hyperbilirubinemia",
-        "Type I is X-linked, whereas Type II is mitochondrial",
-        "Type I responds completely to phenobarbital, whereas Type II requires liver transplantation"
-      ],
-      "answer": 0,
-      "explain": "Crigler-Najjar type I lacks any functional UGT1A1 gene product so enzyme inducers like phenobarbital cannot increase conjugation, whereas type II retains ~10% residual UGT1A1 activity that can be induced by phenobarbital.",
-      "verified": false,
-      "open": {
-        "q": "Which barbiturate enzyme inducer reduces serum bilirubin in Crigler-Najjar syndrome type II and Gilbert syndrome by upregulating UGT1A1?",
-        "accept": [
-          "Phenobarbital"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-034",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "Which four substituent side chains are attached to the eight beta-carbons of the four pyrrole rings in protoporphyrin IX?",
-      "options": [
-        "Four methyl, two vinyl, and two propionate groups",
-        "Four ethyl, two acetyl, and two methyl groups",
-        "Four propionate, two vinyl, and two hydroxyl groups",
-        "Eight methyl groups"
-      ],
-      "answer": 0,
-      "explain": "Protoporphyrin IX contains four methyl (-CH3), two vinyl (-CH=CH2), and two propionate (-CH2CH2COO-) side chains arranged asymmetrically (type IX isomer) around the tetrapyrrole macrocycle.",
-      "verified": false,
-      "open": {
-        "q": "List the three types of substituent side chains attached to the pyrrole rings of protoporphyrin IX.",
-        "accept": [
-          "Methyl, vinyl, and propionate",
-          "4 methyl, 2 vinyl, and 2 propionate"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-035",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oxygen Transport and Allosteric Regulation",
-      "q": "What is the Haldane effect in pulmonary capillaries?",
-      "options": [
-        "High CO2 increases hemoglobin affinity for oxygen",
-        "Oxygenation of hemoglobin in the lungs promotes dissociation of H+ and CO2 (carbaminohemoglobin) from hemoglobin to facilitate CO2 exhalation",
-        "2,3-BPG increases oxygen binding in the lungs",
-        "Low temperature decreases hemoglobin oxygen affinity"
-      ],
-      "answer": 1,
-      "explain": "The Haldane effect is the reciprocal of the Bohr effect: binding of O2 shifts hemoglobin to the R state, breaking salt bridges to release Bohr protons (which combine with HCO3- to form CO2) and decreasing carbamino-CO2 binding.",
-      "verified": false,
-      "open": {
-        "q": "Name the physiological effect whereby oxygenation of hemoglobin in the lungs promotes the release of carbon dioxide and hydrogen ions.",
-        "accept": [
-          "Haldane effect",
-          "The Haldane effect"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-036",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Biosynthesis and Porphyrias",
-      "q": "Why does acute alcohol ingestion or fasting frequently precipitate acute neurovisceral attacks in patients with acute intermittent porphyria?",
-      "options": [
-        "Alcohol directly destroys bone marrow erythroblasts",
-        "Fasting and alcohol induce PGC-1alpha and hepatic ALAS1 transcription, increasing flux through the blocked pathway and accumulating neurotoxic ALA and PBG",
-        "Alcohol inhibits renal excretion of conjugated bilirubin",
-        "Fasting increases insulin levels which activate ALA synthase"
-      ],
-      "answer": 2,
-      "explain": "Fasting induces hepatic PGC-1alpha, which coactivates transcription of ALAS1; carbohydrate loading (intravenous glucose) suppresses PGC-1alpha and downregulates ALAS1 during acute attacks.",
-      "verified": false,
-      "open": {
-        "q": "Which intravenous nutritional therapy is administered alongside hemin during an acute porphyria attack to suppress PGC-1alpha-mediated induction of hepatic ALAS1?",
-        "accept": [
-          "Glucose",
-          "Intravenous glucose",
-          "Dextrose",
-          "Carbohydrates"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-037",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobinopathies and Thalassemias",
-      "q": "What physiological and environmental factors trigger polymerization of deoxy-HbS and vaso-occlusive sickling crises in patients with sickle cell disease?",
-      "options": [
-        "Alkalosis, hyperoxia, and overhydration",
-        "High fetal hemoglobin and low 2,3-BPG",
-        "Hypothermia and low intracellular HbS concentration",
-        "Hypoxia, acidosis, dehydration (increased intracellular HbS concentration), and fever/infection"
-      ],
-      "answer": 3,
-      "explain": "Deoxygenation, acidosis (Bohr shift to T state), cellular dehydration (raising intracellular HbS concentration), and infection promote the deoxy T conformation of HbS required for polymer nucleation.",
-      "verified": false,
-      "open": {
-        "q": "Which conformational state of hemoglobin S (T or R) undergoes polymerization to cause erythrocyte sickling?",
-        "accept": [
-          "T state",
-          "Deoxy T state",
-          "Taut state",
-          "T"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-038",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
-      "q": "Why should methylene blue be avoided in a patient with methemoglobinemia who also has severe glucose 6-phosphate dehydrogenase (G6PD) deficiency?",
-      "options": [
-        "Methylene blue needs NADPH for activation; in G6PD deficiency it may be ineffective and worsen oxidative haemolysis",
-        "Methylene blue irreversibly binds haemoglobin A2",
-        "G6PD-deficient patients lack cytochrome b5 reductase completely",
-        "Methylene blue converts methaemoglobin into carboxyhaemoglobin"
-      ],
-      "answer": 0,
-      "explain": "Methylene blue acts as an electron shuttle using NADPH from the pentose phosphate pathway; in severe G6PD deficiency, NADPH is lacking and methylene blue acts as an oxidant causing hemolysis (ascorbic acid is used instead).",
-      "verified": false,
-      "open": {
-        "q": "Which vitamin antioxidant can be used as an alternative treatment for methemoglobinemia in patients with severe G6PD deficiency?",
-        "accept": [
-          "Ascorbic acid",
-          "Vitamin C"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-039",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Heme Catabolism and Bilirubin Metabolism",
-      "q": "Which laboratory profile of serum bilirubin and urine findings characterizes pre-hepatic (hemolytic) jaundice?",
-      "options": [
-        "Markedly elevated conjugated bilirubin, positive urine bilirubin, and absent urine urobilinogen",
-        "Predominantly unconjugated hyperbilirubinemia, negative urine bilirubin, and elevated urine urobilinogen",
-        "Equal elevation of conjugated and unconjugated bilirubin with acholic stools",
-        "Normal serum bilirubin with massive bilirubinuria"
-      ],
-      "answer": 1,
-      "explain": "In hemolytic jaundice, excess unconjugated bilirubin is albumin-bound (hence absent from urine), while increased hepatic conjugation and biliary excretion generate excess intestinal urobilinogen that is reabsorbed and excreted in urine.",
-      "verified": false,
-      "open": {
-        "q": "Is urinary bilirubin positive or negative in pure pre-hepatic (hemolytic) jaundice?",
-        "accept": [
-          "Negative",
-          "Absent"
-        ]
-      }
-    },
-    {
-      "id": "ba-haemoproteins-and-haemoglobin-metabolism-040",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Structure of Heme and Haemoproteins",
-      "q": "Which peroxisomal haemoprotein rapidly decomposes toxic hydrogen peroxide (H2O2) into water and molecular oxygen?",
-      "options": [
-        "Myeloperoxidase",
-        "Cytochrome c oxidase",
-        "Catalase",
-        "Nitric oxide synthase"
-      ],
-      "answer": 2,
-      "explain": "Catalase is a tetrameric heme-containing enzyme abundant in peroxisomes and erythrocytes that catalyzes 2 H2O2 -> 2 H2O + O2 at one of the highest turnover rates of any known enzyme.",
-      "verified": false,
-      "open": {
-        "q": "Name the peroxisomal haemoprotein enzyme that converts hydrogen peroxide into water and oxygen.",
-        "accept": [
-          "Catalase"
-        ]
-      }
-    }
-  ]
+ "topic": "ba-haemoproteins-and-haemoglobin-metabolism",
+ "questions": [
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "Which oxidation state of iron is required inside the protoporphyrin IX ring of hemoglobin and myoglobin to bind molecular oxygen reversibly?",
+   "options": [
+    "Ferrous (Fe2+)",
+    "Ferric (Fe3+)",
+    "Elemental (Fe0)",
+    "Ferryl (Fe4+)"
+   ],
+   "answer": 0,
+   "explain": "Only ferrous iron (Fe2+) in heme can form a reversible coordination bond with oxygen; oxidation to ferric iron (Fe3+) produces methemoglobin, which cannot bind oxygen.",
+   "verified": false,
+   "open": {
+    "q": "State the oxidation state of iron required in hemoglobin to bind molecular oxygen reversibly.",
+    "accept": [
+     "Ferrous",
+     "Fe2+",
+     "Ferrous iron",
+     "+2"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "Which specific histidine residue in the globin pocket forms a direct covalent coordination bond with the fifth coordination site of heme iron?",
+   "options": [
+    "Distal histidine (E7)",
+    "Proximal histidine (F8)",
+    "C-terminal histidine (HC3)",
+    "N-terminal valine"
+   ],
+   "answer": 1,
+   "explain": "The proximal histidine (His F8) coordinates directly with the fifth coordination position of Fe2+, pulling the iron into the porphyrin plane upon oxygen binding to trigger allosteric subunit shifts.",
+   "verified": false,
+   "open": {
+    "q": "Name the histidine residue in globin chains that coordinates directly with the fifth coordination site of heme iron.",
+    "accept": [
+     "Proximal histidine",
+     "His F8",
+     "Histidine F8"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "What is the primary structural role of the distal histidine (His E7) in myoglobin and hemoglobin?",
+   "options": [
+    "Covalently anchors the vinyl side chains of protoporphyrin IX",
+    "Binds 2,3-bisphosphoglycerate in the central cavity",
+    "Forms a hydrogen bond with bound O2 and sterically hinders linear binding of carbon monoxide",
+    "Donates electrons to reduce ferric iron back to ferrous iron"
+   ],
+   "answer": 2,
+   "explain": "The distal histidine (His E7) stabilizes bound bent O2 via hydrogen bonding while forcing carbon monoxide to bind at an angle, reducing CO affinity from ~25,000-fold in free heme to ~200-fold in intact hemoglobin.",
+   "verified": false,
+   "open": {
+    "q": "Name the globin residue that forms a hydrogen bond with bound oxygen and sterically reduces carbon monoxide affinity.",
+    "accept": [
+     "Distal histidine",
+     "His E7",
+     "Histidine E7"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "What is the polypeptide subunit composition of normal adult hemoglobin A (HbA)?",
+   "options": [
+    "Two alpha and two gamma chains",
+    "Two alpha and two delta chains",
+    "Four beta chains",
+    "Two alpha and two beta chains"
+   ],
+   "answer": 3,
+   "explain": "Adult hemoglobin A (HbA, ~97% of adult hemoglobin) is an alpha2-beta2 heterotetramer, whereas HbA2 is alpha2-delta2 (~2-3%) and fetal hemoglobin (HbF) is alpha2-gamma2.",
+   "verified": false,
+   "open": {
+    "q": "State the globin chain composition of normal major adult hemoglobin (HbA).",
+    "accept": [
+     "Two alpha and two beta chains",
+     "alpha2 beta2",
+     "Two alpha, two beta"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "Besides hemoglobin and myoglobin, which group of heme-containing enzymes utilizes heme iron cycling between Fe2+ and Fe3+ to transfer single electrons in the mitochondrial respiratory chain?",
+   "options": [
+    "Cytochromes",
+    "Carbonic anhydrases",
+    "Superoxide dismutases",
+    "Glutathione peroxidases"
+   ],
+   "answer": 0,
+   "explain": "Cytochromes (a, b, c) are haemoproteins whose iron reversibly alternates between ferrous (Fe2+) and ferric (Fe3+) states to carry electrons along the electron transport chain.",
+   "verified": false,
+   "open": {
+    "q": "Name the class of electron-transferring haemoproteins in the electron transport chain whose iron cycles between Fe2+ and Fe3+.",
+    "accept": [
+     "Cytochromes",
+     "Cytochrome"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-006",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oxygen Transport and Allosteric Regulation",
+   "q": "Why does hemoglobin exhibit a sigmoidal oxygen dissociation curve whereas myoglobin exhibits a hyperbolic curve?",
+   "options": [
+    "Myoglobin has a higher P50 than hemoglobin",
+    "Hemoglobin is a tetramer exhibiting positive cooperativity as oxygen binding shifts it from the T (taut) state to the R (relaxed) state",
+    "Myoglobin binds four molecules of 2,3-bisphosphoglycerate",
+    "Hemoglobin contains ferric iron while myoglobin contains ferrous iron"
+   ],
+   "answer": 1,
+   "explain": "Binding of the first O2 molecule to deoxyhemoglobin (T state) pulls Fe2+ into the heme plane, breaking inter-subunit salt bridges and shifting the tetramer toward the high-affinity R state (Hill coefficient ~2.8).",
+   "verified": false,
+   "open": {
+    "q": "What term describes the phenomenon in hemoglobin whereby binding of one oxygen molecule increases the oxygen affinity of the remaining subunits?",
+    "accept": [
+     "Positive cooperativity",
+     "Cooperativity",
+     "Allosteric cooperativity"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oxygen Transport and Allosteric Regulation",
+   "q": "How do elevated H+ (low pH) and increased PaCO2 facilitate oxygen unloading in metabolically active peripheral tissues (the Bohr effect)?",
+   "options": [
+    "They covalently oxidize heme iron to Fe3+",
+    "They bind directly to the heme iron in place of oxygen",
+    "Protonation of specific histidine residues stabilizes salt bridges of the low-affinity T state, shifting the oxygen dissociation curve to the right",
+    "They stimulate red blood cell synthesis of fetal hemoglobin"
+   ],
+   "answer": 2,
+   "explain": "In metabolically active tissues, high CO2 and H+ protonate residues such as His146 on beta-chains, stabilizing ionic salt bridges of the deoxy T state and shifting the curve rightward (increasing P50) to unload O2.",
+   "verified": false,
+   "open": {
+    "q": "Name the physiological effect by which decreased pH and increased CO2 promote oxygen release from hemoglobin in peripheral tissues.",
+    "accept": [
+     "Bohr effect",
+     "The Bohr effect"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oxygen Transport and Allosteric Regulation",
+   "q": "Where does 2,3-bisphosphoglycerate (2,3-BPG) bind on adult deoxyhemoglobin to decrease its oxygen affinity?",
+   "options": [
+    "Directly to the sixth coordination site of each heme iron",
+    "To the exterior surface of the alpha chains",
+    "To the proximal histidine F8 residue",
+    "In the positively charged central cavity between the two beta-globin subunits"
+   ],
+   "answer": 3,
+   "explain": "Negatively charged 2,3-BPG binds positively charged lysine and histidine residues lining the central cavity between the beta chains of T-state deoxyhemoglobin, stabilizing the T state and promoting O2 unloading.",
+   "verified": false,
+   "open": {
+    "q": "Between which two globin subunits does 2,3-bisphosphoglycerate bind in the central cavity of adult deoxyhemoglobin?",
+    "accept": [
+     "Beta subunits",
+     "Beta chains",
+     "Two beta chains",
+     "Beta-globin chains"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oxygen Transport and Allosteric Regulation",
+   "q": "Why does fetal hemoglobin (HbF, alpha2-gamma2) have a higher oxygen affinity than maternal adult hemoglobin (HbA, alpha2-beta2)?",
+   "options": [
+    "Gamma-globin chains have serine instead of histidine at position 143, reducing positive charge and lowering affinity for 2,3-BPG",
+    "HbF lacks proximal histidine residues",
+    "HbF binds eight molecules of oxygen per tetramer",
+    "Fetal erythrocytes lack carbonic anhydrase"
+   ],
+   "answer": 0,
+   "explain": "Replacing positively charged His143 in beta chains with neutral Ser143 in gamma chains weakens 2,3-BPG binding to HbF, keeping HbF shifted toward the high-affinity R state to extract O2 across the placenta.",
+   "verified": false,
+   "open": {
+    "q": "Which amino acid substitution in gamma-globin chains (replacing His143 of beta-globin) decreases 2,3-BPG binding to fetal hemoglobin?",
+    "accept": [
+     "Serine",
+     "Ser143",
+     "Serine 143"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-010",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oxygen Transport and Allosteric Regulation",
+   "q": "How is the majority of carbon dioxide transported in venous blood from peripheral tissues to the lungs?",
+   "options": [
+    "Dissolved physically in plasma",
+    "As plasma bicarbonate ions (HCO3-) generated via erythrocyte carbonic anhydrase and exported via the chloride shift",
+    "Bound directly to heme iron as carboxyhemoglobin",
+    "Bound to plasma albumin"
+   ],
+   "answer": 1,
+   "explain": "About 70-80% of CO2 enters RBCs, is hydrated by carbonic anhydrase to H2CO3, dissociates into H+ (buffered by deoxyhemoglobin) and HCO3-, and exits into plasma in exchange for Cl- via Band 3 (AE1); ~10-15% forms carbaminohemoglobin on N-terminal amino groups.",
+   "verified": false,
+   "open": {
+    "q": "In what chemical form is approximately 70 to 80% of carbon dioxide transported in blood from tissues to the lungs?",
+    "accept": [
+     "Bicarbonate",
+     "Bicarbonate ions",
+     "HCO3-"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-011",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "In which two subcellular compartments do the eight enzymatic steps of heme biosynthesis occur?",
+   "options": [
+    "Nucleus and Golgi apparatus",
+    "Rough endoplasmic reticulum and lysosomes",
+    "Mitochondria and cytosol",
+    "Peroxisomes and plasma membrane"
+   ],
+   "answer": 2,
+   "explain": "The first step (ALA synthase) and final three steps (coproporphyrinogen oxidase, protoporphyrinogen oxidase, ferrochelatase) occur in mitochondria, while the four intermediate steps occur in the cytosol.",
+   "verified": false,
+   "open": {
+    "q": "Name the two cellular compartments across which the pathway of heme biosynthesis is divided.",
+    "accept": [
+     "Mitochondria and cytosol",
+     "Cytosol and mitochondria"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "Which enzyme catalyzes the rate-limiting step of heme synthesis by condensing glycine and succinyl-CoA into delta-aminolevulinic acid (ALA)?",
+   "options": [
+    "ALA dehydratase",
+    "Porphobilinogen deaminase",
+    "Ferrochelatase",
+    "ALA synthase"
+   ],
+   "answer": 3,
+   "explain": "Delta-aminolevulinic acid synthase (ALAS1 in liver, ALAS2 in erythroid precursors) requires pyridoxal phosphate (vitamin B6) and catalyzes the committed, rate-limiting step of heme synthesis.",
+   "verified": false,
+   "open": {
+    "q": "Name the rate-limiting enzyme of heme biosynthesis.",
+    "accept": [
+     "ALA synthase",
+     "Delta-aminolevulinic acid synthase",
+     "ALAS"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-013",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "How is hepatic ALA synthase (ALAS1) regulated differently from erythroid ALA synthase (ALAS2)?",
+   "options": [
+    "ALAS1 is repressed by heme and induced by some drugs; ALAS2 is regulated mainly by iron availability",
+    "ALAS1 is activated by heme, whereas ALAS2 is inhibited by heme",
+    "ALAS1 is cytosolic, whereas ALAS2 is nuclear",
+    "ALAS1 requires biotin, whereas ALAS2 requires vitamin B12"
+   ],
+   "answer": 0,
+   "explain": "In hepatocytes, free heme represses ALAS1 transcription, blocks its mitochondrial import, and inhibits its activity; in developing erythroblasts, iron deficiency stabilizes IRP binding to the 5'-IRE of ALAS2 mRNA to prevent excess protoporphyrin synthesis without iron.",
+   "verified": false,
+   "open": {
+    "q": "What clinical therapeutic agent (oxidized heme) is infused in acute intermittent porphyria to repress hepatic ALAS1?",
+    "accept": [
+     "Hemin",
+     "Hematin",
+     "Heme arginate"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "Which mitochondrial enzyme catalyzes the final step of heme biosynthesis by inserting ferrous iron (Fe2+) into protoporphyrin IX?",
+   "options": [
+    "Uroporphyrinogen III synthase",
+    "Ferrochelatase",
+    "ALA dehydratase",
+    "Protoporphyrinogen oxidase"
+   ],
+   "answer": 1,
+   "explain": "Ferrochelatase (heme synthase) inserts Fe2+ into protoporphyrin IX; its inhibition by lead or genetic deficiency in erythropoietic protoporphyria causes accumulation of free erythrocyte protoporphyrin.",
+   "verified": false,
+   "open": {
+    "q": "Name the final enzyme of heme biosynthesis that inserts ferrous iron into protoporphyrin IX.",
+    "accept": [
+     "Ferrochelatase",
+     "Heme synthase"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-015",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "A 3-year-old child living in an old building with peeling paint presents with microcytic anemia, basophilic stippling of erythrocytes, abdominal colic, and elevated blood free erythrocyte protoporphyrin and urinary delta-ALA. Which two heme synthesis enzymes are inhibited?",
+   "options": [
+    "ALA synthase and PBG deaminase",
+    "Uroporphyrinogen III synthase and coproporphyrinogen oxidase",
+    "ALA dehydratase and ferrochelatase",
+    "Heme oxygenase and biliverdin reductase"
+   ],
+   "answer": 2,
+   "explain": "Lead binds sulfhydryl groups and displaces zinc in cytoplasmic ALA dehydratase (elevating delta-ALA) and inhibits mitochondrial ferrochelatase (elevating protoporphyrin IX and causing sideroblastic anemia).",
+   "verified": false,
+   "open": {
+    "q": "Name the two enzymes in heme biosynthesis inhibited by lead poisoning.",
+    "accept": [
+     "ALA dehydratase and ferrochelatase",
+     "Delta-aminolevulinic acid dehydratase and ferrochelatase"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-016",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "A 27-year-old woman develops severe abdominal pain, constipation, peripheral neuropathy, and acute psychosis after taking phenobarbital. Her urine turns dark reddish-brown upon standing, and she has no skin photosensitivity. Which enzyme is deficient?",
+   "options": [
+    "Uroporphyrinogen decarboxylase",
+    "Ferrochelatase",
+    "ALA dehydratase",
+    "Porphobilinogen deaminase"
+   ],
+   "answer": 3,
+   "explain": "Acute intermittent porphyria (AIP) is an autosomal dominant deficiency of porphobilinogen deaminase (hydroxymethylbilane synthase), causing accumulation of early non-photoreactive neurotoxic precursors (ALA and PBG).",
+   "verified": false,
+   "open": {
+    "q": "Deficiency of which enzyme causes acute intermittent porphyria?",
+    "accept": [
+     "Porphobilinogen deaminase",
+     "Hydroxymethylbilane synthase",
+     "PBG deaminase",
+     "HMBS"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "Why do late-step porphyrias such as porphyria cutanea tarda (uroporphyrinogen decarboxylase deficiency) cause blistering cutaneous photosensitivity, whereas acute intermittent porphyria does not?",
+   "options": [
+    "Porphyrins absorb visible light and generate reactive oxygen species; ALA and PBG do not have this photoreactive ring structure",
+    "Uroporphyrinogen decarboxylase is expressed only in epidermal keratinocytes",
+    "ALA and PBG are excreted exclusively in sweat",
+    "Porphyria cutanea tarda is caused by severe iron deficiency"
+   ],
+   "answer": 0,
+   "explain": "Early precursors (ALA and PBG) are non-cyclic and non-fluorescent, causing neurovisceral symptoms only; downstream tetrapyrrole rings (uroporphyrin, coproporphyrin, protoporphyrin) absorb Soret-band light (~400 nm) and generate tissue-damaging singlet oxygen.",
+   "verified": false,
+   "open": {
+    "q": "Deficiency of which enzyme causes porphyria cutanea tarda?",
+    "accept": [
+     "Uroporphyrinogen decarboxylase",
+     "UROD"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-018",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "What is the exact molecular mutation responsible for sickle cell hemoglobin (HbS)?",
+   "options": [
+    "Substitution of lysine for glutamate at position 6 of the beta-globin chain",
+    "Substitution of valine for glutamate at position 6 of the beta-globin chain",
+    "Deletion of both alpha-globin genes on chromosome 16",
+    "Substitution of tyrosine for proximal histidine F8"
+   ],
+   "answer": 1,
+   "explain": "In HbS (Glu6Val in beta-globin), replacing hydrophilic negatively charged glutamate with hydrophobic valine creates a sticky hydrophobic patch on deoxygenated HbS that polymerizes into rigid fibers.",
+   "verified": false,
+   "open": {
+    "q": "State the specific amino acid substitution in the beta-globin chain that produces hemoglobin S (HbS).",
+    "accept": [
+     "Glutamate to valine at position 6",
+     "Glu6Val",
+     "Valine replaces glutamate at position 6"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-019",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "How does hydroxyurea reduce vaso-occlusive crises in patients with sickle cell disease?",
+   "options": [
+    "Directly chelates ferrous iron in HbS",
+    "Converts valine-6 back to glutamate via post-translational modification",
+    "Increases synthesis of fetal hemoglobin (HbF), which interferes with deoxy-HbS polymerization",
+    "Inhibits red cell 2,3-bisphosphoglycerate synthesis"
+   ],
+   "answer": 2,
+   "explain": "Hydroxyurea induces gamma-globin expression and raises HbF levels; alpha2-gamma2 and hybrid alpha2-betaS-gamma tetramers cannot incorporate into deoxy-HbS polymers, preventing red cell sickling.",
+   "verified": false,
+   "open": {
+    "q": "Which type of hemoglobin is upregulated by hydroxyurea therapy to inhibit HbS polymerization in sickle cell disease?",
+    "accept": [
+     "Fetal hemoglobin",
+     "HbF",
+     "Hemoglobin F"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-020",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "In hemoglobin C disease (HbC), which amino acid replaces glutamate at position 6 of the beta-globin chain, leading to intracellular rod-shaped HbC crystals and target cells?",
+   "options": [
+    "Valine",
+    "Alanine",
+    "Aspartate",
+    "Lysine"
+   ],
+   "answer": 3,
+   "explain": "HbC results from a Glu6Lys substitution in beta-globin, reducing solubility and causing electrostatic crystallization of HbC within erythrocytes and mild chronic hemolytic anemia.",
+   "verified": false,
+   "open": {
+    "q": "Which amino acid replaces glutamate at position 6 of the beta-globin chain in hemoglobin C?",
+    "accept": [
+     "Lysine",
+     "Lys"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-021",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "Why does beta-thalassemia major typically become clinically apparent at 4 to 6 months of age rather than at birth?",
+   "options": [
+    "High fetal hemoglobin (HbF, alpha2-gamma2) levels at birth compensate for absent beta-globin until gamma-globin synthesis declines after infancy",
+    "Maternal IgG protects fetal red cells until 6 months",
+    "Beta-globin genes are not inherited until after birth",
+    "Bone marrow erythropoiesis does not begin until 6 months"
+   ],
+   "answer": 0,
+   "explain": "Fetal hemoglobin uses gamma-globin rather than beta-globin; symptoms appear around 6 months when physiological hemoglobin switching from gamma to beta fails, leaving unpaired alpha-globin chains to precipitate.",
+   "verified": false,
+   "open": {
+    "q": "Which insoluble globin chains precipitate inside erythroid precursors to cause ineffective erythropoiesis in beta-thalassemia major?",
+    "accept": [
+     "Alpha-globin chains",
+     "Unpaired alpha chains",
+     "Alpha chains"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-022",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "In four-gene deletion alpha-thalassemia (hydrops fetalis), which abnormal homotetramer forms in utero and causes severe fetal hypoxia due to its extremely high oxygen affinity?",
+   "options": [
+    "Hemoglobin H (beta4)",
+    "Hemoglobin Bart (gamma4)",
+    "Hemoglobin A2 (alpha2-delta2)",
+    "Hemoglobin S (alpha2-betaS2)"
+   ],
+   "answer": 1,
+   "explain": "Complete absence of alpha-globin chains in utero forces excess fetal gamma chains to form gamma4 tetramers (Hb Bart), which lack cooperativity and hold oxygen so tightly that tissues suffer fatal hypoxia.",
+   "verified": false,
+   "open": {
+    "q": "Name the abnormal gamma-globin homotetramer (gamma4) formed in severe four-gene deletion alpha-thalassemia.",
+    "accept": [
+     "Hemoglobin Bart",
+     "Hb Bart",
+     "Hb Barts",
+     "Hemoglobin Barts"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "What characteristic hemoglobin electrophoresis finding supports the diagnosis of beta-thalassemia minor (trait)?",
+   "options": [
+    "Markedly elevated HbS (>80%)",
+    "Presence of Hb Bart",
+    "Elevated HbA2 (>3.5%) and mildly elevated HbF",
+    "Complete absence of HbA"
+   ],
+   "answer": 2,
+   "explain": "Reduced synthesis of one beta-globin allele allows excess alpha chains to pair with delta and gamma chains, raising HbA2 (alpha2-delta2) above 3.5%.",
+   "verified": false,
+   "open": {
+    "q": "Which minor adult hemoglobin fraction (alpha2-delta2) is classically elevated over 3.5% on electrophoresis in beta-thalassemia trait?",
+    "accept": [
+     "HbA2",
+     "Hemoglobin A2"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-024",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
+   "q": "A 22-year-old patient treated with dapsone develops central cyanosis unresponsive to 100% supplemental oxygen, chocolate-brown arterial blood, and an oxygen saturation gap on pulse oximetry. Which enzyme system normally prevents this condition, and what is the first-line antidote?",
+   "options": [
+    "Superoxide dismutase; N-acetylcysteine",
+    "Carbonic anhydrase; sodium bicarbonate",
+    "Ferrochelatase; deferoxamine",
+    "Cytochrome b5 reductase (NADH-methemoglobin reductase); methylene blue"
+   ],
+   "answer": 3,
+   "explain": "Oxidizing drugs like dapsone, benzocaine, and nitrates oxidize heme Fe2+ to Fe3+ (methemoglobinemia); NADH-dependent cytochrome b5 reductase normally reduces Fe3+ back to Fe2+, and intravenous methylene blue accelerates NADPH-methemoglobin reductase to restore Fe2+.",
+   "verified": false,
+   "open": {
+    "q": "Name the first-line intravenous antidote used to treat acquired methemoglobinemia.",
+    "accept": [
+     "Methylene blue",
+     "Methylthioninium chloride"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-025",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
+   "q": "How does carbon monoxide (CO) poisoning impair tissue oxygen delivery in two distinct ways?",
+   "options": [
+    "CO binds haemoglobin with high affinity and shifts remaining oxygen binding toward higher affinity",
+    "CO oxidises all haem iron to Fe3+ and precipitates globin chains",
+    "CO cleaves protoporphyrin IX and depletes 2,3-BPG",
+    "CO inhibits carbonic anhydrase and causes metabolic alkalosis"
+   ],
+   "answer": 0,
+   "explain": "CO binds heme Fe2+ ~200 times more tightly than O2 and allosterically stabilizes the R state of partially occupied hemoglobin tetramers, preventing the remaining bound O2 from unloading in peripheral tissues.",
+   "verified": false,
+   "open": {
+    "q": "In which direction (left or right) does carbon monoxide shift the oxyhemoglobin dissociation curve of the remaining oxygen-binding sites?",
+    "accept": [
+     "Left",
+     "To the left",
+     "Leftward"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-026",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
+   "q": "Glycated hemoglobin (HbA1c) is formed non-enzymatically by the attachment of glucose to which specific amino acid residue of the beta-globin chain?",
+   "options": [
+    "Proximal histidine (F8)",
+    "N-terminal valine",
+    "Glutamate-6",
+    "Cysteine-93"
+   ],
+   "answer": 1,
+   "explain": "Glucose forms a reversible Schiff base with the N-terminal valine of beta-globin that undergoes an Amadori rearrangement into a stable ketoamine (HbA1c), reflecting average glycemia over the ~120-day erythrocyte lifespan.",
+   "verified": false,
+   "open": {
+    "q": "Name the N-terminal amino acid residue of the beta-globin chain that undergoes non-enzymatic glycation to form HbA1c.",
+    "accept": [
+     "Valine",
+     "N-terminal valine"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-027",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "Which microsomal enzyme in reticuloendothelial macrophages catalyzes the rate-limiting step of heme degradation, cleaving the porphyrin ring into biliverdin, ferrous iron, and carbon monoxide?",
+   "options": [
+    "Biliverdin reductase",
+    "UDP-glucuronosyltransferase",
+    "Heme oxygenase",
+    "Ferrochelatase"
+   ],
+   "answer": 2,
+   "explain": "Heme oxygenase uses NADPH and O2 to oxidize the alpha-methene bridge of heme, releasing green biliverdin, Fe2+ (recycled via transferrin/ferritin), and carbon monoxide.",
+   "verified": false,
+   "open": {
+    "q": "Name the enzyme in macrophages that cleaves the heme ring to produce biliverdin, iron, and carbon monoxide.",
+    "accept": [
+     "Heme oxygenase",
+     "HO-1"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-028",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "Which cytosolic NADPH-dependent enzyme reduces green biliverdin into orange-yellow unconjugated bilirubin in macrophages?",
+   "options": [
+    "Heme oxygenase",
+    "Beta-glucuronidase",
+    "Cytochrome P450 reductase",
+    "Biliverdin reductase"
+   ],
+   "answer": 3,
+   "explain": "Biliverdin reductase reduces the central methene bridge of biliverdin using NADPH to yield lipophilic unconjugated bilirubin.",
+   "verified": false,
+   "open": {
+    "q": "Name the NADPH-dependent enzyme that reduces biliverdin to unconjugated bilirubin.",
+    "accept": [
+     "Biliverdin reductase"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-029",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "Why is unconjugated bilirubin neurotoxic to neonates (kernicterus) when its plasma concentration exceeds albumin-binding capacity?",
+   "options": [
+    "Unbound unconjugated bilirubin can cross the immature BBB and injure basal ganglia and brainstem nuclei",
+    "It is water-soluble and blocks cerebral ventricles",
+    "It directly activates cortical NMDA receptors",
+    "It destroys myelin through autoimmune antibodies"
+   ],
+   "answer": 0,
+   "explain": "Free unbound unconjugated bilirubin is lipid-soluble and penetrates the neonatal blood-brain barrier, injuring mitochondria and neurons in the basal ganglia (globus pallidus) and subthalamic nuclei.",
+   "verified": false,
+   "open": {
+    "q": "Name the neurological syndrome caused by deposition of unconjugated bilirubin in the neonatal basal ganglia and brainstem.",
+    "accept": [
+     "Kernicterus",
+     "Bilirubin encephalopathy"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-030",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "How does blue-light phototherapy (wavelength ~450-460 nm) reduce serum unconjugated bilirubin in neonatal jaundice?",
+   "options": [
+    "Phototherapy induces hepatic UDP-glucuronosyltransferase transcription",
+    "Blue light converts bilirubin into more water-soluble photoisomers that can be excreted without conjugation",
+    "Blue light oxidises bilirubin directly into carbon dioxide",
+    "Phototherapy increases serum albumin synthesis"
+   ],
+   "answer": 1,
+   "explain": "Blue light converts native 4Z,15Z-bilirubin into polar photoisomers (4Z,15E-bilirubin and irreversible cyclized lumirubin) that bypass hepatic glucuronidation for biliary and renal excretion.",
+   "verified": false,
+   "open": {
+    "q": "Name the irreversible water-soluble structural photoisomer of bilirubin formed during neonatal phototherapy.",
+    "accept": [
+     "Lumirubin"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-031",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "What is the fate of conjugated bilirubin after it is secreted into the duodenum via bile?",
+   "options": [
+    "It is reabsorbed intact in the stomach",
+    "It is converted back into haem by pancreatic lipase",
+    "Intestinal bacteria form urobilinogen; most is converted to stercobilin, while a small fraction is reabsorbed or excreted as urobilin",
+    "It is degraded into urea by enterocytes"
+   ],
+   "answer": 2,
+   "explain": "Colonic anaerobes remove glucuronide groups and reduce bilirubin to urobilinogen; ~80% is excreted as brown stercobilin in feces, ~15-20% enters enterohepatic circulation, and ~2-5% is filtered by kidneys as yellow urobilin.",
+   "verified": false,
+   "open": {
+    "q": "Name the brown pigment formed by intestinal bacterial metabolism of bilirubin that gives normal feces its color.",
+    "accept": [
+     "Stercobilin"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-032",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "A 15-year-old girl presents with asymptomatic fluctuating jaundice since childhood. Laboratory workup shows total bilirubin of 4.2 mg/dL with 3.6 mg/dL conjugated (direct), normal liver transaminases, and a grossly black-pigmented liver on biopsy due to impaired canalicular excretion. Which syndrome does she have?",
+   "options": [
+    "Gilbert syndrome",
+    "Crigler-Najjar syndrome type I",
+    "Rotor syndrome",
+    "Dubin-Johnson syndrome"
+   ],
+   "answer": 3,
+   "explain": "Dubin-Johnson syndrome is an autosomal recessive mutation in the canalicular multidrug resistance-associated protein 2 (MRP2 / ABCC2) transporter, causing conjugated hyperbilirubinemia and black melanin-like pigment deposition in lysosomes (unlike Rotor syndrome, which lacks black liver pigmentation).",
+   "verified": false,
+   "open": {
+    "q": "Name the hereditary conjugated hyperbilirubinemia caused by MRP2 transporter deficiency that produces a characteristic black liver.",
+    "accept": [
+     "Dubin-Johnson syndrome"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-033",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "How do Crigler-Najjar syndrome type I and Crigler-Najjar syndrome type II differ in severity and response to phenobarbital?",
+   "options": [
+    "Type I has complete absence of UGT1A1 with fatal kernicterus risk and no response to phenobarbital, whereas Type II has partial UGT1A1 activity that improves with phenobarbital induction",
+    "Type I causes conjugated hyperbilirubinemia, whereas Type II causes unconjugated hyperbilirubinemia",
+    "Type I is X-linked, whereas Type II is mitochondrial",
+    "Type I responds completely to phenobarbital, whereas Type II requires liver transplantation"
+   ],
+   "answer": 0,
+   "explain": "Crigler-Najjar type I lacks any functional UGT1A1 gene product so enzyme inducers like phenobarbital cannot increase conjugation, whereas type II retains ~10% residual UGT1A1 activity that can be induced by phenobarbital.",
+   "verified": false,
+   "open": {
+    "q": "Which barbiturate enzyme inducer reduces serum bilirubin in Crigler-Najjar syndrome type II and Gilbert syndrome by upregulating UGT1A1?",
+    "accept": [
+     "Phenobarbital"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-034",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "Which four substituent side chains are attached to the eight beta-carbons of the four pyrrole rings in protoporphyrin IX?",
+   "options": [
+    "Four methyl, two vinyl, and two propionate groups",
+    "Four ethyl, two acetyl, and two methyl groups",
+    "Four propionate, two vinyl, and two hydroxyl groups",
+    "Eight methyl groups"
+   ],
+   "answer": 0,
+   "explain": "Protoporphyrin IX contains four methyl (-CH3), two vinyl (-CH=CH2), and two propionate (-CH2CH2COO-) side chains arranged asymmetrically (type IX isomer) around the tetrapyrrole macrocycle.",
+   "verified": false,
+   "open": {
+    "q": "List the three types of substituent side chains attached to the pyrrole rings of protoporphyrin IX.",
+    "accept": [
+     "Methyl, vinyl, and propionate",
+     "4 methyl, 2 vinyl, and 2 propionate"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-035",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oxygen Transport and Allosteric Regulation",
+   "q": "What is the Haldane effect in pulmonary capillaries?",
+   "options": [
+    "High CO2 increases hemoglobin affinity for oxygen",
+    "Oxygenation of hemoglobin in the lungs promotes dissociation of H+ and CO2 (carbaminohemoglobin) from hemoglobin to facilitate CO2 exhalation",
+    "2,3-BPG increases oxygen binding in the lungs",
+    "Low temperature decreases hemoglobin oxygen affinity"
+   ],
+   "answer": 1,
+   "explain": "The Haldane effect is the reciprocal of the Bohr effect: binding of O2 shifts hemoglobin to the R state, breaking salt bridges to release Bohr protons (which combine with HCO3- to form CO2) and decreasing carbamino-CO2 binding.",
+   "verified": false,
+   "open": {
+    "q": "Name the physiological effect whereby oxygenation of hemoglobin in the lungs promotes the release of carbon dioxide and hydrogen ions.",
+    "accept": [
+     "Haldane effect",
+     "The Haldane effect"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-036",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Biosynthesis and Porphyrias",
+   "q": "Why does acute alcohol ingestion or fasting frequently precipitate acute neurovisceral attacks in patients with acute intermittent porphyria?",
+   "options": [
+    "Alcohol directly destroys bone marrow erythroblasts",
+    "Fasting and alcohol induce PGC-1alpha and hepatic ALAS1 transcription, increasing flux through the blocked pathway and accumulating neurotoxic ALA and PBG",
+    "Alcohol inhibits renal excretion of conjugated bilirubin",
+    "Fasting increases insulin levels which activate ALA synthase"
+   ],
+   "answer": 2,
+   "explain": "Fasting induces hepatic PGC-1alpha, which coactivates transcription of ALAS1; carbohydrate loading (intravenous glucose) suppresses PGC-1alpha and downregulates ALAS1 during acute attacks.",
+   "verified": false,
+   "open": {
+    "q": "Which intravenous nutritional therapy is administered alongside hemin during an acute porphyria attack to suppress PGC-1alpha-mediated induction of hepatic ALAS1?",
+    "accept": [
+     "Glucose",
+     "Intravenous glucose",
+     "Dextrose",
+     "Carbohydrates"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-037",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobinopathies and Thalassemias",
+   "q": "What physiological and environmental factors trigger polymerization of deoxy-HbS and vaso-occlusive sickling crises in patients with sickle cell disease?",
+   "options": [
+    "Alkalosis, hyperoxia, and overhydration",
+    "High fetal hemoglobin and low 2,3-BPG",
+    "Hypothermia and low intracellular HbS concentration",
+    "Hypoxia, acidosis, dehydration (increased intracellular HbS concentration), and fever/infection"
+   ],
+   "answer": 3,
+   "explain": "Deoxygenation, acidosis (Bohr shift to T state), cellular dehydration (raising intracellular HbS concentration), and infection promote the deoxy T conformation of HbS required for polymer nucleation.",
+   "verified": false,
+   "open": {
+    "q": "Which conformational state of hemoglobin S (T or R) undergoes polymerization to cause erythrocyte sickling?",
+    "accept": [
+     "T state",
+     "Deoxy T state",
+     "Taut state",
+     "T"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-038",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Hemoglobin Derivatives and Dyshemoglobinemias",
+   "q": "Why should methylene blue be avoided in a patient with methemoglobinemia who also has severe glucose 6-phosphate dehydrogenase (G6PD) deficiency?",
+   "options": [
+    "Methylene blue needs NADPH for activation; in G6PD deficiency it may be ineffective and worsen oxidative haemolysis",
+    "Methylene blue irreversibly binds haemoglobin A2",
+    "G6PD-deficient patients lack cytochrome b5 reductase completely",
+    "Methylene blue converts methaemoglobin into carboxyhaemoglobin"
+   ],
+   "answer": 0,
+   "explain": "Methylene blue acts as an electron shuttle using NADPH from the pentose phosphate pathway; in severe G6PD deficiency, NADPH is lacking and methylene blue acts as an oxidant causing hemolysis (ascorbic acid is used instead).",
+   "verified": false,
+   "open": {
+    "q": "Which vitamin antioxidant can be used as an alternative treatment for methemoglobinemia in patients with severe G6PD deficiency?",
+    "accept": [
+     "Ascorbic acid",
+     "Vitamin C"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-039",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Heme Catabolism and Bilirubin Metabolism",
+   "q": "Which laboratory profile of serum bilirubin and urine findings characterizes pre-hepatic (hemolytic) jaundice?",
+   "options": [
+    "Markedly elevated conjugated bilirubin, positive urine bilirubin, and absent urine urobilinogen",
+    "Predominantly unconjugated hyperbilirubinemia, negative urine bilirubin, and elevated urine urobilinogen",
+    "Equal elevation of conjugated and unconjugated bilirubin with acholic stools",
+    "Normal serum bilirubin with massive bilirubinuria"
+   ],
+   "answer": 1,
+   "explain": "In hemolytic jaundice, excess unconjugated bilirubin is albumin-bound (hence absent from urine), while increased hepatic conjugation and biliary excretion generate excess intestinal urobilinogen that is reabsorbed and excreted in urine.",
+   "verified": false,
+   "open": {
+    "q": "Is urinary bilirubin positive or negative in pure pre-hepatic (hemolytic) jaundice?",
+    "accept": [
+     "Negative",
+     "Absent"
+    ]
+   }
+  },
+  {
+   "id": "ba-haemoproteins-and-haemoglobin-metabolism-040",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Structure of Heme and Haemoproteins",
+   "q": "Which peroxisomal haemoprotein rapidly decomposes toxic hydrogen peroxide (H2O2) into water and molecular oxygen?",
+   "options": [
+    "Myeloperoxidase",
+    "Cytochrome c oxidase",
+    "Catalase",
+    "Nitric oxide synthase"
+   ],
+   "answer": 2,
+   "explain": "Catalase is a tetrameric heme-containing enzyme abundant in peroxisomes and erythrocytes that catalyzes 2 H2O2 -> 2 H2O + O2 at one of the highest turnover rates of any known enzyme.",
+   "verified": false,
+   "open": {
+    "q": "Name the peroxisomal haemoprotein enzyme that converts hydrogen peroxide into water and oxygen.",
+    "accept": [
+     "Catalase"
+    ]
+   }
+  }
+ ]
 }
