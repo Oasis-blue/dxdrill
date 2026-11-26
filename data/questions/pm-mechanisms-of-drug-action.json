@@ -982,7 +982,7 @@
    "options": [
     "It uses fewer animals",
     "It removes the need for plasma measurements",
-    "It compares dose-response slopes to assess effective and lethal dose separation",
+    "LD1/ED99 accounts for overlap between effective and lethal dose ranges",
     "It measures potency rather than toxicity"
    ],
    "answer": 2,
@@ -1142,7 +1142,7 @@
    "q": "A patient with phaeochromocytoma is prepared for surgery using phenoxybenzamine, which forms a covalent bond with alpha-1 and alpha-2 adrenoceptors. Why does the alpha-blockade persist for several days even after the drug is cleared from plasma?",
    "options": [
     "Phenoxybenzamine is stored in enamel",
-    "Recovery requires synthesis of new alpha-adrenoceptors because blockade is irreversible",
+    "Irreversible blockade requires synthesis of new α-adrenoceptors",
     "It reduces renal catecholamine clearance",
     "It partially activates beta-2 receptors"
    ],
@@ -1166,7 +1166,7 @@
    "options": [
     "They open GABA-A channels without GABA",
     "They block the chloride pore",
-    "They bind an allosteric GABA-A site, increasing GABA affinity and channel-opening frequency",
+    "Positive allosteric modulation increases GABA affinity and channel-opening frequency",
     "They inhibit GABA transaminase"
    ],
    "answer": 2,
@@ -1395,7 +1395,7 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What does a quantal dose-response curve measure across a population of subjects?",
    "options": [
-    "Cumulative proportion of people showing an all-or-none response at each dose",
+    "Proportion of a population showing an all-or-none response at each dose",
     "Continuous heart-rate increase in one atrium",
     "Plasma half-life across age groups",
     "Rate of hepatic enzyme induction"
@@ -1487,7 +1487,7 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "A 19-year-old student with severe acute asthma receives nebulized salbutamol (a beta-2 agonist) alongside intravenous hydrocortisone. Why does hydrocortisone restore responsiveness to salbutamol in a patient who had become refractory to beta-2 agonists?",
    "options": [
-    "Glucocorticoids increase beta-2 receptor expression and reverse desensitisation",
+    "Glucocorticoids upregulate β2 receptors and reverse desensitisation",
     "Hydrocortisone converts salbutamol to adrenaline",
     "It blocks airway M2 receptors",
     "It acts as an alveolar osmotic diuretic"
@@ -1670,7 +1670,7 @@
    "sub": "Agonists, Antagonists, and Dose-Response Relationships",
    "q": "What is 'heterologous desensitization' of receptors?",
    "options": [
-    "One receptor pathway reduces another's response through shared signalling components",
+    "One receptor pathway dampens another through shared signalling components",
     "Only the stimulated receptor can desensitise",
     "Chronic antagonism always increases sensitivity",
     "Enzyme induction reduces receptor binding"
@@ -1742,7 +1742,7 @@
     "Atropine blocks M3 receptors",
     "Protamine binds heparin",
     "Glucagon reverses beta-blocker bradycardia",
-    "Phenobarbital induces hepatic CYP enzymes and increases warfarin metabolism"
+    "Phenobarbital induces hepatic CYP enzymes, increasing warfarin metabolism"
    ],
    "answer": 3,
    "explain": "Pharmacokinetic antagonism occurs when the antagonist reduces absorption, increases metabolism, or accelerates excretion of the active drug, lowering its effective concentration at the target receptor.",
