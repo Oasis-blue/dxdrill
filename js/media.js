@@ -22,27 +22,38 @@
   function cleanText(value) {
     return String(value || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
   }
-  function profileFor(term) {
-    var t = String(term || "").toLowerCase();
-    if (/diuretic|diuretics|furosemide|frusemide|thiazide|spironolactone|amiloride|mannitol|acetazolamide/.test(t)) {
-      return { kind: "Renal physiology", hint: "nephron site of action mechanism diagram", boost: ["diuretic", "nephron", "loop", "thiazide", "collecting duct", "mechanism", "site of action"] };
-    }
-    if (/histolog|microscop|epitheli|connective tissue|cartilage|bone tissue|blood smear|tissue section/.test(t)) {
-      return { kind: "Histology", hint: "histology micrograph microscope slide", boost: ["histology", "micrograph", "microscopic", "stained", "slide", "tissue"] };
-    }
-    if (/x.?ray|radiograph|fracture|dislocation|pneumothorax|pleural effusion|chest imaging|radiology/.test(t)) {
-      return { kind: "Radiology", hint: "medical radiograph X-ray", boost: ["radiograph", "x-ray", "radiology", "fracture", "imaging"] };
-    }
-    if (/froment|dinner.?fork|wrist drop|foot drop|claw hand|waiter.?s tip|clinical sign|clinical examination|deformity|palsy/.test(t)) {
-      return { kind: "Clinical signs", hint: "clinical sign medical photograph illustration", boost: ["clinical", "sign", "photograph", "illustration", "deformity", "palsy"] };
-    }
-    if (/physiolog|renal|kidney|nephron|glomerul|tubular|cardiovascular|respiratory physiology|renal physiology|gastrointestinal physiology|endocrine physiology|reproductive physiology|blood and body fluids|fluid balance|thermoregulation|neuromuscular|nerve conduction|ecg|electrocardio|spirom|lung volume|oxygen dissociation|oxy.?haemoglobin|oxy.?hemoglobin|cardiac cycle|wiggers|action potential|membrane potential|gfr|glomerular filtration|renal clearance|blood pressure|ventilation perfusion/.test(t)) {
-      return { kind: "Physiology", hint: "physiology diagram graph medical illustration", boost: ["physiology", "diagram", "graph", "waveform", "curve", "cycle"] };
-    }
-    if (/biochem|glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|lipid metabolism|carbohydrate metabolism|amino acid|nucleic acid|protein metabolism|protein synthesis|purine|pyrimidine|vitamin|heme|haem|buffer|acid.?base|metabolic pathway|dna replication|rna transcription|enzyme kinetics/.test(t)) {
-      return { kind: "Biochemistry", hint: "biochemistry pathway diagram molecular illustration", boost: ["biochemistry", "pathway", "metabolism", "molecular", "diagram", "enzyme"] };
-    }
-    return { kind: "Anatomy", hint: "anatomy labelled medical diagram specimen", boost: ["anatomy", "diagram", "labelled", "labeled", "specimen", "dissection"] };
+  function contextText(context) {
+    return [context.subject, context.area, context.topic, context.curriculumTopic,
+      context.question, context.correctAnswer, context.explanation].filter(Boolean).join(" ");
+  }
+  function profileFor(context) {
+    var subject = String(context.subject || "").toLowerCase();
+    var text = contextText(context).toLowerCase();
+    /* Curriculum subject is authoritative; don't infer Anatomy from a generic section label. */
+    if (/anatomy/.test(subject)) return { kind: "Anatomy", hint: "anatomical structure labelled diagram" , boost: ["anatomy", "anatomical", "structure", "nerve", "artery", "muscle"] };
+    if (/physiology/.test(subject)) return { kind: "Physiology", hint: "physiology mechanism diagram graph", boost: ["physiology", "mechanism", "pathway", "nephron", "cardiac", "renal", "transport"] };
+    if (/biochemistry/.test(subject)) return { kind: "Biochemistry", hint: "biochemical pathway molecular mechanism diagram", boost: ["biochemistry", "pathway", "metabolism", "molecular", "enzyme", "substrate"] };
+    if (/pharmacology|therapeutics/.test(subject)) return { kind: "Pharmacology", hint: "drug mechanism pharmacology pathway diagram", boost: ["pharmacology", "drug", "mechanism", "receptor", "pathway", "pharmacokinetics"] };
+    if (/pathology/.test(subject)) return { kind: "Pathology", hint: "pathology histopathology medical diagram", boost: ["pathology", "histology", "histopathology", "lesion", "microscopic"] };
+    if (/radiology/.test(subject)) return { kind: "Radiology", hint: "radiology medical imaging", boost: ["radiology", "radiograph", "x-ray", "ultrasound", "ct", "mri"] };
+    if (/medicine|clinical|surgery|paediatrics|pediatrics|obstetrics|gynaecology|psychiatry/.test(subject)) return { kind: "Clinical medicine", hint: "clinical medical mechanism diagram", boost: ["clinical", "medical", "diagnosis", "treatment", "mechanism"] };
+    if (/diuretic|furosemide|frusemide|thiazide|spironolactone|amiloride|mannitol|acetazolamide/.test(text)) return { kind: "Renal physiology / pharmacology", hint: "nephron diuretic site of action diagram", boost: ["diuretic", "nephron", "loop", "thiazide", "collecting duct", "site of action"] };
+    if (/l.?dopa|levodopa|dopamine|dopa decarboxylase|carbidopa/.test(text)) return { kind: "Neurochemistry / pharmacology", hint: "L-DOPA dopamine synthesis metabolism pathway diagram", boost: ["dopamine", "levodopa", "l-dopa", "carbidopa", "decarboxylase", "blood brain barrier"] };
+    if (/histolog|microscop|epitheli|connective tissue|cartilage|bone tissue|blood smear|tissue section/.test(text)) return { kind: "Histology", hint: "histology micrograph microscope slide", boost: ["histology", "micrograph", "microscopic", "stained", "slide", "tissue"] };
+    if (/x.?ray|radiograph|fracture|dislocation|pneumothorax|pleural effusion|radiology/.test(text)) return { kind: "Radiology", hint: "medical radiograph X-ray", boost: ["radiograph", "x-ray", "radiology", "fracture", "imaging"] };
+    if (/glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|metabolic pathway|enzyme kinetics/.test(text)) return { kind: "Biochemistry", hint: "biochemical pathway diagram molecular mechanism", boost: ["biochemistry", "pathway", "metabolism", "enzyme", "molecular"] };
+    if (/physiolog|renal|kidney|nephron|glomerul|tubular|cardiovascular|respiratory|gfr|glomerular filtration|blood pressure|ventilation perfusion/.test(text)) return { kind: "Physiology", hint: "physiology mechanism diagram graph", boost: ["physiology", "diagram", "mechanism", "graph", "cycle"] };
+    return { kind: "Medical topic (not confidently classified)", hint: "medical educational diagram", boost: ["medical", "clinical", "mechanism", "diagram"] };
+  }
+  function searchQuery(context, profile) {
+    var source = [context.topic, context.curriculumTopic, context.question, context.correctAnswer, context.explanation].join(" ");
+    var stop = /^(the|and|for|with|from|that|this|into|than|when|where|which|what|does|show|shown|following|correct|answer|question|because|there|their|they|them|into|over|under|after|before|during|between|through|using|used|most|likely|patient|patients|clinical|correlation|correlations|lecture|types|type|describe|state|explain|select|choose|true|false|except|only|also|some|such|more|less|each|both|been|being|were|was|are|is|has|have|had|can|may|will|would|should|could|not|all|any|one|two|three|four|five|its|his|her|their|which|who|whom|a|an|of|to|in|on|at|by|as|or|if)$/i;
+    var words = source.toLowerCase().replace(/[^a-z0-9+.-]+/g, " ").split(/\s+/).filter(function (w) {
+      return w.length > 2 && !stop.test(w) && !/^\d+$/.test(w);
+    });
+    var unique = [];
+    words.forEach(function (w) { if (unique.indexOf(w) < 0 && unique.length < 9) unique.push(w); });
+    return unique.join(" ") + " " + profile.hint;
   }
   function summary(term) {
     var key = "summary." + term.toLowerCase(), hit = cached(key);
@@ -101,36 +112,31 @@
       });
     }).catch(function () { return []; });
   }
-  function images(term) {
-    var key = "images." + term.toLowerCase(), hit = cached(key);
+  function images(context, profile) {
+    var query = searchQuery(context, profile);
+    var key = "images." + query.toLowerCase(), hit = cached(key);
     if (hit) return Promise.resolve(hit);
-    var profile = profileFor(term);
-    /* Focused visual query only: do not broaden into unqualified publication searches. */
-    return commonsSearch(term + " " + profile.hint, term, profile).then(function (out) {
+    return commonsSearch(query, query, profile).then(function (out) {
       save(key, out); return out;
     }).catch(function () { return []; });
   }
-  function render(target, term) {
-    if (!target || !term) return;
-    var profile = profileFor(term);
+  function render(target, context) {
+    if (!target || !context) return;
+    var profile = profileFor(context);
+    var label = context.topic || context.curriculumTopic || "this question";
     target.innerHTML = '<div class="dx-media-state"><span class="spin"></span> Finding optional learning media…</div>';
-    Promise.all([summary(term), images(term)]).then(function (results) {
+    Promise.all([images(context, profile)]).then(function (results) {
       if (!target.isConnected) return;
-      var s = results[0], imgs = results[1], html = "";
-      if (s && s.extract) {
-        html += '<article class="dx-media-summary">' + (s.thumbnail ? '<img src="' + esc(s.thumbnail) + '" alt="" loading="lazy" decoding="async">' : '') +
-          '<div><b>' + esc(s.title) + '</b><p>' + esc(s.extract) + '</p>' +
-          (s.page ? '<a href="' + esc(s.page) + '" target="_blank" rel="noopener noreferrer">Wikipedia source</a>' : '') + '</div></article>';
-      }
+      var imgs = results[0], html = "";
       if (imgs.length) {
         html += '<div class="dx-media-grid">' + imgs.map(function (im) {
           return '<figure><a href="' + esc(im.page || im.image) + '" target="_blank" rel="noopener noreferrer"><img src="' + esc(im.image) + '" alt="' + esc(im.title) + '" loading="lazy" decoding="async"></a>' +
             '<figcaption><b>' + esc(im.title) + '</b><br>' + esc(im.license) + ' · ' + esc(im.artist) + (im.page ? '<br><a href="' + esc(im.page) + '" target="_blank" rel="noopener noreferrer">Source and licence</a>' : '') + '</figcaption></figure>';
         }).join("") + '</div>';
       }
-      if (!html) html = '<p class="muted">No external media was found. Your question and explanation are still available above.</p>';
-      target.innerHTML = '<section class="dx-media-panel"><div class="dx-media-head"><b>Visual learning · ' + esc(term) + '</b><button type="button" class="btn ghost small" data-media-close>Close</button></div>' +
-        '<p class="dx-media-note">Search focus: ' + esc(profile.kind) + '. Images are supplementary; verify medical facts against trusted course texts. Source and licence details are shown where available.</p>' + html + '</section>';
+      if (!html) html = '<p class="muted">No sufficiently relevant external images were found for this question. The question and explanation remain available above.</p>';
+      target.innerHTML = '<section class="dx-media-panel"><div class="dx-media-head"><b>Visual learning · ' + esc(label) + '</b><button type="button" class="btn ghost small" data-media-close>Close</button></div>' +
+        '<p class="dx-media-note">Search focus: ' + esc(profile.kind) + '. Based on the question, correct answer and explanation. Images are supplementary; verify medical facts against trusted course texts. Source and licence details are shown where available.</p>' + html + '</section>';
       var close = target.querySelector("[data-media-close]");
       if (close) close.addEventListener("click", function () { target.innerHTML = ""; });
     });
