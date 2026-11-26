@@ -539,10 +539,10 @@
    "sub": "Distribution",
    "q": "Why is levodopa administered rather than dopamine itself to treat Parkinson's disease?",
    "options": [
-    "Dopamine is destroyed immediately by gastric acid",
+    "Dopamine is destroyed by gastric acid before absorption",
     "Levodopa has a half-life of 48 hours",
     "Dopamine causes severe hepatic necrosis",
-    "Dopamine is too polar to cross the blood-brain barrier, whereas levodopa crosses via an L-amino acid transporter and is decarboxylated to dopamine in the brain"
+    "Dopamine does not cross the BBB; levodopa enters via an amino-acid transporter and is converted in the brain"
    ],
    "answer": 3,
    "explain": "Dopamine cannot cross the blood-brain barrier; its precursor levodopa enters the CNS via the LAT1 neutral amino acid carrier and is converted to dopamine by DOPA decarboxylase.",
@@ -585,10 +585,10 @@
    "sub": "Distribution",
    "q": "A pregnant woman with deep vein thrombosis requires anticoagulation. Why is unfractionated heparin or low-molecular-weight heparin preferred over warfarin during the first trimester and near term?",
    "options": [
-    "Heparin crosses the placenta to protect the fetus from thrombosis",
-    "Heparin is a large, negatively charged polymer that does not cross the placenta, whereas warfarin crosses and causes teratogenicity and fetal bleeding",
-    "Warfarin is completely inactive in pregnant women",
-    "Heparin has a half-life of 2 weeks in pregnancy"
+    "Heparin crosses the placenta and prevents fetal thrombosis",
+    "Heparin does not cross the placenta, whereas warfarin can cause fetal harm",
+    "Warfarin is inactive during pregnancy",
+    "Heparin has a half-life of two weeks in pregnancy"
    ],
    "answer": 1,
    "explain": "Heparin's high molecular weight and negative charge prevent placental transfer, avoiding fetal warfarin syndrome (nasal hypoplasia, stippled epiphyses) and fetal hemorrhage.",
@@ -608,10 +608,10 @@
    "sub": "Distribution",
    "q": "A premature neonate develops unconjugated hyperbilirubinaemia and is inadvertently given sulfisoxazole (a sulfonamide). Soon after, the infant develops kernicterus. What is the pharmacokinetic mechanism?",
    "options": [
-    "Sulfisoxazole inhibits hepatic glucuronyl transferase directly",
-    "Sulfisoxazole increases intestinal absorption of stercobilin",
-    "Sulfisoxazole displaces unconjugated bilirubin from plasma albumin binding sites, allowing free bilirubin to cross the immature blood-brain barrier",
-    "Sulfisoxazole causes massive intravascular haemolysis in all neonates"
+    "Sulfisoxazole directly inhibits hepatic glucuronyl transferase",
+    "It increases intestinal absorption of stercobilin",
+    "It displaces unconjugated bilirubin from albumin, increasing free bilirubin able to enter the brain",
+    "It causes severe haemolysis in every neonate"
    ],
    "answer": 2,
    "explain": "Sulfonamides compete with bilirubin for albumin binding; displaced free bilirubin crosses the immature neonatal blood-brain barrier and deposits in the basal ganglia (kernicterus).",
@@ -1026,10 +1026,10 @@
    "sub": "Excretion",
    "q": "Why was probenecid historically co-administered with penicillin G during World War II and in single-dose gonorrhoea regimens?",
    "options": [
-    "Probenecid competes for organic anion transporters in the proximal tubule, inhibiting penicillin secretion and prolonging its half-life",
-    "Probenecid enhances gastrointestinal absorption of penicillin G by 500%",
-    "Probenecid inhibits bacterial beta-lactamase enzymes directly",
-    "Probenecid displaces penicillin from red blood cell haemoglobin"
+    "Probenecid competes for proximal tubular organic anion transport and reduces penicillin secretion",
+    "It increases intestinal absorption of penicillin G by 500%",
+    "It directly inhibits bacterial beta-lactamase",
+    "It binds penicillin to erythrocyte haemoglobin"
    ],
    "answer": 0,
    "explain": "Probenecid is an organic acid that competitively inhibits OAT-mediated tubular secretion of penicillin, raising plasma penicillin levels and extending its duration of action.",
@@ -1049,10 +1049,10 @@
    "sub": "Excretion",
    "q": "A 24-year-old patient presents to the emergency room following an intentional overdose of aspirin (salicylate). Intravenous sodium bicarbonate is administered as part of management. How does sodium bicarbonate accelerate salicylate elimination?",
    "options": [
-    "It neutralizes unabsorbed aspirin tablets inside the stomach",
-    "It alkalinizes the urine, converting salicylic acid into its ionized, water-soluble form and preventing passive tubular reabsorption",
-    "It induces hepatic CYP3A4 to oxidize salicylate within minutes",
-    "It chelates salicylate in plasma for biliary excretion"
+    "It neutralises aspirin tablets in the stomach",
+    "It alkalinises urine, increasing ionisation and reducing tubular reabsorption of salicylate",
+    "It induces CYP3A4 to oxidise salicylate rapidly",
+    "It chelates salicylate for biliary excretion"
    ],
    "answer": 1,
    "explain": "Alkalinizing urine raises tubular fluid pH, shifting weak acids like salicylate and phenobarbital into their ionized (A-) form, trapping them in urine for rapid excretion.",
@@ -1280,10 +1280,10 @@
    "sub": "Clinical Pharmacokinetics",
    "q": "If the maintenance dosing rate of a drug obeying first-order kinetics is doubled, how does the time required to reach the new steady-state concentration change?",
    "options": [
-    "It is cut in half",
+    "It is halved",
     "It doubles",
     "It increases fourfold",
-    "It remains unchanged because time to steady state depends solely on elimination half-life"
+    "It is unchanged because time to steady state depends on elimination half-life"
    ],
    "answer": 3,
    "explain": "Doubling the dosing rate doubles the steady-state plasma concentration (Css), but the time taken to reach that plateau still equals 4 to 5 elimination half-lives.",
@@ -1561,10 +1561,10 @@
    "sub": "Distribution",
    "q": "How does extensive hypoalbuminaemia (as seen in nephrotic syndrome or cirrhosis) affect a highly albumin-bound drug like phenytoin?",
    "options": [
-    "The unbound (free) active fraction increases, risking toxicity even when total plasma concentration appears normal",
-    "The unbound fraction drops to zero",
+    "The unbound fraction rises, so toxicity can occur despite a seemingly normal total concentration",
+    "The free fraction falls to zero",
     "Renal clearance stops completely",
-    "The drug becomes permanently insoluble in blood"
+    "The drug becomes permanently insoluble in plasma"
    ],
    "answer": 0,
    "explain": "Low serum albumin leaves a higher proportion of phenytoin unbound; total measured drug may look normal or low while free active drug is in the toxic range.",
