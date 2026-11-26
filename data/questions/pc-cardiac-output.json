@@ -54,10 +54,10 @@
    "sub": "Definitions and Normal Values",
    "q": "What is cardiac reserve, and roughly how much can cardiac output increase in a healthy untrained young adult versus a trained endurance athlete during maximal exercise?",
    "options": [
-    "Cardiac reserve is the difference between right and left ventricular output",
-    "Cardiac reserve is the residual volume remaining after systole",
-    "Cardiac reserve is the capacity to raise output above rest; maximal output is about 20–25 L/min in untrained adults and 30–35 L/min in elite athletes",
-    "Cardiac reserve is the volume of blood stored in the spleen"
+    "The difference between right and left ventricular output",
+    "Residual volume remaining after systole",
+    "The ability to raise cardiac output above rest; peak output is higher in trained athletes",
+    "The volume of blood stored in the spleen"
    ],
    "answer": 2,
    "explain": "Cardiac reserve is the capacity to elevate CO above resting baseline (Maximum CO minus Resting CO, or expressed as a percentage). Untrained adults reach ~20-25 L/min (~300-400% reserve), while elite marathon runners can exceed 30-35 L/min.",
@@ -193,10 +193,10 @@
    "sub": "Regulation of Stroke Volume",
    "q": "How does homeometric autoregulation (the Anrep effect) differ from heterometric autoregulation (the Frank-Starling mechanism)?",
    "options": [
-    "Anrep increases contractility at a given fibre length; Frank-Starling increases force through greater end-diastolic stretch",
-    "Anrep slows heart rate during inspiration; Frank-Starling raises it during expiration",
-    "Anrep depends on vagal acetylcholine; Frank-Starling depends on aldosterone",
-    "Anrep occurs only in skeletal muscle; Frank-Starling occurs only in smooth muscle"
+    "Anrep increases contractility at fixed fibre length; Frank–Starling increases force through greater end-diastolic stretch",
+    "Anrep slows heart rate during inspiration; Frank–Starling raises it during expiration",
+    "Anrep depends on vagal acetylcholine; Frank–Starling depends on aldosterone",
+    "Anrep occurs only in skeletal muscle; Frank–Starling only in smooth muscle"
    ],
    "answer": 0,
    "explain": "Heterometric regulation adjusts force through changes in initial sarcomere length (EDV); homeometric regulation (Anrep effect and Bowditch staircase/Treppe phenomenon) enhances contractility independently of fiber length by increasing intracellular Ca2+ availability.",
@@ -216,9 +216,9 @@
    "sub": "Regulation of Stroke Volume",
    "q": "What is the Bowditch effect (treppe or force-frequency relationship) in ventricular myocardium?",
    "options": [
-    "A progressive fall in stroke volume whenever venous return rises",
-    "A stepwise increase in myocardial contractile force as heart rate increases, caused by cumulative intracellular Ca2+ loading",
-    "Immediate cardiac arrest triggered by carotid sinus massage",
+    "A progressive fall in stroke volume when venous return rises",
+    "Contractile force increases with heart rate, partly through greater intracellular Ca2+ availability",
+    "Cardiac arrest triggered by carotid sinus massage",
     "Reflex vasodilation of skeletal muscle arterioles during sleep"
    ],
    "answer": 1,
@@ -308,10 +308,10 @@
    "sub": "Venous Return and Guyton Vascular Function Curves",
    "q": "How do acute blood volume expansion (transfusion) and sympathetic venoconstriction shift the Guyton venous return curve?",
    "options": [
-    "They shift the curve downward and leftward by lowering mean systemic filling pressure",
-    "They increase mean systemic filling pressure (Pmsf), shifting the venous return curve upward and rightward to a higher equilibrium cardiac output",
-    "They alter only the cardiac function curve without changing the vascular function curve",
-    "They collapse the pulmonary veins and reduce left atrial pressure to zero"
+    "They lower mean systemic filling pressure and shift the curve down and left",
+    "They raise mean systemic filling pressure, shifting the venous-return curve up and right",
+    "They change only the cardiac function curve",
+    "They collapse pulmonary veins and reduce left atrial pressure to zero"
    ],
    "answer": 1,
    "explain": "Both increased blood volume and alpha-1-mediated constriction of compliant venous capacitance reservoirs raise Pmsf, shifting the vascular function curve right/upward and intersecting the cardiac curve at higher right atrial pressure and higher cardiac output.",
@@ -400,8 +400,8 @@
    "sub": "Regulation of Heart Rate and Bainbridge Reflex",
    "q": "Why does cardiac output fall precipitously if ventricular heart rate rises excessively above 180 to 200 beats per minute (such as in severe supraventricular tachycardia)?",
    "options": [
-    "Myocardial actin and myosin filaments denature above 180 bpm",
-    "Diastolic filling time becomes so abbreviated that end-diastolic volume and stroke volume plummet faster than heart rate rises",
+    "Myocardial actin and myosin denature above 180 beats/min",
+    "Shortened diastolic filling reduces end-diastolic volume and stroke volume",
     "The aortic valve cannot open more than 150 times per minute",
     "Vagal tone overrides sympathetic stimulation at high heart rates"
    ],
@@ -469,8 +469,8 @@
    "sub": "Physiological Variations in Cardiac Output",
    "q": "During dynamic isotonic exercise (such as running), how do heart rate, stroke volume, and total peripheral resistance change to elevate cardiac output up to 4- or 5-fold?",
    "options": [
-    "Heart rate and stroke volume rise, while metabolic vasodilation lowers total peripheral resistance",
-    "Heart rate remains constant while stroke volume increases fivefold",
+    "Heart rate and stroke volume rise while metabolic vasodilation lowers total peripheral resistance",
+    "Heart rate stays constant while stroke volume increases fivefold",
     "Total peripheral resistance doubles while stroke volume halves",
     "Venous return falls and myocardial contractility decreases"
    ],
@@ -492,10 +492,10 @@
    "sub": "Pathological Variations in Cardiac Output",
    "q": "Which group of clinical conditions produces a 'high-output' state characterized by chronically elevated resting cardiac output alongside reduced systemic vascular resistance?",
    "options": [
-    "Myocardial infarction, cardiac tamponade, and severe hypothyroidism",
-    "Severe anemia, thyrotoxicosis (hyperthyroidism), beriberi (thiamine deficiency), and arteriovenous fistula",
-    "Hemorrhagic shock, aortic stenosis, and restrictive cardiomyopathy",
-    "Complete heart block, acute pulmonary embolism, and dehydration"
+    "Myocardial infarction, tamponade and severe hypothyroidism",
+    "Severe anaemia, thyrotoxicosis, beriberi and arteriovenous fistula",
+    "Haemorrhagic shock, aortic stenosis and restrictive cardiomyopathy",
+    "Complete heart block, pulmonary embolism and dehydration"
    ],
    "answer": 1,
    "explain": "High-output states occur when reduced blood viscosity/tissue hypoxia (severe anemia), systemic vasodilation/hypermetabolism (thyrotoxicosis, wet beriberi), or direct vascular shunting (AV fistula, Paget bone disease) lower TPR and boost venous return.",
@@ -538,10 +538,10 @@
    "sub": "Pathological Variations in Cardiac Output",
    "q": "A 65-year-old man with decompensated left ventricular systolic heart failure receives an intravenous infusion of dobutamine (a beta-1 adrenergic agonist) and a venodilator. On Guyton's cardiac and vascular function curves, how does dobutamine alone shift the cardiac function curve?",
    "options": [
-    "Downward and rightward (reduced output at every right atrial pressure)",
-    "It shifts only the venous return curve without affecting the heart",
+    "Downward and rightward, reducing output at every right atrial pressure",
+    "It shifts only the venous-return curve",
     "It eliminates the plateau of the cardiac function curve",
-    "Upward and leftward (steeper slope), increasing cardiac output at any given right atrial pressure while lowering right atrial pressure"
+    "It shifts the cardiac function curve upward and leftward, increasing output at a given right atrial pressure"
    ],
    "answer": 3,
    "explain": "Positive inotropic stimulation shifts the cardiac output curve upward/leftward; intersecting the unchanged venous return curve yields a higher steady-state cardiac output and lower right atrial pressure (relieving venous congestion).",
