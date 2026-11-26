@@ -25,7 +25,7 @@ These checks reduce preventable editorial defects; they do not guarantee that a 
 ## Current bank composition
 
 - 57 total stems: 9 original + 38 in the expansion file + 10 batch-3 additions.
-- 22 curriculum topics represented.
+- 24 curriculum topics represented.
 - All content remains unverified unless a future audit explicitly records source verification.
 
 ## Remaining work
