@@ -125,10 +125,10 @@
    "sub": "Normal ECG Waves and Physiological Basis",
    "q": "What electrical event in the heart generates the normal P wave on the surface ECG?",
    "options": [
-    "Sinoatrial nodal pacemaker firing alone",
-    "Atrial muscle depolarization spreading from the SA node across both atria",
-    "Atrial repolarization",
-    "Interventricular septal depolarization"
+    "SA nodal firing alone",
+    "Atrial depolarisation",
+    "Atrial repolarisation",
+    "Septal depolarisation"
    ],
    "answer": 1,
    "explain": "SA nodal depolarization itself is too small to register on a surface ECG; the P wave reflects the wave of atrial myocardial depolarization (normally less than 0.12 s wide and less than 2.5 mm tall in lead II).",
@@ -148,10 +148,10 @@
    "sub": "Normal ECG Waves and Physiological Basis",
    "q": "Why is the atrial repolarization wave (Ta wave) normally not visible as a separate deflection on a resting ECG?",
    "options": [
-    "Atrial myocytes do not undergo repolarization",
-    "Atrial repolarization occurs after the T wave",
-    "Atrial repolarization has low voltage and occurs simultaneously with the high-amplitude QRS complex, which obscures it",
-    "The AV node blocks atrial repolarization currents from reaching the skin"
+    "Atrial cells do not repolarise",
+    "Atrial repolarisation occurs after the T wave",
+    "Low-voltage atrial repolarisation is obscured by the QRS complex",
+    "The AV node blocks atrial repolarisation"
    ],
    "answer": 2,
    "explain": "Atrial repolarization occurs roughly 0.15 to 0.20 s after the P wave, coinciding directly with ventricular depolarization (QRS complex), which masks it unless complete AV block dissociates P waves from QRS complexes.",
@@ -171,10 +171,10 @@
    "sub": "Normal ECG Waves and Physiological Basis",
    "q": "Which part of the ventricles depolarizes first, producing the normal small physiological Q wave in left lateral leads (I, aVL, V5, V6)?",
    "options": [
-    "Posterior basal wall of the right ventricle",
-    "Epicardial apex of the left ventricle",
+    "Posterior basal right ventricle",
+    "Left ventricular apex",
     "Right atrial appendage",
-    "Left side of the interventricular septum depolarizing from left to right"
+    "Left-to-right septal depolarisation"
    ],
    "answer": 3,
    "explain": "The left bundle branch activates the left mid-septum first, creating a small initial depolarization vector directed from left to right and anteriorly—away from left lateral leads (small Q wave) and toward V1 (small R wave).",
@@ -194,10 +194,10 @@
    "sub": "Normal ECG Waves and Physiological Basis",
    "q": "What does the T wave represent, and why is it normally upright in the same leads that have an upright QRS complex (such as lead II and V5)?",
    "options": [
-    "Ventricular repolarization; it is upright because repolarization proceeds from epicardium to endocardium (opposite the direction of depolarization)",
-    "Ventricular depolarization; it is upright because the wave moves toward the apex",
-    "His-Purkinje conduction; it is upright due to rapid sodium influx",
-    "Papillary muscle contraction; it is upright because of chordae tendineae tension"
+    "Ventricular repolarisation; epicardium repolarises before endocardium",
+    "Ventricular depolarisation toward the apex",
+    "His–Purkinje conduction",
+    "Papillary muscle contraction"
    ],
    "answer": 0,
    "explain": "Endocardial myocytes have longer action potential durations than epicardial cells, so ventricular repolarization moves from epicardium toward endocardium; a negative repolarization wave moving away from the positive electrode produces an upright deflection.",
@@ -217,10 +217,10 @@
    "sub": "Normal ECG Intervals and Segments",
    "q": "What is the normal duration of the PR interval in adults, and what physiological event does it primarily reflect?",
    "options": [
-    "0.04 to 0.08 seconds; reflects His-Purkinje conduction",
-    "0.12 to 0.20 seconds (3 to 5 small boxes); reflects atrial depolarization plus physiological conduction delay through the AV node",
-    "0.25 to 0.35 seconds; reflects ventricular plateau duration",
-    "0.40 to 0.44 seconds; reflects total ventricular systole"
+    "0.04–0.08 s; His–Purkinje conduction",
+    "0.12–0.20 s; atrial depolarisation and AV nodal delay",
+    "0.25–0.35 s; ventricular plateau",
+    "0.40–0.44 s; total ventricular systole"
    ],
    "answer": 1,
    "explain": "Measured from the onset of the P wave to the onset of the QRS complex, the PR interval normally spans 0.12 to 0.20 s and is governed chiefly by slow conduction through the AV node.",
@@ -240,10 +240,10 @@
    "sub": "Normal ECG Intervals and Segments",
    "q": "What is the normal upper limit for QRS complex duration in a healthy adult, and what does widening beyond this limit indicate?",
    "options": [
-    "0.04 seconds; indicates sinus bradycardia",
-    "0.20 seconds; indicates first-degree AV block",
-    "0.10 to 0.12 seconds (less than 3 small squares); widening indicates delayed intraventricular conduction such as bundle branch block or ventricular ectopic rhythm",
-    "0.44 seconds; indicates hypercalcemia"
+    "0.04 s; sinus bradycardia",
+    "0.20 s; first-degree AV block",
+    "0.10–0.12 s; widening suggests delayed ventricular conduction",
+    "0.44 s; hypercalcaemia"
    ],
    "answer": 2,
    "explain": "Rapid conduction via the His-Purkinje system normally depolarizes both ventricles within 0.08 to 0.10 s (less than 0.12 s); QRS duration of 0.12 s or more indicates bundle branch block, hyperkalemia, or ventricular origin of the beat.",
@@ -263,10 +263,10 @@
    "sub": "Normal ECG Intervals and Segments",
    "q": "Which phase of the ventricular cardiac myocyte action potential corresponds temporally to the isoelectric ST segment on the surface ECG?",
    "options": [
-    "Phase 0 rapid depolarization",
-    "Phase 1 early repolarization notch",
-    "Phase 3 rapid repolarization",
-    "Phase 2 plateau phase, when all ventricular cells are uniformly depolarized"
+    "Phase 0: rapid depolarisation",
+    "Phase 1: early repolarisation",
+    "Phase 3: rapid repolarisation",
+    "Phase 2: plateau"
    ],
    "answer": 3,
    "explain": "During the Phase 2 plateau, the entire ventricular myocardium is equally depolarized, creating no extracellular potential difference between electrodes and keeping the ST segment flat at the isoelectric baseline.",
@@ -287,10 +287,10 @@
    "sub": "Normal ECG Intervals and Segments",
    "q": "Which formula (Bazett's formula) is used to calculate the heart-rate-corrected QT interval (QTc), and what is the clinical danger of marked QTc prolongation?",
    "options": [
-    "QTc = QT / square root of RR interval (in seconds); predisposes to polymorphic ventricular tachycardia (torsades de pointes)",
-    "QTc = QT x RR interval; predisposes to sinus arrest",
-    "QTc = RR / QT; predisposes to first-degree AV block",
-    "QTc = QT + PR interval; predisposes to atrial flutter"
+    "QTc = QT/√RR; prolongation predisposes to torsades",
+    "QTc = QT × RR; predisposes to sinus arrest",
+    "QTc = RR/QT; predisposes to AV block",
+    "QTc = QT + PR; predisposes to flutter"
    ],
    "answer": 0,
    "explain": "Because QT shortens as heart rate increases, Bazett's formula normalizes QT to 60 bpm (QTc = QT / sqrt(RR in seconds), normal under ~0.44 s in men and ~0.46 s in women); prolonged QTc delays repolarization and triggers early afterdepolarizations leading to torsades de pointes.",
@@ -380,10 +380,10 @@
    "sub": "Heart Rate and Mean Electrical Axis",
    "q": "Which condition typically causes right axis deviation (negative QRS in Lead I, positive QRS in Lead aVF) on a 12-lead ECG?",
    "options": [
-    "Right ventricular hypertrophy secondary to chronic pulmonary hypertension (cor pulmonale)",
+    "Right ventricular hypertrophy from pulmonary hypertension",
     "Left anterior fascicular block",
-    "Severe concentric left ventricular hypertrophy",
-    "Lateral wall myocardial infarction"
+    "Concentric left ventricular hypertrophy",
+    "Lateral myocardial infarction"
    ],
    "answer": 0,
    "explain": "Right ventricular hypertrophy shifts the net ventricular depolarization vector rightward and anteriorly, producing a negative QRS in Lead I, positive QRS in aVF, and tall R wave in V1.",
@@ -403,10 +403,10 @@
    "sub": "Electrolyte Disturbances on ECG",
    "q": "Which sequence of progressive ECG changes is characteristic of worsening hyperkalemia?",
    "options": [
-    "Flattened T waves, prominent U waves, and ST depression",
-    "Tall peaked (tented) T waves, prolonged PR interval, loss of P waves, and widened QRS merging into a sine-wave pattern",
-    "Markedly shortened QT interval with Osborne J waves",
-    "Isolated sinus tachycardia with narrowed QRS complexes"
+    "Flat T waves, U waves and ST depression",
+    "Tall peaked T waves, prolonged PR, loss of P waves and wide QRS",
+    "Short QT with Osborne waves",
+    "Sinus tachycardia with narrow QRS"
    ],
    "answer": 1,
    "explain": "Elevated extracellular K+ accelerates Phase 3 repolarization (tall tented T waves) while partially depolarizing resting membrane potential and inactivating fast Na+ channels, slowing conduction (prolonged PR, absent P, wide QRS, sine wave, and asystole/VF).",
@@ -449,10 +449,10 @@
    "sub": "Electrolyte Disturbances on ECG",
    "q": "How do hypocalcemia and hypercalcemia alter the QT interval on an electrocardiogram?",
    "options": [
-    "Hypocalcemia shortens the QT interval; hypercalcemia prolongs the QT interval",
-    "Neither serum calcium abnormality affects the QT interval",
-    "Both hypocalcemia and hypercalcemia prolong the PR interval without changing QT",
-    "Hypocalcemia prolongs the QT interval (by lengthening the ST segment), whereas hypercalcemia shortens the QT interval"
+    "Hypocalcaemia shortens QT; hypercalcaemia prolongs it",
+    "Neither affects QT",
+    "Both prolong PR without changing QT",
+    "Hypocalcaemia prolongs QT; hypercalcaemia shortens it"
    ],
    "answer": 3,
    "explain": "Low extracellular Ca2+ prolongs Phase 2 plateau duration, lengthening the ST segment and QTc interval; elevated extracellular Ca2+ accelerates Phase 2 closure, shortening the ST segment and QTc.",
@@ -472,10 +472,10 @@
    "sub": "Arrhythmias and Conduction Blocks",
    "q": "Which ECG findings define Mobitz type I (Wenckebach) second-degree atrioventricular block?",
    "options": [
-    "Progressive lengthening of the PR interval from beat to beat until a P wave fails to conduct (dropped QRS), followed by a shorter PR interval",
-    "Constant normal PR interval with sudden intermittent non-conducted P waves",
-    "Complete AV dissociation where P waves and QRS complexes beat independently at their own rates",
-    "Uniformly prolonged PR interval greater than 0.20 seconds where every P wave is followed by a QRS complex"
+    "PR lengthens progressively until a QRS is dropped, then the cycle repeats",
+    "PR remains constant before a dropped QRS",
+    "P waves and QRS complexes are completely dissociated",
+    "PR is prolonged but every P conducts"
    ],
    "answer": 0,
    "explain": "Mobitz type I (Wenckebach) reflects progressive decremental conduction fatigue within the AV node (grouped beating with progressive PR prolongation before a dropped beat), whereas Mobitz type II occurs below the AV node with fixed PR intervals and higher risk of progression to complete heart block.",
@@ -495,10 +495,10 @@
    "sub": "Arrhythmias and Conduction Blocks",
    "q": "Which three hallmark ECG features characterize atrial fibrillation?",
    "options": [
-    "Regular sawtooth flutter waves at 300/min, regular RR intervals, and wide QRS complexes",
-    "Absence of distinct P waves (replaced by chaotic fibrillatory baseline), irregularly irregular RR intervals, and narrow QRS complexes (unless aberrancy exists)",
-    "Prolonged PR interval greater than 0.24 s, regular RR intervals, and peaked T waves",
-    "Regular sinus P waves before every QRS with a heart rate of 45 beats/min"
+    "Regular sawtooth waves with regular RR intervals",
+    "No distinct P waves and irregularly irregular RR intervals",
+    "Prolonged PR with regular RR and peaked T waves",
+    "Normal sinus P waves before each QRS"
    ],
    "answer": 1,
    "explain": "Multiple disorganized atrial re-entrant wavelets fire at 350-600/min without coordinated atrial contraction (eliminating P waves and increasing left atrial appendage thromboembolism risk), while variable AV nodal filtering produces irregularly irregular ventricular RR intervals.",
