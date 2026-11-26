@@ -833,6 +833,50 @@
           "Serum haptoglobin"
         ]
       }
+    },
+    {
+      "id": "pb-red-blood-cells-NEW01",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Erythropoiesis",
+      "q": "A patient with chronic kidney disease develops a normocytic normochromic anaemia. Reduced production of which hormone is the principal mechanism?",
+      "options": [
+        "Erythropoietin",
+        "Thrombopoietin",
+        "Granulocyte colony-stimulating factor",
+        "Hepcidin"
+      ],
+      "answer": 0,
+      "explain": "Renal peritubular interstitial cells produce erythropoietin in response to tissue hypoxia. Reduced renal erythropoietin production is a major cause of anaemia in chronic kidney disease.",
+      "verified": false,
+      "open": {
+        "q": "Which renal hormone is deficient in the common anaemia of chronic kidney disease?",
+        "accept": [
+          "Erythropoietin"
+        ]
+      }
+    },
+    {
+      "id": "pb-red-blood-cells-NEW02",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Haemoglobin oxygen affinity",
+      "q": "A patient with fever and sepsis has increased 2,3-bisphosphoglycerate in erythrocytes. What is its effect on the oxygen-haemoglobin dissociation curve?",
+      "options": [
+        "Right shift with reduced haemoglobin oxygen affinity",
+        "Left shift with increased oxygen affinity",
+        "No change in oxygen affinity",
+        "A right shift caused by increased haemoglobin saturation"
+      ],
+      "answer": 0,
+      "explain": "2,3-BPG binds deoxyhaemoglobin and stabilises the T state, reducing oxygen affinity and shifting the dissociation curve to the right. This facilitates oxygen unloading in tissues.",
+      "verified": false,
+      "open": {
+        "q": "How does increased 2,3-BPG affect haemoglobin oxygen affinity?",
+        "accept": [
+          "It decreases affinity and shifts the dissociation curve to the right"
+        ]
+      }
     }
   ]
 }
