@@ -1,7 +1,8 @@
 /* Optional Wikimedia-powered learning media. Never required by the question engine. */
 (function () {
   var DX = window.DX, esc = DX.esc;
-  var PREFIX = "dx.media.", TTL = 7 * 24 * 60 * 60 * 1000;
+  /* v2 deliberately bypasses older generic-search cache entries. */
+  var PREFIX = "dx.media.v2.", TTL = 7 * 24 * 60 * 60 * 1000;
 
   function cached(key) {
     var item = DX.store.get(PREFIX + key, null);
@@ -19,42 +20,84 @@
     }).finally(function () { clearTimeout(timer); });
   }
   function cleanText(value) {
-    return String(value || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+    return String(value || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\\s+/g, " ").trim();
+  }
+  function profileFor(term) {
+    var t = String(term || "").toLowerCase();
+    if (/histolog|microscop|epitheli|connective tissue|cartilage|bone tissue|blood smear|tissue section/.test(t)) {
+      return { kind: "Histology", hint: "histology micrograph microscope slide", boost: ["histology", "micrograph", "microscopic", "stained", "slide", "tissue"] };
+    }
+    if (/x.?ray|radiograph|fracture|dislocation|pneumothorax|pleural effusion|chest imaging|radiology/.test(t)) {
+      return { kind: "Radiology", hint: "medical radiograph X-ray", boost: ["radiograph", "x-ray", "radiology", "fracture", "imaging"] };
+    }
+    if (/froment|dinner.?fork|wrist drop|foot drop|claw hand|waiter.?s tip|clinical sign|clinical examination|deformity|palsy/.test(t)) {
+      return { kind: "Clinical signs", hint: "clinical sign medical photograph illustration", boost: ["clinical", "sign", "photograph", "illustration", "deformity", "palsy"] };
+    }
+    if (/physiolog|ecg|electrocardio|spirom|lung volume|oxygen dissociation|oxy.?haemoglobin|oxy.?hemoglobin|cardiac cycle|wiggers|action potential|membrane potential|gfr|glomerular filtration|renal clearance|blood pressure|ventilation perfusion/.test(t)) {
+      return { kind: "Physiology", hint: "physiology diagram graph medical illustration", boost: ["physiology", "diagram", "graph", "waveform", "curve", "cycle"] };
+    }
+    if (/biochem|glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|lipid metabolism|carbohydrate metabolism|amino acid metabolism|metabolic pathway|dna replication|rna transcription|enzyme kinetics/.test(t)) {
+      return { kind: "Biochemistry", hint: "biochemistry pathway diagram molecular illustration", boost: ["biochemistry", "pathway", "metabolism", "molecular", "diagram", "enzyme"] };
+    }
+    return { kind: "Anatomy", hint: "anatomy labelled medical diagram specimen", boost: ["anatomy", "diagram", "labelled", "labeled", "specimen", "dissection"] };
   }
   function summary(term) {
     var key = "summary." + term.toLowerCase(), hit = cached(key);
     if (hit) return Promise.resolve(hit);
-    var slug = encodeURIComponent(term.trim().replace(/\s+/g, "_"));
+    var slug = encodeURIComponent(term.trim().replace(/\\s+/g, "_"));
     return request("https://en.wikipedia.org/api/rest_v1/page/summary/" + slug).then(function (d) {
       var out = { title: d.title || term, extract: d.extract || "", thumbnail: d.thumbnail && d.thumbnail.source || "", page: d.content_urls && d.content_urls.desktop && d.content_urls.desktop.page || "" };
       save(key, out); return out;
     }).catch(function () { return null; });
   }
+  function imageScore(item, term, profile) {
+    var title = String(item.title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
+    var topic = String(term || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    var words = topic.split(/\\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system)$/.test(w); });
+    var score = topic && title.indexOf(topic) > -1 ? 12 : 0;
+    words.forEach(function (w) { if (title.indexOf(w) > -1) score += 3; });
+    profile.boost.forEach(function (w) { if (title.indexOf(w) > -1) score += 2; });
+    if (/\\b(logo|icon|flag|coat of arms)\\b/.test(title)) score -= 8;
+    return score;
+  }
   function images(term) {
     var key = "images." + term.toLowerCase(), hit = cached(key);
     if (hit) return Promise.resolve(hit);
-    var u = new URL("https://commons.wikimedia.org/w/api.php");
-    var params = { action: "query", generator: "search", gsrsearch: term, gsrnamespace: "6", gsrlimit: "4", prop: "imageinfo", iiprop: "url|extmetadata", iiurlwidth: "640", format: "json", origin: "*" };
+    var profile = profileFor(term), u = new URL("https://commons.wikimedia.org/w/api.php");
+    var params = {
+      action: "query", generator: "search",
+      gsrsearch: term + " " + profile.hint,
+      gsrnamespace: "6", gsrlimit: "16", prop: "imageinfo",
+      iiprop: "url|extmetadata", iiurlwidth: "640", format: "json", origin: "*"
+    };
     Object.keys(params).forEach(function (k) { u.searchParams.set(k, params[k]); });
     return request(u.toString()).then(function (d) {
       var pages = d.query && d.query.pages || {};
-      var out = Object.keys(pages).map(function (id) {
+      var out = Object.keys(pages).map(function (id, index) {
         var p = pages[id], info = p.imageinfo && p.imageinfo[0];
         if (!info || !info.thumburl && !info.url) return null;
         var meta = info.extmetadata || {};
-        return {
+        var item = {
           title: String(p.title || "").replace(/^File:/, ""),
           image: info.thumburl || info.url,
           page: info.descriptionurl || "",
           license: cleanText(meta.LicenseShortName && meta.LicenseShortName.value) || "Check licence",
           artist: cleanText(meta.Artist && meta.Artist.value) || "Author not listed"
         };
+        item._score = imageScore(item, term, profile);
+        item._order = index;
+        return item;
       }).filter(Boolean);
+      out.sort(function (a, b) { return b._score - a._score || a._order - b._order; });
+      out = out.slice(0, 4).map(function (item) {
+        delete item._score; delete item._order; return item;
+      });
       save(key, out); return out;
     }).catch(function () { return []; });
   }
   function render(target, term) {
     if (!target || !term) return;
+    var profile = profileFor(term);
     target.innerHTML = '<div class="dx-media-state"><span class="spin"></span> Finding optional learning media…</div>';
     Promise.all([summary(term), images(term)]).then(function (results) {
       if (!target.isConnected) return;
@@ -71,7 +114,8 @@
         }).join("") + '</div>';
       }
       if (!html) html = '<p class="muted">No external media was found. Your question and explanation are still available above.</p>';
-      target.innerHTML = '<section class="dx-media-panel"><div class="dx-media-head"><b>Visual learning · ' + esc(term) + '</b><button type="button" class="btn ghost small" data-media-close>Close</button></div>' + html +
+      target.innerHTML = '<section class="dx-media-panel"><div class="dx-media-head"><b>Visual learning · ' + esc(term) + '</b><button type="button" class="btn ghost small" data-media-close>Close</button></div>' +
+        '<p class="dx-media-note">Search focus: ' + esc(profile.kind) + '. Supplementary references only. Check medical facts against your trusted course texts. Image licences and attribution are shown where available.</p>' + html +
         '<p class="dx-media-note">Supplementary references only. Check medical facts against your trusted course texts. Image licences and attribution are shown where available.</p></section>';
       var close = target.querySelector("[data-media-close]");
       if (close) close.addEventListener("click", function () { target.innerHTML = ""; });
