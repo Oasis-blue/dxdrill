@@ -1,1401 +1,1401 @@
 {
- "topic": "ba-detoxification-and-xenobiotics",
- "questions": [
-  {
-   "id": "ba-detoxification-and-xenobiotics-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "What are xenobiotics in medical biochemistry?",
-   "options": [
-    "Foreign chemical compounds (such as drugs, food additives, pesticides, and environmental pollutants) that are not normal endogenous metabolites or nutrients",
-    "Endogenous steroid hormones synthesized in the adrenal cortex",
-    "Dietary amino acids used exclusively for protein synthesis",
-    "Nucleoside triphosphates generated during glycolysis"
-   ],
-   "answer": 0,
-   "explain": "Xenobiotics are exogenous chemical substances taken into the body that have no normal physiological metabolic function and must generally be biotransformed to increase water solubility for excretion.",
-   "verified": false,
-   "open": {
-    "q": "What term refers to foreign chemical compounds such as drugs, environmental toxins, and pollutants entering the body?",
-    "accept": [
-     "Xenobiotics",
-     "Xenobiotic"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "Why does lipophilic xenobiotic metabolism generally convert nonpolar compounds into more polar, water-soluble metabolites?",
-   "options": [
-    "To prevent them from entering hepatocytes",
-    "Because lipophilic compounds are reabsorbed across renal tubules and accumulate in adipose tissue, whereas polar conjugates are readily excreted in urine or bile",
-    "To convert all xenobiotics into glucose",
-    "To store toxins permanently inside mitochondria"
-   ],
-   "answer": 1,
-   "explain": "Unmetabolized nonpolar xenobiotics pass easily through lipid membranes and are reabsorbed in the renal tubules; increasing polarity and molecular weight facilitates renal filtration/secretion or biliary excretion.",
-   "verified": false,
-   "open": {
-    "q": "What is the primary physiological goal of xenobiotic biotransformation with respect to solubility and elimination?",
-    "accept": [
-     "Increase water solubility for excretion",
-     "Make water-soluble for excretion",
-     "Increase polarity and excretion"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "Which organ serves as the primary site of xenobiotic biotransformation in humans?",
-   "options": [
-    "Spleen",
-    "Liver",
-    "Thyroid gland",
-    "Pancreas"
-   ],
-   "answer": 1,
-   "explain": "Hepatocytes contain the highest concentration and broadest repertoire of Phase I (especially cytochrome P450) and Phase II conjugating enzymes, though extrahepatic tissues (intestine, kidney, lung, skin) also contribute.",
-   "verified": false,
-   "open": {
-    "q": "Name the principal organ of xenobiotic metabolism in the human body.",
-    "accept": [
-     "Liver"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "What is a prodrug in pharmacology and xenobiotic biochemistry?",
-   "options": [
-    "A toxic metabolite formed only during overdose",
-    "A molecule that inhibits all Phase I enzymes",
-    "A compound that blocks renal excretion of drugs",
-    "A pharmacologically inactive or less active precursor compound that is biotransformed in vivo into an active therapeutic drug"
-   ],
-   "answer": 3,
-   "explain": "Prodrugs (such as codeine -> morphine, clopidogrel -> active thiol metabolite, or enalapril -> enalaprilat) require metabolic activation (often via CYP450 or esterases) to exert their pharmacological effect.",
-   "verified": false,
-   "open": {
-    "q": "What term describes an inactive or precursor medication converted metabolically into its active therapeutic form in the body?",
-    "accept": [
-     "Prodrug"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-005",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "What is bioactivation (toxication) during xenobiotic metabolism?",
-   "options": [
-    "Conversion of a relatively inert or less toxic xenobiotic into a reactive electrophilic intermediate or toxic metabolite capable of binding DNA, proteins, or lipids",
-    "Immediate urinary clearance without chemical modification",
-    "Inhibition of all hepatic blood flow",
-    "Conversion of ethanol into glycogen"
-   ],
-   "answer": 0,
-   "explain": "Although biotransformation usually detoxifies xenobiotics, Phase I oxidation can generate reactive electrophiles or free radicals (e.g., NAPQI from acetaminophen or benzo[a]pyrene-7,8-diol-9,10-epoxide) that cause cellular injury or carcinogenesis.",
-   "verified": false,
-   "open": {
-    "q": "What term describes metabolic conversion of a xenobiotic into a more toxic or reactive metabolite?",
-    "accept": [
-     "Bioactivation",
-     "Toxication",
-     "Metabolic activation"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which chemical reactions predominate in Phase I biotransformation of xenobiotics?",
-   "options": [
-    "Glucuronidation and sulfation",
-    "Oxidation, reduction, and hydrolysis (often exposing or introducing functional groups such as -OH, -NH2, or -SH)",
-    "Acetylation and methylation",
-    "Glutathione conjugation"
-   ],
-   "answer": 1,
-   "explain": "Phase I reactions introduce or unmask polar functional groups via oxidation (especially monooxygenation), reduction, or hydrolysis, preparing substrates for Phase II conjugation or direct excretion.",
-   "verified": false,
-   "open": {
-    "q": "List the three main types of chemical reactions that characterize Phase I xenobiotic metabolism.",
-    "accept": [
-     "Oxidation, reduction, and hydrolysis",
-     "Oxidation, reduction, hydrolysis"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "In which subcellular compartment of hepatocytes are cytochrome P450 monooxygenases predominantly located?",
-   "options": [
-    "Inner mitochondrial membrane",
-    "Smooth endoplasmic reticulum (microsomal fraction)",
-    "Nucleolus",
-    "Lysosomal lumen"
-   ],
-   "answer": 1,
-   "explain": "Hepatic cytochrome P450 enzymes are integral membrane haemoproteins of the smooth endoplasmic reticulum, isolated in the microsomal fraction upon cell homogenization and differential centrifugation.",
-   "verified": false,
-   "open": {
-    "q": "In which cellular organelle are drug-metabolizing cytochrome P450 enzymes primarily located?",
-    "accept": [
-     "Smooth endoplasmic reticulum",
-     "SER",
-     "Endoplasmic reticulum"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-008",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Why are cytochrome P450 enzymes classified as monooxygenases (mixed-function oxidases)?",
-   "options": [
-    "They attach two oxygen atoms from O2 onto a single carbon atom",
-    "They operate without molecular oxygen",
-    "They incorporate one atom of molecular oxygen (O2) into the xenobiotic substrate while reducing the second oxygen atom to water (H2O) using electrons from NADPH",
-    "They cleave amide bonds using water"
-   ],
-   "answer": 2,
-   "explain": "Monooxygenases catalyze RH + O2 + NADPH + H+ -> ROH + H2O + NADP+, inserting one oxygen atom into the substrate (RH -> ROH) and reducing the other to water.",
-   "verified": false,
-   "open": {
-    "q": "Which reduced nucleotide cofactor donates electrons to the cytochrome P450 catalytic cycle via NADPH-cytochrome P450 reductase?",
-    "accept": [
-     "NADPH"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Why are these haemoproteins named 'cytochrome P450'?",
-   "options": [
-    "They weigh 450 kilodaltons",
-    "They contain 450 heme groups per molecule",
-    "They are expressed in 450 human tissues",
-    "When reduced (Fe2+) and bound to carbon monoxide, they exhibit a characteristic spectrophotometric absorption peak at 450 nm"
-   ],
-   "answer": 3,
-   "explain": "Reduced ferrous CYP450 complexed with CO produces a distinctive Soret absorbance maximum near 450 nm due to the thiolate ligand from a conserved cysteine coordinated to heme iron.",
-   "verified": false,
-   "open": {
-    "q": "At what wavelength (in nanometers) does reduced carbon monoxide-bound cytochrome P450 show its signature absorption peak?",
-    "accept": [
-     "450 nm",
-     "450"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which human cytochrome P450 isoform accounts for the largest fraction of hepatic CYP450 content and metabolizes roughly half of all clinically used drugs?",
-   "options": [
-    "CYP3A4",
-    "CYP1A1",
-    "CYP2E1",
-    "CYP2A6"
-   ],
-   "answer": 0,
-   "explain": "CYP3A4 is the most abundant CYP isoform in human liver and small intestine and is responsible for metabolizing a wide range of medications (e.g., statins, calcium channel blockers, immunosuppressants, macrolides).",
-   "verified": false,
-   "open": {
-    "q": "Name the predominant human cytochrome P450 isoform involved in metabolizing roughly half of all prescribed drugs.",
-    "accept": [
-     "CYP3A4"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "How do furanocoumarins in grapefruit juice cause clinically significant drug interactions with oral medications such as felodipine, nifedipine, or simvastatin?",
-   "options": [
-    "Accelerate renal glomerular filtration of the drugs",
-    "Irreversibly inactivate intestinal enterocyte CYP3A4 ('mechanism-based / suicide inhibition'), increasing oral drug bioavailability and toxicity",
-    "Bind the drugs in the stomach to prevent all absorption",
-    "Induce hepatic glucuronidation ten-fold"
-   ],
-   "answer": 1,
-   "explain": "Grapefruit furanocoumarins are oxidized by intestinal CYP3A4 into reactive intermediates that covalently bind and irreversibly inactivate the enzyme, reducing first-pass intestinal metabolism and raising systemic drug levels.",
-   "verified": false,
-   "open": {
-    "q": "Which intestinal cytochrome P450 enzyme is irreversibly inhibited by components of grapefruit juice?",
-    "accept": [
-     "CYP3A4"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-012",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "What happens when a patient taking a drug metabolized by CYP3A4 starts rifampicin or carbamazepine (potent CYP450 enzyme inducers)?",
-   "options": [
-    "Plasma levels of the co-administered drug rise dangerously",
-    "The co-administered drug is never absorbed",
-    "Induction increases CYP450 enzyme synthesis over days to weeks, accelerating clearance and lowering plasma levels/efficacy of the co-administered drug",
-    "CYP450 enzymes switch from oxidation to glucuronidation"
-   ],
-   "answer": 2,
-   "explain": "Enzyme inducers (such as rifampicin, phenobarbital, phenytoin, carbamazepine, and St. John's wort) act largely via nuclear receptors (PXR/CAR) to increase transcription of CYP450 mRNA, speeding up drug breakdown and potentially causing treatment failure or transplant rejection.",
-   "verified": false,
-   "open": {
-    "q": "Name one potent cytochrome P450 enzyme-inducing drug that can lower plasma concentrations of co-administered medications such as warfarin or oral contraceptives.",
-    "accept": [
-     "Rifampicin",
-     "Rifampin",
-     "Carbamazepine",
-     "Phenobarbital",
-     "Phenytoin"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-013",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "A patient with genetically absent CYP2D6 activity ('poor metabolizer') is prescribed standard-dose codeine for post-operative pain and experiences minimal analgesia. Why does codeine fail to relieve pain in CYP2D6 poor metabolizers?",
-   "options": [
-    "CYP2D6 normally clears morphine before it reaches the brain",
-    "CYP2D6 converts codeine into inactive glucuronides",
-    "CYP2D6 catalyzes O-demethylation of codeine (a prodrug) into active morphine, which has much higher affinity for mu-opioid receptors",
-    "CYP2D6 is required to absorb codeine from the stomach"
-   ],
-   "answer": 2,
-   "explain": "Codeine relies on CYP2D6 to demethylate it into morphine; poor metabolizers get inadequate pain relief, whereas ultrarapid metabolizers convert codeine to morphine excessively and risk fatal opioid respiratory depression.",
-   "verified": false,
-   "open": {
-    "q": "Which polymorphic cytochrome P450 enzyme converts the prodrug codeine into active morphine?",
-    "accept": [
-     "CYP2D6"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which cytochrome P450 isoform is markedly induced by chronic alcohol consumption and metabolizes ethanol via the microsomal ethanol-oxidizing system (MEOS) while also bioactivating acetaminophen into hepatotoxic NAPQI?",
-   "options": [
-    "CYP2A6",
-    "CYP2C9",
-    "CYP2C19",
-    "CYP2E1"
-   ],
-   "answer": 3,
-   "explain": "CYP2E1 is induced by chronic ethanol intake (and fasting/ketosis), generates reactive oxygen species, and converts acetaminophen into N-acetyl-p-benzoquinone imine (NAPQI).",
-   "verified": false,
-   "open": {
-    "q": "Name the ethanol-inducible cytochrome P450 isoform that participates in microsomal ethanol oxidation and converts acetaminophen into NAPQI.",
-    "accept": [
-     "CYP2E1"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-015",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which cytosolic enzyme family catalyzes the hydrolysis of esters and amides (such as aspirin, procaine, succinylcholine, and prodrug esterases) during Phase I metabolism?",
-   "options": [
-    "Esterases (and amidases)",
-    "Glucuronosyltransferases",
-    "Sulfotransferases",
-    "Glutathione S-transferases"
-   ],
-   "answer": 0,
-   "explain": "Carboxylesterases, cholinesterases (butyrylcholinesterase/pseudocholinesterase), and amidases hydrolyze ester and amide bonds to yield carboxylic acids plus alcohols or amines.",
-   "verified": false,
-   "open": {
-    "q": "Name the class of hydrolytic enzymes that cleave ester bonds in drugs and xenobiotics during Phase I metabolism.",
-    "accept": [
-     "Esterases",
-     "Carboxylesterases",
-     "Esterase"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "What is the hallmark of Phase II biotransformation reactions?",
-   "options": [
-    "Cleavage of aromatic rings into carbon dioxide",
-    "Covalent conjugation of a xenobiotic or its Phase I metabolite with an endogenous polar molecule (such as glucuronic acid, sulfate, glutathione, glycine, or acetyl group)",
-    "Insertion of a single oxygen atom from O2",
-    "Direct excretion without any enzyme involvement"
-   ],
-   "answer": 1,
-   "explain": "Phase II reactions attach bulky, polar, or charged endogenous moieties to functional groups (-OH, -COOH, -NH2, -SH, epoxides), typically producing inactive, highly water-soluble conjugates for urinary or biliary elimination.",
-   "verified": false,
-   "open": {
-    "q": "What biochemical process defines Phase II xenobiotic metabolism?",
-    "accept": [
-     "Conjugation",
-     "Covalent conjugation with endogenous polar groups"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-017",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Which activated nucleotide sugar serves as the glucuronyl donor in UDP-glucuronosyltransferase (UGT)-catalyzed glucuronidation?",
-   "options": [
-    "UDP-glucose",
-    "UDP-glucuronic acid (UDPGA)",
-    "UDP-galactose",
-    "CDP-choline"
-   ],
-   "answer": 1,
-   "explain": "UGTs transfer glucuronic acid from UDP-glucuronic acid (synthesized by UDP-glucose dehydrogenase) onto hydroxyl, carboxyl, amino, or sulfhydryl groups to form polar beta-glucuronides.",
-   "verified": false,
-   "open": {
-    "q": "Name the activated sugar donor molecule used by UDP-glucuronosyltransferases during glucuronidation.",
-    "accept": [
-     "UDP-glucuronic acid",
-     "UDPGA"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Why is glucuronidation the most common Phase II conjugation pathway in humans?",
-   "options": [
-    "It requires no cofactors",
-    "UDP-glucuronic acid is readily supplied from glucose metabolism, and glucuronides are highly water-soluble and rapidly cleared via urine or bile",
-    "It occurs exclusively in red blood cells",
-    "It converts all drugs into lipid-soluble steroids"
-   ],
-   "answer": 1,
-   "explain": "Glucuronic acid is negatively charged at physiological pH and water-soluble; UGT1A and UGT2B enzymes conjugate a vast variety of drugs, bilirubin, and steroid hormones.",
-   "verified": false,
-   "open": {
-    "q": "Which Phase II conjugation pathway is quantitatively the most common in humans?",
-    "accept": [
-     "Glucuronidation"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Which high-energy sulfate donor molecule is utilized by sulfotransferases (SULTs) during Phase II sulfation?",
-   "options": [
-    "S-adenosylmethionine (SAM)",
-    "Acetyl-CoA",
-    "3'-Phosphoadenosine-5'-phosphosulfate (PAPS)",
-    "UDP-glucuronic acid"
-   ],
-   "answer": 2,
-   "explain": "Sulfotransferases transfer the sulfate group from PAPS onto phenolic hydroxyl, alcoholic hydroxyl, or amino groups to form sulfate esters (such as acetaminophen sulfate or estrone sulfate).",
-   "verified": false,
-   "open": {
-    "q": "State the acronym for 3'-phosphoadenosine-5'-phosphosulfate, the sulfate donor used in Phase II sulfation.",
-    "accept": [
-     "PAPS"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-020",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "How does sulfation differ kinetically from glucuronidation as a Phase II conjugation capacity?",
-   "options": [
-    "Sulfation has unlimited capacity, whereas glucuronidation saturates immediately",
-    "Sulfation has high affinity but lower capacity (saturates easily because PAPS pools are limited), whereas glucuronidation has lower affinity but higher capacity",
-    "Both have identical Km and Vmax for every substrate",
-    "Sulfation occurs only in the mitochondria"
-   ],
-   "answer": 1,
-   "explain": "At low therapeutic doses (e.g., normal acetaminophen), high-affinity sulfation and glucuronidation predominate; during overdose, limited PAPS and UDPGA pools saturate, shunting more acetaminophen toward CYP450-mediated NAPQI formation.",
-   "verified": false,
-   "open": {
-    "q": "Compared with glucuronidation, does sulfation generally have a higher or lower conjugation capacity before saturation?",
-    "accept": [
-     "Lower",
-     "Lower capacity"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-021",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Which tripeptide conjugating agent is used by glutathione S-transferases (GSTs) to detoxify electrophilic xenobiotics and reactive oxygen species?",
-   "options": [
-    "Glutathione (gamma-glutamyl-cysteinyl-glycine, GSH)",
-    "Carnitine",
-    "Creatine",
-    "Carnosine"
-   ],
-   "answer": 0,
-   "explain": "Glutathione S-transferases catalyze nucleophilic attack by the sulfhydryl (-SH) group of reduced glutathione (GSH) onto electrophilic centers (such as epoxides, quinones, and NAPQI), initiating mercapturic acid formation.",
-   "verified": false,
-   "open": {
-    "q": "Name the tripeptide (composed of glutamate, cysteine, and glycine) used by glutathione S-transferases to neutralize electrophilic xenobiotics.",
-    "accept": [
-     "Glutathione",
-     "GSH"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-022",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "What is the final urinary excretion product formed after a glutathione-xenobiotic conjugate undergoes sequential cleavage of glutamate and glycine followed by N-acetylation of the remaining cysteine moiety?",
-   "options": [
-    "Hippuric acid",
-    "Mercapturic acid (N-acetylcysteine conjugate)",
-    "Uric acid",
-    "Orotic acid"
-   ],
-   "answer": 1,
-   "explain": "Glutathione conjugates undergo gamma-glutamyl transpeptidase (removes glutamate), dipeptidase (removes glycine), and N-acetyltransferase (acetylates the cysteine amino group) to yield mercapturic acids excreted in urine.",
-   "verified": false,
-   "open": {
-    "q": "Name the N-acetylated cysteine conjugate excreted in urine as the end product of glutathione-mediated detoxification.",
-    "accept": [
-     "Mercapturic acid",
-     "Mercapturic acids"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-023",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Which cofactor serves as the methyl group donor in Phase II methylation reactions catalyzed by methyltransferases (such as COMT and TPMT)?",
-   "options": [
-    "Biotin",
-    "Tetrahydrofolate",
-    "S-adenosylmethionine (SAM)",
-    "Thiamine pyrophosphate"
-   ],
-   "answer": 2,
-   "explain": "S-adenosylmethionine (SAM) donates its activated methyl group to catecholamines/xenobiotics via catechol-O-methyltransferase (COMT) or to thiopurine drugs via thiopurine S-methyltransferase (TPMT).",
-   "verified": false,
-   "open": {
-    "q": "Name the primary methyl group donor cofactor used by methyltransferases such as COMT and TPMT.",
-    "accept": [
-     "S-adenosylmethionine",
-     "SAM"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-024",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Which cofactor donates an acetyl group during N-acetylation of aromatic amines and hydrazines (such as isoniazid, hydralazine, procainamide, and sulfonamides) by N-acetyltransferase 2 (NAT2)?",
-   "options": [
-    "UDP-glucuronic acid",
-    "PAPS",
-    "SAM",
-    "Acetyl-CoA"
-   ],
-   "answer": 3,
-   "explain": "Cytosolic N-acetyltransferases (NAT1 and NAT2) transfer an acetyl group from acetyl-CoA onto primary aromatic amine or hydrazine nitrogens, often decreasing polarity and showing genetic slow/fast acetylator polymorphisms.",
-   "verified": false,
-   "open": {
-    "q": "Which high-energy thioester cofactor donates the acetyl group in N-acetylation reactions catalyzed by NAT2?",
-    "accept": [
-     "Acetyl-CoA"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-025",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "A 35-year-old man started on isoniazid for tuberculosis develops tingling and numbness in his feet (peripheral neuropathy) and elevated liver enzymes. Why are 'slow acetylators' (NAT2 deficiency) at greater risk for isoniazid-induced peripheral neuropathy?",
-   "options": [
-    "Slow acetylation causes accumulation of isoniazid and hydrazine metabolites that deplete pyridoxal phosphate (vitamin B6)",
-    "Slow acetylators convert isoniazid into excess glucose",
-    "Slow acetylation accelerates renal clearance of vitamin B12",
-    "Slow acetylators lack cytochrome P450 reductase"
-   ],
-   "answer": 0,
-   "explain": "Isoniazid and its hydrazine metabolites bind and inactivate pyridoxal phosphate (PLP), impairing GABA synthesis and amino acid metabolism in peripheral nerves; co-administration of pyridoxine (vitamin B6) prevents this neuropathy.",
-   "verified": false,
-   "open": {
-    "q": "Which vitamin cofactor (coenzyme) is depleted by isoniazid therapy, leading to peripheral neuropathy that is prevented by prophylactic supplementation?",
-    "accept": [
-     "Vitamin B6",
-     "Pyridoxine",
-     "Pyridoxal phosphate",
-     "B6"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-026",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Which endogenous amino acid conjugates with benzoic acid (a food preservative and metabolite of toluene) to form water-soluble hippuric acid excreted in urine?",
-   "options": [
-    "Alanine",
-    "Glycine",
-    "Tryptophan",
-    "Serine"
-   ],
-   "answer": 1,
-   "explain": "Glycine conjugates with carboxylic acid-containing xenobiotics such as benzoic acid and salicylic acid via acyl-CoA intermediates to form hippuric acid or salicyluric acid.",
-   "verified": false,
-   "open": {
-    "q": "Name the simplest amino acid that conjugates with benzoic acid to form hippuric acid.",
-    "accept": [
-     "Glycine"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-027",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "In an acute acetaminophen (paracetamol) overdose, what causes centrilobular (zone III) hepatic necrosis once hepatic glutathione stores are depleted?",
-   "options": [
-    "Accumulation of lactic acid in hepatocytes",
-    "Direct inhibition of gastric parietal cell H+/K+-ATPase",
-    "Unconjugated reactive NAPQI (N-acetyl-p-benzoquinone imine) covalently binds hepatic proteins and lipids, causing oxidative stress and centrilobular hepatocyte death",
-    "Precipitation of calcium oxalate crystals in the liver"
-   ],
-   "answer": 2,
-   "explain": "Normally, NAPQI generated by CYP450 (mainly CYP2E1, CYP1A2, CYP3A4) is rapidly detoxified by conjugation with reduced glutathione (GSH); in overdose, GSH drops below ~30% of normal and unbound NAPQI damages Zone III hepatocytes.",
-   "verified": false,
-   "open": {
-    "q": "State the acronym or full name of the reactive electrophilic metabolite of acetaminophen responsible for hepatotoxicity.",
-    "accept": [
-     "NAPQI",
-     "N-acetyl-p-benzoquinone imine"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-028",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "How does N-acetylcysteine (NAC) protect the liver when administered in acetaminophen poisoning?",
-   "options": [
-    "Directly chelates acetaminophen in the stomach",
-    "Activates hepatic glucuronosyltransferase to convert acetaminophen into bilirubin",
-    "Inhibits renal filtration of acetaminophen",
-    "Provides cysteine as a rate-limiting precursor to replenish hepatic glutathione (GSH) stores and directly detoxifies/reduces NAPQI"
-   ],
-   "answer": 3,
-   "explain": "N-acetylcysteine is deacetylated to L-cysteine, supplying the limiting amino acid needed to resynthesize glutathione (GSH) so NAPQI can be conjugated and cleared safely.",
-   "verified": false,
-   "open": {
-    "q": "Name the specific antidote administered for acetaminophen hepatotoxicity that replenishes hepatic glutathione.",
-    "accept": [
-     "N-acetylcysteine",
-     "NAC",
-     "Acetylcysteine"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-029",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "Why is methanol (wood alcohol) or ethylene glycol (antifreeze) ingestion dangerous, and how do fomepizole or ethanol treat this poisoning?",
-   "options": [
-    "Alcohol dehydrogenase (ADH) oxidizes methanol to formaldehyde/formic acid (causing optic nerve damage and metabolic acidosis) and ethylene glycol to glycolic/oxalic acid (causing renal tubular calcium oxalate injury); fomepizole or ethanol competitively inhibits ADH to slow toxic metabolite formation",
-    "Methanol directly inhibits hemoglobin synthesis without metabolism",
-    "Fomepizole neutralizes formic acid in the stomach by raising pH",
-    "Ethanol accelerates conversion of methanol into formic acid"
-   ],
-   "answer": 0,
-   "explain": "Methanol and ethylene glycol themselves cause mild CNS depression, but their ADH-derived metabolites (formic acid and oxalic acid) drive severe high-anion-gap metabolic acidosis, blindness, and acute renal failure; competitive ADH blockade by fomepizole (or ethanol) allows slower renal excretion of unchanged parent alcohol.",
-   "verified": false,
-   "open": {
-    "q": "Name the hepatic enzyme competitively inhibited by fomepizole or ethanol in the treatment of methanol and ethylene glycol poisoning.",
-    "accept": [
-     "Alcohol dehydrogenase",
-     "ADH"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-030",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "How does disulfiram (Antabuse) produce an unpleasant reaction (flushing, nausea, vomiting, tachycardia, hypotension) when a patient consumes alcohol?",
-   "options": [
-    "Inhibits alcohol dehydrogenase, preventing ethanol oxidation",
-    "Inhibits aldehyde dehydrogenase (ALDH), causing toxic accumulation of acetaldehyde in the blood",
-    "Induces CYP2E1 to convert ethanol into methanol",
-    "Depletes hepatic glycogen stores"
-   ],
-   "answer": 1,
-   "explain": "Disulfiram blocks acetaldehyde dehydrogenase, causing acetaldehyde levels to surge after drinking ethanol; acetaldehyde triggers vasodilation, flushing, nausea, and palpitations that deter alcohol use.",
-   "verified": false,
-   "open": {
-    "q": "Which toxic intermediate metabolite of ethanol accumulates when aldehyde dehydrogenase is inhibited by disulfiram?",
-    "accept": [
-     "Acetaldehyde"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-031",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "What is the biochemical mechanism of acute cyanide poisoning?",
-   "options": [
-    "Binds irreversibly to hemoglobin Fe2+ to form carboxyhemoglobin",
-    "Binds ferric iron (Fe3+) in cytochrome c oxidase (Complex IV) of the mitochondrial electron transport chain, halting oxidative phosphorylation and causing histotoxic hypoxia with bright red venous blood",
-    "Inhibits acetylcholinesterase at neuromuscular junctions",
-    "Depletes plasma calcium ions"
-   ],
-   "answer": 2,
-   "explain": "Cyanide binds the binuclear heme a3-CuB center (specifically Fe3+) of cytochrome c oxidase, blocking terminal electron transfer to O2; tissues cannot extract oxygen, making venous blood appear bright red.",
-   "verified": false,
-   "open": {
-    "q": "Name the mitochondrial electron transport chain enzyme (Complex IV) inhibited by cyanide.",
-    "accept": [
-     "Cytochrome c oxidase",
-     "Complex IV"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-032",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "How does hydroxocobalamin (vitamin B12a) or the nitrite + sodium thiosulfate regimen treat cyanide poisoning?",
-   "options": [
-    "Hydroxocobalamin binds cyanide directly to form non-toxic cyanocobalamin (vitamin B12), while nitrites induce methemoglobin (Fe3+ competes for cyanide) and sodium thiosulfate supplies sulfur to rhodanese to form thiocyanate",
-    "Accelerates gastric vomiting of cyanide salts",
-    "Converts cyanide into molecular oxygen",
-    "Stimulates insulin secretion to lower blood glucose"
-   ],
-   "answer": 3,
-   "explain": "Hydroxocobalamin chelates cyanide into cyanocobalamin for renal excretion; additionally, the mitochondrial enzyme rhodanese (thiosulfate sulfurtransferase) transfers sulfur from thiosulfate to cyanide to form less toxic thiocyanate.",
-   "verified": false,
-   "open": {
-    "q": "Name the mitochondrial enzyme that transfers sulfur from thiosulfate to convert cyanide into less toxic thiocyanate.",
-    "accept": [
-     "Rhodanese",
-     "Thiosulfate sulfurtransferase"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-033",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "How do organophosphate and carbamate pesticides cause cholinergic toxicity?",
-   "options": [
-    "Irreversibly (organophosphates) or reversibly (carbamates) inhibit acetylcholinesterase, causing acetylcholine accumulation at muscarinic and nicotinic synapses and neuromuscular junctions",
-    "Block nicotinic acetylcholine receptors to cause flaccid paralysis immediately",
-    "Stimulate hepatic glucuronidation of acetylcholine",
-    "Deplete intracellular potassium inside neurons"
-   ],
-   "answer": 0,
-   "explain": "Inhibiting acetylcholinesterase prevents breakdown of acetylcholine, causing muscarinic effects (salivation, lacrimation, urination, diarrhea, bronchorrhea, bronchospasm, miosis, bradycardia) and nicotinic fasciculations/weakness; pralidoxime regenerates organophosphate-inhibited AChE before 'aging' occurs.",
-   "verified": false,
-   "open": {
-    "q": "Name the enzyme inhibited by organophosphate pesticides that leads to excess synaptic acetylcholine.",
-    "accept": [
-     "Acetylcholinesterase",
-     "AChE",
-     "Cholinesterase"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-034",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Chemical Carcinogenesis and Reactive Intermediates",
-   "q": "Why is aflatoxin B1 (produced by Aspergillus flavus on improperly stored grains, peanuts, and maize) a potent hepatocarcinogen?",
-   "options": [
-    "Directly methylates histone H1 without metabolism",
-    "CYP450 oxidizes aflatoxin B1 into a reactive exo-8,9-epoxide that forms bulky covalent adducts with guanine (N7-guanine) in DNA, causing G:C -> T:A transversions including at codon 249 of TP53",
-    "Inhibits topoisomerase I in pancreatic acinar cells",
-    "Causes immediate hemolytic anemia without liver involvement"
-   ],
-   "answer": 1,
-   "explain": "Aflatoxin B1 requires CYP450 bioactivation to aflatoxin B1-8,9-epoxide, which binds DNA guanine bases and promotes hepatocellular carcinoma (synergistically with chronic hepatitis B virus infection).",
-   "verified": false,
-   "open": {
-    "q": "Name the fungal mycotoxin produced by Aspergillus flavus that is bioactivated by CYP450 into a mutagenic DNA-binding epoxide linked to hepatocellular carcinoma.",
-    "accept": [
-     "Aflatoxin B1",
-     "Aflatoxin"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-035",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Chemical Carcinogenesis and Reactive Intermediates",
-   "q": "What is the difference between a direct-acting carcinogen and a procarcinogen (indirect carcinogen)?",
-   "options": [
-    "Direct carcinogens act only in the kidneys; procarcinogens act only in the brain",
-    "Direct carcinogens are already electrophilic and can react with cellular nucleophiles (DNA/RNA/proteins) without metabolic activation, whereas procarcinogens require metabolic conversion (typically by Phase I enzymes) into an ultimate carcinogen",
-    "Procarcinogens never mutate DNA",
-    "Direct carcinogens require vitamin K for activation"
-   ],
-   "answer": 1,
-   "explain": "Most environmental and dietary chemical carcinogens (such as polycyclic aromatic hydrocarbons like benzo[a]pyrene, aromatic amines, and aflatoxin B1) are procarcinogens that must be metabolically activated into electrophilic ultimate carcinogens.",
-   "verified": false,
-   "open": {
-    "q": "What term denotes a chemical carcinogen that requires metabolic activation in the body before becoming carcinogenic?",
-    "accept": [
-     "Procarcinogen",
-     "Indirect carcinogen"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-036",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Chemical Carcinogenesis and Reactive Intermediates",
-   "q": "How does the Ames test evaluate whether a chemical compound is a mutagen?",
-   "options": [
-    "Measures reversion of histidine-auxotrophic Salmonella typhimurium strains (his-) back to prototrophy (his+) capable of growing on histidine-deficient agar, typically with and without rat liver S9 homogenate",
-    "Counts chromosome number in human amniotic fluid cells",
-    "Measures serum alanine aminotransferase in mice",
-    "Detects antibodies against viral capsid proteins"
-   ],
-   "answer": 0,
-   "explain": "Histidine-requiring mutant Salmonella strains cannot grow without exogenous histidine unless a reverse mutation restores the his gene; adding rat liver S9 fraction supplies Phase I/II metabolic enzymes to detect procarcinogens.",
-   "verified": false,
-   "open": {
-    "q": "Name the short-term bacterial mutagenicity assay using histidine-auxotrophic Salmonella typhimurium strains, often with S9 liver fraction.",
-    "accept": [
-     "Ames test",
-     "The Ames test"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-037",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Antioxidant Defense Against Xenobiotic Stress",
-   "q": "How do superoxide dismutase (SOD), catalase, and glutathione peroxidase work together to protect cells against reactive oxygen species (ROS) generated during xenobiotic metabolism?",
-   "options": [
-    "SOD converts superoxide radicals (O2.-) into hydrogen peroxide (H2O2), and catalase plus glutathione peroxidase convert H2O2 into water (H2O)",
-    "Catalase converts H2O2 into superoxide radicals",
-    "Glutathione peroxidase requires superoxide to synthesize glucose",
-    "SOD converts H2O2 into ethanol"
-   ],
-   "answer": 0,
-   "explain": "Superoxide dismutase dismutates 2 O2.- + 2 H+ -> H2O2 + O2; catalase decomposes H2O2 -> 2 H2O + O2 in peroxisomes, while selenium-dependent glutathione peroxidase reduces H2O2 and lipid hydroperoxides using reduced glutathione (2 GSH -> GSSG).",
-   "verified": false,
-   "open": {
-    "q": "Which trace element is an essential cofactor at the active site of mammalian glutathione peroxidase?",
-    "accept": [
-     "Selenium",
-     "Se"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-038",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Antioxidant Defense Against Xenobiotic Stress",
-   "q": "Which NADPH-generating metabolic pathway is indispensable for maintaining reduced glutathione (GSH) levels so glutathione peroxidase and glutathione reductase can counter oxidative stress?",
-   "options": [
-    "Glycogenolysis",
-    "Pentose phosphate pathway (hexose monophosphate shunt)",
-    "Beta-oxidation of fatty acids",
-    "Urea cycle"
-   ],
-   "answer": 1,
-   "explain": "Glutathione reductase reduces oxidized glutathione disulfide (GSSG) back to two molecules of reduced GSH using NADPH supplied primarily by glucose 6-phosphate dehydrogenase (G6PD) and 6-phosphogluconate dehydrogenase in the pentose phosphate pathway.",
-   "verified": false,
-   "open": {
-    "q": "Name the enzyme that catalyzes the first and rate-limiting step of the pentose phosphate pathway to generate NADPH for maintaining reduced glutathione.",
-    "accept": [
-     "Glucose 6-phosphate dehydrogenase",
-     "G6PD",
-     "Glucose-6-phosphate dehydrogenase"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-039",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heavy Metals and Chelation Biochemistry",
-   "q": "By which biochemical mechanism do heavy metals such as lead (Pb2+), mercury (Hg2+), and arsenic cause cellular toxicity?",
-   "options": [
-    "Bind tightly to sulfhydryl (-SH) groups of enzymes and structural proteins, inhibit metalloenzymes, and mimic or displace essential divalent cations (such as Ca2+ and Zn2+)",
-    "Increase intracellular ATP synthesis ten-fold",
-    "Convert all plasma proteins into immunoglobulins",
-    "Enhance renal reabsorption of bicarbonate"
-   ],
-   "answer": 0,
-   "explain": "Heavy metals have high affinity for thiol (-SH) groups on proteins and displace essential metal cofactors (e.g., lead inhibits ALA dehydratase and ferrochelatase, while arsenic inhibits pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase by binding vicinal dithiols).",
-   "verified": false,
-   "open": {
-    "q": "Which functional group on proteins and enzymes do heavy metals like lead and mercury strongly bind to disrupt protein function?",
-    "accept": [
-     "Sulfhydryl group",
-     "Sulfhydryl",
-     "Thiol group",
-     "-SH"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-040",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heavy Metals and Chelation Biochemistry",
-   "q": "Which chelating agents or metal-binding proteins are clinically used to bind and promote excretion of heavy metals or excess copper/iron?",
-   "options": [
-    "Penicillamine or trientine for Wilson disease (copper excess); deferoxamine/deferasirox for iron overload; dimercaprol (BAL), succimer (DMSA), or CaNa2-EDTA for lead/heavy metal poisoning",
-    "Warfarin for iron overload",
-    "Heparin for lead poisoning",
-    "Atropine for copper toxicity"
-   ],
-   "answer": 0,
-   "explain": "Chelators form water-soluble coordination complexes with toxic or excess metal ions that can be excreted in urine or bile (e.g., penicillamine/trientine for Wilson disease, deferoxamine for iron, DMSA/EDTA for lead).",
-   "verified": false,
-   "open": {
-    "q": "Name one chelating agent used to treat iron overload or Wilson disease (copper accumulation).",
-    "accept": [
-     "Deferoxamine",
-     "Deferasirox",
-     "Penicillamine",
-     "Trientine"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-041",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "What is the role of cytochrome b5 in certain cytochrome P450 monooxygenase reactions?",
-   "options": [
-    "Acts as the sole oxygen donor in place of O2",
-    "Can donate the second electron to certain CYP450 isoforms, enhancing catalytic efficiency for specific substrates",
-    "Hydrolyzes glucuronide conjugates in bile",
-    "Synthesizes heme from glycine"
-   ],
-   "answer": 1,
-   "explain": "While NADPH-cytochrome P450 reductase transfers electrons from NADPH to CYP450, cytochrome b5 (receiving electrons from NADH via cytochrome b5 reductase) can facilitate the second electron transfer step for selected CYP450 reactions.",
-   "verified": false,
-   "open": {
-    "q": "Which small haemoprotein can assist in electron transfer during specific cytochrome P450 reactions?",
-    "accept": [
-     "Cytochrome b5"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-042",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which three major CYP2C and CYP2D family isoforms are prominent examples of pharmacogenetic polymorphism affecting drug metabolism?",
-   "options": [
-    "CYP2C9 (warfarin, phenytoin), CYP2C19 (clopidogrel, omeprazole), and CYP2D6 (codeine, antidepressants, beta-blockers)",
-    "CYP1A1, CYP1A2, and CYP1B1 only",
-    "CYP7A1, CYP11A1, and CYP21A2 only",
-    "CYP24A1 and CYP27B1 only"
-   ],
-   "answer": 0,
-   "explain": "Genetic variants in CYP2C9, CYP2C19, and CYP2D6 alter metabolic clearance or prodrug activation, causing individual differences in bleeding risk (warfarin), stent thrombosis (clopidogrel), or opioid/antidepressant response.",
-   "verified": false,
-   "open": {
-    "q": "Which polymorphic CYP450 enzyme is required to bioactivate the antiplatelet prodrug clopidogrel into its active thiol metabolite?",
-    "accept": [
-     "CYP2C19"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-043",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "How does cigarette smoking affect the metabolism of drugs such as theophylline, clozapine, or olanzapine?",
-   "options": [
-    "Polycyclic aromatic hydrocarbons (PAHs) in tobacco smoke induce CYP1A1/CYP1A2, increasing clearance and lowering plasma levels of CYP1A2 substrate drugs",
-    "Nicotine inhibits all hepatic glucuronidation permanently",
-    "Smoking blocks renal tubular filtration of all drugs",
-    "Tobacco smoke converts drugs into lipids"
-   ],
-   "answer": 0,
-   "explain": "Polycyclic aromatic hydrocarbons in cigarette smoke bind the aryl hydrocarbon receptor (AhR) to induce CYP1A1 and CYP1A2, accelerating metabolism of CYP1A2 substrates (e.g., theophylline, caffeine, clozapine, olanzapine).",
-   "verified": false,
-   "open": {
-    "q": "Which cytochrome P450 isoform is classically induced by polycyclic aromatic hydrocarbons present in cigarette smoke and charbroiled foods?",
-    "accept": [
-     "CYP1A2",
-     "CYP1A1",
-     "CYP1A1/CYP1A2"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-044",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "In which cellular compartment are UDP-glucuronosyltransferases (UGTs) located, unlike cytosolic sulfotransferases (SULTs) and N-acetyltransferases (NATs)?",
-   "options": [
-    "Endoplasmic reticulum lumen (microsomal membrane)",
-    "Mitochondrial matrix",
-    "Nucleus",
-    "Peroxisome"
-   ],
-   "answer": 0,
-   "explain": "UGTs are transmembrane enzymes of the endoplasmic reticulum with their catalytic site facing the ER lumen (requiring UDPGA transport via UDP-glucuronic acid transporters), whereas SULTs, NATs, and GSTs are predominantly cytosolic.",
-   "verified": false,
-   "open": {
-    "q": "In which organelle are UDP-glucuronosyltransferase (UGT) enzymes localized?",
-    "accept": [
-     "Endoplasmic reticulum",
-     "Smooth endoplasmic reticulum",
-     "Microsomes",
-     "ER"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-045",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "What is enterohepatic circulation of glucuronidated xenobiotics or bilirubin conjugates?",
-   "options": [
-    "Direct filtration from blood into the appendix",
-    "Biliary excretion of polar conjugates into the intestine, followed by bacterial beta-glucuronidase deconjugation back to lipophilic compounds that can be reabsorbed across the intestinal mucosa into portal blood",
-    "Conversion of bile acids into thyroid hormones",
-    "Active pumping of toxins from sweat glands into arteries"
-   ],
-   "answer": 1,
-   "explain": "Bacterial beta-glucuronidases in the gut can cleave glucuronide groups off excreted conjugates, regenerating less polar molecules that re-enter portal circulation and prolong drug/metabolite half-life.",
-   "verified": false,
-   "open": {
-    "q": "Which bacterial enzyme in the intestine deconjugates glucuronides and promotes enterohepatic reabsorption?",
-    "accept": [
-     "Beta-glucuronidase",
-     "B-glucuronidase",
-     "Glucuronidase"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-046",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase II Conjugation Reactions",
-   "q": "Why are patients with inherited thiopurine S-methyltransferase (TPMT) deficiency at high risk of severe myelosuppression when given standard doses of azathioprine or 6-mercaptopurine?",
-   "options": [
-    "TPMT normally methylates and shunts thiopurines away from cytotoxic thioguanine nucleotide incorporation into DNA; TPMT deficiency increases accumulation of cytotoxic 6-thioguanine nucleotides in hematopoietic precursors",
-    "TPMT is required to absorb azathioprine from the stomach",
-    "TPMT converts azathioprine into vitamin K",
-    "TPMT blocks iron uptake in the bone marrow"
-   ],
-   "answer": 0,
-   "explain": "Reduced or absent TPMT activity diverts thiopurine metabolism toward excess 6-thioguanine nucleotides, causing life-threatening leukopenia/neutropenia unless the dose is substantially reduced.",
-   "verified": false,
-   "open": {
-    "q": "State the acronym for thiopurine S-methyltransferase, the Phase II enzyme whose deficiency increases myelotoxicity of azathioprine and 6-mercaptopurine.",
-    "accept": [
-     "TPMT"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-047",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "What are the major categories of Phase I oxidation reactions catalyzed by cytochrome P450 and related enzymes?",
-   "options": [
-    "Aromatic and aliphatic hydroxylation, N- and O-dealkylation, S-oxidation, N-oxidation, and deamination",
-    "Transamination, decarboxylation, and beta-oxidation",
-    "Phosphorylation, adenylation, and ribosylation",
-    "Carboxylation and transketolation"
-   ],
-   "answer": 0,
-   "explain": "CYP450 monooxygenases carry out diverse oxidations including hydroxylations, dealkylations (removing alkyl groups from N, O, or S atoms), sulfoxidations, epoxidations, and oxidative deaminations.",
-   "verified": false,
-   "open": {
-    "q": "Name two types of oxidation reactions catalyzed by cytochrome P450 enzymes during Phase I xenobiotic metabolism.",
-    "accept": [
-     "Hydroxylation and dealkylation",
-     "Aromatic hydroxylation and N-dealkylation",
-     "Hydroxylation, dealkylation"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-048",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which flavin-containing monooxygenase system in the endoplasmic reticulum oxidizes nucleophilic nitrogen, sulfur, and phosphorus atoms in xenobiotics without requiring heme iron?",
-   "options": [
-    "Flavin-containing monooxygenases (FMOs)",
-    "Xanthine oxidase",
-    "Monoamine oxidase (MAO)",
-    "Pyruvate dehydrogenase"
-   ],
-   "answer": 0,
-   "explain": "FMOs are microsomal FAD-containing enzymes that use NADPH and O2 to oxygenate soft nucleophiles (such as tertiary amines and thioethers) into polar N-oxides or sulfoxides, often without the drug-induction profile of CYP450.",
-   "verified": false,
-   "open": {
-    "q": "Name the FAD-dependent microsomal monooxygenase enzyme family that oxidizes nucleophilic nitrogen and sulfur atoms in xenobiotics.",
-    "accept": [
-     "Flavin-containing monooxygenases",
-     "FMO",
-     "FMOs"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-049",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Phase I Reactions and Cytochrome P450",
-   "q": "Which enzymes catalyze Phase I reduction of nitro groups (-NO2), azo groups (-N=N-), and ketones/aldehydes into amines or alcohols?",
-   "options": [
-    "Nitroreductases, azoreductases, and carbonyl reductases (as well as certain CYP450 enzymes under low oxygen tension)",
-    "Lyases and ligases",
-    "DNA polymerases and RNA polymerases",
-    "Aminotransferases"
-   ],
-   "answer": 0,
-   "explain": "Reduction reactions convert nitro compounds to amines, cleave azo dyes into aromatic amines (often via gut microbiota), and reduce ketones/aldehydes to secondary/primary alcohols.",
-   "verified": false,
-   "open": {
-    "q": "Into what functional group are aromatic nitro compounds (-NO2) typically converted during Phase I reduction?",
-    "accept": [
-     "Amino group",
-     "Amine",
-     "Amines",
-     "-NH2"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-050",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Chemical Carcinogenesis and Reactive Intermediates",
-   "q": "Which enzyme converts reactive, mutagenic arene oxides and epoxides (such as intermediates of polycyclic aromatic hydrocarbons) into less reactive trans-dihydrodiols?",
-   "options": [
-    "Epoxide hydrolase",
-    "Catalase",
-    "Alanine aminotransferase",
-    "Heme oxygenase"
-   ],
-   "answer": 0,
-   "explain": "Epoxide hydrolase adds water across epoxide rings to form trans-dihydrodiols, generally detoxifying reactive epoxides (though in some polycyclic aromatic hydrocarbons like benzo[a]pyrene, a dihydrodiol can undergo further oxidation to a bay-region diol epoxide).",
-   "verified": false,
-   "open": {
-    "q": "Name the enzyme that hydrolyzes epoxides to trans-dihydrodiols during xenobiotic metabolism.",
-    "accept": [
-     "Epoxide hydrolase"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-051",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Chemical Carcinogenesis and Reactive Intermediates",
-   "q": "Why are electrophilic xenobiotic metabolites particularly hazardous to cells?",
-   "options": [
-    "They react covalently with electron-rich nucleophilic atoms on DNA bases, RNA, and proteins, causing mutations, protein dysfunction, or cell death",
-    "They lower blood glucose to dangerously high levels",
-    "They convert all lipids into saturated triglycerides",
-    "They stimulate platelet aggregation directly"
-   ],
-   "answer": 0,
-   "explain": "Electrophiles (electron-deficient species such as epoxides, quinone imines like NAPQI, and nitrenium ions) attack nucleophilic sites (e.g., N7 or O6 of guanine, cysteine thiols), forming covalent adducts that can initiate mutagenesis or cytotoxicity.",
-   "verified": false,
-   "open": {
-    "q": "Do reactive toxic metabolites formed during xenobiotic bioactivation typically act as electrophiles or nucleophiles?",
-    "accept": [
-     "Electrophiles",
-     "Electrophilic"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-052",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Antioxidant Defense Against Xenobiotic Stress",
-   "q": "How does lipid peroxidation initiated by xenobiotic-induced free radicals damage cell membranes?",
-   "options": [
-    "Free radicals abstract a hydrogen atom from polyunsaturated fatty acyl chains (PUFAs), forming lipid radicals and lipid hydroperoxides in a self-propagating chain reaction that disrupts membrane fluidity and integrity",
-    "Converts cholesterol into glycogen",
-    "Strengthens disulfide bonds across the bilayer",
-    "Increases active transport by Na+/K+-ATPase"
-   ],
-   "answer": 0,
-   "explain": "Polyunsaturated fatty acids with bis-allylic methylene hydrogens are especially vulnerable to radical chain lipid peroxidation (producing malondialdehyde and 4-hydroxynonenal), which is terminated by chain-breaking antioxidants like alpha-tocopherol (vitamin E).",
-   "verified": false,
-   "open": {
-    "q": "Name the lipid-soluble chain-breaking antioxidant vitamin that protects membrane polyunsaturated fatty acids from lipid peroxidation.",
-    "accept": [
-     "Vitamin E",
-     "Alpha-tocopherol",
-     "Tocopherol"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-053",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "Why does chronic alcohol abuse markedly lower the threshold for acetaminophen hepatotoxicity compared with occasional alcohol use?",
-   "options": [
-    "Chronic ethanol induces CYP2E1 (increasing NAPQI formation) and often accompanies poor nutrition/glutathione depletion, whereas acute ethanol can temporarily compete for CYP2E1",
-    "Chronic alcohol blocks renal excretion of water",
-    "Chronic alcohol converts acetaminophen into vitamin C",
-    "Chronic alcohol inhibits all hepatic blood vessels"
-   ],
-   "answer": 0,
-   "explain": "Chronic alcohol consumption upregulates CYP2E1 and can deplete hepatic GSH stores, increasing susceptibility to NAPQI-mediated liver damage even at doses closer to the upper therapeutic range.",
-   "verified": false,
-   "open": {
-    "q": "Which hepatic zone (centrilobular Zone III, periportal Zone I, or midzonal Zone II) is classically most susceptible to acetaminophen and carbon tetrachloride hepatotoxicity due to high CYP450 activity and lower oxygen tension?",
-    "accept": [
-     "Zone III",
-     "Centrilobular",
-     "Centrilobular zone",
-     "Zone 3"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-054",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "How does carbon tetrachloride (CCl4) cause liver injury?",
-   "options": [
-    "CYP450 reduces/homolytically cleaves CCl4 to a trichloromethyl free radical (.CCl3) and trichloromethylperoxy radical (.CCl3O2), triggering massive lipid peroxidation and endoplasmic reticulum/membrane damage",
-    "Directly inhibits pancreatic lipase without affecting hepatocytes",
-    "Binds permanently to hemoglobin A1c",
-    "Causes hyperkalemia without liver involvement"
-   ],
-   "answer": 0,
-   "explain": "Carbon tetrachloride is bioactivated by hepatic CYP450 into reactive free radicals (.CCl3) that initiate severe lipid peroxidation, block VLDL secretion (causing fatty liver), and cause centrilobular necrosis.",
-   "verified": false,
-   "open": {
-    "q": "Name the reactive free radical formed from carbon tetrachloride (CCl4) by cytochrome P450 that drives lipid peroxidation in hepatocytes.",
-    "accept": [
-     "Trichloromethyl radical",
-     "Trichloromethyl",
-     ".CCl3",
-     "CCl3 radical"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-055",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Toxicology and Specific Xenobiotics",
-   "q": "What is the biochemical mechanism of paraquat (a bipyridyl herbicide) toxicity, particularly in lung alveolar epithelial cells?",
-   "options": [
-    "Concentrated in alveolar cells via the polyamine uptake system and undergoes redox cycling (reduction by NADPH/diaphorase followed by re-oxidation by O2), generating massive superoxide radicals and oxidative lung injury/fibrosis",
-    "Inhibits acetylcholinesterase in the brain",
-    "Binds calcium in bone matrix",
-    "Acts as a competitive antagonist at opioid receptors"
-   ],
-   "answer": 0,
-   "explain": "Paraquat is actively taken up by Type I and Type II pneumocytes and undergoes cyclic reduction-oxidation with molecular oxygen, generating continuous superoxide and hydroxyl radicals that cause fatal pulmonary edema and fibrosis.",
-   "verified": false,
-   "open": {
-    "q": "Which organ is classically the primary target of delayed fatal injury and fibrosis subsequent to paraquat poisoning?",
-    "accept": [
-     "Lungs",
-     "Lung"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-056",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heavy Metals and Chelation Biochemistry",
-   "q": "Which heavy metal accumulates in bone and renal proximal tubules (causing Fanconi-like proximal renal tubular dysfunction, osteomalacia/osteoporosis, and 'itai-itai' disease) after chronic environmental exposure?",
-   "options": [
-    "Cadmium (Cd2+)",
-    "Lithium (Li+)",
-    "Magnesium (Mg2+)",
-    "Zinc (Zn2+)"
-   ],
-   "answer": 0,
-   "explain": "Cadmium has a very long biological half-life (~10-30 years), binds metallothionein in liver and kidney, damages renal proximal tubular cells, and impairs calcium/vitamin D metabolism in bone.",
-   "verified": false,
-   "open": {
-    "q": "Name the toxic heavy metal associated with proximal renal tubular injury and bone demineralization ('itai-itai' disease).",
-    "accept": [
-     "Cadmium",
-     "Cd",
-     "Cd2+"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-057",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Heavy Metals and Chelation Biochemistry",
-   "q": "What is the physiological role of metallothionein in heavy metal homeostasis and detoxification?",
-   "options": [
-    "A small cysteine-rich metal-binding protein induced by metals (such as zinc, copper, and cadmium) whose numerous sulfhydryl (-SH) groups sequester metal ions",
-    "A plasma protease that digests heavy metals",
-    "A mitochondrial enzyme that converts mercury into gold",
-    "A lipid transporter in chylomicrons"
-   ],
-   "answer": 0,
-   "explain": "Metallothionein contains ~30% cysteine residues that coordinate essential metals (Zn, Cu) and sequester toxic metals (Cd, Hg), helping regulate intracellular metal availability and buffer toxicity.",
-   "verified": false,
-   "open": {
-    "q": "Name the low-molecular-weight, cysteine-rich intracellular protein that binds and sequesters heavy metals such as zinc, copper, and cadmium.",
-    "accept": [
-     "Metallothionein"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-058",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "What is the 'first-pass effect' (first-pass hepatic metabolism) for an orally administered xenobiotic or drug?",
-   "options": [
-    "Metabolism of a substance absorbed from the gastrointestinal tract by the intestinal wall and liver via the portal vein before it reaches systemic arterial circulation, reducing oral bioavailability",
-    "Excretion of a drug through sweat before absorption",
-    "Binding of a drug to plasma albumin in the radial artery",
-    "Conversion of a drug into a solid crystal in the stomach"
-   ],
-   "answer": 0,
-   "explain": "Orally absorbed compounds pass through enterocytes and the portal venous system to the liver before entering systemic circulation; extensive first-pass metabolism lowers oral bioavailability (requiring higher oral doses than IV doses or alternative routes like sublingual/transdermal).",
-   "verified": false,
-   "open": {
-    "q": "What term describes the metabolism of an orally absorbed drug by the gut wall and liver before it reaches systemic circulation?",
-    "accept": [
-     "First-pass effect",
-     "First-pass metabolism",
-     "First pass effect",
-     "First pass metabolism"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-059",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Overview of Xenobiotics and Biotransformation",
-   "q": "Which efflux transporter superfamily (such as P-glycoprotein / MDR1 and MRP2) actively pumps conjugated and unconjugated xenobiotics out of hepatocytes into bile or out of enterocytes back into the gut lumen (Phase III transport)?",
-   "options": [
-    "ATP-binding cassette (ABC) transporters",
-    "Voltage-gated sodium channels",
-    "Aquaporins",
-    "Nuclear hormone receptors"
-   ],
-   "answer": 0,
-   "explain": "Phase III transport involves membrane efflux pumps—chiefly ABC transporters like P-glycoprotein (ABCB1) and MRP2 (ABCC2)—that export parent xenobiotics and Phase II conjugates (such as glucuronides and glutathione conjugates) into bile, urine, or the intestinal lumen.",
-   "verified": false,
-   "open": {
-    "q": "Which major superfamily of ATP-dependent efflux pumps mediates Phase III export of xenobiotics and their conjugates into bile or urine?",
-    "accept": [
-     "ABC transporters",
-     "ATP-binding cassette transporters"
-    ]
-   }
-  },
-  {
-   "id": "ba-detoxification-and-xenobiotics-060",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Antioxidant Defense Against Xenobiotic Stress",
-   "q": "Which water-soluble antioxidant vitamin reduces oxidized vitamin E (tocopheroxyl radical) back to its active reduced antioxidant form in the aqueous phase?",
-   "options": [
-    "Vitamin C (ascorbic acid)",
-    "Vitamin K",
-    "Vitamin D",
-    "Biotin"
-   ],
-   "answer": 0,
-   "explain": "Vitamin C (ascorbate) regenerates reduced alpha-tocopherol from the tocopheroxyl radical at the membrane-water interface, linking lipid-phase and aqueous-phase antioxidant defenses.",
-   "verified": false,
-   "open": {
-    "q": "Name the water-soluble antioxidant vitamin that helps regenerate reduced vitamin E.",
-    "accept": [
-     "Vitamin C",
-     "Ascorbic acid",
-     "Ascorbate"
-    ]
-   }
-  }
- ]
+  "topic": "ba-detoxification-and-xenobiotics",
+  "questions": [
+    {
+      "id": "ba-detoxification-and-xenobiotics-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "What are xenobiotics in medical biochemistry?",
+      "options": [
+        "Foreign chemical compounds (such as drugs, food additives, pesticides, and environmental pollutants) that are not normal endogenous metabolites or nutrients",
+        "Endogenous steroid hormones synthesized in the adrenal cortex",
+        "Dietary amino acids used exclusively for protein synthesis",
+        "Nucleoside triphosphates generated during glycolysis"
+      ],
+      "answer": 0,
+      "explain": "Xenobiotics are exogenous chemical substances taken into the body that have no normal physiological metabolic function and must generally be biotransformed to increase water solubility for excretion.",
+      "verified": false,
+      "open": {
+        "q": "What term refers to foreign chemical compounds such as drugs, environmental toxins, and pollutants entering the body?",
+        "accept": [
+          "Xenobiotics",
+          "Xenobiotic"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "Why does lipophilic xenobiotic metabolism generally convert nonpolar compounds into more polar, water-soluble metabolites?",
+      "options": [
+        "To prevent them from entering hepatocytes",
+        "Because lipophilic compounds are reabsorbed across renal tubules and accumulate in adipose tissue, whereas polar conjugates are readily excreted in urine or bile",
+        "To convert all xenobiotics into glucose",
+        "To store toxins permanently inside mitochondria"
+      ],
+      "answer": 1,
+      "explain": "Unmetabolized nonpolar xenobiotics pass easily through lipid membranes and are reabsorbed in the renal tubules; increasing polarity and molecular weight facilitates renal filtration/secretion or biliary excretion.",
+      "verified": false,
+      "open": {
+        "q": "What is the primary physiological goal of xenobiotic biotransformation with respect to solubility and elimination?",
+        "accept": [
+          "Increase water solubility for excretion",
+          "Make water-soluble for excretion",
+          "Increase polarity and excretion"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "Which organ serves as the primary site of xenobiotic biotransformation in humans?",
+      "options": [
+        "Spleen",
+        "Liver",
+        "Thyroid gland",
+        "Pancreas"
+      ],
+      "answer": 1,
+      "explain": "Hepatocytes contain the highest concentration and broadest repertoire of Phase I (especially cytochrome P450) and Phase II conjugating enzymes, though extrahepatic tissues (intestine, kidney, lung, skin) also contribute.",
+      "verified": false,
+      "open": {
+        "q": "Name the principal organ of xenobiotic metabolism in the human body.",
+        "accept": [
+          "Liver"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "What is a prodrug in pharmacology and xenobiotic biochemistry?",
+      "options": [
+        "A toxic metabolite formed only during overdose",
+        "A molecule that inhibits all Phase I enzymes",
+        "A compound that blocks renal excretion of drugs",
+        "A pharmacologically inactive or less active precursor compound that is biotransformed in vivo into an active therapeutic drug"
+      ],
+      "answer": 3,
+      "explain": "Prodrugs (such as codeine -> morphine, clopidogrel -> active thiol metabolite, or enalapril -> enalaprilat) require metabolic activation (often via CYP450 or esterases) to exert their pharmacological effect.",
+      "verified": false,
+      "open": {
+        "q": "What term describes an inactive or precursor medication converted metabolically into its active therapeutic form in the body?",
+        "accept": [
+          "Prodrug"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "What is bioactivation (toxication) during xenobiotic metabolism?",
+      "options": [
+        "Conversion of a relatively inert or less toxic xenobiotic into a reactive electrophilic intermediate or toxic metabolite capable of binding DNA, proteins, or lipids",
+        "Immediate urinary clearance without chemical modification",
+        "Inhibition of all hepatic blood flow",
+        "Conversion of ethanol into glycogen"
+      ],
+      "answer": 0,
+      "explain": "Although biotransformation usually detoxifies xenobiotics, Phase I oxidation can generate reactive electrophiles or free radicals (e.g., NAPQI from acetaminophen or benzo[a]pyrene-7,8-diol-9,10-epoxide) that cause cellular injury or carcinogenesis.",
+      "verified": false,
+      "open": {
+        "q": "What term describes metabolic conversion of a xenobiotic into a more toxic or reactive metabolite?",
+        "accept": [
+          "Bioactivation",
+          "Toxication",
+          "Metabolic activation"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which chemical reactions predominate in Phase I biotransformation of xenobiotics?",
+      "options": [
+        "Glucuronidation and sulfation",
+        "Oxidation, reduction, and hydrolysis (often exposing or introducing functional groups such as -OH, -NH2, or -SH)",
+        "Acetylation and methylation",
+        "Glutathione conjugation"
+      ],
+      "answer": 1,
+      "explain": "Phase I reactions introduce or unmask polar functional groups via oxidation (especially monooxygenation), reduction, or hydrolysis, preparing substrates for Phase II conjugation or direct excretion.",
+      "verified": false,
+      "open": {
+        "q": "List the three main types of chemical reactions that characterize Phase I xenobiotic metabolism.",
+        "accept": [
+          "Oxidation, reduction, and hydrolysis",
+          "Oxidation, reduction, hydrolysis"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "In which subcellular compartment of hepatocytes are cytochrome P450 monooxygenases predominantly located?",
+      "options": [
+        "Inner mitochondrial membrane",
+        "Smooth endoplasmic reticulum (microsomal fraction)",
+        "Nucleolus",
+        "Lysosomal lumen"
+      ],
+      "answer": 1,
+      "explain": "Hepatic cytochrome P450 enzymes are integral membrane haemoproteins of the smooth endoplasmic reticulum, isolated in the microsomal fraction upon cell homogenization and differential centrifugation.",
+      "verified": false,
+      "open": {
+        "q": "In which cellular organelle are drug-metabolizing cytochrome P450 enzymes primarily located?",
+        "accept": [
+          "Smooth endoplasmic reticulum",
+          "SER",
+          "Endoplasmic reticulum"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-008",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Why are cytochrome P450 enzymes classified as monooxygenases (mixed-function oxidases)?",
+      "options": [
+        "They attach two oxygen atoms from O2 onto a single carbon atom",
+        "They operate without molecular oxygen",
+        "They incorporate one atom of molecular oxygen (O2) into the xenobiotic substrate while reducing the second oxygen atom to water (H2O) using electrons from NADPH",
+        "They cleave amide bonds using water"
+      ],
+      "answer": 2,
+      "explain": "Monooxygenases catalyze RH + O2 + NADPH + H+ -> ROH + H2O + NADP+, inserting one oxygen atom into the substrate (RH -> ROH) and reducing the other to water.",
+      "verified": false,
+      "open": {
+        "q": "Which reduced nucleotide cofactor donates electrons to the cytochrome P450 catalytic cycle via NADPH-cytochrome P450 reductase?",
+        "accept": [
+          "NADPH"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Why are these haemoproteins named 'cytochrome P450'?",
+      "options": [
+        "They weigh 450 kilodaltons",
+        "They contain 450 heme groups per molecule",
+        "They are expressed in 450 human tissues",
+        "When reduced (Fe2+) and bound to carbon monoxide, they exhibit a characteristic spectrophotometric absorption peak at 450 nm"
+      ],
+      "answer": 3,
+      "explain": "Reduced ferrous CYP450 complexed with CO produces a distinctive Soret absorbance maximum near 450 nm due to the thiolate ligand from a conserved cysteine coordinated to heme iron.",
+      "verified": false,
+      "open": {
+        "q": "At what wavelength (in nanometers) does reduced carbon monoxide-bound cytochrome P450 show its signature absorption peak?",
+        "accept": [
+          "450 nm",
+          "450"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which human cytochrome P450 isoform accounts for the largest fraction of hepatic CYP450 content and metabolizes roughly half of all clinically used drugs?",
+      "options": [
+        "CYP3A4",
+        "CYP1A1",
+        "CYP2E1",
+        "CYP2A6"
+      ],
+      "answer": 0,
+      "explain": "CYP3A4 is the most abundant CYP isoform in human liver and small intestine and is responsible for metabolizing a wide range of medications (e.g., statins, calcium channel blockers, immunosuppressants, macrolides).",
+      "verified": false,
+      "open": {
+        "q": "Name the predominant human cytochrome P450 isoform involved in metabolizing roughly half of all prescribed drugs.",
+        "accept": [
+          "CYP3A4"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "How do furanocoumarins in grapefruit juice cause clinically significant drug interactions with oral medications such as felodipine, nifedipine, or simvastatin?",
+      "options": [
+        "Accelerate renal glomerular filtration of the drugs",
+        "Irreversibly inactivate intestinal enterocyte CYP3A4 ('mechanism-based / suicide inhibition'), increasing oral drug bioavailability and toxicity",
+        "Bind the drugs in the stomach to prevent all absorption",
+        "Induce hepatic glucuronidation ten-fold"
+      ],
+      "answer": 1,
+      "explain": "Grapefruit furanocoumarins are oxidized by intestinal CYP3A4 into reactive intermediates that covalently bind and irreversibly inactivate the enzyme, reducing first-pass intestinal metabolism and raising systemic drug levels.",
+      "verified": false,
+      "open": {
+        "q": "Which intestinal cytochrome P450 enzyme is irreversibly inhibited by components of grapefruit juice?",
+        "accept": [
+          "CYP3A4"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-012",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "What happens when a patient taking a drug metabolized by CYP3A4 starts rifampicin or carbamazepine (potent CYP450 enzyme inducers)?",
+      "options": [
+        "Plasma levels of the co-administered drug rise dangerously",
+        "The co-administered drug is never absorbed",
+        "Induction increases CYP450 enzyme synthesis over days to weeks, accelerating clearance and lowering plasma levels/efficacy of the co-administered drug",
+        "CYP450 enzymes switch from oxidation to glucuronidation"
+      ],
+      "answer": 2,
+      "explain": "Enzyme inducers (such as rifampicin, phenobarbital, phenytoin, carbamazepine, and St. John's wort) act largely via nuclear receptors (PXR/CAR) to increase transcription of CYP450 mRNA, speeding up drug breakdown and potentially causing treatment failure or transplant rejection.",
+      "verified": false,
+      "open": {
+        "q": "Name one potent cytochrome P450 enzyme-inducing drug that can lower plasma concentrations of co-administered medications such as warfarin or oral contraceptives.",
+        "accept": [
+          "Rifampicin",
+          "Rifampin",
+          "Carbamazepine",
+          "Phenobarbital",
+          "Phenytoin"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-013",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "A patient with genetically absent CYP2D6 activity ('poor metabolizer') is prescribed standard-dose codeine for post-operative pain and experiences minimal analgesia. Why does codeine fail to relieve pain in CYP2D6 poor metabolizers?",
+      "options": [
+        "CYP2D6 normally clears morphine before it reaches the brain",
+        "CYP2D6 converts codeine into inactive glucuronides",
+        "CYP2D6 catalyzes O-demethylation of codeine (a prodrug) into active morphine, which has much higher affinity for mu-opioid receptors",
+        "CYP2D6 is required to absorb codeine from the stomach"
+      ],
+      "answer": 2,
+      "explain": "Codeine relies on CYP2D6 to demethylate it into morphine; poor metabolizers get inadequate pain relief, whereas ultrarapid metabolizers convert codeine to morphine excessively and risk fatal opioid respiratory depression.",
+      "verified": false,
+      "open": {
+        "q": "Which polymorphic cytochrome P450 enzyme converts the prodrug codeine into active morphine?",
+        "accept": [
+          "CYP2D6"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which cytochrome P450 isoform is markedly induced by chronic alcohol consumption and metabolizes ethanol via the microsomal ethanol-oxidizing system (MEOS) while also bioactivating acetaminophen into hepatotoxic NAPQI?",
+      "options": [
+        "CYP2A6",
+        "CYP2C9",
+        "CYP2C19",
+        "CYP2E1"
+      ],
+      "answer": 3,
+      "explain": "CYP2E1 is induced by chronic ethanol intake (and fasting/ketosis), generates reactive oxygen species, and converts acetaminophen into N-acetyl-p-benzoquinone imine (NAPQI).",
+      "verified": false,
+      "open": {
+        "q": "Name the ethanol-inducible cytochrome P450 isoform that participates in microsomal ethanol oxidation and converts acetaminophen into NAPQI.",
+        "accept": [
+          "CYP2E1"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-015",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which cytosolic enzyme family catalyzes the hydrolysis of esters and amides (such as aspirin, procaine, succinylcholine, and prodrug esterases) during Phase I metabolism?",
+      "options": [
+        "Esterases (and amidases)",
+        "Glucuronosyltransferases",
+        "Sulfotransferases",
+        "Glutathione S-transferases"
+      ],
+      "answer": 0,
+      "explain": "Carboxylesterases, cholinesterases (butyrylcholinesterase/pseudocholinesterase), and amidases hydrolyze ester and amide bonds to yield carboxylic acids plus alcohols or amines.",
+      "verified": false,
+      "open": {
+        "q": "Name the class of hydrolytic enzymes that cleave ester bonds in drugs and xenobiotics during Phase I metabolism.",
+        "accept": [
+          "Esterases",
+          "Carboxylesterases",
+          "Esterase"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "What is the hallmark of Phase II biotransformation reactions?",
+      "options": [
+        "Cleavage of aromatic rings into carbon dioxide",
+        "Covalent conjugation of a xenobiotic or its Phase I metabolite with an endogenous polar molecule (such as glucuronic acid, sulfate, glutathione, glycine, or acetyl group)",
+        "Insertion of a single oxygen atom from O2",
+        "Direct excretion without any enzyme involvement"
+      ],
+      "answer": 1,
+      "explain": "Phase II reactions attach bulky, polar, or charged endogenous moieties to functional groups (-OH, -COOH, -NH2, -SH, epoxides), typically producing inactive, highly water-soluble conjugates for urinary or biliary elimination.",
+      "verified": false,
+      "open": {
+        "q": "What biochemical process defines Phase II xenobiotic metabolism?",
+        "accept": [
+          "Conjugation",
+          "Covalent conjugation with endogenous polar groups"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Which activated nucleotide sugar serves as the glucuronyl donor in UDP-glucuronosyltransferase (UGT)-catalyzed glucuronidation?",
+      "options": [
+        "UDP-glucose",
+        "UDP-glucuronic acid (UDPGA)",
+        "UDP-galactose",
+        "CDP-choline"
+      ],
+      "answer": 1,
+      "explain": "UGTs transfer glucuronic acid from UDP-glucuronic acid (synthesized by UDP-glucose dehydrogenase) onto hydroxyl, carboxyl, amino, or sulfhydryl groups to form polar beta-glucuronides.",
+      "verified": false,
+      "open": {
+        "q": "Name the activated sugar donor molecule used by UDP-glucuronosyltransferases during glucuronidation.",
+        "accept": [
+          "UDP-glucuronic acid",
+          "UDPGA"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Why is glucuronidation the most common Phase II conjugation pathway in humans?",
+      "options": [
+        "It requires no cofactors",
+        "UDP-glucuronic acid is readily supplied from glucose metabolism, and glucuronides are highly water-soluble and rapidly cleared via urine or bile",
+        "It occurs exclusively in red blood cells",
+        "It converts all drugs into lipid-soluble steroids"
+      ],
+      "answer": 1,
+      "explain": "Glucuronic acid is negatively charged at physiological pH and water-soluble; UGT1A and UGT2B enzymes conjugate a vast variety of drugs, bilirubin, and steroid hormones.",
+      "verified": false,
+      "open": {
+        "q": "Which Phase II conjugation pathway is quantitatively the most common in humans?",
+        "accept": [
+          "Glucuronidation"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Which high-energy sulfate donor molecule is utilized by sulfotransferases (SULTs) during Phase II sulfation?",
+      "options": [
+        "S-adenosylmethionine (SAM)",
+        "Acetyl-CoA",
+        "3'-Phosphoadenosine-5'-phosphosulfate (PAPS)",
+        "UDP-glucuronic acid"
+      ],
+      "answer": 2,
+      "explain": "Sulfotransferases transfer the sulfate group from PAPS onto phenolic hydroxyl, alcoholic hydroxyl, or amino groups to form sulfate esters (such as acetaminophen sulfate or estrone sulfate).",
+      "verified": false,
+      "open": {
+        "q": "State the acronym for 3'-phosphoadenosine-5'-phosphosulfate, the sulfate donor used in Phase II sulfation.",
+        "accept": [
+          "PAPS"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-020",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "How does sulfation differ kinetically from glucuronidation as a Phase II conjugation capacity?",
+      "options": [
+        "Sulfation has unlimited capacity, whereas glucuronidation saturates immediately",
+        "Sulfation has high affinity but lower capacity (saturates easily because PAPS pools are limited), whereas glucuronidation has lower affinity but higher capacity",
+        "Both have identical Km and Vmax for every substrate",
+        "Sulfation occurs only in the mitochondria"
+      ],
+      "answer": 1,
+      "explain": "At low therapeutic doses (e.g., normal acetaminophen), high-affinity sulfation and glucuronidation predominate; during overdose, limited PAPS and UDPGA pools saturate, shunting more acetaminophen toward CYP450-mediated NAPQI formation.",
+      "verified": false,
+      "open": {
+        "q": "Compared with glucuronidation, does sulfation generally have a higher or lower conjugation capacity before saturation?",
+        "accept": [
+          "Lower",
+          "Lower capacity"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Which tripeptide conjugating agent is used by glutathione S-transferases (GSTs) to detoxify electrophilic xenobiotics and reactive oxygen species?",
+      "options": [
+        "Glutathione (gamma-glutamyl-cysteinyl-glycine, GSH)",
+        "Carnitine",
+        "Creatine",
+        "Carnosine"
+      ],
+      "answer": 0,
+      "explain": "Glutathione S-transferases catalyze nucleophilic attack by the sulfhydryl (-SH) group of reduced glutathione (GSH) onto electrophilic centers (such as epoxides, quinones, and NAPQI), initiating mercapturic acid formation.",
+      "verified": false,
+      "open": {
+        "q": "Name the tripeptide (composed of glutamate, cysteine, and glycine) used by glutathione S-transferases to neutralize electrophilic xenobiotics.",
+        "accept": [
+          "Glutathione",
+          "GSH"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "What is the final urinary excretion product formed after a glutathione-xenobiotic conjugate undergoes sequential cleavage of glutamate and glycine followed by N-acetylation of the remaining cysteine moiety?",
+      "options": [
+        "Hippuric acid",
+        "Mercapturic acid (N-acetylcysteine conjugate)",
+        "Uric acid",
+        "Orotic acid"
+      ],
+      "answer": 1,
+      "explain": "Glutathione conjugates undergo gamma-glutamyl transpeptidase (removes glutamate), dipeptidase (removes glycine), and N-acetyltransferase (acetylates the cysteine amino group) to yield mercapturic acids excreted in urine.",
+      "verified": false,
+      "open": {
+        "q": "Name the N-acetylated cysteine conjugate excreted in urine as the end product of glutathione-mediated detoxification.",
+        "accept": [
+          "Mercapturic acid",
+          "Mercapturic acids"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Which cofactor serves as the methyl group donor in Phase II methylation reactions catalyzed by methyltransferases (such as COMT and TPMT)?",
+      "options": [
+        "Biotin",
+        "Tetrahydrofolate",
+        "S-adenosylmethionine (SAM)",
+        "Thiamine pyrophosphate"
+      ],
+      "answer": 2,
+      "explain": "S-adenosylmethionine (SAM) donates its activated methyl group to catecholamines/xenobiotics via catechol-O-methyltransferase (COMT) or to thiopurine drugs via thiopurine S-methyltransferase (TPMT).",
+      "verified": false,
+      "open": {
+        "q": "Name the primary methyl group donor cofactor used by methyltransferases such as COMT and TPMT.",
+        "accept": [
+          "S-adenosylmethionine",
+          "SAM"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Which cofactor donates an acetyl group during N-acetylation of aromatic amines and hydrazines (such as isoniazid, hydralazine, procainamide, and sulfonamides) by N-acetyltransferase 2 (NAT2)?",
+      "options": [
+        "UDP-glucuronic acid",
+        "PAPS",
+        "SAM",
+        "Acetyl-CoA"
+      ],
+      "answer": 3,
+      "explain": "Cytosolic N-acetyltransferases (NAT1 and NAT2) transfer an acetyl group from acetyl-CoA onto primary aromatic amine or hydrazine nitrogens, often decreasing polarity and showing genetic slow/fast acetylator polymorphisms.",
+      "verified": false,
+      "open": {
+        "q": "Which high-energy thioester cofactor donates the acetyl group in N-acetylation reactions catalyzed by NAT2?",
+        "accept": [
+          "Acetyl-CoA"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-025",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "A 35-year-old man started on isoniazid for tuberculosis develops tingling and numbness in his feet (peripheral neuropathy) and elevated liver enzymes. Why are 'slow acetylators' (NAT2 deficiency) at greater risk for isoniazid-induced peripheral neuropathy?",
+      "options": [
+        "Slow acetylation causes accumulation of isoniazid and hydrazine metabolites that deplete pyridoxal phosphate (vitamin B6)",
+        "Slow acetylators convert isoniazid into excess glucose",
+        "Slow acetylation accelerates renal clearance of vitamin B12",
+        "Slow acetylators lack cytochrome P450 reductase"
+      ],
+      "answer": 0,
+      "explain": "Isoniazid and its hydrazine metabolites bind and inactivate pyridoxal phosphate (PLP), impairing GABA synthesis and amino acid metabolism in peripheral nerves; co-administration of pyridoxine (vitamin B6) prevents this neuropathy.",
+      "verified": false,
+      "open": {
+        "q": "Which vitamin cofactor (coenzyme) is depleted by isoniazid therapy, leading to peripheral neuropathy that is prevented by prophylactic supplementation?",
+        "accept": [
+          "Vitamin B6",
+          "Pyridoxine",
+          "Pyridoxal phosphate",
+          "B6"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Which endogenous amino acid conjugates with benzoic acid (a food preservative and metabolite of toluene) to form water-soluble hippuric acid excreted in urine?",
+      "options": [
+        "Alanine",
+        "Glycine",
+        "Tryptophan",
+        "Serine"
+      ],
+      "answer": 1,
+      "explain": "Glycine conjugates with carboxylic acid-containing xenobiotics such as benzoic acid and salicylic acid via acyl-CoA intermediates to form hippuric acid or salicyluric acid.",
+      "verified": false,
+      "open": {
+        "q": "Name the simplest amino acid that conjugates with benzoic acid to form hippuric acid.",
+        "accept": [
+          "Glycine"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-027",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "In an acute acetaminophen (paracetamol) overdose, what causes centrilobular (zone III) hepatic necrosis once hepatic glutathione stores are depleted?",
+      "options": [
+        "Accumulation of lactic acid in hepatocytes",
+        "Direct inhibition of gastric parietal cell H+/K+-ATPase",
+        "Unconjugated reactive NAPQI (N-acetyl-p-benzoquinone imine) covalently binds hepatic proteins and lipids, causing oxidative stress and centrilobular hepatocyte death",
+        "Precipitation of calcium oxalate crystals in the liver"
+      ],
+      "answer": 2,
+      "explain": "Normally, NAPQI generated by CYP450 (mainly CYP2E1, CYP1A2, CYP3A4) is rapidly detoxified by conjugation with reduced glutathione (GSH); in overdose, GSH drops below ~30% of normal and unbound NAPQI damages Zone III hepatocytes.",
+      "verified": false,
+      "open": {
+        "q": "State the acronym or full name of the reactive electrophilic metabolite of acetaminophen responsible for hepatotoxicity.",
+        "accept": [
+          "NAPQI",
+          "N-acetyl-p-benzoquinone imine"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "How does N-acetylcysteine (NAC) protect the liver when administered in acetaminophen poisoning?",
+      "options": [
+        "Directly chelates acetaminophen in the stomach",
+        "Activates hepatic glucuronosyltransferase to convert acetaminophen into bilirubin",
+        "Inhibits renal filtration of acetaminophen",
+        "Provides cysteine as a rate-limiting precursor to replenish hepatic glutathione (GSH) stores and directly detoxifies/reduces NAPQI"
+      ],
+      "answer": 3,
+      "explain": "N-acetylcysteine is deacetylated to L-cysteine, supplying the limiting amino acid needed to resynthesize glutathione (GSH) so NAPQI can be conjugated and cleared safely.",
+      "verified": false,
+      "open": {
+        "q": "Name the specific antidote administered for acetaminophen hepatotoxicity that replenishes hepatic glutathione.",
+        "accept": [
+          "N-acetylcysteine",
+          "NAC",
+          "Acetylcysteine"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "Why is methanol (wood alcohol) or ethylene glycol (antifreeze) ingestion dangerous, and how do fomepizole or ethanol treat this poisoning?",
+      "options": [
+        "ADH converts them to toxic acids; fomepizole or ethanol competes for ADH and slows toxic metabolite formation",
+        "They directly destroy haemoglobin without undergoing metabolism",
+        "Fomepizole neutralizes the parent alcohol in the stomach after absorption",
+        "Ethanol accelerates their conversion into harmless metabolites"
+      ],
+      "answer": 0,
+      "explain": "Methanol and ethylene glycol themselves cause mild CNS depression, but their ADH-derived metabolites (formic acid and oxalic acid) drive severe high-anion-gap metabolic acidosis, blindness, and acute renal failure; competitive ADH blockade by fomepizole (or ethanol) allows slower renal excretion of unchanged parent alcohol.",
+      "verified": false,
+      "open": {
+        "q": "Name the hepatic enzyme competitively inhibited by fomepizole or ethanol in the treatment of methanol and ethylene glycol poisoning.",
+        "accept": [
+          "Alcohol dehydrogenase",
+          "ADH"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "How does disulfiram (Antabuse) produce an unpleasant reaction (flushing, nausea, vomiting, tachycardia, hypotension) when a patient consumes alcohol?",
+      "options": [
+        "Inhibits alcohol dehydrogenase, preventing ethanol oxidation",
+        "Inhibits aldehyde dehydrogenase (ALDH), causing toxic accumulation of acetaldehyde in the blood",
+        "Induces CYP2E1 to convert ethanol into methanol",
+        "Depletes hepatic glycogen stores"
+      ],
+      "answer": 1,
+      "explain": "Disulfiram blocks acetaldehyde dehydrogenase, causing acetaldehyde levels to surge after drinking ethanol; acetaldehyde triggers vasodilation, flushing, nausea, and palpitations that deter alcohol use.",
+      "verified": false,
+      "open": {
+        "q": "Which toxic intermediate metabolite of ethanol accumulates when aldehyde dehydrogenase is inhibited by disulfiram?",
+        "accept": [
+          "Acetaldehyde"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-031",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "What is the biochemical mechanism of acute cyanide poisoning?",
+      "options": [
+        "Binds irreversibly to hemoglobin Fe2+ to form carboxyhemoglobin",
+        "Binds ferric iron (Fe3+) in cytochrome c oxidase (Complex IV) of the mitochondrial electron transport chain, halting oxidative phosphorylation and causing histotoxic hypoxia with bright red venous blood",
+        "Inhibits acetylcholinesterase at neuromuscular junctions",
+        "Depletes plasma calcium ions"
+      ],
+      "answer": 2,
+      "explain": "Cyanide binds the binuclear heme a3-CuB center (specifically Fe3+) of cytochrome c oxidase, blocking terminal electron transfer to O2; tissues cannot extract oxygen, making venous blood appear bright red.",
+      "verified": false,
+      "open": {
+        "q": "Name the mitochondrial electron transport chain enzyme (Complex IV) inhibited by cyanide.",
+        "accept": [
+          "Cytochrome c oxidase",
+          "Complex IV"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-032",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "How does hydroxocobalamin (vitamin B12a) or the nitrite + sodium thiosulfate regimen treat cyanide poisoning?",
+      "options": [
+        "Hydroxocobalamin binds cyanide directly to form non-toxic cyanocobalamin (vitamin B12), while nitrites induce methemoglobin (Fe3+ competes for cyanide) and sodium thiosulfate supplies sulfur to rhodanese to form thiocyanate",
+        "Accelerates gastric vomiting of cyanide salts",
+        "Converts cyanide into molecular oxygen",
+        "Stimulates insulin secretion to lower blood glucose"
+      ],
+      "answer": 3,
+      "explain": "Hydroxocobalamin chelates cyanide into cyanocobalamin for renal excretion; additionally, the mitochondrial enzyme rhodanese (thiosulfate sulfurtransferase) transfers sulfur from thiosulfate to cyanide to form less toxic thiocyanate.",
+      "verified": false,
+      "open": {
+        "q": "Name the mitochondrial enzyme that transfers sulfur from thiosulfate to convert cyanide into less toxic thiocyanate.",
+        "accept": [
+          "Rhodanese",
+          "Thiosulfate sulfurtransferase"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "How do organophosphate and carbamate pesticides cause cholinergic toxicity?",
+      "options": [
+        "Irreversibly (organophosphates) or reversibly (carbamates) inhibit acetylcholinesterase, causing acetylcholine accumulation at muscarinic and nicotinic synapses and neuromuscular junctions",
+        "Block nicotinic acetylcholine receptors to cause flaccid paralysis immediately",
+        "Stimulate hepatic glucuronidation of acetylcholine",
+        "Deplete intracellular potassium inside neurons"
+      ],
+      "answer": 0,
+      "explain": "Inhibiting acetylcholinesterase prevents breakdown of acetylcholine, causing muscarinic effects (salivation, lacrimation, urination, diarrhea, bronchorrhea, bronchospasm, miosis, bradycardia) and nicotinic fasciculations/weakness; pralidoxime regenerates organophosphate-inhibited AChE before 'aging' occurs.",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme inhibited by organophosphate pesticides that leads to excess synaptic acetylcholine.",
+        "accept": [
+          "Acetylcholinesterase",
+          "AChE",
+          "Cholinesterase"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-034",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Chemical Carcinogenesis and Reactive Intermediates",
+      "q": "Why is aflatoxin B1 (produced by Aspergillus flavus on improperly stored grains, peanuts, and maize) a potent hepatocarcinogen?",
+      "options": [
+        "Directly methylates histone H1 without metabolism",
+        "CYP450 oxidizes aflatoxin B1 into a reactive exo-8,9-epoxide that forms bulky covalent adducts with guanine (N7-guanine) in DNA, causing G:C -> T:A transversions including at codon 249 of TP53",
+        "Inhibits topoisomerase I in pancreatic acinar cells",
+        "Causes immediate hemolytic anemia without liver involvement"
+      ],
+      "answer": 1,
+      "explain": "Aflatoxin B1 requires CYP450 bioactivation to aflatoxin B1-8,9-epoxide, which binds DNA guanine bases and promotes hepatocellular carcinoma (synergistically with chronic hepatitis B virus infection).",
+      "verified": false,
+      "open": {
+        "q": "Name the fungal mycotoxin produced by Aspergillus flavus that is bioactivated by CYP450 into a mutagenic DNA-binding epoxide linked to hepatocellular carcinoma.",
+        "accept": [
+          "Aflatoxin B1",
+          "Aflatoxin"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-035",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Chemical Carcinogenesis and Reactive Intermediates",
+      "q": "What is the difference between a direct-acting carcinogen and a procarcinogen (indirect carcinogen)?",
+      "options": [
+        "Direct carcinogens always require CYP450 activation; procarcinogens are active without metabolism",
+        "Direct carcinogens are already reactive; procarcinogens require metabolic activation to become carcinogenic",
+        "Direct carcinogens act only in the kidneys; procarcinogens act only in the brain",
+        "Procarcinogens cannot interact with DNA or cause mutations"
+      ],
+      "answer": 1,
+      "explain": "Most environmental and dietary chemical carcinogens (such as polycyclic aromatic hydrocarbons like benzo[a]pyrene, aromatic amines, and aflatoxin B1) are procarcinogens that must be metabolically activated into electrophilic ultimate carcinogens.",
+      "verified": false,
+      "open": {
+        "q": "What term denotes a chemical carcinogen that requires metabolic activation in the body before becoming carcinogenic?",
+        "accept": [
+          "Procarcinogen",
+          "Indirect carcinogen"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-036",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Chemical Carcinogenesis and Reactive Intermediates",
+      "q": "How does the Ames test evaluate whether a chemical compound is a mutagen?",
+      "options": [
+        "Measures reversion of histidine-auxotrophic Salmonella typhimurium strains (his-) back to prototrophy (his+) capable of growing on histidine-deficient agar, typically with and without rat liver S9 homogenate",
+        "Counts chromosome number in human amniotic fluid cells",
+        "Measures serum alanine aminotransferase in mice",
+        "Detects antibodies against viral capsid proteins"
+      ],
+      "answer": 0,
+      "explain": "Histidine-requiring mutant Salmonella strains cannot grow without exogenous histidine unless a reverse mutation restores the his gene; adding rat liver S9 fraction supplies Phase I/II metabolic enzymes to detect procarcinogens.",
+      "verified": false,
+      "open": {
+        "q": "Name the short-term bacterial mutagenicity assay using histidine-auxotrophic Salmonella typhimurium strains, often with S9 liver fraction.",
+        "accept": [
+          "Ames test",
+          "The Ames test"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-037",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Antioxidant Defense Against Xenobiotic Stress",
+      "q": "How do superoxide dismutase (SOD), catalase, and glutathione peroxidase work together to protect cells against reactive oxygen species (ROS) generated during xenobiotic metabolism?",
+      "options": [
+        "SOD converts superoxide radicals (O2.-) into hydrogen peroxide (H2O2), and catalase plus glutathione peroxidase convert H2O2 into water (H2O)",
+        "Catalase converts H2O2 into superoxide radicals",
+        "Glutathione peroxidase requires superoxide to synthesize glucose",
+        "SOD converts H2O2 into ethanol"
+      ],
+      "answer": 0,
+      "explain": "Superoxide dismutase dismutates 2 O2.- + 2 H+ -> H2O2 + O2; catalase decomposes H2O2 -> 2 H2O + O2 in peroxisomes, while selenium-dependent glutathione peroxidase reduces H2O2 and lipid hydroperoxides using reduced glutathione (2 GSH -> GSSG).",
+      "verified": false,
+      "open": {
+        "q": "Which trace element is an essential cofactor at the active site of mammalian glutathione peroxidase?",
+        "accept": [
+          "Selenium",
+          "Se"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-038",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Antioxidant Defense Against Xenobiotic Stress",
+      "q": "Which NADPH-generating metabolic pathway is indispensable for maintaining reduced glutathione (GSH) levels so glutathione peroxidase and glutathione reductase can counter oxidative stress?",
+      "options": [
+        "Glycogenolysis",
+        "Pentose phosphate pathway (hexose monophosphate shunt)",
+        "Beta-oxidation of fatty acids",
+        "Urea cycle"
+      ],
+      "answer": 1,
+      "explain": "Glutathione reductase reduces oxidized glutathione disulfide (GSSG) back to two molecules of reduced GSH using NADPH supplied primarily by glucose 6-phosphate dehydrogenase (G6PD) and 6-phosphogluconate dehydrogenase in the pentose phosphate pathway.",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme that catalyzes the first and rate-limiting step of the pentose phosphate pathway to generate NADPH for maintaining reduced glutathione.",
+        "accept": [
+          "Glucose 6-phosphate dehydrogenase",
+          "G6PD",
+          "Glucose-6-phosphate dehydrogenase"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-039",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heavy Metals and Chelation Biochemistry",
+      "q": "By which biochemical mechanism do heavy metals such as lead (Pb2+), mercury (Hg2+), and arsenic cause cellular toxicity?",
+      "options": [
+        "Bind tightly to sulfhydryl (-SH) groups of enzymes and structural proteins, inhibit metalloenzymes, and mimic or displace essential divalent cations (such as Ca2+ and Zn2+)",
+        "Increase intracellular ATP synthesis ten-fold",
+        "Convert all plasma proteins into immunoglobulins",
+        "Enhance renal reabsorption of bicarbonate"
+      ],
+      "answer": 0,
+      "explain": "Heavy metals have high affinity for thiol (-SH) groups on proteins and displace essential metal cofactors (e.g., lead inhibits ALA dehydratase and ferrochelatase, while arsenic inhibits pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase by binding vicinal dithiols).",
+      "verified": false,
+      "open": {
+        "q": "Which functional group on proteins and enzymes do heavy metals like lead and mercury strongly bind to disrupt protein function?",
+        "accept": [
+          "Sulfhydryl group",
+          "Sulfhydryl",
+          "Thiol group",
+          "-SH"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-040",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heavy Metals and Chelation Biochemistry",
+      "q": "Which chelating agents or metal-binding proteins are clinically used to bind and promote excretion of heavy metals or excess copper/iron?",
+      "options": [
+        "Wilson disease: penicillamine or trientine; iron overload: deferoxamine or deferasirox; lead: succimer or CaNa2-EDTA",
+        "Warfarin is used to chelate excess iron and copper",
+        "Heparin binds lead and promotes its renal excretion",
+        "Atropine is the standard chelator for copper and iron"
+      ],
+      "answer": 0,
+      "explain": "Chelators form water-soluble coordination complexes with toxic or excess metal ions that can be excreted in urine or bile (e.g., penicillamine/trientine for Wilson disease, deferoxamine for iron, DMSA/EDTA for lead).",
+      "verified": false,
+      "open": {
+        "q": "Name one chelating agent used to treat iron overload or Wilson disease (copper accumulation).",
+        "accept": [
+          "Deferoxamine",
+          "Deferasirox",
+          "Penicillamine",
+          "Trientine"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-041",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "What is the role of cytochrome b5 in certain cytochrome P450 monooxygenase reactions?",
+      "options": [
+        "Acts as the sole oxygen donor in place of O2",
+        "Can donate the second electron to certain CYP450 isoforms, enhancing catalytic efficiency for specific substrates",
+        "Hydrolyzes glucuronide conjugates in bile",
+        "Synthesizes heme from glycine"
+      ],
+      "answer": 1,
+      "explain": "While NADPH-cytochrome P450 reductase transfers electrons from NADPH to CYP450, cytochrome b5 (receiving electrons from NADH via cytochrome b5 reductase) can facilitate the second electron transfer step for selected CYP450 reactions.",
+      "verified": false,
+      "open": {
+        "q": "Which small haemoprotein can assist in electron transfer during specific cytochrome P450 reactions?",
+        "accept": [
+          "Cytochrome b5"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-042",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which three major CYP2C and CYP2D family isoforms are prominent examples of pharmacogenetic polymorphism affecting drug metabolism?",
+      "options": [
+        "CYP2C9 (warfarin, phenytoin), CYP2C19 (clopidogrel, omeprazole), and CYP2D6 (codeine, antidepressants, beta-blockers)",
+        "CYP1A1, CYP1A2, and CYP1B1 only",
+        "CYP7A1, CYP11A1, and CYP21A2 only",
+        "CYP24A1 and CYP27B1 only"
+      ],
+      "answer": 0,
+      "explain": "Genetic variants in CYP2C9, CYP2C19, and CYP2D6 alter metabolic clearance or prodrug activation, causing individual differences in bleeding risk (warfarin), stent thrombosis (clopidogrel), or opioid/antidepressant response.",
+      "verified": false,
+      "open": {
+        "q": "Which polymorphic CYP450 enzyme is required to bioactivate the antiplatelet prodrug clopidogrel into its active thiol metabolite?",
+        "accept": [
+          "CYP2C19"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-043",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "How does cigarette smoking affect the metabolism of drugs such as theophylline, clozapine, or olanzapine?",
+      "options": [
+        "Polycyclic aromatic hydrocarbons (PAHs) in tobacco smoke induce CYP1A1/CYP1A2, increasing clearance and lowering plasma levels of CYP1A2 substrate drugs",
+        "Nicotine inhibits all hepatic glucuronidation permanently",
+        "Smoking blocks renal tubular filtration of all drugs",
+        "Tobacco smoke converts drugs into lipids"
+      ],
+      "answer": 0,
+      "explain": "Polycyclic aromatic hydrocarbons in cigarette smoke bind the aryl hydrocarbon receptor (AhR) to induce CYP1A1 and CYP1A2, accelerating metabolism of CYP1A2 substrates (e.g., theophylline, caffeine, clozapine, olanzapine).",
+      "verified": false,
+      "open": {
+        "q": "Which cytochrome P450 isoform is classically induced by polycyclic aromatic hydrocarbons present in cigarette smoke and charbroiled foods?",
+        "accept": [
+          "CYP1A2",
+          "CYP1A1",
+          "CYP1A1/CYP1A2"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-044",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "In which cellular compartment are UDP-glucuronosyltransferases (UGTs) located, unlike cytosolic sulfotransferases (SULTs) and N-acetyltransferases (NATs)?",
+      "options": [
+        "Endoplasmic reticulum lumen (microsomal membrane)",
+        "Mitochondrial matrix",
+        "Nucleus",
+        "Peroxisome"
+      ],
+      "answer": 0,
+      "explain": "UGTs are transmembrane enzymes of the endoplasmic reticulum with their catalytic site facing the ER lumen (requiring UDPGA transport via UDP-glucuronic acid transporters), whereas SULTs, NATs, and GSTs are predominantly cytosolic.",
+      "verified": false,
+      "open": {
+        "q": "In which organelle are UDP-glucuronosyltransferase (UGT) enzymes localized?",
+        "accept": [
+          "Endoplasmic reticulum",
+          "Smooth endoplasmic reticulum",
+          "Microsomes",
+          "ER"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-045",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "What is enterohepatic circulation of glucuronidated xenobiotics or bilirubin conjugates?",
+      "options": [
+        "Direct filtration of unchanged compounds from blood into the appendix",
+        "Biliary conjugates enter the gut, may be deconjugated by bacteria, and can be reabsorbed into portal blood",
+        "Bile acids are converted into thyroid hormones before intestinal absorption",
+        "Toxins are transported from sweat glands directly into systemic arteries"
+      ],
+      "answer": 1,
+      "explain": "Bacterial beta-glucuronidases in the gut can cleave glucuronide groups off excreted conjugates, regenerating less polar molecules that re-enter portal circulation and prolong drug/metabolite half-life.",
+      "verified": false,
+      "open": {
+        "q": "Which bacterial enzyme in the intestine deconjugates glucuronides and promotes enterohepatic reabsorption?",
+        "accept": [
+          "Beta-glucuronidase",
+          "B-glucuronidase",
+          "Glucuronidase"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-046",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase II Conjugation Reactions",
+      "q": "Why are patients with inherited thiopurine S-methyltransferase (TPMT) deficiency at high risk of severe myelosuppression when given standard doses of azathioprine or 6-mercaptopurine?",
+      "options": [
+        "TPMT normally inactivates thiopurines; deficiency increases cytotoxic thioguanine nucleotide accumulation and myelosuppression",
+        "TPMT is required for intestinal absorption of azathioprine",
+        "TPMT converts azathioprine into vitamin K",
+        "TPMT deficiency prevents thiopurines from entering bone marrow cells"
+      ],
+      "answer": 0,
+      "explain": "Reduced or absent TPMT activity diverts thiopurine metabolism toward excess 6-thioguanine nucleotides, causing life-threatening leukopenia/neutropenia unless the dose is substantially reduced.",
+      "verified": false,
+      "open": {
+        "q": "State the acronym for thiopurine S-methyltransferase, the Phase II enzyme whose deficiency increases myelotoxicity of azathioprine and 6-mercaptopurine.",
+        "accept": [
+          "TPMT"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-047",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "What are the major categories of Phase I oxidation reactions catalyzed by cytochrome P450 and related enzymes?",
+      "options": [
+        "Aromatic and aliphatic hydroxylation, N- and O-dealkylation, S-oxidation, N-oxidation, and deamination",
+        "Transamination, decarboxylation, and beta-oxidation",
+        "Phosphorylation, adenylation, and ribosylation",
+        "Carboxylation and transketolation"
+      ],
+      "answer": 0,
+      "explain": "CYP450 monooxygenases carry out diverse oxidations including hydroxylations, dealkylations (removing alkyl groups from N, O, or S atoms), sulfoxidations, epoxidations, and oxidative deaminations.",
+      "verified": false,
+      "open": {
+        "q": "Name two types of oxidation reactions catalyzed by cytochrome P450 enzymes during Phase I xenobiotic metabolism.",
+        "accept": [
+          "Hydroxylation and dealkylation",
+          "Aromatic hydroxylation and N-dealkylation",
+          "Hydroxylation, dealkylation"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-048",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which flavin-containing monooxygenase system in the endoplasmic reticulum oxidizes nucleophilic nitrogen, sulfur, and phosphorus atoms in xenobiotics without requiring heme iron?",
+      "options": [
+        "Flavin-containing monooxygenases (FMOs)",
+        "Xanthine oxidase",
+        "Monoamine oxidase (MAO)",
+        "Pyruvate dehydrogenase"
+      ],
+      "answer": 0,
+      "explain": "FMOs are microsomal FAD-containing enzymes that use NADPH and O2 to oxygenate soft nucleophiles (such as tertiary amines and thioethers) into polar N-oxides or sulfoxides, often without the drug-induction profile of CYP450.",
+      "verified": false,
+      "open": {
+        "q": "Name the FAD-dependent microsomal monooxygenase enzyme family that oxidizes nucleophilic nitrogen and sulfur atoms in xenobiotics.",
+        "accept": [
+          "Flavin-containing monooxygenases",
+          "FMO",
+          "FMOs"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-049",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Phase I Reactions and Cytochrome P450",
+      "q": "Which enzymes catalyze Phase I reduction of nitro groups (-NO2), azo groups (-N=N-), and ketones/aldehydes into amines or alcohols?",
+      "options": [
+        "Nitroreductases, azoreductases, and carbonyl reductases (as well as certain CYP450 enzymes under low oxygen tension)",
+        "Lyases and ligases",
+        "DNA polymerases and RNA polymerases",
+        "Aminotransferases"
+      ],
+      "answer": 0,
+      "explain": "Reduction reactions convert nitro compounds to amines, cleave azo dyes into aromatic amines (often via gut microbiota), and reduce ketones/aldehydes to secondary/primary alcohols.",
+      "verified": false,
+      "open": {
+        "q": "Into what functional group are aromatic nitro compounds (-NO2) typically converted during Phase I reduction?",
+        "accept": [
+          "Amino group",
+          "Amine",
+          "Amines",
+          "-NH2"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-050",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Chemical Carcinogenesis and Reactive Intermediates",
+      "q": "Which enzyme converts reactive, mutagenic arene oxides and epoxides (such as intermediates of polycyclic aromatic hydrocarbons) into less reactive trans-dihydrodiols?",
+      "options": [
+        "Epoxide hydrolase",
+        "Catalase",
+        "Alanine aminotransferase",
+        "Heme oxygenase"
+      ],
+      "answer": 0,
+      "explain": "Epoxide hydrolase adds water across epoxide rings to form trans-dihydrodiols, generally detoxifying reactive epoxides (though in some polycyclic aromatic hydrocarbons like benzo[a]pyrene, a dihydrodiol can undergo further oxidation to a bay-region diol epoxide).",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme that hydrolyzes epoxides to trans-dihydrodiols during xenobiotic metabolism.",
+        "accept": [
+          "Epoxide hydrolase"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-051",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Chemical Carcinogenesis and Reactive Intermediates",
+      "q": "Why are electrophilic xenobiotic metabolites particularly hazardous to cells?",
+      "options": [
+        "They react covalently with electron-rich nucleophilic atoms on DNA bases, RNA, and proteins, causing mutations, protein dysfunction, or cell death",
+        "They lower blood glucose to dangerously high levels",
+        "They convert all lipids into saturated triglycerides",
+        "They stimulate platelet aggregation directly"
+      ],
+      "answer": 0,
+      "explain": "Electrophiles (electron-deficient species such as epoxides, quinone imines like NAPQI, and nitrenium ions) attack nucleophilic sites (e.g., N7 or O6 of guanine, cysteine thiols), forming covalent adducts that can initiate mutagenesis or cytotoxicity.",
+      "verified": false,
+      "open": {
+        "q": "Do reactive toxic metabolites formed during xenobiotic bioactivation typically act as electrophiles or nucleophiles?",
+        "accept": [
+          "Electrophiles",
+          "Electrophilic"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-052",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Antioxidant Defense Against Xenobiotic Stress",
+      "q": "How does lipid peroxidation initiated by xenobiotic-induced free radicals damage cell membranes?",
+      "options": [
+        "Free radicals attack polyunsaturated fatty acids, initiating a chain reaction that disrupts membrane integrity",
+        "It converts membrane cholesterol into glycogen",
+        "It strengthens disulphide bonds between phospholipid head groups",
+        "It activates Na+/K+-ATPase and increases membrane transport"
+      ],
+      "answer": 0,
+      "explain": "Polyunsaturated fatty acids with bis-allylic methylene hydrogens are especially vulnerable to radical chain lipid peroxidation (producing malondialdehyde and 4-hydroxynonenal), which is terminated by chain-breaking antioxidants like alpha-tocopherol (vitamin E).",
+      "verified": false,
+      "open": {
+        "q": "Name the lipid-soluble chain-breaking antioxidant vitamin that protects membrane polyunsaturated fatty acids from lipid peroxidation.",
+        "accept": [
+          "Vitamin E",
+          "Alpha-tocopherol",
+          "Tocopherol"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-053",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "Why does chronic alcohol abuse markedly lower the threshold for acetaminophen hepatotoxicity compared with occasional alcohol use?",
+      "options": [
+        "Chronic ethanol induces CYP2E1 (increasing NAPQI formation) and often accompanies poor nutrition/glutathione depletion, whereas acute ethanol can temporarily compete for CYP2E1",
+        "Chronic alcohol blocks renal excretion of water",
+        "Chronic alcohol converts acetaminophen into vitamin C",
+        "Chronic alcohol inhibits all hepatic blood vessels"
+      ],
+      "answer": 0,
+      "explain": "Chronic alcohol consumption upregulates CYP2E1 and can deplete hepatic GSH stores, increasing susceptibility to NAPQI-mediated liver damage even at doses closer to the upper therapeutic range.",
+      "verified": false,
+      "open": {
+        "q": "Which hepatic zone (centrilobular Zone III, periportal Zone I, or midzonal Zone II) is classically most susceptible to acetaminophen and carbon tetrachloride hepatotoxicity due to high CYP450 activity and lower oxygen tension?",
+        "accept": [
+          "Zone III",
+          "Centrilobular",
+          "Centrilobular zone",
+          "Zone 3"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-054",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "How does carbon tetrachloride (CCl4) cause liver injury?",
+      "options": [
+        "CYP450 reduces/homolytically cleaves CCl4 to a trichloromethyl free radical (.CCl3) and trichloromethylperoxy radical (.CCl3O2), triggering massive lipid peroxidation and endoplasmic reticulum/membrane damage",
+        "Directly inhibits pancreatic lipase without affecting hepatocytes",
+        "Binds permanently to hemoglobin A1c",
+        "Causes hyperkalemia without liver involvement"
+      ],
+      "answer": 0,
+      "explain": "Carbon tetrachloride is bioactivated by hepatic CYP450 into reactive free radicals (.CCl3) that initiate severe lipid peroxidation, block VLDL secretion (causing fatty liver), and cause centrilobular necrosis.",
+      "verified": false,
+      "open": {
+        "q": "Name the reactive free radical formed from carbon tetrachloride (CCl4) by cytochrome P450 that drives lipid peroxidation in hepatocytes.",
+        "accept": [
+          "Trichloromethyl radical",
+          "Trichloromethyl",
+          ".CCl3",
+          "CCl3 radical"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-055",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Toxicology and Specific Xenobiotics",
+      "q": "What is the biochemical mechanism of paraquat (a bipyridyl herbicide) toxicity, particularly in lung alveolar epithelial cells?",
+      "options": [
+        "Paraquat undergoes redox cycling in lung cells, generating reactive oxygen species and severe oxidative injury",
+        "It inhibits acetylcholinesterase at the neuromuscular junction",
+        "It chelates calcium from bone and causes osteomalacia",
+        "It activates opioid receptors and suppresses respiration"
+      ],
+      "answer": 0,
+      "explain": "Paraquat is actively taken up by Type I and Type II pneumocytes and undergoes cyclic reduction-oxidation with molecular oxygen, generating continuous superoxide and hydroxyl radicals that cause fatal pulmonary edema and fibrosis.",
+      "verified": false,
+      "open": {
+        "q": "Which organ is classically the primary target of delayed fatal injury and fibrosis subsequent to paraquat poisoning?",
+        "accept": [
+          "Lungs",
+          "Lung"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-056",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heavy Metals and Chelation Biochemistry",
+      "q": "Which heavy metal accumulates in bone and renal proximal tubules (causing Fanconi-like proximal renal tubular dysfunction, osteomalacia/osteoporosis, and 'itai-itai' disease) after chronic environmental exposure?",
+      "options": [
+        "Cadmium (Cd2+)",
+        "Lithium (Li+)",
+        "Magnesium (Mg2+)",
+        "Zinc (Zn2+)"
+      ],
+      "answer": 0,
+      "explain": "Cadmium has a very long biological half-life (~10-30 years), binds metallothionein in liver and kidney, damages renal proximal tubular cells, and impairs calcium/vitamin D metabolism in bone.",
+      "verified": false,
+      "open": {
+        "q": "Name the toxic heavy metal associated with proximal renal tubular injury and bone demineralization ('itai-itai' disease).",
+        "accept": [
+          "Cadmium",
+          "Cd",
+          "Cd2+"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-057",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Heavy Metals and Chelation Biochemistry",
+      "q": "What is the physiological role of metallothionein in heavy metal homeostasis and detoxification?",
+      "options": [
+        "A small cysteine-rich metal-binding protein induced by metals (such as zinc, copper, and cadmium) whose numerous sulfhydryl (-SH) groups sequester metal ions",
+        "A plasma protease that digests heavy metals",
+        "A mitochondrial enzyme that converts mercury into gold",
+        "A lipid transporter in chylomicrons"
+      ],
+      "answer": 0,
+      "explain": "Metallothionein contains ~30% cysteine residues that coordinate essential metals (Zn, Cu) and sequester toxic metals (Cd, Hg), helping regulate intracellular metal availability and buffer toxicity.",
+      "verified": false,
+      "open": {
+        "q": "Name the low-molecular-weight, cysteine-rich intracellular protein that binds and sequesters heavy metals such as zinc, copper, and cadmium.",
+        "accept": [
+          "Metallothionein"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-058",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "What is the 'first-pass effect' (first-pass hepatic metabolism) for an orally administered xenobiotic or drug?",
+      "options": [
+        "Metabolism of a substance absorbed from the gastrointestinal tract by the intestinal wall and liver via the portal vein before it reaches systemic arterial circulation, reducing oral bioavailability",
+        "Excretion of a drug through sweat before absorption",
+        "Binding of a drug to plasma albumin in the radial artery",
+        "Conversion of a drug into a solid crystal in the stomach"
+      ],
+      "answer": 0,
+      "explain": "Orally absorbed compounds pass through enterocytes and the portal venous system to the liver before entering systemic circulation; extensive first-pass metabolism lowers oral bioavailability (requiring higher oral doses than IV doses or alternative routes like sublingual/transdermal).",
+      "verified": false,
+      "open": {
+        "q": "What term describes the metabolism of an orally absorbed drug by the gut wall and liver before it reaches systemic circulation?",
+        "accept": [
+          "First-pass effect",
+          "First-pass metabolism",
+          "First pass effect",
+          "First pass metabolism"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-059",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Overview of Xenobiotics and Biotransformation",
+      "q": "Which efflux transporter superfamily (such as P-glycoprotein / MDR1 and MRP2) actively pumps conjugated and unconjugated xenobiotics out of hepatocytes into bile or out of enterocytes back into the gut lumen (Phase III transport)?",
+      "options": [
+        "ATP-binding cassette (ABC) transporters",
+        "Voltage-gated sodium channels",
+        "Aquaporins",
+        "Nuclear hormone receptors"
+      ],
+      "answer": 0,
+      "explain": "Phase III transport involves membrane efflux pumps—chiefly ABC transporters like P-glycoprotein (ABCB1) and MRP2 (ABCC2)—that export parent xenobiotics and Phase II conjugates (such as glucuronides and glutathione conjugates) into bile, urine, or the intestinal lumen.",
+      "verified": false,
+      "open": {
+        "q": "Which major superfamily of ATP-dependent efflux pumps mediates Phase III export of xenobiotics and their conjugates into bile or urine?",
+        "accept": [
+          "ABC transporters",
+          "ATP-binding cassette transporters"
+        ]
+      }
+    },
+    {
+      "id": "ba-detoxification-and-xenobiotics-060",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Antioxidant Defense Against Xenobiotic Stress",
+      "q": "Which water-soluble antioxidant vitamin reduces oxidized vitamin E (tocopheroxyl radical) back to its active reduced antioxidant form in the aqueous phase?",
+      "options": [
+        "Vitamin C (ascorbic acid)",
+        "Vitamin K",
+        "Vitamin D",
+        "Biotin"
+      ],
+      "answer": 0,
+      "explain": "Vitamin C (ascorbate) regenerates reduced alpha-tocopherol from the tocopheroxyl radical at the membrane-water interface, linking lipid-phase and aqueous-phase antioxidant defenses.",
+      "verified": false,
+      "open": {
+        "q": "Name the water-soluble antioxidant vitamin that helps regenerate reduced vitamin E.",
+        "accept": [
+          "Vitamin C",
+          "Ascorbic acid",
+          "Ascorbate"
+        ]
+      }
+    }
+  ]
 }
