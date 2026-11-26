@@ -79,10 +79,10 @@
    "sub": "Type I Hypersensitivity: Sensitization and Mediators",
    "q": "Why does cross-linking of at least two adjacent IgE-Fc-epsilon RI complexes by a multivalent allergen trigger mast cell degranulation, whereas binding of a monovalent hapten does not?",
    "options": [
-    "Cross-linking aggregates receptor ITAM motifs to activate Lyn and Syk tyrosine kinases and phospholipase C-gamma, increasing intracellular calcium",
-    "Monovalent haptens permanently cleave the Fc-epsilon RI alpha chain from the mast cell membrane",
-    "Multivalent allergens directly activate C1q complement without involving intracellular signaling",
-    "Mast cell granules dissolve only when extracellular sodium enters through IgE light chains"
+    "FcεRI cross-linking activates Lyn/Syk and PLCγ, raising intracellular Ca2+",
+    "Monovalent haptens permanently cleave the Fc-epsilon-RI alpha chain",
+    "Multivalent allergens activate C1q without intracellular signalling",
+    "Mast-cell granules dissolve when sodium enters through IgE light chains"
    ],
    "answer": 0,
    "explain": "Aggregation of adjacent Fc-epsilon RI molecules brings receptor-associated Lyn and Syk tyrosine kinases together, phosphorylating ITAMs and activating PLC-gamma to generate IP3 (raising cytosolic Ca2+) and DAG (activating PKC), driving granule exocytosis.",
@@ -172,10 +172,10 @@
    "sub": "Type I Hypersensitivity: Clinical Syndromes",
    "q": "What distinguishes the late-phase reaction (occurring 4 to 12 hours after allergen challenge) from the immediate reaction in Type I hypersensitivity?",
    "options": [
-    "Infiltration of tissues by recruited eosinophils, neutrophils, and Th2 lymphocytes driven by mast cell chemokines and cytokines without further allergen exposure",
-    "Deposition of circulating IgG-antigen immune complexes in renal glomerular capillaries",
-    "Complement-mediated osmotic lysis of sensitized erythrocytes by the Membrane Attack Complex",
-    "Formation of caseating epithelioid cell granulomas around inhaled pollen grains"
+    "A delayed influx of eosinophils, neutrophils and Th2 cells driven by mast-cell mediators",
+    "IgG-antigen complexes deposit in renal glomeruli",
+    "Complement lyses sensitised erythrocytes",
+    "Caseating granulomas form around pollen grains"
    ],
    "answer": 0,
    "explain": "During the immediate phase, activated mast cells transcribe and secrete TNF-alpha, IL-4, IL-5, and eotaxin, recruiting eosinophils (which release major basic protein and eosinophil cationic protein) and Th2 cells hours later to sustain mucosal inflammation and bronchial hyperresponsiveness.",
@@ -195,10 +195,10 @@
    "sub": "Type I Hypersensitivity: Clinical Syndromes",
    "q": "A 19-year-old student receives an intramuscular penicillin injection and within 5 minutes develops generalized urticaria, inspiratory stridor, wheezing, and a blood pressure of 68/40 mmHg. What is the single most critical first-line drug and route of administration?",
    "options": [
-    "Intramuscular adrenaline (epinephrine) into the anterolateral thigh (vastus lateralis)",
+    "Intramuscular adrenaline into the anterolateral thigh",
     "Oral loratadine 10 mg",
-    "Intravenous hydrocortisone 100 mg as sole monotherapy",
-    "Subcutaneous atropine sulphate"
+    "Intravenous hydrocortisone alone",
+    "Subcutaneous atropine"
    ],
    "answer": 0,
    "explain": "Intramuscular adrenaline (epinephrine) is the life-saving first-line treatment for anaphylaxis: alpha-1 agonism reverses peripheral vasodilation and laryngeal oedema, beta-1 agonism increases cardiac output, and beta-2 agonism bronchodilates and suppresses further mast cell mediator release.",
@@ -219,10 +219,10 @@
    "sub": "Type I Hypersensitivity: Clinical Syndromes",
    "q": "What is 'atopy'?",
    "options": [
-    "A familial, genetically determined predisposition to produce excessive IgE antibodies against common harmless environmental allergens",
-    "Complete congenital absence of all five serum immunoglobulin classes",
-    "An acquired allergy exclusively to intravenous radiocontrast media",
-    "Delayed contact dermatitis caused by poison ivy urushiol oil"
+    "An inherited tendency to produce IgE against common environmental allergens",
+    "Congenital absence of all five immunoglobulin classes",
+    "An acquired allergy only to intravenous contrast media",
+    "Delayed contact dermatitis from poison ivy"
    ],
    "answer": 0,
    "explain": "Atopy is a polygenic inherited tendency (associated with HLA variants, IL-4/IL-13 promoter polymorphisms, and filaggrin skin-barrier mutations) to mount exaggerated Th2/IgE responses to ubiquitous aeroallergens or food antigens, manifesting as allergic rhinitis, asthma, and atopic dermatitis.",
@@ -242,10 +242,10 @@
    "sub": "Type I Hypersensitivity: Clinical Syndromes",
    "q": "How does subcutaneous or sublingual allergen immunotherapy (desensitization) attenuate severe IgE-mediated allergic reactions over time?",
    "options": [
-    "It shifts the immune response from Th2 toward regulatory T cells (IL-10/TGF-beta) and Th1 cells, inducing allergen-specific IgG4 blocking antibodies",
-    "It permanently destroys all bone marrow mast cell progenitors",
-    "It induces high titres of allergen-specific IgE to saturate blood vessels",
-    "It inhibits hepatic synthesis of complement component C3"
+    "It promotes regulatory T-cell responses and allergen-specific IgG4 blocking antibodies",
+    "It destroys all bone-marrow mast-cell precursors",
+    "It induces high IgE titres to saturate blood vessels",
+    "It inhibits hepatic C3 synthesis"
    ],
    "answer": 0,
    "explain": "Controlled incremental administration of allergen induces FoxP3+ regulatory T cells secreting IL-10 and TGF-beta, which suppress Th2/IgE responses and promote B-cell switching to non-inflammatory IgG4 antibodies that compete with IgE for allergen binding.",
@@ -265,10 +265,10 @@
    "sub": "Type II Hypersensitivity: Mechanisms and Examples",
    "q": "In Type II hypersensitivity, IgG or IgM antibodies bind directly to antigens fixed on cell surfaces or extracellular matrix. Which three effector mechanisms mediate cellular injury or dysfunction in Type II reactions?",
    "options": [
-    "Complement-dependent cytotoxicity/opsonization, Fc-receptor-mediated phagocytosis/ADCC, and antibody-mediated receptor stimulation or blockade",
-    "Mast cell histamine release, leukotriene synthesis, and eosinophil recruitment",
-    "Th1 macrophage activation, epithelioid granuloma formation, and caseous necrosis",
-    "Circulating immune complex trapping in renal glomeruli and leukocytoclastic vasculitis"
+    "Complement-mediated injury/opsonisation, Fc-receptor-mediated cell killing, and antibody effects on receptors",
+    "Mast-cell histamine release, leukotriene synthesis and eosinophil recruitment",
+    "Th1 macrophage activation and granuloma formation",
+    "Circulating immune-complex deposition in glomeruli"
    ],
    "answer": 0,
    "explain": "Type II hypersensitivity damages or alters target cells via: (1) complement activation (MAC lysis or C3b opsonization), (2) Fc-gamma-receptor-mediated phagocytosis by splenic macrophages or NK-cell ADCC, and (3) non-cytotoxic anti-receptor antibodies that stimulate or block cellular receptors.",
@@ -288,10 +288,10 @@
    "sub": "Type II Hypersensitivity: Mechanisms and Examples",
    "q": "How do Graves disease and myasthenia gravis illustrate non-cytotoxic antibody-mediated cellular dysfunction within Type II hypersensitivity?",
    "options": [
-    "In Graves disease, autoantibodies stimulate the TSH receptor to cause hyperthyroidism, whereas in myasthenia gravis, autoantibodies block and internalize acetylcholine receptors to cause muscle weakness",
-    "Both diseases are caused by CD8+ cytotoxic T cells lysing thyroid and skeletal muscle fibres",
-    "In Graves disease, immune complexes deposit in the thyroid, whereas in myasthenia gravis, IgE triggers mast cell degranulation at the motor end-plate",
-    "In both disorders, IgM cold agglutinins cause intravascular red cell haemolysis"
+    "Graves antibodies stimulate TSH receptors; myasthenia antibodies block and internalise ACh receptors",
+    "Both diseases result from CD8+ T-cell lysis of target cells",
+    "Graves disease involves immune-complex deposition; myasthenia is IgE-mediated",
+    "Cold agglutinins cause haemolysis in both disorders"
    ],
    "answer": 0,
    "explain": "Anti-receptor autoantibodies exemplify Type II dysfunction without cell destruction: thyroid-stimulating immunoglobulins (TSI) act as agonists at the TSH receptor, whereas anti-AChR antibodies act as antagonists at the neuromuscular junction.",
@@ -357,10 +357,10 @@
    "sub": "Type II Hypersensitivity: Mechanisms and Examples",
    "q": "Acute rheumatic fever develops 2 to 3 weeks after untreated Streptococcus pyogenes pharyngitis through which immunological mechanism?",
    "options": [
-    "Molecular mimicry, in which antibodies and CD4+ T cells directed against streptococcal M protein cross-react with cardiac myosin and valvular glycoproteins",
-    "Direct bacterial invasion and suppurative abscess formation inside the mitral valve leaflets",
-    "IgE-mediated mast cell degranulation within the pericardial sac",
-    "Deposition of circulating hepatitis B surface antigen immune complexes in the myocardium"
+    "Molecular mimicry: anti-streptococcal responses cross-react with cardiac myosin and valve tissue",
+    "Direct bacterial invasion of mitral valve leaflets",
+    "IgE-mediated mast-cell degranulation in the pericardium",
+    "Hepatitis B immune-complex deposition in myocardium"
    ],
    "answer": 0,
    "explain": "Streptococcal M protein shares structural epitopes with human cardiac myosin, sarcolemmal proteins, and valvular tissue; cross-reactive antibodies and T cells trigger pancarditis, Aschoff bodies, and migratory polyarthritis.",
@@ -403,10 +403,10 @@
    "sub": "Type III Hypersensitivity: Immune Complex Disease",
    "q": "Which physico-chemical stoichiometric ratio of soluble antigen to IgG/IgM antibody generates the most pathogenic circulating immune complexes in Type III hypersensitivity?",
    "options": [
-    "Slight to moderate antigen excess (forming small-to-intermediate soluble complexes that evade rapid phagocytic clearance)",
-    "Massive antibody excess (forming huge insoluble precipitates cleared immediately by hepatic Kupffer cells)",
-    "Complete absence of antibody with pure monomeric antigen",
-    "Equimolar ratio with IgE antibodies exclusively"
+    "Slight antigen excess forms small soluble immune complexes that evade rapid clearance",
+    "Large antibody excess forms insoluble complexes cleared immediately",
+    "Pure antigen circulates without antibody",
+    "Equimolar complexes form exclusively with IgE"
    ],
    "answer": 0,
    "explain": "Large complexes formed in antibody excess are rapidly phagocytosed by the mononuclear phagocyte system, whereas small soluble complexes formed in slight antigen excess persist in the circulation and lodge in vascular basement membranes (glomeruli, synovium, small vessels).",
@@ -426,10 +426,10 @@
    "sub": "Type III Hypersensitivity: Immune Complex Disease",
    "q": "Once circulating immune complexes lodge in glomerular capillary walls or small blood vessels, which sequence of events causes acute tissue necrosis?",
    "options": [
-    "Complement activation recruits neutrophils, which release enzymes and oxidants that damage vessel walls",
+    "Complement activation recruits neutrophils, which release enzymes and oxidants that injure vessels",
     "CD8 cells inject granzyme B into endothelial nuclei",
-    "Mast cells undergo apoptosis without neutrophil recruitment",
-    "Platelets release nitric oxide that dissolves vascular collagen"
+    "Mast cells undergo apoptosis without neutrophils",
+    "Platelets release nitric oxide that dissolves collagen"
    ],
    "answer": 0,
    "explain": "Deposited immune complexes fix C1q and activate complement, releasing C5a to attract neutrophils; unable to phagocytose basement-membrane-bound complexes ('frustrated phagocytosis'), neutrophils discharge proteases and free radicals, causing leukocytoclastic vasculitis and fibrinoid necrosis.",
@@ -472,10 +472,10 @@
    "sub": "Type III Hypersensitivity: Immune Complex Disease",
    "q": "What is an Arthus reaction?",
    "options": [
-    "A local type III immune-complex reaction causing vasculitis and tissue injury several hours after antigen exposure",
-    "An immediate IgE-mediated collapse occurring seconds after a bee sting",
-    "A chronic granuloma appearing weeks after BCG vaccination",
-    "A transient wheal caused by stroking normal skin"
+    "A local type III immune-complex vasculitis developing hours after antigen exposure",
+    "An immediate IgE-mediated collapse",
+    "A chronic granuloma after BCG vaccination",
+    "A transient wheal after stroking normal skin"
    ],
    "answer": 0,
    "explain": "In an Arthus reaction (localized Type III hypersensitivity), injected antigen diffuses into dermal vessel walls where high levels of pre-existing circulating IgG precipitate with the antigen in situ, triggering local complement activation, neutrophil vasculitis, oedema, and haemorrhage peaking at 4–8 hours.",
@@ -564,10 +564,10 @@
    "sub": "Type IV Hypersensitivity: Delayed-Type and T-Cell Cytotoxicity",
    "q": "How do low-molecular-weight chemicals such as nickel in jewellery or urushiol in poison ivy elicit Type IV allergic contact dermatitis?",
    "options": [
-    "They act as haptens that penetrate the epidermis, covalently bind self cutaneous proteins to form neoantigens, and are presented by Langerhans cells to sensitize T cells",
-    "They act as superantigens that cross-link all circulating IgE molecules on dermal mast cells",
-    "They directly lyse epidermal melanocytes via complement Membrane Attack Complexes",
-    "They precipitate as insoluble crystals inside renal proximal tubules"
+    "They act as haptens, binding skin proteins that are presented to T cells by Langerhans cells",
+    "They cross-link IgE on dermal mast cells as superantigens",
+    "They lyse melanocytes through complement MAC",
+    "They precipitate in renal tubules"
    ],
    "answer": 0,
    "explain": "Lipophilic small molecules (<1000 Da) are incomplete antigens (haptens) that conjugate with epidermal proteins; epidermal Langerhans dendritic cells process these hapten-carrier complexes and migrate to regional lymph nodes to prime CD4+ and CD8+ T cells.",
@@ -587,10 +587,10 @@
    "sub": "Type IV Hypersensitivity: Delayed-Type and T-Cell Cytotoxicity",
    "q": "By which two direct molecular mechanisms do sensitized CD8+ cytotoxic T lymphocytes (CTLs) kill target cells in Type IVb/T-cell-mediated cytotoxicity (such as viral hepatitis, acute allograft rejection, and Stevens-Johnson syndrome)?",
    "options": [
-    "Exocytosis of perforin and granzymes, and engagement of target-cell Fas (CD95) by CTL Fas ligand (FasL) to activate caspases",
-    "Secretion of pentameric IgM and classical C1q complement fixation",
-    "Release of histamine and cysteinyl leukotrienes from cytoplasmic granules",
-    "Phagocytosis of whole target cells via complement receptor CR1"
+    "Perforin/granzyme release and Fas-FasL signalling trigger target-cell apoptosis",
+    "IgM secretion and classical complement activation",
+    "Histamine and leukotriene release from mast cells",
+    "Phagocytosis through complement receptor CR1"
    ],
    "answer": 0,
    "explain": "CD8+ CTLs induce target-cell apoptosis either by releasing perforin (forming pores in the target membrane) and granzymes (serine proteases that cleave procaspases and Bid) or by cross-linking Fas (CD95) on target cells with FasL.",
@@ -703,10 +703,10 @@
    "sub": "Diagnostic Testing in Allergy and Hypersensitivity",
    "q": "Why must oral H1 antihistamines be discontinued 3 to 7 days before performing allergy skin prick testing, whereas serum allergen-specific IgE immunoassay testing does not require stopping antihistamines?",
    "options": [
-    "Antihistamines block cutaneous H1 responses and can suppress the wheal-and-flare reaction; serum IgE assays are performed in vitro",
-    "Antihistamines destroy circulating IgE and invalidate serum assays",
-    "Antihistamines cause anaphylaxis whenever the skin is pricked",
-    "Serum specific-IgE tests measure eosinophil counts rather than antibodies"
+    "They suppress the skin H1-mediated wheal-and-flare response; serum IgE assays are performed in vitro",
+    "They destroy circulating IgE and invalidate serum assays",
+    "They cause anaphylaxis during skin testing",
+    "Serum specific-IgE tests measure eosinophils, not antibodies"
    ],
    "answer": 0,
    "explain": "H1 receptor antagonists blunt the vascular wheal-and-flare response to both allergen and the positive histamine control in vivo, whereas in vitro immunoassays (ImmunoCAP/RAST) quantify free serum allergen-specific IgE unaffected by antihistamines or widespread eczema.",
@@ -749,10 +749,10 @@
    "sub": "Diagnostic Testing in Allergy and Hypersensitivity",
    "q": "How does the Direct Antiglobulin Test (Direct Coombs Test) differ from the Indirect Antiglobulin Test in diagnosing Type II immune haemolytic reactions?",
    "options": [
-    "The direct test detects IgG or C3 already bound in vivo to the patient's washed erythrocytes, whereas the indirect test detects unbound anti-erythrocyte antibodies free in the patient's serum",
-    "The direct test measures serum IgE against pollen, whereas the indirect test measures urinary histamine",
-    "The direct test is performed on urine sediment, whereas the indirect test is performed on cerebrospinal fluid",
-    "The direct test detects T-cell proliferation, whereas the indirect test detects C1-inhibitor levels"
+    "Direct Coombs detects IgG/C3 on red cells in vivo; indirect Coombs detects free serum antibodies",
+    "Direct Coombs measures serum IgE; indirect Coombs measures urinary histamine",
+    "Direct Coombs uses urine; indirect Coombs uses CSF",
+    "Direct Coombs detects T-cell proliferation; indirect Coombs measures C1 inhibitor"
    ],
    "answer": 0,
    "explain": "In the direct Coombs test, anti-human globulin (Coombs reagent) directly agglutinates patient red cells already coated with IgG or C3d in vivo (e.g., autoimmune haemolytic anaemia, haemolytic disease of the newborn); the indirect test incubates patient serum with reagent red cells first to screen for free alloantibodies.",
@@ -772,10 +772,10 @@
    "sub": "Integrated Clinical Hypersensitivity Scenarios",
    "q": "A 38-year-old pigeon breeder presents with recurrent episodes of fever, dry cough, dyspnoea, and bibasilar crackles occurring 6 hours after cleaning his bird loft. Chest CT shows centrilobular ground-glass nodules, and serum contains high-titre IgG precipitins against avian proteins. Which hypersensitivity mechanisms underlie hypersensitivity pneumonitis (extrinsic allergic alveolitis)?",
    "options": [
-    "Combined Type III immune-complex reaction (in acute episodes) and Type IV T-cell-mediated granulomatous inflammation (in chronic disease)",
-    "Pure Type I IgE-mediated mast cell degranulation identical to seasonal hay fever",
-    "Type II anti-glomerular basement membrane autoantibodies",
-    "Acquired deficiency of complement component C9"
+    "Acute disease involves type III immune complexes; chronic disease involves type IV T-cell granulomatous inflammation",
+    "Pure type I IgE-mediated mast-cell degranulation",
+    "Type II anti-GBM autoantibodies",
+    "Acquired C9 deficiency"
    ],
    "answer": 0,
    "explain": "Hypersensitivity pneumonitis (such as farmer's lung or bird fancier's lung) is driven acutely by inhaled organic dust forming local IgG immune complexes in alveolar walls (Type III, peaking 4–8 hours post-exposure) and chronically by CD4+ Th1/Th17 non-caseating granulomatous inflammation (Type IV).",
