@@ -413,3 +413,7 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 [hidden]{display:none!important}
 
 .nugget{margin:6px 0 0;padding:12px 14px;border-left:4px solid var(--accent);background:var(--surface);border-radius:8px;color:var(--fg);font-size:15px}
+
+.spin{display:inline-block;width:14px;height:14px;border:2.5px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:dx-sp .8s linear infinite;vertical-align:-2px;margin-right:8px}
+@keyframes dx-sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none;border-top-color:var(--line);border-style:dotted}}
