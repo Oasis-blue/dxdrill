@@ -1,7 +1,7 @@
 /* Optional Wikimedia-powered learning media. Never required by the question engine. */
 (function () {
   var DX = window.DX, esc = DX.esc;
-  /* v2 deliberately bypasses older generic-search cache entries. */
+  /* v3 bypasses older, poorly ranked search results. */
   var PREFIX = "dx.media.v3.", TTL = 7 * 24 * 60 * 60 * 1000;
 
   function cached(key) {
