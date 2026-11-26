@@ -159,9 +159,9 @@
       app.innerHTML = '<div class="wrap stack"><h1>Coming soon</h1><p class="lede">This is not open yet. Check back soon.</p><a class="btn primary" href="#home" style="text-decoration:none">Back home</a></div>';
       navVisibility(); return;
     }
-    if (DX.loadingQuestions && DATA_PAGES[h]) {
+    if ((h === "practice" && !DX.questionsReady) || (h !== "practice" && DX.loadingQuestions && DATA_PAGES[h])) {
       current = null;
-      app.innerHTML = '<div class="wrap stack"><p class="lede" role="status"><i class="spin"></i>Loading the question bank…</p><p class="muted">The homepage is ready. This activity will open as soon as its questions finish loading.</p></div>';
+      app.innerHTML = '<div class="wrap stack"><p class="lede" role="status"><i class="spin"></i>Loading the question bank…</p><p class="muted">The homepage is ready. higher-priority question files are still arriving. Practice will open as soon as the first usable questions are ready.</p></div>';
       return;
     }
     navVisibility();
@@ -256,6 +256,14 @@
     var b = document.getElementById("ld-retry"); if (b) b.onclick = function () { location.reload(); };
   }
   setTimeout(function () { if (!loaded) retryBox("Still loading…", "Your connection looks slow. Wait a little longer, or tap Try again. Nothing has been lost: your scores are saved on this phone."); }, 9000);
+  DX.onQuestionsReady = function () {
+    var h = (location.hash || "#home").slice(1);
+    if (h === "practice") route();
+  };
+  DX.onQuestionsProgress = function () {
+    var h = (location.hash || "#home").slice(1);
+    if (h === "practice" && DX.practice && DX.practice.isRunning && !DX.practice.isRunning()) route();
+  };
   DX.load().then(function () {
     loaded = true; clearInterval(nTimer);
     if (DX.partial && DX.toast) DX.toast("You can keep exploring while we finish.", "loading");
@@ -263,7 +271,7 @@
       if (DX.toast) DX.toast("All questions have loaded successfully.", "success");
       var h = (location.hash || "#home").slice(1);
       if (h === "home" || h === "") route();
-      else if (DATA_PAGES[h]) { if (h === "practice" && DX.practice && DX.practice.reset) DX.practice.reset(); route(); }
+      else if (DATA_PAGES[h]) route();
     };
     /* Pages that need the account check wait for it; everything else shows at once. */
     var CLOUDY = { screen: 1, remote: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
