@@ -610,6 +610,31 @@
           "three Na+ out, two K+ in"
         ]
       }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-027",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Nernst Equation and Ion Equilibrium",
+      "q": "At 37 °C, intracellular Ca²⁺ concentration is 0.0001 mmol/L and extracellular Ca²⁺ concentration is 2 mmol/L. Using the Nernst equation, what is the approximate equilibrium potential for Ca²⁺?",
+      "options": [
+        "+31 mV",
+        "+61 mV",
+        "+131 mV",
+        "+262 mV"
+      ],
+      "answer": 2,
+      "explain": "For a divalent cation, ECa = (61.5 mV/2) × log10([Ca²⁺]outside/[Ca²⁺]inside). The concentration ratio is 2/0.0001 = 20,000; log10(20,000) ≈ 4.30. Thus ECa ≈ 30.75 × 4.30 ≈ +132 mV, closest to +131 mV. The valence z = 2 must be included; omitting it doubles the calculated potential.",
+      "verified": false,
+      "open": {
+        "q": "Calculate the approximate calcium equilibrium potential at 37 °C when [Ca²⁺]outside = 2 mmol/L and [Ca²⁺]inside = 0.0001 mmol/L. Show the Nernst equation and include the ion valence.",
+        "accept": [
+          "approximately +131 mV",
+          "about +132 mV",
+          "30.75 log10(20000)",
+          "+132"
+        ]
+      }
     }
   ]
 }
