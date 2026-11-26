@@ -18,6 +18,13 @@ ul.res li{display:flex;justify-content:space-between;gap:10px;align-items:baseli
 .ok{color:var(--good);font-weight:700}.slow{color:var(--warn);font-weight:700}.bad{color:var(--bad);font-weight:700}
 ol{margin:6px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 textarea{width:100%;min-height:110px;font:13px/1.4 ui-monospace,monospace;padding:10px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg)}
+
+.spin{display:inline-block;width:14px;height:14px;border:2.5px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.bar{height:6px;border-radius:99px;background:var(--line);overflow:hidden;margin:4px 0 10px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .4s ease}
+.wait{color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.spin{animation:none;border-top-color:var(--line);border-style:dotted}.bar i{transition:none}}
 </style></head><body><main>
 <p><a href="./">&larr; Back to DxDrill</a></p>
 <h1>Trouble loading DxDrill?</h1>
@@ -26,6 +33,7 @@ textarea{width:100%;min-height:110px;font:13px/1.4 ui-monospace,monospace;paddin
 
 <section class="card" id="out" hidden aria-live="polite">
   <h2>What I found</h2>
+  <div class="bar" aria-hidden="true"><i id="barfill"></i></div>
   <ul class="res" id="res"></ul>
   <p id="verdict" style="margin-top:12px"></p>
 </section>
@@ -61,33 +69,40 @@ textarea{width:100%;min-height:110px;font:13px/1.4 ui-monospace,monospace;paddin
       clearTimeout(timer); return { ok: r.ok || r.status === 401, ms: Date.now() - t0, status: r.status, r: r };
     }).catch(function (e) { clearTimeout(timer); return { ok: false, ms: Date.now() - t0, timeout: e && e.name === "AbortError" }; });
   }
-  function show(label, state, text) {
-    var li = document.createElement("li"); li.innerHTML = "<span></span><span class='" + state + "'></span>";
-    li.children[0].textContent = label; li.children[1].textContent = text; res.appendChild(li);
-    lines.push(label + ": " + text);
+  var rows = {};
+  function pend(key, label) {
+    var li = document.createElement("li"); li.innerHTML = "<span></span><span class='wait'><i class='spin'></i>checking</span>";
+    li.children[0].textContent = label; res.appendChild(li); rows[key] = { li: li, label: label };
+  }
+  function show(key, state, text) {
+    var r = rows[key]; r.li.children[1].className = state; r.li.children[1].textContent = text; lines.push(r.label + ": " + text);
+    var done = 0, n = 0; for (var k in rows) { n++; if (rows[k].li.children[1].className !== "wait") done++; }
+    document.getElementById("barfill").style.width = Math.round(100 * done / n) + "%";
   }
   function grade(r) { return !r.ok ? "bad" : r.ms > 4000 ? "slow" : "ok"; }
   function word(r, okText) { return !r.ok ? (r.timeout ? "no answer (15 s)" : "could not connect") : r.ms > 4000 ? "slow (" + Math.round(r.ms / 100) / 10 + " s)" : okText; }
 
   document.getElementById("go").onclick = function () {
-    res.innerHTML = ""; lines = []; out.hidden = false; verdict.textContent = "Checking…"; document.getElementById("rep").hidden = true;
+    res.innerHTML = ""; rows = {}; lines = []; out.hidden = false; document.getElementById("barfill").style.width = "0%"; verdict.className = "wait"; verdict.innerHTML = "<i class='spin'></i>Checking. This takes up to 20 seconds, please wait.";
+    pend("net", "Your phone says it is online"); pend("app", "DxDrill app files (GitHub)"); pend("qs", "Question files"); pend("acc", "Accounts and leaderboards"); document.getElementById("rep").hidden = true;
     var online = navigator.onLine !== false;
-    show("Your phone says it is online", online ? "ok" : "bad", online ? "yes" : "no. Turn on Wi-Fi or mobile data.");
+    show("net", online ? "ok" : "bad", online ? "yes" : "no. Turn on Wi-Fi or mobile data.");
     var app, qs = { total: 0, got: 0, slow: 0 }, supa;
     timed("data/manifest.json").then(function (r) {
-      app = r; show("DxDrill app files (GitHub)", grade(r), word(r, "OK"));
+      app = r; show("app", grade(r), word(r, "OK"));
       if (!r.ok) return null; return r.r.json().catch(function () { return null; });
     }).then(function (man) {
       var files = man && man.questions ? man.questions.map(function (f) { return "data/questions/" + f + ".json"; }) : [];
       qs.total = files.length; var i = 0;
       return Promise.all(new Array(Math.min(6, files.length)).fill(0).map(function () {
-        return (function nx() { if (i >= files.length) return Promise.resolve(); return timed(files[i++]).then(function (r) { if (r.ok) qs.got++; if (r.ms > 4000) qs.slow++; return nx(); }); })();
+        return (function nx() { if (i >= files.length) return Promise.resolve(); return timed(files[i++]).then(function (r) { if (r.ok) qs.got++; if (r.ms > 4000) qs.slow++; var c = rows.qs.li.children[1]; if (c.className === "wait") c.innerHTML = "<i class='spin'></i>" + (qs.got) + " of " + qs.total; return nx(); }); })();
       }));
     }).then(function () {
-      if (qs.total) show("Question files", qs.got === qs.total ? (qs.slow ? "slow" : "ok") : "bad", qs.got + " of " + qs.total + " loaded" + (qs.slow ? " (" + qs.slow + " slowly)" : ""));
+      if (qs.total) show("qs", qs.got === qs.total ? (qs.slow ? "slow" : "ok") : "bad", qs.got + " of " + qs.total + " loaded" + (qs.slow ? " (" + qs.slow + " slowly)" : ""));
       return timed(SUPA, true);
     }).then(function (r) {
-      supa = r; show("Accounts and leaderboards", grade(r), word(r, "OK"));
+      supa = r; show("acc", grade(r), word(r, "OK"));
+      verdict.className = "";
       var good = app && app.ok && qs.got === qs.total && qs.total > 0;
       if (!online) verdict.textContent = "Your phone is offline. Turn on Wi-Fi or mobile data and run the check again.";
       else if (good && supa.ok) verdict.textContent = (qs.slow || app.ms > 4000 || supa.ms > 4000) ? "Everything can be reached, but your connection is slow. DxDrill will open, just give it a little longer. If it still shows \"Loading\", clear the saved copy below and try again." : "Everything is reachable. If DxDrill still will not open, tap \"Clear DxDrill's saved copy\" below, then open it again.";
