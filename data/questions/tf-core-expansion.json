@@ -207,14 +207,12 @@
           "explain": "During this period, another action potential cannot be initiated regardless of stimulus strength because many sodium channels have not recovered."
         }
       ],
-      "verified": false,
-      "reviewStatus": "draft-unverified",
+      "verified": true,
+      "reviewStatus": "verified",
       "references": [
-        "https://www.ncbi.nlm.nih.gov/sites/books/NBK538211/",
-        "https://www.ncbi.nlm.nih.gov/sites/books/NBK538338/",
-        "https://www.ncbi.nlm.nih.gov/books/NBK538143/"
-      ],
-      "referenceScope": "topic-level supporting references; individual claims still require review"
+        "https://www.ncbi.nlm.nih.gov/books/NBK538211/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538338/"
+      ]
     },
     {
       "id": "tf-phys-muscle-001",
@@ -647,13 +645,12 @@
           "explain": "Median nerve injury at the wrist may weaken thenar function and produce difficulty opposing the thumb."
         }
       ],
-      "verified": false,
-      "reviewStatus": "draft-unverified",
+      "verified": true,
+      "reviewStatus": "verified",
       "references": [
         "https://www.ncbi.nlm.nih.gov/books/NBK531473/",
-        "https://www.ncbi.nlm.nih.gov/sites/books/NBK526056/"
-      ],
-      "referenceScope": "topic-level supporting references; individual claims still require review"
+        "https://www.ncbi.nlm.nih.gov/books/NBK526056/"
+      ]
     },
     {
       "id": "tf-gr-upper-limb-007",
@@ -3538,6 +3535,150 @@
       ],
       "verified": true,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pas-cns-001",
+      "type": "tf",
+      "topic": "pas-central-nervous-system",
+      "level": 2,
+      "sub": "Ischaemic stroke pathology",
+      "q": "About the tissue changes in acute ischaemic stroke:",
+      "items": [
+        {
+          "text": "An arterial occlusion can produce an ischaemic core surrounded by potentially salvageable penumbral tissue.",
+          "answer": true,
+          "explain": "Blood flow is most severely reduced in the core; surrounding tissue may be dysfunctional but viable for a limited period."
+        },
+        {
+          "text": "ATP depletion during cerebral ischaemia impairs membrane ion pumps.",
+          "answer": true,
+          "explain": "Failure of energy-dependent ion transport causes depolarisation and contributes to cellular swelling."
+        },
+        {
+          "text": "Excessive glutamate release and calcium influx contribute to ischaemic neuronal injury.",
+          "answer": true,
+          "explain": "Excitotoxic signalling and intracellular calcium overload promote oxidative stress and cell-death pathways."
+        },
+        {
+          "text": "The ischaemic penumbra is already irreversibly necrotic in every patient at the moment symptoms begin.",
+          "answer": false,
+          "explain": "The penumbra is potentially salvageable tissue; its survival depends on residual perfusion, collateral flow and time."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK535369/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK499997/"
+      ]
+    },
+    {
+      "id": "tf-pas-respiratory-001",
+      "type": "tf",
+      "topic": "pas-respiratory-system",
+      "level": 2,
+      "sub": "COPD pathology",
+      "q": "About the pathological changes in chronic obstructive pulmonary disease:",
+      "items": [
+        {
+          "text": "Emphysema involves permanent enlargement of airspaces distal to terminal bronchioles with destruction of their walls.",
+          "answer": true,
+          "explain": "Loss of alveolar septa reduces elastic recoil and contributes to airflow limitation."
+        },
+        {
+          "text": "Chronic bronchitis is associated with increased mucus production and enlargement of bronchial submucosal glands.",
+          "answer": true,
+          "explain": "Goblet-cell metaplasia and submucosal gland hypertrophy contribute to mucus hypersecretion."
+        },
+        {
+          "text": "Alpha-1 antitrypsin deficiency is associated particularly with panacinar emphysema.",
+          "answer": true,
+          "explain": "Reduced antiprotease protection permits elastase-mediated alveolar destruction, classically with lower-lobe predominance."
+        },
+        {
+          "text": "Digital clubbing is a typical defining physical sign of uncomplicated COPD.",
+          "answer": false,
+          "explain": "Clubbing is not typical of COPD; its presence should prompt assessment for another condition such as lung cancer or bronchiectasis."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK559281/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK621652/"
+      ]
+    },
+    {
+      "id": "tf-pas-urinary-001",
+      "type": "tf",
+      "topic": "pas-urinary-system",
+      "level": 2,
+      "sub": "Obstructive uropathy",
+      "q": "About the pathological consequences of urinary tract obstruction:",
+      "items": [
+        {
+          "text": "Urinary obstruction can cause back-pressure dilatation of the renal pelvis and calyces.",
+          "answer": true,
+          "explain": "Hydronephrosis describes dilatation of the renal collecting system due to impaired urine drainage."
+        },
+        {
+          "text": "Persistent obstruction can cause tubular atrophy and loss of functioning nephrons.",
+          "answer": true,
+          "explain": "Sustained increased intrarenal pressure and associated injury can produce progressive parenchymal damage."
+        },
+        {
+          "text": "Benign prostatic hyperplasia is one possible cause of lower urinary tract obstruction.",
+          "answer": true,
+          "explain": "Prostatic enlargement can impede bladder outflow, particularly in older men."
+        },
+        {
+          "text": "Relief of a longstanding complete obstruction always restores renal function fully.",
+          "answer": false,
+          "explain": "Recovery depends on duration, severity and underlying damage; prolonged obstruction may leave irreversible renal impairment."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558921/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK563217/"
+      ]
+    },
+    {
+      "id": "tf-ps-cardiovascular-002",
+      "type": "tf",
+      "topic": "ps-drugs-acting-on-the-cardiovascular-system",
+      "level": 2,
+      "sub": "Calcium channel blockers",
+      "q": "About calcium channel blockers used in cardiovascular disease:",
+      "items": [
+        {
+          "text": "Calcium channel blockers inhibit L-type voltage-gated calcium channels.",
+          "answer": true,
+          "explain": "These drugs reduce calcium entry through L-type channels in vascular smooth muscle and, to varying degrees, cardiac tissue."
+        },
+        {
+          "text": "Dihydropyridines such as amlodipine act predominantly as peripheral arteriolar vasodilators at usual doses.",
+          "answer": true,
+          "explain": "Their vascular selectivity reduces systemic vascular resistance and blood pressure."
+        },
+        {
+          "text": "Verapamil and diltiazem can slow atrioventricular nodal conduction.",
+          "answer": true,
+          "explain": "Non-dihydropyridines have clinically important effects on SA/AV nodal activity and cardiac contractility."
+        },
+        {
+          "text": "Verapamil commonly causes diarrhoea rather than constipation.",
+          "answer": false,
+          "explain": "Constipation is a recognised adverse effect of verapamil; diarrhoea is not its characteristic gastrointestinal effect."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK482473/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK554579/"
+      ]
     }
   ]
 }
