@@ -123,13 +123,13 @@
    "sub": "Respiratory Pressures and Boyle's Law",
    "q": "How do alveolar pressure (PA) and airflow behave at the exact midpoints of inspiration and expiration versus the end-inspiratory and end-expiratory pauses?",
    "options": [
-    "Mid-inspiration: PA is ~-1 cmH2O (air flows in); Mid-expiration: PA is ~+1 cmH2O (air flows out); End-inspiration and end-expiration (FRC): PA equals 0 cmH2O (no airflow)",
-    "Mid-inspiration: PA is +10 cmH2O; Mid-expiration: PA is -10 cmH2O",
-    "Alveolar pressure stays at -5 cmH2O throughout the entire respiratory cycle",
-    "Airflow is fastest at end-inspiration when alveolar pressure is zero"
+    "Mid-inspiration: PA ≈ −1; mid-expiration: +1; pauses: 0 cmH2O",
+    "Mid-inspiration: PA ≈ +1; mid-expiration: −1; pauses: 0 cmH2O",
+    "PA remains −5 cmH2O throughout inspiration and expiration",
+    "Airflow is maximal at pauses when PA equals atmospheric pressure"
    ],
    "answer": 0,
-   "explain": "By Boyle's law (P1V1 = P2V2), thoracic expansion drops PA to ~-1 cmH2O to draw air in; once flow ceases at end-inspiration and end-expiration, PA equilibrates with atmospheric pressure (0 cmH2O).",
+   "explain": "By Boyle's law (P1V1 = P2V2), thoracic expansion drops PA to ~-1 cmH2O to draw air in; once flow ceases at end-inspiration and end-expiration, PA equilibrates with atmospheric pressure (0 cmH2O). During inspiration, thoracic expansion lowers alveolar pressure to about −1 cmH2O and draws air inward. During expiration, PA rises to about +1 cmH2O and drives air outward. At end-inspiration and end-expiration, PA returns to atmospheric pressure (0) and airflow stops.",
    "verified": false,
    "open": {
     "q": "State the alveolar pressure (relative to atmospheric pressure) during mid-inspiration, end-inspiration, and mid-expiration.",
@@ -146,13 +146,13 @@
    "sub": "Respiratory Pressures and Boyle's Law",
    "q": "How is 'transpulmonary pressure' (PTP) defined, and what physiological role does it serve?",
    "options": [
-    "PTP = Alveolar pressure minus Intrapleural pressure (PA - Ppl); it is the distending pressure across the lung wall that keeps alveoli open against elastic recoil",
-    "PTP = Intrapleural pressure minus Atmospheric pressure",
-    "PTP = Arterial PO2 minus Venous PO2",
-    "PTP = Tidal volume divided by respiratory rate"
+    "PTP = PA − Ppl; the distending pressure that keeps alveoli open",
+    "PTP = Ppl − PA; the pressure that collapses alveoli",
+    "PTP = arterial PO2 − venous PO2; the pressure driving diffusion",
+    "PTP = tidal volume ÷ respiratory rate; the pressure driving ventilation"
    ],
    "answer": 0,
-   "explain": "At FRC, PA = 0 cmH2O and Ppl = -5 cmH2O, so PTP = 0 - (-5) = +5 cmH2O; during quiet inspiration, PTP rises to +8 cmH2O to expand the alveoli.",
+   "explain": "At FRC, PA = 0 cmH2O and Ppl = -5 cmH2O, so PTP = 0 - (-5) = +5 cmH2O; during quiet inspiration, PTP rises to +8 cmH2O to expand the alveoli. Transpulmonary pressure is alveolar pressure minus intrapleural pressure. At FRC, PA is about 0 and Ppl about −5 cmH2O, giving a PTP of +5 cmH2O; this distending pressure opposes elastic recoil.",
    "verified": false,
    "open": {
     "q": "Write the formula for transpulmonary pressure and calculate its value at functional residual capacity when alveolar pressure is 0 cmH2O and intrapleural pressure is -5 cmH2O.",
@@ -307,13 +307,13 @@
    "sub": "Alveolar Surface Tension, Laplace's Law, and Surfactant",
    "q": "How does pulmonary surfactant prevent pulmonary edema (keep alveoli dry)?",
    "options": [
-    "By lowering alveolar surface tension, surfactant reduces the inward hydrostatic suction force that would otherwise draw fluid from pulmonary capillaries into the alveolar lumen",
-    "By actively pumping Na+ and water into the pulmonary artery",
-    "By sealing all capillary endothelial junctions completely",
-    "By increasing pulmonary venous pressure to 40 mmHg"
+    "Surfactant lowers surface tension, reducing inward suction that draws fluid into alveoli",
+    "Surfactant raises surface tension, preventing fluid entry by increasing alveolar pressure",
+    "Surfactant closes pulmonary capillary junctions to stop filtration",
+    "Surfactant increases pulmonary venous pressure to oppose oedema"
    ],
    "answer": 0,
-   "explain": "High unopposed surface tension creates negative interstitial/alveolar hydrostatic pressure pulling plasma transudate across the alveolar-capillary barrier (forming hyaline membranes in neonatal RDS).",
+   "explain": "High unopposed surface tension creates negative interstitial/alveolar hydrostatic pressure pulling plasma transudate across the alveolar-capillary barrier (forming hyaline membranes in neonatal RDS). High unopposed alveolar surface tension creates an inward suction force and lowers interstitial/alveolar hydrostatic pressure, favouring fluid movement from pulmonary capillaries into alveoli. Surfactant reduces this surface tension.",
    "verified": false,
    "open": {
     "q": "Explain how surfactant deficiency promotes fluid transudation into alveoli.",
@@ -353,13 +353,13 @@
    "sub": "Airway Resistance and Poiseuille's Law",
    "q": "Which anatomical region of the tracheobronchial tree contributes the GREATEST fraction of total airway resistance in a healthy human lung, and why?",
    "options": [
-    "Terminal and respiratory bronchioles (<2 mm diameter), because each individual bronchiole is tiny",
-    "Medium-sized segmental and lobar bronchi (generations 3 to 7), because although individual peripheral bronchioles are narrower, they are arranged in massive parallel networks with huge total cross-sectional area",
-    "Alveolar ducts and alveolar sacs",
-    "The nasal cavity has zero resistance"
+    "Terminal bronchioles, because their small individual diameter dominates total resistance",
+    "Medium-sized segmental and lobar bronchi (generations 3–7)",
+    "Alveolar ducts, because their walls contain smooth muscle",
+    "The trachea alone, because it has the narrowest lumen"
    ],
    "answer": 1,
-   "explain": "Because resistances in parallel add reciprocally (1/R_total = 1/R1 + 1/R2 + ...), the millions of small peripheral airways (<2 mm, the 'silent zone') contribute <10-20% of total resistance, while medium bronchi (~generations 4-7) represent the bottleneck.",
+   "explain": "Because resistances in parallel add reciprocally (1/R_total = 1/R1 + 1/R2 + ...), the millions of small peripheral airways (<2 mm, the 'silent zone') contribute <10-20% of total resistance, while medium bronchi (~generations 4-7) represent the bottleneck. Although individual peripheral bronchioles are narrow, they are arranged in millions of parallel pathways with a very large total cross-sectional area. Their combined resistance is therefore low; medium-sized bronchi are the main contributors to total airway resistance in healthy lungs.",
    "verified": false,
    "open": {
     "q": "Why do small peripheral airways (<2 mm diameter) contribute relatively little to total airway resistance in healthy lungs despite their narrow individual diameters?",
@@ -399,13 +399,13 @@
    "sub": "Dynamic Airway Compression and Equal Pressure Point",
    "q": "What is 'dynamic airway compression' during a forced expiration, and what is the 'equal pressure point' (EPP)?",
    "options": [
-    "During forced expiration, intraluminal pressure falls along the airway; beyond the equal-pressure point, positive pleural pressure compresses collapsible airways",
-    "Dynamic compression occurs during quiet inspiration when pleural pressure becomes strongly positive",
-    "The equal-pressure point is where alveolar oxygen equals venous carbon dioxide",
-    "Cartilage prevents compression of all airways, including small bronchioles"
+    "Beyond the EPP, intrapleural pressure exceeds airway pressure and compresses non-cartilaginous airways",
+    "Beyond the EPP, airway pressure exceeds intrapleural pressure and dilates all airways",
+    "Dynamic compression occurs only during quiet inspiration",
+    "The EPP is the point where alveolar and arterial oxygen tensions become equal"
    ],
    "answer": 0,
-   "explain": "As air flows from alveoli toward the mouth during forced expiration, resistive pressure drops along the airway; once intraluminal pressure falls below surrounding positive intrapleural pressure, non-cartilaginous airways compress, limiting maximal flow regardless of greater expiratory effort.",
+   "explain": "As air flows from alveoli toward the mouth during forced expiration, resistive pressure drops along the airway; once intraluminal pressure falls below surrounding positive intrapleural pressure, non-cartilaginous airways compress, limiting maximal flow regardless of greater expiratory effort. During forced expiration, intraluminal pressure falls along the airway as gas flows toward the mouth. At the equal-pressure point it equals intrapleural pressure; downstream, surrounding pleural pressure can compress collapsible, non-cartilaginous airways and limit flow.",
    "verified": false,
    "open": {
     "q": "Define the 'equal pressure point' during forced expiration and explain why expiratory flow becomes effort-independent over the lower two-thirds of vital capacity.",
@@ -445,13 +445,13 @@
    "sub": "Work of Breathing and Closing Capacity",
    "q": "What are the two major components of the mechanical work of breathing during quiet respiration, and what percentage of total resting body oxygen consumption does quiet breathing normally require?",
    "options": [
-    "Elastic work (overcoming lung/chest wall elastic recoil and surface tension, ~65%) and resistive work (overcoming airway resistance and tissue viscosity, ~35%); normally consumes only ~1-3% of total resting VO2",
-    "Elastic work accounts for 1% and resting breathing consumes 40% of total body VO2",
-    "Work of breathing consists solely of cardiac output",
-    "Quiet breathing consumes zero ATP"
+    "Elastic and resistive work; quiet breathing uses about 1–3% of resting VO2",
+    "Elastic and resistive work; quiet breathing uses about 25–30% of resting VO2",
+    "Only resistive work; quiet breathing uses about 10% of resting VO2",
+    "Only elastic work; quiet breathing uses no oxygen"
    ],
    "answer": 0,
-   "explain": "Normally breathing is remarkably energy-efficient (~1-3% of resting O2 uptake), but in severe COPD or restrictive fibrosis, work of breathing can rise to >25-30% of total O2 consumption, precipitating ventilatory muscle fatigue.",
+   "explain": "Normally breathing is remarkably energy-efficient (~1-3% of resting O2 uptake), but in severe COPD or restrictive fibrosis, work of breathing can rise to >25-30% of total O2 consumption, precipitating ventilatory muscle fatigue. Elastic work overcomes lung/chest-wall recoil and surface tension; resistive work overcomes airway resistance and tissue viscosity. Quiet breathing normally consumes only about 1–3% of resting oxygen uptake, but this can rise markedly in severe obstructive or restrictive disease.",
    "verified": false,
    "open": {
     "q": "Name the two main components of mechanical work during inspiration and state the approximate percentage of resting body oxygen uptake consumed by quiet breathing.",
@@ -514,13 +514,13 @@
    "sub": "Lung Volumes, Capacities, and Dead Space",
    "q": "Which of the four standard static lung volumes CANNOT be measured directly by simple spirometry, and how is it measured clinically?",
    "options": [
-    "Tidal volume (VT), measured by pulse oximetry",
-    "Inspiratory reserve volume (IRV), measured by capnography",
-    "Residual volume (RV, ~1,200 mL)—along with capacities containing RV (FRC and TLC)—which must be measured indirectly by helium dilution, nitrogen washout, or whole-body plethysmography",
-    "Expiratory reserve volume (ERV), measured by arterial blood gas"
+    "Tidal volume; measured by pulse oximetry",
+    "Inspiratory reserve volume; measured by capnography",
+    "Residual volume (and FRC/TLC) requires indirect measurement, e.g. plethysmography or gas dilution",
+    "Expiratory reserve volume; measured by arterial blood gas"
    ],
    "answer": 2,
-   "explain": "Because residual volume (~1.2 L) remains in the lungs even after maximal forced expiration, spirometry only measures exhaled/inhaled volume changes; body plethysmography (using Boyle's law) measures all thoracic gas including trapped bullous gas.",
+   "explain": "Because residual volume (~1.2 L) remains in the lungs even after maximal forced expiration, spirometry only measures exhaled/inhaled volume changes; body plethysmography (using Boyle's law) measures all thoracic gas including trapped bullous gas. Residual volume remains in the lungs after maximal expiration and cannot be measured by simple spirometry. Functional residual capacity and total lung capacity also contain RV and require indirect methods such as helium dilution, nitrogen washout or body plethysmography.",
    "verified": false,
    "open": {
     "q": "Name the lung volume and two lung capacities that cannot be measured by simple spirometry, and list two indirect methods used to measure them.",
@@ -537,13 +537,13 @@
    "sub": "Lung Volumes, Capacities, and Dead Space",
    "q": "How do 'anatomical dead space' and 'physiological dead space' differ in a healthy person versus a patient with pulmonary embolism?",
    "options": [
-    "Anatomical dead space is conducting airway volume; physiological dead space also includes ventilated but underperfused alveoli and rises in pulmonary embolism",
-    "Anatomical dead space is the volume of perfused alveoli; physiological dead space excludes alveolar dead space",
-    "Both terms describe the same volume in health and disease",
+    "Anatomical dead space is conducting airways; physiological dead space also includes ventilated but underperfused alveoli",
+    "Anatomical dead space is perfused alveoli; physiological dead space excludes alveolar dead space",
+    "Both terms describe the same volume in health and pulmonary embolism",
     "Pulmonary embolism increases anatomical dead space by collapsing the trachea"
    ],
    "answer": 0,
-   "explain": "Physiological dead space (VD) is calculated via the Bohr equation: VD / VT = (PaCO2 - PECO2) / PaCO2; pulmonary embolism blocks capillary perfusion to ventilated alveoli, creating large alveolar dead space.",
+   "explain": "Physiological dead space (VD) is calculated via the Bohr equation: VD / VT = (PaCO2 - PECO2) / PaCO2; pulmonary embolism blocks capillary perfusion to ventilated alveoli, creating large alveolar dead space. Physiological dead space equals anatomical dead space plus alveolar dead space. Pulmonary embolism blocks perfusion to ventilated alveoli, increasing alveolar dead space; the Bohr equation estimates the physiological dead-space fraction.",
    "verified": false,
    "open": {
     "q": "Define anatomical dead space and physiological dead space, and state the equation (Bohr's equation) used to calculate physiological dead space.",
