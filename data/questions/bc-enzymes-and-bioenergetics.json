@@ -842,26 +842,27 @@
       }
     },
     {
-      "id": "enzmeng-39",
       "type": "mcq",
       "level": 2,
-      "sub": "Enzyme inhibition",
-      "q": "A competitive inhibitor is added to an enzyme-catalysed reaction. Which kinetic change is expected?",
+      "sub": "Enzyme Kinetics",
+      "q": "An enzyme-catalysed reaction is measured at saturating substrate concentration. If the amount of active enzyme is doubled, what is expected, assuming other conditions remain constant?",
       "options": [
-        "Increased apparent Km with unchanged Vmax",
-        "Decreased Vmax with unchanged Km",
-        "Decreased Km and decreased Vmax",
-        "Increased Vmax with unchanged Km"
+        "Vmax doubles while Km remains unchanged",
+        "Km doubles while Vmax remains unchanged",
+        "Both Km and Vmax are halved",
+        "Neither Vmax nor Km changes"
       ],
       "answer": 0,
-      "explain": "A competitive inhibitor competes with substrate at the active site. Increasing substrate can overcome inhibition, so apparent Km rises while Vmax remains unchanged.",
+      "explain": "At saturating substrate concentration, reaction velocity is proportional to the amount of active enzyme. Doubling enzyme concentration therefore doubles Vmax. Km is an intrinsic kinetic parameter for the enzyme-substrate interaction under the stated conditions and is not changed simply by increasing enzyme concentration.",
       "verified": false,
       "open": {
-        "q": "What happens to apparent Km and Vmax during competitive inhibition?",
+        "q": "What happens to Vmax and Km when active enzyme concentration is doubled at saturating substrate concentration?",
         "accept": [
-          "Km increases while Vmax remains unchanged"
+          "Vmax doubles; Km remains unchanged",
+          "Maximum velocity doubles while Km stays the same"
         ]
-      }
+      },
+      "id": "enzmeng-39"
     },
     {
       "id": "enzmeng-40",
