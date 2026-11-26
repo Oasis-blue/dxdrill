@@ -145,7 +145,7 @@
       if (!T.run || T.run.done) { stopTimer(); return; }
       var left = Math.max(0, Math.ceil((T.run.deadline - Date.now()) / 1000));
       var node = document.getElementById("tfclock"); if (node) node.textContent = formatTime(left);
-      if (left <= 0) { T.run.expired = true; T.run.items.forEach(function (it) { if (!it.checked) it.checked = true; }); finish(); paint(); }
+      if (left <= 0) { T.run.expired = true; var current = T.run.items[T.run.i]; if (current && !current.checked) check(); T.run.items.forEach(function (it) { if (!it.checked) it.checked = true; }); finish(); paint(); }
     }, 500);
   }
   function stopTimer() { if (T.timer) { clearInterval(T.timer); T.timer = null; } }
