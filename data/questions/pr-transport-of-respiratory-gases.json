@@ -54,12 +54,12 @@
    "sub": "Alveolar-Capillary Diffusion and Fick's Law",
    "q": "According to Fick's law of diffusion (V_gas = [A x D x (P1 - P2)] / T), why does carbon dioxide diffuse across the alveolar-capillary membrane roughly 20 times faster than oxygen for a given partial pressure gradient?",
    "options": [
+    "CO2 has ~24-fold higher aqueous solubility than O2, raising its diffusion coefficient D despite slightly higher molecular weight",
     "CO2 has a much smaller molecular weight than O2",
-    "CO2 is roughly 24 times more soluble in aqueous membranes than O2 (diffusion coefficient D is proportional to solubility / square root of molecular weight)",
     "CO2 is actively pumped across Type I pneumocytes by ATPases",
     "The alveolar membrane is thinner for CO2 than for O2"
    ],
-   "answer": 1,
+   "answer": 0,
    "explain": "Although CO2 (MW 44) is slightly heavier than O2 (MW 32), its aqueous solubility is ~24-fold higher, giving a ~20-fold greater diffusion constant so CO2 transfer is rarely diffusion-limited.",
    "verified": false,
    "open": {
@@ -123,12 +123,12 @@
    "sub": "Oxygen Transport and Hemoglobin Binding",
    "q": "In healthy arterial blood (PaO2 = 100 mmHg, hemoglobin = 15 g/dL, SaO2 = 97.5%), what is the total arterial oxygen content (CaO2), and what percentages are carried bound to hemoglobin versus dissolved in plasma?",
    "options": [
-    "Total ~20 mL O2/dL blood: ~98.5% (19.7 mL/dL) bound to hemoglobin and ~1.5% (0.3 mL/dL) physically dissolved in plasma",
     "Total ~5 mL O2/dL blood: 50% dissolved and 50% bound to hemoglobin",
+    "Total ~20 mL O2/dL blood: ~98.5% (19.7 mL/dL) bound to hemoglobin and ~1.5% (0.3 mL/dL) physically dissolved in plasma",
     "Total ~50 mL O2/dL blood: 90% dissolved in plasma",
     "Total ~20 mL O2/dL blood: 100% physically dissolved in plasma"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Using CaO2 = (1.34 x Hb x SaO2) + (0.003 x PaO2): bound O2 = 1.34 x 15 x 0.975 = 19.6 mL/dL, while dissolved O2 = 0.003 x 100 = 0.3 mL/dL (total ~19.9-20.1 mL/dL).",
    "verified": false,
    "open": {
@@ -238,12 +238,12 @@
    "sub": "Bohr Effect, 2,3-BPG, and Curve Shifts",
    "q": "How does carbon monoxide (CO) affect BOTH arterial oxygen content and the position of the oxygen-hemoglobin dissociation curve?",
    "options": [
-    "CO binds hemoglobin with ~200-240 times greater affinity than O2 (reducing O2-carrying capacity) AND shifts the dissociation curve of the remaining heme sites sharply to the LEFT (hyperbolic shape), severely impairing O2 unloading in tissues while leaving dissolved PaO2 normal",
     "CO shifts the curve to the right and doubles PaO2",
     "CO increases both SaO2 and tissue O2 release",
+    "CO occupies heme sites with ~200-240x higher affinity than O2 and left-shifts the curve of remaining O2, impairing tissue unloading",
     "CO has lower affinity for hemoglobin than O2"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Binding of CO to one or two heme subunits locks the tetramer into the high-affinity R state, preventing the remaining O2 molecules from unloading in peripheral capillaries despite a normal dissolved PaO2 (~100 mmHg).",
    "verified": false,
    "open": {
@@ -445,7 +445,7 @@
    "sub": "Ventilation-Perfusion (V/Q) Matching and Shunt",
    "q": "How does calculating the alveolar-arterial (A-a) oxygen gradient help distinguish hypoxemia caused by pure hypoventilation (e.g., opioid overdose) from hypoxemia caused by V/Q mismatch, diffusion defect, or shunt?",
    "options": [
-    "Pure hypoventilation lowers PAO2 and PaO2 equally, leaving the A-a gradient NORMAL (<15 mmHg), whereas V/Q mismatch, diffusion impairment, and shunt impair gas transfer across the lung and produce an ELEVATED A-a gradient",
+    "Pure hypoventilation lowers PAO2 and PaO2 equally, leaving the A-a gradient NORMAL (<15 mmHg); V/Q mismatch, diffusion defects, and shunt impair transfer and raise the A-a gradient",
     "Pure hypoventilation produces an A-a gradient above 80 mmHg",
     "V/Q mismatch and shunt always have a normal A-a gradient of 5 mmHg",
     "The A-a gradient cannot be calculated from arterial blood gases"
@@ -468,7 +468,7 @@
    "sub": "Oxygen-Hemoglobin vs Myoglobin Dissociation Curves",
    "q": "How does the oxygen dissociation curve of skeletal/cardiac muscle myoglobin compare with that of adult hemoglobin, and what is myoglobin's physiological function?",
    "options": [
-    "Myoglobin has a hyperbolic curve positioned far to the LEFT (P50 ~2.5-5 mmHg) with no cooperativity (single subunit), allowing it to extract O2 from capillary hemoglobin and release O2 only when intracellular PO2 falls very low during intense muscle contraction",
+    "Myoglobin has a hyperbolic, left-shifted curve (P50 ~2.5-5 mmHg) without cooperativity, extracting O2 from capillary blood and releasing it only at very low intracellular PO2",
     "Myoglobin has a sigmoidal curve with P50 = 60 mmHg",
     "Myoglobin carries 80% of arterial oxygen in blood plasma",
     "Myoglobin exhibits stronger Bohr and 2,3-BPG shifts than hemoglobin"
@@ -583,12 +583,12 @@
    "sub": "Clinical Correlations",
    "q": "A 29-year-old fire victim rescued from a closed burning garage presents with headache, confusion, cherry-red mucous membranes, normal arterial PaO2 (98 mmHg) on standard blood gas, and elevated carboxyhemoglobin (34%) on co-oximetry. Why is 100% normobaric or hyperbaric oxygen administered immediately?",
    "options": [
-    "High inspired PO2 competes with CO for heme binding sites by mass action, reducing the elimination half-life of carboxyhemoglobin from ~4-5 hours on room air down to ~60-80 minutes on 100% O2 (and ~20-25 minutes in hyperbaric O2) while increasing physically dissolved plasma O2",
     "100% O2 oxidizes CO directly into bicarbonate inside plasma",
     "Hyperbaric oxygen converts carboxyhemoglobin into fetal hemoglobin",
+    "High inspired PO2 competitively displaces CO from heme (cutting carboxyhemoglobin half-life from ~4-5 h to ~60-80 min) while boosting dissolved O2",
     "High O2 inhibits carbonic anhydrase in the brain"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Standard pulse oximeters cannot distinguish oxyhemoglobin from carboxyhemoglobin (falsely reading ~98-100%); co-oximetry diagnoses CO poisoning, and high PO2 accelerates CO dissociation from hemoglobin and cytochrome c oxidase.",
    "verified": false,
    "open": {
@@ -675,7 +675,7 @@
    "sub": "Clinical Correlations",
    "q": "A 70-year-old man with idiopathic pulmonary fibrosis has a normal resting PaO2 (88 mmHg) at rest, but during a 6-minute walk test his pulse oximetry drops precipitously from 96% to 82%. Why does interstitial lung fibrosis cause severe exertional hypoxemia even when resting oxygenation is preserved?",
    "options": [
-    "Thickened alveolar-capillary membranes reduce diffusing capacity (DLCO); at rest, the 0.75-second capillary transit time is still long enough for O2 equilibration, whereas during exercise cardiac output rises and capillary transit time shortens to ~0.25 seconds, causing diffusion-limited hypoxemia",
+    "Thickened alveolar-capillary membranes reduce diffusing capacity; rest allows sufficient capillary transit time for O2 equilibration, but exercise shortens transit, unmasking diffusion limitation",
     "Exercise destroys red blood cell hemoglobin",
     "Pulmonary fibrosis increases lung compliance during walking",
     "Exercise lowers alveolar PO2 to 30 mmHg"
