@@ -2927,8 +2927,7 @@
         }
       ],
       "references": [
-        "https://www.ncbi.nlm.nih.gov/books/NBK507710/",
-        "https://www.ncbi.nlm.nih.gov/books/NBK557534/"
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7171462/"
       ],
       "verified": true,
       "reviewStatus": "verified"
@@ -2963,8 +2962,7 @@
         }
       ],
       "references": [
-        "https://www.ncbi.nlm.nih.gov/books/NBK507710/",
-        "https://www.ncbi.nlm.nih.gov/books/NBK557534/"
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7171462/"
       ],
       "verified": true,
       "reviewStatus": "verified"
@@ -2999,8 +2997,8 @@
         }
       ],
       "references": [
-        "https://www.ncbi.nlm.nih.gov/books/NBK507799/",
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7171462/"
+        "https://www.ncbi.nlm.nih.gov/books/NBK556083/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK557790/"
       ],
       "verified": true,
       "reviewStatus": "verified"
@@ -3035,8 +3033,8 @@
         }
       ],
       "references": [
-        "https://www.ncbi.nlm.nih.gov/books/NBK557534/",
-        "https://www.ncbi.nlm.nih.gov/nlmcatalog/101311282"
+        "https://www.ncbi.nlm.nih.gov/books/NBK9963/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK12660/"
       ],
       "verified": true,
       "reviewStatus": "verified"
@@ -3096,9 +3094,9 @@
           "explain": "A full agonist has sufficient efficacy to produce the system's maximal response in the assay or physiological system."
         },
         {
-          "text": "A competitive antagonist with reversible binding can always be overcome by increasing agonist concentration.",
-          "answer": false,
-          "explain": "A reversible competitive antagonist can often be surmounted by increasing agonist concentration; the word 'always' is too absolute across all receptor systems and conditions. This statement is therefore false."
+          "text": "In the classical model, a reversible competitive antagonist shifts the agonist dose-response curve to the right without reducing the maximum response when sufficient agonist is given.",
+          "answer": true,
+          "explain": "A reversible competitive antagonist competes with agonist at the same receptor site. Increasing agonist concentration can overcome the antagonism in the classical equilibrium model, increasing the concentration needed for a given response while preserving Emax."
         },
         {
           "text": "Potency and efficacy describe the same pharmacological property.",
