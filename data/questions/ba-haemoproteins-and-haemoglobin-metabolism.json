@@ -128,10 +128,10 @@
    "sub": "Oxygen Transport and Allosteric Regulation",
    "q": "Why does hemoglobin exhibit a sigmoidal oxygen dissociation curve whereas myoglobin exhibits a hyperbolic curve?",
    "options": [
-    "Myoglobin has a higher P50 than hemoglobin",
-    "Hemoglobin is a tetramer exhibiting positive cooperativity as oxygen binding shifts it from the T (taut) state to the R (relaxed) state",
-    "Myoglobin binds four molecules of 2,3-bisphosphoglycerate",
-    "Hemoglobin contains ferric iron while myoglobin contains ferrous iron"
+    "Myoglobin is a tetramer and binds oxygen cooperatively, producing a sigmoidal curve",
+    "Haemoglobin is a tetramer with cooperative oxygen binding, shifting from low-affinity T to high-affinity R state",
+    "Myoglobin binds four oxygen molecules and changes from a T state to an R state",
+    "Haemoglobin contains ferric iron, whereas myoglobin contains ferrous iron"
    ],
    "answer": 1,
    "explain": "Binding of the first O2 molecule to deoxyhemoglobin (T state) pulls Fe2+ into the heme plane, breaking inter-subunit salt bridges and shifting the tetramer toward the high-affinity R state (Hill coefficient ~2.8).",
@@ -152,10 +152,10 @@
    "sub": "Oxygen Transport and Allosteric Regulation",
    "q": "How do elevated H+ (low pH) and increased PaCO2 facilitate oxygen unloading in metabolically active peripheral tissues (the Bohr effect)?",
    "options": [
-    "They covalently oxidize heme iron to Fe3+",
-    "They bind directly to the heme iron in place of oxygen",
-    "Protonation of specific histidine residues stabilizes salt bridges of the low-affinity T state, shifting the oxygen dissociation curve to the right",
-    "They stimulate red blood cell synthesis of fetal hemoglobin"
+    "H⁺ and CO₂ oxidize haem iron, preventing oxygen from binding",
+    "H⁺ and CO₂ increase haemoglobin affinity, shifting the dissociation curve to the left",
+    "H⁺ stabilizes the low-affinity T state, promoting oxygen unloading and a right shift",
+    "H⁺ displaces 2,3-BPG from haemoglobin, stabilizing the high-affinity R state"
    ],
    "answer": 2,
    "explain": "In metabolically active tissues, high CO2 and H+ protonate residues such as His146 on beta-chains, stabilizing ionic salt bridges of the deoxy T state and shifting the curve rightward (increasing P50) to unload O2.",
@@ -200,10 +200,10 @@
    "sub": "Oxygen Transport and Allosteric Regulation",
    "q": "Why does fetal hemoglobin (HbF, alpha2-gamma2) have a higher oxygen affinity than maternal adult hemoglobin (HbA, alpha2-beta2)?",
    "options": [
-    "Gamma-globin chains have serine instead of histidine at position 143, reducing positive charge and lowering affinity for 2,3-BPG",
-    "HbF lacks proximal histidine residues",
-    "HbF binds eight molecules of oxygen per tetramer",
-    "Fetal erythrocytes lack carbonic anhydrase"
+    "HbF binds 2,3-BPG less strongly than HbA, giving it a higher oxygen affinity",
+    "HbF binds 2,3-BPG more strongly than HbA, giving it a lower oxygen affinity",
+    "HbF contains no haem groups and therefore binds oxygen differently",
+    "HbF has four beta chains and binds more oxygen molecules per tetramer"
    ],
    "answer": 0,
    "explain": "Replacing positively charged His143 in beta chains with neutral Ser143 in gamma chains weakens 2,3-BPG binding to HbF, keeping HbF shifted toward the high-affinity R state to extract O2 across the placenta.",
@@ -224,10 +224,10 @@
    "sub": "Oxygen Transport and Allosteric Regulation",
    "q": "How is the majority of carbon dioxide transported in venous blood from peripheral tissues to the lungs?",
    "options": [
-    "Dissolved physically in plasma",
-    "As plasma bicarbonate ions (HCO3-) generated via erythrocyte carbonic anhydrase and exported via the chloride shift",
-    "Bound directly to heme iron as carboxyhemoglobin",
-    "Bound to plasma albumin"
+    "Most CO₂ is carried dissolved freely in plasma without chemical conversion",
+    "Most CO₂ is carried as plasma bicarbonate formed in red cells and exchanged for chloride",
+    "Most CO₂ binds to haem iron as carboxyhaemoglobin in venous blood",
+    "Most CO₂ binds to albumin after conversion into carbamino-albumin"
    ],
    "answer": 1,
    "explain": "About 70-80% of CO2 enters RBCs, is hydrated by carbonic anhydrase to H2CO3, dissociates into H+ (buffered by deoxyhemoglobin) and HCO3-, and exits into plasma in exchange for Cl- via Band 3 (AE1); ~10-15% forms carbaminohemoglobin on N-terminal amino groups.",
