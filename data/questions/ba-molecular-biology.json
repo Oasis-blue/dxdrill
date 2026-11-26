@@ -1,1173 +1,1173 @@
 {
- "topic": "ba-molecular-biology",
- "questions": [
-  {
-   "id": "ba-molecular-biology-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Replication and Telomeres",
-   "q": "In which chemical direction do all known DNA polymerases synthesize a new DNA strand?",
-   "options": [
-    "5' to 3' direction",
-    "3' to 5' direction",
-    "Bidirectionally from both ends simultaneously",
-    "N-terminus to C-terminus"
-   ],
-   "answer": 0,
-   "explain": "DNA polymerases catalyze nucleophilic attack by the free 3'-hydroxyl group of the growing primer strand onto the alpha-phosphate of an incoming dNTP, extending DNA strictly in the 5' to 3' direction.",
-   "verified": false,
-   "open": {
-    "q": "In which direction (5' to 3' or 3' to 5') do all DNA polymerases elongate a nascent DNA strand?",
-    "accept": [
-     "5' to 3'",
-     "5 to 3",
-     "5'-3'"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Replication and Telomeres",
-   "q": "Which enzyme unwinds the parental DNA double helix ahead of the replication fork by breaking hydrogen bonds between complementary base pairs using ATP hydrolysis?",
-   "options": [
-    "Topoisomerase II",
-    "DNA helicase",
-    "Primase",
-    "Single-strand binding protein"
-   ],
-   "answer": 1,
-   "explain": "DNA helicase (such as DnaB in prokaryotes and the MCM2-7 complex in eukaryotes) separates double-stranded DNA into single-stranded templates at the replication fork.",
-   "verified": false,
-   "open": {
-    "q": "Name the ATP-dependent enzyme that unwinds double-stranded DNA at the replication fork.",
-    "accept": [
-     "DNA helicase",
-     "Helicase"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Replication and Telomeres",
-   "q": "Which enzyme synthesizes short RNA primers (~10 nucleotides) on single-stranded DNA templates to provide a free 3'-OH group for DNA polymerase initiation?",
-   "options": [
-    "RNA polymerase II",
-    "DNA polymerase I",
-    "Primase",
-    "DNA ligase"
-   ],
-   "answer": 2,
-   "explain": "Primase (DnaG in bacteria; DNA polymerase alpha-primase complex in eukaryotes) is a specialized DNA-dependent RNA polymerase that initiates DNA synthesis de novo without needing a preexisting primer.",
-   "verified": false,
-   "open": {
-    "q": "Name the specialized RNA polymerase enzyme that synthesizes short RNA primers to initiate DNA replication.",
-    "accept": [
-     "Primase",
-     "DNA primase"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Replication and Telomeres",
-   "q": "In Escherichia coli, which DNA polymerase removes RNA primers from Okazaki fragments using its 5' to 3' exonuclease activity and fills the gaps with DNA?",
-   "options": [
-    "DNA polymerase III",
-    "DNA polymerase II",
-    "Telomerase",
-    "DNA polymerase I"
-   ],
-   "answer": 3,
-   "explain": "Prokaryotic DNA polymerase I possesses unique 5' to 3' exonuclease activity (in addition to 5' to 3' polymerase and 3' to 5' proofreading exonuclease) to excise RNA primers and replace them with deoxyribonucleotides.",
-   "verified": false,
-   "open": {
-    "q": "Which prokaryotic DNA polymerase uses 5' to 3' exonuclease activity to excise RNA primers and replace them with DNA?",
-    "accept": [
-     "DNA polymerase I",
-     "Pol I",
-     "DNA Pol I"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-005",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Replication and Telomeres",
-   "q": "How do Type II topoisomerases (such as bacterial DNA gyrase and human topoisomerase II) relieve positive supercoils ahead of the replication fork?",
-   "options": [
-    "Create transient ATP-dependent double-strand DNA breaks, pass an intact duplex through the break, and religate both strands",
-    "Nick a single DNA strand without requiring ATP",
-    "Hydrolyze phosphodiester bonds permanently at telomeres",
-    "Cleave hydrogen bonds between adenine and thymine"
-   ],
-   "answer": 0,
-   "explain": "Type II topoisomerases introduce transient double-stranded cuts using ATP to remove positive supercoils and decatenate daughter chromosomes; fluoroquinolones inhibit bacterial DNA gyrase, and etoposide/doxorubicin target human topoisomerase II.",
-   "verified": false,
-   "open": {
-    "q": "Name the prokaryotic Type II topoisomerase inhibited by fluoroquinolone antibiotics.",
-    "accept": [
-     "DNA gyrase",
-     "Gyrase",
-     "Topoisomerase II"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-006",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Replication and Telomeres",
-   "q": "Why do linear eukaryotic chromosomes progressively shorten with each round of somatic cell division in the absence of telomerase?",
-   "options": [
-    "DNA ligase degrades chromosome ends during mitosis",
-    "Removal of the terminal RNA primer at the extreme 5' end of the lagging strand leaves a gap with no upstream 3'-OH for DNA polymerase to extend",
-    "Leading-strand synthesis stops 500 base pairs before the centromere",
-    "Topoisomerase I cleaves telomeric repeats during S phase"
-   ],
-   "answer": 1,
-   "explain": "Because DNA polymerases require a 3'-OH primer and synthesize only 5' to 3', the final RNA primer removed from the 5' end of each newly synthesized lagging strand cannot be replaced with DNA (the end-replication problem).",
-   "verified": false,
-   "open": {
-    "q": "Name the specialized ribonucleoprotein reverse transcriptase that prevents chromosome shortening in stem cells, germ cells, and most cancer cells.",
-    "accept": [
-     "Telomerase"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-007",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Replication and Telomeres",
-   "q": "What type of catalytic enzyme is telomerase, and what does it use as a template to extend the 3' overhang of eukaryotic telomeres?",
-   "options": [
-    "DNA-dependent DNA polymerase using a protein template",
-    "RNA-dependent RNA polymerase using mitochondrial rRNA",
-    "RNA-dependent DNA polymerase (reverse transcriptase) using an integral intrinsic RNA template (TERC)",
-    "DNA ligase using Okazaki fragments"
-   ],
-   "answer": 2,
-   "explain": "Telomerase (TERT + TERC) is a ribonucleoprotein reverse transcriptase that carries its own internal RNA template (containing 5'-AAUCCC-3' in humans) to synthesize TTAGGG repeats onto the 3' single-stranded telomeric overhang.",
-   "verified": false,
-   "open": {
-    "q": "What is the six-nucleotide repeating DNA sequence added to human chromosome ends by telomerase?",
-    "accept": [
-     "TTAGGG",
-     "5'-TTAGGG-3'"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-008",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Damage and Repair Mechanisms",
-   "q": "Which DNA repair pathway removes bulky helix-distorting lesions such as ultraviolet light-induced pyrimidine (thymine) dimers?",
-   "options": [
-    "Base excision repair",
-    "Mismatch repair",
-    "Non-homologous end joining",
-    "Nucleotide excision repair"
-   ],
-   "answer": 3,
-   "explain": "Nucleotide excision repair (NER) recognizes bulky DNA distortions (UV pyrimidine dimers, cisplatin adducts), excises a ~12-30 nucleotide oligonucleotide patch via endonucleases, and fills the gap with DNA polymerase and ligase.",
-   "verified": false,
-   "open": {
-    "q": "Name the DNA repair pathway responsible for removing UV-induced thymine dimers.",
-    "accept": [
-     "Nucleotide excision repair",
-     "NER"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-009",
-   "type": "mcq",
-   "level": 3,
-   "sub": "DNA Damage and Repair Mechanisms",
-   "q": "A 7-year-old boy presents with severe photosensitivity, freckling on sun-exposed skin, corneal clouding, and multiple basal cell and squamous cell skin carcinomas. Defect in which DNA repair pathway causes xeroderma pigmentosum?",
-   "options": [
-    "Nucleotide excision repair",
-    "Base excision repair",
-    "Mismatch repair",
-    "Homologous recombination"
-   ],
-   "answer": 0,
-   "explain": "Xeroderma pigmentosum is an autosomal recessive defect in nucleotide excision repair (XP genes), preventing removal of UV-induced pyrimidine dimers and causing extreme skin cancer susceptibility.",
-   "verified": false,
-   "open": {
-    "q": "Name the autosomal recessive disorder caused by defective nucleotide excision repair that presents with severe UV sensitivity and early-onset skin cancers.",
-    "accept": [
-     "Xeroderma pigmentosum",
-     "XP"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Damage and Repair Mechanisms",
-   "q": "Which DNA repair pathway corrects non-bulky single-base lesions caused by spontaneous deamination (such as cytosine deamination to uracil), oxidation, or alkylation?",
-   "options": [
-    "Nucleotide excision repair",
-    "Base excision repair",
-    "Mismatch repair",
-    "Translesion synthesis"
-   ],
-   "answer": 1,
-   "explain": "In base excision repair (BER), specific DNA glycosylases cleave the N-glycosidic bond of damaged bases to create an apurinic/apyrimidinic (AP) site, followed by AP endonuclease, lyase, DNA polymerase beta, and DNA ligase.",
-   "verified": false,
-   "open": {
-    "q": "Name the class of enzymes that initiate base excision repair by cleaving the N-glycosidic bond of a damaged base to generate an AP site.",
-    "accept": [
-     "DNA glycosylases",
-     "DNA glycosylase",
-     "Glycosylase"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-011",
-   "type": "mcq",
-   "level": 3,
-   "sub": "DNA Damage and Repair Mechanisms",
-   "q": "A 38-year-old man is diagnosed with right-sided colon cancer; his father and sister had colon and endometrial cancers at young ages. Tumor testing shows microsatellite instability due to mutations in MSH2 or MLH1. Which DNA repair pathway is defective in Lynch syndrome?",
-   "options": [
-    "Base excision repair",
-    "Nucleotide excision repair",
-    "Mismatch repair",
-    "Non-homologous end joining"
-   ],
-   "answer": 2,
-   "explain": "Lynch syndrome (hereditary nonpolyposis colorectal cancer, HNPCC) results from germline mutations in mismatch repair genes (MSH2, MLH1, MSH6, PMS2), which normally fix replication slippage and base-pair mismatches on the newly synthesized unmethylated strand.",
-   "verified": false,
-   "open": {
-    "q": "Deficiency of which DNA repair pathway causes Lynch syndrome (hereditary nonpolyposis colorectal cancer) and microsatellite instability?",
-    "accept": [
-     "Mismatch repair",
-     "MMR",
-     "DNA mismatch repair"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-012",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Damage and Repair Mechanisms",
-   "q": "Why do BRCA1 and BRCA2 mutations strongly predispose carriers to breast, ovarian, and prostate cancers?",
-   "options": [
-    "They impair removal of uracil from DNA",
-    "They prevent RNA primer removal during lagging-strand synthesis",
-    "They hyperactivate telomerase in somatic cells",
-    "They impair error-free homologous recombination repair of double-strand DNA breaks, forcing reliance on error-prone non-homologous end joining"
-   ],
-   "answer": 3,
-   "explain": "BRCA1 and BRCA2 are tumor suppressors essential for homologous recombination repair of double-strand breaks during S and G2 phases; loss forces cells to use error-prone non-homologous end joining (NHEJ), accumulating genomic instability.",
-   "verified": false,
-   "open": {
-    "q": "Name the error-free double-strand DNA break repair pathway that depends on BRCA1 and BRCA2 proteins.",
-    "accept": [
-     "Homologous recombination",
-     "HR",
-     "Homologous recombination repair"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Transcription and RNA Processing",
-   "q": "Which eukaryotic RNA polymerase synthesizes messenger RNA (mRNA) precursors as well as most snRNAs and miRNAs, and is potently inhibited by alpha-amanitin from Amanita phalloides mushrooms?",
-   "options": [
-    "RNA polymerase II",
-    "RNA polymerase I",
-    "RNA polymerase III",
-    "Mitochondrial RNA polymerase"
-   ],
-   "answer": 0,
-   "explain": "RNA polymerase II transcribes protein-coding genes into hnRNA/pre-mRNA and is exquisitely sensitive to alpha-amanitin (death cap mushroom toxin); RNA Pol I synthesizes 28S, 18S, and 5.8S rRNA, while RNA Pol III synthesizes tRNA and 5S rRNA.",
-   "verified": false,
-   "open": {
-    "q": "Name the eukaryotic RNA polymerase that transcribes protein-coding genes into mRNA and is inhibited by alpha-amanitin.",
-    "accept": [
-     "RNA polymerase II",
-     "RNA Pol II",
-     "Pol II"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-014",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Transcription and RNA Processing",
-   "q": "In prokaryotes, which dissociable subunit of RNA polymerase recognizes the -35 (TTGACA) and -10 (TATAAT / Pribnow box) promoter consensus sequences to initiate transcription?",
-   "options": [
-    "Rho factor",
-    "Sigma factor",
-    "Alpha subunit",
-    "Beta-prime subunit"
-   ],
-   "answer": 1,
-   "explain": "The sigma factor binds core prokaryotic RNA polymerase (alpha2-beta-beta'-omega) to form the holoenzyme, conferring sequence-specific recognition of promoter -35 and -10 elements before dissociating after initiation.",
-   "verified": false,
-   "open": {
-    "q": "Name the bacterial RNA polymerase subunit responsible for recognizing the -35 and -10 promoter sequences.",
-    "accept": [
-     "Sigma factor",
-     "Sigma subunit",
-     "Sigma"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Transcription and RNA Processing",
-   "q": "How does the antibiotic rifampicin inhibit bacterial transcription?",
-   "options": [
-    "Binds the 30S ribosomal subunit",
-    "Inhibits DNA gyrase supercoiling",
-    "Binds the beta subunit of prokaryotic DNA-dependent RNA polymerase, blocking RNA chain initiation",
-    "Cleaves the 5' mRNA cap"
-   ],
-   "answer": 2,
-   "explain": "Rifampicin binds specifically to the beta subunit of bacterial RNA polymerase without affecting eukaryotic RNA polymerases, blocking initiation of RNA synthesis.",
-   "verified": false,
-   "open": {
-    "q": "Name the first-line antituberculosis antibiotic that inhibits bacterial RNA polymerase.",
-    "accept": [
-     "Rifampicin",
-     "Rifampin"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-016",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Transcription and RNA Processing",
-   "q": "Which general eukaryotic transcription factor contains the TATA-binding protein (TBP) and binds the TATA box (~25-30 bp upstream of the transcription start site) to nucleate pre-initiation complex assembly?",
-   "options": [
-    "TFIIH",
-    "TFIIB",
-    "TFIIA",
-    "TFIID"
-   ],
-   "answer": 3,
-   "explain": "TFIID binds the TATA box via its TATA-binding protein (TBP) subunit, bending DNA and recruiting TFIIA, TFIIB, RNA Pol II-TFIIF, TFIIE, and TFIIH (which provides helicase and CTD kinase activities).",
-   "verified": false,
-   "open": {
-    "q": "Name the general eukaryotic transcription factor containing TATA-binding protein (TBP) that recognizes the TATA box.",
-    "accept": [
-     "TFIID",
-     "Transcription factor II D"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-017",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Transcription and RNA Processing",
-   "q": "What are the three major post-transcriptional modifications that convert eukaryotic pre-mRNA (hnRNA) into mature functional mRNA?",
-   "options": [
-    "5' 7-methylguanosine capping, 3' polyadenylation, and intron splicing",
-    "N-linked glycosylation, disulfide bond formation, and ubiquitination",
-    "5' phosphorylation, methylation of cytosines, and telomere addition",
-    "Signal peptide cleavage, gamma-carboxylation, and hydroxylation"
-   ],
-   "answer": 0,
-   "explain": "Eukaryotic pre-mRNA receives a 5' 7-methylguanosine cap (via an unusual 5'-5' triphosphate linkage), a 3' poly(A) tail (~200 adenosines added by poly(A) polymerase without a template), and spliceosome-mediated intron removal.",
-   "verified": false,
-   "open": {
-    "q": "What modified nucleotide structure is added via a 5'-5' triphosphate linkage to the 5' end of eukaryotic pre-mRNA?",
-    "accept": [
-     "7-methylguanosine cap",
-     "7-methylguanosine",
-     "5' cap",
-     "m7G cap"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Transcription and RNA Processing",
-   "q": "During eukaryotic pre-mRNA splicing by the spliceosome (snRNPs U1, U2, U4, U5, U6), which conserved intronic nucleotide attacks the 5' splice site (GU) to form a branched lariat intermediate?",
-   "options": [
-    "A conserved guanine at the 3' splice site",
-    "A conserved branch-point adenine nucleotide via its 2'-hydroxyl group",
-    "A conserved uracil in the polypyrimidine tract",
-    "The 5' 7-methylguanosine cap"
-   ],
-   "answer": 1,
-   "explain": "The 2'-OH group of a conserved branch-point adenosine inside the intron attacks the 5' splice site phosphodiester bond (GU), creating a 2',5'-phosphodiester lariat structure before exon ligation at the 3' AG splice site.",
-   "verified": false,
-   "open": {
-    "q": "Name the looped RNA structure formed by the intron during spliceosome-mediated pre-mRNA splicing.",
-    "accept": [
-     "Lariat",
-     "Lariat intermediate",
-     "RNA lariat"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-019",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Transcription and RNA Processing",
-   "q": "A 30-year-old woman with systemic lupus erythematosus (SLE) tests positive for anti-Smith (anti-Sm) antibodies. Against which ribonucleoprotein components are anti-Sm antibodies directed?",
-   "options": [
-    "Small ribosomal 40S subunits",
-    "Aminoacyl-tRNA synthetases",
-    "Core proteins of small nuclear ribonucleoproteins (snRNPs) of the spliceosome",
-    "Histone H1 linker proteins"
-   ],
-   "answer": 2,
-   "explain": "Anti-Smith antibodies target core Sm proteins shared by U1, U2, U4, and U5 snRNPs in the spliceosome and are highly specific diagnostic markers for systemic lupus erythematosus.",
-   "verified": false,
-   "open": {
-    "q": "Which macromolecular RNA-processing complex contains the U1, U2, U4, U5, and U6 snRNPs targeted by anti-Sm antibodies in lupus?",
-    "accept": [
-     "Spliceosome",
-     "The spliceosome"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-020",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Transcription and RNA Processing",
-   "q": "How does tissue-specific RNA editing produce ApoB-48 in small intestinal enterocytes versus full-length ApoB-100 in hepatocytes from the exact same APOB gene?",
-   "options": [
-    "Alternative splicing removes 52% of the exons in the intestine",
-    "Intestinal proteases cleave ApoB-100 in half after secretion",
-    "Intestinal cytidine deaminase (APOBEC-1) converts a CAA (glutamine) codon in APOB mRNA into a UAA premature stop codon",
-    "Hepatocytes methylate the APOB promoter"
-   ],
-   "answer": 2,
-   "explain": "Enterocytes express APOBEC-1, which deaminates cytosine to uracil at codon 2153 of APOB mRNA, changing CAA (Gln) to UAA (stop) and yielding truncated ApoB-48 (48% of ApoB-100 length) for chylomicron assembly.",
-   "verified": false,
-   "open": {
-    "q": "Name the intestinal RNA-editing enzyme that deaminates a cytidine in APOB mRNA to create a premature stop codon for ApoB-48 synthesis.",
-    "accept": [
-     "APOBEC-1",
-     "Cytidine deaminase"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Genetic Code and Mutations",
-   "q": "Which four adjectives accurately describe the standard nuclear genetic code?",
-   "options": [
-    "Ambiguous, overlapping, punctuated, and species-restricted",
-    "Degenerate, unambiguous, non-overlapping (comma-less), and nearly universal",
-    "Non-degenerate, ambiguous, overlapping, and universal",
-    "Degenerate, overlapping, bidirectional, and virus-specific"
-   ],
-   "answer": 1,
-   "explain": "The genetic code is degenerate (multiple codons specify one amino acid), unambiguous (each codon specifies only one amino acid), non-overlapping/comma-less (read sequentially in triplets from a fixed start), and nearly universal across organisms.",
-   "verified": false,
-   "open": {
-    "q": "What term describes the property of the genetic code whereby multiple different codons can specify the same amino acid?",
-    "accept": [
-     "Degenerate",
-     "Degeneracy",
-     "Redundant",
-     "Redundancy"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Genetic Code and Mutations",
-   "q": "Which three mRNA nucleotide triplets function as termination (stop) codons and are recognized by release factors rather than tRNAs?",
-   "options": [
-    "AUG, UGG, and UUU",
-    "UAA, UAG, and UGA",
-    "UAA, UAC, and UAU",
-    "GAA, GAG, and GAU"
-   ],
-   "answer": 1,
-   "explain": "UAA (ochre), UAG (amber), and UGA (opal) signal translation termination; AUG encodes methionine (start), and UGG encodes tryptophan (the only two amino acids with single codons).",
-   "verified": false,
-   "open": {
-    "q": "List the three mRNA stop (termination) codons.",
-    "accept": [
-     "UAA, UAG, and UGA",
-     "UAA, UAG, UGA"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-023",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Genetic Code and Mutations",
-   "q": "According to Crick's wobble hypothesis, which base position of the mRNA codon allows non-Watson-Crick base pairing with the 5' anticodon base (such as inosine) of tRNA?",
-   "options": [
-    "First (5') codon base",
-    "Second (middle) codon base",
-    "Third (3') codon base",
-    "All three codon bases equally"
-   ],
-   "answer": 2,
-   "explain": "The 3' (third) nucleotide of the mRNA codon pairs flexibly ('wobbles') with the 5' (first) nucleotide of the tRNA anticodon; inosine (I) at the 5' anticodon position can pair with U, C, or A.",
-   "verified": false,
-   "open": {
-    "q": "Which modified purine nucleoside frequently found at the 5' wobble position of tRNA anticodons can base-pair with U, C, or A?",
-    "accept": [
-     "Inosine",
-     "I"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-024",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Genetic Code and Mutations",
-   "q": "What is the functional difference between a missense mutation, a nonsense mutation, and a frameshift mutation?",
-   "options": [
-    "Missense creates a stop codon; nonsense changes one amino acid; frameshift leaves the reading frame intact",
-    "Missense has no amino acid change; nonsense deletes a whole chromosome; frameshift substitutes one base",
-    "Missense substitutes one amino acid for another; nonsense converts an amino acid codon into a premature stop codon; frameshift inserts or deletes nucleotides not divisible by three, altering all downstream codons",
-    "All three alter only intronic non-coding DNA"
-   ],
-   "answer": 2,
-   "explain": "Missense mutations (e.g., Glu6Val in sickle cell disease) replace one amino acid; nonsense mutations introduce a premature stop codon (often triggering nonsense-mediated mRNA decay); indels not divisible by 3 shift the translational reading frame.",
-   "verified": false,
-   "open": {
-    "q": "What type of point mutation converts a sense codon into a premature termination codon (UAA, UAG, or UGA)?",
-    "accept": [
-     "Nonsense mutation",
-     "Nonsense"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-025",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Translation and Protein Synthesis",
-   "q": "To which specific conserved 3'-terminal trinucleotide sequence of every tRNA molecule does an aminoacyl-tRNA synthetase covalently attach its cognate amino acid?",
-   "options": [
-    "5'-AUG-3'",
-    "5'-TATA-3'",
-    "3'-CCA-5' (specifically the 3'-OH of the terminal adenosine)",
-    "5'-GU-AG-3'"
-   ],
-   "answer": 2,
-   "explain": "All mature tRNAs end with the sequence 5'-CCA-3' at their 3' acceptor stem; aminoacyl-tRNA synthetases hydrolyze ATP to AMP + PPi (2 high-energy bonds) to form a high-energy aminoacyl ester bond with the terminal adenosine.",
-   "verified": false,
-   "open": {
-    "q": "What three-nucleotide sequence is present at the 3' acceptor end of all mature tRNA molecules?",
-    "accept": [
-     "CCA",
-     "5'-CCA-3'",
-     "3'-CCA"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-026",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Translation and Protein Synthesis",
-   "q": "How do prokaryotic ribosomes accurately locate the initiator AUG start codon on polycistronic mRNA?",
-   "options": [
-    "The 40S ribosomal subunit scans from the 5' 7-methylguanosine cap",
-    "The 16S rRNA of the 30S small subunit base-pairs directly with a purine-rich Shine-Dalgarno sequence (~8-10 nucleotides upstream of AUG)",
-    "Rho factor places the ribosome onto the start codon",
-    "Poly(A)-binding protein loops the 3' tail to the start codon"
-   ],
-   "answer": 1,
-   "explain": "In prokaryotes, the 3' end of 16S rRNA binds the complementary Shine-Dalgarno consensus sequence (5'-AGGAGGU-3') upstream of the start codon, whereas eukaryotes use Kozak-sequence scanning from the 5' cap.",
-   "verified": false,
-   "open": {
-    "q": "Name the purine-rich prokaryotic mRNA sequence located upstream of the start codon that base-pairs with 16S rRNA during translation initiation.",
-    "accept": [
-     "Shine-Dalgarno sequence",
-     "Shine-Dalgarno"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-027",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Translation and Protein Synthesis",
-   "q": "Which macromolecular component of the large ribosomal subunit (23S rRNA in bacteria, 28S rRNA in eukaryotes) acts as a ribozyme to catalyze peptide bond formation?",
-   "options": [
-    "Peptidyl transferase rRNA",
-    "EF-Tu",
-    "eIF2",
-    "Signal recognition particle"
-   ],
-   "answer": 0,
-   "explain": "Peptide bond formation between the aminoacyl-tRNA in the A site and the peptidyl-tRNA in the P site is catalyzed not by a ribosomal protein, but by the 23S/28S ribosomal RNA itself (a catalytic ribozyme).",
-   "verified": false,
-   "open": {
-    "q": "Which specific ribosomal RNA molecule functions as the peptidyl transferase ribozyme in eukaryotic 60S ribosomal subunits?",
-    "accept": [
-     "28S rRNA",
-     "28S ribosomal RNA"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-028",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Translation and Protein Synthesis",
-   "q": "Which antibiotics inhibit bacterial translation by binding to the 30S small ribosomal subunit to cause mRNA misreading or block aminoacyl-tRNA entry into the A site?",
-   "options": [
-    "Macrolides (erythromycin) and clindamycin",
-    "Aminoglycosides (gentamicin, streptomycin) and tetracyclines",
-    "Rifampicin and actinomycin D",
-    "Ciprofloxacin and levofloxacin"
-   ],
-   "answer": 1,
-   "explain": "Aminoglycosides bind the 30S subunit to distort the decoding center and block initiation, while tetracyclines bind the 30S A site to prevent aminoacyl-tRNA attachment; macrolides, chloramphenicol, and clindamycin bind the 50S subunit.",
-   "verified": false,
-   "open": {
-    "q": "Which class of antibiotics binds the 30S ribosomal A site to block incoming aminoacyl-tRNAs during bacterial translation?",
-    "accept": [
-     "Tetracyclines",
-     "Tetracycline"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-029",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Translation and Protein Synthesis",
-   "q": "How do diphtheria toxin and Pseudomonas exotoxin A halt eukaryotic protein synthesis?",
-   "options": [
-    "Cleave 28S rRNA at the sarcin-ricin loop",
-    "Bind the 30S ribosomal subunit",
-    "ADP-ribosylate and inactivate eukaryotic elongation factor 2 (eEF-2), blocking ribosomal translocation",
-    "Inhibit RNA polymerase II"
-   ],
-   "answer": 2,
-   "explain": "Both diphtheria toxin and Pseudomonas aeruginosa exotoxin A catalyze NAD+-dependent ADP-ribosylation of a unique modified histidine (diphthamide) residue on eEF-2, preventing ribosome translocation along mRNA.",
-   "verified": false,
-   "open": {
-    "q": "Name the eukaryotic translation factor inactivated via ADP-ribosylation by diphtheria toxin and Pseudomonas exotoxin A.",
-    "accept": [
-     "eEF-2",
-     "Elongation factor 2",
-     "Eukaryotic elongation factor 2"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-030",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Translation and Protein Synthesis",
-   "q": "How are nascent secretory and integral membrane proteins targeted to the rough endoplasmic reticulum during translation?",
-   "options": [
-    "Ubiquitin chains guide ribosomes to the nuclear pore",
-    "The signal recognition particle (SRP) binds the N-terminal hydrophobic signal peptide as it emerges from the ribosome, pauses translation, and docks with the SRP receptor on the ER translocon (Sec61)",
-    "Chaperonin Hsp60 pulls the mRNA through the outer mitochondrial membrane",
-    "Mannose 6-phosphate tags direct ribosomes to the ER"
-   ],
-   "answer": 1,
-   "explain": "SRP recognizes the hydrophobic N-terminal signal sequence, arrests elongation, and brings the ribosome-nascent chain complex to the ER membrane SRP receptor and Sec61 channel for co-translational translocation.",
-   "verified": false,
-   "open": {
-    "q": "Name the ribonucleoprotein complex that recognizes N-terminal hydrophobic signal peptides and targets translating ribosomes to the rough ER.",
-    "accept": [
-     "Signal recognition particle",
-     "SRP"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-031",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Gene Expression",
-   "q": "In the E. coli lac operon, under which combination of extracellular conditions is transcription maximally induced?",
-   "options": [
-    "High glucose and high lactose",
-    "High glucose and absent lactose",
-    "Low glucose (high cAMP-CAP) and high lactose (allolactose removes the lac repressor)",
-    "Low glucose and absent lactose"
-   ],
-   "answer": 2,
-   "explain": "Maximal lac operon transcription requires both removal of negative control (allolactose binds and inactivates the lacI repressor) and activation of positive control (low glucose raises cAMP, activating CAP/CRP to recruit RNA polymerase).",
-   "verified": false,
-   "open": {
-    "q": "Name the isomer of lactose that acts as the true intracellular inducer by binding and inactivating the lac repressor.",
-    "accept": [
-     "Allolactose"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-032",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Gene Expression",
-   "q": "How do histone acetyltransferases (HATs) and histone deacetylases (HDACs) epigenetically regulate eukaryotic chromatin structure and transcription?",
-   "options": [
-    "HATs condense chromatin into heterochromatin; HDACs open chromatin into euchromatin",
-    "HATs neutralize positive charges on histone lysine tails to loosen DNA-histone binding (euchromatin, active transcription), whereas HDACs restore positive charges to condense chromatin (heterochromatin, silencing)",
-    "HATs methylate CpG islands; HDACs demethylate them",
-    "Both enzymes degrade histones in the proteasome"
-   ],
-   "answer": 1,
-   "explain": "Acetylating epsilon-amino groups of histone lysine residues eliminates their positive charge, weakening electrostatic attraction to negatively charged DNA phosphate backbones and opening euchromatin for transcription factors.",
-   "verified": false,
-   "open": {
-    "q": "What term describes transcriptionally active, loosely packed chromatin characterized by acetylated histones?",
-    "accept": [
-     "Euchromatin"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-033",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Gene Expression",
-   "q": "What is the usual effect of DNA methylation at cytosine residues within promoter CpG islands on gene expression?",
-   "options": [
-    "Strongly activates transcription by recruiting RNA polymerase II",
-    "Triggers alternative exon inclusion",
-    "Represses gene transcription by blocking transcription factor binding and recruiting methyl-CpG-binding proteins and HDACs",
-    "Increases mRNA half-life in the cytosol"
-   ],
-   "answer": 2,
-   "explain": "DNA methyltransferases convert cytosine to 5-methylcytosine at promoter CpG islands, leading to stable transcriptional silencing (important in genomic imprinting, X-inactivation, and tumor suppressor silencing).",
-   "verified": false,
-   "open": {
-    "q": "Does hypermethylation of promoter CpG islands typically activate or silence gene transcription?",
-    "accept": [
-     "Silence",
-     "Repress",
-     "Silences it",
-     "Inhibit"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-034",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Gene Expression",
-   "q": "How do microRNAs (miRNAs) and small interfering RNAs (siRNAs) post-transcriptionally silence gene expression in the cytoplasm?",
-   "options": [
-    "Bind promoter TATA boxes to block RNA polymerase II",
-    "Associate with the RNA-induced silencing complex (RISC) and base-pair with target mRNAs to trigger mRNA cleavage or translational repression",
-    "Splice out introns from pre-mRNA",
-    "Methylate tRNA anticodons"
-   ],
-   "answer": 1,
-   "explain": "Processed double-stranded miRNAs/siRNAs (cleaved by Drosha and Dicer) load into Argonaute-containing RISC, guiding sequence-specific degradation or translational inhibition of complementary target mRNAs.",
-   "verified": false,
-   "open": {
-    "q": "Name the cytosolic ribonuclease III enzyme that cleaves precursor hairpin RNAs into mature ~21-23 nucleotide miRNAs and siRNAs.",
-    "accept": [
-     "Dicer"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-035",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Gene Expression",
-   "q": "How does iron deficiency post-transcriptionally regulate the translation of ferritin mRNA versus the stability of transferrin receptor (TfR) mRNA?",
-   "options": [
-    "Iron regulatory proteins (IRPs) bind 5'-IRE on ferritin mRNA to block its translation and bind 3'-IREs on transferrin receptor mRNA to stabilize it and increase iron uptake",
-    "IRPs enhance ferritin translation and degrade transferrin receptor mRNA",
-    "Iron directly cleaves both mRNAs",
-    "IRPs promote transcription of hepcidin"
-   ],
-   "answer": 0,
-   "explain": "When cellular iron is low, IRPs bind iron-responsive elements (IREs): binding at the 5'-UTR of ferritin (and ALAS2) blocks ribosome initiation, while binding at the 3'-UTR of TfR mRNA protects it from endonuclease degradation.",
-   "verified": false,
-   "open": {
-    "q": "When intracellular iron is low, does IRP binding to the 5'-IRE of ferritin mRNA increase or decrease ferritin translation?",
-    "accept": [
-     "Decrease",
-     "Block",
-     "Inhibit",
-     "Decreases it"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-036",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "What are the three repeating temperature steps of each cycle in a standard Polymerase Chain Reaction (PCR) in chronological order?",
-   "options": [
-    "Annealing, denaturation, extension",
-    "Denaturation (~95 C), primer annealing (~50-65 C), and extension (~72 C)",
-    "Extension, annealing, denaturation",
-    "Denaturation, reverse transcription, ligation"
-   ],
-   "answer": 1,
-   "explain": "Each PCR cycle consists of heat denaturation (~94-95 C) to separate DNA strands, cooling (~50-65 C) for forward and reverse primer annealing, and extension (~72 C) by thermostable Taq DNA polymerase.",
-   "verified": false,
-   "open": {
-    "q": "State the three sequential steps of a single Polymerase Chain Reaction (PCR) thermal cycle in chronological order.",
-    "accept": [
-     "Denaturation, annealing, extension",
-     "Denaturation, primer annealing, and extension"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-037",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "Why is Taq DNA polymerase (isolated from Thermus aquaticus) essential for automated PCR thermal cycling?",
-   "options": [
-    "It possesses high 3' to 5' proofreading exonuclease activity",
-    "It can synthesize DNA without oligonucleotide primers",
-    "It is thermostable and retains enzymatic activity after repeated heating to 95 C during denaturation cycles",
-    "It uses RNA as a template directly"
-   ],
-   "answer": 2,
-   "explain": "Standard E. coli DNA polymerase denatures at 95 C; thermostable Taq polymerase (optimal at ~72 C) survives repeated high-temperature strand-separation cycles without needing fresh enzyme each cycle.",
-   "verified": false,
-   "open": {
-    "q": "From which thermophilic bacterium is Taq DNA polymerase isolated?",
-    "accept": [
-     "Thermus aquaticus"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-038",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "Which modification of PCR is required to detect and quantify RNA viruses (such as HIV, HCV, or SARS-CoV-2) or measure cellular mRNA expression levels?",
-   "options": [
-    "Nested DNA PCR without reverse transcriptase",
-    "Reverse transcription PCR (RT-PCR), which first converts RNA into complementary DNA (cDNA) using reverse transcriptase",
-    "Southern blotting",
-    "Western blotting"
-   ],
-   "answer": 1,
-   "explain": "Taq DNA polymerase requires a DNA template; therefore, reverse transcriptase must first synthesize complementary DNA (cDNA) from the RNA template before PCR amplification.",
-   "verified": false,
-   "open": {
-    "q": "Name the DNA copy synthesized from an mRNA or viral RNA template by reverse transcriptase prior to PCR amplification.",
-    "accept": [
-     "cDNA",
-     "Complementary DNA"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-039",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "In quantitative real-time PCR (qPCR), what does a lower cycle threshold (Ct) value indicate about the starting target nucleic acid concentration in a patient sample?",
-   "options": [
-    "A lower starting copy number of target nucleic acid",
-    "Complete absence of target nucleic acid",
-    "A higher starting copy number of target nucleic acid",
-    "Failure of primer annealing"
-   ],
-   "answer": 2,
-   "explain": "Because DNA doubles exponentially each cycle, samples with higher initial viral load or mRNA copy number cross the fluorescence detection threshold in fewer cycles (a lower Ct value).",
-   "verified": false,
-   "open": {
-    "q": "Does a higher initial viral load in a sample produce a higher or lower Ct (cycle threshold) value in real-time quantitative PCR?",
-    "accept": [
-     "Lower",
-     "A lower Ct value"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-040",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "Which blotting technique separates DNA fragments by gel electrophoresis, transfers them to a membrane, and detects specific DNA sequences using a labeled nucleic acid probe?",
-   "options": [
-    "Southern blot",
-    "Northern blot",
-    "Western blot",
-    "Southwestern blot"
-   ],
-   "answer": 0,
-   "explain": "Southern blot detects DNA (named after Edwin Southern); Northern blot detects RNA; Western blot detects proteins using antibodies (mnemonic: SNoW DRoP).",
-   "verified": false,
-   "open": {
-    "q": "Name the molecular blotting technique used to detect specific RNA molecules separated by electrophoresis.",
-    "accept": [
-     "Northern blot",
-     "Northern blotting"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-041",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "In Sanger dideoxy DNA sequencing, how do 2',3'-dideoxynucleoside triphosphates (ddNTPs) terminate DNA chain elongation?",
-   "options": [
-    "They lack a 5'-triphosphate group",
-    "They lack a 3'-hydroxyl (-OH) group required to form a phosphodiester bond with the next incoming dNTP",
-    "They cleave double-stranded DNA at palindromic sites",
-    "They irreversibly inhibit Taq polymerase active sites"
-   ],
-   "answer": 1,
-   "explain": "ddNTPs lack both 2'-OH and 3'-OH groups on the ribose sugar; once incorporated into a growing DNA strand, no further nucleotides can be added, generating nested fragments separated by capillary electrophoresis.",
-   "verified": false,
-   "open": {
-    "q": "Which functional group is absent at the 3' carbon of dideoxynucleotides (ddNTPs), causing chain termination in Sanger sequencing?",
-    "accept": [
-     "Hydroxyl group",
-     "3'-OH",
-     "3'-hydroxyl group",
-     "OH group"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-042",
-   "type": "mcq",
-   "level": 1,
-   "sub": "DNA Replication and Telomeres",
-   "q": "Which enzyme seals the final nick in the phosphodiester backbone between adjacent Okazaki fragments on the lagging strand?",
-   "options": [
-    "DNA helicase",
-    "Primase",
-    "DNA ligase",
-    "Topoisomerase I"
-   ],
-   "answer": 2,
-   "explain": "DNA ligase catalyzes phosphodiester bond formation between the 3'-OH of one DNA fragment and the 5'-phosphate of the adjacent fragment using ATP (eukaryotes) or NAD+ (bacteria).",
-   "verified": false,
-   "open": {
-    "q": "Name the enzyme that joins Okazaki fragments by forming a phosphodiester bond between adjacent 3'-OH and 5'-phosphate ends.",
-    "accept": [
-     "DNA ligase",
-     "Ligase"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-043",
-   "type": "mcq",
-   "level": 2,
-   "sub": "DNA Damage and Repair Mechanisms",
-   "q": "Which enzymatic activity of replicative DNA polymerases immediately removes misincorporated nucleotides during DNA synthesis, increasing replication fidelity ~100-fold?",
-   "options": [
-    "5' to 3' exonuclease activity",
-    "3' to 5' exonuclease proofreading activity",
-    "Endonuclease activity",
-    "Reverse transcriptase activity"
-   ],
-   "answer": 1,
-   "explain": "When an incorrect base is inserted, distorted geometry slows forward polymerization and shifts the primer terminus into the 3' to 5' exonuclease active site to excise the mismatched nucleotide.",
-   "verified": false,
-   "open": {
-    "q": "Which directional exonuclease activity provides immediate proofreading during DNA synthesis by DNA polymerases?",
-    "accept": [
-     "3' to 5' exonuclease",
-     "3'-5' exonuclease",
-     "3' to 5'"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-044",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Transcription and RNA Processing",
-   "q": "What is the role of enhancers in eukaryotic gene transcription?",
-   "options": [
-    "Encode the catalytic subunit of RNA polymerase II",
-    "Cis-acting DNA regulatory sequences that bind activator proteins and loop via the Mediator complex to stimulate transcription from promoters located thousands of base pairs upstream, downstream, or within introns",
-    "Terminate transcription by forming GC-rich hairpins",
-    "Degrade cytoplasmic mRNA"
-   ],
-   "answer": 1,
-   "explain": "Enhancers are position- and orientation-independent DNA elements that bind tissue-specific transcription factors (activators) and interact with general transcription factors at the promoter via DNA looping and Mediator.",
-   "verified": false,
-   "open": {
-    "q": "Name the multi-subunit coactivator complex that bridges DNA-bound activator proteins at enhancers to RNA polymerase II at the core promoter.",
-    "accept": [
-     "Mediator",
-     "Mediator complex"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-045",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Transcription and RNA Processing",
-   "q": "How does alternative splicing increase proteomic diversity in humans?",
-   "options": [
-    "Mutates genomic DNA sequences in somatic tissues",
-    "Allows a single pre-mRNA transcript to be spliced in different exon combinations to produce multiple distinct protein isoforms",
-    "Translates introns into functional enzymes",
-    "Converts mRNA back into genomic DNA"
-   ],
-   "answer": 1,
-   "explain": "Although humans have only ~20,000 protein-coding genes, alternative exon inclusion/skipping allows over 90% of multi-exon genes to generate tissue-specific protein isoforms.",
-   "verified": false,
-   "open": {
-    "q": "What process allows a single pre-mRNA molecule to generate multiple distinct mRNAs and protein isoforms by varying exon combinations?",
-    "accept": [
-     "Alternative splicing",
-     "Alternative RNA splicing"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-046",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Translation and Protein Synthesis",
-   "q": "In eukaryotic translation, how does the 40S ribosomal subunit recognize the 5' end of mature mRNA?",
-   "options": [
-    "Binds directly to the Shine-Dalgarno sequence",
-    "The cap-binding complex eIF4F (specifically eIF4E) recognizes the 5' 7-methylguanosine cap and recruits the 43S pre-initiation complex",
-    "Binds directly to the stop codon",
-    "Recognizes internal poly(U) tracts"
-   ],
-   "answer": 1,
-   "explain": "eIF4E binds the 5' 7-methylguanosine cap, eIF4G bridges eIF4E to poly(A)-binding protein (circularizing the mRNA), and eIF4A unwinds 5'-UTR secondary structure so the 40S subunit can scan to the Kozak AUG start codon.",
-   "verified": false,
-   "open": {
-    "q": "Name the eukaryotic initiation factor that directly binds the 5' 7-methylguanosine cap of mRNA.",
-    "accept": [
-     "eIF4E",
-     "Eukaryotic initiation factor 4E"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-047",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Translation and Protein Synthesis",
-   "q": "How does the ubiquitin-proteasome system target misfolded or short-lived regulatory intracellular proteins (such as cyclins and p53) for degradation?",
-   "options": [
-    "Cleaves them inside acidic lysosomes via cathepsins",
-    "E1, E2, and E3 enzymes covalently attach a polyubiquitin chain (linked via Lys48) to target lysine residues, marking the protein for ATP-dependent unfolding and proteolysis by the 26S proteasome",
-    "Exports them out of the cell via exocytosis",
-    "Phosphorylates their C-terminus for RNase digestion"
-   ],
-   "answer": 1,
-   "explain": "Ubiquitin-activating (E1), ubiquitin-conjugating (E2), and ubiquitin-ligase (E3) enzymes attach Lys48-linked polyubiquitin chains that are recognized by the 19S regulatory cap of the 26S proteasome.",
-   "verified": false,
-   "open": {
-    "q": "Name the 76-amino-acid regulatory protein covalently attached to lysine residues to mark intracellular proteins for degradation by the 26S proteasome.",
-    "accept": [
-     "Ubiquitin"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-048",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Regulation of Gene Expression",
-   "q": "In the E. coli trp operon, how does attenuation finely regulate transcription in response to intracellular tryptophan levels?",
-   "options": [
-    "Tryptophan binds directly to RNA polymerase to cleave it",
-    "In prokaryotes, coupled transcription and translation allows ribosome stalling at tandem Trp codons (when Trp is low) to favor an antiterminator hairpin, whereas rapid translation (when Trp is high) allows a rho-independent terminator hairpin to form",
-    "Tryptophan methylates the trp promoter",
-    "The trp repressor degrades tryptophan mRNA"
-   ],
-   "answer": 1,
-   "explain": "Because bacteria lack a nuclear membrane, ribosomes translate the leader peptide (trpL) while RNA polymerase is still transcribing; low Trp-tRNA stalls the ribosome at Trp codons, favoring the 2:3 antiterminator loop instead of the 3:4 terminator hairpin.",
-   "verified": false,
-   "open": {
-    "q": "Why is transcriptional attenuation possible in prokaryotes like E. coli but not in eukaryotes?",
-    "accept": [
-     "Transcription and translation are coupled in the same compartment",
-     "Lack of a nuclear membrane allows simultaneous transcription and translation"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-049",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
-   "q": "Why must PCR primers be designed as two distinct oligonucleotides (forward and reverse) flanking the target DNA region in opposite orientations?",
-   "options": [
-    "To digest intervening introns",
-    "Because DNA polymerase can only extend from a 3'-OH group, each primer anneals to one complementary strand at opposite ends with their 3' ends pointing inward toward the target sequence",
-    "To prevent Taq polymerase from binding DNA",
-    "To convert RNA into protein"
-   ],
-   "answer": 1,
-   "explain": "Forward and reverse primers hybridize to opposite strands at the 3' boundaries of the target sequence so that 5' to 3' extension from each primer's 3'-OH copies across the target region.",
-   "verified": false,
-   "open": {
-    "q": "Toward which direction (inward toward the target or outward away from the target) must the 3' ends of forward and reverse PCR primers point?",
-    "accept": [
-     "Inward",
-     "Toward the target",
-     "Toward each other"
-    ]
-   }
-  },
-  {
-   "id": "ba-molecular-biology-050",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Translation and Protein Synthesis",
-   "q": "What is a polyribosome (polysome)?",
-   "options": [
-    "A cluster of multiple ribosomes simultaneously translating a single mRNA molecule",
-    "A ribosome composed of 50S and 60S subunits",
-    "A storage granule of inactive tRNAs",
-    "A complex of DNA polymerase and helicase"
-   ],
-   "answer": 0,
-   "explain": "A polysome consists of multiple ribosomes spaced along a single mRNA transcript, each synthesizing a polypeptide chain simultaneously to maximize protein production efficiency.",
-   "verified": false,
-   "open": {
-    "q": "What term describes multiple ribosomes translating a single mRNA molecule simultaneously?",
-    "accept": [
-     "Polysome",
-     "Polyribosome",
-     "Ergosome"
-    ]
-   }
-  }
- ]
+  "topic": "ba-molecular-biology",
+  "questions": [
+    {
+      "id": "ba-molecular-biology-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Replication and Telomeres",
+      "q": "In which chemical direction do all known DNA polymerases synthesize a new DNA strand?",
+      "options": [
+        "5' to 3' direction",
+        "3' to 5' direction",
+        "Bidirectionally from both ends simultaneously",
+        "N-terminus to C-terminus"
+      ],
+      "answer": 0,
+      "explain": "DNA polymerases catalyze nucleophilic attack by the free 3'-hydroxyl group of the growing primer strand onto the alpha-phosphate of an incoming dNTP, extending DNA strictly in the 5' to 3' direction.",
+      "verified": false,
+      "open": {
+        "q": "In which direction (5' to 3' or 3' to 5') do all DNA polymerases elongate a nascent DNA strand?",
+        "accept": [
+          "5' to 3'",
+          "5 to 3",
+          "5'-3'"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Replication and Telomeres",
+      "q": "Which enzyme unwinds the parental DNA double helix ahead of the replication fork by breaking hydrogen bonds between complementary base pairs using ATP hydrolysis?",
+      "options": [
+        "Topoisomerase II",
+        "DNA helicase",
+        "Primase",
+        "Single-strand binding protein"
+      ],
+      "answer": 1,
+      "explain": "DNA helicase (such as DnaB in prokaryotes and the MCM2-7 complex in eukaryotes) separates double-stranded DNA into single-stranded templates at the replication fork.",
+      "verified": false,
+      "open": {
+        "q": "Name the ATP-dependent enzyme that unwinds double-stranded DNA at the replication fork.",
+        "accept": [
+          "DNA helicase",
+          "Helicase"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Replication and Telomeres",
+      "q": "Which enzyme synthesizes short RNA primers (~10 nucleotides) on single-stranded DNA templates to provide a free 3'-OH group for DNA polymerase initiation?",
+      "options": [
+        "RNA polymerase II",
+        "DNA polymerase I",
+        "Primase",
+        "DNA ligase"
+      ],
+      "answer": 2,
+      "explain": "Primase (DnaG in bacteria; DNA polymerase alpha-primase complex in eukaryotes) is a specialized DNA-dependent RNA polymerase that initiates DNA synthesis de novo without needing a preexisting primer.",
+      "verified": false,
+      "open": {
+        "q": "Name the specialized RNA polymerase enzyme that synthesizes short RNA primers to initiate DNA replication.",
+        "accept": [
+          "Primase",
+          "DNA primase"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Replication and Telomeres",
+      "q": "In Escherichia coli, which DNA polymerase removes RNA primers from Okazaki fragments using its 5' to 3' exonuclease activity and fills the gaps with DNA?",
+      "options": [
+        "DNA polymerase III",
+        "DNA polymerase II",
+        "Telomerase",
+        "DNA polymerase I"
+      ],
+      "answer": 3,
+      "explain": "Prokaryotic DNA polymerase I possesses unique 5' to 3' exonuclease activity (in addition to 5' to 3' polymerase and 3' to 5' proofreading exonuclease) to excise RNA primers and replace them with deoxyribonucleotides.",
+      "verified": false,
+      "open": {
+        "q": "Which prokaryotic DNA polymerase uses 5' to 3' exonuclease activity to excise RNA primers and replace them with DNA?",
+        "accept": [
+          "DNA polymerase I",
+          "Pol I",
+          "DNA Pol I"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Replication and Telomeres",
+      "q": "How do Type II topoisomerases (such as bacterial DNA gyrase and human topoisomerase II) relieve positive supercoils ahead of the replication fork?",
+      "options": [
+        "Create transient ATP-dependent double-strand DNA breaks, pass an intact duplex through the break, and religate both strands",
+        "Nick a single DNA strand without requiring ATP",
+        "Hydrolyze phosphodiester bonds permanently at telomeres",
+        "Cleave hydrogen bonds between adenine and thymine"
+      ],
+      "answer": 0,
+      "explain": "Type II topoisomerases introduce transient double-stranded cuts using ATP to remove positive supercoils and decatenate daughter chromosomes; fluoroquinolones inhibit bacterial DNA gyrase, and etoposide/doxorubicin target human topoisomerase II.",
+      "verified": false,
+      "open": {
+        "q": "Name the prokaryotic Type II topoisomerase inhibited by fluoroquinolone antibiotics.",
+        "accept": [
+          "DNA gyrase",
+          "Gyrase",
+          "Topoisomerase II"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Replication and Telomeres",
+      "q": "Why do linear eukaryotic chromosomes progressively shorten with each round of somatic cell division in the absence of telomerase?",
+      "options": [
+        "DNA ligase degrades chromosome ends during mitosis",
+        "Removal of the terminal RNA primer at the extreme 5' end of the lagging strand leaves a gap with no upstream 3'-OH for DNA polymerase to extend",
+        "Leading-strand synthesis stops 500 base pairs before the centromere",
+        "Topoisomerase I cleaves telomeric repeats during S phase"
+      ],
+      "answer": 1,
+      "explain": "Because DNA polymerases require a 3'-OH primer and synthesize only 5' to 3', the final RNA primer removed from the 5' end of each newly synthesized lagging strand cannot be replaced with DNA (the end-replication problem).",
+      "verified": false,
+      "open": {
+        "q": "Name the specialized ribonucleoprotein reverse transcriptase that prevents chromosome shortening in stem cells, germ cells, and most cancer cells.",
+        "accept": [
+          "Telomerase"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Replication and Telomeres",
+      "q": "What type of catalytic enzyme is telomerase, and what does it use as a template to extend the 3' overhang of eukaryotic telomeres?",
+      "options": [
+        "DNA-dependent DNA polymerase using a protein template",
+        "RNA-dependent RNA polymerase using mitochondrial rRNA",
+        "RNA-dependent DNA polymerase (reverse transcriptase) using an integral intrinsic RNA template (TERC)",
+        "DNA ligase using Okazaki fragments"
+      ],
+      "answer": 2,
+      "explain": "Telomerase (TERT + TERC) is a ribonucleoprotein reverse transcriptase that carries its own internal RNA template (containing 5'-AAUCCC-3' in humans) to synthesize TTAGGG repeats onto the 3' single-stranded telomeric overhang.",
+      "verified": false,
+      "open": {
+        "q": "What is the six-nucleotide repeating DNA sequence added to human chromosome ends by telomerase?",
+        "accept": [
+          "TTAGGG",
+          "5'-TTAGGG-3'"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-008",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Damage and Repair Mechanisms",
+      "q": "Which DNA repair pathway removes bulky helix-distorting lesions such as ultraviolet light-induced pyrimidine (thymine) dimers?",
+      "options": [
+        "Base excision repair",
+        "Mismatch repair",
+        "Non-homologous end joining",
+        "Nucleotide excision repair"
+      ],
+      "answer": 3,
+      "explain": "Nucleotide excision repair (NER) recognizes bulky DNA distortions (UV pyrimidine dimers, cisplatin adducts), excises a ~12-30 nucleotide oligonucleotide patch via endonucleases, and fills the gap with DNA polymerase and ligase.",
+      "verified": false,
+      "open": {
+        "q": "Name the DNA repair pathway responsible for removing UV-induced thymine dimers.",
+        "accept": [
+          "Nucleotide excision repair",
+          "NER"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-009",
+      "type": "mcq",
+      "level": 3,
+      "sub": "DNA Damage and Repair Mechanisms",
+      "q": "A 7-year-old boy presents with severe photosensitivity, freckling on sun-exposed skin, corneal clouding, and multiple basal cell and squamous cell skin carcinomas. Defect in which DNA repair pathway causes xeroderma pigmentosum?",
+      "options": [
+        "Nucleotide excision repair",
+        "Base excision repair",
+        "Mismatch repair",
+        "Homologous recombination"
+      ],
+      "answer": 0,
+      "explain": "Xeroderma pigmentosum is an autosomal recessive defect in nucleotide excision repair (XP genes), preventing removal of UV-induced pyrimidine dimers and causing extreme skin cancer susceptibility.",
+      "verified": false,
+      "open": {
+        "q": "Name the autosomal recessive disorder caused by defective nucleotide excision repair that presents with severe UV sensitivity and early-onset skin cancers.",
+        "accept": [
+          "Xeroderma pigmentosum",
+          "XP"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Damage and Repair Mechanisms",
+      "q": "Which DNA repair pathway corrects non-bulky single-base lesions caused by spontaneous deamination (such as cytosine deamination to uracil), oxidation, or alkylation?",
+      "options": [
+        "Nucleotide excision repair",
+        "Base excision repair",
+        "Mismatch repair",
+        "Translesion synthesis"
+      ],
+      "answer": 1,
+      "explain": "In base excision repair (BER), specific DNA glycosylases cleave the N-glycosidic bond of damaged bases to create an apurinic/apyrimidinic (AP) site, followed by AP endonuclease, lyase, DNA polymerase beta, and DNA ligase.",
+      "verified": false,
+      "open": {
+        "q": "Name the class of enzymes that initiate base excision repair by cleaving the N-glycosidic bond of a damaged base to generate an AP site.",
+        "accept": [
+          "DNA glycosylases",
+          "DNA glycosylase",
+          "Glycosylase"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-011",
+      "type": "mcq",
+      "level": 3,
+      "sub": "DNA Damage and Repair Mechanisms",
+      "q": "A 38-year-old man is diagnosed with right-sided colon cancer; his father and sister had colon and endometrial cancers at young ages. Tumor testing shows microsatellite instability due to mutations in MSH2 or MLH1. Which DNA repair pathway is defective in Lynch syndrome?",
+      "options": [
+        "Base excision repair",
+        "Nucleotide excision repair",
+        "Mismatch repair",
+        "Non-homologous end joining"
+      ],
+      "answer": 2,
+      "explain": "Lynch syndrome (hereditary nonpolyposis colorectal cancer, HNPCC) results from germline mutations in mismatch repair genes (MSH2, MLH1, MSH6, PMS2), which normally fix replication slippage and base-pair mismatches on the newly synthesized unmethylated strand.",
+      "verified": false,
+      "open": {
+        "q": "Deficiency of which DNA repair pathway causes Lynch syndrome (hereditary nonpolyposis colorectal cancer) and microsatellite instability?",
+        "accept": [
+          "Mismatch repair",
+          "MMR",
+          "DNA mismatch repair"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-012",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Damage and Repair Mechanisms",
+      "q": "Why do BRCA1 and BRCA2 mutations strongly predispose carriers to breast, ovarian, and prostate cancers?",
+      "options": [
+        "They impair removal of uracil from DNA",
+        "They prevent RNA primer removal during lagging-strand synthesis",
+        "They hyperactivate telomerase in somatic cells",
+        "They impair error-free homologous recombination repair of double-strand DNA breaks, forcing reliance on error-prone non-homologous end joining"
+      ],
+      "answer": 3,
+      "explain": "BRCA1 and BRCA2 are tumor suppressors essential for homologous recombination repair of double-strand breaks during S and G2 phases; loss forces cells to use error-prone non-homologous end joining (NHEJ), accumulating genomic instability.",
+      "verified": false,
+      "open": {
+        "q": "Name the error-free double-strand DNA break repair pathway that depends on BRCA1 and BRCA2 proteins.",
+        "accept": [
+          "Homologous recombination",
+          "HR",
+          "Homologous recombination repair"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Transcription and RNA Processing",
+      "q": "Which eukaryotic RNA polymerase synthesizes messenger RNA (mRNA) precursors as well as most snRNAs and miRNAs, and is potently inhibited by alpha-amanitin from Amanita phalloides mushrooms?",
+      "options": [
+        "RNA polymerase II",
+        "RNA polymerase I",
+        "RNA polymerase III",
+        "Mitochondrial RNA polymerase"
+      ],
+      "answer": 0,
+      "explain": "RNA polymerase II transcribes protein-coding genes into hnRNA/pre-mRNA and is exquisitely sensitive to alpha-amanitin (death cap mushroom toxin); RNA Pol I synthesizes 28S, 18S, and 5.8S rRNA, while RNA Pol III synthesizes tRNA and 5S rRNA.",
+      "verified": false,
+      "open": {
+        "q": "Name the eukaryotic RNA polymerase that transcribes protein-coding genes into mRNA and is inhibited by alpha-amanitin.",
+        "accept": [
+          "RNA polymerase II",
+          "RNA Pol II",
+          "Pol II"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Transcription and RNA Processing",
+      "q": "In prokaryotes, which dissociable subunit of RNA polymerase recognizes the -35 (TTGACA) and -10 (TATAAT / Pribnow box) promoter consensus sequences to initiate transcription?",
+      "options": [
+        "Rho factor",
+        "Sigma factor",
+        "Alpha subunit",
+        "Beta-prime subunit"
+      ],
+      "answer": 1,
+      "explain": "The sigma factor binds core prokaryotic RNA polymerase (alpha2-beta-beta'-omega) to form the holoenzyme, conferring sequence-specific recognition of promoter -35 and -10 elements before dissociating after initiation.",
+      "verified": false,
+      "open": {
+        "q": "Name the bacterial RNA polymerase subunit responsible for recognizing the -35 and -10 promoter sequences.",
+        "accept": [
+          "Sigma factor",
+          "Sigma subunit",
+          "Sigma"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Transcription and RNA Processing",
+      "q": "How does the antibiotic rifampicin inhibit bacterial transcription?",
+      "options": [
+        "Binds the 30S ribosomal subunit",
+        "Inhibits DNA gyrase supercoiling",
+        "Binds the beta subunit of prokaryotic DNA-dependent RNA polymerase, blocking RNA chain initiation",
+        "Cleaves the 5' mRNA cap"
+      ],
+      "answer": 2,
+      "explain": "Rifampicin binds specifically to the beta subunit of bacterial RNA polymerase without affecting eukaryotic RNA polymerases, blocking initiation of RNA synthesis.",
+      "verified": false,
+      "open": {
+        "q": "Name the first-line antituberculosis antibiotic that inhibits bacterial RNA polymerase.",
+        "accept": [
+          "Rifampicin",
+          "Rifampin"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-016",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transcription and RNA Processing",
+      "q": "Which general eukaryotic transcription factor contains the TATA-binding protein (TBP) and binds the TATA box (~25-30 bp upstream of the transcription start site) to nucleate pre-initiation complex assembly?",
+      "options": [
+        "TFIIH",
+        "TFIIB",
+        "TFIIA",
+        "TFIID"
+      ],
+      "answer": 3,
+      "explain": "TFIID binds the TATA box via its TATA-binding protein (TBP) subunit, bending DNA and recruiting TFIIA, TFIIB, RNA Pol II-TFIIF, TFIIE, and TFIIH (which provides helicase and CTD kinase activities).",
+      "verified": false,
+      "open": {
+        "q": "Name the general eukaryotic transcription factor containing TATA-binding protein (TBP) that recognizes the TATA box.",
+        "accept": [
+          "TFIID",
+          "Transcription factor II D"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Transcription and RNA Processing",
+      "q": "What are the three major post-transcriptional modifications that convert eukaryotic pre-mRNA (hnRNA) into mature functional mRNA?",
+      "options": [
+        "5' 7-methylguanosine capping, 3' polyadenylation, and intron splicing",
+        "N-linked glycosylation, disulfide bond formation, and ubiquitination",
+        "5' phosphorylation, methylation of cytosines, and telomere addition",
+        "Signal peptide cleavage, gamma-carboxylation, and hydroxylation"
+      ],
+      "answer": 0,
+      "explain": "Eukaryotic pre-mRNA receives a 5' 7-methylguanosine cap (via an unusual 5'-5' triphosphate linkage), a 3' poly(A) tail (~200 adenosines added by poly(A) polymerase without a template), and spliceosome-mediated intron removal.",
+      "verified": false,
+      "open": {
+        "q": "What modified nucleotide structure is added via a 5'-5' triphosphate linkage to the 5' end of eukaryotic pre-mRNA?",
+        "accept": [
+          "7-methylguanosine cap",
+          "7-methylguanosine",
+          "5' cap",
+          "m7G cap"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transcription and RNA Processing",
+      "q": "During eukaryotic pre-mRNA splicing by the spliceosome (snRNPs U1, U2, U4, U5, U6), which conserved intronic nucleotide attacks the 5' splice site (GU) to form a branched lariat intermediate?",
+      "options": [
+        "A conserved guanine at the 3' splice site",
+        "A conserved branch-point adenine nucleotide via its 2'-hydroxyl group",
+        "A conserved uracil in the polypyrimidine tract",
+        "The 5' 7-methylguanosine cap"
+      ],
+      "answer": 1,
+      "explain": "The 2'-OH group of a conserved branch-point adenosine inside the intron attacks the 5' splice site phosphodiester bond (GU), creating a 2',5'-phosphodiester lariat structure before exon ligation at the 3' AG splice site.",
+      "verified": false,
+      "open": {
+        "q": "Name the looped RNA structure formed by the intron during spliceosome-mediated pre-mRNA splicing.",
+        "accept": [
+          "Lariat",
+          "Lariat intermediate",
+          "RNA lariat"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-019",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Transcription and RNA Processing",
+      "q": "A 30-year-old woman with systemic lupus erythematosus (SLE) tests positive for anti-Smith (anti-Sm) antibodies. Against which ribonucleoprotein components are anti-Sm antibodies directed?",
+      "options": [
+        "Small ribosomal 40S subunits",
+        "Aminoacyl-tRNA synthetases",
+        "Core proteins of small nuclear ribonucleoproteins (snRNPs) of the spliceosome",
+        "Histone H1 linker proteins"
+      ],
+      "answer": 2,
+      "explain": "Anti-Smith antibodies target core Sm proteins shared by U1, U2, U4, and U5 snRNPs in the spliceosome and are highly specific diagnostic markers for systemic lupus erythematosus.",
+      "verified": false,
+      "open": {
+        "q": "Which macromolecular RNA-processing complex contains the U1, U2, U4, U5, and U6 snRNPs targeted by anti-Sm antibodies in lupus?",
+        "accept": [
+          "Spliceosome",
+          "The spliceosome"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-020",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transcription and RNA Processing",
+      "q": "How does tissue-specific RNA editing produce ApoB-48 in small intestinal enterocytes versus full-length ApoB-100 in hepatocytes from the exact same APOB gene?",
+      "options": [
+        "Alternative splicing removes 52% of the exons in the intestine",
+        "Intestinal proteases cleave ApoB-100 in half after secretion",
+        "Intestinal cytidine deaminase (APOBEC-1) converts a CAA (glutamine) codon in APOB mRNA into a UAA premature stop codon",
+        "Hepatocytes methylate the APOB promoter"
+      ],
+      "answer": 2,
+      "explain": "Enterocytes express APOBEC-1, which deaminates cytosine to uracil at codon 2153 of APOB mRNA, changing CAA (Gln) to UAA (stop) and yielding truncated ApoB-48 (48% of ApoB-100 length) for chylomicron assembly.",
+      "verified": false,
+      "open": {
+        "q": "Name the intestinal RNA-editing enzyme that deaminates a cytidine in APOB mRNA to create a premature stop codon for ApoB-48 synthesis.",
+        "accept": [
+          "APOBEC-1",
+          "Cytidine deaminase"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Genetic Code and Mutations",
+      "q": "Which four adjectives accurately describe the standard nuclear genetic code?",
+      "options": [
+        "Ambiguous, overlapping, punctuated, and species-restricted",
+        "Degenerate, unambiguous, non-overlapping (comma-less), and nearly universal",
+        "Non-degenerate, ambiguous, overlapping, and universal",
+        "Degenerate, overlapping, bidirectional, and virus-specific"
+      ],
+      "answer": 1,
+      "explain": "The genetic code is degenerate (multiple codons specify one amino acid), unambiguous (each codon specifies only one amino acid), non-overlapping/comma-less (read sequentially in triplets from a fixed start), and nearly universal across organisms.",
+      "verified": false,
+      "open": {
+        "q": "What term describes the property of the genetic code whereby multiple different codons can specify the same amino acid?",
+        "accept": [
+          "Degenerate",
+          "Degeneracy",
+          "Redundant",
+          "Redundancy"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Genetic Code and Mutations",
+      "q": "Which three mRNA nucleotide triplets function as termination (stop) codons and are recognized by release factors rather than tRNAs?",
+      "options": [
+        "AUG, UGG, and UUU",
+        "UAA, UAG, and UGA",
+        "UAA, UAC, and UAU",
+        "GAA, GAG, and GAU"
+      ],
+      "answer": 1,
+      "explain": "UAA (ochre), UAG (amber), and UGA (opal) signal translation termination; AUG encodes methionine (start), and UGG encodes tryptophan (the only two amino acids with single codons).",
+      "verified": false,
+      "open": {
+        "q": "List the three mRNA stop (termination) codons.",
+        "accept": [
+          "UAA, UAG, and UGA",
+          "UAA, UAG, UGA"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Genetic Code and Mutations",
+      "q": "According to Crick's wobble hypothesis, which base position of the mRNA codon allows non-Watson-Crick base pairing with the 5' anticodon base (such as inosine) of tRNA?",
+      "options": [
+        "First (5') codon base",
+        "Second (middle) codon base",
+        "Third (3') codon base",
+        "All three codon bases equally"
+      ],
+      "answer": 2,
+      "explain": "The 3' (third) nucleotide of the mRNA codon pairs flexibly ('wobbles') with the 5' (first) nucleotide of the tRNA anticodon; inosine (I) at the 5' anticodon position can pair with U, C, or A.",
+      "verified": false,
+      "open": {
+        "q": "Which modified purine nucleoside frequently found at the 5' wobble position of tRNA anticodons can base-pair with U, C, or A?",
+        "accept": [
+          "Inosine",
+          "I"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Genetic Code and Mutations",
+      "q": "What is the functional difference between a missense mutation, a nonsense mutation, and a frameshift mutation?",
+      "options": [
+        "Missense introduces a stop codon; nonsense substitutes one amino acid; frameshift preserves the reading frame",
+        "Missense deletes a chromosome; nonsense changes gene expression; frameshift affects only introns",
+        "Missense substitutes an amino acid; nonsense creates a premature stop; frameshift alters downstream codons after a non-triplet insertion or deletion",
+        "All three mutations are silent and leave the encoded protein unchanged"
+      ],
+      "answer": 2,
+      "explain": "Missense mutations (e.g., Glu6Val in sickle cell disease) replace one amino acid; nonsense mutations introduce a premature stop codon (often triggering nonsense-mediated mRNA decay); indels not divisible by 3 shift the translational reading frame.",
+      "verified": false,
+      "open": {
+        "q": "What type of point mutation converts a sense codon into a premature termination codon (UAA, UAG, or UGA)?",
+        "accept": [
+          "Nonsense mutation",
+          "Nonsense"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-025",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Translation and Protein Synthesis",
+      "q": "To which specific conserved 3'-terminal trinucleotide sequence of every tRNA molecule does an aminoacyl-tRNA synthetase covalently attach its cognate amino acid?",
+      "options": [
+        "5'-AUG-3'",
+        "5'-TATA-3'",
+        "3'-CCA-5' (specifically the 3'-OH of the terminal adenosine)",
+        "5'-GU-AG-3'"
+      ],
+      "answer": 2,
+      "explain": "All mature tRNAs end with the sequence 5'-CCA-3' at their 3' acceptor stem; aminoacyl-tRNA synthetases hydrolyze ATP to AMP + PPi (2 high-energy bonds) to form a high-energy aminoacyl ester bond with the terminal adenosine.",
+      "verified": false,
+      "open": {
+        "q": "What three-nucleotide sequence is present at the 3' acceptor end of all mature tRNA molecules?",
+        "accept": [
+          "CCA",
+          "5'-CCA-3'",
+          "3'-CCA"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Translation and Protein Synthesis",
+      "q": "How do prokaryotic ribosomes accurately locate the initiator AUG start codon on polycistronic mRNA?",
+      "options": [
+        "The 40S ribosomal subunit scans from the 5' 7-methylguanosine cap",
+        "The 16S rRNA of the 30S small subunit base-pairs directly with a purine-rich Shine-Dalgarno sequence (~8-10 nucleotides upstream of AUG)",
+        "Rho factor places the ribosome onto the start codon",
+        "Poly(A)-binding protein loops the 3' tail to the start codon"
+      ],
+      "answer": 1,
+      "explain": "In prokaryotes, the 3' end of 16S rRNA binds the complementary Shine-Dalgarno consensus sequence (5'-AGGAGGU-3') upstream of the start codon, whereas eukaryotes use Kozak-sequence scanning from the 5' cap.",
+      "verified": false,
+      "open": {
+        "q": "Name the purine-rich prokaryotic mRNA sequence located upstream of the start codon that base-pairs with 16S rRNA during translation initiation.",
+        "accept": [
+          "Shine-Dalgarno sequence",
+          "Shine-Dalgarno"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-027",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Translation and Protein Synthesis",
+      "q": "Which macromolecular component of the large ribosomal subunit (23S rRNA in bacteria, 28S rRNA in eukaryotes) acts as a ribozyme to catalyze peptide bond formation?",
+      "options": [
+        "Peptidyl transferase rRNA",
+        "EF-Tu",
+        "eIF2",
+        "Signal recognition particle"
+      ],
+      "answer": 0,
+      "explain": "Peptide bond formation between the aminoacyl-tRNA in the A site and the peptidyl-tRNA in the P site is catalyzed not by a ribosomal protein, but by the 23S/28S ribosomal RNA itself (a catalytic ribozyme).",
+      "verified": false,
+      "open": {
+        "q": "Which specific ribosomal RNA molecule functions as the peptidyl transferase ribozyme in eukaryotic 60S ribosomal subunits?",
+        "accept": [
+          "28S rRNA",
+          "28S ribosomal RNA"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Translation and Protein Synthesis",
+      "q": "Which antibiotics inhibit bacterial translation by binding to the 30S small ribosomal subunit to cause mRNA misreading or block aminoacyl-tRNA entry into the A site?",
+      "options": [
+        "Macrolides (erythromycin) and clindamycin",
+        "Aminoglycosides (gentamicin, streptomycin) and tetracyclines",
+        "Rifampicin and actinomycin D",
+        "Ciprofloxacin and levofloxacin"
+      ],
+      "answer": 1,
+      "explain": "Aminoglycosides bind the 30S subunit to distort the decoding center and block initiation, while tetracyclines bind the 30S A site to prevent aminoacyl-tRNA attachment; macrolides, chloramphenicol, and clindamycin bind the 50S subunit.",
+      "verified": false,
+      "open": {
+        "q": "Which class of antibiotics binds the 30S ribosomal A site to block incoming aminoacyl-tRNAs during bacterial translation?",
+        "accept": [
+          "Tetracyclines",
+          "Tetracycline"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Translation and Protein Synthesis",
+      "q": "How do diphtheria toxin and Pseudomonas exotoxin A halt eukaryotic protein synthesis?",
+      "options": [
+        "Cleave 28S rRNA at the sarcin-ricin loop",
+        "Bind the 30S ribosomal subunit",
+        "ADP-ribosylate and inactivate eukaryotic elongation factor 2 (eEF-2), blocking ribosomal translocation",
+        "Inhibit RNA polymerase II"
+      ],
+      "answer": 2,
+      "explain": "Both diphtheria toxin and Pseudomonas aeruginosa exotoxin A catalyze NAD+-dependent ADP-ribosylation of a unique modified histidine (diphthamide) residue on eEF-2, preventing ribosome translocation along mRNA.",
+      "verified": false,
+      "open": {
+        "q": "Name the eukaryotic translation factor inactivated via ADP-ribosylation by diphtheria toxin and Pseudomonas exotoxin A.",
+        "accept": [
+          "eEF-2",
+          "Elongation factor 2",
+          "Eukaryotic elongation factor 2"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Translation and Protein Synthesis",
+      "q": "How are nascent secretory and integral membrane proteins targeted to the rough endoplasmic reticulum during translation?",
+      "options": [
+        "Ubiquitin chains guide ribosomes to the nuclear pore",
+        "SRP binds the emerging signal peptide, pauses translation and docks the ribosome at the ER translocon",
+        "Hsp60 transports secretory proteins through the mitochondrial membrane",
+        "Mannose-6-phosphate directs ribosomes to the rough ER"
+      ],
+      "answer": 1,
+      "explain": "SRP recognizes the hydrophobic N-terminal signal sequence, arrests elongation, and brings the ribosome-nascent chain complex to the ER membrane SRP receptor and Sec61 channel for co-translational translocation.",
+      "verified": false,
+      "open": {
+        "q": "Name the ribonucleoprotein complex that recognizes N-terminal hydrophobic signal peptides and targets translating ribosomes to the rough ER.",
+        "accept": [
+          "Signal recognition particle",
+          "SRP"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-031",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Gene Expression",
+      "q": "In the E. coli lac operon, under which combination of extracellular conditions is transcription maximally induced?",
+      "options": [
+        "High glucose and high lactose",
+        "High glucose and absent lactose",
+        "Low glucose (high cAMP-CAP) and high lactose (allolactose removes the lac repressor)",
+        "Low glucose and absent lactose"
+      ],
+      "answer": 2,
+      "explain": "Maximal lac operon transcription requires both removal of negative control (allolactose binds and inactivates the lacI repressor) and activation of positive control (low glucose raises cAMP, activating CAP/CRP to recruit RNA polymerase).",
+      "verified": false,
+      "open": {
+        "q": "Name the isomer of lactose that acts as the true intracellular inducer by binding and inactivating the lac repressor.",
+        "accept": [
+          "Allolactose"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-032",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Gene Expression",
+      "q": "How do histone acetyltransferases (HATs) and histone deacetylases (HDACs) epigenetically regulate eukaryotic chromatin structure and transcription?",
+      "options": [
+        "HATs condense chromatin, whereas HDACs loosen histone-DNA binding",
+        "HATs acetylate histone lysines and generally open chromatin; HDACs remove acetyl groups and generally promote compaction",
+        "HATs methylate DNA CpG islands, whereas HDACs remove DNA methylation",
+        "Both enzymes degrade histones during DNA replication"
+      ],
+      "answer": 1,
+      "explain": "Acetylating epsilon-amino groups of histone lysine residues eliminates their positive charge, weakening electrostatic attraction to negatively charged DNA phosphate backbones and opening euchromatin for transcription factors.",
+      "verified": false,
+      "open": {
+        "q": "What term describes transcriptionally active, loosely packed chromatin characterized by acetylated histones?",
+        "accept": [
+          "Euchromatin"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Gene Expression",
+      "q": "What is the usual effect of DNA methylation at cytosine residues within promoter CpG islands on gene expression?",
+      "options": [
+        "Strongly activates transcription by recruiting RNA polymerase II",
+        "Triggers alternative exon inclusion",
+        "Represses gene transcription by blocking transcription factor binding and recruiting methyl-CpG-binding proteins and HDACs",
+        "Increases mRNA half-life in the cytosol"
+      ],
+      "answer": 2,
+      "explain": "DNA methyltransferases convert cytosine to 5-methylcytosine at promoter CpG islands, leading to stable transcriptional silencing (important in genomic imprinting, X-inactivation, and tumor suppressor silencing).",
+      "verified": false,
+      "open": {
+        "q": "Does hypermethylation of promoter CpG islands typically activate or silence gene transcription?",
+        "accept": [
+          "Silence",
+          "Repress",
+          "Silences it",
+          "Inhibit"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-034",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Gene Expression",
+      "q": "How do microRNAs (miRNAs) and small interfering RNAs (siRNAs) post-transcriptionally silence gene expression in the cytoplasm?",
+      "options": [
+        "Bind promoter TATA boxes to block RNA polymerase II",
+        "Associate with the RNA-induced silencing complex (RISC) and base-pair with target mRNAs to trigger mRNA cleavage or translational repression",
+        "Splice out introns from pre-mRNA",
+        "Methylate tRNA anticodons"
+      ],
+      "answer": 1,
+      "explain": "Processed double-stranded miRNAs/siRNAs (cleaved by Drosha and Dicer) load into Argonaute-containing RISC, guiding sequence-specific degradation or translational inhibition of complementary target mRNAs.",
+      "verified": false,
+      "open": {
+        "q": "Name the cytosolic ribonuclease III enzyme that cleaves precursor hairpin RNAs into mature ~21-23 nucleotide miRNAs and siRNAs.",
+        "accept": [
+          "Dicer"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-035",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Gene Expression",
+      "q": "How does iron deficiency post-transcriptionally regulate the translation of ferritin mRNA versus the stability of transferrin receptor (TfR) mRNA?",
+      "options": [
+        "Iron regulatory proteins (IRPs) bind 5'-IRE on ferritin mRNA to block its translation and bind 3'-IREs on transferrin receptor mRNA to stabilize it and increase iron uptake",
+        "IRPs enhance ferritin translation and degrade transferrin receptor mRNA",
+        "Iron directly cleaves both mRNAs",
+        "IRPs promote transcription of hepcidin"
+      ],
+      "answer": 0,
+      "explain": "When cellular iron is low, IRPs bind iron-responsive elements (IREs): binding at the 5'-UTR of ferritin (and ALAS2) blocks ribosome initiation, while binding at the 3'-UTR of TfR mRNA protects it from endonuclease degradation.",
+      "verified": false,
+      "open": {
+        "q": "When intracellular iron is low, does IRP binding to the 5'-IRE of ferritin mRNA increase or decrease ferritin translation?",
+        "accept": [
+          "Decrease",
+          "Block",
+          "Inhibit",
+          "Decreases it"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-036",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "What are the three repeating temperature steps of each cycle in a standard Polymerase Chain Reaction (PCR) in chronological order?",
+      "options": [
+        "Annealing, denaturation, extension",
+        "Denaturation (~95 C), primer annealing (~50-65 C), and extension (~72 C)",
+        "Extension, annealing, denaturation",
+        "Denaturation, reverse transcription, ligation"
+      ],
+      "answer": 1,
+      "explain": "Each PCR cycle consists of heat denaturation (~94-95 C) to separate DNA strands, cooling (~50-65 C) for forward and reverse primer annealing, and extension (~72 C) by thermostable Taq DNA polymerase.",
+      "verified": false,
+      "open": {
+        "q": "State the three sequential steps of a single Polymerase Chain Reaction (PCR) thermal cycle in chronological order.",
+        "accept": [
+          "Denaturation, annealing, extension",
+          "Denaturation, primer annealing, and extension"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-037",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "Why is Taq DNA polymerase (isolated from Thermus aquaticus) essential for automated PCR thermal cycling?",
+      "options": [
+        "It possesses high 3' to 5' proofreading exonuclease activity",
+        "It can synthesize DNA without oligonucleotide primers",
+        "It is thermostable and retains enzymatic activity after repeated heating to 95 C during denaturation cycles",
+        "It uses RNA as a template directly"
+      ],
+      "answer": 2,
+      "explain": "Standard E. coli DNA polymerase denatures at 95 C; thermostable Taq polymerase (optimal at ~72 C) survives repeated high-temperature strand-separation cycles without needing fresh enzyme each cycle.",
+      "verified": false,
+      "open": {
+        "q": "From which thermophilic bacterium is Taq DNA polymerase isolated?",
+        "accept": [
+          "Thermus aquaticus"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-038",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "Which modification of PCR is required to detect and quantify RNA viruses (such as HIV, HCV, or SARS-CoV-2) or measure cellular mRNA expression levels?",
+      "options": [
+        "Nested DNA PCR without reverse transcriptase",
+        "Reverse transcription PCR (RT-PCR), which first converts RNA into complementary DNA (cDNA) using reverse transcriptase",
+        "Southern blotting",
+        "Western blotting"
+      ],
+      "answer": 1,
+      "explain": "Taq DNA polymerase requires a DNA template; therefore, reverse transcriptase must first synthesize complementary DNA (cDNA) from the RNA template before PCR amplification.",
+      "verified": false,
+      "open": {
+        "q": "Name the DNA copy synthesized from an mRNA or viral RNA template by reverse transcriptase prior to PCR amplification.",
+        "accept": [
+          "cDNA",
+          "Complementary DNA"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-039",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "In quantitative real-time PCR (qPCR), what does a lower cycle threshold (Ct) value indicate about the starting target nucleic acid concentration in a patient sample?",
+      "options": [
+        "A lower starting copy number of target nucleic acid",
+        "Complete absence of target nucleic acid",
+        "A higher starting copy number of target nucleic acid",
+        "Failure of primer annealing"
+      ],
+      "answer": 2,
+      "explain": "Because DNA doubles exponentially each cycle, samples with higher initial viral load or mRNA copy number cross the fluorescence detection threshold in fewer cycles (a lower Ct value).",
+      "verified": false,
+      "open": {
+        "q": "Does a higher initial viral load in a sample produce a higher or lower Ct (cycle threshold) value in real-time quantitative PCR?",
+        "accept": [
+          "Lower",
+          "A lower Ct value"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-040",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "Which blotting technique separates DNA fragments by gel electrophoresis, transfers them to a membrane, and detects specific DNA sequences using a labeled nucleic acid probe?",
+      "options": [
+        "Southern blot",
+        "Northern blot",
+        "Western blot",
+        "Southwestern blot"
+      ],
+      "answer": 0,
+      "explain": "Southern blot detects DNA (named after Edwin Southern); Northern blot detects RNA; Western blot detects proteins using antibodies (mnemonic: SNoW DRoP).",
+      "verified": false,
+      "open": {
+        "q": "Name the molecular blotting technique used to detect specific RNA molecules separated by electrophoresis.",
+        "accept": [
+          "Northern blot",
+          "Northern blotting"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-041",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "In Sanger dideoxy DNA sequencing, how do 2',3'-dideoxynucleoside triphosphates (ddNTPs) terminate DNA chain elongation?",
+      "options": [
+        "They lack a 5'-triphosphate group",
+        "They lack a 3'-hydroxyl (-OH) group required to form a phosphodiester bond with the next incoming dNTP",
+        "They cleave double-stranded DNA at palindromic sites",
+        "They irreversibly inhibit Taq polymerase active sites"
+      ],
+      "answer": 1,
+      "explain": "ddNTPs lack both 2'-OH and 3'-OH groups on the ribose sugar; once incorporated into a growing DNA strand, no further nucleotides can be added, generating nested fragments separated by capillary electrophoresis.",
+      "verified": false,
+      "open": {
+        "q": "Which functional group is absent at the 3' carbon of dideoxynucleotides (ddNTPs), causing chain termination in Sanger sequencing?",
+        "accept": [
+          "Hydroxyl group",
+          "3'-OH",
+          "3'-hydroxyl group",
+          "OH group"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-042",
+      "type": "mcq",
+      "level": 1,
+      "sub": "DNA Replication and Telomeres",
+      "q": "Which enzyme seals the final nick in the phosphodiester backbone between adjacent Okazaki fragments on the lagging strand?",
+      "options": [
+        "DNA helicase",
+        "Primase",
+        "DNA ligase",
+        "Topoisomerase I"
+      ],
+      "answer": 2,
+      "explain": "DNA ligase catalyzes phosphodiester bond formation between the 3'-OH of one DNA fragment and the 5'-phosphate of the adjacent fragment using ATP (eukaryotes) or NAD+ (bacteria).",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme that joins Okazaki fragments by forming a phosphodiester bond between adjacent 3'-OH and 5'-phosphate ends.",
+        "accept": [
+          "DNA ligase",
+          "Ligase"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-043",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA Damage and Repair Mechanisms",
+      "q": "Which enzymatic activity of replicative DNA polymerases immediately removes misincorporated nucleotides during DNA synthesis, increasing replication fidelity ~100-fold?",
+      "options": [
+        "5' to 3' exonuclease activity",
+        "3' to 5' exonuclease proofreading activity",
+        "Endonuclease activity",
+        "Reverse transcriptase activity"
+      ],
+      "answer": 1,
+      "explain": "When an incorrect base is inserted, distorted geometry slows forward polymerization and shifts the primer terminus into the 3' to 5' exonuclease active site to excise the mismatched nucleotide.",
+      "verified": false,
+      "open": {
+        "q": "Which directional exonuclease activity provides immediate proofreading during DNA synthesis by DNA polymerases?",
+        "accept": [
+          "3' to 5' exonuclease",
+          "3'-5' exonuclease",
+          "3' to 5'"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-044",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transcription and RNA Processing",
+      "q": "What is the role of enhancers in eukaryotic gene transcription?",
+      "options": [
+        "Enhancers encode the catalytic subunit of RNA polymerase II",
+        "Enhancers are regulatory DNA sequences that bind activators and stimulate transcription through promoter interactions",
+        "Enhancers terminate transcription by forming GC-rich hairpins",
+        "Enhancers are RNA sequences that degrade cytoplasmic mRNA"
+      ],
+      "answer": 1,
+      "explain": "Enhancers are position- and orientation-independent DNA elements that bind tissue-specific transcription factors (activators) and interact with general transcription factors at the promoter via DNA looping and Mediator.",
+      "verified": false,
+      "open": {
+        "q": "Name the multi-subunit coactivator complex that bridges DNA-bound activator proteins at enhancers to RNA polymerase II at the core promoter.",
+        "accept": [
+          "Mediator",
+          "Mediator complex"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-045",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transcription and RNA Processing",
+      "q": "How does alternative splicing increase proteomic diversity in humans?",
+      "options": [
+        "Mutates genomic DNA sequences in somatic tissues",
+        "Allows a single pre-mRNA transcript to be spliced in different exon combinations to produce multiple distinct protein isoforms",
+        "Translates introns into functional enzymes",
+        "Converts mRNA back into genomic DNA"
+      ],
+      "answer": 1,
+      "explain": "Although humans have only ~20,000 protein-coding genes, alternative exon inclusion/skipping allows over 90% of multi-exon genes to generate tissue-specific protein isoforms.",
+      "verified": false,
+      "open": {
+        "q": "What process allows a single pre-mRNA molecule to generate multiple distinct mRNAs and protein isoforms by varying exon combinations?",
+        "accept": [
+          "Alternative splicing",
+          "Alternative RNA splicing"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-046",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Translation and Protein Synthesis",
+      "q": "In eukaryotic translation, how does the 40S ribosomal subunit recognize the 5' end of mature mRNA?",
+      "options": [
+        "Binds directly to the Shine-Dalgarno sequence",
+        "The cap-binding complex eIF4F (specifically eIF4E) recognizes the 5' 7-methylguanosine cap and recruits the 43S pre-initiation complex",
+        "Binds directly to the stop codon",
+        "Recognizes internal poly(U) tracts"
+      ],
+      "answer": 1,
+      "explain": "eIF4E binds the 5' 7-methylguanosine cap, eIF4G bridges eIF4E to poly(A)-binding protein (circularizing the mRNA), and eIF4A unwinds 5'-UTR secondary structure so the 40S subunit can scan to the Kozak AUG start codon.",
+      "verified": false,
+      "open": {
+        "q": "Name the eukaryotic initiation factor that directly binds the 5' 7-methylguanosine cap of mRNA.",
+        "accept": [
+          "eIF4E",
+          "Eukaryotic initiation factor 4E"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-047",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Translation and Protein Synthesis",
+      "q": "How does the ubiquitin-proteasome system target misfolded or short-lived regulatory intracellular proteins (such as cyclins and p53) for degradation?",
+      "options": [
+        "Lysosomal enzymes digest proteins after they are secreted from the cell",
+        "E1, E2 and E3 enzymes attach polyubiquitin chains that target proteins to the 26S proteasome",
+        "Proteins are exported from the cell in vesicles for extracellular degradation",
+        "Ribosomal RNA binds cyclins and directs them to the nucleus"
+      ],
+      "answer": 1,
+      "explain": "Ubiquitin-activating (E1), ubiquitin-conjugating (E2), and ubiquitin-ligase (E3) enzymes attach Lys48-linked polyubiquitin chains that are recognized by the 19S regulatory cap of the 26S proteasome.",
+      "verified": false,
+      "open": {
+        "q": "Name the 76-amino-acid regulatory protein covalently attached to lysine residues to mark intracellular proteins for degradation by the 26S proteasome.",
+        "accept": [
+          "Ubiquitin"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-048",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Regulation of Gene Expression",
+      "q": "In the E. coli trp operon, how does attenuation finely regulate transcription in response to intracellular tryptophan levels?",
+      "options": [
+        "Tryptophan directly binds RNA polymerase and causes premature termination",
+        "Low tryptophan stalls the leader-peptide ribosome, favouring an antiterminator; high tryptophan permits a terminator hairpin to form",
+        "Tryptophan methylates the promoter and prevents RNA polymerase binding",
+        "The trp repressor degrades the completed mRNA when tryptophan is scarce"
+      ],
+      "answer": 1,
+      "explain": "Because bacteria lack a nuclear membrane, ribosomes translate the leader peptide (trpL) while RNA polymerase is still transcribing; low Trp-tRNA stalls the ribosome at Trp codons, favoring the 2:3 antiterminator loop instead of the 3:4 terminator hairpin.",
+      "verified": false,
+      "open": {
+        "q": "Why is transcriptional attenuation possible in prokaryotes like E. coli but not in eukaryotes?",
+        "accept": [
+          "Transcription and translation are coupled in the same compartment",
+          "Lack of a nuclear membrane allows simultaneous transcription and translation"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-049",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Polymerase Chain Reaction (PCR) and Molecular Techniques",
+      "q": "Why must PCR primers be designed as two distinct oligonucleotides (forward and reverse) flanking the target DNA region in opposite orientations?",
+      "options": [
+        "Primers bind the same DNA strand at the same end to prevent polymerase binding",
+        "Primers bind opposite strands with their 3′ ends facing inward, allowing DNA polymerase to copy the target",
+        "Primers bind RNA and direct reverse transcription of the entire genome",
+        "Primers remove introns before DNA amplification"
+      ],
+      "answer": 1,
+      "explain": "Forward and reverse primers hybridize to opposite strands at the 3' boundaries of the target sequence so that 5' to 3' extension from each primer's 3'-OH copies across the target region.",
+      "verified": false,
+      "open": {
+        "q": "Toward which direction (inward toward the target or outward away from the target) must the 3' ends of forward and reverse PCR primers point?",
+        "accept": [
+          "Inward",
+          "Toward the target",
+          "Toward each other"
+        ]
+      }
+    },
+    {
+      "id": "ba-molecular-biology-050",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Translation and Protein Synthesis",
+      "q": "What is a polyribosome (polysome)?",
+      "options": [
+        "A cluster of multiple ribosomes simultaneously translating a single mRNA molecule",
+        "A ribosome composed of 50S and 60S subunits",
+        "A storage granule of inactive tRNAs",
+        "A complex of DNA polymerase and helicase"
+      ],
+      "answer": 0,
+      "explain": "A polysome consists of multiple ribosomes spaced along a single mRNA transcript, each synthesizing a polypeptide chain simultaneously to maximize protein production efficiency.",
+      "verified": false,
+      "open": {
+        "q": "What term describes multiple ribosomes translating a single mRNA molecule simultaneously?",
+        "accept": [
+          "Polysome",
+          "Polyribosome",
+          "Ergosome"
+        ]
+      }
+    }
+  ]
 }
