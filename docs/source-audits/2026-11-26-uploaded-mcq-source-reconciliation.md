@@ -95,3 +95,16 @@ A further targeted pass added 4 questions from the physiology review coverage ar
 | pc-cardiac-output | 2 | 28 |
 
 The cumulative total is now **40 original questions** added during this reconciliation work. The two new topic files were also structurally checked after commit.
+
+## Follow-up question-quality pass — 26 November 2026
+
+A question-stem comparison across the 20 affected topic-bank files, followed by manual review of the closest matches, identified four repetitive additions. These were replaced in place (no net increase or decrease in the 40-question addition count):
+
+- `pi-accessory-organs-003`: replaced a second secretin/bicarbonate question with gallbladder bile concentration.
+- `enzmeng-39`: replaced a second competitive-inhibition question with the effect of enzyme concentration on Vmax and Km.
+- `pl-control-of-posture-and-movement-059`: replaced a repeated cerebellar truncal/limb ataxia item with cerebrocerebellar planning and timing.
+- `gr-lower-limb-121`: replaced a second tibial-nerve/plantarflexion deficit item with a posterior cruciate ligament clinical-test vignette.
+
+After these replacements, the 20 affected topic files were re-fetched from the current `main` branch and structurally checked again. All 20 parsed as JSON; question IDs were unique within each file; all records had a non-empty stem, four options, an in-range integer answer index and an explanation. A follow-up stem-similarity scan found no remaining close pairs in the four corrected banks. Other older similar-looking items elsewhere in the bank were not changed in this pass.
+
+All replacement items remain `verified: false`. This is a structural and redundancy check, not expert academic verification. Full page-by-page source reconciliation and OCR of the 336-page scanned Anatomy MCQ book remain outstanding.
