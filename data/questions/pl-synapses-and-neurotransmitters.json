@@ -8,7 +8,7 @@
    "sub": "Electrical vs Chemical Synapses",
    "q": "Which structural and functional features distinguish electrical synapses from chemical synapses in the human nervous system?",
    "options": [
-    "Electrical synapses use gap junctions for rapid direct ionic coupling; chemical synapses release neurotransmitter across a synaptic cleft",
+    "Electrical synapses use gap junctions; chemical synapses release transmitter across a cleft",
     "Electrical synapses use calcium-dependent vesicle fusion across a cleft",
     "Chemical synapses allow direct cytoplasmic continuity and are faster",
     "Electrical synapses are unidirectional; chemical synapses are always bidirectional"
@@ -101,7 +101,7 @@
    "sub": "Neuromuscular Junction Physiology",
    "q": "How is acetylcholine (ACh) synthesized inside cholinergic nerve terminals and packaged into synaptic vesicles?",
    "options": [
-    "ChAT synthesises ACh from choline and acetyl-CoA; VAChT loads it into synaptic vesicles",
+    "ChAT synthesises ACh; VAChT packages it into synaptic vesicles",
     "Acetylcholinesterase synthesises ACh in the synaptic cleft",
     "Tyrosine hydroxylase converts tyrosine to ACh",
     "Glutamate decarboxylase converts glutamate to ACh"
@@ -125,7 +125,7 @@
    "q": "What type of receptor is the adult skeletal muscle motor end-plate nicotinic acetylcholine receptor (Nm), and what ionic conductance change occurs when two molecules of ACh bind to it?",
    "options": [
     "Gi-protein-coupled metabotropic receptor that opens K+ channels",
-    "Nm receptor is a pentameric cation channel; two ACh molecules open it, causing net Na+ influx",
+    "Pentameric Nm cation channel; ACh binding causes net Na+ influx",
     "Tyrosine kinase receptor that phosphorylates actin directly",
     "Ligand-gated Cl- channel that hyperpolarizes the sarcolemma"
    ],
@@ -149,7 +149,7 @@
    "options": [
     "Acetylcholine is never degraded in the synaptic cleft",
     "The motor end-plate potential is an all-or-none spike",
-    "A single nerve impulse releases many ACh quanta, producing an end-plate potential well above the threshold for a muscle action potential",
+    "Synchronous release of many ACh quanta produces an EPP above muscle action-potential threshold",
     "Gap junctions connect motor axons directly to muscle fibres"
    ],
    "answer": 2,
@@ -173,7 +173,7 @@
     "COMT methylates ACh",
     "Intact ACh is transported directly into the nerve terminal",
     "Monoamine oxidase oxidises ACh in mitochondria",
-    "Acetylcholinesterase hydrolyses ACh into choline and acetate; choline is then taken back up"
+    "AChE hydrolyses ACh into choline and acetate; choline is recycled"
    ],
    "answer": 3,
    "explain": "AChE is one of the fastest known enzymes (~25,000 ACh molecules hydrolyzed per second per active site), clearing ACh within <1 ms so the end-plate can repolarize and respond to the next impulse.",
@@ -193,7 +193,7 @@
    "sub": "Neuromuscular Junction Physiology",
    "q": "How do competitive non-depolarizing neuromuscular blockers (such as tubocurarine or rocuronium) differ in mechanism from depolarizing blockers (such as succinylcholine)?",
    "options": [
-    "Non-depolarizing drugs competitively block Nm receptors; succinylcholine persistently activates them and causes depolarisation block",
+    "Non-depolarizers competitively block Nm; succinylcholine causes persistent depolarisation",
     "Non-depolarizing drugs inhibit acetylcholinesterase; succinylcholine blocks presynaptic calcium channels",
     "Succinylcholine is rapidly destroyed by synaptic acetylcholinesterase",
     "Both drug classes act only on receptors in the central nervous system"
@@ -263,7 +263,7 @@
    "q": "Why do inhibitory synapses on a multipolar neuron cluster disproportionately on the soma and axon initial segment (axosomatic and axoaxonic synapses) rather than on distal dendritic tips?",
    "options": [
     "Distal dendrites lack phospholipid bilayers",
-    "Perisomatic/initial-segment inhibition shunts dendritic EPSPs near the spike trigger zone",
+    "Perisomatic inhibition shunts EPSPs near the axon initial segment",
     "GABA receptors cannot function in dendritic membranes",
     "Axosomatic synapses amplify EPSPs tenfold"
    ],
@@ -309,7 +309,7 @@
    "q": "How does presynaptic facilitation (for example, serotonin-mediated sensitization in Aplysia or cAMP-PKA signaling in CNS terminals) increase neurotransmitter release?",
    "options": [
     "Opening presynaptic Cl- channels",
-    "Gs-cAMP-PKA signalling closes presynaptic K+ channels, prolonging the action potential and increasing Ca2+ entry",
+    "PKA closes presynaptic K+ channels, prolonging the spike and Ca2+ entry",
     "Inhibiting synaptotagmin",
     "Accelerating acetylcholinesterase activity"
    ],
@@ -379,7 +379,7 @@
    "options": [
     "They conduct only chloride ions during sleep",
     "They open only when GABA and glycine bind simultaneously",
-    "NMDA channels require glutamate binding and postsynaptic depolarisation to relieve Mg2+ block",
+    "Glutamate binding plus depolarisation removes Mg2+ block, permitting Ca2+ entry",
     "They remain open at rest without ligand"
    ],
    "answer": 2,
@@ -470,7 +470,7 @@
    "q": "How is the synaptic action of monoamine neurotransmitters (norepinephrine, dopamine, and serotonin) primarily terminated?",
    "options": [
     "Acetylcholinesterase cleavage in the synaptic cleft",
-    "Presynaptic reuptake by NET, DAT and SERT, followed by vesicular recycling or intracellular metabolism",
+    "Presynaptic reuptake by NET, DAT and SERT",
     "Diffusion into CSF without reuptake",
     "Binding to postsynaptic myosin"
    ],
@@ -516,7 +516,7 @@
    "q": "How do endocannabinoids (anandamide and 2-arachidonoylglycerol) and nitric oxide (NO) act as 'retrograde messengers' at central synapses?",
    "options": [
     "They are stored in presynaptic vesicles and released before an action potential",
-    "Postsynaptic activity triggers their synthesis; endocannabinoids and NO diffuse backward to modulate presynaptic release",
+    "Postsynaptic synthesis; retrograde diffusion modulates presynaptic release",
     "They permanently destroy the presynaptic terminal",
     "They travel from spinal cord to cortex through blood vessels"
    ],
@@ -539,7 +539,7 @@
    "q": "What cellular mechanism underlies long-term potentiation (LTP) in hippocampal CA1 pyramidal neurons following high-frequency tetanic stimulation?",
    "options": [
     "All AMPA receptors are removed from the postsynaptic density",
-    "NMDA-dependent Ca2+ entry activates CaMKII and promotes insertion of AMPA receptors into the postsynaptic membrane",
+    "NMDA-dependent Ca2+ activates CaMKII and inserts AMPA receptors",
     "Presynaptic Ca2+ channels are permanently blocked",
     "Glutamate is converted into glycine"
    ],
@@ -585,7 +585,7 @@
    "q": "What is 'synaptic fatigue' during prolonged, repetitive high-frequency stimulation of an excitatory synapse, and what is its protective physiological role?",
    "options": [
     "Complete depletion of postsynaptic actin filaments",
-    "Repeated activity exhausts the readily releasable vesicle pool faster than it can be replenished",
+    "Readily releasable vesicles are depleted faster than they can be replenished",
     "Permanent death of the presynaptic neuronal cell body",
     "Overproduction of myelin around the postsynaptic membrane"
    ],
@@ -607,7 +607,7 @@
    "sub": "Synaptic Properties: Delay, Fatigue, Convergence, Divergence",
    "q": "What is 'post-tetanic potentiation' (PTP) following a brief train of high-frequency presynaptic stimuli?",
    "options": [
-    "Residual presynaptic Ca2+ raises vesicle-release probability for seconds to minutes",
+    "Residual presynaptic Ca2+ transiently increases vesicle-release probability",
     "Permanent loss of synaptic transmission",
     "Hyperpolarization of the postsynaptic membrane to -120 mV",
     "Destruction of all synaptic cleft enzymes"
@@ -631,7 +631,7 @@
    "q": "How does Renshaw cell recurrent inhibition regulate alpha motor neuron firing in the spinal cord?",
    "options": [
     "Alpha-motor axon collaterals release glutamate onto Renshaw cells",
-    "Alpha-motor axon collaterals excite Renshaw cells, which release glycine to inhibit motor neurons",
+    "Motor-axon collaterals excite Renshaw cells, which release glycine to inhibit motor neurons",
     "Renshaw cells excite gamma motor neurons to cause spasm",
     "Renshaw cells inhibit only dorsal root ganglion cells"
    ],
@@ -654,7 +654,7 @@
    "q": "What is 'reciprocal innervation' (reciprocal inhibition) in spinal motor control?",
    "options": [
     "Agonist and antagonist muscles contract maximally together",
-    "Agonist motor neurons are excited while Ia inhibitory interneurons suppress antagonist motor neurons",
+    "Agonist activation is paired with Ia-interneuron inhibition of antagonist motor neurons",
     "Both muscle groups are inhibited during walking",
     "Flexor and extensor motor neurons are directly electrically coupled"
    ],
@@ -676,7 +676,7 @@
    "sub": "Synaptic Properties: Delay, Fatigue, Convergence, Divergence",
    "q": "How do 'reverberating (oscillatory) neuronal circuits' function in the central nervous system?",
    "options": [
-    "Recurrent collaterals re-excite earlier neurons, sustaining rhythmic output until inhibition or fatigue",
+    "Recurrent collaterals sustain firing until inhibition or synaptic fatigue",
     "They completely block all sensory input to the thalamus",
     "They convert action potentials into hormones",
     "They occur only in peripheral tendons"
@@ -699,7 +699,7 @@
    "sub": "Major Central Nervous System Neurotransmitters",
    "q": "How do ionotropic GABA-A receptors and metabotropic GABA-B receptors differ in their signaling mechanisms and speed of inhibition?",
    "options": [
-    "GABA-A is a fast ligand-gated Cl- channel; GABA-B is a slower Gi/o-coupled receptor that opens K+ channels and inhibits Ca2+ channels",
+    "GABA-A: fast Cl− channel; GABA-B: Gi/o receptor opening K+ and inhibiting Ca2+ channels",
     "GABA-A couples to Gs; GABA-B is a ligand-gated Na+ channel",
     "Both receptors open voltage-gated Ca2+ channels",
     "GABA-B is blocked by bicuculline; GABA-A is activated by baclofen"
@@ -746,7 +746,7 @@
    "q": "How does a metabotropic (G-protein-coupled) neurotransmitter receptor differ functionally from an ionotropic (ligand-gated ion channel) receptor?",
    "options": [
     "Ionotropic receptors act through gene transcription; metabotropic receptors form fast ion channels",
-    "Ionotropic receptors are ligand-gated channels; metabotropic receptors signal through G proteins and second messengers",
+    "Ionotropic: ligand-gated channel; metabotropic: G-protein/second-messenger pathway",
     "Metabotropic receptors never influence membrane ion channels",
     "Ionotropic receptors are found only in the adrenal cortex"
    ],
@@ -768,7 +768,7 @@
    "sub": "Neuropeptides, Unconventional Transmitters, and Plasticity",
    "q": "What is long-term depression (LTD) in cerebellar Purkinje neurons or hippocampal CA1 synapses?",
    "options": [
-    "LTD is a persistent reduction in synaptic strength involving AMPA-receptor dephosphorylation and internalisation",
+    "LTD reduces synaptic strength via AMPA dephosphorylation and internalisation",
     "A permanent doubling of postsynaptic AMPA receptors",
     "Overgrowth of myelin across the synaptic cleft",
     "Conversion of inhibitory synapses into gap junctions"
@@ -815,7 +815,7 @@
    "q": "A 32-year-old woman presents with fluctuating diplopia, bilateral ptosis, dysarthria, and proximal limb weakness that worsens toward the evening and improves with rest. Repetitive nerve stimulation shows a decremental compound muscle action potential response, and intravenous edrophonium rapidly restores muscle strength. Which autoantibody causes myasthenia gravis?",
    "options": [
     "Autoantibodies target presynaptic P/Q-type Ca2+ channels",
-    "IgG autoantibodies target postsynaptic nicotinic ACh receptors at the neuromuscular junction",
+    "IgG autoantibodies target postsynaptic nicotinic ACh receptors",
     "Autoantibodies target spinal glycine receptors",
     "Autoantibodies target oligodendrocyte myelin basic protein"
    ],
@@ -860,7 +860,7 @@
    "sub": "Clinical Correlations",
    "q": "A 40-year-old agricultural worker is brought to the emergency department after accidental exposure to an organophosphate insecticide (parathion), exhibiting pinpoint pupils (miosis), profuse salivation, bronchorrhea, bradycardia, diarrhea, and skeletal muscle fasciculations followed by paralysis. How do atropine and pralidoxime (2-PAM) treat this poisoning?",
    "options": [
-    "Atropine blocks muscarinic receptors; pralidoxime reactivates acetylcholinesterase before ageing",
+    "Atropine blocks muscarinic receptors; pralidoxime reactivates AChE before ageing",
     "Atropine activates nicotinic receptors; pralidoxime destroys ACh",
     "Both drugs block voltage-gated Na+ channels",
     "Atropine blocks GABA-A receptors; pralidoxime stimulates renin"
@@ -884,7 +884,7 @@
    "q": "A 67-year-old man develops resting 'pill-rolling' tremor, cogwheel rigidity, bradykinesia, and postural instability due to degeneration of pigmented dopaminergic neurons in the substantia nigra pars compacta. Why is oral L-DOPA combined with carbidopa rather than administering dopamine directly?",
    "options": [
     "Dopamine crosses the blood-brain barrier, but L-DOPA does not",
-    "L-DOPA crosses the blood-brain barrier; carbidopa limits its peripheral conversion to dopamine",
+    "L-DOPA crosses the BBB; carbidopa limits peripheral conversion to dopamine",
     "Carbidopa converts dopamine into serotonin in the liver",
     "Dopamine destroys striatal GABA-A receptors"
    ],
