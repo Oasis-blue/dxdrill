@@ -419,3 +419,19 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 @media (prefers-reduced-motion:reduce){.spin{animation:none;border-top-color:var(--line);border-style:dotted}}
 
 .qimgfail{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px;border:1.5px dashed var(--line);border-radius:10px;background:var(--surface);color:var(--muted);font-size:15px}
+
+/* Optional visual learning panel: independent of practice and safe to omit offline. */
+.dx-media-launch{margin:14px 0;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.dx-media-state{padding:12px;color:var(--muted);font-size:14px}
+.dx-media-panel{display:grid;gap:12px;margin-top:12px}
+.dx-media-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dx-media-summary{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:10px}
+.dx-media-summary img{width:104px;max-width:34%;height:auto;object-fit:contain;border-radius:8px}
+.dx-media-summary p{margin:6px 0;font-size:14px;line-height:1.5}
+.dx-media-summary a,.dx-media-panel a{font-size:13px;color:var(--accent)}
+.dx-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.dx-media-grid figure{min-width:0;margin:0;padding:8px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.dx-media-grid img{display:block;width:100%;height:130px;object-fit:contain;border-radius:6px}
+.dx-media-grid figcaption{margin-top:7px;font-size:11px;line-height:1.45;color:var(--muted);overflow-wrap:anywhere}
+.dx-media-note{font-size:12px;color:var(--muted);margin:0}
+@media(max-width:420px){.dx-media-summary{display:block}.dx-media-summary img{width:100%;max-width:100%;max-height:150px;margin-bottom:8px}}

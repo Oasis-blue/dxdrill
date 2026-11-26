@@ -140,7 +140,9 @@
       '<div class="top"><span>Question ' + (r.i + 1) + ' of ' + total + (study ? " · " + right + "/" + answered.length + " correct" : "") + '</span><button data-act="quit">Quit</button></div>' +
       '<div class="track"><i style="width:' + DX.pct(r.i + (locked ? 1 : 0), total) + '%"></i></div>' +
       '<div class="chips" style="margin-top:18px"><span class="chip">' + esc(subOf(q)) + '</span><span class="chip">' + (LEVELS[q.level] || "Core") + '</span>' + (q.verified ? '<span class="chip">Verified</span>' : '<span class="chip warn">Unverified</span>') + '</div>' +
-      DX.qImg(q) + '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' + explain + '<div>' + reportHtml(q) + '</div>' +
+      DX.qImg(q) + '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' + explain +
+      (locked ? '<section class="dx-media-launch"><button class="btn ghost small" data-act="media">Explore visual references for this topic</button><div id="dx-media-results" aria-live="polite"></div></section>' : '') +
+      '<div>' + reportHtml(q) + '</div>' +
       '<div class="actions">' + (showNext ? '<button class="btn primary" style="width:100%" data-act="next"' + (it.pick === null ? ' aria-disabled="true"' : "") + '>' + (last ? "See results" : "Next question") + '</button>' : "") + '</div></div>';
   }
   function finish() {
@@ -237,7 +239,10 @@
     var b = e.target.closest("[data-act]");
     if (!b || b.disabled) return;
     var a = b.getAttribute("data-act");
-    if (a === "rep-open") { P.report = { id: b.getAttribute("data-id"), status: "form", reason: "wrong_answer", note: "" }; keepScroll(); }
+    if (a === "media") {
+      var item = P.run && P.run.items[P.run.i], target = document.getElementById("dx-media-results");
+      if (item && target && DX.media) DX.media.render(target, subOf(item.q));
+    } else if (a === "rep-open") { P.report = { id: b.getAttribute("data-id"), status: "form", reason: "wrong_answer", note: "" }; keepScroll(); }
     else if (a === "rep-cancel") { P.report = null; keepScroll(); }
     else if (a === "rep-send") {
       var R = P.report; if (!R || R.status === "sending") return;
