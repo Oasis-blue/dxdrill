@@ -2896,6 +2896,294 @@
       ],
       "verified": false,
       "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pa-general-001",
+      "type": "tf",
+      "topic": "pa-general",
+      "level": 2,
+      "sub": "Cellular adaptation and injury",
+      "q": "About cellular adaptation and injury:",
+      "items": [
+        {
+          "text": "Hypertrophy is an increase in the size of individual cells.",
+          "answer": true,
+          "explain": "Hypertrophy increases cell size and therefore can enlarge an organ without increasing cell number."
+        },
+        {
+          "text": "Hyperplasia is an increase in the number of cells in a tissue.",
+          "answer": true,
+          "explain": "Hyperplasia results from increased cell proliferation and may occur physiologically or pathologically."
+        },
+        {
+          "text": "Metaplasia is always an irreversible change and inevitably progresses to cancer.",
+          "answer": false,
+          "explain": "Metaplasia is an adaptive, potentially reversible replacement of one differentiated cell type by another; persistent stimuli may increase neoplastic risk but progression is not inevitable."
+        },
+        {
+          "text": "Atrophy may involve reduced cell size and, in some tissues, reduced cell number.",
+          "answer": true,
+          "explain": "Atrophy can result from decreased workload, denervation, reduced blood supply, inadequate nutrition, loss of endocrine stimulation or ageing."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507710/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK557534/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pa-general-002",
+      "type": "tf",
+      "topic": "pa-general",
+      "level": 2,
+      "sub": "Cell death and necrosis",
+      "q": "Regarding cell death and necrosis:",
+      "items": [
+        {
+          "text": "Coagulative necrosis is commonly associated with ischaemic infarction in solid organs, except the brain.",
+          "answer": true,
+          "explain": "Ischaemia in most solid organs produces coagulative necrosis; cerebral infarction typically produces liquefactive necrosis."
+        },
+        {
+          "text": "Liquefactive necrosis is characterised by enzymatic digestion of dead cells into a liquid mass.",
+          "answer": true,
+          "explain": "Hydrolytic enzymes digest the tissue, classically in bacterial or fungal infections and in brain infarction."
+        },
+        {
+          "text": "Apoptosis typically causes marked inflammation in surrounding tissue.",
+          "answer": false,
+          "explain": "Apoptotic cells are usually packaged into membrane-bound bodies and rapidly cleared, generally provoking little inflammation."
+        },
+        {
+          "text": "Necrosis commonly involves loss of plasma-membrane integrity and leakage of intracellular contents.",
+          "answer": true,
+          "explain": "Membrane damage releases cellular contents and can trigger an inflammatory response in surrounding tissue."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507710/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK557534/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pa-general-003",
+      "type": "tf",
+      "topic": "pa-general",
+      "level": 2,
+      "sub": "Acute inflammation",
+      "q": "About acute inflammation:",
+      "items": [
+        {
+          "text": "Vasodilation contributes to increased blood flow at an acutely inflamed site.",
+          "answer": true,
+          "explain": "Vascular changes increase local blood flow and contribute to redness and heat."
+        },
+        {
+          "text": "Increased vascular permeability allows protein-rich fluid to enter the extravascular tissue.",
+          "answer": true,
+          "explain": "Endothelial gaps and other permeability changes permit plasma proteins and fluid to escape, producing an exudate."
+        },
+        {
+          "text": "Neutrophils are commonly prominent early cellular responders in acute inflammation.",
+          "answer": true,
+          "explain": "Neutrophils are rapidly recruited from the circulation and are typical early effector cells in acute inflammation."
+        },
+        {
+          "text": "Histamine generally causes sustained arteriolar vasoconstriction at the site of acute inflammation.",
+          "answer": false,
+          "explain": "Histamine is an important mediator of vasodilation and increased vascular permeability, not sustained arteriolar vasoconstriction."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507799/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7171462/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pa-general-004",
+      "type": "tf",
+      "topic": "pa-general",
+      "level": 2,
+      "sub": "Neoplasia fundamentals",
+      "q": "About basic neoplasia:",
+      "items": [
+        {
+          "text": "A benign neoplasm generally remains localised and does not metastasise.",
+          "answer": true,
+          "explain": "Benign tumours may cause harm by compression or hormone production, but by definition they do not metastasise."
+        },
+        {
+          "text": "Malignant neoplasms have the capacity to invade surrounding tissues.",
+          "answer": true,
+          "explain": "Invasion into adjacent tissue is a defining feature of malignancy."
+        },
+        {
+          "text": "All malignant tumours arise from epithelial tissue and are therefore carcinomas.",
+          "answer": false,
+          "explain": "Malignant tumours may arise from epithelial, mesenchymal, haematolymphoid and other cell lineages; carcinoma refers specifically to malignant epithelial neoplasms."
+        },
+        {
+          "text": "Metastasis is the development of tumour deposits discontinuous with the primary tumour.",
+          "answer": true,
+          "explain": "Metastasis describes spread to anatomically discontinuous sites, through lymphatic, haematogenous or other routes."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK557534/",
+        "https://www.ncbi.nlm.nih.gov/nlmcatalog/101311282"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-general-001",
+      "type": "tf",
+      "topic": "pm-general",
+      "level": 2,
+      "sub": "Pharmacokinetics",
+      "q": "About pharmacokinetics:",
+      "items": [
+        {
+          "text": "Pharmacokinetics describes the absorption, distribution, metabolism and excretion of drugs.",
+          "answer": true,
+          "explain": "These four processes are commonly summarised as ADME and describe how the body handles a drug."
+        },
+        {
+          "text": "Bioavailability is the fraction of an administered dose that reaches the systemic circulation unchanged.",
+          "answer": true,
+          "explain": "For an intravenous dose, bioavailability is conventionally 100%; oral bioavailability may be reduced by incomplete absorption and first-pass metabolism."
+        },
+        {
+          "text": "The oral route completely avoids first-pass metabolism by the liver.",
+          "answer": false,
+          "explain": "Many orally absorbed drugs pass through the portal circulation and liver before reaching systemic circulation, where presystemic metabolism may occur."
+        },
+        {
+          "text": "A drug's volume of distribution is a proportionality term relating the amount of drug in the body to its plasma concentration.",
+          "answer": true,
+          "explain": "Apparent volume of distribution is calculated as the amount of drug in the body divided by plasma drug concentration; it is not necessarily an anatomical fluid volume."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK557744/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK595006/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-general-002",
+      "type": "tf",
+      "topic": "pm-general",
+      "level": 2,
+      "sub": "Pharmacodynamics",
+      "q": "About pharmacodynamics and drug-receptor interactions:",
+      "items": [
+        {
+          "text": "Pharmacodynamics concerns the effects of drugs on the body and their mechanisms of action.",
+          "answer": true,
+          "explain": "It includes receptor interactions, mechanisms, dose-response relationships and the resulting biological effects."
+        },
+        {
+          "text": "A full agonist can produce the maximal response of a system under the conditions studied.",
+          "answer": true,
+          "explain": "A full agonist has sufficient efficacy to produce the system's maximal response in the assay or physiological system."
+        },
+        {
+          "text": "A competitive antagonist with reversible binding can always be overcome by increasing agonist concentration.",
+          "answer": false,
+          "explain": "A reversible competitive antagonist can often be surmounted by increasing agonist concentration; the word 'always' is too absolute across all receptor systems and conditions. This statement is therefore false."
+        },
+        {
+          "text": "Potency and efficacy describe the same pharmacological property.",
+          "answer": false,
+          "explain": "Potency concerns the dose or concentration needed for an effect, whereas efficacy concerns the maximum effect a drug can produce."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK595006/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-general-003",
+      "type": "tf",
+      "topic": "pm-general",
+      "level": 2,
+      "sub": "Drug elimination and half-life",
+      "q": "About drug elimination:",
+      "items": [
+        {
+          "text": "For a drug following first-order elimination, a constant fraction of the drug is eliminated per unit time.",
+          "answer": true,
+          "explain": "First-order elimination rate is proportional to drug concentration, so the fraction eliminated per unit time is constant."
+        },
+        {
+          "text": "For a drug with first-order kinetics, the elimination half-life is generally independent of concentration.",
+          "answer": true,
+          "explain": "With linear first-order elimination and constant clearance and distribution volume, half-life remains constant over the relevant concentration range."
+        },
+        {
+          "text": "Zero-order elimination removes a constant fraction of the drug per unit time.",
+          "answer": false,
+          "explain": "Zero-order elimination removes a constant amount per unit time when elimination pathways are saturated, rather than a constant fraction."
+        },
+        {
+          "text": "Reduced renal function can prolong the elimination of drugs that depend substantially on renal excretion.",
+          "answer": true,
+          "explain": "Lower renal clearance may increase drug exposure and prolong half-life, requiring dose or interval adjustment for some medicines."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK557744/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK595006/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pm-general-004",
+      "type": "tf",
+      "topic": "pm-general",
+      "level": 2,
+      "sub": "Adverse drug effects and safety",
+      "q": "About adverse drug effects and medicine safety:",
+      "items": [
+        {
+          "text": "An adverse drug reaction is a harmful or unintended response to a medicine used at normally intended doses.",
+          "answer": true,
+          "explain": "This describes the conventional definition of an adverse drug reaction; harm from overdose or medication error is classified separately in many frameworks."
+        },
+        {
+          "text": "A drug with a narrow therapeutic index may require closer monitoring because the effective and toxic concentration ranges are relatively close.",
+          "answer": true,
+          "explain": "Small changes in exposure can cause loss of efficacy or toxicity, so monitoring and careful dose adjustment may be important."
+        },
+        {
+          "text": "A side effect is necessarily harmful and always requires discontinuation of the medicine.",
+          "answer": false,
+          "explain": "Side effects may be unwanted but are not invariably serious or a reason to stop treatment; management depends on severity, benefit and alternatives."
+        },
+        {
+          "text": "Drug interactions can alter pharmacokinetics, pharmacodynamics or both.",
+          "answer": true,
+          "explain": "Interactions may affect absorption, metabolism or elimination, or modify effects at receptors and physiological systems."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK507791/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
     }
   ]
 }
