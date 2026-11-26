@@ -3679,6 +3679,188 @@
         "https://www.ncbi.nlm.nih.gov/sites/books/NBK482473/",
         "https://www.ncbi.nlm.nih.gov/sites/books/NBK554579/"
       ]
+    },
+    {
+      "id": "tf-pag-inflammation-healing-and-repair-001",
+      "type": "tf",
+      "topic": "pag-inflammation-healing-and-repair",
+      "level": 2,
+      "sub": "Acute and chronic inflammation",
+      "q": "About the cellular and tissue features of inflammation:",
+      "items": [
+        {
+          "text": "Neutrophils commonly predominate in the early cellular infiltrate of acute inflammation.",
+          "answer": true,
+          "explain": "Neutrophils are typically the predominant leukocytes during the first 6–24 hours of an acute inflammatory response."
+        },
+        {
+          "text": "Monocytes and macrophages commonly become more prominent after the initial neutrophilic response.",
+          "answer": true,
+          "explain": "Monocytes enter the tissue and differentiate into macrophages, which become more prominent around 24–48 hours and help clear debris."
+        },
+        {
+          "text": "Chronic inflammation is characterised exclusively by neutrophils and has no associated tissue repair.",
+          "answer": false,
+          "explain": "Chronic inflammation typically involves macrophages, lymphocytes and plasma cells, with ongoing tissue injury and attempts at repair such as fibrosis."
+        },
+        {
+          "text": "Complete resolution is the inevitable outcome of every episode of acute inflammation.",
+          "answer": false,
+          "explain": "Outcome depends on the extent of injury, tissue regenerative capacity and persistence of the stimulus; fibrosis or progression to chronic inflammation may occur."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK556083/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK534820/"
+      ]
+    },
+    {
+      "id": "tf-pas-alimentary-system-and-hepatobiliary-001",
+      "type": "tf",
+      "topic": "pas-alimentary-system-and-hepatobiliary",
+      "level": 2,
+      "sub": "Peptic ulcer disease",
+      "q": "About the causes and pathology of peptic ulcer disease:",
+      "items": [
+        {
+          "text": "Helicobacter pylori infection is a major cause of peptic ulcer disease.",
+          "answer": true,
+          "explain": "H. pylori is one of the two major causes of peptic ulcer disease, alongside NSAID-associated mucosal injury."
+        },
+        {
+          "text": "NSAIDs can promote gastric ulceration by reducing protective prostaglandin synthesis.",
+          "answer": true,
+          "explain": "Cyclo-oxygenase inhibition reduces prostaglandin-mediated mucus and bicarbonate secretion, mucosal blood flow and epithelial protection."
+        },
+        {
+          "text": "H. pylori-associated chronic gastritis can progress through atrophy and intestinal metaplasia to gastric adenocarcinoma.",
+          "answer": true,
+          "explain": "In a subset of patients, chronic active gastritis may progress through atrophic gastritis, intestinal metaplasia and dysplasia before adenocarcinoma."
+        },
+        {
+          "text": "A benign peptic ulcer is defined by invasion through the muscularis propria into the serosa.",
+          "answer": false,
+          "explain": "A peptic ulcer extends through the muscularis mucosae; extension through the muscularis propria is a feature of a penetrating or complicated ulcer, not the defining criterion."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK534792/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK537128/"
+      ]
+    },
+    {
+      "id": "tf-pas-urinary-system-002",
+      "type": "tf",
+      "topic": "pas-urinary-system",
+      "level": 2,
+      "sub": "Diabetic nephropathy",
+      "q": "About the renal pathology of diabetic nephropathy:",
+      "items": [
+        {
+          "text": "Thickening of the glomerular basement membrane is among the characteristic structural changes of diabetic nephropathy.",
+          "answer": true,
+          "explain": "Glomerular basement membrane thickening is an early characteristic lesion and may be present before clinically apparent albuminuria."
+        },
+        {
+          "text": "Kimmelstiel–Wilson nodules represent nodular glomerulosclerosis.",
+          "answer": true,
+          "explain": "These nodular mesangial lesions are the characteristic light-microscopic feature of class III diabetic nephropathy."
+        },
+        {
+          "text": "Arteriolar hyalinosis in diabetic nephropathy is restricted to the efferent arteriole.",
+          "answer": false,
+          "explain": "Hyalinosis may affect both afferent and efferent arterioles; involvement of both is a useful pathological clue."
+        },
+        {
+          "text": "The presence of Kimmelstiel–Wilson nodules is required for every case of advanced diabetic renal dysfunction.",
+          "answer": false,
+          "explain": "Diabetic kidney disease can progress with diffuse glomerulosclerosis and tubulointerstitial injury; nodules are characteristic but are not required for severe dysfunction."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK534200/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK571720/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK279103/"
+      ]
+    },
+    {
+      "id": "tf-ps-drugs-acting-on-the-respiratory-system-001",
+      "type": "tf",
+      "topic": "ps-drugs-acting-on-the-respiratory-system",
+      "level": 2,
+      "sub": "Beta-2 adrenergic agonists",
+      "q": "About beta-2 adrenergic agonists used in obstructive airway disease:",
+      "items": [
+        {
+          "text": "Activation of beta-2 receptors in bronchial smooth muscle increases intracellular cyclic AMP.",
+          "answer": true,
+          "explain": "Beta-2 receptor coupling to Gs stimulates adenylyl cyclase, increasing cAMP and promoting smooth-muscle relaxation."
+        },
+        {
+          "text": "Salbutamol is a short-acting beta-2 agonist used for rapid relief of bronchospasm.",
+          "answer": true,
+          "explain": "Inhaled salbutamol acts rapidly and is commonly used as a short-acting bronchodilator for symptom relief."
+        },
+        {
+          "text": "Tremor, tachycardia and hypokalaemia can occur with beta-2 agonist treatment.",
+          "answer": true,
+          "explain": "Systemic beta-adrenergic effects can produce skeletal-muscle tremor, cardiovascular stimulation and intracellular potassium shift."
+        },
+        {
+          "text": "Long-acting beta-2 agonists should be used alone for routine asthma control without inhaled corticosteroid therapy.",
+          "answer": false,
+          "explain": "In asthma, LABAs should not be used as monotherapy; they are used with inhaled corticosteroid treatment to address airway inflammation and reduce risk."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK559069/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK542249/"
+      ]
+    },
+    {
+      "id": "tf-ps-antimalarial-and-anthelmintic-drugs-001",
+      "type": "tf",
+      "topic": "ps-antimalarial-and-anthelmintic-drugs",
+      "level": 2,
+      "sub": "Artemisinin-based combination therapy",
+      "q": "About artemisinin-based combination therapy for malaria:",
+      "items": [
+        {
+          "text": "Artemisinin-based combination therapies pair an artemisinin derivative with a partner antimalarial drug.",
+          "answer": true,
+          "explain": "ACTs combine an artemisinin derivative with a partner medicine that has a complementary role in clearing residual parasites."
+        },
+        {
+          "text": "The artemisinin component rapidly reduces the parasite biomass during the first few days of treatment.",
+          "answer": true,
+          "explain": "Artemisinin derivatives rapidly reduce circulating parasite numbers, while the partner drug helps eliminate remaining parasites."
+        },
+        {
+          "text": "Oral artemisinin derivatives should routinely be prescribed as monotherapy for uncomplicated falciparum malaria.",
+          "answer": false,
+          "explain": "WHO recommends combination treatment; oral artemisinin monotherapy contributes to resistance and is not recommended."
+        },
+        {
+          "text": "WHO recommends confirming suspected malaria parasitologically with microscopy or a rapid diagnostic test before treatment whenever testing is available.",
+          "answer": true,
+          "explain": "WHO recommends parasitological confirmation before antimalarial treatment when diagnostic testing is accessible."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.who.int/news-room/questions-and-answers/item/artemisinin-resistance",
+        "https://www.who.int/teams/global-malaria-programme/case-management/treatment",
+        "https://www.ncbi.nlm.nih.gov/books/NBK588130/"
+      ]
     }
   ]
 }
