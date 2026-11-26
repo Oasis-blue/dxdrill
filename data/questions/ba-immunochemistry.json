@@ -793,13 +793,13 @@
    "sub": "Monoclonal Antibodies and Immunotherapy",
    "q": "How do chimeric, humanized, and fully human monoclonal antibodies differ in sequence composition and immunogenicity (HAMA response)?",
    "options": [
-    "Chimeric antibodies have mouse variable and human constant regions; humanized antibodies retain mainly mouse CDRs; fully human antibodies have human sequences",
-    "Chimeric antibodies are entirely human; humanized antibodies are entirely mouse",
-    "Humanized antibodies have mouse constant and human variable regions",
-    "All three formats have identical sequences"
+    "Chimeric: mouse variable/human constant; humanised: mainly mouse CDRs; fully human: human sequence",
+    "Chimeric: fully human; humanised: fully mouse; fully human: mouse variable/human constant",
+    "Chimeric: mouse constant/human variable; humanised: human CDRs only; fully human: mouse framework",
+    "All three formats have identical sequences and immunogenicity"
    ],
    "answer": 0,
-   "explain": "Reducing non-human sequence from chimeric (-ximab) to humanized (-zumab) to fully human (-umab) decreases human anti-mouse antibody (HAMA) responses, prolongs half-life, and improves Fc effector compatibility.",
+   "explain": "Reducing non-human sequence from chimeric (-ximab) to humanized (-zumab) to fully human (-umab) decreases human anti-mouse antibody (HAMA) responses, prolongs half-life, and improves Fc effector compatibility. Chimeric antibodies combine mouse variable regions with human constant regions; humanised antibodies retain mainly the mouse antigen-binding CDRs on a human framework; fully human antibodies have human sequences. In general, reducing non-human sequence reduces immunogenicity.",
    "verified": false,
    "open": {
     "q": "In a humanized monoclonal antibody, which antigen-contacting loops from the non-human antibody are grafted onto a human antibody framework?",
