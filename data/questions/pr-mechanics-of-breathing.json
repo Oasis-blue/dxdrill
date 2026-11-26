@@ -31,10 +31,10 @@
    "sub": "Muscles of Respiration",
    "q": "How do the external intercostal muscles expand the thoracic cavity during inspiration?",
    "options": [
-    "They depress the ribs downward and inward",
-    "Their fibers run downward and forward, elevating the ribs via 'pump-handle' (upper ribs increasing anteroposterior diameter) and 'bucket-handle' (lower ribs increasing transverse diameter) movements",
-    "They compress the abdominal viscera upward against the diaphragm",
-    "They contract exclusively during quiet expiration"
+    "They pull the ribs downward and inward, reducing thoracic volume during inspiration.",
+    "They elevate the ribs, increasing anteroposterior and transverse thoracic diameters.",
+    "They compress abdominal organs upward to initiate expiration.",
+    "They relax during inspiration and contract only during forced expiration."
    ],
    "answer": 1,
    "explain": "External intercostals elevate the ribs outward and upward, enlarging both the anteroposterior and transverse diameters of the rib cage alongside vertical descent of the diaphragm.",
@@ -146,10 +146,10 @@
    "sub": "Respiratory Pressures and Boyle's Law",
    "q": "How is 'transpulmonary pressure' (PTP) defined, and what physiological role does it serve?",
    "options": [
-    "PTP = Alveolar pressure minus Intrapleural pressure (PA - Ppl); it is the distending pressure across the lung wall that keeps alveoli open against elastic recoil",
-    "PTP = Intrapleural pressure minus Atmospheric pressure",
-    "PTP = Arterial PO2 minus Venous PO2",
-    "PTP = Tidal volume divided by respiratory rate"
+    "Alveolar pressure minus intrapleural pressure; this distending pressure opposes elastic recoil and keeps the lung expanded.",
+    "Intrapleural pressure minus atmospheric pressure; this pressure drives airflow through the conducting airways.",
+    "Alveolar pressure minus atmospheric pressure; this is the pressure gradient for airflow at the mouth.",
+    "Atmospheric pressure minus pulmonary arterial pressure; this maintains perfusion of alveoli."
    ],
    "answer": 0,
    "explain": "At FRC, PA = 0 cmH2O and Ppl = -5 cmH2O, so PTP = 0 - (-5) = +5 cmH2O; during quiet inspiration, PTP rises to +8 cmH2O to expand the alveoli.",
@@ -192,10 +192,10 @@
    "sub": "Lung and Chest Wall Compliance",
    "q": "How is pulmonary compliance (CL) defined mathematically, and what is the normal compliance of the isolated human lungs versus the combined lung-chest wall respiratory system?",
    "options": [
-    "CL = Change in lung volume divided by change in transpulmonary pressure (Delta V / Delta P); isolated lung compliance is ~0.2 L/cmH2O (200 mL/cmH2O), and combined lung-chest wall compliance is ~0.1 L/cmH2O (100 mL/cmH2O)",
-    "CL = Delta P / Delta V; normal value is 50 cmH2O/L",
-    "CL = Airway resistance times respiratory rate",
-    "Combined lung-chest wall compliance is twice as high as isolated lung compliance"
+    "Compliance is ΔV/ΔP; isolated lung compliance is about 0.2 L/cmH2O, while combined lung–chest wall compliance is about 0.1 L/cmH2O.",
+    "Compliance is ΔP/ΔV; isolated lung compliance is about 0.1 L/cmH2O, while combined compliance is about 0.2 L/cmH2O.",
+    "Compliance is airway resistance multiplied by respiratory rate, measured in cmH2O/L/s.",
+    "Combined lung–chest wall compliance is twice isolated lung compliance because the chest wall adds recoil."
    ],
    "answer": 0,
    "explain": "Because the lungs and chest wall act in series, their elastances add (1/C_total = 1/C_lung + 1/C_chest wall), so combined compliance (~0.1 L/cmH2O) is half of isolated lung compliance (~0.2 L/cmH2O).",
@@ -215,10 +215,10 @@
    "sub": "Lung and Chest Wall Compliance",
    "q": "How do emphysema and pulmonary fibrosis shift the static pressure-volume (compliance) curve of the lung?",
    "options": [
-    "Emphysema shifts the curve upward and to the left (increased compliance, decreased elastic recoil, higher FRC); pulmonary fibrosis shifts the curve downward and to the right (decreased compliance, increased elastic recoil, lower FRC)",
-    "Emphysema decreases compliance; pulmonary fibrosis increases compliance",
-    "Both emphysema and fibrosis shift the curve upward and to the left",
-    "Neither disease alters lung compliance"
+    "Emphysema increases compliance and FRC; fibrosis decreases compliance and FRC because the lungs become stiff.",
+    "Emphysema decreases compliance and FRC; fibrosis increases compliance and FRC because recoil is reduced.",
+    "Both diseases increase compliance and shift the pressure–volume curve upward and leftward.",
+    "Neither disease changes lung recoil or the static pressure–volume relationship."
    ],
    "answer": 0,
    "explain": "Emphysema destroys alveolar elastin fibers (high compliance, poor outward expiratory recoil, air trapping), whereas fibrosis deposits stiff interstitial collagen (low compliance, high work of breathing).",
@@ -353,10 +353,10 @@
    "sub": "Airway Resistance and Poiseuille's Law",
    "q": "Which anatomical region of the tracheobronchial tree contributes the GREATEST fraction of total airway resistance in a healthy human lung, and why?",
    "options": [
-    "Terminal and respiratory bronchioles (<2 mm diameter), because each individual bronchiole is tiny",
-    "Medium-sized segmental and lobar bronchi (generations 3 to 7), because although individual peripheral bronchioles are narrower, they are arranged in massive parallel networks with huge total cross-sectional area",
-    "Alveolar ducts and alveolar sacs",
-    "The nasal cavity has zero resistance"
+    "Medium-sized bronchi contribute most resistance; numerous parallel peripheral airways have a large combined cross-sectional area.",
+    "Terminal bronchioles contribute most resistance because each has a small diameter and there are few parallel pathways.",
+    "Alveolar ducts contribute most resistance because their walls are thin and their total cross-sectional area is low.",
+    "The trachea contributes no resistance because it is supported by cartilage rings."
    ],
    "answer": 1,
    "explain": "Because resistances in parallel add reciprocally (1/R_total = 1/R1 + 1/R2 + ...), the millions of small peripheral airways (<2 mm, the 'silent zone') contribute <10-20% of total resistance, while medium bronchi (~generations 4-7) represent the bottleneck.",
@@ -376,10 +376,10 @@
    "sub": "Airway Resistance and Poiseuille's Law",
    "q": "How do lung volume, autonomic neurotransmitters, and local alveolar PCO2 regulate bronchial smooth muscle tone and airway resistance?",
    "options": [
-    "High lung volume increases radial traction (lowering resistance); beta-2 adrenergic agonists and high local PCO2 cause bronchodilation; parasympathetic muscarinic (M3) stimulation, histamine, leukotrienes, and low PCO2 cause bronchoconstriction",
-    "Parasympathetic vagal stimulation causes potent bronchodilation; beta-2 agonists cause bronchoconstriction",
-    "Low lung volume decreases airway resistance",
-    "High local PCO2 causes severe bronchoconstriction"
+    "High lung volume and β2 stimulation dilate airways; vagal M3 activity, histamine, and leukotrienes constrict them.",
+    "Low lung volume and β2 stimulation constrict airways; vagal M3 activity and histamine dilate them.",
+    "High local CO2 causes bronchoconstriction, while low CO2 causes bronchodilation in all lung regions.",
+    "Parasympathetic stimulation relaxes bronchial smooth muscle, while sympathetic stimulation causes constriction."
    ],
    "answer": 0,
    "explain": "At high lung volumes, surrounding elastic parenchyma pulls radially on airway walls (radial traction), widening airways; local hypocapnia constricts airways to divert ventilation away from underperfused alveoli.",
@@ -422,10 +422,10 @@
    "sub": "Dynamic Airway Compression and Equal Pressure Point",
    "q": "Why do patients with severe emphysema instinctively breathe out through 'pursed lips'?",
    "options": [
-    "Pursed-lip breathing increases oral resistance, raising intraluminal airway pressure upstream and shifting the equal pressure point proximally toward larger cartilage-supported airways to prevent premature small-airway collapse",
-    "Pursed-lip breathing lowers alveolar pressure to -40 cmH2O",
-    "Pursed-lip breathing paralyzes the diaphragm",
-    "Pursed-lip breathing increases dead space tenfold"
+    "Pursed-lip expiration raises airway pressure and delays small-airway collapse by moving the equal-pressure point toward larger airways.",
+    "Pursed-lip expiration lowers alveolar pressure and accelerates collapse of unsupported small airways.",
+    "It increases inspiratory resistance to recruit additional alveoli and raise total lung capacity.",
+    "It suppresses diaphragmatic contraction and reduces the work of inspiration."
    ],
    "answer": 0,
    "explain": "In emphysema, loss of elastic recoil lowers alveolar driving pressure and causes early dynamic collapse of small airways; creating back-pressure at the lips keeps intraluminal pressure higher than intrapleural pressure longer, stenting airways open.",
@@ -445,10 +445,10 @@
    "sub": "Work of Breathing and Closing Capacity",
    "q": "What are the two major components of the mechanical work of breathing during quiet respiration, and what percentage of total resting body oxygen consumption does quiet breathing normally require?",
    "options": [
-    "Elastic work (overcoming lung/chest wall elastic recoil and surface tension, ~65%) and resistive work (overcoming airway resistance and tissue viscosity, ~35%); normally consumes only ~1-3% of total resting VO2",
-    "Elastic work accounts for 1% and resting breathing consumes 40% of total body VO2",
-    "Work of breathing consists solely of cardiac output",
-    "Quiet breathing consumes zero ATP"
+    "Elastic recoil and tissue/airway resistance make up the work; quiet breathing normally uses about 1–3% of resting oxygen consumption.",
+    "Airway resistance accounts for nearly all work, and quiet breathing uses about 30–40% of resting oxygen consumption.",
+    "Cardiac contraction is the main component of respiratory work, with negligible oxygen use by breathing muscles.",
+    "Quiet breathing requires no ATP because elastic recoil supplies all inspiratory and expiratory work."
    ],
    "answer": 0,
    "explain": "Normally breathing is remarkably energy-efficient (~1-3% of resting O2 uptake), but in severe COPD or restrictive fibrosis, work of breathing can rise to >25-30% of total O2 consumption, precipitating ventilatory muscle fatigue.",
@@ -468,10 +468,10 @@
    "sub": "Work of Breathing and Closing Capacity",
    "q": "How do patients with restrictive lung disease (low compliance, high elastic work) versus obstructive lung disease (high airway resistance, high resistive work) alter their breathing pattern to minimize work of breathing?",
    "options": [
-    "Restrictive patients adopt rapid, shallow breathing (high frequency, small tidal volume) to minimize elastic work; obstructive patients adopt slow, deep breathing (low frequency, larger tidal volume) to minimize turbulent airway resistance",
-    "Restrictive patients take very slow, huge breaths; obstructive patients pant rapidly",
-    "Both restrictive and obstructive patients adopt identical rapid shallow breathing",
-    "Neither group changes respiratory rate or tidal volume"
+    "Restrictive disease favours rapid, shallow breaths; obstructive disease favours slower, deeper breaths to reduce resistive work.",
+    "Restrictive disease favours slow, deep breaths; obstructive disease favours rapid, shallow breaths to reduce elastic work.",
+    "Both conditions require rapid, shallow breathing because this always minimises elastic and resistive work.",
+    "Neither condition changes respiratory rate or tidal volume during spontaneous breathing."
    ],
    "answer": 0,
    "explain": "Because elastic work scales with the square of tidal volume (V_T^2 / 2C) while resistive work scales with airflow velocity (frequency), each group unconsciously selects the rate-depth combination minimizing total energy cost.",
@@ -514,10 +514,10 @@
    "sub": "Lung Volumes, Capacities, and Dead Space",
    "q": "Which of the four standard static lung volumes CANNOT be measured directly by simple spirometry, and how is it measured clinically?",
    "options": [
-    "Tidal volume (VT), measured by pulse oximetry",
-    "Inspiratory reserve volume (IRV), measured by capnography",
-    "Residual volume (RV, ~1,200 mL)—along with capacities containing RV (FRC and TLC)—which must be measured indirectly by helium dilution, nitrogen washout, or whole-body plethysmography",
-    "Expiratory reserve volume (ERV), measured by arterial blood gas"
+    "Tidal volume, measured with a spirometer during quiet breathing.",
+    "Inspiratory reserve volume, measured by recording maximal inspiration after a normal breath.",
+    "Residual volume, and capacities containing it, require gas dilution, washout, or body plethysmography.",
+    "Expiratory reserve volume, measured by arterial blood gas analysis after quiet expiration."
    ],
    "answer": 2,
    "explain": "Because residual volume (~1.2 L) remains in the lungs even after maximal forced expiration, spirometry only measures exhaled/inhaled volume changes; body plethysmography (using Boyle's law) measures all thoracic gas including trapped bullous gas.",
@@ -583,10 +583,10 @@
    "sub": "Clinical Correlations",
    "q": "A premature male neonate born at 28 weeks of gestation develops tachypnea, nasal flaring, intercostal retractions, expiratory grunting, and cyanosis within 2 hours of birth. Chest radiograph reveals diffuse ground-glass reticulogranular infiltrates with air bronchograms. What is the underlying pathophysiology of neonatal respiratory distress syndrome (NRDS)?",
    "options": [
-    "Inadequate pulmonary surfactant synthesis by immature Type II pneumocytes (low lecithin-to-sphingomyelin ratio <1.5), causing high alveolar surface tension, low compliance, diffuse microatelectasis, and intrapulmonary right-to-left shunting",
-    "Excessive surfactant secretion causing alveolar overdistension",
-    "Autoimmune destruction of phrenic motor neurons",
-    "Congenital absence of hemoglobin alpha chains"
+    "Immature type II pneumocytes produce too little surfactant, raising surface tension and causing low compliance and atelectasis.",
+    "Excess surfactant lowers surface tension excessively, causing alveolar overexpansion and air trapping.",
+    "Phrenic nerve injury prevents diaphragmatic contraction and produces diffuse neonatal atelectasis.",
+    "Alpha-globin deficiency reduces oxygen carriage and causes ground-glass lung infiltrates."
    ],
    "answer": 0,
    "explain": "Mature surfactant production surges after ~34-35 weeks gestation (accelerated by maternal antenatal betamethasone); surfactant deficiency collapses alveoli (Laplace's law), treated with CPAP and exogenous intratracheal surfactant.",
@@ -606,10 +606,10 @@
    "sub": "Clinical Correlations",
    "q": "A 23-year-old tall, thin man presents with sudden right-sided pleuritic chest pain and dyspnea. Examination reveals absent breath sounds, hyperresonance to percussion on the right, and tracheal deviation to the left. What happens to ipsilateral intrapleural pressure, lung volume, and chest wall volume in a pneumothorax?",
    "options": [
-    "Air enters the pleural space, abolishing the negative intrapleural pressure (rising toward 0 cmH2O or positive in tension pneumothorax); the right lung collapses inward to its minimal volume while the right chest wall springs outward",
-    "Intrapleural pressure drops to -40 cmH2O and the right lung expands to twice normal size",
-    "Both lungs expand simultaneously while the chest wall collapses inward",
-    "Transpulmonary pressure increases to +25 cmH2O"
+    "Pleural air abolishes negative pressure; the affected lung recoils inward while the chest wall springs outward.",
+    "Pleural pressure becomes more negative, expanding the affected lung and pulling the chest wall inward.",
+    "Both lungs expand because transpulmonary pressure rises equally on both sides.",
+    "The affected lung remains expanded while the opposite chest wall collapses inward."
    ],
    "answer": 0,
    "explain": "Normally, the lung pulls inward and the chest wall springs outward across the sealed negative-pressure pleural space; breaking the pleural seal lets each structure recoil to its own equilibrium volume (collapsed lung, expanded hemithorax).",
@@ -652,10 +652,10 @@
    "sub": "Clinical Correlations",
    "q": "A 64-year-old retired sandblaster presents with progressive dry cough, dyspnea, bibasilar fine end-inspiratory crackles, and spirometry showing FVC 54% predicted, FEV1 58% predicted, FEV1/FVC ratio of 86%, and TLC 56% predicted. Why is the FEV1/FVC ratio normal or elevated in restrictive pulmonary fibrosis?",
    "options": [
-    "Increased interstitial collagen raises lung elastic recoil, which stiffens the lung (reducing FVC and TLC proportionally) while exerting increased radial traction that holds airways wide open during expiration",
-    "Bronchial smooth muscle is completely paralyzed",
-    "Total lung capacity is doubled",
-    "Airway resistance is increased 16-fold"
+    "Fibrosis stiffens the lung and lowers FVC and TLC; increased elastic recoil helps keep airways open during expiration.",
+    "Fibrosis increases lung compliance and raises FVC, while reduced recoil causes early airway closure.",
+    "Fibrosis primarily increases airway resistance, reducing FEV1 far more than FVC.",
+    "Fibrosis doubles TLC while leaving FVC unchanged and reducing the FEV1/FVC ratio."
    ],
    "answer": 0,
    "explain": "In restrictive parenchymal fibrosis, both FVC and FEV1 fall proportionally (keeping FEV1/FVC normal or >80%) because high elastic recoil and radial tethering maintain high expiratory flow relative to the reduced lung volume.",
