@@ -54,10 +54,10 @@
    "sub": "Contractile and Regulatory Proteins of Muscle",
    "q": "Which gigantic elastic sarcomeric protein anchors thick myosin filaments to the Z-disc and contributes to passive muscle elasticity?",
    "options": [
-    "Nebulin, an actin-binding length regulator",
-    "Alpha-actinin, a Z-disc actin crosslinker",
-    "Titin, a giant elastic spring protein",
-    "Desmin, an intermediate filament protein"
+    "Nebulin",
+    "Alpha-actinin",
+    "Titin",
+    "Desmin"
    ],
    "answer": 2,
    "explain": "Titin (connectin) is the largest known human polypeptide, spanning from the Z-disc to the M-line to center myosin filaments and provide passive restoring force.",
@@ -77,10 +77,10 @@
    "sub": "Contractile and Regulatory Proteins of Muscle",
    "q": "Which protein links the intracellular actin cytoskeleton of skeletal muscle fibers to the extracellular matrix via the sarcolemmal dystroglycan complex, and is absent in Duchenne muscular dystrophy?",
    "options": [
-    "Utrophin, a fetal homolog of dystrophin",
-    "Spectrin, an erythrocyte cytoskeletal protein",
-    "Vinculin, a focal adhesion plaque protein",
-    "Dystrophin, a subsarcolemmal anchor protein"
+    "Utrophin",
+    "Spectrin",
+    "Vinculin",
+    "Dystrophin"
    ],
    "answer": 3,
    "explain": "Dystrophin anchors intracellular F-actin to transmembrane beta-dystroglycan; its absence causes sarcolemmal tearing during contraction, leading to Duchenne muscular dystrophy.",
@@ -335,10 +335,10 @@
    "sub": "Muscle Bioenergetics and Fiber Types",
    "q": "Which monomeric heme protein in Type I (slow-twitch) skeletal and cardiac muscle stores oxygen and facilitates intracellular oxygen diffusion to mitochondria?",
    "options": [
-    "Hemoglobin A, the tetrameric erythrocyte oxygen carrier",
-    "Neuroglobin, the neuronal oxygen-binding globin",
-    "Myoglobin, the monomeric muscle oxygen store",
-    "Cytochrome c, the mitochondrial electron carrier"
+    "Hemoglobin A",
+    "Neuroglobin",
+    "Myoglobin",
+    "Cytochrome c"
    ],
    "answer": 2,
    "explain": "Myoglobin is a single-polypeptide globin with a hyperbolic oxygen dissociation curve and a much lower P50 (~2.8 mmHg) than hemoglobin, releasing O2 to mitochondria during intense muscle work.",
@@ -382,10 +382,10 @@
    "sub": "Muscle Bioenergetics and Fiber Types",
    "q": "During prolonged moderate-intensity aerobic exercise, how does skeletal muscle fuel utilization shift over time?",
    "options": [
-    "Shifts from glycogen and blood glucose toward plasma free fatty acids",
-    "Shifts exclusively to amino acid oxidation within the first ten minutes",
-    "Relies solely on phosphocreatine stores throughout an entire marathon",
-    "Switches from fatty acid oxidation to anaerobic lactate production"
+    "Shifts progressively from muscle glycogen and blood glucose toward plasma free fatty acids mobilized from adipose tissue",
+    "Shifts exclusively to amino acid oxidation within 10 minutes",
+    "Relies solely on phosphocreatine throughout a marathon",
+    "Switches from fatty acids to anaerobic lactate production"
    ],
    "answer": 0,
    "explain": "Initial exercise consumes phosphocreatine and muscle glycogen, but as duration extends beyond 30-60 minutes, epinephrine and falling insulin stimulate lipolysis, making plasma free fatty acids the dominant aerobic fuel.",
@@ -406,10 +406,10 @@
    "sub": "Muscle Bioenergetics and Fiber Types",
    "q": "In the glucose-alanine (Cahill) cycle, why does exercising skeletal muscle export amino nitrogen to the liver as alanine rather than free ammonia?",
    "options": [
-    "Free ammonia cannot cross skeletal muscle capillary walls",
-    "Alanine safely carries nitrogen from BCAA transamination to the liver",
-    "Skeletal muscle contains a complete functional urea cycle",
-    "Alanine directly stimulates hepatic glycogenolysis and gluconeogenesis"
+    "Free ammonia cannot cross capillary walls",
+    "Alanine safely carries non-toxic nitrogen derived from branched-chain amino acid transamination with pyruvate to the liver for urea synthesis and gluconeogenesis",
+    "Skeletal muscle contains a complete urea cycle",
+    "Alanine directly stimulates hepatic glycogenolysis"
    ],
    "answer": 1,
    "explain": "Muscle lacks urea cycle enzymes; transaminating pyruvate with glutamate forms non-toxic alanine, which travels to the liver to be converted back into glucose (for muscle) and urea (for renal excretion).",
@@ -429,10 +429,10 @@
    "sub": "Clinical Correlations of Muscle Biochemistry",
    "q": "A 32-year-old man is rescued after being trapped under collapsed concrete for 8 hours and develops dark brown urine, acute kidney injury, hyperkalemia, and a serum creatine kinase of 85,000 U/L. Which heme protein released from damaged myocytes causes acute tubular necrosis?",
    "options": [
-    "Hemoglobin, released from intravascular hemolysis",
-    "Haptoglobin, the plasma hemoglobin-binding protein",
-    "Myoglobin, released from damaged skeletal myocytes",
-    "Ceruloplasmin, the plasma copper-transport protein"
+    "Hemoglobin",
+    "Haptoglobin",
+    "Myoglobin",
+    "Ceruloplasmin"
    ],
    "answer": 2,
    "explain": "Crush injury causes rhabdomyolysis, releasing massive amounts of myoglobin into plasma; filtered myoglobin precipitates in renal tubules and generates free radicals, causing pigment-induced acute tubular necrosis.",
@@ -451,9 +451,9 @@
    "sub": "Clinical Correlations of Muscle Biochemistry",
    "q": "Why does cardiac muscle troponin I (cTnI) provide greater diagnostic specificity for myocardial infarction than total serum creatine kinase (CK)?",
    "options": [
-    "Total CK is never elevated in patients with myocardial infarction",
-    "cTnI is cleared from plasma within 30 minutes of chest pain onset",
-    "Total CK is expressed exclusively in cardiac muscle tissue",
+    "Total CK is never elevated in myocardial infarction",
+    "cTnI is cleared within 30 minutes of chest pain onset",
+    "Total CK is expressed exclusively in cardiac muscle",
     "cTnI is unique to cardiomyocytes, whereas total CK also rises after skeletal muscle injury"
    ],
    "answer": 3,
