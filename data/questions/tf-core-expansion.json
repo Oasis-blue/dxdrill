@@ -1859,6 +1859,435 @@
       ],
       "verified": false,
       "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-gh-epithelium-001",
+      "type": "tf",
+      "topic": "gh-epithelium",
+      "level": 2,
+      "sub": "Epithelial tissue",
+      "q": "About epithelial tissue:",
+      "items": [
+        {
+          "text": "Epithelial cells are usually closely packed, with relatively little intercellular matrix.",
+          "answer": true,
+          "explain": "Epithelia form continuous sheets of closely apposed cells, so the extracellular matrix between neighbouring epithelial cells is limited."
+        },
+        {
+          "text": "A typical epithelium contains blood vessels running between its epithelial cells.",
+          "answer": false,
+          "explain": "Epithelial tissue is avascular. It receives nutrients by diffusion from vessels in the underlying connective tissue across the basement membrane."
+        },
+        {
+          "text": "The basal surface of an epithelium is associated with a basement membrane.",
+          "answer": true,
+          "explain": "The basement membrane supports and anchors the epithelium and separates it from the underlying connective tissue."
+        },
+        {
+          "text": "Simple squamous epithelium is well suited to rapid diffusion across thin surfaces.",
+          "answer": true,
+          "explain": "Its single layer of flattened cells provides a short diffusion distance, as seen in alveoli and the endothelial lining of blood vessels."
+        }
+      ],
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+        "https://www.ncbi.nlm.nih.gov/books/NBK554544/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-gh-connective-001",
+      "type": "tf",
+      "topic": "gh-connective-tissue",
+      "level": 2,
+      "sub": "Connective tissue",
+      "q": "Regarding connective tissue:",
+      "items": [
+        {
+          "text": "Connective tissue generally contains cells embedded in an extracellular matrix.",
+          "answer": true,
+          "explain": "A defining feature of connective tissue is its extracellular matrix, composed of ground substance and fibres produced by resident cells."
+        },
+        {
+          "text": "Collagen fibres provide high tensile strength to many connective tissues.",
+          "answer": true,
+          "explain": "Collagen fibres resist stretching forces and contribute substantially to the tensile strength of tendons, ligaments, dermis and other connective tissues."
+        },
+        {
+          "text": "Mature cartilage is normally supplied directly by blood vessels within its matrix.",
+          "answer": false,
+          "explain": "Cartilage is avascular. Nutrients diffuse through its matrix from the perichondrium or, in articular cartilage, from synovial fluid."
+        },
+        {
+          "text": "Adipose tissue is a specialised form of connective tissue.",
+          "answer": true,
+          "explain": "Adipose tissue consists predominantly of adipocytes within a supporting connective-tissue framework and functions in energy storage, insulation and signalling."
+        }
+      ],
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-sh-cardiac-histology-001",
+      "type": "tf",
+      "topic": "sh-cardiovascular-system",
+      "level": 2,
+      "sub": "Cardiovascular histology",
+      "q": "About the histology of blood vessels and the heart:",
+      "items": [
+        {
+          "text": "The tunica intima is the innermost layer of a typical blood vessel.",
+          "answer": true,
+          "explain": "The tunica intima lines the vascular lumen and includes endothelium with a thin supporting subendothelial layer."
+        },
+        {
+          "text": "The tunica media contains smooth muscle and may contain elastic fibres.",
+          "answer": true,
+          "explain": "The tunica media is composed chiefly of smooth muscle and elastic tissue, with its relative thickness varying among vessel types."
+        },
+        {
+          "text": "Veins generally have thicker tunica media than accompanying arteries of similar size.",
+          "answer": false,
+          "explain": "Arteries generally have a thicker tunica media to withstand and regulate higher pulsatile pressures; veins have thinner walls and larger lumens."
+        },
+        {
+          "text": "Cardiac muscle fibres are joined end-to-end by intercalated discs.",
+          "answer": true,
+          "explain": "Intercalated discs connect cardiomyocytes mechanically and electrically, helping the myocardium contract as a coordinated functional syncytium."
+        }
+      ],
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-emb-pharyngeal-001",
+      "type": "tf",
+      "topic": "se-pharyngeal-apparatus",
+      "level": 2,
+      "sub": "Pharyngeal apparatus",
+      "q": "Regarding the pharyngeal apparatus:",
+      "items": [
+        {
+          "text": "The first pharyngeal arch contributes to the maxilla and mandible through its maxillary and mandibular prominences.",
+          "answer": true,
+          "explain": "The first arch divides into maxillary and mandibular prominences, which contribute to much of the upper and lower jaw regions."
+        },
+        {
+          "text": "The muscles of mastication are derived from the first pharyngeal arch.",
+          "answer": true,
+          "explain": "First-arch mesenchyme gives rise to the muscles of mastication, supplied by the mandibular division of the trigeminal nerve."
+        },
+        {
+          "text": "The facial nerve is the principal nerve of the second pharyngeal arch.",
+          "answer": true,
+          "explain": "The second arch is associated with the facial nerve (CN VII), which supplies its derivative muscles including muscles of facial expression."
+        },
+        {
+          "text": "The third pharyngeal arch is supplied by the hypoglossal nerve.",
+          "answer": false,
+          "explain": "The third pharyngeal arch is associated with the glossopharyngeal nerve (CN IX); the hypoglossal nerve supplies most tongue muscles and is not the third-arch nerve."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK544358/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-emb-gametogenesis-001",
+      "type": "tf",
+      "topic": "emb-gametes-fertilization",
+      "level": 2,
+      "sub": "Gametogenesis and fertilization",
+      "q": "About gametogenesis and fertilisation:",
+      "items": [
+        {
+          "text": "Primary oocytes begin meiosis before birth and remain arrested in prophase I until maturation resumes.",
+          "answer": true,
+          "explain": "Oogonia enter meiosis during fetal life; primary oocytes remain arrested in prophase I, with selected oocytes resuming meiosis after puberty."
+        },
+        {
+          "text": "A secondary oocyte is normally ovulated while arrested in metaphase II.",
+          "answer": true,
+          "explain": "The LH surge leads to completion of meiosis I; the secondary oocyte begins meiosis II and is ovulated while arrested at metaphase II."
+        },
+        {
+          "text": "Spermatogenesis normally begins during fetal life and is completed before birth.",
+          "answer": false,
+          "explain": "Spermatogonial development begins before birth, but active spermatogenesis begins at puberty and continues through adult reproductive life."
+        },
+        {
+          "text": "Fertilisation usually occurs in the ampulla of the uterine tube.",
+          "answer": true,
+          "explain": "The ampulla is the usual site of fertilisation, where sperm and the ovulated secondary oocyte commonly meet."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK557691/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK532300/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pr-acidbase-001",
+      "type": "tf",
+      "topic": "phys-renal-acidbase",
+      "level": 2,
+      "sub": "Renal acid-base physiology",
+      "q": "Regarding renal regulation of acid-base balance:",
+      "items": [
+        {
+          "text": "The kidneys contribute to acid-base regulation by reabsorbing filtered bicarbonate.",
+          "answer": true,
+          "explain": "Reclaiming filtered bicarbonate prevents loss of this major extracellular buffer and is an important renal contribution to pH homeostasis."
+        },
+        {
+          "text": "Type A intercalated cells in the collecting duct can secrete hydrogen ions.",
+          "answer": true,
+          "explain": "Type A (alpha) intercalated cells secrete H+ into tubular fluid and return newly generated bicarbonate to the blood during acidosis."
+        },
+        {
+          "text": "The kidneys normally excrete most of the daily acid load as free hydrogen ions at very low urine pH.",
+          "answer": false,
+          "explain": "Because free H+ excretion is limited by the minimum achievable urine pH, most net acid is excreted buffered as ammonium and titratable acid."
+        },
+        {
+          "text": "Ammoniagenesis in the proximal tubule helps the kidney excrete acid as ammonium.",
+          "answer": true,
+          "explain": "Proximal tubular metabolism of glutamine generates ammonium for urinary excretion and new bicarbonate that can be returned to the circulation."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538339/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK554411/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pr-micturition-001",
+      "type": "tf",
+      "topic": "phys-micturition",
+      "level": 2,
+      "sub": "Micturition",
+      "q": "About the micturition reflex:",
+      "items": [
+        {
+          "text": "The detrusor muscle forms the muscular wall of the urinary bladder.",
+          "answer": true,
+          "explain": "The detrusor is the smooth muscle layer of the bladder wall and contracts to expel urine during voiding."
+        },
+        {
+          "text": "Parasympathetic outflow from sacral spinal segments promotes detrusor contraction.",
+          "answer": true,
+          "explain": "Pelvic parasympathetic nerves from S2–S4 activate muscarinic pathways that contract the detrusor during micturition."
+        },
+        {
+          "text": "The external urethral sphincter is composed of smooth muscle under involuntary control only.",
+          "answer": false,
+          "explain": "The external urethral sphincter is skeletal muscle under somatic control, allowing voluntary modulation of continence."
+        },
+        {
+          "text": "The pontine micturition centre coordinates bladder contraction with relaxation of the outlet.",
+          "answer": true,
+          "explain": "The pontine micturition centre coordinates detrusor activation and urethral sphincter relaxation so that bladder emptying is appropriately synchronised."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK562181/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538339/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pe-pituitary-001",
+      "type": "tf",
+      "topic": "pe-hypothalamus-and-pituitary",
+      "level": 2,
+      "sub": "Hypothalamus and pituitary",
+      "q": "Regarding the hypothalamus and pituitary gland:",
+      "items": [
+        {
+          "text": "The anterior pituitary is connected functionally to the hypothalamus through the hypophyseal portal circulation.",
+          "answer": true,
+          "explain": "Hypothalamic releasing and inhibiting hormones reach the anterior pituitary through portal vessels in the pituitary stalk."
+        },
+        {
+          "text": "The posterior pituitary synthesises oxytocin and vasopressin in its own endocrine cells.",
+          "answer": false,
+          "explain": "Oxytocin and vasopressin are synthesised in hypothalamic neurons and transported down their axons for storage and release from the posterior pituitary."
+        },
+        {
+          "text": "Prolactin secretion is under tonic inhibitory control by hypothalamic dopamine.",
+          "answer": true,
+          "explain": "Dopamine from hypothalamic tuberoinfundibular neurons inhibits lactotrophs; reduced dopaminergic inhibition can therefore increase prolactin secretion."
+        },
+        {
+          "text": "Growth hormone secretion is stimulated by hypothalamic growth hormone-releasing hormone.",
+          "answer": true,
+          "explain": "GHRH stimulates anterior pituitary somatotrophs to release growth hormone, while somatostatin inhibits GH secretion."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK279056/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK547746/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pl-actionpotential-001",
+      "type": "tf",
+      "topic": "pl-excitable-tissues-and-action-potentials",
+      "level": 2,
+      "sub": "Action potentials",
+      "q": "About the neuronal action potential:",
+      "items": [
+        {
+          "text": "The rapid depolarising phase of a typical neuronal action potential is mainly due to sodium influx through voltage-gated sodium channels.",
+          "answer": true,
+          "explain": "At threshold, voltage-gated sodium channels open and sodium enters down its electrochemical gradient, producing the rapid upstroke."
+        },
+        {
+          "text": "The falling phase of a typical neuronal action potential is mainly associated with potassium efflux.",
+          "answer": true,
+          "explain": "Delayed opening of voltage-gated potassium channels permits K+ to leave the cell, driving repolarisation toward the resting potential."
+        },
+        {
+          "text": "The absolute refractory period occurs because all voltage-gated potassium channels are permanently closed.",
+          "answer": false,
+          "explain": "The absolute refractory period is primarily due to inactivation of voltage-gated sodium channels, which must recover before another action potential can be initiated."
+        },
+        {
+          "text": "A stronger suprathreshold stimulus normally produces a larger-amplitude action potential in the same axon.",
+          "answer": false,
+          "explain": "Action potentials are all-or-none once threshold is reached; stimulus strength is generally encoded by firing frequency and recruitment rather than increased spike amplitude."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK546639/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK551652/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-pl-synapse-001",
+      "type": "tf",
+      "topic": "pl-synapses-and-neurotransmitters",
+      "level": 2,
+      "sub": "Synaptic transmission",
+      "q": "Regarding chemical synaptic transmission:",
+      "items": [
+        {
+          "text": "Arrival of an action potential at a presynaptic terminal can open voltage-gated calcium channels.",
+          "answer": true,
+          "explain": "Depolarisation of the presynaptic terminal opens voltage-gated Ca2+ channels, allowing calcium to enter the terminal."
+        },
+        {
+          "text": "Calcium entry into the presynaptic terminal helps trigger synaptic vesicle fusion and neurotransmitter release.",
+          "answer": true,
+          "explain": "The local rise in presynaptic calcium activates the vesicle fusion machinery, leading to exocytosis of neurotransmitter into the synaptic cleft."
+        },
+        {
+          "text": "Neurotransmitters cross the synaptic cleft mainly by travelling through a continuous cytoplasmic bridge between neurons.",
+          "answer": false,
+          "explain": "At a typical chemical synapse, the presynaptic and postsynaptic cells are separated by a synaptic cleft; neurotransmitter diffuses across this extracellular gap."
+        },
+        {
+          "text": "An inhibitory postsynaptic potential always results from sodium entering the postsynaptic cell.",
+          "answer": false,
+          "explain": "Inhibitory postsynaptic potentials commonly involve chloride entry or potassium exit, moving the membrane potential away from threshold or increasing membrane conductance."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK526047/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK27911/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-dna-replication-001",
+      "type": "tf",
+      "topic": "ba-molecular-biology",
+      "level": 2,
+      "sub": "DNA replication",
+      "q": "About DNA replication:",
+      "items": [
+        {
+          "text": "DNA replication is described as semiconservative.",
+          "answer": true,
+          "explain": "Each daughter DNA molecule contains one parental strand and one newly synthesised strand, which is the defining semiconservative pattern."
+        },
+        {
+          "text": "DNA helicase helps separate the two strands of the parental DNA double helix.",
+          "answer": true,
+          "explain": "Helicase unwinds the parental double helix by disrupting the hydrogen bonding between complementary bases at the replication fork."
+        },
+        {
+          "text": "DNA polymerases generally synthesise a new DNA strand in the 3′ to 5′ direction.",
+          "answer": false,
+          "explain": "DNA polymerases add nucleotides to the 3′ hydroxyl end, so new DNA is synthesised in the 5′ to 3′ direction."
+        },
+        {
+          "text": "DNA ligase helps join adjacent DNA fragments by sealing breaks in the sugar-phosphate backbone.",
+          "answer": true,
+          "explain": "DNA ligase forms phosphodiester bonds that seal nicks between adjacent DNA fragments, including Okazaki fragments on the lagging strand."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK540152/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
+    },
+    {
+      "id": "tf-bc-vitaminb12-001",
+      "type": "tf",
+      "topic": "ba-nutrition-vitamin-and-mineral-metabolism",
+      "level": 2,
+      "sub": "Vitamin B12 and folate",
+      "q": "Regarding vitamin B12 and folate metabolism:",
+      "items": [
+        {
+          "text": "Intrinsic factor is required for efficient absorption of dietary vitamin B12 in the terminal ileum.",
+          "answer": true,
+          "explain": "Vitamin B12 binds intrinsic factor in the upper gastrointestinal tract; the complex is recognised by receptors in the terminal ileum for absorption."
+        },
+        {
+          "text": "Vitamin B12 is required for methionine synthase activity.",
+          "answer": true,
+          "explain": "Methionine synthase uses methylcobalamin as a cofactor to transfer a methyl group from 5-methyl-tetrahydrofolate to homocysteine, forming methionine."
+        },
+        {
+          "text": "Folate deficiency typically causes a raised methylmalonic acid concentration.",
+          "answer": false,
+          "explain": "Methylmalonic acid rises characteristically in vitamin B12 deficiency, not isolated folate deficiency; both deficiencies can raise homocysteine."
+        },
+        {
+          "text": "Vitamin B12 deficiency can cause neurological abnormalities as well as megaloblastic anaemia.",
+          "answer": true,
+          "explain": "Cobalamin deficiency impairs DNA synthesis and can disrupt myelin maintenance, producing megaloblastic anaemia with potentially serious neurological manifestations."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK441923/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK535377/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified"
     }
   ]
 }

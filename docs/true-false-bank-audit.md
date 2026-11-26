@@ -42,3 +42,12 @@ Eight additional stems were added across gastrointestinal physiology, pancreatic
 The True/False loader was also changed to schedule the two True/False data files before the ordinary question files in the existing concurrent loading pool. While the first True/False stems are pending, the loading screen now displays a rotating nugget from the existing DxDrill nugget collection. The nugget rotation stops as soon as stems arrive or loading finishes.
 
 Current composition after this batch: 65 stems, 265 statements, across 30 topics. All content remains draft/unverified pending independent textbook and source review.
+
+
+## Batch 5 — 2026-11-26
+
+Twelve additional stems have been added across general and systemic histology, pharyngeal apparatus embryology, gametogenesis, renal acid-base regulation, micturition, hypothalamic-pituitary physiology, neuronal action potentials, synaptic transmission, DNA replication, and vitamin B12/folate metabolism.
+
+Each new stem contains four numbered statements, individual explanations, a mixed True/False key, and direct reference links. The batch intentionally broadens coverage beyond the previously emphasised gross anatomy, basic renal physiology and carbohydrate metabolism.
+
+Combined bank after batch 5: 77 stems, 313 statements across 42 curriculum topics. Automated checks found 0 structural or explanation-reuse issues. All new stems remain `verified: false` / `draft-unverified` pending independent subject-matter review against standard course texts.
