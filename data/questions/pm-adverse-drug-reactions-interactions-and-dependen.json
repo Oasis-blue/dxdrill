@@ -152,7 +152,7 @@
    "q": "A 19-year-old man with glucose-6-phosphate dehydrogenase (G6PD) deficiency develops acute intravascular haemolysis, haemoglobinuria, and jaundice after taking primaquine or dapsone. Why does this occur?",
    "options": [
     "Primaquine blocks erythropoietin receptors",
-    "G6PD deficiency lowers NADPH, impairing reduced-glutathione regeneration and antioxidant defence",
+    "Low NADPH limits reduced-glutathione regeneration, causing oxidative haemolysis",
     "Primaquine causes IgE-mediated red-cell allergy",
     "G6PD deficiency blocks bilirubin conjugation"
    ],
@@ -568,7 +568,7 @@
    "sub": "Teratogenicity and Special Populations",
    "q": "Why are tetracyclines avoided in pregnant women and children under 8 years of age?",
    "options": [
-    "Tetracyclines bind calcium in teeth and bone, causing staining and enamel defects",
+    "Chelates calcium in developing teeth/bone, causing staining and growth effects",
     "They cause permanent CN VIII deafness",
     "They inhibit fetal thyroid synthesis",
     "They cause haemolysis in all fetuses"
@@ -890,7 +890,7 @@
    "options": [
     "Two drugs compete at the same receptor",
     "Two drugs cause additive CNS depression",
-    "One drug alters another's absorption, distribution, metabolism or excretion",
+    "One drug alters another's ADME",
     "Drugs react chemically in an infusion bag"
    ],
    "answer": 2,
@@ -934,7 +934,7 @@
    "sub": "Drug Interactions",
    "q": "Why does combining a non-steroidal anti-inflammatory drug (NSAID) with an ACE inhibitor or loop diuretic increase the risk of acute kidney injury in a volume-depleted or elderly patient?",
    "options": [
-    "NSAIDs constrict the afferent arteriole; ACE inhibitors dilate the efferent arteriole, reducing filtration pressure",
+    "NSAIDs constrict afferent arterioles; ACE inhibitors dilate efferent arterioles",
     "ACE inhibitors convert NSAIDs to oxalates",
     "NSAIDs block collecting-duct aldosterone receptors",
     "NSAIDs crystallise in renal tubules"
@@ -958,7 +958,7 @@
    "q": "Which combination of drugs carries a high risk of life-threatening hyperkalaemia due to additive potassium retention?",
    "options": [
     "Loop diuretic + beta-2 agonist",
-    "ACE inhibitor + potassium-sparing diuretic (such as spironolactone or amiloride)",
+    "ACE inhibitor plus potassium-sparing diuretic",
     "Thiazide diuretic + insulin",
     "Metformin + glibenclamide"
    ],
@@ -982,7 +982,7 @@
    "options": [
     "Tyramine inhibits gut cholinesterase",
     "MAOIs cause hypoglycaemia after tyramine",
-    "MAO inhibition allows tyramine absorption and noradrenaline release, risking hypertensive crisis",
+    "MAO inhibition permits tyramine-induced noradrenaline release and hypertension",
     "Tyramine causes renal calcium stones"
    ],
    "answer": 2,
@@ -1006,7 +1006,7 @@
     "Alcohol intoxication is completely suppressed",
     "Ethanol is converted rapidly to acetate without symptoms",
     "Muscarinic receptors are blocked, causing dry mouth",
-    "Aldehyde dehydrogenase inhibition causes acetaldehyde accumulation and flushing, nausea and hypotension"
+    "Aldehyde dehydrogenase inhibition causes acetaldehyde accumulation"
    ],
    "answer": 3,
    "explain": "Aldehyde dehydrogenase normally oxidizes acetaldehyde to acetic acid; its inhibition causes acetaldehyde buildup and unpleasant systemic symptoms that deter alcohol intake.",
@@ -1098,7 +1098,7 @@
     "Aspirin increases hepatic clotting-factor synthesis",
     "Warfarin irreversibly blocks platelet COX-1",
     "NSAIDs increase vitamin K absorption",
-    "NSAIDs impair platelet function and may increase bleeding risk with warfarin"
+    "NSAIDs impair platelet function and increase bleeding with warfarin"
    ],
    "answer": 3,
    "explain": "Impairing primary haemostasis (platelets) and mucosal integrity while anticoagulating via vitamin K epoxide reductase inhibition creates a high risk of gastrointestinal and systemic bleeding.",
@@ -1348,7 +1348,7 @@
    "q": "Why should routine flumazenil administration be avoided in a patient with suspected mixed overdose of benzodiazepines and tricyclic antidepressants (TCAs) or in chronic benzodiazepine dependence?",
    "options": [
     "Flumazenil causes severe hyperglycaemia",
-    "It may precipitate seizures or arrhythmias in mixed overdose and acute benzodiazepine withdrawal",
+    "May trigger seizures or withdrawal in mixed overdose or benzodiazepine dependence",
     "It converts benzodiazepines into cyanide",
     "It blocks renal glucose filtration"
    ],
@@ -1926,7 +1926,7 @@
    "q": "Which endocrine/metabolic adverse effect is characteristic of prolonged systemic corticosteroid therapy?",
    "options": [
     "Primary hyperaldosteronism with hypokalemic alkalosis and hypotension",
-    "Cushingoid features, adrenal suppression, osteoporosis, hyperglycaemia and infection risk",
+    "Cushingoid changes, adrenal suppression, osteoporosis, hyperglycaemia and infection",
     "Acute thyroid storm",
     "Aplastic anaemia with pancytopenia"
    ],
@@ -1974,7 +1974,7 @@
     "Acute angle-closure glaucoma",
     "Hyperkalaemic metabolic acidosis",
     "Coronary vasospasm",
-    "Increased risk of bone fractures, hypomagnesaemia, Clostridium difficile infection, and vitamin B12 malabsorption"
+    "Fractures, hypomagnesaemia, C. difficile infection and vitamin B12 deficiency"
    ],
    "answer": 3,
    "explain": "Sustained gastric acid suppression reduces calcium/B12 absorption and impairs the gastric acid barrier against enteric pathogens like Clostridioides difficile.",
@@ -2042,7 +2042,7 @@
    "options": [
     "An interaction occurring at postsynaptic dopamine receptors",
     "Induction of hepatic CYP2C9 by phenobarbital",
-    "A physicochemical interaction before administration, such as precipitation in an IV mixture",
+    "Pre-administration physicochemical interaction, such as IV precipitation",
     "Genetic variation in NAT2 acetylation rate"
    ],
    "answer": 2,
@@ -2066,7 +2066,7 @@
     "It stimulates rapid hepatic glucuronidation of those drugs",
     "It increases renal tubular secretion of those drugs",
     "It dilates splanchnic arterioles to wash drugs away",
-    "It binds these drugs non-specifically in the intestinal lumen and impairs their gastrointestinal absorption"
+    "Binds oral drugs in the gut, reducing absorption"
    ],
    "answer": 3,
    "explain": "Bile acid resins can adsorb acidic or lipophilic drugs in the gut; separating dosing times (e.g., taking other drugs 1 hour before or 4 hours after cholestyramine) reduces this interaction.",
@@ -2110,7 +2110,7 @@
    "q": "What happens when a patient taking a non-selective beta-blocker (such as propranolol) is given adrenaline for acute anaphylaxis or hypotension?",
    "options": [
     "Beta-2 vasodilation is enhanced without any rise in blood pressure",
-    "Beta-2 blockade leaves alpha-1 vasoconstriction unopposed, risking hypertension and reflex bradycardia",
+    "β2 blockade leaves α1 vasoconstriction unopposed, risking hypertension/bradycardia",
     "Adrenaline is completely inactivated by beta-blockers in plasma",
     "Heart rate rises to over 220 bpm immediately"
    ],
@@ -2158,7 +2158,7 @@
     "Downregulation of postsynaptic receptors in the striatum",
     "Formation of IgE antibodies against a drug",
     "Development of a severe skin rash",
-    "Decreased drug concentration at the site of action upon repeated dosing, commonly due to hepatic enzyme induction (autoinduction)"
+    "Faster drug elimination after repeated dosing, often from enzyme induction"
    ],
    "answer": 3,
    "explain": "Repeated exposure to an enzyme inducer (such as carbamazepine or phenobarbital) increases metabolic enzyme synthesis, accelerating clearance and lowering plasma levels for a given dose.",
