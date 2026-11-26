@@ -2,7 +2,7 @@
 (function () {
   var DX = window.DX, esc = DX.esc;
   /* v3 bypasses older, poorly ranked search results. */
-  var PREFIX = "dx.media.v3.", TTL = 7 * 24 * 60 * 60 * 1000;
+  var PREFIX = "dx.media.v4.", TTL = 7 * 24 * 60 * 60 * 1000;
 
   function cached(key) {
     var item = DX.store.get(PREFIX + key, null);
@@ -45,15 +45,20 @@
     if (/physiolog|renal|kidney|nephron|glomerul|tubular|cardiovascular|respiratory|gfr|glomerular filtration|blood pressure|ventilation perfusion/.test(text)) return { kind: "Physiology", hint: "physiology mechanism diagram graph", boost: ["physiology", "diagram", "mechanism", "graph", "cycle"] };
     return { kind: "Medical topic (not confidently classified)", hint: "medical educational diagram", boost: ["medical", "clinical", "mechanism", "diagram"] };
   }
-  function searchQuery(context, profile) {
-    var source = [context.topic, context.curriculumTopic, context.question, context.correctAnswer, context.explanation].join(" ");
-    var stop = /^(the|and|for|with|from|that|this|into|than|when|where|which|what|does|show|shown|following|correct|answer|question|because|there|their|they|them|into|over|under|after|before|during|between|through|using|used|most|likely|patient|patients|clinical|correlation|correlations|lecture|types|type|describe|state|explain|select|choose|true|false|except|only|also|some|such|more|less|each|both|been|being|were|was|are|is|has|have|had|can|may|will|would|should|could|not|all|any|one|two|three|four|five|its|his|her|their|which|who|whom|a|an|of|to|in|on|at|by|as|or|if)$/i;
+  function searchTerms(context) {
+    var source = [context.correctAnswer, context.topic, context.curriculumTopic,
+      context.question, context.explanation, context.area].filter(Boolean).join(" ");
+    var stop = /^(the|and|for|with|from|that|this|into|than|when|where|which|what|does|show|shown|following|correct|answer|question|because|there|their|they|them|over|under|after|before|during|between|through|using|used|most|likely|patient|patients|clinical|correlation|correlations|lecture|types|type|describe|state|explain|select|choose|true|false|except|only|also|some|such|more|less|each|both|been|being|were|was|are|is|has|have|had|can|may|will|would|should|could|not|all|any|one|two|three|four|five|its|his|her|which|who|whom|a|an|of|to|in|on|at|by|as|or|if|medical|medicine|system|function|process|normal|usually|main|primary|important)$/i;
     var words = source.toLowerCase().replace(/[^a-z0-9+.-]+/g, " ").split(/\s+/).filter(function (w) {
       return w.length > 2 && !stop.test(w) && !/^\d+$/.test(w);
     });
     var unique = [];
-    words.forEach(function (w) { if (unique.indexOf(w) < 0 && unique.length < 9) unique.push(w); });
-    return unique.join(" ") + " " + profile.hint;
+    words.forEach(function (w) { if (unique.indexOf(w) < 0 && unique.length < 8) unique.push(w); });
+    return unique;
+  }
+  function searchQuery(context, profile) {
+    var terms = searchTerms(context);
+    return terms.slice(0, 6).join(" ") + " " + profile.hint;
   }
   function summary(term) {
     var key = "summary." + term.toLowerCase(), hit = cached(key);
@@ -64,23 +69,26 @@
       save(key, out); return out;
     }).catch(function () { return null; });
   }
-  function imageScore(item, term, profile) {
+  function imageScore(item, context, profile) {
     var title = String(item.title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
     var description = String(item.description || "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
     var text = title + " " + description;
-    var topic = String(term || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    var words = topic.split(/\s+/).filter(function (w) { return w.length > 2 && !/^(the|and|for|with|from|part|system|types|type)$/.test(w); });
-    /* Publication scans and covers are not useful visual-learning references. */
+    /* Reject obvious publication material, but don't require the whole search phrase to match. */
     if (/\b(book|cover|textbook|atlas|syllabus|lecture|catalog|catalogue|journal|magazine|publisher|publication|title page|front matter|table of contents|pdf scan)\b/.test(text)) return -100;
     if (/\b(logo|icon|flag|coat of arms)\b/.test(title)) return -100;
-    var score = topic && text.indexOf(topic) > -1 ? 12 : 0;
-    var matched = 0;
-    words.forEach(function (w) { if (text.indexOf(w) > -1) { score += 4; matched++; } });
-    profile.boost.forEach(function (w) { if (text.indexOf(w) > -1) score += 3; });
-    if (score < 8 || (!matched && !profile.boost.some(function (w) { return text.indexOf(w) > -1; }))) return -100;
+    var terms = searchTerms(context), matched = 0, score = 0;
+    terms.forEach(function (w) {
+      if (w.length > 2 && text.indexOf(w) > -1) { score += 5; matched++; }
+    });
+    (profile.boost || []).forEach(function (w) {
+      var phrase = String(w).toLowerCase();
+      if (text.indexOf(phrase) > -1) score += 2;
+    });
+    /* One strong medical-concept match is enough to retain a candidate for ranking. */
+    if (!matched || score < 5) return -100;
     return score;
   }
-  function commonsSearch(query, term, profile) {
+  function commonsSearch(query, context, profile) {
     var u = new URL("https://commons.wikimedia.org/w/api.php");
     var params = {
       action: "query", generator: "search", gsrsearch: query,
@@ -102,10 +110,10 @@
           artist: cleanText(meta.Artist && meta.Artist.value) || "Author not listed",
           description: cleanText(meta.ImageDescription && meta.ImageDescription.value) || cleanText(meta.ObjectName && meta.ObjectName.value) || ""
         };
-        item._score = imageScore(item, term, profile);
+        item._score = imageScore(item, context, profile);
         item._order = index;
         return item;
-      }).filter(Boolean).filter(function (item) { return item._score >= 8; });
+      }).filter(Boolean).filter(function (item) { return item._score >= 5; });
       out.sort(function (a, b) { return b._score - a._score || a._order - b._order; });
       return out.slice(0, 4).map(function (item) {
         delete item._score; delete item._order; return item;
@@ -116,7 +124,7 @@
     var query = searchQuery(context, profile);
     var key = "images." + query.toLowerCase(), hit = cached(key);
     if (hit) return Promise.resolve(hit);
-    return commonsSearch(query, query, profile).then(function (out) {
+    return commonsSearch(query, context, profile).then(function (out) {
       save(key, out); return out;
     }).catch(function () { return []; });
   }
