@@ -32,9 +32,9 @@
    "sub": "Motor Hierarchy: Motor Cortex, Premotor/SMA, Brainstem, and Spinal Cord",
    "q": "How do the 'supplementary motor area (SMA)' and 'premotor cortex' (both in Brodmann area 6) contribute differently to movement planning and execution?",
    "options": [
-    "SMA is more active during internally generated, sequential, or bimanual movements (especially motor imagery/rehearsal before execution), whereas the premotor cortex is more engaged by externally cued/visually guided movements and proximal axial/girdle posture preparation",
-    "SMA directly innervates extraocular muscles while the premotor cortex processes taste",
-    "Both areas lie in the occipital lobe and process color vision",
+    "SMA supports self-initiated sequences and bimanual movement; premotor cortex selects externally cued movements and prepares posture",
+    "SMA controls eye muscles; premotor cortex processes taste",
+    "Both areas lie in the occipital lobe and process colour vision",
     "Premotor cortex fires only after spinal motor neurons stop firing"
    ],
    "answer": 0,
@@ -78,9 +78,9 @@
    "sub": "Descending Tracts: Lateral vs Ventromedial Pathways",
    "q": "Why does a lesion of the 'lateral corticospinal tract' impair fine individual finger movements ('fractionation') while leaving gross whole-hand grasp and proximal posture relatively preserved?",
    "options": [
-    "Redundant descending pathways—especially the reticulospinal and rubrospinal tracts plus uncrossed ventral/anterior corticospinal fibers—still drive proximal girdle, trunk, and synergistic gross limb flexors/extensors, whereas monosynaptic/oligosynaptic corticomotoneuronal drive to distal hand motor neurons is lost",
+    "Loss of direct corticomotoneuronal drive impairs independent finger control, while brainstem pathways preserve gross synergistic and proximal movements",
     "Fine finger movements are controlled by the olfactory nerve",
-    "The spinal cord can generate fine finger movements independently without any descending input",
+    "The spinal cord generates fine finger movements without descending input",
     "The lateral corticospinal tract only inhibits the diaphragm"
    ],
    "answer": 0,
@@ -101,10 +101,10 @@
    "sub": "Descending Tracts: Lateral vs Ventromedial Pathways",
    "q": "How do the 'pontine reticulospinal tract' and 'medullary reticulospinal tract' exert opposing influences on spinal antigravity (extensor) motor neurons?",
    "options": [
-    "Pontine reticulospinal tract has spontaneous tonic activity that EXCITES spinal extensor (antigravity) motor neurons, whereas the medullary reticulospinal tract (driven largely by motor cortex and cerebellum) INHIBITS spinal extensor motor neurons and excites flexors",
+    "Pontine reticulospinal activity excites antigravity extensors; medullary reticulospinal activity inhibits extensors and favours flexors",
     "Pontine reticulospinal tract inhibits all muscles while medullary reticulospinal tract excites only eye muscles",
-    "Both reticulospinal tracts originate in the primary visual cortex",
-    "Neither reticulospinal tract communicates with spinal cord motor neurons"
+    "Both tracts originate in the primary visual cortex",
+    "Neither tract communicates with spinal motor neurons"
    ],
    "answer": 0,
    "explain": "Tonic excitatory drive from the pontine reticular formation promotes extensor tone unless balanced by cortical/cerebellar activation of the inhibitory medullary reticular formation.",
@@ -170,10 +170,10 @@
    "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
    "q": "Contrast 'gamma-dynamic' and 'gamma-static' motor neurons in regulating muscle spindle sensitivity:",
    "options": [
-    "Dynamic gamma motor neurons innervate nuclear bag1 fibers and enhance Ia afferent sensitivity to the RATE/velocity of length change (dL/dt), whereas static gamma motor neurons innervate nuclear bag2 and nuclear chain fibers and maintain Ia/II firing during STATIC muscle length and steady stretch",
-    "Dynamic gamma motor neurons inhibit all stretch reflexes while static gamma motor neurons cause paralysis",
-    "Static gamma motor neurons innervate only extrafusal skeletal muscle fibers",
-    "Dynamic gamma motor neurons are located in the olfactory bulb"
+    "Dynamic gamma neurons target bag1 fibres and increase velocity sensitivity; static gamma neurons target bag2 and chain fibres and support steady-length sensitivity",
+    "Dynamic gamma neurons inhibit all stretch reflexes while static gamma neurons cause paralysis",
+    "Static gamma neurons innervate only extrafusal fibres",
+    "Dynamic gamma neurons are located in the olfactory bulb"
    ],
    "answer": 0,
    "explain": "Dynamic gamma boosts velocity sensitivity via bag1 intrafusal fibers; static gamma sustains steady-state length sensitivity via bag2 and chain fibers and prevents Ia unloading during shortening.",
@@ -193,9 +193,9 @@
    "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
    "q": "What is 'decerebrate rigidity' (extensor posturing), which anatomical transection classically produces it in experimental physiology, and why does it occur?",
    "options": [
-    "Intercollicular transection leaves vestibulospinal and pontine reticulospinal extensor drive relatively unopposed, producing extensor rigidity",
-    "Transection below the lumbar enlargement removes all extensor tone and produces decerebrate rigidity",
-    "Destruction of the vestibular nuclei produces severe extensor rigidity",
+    "Intercollicular transection leaves vestibulospinal and pontine reticulospinal extensor drive relatively unopposed",
+    "Transection below the lumbar enlargement removes all extensor tone",
+    "Destruction of vestibular nuclei produces severe extensor rigidity",
     "An isolated peripheral nerve lesion produces bilateral extensor posturing"
    ],
    "answer": 0,
@@ -216,9 +216,9 @@
    "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
    "q": "What is 'decorticate posturing' (decorticate rigidity), and how does it differ anatomically from decerebrate posturing?",
    "options": [
-    "Upper-limb FLEXION (adducted shoulders, flexed elbows/wrists) with lower-limb EXTENSION, typically caused by lesions above the midbrain (cerebral hemispheres/internal capsule/thalamus) that spare the rubrospinal tract (which facilitates upper-limb flexors) while leaving vestibulospinal/reticulospinal extensor drive in the legs",
+    "Flexed upper limbs and extended lower limbs after a lesion above the midbrain, with rubrospinal flexor influence preserved",
     "Complete flaccidity of all four limbs with absent tendon reflexes",
-    "Upper-limb extension and lower-limb flexion caused by cerebellar tumor alone",
+    "Upper-limb extension and lower-limb flexion caused by cerebellar tumour alone",
     "Involuntary rhythmic blinking without limb posturing"
    ],
    "answer": 0,
@@ -285,10 +285,10 @@
    "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
    "q": "How do 'climbing fibers' originating from the 'inferior olivary nucleus' contribute to cerebellar motor learning ('error correction')?",
    "options": [
-    "Each Purkinje cell receives powerful excitatory input from a single climbing fiber carrying motor error/unexpected sensory mismatch signals; co-activation of climbing fibers with parallel fibers induces 'long-term depression (LTD)' at specific parallel-fiber-to-Purkinje synapses, refining future motor commands",
-    "Climbing fibers myelinate Purkinje cell dendrites to increase firing rate to 10,000 Hz",
-    "Climbing fibers inhibit the inferior olive permanently after one movement",
-    "Climbing fibers secrete acetylcholine onto skeletal muscle endplates"
+    "Climbing fibres signal motor error; their co-activation with parallel fibres can induce LTD at parallel-fibre–Purkinje synapses",
+    "Climbing fibres myelinate Purkinje dendrites to increase firing rate",
+    "Climbing fibres permanently inhibit the inferior olive after one movement",
+    "Climbing fibres release acetylcholine onto skeletal muscle endplates"
    ],
    "answer": 0,
    "explain": "Climbing-fiber error signals trigger Ca2+ influx in Purkinje dendrites that depresses ('LTD') mismatched parallel-fiber synapses, calibrating motor accuracy across trials.",
@@ -308,10 +308,10 @@
    "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
    "q": "Why does a unilateral cerebellar lesion produce 'IPSILATERAL' motor signs (ataxia, dysmetria, intention tremor, dysdiadochokinesia) despite cerebellar output ascending to the contralateral motor cortex?",
    "options": [
-    "Cerebellar output crosses to the opposite cortex, and corticospinal output crosses back at the pyramids, producing mainly ipsilateral body signs",
-    "Cerebellar output never crosses, but corticospinal output crosses twice within the spinal cord",
+    "Double crossing—cerebellar output to the opposite cortex, then corticospinal fibres back across at the pyramidal decussation—produces ipsilateral signs",
+    "Cerebellar output never crosses, but corticospinal output crosses twice in the spinal cord",
     "Cerebellar lesions cause contralateral signs because both pathways remain uncrossed",
-    "Only sensory pathways cross, so cerebellar motor signs are always bilateral"
+    "Only sensory pathways cross, so cerebellar signs are always bilateral"
    ],
    "answer": 0,
    "explain": "Double crossing—first via the superior cerebellar peduncle to the opposite thalamus/cortex, then via the pyramidal decussation back to the original side—means unilateral cerebellar damage produces ipsilateral limb signs.",
@@ -331,8 +331,8 @@
    "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
    "q": "Match these classic cerebellar clinical signs with their definitions: 'dysmetria', 'intention tremor', and 'dysdiadochokinesia':",
    "options": [
-    "Dysmetria: inability to judge distance/range of movement (past-pointing / hypermetria or hypometria on finger-to-nose testing); Intention tremor: kinetic tremor that is absent or minimal at rest and worsens as the finger approaches a target; Dysdiadochokinesia: impaired ability to perform rapid alternating movements (e.g., pronation-supination)",
-    "Intention tremor occurs only when resting hands lie flat on the lap while dysmetria means muscle weakness",
+    "Dysmetria: inaccurate movement range; intention tremor: tremor during target-directed movement; dysdiadochokinesia: impaired rapid alternating movements",
+    "Intention tremor occurs only at rest while dysmetria means muscle weakness",
     "Dysdiadochokinesia means complete loss of vision in both eyes",
     "Dysmetria is involuntary chorea of the tongue"
    ],
@@ -354,10 +354,10 @@
    "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
    "q": "Which neurotransmitter does the 'striatum (caudate and putamen)' receive from the 'substantia nigra pars compacta (SNc)' via the 'nigrostriatal pathway', and what are its differential effects on D1 versus D2 medium spiny neurons?",
    "options": [
-    "Dopamine — EXCITES D1-expressing striatal neurons of the DIRECT pathway (via Gs/olf) to facilitate movement, while INHIBITING D2-expressing striatal neurons of the INDIRECT pathway (via Gi/o) to reduce movement suppression",
-    "Acetylcholine — inhibits all striatal neurons equally",
-    "GABA — excites SNc neurons to stop all movement",
-    "Glutamate — blocks dopamine synthesis permanently"
+    "Dopamine excites D1 direct-pathway neurons and inhibits D2 indirect-pathway neurons, favouring movement",
+    "Acetylcholine inhibits all striatal neurons equally",
+    "GABA excites SNc neurons to stop all movement",
+    "Glutamate permanently blocks dopamine synthesis"
    ],
    "answer": 0,
    "explain": "Dopamine acting on D1 (excitatory) and D2 (inhibitory) receptors in the striatum shifts the net balance toward movement initiation by disinhibiting thalamocortical motor neurons.",
@@ -377,10 +377,10 @@
    "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
    "q": "Trace how activation of the 'direct pathway' in the basal ganglia facilitates voluntary movement ('disinhibition'):",
    "options": [
-    "Striatum (GABAergic) inhibits the internal globus pallidus / substantia nigra pars reticulata (GPi/SNr, which are tonically active GABAergic inhibitors of the thalamus) -> reduced GABAergic inhibition from GPi/SNr DISINHIBITS (excites) the motor thalamus (VA/VL) -> increased excitatory drive to motor/premotor cortex",
-    "Striatum excites GPi to strongly inhibit the thalamus and stop movement",
-    "Motor thalamus directly inhibits the primary motor cortex",
-    "GPi releases dopamine directly onto skeletal muscle fibers"
+    "Striatal inhibition of GPi/SNr reduces their inhibition of the motor thalamus, disinhibiting thalamocortical output",
+    "Striatum excites GPi to strongly inhibit the thalamus",
+    "Motor thalamus directly inhibits primary motor cortex",
+    "GPi releases dopamine onto skeletal muscle fibres"
    ],
    "answer": 0,
    "explain": "GPi/SNr neurons fire tonically to hold the motor thalamus under inhibitory brake; the direct pathway inhibits GPi/SNr ('inhibition of an inhibition' = disinhibition), releasing the thalamus to excite motor cortex.",
@@ -400,8 +400,8 @@
    "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
    "q": "Trace how the 'indirect pathway' (striatum -> external globus pallidus -> subthalamic nucleus -> GPi/SNr -> thalamus) suppresses unwanted movements:",
    "options": [
-    "Striatum inhibits the external globus pallidus (GPe) -> disinhibits the excitatory glutamatergic subthalamic nucleus (STN) -> STN strongly excites GPi/SNr -> GPi/SNr increases GABAergic INHIBITION of the motor thalamus (VA/VL), reducing thalamocortical excitation of motor cortex",
-    "Striatum excites GPe to inhibit the subthalamic nucleus and increase thalamic excitation",
+    "Striatum inhibits GPe, disinhibiting STN; STN excites GPi/SNr, increasing inhibition of the motor thalamus",
+    "Striatum excites GPe to inhibit STN and increase thalamic excitation",
     "Subthalamic nucleus releases GABA to inhibit GPi",
     "Indirect pathway bypasses GPi/SNr completely"
    ],
@@ -446,10 +446,10 @@
    "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
    "q": "Contrast 'hypokinetic movement disorders' (such as Parkinson's disease) with 'hyperkinetic movement disorders' (such as Huntington's disease or hemiballismus) in terms of basal ganglia output onto the motor thalamus:",
    "options": [
-    "Hypokinetic disorders feature EXCESSIVE inhibitory output from GPi/SNr onto the motor thalamus (reducing thalamocortical drive -> bradykinesia, rigidity, resting tremor); Hyperkinetic disorders feature REDUCED inhibitory output from GPi/SNr onto the motor thalamus (excessive thalamocortical disinhibition -> chorea, athetosis, ballismus)",
-    "Hyperkinetic disorders cause excessive inhibition of the motor thalamus while hypokinetic disorders cause ballismus",
+    "Hypokinetic disorders increase GPi/SNr inhibition of the motor thalamus; hyperkinetic disorders reduce it",
+    "Hyperkinetic disorders cause excessive thalamic inhibition while hypokinetic disorders cause ballismus",
     "Basal ganglia output to the thalamus is identical in Parkinson's and Huntington's diseases",
-    "Hypokinetic disorders are caused by excess dopamine in the striatum"
+    "Hypokinetic disorders are caused by excess striatal dopamine"
    ],
    "answer": 0,
    "explain": "In Parkinson's disease, loss of nigrostriatal dopamine shifts balance toward excessive GPi/SNr inhibition of the thalamus (hypokinesia); in Huntington's disease, early loss of indirect-pathway striatal neurons reduces GPi inhibition of the thalamus, causing choreiform hyperkinesia.",
@@ -469,9 +469,9 @@
    "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
    "q": "What are 'spinal central pattern generators (CPGs)', and how do they generate rhythmic walking/stepping movements even without supraspinal commands or rhythmic sensory feedback?",
    "options": [
-    "Intrinsic networks of excitatory and inhibitory interneurons within the spinal cord (lumbar/cervical enlargements) that produce alternating, rhythmic flexor and extensor motor bursts via reciprocal inhibition and pacemaker/network oscillations, modulated by descending brainstem/cortical commands and sensory load feedback",
+    "Spinal interneuron networks generate alternating flexor-extensor rhythms, modulated by descending commands and sensory feedback",
     "Pacemaker cells inside the primary visual cortex",
-    "Direct contractions of skeletal muscle fibers without motor neurons",
+    "Direct skeletal muscle contraction without motor neurons",
     "Reflexes requiring the olfactory bulb for every step"
    ],
    "answer": 0,
@@ -492,10 +492,10 @@
    "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
    "q": "How does 'reciprocal innervation' work during a monosynaptic stretch reflex or a flexor withdrawal reflex?",
    "options": [
-    "Ia sensory afferents from a stretched muscle directly EXCITATE homonymous alpha motor neurons of that muscle while simultaneously sending collaterals to INHIBITORY Ia interneurons that INHIBIT antagonistic alpha motor neurons (relaxing antagonists so they do not oppose movement)",
-    "Motor neurons excite both agonist and antagonist muscles equally at maximal tension",
-    "Sensory afferents inhibit all spinal motor neurons simultaneously",
-    "Reciprocal innervation occurs only in smooth muscle of the stomach"
+    "Ia afferents excite agonist motor neurons and activate inhibitory interneurons that suppress antagonist motor neurons",
+    "Motor neurons excite agonist and antagonist muscles equally",
+    "Sensory afferents inhibit all spinal motor neurons",
+    "Reciprocal innervation occurs only in gastric smooth muscle"
    ],
    "answer": 0,
    "explain": "During knee extension or flexor withdrawal, inhibitory Ia/spinal interneurons relax opposing antagonist muscles so limb motion is smooth and unopposed.",
@@ -515,10 +515,10 @@
    "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
    "q": "What is 'recurrent (Renshaw cell) inhibition' in the ventral horn of the spinal cord?",
    "options": [
-    "Collaterals of alpha motor neuron axons excite spinal 'Renshaw cells,' which release inhibitory glycine/GABA back onto the same alpha motor neuron (and Ia inhibitory interneurons), providing negative feedback that stabilizes motor neuron firing frequency and sharpens motor contrast",
-    "Excitation of sensory dorsal root ganglion cells by sympathetic fibers",
-    "Facilitation of neuromuscular junction acetylcholine release by botulinum toxin",
-    "Direct excitation of skeletal muscle fibers by cerebellar Purkinje cells"
+    "Alpha-motor axon collaterals excite Renshaw cells, which inhibit the same motor pool and related interneurons",
+    "Sympathetic fibres excite sensory dorsal root ganglion cells",
+    "Botulinum toxin facilitates acetylcholine release at the neuromuscular junction",
+    "Cerebellar Purkinje cells directly excite skeletal muscle"
    ],
    "answer": 0,
    "explain": "Renshaw cells form a classic negative-feedback recurrent loop onto alpha motor neurons, dampening excessive firing and helping focus motor output.",
@@ -538,10 +538,10 @@
    "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
    "q": "Compare the two major phases of the human walking gait cycle ('stance phase' versus 'swing phase') and their approximate share of the cycle:",
    "options": [
-    "Stance phase (~60% of gait cycle): foot is in contact with the ground supporting body weight and propelling forward (heel strike, foot flat, midstance, heel off, toe off); Swing phase (~40% of gait cycle): foot is off the ground moving forward to the next step (toe off/acceleration, midswing, deceleration)",
-    "Swing phase accounts for 85% of walking while stance phase accounts for 15%",
-    "Both feet are off the ground simultaneously throughout the entire stance phase",
-    "Gait cycle has no stance phase during slow walking"
+    "Stance occupies about 60% of the gait cycle; swing occupies about 40%",
+    "Swing accounts for 85% of walking and stance 15%",
+    "Both feet are off the ground throughout stance",
+    "Slow walking has no stance phase"
    ],
    "answer": 0,
    "explain": "During normal walking, stance occupies ~60% of the stride (with double-limb support at beginning and end of stance) and swing occupies ~40%; as speed increases to running, double support disappears and periods of aerial float appear.",

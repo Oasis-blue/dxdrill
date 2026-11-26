@@ -259,10 +259,10 @@
    "sub": "Cerebral Circulation",
    "q": "Which anatomical structures form the cellular basis of the blood-brain barrier (BBB)?",
    "options": [
+    "Non-fenestrated brain capillary endothelial cells joined by tight junctions, with basement membrane and astrocyte end-feet",
     "Fenestrated capillary endothelium and podocyte foot processes",
     "Sinusoidal endothelial gaps and Kupffer cells",
-    "Stratified squamous epithelium and basement membrane",
-    "Non-fenestrated brain capillary endothelial cells joined by continuous tight junctions (zonulae occludentes), surrounded by a thick basement membrane and astrocyte end-feet"
+    "Stratified squamous epithelium and basement membrane"
    ],
    "answer": 3,
    "explain": "Continuous tight junctions between cerebral capillary endothelial cells prevent paracellular diffusion of polar solutes, proteins, and neurotransmitters, while astrocyte perivascular end-feet induce and maintain barrier properties.",
@@ -306,10 +306,10 @@
    "sub": "Pulmonary Circulation",
    "q": "How do normal resting mean pulmonary artery pressure and pulmonary vascular resistance compare with systemic arterial pressure and systemic vascular resistance?",
    "options": [
-    "Pulmonary pressure and resistance are roughly equal to systemic values",
-    "Mean pulmonary artery pressure (~15 mmHg; systolic/diastolic ~25/8 mmHg) and pulmonary vascular resistance are roughly one-sixth to one-tenth of systemic values",
-    "Mean pulmonary artery pressure is ~95 mmHg, six times higher than systemic",
-    "Pulmonary vascular resistance is ten times greater than systemic resistance"
+    "Pulmonary pressure and resistance equal systemic values",
+    "Mean pulmonary artery pressure is about 15 mmHg, with pulmonary resistance far below systemic resistance",
+    "Mean pulmonary artery pressure is about 95 mmHg",
+    "Pulmonary vascular resistance is ten times systemic resistance"
    ],
    "answer": 1,
    "explain": "The pulmonary circuit is a low-pressure, low-resistance, high-compliance bed (MAP ~15 mmHg vs ~93 mmHg systemic) carrying the entire cardiac output (~5 L/min) across thin alveolar capillaries without causing interstitial pulmonary edema.",
@@ -352,10 +352,10 @@
    "sub": "Pulmonary Circulation",
    "q": "Why does pulmonary vascular resistance decrease (rather than increase) when cardiac output rises 4-fold during heavy exercise?",
    "options": [
-    "Sympathetic nerves release nitric oxide throughout the lung parenchyma",
-    "Alveolar pressure drops to -50 mmHg during exercise",
+    "Sympathetic nerves release nitric oxide throughout the lungs",
+    "Alveolar pressure falls to -50 mmHg during exercise",
     "Pulmonary veins actively pump blood into the left atrium",
-    "Recruitment of previously closed apical capillaries and distension of already open capillaries expand total cross-sectional area"
+    "Capillary recruitment and distension increase the vascular cross-sectional area"
    ],
    "answer": 3,
    "explain": "Higher pulmonary driving pressure opens underperfused apical capillaries (recruitment) and widens compliant capillaries (distension), lowering pulmonary vascular resistance so pulmonary arterial pressure rises only modestly during exercise.",
@@ -375,10 +375,10 @@
    "sub": "Pulmonary Circulation",
    "q": "How do changes in lung volume affect extra-alveolar versus alveolar pulmonary blood vessels during deep inspiration?",
    "options": [
-    "Radial traction dilates extra-alveolar vessels while alveolar expansion compresses alveolar capillaries, making total pulmonary vascular resistance lowest at Functional Residual Capacity (FRC)",
-    "Both alveolar and extra-alveolar vessels dilate maximally at total lung capacity",
-    "Both alveolar and extra-alveolar vessels collapse at residual volume",
-    "Lung volume has zero effect on pulmonary vascular resistance"
+    "Deep inspiration dilates extra-alveolar vessels but compresses alveolar capillaries; total resistance is lowest near FRC",
+    "Both vessel types dilate maximally at total lung capacity",
+    "Both vessel types collapse at residual volume",
+    "Lung volume has no effect on pulmonary resistance"
    ],
    "answer": 0,
    "explain": "During deep inflation, expanding alveoli compress alveolar wall capillaries, while outward parenchymal tethering pulls open larger extra-alveolar vessels; at very low volumes, extra-alveolar vessels narrow, so total PVR forms a U-shaped curve with its minimum at FRC.",
@@ -444,10 +444,10 @@
    "sub": "Renal Circulation",
    "q": "Which two intrinsic mechanisms autoregulate renal blood flow (RBF) and glomerular filtration rate (GFR) across a mean arterial pressure range of 80 to 180 mmHg?",
    "options": [
-    "Carotid sinus baroreflex and Bainbridge reflex",
+    "Carotid baroreflex and Bainbridge reflex",
     "Hypoxic vasoconstriction and pulmonary capillary recruitment",
     "Hepatic arterial buffer response and portal venous compliance",
-    "Myogenic stretch response of afferent arterioles and tubuloglomerular feedback (TGF) mediated by the macula densa"
+    "Afferent-arteriole myogenic response and macula-densa tubuloglomerular feedback"
    ],
    "answer": 3,
    "explain": "When renal arterial pressure rises, afferent arterioles constrict myogenically while increased NaCl delivery to the macula densa releases ATP/adenosine to constrict the afferent arteriole (TGF), keeping RBF and GFR nearly constant.",
@@ -467,10 +467,10 @@
    "sub": "Renal Circulation",
    "q": "How is blood flow distributed between the renal cortex and the renal medulla, and why is medullary blood flow kept sluggish?",
    "options": [
-    "About 90% to 95% perfuses the renal cortex and only 5% to 10% perfuses the medulla via the vasa recta, preventing washout of the medullary osmotic gradient",
-    "90% perfuses the medulla and 10% perfuses the cortex",
-    "50% perfuses the cortex and 50% perfuses the medulla",
-    "The renal medulla is completely avascular and receives zero blood flow"
+    "About 90–95% of renal blood flow reaches the cortex; slow vasa recta flow helps preserve the medullary gradient",
+    "90% reaches the medulla and 10% the cortex",
+    "Cortex and medulla each receive 50%",
+    "The renal medulla is avascular"
    ],
    "answer": 0,
    "explain": "Slow blood flow through the hairpin-loop vasa recta (~5-10% of RBF) acts as a countercurrent exchanger that supplies oxygen to medullary tubules without washing away the hyperosmolar NaCl and urea gradient needed to concentrate urine.",
@@ -491,9 +491,9 @@
    "q": "What percentage of total hepatic blood flow (~1,500 mL/min) is supplied by the hepatic portal vein versus the hepatic artery, and how do their oxygen contributions compare?",
    "options": [
     "The portal vein supplies one quarter of flow and most hepatic oxygen",
-    "Portal vein supplies about 75% of hepatic flow and hepatic artery 25%; each contributes roughly half of hepatic oxygen",
-    "Portal and hepatic arterial flow are equal, and the hepatic artery supplies all oxygen",
-    "The portal vein supplies almost all hepatic flow but contributes no oxygen"
+    "Portal vein supplies about 75% of flow and hepatic artery 25%; both contribute roughly half the oxygen",
+    "Portal and hepatic arterial flow are equal, and the artery supplies all oxygen",
+    "The portal vein supplies almost all flow but no oxygen"
    ],
    "answer": 1,
    "explain": "The liver receives ~1,500 mL/min (~25-30% of CO): ~1,100 mL/min (75%) via the portal vein (PO2 ~50-60 mmHg) and ~400 mL/min (25%) via the hepatic artery (PO2 ~95 mmHg); because portal flow is three times larger, both vessels deliver ~50% of hepatic O2.",
@@ -536,10 +536,10 @@
    "sub": "Splanchnic and Hepatic Circulation",
    "q": "What is postprandial hyperemia in the gastrointestinal tract, and which factors mediate it?",
    "options": [
-    "A 50% fall in mesenteric blood flow after eating due to sympathetic activation",
-    "Constriction of intestinal villous capillaries triggered by dietary fiber",
-    "Closure of the portal vein during protein digestion",
-    "An increase in gastrointestinal blood flow (up to 100-150%) during digestion and absorption, mediated by GI hormones (CCK, gastrin, secretin), local metabolites, and nitric oxide"
+    "Mesenteric flow falls by half after eating",
+    "Intestinal villous capillaries constrict during digestion",
+    "The portal vein closes during protein digestion",
+    "GI blood flow rises during digestion through hormonal and local vasodilator signals"
    ],
    "answer": 3,
    "explain": "Digestive secretions, motility, and active nutrient transport raise mucosal metabolic demand, releasing adenosine, K+, CO2, nitric oxide, and gut peptides (CCK, neurotensin, VIP) that dilate splanchnic arterioles.",
@@ -629,10 +629,10 @@
    "sub": "Cutaneous Circulation",
    "q": "How do sympathetic sudomotor (cholinergic) fibers contribute to active cutaneous vasodilation in non-acral hairy skin during heat stress?",
    "options": [
-    "By releasing norepinephrine onto alpha-1 receptors",
-    "By activating endothelin-1 release from keratinocytes",
-    "By inhibiting sweat gland secretion",
-    "By releasing acetylcholine and co-transmitters (such as VIP and nitric oxide) to stimulate eccrine sweat glands and trigger active vasodilation"
+    "Norepinephrine activates alpha-1 receptors",
+    "Endothelin-1 is released from keratinocytes",
+    "Sweat-gland secretion is inhibited",
+    "Cholinergic fibres release acetylcholine and vasodilator co-transmitters during heat stress"
    ],
    "answer": 3,
    "explain": "In non-acral skin, warming first withdraws sympathetic noradrenergic vasoconstrictor tone, and further core warming activates sympathetic cholinergic sudomotor nerves that stimulate sweating and release vasodilator co-transmitters (VIP, NO, prostaglandins).",
@@ -721,10 +721,10 @@
    "sub": "Skeletal Muscle Circulation",
    "q": "Why does sustained isometric (static) muscle contraction (such as heavy weightlifting) cause a sharp rise in mean arterial pressure while temporarily impeding blood flow through the contracting muscle?",
    "options": [
-    "Isometric contraction abolishes all sympathetic nervous system activity",
-    "Isometric contraction opens all venous valves backward",
+    "Isometric contraction abolishes sympathetic activity",
+    "Isometric contraction reverses venous-valve flow",
     "Isometric contraction lowers heart rate to 40 beats/min",
-    "Sustained intramuscular pressure exceeds arterial perfusion pressure, mechanically compressing intramuscular vessels while triggering the exercise pressor reflex"
+    "High intramuscular pressure compresses vessels while the exercise pressor reflex raises blood pressure"
    ],
    "answer": 3,
    "explain": "Above ~20-30% of maximal voluntary contraction, sustained intramuscular pressure squeezes blood vessels shut (stopping rhythmic muscle-pump assistance), while metabolite buildup excites group III/IV muscle afferents (exercise pressor reflex) to boost sympathetic BP.",
@@ -835,10 +835,10 @@
    "sub": "Clinical Correlations",
    "q": "A 62-year-old man experiences retrosternal chest tightness consistently after walking briskly up two flights of stairs, relieved within 3 minutes of rest or sublingual nitroglycerin. Coronary angiography reveals a 75% fixed atherosclerotic narrowing of the left anterior descending artery. Which physiological principle explains why he has no chest pain at rest?",
    "options": [
-    "Coronary autoregulatory vasodilation distal to the stenosis preserves resting blood flow until coronary flow reserve is exhausted during exercise",
-    "Collateral vessels completely bypass the stenosis only during sleep",
-    "Nitroglycerin selectively constricts the left anterior descending artery",
-    "Myocardial oxygen demand drops during stair climbing"
+    "Coronary arterioles dilate downstream of the stenosis, preserving resting flow until coronary reserve is exhausted",
+    "Collateral vessels bypass the stenosis only during sleep",
+    "Nitroglycerin selectively constricts the LAD",
+    "Myocardial oxygen demand falls during exercise"
    ],
    "answer": 0,
    "explain": "Downstream resistance arterioles dilate progressively to compensate for upstream epicardial stenosis, maintaining normal resting flow up to ~70% diameter narrowing; once maximal dilation (coronary flow reserve) is exhausted during exertion, demand outstrips supply, causing stable angina.",
@@ -882,10 +882,10 @@
    "sub": "Clinical Correlations",
    "q": "A 30-year-old man sustains severe head trauma in a motorcycle collision and develops an acute epidural hematoma with rising intracranial pressure. His blood pressure rises to 196/104 mmHg, his heart rate drops to 44 beats/min, and his breathing becomes irregular. What is the physiological explanation for his hypertension and bradycardia?",
    "options": [
-    "Scalp blood loss causes hypovolaemia and compensatory hyperventilation",
-    "Carotid sinus destruction causes isolated hypertension and bradycardia",
-    "Raised ICP triggers medullary ischaemia and sympathetic hypertension, followed by baroreflex bradycardia",
-    "Excess brain natriuretic peptide directly slows the sinoatrial node"
+    "Scalp blood loss causes hypovolaemia and hyperventilation",
+    "Carotid sinus destruction causes hypertension and bradycardia",
+    "Raised ICP causes medullary ischaemia and sympathetic hypertension, followed by baroreflex bradycardia",
+    "Brain natriuretic peptide directly slows the sinoatrial node"
    ],
    "answer": 2,
    "explain": "In the Cushing reflex, high ICP threatens cerebral perfusion pressure (CPP = MAP - ICP), evoking a powerful CNS ischemic sympathetic surge to raise MAP above ICP; the resulting severe hypertension activates carotid/aortic baroreceptors, triggering reflex vagal bradycardia.",
@@ -905,10 +905,10 @@
    "sub": "Clinical Correlations",
    "q": "A premature neonate born at 29 weeks gestation has a continuous machinery-like murmur at the left infraclavicular area and bounding pulses due to a patent ductus arteriosus (PDA). Administration of indomethacin successfully closes the ductus by inhibiting which enzyme?",
    "options": [
-    "Angiotensin-converting enzyme (ACE)",
-    "Endothelial nitric oxide synthase (eNOS)",
+    "Angiotensin-converting enzyme",
+    "Endothelial nitric oxide synthase",
     "HMG-CoA reductase",
-    "Cyclooxygenase (COX), thereby blocking vasodilatory prostaglandin E2 synthesis"
+    "Cyclooxygenase, reducing prostaglandin E2 synthesis"
    ],
    "answer": 3,
    "explain": "Prostaglandin E2 (PGE2) actively keeps the ductus arteriosus patent in utero; NSAIDs like indomethacin or ibuprofen inhibit cyclooxygenase (COX) to lower PGE2 and promote smooth muscle constriction and closure.",
