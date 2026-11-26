@@ -730,6 +730,146 @@
           "Through an RNA-induced silencing complex"
         ]
       }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-032",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Membrane Potential Basics",
+      "q": "At rest, a typical neuron is most permeable to which ion through its leak channels?",
+      "options": [
+        "Potassium (K+)",
+        "Sodium (Na+)",
+        "Calcium (Ca2+)",
+        "Chloride (Cl−)"
+      ],
+      "answer": 0,
+      "explain": "At rest, potassium leak conductance is usually much greater than sodium conductance, so the membrane potential lies closer to the potassium equilibrium potential.",
+      "verified": false,
+      "open": {
+        "q": "Which ion has the greatest resting leak permeability in a typical neuron?",
+        "accept": [
+          "potassium",
+          "K+"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Membrane Potential Basics",
+      "q": "Which equation estimates membrane potential by considering the concentrations and relative permeabilities of several ions, including K+, Na+ and Cl−?",
+      "options": [
+        "Nernst equation",
+        "Goldman–Hodgkin–Katz equation",
+        "Henderson–Hasselbalch equation",
+        "Fick equation"
+      ],
+      "answer": 1,
+      "explain": "The Goldman–Hodgkin–Katz equation combines the gradients and relative permeabilities of multiple ions; the Nernst equation gives the equilibrium potential for one ion.",
+      "verified": false,
+      "open": {
+        "q": "Which equation estimates membrane potential from several permeant ions and their relative permeabilities?",
+        "accept": [
+          "Goldman equation",
+          "Goldman-Hodgkin-Katz equation",
+          "GHK equation"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-034",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Membrane Potential Basics",
+      "q": "During the absolute refractory period of a neuronal action potential, a second action potential cannot be initiated mainly because:",
+      "options": [
+        "Voltage-gated Na+ channels are inactivated",
+        "All K+ leak channels are closed",
+        "The Na+/K+-ATPase has stopped working",
+        "The intracellular fluid has become isotonic"
+      ],
+      "answer": 0,
+      "explain": "After opening, voltage-gated Na+ channels enter an inactivated state and cannot reopen until the membrane repolarises sufficiently.",
+      "verified": false,
+      "open": {
+        "q": "What channel state prevents a second action potential during the absolute refractory period?",
+        "accept": [
+          "inactivated voltage-gated sodium channels",
+          "Na+ channel inactivation"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-035",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Membrane Potential Basics",
+      "q": "In the rising phase of a typical neuronal action potential, rapid depolarisation is produced primarily by:",
+      "options": [
+        "Opening of voltage-gated Na+ channels and Na+ influx",
+        "Opening of voltage-gated K+ channels and K+ influx",
+        "Closure of all membrane ion channels",
+        "Activation of the Na+/K+-ATPase"
+      ],
+      "answer": 0,
+      "explain": "Once threshold is reached, voltage-gated Na+ channels open and Na+ enters down its electrochemical gradient, driving the rapid upstroke.",
+      "verified": false,
+      "open": {
+        "q": "Which ion movement produces the rapid upstroke of a typical neuronal action potential?",
+        "accept": [
+          "sodium influx",
+          "Na+ influx"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-036",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Secondary Active Transport",
+      "q": "At the neuromuscular junction, acetylcholine first produces an end-plate potential by opening which type of channel?",
+      "options": [
+        "Voltage-gated K+ channels",
+        "Ligand-gated nicotinic cation channels",
+        "Mechanically gated Ca2+ channels",
+        "ATP-gated Cl− channels"
+      ],
+      "answer": 1,
+      "explain": "Acetylcholine binds nicotinic receptors on the motor end plate. Their cation channels permit net inward positive current, producing local depolarisation that can trigger a muscle action potential.",
+      "verified": false,
+      "open": {
+        "q": "Which receptor-channel mediates the initial end-plate potential at the neuromuscular junction?",
+        "accept": [
+          "nicotinic acetylcholine receptor",
+          "nicotinic receptor",
+          "ligand-gated cation channel"
+        ]
+      }
+    },
+    {
+      "id": "pg-cell-physiology-and-membrane-transport-037",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cell Membrane Structure",
+      "q": "If the specific capacitance of a cell membrane remains constant, which change increases its total membrane capacitance?",
+      "options": [
+        "Increasing membrane surface area",
+        "Increasing membrane thickness",
+        "Reducing the number of phospholipids",
+        "Reducing the membrane surface area"
+      ],
+      "answer": 0,
+      "explain": "Total membrane capacitance is proportional to membrane surface area and inversely related to membrane thickness; a larger membrane stores more separated charge at a given voltage.",
+      "verified": false,
+      "open": {
+        "q": "What happens to total membrane capacitance when membrane surface area increases?",
+        "accept": [
+          "it increases",
+          "increases"
+        ]
+      }
     }
   ]
 }
