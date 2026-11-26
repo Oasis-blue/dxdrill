@@ -635,7 +635,7 @@
     "Positive selection deletes autoreactive T cells; negative selection tests TCR affinity for foreign antigens",
     "Positive selection induces class switching; negative selection induces somatic hypermutation",
     "Positive selection converts CD4+ cells into B cells; negative selection triggers apoptosis of macrophages",
-    "Positive selection retains T cells able to recognize self MHC molecules; negative selection deletes T cells that bind self-peptides too strongly"
+    "Positive selection retains self-MHC recognition; negative selection deletes strongly self-reactive T cells"
    ],
    "answer": 3,
    "explain": "Positive selection ensures MHC restriction (survival of thymocytes whose TCRs weakly bind self-MHC on cortical epithelial cells), while negative selection enforces central self-tolerance by eliminating high-affinity self-reactive clones via AIRE-expressed tissue antigens.",
@@ -705,7 +705,7 @@
    "options": [
     "Signal 1 is IL-2 binding; Signal 2 is complement C3b binding",
     "Signal 1 is CD40-CD40L interaction; Signal 2 is histamine release",
-    "Signal 1 is TCR binding peptide-MHC; Signal 2 is costimulatory B7 (CD80/CD86) binding CD28 on the T cell",
+    "Signal 1: TCR–peptide-MHC; Signal 2: B7–CD28 costimulation",
     "Signal 1 is IgE cross-linking; Signal 2 is perforin secretion"
    ],
    "answer": 2,
@@ -825,7 +825,7 @@
     "Complement C1q activation and histamine release",
     "Phagocytosis and myeloperoxidase-derived bleach",
     "Neutralizing IgA secretion and bradykinin synthesis",
-    "Exocytosis of perforin and granzymes, and engagement of target Fas (CD95) by Fas ligand (FasL)"
+    "Perforin/granzyme release and Fas–FasL signalling"
    ],
    "answer": 3,
    "explain": "Perforin forms pores in the target membrane allowing granzymes to enter and cleave intracellular caspases, while FasL-Fas binding activates the extrinsic caspase-8 apoptotic cascade.",
@@ -1125,7 +1125,7 @@
    "sub": "Clinical Correlations and Immunodeficiencies",
    "q": "A 28-year-old man with untreated HIV infection presents with Pneumocystis jirovecii pneumonia and oral candidiasis, and his CD4+ T-cell count is 140 cells/uL. Why does selective depletion of CD4+ T helper cells cripple both cell-mediated and humoral immunity?",
    "options": [
-    "CD4 cells provide cytokines and CD40L signals needed to coordinate macrophages, CD8 cells and B cells",
+    "CD4 cells provide cytokines and CD40L help to B cells, macrophages and CD8 cells",
     "CD4 cells are the only cells that phagocytose fungi in alveoli",
     "CD4 cells directly synthesise serum IgM and IgG",
     "CD4 cells produce complement C3 in the liver"
@@ -1218,7 +1218,7 @@
    "sub": "Lymphoid Organs and Circulation",
    "q": "Why are asplenic or splenectomized patients particularly susceptible to fulminant sepsis caused by encapsulated bacteria such as Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria meningitidis?",
    "options": [
-    "The spleen clears opsonised encapsulated bacteria and supports IgM responses to capsular polysaccharides",
+    "Splenic macrophages clear opsonised bacteria; marginal-zone B cells produce anti-capsular IgM",
     "The spleen is the sole site of neutrophil production in adults",
     "Splenectomy removes all CD4 T lymphocytes",
     "The spleen synthesises all serum complement proteins"
@@ -1266,7 +1266,7 @@
    "options": [
     "Predominance of hypersegmented neutrophils with six or more nuclear lobes",
     "Complete absence of segmented neutrophils in peripheral blood",
-    "Increased release of immature neutrophil precursors such as band (stab) forms and metamyelocytes from the bone marrow",
+    "Release of immature neutrophils, especially band forms, from marrow",
     "Elevated circulating atypical lymphocytes"
    ],
    "answer": 2,
@@ -1384,7 +1384,7 @@
     "Blocks all MHC class I and II expression on macrophages",
     "Destroys circulating B cells within minutes",
     "Inhibits IL-1 and TNF-alpha release from monocytes",
-    "Bridges MHC II and T-cell receptor V-beta regions, activating many T cells and releasing cytokines"
+    "Cross-linking MHC II and TCR V-beta activates many T cells and releases cytokines"
    ],
    "answer": 3,
    "explain": "Unlike conventional peptide antigens that activate ~0.01% of T cells, superantigens bridge MHC class II and TCR V-beta chains directly without antigen processing, triggering polyclonal activation of ~10-20% of T cells and massive release of IL-2, IFN-gamma, and TNF-alpha.",
