@@ -4,6 +4,8 @@ on:
     paths:
       - "tools/validate-visual-intake.js"
       - "tests/visual-intake-validator.test.js"
+      - "tools/import-visual-intake.js"
+      - "tests/visual-intake-importer.test.js"
       - ".github/workflows/visual-intake-validator.yml"
   push:
     branches: [main]
@@ -23,4 +25,4 @@ jobs:
         with:
           python-version: "3.x"
       - run: python -m pip install -r requirements-visual-validation.txt
-      - run: node --test tests/visual-intake-validator.test.js
+      - run: node --test tests/visual-intake-validator.test.js tests/visual-intake-importer.test.js
