@@ -88,3 +88,16 @@ This is an initial targeted pass, not a complete audit of the bank. The remainin
 ## Verification pass 2 — 2026-11-26
 
 A further three stems were checked statement-by-statement against the cited NCBI Bookshelf sources: tf-pb-fluid-001, tf-bc-protein-001, tf-bc-protein-002. The verified count is now 10 of 89; 79 remain draft/unverified. No status was changed for stems not reviewed in this pass.
+
+
+## Integrated Pathology and Pharmacology batch — 2026-11-26
+
+Added eight four-statement True/False stems directly to the core bank: four General Pathology and four General Pharmacology. Each new stem was reviewed against its cited references during drafting; wording and answer keys were revised before the bank update. New IDs: tf-pa-general-001, tf-pa-general-002, tf-pa-general-003, tf-pa-general-004, tf-pm-general-001, tf-pm-general-002, tf-pm-general-003, tf-pm-general-004.
+
+- Total bank: 97 stems / 393 statements
+- Stems marked verified: 18
+- Stems still draft/unverified: 79
+- Structural issues (four items, Boolean keys, non-empty wording/explanations and references): 5
+- Duplicate IDs: 0
+
+The new subject coverage uses existing curriculum topic IDs `pa-general` and `pm-general`; no new subject-specific loader or UI was required for this initial batch. The bank now has initial coverage for both subjects, with subsequent batches planned across the remaining Pathology and Pharmacology curriculum areas. Verification status applies only to the stems explicitly reviewed; reference presence alone is not verification.
