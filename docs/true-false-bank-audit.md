@@ -97,7 +97,7 @@ Added eight four-statement True/False stems directly to the core bank: four Gene
 - Total bank: 97 stems / 393 statements
 - Stems marked verified: 18
 - Stems still draft/unverified: 79
-- Structural issues (four items, Boolean keys, non-empty wording/explanations and references): 5
+- Structural issues (at least four items, Boolean keys, non-empty wording/explanations and references): 0
 - Duplicate IDs: 0
 
 The new subject coverage uses existing curriculum topic IDs `pa-general` and `pm-general`; no new subject-specific loader or UI was required for this initial batch. The bank now has initial coverage for both subjects, with subsequent batches planned across the remaining Pathology and Pharmacology curriculum areas. Verification status applies only to the stems explicitly reviewed; reference presence alone is not verification.
