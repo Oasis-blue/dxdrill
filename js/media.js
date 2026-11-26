@@ -29,6 +29,8 @@
   function profileFor(context) {
     var subject = String(context.subject || "").toLowerCase();
     var text = contextText(context).toLowerCase();
+    if (/diuretic|furosemide|frusemide|thiazide|spironolactone|amiloride|mannitol|acetazolamide/.test(text)) return { kind: "Renal physiology / pharmacology", hint: "nephron diuretic site of action diagram", boost: ["diuretic", "nephron", "loop", "thiazide", "collecting duct", "site of action"] };
+    if (/l.?dopa|levodopa|dopamine|dopa decarboxylase|carbidopa/.test(text)) return { kind: "Neurochemistry / pharmacology", hint: "L-DOPA dopamine synthesis metabolism pathway diagram", boost: ["dopamine", "levodopa", "l-dopa", "carbidopa", "decarboxylase", "blood brain barrier"] };
     /* Curriculum subject is authoritative; don't infer Anatomy from a generic section label. */
     if (/anatomy/.test(subject)) return { kind: "Anatomy", hint: "anatomical structure labelled diagram" , boost: ["anatomy", "anatomical", "structure", "nerve", "artery", "muscle"] };
     if (/physiology/.test(subject)) return { kind: "Physiology", hint: "physiology mechanism diagram graph", boost: ["physiology", "mechanism", "pathway", "nephron", "cardiac", "renal", "transport"] };
@@ -37,8 +39,6 @@
     if (/pathology/.test(subject)) return { kind: "Pathology", hint: "pathology histopathology medical diagram", boost: ["pathology", "histology", "histopathology", "lesion", "microscopic"] };
     if (/radiology/.test(subject)) return { kind: "Radiology", hint: "radiology medical imaging", boost: ["radiology", "radiograph", "x-ray", "ultrasound", "ct", "mri"] };
     if (/medicine|clinical|surgery|paediatrics|pediatrics|obstetrics|gynaecology|psychiatry/.test(subject)) return { kind: "Clinical medicine", hint: "clinical medical mechanism diagram", boost: ["clinical", "medical", "diagnosis", "treatment", "mechanism"] };
-    if (/diuretic|furosemide|frusemide|thiazide|spironolactone|amiloride|mannitol|acetazolamide/.test(text)) return { kind: "Renal physiology / pharmacology", hint: "nephron diuretic site of action diagram", boost: ["diuretic", "nephron", "loop", "thiazide", "collecting duct", "site of action"] };
-    if (/l.?dopa|levodopa|dopamine|dopa decarboxylase|carbidopa/.test(text)) return { kind: "Neurochemistry / pharmacology", hint: "L-DOPA dopamine synthesis metabolism pathway diagram", boost: ["dopamine", "levodopa", "l-dopa", "carbidopa", "decarboxylase", "blood brain barrier"] };
     if (/histolog|microscop|epitheli|connective tissue|cartilage|bone tissue|blood smear|tissue section/.test(text)) return { kind: "Histology", hint: "histology micrograph microscope slide", boost: ["histology", "micrograph", "microscopic", "stained", "slide", "tissue"] };
     if (/x.?ray|radiograph|fracture|dislocation|pneumothorax|pleural effusion|radiology/.test(text)) return { kind: "Radiology", hint: "medical radiograph X-ray", boost: ["radiograph", "x-ray", "radiology", "fracture", "imaging"] };
     if (/glycolysis|gluconeogen|glycogen|krebs|citric acid|urea cycle|beta oxidation|fatty acid|metabolic pathway|enzyme kinetics/.test(text)) return { kind: "Biochemistry", hint: "biochemical pathway diagram molecular mechanism", boost: ["biochemistry", "pathway", "metabolism", "enzyme", "molecular"] };
