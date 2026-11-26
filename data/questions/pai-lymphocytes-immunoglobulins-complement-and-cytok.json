@@ -32,10 +32,10 @@
    "sub": "Lymphocyte Maturation and Surface Markers",
    "q": "How does antigen recognition by naive CD4+ helper T cells differ structurally from antigen recognition by naive CD8+ cytotoxic T cells?",
    "options": [
-    "CD4+ T cells recognize exogenous peptides presented on MHC class II molecules, whereas CD8+ T cells recognize endogenous peptides presented on MHC class I molecules",
-    "CD4+ T cells recognize native soluble polysaccharides directly, whereas CD8+ T cells recognize free bacterial lipopolysaccharide",
-    "CD4+ T cells bind MHC class I on all nucleated cells, whereas CD8+ T cells bind MHC class II exclusively on erythrocytes",
-    "CD4+ T cells recognize lipid antigens on CD1d only, whereas CD8+ T cells recognize intact immunoglobulin Fc domains"
+    "CD4 cells recognise exogenous peptides on MHC II; CD8 cells recognise endogenous peptides on MHC I",
+    "CD4 cells recognise free polysaccharides; CD8 cells bind free LPS",
+    "CD4 cells bind MHC I; CD8 cells bind MHC II",
+    "CD4 cells recognise CD1d lipids; CD8 cells bind antibody Fc"
    ],
    "answer": 0,
    "explain": "CD4 binds the non-polymorphic beta-2 domain of MHC class II on professional antigen-presenting cells (dendritic cells, macrophages, B cells), whereas CD8 binds the alpha-3 domain of MHC class I expressed on virtually all nucleated cells.",
@@ -78,10 +78,10 @@
    "sub": "Lymphocyte Maturation and Surface Markers",
    "q": "Full activation of a naive T lymphocyte requires both signal 1 (TCR engagement with peptide-MHC) and costimulatory signal 2. Which receptor-ligand interaction delivers the primary costimulatory signal to naive T cells?",
    "options": [
-    "CD28 on the T cell binding B7-1 (CD80) or B7-2 (CD86) on a mature antigen-presenting cell",
-    "CTLA-4 on the T cell binding ICAM-1 on vascular endothelium",
-    "Fas (CD95) on the T cell binding Fas ligand on macrophages",
-    "CD21 on the T cell binding C3d complement fragments"
+    "T-cell CD28 binds B7 (CD80/CD86) on an antigen-presenting cell",
+    "CTLA-4 binds endothelial ICAM-1",
+    "Fas binds macrophage Fas ligand",
+    "T-cell CD21 binds C3d"
    ],
    "answer": 0,
    "explain": "Ligation of T-cell CD28 by B7-1 (CD80) or B7-2 (CD86) on activated dendritic cells triggers IL-2 production and clonal proliferation; TCR engagement without CD28 costimulation induces T-cell anergy or apoptosis.",
@@ -101,10 +101,10 @@
    "sub": "Lymphocyte Maturation and Surface Markers",
    "q": "How do Natural Killer (NK) cells (CD16+ CD56+) distinguish virus-infected or malignant host cells from healthy nucleated host cells without prior antigen sensitization?",
    "options": [
-    "Loss of self MHC class I molecules removes inhibitory signals delivered to NK killer cell immunoglobulin-like receptors (KIRs), allowing activating receptors to trigger cytolysis",
-    "NK cells undergo somatic hypermutation of surface IgM receptors within lymph node germinal centres",
-    "NK cells recognize viral peptides exclusively when bound to MHC class II molecules",
-    "NK cells require prior differentiation into antibody-secreting plasma cells"
+    "Loss of MHC I removes inhibitory KIR signals, permitting NK-cell activation",
+    "NK cells hypermutate IgM receptors in germinal centres",
+    "NK cells recognise viral peptides only on MHC II",
+    "NK cells must first become plasma cells"
    ],
    "answer": 0,
    "explain": "Healthy nucleated cells express self MHC class I molecules that engage inhibitory receptors (KIRs) on NK cells to block killing; viruses and tumours that downregulate MHC class I to evade CD8+ T cells lose this inhibitory signal ('missing-self' recognition) and are lysed via perforin and granzymes.",
@@ -124,9 +124,9 @@
    "sub": "Immunoglobulin Structure and Function",
    "q": "Enzymatic digestion of an intact IgG molecule with papain cleaves above the hinge disulfide bonds to yield which fragments?",
    "options": [
-    "Two identical monovalent antigen-binding fragments (Fab) and one crystallizable effector fragment (Fc)",
-    "One divalent F(ab')2 fragment and multiple small degraded Fc peptides",
-    "Two isolated heavy chains and two free J chains",
+    "Two Fab antigen-binding arms and one Fc effector region",
+    "One F(ab')2 fragment and several Fc peptides",
+    "Two heavy chains and two J chains",
     "Secretory component and beta-2 microglobulin"
    ],
    "answer": 0,
@@ -170,10 +170,10 @@
    "sub": "Immunoglobulin Structure and Function",
    "q": "Why is pentameric IgM the most potent immunoglobulin activator of the classical complement pathway on a per-molecule basis?",
    "options": [
-    "A single antigen-bound IgM pentamer provides multiple closely spaced Fc regions capable of binding two or more globular heads of C1q simultaneously",
-    "IgM possesses the longest serum half-life of 60 days",
-    "IgM is the only antibody produced in mucosal secretions",
-    "IgM activates alternative pathway Factor B directly without C1q"
+    "Pentameric IgM presents multiple Fc regions for C1q binding",
+    "IgM has a 60-day serum half-life",
+    "IgM is the only mucosal antibody",
+    "IgM activates the alternative pathway directly"
    ],
    "answer": 0,
    "explain": "Activation of C1 requires C1q to bind at least two adjacent Fc domains; pentameric IgM undergoes a staple-like conformational change upon binding surface antigen, exposing five Fc domains in close proximity, whereas IgG requires two separate IgG molecules bound close together.",
@@ -193,10 +193,10 @@
    "sub": "Immunoglobulin Structure and Function",
    "q": "How is dimeric IgA transported across mucosal epithelial cells into breast milk, saliva, and intestinal secretions, and what protects it from luminal proteolytic degradation?",
    "options": [
-    "Polymeric immunoglobulin receptor (pIgR) transcytoses J-chain-linked dimeric IgA and cleaves to leave a protective secretory component attached",
-    "Neonatal Fc receptor (FcRn) transports monomeric IgA together with albumin",
-    "Complement receptor CR1 carries pentameric IgA across tight junctions",
-    "Macrophages secrete IgA directly into the intestinal lumen via phagocytosis"
+    "pIgR transports J-chain dimeric IgA across epithelium, leaving secretory component attached",
+    "FcRn transports monomeric IgA with albumin",
+    "CR1 carries IgA through tight junctions",
+    "Macrophages secrete IgA by phagocytosis"
    ],
    "answer": 0,
    "explain": "Subepithelial plasma cells secrete dimeric IgA joined by a J chain; basolateral poly-Ig receptors bind the J chain, endocytose the complex, and release secretory IgA (sIgA) at the apical surface wrapped in the cleaved extracellular domain of pIgR (secretory component).",
@@ -263,10 +263,10 @@
    "sub": "Immunoglobulin Structure and Function",
    "q": "A 9-month-old boy presents with recurrent sinopulmonary bacterial infections and Pneumocystis jirovecii pneumonia. Laboratory studies show markedly elevated serum IgM (4.8 g/L), virtually undetectable serum IgG, IgA, and IgE, and normal circulating B-cell numbers. Lymph nodes lack germinal centres. Which molecular defect explains X-linked hyper-IgM syndrome?",
    "options": [
-    "Mutation in the CD40 ligand (CD40L / CD154) gene on activated helper T cells",
-    "Complete deletion of the Bruton tyrosine kinase (BTK) gene in pre-B cells",
-    "Deficiency of complement component C3",
-    "Mutation in the IL-2 receptor common gamma chain"
+    "CD40L (CD154) deficiency on helper T cells",
+    "BTK deletion in pre-B cells",
+    "C3 deficiency",
+    "Common gamma-chain mutation"
    ],
    "answer": 0,
    "explain": "In X-linked hyper-IgM syndrome, helper T cells fail to express functional CD40L (CD154) and therefore cannot engage CD40 on B cells to induce AID expression, germinal centre formation, or class switching beyond IgM.",
@@ -356,10 +356,10 @@
    "sub": "The Complement System",
    "q": "Which complement proteins assemble sequentially on target microbial membranes to form the cylindrical transmembrane pore known as the Membrane Attack Complex (MAC)?",
    "options": [
-    "C5b, C6, C7, C8, and multiple polymerized C9 molecules (C5b-9)",
-    "C1q, C1r, C1s, C2, and C4",
-    "Mannose-binding lectin, MASP-1, and MASP-2",
-    "Factor B, Factor D, and properdin"
+    "C5b, C6, C7, C8 and polymerised C9",
+    "C1q, C1r, C1s, C2 and C4",
+    "MBL, MASP-1 and MASP-2",
+    "Factor B, Factor D and properdin"
    ],
    "answer": 0,
    "explain": "Once C5 convertase cleaves C5 into C5a and C5b, C5b binds C6, C7, and C8 to insert into the lipid bilayer and nucleate polymerization of 10 to 16 C9 molecules into a lytic transmembrane channel.",
@@ -379,10 +379,10 @@
    "sub": "The Complement System",
    "q": "Inherited deficiency of terminal complement components (C5 through C9) specifically predisposes affected patients to recurrent invasive infections by which genus of encapsulated bacteria?",
    "options": [
-    "Neisseria (Neisseria meningitidis and Neisseria gonorrhoeae)",
+    "Neisseria species",
     "Mycobacterium tuberculosis",
     "Staphylococcus epidermidis",
-    "Clostridium difficile"
+    "Clostridioides difficile"
    ],
    "answer": 0,
    "explain": "Thin-walled Gram-negative Neisseria species depend heavily on Membrane Attack Complex (C5b-9)-mediated bacteriolysis for host clearance; defects in C5–C9 or properdin cause recurrent meningococcal meningitis and disseminated gonococcal infection.",
