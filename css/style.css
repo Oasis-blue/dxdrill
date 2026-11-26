@@ -398,7 +398,9 @@ body.bigscreen #backbar{display:none!important}
 .streakchip.on{border-color:var(--accent)}
 .streakchip small{color:var(--muted);margin-left:auto}
 .streakchip .sk-ico{font-size:18px;line-height:1}
-.dxtoast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:160;max-width:min(92vw,380px);padding:10px 16px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:600;font-size:15px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.28);pointer-events:none;animation:dxt-in .3s ease both}
+.dxtoast-region{display:flex;justify-content:center;align-items:center;padding:10px 12px;box-sizing:border-box;background:var(--bg);border-bottom:1px solid var(--line)}
+.dxtoast-region:empty{display:none}
+.dxtoast{position:relative;max-width:min(92vw,380px);margin:0 auto;padding:10px 16px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:600;font-size:15px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.16);pointer-events:none;animation:dxt-in .3s ease both}
 .dxtoast.out{opacity:0;transition:opacity .35s ease}
 .dxtoast--loading,.dxtoast--success{display:flex;align-items:center;gap:11px;max-width:min(92vw,400px);padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--fg);text-align:left}
 .dxtoast__icon{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:color-mix(in srgb,var(--accent) 13%,var(--surface));color:var(--accent);font-size:19px;font-weight:800;line-height:1}
@@ -408,7 +410,7 @@ body.bigscreen #backbar{display:none!important}
 .dxtoast__detail{font-size:13px;line-height:1.35;font-weight:400;color:var(--muted)}
 .dxtoast--success .dxtoast__icon{background:color-mix(in srgb,var(--good) 14%,var(--surface));color:var(--good)}
 @keyframes dxtoast-spin{to{transform:rotate(360deg)}}
-@keyframes dxt-in{from{opacity:0;transform:translate(-50%,-10px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes dxt-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 @media (prefers-reduced-motion:reduce){.dxtoast{animation:none}.dxtoast.out{transition:none}.dxtoast--loading .dxtoast__icon{animation:none;border-top-color:var(--line);border-style:dotted}}
 
 /* Practice picker: back link, search, collapsed subjects, sticky Start */
