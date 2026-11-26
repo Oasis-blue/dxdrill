@@ -61,11 +61,27 @@ window.DX = window.DX || {};
     DX.store.set("dx.stats", st);
   };
 
-  function getJSON(url) {
-    return fetch(url).then(function (r) {
+  /* Each file gets 15 seconds and one retry, so one stalled request cannot freeze the whole app. */
+  function getJSON(url, tries) {
+    tries = tries || 2;
+    var ctl = window.AbortController ? new AbortController() : null;
+    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 15000);
+    return fetch(url, ctl ? { signal: ctl.signal } : undefined).then(function (r) {
+      clearTimeout(timer);
       if (!r.ok) throw new Error(url + " (" + r.status + ")");
       return r.json();
+    }).catch(function (e) {
+      clearTimeout(timer);
+      if (tries > 1) return getJSON(url, tries - 1);
+      throw e;
     });
+  }
+  /* Run tasks (functions that return promises) a few at a time, so a weak connection is not asked for 80 files at once. */
+  function pool(tasks, n) {
+    var i = 0;
+    return Promise.all(new Array(Math.min(n, tasks.length)).fill(0).map(function () {
+      return (function nx() { if (i >= tasks.length) return Promise.resolve(); return tasks[i++]().then(nx); })();
+    }));
   }
 
   DX.load = function () {
@@ -87,7 +103,7 @@ window.DX = window.DX || {};
     }).then(function (man) {
       var jobs = [];
       (man.questions || []).forEach(function (f) {
-        jobs.push(getJSON("data/questions/" + f + ".json").then(function (d) {
+        jobs.push(function () { return getJSON("data/questions/" + f + ".json").then(function (d) {
           /* One topic for the whole file ("topic"), or a "topic" on each question to mix topics in one file. A question's own topic wins. */
           var fileT = DX.topicById[d.topic], bad = 0;
           if (!fileT && !d.questions.some(function (q) { return DX.topicById[q.topic]; })) { console.warn("Unknown topic id in " + f + ": " + d.topic); return; }
@@ -98,19 +114,23 @@ window.DX = window.DX || {};
             DX.questions.push(q); t.count++;
           });
           if (bad) console.warn(bad + " question(s) in " + f + " have no known topic and were skipped");
-        }).catch(function (e) { console.warn("Could not load question file", e.message); }));
+        }).catch(function (e) { console.warn("Could not load question file", e.message); }); });
       });
       (man.terms || []).forEach(function (f) {
-        jobs.push(getJSON("data/" + f + ".json").then(function (d) {
+        jobs.push(function () { return getJSON("data/" + f + ".json").then(function (d) {
           d.terms.forEach(function (x) {
             var t = DX.topicById[x.topic];
             if (!t) return;
             x.area = t.area; x.subject = t.subject;
             DX.terms.push(x);
           });
-        }).catch(function (e) { console.warn("Could not load terms file", e.message); }));
+        }).catch(function (e) { console.warn("Could not load terms file", e.message); }); });
       });
-      return Promise.all(jobs);
+      /* Open the app after at most 10 seconds even if some files are still coming; the rest keep loading and the page refreshes when they arrive. */
+      DX.partial = false;
+      var all = pool(jobs, 6).then(function () { if (DX.partial) { DX.partial = false; if (DX.onMore) DX.onMore(); } });
+      var early = new Promise(function (res) { setTimeout(function () { DX.partial = true; res(); }, 10000); });
+      return Promise.race([all, early]);
     });
   };
 
