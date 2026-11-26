@@ -67,8 +67,8 @@ Combined bank: 89 stems, 361 statements across 54 curriculum topics. Structural 
 The earlier audit identified a missing-reference metadata gap. This cleanup adds source links to all previously unreferenced stems in both True/False data files.
 
 - Total stems reviewed for reference metadata: 89
-- Stems now carrying one or more reference links: 86
-- Stems still without references: 3
+- Stems now carrying one or more reference links: 89
+- Stems still without references: 0
 - Entries with malformed non-HTTPS reference values: 0
 
 Important qualification: these are **topic-level supporting references**, not proof that each individual statement has been independently checked against every cited source. A reference field is provenance assistance, not a verification flag. All questions remain draft/unverified until a human subject reviewer checks the complete stem, answer key and explanation against the relevant source. The `referenceScope` field identifies the older stems whose links were added at topic level.
