@@ -840,6 +840,50 @@
           "50% of Vmax"
         ]
       }
+    },
+    {
+      "id": "enzmeng-39",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme inhibition",
+      "q": "A competitive inhibitor is added to an enzyme-catalysed reaction. Which kinetic change is expected?",
+      "options": [
+        "Increased apparent Km with unchanged Vmax",
+        "Decreased Vmax with unchanged Km",
+        "Decreased Km and decreased Vmax",
+        "Increased Vmax with unchanged Km"
+      ],
+      "answer": 0,
+      "explain": "A competitive inhibitor competes with substrate at the active site. Increasing substrate can overcome inhibition, so apparent Km rises while Vmax remains unchanged.",
+      "verified": false,
+      "open": {
+        "q": "What happens to apparent Km and Vmax during competitive inhibition?",
+        "accept": [
+          "Km increases while Vmax remains unchanged"
+        ]
+      }
+    },
+    {
+      "id": "enzmeng-40",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Bioenergetics",
+      "q": "An uncoupling agent increases proton permeability of the inner mitochondrial membrane. Which outcome is expected?",
+      "options": [
+        "Increased oxygen consumption with reduced ATP synthesis efficiency",
+        "Reduced electron transport and increased ATP yield",
+        "Complete inhibition of substrate oxidation with increased proton gradient",
+        "Increased ATP synthesis because the proton gradient becomes steeper"
+      ],
+      "answer": 0,
+      "explain": "Uncouplers dissipate the proton-motive force. Electron transport and oxygen consumption may continue or increase, but less energy is conserved as ATP and more is released as heat.",
+      "verified": false,
+      "open": {
+        "q": "What happens to oxidative phosphorylation when an uncoupler dissipates the proton gradient?",
+        "accept": [
+          "Oxygen consumption continues or increases while ATP synthesis falls and heat production rises"
+        ]
+      }
     }
   ]
 }
