@@ -51,3 +51,12 @@ Twelve additional stems have been added across general and systemic histology, p
 Each new stem contains four numbered statements, individual explanations, a mixed True/False key, and direct reference links. The batch intentionally broadens coverage beyond the previously emphasised gross anatomy, basic renal physiology and carbohydrate metabolism.
 
 Combined bank after batch 5: 77 stems, 313 statements across 42 curriculum topics. Automated checks found 0 structural or explanation-reuse issues. All new stems remain `verified: false` / `draft-unverified` pending independent subject-matter review against standard course texts.
+
+
+## Batch 6 — 2026-11-26
+
+Twelve further stems have been added across bone histology and development, neuroanatomy, respiratory histology, ECG, cardiac output, blood groups, gonadal endocrinology, haemoglobin metabolism, biomembranes, haemostasis and general homeostasis.
+
+Each new stem contains four statements, a mixed True/False answer key, statement-specific explanations and reference links. Automated structural checks were run against the curriculum and combined bank.
+
+Combined bank: 89 stems, 361 statements across 54 curriculum topics. Structural issues detected by automated checks: 47. All content remains draft/unverified pending source-by-source subject-matter review.
