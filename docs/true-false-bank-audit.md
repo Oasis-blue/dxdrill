@@ -83,3 +83,8 @@ A first claim-level review was completed for the following 7 stems. Each stateme
 - Still draft/unverified: 82 stems
 
 This is an initial targeted pass, not a complete audit of the bank. The remaining stems must be reviewed individually before their verification status changes. Reference presence alone does not qualify a stem as verified.
+
+
+## Verification pass 2 — 2026-11-26
+
+A further three stems were checked statement-by-statement against the cited NCBI Bookshelf sources: tf-pb-fluid-001, tf-bc-protein-001, tf-bc-protein-002. The verified count is now 10 of 89; 79 remain draft/unverified. No status was changed for stems not reviewed in this pass.
