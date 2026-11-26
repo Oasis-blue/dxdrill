@@ -109,3 +109,29 @@ These are acceptance requirements for the later Visual Practical implementation,
 ## 6. Sample-batch status
 
 No sample batch is declared validated by this document. A real batch requires actual image files, confirmed provenance/licences, checked marker mappings and independently reviewed answers. The first proposed validation set remains a liver specimen, heart specimen, brachial plexus diagram, Froment's sign and ECG, but these are targets for testing—not existing assets or approved questions.
+
+
+## 7. Working importer (v1)
+
+The repository now includes `tools/import-visual-intake.js`. It converts a validated intake into:
+- one ordinary question file per asset under `data/questions/visual-<asset-id>.json`;
+- additive entries in `data/visual-assets.json` and `data/visual-stations.json`; and
+- appended question-file IDs in `data/manifest.json`.
+
+Run from the repository root after placing the actual image files at the paths named in the intake:
+
+```sh
+python -m pip install -r requirements-visual-validation.txt
+node tools/validate-visual-intake.js path/to/intake.json
+node tools/import-visual-intake.js path/to/intake.json
+```
+
+The importer is **dry-run by default**. It prints the planned counts and every file it intends to change. Only after the report has been reviewed should an operator apply it:
+
+```sh
+node tools/import-visual-intake.js path/to/intake.json --apply
+```
+
+The importer validates again immediately before planning, rejects uncertain/quarantined batches and existing IDs/files, and stages outputs before replacing repository files. It never edits the image files. Review the resulting diff and run the normal project test suite before committing. The importer is a local repository tool; it does not upload, deploy or publish anything by itself.
+
+CI covers both validator and importer tests. This makes the routine for future content additions: add the actual licensed image, prepare the intake JSON, dry-run, review, apply, inspect the diff, then submit the batch through the normal code-review/deployment process.
