@@ -100,10 +100,10 @@
    "sub": "Cerebral Cortex Layers, Functional Areas, and Hemispheric Lateralization",
    "q": "What is 'hemispatial neglect' (contralateral neglect syndrome), and which cortical lesion most commonly produces it?",
    "options": [
-    "A lesion of the RIGHT (non-dominant) posterior parietal cortex (inferior parietal lobule), causing the patient to completely ignore or fail to attend to the LEFT half of space and the left side of their own body (e.g., eating only food on the right half of a plate, shaving only the right side of the face, drawing only the right half of a clock) despite intact primary vision and motor pathways",
-    "A lesion of Broca's area causing non-fluent speech",
-    "A lesion of the left occipital pole causing right homonymous hemianopsia",
-    "A lesion of the cerebellar vermis causing wide-based gait"
+    "Right posterior parietal (usually non-dominant) lesion causes neglect of the left side despite intact primary vision and movement.",
+    "Left inferior frontal lesion causes non-fluent speech with impaired language production but preserved comprehension.",
+    "Left occipital lesion causes right homonymous visual-field loss rather than spatial inattention.",
+    "Cerebellar vermis damage causes truncal ataxia and a broad-based gait, not hemispatial neglect."
    ],
    "answer": 0,
    "explain": "Because the right parietal lobe attends to BOTH left and right visual hemispaces whereas the left parietal lobe attends primarily to the right hemispace, right parietal damage leaves left hemispace unattended.",
@@ -123,10 +123,10 @@
    "sub": "Thalamic Nuclei and Thalamocortical Projections",
    "q": "Match the specific thalamic relay nuclei with their sensory/motor inputs and cortical targets:",
    "options": [
-    "VPL (Ventral Posterolateral): spinothalamic & medial lemniscus -> primary somatosensory cortex (S1, body); VPM (Ventral Posteromedial): trigeminothalamic & gustatory (NTS) -> S1 (face & taste); LGN (Lateral Geniculate Nucleus): optic tract -> primary visual cortex (V1); MGN (Medial Geniculate Nucleus): inferior colliculus -> primary auditory cortex (A1); VA/VL (Ventral Anterior/Lateral): basal ganglia & cerebellum -> motor/premotor cortex",
-    "LGN -> primary auditory cortex; MGN -> primary visual cortex",
-    "VPM -> spinal motor neurons; VPL -> retina",
-    "Pulvinar -> cerebellar dentate nucleus"
+    "VPL: body sensation to S1; VPM: face/taste to S1 and gustatory cortex; LGN: retina to V1; MGN: inferior colliculus to A1; VA/VL: basal ganglia/cerebellum to motor cortex.",
+    "LGN relays hearing to A1; MGN relays vision to V1; VPL carries facial sensation and VPM carries body sensation.",
+    "VPM relays spinal motor output; VPL receives retinal input; VA/VL projects to primary visual cortex.",
+    "Pulvinar relays cerebellar output to spinal motor neurons; LGN relays hearing and MGN relays vision."
    ],
    "answer": 0,
    "explain": "Quick mnemonics: LGN = Light (vision), MGN = Music (audition), VPM = Makeup/Mouth (face somatosensation & taste), VPL = Limbs/body somatosensation.",
@@ -146,10 +146,10 @@
    "sub": "Thalamic Nuclei and Thalamocortical Projections",
    "q": "What is 'Dejerine-Roussy syndrome' (central post-stroke thalamic pain syndrome)?",
    "options": [
-    "Following an ischemic or hemorrhagic stroke in the contralateral ventral posterolateral/posteromedial (VPL/VPM) thalamus (thalamogeniculate artery), initial transient contralateral hemianesthesia gives way weeks to months later to severe, agonizing, burning, dysesthetic pain (allodynia/hyperpathia) triggered by light touch or temperature changes",
-    "Complete painless anesthesia of the ipsilateral face forever",
-    "Isolated fluent Wernicke's aphasia",
-    "Bilateral lower-limb flaccid paralysis"
+    "Contralateral VPL/VPM thalamic injury can cause delayed burning central pain, allodynia, and hyperpathia after initial sensory loss.",
+    "Ipsilateral facial anaesthesia persists without pain after a lesion of the trigeminal motor nucleus.",
+    "Dominant inferior frontal injury causes fluent speech with impaired comprehension and naming.",
+    "Bilateral corticospinal injury causes flaccid paralysis without sensory disturbance or neuropathic pain."
    ],
    "answer": 0,
    "explain": "Maladaptive neuroplasticity and loss of GABAergic thalamic reticular inhibition in deafferented VPL/VPM relay neurons generate excruciating central neuropathic pain.",
@@ -192,10 +192,10 @@
    "sub": "Electroencephalogram (EEG) Waves and Clinical Applications",
    "q": "Match the four classic physiological EEG frequency bands with their frequencies (Hz) and behavioral states:",
    "options": [
-    "Beta (>13-30 Hz): alert, awake, active mental concentration, eyes open, REM sleep (low-voltage, high-frequency 'desynchronized' activity); Alpha (8-13 Hz): awake, relaxed, eyes closed, maximal over parieto-occipital cortex; Theta (4-7 Hz): drowsiness, stage N1 light sleep, children; Delta (<4 Hz, 0.5-3.5 Hz): deep slow-wave sleep (stage N3), infancy, or serious structural brain pathology/coma in awake adults",
-    "Delta (30-80 Hz): awake mental arithmetic; Beta (1 Hz): deep coma",
-    "Alpha (8-13 Hz): maximal when solving complex math problems with eyes wide open",
-    "Theta (20 Hz): stage N3 slow-wave sleep"
+    "Beta: alert/REM; alpha: relaxed with eyes closed; theta: drowsiness/N1; delta: deep N3 sleep.",
+    "Delta: alert concentration; beta: deep N3 sleep; alpha: REM atonia; theta: coma in all patients.",
+    "Alpha is maximal with eyes open and active calculation; theta dominates N3; delta is typical of relaxed wakefulness.",
+    "Theta dominates REM sleep; delta occurs during alert wakefulness; beta is the defining N1 rhythm."
    ],
    "answer": 0,
    "explain": "Mnemonic: 'BATS Drink Blood' from awake/REM to deep sleep: Beta (>13 Hz) -> Alpha (8-13 Hz) -> Theta (4-7 Hz) -> Sleep spindles/K-complexes (N2) -> Delta (<4 Hz, N3).",
@@ -261,10 +261,10 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "Match the stages of human sleep (NREM stages N1, N2, N3, and REM sleep) with their characteristic EEG features:",
    "options": [
-    "Stage N1: theta waves (4-7 Hz), vertex sharp waves, slow rolling eye movements; Stage N2 (longest stage, ~45-50% of total sleep): sleep spindles (12-14 Hz bursts from thalamic reticular nucleus) and K-complexes (high-amplitude biphasic waves); Stage N3 (slow-wave sleep): high-amplitude delta waves (<4 Hz, >20% of epoch); REM sleep: desynchronized sawtooth/beta-like EEG ('paradoxical sleep'), rapid conjugate eye movements, skeletal muscle atonia",
-    "Stage N3: 30 Hz beta waves and skeletal muscle spasms; REM: 1 Hz delta waves and sleepwalking",
-    "Stage N2: complete isoelectric flat EEG",
-    "Stage N1: sleep spindles and K-complexes"
+    "N1: theta; N2: spindles and K-complexes; N3: high-amplitude delta; REM: low-voltage, fast EEG with rapid eye movements and muscle atonia.",
+    "N1: spindles and K-complexes; N2: delta waves; N3: beta activity; REM: high-voltage slow waves with increased muscle tone.",
+    "N1: flat EEG; N2: continuous alpha; N3: rapid eye movements; REM: high-amplitude delta with sleepwalking.",
+    "N1: delta; N2: REM-like desynchronisation; N3: sleep spindles only; REM: theta with preserved postural muscle tone."
    ],
    "answer": 0,
    "explain": "Sleep spindles and K-complexes are the hallmark EEG signatures of Stage N2 sleep, which constitutes roughly half of adult nocturnal sleep.",
@@ -330,10 +330,10 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "What is the pathophysiological basis of 'Narcolepsy with Cataplexy', and why do patients experience sudden emotionally triggered muscle collapse (cataplexy), sleep paralysis, and hypnagogic hallucinations?",
    "options": [
-    "Autoimmune destruction of lateral hypothalamic neurons producing orexin (hypocretin-1 and -2), destabilizing the sleep-wake flip-flop switch so REM sleep phenomena (skeletal muscle atonia = cataplexy/sleep paralysis; dream imagery = hypnagogic hallucinations) intrude abruptly into wakefulness, with sleep-onset REM periods (SOREMPs)",
-    "Excessive production of melatonin by the pituitary gland",
-    "Degeneration of cerebellar Purkinje cells",
-    "Hyperactivity of the spinal corticospinal tract"
+    "Loss of hypothalamic orexin neurons destabilises sleep–wake control, allowing REM features such as cataplexy and sleep paralysis to intrude into wakefulness.",
+    "Excess pituitary melatonin suppresses REM sleep and causes persistent daytime muscle rigidity.",
+    "Degeneration of cerebellar Purkinje cells causes sudden emotional muscle weakness and sleep-onset REM periods.",
+    "Excess corticospinal activity produces sleep paralysis, hallucinations, and recurrent daytime sleep attacks."
    ],
    "answer": 0,
    "explain": "Low or undetectable CSF hypocretin-1 (orexin-A) is diagnostic of narcolepsy type 1, strongly associated with HLA-DQB1*06:02.",
@@ -353,10 +353,10 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "How do 'REM Sleep Behavior Disorder (RBD)' and 'Somnambulism (sleepwalking) / Night Terrors' differ in their sleep stage of occurrence and pathophysiology?",
    "options": [
-    "REM Sleep Behavior Disorder occurs during REM sleep due to failure of pontomedullary descending muscle atonia (subcoeruleus / ventromedial medulla lesion), causing patients to physically act out vivid dreams (punching, kicking, shouting) and strongly heralding alpha-synucleinopathies (Parkinson's disease, Lewy body dementia); Sleepwalking and night terrors occur during Stage N3 slow-wave sleep (arousal parasomnias) with amnesia for the event",
-    "Sleepwalking occurs during REM sleep; REM behavior disorder occurs during stage N1",
-    "Both disorders occur exclusively during awake alpha rhythm",
-    "REM behavior disorder is caused by excess muscle paralysis"
+    "REM behaviour disorder reflects loss of REM muscle atonia; sleepwalking and night terrors arise from incomplete arousal during N3 sleep.",
+    "Sleepwalking occurs mainly in REM sleep, while REM behaviour disorder occurs during N1 with preserved muscle atonia.",
+    "Both disorders occur during wakefulness and are caused by excessive cortical beta activity.",
+    "REM behaviour disorder is caused by excessive muscle atonia, while night terrors result from loss of all NREM sleep."
    ],
    "answer": 0,
    "explain": "Over 80% of older adults with idiopathic REM sleep behavior disorder eventually develop Parkinson's disease, dementia with Lewy bodies, or multiple system atrophy.",
@@ -399,10 +399,10 @@
    "sub": "Language Pathways and Aphasias (Broca, Wernicke, Conduction, Global)",
    "q": "What is 'Conduction Aphasia', which white matter tract is damaged, and what is its hallmark clinical profile?",
    "options": [
-    "Lesion of the Arcuate Fasciculus (connecting Wernicke's area to Broca's area in the left parietal/temporal white matter); patients exhibit fluent speech with phonemic paraphasias, intact auditory comprehension, and disproportionately SEVERE IMPAIRMENT OF REPETITION (unable to repeat phrases like 'no ifs, ands, or buts') with self-correction attempts ('conduite d'approche')",
-    "Lesion of the corpus callosum causing inability to read",
-    "Complete loss of both speech production and comprehension",
-    "Non-fluent speech with completely intact repetition"
+    "Arcuate fasciculus injury causes fluent speech and good comprehension but poor repetition, often with phonemic errors.",
+    "Corpus callosum injury causes isolated loss of reading while spoken repetition and comprehension remain intact.",
+    "Broca-area injury causes non-fluent speech, poor repetition, and markedly impaired comprehension.",
+    "Wernicke-area injury causes non-fluent speech with preserved repetition and intact comprehension."
    ],
    "answer": 0,
    "explain": "In the Wernicke-Geschwind model, repeating spoken words requires Wernicke's area -> Arcuate Fasciculus -> Broca's area; interrupting the arcuate fasciculus selectively abolishes repetition while leaving comprehension and spontaneous speech intact.",
@@ -468,10 +468,10 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "How are human memory systems classified by duration and conscious awareness (declarative/explicit vs non-declarative/implicit)?",
    "options": [
-    "Working (immediate) memory: prefrontal cortex (~seconds, limited capacity ~7+/-2 items); Explicit (declarative) long-term memory: conscious recall of facts (semantic) and personal events (episodic), requiring the hippocampus/medial temporal lobe for consolidation into neocortex; Implicit (non-declarative) memory: unconscious procedural motor skills (basal ganglia & cerebellum), priming (neocortex), and classical/operant conditioning (amygdala/cerebellum)",
-    "Procedural motor skills like riding a bicycle require the hippocampus permanently",
-    "Working memory is stored in the spinal cord dorsal horn",
-    "Episodic memory is stored exclusively in the cerebellar vermis"
+    "Working memory depends on prefrontal networks; declarative memory uses hippocampal consolidation; procedural learning relies mainly on basal ganglia and cerebellum.",
+    "Procedural skills require permanent hippocampal storage, while semantic facts are learned independently of the medial temporal lobe.",
+    "Working memory is stored in spinal dorsal horns, and episodic memories are retained exclusively in the cerebellum.",
+    "Declarative memory is unconscious motor learning, while implicit memory is conscious recall of facts and events."
    ],
    "answer": 0,
    "explain": "Patient H.M. (bilateral medial temporal lobe/hippocampal resection) developed profound anterograde amnesia for new declarative facts/events while retaining intact working memory, old childhood memories, and new procedural motor learning (mirror-drawing).",
@@ -560,10 +560,10 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "What is 'Wernicke-Korsakoff syndrome', what nutritional deficiency precipitates it, and how do its acute reversible triad and chronic amnestic features differ?",
    "options": [
-    "Thiamine (Vitamin B1) deficiency (most often in chronic alcoholism or hyperemesis gravidarum); Acute Wernicke encephalopathy triad: confusion/encephalopathy, ophthalmoplegia/nystagmus (CN VI/III/MLF), and gait ataxia; Chronic Korsakoff psychosis: irreversible anterograde and retrograde amnesia with 'confabulation' (inventing plausible stories to fill memory gaps) due to hemorrhagic necrosis of the mammillary bodies and dorsomedial thalamus",
-    "Vitamin C deficiency causing scurvy and peripheral sensory loss",
-    "Vitamin B12 deficiency causing isolated Broca's aphasia",
-    "Copper excess causing Kayser-Fleischer rings and chorea"
+    "Thiamine deficiency causes acute confusion, ophthalmoplegia, and ataxia; chronic injury to mammillary bodies/thalamus causes amnesia and confabulation.",
+    "Vitamin C deficiency causes scurvy, optic neuritis, and isolated loss of recent memory without encephalopathy.",
+    "Vitamin B12 deficiency causes isolated expressive aphasia with preserved gait and eye movements.",
+    "Copper excess causes Kayser–Fleischer rings and chorea but does not produce an amnestic syndrome."
    ],
    "answer": 0,
    "explain": "Always administer intravenous THIAMINE BEFORE GLUCOSE in malnourished or alcoholic patients, because a glucose load rapidly consumes remaining thiamine-dependent pyruvate dehydrogenase/transketolase cofactors and precipitates acute Wernicke encephalopathy!",
@@ -836,10 +836,10 @@
    "sub": "Sleep Architecture: NREM Stages, REM Sleep, and Circadian Rhythm",
    "q": "Why does 'adenosine' accumulate in the basal forebrain during prolonged wakefulness, and how does caffeine promote alertness?",
    "options": [
-    "ATP breakdown during prolonged neuronal activity increases extracellular adenosine, which binds inhibitory A1 and excitatory A2A receptors to inhibit wake-promoting basal forebrain neurons and activate sleep-promoting VLPO neurons (creating 'sleep pressure'); Caffeine is a competitive antagonist at adenosine A1/A2A receptors, blocking sleep pressure",
-    "Caffeine increases adenosine synthesis tenfold",
-    "Adenosine is released exclusively during Stage N3 sleep to wake the brain",
-    "Caffeine acts as a GABA-A agonist"
+    "Wakeful neuronal activity releases adenosine, which promotes sleep; caffeine blocks A1/A2A receptors and reduces this sleep pressure.",
+    "Caffeine increases adenosine synthesis, activating wake-promoting neurons and prolonging alertness.",
+    "Adenosine is released only during N3 sleep and directly stimulates the ascending reticular activating system.",
+    "Caffeine promotes alertness by activating GABA-A receptors in the ventrolateral preoptic nucleus."
    ],
    "answer": 0,
    "explain": "Homeostatic sleep drive (Process S) rises steadily during wakefulness via adenosine accumulation and clears during sleep, interacting with the circadian clock (Process C, SCN).",
@@ -882,10 +882,10 @@
    "sub": "Memory Systems, Hippocampus, and Synaptic Plasticity (LTP)",
    "q": "Which basal forebrain cholinergic nucleus degenerates early in Alzheimer's disease, contributing to profound cholinergic deficit and cognitive/memory decline?",
    "options": [
-    "Nucleus basalis of Meynert (which projects widespread acetylcholine throughout the cerebral neocortex and hippocampus; targeted therapeutically by acetylcholinesterase inhibitors such as donepezil, rivastigmine, and galantamine)",
-    "Locus coeruleus only",
-    "Red nucleus in the midbrain",
-    "Inferior olivary nucleus"
+    "Nucleus basalis of Meynert, which provides widespread cholinergic input to the cortex and hippocampus.",
+    "Locus coeruleus, the main source of cortical noradrenaline and the primary cholinergic projection to the hippocampus.",
+    "Red nucleus, a midbrain motor relay that supplies acetylcholine to the cerebral cortex.",
+    "Inferior olivary nucleus, the main source of cholinergic projections to the neocortex."
    ],
    "answer": 0,
    "explain": "Degeneration of cholinergic neurons in the nucleus basalis of Meynert and medial septal nucleus underpins the rationale for central cholinesterase inhibitors in Alzheimer's disease.",
@@ -1020,10 +1020,10 @@
    "sub": "Cerebral Cortex Layers, Functional Areas, and Hemispheric Lateralization",
    "q": "What is 'aphasia' versus 'dysarthria', and what is 'aprosodia' (expressive vs receptive)?",
    "options": [
-    "Aphasia is a higher cortical disorder of language formulation or comprehension (left hemisphere); Dysarthria is a mechanical/motor articulation defect of speech muscles (cranial nerves, cerebellum, basal ganglia, corticobulbar tracts) with completely intact language grammar and comprehension; Aprosodia is loss of emotional melody/inflection of speech caused by lesions of the RIGHT (non-dominant) perisylvian homologs of Broca's and Wernicke's areas",
-    "Dysarthria means inability to understand written words",
-    "Aprosodia is caused by left cerebellar vermis stroke",
-    "Aphasia is caused by vocal cord polyps"
+    "Aphasia impairs language; dysarthria impairs speech articulation; aprosodia impairs emotional intonation, often after right-hemisphere lesions.",
+    "Dysarthria impairs language comprehension; aphasia affects only voice strength; aprosodia is loss of visual recognition after occipital injury.",
+    "Aphasia is caused by laryngeal weakness; dysarthria is loss of grammar; aprosodia is inability to recognise familiar faces.",
+    "Aprosodia follows left cerebellar injury; aphasia is a peripheral nerve lesion; dysarthria is loss of written language."
    ],
    "answer": 0,
    "explain": "Right frontal lesions produce flat, monotone speech (expressive aprosodia), while right posterior temporal lesions impair recognizing emotion in others' voices (receptive aprosodia).",
@@ -1089,10 +1089,10 @@
    "sub": "CSF Production, Circulation, Blood-Brain Barrier, and Hydrocephalus",
    "q": "What is 'Idiopathic Intracranial Hypertension (Pseudotumor Cerebri)', who is the classic patient demographic, and what visual complication threatens permanent blindness?",
    "options": [
-    "Elevated intracranial pressure (>25 cm H2O on lumbar puncture with normal CSF composition and slit-like/normal ventricles on MRI without a mass lesion), classically affecting young obese women of childbearing age (associated with vitamin A derivatives/isotretinoin, tetracyclines, oral contraceptives); causes chronic papilledema that can progress to optic nerve atrophy and permanent vision loss if untreated",
-    "Low intracranial pressure (<2 cm H2O) in elderly underweight men",
-    "Large glioblastoma obstructing the fourth ventricle",
-    "Bacterial meningitis with CSF glucose of 5 mg/dL"
+    "Raised CSF opening pressure with normal CSF and no mass lesion; papilloedema can threaten vision, classically in young obese women.",
+    "Low CSF pressure with small ventricles causes papilloedema, classically in elderly underweight men.",
+    "A posterior-fossa mass obstructs CSF flow and causes focal deficits with abnormal CSF composition.",
+    "Bacterial meningitis lowers CSF glucose and causes papilloedema without raised intracranial pressure."
    ],
    "answer": 0,
    "explain": "Treated with weight loss and acetazolamide (a carbonic anhydrase inhibitor that reduces choroid plexus CSF secretion).",
@@ -1111,12 +1111,12 @@
    "level": 3,
    "sub": "Clinical Correlations",
    "q": "A 64-year-old right-handed man presents with sudden difficulty speaking after an ischemic stroke. His speech is slow, halting, and telegraphic ('Walk... dog... park'), omitting small grammatical connecting words, and he appears visibly frustrated by his errors. He follows three-step verbal commands accurately, cannot repeat 'No ifs, ands, or buts,' and has right facial droop and right arm weakness. Which artery and cortical area are infarcted?",
-   "options":     [
-        "Left MCA superior division supplying Broca’s area and adjacent face/arm motor cortex.",
-        "Left MCA inferior division supplying Wernicke’s area and posterior temporal cortex.",
-        "Left ACA supplying medial frontal cortex and the lower-limb motor area.",
-        "Left PCA supplying the occipital cortex and primary visual area."
-    ],
+   "options": [
+    "Left MCA superior division supplying Broca’s area and adjacent face/arm motor cortex.",
+    "Left MCA inferior division supplying Wernicke’s area and posterior temporal cortex.",
+    "Left ACA supplying medial frontal cortex and the lower-limb motor area.",
+    "Left PCA supplying the occipital cortex and primary visual area."
+   ],
    "answer": 0,
    "explain": "Non-fluent telegraphic speech + intact comprehension + impaired repetition + right face/arm hemiparesis localizes to Broca's area and adjacent M1 (superior division of left MCA).",
    "verified": false,
