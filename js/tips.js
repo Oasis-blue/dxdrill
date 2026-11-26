@@ -13,6 +13,11 @@
       "One person is the quizmaster. They read or show the question, then tap Got it, Missed or Skip. Scores update on the board.",
       "Quizmaster tip: keep answers off the shared screen until the right moment. In Question board and Describe it, use Copy answer key and check on your own phone.",
       "Keys on a computer: G got, M missed, S skip, F foul, R show answer, N next clue, Space pause."]],
+    truefalse: ["How True / False works", [
+      "Choose topics, the number of stems and your marking: exam mode is +1 for right, −1 for wrong and 0 for skipped; practice mode has no penalty.",
+      "Each stem has four or five statements. Mark each True or False. Tap the same choice again to clear it and leave it blank.",
+      "Check answers to see the correct answers and explanations. Your results include every statement you got wrong.",
+      "Your True / False scores and statement history stay on this phone and do not affect leaderboards."]],
     spotter: ["How Spotter works", [
       "Pick the slides, how many stations and how many seconds each.",
       "Each station shows a slide and a question. Choose an answer. You can change it until the time runs out.",
