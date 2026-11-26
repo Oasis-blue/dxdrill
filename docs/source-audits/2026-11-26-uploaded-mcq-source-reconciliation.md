@@ -2,7 +2,7 @@
 
 ## Scope and handling
 
-The recent Library upload batch contains 20 PDF files representing 17 distinct byte-level sources. Three pairs are exact duplicates (SHA-256 checked); they are treated as one source each. PDFs were materialised and text-extracted with page counts recorded. The 11-page Elhariry physiology scan was OCR-processed; its visible GIT section substantially overlaps the separately uploaded GIT MCQ file.
+The recent Library upload batch contains 20 PDF files representing 16 distinct byte-level sources. Three pairs are exact duplicates (SHA-256 checked); they are treated as one source each. PDFs were materialised and text-extracted with page counts recorded. The 11-page Elhariry physiology scan was OCR-processed; its visible GIT section substantially overlaps the separately uploaded GIT MCQ file.
 
 This reconciliation adds original, syllabus-aligned questions informed by concepts in the supplied sources. It does not reproduce textbook question wording or answer explanations. Several uploads are complete commercial question books (including a 5,000-MCQ biochemistry collection and a 6th-edition physiology MCQ/EMQ textbook); these were not bulk-copied into DxDrill. The app's question schema has no source-attribution field, so this document records provenance for this batch.
 
