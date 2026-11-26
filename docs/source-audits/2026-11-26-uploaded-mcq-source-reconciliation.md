@@ -120,3 +120,12 @@ The extracted tables of contents were checked to make the outstanding work more 
 - **5000 MCQs in Biochemistry (301 pages):** its 10 chapters cover introduction, carbohydrates, proteins, fats, vitamins, enzymes, minerals, hormones, nucleic acids, and water/electrolyte balance. The extracted text contains approximately 3,549 numbered entries; this is a text-pattern count, not a verified count of unique, complete questions. Existing biochemistry banks cover the principal chapter areas, but the book remains unprocessed question by question. The G. Vidya Sagar and epdf.tips files are duplicate text content and are not counted as additional coverage.
 
 The inventory correction above is important: the batch is **20 uploaded PDFs, 16 distinct byte-level sources, four exact duplicate pairs, and 15 distinct extracted text contents** (because the separate 5,000-MCQ PDF has different bytes but text identical to the G. Vidya Sagar source). The scanned 336-page Anatomy MCQ book remains outside this text-based chapter map until full OCR is completed.
+
+
+## OCR continuation — scanned Anatomy MCQ.pdf
+
+The full 336-page image-only Anatomy MCQ scan has now been OCR-processed locally (all 336 pages, not only the earlier 10–25 sample). The OCR output is retained as a working extraction for page-by-page reconciliation. It contains approximately 602,000 characters; a rough pattern count finds about 1,110 numbered-looking lines, but this is **not** a validated question count because the scan includes contents, answer/explanation pages, references and OCR artefacts.
+
+The table of contents identifies these sections: Head & Neck, Neuroanatomy, Abdomen, Lower Limb, Thorax, Histology, Joints, Embryology, Upper Limb and Miscellaneous. The scan is therefore suitable for systematic topic mapping against the existing Anatomy banks. No scanned-book wording has been bulk-imported. The next ingestion step is to reconcile the OCR page ranges and answer sections against the existing question bank, create independently worded syllabus-aligned questions where a genuine coverage gap exists, and record pages/topics that are duplicates, unclear or outside scope.
+
+**Status correction:** OCR of the 336-page scan is complete; question-by-question reconciliation and any resulting DxDrill additions from this source are still outstanding. Existing 40 additions and their `verified: false` status are unchanged.
