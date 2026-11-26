@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DxDrill Option-Length Checker</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         margin: 0; padding: 16px; max-width: 1100px; line-height: 1.4; }
+  h1 { font-size: 1.2rem; margin: 0 0 4px; }
+  .sub { font-size: 0.85rem; opacity: 0.7; margin-bottom: 12px; }
+  textarea { width: 100%; min-height: 180px; font-family: ui-monospace, Menlo, monospace;
+             font-size: 0.85rem; padding: 8px; border-radius: 6px;
+             border: 1px solid #888; background: transparent; color: inherit; }
+  .row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; align-items: center; }
+  button { font: inherit; font-size: 0.9rem; padding: 6px 12px; border-radius: 6px;
+           border: 1px solid #555; background: #2a6df4; color: white; cursor: pointer; }
+  button.secondary { background: transparent; color: inherit; border-color: #888; }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .stats { font-size: 0.9rem; margin: 8px 0; }
+  .stats b { font-size: 1.05rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 8px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #5555; vertical-align: top; }
+  th { background: #8881; font-weight: 600; }
+  .id { font-family: ui-monospace, Menlo, monospace; font-size: 0.8rem; word-break: break-all; }
+  .ratio-high { color: #c92a2a; font-weight: 600; }
+  .ratio-mid  { color: #c77c02; font-weight: 600; }
+  .ratio-low  { color: #2b8a3e; }
+  .slot { text-align: center; font-family: ui-monospace, Menlo, monospace; }
+  .good { color: #2b8a3e; font-weight: 600; }
+  .snippet { font-size: 0.8rem; opacity: 0.75; margin-top: 2px; }
+  .error { color: #c92a2a; font-weight: 600; white-space: pre-wrap; }
+  .hidden { display: none; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<h1>DxDrill Option-Length Checker</h1>
+<div class="sub">
+  Flags MCQ questions where the correct option is conspicuously the longest
+  (a giveaway pattern in AI-generated questions). Paste one JSON file at a time.
+</div>
+
+<textarea id="input" placeholder='Paste the whole question file here, e.g.
+{ "topic": "pr-...", "questions": [ {...}, {...} ] }
+or paste just an array: [ {...}, {...} ]'></textarea>
+
+<div class="row">
+  <button id="checkBtn">Check</button>
+  <button id="clearBtn" class="secondary">Clear</button>
+  <button id="copyBtn" class="secondary" disabled>Copy flagged IDs</button>
+  <label style="font-size:0.85rem;">
+    Ratio threshold
+    <select id="threshold">
+      <option value="1.20">1.20 (strict)</option>
+      <option value="1.30" selected>1.30 (default)</option>
+      <option value="1.40">1.40 (lenient)</option>
+    </select>
+  </label>
+</div>
+
+<div id="errorBox" class="error hidden"></div>
+<div id="stats" class="stats hidden"></div>
+<div id="results" class="hidden">
+  <details open>
+    <summary>Flagged questions</summary>
+    <table id="flaggedTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th class="slot">Answer</th>
+          <th>Correct len</th>
+          <th>Next longest</th>
+          <th>Ratio</th>
+          <th>Options (chars)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </details>
+  <details>
+    <summary id="cleanSummary">Questions that pass</summary>
+    <table id="cleanTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th class="slot">Answer</th>
+          <th>Correct len</th>
+          <th>Next longest</th>
+          <th>Ratio</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </details>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var inputEl    = $("input");
+  var checkBtn   = $("checkBtn");
+  var clearBtn   = $("clearBtn");
+  var copyBtn    = $("copyBtn");
+  var thresholdEl = $("threshold");
+  var errorBox   = $("errorBox");
+  var statsBox   = $("stats");
+  var resultsBox = $("results");
+  var flaggedTbody = $("flaggedTable").querySelector("tbody");
+  var cleanTbody   = $("cleanTable").querySelector("tbody");
+  var cleanSummary = $("cleanSummary");
+
+  var lastFlaggedIds = [];
+
+  // ---- helpers ---------------------------------------------------------
+
+  function trimLen(str) {
+    return String(str == null ? "" : str).replace(/^\s+|\s+$/g, "").length;
+  }
+
+  function setError(msg) {
+    errorBox.textContent = msg;
+    errorBox.classList.remove("hidden");
+    statsBox.classList.add("hidden");
+    resultsBox.classList.add("hidden");
+    copyBtn.disabled = true;
+    lastFlaggedIds = [];
+  }
+
+  function clearError() {
+    errorBox.textContent = "";
+    errorBox.classList.add("hidden");
+  }
+
+  function normaliseInput(raw) {
+    var text = (raw || "").trim();
+    if (!text) { throw new Error("Nothing pasted. Paste a question file first."); }
+    var parsed;
+    try {
+      parsed = JSON.parse(text);
+    } catch (e) {
+      throw new Error("JSON did not parse. Make sure you pasted the whole file and nothing else.\n\nParser said: " + e.message);
+    }
+    var questions;
+    if (Array.isArray(parsed)) {
+      questions = parsed;
+    } else if (parsed && Array.isArray(parsed.questions)) {
+      questions = parsed.questions;
+    } else {
+      throw new Error("Could not find an array of questions. Expected { topic, questions: [...] } or a bare array.");
+    }
+    return questions;
+  }
+
+  function analyse(q, threshold) {
+    // Only MCQ questions with 4 options participate.
+    if (!q || q.type !== "mcq") return { skip: true };
+    if (!Array.isArray(q.options) || q.options.length < 2) return { skip: true, reason: "no options" };
+    var idx = q.answer;
+    if (typeof idx !== "number" || idx < 0 || idx >= q.options.length) {
+      return { skip: true, reason: "bad answer index" };
+    }
+
+    var lens = q.options.map(trimLen);
+    var correct = lens[idx];
+    var others = lens.filter(function (_, i) { return i !== idx; });
+    var maxOther = Math.max.apply(null, others);
+    var ratio = maxOther > 0 ? (correct / maxOther) : 0;
+
+    return {
+      skip: false,
+      id: q.id || "(no id)",
+      answer: idx,
+      slot: "ABCD"[idx] || String(idx),
+      correctLen: correct,
+      maxOtherLen: maxOther,
+      ratio: ratio,
+      lens: lens,
+      flagged: ratio > threshold
+    };
+  }
+
+  function ratioClass(ratio, threshold) {
+    if (ratio > threshold * 1.15) return "ratio-high";
+    if (ratio > threshold) return "ratio-mid";
+    return "ratio-low";
+  }
+
+  function buildRow(a) {
+    var tr = document.createElement("tr");
+
+    var tdId = document.createElement("td");
+    tdId.className = "id";
+    tdId.textContent = a.id;
+    tr.appendChild(tdId);
+
+    var tdSlot = document.createElement("td");
+    tdSlot.className = "slot";
+    tdSlot.textContent = a.slot;
+    tr.appendChild(tdSlot);
+
+    var tdCorrect = document.createElement("td");
+    tdCorrect.textContent = a.correctLen;
+    tr.appendChild(tdCorrect);
+
+    var tdMax = document.createElement("td");
+    tdMax.textContent = a.maxOtherLen;
+    tr.appendChild(tdMax);
+
+    var tdRatio = document.createElement("td");
+    tdRatio.className = ratioClass(a.ratio, parseFloat(thresholdEl.value));
+    tdRatio.textContent = a.ratio.toFixed(2) + "x";
+    tr.appendChild(tdRatio);
+
+    // Option lengths row (only for flagged table)
+    var tdLens = document.createElement("td");
+    tdLens.className = "snippet";
+    tdLens.textContent = a.lens.join(" / ");
+    tr.appendChild(tdLens);
+
+    return tr;
+  }
+
+  // ---- main action -----------------------------------------------------
+
+  function runCheck() {
+    clearError();
+    var threshold = parseFloat(thresholdEl.value);
+
+    var questions;
+    try {
+      questions = normaliseInput(inputEl.value);
+    } catch (e) {
+      setError(e.message);
+      return;
+    }
+
+    var analysed = [];
+    for (var i = 0; i < questions.length; i++) {
+      var a = analyse(questions[i], threshold);
+      if (a.skip) continue;
+      analysed.push(a);
+    }
+
+    if (analysed.length === 0) {
+      setError("No usable MCQ questions found. (Skipped non-mcq, or none had valid options/answer index.)");
+      return;
+    }
+
+    var flagged = analysed.filter(function (a) { return a.flagged; });
+    var clean   = analysed.filter(function (a) { return !a.flagged; });
+
+    // Fill tables
+    flaggedTbody.innerHTML = "";
+    for (var f = 0; f < flagged.length; f++) {
+      flaggedTbody.appendChild(buildRow(flagged[f]));
+    }
+    cleanTbody.innerHTML = "";
+    for (var c = 0; c < clean.length; c++) {
+      var tr = buildRow(clean[c]);
+      // remove the last cell (options snippet) for the clean table
+      tr.removeChild(tr.lastChild);
+      cleanTbody.appendChild(tr);
+    }
+    cleanSummary.textContent = "Questions that pass (" + clean.length + ")";
+
+    // Stats
+    var total = analysed.length;
+    var pctFlagged = (flagged.length / total) * 100;
+    statsBox.innerHTML =
+      "<b>" + total + "</b> MCQ questions analysed, " +
+      "<b>" + flagged.length + "</b> flagged (" + pctFlagged.toFixed(0) + "%), " +
+      "<b>" + clean.length + "</b> passing." +
+      (flagged.length > 0
+        ? " <span style='opacity:0.7'>(correct option is the length outlier at threshold &gt; " + threshold.toFixed(2) + "x the next longest)</span>"
+        : " <span class='good'>File looks clean at this threshold.</span>");
+
+    statsBox.classList.remove("hidden");
+    resultsBox.classList.remove("hidden");
+
+    lastFlaggedIds = flagged.map(function (a) { return a.id; });
+    copyBtn.disabled = lastFlaggedIds.length === 0;
+  }
+
+  // ---- buttons ---------------------------------------------------------
+
+  checkBtn.addEventListener("click", runCheck);
+
+  clearBtn.addEventListener("click", function () {
+    inputEl.value = "";
+    clearError();
+    statsBox.classList.add("hidden");
+    resultsBox.classList.add("hidden");
+    copyBtn.disabled = true;
+    lastFlaggedIds = [];
+  });
+
+  copyBtn.addEventListener("click", function () {
+    if (!lastFlaggedIds.length) return;
+    var text = lastFlaggedIds.join(", ");
+    var done = function () {
+      var old = copyBtn.textContent;
+      copyBtn.textContent = "Copied!";
+      setTimeout(function () { copyBtn.textContent = old; }, 1200);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text, done); });
+    } else {
+      fallbackCopy(text, done);
+    }
+  });
+
+  function fallbackCopy(text, done) {
+    var t = document.createElement("textarea");
+    t.value = text;
+    t.setAttribute("readonly", "");
+    t.style.position = "absolute";
+    t.style.left = "-9999px";
+    document.body.appendChild(t);
+    t.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(t);
+    done();
+  }
+
+  // Re-run automatically when the threshold changes
+  thresholdEl.addEventListener("change", function () {
+    if (inputEl.value.trim()) runCheck();
+  });
+})();
+</script>
+</body>
+</html>
