@@ -54,10 +54,10 @@
    "sub": "Classification of Hypoxia (Barcroft's Four Types)",
    "q": "Which forms of hypoxia are associated with a NORMAL arterial PaO2 (~95-100 mmHg) and normal pulse oximetry (SpO2 ~97-99%) on standard two-wavelength oximeters?",
    "options": [
-    "Only hypoxic hypoxia from right-to-left cardiac shunt",
-    "Anemic hypoxia (including carbon monoxide poisoning), stagnant (ischemic) hypoxia, and histotoxic hypoxia",
-    "Hypoxic hypoxia at the summit of Mount Everest",
-    "None; arterial PaO2 is always below 50 mmHg in all four types"
+    "Anemic, stagnant and histotoxic hypoxia can occur with normal PaO₂; CO poisoning may also give falsely normal pulse oximetry",
+    "All forms of hypoxia cause low PaO₂ and low pulse oximetry readings",
+    "Only high-altitude hypoxia preserves normal PaO₂ and oxygen saturation",
+    "Histotoxic hypoxia always lowers PaO₂ because mitochondria cannot use oxygen"
    ],
    "answer": 1,
    "explain": "Because alveolar gas exchange and pulmonary capillary equilibration remain intact in anemic, stagnant, and histotoxic hypoxia, dissolved arterial PaO2 stays normal even while tissue cells suffer severe ATP depletion.",
@@ -169,10 +169,10 @@
    "sub": "Cyanosis and Oxygen Therapy",
    "q": "What is 'absorption atelectasis', and how does breathing 100% oxygen precipitate it in poorly ventilated lung units?",
    "options": [
-    "High inspired oxygen washes nitrogen out; in an obstructed poorly ventilated unit, remaining oxygen is absorbed and the alveolus collapses",
-    "High oxygen freezes surfactant and forms crystals in alveoli",
-    "Nitrogen is absorbed faster than oxygen and causes alveolar collapse",
-    "Absorption atelectasis occurs only during aircraft ascent"
+    "High inspired oxygen washes out nitrogen; oxygen absorption from a poorly ventilated unit can then collapse its alveoli",
+    "High inspired oxygen crystallizes surfactant and blocks alveolar ducts",
+    "Nitrogen is absorbed faster than oxygen, causing overdistension and rupture",
+    "Absorption atelectasis occurs only when ambient pressure falls during ascent"
    ],
    "answer": 0,
    "explain": "Room air is ~79% poorly soluble nitrogen that maintains alveolar volume; replacing nitrogen with rapidly absorbed O2 collapses sluggish or mucus-plugged alveoli.",
@@ -307,10 +307,10 @@
    "sub": "High-Altitude Illnesses (AMS, HAPE, HACE, Chronic Mountain Sickness)",
    "q": "What is the primary pathophysiological mechanism of High-Altitude Pulmonary Edema (HAPE), and which medications are used to prevent or treat it?",
    "options": [
-    "Exaggerated, uneven hypoxic pulmonary vasoconstriction raises overperfused capillary pressure, causing stress-failure edema; treat with descent, O2, and nifedipine or a PDE5 inhibitor",
-    "Left ventricular myocardial infarction causing cardiogenic pulmonary edema; treated with beta-blockers",
-    "Surfactant overproduction flooding the alveoli; treated with atropine",
-    "Bronchospasm of the trachea; treated with morphine"
+    "Uneven hypoxic pulmonary vasoconstriction raises capillary pressure; descent, oxygen and selected pulmonary vasodilators are used",
+    "Left ventricular failure raises pulmonary venous pressure; treatment is immediate beta-blockade and fluid loading",
+    "Surfactant excess fills alveoli; treatment is atropine and antibiotics",
+    "Bronchial smooth-muscle spasm causes oedema; treatment is morphine and diuretics"
    ],
    "answer": 0,
    "explain": "Unlike systemic arterioles (which dilate in hypoxia), pulmonary arterioles constrict in response to alveolar hypoxia; heterogeneous HPV forces high flow and pressure into unprotected capillaries, causing stress-failure leakage.",
@@ -376,10 +376,10 @@
    "sub": "Deep-Sea Diving and Hyperbaric Physiology",
    "q": "Because seawater has a higher density than air, ambient pressure increases by 1 atmosphere (760 mmHg) for every 10 meters (33 feet) of descent. What is the absolute pressure (in ATA) and the lung gas volume (relative to surface volume V0) of a breath-hold diver descending to 30 meters (99 feet) depth?",
    "options": [
-    "3 ATA; lung volume expands to 3 V0",
-    "4 ATA (1 ATA surface + 3 ATA water); by Boyle's law (P1V1 = P2V2), lung gas volume is compressed to one-fourth (1/4 V0) of its surface volume",
-    "10 ATA; lung volume stays unchanged at V0",
-    "30 ATA; lung volume is compressed to 1/30 V0"
+    "3 ATA; lung gas volume falls to one-third of its surface value",
+    "4 ATA absolute; Boyle’s law reduces lung gas volume to one-quarter of its surface value",
+    "10 ATA absolute; lung gas volume remains unchanged",
+    "30 ATA absolute; lung gas volume falls to one-thirtieth of its surface value"
    ],
    "answer": 1,
    "explain": "At 30 m depth, hydrostatic water pressure adds 3 ATA to the 1 ATA atmospheric pressure at the surface = 4 ATA absolute; by Boyle's law, quadrupling pressure reduces gas volume to 25% of surface volume.",
@@ -468,10 +468,10 @@
    "sub": "Deep-Sea Diving and Hyperbaric Physiology",
    "q": "What is 'shallow-water blackout' during competitive breath-hold (apneic) diving, and how does pre-dive hyperventilation trigger it?",
    "options": [
-    "Hyperventilation lowers PaCO2 and delays the urge to breathe without substantially increasing oxygen stores, allowing hypoxaemia during ascent to cause blackout",
-    "Hyperventilation raises PaCO2 and causes immediate oxygen toxicity",
-    "Hyperventilation fills the lungs with carbon monoxide and causes syncope",
-    "Blackout occurs because ambient pressure rises during ascent"
+    "Pre-dive hyperventilation lowers PaCO₂ and delays the urge to breathe, allowing hypoxaemia to cause blackout during ascent",
+    "Pre-dive hyperventilation raises PaCO₂ and accelerates the urge to breathe before oxygen falls",
+    "Hyperventilation increases oxygen stores enough to prevent hypoxaemia during prolonged breath-holding",
+    "Blackout is caused by a rise in ambient pressure as the diver ascends"
    ],
    "answer": 0,
    "explain": "Because hypercapnic drive (PaCO2) is the primary stimulus ending a breath-hold, blowing off CO2 delays the breakpoint while O2 consumption continues unabated—and the sharp drop in hydrostatic pressure during ascent precipitously lowers alveolar PO2.",
@@ -629,10 +629,10 @@
    "sub": "Exercise Physiology",
    "q": "What is 'Excess Post-Exercise Oxygen Consumption' (EPOC, formerly termed 'oxygen debt'), and what physiological processes account for elevated VO2 after strenuous exercise stops?",
    "options": [
-    "EPOC is the elevated oxygen uptake after exercise; early recovery restores oxygen stores and phosphocreatine, while later recovery supports lactate handling and ongoing metabolic demand",
-    "EPOC is complete cessation of breathing after exercise",
-    "EPOC is storage of gaseous oxygen in bone marrow",
-    "EPOC is conversion of haemoglobin into bilirubin after exercise"
+    "EPOC is elevated oxygen uptake after exercise, supporting restoration of stores and ongoing recovery metabolism",
+    "EPOC is the absence of ventilation after exercise due to medullary inhibition",
+    "EPOC is oxygen stored permanently in bone marrow during strenuous activity",
+    "EPOC is conversion of haemoglobin into bilirubin during muscle recovery"
    ],
    "answer": 0,
    "explain": "EPOC repays the early O2 deficit incurred at the onset of exercise before aerobic oxidative phosphorylation reached steady state, plus the metabolic cost of thermoregulation and catecholamine clearance.",
