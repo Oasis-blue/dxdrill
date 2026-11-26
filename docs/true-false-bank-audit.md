@@ -127,3 +127,23 @@ The curriculum now has initial coverage across more Pathology and Pharmacology s
 ## Audit count correction
 
 The current source files contain 94 stems in `tf-core-expansion.json` and 9 in `tf-sample.json`, for 103 total. Earlier audit sections describe historical snapshots and should not be read as current totals. The current combined validation above is the source of truth for the present count.
+
+
+## Systemic Pathology and Pharmacology expansion — 2026-11-26
+
+Added four four-statement stems to broaden systemic coverage:
+
+- Systemic Pathology: acute myocardial infarction and its evolving tissue injury.
+- Systemic Pharmacology: loop, thiazide and potassium-sparing diuretics; ACE inhibitors; beta-lactam antibiotics.
+
+The new statements, keys and explanations were checked against the listed NCBI Bookshelf sources during drafting. In the same pass, three earlier stems were individually checked and promoted from draft to verified: anatomical position, anatomical planes, and membrane transport. Their previous broad topic-level reference metadata was replaced with the references used for the review.
+
+- New stems: 4 (16 statements)
+- Additional previously existing stems verified: 3
+- Current combined bank: 107 stems / 433 statements
+- Verified: 31
+- Still draft/unverified: 76
+- Duplicate IDs: 0
+- Structural issues: 0
+
+The four new stems are attached to existing curriculum IDs. This is still initial coverage, not comprehensive coverage of systemic pathology or pharmacology. Unreviewed older stems remain unverified.
