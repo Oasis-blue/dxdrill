@@ -101,10 +101,10 @@
    "sub": "Autonomic Innervation and Adrenergic/Cholinergic Receptors",
    "q": "How does bilateral vagotomy (cutting both vagus nerves) alter resting heart rate in a healthy adult, and what does this demonstrate?",
    "options": [
-    "Resting heart rate rises from ~70 bpm to ~100-110 bpm, demonstrating that tonic parasympathetic vagal tone dominates over sympathetic tone at rest",
-    "Resting heart rate falls to ~30 bpm, demonstrating sympathetic dominance at rest",
-    "Resting heart rate remains completely unchanged at 70 bpm",
-    "Resting heart rate drops to zero (complete asystole)"
+    "Resting heart rate rises toward the intrinsic SA-node rate (~100–110 bpm), showing that vagal tone predominates at rest",
+    "Resting heart rate falls below 40 bpm, showing that sympathetic tone normally suppresses the SA node",
+    "Resting heart rate remains unchanged, showing that vagal input has little effect at rest",
+    "Resting heart rate stops completely, showing that vagal input is essential for pacemaker activity"
    ],
    "answer": 0,
    "explain": "At rest, continuous vagal acetylcholine discharge holds the SA node below its intrinsic pacemaker rate (~100-110 bpm); blocking or cutting the vagi unmasks this intrinsic rate.",
@@ -147,10 +147,10 @@
    "sub": "Autonomic Innervation and Adrenergic/Cholinergic Receptors",
    "q": "What is Dale's vasomotor reversal phenomenon when intravenous epinephrine is administered before versus after an alpha-adrenergic antagonist (such as phentolamine)?",
    "options": [
-    "Epinephrine causes bradycardia before blockade and ventricular fibrillation after blockade",
-    "Epinephrine lowers blood pressure before blockade and raises it after blockade",
-    "Normally epinephrine raises mean arterial pressure via alpha-1 vasoconstriction, but after alpha-blockade it causes a fall in blood pressure due to unopposed beta-2 skeletal muscle vasodilation",
-    "Epinephrine has zero hemodynamic effect after alpha-blockade"
+    "Epinephrine raises pressure through α₁ effects normally, but lowers it after α-blockade because β₂ vasodilation is unopposed",
+    "Epinephrine lowers pressure normally, but raises it after α-blockade because β₁ effects become unopposed",
+    "Epinephrine causes bradycardia normally, but tachycardia after α-blockade through vagal activation",
+    "Epinephrine has no vascular effect after α-blockade because both α and β receptors are blocked"
    ],
    "answer": 2,
    "explain": "Epinephrine stimulates both alpha-1 (vasoconstrictor) and beta-2 (vasodilator) receptors; blocking alpha receptors leaves beta-2 vasodilation unopposed, reversing epinephrine's pressor response into a depressor response.",
@@ -216,10 +216,10 @@
    "sub": "Arterial Baroreceptor Reflex",
    "q": "What cardiovascular response is produced by firm external massage of the carotid sinus in the neck?",
    "options": [
-    "Sympathetic vasoconstriction, tachycardia, and hypertension",
-    "Mechanical stretch of carotid baroreceptors mimics acute hypertension, triggering reflex vagal bradycardia, decreased AV conduction, and peripheral vasodilation",
-    "Apnea and intense shivering",
-    "Massive release of renin and aldosterone"
+    "Carotid sinus stretch increases baroreceptor firing, producing vagal bradycardia and reduced sympathetic vasomotor tone",
+    "Carotid sinus stretch reduces baroreceptor firing, producing tachycardia and increased sympathetic vasomotor tone",
+    "Carotid sinus massage activates chemoreceptors, producing hyperventilation and systemic vasoconstriction",
+    "Carotid sinus massage increases renin release, producing delayed sodium retention and hypertension"
    ],
    "answer": 1,
    "explain": "Carotid sinus massage mechanically deforms baroreceptor nerve endings, increasing CN IX firing to the NTS and boosting vagal outflow (used clinically to terminate paroxysmal supraventricular tachycardia).",
@@ -285,10 +285,10 @@
    "sub": "Chemoreceptor Reflexes",
    "q": "When arterial blood pressure falls below ~60 to 80 mmHg (where baroreceptors become silent), how do peripheral chemoreceptors in the carotid and aortic bodies help support blood pressure?",
    "options": [
-    "Stagnant hypoxia, hypercapnia, and acidosis stimulate peripheral chemoreceptors to excite the RVLM vasomotor center, increasing sympathetic vasoconstriction",
-    "They secrete atrial natriuretic peptide directly into the carotid artery",
-    "They inhibit all sympathetic nerve firing to the heart and blood vessels",
-    "They stimulate parasympathetic vasodilation in the splanchnic bed"
+    "Low-flow hypoxia and acidosis activate carotid and aortic body afferents, increasing medullary sympathetic vasoconstrictor output",
+    "Low-flow hypoxia inhibits carotid and aortic body afferents, reducing sympathetic vasoconstrictor output",
+    "Peripheral chemoreceptors release renin directly, increasing circulating angiotensin II",
+    "Peripheral chemoreceptors stimulate vagal vasodilation in the splanchnic circulation"
    ],
    "answer": 0,
    "explain": "Below MAP 80 mmHg, reduced blood flow to the carotid and aortic bodies causes local O2 depletion and CO2/H+ buildup, exciting chemoreceptor afferents (CN IX and X) to reinforce medullary sympathetic vasoconstriction.",
@@ -331,10 +331,10 @@
    "sub": "Valsalva Maneuver and Orthostatic Reflexes",
    "q": "What are the four physiological phases of arterial blood pressure and heart rate during a standardized Valsalva maneuver (forced expiration against a closed glottis)?",
    "options": [
-    "Phase I: transient BP rise from aortic compression; Phase II: BP fall (reduced venous return) with reflex tachycardia; Phase III: brief BP dip upon release; Phase IV: BP overshoot with reflex baroreceptor bradycardia",
-    "Phase I: sustained hypotension; Phase II: bradycardia; Phase III: cardiac arrest; Phase IV: hyperventilation",
-    "Phase I: baroreceptor silence; Phase II: vagal surge; Phase III: hypertension; Phase IV: tachycardia",
-    "Blood pressure and heart rate remain completely flat throughout all four phases"
+    "Phase I: brief pressure rise; II: pressure fall with tachycardia; III: brief pressure dip on release; IV: pressure overshoot with bradycardia",
+    "Phase I: pressure fall; II: bradycardia; III: sustained pressure rise; IV: tachycardia with reduced venous return",
+    "Phase I: no pressure change; II: cardiac arrest; III: pressure overshoot; IV: persistent hypotension",
+    "Phase I: pressure rise; II: bradycardia; III: sustained hypertension; IV: tachycardia with reduced venous return"
    ],
    "answer": 0,
    "explain": "High intrathoracic pressure (~40 mmHg) initially squeezes the thoracic aorta (Phase I BP rise), then impedes venous return so BP falls and baroreceptors trigger tachycardia and vasoconstriction (Phase II); releasing strain drops intrathoracic pressure (Phase III dip), and restored venous return into constricted vessels produces a Phase IV BP overshoot and reflex bradycardia.",
