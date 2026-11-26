@@ -662,6 +662,50 @@
           "Net nitrogen retention during growth or recovery"
         ]
       }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Amino acid metabolism",
+      "q": "A child with phenylketonuria has developmental delay and musty-smelling urine. Which amino acid becomes conditionally essential?",
+      "options": [
+        "Tyrosine",
+        "Tryptophan",
+        "Methionine",
+        "Histidine"
+      ],
+      "answer": 0,
+      "explain": "Phenylalanine hydroxylase converts phenylalanine to tyrosine. In phenylketonuria, tyrosine can no longer be synthesised adequately from phenylalanine.",
+      "verified": false,
+      "open": {
+        "q": "Why does tyrosine become conditionally essential in phenylketonuria?",
+        "accept": [
+          "Phenylalanine hydroxylase deficiency prevents adequate conversion of phenylalanine to tyrosine"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Urea cycle",
+      "q": "A neonate has hyperammonaemia, low blood urea nitrogen and suspected ornithine transcarbamylase deficiency. Which urinary metabolite is characteristically increased?",
+      "options": [
+        "Orotic acid",
+        "Homogentisic acid",
+        "Methylmalonic acid",
+        "Vanillylmandelic acid"
+      ],
+      "answer": 0,
+      "explain": "Excess mitochondrial carbamoyl phosphate enters pyrimidine synthesis, increasing orotic acid excretion. This is a useful clue to ornithine transcarbamylase deficiency.",
+      "verified": false,
+      "open": {
+        "q": "Why is urinary orotic acid increased in ornithine transcarbamylase deficiency?",
+        "accept": [
+          "Excess carbamoyl phosphate enters pyrimidine synthesis and increases orotic acid production"
+        ]
+      }
     }
   ]
 }
