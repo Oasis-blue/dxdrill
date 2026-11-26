@@ -462,3 +462,6 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .tfmiss{padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface)}
 .tfresume{border:1.5px solid var(--accent);border-radius:12px;padding:12px 14px}
 .tfmiss p{margin:6px 0 0}
+
+/* True/False v2: readable timed-exam clock. */
+#tfclock{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent,#0b6b5a)}

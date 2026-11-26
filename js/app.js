@@ -161,7 +161,7 @@
       app.innerHTML = '<div class="wrap stack"><h1>Coming soon</h1><p class="lede">This is not open yet. Check back soon.</p><a class="btn primary" href="#home" style="text-decoration:none">Back home</a></div>';
       navVisibility(); return;
     }
-    if ((h === "practice" && !DX.questionsReady) || (h !== "practice" && DX.loadingQuestions && DATA_PAGES[h])) {
+    if ((h === "practice" && !DX.questionsReady) || (h !== "practice" && h !== "truefalse" && DX.loadingQuestions && DATA_PAGES[h])) {
       current = null;
       app.innerHTML = '<div class="wrap stack"><p class="lede" role="status"><i class="spin"></i>Loading the question bank…</p><p class="muted">The homepage is ready. Some question files are still downloading. Practice will open as soon as the first usable questions are ready.</p></div>';
       return;
@@ -268,6 +268,10 @@
       if (DX.practice.refreshProgress) DX.practice.refreshProgress();
       else route();
     }
+  };
+  DX.onTfProgress = function () {
+    var h = (location.hash || "#home").slice(1);
+    if (h === "truefalse" && DX.truefalse && DX.truefalse.refreshProgress) DX.truefalse.refreshProgress();
   };
   DX.load().then(function () {
     loaded = true; clearInterval(nTimer);
