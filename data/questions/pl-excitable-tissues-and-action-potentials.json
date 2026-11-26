@@ -358,10 +358,10 @@
     "Both states are identical and open immediately upon depolarization",
     "In the closed state, both m and h gates are closed; in the inactivated state, both are open",
     "In the closed state, the channel conducts K+; in the inactivated state, it conducts Ca2+",
-    "In the closed (resting) state, the m gate is closed and the h gate is open (capable of opening if depolarized); in the inactivated state, the m gate is open but the h gate plugs the pore (incapable of opening until repolarization resets h)"
+    "Resting: m gate closed/h open; inactivated: m open/h closed"
    ],
    "answer": 3,
-   "explain": "This three-state cycle (closed -> open -> inactivated -> closed) is the molecular basis of both unidirectional action potential propagation and the absolute refractory period.",
+   "explain": "This three-state cycle (closed -> open -> inactivated -> closed) is the molecular basis of both unidirectional action potential propagation and the absolute refractory period. Key detail: In the closed (resting) state, the m gate is closed and the h gate is open (capable of opening if depolarized); in the inactivated state, the m gate is open but the h gate plugs the pore (incapable of opening until repolarization resets h).",
    "verified": false,
    "open": {
     "q": "Contrast the positions of the m (activation) and h (inactivation) gates of a voltage-gated Na+ channel in the resting closed state versus the inactivated state.",
@@ -402,12 +402,12 @@
    "q": "How do local anesthetic drugs (such as lidocaine and bupivacaine) block pain conduction along peripheral nociceptive axons?",
    "options": [
     "They hyperpolarize the membrane by activating Na+/K+-ATPase",
-    "In their uncharged base form they cross the axonal membrane, become protonated intracellularly, and bind the inner pore of voltage-gated Na+ channels in the open/inactivated state (use-dependent blockade)",
+    "Protonated local anaesthetic binds intracellular open/inactivated voltage-gated Na+ channels",
     "They destroy myelin sheaths permanently",
     "They block postsynaptic GABA-A chloride channels"
    ],
    "answer": 1,
-   "explain": "Weak-base local anesthetics cross the lipid bilayer un-ionized, then bind the intracellular S6 segment of Nav channels preferentially when channels are open or inactivated, preventing Na+ influx and slowing recovery from inactivation.",
+   "explain": "Weak-base local anesthetics cross the lipid bilayer un-ionized, then bind the intracellular S6 segment of Nav channels preferentially when channels are open or inactivated, preventing Na+ influx and slowing recovery from inactivation. Key detail: In their uncharged base form they cross the axonal membrane, become protonated intracellularly, and bind the inner pore of voltage-gated Na+ channels in the open/inactivated state (use-dependent blockade).",
    "verified": false,
    "open": {
     "q": "Explain the mechanism of action of local anesthetics like lidocaine on axonal ion channels and why their blockade is 'use-dependent'.",
@@ -517,12 +517,12 @@
    "q": "What is 'accommodation' when an excitable membrane is exposed to a slowly rising subthreshold-to-threshold depolarizing current?",
    "options": [
     "Rapid explosive firing of high-frequency action potentials",
-    "Failure to fire an action potential because slow depolarization gradually closes Na+ inactivation (h) gates and opens voltage-gated K+ channels before enough Na+ activation gates can open simultaneously",
+    "Slow depolarisation inactivates Na+ channels and opens K+ channels before threshold is reached",
     "Focusing of the crystalline lens for near vision",
     "Permanent destruction of the axon hillock"
    ],
    "answer": 1,
-   "explain": "For a regenerative spike, depolarization must be fast enough to open m gates before slower h gates close and K+ channels activate; a very slow ramp current inactivates Nav channels silently without triggering a spike.",
+   "explain": "For a regenerative spike, depolarization must be fast enough to open m gates before slower h gates close and K+ channels activate; a very slow ramp current inactivates Nav channels silently without triggering a spike. Key detail: Failure to fire an action potential because slow depolarization gradually closes Na+ inactivation (h) gates and opens voltage-gated K+ channels before enough Na+ activation gates can open simultaneously.",
    "verified": false,
    "open": {
     "q": "Explain the ionic mechanism of nerve accommodation in response to a slowly rising depolarizing stimulus.",
@@ -541,11 +541,11 @@
    "options": [
     "Ca2+ directly enters through fast Na+ channels to depolarize the cell",
     "Hypocalcemia activates the Na+/K+-ATPase pump tenfold",
-    "Extracellular Ca2+ normally screens negative surface charges on the outer membrane; low Ca2+ shifts the voltage-gating threshold of Na+ channels closer to resting potential so they open with minimal depolarization",
+    "Low extracellular Ca2+ lowers the Na+ channel activation threshold, causing hyperexcitability",
     "Hypocalcemia blocks all voltage-gated K+ channels permanently"
    ],
    "answer": 2,
-   "explain": "Divalent Ca2+ ions bind negative phospholipid/protein charges on the external membrane surface, stabilizing voltage-gated Na+ channels; reducing [Ca2+]_out makes the voltage sensor perceive a depolarized field, lowering firing threshold and causing spontaneous discharges.",
+   "explain": "Divalent Ca2+ ions bind negative phospholipid/protein charges on the external membrane surface, stabilizing voltage-gated Na+ channels; reducing [Ca2+]_out makes the voltage sensor perceive a depolarized field, lowering firing threshold and causing spontaneous discharges. Key detail: Extracellular Ca2+ normally screens negative surface charges on the outer membrane; low Ca2+ shifts the voltage-gating threshold of Na+ channels closer to resting potential so they open with minimal depolarization.",
    "verified": false,
    "open": {
     "q": "Explain how hypocalcemia increases neuromuscular excitability and causes tetany.",
@@ -657,10 +657,10 @@
     "Backward conduction of impulses; doubles ATP consumption and shrinks axon diameter",
     "Chemical diffusion of neurotransmitters inside the axon; eliminates the need for Na+ channels",
     "Continuous opening of Na+ channels along the entire internode; prevents all-or-none firing",
-    "Jumping of action potentials from one node of Ranvier to the next; increases conduction velocity up to 50- to 100-fold and conserves metabolic ATP energy by restricting transmembrane ion fluxes to nodes"
+    "Action potentials jump between nodes, increasing speed and reducing ATP use"
    ],
    "answer": 3,
-   "explain": "Myelin increases transverse membrane resistance (rm) and lowers capacitance (cm), allowing local currents to jump rapidly between Nav-rich nodes of Ranvier while dramatically reducing the Na+/K+-ATPase workload.",
+   "explain": "Myelin increases transverse membrane resistance (rm) and lowers capacitance (cm), allowing local currents to jump rapidly between Nav-rich nodes of Ranvier while dramatically reducing the Na+/K+-ATPase workload. Key detail: Jumping of action potentials from one node of Ranvier to the next; increases conduction velocity up to 50- to 100-fold and conserves metabolic ATP energy by restricting transmembrane ion fluxes to nodes.",
    "verified": false,
    "open": {
     "q": "State the two primary physiological advantages of saltatory conduction in myelinated nerve fibers.",
@@ -677,13 +677,13 @@
    "sub": "Myelination and Saltatory Conduction",
    "q": "Why does demyelination (as in multiple sclerosis or Guillain-Barre syndrome) slow or block action potential conduction along affected axons?",
    "options": [
-    "Loss of myelin decreases transverse membrane resistance (rm) and increases membrane capacitance (cm), causing current leakage across internodes and failure to depolarize the next node to threshold (conduction block)",
+    "Demyelination lowers membrane resistance and raises capacitance, causing current leak and conduction block",
     "Demyelination removes all voltage-gated K+ channels from the soma",
     "Demyelination reverses the Nernst potential of Na+ to -90 mV",
     "Demyelination causes excessive myelin thickening at nodes of Ranvier"
    ],
    "answer": 0,
-   "explain": "Without myelin insulation, the length constant (lambda) shrinks and time constant (tau) lengthens; internodal membrane also has sparse Nav channels, so local current dissipates before reaching the next node.",
+   "explain": "Without myelin insulation, the length constant (lambda) shrinks and time constant (tau) lengthens; internodal membrane also has sparse Nav channels, so local current dissipates before reaching the next node. Key detail: Loss of myelin decreases transverse membrane resistance (rm) and increases membrane capacitance (cm), causing current leakage across internodes and failure to depolarize the next node to threshold (conduction block).",
    "verified": false,
    "open": {
     "q": "Explain in terms of cable properties (rm, cm, and length constant) why demyelination causes conduction slowing or conduction block.",
@@ -749,10 +749,10 @@
     "C fibers are most sensitive to pressure; A-alpha fibers are most sensitive to local anesthetics",
     "All nerve fibers show identical susceptibility to hypoxia, pressure, and local anesthetics",
     "B fibers are most sensitive to pressure; C fibers are most sensitive to hypoxia",
-    "Type B fibers are most susceptible to hypoxia; Type A (large myelinated) fibers are most susceptible to mechanical pressure; Type C (small unmyelinated) fibers are most susceptible to local anesthetics"
+    "Hypoxia: B fibres; pressure: A fibres; local anaesthetics: C fibres"
    ],
    "answer": 3,
-   "explain": "Classic differential vulnerability: Hypoxia affects B > A > C; Pressure affects A > B > C (why crossing legs causes numbness/foot drop before pain loss); Local anesthetics block C > B > A (loss of pain/temperature before touch/motor).",
+   "explain": "Classic differential vulnerability: Hypoxia affects B > A > C; Pressure affects A > B > C (why crossing legs causes numbness/foot drop before pain loss); Local anesthetics block C > B > A (loss of pain/temperature before touch/motor). Key detail: Type B fibers are most susceptible to hypoxia; Type A (large myelinated) fibers are most susceptible to mechanical pressure; Type C (small unmyelinated) fibers are most susceptible to local anesthetics.",
    "verified": false,
    "open": {
     "q": "Identify which nerve fiber type (A, B, or C) is most sensitive to: (1) hypoxia, (2) mechanical pressure, and (3) local anesthetics.",
@@ -840,10 +840,10 @@
     "Extracellular Ca2+ enters through T-tubule channels and diffuses to troponin C",
     "Acetylcholine enters the T-tubule and binds directly to calsequestrin",
     "T-tubule depolarization activates adenylate cyclase to phosphorylate myosin",
-    "Voltage-sensing dihydropyridine (DHP) receptors in the T-tubule membrane undergo a conformational change that mechanically pulls open linked ryanodine receptor (RyR1) Ca2+ release channels on the SR terminal cisternae"
+    "T-tubule DHP receptors mechanically open SR RyR1 Ca2+ release channels"
    ],
    "answer": 3,
-   "explain": "In skeletal muscle (triads at the A-I junction), DHP receptors (Cav1.1) are physically coupled to RyR1 channels on SR terminal cisternae, triggering rapid Ca2+ release without requiring extracellular Ca2+ influx.",
+   "explain": "In skeletal muscle (triads at the A-I junction), DHP receptors (Cav1.1) are physically coupled to RyR1 channels on SR terminal cisternae, triggering rapid Ca2+ release without requiring extracellular Ca2+ influx. Key detail: Voltage-sensing dihydropyridine (DHP) receptors in the T-tubule membrane undergo a conformational change that mechanically pulls open linked ryanodine receptor (RyR1) Ca2+ release channels on the SR terminal cisternae.",
    "verified": false,
    "open": {
     "q": "Describe the physical coupling between dihydropyridine (DHP) receptors and ryanodine receptors (RyR1) during skeletal muscle excitation-contraction coupling.",
@@ -976,12 +976,12 @@
    "q": "What is a motor unit, and how does motor unit size relate to precision of movement?",
    "options": [
     "A single muscle fiber innervated by ten motor neurons; large units produce fine movements",
-    "A single alpha motor neuron together with all the skeletal muscle fibers it innervates; small motor units (e.g., 3-10 fibers in extraocular muscles) allow fine graded control, whereas large units (e.g., 1,000+ fibers in gastrocnemius) generate gross power",
+    "One alpha motor neuron plus all skeletal muscle fibres it innervates; small units allow precise control",
     "A group of sensory spindles in a tendon; controls blood flow",
     "A bundle of smooth muscle cells joined by gap junctions"
    ],
    "answer": 1,
-   "explain": "All muscle fibers within a single motor unit share the same histochemical fiber type and contract synchronously whenever their alpha motor neuron fires.",
+   "explain": "All muscle fibers within a single motor unit share the same histochemical fiber type and contract synchronously whenever their alpha motor neuron fires. Key detail: A single alpha motor neuron together with all the skeletal muscle fibers it innervates; small motor units (e.g., 3-10 fibers in extraocular muscles) allow fine graded control, whereas large units (e.g., 1,000+ fibers in gastrocnemius) generate gross power.",
    "verified": false,
    "open": {
     "q": "Define a motor unit and compare the innervation ratio in extraocular muscles versus postural limb muscles.",
@@ -1044,13 +1044,13 @@
    "sub": "Motor Units, Summation, and Muscle Fiber Types",
    "q": "Which characteristics distinguish Type I (slow oxidative, red) skeletal muscle fibers from Type IIb/IIx (fast glycolytic, white) fibers?",
    "options": [
-    "Type I fibers have high myoglobin, abundant mitochondria, rich capillary density, slow myosin ATPase, and high fatigue resistance; Type IIb/IIx fibers have low myoglobin, abundant glycogen/glycolytic enzymes, fast myosin ATPase, and rapid fatigue",
+    "Type I: high myoglobin/mitochondria, slow ATPase, fatigue-resistant; Type IIx: glycolytic, fast, fatigues rapidly",
     "Type I fibers fatigue within 5 seconds and rely solely on anaerobic glycolysis",
     "Type IIb fibers contain ten times more myoglobin and mitochondria than Type I fibers",
     "Type I fibers lack sarcoplasmic reticulum completely"
    ],
    "answer": 0,
-   "explain": "Type I postural/endurance fibers sustain aerobic ATP generation without fatigue, whereas Type IIb/IIx sprint/power fibers generate rapid peak force via fast myosin heavy-chain ATPase and anaerobic glycolysis.",
+   "explain": "Type I postural/endurance fibers sustain aerobic ATP generation without fatigue, whereas Type IIb/IIx sprint/power fibers generate rapid peak force via fast myosin heavy-chain ATPase and anaerobic glycolysis. Key detail: Type I fibers have high myoglobin, abundant mitochondria, rich capillary density, slow myosin ATPase, and high fatigue resistance; Type IIb/IIx fibers have low myoglobin, abundant glycogen/glycolytic enzymes, fast myosin ATPase, and rapid fatigue.",
    "verified": false,
    "open": {
     "q": "Contrast Type I (slow oxidative) and Type IIx/IIb (fast glycolytic) skeletal muscle fibers across three structural or metabolic features.",
@@ -1092,11 +1092,11 @@
    "options": [
     "Unitary smooth muscle lacks gap junctions and has individual nerve endings on every cell; multiunit smooth muscle contracts as a single syncytium",
     "Both unitary and multiunit smooth muscles contain sarcomeres and T-tubules",
-    "Unitary smooth muscle (gut, uterus, ureter) has abundant gap junctions allowing spontaneous pacemaker waves to spread syncytially, whereas multiunit smooth muscle (iris, ciliary muscle, piloerectors, vas deferens) consists of discrete motor-like fibers with few gap junctions controlled finely by autonomic nerves",
+    "Unitary smooth muscle is gap-junction coupled; multiunit fibres are independently innervated",
     "Multiunit smooth muscle is found only in the stomach wall"
    ],
    "answer": 2,
-   "explain": "Single-unit (visceral) smooth muscle exhibits myogenic pacemaker slow waves and stretch-induced contraction across gap-junction-coupled sheets, whereas multiunit smooth muscle requires discrete autonomic varicosity stimulation.",
+   "explain": "Single-unit (visceral) smooth muscle exhibits myogenic pacemaker slow waves and stretch-induced contraction across gap-junction-coupled sheets, whereas multiunit smooth muscle requires discrete autonomic varicosity stimulation. Key detail: Unitary smooth muscle (gut, uterus, ureter) has abundant gap junctions allowing spontaneous pacemaker waves to spread syncytially, whereas multiunit smooth muscle (iris, ciliary muscle, piloerectors, vas deferens) consists of discrete motor-like fibers with few gap junctions controlled finely by autonomic nerves.",
    "verified": false,
    "open": {
     "q": "Compare unitary (visceral) and multiunit smooth muscle in terms of gap junctions, spontaneous activity, and anatomical examples.",
@@ -1182,13 +1182,13 @@
    "sub": "Resting Membrane Potential and Ionic Basis",
    "q": "What is the Gibbs-Donnan equilibrium, and why do living cells require an active Na+/K+-ATPase pump to avoid osmotic lysis from the Donnan effect?",
    "options": [
-    "Non-diffusible intracellular anionic proteins attract excess diffusible cations (Na+ and K+) into the cell, creating an osmotic gradient that would draw water in and swell/burst the cell unless the Na+/K+ pump continuously extrudes Na+",
+    "Intracellular impermeant anions attract cations and water; Na+/K+-ATPase prevents osmotic swelling",
     "It describes the rapid diffusion of oxygen across alveolar membranes",
     "It causes potassium to leave the cell until intracellular K+ equals zero",
     "It equalizes calcium concentrations between the nucleus and mitochondria"
    ],
    "answer": 0,
-   "explain": "Because trapped intracellular proteins carry negative charges, passive Gibbs-Donnan distribution accumulates higher total osmotically active ions inside than outside; the Na+/K+ pump acts as a 'double-Donnan' mechanism making the membrane effectively impermeable to Na+ to keep cell volume constant.",
+   "explain": "Because trapped intracellular proteins carry negative charges, passive Gibbs-Donnan distribution accumulates higher total osmotically active ions inside than outside; the Na+/K+ pump acts as a 'double-Donnan' mechanism making the membrane effectively impermeable to Na+ to keep cell volume constant. Key detail: Non-diffusible intracellular anionic proteins attract excess diffusible cations (Na+ and K+) into the cell, creating an osmotic gradient that would draw water in and swell/burst the cell unless the Na+/K+ pump continuously extrudes Na+.",
    "verified": false,
    "open": {
     "q": "Explain why non-diffusible intracellular anions (Gibbs-Donnan effect) would cause cell swelling if the Na+/K+-ATPase pump were inhibited (e.g., by ouabain).",
@@ -1506,11 +1506,11 @@
    "options": [
     "It hydrolyzes ATP to generate the myosin power stroke",
     "It pumps calcium back into the sarcoplasmic reticulum",
-    "It links intracellular F-actin cytoskeleton to the sarcolemmal dystrophin-associated glycoprotein complex and extracellular matrix, stabilizing the sarcolemma against mechanical shear stress during contraction",
+    "Dystrophin links actin to the sarcolemmal glycoprotein complex, stabilising muscle membrane",
     "It synthesizes acetylcholine at the neuromuscular junction"
    ],
    "answer": 2,
-   "explain": "Absent or truncated dystrophin (Duchenne/Becker muscular dystrophy) leaves the sarcolemma fragile during contraction, leading to membrane tearing, Ca2+ influx, fiber necrosis, elevated serum creatine kinase, and fibrofatty replacement.",
+   "explain": "Absent or truncated dystrophin (Duchenne/Becker muscular dystrophy) leaves the sarcolemma fragile during contraction, leading to membrane tearing, Ca2+ influx, fiber necrosis, elevated serum creatine kinase, and fibrofatty replacement. Key detail: It links intracellular F-actin cytoskeleton to the sarcolemmal dystrophin-associated glycoprotein complex and extracellular matrix, stabilizing the sarcolemma against mechanical shear stress during contraction.",
    "verified": false,
    "open": {
     "q": "State the structural role of dystrophin in skeletal muscle and the X-linked disease caused by its complete absence.",
@@ -1851,11 +1851,11 @@
    "options": [
     "It triggers violent generalized tonic-clonic tetany",
     "It shifts the Na+ channel activation threshold closer to resting potential",
-    "Excess extracellular Ca2+ increases external surface charge screening, shifting Na+ channel threshold to a less negative voltage (farther from RMP) and depressing neuromuscular excitability (muscle weakness, lethargy, constipation)",
+    "Hypercalcaemia shifts Na+ channel threshold away from resting potential, reducing excitability",
     "It lowers resting membrane potential to -140 mV"
    ],
    "answer": 2,
-   "explain": "Hypercalcemia stabilizes voltage-gated Na+ channels so a larger depolarization is required to reach threshold, producing hypoexcitability ('groans, moans, bones, stones, and psychiatric overtones').",
+   "explain": "Hypercalcemia stabilizes voltage-gated Na+ channels so a larger depolarization is required to reach threshold, producing hypoexcitability ('groans, moans, bones, stones, and psychiatric overtones'). Key detail: Excess extracellular Ca2+ increases external surface charge screening, shifting Na+ channel threshold to a less negative voltage (farther from RMP) and depressing neuromuscular excitability (muscle weakness, lethargy, constipation).",
    "verified": false,
    "open": {
     "q": "Explain how hypercalcemia reduces neuromuscular excitability.",
@@ -2034,12 +2034,12 @@
    "q": "What are the three stages of Wallerian degeneration and axonal regeneration following complete transection (neurotmesis) of a peripheral myelinated nerve fiber?",
    "options": [
     "Immediate fusion of cut ends within 5 minutes without degeneration",
-    "Distal axon and myelin fragment and are phagocytosed by macrophages/Schwann cells (Wallerian degeneration), proximal soma undergoes chromatolysis, and Schwann cells form bands of Bungner to guide proximal axonal sprouts at ~1-3 mm/day",
+    "PNS: Schwann cells clear debris and guide axonal sprouts; CNS: myelin inhibitors and glial scar impede regrowth",
     "Oligodendrocytes migrate into the limb to replace Schwann cells",
     "Retrograde degeneration destroys the entire cerebral cortex within 24 hours"
    ],
    "answer": 1,
-   "explain": "Unlike CNS axons (where oligodendrocyte myelin inhibitors like Nogo-A and glial scars block regrowth), peripheral Schwann cells clear debris, secrete neurotrophins (NGF, BDNF), and form longitudinal tubes (bands of Bungner) guiding regeneration at ~1-4 mm/day.",
+   "explain": "Unlike CNS axons (where oligodendrocyte myelin inhibitors like Nogo-A and glial scars block regrowth), peripheral Schwann cells clear debris, secrete neurotrophins (NGF, BDNF), and form longitudinal tubes (bands of Bungner) guiding regeneration at ~1-4 mm/day. Key detail: Distal axon and myelin fragment and are phagocytosed by macrophages/Schwann cells (Wallerian degeneration), proximal soma undergoes chromatolysis, and Schwann cells form bands of Bungner to guide proximal axonal sprouts at ~1-3 mm/day.",
    "verified": false,
    "open": {
     "q": "Contrast axonal regeneration capacity in the peripheral nervous system versus the central nervous system after axonal transection.",
