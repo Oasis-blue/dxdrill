@@ -35,6 +35,17 @@ New topic banks were created for GI physiology, BMR/nutrition physiology, endocr
 - The new banks were parsed and checked for duplicate IDs, missing MCQ explanations and invalid MCQ answer indices.
 - A repository-wide pass across the 128 manifest entries present before the final blood/haemostasis addition found no missing MCQ explanations, invalid answer indices or duplicate IDs within the individual bank files. The two new blood/haemostasis banks were checked separately after creation.
 
+## Targeted answer-explanation audit
+
+A limited check of the supplied cardiac physiology answer explanations identified these problems:
+
+| Location | Issue found | Correct treatment |
+|---|---|---|
+| Heart unit, explanation 4 | The explanation gives stroke volume as 100 mL and end-systolic volume as 150 mL, but then reports an ejection fraction of 66.7%. | End-diastolic volume is 100 + 150 = 250 mL, so ejection fraction is 100/250 = 40%. The printed calculation is internally inconsistent and the stated percentage should not be accepted. |
+| Heart unit, explanation 8 | The explanation claims cardiac muscle stores much more calcium in its tubular system than skeletal muscle and describes calcium stored/bound in the T-tubules. | Cardiac T-tubules are invaginations continuous with extracellular fluid; calcium entry through L-type channels triggers calcium-induced calcium release from the sarcoplasmic reticulum. Cardiac contraction is more dependent on extracellular calcium, but the T-tubules should not be described as a larger intracellular calcium store than skeletal-muscle SR. |
+
+This is a targeted audit of two identifiable answer explanations, not a complete validation of the review book's more than 1,000 questions. The source is used for topic coverage, not question reproduction.
+
 ## Limits
 
 This is a coverage map, not a claim that all 15 source units have been exhaustively transcribed or that every source answer has been independently peer-reviewed. The copyrighted review book is used for unit/topic coverage only. All added questions are independently authored. Content-level review and lecturer validation remain separate quality gates.
