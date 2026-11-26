@@ -21,7 +21,7 @@ This reconciliation adds original, syllabus-aligned questions informed by concep
 | MCQs in Anatomy Thorax, Abdomen, Pelvis and Perineum(1).pdf | 138 | Text extracted; thoracic anatomy concepts reviewed; 2 original questions added to thorax bank. Abdomen/pelvis-specific additions are not claimed. |
 | Klm Anatomy Mcqs (1).pdf | 157 | Exact duplicate of Klm Anatomy Mcqs (1)(1).pdf; treated as one source. Text extracted. |
 | Physiology MCQs Book (1).pdf | 433 | Exact duplicate of Physiology MCQs Book (1)(1).pdf; treated as one source. Text extracted. No verbatim textbook questions imported. |
-| Anatomy MCQ.pdf | 336 | Text extracted; broad anatomy source. Full question-by-question reconciliation remains outstanding. |
+| Anatomy MCQ.pdf | 336 | Image-only scan; native text extraction produced no usable question text. OCR sampling of pages 10–25 confirmed a mixed-topic anatomy question bank. Full OCR and question-by-question reconciliation remain outstanding. |
 | Anatomy MCQ ( PDFDrive ).pdf | 145 | Text extracted; broad anatomy source. Full question-by-question reconciliation remains outstanding. |
 | mcqs and emqs in physiology - Copy.pdf | 361 | Text extracted; commercial 6th-edition MCQ/EMQ textbook. Full question-by-question reconciliation remains outstanding; no verbatim textbook items imported. |
 | MCQs in Biochemistry - by G. Vidya Sagar-Ussama Maqbool--1.pdf | 301 | Exact duplicate of epdf.tips_mcqs-in-biochemistry-2008.pdf; treated as one source. Text extracted; broad 5,000-MCQ collection, not bulk-transcribed. |
@@ -61,3 +61,26 @@ The additions use existing topic files, so no manifest changes were required.
 - New items remain unverified pending lecturer/senior-student review. Do not set `verified: true` automatically.
 - The 18 new questions have been committed to `main`; the follow-up validation below checks the edited topic files, but it does not substitute for a full app/browser test or academic review.
 
+
+
+## Continuation pass — further source-informed additions
+
+A second pass added 18 further independently worded questions, using the uploaded sources to identify syllabus coverage and common assessment concepts. The questions were added to existing topic files rather than copied verbatim from the books.
+
+| Topic bank | Added in continuation | Current total |
+|---|---:|---:|
+| gr-abdomen-pelvis-and-perineum | 2 | 214 |
+| pi-digestion-and-absorption | 2 | 4 |
+| bc-amino-acids-and-proteins | 2 | 30 |
+| bc-enzymes-and-bioenergetics | 2 | 40 |
+| pc-ecg | 2 | 27 |
+| pr-mechanics-of-breathing | 2 | 32 |
+| phys-urine-formation | 2 | 69 |
+| pe-pancreas | 2 | 4 |
+| pb-red-blood-cells | 2 | 38 |
+
+Across the two passes, **36 original questions** have been added in total. The latest validation checked 18 affected topic-bank files: all parsed as JSON, all question IDs were unique within their files, and no records failed the basic structural checks for stem, options, answer index or explanation. This is structural validation only, not a full academic review or an app runtime test.
+
+## Source coverage still not complete
+
+The scanned 336-page `Anatomy MCQ.pdf` requires full OCR before it can be reconciled; only pages 10–25 were sampled during this continuation. The 145-page text-based `Anatomy MCQ ( PDFDrive ).pdf`, the 157-page KLM anatomy question book, the 361-page physiology MCQ/EMQ textbook, and the large biochemistry question collections still need systematic question-level coverage analysis. Their extraction into text files is not equivalent to having reconciled every question. The small GIT, upper-limb, lower-limb, head-and-neck, thorax, CNS motor and cardiovascular source documents have been used as topic references, but the additions above are not a page-complete transcription of those sources either.
