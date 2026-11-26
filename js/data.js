@@ -125,6 +125,7 @@ window.DX = window.DX || {};
       (man.questions || []).forEach(function (f) {
         jobs.push(function () { return getJSON("data/questions/" + f + ".json").then(function (d) {
           /* One topic for the whole file ("topic"), or a "topic" on each question to mix topics in one file. A question's own topic wins. */
+          var beforeTf = DX.tfStems.length;
           var fileT = DX.topicById[d.topic], bad = 0;
           if (!fileT && !d.questions.some(function (q) { return DX.topicById[q.topic]; })) { console.warn("Unknown topic id in " + f + ": " + d.topic); return; }
           d.questions.forEach(function (q) {
@@ -142,6 +143,7 @@ window.DX = window.DX || {};
             }
             DX.questions.push(q); t.count++;
           });
+          if (DX.tfStems.length > beforeTf && DX.onTfProgress) DX.onTfProgress();
           if (bad) console.warn(bad + " question(s) in " + f + " have no known topic and were skipped");
           DX.questionFilesLoaded++;
           if (!DX.questionsReady && DX.questions.length) {
@@ -171,6 +173,7 @@ window.DX = window.DX || {};
         DX.questionsLoading = false;
         DX.questionsReady = true;
         DX.partial = false;
+        if (DX.onTfProgress) DX.onTfProgress();
         if (DX.onMore) DX.onMore();
       });
       return;
