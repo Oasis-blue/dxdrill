@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trouble loading DxDrill?</title>
+<style>
+:root{--bg:#f3f5f7;--surface:#fff;--fg:#0e1a26;--muted:#56677a;--line:#d3dde5;--accent:#0a6a86;--ink:#fff;--good:#17794a;--bad:#b3261e;--warn:#9a5200}
+@media (prefers-color-scheme:dark){:root{--bg:#0d161c;--surface:#15222b;--fg:#e6eef3;--muted:#93a5b2;--line:#263944;--accent:#4cc3e0;--ink:#06212a;--good:#4cc486;--bad:#ff8a80;--warn:#f2b35a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:20px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px))}
+main{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+a{color:var(--accent)} h1{font-size:26px;line-height:1.2;margin:0} h2{font-size:18px;margin:0 0 6px}
+p{margin:0} .muted{color:var(--muted)}
+button{font:inherit;font-weight:600;padding:12px 16px;border-radius:10px;border:1.5px solid var(--accent);background:var(--accent);color:var(--ink);cursor:pointer;min-height:48px}
+button.ghost{background:transparent;color:var(--accent)}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+ul.res{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+ul.res li{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.ok{color:var(--good);font-weight:700}.slow{color:var(--warn);font-weight:700}.bad{color:var(--bad);font-weight:700}
+ol{margin:6px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+textarea{width:100%;min-height:110px;font:13px/1.4 ui-monospace,monospace;padding:10px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg)}
+</style></head><body><main>
+<p><a href="./">&larr; Back to DxDrill</a></p>
+<h1>Trouble loading DxDrill?</h1>
+<p class="muted">Tap the button. It takes about 20 seconds and checks whether your phone can reach DxDrill. It does not sign you in, and it does not change anything.</p>
+<div class="row"><button id="go" type="button">Check my connection</button></div>
+
+<section class="card" id="out" hidden aria-live="polite">
+  <h2>What I found</h2>
+  <ul class="res" id="res"></ul>
+  <p id="verdict" style="margin-top:12px"></p>
+</section>
+
+<section class="card">
+  <h2>Things that fix most problems</h2>
+  <ol>
+    <li><b>Switch networks.</b> If you are on Wi-Fi, try mobile data, or the other way round. Some networks reach DxDrill's servers badly, even when other sites work.</li>
+    <li><b>Change your phone's DNS to 1.1.1.1.</b> On Android: Settings &rarr; Network &rarr; Private DNS &rarr; <i>one.one.one.one</i>. On iPhone: install the free "1.1.1.1" app from Cloudflare and switch it on.</li>
+    <li><b>Try another browser app,</b> for example Chrome or Firefox.</li>
+    <li><b>Clear DxDrill's saved copy</b> with the button below, then open DxDrill again.</li>
+    <li><b>Wait a few minutes and try again.</b> Your scores are saved on your phone, so nothing is lost.</li>
+  </ol>
+  <div class="row" style="margin-top:12px"><button id="clr" class="ghost" type="button">Clear DxDrill's saved copy</button></div>
+</section>
+
+<section class="card" id="rep" hidden>
+  <h2>Still stuck? Send this to the admin</h2>
+  <p class="muted" style="margin-bottom:8px">Copy it and paste it into a message. It has no personal details, only the results above.</p>
+  <textarea id="repbox" readonly></textarea>
+  <div class="row" style="margin-top:8px"><button id="cp" class="ghost" type="button">Copy</button></div>
+</section>
+</main>
+<script>
+(function () {
+  var SUPA = "https://dkullruinrnwjmhlxlpl.supabase.co/auth/v1/health";
+  var res = document.getElementById("res"), out = document.getElementById("out"), verdict = document.getElementById("verdict");
+  var lines = [];
+
+  function timed(url, cors) {
+    var t0 = Date.now(), ctl = window.AbortController ? new AbortController() : null, timer = setTimeout(function () { if (ctl) ctl.abort(); }, 15000);
+    return fetch(url, { cache: "no-store", mode: cors ? "cors" : "same-origin", signal: ctl ? ctl.signal : undefined }).then(function (r) {
+      clearTimeout(timer); return { ok: r.ok || r.status === 401, ms: Date.now() - t0, status: r.status, r: r };
+    }).catch(function (e) { clearTimeout(timer); return { ok: false, ms: Date.now() - t0, timeout: e && e.name === "AbortError" }; });
+  }
+  function show(label, state, text) {
+    var li = document.createElement("li"); li.innerHTML = "<span></span><span class='" + state + "'></span>";
+    li.children[0].textContent = label; li.children[1].textContent = text; res.appendChild(li);
+    lines.push(label + ": " + text);
+  }
+  function grade(r) { return !r.ok ? "bad" : r.ms > 4000 ? "slow" : "ok"; }
+  function word(r, okText) { return !r.ok ? (r.timeout ? "no answer (15 s)" : "could not connect") : r.ms > 4000 ? "slow (" + Math.round(r.ms / 100) / 10 + " s)" : okText; }
+
+  document.getElementById("go").onclick = function () {
+    res.innerHTML = ""; lines = []; out.hidden = false; verdict.textContent = "Checking…"; document.getElementById("rep").hidden = true;
+    var online = navigator.onLine !== false;
+    show("Your phone says it is online", online ? "ok" : "bad", online ? "yes" : "no. Turn on Wi-Fi or mobile data.");
+    var app, qs = { total: 0, got: 0, slow: 0 }, supa;
+    timed("data/manifest.json").then(function (r) {
+      app = r; show("DxDrill app files (GitHub)", grade(r), word(r, "OK"));
+      if (!r.ok) return null; return r.r.json().catch(function () { return null; });
+    }).then(function (man) {
+      var files = man && man.questions ? man.questions.map(function (f) { return "data/questions/" + f + ".json"; }) : [];
+      qs.total = files.length; var i = 0;
+      return Promise.all(new Array(Math.min(6, files.length)).fill(0).map(function () {
+        return (function nx() { if (i >= files.length) return Promise.resolve(); return timed(files[i++]).then(function (r) { if (r.ok) qs.got++; if (r.ms > 4000) qs.slow++; return nx(); }); })();
+      }));
+    }).then(function () {
+      if (qs.total) show("Question files", qs.got === qs.total ? (qs.slow ? "slow" : "ok") : "bad", qs.got + " of " + qs.total + " loaded" + (qs.slow ? " (" + qs.slow + " slowly)" : ""));
+      return timed(SUPA, true);
+    }).then(function (r) {
+      supa = r; show("Accounts and leaderboards", grade(r), word(r, "OK"));
+      var good = app && app.ok && qs.got === qs.total && qs.total > 0;
+      if (!online) verdict.textContent = "Your phone is offline. Turn on Wi-Fi or mobile data and run the check again.";
+      else if (good && supa.ok) verdict.textContent = (qs.slow || app.ms > 4000 || supa.ms > 4000) ? "Everything can be reached, but your connection is slow. DxDrill will open, just give it a little longer. If it still shows \"Loading\", clear the saved copy below and try again." : "Everything is reachable. If DxDrill still will not open, tap \"Clear DxDrill's saved copy\" below, then open it again.";
+      else if (!app || !app.ok) verdict.textContent = "Your phone cannot reach DxDrill's files right now, but other sites may still work. Switch between Wi-Fi and mobile data, or change DNS (steps below), and run the check again.";
+      else if (qs.got < qs.total) verdict.textContent = "Some question files did not load. Switch networks or wait a few minutes, then run the check again.";
+      else verdict.textContent = "Practice and Hall mode should work. Accounts and leaderboards cannot be reached right now, so sign-in may not work until it comes back.";
+      document.getElementById("repbox").value = "DxDrill check " + new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC\n" + lines.join("\n") + "\nResult: " + verdict.textContent;
+      document.getElementById("rep").hidden = false;
+    });
+  };
+  document.getElementById("clr").onclick = function () {
+    var jobs = [];
+    if (navigator.serviceWorker) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
+    if (window.caches) jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }));
+    Promise.all(jobs).then(function () { alert("Done. Your scores are kept. Now open DxDrill again."); }, function () { alert("Could not clear it here. In your browser settings, clear site data for this website."); });
+  };
+  document.getElementById("cp").onclick = function () {
+    var b = document.getElementById("repbox"); b.select();
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(b.value).catch(function () { document.execCommand("copy"); }); else document.execCommand("copy");
+    this.textContent = "Copied";
+  };
+})();
+</script></body></html>
