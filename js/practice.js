@@ -303,5 +303,5 @@
     var none = document.getElementById("pk-none"); if (none) none.hidden = !q || any;
   }
 
-  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
+  DX.practice = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: function () {}, isRunning: function () { return P.view === "run" && P.run && !P.run.done; }, reset: function () { if (P.view === "run" && P.run && !P.run.done) return; P.view = "pick"; P.run = null; } };
 })();
