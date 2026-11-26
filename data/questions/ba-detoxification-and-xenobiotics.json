@@ -172,11 +172,11 @@
    "options": [
     "They attach two oxygen atoms from O2 onto a single carbon atom",
     "They operate without molecular oxygen",
-    "They incorporate one atom of molecular oxygen (O2) into the xenobiotic substrate while reducing the second oxygen atom to water (H2O) using electrons from NADPH",
+    "CYP450 inserts one O atom into the substrate and reduces the other to water",
     "They cleave amide bonds using water"
    ],
    "answer": 2,
-   "explain": "Monooxygenases catalyze RH + O2 + NADPH + H+ -> ROH + H2O + NADP+, inserting one oxygen atom into the substrate (RH -> ROH) and reducing the other to water.",
+   "explain": "Monooxygenases catalyze RH + O2 + NADPH + H+ -> ROH + H2O + NADP+, inserting one oxygen atom into the substrate (RH -> ROH) and reducing the other to water. Key detail: They incorporate one atom of molecular oxygen (O2) into the xenobiotic substrate while reducing the second oxygen atom to water (H2O) using electrons from NADPH.",
    "verified": false,
    "open": {
     "q": "Which reduced nucleotide cofactor donates electrons to the cytochrome P450 catalytic cycle via NADPH-cytochrome P450 reductase?",
@@ -238,12 +238,12 @@
    "q": "How do furanocoumarins in grapefruit juice cause clinically significant drug interactions with oral medications such as felodipine, nifedipine, or simvastatin?",
    "options": [
     "Accelerate renal glomerular filtration of the drugs",
-    "Irreversibly inactivate intestinal enterocyte CYP3A4 ('mechanism-based / suicide inhibition'), increasing oral drug bioavailability and toxicity",
+    "Grapefruit furanocoumarins irreversibly inhibit intestinal CYP3A4, increasing oral drug exposure",
     "Bind the drugs in the stomach to prevent all absorption",
     "Induce hepatic glucuronidation ten-fold"
    ],
    "answer": 1,
-   "explain": "Grapefruit furanocoumarins are oxidized by intestinal CYP3A4 into reactive intermediates that covalently bind and irreversibly inactivate the enzyme, reducing first-pass intestinal metabolism and raising systemic drug levels.",
+   "explain": "Grapefruit furanocoumarins are oxidized by intestinal CYP3A4 into reactive intermediates that covalently bind and irreversibly inactivate the enzyme, reducing first-pass intestinal metabolism and raising systemic drug levels. Key detail: Irreversibly inactivate intestinal enterocyte CYP3A4 ('mechanism-based / suicide inhibition'), increasing oral drug bioavailability and toxicity.",
    "verified": false,
    "open": {
     "q": "Which intestinal cytochrome P450 enzyme is irreversibly inhibited by components of grapefruit juice?",
@@ -261,11 +261,11 @@
    "options": [
     "Plasma levels of the co-administered drug rise dangerously",
     "The co-administered drug is never absorbed",
-    "Induction increases CYP450 enzyme synthesis over days to weeks, accelerating clearance and lowering plasma levels/efficacy of the co-administered drug",
+    "Rifampicin induces CYP expression, accelerating drug clearance and lowering plasma levels",
     "CYP450 enzymes switch from oxidation to glucuronidation"
    ],
    "answer": 2,
-   "explain": "Enzyme inducers (such as rifampicin, phenobarbital, phenytoin, carbamazepine, and St. John's wort) act largely via nuclear receptors (PXR/CAR) to increase transcription of CYP450 mRNA, speeding up drug breakdown and potentially causing treatment failure or transplant rejection.",
+   "explain": "Enzyme inducers (such as rifampicin, phenobarbital, phenytoin, carbamazepine, and St. John's wort) act largely via nuclear receptors (PXR/CAR) to increase transcription of CYP450 mRNA, speeding up drug breakdown and potentially causing treatment failure or transplant rejection. Key detail: Induction increases CYP450 enzyme synthesis over days to weeks, accelerating clearance and lowering plasma levels/efficacy of the co-administered drug.",
    "verified": false,
    "open": {
     "q": "Name one potent cytochrome P450 enzyme-inducing drug that can lower plasma concentrations of co-administered medications such as warfarin or oral contraceptives.",
@@ -354,12 +354,12 @@
    "q": "What is the hallmark of Phase II biotransformation reactions?",
    "options": [
     "Cleavage of aromatic rings into carbon dioxide",
-    "Covalent conjugation of a xenobiotic or its Phase I metabolite with an endogenous polar molecule (such as glucuronic acid, sulfate, glutathione, glycine, or acetyl group)",
+    "Phase II adds an endogenous polar group to the xenobiotic or its Phase I metabolite",
     "Insertion of a single oxygen atom from O2",
     "Direct excretion without any enzyme involvement"
    ],
    "answer": 1,
-   "explain": "Phase II reactions attach bulky, polar, or charged endogenous moieties to functional groups (-OH, -COOH, -NH2, -SH, epoxides), typically producing inactive, highly water-soluble conjugates for urinary or biliary elimination.",
+   "explain": "Phase II reactions attach bulky, polar, or charged endogenous moieties to functional groups (-OH, -COOH, -NH2, -SH, epoxides), typically producing inactive, highly water-soluble conjugates for urinary or biliary elimination. Key detail: Covalent conjugation of a xenobiotic or its Phase I metabolite with an endogenous polar molecule (such as glucuronic acid, sulfate, glutathione, glycine, or acetyl group).",
    "verified": false,
    "open": {
     "q": "What biochemical process defines Phase II xenobiotic metabolism?",
@@ -444,12 +444,12 @@
    "q": "How does sulfation differ kinetically from glucuronidation as a Phase II conjugation capacity?",
    "options": [
     "Sulfation has unlimited capacity, whereas glucuronidation saturates immediately",
-    "Sulfation has high affinity but lower capacity (saturates easily because PAPS pools are limited), whereas glucuronidation has lower affinity but higher capacity",
+    "Sulfation has high affinity but low capacity; glucuronidation has higher capacity",
     "Both have identical Km and Vmax for every substrate",
     "Sulfation occurs only in the mitochondria"
    ],
    "answer": 1,
-   "explain": "At low therapeutic doses (e.g., normal acetaminophen), high-affinity sulfation and glucuronidation predominate; during overdose, limited PAPS and UDPGA pools saturate, shunting more acetaminophen toward CYP450-mediated NAPQI formation.",
+   "explain": "At low therapeutic doses (e.g., normal acetaminophen), high-affinity sulfation and glucuronidation predominate; during overdose, limited PAPS and UDPGA pools saturate, shunting more acetaminophen toward CYP450-mediated NAPQI formation. Key detail: Sulfation has high affinity but lower capacity (saturates easily because PAPS pools are limited), whereas glucuronidation has lower affinity but higher capacity.",
    "verified": false,
    "open": {
     "q": "Compared with glucuronidation, does sulfation generally have a higher or lower conjugation capacity before saturation?",
@@ -606,11 +606,11 @@
    "options": [
     "Accumulation of lactic acid in hepatocytes",
     "Direct inhibition of gastric parietal cell H+/K+-ATPase",
-    "Unconjugated reactive NAPQI (N-acetyl-p-benzoquinone imine) covalently binds hepatic proteins and lipids, causing oxidative stress and centrilobular hepatocyte death",
+    "NAPQI accumulates after glutathione depletion and covalently damages centrilobular hepatocytes",
     "Precipitation of calcium oxalate crystals in the liver"
    ],
    "answer": 2,
-   "explain": "Normally, NAPQI generated by CYP450 (mainly CYP2E1, CYP1A2, CYP3A4) is rapidly detoxified by conjugation with reduced glutathione (GSH); in overdose, GSH drops below ~30% of normal and unbound NAPQI damages Zone III hepatocytes.",
+   "explain": "Normally, NAPQI generated by CYP450 (mainly CYP2E1, CYP1A2, CYP3A4) is rapidly detoxified by conjugation with reduced glutathione (GSH); in overdose, GSH drops below ~30% of normal and unbound NAPQI damages Zone III hepatocytes. Key detail: Unconjugated reactive NAPQI (N-acetyl-p-benzoquinone imine) covalently binds hepatic proteins and lipids, causing oxidative stress and centrilobular hepatocyte death.",
    "verified": false,
    "open": {
     "q": "State the acronym or full name of the reactive electrophilic metabolite of acetaminophen responsible for hepatotoxicity.",
@@ -742,13 +742,13 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "How do organophosphate and carbamate pesticides cause cholinergic toxicity?",
    "options": [
-    "Irreversibly (organophosphates) or reversibly (carbamates) inhibit acetylcholinesterase, causing acetylcholine accumulation at muscarinic and nicotinic synapses and neuromuscular junctions",
+    "Organophosphates inhibit AChE irreversibly; carbamates inhibit it reversibly, raising ACh",
     "Block nicotinic acetylcholine receptors to cause flaccid paralysis immediately",
     "Stimulate hepatic glucuronidation of acetylcholine",
     "Deplete intracellular potassium inside neurons"
    ],
    "answer": 0,
-   "explain": "Inhibiting acetylcholinesterase prevents breakdown of acetylcholine, causing muscarinic effects (salivation, lacrimation, urination, diarrhea, bronchorrhea, bronchospasm, miosis, bradycardia) and nicotinic fasciculations/weakness; pralidoxime regenerates organophosphate-inhibited AChE before 'aging' occurs.",
+   "explain": "Inhibiting acetylcholinesterase prevents breakdown of acetylcholine, causing muscarinic effects (salivation, lacrimation, urination, diarrhea, bronchorrhea, bronchospasm, miosis, bradycardia) and nicotinic fasciculations/weakness; pralidoxime regenerates organophosphate-inhibited AChE before 'aging' occurs. Key detail: Irreversibly (organophosphates) or reversibly (carbamates) inhibit acetylcholinesterase, causing acetylcholine accumulation at muscarinic and nicotinic synapses and neuromuscular junctions.",
    "verified": false,
    "open": {
     "q": "Name the enzyme inhibited by organophosphate pesticides that leads to excess synaptic acetylcholine.",
@@ -767,12 +767,12 @@
    "q": "Why is aflatoxin B1 (produced by Aspergillus flavus on improperly stored grains, peanuts, and maize) a potent hepatocarcinogen?",
    "options": [
     "Directly methylates histone H1 without metabolism",
-    "CYP450 oxidizes aflatoxin B1 into a reactive exo-8,9-epoxide that forms bulky covalent adducts with guanine (N7-guanine) in DNA, causing G:C -> T:A transversions including at codon 249 of TP53",
+    "CYP450 forms a reactive aflatoxin epoxide that adducts guanine in DNA",
     "Inhibits topoisomerase I in pancreatic acinar cells",
     "Causes immediate hemolytic anemia without liver involvement"
    ],
    "answer": 1,
-   "explain": "Aflatoxin B1 requires CYP450 bioactivation to aflatoxin B1-8,9-epoxide, which binds DNA guanine bases and promotes hepatocellular carcinoma (synergistically with chronic hepatitis B virus infection).",
+   "explain": "Aflatoxin B1 requires CYP450 bioactivation to aflatoxin B1-8,9-epoxide, which binds DNA guanine bases and promotes hepatocellular carcinoma (synergistically with chronic hepatitis B virus infection). Key detail: CYP450 oxidizes aflatoxin B1 into a reactive exo-8,9-epoxide that forms bulky covalent adducts with guanine (N7-guanine) in DNA, causing G:C -> T:A transversions including at codon 249 of TP53.",
    "verified": false,
    "open": {
     "q": "Name the fungal mycotoxin produced by Aspergillus flavus that is bioactivated by CYP450 into a mutagenic DNA-binding epoxide linked to hepatocellular carcinoma.",
@@ -812,13 +812,13 @@
    "sub": "Chemical Carcinogenesis and Reactive Intermediates",
    "q": "How does the Ames test evaluate whether a chemical compound is a mutagen?",
    "options": [
-    "Measures reversion of histidine-auxotrophic Salmonella typhimurium strains (his-) back to prototrophy (his+) capable of growing on histidine-deficient agar, typically with and without rat liver S9 homogenate",
+    "Ames test measures reversion of his− Salmonella to histidine-independent growth",
     "Counts chromosome number in human amniotic fluid cells",
     "Measures serum alanine aminotransferase in mice",
     "Detects antibodies against viral capsid proteins"
    ],
    "answer": 0,
-   "explain": "Histidine-requiring mutant Salmonella strains cannot grow without exogenous histidine unless a reverse mutation restores the his gene; adding rat liver S9 fraction supplies Phase I/II metabolic enzymes to detect procarcinogens.",
+   "explain": "Histidine-requiring mutant Salmonella strains cannot grow without exogenous histidine unless a reverse mutation restores the his gene; adding rat liver S9 fraction supplies Phase I/II metabolic enzymes to detect procarcinogens. Key detail: Measures reversion of histidine-auxotrophic Salmonella typhimurium strains (his-) back to prototrophy (his+) capable of growing on histidine-deficient agar, typically with and without rat liver S9 homogenate.",
    "verified": false,
    "open": {
     "q": "Name the short-term bacterial mutagenicity assay using histidine-auxotrophic Salmonella typhimurium strains, often with S9 liver fraction.",
@@ -882,13 +882,13 @@
    "sub": "Heavy Metals and Chelation Biochemistry",
    "q": "By which biochemical mechanism do heavy metals such as lead (Pb2+), mercury (Hg2+), and arsenic cause cellular toxicity?",
    "options": [
-    "Bind tightly to sulfhydryl (-SH) groups of enzymes and structural proteins, inhibit metalloenzymes, and mimic or displace essential divalent cations (such as Ca2+ and Zn2+)",
+    "Heavy metals bind protein thiols and displace essential metal cofactors",
     "Increase intracellular ATP synthesis ten-fold",
     "Convert all plasma proteins into immunoglobulins",
     "Enhance renal reabsorption of bicarbonate"
    ],
    "answer": 0,
-   "explain": "Heavy metals have high affinity for thiol (-SH) groups on proteins and displace essential metal cofactors (e.g., lead inhibits ALA dehydratase and ferrochelatase, while arsenic inhibits pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase by binding vicinal dithiols).",
+   "explain": "Heavy metals have high affinity for thiol (-SH) groups on proteins and displace essential metal cofactors (e.g., lead inhibits ALA dehydratase and ferrochelatase, while arsenic inhibits pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase by binding vicinal dithiols). Key detail: Bind tightly to sulfhydryl (-SH) groups of enzymes and structural proteins, inhibit metalloenzymes, and mimic or displace essential divalent cations (such as Ca2+ and Zn2+).",
    "verified": false,
    "open": {
     "q": "Which functional group on proteins and enzymes do heavy metals like lead and mercury strongly bind to disrupt protein function?",
@@ -1213,13 +1213,13 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "Why does chronic alcohol abuse markedly lower the threshold for acetaminophen hepatotoxicity compared with occasional alcohol use?",
    "options": [
-    "Chronic ethanol induces CYP2E1 (increasing NAPQI formation) and often accompanies poor nutrition/glutathione depletion, whereas acute ethanol can temporarily compete for CYP2E1",
+    "Chronic ethanol induces CYP2E1 and depletes glutathione, increasing NAPQI toxicity",
     "Chronic alcohol blocks renal excretion of water",
     "Chronic alcohol converts acetaminophen into vitamin C",
     "Chronic alcohol inhibits all hepatic blood vessels"
    ],
    "answer": 0,
-   "explain": "Chronic alcohol consumption upregulates CYP2E1 and can deplete hepatic GSH stores, increasing susceptibility to NAPQI-mediated liver damage even at doses closer to the upper therapeutic range.",
+   "explain": "Chronic alcohol consumption upregulates CYP2E1 and can deplete hepatic GSH stores, increasing susceptibility to NAPQI-mediated liver damage even at doses closer to the upper therapeutic range. Key detail: Chronic ethanol induces CYP2E1 (increasing NAPQI formation) and often accompanies poor nutrition/glutathione depletion, whereas acute ethanol can temporarily compete for CYP2E1.",
    "verified": false,
    "open": {
     "q": "Which hepatic zone (centrilobular Zone III, periportal Zone I, or midzonal Zone II) is classically most susceptible to acetaminophen and carbon tetrachloride hepatotoxicity due to high CYP450 activity and lower oxygen tension?",
@@ -1238,13 +1238,13 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "How does carbon tetrachloride (CCl4) cause liver injury?",
    "options": [
-    "CYP450 reduces/homolytically cleaves CCl4 to a trichloromethyl free radical (.CCl3) and trichloromethylperoxy radical (.CCl3O2), triggering massive lipid peroxidation and endoplasmic reticulum/membrane damage",
+    "CYP450 forms trichloromethyl radicals that initiate hepatic lipid peroxidation",
     "Directly inhibits pancreatic lipase without affecting hepatocytes",
     "Binds permanently to hemoglobin A1c",
     "Causes hyperkalemia without liver involvement"
    ],
    "answer": 0,
-   "explain": "Carbon tetrachloride is bioactivated by hepatic CYP450 into reactive free radicals (.CCl3) that initiate severe lipid peroxidation, block VLDL secretion (causing fatty liver), and cause centrilobular necrosis.",
+   "explain": "Carbon tetrachloride is bioactivated by hepatic CYP450 into reactive free radicals (.CCl3) that initiate severe lipid peroxidation, block VLDL secretion (causing fatty liver), and cause centrilobular necrosis. Key detail: CYP450 reduces/homolytically cleaves CCl4 to a trichloromethyl free radical (.CCl3) and trichloromethylperoxy radical (.CCl3O2), triggering massive lipid peroxidation and endoplasmic reticulum/membrane damage.",
    "verified": false,
    "open": {
     "q": "Name the reactive free radical formed from carbon tetrachloride (CCl4) by cytochrome P450 that drives lipid peroxidation in hepatocytes.",
@@ -1310,13 +1310,13 @@
    "sub": "Heavy Metals and Chelation Biochemistry",
    "q": "What is the physiological role of metallothionein in heavy metal homeostasis and detoxification?",
    "options": [
-    "A small cysteine-rich metal-binding protein induced by metals (such as zinc, copper, and cadmium) whose numerous sulfhydryl (-SH) groups sequester metal ions",
+    "Metallothionein is a cysteine-rich protein that sequesters essential and toxic metals",
     "A plasma protease that digests heavy metals",
     "A mitochondrial enzyme that converts mercury into gold",
     "A lipid transporter in chylomicrons"
    ],
    "answer": 0,
-   "explain": "Metallothionein contains ~30% cysteine residues that coordinate essential metals (Zn, Cu) and sequester toxic metals (Cd, Hg), helping regulate intracellular metal availability and buffer toxicity.",
+   "explain": "Metallothionein contains ~30% cysteine residues that coordinate essential metals (Zn, Cu) and sequester toxic metals (Cd, Hg), helping regulate intracellular metal availability and buffer toxicity. Key detail: A small cysteine-rich metal-binding protein induced by metals (such as zinc, copper, and cadmium) whose numerous sulfhydryl (-SH) groups sequester metal ions.",
    "verified": false,
    "open": {
     "q": "Name the low-molecular-weight, cysteine-rich intracellular protein that binds and sequesters heavy metals such as zinc, copper, and cadmium.",
@@ -1332,13 +1332,13 @@
    "sub": "Overview of Xenobiotics and Biotransformation",
    "q": "What is the 'first-pass effect' (first-pass hepatic metabolism) for an orally administered xenobiotic or drug?",
    "options": [
-    "Metabolism of a substance absorbed from the gastrointestinal tract by the intestinal wall and liver via the portal vein before it reaches systemic arterial circulation, reducing oral bioavailability",
+    "Gut-wall and hepatic metabolism before systemic entry reduces oral bioavailability",
     "Excretion of a drug through sweat before absorption",
     "Binding of a drug to plasma albumin in the radial artery",
     "Conversion of a drug into a solid crystal in the stomach"
    ],
    "answer": 0,
-   "explain": "Orally absorbed compounds pass through enterocytes and the portal venous system to the liver before entering systemic circulation; extensive first-pass metabolism lowers oral bioavailability (requiring higher oral doses than IV doses or alternative routes like sublingual/transdermal).",
+   "explain": "Orally absorbed compounds pass through enterocytes and the portal venous system to the liver before entering systemic circulation; extensive first-pass metabolism lowers oral bioavailability (requiring higher oral doses than IV doses or alternative routes like sublingual/transdermal). Key detail: Metabolism of a substance absorbed from the gastrointestinal tract by the intestinal wall and liver via the portal vein before it reaches systemic arterial circulation, reducing oral bioavailability.",
    "verified": false,
    "open": {
     "q": "What term describes the metabolism of an orally absorbed drug by the gut wall and liver before it reaches systemic circulation?",
