@@ -21,10 +21,10 @@
       '<p class="lede">Practice questions with explanations, and live quiz rounds for the hall. Topics follow the MDCN curriculum, and every question you study here can be added to the bank.</p></header>' +
       (DX.streakHtml ? DX.streakHtml() : '') +
       '<section class="cards">' +
-      '<article class="card"><h2>Practice</h2><p>' + totalQ + ' questions across ' + doneTopics + ' topics. Study mode explains each answer as you go. Exam mode saves the marks for the end.</p><a class="btn primary" href="#practice" style="text-decoration:none">Start practising</a></article>' +
+      '<article class="card"><h2>Practice</h2><p>' + (DX.loadingQuestions ? 'Loading the question bank…' : totalQ + ' questions across ' + doneTopics + ' topics.') + ' Study mode explains each answer as you go. Exam mode saves the marks for the end.</p><a class="btn primary" href="#practice" style="text-decoration:none">Start practising</a></article>' +
       '<article class="card"><h2>Hall mode</h2><p>One screen, a quizmaster and teams. Rapid fire, a question board, everyone-answers rounds, describe-it and explain-it.</p><a class="btn" href="#hall" style="text-decoration:none">Open hall mode</a></article>' +
       '</section>' +
-      '<section class="section"><h2>Curriculum coverage</h2><p class="muted">' + doneTopics + ' of ' + totalTopics + ' MDCN topics have questions so far. The rest are waiting to be filled as you study.</p><div class="cov">' + cov + '</div></section>' +
+      '<section class="section"><h2>Curriculum coverage</h2><p class="muted">' + (DX.loadingQuestions ? 'Loading question coverage…' : doneTopics + ' of ' + totalTopics + ' MDCN topics have questions so far. The rest are waiting to be filled as you study.') + '</p><div class="cov">' + cov + '</div></section>' +
       '</div>';
     homeExtras();
   }
@@ -90,6 +90,7 @@
       }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Features and visitors: choose what students see, and check who is using DxDrill</a></p>' : "") + '</div>';
   }
   var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
+  var DATA_PAGES = { practice: 1, hall: 1, cards: 1, spotter: 1 };
   function navVisibility() {
     var F = DX.features, polls = document.querySelector('[data-nav="polls"]'), play = document.querySelector('[data-nav="play"]');
     if (polls) polls.hidden = !F.on("polls");
@@ -157,6 +158,11 @@
       document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === (PLAY[h] || h)) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
       app.innerHTML = '<div class="wrap stack"><h1>Coming soon</h1><p class="lede">This is not open yet. Check back soon.</p><a class="btn primary" href="#home" style="text-decoration:none">Back home</a></div>';
       navVisibility(); return;
+    }
+    if (DX.loadingQuestions && DATA_PAGES[h]) {
+      current = null;
+      app.innerHTML = '<div class="wrap stack"><p class="lede" role="status"><i class="spin"></i>Loading the question bank…</p><p class="muted">The homepage is ready. This activity will open as soon as its questions finish loading.</p></div>';
+      return;
     }
     navVisibility();
     current = routes[h]; backBar(h); pagePing(h);
@@ -257,7 +263,7 @@
       if (DX.toast) DX.toast("All questions loaded.");
       var h = (location.hash || "#home").slice(1);
       if (h === "home" || h === "") route();
-      else if (h === "practice" && DX.practice && DX.practice.reset) { DX.practice.reset(); route(); }
+      else if (DATA_PAGES[h]) { if (h === "practice" && DX.practice && DX.practice.reset) DX.practice.reset(); route(); }
     };
     /* Pages that need the account check wait for it; everything else shows at once. */
     var CLOUDY = { screen: 1, remote: 1, board: 1, account: 1, polls: 1, feedback: 1, live: 1, debates: 1, competitions: 1, features: 1 };
