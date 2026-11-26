@@ -1,49 +1,50 @@
-# True/False bank quality audit — initial pass
+# True/False bank quality audit — follow-up pass
 
 Date: 2026-11-26  
-Scope: the original nine-stem `tf-sample` file and the first two expansion batches.
+Scope: the original nine-stem sample file, the 36-stem expansion and two exception-worded examples.
 
-## Editorial review of the original nine stems
+## Original sample bank: explanation repair
 
-The nine original stems cover radial nerve, ulnar nerve, scaphoid, right lung, juxtaglomerular apparatus, loop of Henle, GFR/clearance, thermoregulation and skeletal muscle histology.
+A follow-up inspection found that multiple explanations in the original nine stems had been copied across unrelated statements. This was a substantive quality defect, not merely a style issue. All explanations in the nine original stems have now been rewritten to match their individual statements, including radial and ulnar nerve anatomy, scaphoid blood supply, right lung features, juxtaglomerular apparatus, loop of Henle, GFR/clearance, thermoregulation and skeletal muscle histology.
 
-- No obvious answer-key reversal was found in this first editorial pass.
-- Explanations were rewritten to give the anatomical or physiological mechanism and, where useful, a clinical implication or important qualification.
-- The creatinine statement is now explicitly qualified: creatinine is filtered and not meaningfully reabsorbed, but a small amount is secreted, so creatinine clearance slightly overestimates GFR.
-- The GFR value is described as an approximate teaching value, not a universal fixed normal.
-- All nine retain `verified: false`. Editorial review is not the same as independent source verification.
+The answer keys were retained during this explanation repair. The content remains unverified against named external references; an editorial correction is not independent source verification.
 
-## First expansion batch
+## Bank composition
 
-Added 36 draft stems in the expansion file (16 in the first batch plus 20 in the second batch), across the covered topics:
-- Anatomical position and terminology
-- Upper limb
-- Cell physiology and membrane transport
-- Muscle physiology
-- Fluid compartments
-- Enzymes and bioenergetics
-- Carbohydrate metabolism
-- Amino acids and proteins
+The bank now contains 47 stems:
+- 9 original sample stems.
+- 36 expansion stems from the first two batches.
+- 2 additional exception-worded examples.
 
-Every new stem is explicitly marked `verified: false` and `reviewStatus: "draft-unverified"`. These are a structured expansion draft, not yet cleared as medically verified student content. They must be checked against the course's preferred textbooks and/or authoritative references before being promoted to verified status.
+The 47 stems span 17 curriculum topics. The two new examples demonstrate both common examination instructions:
+- “All the following statements are true except…”
+- “All the following statements are false except…”
 
-## Quality rules to apply to every future stem
+**Important format rule:** these are still True/False stem questions. Students judge each numbered statement True or False individually. The exception wording describes the expected pattern across the set; it does not change the interaction into a single-select A/B/C/D question.
 
-1. Each stem should contain 4–5 independently judgeable statements.
-2. Each statement must have one defensible True/False key under the stated context.
-3. Avoid absolutes unless the absolute is genuinely correct.
-4. Include necessary qualifiers for age, physiological state, anatomical variation, measurement method and clinical context.
-5. Distractors should test a meaningful misconception, not a trick in wording.
-6. Explanations should teach the mechanism and correct the misconception.
-7. Keep source attribution and verification status separate from editorial review.
-8. Do not set `verified: true` until the answer key and explanations have been checked against a named authoritative source.
+## Presentation and analytics
 
-## Structural validation
+- Stem heading is visually stronger and separated from the topic/instruction line.
+- The instruction line explicitly reminds students to mark each statement True or False.
+- Topic analytics use shorter display labels for selected long topic names while retaining the original curriculum topic IDs and names.
+- The analytics count is labelled “statements answered”, not “attempts”. It counts answered individual statements, not stems; blank/skipped statements do not add to this count.
 
-The combined bank currently contains 45 stems across 17 curriculum topics. Automated checks on the branch found 45 unique IDs, valid topic references, 4–5 statements per stem, mixed True/False keys in every stem, non-empty explanations, and both files registered in the manifest. No structural issues were reported.
+## Quality and verification status
+
+All content remains explicitly unverified. The newly added examples and the earlier expansion are drafts pending independent checking against named authoritative textbooks or references. Do not promote any stem to `verified: true` until its key and explanation have been source-checked.
+
+## Structural checks to run
+
+- Unique stem IDs.
+- Every topic ID exists in the curriculum.
+- Each stem contains 4–5 independently judgeable statements.
+- Each stem includes both True and False keys.
+- Every statement has a non-empty explanation.
+- Both question files are registered in the manifest.
+- Exception-worded stems have the intended key pattern (exactly one exception).
 
 ## Remaining work
 
-- Independently verify each statement in the original and expansion files.
-- Expand coverage across the remaining Anatomy, Physiology and Medical Biochemistry curriculum topics.
-- Add automated schema, duplicate-ID, mixed-key, explanation-length and topic-reference checks to the bank validation workflow.
+- Independently source-verify all 47 stems.
+- Expand coverage across remaining Anatomy, Physiology and Medical Biochemistry topics.
+- Add automated schema and exception-pattern validation to the bank validation workflow.
