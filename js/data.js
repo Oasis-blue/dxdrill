@@ -142,11 +142,19 @@ window.DX = window.DX || {};
           });
         }).catch(function (e) { console.warn("Could not load terms file", e.message); }); });
       });
-      /* Open the app after at most 10 seconds even if some files are still coming; the rest keep loading and the page refreshes when they arrive. */
-      DX.partial = false;
-      var all = pool(jobs, 6).then(function () { if (DX.partial) { DX.partial = false; if (DX.onMore) DX.onMore(); } });
-      var early = new Promise(function (res) { setTimeout(function () { DX.partial = true; res(); }, 10000); });
-      return Promise.race([all, early]);
+      /* Let the app shell open as soon as the curriculum and manifest are ready.
+         The question and term files continue loading in the background. Pages that
+         need the bank wait for DX.loadingQuestions to become false. */
+      DX.loadingQuestions = true;
+      DX.questionsReady = false;
+      DX.partial = true;
+      pool(jobs, 6).then(function () {
+        DX.loadingQuestions = false;
+        DX.questionsReady = true;
+        DX.partial = false;
+        if (DX.onMore) DX.onMore();
+      });
+      return;
     });
   };
 
