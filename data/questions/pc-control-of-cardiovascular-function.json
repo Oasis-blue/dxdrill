@@ -309,12 +309,12 @@
    "q": "What is the primary (direct) cardiac chronotropic effect of isolated carotid body chemoreceptor stimulation when ventilation is held constant (apnea), versus the secondary effect when hyperventilation is allowed?",
    "options": [
     "Primary effect is tachycardia; secondary effect with hyperventilation is bradycardia",
-    "Primary direct effect is vagal bradycardia (seen in the diving reflex), whereas secondary pulmonary stretch receptor activation during hyperventilation produces tachycardia",
+    "Direct carotid chemoreceptor stimulation causes vagal bradycardia; lung inflation can add tachycardia",
     "Both primary and secondary effects cause complete cardiac arrest",
     "Carotid body stimulation has no effect on heart rate under any condition"
    ],
    "answer": 1,
-   "explain": "Direct carotid chemoreceptor firing excites vagal cardioinhibitory neurons (bradycardia, conserving O2 during breath-holding/diving), but in spontaneously breathing subjects, lung inflation stretch receptors inhibit vagal tone to cause net tachycardia.",
+   "explain": "Direct carotid chemoreceptor firing excites vagal cardioinhibitory neurons (bradycardia, conserving O2 during breath-holding/diving), but in spontaneously breathing subjects, lung inflation stretch receptors inhibit vagal tone to cause net tachycardia. Key detail: Primary direct effect is vagal bradycardia (seen in the diving reflex), whereas secondary pulmonary stretch receptor activation during hyperventilation produces tachycardia.",
    "verified": false,
    "open": {
     "q": "Contrast the direct heart rate response to carotid body chemoreceptor stimulation during apnea versus when hyperventilation occurs.",
@@ -355,12 +355,12 @@
    "q": "How is orthostatic (postural) hypotension clinically defined, and what autonomic defect commonly underlies neurogenic orthostatic hypotension?",
    "options": [
     "A rise in systolic BP of 30 mmHg upon lying down; caused by excess aldosterone",
-    "A sustained drop in systolic BP of at least 20 mmHg or diastolic BP of at least 10 mmHg within 3 minutes of standing, caused by impaired sympathetic vasoconstrictor or baroreceptor reflex compensation",
+    "Fall ≥20 systolic or ≥10 diastolic within 3 min; often impaired sympathetic/baroreflex compensation",
     "A drop in heart rate below 40 bpm during exercise; caused by hyperthyroidism",
     "A rise in diastolic BP of 15 mmHg after eating; caused by insulin deficiency"
    ],
    "answer": 1,
-   "explain": "Normally, standing pools ~500 mL of blood in lower-body veins, which is rapidly compensated by baroreceptor-mediated alpha-1 vasoconstriction and tachycardia; failure of this reflex (e.g., diabetic autonomic neuropathy, alpha-blockers, hypovolemia) drops systolic BP by >=20 mmHg or diastolic BP by >=10 mmHg.",
+   "explain": "Normally, standing pools ~500 mL of blood in lower-body veins, which is rapidly compensated by baroreceptor-mediated alpha-1 vasoconstriction and tachycardia; failure of this reflex (e.g., diabetic autonomic neuropathy, alpha-blockers, hypovolemia) drops systolic BP by >=20 mmHg or diastolic BP by >=10 mmHg. Key detail: A sustained drop in systolic BP of at least 20 mmHg or diastolic BP of at least 10 mmHg within 3 minutes of standing, caused by impaired sympathetic vasoconstrictor or baroreceptor reflex compensation.",
    "verified": false,
    "open": {
     "q": "State the blood pressure criteria defining orthostatic hypotension within 3 minutes of standing.",
@@ -379,11 +379,11 @@
    "options": [
     "Beta-1 receptors on the SA node and D1 receptors in the brain",
     "AT1 receptors in the adrenal cortex and M2 receptors in the heart",
-    "V1 receptors (Gq/IP3) on vascular smooth muscle causing potent vasoconstriction, and V2 receptors (Gs/cAMP) on renal collecting duct principal cells inserting aquaporin-2 water channels",
+    "V1 (Gq/IP3): vasoconstriction; V2 (Gs/cAMP): AQP2 insertion in collecting ducts",
     "Alpha-2 receptors on platelets and H2 receptors in the stomach"
    ],
    "answer": 2,
-   "explain": "Released from the posterior pituitary in response to hyperosmolarity or severe hypovolemia/hypotension (>10% volume loss), ADH acts via V1 receptors to raise TPR and V2 receptors to conserve free water.",
+   "explain": "Released from the posterior pituitary in response to hyperosmolarity or severe hypovolemia/hypotension (>10% volume loss), ADH acts via V1 receptors to raise TPR and V2 receptors to conserve free water. Key detail: V1 receptors (Gq/IP3) on vascular smooth muscle causing potent vasoconstriction, and V2 receptors (Gs/cAMP) on renal collecting duct principal cells inserting aquaporin-2 water channels.",
    "verified": false,
    "open": {
     "q": "Contrast the receptor subtypes, second messengers, and physiological actions of vasopressin (ADH) on blood vessels versus renal collecting ducts.",
@@ -403,10 +403,10 @@
     "Atrial hypoxia; used to diagnose pulmonary embolism exclusively",
     "Carotid sinus compression; used to diagnose essential hypertension",
     "Systemic dehydration; used to assess glomerular filtration rate",
-    "Ventricular myocardial wall stretch from volume or pressure overload; elevated plasma BNP/NT-proBNP serves as a diagnostic biomarker for congestive heart failure"
+    "Ventricular wall stretch releases BNP; plasma BNP/NT-proBNP supports heart-failure diagnosis"
    ],
    "answer": 3,
-   "explain": "Ventricular myocytes synthesize and secrete BNP when stretched by high end-diastolic volume/pressure, promoting natriuresis, vasodilation, and RAAS suppression; elevated BNP distinguishes cardiogenic dyspnea (heart failure) from primary lung disease.",
+   "explain": "Ventricular myocytes synthesize and secrete BNP when stretched by high end-diastolic volume/pressure, promoting natriuresis, vasodilation, and RAAS suppression; elevated BNP distinguishes cardiogenic dyspnea (heart failure) from primary lung disease. Key detail: Ventricular myocardial wall stretch from volume or pressure overload; elevated plasma BNP/NT-proBNP serves as a diagnostic biomarker for congestive heart failure.",
    "verified": false,
    "open": {
     "q": "What mechanical stimulus releases B-type natriuretic peptide (BNP) from the heart, and what is its major clinical diagnostic utility?",
@@ -423,13 +423,13 @@
    "sub": "Hormonal Control of Cardiovascular Function",
    "q": "Why do patients taking angiotensin-converting enzyme (ACE) inhibitors (such as lisinopril or enalapril) sometimes develop a persistent dry cough or angioedema?",
    "options": [
-    "ACE is identical to kininase II, so inhibiting ACE prevents breakdown of bradykinin, leading to bradykinin accumulation in bronchial mucosa and blood vessels",
+    "ACE inhibition raises bradykinin, causing cough and angioedema",
     "ACE inhibitors stimulate excessive renin and angiotensin II production",
     "ACE inhibitors directly activate bronchial muscarinic M3 receptors",
     "ACE inhibitors cause severe hypercalcemia and bronchospasm"
    ],
    "answer": 0,
-   "explain": "In addition to converting angiotensin I to angiotensin II, ACE degrades vasodilatory inflammatory peptides including bradykinin and substance P; elevated bradykinin sensitizes airway C-fibers (dry cough) and increases vascular permeability (angioedema).",
+   "explain": "In addition to converting angiotensin I to angiotensin II, ACE degrades vasodilatory inflammatory peptides including bradykinin and substance P; elevated bradykinin sensitizes airway C-fibers (dry cough) and increases vascular permeability (angioedema). Key detail: ACE is identical to kininase II, so inhibiting ACE prevents breakdown of bradykinin, leading to bradykinin accumulation in bronchial mucosa and blood vessels.",
    "verified": false,
    "open": {
     "q": "Explain the biochemical mechanism responsible for the dry cough side effect of ACE inhibitors.",
@@ -495,10 +495,10 @@
     "Renal and splanchnic blood flows triple while skeletal muscle flow drops",
     "Cerebral blood flow increases fourfold while coronary flow falls",
     "All vascular beds receive the exact same percentage of cardiac output as at rest",
-    "Skeletal muscle (up to ~80-85% of CO), coronary, and cutaneous blood flows increase markedly, whereas splanchnic and renal blood flows decrease via alpha-1 sympathetic vasoconstriction"
+    "Exercise increases muscle/coronary/skin flow and reduces renal/splanchnic flow; cerebral flow is maintained"
    ],
    "answer": 3,
-   "explain": "Sympathetic alpha-1 vasoconstriction shunts blood away from temporarily non-essential splanchnic and renal beds (~20-25% of CO at rest down to ~3-5% during maximal exercise) toward active skeletal muscles, myocardium, and skin (for heat dissipation), while cerebral blood flow remains constant (~750 mL/min).",
+   "explain": "Sympathetic alpha-1 vasoconstriction shunts blood away from temporarily non-essential splanchnic and renal beds (~20-25% of CO at rest down to ~3-5% during maximal exercise) toward active skeletal muscles, myocardium, and skin (for heat dissipation), while cerebral blood flow remains constant (~750 mL/min). Key detail: Skeletal muscle (up to ~80-85% of CO), coronary, and cutaneous blood flows increase markedly, whereas splanchnic and renal blood flows decrease via alpha-1 sympathetic vasoconstriction.",
    "verified": false,
    "open": {
     "q": "How does blood flow distribution to skeletal muscle, heart, brain, and splanchnic/renal organs change during strenuous aerobic exercise?",
@@ -539,12 +539,12 @@
    "q": "Why does preferential sympathetic alpha-1 vasoconstriction during hemorrhagic shock spare the cerebral and coronary circulations?",
    "options": [
     "Brain and heart blood vessels secrete aldosterone to block norepinephrine",
-    "Cerebral and coronary arterioles have sparse alpha-1 adrenergic receptor density and are governed predominantly by powerful local metabolic autoregulation",
+    "Low α1 influence and strong local metabolic autoregulation preserve brain and heart perfusion",
     "Sympathetic nerves do not enter the thorax or cranium",
     "Blood flows backward from veins into arteries in the heart and brain"
    ],
    "answer": 1,
-   "explain": "Low alpha-1 receptor expression combined with dominant metabolic autoregulation preserves vital perfusion to the brain and myocardium while skin, gut, and kidneys undergo intense vasoconstriction.",
+   "explain": "Low alpha-1 receptor expression combined with dominant metabolic autoregulation preserves vital perfusion to the brain and myocardium while skin, gut, and kidneys undergo intense vasoconstriction. Key detail: Cerebral and coronary arterioles have sparse alpha-1 adrenergic receptor density and are governed predominantly by powerful local metabolic autoregulation.",
    "verified": false,
    "open": {
     "q": "Why are cerebral and coronary blood flows preserved during the intense sympathetic vasoconstrictor response to hemorrhagic shock?",
@@ -655,11 +655,11 @@
    "options": [
     "Beta-blockers stimulate the adrenal tumor to double its size",
     "Alpha-blockers directly inhibit catechol-O-methyltransferase",
-    "Blocking beta-2 vasodilatory receptors first leaves alpha-1 vasoconstriction completely unopposed, precipitating a life-threatening hypertensive crisis and acute pulmonary edema",
+    "Beta-blockade first removes β2 vasodilation, leaving α1 vasoconstriction unopposed",
     "Phenoxybenzamine increases vagal tone to the adrenal medulla"
    ],
    "answer": 2,
-   "explain": "In catecholamine excess (epinephrine/norepinephrine), beta-2 vasodilation partially buffers alpha-1 vasoconstriction; giving a beta-blocker first removes beta-2 dilation and cardiac beta-1 output against extreme alpha-1 afterload, triggering severe hypertensive crisis.",
+   "explain": "In catecholamine excess (epinephrine/norepinephrine), beta-2 vasodilation partially buffers alpha-1 vasoconstriction; giving a beta-blocker first removes beta-2 dilation and cardiac beta-1 output against extreme alpha-1 afterload, triggering severe hypertensive crisis. Key detail: Blocking beta-2 vasodilatory receptors first leaves alpha-1 vasoconstriction completely unopposed, precipitating a life-threatening hypertensive crisis and acute pulmonary edema.",
    "verified": false,
    "open": {
     "q": "Why is initiating beta-blocker monotherapy before alpha-adrenergic blockade contraindicated in a patient with pheochromocytoma?",
