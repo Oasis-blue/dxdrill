@@ -145,7 +145,7 @@
       if (!T.run || T.run.done) { stopTimer(); return; }
       var left = Math.max(0, Math.ceil((T.run.deadline - Date.now()) / 1000));
       var node = document.getElementById("tfclock"); if (node) node.textContent = formatTime(left);
-      if (left <= 0) { T.run.items.forEach(function (it) { if (!it.checked) it.checked = true; }); finish(); paint(); }
+      if (left <= 0) { T.run.expired = true; T.run.items.forEach(function (it) { if (!it.checked) it.checked = true; }); finish(); paint(); }
     }, 500);
   }
   function stopTimer() { if (T.timer) { clearInterval(T.timer); T.timer = null; } }
@@ -181,7 +181,7 @@
       return '<article class="tfmiss"><span class="st m">Wrong · ' + esc(m.stem.q) + '</span><p class="q">' + esc(m.x.text) + '</p><p class="ans">You said <b>' + (m.p === "t" ? "True" : "False") + '</b>. The answer is <b>' + (m.x.answer ? "True" : "False") + '</b>.' + (m.x.explain ? ' ' + esc(m.x.explain) : "") + '</p></article>';
     }).join("");
     return '<div class="wrap stack"><header><p class="eyebrow">True or false · ' + (r.mode === "exam" ? "Exam marking" : "Practice marking") + '</p><h1>' + marks + ' mark' + (Math.abs(marks) === 1 ? "" : "s") + ' out of ' + total + '</h1>' +
-      '<p class="lede">' + right + ' right, ' + wrong + ' wrong, ' + skip + ' skipped' + (answered ? ' · ' + DX.pct(right, answered) + '% of the ones you answered were right' : "") + '.' + (r.mode === "exam" && wrong > right ? ' Wrong answers cost a mark each, so skip a statement when you really do not know.' : "") + '</p></header>' +
+      '<p class="lede">' + (r.timed ? (r.expired ? "Time expired · " : "Timed paper · ") : "") + right + ' right, ' + wrong + ' wrong, ' + skip + ' skipped' + (answered ? ' · ' + DX.pct(right, answered) + '% of the ones you answered were right' : "") + '.' + (r.mode === "exam" && wrong > right ? ' Wrong answers cost a mark each, so skip a statement when you really do not know.' : "") + '</p></header>' +
       '<div class="row"><button class="btn primary" data-act="again">Another run</button><button class="btn ghost" data-act="pickview">Change topics</button><a class="btn ghost" href="#play" style="text-decoration:none">Play</a></div>' +
       (rows ? '<section class="review stack"><h2>Statements you got wrong</h2>' + rows + (miss.length > 40 ? '<p class="hint">Showing the first 40.</p>' : "") + '</section>' : '<p class="lede">No wrong answers this time.</p>') + '</div>';
   }
