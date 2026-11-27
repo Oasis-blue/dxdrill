@@ -29,8 +29,9 @@ window.DX = window.DX || {};
      "gross/upper-limb-01.jpg" or "clinical/froment-sign.jpg", which lives in data/img/. An optional "credit" is shown under it. */
   DX.imgSrc = function (name) {
     name = String(name || "");
-    if (!/^[A-Za-z0-9][A-Za-z0-9._\/-]*\.(jpg|jpeg|png|webp)$/i.test(name) || name.indexOf("..") > -1 || name.indexOf("//") > -1) return "";
-    return "data/img/" + (name.indexOf("/") > -1 ? "" : "histo/") + name;
+    if (!/^[A-Za-z0-9][A-Za-z0-9._'\/-]*\.(jpg|jpeg|png|webp)$/i.test(name) || name.indexOf("..") > -1 || name.indexOf("//") > -1) return "";
+    /* Encode each segment so valid filenames containing apostrophes load reliably. */
+    return "data/img/" + (name.indexOf("/") > -1 ? "" : "histo/") + name.split("/").map(encodeURIComponent).join("/");
   };
   DX.qImg = function (q, cls) {
     var src = q && q.image ? DX.imgSrc(q.image) : ""; if (!src) return "";
