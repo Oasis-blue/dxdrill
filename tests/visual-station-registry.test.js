@@ -39,6 +39,10 @@ test("visual station registry resolves every asset and its ordered question IDs"
     const asset = assetById.get(station.assetId);
     assert.ok(asset, station.id + " must reference an existing visual asset");
     assert.ok(topicIds.has(station.topic), station.id + " must use a canonical topic ID");
+    assert.match(asset.file, /^(gross|diagrams|clinical|xray)\/[A-Za-z0-9._'/-]+\.(jpg|jpeg|png|gif|webp)$/i,
+      station.id + " image path must use an allowed folder and image extension");
+    assert.ok(!asset.file.split("/").some(part => !part || part === "." || part === ".."),
+      station.id + " image path must not contain traversal segments");
     const imagePath = path.join(root, "data/img", asset.file);
     assert.ok(fs.existsSync(imagePath),
       station.id + " image must exist in data/img");
@@ -57,6 +61,20 @@ test("visual station registry resolves every asset and its ordered question IDs"
         question.id + " must use the station's canonical topic");
       assert.equal(question.image, asset.file,
         question.id + " must use its station image");
+      assert.equal(question.alt, asset.alt,
+        question.id + " must use its asset alt text");
+      assert.equal(question.credit, asset.credit,
+        question.id + " must retain its asset attribution");
+      assert.equal(question.type, "mcq",
+        question.id + " must remain an ordinary MCQ");
+      assert.equal(question.options?.length, 4,
+        question.id + " must have exactly four options");
+      assert.ok(question.options.every(option => typeof option === "string" && option.trim()),
+        question.id + " options must be non-empty");
+      assert.ok(Number.isInteger(question.answer) && question.answer >= 0 && question.answer < 4,
+        question.id + " must have a valid zero-based answer index");
+      assert.ok(typeof question.explain === "string" && question.explain.trim(),
+        question.id + " must have a teaching explanation");
     }
   }
 
