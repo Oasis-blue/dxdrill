@@ -12,7 +12,7 @@
     ["friends", "Practice with friends", "Students can start their own small live rooms. Needs Live quiz to be open too if you want the Live page visible."]
   ];
   var SETTINGS = [["friend_max_players", "Players per friend room", 150], ["friend_active_rooms", "Friend rooms in play at once", 500], ["friend_rooms_per_day", "Rooms one student can make per day", 500]];
-  var F = { settings: null, saved: "", map: DX.store.get("dx.features", null) || FALLBACK, loaded: false, err: "", busy: false };
+  var F = { settings: null, saved: "", map: DX.store.get("dx.features", null) || FALLBACK, loaded: false, err: "", busy: false, reviewId: null };
   var app = null;
   function C() { return DX.cloud; }
   function isAdmin() { return !!(C() && C().profile && C().profile.is_admin); }
@@ -127,9 +127,28 @@
       .filter(function (x) { return x.n >= 8; }).sort(function (a, b) { return b.p - a.p; }).slice(0, 10)
       .map(function (x) { return '<tr><td>' + esc(x.k) + '</td><td class="n">' + x.n + '</td><td class="n"><b' + (x.p >= 45 ? ' style="color:var(--bad,#b3261e)"' : "") + '>' + x.p + '%</b></td></tr>'; }).join("");
     var shown = Q.flagged.slice(0, F.qualAll ? 500 : 40).map(function (x) {
-      var q = String(x.q.q || "");
-      return '<tr><td>' + esc(String(x.q.id)) + '</td><td>' + x.fl.map(function (k) { return '<span class="chip">' + esc(QLABEL[k]) + '</span>'; }).join(" ") + '</td><td>' + esc(q.length > 110 ? q.slice(0, 110) + "…" : q) + '</td></tr>';
+      var q = String(x.q.q || ""), id = String(x.q.id);
+      return '<tr><td><button type="button" class="btn ghost small" data-act="review-question" data-id="' + esc(id) + '" aria-label="Review question ' + esc(id) + '">' + esc(id) + '</button></td><td>' + x.fl.map(function (k) { return '<span class="chip">' + esc(QLABEL[k]) + '</span>'; }).join(" ") + '</td><td>' + esc(q.length > 110 ? q.slice(0, 110) + "…" : q) + '</td></tr>';
     }).join("");
+    var selected = F.reviewId && Q.flagged.find(function (x) { return String(x.q.id) === String(F.reviewId); });
+    var reviewHtml = "";
+    if (selected) {
+      var rq = selected.q, letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var optsHtml = (rq.options || []).map(function (o, i) {
+        var correct = i === rq.answer;
+        return '<li style="padding:10px 12px;margin:6px 0;border:1px solid ' + (correct ? 'var(--good,#287a45)' : 'var(--line,rgba(127,127,127,.25))') + ';border-radius:10px;' + (correct ? 'background:rgba(40,122,69,.08);' : '') + '"><b>' + letters.charAt(i) + '.</b> ' + esc(o) + (correct ? ' <span class="chip">Correct answer</span>' : '') + '</li>';
+      }).join("");
+      reviewHtml = '<div role="presentation" data-act="review-backdrop" style="position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.58);display:flex;align-items:center;justify-content:center;padding:16px;overflow:auto;">' +
+        '<section role="dialog" aria-modal="true" aria-labelledby="quality-review-title" class="card stack" style="width:min(760px,100%);max-height:90vh;overflow:auto;background:var(--surface,Canvas);color:var(--text,CanvasText);padding:20px;">' +
+        '<div class="row" style="align-items:center;justify-content:space-between;gap:12px;"><div><p class="eyebrow">Question review</p><h2 id="quality-review-title">' + esc(String(rq.id)) + '</h2></div><button type="button" class="btn ghost small" data-act="close-review" aria-label="Close question review">Close</button></div>' +
+        '<p class="hint">' + esc(rq.file || "Source file unavailable") + (rq.sub ? ' · ' + esc(rq.sub) : '') + (rq.level != null ? ' · Level ' + esc(String(rq.level)) : '') + '</p>' +
+        (rq.image && DX.qImg ? DX.qImg(rq, "review") : "") +
+        '<h3>Question</h3><p>' + esc(rq.q || "") + '</p><h3>Options</h3><ol style="list-style:none;padding:0;margin:0;">' + optsHtml + '</ol>' +
+        '<h3>Explanation</h3><p>' + esc(rq.explain || "No explanation is recorded for this question.") + '</p>' +
+        (rq.verified === false ? '<p class="note">This question is not marked as verified in the source data.</p>' : '') +
+        (rq.open && rq.open.q ? '<details><summary>Related open-ended prompt</summary><p>' + esc(rq.open.q) + '</p>' + (rq.open.accept && rq.open.accept.length ? '<p><b>Accepted answers:</b> ' + esc(rq.open.accept.join("; ")) + '</p>' : '') + '</details>' : '') +
+        '<div class="row tight"><button type="button" class="btn primary" data-act="close-review">Done</button></div></section></div>';
+    }
     return '<section class="section stack"><h2>Question quality check</h2>' +
       '<p class="hint">Checks every loaded multiple-choice question for patterns that can make an answer easy to guess. It runs in this browser; nothing is sent anywhere. Treat flags as review prompts, not proof that a question is wrong.</p>' +
       '<p>The correct option is the <b>longest</b> in <b>' + pct + '%</b> of ' + Q.tot + ' eligible questions. With four evenly written options that would be about 25%; a higher rate may indicate a pattern worth reviewing.</p>' +
@@ -137,7 +156,7 @@
       '<h3>' + Q.flagged.length + ' question' + (Q.flagged.length === 1 ? "" : "s") + ' to review</h3>' +
       (Q.flagged.length ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Id</th><th>Why</th><th>Question</th></tr></thead><tbody>' + shown + '</tbody></table></div>' +
         '<div class="row tight">' + (Q.flagged.length > 40 && !F.qualAll ? '<button class="btn ghost small" data-act="qualall">Show more</button>' : "") + '<button class="btn ghost small" data-act="copyflag">Copy the ids</button></div>' : '<p class="muted">Nothing flagged in the loaded questions.</p>') +
-      (Q.tfBad ? '<p class="note bad">' + Q.tfBad + ' true/false stem' + (Q.tfBad === 1 ? ' has' : 's have') + ' only true or only false statements. Review their balance.</p>' : "") + '</section>';
+      (Q.tfBad ? '<p class="note bad">' + Q.tfBad + ' true/false stem' + (Q.tfBad === 1 ? ' has' : 's have') + ' only true or only false statements. Review their balance.</p>' : "") + reviewHtml + '</section>';
   }
   function pagesHtml(list) {
     if (list === null || list === undefined) return '<p class="hint">Run supabase/update-17.sql to see which pages people open.</p>';
@@ -179,6 +198,9 @@
         .catch(function () { F.busy = false; F.err = "That did not save. Run supabase/update-10.sql first, then try again."; repaint(); });
       return;
     }
+    var reviewBtn = e.target.closest ? e.target.closest("[data-act='review-question']") : null;
+    if (reviewBtn) { F.reviewId = reviewBtn.getAttribute("data-id"); repaint(); return; }
+    if (e.target.closest && (e.target.closest("[data-act='close-review']") || e.target.closest("[data-act='review-backdrop']") === e.target)) { F.reviewId = null; repaint(); return; }
     if (e.target.closest && e.target.closest("[data-act='qualall']")) { F.qualAll = true; repaint(); return; }
     var cf = e.target.closest ? e.target.closest("[data-act='copyflag']") : null;
     if (cf && F.qual) {
@@ -200,4 +222,7 @@
       F.busy = false; F.err = /schema cache|does not exist|site_features|admin_set_feature/i.test((er && er.message) || "") ? "Run supabase/update-9.sql in Supabase first." : "That did not save. Try again."; repaint();
     });
   }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && F.reviewId) { F.reviewId = null; repaint(); }
+  });
 })();
