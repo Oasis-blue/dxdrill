@@ -7,12 +7,12 @@
    "sub": "Nervous system organization",
    "q": "Which anatomical division of the nervous system comprises the brain and spinal cord?",
    "options": [
-    "Central nervous system",
     "Peripheral nervous system",
     "Somatic nervous system",
+    "Central nervous system",
     "Enteric nervous system"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "The central nervous system (CNS) consists of the brain and spinal cord, whereas the peripheral nervous system (PNS) consists of cranial nerves, spinal nerves, peripheral branches, and ganglia outside the CNS.",
    "open": {
     "q": "Which division of the nervous system consists of the brain and spinal cord?",
@@ -29,10 +29,10 @@
    "sub": "Nervous system organization",
    "q": "How many pairs of spinal nerves typically emerge from the human spinal cord?",
    "options": [
-    "12 pairs",
+    "33 pairs",
     "31 pairs",
-    "24 pairs",
-    "33 pairs"
+    "12 pairs",
+    "24 pairs"
    ],
    "answer": 1,
    "explain": "There are 31 pairs of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal. There are 12 pairs of cranial nerves.",
@@ -53,11 +53,11 @@
    "q": "Which root of a spinal nerve carries predominantly afferent (sensory) axons into the spinal cord?",
    "options": [
     "Ventral root",
-    "Anterior ramus",
     "Dorsal root",
+    "Anterior ramus",
     "Gray ramus communicans"
    ],
-   "answer": 2,
+   "answer": 1,
    "explain": "The dorsal (posterior) root carries afferent sensory fibers from peripheral receptors into the spinal cord, with cell bodies located in the dorsal root ganglion. The ventral (anterior) root carries efferent motor fibers.",
    "open": {
     "q": "Which root of a spinal nerve conducts sensory impulses toward the spinal cord?",
@@ -74,12 +74,12 @@
    "sub": "Spinal nerves and roots",
    "q": "Where are the cell bodies of somatic and visceral afferent neurons of a spinal nerve typically located?",
    "options": [
+    "Dorsal root ganglion",
     "Ventral horn of the spinal cord",
-    "Sympathetic chain ganglion",
     "Prevertebral ganglion",
-    "Dorsal root ganglion"
+    "Sympathetic chain ganglion"
    ],
-   "answer": 3,
+   "answer": 0,
    "explain": "Pseudounipolar sensory neuron cell bodies reside in the dorsal (posterior) root ganglion along the dorsal root of each spinal nerve. Motor cell bodies for skeletal muscle lie in the ventral horn of the spinal cord.",
    "open": {
     "q": "Where are the cell bodies of sensory neurons entering a spinal nerve located?",
@@ -96,12 +96,12 @@
    "sub": "Rami and plexuses",
    "q": "Why do thoracic spinal nerves (T2 to T11) generally run independently as intercostal nerves rather than forming limb plexuses?",
    "options": [
-    "Anterior rami remain segmental to supply the trunk wall",
-    "They lack dorsal roots and sensory fibres",
-    "They end in the sympathetic trunk",
-    "They fuse into one trunk before exiting the vertebral canal"
+    "Their roots fuse into one trunk before leaving the vertebral canal",
+    "Their anterior rami join the sympathetic trunk instead of leaving as peripheral nerves",
+    "Their anterior rami stay segmental, each supplying its own band of trunk wall",
+    "Their posterior rami carry all the motor fibres to the trunk, leaving nothing to exchange"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Anterior rami of C5 to T1 form the brachial plexus and L1 to S4 form the lumbar and sacral plexuses for the limbs, whereas most thoracic anterior rami stay segmental as intercostal/subcostal nerves supplying the trunk wall.",
    "open": {
     "q": "Why do most thoracic spinal nerves remain segmental instead of forming plexuses like cervical, lumbar, and sacral nerves?",
@@ -119,10 +119,10 @@
    "sub": "Rami and plexuses",
    "q": "What is a nerve plexus formed by the anterior rami of spinal nerves?",
    "options": [
-    "Postganglionic sympathetic fibres within an artery wall",
-    "A nerve network redistributing fibres from several spinal levels into peripheral nerves",
-    "A sheath around a nerve fascicle",
-    "A sensory receptor capsule in deep fascia"
+    "A cluster of sympathetic cell bodies lying beside the vertebral column",
+    "A network that regroups fibres from several spinal levels into named nerves",
+    "A connective tissue sheath that binds several fascicles into one nerve",
+    "A bundle of sensory axons that stays confined to a single spinal segment"
    ],
    "answer": 1,
    "explain": "A somatic nerve plexus (such as the cervical, brachial, lumbar, or sacral plexus) is a network where anterior rami exchange fibers so individual peripheral nerves receive axons from more than one spinal cord segment.",
@@ -142,12 +142,12 @@
    "sub": "Autonomic nervous system",
    "q": "From which spinal cord levels do preganglionic sympathetic cell bodies primarily originate in the intermediolateral cell column?",
    "options": [
-    "C1 to C4",
-    "S2 to S4",
     "T1 to L2",
-    "L5 to S5"
+    "S2 to S4",
+    "L3 to S1",
+    "C5 to T1"
    ],
-   "answer": 2,
+   "answer": 0,
    "explain": "The sympathetic outflow is thoracolumbar, arising from preganglionic sympathetic neurons in the lateral horn (intermediolateral column) of spinal segments T1 through L2 (or L3). Craniosacral outflow provides parasympathetic innervation.",
    "open": {
     "q": "From which spinal cord segments does the preganglionic sympathetic outflow originate?",
@@ -165,9 +165,9 @@
    "sub": "Autonomic nervous system",
    "q": "Which cranial nerve carries the largest share of parasympathetic preganglionic fibers to thoracic and most abdominal viscera?",
    "options": [
-    "Accessory nerve (CN XI)",
-    "Hypoglossal nerve (CN XII)",
-    "Trigeminal nerve (CN V)",
+    "Glossopharyngeal nerve (CN IX)",
+    "Facial nerve (CN VII)",
+    "Oculomotor nerve (CN III)",
     "Vagus nerve (CN X)"
    ],
    "answer": 3,
@@ -188,12 +188,12 @@
    "sub": "Autonomic nervous system",
    "q": "Why do postganglionic sympathetic fibers reach sweat glands, arrector pili muscles, and skin blood vessels throughout the body wall and limbs?",
    "options": [
-    "Gray rami return postganglionic sympathetic fibres to spinal nerves",
-    "Parasympathetic ganglia lie inside every sweat gland",
-    "Somatic sensory fibres become sympathetic in skin",
-    "Sympathetic fibres travel only inside arteries"
+    "Ventral roots deliver them to spinal nerves directly from the lateral horn",
+    "Cranial nerves distribute them to the body wall and limbs",
+    "Gray rami communicantes return them from the sympathetic chain to every spinal nerve",
+    "White rami communicantes carry them from the chain back to the spinal nerves"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Postganglionic sympathetic fibers leave sympathetic ganglia via gray rami communicantes to join spinal nerves and travel along their branches to effectors in the body wall and limbs. White rami communicantes carry myelinated preganglionic fibers from T1 to L2 into the sympathetic chain.",
    "open": {
     "q": "How do postganglionic sympathetic fibers enter spinal nerves to reach effectors in the body wall and limbs?",
@@ -211,11 +211,11 @@
    "q": "A patient has a lesion involving the cervical sympathetic trunk on the right side and presents with ptosis, miosis, and anhidrosis on the right face. Which syndrome does this triad describe?",
    "options": [
     "Cauda equina syndrome",
+    "Ramsay Hunt syndrome",
     "Horner syndrome",
-    "Brown-Sequard syndrome",
-    "Carpal tunnel syndrome"
+    "Brown-Sequard syndrome"
    ],
-   "answer": 1,
+   "answer": 2,
    "explain": "Interruption of the oculosympathetic pathway produces Horner syndrome, classically characterized by miosis (constricted pupil), partial ptosis (drooping upper eyelid), and facial anhidrosis (loss of sweating) on the affected side.",
    "open": {
     "q": "What syndrome is characterized by ipsilateral ptosis, miosis, and facial anhidrosis after sympathetic pathway interruption?",
@@ -232,12 +232,12 @@
    "sub": "Structure of blood vessels",
    "q": "Which layer of a blood vessel wall is the innermost lining composed of endothelium and a subendothelial layer?",
    "options": [
-    "Tunica media",
     "Tunica adventitia",
     "Tunica intima",
-    "Vasa vasorum"
+    "Vasa vasorum",
+    "Tunica media"
    ],
-   "answer": 2,
+   "answer": 1,
    "explain": "The tunica intima is the innermost layer of arteries and veins, consisting of simple squamous endothelium and delicate subendothelial connective tissue. The tunica media is the middle smooth muscle/elastic layer, and the tunica adventitia is the outer connective tissue layer.",
    "open": {
     "q": "What is the innermost endothelial layer of a blood vessel called?",
@@ -254,12 +254,12 @@
    "sub": "Structure of blood vessels",
    "q": "How does the tunica media of an elastic (conducting) artery such as the aorta differ from that of a muscular (distributing) artery?",
    "options": [
-    "A single layer of flattened cells",
-    "Elastic lamellae allow stretch and recoil with the pulse",
-    "Numerous valves prevent backflow",
-    "No smooth muscle or connective tissue"
+    "More elastic lamellae, allowing stretch and recoil with each pulse",
+    "Fewer cell layers, because pressure is lower in conducting arteries",
+    "Little elastic tissue, because dense collagen stiffens the wall instead",
+    "Mostly smooth muscle, allowing active control of regional blood flow"
    ],
-   "answer": 1,
+   "answer": 0,
    "explain": "Large elastic arteries have abundant elastic lamellae in the tunica media that expand during ventricular systole and recoil in diastole to maintain continuous blood flow and diastolic pressure. Muscular arteries have proportionally more smooth muscle for regulating flow to specific regions.",
    "open": {
     "q": "What prominent structural feature in the tunica media of elastic arteries helps maintain pressure during diastole?",
@@ -277,10 +277,10 @@
    "sub": "Structure of blood vessels",
    "q": "What are the small blood vessels located in the adventitia and outer media of large blood vessels that nourish the vessel wall itself?",
    "options": [
+    "Vasa nervorum",
     "Arteriovenous anastomoses",
-    "Sinusoids",
     "Vasa vasorum",
-    "Lacteals"
+    "Sinusoids"
    ],
    "answer": 2,
    "explain": "Vasa vasorum (vessels of the vessel) are tiny arteries and veins supplying oxygen and nutrients to the outer walls of large arteries and veins whose thickness exceeds simple diffusion from the lumen.",
@@ -298,10 +298,10 @@
    "sub": "Arteries and veins",
    "q": "Which structural feature is typically present in medium-sized veins of the limbs to assist unidirectional blood flow toward the heart against gravity?",
    "options": [
-    "Thick concentric elastic membranes",
-    "High-pressure muscular sphincters",
-    "Fenestrated sinusoidal endothelia",
-    "Intraluminal bicuspid valves"
+    "A continuous layer of fenestrated endothelium",
+    "A well-developed internal elastic lamina",
+    "A thick tunica media of tightly packed circular smooth muscle",
+    "Paired folds of the tunica intima forming valve cusps"
    ],
    "answer": 3,
    "explain": "Many medium-sized veins, especially in the limbs, possess folds of tunica intima forming valves (usually bicuspid) that prevent retrograde flow and support venous return during muscle contraction. Arteries generally lack valves except at the aortic and pulmonary roots.",
@@ -320,12 +320,12 @@
    "sub": "Arteries and veins",
    "q": "Why are veins generally thinner-walled and more distensible than companion arteries of similar caliber?",
    "options": [
-    "Thin tunica media with less muscle and elastic tissue; lower pressure",
-    "Higher systolic pressure than the aorta",
-    "No tunica intima or adventitia",
-    "Normally calcified walls"
+    "Valves that carry the pressure load, so the wall can be thin",
+    "A thinner tunica media with less muscle and elastic tissue",
+    "A media with more elastic lamellae, which lets the wall stretch further",
+    "A missing adventitia, so the wall has only two layers"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Veins operate at lower pressure and have a thinner tunica media with less elastic tissue and smooth muscle than arteries, making them more compliant and able to hold a large proportion of total blood volume.",
    "open": {
     "q": "Why are veins more compliant and thinner-walled than arteries of comparable size?",
@@ -343,12 +343,12 @@
    "sub": "Capillaries and anastomoses",
    "q": "At which microscopic vessels does exchange of gases, nutrients, and metabolic waste occur between blood and interstitial fluid?",
    "options": [
-    "Elastic arteries",
-    "Capillaries",
-    "Venae cavae",
-    "Conducting veins"
+    "Muscular arteries",
+    "Arterioles",
+    "Large veins",
+    "Capillaries"
    ],
-   "answer": 1,
+   "answer": 3,
    "explain": "Capillaries consist essentially of a single layer of endothelial cells (and basement membrane), providing a thin barrier and vast surface area for diffusion and filtration between blood and tissues.",
    "open": {
     "q": "Which blood vessels serve as the primary site of nutrient, gas, and waste exchange with tissues?",
@@ -365,12 +365,12 @@
    "sub": "Capillaries and anastomoses",
    "q": "What is an arterial anastomosis?",
    "options": [
-    "A valve inside a deep limb vein",
-    "A direct communication between branches of two or more arteries",
-    "A lymphatic trunk emptying into the thoracic duct",
-    "A bundle of sympathetic axons along a nerve"
+    "A connection between two veins draining the same region",
+    "A branch of an artery that ends blindly within one tissue territory",
+    "A communication between branches of two or more arteries",
+    "A direct connection between an arteriole and a venule"
    ],
-   "answer": 1,
+   "answer": 2,
    "explain": "An anastomosis is a connection between vessels; an arterial anastomosis links branches of different arteries to provide collateral pathways and equalize pressure around joints or organs. End arteries lack sufficient anastomoses to sustain tissue if occluded.",
    "open": {
     "q": "What is an arterial anastomosis?",
@@ -388,10 +388,10 @@
    "sub": "Capillaries and anastomoses",
    "q": "Why does occlusion of a true (anatomical) end artery typically result in tissue ischemia or necrosis of the supplied territory?",
    "options": [
-    "Lymphatics take over arterial perfusion",
-    "Few collateral arteries exist beyond the obstruction",
-    "Venous blood reverses through capillaries",
-    "End arteries regenerate within minutes"
+    "End arteries lack a tunica media, so they cannot dilate to compensate",
+    "Few collateral channels exist beyond the point of obstruction",
+    "Collateral vessels are present but constrict when the main artery blocks",
+    "Venous blood flows backwards through the capillaries and floods the tissue"
    ],
    "answer": 1,
    "explain": "True end arteries (such as the central artery of the retina) lack adequate collateral anastomoses with neighboring arteries, so blockage cuts off perfusion to their target tissue and can cause infarction or blindness.",
@@ -411,12 +411,12 @@
    "sub": "Capillaries and anastomoses",
    "q": "A patient has gradual narrowing of a major limb artery, yet distal perfusion is partially preserved through smaller vessels bypassing the stenosis around the joint. What are these alternative channels called?",
    "options": [
-    "Vasa nervorum",
-    "Portal veins",
+    "Perforating veins",
     "Collateral circulation",
-    "Thoracic duct tributaries"
+    "Arteriovenous shunts",
+    "Vasa vasorum"
    ],
-   "answer": 2,
+   "answer": 1,
    "explain": "Collateral circulation consists of preexisting or newly recruited anastomotic vessels that bypass an obstructed artery to maintain blood flow to distal tissues. Around joints, rich arterial anastomoses help preserve circulation during limb flexion.",
    "open": {
     "q": "What term describes alternative anastomotic blood pathways that bypass a narrowed or blocked artery?",
@@ -434,12 +434,12 @@
    "sub": "Capillaries and anastomoses",
    "q": "What is a direct vascular connection between an arteriole and a venule that bypasses the intervening capillary bed?",
    "options": [
-    "True end artery",
-    "Portal system",
+    "Arteriovenous anastomosis",
     "Vasa vasorum",
-    "Arteriovenous anastomosis (shunt)"
+    "Portal system",
+    "True end artery"
    ],
-   "answer": 3,
+   "answer": 0,
    "explain": "An arteriovenous anastomosis (AV shunt) links a small artery/arteriole directly to a vein/venule without passing through capillaries, playing roles in thermoregulation (such as in skin of digits) and local blood flow regulation.",
    "open": {
     "q": "What is a direct vessel connection between an arteriole and a venule that bypasses capillaries?",
@@ -457,12 +457,12 @@
    "sub": "Neurovascular bundles",
    "q": "In limbs and body walls, which structures commonly travel together within a common connective tissue sheath as a neurovascular bundle?",
    "options": [
-    "Artery, vein, and nerve",
-    "Tendon, bursa, and articular cartilage",
-    "Epidermis, dermis, and sebaceous gland",
-    "Suture, fontanelle, and periosteum"
+    "Artery, nerve and lymph node",
+    "Artery, vein and nerve",
+    "Artery, vein and tendon",
+    "Vein, nerve and synovial sheath"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "A neurovascular bundle typically contains an artery, one or more accompanying veins, and a nerve running together along a protected fascial plane or intermuscular groove. Knowing their arrangement helps surgeons avoid injury during dissection.",
    "open": {
     "q": "Which three main structures commonly run together in a neurovascular bundle?",
@@ -479,12 +479,12 @@
    "sub": "Neurovascular bundles",
    "q": "Why are venae comitantes (paired veins flanking a deep artery in the limbs) helpful for venous return?",
    "options": [
-    "They release vasodilators into arteries",
+    "They have no valves, so blood drains freely by gravity",
+    "They drain lymph from the limb as well as blood",
     "Arterial pulsation and muscle contraction help propel venous blood",
-    "They carry arterial blood to digits",
-    "They prevent venous valves from closing"
+    "They contain more smooth muscle than other veins and pump actively"
    ],
-   "answer": 1,
+   "answer": 2,
    "explain": "Venae comitantes run closely alongside deep arteries (especially in limbs), where arterial pulsations and adjacent skeletal muscle contraction assist venous return past one-way venous valves.",
    "open": {
     "q": "How do venae comitantes running beside a deep limb artery assist venous return?",
@@ -502,12 +502,12 @@
    "sub": "Lymphatic vessels",
    "q": "Which major lymphatic vessel collects lymph from the lower limbs, abdomen, left thorax, left upper limb, and left side of the head and neck?",
    "options": [
-    "Right lymphatic duct",
-    "Portal vein",
     "Thoracic duct",
-    "Azygos vein"
+    "Right lymphatic duct",
+    "Left subclavian trunk",
+    "Left jugular trunk"
    ],
-   "answer": 2,
+   "answer": 0,
    "explain": "The thoracic duct is the largest lymphatic channel in the body, draining lymph from below the diaphragm plus the left half of the thorax, left arm, and left head/neck into the systemic venous system near the left brachiocephalic/internal jugular-subclavian junction.",
    "open": {
     "q": "Which main lymphatic vessel drains lymph from the lower body and the left side of the upper body into the venous system?",
@@ -523,12 +523,12 @@
    "sub": "Lymphatic vessels",
    "q": "Why do lymphatic capillaries have a more permeable endothelial lining and anchoring filaments than typical blood capillaries?",
    "options": [
-    "They pump red cells at arterial pressure",
-    "They return interstitial fluid, proteins and debris to blood",
-    "They filter urine before the ureter",
-    "They store glycogen and triglycerides"
+    "They carry oxygenated blood at low pressure into the venules",
+    "They absorb nutrients from tissue fluid for storage in lymph nodes",
+    "They take up fluid, large proteins and debris that blood capillaries cannot reabsorb",
+    "They form a tight barrier that keeps interstitial fluid out of lymph"
    ],
-   "answer": 1,
+   "answer": 2,
    "explain": "Lymphatic capillaries have overlapping endothelial junctions and anchoring filaments that open when interstitial fluid pressure rises, allowing uptake of excess tissue fluid, proteins, and particulate matter to form lymph.",
    "open": {
     "q": "What functional advantage does the permeable wall of lymphatic capillaries provide?",
@@ -546,12 +546,12 @@
    "sub": "Lymphatic vessels",
    "q": "A patient undergoes axillary lymph node dissection for breast cancer and later develops persistent swelling of the ipsilateral upper limb. Which mechanism accounts for this swelling?",
    "options": [
-    "Subclavian artery occlusion",
-    "Excess synovial fluid in muscles",
-    "Impaired lymph drainage causes protein-rich oedema",
-    "Overactive eccrine glands"
+    "Subclavian vein thrombosis raising venous pressure",
+    "Brachial plexus injury paralysing the limb muscles",
+    "Arterial hyperaemia from loss of sympathetic tone",
+    "Impaired lymph drainage leaves protein-rich fluid in the tissues"
    ],
-   "answer": 2,
+   "answer": 3,
    "explain": "Removal or disruption of regional lymph nodes and lymphatic channels impairs clearance of interstitial fluid and proteins, leading to fluid retention in the subcutaneous tissue known as lymphedema.",
    "open": {
     "q": "What mechanism explains persistent arm swelling after axillary lymph node clearance?",
@@ -570,12 +570,12 @@
    "sub": "Structure of peripheral nerves",
    "q": "What is the outermost connective tissue sheath surrounding an entire peripheral nerve?",
    "options": [
-    "Endoneurium",
-    "Perineurium",
+    "Mesoneurium",
     "Epineurium",
-    "Mesoneurium"
+    "Perineurium",
+    "Endoneurium"
    ],
-   "answer": 2,
+   "answer": 1,
    "explain": "The epineurium is the outermost dense connective tissue sheath binding the fascicles of a peripheral nerve together.",
    "verified": false,
    "open": {
@@ -593,12 +593,12 @@
    "sub": "Structure of peripheral nerves",
    "q": "Which nerve sheath surrounds a single fascicle and forms the blood-nerve barrier?",
    "options": [
-    "Epineurium",
     "Perineurium",
     "Endoneurium",
-    "Adventitia"
+    "Mesoneurium",
+    "Epineurium"
    ],
-   "answer": 1,
+   "answer": 0,
    "explain": "The perineurium surrounds each fascicle and its tight junctions form the blood-nerve barrier.",
    "verified": false,
    "open": {
@@ -616,12 +616,12 @@
    "sub": "Structure of peripheral nerves",
    "q": "What is the delicate connective tissue surrounding each individual nerve fibre called?",
    "options": [
-    "Endoneurium",
-    "Perineurium",
     "Epineurium",
-    "Perichondrium"
+    "Neurilemma",
+    "Endoneurium",
+    "Perineurium"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "The endoneurium is the delicate connective tissue around individual axons and their Schwann cells.",
    "verified": false,
    "open": {
@@ -639,12 +639,12 @@
    "sub": "Neurons and nerve fibres",
    "q": "Which type of nerve fibre is most heavily myelinated and conducts fastest?",
    "options": [
-    "A-alpha fibres",
-    "A-delta fibres",
     "C fibres",
-    "B fibres"
+    "B fibres",
+    "A-delta fibres",
+    "A-alpha fibres"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "A-alpha fibres are the largest, most heavily myelinated fibres and conduct at the highest velocity.",
    "verified": false,
    "open": {
@@ -664,8 +664,8 @@
    "q": "Which nerve fibre type carries slow, burning pain and is unmyelinated?",
    "options": [
     "A-alpha",
-    "A-beta",
     "A-delta",
+    "A-beta",
     "C fibres"
    ],
    "answer": 3,
@@ -687,12 +687,12 @@
    "sub": "Neurons and nerve fibres",
    "q": "What is the general name for the junction between an autonomic nerve fibre and its effector cell?",
    "options": [
-    "Synapse",
-    "Neuromuscular junction",
     "Neuroeffector junction",
-    "Motor end plate"
+    "Motor end plate",
+    "Neuromuscular junction",
+    "Synapse"
    ],
-   "answer": 2,
+   "answer": 0,
    "explain": "A neuroeffector junction is the junction between an autonomic nerve fibre and its effector (smooth muscle, cardiac muscle, or gland).",
    "verified": false,
    "open": {
@@ -711,12 +711,12 @@
    "sub": "Classification of nerves",
    "q": "Which cranial nerves are purely sensory?",
    "options": [
-    "Olfactory, optic and vestibulocochlear",
     "Oculomotor, trochlear and abducens",
+    "Vagus, accessory and hypoglossal",
     "Trigeminal, facial and glossopharyngeal",
-    "Vagus, accessory and hypoglossal"
+    "Olfactory, optic and vestibulocochlear"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "CN I (olfactory), CN II (optic) and CN VIII (vestibulocochlear) are purely sensory nerves.",
    "verified": false,
    "open": {
@@ -736,11 +736,11 @@
    "q": "Which neurotransmitter is released by all postganglionic parasympathetic fibres?",
    "options": [
     "Noradrenaline",
-    "Acetylcholine",
+    "Adrenaline",
     "Dopamine",
-    "Adrenaline"
+    "Acetylcholine"
    ],
-   "answer": 1,
+   "answer": 3,
    "explain": "Postganglionic parasympathetic fibres release acetylcholine; they are cholinergic.",
    "verified": false,
    "open": {
@@ -758,12 +758,12 @@
    "sub": "Arteries",
    "q": "Which vessels are the main site of peripheral resistance in the circulation?",
    "options": [
-    "Elastic arteries",
-    "Arterioles",
     "Capillaries",
-    "Venules"
+    "Venules",
+    "Elastic arteries",
+    "Arterioles"
    ],
-   "answer": 1,
+   "answer": 3,
    "explain": "Arterioles have relatively thick smooth muscle and are the main resistance vessels that regulate blood flow and pressure.",
    "verified": false,
    "open": {
@@ -781,12 +781,12 @@
    "sub": "Capillaries",
    "q": "Which type of capillary is found in endocrine glands and the intestine and has fenestrations?",
    "options": [
-    "Continuous capillary",
     "Fenestrated capillary",
-    "Sinusoidal capillary",
-    "Postcapillary venule"
+    "Continuous capillary",
+    "Postcapillary venule",
+    "Sinusoidal capillary"
    ],
-   "answer": 1,
+   "answer": 0,
    "explain": "Fenestrated capillaries have pores that permit rapid exchange of fluids and small molecules, as in endocrine glands and the intestine.",
    "verified": false,
    "open": {
@@ -804,12 +804,12 @@
    "sub": "Capillaries",
    "q": "Which type of capillary is found in the liver, spleen and bone marrow and has large gaps between endothelial cells?",
    "options": [
-    "Continuous",
-    "Fenestrated",
     "Sinusoidal",
-    "Arteriovenous"
+    "Continuous",
+    "Arteriovenous",
+    "Fenestrated"
    ],
-   "answer": 2,
+   "answer": 0,
    "explain": "Sinusoidal capillaries have large gaps and a discontinuous basal lamina, allowing cells and large molecules to pass.",
    "verified": false,
    "open": {
@@ -830,8 +830,8 @@
    "options": [
     "Axillary nerve",
     "Radial nerve",
-    "Median nerve",
-    "Ulnar nerve"
+    "Ulnar nerve",
+    "Median nerve"
    ],
    "answer": 0,
    "explain": "The axillary nerve supplies the deltoid and the skin over the lateral shoulder; injury causes sensory loss and weak abduction.",
@@ -851,12 +851,12 @@
    "sub": "Clinical correlations",
    "q": "What is the clinical term for reduced blood flow to a tissue that can lead to cell death?",
    "options": [
-    "Ischaemia",
     "Hyperaemia",
+    "Thrombosis",
     "Oedema",
-    "Thrombosis"
+    "Ischaemia"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Ischaemia is reduced blood flow to a tissue, which can cause hypoxia and cell death if prolonged.",
    "verified": false,
    "open": {
@@ -875,12 +875,12 @@
    "sub": "Neurons and nerve fibres",
    "q": "Which nerve fibre type carries touch and pressure and is myelinated but slower than A-alpha?",
    "options": [
+    "B fibres",
     "A-beta fibres",
-    "A-delta fibres",
     "C fibres",
-    "B fibres"
+    "A-delta fibres"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "A-beta fibres are large myelinated fibres that carry touch and pressure at moderate velocity.",
    "verified": false,
    "open": {
@@ -899,12 +899,12 @@
    "sub": "Neurons and nerve fibres",
    "q": "Which nerve fibre type is thinly myelinated and carries fast, sharp pain and temperature?",
    "options": [
-    "A-alpha",
+    "C fibres",
     "A-beta",
-    "A-delta",
-    "C fibres"
+    "A-alpha",
+    "A-delta"
    ],
-   "answer": 2,
+   "answer": 3,
    "explain": "A-delta fibres are thinly myelinated and carry fast, sharp, well-localized pain and temperature.",
    "verified": false,
    "open": {
@@ -923,12 +923,12 @@
    "sub": "Neuromuscular junction",
    "q": "Which neurotransmitter is released at the neuromuscular junction to excite skeletal muscle?",
    "options": [
-    "Noradrenaline",
     "Acetylcholine",
     "Dopamine",
+    "Noradrenaline",
     "GABA"
    ],
-   "answer": 1,
+   "answer": 0,
    "explain": "Acetylcholine released from the somatic motor nerve terminal binds nicotinic receptors on the motor end plate to excite skeletal muscle.",
    "verified": false,
    "open": {
@@ -947,9 +947,9 @@
    "q": "What is the name of the specialized region of the skeletal muscle fibre membrane that receives the nerve terminal?",
    "options": [
     "Motor end plate",
-    "Sarcolemma",
     "Sarcoplasmic reticulum",
-    "T-tubule"
+    "T-tubule",
+    "Sarcolemma"
    ],
    "answer": 0,
    "explain": "The motor end plate is the specialized postsynaptic sarcolemma region rich in nicotinic acetylcholine receptors.",
@@ -969,12 +969,12 @@
    "sub": "Classification of nerves",
    "q": "Which cranial nerve is purely motor and supplies the tongue?",
    "options": [
-    "Hypoglossal nerve (CN XII)",
     "Vagus nerve (CN X)",
     "Trigeminal nerve (CN V)",
+    "Hypoglossal nerve (CN XII)",
     "Facial nerve (CN VII)"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "The hypoglossal nerve (CN XII) is purely motor and supplies the intrinsic and extrinsic tongue muscles.",
    "verified": false,
    "open": {
@@ -995,11 +995,11 @@
    "q": "Which cranial nerve carries both motor fibres to the muscles of mastication and sensory fibres from the face?",
    "options": [
     "Facial nerve (CN VII)",
-    "Trigeminal nerve (CN V)",
+    "Accessory nerve (CN XI)",
     "Glossopharyngeal nerve (CN IX)",
-    "Accessory nerve (CN XI)"
+    "Trigeminal nerve (CN V)"
    ],
-   "answer": 1,
+   "answer": 3,
    "explain": "The trigeminal nerve (CN V) is mixed: its motor root supplies muscles of mastication, and its sensory root supplies the face.",
    "verified": false,
    "open": {
@@ -1019,12 +1019,12 @@
    "sub": "Autonomic nervous system",
    "q": "What is the main difference between white and gray rami communicantes?",
    "options": [
-    "White rami carry myelinated preganglionic fibres; gray rami unmyelinated postganglionic fibres",
-    "White rami carry venous blood; gray rami arterial blood",
-    "White rami occur only below L2; gray only above T1",
-    "White rami are sensory; gray rami are motor"
+    "White rami are present at every spinal level; gray rami only at T1 to L2",
+    "White rami carry myelinated preganglionic fibres; gray rami carry unmyelinated postganglionic fibres",
+    "White rami carry unmyelinated postganglionic fibres; gray rami carry myelinated preganglionic fibres",
+    "White rami carry sensory fibres to the cord; gray rami carry motor fibres from it"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "White rami communicantes contain myelinated preganglionic sympathetic fibres (T1 to L2), while gray rami communicantes contain unmyelinated postganglionic fibres joining spinal nerves at all levels.",
    "verified": false,
    "open": {
@@ -1043,12 +1043,12 @@
    "sub": "Autonomic nervous system",
    "q": "What is the difference between paravertebral and prevertebral sympathetic ganglia?",
    "options": [
-    "Paravertebral ganglia lie beside the vertebral column; prevertebral ganglia lie anterior to the aorta",
-    "Paravertebral ganglia are in the brainstem; prevertebral in spinal cord",
-    "Paravertebral ganglia are parasympathetic; prevertebral sympathetic",
-    "Paravertebral ganglia are sensory; prevertebral motor"
+    "Paravertebral ganglia receive only white rami; prevertebral ganglia receive only gray rami",
+    "Paravertebral ganglia form the chain beside the vertebral column; prevertebral ganglia lie in front of the aorta",
+    "Paravertebral ganglia contain parasympathetic neurons; prevertebral ganglia contain sympathetic neurons",
+    "Paravertebral ganglia lie in front of the aorta; prevertebral ganglia form the chain beside the vertebrae"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Paravertebral ganglia form the sympathetic chain alongside the vertebral column, while prevertebral (preaortic) ganglia lie anterior to the aorta and supply abdominal viscera.",
    "verified": false,
    "open": {
@@ -1067,12 +1067,12 @@
    "sub": "Autonomic nervous system",
    "q": "Which of these is a parasympathetic ganglion located near the target organ in the head?",
    "options": [
-    "Ciliary ganglion",
     "Superior cervical ganglion",
+    "Stellate ganglion",
     "Coeliac ganglion",
-    "Stellate ganglion"
+    "Ciliary ganglion"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "The ciliary ganglion is a parasympathetic ganglion supplying the sphincter pupillae and ciliary muscle; the others are sympathetic ganglia.",
    "verified": false,
    "open": {
@@ -1090,12 +1090,12 @@
    "sub": "Autonomic nervous system",
    "q": "Which part of the nervous system forms the intrinsic nerve plexuses of the gastrointestinal tract?",
    "options": [
-    "Enteric nervous system",
+    "Pelvic splanchnic nerves",
     "Somatic nervous system",
-    "Sympathetic chain",
-    "Vagus nerve only"
+    "Enteric nervous system",
+    "Sympathetic chain"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "The enteric nervous system consists of the myenteric (Auerbach) and submucosal (Meissner) plexuses that control gastrointestinal motility and secretion.",
    "verified": false,
    "open": {
@@ -1114,12 +1114,12 @@
    "sub": "Structure of blood vessels",
    "q": "What is the main function of the tunica adventitia of a blood vessel?",
    "options": [
-    "Anchoring the vessel to surrounding tissues",
-    "Producing red blood cells",
-    "Secreting digestive enzymes",
-    "Filtering lymph"
+    "Secreting vasoactive substances that relax the vessel",
+    "Regulating lumen diameter by contraction of smooth muscle",
+    "Anchoring the vessel to its surroundings and housing the vasa vasorum",
+    "Providing the elastic recoil that maintains pressure in diastole"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "The tunica adventitia is the outer connective tissue layer that anchors vessels to surrounding tissues and contains vasa vasorum and nerves.",
    "verified": false,
    "open": {
@@ -1138,12 +1138,12 @@
    "sub": "Arteries",
    "q": "What is the main function of muscular (distributing) arteries?",
    "options": [
-    "Regulating organ blood flow by vasoconstriction and vasodilation",
-    "Smoothing pulsatile cardiac output",
-    "Exchanging gases in tissues",
-    "Storing blood at low pressure"
+    "Smoothing the pulsatile output of the heart between beats",
+    "Regulating regional blood flow by vasoconstriction and vasodilation",
+    "Providing the main resistance that sets arterial blood pressure",
+    "Storing large volumes of blood at low pressure"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Muscular arteries have a thick tunica media of smooth muscle that regulates blood flow distribution to specific organs and regions.",
    "verified": false,
    "open": {
@@ -1162,12 +1162,12 @@
    "sub": "Veins",
    "q": "What is the difference between superficial and deep veins of the limbs?",
    "options": [
-    "Superficial veins are subcutaneous; deep veins accompany arteries",
-    "Superficial veins carry arterial blood; deep veins venous blood",
-    "Only superficial veins have valves",
-    "Superficial veins run with nerves; deep veins with tendons"
+    "Superficial veins accompany the major arteries; deep veins lie in the subcutaneous tissue",
+    "Superficial veins drain the muscles, whereas deep veins drain only the skin",
+    "Superficial veins have no valves, whereas deep veins have valves along their length",
+    "Superficial veins lie in the subcutaneous tissue; deep veins accompany the major arteries"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Superficial veins lie in the subcutaneous tissue and drain into deep veins, which run alongside major arteries within the deep fascia.",
    "verified": false,
    "open": {
@@ -1186,10 +1186,10 @@
    "sub": "Veins",
    "q": "What are perforating veins of the lower limb?",
    "options": [
-    "Veins connecting superficial and deep venous systems through fascia",
-    "Arteries supplying hair follicles",
-    "Lymphatics entering the thoracic duct",
-    "Small veins in marrow"
+    "Veins connecting the superficial and deep venous systems through the deep fascia",
+    "Veins that pierce the skin to drain into superficial lymphatics",
+    "Arteries that pierce the fascia to supply the overlying skin",
+    "Deep veins that join the two venae comitantes of one artery"
    ],
    "answer": 0,
    "explain": "Perforating veins pierce the deep fascia to connect superficial veins with deep veins, with valves normally directing blood inward.",
@@ -1210,10 +1210,10 @@
    "sub": "Veins",
    "q": "What is the portal venous system?",
    "options": [
-    "Blood passes through two capillary beds in series before returning to heart",
-    "Arteries open directly into veins",
-    "Veins drain the brain",
-    "Lymphatics drain the gut"
+    "Blood passes through two capillary beds in series before returning to the heart",
+    "Veins from the head and neck drain together into one large trunk",
+    "Arterial blood passes directly into veins, bypassing the capillaries",
+    "A single capillary bed is supplied by two separate arteries"
    ],
    "answer": 0,
    "explain": "In a portal system, blood flows through two capillary beds in series; the hepatic portal vein carries blood from gut capillaries to liver sinusoids before reaching the systemic circulation.",
@@ -1234,12 +1234,12 @@
    "sub": "Lymphatic vessels",
    "q": "What is the cisterna chyli?",
    "options": [
-    "Dilated sac at the thoracic duct origin receiving intestinal and lumbar lymph",
-    "A cervical lymph node",
-    "A thoracic-duct valve",
-    "A splenic lymphatic plexus"
+    "A dilated sac where the thoracic duct empties into the left venous angle",
+    "A lymph node group at the root of the mesentery that filters intestinal lymph",
+    "A dilated sac at the upper end of the thoracic duct that receives jugular and subclavian lymph",
+    "A dilated sac at the lower end of the thoracic duct that receives intestinal and lumbar lymph"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "The cisterna chyli is a dilated sac at the lower end of the thoracic duct that receives lymph from the intestinal and lumbar trunks.",
    "verified": false,
    "open": {
@@ -1257,12 +1257,12 @@
    "sub": "Lymphatic vessels",
    "q": "Which body regions drain into the right lymphatic duct?",
    "options": [
-    "Right head and neck, right arm and right thorax",
-    "Lower limbs and abdomen",
-    "Left arm and left thorax",
-    "Whole body except liver"
+    "Left upper limb and left side of the thorax",
+    "Lower limbs, abdomen and pelvis, but not the thorax",
+    "Whole head and neck together with both upper limbs",
+    "Right head and neck, right upper limb and right thorax"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "The right lymphatic duct drains the right side of the head and neck, the right upper limb, and the right thorax, emptying into the right venous angle.",
    "verified": false,
    "open": {
@@ -1281,12 +1281,12 @@
    "sub": "Vascular regulation",
    "q": "What is the function of baroreceptors in the carotid sinus and aortic arch?",
    "options": [
-    "Detecting arterial pressure changes and initiating reflex responses",
-    "Detecting blood oxygen",
-    "Producing red cells",
-    "Secreting digestive enzymes"
+    "Sensing venous return in the venae cavae to set the cardiac output",
+    "Sensing arterial oxygen and pH to adjust the rate and depth of breathing",
+    "Sensing arterial wall stretch to trigger reflex changes in heart rate and vessel tone",
+    "Sensing plasma osmolality to adjust release of antidiuretic hormone"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Baroreceptors in the carotid sinus and aortic arch detect stretch from blood pressure changes and trigger reflexes to adjust heart rate and vessel tone.",
    "verified": false,
    "open": {
@@ -1306,12 +1306,12 @@
    "sub": "Vascular regulation",
    "q": "What is the function of chemoreceptors in the carotid and aortic bodies?",
    "options": [
-    "Detecting blood O2, CO2 and pH",
-    "Detecting arterial pressure",
-    "Producing red cells",
-    "Filtering lymph"
+    "Detecting plasma glucose to adjust insulin release",
+    "Detecting plasma osmolality to adjust antidiuretic hormone release",
+    "Detecting stretch of the arterial wall caused by pressure changes",
+    "Detecting changes in arterial oxygen, carbon dioxide and pH"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Chemoreceptors in the carotid and aortic bodies detect changes in arterial oxygen, carbon dioxide and pH and stimulate respiratory and cardiovascular responses.",
    "verified": false,
    "open": {
@@ -1331,12 +1331,12 @@
    "sub": "Capillaries and anastomoses",
    "q": "What is the main function of arteriovenous anastomoses in the skin of the digits?",
    "options": [
-    "Thermoregulation by diverting blood away from skin surface",
-    "Increasing nutrient exchange",
-    "Producing sweat",
-    "Filtering lymph"
+    "Supplying the sweat glands with arterial blood at high pressure",
+    "Increasing nutrient exchange between blood and the epidermis",
+    "Thermoregulation, by varying how much blood bypasses the skin capillaries",
+    "Draining excess tissue fluid from the digits into lymphatics"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Arteriovenous anastomoses in the skin of digits shunt blood directly from arterioles to venules, helping regulate body temperature by controlling heat loss.",
    "verified": false,
    "open": {
@@ -1356,12 +1356,12 @@
    "sub": "Neurovascular bundles",
    "q": "Why do nerves and vessels often run together in neurovascular bundles in the limbs?",
    "options": [
-    "They follow the same fascial planes and are protected together during movement",
-    "They share the same embryonic origin from the neural crest",
-    "Nerves produce the blood vessels they supply",
-    "Vessels conduct nerve impulses along their walls"
+    "They develop from the same neural crest cells and so stay together",
+    "The nerve's perineurium joins the artery's adventitia into one sheath",
+    "They share fascial planes where they are protected together during movement",
+    "Each nerve takes its blood supply only from the artery it accompanies"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Nerves and vessels follow common fascial planes and intermuscular septa, where they are protected from compression during limb movement.",
    "verified": false,
    "open": {
@@ -1382,8 +1382,8 @@
    "options": [
     "Compartment syndrome",
     "Deep vein thrombosis",
-    "Varicose veins",
-    "Lymphedema"
+    "Lymphoedema",
+    "Varicose veins"
    ],
    "answer": 0,
    "explain": "Compartment syndrome occurs when increased pressure within a fascial compartment compromises blood flow, causing pain, swelling and eventually pulselessness and nerve damage.",
@@ -1404,9 +1404,9 @@
    "q": "What is the term for abnormally dilated, tortuous superficial veins, most commonly in the lower limb?",
    "options": [
     "Varicose veins",
-    "Aneurysm",
     "Thrombophlebitis",
-    "Arteriosclerosis"
+    "Arteriosclerosis",
+    "Aneurysm"
    ],
    "answer": 0,
    "explain": "Varicose veins are abnormally dilated and tortuous superficial veins, usually due to incompetent valves and increased venous pressure.",
@@ -1427,12 +1427,12 @@
    "sub": "Clinical correlations",
    "q": "What is the underlying cause of primary varicose veins?",
    "options": [
-    "Incompetent venous valves cause venous hypertension",
-    "Arterial occlusion",
-    "Lymphatic obstruction",
-    "Excess erythrocyte production"
+    "Obstruction of the deep veins by an old thrombus that has not recanalised",
+    "Increased arterial inflow through arteriovenous fistulae",
+    "Incompetent valves and a weak wall allow reflux and venous hypertension",
+    "Failure of lymphatic drainage with protein-rich fluid build-up"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Primary varicose veins result from incompetent valves in superficial or perforating veins, causing blood pooling and venous hypertension.",
    "verified": false,
    "open": {
@@ -1452,12 +1452,12 @@
    "sub": "Vascular pathology",
    "q": "What is arteriosclerosis?",
    "options": [
-    "General thickening and hardening of arterial walls",
-    "Inflammation of veins",
-    "Dilation of an artery",
-    "Blockage of a lymphatic vessel"
+    "Lipid plaque formation limited to the tunica intima",
+    "Permanent local dilation of an arterial wall",
+    "Immune-mediated inflammation of the arterial wall",
+    "Thickening, hardening and loss of elasticity of arterial walls"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Arteriosclerosis is a general term for thickening, hardening and loss of elasticity of arterial walls.",
    "verified": false,
    "open": {
@@ -1476,12 +1476,12 @@
    "sub": "Vascular pathology",
    "q": "What is atherosclerosis?",
    "options": [
+    "Dilation of an artery wall after weakening of the media",
+    "Calcification of the media of muscular arteries without lumen narrowing",
     "Lipid-rich plaques form in the intima of medium and large arteries",
-    "Inflammation affects only the adventitia",
-    "Venous valves dilate",
-    "Calcium hardens only the tunica media"
+    "Thickening of arteriolar walls from hyaline deposits"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Atherosclerosis is a specific form of arteriosclerosis involving intimal plaques containing lipid, smooth muscle, collagen and inflammatory cells in large and medium arteries.",
    "verified": false,
    "open": {
@@ -1500,10 +1500,10 @@
    "sub": "Vascular pathology",
    "q": "A patient has an atherosclerotic plaque in the left internal carotid artery causing transient right-sided weakness. Which process is most directly responsible for the symptoms?",
    "options": [
-    "Plaque thrombosis or embolism reduces cerebral blood flow",
-    "Venous capacitance increases",
-    "Lymphatic obstruction develops",
-    "Arteriovenous shunting increases"
+    "Plaque rupture with embolisation of thrombus into the cerebral circulation",
+    "Rupture of a cerebral vein draining the motor cortex",
+    "Compression of the left internal jugular vein by the plaque",
+    "Reflex vasoconstriction of cerebral arteries triggered by the carotid baroreceptors"
    ],
    "answer": 0,
    "explain": "Atherosclerotic plaque in the carotid can rupture, causing thrombosis or embolism that obstructs cerebral blood flow, leading to transient or permanent neurological deficits.",
@@ -1525,12 +1525,12 @@
    "sub": "Vascular pathology",
    "q": "What is an aneurysm?",
    "options": [
-    "A persistent local dilation of a vessel wall",
-    "A venous clot",
-    "A lymph-filled sac",
-    "An arterial narrowing"
+    "A clot that forms inside a vein and obstructs flow",
+    "A tear in the intima that lets blood split the wall layers",
+    "A permanent localised dilation of a vessel wall, usually an artery",
+    "A localised narrowing of an artery caused by plaque"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "An aneurysm is a permanent abnormal dilation of a blood vessel wall, often due to weakness of the tunica media, and can rupture.",
    "verified": false,
    "open": {
@@ -1546,21 +1546,22 @@
    "type": "mcq",
    "level": 1,
    "sub": "Structure of blood vessels",
-   "q": "What are vasa vasorum?",
+   "q": "What are vasa nervorum?",
    "options": [
-    "Small vessels supplying the walls of larger vessels",
-    "Valves within veins",
-    "Splenic lymphatic channels",
-    "Periarterial nerve plexuses"
+    "Venous channels that drain only the dorsal root ganglia",
+    "Small vessels supplying the connective tissue sheaths of peripheral nerves",
+    "Lymphatic channels that accompany each spinal nerve",
+    "Small vessels that nourish the walls of large arteries and veins"
    ],
-   "answer": 0,
-   "explain": "Vasa vasorum are small arteries, veins and capillaries that supply the outer walls of large vessels too thick to be nourished by diffusion from the lumen.",
+   "answer": 1,
+   "explain": "Vasa nervorum are small arteries and veins running in the epineurium, perineurium and endoneurium that supply the nerve. Vasa vasorum are the equivalent vessels for the walls of large arteries and veins.",
    "verified": false,
    "open": {
-    "q": "What are the small vessels supplying the walls of large blood vessels called?",
+    "q": "What are vasa nervorum?",
     "accept": [
-     "vasa vasorum",
-     "the vasa vasorum"
+     "small vessels supplying peripheral nerves",
+     "vessels of the nerves",
+     "blood vessels that nourish nerves"
     ]
    }
   },
@@ -1571,10 +1572,10 @@
    "sub": "Structure of blood vessels",
    "q": "Why do large arteries such as the aorta require vasa vasorum?",
    "options": [
-    "Their thick walls prevent diffusion from the lumen to outer layers",
-    "They lack endothelium",
-    "They contain no smooth muscle",
-    "They carry lymph"
+    "Their walls are too thick for diffusion from the lumen to reach the outer layers",
+    "Their endothelium lacks the transporters needed to pass oxygen to the media",
+    "Their tunica intima absorbs all the oxygen before it reaches the media",
+    "Blood in the aortic lumen is too pulsatile for nutrients to cross the endothelium"
    ],
    "answer": 0,
    "explain": "The walls of large arteries are too thick for diffusion from the lumen to nourish the outer media and adventitia, so vasa vasorum supply these layers.",
@@ -1593,14 +1594,14 @@
    "type": "mcq",
    "level": 2,
    "sub": "Vascular pathology",
-   "q": "Which type of arteriosclerosis specifically affects small arteries and arterioles, commonly in hypertension and diabetes?",
+   "q": "Which pattern of vessel disease specifically affects small arteries and arterioles, commonly in hypertension and diabetes?",
    "options": [
-    "Arteriolosclerosis",
     "Atherosclerosis",
-    "Monckeberg sclerosis",
-    "Aneurysmal sclerosis"
+    "Polyarteritis nodosa",
+    "Monckeberg medial sclerosis",
+    "Arteriolosclerosis"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Arteriolosclerosis is thickening and loss of elasticity of small arteries and arterioles, typically seen in hypertension and diabetes.",
    "verified": false,
    "open": {
@@ -1618,12 +1619,12 @@
    "sub": "Vascular pathology",
    "q": "What is Monckeberg medial calcific sclerosis?",
    "options": [
-    "Calcification of arterial media without lumen narrowing",
-    "Intimal lipid plaque",
-    "Adventitial inflammation",
-    "Venous dilation"
+    "Necrotising inflammation of medium-sized arteries by immune complexes",
+    "Lipid-rich plaques in the intima with a fibrous cap",
+    "Calcification of the media of muscular arteries, usually without lumen narrowing",
+    "Hyaline thickening of arteriolar walls in hypertension and diabetes"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Monckeberg sclerosis is calcification of the tunica media of muscular arteries, usually without significant lumen narrowing or symptoms.",
    "verified": false,
    "open": {
@@ -1642,12 +1643,12 @@
    "sub": "Vascular pathology",
    "q": "Which layer of the artery is primarily affected by atherosclerosis?",
    "options": [
+    "External elastic lamina",
     "Tunica intima",
     "Tunica media",
-    "Tunica adventitia",
-    "Vasa vasorum"
+    "Tunica adventitia"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Atherosclerosis is an intimal disease, with lipid-rich plaques forming within the tunica intima.",
    "verified": false,
    "open": {
@@ -1665,12 +1666,12 @@
    "sub": "Vascular pathology",
    "q": "A patient with long-standing hypertension develops a dissecting aneurysm of the aorta. Which layer is split in this condition?",
    "options": [
-    "Tunica media",
     "Tunica intima only",
+    "Tunica media",
     "Tunica adventitia only",
-    "Endothelium only"
+    "All three layers equally"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "A dissecting aneurysm involves a tear in the intima with blood entering and splitting the tunica media, creating a false lumen.",
    "verified": false,
    "open": {
@@ -1688,12 +1689,12 @@
    "sub": "Vascular pathology",
    "q": "What is thrombophlebitis?",
    "options": [
-    "Inflammation of a vein with thrombus formation",
-    "Arterial dilation",
-    "Arterial stiffening",
-    "Lymphatic obstruction"
+    "Permanent dilation and tortuosity of superficial veins",
+    "Inflammation of a vein wall with an associated clot",
+    "Inflammation of lymphatic vessels with red streaks in the skin",
+    "Clot formation in a deep vein without any wall inflammation"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Thrombophlebitis is inflammation of a vein, often with an associated thrombus, commonly in superficial leg veins.",
    "verified": false,
    "open": {
@@ -1711,10 +1712,10 @@
    "sub": "Vascular pathology",
    "q": "What is a deep vein thrombosis (DVT) and why is it dangerous?",
    "options": [
-    "A deep-vein clot that may embolise to the lungs",
-    "A superficial clot that never embolises",
-    "A ruptured arterial plaque",
-    "A clot in the thoracic duct"
+    "A clot in a deep vein that can embolise to the pulmonary arteries",
+    "A clot in a superficial vein that is dangerous because it embolises to the lungs",
+    "A clot in a deep leg artery that causes acute limb ischaemia",
+    "A clot in the right atrium that can embolise to the lower limb"
    ],
    "answer": 0,
    "explain": "DVT is a thrombus in a deep vein, usually of the leg, which can dislodge and travel to the pulmonary arteries as a pulmonary embolism.",
@@ -1733,22 +1734,21 @@
    "type": "mcq",
    "level": 2,
    "sub": "Vascular pathology",
-   "q": "Which of Virchow's triad factors contribute to thrombosis?",
+   "q": "Which set of factors makes up Virchow's triad?",
    "options": [
+    "Endothelial injury, anaemia and thrombocytopenia",
+    "Hypertension, hyperlipidaemia and smoking",
     "Endothelial injury, abnormal blood flow and hypercoagulability",
-    "Hypertension, hypotension and hyperthermia",
-    "Anaemia, thrombocytopenia and leukopenia",
-    "Vasodilation, vasoconstriction and shunting"
+    "Abnormal blood flow, vasoconstriction and fever"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Virchow's triad comprises endothelial injury, abnormal (stasis or turbulent) blood flow and hypercoagulability, all predisposing to thrombosis.",
    "verified": false,
    "open": {
-    "q": "What three factors make up Virchow's triad for thrombosis?",
+    "q": "What are the three components of Virchow's triad?",
     "accept": [
-     "endothelial injury, abnormal flow and hypercoagulability",
-     "stasis, endothelial injury and hypercoagulability",
-     "injury, stasis and hypercoagulability"
+     "endothelial injury, abnormal blood flow and hypercoagulability",
+     "endothelial injury, stasis and hypercoagulability"
     ]
    }
   },
@@ -1759,12 +1759,12 @@
    "sub": "Vascular pathology",
    "q": "What is an embolus?",
    "options": [
-    "A travelling intravascular mass that lodges in a distant vessel",
-    "A clot fixed at its origin",
-    "A local vessel dilation",
-    "An arterial wall plaque"
+    "A localised dilation of a vessel wall caused by weakness",
+    "A detached mass that travels in the blood and lodges in a distant vessel",
+    "A lipid-rich deposit within the intima of an artery",
+    "A clot attached to the vessel wall where it formed"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "An embolus is a detached mass (thrombus, fat, air, etc.) traveling in the bloodstream that lodges in a vessel and obstructs flow.",
    "verified": false,
    "open": {
@@ -1782,12 +1782,12 @@
    "sub": "Vascular pathology",
    "q": "A patient with atrial fibrillation develops sudden occlusion of the middle cerebral artery. What is the most likely source of the embolus?",
    "options": [
-    "Mural thrombus in the left atrium or appendage",
-    "Deep leg veins",
-    "Aortic atherosclerotic plaque",
-    "Portal vein"
+    "Thrombus in the right atrial appendage",
+    "Thrombus in the left atrial appendage",
+    "Thrombus in the deep veins of the leg",
+    "Atherosclerotic plaque in the aortic arch"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Atrial fibrillation predisposes to stasis and mural thrombus formation in the left atrium or its appendage, which can embolize to the cerebral circulation.",
    "verified": false,
    "open": {
@@ -1806,12 +1806,12 @@
    "sub": "Vascular pathology",
    "q": "What is the consequence of valve incompetence in the perforating veins of the lower limb?",
    "options": [
-    "Deep-to-superficial reflux causes venous hypertension and varicosities",
-    "Superficial-to-deep flow reduces venous pressure",
-    "Lymph fails to drain from the leg",
-    "Arterial blood enters superficial veins"
+    "Arterial blood enters the superficial veins and makes them pulsatile",
+    "Deep veins empty faster, which causes deep vein thrombosis",
+    "Superficial-to-deep flow increases, lowering superficial venous pressure",
+    "Deep-to-superficial reflux raises superficial venous pressure and causes varicosities"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "When perforating vein valves fail, blood passes from deep to superficial veins during muscle contraction, raising superficial venous pressure and causing varicosities and skin changes.",
    "verified": false,
    "open": {
@@ -1829,12 +1829,12 @@
    "sub": "Spinal nerves and roots",
    "q": "A spinal nerve is examined immediately after the dorsal and ventral roots unite, but before it divides into its primary rami. Which description best characterizes this nerve?",
    "options": [
-    "Purely sensory",
-    "Purely motor",
-    "Mixed, carrying sensory and motor fibres",
-    "Autonomic only"
+    "Mixed, carrying both sensory and motor fibres",
+    "Purely motor, as the ventral root predominates",
+    "Purely autonomic, as it supplies visceral targets",
+    "Purely sensory, as the dorsal root predominates"
    ],
-   "answer": 2,
+   "answer": 0,
    "explain": "The dorsal root carries sensory afferents and the ventral root carries motor efferents. Their union forms a short mixed spinal nerve containing both sensory and motor fibres before it divides into dorsal and ventral primary rami.",
    "open": {
     "q": "What is the functional composition of a typical spinal nerve after the dorsal and ventral roots unite?",
@@ -1851,12 +1851,12 @@
    "sub": "Rami and plexuses",
    "q": "A penetrating injury damages the posterior primary ramus of a lumbar spinal nerve. Which structure is most directly at risk?",
    "options": [
-    "Intrinsic back muscles and overlying skin",
-    "Anterior abdominal wall muscles only",
-    "Lower-limb muscles supplied by the lumbosacral plexus",
-    "Viscera of the pelvic cavity only"
+    "Quadriceps femoris and the skin of the anterior thigh",
+    "Intrinsic back muscles and the skin over them",
+    "Cremaster muscle and the skin of the scrotum",
+    "Rectus abdominis and the skin of the anterior abdomen"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Posterior (dorsal) primary rami supply the intrinsic deep back muscles and the skin of the posterior trunk. The anterior (ventral) rami supply the anterolateral trunk and form the major limb plexuses.",
    "open": {
     "q": "Which muscles and skin territory are supplied by posterior primary rami of spinal nerves?",
