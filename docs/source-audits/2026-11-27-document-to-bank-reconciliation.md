@@ -76,3 +76,42 @@ The logged validation includes JSON parsing, unique question IDs within affected
 ## Audit conclusion
 
 The uploaded documents have been inventoried, deduplicated, text-extracted where possible, and used for substantial targeted question-bank expansion. The 336-page Anatomy scan has also been OCR-processed in full. **The document-ingestion project is not finished:** no source has yet passed a complete question-by-question reconciliation. The next substantive work is source-item matching and omission checking, not another untracked round of general question expansion.
+
+
+## 7. First source-level cross-check — the two GIT PDFs
+
+The two GIT uploads were checked against the current committed GIT physiology banks:
+
+- `mcq_physio GIT 1.pdf`: 10 pages of extracted text, with 37 numbered items. Repeated concepts/questions occur within the source (including repeated gastrin, GIT-hormone and secretin/CCK items), so the printed item count is not the number of unique learning points.
+- `#mcq_physio git 1,2,3 elhariry.pdf`: 11 scanned pages. A fresh page-by-page OCR pass recovered its GIT questions, but the OCR is imperfect. The later pages substantially repeat the separate GIT PDF; the scan also contains additional salivary, mastication and swallowing questions.
+
+### Existing-bank matches confirmed
+
+The current `pi-motor-functions-of-the-gi-tract.json` has 22 questions and directly covers:
+- Myenteric and submucosal plexus functions (`-003`, `-004`).
+- Secretin, CCK, GIP and gastrin regulation (`-005` to `-008`, `-010`, `-019`, `-020`).
+- VIP-mediated smooth-muscle relaxation (`-009`).
+- Swallowing, upper/lower oesophageal sphincter responses and mastication (`-011` to `-014`).
+- Salivary neural control, flow-related ionic changes and lubrication (`-015` to `-017`).
+- Segmentation, vomiting-associated reverse peristalsis and the migrating motor complex (`-018`, `-021`, `-022`).
+
+Related coverage exists in:
+- `pi-digestion-and-absorption.json` (10 questions),
+- `pi-accessory-organs.json` (9 questions), and
+- `pe-pancreas.json` (4 questions).
+
+### GIT source gaps still requiring a decision
+
+The source comparison identifies areas not directly represented, or only indirectly represented, in those banks:
+
+- Overall sympathetic/parasympathetic control of GIT activity and the specific effects of sympathetic stimulation.
+- Factors affecting lower oesophageal sphincter tone and the detailed control of gastric emptying.
+- Gastrin-releasing peptide (GRP), vagal stimulation of G cells, and the broader classification/actions of gastrointestinal hormones.
+- Somatostatin's inhibitory effects and the endocrine/paracrine/neurocrine distinctions.
+- Additional salivary physiology: conditioned reflexes, saliva composition, salivary amylase and the relative contribution of the major glands.
+- Mastication and swallowing details not yet represented directly, including trigeminal motor supply and the cranial-nerve motor sequence.
+- Selected gastrin/secretin facts (sites of secretion, transport/action, and physiological regulation) where source wording is reliable.
+
+These are **candidate gaps**, not automatic instructions to add one question for every source item. Some source items repeat one another, some OCR wording is uncertain, and several concepts may already be tested in other subject banks. New questions should be added only after checking the full candidate stem and answer for accuracy and ensuring they are not duplicates.
+
+**Disposition:** both GIT PDFs are partially reconciled; neither is complete. The duplicated upload copies are not treated as separate sources. No verbatim source questions were imported during this cross-check.
