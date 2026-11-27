@@ -19098,7 +19098,7 @@
     {
       "id": "tf-gr-breast-003",
       "type": "tf",
-      "topic": "gr-abdomen-pelvis-and-perineum",
+      "topic": "gr-thorax",
       "level": 2,
       "sub": "Breast structure, innervation and lactation",
       "q": "Regarding breast structure, innervation and lactation:",
@@ -19140,7 +19140,7 @@
     {
       "id": "tf-gr-thorax-010",
       "type": "tf",
-      "topic": "gr-abdomen-pelvis-and-perineum",
+      "topic": "gr-thorax",
       "level": 2,
       "sub": "Thoracic vessels, mediastinum and lung roots",
       "q": "Regarding thoracic vessels, mediastinum and lung roots:",
@@ -19334,9 +19334,9 @@
           "explain": "It surrounds the mesorectum and is important in total mesorectal excision."
         },
         {
-          "text": "The rectum lies posterior to the sacrum and coccyx.",
+          "text": "The sacrum and coccyx are anterior relations of the rectum.",
           "answer": false,
-          "explain": "The sacrum and coccyx are posterior relations of the rectum."
+          "explain": "The sacrum and coccyx lie posterior to the rectum, not anterior to it."
         }
       ],
       "verified": false,
@@ -19392,7 +19392,7 @@
     {
       "id": "tf-gr-thorax-011",
       "type": "tf",
-      "topic": "gr-abdomen-pelvis-and-perineum",
+      "topic": "gr-thorax",
       "level": 2,
       "sub": "Oesophageal relations and arterial supply",
       "q": "Regarding oesophageal relations and arterial supply:",
@@ -19556,6 +19556,48 @@
         "Standring S, ed. Gray's Anatomy. 42nd ed."
       ],
       "referenceScope": "Source-informed gap remediation from Bartoș et al., Anatomy MCQ: Thorax, Abdomen and Pelvis; pending academic review."
+    },
+    {
+      "id": "tf-gr-thorax-012",
+      "type": "tf",
+      "topic": "gr-thorax",
+      "level": 2,
+      "sub": "Intercostal muscle actions and attachments",
+      "q": "Regarding the actions and attachments of the intrinsic thoracic wall muscles:",
+      "items": [
+        {
+          "text": "External intercostal muscles generally elevate the ribs during inspiration.",
+          "answer": true,
+          "explain": "The external intercostals assist inspiration by elevating the ribs."
+        },
+        {
+          "text": "The interosseous part of the internal intercostal muscles generally assists forced expiration by depressing the ribs.",
+          "answer": true,
+          "explain": "The interosseous fibres of internal intercostals are expiratory; the interchondral part can assist rib elevation."
+        },
+        {
+          "text": "The interchondral part of the internal intercostal muscles may assist inspiration by elevating the ribs.",
+          "answer": true,
+          "explain": "The parasternal/interchondral fibres can elevate the ribs, contrasting with the expiratory interosseous portion."
+        },
+        {
+          "text": "Transversus thoracis arises from the posterior sternum and xiphoid and inserts on costal cartilages, usually 2–6.",
+          "answer": true,
+          "explain": "It runs superolaterally from the posterior lower sternum/xiphoid to the internal surfaces of costal cartilages, commonly 2–6."
+        },
+        {
+          "text": "Transversus thoracis is a powerful muscle of inspiration that elevates the sternum.",
+          "answer": false,
+          "explain": "It is a weak expiratory muscle that may depress the costal cartilages."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy. 9th ed.",
+        "Standring S, ed. Gray's Anatomy. 42nd ed."
+      ],
+      "referenceScope": "Targeted completion of partially covered Thoracic Wall source objectives (Chapter 1); pending academic review."
     }
   ]
 }
