@@ -503,3 +503,18 @@ Five original MCQs were added to each of three existing curriculum topic banks a
 Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
 
 **Cumulative source-reconciliation additions: 283 original questions** (268 previously recorded plus these 15).
+
+
+## Respiratory histology, respiratory mechanics and inborn errors of metabolism — 27 November 2026
+
+Five original MCQs were added to each of three existing curriculum topic banks after checking the canonical topic registry and existing stems:
+
+**Anatomy / Histology — respiratory system (14 → 19; topic ID: `sh-respiratory-system`):** blood–air barrier layers, club cells, tracheal cartilage, conducting-airway histological transitions and pulmonary capillary networks.
+
+**Physiology — mechanics of breathing (32 → 37; topic ID: `pr-mechanics-of-breathing`):** reduced elastic recoil in emphysema, surfactant deficiency and compliance, alveolar ventilation calculation, airway resistance in asthma and pressure changes during inspiration.
+
+**Medical Biochemistry — inborn errors of metabolism (45 → 50; topic ID: `bc-inborn-errors-of-metabolism`):** pyridoxine-responsive homocystinuria, nitrogen-scavenging therapy in urea-cycle disorders, fasting prevention in MCAD deficiency, dietary management of galactosaemia and enzyme replacement in Fabry disease.
+
+Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 298 original questions** (283 previously recorded plus these 15).
