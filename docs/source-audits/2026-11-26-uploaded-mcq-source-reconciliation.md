@@ -413,3 +413,18 @@ Five original MCQs were added to each of three topic banks:
 The three files were committed to `main`. Each new item has four options, a valid answer index and an explanation; all remain `verified: false` pending academic review. Structural checks were performed after re-fetching the committed files. This is targeted expansion, not a claim of exhaustive reconciliation of every uploaded source.
 
 **Cumulative source-reconciliation additions: 193 original questions** (178 previously recorded plus these 15).
+
+
+## Nervous-system histology, urine formation and haemoprotein metabolism — 27 November 2026
+
+Five original MCQs were added to each of three topic banks, informed by the uploaded anatomy, physiology and biochemistry question collections:
+
+**Anatomy / Histology — nervous system (4 → 9):** CNS myelination by oligodendrocytes, PNS myelination by Schwann cells, astrocytic end-feet and the blood–brain barrier, ependymal lining and satellite cells in sensory ganglia.
+
+**Physiology — urine formation (69 → 74):** proximal tubular sodium and water reabsorption, the water-impermeable thick ascending limb, glucose transport maximum and glycosuria, proximal tubular carbonic anhydrase inhibition and inulin clearance as a GFR measure.
+
+**Medical Biochemistry — haemoproteins and haemoglobin metabolism (40 → 45):** acute intermittent porphyria, porphyria cutanea tarda, ferrochelatase in haem synthesis, methaemoglobin formation and carbon monoxide binding to haemoglobin.
+
+All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations. They remain `verified: false` pending academic review. This remains targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
+
+**Cumulative source-reconciliation additions: 208 original questions** (193 previously recorded plus these 15).
