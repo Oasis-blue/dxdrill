@@ -48,7 +48,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
     var t=raw.trim().replace(/^```[a-z]*\s*/i,"").replace(/```\s*$/,"");
     var a=t.indexOf("{"),b=t.lastIndexOf("}");
     if(a<0||b<0)throw new Error("Paste one complete JSON object.");
-    t=t.slice(a,b+1).replace(/[“”]/g,'"').replace(/,s*([}\]])/g,"$1");
+    t=t.slice(a,b+1).replace(/[“”]/g,'"').replace(/,\s*([}\]])/g,"$1");
     return JSON.parse(t);
   }
   function check(obj){
