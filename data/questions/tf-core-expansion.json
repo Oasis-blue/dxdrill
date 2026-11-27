@@ -10188,6 +10188,546 @@
       "verified": false,
       "reviewStatus": "draft-unverified",
       "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-emb-embryonic-002",
+      "type": "tf",
+      "topic": "emb-embryonic",
+      "level": 2,
+      "sub": "Embryonic folding",
+      "q": "Regarding embryonic folding:",
+      "items": [
+        {
+          "text": "Folding converts the flat embryonic disc into a more cylindrical body form.",
+          "answer": true,
+          "explain": "Cephalocaudal and lateral folding reshape the disc and incorporate part of the yolk sac into the primitive gut."
+        },
+        {
+          "text": "Lateral folding contributes to closure of the ventral body wall.",
+          "answer": true,
+          "explain": "The right and left body folds move ventrally and fuse in the midline, except at the umbilical region."
+        },
+        {
+          "text": "The intraembryonic coelom forms within extraembryonic mesoderm.",
+          "answer": false,
+          "explain": "It develops within lateral plate mesoderm, which separates into somatic and splanchnic layers."
+        },
+        {
+          "text": "The pericardial, pleural and peritoneal cavities arise from subdivisions of the intraembryonic coelom.",
+          "answer": true,
+          "explain": "The initially continuous coelomic space is partitioned during development."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK554394/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-emb-twinning-002",
+      "type": "tf",
+      "topic": "emb-factors-twinning",
+      "level": 2,
+      "sub": "Mechanisms of twinning",
+      "q": "Regarding mechanisms of twinning:",
+      "items": [
+        {
+          "text": "Dizygotic twins arise from fertilisation of two separate oocytes.",
+          "answer": true,
+          "explain": "Two ova are fertilised by separate spermatozoa; dizygotic twins are genetically like ordinary siblings."
+        },
+        {
+          "text": "Monozygotic twins arise from division of a single fertilised conceptus.",
+          "answer": true,
+          "explain": "The timing of separation influences chorionicity and amnionicity."
+        },
+        {
+          "text": "All monozygotic twins have separate chorions and amniotic sacs.",
+          "answer": false,
+          "explain": "They may be dichorionic or monochorionic and may share an amniotic sac depending on timing."
+        },
+        {
+          "text": "Conjoined twins are associated with incomplete embryonic separation.",
+          "answer": true,
+          "explain": "Incomplete division of the embryonic primordium is the classic embryological explanation."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563220/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-emb-fetal-002",
+      "type": "tf",
+      "topic": "emb-fetal",
+      "level": 2,
+      "sub": "Fetal circulation",
+      "q": "Regarding fetal circulation:",
+      "items": [
+        {
+          "text": "The ductus venosus allows umbilical venous blood to partly bypass hepatic sinusoids.",
+          "answer": true,
+          "explain": "It directs a substantial proportion of oxygenated blood toward the inferior vena cava."
+        },
+        {
+          "text": "The foramen ovale shunts blood from the right atrium to the left atrium.",
+          "answer": true,
+          "explain": "This directs relatively oxygen-rich blood toward the left ventricle and systemic circulation."
+        },
+        {
+          "text": "The ductus arteriosus connects the pulmonary trunk to the aorta.",
+          "answer": true,
+          "explain": "It diverts much right ventricular output away from the high-resistance fetal lungs."
+        },
+        {
+          "text": "Umbilical arteries carry oxygenated blood from placenta to fetus.",
+          "answer": false,
+          "explain": "Umbilical arteries carry deoxygenated blood to the placenta; the umbilical vein returns oxygenated blood."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK539710/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-gh-cell-002",
+      "type": "tf",
+      "topic": "gh-cell-structure-and-function",
+      "level": 2,
+      "sub": "Cell organelles",
+      "q": "Regarding cell organelles:",
+      "items": [
+        {
+          "text": "Ribosomes on rough endoplasmic reticulum synthesise many secreted and membrane proteins.",
+          "answer": true,
+          "explain": "These proteins enter the secretory pathway for processing and sorting."
+        },
+        {
+          "text": "The Golgi apparatus modifies and sorts proteins for delivery to cellular destinations.",
+          "answer": true,
+          "explain": "Golgi cisternae process cargo and package it into transport vesicles."
+        },
+        {
+          "text": "Lysosomal hydrolases function optimally at neutral cytosolic pH.",
+          "answer": false,
+          "explain": "Lysosomal enzymes are adapted to the acidic lumen maintained by proton pumps."
+        },
+        {
+          "text": "Mitochondria contain their own DNA and ribosomes.",
+          "answer": true,
+          "explain": "They encode some proteins and retain a specialised protein-synthesis apparatus."
+        }
+      ],
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ga-nerves-002",
+      "type": "tf",
+      "topic": "ga-nerves-and-blood-vessels",
+      "level": 2,
+      "sub": "Peripheral nerve sheaths",
+      "q": "Regarding peripheral nerve sheaths:",
+      "items": [
+        {
+          "text": "The endoneurium surrounds individual nerve fibres and associated Schwann cells.",
+          "answer": true,
+          "explain": "It is delicate connective tissue around individual fibres within a fascicle."
+        },
+        {
+          "text": "The perineurium encloses a bundle of nerve fibres to form a fascicle.",
+          "answer": true,
+          "explain": "Perineurial layers surround fascicles and contribute to the blood-nerve barrier."
+        },
+        {
+          "text": "The epineurium surrounds the entire peripheral nerve.",
+          "answer": true,
+          "explain": "It encloses fascicles and contains larger vessels and connective tissue."
+        },
+        {
+          "text": "Peripheral nerves lack a dedicated vascular supply.",
+          "answer": false,
+          "explain": "Vasa nervorum supply peripheral nerves through an intraneural vascular network."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK542185/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-renal-structure-003",
+      "type": "tf",
+      "topic": "phys-renal-structure",
+      "level": 2,
+      "sub": "Nephron and juxtaglomerular apparatus",
+      "q": "Regarding nephron and juxtaglomerular apparatus:",
+      "items": [
+        {
+          "text": "The renal corpuscle consists of a glomerular tuft enclosed by Bowman's capsule.",
+          "answer": true,
+          "explain": "The corpuscle is the filtration component of the nephron."
+        },
+        {
+          "text": "The macula densa senses sodium chloride delivery in tubular fluid.",
+          "answer": true,
+          "explain": "It participates in tubuloglomerular feedback and signalling to juxtaglomerular cells."
+        },
+        {
+          "text": "Juxtaglomerular granular cells secrete renin.",
+          "answer": true,
+          "explain": "These modified smooth muscle cells are located mainly in the afferent arteriole wall."
+        },
+        {
+          "text": "All cortical nephrons lack a loop of Henle.",
+          "answer": false,
+          "explain": "Cortical nephrons have shorter loops; juxtamedullary nephrons have longer loops extending deep into the medulla."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK470284/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-renal-failure-002",
+      "type": "tf",
+      "topic": "phys-renal-tests-failure",
+      "level": 2,
+      "sub": "Renal function and acute kidney injury",
+      "q": "Regarding renal function and acute kidney injury:",
+      "items": [
+        {
+          "text": "Serum creatinine may rise after a delay following an abrupt fall in GFR.",
+          "answer": true,
+          "explain": "Creatinine kinetics mean the serum concentration may lag behind acute changes in filtration."
+        },
+        {
+          "text": "Blood urea nitrogen is specific for intrinsic renal parenchymal disease.",
+          "answer": false,
+          "explain": "Urea is influenced by hydration, protein intake, catabolism and gastrointestinal bleeding."
+        },
+        {
+          "text": "Urine microscopy can help distinguish causes of acute kidney injury.",
+          "answer": true,
+          "explain": "Casts and cellular elements can suggest tubular, glomerular or interstitial pathology."
+        },
+        {
+          "text": "Common eGFR equations are reliable during rapidly changing serum creatinine.",
+          "answer": false,
+          "explain": "They assume approximate steady state and are unreliable during evolving acute kidney injury."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK441896/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-endocrine-002",
+      "type": "tf",
+      "topic": "pe-other-hormones",
+      "level": 2,
+      "sub": "Parathyroid hormone",
+      "q": "Regarding parathyroid hormone:",
+      "items": [
+        {
+          "text": "Low ionised plasma calcium stimulates parathyroid hormone secretion.",
+          "answer": true,
+          "explain": "Reduced activation of calcium-sensing receptors on chief cells promotes PTH release."
+        },
+        {
+          "text": "PTH increases renal tubular calcium reabsorption.",
+          "answer": true,
+          "explain": "It conserves calcium, particularly in the distal nephron."
+        },
+        {
+          "text": "PTH increases proximal tubular phosphate reabsorption.",
+          "answer": false,
+          "explain": "PTH reduces phosphate reabsorption, causing phosphaturia."
+        },
+        {
+          "text": "PTH stimulates renal production of active vitamin D.",
+          "answer": true,
+          "explain": "It stimulates 1-alpha-hydroxylase, increasing calcitriol formation."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK499898/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-reflex-002",
+      "type": "tf",
+      "topic": "pl-receptors-and-reflexes",
+      "level": 2,
+      "sub": "Stretch reflex and proprioception",
+      "q": "Regarding stretch reflex and proprioception:",
+      "items": [
+        {
+          "text": "Muscle spindles detect muscle length and changes in length.",
+          "answer": true,
+          "explain": "Intrafusal fibres and sensory endings signal static and dynamic stretch."
+        },
+        {
+          "text": "Primary muscle spindle afferents are group Ia fibres.",
+          "answer": true,
+          "explain": "Ia afferents arise from primary spindle endings."
+        },
+        {
+          "text": "The principal excitatory connection in the stretch reflex is polysynaptic.",
+          "answer": false,
+          "explain": "The classic Ia excitation of the homonymous alpha motor neuron is monosynaptic."
+        },
+        {
+          "text": "Golgi tendon organs respond to tension in the muscle-tendon unit.",
+          "answer": true,
+          "explain": "Ib afferents signal tension, particularly during active contraction."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK539845/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-skin-002",
+      "type": "tf",
+      "topic": "phys-skin",
+      "level": 2,
+      "sub": "Skin and thermoregulation",
+      "q": "Regarding skin and thermoregulation:",
+      "items": [
+        {
+          "text": "Cutaneous vasodilation increases transfer of core heat to the skin surface.",
+          "answer": true,
+          "explain": "Increased skin blood flow facilitates heat loss to the environment."
+        },
+        {
+          "text": "Evaporation of sweat is an important route of heat loss.",
+          "answer": true,
+          "explain": "Evaporation removes latent heat from the skin; high humidity reduces its effectiveness."
+        },
+        {
+          "text": "Cutaneous vasoconstriction generally increases heat loss.",
+          "answer": false,
+          "explain": "It reduces skin blood flow and conserves heat."
+        },
+        {
+          "text": "Skin thermoreceptors contribute information to central thermoregulatory pathways.",
+          "answer": true,
+          "explain": "Peripheral temperature signals contribute to autonomic and behavioural responses."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK499843/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-pac-glucose-002",
+      "type": "tf",
+      "topic": "pac-glucose-homeostasis-and-diabetes-mellitus",
+      "level": 2,
+      "sub": "Insulin signalling",
+      "q": "Regarding insulin signalling:",
+      "items": [
+        {
+          "text": "The insulin receptor has intrinsic tyrosine kinase activity.",
+          "answer": true,
+          "explain": "Ligand binding triggers receptor autophosphorylation and downstream signalling."
+        },
+        {
+          "text": "Insulin promotes GLUT4 translocation in skeletal muscle and adipose tissue.",
+          "answer": true,
+          "explain": "More GLUT4 at the cell surface increases insulin-stimulated glucose uptake."
+        },
+        {
+          "text": "Insulin stimulates hepatic glycogenolysis in the fed state.",
+          "answer": false,
+          "explain": "Insulin promotes glycogen synthesis and suppresses hepatic glucose output."
+        },
+        {
+          "text": "Insulin promotes lipogenesis and suppresses adipose lipolysis.",
+          "answer": true,
+          "explain": "It favours energy storage and inhibits hormone-sensitive lipase activity."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK279141/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ba-haem-005",
+      "type": "tf",
+      "topic": "ba-haemoproteins-and-haemoglobin-metabolism",
+      "level": 2,
+      "sub": "Haemoglobin and oxygen binding",
+      "q": "Regarding haemoglobin and oxygen binding:",
+      "items": [
+        {
+          "text": "Adult haemoglobin A contains two alpha and two beta chains.",
+          "answer": true,
+          "explain": "HbA is an alpha2-beta2 tetramer."
+        },
+        {
+          "text": "Cooperative oxygen binding contributes to haemoglobin's sigmoidal dissociation curve.",
+          "answer": true,
+          "explain": "Oxygen binding increases the affinity of remaining subunits through allosteric transitions."
+        },
+        {
+          "text": "A rightward shift of the oxygen dissociation curve indicates increased oxygen affinity.",
+          "answer": false,
+          "explain": "A right shift means reduced affinity and facilitates unloading."
+        },
+        {
+          "text": "Fetal haemoglobin has greater oxygen affinity than adult haemoglobin.",
+          "answer": true,
+          "explain": "HbF binds 2,3-BPG less strongly, supporting placental oxygen transfer."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK2263/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ba-nutrition-005",
+      "type": "tf",
+      "topic": "ba-nutrition-vitamin-and-mineral-metabolism",
+      "level": 2,
+      "sub": "Vitamin D metabolism",
+      "q": "Regarding vitamin d metabolism:",
+      "items": [
+        {
+          "text": "The liver converts vitamin D to 25-hydroxyvitamin D.",
+          "answer": true,
+          "explain": "This is the major circulating storage form measured clinically."
+        },
+        {
+          "text": "Renal 1-alpha-hydroxylase converts 25-hydroxyvitamin D to calcitriol.",
+          "answer": true,
+          "explain": "The kidney produces the hormonally active 1,25-dihydroxy form."
+        },
+        {
+          "text": "Calcitriol reduces intestinal absorption of calcium and phosphate.",
+          "answer": false,
+          "explain": "It increases absorption of both minerals."
+        },
+        {
+          "text": "Severe vitamin D deficiency in children can cause rickets.",
+          "answer": true,
+          "explain": "Defective mineralisation of growing bone and growth plates causes rickets."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK532266/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ba-molecular-005",
+      "type": "tf",
+      "topic": "ba-molecular-biology",
+      "level": 2,
+      "sub": "Gene regulation and epigenetics",
+      "q": "Regarding gene regulation and epigenetics:",
+      "items": [
+        {
+          "text": "Promoter CpG methylation is commonly associated with transcriptional repression.",
+          "answer": true,
+          "explain": "Methylation can reduce transcription factor binding and recruit repressive chromatin proteins."
+        },
+        {
+          "text": "Histone acetylation is generally associated with more accessible chromatin.",
+          "answer": true,
+          "explain": "Acetylation of lysine residues often favours transcriptionally active chromatin."
+        },
+        {
+          "text": "Epigenetic regulation necessarily changes the DNA nucleotide sequence.",
+          "answer": false,
+          "explain": "Epigenetic mechanisms alter gene expression without changing the underlying sequence."
+        },
+        {
+          "text": "Some epigenetic marks can be maintained through cell division.",
+          "answer": true,
+          "explain": "Maintenance systems preserve certain methylation and chromatin patterns in daughter cells."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK19961/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-bc-enzymes-006",
+      "type": "tf",
+      "topic": "bc-enzymes-and-bioenergetics",
+      "level": 2,
+      "sub": "Allosteric enzyme regulation",
+      "q": "Regarding allosteric enzyme regulation:",
+      "items": [
+        {
+          "text": "Allosteric enzymes may show sigmoidal rather than hyperbolic substrate-velocity curves.",
+          "answer": true,
+          "explain": "Cooperative interactions between subunits can produce sigmoidal kinetics."
+        },
+        {
+          "text": "An allosteric regulator binds at a site distinct from the enzyme's active site.",
+          "answer": true,
+          "explain": "Binding at a regulatory site changes enzyme conformation and activity."
+        },
+        {
+          "text": "Allosteric inhibition is always overcome by increasing substrate concentration.",
+          "answer": false,
+          "explain": "Allosteric regulation is not simply competitive inhibition; increasing substrate does not necessarily reverse it."
+        },
+        {
+          "text": "Feedback inhibition commonly involves an end product inhibiting an earlier enzyme in its biosynthetic pathway.",
+          "answer": true,
+          "explain": "This mechanism helps match pathway flux to cellular demand and product availability."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK22430/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
     }
   ]
 }
