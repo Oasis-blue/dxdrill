@@ -196,3 +196,19 @@ Two additional expansion questions were added:
 - `APP-230`: the ejaculatory duct openings in relation to the seminal colliculus (verumontanum) in the prostatic urethra.
 
 **Verification:** the abdominal/pelvic bank was re-fetched from `main` after the write. It now contains 227 questions with 227 unique IDs; the latest IDs are `APP-229` and `APP-230`. New records remain `verified:false` pending academic review. The accessible PDFDrive source's chapters 14 and 23–25 remain to be reviewed; the separate 336-page scanned Anatomy PDF remains unavailable in the current file context.
+
+### Follow-on review — Gallbladder, Arteries/Veins/Nerves, Peritoneum, Pelvic Cavity and Perineum (chapters 14 and 23–25)
+
+Printed pages 81–85 and 129–145 were reviewed against the live abdominal/pelvic bank. Existing coverage was identified for the cystic artery and cystohepatic triangle, gallbladder and biliary relations, portal vein formation and portosystemic connections, major abdominal and pelvic vessels, pelvic autonomic and somatic nerves, peritoneal reflections and spaces, the omental foramen, pelvic floor, anal canal, perineal pouches, pudendal neurovascular structures, and perineal body. The review was concept-level; the printed multiple-response items have not all been paired individually with a bank question.
+
+Five further questions were added as gap-filling/depth expansion:
+- `APP-231`: spiral folds (valves) of Heister in the cystic duct.
+- `APP-232`: ascending lumbar–azygos/hemiazygos collateral venous pathway in caval obstruction.
+- `APP-233`: communication of the right paracolic gutter with the hepatorenal recess.
+- `APP-234`: phrenicocolic ligament as a partial barrier to superior spread from the left paracolic gutter.
+- `APP-235`: usual branches of the posterior division of the internal iliac artery.
+
+**Verification:** the updated `data/questions/gr-abdomen-pelvis-and-perineum.json` was fetched again from `main`, parsed successfully, and checked for duplicate IDs. It contains **232 questions and 232 unique IDs**, with no duplicate IDs; the latest additions are `APP-231`–`APP-235`. The update commit is `a7a5e3c11ce55a3ed7a83716988983713630f6e3`. The five new records remain `verified:false` pending academic review.
+
+**Progress clarification:** the earlier count of 227 reflected the bank before these five additions. Chapters 1–25 of this accessible 145-page PDFDrive source have now received a concept-level review across the logged passes, but this does **not** mean all printed MCQs have been reconciled one by one. A true item-level pass, checking each source item against existing bank coverage and recording matched/partial/missing status, remains outstanding. The separate 336-page scanned `Anatomy MCQ.pdf` is still a different source and remains pending access.
+
