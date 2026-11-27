@@ -4749,6 +4749,546 @@
       ],
       "verified": true,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ga-bones-002",
+      "type": "tf",
+      "topic": "ga-bones-and-joints",
+      "level": 2,
+      "sub": "Bone tissue",
+      "q": "About bone tissue:",
+      "items": [
+        {
+          "text": "Osteoblasts synthesise new bone matrix.",
+          "answer": true,
+          "explain": "They produce osteoid and promote mineralisation."
+        },
+        {
+          "text": "Osteoclasts are multinucleated cells that resorb bone.",
+          "answer": true,
+          "explain": "They acidify and enzymatically digest bone."
+        },
+        {
+          "text": "Compact bone is organised into trabeculae separated by marrow spaces.",
+          "answer": false,
+          "explain": "That arrangement characterises cancellous bone; compact bone is organised mainly into osteons."
+        },
+        {
+          "text": "The periosteum covers external bone except at articular surfaces.",
+          "answer": true,
+          "explain": "Articular surfaces are covered by cartilage."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-3-bone-structure",
+        "https://www.ncbi.nlm.nih.gov/books/NBK557792/"
+      ]
+    },
+    {
+      "id": "tf-ga-muscles-001",
+      "type": "tf",
+      "topic": "ga-muscles",
+      "level": 2,
+      "sub": "Skeletal muscle organisation",
+      "q": "About skeletal muscle organisation:",
+      "items": [
+        {
+          "text": "A skeletal muscle is typically surrounded by an epimysium.",
+          "answer": true,
+          "explain": "Epimysium encloses the whole muscle; perimysium surrounds fascicles and endomysium individual fibres."
+        },
+        {
+          "text": "Endomysium is the connective tissue sheath around a fascicle.",
+          "answer": false,
+          "explain": "Perimysium surrounds a fascicle; endomysium surrounds each muscle fibre."
+        },
+        {
+          "text": "A skeletal muscle fibre is a multinucleated cell formed by fusion of myoblasts.",
+          "answer": true,
+          "explain": "Myoblast fusion produces long syncytial fibres with peripheral nuclei."
+        },
+        {
+          "text": "The sarcolemma is the specialised plasma membrane of a muscle fibre.",
+          "answer": true,
+          "explain": "It encloses the fibre and conducts action potentials."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537195/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK532258/"
+      ]
+    },
+    {
+      "id": "tf-ga-nerves-vessels-001",
+      "type": "tf",
+      "topic": "ga-nerves-and-blood-vessels",
+      "level": 2,
+      "sub": "Peripheral nerves and blood vessels",
+      "q": "About peripheral nerves and blood vessels:",
+      "items": [
+        {
+          "text": "The endoneurium surrounds individual nerve fibres within a peripheral nerve.",
+          "answer": true,
+          "explain": "It is connective tissue around individual axons and Schwann cells."
+        },
+        {
+          "text": "The perineurium encloses individual axons, while the epineurium encloses the entire nerve.",
+          "answer": false,
+          "explain": "Perineurium encloses fascicles; epineurium encloses the whole nerve."
+        },
+        {
+          "text": "Peripheral nerves contain blood vessels that supply their tissues.",
+          "answer": true,
+          "explain": "Nerves have an intrinsic vascular supply."
+        },
+        {
+          "text": "Arteries generally have a thicker tunica media than veins of comparable size.",
+          "answer": true,
+          "explain": "The thicker muscular and elastic layer supports higher-pressure flow."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels"
+      ]
+    },
+    {
+      "id": "tf-gr-living-anatomy-001",
+      "type": "tf",
+      "topic": "gr-living-anatomy",
+      "level": 2,
+      "sub": "Surface anatomy of the thorax",
+      "q": "About surface anatomy of the thorax:",
+      "items": [
+        {
+          "text": "The sternal angle is a palpable landmark at the manubriosternal junction.",
+          "answer": true,
+          "explain": "The manubriosternal joint forms the sternal angle."
+        },
+        {
+          "text": "The second costal cartilage articulates with the sternum at the sternal angle.",
+          "answer": true,
+          "explain": "It helps identify rib and intercostal spaces."
+        },
+        {
+          "text": "The inferior angle of the scapula usually lies near T7 with the upper limb by the side.",
+          "answer": true,
+          "explain": "This is a commonly used surface landmark, though posture alters position."
+        },
+        {
+          "text": "The normal cardiac apex beat is usually palpated in the right fifth intercostal space.",
+          "answer": false,
+          "explain": "It is usually in the left fifth intercostal space near the midclavicular line."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
+        "https://www.ncbi.nlm.nih.gov/books/NBK554398/"
+      ]
+    },
+    {
+      "id": "tf-gh-cell-001",
+      "type": "tf",
+      "topic": "gh-cell-structure-and-function",
+      "level": 2,
+      "sub": "Cell organelles",
+      "q": "About cell organelles:",
+      "items": [
+        {
+          "text": "Mitochondria contain enzymes involved in oxidative phosphorylation.",
+          "answer": true,
+          "explain": "The inner mitochondrial membrane contains the electron-transport chain and ATP synthase."
+        },
+        {
+          "text": "Rough endoplasmic reticulum is prominent in cells synthesising secreted proteins.",
+          "answer": true,
+          "explain": "Ribosome-studded rough ER synthesises proteins entering the secretory pathway."
+        },
+        {
+          "text": "Lysosomes are the principal site of ribosomal RNA transcription in human cells.",
+          "answer": false,
+          "explain": "rRNA is transcribed mainly in the nucleolus; lysosomes contain hydrolytic enzymes."
+        },
+        {
+          "text": "The Golgi apparatus modifies, sorts and packages proteins and lipids.",
+          "answer": true,
+          "explain": "Golgi cisternae process cargo from the ER."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK554382/",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles"
+      ]
+    },
+    {
+      "id": "tf-pb-wbc-001",
+      "type": "tf",
+      "topic": "pb-white-blood-cells-and-immunity",
+      "level": 2,
+      "sub": "Leukocyte functions",
+      "q": "About leukocyte functions:",
+      "items": [
+        {
+          "text": "Neutrophils are commonly prominent in acute bacterial infections.",
+          "answer": true,
+          "explain": "They are rapid responders that phagocytose and kill bacteria."
+        },
+        {
+          "text": "Eosinophils are associated with defence against helminths and allergic responses.",
+          "answer": true,
+          "explain": "They release granule proteins and inflammatory mediators."
+        },
+        {
+          "text": "Basophils are the most numerous leukocytes in normal peripheral blood.",
+          "answer": false,
+          "explain": "Neutrophils are most abundant; basophils are least abundant."
+        },
+        {
+          "text": "Monocytes can enter tissues and differentiate into macrophages.",
+          "answer": true,
+          "explain": "Monocytes can differentiate into tissue macrophages after leaving blood."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK607436/"
+      ]
+    },
+    {
+      "id": "tf-pr-hypoxia-001",
+      "type": "tf",
+      "topic": "pr-hypoxia-and-special-environments",
+      "level": 2,
+      "sub": "Types of hypoxia",
+      "q": "About types of hypoxia:",
+      "items": [
+        {
+          "text": "Anaemic hypoxia may occur despite a normal arterial oxygen tension.",
+          "answer": true,
+          "explain": "Low haemoglobin lowers arterial oxygen content even when PaO2 is normal."
+        },
+        {
+          "text": "Carbon monoxide poisoning reduces available haemoglobin for oxygen transport.",
+          "answer": true,
+          "explain": "CO binds haemoglobin with high affinity and impairs oxygen transport."
+        },
+        {
+          "text": "In stagnant hypoxia, tissue oxygen delivery is impaired because blood flow is reduced.",
+          "answer": true,
+          "explain": "Low perfusion limits oxygen delivery despite adequate arterial oxygenation."
+        },
+        {
+          "text": "Histotoxic hypoxia is caused by low haemoglobin concentration.",
+          "answer": false,
+          "explain": "It results from impaired cellular oxygen utilisation, classically due to cyanide."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538336/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK54104/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK482316/"
+      ]
+    },
+    {
+      "id": "tf-pr-control-respiration-001",
+      "type": "tf",
+      "topic": "pr-control-of-respiration",
+      "level": 2,
+      "sub": "Control of breathing",
+      "q": "About control of breathing:",
+      "items": [
+        {
+          "text": "The medullary respiratory network contributes to generation of the basic respiratory rhythm.",
+          "answer": true,
+          "explain": "Medullary networks generate and shape the respiratory pattern."
+        },
+        {
+          "text": "Central chemoreceptors respond mainly to hydrogen ion changes in brain extracellular fluid and CSF.",
+          "answer": true,
+          "explain": "CO2 crosses the blood-brain barrier and generates hydrogen ions in CSF."
+        },
+        {
+          "text": "Peripheral chemoreceptors are located in the carotid and aortic bodies.",
+          "answer": true,
+          "explain": "These bodies detect changes in arterial blood gases and pH."
+        },
+        {
+          "text": "Central chemoreceptors directly detect a fall in arterial oxygen tension as their principal stimulus.",
+          "answer": false,
+          "explain": "Peripheral chemoreceptors, especially carotid bodies, sense reduced PaO2."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK54104/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK482316/"
+      ]
+    },
+    {
+      "id": "tf-pc-special-circulations-001",
+      "type": "tf",
+      "topic": "pc-special-circulations",
+      "level": 2,
+      "sub": "Coronary circulation",
+      "q": "About coronary circulation:",
+      "items": [
+        {
+          "text": "The myocardium receives most of its blood supply through the coronary arteries.",
+          "answer": true,
+          "explain": "Coronary arteries supply oxygen and metabolic substrates to myocardium."
+        },
+        {
+          "text": "The left ventricular myocardium extracts a relatively high proportion of delivered oxygen at rest.",
+          "answer": true,
+          "explain": "High resting extraction means increased demand is met largely by increasing flow."
+        },
+        {
+          "text": "Coronary blood flow to the left ventricular myocardium is greatest during systole.",
+          "answer": false,
+          "explain": "Contraction compresses intramyocardial vessels; perfusion is greatest during diastole."
+        },
+        {
+          "text": "Local metabolic vasodilation helps match coronary flow to myocardial oxygen demand.",
+          "answer": true,
+          "explain": "Increased myocardial work promotes resistance-vessel dilation and increased flow."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK482413/"
+      ]
+    },
+    {
+      "id": "tf-pc-control-cv-001",
+      "type": "tf",
+      "topic": "pc-control-of-cardiovascular-function",
+      "level": 2,
+      "sub": "Baroreceptor reflex",
+      "q": "About baroreceptor reflex:",
+      "items": [
+        {
+          "text": "Carotid sinus baroreceptors send afferent signals through the glossopharyngeal nerve.",
+          "answer": true,
+          "explain": "Carotid sinus afferents travel in Hering's nerve, a branch of CN IX."
+        },
+        {
+          "text": "A rise in arterial pressure increases baroreceptor firing.",
+          "answer": true,
+          "explain": "Stretch of carotid sinus and aortic arch increases afferent discharge."
+        },
+        {
+          "text": "Increased baroreceptor firing normally increases sympathetic outflow to the heart.",
+          "answer": false,
+          "explain": "The reflex reduces sympathetic outflow and increases vagal influence."
+        },
+        {
+          "text": "Aortic arch baroreceptor afferents travel mainly in the vagus nerve.",
+          "answer": true,
+          "explain": "Aortic baroreceptor information reaches the medulla through vagal afferents."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538509/"
+      ]
+    },
+    {
+      "id": "tf-ba-muscle-bio-001",
+      "type": "tf",
+      "topic": "ba-biochemistry-of-muscle-contraction",
+      "level": 2,
+      "sub": "Muscle contraction biochemistry",
+      "q": "About muscle contraction biochemistry:",
+      "items": [
+        {
+          "text": "Calcium binds to troponin C in skeletal and cardiac muscle.",
+          "answer": true,
+          "explain": "Calcium shifts troponin-tropomyosin and exposes actin binding sites."
+        },
+        {
+          "text": "ATP binding to myosin is required for detachment from actin.",
+          "answer": true,
+          "explain": "ATP binding lowers myosin's affinity for actin."
+        },
+        {
+          "text": "Smooth muscle contraction is regulated by troponin C as in skeletal muscle.",
+          "answer": false,
+          "explain": "Smooth muscle lacks troponin; calcium binds calmodulin and activates MLCK."
+        },
+        {
+          "text": "Myosin light-chain kinase phosphorylates myosin in smooth muscle.",
+          "answer": true,
+          "explain": "Calcium-calmodulin activates MLCK and promotes cross-bridge cycling."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537140/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK532258/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9961/"
+      ]
+    },
+    {
+      "id": "tf-ba-immunochemistry-001",
+      "type": "tf",
+      "topic": "ba-immunochemistry",
+      "level": 2,
+      "sub": "Immunoglobulin structure",
+      "q": "About immunoglobulin structure:",
+      "items": [
+        {
+          "text": "A typical immunoglobulin monomer consists of two heavy chains and two light chains.",
+          "answer": true,
+          "explain": "The four chains are linked by disulphide bonds."
+        },
+        {
+          "text": "Variable regions of immunoglobulin chains contribute to antigen recognition.",
+          "answer": true,
+          "explain": "Variable domains form the antigen-binding site."
+        },
+        {
+          "text": "The Fc portion of an antibody is the principal region that binds the antigen epitope.",
+          "answer": false,
+          "explain": "Antigen binds Fab ends; Fc interacts with Fc receptors and complement."
+        },
+        {
+          "text": "IgM is commonly the first antibody class produced in a primary immune response.",
+          "answer": true,
+          "explain": "Naive B cells initially produce IgM before class switching."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK27144/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK459477/"
+      ]
+    },
+    {
+      "id": "tf-ba-biomembranes-001",
+      "type": "tf",
+      "topic": "ba-biomembranes",
+      "level": 2,
+      "sub": "Biological membranes",
+      "q": "About biological membranes:",
+      "items": [
+        {
+          "text": "The fluid mosaic model describes proteins embedded in or associated with a lipid bilayer.",
+          "answer": true,
+          "explain": "The membrane is a dynamic lipid bilayer containing integral and peripheral proteins."
+        },
+        {
+          "text": "Cholesterol can modulate membrane fluidity and permeability.",
+          "answer": true,
+          "explain": "Cholesterol buffers membrane fluidity and reduces permeability to some polar molecules."
+        },
+        {
+          "text": "All membrane proteins are freely mobile across the entire membrane.",
+          "answer": false,
+          "explain": "Some are anchored to cytoskeleton, extracellular matrix or membrane domains."
+        },
+        {
+          "text": "Carbohydrates of many membrane glycoproteins and glycolipids are exposed extracellularly.",
+          "answer": true,
+          "explain": "They contribute to glycocalyx and cell recognition."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26813/",
+        "https://openstax.org/books/biology-2e/pages/5-2-components-and-structure"
+      ]
+    },
+    {
+      "id": "tf-ba-molecular-biology-001",
+      "type": "tf",
+      "topic": "ba-molecular-biology",
+      "level": 2,
+      "sub": "Genetic code and protein synthesis",
+      "q": "About genetic code and protein synthesis:",
+      "items": [
+        {
+          "text": "The genetic code is read in non-overlapping triplets during translation.",
+          "answer": true,
+          "explain": "Each codon consists of three nucleotides read in a fixed frame."
+        },
+        {
+          "text": "AUG commonly functions as the initiation codon and codes for methionine.",
+          "answer": true,
+          "explain": "AUG is the usual start codon; bacteria incorporate formylmethionine at initiation."
+        },
+        {
+          "text": "The genetic code is degenerate because an amino acid may be encoded by multiple codons.",
+          "answer": true,
+          "explain": "Several amino acids have multiple synonymous codons."
+        },
+        {
+          "text": "Ribosomes synthesise polypeptides by reading mRNA in the 3′ to 5′ direction.",
+          "answer": false,
+          "explain": "Ribosomes move along mRNA in the 5′ to 3′ direction."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26829/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9849/"
+      ]
+    },
+    {
+      "id": "tf-ba-hormones-002",
+      "type": "tf",
+      "topic": "ba-hormones-special-organs-and-neurochemistry",
+      "level": 2,
+      "sub": "Hormone second-messenger signalling",
+      "q": "About hormone second-messenger signalling:",
+      "items": [
+        {
+          "text": "Many peptide hormones act through receptors located on the cell surface.",
+          "answer": true,
+          "explain": "Peptide hormones are water-soluble and generally cannot diffuse through the lipid bilayer."
+        },
+        {
+          "text": "Activation of some Gs-coupled receptors stimulates adenylyl cyclase.",
+          "answer": true,
+          "explain": "Gs activates adenylyl cyclase, increasing intracellular cAMP."
+        },
+        {
+          "text": "cAMP can activate protein kinase A.",
+          "answer": true,
+          "explain": "cAMP binds regulatory subunits and activates PKA catalytic activity."
+        },
+        {
+          "text": "IP3 remains embedded in the plasma membrane and directly activates protein kinase C.",
+          "answer": false,
+          "explain": "IP3 diffuses through cytosol to trigger calcium release; DAG remains membrane-bound and activates PKC."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK541112/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26813/"
+      ]
     }
   ]
 }
