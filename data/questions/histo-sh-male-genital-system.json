@@ -1,59 +1,139 @@
 {
- "topic": "sh-male-genital-system",
- "questions": [
-  {
-   "id": "h-sh-male-genital-system-02a",
-   "level": 1,
-   "sub": "Histology: Male genital system",
-   "q": "Which organ is shown in this slide?",
-   "options": [
-    "Prostate gland",
-    "Seminal vesicle",
-    "Thyroid gland",
-    "Uterine tube"
-   ],
-   "answer": 0,
-   "explain": "Wide, irregular glandular lumens with folded walls and fibromuscular stroma indicate the prostate.",
-   "image": "histo-sh-male-genital-system-02.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of many large irregular gland spaces separated by thin pink septa."
-  },
-  {
-   "id": "h-sh-male-genital-system-02b",
-   "level": 2,
-   "sub": "Histology: Male genital system",
-   "q": "How do the gland lumens of the prostate look?",
-   "options": [
-    "Wide and irregular with folded walls",
-    "Small and round, filled with colloid",
-    "Narrow and straight, lined by goblet cells",
-    "Tightly coiled with a brush border"
-   ],
-   "answer": 0,
-   "explain": "Prostatic glands have irregular, often infolded lumens.",
-   "image": "histo-sh-male-genital-system-02.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of many large irregular gland spaces separated by thin pink septa."
-  },
-  {
-   "id": "h-sh-male-genital-system-02c",
-   "level": 3,
-   "sub": "Histology: Male genital system",
-   "q": "Which feature, not visible here, would confirm prostate?",
-   "options": [
-    "Corpora amylacea in the gland lumens",
-    "Brunner's glands",
-    "Hassall's corpuscles",
-    "Paneth cells"
-   ],
-   "answer": 0,
-   "explain": "Corpora amylacea are round concentric secretions typical of the prostate.",
-   "image": "histo-sh-male-genital-system-02.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of many large irregular gland spaces separated by thin pink septa."
-  }
- ]
+  "topic": "sh-male-genital-system",
+  "questions": [
+    {
+      "id": "h-sh-male-genital-system-02a",
+      "level": 1,
+      "sub": "Histology: Male genital system",
+      "q": "Which organ is shown in this slide?",
+      "options": [
+        "Prostate gland",
+        "Seminal vesicle",
+        "Thyroid gland",
+        "Uterine tube"
+      ],
+      "answer": 0,
+      "explain": "Wide, irregular glandular lumens with folded walls and fibromuscular stroma indicate the prostate.",
+      "image": "histo-sh-male-genital-system-02.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of many large irregular gland spaces separated by thin pink septa."
+    },
+    {
+      "id": "h-sh-male-genital-system-02b",
+      "level": 2,
+      "sub": "Histology: Male genital system",
+      "q": "How do the gland lumens of the prostate look?",
+      "options": [
+        "Wide and irregular with folded walls",
+        "Small and round, filled with colloid",
+        "Narrow and straight, lined by goblet cells",
+        "Tightly coiled with a brush border"
+      ],
+      "answer": 0,
+      "explain": "Prostatic glands have irregular, often infolded lumens.",
+      "image": "histo-sh-male-genital-system-02.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of many large irregular gland spaces separated by thin pink septa."
+    },
+    {
+      "id": "h-sh-male-genital-system-02c",
+      "level": 3,
+      "sub": "Histology: Male genital system",
+      "q": "Which feature, not visible here, would confirm prostate?",
+      "options": [
+        "Corpora amylacea in the gland lumens",
+        "Brunner's glands",
+        "Hassall's corpuscles",
+        "Paneth cells"
+      ],
+      "answer": 0,
+      "explain": "Corpora amylacea are round concentric secretions typical of the prostate.",
+      "image": "histo-sh-male-genital-system-02.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of many large irregular gland spaces separated by thin pink septa."
+    },
+    {
+      "id": "h-sh-male-genital-system-03a",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Male genital system",
+      "q": "A testicular section shows numerous tightly packed tubules lined by a stratified germinal epithelium containing cells at different stages of spermatogenesis. Which structure is being examined?",
+      "options": [
+        "Seminiferous tubule",
+        "Rete testis",
+        "Epididymal duct",
+        "Ductus deferens"
+      ],
+      "answer": 0,
+      "explain": "Seminiferous tubules are the sites of spermatogenesis and contain Sertoli cells and developing germ cells at successive stages.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-male-genital-system-03b",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Male genital system",
+      "q": "In a seminiferous tubule, which cell forms the blood–testis barrier through tight junctions and supports developing germ cells?",
+      "options": [
+        "Leydig cell",
+        "Sertoli cell",
+        "Spermatogonium",
+        "Peritubular myoid cell"
+      ],
+      "answer": 1,
+      "explain": "Adjacent Sertoli cells form tight junctions that divide the seminiferous epithelium into basal and adluminal compartments and help protect developing germ cells.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-male-genital-system-03c",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Male genital system",
+      "q": "A histological section shows clusters of endocrine cells in the connective tissue between seminiferous tubules. Which hormone do these cells chiefly secrete?",
+      "options": [
+        "Inhibin B",
+        "Testosterone",
+        "FSH",
+        "Anti-Müllerian hormone in the adult"
+      ],
+      "answer": 1,
+      "explain": "Interstitial Leydig cells, located between seminiferous tubules, produce testosterone in response to LH stimulation.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-male-genital-system-03d",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Male genital system",
+      "q": "Which feature helps distinguish the epididymal duct from seminiferous tubules on histology?",
+      "options": [
+        "Pseudostratified columnar epithelium with stereocilia and a lumen containing sperm",
+        "Stratified squamous keratinised epithelium",
+        "A multilayered germinal epithelium with spermatocytes",
+        "A simple squamous lining with no muscular wall"
+      ],
+      "answer": 0,
+      "explain": "The epididymal duct is lined by pseudostratified columnar epithelium with stereocilia; its lumen commonly contains sperm undergoing maturation.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-male-genital-system-03e",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Male genital system",
+      "q": "A section of the ductus deferens shows a narrow, often stellate lumen and a very thick muscular wall. What is the main function of this muscular arrangement?",
+      "options": [
+        "Secretion of seminal fructose",
+        "Propulsion of sperm during ejaculation by peristaltic contraction",
+        "Production of testosterone",
+        "Formation of the blood–testis barrier"
+      ],
+      "answer": 1,
+      "explain": "The ductus deferens has a prominent three-layered smooth-muscle coat that generates strong peristaltic contractions to propel sperm during ejaculation.",
+      "verified": false
+    }
+  ]
 }
