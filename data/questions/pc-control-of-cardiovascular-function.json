@@ -55,13 +55,13 @@
       "sub": "Medullary Cardiovascular Centers",
       "q": "How does activation of the nucleus tractus solitarius (NTS) by high arterial blood pressure suppress sympathetic vasoconstrictor outflow from the rostral ventrolateral medulla (RVLM)?",
       "options": [
-        "The NTS sends direct cholinergic fibers down the spinal cord to block alpha-1 receptors",
-        "The NTS stimulates adrenal epinephrine release to relax arterioles",
-        "The NTS excites GABAergic interneurons in the caudal ventrolateral medulla (CVLM), which in turn inhibit the RVLM",
-        "The NTS directly secretes nitric oxide onto the carotid sinus"
+        "The NTS directly inhibits sympathetic preganglionic neurons in the spinal cord",
+        "The NTS activates the RVLM, increasing sympathetic vasomotor output",
+        "The NTS activates GABAergic neurons in the CVLM, which inhibit the RVLM",
+        "The NTS stimulates the nucleus ambiguus to constrict systemic arterioles"
       ],
       "answer": 2,
-      "explain": "Baroreceptor-activated NTS neurons stimulate inhibitory GABAergic neurons in the caudal ventrolateral medulla (CVLM), which hyperpolarize RVLM pressor neurons and reduce sympathetic vasomotor tone.",
+      "explain": "Baroreceptor-activated NTS neurons excite inhibitory GABAergic neurons in the caudal ventrolateral medulla (CVLM). These neurons inhibit rostral ventrolateral medulla (RVLM) pressor neurons, reducing sympathetic vasomotor tone.",
       "verified": false,
       "open": {
         "q": "Describe the synaptic pathway connecting the nucleus tractus solitarius (NTS) to the rostral ventrolateral medulla (RVLM) during baroreceptor activation.",
@@ -101,13 +101,13 @@
       "sub": "Autonomic Innervation and Adrenergic/Cholinergic Receptors",
       "q": "How does bilateral vagotomy (cutting both vagus nerves) alter resting heart rate in a healthy adult, and what does this demonstrate?",
       "options": [
-        "Resting heart rate rises toward the intrinsic SA-node rate (~100–110 bpm), showing that vagal tone predominates at rest",
-        "Resting heart rate falls below 40 bpm, showing that sympathetic tone normally suppresses the SA node",
-        "Resting heart rate remains unchanged, showing that vagal input has little effect at rest",
-        "Resting heart rate stops completely, showing that vagal input is essential for pacemaker activity"
+        "Heart rate rises toward the intrinsic SA-node rate, showing that resting vagal tone normally slows the heart",
+        "Heart rate falls below 40 bpm, showing that sympathetic tone normally suppresses the SA node",
+        "Heart rate remains unchanged, showing that vagal input has little effect at rest",
+        "Heart rate stops, showing that vagal input is essential for pacemaker activity"
       ],
       "answer": 0,
-      "explain": "At rest, continuous vagal acetylcholine discharge holds the SA node below its intrinsic pacemaker rate (~100-110 bpm); blocking or cutting the vagi unmasks this intrinsic rate.",
+      "explain": "At rest, tonic vagal acetylcholine release slows the SA node below its intrinsic rate of approximately 100–110 beats/min. Bilateral vagotomy removes this restraint and allows the rate to rise toward the intrinsic pacemaker rate.",
       "verified": false,
       "open": {
         "q": "What happens to resting heart rate when both vagus nerves are blocked with atropine or severed, and what physiological principle does this illustrate?",
@@ -124,13 +124,13 @@
       "sub": "Autonomic Innervation and Adrenergic/Cholinergic Receptors",
       "q": "Which vascular receptor subtype mediates sympathetic vasoconstriction in skin, splanchnic, and renal arterioles, and which receptor mediates epinephrine-induced vasodilation in skeletal muscle arterioles?",
       "options": [
-        "Beta-1 receptors mediate vasoconstriction; M3 receptors mediate skeletal muscle vasodilation",
-        "Alpha-1 adrenergic receptors (Gq/IP3) mediate vasoconstriction; beta-2 adrenergic receptors (Gs/cAMP) mediate vasodilation",
-        "Alpha-2 receptors mediate vasodilation; nicotinic receptors mediate vasoconstriction",
-        "Beta-2 receptors mediate vasoconstriction; alpha-1 receptors mediate vasodilation"
+        "Beta-1 causes vasoconstriction; M3 causes skeletal-muscle vasodilation",
+        "Alpha-1 causes vasoconstriction; beta-2 causes skeletal-muscle vasodilation",
+        "Alpha-2 causes vasodilation; nicotinic receptors cause vasoconstriction",
+        "Beta-2 causes vasoconstriction; alpha-1 causes vasodilation"
       ],
       "answer": 1,
-      "explain": "Norepinephrine binds vascular alpha-1 receptors to raise intracellular Ca2+ and constrict blood vessels, whereas low-to-moderate circulating epinephrine preferentially activates high-affinity beta-2 receptors in skeletal muscle and hepatic arterioles to raise cAMP and relax smooth muscle.",
+      "explain": "Norepinephrine activates vascular alpha-1 receptors, increasing smooth-muscle intracellular Ca2+ and causing vasoconstriction. Circulating epinephrine can activate beta-2 receptors in skeletal-muscle arterioles, increasing cAMP and promoting vasodilation.",
       "verified": false,
       "open": {
         "q": "Identify the adrenergic receptor subtype responsible for sympathetic vasoconstriction and the subtype responsible for epinephrine-mediated vasodilation in skeletal muscle arterioles.",
@@ -147,13 +147,13 @@
       "sub": "Autonomic Innervation and Adrenergic/Cholinergic Receptors",
       "q": "What is Dale's vasomotor reversal phenomenon when intravenous epinephrine is administered before versus after an alpha-adrenergic antagonist (such as phentolamine)?",
       "options": [
-        "Epinephrine lowers pressure normally, but raises it after α-blockade because β₁ effects become unopposed",
-        "Epinephrine causes bradycardia normally, but tachycardia after α-blockade through vagal activation",
-        "Epinephrine raises pressure through α₁ effects normally, but lowers it after α-blockade because β₂ vasodilation is unopposed",
-        "Epinephrine has no vascular effect after α-blockade because both α and β receptors are blocked"
+        "Alpha-blockade converts epinephrine's depressor response into a pressor response",
+        "Alpha-blockade leaves beta-1 cardiac stimulation as the only remaining effect",
+        "Alpha-blockade leaves beta-2 vasodilation unopposed, lowering blood pressure",
+        "Alpha-blockade abolishes both alpha- and beta-receptor effects"
       ],
       "answer": 2,
-      "explain": "Epinephrine stimulates both alpha-1 (vasoconstrictor) and beta-2 (vasodilator) receptors; blocking alpha receptors leaves beta-2 vasodilation unopposed, reversing epinephrine's pressor response into a depressor response.",
+      "explain": "Epinephrine normally stimulates alpha-1 vasoconstriction as well as beta-2 vasodilation. After alpha-receptor blockade, beta-2-mediated vasodilation predominates and the pressor response is reversed to a depressor response (Dale's vasomotor reversal).",
       "verified": false,
       "open": {
         "q": "Explain Dale's vasomotor reversal observed when epinephrine is injected after alpha-adrenergic receptor blockade.",
@@ -216,13 +216,13 @@
       "sub": "Arterial Baroreceptor Reflex",
       "q": "What cardiovascular response is produced by firm external massage of the carotid sinus in the neck?",
       "options": [
-        "Carotid sinus stretch reduces baroreceptor firing, producing tachycardia and increased sympathetic vasomotor tone",
-        "Carotid sinus stretch increases baroreceptor firing, producing vagal bradycardia and reduced sympathetic vasomotor tone",
-        "Carotid sinus massage activates chemoreceptors, producing hyperventilation and systemic vasoconstriction",
-        "Carotid sinus massage increases renin release, producing delayed sodium retention and hypertension"
+        "Reduced baroreceptor firing causes tachycardia and increased sympathetic tone",
+        "Increased baroreceptor firing causes vagal bradycardia and reduced sympathetic tone",
+        "Carotid body activation causes hyperventilation and systemic vasoconstriction",
+        "Renin release increases, causing delayed sodium retention"
       ],
       "answer": 1,
-      "explain": "Carotid sinus massage mechanically deforms baroreceptor nerve endings, increasing CN IX firing to the NTS and boosting vagal outflow (used clinically to terminate paroxysmal supraventricular tachycardia).",
+      "explain": "Carotid sinus massage stretches the baroreceptor endings, increasing afferent firing through cranial nerve IX to the NTS. This increases vagal activity and reduces sympathetic outflow, producing reflex bradycardia and sometimes hypotension.",
       "verified": false,
       "open": {
         "q": "What happens to heart rate and blood pressure during carotid sinus massage, and why?",
@@ -241,11 +241,11 @@
       "options": [
         "Aortic bifurcation; increased renin and aldosterone release",
         "Carotid body; increased erythropoietin release",
-        "Atrial and pulmonary stretch receptors reduce ADH and renal sympathetic activity and promote ANP release",
-        "Hepatic portal triad; increased bile salt synthesis"
+        "Atrial and pulmonary receptors; reduced ADH and renal sympathetic activity, with increased ANP",
+        "Hepatic portal region; increased bile salt synthesis"
       ],
       "answer": 2,
-      "explain": "Cardiopulmonary stretch receptors sense central venous fullness (e.g., lying down or head-out water immersion) and trigger the Henry-Gauer reflex (ADH suppression -> water diuresis), renal sympathoinhibition, and ANP release.",
+      "explain": "Cardiopulmonary low-pressure stretch receptors detect central blood-volume expansion. Their activation suppresses ADH and renal sympathetic activity and promotes atrial natriuretic peptide (ANP) release, favouring water and sodium excretion.",
       "verified": false,
       "open": {
         "q": "Describe the renal and hormonal responses triggered when increased central blood volume stretches low-pressure atrial and cardiopulmonary volume receptors.",
@@ -262,13 +262,13 @@
       "sub": "Cardiopulmonary Low-Pressure Receptors",
       "q": "What is the Bezold-Jarisch reflex, triggered by stimulation of ventricular chemosensitive and mechanosensitive C-fiber receptors (such as during acute inferior myocardial infarction)?",
       "options": [
-        "Marked hypertension, tachycardia, and hyperpnea",
-        "Coronary vasospasm and hyperglycemia",
-        "Pulmonary edema and bronchodilation",
-        "Triad of reflex bradycardia, systemic hypotension (vasodilation), and apnea/hypopnea"
+        "Hypertension, tachycardia and hyperpnoea",
+        "Coronary vasospasm and hyperglycaemia",
+        "Pulmonary oedema and bronchodilation",
+        "Bradycardia, hypotension and respiratory inhibition"
       ],
       "answer": 3,
-      "explain": "Inferior-posterior LV wall ischemia or severe underfilling stimulates vagal unmyelinated C-fibers in the left ventricle, causing paradoxical vagal bradycardia and sympathetic withdrawal (hypotension).",
+      "explain": "Stimulation of ventricular vagal C-fibre endings can produce the Bezold–Jarisch reflex: increased vagal activity and sympathetic withdrawal cause bradycardia and hypotension, often accompanied by respiratory inhibition.",
       "verified": false,
       "open": {
         "q": "State the classic triad of cardiovascular and respiratory responses in the Bezold-Jarisch reflex.",
@@ -283,15 +283,15 @@
       "type": "mcq",
       "level": 1,
       "sub": "Chemoreceptor Reflexes",
-      "q": "When arterial blood pressure falls below ~60 to 80 mmHg (where baroreceptors become silent), how do peripheral chemoreceptors in the carotid and aortic bodies help support blood pressure?",
+      "q": "When arterial pressure is severely reduced, how can peripheral chemoreceptors in the carotid and aortic bodies help support blood pressure?",
       "options": [
-        "Low-flow hypoxia and acidosis activate carotid and aortic body afferents, increasing medullary sympathetic vasoconstrictor output",
-        "Low-flow hypoxia inhibits carotid and aortic body afferents, reducing sympathetic vasoconstrictor output",
-        "Peripheral chemoreceptors release renin directly, increasing circulating angiotensin II",
-        "Peripheral chemoreceptors stimulate vagal vasodilation in the splanchnic circulation"
+        "Reduced blood flow causes local hypoxia and acidosis, increasing afferent drive to medullary sympathetic centres",
+        "Reduced blood flow silences chemoreceptor afferents and decreases sympathetic vasoconstrictor output",
+        "Peripheral chemoreceptors release renin directly into the circulation",
+        "Peripheral chemoreceptors cause vagal vasodilation in the splanchnic circulation"
       ],
       "answer": 0,
-      "explain": "Below MAP 80 mmHg, reduced blood flow to the carotid and aortic bodies causes local O2 depletion and CO2/H+ buildup, exciting chemoreceptor afferents (CN IX and X) to reinforce medullary sympathetic vasoconstriction.",
+      "explain": "Severe hypotension reduces perfusion of the carotid and aortic bodies. Local hypoxia and accumulation of CO2 and H+ stimulate chemoreceptor afferents through cranial nerves IX and X, reinforcing medullary sympathetic vasoconstrictor activity.",
       "verified": false,
       "open": {
         "q": "How do peripheral chemoreceptors in the carotid and aortic bodies respond when severe hypotension reduces their blood flow?",
@@ -306,15 +306,15 @@
       "type": "mcq",
       "level": 2,
       "sub": "Chemoreceptor Reflexes",
-      "q": "What is the primary (direct) cardiac chronotropic effect of isolated carotid body chemoreceptor stimulation when ventilation is held constant (apnea), versus the secondary effect when hyperventilation is allowed?",
+      "q": "What is the direct cardiac response to carotid-body chemoreceptor stimulation during apnoea, and how may lung inflation modify the response when breathing continues?",
       "options": [
-        "Primary effect is tachycardia; secondary effect with hyperventilation is bradycardia",
-        "Direct carotid chemoreceptor stimulation causes vagal bradycardia; lung inflation can add tachycardia",
-        "Both primary and secondary effects cause complete cardiac arrest",
-        "Carotid body stimulation has no effect on heart rate under any condition"
+        "Direct tachycardia; lung inflation adds further tachycardia",
+        "Direct vagal bradycardia; lung inflation can reduce vagal influence and produce tachycardia",
+        "Direct cardiac arrest; lung inflation restores sinus rhythm",
+        "No direct heart-rate response; lung inflation causes persistent bradycardia"
       ],
       "answer": 1,
-      "explain": "Direct carotid chemoreceptor firing excites vagal cardioinhibitory neurons (bradycardia, conserving O2 during breath-holding/diving), but in spontaneously breathing subjects, lung inflation stretch receptors inhibit vagal tone to cause net tachycardia. Key detail: Primary direct effect is vagal bradycardia (seen in the diving reflex), whereas secondary pulmonary stretch receptor activation during hyperventilation produces tachycardia.",
+      "explain": "Carotid-body chemoreceptor activation can directly increase vagal cardioinhibitory activity and slow the heart, especially during apnoea. When breathing continues, pulmonary stretch-receptor input associated with lung inflation can inhibit vagal tone and produce a secondary tachycardic response.",
       "verified": false,
       "open": {
         "q": "Contrast the direct heart rate response to carotid body chemoreceptor stimulation during apnea versus when hyperventilation occurs.",
@@ -352,15 +352,15 @@
       "type": "mcq",
       "level": 2,
       "sub": "Valsalva Maneuver and Orthostatic Reflexes",
-      "q": "How is orthostatic (postural) hypotension clinically defined, and what autonomic defect commonly underlies neurogenic orthostatic hypotension?",
+      "q": "How is orthostatic hypotension defined, and what autonomic abnormality commonly causes the neurogenic form?",
       "options": [
-        "A rise in systolic BP of 30 mmHg upon lying down; caused by excess aldosterone",
-        "Fall ≥20 systolic or ≥10 diastolic within 3 min; often impaired sympathetic/baroreflex compensation",
-        "A drop in heart rate below 40 bpm during exercise; caused by hyperthyroidism",
-        "A rise in diastolic BP of 15 mmHg after eating; caused by insulin deficiency"
+        "A systolic rise of 30 mmHg on lying down, due to excess aldosterone",
+        "A fall of at least 20 mmHg systolic or 10 mmHg diastolic within 3 minutes, due to impaired sympathetic compensation",
+        "A heart rate below 40 beats/min during exercise, due to hyperthyroidism",
+        "A diastolic rise of 15 mmHg after eating, due to insulin deficiency"
       ],
       "answer": 1,
-      "explain": "Normally, standing pools ~500 mL of blood in lower-body veins, which is rapidly compensated by baroreceptor-mediated alpha-1 vasoconstriction and tachycardia; failure of this reflex (e.g., diabetic autonomic neuropathy, alpha-blockers, hypovolemia) drops systolic BP by >=20 mmHg or diastolic BP by >=10 mmHg. Key detail: A sustained drop in systolic BP of at least 20 mmHg or diastolic BP of at least 10 mmHg within 3 minutes of standing, caused by impaired sympathetic vasoconstrictor or baroreceptor reflex compensation.",
+      "explain": "Orthostatic hypotension is a sustained fall in systolic BP of at least 20 mmHg or diastolic BP of at least 10 mmHg within 3 minutes of standing. Normally, baroreceptor unloading increases sympathetic activity, causing tachycardia and alpha-1-mediated vasoconstriction. Neurogenic orthostatic hypotension results when this compensatory autonomic response is impaired.",
       "verified": false,
       "open": {
         "q": "State the blood pressure criteria defining orthostatic hypotension within 3 minutes of standing.",
@@ -377,13 +377,13 @@
       "sub": "Hormonal Control of Cardiovascular Function",
       "q": "Through which two distinct receptor subtypes does arginine vasopressin (antidiuretic hormone, ADH) regulate arterial blood pressure and body fluid volume?",
       "options": [
-        "Beta-1 receptors on the SA node and D1 receptors in the brain",
-        "AT1 receptors in the adrenal cortex and M2 receptors in the heart",
-        "V1 (Gq/IP3): vasoconstriction; V2 (Gs/cAMP): AQP2 insertion in collecting ducts",
-        "Alpha-2 receptors on platelets and H2 receptors in the stomach"
+        "Beta-1 receptors increase heart rate; D1 receptors dilate cerebral vessels",
+        "AT1 receptors stimulate aldosterone; M2 receptors slow the heart",
+        "V1 receptors cause vasoconstriction; V2 receptors increase renal water reabsorption",
+        "Alpha-2 receptors inhibit platelets; H2 receptors stimulate gastric acid"
       ],
       "answer": 2,
-      "explain": "Released from the posterior pituitary in response to hyperosmolarity or severe hypovolemia/hypotension (>10% volume loss), ADH acts via V1 receptors to raise TPR and V2 receptors to conserve free water. Key detail: V1 receptors (Gq/IP3) on vascular smooth muscle causing potent vasoconstriction, and V2 receptors (Gs/cAMP) on renal collecting duct principal cells inserting aquaporin-2 water channels.",
+      "explain": "ADH acts on V1 receptors (Gq/IP3) in vascular smooth muscle to cause vasoconstriction and on V2 receptors (Gs/cAMP) in renal collecting-duct principal cells to insert aquaporin-2 channels and increase water reabsorption.",
       "verified": false,
       "open": {
         "q": "Contrast the receptor subtypes, second messengers, and physiological actions of vasopressin (ADH) on blood vessels versus renal collecting ducts.",
@@ -400,13 +400,13 @@
       "sub": "Hormonal Control of Cardiovascular Function",
       "q": "Which stimulus triggers the release of B-type natriuretic peptide (BNP) from cardiac myocytes, and how is plasma BNP used clinically?",
       "options": [
-        "Atrial hypoxia; used to diagnose pulmonary embolism exclusively",
+        "Atrial hypoxia; used exclusively to diagnose pulmonary embolism",
         "Carotid sinus compression; used to diagnose essential hypertension",
-        "Systemic dehydration; used to assess glomerular filtration rate",
-        "Ventricular wall stretch releases BNP; plasma BNP/NT-proBNP supports heart-failure diagnosis"
+        "Systemic dehydration; used to estimate glomerular filtration rate",
+        "Ventricular wall stretch; elevated BNP/NT-proBNP supports heart-failure diagnosis"
       ],
       "answer": 3,
-      "explain": "Ventricular myocytes synthesize and secrete BNP when stretched by high end-diastolic volume/pressure, promoting natriuresis, vasodilation, and RAAS suppression; elevated BNP distinguishes cardiogenic dyspnea (heart failure) from primary lung disease. Key detail: Ventricular myocardial wall stretch from volume or pressure overload; elevated plasma BNP/NT-proBNP serves as a diagnostic biomarker for congestive heart failure.",
+      "explain": "Ventricular myocytes release BNP in response to increased wall stretch from pressure or volume overload. BNP and NT-proBNP levels support the diagnosis and assessment of heart failure, including in patients presenting with dyspnoea.",
       "verified": false,
       "open": {
         "q": "What mechanical stimulus releases B-type natriuretic peptide (BNP) from the heart, and what is its major clinical diagnostic utility?",
@@ -423,13 +423,13 @@
       "sub": "Hormonal Control of Cardiovascular Function",
       "q": "Why do patients taking angiotensin-converting enzyme (ACE) inhibitors (such as lisinopril or enalapril) sometimes develop a persistent dry cough or angioedema?",
       "options": [
-        "ACE inhibition raises bradykinin, causing cough and angioedema",
-        "ACE inhibitors stimulate excessive renin and angiotensin II production",
-        "ACE inhibitors directly activate bronchial muscarinic M3 receptors",
-        "ACE inhibitors cause severe hypercalcemia and bronchospasm"
+        "Bradykinin accumulates because its degradation by ACE is reduced",
+        "Renin release is suppressed, causing excess angiotensin II",
+        "Bronchial muscarinic M3 receptors are directly activated",
+        "Serum calcium rises and causes bronchospasm"
       ],
       "answer": 0,
-      "explain": "In addition to converting angiotensin I to angiotensin II, ACE degrades vasodilatory inflammatory peptides including bradykinin and substance P; elevated bradykinin sensitizes airway C-fibers (dry cough) and increases vascular permeability (angioedema). Key detail: ACE is identical to kininase II, so inhibiting ACE prevents breakdown of bradykinin, leading to bradykinin accumulation in bronchial mucosa and blood vessels.",
+      "explain": "ACE also acts as kininase II, degrading bradykinin. ACE inhibition therefore increases bradykinin, which can sensitise airway sensory nerves (dry cough) and increase vascular permeability (angioedema).",
       "verified": false,
       "open": {
         "q": "Explain the biochemical mechanism responsible for the dry cough side effect of ACE inhibitors.",
@@ -447,12 +447,12 @@
       "q": "What is 'central command' at the onset of voluntary exercise?",
       "options": [
         "Renal juxtaglomerular cells respond directly to increased blood glucose",
-        "Motor cortical signals activate medullary cardiovascular centres before muscle metabolites accumulate",
+        "Motor-cortex signals activate cardiovascular centres before exercise metabolites accumulate",
         "Cerebellar Purkinje cells directly inhibit the sinoatrial node",
         "Pulmonary veins passively stretch and initiate exercise tachycardia"
       ],
       "answer": 1,
-      "explain": "At the very start (or even anticipation) of exercise, motor cortex collaterals reset the baroreflex to a higher operating pressure, suppressing vagal cardioinhibition and boosting sympathetic drive to raise HR, contractility, and BP immediately.",
+      "explain": "At the onset or even anticipation of voluntary exercise, collateral signals from motor areas activate cardiovascular centres. This reduces vagal restraint and increases sympathetic drive, raising heart rate and contractility before metabolites from active muscles accumulate.",
       "verified": false,
       "open": {
         "q": "Define 'central command' in the cardiovascular regulation of exercise.",
@@ -492,13 +492,13 @@
       "sub": "Integrated Cardiovascular Response to Exercise",
       "q": "How is cardiac output redistributed among major organ beds during strenuous dynamic exercise compared to rest?",
       "options": [
-        "Renal and splanchnic blood flows triple while skeletal muscle flow drops",
-        "Cerebral blood flow increases fourfold while coronary flow falls",
-        "All vascular beds receive the exact same percentage of cardiac output as at rest",
-        "Exercise increases muscle/coronary/skin flow and reduces renal/splanchnic flow; cerebral flow is maintained"
+        "Renal and splanchnic flow rise while skeletal-muscle flow falls",
+        "Cerebral flow increases several-fold while coronary flow falls",
+        "All vascular beds maintain the same share of cardiac output as at rest",
+        "Muscle, coronary and skin flow rise; renal and splanchnic flow fall, while cerebral flow is maintained"
       ],
       "answer": 3,
-      "explain": "Sympathetic alpha-1 vasoconstriction shunts blood away from temporarily non-essential splanchnic and renal beds (~20-25% of CO at rest down to ~3-5% during maximal exercise) toward active skeletal muscles, myocardium, and skin (for heat dissipation), while cerebral blood flow remains constant (~750 mL/min). Key detail: Skeletal muscle (up to ~80-85% of CO), coronary, and cutaneous blood flows increase markedly, whereas splanchnic and renal blood flows decrease via alpha-1 sympathetic vasoconstriction.",
+      "explain": "During strenuous dynamic exercise, blood flow increases to active skeletal muscle, the myocardium and (for heat loss) the skin. Sympathetic vasoconstriction reduces renal and splanchnic flow, while cerebral blood flow is relatively maintained.",
       "verified": false,
       "open": {
         "q": "How does blood flow distribution to skeletal muscle, heart, brain, and splanchnic/renal organs change during strenuous aerobic exercise?",
@@ -516,7 +516,7 @@
       "q": "In a patient who acutely loses 1,000 mL (~20%) of blood volume, which sequence of compensatory neurohumoral mechanisms helps restore arterial blood pressure?",
       "options": [
         "Baroreceptor unloading increases sympathetic activity, followed by RAAS/ADH activation and capillary fluid recruitment",
-        "Increased vagal activity causes bradycardia, vasodilation and ANP release",
+        "Vagal activation causes bradycardia, vasodilation and ANP release",
         "Renin and ADH are suppressed, producing rapid renal diuresis",
         "Sympathetic inhibition causes blood to pool in the splanchnic veins"
       ],
@@ -538,13 +538,13 @@
       "sub": "Cardiovascular Response to Hemorrhage and Shock",
       "q": "Why does preferential sympathetic alpha-1 vasoconstriction during hemorrhagic shock spare the cerebral and coronary circulations?",
       "options": [
-        "Brain and heart blood vessels secrete aldosterone to block norepinephrine",
-        "Low α1 influence and strong local metabolic autoregulation preserve brain and heart perfusion",
-        "Sympathetic nerves do not enter the thorax or cranium",
-        "Blood flows backward from veins into arteries in the heart and brain"
+        "Brain and heart vessels release aldosterone to block norepinephrine",
+        "Local metabolic autoregulation helps preserve cerebral and coronary perfusion",
+        "Sympathetic nerves do not reach the thorax or cranium",
+        "Blood flows backwards from veins into arteries in these organs"
       ],
       "answer": 1,
-      "explain": "Low alpha-1 receptor expression combined with dominant metabolic autoregulation preserves vital perfusion to the brain and myocardium while skin, gut, and kidneys undergo intense vasoconstriction. Key detail: Cerebral and coronary arterioles have sparse alpha-1 adrenergic receptor density and are governed predominantly by powerful local metabolic autoregulation.",
+      "explain": "Cerebral and coronary perfusion are protected mainly by powerful local autoregulatory mechanisms, including responses to CO2, H+, adenosine and other metabolites. Sympathetic vasoconstriction is less dominant in these beds than in skin, gut and kidneys.",
       "verified": false,
       "open": {
         "q": "Why are cerebral and coronary blood flows preserved during the intense sympathetic vasoconstrictor response to hemorrhagic shock?",
@@ -561,9 +561,9 @@
       "sub": "Cardiovascular Response to Hemorrhage and Shock",
       "q": "Which mechanisms drive decompensated (irreversible) hemorrhagic shock when severe hypotension persists uncorrected?",
       "options": [
-        "Excessive baroreceptor firing produces persistent systemic hypertension",
-        "Bone marrow releases enough new erythrocytes within minutes to restore oxygen delivery",
-        "Persistent hypoxia and acidosis impair vascular responsiveness, while myocardial depression and tissue injury worsen shock",
+        "Excess baroreceptor firing produces persistent systemic hypertension",
+        "Bone marrow releases enough erythrocytes within minutes to restore oxygen delivery",
+        "Persistent hypoxia and acidosis impair vascular responsiveness, while myocardial depression worsens shock",
         "Sustained hyperventilation permanently corrects tissue acidosis"
       ],
       "answer": 2,
@@ -584,13 +584,13 @@
       "sub": "Diving Reflex and Special Reflexes",
       "q": "What is the mammalian diving reflex triggered by breath-holding (apnea) combined with cold water contact on the face (ophthalmic/maxillary trigeminal nerve afferents)?",
       "options": [
-        "Tachycardia, cutaneous vasodilation, and hyperventilation",
-        "Hypotension, bronchodilation, and profuse sweating",
+        "Tachycardia, cutaneous vasodilation and hyperventilation",
+        "Hypotension, bronchodilation and profuse sweating",
         "Increased renal blood flow and brisk diuresis",
-        "Marked vagal bradycardia, intense peripheral sympathetic vasoconstriction (shunting blood to heart and brain), and apnea to conserve oxygen"
+        "Vagal bradycardia with peripheral sympathetic vasoconstriction to conserve oxygen"
       ],
       "answer": 3,
-      "explain": "Cold facial trigeminal stimulation plus apnea activates both parasympathetic vagal output to the heart (bradycardia) and sympathetic vasoconstrictor output to limb/splanchnic beds, conserving O2 for brain and myocardium.",
+      "explain": "Cold facial stimulation carried by trigeminal afferents, together with apnoea, activates vagal output to the heart (bradycardia) and sympathetic vasoconstriction in peripheral beds. This helps conserve oxygen for the heart and brain.",
       "verified": false,
       "open": {
         "q": "State the stimulus and three physiological responses of the mammalian diving reflex.",
@@ -653,13 +653,13 @@
       "sub": "Clinical Correlations",
       "q": "A 39-year-old woman presents with episodic headaches, profuse sweating, palpitations, and paroxysmal hypertension (BP 220/126 mmHg). Plasma free metanephrines are markedly elevated, and abdominal CT identifies a 4 cm right adrenal medullary pheochromocytoma. Why must an alpha-adrenergic blocker (such as phenoxybenzamine) be started BEFORE administering a beta-blocker?",
       "options": [
-        "Beta-blockers stimulate the adrenal tumor to double its size",
-        "Alpha-blockers directly inhibit catechol-O-methyltransferase",
-        "Beta-blockade first removes β2 vasodilation, leaving α1 vasoconstriction unopposed",
+        "Beta-blockers stimulate the adrenal tumour to grow rapidly",
+        "Alpha-blockers inhibit catechol-O-methyltransferase",
+        "Giving a beta-blocker first leaves alpha-1 vasoconstriction unopposed",
         "Phenoxybenzamine increases vagal tone to the adrenal medulla"
       ],
       "answer": 2,
-      "explain": "In catecholamine excess (epinephrine/norepinephrine), beta-2 vasodilation partially buffers alpha-1 vasoconstriction; giving a beta-blocker first removes beta-2 dilation and cardiac beta-1 output against extreme alpha-1 afterload, triggering severe hypertensive crisis. Key detail: Blocking beta-2 vasodilatory receptors first leaves alpha-1 vasoconstriction completely unopposed, precipitating a life-threatening hypertensive crisis and acute pulmonary edema.",
+      "explain": "In catecholamine excess, beta-2-mediated vasodilation partly offsets alpha-1 vasoconstriction. Alpha blockade must therefore be established before beta blockade; otherwise, blocking beta-2 first can leave severe alpha-1 vasoconstriction unopposed and precipitate a hypertensive crisis.",
       "verified": false,
       "open": {
         "q": "Why is initiating beta-blocker monotherapy before alpha-adrenergic blockade contraindicated in a patient with pheochromocytoma?",
