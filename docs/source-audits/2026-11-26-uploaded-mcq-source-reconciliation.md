@@ -428,3 +428,18 @@ Five original MCQs were added to each of three topic banks, informed by the uplo
 All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations. They remain `verified: false` pending academic review. This remains targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
 
 **Cumulative source-reconciliation additions: 208 original questions** (193 previously recorded plus these 15).
+
+
+## Lymphoid histology, skin physiology and xenobiotic biotransformation — 27 November 2026
+
+Five original MCQs were added to each of three topic banks, guided by the uploaded anatomy, physiology and biochemistry collections:
+
+**Anatomy / Histology — lymphoid system (12 → 17):** lymph-node subcapsular sinus, high endothelial venules, thymic Hassall corpuscles, B-cell proliferation in secondary follicles and the lobular cortex–medulla organisation of the thymus.
+
+**Physiology — skin (49 → 54):** sympathetic cholinergic control of eccrine sweating, cutaneous vasodilation, impaired evaporative cooling in humid air, aldosterone-mediated salt conservation during heat acclimatisation and cutaneous vasoconstriction in cold.
+
+**Medical Biochemistry — detoxification and xenobiotics (60 → 65):** cytochrome P450-mediated Phase I oxidation, UDP-glucuronic acid as the glucuronidation donor, NAPQI-mediated paracetamol toxicity, CYP3A4 induction and glutathione conjugation.
+
+All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
+
+**Cumulative source-reconciliation additions: 223 original questions** (208 previously recorded plus these 15).
