@@ -6912,6 +6912,541 @@
         "https://www.ncbi.nlm.nih.gov/books/NBK507708/",
         "https://www.ncbi.nlm.nih.gov/books/NBK507709/"
       ]
+    },
+    {
+      "id": "tf-gh-epithelium-002",
+      "type": "tf",
+      "topic": "gh-epithelium",
+      "level": 2,
+      "sub": "Epithelial tissue classification",
+      "q": "About the classification and functions of epithelial tissue:",
+      "items": [
+        {
+          "text": "Simple epithelium consists of a single layer of cells.",
+          "answer": true,
+          "explain": "Simple epithelium has one cell layer, regardless of cell shape."
+        },
+        {
+          "text": "Pseudostratified epithelium is truly multilayered because every cell reaches the basement membrane.",
+          "answer": false,
+          "explain": "Pseudostratified epithelium appears multilayered, but all cells contact the basement membrane; not all reach the free surface."
+        },
+        {
+          "text": "Transitional epithelium can change its appearance as the urinary tract distends.",
+          "answer": true,
+          "explain": "Urothelium changes cell shape and surface appearance with filling and stretching."
+        },
+        {
+          "text": "Stratified squamous epithelium is specialised primarily for rapid diffusion.",
+          "answer": false,
+          "explain": "Its multiple layers primarily protect against abrasion; thin simple squamous epithelium is suited to diffusion."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK559063/"
+      ]
+    },
+    {
+      "id": "tf-gh-connective-002",
+      "type": "tf",
+      "topic": "gh-connective-tissue",
+      "level": 2,
+      "sub": "Connective tissue matrix",
+      "q": "About connective tissue and its extracellular matrix:",
+      "items": [
+        {
+          "text": "The extracellular matrix of connective tissue includes fibres and ground substance.",
+          "answer": true,
+          "explain": "The matrix comprises protein fibres embedded in ground substance."
+        },
+        {
+          "text": "Fibroblasts are major cells responsible for producing connective tissue fibres and matrix.",
+          "answer": true,
+          "explain": "Fibroblasts synthesise collagen, elastic fibres and components of ground substance."
+        },
+        {
+          "text": "Hyaline cartilage normally contains abundant blood vessels within its matrix.",
+          "answer": false,
+          "explain": "Cartilage is avascular; nutrients diffuse through its matrix from surrounding tissues or synovial fluid."
+        },
+        {
+          "text": "Mature adipocytes are specialised connective-tissue cells that store triglyceride.",
+          "answer": true,
+          "explain": "Adipocytes store lipid and also have endocrine functions."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK542226/",
+        "https://ncbi.nlm.nih.gov/sites/books/NBK538534/"
+      ]
+    },
+    {
+      "id": "tf-sh-cardiovascular-002",
+      "type": "tf",
+      "topic": "sh-cardiovascular-system",
+      "level": 2,
+      "sub": "Cardiac muscle histology",
+      "q": "About the microscopic structure of cardiac muscle:",
+      "items": [
+        {
+          "text": "Cardiac muscle fibres are striated and usually contain a centrally located nucleus.",
+          "answer": true,
+          "explain": "Cardiomyocytes are striated, branched cells, usually with one central nucleus."
+        },
+        {
+          "text": "Intercalated discs contain specialised junctions that mechanically and electrically connect cardiomyocytes.",
+          "answer": true,
+          "explain": "Desmosomes and fascia adherens provide mechanical coupling, while gap junctions permit electrical coupling."
+        },
+        {
+          "text": "Cardiac muscle fibres are long, unbranched and multinucleated like typical skeletal muscle fibres.",
+          "answer": false,
+          "explain": "Cardiomyocytes are generally short, branched and have one or occasionally two central nuclei."
+        },
+        {
+          "text": "Purkinje fibres are modified cardiac muscle cells specialised for rapid impulse conduction.",
+          "answer": true,
+          "explain": "Subendocardial Purkinje cells are large, glycogen-rich conducting cardiomyocytes."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK554544/"
+      ]
+    },
+    {
+      "id": "tf-emb-gametes-002",
+      "type": "tf",
+      "topic": "emb-gametes-fertilization",
+      "level": 2,
+      "sub": "Fertilisation and early cleavage",
+      "q": "About fertilisation and early human development:",
+      "items": [
+        {
+          "text": "Fertilisation normally occurs in the ampulla of the uterine tube.",
+          "answer": true,
+          "explain": "The ampulla is the usual site where the sperm and secondary oocyte meet."
+        },
+        {
+          "text": "The secondary oocyte completes meiosis II before sperm penetration.",
+          "answer": false,
+          "explain": "Sperm penetration triggers completion of meiosis II; the ovulated cell is arrested in metaphase II."
+        },
+        {
+          "text": "Cleavage increases the number of blastomeres without a corresponding increase in the overall size of the conceptus.",
+          "answer": true,
+          "explain": "Early mitotic divisions partition the zygote into progressively smaller blastomeres within the zona pellucida."
+        },
+        {
+          "text": "The morula forms before the blastocyst.",
+          "answer": true,
+          "explain": "Compaction produces the morula, which subsequently develops a blastocyst cavity and distinct cell populations."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK542186/"
+      ]
+    },
+    {
+      "id": "tf-se-pharyngeal-002",
+      "type": "tf",
+      "topic": "se-pharyngeal-apparatus",
+      "level": 2,
+      "sub": "Pharyngeal arches and derivatives",
+      "q": "About the pharyngeal apparatus:",
+      "items": [
+        {
+          "text": "The first pharyngeal arch contributes to the maxilla, mandible and muscles of mastication.",
+          "answer": true,
+          "explain": "The first arch forms maxillary and mandibular prominences and is associated with muscles of mastication."
+        },
+        {
+          "text": "The second pharyngeal arch is associated with the facial nerve.",
+          "answer": true,
+          "explain": "The second arch musculature is supplied by cranial nerve VII."
+        },
+        {
+          "text": "The third pharyngeal arch is associated with the glossopharyngeal nerve.",
+          "answer": true,
+          "explain": "CN IX supplies third-arch derivatives, including stylopharyngeus."
+        },
+        {
+          "text": "The fourth and sixth arches are both supplied by the hypoglossal nerve.",
+          "answer": false,
+          "explain": "The fourth arch is associated with the superior laryngeal branch of CN X and the sixth with its recurrent laryngeal branch."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK544353/"
+      ]
+    },
+    {
+      "id": "tf-pi-motor-gi-002",
+      "type": "tf",
+      "topic": "pi-motor-functions-of-the-gi-tract",
+      "level": 2,
+      "sub": "Gastrointestinal motility",
+      "q": "About gastrointestinal motility:",
+      "items": [
+        {
+          "text": "Interstitial cells of Cajal contribute to the generation and propagation of gastrointestinal slow waves.",
+          "answer": true,
+          "explain": "These pacemaker cells generate electrical slow waves that help organise smooth-muscle activity."
+        },
+        {
+          "text": "Slow waves are themselves equivalent to action potentials and always produce contractions.",
+          "answer": false,
+          "explain": "Slow waves set the timing of excitability; spike potentials and calcium entry are needed for stronger contractions."
+        },
+        {
+          "text": "The myenteric plexus is located between the circular and longitudinal muscle layers.",
+          "answer": true,
+          "explain": "Auerbach's plexus lies between the two main layers of the muscularis externa and regulates motility."
+        },
+        {
+          "text": "Peristalsis generally propels gastrointestinal contents aborally.",
+          "answer": true,
+          "explain": "Coordinated contraction behind and relaxation ahead of a bolus move contents along the tract."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK545268/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK537103/"
+      ]
+    },
+    {
+      "id": "tf-pi-digestion-002",
+      "type": "tf",
+      "topic": "pi-digestion-and-absorption",
+      "level": 2,
+      "sub": "Digestion and nutrient absorption",
+      "q": "About digestion and absorption of nutrients:",
+      "items": [
+        {
+          "text": "Most digestion and absorption of macronutrients occur in the small intestine.",
+          "answer": true,
+          "explain": "Pancreatic, biliary and intestinal processes make the small intestine the principal site."
+        },
+        {
+          "text": "Pancreatic bicarbonate helps neutralise acidic chyme entering the duodenum.",
+          "answer": true,
+          "explain": "Bicarbonate-rich pancreatic secretion raises luminal pH to support intestinal and pancreatic enzymes."
+        },
+        {
+          "text": "Dietary long-chain fatty acids are transported from enterocytes mainly as free fatty acids directly into portal blood.",
+          "answer": false,
+          "explain": "They are re-esterified, packaged into chylomicrons and enter intestinal lymph before reaching systemic blood."
+        },
+        {
+          "text": "Vitamin B12 absorption requires intrinsic factor and occurs mainly in the terminal ileum.",
+          "answer": true,
+          "explain": "The intrinsic factor–B12 complex binds receptors in the terminal ileum for uptake."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK544242/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK537103/"
+      ]
+    },
+    {
+      "id": "tf-pi-accessory-002",
+      "type": "tf",
+      "topic": "pi-accessory-organs",
+      "level": 2,
+      "sub": "Pancreatic and biliary secretions",
+      "q": "About the accessory organs of digestion:",
+      "items": [
+        {
+          "text": "Secretin stimulates bicarbonate-rich secretion from pancreatic duct cells.",
+          "answer": true,
+          "explain": "Acid in the duodenum stimulates S cells to release secretin, which promotes ductal bicarbonate secretion."
+        },
+        {
+          "text": "Cholecystokinin stimulates pancreatic enzyme secretion and gallbladder contraction.",
+          "answer": true,
+          "explain": "CCK is released in response to fats and amino acids and coordinates pancreatic enzyme delivery with bile release."
+        },
+        {
+          "text": "Bile salts are digestive enzymes that hydrolyse triglycerides.",
+          "answer": false,
+          "explain": "Bile salts emulsify lipids and facilitate micelle formation; pancreatic lipase performs triglyceride hydrolysis."
+        },
+        {
+          "text": "The liver synthesises bile, while the gallbladder stores and concentrates it.",
+          "answer": true,
+          "explain": "Hepatocytes produce bile; the gallbladder concentrates and releases it in response to CCK."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537284/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK544242/"
+      ]
+    },
+    {
+      "id": "tf-pe-hypothalamus-002",
+      "type": "tf",
+      "topic": "pe-hypothalamus-and-pituitary",
+      "level": 2,
+      "sub": "Hypothalamic-pituitary regulation",
+      "q": "About hypothalamic and pituitary control:",
+      "items": [
+        {
+          "text": "Hypothalamic releasing hormones reach the anterior pituitary through the hypophyseal portal circulation.",
+          "answer": true,
+          "explain": "The portal vessels deliver hypothalamic factors directly to the anterior pituitary."
+        },
+        {
+          "text": "Oxytocin is synthesised in the anterior pituitary and stored in the hypothalamus.",
+          "answer": false,
+          "explain": "Oxytocin is synthesised in hypothalamic neurons and transported for storage and release from the posterior pituitary."
+        },
+        {
+          "text": "Dopamine tonically inhibits prolactin secretion.",
+          "answer": true,
+          "explain": "Hypothalamic dopamine acts on D2 receptors on lactotrophs to restrain prolactin release."
+        },
+        {
+          "text": "The posterior pituitary releases ADH and oxytocin that are synthesised in hypothalamic nuclei.",
+          "answer": true,
+          "explain": "The neurohypophysis stores and releases hormones made by hypothalamic magnocellular neurons."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK535380/"
+      ]
+    },
+    {
+      "id": "tf-pe-adrenal-002",
+      "type": "tf",
+      "topic": "pe-adrenal-glands",
+      "level": 2,
+      "sub": "Adrenal cortical and medullary hormones",
+      "q": "About the adrenal gland:",
+      "items": [
+        {
+          "text": "The zona glomerulosa is the principal source of aldosterone.",
+          "answer": true,
+          "explain": "The outer cortical zone produces mineralocorticoids, chiefly aldosterone."
+        },
+        {
+          "text": "The zona fasciculata is the main source of cortisol.",
+          "answer": true,
+          "explain": "The middle cortical zone produces glucocorticoids, predominantly cortisol."
+        },
+        {
+          "text": "Adrenal medullary chromaffin cells are modified postganglionic sympathetic neurons.",
+          "answer": true,
+          "explain": "They are neural-crest-derived cells that release catecholamines into the circulation in response to preganglionic sympathetic stimulation."
+        },
+        {
+          "text": "ACTH is the main direct regulator of aldosterone secretion under normal physiological conditions.",
+          "answer": false,
+          "explain": "Angiotensin II and plasma potassium are the principal regulators of aldosterone; ACTH has a minor or transient influence."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538260/"
+      ]
+    },
+    {
+      "id": "tf-bc-metabolism-010",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Glycolysis and its regulation",
+      "q": "About glycolysis:",
+      "items": [
+        {
+          "text": "Glycolysis takes place in the cytosol.",
+          "answer": true,
+          "explain": "The pathway's reactions occur in the cytosol of cells."
+        },
+        {
+          "text": "Phosphofructokinase-1 catalyses a major rate-limiting, irreversible step of glycolysis.",
+          "answer": true,
+          "explain": "PFK-1 converts fructose-6-phosphate to fructose-1,6-bisphosphate and is tightly regulated."
+        },
+        {
+          "text": "Under anaerobic conditions, conversion of pyruvate to lactate regenerates NAD+.",
+          "answer": true,
+          "explain": "Lactate dehydrogenase oxidises NADH to NAD+, allowing glycolysis to continue."
+        },
+        {
+          "text": "Glycolysis can occur only when oxygen is available.",
+          "answer": false,
+          "explain": "Glycolysis does not directly require oxygen and can produce ATP under anaerobic conditions."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK482303/"
+      ]
+    },
+    {
+      "id": "tf-bc-enzymes-004",
+      "type": "tf",
+      "topic": "bc-enzymes-and-bioenergetics",
+      "level": 2,
+      "sub": "Enzyme inhibition and cofactors",
+      "q": "About enzyme activity and inhibition:",
+      "items": [
+        {
+          "text": "A competitive inhibitor typically increases the apparent Km without changing Vmax in the classical reversible model.",
+          "answer": true,
+          "explain": "Increasing substrate concentration can overcome competitive inhibition, so Vmax remains attainable."
+        },
+        {
+          "text": "A pure noncompetitive inhibitor decreases Vmax while leaving Km unchanged in the classical model.",
+          "answer": true,
+          "explain": "Pure noncompetitive inhibition reduces active enzyme capacity without changing substrate affinity."
+        },
+        {
+          "text": "A coenzyme is always a protein component of an enzyme.",
+          "answer": false,
+          "explain": "Coenzymes are non-protein organic cofactors, often derived from vitamins."
+        },
+        {
+          "text": "Apoenzyme combined with its required cofactor forms the active holoenzyme.",
+          "answer": true,
+          "explain": "The apoenzyme is the protein component; association with its cofactor yields the functional holoenzyme."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK92001/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK545242/"
+      ]
+    },
+    {
+      "id": "tf-ba-biomembranes-004",
+      "type": "tf",
+      "topic": "ba-biomembranes",
+      "level": 2,
+      "sub": "Membrane transport and fluidity",
+      "q": "About biological membranes:",
+      "items": [
+        {
+          "text": "The fluid mosaic model describes membrane proteins embedded in or associated with a lipid bilayer.",
+          "answer": true,
+          "explain": "Membranes contain a dynamic lipid bilayer with integral and peripheral proteins."
+        },
+        {
+          "text": "Cholesterol can modulate membrane fluidity and permeability.",
+          "answer": true,
+          "explain": "Cholesterol buffers membrane fluidity, limiting excessive movement at higher temperatures and preventing tight packing at lower temperatures."
+        },
+        {
+          "text": "Simple diffusion across a membrane requires a specific carrier protein and ATP hydrolysis.",
+          "answer": false,
+          "explain": "Simple diffusion is passive and does not require a carrier or direct ATP expenditure."
+        },
+        {
+          "text": "The Na+/K+-ATPase is an example of primary active transport.",
+          "answer": true,
+          "explain": "It directly hydrolyses ATP to move sodium and potassium against their electrochemical gradients."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538211/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538338/"
+      ]
+    },
+    {
+      "id": "tf-ba-nutrition-003",
+      "type": "tf",
+      "topic": "ba-nutrition-vitamin-and-mineral-metabolism",
+      "level": 2,
+      "sub": "Fat-soluble vitamins",
+      "q": "About fat-soluble vitamins:",
+      "items": [
+        {
+          "text": "Vitamins A, D, E and K are fat-soluble vitamins.",
+          "answer": true,
+          "explain": "These four vitamins are absorbed and transported with dietary lipids."
+        },
+        {
+          "text": "Fat-soluble vitamins are commonly incorporated into micelles during intestinal absorption.",
+          "answer": true,
+          "explain": "Bile salts support micelle formation, facilitating delivery of these hydrophobic vitamins to enterocytes."
+        },
+        {
+          "text": "Vitamin K is required for gamma-carboxylation of several coagulation proteins.",
+          "answer": true,
+          "explain": "Vitamin K-dependent carboxylation enables factors such as II, VII, IX and X to bind calcium."
+        },
+        {
+          "text": "Vitamin A deficiency typically causes night blindness rather than impaired dark adaptation being an early feature.",
+          "answer": false,
+          "explain": "Night blindness is a classic early manifestation because retinal is required for the visual cycle."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK534869/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK597379/"
+      ]
+    },
+    {
+      "id": "tf-bc-vitamins-004",
+      "type": "tf",
+      "topic": "bc-vitamins-and-coenzymes",
+      "level": 2,
+      "sub": "Water-soluble vitamin coenzymes",
+      "q": "About water-soluble vitamins and coenzymes:",
+      "items": [
+        {
+          "text": "Thiamine pyrophosphate is the active coenzyme form of vitamin B1.",
+          "answer": true,
+          "explain": "TPP participates in oxidative decarboxylation of alpha-keto acids and transketolase reactions."
+        },
+        {
+          "text": "FAD and FMN are coenzyme forms derived from riboflavin.",
+          "answer": true,
+          "explain": "Vitamin B2 is converted to FMN and FAD, which function in oxidation-reduction reactions."
+        },
+        {
+          "text": "Niacin is a precursor of NAD+ and NADP+.",
+          "answer": true,
+          "explain": "Nicotinamide-containing coenzymes transfer reducing equivalents in many metabolic pathways."
+        },
+        {
+          "text": "Vitamin C is the coenzyme required for all transamination reactions.",
+          "answer": false,
+          "explain": "Pyridoxal phosphate, derived from vitamin B6, is the principal coenzyme for transamination."
+        }
+      ],
+      "verified": true,
+      "reviewStatus": "verified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK114310/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK114304/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK114318/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538510/"
+      ]
     }
   ]
 }
