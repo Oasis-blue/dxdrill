@@ -885,6 +885,123 @@
           "Oxygen consumption continues or increases while ATP synthesis falls and heat production rises"
         ]
       }
+    },
+    {
+      "id": "enzmeng-41",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Inhibition and Clinical Correlations",
+      "q": "A farmer exposed to an organophosphate pesticide develops miosis, bronchorrhoea, muscle fasciculations and weakness. Which enzyme is inhibited by the pesticide?",
+      "options": [
+        "Acetylcholinesterase",
+        "Monoamine oxidase",
+        "Carbonic anhydrase",
+        "Adenosine deaminase"
+      ],
+      "answer": 0,
+      "explain": "Organophosphates phosphorylate the active-site serine of acetylcholinesterase, causing prolonged accumulation of acetylcholine at muscarinic, nicotinic and central synapses. The inhibition becomes functionally irreversible after ageing of the enzyme-inhibitor complex.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme is inhibited by organophosphate insecticides?",
+        "accept": [
+          "acetylcholinesterase",
+          "AChE"
+        ]
+      }
+    },
+    {
+      "id": "enzmeng-42",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Biological Oxidation and Electron Transport",
+      "q": "A laboratory compound blocks electron transfer from NADH to coenzyme Q in isolated mitochondria. Which respiratory-chain complex is its principal target?",
+      "options": [
+        "Complex I (NADH dehydrogenase)",
+        "Complex II (succinate dehydrogenase)",
+        "Complex III (cytochrome bc1 complex)",
+        "Complex IV (cytochrome c oxidase)"
+      ],
+      "answer": 0,
+      "explain": "Rotenone inhibits Complex I, preventing electrons from NADH from reaching coenzyme Q. Electron entry through Complex II can still occur, distinguishing this block from inhibition of downstream complexes.",
+      "verified": false,
+      "open": {
+        "q": "Which mitochondrial respiratory-chain complex is inhibited by rotenone?",
+        "accept": [
+          "complex I",
+          "NADH dehydrogenase"
+        ]
+      }
+    },
+    {
+      "id": "enzmeng-43",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Oxidative Phosphorylation and Uncoupling",
+      "q": "Oligomycin is added to actively respiring mitochondria. Which direct action accounts for the fall in ATP synthesis?",
+      "options": [
+        "It blocks the proton channel of ATP synthase",
+        "It transfers electrons from cytochrome c to oxygen",
+        "It inhibits the NADH-binding site of Complex I",
+        "It carries protons across the inner mitochondrial membrane"
+      ],
+      "answer": 0,
+      "explain": "Oligomycin binds the F0 component of mitochondrial ATP synthase and blocks proton movement through its channel. This prevents proton-driven rotation and ATP synthesis; the accumulating proton gradient also slows electron transport and oxygen consumption.",
+      "verified": false,
+      "open": {
+        "q": "Which component of ATP synthase is blocked by oligomycin?",
+        "accept": [
+          "F0 proton channel",
+          "F0 component",
+          "Fo subunit"
+        ]
+      }
+    },
+    {
+      "id": "enzmeng-44",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Cofactors",
+      "q": "Carbonic anhydrase catalyses the reversible hydration of carbon dioxide in erythrocytes. Which metal ion is present at its active site and required for catalysis?",
+      "options": [
+        "Zinc",
+        "Iron",
+        "Copper",
+        "Magnesium"
+      ],
+      "answer": 0,
+      "explain": "Carbonic anhydrase is a zinc metalloenzyme. Active-site Zn2+ helps activate a bound water molecule to generate hydroxide, which attacks carbon dioxide to form bicarbonate.",
+      "verified": false,
+      "open": {
+        "q": "Which metal ion is required at the active site of carbonic anhydrase?",
+        "accept": [
+          "zinc",
+          "Zn2+"
+        ]
+      }
+    },
+    {
+      "id": "enzmeng-45",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Kinetics and Clinical Correlations",
+      "q": "A patient with acute viral hepatitis has a marked rise in serum alanine aminotransferase (ALT). What does this result most directly indicate?",
+      "options": [
+        "Hepatocellular injury with leakage of intracellular enzyme into blood",
+        "Increased hepatic synthesis of plasma proteins",
+        "Obstruction of bile flow without hepatocyte injury",
+        "Increased bone osteoblast activity"
+      ],
+      "answer": 0,
+      "explain": "ALT is abundant in hepatocytes; damage to hepatocyte membranes releases it into the circulation. A raised ALT supports hepatocellular injury, although it must be interpreted with the clinical picture and other liver tests.",
+      "verified": false,
+      "open": {
+        "q": "A raised serum ALT most directly indicates what type of tissue process?",
+        "accept": [
+          "hepatocellular injury",
+          "liver cell injury",
+          "hepatocyte damage"
+        ]
+      }
     }
   ]
 }
