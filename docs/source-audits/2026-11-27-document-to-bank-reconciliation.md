@@ -212,3 +212,16 @@ Five further questions were added as gap-filling/depth expansion:
 
 **Progress clarification:** the earlier count of 227 reflected the bank before these five additions. Chapters 1–25 of this accessible 145-page PDFDrive source have now received a concept-level review across the logged passes, but this does **not** mean all printed MCQs have been reconciled one by one. A true item-level pass, checking each source item against existing bank coverage and recording matched/partial/missing status, remains outstanding. The separate 336-page scanned `Anatomy MCQ.pdf` is still a different source and remains pending access.
 
+
+
+## 8. Dual-bank reconciliation — Anatomy MCQ (PDFDrive), Chapter 1
+
+The first item-level working pass has begun with Chapter 1, **Thoracic Wall** (printed pages 11–16; 25 numbered multiple-response questions). The printed answer key was captured separately from the question pages so that each source item can be checked against its keyed statements rather than inferred from topic headings.
+
+The live bank was checked before adding material:
+- Normal MCQ bank: `data/questions/gr-thorax.json`, 95 questions at the start of this pass. Existing coverage includes the thoracic apertures, intrinsic thoracic wall muscles, innervation, serratus anterior/winged scapula, trapezius and pectoralis minor.
+- True/False bank: `data/questions/tf-core-expansion.json`, 493 stems at the start of this pass, including 7 in `gr-thorax` and existing separate stems for pleura, breast and mediastinum.
+
+One additional True/False stem was added as `tf-gr-thorax-005` under `gr-thorax`. It consolidates independently testable facts about the intrinsic thoracic wall muscles, pectoralis minor attachments, serratus anterior innervation and pectoralis major innervation. It is marked `verified:false`, with NCBI Bookshelf anatomy references and a source note identifying Chapter 1 questions 3 and 9–20 as the source coverage. The addition was re-fetched from `main`; the T/F file now contains 494 questions with 494 unique IDs.
+
+No normal MCQ was added in this first chapter pass because the live `gr-thorax` file already contains directly relevant normal-format coverage for the principal tested muscle and clinical concepts. This is not a claim that all 25 source items are fully matched: the detailed item-to-ID register and remaining chapter-by-chapter reconciliation are still in progress. The 584-item total previously stated is retained as a provisional inventory figure until a reproducible per-chapter item count is recorded in the register.
