@@ -23,10 +23,10 @@ The user's three-subject structure is retained: **Anatomy includes Histology and
 
 | Subject | Stems | Share of three core subjects |
 |---|---:|---:|
-| Anatomy (including Histology and Embryology) | 147 | 29.8% |
-| Physiology | 157 | 31.8% |
-| Medical Biochemistry | 151 | 30.6% |
-| **Core-subject total** | **440** | **100%** |
+| Anatomy (including Histology and Embryology) | 147 | 32.3% |
+| Physiology | 157 | 34.5% |
+| Medical Biochemistry | 151 | 33.2% |
+| **Core-subject total** | **455** | **100%** |
 
 The additional 38 records are outside the three core subjects: 20 Pathology and 18 Pharmacology/therapeutics records. They are excluded from the core-subject denominator.
 
