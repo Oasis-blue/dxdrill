@@ -735,6 +735,86 @@
           "It reduces alveolar surface tension"
         ]
       }
+    },
+    {
+      "id": "pr-mechanics-of-breathing-NEW03",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lung and Chest Wall Compliance",
+      "q": "A patient with emphysema has destruction of alveolar walls and loss of elastic tissue. Which mechanical change contributes most directly to difficulty emptying the lungs during expiration?",
+      "options": [
+        "Reduced elastic recoil of the lungs",
+        "Increased elastic recoil of the lungs",
+        "Markedly increased surface tension from excess surfactant",
+        "Increased chest wall stiffness due to fibrosis"
+      ],
+      "answer": 0,
+      "explain": "Loss of elastic tissue reduces lung elastic recoil and radial traction on small airways, promoting expiratory airway collapse and air trapping.",
+      "verified": false
+    },
+    {
+      "id": "pr-mechanics-of-breathing-NEW04",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Alveolar Surface Tension, Laplace's Law, and Surfactant",
+      "q": "A premature infant has deficient pulmonary surfactant. In addition to increasing alveolar surface tension, which immediate mechanical consequence is expected?",
+      "options": [
+        "Reduced lung compliance and increased work of inspiration",
+        "Increased lung compliance and reduced work of inspiration",
+        "Reduced elastic recoil with increased residual volume",
+        "Reduced airway resistance from bronchodilation"
+      ],
+      "answer": 0,
+      "explain": "Surfactant deficiency increases surface tension, making alveoli harder to inflate. Lung compliance falls and greater inspiratory pressure/work is required.",
+      "verified": false
+    },
+    {
+      "id": "pr-mechanics-of-breathing-NEW05",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lung Volumes, Capacities, and Dead Space",
+      "q": "A healthy adult increases respiratory rate from 12 to 24 breaths per minute while tidal volume remains 500 mL and anatomical dead space remains 150 mL. What happens to alveolar ventilation?",
+      "options": [
+        "It doubles from 4.2 to 8.4 L/min",
+        "It remains unchanged at 4.2 L/min",
+        "It halves to 2.1 L/min",
+        "It rises to 12 L/min"
+      ],
+      "answer": 0,
+      "explain": "Alveolar ventilation = (tidal volume − dead space) × respiratory rate. It rises from (500−150)×12 = 4.2 L/min to (500−150)×24 = 8.4 L/min.",
+      "verified": false
+    },
+    {
+      "id": "pr-mechanics-of-breathing-NEW06",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Airway Resistance and Poiseuille's Law",
+      "q": "A patient with an acute asthma attack has bronchial smooth-muscle contraction and mucosal oedema. Which change in airway resistance is expected, assuming laminar flow and other factors remain constant?",
+      "options": [
+        "Resistance increases markedly as airway radius decreases",
+        "Resistance decreases because airflow velocity rises",
+        "Resistance is unchanged because airway length is constant",
+        "Resistance decreases in proportion to the fall in airway radius"
+      ],
+      "answer": 0,
+      "explain": "By Poiseuille's relationship, resistance is inversely proportional to the fourth power of radius. A modest reduction in airway radius can therefore cause a large increase in resistance.",
+      "verified": false
+    },
+    {
+      "id": "pr-mechanics-of-breathing-NEW07",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Respiratory Pressures and Boyle's Law",
+      "q": "During quiet inspiration, contraction of the diaphragm increases thoracic volume. Which pressure change initiates airflow into the lungs?",
+      "options": [
+        "Alveolar pressure falls slightly below atmospheric pressure",
+        "Alveolar pressure rises above atmospheric pressure",
+        "Intrapleural pressure becomes positive",
+        "Atmospheric pressure falls below alveolar pressure"
+      ],
+      "answer": 0,
+      "explain": "Thoracic expansion makes intrapleural pressure more negative and expands the alveoli. Alveolar pressure briefly falls below atmospheric pressure, driving air inward until the pressures equalise.",
+      "verified": false
     }
   ]
 }
