@@ -87,6 +87,10 @@ Round 22 added 15 stems / 60 statements, five per core subject, targeting the sy
 
 See the [syllabus-to-bank coverage matrix](TF_CORE_SYLLABUS_COVERAGE_MATRIX_2026-11-27.md) for NUC CCMAS course mapping, domain counts and remaining priorities.
 
+## Six-stem topic-depth target
+
+Across the 119 core Anatomy, Physiology and Medical Biochemistry topics, 100 have fewer than six stems and six are currently empty. Anatomy: 47 below six, including six empty; Physiology: 49 below six, none empty; Medical Biochemistry: four below six, none empty. Empty topics: `ra-vascular-system`, `ra-neuroanatomy`, `ra-gastrointestinal-tract`, `ra-genitourinary-tract`, `gen-common-genetic-disorders` and `gen-basic-genetic-counselling`. This remains an active expansion target, not a completed milestone.
+
 ## Round 23 expansion — 27 November 2026
 
 Fifteen new stems (five each in Anatomy, Physiology and Medical Biochemistry) were added, taking the bank to 463 stems / 1,852 statements. They remain draft/unverified. The selected topics were chosen from low-count areas in the canonical curriculum inventory.
