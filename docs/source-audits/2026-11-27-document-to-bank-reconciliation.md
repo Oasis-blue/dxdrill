@@ -387,3 +387,17 @@ All four additions are marked `verified:false` / `draft-unverified` pending acad
 **Post-write verification:** the live T/F JSON was re-fetched from `main`, parsed successfully and checked for unique IDs. It contains **517 records and 517 unique IDs**; all four additions are present. Commit: `3ed8d43a7e998123c17efda3f80879ea7598d58d`.
 
 **Coverage qualification:** 76 printed questions across Chapters 23–25 were reviewed at chapter/concept level against both formats. This batch is not a full item-by-item source-question-to-bank-ID register. Exact matched/partial/missing status for each printed question remains outstanding; no claim is made that all 76 source questions have individual DxDrill counterparts.
+
+
+## 15. Item-level source register initiated — Chapter 1 (Thoracic Wall)
+
+A separate structured item register has been created at `docs/source-audits/2026-11-27-anatomy-mcq-pdfdrive-item-register.json`. The first tranche records all **25 numbered questions** from Chapter 1 (printed pages 11–16), including the printed answer-key letters, concise tested concept, matching normal-bank and True/False IDs, and a coverage classification.
+
+Classification rules:
+- **direct** — an existing record tests substantially the same fact or relationship;
+- **partial** — some, but not all, of the source item's tested detail is represented;
+- **gap** — no suitable record was identified in the relevant banks inspected.
+
+This pilot identified direct coverage for core thoracic apertures, intrinsic muscle membership/innervation, serratus anterior palsy, trapezius innervation and pectoralis minor attachments/innervation. It identified a specific gap for serratus posterior superior attachments and fibre direction. Several compound source questions are classified partial because the existing question tests only part of the source's multi-statement scope.
+
+**Important scope note:** this is the first item-level tranche, not yet a complete register for all 25 chapters. The source's full printed question inventory and remaining chapters will be registered in subsequent batches. The chapter-level reviews recorded above must not be mistaken for item-level matching.
