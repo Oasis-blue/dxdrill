@@ -422,3 +422,17 @@ The five gaps identified in this chapter concern:
 Some source questions combine several anatomical details; these remain partial where the existing bank tests only a subset. The printed answer-key letters are preserved as source metadata and are not treated as independently validated answers.
 
 **Cumulative item-level progress:** Chapters 1–2 now contain **51 registered source questions**. Across these two chapters, the register classifies **22 direct matches, 23 partial matches and 6 gaps**. This is a cumulative register count, not a claim about all chapters in the book. The remaining chapters still require the same item-level matching process.
+
+
+## 17. Item-level source register — Chapter 3 (Breast)
+
+The item-level register now includes all **9 numbered questions** from Chapter 3 (printed pages 23–25), including the printed answer-key letters and matching bank IDs where an equivalent record exists.
+
+Chapter 3 coverage classification:
+- **Direct:** 3 items — Cooper suspensory ligaments, arterial supply and lymphatic drainage.
+- **Partial:** 1 item — posterior breast relations and the retromammary plane.
+- **Gap:** 5 items — axillary tail of Spence; nipple position/skin characteristics; breast lobular and stromal organisation; sensory and sympathetic innervation; hormonal control of secretion.
+
+The source's printed answer-key letters are retained as metadata, not treated as academically validated answers. The register deliberately records gaps even where a broad breast topic exists in DxDrill.
+
+**Cumulative item-level progress:** Chapters 1–3 now contain **60 registered source questions**: **25 direct matches, 24 partial matches and 11 gaps**. This remains a partial-source register; Chapters 4–25 still require item-level matching.
