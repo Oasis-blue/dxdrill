@@ -30,6 +30,696 @@
       ],
       "answer": 0,
       "explain": "Adrenarche is maturation of the adrenal zona reticularis with increased adrenal androgen production. It can cause pubic or axillary hair and body odour independently of gonadal puberty."
+    },
+    {
+      "id": "pp-puberty-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Definition and onset",
+      "q": "What is puberty?",
+      "options": [
+        "Period of rapid growth of the fetus before birth",
+        "Phase of declining reproductive function in later life",
+        "Transition from childhood to reproductive capability",
+        "Period of sexual differentiation in the embryo"
+      ],
+      "answer": 2,
+      "explain": "Puberty is the period during which a child develops secondary sexual characters, a growth spurt and the capacity to reproduce. Sexual differentiation of the embryo happens much earlier.",
+      "open": {
+        "q": "What is puberty?",
+        "accept": [
+          "transition from childhood to reproductive maturity",
+          "period of sexual maturation",
+          "attainment of reproductive capability"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hypothalamic-pituitary-gonadal axis",
+      "q": "Increased pulsatile release of which hypothalamic hormone drives the onset of puberty?",
+      "options": [
+        "GnRH",
+        "TRH",
+        "CRH",
+        "GHRH"
+      ],
+      "answer": 0,
+      "explain": "Increased amplitude and frequency of GnRH pulses stimulate the anterior pituitary to release LH and FSH, which activate the gonads.",
+      "open": {
+        "q": "Increased pulsatile release of which hypothalamic hormone drives the onset of puberty?",
+        "accept": [
+          "gonadotropin-releasing hormone",
+          "LHRH",
+          "luteinising hormone-releasing hormone"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary sexual characters",
+      "q": "What is usually the first sign of puberty in boys?",
+      "options": [
+        "Growth of pubic hair",
+        "Deepening of the voice",
+        "Lengthening of the penis",
+        "Enlargement of the testes"
+      ],
+      "answer": 3,
+      "explain": "Testicular enlargement to a volume of about 4 mL or more is the first sign. Pubic hair, penile growth and voice change come later.",
+      "open": {
+        "q": "What is usually the first sign of puberty in boys?",
+        "accept": [
+          "testicular enlargement",
+          "increase in testicular volume",
+          "growth of the testes"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary sexual characters",
+      "q": "What is usually the first sign of puberty in girls?",
+      "options": [
+        "First menstrual period",
+        "Breast budding",
+        "Axillary hair growth",
+        "Pubic hair growth"
+      ],
+      "answer": 1,
+      "explain": "Breast budding (thelarche) is usually the first sign, caused by ovarian estrogen. Menarche comes about 2 to 3 years later.",
+      "open": {
+        "q": "What is usually the first sign of puberty in girls?",
+        "accept": [
+          "thelarche",
+          "breast bud development",
+          "breast budding"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Hypothalamic-pituitary-gonadal axis",
+      "q": "Which neuropeptide acts on GnRH neurones and is regarded as a key trigger of puberty?",
+      "options": [
+        "Kisspeptin",
+        "Neuropeptide Y",
+        "Orexin",
+        "Substance P"
+      ],
+      "answer": 0,
+      "explain": "Kisspeptin, acting through the receptor GPR54 on GnRH neurones, is essential for pubertal onset. Mutations of its receptor cause hypogonadotropic hypogonadism.",
+      "open": {
+        "q": "Which neuropeptide acts on GnRH neurones and is regarded as a key trigger of puberty?",
+        "accept": [
+          "KISS1",
+          "metastin",
+          "kisspeptin-GPR54 system"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Adrenarche",
+      "q": "Adrenarche is the increased secretion of which adrenal product?",
+      "options": [
+        "Cortisol from the zona fasciculata",
+        "Aldosterone from the zona glomerulosa",
+        "DHEA and DHEAS from the zona reticularis",
+        "Adrenaline from the adrenal medulla"
+      ],
+      "answer": 2,
+      "explain": "Adrenarche is the rise in adrenal androgens, mainly DHEA and DHEAS, at about 6 to 8 years. It is independent of the gonads.",
+      "open": {
+        "q": "Adrenarche is the increased secretion of which adrenal products?",
+        "accept": [
+          "adrenal androgens",
+          "DHEA and DHEAS",
+          "dehydroepiandrosterone sulphate"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Secondary sexual characters",
+      "q": "Which hormone mainly stimulates the growth of pubic and axillary hair in girls?",
+      "options": [
+        "Estrogen",
+        "Adrenal androgens",
+        "Progesterone",
+        "Prolactin"
+      ],
+      "answer": 1,
+      "explain": "Girls have little testicular testosterone, so pubic and axillary hair depends on adrenal androgens. Estrogen drives breast growth, not hair growth.",
+      "open": {
+        "q": "Which hormones mainly stimulate the growth of pubic and axillary hair in girls?",
+        "accept": [
+          "adrenal androgens",
+          "DHEA",
+          "androgens from the adrenal cortex"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Tanner staging",
+      "q": "What defines Tanner stage 2 of breast development?",
+      "options": [
+        "Projection of the areola as a secondary mound",
+        "Adult contour with only the nipple projecting",
+        "Fully mature breast with a smooth contour",
+        "Breast bud with elevation of the breast and papilla"
+      ],
+      "answer": 3,
+      "explain": "Stage 2 is the breast bud stage with a small mound and enlargement of the areola. Stage 4 shows the areola as a secondary mound and stage 5 is the mature breast.",
+      "open": {
+        "q": "What defines Tanner stage 2 of breast development?",
+        "accept": [
+          "breast bud stage",
+          "breast bud with elevated papilla",
+          "thelarche stage"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Female puberty",
+      "q": "About how long after the start of breast development does menarche usually occur?",
+      "options": [
+        "Around 2 to 3 years",
+        "Around 6 months",
+        "Around 5 to 6 years",
+        "Around 8 to 9 years"
+      ],
+      "answer": 0,
+      "explain": "Menarche usually occurs 2 to 3 years after thelarche, at Tanner breast stage 4.",
+      "open": {
+        "q": "About how long after the start of breast development does menarche usually occur?",
+        "accept": [
+          "2 to 3 years",
+          "two to three years",
+          "about 2 years"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Growth",
+      "q": "How does the timing of the pubertal growth spurt in girls compare with boys?",
+      "options": [
+        "Later than in boys",
+        "At the same age as boys",
+        "Earlier than in boys",
+        "Girls have no growth spurt"
+      ],
+      "answer": 2,
+      "explain": "Peak height velocity occurs at about 11.5 to 12 years in girls and about 13.5 to 14 years in boys. The longer pre-pubertal growth in boys explains their greater final height.",
+      "open": {
+        "q": "How does the timing of the pubertal growth spurt in girls compare with boys?",
+        "accept": [
+          "girls peak earlier",
+          "earlier in girls",
+          "about two years before boys"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Growth",
+      "q": "Which hormone is mainly responsible for closure of the epiphyseal growth plates at the end of puberty in both sexes?",
+      "options": [
+        "Growth hormone",
+        "Estrogen",
+        "Thyroxine",
+        "Cortisol"
+      ],
+      "answer": 1,
+      "explain": "Estrogen, including estrogen made from testosterone by aromatase in boys, causes the growth plates to fuse. Growth hormone promotes growth rather than closure.",
+      "open": {
+        "q": "Which hormone is mainly responsible for closure of the epiphyseal growth plates at the end of puberty in both sexes?",
+        "accept": [
+          "oestrogen",
+          "estradiol",
+          "estrogens"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Male puberty",
+      "q": "Which testicular cells secrete testosterone under the influence of LH?",
+      "options": [
+        "Sertoli cells",
+        "Spermatogonia",
+        "Theca interna cells",
+        "Leydig cells"
+      ],
+      "answer": 3,
+      "explain": "Leydig (interstitial) cells make testosterone in response to LH. Theca interna cells are the ovarian counterpart.",
+      "open": {
+        "q": "Which testicular cells secrete testosterone under the influence of LH?",
+        "accept": [
+          "interstitial cells",
+          "Leydig cells of the testis",
+          "interstitial cells of Leydig"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Male puberty",
+      "q": "FSH acts on which testicular cells to support spermatogenesis?",
+      "options": [
+        "Sertoli cells",
+        "Leydig cells",
+        "Peritubular myoid cells",
+        "Spermatids"
+      ],
+      "answer": 0,
+      "explain": "FSH acts on Sertoli cells, which nurse the developing germ cells and secrete androgen-binding protein and inhibin.",
+      "open": {
+        "q": "FSH acts on which testicular cells to support spermatogenesis?",
+        "accept": [
+          "sustentacular cells",
+          "Sertoli cells of the seminiferous tubules",
+          "nurse cells"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Secondary sexual characters",
+      "q": "What is the cause of deepening of the voice in boys at puberty?",
+      "options": [
+        "Hypertrophy of the pharyngeal constrictor muscles",
+        "Lengthening of the trachea and bronchi",
+        "Enlargement of the larynx with thickening of the vocal cords",
+        "Enlargement of the thyroid gland under TSH"
+      ],
+      "answer": 2,
+      "explain": "Testosterone causes growth of the laryngeal cartilages and thickening and lengthening of the vocal cords, which lowers the pitch.",
+      "open": {
+        "q": "What is the cause of deepening of the voice in boys at puberty?",
+        "accept": [
+          "laryngeal enlargement by testosterone",
+          "thickening of the vocal cords",
+          "growth of the larynx under androgen action"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Female puberty",
+      "q": "Menstrual cycles in the first year or two after menarche are usually of what type?",
+      "options": [
+        "Ovulatory with a short luteal phase",
+        "Anovulatory",
+        "Ovulatory with excess progesterone",
+        "Absent FSH rise with normal ovulation"
+      ],
+      "answer": 1,
+      "explain": "The positive feedback response to estrogen matures later, so early cycles are often anovulatory and irregular. Regular ovulatory cycles follow over the next 1 to 2 years.",
+      "open": {
+        "q": "Menstrual cycles in the first year or two after menarche are usually of what type?",
+        "accept": [
+          "anovulatory cycles",
+          "cycles without ovulation",
+          "irregular anovulatory cycles"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-018",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Disorders of puberty",
+      "q": "Precocious puberty in girls is defined as the appearance of secondary sexual characters before what age?",
+      "options": [
+        "6 years",
+        "10 years",
+        "12 years",
+        "8 years"
+      ],
+      "answer": 3,
+      "explain": "Development of breasts or pubic hair before 8 years in girls, or testicular enlargement before 9 years in boys, is precocious puberty.",
+      "open": {
+        "q": "Precocious puberty in girls is defined as the appearance of secondary sexual characters before what age?",
+        "accept": [
+          "8",
+          "eight years",
+          "before 8 years"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Disorders of puberty",
+      "q": "Delayed puberty in girls is diagnosed when there is no breast development by what age?",
+      "options": [
+        "13 years",
+        "10 years",
+        "9 years",
+        "11 years"
+      ],
+      "answer": 0,
+      "explain": "Absence of breast budding by 13 years, or no menarche by 15 to 16 years, calls for evaluation.",
+      "open": {
+        "q": "Delayed puberty in girls is diagnosed when there is no breast development by what age?",
+        "accept": [
+          "13",
+          "thirteen years",
+          "by 13 years"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-020",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Disorders of puberty",
+      "q": "A 7-year-old girl has breast development and pubic hair, an advanced bone age and a raised LH response to GnRH stimulation. What is the diagnosis?",
+      "options": [
+        "Premature adrenarche",
+        "Peripheral precocious puberty from an ovarian cyst",
+        "Central precocious puberty",
+        "Constitutional delay of growth and puberty"
+      ],
+      "answer": 2,
+      "explain": "A raised LH response to GnRH shows early activation of the hypothalamic-pituitary axis, so this is central (GnRH-dependent) precocious puberty. Peripheral causes have suppressed gonadotropins.",
+      "open": {
+        "q": "A 7-year-old girl has breast development and pubic hair, an advanced bone age and a raised LH response to GnRH stimulation. What is the diagnosis?",
+        "accept": [
+          "GnRH-dependent precocious puberty",
+          "true precocious puberty",
+          "gonadotropin-dependent precocious puberty"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-021",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Disorders of puberty",
+      "q": "A 15-year-old boy has no pubertal development and cannot smell. LH, FSH and testosterone are all low. What is the diagnosis?",
+      "options": [
+        "Klinefelter syndrome",
+        "Kallmann syndrome",
+        "Mumps orchitis",
+        "Congenital adrenal hyperplasia"
+      ],
+      "answer": 1,
+      "explain": "Kallmann syndrome combines anosmia with hypogonadotropic hypogonadism because GnRH neurones fail to migrate with the olfactory neurones. Klinefelter syndrome has high gonadotropins.",
+      "open": {
+        "q": "A 15-year-old boy has no pubertal development and cannot smell. LH, FSH and testosterone are all low. What is the diagnosis?",
+        "accept": [
+          "hypogonadotropic hypogonadism with anosmia",
+          "isolated GnRH deficiency with anosmia",
+          "olfactogenital syndrome"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-022",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Disorders of puberty",
+      "q": "A 16-year-old girl is short with a webbed neck, no breast development and primary amenorrhoea. FSH is high. What is the diagnosis?",
+      "options": [
+        "Kallmann syndrome",
+        "Mullerian agenesis",
+        "Androgen insensitivity syndrome",
+        "Turner syndrome"
+      ],
+      "answer": 3,
+      "explain": "Turner syndrome (45,X) causes streak ovaries, so estrogen is low and FSH and LH are high. In Mullerian agenesis, breasts develop normally.",
+      "open": {
+        "q": "A 16-year-old girl is short with a webbed neck, no breast development and primary amenorrhoea. FSH is high. What is the diagnosis?",
+        "accept": [
+          "45,X",
+          "gonadal dysgenesis",
+          "monosomy X"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Hypothalamic-pituitary-gonadal axis",
+      "q": "At the onset of puberty, the first rise in LH pulses occurs during which period?",
+      "options": [
+        "Sleep",
+        "Exercise",
+        "Fasting",
+        "Stress"
+      ],
+      "answer": 0,
+      "explain": "Early puberty shows increased nocturnal, sleep-entrained LH pulses. Later in puberty the pulses are present throughout the day.",
+      "open": {
+        "q": "At the onset of puberty, during which period does the first rise in LH pulses occur?",
+        "accept": [
+          "during sleep",
+          "at night",
+          "nocturnal"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-024",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Hypothalamic-pituitary-gonadal axis",
+      "q": "Which hormone from fat cells signals adequate energy stores and is permissive for puberty?",
+      "options": [
+        "Adiponectin",
+        "Leptin",
+        "Resistin",
+        "Ghrelin"
+      ],
+      "answer": 1,
+      "explain": "Leptin signals adequate fat stores to the hypothalamus. Very thin girls, for example athletes, can have delayed puberty and amenorrhoea.",
+      "open": {
+        "q": "Which hormone from fat cells signals adequate energy stores and is permissive for puberty?",
+        "accept": [
+          "the obesity hormone",
+          "adipocyte hormone leptin",
+          "OB protein"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Hypothalamic-pituitary-gonadal axis",
+      "q": "Why are gonadotropin levels low during childhood?",
+      "options": [
+        "Absence of gonadotroph cells in the pituitary",
+        "Excess prolactin secretion by the pituitary",
+        "Restrained hypothalamic GnRH pulse generator",
+        "Lack of steroid receptors in the target tissues"
+      ],
+      "answer": 2,
+      "explain": "The GnRH pulse generator is suppressed by central inhibition and very sensitive negative feedback. Its disinhibition triggers puberty.",
+      "open": {
+        "q": "Why are gonadotropin levels low during childhood?",
+        "accept": [
+          "suppressed GnRH pulse generator",
+          "low GnRH secretion",
+          "inhibition of GnRH neurones"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Male puberty",
+      "q": "Which active androgen is formed from testosterone in the prostate and skin?",
+      "options": [
+        "Estradiol by aromatase",
+        "Androstenedione by 17-hydroxysteroid dehydrogenase",
+        "Pregnenolone by desmolase",
+        "Dihydrotestosterone by 5-alpha reductase"
+      ],
+      "answer": 3,
+      "explain": "5-alpha reductase converts testosterone to dihydrotestosterone, which drives growth of the prostate, external genitalia, beard and body hair.",
+      "open": {
+        "q": "Which active androgen is formed from testosterone by 5-alpha reductase in the prostate and skin?",
+        "accept": [
+          "DHT",
+          "5-alpha dihydrotestosterone",
+          "androstanolone"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-027",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Male puberty",
+      "q": "Which pubertal change in boys is mainly due to the anabolic action of testosterone?",
+      "options": [
+        "Increased muscle mass",
+        "Growth of breast tissue",
+        "Widening of the pelvic inlet",
+        "Deposition of fat over the hips"
+      ],
+      "answer": 0,
+      "explain": "Testosterone increases protein synthesis, muscle mass and bone matrix. The other three changes are typical of estrogen action in girls.",
+      "open": {
+        "q": "Which pubertal change in boys is mainly due to the anabolic action of testosterone?",
+        "accept": [
+          "muscle growth",
+          "increase in muscle bulk",
+          "muscular development"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-028",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Female puberty",
+      "q": "Under the influence of estrogen at puberty, fat is deposited mainly over which areas in girls?",
+      "options": [
+        "Abdomen and nape",
+        "Face and trunk",
+        "Hips and thighs",
+        "Calves and forearms"
+      ],
+      "answer": 2,
+      "explain": "Estrogen causes the female pattern of fat distribution, mainly on the hips, thighs and breasts, together with widening of the pelvis.",
+      "open": {
+        "q": "Under the influence of estrogen at puberty, fat is deposited mainly over which areas in girls?",
+        "accept": [
+          "hips and thighs",
+          "gluteofemoral region",
+          "hips, thighs and breasts"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-029",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Female puberty",
+      "q": "What is the approximate average age of menarche?",
+      "options": [
+        "9 years",
+        "12 to 13 years",
+        "15 to 16 years",
+        "17 to 18 years"
+      ],
+      "answer": 1,
+      "explain": "Menarche usually occurs at about 12 to 13 years, and it is earlier with good nutrition and higher body fat.",
+      "open": {
+        "q": "What is the approximate average age of menarche?",
+        "accept": [
+          "12 to 13",
+          "about 12 or 13 years",
+          "12-13 years"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Disorders of puberty",
+      "q": "Which syndrome with café-au-lait spots and polyostotic fibrous dysplasia causes gonadotropin-independent precocious puberty?",
+      "options": [
+        "Turner syndrome",
+        "Peutz-Jeghers syndrome",
+        "Marfan syndrome",
+        "McCune-Albright syndrome"
+      ],
+      "answer": 3,
+      "explain": "An activating mutation of the Gs-alpha protein in McCune-Albright syndrome makes the ovaries autonomously secrete estrogen, so LH and FSH are suppressed.",
+      "open": {
+        "q": "Which syndrome with café-au-lait spots and polyostotic fibrous dysplasia causes gonadotropin-independent precocious puberty?",
+        "accept": [
+          "McCune Albright",
+          "Albright syndrome",
+          "polyostotic fibrous dysplasia syndrome"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-031",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Male puberty",
+      "q": "Inhibin B secreted by the Sertoli cells selectively inhibits which hormone?",
+      "options": [
+        "FSH",
+        "LH",
+        "GnRH",
+        "Testosterone"
+      ],
+      "answer": 0,
+      "explain": "Inhibin B exerts negative feedback on pituitary FSH secretion. LH is regulated mainly by testosterone.",
+      "open": {
+        "q": "Inhibin B secreted by the Sertoli cells selectively inhibits which pituitary hormone?",
+        "accept": [
+          "follicle-stimulating hormone",
+          "follicle stimulating hormone",
+          "FSH secretion"
+        ]
+      }
+    },
+    {
+      "id": "pp-puberty-032",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Male puberty",
+      "q": "What is the term for the first ejaculation in a boy?",
+      "options": [
+        "Thelarche",
+        "Spermarche",
+        "Pubarche",
+        "Adrenarche"
+      ],
+      "answer": 1,
+      "explain": "Spermarche is the first appearance of sperm in the ejaculate, at about 13 years. Pubarche is the first growth of pubic hair.",
+      "open": {
+        "q": "What is the term for the first ejaculation in a boy?",
+        "accept": [
+          "first appearance of sperm",
+          "first emission of semen",
+          "onset of sperm production"
+        ]
+      }
     }
   ]
 }
