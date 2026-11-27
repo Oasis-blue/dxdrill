@@ -17509,6 +17509,559 @@
         "https://www.ncbi.nlm.nih.gov/books/NBK27100/",
         "https://www.ncbi.nlm.nih.gov/books/NBK459455/"
       ]
+    },
+    {
+      "id": "tf-gen-genetic-counselling-002",
+      "type": "tf",
+      "topic": "gen-basic-genetic-counselling",
+      "level": 2,
+      "sub": "Principles of genetic counselling",
+      "q": "Regarding the purpose and process of genetic counselling:",
+      "items": [
+        {
+          "text": "A three-generation family history can help identify patterns suggestive of inherited disease.",
+          "answer": true,
+          "explain": "A pedigree records affected and unaffected relatives across generations and helps assess possible inheritance patterns."
+        },
+        {
+          "text": "Genetic counselling may include discussion of the benefits, limitations and possible outcomes of genetic testing.",
+          "answer": true,
+          "explain": "Pre-test counselling supports informed decisions by explaining what a test can and cannot establish."
+        },
+        {
+          "text": "A genetic counsellor should decide whether an at-risk couple should have children.",
+          "answer": false,
+          "explain": "Counselling supports informed, voluntary decisions; it should not coerce reproductive choices."
+        },
+        {
+          "text": "A negative result on one genetic test always excludes every hereditary cause of the suspected condition.",
+          "answer": false,
+          "explain": "A test may not detect all pathogenic variants or genetic mechanisms; interpretation depends on the assay and clinical context."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://medlineplus.gov/genetics/understanding/consult/expectations/",
+        "https://www.cdc.gov/genomics-and-health/counseling-testing/genetic-counseling.html"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-ra-musculoskeletal-system-002",
+      "type": "tf",
+      "topic": "ra-musculoskeletal-system",
+      "level": 2,
+      "sub": "Radiographic projections and fracture assessment",
+      "q": "Regarding plain radiographic assessment of suspected skeletal injury:",
+      "items": [
+        {
+          "text": "Orthogonal projections help localise a fracture and assess displacement.",
+          "answer": true,
+          "explain": "A radiograph is a two-dimensional projection; views at right angles reduce the risk of missing or mislocalising an injury."
+        },
+        {
+          "text": "A routine bone radiograph commonly includes two or more projections.",
+          "answer": true,
+          "explain": "Different angles are usually obtained to assess the bone and adjacent joints more completely."
+        },
+        {
+          "text": "A normal plain radiograph reliably excludes every occult fracture.",
+          "answer": false,
+          "explain": "Some subtle or occult fractures are not visible initially and may require repeat radiography, CT or MRI."
+        },
+        {
+          "text": "Dense cortical bone attenuates more X-rays and appears relatively radiopaque.",
+          "answer": true,
+          "explain": "Greater attenuation produces a whiter appearance than most soft tissues."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.radiologyinfo.org/en/info/bonerad",
+        "https://jaiu.kg/wp-content/uploads/2026/02/06.-The-WHO-Manual-of-Diagnostic-Imaging-author-A.-Mark-Davies-Holger-Pettersson.pdf"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-gen-cell-division-002",
+      "type": "tf",
+      "topic": "gen-cell-division",
+      "level": 2,
+      "sub": "Meiotic recombination and segregation",
+      "q": "Regarding chromosome behaviour during human meiosis:",
+      "items": [
+        {
+          "text": "Crossing-over occurs between non-sister chromatids of homologous chromosomes during prophase I.",
+          "answer": true,
+          "explain": "Recombination exchanges DNA between non-sister chromatids of a homologous pair."
+        },
+        {
+          "text": "Chiasmata are visible manifestations of crossover events that help maintain homologous chromosome association.",
+          "answer": true,
+          "explain": "Chiasmata mark recombination sites and contribute to proper orientation of homologues at meiosis I."
+        },
+        {
+          "text": "Homologous chromosomes separate from one another during anaphase II.",
+          "answer": false,
+          "explain": "Homologues separate during anaphase I; sister chromatids separate during anaphase II."
+        },
+        {
+          "text": "DNA replication normally occurs between meiosis I and meiosis II.",
+          "answer": false,
+          "explain": "The two meiotic divisions follow a single premeiotic S phase without intervening DNA replication."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26840/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-gen-inheritance-002",
+      "type": "tf",
+      "topic": "gen-inheritance-and-mendel-s-laws",
+      "level": 2,
+      "sub": "X-linked inheritance and pedigree interpretation",
+      "q": "Regarding X-linked inheritance patterns:",
+      "items": [
+        {
+          "text": "A father transmits his X chromosome to all his daughters.",
+          "answer": true,
+          "explain": "A father contributes his X chromosome to daughters and his Y chromosome to sons."
+        },
+        {
+          "text": "An affected father transmits an X-linked recessive allele directly to all his sons.",
+          "answer": false,
+          "explain": "Sons receive the paternal Y chromosome, not the paternal X chromosome."
+        },
+        {
+          "text": "A heterozygous woman for a typical X-linked recessive condition has a one-in-two chance of transmitting the variant allele to each child.",
+          "answer": true,
+          "explain": "Each child independently has a 50% chance of inheriting the maternal X chromosome carrying the variant."
+        },
+        {
+          "text": "An X-linked recessive disorder must affect every son of a heterozygous carrier mother.",
+          "answer": false,
+          "explain": "Each son has an independent probability of inheriting the variant; not all sons are necessarily affected."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://medlineplus.gov/genetics/understanding/inheritance/inheritancepatterns/",
+        "https://medlineplus.gov/genetics/understanding/consult/diagnosis/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-gen-nucleus-dna-and-chromosomes-002",
+      "type": "tf",
+      "topic": "gen-nucleus-dna-and-chromosomes",
+      "level": 2,
+      "sub": "Chromosome structure and karyotype interpretation",
+      "q": "Regarding human chromosomes and karyotype interpretation:",
+      "items": [
+        {
+          "text": "A karyotype can demonstrate chromosome number and large-scale structural abnormalities.",
+          "answer": true,
+          "explain": "Conventional karyotyping visualises chromosome number and morphology, including many large rearrangements."
+        },
+        {
+          "text": "A balanced reciprocal translocation may leave the carrier with 46 chromosomes.",
+          "answer": true,
+          "explain": "A reciprocal exchange can occur without net gain or loss of chromosomal material."
+        },
+        {
+          "text": "A conventional karyotype detects every single-nucleotide pathogenic variant in the genome.",
+          "answer": false,
+          "explain": "Single-nucleotide variants are below the resolution of conventional chromosome analysis and require molecular methods."
+        },
+        {
+          "text": "Mosaicism describes the presence of two or more genetically distinct cell populations derived from one zygote.",
+          "answer": true,
+          "explain": "Post-zygotic mitotic events can produce cell lines with different chromosomal or genetic constitutions."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://medlineplus.gov/genetics/understanding/testing/",
+        "https://medlineplus.gov/genetics/understanding/consult/diagnosis/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-pr-hypoxia-003",
+      "type": "tf",
+      "topic": "pr-hypoxia-and-special-environments",
+      "level": 2,
+      "sub": "Altitude exposure and acclimatisation",
+      "q": "Regarding physiological responses to high-altitude exposure:",
+      "items": [
+        {
+          "text": "Reduced barometric pressure at high altitude lowers inspired oxygen partial pressure.",
+          "answer": true,
+          "explain": "The fraction of oxygen in air is essentially unchanged, but lower barometric pressure reduces inspired oxygen partial pressure."
+        },
+        {
+          "text": "Acute hypoxia stimulates peripheral chemoreceptors and increases ventilation.",
+          "answer": true,
+          "explain": "Reduced arterial oxygen stimulates the carotid bodies, increasing ventilation."
+        },
+        {
+          "text": "Renal compensation for respiratory alkalosis during acclimatisation includes increased bicarbonate excretion.",
+          "answer": true,
+          "explain": "Sustained hyperventilation lowers PaCO2; renal bicarbonate loss helps compensate for the resulting alkalosis."
+        },
+        {
+          "text": "The initial ventilatory response to high altitude is caused by an increase in arterial carbon dioxide tension.",
+          "answer": false,
+          "explain": "Hypoxic stimulation increases ventilation and tends to lower PaCO2."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK620901/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK482316/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-phys-renal-tests-003",
+      "type": "tf",
+      "topic": "phys-renal-tests-failure",
+      "level": 2,
+      "sub": "Tubular function tests and urinalysis",
+      "q": "Regarding tests used to assess renal tubular function:",
+      "items": [
+        {
+          "text": "Urine osmolality provides information about the kidney's ability to concentrate urine.",
+          "answer": true,
+          "explain": "Urine osmolality reflects the concentrating response of the nephron and collecting ducts."
+        },
+        {
+          "text": "Glycosuria with normal plasma glucose may occur when proximal tubular reabsorption is impaired.",
+          "answer": true,
+          "explain": "Proximal tubular dysfunction can cause urinary glucose loss despite non-elevated plasma glucose."
+        },
+        {
+          "text": "A urine dipstick test alone can reliably quantify the glomerular filtration rate.",
+          "answer": false,
+          "explain": "Dipstick testing screens for selected urinary abnormalities; GFR is estimated using serum markers and validated equations or measured clearance."
+        },
+        {
+          "text": "Fanconi syndrome may involve urinary loss of phosphate, bicarbonate, glucose and amino acids.",
+          "answer": true,
+          "explain": "Generalised proximal tubular dysfunction produces a characteristic pattern of solute wasting."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507821/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-phys-micturition-003",
+      "type": "tf",
+      "topic": "phys-micturition",
+      "level": 2,
+      "sub": "Bladder storage and voiding coordination",
+      "q": "Regarding neural control of bladder storage and voiding:",
+      "items": [
+        {
+          "text": "During bladder storage, sympathetic activity helps relax the detrusor muscle.",
+          "answer": true,
+          "explain": "Sympathetic outflow through hypogastric pathways promotes detrusor relaxation and supports urine storage."
+        },
+        {
+          "text": "Somatic pudendal nerve activity helps maintain contraction of the external urethral sphincter during storage.",
+          "answer": true,
+          "explain": "The external sphincter is skeletal muscle under somatic control, allowing voluntary continence."
+        },
+        {
+          "text": "During voiding, sacral parasympathetic activity promotes detrusor contraction.",
+          "answer": true,
+          "explain": "Pelvic parasympathetic outflow from S2–S4 stimulates detrusor contraction."
+        },
+        {
+          "text": "The pontine micturition centre promotes voiding by increasing pudendal motor activity to the external sphincter.",
+          "answer": false,
+          "explain": "Voiding requires coordinated inhibition of pudendal motor activity so the external sphincter relaxes."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538533/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK562181/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-phys-urine-concentration-002",
+      "type": "tf",
+      "topic": "phys-urine-concentration",
+      "level": 2,
+      "sub": "Countercurrent mechanisms and urine concentration",
+      "q": "Regarding the renal mechanisms that concentrate urine:",
+      "items": [
+        {
+          "text": "The loop of Henle contributes to the corticomedullary osmotic gradient.",
+          "answer": true,
+          "explain": "Countercurrent multiplication helps establish a hyperosmotic renal medulla."
+        },
+        {
+          "text": "The thick ascending limb actively reabsorbs sodium, potassium and chloride but is relatively impermeable to water.",
+          "answer": true,
+          "explain": "The Na-K-2Cl cotransporter reabsorbs solute while this segment does not permit substantial water movement."
+        },
+        {
+          "text": "Antidiuretic hormone increases water permeability in the collecting duct.",
+          "answer": true,
+          "explain": "ADH promotes insertion of aquaporin-2 channels into the apical membrane of collecting-duct principal cells."
+        },
+        {
+          "text": "A high circulating ADH concentration normally produces a large volume of very dilute urine.",
+          "answer": false,
+          "explain": "ADH increases water reabsorption and generally reduces urine volume while increasing urine concentration."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538339/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK507821/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-phys-dialysis-002",
+      "type": "tf",
+      "topic": "phys-dialysis-diuretics",
+      "level": 2,
+      "sub": "Physical principles of haemodialysis",
+      "q": "Regarding the physiological principles of haemodialysis:",
+      "items": [
+        {
+          "text": "Diffusion moves solutes across the dialyser membrane down their concentration gradients.",
+          "answer": true,
+          "explain": "Small solutes such as urea diffuse from blood, where their concentration is higher, into dialysate."
+        },
+        {
+          "text": "Ultrafiltration removes water across the membrane in response to a transmembrane pressure gradient.",
+          "answer": true,
+          "explain": "Hydrostatic pressure differences drive water movement across the semipermeable membrane."
+        },
+        {
+          "text": "A semipermeable dialyser membrane normally allows intact red blood cells to pass freely into the dialysate.",
+          "answer": false,
+          "explain": "The membrane permits selected solutes and water to cross while retaining blood cells and most large plasma components."
+        },
+        {
+          "text": "Countercurrent flow of blood and dialysate helps maintain a concentration gradient along the dialyser.",
+          "answer": true,
+          "explain": "Countercurrent arrangement helps sustain diffusion by preventing rapid equilibration along the membrane."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563296/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK492981/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-bc-chemistry-of-biomolecules-002",
+      "type": "tf",
+      "topic": "bc-chemistry-of-biomolecules",
+      "level": 2,
+      "sub": "Lipid structure and chemical properties",
+      "q": "Regarding the chemical structure of common biological lipids:",
+      "items": [
+        {
+          "text": "A triacylglycerol contains glycerol esterified to three fatty acids.",
+          "answer": true,
+          "explain": "Triacylglycerols are formed by esterification of all three hydroxyl groups of glycerol with fatty acids."
+        },
+        {
+          "text": "A phosphoglyceride typically contains two fatty-acyl chains and a phosphate-containing polar head group.",
+          "answer": true,
+          "explain": "This arrangement gives glycerophospholipids hydrophobic and hydrophilic regions."
+        },
+        {
+          "text": "A cis double bond in a fatty-acid chain generally introduces a bend that can reduce tight packing.",
+          "answer": true,
+          "explain": "Cis unsaturation introduces a kink and generally increases membrane fluidity by reducing close packing."
+        },
+        {
+          "text": "Cholesterol is a polymer of repeating fatty-acid units.",
+          "answer": false,
+          "explain": "Cholesterol is a sterol with a four-ring steroid nucleus, not a fatty-acid polymer."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26883/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26871/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-ba-hormones-special-organs-and-neurochemistry-002",
+      "type": "tf",
+      "topic": "ba-hormones-special-organs-and-neurochemistry",
+      "level": 2,
+      "sub": "Catecholamine synthesis and degradation",
+      "q": "Regarding the biochemical synthesis and degradation of catecholamines:",
+      "items": [
+        {
+          "text": "Tyrosine hydroxylase catalyses the rate-limiting step in catecholamine synthesis.",
+          "answer": true,
+          "explain": "Tyrosine hydroxylase converts tyrosine to DOPA and is the rate-limiting enzyme in the pathway."
+        },
+        {
+          "text": "DOPA decarboxylase converts L-DOPA to dopamine.",
+          "answer": true,
+          "explain": "Aromatic L-amino-acid decarboxylase removes the carboxyl group from L-DOPA to form dopamine."
+        },
+        {
+          "text": "Phenylethanolamine N-methyltransferase converts norepinephrine to epinephrine.",
+          "answer": true,
+          "explain": "PNMT transfers a methyl group from S-adenosylmethionine to norepinephrine."
+        },
+        {
+          "text": "Monoamine oxidase and catechol-O-methyltransferase have no role in catecholamine inactivation.",
+          "answer": false,
+          "explain": "MAO and COMT participate in catecholamine metabolism and termination of signalling."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK507716/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK545235/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-ba-biochemistry-of-muscle-contraction-004",
+      "type": "tf",
+      "topic": "ba-biochemistry-of-muscle-contraction",
+      "level": 2,
+      "sub": "Fuel selection during skeletal muscle activity",
+      "q": "Regarding fuel use by skeletal muscle at rest and during exercise:",
+      "items": [
+        {
+          "text": "At rest, skeletal muscle commonly derives a substantial proportion of its energy from fatty-acid oxidation.",
+          "answer": true,
+          "explain": "Resting muscle uses circulating fatty acids and intramuscular lipid as important oxidative fuels."
+        },
+        {
+          "text": "Phosphocreatine can rapidly buffer ATP concentration during the initial seconds of intense contraction.",
+          "answer": true,
+          "explain": "Creatine kinase transfers phosphate from phosphocreatine to ADP to regenerate ATP rapidly."
+        },
+        {
+          "text": "Anaerobic glycolysis can contribute to ATP production during high-intensity exercise.",
+          "answer": true,
+          "explain": "Rapid glycolytic ATP production helps meet demand when oxidative ATP generation cannot keep pace."
+        },
+        {
+          "text": "Fatty-acid oxidation is the principal source of ATP for maximal, very brief sprint activity.",
+          "answer": false,
+          "explain": "Very brief maximal efforts rely heavily on stored ATP, phosphocreatine and anaerobic glycolysis."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK20409/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK559006/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-ba-body-fluids-and-blood-clotting-002",
+      "type": "tf",
+      "topic": "ba-body-fluids-and-blood-clotting",
+      "level": 2,
+      "sub": "Fibrinolysis and degradation of fibrin",
+      "q": "Regarding the biochemical process of fibrinolysis:",
+      "items": [
+        {
+          "text": "Plasmin is generated from plasminogen by plasminogen activators such as tissue-type plasminogen activator.",
+          "answer": true,
+          "explain": "tPA catalyses conversion of plasminogen to the active protease plasmin."
+        },
+        {
+          "text": "Plasmin degrades fibrin within a clot to soluble fibrin degradation products.",
+          "answer": true,
+          "explain": "Plasmin-mediated proteolysis breaks down the fibrin network."
+        },
+        {
+          "text": "D-dimer is produced when cross-linked fibrin is degraded.",
+          "answer": true,
+          "explain": "D-dimer reflects breakdown of factor XIIIa-stabilised cross-linked fibrin."
+        },
+        {
+          "text": "Alpha-2-antiplasmin promotes unrestricted plasmin activity in the circulation.",
+          "answer": false,
+          "explain": "Alpha-2-antiplasmin inhibits plasmin and helps limit excessive fibrinolysis."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK431064/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK539745/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
+    },
+    {
+      "id": "tf-ba-biomembranes-007",
+      "type": "tf",
+      "topic": "ba-biomembranes",
+      "level": 2,
+      "sub": "Membrane lipid asymmetry and fluidity",
+      "q": "Regarding the organisation and physical properties of biological membranes:",
+      "items": [
+        {
+          "text": "Phospholipids can move laterally within the same leaflet of a membrane.",
+          "answer": true,
+          "explain": "Lateral diffusion is common and contributes to the fluid nature of biological membranes."
+        },
+        {
+          "text": "Spontaneous movement of a phospholipid from one leaflet to the other is generally much slower than lateral diffusion.",
+          "answer": true,
+          "explain": "Transverse flip-flop is energetically unfavourable for polar head groups and is often facilitated by specific enzymes."
+        },
+        {
+          "text": "Cholesterol can influence membrane fluidity and permeability.",
+          "answer": true,
+          "explain": "Cholesterol modulates packing of phospholipid tails and affects membrane physical properties."
+        },
+        {
+          "text": "The two leaflets of a typical plasma membrane always have identical lipid composition.",
+          "answer": false,
+          "explain": "Membrane leaflets are asymmetric, with different distributions of phospholipids and glycolipids."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26871/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9928/"
+      ],
+      "referenceScope": "Direct references support the topic-level mechanisms and clinical context; all statements remain subject to academic review."
     }
   ]
 }
