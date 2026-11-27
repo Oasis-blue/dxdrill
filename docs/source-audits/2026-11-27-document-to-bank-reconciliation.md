@@ -477,3 +477,24 @@ The item-level register now includes all **17 numbered questions** from Chapter 
 The source answer keys are preserved as printed metadata, not endorsed as academically verified. The direct/partial distinction is based on the fact tested, not merely a shared chapter label.
 
 **Cumulative item-level progress:** Chapters 1–6 now contain **117 registered source questions**: **36 direct matches, 62 partial matches and 19 gaps**. This count covers the first six chapters only; Chapters 7–25 remain to be registered.
+
+
+## 20. Item-level source register — Chapters 7–8 (Heart and Pericardium; Oesophagus and Vagus Nerve)
+
+The item-level register now includes all **25 numbered questions** from Chapter 7 (printed pages 40–44) and all **25 numbered questions** from Chapter 8 (printed pages 45–49). Printed answer-key letters, concepts tested, matching bank IDs and coverage classifications are recorded for every item.
+
+**Chapter 7 — Heart and Pericardium**
+- Direct: 8
+- Partial: 15
+- Gap: 2
+- Gaps: detailed internal features of the left atrium and named branches of the left circumflex artery.
+
+**Chapter 8 — Oesophagus and Vagus Nerve**
+- Direct: 5
+- Partial: 16
+- Gap: 4
+- Gaps: cervical oesophageal relations, detailed segmental arterial supply, and abdominal oesophageal relations. Partial matches cover adjacent but not every requested relationship.
+
+The source answer keys are retained as printed metadata and have not been independently validated. Classification is based on the actual tested concept rather than chapter-level similarity.
+
+**Cumulative item-level progress:** Chapters 1–8 now contain **167 registered source questions**: **49 direct matches, 93 partial matches and 25 gaps**. This is the verified subtotal for the first eight chapters only; Chapters 9–25 remain to be registered.
