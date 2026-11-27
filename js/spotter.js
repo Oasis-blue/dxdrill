@@ -39,7 +39,7 @@
     }
     var n = Math.min(S.n, avail);
     return '<div class="wrap stack"><header><p class="eyebrow">Spotter</p><h1>Steeplechase</h1>' +
-      '<p class="lede">A run of stations. Each shows a slide and a question for a fixed time, then moves on by itself. You cannot go back, like the real exam.</p></header>' +
+      '<p class="lede">A run of stations. Each shows an image and its linked question or questions for a fixed time, then moves on by itself. You cannot go back, like the real exam.</p></header>' +
       '<section class="section stack"><div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Slides from</span><span class="row tight"><button class="btn ghost small" data-act="selall">Select all</button><button class="btn ghost small" data-act="selnone">Clear</button></span></div>' + areas +
       '<p class="hint">' + nTop + ' topic' + (nTop === 1 ? "" : "s") + ' selected · ' + avail + ' slide' + (avail === 1 ? "" : "s") + '. Numbers beside each topic are slides. More subjects appear here as they get pictures.</p></div>' +
       '<div class="field"><span class="label">Stations</span>' + seg("Stations", "n", [5, 10, 15, 20, 30], S.n, "") + '</div>' +
