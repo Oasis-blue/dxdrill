@@ -151,7 +151,7 @@ On 27 November 2026, 98 existing question records with legacy/non-canonical topi
 - The NUC CCMAS permits institution-level curriculum design within its national framework; therefore, obtain FUHSO's approved current course outline before labelling this matrix a definitive FUHSO syllabus audit.
 
 
-## 13. Round 25 completed
+## 14. Round 25 completed
 
 Round 25 added 15 stems / 60 statements, five per core subject:
 - **Anatomy:** basic genetic counselling (the last previously empty core topic), musculoskeletal radiographic projections, meiotic recombination, X-linked inheritance and karyotype interpretation.
