@@ -67,13 +67,13 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
       if(!a||typeof a!=="object"){err(p,"Asset must be an object.");return;}
       claim(a.id,p+".id");claim(a.station&&a.station.id,p+".station.id");
       if(["specimen","model","diagram","xray","clinical-sign"].indexOf(a.kind)<0)err(p+".kind","Use specimen, model, diagram, xray or clinical-sign.");
-      if(!a.alt||!a.alt.trim())err(p+".alt","Add useful alt text.");
-      if(!a.credit||!a.credit.trim())err(p+".credit","Add a truthful visible credit.");
+      if(!String(a.alt||"").trim())err(p+".alt","Add useful alt text.");
+      if(!String(a.credit||"").trim())err(p+".credit","Add a truthful visible credit.");
       var lic=String(a.licence||"").trim(), own=/^own original (photograph|image|drawing)$/i.test(lic);
       if(!(/^(own original (photograph|image|drawing)|public domain(?: .*)?|cc0(?: 1\.0)?|cc by(?:-sa)?(?: [0-9.]+)?|creative commons attribution(?:-sharealike)?(?: [0-9.]+)?)$/i.test(lic)))err(p+".licence","Use an explicit reusable licence: own original, public domain, CC0, CC BY or CC BY-SA.");
       if(!own&& !/^https?:\/\/\S+$/i.test(String(a.sourceUrl||"")))err(p+".sourceUrl","A third-party image needs its source URL.");
       var file=String(a.file||""),parts=file.split("/");
-      if(parts.length!==2||["gross","diagrams","clinical","xray"].indexOf(parts[0])<0||! /^[A-Za-z0-9][A-Za-z0-9._' -]*\.(jpg|jpeg|png|gif|webp)$/i.test(parts[1])||parts[1].indexOf("..")>=0)err(p+".file","Use a safe path like gross/specimen-01.jpg under an approved data/img folder.");
+      if(parts.length!==2||["gross","diagrams","clinical","xray"].indexOf(parts[0])<0||! /^[A-Za-z0-9][A-Za-z0-9._'-]*\.(jpg|jpeg|png|gif|webp)$/i.test(parts[1])||parts[1].indexOf("..")>=0)err(p+".file","Use a safe path like gross/specimen-01.jpg under an approved data/img folder.");
       if(localFiles[parts[1]])warnings.push(p+".file: more than one asset uses the same filename.");
       if(a.marks===null||typeof a.marks!=="object"||Array.isArray(a.marks))err(p+".marks","Use an object, even if empty.");
       else Object.keys(a.marks).forEach(function(k){if(!/^[A-Z0-9]$/.test(k)||!String(a.marks[k]||"").trim())err(p+".marks."+k,"Marker needs one visible letter/number and a proposed structure.");});
@@ -110,7 +110,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
       result.quarantine.map(function(x){return '<div class="msg warn">Quarantined: '+esc(x)+'</div>';}).join("");
     var ok=!result.errors.length&&!result.quarantine.length;
     $("report").innerHTML='<section class="section stack"><h2>Validation report</h2><p class="msg '+(ok?"ok":"err")+'">'+(ok?"No structural errors found. Human review and repository-side image validation are still required.":result.errors.length+" error(s), "+result.quarantine.length+" item(s) quarantined.")+'</p>'+messages+
-      '<p>'+obj.assets.length+' asset(s) · '+obj.assets.reduce(function(n,a){return n+((a.questions||[]).length);},0)+' question(s)</p><h2>Image previews</h2>'+cards+
+      '<p>'+assetList.length+' asset(s) · '+assetList.reduce(function(n,a){return n+((a&&Array.isArray(a.questions))?a.questions.length:0);},0)+' question(s)</p><h2>Image previews</h2>'+cards+
       (ok?'<div class="actions"><button class="btn primary" id="download" type="button">Download checked intake JSON</button></div>':"")+
       '<p class="muted">This browser checker does not upload images or edit the question bank. After downloading, upload the images to their declared data/img folders and run the repository validator/importer. Do not import uncertain or unreviewed content.</p></section>';
     if(ok)$("download").onclick=function(){var blob=new Blob([JSON.stringify(obj,null,2)+"\n"],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="visual-intake-"+obj.topic+".json";a.click();URL.revokeObjectURL(url);};
