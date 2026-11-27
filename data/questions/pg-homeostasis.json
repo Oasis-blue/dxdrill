@@ -1,591 +1,671 @@
 {
- "topic": "pg-homeostasis",
- "questions": [
-  {
-   "id": "pg-homeostasis-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Concept of Milieu Interieur and Homeostasis",
-   "q": "Which nineteenth-century French physiologist first formulated the concept of the constancy of the internal environment (milieu interieur)?",
-   "options": [
-    "Claude Bernard",
-    "Walter Bradford Cannon",
-    "Ernest Starling",
-    "Charles Sherrington"
-   ],
-   "answer": 0,
-   "explain": "Claude Bernard introduced the concept of the milieu interieur (internal environment), stating that its constancy is the condition for free and independent life; Walter Cannon later coined the term homeostasis.",
-   "verified": false,
-   "open": {
-    "q": "Name the French physiologist who originated the concept of the constancy of the internal environment (milieu interieur).",
-    "accept": [
-     "Bernard",
-     "C. Bernard"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Concept of Milieu Interieur and Homeostasis",
-   "q": "Who coined the term homeostasis to describe the coordinated physiological processes that maintain steady states in the body?",
-   "options": [
-    "Claude Bernard",
-    "Walter B. Cannon",
-    "William Harvey",
-    "Ivan Pavlov"
-   ],
-   "answer": 1,
-   "explain": "Walter Bradford Cannon coined the word homeostasis in 1929 and described the role of the sympathoadrenal system in preserving internal stability during stress.",
-   "verified": false,
-   "open": {
-    "q": "Name the American physiologist who coined the term homeostasis.",
-    "accept": [
-     "Walter Cannon",
-     "Cannon",
-     "Walter Bradford Cannon"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Concept of Milieu Interieur and Homeostasis",
-   "q": "Which body fluid compartment directly constitutes the immediate internal environment (milieu interieur) bathing most tissue cells?",
-   "options": [
-    "Intracellular fluid",
-    "Transcellular fluid",
-    "Interstitial fluid",
-    "Cerebrospinal fluid"
-   ],
-   "answer": 2,
-   "explain": "Interstitial fluid makes up roughly three-quarters of the extracellular fluid and directly surrounds tissue cells, exchanging nutrients, gases, and wastes across capillary walls and cell membranes.",
-   "verified": false,
-   "open": {
-    "q": "Which subdivision of extracellular fluid directly surrounds tissue cells and serves as their immediate internal environment?",
-    "accept": [
-     "Interstitial fluid",
-     "Tissue fluid",
-     "ISF"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-004",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Concept of Milieu Interieur and Homeostasis",
-   "q": "Which statement best defines homeostasis in human physiology?",
-   "options": [
-    "Total absence of fluctuations in any physiological variable at all times",
-    "Complete isolation of the organism from changes in the external environment",
-    "Permanent elevation of metabolic variables above baseline during activity",
-    "Maintenance of nearly constant conditions in the internal environment through dynamic regulatory responses"
-   ],
-   "answer": 3,
-   "explain": "Homeostasis is a dynamic steady state rather than static equilibrium; physiological variables oscillate slightly around a set point as opposing effectors continuously correct deviations.",
-   "verified": false,
-   "open": {
-    "q": "Define homeostasis in human physiology.",
-    "accept": [
-     "Maintenance of a constant internal environment",
-     "Dynamic maintenance of steady internal conditions",
-     "Regulation of the internal environment within narrow limits"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Components of a Homeostatic Control System",
-   "q": "In a physiological reflex arc, what is the role of the sensor (receptor)?",
-   "options": [
-    "Detecting a change and sending afferent information to the control centre",
-    "Comparing the value with a set point",
-    "Producing the corrective response",
-    "Secreting hormones into systemic blood"
-   ],
-   "answer": 0,
-   "explain": "Sensors (such as carotid sinus baroreceptors or hypothalamic osmoreceptors) transduce changes in a regulated variable into afferent neural or humoral signals sent to an integrating center.",
-   "verified": false,
-   "open": {
-    "q": "What is the primary function of the sensor (receptor) in a homeostatic control loop?",
-    "accept": [
-     "Detects changes in a regulated variable and sends afferent signals",
-     "Monitors the controlled variable and informs the integrating center"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Components of a Homeostatic Control System",
-   "q": "Which component of a homeostatic feedback loop compares incoming afferent information with the set point and coordinates an appropriate output?",
-   "options": [
-    "Peripheral transducer",
-    "Integrating (control) center",
-    "Effector organ",
-    "Efferent target tissue"
-   ],
-   "answer": 1,
-   "explain": "The integrating center (often located in the hypothalamus, brainstem, or an endocrine gland) evaluates afferent error signals relative to the set point and dispatches efferent commands to effectors.",
-   "verified": false,
-   "open": {
-    "q": "Name the component of a homeostatic control system that compares afferent input against the set point and initiates efferent output.",
-    "accept": [
-     "Integrating center",
-     "Control center",
-     "Comparator"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-007",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Components of a Homeostatic Control System",
-   "q": "What is the error signal in a physiological feedback control system?",
-   "options": [
-    "The maximum possible output capacity of an effector organ",
-    "A structural mutation in a membrane hormone receptor",
-    "The difference between the actual measured value of a variable and its set point",
-    "The time delay required for an action potential to cross a synapse"
-   ],
-   "answer": 2,
-   "explain": "An error signal equals the discrepancy between the sensed value of a controlled variable and the desired set point; it drives the proportional response of the integrating center.",
-   "verified": false,
-   "open": {
-    "q": "In control system physiology, what does the term error signal refer to?",
-    "accept": [
-     "Difference between actual value and set point",
-     "Deviation of a regulated variable from its set point"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Negative Feedback",
-   "q": "How does a negative feedback mechanism stabilize a physiological variable?",
-   "options": [
-    "By amplifying the initial deviation in the same direction until a climax occurs",
-    "By permanently shutting down all effector organs once a stimulus appears",
-    "By anticipating disturbances before any change occurs in the blood",
-    "By initiating an effector response that opposes and reduces the initial deviation from the set point"
-   ],
-   "answer": 3,
-   "explain": "Negative feedback produces a response opposite in direction to the initiating disturbance, restoring the regulated variable back toward its normal set point.",
-   "verified": false,
-   "open": {
-    "q": "How does a negative feedback loop respond to a deviation in a regulated physiological variable?",
-    "accept": [
-     "It opposes the initial change to restore the set point",
-     "It reverses the direction of the disturbance"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Negative Feedback",
-   "q": "Which physiological process is a classic example of negative feedback control?",
-   "options": [
-    "Suppression of pituitary TSH secretion by rising plasma thyroxine (T4) levels",
-    "Oxytocin-induced uterine contractions during active labor",
-    "Rapid sodium influx driving the upstroke of a neuronal action potential",
-    "Activation of clotting factors during the coagulation cascade"
-   ],
-   "answer": 0,
-   "explain": "Elevated circulating thyroid hormones inhibit TRH and TSH release from the hypothalamus and anterior pituitary, lowering thyroid stimulation back toward normal; labor contractions, action potential depolarization, and clotting are positive feedback loops.",
-   "verified": false,
-   "open": {
-    "q": "Explain why the regulation of thyroid hormone secretion via TSH is classified as negative feedback.",
-    "accept": [
-     "High thyroid hormone inhibits TSH release to reduce further hormone synthesis",
-     "Elevated T3 and T4 suppress pituitary TSH secretion"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Negative Feedback",
-   "q": "A rise in arterial blood pressure stretches baroreceptors in the carotid sinus and aortic arch, leading to reflex bradycardia and arteriolar vasodilation. Why is this reflex classified as negative feedback?",
-   "options": [
-    "Because heart rate falls",
-    "The cardiovascular response lowers arterial pressure toward its set point",
-    "Parasympathetic firing directly blocks sympathetic ganglia",
-    "Baroreceptors adapt completely within seconds"
-   ],
-   "answer": 1,
-   "explain": "Negative feedback is defined by the direction of the effect on the regulated variable relative to the initial perturbation: an initial rise in blood pressure triggers responses that decrease blood pressure.",
-   "verified": false,
-   "open": {
-    "q": "Why is the arterial baroreceptor reflex triggered by acute hypertension classified as a negative feedback mechanism?",
-    "accept": [
-     "The reflex lowers arterial blood pressure back toward normal",
-     "Its output opposes the initial increase in blood pressure"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Gain of a Control System",
-   "q": "A physiological control system with a gain of -9 experiences a disturbance that would change arterial pressure by +20 mmHg if no compensation occurred. What is the resulting change in arterial pressure after compensation?",
-   "options": [
-    "+18 mmHg (plus 18 mmHg)",
-    "+10 mmHg (plus 10 mmHg)",
-    "+2 mmHg (plus 2 mmHg)",
-    "-2 mmHg (minus 2 mmHg)"
-   ],
-   "answer": 2,
-   "explain": "Gain = Correction / Remaining Error. With |Gain| = 9, Correction = 9 * Remaining Error, and Total Disturbance = Correction + Remaining Error = 10 * Remaining Error; thus Remaining Error = +20 / 10 = +2 mmHg.",
-   "verified": false,
-   "open": {
-    "q": "If an uncompensated disturbance would raise a regulated variable by 20 units and the control system has a negative feedback gain of -9, what is the final residual error after compensation?",
-    "accept": [
-     "2 units",
-     "+2",
-     "2"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Gain of a Control System",
-   "q": "Which physiological homeostatic mechanism possesses virtually infinite gain over long periods?",
-   "options": [
-    "Arterial baroreceptor reflex",
-    "Pupillary light reflex",
-    "Chemoreceptor control of ventilation",
-    "Renal-body fluid pressure control system"
-   ],
-   "answer": 3,
-   "explain": "The renal-body fluid mechanism (pressure natriuresis and diuresis) continues adjusting extracellular fluid volume until arterial pressure returns all the way to its exact equilibrium point, leaving zero steady-state error and effectively infinite gain.",
-   "verified": false,
-   "open": {
-    "q": "Name the long-term blood pressure regulatory mechanism that exhibits virtually infinite negative feedback gain.",
-    "accept": [
-     "Renal-body fluid mechanism",
-     "Pressure natriuresis and diuresis",
-     "Renal fluid volume control system"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Positive Feedback",
-   "q": "Which statement accurately describes a physiological positive feedback mechanism?",
-   "options": [
-    "The response amplifies the initial stimulus until an endpoint stops it",
-    "It always causes fatal organ failure",
-    "It maintains resting glucose and temperature",
-    "It suppresses all plasma calcium variation"
-   ],
-   "answer": 0,
-   "explain": "Positive feedback amplifies an initial change in the same direction; although uncontrolled positive feedback causes vicious cycles (such as hemorrhagic shock), controlled positive feedback drives essential biological events like parturition, ovulation, and action potentials.",
-   "verified": false,
-   "open": {
-    "q": "How does a positive feedback mechanism differ from negative feedback in its effect on an initial stimulus?",
-    "accept": [
-     "It amplifies or reinforces the initial stimulus in the same direction",
-     "It enhances rather than opposes the initial change"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-014",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Positive Feedback",
-   "q": "During parturition, stretching of the uterine cervix stimulates posterior pituitary oxytocin release, which increases uterine contractions and further stretches the cervix. What event finally terminates this positive feedback cycle?",
-   "options": [
-    "Depletion of all maternal oxytocin stores in the hypothalamus",
-    "Expulsion (delivery) of the fetus, removing cervical stretch",
-    "Sudden progesterone surge from the placenta",
-    "Complete desensitization of uterine smooth muscle to calcium"
-   ],
-   "answer": 1,
-   "explain": "The Ferguson reflex is a self-limiting positive feedback loop that ends abruptly when delivery of the baby eliminates mechanical stretch on the uterine cervix.",
-   "verified": false,
-   "open": {
-    "q": "What external physiological event terminates the positive feedback loop of oxytocin release during childbirth (the Ferguson reflex)?",
-    "accept": [
-     "Delivery of the baby",
-     "Expulsion of the fetus",
-     "Birth of the infant"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-015",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Positive Feedback",
-   "q": "Which reproductive endocrine event relies on positive feedback by high sustained levels of estradiol on the anterior pituitary?",
-   "options": [
-    "Inhibition of FSH during the early follicular phase",
-    "Suppression of GnRH pulsatility during lactation",
-    "The mid-cycle luteinizing hormone (LH) surge triggering ovulation",
-    "Progesterone-mediated quiescence of the myometrium in pregnancy"
-   ],
-   "answer": 2,
-   "explain": "When estradiol remains elevated above threshold for 36 to 48 hours late in the follicular phase, its effect on hypothalamic-pituitary gonadotrophs switches from negative to positive feedback, producing the preovulatory LH surge.",
-   "verified": false,
-   "open": {
-    "q": "Which preovulatory hormonal event is triggered by positive feedback from sustained high estradiol levels?",
-    "accept": [
-     "LH surge",
-     "Luteinizing hormone surge",
-     "Mid-cycle LH surge"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-016",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Positive Feedback",
-   "q": "A trauma patient loses 2.2 liters of blood, causing arterial pressure to fall so low that coronary blood flow drops and myocardial contractility weakens, further lowering arterial pressure. This clinical deterioration illustrates which principle?",
-   "options": [
-    "Feedforward anticipatory adaptation",
-    "High-gain negative feedback compensation",
-    "Circadian resetting of the baroreceptor set point",
-    "Decompensating vicious cycle of positive feedback"
-   ],
-   "answer": 3,
-   "explain": "Beyond a critical threshold of blood loss, negative feedback mechanisms are overwhelmed and severe hypotension impairs cardiac pumping, creating a self-amplifying positive feedback spiral into irreversible hemorrhagic shock.",
-   "verified": false,
-   "open": {
-    "q": "In severe hemorrhagic shock, falling arterial pressure reduces coronary perfusion, which further weakens cardiac output and lowers pressure even more. What control system phenomenon does this represent?",
-    "accept": [
-     "Positive feedback vicious cycle",
-     "Decompensating positive feedback",
-     "Vicious cycle"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-017",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Feedforward Control",
-   "q": "What is the defining feature of feedforward (adaptive) control in physiology?",
-   "options": [
-    "Activating effectors before the regulated variable changes",
-    "Waiting for toxic levels before responding",
-    "Amplifying electrolyte disturbance until renal failure",
-    "Removing all CNS involvement"
-   ],
-   "answer": 0,
-   "explain": "Feedforward control predicts an impending perturbation using sensory cues (such as sight, smell, or GI distension) and activates effectors preemptively to minimize fluctuations in the internal environment.",
-   "verified": false,
-   "open": {
-    "q": "How does feedforward control prevent large disturbances in a regulated physiological variable?",
-    "accept": [
-     "It initiates anticipatory responses before the variable changes",
-     "It acts preemptively in anticipation of a disturbance"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Feedforward Control",
-   "q": "Which physiological response is an example of feedforward regulation?",
-   "options": [
-    "Aldosterone release after hyperkalaemia",
-    "Cephalic-phase insulin and acid secretion before food absorption",
-    "ADH release after raised plasma osmolality",
-    "PTH release after reduced ionised calcium"
-   ],
-   "answer": 1,
-   "explain": "Seeing, smelling, or tasting food triggers vagally mediated insulin and gastric secretion before nutrients are absorbed into the bloodstream, blunting the subsequent postprandial glucose spike.",
-   "verified": false,
-   "open": {
-    "q": "Give an example of feedforward control involving digestion and blood glucose regulation when a person sees or smells food.",
-    "accept": [
-     "Cephalic phase insulin secretion",
-     "Cephalic phase of gastric secretion",
-     "Anticipatory insulin release before food absorption"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-019",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Feedforward Control",
-   "q": "At the very onset of dynamic exercise, pulmonary ventilation increases abruptly within seconds even before arterial PCO2, PO2, or pH have changed. Which regulatory mechanism accounts for this immediate hyperpnea?",
-   "options": [
-    "Central chemoreceptors sensing CSF acidosis",
-    "Peripheral chemoreceptors sensing hypoxaemia",
-    "Motor-cortex and joint-proprioceptor feedforward signals",
-    "Renal bicarbonate excretion"
-   ],
-   "answer": 2,
-   "explain": "Central command from the motor cortex and afferent feedback from moving limb proprioceptors stimulate the medullary respiratory center immediately at exercise onset in a feedforward manner, keeping arterial blood gases remarkably constant.",
-   "verified": false,
-   "open": {
-    "q": "What regulatory mechanism drives the immediate rise in ventilation at the start of exercise before arterial blood gases change?",
-    "accept": [
-     "Feedforward control",
-     "Central command and proprioceptive feedforward signals"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Set Point Resetting and Rhythms",
-   "q": "During a bacterial infection, endogenous pyrogens act on the hypothalamus to produce fever. What happens to the thermoregulatory control system during the chill (onset) phase of fever?",
-   "options": [
-    "Set point falls to 35°C and skin vessels dilate",
-    "Negative feedback is replaced permanently by positive feedback",
-    "Sweating increases despite normal core temperature",
-    "Raised hypothalamic set point triggers heat conservation and shivering"
-   ],
-   "answer": 3,
-   "explain": "Prostaglandin E2 raises the hypothalamic thermoregulatory set point (e.g., to 39 C); because actual blood temperature is initially lower than the new set point, the body perceives itself as cold and triggers cutaneous vasoconstriction and shivering.",
-   "verified": false,
-   "open": {
-    "q": "In terms of homeostatic control systems, what happens to the hypothalamic thermoregulatory set point during the onset of fever?",
-    "accept": [
-     "The set point is raised to a higher temperature",
-     "Elevation of the hypothalamic set point"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Set Point Resetting and Rhythms",
-   "q": "Which hypothalamic nucleus acts as the master circadian pacemaker generating 24-hour rhythms in cortisol secretion, core body temperature, and sleep-wake cycles?",
-   "options": [
-    "Suprachiasmatic nucleus",
-    "Supraoptic nucleus",
-    "Arcuate nucleus",
-    "Ventromedial nucleus"
-   ],
-   "answer": 0,
-   "explain": "The suprachiasmatic nucleus (SCN) receives direct photic input from the retina via the retinohypothalamic tract and entrains daily rhythmic shifts in physiological set points.",
-   "verified": false,
-   "open": {
-    "q": "Name the hypothalamic nucleus that serves as the master circadian clock regulating 24-hour physiological rhythms.",
-    "accept": [
-     "SCN",
-     "Suprachiasmatic nuclei"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Intercellular Communication",
-   "q": "What mode of intercellular signaling occurs when a cell secretes a chemical messenger into the interstitial fluid that acts only on neighboring target cells without entering the bloodstream?",
-   "options": [
-    "Endocrine signaling",
-    "Paracrine signaling",
-    "Autocrine signaling",
-    "Neuroendocrine signaling"
-   ],
-   "answer": 1,
-   "explain": "Paracrine mediators (such as histamine, nitric oxide, or somatostatin in pancreatic islets) diffuse locally through interstitial fluid to regulate nearby cells and are rapidly inactivated before reaching systemic circulation.",
-   "verified": false,
-   "open": {
-    "q": "Name the type of local chemical signaling in which a messenger diffuses through interstitial fluid to act on adjacent target cells.",
-    "accept": [
-     "Paracrine",
-     "Paracrine communication"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-023",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Intercellular Communication",
-   "q": "When an activated T lymphocyte secretes interleukin-2 that binds to receptors on the very same T cell to stimulate its own proliferation, which signaling mechanism is operating?",
-   "options": [
-    "Juxtacrine signaling",
-    "Endocrine signaling",
-    "Autocrine signaling",
-    "Synaptic signaling"
-   ],
-   "answer": 2,
-   "explain": "Autocrine signaling occurs when a cell releases a ligand that binds to receptors on its own plasma membrane to self-regulate its activity.",
-   "verified": false,
-   "open": {
-    "q": "What term describes intercellular communication in which a secreted chemical messenger acts on receptors on the same cell that released it?",
-    "accept": [
-     "Autocrine",
-     "Autocrine communication"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-024",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Redundancy and Hierarchy in Homeostasis",
-   "q": "Why are vital homeostatic variables such as arterial blood pressure and plasma glucose regulated by multiple overlapping control systems rather than a single mechanism?",
-   "options": [
-    "To make all hormones secrete at the same rate",
-    "Because single feedback loops cannot function in ECF",
-    "To remove autonomic nervous system input",
-    "To combine rapid correction with sustained stability"
-   ],
-   "answer": 3,
-   "explain": "Multiple overlapping mechanisms (such as fast neural baroreceptors, intermediate hormonal renin-angiotensin-aldosterone, and slow renal fluid control) operate across different time scales and provide backup if one system fails.",
-   "verified": false,
-   "open": {
-    "q": "State two physiological advantages of regulating critical variables like blood pressure with multiple overlapping homeostatic systems.",
-    "accept": [
-     "Redundancy and coverage across short-term and long-term time scales",
-     "Backup protection if one system fails and fast plus slow regulation"
-    ]
-   }
-  },
-  {
-   "id": "pg-homeostasis-025",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Set Point Resetting and Rhythms",
-   "q": "A 55-year-old man with untreated chronic hypertension (baseline BP 170/105 mmHg) has normal resting heart rate because his carotid sinus baroreceptors have adapted to fire at a normal baseline rate at 170 mmHg. Which homeostatic phenomenon explains this adaptation?",
-   "options": [
-    "Baroreceptor resetting of the operating set point",
-    "Complete failure of negative feedback gain",
-    "Feedforward inhibition of the vasomotor center",
-    "Autocrine downregulation of cardiac beta receptors"
-   ],
-   "answer": 0,
-   "explain": "Within 1 to 2 days of sustained pressure elevation, arterial baroreceptors reset their firing threshold to the higher pressure level, defending the new hypertensive set point against acute fluctuations rather than returning pressure to 120/80 mmHg.",
-   "verified": false,
-   "open": {
-    "q": "What physiological phenomenon causes arterial baroreceptors to adapt within 1 to 2 days to a chronically elevated blood pressure?",
-    "accept": [
-     "Baroreceptor resetting",
-     "Set point resetting",
-     "Adaptation of baroreceptors"
-    ]
-   }
-  }
- ]
+  "topic": "pg-homeostasis",
+  "questions": [
+    {
+      "id": "pg-homeostasis-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Concept of Milieu Interieur and Homeostasis",
+      "q": "Which nineteenth-century French physiologist first formulated the concept of the constancy of the internal environment (milieu interieur)?",
+      "options": [
+        "Claude Bernard",
+        "Walter Bradford Cannon",
+        "Ernest Starling",
+        "Charles Sherrington"
+      ],
+      "answer": 0,
+      "explain": "Claude Bernard introduced the concept of the milieu interieur (internal environment), stating that its constancy is the condition for free and independent life; Walter Cannon later coined the term homeostasis.",
+      "verified": false,
+      "open": {
+        "q": "Name the French physiologist who originated the concept of the constancy of the internal environment (milieu interieur).",
+        "accept": [
+          "Bernard",
+          "C. Bernard"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Concept of Milieu Interieur and Homeostasis",
+      "q": "Who coined the term homeostasis to describe the coordinated physiological processes that maintain steady states in the body?",
+      "options": [
+        "Claude Bernard",
+        "Walter B. Cannon",
+        "William Harvey",
+        "Ivan Pavlov"
+      ],
+      "answer": 1,
+      "explain": "Walter Bradford Cannon coined the word homeostasis in 1929 and described the role of the sympathoadrenal system in preserving internal stability during stress.",
+      "verified": false,
+      "open": {
+        "q": "Name the American physiologist who coined the term homeostasis.",
+        "accept": [
+          "Walter Cannon",
+          "Cannon",
+          "Walter Bradford Cannon"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Concept of Milieu Interieur and Homeostasis",
+      "q": "Which body fluid compartment directly constitutes the immediate internal environment (milieu interieur) bathing most tissue cells?",
+      "options": [
+        "Intracellular fluid",
+        "Transcellular fluid",
+        "Interstitial fluid",
+        "Cerebrospinal fluid"
+      ],
+      "answer": 2,
+      "explain": "Interstitial fluid makes up roughly three-quarters of the extracellular fluid and directly surrounds tissue cells, exchanging nutrients, gases, and wastes across capillary walls and cell membranes.",
+      "verified": false,
+      "open": {
+        "q": "Which subdivision of extracellular fluid directly surrounds tissue cells and serves as their immediate internal environment?",
+        "accept": [
+          "Interstitial fluid",
+          "Tissue fluid",
+          "ISF"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-004",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Concept of Milieu Interieur and Homeostasis",
+      "q": "Which statement best defines homeostasis in human physiology?",
+      "options": [
+        "Total absence of fluctuations in any physiological variable at all times",
+        "Complete isolation of the organism from changes in the external environment",
+        "Permanent elevation of metabolic variables above baseline during activity",
+        "Maintenance of nearly constant conditions in the internal environment through dynamic regulatory responses"
+      ],
+      "answer": 3,
+      "explain": "Homeostasis is a dynamic steady state rather than static equilibrium; physiological variables oscillate slightly around a set point as opposing effectors continuously correct deviations.",
+      "verified": false,
+      "open": {
+        "q": "Define homeostasis in human physiology.",
+        "accept": [
+          "Maintenance of a constant internal environment",
+          "Dynamic maintenance of steady internal conditions",
+          "Regulation of the internal environment within narrow limits"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Components of a Homeostatic Control System",
+      "q": "In a physiological reflex arc, what is the role of the sensor (receptor)?",
+      "options": [
+        "Detecting a change and sending afferent information to the control centre",
+        "Comparing the value with a set point",
+        "Producing the corrective response",
+        "Secreting hormones into systemic blood"
+      ],
+      "answer": 0,
+      "explain": "Sensors (such as carotid sinus baroreceptors or hypothalamic osmoreceptors) transduce changes in a regulated variable into afferent neural or humoral signals sent to an integrating center.",
+      "verified": false,
+      "open": {
+        "q": "What is the primary function of the sensor (receptor) in a homeostatic control loop?",
+        "accept": [
+          "Detects changes in a regulated variable and sends afferent signals",
+          "Monitors the controlled variable and informs the integrating center"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Components of a Homeostatic Control System",
+      "q": "Which component of a homeostatic feedback loop compares incoming afferent information with the set point and coordinates an appropriate output?",
+      "options": [
+        "Peripheral transducer",
+        "Integrating (control) center",
+        "Effector organ",
+        "Efferent target tissue"
+      ],
+      "answer": 1,
+      "explain": "The integrating center (often located in the hypothalamus, brainstem, or an endocrine gland) evaluates afferent error signals relative to the set point and dispatches efferent commands to effectors.",
+      "verified": false,
+      "open": {
+        "q": "Name the component of a homeostatic control system that compares afferent input against the set point and initiates efferent output.",
+        "accept": [
+          "Integrating center",
+          "Control center",
+          "Comparator"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-007",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Components of a Homeostatic Control System",
+      "q": "What is the error signal in a physiological feedback control system?",
+      "options": [
+        "The maximum possible output capacity of an effector organ",
+        "A structural mutation in a membrane hormone receptor",
+        "The difference between the actual measured value of a variable and its set point",
+        "The time delay required for an action potential to cross a synapse"
+      ],
+      "answer": 2,
+      "explain": "An error signal equals the discrepancy between the sensed value of a controlled variable and the desired set point; it drives the proportional response of the integrating center.",
+      "verified": false,
+      "open": {
+        "q": "In control system physiology, what does the term error signal refer to?",
+        "accept": [
+          "Difference between actual value and set point",
+          "Deviation of a regulated variable from its set point"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Negative Feedback",
+      "q": "How does a negative feedback mechanism stabilize a physiological variable?",
+      "options": [
+        "By amplifying the initial deviation in the same direction until a climax occurs",
+        "By permanently shutting down all effector organs once a stimulus appears",
+        "By anticipating disturbances before any change occurs in the blood",
+        "By initiating an effector response that opposes and reduces the initial deviation from the set point"
+      ],
+      "answer": 3,
+      "explain": "Negative feedback produces a response opposite in direction to the initiating disturbance, restoring the regulated variable back toward its normal set point.",
+      "verified": false,
+      "open": {
+        "q": "How does a negative feedback loop respond to a deviation in a regulated physiological variable?",
+        "accept": [
+          "It opposes the initial change to restore the set point",
+          "It reverses the direction of the disturbance"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Negative Feedback",
+      "q": "Which physiological process is a classic example of negative feedback control?",
+      "options": [
+        "Suppression of pituitary TSH secretion by rising plasma thyroxine (T4) levels",
+        "Oxytocin-induced uterine contractions during active labor",
+        "Rapid sodium influx driving the upstroke of a neuronal action potential",
+        "Activation of clotting factors during the coagulation cascade"
+      ],
+      "answer": 0,
+      "explain": "Elevated circulating thyroid hormones inhibit TRH and TSH release from the hypothalamus and anterior pituitary, lowering thyroid stimulation back toward normal; labor contractions, action potential depolarization, and clotting are positive feedback loops.",
+      "verified": false,
+      "open": {
+        "q": "Explain why the regulation of thyroid hormone secretion via TSH is classified as negative feedback.",
+        "accept": [
+          "High thyroid hormone inhibits TSH release to reduce further hormone synthesis",
+          "Elevated T3 and T4 suppress pituitary TSH secretion"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Negative Feedback",
+      "q": "A rise in arterial blood pressure stretches baroreceptors in the carotid sinus and aortic arch, leading to reflex bradycardia and arteriolar vasodilation. Why is this reflex classified as negative feedback?",
+      "options": [
+        "Because heart rate falls",
+        "The cardiovascular response lowers arterial pressure toward its set point",
+        "Parasympathetic firing directly blocks sympathetic ganglia",
+        "Baroreceptors adapt completely within seconds"
+      ],
+      "answer": 1,
+      "explain": "Negative feedback is defined by the direction of the effect on the regulated variable relative to the initial perturbation: an initial rise in blood pressure triggers responses that decrease blood pressure.",
+      "verified": false,
+      "open": {
+        "q": "Why is the arterial baroreceptor reflex triggered by acute hypertension classified as a negative feedback mechanism?",
+        "accept": [
+          "The reflex lowers arterial blood pressure back toward normal",
+          "Its output opposes the initial increase in blood pressure"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Gain of a Control System",
+      "q": "A physiological control system with a gain of -9 experiences a disturbance that would change arterial pressure by +20 mmHg if no compensation occurred. What is the resulting change in arterial pressure after compensation?",
+      "options": [
+        "+18 mmHg (plus 18 mmHg)",
+        "+10 mmHg (plus 10 mmHg)",
+        "+2 mmHg (plus 2 mmHg)",
+        "-2 mmHg (minus 2 mmHg)"
+      ],
+      "answer": 2,
+      "explain": "Gain = Correction / Remaining Error. With |Gain| = 9, Correction = 9 * Remaining Error, and Total Disturbance = Correction + Remaining Error = 10 * Remaining Error; thus Remaining Error = +20 / 10 = +2 mmHg.",
+      "verified": false,
+      "open": {
+        "q": "If an uncompensated disturbance would raise a regulated variable by 20 units and the control system has a negative feedback gain of -9, what is the final residual error after compensation?",
+        "accept": [
+          "2 units",
+          "+2",
+          "2"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Gain of a Control System",
+      "q": "Which physiological homeostatic mechanism possesses virtually infinite gain over long periods?",
+      "options": [
+        "Arterial baroreceptor reflex",
+        "Pupillary light reflex",
+        "Chemoreceptor control of ventilation",
+        "Renal-body fluid pressure control system"
+      ],
+      "answer": 3,
+      "explain": "The renal-body fluid mechanism (pressure natriuresis and diuresis) continues adjusting extracellular fluid volume until arterial pressure returns all the way to its exact equilibrium point, leaving zero steady-state error and effectively infinite gain.",
+      "verified": false,
+      "open": {
+        "q": "Name the long-term blood pressure regulatory mechanism that exhibits virtually infinite negative feedback gain.",
+        "accept": [
+          "Renal-body fluid mechanism",
+          "Pressure natriuresis and diuresis",
+          "Renal fluid volume control system"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Positive Feedback",
+      "q": "Which statement accurately describes a physiological positive feedback mechanism?",
+      "options": [
+        "The response amplifies the initial stimulus until an endpoint stops it",
+        "It always causes fatal organ failure",
+        "It maintains resting glucose and temperature",
+        "It suppresses all plasma calcium variation"
+      ],
+      "answer": 0,
+      "explain": "Positive feedback amplifies an initial change in the same direction; although uncontrolled positive feedback causes vicious cycles (such as hemorrhagic shock), controlled positive feedback drives essential biological events like parturition, ovulation, and action potentials.",
+      "verified": false,
+      "open": {
+        "q": "How does a positive feedback mechanism differ from negative feedback in its effect on an initial stimulus?",
+        "accept": [
+          "It amplifies or reinforces the initial stimulus in the same direction",
+          "It enhances rather than opposes the initial change"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Positive Feedback",
+      "q": "During parturition, stretching of the uterine cervix stimulates posterior pituitary oxytocin release, which increases uterine contractions and further stretches the cervix. What event finally terminates this positive feedback cycle?",
+      "options": [
+        "Depletion of all maternal oxytocin stores in the hypothalamus",
+        "Expulsion (delivery) of the fetus, removing cervical stretch",
+        "Sudden progesterone surge from the placenta",
+        "Complete desensitization of uterine smooth muscle to calcium"
+      ],
+      "answer": 1,
+      "explain": "The Ferguson reflex is a self-limiting positive feedback loop that ends abruptly when delivery of the baby eliminates mechanical stretch on the uterine cervix.",
+      "verified": false,
+      "open": {
+        "q": "What external physiological event terminates the positive feedback loop of oxytocin release during childbirth (the Ferguson reflex)?",
+        "accept": [
+          "Delivery of the baby",
+          "Expulsion of the fetus",
+          "Birth of the infant"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-015",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Positive Feedback",
+      "q": "Which reproductive endocrine event relies on positive feedback by high sustained levels of estradiol on the anterior pituitary?",
+      "options": [
+        "Inhibition of FSH during the early follicular phase",
+        "Suppression of GnRH pulsatility during lactation",
+        "The mid-cycle luteinizing hormone (LH) surge triggering ovulation",
+        "Progesterone-mediated quiescence of the myometrium in pregnancy"
+      ],
+      "answer": 2,
+      "explain": "When estradiol remains elevated above threshold for 36 to 48 hours late in the follicular phase, its effect on hypothalamic-pituitary gonadotrophs switches from negative to positive feedback, producing the preovulatory LH surge.",
+      "verified": false,
+      "open": {
+        "q": "Which preovulatory hormonal event is triggered by positive feedback from sustained high estradiol levels?",
+        "accept": [
+          "LH surge",
+          "Luteinizing hormone surge",
+          "Mid-cycle LH surge"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-016",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Positive Feedback",
+      "q": "A trauma patient loses 2.2 liters of blood, causing arterial pressure to fall so low that coronary blood flow drops and myocardial contractility weakens, further lowering arterial pressure. This clinical deterioration illustrates which principle?",
+      "options": [
+        "Feedforward anticipatory adaptation",
+        "High-gain negative feedback compensation",
+        "Circadian resetting of the baroreceptor set point",
+        "Decompensating vicious cycle of positive feedback"
+      ],
+      "answer": 3,
+      "explain": "Beyond a critical threshold of blood loss, negative feedback mechanisms are overwhelmed and severe hypotension impairs cardiac pumping, creating a self-amplifying positive feedback spiral into irreversible hemorrhagic shock.",
+      "verified": false,
+      "open": {
+        "q": "In severe hemorrhagic shock, falling arterial pressure reduces coronary perfusion, which further weakens cardiac output and lowers pressure even more. What control system phenomenon does this represent?",
+        "accept": [
+          "Positive feedback vicious cycle",
+          "Decompensating positive feedback",
+          "Vicious cycle"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Feedforward Control",
+      "q": "What is the defining feature of feedforward (adaptive) control in physiology?",
+      "options": [
+        "Activating effectors before the regulated variable changes",
+        "Waiting for toxic levels before responding",
+        "Amplifying electrolyte disturbance until renal failure",
+        "Removing all CNS involvement"
+      ],
+      "answer": 0,
+      "explain": "Feedforward control predicts an impending perturbation using sensory cues (such as sight, smell, or GI distension) and activates effectors preemptively to minimize fluctuations in the internal environment.",
+      "verified": false,
+      "open": {
+        "q": "How does feedforward control prevent large disturbances in a regulated physiological variable?",
+        "accept": [
+          "It initiates anticipatory responses before the variable changes",
+          "It acts preemptively in anticipation of a disturbance"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Feedforward Control",
+      "q": "Which physiological response is an example of feedforward regulation?",
+      "options": [
+        "Aldosterone release after hyperkalaemia",
+        "Cephalic-phase insulin and acid secretion before food absorption",
+        "ADH release after raised plasma osmolality",
+        "PTH release after reduced ionised calcium"
+      ],
+      "answer": 1,
+      "explain": "Seeing, smelling, or tasting food triggers vagally mediated insulin and gastric secretion before nutrients are absorbed into the bloodstream, blunting the subsequent postprandial glucose spike.",
+      "verified": false,
+      "open": {
+        "q": "Give an example of feedforward control involving digestion and blood glucose regulation when a person sees or smells food.",
+        "accept": [
+          "Cephalic phase insulin secretion",
+          "Cephalic phase of gastric secretion",
+          "Anticipatory insulin release before food absorption"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-019",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Feedforward Control",
+      "q": "At the very onset of dynamic exercise, pulmonary ventilation increases abruptly within seconds even before arterial PCO2, PO2, or pH have changed. Which regulatory mechanism accounts for this immediate hyperpnea?",
+      "options": [
+        "Central chemoreceptors sensing CSF acidosis",
+        "Peripheral chemoreceptors sensing hypoxaemia",
+        "Motor-cortex and joint-proprioceptor feedforward signals",
+        "Renal bicarbonate excretion"
+      ],
+      "answer": 2,
+      "explain": "Central command from the motor cortex and afferent feedback from moving limb proprioceptors stimulate the medullary respiratory center immediately at exercise onset in a feedforward manner, keeping arterial blood gases remarkably constant.",
+      "verified": false,
+      "open": {
+        "q": "What regulatory mechanism drives the immediate rise in ventilation at the start of exercise before arterial blood gases change?",
+        "accept": [
+          "Feedforward control",
+          "Central command and proprioceptive feedforward signals"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Set Point Resetting and Rhythms",
+      "q": "During a bacterial infection, endogenous pyrogens act on the hypothalamus to produce fever. What happens to the thermoregulatory control system during the chill (onset) phase of fever?",
+      "options": [
+        "Set point falls to 35°C and skin vessels dilate",
+        "Negative feedback is replaced permanently by positive feedback",
+        "Sweating increases despite normal core temperature",
+        "Raised hypothalamic set point triggers heat conservation and shivering"
+      ],
+      "answer": 3,
+      "explain": "Prostaglandin E2 raises the hypothalamic thermoregulatory set point (e.g., to 39 C); because actual blood temperature is initially lower than the new set point, the body perceives itself as cold and triggers cutaneous vasoconstriction and shivering.",
+      "verified": false,
+      "open": {
+        "q": "In terms of homeostatic control systems, what happens to the hypothalamic thermoregulatory set point during the onset of fever?",
+        "accept": [
+          "The set point is raised to a higher temperature",
+          "Elevation of the hypothalamic set point"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Set Point Resetting and Rhythms",
+      "q": "Which hypothalamic nucleus acts as the master circadian pacemaker generating 24-hour rhythms in cortisol secretion, core body temperature, and sleep-wake cycles?",
+      "options": [
+        "Suprachiasmatic nucleus",
+        "Supraoptic nucleus",
+        "Arcuate nucleus",
+        "Ventromedial nucleus"
+      ],
+      "answer": 0,
+      "explain": "The suprachiasmatic nucleus (SCN) receives direct photic input from the retina via the retinohypothalamic tract and entrains daily rhythmic shifts in physiological set points.",
+      "verified": false,
+      "open": {
+        "q": "Name the hypothalamic nucleus that serves as the master circadian clock regulating 24-hour physiological rhythms.",
+        "accept": [
+          "SCN",
+          "Suprachiasmatic nuclei"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Intercellular Communication",
+      "q": "What mode of intercellular signaling occurs when a cell secretes a chemical messenger into the interstitial fluid that acts only on neighboring target cells without entering the bloodstream?",
+      "options": [
+        "Endocrine signaling",
+        "Paracrine signaling",
+        "Autocrine signaling",
+        "Neuroendocrine signaling"
+      ],
+      "answer": 1,
+      "explain": "Paracrine mediators (such as histamine, nitric oxide, or somatostatin in pancreatic islets) diffuse locally through interstitial fluid to regulate nearby cells and are rapidly inactivated before reaching systemic circulation.",
+      "verified": false,
+      "open": {
+        "q": "Name the type of local chemical signaling in which a messenger diffuses through interstitial fluid to act on adjacent target cells.",
+        "accept": [
+          "Paracrine",
+          "Paracrine communication"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-023",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Intercellular Communication",
+      "q": "When an activated T lymphocyte secretes interleukin-2 that binds to receptors on the very same T cell to stimulate its own proliferation, which signaling mechanism is operating?",
+      "options": [
+        "Juxtacrine signaling",
+        "Endocrine signaling",
+        "Autocrine signaling",
+        "Synaptic signaling"
+      ],
+      "answer": 2,
+      "explain": "Autocrine signaling occurs when a cell releases a ligand that binds to receptors on its own plasma membrane to self-regulate its activity.",
+      "verified": false,
+      "open": {
+        "q": "What term describes intercellular communication in which a secreted chemical messenger acts on receptors on the same cell that released it?",
+        "accept": [
+          "Autocrine",
+          "Autocrine communication"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-024",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Redundancy and Hierarchy in Homeostasis",
+      "q": "Why are vital homeostatic variables such as arterial blood pressure and plasma glucose regulated by multiple overlapping control systems rather than a single mechanism?",
+      "options": [
+        "To make all hormones secrete at the same rate",
+        "Because single feedback loops cannot function in ECF",
+        "To remove autonomic nervous system input",
+        "To combine rapid correction with sustained stability"
+      ],
+      "answer": 3,
+      "explain": "Multiple overlapping mechanisms (such as fast neural baroreceptors, intermediate hormonal renin-angiotensin-aldosterone, and slow renal fluid control) operate across different time scales and provide backup if one system fails.",
+      "verified": false,
+      "open": {
+        "q": "State two physiological advantages of regulating critical variables like blood pressure with multiple overlapping homeostatic systems.",
+        "accept": [
+          "Redundancy and coverage across short-term and long-term time scales",
+          "Backup protection if one system fails and fast plus slow regulation"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-025",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Set Point Resetting and Rhythms",
+      "q": "A 55-year-old man with untreated chronic hypertension (baseline BP 170/105 mmHg) has normal resting heart rate because his carotid sinus baroreceptors have adapted to fire at a normal baseline rate at 170 mmHg. Which homeostatic phenomenon explains this adaptation?",
+      "options": [
+        "Baroreceptor resetting of the operating set point",
+        "Complete failure of negative feedback gain",
+        "Feedforward inhibition of the vasomotor center",
+        "Autocrine downregulation of cardiac beta receptors"
+      ],
+      "answer": 0,
+      "explain": "Within 1 to 2 days of sustained pressure elevation, arterial baroreceptors reset their firing threshold to the higher pressure level, defending the new hypertensive set point against acute fluctuations rather than returning pressure to 120/80 mmHg.",
+      "verified": false,
+      "open": {
+        "q": "What physiological phenomenon causes arterial baroreceptors to adapt within 1 to 2 days to a chronically elevated blood pressure?",
+        "accept": [
+          "Baroreceptor resetting",
+          "Set point resetting",
+          "Adaptation of baroreceptors"
+        ]
+      }
+    },
+    {
+      "id": "pg-homeostasis-026",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Negative Feedback",
+      "q": "After a carbohydrate-rich meal, rising plasma glucose stimulates pancreatic beta cells to release insulin. Increased glucose uptake and storage then lower plasma glucose. Which feature makes this a negative-feedback response?",
+      "options": [
+        "The response amplifies the initial rise in glucose",
+        "The response opposes the initial change in the regulated variable",
+        "The response occurs before glucose changes",
+        "The response permanently resets the glucose set point"
+      ],
+      "answer": 1,
+      "explain": "Negative feedback produces an effect that opposes the initiating disturbance. Insulin-mediated uptake and storage reduce the postprandial rise in plasma glucose.",
+      "verified": false
+    },
+    {
+      "id": "pg-homeostasis-027",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Components of a Homeostatic Control System",
+      "q": "A rise in plasma osmolality is detected by hypothalamic osmoreceptors, leading to increased antidiuretic hormone release and renal water reabsorption. In this control pathway, which structure acts as the effector?",
+      "options": [
+        "Hypothalamic osmoreceptor",
+        "Posterior pituitary nerve terminal",
+        "Collecting-duct principal cell",
+        "Thirst centre"
+      ],
+      "answer": 2,
+      "explain": "The collecting-duct principal cell is the effector: ADH binds V2 receptors and promotes aquaporin-2 insertion, increasing water reabsorption and helping restore plasma osmolality.",
+      "verified": false
+    },
+    {
+      "id": "pg-homeostasis-028",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Set Point Resetting and Rhythms",
+      "q": "During the onset of fever, a patient feels cold and begins shivering even though the measured core temperature is already elevated. What explains this response?",
+      "options": [
+        "The hypothalamic set point has risen, making the current temperature relatively too low",
+        "The hypothalamic set point has fallen below the current temperature",
+        "Peripheral thermoreceptors have stopped functioning",
+        "Sweating has increased the hypothalamic set point"
+      ],
+      "answer": 0,
+      "explain": "Pyrogen-induced prostaglandin E2 raises the hypothalamic temperature set point. Until core temperature approaches this new set point, heat-conserving and heat-generating responses such as vasoconstriction and shivering occur.",
+      "verified": false
+    },
+    {
+      "id": "pg-homeostasis-029",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Negative Feedback",
+      "q": "A fall in ionised plasma calcium stimulates parathyroid hormone secretion. The resulting increase in renal calcium reabsorption and bone calcium mobilisation helps restore plasma calcium. Which statement best describes the feedback?",
+      "options": [
+        "The response reinforces the fall in calcium",
+        "The response opposes the fall in calcium",
+        "The response is an irreversible positive-feedback loop",
+        "The response is independent of the regulated variable"
+      ],
+      "answer": 1,
+      "explain": "Low ionised calcium stimulates PTH release. PTH-mediated renal, skeletal and vitamin D effects increase extracellular calcium, opposing the original fall and completing a negative-feedback response.",
+      "verified": false
+    },
+    {
+      "id": "pg-homeostasis-030",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Feedforward Control",
+      "q": "Before a person begins a familiar meal, the sight and smell of food stimulate salivation and gastric secretory activity. This anticipatory response is best classified as:",
+      "options": [
+        "Negative feedback",
+        "Positive feedback",
+        "Feedforward control",
+        "Set-point failure"
+      ],
+      "answer": 2,
+      "explain": "Feedforward control anticipates an expected disturbance and initiates a response before the regulated variable changes substantially. Cephalic-phase digestive responses prepare the gastrointestinal tract for food.",
+      "verified": false
+    }
+  ]
 }
