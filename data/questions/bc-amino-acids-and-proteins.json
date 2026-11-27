@@ -706,6 +706,123 @@
           "Excess carbamoyl phosphate enters pyrimidine synthesis and increases orotic acid production"
         ]
       }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-031",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transamination",
+      "q": "A patient with vitamin B6 deficiency has impaired activity of several aminotransferases. Which active coenzyme form of vitamin B6 is required for these reactions?",
+      "options": [
+        "Pyridoxal phosphate",
+        "Tetrahydrofolate",
+        "Biotin",
+        "Thiamine pyrophosphate"
+      ],
+      "answer": 0,
+      "explain": "Pyridoxal phosphate (PLP), the active coenzyme form of vitamin B6, temporarily accepts and transfers amino groups during transamination. Deficiency can impair amino acid metabolism and neurotransmitter synthesis.",
+      "verified": false,
+      "open": {
+        "q": "Which vitamin-derived coenzyme is required by aminotransferases?",
+        "accept": [
+          "Pyridoxal phosphate",
+          "PLP",
+          "Pyridoxal-5-phosphate"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-032",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Oxidative deamination",
+      "q": "During amino acid catabolism, glutamate undergoes oxidative deamination in mitochondria to release free ammonia. Which enzyme catalyses this reaction?",
+      "options": [
+        "Glutamate dehydrogenase",
+        "Alanine aminotransferase",
+        "Glutamine synthetase",
+        "Carbamoyl phosphate synthetase II"
+      ],
+      "answer": 0,
+      "explain": "Glutamate dehydrogenase catalyses the reversible oxidative deamination of glutamate to alpha-ketoglutarate and NH4+. It is located in the mitochondrial matrix and can use NAD+ or NADP+ as a cofactor.",
+      "verified": false,
+      "open": {
+        "q": "Which mitochondrial enzyme catalyses oxidative deamination of glutamate?",
+        "accept": [
+          "Glutamate dehydrogenase",
+          "GDH"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-033",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Methionine metabolism",
+      "q": "A methylation reaction in the synthesis of creatine consumes the major activated methyl-group donor formed from methionine and ATP. Which compound donates the methyl group?",
+      "options": [
+        "S-adenosylmethionine",
+        "S-adenosylhomocysteine",
+        "Homocysteine",
+        "Methionine sulfoxide"
+      ],
+      "answer": 0,
+      "explain": "Methionine reacts with ATP to form S-adenosylmethionine (SAM), a high-energy methyl-group donor used in numerous methylation reactions, including steps in creatine and epinephrine synthesis. After donating its methyl group, SAM becomes S-adenosylhomocysteine.",
+      "verified": false,
+      "open": {
+        "q": "What is the principal activated methyl-group donor derived from methionine?",
+        "accept": [
+          "S-adenosylmethionine",
+          "SAM"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-034",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Amino acid classification and metabolism",
+      "q": "A student is asked to classify tyrosine according to its catabolic products. Which description is correct?",
+      "options": [
+        "Strictly glucogenic",
+        "Strictly ketogenic",
+        "Both glucogenic and ketogenic",
+        "Neither glucogenic nor ketogenic"
+      ],
+      "answer": 2,
+      "explain": "Tyrosine is both glucogenic and ketogenic. Its degradation yields fumarate, which can contribute to gluconeogenesis, and acetoacetate, a ketone-body precursor.",
+      "verified": false,
+      "open": {
+        "q": "Is tyrosine glucogenic, ketogenic, or both?",
+        "accept": [
+          "Both glucogenic and ketogenic",
+          "Both"
+        ]
+      }
+    },
+    {
+      "id": "bc-amino-acids-and-proteins-035",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cysteine and sulfur amino acid metabolism",
+      "q": "Cysteine can be synthesised from homocysteine through the transsulfuration pathway. Which vitamin-derived coenzyme is required by the key enzymes of this pathway?",
+      "options": [
+        "Pyridoxal phosphate (vitamin B6)",
+        "Folate (vitamin B9)",
+        "Cobalamin (vitamin B12)",
+        "Ascorbate (vitamin C)"
+      ],
+      "answer": 0,
+      "explain": "The transsulfuration pathway converts homocysteine and serine to cystathionine and then cysteine. Cystathionine beta-synthase and cystathionine gamma-lyase require pyridoxal phosphate, the active form of vitamin B6.",
+      "verified": false,
+      "open": {
+        "q": "Which vitamin-derived coenzyme is required for the transsulfuration pathway that forms cysteine?",
+        "accept": [
+          "Pyridoxal phosphate",
+          "PLP",
+          "Vitamin B6 coenzyme"
+        ]
+      }
     }
   ]
 }
