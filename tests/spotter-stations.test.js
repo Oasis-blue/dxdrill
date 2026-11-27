@@ -39,7 +39,7 @@ function bootSpotter() {
   };
   const window = { DX, matchMedia: () => ({ matches: false }), scrollTo() {} };
   const context = {
-    window, document, Date, Math: Object.create(Math),
+    window, document, Date, matchMedia: window.matchMedia, Math: Object.create(Math),
     setInterval: fn => { intervals.push(fn); return intervals.length; },
     clearInterval() {}
   };
