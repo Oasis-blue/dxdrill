@@ -436,3 +436,23 @@ Chapter 3 coverage classification:
 The source's printed answer-key letters are retained as metadata, not treated as academically validated answers. The register deliberately records gaps even where a broad breast topic exists in DxDrill.
 
 **Cumulative item-level progress:** Chapters 1–3 now contain **60 registered source questions**: **25 direct matches, 24 partial matches and 11 gaps**. This remains a partial-source register; Chapters 4–25 still require item-level matching.
+
+
+## 18. Item-level source register — Chapter 4 (Mediastinum)
+
+The register now includes all **24 numbered questions** from Chapter 4 (printed pages 26–30), including the printed answer-key letters, the principal tested concept, and matching normal-format and True/False bank IDs where relevant.
+
+Chapter 4 classification:
+- **Direct:** 4 items
+- **Partial:** 16 items
+- **Gap:** 4 items
+
+The four identified gaps are:
+- Cardiac plexus and tracheobronchial lymph-node contents of the mediastinum.
+- Formation of the hemiazygos vein from the ascending lumbar and subcostal veins.
+- Detailed topographical relations and course of the hemiazygos vein.
+- Formation and identity of the stellate (cervicothoracic) ganglion.
+
+The many partial classifications are intentional: existing records cover some mediastinal divisions, contents, azygos anatomy, thoracic duct relations and splanchnic nerve facts, but do not test the full scope of several multi-statement source items. Printed answer-key letters remain source metadata and have not been independently validated.
+
+**Cumulative item-level progress:** Chapters 1–4 now contain **84 registered source questions**. The cumulative classification is **29 direct, 40 partial and 15 gaps**. This is an item-level count for the first four chapters only; Chapters 5–25 remain to be registered.
