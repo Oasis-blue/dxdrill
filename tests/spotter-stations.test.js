@@ -37,7 +37,7 @@ function bootSpotter() {
     getElementById: () => null,
     querySelectorAll: () => []
   };
-  const window = { DX, matchMedia: () => ({ matches: false }), scrollTo() {} };
+  const window = { DX, matchMedia: () => ({ matches: false }), confirm: () => true, scrollTo() {} };
   const context = {
     window, document, Date, matchMedia: window.matchMedia, Math: Object.create(Math),
     setInterval: fn => { intervals.push(fn); return intervals.length; },
