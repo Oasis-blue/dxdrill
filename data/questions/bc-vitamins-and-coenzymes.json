@@ -223,9 +223,9 @@
       "q": "Which metabolic reaction type is catalyzed by biotin-dependent enzymes such as pyruvate carboxylase and acetyl-CoA carboxylase?",
       "options": [
         "Carboxylation (CO2 transfer)",
-        "Deamination",
-        "Hydrolysis",
-        "Isomerization"
+        "Oxidative decarboxylation",
+        "Transamination",
+        "Methyl-group transfer"
       ],
       "answer": 0,
       "explain": "Biotin acts as a mobile carrier of activated carbon dioxide (carboxybiotin) in ATP-dependent carboxylation reactions, including pyruvate carboxylase, acetyl-CoA carboxylase, and propionyl-CoA carboxylase. Raw egg white protein avidin binds biotin tightly and can cause deficiency.",
@@ -554,9 +554,9 @@
       "q": "Which clinical manifestations can occur with severe vitamin E deficiency?",
       "options": [
         "Spinocerebellar ataxia, peripheral neuropathy, and hemolytic anemia",
-        "Pellagra dermatitis, diarrhea, and dementia",
-        "Bilateral parotid enlargement and dental fluorosis",
-        "Hypercalcemic nephrocalcinosis and band keratopathy"
+        "Night blindness, xerophthalmia, and Bitot spots",
+        "Bleeding tendency from impaired gamma-carboxylation",
+        "Rickets with defective bone mineralisation"
       ],
       "answer": 0,
       "explain": "Vitamin E deficiency increases erythrocyte fragility (hemolytic anemia, especially in premature infants) and causes neurologic dysfunction including posterior column and spinocerebellar degeneration (ataxia, areflexia). It is often associated with fat malabsorption or abetalipoproteinemia.",
@@ -604,9 +604,9 @@
       "q": "How does warfarin exert its anticoagulant effect in relation to the vitamin K cycle?",
       "options": [
         "Inhibits vitamin K epoxide reductase, preventing active vitamin K recycling",
-        "Activates factor Xa and thrombin",
-        "Chelates dietary calcium in the gut",
-        "Stimulates hepatic fibrinogen synthesis"
+        "Directly inhibits thrombin in the circulation",
+        "Directly inhibits activated factor X",
+        "Inhibits platelet cyclooxygenase-1 and thromboxane A2 synthesis"
       ],
       "answer": 0,
       "explain": "During gamma-carboxylation, reduced vitamin K (hydroquinone) is oxidized to vitamin K epoxide, which must be reduced back by vitamin K epoxide reductase (VKORC1). Warfarin inhibits VKORC1, depleting active reduced vitamin K and reducing functional Gla-modified clotting factors.",
@@ -675,7 +675,7 @@
       "q": "In which metabolic pathway is NADPH primarily generated for fatty acid synthesis, cholesterol synthesis, and glutathione reduction?",
       "options": [
         "Pentose phosphate pathway (HMP shunt)",
-        "Citric acid cycle (TCA cycle)",
+        "Glycolysis",
         "Beta-oxidation of fatty acids",
         "Urea cycle"
       ],

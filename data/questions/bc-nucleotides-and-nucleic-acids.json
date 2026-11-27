@@ -413,9 +413,9 @@
       "q": "How does acetylation of lysine residues on histone tails generally affect chromatin structure and gene transcription?",
       "options": [
         "Neutralizes positive charge to loosen chromatin and promote transcription",
-        "Increases positive charge to tighten chromatin and silence transcription",
-        "Cleaves the DNA backbone into short fragments",
-        "Converts ribose into 2-deoxyribose"
+        "Removes acetyl groups to increase histone-DNA attraction and compact chromatin",
+        "Adds methyl groups to CpG-rich DNA regions, often repressing transcription",
+        "Methylates histone lysine residues to recruit transcriptional repressors"
       ],
       "answer": 0,
       "explain": "Histone acetyltransferases add acetyl groups to lysine epsilon-amino groups, removing positive charge that attracts negatively charged DNA. This relaxes chromatin into a more open euchromatin state accessible to transcription.",
@@ -781,9 +781,9 @@
       "q": "A deficiency of orotic acid phosphoribosyltransferase and OMP decarboxylase causes which biochemical pattern?",
       "options": [
         "Orotic aciduria with megaloblastic anaemia and no hyperammonaemia",
-        "Hyperammonaemia with low urinary orotate",
-        "Increased uric acid with gout",
-        "Lactic acidosis with hypoglycaemia"
+        "Hyperammonaemia with increased urinary orotate due to ornithine transcarbamylase deficiency",
+        "Hyperuricaemia due to impaired purine salvage",
+        "Lymphopenia due to accumulation of deoxyadenosine nucleotides"
       ],
       "answer": 0,
       "explain": "Hereditary orotic aciduria results from deficient UMP synthase activity (orotic acid phosphoribosyltransferase and OMP decarboxylase). Pyrimidine synthesis is impaired, causing orotate accumulation and megaloblastic anaemia; unlike OTC deficiency, hyperammonaemia is absent.",
@@ -869,9 +869,9 @@
       "q": "A patient with severe combined immunodeficiency has a deficiency of adenosine deaminase. Which metabolite accumulation is particularly toxic to lymphocytes?",
       "options": [
         "Deoxyadenosine nucleotides, especially dATP",
-        "Uric acid",
-        "Orotic acid",
-        "Thymidine monophosphate"
+        "Deoxyguanosine nucleotides, especially dGTP",
+        "Adenosine monophosphate (AMP)",
+        "Thymidine monophosphate (TMP)"
       ],
       "answer": 0,
       "explain": "Adenosine deaminase deficiency causes accumulation of adenosine and deoxyadenosine metabolites. Increased dATP inhibits ribonucleotide reductase, disrupting deoxynucleotide production and impairing lymphocyte DNA synthesis.",
@@ -959,9 +959,9 @@
       "q": "During DNA replication, a drug inhibits topoisomerase II. Which immediate problem is most likely to occur ahead of the replication fork?",
       "options": [
         "Accumulation of torsional strain and supercoiling",
-        "Failure to attach amino acids to tRNA",
-        "Failure to form peptide bonds",
-        "Loss of the RNA primer's 5′ cap"
+        "Failure to unwind the parental DNA duplex at the replication fork",
+        "Failure to synthesise short RNA primers",
+        "Failure to join Okazaki fragments on the lagging strand"
       ],
       "answer": 0,
       "explain": "Topoisomerase II transiently cuts both DNA strands, passes another DNA segment through the break and reseals it. This relieves torsional stress and resolves supercoils generated as the replication fork advances.",
