@@ -301,3 +301,36 @@ The existing abdomen/pelvis normal MCQ bank was checked first. It already contai
 All five additions are marked unverified/draft pending academic review. Existing records and IDs were preserved. The T/F file was re-fetched and parsed after the write: **505 records, 505 unique IDs**, with all five new IDs present.
 
 **Coverage qualification:** Chapters 9–14 were reviewed against the live banks as a chapter batch. This does not yet provide a full item-by-item mapping of every printed question to exact existing bank IDs, and it is not a claim that each source question has an individual DxDrill counterpart. The source-to-bank register remains outstanding.
+
+
+## 12. Dual-bank batch — Chapters 15–18 (Pancreas through Suprarenal Glands)
+
+The next four consecutive chapters of the 145-page Bartoș et al. source were reviewed against the live normal-format Anatomy bank and the shared True/False bank:
+
+| Chapter | Subject | Printed question count |
+|---|---|---:|
+| 15 | Pancreas | 35 |
+| 16 | Spleen | 18 |
+| 17 | Kidney and Ureters | 25 |
+| 18 | Suprarenal Glands | 12 |
+| **Total** | | **90** |
+
+The review focused on pancreatic relations, ductal anatomy and arterial arcades; splenic surfaces, peritoneal ligaments and segmental vascular supply; renal relations, hilar arrangement, collecting system and ureteric constrictions; and suprarenal relations, cortical zones, arterial supply and venous drainage. Existing normal-format coverage already addressed many of the principal relationships, including pancreatic head obstruction, uncinate process, splenic ligaments, renal coverings/hilum, ureteric course and suprarenal venous drainage. The chapter pass therefore added only targeted gaps rather than duplicating those items.
+
+**Normal MCQ additions — `data/questions/gr-abdomen-pelvis-and-perineum.json`**
+- `APP-237`: main pancreatic duct and its usual union with the common bile duct before the major duodenal papilla.
+- `APP-238`: relationship of the left renal artery to the left renal vein and aorta.
+
+**True/False additions — `data/questions/tf-core-expansion.json`**
+- `tf-gr-pancreas-001`: pancreatic head/uncinate relations, portal vein formation, pancreatic tail location and ductal drainage.
+- `tf-gr-spleen-001`: splenic surfaces, gastrosplenic and splenorenal ligaments, coeliac origin and segmental end arteries.
+- `tf-gr-kidney-001`: renal hilar order, renal artery lengths, left renal vein course, cortex/medulla and ureteric constrictions.
+- `tf-gr-suprarenal-001`: renal fascia relationship, right gland/IVC relation, venous drainage, cortical zones and medullary innervation.
+
+All six new records are marked `verified:false` / `draft-unverified` pending academic review. Existing records and IDs were not renamed or overwritten.
+
+**Post-write verification:** the live T/F file parses as JSON and contains **509 records with 509 unique IDs**. All four new T/F IDs are present. The live abdomen/pelvis normal bank parses as JSON and contains **235 records with 235 unique IDs**. Both new normal MCQ IDs are present. The writes were committed separately:
+- T/F batch: `7e4e99f104136588996625611197167e7bdb9e94`
+- Normal MCQ batch: `13cc2bad8038dcd3eb9c43466ef51b9b138145af`
+
+**Coverage qualification:** the 90 printed questions were reviewed at chapter/concept level against both banks, but this pass does not yet constitute a complete question-by-question source-to-record register. No claim is made that each of the 90 printed questions has an individual DxDrill counterpart. The item-level mapping remains outstanding.
