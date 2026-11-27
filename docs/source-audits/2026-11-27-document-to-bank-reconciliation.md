@@ -518,7 +518,7 @@ The item-level register now includes all **27 numbered questions** from Chapter 
 
 Printed answer keys are recorded as source metadata, not independently validated. Direct/partial classifications are based on the tested knowledge, not merely shared subject headings.
 
-**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 19–25 remain to be registered.
+**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 23–25 remain to be registered.
 
 
 ## 22. Item-level reconciliation — Chapters 11–14 (27 November 2026)
@@ -553,3 +553,22 @@ The matching references include the existing targeted records `APP-202`, `APP-20
 **Cumulative item-level progress:** Chapters 1–18 now contain **414 registered source questions**: **101 direct matches, 243 partial matches and 70 gaps**. The 70 gaps are all in Chapters 1–14; the absence of gaps in this four-chapter tranche reflects the coverage identified in the prior dual-bank review, not a claim that the source's printed answer key has been academically validated.
 
 Printed answer-key letters remain source metadata only. All new bank questions from the preceding chapter-level passes remain unverified pending academic review. Chapters 19–25 still require item-level registration.
+
+
+## 24. Item-level reconciliation — Chapters 19–22 (27 November 2026)
+
+The item-level register now includes all **94 numbered questions** from Chapters 19–22, with the source's printed answer-key letters recorded separately from the coverage assessment. Each item was checked against both the normal Anatomy MCQ bank and the True/False bank. The matching decision is based on the actual tested anatomical detail, not simply a shared topic label.
+
+| Chapter | Source questions | Direct | Partial | Gap |
+|---|---:|---:|---:|---:|
+| 19. Prostate, urethra, seminal vesicles and ductus deferens | 20 | 2 | 15 | 3 |
+| 20. Urinary bladder | 18 | 5 | 12 | 1 |
+| 21. Uterus | 28 | 3 | 25 | 0 |
+| 22. Ovaries and fallopian tubes | 28 | 5 | 23 | 0 |
+| **Chapters 19–22** | **94** | **15** | **75** | **4** |
+
+The four newly identified item-level gaps concern the arterial supply of the male urethra, venous drainage of the anterior and posterior urethra, and the arterial supply of the prostate. These are specific knowledge gaps despite existing broad coverage of male pelvic viscera. No new bank records were added in this item-mapping pass because the earlier chapter-level review had already introduced targeted male and female pelvic anatomy records; this tranche records where those records match and where detail remains uncovered.
+
+The printed key for Chapter 22 is transcribed as it appears in the source, including its apparent repetition of the Chapter 21 key sequence; it has not been independently validated. Printed answer-key letters throughout remain source metadata only. All source-informed additions remain unverified pending academic review.
+
+**Cumulative item-level progress:** Chapters 1–22 now contain **508 registered source questions**: **116 direct matches, 318 partial matches and 74 gaps**. Chapters 23–25 (76 source questions) remain for the final item-level tranche.
