@@ -1,554 +1,634 @@
 {
- "topic": "phys-dialysis-diuretics",
- "questions": [
-  {
-   "id": "ren-093",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "By what main process does haemodialysis remove waste products?",
-   "options": [
-    "Active transport by the membrane",
-    "Diffusion across a semipermeable membrane",
-    "Filtration only",
-    "Osmosis only"
-   ],
-   "answer": 1,
-   "explain": "Solutes move down their concentration gradient from blood into dialysate. Ultrafiltration removes excess fluid.",
-   "verified": false,
-   "open": {
-    "q": "By what main process does haemodialysis remove waste products?",
-    "accept": [
-     "diffusion",
-     "diffusion and ultrafiltration"
-    ]
-   }
-  },
-  {
-   "id": "ren-094",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "Which drug is commonly given in haemodialysis to prevent clotting in the circuit?",
-   "options": [
-    "Warfarin",
-    "Aspirin",
-    "Vitamin K",
-    "Heparin"
-   ],
-   "answer": 3,
-   "explain": "Heparin has a short action and can be stopped quickly.",
-   "verified": false,
-   "open": {
-    "q": "Which drug is commonly given in haemodialysis to prevent clotting in the circuit?",
-    "accept": [
-     "heparin"
-    ]
-   }
-  },
-  {
-   "id": "ren-095",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "What name is given to blood and dialysate flowing in opposite directions?",
-   "options": [
-    "Cocurrent flow",
-    "Countercurrent flow",
-    "Laminar flow",
-    "Turbulent flow"
-   ],
-   "answer": 1,
-   "explain": "It maintains a diffusion gradient along the whole length of the dialyser.",
-   "verified": false,
-   "open": {
-    "q": "What name is given to blood and dialysate flowing in opposite directions?",
-    "accept": [
-     "countercurrent",
-     "counter-current",
-     "counter current"
-    ]
-   }
-  },
-  {
-   "id": "ren-096",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "Give an indication for urgent dialysis.",
-   "options": [
-    "Mild hypertension",
-    "Isolated proteinuria",
-    "Mild anaemia",
-    "Refractory hyperkalaemia or pulmonary oedema"
-   ],
-   "answer": 3,
-   "explain": "Other indications are severe acidosis, uraemic pericarditis or encephalopathy, and some poisonings.",
-   "verified": false,
-   "open": {
-    "q": "Give an indication for urgent dialysis.",
-    "accept": [
-     "hyperkalaemia",
-     "fluid overload",
-     "pulmonary oedema",
-     "severe acidosis",
-     "uraemic pericarditis",
-     "poisoning",
-     "uraemia"
-    ],
-    "a": "Refractory hyperkalaemia, fluid overload, severe acidosis or uraemic complications"
-   }
-  },
-  {
-   "id": "ren-097",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "What is the usual haemodialysis schedule for chronic kidney failure?",
-   "options": [
-    "1 hour once a month",
-    "About 4 hours, three times a week",
-    "10 hours daily",
-    "30 minutes once a week"
-   ],
-   "answer": 1,
-   "explain": "It replaces about 10% of normal kidney function.",
-   "verified": false,
-   "open": {
-    "q": "What is the usual haemodialysis schedule for chronic kidney failure?",
-    "accept": [
-     "three times a week",
-     "3 times a week",
-     "4 hours three times weekly",
-     "thrice weekly"
-    ]
-   }
-  },
-  {
-   "id": "ren-098",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "Which vascular access is preferred for long-term haemodialysis?",
-   "options": [
-    "Arteriovenous fistula",
-    "Peripheral IV cannula",
-    "Permanent central venous catheter",
-    "Arterial line"
-   ],
-   "answer": 0,
-   "explain": "Joining an artery to a vein (usually radiocephalic) gives high flow and a lower infection risk.",
-   "verified": false,
-   "open": {
-    "q": "Which vascular access is preferred for long-term haemodialysis?",
-    "accept": [
-     "AV fistula",
-     "arteriovenous fistula",
-     "radiocephalic fistula",
-     "cimino",
-     "fistula"
-    ]
-   }
-  },
-  {
-   "id": "ren-099",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "In peritoneal dialysis, what is the dialysing membrane?",
-   "options": [
-    "A cuprophane sheet",
-    "The pleura",
-    "The bladder wall",
-    "The peritoneum"
-   ],
-   "answer": 3,
-   "explain": "Dialysate is run into the peritoneal cavity and drained after a dwell period.",
-   "verified": false,
-   "open": {
-    "q": "In peritoneal dialysis, what is the dialysing membrane?",
-    "accept": [
-     "peritoneum",
-     "peritoneal membrane"
-    ]
-   }
-  },
-  {
-   "id": "ren-100",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ch 58 Dialysis and artificial kidney",
-   "q": "What causes dialysis disequilibrium syndrome?",
-   "options": [
-    "Rapid reduction in plasma urea and osmolality, causing cerebral oedema",
-    "Excess heparin",
-    "Air embolism",
-    "Raised plasma potassium"
-   ],
-   "answer": 0,
-   "explain": "Urea leaves the brain more slowly than plasma, so water shifts into brain cells.",
-   "verified": false,
-   "open": {
-    "q": "What causes dialysis disequilibrium syndrome?",
-    "accept": [
-     "rapid fall in urea",
-     "cerebral oedema",
-     "rapid removal of urea"
-    ]
-   }
-  },
-  {
-   "id": "ren-101",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "What class of diuretic is mannitol?",
-   "options": [
-    "Loop diuretic",
-    "Osmotic diuretic",
-    "Thiazide",
-    "Potassium-sparing diuretic"
-   ],
-   "answer": 1,
-   "explain": "It is filtered but not reabsorbed, and holds water in the tubule.",
-   "verified": false,
-   "open": {
-    "q": "What class of diuretic is mannitol?",
-    "accept": [
-     "osmotic diuretic",
-     "osmotic"
-    ]
-   }
-  },
-  {
-   "id": "ren-102",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ch 59 Diuretics",
-   "q": "What does furosemide inhibit?",
-   "options": [
-    "The Na⁺–Cl⁻ cotransporter in the distal tubule",
-    "The epithelial sodium channel in the collecting duct",
-    "Carbonic anhydrase in the proximal tubule",
-    "The Na⁺–K⁺–2Cl⁻ cotransporter in the thick ascending limb"
-   ],
-   "answer": 3,
-   "explain": "It is a powerful loop diuretic that also impairs urine concentration.",
-   "verified": false,
-   "open": {
-    "q": "What does furosemide inhibit?",
-    "accept": [
-     "NKCC2",
-     "Na-K-2Cl cotransporter",
-     "thick ascending limb",
-     "na k 2cl"
-    ]
-   }
-  },
-  {
-   "id": "ren-103",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "Where in the nephron do thiazide diuretics mainly act?",
-   "options": [
-    "Proximal tubule",
-    "Thin descending limb",
-    "Distal convoluted tubule (Na+–Cl− cotransporter)",
-    "Glomerulus"
-   ],
-   "answer": 2,
-   "explain": "Thiazides also reduce urinary Ca²⁺ loss.",
-   "verified": false,
-   "open": {
-    "q": "Where in the nephron do thiazide diuretics mainly act?",
-    "accept": [
-     "DCT",
-     "distal convoluted tubule",
-     "early distal tubule",
-     "distal tubule"
-    ]
-   }
-  },
-  {
-   "id": "ren-104",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "How does spironolactone act as a diuretic?",
-   "options": [
-    "It blocks carbonic anhydrase",
-    "It inhibits the loop cotransporter",
-    "It is an osmotic agent",
-    "It blocks aldosterone receptors and spares potassium"
-   ],
-   "answer": 3,
-   "explain": "It acts at the collecting duct, where aldosterone drives Na⁺ reabsorption and K⁺ secretion.",
-   "verified": false,
-   "open": {
-    "q": "How does spironolactone act as a diuretic?",
-    "accept": [
-     "aldosterone antagonist",
-     "blocks aldosterone receptors",
-     "potassium sparing",
-     "potassium-sparing"
-    ]
-   }
-  },
-  {
-   "id": "ren-105",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "What enzyme does acetazolamide inhibit?",
-   "options": [
-    "Aldosterone synthase",
-    "Carbonic anhydrase in the proximal tubule",
-    "Na–K–2Cl transporter",
-    "ADH receptors"
-   ],
-   "answer": 1,
-   "explain": "This reduces bicarbonate reabsorption and causes an alkaline diuresis with metabolic acidosis.",
-   "verified": false,
-   "open": {
-    "q": "What enzyme does acetazolamide inhibit?",
-    "accept": [
-     "carbonic anhydrase"
-    ]
-   }
-  },
-  {
-   "id": "ren-106",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "Which diuretic class can cause hyperkalaemia?",
-   "options": [
-    "Loop diuretics",
-    "Potassium-sparing diuretics such as spironolactone",
-    "Thiazides",
-    "Carbonic anhydrase inhibitors"
-   ],
-   "answer": 1,
-   "explain": "Loop and thiazide diuretics instead cause hypokalaemia.",
-   "verified": false,
-   "open": {
-    "q": "Which diuretic class can cause hyperkalaemia?",
-    "accept": [
-     "potassium-sparing",
-     "spironolactone",
-     "amiloride",
-     "aldosterone antagonists",
-     "potassium sparing"
-    ]
-   }
-  },
-  {
-   "id": "ren-107",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "What mechanism causes water diuresis after drinking a large volume of water?",
-   "options": [
-    "Inhibition of ADH release",
-    "Increased aldosterone",
-    "Increased renin release",
-    "Raised plasma osmolality"
-   ],
-   "answer": 0,
-   "explain": "Plasma osmolality falls, ADH release stops and the collecting duct becomes impermeable to water.",
-   "verified": false,
-   "open": {
-    "q": "What mechanism causes water diuresis after drinking a large volume of water?",
-    "accept": [
-     "decreased ADH",
-     "inhibition of ADH",
-     "less ADH",
-     "ADH suppression"
-    ]
-   }
-  },
-  {
-   "id": "ren-108",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 59 Diuretics",
-   "q": "What type of diuresis causes polyuria in uncontrolled diabetes mellitus?",
-   "options": [
-    "Water diuresis",
-    "Central diabetes insipidus",
-    "Nephrogenic diabetes insipidus",
-    "Osmotic diuresis"
-   ],
-   "answer": 3,
-   "explain": "Unreabsorbed glucose holds water in the tubules.",
-   "verified": false,
-   "open": {
-    "q": "What type of diuresis causes polyuria in uncontrolled diabetes mellitus?",
-    "accept": [
-     "osmotic diuresis",
-     "osmotic"
-    ]
-   }
-  },
-  {
-   "id": "ren-158",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Types of diuretic",
-   "q": "Which of these is a thiazide or thiazide-like diuretic?",
-   "options": [
-    "Amiloride",
-    "Spironolactone",
-    "Hydrochlorothiazide",
-    "Furosemide"
-   ],
-   "answer": 2,
-   "explain": "Examples are hydrochlorothiazide, chlorthalidone, indapamide and metolazone. They act on the distal convoluted tubule.",
-   "verified": false,
-   "open": {
-    "q": "Name a thiazide or thiazide-like diuretic.",
-    "accept": [
-     "hydrochlorothiazide",
-     "chlorthalidone",
-     "indapamide",
-     "metolazone"
-    ]
-   }
-  },
-  {
-   "id": "ren-159",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Types of diuretic",
-   "q": "Which of these is a loop diuretic?",
-   "options": [
-    "Amiloride",
-    "Bumetanide",
-    "Eplerenone",
-    "Hydrochlorothiazide"
-   ],
-   "answer": 1,
-   "explain": "Loop diuretics are furosemide, bumetanide and torsemide. They block the Na-K-2Cl cotransporter in the thick ascending limb.",
-   "verified": false,
-   "open": {
-    "q": "Name a loop diuretic.",
-    "accept": [
-     "furosemide",
-     "bumetanide",
-     "torsemide"
-    ]
-   }
-  },
-  {
-   "id": "ren-160",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Types of diuretic",
-   "q": "Which of these is a potassium-sparing diuretic?",
-   "options": [
-    "Bumetanide",
-    "Furosemide",
-    "Amiloride",
-    "Indapamide"
-   ],
-   "answer": 2,
-   "explain": "Examples are amiloride, triamterene, spironolactone and eplerenone. They work in the late distal tubule and collecting duct.",
-   "verified": false,
-   "open": {
-    "q": "Name a potassium-sparing diuretic.",
-    "accept": [
-     "amiloride",
-     "triamterene",
-     "spironolactone",
-     "eplerenone"
-    ]
-   }
-  },
-  {
-   "id": "ren-161",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Types of diuretic",
-   "q": "How do amiloride and triamterene differ from spironolactone and eplerenone?",
-   "options": [
-    "Amiloride blocks aldosterone receptors; spironolactone blocks sodium channels",
-    "Amiloride blocks ENaC; spironolactone blocks aldosterone receptors",
-    "All four are loop diuretics",
-    "All four block NKCC2"
-   ],
-   "answer": 1,
-   "explain": "Both groups reduce sodium reabsorption and potassium secretion in the collecting duct, so both can cause hyperkalaemia.",
-   "verified": false,
-   "optionsOnly": true
-  },
-  {
-   "id": "ren-162",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Types of diuretic",
-   "q": "Why does alcohol cause diuresis?",
-   "options": [
-    "It blocks the Na-K-2Cl cotransporter in the thick limb",
-    "It stimulates ANP release from the atria",
-    "It inhibits ADH release, so less water is reabsorbed",
-    "It inhibits aldosterone release from the adrenal cortex"
-   ],
-   "answer": 2,
-   "explain": "With less ADH, the collecting duct stays impermeable to water and dilute urine is passed in large volume.",
-   "verified": false,
-   "open": {
-    "q": "Why does alcohol cause diuresis?",
-    "accept": [
-     "inhibits adh",
-     "adh inhibition"
-    ]
-   }
-  },
-  {
-   "id": "ren-163",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Types of diuretic",
-   "q": "What is diuresis?",
-   "options": [
-    "A rise in plasma sodium concentration",
-    "A reduction in GFR from low blood pressure",
-    "A fall in urine output with water retention",
-    "An increase in urine output, usually with salt loss"
-   ],
-   "answer": 3,
-   "explain": "Drugs, alcohol, excess water intake and uncontrolled diabetes can all cause it.",
-   "verified": false,
-   "open": {
-    "q": "What is diuresis?",
-    "accept": [
-     "increased urine output",
-     "increased excretion of water and salt"
-    ]
-   }
-  },
-  {
-   "id": "ren-164",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Types of diuretic",
-   "q": "Which diuretic classes commonly cause hypokalaemia?",
-   "options": [
-    "Spironolactone and eplerenone",
-    "Loop and thiazide diuretics",
-    "Amiloride and triamterene",
-    "None of them"
-   ],
-   "answer": 1,
-   "explain": "They increase sodium delivery to the collecting duct, so more potassium is secreted. Potassium-sparing diuretics do the opposite.",
-   "verified": false,
-   "open": {
-    "q": "Which diuretic classes commonly cause hypokalaemia?",
-    "accept": [
-     "loop and thiazide"
-    ]
-   }
-  }
- ]
+  "topic": "phys-dialysis-diuretics",
+  "questions": [
+    {
+      "id": "ren-093",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "By what main process does haemodialysis remove waste products?",
+      "options": [
+        "Active transport by the membrane",
+        "Diffusion across a semipermeable membrane",
+        "Filtration only",
+        "Osmosis only"
+      ],
+      "answer": 1,
+      "explain": "Solutes move down their concentration gradient from blood into dialysate. Ultrafiltration removes excess fluid.",
+      "verified": false,
+      "open": {
+        "q": "By what main process does haemodialysis remove waste products?",
+        "accept": [
+          "diffusion",
+          "diffusion and ultrafiltration"
+        ]
+      }
+    },
+    {
+      "id": "ren-094",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "Which drug is commonly given in haemodialysis to prevent clotting in the circuit?",
+      "options": [
+        "Warfarin",
+        "Aspirin",
+        "Vitamin K",
+        "Heparin"
+      ],
+      "answer": 3,
+      "explain": "Heparin has a short action and can be stopped quickly.",
+      "verified": false,
+      "open": {
+        "q": "Which drug is commonly given in haemodialysis to prevent clotting in the circuit?",
+        "accept": [
+          "heparin"
+        ]
+      }
+    },
+    {
+      "id": "ren-095",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "What name is given to blood and dialysate flowing in opposite directions?",
+      "options": [
+        "Cocurrent flow",
+        "Countercurrent flow",
+        "Laminar flow",
+        "Turbulent flow"
+      ],
+      "answer": 1,
+      "explain": "It maintains a diffusion gradient along the whole length of the dialyser.",
+      "verified": false,
+      "open": {
+        "q": "What name is given to blood and dialysate flowing in opposite directions?",
+        "accept": [
+          "countercurrent",
+          "counter-current",
+          "counter current"
+        ]
+      }
+    },
+    {
+      "id": "ren-096",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "Give an indication for urgent dialysis.",
+      "options": [
+        "Mild hypertension",
+        "Isolated proteinuria",
+        "Mild anaemia",
+        "Refractory hyperkalaemia or pulmonary oedema"
+      ],
+      "answer": 3,
+      "explain": "Other indications are severe acidosis, uraemic pericarditis or encephalopathy, and some poisonings.",
+      "verified": false,
+      "open": {
+        "q": "Give an indication for urgent dialysis.",
+        "accept": [
+          "hyperkalaemia",
+          "fluid overload",
+          "pulmonary oedema",
+          "severe acidosis",
+          "uraemic pericarditis",
+          "poisoning",
+          "uraemia"
+        ],
+        "a": "Refractory hyperkalaemia, fluid overload, severe acidosis or uraemic complications"
+      }
+    },
+    {
+      "id": "ren-097",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "What is the usual haemodialysis schedule for chronic kidney failure?",
+      "options": [
+        "1 hour once a month",
+        "About 4 hours, three times a week",
+        "10 hours daily",
+        "30 minutes once a week"
+      ],
+      "answer": 1,
+      "explain": "It replaces about 10% of normal kidney function.",
+      "verified": false,
+      "open": {
+        "q": "What is the usual haemodialysis schedule for chronic kidney failure?",
+        "accept": [
+          "three times a week",
+          "3 times a week",
+          "4 hours three times weekly",
+          "thrice weekly"
+        ]
+      }
+    },
+    {
+      "id": "ren-098",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "Which vascular access is preferred for long-term haemodialysis?",
+      "options": [
+        "Arteriovenous fistula",
+        "Peripheral IV cannula",
+        "Permanent central venous catheter",
+        "Arterial line"
+      ],
+      "answer": 0,
+      "explain": "Joining an artery to a vein (usually radiocephalic) gives high flow and a lower infection risk.",
+      "verified": false,
+      "open": {
+        "q": "Which vascular access is preferred for long-term haemodialysis?",
+        "accept": [
+          "AV fistula",
+          "arteriovenous fistula",
+          "radiocephalic fistula",
+          "cimino",
+          "fistula"
+        ]
+      }
+    },
+    {
+      "id": "ren-099",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "In peritoneal dialysis, what is the dialysing membrane?",
+      "options": [
+        "A cuprophane sheet",
+        "The pleura",
+        "The bladder wall",
+        "The peritoneum"
+      ],
+      "answer": 3,
+      "explain": "Dialysate is run into the peritoneal cavity and drained after a dwell period.",
+      "verified": false,
+      "open": {
+        "q": "In peritoneal dialysis, what is the dialysing membrane?",
+        "accept": [
+          "peritoneum",
+          "peritoneal membrane"
+        ]
+      }
+    },
+    {
+      "id": "ren-100",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 58 Dialysis and artificial kidney",
+      "q": "What causes dialysis disequilibrium syndrome?",
+      "options": [
+        "Rapid reduction in plasma urea and osmolality, causing cerebral oedema",
+        "Excess heparin",
+        "Air embolism",
+        "Raised plasma potassium"
+      ],
+      "answer": 0,
+      "explain": "Urea leaves the brain more slowly than plasma, so water shifts into brain cells.",
+      "verified": false,
+      "open": {
+        "q": "What causes dialysis disequilibrium syndrome?",
+        "accept": [
+          "rapid fall in urea",
+          "cerebral oedema",
+          "rapid removal of urea"
+        ]
+      }
+    },
+    {
+      "id": "ren-101",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "What class of diuretic is mannitol?",
+      "options": [
+        "Loop diuretic",
+        "Osmotic diuretic",
+        "Thiazide",
+        "Potassium-sparing diuretic"
+      ],
+      "answer": 1,
+      "explain": "It is filtered but not reabsorbed, and holds water in the tubule.",
+      "verified": false,
+      "open": {
+        "q": "What class of diuretic is mannitol?",
+        "accept": [
+          "osmotic diuretic",
+          "osmotic"
+        ]
+      }
+    },
+    {
+      "id": "ren-102",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 59 Diuretics",
+      "q": "What does furosemide inhibit?",
+      "options": [
+        "The Na⁺–Cl⁻ cotransporter in the distal tubule",
+        "The epithelial sodium channel in the collecting duct",
+        "Carbonic anhydrase in the proximal tubule",
+        "The Na⁺–K⁺–2Cl⁻ cotransporter in the thick ascending limb"
+      ],
+      "answer": 3,
+      "explain": "It is a powerful loop diuretic that also impairs urine concentration.",
+      "verified": false,
+      "open": {
+        "q": "What does furosemide inhibit?",
+        "accept": [
+          "NKCC2",
+          "Na-K-2Cl cotransporter",
+          "thick ascending limb",
+          "na k 2cl"
+        ]
+      }
+    },
+    {
+      "id": "ren-103",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "Where in the nephron do thiazide diuretics mainly act?",
+      "options": [
+        "Proximal tubule",
+        "Thin descending limb",
+        "Distal convoluted tubule (Na+–Cl− cotransporter)",
+        "Glomerulus"
+      ],
+      "answer": 2,
+      "explain": "Thiazides also reduce urinary Ca²⁺ loss.",
+      "verified": false,
+      "open": {
+        "q": "Where in the nephron do thiazide diuretics mainly act?",
+        "accept": [
+          "DCT",
+          "distal convoluted tubule",
+          "early distal tubule",
+          "distal tubule"
+        ]
+      }
+    },
+    {
+      "id": "ren-104",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "How does spironolactone act as a diuretic?",
+      "options": [
+        "It blocks carbonic anhydrase",
+        "It inhibits the loop cotransporter",
+        "It is an osmotic agent",
+        "It blocks aldosterone receptors and spares potassium"
+      ],
+      "answer": 3,
+      "explain": "It acts at the collecting duct, where aldosterone drives Na⁺ reabsorption and K⁺ secretion.",
+      "verified": false,
+      "open": {
+        "q": "How does spironolactone act as a diuretic?",
+        "accept": [
+          "aldosterone antagonist",
+          "blocks aldosterone receptors",
+          "potassium sparing",
+          "potassium-sparing"
+        ]
+      }
+    },
+    {
+      "id": "ren-105",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "What enzyme does acetazolamide inhibit?",
+      "options": [
+        "Aldosterone synthase",
+        "Carbonic anhydrase in the proximal tubule",
+        "Na–K–2Cl transporter",
+        "ADH receptors"
+      ],
+      "answer": 1,
+      "explain": "This reduces bicarbonate reabsorption and causes an alkaline diuresis with metabolic acidosis.",
+      "verified": false,
+      "open": {
+        "q": "What enzyme does acetazolamide inhibit?",
+        "accept": [
+          "carbonic anhydrase"
+        ]
+      }
+    },
+    {
+      "id": "ren-106",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "Which diuretic class can cause hyperkalaemia?",
+      "options": [
+        "Loop diuretics",
+        "Potassium-sparing diuretics such as spironolactone",
+        "Thiazides",
+        "Carbonic anhydrase inhibitors"
+      ],
+      "answer": 1,
+      "explain": "Loop and thiazide diuretics instead cause hypokalaemia.",
+      "verified": false,
+      "open": {
+        "q": "Which diuretic class can cause hyperkalaemia?",
+        "accept": [
+          "potassium-sparing",
+          "spironolactone",
+          "amiloride",
+          "aldosterone antagonists",
+          "potassium sparing"
+        ]
+      }
+    },
+    {
+      "id": "ren-107",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "What mechanism causes water diuresis after drinking a large volume of water?",
+      "options": [
+        "Inhibition of ADH release",
+        "Increased aldosterone",
+        "Increased renin release",
+        "Raised plasma osmolality"
+      ],
+      "answer": 0,
+      "explain": "Plasma osmolality falls, ADH release stops and the collecting duct becomes impermeable to water.",
+      "verified": false,
+      "open": {
+        "q": "What mechanism causes water diuresis after drinking a large volume of water?",
+        "accept": [
+          "decreased ADH",
+          "inhibition of ADH",
+          "less ADH",
+          "ADH suppression"
+        ]
+      }
+    },
+    {
+      "id": "ren-108",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 59 Diuretics",
+      "q": "What type of diuresis causes polyuria in uncontrolled diabetes mellitus?",
+      "options": [
+        "Water diuresis",
+        "Central diabetes insipidus",
+        "Nephrogenic diabetes insipidus",
+        "Osmotic diuresis"
+      ],
+      "answer": 3,
+      "explain": "Unreabsorbed glucose holds water in the tubules.",
+      "verified": false,
+      "open": {
+        "q": "What type of diuresis causes polyuria in uncontrolled diabetes mellitus?",
+        "accept": [
+          "osmotic diuresis",
+          "osmotic"
+        ]
+      }
+    },
+    {
+      "id": "ren-158",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Types of diuretic",
+      "q": "Which of these is a thiazide or thiazide-like diuretic?",
+      "options": [
+        "Amiloride",
+        "Spironolactone",
+        "Hydrochlorothiazide",
+        "Furosemide"
+      ],
+      "answer": 2,
+      "explain": "Examples are hydrochlorothiazide, chlorthalidone, indapamide and metolazone. They act on the distal convoluted tubule.",
+      "verified": false,
+      "open": {
+        "q": "Name a thiazide or thiazide-like diuretic.",
+        "accept": [
+          "hydrochlorothiazide",
+          "chlorthalidone",
+          "indapamide",
+          "metolazone"
+        ]
+      }
+    },
+    {
+      "id": "ren-159",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Types of diuretic",
+      "q": "Which of these is a loop diuretic?",
+      "options": [
+        "Amiloride",
+        "Bumetanide",
+        "Eplerenone",
+        "Hydrochlorothiazide"
+      ],
+      "answer": 1,
+      "explain": "Loop diuretics are furosemide, bumetanide and torsemide. They block the Na-K-2Cl cotransporter in the thick ascending limb.",
+      "verified": false,
+      "open": {
+        "q": "Name a loop diuretic.",
+        "accept": [
+          "furosemide",
+          "bumetanide",
+          "torsemide"
+        ]
+      }
+    },
+    {
+      "id": "ren-160",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Types of diuretic",
+      "q": "Which of these is a potassium-sparing diuretic?",
+      "options": [
+        "Bumetanide",
+        "Furosemide",
+        "Amiloride",
+        "Indapamide"
+      ],
+      "answer": 2,
+      "explain": "Examples are amiloride, triamterene, spironolactone and eplerenone. They work in the late distal tubule and collecting duct.",
+      "verified": false,
+      "open": {
+        "q": "Name a potassium-sparing diuretic.",
+        "accept": [
+          "amiloride",
+          "triamterene",
+          "spironolactone",
+          "eplerenone"
+        ]
+      }
+    },
+    {
+      "id": "ren-161",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Types of diuretic",
+      "q": "How do amiloride and triamterene differ from spironolactone and eplerenone?",
+      "options": [
+        "Amiloride blocks aldosterone receptors; spironolactone blocks sodium channels",
+        "Amiloride blocks ENaC; spironolactone blocks aldosterone receptors",
+        "All four are loop diuretics",
+        "All four block NKCC2"
+      ],
+      "answer": 1,
+      "explain": "Both groups reduce sodium reabsorption and potassium secretion in the collecting duct, so both can cause hyperkalaemia.",
+      "verified": false,
+      "optionsOnly": true
+    },
+    {
+      "id": "ren-162",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Types of diuretic",
+      "q": "Why does alcohol cause diuresis?",
+      "options": [
+        "It blocks the Na-K-2Cl cotransporter in the thick limb",
+        "It stimulates ANP release from the atria",
+        "It inhibits ADH release, so less water is reabsorbed",
+        "It inhibits aldosterone release from the adrenal cortex"
+      ],
+      "answer": 2,
+      "explain": "With less ADH, the collecting duct stays impermeable to water and dilute urine is passed in large volume.",
+      "verified": false,
+      "open": {
+        "q": "Why does alcohol cause diuresis?",
+        "accept": [
+          "inhibits adh",
+          "adh inhibition"
+        ]
+      }
+    },
+    {
+      "id": "ren-163",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Types of diuretic",
+      "q": "What is diuresis?",
+      "options": [
+        "A rise in plasma sodium concentration",
+        "A reduction in GFR from low blood pressure",
+        "A fall in urine output with water retention",
+        "An increase in urine output, usually with salt loss"
+      ],
+      "answer": 3,
+      "explain": "Drugs, alcohol, excess water intake and uncontrolled diabetes can all cause it.",
+      "verified": false,
+      "open": {
+        "q": "What is diuresis?",
+        "accept": [
+          "increased urine output",
+          "increased excretion of water and salt"
+        ]
+      }
+    },
+    {
+      "id": "ren-164",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Types of diuretic",
+      "q": "Which diuretic classes commonly cause hypokalaemia?",
+      "options": [
+        "Spironolactone and eplerenone",
+        "Loop and thiazide diuretics",
+        "Amiloride and triamterene",
+        "None of them"
+      ],
+      "answer": 1,
+      "explain": "They increase sodium delivery to the collecting duct, so more potassium is secreted. Potassium-sparing diuretics do the opposite.",
+      "verified": false,
+      "open": {
+        "q": "Which diuretic classes commonly cause hypokalaemia?",
+        "accept": [
+          "loop and thiazide"
+        ]
+      }
+    },
+    {
+      "id": "ren-165",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Dialysis and diuretics",
+      "q": "A patient with acute kidney injury has refractory hyperkalaemia, pulmonary oedema and severe metabolic acidosis despite medical treatment. Which intervention most directly corrects these life-threatening complications?",
+      "options": [
+        "Urgent renal replacement therapy",
+        "Oral fluid restriction alone",
+        "A thiazide diuretic as sole treatment",
+        "Erythropoietin administration"
+      ],
+      "answer": 0,
+      "explain": "Refractory hyperkalaemia, fluid overload with pulmonary oedema and severe acidosis are major indications for urgent dialysis or another form of renal replacement therapy.",
+      "verified": false
+    },
+    {
+      "id": "ren-166",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Dialysis and diuretics",
+      "q": "A patient receiving high-dose furosemide develops hypokalaemic metabolic alkalosis. Which nephron transporter is directly inhibited by furosemide?",
+      "options": [
+        "Na+-K+-2Cl− cotransporter in the thick ascending limb",
+        "Na+-Cl− cotransporter in the distal convoluted tubule",
+        "Epithelial sodium channel in the collecting duct",
+        "Na+/H+ exchanger in the proximal tubule"
+      ],
+      "answer": 0,
+      "explain": "Loop diuretics such as furosemide inhibit NKCC2 in the thick ascending limb, increasing sodium delivery distally and promoting potassium and hydrogen ion loss.",
+      "verified": false
+    },
+    {
+      "id": "ren-167",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Dialysis and diuretics",
+      "q": "A patient with hypertension is started on hydrochlorothiazide. Which electrolyte disturbance should be monitored because of its action in the distal convoluted tubule?",
+      "options": [
+        "Hyperkalaemia",
+        "Hypokalaemia",
+        "Severe hypermagnesaemia",
+        "Hyperphosphataemia"
+      ],
+      "answer": 1,
+      "explain": "Thiazides inhibit the Na+-Cl− cotransporter in the distal convoluted tubule and can increase distal sodium delivery, promoting potassium loss and hypokalaemia.",
+      "verified": false
+    },
+    {
+      "id": "ren-168",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Dialysis and diuretics",
+      "q": "A patient with cirrhosis and ascites is treated with spironolactone. Which molecular target does this drug antagonise?",
+      "options": [
+        "Aldosterone (mineralocorticoid) receptor",
+        "Vasopressin V2 receptor",
+        "Carbonic anhydrase",
+        "Na+-K+-2Cl− cotransporter"
+      ],
+      "answer": 0,
+      "explain": "Spironolactone competitively antagonises intracellular mineralocorticoid receptors in the late distal nephron, reducing aldosterone-dependent sodium reabsorption and potassium secretion.",
+      "verified": false
+    },
+    {
+      "id": "ren-169",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Dialysis and diuretics",
+      "q": "A patient with acute pulmonary oedema is given intravenous furosemide. In addition to increased urine output, which early haemodynamic effect can help relieve pulmonary congestion?",
+      "options": [
+        "Venodilation with reduced venous return and preload",
+        "Arteriolar constriction with increased afterload",
+        "Increased aldosterone secretion",
+        "Increased pulmonary capillary permeability"
+      ],
+      "answer": 0,
+      "explain": "Intravenous loop diuretics can produce an early venodilator effect, reducing venous return and cardiac filling pressures before substantial diuresis occurs.",
+      "verified": false
+    }
+  ]
 }
