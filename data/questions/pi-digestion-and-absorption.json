@@ -75,6 +75,30 @@
           "Trypsinogen"
         ]
       }
+    },
+    {
+      "id": "pi-digestion-and-absorption-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Intestinal absorption of proteins",
+      "q": "Most dietary dipeptides and tripeptides enter small-intestinal enterocytes across the apical membrane through which transporter?",
+      "options": [
+        "SGLT1, coupled to sodium",
+        "PEPT1, coupled to the proton gradient",
+        "GLUT5, by facilitated diffusion",
+        "NPC1L1, by cholesterol-dependent uptake"
+      ],
+      "answer": 1,
+      "explain": "PEPT1 is a proton-coupled oligopeptide transporter on the apical membrane of small-intestinal enterocytes. It absorbs many dipeptides and tripeptides, which are then hydrolysed intracellularly to amino acids. Free amino acids use several distinct sodium-dependent or sodium-independent transport systems.",
+      "open": {
+        "q": "Which apical transporter absorbs most dietary dipeptides and tripeptides into small-intestinal enterocytes?",
+        "accept": [
+          "PEPT1",
+          "proton-coupled oligopeptide transporter",
+          "H+-dependent PEPT1"
+        ]
+      },
+      "verified": false
     }
   ]
 }
