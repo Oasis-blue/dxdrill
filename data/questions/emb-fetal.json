@@ -147,10 +147,10 @@
       "sub": "Fetal Period Milestones",
       "q": "At approximately which post-fertilization week do type II pneumocytes begin secreting sufficient pulmonary surfactant to allow potential extrauterine survival (fetal viability threshold) with neonatal intensive care?",
       "options": [
-        "Approximately weeks 22–24, during the canalicular stage",
-        "Weeks 12–14",
-        "Weeks 16–18",
-        "Weeks 36–38"
+        "Weeks 22–24, during the canalicular stage",
+        "Weeks 12–14, during the pseudoglandular stage",
+        "Weeks 16–18, during the early canalicular stage",
+        "Weeks 36–38, during the saccular stage"
       ],
       "answer": 0,
       "explain": "Around weeks 22–24, terminal bronchioles branch into respiratory bronchioles and alveolar ducts (canalicular stage) and type II pneumocytes begin producing surfactant, marking the lower limit of extrauterine fetal viability.",
@@ -219,9 +219,9 @@
       "q": "Which four tissue layers separate maternal blood in the intervillous space from fetal blood inside the villous capillaries in the early placental barrier (before week 20)?",
       "options": [
         "Syncytiotrophoblast, cytotrophoblast, villous connective tissue and fetal capillary endothelium",
-        "Endometrial epithelium, decidua parietalis, amnion and yolk sac",
-        "Syncytiotrophoblast, zona pellucida, myometrium and maternal endothelium",
-        "Cytotrophoblast, Wharton's jelly, allantois and chorion laeve"
+        "Decidua basalis, amnion, chorion laeve and maternal endothelium",
+        "Syncytiotrophoblast, zona pellucida, myometrium and fetal endothelium",
+        "Cytotrophoblast, Wharton's jelly, allantois and chorionic plate"
       ],
       "answer": 0,
       "explain": "In early pregnancy, the placental membrane consists of syncytiotrophoblast, cytotrophoblast (Langhans layer), extraembryonic mesoderm core, and fetal capillary endothelium; after week 20, cytotrophoblast degenerates in most villi, thinning the barrier to enhance exchange.",
@@ -287,10 +287,10 @@
       "sub": "Placenta Structure and Function",
       "q": "Why must the fetal adrenal cortex and placenta cooperate ('fetoplacental unit') to synthesize estriol during pregnancy?",
       "options": [
-        "The placenta lacks CYP17; fetal adrenal DHEA-S supplies the estriol precursor",
-        "The fetus lacks aromatase completely",
-        "The placenta cannot synthesise progesterone from cholesterol",
-        "Maternal ovaries produce all estriol throughout late pregnancy"
+        "The placenta lacks CYP17, so fetal adrenal DHEA-S supplies the precursor for estriol synthesis",
+        "The fetus lacks all steroidogenic enzymes, so the placenta supplies every precursor",
+        "The placenta lacks aromatase, so the fetal adrenal directly produces estriol",
+        "Maternal ovaries supply estriol because the fetal adrenal is inactive"
       ],
       "answer": 0,
       "explain": "The placenta lacks 17-alpha-hydroxylase/17,20-lyase; therefore, the fetal adrenal cortex produces dehydroepiandrosterone sulfate (DHEA-S), which is 16-alpha-hydroxylated in the fetal liver and aromatized by the placenta into estriol.",
@@ -311,10 +311,10 @@
       "sub": "Placenta Structure and Function",
       "q": "Following a difficult vaginal delivery, inspection of the maternal surface of the placenta reveals a missing cotyledon, and the patient develops brisk postpartum hemorrhage. Why does a retained cotyledon cause severe uterine bleeding?",
       "options": [
-        "Retained tissue prevents myometrial contraction and placental-bed vessel compression",
-        "The cotyledon secretes heparin into the maternal circulation",
-        "The cotyledon causes immediate rupture of the uterine artery",
-        "The cotyledon blocks cervical dilation"
+        "Retained placental tissue prevents effective myometrial contraction and compression of placental-bed vessels",
+        "The cotyledon releases anticoagulant substances into maternal blood",
+        "The cotyledon directly ruptures the uterine artery",
+        "Retained tissue prevents cervical closure after delivery"
       ],
       "answer": 0,
       "explain": "Hemostasis after placental separation depends on sustained contraction of the interlacing 'living ligature' myometrial fibers compressing the endometrial spiral arteries; retained placental fragments prevent uterine contraction and cause postpartum hemorrhage.",
@@ -405,10 +405,10 @@
       "sub": "Amniotic Fluid Dynamics",
       "q": "During the second half of pregnancy, what are the primary physiological source and primary route of clearance of amniotic fluid?",
       "options": [
-        "Produced primarily by fetal urine excretion and cleared primarily by fetal swallowing",
-        "Produced by maternal sweat glands and cleared by umbilical arteries",
-        "Produced by the yolk sac and cleared by the allantois",
-        "Produced by fetal bile and cleared by maternal lymphatics"
+        "Fetal urine is the main source, and fetal swallowing is a major route of removal",
+        "Maternal plasma is the main source, and fetal breathing is the main route of removal",
+        "Fetal bile is the main source, and placental diffusion is the main route of removal",
+        "Amniotic epithelium is the main source, and umbilical arteries remove the fluid"
       ],
       "answer": 0,
       "explain": "In early gestation, amniotic fluid derives from maternal plasma transudate and amniotic epithelium; from mid-gestation onward, fetal kidneys excrete ~500 mL/day of hypotonic urine into the amniotic sac while the fetus swallows ~500 mL/day, which is absorbed by the gut and transferred to maternal blood across the placenta.",
@@ -475,10 +475,10 @@
       "sub": "Fetal Circulation and Postnatal Adaptations",
       "q": "Which three vascular shunts in the fetal circulation bypass the non-functioning fetal lungs and partially bypass the fetal liver?",
       "options": [
-        "Ductus venosus, foramen ovale, and ductus arteriosus",
-        "Ligamentum teres, ligamentum venosum, and medial umbilical ligaments",
-        "Aortic arch, pulmonary trunk, and coronary sinus",
-        "Superior vena cava, inferior vena cava, and portal vein"
+        "Ductus venosus, foramen ovale and ductus arteriosus",
+        "Ligamentum teres, ligamentum venosum and ligamentum arteriosum",
+        "Aortic arch, pulmonary trunk and coronary sinus",
+        "Superior vena cava, inferior vena cava and portal vein"
       ],
       "answer": 0,
       "explain": "In the fetus, the ductus venosus shunts oxygenated umbilical venous blood past the liver sinusoids to the IVC; the foramen ovale shunts right atrial blood into the left atrium; and the ductus arteriosus shunts pulmonary trunk blood into the descending aorta.",
@@ -521,10 +521,10 @@
       "sub": "Fetal Circulation and Postnatal Adaptations",
       "q": "What are the adult fibrous remnants of the fetal umbilical vein, ductus venosus, and ductus arteriosus respectively?",
       "options": [
-        "Ligamentum teres hepatis (round ligament of liver), ligamentum venosum, and ligamentum arteriosum",
-        "Medial umbilical ligaments, median umbilical ligament, and fossa ovalis",
-        "Falciform ligament, coronary ligament, and ligamentum flavum",
-        "Ligamentum nuchae, inguinal ligament, and pectineal ligament"
+        "Ligamentum teres hepatis, ligamentum venosum and ligamentum arteriosum",
+        "Medial umbilical ligaments, median umbilical ligament and fossa ovalis",
+        "Falciform ligament, coronary ligament and ligamentum flavum",
+        "Ligamentum nuchae, inguinal ligament and pectineal ligament"
       ],
       "answer": 0,
       "explain": "After birth, the umbilical vein becomes the ligamentum teres hepatis, the ductus venosus becomes the ligamentum venosum, the ductus arteriosus becomes the ligamentum arteriosum, the foramen ovale closes to form the fossa ovalis, and the distal umbilical arteries become the medial umbilical ligaments.",
@@ -543,10 +543,10 @@
       "sub": "Fetal Circulation and Postnatal Adaptations",
       "q": "Which two physiological events at birth trigger functional closure of the ductus arteriosus within the first 24 to 48 hours of postnatal life?",
       "options": [
-        "Higher PaO2 and lower PGE2 trigger ductus arteriosus constriction",
-        "Increase in maternal estrogen and drop in fetal cortisol",
-        "Closure of the umbilical arteries and drop in systemic vascular resistance",
-        "Surge in fetal erythropoietin and drop in PaO2"
+        "Rise in arterial oxygen tension and fall in circulating prostaglandin E2",
+        "Fall in arterial oxygen tension and rise in prostaglandin E2",
+        "Rise in pulmonary vascular resistance and fall in systemic vascular resistance",
+        "Increase in maternal oestrogen and decrease in fetal cortisol"
       ],
       "answer": 0,
       "explain": "Expansion of the lungs at the first breath sharply raises arterial PaO2 (stimulating smooth muscle contraction in the ductus wall), while removal of the placenta eliminates the major source of vasodilatory PGE2, causing functional closure of the ductus arteriosus.",
@@ -636,10 +636,10 @@
       "sub": "Circulatory changes at birth",
       "q": "Immediately after the first effective breaths, pulmonary vascular resistance falls and pulmonary venous return to the left atrium increases. What event functionally closes the foramen ovale?",
       "options": [
-        "Left atrial pressure rises above right atrial pressure, pressing the septum primum against the septum secundum",
-        "Right atrial pressure rises above left atrial pressure",
-        "The ductus venosus constricts and pulls the atrial septum closed",
-        "Umbilical arterial pressure rises above aortic pressure"
+        "Left atrial pressure exceeds right atrial pressure, apposing the septum primum to the septum secundum",
+        "Right atrial pressure exceeds left atrial pressure, separating the atrial septa",
+        "Ductus venosus closure pulls the septum primum against the septum secundum",
+        "Umbilical arterial pressure rises and closes the interatrial opening"
       ],
       "answer": 0,
       "explain": "Lung expansion lowers pulmonary vascular resistance and increases pulmonary blood flow and left atrial return. At the same time, loss of placental venous return reduces right atrial filling; left atrial pressure exceeds right atrial pressure and apposes the septum primum against the septum secundum, functionally closing the foramen ovale.",
@@ -683,10 +683,10 @@
       "sub": "Placental transfer and fetal protection",
       "q": "A pregnant woman is exposed to a drug that readily crosses the placenta. Which statement best describes the placental barrier?",
       "options": [
-        "It is selectively permeable, not an absolute barrier to drugs and other substances",
+        "It is selectively permeable; many drugs and other substances can cross it",
         "It prevents all maternal medications from reaching the fetus",
-        "It allows only oxygen and carbon dioxide to cross",
-        "It completely separates maternal and fetal blood without any exchange"
+        "Only respiratory gases can cross it",
+        "Maternal and fetal blood never exchange substances across it"
       ],
       "answer": 0,
       "explain": "The placental barrier regulates exchange but does not block all substances. Many drugs, alcohol, nicotine and some pathogens can cross, with transfer depending on molecular size, lipid solubility, ionisation, protein binding and transporter activity.",
