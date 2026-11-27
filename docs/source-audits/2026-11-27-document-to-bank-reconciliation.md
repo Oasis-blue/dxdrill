@@ -138,3 +138,15 @@ The new questions use the existing topic IDs and JSON schema. Where the source's
 - Abdominal/diaphragm additions: `9f1f74a6fb7cc16587f942a9dbb27309362b4a26`
 
 **Remaining scope:** this is only the first two chapters of the 145-page PDFDrive source. Chapters 3–25 remain to be reconciled, and the separate 336-page scanned Anatomy PDF remains inaccessible in the current file context. Therefore this update does not mark the 145-page source or the Anatomy document collection as fully reconciled.
+
+
+### Follow-on review — Breast and Mediastinum (chapters 3–4)
+
+Chapters 3–4 of the 145-page PDFDrive source were then reviewed against `gr-thorax`. The breast chapter's main existing matches included the retromammary plane (`GRTH-53`) and predominant axillary lymph drainage (`GRTH-54`). Three additional gaps were filled:
+- `GRTH-87`: suspensory (Cooper) ligaments and their clinical relevance.
+- `GRTH-88`: principal arterial sources of the breast.
+- `GRTH-89`: initial lymphatic drainage from the lateral breast.
+
+The mediastinum chapter's core material was already represented across the current bank, including mediastinal divisions and contents, the azygos system, thoracic duct, recurrent laryngeal nerve, and posterior mediastinal structures (e.g. `GRTH-18`–`GRTH-20`, `GRTH-32`, `GRTH-35`, `GRTH-47`, `GRTH-50`, `GRTH-59`, `GRTH-72`, `GRTH-73`, `GRTH-76`, `GRTH-79`). No additional question was added from this chapter in this pass; this is a concept-level check, not a full item-by-item sign-off.
+
+The thoracic bank now contains 89 questions. The three breast additions follow the established `GRTH-##` convention and were appended without changing existing records.
