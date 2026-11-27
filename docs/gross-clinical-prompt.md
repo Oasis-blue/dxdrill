@@ -17,7 +17,7 @@ Use this prompt for gross anatomy specimens and models, anatomical or physiology
 2. Generate one intake JSON object using the schema below.
 3. Open `visual-checker.html` on the deployed DxDrill site, paste the JSON, select the corresponding local images for preview, and run the browser check. Fix every reported error.
 4. Check every image, label, answer, distractor and explanation yourself. The browser checker cannot establish clinical correctness, consent or licence truth.
-5. After the checker reports no errors or quarantined items, select all original images and choose **Prepare GitHub upload files**. Download each generated JSON file. Upload the question files and original images through GitHub's website, then replace the manifest and visual registry files with the generated versions. Open a pull request; GitHub Actions runs the full repository-side image decoding and validation. Do not merge until those checks pass and a reviewer has approved the content. No terminal is required.
+5. After the checker reports no errors or quarantined items, select all original images and choose **Prepare GitHub upload files**. Download each generated JSON file. Upload the question files and original images through GitHub's website, then replace the manifest and visual registry files with the generated versions. Open a pull request. GitHub Actions checks the visual registry, question links, required MCQ fields and fully decodes every registered image. These automated checks do not verify medical correctness, image rights, consent or the live deployed URL; a human reviewer must still inspect those. Do not merge until the checks pass and a reviewer has approved the content. No terminal is required.
 
 ---
 
