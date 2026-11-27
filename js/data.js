@@ -135,7 +135,7 @@ window.DX = window.DX || {};
           d.questions.forEach(function (q) {
             var t = DX.topicById[q.topic] || fileT;
             if (!t) { bad++; return; }
-            q.topic = t.id; q.area = t.area; q.subject = t.subject;
+            q.topic = t.id; q.area = t.area; q.subject = t.subject; q.file = f;
             if (q.type === "tf") {
               /* Keep true/false stems separate from every existing question mode. */
               var okTf = q.id && q.q && Array.isArray(q.items) && q.items.length >= 4 && q.items.length <= 5 &&
