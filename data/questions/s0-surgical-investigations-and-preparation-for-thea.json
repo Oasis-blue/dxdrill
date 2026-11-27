@@ -8,12 +8,12 @@
    "sub": "Preoperative Laboratory Investigations",
    "q": "What is the minimum acceptable haemoglobin concentration generally required before proceeding with an elective surgical procedure under general anaesthesia in Nigeria?",
    "options": [
-    "10.0 g/dL (PCV 30%)",
     "7.0 g/dL (PCV 21%)",
+    "10.0 g/dL (PCV 30%)",
     "13.5 g/dL (PCV 40%)",
     "8.5 g/dL (PCV 25%)"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "For elective surgery, a haemoglobin of at least 10 g/dL (PCV 30%) is standard in most Nigerian surgical units to ensure adequate oxygen-carrying capacity, whereas emergency surgery may proceed at lower levels with simultaneous resuscitation and blood cover.",
    "verified": false,
    "open": {
@@ -55,12 +55,12 @@
    "sub": "Preoperative Laboratory Investigations",
    "q": "Which coagulation parameter is most sensitive for detecting extrinsic pathway dysfunction caused by obstructive jaundice or warfarin therapy?",
    "options": [
-    "Prothrombin time (PT) and International Normalized Ratio (INR)",
     "Activated partial thromboplastin time (aPTT)",
     "Bleeding time",
-    "Thrombin time"
+    "Thrombin time",
+    "Prothrombin time (PT) and International Normalized Ratio (INR)"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Obstructive jaundice impairs intestinal absorption of fat-soluble vitamin K, reducing hepatic synthesis of factors II, VII, IX, and X. Because factor VII has the shortest half-life (4 to 6 hours) in the extrinsic pathway, PT/INR prolongs earliest.",
    "verified": false,
    "open": {
@@ -79,12 +79,12 @@
    "sub": "Preoperative Laboratory Investigations",
    "q": "Which preoperative biochemical abnormality poses the highest immediate risk of fatal intraoperative cardiac arrhythmias?",
    "options": [
-    "Severe hyperkalaemia or hypokalaemia",
     "Mild hyponatraemia of 133 mmol/L",
     "Mildly elevated serum alkaline phosphatase",
+    "Severe hyperkalaemia or hypokalaemia",
     "Borderline low serum albumin of 32 g/L"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Serum potassium derangements alter myocardial resting membrane potential and conduction velocity; hyperkalaemia (especially above 6.0 mmol/L) risks asystole and is worsened by suxamethonium, while hypokalaemia predisposes to ventricular tachyarrhythmias.",
    "verified": false,
    "open": {
@@ -103,12 +103,12 @@
    "sub": "Preoperative Laboratory Investigations",
    "q": "What is the key difference between a 'Group and Save' request and a 'Cross-match' request before theatre?",
    "options": [
-    "Group and Save: blood group and antibody screen; cross-match: compatibility testing and unit allocation",
     "Group and Save takes hours, whereas cross-match takes seconds",
+    "Group and Save: blood group and antibody screen; cross-match: compatibility testing and unit allocation",
     "Group and Save is for major haemorrhage; cross-match is only for low-risk surgery",
     "Group and Save tests only donor blood, whereas cross-match tests only recipient blood"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Group and Save (type and screen) identifies the patient's blood group and unexpected antibodies so compatible units can be issued rapidly if needed (for procedures with low expected blood loss), whereas full cross-matching allocates specific tested units for surgeries with significant expected blood loss.",
    "verified": false,
    "open": {
@@ -150,12 +150,12 @@
    "sub": "Imaging and Diagnostic Workup",
    "q": "Why is abdominal ultrasonography preferred over plain radiography as the initial imaging test in a patient presenting with surgical obstructive jaundice?",
    "options": [
-    "It reliably distinguishes extrahepatic biliary dilation from hepatocellular jaundice and detects gallstones without ionizing radiation",
     "It provides high-resolution visualization of the retroperitoneal pancreas even in severe bowel gas",
     "It directly measures serum conjugated bilirubin levels",
-    "It simultaneously extracts impacted common bile duct stones"
+    "It simultaneously extracts impacted common bile duct stones",
+    "It reliably distinguishes extrahepatic biliary dilation from hepatocellular jaundice and detects gallstones without ionizing radiation"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Ultrasound is non-invasive, radiation-free, and highly sensitive for detecting intrahepatic and extrahepatic bile duct dilatation (surgical jaundice) and cholelithiasis, guiding whether MRCP, CT, or ERCP is required next.",
    "verified": false,
    "open": {
@@ -173,12 +173,12 @@
    "sub": "Imaging and Diagnostic Workup",
    "q": "Which clinical condition is an absolute contraindication to performing a barium enema or barium swallow?",
    "options": [
-    "Suspected gastrointestinal tract perforation",
     "Chronic constipation",
     "Mild gastro-oesophageal reflux",
+    "Suspected gastrointestinal tract perforation",
     "Iron deficiency anaemia"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Leakage of barium sulphate into the mediastinum or peritoneal cavity causes severe, often fatal chemical mediastinitis or barium peritonitis with dense granulomatous adhesions. Water-soluble contrast (such as Gastrografin) must be used if perforation is suspected.",
    "verified": false,
    "open": {
@@ -196,12 +196,12 @@
    "sub": "Imaging and Diagnostic Workup",
    "q": "What key advantage does Fine Needle Aspiration Cytology (FNAC) have over core needle (Tru-Cut) biopsy, and what is its main limitation?",
    "options": [
-    "FNAC is quick and minimally invasive but yields cells without tissue architecture, limiting assessment of invasion",
     "FNAC requires general anaesthesia, whereas core biopsy requires none",
+    "FNAC is quick and minimally invasive but yields cells without tissue architecture, limiting assessment of invasion",
     "FNAC preserves full tissue architecture, whereas core biopsy yields only single cells",
     "FNAC reliably establishes capsular invasion in follicular thyroid carcinoma"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "FNAC uses a fine 21G to 25G needle to sample cells quickly in the outpatient clinic, but because tissue architecture is lost, it cannot assess capsular/vascular invasion (e.g., follicular thyroid carcinoma) or stromal invasion (DCIS vs invasive breast cancer).",
    "verified": false,
    "open": {
@@ -243,12 +243,12 @@
    "sub": "Risk Assessment and Informed Consent",
    "q": "Which elements are legally and ethically required for valid informed surgical consent?",
    "options": [
-    "Capacity, disclosure of the procedure, risks and alternatives, and voluntary agreement",
     "Signature of a junior nurse alone without explaining surgical complications",
     "Written consent signed after premedication sedation has already been administered",
-    "Verbal permission obtained exclusively from a neighbour when the adult patient is fully conscious"
+    "Verbal permission obtained exclusively from a neighbour when the adult patient is fully conscious",
+    "Capacity, disclosure of the procedure, risks and alternatives, and voluntary agreement"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Valid informed consent requires a competent patient (or legal guardian for a minor) who receives clear information about the nature of the condition, intended operation, benefits, recognized risks, and alternatives, and consents freely while un-sedated.",
    "verified": false,
    "open": {
@@ -266,12 +266,12 @@
    "sub": "Risk Assessment and Informed Consent",
    "q": "An unconscious 28-year-old man is brought to the emergency department with a ruptured spleen and haemorrhagic shock following a road traffic crash. No relatives are present. How should the surgical team proceed regarding consent?",
    "options": [
-    "Proceed with life-saving surgery under the doctrine of necessity and document the decision",
     "Delay surgery indefinitely until a blood relative arrives to sign the consent form",
     "Obtain written consent from the ambulance driver",
+    "Proceed with life-saving surgery under the doctrine of necessity and document the decision",
     "Administer intravenous fluids only and withhold surgery for 24 hours"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "When an adult lacks capacity in a life- or limb-threatening emergency and no legal proxy is available, surgeons act in the patient's best interests under the doctrine of necessity, clearly documenting the clinical justification.",
    "verified": false,
    "open": {
@@ -290,12 +290,12 @@
    "sub": "Preoperative Fasting and Medications",
    "q": "What are the standard preoperative fasting guidelines ('6-4-2 rule') for healthy patients undergoing elective surgery?",
    "options": [
-    "6 h: solids/non-human milk; 4 h: breast milk; 2 h: clear fluids",
     "12 hours for clear water and 24 hours for solid food",
+    "6 h: solids/non-human milk; 4 h: breast milk; 2 h: clear fluids",
     "2 hours for solid meals and 6 hours for clear water",
     "4 hours for solid food and 1 hour for cow's milk"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "The 6-4-2 fasting protocol minimizes gastric residual volume and pulmonary aspiration risk (Mendelson syndrome) while preventing dehydration and hypoglycaemia: 6 hours for solids/formula, 4 hours for breast milk, and 2 hours for clear fluids (water, black tea, pulp-free juice).",
    "verified": false,
    "open": {
@@ -336,12 +336,12 @@
    "sub": "Preoperative Fasting and Medications",
    "q": "How many days before major elective surgery should aspirin or clopidogrel typically be discontinued when bleeding risk outweighs thrombotic risk?",
    "options": [
-    "5 to 7 days",
     "12 hours",
     "24 hours",
-    "21 days"
+    "21 days",
+    "5 to 7 days"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Aspirin irreversibly acetylates platelet cyclooxygenase-1 and clopidogrel irreversibly blocks P2Y12 receptors for the entire 7-to-10-day lifespan of circulating platelets; stopping them 5 to 7 days preoperatively allows sufficient new functional platelets to be released.",
    "verified": false,
    "open": {
@@ -359,12 +359,12 @@
    "sub": "Preoperative Fasting and Medications",
    "q": "Why must oral metformin be withheld before major surgery or procedures involving iodinated intravenous contrast?",
    "options": [
-    "Renal impairment around surgery or contrast exposure can reduce metformin clearance and increase lactic acidosis risk",
     "Metformin causes profound intraoperative hyperglycaemia",
     "Metformin blocks recovery from all neuromuscular blockers",
+    "Renal impairment around surgery or contrast exposure can reduce metformin clearance and increase lactic acidosis risk",
     "Metformin routinely causes acute haemolytic anaemia"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Metformin is excreted unchanged by the kidneys; perioperative dehydration, hypotension, or contrast-induced acute kidney injury causes drug accumulation and life-threatening metformin-associated lactic acidosis (MALA).",
    "verified": false,
    "open": {
@@ -382,12 +382,12 @@
    "sub": "Preoperative Optimization",
    "q": "A 60-year-old man who has taken oral prednisolone 15 mg daily for 2 years for rheumatoid arthritis is scheduled for an elective hemicolectomy. What perioperative endocrine measure is required?",
    "options": [
-    "Give perioperative glucocorticoid cover for possible HPA-axis suppression",
     "Stop prednisolone abruptly 48 hours before surgery",
+    "Give perioperative glucocorticoid cover for possible HPA-axis suppression",
     "Give propylthiouracil before induction",
     "Restrict all sodium-containing intravenous fluids"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Chronic exogenous corticosteroid therapy suppresses the hypothalamic-pituitary-adrenal (HPA) axis, preventing the endogenous cortisol surge needed for surgical stress and risking refractory hypotensive Addisonian crisis unless stress-dose hydrocortisone is given.",
    "verified": false,
    "open": {
@@ -428,12 +428,12 @@
    "sub": "Thromboprophylaxis and Antibiotic Prophylaxis",
    "q": "Which combination provides effective mechanical and pharmacological prophylaxis against deep vein thrombosis (DVT) in a high-risk pelvic cancer surgery patient?",
    "options": [
-    "Graduated compression stockings or intermittent pneumatic compression plus low-molecular-weight heparin (enoxaparin)",
     "Strict bed rest for 5 days with high-dose vitamin K",
     "Routine aspirin monotherapy started 2 weeks after discharge",
-    "Elevating the head of the bed by 60 degrees without leg movement"
+    "Elevating the head of the bed by 60 degrees without leg movement",
+    "Graduated compression stockings or intermittent pneumatic compression plus low-molecular-weight heparin (enoxaparin)"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "Combining mechanical methods (anti-embolism TED stockings and intraoperative intermittent pneumatic compression boots) with subcutaneous low-molecular-weight heparin (LMWH) addresses venous stasis and hypercoagulability in high-risk surgical patients.",
    "verified": false,
    "open": {
@@ -451,12 +451,12 @@
    "sub": "Bowel and Skin Preparation",
    "q": "Why should preoperative hair removal from the surgical site be performed with electric clippers rather than a manual razor blade?",
    "options": [
-    "Clippers avoid razor-induced skin microabrasions that increase infection risk",
     "Electric clippers sterilize the hair follicles permanently",
     "Razors remove the entire stratum corneum and cause severe bleeding",
+    "Clippers avoid razor-induced skin microabrasions that increase infection risk",
     "Electric clippers eliminate the need for antiseptic skin preparation"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Shaving with a razor the night before surgery causes micro-abrasions in the skin where Staphylococcus aureus proliferates, significantly raising surgical site infection rates. If hair removal is necessary, clipping immediately before surgery is recommended.",
    "verified": false,
    "open": {
@@ -474,12 +474,12 @@
    "sub": "Theatre Preparation and Safety",
    "q": "Why is a skin site-marking arrow drawn with an indelible marker before the patient enters the operating theatre for paired organs or limbs?",
    "options": [
-    "To prevent wrong-site, wrong-side, or wrong-limb surgery",
     "To outline the exact vascular supply of the skin flap",
+    "To prevent wrong-site, wrong-side, or wrong-limb surgery",
     "To guide the placement of the diathermy dispersive pad",
     "To indicate the patient's blood group to the scrub nurse"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Preoperative site marking on the awake patient (confirmed against consent forms and imaging) is a mandatory safety step to eliminate wrong-side or wrong-site procedures on limbs, eyes, kidneys, lungs, or inguinal hernias.",
    "verified": false,
    "open": {
@@ -520,12 +520,12 @@
    "sub": "Theatre Preparation and Safety",
    "q": "Where should the dispersive return plate (patient pad) for monopolar diathermy be placed during surgery?",
    "options": [
-    "On clean, dry, well-perfused muscle with full skin contact",
     "Place it directly over a bony prominence such as the lateral malleolus",
     "Place it over thick scar tissue or a metal prosthesis",
-    "Place it on wet skin beneath a pooled alcohol preparation"
+    "Place it on wet skin beneath a pooled alcohol preparation",
+    "On clean, dry, well-perfused muscle with full skin contact"
    ],
-   "answer": 0,
+   "answer": 3,
    "explain": "A large, well-vascularized muscle mass dissipates heat safely across the full surface area of the dispersive pad; bony prominences, scars, hair, or metal implants create uneven contact and high current density that cause diathermy pad burns.",
    "verified": false,
    "open": {
@@ -543,12 +543,12 @@
    "sub": "Theatre Preparation and Safety",
    "q": "What is the primary purpose of inflating a pneumatic limb tourniquet only after exsanguinating the limb with an Esmarch bandage or elevation?",
    "options": [
-    "To provide a bloodless surgical field while minimizing venous engorgement and blood loss",
     "To permanently thrombose deep calf veins",
     "To prevent nerve conduction so general anaesthesia is unnecessary",
+    "To provide a bloodless surgical field while minimizing venous engorgement and blood loss",
     "To warm the limb prior to orthopaedic osteotomy"
    ],
-   "answer": 0,
+   "answer": 2,
    "explain": "Exsanguination drains venous blood from the extremity before tourniquet inflation (typically 50 to 100 mmHg above systolic BP in the upper limb and 100 to 150 mmHg above systolic BP in the lower limb), creating a clear bloodless field. Note that Esmarch exsanguination is avoided in infection, malignancy, or sickle cell disease.",
    "verified": false,
    "open": {
@@ -566,12 +566,12 @@
    "sub": "Preoperative Optimization",
    "q": "A 52-year-old man with gastric outlet obstruction from chronic duodenal ulceration has recurrent non-bilious vomiting. His serum electrolytes show Na+ 132 mmol/L, K+ 2.8 mmol/L, Cl- 84 mmol/L, and HCO3- 36 mmol/L. Which intravenous fluid and electrolyte replacement is mandatory before taking him to theatre?",
    "options": [
-    "0.9% saline plus potassium chloride after confirming urine output",
     "5% dextrose in water without electrolytes",
+    "0.9% saline plus potassium chloride after confirming urine output",
     "Sodium bicarbonate infusion to correct acidosis",
     "Hypertonic 3% saline with loop diuretics"
    ],
-   "answer": 0,
+   "answer": 1,
    "explain": "Gastric outlet obstruction causes loss of H+, Cl-, K+, and water, producing hypochloraemic, hypokalaemic metabolic alkalosis with paradoxical aciduria. Resuscitation with 0.9% NaCl restores volume and chloride so the kidneys can excrete excess bicarbonate, alongside potassium replacement once urine flow is confirmed.",
    "verified": false,
    "open": {
