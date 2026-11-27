@@ -518,7 +518,7 @@ The item-level register now includes all **27 numbered questions** from Chapter 
 
 Printed answer keys are recorded as source metadata, not independently validated. Direct/partial classifications are based on the tested knowledge, not merely shared subject headings.
 
-**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 11–25 remain to be registered.
+**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 15–25 remain to be registered.
 
 
 ## 22. Item-level reconciliation — Chapters 11–14 (27 November 2026)
