@@ -52,7 +52,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
     return JSON.parse(t);
   }
   function check(obj){
-    var errors=[],warnings=[],quarantine=[],seen={},localFiles={};
+    var errors=[],warnings=[],quarantine=[],seen={};
     function err(where,msg){errors.push(where+": "+msg);}
     function claim(id,where){
       if(typeof id!=="string"||! /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)){err(where,"ID must be lowercase kebab-case.");return;}
