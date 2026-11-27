@@ -2,8 +2,8 @@
 
 **Date:** 27 November 2026  
 **Question-bank source:** `data/questions/tf-core-expansion.json`  
-**Source blob SHA:** `25e3e4aa8bffac77a15f2c3e0ab69b930f19632a`  
-**Bank scope:** 448 stems / 1,792 true-false statements. Counts below include both verified and draft/unverified stems.
+**Source blob SHA:** `51d1ed585279b6c2091ab41a4bac6207ef720982`  
+**Bank scope:** 463 stems / 1,852 true-false statements. Counts below include both verified and draft/unverified stems.
 
 ## Scope and source-of-truth note
 
@@ -23,10 +23,10 @@ The user's three-subject structure is retained: **Anatomy includes Histology and
 
 | Subject | Stems | Share of three core subjects |
 |---|---:|---:|
-| Anatomy (including Histology and Embryology) | 132 | 32.2% |
-| Physiology | 142 | 34.6% |
-| Medical Biochemistry | 136 | 33.2% |
-| **Core-subject total** | **410** | **100%** |
+| Anatomy (including Histology and Embryology) | 137 | 32.2% |
+| Physiology | 147 | 34.6% |
+| Medical Biochemistry | 141 | 33.2% |
+| **Core-subject total** | **425** | **100%** |
 
 The additional 38 records are outside the three core subjects: 20 Pathology and 18 Pharmacology/therapeutics records. They are excluded from the core-subject denominator.
 
@@ -39,13 +39,13 @@ NUC course anchors include ANA 201a/201b (upper and lower limbs), ANA 202a/202b 
 | General anatomy | 14 | Present; each topic remains below six stems |
 | Regional / gross anatomy | 47 | Broadest anatomy area; regional balance still varies |
 | General histology | 14 | Thin across several topics |
-| Systemic histology | 26 | Present, but individual systems remain thin |
+| Systemic histology | 27 | Present, but individual systems remain thin |
 | General embryology | 10 | Two stems per topic |
-| Systemic embryology | 19 | Uneven; musculoskeletal development has one stem |
-| Radiological anatomy | 0 | **No stems currently tagged to this canonical area** |
-| Genetics | 2 | **Very thin; three of five topics have no stem** |
+| Systemic embryology | 20 | Uneven; musculoskeletal development has one stem |
+| Radiological anatomy | 2 | **Still thin; only two stems** |
+| Genetics | 3 | **Very thin; three of five topics have no stem** |
 
-**Interpretation:** These counts use each question's current canonical topic assignment, not its historical ID prefix. Round 22 added two genetics stems and two imaging-interpretation scenarios; the latter remain tagged to gross thorax and abdomen/pelvis topics because those are the closest existing canonical topics, not to the dedicated radiological-anatomy area. The radiological-anatomy area therefore still has zero tagged stems. Genetics material within Medical Biochemistry is not a substitute for Anatomy genetics objectives. Systemic histology, systemic embryology and regional gross anatomy require topic-by-topic depth review.
+**Interpretation:** These counts use each question's current canonical topic assignment, not its historical ID prefix. Round 22 added two genetics stems and two imaging-interpretation scenarios; those scenarios remain tagged to gross thorax and abdomen/pelvis topics. Round 23 added two further stems directly to the radiological-anatomy area, so that area now has two tagged stems but remains thin. Genetics material within Medical Biochemistry is not a substitute for Anatomy genetics objectives. Systemic histology, systemic embryology and regional gross anatomy require topic-by-topic depth review.
 
 ## 4. Physiology coverage
 
@@ -56,12 +56,12 @@ NUC course anchors include PHS 201 (introductory/cell physiology and autonomic n
 | General physiology | 5 | Thin; homeostasis has one stem |
 | Blood and body fluids | 16 | Present; each topic has 3–4 stems |
 | Respiratory system | 14 | Present; each topic has 2–3 stems |
-| Cardiovascular system | 20 | Present; arterial pressure/peripheral resistance has one stem |
-| Gastrointestinal tract and nutrition | 14 | Present, but diet/BMR/malnutrition has one stem |
-| Renal system | 20 | Present; dialysis/diuretics, renal endocrine and fluid/electrolyte topics have one each |
+| Cardiovascular system | 21 | Present; arterial pressure/peripheral resistance has one stem |
+| Gastrointestinal tract and nutrition | 15 | Present, but diet/BMR/malnutrition has one stem |
+| Renal system | 22 | Present; dialysis/diuretics, renal endocrine and fluid/electrolyte topics have one each |
 | Skin and body temperature | 4 | Thin; two stems per topic |
 | Endocrinology | 16 | Present; gonadal hormones has two stems |
-| Reproduction | 8 | **Thin; three topics have one stem each** |
+| Reproduction | 9 | **Thin; three topics have one stem each** |
 | Neuro-locomotor system | 25 | Broad area; objective-level balance still needed |
 
 **Additional gap/quality flags:**
@@ -76,8 +76,8 @@ NUC course anchors include BCH 201 (cell biology, pH and buffers), BCH 203 (carb
 
 | Canonical curriculum area | Stems | Initial assessment |
 |---|---:|---|
-| General biochemistry | 78 | Broad area, but metabolism of biomolecules accounts for 27 stems; other topics range from 5–13 |
-| Applied biochemistry | 58 | Broad area; individual topics range from 3–9 |
+| General biochemistry | 79 | Broad area, but metabolism of biomolecules accounts for 27 stems; other topics range from 5–13 |
+| Applied biochemistry | 62 | Broad area; individual topics range from 3–9 |
 
 **Interpretation:** General biochemistry has 78 stems and Applied biochemistry 58. The broad area counts should not obscure topic imbalance: metabolism of biomolecules has 27 stems, while basic chemistry has five; applied topics range from three to nine. The next audit should check individual pathway steps, rate-limiting enzymes, regulation, tissue specificity, fed/fasting integration, nutritional assessment and practical interpretation.
 
@@ -113,13 +113,22 @@ Round 22 added 15 stems / 60 statements, five per core subject, selected from th
 - **Physiology:** visual and auditory physiology, ECG and spirometry interpretation, and hypothalamic-pituitary integration.
 - **Medical Biochemistry:** nutritional assessment, micronutrient deficiency, fed/fasting regulation, inter-organ fuel exchange, and biochemical genetics.
 
-The next batch should deepen the still-thin areas rather than repeat Round 22 topics. The current topic-by-topic inventory is the denominator for selecting new stems. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
+Round 23 added 15 stems / 60 statements, five per core subject. The next batch should deepen the still-thin areas rather than repeat Rounds 22–23 topics. The current topic-by-topic inventory is the denominator for selecting new stems. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
 
-## 8. Registry reconciliation
+## 8. Round 23 completed
+
+Round 23 added 15 stems / 60 statements, five per core subject:
+- **Anatomy:** X-ray production, musculoskeletal radiography, meiosis, nervous-tissue glia and embryonic bone formation.
+- **Physiology:** arterial-pressure regulation, basal metabolic rate, haemodialysis, renal endocrine function and puberty.
+- **Medical Biochemistry:** molecular muscle contraction, major biomolecule classes, coagulation, biomembranes and immunoglobulin/complement.
+
+All 15 are assigned to existing canonical topics, contain four statements each, include direct HTTPS references and remain draft/unverified. The additions broaden thin areas but do not establish six-stem coverage across every topic.
+
+## 9. Registry reconciliation
 
 On 27 November 2026, 98 existing question records with legacy/non-canonical topic labels were reassigned to the closest matching topic in `data/curriculum.json` after review of each stem's ID, subtopic and wording. The question content, answer keys, explanations, references and verification states were not changed in that metadata pass. `docs/topic-ids.txt` was synchronized to the canonical registry; it now contains all 358 curriculum topic IDs. A bank-wide check found zero question records with an unregistered topic ID.
 
-## 9. Method and limitations
+## 10. Method and limitations
 
 - Subject and area membership are assigned from the canonical `topic` field in `data/curriculum.json`; the 38 Pathology and Pharmacology records are excluded from the three core subject analysis.
 - Area counts are based on the canonical topic hierarchy, not question ID prefixes. They are inventory counts, not proof of learning-objective mastery or official NUC course-code assignments.
