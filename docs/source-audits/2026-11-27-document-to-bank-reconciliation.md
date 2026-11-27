@@ -401,3 +401,24 @@ Classification rules:
 This pilot identified direct coverage for core thoracic apertures, intrinsic muscle membership/innervation, serratus anterior palsy, trapezius innervation and pectoralis minor attachments/innervation. It identified a specific gap for serratus posterior superior attachments and fibre direction. Several compound source questions are classified partial because the existing question tests only part of the source's multi-statement scope.
 
 **Important scope note:** this is the first item-level tranche, not yet a complete register for all 25 chapters. The source's full printed question inventory and remaining chapters will be registered in subsequent batches. The chapter-level reviews recorded above must not be mistaken for item-level matching.
+
+
+## 16. Item-level source register — Chapter 2 (Abdomino-Pelvic Wall and Diaphragm)
+
+The item-level register now includes all **26 numbered questions** from Chapter 2 (printed pages 17–22), with the printed answer-key letters captured separately, a concise statement of the tested concept, and matching IDs from the normal-format and True/False banks.
+
+Chapter 2 coverage classification:
+- **Direct:** 12 items
+- **Partial:** 9 items
+- **Gap:** 5 items
+
+The five gaps identified in this chapter concern:
+- Usual origins of the inferior phrenic arteries.
+- Venous drainage of the superior surface of the diaphragm.
+- Surface-region terminology immediately inferior to the xiphoid process.
+- Inferior boundary landmarks of the anterior abdominal wall.
+- Definition and position of the linea semilunaris.
+
+Some source questions combine several anatomical details; these remain partial where the existing bank tests only a subset. The printed answer-key letters are preserved as source metadata and are not treated as independently validated answers.
+
+**Cumulative item-level progress:** Chapters 1–2 now contain **51 registered source questions**. Across these two chapters, the register classifies **22 direct matches, 23 partial matches and 6 gaps**. This is a cumulative register count, not a claim about all chapters in the book. The remaining chapters still require the same item-level matching process.
