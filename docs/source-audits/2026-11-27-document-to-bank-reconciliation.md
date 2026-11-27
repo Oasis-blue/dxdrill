@@ -590,3 +590,12 @@ The six gaps in Chapter 23 concern the branches of the thoracic aorta, branches 
 **Completed-source cumulative totals:** all **584 source questions** are now registered: **130 direct matches, 374 partial matches and 80 gaps**. A direct match means substantially the same tested fact is represented; partial means only some of the source item's tested detail is covered; gap means no suitable record was identified in the inspected banks. These are coverage classifications, not a judgment that the source's printed answer keys are correct.
 
 The printed answer-key letters have been transcribed as source metadata only and have not been independently validated. Source-informed DxDrill additions remain marked unverified pending academic review. No bank content was changed in this final item-mapping tranche; the purpose here was to finish the item-to-bank register and expose remaining coverage gaps.
+
+
+## 26. Targeted gap remediation — first batch (27 November 2026)
+
+The first remediation batch has added **28 new single-best-answer Anatomy MCQs** (10 to the thorax bank and 18 to the abdomen/pelvis bank) and **8 grouped True/False sets** to the existing T/F bank. These additions target specific uncovered details across the diaphragm, breast, mediastinum, lungs, heart, colon, rectum, liver, biliary tree, prostate and urinary bladder. All new MCQs carry `verified:false`; all new T/F sets carry `reviewStatus:draft-unverified` and `verified:false` pending academic review.
+
+The item register has been updated to link the new records to the source items they address. Where a new record covers only part of a multi-fact source item, the status remains **partial** rather than being overstated as direct. After this batch, the register classifies **154 direct matches, 394 partial matches and 36 remaining gaps** across all 584 source questions. This is a coverage improvement, not academic validation of the answer keys or new records.
+
+The remaining gaps are queued for further targeted additions. Existing topic IDs and file organisation have been preserved; no new curriculum topics or topic IDs were created.
