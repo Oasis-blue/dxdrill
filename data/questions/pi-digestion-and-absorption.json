@@ -214,6 +214,54 @@
           "Divalent metal transporter 1"
         ]
       }
+    },
+    {
+      "id": "pi-digestion-and-absorption-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Intestinal lipid transport",
+      "q": "A patient has normal digestion of dietary triglycerides but impaired formation of chylomicrons in enterocytes. Which process is most directly reduced?",
+      "options": [
+        "Export of long-chain dietary lipids into intestinal lymph",
+        "Absorption of glucose through SGLT1",
+        "Transport of short-chain fatty acids directly into portal blood",
+        "Hydrolysis of triglycerides by pancreatic lipase"
+      ],
+      "answer": 0,
+      "explain": "Long-chain fatty acids and monoacylglycerols are re-esterified within enterocytes and packaged with apolipoproteins into chylomicrons. Chylomicrons enter lacteals and travel through lymph before reaching the systemic circulation.",
+      "verified": false
+    },
+    {
+      "id": "pi-digestion-and-absorption-012",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Glucose absorption",
+      "q": "Which transporter is responsible for sodium-dependent uptake of glucose across the apical membrane of small-intestinal enterocytes?",
+      "options": [
+        "GLUT2",
+        "SGLT1",
+        "GLUT5",
+        "Na+/K+ ATPase"
+      ],
+      "answer": 1,
+      "explain": "SGLT1 couples glucose or galactose uptake to the inward sodium gradient at the apical membrane. GLUT2 supports basolateral exit into portal blood; GLUT5 transports fructose.",
+      "verified": false
+    },
+    {
+      "id": "pi-digestion-and-absorption-013",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Iron absorption",
+      "q": "A patient with iron deficiency has increased intestinal iron absorption. Which regulatory change most directly facilitates release of stored iron from enterocytes into plasma?",
+      "options": [
+        "Increased hepcidin activity",
+        "Reduced ferroportin activity",
+        "Reduced hepcidin activity",
+        "Increased ferritin sequestration with no export"
+      ],
+      "answer": 2,
+      "explain": "Hepcidin from the liver promotes internalisation and degradation of ferroportin. Low hepcidin permits ferroportin-mediated iron export from enterocytes and macrophages into plasma.",
+      "verified": false
     }
   ]
 }
