@@ -458,3 +458,18 @@ Five original MCQs were added to each of three topic banks, with topics selected
 All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
 
 **Cumulative source-reconciliation additions: 238 original questions** (223 previously recorded plus these 15).
+
+
+## Digestive histology, urine concentration and amino-acid metabolism — 27 November 2026
+
+Five original MCQs were added to each of three existing curriculum topic banks. The selections were checked against the existing bank content to avoid simply repeating prior stems:
+
+**Anatomy / Histology — digestive system (48 → 53):** gastric parietal and chief cells, pancreatic centroacinar cells and islets, and gallbladder mucosal organisation.
+
+**Physiology — urine concentration (43 → 48):** urea contribution to the medullary gradient, countercurrent exchange in the vasa recta, collecting-duct response to desmopressin, water impermeability of the thick ascending limb and hypercalcaemia-associated concentrating defects.
+
+**Medical Biochemistry — amino-acid metabolism (40 → 45):** glutamine synthesis and breakdown, nitrogen donation to urea, citrullinaemia type I and tryptophan metabolism to serotonin.
+
+These are within the existing Anatomy, Physiology and Medical Biochemistry curriculum banks, rather than additions of unrelated advanced subjects. All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This remains targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
+
+**Cumulative source-reconciliation additions: 253 original questions** (238 previously recorded plus these 15).
