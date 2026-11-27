@@ -225,3 +225,24 @@ The live bank was checked before adding material:
 One additional True/False stem was added as `tf-gr-thorax-005` under `gr-thorax`. It consolidates independently testable facts about the intrinsic thoracic wall muscles, pectoralis minor attachments, serratus anterior innervation and pectoralis major innervation. It is marked `verified:false`, with NCBI Bookshelf anatomy references and a source note identifying Chapter 1 questions 3 and 9–20 as the source coverage. The addition was re-fetched from `main`; the T/F file now contains 494 questions with 494 unique IDs.
 
 No normal MCQ was added in this first chapter pass because the live `gr-thorax` file already contains directly relevant normal-format coverage for the principal tested muscle and clinical concepts. This is not a claim that all 25 source items are fully matched: the detailed item-to-ID register and remaining chapter-by-chapter reconciliation are still in progress. The 584-item total previously stated is retained as a provisional inventory figure until a reproducible per-chapter item count is recorded in the register.
+
+
+## 9. Dual-bank batch — Chapters 1–2 (Thoracic Wall; Abdomino-Pelvic Wall and Diaphragm)
+
+The first expanded batch reviewed the printed questionnaires and answer keys for:
+- Chapter 1, Thoracic Wall: 25 numbered multiple-response questions (printed pages 11–16).
+- Chapter 2, Abdomino-Pelvic Wall and Diaphragm: 26 numbered multiple-response questions (printed pages 17–22).
+
+The live normal-format and True/False banks were checked before editing. The batch produced the following additions:
+
+**Normal-format bank**
+- `APP-236` in `data/questions/gr-abdomen-pelvis-and-perineum.json`: course of the iliohypogastric and ilioinguinal nerves across the anterior surface of quadratus lumborum.
+
+**True/False bank**
+- `tf-gr-thorax-005`: intrinsic thoracic wall muscle groups, pectoralis minor attachments, serratus anterior innervation and pectoralis major innervation.
+- `tf-gr-diaphragm-001`: diaphragmatic apertures, vertebral levels, aortic hiatus, innervation and arterial supply.
+- `tf-gr-abdominal-wall-001`: inguinal canal walls, ilioinguinal nerve course, female inguinal canal contents and rectus sheath formation.
+
+All four additions are marked `verified:false` pending academic review. Existing IDs and records were preserved. The normal bank was re-fetched and parsed after the write: **233 questions, 233 unique IDs**, latest ID `APP-236`. The T/F bank was re-fetched and parsed after the write: **496 questions, 496 unique IDs**. New T/F IDs were confirmed present.
+
+**Coverage qualification:** these two chapters have now been reviewed against both live formats and yielded the additions above. This batch does not yet constitute a complete item-to-record register for all 51 printed questions; exact per-item matched/partial/gap statuses remain to be recorded. Do not interpret the chapter questionnaire counts as a count of newly created DxDrill questions. Chapters 3–25 remain for subsequent batches.
