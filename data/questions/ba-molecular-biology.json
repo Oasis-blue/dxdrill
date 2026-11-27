@@ -127,7 +127,7 @@
    "q": "Why do linear eukaryotic chromosomes progressively shorten with each round of somatic cell division in the absence of telomerase?",
    "options": [
     "DNA ligase degrades chromosome ends during mitosis",
-    "The final lagging-strand RNA primer leaves an unfillable gap at the chromosome end",
+    "The terminal lagging-strand primer leaves an unfillable gap",
     "Leading-strand synthesis stops before the centromere",
     "Topoisomerase I cleaves telomeric repeats during S phase"
    ],
@@ -268,7 +268,7 @@
     "They impair uracil removal from DNA",
     "They prevent RNA-primer removal",
     "They hyperactivate telomerase in somatic cells",
-    "They impair homologous recombination repair of double-strand breaks"
+    "They impair homologous recombination repair of DNA breaks"
    ],
    "answer": 3,
    "explain": "BRCA1 and BRCA2 are tumor suppressors essential for homologous recombination repair of double-strand breaks during S and G2 phases; loss forces cells to use error-prone non-homologous end joining (NHEJ), accumulating genomic instability.",
@@ -409,7 +409,7 @@
    "q": "During eukaryotic pre-mRNA splicing by the spliceosome (snRNPs U1, U2, U4, U5, U6), which conserved intronic nucleotide attacks the 5' splice site (GU) to form a branched lariat intermediate?",
    "options": [
     "A conserved guanine at the 3' splice site",
-    "A conserved branch-point adenine nucleotide via its 2'-hydroxyl group",
+    "Branch-point adenine attacks the 5' splice site via its 2'-OH",
     "A conserved uracil in the polypyrimidine tract",
     "The 5' 7-methylguanosine cap"
    ],
@@ -457,7 +457,7 @@
    "options": [
     "Alternative splicing removes over half the exons in the intestine",
     "Intestinal proteases cleave ApoB-100 after secretion",
-    "APOBEC-1 edits a CAA codon to a premature UAA stop codon in intestinal APOB mRNA",
+    "Intestinal APOBEC-1 converts CAA to UAA in APOB mRNA",
     "Hepatocytes methylate the APOB promoter"
    ],
    "answer": 2,
@@ -574,7 +574,7 @@
    "options": [
     "5'-AUG-3'",
     "5'-TATA-3'",
-    "3'-CCA-5' (specifically the 3'-OH of the terminal adenosine)",
+    "3'-CCA-5', at the terminal adenosine 3'-OH",
     "5'-GU-AG-3'"
    ],
    "answer": 2,
@@ -597,7 +597,7 @@
    "q": "How do prokaryotic ribosomes accurately locate the initiator AUG start codon on polycistronic mRNA?",
    "options": [
     "The 40S subunit scans from the 5' cap",
-    "16S rRNA pairs with the Shine-Dalgarno sequence upstream of AUG",
+    "16S rRNA pairs with the upstream Shine-Dalgarno sequence",
     "Rho factor positions the ribosome",
     "Poly(A)-binding protein recruits the ribosome"
    ],
@@ -690,7 +690,7 @@
    "q": "How are nascent secretory and integral membrane proteins targeted to the rough endoplasmic reticulum during translation?",
    "options": [
     "Ubiquitin chains direct ribosomes to nuclear pores",
-    "SRP binds the signal peptide, pauses translation and docks the ribosome at the ER",
+    "SRP binds the signal peptide and docks the ribosome at the ER",
     "Hsp60 transports proteins through mitochondrial membranes",
     "Mannose-6-phosphate directs ribosomes to the ER"
    ],
@@ -782,7 +782,7 @@
    "q": "How do microRNAs (miRNAs) and small interfering RNAs (siRNAs) post-transcriptionally silence gene expression in the cytoplasm?",
    "options": [
     "Bind promoter TATA boxes",
-    "Guide RISC to target mRNA, causing cleavage or translational repression",
+    "RISC guides target mRNA for cleavage or translational repression",
     "Remove introns from pre-mRNA",
     "Methylate tRNA anticodons"
    ],
@@ -829,7 +829,7 @@
    "q": "What are the three repeating temperature steps of each cycle in a standard Polymerase Chain Reaction (PCR) in chronological order?",
    "options": [
     "Annealing, denaturation, extension",
-    "Denaturation (~95 C), primer annealing (~50-65 C), and extension (~72 C)",
+    "Denaturation, annealing and extension (~95, 50-65 and 72 C)",
     "Extension, annealing, denaturation",
     "Denaturation, reverse transcription, ligation"
    ],
@@ -853,7 +853,7 @@
    "options": [
     "It has strong 3' to 5' proofreading activity",
     "It synthesises DNA without primers",
-    "It remains active after repeated high-temperature denaturation steps",
+    "It remains active through repeated high-temperature denaturation steps",
     "It uses RNA directly as a template"
    ],
    "answer": 2,
@@ -874,7 +874,7 @@
    "q": "Which modification of PCR is required to detect and quantify RNA viruses (such as HIV, HCV, or SARS-CoV-2) or measure cellular mRNA expression levels?",
    "options": [
     "Nested DNA PCR without reverse transcriptase",
-    "RT-PCR first converts RNA into cDNA using reverse transcriptase",
+    "Reverse transcriptase converts RNA to cDNA before amplification",
     "Southern blotting",
     "Western blotting"
    ],
@@ -1015,7 +1015,7 @@
    "q": "What is the role of enhancers in eukaryotic gene transcription?",
    "options": [
     "Encode the catalytic subunit of RNA polymerase II",
-    "Bind activators and stimulate transcription through promoter interactions",
+    "Bind activators to stimulate transcription from target promoters",
     "Terminate transcription through GC-rich hairpins",
     "Act as RNA sequences that degrade cytoplasmic mRNA"
    ],
@@ -1038,7 +1038,7 @@
    "q": "How does alternative splicing increase proteomic diversity in humans?",
    "options": [
     "Mutates genomic DNA in somatic tissues",
-    "One pre-mRNA yields multiple exon combinations and protein isoforms",
+    "One pre-mRNA produces multiple protein isoforms",
     "Translates introns into enzymes",
     "Converts mRNA back into genomic DNA"
    ],
@@ -1061,7 +1061,7 @@
    "q": "In eukaryotic translation, how does the 40S ribosomal subunit recognize the 5' end of mature mRNA?",
    "options": [
     "Bind directly to the Shine-Dalgarno sequence",
-    "eIF4E binds the 5' cap; eIF4F helps recruit the 43S pre-initiation complex",
+    "eIF4E binds the 5' cap and eIF4F recruits the 43S complex",
     "Bind directly to the stop codon",
     "Recognise internal poly(U) tracts"
    ],
@@ -1106,7 +1106,7 @@
    "q": "In the E. coli trp operon, how does attenuation finely regulate transcription in response to intracellular tryptophan levels?",
    "options": [
     "Tryptophan binds RNA polymerase and causes premature termination",
-    "Low tryptophan stalls the leader ribosome; high tryptophan promotes termination",
+    "Low tryptophan stalls the leader ribosome; high tryptophan permits termination",
     "Tryptophan methylates the promoter",
     "The trp repressor degrades mRNA when tryptophan is scarce"
    ],
@@ -1129,7 +1129,7 @@
    "q": "Why must PCR primers be designed as two distinct oligonucleotides (forward and reverse) flanking the target DNA region in opposite orientations?",
    "options": [
     "Primers bind the same DNA strand at the same end to prevent polymerase binding",
-    "Primers bind opposite strands with their 3′ ends facing inward, allowing DNA polymerase to copy the target",
+    "Primers bind opposite strands with their 3′ ends facing inward",
     "Primers bind RNA and direct reverse transcription of the entire genome",
     "Primers remove introns before DNA amplification"
    ],
@@ -1152,7 +1152,7 @@
    "sub": "Translation and Protein Synthesis",
    "q": "What is a polyribosome (polysome)?",
    "options": [
-    "Several ribosomes translating one mRNA simultaneously",
+    "Multiple ribosomes translate one mRNA at once",
     "A ribosome made of 50S and 60S subunits",
     "A storage granule of inactive tRNAs",
     "A complex of DNA polymerase and helicase"
