@@ -456,3 +456,24 @@ The four identified gaps are:
 The many partial classifications are intentional: existing records cover some mediastinal divisions, contents, azygos anatomy, thoracic duct relations and splanchnic nerve facts, but do not test the full scope of several multi-statement source items. Printed answer-key letters remain source metadata and have not been independently validated.
 
 **Cumulative item-level progress:** Chapters 1–4 now contain **84 registered source questions**. The cumulative classification is **29 direct, 40 partial and 15 gaps**. This is an item-level count for the first four chapters only; Chapters 5–25 remain to be registered.
+
+
+## 19. Item-level source register — Chapters 5–6 (Lungs and Pleura; Trachea and Bronchi)
+
+The item-level register now includes all **17 numbered questions** from Chapter 5 (printed pages 31–35) and all **16 numbered questions** from Chapter 6 (printed pages 36–39). Each entry records its printed answer-key letters, tested concept, matching normal-format and/or True/False bank IDs, and coverage classification.
+
+**Chapter 5 — Lungs and Pleura**
+- Direct: 2
+- Partial: 11
+- Gap: 4
+- Gaps: general external surface morphology of the lungs; detailed apex relations; left superior-lobe segmental anatomy; and the specific course/relations of the left pulmonary artery.
+
+**Chapter 6 — Trachea and Bronchi**
+- Direct: 5
+- Partial: 11
+- Gap: 0
+- Existing coverage is strongest for tracheal bifurcation, bronchopulmonary segments and aspiration into the right main bronchus. Many detailed topographical relations remain partial because the existing records do not test every listed relationship in the source items.
+
+The source answer keys are preserved as printed metadata, not endorsed as academically verified. The direct/partial distinction is based on the fact tested, not merely a shared chapter label.
+
+**Cumulative item-level progress:** Chapters 1–6 now contain **117 registered source questions**: **36 direct matches, 62 partial matches and 19 gaps**. This count covers the first six chapters only; Chapters 7–25 remain to be registered.
