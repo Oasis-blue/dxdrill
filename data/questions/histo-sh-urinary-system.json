@@ -1,113 +1,193 @@
 {
- "topic": "sh-urinary-system",
- "questions": [
-  {
-   "id": "h-sh-urinary-system-01a",
-   "level": 1,
-   "sub": "Histology: Urinary system",
-   "q": "Which organ is shown in this slide?",
-   "options": [
-    "Kidney (cortex)",
-    "Liver",
-    "Thyroid gland",
-    "Spleen"
-   ],
-   "answer": 0,
-   "explain": "Glomeruli surrounded by many tubule profiles are the visible clue.",
-   "image": "histo-sh-urinary-system-01.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
-  },
-  {
-   "id": "h-sh-urinary-system-01b",
-   "level": 2,
-   "sub": "Histology: Urinary system",
-   "q": "What are the round tufts surrounded by a pale space?",
-   "options": [
-    "Renal corpuscles (glomerulus with Bowman's space)",
-    "Lymphoid follicles",
-    "Islets of Langerhans",
-    "Thyroid follicles"
-   ],
-   "answer": 0,
-   "explain": "Each renal corpuscle is a glomerular tuft inside Bowman's capsule.",
-   "image": "histo-sh-urinary-system-01.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
-  },
-  {
-   "id": "h-sh-urinary-system-01c",
-   "level": 3,
-   "sub": "Histology: Urinary system",
-   "q": "How can renal cortex be told from medulla?",
-   "options": [
-    "The cortex contains glomeruli; the medulla does not",
-    "The medulla contains glomeruli",
-    "The cortex contains only collecting ducts",
-    "The cortex lacks tubules"
-   ],
-   "answer": 0,
-   "explain": "Glomeruli are found only in the cortex.",
-   "image": "histo-sh-urinary-system-01.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
-  },
-  {
-   "id": "h-sh-urinary-system-02a",
-   "level": 1,
-   "sub": "Histology: Urinary system",
-   "q": "Which organ is shown in this slide?",
-   "options": [
-    "Kidney (cortex)",
-    "Liver",
-    "Thyroid gland",
-    "Spleen"
-   ],
-   "answer": 0,
-   "explain": "Glomeruli surrounded by many tubule profiles are the visible clue.",
-   "image": "histo-sh-urinary-system-02.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
-  },
-  {
-   "id": "h-sh-urinary-system-02b",
-   "level": 2,
-   "sub": "Histology: Urinary system",
-   "q": "What are the round tufts surrounded by a pale space?",
-   "options": [
-    "Renal corpuscles (glomerulus with Bowman's space)",
-    "Lymphoid follicles",
-    "Islets of Langerhans",
-    "Thyroid follicles"
-   ],
-   "answer": 0,
-   "explain": "Each renal corpuscle is a glomerular tuft inside Bowman's capsule.",
-   "image": "histo-sh-urinary-system-02.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
-  },
-  {
-   "id": "h-sh-urinary-system-02c",
-   "level": 3,
-   "sub": "Histology: Urinary system",
-   "q": "How can renal cortex be told from medulla?",
-   "options": [
-    "The cortex contains glomeruli; the medulla does not",
-    "The medulla contains glomeruli",
-    "The cortex contains only collecting ducts",
-    "The cortex lacks tubules"
-   ],
-   "answer": 0,
-   "explain": "Glomeruli are found only in the cortex.",
-   "image": "histo-sh-urinary-system-02.jpg",
-   "verified": false,
-   "type": "mcq",
-   "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
-  }
- ]
+  "topic": "sh-urinary-system",
+  "questions": [
+    {
+      "id": "h-sh-urinary-system-01a",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "Which organ is shown in this slide?",
+      "options": [
+        "Kidney (cortex)",
+        "Liver",
+        "Thyroid gland",
+        "Spleen"
+      ],
+      "answer": 0,
+      "explain": "Glomeruli surrounded by many tubule profiles are the visible clue.",
+      "image": "histo-sh-urinary-system-01.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
+    },
+    {
+      "id": "h-sh-urinary-system-01b",
+      "level": 2,
+      "sub": "Histology: Urinary system",
+      "q": "What are the round tufts surrounded by a pale space?",
+      "options": [
+        "Renal corpuscles (glomerulus with Bowman's space)",
+        "Lymphoid follicles",
+        "Islets of Langerhans",
+        "Thyroid follicles"
+      ],
+      "answer": 0,
+      "explain": "Each renal corpuscle is a glomerular tuft inside Bowman's capsule.",
+      "image": "histo-sh-urinary-system-01.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
+    },
+    {
+      "id": "h-sh-urinary-system-01c",
+      "level": 3,
+      "sub": "Histology: Urinary system",
+      "q": "How can renal cortex be told from medulla?",
+      "options": [
+        "The cortex contains glomeruli; the medulla does not",
+        "The medulla contains glomeruli",
+        "The cortex contains only collecting ducts",
+        "The cortex lacks tubules"
+      ],
+      "answer": 0,
+      "explain": "Glomeruli are found only in the cortex.",
+      "image": "histo-sh-urinary-system-01.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
+    },
+    {
+      "id": "h-sh-urinary-system-02a",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "Which organ is shown in this slide?",
+      "options": [
+        "Kidney (cortex)",
+        "Liver",
+        "Thyroid gland",
+        "Spleen"
+      ],
+      "answer": 0,
+      "explain": "Glomeruli surrounded by many tubule profiles are the visible clue.",
+      "image": "histo-sh-urinary-system-02.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
+    },
+    {
+      "id": "h-sh-urinary-system-02b",
+      "level": 2,
+      "sub": "Histology: Urinary system",
+      "q": "What are the round tufts surrounded by a pale space?",
+      "options": [
+        "Renal corpuscles (glomerulus with Bowman's space)",
+        "Lymphoid follicles",
+        "Islets of Langerhans",
+        "Thyroid follicles"
+      ],
+      "answer": 0,
+      "explain": "Each renal corpuscle is a glomerular tuft inside Bowman's capsule.",
+      "image": "histo-sh-urinary-system-02.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
+    },
+    {
+      "id": "h-sh-urinary-system-02c",
+      "level": 3,
+      "sub": "Histology: Urinary system",
+      "q": "How can renal cortex be told from medulla?",
+      "options": [
+        "The cortex contains glomeruli; the medulla does not",
+        "The medulla contains glomeruli",
+        "The cortex contains only collecting ducts",
+        "The cortex lacks tubules"
+      ],
+      "answer": 0,
+      "explain": "Glomeruli are found only in the cortex.",
+      "image": "histo-sh-urinary-system-02.jpg",
+      "verified": false,
+      "type": "mcq",
+      "alt": "Low-power view of round glomerular tufts among many round tubule profiles, with a larger pale vessel near the centre."
+    },
+    {
+      "id": "h-sh-urinary-system-03a",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "Which specialised epithelial cells form the visceral layer of Bowman's capsule and wrap around glomerular capillaries?",
+      "options": [
+        "Podocytes",
+        "Mesangial cells",
+        "Macula densa cells",
+        "Principal cells"
+      ],
+      "answer": 0,
+      "explain": "Podocytes are specialised epithelial cells whose interdigitating foot processes form filtration slits over the glomerular capillaries.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-urinary-system-03b",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "A renal cortical tubule has tall cuboidal cells with a prominent apical brush border, making its lumen appear relatively narrow and fuzzy. Which segment is shown?",
+      "options": [
+        "Proximal convoluted tubule",
+        "Distal convoluted tubule",
+        "Thin limb of loop of Henle",
+        "Collecting duct"
+      ],
+      "answer": 0,
+      "explain": "The proximal convoluted tubule has abundant apical microvilli forming a brush border, reflecting its major role in reabsorption.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-urinary-system-03c",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "Which feature helps distinguish a distal convoluted tubule from a proximal convoluted tubule in a routine renal cortical section?",
+      "options": [
+        "A clearer, wider lumen and absence of a prominent brush border",
+        "A thick apical brush border and indistinct lumen",
+        "A stratified squamous epithelial lining",
+        "A lumen consistently filled with erythrocytes"
+      ],
+      "answer": 0,
+      "explain": "Distal convoluted tubules have fewer microvilli and a more distinct, open lumen than proximal convoluted tubules.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-urinary-system-03d",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "Which specialised region of the distal tubule forms part of the juxtaglomerular apparatus and senses tubular sodium chloride delivery?",
+      "options": [
+        "Macula densa",
+        "Podocyte slit diaphragm",
+        "Collecting-duct principal cell",
+        "Mesangial matrix"
+      ],
+      "answer": 0,
+      "explain": "Macula densa cells are specialised epithelial cells near the vascular pole that detect tubular NaCl and participate in tubuloglomerular feedback.",
+      "verified": false
+    },
+    {
+      "id": "h-sh-urinary-system-03e",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Histology: Urinary system",
+      "q": "The renal pelvis and ureter must accommodate changes in urine volume while protecting underlying tissues from urine. Which epithelium provides this lining?",
+      "options": [
+        "Transitional epithelium (urothelium)",
+        "Simple squamous epithelium",
+        "Simple columnar epithelium with cilia",
+        "Stratified columnar epithelium"
+      ],
+      "answer": 0,
+      "explain": "Urothelium is a specialised stretchable epithelium lining the renal calyces, pelvis, ureters and urinary bladder; its superficial umbrella cells form a protective barrier.",
+      "verified": false
+    }
+  ]
 }
