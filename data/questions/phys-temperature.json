@@ -420,6 +420,126 @@
           "skin vasoconstriction"
         ]
       }
+    },
+    {
+      "id": "skn-036",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 73 Body temperature",
+      "q": "A patient with severe heat stroke has a core temperature of 41.5 °C and altered mental status after prolonged exertion. Which feature best distinguishes this condition from an uncomplicated fever?",
+      "options": [
+        "The hypothalamic set point is raised by prostaglandin E2",
+        "Heat production is always increased by shivering",
+        "Thermoregulatory heat loss is overwhelmed without a raised hypothalamic set point",
+        "The hypothalamus deliberately maintains a higher set point"
+      ],
+      "answer": 2,
+      "explain": "Heat stroke is a form of hyperthermia in which heat gain or production exceeds heat dissipation; the hypothalamic set point is not reset upward as it is in fever.",
+      "verified": false,
+      "open": {
+        "q": "What distinguishes heat stroke from fever at the hypothalamic level?",
+        "accept": [
+          "set point is not raised",
+          "normal set point",
+          "heat loss overwhelmed"
+        ]
+      }
+    },
+    {
+      "id": "skn-037",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 73 Body temperature",
+      "q": "A newborn has limited ability to shiver but can generate heat through brown adipose tissue. Which mechanism is responsible?",
+      "options": [
+        "Uncoupling of oxidative phosphorylation by thermogenin (UCP1)",
+        "Inhibition of the electron transport chain by cyanide",
+        "Increased ATP synthesis through ATP synthase",
+        "Reduced mitochondrial fatty-acid oxidation"
+      ],
+      "answer": 0,
+      "explain": "Thermogenin (uncoupling protein 1) in brown-fat mitochondria permits proton re-entry without ATP synthesis, dissipating the proton gradient as heat.",
+      "verified": false,
+      "open": {
+        "q": "Which mitochondrial protein mediates non-shivering thermogenesis in brown adipose tissue?",
+        "accept": [
+          "thermogenin",
+          "UCP1",
+          "uncoupling protein 1"
+        ]
+      }
+    },
+    {
+      "id": "skn-038",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 73 Body temperature",
+      "q": "During prolonged exposure to a hot environment, a previously unacclimatised worker begins to sweat more efficiently. Which adaptation is expected with heat acclimatisation?",
+      "options": [
+        "Reduced sweat production and increased sodium loss",
+        "Earlier onset of sweating with more dilute sweat",
+        "Complete abolition of cutaneous vasodilation",
+        "A higher core-temperature threshold for sweating"
+      ],
+      "answer": 1,
+      "explain": "Heat acclimatisation increases sweating capacity and promotes earlier sweating; aldosterone-mediated sodium conservation makes sweat more dilute, reducing salt loss.",
+      "verified": false,
+      "open": {
+        "q": "What happens to sweating during heat acclimatisation?",
+        "accept": [
+          "earlier onset",
+          "more dilute sweat",
+          "increased sweating with reduced salt loss"
+        ]
+      }
+    },
+    {
+      "id": "skn-039",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 73 Body temperature",
+      "q": "A person immersed in cold water loses body heat rapidly. Which physical principle explains why this environment can cause faster heat loss than exposure to cold air at the same temperature?",
+      "options": [
+        "Water has a much greater capacity to transfer heat from the body than air",
+        "Water prevents conduction from the skin",
+        "The body loses heat only by evaporation in water",
+        "Water increases the hypothalamic set point"
+      ],
+      "answer": 0,
+      "explain": "Water conducts and convects heat away from the body much more effectively than air, so immersion can produce rapid core cooling even at comparable ambient temperatures.",
+      "verified": false,
+      "open": {
+        "q": "Why does immersion in cold water cause rapid heat loss compared with cold air?",
+        "accept": [
+          "water transfers heat more effectively",
+          "greater thermal conductivity",
+          "greater heat capacity and conductivity"
+        ]
+      }
+    },
+    {
+      "id": "skn-040",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 73 Body temperature",
+      "q": "A febrile patient is given an antipyretic drug that inhibits cyclo-oxygenase. What is the immediate thermoregulatory consequence?",
+      "options": [
+        "The hypothalamic set point rises further",
+        "Prostaglandin E2 synthesis falls and the set point returns toward normal",
+        "Sweat glands become permanently inhibited",
+        "Brown adipose tissue thermogenesis becomes obligatory"
+      ],
+      "answer": 1,
+      "explain": "Cyclo-oxygenase inhibition reduces hypothalamic prostaglandin E2 production, reversing the fever-associated elevation in the thermoregulatory set point and allowing heat-loss responses.",
+      "verified": false,
+      "open": {
+        "q": "How do cyclo-oxygenase-inhibiting antipyretics reduce fever?",
+        "accept": [
+          "reduce prostaglandin E2",
+          "inhibit prostaglandin synthesis",
+          "lower the hypothalamic set point"
+        ]
+      }
     }
   ]
 }
