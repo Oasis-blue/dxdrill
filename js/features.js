@@ -29,7 +29,7 @@
         if (DX.features.onChange) DX.features.onChange();
       }).catch(function () { });
     },
-    render: render, onClick: onClick, leave: function () { }
+    render: render, onClick: onClick, leave: function () { }, qualityHtml: function () { return qualityHtml(); }
   };
   function repaint() { if ((location.hash || "") === "#features" && app) render(app); }
   function render(a) {
@@ -40,7 +40,7 @@
       '<section class="stack">' + LIST.map(function (x) {
         var on = F.map[x[0]] === true || (F.map[x[0]] === undefined && !!FALLBACK[x[0]]);
         return '<article class="card"><h2>' + esc(x[1]) + '</h2><p>' + esc(x[2]) + '</p><p><b>' + (on ? "Shown to students" : "Hidden from students") + '</b></p><button class="btn ' + (on ? "ghost" : "primary") + '" data-act="set" data-key="' + x[0] + '" data-on="' + (on ? "0" : "1") + '"' + (F.busy ? " disabled" : "") + '>' + (on ? "Hide" : "Show to students") + '</button></article>';
-      }).join("") + '</section>' + settingsHtml() + activityHtml() + visitsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
+      }).join("") + '</section>' + settingsHtml() + activityHtml() + qualityHtml() + visitsHtml() + '<p class="hint">Practice, Hall mode, Leaderboards, accounts, How to start, Feedback and About are always on.</p></div>';
   }
   /* Activity: who answers a lot, and which topics students are finishing. Real data from the answers table; admin accounts are left out. */
   function topicMap() {
@@ -87,6 +87,58 @@
       missedHtml(a.missed) +
       '<div class="row tight"><button class="btn ghost small" data-act="refact">Refresh</button></div></section>';
   }
+  /* ---------- question quality check (runs locally on the loaded question bank) ---------- */
+  var QLABEL = { long: "Correct option is much longer than the others", weak: "A wrong option is very short next to the correct one", leak: "The question text contains the answer", stem: "Looks like an explanation inside the question", aota: "Uses all/none of the above", dup: "Two options are the same" };
+  function avg(a) { return a.length ? a.reduce(function (x, y) { return x + y; }, 0) / a.length : 0; }
+  function qflags(q) {
+    var fl = [];
+    if (!q.options || q.options.length < 2 || typeof q.answer !== "number" || q.options[q.answer] == null) return { fl: fl, longest: false, ok: false };
+    var opts = q.options.map(String), L = opts.map(function (o) { return o.trim().length; }), c = L[q.answer];
+    var others = L.filter(function (x, i) { return i !== q.answer; }), mean = avg(others), max = Math.max.apply(null, others), min = Math.min.apply(null, others);
+    var longest = c > max;
+    if (longest && c >= 1.35 * mean && c - mean >= 12) fl.push("long");
+    if (!longest && min < 0.35 * c && c >= 30) fl.push("weak");
+    var ans = opts[q.answer].trim().toLowerCase(), stem = String(q.q || "").toLowerCase();
+    if (ans.length >= 10 && stem.indexOf(ans) > -1) fl.push("leak");
+    if (/\b(explanation|rationale|answer|note)\s*:/i.test(q.q || "") || String(q.q || "").length > 380) fl.push("stem");
+    if (opts.some(function (o) { return /\b(all|none) of the above\b|\bboth [a-d] and [a-d]\b/i.test(o); })) fl.push("aota");
+    var seen = {}, dup = false;
+    opts.forEach(function (o) { var k = o.trim().toLowerCase(); if (seen[k]) dup = true; seen[k] = 1; });
+    if (dup) fl.push("dup");
+    return { fl: fl, longest: longest, ok: true };
+  }
+  function qualityHtml() {
+    var qs = DX.questions || [], tf = DX.tfStems || [];
+    if (!qs.length) return "";
+    var cacheKey = qs.length + ":" + tf.length;
+    if (!F.qual || F.qual.key !== cacheKey) {
+      var files = {}, flagged = [], tot = 0, lng = 0;
+      qs.forEach(function (q) {
+        var r = qflags(q); if (!r.ok) return;
+        tot++; if (r.longest) lng++;
+        var f = files[q.file || "?"] = files[q.file || "?"] || { n: 0, lng: 0 }; f.n++; if (r.longest) f.lng++;
+        if (r.fl.length) flagged.push({ q: q, fl: r.fl });
+      });
+      var tfBad = tf.filter(function (s) { var t = s.items.filter(function (x) { return x.answer; }).length; return t === 0 || t === s.items.length; }).length;
+      F.qual = { key: cacheKey, tot: tot, lng: lng, files: files, flagged: flagged, tfBad: tfBad };
+    }
+    var Q = F.qual, pct = Q.tot ? Math.round(100 * Q.lng / Q.tot) : 0;
+    var fileRows = Object.keys(Q.files).map(function (k) { var f = Q.files[k]; return { k: k, n: f.n, p: Math.round(100 * f.lng / f.n) }; })
+      .filter(function (x) { return x.n >= 8; }).sort(function (a, b) { return b.p - a.p; }).slice(0, 10)
+      .map(function (x) { return '<tr><td>' + esc(x.k) + '</td><td class="n">' + x.n + '</td><td class="n"><b' + (x.p >= 45 ? ' style="color:var(--bad,#b3261e)"' : "") + '>' + x.p + '%</b></td></tr>'; }).join("");
+    var shown = Q.flagged.slice(0, F.qualAll ? 500 : 40).map(function (x) {
+      var q = String(x.q.q || "");
+      return '<tr><td>' + esc(String(x.q.id)) + '</td><td>' + x.fl.map(function (k) { return '<span class="chip">' + esc(QLABEL[k]) + '</span>'; }).join(" ") + '</td><td>' + esc(q.length > 110 ? q.slice(0, 110) + "…" : q) + '</td></tr>';
+    }).join("");
+    return '<section class="section stack"><h2>Question quality check</h2>' +
+      '<p class="hint">Checks every loaded multiple-choice question for patterns that can make an answer easy to guess. It runs in this browser; nothing is sent anywhere. Treat flags as review prompts, not proof that a question is wrong.</p>' +
+      '<p>The correct option is the <b>longest</b> in <b>' + pct + '%</b> of ' + Q.tot + ' eligible questions. With four evenly written options that would be about 25%; a higher rate may indicate a pattern worth reviewing.</p>' +
+      (fileRows ? '<h3>Files where the correct option is most often the longest</h3><div style="overflow-x:auto"><table class="lvt"><thead><tr><th>File</th><th class="n">Questions</th><th class="n">Longest is correct</th></tr></thead><tbody>' + fileRows + '</tbody></table></div>' : "") +
+      '<h3>' + Q.flagged.length + ' question' + (Q.flagged.length === 1 ? "" : "s") + ' to review</h3>' +
+      (Q.flagged.length ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Id</th><th>Why</th><th>Question</th></tr></thead><tbody>' + shown + '</tbody></table></div>' +
+        '<div class="row tight">' + (Q.flagged.length > 40 && !F.qualAll ? '<button class="btn ghost small" data-act="qualall">Show more</button>' : "") + '<button class="btn ghost small" data-act="copyflag">Copy the ids</button></div>' : '<p class="muted">Nothing flagged in the loaded questions.</p>') +
+      (Q.tfBad ? '<p class="note bad">' + Q.tfBad + ' true/false stem' + (Q.tfBad === 1 ? ' has' : 's have') + ' only true or only false statements. Review their balance.</p>' : "") + '</section>';
+  }
   function pagesHtml(list) {
     if (list === null || list === undefined) return '<p class="hint">Run supabase/update-17.sql to see which pages people open.</p>';
     if (!list.length) return '<h3>Pages people open (last 14 days)</h3><p class="muted">Nothing recorded yet. This starts counting after update 17.</p>';
@@ -125,6 +177,15 @@
       Promise.all(SETTINGS.map(function (s) { var el = document.getElementById("st-" + s[0]); var v = parseInt(el && el.value, 10); if (!v) return null; return C().sb.rpc("admin_set_setting", { p_key: s[0], p_val: v }).then(function (r) { if (r.error) throw r.error; F.settings[s[0]] = Math.min(v, s[2]); }); }))
         .then(function () { F.busy = false; F.saved = "Saved."; repaint(); })
         .catch(function () { F.busy = false; F.err = "That did not save. Run supabase/update-10.sql first, then try again."; repaint(); });
+      return;
+    }
+    if (e.target.closest && e.target.closest("[data-act='qualall']")) { F.qualAll = true; repaint(); return; }
+    var cf = e.target.closest ? e.target.closest("[data-act='copyflag']") : null;
+    if (cf && F.qual) {
+      var txt = F.qual.flagged.map(function (x) { return x.q.id; }).join("\n");
+      var done = function () { cf.textContent = "Copied"; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, function () { window.prompt("Copy these ids:", txt); });
+      else window.prompt("Copy these ids:", txt);
       return;
     }
     if (e.target.closest && e.target.closest("[data-act='refact']")) { F.act = undefined; repaint(); return; }
