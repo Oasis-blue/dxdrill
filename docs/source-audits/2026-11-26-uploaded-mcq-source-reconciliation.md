@@ -353,3 +353,18 @@ A further five original questions were added in each subject, prioritising an un
 The three updated files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted expansion, not a claim that every uploaded source has been exhaustively reconciled.
 
 **Cumulative source-reconciliation additions: 133 original questions** (118 previously recorded plus these 15).
+
+
+## Female genital histology, dialysis/diuretics and vitamin applications — 27 November 2026
+
+Five original MCQs were added to each of three topic banks:
+
+**Anatomy / Histology — female genital system (6 → 11):** antral follicle identification, granulosa cells, corpus luteum, progesterone-driven secretory endometrium and uterine-tube epithelium.
+
+**Physiology — dialysis and diuretics (23 → 28):** urgent dialysis indications, loop and thiazide diuretic mechanisms/adverse effects, mineralocorticoid receptor antagonism and the early venodilator effect of intravenous furosemide.
+
+**Medical Biochemistry — vitamins and coenzymes (43 → 48):** vitamin D deficiency and rickets, warfarin inhibition of vitamin K epoxide reductase, vitamin E antioxidant function, dual enzyme defects in B12 deficiency and vitamin A-dependent epithelial maintenance.
+
+All three files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted topic expansion rather than exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 148 original questions** (133 previously recorded plus these 15).
