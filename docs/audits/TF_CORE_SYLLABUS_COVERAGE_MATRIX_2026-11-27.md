@@ -3,7 +3,7 @@
 **Date:** 27 November 2026  
 **Question-bank source:** `data/questions/tf-core-expansion.json`  
 **Source blob SHA:** `79c468b867b77fcfa88368c832ca7d20e729b90a`  
-**Bank scope:** 478 stems / 1,912 true-false statements. Counts below include both verified and draft/unverified stems.
+**Bank scope:** 493 stems / 1,972 true-false statements. Counts below include both verified and draft/unverified stems.
 
 ## Scope and source-of-truth note
 
@@ -23,9 +23,9 @@ The user's three-subject structure is retained: **Anatomy includes Histology and
 
 | Subject | Stems | Share of three core subjects |
 |---|---:|---:|
-| Anatomy (including Histology and Embryology) | 142 | 32.3% |
-| Physiology | 152 | 34.5% |
-| Medical Biochemistry | 146 | 33.2% |
+| Anatomy (including Histology and Embryology) | 147 | 29.8% |
+| Physiology | 157 | 31.8% |
+| Medical Biochemistry | 151 | 30.6% |
 | **Core-subject total** | **440** | **100%** |
 
 The additional 38 records are outside the three core subjects: 20 Pathology and 18 Pharmacology/therapeutics records. They are excluded from the core-subject denominator.
@@ -42,10 +42,10 @@ NUC course anchors include ANA 201a/201b (upper and lower limbs), ANA 202a/202b 
 | Systemic histology | 27 | Present, but individual systems remain thin |
 | General embryology | 10 | Two stems per topic |
 | Systemic embryology | 20 | Uneven; musculoskeletal development has two stems |
-| Radiological anatomy | 6 | **Still thin; one stem in each of six topics** |
-| Genetics | 4 | **Very thin; one of five topics remains empty** |
+| Radiological anatomy | 7 | Still thin; topic-level depth remains low |
+| Genetics | 8 | Still thin; each of the five topics now has at least one stem |
 
-**Interpretation:** These counts use each question's current canonical topic assignment, not its historical ID prefix. Round 22 added two genetics stems and two imaging-interpretation scenarios; those scenarios remain tagged to gross thorax and abdomen/pelvis topics. Round 23 added two stems to radiological anatomy and Round 24 added four more, so the area now has six tagged stems across six topics. Common genetic disorders also gained its first stem in Round 24; basic genetic counselling remains empty. Genetics material within Medical Biochemistry is not a substitute for Anatomy genetics objectives. Systemic histology, systemic embryology and regional gross anatomy require topic-by-topic depth review.
+**Interpretation:** These counts use each question's current canonical topic assignment, not its historical ID prefix. Round 22 added two genetics stems and two imaging-interpretation scenarios; those scenarios remain tagged to gross thorax and abdomen/pelvis topics. Round 23 added two stems to radiological anatomy, Round 24 added four more, and Round 25 added a second musculoskeletal radiology stem. Round 24 added common genetic disorders; Round 25 added the first basic genetic counselling stem and further stems on chromosomes, meiosis and inheritance. All five Anatomy genetics topics now have at least one stem, but each remains below the six-stem target. Genetics material within Medical Biochemistry is not a substitute for Anatomy genetics objectives. Systemic histology, systemic embryology and regional gross anatomy require topic-by-topic depth review.
 
 ## 4. Physiology coverage
 
@@ -113,11 +113,11 @@ Round 22 added 15 stems / 60 statements, five per core subject, selected from th
 - **Physiology:** visual and auditory physiology, ECG and spirometry interpretation, and hypothalamic-pituitary integration.
 - **Medical Biochemistry:** nutritional assessment, micronutrient deficiency, fed/fasting regulation, inter-organ fuel exchange, and biochemical genetics.
 
-Round 23 added 15 stems / 60 statements, five per core subject. Round 24 added another 15 stems / 60 statements, five per core subject. The next batch should deepen the still-thin areas rather than repeat Rounds 22–24 topics. The current topic-by-topic inventory is the denominator for selecting new stems. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
+Round 23 added 15 stems / 60 statements, five per core subject. Round 24 added another 15 stems / 60 statements, five per core subject. Round 25 has continued this approach; subsequent batches should deepen still-thin areas rather than repeat Rounds 22–25 topics. The current topic-by-topic inventory is the denominator for selecting new stems. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
 
 ## 8. Topic-depth check against the six-stem target
 
-Across the 119 Anatomy, Physiology and Medical Biochemistry topics in `data/curriculum.json`, **96 currently have fewer than six stems**, including **one topic with no stems**. By subject: Anatomy 47 topics below six (one empty), Physiology 49 below six (none empty), and Medical Biochemistry none below six. The remaining empty topic is `gen-basic-genetic-counselling`. This is the remaining long-term expansion target; Round 24 is one batch, not completion of the six-stem goal.
+Across the 119 Anatomy, Physiology and Medical Biochemistry topics in `data/curriculum.json`, **96 currently have fewer than six stems**, and **no topic is empty**. By subject: Anatomy 47 topics below six (none empty), Physiology 49 below six (none empty), and Medical Biochemistry none below six. Round 25 filled the last previously empty topic, `gen-basic-genetic-counselling`, but it now has only one stem. The six-stem target remains a substantial long-term expansion task.
 
 ## 9. Round 23 completed
 
@@ -149,3 +149,13 @@ On 27 November 2026, 98 existing question records with legacy/non-canonical topi
 - Counts include draft/unverified questions. They indicate that content exists, not that it is academically correct or adequate.
 - No item-level correctness review was performed in this syllabus-mapping pass.
 - The NUC CCMAS permits institution-level curriculum design within its national framework; therefore, obtain FUHSO's approved current course outline before labelling this matrix a definitive FUHSO syllabus audit.
+
+
+## 13. Round 25 completed
+
+Round 25 added 15 stems / 60 statements, five per core subject:
+- **Anatomy:** basic genetic counselling (the last previously empty core topic), musculoskeletal radiographic projections, meiotic recombination, X-linked inheritance and karyotype interpretation.
+- **Physiology:** altitude acclimatisation, renal tubular function tests, bladder storage/voiding coordination, urine concentration and haemodialysis membrane transport.
+- **Medical Biochemistry:** lipid structure, catecholamine synthesis/degradation, muscle fuel selection, fibrinolysis and membrane lipid asymmetry/fluidity.
+
+All 15 records use existing canonical topic IDs, contain four statements with mixed true/false keys, include direct HTTPS references and remain draft/unverified. After Round 25, the 493-stem bank has 1,972 statements. The core subject totals are Anatomy 147, Physiology 157 and Medical Biochemistry 151. Across 119 core topics, 96 remain below six stems, but none is empty. Biochemistry remains at or above six stems in every topic; Anatomy and Physiology still have 47 and 49 topics below six, respectively.
