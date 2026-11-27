@@ -12,6 +12,9 @@
 | Total statements | 1,852 |
 | Statements per stem | 4 throughout |
 | Duplicate IDs | 0 |
+| Duplicate stem-wording groups | 22 (46 records involved) |
+| Records with at least one direct HTTPS URL | 313 |
+| Records with no direct HTTPS URL | 150 |
 | Records with `type: "tf"` | 463 |
 | Records with at least 2 reference entries | 461 |
 | Records with fewer than 2 reference entries | 2 |
@@ -65,7 +68,7 @@ The initial audit identified three metadata/reference issues. All have now been 
 2. **15 reference-free Round 13 records:** supplied with two subject-appropriate textbook references each.
 3. **107 single-reference records:** retained their existing source and received a second subject-appropriate textbook reference.
 
-The current inventory shows that every record has at least one reference entry; 461 have two or more entries. Some older records include textbook titles alongside their HTTPS links, so the reference-entry count is not the same as the count of direct URLs. These are textbook-level references, not claim-by-claim citations. Adding references does not establish that every statement is correct and does not itself confer verified status.
+The current inventory shows that every record has at least one reference entry and 461 have two or more entries. However, only 313 records have at least one direct HTTPS source URL; 150 currently list textbook titles without a direct URL. This is a source-link provenance gap, not proof that the questions lack textbooks or are medically incorrect. Separately, 22 stem-wording groups are duplicated (46 records affected; 24 excess occurrences). These duplicates pre-date Round 23; none of the 15 new stems duplicates an existing stem heading. These are textbook-level references, not claim-by-claim citations. Adding references does not establish that every statement is correct and does not itself confer verified status.
 
 ## Round 22 expansion
 
@@ -93,6 +96,8 @@ Fifteen new stems (five each in Anatomy, Physiology and Medical Biochemistry) we
 The source bank's 98 legacy topic assignments were reviewed individually and remapped to the closest current canonical topic based on each stem's content. `docs/topic-ids.txt` was synchronized with `data/curriculum.json` (358 IDs in both). A fresh bank-wide check found 0 invalid topic assignments across all 448 records. Question content and verification statuses were preserved. The True/False checker was also strengthened to reject a new import if any already-loaded bank record has a topic ID absent from the canonical curriculum.
 
 ## Recommended next step
+
+Resolve the 150 missing direct-URL cases by adding topic-appropriate source links after checking that each link supports the associated material. Review the 22 duplicated stem-wording groups for genuine overlap; retain separate stems only where their statement-level learning objectives are meaningfully different. Do not promote verification status during metadata-only cleanup.
 
 Build a syllabus matrix at the learning-objective/subtopic level for Anatomy, Physiology and Medical Biochemistry using the current approved FUHSO/MDCN curriculum as the denominator. Mark each objective as absent, thin, adequate or needing expert review. The next 15-stem expansion should then target confirmed gaps, with five stems per core subject.
 
