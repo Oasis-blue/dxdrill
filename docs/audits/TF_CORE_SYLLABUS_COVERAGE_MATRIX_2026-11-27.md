@@ -2,7 +2,7 @@
 
 **Date:** 27 November 2026  
 **Question-bank source:** `data/questions/tf-core-expansion.json`  
-**Source blob SHA:** `1b49dedd12e2401d6a8f94e1554bdca63dc30a40`  
+**Source blob SHA:** `79c468b867b77fcfa88368c832ca7d20e729b90a`  
 **Bank scope:** 478 stems / 1,912 true-false statements. Counts below include both verified and draft/unverified stems.
 
 ## Scope and source-of-truth note
