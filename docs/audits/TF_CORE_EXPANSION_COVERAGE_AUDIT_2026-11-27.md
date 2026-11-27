@@ -26,7 +26,7 @@
 | Subject | Stems |
 |---|---:|
 | Anatomy (gross, histology, embryology, genetics and radiological anatomy) | 137 |
-| Physiology | 142 |
+| Physiology | 147 |
 | Medical Biochemistry | 141 |
 | Pathology/pharmacology/other existing material | 38 |
 
@@ -46,14 +46,14 @@ The 38 additional records are not part of the three core subject totals; they in
 
 **Physiology**
 - `pb`: 11
-- `pc`: 16
+- `pc`: 17
 - `pn`: 1
 - `pe`: 8
 - `pg`: 5
-- `phys`: 57
-- `pi`: 14
+- `phys`: 59
+- `pi`: 15
 - `pl`: 10
-- `pp`: 5
+- `pp`: 6
 - `pr`: 15
 
 **Medical Biochemistry**
@@ -64,7 +64,7 @@ The 38 additional records are not part of the three core subject totals; they in
 
 The initial audit identified three metadata/reference issues. All have now been corrected in the source JSON:
 
-1. **30 missing `type` fields:** restored to `"tf"`; all 433 records now carry the type.
+1. **30 missing `type` fields:** restored to `"tf"`; all 463 records now carry the type.
 2. **15 reference-free Round 13 records:** supplied with two subject-appropriate textbook references each.
 3. **107 single-reference records:** retained their existing source and received a second subject-appropriate textbook reference.
 
@@ -83,7 +83,7 @@ Round 22 added 15 stems / 60 statements, five per core subject, targeting the sy
 - **Anatomy:** 137 stems span general and regional anatomy, histology, embryology, genetics and radiological anatomy. Counts alone do not prove balanced coverage. Map regional gross anatomy (head and neck, thorax, abdomen, pelvis/perineum, upper and lower limbs), neuroanatomy, organ-system histology, general histology, and early-to-late embryology as separate learning-objective groups.
 - **Physiology:** 147 stems span general, blood/body fluids, cardiovascular, respiratory, renal, gastrointestinal, endocrine, reproductive, neuro-locomotor, skin and temperature domains. Map mechanisms and practical interpretation objectives, especially cardiovascular regulation, renal handling/acid-base, respiratory gas exchange, neurophysiology and reproductive physiology.
 - **Medical Biochemistry:** 141 stems span general and applied biochemistry, including biomolecules, enzymes/bioenergetics, metabolism, amino-acid/protein metabolism, vitamins, nucleotides, haem, molecular biology and clinical applications. Explicitly map pathway integration and regulation, molecular biology/genetics, nutrition/minerals, inborn errors, and laboratory interpretation.
-- **Additional pathology/pharmacology material:** 39 stems exist in the same file. Keep these outside the three-core-subject denominator and map them to their own syllabus when that expansion is resumed.
+- **Additional pathology/pharmacology material:** 38 stems exist in the same file. Keep these outside the three-core-subject denominator and map them to their own syllabus when that expansion is resumed.
 
 See the [syllabus-to-bank coverage matrix](TF_CORE_SYLLABUS_COVERAGE_MATRIX_2026-11-27.md) for NUC CCMAS course mapping, domain counts and remaining priorities.
 
@@ -108,5 +108,5 @@ Build a syllabus matrix at the learning-objective/subtopic level for Anatomy, Ph
 ## Audit limitations
 
 - Topic slugs and ID prefixes are useful indexing signals but are not a substitute for the official syllabus taxonomy.
-- This pass checked record structure, metadata, reference counts and broad subject distribution; it did not fact-check all 1,732 statements.
+- This pass checked record structure, metadata, reference counts and broad subject distribution; it did not fact-check all 1,852 statements.
 - A complete syllabus-level audit requires the exact curriculum/syllabus document and a learning-objective mapping; no claim of full syllabus coverage is made here.
