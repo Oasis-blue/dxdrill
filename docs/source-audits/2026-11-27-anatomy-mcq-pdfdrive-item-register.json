@@ -7,7 +7,7 @@
     "totalPages": 145
   },
   "registerVersion": 1,
-  "method": "Printed numbered questionnaire items and printed answer-key letters are captured separately. Status is judged against the actual learning objective tested by the source item, not merely a shared topic label. direct = existing record tests substantially the same fact; partial = only some of the source item's tested detail is represented; gap = no suitable existing record identified in the inspected relevant banks. This first tranche is a manual concept-level matching pilot and should be extended chapter by chapter.",
+  "method": "Printed numbered questionnaire items and printed answer-key letters are captured separately. Status is judged against the actual learning objective tested by the source item, not merely a shared topic label. direct = existing record tests substantially the same fact; partial = only some of the source item's tested detail is represented; gap = no suitable existing record identified in the inspected relevant banks. Chapters are manually matched against the live normal MCQ and True/False banks; printed answer-key letters are recorded as source metadata and are not endorsed as academically correct.",
   "chapters": [
     {
       "chapter": 1,
@@ -296,6 +296,314 @@
           "matchedBankIds": [
             "GRTH-04",
             "GRTH-51"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "Abdomino-Pelvic Wall and Diaphragm",
+      "pages": "17–22",
+      "sourceQuestionCount": 26,
+      "items": [
+        {
+          "question": 1,
+          "concept": "Lumbar attachments of diaphragm: arcuate ligaments and crura",
+          "printedAnswerKey": "a,c",
+          "matchedBankIds": [
+            "APP-55",
+            "APP-127",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 2,
+          "concept": "Central tendon morphology and caval opening",
+          "printedAnswerKey": "a,b,d",
+          "matchedBankIds": [
+            "GRTH-42",
+            "APP-53",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 3,
+          "concept": "Diaphragmatic apertures and transmitted structures",
+          "printedAnswerKey": "b,c,d,e",
+          "matchedBankIds": [
+            "APP-54",
+            "APP-218",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 4,
+          "concept": "Effect of diaphragmatic contraction on the aorta and aortic hiatus",
+          "printedAnswerKey": "e",
+          "matchedBankIds": [
+            "APP-54",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 5,
+          "concept": "Structures transmitted through aortic hiatus",
+          "printedAnswerKey": "a,c,d,e",
+          "matchedBankIds": [
+            "APP-54",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 6,
+          "concept": "Structures transmitted through oesophageal hiatus",
+          "printedAnswerKey": "c,d,e",
+          "matchedBankIds": [
+            "APP-218",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 7,
+          "concept": "Level, position and mobility of oesophageal hiatus",
+          "printedAnswerKey": "b,d",
+          "matchedBankIds": [
+            "APP-218",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 8,
+          "concept": "Arterial supply of diaphragm",
+          "printedAnswerKey": "b,c,e",
+          "matchedBankIds": [
+            "APP-219",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 9,
+          "concept": "Usual origins of inferior phrenic arteries",
+          "printedAnswerKey": "b,d",
+          "matchedBankIds": [],
+          "status": "gap",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 10,
+          "concept": "Venous drainage of superior diaphragmatic surface",
+          "printedAnswerKey": "c,d",
+          "matchedBankIds": [],
+          "status": "gap",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 11,
+          "concept": "Motor and sensory innervation of diaphragm",
+          "printedAnswerKey": "a,c",
+          "matchedBankIds": [
+            "GRTH-09",
+            "tf-gr-diaphragm-001"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 12,
+          "concept": "External oblique attachments and aponeurotic insertion",
+          "printedAnswerKey": "a,b",
+          "matchedBankIds": [
+            "tf-gr-abdominal-wall-001"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 13,
+          "concept": "Internal oblique attachments and insertions",
+          "printedAnswerKey": "a,b",
+          "matchedBankIds": [
+            "APP-220",
+            "APP-221",
+            "tf-gr-abdominal-wall-001"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 14,
+          "concept": "Anterior wall of inguinal canal",
+          "printedAnswerKey": "d,e",
+          "matchedBankIds": [
+            "APP-04",
+            "tf-gr-inguinal-canal-002",
+            "tf-gr-abdominal-wall-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 15,
+          "concept": "Posterior wall of inguinal canal",
+          "printedAnswerKey": "a,b",
+          "matchedBankIds": [
+            "tf-gr-inguinal-canal-002",
+            "tf-gr-abdominal-wall-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 16,
+          "concept": "Contents of male inguinal canal",
+          "printedAnswerKey": "a,c",
+          "matchedBankIds": [
+            "APP-06",
+            "tf-gr-inguinal-canal-002"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 17,
+          "concept": "Contents of female inguinal canal",
+          "printedAnswerKey": "c,e",
+          "matchedBankIds": [
+            "APP-06",
+            "APP-82",
+            "tf-gr-inguinal-canal-002"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 18,
+          "concept": "Formation and extent of linea alba",
+          "printedAnswerKey": "b,c",
+          "matchedBankIds": [
+            "APP-220",
+            "tf-gr-abdominal-wall-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 19,
+          "concept": "Surface region immediately inferior to xiphoid process",
+          "printedAnswerKey": "a",
+          "matchedBankIds": [],
+          "status": "gap",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 20,
+          "concept": "Inferior boundary landmarks of anterior abdominal wall",
+          "printedAnswerKey": "a,d,e",
+          "matchedBankIds": [],
+          "status": "gap",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 21,
+          "concept": "Location and definition of linea semilunaris",
+          "printedAnswerKey": "c",
+          "matchedBankIds": [],
+          "status": "gap",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 22,
+          "concept": "Constituents of posterior rectus sheath above arcuate line",
+          "printedAnswerKey": "a,d,e",
+          "matchedBankIds": [
+            "APP-221",
+            "tf-gr-abdominal-wall-001"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 23,
+          "concept": "Origin of inferior epigastric artery",
+          "printedAnswerKey": "c",
+          "matchedBankIds": [
+            "APP-93"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 24,
+          "concept": "Arterial supply of rectus abdominis",
+          "printedAnswerKey": "c,d",
+          "matchedBankIds": [
+            "APP-03",
+            "APP-219"
+          ],
+          "status": "partial",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 25,
+          "concept": "Nerves passing anterior to quadratus lumborum",
+          "printedAnswerKey": "a,c,d",
+          "matchedBankIds": [
+            "APP-236",
+            "tf-gr-posterior-abdominal-wall-002"
+          ],
+          "status": "direct",
+          "normalBankReviewed": true,
+          "trueFalseBankReviewed": true
+        },
+        {
+          "question": 26,
+          "concept": "Muscles forming the right flank of the anterolateral abdominal wall",
+          "printedAnswerKey": "b,c,d",
+          "matchedBankIds": [
+            "tf-gr-abdominal-wall-001"
           ],
           "status": "partial",
           "normalBankReviewed": true,
