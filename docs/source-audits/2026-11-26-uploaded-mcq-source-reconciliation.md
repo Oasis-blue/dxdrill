@@ -473,3 +473,18 @@ Five original MCQs were added to each of three existing curriculum topic banks. 
 These are within the existing Anatomy, Physiology and Medical Biochemistry curriculum banks, rather than additions of unrelated advanced subjects. All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This remains targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
 
 **Cumulative source-reconciliation additions: 253 original questions** (238 previously recorded plus these 15).
+
+
+## Urinary histology, accessory-organ physiology and nucleic-acid biochemistry — 27 November 2026
+
+Five original MCQs were added to each of three existing curriculum topic banks after checking the canonical topic registry and current bank contents:
+
+**Anatomy / Histology — urinary system (11 → 16; topic ID: `sh-urinary-system`):** glomerular filtration barrier, mesangial cells, thin limb epithelium, collecting-duct principal cells and intercalated cells.
+
+**Physiology — accessory organs (4 → 9; topic ID: `pi-accessory-organs`):** enteropeptidase activation of pancreatic zymogens, pancreatic lipase, bile-salt micelles, salivary amylase and hepatic bile-acid synthesis.
+
+**Medical Biochemistry — nucleotides and nucleic acids (43 → 48; topic ID: `bc-nucleotides-and-nucleic-acids`):** RNA polymerase II initiation, mRNA polyadenylation, genetic-code degeneracy, PCR primer function and pre-mRNA splicing.
+
+Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. These additions are targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 268 original questions** (253 previously recorded plus these 15).
