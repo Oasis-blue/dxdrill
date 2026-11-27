@@ -277,3 +277,27 @@ Both live thoracic banks were checked for existing coverage before additions. Br
 All six new records are marked unverified/draft pending academic review. Existing records and IDs were preserved. Post-write live re-fetch and JSON parsing confirmed **97 normal thoracic MCQs with 97 unique IDs** and **500 T/F records with 500 unique IDs**. All six new IDs were present.
 
 **Coverage qualification:** the 116 printed questions were reviewed as a chapter batch against both banks, with the additions above selected after checking for overlap. This is not yet a complete item-by-item match register; exact source-question-to-bank-ID mapping and residual gaps still need to be recorded. No claim is made that all 116 source questions are represented as individual DxDrill records.
+
+
+## 11. Dual-bank batch — Chapters 9–14 (Stomach through Gallbladder and Biliary System)
+
+Reviewed the six consecutive digestive-region chapters in the source, including their printed questionnaires and answer-key material:
+- Chapter 9: Stomach
+- Chapter 10: Duodenum, Jejunum and Ileum
+- Chapter 11: Colon
+- Chapter 12: Rectum and Anus
+- Chapter 13: Liver
+- Chapter 14: Gallbladder and Excretory System of the Liver
+
+The existing abdomen/pelvis normal MCQ bank was checked first. It already contains substantial coverage of stomach relations and blood supply, duodenal parts and relations, jejunum/ileum distinctions, colonic features and watershed anatomy, rectal/anal canal anatomy, portal-systemic connections, liver landmarks and portal triad, and cystic duct/artery anatomy. No normal MCQ was added in this pass because the reviewed candidate facts were already represented adequately or would have duplicated existing questions.
+
+**True/False additions — `data/questions/tf-core-expansion.json`**
+- `tf-gr-small-intestine-001`: duodenal relations, ligament of Treitz, jejunal/ileal vascular pattern, Peyer's patches and mesenteric root.
+- `tf-gr-colon-001`: taeniae coli, appendicular artery, peritoneal relations and colonic arterial supply.
+- `tf-gr-rectum-001`: rectal arterial supply, peritoneal covering, pectinate line and sphincters.
+- `tf-gr-liver-003`: bare area, portal triad, hepatic veins, functional division and caudate lobe.
+- `tf-gr-biliary-001`: extrahepatic ducts, cystic artery, hepatocystic triangle, Heister folds and gallbladder surface marking.
+
+All five additions are marked unverified/draft pending academic review. Existing records and IDs were preserved. The T/F file was re-fetched and parsed after the write: **505 records, 505 unique IDs**, with all five new IDs present.
+
+**Coverage qualification:** Chapters 9–14 were reviewed against the live banks as a chapter batch. This does not yet provide a full item-by-item mapping of every printed question to exact existing bank IDs, and it is not a claim that each source question has an individual DxDrill counterpart. The source-to-bank register remains outstanding.
