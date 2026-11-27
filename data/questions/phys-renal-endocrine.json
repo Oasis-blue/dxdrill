@@ -1,442 +1,522 @@
 {
- "topic": "phys-renal-endocrine",
- "questions": [
-  {
-   "id": "rend-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Aldosterone",
-   "q": "Which cells of the adrenal cortex secrete aldosterone?",
-   "options": [
-    "Zona fasciculata cells",
-    "Chromaffin cells of the medulla",
-    "Zona glomerulosa cells",
-    "Zona reticularis cells"
-   ],
-   "answer": 2,
-   "explain": "Aldosterone is the main mineralocorticoid, made in the outer cortical zone (glomerulosa).",
-   "verified": false,
-   "open": {
-    "q": "Which cells of the adrenal cortex secrete aldosterone?",
-    "accept": [
-     "zona glomerulosa",
-     "glomerulosa"
-    ]
-   }
-  },
-  {
-   "id": "rend-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Aldosterone",
-   "q": "What are the main renal effects of aldosterone?",
-   "options": [
-    "It increases water excretion only",
-    "It increases sodium and water reabsorption and potassium excretion",
-    "It increases bicarbonate excretion only",
-    "It increases potassium reabsorption and sodium excretion"
-   ],
-   "answer": 1,
-   "explain": "It acts on principal cells of the late distal tubule and cortical collecting duct, raising sodium reabsorption and potassium secretion.",
-   "verified": false,
-   "open": {
-    "q": "What are the main renal effects of aldosterone?",
-    "accept": [
-     "increases sodium reabsorption and potassium excretion",
-     "retains sodium and excretes potassium"
-    ]
-   }
-  },
-  {
-   "id": "rend-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Aldosterone",
-   "q": "Which are the two strongest stimuli for aldosterone secretion?",
-   "options": [
-    "Angiotensin II and a high plasma potassium",
-    "ADH and a low plasma calcium level",
-    "ACTH and a low plasma potassium level",
-    "ANP and a high plasma sodium level"
-   ],
-   "answer": 0,
-   "explain": "Low plasma sodium and ACTH are only weak stimuli. ANP inhibits aldosterone release.",
-   "verified": false,
-   "open": {
-    "q": "Name the two strongest stimuli for aldosterone secretion.",
-    "accept": [
-     "angiotensin II and potassium",
-     "angiotensin 2 and raised plasma potassium"
-    ]
-   }
-  },
-  {
-   "id": "rend-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Renin and angiotensin",
-   "q": "Which of these does NOT stimulate renin release?",
-   "options": [
-    "Decreased NaCl delivery to the macula densa",
-    "Increased NaCl delivery to the macula densa",
-    "Reduced renal perfusion pressure",
-    "Sympathetic stimulation of the JG cells"
-   ],
-   "answer": 1,
-   "explain": "Renin is released when perfusion pressure falls (afferent arteriole acts as a baroreceptor), when sympathetic nerves are active, or when less NaCl reaches the macula densa. More NaCl suppresses it.",
-   "verified": false,
-   "optionsOnly": true
-  },
-  {
-   "id": "rend-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Renin and angiotensin",
-   "q": "Which organ makes angiotensinogen?",
-   "options": [
-    "The liver",
-    "The adrenal cortex",
-    "The lungs",
-    "The kidney"
-   ],
-   "answer": 0,
-   "explain": "Renin cleaves liver-derived angiotensinogen to angiotensin I, and ACE, mostly in lung endothelium, converts it to angiotensin II.",
-   "verified": false,
-   "open": {
-    "q": "Which organ makes angiotensinogen?",
-    "accept": [
-     "liver"
-    ]
-   }
-  },
-  {
-   "id": "rend-006",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Renin and angiotensin",
-   "q": "Which set lists actions of angiotensin II correctly?",
-   "options": [
-    "Stimulates aldosterone and ANP release and reduces sodium reabsorption",
-    "Stimulates aldosterone, ADH and thirst, and increases proximal tubule NaCl reabsorption",
-    "Inhibits ADH and aldosterone and dilates all arterioles",
-    "Inhibits aldosterone, stimulates ADH and reduces thirst"
-   ],
-   "answer": 1,
-   "explain": "Angiotensin II raises blood pressure and ECF volume. It also constricts arterioles.",
-   "verified": false,
-   "open": {
-    "q": "Name three actions of angiotensin II.",
-    "accept": [
-     "stimulates aldosterone",
-     "stimulates adh",
-     "stimulates thirst",
-     "increases sodium reabsorption",
-     "vasoconstriction"
-    ]
-   }
-  },
-  {
-   "id": "rend-007",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Renin and angiotensin",
-   "q": "How does angiotensin II affect the efferent arteriole?",
-   "options": [
-    "It constricts it, helping to maintain GFR when perfusion pressure is low",
-    "It has no effect on the efferent arteriole at all",
-    "It constricts only the afferent arteriole, not the efferent",
-    "It dilates it, which lowers glomerular pressure and GFR"
-   ],
-   "answer": 0,
-   "explain": "Efferent constriction keeps glomerular pressure up. When ACE inhibitors remove this effect, GFR can drop, especially if renal perfusion is already reduced.",
-   "verified": false,
-   "open": {
-    "q": "How does angiotensin II affect the efferent arteriole?",
-    "accept": [
-     "constricts",
-     "constriction"
-    ]
-   }
-  },
-  {
-   "id": "rend-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Erythropoietin",
-   "q": "Which kidney cells secrete erythropoietin?",
-   "options": [
-    "Renal cortical peritubular interstitial cells",
-    "Macula densa",
-    "Collecting-duct principal cells",
-    "Podocytes"
-   ],
-   "answer": 0,
-   "explain": "The producers are fibroblast-like interstitial cells in the cortex, not the JG cells, which make renin. Chronic kidney disease destroys them, so erythropoietin falls.",
-   "verified": false,
-   "open": {
-    "q": "Which kidney cells secrete erythropoietin?",
-    "accept": [
-     "cortical interstitial cells",
-     "peritubular interstitial cells",
-     "interstitial cells"
-    ]
-   }
-  },
-  {
-   "id": "rend-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Erythropoietin",
-   "q": "What is the main stimulus for erythropoietin release?",
-   "options": [
-    "Reduced oxygen delivery to the kidney",
-    "A raised red blood cell count in the blood",
-    "High arterial blood pressure in the kidney",
-    "A high plasma sodium concentration"
-   ],
-   "answer": 0,
-   "explain": "Both a low arterial PO2 and a low haemoglobin concentration reduce oxygen delivery and raise erythropoietin output.",
-   "verified": false,
-   "open": {
-    "q": "What is the main stimulus for erythropoietin release?",
-    "accept": [
-     "hypoxia",
-     "low oxygen delivery",
-     "low oxygen"
-    ]
-   }
-  },
-  {
-   "id": "rend-010",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Erythropoietin",
-   "q": "What does erythropoietin do?",
-   "options": [
-    "It speeds up red cell production from bone marrow stem cells",
-    "It breaks down old red cells in the spleen",
-    "It stimulates platelet production from marrow cells",
-    "It increases iron absorption directly from the gut"
-   ],
-   "answer": 0,
-   "explain": "Falling erythropoietin explains the normocytic anaemia of chronic kidney disease.",
-   "verified": false,
-   "open": {
-    "q": "What does erythropoietin do?",
-    "accept": [
-     "stimulates red cell production",
-     "increases red cell production"
-    ]
-   }
-  },
-  {
-   "id": "rend-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: Vitamin D",
-   "q": "Where in the kidney is 25-hydroxyvitamin D converted to active 1,25-dihydroxyvitamin D?",
-   "options": [
-    "In the glomerulus, inside the podocytes",
-    "In the mitochondria of proximal tubule cells",
-    "In the loop of Henle, in the thin limbs",
-    "In the collecting duct, in the principal cells"
-   ],
-   "answer": 1,
-   "explain": "1-alpha-hydroxylation takes place in the proximal convoluted and straight tubules. Without it, as in kidney failure, vitamin D stays inactive.",
-   "verified": false,
-   "open": {
-    "q": "Where in the kidney is 25-hydroxyvitamin D converted to active 1,25-dihydroxyvitamin D?",
-    "accept": [
-     "proximal tubule",
-     "proximal convoluted tubule"
-    ]
-   }
-  },
-  {
-   "id": "rend-012",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: Vitamin D",
-   "q": "Which of these is an action of active vitamin D (calcitriol)?",
-   "options": [
-    "It lowers plasma calcium by increasing urinary loss only",
-    "It inhibits mineralisation of new osteoid",
-    "It decreases calcium absorption from the gut",
-    "It increases absorption of calcium and phosphate from the gut"
-   ],
-   "answer": 3,
-   "explain": "Calcitriol also increases calcium resorption from bone and ensures normal mineralisation of new bone.",
-   "verified": false,
-   "open": {
-    "q": "Name an action of active vitamin D (calcitriol).",
-    "accept": [
-     "increases gut calcium absorption",
-     "increases calcium absorption",
-     "increases phosphate absorption",
-     "bone mineralisation"
-    ]
-   }
-  },
-  {
-   "id": "rend-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: ADH",
-   "q": "Where is ADH synthesised?",
-   "options": [
-    "In the anterior pituitary, in the pars distalis",
-    "In the adrenal cortex, in the zona glomerulosa",
-    "In the hypothalamus (supraoptic and paraventricular nuclei)",
-    "In cells of the posterior pituitary gland"
-   ],
-   "answer": 2,
-   "explain": "It travels down axons and is released from the posterior pituitary (neurohypophysis).",
-   "verified": false,
-   "open": {
-    "q": "Where is ADH synthesised?",
-    "accept": [
-     "supraoptic and paraventricular nuclei",
-     "hypothalamus"
-    ]
-   }
-  },
-  {
-   "id": "rend-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: ADH",
-   "q": "Which receptor and second messenger mediate the action of ADH on the collecting duct?",
-   "options": [
-    "V1 receptor, raising IP3 and constricting vessels",
-    "V2 receptor, raising cAMP and inserting aquaporin-2 channels",
-    "Aldosterone receptor, raising cGMP",
-    "Beta-2 receptor, lowering cAMP"
-   ],
-   "answer": 1,
-   "explain": "Increased cAMP activates protein kinase A, which moves aquaporin-2 into the luminal membrane so water can leave the duct.",
-   "verified": false,
-   "open": {
-    "q": "Which receptor and second messenger mediate the action of ADH on the collecting duct?",
-    "accept": [
-     "v2 receptor",
-     "v2 and camp"
-    ]
-   }
-  },
-  {
-   "id": "rend-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: ADH",
-   "q": "Which is the strongest stimulus for ADH release?",
-   "options": [
-    "A rise in blood volume",
-    "A fall in plasma osmolality",
-    "Drinking alcohol",
-    "A rise in plasma osmolality"
-   ],
-   "answer": 3,
-   "explain": "Reduced blood volume and blood pressure, nausea and vomiting, nicotine and morphine also stimulate ADH.",
-   "verified": false,
-   "open": {
-    "q": "Which is the strongest stimulus for ADH release?",
-    "accept": [
-     "raised plasma osmolality",
-     "increased osmolality",
-     "high osmolality"
-    ]
-   }
-  },
-  {
-   "id": "rend-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: ADH",
-   "q": "Which of these inhibits ADH secretion?",
-   "options": [
-    "Nausea and vomiting",
-    "Morphine",
-    "Nicotine",
-    "Alcohol"
-   ],
-   "answer": 3,
-   "explain": "Alcohol inhibits ADH, which is why drinking it produces a water diuresis.",
-   "verified": false,
-   "open": {
-    "q": "Name a substance that inhibits ADH secretion.",
-    "accept": [
-     "alcohol",
-     "ethanol"
-    ]
-   }
-  },
-  {
-   "id": "rend-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: ADH",
-   "q": "Which nerves carry baroreceptor information about falling blood volume to the nucleus tractus solitarius, leading to ADH release?",
-   "options": [
-    "The facial and trigeminal nerves",
-    "The vagus and glossopharyngeal nerves",
-    "The hypogastric and splanchnic nerves",
-    "The pelvic and pudendal nerves"
-   ],
-   "answer": 1,
-   "explain": "The signal relays from the nucleus tractus solitarius to the hypothalamic nuclei.",
-   "verified": false,
-   "open": {
-    "q": "Which nerves carry baroreceptor information about falling blood volume to the nucleus tractus solitarius, leading to ADH release?",
-    "accept": [
-     "vagus and glossopharyngeal"
-    ]
-   }
-  },
-  {
-   "id": "rend-018",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lecture: ANP",
-   "q": "What stimulates release of atrial natriuretic peptide?",
-   "options": [
-    "Hypoxia of the kidney's cortical tissue",
-    "A fall in blood volume in the circulation",
-    "A raised plasma ADH level in the blood",
-    "Increased blood volume stretching the atria"
-   ],
-   "answer": 3,
-   "explain": "Stretched atrial muscle cells secrete ANP.",
-   "verified": false,
-   "open": {
-    "q": "What stimulates release of atrial natriuretic peptide?",
-    "accept": [
-     "increased blood volume",
-     "atrial stretch"
-    ]
-   }
-  },
-  {
-   "id": "rend-019",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lecture: ANP",
-   "q": "What are the effects of ANP?",
-   "options": [
-    "It stimulates renin, aldosterone and ADH release",
-    "It inhibits renin, aldosterone and ADH, causing sodium loss and diuresis",
-    "It constricts the afferent arteriole to lower GFR",
-    "It increases sodium reabsorption in the collecting duct"
-   ],
-   "answer": 1,
-   "explain": "ANP lowers ECF volume and blood pressure. It works against the renin-angiotensin-aldosterone system.",
-   "verified": false,
-   "open": {
-    "q": "What are the effects of ANP?",
-    "accept": [
-     "natriuresis and diuresis",
-     "inhibits renin aldosterone and adh"
-    ]
-   }
-  }
- ]
+  "topic": "phys-renal-endocrine",
+  "questions": [
+    {
+      "id": "rend-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Aldosterone",
+      "q": "Which cells of the adrenal cortex secrete aldosterone?",
+      "options": [
+        "Zona fasciculata cells",
+        "Chromaffin cells of the medulla",
+        "Zona glomerulosa cells",
+        "Zona reticularis cells"
+      ],
+      "answer": 2,
+      "explain": "Aldosterone is the main mineralocorticoid, made in the outer cortical zone (glomerulosa).",
+      "verified": false,
+      "open": {
+        "q": "Which cells of the adrenal cortex secrete aldosterone?",
+        "accept": [
+          "zona glomerulosa",
+          "glomerulosa"
+        ]
+      }
+    },
+    {
+      "id": "rend-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Aldosterone",
+      "q": "What are the main renal effects of aldosterone?",
+      "options": [
+        "It increases water excretion only",
+        "It increases sodium and water reabsorption and potassium excretion",
+        "It increases bicarbonate excretion only",
+        "It increases potassium reabsorption and sodium excretion"
+      ],
+      "answer": 1,
+      "explain": "It acts on principal cells of the late distal tubule and cortical collecting duct, raising sodium reabsorption and potassium secretion.",
+      "verified": false,
+      "open": {
+        "q": "What are the main renal effects of aldosterone?",
+        "accept": [
+          "increases sodium reabsorption and potassium excretion",
+          "retains sodium and excretes potassium"
+        ]
+      }
+    },
+    {
+      "id": "rend-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Aldosterone",
+      "q": "Which are the two strongest stimuli for aldosterone secretion?",
+      "options": [
+        "Angiotensin II and a high plasma potassium",
+        "ADH and a low plasma calcium level",
+        "ACTH and a low plasma potassium level",
+        "ANP and a high plasma sodium level"
+      ],
+      "answer": 0,
+      "explain": "Low plasma sodium and ACTH are only weak stimuli. ANP inhibits aldosterone release.",
+      "verified": false,
+      "open": {
+        "q": "Name the two strongest stimuli for aldosterone secretion.",
+        "accept": [
+          "angiotensin II and potassium",
+          "angiotensin 2 and raised plasma potassium"
+        ]
+      }
+    },
+    {
+      "id": "rend-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Renin and angiotensin",
+      "q": "Which of these does NOT stimulate renin release?",
+      "options": [
+        "Decreased NaCl delivery to the macula densa",
+        "Increased NaCl delivery to the macula densa",
+        "Reduced renal perfusion pressure",
+        "Sympathetic stimulation of the JG cells"
+      ],
+      "answer": 1,
+      "explain": "Renin is released when perfusion pressure falls (afferent arteriole acts as a baroreceptor), when sympathetic nerves are active, or when less NaCl reaches the macula densa. More NaCl suppresses it.",
+      "verified": false,
+      "optionsOnly": true
+    },
+    {
+      "id": "rend-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Renin and angiotensin",
+      "q": "Which organ makes angiotensinogen?",
+      "options": [
+        "The liver",
+        "The adrenal cortex",
+        "The lungs",
+        "The kidney"
+      ],
+      "answer": 0,
+      "explain": "Renin cleaves liver-derived angiotensinogen to angiotensin I, and ACE, mostly in lung endothelium, converts it to angiotensin II.",
+      "verified": false,
+      "open": {
+        "q": "Which organ makes angiotensinogen?",
+        "accept": [
+          "liver"
+        ]
+      }
+    },
+    {
+      "id": "rend-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Renin and angiotensin",
+      "q": "Which set lists actions of angiotensin II correctly?",
+      "options": [
+        "Stimulates aldosterone and ANP release and reduces sodium reabsorption",
+        "Stimulates aldosterone, ADH and thirst, and increases proximal tubule NaCl reabsorption",
+        "Inhibits ADH and aldosterone and dilates all arterioles",
+        "Inhibits aldosterone, stimulates ADH and reduces thirst"
+      ],
+      "answer": 1,
+      "explain": "Angiotensin II raises blood pressure and ECF volume. It also constricts arterioles.",
+      "verified": false,
+      "open": {
+        "q": "Name three actions of angiotensin II.",
+        "accept": [
+          "stimulates aldosterone",
+          "stimulates adh",
+          "stimulates thirst",
+          "increases sodium reabsorption",
+          "vasoconstriction"
+        ]
+      }
+    },
+    {
+      "id": "rend-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Renin and angiotensin",
+      "q": "How does angiotensin II affect the efferent arteriole?",
+      "options": [
+        "It constricts it, helping to maintain GFR when perfusion pressure is low",
+        "It has no effect on the efferent arteriole at all",
+        "It constricts only the afferent arteriole, not the efferent",
+        "It dilates it, which lowers glomerular pressure and GFR"
+      ],
+      "answer": 0,
+      "explain": "Efferent constriction keeps glomerular pressure up. When ACE inhibitors remove this effect, GFR can drop, especially if renal perfusion is already reduced.",
+      "verified": false,
+      "open": {
+        "q": "How does angiotensin II affect the efferent arteriole?",
+        "accept": [
+          "constricts",
+          "constriction"
+        ]
+      }
+    },
+    {
+      "id": "rend-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Erythropoietin",
+      "q": "Which kidney cells secrete erythropoietin?",
+      "options": [
+        "Renal cortical peritubular interstitial cells",
+        "Macula densa",
+        "Collecting-duct principal cells",
+        "Podocytes"
+      ],
+      "answer": 0,
+      "explain": "The producers are fibroblast-like interstitial cells in the cortex, not the JG cells, which make renin. Chronic kidney disease destroys them, so erythropoietin falls.",
+      "verified": false,
+      "open": {
+        "q": "Which kidney cells secrete erythropoietin?",
+        "accept": [
+          "cortical interstitial cells",
+          "peritubular interstitial cells",
+          "interstitial cells"
+        ]
+      }
+    },
+    {
+      "id": "rend-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Erythropoietin",
+      "q": "What is the main stimulus for erythropoietin release?",
+      "options": [
+        "Reduced oxygen delivery to the kidney",
+        "A raised red blood cell count in the blood",
+        "High arterial blood pressure in the kidney",
+        "A high plasma sodium concentration"
+      ],
+      "answer": 0,
+      "explain": "Both a low arterial PO2 and a low haemoglobin concentration reduce oxygen delivery and raise erythropoietin output.",
+      "verified": false,
+      "open": {
+        "q": "What is the main stimulus for erythropoietin release?",
+        "accept": [
+          "hypoxia",
+          "low oxygen delivery",
+          "low oxygen"
+        ]
+      }
+    },
+    {
+      "id": "rend-010",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Erythropoietin",
+      "q": "What does erythropoietin do?",
+      "options": [
+        "It speeds up red cell production from bone marrow stem cells",
+        "It breaks down old red cells in the spleen",
+        "It stimulates platelet production from marrow cells",
+        "It increases iron absorption directly from the gut"
+      ],
+      "answer": 0,
+      "explain": "Falling erythropoietin explains the normocytic anaemia of chronic kidney disease.",
+      "verified": false,
+      "open": {
+        "q": "What does erythropoietin do?",
+        "accept": [
+          "stimulates red cell production",
+          "increases red cell production"
+        ]
+      }
+    },
+    {
+      "id": "rend-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Vitamin D",
+      "q": "Where in the kidney is 25-hydroxyvitamin D converted to active 1,25-dihydroxyvitamin D?",
+      "options": [
+        "In the glomerulus, inside the podocytes",
+        "In the mitochondria of proximal tubule cells",
+        "In the loop of Henle, in the thin limbs",
+        "In the collecting duct, in the principal cells"
+      ],
+      "answer": 1,
+      "explain": "1-alpha-hydroxylation takes place in the proximal convoluted and straight tubules. Without it, as in kidney failure, vitamin D stays inactive.",
+      "verified": false,
+      "open": {
+        "q": "Where in the kidney is 25-hydroxyvitamin D converted to active 1,25-dihydroxyvitamin D?",
+        "accept": [
+          "proximal tubule",
+          "proximal convoluted tubule"
+        ]
+      }
+    },
+    {
+      "id": "rend-012",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: Vitamin D",
+      "q": "Which of these is an action of active vitamin D (calcitriol)?",
+      "options": [
+        "It lowers plasma calcium by increasing urinary loss only",
+        "It inhibits mineralisation of new osteoid",
+        "It decreases calcium absorption from the gut",
+        "It increases absorption of calcium and phosphate from the gut"
+      ],
+      "answer": 3,
+      "explain": "Calcitriol also increases calcium resorption from bone and ensures normal mineralisation of new bone.",
+      "verified": false,
+      "open": {
+        "q": "Name an action of active vitamin D (calcitriol).",
+        "accept": [
+          "increases gut calcium absorption",
+          "increases calcium absorption",
+          "increases phosphate absorption",
+          "bone mineralisation"
+        ]
+      }
+    },
+    {
+      "id": "rend-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: ADH",
+      "q": "Where is ADH synthesised?",
+      "options": [
+        "In the anterior pituitary, in the pars distalis",
+        "In the adrenal cortex, in the zona glomerulosa",
+        "In the hypothalamus (supraoptic and paraventricular nuclei)",
+        "In cells of the posterior pituitary gland"
+      ],
+      "answer": 2,
+      "explain": "It travels down axons and is released from the posterior pituitary (neurohypophysis).",
+      "verified": false,
+      "open": {
+        "q": "Where is ADH synthesised?",
+        "accept": [
+          "supraoptic and paraventricular nuclei",
+          "hypothalamus"
+        ]
+      }
+    },
+    {
+      "id": "rend-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: ADH",
+      "q": "Which receptor and second messenger mediate the action of ADH on the collecting duct?",
+      "options": [
+        "V1 receptor, raising IP3 and constricting vessels",
+        "V2 receptor, raising cAMP and inserting aquaporin-2 channels",
+        "Aldosterone receptor, raising cGMP",
+        "Beta-2 receptor, lowering cAMP"
+      ],
+      "answer": 1,
+      "explain": "Increased cAMP activates protein kinase A, which moves aquaporin-2 into the luminal membrane so water can leave the duct.",
+      "verified": false,
+      "open": {
+        "q": "Which receptor and second messenger mediate the action of ADH on the collecting duct?",
+        "accept": [
+          "v2 receptor",
+          "v2 and camp"
+        ]
+      }
+    },
+    {
+      "id": "rend-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: ADH",
+      "q": "Which is the strongest stimulus for ADH release?",
+      "options": [
+        "A rise in blood volume",
+        "A fall in plasma osmolality",
+        "Drinking alcohol",
+        "A rise in plasma osmolality"
+      ],
+      "answer": 3,
+      "explain": "Reduced blood volume and blood pressure, nausea and vomiting, nicotine and morphine also stimulate ADH.",
+      "verified": false,
+      "open": {
+        "q": "Which is the strongest stimulus for ADH release?",
+        "accept": [
+          "raised plasma osmolality",
+          "increased osmolality",
+          "high osmolality"
+        ]
+      }
+    },
+    {
+      "id": "rend-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: ADH",
+      "q": "Which of these inhibits ADH secretion?",
+      "options": [
+        "Nausea and vomiting",
+        "Morphine",
+        "Nicotine",
+        "Alcohol"
+      ],
+      "answer": 3,
+      "explain": "Alcohol inhibits ADH, which is why drinking it produces a water diuresis.",
+      "verified": false,
+      "open": {
+        "q": "Name a substance that inhibits ADH secretion.",
+        "accept": [
+          "alcohol",
+          "ethanol"
+        ]
+      }
+    },
+    {
+      "id": "rend-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: ADH",
+      "q": "Which nerves carry baroreceptor information about falling blood volume to the nucleus tractus solitarius, leading to ADH release?",
+      "options": [
+        "The facial and trigeminal nerves",
+        "The vagus and glossopharyngeal nerves",
+        "The hypogastric and splanchnic nerves",
+        "The pelvic and pudendal nerves"
+      ],
+      "answer": 1,
+      "explain": "The signal relays from the nucleus tractus solitarius to the hypothalamic nuclei.",
+      "verified": false,
+      "open": {
+        "q": "Which nerves carry baroreceptor information about falling blood volume to the nucleus tractus solitarius, leading to ADH release?",
+        "accept": [
+          "vagus and glossopharyngeal"
+        ]
+      }
+    },
+    {
+      "id": "rend-018",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lecture: ANP",
+      "q": "What stimulates release of atrial natriuretic peptide?",
+      "options": [
+        "Hypoxia of the kidney's cortical tissue",
+        "A fall in blood volume in the circulation",
+        "A raised plasma ADH level in the blood",
+        "Increased blood volume stretching the atria"
+      ],
+      "answer": 3,
+      "explain": "Stretched atrial muscle cells secrete ANP.",
+      "verified": false,
+      "open": {
+        "q": "What stimulates release of atrial natriuretic peptide?",
+        "accept": [
+          "increased blood volume",
+          "atrial stretch"
+        ]
+      }
+    },
+    {
+      "id": "rend-019",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: ANP",
+      "q": "What are the effects of ANP?",
+      "options": [
+        "It stimulates renin, aldosterone and ADH release",
+        "It inhibits renin, aldosterone and ADH, causing sodium loss and diuresis",
+        "It constricts the afferent arteriole to lower GFR",
+        "It increases sodium reabsorption in the collecting duct"
+      ],
+      "answer": 1,
+      "explain": "ANP lowers ECF volume and blood pressure. It works against the renin-angiotensin-aldosterone system.",
+      "verified": false,
+      "open": {
+        "q": "What are the effects of ANP?",
+        "accept": [
+          "natriuresis and diuresis",
+          "inhibits renin aldosterone and adh"
+        ]
+      }
+    },
+    {
+      "id": "rend-020",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Renin and angiotensin",
+      "q": "A patient with bilateral renal artery stenosis develops hypertension. Which change in the juxtaglomerular apparatus initially drives activation of the renin–angiotensin–aldosterone system?",
+      "options": [
+        "Reduced afferent arteriolar perfusion pressure stimulates renin release",
+        "Increased renal perfusion pressure stimulates renin release",
+        "Increased macula densa NaCl delivery stimulates renin release",
+        "Raised plasma calcium directly stimulates renin release"
+      ],
+      "answer": 0,
+      "explain": "Reduced pressure in the afferent arteriole is sensed by juxtaglomerular granular cells and promotes renin secretion, activating angiotensin II and aldosterone formation.",
+      "verified": false
+    },
+    {
+      "id": "rend-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Renin and angiotensin",
+      "q": "A patient with heart failure is given an ACE inhibitor. Which effect contributes to the drug's reduction of afterload?",
+      "options": [
+        "Reduced formation of angiotensin II causes systemic arteriolar vasodilation",
+        "Increased angiotensin II causes widespread vasoconstriction",
+        "Increased aldosterone causes sodium retention",
+        "Increased ADH causes water retention"
+      ],
+      "answer": 0,
+      "explain": "ACE inhibition reduces angiotensin II formation, lowering systemic vascular resistance and afterload. It also reduces aldosterone secretion and sodium retention.",
+      "verified": false
+    },
+    {
+      "id": "rend-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Erythropoietin",
+      "q": "A patient with advanced chronic kidney disease has normocytic normochromic anaemia. Which renal endocrine defect is the principal cause?",
+      "options": [
+        "Reduced erythropoietin production by renal interstitial cells",
+        "Excessive renin secretion",
+        "Reduced aldosterone synthesis by zona glomerulosa",
+        "Increased renal calcitriol activation"
+      ],
+      "answer": 0,
+      "explain": "Loss or dysfunction of renal peritubular interstitial erythropoietin-producing cells reduces stimulation of erythroid progenitors, causing a typically normocytic anaemia.",
+      "verified": false
+    },
+    {
+      "id": "rend-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: Vitamin D",
+      "q": "A patient with chronic kidney disease develops hypocalcaemia and secondary hyperparathyroidism. Which renal defect contributes directly to this disturbance?",
+      "options": [
+        "Reduced conversion of 25-hydroxyvitamin D to calcitriol by 1-alpha-hydroxylase",
+        "Increased conversion of calcitriol to 25-hydroxyvitamin D",
+        "Excessive calcitonin secretion by renal tubules",
+        "Increased intestinal activation of vitamin D"
+      ],
+      "answer": 0,
+      "explain": "Diseased kidneys have reduced proximal tubular 1-alpha-hydroxylase activity, lowering calcitriol production and intestinal calcium absorption. Hypocalcaemia and phosphate retention promote secondary hyperparathyroidism.",
+      "verified": false
+    },
+    {
+      "id": "rend-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lecture: ADH",
+      "q": "A patient with central diabetes insipidus receives desmopressin. Which renal response is expected?",
+      "options": [
+        "Increased aquaporin-2 insertion in collecting-duct principal cells and increased urine concentration",
+        "Reduced collecting-duct water permeability and increased dilute urine",
+        "Inhibition of sodium reabsorption in the proximal tubule",
+        "Increased potassium secretion caused by mineralocorticoid-receptor blockade"
+      ],
+      "answer": 0,
+      "explain": "Desmopressin activates V2 receptors on collecting-duct principal cells, increasing cAMP and apical aquaporin-2 insertion. Water reabsorption rises and urine volume falls.",
+      "verified": false
+    }
+  ]
 }
