@@ -368,3 +368,18 @@ Five original MCQs were added to each of three topic banks:
 All three files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted topic expansion rather than exhaustive reconciliation of every uploaded source.
 
 **Cumulative source-reconciliation additions: 148 original questions** (133 previously recorded plus these 15).
+
+
+## Urinary histology, special circulations and inherited metabolic disorders — 27 November 2026
+
+Five original MCQs were added to each of three topic banks:
+
+**Anatomy / Histology — urinary system (6 → 11):** podocytes and filtration slits, proximal versus distal convoluted tubule morphology, macula densa function and urothelial lining.
+
+**Physiology — special circulations (40 → 45):** cerebral vasoconstriction in hypocapnia, hypoxic pulmonary vasoconstriction, the renal afferent myogenic response, portosystemic collateral flow at the lower oesophagus and impaired subendocardial perfusion in aortic stenosis.
+
+**Medical Biochemistry — inborn errors of metabolism (40 → 45):** acute nitrogen-scavenging management in urea-cycle crises, organic-acidaemia physiology, enzyme replacement in Gaucher disease, hypoketotic hypoglycaemia in MCAD deficiency and purine salvage in Lesch–Nyhan syndrome.
+
+All three files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted expansion, not a claim of exhaustive reconciliation of all uploaded sources.
+
+**Cumulative source-reconciliation additions: 163 original questions** (148 previously recorded plus these 15).
