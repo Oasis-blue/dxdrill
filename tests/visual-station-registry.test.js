@@ -3,6 +3,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const { spawnSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
 function readJson(file) {
@@ -38,8 +39,14 @@ test("visual station registry resolves every asset and its ordered question IDs"
     const asset = assetById.get(station.assetId);
     assert.ok(asset, station.id + " must reference an existing visual asset");
     assert.ok(topicIds.has(station.topic), station.id + " must use a canonical topic ID");
-    assert.ok(fs.existsSync(path.join(root, "data/img", asset.file)),
+    const imagePath = path.join(root, "data/img", asset.file);
+    assert.ok(fs.existsSync(imagePath),
       station.id + " image must exist in data/img");
+    const decoded = spawnSync(process.env.PYTHON || "python3", [
+      path.join(root, "tools/decode-image.py"), imagePath
+    ], { encoding: "utf8" });
+    assert.equal(decoded.status, 0,
+      station.id + " image must fully decode: " + (decoded.stderr || decoded.stdout || "decoder failed"));
 
     const questions = questionsByStation.get(station.id) || [];
     assert.ok(questions.length > 0, station.id + " must have linked questions");
