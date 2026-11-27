@@ -1,1042 +1,1122 @@
 {
- "topic": "phys-urine-concentration",
- "questions": [
-  {
-   "id": "ren-039",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Which two mechanisms allow the kidney to produce concentrated urine?",
-   "options": [
-    "Glomerular filtration and secretion",
-    "Aldosterone and renin",
-    "Countercurrent multiplier and countercurrent exchanger",
-    "Osmoreceptors and baroreceptors"
-   ],
-   "answer": 2,
-   "explain": "The loop of Henle builds the gradient. The vasa recta preserve it.",
-   "verified": false,
-   "open": {
-    "q": "Which two mechanisms allow the kidney to produce concentrated urine?",
-    "accept": [
-     "countercurrent multiplier and exchanger",
-     "multiplier and exchanger"
-    ]
-   }
-  },
-  {
-   "id": "ren-040",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Which structure acts as the countercurrent multiplier?",
-   "options": [
-    "Vasa recta",
-    "Loop of Henle",
-    "Collecting duct",
-    "Proximal tubule"
-   ],
-   "answer": 1,
-   "explain": "The loop multiplies a small horizontal gradient into a large vertical one.",
-   "verified": false,
-   "open": {
-    "q": "Which structure acts as the countercurrent multiplier?",
-    "accept": [
-     "loop of henle",
-     "henle's loop",
-     "loops of henle"
-    ]
-   }
-  },
-  {
-   "id": "ren-041",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Which structure acts as the countercurrent exchanger?",
-   "options": [
-    "Loop of Henle",
-    "Distal tubule",
-    "Afferent arteriole",
-    "Vasa recta"
-   ],
-   "answer": 3,
-   "explain": "Blood flows in a hairpin, taking up water from the medulla without washing out its solutes.",
-   "verified": false,
-   "open": {
-    "q": "Which structure acts as the countercurrent exchanger?",
-    "accept": [
-     "vasa recta"
-    ]
-   }
-  },
-  {
-   "id": "ren-042",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "What is the maximum osmolality the human kidney can reach in urine?",
-   "options": [
-    "About 300 mOsm/L",
-    "About 600 mOsm/L",
-    "About 1200 mOsm/L",
-    "About 3000 mOsm/L"
-   ],
-   "answer": 2,
-   "explain": "It is limited by the medullary gradient. Plasma is about 300 mOsm/L.",
-   "verified": false,
-   "open": {
-    "q": "What is the maximum osmolality the human kidney can reach in urine?",
-    "accept": [
-     "1200",
-     "1200 mosm/l",
-     "1200-1400",
-     "1200 mosm"
-    ]
-   }
-  },
-  {
-   "id": "ren-043",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "What is the main transport feature of the thick ascending limb?",
-   "options": [
-    "It is water-impermeable and reabsorbs Na+, K+ and 2Cl−",
-    "It is highly permeable to water",
-    "It reabsorbs water under ADH control",
-    "It secretes urea"
-   ],
-   "answer": 0,
-   "explain": "NKCC2 pumps solutes out while water stays in, so the fluid becomes dilute. This is the diluting segment.",
-   "verified": false,
-   "open": {
-    "q": "What is the main transport feature of the thick ascending limb?",
-    "accept": [
-     "impermeable to water",
-     "Na-K-2Cl",
-     "NKCC2",
-     "active reabsorption of sodium"
-    ]
-   }
-  },
-  {
-   "id": "ren-044",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Is the tubular fluid entering the distal convoluted tubule hypotonic, isotonic or hypertonic compared with plasma?",
-   "options": [
-    "Isotonic",
-    "Hypertonic",
-    "Hypotonic",
-    "It varies with ADH"
-   ],
-   "answer": 2,
-   "explain": "The thick ascending limb removes solute without water, leaving the fluid at about 100 mOsm/L.",
-   "verified": false,
-   "open": {
-    "q": "Is the tubular fluid entering the distal convoluted tubule hypotonic, isotonic or hypertonic compared with plasma?",
-    "accept": [
-     "hypotonic",
-     "hypo-osmotic",
-     "dilute"
-    ]
-   }
-  },
-  {
-   "id": "ren-045",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Which solutes mainly create the high osmolality of the renal medulla?",
-   "options": [
-    "Glucose and amino acids",
-    "Sodium chloride and urea",
-    "Potassium and calcium",
-    "Proteins and lipids"
-   ],
-   "answer": 1,
-   "explain": "NaCl is pumped out of the ascending limb. Urea is recycled from the collecting duct.",
-   "verified": false,
-   "open": {
-    "q": "Which solutes mainly create the high osmolality of the renal medulla?",
-    "accept": [
-     "sodium chloride and urea",
-     "NaCl and urea",
-     "urea and sodium",
-     "urea and NaCl"
-    ]
-   }
-  },
-  {
-   "id": "ren-046",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Which hormone makes the collecting duct permeable to water so that urine can be concentrated?",
-   "options": [
-    "Antidiuretic hormone (vasopressin)",
-    "Aldosterone",
-    "Atrial natriuretic peptide",
-    "Oxytocin"
-   ],
-   "answer": 0,
-   "explain": "Without ADH, the collecting duct stays water-impermeable and dilute urine is passed.",
-   "verified": false,
-   "open": {
-    "q": "Which hormone makes the collecting duct permeable to water so that urine can be concentrated?",
-    "accept": [
-     "vasopressin",
-     "antidiuretic hormone",
-     "ADH",
-     "AVP"
-    ]
-   }
-  },
-  {
-   "id": "ren-047",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "What causes central diabetes insipidus?",
-   "options": [
-    "Deficiency of ADH secretion",
-    "Lack of kidney response to ADH",
-    "Excess ADH from a tumour",
-    "Deficiency of aldosterone"
-   ],
-   "answer": 0,
-   "explain": "Damage to the hypothalamus or posterior pituitary reduces ADH. It responds to desmopressin.",
-   "verified": false,
-   "open": {
-    "q": "What causes central diabetes insipidus?",
-    "accept": [
-     "lack of ADH",
-     "ADH deficiency",
-     "low vasopressin",
-     "deficiency of ADH"
-    ]
-   }
-  },
-  {
-   "id": "ren-048",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "What causes nephrogenic diabetes insipidus?",
-   "options": [
-    "Failure of ADH synthesis in the hypothalamus",
-    "Excess insulin",
-    "Failure of the collecting duct to respond to ADH",
-    "Aldosterone excess"
-   ],
-   "answer": 2,
-   "explain": "ADH levels are normal or high, but the kidney does not respond. Desmopressin does not help.",
-   "verified": false,
-   "open": {
-    "q": "What causes nephrogenic diabetes insipidus?",
-    "accept": [
-     "kidney not responding to ADH",
-     "resistance to ADH",
-     "V2 receptor defect",
-     "kidney resistance to ADH"
-    ]
-   }
-  },
-  {
-   "id": "ren-049",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "What urine is typical of diabetes insipidus?",
-   "options": [
-    "Small volumes of concentrated urine",
-    "Large volumes of dilute urine",
-    "Large volumes of urine with glucose",
-    "No urine"
-   ],
-   "answer": 1,
-   "explain": "The patient has polyuria and polydipsia, with low urine osmolality and no glycosuria.",
-   "verified": false,
-   "open": {
-    "q": "What urine is typical of diabetes insipidus?",
-    "accept": [
-     "polyuria",
-     "dilute urine",
-     "large volume of dilute urine",
-     "dilute polyuria"
-    ]
-   }
-  },
-  {
-   "id": "ren-050",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "Which diuretic impairs the countercurrent multiplier by blocking the Na-K-2Cl cotransporter?",
-   "options": [
-    "Spironolactone",
-    "Furosemide",
-    "Acetazolamide",
-    "Mannitol"
-   ],
-   "answer": 1,
-   "explain": "Furosemide blocks the Na+-K+-2Cl− cotransporter (NKCC2) in the thick ascending limb. This reduces medullary NaCl accumulation and weakens the osmotic gradient that normally drives water reabsorption from the collecting duct, impairing urine concentration.",
-   "verified": false,
-   "open": {
-    "q": "Which diuretic impairs the countercurrent multiplier by blocking the Na-K-2Cl cotransporter?",
-    "accept": [
-     "loop diuretics",
-     "frusemide",
-     "furosemide"
-    ]
-   }
-  },
-  {
-   "id": "ren-051",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Ch 53 Concentration of urine",
-   "q": "What is the lowest urine osmolality the kidney can produce (maximally dilute urine)?",
-   "options": [
-    "About 50 mOsm/L",
-    "About 300 mOsm/L",
-    "About 600 mOsm/L",
-    "About 1200 mOsm/L"
-   ],
-   "answer": 0,
-   "explain": "With no ADH, the kidney can excrete urine at about 50 mOsm/L.",
-   "verified": false,
-   "open": {
-    "q": "What is the lowest urine osmolality the kidney can produce (maximally dilute urine)?",
-    "accept": [
-     "50",
-     "50 mosm/l",
-     "50-100",
-     "50 mosm"
-    ]
-   }
-  },
-  {
-   "id": "ren-226",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Urine osmolality",
-   "q": "What is the maximum urine osmolality that a healthy human kidney can produce?",
-   "options": [
-    "600 mOsm/kg",
-    "1200 mOsm/kg",
-    "2400 mOsm/kg",
-    "3000 mOsm/kg"
-   ],
-   "answer": 1,
-   "explain": "Humans can concentrate urine to about 1200 mOsm/kg, roughly four times plasma osmolality. Desert rodents reach much higher values because of their longer loops of Henle.",
-   "verified": false,
-   "open": {
-    "q": "What is the maximum urine osmolality that a healthy human kidney can produce?",
-    "accept": [
-     "Roughly four times plasma osmolality",
-     "1.2 osmol/kg",
-     "1400 mOsm/kg"
-    ]
-   }
-  },
-  {
-   "id": "ren-227",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Urine osmolality",
-   "q": "What is the lowest urine osmolality the kidney can produce when ADH is completely absent?",
-   "options": [
-    "300 mOsm/kg",
-    "150 mOsm/kg",
-    "100 mOsm/kg",
-    "50 mOsm/kg"
-   ],
-   "answer": 3,
-   "explain": "Without ADH the collecting duct stays impermeable to water, so the dilute fluid from the thick ascending limb is passed on, giving urine of about 50 mOsm/kg.",
-   "verified": false,
-   "open": {
-    "q": "What is the lowest urine osmolality the kidney can produce when ADH is completely absent?",
-    "accept": [
-     "50 to 100 mOsm/kg",
-     "Roughly one-sixth of plasma osmolality",
-     "Maximally dilute urine"
-    ]
-   }
-  },
-  {
-   "id": "ren-228",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Medullary gradient",
-   "q": "Which two solutes mainly create the osmotic gradient in the renal medullary interstitium?",
-   "options": [
-    "NaCl and urea",
-    "Glucose and amino acids",
-    "Potassium and phosphate",
-    "Bicarbonate and calcium"
-   ],
-   "answer": 0,
-   "explain": "NaCl accounts for most of the gradient in the outer medulla, while urea adds a large share in the inner medulla.",
-   "verified": false,
-   "open": {
-    "q": "Which two solutes mainly create the osmotic gradient in the renal medullary interstitium?",
-    "accept": [
-     "Sodium chloride and urea",
-     "Salt and urea",
-     "Na+, Cl- and urea"
-    ]
-   }
-  },
-  {
-   "id": "ren-229",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Countercurrent mechanism",
-   "q": "Which structure acts as the countercurrent multiplier in the kidney?",
-   "options": [
-    "Vasa recta",
-    "Collecting duct",
-    "Loop of Henle",
-    "Distal convoluted tubule"
-   ],
-   "answer": 2,
-   "explain": "The loop of Henle multiplies the small horizontal gradient created by the thick ascending limb into a large vertical gradient along the medulla. The vasa recta act as the countercurrent exchanger.",
-   "verified": false,
-   "open": {
-    "q": "Which structure acts as the countercurrent multiplier in the kidney?",
-    "accept": [
-     "Henle loop",
-     "Descending and ascending limbs of the nephron",
-     "Hairpin tubule of the nephron"
-    ]
-   }
-  },
-  {
-   "id": "ren-230",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Countercurrent mechanism",
-   "q": "Which process in the thick ascending limb generates the single effect?",
-   "options": [
-    "Passive water reabsorption",
-    "Sodium secretion",
-    "Urea secretion",
-    "Active NaCl reabsorption"
-   ],
-   "answer": 3,
-   "explain": "The thick ascending limb pumps NaCl out through the NKCC2 cotransporter but is impermeable to water. The interstitium becomes hypertonic and the tubular fluid becomes dilute.",
-   "verified": false,
-   "open": {
-    "q": "What process in the thick ascending limb of the loop of Henle creates the single effect?",
-    "accept": [
-     "NKCC2 transport",
-     "Na+-K+-2Cl- cotransport",
-     "Salt pumping without water"
-    ]
-   }
-  },
-  {
-   "id": "ren-231",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Countercurrent mechanism",
-   "q": "At any horizontal level of the medulla, the single effect creates an osmotic difference of about:",
-   "options": [
-    "20 mOsm/kg",
-    "200 mOsm/kg",
-    "600 mOsm/kg",
-    "1000 mOsm/kg"
-   ],
-   "answer": 1,
-   "explain": "The single effect is only about 200 mOsm/kg. Countercurrent flow multiplies it along the length of the loop to about 1200 mOsm/kg at the papilla.",
-   "verified": false,
-   "open": {
-    "q": "At any horizontal level of the medulla, how large is the osmotic difference created by the single effect?",
-    "accept": [
-     "Approximately 0.2 osmol/kg",
-     "200 mOsm per litre difference",
-     "About a sixth of the papillary osmolality"
-    ]
-   }
-  },
-  {
-   "id": "ren-232",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Countercurrent mechanism",
-   "q": "The thin descending limb of the loop of Henle is highly permeable to which substance?",
-   "options": [
-    "Water",
-    "Sodium",
-    "Urea",
-    "Potassium"
-   ],
-   "answer": 0,
-   "explain": "The thin descending limb has abundant aquaporin-1 but is poorly permeable to solutes. Water leaves by osmosis and the tubular fluid becomes more concentrated as it descends.",
-   "verified": false,
-   "open": {
-    "q": "The thin descending limb of the loop of Henle is highly permeable to which substance?",
-    "accept": [
-     "H2O",
-     "AQP1-mediated water movement",
-     "Solute-free water"
-    ]
-   }
-  },
-  {
-   "id": "ren-233",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Countercurrent mechanism",
-   "q": "The thin ascending limb is permeable to NaCl but almost impermeable to which substance?",
-   "options": [
-    "Sodium",
-    "Chloride",
-    "Water",
-    "Urea"
-   ],
-   "answer": 2,
-   "explain": "NaCl leaves the thin ascending limb passively down its gradient while water cannot follow. This adds solute to the medulla and dilutes the tubular fluid.",
-   "verified": false,
-   "open": {
-    "q": "The thin ascending limb is permeable to NaCl but almost impermeable to which substance?",
-    "accept": [
-     "H2O",
-     "Free water",
-     "Aquaporin-dependent water movement"
-    ]
-   }
-  },
-  {
-   "id": "ren-234",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Countercurrent mechanism",
-   "q": "Compared with plasma, what is the osmolality of the tubular fluid entering the distal convoluted tubule?",
-   "options": [
-    "Hypertonic",
-    "Hypotonic",
-    "Isotonic",
-    "Variable with ADH"
-   ],
-   "answer": 1,
-   "explain": "The fluid is diluted in the thick ascending limb to about 100 mOsm/kg whether or not ADH is present. ADH changes the osmolality only later, in the collecting duct.",
-   "verified": false,
-   "open": {
-    "q": "Compared with plasma, what is the osmolality of the tubular fluid entering the distal convoluted tubule?",
-    "accept": [
-     "About 100 mOsm/kg",
-     "Dilute",
-     "Hypo-osmotic"
-    ]
-   }
-  },
-  {
-   "id": "ren-235",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Urea recycling",
-   "q": "Approximately what fraction of the osmolality of the inner medullary interstitium is due to urea?",
-   "options": [
-    "10%",
-    "25%",
-    "75%",
-    "50%"
-   ],
-   "answer": 3,
-   "explain": "Urea contributes about half of the osmolality of the inner medulla in antidiuresis. It is recycled between the collecting duct and the loop of Henle.",
-   "verified": false,
-   "open": {
-    "q": "Approximately what fraction of the osmolality of the inner medullary interstitium is due to urea?",
-    "accept": [
-     "About half",
-     "Around 40 to 50%",
-     "One-half"
-    ]
-   }
-  },
-  {
-   "id": "ren-236",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Urea recycling",
-   "q": "Under the influence of ADH, which transporter lets urea leave the inner medullary collecting duct and enter the interstitium?",
-   "options": [
-    "UT-A1",
-    "NKCC2",
-    "ENaC",
-    "NCC"
-   ],
-   "answer": 0,
-   "explain": "ADH increases the activity of UT-A1 and UT-A3 in the inner medullary collecting duct. Urea then moves into the interstitium and raises the medullary osmolality.",
-   "verified": false,
-   "open": {
-    "q": "Under the influence of ADH, which transporter lets urea leave the inner medullary collecting duct and enter the interstitium?",
-    "accept": [
-     "Urea transporter",
-     "Facilitative urea carrier",
-     "UT-A3"
-    ]
-   }
-  },
-  {
-   "id": "ren-237",
-   "type": "mcq",
-   "level": 2,
-   "sub": "ADH action",
-   "q": "ADH increases the water permeability of the collecting duct through which second messenger?",
-   "options": [
-    "IP3",
-    "cGMP",
-    "cAMP",
-    "Calcium-calmodulin"
-   ],
-   "answer": 2,
-   "explain": "ADH binds V2 receptors, which activate adenylyl cyclase through a Gs protein. The rise in cAMP triggers insertion of aquaporin-2 vesicles into the apical membrane.",
-   "verified": false,
-   "open": {
-    "q": "ADH increases the water permeability of the collecting duct through which second messenger?",
-    "accept": [
-     "Cyclic AMP",
-     "3',5'-cyclic adenosine monophosphate",
-     "Adenylyl cyclase product"
-    ]
-   }
-  },
-  {
-   "id": "ren-238",
-   "type": "mcq",
-   "level": 2,
-   "sub": "ADH action",
-   "q": "Water entering collecting duct principal cells through aquaporin-2 leaves across the basolateral membrane through which channel?",
-   "options": [
-    "AQP1",
-    "AQP2",
-    "AQP3",
-    "AQP5"
-   ],
-   "answer": 2,
-   "explain": "AQP3 and AQP4 are constitutively present in the basolateral membrane. AQP2 is the ADH-regulated channel in the apical membrane.",
-   "verified": false,
-   "open": {
-    "q": "Water entering collecting duct principal cells through aquaporin-2 leaves across the basolateral membrane through which channels?",
-    "accept": [
-     "AQP3 and AQP4",
-     "Basolateral aquaporins",
-     "Constitutive basolateral water channels"
-    ]
-   }
-  },
-  {
-   "id": "ren-239",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Vasa recta",
-   "q": "Which vessels preserve the medullary osmotic gradient by acting as countercurrent exchangers?",
-   "options": [
-    "Arcuate arteries",
-    "Peritubular capillaries",
-    "Efferent arterioles",
-    "Vasa recta"
-   ],
-   "answer": 3,
-   "explain": "The vasa recta are hairpin capillaries that run alongside the loops of Henle. Solutes and water exchange between their two limbs, so little solute is carried out of the medulla.",
-   "verified": false,
-   "open": {
-    "q": "Which vessels preserve the medullary osmotic gradient by acting as countercurrent exchangers?",
-    "accept": [
-     "Straight vessels of the medulla",
-     "Vessels running alongside the loops of Henle",
-     "Medullary capillary loops"
-    ]
-   }
-  },
-  {
-   "id": "ren-240",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Vasa recta",
-   "q": "Why is blood flow in the vasa recta kept low?",
-   "options": [
-    "To reduce oxygen delivery to the cortex",
-    "To limit solute washout from the medulla",
-    "To increase the glomerular filtration rate",
-    "To block urea reaching the interstitium"
-   ],
-   "answer": 1,
-   "explain": "Medullary blood flow is only 1 to 2% of renal blood flow. A high flow would wash solutes out of the medulla and flatten the gradient, but the low flow makes the medulla prone to hypoxia.",
-   "verified": false,
-   "open": {
-    "q": "Why is blood flow in the vasa recta kept low?",
-    "accept": [
-     "To prevent washout of the medullary gradient",
-     "To avoid removing medullary solutes",
-     "To preserve the osmotic gradient"
-    ]
-   }
-  },
-  {
-   "id": "ren-241",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical correlations",
-   "q": "Furosemide reduces the ability to concentrate urine mainly because it:",
-   "options": [
-    "Dissipates the medullary gradient",
-    "Blocks water channels in the duct",
-    "Increases ADH breakdown in the liver",
-    "Raises urea delivery to the loop"
-   ],
-   "answer": 0,
-   "explain": "Furosemide blocks NKCC2, so the single effect is lost and the medullary gradient falls. The urine becomes close to isotonic.",
-   "verified": false,
-   "open": {
-    "q": "By what mechanism does furosemide reduce the ability to concentrate urine?",
-    "accept": [
-     "Loss of the single effect",
-     "Washout of the medullary osmotic gradient",
-     "Blocking NKCC2 in the thick ascending limb"
-    ]
-   }
-  },
-  {
-   "id": "ren-242",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Urine osmolality",
-   "q": "A healthy man excretes 600 mOsm of solute daily, and his maximum urine osmolality is 1200 mOsm/kg. What is the minimum urine volume he must pass per day?",
-   "options": [
-    "0.25 L",
-    "1.0 L",
-    "2.0 L",
-    "0.5 L"
-   ],
-   "answer": 3,
-   "explain": "The minimum (obligatory) urine volume equals the solute load divided by the maximum urine osmolality: 600 divided by 1200 gives 0.5 L.",
-   "verified": false,
-   "open": {
-    "q": "A healthy man excretes 600 mOsm of solute daily, and his maximum urine osmolality is 1200 mOsm/kg. What is the minimum urine volume he must pass per day?",
-    "accept": [
-     "500 mL per day",
-     "Half a litre",
-     "600 divided by 1200 litres"
-    ]
-   }
-  },
-  {
-   "id": "ren-243",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Urine osmolality",
-   "q": "During maximal antidiuresis, free water clearance is:",
-   "options": [
-    "Positive",
-    "Negative",
-    "Zero",
-    "Equal to GFR"
-   ],
-   "answer": 1,
-   "explain": "Free water clearance is urine flow minus osmolar clearance. In antidiuresis the urine is hypertonic, so osmolar clearance exceeds urine flow and the value is below zero.",
-   "verified": false,
-   "open": {
-    "q": "During maximal antidiuresis, what is the sign of free water clearance?",
-    "accept": [
-     "Less than zero",
-     "Below zero",
-     "Minus value"
-    ]
-   }
-  },
-  {
-   "id": "ren-244",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical correlations",
-   "q": "A patient with uncontrolled diabetes mellitus passes large volumes of urine. Which mechanism is responsible for the polyuria?",
-   "options": [
-    "Osmotic diuresis from unreabsorbed glucose",
-    "ADH deficiency from pituitary damage",
-    "Nephrogenic resistance to ADH",
-    "Medullary washout from loop blockade"
-   ],
-   "answer": 0,
-   "explain": "Glucose that exceeds the transport maximum stays in the tubule and holds water in the lumen. The result is a solute diuresis with raised urine osmolality, unlike diabetes insipidus.",
-   "verified": false,
-   "open": {
-    "q": "A patient with uncontrolled diabetes mellitus passes large volumes of urine. Which mechanism is responsible for the polyuria?",
-    "accept": [
-     "Glucose-induced solute diuresis",
-     "Unreabsorbed glucose holding water in the tubule",
-     "Osmotic effect of glucose in the tubule"
-    ]
-   }
-  },
-  {
-   "id": "ren-245",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical correlations",
-   "q": "A patient with polyuria and polydipsia is water-deprived and urine osmolality stays at 150 mOsm/kg. After desmopressin it rises to 600 mOsm/kg. What is the diagnosis?",
-   "options": [
-    "Primary polydipsia",
-    "Nephrogenic diabetes insipidus",
-    "Central diabetes insipidus",
-    "SIADH"
-   ],
-   "answer": 2,
-   "explain": "A good response to desmopressin shows the kidney can respond to ADH but the pituitary is not making it. Nephrogenic diabetes insipidus would show no response.",
-   "verified": false,
-   "open": {
-    "q": "A patient with polyuria and polydipsia is water-deprived and urine osmolality stays at 150 mOsm/kg. After desmopressin it rises to 600 mOsm/kg. What is the diagnosis?",
-    "accept": [
-     "Cranial diabetes insipidus",
-     "Pituitary diabetes insipidus",
-     "ADH deficiency"
-    ]
-   }
-  },
-  {
-   "id": "ren-246",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical correlations",
-   "q": "A patient on long-term lithium has dilute urine that does not concentrate after desmopressin. Which defect is most likely?",
-   "options": [
-    "Absent secretion of ADH from the pituitary",
-    "Loss of blood flow in the vasa recta",
-    "Excess sodium reabsorption in the proximal tubule",
-    "Collecting duct resistance to ADH"
-   ],
-   "answer": 3,
-   "explain": "Lithium impairs the response of the principal cells to ADH and reduces aquaporin-2 expression, causing nephrogenic diabetes insipidus.",
-   "verified": false,
-   "open": {
-    "q": "A patient on long-term lithium has dilute urine that does not concentrate after desmopressin. Which defect is most likely?",
-    "accept": [
-     "Nephrogenic diabetes insipidus",
-     "ADH resistance of the kidney",
-     "Failure of V2 receptor signalling"
-    ]
-   }
-  },
-  {
-   "id": "ren-247",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical correlations",
-   "q": "A woman drinks 12 litres of water daily and has low serum sodium and very dilute urine. After water deprivation her urine concentrates normally. What is the diagnosis?",
-   "options": [
-    "Central diabetes insipidus",
-    "Primary polydipsia",
-    "Nephrogenic diabetes insipidus",
-    "SIADH"
-   ],
-   "answer": 1,
-   "explain": "Excess water intake suppresses ADH appropriately, so the urine is dilute. When water is restricted, ADH rises and the kidneys concentrate normally.",
-   "verified": false,
-   "open": {
-    "q": "A woman drinks 12 litres of water daily and has low serum sodium and very dilute urine. After water deprivation her urine concentrates normally. What is the diagnosis?",
-    "accept": [
-     "Psychogenic polydipsia",
-     "Compulsive water drinking",
-     "Excess water intake"
-    ]
-   }
-  },
-  {
-   "id": "ren-248",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical correlations",
-   "q": "A patient with advanced chronic kidney disease has urine osmolality fixed near 300 mOsm/kg whatever the hydration. What is this called?",
-   "options": [
-    "Isosthenuria",
-    "Hyposthenuria",
-    "Oliguria",
-    "Polyuria"
-   ],
-   "answer": 0,
-   "explain": "Isosthenuria means urine of fixed osmolality equal to plasma. Damaged nephrons lose the countercurrent mechanism, so the kidney can neither concentrate nor dilute.",
-   "verified": false,
-   "open": {
-    "q": "A patient with advanced chronic kidney disease has urine osmolality fixed near 300 mOsm/kg whatever the hydration. What is this called?",
-    "accept": [
-     "Fixed urine osmolality",
-     "Urine isotonic with plasma",
-     "Loss of concentrating and diluting ability"
-    ]
-   }
-  },
-  {
-   "id": "ren-249",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Medullary gradient",
-   "q": "Prolonged high urine flow reduces maximal concentrating ability mainly because of:",
-   "options": [
-    "Loss of ADH receptors",
-    "Lower filtration fraction",
-    "Medullary washout",
-    "Raised plasma oncotic pressure"
-   ],
-   "answer": 2,
-   "explain": "A high flow through the medulla washes out urea and NaCl from the interstitium. The gradient takes hours to days to rebuild.",
-   "verified": false,
-   "open": {
-    "q": "Prolonged high urine flow reduces maximal concentrating ability mainly because of which process?",
-    "accept": [
-     "Washout of the medullary gradient",
-     "Dissipation of the medullary osmotic gradient",
-     "Loss of medullary interstitial solutes"
-    ]
-   }
-  },
-  {
-   "id": "ren-250",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ADH action",
-   "q": "Which water channel is constitutively present in the proximal tubule and the thin descending limb?",
-   "options": [
-    "Aquaporin-1",
-    "Aquaporin-2",
-    "Aquaporin-3",
-    "Aquaporin-4"
-   ],
-   "answer": 0,
-   "explain": "Aquaporin-1 is not regulated by ADH and gives these segments high water permeability. Aquaporin-2 is the ADH-regulated channel of the collecting duct.",
-   "verified": false,
-   "open": {
-    "q": "Which water channel is constitutively present in the proximal tubule and the thin descending limb?",
-    "accept": [
-     "AQP1",
-     "CHIP28",
-     "Colton antigen channel"
-    ]
-   }
-  },
-  {
-   "id": "ren-251",
-   "type": "mcq",
-   "level": 1,
-   "sub": "ADH action",
-   "q": "Which nephron segment becomes water permeable under the influence of ADH?",
-   "options": [
-    "Proximal tubule",
-    "Thick ascending limb",
-    "Thin ascending limb",
-    "Collecting duct"
-   ],
-   "answer": 3,
-   "explain": "ADH inserts aquaporin-2 into the apical membrane of principal cells in the late distal tubule and collecting duct. The thick ascending limb stays water-impermeable.",
-   "verified": false,
-   "open": {
-    "q": "Which nephron segment becomes water permeable under the influence of ADH?",
-    "accept": [
-     "Principal cells of the collecting duct",
-     "Late distal tubule and collecting duct",
-     "Distal nephron"
-    ]
-   }
-  },
-  {
-   "id": "ren-252",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Urea recycling",
-   "q": "A malnourished patient on a very low-protein diet cannot concentrate urine well, although ADH is normal. Which mechanism is mainly impaired?",
-   "options": [
-    "Aquaporin-2 insertion",
-    "Active NaCl transport in the thick ascending limb",
-    "Urea recycling to the medullary interstitium",
-    "Glomerular filtration of glucose"
-   ],
-   "answer": 2,
-   "explain": "Low protein intake reduces urea production, so less urea is available to build the inner medullary gradient. Concentrating ability returns when protein intake is restored.",
-   "verified": false,
-   "open": {
-    "q": "A malnourished patient on a very low-protein diet cannot concentrate urine well, although ADH is normal. Which mechanism is mainly impaired?",
-    "accept": [
-     "Reduced medullary urea",
-     "Urea contribution to the gradient",
-     "Low urea in the inner medulla"
-    ]
-   }
-  },
-  {
-   "id": "ren-253",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Countercurrent mechanism",
-   "q": "Why does the osmolality of tubular fluid rise as it descends the thin descending limb?",
-   "options": [
-    "Potassium is secreted into the lumen",
-    "Water leaves by osmosis",
-    "NaCl is secreted into the lumen",
-    "Glucose is added to the lumen"
-   ],
-   "answer": 1,
-   "explain": "The interstitium becomes progressively more hypertonic with depth, so water moves out through aquaporin-1. The remaining fluid becomes more concentrated.",
-   "verified": false,
-   "open": {
-    "q": "Why does the osmolality of tubular fluid rise as it descends the thin descending limb?",
-    "accept": [
-     "Water moves out by osmosis",
-     "Water loss to the hypertonic interstitium",
-     "Osmotic water reabsorption"
-    ]
-   }
-  },
-  {
-   "id": "ren-254",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Countercurrent mechanism",
-   "q": "At which point is the tubular fluid osmolality highest during antidiuresis?",
-   "options": [
-    "End of the proximal tubule",
-    "Start of the thick ascending limb",
-    "Midpoint of the thick ascending limb",
-    "Tip of the loop in the papilla"
-   ],
-   "answer": 3,
-   "explain": "Fluid in the loop equilibrates with the interstitium, so it reaches its highest osmolality, about 1200 mOsm/kg, at the hairpin bend deep in the medulla.",
-   "verified": false,
-   "open": {
-    "q": "At which point along the loop of Henle is the tubular fluid osmolality highest during antidiuresis?",
-    "accept": [
-     "Hairpin bend of the loop",
-     "Bottom of the loop of Henle",
-     "Papillary tip of the loop"
-    ]
-   }
-  },
-  {
-   "id": "ren-255",
-   "type": "mcq",
-   "level": 2,
-   "sub": "ADH action",
-   "q": "Alcohol increases urine volume mainly because it:",
-   "options": [
-    "Blocks NKCC2 in the thick ascending limb",
-    "Dilates the efferent arteriole",
-    "Inhibits ADH release from the pituitary",
-    "Raises plasma aldosterone"
-   ],
-   "answer": 2,
-   "explain": "Alcohol suppresses ADH secretion, so the collecting duct stays water-impermeable and a water diuresis follows. This is why dilute urine is passed after drinking.",
-   "verified": false,
-   "open": {
-    "q": "By what mechanism does alcohol increase urine volume?",
-    "accept": [
-     "Suppression of ADH secretion",
-     "Reduced antidiuretic hormone release",
-     "Inhibition of vasopressin release"
-    ]
-   }
-  }
- ]
+  "topic": "phys-urine-concentration",
+  "questions": [
+    {
+      "id": "ren-039",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Which two mechanisms allow the kidney to produce concentrated urine?",
+      "options": [
+        "Glomerular filtration and secretion",
+        "Aldosterone and renin",
+        "Countercurrent multiplier and countercurrent exchanger",
+        "Osmoreceptors and baroreceptors"
+      ],
+      "answer": 2,
+      "explain": "The loop of Henle builds the gradient. The vasa recta preserve it.",
+      "verified": false,
+      "open": {
+        "q": "Which two mechanisms allow the kidney to produce concentrated urine?",
+        "accept": [
+          "countercurrent multiplier and exchanger",
+          "multiplier and exchanger"
+        ]
+      }
+    },
+    {
+      "id": "ren-040",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Which structure acts as the countercurrent multiplier?",
+      "options": [
+        "Vasa recta",
+        "Loop of Henle",
+        "Collecting duct",
+        "Proximal tubule"
+      ],
+      "answer": 1,
+      "explain": "The loop multiplies a small horizontal gradient into a large vertical one.",
+      "verified": false,
+      "open": {
+        "q": "Which structure acts as the countercurrent multiplier?",
+        "accept": [
+          "loop of henle",
+          "henle's loop",
+          "loops of henle"
+        ]
+      }
+    },
+    {
+      "id": "ren-041",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Which structure acts as the countercurrent exchanger?",
+      "options": [
+        "Loop of Henle",
+        "Distal tubule",
+        "Afferent arteriole",
+        "Vasa recta"
+      ],
+      "answer": 3,
+      "explain": "Blood flows in a hairpin, taking up water from the medulla without washing out its solutes.",
+      "verified": false,
+      "open": {
+        "q": "Which structure acts as the countercurrent exchanger?",
+        "accept": [
+          "vasa recta"
+        ]
+      }
+    },
+    {
+      "id": "ren-042",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "What is the maximum osmolality the human kidney can reach in urine?",
+      "options": [
+        "About 300 mOsm/L",
+        "About 600 mOsm/L",
+        "About 1200 mOsm/L",
+        "About 3000 mOsm/L"
+      ],
+      "answer": 2,
+      "explain": "It is limited by the medullary gradient. Plasma is about 300 mOsm/L.",
+      "verified": false,
+      "open": {
+        "q": "What is the maximum osmolality the human kidney can reach in urine?",
+        "accept": [
+          "1200",
+          "1200 mosm/l",
+          "1200-1400",
+          "1200 mosm"
+        ]
+      }
+    },
+    {
+      "id": "ren-043",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "What is the main transport feature of the thick ascending limb?",
+      "options": [
+        "It is water-impermeable and reabsorbs Na+, K+ and 2Cl−",
+        "It is highly permeable to water",
+        "It reabsorbs water under ADH control",
+        "It secretes urea"
+      ],
+      "answer": 0,
+      "explain": "NKCC2 pumps solutes out while water stays in, so the fluid becomes dilute. This is the diluting segment.",
+      "verified": false,
+      "open": {
+        "q": "What is the main transport feature of the thick ascending limb?",
+        "accept": [
+          "impermeable to water",
+          "Na-K-2Cl",
+          "NKCC2",
+          "active reabsorption of sodium"
+        ]
+      }
+    },
+    {
+      "id": "ren-044",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Is the tubular fluid entering the distal convoluted tubule hypotonic, isotonic or hypertonic compared with plasma?",
+      "options": [
+        "Isotonic",
+        "Hypertonic",
+        "Hypotonic",
+        "It varies with ADH"
+      ],
+      "answer": 2,
+      "explain": "The thick ascending limb removes solute without water, leaving the fluid at about 100 mOsm/L.",
+      "verified": false,
+      "open": {
+        "q": "Is the tubular fluid entering the distal convoluted tubule hypotonic, isotonic or hypertonic compared with plasma?",
+        "accept": [
+          "hypotonic",
+          "hypo-osmotic",
+          "dilute"
+        ]
+      }
+    },
+    {
+      "id": "ren-045",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Which solutes mainly create the high osmolality of the renal medulla?",
+      "options": [
+        "Glucose and amino acids",
+        "Sodium chloride and urea",
+        "Potassium and calcium",
+        "Proteins and lipids"
+      ],
+      "answer": 1,
+      "explain": "NaCl is pumped out of the ascending limb. Urea is recycled from the collecting duct.",
+      "verified": false,
+      "open": {
+        "q": "Which solutes mainly create the high osmolality of the renal medulla?",
+        "accept": [
+          "sodium chloride and urea",
+          "NaCl and urea",
+          "urea and sodium",
+          "urea and NaCl"
+        ]
+      }
+    },
+    {
+      "id": "ren-046",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Which hormone makes the collecting duct permeable to water so that urine can be concentrated?",
+      "options": [
+        "Antidiuretic hormone (vasopressin)",
+        "Aldosterone",
+        "Atrial natriuretic peptide",
+        "Oxytocin"
+      ],
+      "answer": 0,
+      "explain": "Without ADH, the collecting duct stays water-impermeable and dilute urine is passed.",
+      "verified": false,
+      "open": {
+        "q": "Which hormone makes the collecting duct permeable to water so that urine can be concentrated?",
+        "accept": [
+          "vasopressin",
+          "antidiuretic hormone",
+          "ADH",
+          "AVP"
+        ]
+      }
+    },
+    {
+      "id": "ren-047",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "What causes central diabetes insipidus?",
+      "options": [
+        "Deficiency of ADH secretion",
+        "Lack of kidney response to ADH",
+        "Excess ADH from a tumour",
+        "Deficiency of aldosterone"
+      ],
+      "answer": 0,
+      "explain": "Damage to the hypothalamus or posterior pituitary reduces ADH. It responds to desmopressin.",
+      "verified": false,
+      "open": {
+        "q": "What causes central diabetes insipidus?",
+        "accept": [
+          "lack of ADH",
+          "ADH deficiency",
+          "low vasopressin",
+          "deficiency of ADH"
+        ]
+      }
+    },
+    {
+      "id": "ren-048",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "What causes nephrogenic diabetes insipidus?",
+      "options": [
+        "Failure of ADH synthesis in the hypothalamus",
+        "Excess insulin",
+        "Failure of the collecting duct to respond to ADH",
+        "Aldosterone excess"
+      ],
+      "answer": 2,
+      "explain": "ADH levels are normal or high, but the kidney does not respond. Desmopressin does not help.",
+      "verified": false,
+      "open": {
+        "q": "What causes nephrogenic diabetes insipidus?",
+        "accept": [
+          "kidney not responding to ADH",
+          "resistance to ADH",
+          "V2 receptor defect",
+          "kidney resistance to ADH"
+        ]
+      }
+    },
+    {
+      "id": "ren-049",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "What urine is typical of diabetes insipidus?",
+      "options": [
+        "Small volumes of concentrated urine",
+        "Large volumes of dilute urine",
+        "Large volumes of urine with glucose",
+        "No urine"
+      ],
+      "answer": 1,
+      "explain": "The patient has polyuria and polydipsia, with low urine osmolality and no glycosuria.",
+      "verified": false,
+      "open": {
+        "q": "What urine is typical of diabetes insipidus?",
+        "accept": [
+          "polyuria",
+          "dilute urine",
+          "large volume of dilute urine",
+          "dilute polyuria"
+        ]
+      }
+    },
+    {
+      "id": "ren-050",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "Which diuretic impairs the countercurrent multiplier by blocking the Na-K-2Cl cotransporter?",
+      "options": [
+        "Spironolactone",
+        "Furosemide",
+        "Acetazolamide",
+        "Mannitol"
+      ],
+      "answer": 1,
+      "explain": "Furosemide blocks the Na+-K+-2Cl− cotransporter (NKCC2) in the thick ascending limb. This reduces medullary NaCl accumulation and weakens the osmotic gradient that normally drives water reabsorption from the collecting duct, impairing urine concentration.",
+      "verified": false,
+      "open": {
+        "q": "Which diuretic impairs the countercurrent multiplier by blocking the Na-K-2Cl cotransporter?",
+        "accept": [
+          "loop diuretics",
+          "frusemide",
+          "furosemide"
+        ]
+      }
+    },
+    {
+      "id": "ren-051",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Ch 53 Concentration of urine",
+      "q": "What is the lowest urine osmolality the kidney can produce (maximally dilute urine)?",
+      "options": [
+        "About 50 mOsm/L",
+        "About 300 mOsm/L",
+        "About 600 mOsm/L",
+        "About 1200 mOsm/L"
+      ],
+      "answer": 0,
+      "explain": "With no ADH, the kidney can excrete urine at about 50 mOsm/L.",
+      "verified": false,
+      "open": {
+        "q": "What is the lowest urine osmolality the kidney can produce (maximally dilute urine)?",
+        "accept": [
+          "50",
+          "50 mosm/l",
+          "50-100",
+          "50 mosm"
+        ]
+      }
+    },
+    {
+      "id": "ren-226",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Urine osmolality",
+      "q": "What is the maximum urine osmolality that a healthy human kidney can produce?",
+      "options": [
+        "600 mOsm/kg",
+        "1200 mOsm/kg",
+        "2400 mOsm/kg",
+        "3000 mOsm/kg"
+      ],
+      "answer": 1,
+      "explain": "Humans can concentrate urine to about 1200 mOsm/kg, roughly four times plasma osmolality. Desert rodents reach much higher values because of their longer loops of Henle.",
+      "verified": false,
+      "open": {
+        "q": "What is the maximum urine osmolality that a healthy human kidney can produce?",
+        "accept": [
+          "Roughly four times plasma osmolality",
+          "1.2 osmol/kg",
+          "1400 mOsm/kg"
+        ]
+      }
+    },
+    {
+      "id": "ren-227",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Urine osmolality",
+      "q": "What is the lowest urine osmolality the kidney can produce when ADH is completely absent?",
+      "options": [
+        "300 mOsm/kg",
+        "150 mOsm/kg",
+        "100 mOsm/kg",
+        "50 mOsm/kg"
+      ],
+      "answer": 3,
+      "explain": "Without ADH the collecting duct stays impermeable to water, so the dilute fluid from the thick ascending limb is passed on, giving urine of about 50 mOsm/kg.",
+      "verified": false,
+      "open": {
+        "q": "What is the lowest urine osmolality the kidney can produce when ADH is completely absent?",
+        "accept": [
+          "50 to 100 mOsm/kg",
+          "Roughly one-sixth of plasma osmolality",
+          "Maximally dilute urine"
+        ]
+      }
+    },
+    {
+      "id": "ren-228",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Medullary gradient",
+      "q": "Which two solutes mainly create the osmotic gradient in the renal medullary interstitium?",
+      "options": [
+        "NaCl and urea",
+        "Glucose and amino acids",
+        "Potassium and phosphate",
+        "Bicarbonate and calcium"
+      ],
+      "answer": 0,
+      "explain": "NaCl accounts for most of the gradient in the outer medulla, while urea adds a large share in the inner medulla.",
+      "verified": false,
+      "open": {
+        "q": "Which two solutes mainly create the osmotic gradient in the renal medullary interstitium?",
+        "accept": [
+          "Sodium chloride and urea",
+          "Salt and urea",
+          "Na+, Cl- and urea"
+        ]
+      }
+    },
+    {
+      "id": "ren-229",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Countercurrent mechanism",
+      "q": "Which structure acts as the countercurrent multiplier in the kidney?",
+      "options": [
+        "Vasa recta",
+        "Collecting duct",
+        "Loop of Henle",
+        "Distal convoluted tubule"
+      ],
+      "answer": 2,
+      "explain": "The loop of Henle multiplies the small horizontal gradient created by the thick ascending limb into a large vertical gradient along the medulla. The vasa recta act as the countercurrent exchanger.",
+      "verified": false,
+      "open": {
+        "q": "Which structure acts as the countercurrent multiplier in the kidney?",
+        "accept": [
+          "Henle loop",
+          "Descending and ascending limbs of the nephron",
+          "Hairpin tubule of the nephron"
+        ]
+      }
+    },
+    {
+      "id": "ren-230",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Countercurrent mechanism",
+      "q": "Which process in the thick ascending limb generates the single effect?",
+      "options": [
+        "Passive water reabsorption",
+        "Sodium secretion",
+        "Urea secretion",
+        "Active NaCl reabsorption"
+      ],
+      "answer": 3,
+      "explain": "The thick ascending limb pumps NaCl out through the NKCC2 cotransporter but is impermeable to water. The interstitium becomes hypertonic and the tubular fluid becomes dilute.",
+      "verified": false,
+      "open": {
+        "q": "What process in the thick ascending limb of the loop of Henle creates the single effect?",
+        "accept": [
+          "NKCC2 transport",
+          "Na+-K+-2Cl- cotransport",
+          "Salt pumping without water"
+        ]
+      }
+    },
+    {
+      "id": "ren-231",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Countercurrent mechanism",
+      "q": "At any horizontal level of the medulla, the single effect creates an osmotic difference of about:",
+      "options": [
+        "20 mOsm/kg",
+        "200 mOsm/kg",
+        "600 mOsm/kg",
+        "1000 mOsm/kg"
+      ],
+      "answer": 1,
+      "explain": "The single effect is only about 200 mOsm/kg. Countercurrent flow multiplies it along the length of the loop to about 1200 mOsm/kg at the papilla.",
+      "verified": false,
+      "open": {
+        "q": "At any horizontal level of the medulla, how large is the osmotic difference created by the single effect?",
+        "accept": [
+          "Approximately 0.2 osmol/kg",
+          "200 mOsm per litre difference",
+          "About a sixth of the papillary osmolality"
+        ]
+      }
+    },
+    {
+      "id": "ren-232",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Countercurrent mechanism",
+      "q": "The thin descending limb of the loop of Henle is highly permeable to which substance?",
+      "options": [
+        "Water",
+        "Sodium",
+        "Urea",
+        "Potassium"
+      ],
+      "answer": 0,
+      "explain": "The thin descending limb has abundant aquaporin-1 but is poorly permeable to solutes. Water leaves by osmosis and the tubular fluid becomes more concentrated as it descends.",
+      "verified": false,
+      "open": {
+        "q": "The thin descending limb of the loop of Henle is highly permeable to which substance?",
+        "accept": [
+          "H2O",
+          "AQP1-mediated water movement",
+          "Solute-free water"
+        ]
+      }
+    },
+    {
+      "id": "ren-233",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Countercurrent mechanism",
+      "q": "The thin ascending limb is permeable to NaCl but almost impermeable to which substance?",
+      "options": [
+        "Sodium",
+        "Chloride",
+        "Water",
+        "Urea"
+      ],
+      "answer": 2,
+      "explain": "NaCl leaves the thin ascending limb passively down its gradient while water cannot follow. This adds solute to the medulla and dilutes the tubular fluid.",
+      "verified": false,
+      "open": {
+        "q": "The thin ascending limb is permeable to NaCl but almost impermeable to which substance?",
+        "accept": [
+          "H2O",
+          "Free water",
+          "Aquaporin-dependent water movement"
+        ]
+      }
+    },
+    {
+      "id": "ren-234",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Countercurrent mechanism",
+      "q": "Compared with plasma, what is the osmolality of the tubular fluid entering the distal convoluted tubule?",
+      "options": [
+        "Hypertonic",
+        "Hypotonic",
+        "Isotonic",
+        "Variable with ADH"
+      ],
+      "answer": 1,
+      "explain": "The fluid is diluted in the thick ascending limb to about 100 mOsm/kg whether or not ADH is present. ADH changes the osmolality only later, in the collecting duct.",
+      "verified": false,
+      "open": {
+        "q": "Compared with plasma, what is the osmolality of the tubular fluid entering the distal convoluted tubule?",
+        "accept": [
+          "About 100 mOsm/kg",
+          "Dilute",
+          "Hypo-osmotic"
+        ]
+      }
+    },
+    {
+      "id": "ren-235",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Urea recycling",
+      "q": "Approximately what fraction of the osmolality of the inner medullary interstitium is due to urea?",
+      "options": [
+        "10%",
+        "25%",
+        "75%",
+        "50%"
+      ],
+      "answer": 3,
+      "explain": "Urea contributes about half of the osmolality of the inner medulla in antidiuresis. It is recycled between the collecting duct and the loop of Henle.",
+      "verified": false,
+      "open": {
+        "q": "Approximately what fraction of the osmolality of the inner medullary interstitium is due to urea?",
+        "accept": [
+          "About half",
+          "Around 40 to 50%",
+          "One-half"
+        ]
+      }
+    },
+    {
+      "id": "ren-236",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Urea recycling",
+      "q": "Under the influence of ADH, which transporter lets urea leave the inner medullary collecting duct and enter the interstitium?",
+      "options": [
+        "UT-A1",
+        "NKCC2",
+        "ENaC",
+        "NCC"
+      ],
+      "answer": 0,
+      "explain": "ADH increases the activity of UT-A1 and UT-A3 in the inner medullary collecting duct. Urea then moves into the interstitium and raises the medullary osmolality.",
+      "verified": false,
+      "open": {
+        "q": "Under the influence of ADH, which transporter lets urea leave the inner medullary collecting duct and enter the interstitium?",
+        "accept": [
+          "Urea transporter",
+          "Facilitative urea carrier",
+          "UT-A3"
+        ]
+      }
+    },
+    {
+      "id": "ren-237",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ADH action",
+      "q": "ADH increases the water permeability of the collecting duct through which second messenger?",
+      "options": [
+        "IP3",
+        "cGMP",
+        "cAMP",
+        "Calcium-calmodulin"
+      ],
+      "answer": 2,
+      "explain": "ADH binds V2 receptors, which activate adenylyl cyclase through a Gs protein. The rise in cAMP triggers insertion of aquaporin-2 vesicles into the apical membrane.",
+      "verified": false,
+      "open": {
+        "q": "ADH increases the water permeability of the collecting duct through which second messenger?",
+        "accept": [
+          "Cyclic AMP",
+          "3',5'-cyclic adenosine monophosphate",
+          "Adenylyl cyclase product"
+        ]
+      }
+    },
+    {
+      "id": "ren-238",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ADH action",
+      "q": "Water entering collecting duct principal cells through aquaporin-2 leaves across the basolateral membrane through which channel?",
+      "options": [
+        "AQP1",
+        "AQP2",
+        "AQP3",
+        "AQP5"
+      ],
+      "answer": 2,
+      "explain": "AQP3 and AQP4 are constitutively present in the basolateral membrane. AQP2 is the ADH-regulated channel in the apical membrane.",
+      "verified": false,
+      "open": {
+        "q": "Water entering collecting duct principal cells through aquaporin-2 leaves across the basolateral membrane through which channels?",
+        "accept": [
+          "AQP3 and AQP4",
+          "Basolateral aquaporins",
+          "Constitutive basolateral water channels"
+        ]
+      }
+    },
+    {
+      "id": "ren-239",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Vasa recta",
+      "q": "Which vessels preserve the medullary osmotic gradient by acting as countercurrent exchangers?",
+      "options": [
+        "Arcuate arteries",
+        "Peritubular capillaries",
+        "Efferent arterioles",
+        "Vasa recta"
+      ],
+      "answer": 3,
+      "explain": "The vasa recta are hairpin capillaries that run alongside the loops of Henle. Solutes and water exchange between their two limbs, so little solute is carried out of the medulla.",
+      "verified": false,
+      "open": {
+        "q": "Which vessels preserve the medullary osmotic gradient by acting as countercurrent exchangers?",
+        "accept": [
+          "Straight vessels of the medulla",
+          "Vessels running alongside the loops of Henle",
+          "Medullary capillary loops"
+        ]
+      }
+    },
+    {
+      "id": "ren-240",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Vasa recta",
+      "q": "Why is blood flow in the vasa recta kept low?",
+      "options": [
+        "To reduce oxygen delivery to the cortex",
+        "To limit solute washout from the medulla",
+        "To increase the glomerular filtration rate",
+        "To block urea reaching the interstitium"
+      ],
+      "answer": 1,
+      "explain": "Medullary blood flow is only 1 to 2% of renal blood flow. A high flow would wash solutes out of the medulla and flatten the gradient, but the low flow makes the medulla prone to hypoxia.",
+      "verified": false,
+      "open": {
+        "q": "Why is blood flow in the vasa recta kept low?",
+        "accept": [
+          "To prevent washout of the medullary gradient",
+          "To avoid removing medullary solutes",
+          "To preserve the osmotic gradient"
+        ]
+      }
+    },
+    {
+      "id": "ren-241",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical correlations",
+      "q": "Furosemide reduces the ability to concentrate urine mainly because it:",
+      "options": [
+        "Dissipates the medullary gradient",
+        "Blocks water channels in the duct",
+        "Increases ADH breakdown in the liver",
+        "Raises urea delivery to the loop"
+      ],
+      "answer": 0,
+      "explain": "Furosemide blocks NKCC2, so the single effect is lost and the medullary gradient falls. The urine becomes close to isotonic.",
+      "verified": false,
+      "open": {
+        "q": "By what mechanism does furosemide reduce the ability to concentrate urine?",
+        "accept": [
+          "Loss of the single effect",
+          "Washout of the medullary osmotic gradient",
+          "Blocking NKCC2 in the thick ascending limb"
+        ]
+      }
+    },
+    {
+      "id": "ren-242",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Urine osmolality",
+      "q": "A healthy man excretes 600 mOsm of solute daily, and his maximum urine osmolality is 1200 mOsm/kg. What is the minimum urine volume he must pass per day?",
+      "options": [
+        "0.25 L",
+        "1.0 L",
+        "2.0 L",
+        "0.5 L"
+      ],
+      "answer": 3,
+      "explain": "The minimum (obligatory) urine volume equals the solute load divided by the maximum urine osmolality: 600 divided by 1200 gives 0.5 L.",
+      "verified": false,
+      "open": {
+        "q": "A healthy man excretes 600 mOsm of solute daily, and his maximum urine osmolality is 1200 mOsm/kg. What is the minimum urine volume he must pass per day?",
+        "accept": [
+          "500 mL per day",
+          "Half a litre",
+          "600 divided by 1200 litres"
+        ]
+      }
+    },
+    {
+      "id": "ren-243",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Urine osmolality",
+      "q": "During maximal antidiuresis, free water clearance is:",
+      "options": [
+        "Positive",
+        "Negative",
+        "Zero",
+        "Equal to GFR"
+      ],
+      "answer": 1,
+      "explain": "Free water clearance is urine flow minus osmolar clearance. In antidiuresis the urine is hypertonic, so osmolar clearance exceeds urine flow and the value is below zero.",
+      "verified": false,
+      "open": {
+        "q": "During maximal antidiuresis, what is the sign of free water clearance?",
+        "accept": [
+          "Less than zero",
+          "Below zero",
+          "Minus value"
+        ]
+      }
+    },
+    {
+      "id": "ren-244",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A patient with uncontrolled diabetes mellitus passes large volumes of urine. Which mechanism is responsible for the polyuria?",
+      "options": [
+        "Osmotic diuresis from unreabsorbed glucose",
+        "ADH deficiency from pituitary damage",
+        "Nephrogenic resistance to ADH",
+        "Medullary washout from loop blockade"
+      ],
+      "answer": 0,
+      "explain": "Glucose that exceeds the transport maximum stays in the tubule and holds water in the lumen. The result is a solute diuresis with raised urine osmolality, unlike diabetes insipidus.",
+      "verified": false,
+      "open": {
+        "q": "A patient with uncontrolled diabetes mellitus passes large volumes of urine. Which mechanism is responsible for the polyuria?",
+        "accept": [
+          "Glucose-induced solute diuresis",
+          "Unreabsorbed glucose holding water in the tubule",
+          "Osmotic effect of glucose in the tubule"
+        ]
+      }
+    },
+    {
+      "id": "ren-245",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A patient with polyuria and polydipsia is water-deprived and urine osmolality stays at 150 mOsm/kg. After desmopressin it rises to 600 mOsm/kg. What is the diagnosis?",
+      "options": [
+        "Primary polydipsia",
+        "Nephrogenic diabetes insipidus",
+        "Central diabetes insipidus",
+        "SIADH"
+      ],
+      "answer": 2,
+      "explain": "A good response to desmopressin shows the kidney can respond to ADH but the pituitary is not making it. Nephrogenic diabetes insipidus would show no response.",
+      "verified": false,
+      "open": {
+        "q": "A patient with polyuria and polydipsia is water-deprived and urine osmolality stays at 150 mOsm/kg. After desmopressin it rises to 600 mOsm/kg. What is the diagnosis?",
+        "accept": [
+          "Cranial diabetes insipidus",
+          "Pituitary diabetes insipidus",
+          "ADH deficiency"
+        ]
+      }
+    },
+    {
+      "id": "ren-246",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A patient on long-term lithium has dilute urine that does not concentrate after desmopressin. Which defect is most likely?",
+      "options": [
+        "Absent secretion of ADH from the pituitary",
+        "Loss of blood flow in the vasa recta",
+        "Excess sodium reabsorption in the proximal tubule",
+        "Collecting duct resistance to ADH"
+      ],
+      "answer": 3,
+      "explain": "Lithium impairs the response of the principal cells to ADH and reduces aquaporin-2 expression, causing nephrogenic diabetes insipidus.",
+      "verified": false,
+      "open": {
+        "q": "A patient on long-term lithium has dilute urine that does not concentrate after desmopressin. Which defect is most likely?",
+        "accept": [
+          "Nephrogenic diabetes insipidus",
+          "ADH resistance of the kidney",
+          "Failure of V2 receptor signalling"
+        ]
+      }
+    },
+    {
+      "id": "ren-247",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A woman drinks 12 litres of water daily and has low serum sodium and very dilute urine. After water deprivation her urine concentrates normally. What is the diagnosis?",
+      "options": [
+        "Central diabetes insipidus",
+        "Primary polydipsia",
+        "Nephrogenic diabetes insipidus",
+        "SIADH"
+      ],
+      "answer": 1,
+      "explain": "Excess water intake suppresses ADH appropriately, so the urine is dilute. When water is restricted, ADH rises and the kidneys concentrate normally.",
+      "verified": false,
+      "open": {
+        "q": "A woman drinks 12 litres of water daily and has low serum sodium and very dilute urine. After water deprivation her urine concentrates normally. What is the diagnosis?",
+        "accept": [
+          "Psychogenic polydipsia",
+          "Compulsive water drinking",
+          "Excess water intake"
+        ]
+      }
+    },
+    {
+      "id": "ren-248",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A patient with advanced chronic kidney disease has urine osmolality fixed near 300 mOsm/kg whatever the hydration. What is this called?",
+      "options": [
+        "Isosthenuria",
+        "Hyposthenuria",
+        "Oliguria",
+        "Polyuria"
+      ],
+      "answer": 0,
+      "explain": "Isosthenuria means urine of fixed osmolality equal to plasma. Damaged nephrons lose the countercurrent mechanism, so the kidney can neither concentrate nor dilute.",
+      "verified": false,
+      "open": {
+        "q": "A patient with advanced chronic kidney disease has urine osmolality fixed near 300 mOsm/kg whatever the hydration. What is this called?",
+        "accept": [
+          "Fixed urine osmolality",
+          "Urine isotonic with plasma",
+          "Loss of concentrating and diluting ability"
+        ]
+      }
+    },
+    {
+      "id": "ren-249",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Medullary gradient",
+      "q": "Prolonged high urine flow reduces maximal concentrating ability mainly because of:",
+      "options": [
+        "Loss of ADH receptors",
+        "Lower filtration fraction",
+        "Medullary washout",
+        "Raised plasma oncotic pressure"
+      ],
+      "answer": 2,
+      "explain": "A high flow through the medulla washes out urea and NaCl from the interstitium. The gradient takes hours to days to rebuild.",
+      "verified": false,
+      "open": {
+        "q": "Prolonged high urine flow reduces maximal concentrating ability mainly because of which process?",
+        "accept": [
+          "Washout of the medullary gradient",
+          "Dissipation of the medullary osmotic gradient",
+          "Loss of medullary interstitial solutes"
+        ]
+      }
+    },
+    {
+      "id": "ren-250",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ADH action",
+      "q": "Which water channel is constitutively present in the proximal tubule and the thin descending limb?",
+      "options": [
+        "Aquaporin-1",
+        "Aquaporin-2",
+        "Aquaporin-3",
+        "Aquaporin-4"
+      ],
+      "answer": 0,
+      "explain": "Aquaporin-1 is not regulated by ADH and gives these segments high water permeability. Aquaporin-2 is the ADH-regulated channel of the collecting duct.",
+      "verified": false,
+      "open": {
+        "q": "Which water channel is constitutively present in the proximal tubule and the thin descending limb?",
+        "accept": [
+          "AQP1",
+          "CHIP28",
+          "Colton antigen channel"
+        ]
+      }
+    },
+    {
+      "id": "ren-251",
+      "type": "mcq",
+      "level": 1,
+      "sub": "ADH action",
+      "q": "Which nephron segment becomes water permeable under the influence of ADH?",
+      "options": [
+        "Proximal tubule",
+        "Thick ascending limb",
+        "Thin ascending limb",
+        "Collecting duct"
+      ],
+      "answer": 3,
+      "explain": "ADH inserts aquaporin-2 into the apical membrane of principal cells in the late distal tubule and collecting duct. The thick ascending limb stays water-impermeable.",
+      "verified": false,
+      "open": {
+        "q": "Which nephron segment becomes water permeable under the influence of ADH?",
+        "accept": [
+          "Principal cells of the collecting duct",
+          "Late distal tubule and collecting duct",
+          "Distal nephron"
+        ]
+      }
+    },
+    {
+      "id": "ren-252",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Urea recycling",
+      "q": "A malnourished patient on a very low-protein diet cannot concentrate urine well, although ADH is normal. Which mechanism is mainly impaired?",
+      "options": [
+        "Aquaporin-2 insertion",
+        "Active NaCl transport in the thick ascending limb",
+        "Urea recycling to the medullary interstitium",
+        "Glomerular filtration of glucose"
+      ],
+      "answer": 2,
+      "explain": "Low protein intake reduces urea production, so less urea is available to build the inner medullary gradient. Concentrating ability returns when protein intake is restored.",
+      "verified": false,
+      "open": {
+        "q": "A malnourished patient on a very low-protein diet cannot concentrate urine well, although ADH is normal. Which mechanism is mainly impaired?",
+        "accept": [
+          "Reduced medullary urea",
+          "Urea contribution to the gradient",
+          "Low urea in the inner medulla"
+        ]
+      }
+    },
+    {
+      "id": "ren-253",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Countercurrent mechanism",
+      "q": "Why does the osmolality of tubular fluid rise as it descends the thin descending limb?",
+      "options": [
+        "Potassium is secreted into the lumen",
+        "Water leaves by osmosis",
+        "NaCl is secreted into the lumen",
+        "Glucose is added to the lumen"
+      ],
+      "answer": 1,
+      "explain": "The interstitium becomes progressively more hypertonic with depth, so water moves out through aquaporin-1. The remaining fluid becomes more concentrated.",
+      "verified": false,
+      "open": {
+        "q": "Why does the osmolality of tubular fluid rise as it descends the thin descending limb?",
+        "accept": [
+          "Water moves out by osmosis",
+          "Water loss to the hypertonic interstitium",
+          "Osmotic water reabsorption"
+        ]
+      }
+    },
+    {
+      "id": "ren-254",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Countercurrent mechanism",
+      "q": "At which point is the tubular fluid osmolality highest during antidiuresis?",
+      "options": [
+        "End of the proximal tubule",
+        "Start of the thick ascending limb",
+        "Midpoint of the thick ascending limb",
+        "Tip of the loop in the papilla"
+      ],
+      "answer": 3,
+      "explain": "Fluid in the loop equilibrates with the interstitium, so it reaches its highest osmolality, about 1200 mOsm/kg, at the hairpin bend deep in the medulla.",
+      "verified": false,
+      "open": {
+        "q": "At which point along the loop of Henle is the tubular fluid osmolality highest during antidiuresis?",
+        "accept": [
+          "Hairpin bend of the loop",
+          "Bottom of the loop of Henle",
+          "Papillary tip of the loop"
+        ]
+      }
+    },
+    {
+      "id": "ren-255",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ADH action",
+      "q": "Alcohol increases urine volume mainly because it:",
+      "options": [
+        "Blocks NKCC2 in the thick ascending limb",
+        "Dilates the efferent arteriole",
+        "Inhibits ADH release from the pituitary",
+        "Raises plasma aldosterone"
+      ],
+      "answer": 2,
+      "explain": "Alcohol suppresses ADH secretion, so the collecting duct stays water-impermeable and a water diuresis follows. This is why dilute urine is passed after drinking.",
+      "verified": false,
+      "open": {
+        "q": "By what mechanism does alcohol increase urine volume?",
+        "accept": [
+          "Suppression of ADH secretion",
+          "Reduced antidiuretic hormone release",
+          "Inhibition of vasopressin release"
+        ]
+      }
+    },
+    {
+      "id": "ren-256",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Countercurrent mechanism",
+      "q": "A patient with prolonged poor protein intake has a reduced ability to produce concentrated urine despite an adequate rise in ADH. Which medullary solute contribution is most likely reduced?",
+      "options": [
+        "Urea",
+        "Glucose",
+        "Creatinine",
+        "Bicarbonate"
+      ],
+      "answer": 0,
+      "explain": "Urea recycling contributes substantially to inner medullary interstitial hyperosmolality. Low protein intake reduces urea generation and can impair maximal urine-concentrating ability even when ADH secretion is intact.",
+      "verified": false
+    },
+    {
+      "id": "ren-257",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Vasa recta",
+      "q": "Why does the descending limb of the vasa recta gain solute and lose water as it travels into the renal medulla?",
+      "options": [
+        "It passively equilibrates with the progressively hyperosmotic medullary interstitium",
+        "ADH actively pumps sodium into the vessel",
+        "The vasa recta actively secretes urea into the tubular lumen",
+        "Glomerular filtration continues along the vessel"
+      ],
+      "answer": 0,
+      "explain": "The vasa recta are countercurrent exchangers. As blood descends into the hyperosmotic medulla, water diffuses out and solutes diffuse in; the reverse occurs during ascent, limiting washout of the gradient.",
+      "verified": false
+    },
+    {
+      "id": "ren-258",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A patient with central diabetes insipidus receives desmopressin. Which change is expected in the collecting ducts?",
+      "options": [
+        "Insertion of aquaporin-2 channels into the apical membrane",
+        "Removal of aquaporin-2 channels from the apical membrane",
+        "Inhibition of V2-receptor signalling",
+        "Reduced water permeability despite increased cAMP"
+      ],
+      "answer": 0,
+      "explain": "Desmopressin activates V2 receptors on collecting-duct principal cells, increasing cAMP and promoting insertion of aquaporin-2 channels into the apical membrane, thereby increasing water reabsorption.",
+      "verified": false
+    },
+    {
+      "id": "ren-259",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ADH action",
+      "q": "Which nephron segment remains essentially impermeable to water even when circulating ADH is high, while continuing to reabsorb NaCl?",
+      "options": [
+        "Thick ascending limb of the loop of Henle",
+        "Thin descending limb of the loop of Henle",
+        "Late collecting duct",
+        "Proximal convoluted tubule"
+      ],
+      "answer": 0,
+      "explain": "The thick ascending limb reabsorbs NaCl through NKCC2 but is effectively water-impermeable. This dilutes tubular fluid and helps establish the medullary osmotic gradient.",
+      "verified": false
+    },
+    {
+      "id": "ren-260",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical correlations",
+      "q": "A patient with severe hypercalcaemia develops polyuria and cannot concentrate urine appropriately. Which mechanism best explains this effect?",
+      "options": [
+        "Impaired renal response to ADH, producing a nephrogenic diabetes-insipidus-like state",
+        "Excessive insertion of aquaporin-2 in collecting ducts",
+        "Increased urea recycling in the inner medulla",
+        "Increased water permeability of the thick ascending limb"
+      ],
+      "answer": 0,
+      "explain": "Hypercalcaemia can impair collecting-duct responsiveness to ADH and reduce aquaporin-2 expression or function, causing a nephrogenic diabetes-insipidus-like concentrating defect.",
+      "verified": false
+    }
+  ]
 }
