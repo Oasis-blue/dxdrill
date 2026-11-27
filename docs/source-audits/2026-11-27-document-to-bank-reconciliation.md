@@ -599,3 +599,14 @@ The first remediation batch has added **28 new single-best-answer Anatomy MCQs**
 The item register has been updated to link the new records to the source items they address. Where a new record covers only part of a multi-fact source item, the status remains **partial** rather than being overstated as direct. After this batch, the register classifies **154 direct matches, 394 partial matches and 36 remaining gaps** across all 584 source questions. This is a coverage improvement, not academic validation of the answer keys or new records.
 
 The remaining gaps are queued for further targeted additions. Existing topic IDs and file organisation have been preserved; no new curriculum topics or topic IDs were created.
+
+
+## 27. Targeted gap remediation — second batch and validation (27 November 2026)
+
+A second remediation batch added **39 further single-best-answer Anatomy MCQs** (5 to the thorax bank and 34 to the abdomen/pelvis bank) and **4 grouped True/False sets**. The questions target the remaining uncovered details in serratus posterior superior, abdominal surface landmarks, oesophageal relations and blood supply, colonic/rectal relations, hepatic fissures and portal branching, extrahepatic biliary anatomy, male urethral vessels, lumbar plexus branches, caval collaterals and coeliac visceral afferents.
+
+All 80 source items previously classified as gaps have now been linked to at least one relevant bank record. The item-level register therefore currently contains **181 direct matches, 403 partial matches and 0 remaining gaps**. This does not mean every detail in every multi-part source question is fully tested: items classified partial still have incomplete detail coverage and should be prioritised in any future expansion.
+
+**Remediation totals:** 67 new normal Anatomy MCQs and 12 new grouped T/F records were added across the two batches. New MCQs are marked `verified:false`; new T/F sets are marked `reviewStatus:draft-unverified` and `verified:false`. They remain pending academic review. The source's printed answer keys have not been independently validated.
+
+**Validation:** all 584 register items are reviewed against both formats; every matched bank ID resolves; and no duplicate IDs were found in the thorax, abdomen/pelvis or T/F files. Existing topic files and their topic IDs were retained; no curriculum topics were created or renamed.
