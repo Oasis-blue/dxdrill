@@ -52,7 +52,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
     return JSON.parse(t);
   }
   function check(obj){
-    var errors=[],warnings=[],quarantine=[],seen={};
+    var errors=[],warnings=[],quarantine=[],seen={},filenames={};
     function err(where,msg){errors.push(where+": "+msg);}
     function claim(id,where){
       if(typeof id!=="string"||! /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)){err(where,"ID must be lowercase kebab-case.");return;}
@@ -74,7 +74,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
       if(!own&& !/^https?:\/\/\S+$/i.test(String(a.sourceUrl||"")))err(p+".sourceUrl","A third-party image needs its source URL.");
       var file=String(a.file||""),parts=file.split("/");
       if(parts.length!==2||["gross","diagrams","clinical","xray"].indexOf(parts[0])<0||! /^[A-Za-z0-9][A-Za-z0-9._'-]*\.(jpg|jpeg|png|gif|webp)$/i.test(parts[1])||parts[1].indexOf("..")>=0)err(p+".file","Use a safe path like gross/specimen-01.jpg under an approved data/img folder.");
-      if(localFiles[parts[1]])warnings.push(p+".file: more than one asset uses the same filename.");
+      if(filenames[parts[1]])warnings.push(p+".file: more than one asset uses the same filename; select distinct filenames to avoid preview ambiguity.");filenames[parts[1]]=1;
       if(a.marks===null||typeof a.marks!=="object"||Array.isArray(a.marks))err(p+".marks","Use an object, even if empty.");
       else Object.keys(a.marks).forEach(function(k){if(!/^[A-Z0-9]$/.test(k)||!String(a.marks[k]||"").trim())err(p+".marks."+k,"Marker needs one visible letter/number and a proposed structure.");});
       if(a.unsure===true||String(a.check||"").trim())quarantine.push(p+": "+(a.check||"Asset is marked unsure."));
