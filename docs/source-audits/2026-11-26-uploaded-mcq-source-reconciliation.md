@@ -137,3 +137,31 @@ A first question-level pass of the newly OCR-readable Head & Neck section identi
 ## Audit correction — OCR evidence check (27 November 2026)
 
 A subsequent runtime check found that the claimed 336-page OCR output was **not present** in the active working directory. The earlier statement that all 336 pages had been OCR-processed, and the approximate 602,000-character count, therefore cannot currently be substantiated and must not be treated as completed work. Native text extraction confirms that `Anatomy MCQ.pdf` is image-only (zero extractable text across 336 pages). Full OCR and page-level reconciliation remain outstanding. The prior carotid-tubercle addition is retained as a source-informed original item, but it is not evidence that the scan has been comprehensively OCR-reviewed.
+
+
+## Verified full OCR and targeted reconciliation — 27 November 2026
+
+The image-only `Anatomy MCQ.pdf` has now been rendered and OCR-processed page by page: **336/336 pages**. The resulting local OCR text contains **486,080 characters**. This replaces the earlier unsubstantiated 602,000-character estimate; the earlier estimate was not supported by a retained output and was explicitly corrected above. The OCR text is retained in the processing workspace, not committed verbatim to the repository.
+
+The scan's section sequence and approximate page ranges are:
+- Head & Neck: pp. 11–63
+- Neuroanatomy: pp. 64–72
+- Abdomen: pp. 73–143
+- Lower limb: pp. 144–178
+- Thorax: pp. 179–209
+- Histology: pp. 210–221
+- Joints: pp. 222–224
+- Embryology: pp. 225–255
+- Upper limb: pp. 256–278
+- Miscellaneous: pp. 279–333
+
+These are OCR-derived section ranges, not a validated count of unique question stems. The scan interleaves question pages with answer/explanation pages, and OCR quality varies. Page-by-page question reconciliation against DxDrill is still required.
+
+Three additional independently worded, source-informed questions were added to existing banks:
+- `emb-embryonic-028`: third pharyngeal pouch derivatives (thymus and inferior parathyroids), prompted by the embryology section.
+- `gr-lower-limb-122`: usual termination of the small saphenous vein, prompted by the lower-limb source review.
+- `pi-motor-functions-of-the-gi-tract-021`: intestinal antiperistalsis during vomiting, prompted by the Elhariry GIT scan.
+
+The cumulative reconciliation count is now **44 original questions added** (41 previously recorded plus these 3). These additions remain `verified: false`. After each write, the affected bank was re-fetched from `main`; all three files parsed as JSON, had unique question IDs, and passed basic structural checks (non-empty stem, four options, valid answer index and explanation).
+
+**Coverage status:** the 336-page scan is now OCR-complete, but not fully question-reconciled. The text-based KLM, PDFDrive anatomy, Physiology MCQ/EMQ and Biochemistry collections also remain subject to systematic question-level coverage review. Extraction or chapter mapping alone is not counted as completed ingestion.
