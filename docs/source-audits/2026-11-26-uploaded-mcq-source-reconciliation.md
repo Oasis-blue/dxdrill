@@ -398,3 +398,18 @@ Five original MCQs were added to each of three topic banks:
 All three files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted expansion, not a claim of exhaustive reconciliation of every uploaded source.
 
 **Cumulative source-reconciliation additions: 178 original questions** (163 previously recorded plus these 15).
+
+
+## Epithelial histology, renal endocrine physiology and body fluids/coagulation — 27 November 2026
+
+Five original MCQs were added to each of three topic banks:
+
+**Anatomy / Histology — epithelium (9 → 14):** endothelial simple squamous epithelium, respiratory pseudostratified ciliated epithelium, intestinal absorptive columnar epithelium, non-keratinised oesophageal epithelium and stratified cuboidal sweat ducts.
+
+**Physiology — renal endocrine function (24 → 29):** ANP-mediated natriuresis, aldosterone escape, hypoxia-inducible factor in erythropoietin regulation, vasopressin V1-mediated vasoconstriction and beta-1 adrenergic stimulation of renin release.
+
+**Medical Biochemistry — body fluids and blood clotting (20 → 25):** isotonic saline compartment expansion, cell-volume response to hypertonicity, hypoalbuminaemic oedema, citrate-associated hypocalcaemia during transfusion and inhibition of fibrinolysis by PAI-1.
+
+The three files were committed to `main`. Each new item has four options, a valid answer index and an explanation; all remain `verified: false` pending academic review. Structural checks were performed after re-fetching the committed files. This is targeted expansion, not a claim of exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 193 original questions** (178 previously recorded plus these 15).
