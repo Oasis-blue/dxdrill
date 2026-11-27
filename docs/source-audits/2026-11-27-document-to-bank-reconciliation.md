@@ -165,3 +165,23 @@ The next four source chapters (printed pages 31–49) were reviewed from the raw
 These additions extend the question bank beyond the exact source prompts while remaining within the chapter learning objectives. The source's multiple-response answer keys were not copied as authoritative where wording or anatomy required qualification.
 
 **Updated thoracic bank count:** 95 questions. New records use sequential `GRTH-##` IDs and the existing JSON question schema. Chapters 9–25 of this source remain to be reviewed; no whole-document completion claim is made.
+
+
+### Follow-on review — Stomach through Liver (chapters 9–13)
+
+Printed pages 50–80 were reviewed against the live abdominal/pelvic bank. The source chapters cover the stomach; duodenum, jejunum and ileum; colon; rectum and anus; and liver. Existing bank coverage already included gastric arterial supply and ulcer relationships, duodenal anatomy and the major papilla, jejunal/ileal distinctions, appendicular and colonic arterial supply, the colonic watershed region, rectal venous drainage, and major hepatic landmarks and portal structures. This was a concept-level reconciliation, not a claim that every source MCQ has been individually paired with a bank record.
+
+Four additional questions were added to broaden depth beyond the source's exact prompts:
+- `APP-222`: gastric lymphatic drainage and its relevance to regional nodal spread in gastric carcinoma.
+- `APP-223`: ileal Peyer patches and mucosal immune surveillance.
+- `APP-224`: the bare area of the liver and its peritoneal boundaries.
+- `APP-225`: mesorectal fascia and the surgical plane used in total mesorectal excision.
+
+### Follow-on review — Pancreas, Spleen, Kidney and Ureters (chapters 15–17)
+
+Printed pages 86–102 were reviewed against the same bank. Existing coverage included pancreatic relations and the uncinate process, splenic ligaments and vessels, renal coverings and hilum arrangement, ureteric course and common narrowing sites, and renal transplantation relationships. Three further expansion questions were added:
+- `APP-226`: the superior and inferior pancreaticoduodenal arterial arcade linking coeliac and superior mesenteric territories.
+- `APP-227`: renal segmental arteries as functional end arteries and the consequence of occlusion.
+- `APP-228`: the left renal vein's relationship to the aorta and superior mesenteric artery (nutcracker anatomy).
+
+**Verification:** the abdominal/pelvic bank was re-fetched from `main` after both writes. It now contains 225 questions with 225 unique IDs; the latest appended IDs are `APP-226`–`APP-228`. These new questions remain `verified:false` pending academic review. Chapters 14 and 18–25 have not yet been reviewed in this sequence. No claim of full-source reconciliation is made.
