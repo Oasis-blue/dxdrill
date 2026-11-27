@@ -248,3 +248,18 @@ A review of the existing Medical Biochemistry vitamin bank (38 questions before 
 The updated file was re-fetched from main: 43 questions, 43 unique IDs, and zero basic structural errors (all records have a stem, four options, a valid answer index and an explanation). All five additions remain verified:false pending academic review.
 
 **Cumulative source-reconciliation additions: 78 original questions** (73 previously recorded plus these five). The uploaded Biochemistry collection is still being reconciled topic by topic; this focused expansion does not mean the full 5,000-MCQ book has been reviewed question by question.
+
+
+## Enzyme and bioenergetics expansion — 27 November 2026
+
+A targeted review of the enzyme/bioenergetics bank (40 questions before this pass) identified room for more clinically applied inhibition, respiratory-chain and cofactor questions. Five independently written MCQs were added to bc-enzymes-and-bioenergetics.json:
+
+- Organophosphate inhibition of acetylcholinesterase and the resulting cholinergic syndrome.
+- Rotenone inhibition of respiratory-chain Complex I.
+- Oligomycin blockade of the F0 proton channel of ATP synthase.
+- Zinc as the catalytic metal in carbonic anhydrase.
+- Serum ALT elevation as a marker of hepatocellular injury.
+
+The updated bank was fetched again from main: 45 questions, unique IDs, and zero basic structural errors. All five additions remain verified:false pending academic review.
+
+**Cumulative source-reconciliation additions: 83 original questions** (78 previously recorded plus these five). This was a focused topic expansion, not a full question-by-question reconciliation of the 5,000-MCQ source.
