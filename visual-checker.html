@@ -32,7 +32,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
 <script>
 (function(){
   var $=function(id){return document.getElementById(id);};
-  var state={topics:{},ids:{},images:[]}, last=null;
+  var state={topics:{},ids:{},images:[],manifest:null,assets:{assets:[]},stations:{stations:[]}}, last=null;
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
   function norm(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();}
   function get(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u+" ("+r.status+")");return r.json();});}
@@ -40,7 +40,7 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
     (cur.subjects||[]).forEach(function(s){(s.areas||[]).forEach(function(a){(a.topics||[]).forEach(function(t){state.topics[t.id]=t.name;});});});
     return Promise.all([get("data/manifest.json"),get("data/visual-assets.json").catch(function(){return {assets:[]};}),get("data/visual-stations.json").catch(function(){return {stations:[]};})]);
   }).then(function(all){
-    var manifest=all[0], assets=all[1].assets||[], stations=all[2].stations||[];
+    var manifest=all[0], assets=all[1].assets||[], stations=all[2].stations||[];state.manifest=manifest;state.assets=all[1];state.stations=all[2];
     assets.concat(stations).forEach(function(x){if(x&&x.id)state.ids[x.id]=1;});
     return Promise.all((manifest.questions||[]).map(function(f){return get("data/questions/"+f+".json").then(function(d){(d.questions||[]).forEach(function(q){if(q&&q.id)state.ids[q.id]=1;});}).catch(function(){});}));
   });
@@ -99,21 +99,47 @@ small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
     return {errors:errors,warnings:warnings,quarantine:quarantine};
   }
   function render(obj,result){
-    var files=$("images").files, chosen={};Array.prototype.forEach.call(files,function(f){chosen[f.name]=f;});
+    var chosen={};Array.prototype.forEach.call($("images").files,function(f){chosen[f.name]=f;});
     var cards=(obj.assets||[]).map(function(a,i){
       var base=String(a.file||"").split("/").pop(),f=chosen[base],src=f?URL.createObjectURL(f):"";
       return '<article class="asset">'+(src?'<img src="'+src+'" alt="Local preview for '+esc(base)+'">':'<div class="placeholder">No local preview selected<br><small>'+esc(base)+'</small></div>')+
-      '<div><b>'+esc(a.station&&a.station.title||a.id||("Asset "+(i+1)))+'</b><p class="muted">'+esc(a.file||"No file path")+'</p><p>'+((a.questions||[]).length)+' question(s) · '+esc(a.kind||"")+'</p>'+(f?'<p class="msg ok">Local image selected · '+Math.round(f.size/1024)+' KB</p>':'<p class="msg warn">Select this image above to preview it. The repository validator will check the uploaded file during import.</p>')+'</div></article>';
+      '<div><b>'+esc(a.station&&a.station.title||a.id||("Asset "+(i+1)))+'</b><p class="muted">'+esc(a.file||"No file path")+'</p><p>'+((a.questions||[]).length)+' question(s) · '+esc(a.kind||"")+'</p>'+(f?'<p class="msg ok">Local image selected · '+Math.round(f.size/1024)+' KB</p>':'<p class="msg warn">Select this image above before preparing the import.</p>')+'</div></article>';
     }).join("");
     var messages=result.errors.map(function(x){return '<div class="msg err">'+esc(x)+'</div>';}).join("")+
       result.warnings.map(function(x){return '<div class="msg warn">'+esc(x)+'</div>';}).join("")+
       result.quarantine.map(function(x){return '<div class="msg warn">Quarantined: '+esc(x)+'</div>';}).join("");
     var ok=!result.errors.length&&!result.quarantine.length;
     $("report").innerHTML='<section class="section stack"><h2>Validation report</h2><p class="msg '+(ok?"ok":"err")+'">'+(ok?"No structural errors found. Human review and repository-side image validation are still required.":result.errors.length+" error(s), "+result.quarantine.length+" item(s) quarantined.")+'</p>'+messages+
-      '<p>'+assetList.length+' asset(s) · '+assetList.reduce(function(n,a){return n+((a&&Array.isArray(a.questions))?a.questions.length:0);},0)+' question(s)</p><h2>Image previews</h2>'+cards+
+      '<p>'+(obj.assets||[]).length+' asset(s) · '+(obj.assets||[]).reduce(function(n,a){return n+((a&&Array.isArray(a.questions))?a.questions.length:0);},0)+' question(s)</p><h2>Image previews</h2>'+cards+
       (ok?'<div class="actions"><button class="btn primary" id="download" type="button">Download checked intake JSON</button></div>':"")+
-      '<p class="muted">This browser checker does not upload images or edit the question bank. After downloading, upload the images to their declared data/img folders and run the repository validator/importer. Do not import uncertain or unreviewed content.</p></section>';
-    if(ok)$("download").onclick=function(){var blob=new Blob([JSON.stringify(obj,null,2)+"\n"],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="visual-intake-"+obj.topic+".json";a.click();URL.revokeObjectURL(url);};
+      '<p class="muted">The browser can prepare the JSON files for GitHub upload. GitHub Actions still performs the full repository-side image validation. Nothing is committed or uploaded automatically.</p></section>';
+    if(ok){
+      $("download").onclick=function(){var blob=new Blob([JSON.stringify(obj,null,2)+"\n"],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="visual-intake-"+obj.topic+".json";a.click();setTimeout(function(){URL.revokeObjectURL(url);},1000);};
+      var prep=document.createElement("section");prep.className="section stack";prep.innerHTML='<h2>Prepare import files</h2><p>Select every original image above. The checker will generate question files, updated registries and the updated manifest using the repository importer format.</p><div class="actions"><button class="btn primary" id="prepare" type="button">Prepare GitHub upload files</button></div><div id="prepared" class="stack"></div>';$("report").appendChild(prep);
+      $("prepare").onclick=function(){
+        var selected={};Array.prototype.forEach.call($("images").files,function(f){selected[f.name]=f;});
+        var missing=(obj.assets||[]).filter(function(x){return !selected[String(x.file||"").split("/").pop()];});
+        if(missing.length){$("prepared").innerHTML='<div class="msg err">Select all original images first: '+missing.map(function(x){return esc(x.file);}).join(", ")+'</div>';return;}
+        var manifest=JSON.parse(JSON.stringify(state.manifest)),assets=JSON.parse(JSON.stringify(state.assets)),stations=JSON.parse(JSON.stringify(state.stations)),out=[];
+        if(!Array.isArray(manifest.questions)||!Array.isArray(assets.assets)||!Array.isArray(stations.stations)){$("prepared").innerHTML='<div class="msg err">Repository manifest or registry structure is unexpected. Nothing prepared.</div>';return;}
+        var ids={};Object.keys(state.ids).forEach(function(k){ids[k]=1;});
+        for(var i=0;i<obj.assets.length;i++){
+          var x=obj.assets[i],fileId="visual-"+x.id,newIds=[x.id,x.station.id].concat(x.questions.map(function(q){return q.id;}));
+          if(manifest.questions.indexOf(fileId)>=0||newIds.some(function(id){if(ids[id])return true;ids[id]=1;return false;})){$("prepared").innerHTML='<div class="msg err">Duplicate ID or question file for '+esc(x.id)+'. No files prepared.</div>';return;}
+          var qs=x.questions.map(function(q){return {id:q.id,type:"mcq",level:q.level,...(q.sub?{sub:q.sub}:{}),q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,image:x.file,alt:x.alt,credit:x.credit,visualStationId:x.station.id};});
+          out.push({path:"data/questions/"+fileId+".json",content:JSON.stringify({topic:obj.topic,questions:qs},null,2)+"\n"});
+          manifest.questions.push(fileId);
+          assets.assets.push({id:x.id,file:x.file,kind:x.kind,alt:x.alt,credit:x.credit,sourceUrl:x.sourceUrl||"",licence:x.licence});
+          stations.stations.push({id:x.station.id,assetId:x.id,topic:obj.topic,title:x.station.title,questionIds:x.questions.map(function(q){return q.id;}),marks:x.marks||{},...(x.station.instructions?{instructions:x.station.instructions}:{}),...(Number.isInteger(x.station.seconds)?{seconds:x.station.seconds}:{})});
+        }
+        out.push({path:"data/manifest.json",content:JSON.stringify(manifest,null,2)+"\n"},{path:"data/visual-assets.json",content:JSON.stringify(assets,null,2)+"\n"},{path:"data/visual-stations.json",content:JSON.stringify(stations,null,2)+"\n"});
+        var html='<div class="msg ok">Prepared '+out.length+' JSON files: '+obj.assets.length+' question file(s), plus the manifest and both registries. Nothing has been committed or uploaded.</div><h3>Download files</h3>';
+        out.forEach(function(f,j){html+='<div class="msg"><b>'+esc(f.path)+'</b><p><button class="btn primary" type="button" data-index="'+j+'">Download file</button></p></div>';});
+        html+='<h3>Upload using GitHub in your browser</h3><ol><li>Upload each question JSON into <code>data/questions/</code>.</li><li>Upload each original image into the exact <code>data/img/</code> subfolder in its intake file path.</li><li>Replace <code>data/manifest.json</code>, <code>data/visual-assets.json</code> and <code>data/visual-stations.json</code> with the downloaded versions.</li><li>Review the changes and open a pull request. GitHub Actions will run the full image decoding and validation checks.</li></ol><p class="muted">Keep the intake JSON as your audit copy. Do not merge if GitHub Actions reports a failure.</p>';
+        $("prepared").innerHTML=html;
+        Array.prototype.forEach.call($("prepared").querySelectorAll("button[data-index]"),function(btn){btn.onclick=function(){var f=out[Number(btn.getAttribute("data-index"))],blob=new Blob([f.content],{type:"application/json"}),url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=f.path.split("/").pop();link.click();setTimeout(function(){URL.revokeObjectURL(url);},1000);};});
+      };
+    }
   }
   $("check").onclick=function(){
     $("status").innerHTML="";$("report").innerHTML="";
