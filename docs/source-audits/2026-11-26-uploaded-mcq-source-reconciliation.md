@@ -278,3 +278,18 @@ A focused review of the inborn-errors bank (35 questions before this pass) ident
 The updated file was re-fetched from main: 40 questions, unique IDs, and zero basic structural errors. All five additions remain verified:false pending academic review.
 
 **Cumulative source-reconciliation additions: 88 original questions** (83 previously recorded plus these five). This is a targeted expansion; the uploaded biochemistry sources have not yet been fully reconciled question by question.
+
+
+## Temperature regulation expansion — 27 November 2026
+
+The temperature-regulation bank contained 17 questions, making it one of the smaller physiology topic banks. Five original MCQs were added to strengthen applied coverage:
+
+- Distinguishing heat stroke (hyperthermia without a raised hypothalamic set point) from fever.
+- UCP1/thermogenin-mediated non-shivering thermogenesis in brown adipose tissue.
+- Heat acclimatisation, including earlier sweating and reduced sweat sodium concentration.
+- Rapid heat loss during cold-water immersion.
+- Cyclo-oxygenase inhibition, reduced prostaglandin E2 synthesis and reversal of the fever set point.
+
+The file was structurally validated before commit: all 22 records have unique IDs, a stem, four options, a valid answer index and an explanation. The five new items remain `verified: false` pending academic review. This is a targeted topic expansion, not a complete question-by-question reconciliation of the uploaded physiology books.
+
+**Cumulative source-reconciliation additions: 93 original questions** (88 previously recorded plus these five).
