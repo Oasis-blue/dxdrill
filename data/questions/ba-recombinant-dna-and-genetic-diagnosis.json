@@ -129,7 +129,7 @@
    "q": "In blue-white screening using a pUC plasmid containing the lacZ-alpha fragment, what phenotype do bacterial colonies carrying a recombinant plasmid (with a foreign DNA insert inside the polylinker) display on X-gal + IPTG agar?",
    "options": [
     "To identify transformed cells",
-    "To select cells carrying the desired recombinant plasmid",
+    "White colonies with disrupted lacZ-alpha activity",
     "To increase plasmid copy number",
     "To initiate transcription"
    ],
@@ -222,7 +222,7 @@
    "q": "What physical principle governs nucleic acid hybridization in Southern blotting, Northern blotting, and fluorescence in situ hybridization (FISH)?",
    "options": [
     "Disulfide bonding between DNA and protein",
-    "Base-pairing between a labelled probe and complementary target DNA",
+    "Complementary base-pairing between a labelled probe and target DNA",
     "Hydrophobic binding between purines and the membrane",
     "Enzymatic ligation of probe to target DNA"
    ],
@@ -291,7 +291,7 @@
    "q": "What is the purpose of sodium dodecyl sulfate (SDS) in SDS-PAGE prior to Western blotting?",
    "options": [
     "Preserves native protein structure and activity",
-    "Denatures proteins and gives them a similar charge-to-mass ratio",
+    "Denatures proteins and gives them a near-uniform charge-to-mass ratio",
     "Cleaves proteins at methionine residues",
     "Crosslinks antibodies to the membrane"
    ],
@@ -360,7 +360,7 @@
    "q": "A 4-year-old boy with intellectual disability, macroorchidism, and a long face with prominent ears is evaluated for Fragile X syndrome. Why does Southern blot or methylation-specific PCR show hypermethylation of the FMR1 promoter on Xq27.3?",
    "options": [
     "Deletion of the entire X chromosome",
-    "Large CGG expansion in FMR1 causes methylation and gene silencing",
+    "CGG expansion causes FMR1 promoter hypermethylation and silencing",
     "Mitochondrial tRNA point mutation",
     "Balanced 9;22 translocation"
    ],
@@ -642,7 +642,7 @@
    "q": "Why must complex human therapeutic glycoproteins such as monoclonal antibodies, erythropoietin (EPO), and clotting Factor VIII be produced in mammalian cell lines (such as Chinese hamster ovary, CHO, cells) rather than E. coli?",
    "options": [
     "Bacteria cannot translate human codons",
-    "Bacteria lack complex glycosylation and disulfide-processing machinery",
+    "Bacteria lack human-like glycosylation and protein-processing machinery",
     "CHO cells always grow faster",
     "Plasmids cannot carry human cDNA"
    ],
@@ -665,7 +665,7 @@
    "sub": "Restriction Endonucleases and DNA Ligase",
    "q": "What are isoschizomers in recombinant DNA technology?",
    "options": [
-    "Enzymes from different sources that recognise the same DNA sequence",
+    "Different enzymes that recognise the same DNA sequence",
     "Plasmids with identical resistance genes",
     "mRNA isoforms from alternative splicing",
     "Primers with identical melting temperatures"
@@ -785,7 +785,7 @@
    "q": "A 2-year-old boy with global developmental delay and autism spectrum disorder has a normal standard G-banded karyotype, but chromosomal microarray (array comparative genomic hybridization, aCGH) reveals a 450-kb submicroscopic deletion on chromosome 16p11.2. What is the main advantage of chromosomal microarray over conventional karyotyping?",
    "options": [
     "It detects balanced reciprocal translocations",
-    "It detects submicroscopic copy-number changes without dividing cells",
+    "Detects submicroscopic copy-number changes at higher resolution",
     "It identifies single-base substitutions",
     "It measures mitochondrial heteroplasmy"
    ],
@@ -903,7 +903,7 @@
    "sub": "Gene Therapy and Recombinant Therapeutics",
    "q": "A 64-year-old man with relapsed diffuse large B-cell lymphoma receives chimeric antigen receptor T-cell (CAR-T) therapy targeting CD19. How are his T cells engineered to recognize and kill CD19-positive lymphoma cells independently of MHC presentation?",
    "options": [
-    "T cells express an engineered anti-CD19 chimeric antigen receptor",
+    "An anti-CD19 CAR enables MHC-independent recognition",
     "T cells are edited to express CD20 instead of TCR",
     "T cells are loaded with recombinant insulin",
     "T cells are fused with B lymphocytes"
@@ -1021,7 +1021,7 @@
    "sub": "Genetic Diagnosis and Mutation Detection",
    "q": "How does methylation-specific PCR (MSP) distinguish Prader-Willi syndrome from Angelman syndrome at the imprinted 15q11-q13 locus?",
    "options": [
-    "Bisulfite preserves methylated C while converting unmethylated C",
+    "Detects the parent-of-origin-specific methylation pattern at 15q11-q13",
     "Restriction enzymes cut methylated DNA faster",
     "The method counts chromosomes microscopically",
     "Bisulfite converts adenine to guanine"
@@ -1137,7 +1137,7 @@
    "q": "During agarose gel electrophoresis of DNA restriction fragments, toward which electrode do negatively charged DNA molecules migrate, and how does fragment size affect migration rate?",
    "options": [
     "Toward the cathode (-); larger fragments migrate faster",
-    "Toward the anode (+); smaller fragments migrate faster through the porous gel matrix",
+    "Toward the anode (+); smaller fragments migrate faster",
     "Toward the anode (+); larger fragments migrate faster",
     "Toward the cathode (-); all fragments migrate at identical speed"
    ],
