@@ -7441,14 +7441,14 @@
       "q": "About biological membranes:",
       "items": [
         {
-          "text": "The fluid mosaic model describes membrane proteins embedded in or associated with a lipid bilayer.",
+          "text": "Simple diffusion moves a substance down its concentration gradient without requiring a specific carrier protein.",
           "answer": true,
-          "explain": "Membranes contain a dynamic lipid bilayer with integral and peripheral proteins."
+          "explain": "Simple diffusion occurs directly through the lipid bilayer and is passive; it does not require a carrier or direct ATP expenditure."
         },
         {
-          "text": "Cholesterol can modulate membrane fluidity and permeability.",
+          "text": "Facilitated diffusion can show saturation because it depends on a finite number of transport proteins.",
           "answer": true,
-          "explain": "Cholesterol buffers membrane fluidity, limiting excessive movement at higher temperatures and preventing tight packing at lower temperatures."
+          "explain": "Carrier-mediated facilitated diffusion is limited by the number and turnover rate of available carriers, although it moves substances down their electrochemical gradients without direct ATP use."
         },
         {
           "text": "Simple diffusion across a membrane requires a specific carrier protein and ATP hydrolysis.",
@@ -9113,14 +9113,14 @@
       "q": "About biological membranes:",
       "items": [
         {
-          "text": "The fluid-mosaic model describes proteins embedded in or associated with a lipid bilayer.",
+          "text": "Most phospholipids can move laterally within one leaflet of a membrane more readily than they can spontaneously move between leaflets.",
           "answer": true,
-          "explain": "Membrane lipids and many proteins can move laterally, producing a dynamic mosaic structure."
+          "explain": "Lateral diffusion is relatively rapid, whereas spontaneous transverse movement (flip-flop) is energetically unfavourable and usually requires enzymes such as flippases, floppases or scramblases."
         },
         {
-          "text": "Cholesterol generally reduces membrane permeability to small water-soluble molecules.",
+          "text": "Lipid rafts are membrane microdomains often enriched in cholesterol and sphingolipids.",
           "answer": true,
-          "explain": "Cholesterol modulates lipid packing and reduces permeability while also buffering membrane fluidity."
+          "explain": "These relatively ordered microdomains can organise selected membrane proteins and participate in signalling and membrane trafficking."
         },
         {
           "text": "Integral membrane proteins can be removed from membranes by high-salt washing alone.",
@@ -9372,24 +9372,24 @@
       "q": "About the pharyngeal apparatus:",
       "items": [
         {
-          "text": "The first pharyngeal arch contributes to the maxilla and mandible.",
+          "text": "The third pharyngeal pouch gives rise to the thymus and the inferior parathyroid glands.",
           "answer": true,
-          "explain": "First-arch mesenchyme contributes to the maxillary and mandibular prominences and associated skeletal structures."
+          "explain": "The ventral wing of the third pouch contributes to the thymus, while its dorsal wing forms the inferior parathyroid glands."
         },
         {
-          "text": "The second pharyngeal arch is associated with the facial nerve.",
-          "answer": true,
-          "explain": "The nerve of the second arch is the facial nerve, cranial nerve VII."
-        },
-        {
-          "text": "The third pharyngeal arch is associated with the glossopharyngeal nerve.",
-          "answer": true,
-          "explain": "The glossopharyngeal nerve, cranial nerve IX, is the nerve of the third arch."
-        },
-        {
-          "text": "The fourth and sixth arches are both supplied by the hypoglossal nerve.",
+          "text": "The second pharyngeal cleft normally persists as the external auditory meatus.",
           "answer": false,
-          "explain": "The vagus nerve supplies the fourth and sixth arches through its superior and recurrent laryngeal branches."
+          "explain": "The first cleft forms the external auditory meatus; the second cleft is normally overgrown by the second arch and its remnant contributes to the cervical sinus."
+        },
+        {
+          "text": "The first pharyngeal membrane contributes to the tympanic membrane.",
+          "answer": true,
+          "explain": "The first pharyngeal membrane forms the tympanic membrane, separating the first pharyngeal cleft from the first pouch."
+        },
+        {
+          "text": "The ultimobranchial body, derived from the fourth pharyngeal pouch region, contributes parafollicular C cells to the thyroid gland.",
+          "answer": true,
+          "explain": "The ultimobranchial body becomes incorporated into the thyroid and gives rise to calcitonin-secreting parafollicular cells."
         }
       ],
       "references": [
@@ -14478,9 +14478,9 @@
       "q": "Regarding thyroid hormone physiology:",
       "items": [
         {
-          "text": "Most circulating thyroid hormone is transported bound to plasma proteins.",
+          "text": "Thyroid hormone receptors are intracellular receptors that regulate gene transcription.",
           "answer": true,
-          "explain": "TBG, transthyretin and albumin carry most T4 and T3."
+          "explain": "T3 binds nuclear thyroid hormone receptors, which interact with thyroid-response elements and alter transcription of target genes."
         },
         {
           "text": "Peripheral conversion of T4 to T3 contributes to production of the more active hormone.",
