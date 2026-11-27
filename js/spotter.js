@@ -101,19 +101,21 @@
       '<div class="track"><i id="sp-bar" style="width:' + Math.round(100 * r.left / S.secs) + '%;transition:width .25s linear"></i></div>' +
       DX.qImg(q) + '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' +
       '<p class="hint">You can change your answer until time is up. It moves on by itself, and there is no going back.' + (window.matchMedia && matchMedia("(pointer:fine)").matches ? " Keys: A to D." : "") + '</p>' +
-      '<div class="row tight"><button class="btn ghost small" data-act="skip">Next station now</button></div></div>';
+      '<div class="row tight">' + (it.qi + 1 < it.questions.length ? '<button class="btn primary small" data-act="nextq">Next question</button>' : '') + '<button class="btn ghost small" data-act="skip">Next station now</button></div></div>';
   }
 
   function endView() {
-    var r = S.run, ok = r.items.filter(function (x) { return x.pick === x.q.answer; }).length, answered = r.items.filter(function (x) { return x.pick !== null; }).length;
-    var rows = r.items.map(function (x, i) {
-      var good = x.pick === x.q.answer;
-      return '<article><span class="st ' + (good ? "c" : "m") + '">' + (x.pick === null ? "No answer" : good ? "Correct" : "Missed") + ' · Station ' + (i + 1) + ' · ' + esc(topicName(x.q.topic)) + '</span>' + DX.qImg(x.q, "small") +
-        '<p class="q">' + esc(x.q.q) + '</p><p class="ans">' + (x.pick !== null && !good ? 'You chose: ' + esc(x.q.options[x.pick]) + '<br>' : "") + 'Answer: ' + esc(x.q.options[x.q.answer]) + '</p>' + (x.q.explain ? '<p class="exp">' + esc(x.q.explain) + '</p>' : "") + '</article>';
+    var r = S.run, all = [];
+    r.items.forEach(function (st, si) { st.questions.forEach(function (q, qi) { all.push({ q:q, pick:st.picks[qi], station:si }); }); });
+    var ok = all.filter(function (x) { return x.pick === x.q.answer; }).length;
+    var answered = all.filter(function (x) { return x.pick !== null; }).length;
+    var rows = all.map(function (x) {
+      var q=x.q, good=x.pick===q.answer;
+      return '<article><span class="st ' + (good ? "c" : "m") + '">' + (x.pick===null ? "No answer" : good ? "Correct" : "Missed") + ' · Station ' + (x.station+1) + ' · ' + esc(topicName(q.topic)) + '</span>' + DX.qImg(q,"small") +
+        '<p class="q">' + esc(q.q) + '</p><p class="ans">' + (x.pick!==null && !good ? 'You chose: ' + esc(q.options[x.pick]) + '<br>' : "") + 'Answer: ' + esc(q.options[q.answer]) + '</p>' + (q.explain ? '<p class="exp">' + esc(q.explain) + '</p>' : "") + '</article>';
     }).join("");
-    return '<div class="wrap stack"><header><p class="eyebrow">Spotter</p><h1>' + ok + ' out of ' + r.items.length + '</h1><p class="lede">' + answered + ' answered' + (answered < r.items.length ? ", " + (r.items.length - answered) + " ran out of time" : "") + ' · about ' + Math.max(1, Math.round(r.secsUsed / 60)) + ' min. Wrong or blank stations are the ones to revisit.</p></header>' +
-      '<div class="row"><button class="btn primary" data-act="again">Another run</button><button class="btn ghost" data-act="setup">Change settings</button></div>' +
-      '<section class="review stack">' + rows + '</section></div>';
+    return '<div class="wrap stack"><header><p class="eyebrow">Spotter</p><h1>' + ok + ' out of ' + all.length + '</h1><p class="lede">' + answered + ' answered' + (answered < all.length ? ", " + (all.length-answered) + " unanswered" : "") + ' · about ' + Math.max(1,Math.round(r.secsUsed/60)) + ' min. Wrong or blank questions are the ones to revisit.</p></header>' +
+      '<div class="row"><button class="btn primary" data-act="again">Another run</button><button class="btn ghost" data-act="setup">Change settings</button></div><section class="review stack">' + rows + '</section></div>';
   }
 
   function pick(oi) { var r = S.run; if (!r || r.done) return; r.items[r.i].picks[r.items[r.i].qi] = oi; var o = document.querySelectorAll(".sp .opt"); Array.prototype.forEach.call(o, function (b) { var on = Number(b.getAttribute("data-oi")) === oi; b.classList.toggle("sel", on); b.setAttribute("aria-pressed", on); }); }
