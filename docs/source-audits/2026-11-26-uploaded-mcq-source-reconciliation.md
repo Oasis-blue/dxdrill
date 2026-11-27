@@ -233,3 +233,18 @@ A review of the existing digestion-and-absorption bank showed that it was still 
 The bank was re-fetched from `main` after the write: 10 questions, 10 unique IDs and zero basic structural errors. All five additions remain `verified: false`.
 
 **Cumulative source-reconciliation additions: 73 original questions** (68 previously recorded plus these five). This is targeted topic expansion informed by the uploaded physiology collections; the full books remain under question-level reconciliation.
+
+
+## Vitamin and coenzyme expansion — 27 November 2026
+
+A review of the existing Medical Biochemistry vitamin bank (38 questions before this pass) showed opportunities to deepen clinically relevant mechanisms beyond the introductory deficiency and coenzyme items. Five independently written MCQs were added to bc-vitamins-and-coenzymes.json:
+
+- Adenosylcobalamin-dependent methylmalonyl-CoA mutase and methylmalonic acid accumulation.
+- Folate-dependent conversion of dUMP to dTMP by thymidylate synthase.
+- Ascorbate-dependent prolyl and lysyl hydroxylation in collagen maturation.
+- Renal 1-alpha-hydroxylase and calcitriol deficiency in chronic kidney disease.
+- Light-induced isomerisation of 11-cis-retinal to all-trans-retinal in rod phototransduction.
+
+The updated file was re-fetched from main: 43 questions, 43 unique IDs, and zero basic structural errors (all records have a stem, four options, a valid answer index and an explanation). All five additions remain verified:false pending academic review.
+
+**Cumulative source-reconciliation additions: 78 original questions** (73 previously recorded plus these five). The uploaded Biochemistry collection is still being reconciled topic by topic; this focused expansion does not mean the full 5,000-MCQ book has been reviewed question by question.
