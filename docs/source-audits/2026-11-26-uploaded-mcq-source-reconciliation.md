@@ -203,3 +203,18 @@ A further targeted expansion added **15 independently written MCQs**, five each 
 The three edited files were fetched again from the current `main` branch after the writes. All parsed as JSON, every question ID was unique within its file, and all records passed basic structural checks for a non-empty stem, four options, a valid answer index and an explanation. All 15 new items remain `verified: false`; this is not academic sign-off or a full app test.
 
 **Cumulative source-reconciliation additions: 63 original questions** (48 previously recorded plus these 15). The broader source-level work remains in progress: OCR-complete Anatomy scan and chapter maps do not yet equal page-by-page question reconciliation of the large Anatomy, Physiology and Biochemistry collections.
+
+
+## Cardiovascular physiology source pass — 27 November 2026
+
+The 14-test cardiovascular physiology bank (Silverthorn, Chapter 14) was checked against the existing cardiac-cycle question bank. Core circulation, pressure-flow relationships, cardiac excitation, cycle phases and heart sounds were already substantially represented. A smaller gap remained in valve-support anatomy and pericardial lubrication. Five independently worded questions were added to `pc-cardiac-muscle-and-the-cardiac-cycle.json`:
+
+- Chordae tendineae attachment to papillary muscles.
+- The mechanical consequence of papillary muscle rupture.
+- The distinction between atrioventricular and semilunar valve support.
+- The lubricating function of pericardial fluid.
+- The valve-closure event producing S1.
+
+The updated bank was fetched again from `main`: 46 questions, 46 unique IDs, and zero basic structural errors. All five additions remain `verified: false`.
+
+**Cumulative source-reconciliation additions: 68 original questions** (63 previously recorded plus these five). This was a targeted comparison of one cardiovascular source chapter, not completion of the entire Physiology source collection.
