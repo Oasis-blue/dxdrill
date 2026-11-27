@@ -165,3 +165,16 @@ Three additional independently worded, source-informed questions were added to e
 The cumulative reconciliation count is now **44 original questions added** (41 previously recorded plus these 3). These additions remain `verified: false`. After each write, the affected bank was re-fetched from `main`; all three files parsed as JSON, had unique question IDs, and passed basic structural checks (non-empty stem, four options, valid answer index and explanation).
 
 **Coverage status:** the 336-page scan is now OCR-complete, but not fully question-reconciled. The text-based KLM, PDFDrive anatomy, Physiology MCQ/EMQ and Biochemistry collections also remain subject to systematic question-level coverage review. Extraction or chapter mapping alone is not counted as completed ingestion.
+
+
+## Further question-level additions — KLM, lower limb and physiology source passes
+
+The KLM Back chapter was checked against the existing general-anatomy banks. Existing coverage already includes vertebral regions, intervertebral discs, lumbar puncture/cauda equina and intrinsic back muscles. A specific gap was identified for the absence of an intervertebral disc between C1 and C2; `GABJ-064` was added to `ga-bones-and-joints`.
+
+The lower-limb source was checked against the 121-question regional bank. The bank already covers most of the repeated themes in the 55-page source (femoral triangle/sheath, adductor canal, gluteal region, knee, popliteal fossa, leg compartments, foot arches, ankle and major nerves). A distinct gap on the usual termination of the small saphenous vein was filled with `gr-lower-limb-122`.
+
+The Elhariry GIT scan and Guyton physiology source review identified two additional motility gaps, filled with `pi-motor-functions-of-the-gi-tract-021` (antiperistalsis during vomiting) and `pi-motor-functions-of-the-gi-tract-022` (motilin and phase III of the fasting migrating motor complex).
+
+**Cumulative source-reconciliation additions: 46 original questions** (41 recorded before the 27 November pass, plus five subsequent additions). The four updated topic files were re-fetched from `main`; all parsed as JSON, had unique IDs, and passed basic structural validation. All new questions remain `verified: false`.
+
+This is targeted gap-filling, not a claim that every numbered item in the commercial sources has been imported. The source books are being used to guide independent, curriculum-aligned question creation; their question wording is not being copied wholesale.
