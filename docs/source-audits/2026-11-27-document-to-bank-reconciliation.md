@@ -246,3 +246,34 @@ The live normal-format and True/False banks were checked before editing. The bat
 All four additions are marked `verified:false` pending academic review. Existing IDs and records were preserved. The normal bank was re-fetched and parsed after the write: **233 questions, 233 unique IDs**, latest ID `APP-236`. The T/F bank was re-fetched and parsed after the write: **496 questions, 496 unique IDs**. New T/F IDs were confirmed present.
 
 **Coverage qualification:** these two chapters have now been reviewed against both live formats and yielded the additions above. This batch does not yet constitute a complete item-to-record register for all 51 printed questions; exact per-item matched/partial/gap statuses remain to be recorded. Do not interpret the chapter questionnaire counts as a count of newly created DxDrill questions. Chapters 3–25 remain for subsequent batches.
+
+
+## 10. Dual-bank batch — Chapters 3–8 (Breast through Oesophagus)
+
+The next source batch covered six consecutive chapters and their printed answer keys:
+
+| Chapter | Subject | Printed question count |
+|---|---|---:|
+| 3 | Breast | 9 |
+| 4 | Mediastinum | 24 |
+| 5 | Lungs and Pleura | 17 |
+| 6 | Trachea and Bronchi | 16 |
+| 7 | Heart and Pericardium | 25 |
+| 8 | Oesophagus and Vagus Nerve | 25 |
+| **Total** | | **116** |
+
+Both live thoracic banks were checked for existing coverage before additions. Breast and mediastinal topics already have dedicated MCQ/T-F coverage, so this batch prioritised uncovered relationships and clinically useful distinctions rather than repeating those records.
+
+**Normal MCQ additions — `data/questions/gr-thorax.json`**
+- `GRTH-96`: formation of the anterior and posterior vagal trunks from the left and right vagus nerves.
+- `GRTH-97`: intrasegmental bronchus/pulmonary artery and intersegmental pulmonary vein arrangement in bronchopulmonary segments.
+
+**True/False additions — `data/questions/tf-core-expansion.json`**
+- `tf-gr-thorax-006`: pulmonary hilum relations and bronchopulmonary segmental anatomy.
+- `tf-gr-thorax-007`: tracheal wall, main bronchial differences, carina and recurrent laryngeal nerve courses.
+- `tf-gr-thorax-008`: coronary arterial branches, coronary sinus, pericardial attachment and ventricular wall thickness.
+- `tf-gr-thorax-009`: oesophageal hiatus, oesophageal origin/covering and vagal trunk arrangement.
+
+All six new records are marked unverified/draft pending academic review. Existing records and IDs were preserved. Post-write live re-fetch and JSON parsing confirmed **97 normal thoracic MCQs with 97 unique IDs** and **500 T/F records with 500 unique IDs**. All six new IDs were present.
+
+**Coverage qualification:** the 116 printed questions were reviewed as a chapter batch against both banks, with the additions above selected after checking for overlap. This is not yet a complete item-by-item match register; exact source-question-to-bank-ID mapping and residual gaps still need to be recorded. No claim is made that all 116 source questions are represented as individual DxDrill records.
