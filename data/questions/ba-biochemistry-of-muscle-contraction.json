@@ -171,8 +171,8 @@
       "q": "A 16-year-old boy develops severe hyperthermia (41.2 C), generalized muscle rigidity, rhabdomyolysis, and hyperkalemia minutes after receiving halothane and succinylcholine during surgery. Dantrolene treats this crisis by blocking which channel?",
       "options": [
         "Sarcolemmal nicotinic acetylcholine receptor",
-        "T-tubule dihydropyridine receptor",
-        "SERCA calcium ATPase pump",
+        "T-tubule dihydropyridine receptor (CaV1.1)",
+        "Cardiac ryanodine receptor (RyR2)",
         "Sarcoplasmic reticulum ryanodine receptor (RyR1)"
       ],
       "answer": 3,
@@ -451,10 +451,10 @@
       "sub": "Clinical Correlations of Muscle Biochemistry",
       "q": "Why does cardiac muscle troponin I (cTnI) provide greater diagnostic specificity for myocardial infarction than total serum creatine kinase (CK)?",
       "options": [
-        "Total CK is never elevated in patients with myocardial infarction",
-        "cTnI is cleared within 30 minutes of chest pain onset",
-        "Total CK is expressed exclusively in cardiac muscle tissue",
-        "cTnI is unique to cardiomyocytes, whereas total CK rises after skeletal muscle injury"
+        "Total CK is more specific to myocardium because skeletal muscle contains little creatine kinase",
+        "cTnI is released earlier after myocardial injury and returns to baseline sooner than total CK",
+        "Total CK is restricted to cardiomyocytes, whereas cTnI is also abundant in skeletal muscle",
+        "cTnI is a cardiac-specific isoform, whereas total CK can also rise after skeletal muscle injury"
       ],
       "answer": 3,
       "explain": "Because skeletal muscle contains abundant CK-MM (and small amounts of CK-MB), skeletal muscle injury elevates total CK, whereas cardiac troponin I has an amino acid sequence unique to myocardium.",
