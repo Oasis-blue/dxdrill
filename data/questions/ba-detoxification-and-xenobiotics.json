@@ -8,7 +8,7 @@
    "sub": "Overview of Xenobiotics and Biotransformation",
    "q": "What are xenobiotics in medical biochemistry?",
    "options": [
-    "Exogenous chemicals not normally produced or used in human metabolism, such as drugs, additives and pollutants",
+    "Foreign chemicals not normally produced by the body",
     "Endogenous hormones released by glands to regulate normal body functions",
     "Essential nutrients absorbed from food and used in energy metabolism",
     "Normal metabolic intermediates produced during glycolysis and the TCA cycle"
@@ -80,7 +80,7 @@
     "A toxic metabolite formed only during overdose",
     "A molecule that inhibits all Phase I enzymes",
     "A compound that blocks renal excretion of drugs",
-    "A pharmacologically inactive or less active precursor compound that is biotransformed in vivo into an active therapeutic drug"
+    "An inactive or less-active precursor converted in vivo to an active drug"
    ],
    "answer": 3,
    "explain": "Prodrugs (such as codeine -> morphine, clopidogrel -> active thiol metabolite, or enalapril -> enalaprilat) require metabolic activation (often via CYP450 or esterases) to exert their pharmacological effect.",
@@ -195,7 +195,7 @@
     "They weigh 450 kilodaltons",
     "They contain 450 heme groups per molecule",
     "They are expressed in 450 human tissues",
-    "When reduced (Fe2+) and bound to carbon monoxide, they exhibit a characteristic spectrophotometric absorption peak at 450 nm"
+    "Reduced, CO-bound CYP450 absorbs maximally at 450 nm"
    ],
    "answer": 3,
    "explain": "Reduced ferrous CYP450 complexed with CO produces a distinctive Soret absorbance maximum near 450 nm due to the thiolate ligand from a conserved cysteine coordinated to heme iron.",
@@ -238,7 +238,7 @@
    "q": "How do furanocoumarins in grapefruit juice cause clinically significant drug interactions with oral medications such as felodipine, nifedipine, or simvastatin?",
    "options": [
     "Accelerate renal glomerular filtration of the drugs",
-    "Grapefruit furanocoumarins irreversibly inhibit intestinal CYP3A4, increasing oral drug exposure",
+    "Irreversibly inhibits intestinal CYP3A4, increasing oral drug exposure",
     "Bind the drugs in the stomach to prevent all absorption",
     "Induce hepatic glucuronidation ten-fold"
    ],
@@ -261,7 +261,7 @@
    "options": [
     "Plasma levels of the co-administered drug rise dangerously",
     "The co-administered drug is never absorbed",
-    "Rifampicin induces CYP expression, accelerating drug clearance and lowering plasma levels",
+    "Induces CYP expression, increasing clearance and lowering drug levels",
     "CYP450 enzymes switch from oxidation to glucuronidation"
    ],
    "answer": 2,
@@ -287,7 +287,7 @@
    "options": [
     "CYP2D6 normally clears morphine before it reaches the brain",
     "CYP2D6 converts codeine into inactive glucuronides",
-    "CYP2D6 catalyzes O-demethylation of codeine (a prodrug) into active morphine, which has much higher affinity for mu-opioid receptors",
+    "CYP2D6 converts codeine to active morphine by O-demethylation",
     "CYP2D6 is required to absorb codeine from the stomach"
    ],
    "answer": 2,
@@ -354,7 +354,7 @@
    "q": "What is the hallmark of Phase II biotransformation reactions?",
    "options": [
     "Cleavage of aromatic rings into carbon dioxide",
-    "Phase II adds an endogenous polar group to the xenobiotic or its Phase I metabolite",
+    "Conjugation with an endogenous polar group",
     "Insertion of a single oxygen atom from O2",
     "Direct excretion without any enzyme involvement"
    ],
@@ -400,7 +400,7 @@
    "q": "Why is glucuronidation the most common Phase II conjugation pathway in humans?",
    "options": [
     "It requires no cofactors",
-    "UDP-glucuronic acid is readily supplied from glucose metabolism, and glucuronides are highly water-soluble and rapidly cleared via urine or bile",
+    "Glucuronides are highly water-soluble and readily excreted",
     "It occurs exclusively in red blood cells",
     "It converts all drugs into lipid-soluble steroids"
    ],
@@ -466,7 +466,7 @@
    "sub": "Phase II Conjugation Reactions",
    "q": "Which tripeptide conjugating agent is used by glutathione S-transferases (GSTs) to detoxify electrophilic xenobiotics and reactive oxygen species?",
    "options": [
-    "Glutathione (gamma-glutamyl-cysteinyl-glycine, GSH)",
+    "Glutathione (GSH)",
     "Carnitine",
     "Creatine",
     "Carnosine"
@@ -490,7 +490,7 @@
    "q": "What is the final urinary excretion product formed after a glutathione-xenobiotic conjugate undergoes sequential cleavage of glutamate and glycine followed by N-acetylation of the remaining cysteine moiety?",
    "options": [
     "Hippuric acid",
-    "Mercapturic acid (N-acetylcysteine conjugate)",
+    "Mercapturic acid",
     "Uric acid",
     "Orotic acid"
    ],
@@ -557,7 +557,7 @@
    "sub": "Phase II Conjugation Reactions",
    "q": "A 35-year-old man started on isoniazid for tuberculosis develops tingling and numbness in his feet (peripheral neuropathy) and elevated liver enzymes. Why are 'slow acetylators' (NAT2 deficiency) at greater risk for isoniazid-induced peripheral neuropathy?",
    "options": [
-    "Slow acetylation causes accumulation of isoniazid and hydrazine metabolites that deplete pyridoxal phosphate (vitamin B6)",
+    "Accumulated isoniazid metabolites deplete pyridoxal phosphate (vitamin B6)",
     "Slow acetylators convert isoniazid into excess glucose",
     "Slow acetylation accelerates renal clearance of vitamin B12",
     "Slow acetylators lack cytochrome P450 reductase"
@@ -606,7 +606,7 @@
    "options": [
     "Accumulation of lactic acid in hepatocytes",
     "Direct inhibition of gastric parietal cell H+/K+-ATPase",
-    "NAPQI accumulates after glutathione depletion and covalently damages centrilobular hepatocytes",
+    "Unconjugated NAPQI binds centrilobular hepatocyte proteins",
     "Precipitation of calcium oxalate crystals in the liver"
    ],
    "answer": 2,
@@ -630,7 +630,7 @@
     "Directly chelates acetaminophen in the stomach",
     "Activates hepatic glucuronosyltransferase to convert acetaminophen into bilirubin",
     "Inhibits renal filtration of acetaminophen",
-    "Provides cysteine as a rate-limiting precursor to replenish hepatic glutathione (GSH) stores and directly detoxifies/reduces NAPQI"
+    "Supplies cysteine to restore glutathione and detoxify NAPQI"
    ],
    "answer": 3,
    "explain": "N-acetylcysteine is deacetylated to L-cysteine, supplying the limiting amino acid needed to resynthesize glutathione (GSH) so NAPQI can be conjugated and cleared safely.",
@@ -651,7 +651,7 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "Why is methanol (wood alcohol) or ethylene glycol (antifreeze) ingestion dangerous, and how do fomepizole or ethanol treat this poisoning?",
    "options": [
-    "ADH converts them to toxic acids; fomepizole or ethanol competes for ADH and slows toxic metabolite formation",
+    "ADH forms toxic acids; fomepizole or ethanol competitively inhibits ADH",
     "They directly destroy haemoglobin without undergoing metabolism",
     "Fomepizole neutralizes the parent alcohol in the stomach after absorption",
     "Ethanol accelerates their conversion into harmless metabolites"
@@ -675,7 +675,7 @@
    "q": "How does disulfiram (Antabuse) produce an unpleasant reaction (flushing, nausea, vomiting, tachycardia, hypotension) when a patient consumes alcohol?",
    "options": [
     "Inhibits alcohol dehydrogenase, preventing ethanol oxidation",
-    "Inhibits aldehyde dehydrogenase (ALDH), causing toxic accumulation of acetaldehyde in the blood",
+    "Inhibits ALDH, causing acetaldehyde accumulation",
     "Induces CYP2E1 to convert ethanol into methanol",
     "Depletes hepatic glycogen stores"
    ],
@@ -835,7 +835,7 @@
    "sub": "Antioxidant Defense Against Xenobiotic Stress",
    "q": "How do superoxide dismutase (SOD), catalase, and glutathione peroxidase work together to protect cells against reactive oxygen species (ROS) generated during xenobiotic metabolism?",
    "options": [
-    "SOD converts superoxide radicals (O2.-) into hydrogen peroxide (H2O2), and catalase plus glutathione peroxidase convert H2O2 into water (H2O)",
+    "SOD forms H2O2; catalase and glutathione peroxidase reduce it to water",
     "Catalase converts H2O2 into superoxide radicals",
     "Glutathione peroxidase requires superoxide to synthesize glucose",
     "SOD converts H2O2 into ethanol"
@@ -907,7 +907,7 @@
    "sub": "Heavy Metals and Chelation Biochemistry",
    "q": "Which chelating agents or metal-binding proteins are clinically used to bind and promote excretion of heavy metals or excess copper/iron?",
    "options": [
-    "Wilson disease: penicillamine or trientine; iron overload: deferoxamine or deferasirox; lead: succimer or CaNa2-EDTA",
+    "Penicillamine/trientine (copper); deferoxamine/deferasirox (iron); succimer/CaNa2-EDTA (lead)",
     "Warfarin is used to chelate excess iron and copper",
     "Heparin binds lead and promotes its renal excretion",
     "Atropine is the standard chelator for copper and iron"
@@ -933,7 +933,7 @@
    "q": "What is the role of cytochrome b5 in certain cytochrome P450 monooxygenase reactions?",
    "options": [
     "Acts as the sole oxygen donor in place of O2",
-    "Can donate the second electron to certain CYP450 isoforms, enhancing catalytic efficiency for specific substrates",
+    "Transfers a second electron to some CYP450 isoforms",
     "Hydrolyzes glucuronide conjugates in bile",
     "Synthesizes heme from glycine"
    ],
@@ -954,7 +954,7 @@
    "sub": "Phase I Reactions and Cytochrome P450",
    "q": "Which three major CYP2C and CYP2D family isoforms are prominent examples of pharmacogenetic polymorphism affecting drug metabolism?",
    "options": [
-    "CYP2C9 (warfarin, phenytoin), CYP2C19 (clopidogrel, omeprazole), and CYP2D6 (codeine, antidepressants, beta-blockers)",
+    "CYP2C9, CYP2C19 and CYP2D6",
     "CYP1A1, CYP1A2, and CYP1B1 only",
     "CYP7A1, CYP11A1, and CYP21A2 only",
     "CYP24A1 and CYP27B1 only"
@@ -1026,7 +1026,7 @@
    "q": "What is enterohepatic circulation of glucuronidated xenobiotics or bilirubin conjugates?",
    "options": [
     "Direct filtration of unchanged compounds from blood into the appendix",
-    "Biliary conjugates enter the gut, may be deconjugated by bacteria, and can be reabsorbed into portal blood",
+    "Biliary glucuronides are deconjugated by gut bacteria and reabsorbed into portal blood",
     "Bile acids are converted into thyroid hormones before intestinal absorption",
     "Toxins are transported from sweat glands directly into systemic arteries"
    ],
@@ -1049,7 +1049,7 @@
    "sub": "Phase II Conjugation Reactions",
    "q": "Why are patients with inherited thiopurine S-methyltransferase (TPMT) deficiency at high risk of severe myelosuppression when given standard doses of azathioprine or 6-mercaptopurine?",
    "options": [
-    "TPMT normally inactivates thiopurines; deficiency increases cytotoxic thioguanine nucleotide accumulation and myelosuppression",
+    "TPMT deficiency diverts thiopurines to cytotoxic thioguanine nucleotides",
     "TPMT is required for intestinal absorption of azathioprine",
     "TPMT converts azathioprine into vitamin K",
     "TPMT deficiency prevents thiopurines from entering bone marrow cells"
@@ -1071,7 +1071,7 @@
    "sub": "Phase I Reactions and Cytochrome P450",
    "q": "What are the major categories of Phase I oxidation reactions catalyzed by cytochrome P450 and related enzymes?",
    "options": [
-    "Aromatic and aliphatic hydroxylation, N- and O-dealkylation, S-oxidation, N-oxidation, and deamination",
+    "Hydroxylation, dealkylation, N/S-oxidation and oxidative deamination",
     "Transamination, decarboxylation, and beta-oxidation",
     "Phosphorylation, adenylation, and ribosylation",
     "Carboxylation and transketolation"
@@ -1119,7 +1119,7 @@
    "sub": "Phase I Reactions and Cytochrome P450",
    "q": "Which enzymes catalyze Phase I reduction of nitro groups (-NO2), azo groups (-N=N-), and ketones/aldehydes into amines or alcohols?",
    "options": [
-    "Nitroreductases, azoreductases, and carbonyl reductases (as well as certain CYP450 enzymes under low oxygen tension)",
+    "Nitroreductases, azoreductases and carbonyl reductases",
     "Lyases and ligases",
     "DNA polymerases and RNA polymerases",
     "Aminotransferases"
@@ -1166,7 +1166,7 @@
    "sub": "Chemical Carcinogenesis and Reactive Intermediates",
    "q": "Why are electrophilic xenobiotic metabolites particularly hazardous to cells?",
    "options": [
-    "They react covalently with electron-rich nucleophilic atoms on DNA bases, RNA, and proteins, causing mutations, protein dysfunction, or cell death",
+    "Electrophiles form covalent adducts with DNA and proteins",
     "They lower blood glucose to dangerously high levels",
     "They convert all lipids into saturated triglycerides",
     "They stimulate platelet aggregation directly"
@@ -1189,7 +1189,7 @@
    "sub": "Antioxidant Defense Against Xenobiotic Stress",
    "q": "How does lipid peroxidation initiated by xenobiotic-induced free radicals damage cell membranes?",
    "options": [
-    "Free radicals attack polyunsaturated fatty acids, initiating a chain reaction that disrupts membrane integrity",
+    "Radicals attack membrane polyunsaturated fatty acids, triggering chain peroxidation",
     "It converts membrane cholesterol into glycogen",
     "It strengthens disulphide bonds between phospholipid head groups",
     "It activates Na+/K+-ATPase and increases membrane transport"
@@ -1263,7 +1263,7 @@
    "sub": "Clinical Toxicology and Specific Xenobiotics",
    "q": "What is the biochemical mechanism of paraquat (a bipyridyl herbicide) toxicity, particularly in lung alveolar epithelial cells?",
    "options": [
-    "Paraquat undergoes redox cycling in lung cells, generating reactive oxygen species and severe oxidative injury",
+    "Redox cycling generates reactive oxygen species in pneumocytes, causing oxidative lung injury",
     "It inhibits acetylcholinesterase at the neuromuscular junction",
     "It chelates calcium from bone and causes osteomalacia",
     "It activates opioid receptors and suppresses respiration"
@@ -1310,7 +1310,7 @@
    "sub": "Heavy Metals and Chelation Biochemistry",
    "q": "What is the physiological role of metallothionein in heavy metal homeostasis and detoxification?",
    "options": [
-    "Metallothionein is a cysteine-rich protein that sequesters essential and toxic metals",
+    "A cysteine-rich protein that binds and sequesters metals",
     "A plasma protease that digests heavy metals",
     "A mitochondrial enzyme that converts mercury into gold",
     "A lipid transporter in chylomicrons"
@@ -1332,7 +1332,7 @@
    "sub": "Overview of Xenobiotics and Biotransformation",
    "q": "What is the 'first-pass effect' (first-pass hepatic metabolism) for an orally administered xenobiotic or drug?",
    "options": [
-    "Gut-wall and hepatic metabolism before systemic entry reduces oral bioavailability",
+    "Gut and hepatic metabolism before systemic entry reduces oral bioavailability",
     "Excretion of a drug through sweat before absorption",
     "Binding of a drug to plasma albumin in the radial artery",
     "Conversion of a drug into a solid crystal in the stomach"
