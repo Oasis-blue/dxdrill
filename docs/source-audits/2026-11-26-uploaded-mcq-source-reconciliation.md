@@ -323,3 +323,18 @@ The fetal-development bank contained 25 questions. Five original MCQs were added
 The updated file was structurally validated before commit: unique IDs, non-empty stems and explanations, four options per item and valid answer indices. All five additions remain `verified: false` pending academic review. This is targeted expansion, not exhaustive reconciliation of every uploaded anatomy source.
 
 **Cumulative source-reconciliation additions: 103 original questions** (98 previously recorded plus these five).
+
+
+## Endocrine histology, renal endocrine physiology and amino acid metabolism expansion — 27 November 2026
+
+A further five original questions were added in each subject, prioritising comparatively small or expandable topic banks:
+
+**Anatomy / Histology — endocrine system (3 → 8):** adrenal cortex and medullary histology, identification of the three cortical zones, their principal secretions and neural crest origin of chromaffin cells.
+
+**Physiology — renal endocrine function (19 → 24):** renin release in renal artery stenosis, ACE inhibition and afterload, renal erythropoietin deficiency in CKD, impaired calcitriol activation and desmopressin action at collecting-duct V2 receptors.
+
+**Medical Biochemistry — amino acids and proteins (35 → 40):** ornithine transcarbamylase reaction, branched-chain alpha-ketoacid dehydrogenase, tyrosine requirement in PKU, pyridoxine-responsive homocystinuria and alanine transfer in the glucose-alanine cycle.
+
+All three files were structurally validated and re-fetched from `main`. Each has unique IDs, four options per question, valid answer indices and explanations. New items remain `verified: false` pending academic review.
+
+**Cumulative source-reconciliation additions: 118 original questions** (103 previously recorded plus these 15).
