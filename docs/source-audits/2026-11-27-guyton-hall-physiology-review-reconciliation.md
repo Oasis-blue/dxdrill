@@ -46,6 +46,30 @@ All 15 additions are marked `verified:false` and require academic review. The ad
 - The 15 new questions are unverified, as intended.
 - No source question text or answer-key passage was copied verbatim.
 
+## Second remediation batch committed
+
+A further 27 original, source-informed MCQs were added across nine existing topics:
+
+- `pi-digestion-and-absorption`: +3 (total 13)
+- `pi-accessory-organs`: +3 (total 12)
+- `pi-diets-bmr-and-malnutrition`: +3 (total 5)
+- `pe-gonadal-hormones`: +3 (total 5)
+- `pe-other-hormones`: +3 (total 5)
+- `pp-male-reproductive-system`: +3 (total 5)
+- `pp-female-reproductive-system-and-ovarian-cycle`: +3 (total 5)
+- `pp-pregnancy-and-parturition`: +3 (total 5)
+- `pp-contraception`: +3 (total 5)
+
+Nine original true/false sets (three statements each) were also added to the existing `tf-core-expansion.json` bank for those same physiology topics. The T/F bank now contains 539 sets, up from 530. All 27 MCQs and all nine T/F sets are marked unverified/draft-unverified for academic review.
+
+## Second-batch validation
+
+- Re-fetched all ten modified files from `main`.
+- JSON parsing succeeded for every file.
+- IDs are unique within each file.
+- MCQ answer indices and option arrays passed structural checks.
+- No curriculum topic was created, renamed, or remapped.
+
 ## Remaining work — not yet complete
 
 This is a progress checkpoint, not a claim that all 1,106 stem starts have been reconciled. The full item-by-item audit against both MCQ and true/false banks remains to be completed across all 15 units. Further additions should follow only after matching individual source items to existing coverage and identifying genuine gaps. The printed source answer key has not been independently validated.
