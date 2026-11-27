@@ -150,3 +150,18 @@ Chapters 3–4 of the 145-page PDFDrive source were then reviewed against `gr-th
 The mediastinum chapter's core material was already represented across the current bank, including mediastinal divisions and contents, the azygos system, thoracic duct, recurrent laryngeal nerve, and posterior mediastinal structures (e.g. `GRTH-18`–`GRTH-20`, `GRTH-32`, `GRTH-35`, `GRTH-47`, `GRTH-50`, `GRTH-59`, `GRTH-72`, `GRTH-73`, `GRTH-76`, `GRTH-79`). No additional question was added from this chapter in this pass; this is a concept-level check, not a full item-by-item sign-off.
 
 The thoracic bank now contains 89 questions. The three breast additions follow the established `GRTH-##` convention and were appended without changing existing records.
+
+
+### Follow-on review — Lungs and Pleura, Trachea and Bronchi, Heart and Pericardium, Oesophagus (chapters 5–8)
+
+The next four source chapters (printed pages 31–49) were reviewed from the raw 145-page PDF. Existing coverage was identified for lung surfaces and lobes, pleural pain/recesses, aspiration anatomy, lung root components, bronchopulmonary segments, cardiac chambers and coronary arteries, pericardial sinuses, and the recurrent laryngeal nerve. Six further questions were added to broaden and deepen coverage rather than simply reproduce the source's MCQs:
+
+- `GRTH-90`: pulmonary ligament and its role at the lung root.
+- `GRTH-91`: bronchial (systemic) arterial supply of conducting and supporting lung tissues.
+- `GRTH-92`–`GRTH-93`: tracheal bifurcation level and the carina.
+- `GRTH-94`: fibrous skeleton of the heart—valvular support and electrical insulation.
+- `GRTH-95`: clinically relevant oesophageal constrictions.
+
+These additions extend the question bank beyond the exact source prompts while remaining within the chapter learning objectives. The source's multiple-response answer keys were not copied as authoritative where wording or anatomy required qualification.
+
+**Updated thoracic bank count:** 95 questions. New records use sequential `GRTH-##` IDs and the existing JSON question schema. Chapters 9–25 of this source remain to be reviewed; no whole-document completion claim is made.
