@@ -1,7 +1,7 @@
 # DxDrill true/false core expansion — coverage and data-quality audit
 
 **Audit date:** 27 November 2026  
-**Source:** `data/questions/tf-core-expansion.json` (blob SHA `1b49dedd12e2401d6a8f94e1554bdca63dc30a40`)  
+**Source:** `data/questions/tf-core-expansion.json` (blob SHA `79c468b867b77fcfa88368c832ca7d20e729b90a`)  
 **Scope:** structural inventory and broad subject-domain coverage of the 478-stem bank. This is not a full FUHSO/MDCN syllabus mapping or a fresh academic verification of question content.
 
 ## Current inventory
