@@ -338,3 +338,18 @@ A further five original questions were added in each subject, prioritising compa
 All three files were structurally validated and re-fetched from `main`. Each has unique IDs, four options per question, valid answer indices and explanations. New items remain `verified: false` pending academic review.
 
 **Cumulative source-reconciliation additions: 118 original questions** (103 previously recorded plus these 15).
+
+
+## Male genital histology, micturition and biomolecular water properties — 27 November 2026
+
+A further five original questions were added in each subject, prioritising an underfilled histology topic and applied physiology/biochemistry coverage:
+
+**Anatomy / Histology — male genital system (3 → 8):** seminiferous tubules, Sertoli-cell blood–testis barrier, Leydig-cell testosterone secretion, epididymal epithelium and ductus deferens muscular function.
+
+**Physiology — micturition (26 → 31):** bladder outlet obstruction in benign prostatic enlargement, antimuscarinic treatment of overactive bladder, automatic bladder after suprasacral cord injury, parasympathetic denervation and pudendal supply to the external urethral sphincter.
+
+**Medical Biochemistry — biomolecular properties and water (3 → 8 targeted items in this subtopic):** water's specific heat and latent heat of vaporisation, amphipathic phospholipid organisation, osmosis in hypotonic solution and the dielectric basis of ionic solvation.
+
+The three updated files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted expansion, not a claim that every uploaded source has been exhaustively reconciled.
+
+**Cumulative source-reconciliation additions: 133 original questions** (118 previously recorded plus these 15).
