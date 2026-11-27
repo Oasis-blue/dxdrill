@@ -334,3 +334,30 @@ All six new records are marked `verified:false` / `draft-unverified` pending aca
 - Normal MCQ batch: `13cc2bad8038dcd3eb9c43466ef51b9b138145af`
 
 **Coverage qualification:** the 90 printed questions were reviewed at chapter/concept level against both banks, but this pass does not yet constitute a complete question-by-question source-to-record register. No claim is made that each of the 90 printed questions has an individual DxDrill counterpart. The item-level mapping remains outstanding.
+
+
+## 13. Dual-bank batch — Chapters 19–22 (Male Pelvic Viscera through Ovaries and Uterine Tubes)
+
+Reviewed four consecutive chapters and their printed answer material from the source:
+
+| Chapter | Subject | Printed question count |
+|---|---|---:|
+| 19 | Prostate, Urethra, Seminal Vesicles and Ductus Deferens | 20 |
+| 20 | Urinary Bladder | 18 |
+| 21 | Uterus | 28 |
+| 22 | Ovaries and Fallopian Tubes | 28 |
+| **Total** | | **94** |
+
+The live abdomen/pelvis MCQ bank was checked before adding questions. It already contains substantial coverage of prostate zones and urethral landmarks, ejaculatory duct formation, ductus deferens/ureter relationships, bladder trigone and autonomic supply, uterine position and supports, the uterine artery/ureter crossing, ovarian vessels and lymphatics, and the usual fertilisation site. No new normal MCQs were added in this batch because the strongest candidate facts were already represented in the existing MCQ bank; this avoids adding near-duplicates.
+
+**True/False additions — `data/questions/tf-core-expansion.json`**
+- `tf-gr-male-pelvis-001`: prostate and urethral relations, seminal vesicle function, ejaculatory ducts and prostatic venous communications.
+- `tf-gr-bladder-001`: trigone boundaries, urachus remnant, posterior relations, retropubic space and interureteric ridge.
+- `tf-gr-uterus-001`: uterine artery origin, ureter relationship, round ligament course, broad ligament and normal uterine position.
+- `tf-gr-ovary-tube-001`: ovarian arterial and venous drainage, lymphatics, uterine tube regions and suspensory ligament contents.
+
+All four additions are marked `verified:false` / `draft-unverified` pending academic review. No existing IDs were renamed or overwritten.
+
+**Post-write verification:** the live T/F file parses as JSON and contains **513 records with 513 unique IDs**, with all four new IDs present. The live normal abdomen/pelvis MCQ file parses as JSON and remains at **235 records with 235 unique IDs**; no normal MCQ was added in this pass. T/F batch commit: `aff6179964927e3ccbe626d3a2bd8d1788e8ffbe`.
+
+**Coverage qualification:** the 94 printed questions were reviewed at chapter/concept level against both banks. This is not yet a complete item-by-item source-to-record register, and no claim is made that each printed question has an individual DxDrill counterpart. The source-question mapping and residual-gap register remain outstanding.
