@@ -41,7 +41,7 @@ NUC course anchors include ANA 201a/201b (upper and lower limbs), ANA 202a/202b 
 | General histology | 14 | Thin across several topics |
 | Systemic histology | 27 | Present, but individual systems remain thin |
 | General embryology | 10 | Two stems per topic |
-| Systemic embryology | 20 | Uneven; musculoskeletal development has one stem |
+| Systemic embryology | 20 | Uneven; musculoskeletal development has two stems |
 | Radiological anatomy | 2 | **Still thin; only two stems** |
 | Genetics | 3 | **Very thin; three of five topics have no stem** |
 
@@ -58,7 +58,7 @@ NUC course anchors include PHS 201 (introductory/cell physiology and autonomic n
 | Respiratory system | 14 | Present; each topic has 2–3 stems |
 | Cardiovascular system | 21 | Present; arterial pressure/peripheral resistance has one stem |
 | Gastrointestinal tract and nutrition | 15 | Present, but diet/BMR/malnutrition has one stem |
-| Renal system | 22 | Present; dialysis/diuretics, renal endocrine and fluid/electrolyte topics have one each |
+| Renal system | 22 | Present; dialysis/diuretics and renal endocrine have two each; fluid/electrolyte balance has one |
 | Skin and body temperature | 4 | Thin; two stems per topic |
 | Endocrinology | 16 | Present; gonadal hormones has two stems |
 | Reproduction | 9 | **Thin; three topics have one stem each** |
@@ -79,7 +79,7 @@ NUC course anchors include BCH 201 (cell biology, pH and buffers), BCH 203 (carb
 | General biochemistry | 79 | Broad area, but metabolism of biomolecules accounts for 27 stems; other topics range from 5–13 |
 | Applied biochemistry | 62 | Broad area; individual topics range from 3–9 |
 
-**Interpretation:** General biochemistry has 78 stems and Applied biochemistry 58. The broad area counts should not obscure topic imbalance: metabolism of biomolecules has 27 stems, while basic chemistry has five; applied topics range from three to nine. The next audit should check individual pathway steps, rate-limiting enzymes, regulation, tissue specificity, fed/fasting integration, nutritional assessment and practical interpretation.
+**Interpretation:** General biochemistry has 79 stems and Applied biochemistry 62. The broad area counts should not obscure topic imbalance: metabolism of biomolecules has 27 stems, while basic chemistry has five; applied topics range from three to nine. The next audit should check individual pathway steps, rate-limiting enzymes, regulation, tissue specificity, fed/fasting integration, nutritional assessment and practical interpretation.
 
 ## 6. Priority gaps for the next expansion
 
