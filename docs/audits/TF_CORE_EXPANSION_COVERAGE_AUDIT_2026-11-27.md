@@ -68,7 +68,7 @@ The initial audit identified three metadata/reference issues. All have now been 
 2. **15 reference-free Round 13 records:** supplied with two subject-appropriate textbook references each.
 3. **107 single-reference records:** retained their existing source and received a second subject-appropriate textbook reference.
 
-The current inventory shows that every record has at least one reference entry and 461 have two or more entries. However, only 328 records have at least one direct HTTPS source URL; 150 currently list textbook titles without a direct URL. This is a source-link provenance gap, not proof that the questions lack textbooks or are medically incorrect. Separately, 22 stem-wording groups are duplicated (46 records affected; 24 excess occurrences). These duplicates pre-date Round 23; none of the 15 new stems duplicates an existing stem heading. These are textbook-level references, not claim-by-claim citations. Adding references does not establish that every statement is correct and does not itself confer verified status.
+The current inventory shows that every record has at least one reference entry and 488 have two or more entries. However, 343 records have at least one direct HTTPS source URL; 150 currently list textbook titles without a direct URL. This is a source-link provenance gap, not proof that the questions lack textbooks or are medically incorrect. Separately, 22 stem-wording groups are duplicated (46 records affected; 24 excess occurrences). These duplicates pre-date Round 23; none of the 15 new stems duplicates an existing stem heading. These are textbook-level references, not claim-by-claim citations. Adding references does not establish that every statement is correct and does not itself confer verified status.
 
 ## Round 22 expansion
 
@@ -76,7 +76,7 @@ Round 22 added 15 stems / 60 statements, five per core subject, targeting the sy
 
 ## Verification status
 
-172 records remain marked `verified` and 306 remain `draft-unverified`. Their statuses were not changed as part of metadata/reference cleanup. This audit did not re-check the medical accuracy of the 172 records already marked verified, nor did it promote any draft record.
+172 records remain marked `verified` and 321 remain `draft-unverified`. Their statuses were not changed as part of metadata/reference cleanup. This audit did not re-check the medical accuracy of the 172 records already marked verified, nor did it promote any draft record.
 
 ## Coverage interpretation and priorities
 
