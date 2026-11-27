@@ -218,3 +218,18 @@ The 14-test cardiovascular physiology bank (Silverthorn, Chapter 14) was checked
 The updated bank was fetched again from `main`: 46 questions, 46 unique IDs, and zero basic structural errors. All five additions remain `verified: false`.
 
 **Cumulative source-reconciliation additions: 68 original questions** (63 previously recorded plus these five). This was a targeted comparison of one cardiovascular source chapter, not completion of the entire Physiology source collection.
+
+
+## Intestinal absorption expansion — 27 November 2026
+
+A review of the existing digestion-and-absorption bank showed that it was still thin after the initial PEPT1 addition. Five original MCQs were added to cover distinct transport mechanisms and clinically important absorption sites:
+
+- Apical fructose uptake by GLUT5.
+- Basolateral monosaccharide exit through GLUT2.
+- Intrinsic factor–vitamin B12 uptake in the terminal ileum.
+- Sodium-dependent bile acid reclamation through ASBT in the terminal ileum.
+- Apical ferrous iron uptake through DMT1 in the duodenum.
+
+The bank was re-fetched from `main` after the write: 10 questions, 10 unique IDs and zero basic structural errors. All five additions remain `verified: false`.
+
+**Cumulative source-reconciliation additions: 73 original questions** (68 previously recorded plus these five). This is targeted topic expansion informed by the uploaded physiology collections; the full books remain under question-level reconciliation.
