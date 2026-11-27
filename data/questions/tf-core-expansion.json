@@ -9108,6 +9108,546 @@
       "verified": false,
       "reviewStatus": "draft-unverified",
       "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-gh-muscle-002",
+      "type": "tf",
+      "topic": "gh-muscle-tissue",
+      "level": 2,
+      "sub": "Histology of skeletal muscle",
+      "q": "About skeletal muscle tissue:",
+      "items": [
+        {
+          "text": "Skeletal muscle fibres are multinucleated cells with peripheral nuclei.",
+          "answer": true,
+          "explain": "Skeletal muscle fibres form by myoblast fusion and characteristically have multiple peripheral nuclei."
+        },
+        {
+          "text": "The A band becomes shorter during skeletal muscle contraction.",
+          "answer": false,
+          "explain": "The A band corresponds to the length of thick filaments and remains essentially constant; the I band and H zone shorten."
+        },
+        {
+          "text": "The sarcomere extends from one Z disc to the next.",
+          "answer": true,
+          "explain": "Z discs define the boundaries of a sarcomere, the basic contractile unit of striated muscle."
+        },
+        {
+          "text": "Satellite cells contribute to skeletal muscle repair and regeneration.",
+          "answer": true,
+          "explain": "Satellite cells are resident myogenic stem cells that can proliferate and contribute nuclei to damaged fibres."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537195/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-gh-connective-003",
+      "type": "tf",
+      "topic": "gh-connective-tissue",
+      "level": 2,
+      "sub": "Connective tissue fibres and cells",
+      "q": "About connective tissue:",
+      "items": [
+        {
+          "text": "Collagen fibres provide tensile strength to connective tissues.",
+          "answer": true,
+          "explain": "Collagen resists stretching forces and is a major structural component of connective tissue."
+        },
+        {
+          "text": "Elastic fibres allow tissues to recoil after stretching.",
+          "answer": true,
+          "explain": "Elastin-rich fibres provide extensibility and recoil in structures such as large arteries and elastic ligaments."
+        },
+        {
+          "text": "Fibroblasts are primarily responsible for producing connective tissue extracellular matrix.",
+          "answer": true,
+          "explain": "Fibroblasts synthesise collagen, elastin, proteoglycans and other matrix components."
+        },
+        {
+          "text": "Mast cells are the principal cells responsible for synthesising collagen fibres.",
+          "answer": false,
+          "explain": "Fibroblasts are the principal collagen-producing cells; mast cells participate in inflammatory and allergic responses."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK542/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-emb-pre-002",
+      "type": "tf",
+      "topic": "emb-pre-embryonic",
+      "level": 2,
+      "sub": "Implantation and early embryonic development",
+      "q": "About early embryonic development:",
+      "items": [
+        {
+          "text": "Implantation normally begins approximately six to seven days after fertilisation.",
+          "answer": true,
+          "explain": "The blastocyst begins attaching to the endometrium near the end of the first week."
+        },
+        {
+          "text": "The trophoblast differentiates into cytotrophoblast and syncytiotrophoblast.",
+          "answer": true,
+          "explain": "These two trophoblastic layers participate in implantation and early placental development."
+        },
+        {
+          "text": "The embryoblast forms the trophoblast and the chorionic villi.",
+          "answer": false,
+          "explain": "The trophoblast contributes to chorionic and placental structures; the embryoblast forms the embryo proper and associated tissues."
+        },
+        {
+          "text": "The bilaminar embryonic disc consists of epiblast and hypoblast.",
+          "answer": true,
+          "explain": "During the second week, the embryoblast differentiates into these two cell layers."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ga-bones-003",
+      "type": "tf",
+      "topic": "ga-bones-and-joints",
+      "level": 2,
+      "sub": "Bone remodelling and ossification",
+      "q": "About bone tissue and ossification:",
+      "items": [
+        {
+          "text": "Osteoclasts are multinucleated cells responsible for bone resorption.",
+          "answer": true,
+          "explain": "Osteoclasts dissolve mineral and degrade organic matrix during bone resorption."
+        },
+        {
+          "text": "Osteoblasts develop from osteoclast precursors.",
+          "answer": false,
+          "explain": "Osteoblasts arise from mesenchymal lineage cells, whereas osteoclasts arise from monocyte-macrophage lineage precursors."
+        },
+        {
+          "text": "Endochondral ossification involves replacement of a cartilage model by bone.",
+          "answer": true,
+          "explain": "A hyaline cartilage model is progressively replaced by bone during endochondral ossification."
+        },
+        {
+          "text": "The epiphyseal growth plate permits longitudinal growth of long bones.",
+          "answer": true,
+          "explain": "Chondrocyte proliferation and hypertrophy at the growth plate support lengthening before epiphyseal closure."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK499878/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-se-pharyngeal-003",
+      "type": "tf",
+      "topic": "se-pharyngeal-apparatus",
+      "level": 2,
+      "sub": "Pharyngeal arches and derivatives",
+      "q": "About the pharyngeal apparatus:",
+      "items": [
+        {
+          "text": "The first pharyngeal arch contributes to the maxilla and mandible.",
+          "answer": true,
+          "explain": "First-arch mesenchyme contributes to the maxillary and mandibular prominences and associated skeletal structures."
+        },
+        {
+          "text": "The second pharyngeal arch is associated with the facial nerve.",
+          "answer": true,
+          "explain": "The nerve of the second arch is the facial nerve, cranial nerve VII."
+        },
+        {
+          "text": "The third pharyngeal arch is associated with the glossopharyngeal nerve.",
+          "answer": true,
+          "explain": "The glossopharyngeal nerve, cranial nerve IX, is the nerve of the third arch."
+        },
+        {
+          "text": "The fourth and sixth arches are both supplied by the hypoglossal nerve.",
+          "answer": false,
+          "explain": "The vagus nerve supplies the fourth and sixth arches through its superior and recurrent laryngeal branches."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538487/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-urine-formation-002",
+      "type": "tf",
+      "topic": "phys-urine-formation",
+      "level": 2,
+      "sub": "Glomerular filtration and tubular handling",
+      "q": "About urine formation:",
+      "items": [
+        {
+          "text": "The glomerular filtration rate is influenced by the net filtration pressure and filtration coefficient.",
+          "answer": true,
+          "explain": "GFR depends on the balance of Starling forces across the glomerular membrane and the filtration coefficient."
+        },
+        {
+          "text": "Constriction of the afferent arteriole generally reduces glomerular capillary hydrostatic pressure.",
+          "answer": true,
+          "explain": "Afferent constriction reduces renal blood flow and glomerular capillary pressure, lowering GFR."
+        },
+        {
+          "text": "Glucose is normally reabsorbed mainly in the proximal convoluted tubule.",
+          "answer": true,
+          "explain": "Sodium-glucose cotransporters in the proximal tubule reclaim filtered glucose under normal conditions."
+        },
+        {
+          "text": "The thick ascending limb of the loop of Henle is highly permeable to water.",
+          "answer": false,
+          "explain": "The thick ascending limb reabsorbs solute but is relatively impermeable to water, helping dilute tubular fluid."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK470284/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-urine-conc-002",
+      "type": "tf",
+      "topic": "phys-urine-concentration",
+      "level": 2,
+      "sub": "Countercurrent mechanisms and ADH",
+      "q": "About the concentration of urine:",
+      "items": [
+        {
+          "text": "The loop of Henle contributes to the medullary osmotic gradient through countercurrent multiplication.",
+          "answer": true,
+          "explain": "Differential solute and water permeability along the loop establishes a corticomedullary osmotic gradient."
+        },
+        {
+          "text": "Antidiuretic hormone increases water permeability in the collecting ducts.",
+          "answer": true,
+          "explain": "ADH promotes insertion of aquaporin-2 channels into the apical membrane of collecting-duct principal cells."
+        },
+        {
+          "text": "The vasa recta help preserve the medullary osmotic gradient.",
+          "answer": true,
+          "explain": "Their countercurrent exchange arrangement limits washout of medullary solutes."
+        },
+        {
+          "text": "A person with complete absence of ADH action typically produces a small volume of highly concentrated urine.",
+          "answer": false,
+          "explain": "Loss of ADH action causes impaired water reabsorption and typically produces large volumes of dilute urine."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537305/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-phys-temperature-003",
+      "type": "tf",
+      "topic": "phys-temperature",
+      "level": 2,
+      "sub": "Thermoregulation",
+      "q": "About the regulation of body temperature:",
+      "items": [
+        {
+          "text": "The hypothalamus plays a central role in integrating thermoregulatory responses.",
+          "answer": true,
+          "explain": "Hypothalamic circuits integrate thermal information and coordinate autonomic, endocrine and behavioural responses."
+        },
+        {
+          "text": "Sweating promotes heat loss mainly through evaporation.",
+          "answer": true,
+          "explain": "Evaporation of sweat from the skin surface removes heat from the body."
+        },
+        {
+          "text": "Cutaneous vasoconstriction increases heat loss from the body.",
+          "answer": false,
+          "explain": "Cutaneous vasoconstriction reduces skin blood flow and conserves heat."
+        },
+        {
+          "text": "Shivering increases heat production through involuntary skeletal muscle activity.",
+          "answer": true,
+          "explain": "Rapid involuntary muscle contractions increase metabolic heat production."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK499843/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-pr-gas-002",
+      "type": "tf",
+      "topic": "pr-transport-of-respiratory-gases",
+      "level": 2,
+      "sub": "Oxygen and carbon dioxide transport",
+      "q": "About the transport of respiratory gases:",
+      "items": [
+        {
+          "text": "Most oxygen in arterial blood is carried bound to haemoglobin.",
+          "answer": true,
+          "explain": "Only a small fraction of oxygen is physically dissolved in plasma; most is reversibly bound to haemoglobin."
+        },
+        {
+          "text": "The oxygen-haemoglobin dissociation curve shifts to the right when carbon dioxide and hydrogen-ion concentrations rise.",
+          "answer": true,
+          "explain": "Increased CO2 and H+ reduce haemoglobin oxygen affinity, facilitating oxygen unloading in tissues."
+        },
+        {
+          "text": "Carbon dioxide is transported mainly as carbaminohaemoglobin.",
+          "answer": false,
+          "explain": "Most carbon dioxide is transported as bicarbonate ions, with smaller fractions dissolved or bound to proteins."
+        },
+        {
+          "text": "The chloride shift facilitates transport of carbon dioxide from tissues in red blood cells.",
+          "answer": true,
+          "explain": "Bicarbonate exits red cells in exchange for chloride, maintaining electrical neutrality during CO2 carriage."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK526060/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-pl-action-002",
+      "type": "tf",
+      "topic": "pl-excitable-tissues-and-action-potentials",
+      "level": 2,
+      "sub": "Action potentials in excitable tissues",
+      "q": "About action potentials:",
+      "items": [
+        {
+          "text": "The rapid upstroke of a typical neuronal action potential is primarily due to voltage-gated sodium-channel opening.",
+          "answer": true,
+          "explain": "Sodium influx produces the rapid depolarising phase of the neuronal action potential."
+        },
+        {
+          "text": "The absolute refractory period is mainly associated with inactivation of voltage-gated sodium channels.",
+          "answer": true,
+          "explain": "Inactivated sodium channels cannot reopen immediately, preventing another action potential during this period."
+        },
+        {
+          "text": "Increasing stimulus strength normally increases the amplitude of an individual action potential.",
+          "answer": false,
+          "explain": "Action potentials are all-or-none; stronger stimuli generally increase firing frequency rather than action-potential amplitude."
+        },
+        {
+          "text": "Myelination increases conduction velocity partly by enabling saltatory conduction.",
+          "answer": true,
+          "explain": "Action potentials are regenerated at nodes of Ranvier, allowing rapid conduction between nodes."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538143/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-bc-enzymes-005",
+      "type": "tf",
+      "topic": "bc-enzymes-and-bioenergetics",
+      "level": 2,
+      "sub": "Enzyme kinetics and inhibition",
+      "q": "About enzymes and enzyme kinetics:",
+      "items": [
+        {
+          "text": "The Michaelis constant is the substrate concentration at which reaction velocity is half the maximum velocity in simple Michaelis-Menten kinetics.",
+          "answer": true,
+          "explain": "For a Michaelis-Menten enzyme, Km corresponds to the substrate concentration at one-half Vmax."
+        },
+        {
+          "text": "A competitive inhibitor typically increases the apparent Km without changing Vmax.",
+          "answer": true,
+          "explain": "Competitive inhibition can be overcome by increasing substrate concentration, leaving Vmax unchanged."
+        },
+        {
+          "text": "A pure noncompetitive inhibitor increases Vmax.",
+          "answer": false,
+          "explain": "Pure noncompetitive inhibition reduces Vmax while leaving Km unchanged."
+        },
+        {
+          "text": "Enzymes alter the equilibrium constant of the reactions they catalyse.",
+          "answer": false,
+          "explain": "Enzymes lower activation energy and accelerate attainment of equilibrium but do not change the reaction equilibrium constant."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK22430/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-bc-metabolism-011",
+      "type": "tf",
+      "topic": "bc-metabolism-of-biomolecules",
+      "level": 2,
+      "sub": "Beta-oxidation of fatty acids",
+      "q": "About fatty acid beta-oxidation:",
+      "items": [
+        {
+          "text": "Beta-oxidation of long-chain fatty acids occurs mainly in the mitochondrial matrix.",
+          "answer": true,
+          "explain": "Fatty acyl-CoA undergoes repeated beta-oxidation cycles in the mitochondrial matrix after transport into mitochondria."
+        },
+        {
+          "text": "Carnitine is involved in transporting long-chain fatty acyl groups across the inner mitochondrial membrane.",
+          "answer": true,
+          "explain": "The carnitine shuttle transfers long-chain acyl groups into the mitochondrial matrix."
+        },
+        {
+          "text": "Malonyl-CoA activates carnitine palmitoyltransferase I.",
+          "answer": false,
+          "explain": "Malonyl-CoA inhibits CPT I, limiting fatty acid entry into mitochondria during fatty acid synthesis."
+        },
+        {
+          "text": "Each cycle of beta-oxidation of a saturated even-chain fatty acyl-CoA generally yields one acetyl-CoA, one NADH and one FADH2.",
+          "answer": true,
+          "explain": "The four-step cycle produces reducing equivalents and removes a two-carbon acetyl-CoA unit."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK556002/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ba-haemoproteins-004",
+      "type": "tf",
+      "topic": "ba-haemoproteins-and-haemoglobin-metabolism",
+      "level": 2,
+      "sub": "Haem synthesis and breakdown",
+      "q": "About haem metabolism:",
+      "items": [
+        {
+          "text": "The first step of haem synthesis occurs in mitochondria.",
+          "answer": true,
+          "explain": "ALA synthase catalyses the condensation of glycine and succinyl-CoA in mitochondria."
+        },
+        {
+          "text": "Lead poisoning can inhibit aminolevulinate dehydratase and ferrochelatase.",
+          "answer": true,
+          "explain": "Lead inhibits key enzymes in haem synthesis, including ALA dehydratase and ferrochelatase."
+        },
+        {
+          "text": "Bilirubin is produced from haem degradation.",
+          "answer": true,
+          "explain": "Haem oxygenase converts haem to biliverdin, which is subsequently reduced to bilirubin."
+        },
+        {
+          "text": "Unconjugated bilirubin is highly water-soluble and is freely excreted in urine.",
+          "answer": false,
+          "explain": "Unconjugated bilirubin is poorly water-soluble, circulates bound to albumin and is not normally filtered into urine."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK539744/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-bc-nucleic-005",
+      "type": "tf",
+      "topic": "bc-nucleotides-and-nucleic-acids",
+      "level": 2,
+      "sub": "DNA replication and repair",
+      "q": "About DNA replication and repair:",
+      "items": [
+        {
+          "text": "DNA polymerases generally require a primer with a free 3-prime hydroxyl group.",
+          "answer": true,
+          "explain": "DNA polymerases extend an existing primer by adding nucleotides to its 3-prime end."
+        },
+        {
+          "text": "The leading strand is synthesised discontinuously as Okazaki fragments.",
+          "answer": false,
+          "explain": "The leading strand is synthesised continuously toward the replication fork; the lagging strand forms Okazaki fragments."
+        },
+        {
+          "text": "DNA ligase seals nicks in the sugar-phosphate backbone.",
+          "answer": true,
+          "explain": "DNA ligase forms phosphodiester bonds to join adjacent DNA fragments."
+        },
+        {
+          "text": "Mismatch repair helps correct errors that escape DNA polymerase proofreading.",
+          "answer": true,
+          "explain": "Mismatch repair recognises and removes incorrectly paired bases remaining after replication."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26850/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
+    },
+    {
+      "id": "tf-ba-immunochem-004",
+      "type": "tf",
+      "topic": "ba-immunochemistry",
+      "level": 2,
+      "sub": "Antigen-antibody interactions",
+      "q": "About antigen-antibody interactions:",
+      "items": [
+        {
+          "text": "The antigen-binding site of an antibody is formed by variable regions of its heavy and light chains.",
+          "answer": true,
+          "explain": "Variable domains of both chains contribute to the antigen-binding surface."
+        },
+        {
+          "text": "The Fc region is primarily responsible for antigen recognition specificity.",
+          "answer": false,
+          "explain": "Antigen specificity is determined by the Fab variable regions; the Fc region mediates effector functions and receptor interactions."
+        },
+        {
+          "text": "Affinity describes the strength of binding between one antigenic epitope and one antibody-binding site.",
+          "answer": true,
+          "explain": "Affinity refers to the strength of an individual antigen-antibody binding interaction."
+        },
+        {
+          "text": "Avidity reflects the combined strength of multiple antigen-antibody interactions.",
+          "answer": true,
+          "explain": "Avidity is the overall functional binding strength arising from multiple binding interactions."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK27144/"
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "referenceScope": "topic-level supporting references; individual claims still require review"
     }
   ]
 }
