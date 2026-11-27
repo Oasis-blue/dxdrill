@@ -4221,6 +4221,534 @@
       "references": [
         "https://iris.who.int/bitstream/handle/10665/59001/WHO_DAP_94.11.pdf"
       ]
+    },
+    {
+      "id": "tf-ga-skin-001",
+      "type": "tf",
+      "topic": "ga-skin-and-fascia",
+      "level": 2,
+      "sub": "Skin structure and fascia",
+      "q": "About the structure of the skin:",
+      "items": [
+        {
+          "text": "The epidermis is derived from surface ectoderm.",
+          "answer": true,
+          "explain": "The epidermis develops from ectoderm; the dermis has region-dependent mesodermal contributions."
+        },
+        {
+          "text": "The epidermis is avascular.",
+          "answer": true,
+          "explain": "It receives nutrients by diffusion from vessels in the underlying dermis."
+        },
+        {
+          "text": "The hypodermis is always considered part of the skin proper.",
+          "answer": false,
+          "explain": "The subcutaneous tissue lies deep to the dermis and is usually distinguished from skin proper."
+        },
+        {
+          "text": "Thick skin of the palms and soles lacks hair follicles and sebaceous glands.",
+          "answer": true,
+          "explain": "Glabrous thick skin has a prominent epidermis and lacks these appendages."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK441980/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK470464/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-gh-muscle-001",
+      "type": "tf",
+      "topic": "gh-muscle-tissue",
+      "level": 2,
+      "sub": "Histology of muscle tissue",
+      "q": "About the histological features of muscle tissue:",
+      "items": [
+        {
+          "text": "Skeletal muscle fibres are multinucleated and have peripherally placed nuclei.",
+          "answer": true,
+          "explain": "Skeletal myoblasts fuse to form multinucleated fibres with peripheral nuclei."
+        },
+        {
+          "text": "Cardiac muscle cells are joined end-to-end by intercalated discs.",
+          "answer": true,
+          "explain": "Intercalated discs contain mechanical and electrical junctions."
+        },
+        {
+          "text": "Smooth muscle cells typically show prominent cross-striations under light microscopy.",
+          "answer": false,
+          "explain": "Smooth muscle lacks sarcomeric striations and has spindle-shaped cells."
+        },
+        {
+          "text": "Cardiac muscle is normally under voluntary somatic motor control.",
+          "answer": false,
+          "explain": "Cardiac muscle is involuntary and modulated by autonomic and intrinsic conduction systems."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537195/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-gr-head-neck-001",
+      "type": "tf",
+      "topic": "gr-head-face-and-neck",
+      "level": 2,
+      "sub": "Neck triangles",
+      "q": "About the anatomy of the neck:",
+      "items": [
+        {
+          "text": "The sternocleidomastoid divides each side of the neck into anterior and posterior triangles.",
+          "answer": true,
+          "explain": "It is the principal boundary between the two cervical triangles."
+        },
+        {
+          "text": "The posterior triangle is bounded anteriorly by the posterior border of sternocleidomastoid.",
+          "answer": true,
+          "explain": "Its other boundaries are trapezius and the clavicle."
+        },
+        {
+          "text": "The external jugular vein usually runs deep to the investing layer of deep cervical fascia throughout its course.",
+          "answer": false,
+          "explain": "It runs superficially in the roof of the posterior triangle, deep to platysma."
+        },
+        {
+          "text": "The spinal accessory nerve traverses the posterior triangle and is vulnerable during lymph-node biopsy.",
+          "answer": true,
+          "explain": "It crosses the triangle to supply trapezius and may be injured during procedures."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK554398/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK551521/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-sh-digestive-001",
+      "type": "tf",
+      "topic": "sh-digestive-system",
+      "level": 2,
+      "sub": "Histology of the alimentary canal",
+      "q": "About the histology of the alimentary canal:",
+      "items": [
+        {
+          "text": "The mucosa consists of epithelium, lamina propria and muscularis mucosae.",
+          "answer": true,
+          "explain": "These three components form the mucosal layer."
+        },
+        {
+          "text": "The submucosa commonly contains larger vessels and the submucosal nerve plexus.",
+          "answer": true,
+          "explain": "Meissner's plexus lies in the submucosa."
+        },
+        {
+          "text": "The myenteric plexus lies between the circular and longitudinal layers of muscularis externa.",
+          "answer": true,
+          "explain": "Auerbach's plexus is located between these muscle layers and regulates motility."
+        },
+        {
+          "text": "The stomach normally has villi projecting from its mucosal surface.",
+          "answer": false,
+          "explain": "The stomach has gastric pits and glands; villi are characteristic of small intestine."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537195/",
+        "https://www.ncbi.nlm.nih.gov/nlmcatalog/101732986/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-emb-pre-embryonic-001",
+      "type": "tf",
+      "topic": "emb-pre-embryonic",
+      "level": 2,
+      "sub": "First three weeks of development",
+      "q": "About the pre-embryonic period of human development:",
+      "items": [
+        {
+          "text": "Fertilisation normally occurs in the ampulla of the uterine tube.",
+          "answer": true,
+          "explain": "The ampullary region is the usual site of fertilisation."
+        },
+        {
+          "text": "Cleavage increases the overall size of the conceptus with each mitotic division.",
+          "answer": false,
+          "explain": "Cleavage partitions the zygote into smaller blastomeres without a corresponding increase in overall size."
+        },
+        {
+          "text": "The morula is a solid ball of blastomeres that precedes the blastocyst.",
+          "answer": true,
+          "explain": "The morula forms before fluid accumulation produces a blastocyst."
+        },
+        {
+          "text": "Implantation usually begins about six to seven days after fertilisation.",
+          "answer": true,
+          "explain": "The blastocyst begins attaching to the endometrium near the end of the first week."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563157/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pr-pft-001",
+      "type": "tf",
+      "topic": "pr-pulmonary-function-tests",
+      "level": 2,
+      "sub": "Spirometry and lung volumes",
+      "q": "About pulmonary function testing:",
+      "items": [
+        {
+          "text": "Spirometry measures the volume of air inhaled and exhaled as a function of time.",
+          "answer": true,
+          "explain": "Spirometry records airflow and volumes during respiratory manoeuvres."
+        },
+        {
+          "text": "The FEV1/FVC ratio is commonly reduced in obstructive ventilatory defects.",
+          "answer": true,
+          "explain": "Airflow limitation reduces FEV1 disproportionately to FVC."
+        },
+        {
+          "text": "Residual volume can be measured directly by simple spirometry.",
+          "answer": false,
+          "explain": "Residual volume requires methods such as gas dilution or body plethysmography."
+        },
+        {
+          "text": "Pulmonary function test results should be interpreted alongside clinical findings.",
+          "answer": true,
+          "explain": "PFTs quantify impairment but do not independently establish every diagnosis."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK482339/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pe-pancreas-001",
+      "type": "tf",
+      "topic": "pe-pancreas",
+      "level": 2,
+      "sub": "Endocrine pancreas",
+      "q": "About the endocrine functions of the pancreas:",
+      "items": [
+        {
+          "text": "Beta cells of pancreatic islets secrete insulin.",
+          "answer": true,
+          "explain": "Insulin is released by pancreatic beta cells."
+        },
+        {
+          "text": "Alpha cells secrete glucagon, which raises blood glucose partly through hepatic glycogenolysis and gluconeogenesis.",
+          "answer": true,
+          "explain": "Glucagon acts mainly on the liver to increase glucose availability."
+        },
+        {
+          "text": "Somatostatin is secreted by pancreatic delta cells.",
+          "answer": true,
+          "explain": "Delta cells release somatostatin, which inhibits several pancreatic and gastrointestinal hormones."
+        },
+        {
+          "text": "Insulin secretion is normally suppressed by an increase in blood glucose.",
+          "answer": false,
+          "explain": "Rising blood glucose stimulates insulin release."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK459261/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-phys-urine-concentration-001",
+      "type": "tf",
+      "topic": "phys-urine-concentration",
+      "level": 2,
+      "sub": "Concentration of urine",
+      "q": "About the renal mechanisms for concentrating urine:",
+      "items": [
+        {
+          "text": "The countercurrent multiplier mechanism depends on the loop of Henle.",
+          "answer": true,
+          "explain": "The loop establishes a hyperosmotic medullary interstitium."
+        },
+        {
+          "text": "The thick ascending limb of the loop of Henle is highly permeable to water.",
+          "answer": false,
+          "explain": "It reabsorbs solutes but is relatively impermeable to water."
+        },
+        {
+          "text": "Antidiuretic hormone increases collecting-duct water permeability through aquaporin-2 insertion.",
+          "answer": true,
+          "explain": "ADH acts on V2 receptors to promote aquaporin-2 insertion."
+        },
+        {
+          "text": "Urea recycling contributes to the high osmolality of the inner renal medulla.",
+          "answer": true,
+          "explain": "Urea recycling helps maintain the medullary osmotic gradient."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537483/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pc-arterial-pressure-001",
+      "type": "tf",
+      "topic": "pc-arterial-pressure-and-peripheral-resistance",
+      "level": 2,
+      "sub": "Arterial pressure regulation",
+      "q": "About the physiological regulation of arterial blood pressure:",
+      "items": [
+        {
+          "text": "Mean arterial pressure is determined largely by cardiac output and total peripheral resistance.",
+          "answer": true,
+          "explain": "MAP is approximately cardiac output multiplied by total peripheral resistance."
+        },
+        {
+          "text": "Arteriolar radius has a major influence on peripheral resistance.",
+          "answer": true,
+          "explain": "Small changes in arteriolar radius produce substantial changes in resistance."
+        },
+        {
+          "text": "Carotid sinus baroreceptors are located at the origin of the internal carotid artery.",
+          "answer": true,
+          "explain": "They detect stretch in the carotid sinus near the common carotid bifurcation."
+        },
+        {
+          "text": "An increase in arterial pressure normally increases sympathetic outflow through the baroreceptor reflex.",
+          "answer": false,
+          "explain": "Increased baroreceptor firing inhibits sympathetic outflow and increases parasympathetic influence."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538509/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-pl-special-senses-001",
+      "type": "tf",
+      "topic": "pl-special-senses",
+      "level": 2,
+      "sub": "Visual physiology",
+      "q": "About the physiology of vision:",
+      "items": [
+        {
+          "text": "Rods are more sensitive to low levels of illumination than cones.",
+          "answer": true,
+          "explain": "Rods mediate scotopic vision and are highly sensitive in dim light."
+        },
+        {
+          "text": "Cones are responsible for high-acuity colour vision in bright light.",
+          "answer": true,
+          "explain": "Cone photoreceptors support photopic vision and colour discrimination."
+        },
+        {
+          "text": "Photoreceptors depolarise when exposed to light.",
+          "answer": false,
+          "explain": "Light closes cGMP-gated channels, causing photoreceptor hyperpolarisation."
+        },
+        {
+          "text": "The fovea centralis has a high density of cones and is important for visual acuity.",
+          "answer": true,
+          "explain": "The fovea is specialised for detailed central vision."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK11530/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-bc-chemistry-biomolecules-001",
+      "type": "tf",
+      "topic": "bc-chemistry-of-biomolecules",
+      "level": 2,
+      "sub": "Chemical properties of biomolecules",
+      "q": "About the chemical properties of biological molecules:",
+      "items": [
+        {
+          "text": "Amino acids contain both an amino group and a carboxyl group.",
+          "answer": true,
+          "explain": "The basic amino acid structure includes both functional groups and a variable side chain."
+        },
+        {
+          "text": "At physiological pH, many amino acids exist predominantly as zwitterions.",
+          "answer": true,
+          "explain": "The amino and carboxyl groups commonly carry opposite charges."
+        },
+        {
+          "text": "Most naturally occurring unsaturated fatty acids in human tissues contain only trans double bonds.",
+          "answer": false,
+          "explain": "Naturally occurring unsaturated fatty acids in human tissues are predominantly cis."
+        },
+        {
+          "text": "A glycosidic bond links monosaccharide residues in oligo- and polysaccharides.",
+          "answer": true,
+          "explain": "Glycosidic linkages join sugar units."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK554414/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-bc-inborn-errors-001",
+      "type": "tf",
+      "topic": "bc-inborn-errors-of-metabolism",
+      "level": 2,
+      "sub": "Phenylketonuria",
+      "q": "About phenylketonuria (PKU):",
+      "items": [
+        {
+          "text": "Classical PKU most commonly results from deficiency of phenylalanine hydroxylase.",
+          "answer": true,
+          "explain": "Reduced conversion of phenylalanine to tyrosine causes phenylalanine accumulation."
+        },
+        {
+          "text": "Untreated classical PKU can cause severe neurodevelopmental impairment.",
+          "answer": true,
+          "explain": "High phenylalanine concentrations are neurotoxic during brain development."
+        },
+        {
+          "text": "Tyrosine becomes an essential amino acid in untreated classical PKU.",
+          "answer": true,
+          "explain": "The metabolic block makes endogenous tyrosine production inadequate."
+        },
+        {
+          "text": "An unrestricted phenylalanine diet is recommended from infancy in classical PKU.",
+          "answer": false,
+          "explain": "Management requires phenylalanine restriction with adequate nutrition and monitoring."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK1504/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ba-hormones-001",
+      "type": "tf",
+      "topic": "ba-hormones-special-organs-and-neurochemistry",
+      "level": 2,
+      "sub": "Hormone signalling",
+      "q": "About hormone signalling mechanisms:",
+      "items": [
+        {
+          "text": "Peptide hormones commonly act through cell-surface receptors.",
+          "answer": true,
+          "explain": "Their hydrophilic nature generally prevents free diffusion through lipid bilayers."
+        },
+        {
+          "text": "Steroid hormones commonly bind intracellular receptors that regulate gene transcription.",
+          "answer": true,
+          "explain": "Hormone-receptor complexes can alter transcription through DNA response elements."
+        },
+        {
+          "text": "Adenylyl cyclase generates cAMP from ATP.",
+          "answer": true,
+          "explain": "The enzyme catalyses conversion of ATP to cyclic AMP."
+        },
+        {
+          "text": "All hormones act exclusively through G-protein-coupled receptors.",
+          "answer": false,
+          "explain": "Hormones also signal through nuclear receptors, receptor tyrosine kinases and other receptor classes."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538226/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ba-recombinant-dna-001",
+      "type": "tf",
+      "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+      "level": 2,
+      "sub": "Recombinant DNA and PCR",
+      "q": "About recombinant DNA technology and PCR:",
+      "items": [
+        {
+          "text": "Restriction endonucleases can cleave DNA at specific recognition sequences.",
+          "answer": true,
+          "explain": "These enzymes recognise defined DNA sequences and cut phosphodiester bonds."
+        },
+        {
+          "text": "DNA ligase can join compatible DNA fragments by forming phosphodiester bonds.",
+          "answer": true,
+          "explain": "DNA ligase seals breaks in the sugar-phosphate backbone."
+        },
+        {
+          "text": "PCR requires a thermostable DNA polymerase for repeated high-temperature denaturation cycles.",
+          "answer": true,
+          "explain": "Thermostable polymerases remain functional through repeated heating cycles."
+        },
+        {
+          "text": "The annealing step of conventional PCR is performed at a higher temperature than denaturation.",
+          "answer": false,
+          "explain": "Primer annealing occurs at a lower temperature than the initial DNA denaturation step."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26837/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "tf-ba-detoxification-001",
+      "type": "tf",
+      "topic": "ba-detoxification-and-xenobiotics",
+      "level": 2,
+      "sub": "Biotransformation of xenobiotics",
+      "q": "About the biotransformation of drugs and other xenobiotics:",
+      "items": [
+        {
+          "text": "Phase I reactions may introduce or expose functional groups through oxidation, reduction or hydrolysis.",
+          "answer": true,
+          "explain": "These reactions commonly modify molecular structure and may increase polarity."
+        },
+        {
+          "text": "Cytochrome P450 enzymes are important in many oxidative Phase I reactions.",
+          "answer": true,
+          "explain": "The CYP enzyme family metabolises numerous drugs and xenobiotics."
+        },
+        {
+          "text": "Phase II reactions commonly involve conjugation with endogenous molecules such as glucuronic acid or sulfate.",
+          "answer": true,
+          "explain": "Conjugation generally increases water solubility and facilitates elimination."
+        },
+        {
+          "text": "Every drug metabolite is pharmacologically inactive and less toxic than its parent compound.",
+          "answer": false,
+          "explain": "Some metabolites remain active or are more toxic; bioactivation can produce reactive intermediates."
+        }
+      ],
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK544353/"
+      ],
+      "verified": true,
+      "reviewStatus": "verified"
     }
   ]
 }
