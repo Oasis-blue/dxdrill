@@ -2,7 +2,7 @@
 
 **Audit date:** 27 November 2026  
 **Source:** `data/questions/tf-core-expansion.json` (blob SHA `b03746648e9c6c60272634ca343079ef1796c444`)  
-**Scope:** structural inventory and broad subject-domain coverage of the 433-stem bank. This is not a full FUHSO/MDCN syllabus mapping or a fresh academic verification of question content.
+**Scope:** structural inventory and broad subject-domain coverage of the 448-stem bank. This is not a full FUHSO/MDCN syllabus mapping or a fresh academic verification of question content.
 
 ## Current inventory
 
