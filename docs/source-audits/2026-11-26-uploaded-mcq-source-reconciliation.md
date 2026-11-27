@@ -488,3 +488,18 @@ Five original MCQs were added to each of three existing curriculum topic banks a
 Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. These additions are targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
 
 **Cumulative source-reconciliation additions: 268 original questions** (253 previously recorded plus these 15).
+
+
+## Endocrine histology, thermoregulation and enzyme kinetics — 27 November 2026
+
+Five original MCQs were added to each of three existing curriculum topic banks after checking the canonical topic registry and current question coverage:
+
+**Anatomy / Histology — endocrine system (8 → 13; topic ID: `sh-endocrine-system`):** anterior pituitary acidophils and chromophobes, parathyroid oxyphil cells, active thyroid follicular morphology and pancreatic islet histology.
+
+**Physiology — body temperature (22 → 27; topic ID: `phys-temperature`):** heat acclimatisation, shivering thermogenesis, cold-induced cutaneous vasoconstriction, radiant heat transfer and the raised hypothalamic set point during fever.
+
+**Medical Biochemistry — enzymes and bioenergetics (45 → 50; topic ID: `bc-enzymes-and-bioenergetics`):** enzyme saturation and Vmax, group specificity, Mg-ATP in kinase reactions, methotrexate inhibition of dihydrofolate reductase and the effect of reduced substrate affinity on Km.
+
+Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 283 original questions** (268 previously recorded plus these 15).
