@@ -1,1073 +1,1073 @@
 {
-  "topic": "emb-gametes-fertilization",
-  "questions": [
-    {
-      "id": "emb-001",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Gametes and ovulation",
-      "q": "At ovulation, the oocyte is arrested in which stage of meiosis?",
-      "options": [
-        "Prophase I",
-        "Metaphase I",
-        "Metaphase II",
-        "Telophase II"
-      ],
-      "answer": 2,
-      "explain": "Meiosis I finishes just before ovulation (LH surge), producing the secondary oocyte and the first polar body. The oocyte then arrests in metaphase II and completes meiosis II only if a sperm penetrates it.",
-      "verified": false,
-      "open": {
-        "q": "At ovulation, the oocyte is arrested in which stage of meiosis?",
-        "accept": [
-          "metaphase 2",
-          "metaphase II",
-          "MII"
-        ]
-      }
-    },
-    {
-      "id": "emb-002",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Gametes and ovulation",
-      "q": "Primary oocytes, from fetal life until just before ovulation, are arrested in:",
-      "options": [
-        "Prophase I (diplotene)",
-        "Metaphase I",
-        "Anaphase I",
-        "Metaphase II"
-      ],
-      "answer": 0,
-      "explain": "Primary oocytes start meiosis I in fetal life and stall in prophase I. This very long arrest is one reason aneuploidy such as trisomy 21 becomes more common with maternal age.",
-      "verified": false,
-      "open": {
-        "q": "From fetal life until just before ovulation, primary oocytes are arrested in which stage?",
-        "accept": [
-          "prophase I",
-          "prophase 1",
-          "diplotene",
-          "dictyotene"
-        ]
-      }
-    },
-    {
-      "id": "emb-003",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Gametes and ovulation",
-      "q": "What triggers completion of meiosis I in the primary oocyte?",
-      "options": [
-        "FSH surge",
-        "LH surge",
-        "Rising progesterone from the corpus luteum",
-        "Sperm penetration",
-        "hCG from the syncytiotrophoblast"
-      ],
-      "answer": 1,
-      "explain": "The mid-cycle LH surge resumes meiosis I and triggers ovulation. Sperm penetration triggers completion of meiosis II, a classic exam trap.",
-      "verified": false,
-      "open": {
-        "q": "What triggers completion of meiosis I in the primary oocyte?",
-        "accept": [
-          "luteinizing hormone surge",
-          "LH",
-          "LH peak"
-        ]
-      }
-    },
-    {
-      "id": "emb-004",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Gametes and ovulation",
-      "q": "For roughly how long after ovulation can the oocyte be fertilized?",
-      "options": [
-        "1–2 hours",
-        "12–24 hours",
-        "3–4 days",
-        "5–7 days"
-      ],
-      "answer": 1,
-      "explain": "The oocyte stays viable for about 12–24 hours, while sperm can survive in the female tract for roughly 24–72 hours (sometimes longer). This is why the fertile window starts several days before ovulation.",
-      "verified": false,
-      "open": {
-        "q": "For roughly how long after ovulation can the oocyte be fertilized?",
-        "accept": [
-          "12 to 24 hours",
-          "24 hours",
-          "within 24 hours",
-          "about a day"
-        ]
-      }
-    },
-    {
-      "id": "emb-005",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Gametes and ovulation",
-      "q": "From inside to outside, what surrounds the ovulated oocyte?",
-      "options": [
-        "Oocyte membrane → zona pellucida → corona radiata",
-        "Oocyte membrane → corona radiata → zona pellucida",
-        "Zona pellucida → oocyte membrane → corona radiata",
-        "Corona radiata → oocyte membrane → zona pellucida"
-      ],
-      "answer": 0,
-      "explain": "A sperm must get through the corona radiata first, then the zona pellucida, before it can reach the oocyte plasma membrane.",
-      "verified": false,
-      "open": {
-        "q": "Name the layers surrounding the ovulated oocyte, from inside to outside.",
-        "accept": [
-          "zona pellucida then corona radiata",
-          "zona pellucida, corona radiata"
-        ]
-      }
-    },
-    {
-      "id": "emb-006",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Sperm and capacitation",
-      "q": "Which sperm structure holds the hydrolytic enzymes needed to penetrate the oocyte's coverings?",
-      "options": [
-        "Acrosome",
-        "Midpiece",
-        "Centriole",
-        "Nuclear envelope",
-        "Principal piece of the tail"
-      ],
-      "answer": 0,
-      "explain": "The acrosome is a Golgi-derived cap over the nucleus containing hyaluronidase, acrosin and other enzymes. The midpiece holds the mitochondria that power motility.",
-      "verified": false,
-      "open": {
-        "q": "Which sperm structure holds the hydrolytic enzymes needed to penetrate the oocyte's coverings?",
-        "accept": [
-          "acrosomal cap",
-          "acrosomal vesicle"
-        ]
-      }
-    },
-    {
-      "id": "emb-007",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Sperm and capacitation",
-      "q": "Capacitation of sperm involves:",
-      "options": [
-        "Removal of surface proteins and cholesterol from the sperm membrane",
-        "Release of acrosomal enzymes before zona binding",
-        "Fusion of sperm and oocyte plasma membranes",
-        "Completion of meiotic divisions by the sperm",
-        "Formation of the male pronucleus"
-      ],
-      "answer": 0,
-      "explain": "Capacitation occurs in the female reproductive tract. It involves removal of seminal-plasma glycoproteins and membrane cholesterol from the sperm head, increasing membrane fluidity and enabling the acrosome reaction and hyperactivated motility.",
-      "verified": false,
-      "open": {
-        "q": "What happens to the sperm during capacitation?",
-        "accept": [
-          "removal of glycoprotein coat",
-          "coat removal",
-          "loss of seminal plasma proteins",
-          "removal of seminal plasma proteins"
-        ]
-      }
-    },
-    {
-      "id": "emb-008",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Sperm and capacitation",
-      "q": "Binding of a capacitated spermatozoon to glycoproteins of which oocyte covering helps trigger the acrosome reaction?",
-      "options": [
-        "Zona pellucida",
-        "Corona radiata",
-        "Oocyte plasma membrane",
-        "Cortical granule membrane",
-        "Cumulus cell basement membrane"
-      ],
-      "answer": 0,
-      "explain": "Sperm interaction with zona pellucida glycoproteins triggers the acrosome reaction, allowing release of enzymes that help the sperm traverse the zona. The precise receptor interactions are species-dependent; avoiding an exclusive ZP3 claim is more accurate for a general human embryology question.",
-      "verified": false,
-      "open": {
-        "q": "The acrosome reaction is induced when the sperm binds to which structure?",
-        "accept": [
-          "ZP3",
-          "zona pellucida glycoprotein 3",
-          "zona pellucida"
-        ]
-      }
-    },
-    {
-      "id": "emb-009",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Sperm and capacitation",
-      "q": "Which enzymes mainly allow the sperm to digest a path through the zona pellucida?",
-      "options": [
-        "Acrosin and other zona-lytic proteases",
-        "Amylase and maltase",
-        "Pepsin and gastric lipase",
-        "Hyaluronidase alone"
-      ],
-      "answer": 0,
-      "explain": "Hyaluronidase helps the sperm pass through the corona radiata, while acrosin and trypsin-like enzymes lyse the zona. The sperm's tail movement drives it forward.",
-      "verified": false,
-      "open": {
-        "q": "Which enzymes mainly let the sperm digest a path through the zona pellucida?",
-        "accept": [
-          "acrosin",
-          "trypsin-like enzymes",
-          "trypsin"
-        ]
-      }
-    },
-    {
-      "id": "emb-010",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Sperm and capacitation",
-      "q": "The mitochondrial DNA of the zygote comes from:",
-      "options": [
-        "The mother",
-        "The father",
-        "Both parents equally",
-        "The polar bodies"
-      ],
-      "answer": 0,
-      "explain": "Sperm mitochondria sit in the midpiece and are normally eliminated after fertilization, so mitochondrial inheritance is maternal.",
-      "verified": false,
-      "open": {
-        "q": "From which parent does the zygote's mitochondrial DNA come?",
-        "accept": [
-          "mother",
-          "maternal",
-          "oocyte"
-        ]
-      }
-    },
-    {
-      "id": "emb-011",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Sperm and capacitation",
-      "q": "Of the many millions of sperm deposited in the vagina, roughly how many reach the ampulla?",
-      "options": [
-        "A few hundred",
-        "About half",
-        "About 100,000",
-        "Exactly one",
-        "Several million"
-      ],
-      "answer": 0,
-      "explain": "Most sperm are lost in the vagina, cervix and uterine cavity. Only a few hundred reach the site of fertilization, and only one fertilizes the oocyte.",
-      "verified": false,
-      "open": {
-        "q": "Of the many millions of sperm deposited in the vagina, roughly how many reach the ampulla?",
-        "accept": [
-          "hundreds",
-          "200",
-          "300",
-          "about 200",
-          "few hundred"
-        ]
-      }
-    },
-    {
-      "id": "emb-012",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "Fertilization normally occurs in the:",
-      "options": [
-        "Infundibulum",
-        "Ampulla of the uterine tube",
-        "Isthmus of the uterine tube",
-        "Uterine cavity",
-        "Cervical canal"
-      ],
-      "answer": 1,
-      "explain": "The ampulla, the widest and longest part of the tube, is the usual site of fertilization. It is also the most common site of ectopic pregnancy.",
-      "verified": false,
-      "open": {
-        "q": "Where does fertilization normally occur?",
-        "accept": [
-          "ampulla",
-          "ampulla of the fallopian tube",
-          "uterine tube ampulla"
-        ]
-      }
-    },
-    {
-      "id": "emb-013",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "Which sequence of events is correct?",
-      "options": [
-        "Capacitation → corona radiata penetration → zona binding → acrosome reaction → zona penetration → membrane fusion → cortical reaction",
-        "Corona radiata penetration → acrosome reaction → capacitation → zona penetration → membrane fusion → cortical reaction",
-        "Capacitation → zona penetration → zona binding → cortical reaction → acrosome reaction → membrane fusion",
-        "Capacitation → membrane fusion → zona binding → acrosome reaction → zona penetration → cortical reaction"
-      ],
-      "answer": 0,
-      "explain": "Capacitation comes first, then the sperm crosses the corona, binds ZP3 and undergoes the acrosome reaction, digests through the zona, and fuses with the oocyte membrane. Fusion triggers the cortical reaction.",
-      "verified": false,
-      "optionsOnly": true
-    },
-    {
-      "id": "emb-014",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "What is the main purpose of the zona (cortical) reaction?",
-      "options": [
-        "To prevent polyspermy",
-        "To trigger the acrosome reaction",
-        "To complete meiosis I",
-        "To release the oocyte from the follicle",
-        "To start cleavage"
-      ],
-      "answer": 0,
-      "explain": "Cortical granules just under the oocyte membrane release enzymes into the perivitelline space. These alter zona proteins (ZP2, ZP3) so no further sperm can bind or penetrate.",
-      "verified": false,
-      "open": {
-        "q": "What is the main purpose of the zona (cortical) reaction?",
-        "accept": [
-          "block polyspermy",
-          "prevent polyspermy",
-          "prevent multiple sperm entry"
-        ]
-      }
-    },
-    {
-      "id": "emb-015",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "Sperm penetration of the oocyte directly triggers:",
-      "options": [
-        "Completion of meiosis II and cortical reaction",
-        "Completion of meiosis I",
-        "Acrosome reaction",
-        "Capacitation",
-        "Compaction"
-      ],
-      "answer": 0,
-      "explain": "Entry of the sperm activates the oocyte: meiosis II is completed and cortical granules are released.",
-      "verified": false,
-      "open": {
-        "q": "What two events does sperm penetration of the oocyte directly trigger?",
-        "accept": [
-          "meiosis II and cortical reaction",
-          "completion of meiosis II",
-          "cortical reaction"
-        ]
-      }
-    },
-    {
-      "id": "emb-016",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "The second polar body is extruded:",
-      "options": [
-        "After sperm entry",
-        "Before ovulation",
-        "At ovulation",
-        "During the first cleavage division",
-        "At implantation"
-      ],
-      "answer": 0,
-      "explain": "Meiosis II is completed only after fertilization. It yields the mature oocyte (with the female pronucleus) and the second polar body.",
-      "verified": false,
-      "open": {
-        "q": "When is the second polar body extruded, relative to sperm entry?",
-        "accept": [
-          "after sperm entry",
-          "after sperm penetration",
-          "after fertilization"
-        ]
-      }
-    },
-    {
-      "id": "emb-017",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "Just before they come together, each pronucleus contains:",
-      "options": [
-        "23 chromosomes, in a haploid set",
-        "46 chromosomes, in a diploid set",
-        "23 pairs of chromosomes",
-        "92 chromosomes, after DNA replication"
-      ],
-      "answer": 0,
-      "explain": "The male and female pronuclei are each haploid. DNA replicates during the pronuclear stage, and the parental chromosomes mix on the spindle of the first cleavage division, restoring the diploid number (46).",
-      "verified": false,
-      "open": {
-        "q": "How many chromosomes does each pronucleus contain just before they come together?",
-        "accept": [
-          "23",
-          "haploid",
-          "n"
-        ],
-        "a": "23 chromosomes (haploid)"
-      }
-    },
-    {
-      "id": "emb-018",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "Which of the following is NOT a result of fertilization?",
-      "options": [
-        "Completion of meiosis I in the oocyte",
-        "Restoration of the diploid chromosome number",
-        "Determination of chromosomal sex",
-        "Initiation of cleavage",
-        "Genetic variation from mixing maternal and paternal chromosomes"
-      ],
-      "answer": 0,
-      "explain": "Meiosis I is completed before ovulation, under the LH surge. Fertilization restores 46 chromosomes, determines sex, starts cleavage and adds variation.",
-      "verified": false,
-      "optionsOnly": true
-    },
-    {
-      "id": "emb-019",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "The chromosomal sex of the embryo is determined by:",
-      "options": [
-        "The type of sperm (X or Y) that fertilizes the oocyte",
-        "The sex chromosome carried by the oocyte",
-        "Temperature at implantation",
-        "Hormones in the uterine tube"
-      ],
-      "answer": 0,
-      "explain": "The oocyte always contributes an X. An X-bearing sperm gives 46,XX and a Y-bearing sperm gives 46,XY.",
-      "verified": false,
-      "open": {
-        "q": "What determines the chromosomal sex of the embryo?",
-        "accept": [
-          "sperm",
-          "X or Y sperm",
-          "the sperm"
-        ]
-      }
-    },
-    {
-      "id": "emb-020",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Fertilization",
-      "q": "Fertilization of one oocyte by two sperm (dispermy) typically gives:",
-      "options": [
-        "A triploid zygote with 69 chromosomes",
-        "A tetraploid zygote with 92 chromosomes",
-        "A diploid zygote with trisomy 21",
-        "A haploid zygote with 23 chromosomes",
-        "A diploid zygote with monosomy X"
-      ],
-      "answer": 0,
-      "explain": "Dispermy produces 69 chromosomes (for example 69,XXY). It usually ends as a partial hydatidiform mole or an early miscarriage.",
-      "verified": false,
-      "open": {
-        "q": "Fertilization of one oocyte by two sperm (dispermy) typically gives what?",
-        "accept": [
-          "triploidy",
-          "triploid",
-          "69 chromosomes",
-          "69,XXY"
-        ]
-      }
-    },
-    {
-      "id": "emb-052",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Primordial Germ Cells",
-      "q": "Where do human primordial germ cells (PGCs) first become identifiable during the third week of embryonic development?",
-      "options": [
-        "Yolk-sac wall near the allantois",
-        "Developing ovarian cortical cords",
-        "Mesonephric ridge",
-        "Trophoblast shell"
-      ],
-      "answer": 0,
-      "explain": "Primordial germ cells arise from the epiblast during gastrulation and first become visible in the endodermal wall of the yolk sac close to the allantois during week 3 before migrating along the dorsal mesentery to the genital ridges.",
-      "verified": false,
-      "open": {
-        "q": "In which extraembryonic structure are primordial germ cells first recognized during the third week of human development?",
-        "accept": [
-          "yolk sac",
-          "wall of the yolk sac",
-          "umbilical vesicle"
-        ]
-      }
-    },
-    {
-      "id": "emb-053",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Primordial Germ Cells",
-      "q": "Aberrant migration of primordial germ cells along the dorsal mesentery toward the gonadal ridges can result in which congenital midline tumor most commonly seen in the sacrococcygeal region of newborns?",
-      "options": [
-        "Teratoma",
-        "Seminoma",
-        "Choriocarcinoma",
-        "Wilms tumor"
-      ],
-      "answer": 0,
-      "explain": "Stray primordial germ cells that lodge in extragonadal midline sites (such as the sacrococcygeal or mediastinal regions) can differentiate into pluripotent tissues from all three germ layers, forming a sacrococcygeal teratoma.",
-      "verified": false,
-      "open": {
-        "q": "Name the pluripotent germ cell tumor containing derivatives of all three germ layers that arises when stray primordial germ cells lodge in the sacrococcygeal region.",
-        "accept": [
-          "sacrococcygeal teratoma",
-          "teratomas"
-        ]
-      }
-    },
-    {
-      "id": "emb-054",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Oogenesis",
-      "q": "At what stage of cell division are all primary oocytes arrested in the female fetus before birth until puberty?",
-      "options": [
-        "Prophase I (diplotene stage) of meiosis I",
-        "Metaphase II of meiosis II",
-        "Anaphase I of meiosis I",
-        "G2 phase of interphase"
-      ],
-      "answer": 0,
-      "explain": "Primary oocytes enter meiosis I in utero and arrest in the diplotene stage of prophase I, maintained by oocyte maturation inhibitor (OMI) secreted by follicular cells until the LH surge at ovulation.",
-      "verified": false,
-      "open": {
-        "q": "In which specific phase and substage of meiosis are primary oocytes arrested from before birth until ovulation?",
-        "accept": [
-          "diplotene stage of prophase I",
-          "prophase I",
-          "diplotene"
-        ]
-      }
-    },
-    {
-      "id": "emb-055",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Oogenesis",
-      "q": "At the time of ovulation, at which stage of meiosis is the human secondary oocyte arrested?",
-      "options": [
-        "Metaphase II of meiosis II",
-        "Prophase I (diplotene)",
-        "Telophase I",
-        "Anaphase II"
-      ],
-      "answer": 0,
-      "explain": "Just prior to ovulation, the LH surge triggers completion of meiosis I (extruding the first polar body); the secondary oocyte then enters meiosis II and arrests in metaphase II until fertilization occurs.",
-      "verified": false,
-      "open": {
-        "q": "In which stage of meiosis is a freshly ovulated secondary oocyte arrested prior to fertilization?",
-        "accept": [
-          "metaphase II",
-          "metaphase of meiosis II"
-        ]
-      }
-    },
-    {
-      "id": "emb-056",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Oogenesis",
-      "q": "How many functional female gametes (ova) are produced from a single primary oocyte upon completion of both meiotic divisions?",
-      "options": [
-        "One ovum (and up to three polar bodies)",
-        "Two ova",
-        "Four ova",
-        "Three ova"
-      ],
-      "answer": 0,
-      "explain": "Due to unequal cytokinesis during both meiosis I and meiosis II, one primary oocyte yields a single large functional ovum containing almost all the cytoplasm and two or three small non-functional polar bodies.",
-      "verified": false,
-      "open": {
-        "q": "How many mature functional ova result from one primary oocyte completing meiosis I and II?",
-        "accept": [
-          "1",
-          "one",
-          "a single ovum"
-        ]
-      }
-    },
-    {
-      "id": "emb-057",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Oogenesis",
-      "q": "Why does the risk of fetal chromosomal nondisjunction (such as trisomy 21) rise markedly with advanced maternal age?",
-      "options": [
-        "Progressive loss of cohesin in primary oocytes arrested in prophase I",
-        "Rapid mitotic division of oogonia throughout adult life",
-        "Arrest of spermatogonia after the age of 35",
-        "Failure of the zona pellucida to permit polar-body extrusion"
-      ],
-      "answer": 0,
-      "explain": "Because female primary oocytes are formed before birth and remain suspended in diplotene of prophase I for 12 to 50 years, progressive loss of meiotic cohesin proteins increases chromosome missegregation during meiosis I.",
-      "verified": false,
-      "open": {
-        "q": "Which prolonged meiotic arrest in female gametogenesis predisposes older oocytes to chromosomal nondisjunction?",
-        "accept": [
-          "prophase I arrest",
-          "diplotene arrest in prophase I",
-          "arrest in prophase I"
-        ]
-      }
-    },
-    {
-      "id": "emb-058",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Spermatogenesis and Spermiogenesis",
-      "q": "Approximately how many days does the complete process of spermatogenesis (from type A spermatogonium to mature spermatozoon) take in humans?",
-      "options": [
-        "64 to 74 days",
-        "14 days",
-        "28 days",
-        "120 days"
-      ],
-      "answer": 0,
-      "explain": "In humans, spermatogenesis within the seminiferous tubules takes approximately 64 to 74 days (roughly 2.5 months), followed by epididymal maturation.",
-      "verified": false,
-      "open": {
-        "q": "State the approximate duration in days required for human spermatogenesis from spermatogonium to mature spermatozoon.",
-        "accept": [
-          "64 days",
-          "74 days",
-          "64-74 days",
-          "about 70 days"
-        ]
-      }
-    },
-    {
-      "id": "emb-059",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Spermatogenesis and Spermiogenesis",
-      "q": "Which cell type within the seminiferous tubule undergoes the first meiotic division to give rise to two haploid secondary spermatocytes?",
-      "options": [
-        "Primary spermatocyte",
-        "Type B spermatogonium",
-        "Spermatid",
-        "Sertoli cell"
-      ],
-      "answer": 0,
-      "explain": "Type B spermatogonia divide mitotically to form primary spermatocytes (46,XY, 4n), which undergo meiosis I to yield two secondary spermatocytes (23,X or 23,Y, 2n).",
-      "verified": false,
-      "open": {
-        "q": "Which male germ cell undergoes meiosis I to produce two secondary spermatocytes?",
-        "accept": [
-          "primary spermatocytes"
-        ]
-      }
-    },
-    {
-      "id": "emb-060",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Spermatogenesis and Spermiogenesis",
-      "q": "From which cellular organelle is the acrosomal cap of the spermatozoon formed during spermiogenesis?",
-      "options": [
-        "Golgi apparatus",
-        "Mitochondrion",
-        "Rough endoplasmic reticulum",
-        "Centriole"
-      ],
-      "answer": 0,
-      "explain": "During the Golgi phase of spermiogenesis, proacrosomal vesicles produced by the Golgi apparatus coalesce into a single membrane-bound acrosomal vesicle covering the anterior half of the condensed sperm nucleus.",
-      "verified": false,
-      "open": {
-        "q": "Which organelle synthesizes and packages the hydrolytic enzymes that form the sperm acrosome during spermiogenesis?",
-        "accept": [
-          "Golgi complex",
-          "Golgi body",
-          "Golgi"
-        ]
-      }
-    },
-    {
-      "id": "emb-061",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Spermatogenesis and Spermiogenesis",
-      "q": "Which portion of the mature spermatozoon contains a helical sheath of mitochondria that generates ATP for flagellar motility?",
-      "options": [
-        "Middle piece (midpiece)",
-        "Acrosome",
-        "Principal piece",
-        "End piece"
-      ],
-      "answer": 0,
-      "explain": "During spermiogenesis, mitochondria migrate to form a tight spiral sheath around the proximal axoneme in the middle piece of the sperm tail, supplying ATP for flagellar beating.",
-      "verified": false,
-      "open": {
-        "q": "In which segment of the mature spermatozoon tail are mitochondria arranged in a helical sheath around the axoneme?",
-        "accept": [
-          "midpiece",
-          "middle piece of tail"
-        ]
-      }
-    },
-    {
-      "id": "emb-062",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Spermatogenesis and Spermiogenesis",
-      "q": "Which somatic supporting cells of the seminiferous epithelium form the blood-testis barrier via tight junctions, phagocytose residual bodies during spermiogenesis, and secrete androgen-binding protein and inhibin?",
-      "options": [
-        "Sertoli cells",
-        "Leydig cells",
-        "Myoid cells",
-        "Spermatogonia"
-      ],
-      "answer": 0,
-      "explain": "Sertoli (sustentacular) cells span the seminiferous epithelium, form tight junctions dividing it into basal and adluminal compartments, phagocytose excess spermatid cytoplasm (residual bodies), and secrete ABP, inhibin B, and anti-Mullerian hormone.",
-      "verified": false,
-      "open": {
-        "q": "Name the somatic columnar supporting cells of the seminiferous tubules that form the blood-testis barrier and phagocytose residual bodies.",
-        "accept": [
-          "Sertoli cell",
-          "sustentacular cells"
-        ]
-      }
-    },
-    {
-      "id": "emb-063",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ovarian and Endometrial Cycles",
-      "q": "Which pituitary gonadotropin surge occurring approximately 24 to 36 hours before follicle rupture triggers resumption of meiosis I and ovulation?",
-      "options": [
-        "Luteinizing hormone (LH) surge",
-        "Follicle-stimulating hormone (FSH) suppression",
-        "Prolactin surge",
-        "Oxytocin surge"
-      ],
-      "answer": 0,
-      "explain": "High late-follicular estradiol exerts positive feedback on the anterior pituitary, causing a sharp LH surge that induces resumption of meiosis I, luteinization of granulosa cells, and collagenase-mediated follicular rupture 24-36 hours later.",
-      "verified": false,
-      "open": {
-        "q": "A surge in which anterior pituitary hormone directly triggers ovulation and completion of meiosis I in the primary oocyte?",
-        "accept": [
-          "LH",
-          "luteinizing hormone",
-          "LH surge"
-        ]
-      }
-    },
-    {
-      "id": "emb-064",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ovarian and Endometrial Cycles",
-      "q": "If fertilization does NOT occur, approximately how many days after ovulation does the corpus luteum of menstruation degenerate into the fibrous corpus albicans?",
-      "options": [
-        "About 12–14 days after ovulation",
-        "About 2 days after ovulation",
-        "About 21 days after ovulation",
-        "About 90 days after ovulation"
-      ],
-      "answer": 0,
-      "explain": "Without hCG support, the corpus luteum regresses approximately 12–14 days after ovulation. Progesterone falls and menstruation follows.",
-      "verified": false,
-      "open": {
-        "q": "Into what white fibrous scar does the corpus luteum involute when fertilization fails to occur?",
-        "accept": [
-          "corpus albicans"
-        ]
-      }
-    },
-    {
-      "id": "emb-065",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ovarian and Endometrial Cycles",
-      "q": "Which hormone secreted by the syncytiotrophoblast of an implanting blastocyst rescues the corpus luteum from degeneration so it continues secreting progesterone during early pregnancy?",
-      "options": [
-        "Human chorionic gonadotropin (hCG)",
-        "Human placental lactogen (hPL)",
-        "Relaxin",
-        "Inhibin A"
-      ],
-      "answer": 0,
-      "explain": "Syncytiotrophoblast cells produce human chorionic gonadotropin (hCG), which binds LH receptors on luteal cells to maintain the corpus luteum of pregnancy until the placenta takes over progesterone synthesis around weeks 8-10.",
-      "verified": false,
-      "open": {
-        "q": "Name the glycoprotein hormone secreted by the syncytiotrophoblast that maintains the corpus luteum during early pregnancy.",
-        "accept": [
-          "hCG",
-          "human chorionic gonadotropin",
-          "beta-hCG"
-        ]
-      }
-    },
-    {
-      "id": "emb-066",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "Where in the female reproductive tract does human fertilization normally take place?",
-      "options": [
-        "Ampulla of the uterine (fallopian) tube",
-        "Fundus of the uterus",
-        "Cervical canal",
-        "Ovarian surface"
-      ],
-      "answer": 0,
-      "explain": "Fertilization usually occurs in the ampulla of the uterine tube, its widest and longest segment, within 12 to 24 hours after ovulation.",
-      "verified": false,
-      "open": {
-        "q": "In which specific anatomical segment of the uterine tube does fertilization normally occur?",
-        "accept": [
-          "ampulla",
-          "ampulla of fallopian tube",
-          "ampulla of uterine tube"
-        ]
-      }
-    },
-    {
-      "id": "emb-067",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "What occurs during sperm capacitation in the female genital tract prior to the acrosome reaction?",
-      "options": [
-        "Removal of seminal-plasma proteins and cholesterol from the sperm membrane",
-        "Completion of meiosis by the sperm nucleus",
-        "Fusion of male and female pronuclei",
-        "Loss of the sperm flagellum"
-      ],
-      "answer": 0,
-      "explain": "Capacitation takes about 7 hours in the female reproductive tract and involves stripping seminal plasma glycoproteins and membrane cholesterol from the sperm head, increasing membrane fluidity, calcium permeability, and hyperactivated motility.",
-      "verified": false,
-      "open": {
-        "q": "What biochemical change occurs on the plasma membrane of the sperm head during capacitation in the female reproductive tract?",
-        "accept": [
-          "removal of glycoproteins and cholesterol",
-          "loss of cholesterol and seminal plasma proteins",
-          "cholesterol efflux and glycoprotein removal"
-        ]
-      }
-    },
-    {
-      "id": "emb-068",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "Binding of a capacitated spermatozoon to which oocyte covering helps trigger the acrosome reaction?",
-      "options": [
-        "Zona pellucida",
-        "Oocyte plasma membrane",
-        "Cumulus cell basement membrane",
-        "Oocyte cortical granules"
-      ],
-      "answer": 0,
-      "explain": "Interaction between capacitated sperm and zona pellucida glycoproteins contributes to the acrosome reaction and enables zona penetration. The exact sperm-binding interactions vary by species and are more complex than a single universal ZP3 receptor model.",
-      "verified": false,
-      "open": {
-        "q": "Which specific zona pellucida glycoprotein binds capacitated spermatozoa to induce the acrosome reaction?",
-        "accept": [
-          "ZP3",
-          "zona pellucida glycoprotein 3"
-        ]
-      }
-    },
-    {
-      "id": "emb-069",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "Which proteolytic enzyme released during the acrosome reaction digests a narrow path through the zona pellucida so the spermatozoon can reach the oocyte plasma membrane?",
-      "options": [
-        "Acrosin",
-        "Trypsin",
-        "Telomerase",
-        "Aromatase"
-      ],
-      "answer": 0,
-      "explain": "Hyaluronidase disperses the corona radiata cells, while acrosin (a serine protease bound to the inner acrosomal membrane) digests a channel through the zona pellucida.",
-      "verified": false,
-      "open": {
-        "q": "Name the serine protease released from the sperm acrosome that enables penetration of the zona pellucida.",
-        "accept": [
-          "acrosin enzyme"
-        ]
-      }
-    },
-    {
-      "id": "emb-070",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Fertilization",
-      "q": "How is polyspermy permanently prevented (the slow block to polyspermy) immediately after a single spermatozoon fuses with the oocyte plasma membrane?",
-      "options": [
-        "Cortical granule release modifies zona pellucida proteins",
-        "Corona radiata cells seal the sperm entry site",
-        "The first polar body blocks sperm receptors",
-        "The corpus luteum stops progesterone secretion"
-      ],
-      "answer": 0,
-      "explain": "Sperm–oocyte membrane fusion triggers a calcium wave and exocytosis of cortical granules. Their enzymes modify zona pellucida proteins (including cleavage of ZP2), preventing additional sperm from binding or penetrating.",
-      "verified": false,
-      "open": {
-        "q": "Name the calcium-triggered exocytosis of oocyte peripheral granules that modifies the zona pellucida to prevent polyspermy.",
-        "accept": [
-          "cortical reaction",
-          "zona reaction",
-          "cortical and zona reactions"
-        ]
-      }
-    },
-    {
-      "id": "emb-071",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Fertilization",
-      "q": "Which three major biological outcomes result directly from fertilization?",
-      "options": [
-        "Restores diploidy, determines chromosomal sex and initiates cleavage",
-        "Completes gastrulation, neurulation and organogenesis",
-        "Forms primordial germ cells and the major organ systems",
-        "Triggers ovulation, menstruation and implantation"
-      ],
-      "answer": 0,
-      "explain": "Fertilization restores the diploid number of chromosomes (23 maternal + 23 paternal = 46), determines chromosomal sex (XX or XY based on the fertilizing sperm), and activates the zygote to begin mitotic cleavage.",
-      "verified": false,
-      "open": {
-        "q": "State the three primary developmental consequences of fertilization.",
-        "accept": [
-          "restoration of diploid chromosome number, determination of chromosomal sex, and initiation of cleavage",
-          "diploid restoration, sex determination, initiation of cleavage"
-        ]
-      }
-    },
-    {
-      "id": "emb-072",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Cleavage and Blastocyst Formation",
-      "q": "What are the progressively smaller daughter cells produced by mitotic cleavage divisions of the zygote inside the zona pellucida called?",
-      "options": [
-        "Blastomeres",
-        "Trophoblasts",
-        "Epiblasts",
-        "Syncytiotrophoblasts"
-      ],
-      "answer": 0,
-      "explain": "During cleavage, the zygote undergoes rapid mitotic divisions without cytoplasmic growth, partitioning the cytoplasm into smaller cells called blastomeres.",
-      "verified": false,
-      "open": {
-        "q": "Name the progressively smaller cells formed by mitotic cleavage divisions of the zygote.",
-        "accept": [
-          "blastomere"
-        ]
-      }
-    },
-    {
-      "id": "emb-073",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Cleavage and Blastocyst Formation",
-      "q": "At approximately the 16-cell stage (around day 3 after fertilization), the solid mulberry-shaped ball of blastomeres entering the uterine cavity is called a:",
-      "options": [
-        "Morula",
-        "Blastocyst",
-        "Gastrula",
-        "Neurula"
-      ],
-      "answer": 0,
-      "explain": "Around 3 days after fertilization, compaction produces a 16-cell solid sphere of blastomeres called the morula, which enters the uterine lumen and begins absorbing fluid to form a blastocyst.",
-      "verified": false,
-      "open": {
-        "q": "What is the 16-cell solid spherical stage of embryonic development reached about 3 days after fertilization called?",
-        "accept": [
-          "morula stage"
-        ]
-      }
-    },
-    {
-      "id": "emb-074",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Cleavage and Blastocyst Formation",
-      "q": "In a day-5 blastocyst, which cell population gives rise to the embryo proper, whereas the outer trophoblast gives rise to the fetal placenta?",
-      "options": [
-        "Inner cell mass (embryoblast)",
-        "Zona pellucida",
-        "Corona radiata",
-        "Primary yolk sac"
-      ],
-      "answer": 0,
-      "explain": "As fluid enters the morula to form the blastocyst cavity (blastocoel), blastomeres segregate into an outer epithelial layer (trophoblast, forming embryonic placenta) and an eccentrically located inner cell mass (embryoblast, forming the embryo proper).",
-      "verified": false,
-      "open": {
-        "q": "Which cell cluster inside the blastocyst differentiates into the embryo proper?",
-        "accept": [
-          "embryoblast",
-          "inner cell mass",
-          "ICM"
-        ]
-      }
-    },
-    {
-      "id": "emb-075",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Cleavage and Blastocyst Formation",
-      "q": "Why must the blastocyst shed ('hatch' from) the zona pellucida around day 5 before implantation can occur?",
-      "options": [
-        "It exposes trophoblast cells so they can attach to the endometrium",
-        "It allows the embryo to obtain nutrients from yolk",
-        "It triggers secretion of progesterone by the corpus luteum",
-        "It initiates formation of the primitive streak"
-      ],
-      "answer": 0,
-      "explain": "While intact during tubal transit, the non-adhesive zona pellucida prevents the conceptus from implanting in the uterine tube; around day 5 in the uterine cavity, zona hatching exposes trophoblast integrins and L-selectin ligands required for endometrial attachment.",
-      "verified": false,
-      "open": {
-        "q": "What essential event must happen to the zona pellucida around day 5 in the uterine cavity before the blastocyst can attach to the endometrium?",
-        "accept": [
-          "zona hatching",
-          "hatching",
-          "degeneration of the zona pellucida",
-          "shedding of the zona pellucida"
-        ]
-      }
-    },
-    {
-      "id": "emb-076",
-      "type": "mcq",
-      "level": 3,
-      "sub": "Cleavage and Blastocyst Formation",
-      "q": "A 26-year-old woman presents at 6 weeks gestation with sharp right lower quadrant pain, vaginal spotting, and hemodynamic instability. Ultrasound reveals an empty uterine cavity and a ruptured gestational sac in the right fallopian tube. What is the most common anatomical site for such an ectopic pregnancy?",
-      "options": [
-        "Ampulla of the uterine tube",
-        "Isthmus of the uterine tube",
-        "Fimbriated infundibulum",
-        "Abdominal peritoneal cavity"
-      ],
-      "answer": 0,
-      "explain": "Over 95% of ectopic pregnancies occur in the uterine (fallopian) tube, with the ampulla being the single most common location (~70-80%), often secondary to delayed tubal transport from prior pelvic inflammatory disease.",
-      "verified": false,
-      "open": {
-        "q": "In which segment of the uterine tube do the majority of ectopic pregnancies implant?",
-        "accept": [
-          "ampulla",
-          "ampullary region",
-          "ampulla of uterine tube"
-        ]
-      }
-    }
-  ]
+ "topic": "emb-gametes-fertilization",
+ "questions": [
+  {
+   "id": "emb-001",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gametes and ovulation",
+   "q": "At ovulation, the oocyte is arrested in which stage of meiosis?",
+   "options": [
+    "Prophase I",
+    "Metaphase I",
+    "Metaphase II",
+    "Telophase II"
+   ],
+   "answer": 2,
+   "explain": "Meiosis I finishes just before ovulation (LH surge), producing the secondary oocyte and the first polar body. The oocyte then arrests in metaphase II and completes meiosis II only if a sperm penetrates it.",
+   "verified": false,
+   "open": {
+    "q": "At ovulation, the oocyte is arrested in which stage of meiosis?",
+    "accept": [
+     "metaphase 2",
+     "metaphase II",
+     "MII"
+    ]
+   }
+  },
+  {
+   "id": "emb-002",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gametes and ovulation",
+   "q": "Primary oocytes, from fetal life until just before ovulation, are arrested in:",
+   "options": [
+    "Prophase I (diplotene)",
+    "Metaphase I",
+    "Anaphase I",
+    "Metaphase II"
+   ],
+   "answer": 0,
+   "explain": "Primary oocytes start meiosis I in fetal life and stall in prophase I. This very long arrest is one reason aneuploidy such as trisomy 21 becomes more common with maternal age.",
+   "verified": false,
+   "open": {
+    "q": "From fetal life until just before ovulation, primary oocytes are arrested in which stage?",
+    "accept": [
+     "prophase I",
+     "prophase 1",
+     "diplotene",
+     "dictyotene"
+    ]
+   }
+  },
+  {
+   "id": "emb-003",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Gametes and ovulation",
+   "q": "What triggers completion of meiosis I in the primary oocyte?",
+   "options": [
+    "FSH surge",
+    "LH surge",
+    "Rising progesterone from the corpus luteum",
+    "Sperm penetration",
+    "hCG from the syncytiotrophoblast"
+   ],
+   "answer": 1,
+   "explain": "The mid-cycle LH surge resumes meiosis I and triggers ovulation. Sperm penetration triggers completion of meiosis II, a classic exam trap.",
+   "verified": false,
+   "open": {
+    "q": "What triggers completion of meiosis I in the primary oocyte?",
+    "accept": [
+     "luteinizing hormone surge",
+     "LH",
+     "LH peak"
+    ]
+   }
+  },
+  {
+   "id": "emb-004",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gametes and ovulation",
+   "q": "For roughly how long after ovulation can the oocyte be fertilized?",
+   "options": [
+    "1–2 hours",
+    "12–24 hours",
+    "3–4 days",
+    "5–7 days"
+   ],
+   "answer": 1,
+   "explain": "The oocyte stays viable for about 12–24 hours, while sperm can survive in the female tract for roughly 24–72 hours (sometimes longer). This is why the fertile window starts several days before ovulation.",
+   "verified": false,
+   "open": {
+    "q": "For roughly how long after ovulation can the oocyte be fertilized?",
+    "accept": [
+     "12 to 24 hours",
+     "24 hours",
+     "within 24 hours",
+     "about a day"
+    ]
+   }
+  },
+  {
+   "id": "emb-005",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Gametes and ovulation",
+   "q": "From inside to outside, what surrounds the ovulated oocyte?",
+   "options": [
+    "Oocyte membrane → zona pellucida → corona radiata",
+    "Oocyte membrane → corona radiata → zona pellucida",
+    "Zona pellucida → oocyte membrane → corona radiata",
+    "Corona radiata → oocyte membrane → zona pellucida"
+   ],
+   "answer": 0,
+   "explain": "A sperm must get through the corona radiata first, then the zona pellucida, before it can reach the oocyte plasma membrane.",
+   "verified": false,
+   "open": {
+    "q": "Name the layers surrounding the ovulated oocyte, from inside to outside.",
+    "accept": [
+     "zona pellucida then corona radiata",
+     "zona pellucida, corona radiata"
+    ]
+   }
+  },
+  {
+   "id": "emb-006",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Sperm and capacitation",
+   "q": "Which sperm structure holds the hydrolytic enzymes needed to penetrate the oocyte's coverings?",
+   "options": [
+    "Acrosome",
+    "Midpiece",
+    "Centriole",
+    "Nuclear envelope",
+    "Principal piece of the tail"
+   ],
+   "answer": 0,
+   "explain": "The acrosome is a Golgi-derived cap over the nucleus containing hyaluronidase, acrosin and other enzymes. The midpiece holds the mitochondria that power motility.",
+   "verified": false,
+   "open": {
+    "q": "Which sperm structure holds the hydrolytic enzymes needed to penetrate the oocyte's coverings?",
+    "accept": [
+     "acrosomal cap",
+     "acrosomal vesicle"
+    ]
+   }
+  },
+  {
+   "id": "emb-007",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sperm and capacitation",
+   "q": "Capacitation of sperm involves:",
+   "options": [
+    "Removal of surface proteins and cholesterol from the sperm membrane",
+    "Release of acrosomal enzymes before zona binding",
+    "Fusion of sperm and oocyte plasma membranes",
+    "Completion of meiotic divisions by the sperm",
+    "Formation of the male pronucleus"
+   ],
+   "answer": 0,
+   "explain": "Capacitation occurs in the female reproductive tract. It involves removal of seminal-plasma glycoproteins and membrane cholesterol from the sperm head, increasing membrane fluidity and enabling the acrosome reaction and hyperactivated motility.",
+   "verified": false,
+   "open": {
+    "q": "What happens to the sperm during capacitation?",
+    "accept": [
+     "removal of glycoprotein coat",
+     "coat removal",
+     "loss of seminal plasma proteins",
+     "removal of seminal plasma proteins"
+    ]
+   }
+  },
+  {
+   "id": "emb-008",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sperm and capacitation",
+   "q": "Binding of a capacitated spermatozoon to glycoproteins of which oocyte covering helps trigger the acrosome reaction?",
+   "options": [
+    "Zona pellucida",
+    "Corona radiata",
+    "Oocyte plasma membrane",
+    "Cortical granule membrane",
+    "Cumulus cell basement membrane"
+   ],
+   "answer": 0,
+   "explain": "Sperm interaction with zona pellucida glycoproteins triggers the acrosome reaction, allowing release of enzymes that help the sperm traverse the zona. The precise receptor interactions are species-dependent; avoiding an exclusive ZP3 claim is more accurate for a general human embryology question.",
+   "verified": false,
+   "open": {
+    "q": "The acrosome reaction is induced when the sperm binds to which structure?",
+    "accept": [
+     "ZP3",
+     "zona pellucida glycoprotein 3",
+     "zona pellucida"
+    ]
+   }
+  },
+  {
+   "id": "emb-009",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sperm and capacitation",
+   "q": "Which enzymes mainly allow the sperm to digest a path through the zona pellucida?",
+   "options": [
+    "Acrosin and other zona-lytic proteases",
+    "Amylase and maltase",
+    "Pepsin and gastric lipase",
+    "Hyaluronidase alone"
+   ],
+   "answer": 0,
+   "explain": "Hyaluronidase helps the sperm pass through the corona radiata, while acrosin and trypsin-like enzymes lyse the zona. The sperm's tail movement drives it forward.",
+   "verified": false,
+   "open": {
+    "q": "Which enzymes mainly let the sperm digest a path through the zona pellucida?",
+    "accept": [
+     "acrosin",
+     "trypsin-like enzymes",
+     "trypsin"
+    ]
+   }
+  },
+  {
+   "id": "emb-010",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Sperm and capacitation",
+   "q": "The mitochondrial DNA of the zygote comes from:",
+   "options": [
+    "The mother",
+    "The father",
+    "Both parents equally",
+    "The polar bodies"
+   ],
+   "answer": 0,
+   "explain": "Sperm mitochondria sit in the midpiece and are normally eliminated after fertilization, so mitochondrial inheritance is maternal.",
+   "verified": false,
+   "open": {
+    "q": "From which parent does the zygote's mitochondrial DNA come?",
+    "accept": [
+     "mother",
+     "maternal",
+     "oocyte"
+    ]
+   }
+  },
+  {
+   "id": "emb-011",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Sperm and capacitation",
+   "q": "Of the many millions of sperm deposited in the vagina, roughly how many reach the ampulla?",
+   "options": [
+    "A few hundred",
+    "About half",
+    "About 100,000",
+    "Exactly one",
+    "Several million"
+   ],
+   "answer": 0,
+   "explain": "Most sperm are lost in the vagina, cervix and uterine cavity. Only a few hundred reach the site of fertilization, and only one fertilizes the oocyte.",
+   "verified": false,
+   "open": {
+    "q": "Of the many millions of sperm deposited in the vagina, roughly how many reach the ampulla?",
+    "accept": [
+     "hundreds",
+     "200",
+     "300",
+     "about 200",
+     "few hundred"
+    ]
+   }
+  },
+  {
+   "id": "emb-012",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "Fertilization normally occurs in the:",
+   "options": [
+    "Infundibulum",
+    "Ampulla of the uterine tube",
+    "Isthmus of the uterine tube",
+    "Uterine cavity",
+    "Cervical canal"
+   ],
+   "answer": 1,
+   "explain": "The ampulla, the widest and longest part of the tube, is the usual site of fertilization. It is also the most common site of ectopic pregnancy.",
+   "verified": false,
+   "open": {
+    "q": "Where does fertilization normally occur?",
+    "accept": [
+     "ampulla",
+     "ampulla of the fallopian tube",
+     "uterine tube ampulla"
+    ]
+   }
+  },
+  {
+   "id": "emb-013",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "Which sequence of events is correct?",
+   "options": [
+    "Capacitation → corona radiata penetration → zona binding → acrosome reaction → zona penetration → membrane fusion → cortical reaction",
+    "Corona radiata penetration → acrosome reaction → capacitation → zona penetration → membrane fusion → cortical reaction",
+    "Capacitation → zona penetration → zona binding → cortical reaction → acrosome reaction → membrane fusion",
+    "Capacitation → membrane fusion → zona binding → acrosome reaction → zona penetration → cortical reaction"
+   ],
+   "answer": 0,
+   "explain": "Capacitation comes first, then the sperm crosses the corona, binds ZP3 and undergoes the acrosome reaction, digests through the zona, and fuses with the oocyte membrane. Fusion triggers the cortical reaction.",
+   "verified": false,
+   "optionsOnly": true
+  },
+  {
+   "id": "emb-014",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "What is the main purpose of the zona (cortical) reaction?",
+   "options": [
+    "To prevent polyspermy",
+    "To trigger the acrosome reaction",
+    "To complete meiosis I",
+    "To release the oocyte from the follicle",
+    "To start cleavage"
+   ],
+   "answer": 0,
+   "explain": "Cortical granules just under the oocyte membrane release enzymes into the perivitelline space. These alter zona proteins (ZP2, ZP3) so no further sperm can bind or penetrate.",
+   "verified": false,
+   "open": {
+    "q": "What is the main purpose of the zona (cortical) reaction?",
+    "accept": [
+     "block polyspermy",
+     "prevent polyspermy",
+     "prevent multiple sperm entry"
+    ]
+   }
+  },
+  {
+   "id": "emb-015",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "Sperm penetration of the oocyte directly triggers:",
+   "options": [
+    "Completion of meiosis II and cortical reaction",
+    "Completion of meiosis I",
+    "Acrosome reaction",
+    "Capacitation",
+    "Compaction"
+   ],
+   "answer": 0,
+   "explain": "Entry of the sperm activates the oocyte: meiosis II is completed and cortical granules are released.",
+   "verified": false,
+   "open": {
+    "q": "What two events does sperm penetration of the oocyte directly trigger?",
+    "accept": [
+     "meiosis II and cortical reaction",
+     "completion of meiosis II",
+     "cortical reaction"
+    ]
+   }
+  },
+  {
+   "id": "emb-016",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "The second polar body is extruded:",
+   "options": [
+    "After sperm entry",
+    "Before ovulation",
+    "At ovulation",
+    "During the first cleavage division",
+    "At implantation"
+   ],
+   "answer": 0,
+   "explain": "Meiosis II is completed only after fertilization. It yields the mature oocyte (with the female pronucleus) and the second polar body.",
+   "verified": false,
+   "open": {
+    "q": "When is the second polar body extruded, relative to sperm entry?",
+    "accept": [
+     "after sperm entry",
+     "after sperm penetration",
+     "after fertilization"
+    ]
+   }
+  },
+  {
+   "id": "emb-017",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "Just before they come together, each pronucleus contains:",
+   "options": [
+    "23 chromosomes, in a haploid set",
+    "46 chromosomes, in a diploid set",
+    "23 pairs of chromosomes",
+    "92 chromosomes, after DNA replication"
+   ],
+   "answer": 0,
+   "explain": "The male and female pronuclei are each haploid. DNA replicates during the pronuclear stage, and the parental chromosomes mix on the spindle of the first cleavage division, restoring the diploid number (46).",
+   "verified": false,
+   "open": {
+    "q": "How many chromosomes does each pronucleus contain just before they come together?",
+    "accept": [
+     "23",
+     "haploid",
+     "n"
+    ],
+    "a": "23 chromosomes (haploid)"
+   }
+  },
+  {
+   "id": "emb-018",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "Which of the following is NOT a result of fertilization?",
+   "options": [
+    "Completion of meiosis I in the oocyte",
+    "Restoration of the diploid chromosome number",
+    "Determination of chromosomal sex",
+    "Initiation of cleavage",
+    "Genetic variation from mixing maternal and paternal chromosomes"
+   ],
+   "answer": 0,
+   "explain": "Meiosis I is completed before ovulation, under the LH surge. Fertilization restores 46 chromosomes, determines sex, starts cleavage and adds variation.",
+   "verified": false,
+   "optionsOnly": true
+  },
+  {
+   "id": "emb-019",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "The chromosomal sex of the embryo is determined by:",
+   "options": [
+    "The type of sperm (X or Y) that fertilizes the oocyte",
+    "The sex chromosome carried by the oocyte",
+    "Temperature at implantation",
+    "Hormones in the uterine tube"
+   ],
+   "answer": 0,
+   "explain": "The oocyte always contributes an X. An X-bearing sperm gives 46,XX and a Y-bearing sperm gives 46,XY.",
+   "verified": false,
+   "open": {
+    "q": "What determines the chromosomal sex of the embryo?",
+    "accept": [
+     "sperm",
+     "X or Y sperm",
+     "the sperm"
+    ]
+   }
+  },
+  {
+   "id": "emb-020",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Fertilization",
+   "q": "Fertilization of one oocyte by two sperm (dispermy) typically gives:",
+   "options": [
+    "A triploid zygote with 69 chromosomes",
+    "A tetraploid zygote with 92 chromosomes",
+    "A diploid zygote with trisomy 21",
+    "A haploid zygote with 23 chromosomes",
+    "A diploid zygote with monosomy X"
+   ],
+   "answer": 0,
+   "explain": "Dispermy produces 69 chromosomes (for example 69,XXY). It usually ends as a partial hydatidiform mole or an early miscarriage.",
+   "verified": false,
+   "open": {
+    "q": "Fertilization of one oocyte by two sperm (dispermy) typically gives what?",
+    "accept": [
+     "triploidy",
+     "triploid",
+     "69 chromosomes",
+     "69,XXY"
+    ]
+   }
+  },
+  {
+   "id": "emb-052",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Primordial Germ Cells",
+   "q": "Where do human primordial germ cells (PGCs) first become identifiable during the third week of embryonic development?",
+   "options": [
+    "Yolk-sac wall near the allantois",
+    "Developing ovarian cortical cords",
+    "Mesonephric ridge",
+    "Trophoblast shell"
+   ],
+   "answer": 0,
+   "explain": "Primordial germ cells arise from the epiblast during gastrulation and first become visible in the endodermal wall of the yolk sac close to the allantois during week 3 before migrating along the dorsal mesentery to the genital ridges.",
+   "verified": false,
+   "open": {
+    "q": "In which extraembryonic structure are primordial germ cells first recognized during the third week of human development?",
+    "accept": [
+     "yolk sac",
+     "wall of the yolk sac",
+     "umbilical vesicle"
+    ]
+   }
+  },
+  {
+   "id": "emb-053",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Primordial Germ Cells",
+   "q": "Aberrant migration of primordial germ cells along the dorsal mesentery toward the gonadal ridges can result in which congenital midline tumor most commonly seen in the sacrococcygeal region of newborns?",
+   "options": [
+    "Teratoma",
+    "Seminoma",
+    "Choriocarcinoma",
+    "Wilms tumor"
+   ],
+   "answer": 0,
+   "explain": "Stray primordial germ cells that lodge in extragonadal midline sites (such as the sacrococcygeal or mediastinal regions) can differentiate into pluripotent tissues from all three germ layers, forming a sacrococcygeal teratoma.",
+   "verified": false,
+   "open": {
+    "q": "Name the pluripotent germ cell tumor containing derivatives of all three germ layers that arises when stray primordial germ cells lodge in the sacrococcygeal region.",
+    "accept": [
+     "sacrococcygeal teratoma",
+     "teratomas"
+    ]
+   }
+  },
+  {
+   "id": "emb-054",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Oogenesis",
+   "q": "At what stage of cell division are all primary oocytes arrested in the female fetus before birth until puberty?",
+   "options": [
+    "Prophase I (diplotene stage) of meiosis I",
+    "Metaphase II of meiosis II",
+    "Anaphase I of meiosis I",
+    "G2 phase of interphase"
+   ],
+   "answer": 0,
+   "explain": "Primary oocytes enter meiosis I in utero and arrest in the diplotene stage of prophase I, maintained by oocyte maturation inhibitor (OMI) secreted by follicular cells until the LH surge at ovulation.",
+   "verified": false,
+   "open": {
+    "q": "In which specific phase and substage of meiosis are primary oocytes arrested from before birth until ovulation?",
+    "accept": [
+     "diplotene stage of prophase I",
+     "prophase I",
+     "diplotene"
+    ]
+   }
+  },
+  {
+   "id": "emb-055",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Oogenesis",
+   "q": "At the time of ovulation, at which stage of meiosis is the human secondary oocyte arrested?",
+   "options": [
+    "Metaphase II of meiosis II",
+    "Prophase I (diplotene)",
+    "Telophase I",
+    "Anaphase II"
+   ],
+   "answer": 0,
+   "explain": "Just prior to ovulation, the LH surge triggers completion of meiosis I (extruding the first polar body); the secondary oocyte then enters meiosis II and arrests in metaphase II until fertilization occurs.",
+   "verified": false,
+   "open": {
+    "q": "In which stage of meiosis is a freshly ovulated secondary oocyte arrested prior to fertilization?",
+    "accept": [
+     "metaphase II",
+     "metaphase of meiosis II"
+    ]
+   }
+  },
+  {
+   "id": "emb-056",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Oogenesis",
+   "q": "How many functional female gametes (ova) are produced from a single primary oocyte upon completion of both meiotic divisions?",
+   "options": [
+    "One ovum (and up to three polar bodies)",
+    "Two ova",
+    "Four ova",
+    "Three ova"
+   ],
+   "answer": 0,
+   "explain": "Due to unequal cytokinesis during both meiosis I and meiosis II, one primary oocyte yields a single large functional ovum containing almost all the cytoplasm and two or three small non-functional polar bodies.",
+   "verified": false,
+   "open": {
+    "q": "How many mature functional ova result from one primary oocyte completing meiosis I and II?",
+    "accept": [
+     "1",
+     "one",
+     "a single ovum"
+    ]
+   }
+  },
+  {
+   "id": "emb-057",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Oogenesis",
+   "q": "Why does the risk of fetal chromosomal nondisjunction (such as trisomy 21) rise markedly with advanced maternal age?",
+   "options": [
+    "Progressive loss of cohesin in primary oocytes arrested in prophase I",
+    "Rapid mitotic division of oogonia throughout adult life",
+    "Arrest of spermatogonia after the age of 35",
+    "Failure of the zona pellucida to permit polar-body extrusion"
+   ],
+   "answer": 0,
+   "explain": "Because female primary oocytes are formed before birth and remain suspended in diplotene of prophase I for 12 to 50 years, progressive loss of meiotic cohesin proteins increases chromosome missegregation during meiosis I.",
+   "verified": false,
+   "open": {
+    "q": "Which prolonged meiotic arrest in female gametogenesis predisposes older oocytes to chromosomal nondisjunction?",
+    "accept": [
+     "prophase I arrest",
+     "diplotene arrest in prophase I",
+     "arrest in prophase I"
+    ]
+   }
+  },
+  {
+   "id": "emb-058",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Spermatogenesis and Spermiogenesis",
+   "q": "Approximately how many days does the complete process of spermatogenesis (from type A spermatogonium to mature spermatozoon) take in humans?",
+   "options": [
+    "64 to 74 days",
+    "14 days",
+    "28 days",
+    "120 days"
+   ],
+   "answer": 0,
+   "explain": "In humans, spermatogenesis within the seminiferous tubules takes approximately 64 to 74 days (roughly 2.5 months), followed by epididymal maturation.",
+   "verified": false,
+   "open": {
+    "q": "State the approximate duration in days required for human spermatogenesis from spermatogonium to mature spermatozoon.",
+    "accept": [
+     "64 days",
+     "74 days",
+     "64-74 days",
+     "about 70 days"
+    ]
+   }
+  },
+  {
+   "id": "emb-059",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Spermatogenesis and Spermiogenesis",
+   "q": "Which cell type within the seminiferous tubule undergoes the first meiotic division to give rise to two haploid secondary spermatocytes?",
+   "options": [
+    "Primary spermatocyte",
+    "Type B spermatogonium",
+    "Spermatid",
+    "Sertoli cell"
+   ],
+   "answer": 0,
+   "explain": "Type B spermatogonia divide mitotically to form primary spermatocytes (46,XY, 4n), which undergo meiosis I to yield two secondary spermatocytes (23,X or 23,Y, 2n).",
+   "verified": false,
+   "open": {
+    "q": "Which male germ cell undergoes meiosis I to produce two secondary spermatocytes?",
+    "accept": [
+     "primary spermatocytes"
+    ]
+   }
+  },
+  {
+   "id": "emb-060",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Spermatogenesis and Spermiogenesis",
+   "q": "From which cellular organelle is the acrosomal cap of the spermatozoon formed during spermiogenesis?",
+   "options": [
+    "Golgi apparatus",
+    "Mitochondrion",
+    "Rough endoplasmic reticulum",
+    "Centriole"
+   ],
+   "answer": 0,
+   "explain": "During the Golgi phase of spermiogenesis, proacrosomal vesicles produced by the Golgi apparatus coalesce into a single membrane-bound acrosomal vesicle covering the anterior half of the condensed sperm nucleus.",
+   "verified": false,
+   "open": {
+    "q": "Which organelle synthesizes and packages the hydrolytic enzymes that form the sperm acrosome during spermiogenesis?",
+    "accept": [
+     "Golgi complex",
+     "Golgi body",
+     "Golgi"
+    ]
+   }
+  },
+  {
+   "id": "emb-061",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Spermatogenesis and Spermiogenesis",
+   "q": "Which portion of the mature spermatozoon contains a helical sheath of mitochondria that generates ATP for flagellar motility?",
+   "options": [
+    "Middle piece (midpiece)",
+    "Acrosome",
+    "Principal piece",
+    "End piece"
+   ],
+   "answer": 0,
+   "explain": "During spermiogenesis, mitochondria migrate to form a tight spiral sheath around the proximal axoneme in the middle piece of the sperm tail, supplying ATP for flagellar beating.",
+   "verified": false,
+   "open": {
+    "q": "In which segment of the mature spermatozoon tail are mitochondria arranged in a helical sheath around the axoneme?",
+    "accept": [
+     "midpiece",
+     "middle piece of tail"
+    ]
+   }
+  },
+  {
+   "id": "emb-062",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Spermatogenesis and Spermiogenesis",
+   "q": "Which somatic supporting cells of the seminiferous epithelium form the blood-testis barrier via tight junctions, phagocytose residual bodies during spermiogenesis, and secrete androgen-binding protein and inhibin?",
+   "options": [
+    "Sertoli cells",
+    "Leydig cells",
+    "Myoid cells",
+    "Spermatogonia"
+   ],
+   "answer": 0,
+   "explain": "Sertoli (sustentacular) cells span the seminiferous epithelium, form tight junctions dividing it into basal and adluminal compartments, phagocytose excess spermatid cytoplasm (residual bodies), and secrete ABP, inhibin B, and anti-Mullerian hormone.",
+   "verified": false,
+   "open": {
+    "q": "Name the somatic columnar supporting cells of the seminiferous tubules that form the blood-testis barrier and phagocytose residual bodies.",
+    "accept": [
+     "Sertoli cell",
+     "sustentacular cells"
+    ]
+   }
+  },
+  {
+   "id": "emb-063",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ovarian and Endometrial Cycles",
+   "q": "Which pituitary gonadotropin surge occurring approximately 24 to 36 hours before follicle rupture triggers resumption of meiosis I and ovulation?",
+   "options": [
+    "Luteinizing hormone (LH) surge",
+    "Follicle-stimulating hormone (FSH) suppression",
+    "Prolactin surge",
+    "Oxytocin surge"
+   ],
+   "answer": 0,
+   "explain": "High late-follicular estradiol exerts positive feedback on the anterior pituitary, causing a sharp LH surge that induces resumption of meiosis I, luteinization of granulosa cells, and collagenase-mediated follicular rupture 24-36 hours later.",
+   "verified": false,
+   "open": {
+    "q": "A surge in which anterior pituitary hormone directly triggers ovulation and completion of meiosis I in the primary oocyte?",
+    "accept": [
+     "LH",
+     "luteinizing hormone",
+     "LH surge"
+    ]
+   }
+  },
+  {
+   "id": "emb-064",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ovarian and Endometrial Cycles",
+   "q": "If fertilization does NOT occur, approximately how many days after ovulation does the corpus luteum of menstruation degenerate into the fibrous corpus albicans?",
+   "options": [
+    "About 12–14 days after ovulation",
+    "About 2 days after ovulation",
+    "About 21 days after ovulation",
+    "About 90 days after ovulation"
+   ],
+   "answer": 0,
+   "explain": "Without hCG support, the corpus luteum regresses approximately 12–14 days after ovulation. Progesterone falls and menstruation follows.",
+   "verified": false,
+   "open": {
+    "q": "Into what white fibrous scar does the corpus luteum involute when fertilization fails to occur?",
+    "accept": [
+     "corpus albicans"
+    ]
+   }
+  },
+  {
+   "id": "emb-065",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ovarian and Endometrial Cycles",
+   "q": "Which hormone secreted by the syncytiotrophoblast of an implanting blastocyst rescues the corpus luteum from degeneration so it continues secreting progesterone during early pregnancy?",
+   "options": [
+    "Human chorionic gonadotropin (hCG)",
+    "Human placental lactogen (hPL)",
+    "Relaxin",
+    "Inhibin A"
+   ],
+   "answer": 0,
+   "explain": "Syncytiotrophoblast cells produce human chorionic gonadotropin (hCG), which binds LH receptors on luteal cells to maintain the corpus luteum of pregnancy until the placenta takes over progesterone synthesis around weeks 8-10.",
+   "verified": false,
+   "open": {
+    "q": "Name the glycoprotein hormone secreted by the syncytiotrophoblast that maintains the corpus luteum during early pregnancy.",
+    "accept": [
+     "hCG",
+     "human chorionic gonadotropin",
+     "beta-hCG"
+    ]
+   }
+  },
+  {
+   "id": "emb-066",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "Where in the female reproductive tract does human fertilization normally take place?",
+   "options": [
+    "Ampulla of the uterine (fallopian) tube",
+    "Fundus of the uterus",
+    "Cervical canal",
+    "Ovarian surface"
+   ],
+   "answer": 0,
+   "explain": "Fertilization usually occurs in the ampulla of the uterine tube, its widest and longest segment, within 12 to 24 hours after ovulation.",
+   "verified": false,
+   "open": {
+    "q": "In which specific anatomical segment of the uterine tube does fertilization normally occur?",
+    "accept": [
+     "ampulla",
+     "ampulla of fallopian tube",
+     "ampulla of uterine tube"
+    ]
+   }
+  },
+  {
+   "id": "emb-067",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "What occurs during sperm capacitation in the female genital tract prior to the acrosome reaction?",
+   "options": [
+    "Removal of seminal-plasma proteins and cholesterol from the sperm membrane",
+    "Completion of meiosis by the sperm nucleus",
+    "Fusion of male and female pronuclei",
+    "Loss of the sperm flagellum"
+   ],
+   "answer": 0,
+   "explain": "Capacitation takes about 7 hours in the female reproductive tract and involves stripping seminal plasma glycoproteins and membrane cholesterol from the sperm head, increasing membrane fluidity, calcium permeability, and hyperactivated motility.",
+   "verified": false,
+   "open": {
+    "q": "What biochemical change occurs on the plasma membrane of the sperm head during capacitation in the female reproductive tract?",
+    "accept": [
+     "removal of glycoproteins and cholesterol",
+     "loss of cholesterol and seminal plasma proteins",
+     "cholesterol efflux and glycoprotein removal"
+    ]
+   }
+  },
+  {
+   "id": "emb-068",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "Binding of a capacitated spermatozoon to which oocyte covering helps trigger the acrosome reaction?",
+   "options": [
+    "Zona pellucida",
+    "Oocyte plasma membrane",
+    "Cumulus cell basement membrane",
+    "Oocyte cortical granules"
+   ],
+   "answer": 0,
+   "explain": "Interaction between capacitated sperm and zona pellucida glycoproteins contributes to the acrosome reaction and enables zona penetration. The exact sperm-binding interactions vary by species and are more complex than a single universal ZP3 receptor model.",
+   "verified": false,
+   "open": {
+    "q": "Which specific zona pellucida glycoprotein binds capacitated spermatozoa to induce the acrosome reaction?",
+    "accept": [
+     "ZP3",
+     "zona pellucida glycoprotein 3"
+    ]
+   }
+  },
+  {
+   "id": "emb-069",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "Which proteolytic enzyme released during the acrosome reaction digests a narrow path through the zona pellucida so the spermatozoon can reach the oocyte plasma membrane?",
+   "options": [
+    "Acrosin",
+    "Trypsin",
+    "Telomerase",
+    "Aromatase"
+   ],
+   "answer": 0,
+   "explain": "Hyaluronidase disperses the corona radiata cells, while acrosin (a serine protease bound to the inner acrosomal membrane) digests a channel through the zona pellucida.",
+   "verified": false,
+   "open": {
+    "q": "Name the serine protease released from the sperm acrosome that enables penetration of the zona pellucida.",
+    "accept": [
+     "acrosin enzyme"
+    ]
+   }
+  },
+  {
+   "id": "emb-070",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Fertilization",
+   "q": "How is polyspermy permanently prevented (the slow block to polyspermy) immediately after a single spermatozoon fuses with the oocyte plasma membrane?",
+   "options": [
+    "Cortical granule release modifies zona pellucida proteins",
+    "Corona radiata cells seal the sperm entry site",
+    "The first polar body blocks sperm receptors",
+    "The corpus luteum stops progesterone secretion"
+   ],
+   "answer": 0,
+   "explain": "Sperm–oocyte membrane fusion triggers a calcium wave and exocytosis of cortical granules. Their enzymes modify zona pellucida proteins (including cleavage of ZP2), preventing additional sperm from binding or penetrating.",
+   "verified": false,
+   "open": {
+    "q": "Name the calcium-triggered exocytosis of oocyte peripheral granules that modifies the zona pellucida to prevent polyspermy.",
+    "accept": [
+     "cortical reaction",
+     "zona reaction",
+     "cortical and zona reactions"
+    ]
+   }
+  },
+  {
+   "id": "emb-071",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Fertilization",
+   "q": "Which three major biological outcomes result directly from fertilization?",
+   "options": [
+    "Restores diploidy, determines chromosomal sex and initiates cleavage",
+    "Completes gastrulation, neurulation and organogenesis",
+    "Forms primordial germ cells and the major organ systems",
+    "Triggers ovulation, menstruation and implantation"
+   ],
+   "answer": 0,
+   "explain": "Fertilization restores the diploid number of chromosomes (23 maternal + 23 paternal = 46), determines chromosomal sex (XX or XY based on the fertilizing sperm), and activates the zygote to begin mitotic cleavage.",
+   "verified": false,
+   "open": {
+    "q": "State the three primary developmental consequences of fertilization.",
+    "accept": [
+     "restoration of diploid chromosome number, determination of chromosomal sex, and initiation of cleavage",
+     "diploid restoration, sex determination, initiation of cleavage"
+    ]
+   }
+  },
+  {
+   "id": "emb-072",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cleavage and Blastocyst Formation",
+   "q": "What are the progressively smaller daughter cells produced by mitotic cleavage divisions of the zygote inside the zona pellucida called?",
+   "options": [
+    "Blastomeres",
+    "Trophoblasts",
+    "Epiblasts",
+    "Syncytiotrophoblasts"
+   ],
+   "answer": 0,
+   "explain": "During cleavage, the zygote undergoes rapid mitotic divisions without cytoplasmic growth, partitioning the cytoplasm into smaller cells called blastomeres.",
+   "verified": false,
+   "open": {
+    "q": "Name the progressively smaller cells formed by mitotic cleavage divisions of the zygote.",
+    "accept": [
+     "blastomere"
+    ]
+   }
+  },
+  {
+   "id": "emb-073",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cleavage and Blastocyst Formation",
+   "q": "At approximately the 16-cell stage (around day 3 after fertilization), the solid mulberry-shaped ball of blastomeres entering the uterine cavity is called a:",
+   "options": [
+    "Morula",
+    "Blastocyst",
+    "Gastrula",
+    "Neurula"
+   ],
+   "answer": 0,
+   "explain": "Around 3 days after fertilization, compaction produces a 16-cell solid sphere of blastomeres called the morula, which enters the uterine lumen and begins absorbing fluid to form a blastocyst.",
+   "verified": false,
+   "open": {
+    "q": "What is the 16-cell solid spherical stage of embryonic development reached about 3 days after fertilization called?",
+    "accept": [
+     "morula stage"
+    ]
+   }
+  },
+  {
+   "id": "emb-074",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Cleavage and Blastocyst Formation",
+   "q": "In a day-5 blastocyst, which cell population gives rise to the embryo proper, whereas the outer trophoblast gives rise to the fetal placenta?",
+   "options": [
+    "Inner cell mass (embryoblast)",
+    "Zona pellucida",
+    "Corona radiata",
+    "Primary yolk sac"
+   ],
+   "answer": 0,
+   "explain": "As fluid enters the morula to form the blastocyst cavity (blastocoel), blastomeres segregate into an outer epithelial layer (trophoblast, forming embryonic placenta) and an eccentrically located inner cell mass (embryoblast, forming the embryo proper).",
+   "verified": false,
+   "open": {
+    "q": "Which cell cluster inside the blastocyst differentiates into the embryo proper?",
+    "accept": [
+     "embryoblast",
+     "inner cell mass",
+     "ICM"
+    ]
+   }
+  },
+  {
+   "id": "emb-075",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Cleavage and Blastocyst Formation",
+   "q": "Why must the blastocyst shed ('hatch' from) the zona pellucida around day 5 before implantation can occur?",
+   "options": [
+    "It exposes trophoblast cells so they can attach to the endometrium",
+    "It allows the embryo to obtain nutrients from yolk",
+    "It triggers secretion of progesterone by the corpus luteum",
+    "It initiates formation of the primitive streak"
+   ],
+   "answer": 0,
+   "explain": "While intact during tubal transit, the non-adhesive zona pellucida prevents the conceptus from implanting in the uterine tube; around day 5 in the uterine cavity, zona hatching exposes trophoblast integrins and L-selectin ligands required for endometrial attachment.",
+   "verified": false,
+   "open": {
+    "q": "What essential event must happen to the zona pellucida around day 5 in the uterine cavity before the blastocyst can attach to the endometrium?",
+    "accept": [
+     "zona hatching",
+     "hatching",
+     "degeneration of the zona pellucida",
+     "shedding of the zona pellucida"
+    ]
+   }
+  },
+  {
+   "id": "emb-076",
+   "type": "mcq",
+   "level": 3,
+   "sub": "Cleavage and Blastocyst Formation",
+   "q": "A 26-year-old woman presents at 6 weeks gestation with sharp right lower quadrant pain, vaginal spotting, and hemodynamic instability. Ultrasound reveals an empty uterine cavity and a ruptured gestational sac in the right fallopian tube. What is the most common anatomical site for such an ectopic pregnancy?",
+   "options": [
+    "Ampulla of the uterine tube",
+    "Isthmus of the uterine tube",
+    "Fimbriated infundibulum",
+    "Abdominal peritoneal cavity"
+   ],
+   "answer": 0,
+   "explain": "Over 95% of ectopic pregnancies occur in the uterine (fallopian) tube, with the ampulla being the single most common location (~70-80%), often secondary to delayed tubal transport from prior pelvic inflammatory disease.",
+   "verified": false,
+   "open": {
+    "q": "In which segment of the uterine tube do the majority of ectopic pregnancies implant?",
+    "accept": [
+     "ampulla",
+     "ampullary region",
+     "ampulla of uterine tube"
+    ]
+   }
+  }
+ ]
 }
