@@ -115,7 +115,11 @@ Round 22 added 15 stems / 60 statements, five per core subject, selected from th
 
 Round 23 added 15 stems / 60 statements, five per core subject. The next batch should deepen the still-thin areas rather than repeat Rounds 22–23 topics. The current topic-by-topic inventory is the denominator for selecting new stems. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
 
-## 8. Round 23 completed
+## 8. Topic-depth check against the six-stem target
+
+Across the 119 Anatomy, Physiology and Medical Biochemistry topics in `data/curriculum.json`, **100 currently have fewer than six stems**, including **six topics with no stems**. By subject: Anatomy 47 topics below six (six empty), Physiology 49 below six (none empty), and Medical Biochemistry four below six (none empty). The six empty topics are `ra-vascular-system`, `ra-neuroanatomy`, `ra-gastrointestinal-tract`, `ra-genitourinary-tract`, `gen-common-genetic-disorders` and `gen-basic-genetic-counselling`. This is the remaining long-term expansion target; Round 23 is one batch, not completion of the six-stem goal.
+
+## 9. Round 23 completed
 
 Round 23 added 15 stems / 60 statements, five per core subject:
 - **Anatomy:** X-ray production, musculoskeletal radiography, meiosis, nervous-tissue glia and embryonic bone formation.
@@ -124,11 +128,11 @@ Round 23 added 15 stems / 60 statements, five per core subject:
 
 All 15 are assigned to existing canonical topics, contain four statements each, include direct HTTPS references and remain draft/unverified. The additions broaden thin areas but do not establish six-stem coverage across every topic.
 
-## 9. Registry reconciliation
+## 10. Registry reconciliation
 
 On 27 November 2026, 98 existing question records with legacy/non-canonical topic labels were reassigned to the closest matching topic in `data/curriculum.json` after review of each stem's ID, subtopic and wording. The question content, answer keys, explanations, references and verification states were not changed in that metadata pass. `docs/topic-ids.txt` was synchronized to the canonical registry; it now contains all 358 curriculum topic IDs. A bank-wide check found zero question records with an unregistered topic ID.
 
-## 10. Method and limitations
+## 11. Method and limitations
 
 - Subject and area membership are assigned from the canonical `topic` field in `data/curriculum.json`; the 38 Pathology and Pharmacology records are excluded from the three core subject analysis.
 - Area counts are based on the canonical topic hierarchy, not question ID prefixes. They are inventory counts, not proof of learning-objective mastery or official NUC course-code assignments.
