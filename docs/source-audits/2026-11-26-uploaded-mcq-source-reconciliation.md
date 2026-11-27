@@ -308,3 +308,18 @@ A review of the Medical Biochemistry nucleotides-and-nucleic-acids bank identifi
 The file was structurally validated before commit: unique IDs, non-empty stems and explanations, four options per item and valid answer indices. All five additions remain `verified: false` pending academic review. This is targeted expansion rather than exhaustive reconciliation of the uploaded biochemistry sources.
 
 **Cumulative source-reconciliation additions: 98 original questions** (93 previously recorded plus these five).
+
+
+## Fetal development and neonatal adaptation expansion — 27 November 2026
+
+The fetal-development bank contained 25 questions. Five original MCQs were added to broaden coverage into fetal haematology, pulmonary maturation, circulatory transition and neonatal adaptation:
+
+- Higher oxygen affinity of fetal haemoglobin (HbF, α2γ2).
+- Type II pneumocyte surfactant deficiency in neonatal respiratory distress syndrome.
+- Pressure changes responsible for functional closure of the foramen ovale after birth.
+- Immature neonatal bilirubin conjugation and physiological jaundice.
+- Selective placental permeability and fetal exposure to drugs and other substances.
+
+The updated file was structurally validated before commit: unique IDs, non-empty stems and explanations, four options per item and valid answer indices. All five additions remain `verified: false` pending academic review. This is targeted expansion, not exhaustive reconciliation of every uploaded anatomy source.
+
+**Cumulative source-reconciliation additions: 103 original questions** (98 previously recorded plus these five).
