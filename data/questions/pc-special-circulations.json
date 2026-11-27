@@ -56,7 +56,7 @@
       "options": [
         "It lacks beta-adrenergic receptors completely",
         "It is perfused exclusively by the right coronary artery",
-        "Systolic compression limits subendocardial perfusion to diastole, which shortens in tachycardia",
+        "Systolic compression makes perfusion largely diastolic; tachycardia shortens diastole",
         "Its baseline oxygen extraction is only 10%"
       ],
       "answer": 2,
@@ -170,7 +170,7 @@
         "250 mL/min; autoregulated between 40 and 80 mmHg",
         "1,500 mL/min; autoregulated between 100 and 220 mmHg",
         "300 mL/min; not autoregulated",
-        "750 mL/min (~50-55 mL/100 g/min, ~15% of CO); autoregulated between MAP of 60 and 150 mmHg"
+        "750 mL/min (~50-55 mL/100 g/min); MAP 60-150 mmHg"
       ],
       "answer": 3,
       "explain": "The brain receives ~750 mL/min (~15% of cardiac output) and maintains constant perfusion via myogenic and metabolic autoregulation across a MAP range of roughly 60 to 150 mmHg (shifted rightward in chronic hypertension).",
@@ -238,7 +238,7 @@
       "options": [
         "The adult cranial vault expands to accommodate additional intracranial volume",
         "Cerebral blood flow rises in direct proportion to intracranial pressure",
-        "CSF and venous blood are displaced initially; once compensation is exhausted, ICP rises steeply and lowers cerebral perfusion pressure",
+        "CSF and venous blood are displaced first; once compensation fails, ICP rises and CPP falls",
         "Arterial pressure immediately falls to equal intracranial pressure"
       ],
       "answer": 2,
@@ -262,7 +262,7 @@
         "Stratified squamous epithelium and basement membrane",
         "Fenestrated capillary endothelium and podocyte foot processes",
         "Sinusoidal endothelial gaps and Kupffer cells",
-        "Non-fenestrated brain capillary endothelial cells joined by tight junctions, with basement membrane and astrocyte end-feet"
+        "Non-fenestrated capillary endothelial cells joined by tight junctions"
       ],
       "answer": 3,
       "explain": "Continuous tight junctions between cerebral capillary endothelial cells prevent paracellular diffusion of polar solutes, proteins, and neurotransmitters, while astrocyte perivascular end-feet induce and maintain barrier properties.",
@@ -399,7 +399,7 @@
       "q": "What percentage of resting cardiac output is received by the two kidneys combined (~1,100 to 1,200 mL/min), and why is this flow rate so high?",
       "options": [
         "5%; solely to meet renal metabolic oxygen consumption",
-        "20% to 25%; primarily to supply high plasma volume for glomerular filtration rather than metabolic oxygen demand",
+        "20-25%; mainly to sustain glomerular filtration",
         "50%; to warm blood returning from the lower extremities",
         "2%; because renal arterioles are tonically constricted"
       ],
@@ -467,7 +467,7 @@
       "sub": "Renal Circulation",
       "q": "How is blood flow distributed between the renal cortex and the renal medulla, and why is medullary blood flow kept sluggish?",
       "options": [
-        "About 90–95% of renal blood flow reaches the cortex; slow vasa recta flow helps preserve the medullary gradient",
+        "About 90-95% reaches the cortex; slow vasa recta flow preserves the medullary gradient",
         "90% reaches the medulla and 10% the cortex",
         "Cortex and medulla each receive 50%",
         "The renal medulla is avascular"
@@ -491,7 +491,7 @@
       "q": "What percentage of total hepatic blood flow (~1,500 mL/min) is supplied by the hepatic portal vein versus the hepatic artery, and how do their oxygen contributions compare?",
       "options": [
         "The portal vein supplies one quarter of flow and most hepatic oxygen",
-        "Portal vein supplies about 75% of flow and hepatic artery 25%; both contribute roughly half the oxygen",
+        "Portal vein: ~75% of flow; hepatic artery: ~25%; each supplies about half the oxygen",
         "Portal and hepatic arterial flow are equal, and the artery supplies all oxygen",
         "The portal vein supplies almost all flow but no oxygen"
       ],
@@ -559,7 +559,7 @@
       "sub": "Splanchnic and Hepatic Circulation",
       "q": "Why does the splanchnic vascular bed serve as an important blood reservoir during acute hemorrhage or vigorous exercise?",
       "options": [
-        "Splanchnic veins and hepatic sinusoids form a compliant blood reservoir that can mobilise blood during sympathetic activation",
+        "Sympathetic venoconstriction mobilises blood from compliant splanchnic veins and hepatic sinusoids",
         "The human spleen normally stores several litres of packed red cells",
         "Splanchnic arteries dilate maximally during haemorrhagic shock",
         "Portal venous pressure rises to arterial levels during exercise"
@@ -632,7 +632,7 @@
         "Norepinephrine activates alpha-1 receptors",
         "Endothelin-1 is released from keratinocytes",
         "Sweat-gland secretion is inhibited",
-        "Cholinergic fibres release acetylcholine and vasodilator co-transmitters during heat stress"
+        "Cholinergic fibres release acetylcholine and vasodilator co-transmitters"
       ],
       "answer": 3,
       "explain": "In non-acral skin, warming first withdraws sympathetic noradrenergic vasoconstrictor tone, and further core warming activates sympathetic cholinergic sudomotor nerves that stimulate sweating and release vasodilator co-transmitters (VIP, NO, prostaglandins).",
@@ -652,7 +652,7 @@
       "sub": "Cutaneous Circulation",
       "q": "What are the three sequential components of the Lewis triple response observed when the skin is firmly stroked with a blunt pointed instrument?",
       "options": [
-        "Red reaction, axon-reflex flare and permeability-related wheal",
+        "Red line, axon-reflex flare and wheal",
         "Blanching, cyanosis, and gangrene",
         "Sweating, piloerection, and shivering",
         "Petechiae, purpura, and ecchymosis"
@@ -700,7 +700,7 @@
       "options": [
         "Local metabolic vasodilation dominates at rest, while alpha-1 constriction dominates during exercise",
         "Muscle blood flow remains fixed at rest and during maximal exercise",
-        "Sympathetic tone limits resting flow; local metabolites override it during exercise and markedly increase perfusion",
+        "Local metabolites override sympathetic vasoconstriction during exercise",
         "Vagal parasympathetic fibres directly dilate all skeletal muscle arterioles"
       ],
       "answer": 2,
@@ -724,7 +724,7 @@
         "Isometric contraction abolishes sympathetic activity",
         "Isometric contraction reverses venous-valve flow",
         "Isometric contraction lowers heart rate to 40 beats/min",
-        "High intramuscular pressure compresses vessels while the exercise pressor reflex raises blood pressure"
+        "Vessel compression and the exercise pressor reflex raise blood pressure"
       ],
       "answer": 3,
       "explain": "Above ~20-30% of maximal voluntary contraction, sustained intramuscular pressure squeezes blood vessels shut (stopping rhythmic muscle-pump assistance), while metabolite buildup excites group III/IV muscle afferents (exercise pressor reflex) to boost sympathetic BP.",
@@ -767,7 +767,7 @@
       "q": "Which two fetal shunts divert most right-sided cardiac output away from the high-resistance, fluid-filled fetal lungs into the systemic circulation?",
       "options": [
         "Ductus venosus and umbilical arteries",
-        "Foramen ovale (right atrium to left atrium) and ductus arteriosus (pulmonary trunk to descending aorta)",
+        "Foramen ovale and ductus arteriosus",
         "Coronary sinus and azygos vein",
         "Superior vena cava and portal vein"
       ],
@@ -835,7 +835,7 @@
       "sub": "Clinical Correlations",
       "q": "A 62-year-old man experiences retrosternal chest tightness consistently after walking briskly up two flights of stairs, relieved within 3 minutes of rest or sublingual nitroglycerin. Coronary angiography reveals a 75% fixed atherosclerotic narrowing of the left anterior descending artery. Which physiological principle explains why he has no chest pain at rest?",
       "options": [
-        "Coronary arterioles dilate downstream of the stenosis, preserving resting flow until coronary reserve is exhausted",
+        "Downstream arteriolar dilation preserves resting flow until coronary reserve is exhausted",
         "Collateral vessels bypass the stenosis only during sleep",
         "Nitroglycerin selectively constricts the LAD",
         "Myocardial oxygen demand falls during exercise"
@@ -884,7 +884,7 @@
       "options": [
         "Scalp blood loss causes hypovolaemia and hyperventilation",
         "Carotid sinus destruction causes hypertension and bradycardia",
-        "Raised ICP causes medullary ischaemia and sympathetic hypertension, followed by baroreflex bradycardia",
+        "Raised ICP triggers sympathetic hypertension, followed by baroreflex bradycardia",
         "Brain natriuretic peptide directly slows the sinoatrial node"
       ],
       "answer": 2,
@@ -908,7 +908,7 @@
         "Angiotensin-converting enzyme",
         "Endothelial nitric oxide synthase",
         "HMG-CoA reductase",
-        "Cyclooxygenase, reducing prostaglandin E2 synthesis"
+        "Cyclooxygenase (COX), reducing PGE2 synthesis"
       ],
       "answer": 3,
       "explain": "Prostaglandin E2 (PGE2) actively keeps the ductus arteriosus patent in utero; NSAIDs like indomethacin or ibuprofen inhibit cyclooxygenase (COX) to lower PGE2 and promote smooth muscle constriction and closure.",
