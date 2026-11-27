@@ -31,7 +31,7 @@ window.DX = window.DX || {};
     name = String(name || "");
     if (!/^[A-Za-z0-9][A-Za-z0-9._'\/-]*\.(jpg|jpeg|png|webp)$/i.test(name) || name.indexOf("..") > -1 || name.indexOf("//") > -1) return "";
     /* Encode each segment so valid filenames containing apostrophes load reliably. */
-    return "data/img/" + (name.indexOf("/") > -1 ? "" : "histo/") + name.split("/").map(encodeURIComponent).join("/");
+    return "data/img/" + (name.indexOf("/") > -1 ? "" : "histo/") + name.split("/").map(function (part) { return encodeURIComponent(part).replace(/\x27/g, "%27"); }).join("/");
   };
   DX.qImg = function (q, cls) {
     var src = q && q.image ? DX.imgSrc(q.image) : ""; if (!src) return "";
