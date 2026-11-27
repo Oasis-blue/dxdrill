@@ -16968,6 +16968,546 @@
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC3670108/",
         "https://www.ncbi.nlm.nih.gov/books/NBK27100/"
       ]
+    },
+    {
+      "id": "tf-ra-vascular-system-001",
+      "type": "tf",
+      "topic": "ra-vascular-system",
+      "level": 2,
+      "sub": "Angiography and digital subtraction",
+      "q": "Regarding angiographic imaging of the vascular system:",
+      "items": [
+        {
+          "text": "Conventional catheter angiography introduces radiopaque contrast into the vascular system to outline blood vessels.",
+          "answer": true,
+          "explain": "Iodinated contrast is injected through an intravascular catheter to opacify the vessels being examined."
+        },
+        {
+          "text": "Digital subtraction angiography compares contrast-enhanced images with a pre-contrast mask image.",
+          "answer": true,
+          "explain": "Subtraction removes much of the background anatomy, improving visualisation of contrast-filled vessels."
+        },
+        {
+          "text": "In digital subtraction angiography, subtraction makes bones and other stationary background structures more conspicuous than the vessels.",
+          "answer": false,
+          "explain": "Subtraction is intended to suppress stationary background structures and highlight vessels containing contrast."
+        },
+        {
+          "text": "Catheter angiography can provide an opportunity for endovascular treatment as well as diagnosis.",
+          "answer": true,
+          "explain": "Procedures such as angioplasty, embolisation and stent placement may be performed during an angiographic session."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK557477/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK470557/"
+      ]
+    },
+    {
+      "id": "tf-ra-neuroanatomy-001",
+      "type": "tf",
+      "topic": "ra-neuroanatomy",
+      "level": 2,
+      "sub": "CT appearances of intracranial haemorrhage",
+      "q": "Regarding the appearance of intracranial haemorrhage on non-contrast CT:",
+      "items": [
+        {
+          "text": "An acute epidural haematoma classically has a biconvex or lentiform shape.",
+          "answer": true,
+          "explain": "An epidural collection is limited by cranial sutures and commonly forms a lens-shaped hyperdense extra-axial collection."
+        },
+        {
+          "text": "An acute subdural haematoma commonly appears as a crescent-shaped extra-axial collection.",
+          "answer": true,
+          "explain": "Subdural blood can spread along the cerebral convexity, producing a crescentic appearance."
+        },
+        {
+          "text": "An epidural haematoma typically crosses cranial sutures freely.",
+          "answer": false,
+          "explain": "The periosteal layer of dura is tightly attached at sutures, limiting the spread of an epidural collection."
+        },
+        {
+          "text": "Acute intracranial blood is usually hyperattenuating relative to brain parenchyma on non-contrast CT.",
+          "answer": true,
+          "explain": "Acute clot is typically hyperdense, although attenuation varies with haematocrit, timing and clinical circumstances."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK470386/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK544427/"
+      ]
+    },
+    {
+      "id": "tf-ra-gastrointestinal-tract-001",
+      "type": "tf",
+      "topic": "ra-gastrointestinal-tract",
+      "level": 2,
+      "sub": "Contrast studies of the gastrointestinal tract",
+      "q": "Regarding contrast radiological studies of the gastrointestinal tract:",
+      "items": [
+        {
+          "text": "Barium sulphate is commonly used to outline the gastrointestinal lumen when perforation is not suspected.",
+          "answer": true,
+          "explain": "Barium provides high radiographic contrast for evaluating the oesophagus, stomach and bowel."
+        },
+        {
+          "text": "Water-soluble iodinated contrast is generally preferred over barium when gastrointestinal perforation is suspected.",
+          "answer": true,
+          "explain": "Extravasated barium can cause severe inflammatory complications; water-soluble contrast is generally selected when a leak is suspected."
+        },
+        {
+          "text": "A barium meal primarily evaluates the colon, while a barium enema primarily evaluates the oesophagus.",
+          "answer": false,
+          "explain": "A barium meal examines the upper gastrointestinal tract, whereas a barium enema outlines the colon."
+        },
+        {
+          "text": "A double-contrast examination uses both a coating contrast agent and gas to improve mucosal detail.",
+          "answer": true,
+          "explain": "The combination of barium coating and gas distension improves visualisation of mucosal contours."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK559270/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK537034/"
+      ]
+    },
+    {
+      "id": "tf-ra-genitourinary-tract-001",
+      "type": "tf",
+      "topic": "ra-genitourinary-tract",
+      "level": 2,
+      "sub": "IV urography, hysterosalpingography and ultrasound",
+      "q": "Regarding imaging of the genitourinary tract:",
+      "items": [
+        {
+          "text": "In intravenous urography, iodinated contrast is filtered by the kidneys and outlines the collecting system and urinary tract.",
+          "answer": true,
+          "explain": "After intravenous administration, contrast is excreted into the urine, allowing sequential assessment of the kidneys, ureters and bladder."
+        },
+        {
+          "text": "Hysterosalpingography uses contrast introduced through the cervix to assess the uterine cavity and fallopian-tube patency.",
+          "answer": true,
+          "explain": "Contrast outlines the endometrial cavity and demonstrates tubal filling and peritoneal spill when tubes are patent."
+        },
+        {
+          "text": "A normal hysterosalpingogram showing free peritoneal spill from both tubes proves normal ovarian function.",
+          "answer": false,
+          "explain": "Hysterosalpingography assesses uterine cavity contour and tubal patency; it does not establish ovulation or ovarian endocrine function."
+        },
+        {
+          "text": "Ultrasonography is an important first-line imaging modality for many pelvic and urinary tract indications, including pregnancy.",
+          "answer": true,
+          "explain": "Ultrasound provides real-time imaging without ionising radiation and is widely used in obstetric and pelvic assessment."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK557575/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK551564/"
+      ]
+    },
+    {
+      "id": "tf-gen-common-genetic-disorders-001",
+      "type": "tf",
+      "topic": "gen-common-genetic-disorders",
+      "level": 2,
+      "sub": "Common chromosomal and single-gene disorders",
+      "q": "Regarding common human genetic disorders:",
+      "items": [
+        {
+          "text": "Down syndrome is most commonly associated with trisomy of chromosome 21.",
+          "answer": true,
+          "explain": "The usual mechanism is meiotic nondisjunction resulting in an extra chromosome 21."
+        },
+        {
+          "text": "Turner syndrome classically occurs in a phenotypic female with complete or partial absence of one X chromosome.",
+          "answer": true,
+          "explain": "The classic karyotype is 45,X, although mosaic and structural variants also occur."
+        },
+        {
+          "text": "Klinefelter syndrome is classically associated with a 47,XXY karyotype.",
+          "answer": true,
+          "explain": "An additional X chromosome in a phenotypic male commonly causes testicular dysfunction and infertility."
+        },
+        {
+          "text": "Sickle cell disease is usually inherited as an autosomal dominant disorder.",
+          "answer": false,
+          "explain": "Clinically significant sickle cell disease is usually autosomal recessive; affected individuals inherit pathogenic HBB variants from both parents."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK2325/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK1309/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK1377/"
+      ]
+    },
+    {
+      "id": "tf-pg-homeostasis-002",
+      "type": "tf",
+      "topic": "pg-homeostasis",
+      "level": 2,
+      "sub": "Homeostatic control and feedback",
+      "q": "Regarding homeostatic control mechanisms:",
+      "items": [
+        {
+          "text": "In a negative-feedback system, the response generally reduces the initial disturbance.",
+          "answer": true,
+          "explain": "Negative feedback counteracts a deviation and helps return a regulated variable towards its operating range."
+        },
+        {
+          "text": "The control centre in a homeostatic reflex compares incoming information with an appropriate reference or regulated range.",
+          "answer": true,
+          "explain": "The integrating centre processes afferent information and coordinates efferent output to effectors."
+        },
+        {
+          "text": "Positive feedback is the dominant mechanism maintaining arterial pressure, plasma glucose and core temperature under resting conditions.",
+          "answer": false,
+          "explain": "These variables are predominantly regulated through negative-feedback mechanisms; positive feedback is reserved for specific amplifying processes."
+        },
+        {
+          "text": "A feedforward response can begin before a regulated variable has changed substantially.",
+          "answer": true,
+          "explain": "Anticipatory control, such as salivation and cephalic-phase digestive responses, can prepare the body for an expected disturbance."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK559138/",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-5-homeostasis"
+      ]
+    },
+    {
+      "id": "tf-pn-fluid-and-electrolyte-balance-001",
+      "type": "tf",
+      "topic": "pn-fluid-and-electrolyte-balance",
+      "level": 2,
+      "sub": "Osmolality and body-fluid shifts",
+      "q": "Regarding body-fluid osmolality and electrolyte balance:",
+      "items": [
+        {
+          "text": "Water moves across cell membranes by osmosis in response to differences in effective solute concentration.",
+          "answer": true,
+          "explain": "Water shifts towards the compartment with the higher effective osmotic concentration until osmotic equilibrium is approached."
+        },
+        {
+          "text": "An increase in extracellular fluid osmolality tends to draw water out of cells.",
+          "answer": true,
+          "explain": "A hypertonic extracellular compartment causes cellular water loss and cell shrinkage."
+        },
+        {
+          "text": "Sodium is the principal intracellular cation in a healthy adult.",
+          "answer": false,
+          "explain": "Potassium is the principal intracellular cation; sodium is the principal extracellular cation."
+        },
+        {
+          "text": "Antidiuretic hormone increases water reabsorption by promoting aquaporin-2 insertion into collecting-duct principal cells.",
+          "answer": true,
+          "explain": "Vasopressin acts at V2 receptors to increase cAMP signalling and insertion of aquaporin-2 channels into the apical membrane."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK541123/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK538339/"
+      ]
+    },
+    {
+      "id": "tf-pp-male-reproductive-system-001",
+      "type": "tf",
+      "topic": "pp-male-reproductive-system",
+      "level": 2,
+      "sub": "Endocrine regulation of testicular function",
+      "q": "Regarding the endocrine regulation of male reproductive function:",
+      "items": [
+        {
+          "text": "Luteinising hormone stimulates Leydig cells to synthesise testosterone.",
+          "answer": true,
+          "explain": "LH acts on Leydig cells to promote androgen synthesis."
+        },
+        {
+          "text": "Follicle-stimulating hormone acts on Sertoli cells and supports spermatogenesis.",
+          "answer": true,
+          "explain": "FSH promotes Sertoli-cell functions that support developing germ cells."
+        },
+        {
+          "text": "Inhibin B released by Sertoli cells contributes to negative feedback on pituitary FSH secretion.",
+          "answer": true,
+          "explain": "Inhibin B selectively suppresses FSH secretion and reflects Sertoli-cell and seminiferous-tubule activity."
+        },
+        {
+          "text": "Testosterone normally exerts positive feedback that continuously increases hypothalamic GnRH and pituitary LH secretion.",
+          "answer": false,
+          "explain": "Testosterone and its metabolites generally exert negative feedback on hypothalamic GnRH and pituitary gonadotropin secretion."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK279031/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK279070/"
+      ]
+    },
+    {
+      "id": "tf-pp-contraception-002",
+      "type": "tf",
+      "topic": "pp-contraception",
+      "level": 2,
+      "sub": "Physiological mechanisms of contraception",
+      "q": "Regarding the physiological mechanisms of contraception:",
+      "items": [
+        {
+          "text": "Combined hormonal contraceptives suppress ovulation primarily through negative feedback on the hypothalamic-pituitary-ovarian axis.",
+          "answer": true,
+          "explain": "Oestrogen and progestin suppress gonadotropin secretion, preventing the mid-cycle LH surge and ovulation."
+        },
+        {
+          "text": "Progestin-containing contraceptives can reduce the likelihood of fertilisation by thickening cervical mucus.",
+          "answer": true,
+          "explain": "Thicker cervical mucus impedes sperm penetration and passage through the cervix."
+        },
+        {
+          "text": "A copper intrauterine device prevents pregnancy mainly by providing systemic progesterone.",
+          "answer": false,
+          "explain": "Copper produces a local uterine inflammatory environment that impairs sperm function and fertilisation; it does not act by systemic progesterone delivery."
+        },
+        {
+          "text": "Correct and consistent use of condoms can reduce transmission of many sexually transmitted infections as well as prevent pregnancy.",
+          "answer": true,
+          "explain": "Barrier protection reduces exposure to infectious genital secretions and mucosal surfaces, although protection is not absolute for infections transmitted from uncovered skin."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK279148/",
+        "https://www.cdc.gov/contraception/about/index.html"
+      ]
+    },
+    {
+      "id": "tf-phys-temperature-001",
+      "type": "tf",
+      "topic": "phys-temperature",
+      "level": 2,
+      "sub": "Thermoregulation and fever",
+      "q": "Regarding physiological regulation of body temperature:",
+      "items": [
+        {
+          "text": "The preoptic region of the hypothalamus is important in integrating thermal information and coordinating thermoregulatory responses.",
+          "answer": true,
+          "explain": "Hypothalamic networks receive central and peripheral thermal inputs and coordinate heat-loss and heat-production responses."
+        },
+        {
+          "text": "Eccrine sweating is mediated predominantly by sympathetic cholinergic fibres.",
+          "answer": true,
+          "explain": "Although sympathetic, the postganglionic fibres supplying eccrine sweat glands release acetylcholine."
+        },
+        {
+          "text": "During fever, pyrogen-induced prostaglandin E2 signalling can raise the hypothalamic temperature set point.",
+          "answer": true,
+          "explain": "Inflammatory mediators increase PGE2 signalling, producing a higher defended temperature and features such as chills."
+        },
+        {
+          "text": "When the hypothalamic set point rises during fever, the body initially responds by maximising heat loss through sweating and cutaneous vasodilation.",
+          "answer": false,
+          "explain": "The body initially conserves and generates heat through vasoconstriction and shivering until core temperature approaches the raised set point."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK562334/"
+      ]
+    },
+    {
+      "id": "tf-ba-biochemistry-of-muscle-contraction-002",
+      "type": "tf",
+      "topic": "ba-biochemistry-of-muscle-contraction",
+      "level": 2,
+      "sub": "ATP turnover and excitation-contraction coupling",
+      "q": "Regarding the biochemical events supporting skeletal muscle contraction:",
+      "items": [
+        {
+          "text": "Calcium released from the sarcoplasmic reticulum binds to troponin C during skeletal muscle activation.",
+          "answer": true,
+          "explain": "Calcium binding changes the troponin complex and moves tropomyosin away from myosin-binding sites on actin."
+        },
+        {
+          "text": "The sarcoplasmic reticulum Ca2+-ATPase uses ATP to pump calcium back into the sarcoplasmic reticulum during relaxation.",
+          "answer": true,
+          "explain": "SERCA actively transports cytosolic calcium into the sarcoplasmic reticulum, lowering cytosolic calcium and promoting relaxation."
+        },
+        {
+          "text": "Creatine phosphate can rapidly donate a phosphate group to ADP to regenerate ATP during brief periods of intense muscle activity.",
+          "answer": true,
+          "explain": "Creatine kinase catalyses the reversible transfer of phosphate from phosphocreatine to ADP, buffering ATP availability."
+        },
+        {
+          "text": "Rigor mortis occurs because excessive ATP production locks myosin heads onto actin.",
+          "answer": false,
+          "explain": "After death, ATP production ceases; without ATP, myosin cannot detach normally from actin, producing rigor."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537140/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9961/"
+      ]
+    },
+    {
+      "id": "tf-ba-biochemistry-of-muscle-contraction-003",
+      "type": "tf",
+      "topic": "ba-biochemistry-of-muscle-contraction",
+      "level": 2,
+      "sub": "Muscle energy metabolism and fatigue",
+      "q": "Regarding energy metabolism in contracting skeletal muscle:",
+      "items": [
+        {
+          "text": "Phosphocreatine provides a rapid reserve for ATP regeneration at the onset of intense muscular activity.",
+          "answer": true,
+          "explain": "The creatine kinase reaction rapidly transfers phosphate to ADP when ATP demand rises."
+        },
+        {
+          "text": "Anaerobic glycolysis can generate ATP rapidly from glucose or glycogen when energy demand exceeds oxidative capacity.",
+          "answer": true,
+          "explain": "Glycolytic ATP production is rapid but yields less ATP per glucose than complete aerobic oxidation."
+        },
+        {
+          "text": "Oxidative phosphorylation in mitochondria is an important source of ATP during prolonged submaximal exercise.",
+          "answer": true,
+          "explain": "Aerobic metabolism of carbohydrate and fatty acids supports sustained ATP production."
+        },
+        {
+          "text": "Lactate formation during intense exercise occurs because skeletal muscle mitochondria are completely absent.",
+          "answer": false,
+          "explain": "Skeletal muscle contains mitochondria; lactate production increases when glycolytic flux is high relative to mitochondrial pyruvate oxidation and NADH reoxidation capacity."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537140/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9961/"
+      ]
+    },
+    {
+      "id": "tf-ba-hormones-special-organs-and-neurochemistry-001",
+      "type": "tf",
+      "topic": "ba-hormones-special-organs-and-neurochemistry",
+      "level": 2,
+      "sub": "Hormone signalling mechanisms",
+      "q": "Regarding biochemical mechanisms of hormone action:",
+      "items": [
+        {
+          "text": "Steroid hormones commonly act through intracellular receptors that regulate gene transcription.",
+          "answer": true,
+          "explain": "Lipophilic steroid hormones cross cell membranes and bind cytosolic or nuclear receptors that function as ligand-regulated transcription factors."
+        },
+        {
+          "text": "Insulin signals through a receptor with intrinsic tyrosine kinase activity.",
+          "answer": true,
+          "explain": "Insulin binding activates receptor autophosphorylation and downstream signalling pathways, including IRS proteins."
+        },
+        {
+          "text": "Peptide hormones generally cross the plasma membrane freely and bind directly to nuclear DNA.",
+          "answer": false,
+          "explain": "Most peptide hormones are hydrophilic and signal through cell-surface receptors and intracellular second-messenger or kinase pathways."
+        },
+        {
+          "text": "Thyroid hormones exert many of their effects through nuclear receptors that regulate transcription.",
+          "answer": true,
+          "explain": "T3 binds nuclear thyroid hormone receptors, which interact with DNA response elements and co-regulators."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK279054/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK279031/"
+      ]
+    },
+    {
+      "id": "tf-ba-recombinant-dna-and-genetic-diagnosis-001",
+      "type": "tf",
+      "topic": "ba-recombinant-dna-and-genetic-diagnosis",
+      "level": 2,
+      "sub": "Core enzymes in recombinant DNA technology",
+      "q": "Regarding enzymes used in recombinant DNA technology:",
+      "items": [
+        {
+          "text": "Restriction endonucleases recognise specific DNA sequences and cleave DNA at or near those sites.",
+          "answer": true,
+          "explain": "Restriction enzymes recognise defined nucleotide sequences and generate predictable DNA fragments."
+        },
+        {
+          "text": "DNA ligase catalyses formation of phosphodiester bonds to join DNA fragments.",
+          "answer": true,
+          "explain": "DNA ligase seals breaks in the sugar-phosphate backbone, joining compatible DNA ends."
+        },
+        {
+          "text": "Reverse transcriptase synthesises complementary DNA using an RNA template.",
+          "answer": true,
+          "explain": "Reverse transcriptase is an RNA-dependent DNA polymerase used to produce cDNA from RNA."
+        },
+        {
+          "text": "DNA polymerase used in PCR normally joins two separate DNA fragments by sealing nicks in their sugar-phosphate backbones.",
+          "answer": false,
+          "explain": "DNA ligase seals nicks; thermostable DNA polymerase extends primers to synthesise new DNA strands during PCR."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK21114/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26821/"
+      ]
+    },
+    {
+      "id": "tf-ba-immunochemistry-005",
+      "type": "tf",
+      "topic": "ba-immunochemistry",
+      "level": 2,
+      "sub": "Antigen-antibody binding and immunoassays",
+      "q": "Regarding antigen-antibody interactions and immunochemical assays:",
+      "items": [
+        {
+          "text": "Antigen-antibody binding is mediated mainly by non-covalent interactions.",
+          "answer": true,
+          "explain": "Hydrogen bonds, electrostatic forces, hydrophobic interactions and van der Waals forces contribute to reversible binding."
+        },
+        {
+          "text": "Affinity describes the strength of binding between one antigenic epitope and one antibody-binding site.",
+          "answer": true,
+          "explain": "Affinity refers to the strength of a single binding interaction; avidity reflects the combined strength of multiple interactions."
+        },
+        {
+          "text": "An enzyme-linked immunosorbent assay uses an enzyme-labelled detection system to generate a measurable signal.",
+          "answer": true,
+          "explain": "The enzyme converts an added substrate into a detectable product, commonly measured by colour, fluorescence or chemiluminescence."
+        },
+        {
+          "text": "Agglutination reactions require antigen and antibody to remain completely soluble and never form visible lattices.",
+          "answer": false,
+          "explain": "Agglutination involves particulate antigens or particles coated with antigen/antibody forming visible clumps through cross-linking."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK27100/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK459455/"
+      ]
     }
   ]
 }
