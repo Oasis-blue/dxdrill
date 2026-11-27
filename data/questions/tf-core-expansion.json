@@ -16429,6 +16429,545 @@
       "verified": false,
       "reviewStatus": "draft-unverified",
       "referenceScope": "Textbook-level references; individual claims require academic review."
+    },
+    {
+      "id": "tf-ra-principles-of-x-ray-production-001",
+      "type": "tf",
+      "topic": "ra-principles-of-x-ray-production",
+      "level": 2,
+      "sub": "X-ray tube and image formation",
+      "q": "Regarding the production of diagnostic X-rays:",
+      "items": [
+        {
+          "text": "Heating the cathode filament releases electrons by thermionic emission.",
+          "answer": true,
+          "explain": "Thermal energy allows electrons to escape from the heated cathode filament."
+        },
+        {
+          "text": "Electrons are accelerated across the tube towards the positively charged anode target.",
+          "answer": true,
+          "explain": "The potential difference between cathode and anode accelerates electrons through the evacuated tube."
+        },
+        {
+          "text": "Most diagnostic X-ray photons are produced when electrons fill vacancies in inner atomic shells of the anode.",
+          "answer": false,
+          "explain": "Characteristic radiation arises from shell transitions, but bremsstrahlung from electron deceleration accounts for most X-ray production."
+        },
+        {
+          "text": "Increasing the tube voltage generally increases the energy and penetrating ability of the X-ray beam.",
+          "answer": true,
+          "explain": "A higher kilovoltage peak increases the maximum and average photon energy, producing a more penetrating beam."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK537046/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK553145/"
+      ]
+    },
+    {
+      "id": "tf-ra-musculoskeletal-system-001",
+      "type": "tf",
+      "topic": "ra-musculoskeletal-system",
+      "level": 2,
+      "sub": "Plain radiography of the skeleton",
+      "q": "Regarding plain radiographs of the musculoskeletal system:",
+      "items": [
+        {
+          "text": "Cortical bone normally appears more radiopaque than surrounding soft tissue.",
+          "answer": true,
+          "explain": "Bone attenuates more X-rays than soft tissue because of its density and mineral content."
+        },
+        {
+          "text": "A single radiographic projection is always sufficient to exclude a fracture.",
+          "answer": false,
+          "explain": "Orthogonal views are commonly required because a fracture may be obscured or poorly aligned on one projection."
+        },
+        {
+          "text": "Air is generally less radiopaque than fat on a plain radiograph.",
+          "answer": true,
+          "explain": "Air has lower radiographic attenuation than fat and therefore appears darker."
+        },
+        {
+          "text": "The normal epiphyseal growth plate remains visible as a cartilage line throughout adult life.",
+          "answer": false,
+          "explain": "The growth plate normally closes after skeletal maturation and is replaced by an epiphyseal line."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK546155/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK553145/"
+      ]
+    },
+    {
+      "id": "tf-gen-cell-division-001",
+      "type": "tf",
+      "topic": "gen-cell-division",
+      "level": 2,
+      "sub": "Meiosis and chromosome segregation",
+      "q": "Regarding meiosis in human germ cells:",
+      "items": [
+        {
+          "text": "One round of DNA replication precedes the two meiotic divisions.",
+          "answer": true,
+          "explain": "DNA is replicated during premeiotic S phase; meiosis I and II then occur without another S phase between them."
+        },
+        {
+          "text": "Homologous chromosomes pair during prophase I.",
+          "answer": true,
+          "explain": "Synapsis brings homologous chromosomes together during prophase I, allowing recombination."
+        },
+        {
+          "text": "Crossing-over normally occurs between sister chromatids during metaphase II.",
+          "answer": false,
+          "explain": "Crossing-over occurs mainly between non-sister chromatids of homologous chromosomes during prophase I."
+        },
+        {
+          "text": "Meiotic nondisjunction can produce gametes with abnormal chromosome numbers.",
+          "answer": true,
+          "explain": "Failure of homologues or sister chromatids to separate can produce aneuploid gametes."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26840/"
+      ]
+    },
+    {
+      "id": "tf-sh-nervous-system-001",
+      "type": "tf",
+      "topic": "sh-nervous-system",
+      "level": 2,
+      "sub": "Neuroglia and myelination",
+      "q": "Regarding the histology of nervous tissue:",
+      "items": [
+        {
+          "text": "Oligodendrocytes form myelin around axons in the central nervous system.",
+          "answer": true,
+          "explain": "A single oligodendrocyte can extend processes to myelinate segments of multiple CNS axons."
+        },
+        {
+          "text": "Schwann cells are the principal myelinating cells of the central nervous system.",
+          "answer": false,
+          "explain": "Schwann cells myelinate peripheral nerves; oligodendrocytes perform this role in the CNS."
+        },
+        {
+          "text": "Microglia function as resident phagocytic immune cells of the central nervous system.",
+          "answer": true,
+          "explain": "Microglia survey neural tissue and remove debris and pathogens through phagocytic activity."
+        },
+        {
+          "text": "Ependymal cells form the myelin sheath around peripheral nerve fibres.",
+          "answer": false,
+          "explain": "Ependymal cells line the ventricles and central canal; peripheral myelin is formed by Schwann cells."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK441945/"
+      ]
+    },
+    {
+      "id": "tf-se-musculoskeletal-system-and-ossification-001",
+      "type": "tf",
+      "topic": "se-musculoskeletal-system-and-ossification",
+      "level": 2,
+      "sub": "Embryonic bone formation",
+      "q": "Regarding skeletal development and ossification:",
+      "items": [
+        {
+          "text": "Intramembranous ossification forms many flat bones of the skull.",
+          "answer": true,
+          "explain": "Mesenchymal cells differentiate directly into osteoblasts without first forming a cartilage model."
+        },
+        {
+          "text": "Endochondral ossification involves replacement of a cartilage model by bone.",
+          "answer": true,
+          "explain": "A cartilage template is progressively resorbed and replaced by bone during endochondral ossification."
+        },
+        {
+          "text": "The primary ossification centre of a typical long bone develops in the epiphysis.",
+          "answer": false,
+          "explain": "The primary ossification centre usually develops in the diaphysis; secondary centres commonly develop in the epiphyses."
+        },
+        {
+          "text": "Longitudinal growth of a long bone occurs at its epiphyseal growth plate.",
+          "answer": true,
+          "explain": "Proliferation and hypertrophy of growth-plate chondrocytes, followed by replacement with bone, lengthen the bone."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK539718/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK279149/"
+      ]
+    },
+    {
+      "id": "tf-pc-arterial-pressure-and-peripheral-resistance-001",
+      "type": "tf",
+      "topic": "pc-arterial-pressure-and-peripheral-resistance",
+      "level": 2,
+      "sub": "Determinants and regulation of arterial pressure",
+      "q": "Regarding the regulation of systemic arterial pressure:",
+      "items": [
+        {
+          "text": "Mean arterial pressure is influenced by cardiac output and total peripheral resistance.",
+          "answer": true,
+          "explain": "In the systemic circulation, mean arterial pressure is approximately the product of cardiac output and total peripheral resistance."
+        },
+        {
+          "text": "Carotid sinus baroreceptors respond to stretch in the arterial wall.",
+          "answer": true,
+          "explain": "Increased arterial pressure stretches the carotid sinus baroreceptors and increases their firing."
+        },
+        {
+          "text": "Afferent impulses from the carotid sinus travel mainly through the vagus nerve.",
+          "answer": false,
+          "explain": "Carotid sinus afferents travel mainly in the glossopharyngeal nerve; aortic arch afferents travel in the vagus nerve."
+        },
+        {
+          "text": "Renal sodium and water handling contributes importantly to long-term arterial pressure regulation.",
+          "answer": true,
+          "explain": "Changes in renal excretion alter extracellular fluid volume and blood volume, influencing arterial pressure over time."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538509/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK470410/"
+      ]
+    },
+    {
+      "id": "tf-pi-diets-bmr-and-malnutrition-001",
+      "type": "tf",
+      "topic": "pi-diets-bmr-and-malnutrition",
+      "level": 2,
+      "sub": "Basal metabolic rate and energy expenditure",
+      "q": "Regarding basal metabolic rate and energy expenditure:",
+      "items": [
+        {
+          "text": "Basal metabolic rate is measured under standardised basal conditions, including post-absorptive rest.",
+          "answer": true,
+          "explain": "BMR is assessed under controlled conditions that minimise the effects of recent food intake, activity and environmental variation."
+        },
+        {
+          "text": "Fat-free mass is a major determinant of resting energy expenditure.",
+          "answer": true,
+          "explain": "Organs and lean tissues have higher metabolic activity than adipose tissue, making fat-free mass a strong predictor of resting expenditure."
+        },
+        {
+          "text": "Thyroid hormones generally reduce resting energy expenditure.",
+          "answer": false,
+          "explain": "Thyroid hormones increase metabolic activity and generally raise resting energy expenditure."
+        },
+        {
+          "text": "The thermic effect of food is a component of total daily energy expenditure but is not part of basal metabolic rate.",
+          "answer": true,
+          "explain": "Energy used for digestion, absorption and nutrient processing contributes to total expenditure outside basal conditions."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK574539/",
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK554545/"
+      ]
+    },
+    {
+      "id": "tf-phys-dialysis-diuretics-001",
+      "type": "tf",
+      "topic": "phys-dialysis-diuretics",
+      "level": 2,
+      "sub": "Principles of haemodialysis",
+      "q": "Regarding the physiological principles of haemodialysis:",
+      "items": [
+        {
+          "text": "Urea is removed from blood mainly by diffusion down its concentration gradient into dialysate.",
+          "answer": true,
+          "explain": "Urea diffuses across the dialyser membrane from blood, where its concentration is higher, towards dialysate."
+        },
+        {
+          "text": "Ultrafiltration removes water across the dialyser membrane using a transmembrane pressure gradient.",
+          "answer": true,
+          "explain": "A hydrostatic pressure difference drives water movement across the semipermeable membrane."
+        },
+        {
+          "text": "The dialysate is formulated with a high urea concentration to drive urea out of the patient's blood.",
+          "answer": false,
+          "explain": "Dialysate urea concentration is kept low so that urea diffuses from blood into the dialysate."
+        },
+        {
+          "text": "Haemodialysis can correct selected electrolyte and acid-base disturbances as well as remove uraemic solutes.",
+          "answer": true,
+          "explain": "Dialysate composition and membrane exchange allow removal or adjustment of solutes and bicarbonate delivery."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563296/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK492981/"
+      ]
+    },
+    {
+      "id": "tf-phys-renal-endocrine-002",
+      "type": "tf",
+      "topic": "phys-renal-endocrine",
+      "level": 2,
+      "sub": "Endocrine functions of the kidney",
+      "q": "Regarding the endocrine functions of the kidneys:",
+      "items": [
+        {
+          "text": "Renal erythropoietin stimulates red-cell production in the bone marrow.",
+          "answer": true,
+          "explain": "Erythropoietin released in response to renal tissue hypoxia stimulates erythroid progenitor survival and maturation."
+        },
+        {
+          "text": "Renin is released by specialised juxtaglomerular cells in response to reduced renal perfusion and related signals.",
+          "answer": true,
+          "explain": "Juxtaglomerular granular cells release renin when renal perfusion pressure falls, distal tubular sodium chloride delivery falls, or beta-1 sympathetic activity rises."
+        },
+        {
+          "text": "The kidney activates vitamin D by converting 25-hydroxyvitamin D to 1,25-dihydroxyvitamin D.",
+          "answer": true,
+          "explain": "Renal proximal tubular 1-alpha-hydroxylase converts calcidiol to biologically active calcitriol."
+        },
+        {
+          "text": "Erythropoietin is produced primarily by the adrenal cortex.",
+          "answer": false,
+          "explain": "In adults, the kidneys are the principal source of circulating erythropoietin; the liver contributes a smaller amount."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538339/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK470410/"
+      ]
+    },
+    {
+      "id": "tf-pp-puberty-002",
+      "type": "tf",
+      "topic": "pp-puberty",
+      "level": 2,
+      "sub": "Neuroendocrine initiation of puberty",
+      "q": "Regarding the physiology of puberty:",
+      "items": [
+        {
+          "text": "Reactivation of pulsatile hypothalamic GnRH secretion is central to the onset of gonadarche.",
+          "answer": true,
+          "explain": "Pulsatile GnRH stimulates anterior pituitary gonadotrophs and activates the hypothalamic-pituitary-gonadal axis."
+        },
+        {
+          "text": "LH and FSH stimulate gonadal functions during pubertal maturation.",
+          "answer": true,
+          "explain": "The gonadotropins promote gonadal steroidogenesis and gametogenic maturation."
+        },
+        {
+          "text": "Adrenarche and gonadarche are the same process and are controlled exclusively by pituitary LH.",
+          "answer": false,
+          "explain": "Adrenarche reflects increased adrenal androgen production and is distinct from activation of the hypothalamic-pituitary-gonadal axis."
+        },
+        {
+          "text": "Testicular enlargement is generally the first clinical sign of gonadarche in boys.",
+          "answer": true,
+          "explain": "Increasing testicular volume reflects FSH- and LH-related maturation of the testes and usually precedes penile growth."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK534827/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK279024/"
+      ]
+    },
+    {
+      "id": "tf-ba-biochemistry-of-muscle-contraction-001",
+      "type": "tf",
+      "topic": "ba-biochemistry-of-muscle-contraction",
+      "level": 2,
+      "sub": "Molecular basis of muscle contraction",
+      "q": "Regarding the molecular basis of muscle contraction:",
+      "items": [
+        {
+          "text": "In skeletal muscle, calcium binds to troponin C to initiate the regulatory change that permits actin-myosin interaction.",
+          "answer": true,
+          "explain": "Calcium binding to troponin C shifts the troponin-tropomyosin complex and exposes myosin-binding sites on actin."
+        },
+        {
+          "text": "ATP binding to myosin promotes detachment of the myosin head from actin.",
+          "answer": true,
+          "explain": "ATP binding reduces myosin's affinity for actin, allowing the cross-bridge to detach."
+        },
+        {
+          "text": "Hydrolysis of ATP occurs after myosin has detached and re-cocks the myosin head for another cycle.",
+          "answer": true,
+          "explain": "ATP hydrolysis energises the myosin head, which can then bind actin when the regulatory sites are exposed."
+        },
+        {
+          "text": "Calcium binds directly to tropomyosin to expose the myosin-binding sites on actin.",
+          "answer": false,
+          "explain": "Calcium binds troponin C; tropomyosin is displaced indirectly through the troponin complex."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK537140/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9961/"
+      ]
+    },
+    {
+      "id": "tf-bc-chemistry-of-biomolecules-001",
+      "type": "tf",
+      "topic": "bc-chemistry-of-biomolecules",
+      "level": 2,
+      "sub": "Chemical classes of biological molecules",
+      "q": "Regarding the major classes of biological molecules:",
+      "items": [
+        {
+          "text": "Amino acids are linked by peptide bonds to form polypeptide chains.",
+          "answer": true,
+          "explain": "The carboxyl group of one amino acid forms a covalent peptide bond with the amino group of another."
+        },
+        {
+          "text": "Nucleotides contain a nitrogenous base, a pentose sugar and one or more phosphate groups.",
+          "answer": true,
+          "explain": "These three components distinguish a nucleotide from a nucleoside, which lacks phosphate."
+        },
+        {
+          "text": "Most biological triglycerides are polymers formed by repeating amino-acid units.",
+          "answer": false,
+          "explain": "Triglycerides are triacylglycerols formed from glycerol esterified to three fatty acids; they are not amino-acid polymers."
+        },
+        {
+          "text": "Glycosidic bonds join monosaccharide residues in many oligosaccharides and polysaccharides.",
+          "answer": true,
+          "explain": "Glycosidic linkages form when monosaccharide units are covalently joined through a condensation reaction."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9879/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26883/"
+      ]
+    },
+    {
+      "id": "tf-ba-body-fluids-and-blood-clotting-001",
+      "type": "tf",
+      "topic": "ba-body-fluids-and-blood-clotting",
+      "level": 2,
+      "sub": "Biochemistry of coagulation",
+      "q": "Regarding the biochemical events of blood coagulation:",
+      "items": [
+        {
+          "text": "The prothrombinase complex converts prothrombin to thrombin.",
+          "answer": true,
+          "explain": "Activated factor Xa with factor Va, calcium and a phospholipid surface forms prothrombinase, which generates thrombin."
+        },
+        {
+          "text": "Thrombin cleaves soluble fibrinogen to form fibrin monomers.",
+          "answer": true,
+          "explain": "Thrombin removes fibrinopeptides from fibrinogen, allowing fibrin monomers to polymerise."
+        },
+        {
+          "text": "Activated factor XIII stabilises the clot by cross-linking fibrin strands.",
+          "answer": true,
+          "explain": "Factor XIIIa forms covalent cross-links between fibrin molecules, strengthening the fibrin network."
+        },
+        {
+          "text": "Vitamin K is required for gamma-carboxylation of fibrinogen before it can bind platelets.",
+          "answer": false,
+          "explain": "Vitamin K-dependent gamma-carboxylation affects factors II, VII, IX and X and proteins C and S, not fibrinogen."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK545263/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK13422/"
+      ]
+    },
+    {
+      "id": "tf-ba-biomembranes-006",
+      "type": "tf",
+      "topic": "ba-biomembranes",
+      "level": 2,
+      "sub": "Membrane structure and permeability",
+      "q": "Regarding the structure and properties of biological membranes:",
+      "items": [
+        {
+          "text": "Phospholipids are amphipathic molecules with hydrophilic head groups and hydrophobic fatty-acid tails.",
+          "answer": true,
+          "explain": "Their amphipathic structure drives spontaneous bilayer formation in aqueous environments."
+        },
+        {
+          "text": "Integral membrane proteins are embedded in the lipid bilayer and may span it completely.",
+          "answer": true,
+          "explain": "Integral proteins associate strongly with the hydrophobic membrane core; transmembrane proteins cross the bilayer."
+        },
+        {
+          "text": "Ions diffuse rapidly through the hydrophobic core of a protein-free phospholipid bilayer.",
+          "answer": false,
+          "explain": "The charged and hydrated nature of ions makes the hydrophobic bilayer core an effective barrier; ion channels or transporters are required."
+        },
+        {
+          "text": "Cholesterol helps modulate membrane fluidity and permeability.",
+          "answer": true,
+          "explain": "Cholesterol restrains phospholipid movement at higher temperatures and helps prevent tight packing at lower temperatures."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9928/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26815/"
+      ]
+    },
+    {
+      "id": "tf-ba-immunochemistry-004",
+      "type": "tf",
+      "topic": "ba-immunochemistry",
+      "level": 2,
+      "sub": "Immunoglobulins and complement",
+      "q": "Regarding the biochemical structure and function of antibodies and complement:",
+      "items": [
+        {
+          "text": "A typical immunoglobulin molecule contains two heavy chains and two light chains.",
+          "answer": true,
+          "explain": "The four polypeptide chains are linked by disulphide bonds to form the characteristic antibody structure."
+        },
+        {
+          "text": "The variable regions of immunoglobulins contribute to antigen recognition and binding specificity.",
+          "answer": true,
+          "explain": "Variable domains form the antigen-binding sites, including the complementarity-determining regions."
+        },
+        {
+          "text": "IgM is generally the most efficient immunoglobulin class at activating the classical complement pathway.",
+          "answer": true,
+          "explain": "The pentameric structure of secreted IgM makes it particularly effective at initiating classical pathway activation after antigen binding."
+        },
+        {
+          "text": "The alternative complement pathway requires antigen-bound IgG to initiate activation.",
+          "answer": false,
+          "explain": "The alternative pathway can be activated on microbial surfaces without antibody; antibody-antigen complexes characteristically activate the classical pathway."
+        }
+      ],
+      "verified": false,
+      "reviewStatus": "draft-unverified",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK551511/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3670108/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK27100/"
+      ]
     }
   ]
 }
