@@ -126,7 +126,7 @@
    "q": "Which signaling pathway is directly activated by the insulin receptor upon insulin binding?",
    "options": [
     "JAK-STAT pathway",
-    "Intrinsic receptor tyrosine kinase and IRS-1/PI3K/Akt pathway",
+    "Receptor tyrosine kinase activates IRS-1/PI3K/Akt",
     "Gs-adenylyl cyclase-PKA pathway",
     "Membrane guanylyl cyclase-PKG pathway"
    ],
@@ -291,7 +291,7 @@
    "sub": "Hypothalamic, Pituitary, and Thyroid Hormones",
    "q": "Why does severe starvation or critical illness cause 'euthyroid sick syndrome' with low serum T3 and elevated reverse T3 (rT3)?",
    "options": [
-    "Inhibition of 5'-deiodinase shifts T4 metabolism toward inner-ring 5-deiodination to inactive rT3",
+    "Reduced 5'-deiodinase activity favours inactive rT3 formation",
     "Thyroid peroxidase is destroyed by ketone bodies",
     "TSH secretion is permanently abolished",
     "Thyroglobulin synthesis ceases completely"
@@ -366,7 +366,7 @@
     "It does not cause virilization in females",
     "It causes severe hyperkalemia and salt wasting",
     "It lowers ACTH levels",
-    "It causes hypertension and hypokalemia due to accumulation of 11-deoxycorticosterone"
+    "11-deoxycorticosterone excess causes hypertension and hypokalaemia"
    ],
    "answer": 3,
    "explain": "In 11-beta-hydroxylase deficiency, 11-deoxycorticosterone (DOC) accumulates; because DOC has potent mineralocorticoid activity, patients develop hypertension and hypokalemia rather than salt wasting.",
@@ -481,7 +481,7 @@
    "sub": "Liver Biochemistry",
    "q": "Why does chronic liver failure lead to peripheral edema and ascites?",
    "options": [
-    "Decreased hepatic albumin synthesis lowers plasma oncotic pressure, while portal hypertension raises hydrostatic pressure",
+    "Low albumin lowers oncotic pressure; portal hypertension raises hydrostatic pressure",
     "Increased hepatic synthesis of aldosterone",
     "Excess hepatic urea production draws water into tissues",
     "Hyperglycemia causes osmotic fluid shift into the peritoneum"
@@ -530,7 +530,7 @@
    "options": [
     "Excess unconjugated bilirubin is filtered by the kidneys",
     "Bacterial overgrowth destroys urobilinogen in the colon",
-    "Conjugated bilirubin cannot reach gut stercobilin; it refluxes into blood and urine",
+    "Little bilirubin reaches the gut for stercobilin; conjugated bilirubin enters urine",
     "Heme oxygenase is inhibited by gallstones"
    ],
    "answer": 2,
@@ -554,7 +554,7 @@
     "ALT is secreted directly into bile",
     "Ethanol induces mitochondrial ALT transcription",
     "AST is synthesized in skeletal muscle only",
-    "B6 deficiency reduces ALT activity more than AST, raising the AST:ALT ratio"
+    "Pyridoxal phosphate deficiency lowers ALT activity more than AST"
    ],
    "answer": 3,
    "explain": "Both AST and ALT require pyridoxal phosphate (B6), which is depleted in chronic alcoholism; ALT is more sensitive to B6 depletion, and ethanol-induced mitochondrial injury releases mitochondrial AST. Key detail: Alcoholism causes pyridoxal phosphate (vitamin B6) deficiency, which impairs ALT activity more severely than AST.",
@@ -600,7 +600,7 @@
    "q": "Why is prothrombin time (PT/INR) a more sensitive marker of acute hepatic synthetic failure than serum albumin?",
    "options": [
     "Albumin is not synthesized by the liver",
-    "Factor VII has a short half-life, so PT/INR changes before albumin falls",
+    "Factor VII's short half-life makes PT/INR rise early",
     "Prothrombin is excreted by the kidneys",
     "Albumin is stored in large reserves in the spleen"
    ],
@@ -806,7 +806,7 @@
    "options": [
     "Accelerated TCA cycle activity produces excess carbonic acid",
     "Ketone body uptake increases sharply",
-    "Ischaemia shifts myocardium to anaerobic glycolysis, accumulating lactate and H+",
+    "Anaerobic glycolysis accumulates lactate and H+, lowering pH",
     "Fatty acid beta-oxidation accelerates"
    ],
    "answer": 2,
@@ -896,7 +896,7 @@
    "options": [
     "Activates adenylyl cyclase to open Na+ channels",
     "Directly opens voltage-gated K+ channels",
-    "Rhodopsin activates transducin/PDE, lowering cGMP and closing cation channels",
+    "Transducin activates PDE, lowering cGMP and closing cation channels",
     "Inhibits Na+/K+-ATPase"
    ],
    "answer": 2,
@@ -1013,7 +1013,7 @@
     "Carbidopa crosses the blood-brain barrier to stimulate dopamine receptors",
     "Carbidopa inhibits central monoamine oxidase-B",
     "Carbidopa enhances tyrosine hydroxylase expression",
-    "Carbidopa inhibits peripheral aromatic L-amino acid decarboxylase without crossing the blood-brain barrier"
+    "Inhibits peripheral DOPA decarboxylase; does not cross the blood-brain barrier"
    ],
    "answer": 3,
    "explain": "Carbidopa cannot cross the blood-brain barrier and inhibits peripheral DOPA decarboxylase, preventing premature peripheral conversion of L-DOPA to dopamine (reducing nausea/arrhythmias and increasing CNS L-DOPA delivery).",
@@ -1082,7 +1082,7 @@
    "options": [
     "Block presynaptic choline reuptake",
     "Inhibit choline acetyltransferase",
-    "Irreversibly phosphorylate the active-site serine of acetylcholinesterase",
+    "Phosphorylate acetylcholinesterase, inhibiting it irreversibly",
     "Act as direct muscarinic antagonists"
    ],
    "answer": 2,
@@ -1218,7 +1218,7 @@
    "sub": "Hormone Classification and Signal Transduction",
    "q": "Why do peptide hormones such as insulin and glucagon circulate freely in plasma with short half-lives, whereas steroid and thyroid hormones circulate bound to carrier proteins with long half-lives?",
    "options": [
-    "Peptides are water-soluble and rapidly cleared; lipophilic hormones bind plasma carriers",
+    "Peptides are water-soluble; steroids and thyroid hormones bind plasma carriers",
     "Peptides are covalently attached to albumin",
     "Steroid hormones cannot be metabolised by the liver",
     "Thyroid hormones are stored inside red blood cells"
@@ -1242,7 +1242,7 @@
    "q": "How do phosphodiesterase inhibitors such as caffeine, theophylline, and sildenafil prolong hormonal or neurotransmitter signaling?",
    "options": [
     "Activate Gs alpha directly",
-    "Prevent hydrolysis of cAMP or cGMP into inactive 5'-AMP or 5'-GMP",
+    "Inhibit cAMP/cGMP breakdown by phosphodiesterases",
     "Stimulate adenylyl cyclase transcription",
     "Block intracellular calcium release"
    ],
@@ -1311,7 +1311,7 @@
    "sub": "Hypothalamic, Pituitary, and Thyroid Hormones",
    "q": "How does antidiuretic hormone (vasopressin) increase water reabsorption in renal collecting duct principal cells?",
    "options": [
-    "Binds V2 receptors to raise cAMP and insert aquaporin-2 channels into the apical membrane",
+    "V2 activation raises cAMP and inserts aquaporin-2 channels",
     "Binds V1 receptors to stimulate aldosterone synthesis",
     "Activates Na+/K+/2Cl- cotransporters in the proximal tubule",
     "Inhibits carbonic anhydrase in intercalated cells"
@@ -1404,7 +1404,7 @@
    "sub": "Liver Biochemistry",
    "q": "How does the liver detoxify lipophilic xenobiotics and drugs in Phase I and Phase II biotransformation reactions?",
    "options": [
-    "Phase I reactions add or expose polar groups; Phase II reactions conjugate metabolites to increase water solubility",
+    "Phase I exposes polar groups; Phase II conjugates them for excretion",
     "Phase I conjugates drugs with albumin; Phase II oxidises them via catalase",
     "Phase I methylates drugs in mitochondria; Phase II stores them in bile salts",
     "Phase I cleaves peptide bonds; Phase II decarboxylates amino acids"
@@ -1476,7 +1476,7 @@
     "Stimulates duodenal DMT1 expression to increase iron absorption",
     "Enhances macrophage iron release into plasma",
     "Converts Fe3+ to Fe2+ in the stomach",
-    "Hepcidin binds ferroportin and triggers its degradation, trapping cellular iron"
+    "Binds ferroportin, triggering its internalisation and degradation"
    ],
    "answer": 3,
    "explain": "Hepcidin, upregulated by iron overload and IL-6 during inflammation, internalizes and degrades the iron exporter ferroportin, lowering serum iron and causing anemia of chronic disease. Key detail: Binds and induces degradation of ferroportin on enterocytes and macrophages, trapping iron intracellularly.",
@@ -1543,7 +1543,7 @@
    "options": [
     "Directly phosphorylates apical aquaporin-2",
     "Inhibits basolateral Na+/K+-ATPase",
-    "Aldosterone induces ENaC and basolateral Na+/K+-ATPase in principal cells",
+    "Upregulates ENaC and Na+/K+-ATPase in principal cells",
     "Blocks carbonic anhydrase in the proximal tubule"
    ],
    "answer": 2,
@@ -1567,7 +1567,7 @@
     "Cortisol cannot enter renal tubular cells",
     "Mineralocorticoid receptors have zero affinity for cortisol",
     "Aldosterone degrades cortisol in plasma",
-    "Renal 11-beta-hydroxysteroid dehydrogenase type 2 converts cortisol into inactive cortisone"
+    "Renal 11-beta-HSD2 converts cortisol to cortisone"
    ],
    "answer": 3,
    "explain": "11-beta-HSD2 in aldosterone-target tissues inactivates cortisol to cortisone; inhibition of this enzyme by glycyrrhetinic acid in black licorice causes apparent mineralocorticoid excess (hypertension and hypokalemia).",
@@ -1660,7 +1660,7 @@
     "Lens cells lack mitochondria completely",
     "Insulin directly precipitates lens crystallin proteins",
     "Glucose is converted to uric acid inside the lens",
-    "Aldose reductase converts excess glucose to sorbitol, which accumulates and draws water into lens fibres"
+    "Sorbitol accumulates in lens fibres and draws in water"
    ],
    "answer": 3,
    "explain": "Insulin-independent glucose entry into the lens saturates hexokinase, shunting glucose through aldose reductase to sorbitol; low lens sorbitol dehydrogenase traps sorbitol, drawing water inward and opacifying lens fibers.",
@@ -1751,7 +1751,7 @@
     "Directly inhibit glutamate decarboxylase",
     "Block presynaptic GABA reuptake transporters",
     "Act as competitive antagonists at glycine receptors",
-    "Benzodiazepines increase GABA-A opening frequency; barbiturates prolong opening"
+    "Benzodiazepines increase channel-opening frequency; barbiturates prolong it"
    ],
    "answer": 3,
    "explain": "GABA-A receptors are ligand-gated Cl- channels; benzodiazepines increase the frequency of channel opening in the presence of GABA, whereas barbiturates increase the duration of channel opening. Key detail: Bind allosteric sites on the GABA-A chloride channel to increase chloride influx and hyperpolarize neurons.",
@@ -1772,7 +1772,7 @@
    "sub": "Neurochemistry and Brain Metabolism",
    "q": "Why does glycine act as a major inhibitory neurotransmitter in the spinal cord and brainstem, and how does strychnine poisoning cause fatal muscle spasms?",
    "options": [
-    "Glycine opens postsynaptic Cl- channels, and strychnine competitively blocks glycine receptors",
+    "Glycine opens Cl- channels; strychnine blocks glycine receptors",
     "Glycine inhibits acetylcholinesterase, and strychnine activates it",
     "Glycine blocks voltage-gated calcium channels, and strychnine opens them",
     "Glycine stimulates dopamine release, and strychnine depletes it"
@@ -1844,7 +1844,7 @@
     "Blocks postsynaptic nicotinic acetylcholine receptors",
     "Inhibits acetylcholinesterase in the synaptic cleft",
     "Blocks voltage-gated sodium channels along motor axons",
-    "Cleaves SNARE proteins (such as synaptobrevin or SNAP-25) to prevent acetylcholine vesicle fusion and exocytosis"
+    "Cleaves SNARE proteins, preventing acetylcholine vesicle release"
    ],
    "answer": 3,
    "explain": "Botulinum toxin is a zinc endopeptidase that cleaves SNARE proteins in presynaptic cholinergic terminals, preventing acetylcholine-containing synaptic vesicles from fusing with the plasma membrane.",
@@ -1865,7 +1865,7 @@
    "sub": "Neurochemistry and Brain Metabolism",
    "q": "How does tetanus toxin produce spastic paralysis rather than flaccid paralysis despite cleaving the same SNARE protein (synaptobrevin) as botulinum toxin?",
    "options": [
-    "Tetanus toxin travels retrogradely to inhibitory Renshaw interneurons in the spinal cord and blocks GABA and glycine release",
+    "Retrograde transport to spinal inhibitory interneurons blocks GABA and glycine release",
     "Tetanus toxin directly stimulates nicotinic receptors on skeletal muscle",
     "Tetanus toxin inhibits acetylcholinesterase",
     "Tetanus toxin increases glutamate synthesis in motor neurons"
@@ -1913,7 +1913,7 @@
    "options": [
     "Block the sodium-iodide symporter on the basolateral membrane",
     "Destroy thyroid follicular cells via beta radiation",
-    "Inhibit thyroid peroxidase-mediated iodide oxidation, organification, and iodotyrosine coupling",
+    "Block thyroid peroxidase-mediated iodide oxidation, organification and coupling",
     "Inhibit TSH secretion from the anterior pituitary"
    ],
    "answer": 2,
@@ -1957,7 +1957,7 @@
    "sub": "Liver Biochemistry",
    "q": "Why does serum unconjugated bilirubin rise markedly during acute massive intravascular or extravascular hemolysis even in a patient with a healthy liver?",
    "options": [
-    "The rate of heme breakdown exceeds the conjugating capacity of hepatic UDP-glucuronosyltransferase",
+    "Heme breakdown exceeds hepatic bilirubin-conjugation capacity",
     "Hemolysis directly inhibits hepatic UGT1A1",
     "Albumin becomes saturated with conjugated bilirubin",
     "Haptoglobin converts conjugated bilirubin back into unconjugated bilirubin"
@@ -2052,7 +2052,7 @@
    "sub": "Neurochemistry and Brain Metabolism",
    "q": "A 62-year-old patient with hepatic cirrhosis develops asterixis (flapping tremor), confusion, and stupor after a high-protein meal. Elevated arterial ammonia crosses the blood-brain barrier and disrupts neurotransmission primarily by which mechanism?",
    "options": [
-    "Astrocytic ammonia detoxification raises glutamine, depletes TCA intermediates and causes cellular swelling",
+    "Astrocytes accumulate glutamine, depleting TCA intermediates and causing swelling",
     "Direct activation of dopamine D2 receptors",
     "Inhibition of choline acetyltransferase in the cortex",
     "Excess serotonin synthesis in the brainstem"
@@ -2075,7 +2075,7 @@
    "q": "What is the biochemical basis of the blood-brain barrier's selective permeability to circulating solutes?",
    "options": [
     "Absence of mitochondria in brain capillaries",
-    "Tight junctions between non-fenestrated endothelial cells restrict paracellular entry; selective transporters carry essential solutes",
+    "Endothelial tight junctions restrict paracellular entry; transporters admit selected solutes",
     "A thick collagen basement membrane blocks all lipid-soluble molecules",
     "High albumin concentration in CSF forms the main barrier"
    ],
