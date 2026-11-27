@@ -1,600 +1,600 @@
 {
- "topic": "mi-clinical-procedures-and-investigations",
- "questions": [
-  {
-   "id": "mi-clinical-procedures-and-investigations-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Venepuncture and Blood Sampling",
-   "q": "Which vein in the cubital fossa is the first-choice site for routine adult venepuncture because it is large, well-anchored, and distant from major nerves and arteries?",
-   "options": [
-    "Median cubital vein",
-    "Basilic vein",
-    "Accessory cephalic vein",
-    "Brachial vein"
-   ],
-   "answer": 0,
-   "explain": "The median cubital vein is superficial, well-supported by surrounding tissue so it does not roll easily, and separated from the underlying brachial artery and median nerve by the bicipital aponeurosis.",
-   "verified": false,
-   "open": {
-    "q": "Which superficial vein in the cubital fossa is the preferred first-choice site for routine venepuncture?",
-    "accept": [
-     "Median cubital vein",
-     "Median cubital"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Venepuncture and Blood Sampling",
-   "q": "Why should blood samples for coagulation studies (PT, aPTT) be collected in a light-blue-top sodium citrate tube filled to its exact marked fill line?",
-   "options": [
-    "Sodium citrate inhibits glycolysis to prevent false reductions in clotting factors",
-    "Underfilling alters the critical 9:1 blood-to-anticoagulant ratio and artificially prolongs clotting times",
-    "Sodium citrate permanently chelates calcium so clotting cannot be re-initiated in the laboratory",
-    "Excess citrate causes in vitro haemolysis and hyperkalaemia"
-   ],
-   "answer": 1,
-   "explain": "Coagulation tubes require an exact 9:1 ratio of blood to 3.2% sodium citrate; underfilling leaves excess unbound citrate that binds the calcium added during laboratory testing, falsely prolonging PT and aPTT.",
-   "verified": false,
-   "open": {
-    "q": "What laboratory error occurs if a light-blue sodium citrate coagulation tube is underfilled during venepuncture?",
-    "accept": [
-     "Artificially prolonged clotting times",
-     "Falsely prolonged PT and aPTT",
-     "Excess citrate binds added calcium and prolongs clotting times"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Venepuncture and Blood Sampling",
-   "q": "Which blood collection tube additive is required when sending a venous sample for fasting plasma glucose estimation to prevent red blood cell glycolysis?",
-   "options": [
-    "EDTA (lavender top)",
-    "Lithium heparin (green top)",
-    "Sodium fluoride with potassium oxalate (grey top)",
-    "Plain clot activator (red top)"
-   ],
-   "answer": 2,
-   "explain": "Sodium fluoride inhibits the glycolytic enzyme enolase in erythrocytes, preventing glucose consumption in vitro while potassium oxalate acts as an anticoagulant.",
-   "verified": false,
-   "open": {
-    "q": "Which chemical additive in a grey-top blood tube inhibits erythrocyte glycolysis for accurate plasma glucose measurement?",
-    "accept": [
-     "Sodium fluoride",
-     "Fluoride oxalate",
-     "Sodium fluoride and potassium oxalate"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Venepuncture and Blood Sampling",
-   "q": "During blood draw order, why must a lavender-top EDTA tube never be filled before a light-blue sodium citrate tube or serum electrolyte tube?",
-   "options": [
-    "EDTA causes immediate clotting in the needle lumen",
-    "EDTA evaporates rapidly when exposed to air",
-    "EDTA dilutes plasma proteins by half",
-    "EDTA contamination causes spurious hyperkalaemia, hypocalcaemia and prolonged clotting"
-   ],
-   "answer": 3,
-   "explain": "EDTA is a potent calcium chelator usually formulated as a potassium salt; cross-contamination falsely elevates serum potassium and lowers calcium and magnesium while prolonging coagulation assays.",
-   "verified": false,
-   "open": {
-    "q": "What electrolyte and coagulation artefacts result if potassium-EDTA contaminates a chemistry or coagulation sample?",
-    "accept": [
-     "Falsely elevated potassium, falsely low calcium, and prolonged clotting times",
-     "Spurious hyperkalaemia and hypocalcaemia",
-     "Pseudohyperkalaemia and hypocalcaemia"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Arterial Blood Gas Sampling",
-   "q": "Which bedside test must be performed before radial artery puncture for arterial blood gas (ABG) sampling to verify adequate collateral ulnar arterial perfusion to the hand?",
-   "options": [
-    "Modified Allen's test",
-    "Trendelenburg test",
-    "Phalen's test",
-    "Buerger's test"
-   ],
-   "answer": 0,
-   "explain": "The modified Allen's test assesses patency of the ulnar artery and palmar arch collateral circulation so the hand remains perfused if radial artery thrombosis or spasm occurs.",
-   "verified": false,
-   "open": {
-    "q": "Name the bedside clinical test performed prior to radial artery cannulation or ABG puncture to confirm collateral ulnar blood supply.",
-    "accept": [
-     "Modified Allen's test",
-     "Allen's test",
-     "Allen test"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-006",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Arterial Blood Gas Sampling",
-   "q": "What are the normal adult reference ranges for arterial pH and partial pressure of carbon dioxide (PaCO2) on an arterial blood gas?",
-   "options": [
-    "pH 7.25-7.35; PaCO2 50-60 mmHg",
-    "pH 7.35-7.45; PaCO2 35-45 mmHg",
-    "pH 7.45-7.55; PaCO2 20-30 mmHg",
-    "pH 7.15-7.25; PaCO2 65-75 mmHg"
-   ],
-   "answer": 1,
-   "explain": "Normal arterial blood pH is tightly maintained between 7.35 and 7.45, with normal PaCO2 between 35 and 45 mmHg (4.7-6.0 kPa) and bicarbonate between 22 and 26 mmol/L.",
-   "verified": false,
-   "open": {
-    "q": "State the normal adult reference range for arterial pH and PaCO2 in mmHg.",
-    "accept": [
-     "pH 7.35 to 7.45 and PaCO2 35 to 45 mmHg",
-     "7.35-7.45 and 35-45 mmHg"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-007",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Arterial Blood Gas Sampling",
-   "q": "A 22-year-old woman with severe diabetic ketoacidosis has an arterial blood gas showing pH 7.18, PaCO2 22 mmHg, and HCO3- 9 mmol/L. Which acid-base disturbance is present?",
-   "options": [
-    "Uncompensated respiratory acidosis",
-    "Primary metabolic alkalosis with respiratory compensation",
-    "Partially compensated metabolic acidosis",
-    "Primary respiratory alkalosis with renal compensation"
-   ],
-   "answer": 2,
-   "explain": "Low pH (<7.35) with markedly reduced HCO3- (<22 mmol/L) indicates primary metabolic acidosis, while the low PaCO2 (<35 mmHg) reflects compensatory Kussmaul hyperventilation that has not yet normalized the pH.",
-   "verified": false,
-   "open": {
-    "q": "Interpret an arterial blood gas showing pH 7.18, PaCO2 22 mmHg, and bicarbonate 9 mmol/L.",
-    "accept": [
-     "Partially compensated metabolic acidosis",
-     "Metabolic acidosis with respiratory compensation",
-     "High anion gap metabolic acidosis"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-008",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Lumbar Puncture",
-   "q": "At which vertebral interspace is a diagnostic lumbar puncture safely performed in an adult to avoid injuring the spinal cord?",
-   "options": [
-    "T12-L1 or L1-L2 interspace",
-    "C7-T1 interspace",
-    "S2-S3 sacral hiatus",
-    "L3-L4 or L4-L5 interspace (aligned with Tuffier's intercristal line)"
-   ],
-   "answer": 3,
-   "explain": "Because the adult conus medullaris terminates at the lower border of L1 (or upper L2), inserting the spinal needle at L3-L4 or L4-L5 enters the lumbar cistern containing only mobile cauda equina nerve roots.",
-   "verified": false,
-   "open": {
-    "q": "At which vertebral interspaces is a lumbar puncture performed in adults, and what anatomical landmark guides this level?",
-    "accept": [
-     "L3-L4 or L4-L5 guided by the intercristal (Tuffier's) line",
-     "L3-L4 or L4-L5 along the iliac crests",
-     "L3/L4 or L4/L5 interspace"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-009",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lumbar Puncture",
-   "q": "Which clinical finding is an absolute contraindication to performing an immediate lumbar puncture without prior cranial neuroimaging due to the risk of fatal cerebral herniation?",
-   "options": [
-    "Papilloedema or focal deficits suggesting a mass lesion and raised intracranial pressure",
-    "High fever with neck stiffness alone",
-    "Suspected subarachnoid haemorrhage with a normal CT scan",
-    "Positive Kernig and Brudzinski signs without focal neurological findings"
-   ],
-   "answer": 0,
-   "explain": "Removing CSF from below when an intracranial space-occupying lesion causes raised intracranial pressure creates a pressure gradient that can precipitate downward uncal or cerebellar tonsillar herniation.",
-   "verified": false,
-   "open": {
-    "q": "Why are papilloedema and focal neurological deficits strict contraindications to immediate lumbar puncture before neuroimaging?",
-    "accept": [
-     "Risk of cerebral herniation due to raised intracranial pressure",
-     "Can precipitate brain herniation or coning",
-     "Raised ICP with mass effect risks herniation"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Lumbar Puncture",
-   "q": "Cerebrospinal fluid analysis from a febrile young adult shows a cloudy appearance, opening pressure of 32 cmH2O, polymorphonuclear neutrophil predominance (>1000 cells/microL), markedly elevated protein, and CSF-to-serum glucose ratio of 0.2. What is the most likely diagnosis?",
-   "options": [
-    "Viral (aseptic) meningitis",
-    "Acute bacterial meningitis",
-    "Multiple sclerosis",
-    "Guillain-Barre syndrome"
-   ],
-   "answer": 1,
-   "explain": "Bacterial meningitis classically produces turbid CSF with high opening pressure, neutrophilic pleocytosis, high protein, and marked hypoglycorrhachia (CSF glucose <40% of simultaneous blood glucose).",
-   "verified": false,
-   "open": {
-    "q": "Which central nervous system infection produces turbid CSF with neutrophilic pleocytosis, high protein, and markedly reduced CSF-to-serum glucose ratio?",
-    "accept": [
-     "Acute bacterial meningitis",
-     "Bacterial meningitis",
-     "Pyogenic meningitis"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-011",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Thoracentesis and Pleural Fluid Analysis",
-   "q": "Where should the needle be inserted during diagnostic thoracentesis to avoid injuring the intercostal neurovascular bundle?",
-   "options": [
-    "Along the inferior border of the upper rib",
-    "Directly through the mid-body of the rib",
-    "Over the superior border of the lower rib",
-    "Through the second intercostal space in the mid-clavicular line"
-   ],
-   "answer": 2,
-   "explain": "The intercostal vein, artery, and nerve run in the costal groove along the inferior margin of each rib; advancing the needle over the superior margin of the lower rib safely avoids them.",
-   "verified": false,
-   "open": {
-    "q": "Along which margin of a rib should a thoracentesis needle be advanced to avoid damaging the intercostal neurovascular bundle?",
-    "accept": [
-     "Superior border of the lower rib",
-     "Upper margin of the lower rib",
-     "Top edge of the rib below"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-012",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Thoracentesis and Pleural Fluid Analysis",
-   "q": "According to Light's criteria, which biochemical finding classifies a pleural effusion as an exudate rather than a transudate?",
-   "options": [
-    "Pleural fluid protein-to-serum protein ratio less than 0.3",
-    "Pleural fluid LDH-to-serum LDH ratio less than 0.4",
-    "Pleural fluid glucose equal to simultaneous serum glucose",
-    "Pleural fluid protein-to-serum protein ratio greater than 0.5"
-   ],
-   "answer": 3,
-   "explain": "Light's criteria define an exudative pleural effusion if at least one of the following is met: pleural-to-serum protein ratio >0.5, pleural-to-serum LDH ratio >0.6, or pleural LDH >two-thirds the upper limit of normal serum LDH.",
-   "verified": false,
-   "open": {
-    "q": "State the three biochemical thresholds that make up Light's criteria for an exudative pleural effusion.",
-    "accept": [
-     "Pleural-to-serum protein ratio > 0.5, pleural-to-serum LDH ratio > 0.6, or pleural LDH > two-thirds upper limit of normal serum LDH",
-     "Protein ratio > 0.5, LDH ratio > 0.6, pleural LDH > 2/3 ULN"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Abdominal Paracentesis",
-   "q": "What is the standard anatomical needle entry site for diagnostic or therapeutic abdominal paracentesis in a patient with gross ascites?",
-   "options": [
-    "Left lower quadrant, lateral to rectus and away from the inferior epigastric vessels",
-    "Right upper quadrant immediately below the costal margin",
-    "Midline above the umbilicus through the falciform ligament",
-    "Directly over the inferior epigastric artery"
-   ],
-   "answer": 0,
-   "explain": "The left lower quadrant (lateral to the rectus abdominis muscle, avoiding the inferior epigastric vessels and the caecum on the right) is the safest and thinnest abdominal wall site for paracentesis.",
-   "verified": false,
-   "open": {
-    "q": "Which abdominal quadrant and anatomical landmark is preferred for safe needle insertion during abdominal paracentesis?",
-    "accept": [
-     "Left lower quadrant lateral to the rectus sheath",
-     "Left iliac fossa medial and superior to the ASIS",
-     "Left lower quadrant"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-014",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Abdominal Paracentesis",
-   "q": "A 50-year-old man with ascites has a serum albumin of 36 g/L and ascitic fluid albumin of 18 g/L. What is his Serum-Ascites Albumin Gradient (SAAG), and what mechanism does it indicate?",
-   "options": [
-    "SAAG = 18 g/L (1.8 g/dL), indicating peritoneal carcinomatosis without portal hypertension",
-    "SAAG = 18 g/L (1.8 g/dL), indicating portal hypertension",
-    "SAAG = 2.0 g/L (0.2 g/dL), indicating tuberculous peritonitis",
-    "SAAG = 54 g/L (5.4 g/dL), indicating nephrotic syndrome"
-   ],
-   "answer": 1,
-   "explain": "SAAG equals serum albumin minus ascitic fluid albumin (36 - 18 = 18 g/L or 1.8 g/dL); a SAAG >= 11 g/L (1.1 g/dL) indicates portal hypertension with 97% accuracy.",
-   "verified": false,
-   "open": {
-    "q": "What threshold value of the Serum-Ascites Albumin Gradient (SAAG) indicates portal hypertension as the cause of ascites?",
-    "accept": [
-     "Greater than or equal to 11 g/L or 1.1 g/dL",
-     ">= 1.1 g/dL",
-     ">= 11 g/L"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Urethral Catheterization",
-   "q": "How should an adult male penis be positioned during insertion of a Foley urethral catheter to straighten the anterior urethra and ease passage?",
-   "options": [
-    "Pressed flat downward against the scrotum",
-    "Rotated 90 degrees laterally",
-    "Penis held upright at 90° with gentle traction",
-    "Flexed downward toward the thighs"
-   ],
-   "answer": 2,
-   "explain": "Holding the penis upright at 90 degrees to the body with gentle upward traction eliminates the natural penoscrotal curve of the anterior urethra, minimizing urethral trauma during catheter advancement.",
-   "verified": false,
-   "open": {
-    "q": "In what direction should the penis be held during male urethral catheterization to straighten the anterior urethra?",
-    "accept": [
-     "Upright perpendicular to the body",
-     "90 degrees upright toward the ceiling",
-     "Vertically upward with gentle traction"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-016",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Urethral Catheterization",
-   "q": "Which clinical finding is a strict contraindication to blind urethral catheterization in a trauma patient?",
-   "options": [
-    "Suprapubic bladder dullness",
-    "Benign prostatic enlargement alone",
-    "Microscopic haematuria alone",
-    "Blood at the meatus with perineal bruising or a high-riding prostate"
-   ],
-   "answer": 3,
-   "explain": "Blood at the urethral meatus, scrotal/perineal bruising, or a high-riding prostate signals potential urethral disruption; blind catheterization can convert a partial tear into a complete transection, so retrograde urethrography is required first.",
-   "verified": false,
-   "open": {
-    "q": "What triad of trauma signs contraindicates blind urethral catheterization due to suspected urethral injury?",
-    "accept": [
-     "Blood at the urethral meatus, perineal haematoma, and high-riding prostate",
-     "Meatal blood, perineal bruising, and high-riding prostate"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-017",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nasogastric Tube Insertion",
-   "q": "How is the external insertion length of a nasogastric (NG) tube estimated at the bedside before placement?",
-   "options": [
-    "Measure from the nose to the earlobe and then to the xiphisternum",
-    "Measure from the chin to the umbilicus",
-    "Measure from the forehead to the sternal angle",
-    "Insert a fixed 25 cm in every adult"
-   ],
-   "answer": 0,
-   "explain": "The NEX measurement (Nose to Earlobe to Xiphisternum) estimates the distance from the nares through the oesophagus into the gastric fundus.",
-   "verified": false,
-   "open": {
-    "q": "Which three anatomical landmarks are used to estimate the insertion length of a nasogastric tube?",
-    "accept": [
-     "Tip of the nose, earlobe, and xiphoid process",
-     "Nose, earlobe, xiphisternum",
-     "NEX landmarks"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-018",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Nasogastric Tube Insertion",
-   "q": "Which first-line bedside test confirms correct intragastric placement of a nasogastric tube before initiating enteral feeding?",
-   "options": [
-    "Auscultating over the epigastrium while injecting 20 mL of air ('whoosh test')",
-    "Testing aspirated fluid with pH indicator paper showing pH <= 5.5",
-    "Submerging the external tube end in water to check for bubbling",
-    "Observing whether the patient can speak clearly"
-   ],
-   "answer": 1,
-   "explain": "Aspirate pH <= 5.5 reliably confirms gastric acid environment; the air insufflation 'whoosh test' is unreliable because sounds from a tube in the bronchus or pleural space transmit to the epigastrium.",
-   "verified": false,
-   "open": {
-    "q": "What first-line bedside test and threshold value confirm intragastric placement of a nasogastric tube?",
-    "accept": [
-     "Gastric aspirate pH less than or equal to 5.5",
-     "Aspirate pH <= 5.5",
-     "pH testing of aspirate <= 5.5"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-019",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Electrocardiography (ECG)",
-   "q": "Where is precordial chest lead V4 placed during a standard 12-lead ECG recording?",
-   "options": [
-    "Right 4th intercostal space at the sternal border",
-    "Left 4th intercostal space at the sternal border",
-    "Left 5th intercostal space in the mid-clavicular line",
-    "Left 5th intercostal space in the mid-axillary line"
-   ],
-   "answer": 2,
-   "explain": "Lead V4 is positioned in the left 5th intercostal space at the mid-clavicular line, serving as the anatomical anchor for V3 (midway between V2 and V4), V5 (anterior axillary line), and V6 (mid-axillary line).",
-   "verified": false,
-   "open": {
-    "q": "State the exact anatomical placement for precordial ECG lead V4.",
-    "accept": [
-     "Left 5th intercostal space in the mid-clavicular line",
-     "Left fifth intercostal space midclavicular line"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-020",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Electrocardiography (ECG)",
-   "q": "At the standard ECG paper speed of 25 mm/s, how much time does one large 5 mm square represent?",
-   "options": [
-    "0.04 seconds",
-    "0.10 seconds",
-    "0.50 seconds",
-    "0.20 seconds"
-   ],
-   "answer": 3,
-   "explain": "At 25 mm/s, each small 1 mm square equals 0.04 seconds (40 ms), and one large 5 mm square equals 5 x 0.04 = 0.20 seconds (200 ms), so 300 large squares equal 1 minute.",
-   "verified": false,
-   "open": {
-    "q": "At standard ECG paper speed of 25 mm/s, how many seconds are represented by one small square (1 mm) and one large square (5 mm)?",
-    "accept": [
-     "0.04 seconds for one small square and 0.20 seconds for one large square",
-     "0.04 s and 0.20 s",
-     "40 ms and 200 ms"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-021",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Chest Radiography",
-   "q": "Why is an erect posteroanterior (PA) chest radiograph preferred over an anteroposterior (AP) film when evaluating cardiomegaly?",
-   "options": [
-    "A PA view places the anterior heart closer to the detector, reducing magnification",
-    "AP films expose patients to ten times more radiation",
-    "PA films eliminate the need for adequate inspiration",
-    "AP films cannot show the costophrenic angles"
-   ],
-   "answer": 0,
-   "explain": "Because the heart sits anteriorly in the thorax, a PA projection places it against the film cassette, avoiding the artificial beam-divergence magnification seen on AP films where cardiothoracic ratio cannot be reliably measured.",
-   "verified": false,
-   "open": {
-    "q": "Why does an anteroposterior (AP) chest X-ray artificially enlarge the cardiac silhouette compared to a posteroanterior (PA) film?",
-    "accept": [
-     "The anterior heart is farther from the detector causing geometric magnification",
-     "X-ray beam divergence magnifies the anterior heart",
-     "Geometric magnification due to greater heart-to-film distance"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-022",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Urinalysis",
-   "q": "What does a positive leukocyte esterase combined with positive nitrites on a urine dipstick test strongly suggest?",
-   "options": [
-    "Uncontrolled diabetic ketoacidosis",
-    "Bacterial UTI, commonly due to nitrate-reducing Gram-negative organisms",
-    "Rhabdomyolysis with myoglobinuria",
-    "Primary nephrotic syndrome"
-   ],
-   "answer": 1,
-   "explain": "Leukocyte esterase indicates pyuria (white blood cells in urine), while nitrites reflect bacterial conversion of urinary nitrates by Gram-negative organisms such as Escherichia coli.",
-   "verified": false,
-   "open": {
-    "q": "What clinical condition is indicated by positive leukocyte esterase and nitrites on a urine dipstick?",
-    "accept": [
-     "Urinary tract infection",
-     "UTI",
-     "Bacterial urinary tract infection"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-023",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Blood Culture Technique",
-   "q": "Which aseptic step is essential before inoculating venous blood into aerobic and anaerobic blood culture bottles to prevent false-positive skin contaminant growth?",
-   "options": [
-    "Wiping the skin with dry cotton wool only",
-    "Inoculating the anaerobic bottle first using an air-filled syringe",
-    "Disinfecting the skin and bottle septa, then allowing the antiseptic to dry",
-    "Placing blood culture bottles on ice immediately after collection"
-   ],
-   "answer": 2,
-   "explain": "Allowing alcohol/chlorhexidine skin and bottle-top antisepsis to air dry ensures bactericidal contact time and prevents residual alcohol from killing fastidious pathogens in the bottle; blood cultures are kept at room temperature or incubated, never iced.",
-   "verified": false,
-   "open": {
-    "q": "Why must alcohol or chlorhexidine skin antiseptic be allowed to air dry completely before performing venepuncture for blood cultures?",
-    "accept": [
-     "To achieve full bactericidal effect and prevent alcohol from killing organisms in the culture bottle",
-     "Ensures adequate contact time for skin disinfection",
-     "Prevents skin flora contamination and bactericidal carryover"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-024",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Bone Marrow Procedures",
-   "q": "Which anatomical site is most commonly used in adults for both bone marrow aspiration and trephine biopsy?",
-   "options": [
-    "Manubrium of the sternum",
-    "Proximal tibial tuberosity",
-    "Greater trochanter of the femur",
-    "Posterior superior iliac spine (iliac crest)"
-   ],
-   "answer": 3,
-   "explain": "The posterior superior iliac spine is safe, rich in active haematopoietic marrow in adults, distant from vital mediastinal organs (unlike the sternum), and permits both aspiration and core trephine biopsy.",
-   "verified": false,
-   "open": {
-    "q": "Which anatomical site is the standard preferred location for bone marrow aspiration and trephine biopsy in adults?",
-    "accept": [
-     "Posterior superior iliac spine",
-     "Posterior iliac crest",
-     "PSIS"
-    ]
-   }
-  },
-  {
-   "id": "mi-clinical-procedures-and-investigations-025",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Point-of-Care Investigations",
-   "q": "A 68-year-old man with severe pneumonia and cold, clammy fingers has a pulse oximeter reading of 84% despite looking comfortable and having normal arterial blood gas PaO2 of 92 mmHg. What is the most likely cause of this discrepancy?",
-   "options": [
-    "Poor digital perfusion weakens the pulsatile signal, falsely lowering SpO2",
-    "Carbon monoxide poisoning artificially lowering SpO2",
-    "Severe polycythaemia causing true arterial desaturation",
-    "Hypoglycaemia altering haemoglobin light absorption"
-   ],
-   "answer": 0,
-   "explain": "Pulse oximetry relies on pulsatile arterial blood flow in the fingertip; cold extremities, hypotension, or peripheral vasoconstriction impair signal detection and yield falsely low SpO2 readings despite normal arterial oxygenation.",
-   "verified": false,
-   "open": {
-    "q": "Name two common clinical factors that cause a pulse oximeter to display a falsely low SpO2 reading despite normal arterial PaO2.",
-    "accept": [
-     "Cold extremities and poor peripheral perfusion",
-     "Peripheral vasoconstriction and nail polish",
-     "Hypotension and poor digital blood flow"
-    ]
-   }
-  }
- ]
+  "topic": "mi-clinical-procedures-and-investigations",
+  "questions": [
+    {
+      "id": "mi-clinical-procedures-and-investigations-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Venepuncture and Blood Sampling",
+      "q": "Which vein in the cubital fossa is the first-choice site for routine adult venepuncture because it is large, well-anchored, and distant from major nerves and arteries?",
+      "options": [
+        "Median cubital vein",
+        "Basilic vein",
+        "Cephalic vein",
+        "Brachial artery"
+      ],
+      "answer": 0,
+      "explain": "The median cubital vein is superficial, well-supported by surrounding tissue so it does not roll easily, and separated from the underlying brachial artery and median nerve by the bicipital aponeurosis.",
+      "verified": false,
+      "open": {
+        "q": "Which superficial vein in the cubital fossa is the preferred first-choice site for routine venepuncture?",
+        "accept": [
+          "Median cubital vein",
+          "Median cubital"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Venepuncture and Blood Sampling",
+      "q": "Why should blood samples for coagulation studies (PT, aPTT) be collected in a light-blue-top sodium citrate tube filled to its exact marked fill line?",
+      "options": [
+        "Underfilling leaves excess citrate relative to blood and can falsely prolong clotting times",
+        "Citrate activates platelets and shortens clotting times",
+        "The tube must be filled completely to prevent potassium contamination",
+        "Underfilling causes haemolysis that selectively lowers fibrinogen"
+      ],
+      "answer": 0,
+      "explain": "Coagulation tubes require an exact 9:1 ratio of blood to 3.2% sodium citrate; underfilling leaves excess unbound citrate that binds the calcium added during laboratory testing, falsely prolonging PT and aPTT.",
+      "verified": false,
+      "open": {
+        "q": "What laboratory error occurs if a light-blue sodium citrate coagulation tube is underfilled during venepuncture?",
+        "accept": [
+          "Artificially prolonged clotting times",
+          "Falsely prolonged PT and aPTT",
+          "Excess citrate binds added calcium and prolongs clotting times"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Venepuncture and Blood Sampling",
+      "q": "Which blood collection tube additive is required when sending a venous sample for fasting plasma glucose estimation to prevent red blood cell glycolysis?",
+      "options": [
+        "EDTA (lavender top)",
+        "Lithium heparin (green top)",
+        "Sodium fluoride with potassium oxalate (grey top)",
+        "Plain clot activator (red top)"
+      ],
+      "answer": 2,
+      "explain": "Sodium fluoride inhibits the glycolytic enzyme enolase in erythrocytes, preventing glucose consumption in vitro while potassium oxalate acts as an anticoagulant.",
+      "verified": false,
+      "open": {
+        "q": "Which chemical additive in a grey-top blood tube inhibits erythrocyte glycolysis for accurate plasma glucose measurement?",
+        "accept": [
+          "Sodium fluoride",
+          "Fluoride oxalate",
+          "Sodium fluoride and potassium oxalate"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Venepuncture and Blood Sampling",
+      "q": "During blood draw order, why must a lavender-top EDTA tube never be filled before a light-blue sodium citrate tube or serum electrolyte tube?",
+      "options": [
+        "EDTA contamination adds potassium and chelates calcium, while also interfering with coagulation tests",
+        "EDTA activates thrombin and causes a falsely shortened PT",
+        "EDTA converts sodium into potassium during centrifugation",
+        "EDTA causes isolated elevation of chloride without affecting calcium"
+      ],
+      "answer": 0,
+      "explain": "EDTA is a potent calcium chelator usually formulated as a potassium salt; cross-contamination falsely elevates serum potassium and lowers calcium and magnesium while prolonging coagulation assays.",
+      "verified": false,
+      "open": {
+        "q": "What electrolyte and coagulation artefacts result if potassium-EDTA contaminates a chemistry or coagulation sample?",
+        "accept": [
+          "Falsely elevated potassium, falsely low calcium, and prolonged clotting times",
+          "Spurious hyperkalaemia and hypocalcaemia",
+          "Pseudohyperkalaemia and hypocalcaemia"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Arterial Blood Gas Sampling",
+      "q": "Which bedside test must be performed before radial artery puncture for arterial blood gas (ABG) sampling to verify adequate collateral ulnar arterial perfusion to the hand?",
+      "options": [
+        "Modified Allen's test",
+        "Trendelenburg test",
+        "Adson's test",
+        "Buerger's test"
+      ],
+      "answer": 0,
+      "explain": "The modified Allen's test assesses patency of the ulnar artery and palmar arch collateral circulation so the hand remains perfused if radial artery thrombosis or spasm occurs.",
+      "verified": false,
+      "open": {
+        "q": "Name the bedside clinical test performed prior to radial artery cannulation or ABG puncture to confirm collateral ulnar blood supply.",
+        "accept": [
+          "Modified Allen's test",
+          "Allen's test",
+          "Allen test"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-006",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Arterial Blood Gas Sampling",
+      "q": "What are the normal adult reference ranges for arterial pH and partial pressure of carbon dioxide (PaCO2) on an arterial blood gas?",
+      "options": [
+        "pH 7.25-7.35; PaCO2 50-60 mmHg",
+        "pH 7.35-7.45; PaCO2 35-45 mmHg",
+        "pH 7.45-7.55; PaCO2 20-30 mmHg",
+        "pH 7.15-7.25; PaCO2 65-75 mmHg"
+      ],
+      "answer": 1,
+      "explain": "Normal arterial blood pH is tightly maintained between 7.35 and 7.45, with normal PaCO2 between 35 and 45 mmHg (4.7-6.0 kPa) and bicarbonate between 22 and 26 mmol/L.",
+      "verified": false,
+      "open": {
+        "q": "State the normal adult reference range for arterial pH and PaCO2 in mmHg.",
+        "accept": [
+          "pH 7.35 to 7.45 and PaCO2 35 to 45 mmHg",
+          "7.35-7.45 and 35-45 mmHg"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Arterial Blood Gas Sampling",
+      "q": "A 22-year-old woman with severe diabetic ketoacidosis has an arterial blood gas showing pH 7.18, PaCO2 22 mmHg, and HCO3- 9 mmol/L. Which acid-base disturbance is present?",
+      "options": [
+        "Uncompensated respiratory acidosis",
+        "Primary metabolic alkalosis with respiratory compensation",
+        "Partially compensated metabolic acidosis",
+        "Primary respiratory alkalosis with renal compensation"
+      ],
+      "answer": 2,
+      "explain": "Low pH (<7.35) with markedly reduced HCO3- (<22 mmol/L) indicates primary metabolic acidosis, while the low PaCO2 (<35 mmHg) reflects compensatory Kussmaul hyperventilation that has not yet normalized the pH.",
+      "verified": false,
+      "open": {
+        "q": "Interpret an arterial blood gas showing pH 7.18, PaCO2 22 mmHg, and bicarbonate 9 mmol/L.",
+        "accept": [
+          "Partially compensated metabolic acidosis",
+          "Metabolic acidosis with respiratory compensation",
+          "High anion gap metabolic acidosis"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-008",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Lumbar Puncture",
+      "q": "At which vertebral interspace is a diagnostic lumbar puncture safely performed in an adult to avoid injuring the spinal cord?",
+      "options": [
+        "L2-L3 or L1-L2 interspace",
+        "T12-L1 interspace",
+        "S1-S2 interspace",
+        "L3-L4 or L4-L5 interspace"
+      ],
+      "answer": 3,
+      "explain": "Because the adult conus medullaris terminates at the lower border of L1 (or upper L2), inserting the spinal needle at L3-L4 or L4-L5 enters the lumbar cistern containing only mobile cauda equina nerve roots.",
+      "verified": false,
+      "open": {
+        "q": "At which vertebral interspaces is a lumbar puncture performed in adults, and what anatomical landmark guides this level?",
+        "accept": [
+          "L3-L4 or L4-L5 guided by the intercristal (Tuffier's) line",
+          "L3-L4 or L4-L5 along the iliac crests",
+          "L3/L4 or L4/L5 interspace"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lumbar Puncture",
+      "q": "Which finding in a patient with suspected meningitis should prompt cranial imaging before lumbar puncture because it raises concern for a space-occupying lesion and brain herniation?",
+      "options": [
+        "Papilloedema or a new focal neurological deficit",
+        "Fever and neck stiffness without other neurological findings",
+        "A positive Kernig sign in an alert patient",
+        "A mild headache that improves with simple analgesia"
+      ],
+      "answer": 0,
+      "explain": "Papilloedema or a focal neurological deficit raises concern for an intracranial mass effect; neuroimaging and clinical assessment should precede lumbar puncture. These findings are indications to assess for raised intracranial pressure, not a substitute for evaluating the whole clinical picture.",
+      "verified": false,
+      "open": {
+        "q": "Why are papilloedema and focal neurological deficits strict contraindications to immediate lumbar puncture before neuroimaging?",
+        "accept": [
+          "Risk of cerebral herniation due to raised intracranial pressure",
+          "Can precipitate brain herniation or coning",
+          "Raised ICP with mass effect risks herniation"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Lumbar Puncture",
+      "q": "Cerebrospinal fluid analysis from a febrile young adult shows a cloudy appearance, opening pressure of 32 cmH2O, polymorphonuclear neutrophil predominance (>1000 cells/microL), markedly elevated protein, and CSF-to-serum glucose ratio of 0.2. What is the most likely diagnosis?",
+      "options": [
+        "Viral (aseptic) meningitis",
+        "Acute bacterial meningitis",
+        "Multiple sclerosis",
+        "Guillain-Barre syndrome"
+      ],
+      "answer": 1,
+      "explain": "Bacterial meningitis classically produces turbid CSF with high opening pressure, neutrophilic pleocytosis, high protein, and marked hypoglycorrhachia (CSF glucose <40% of simultaneous blood glucose).",
+      "verified": false,
+      "open": {
+        "q": "Which central nervous system infection produces turbid CSF with neutrophilic pleocytosis, high protein, and markedly reduced CSF-to-serum glucose ratio?",
+        "accept": [
+          "Acute bacterial meningitis",
+          "Bacterial meningitis",
+          "Pyogenic meningitis"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-011",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Thoracentesis and Pleural Fluid Analysis",
+      "q": "Where should the needle be inserted during diagnostic thoracentesis to avoid injuring the intercostal neurovascular bundle?",
+      "options": [
+        "Along the inferior border of the upper rib",
+        "Through the costal groove at the inferior border of the lower rib",
+        "Over the superior border of the lower rib",
+        "Directly through the centre of the intercostal space"
+      ],
+      "answer": 2,
+      "explain": "The intercostal vein, artery, and nerve run in the costal groove along the inferior margin of each rib; advancing the needle over the superior margin of the lower rib safely avoids them.",
+      "verified": false,
+      "open": {
+        "q": "Along which margin of a rib should a thoracentesis needle be advanced to avoid damaging the intercostal neurovascular bundle?",
+        "accept": [
+          "Superior border of the lower rib",
+          "Upper margin of the lower rib",
+          "Top edge of the rib below"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-012",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Thoracentesis and Pleural Fluid Analysis",
+      "q": "According to Light's criteria, which biochemical finding classifies a pleural effusion as an exudate rather than a transudate?",
+      "options": [
+        "Pleural-to-serum protein ratio greater than 0.5",
+        "Pleural-to-serum LDH ratio less than 0.4",
+        "Pleural fluid glucose equal to serum glucose",
+        "Pleural-to-serum protein ratio less than 0.3"
+      ],
+      "answer": 0,
+      "explain": "Light's criteria define an exudative pleural effusion if at least one of the following is met: pleural-to-serum protein ratio >0.5, pleural-to-serum LDH ratio >0.6, or pleural LDH >two-thirds the upper limit of normal serum LDH.",
+      "verified": false,
+      "open": {
+        "q": "State the three biochemical thresholds that make up Light's criteria for an exudative pleural effusion.",
+        "accept": [
+          "Pleural-to-serum protein ratio > 0.5, pleural-to-serum LDH ratio > 0.6, or pleural LDH > two-thirds upper limit of normal serum LDH",
+          "Protein ratio > 0.5, LDH ratio > 0.6, pleural LDH > 2/3 ULN"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Abdominal Paracentesis",
+      "q": "What is the standard anatomical needle entry site for diagnostic or therapeutic abdominal paracentesis in a patient with gross ascites?",
+      "options": [
+        "Left lower quadrant, lateral to rectus and away from the inferior epigastric vessels",
+        "Right upper quadrant immediately below the costal margin",
+        "Midline above the umbilicus through the falciform ligament",
+        "Directly over the inferior epigastric artery"
+      ],
+      "answer": 0,
+      "explain": "The left lower quadrant (lateral to the rectus abdominis muscle, avoiding the inferior epigastric vessels and the caecum on the right) is the safest and thinnest abdominal wall site for paracentesis.",
+      "verified": false,
+      "open": {
+        "q": "Which abdominal quadrant and anatomical landmark is preferred for safe needle insertion during abdominal paracentesis?",
+        "accept": [
+          "Left lower quadrant lateral to the rectus sheath",
+          "Left iliac fossa medial and superior to the ASIS",
+          "Left lower quadrant"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-014",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Abdominal Paracentesis",
+      "q": "A 50-year-old man with ascites has a serum albumin of 36 g/L and ascitic fluid albumin of 18 g/L. What is his Serum-Ascites Albumin Gradient (SAAG), and what mechanism does it indicate?",
+      "options": [
+        "SAAG = 18 g/L (1.8 g/dL), indicating peritoneal carcinomatosis without portal hypertension",
+        "SAAG = 18 g/L (1.8 g/dL), indicating portal hypertension",
+        "SAAG = 2.0 g/L (0.2 g/dL), indicating tuberculous peritonitis",
+        "SAAG = 54 g/L (5.4 g/dL), indicating nephrotic syndrome"
+      ],
+      "answer": 1,
+      "explain": "SAAG equals serum albumin minus ascitic fluid albumin (36 - 18 = 18 g/L or 1.8 g/dL); a SAAG >= 11 g/L (1.1 g/dL) indicates portal hypertension with 97% accuracy.",
+      "verified": false,
+      "open": {
+        "q": "What threshold value of the Serum-Ascites Albumin Gradient (SAAG) indicates portal hypertension as the cause of ascites?",
+        "accept": [
+          "Greater than or equal to 11 g/L or 1.1 g/dL",
+          ">= 1.1 g/dL",
+          ">= 11 g/L"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Urethral Catheterization",
+      "q": "How should an adult male penis be positioned during insertion of a Foley urethral catheter to straighten the anterior urethra and ease passage?",
+      "options": [
+        "Pressed flat downward against the scrotum",
+        "Rotated 90 degrees laterally",
+        "Penis held upright at 90° with gentle traction",
+        "Flexed downward toward the thighs"
+      ],
+      "answer": 2,
+      "explain": "Holding the penis upright at 90 degrees to the body with gentle upward traction eliminates the natural penoscrotal curve of the anterior urethra, minimizing urethral trauma during catheter advancement.",
+      "verified": false,
+      "open": {
+        "q": "In what direction should the penis be held during male urethral catheterization to straighten the anterior urethra?",
+        "accept": [
+          "Upright perpendicular to the body",
+          "90 degrees upright toward the ceiling",
+          "Vertically upward with gentle traction"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-016",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Urethral Catheterization",
+      "q": "Which clinical finding is a strict contraindication to blind urethral catheterization in a trauma patient?",
+      "options": [
+        "Blood at the urethral meatus with perineal bruising",
+        "Suprapubic fullness suggesting urinary retention",
+        "A history of uncomplicated benign prostatic enlargement",
+        "A single episode of microscopic haematuria without trauma"
+      ],
+      "answer": 0,
+      "explain": "Blood at the urethral meatus, scrotal/perineal bruising, or a high-riding prostate signals potential urethral disruption; blind catheterization can convert a partial tear into a complete transection, so retrograde urethrography is required first.",
+      "verified": false,
+      "open": {
+        "q": "What triad of trauma signs contraindicates blind urethral catheterization due to suspected urethral injury?",
+        "accept": [
+          "Blood at the urethral meatus, perineal haematoma, and high-riding prostate",
+          "Meatal blood, perineal bruising, and high-riding prostate"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-017",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nasogastric Tube Insertion",
+      "q": "How is the external insertion length of a nasogastric (NG) tube estimated at the bedside before placement?",
+      "options": [
+        "Measure from the nose to the earlobe and then to the xiphisternum",
+        "Measure from the chin to the umbilicus",
+        "Measure from the forehead to the sternal angle",
+        "Insert a fixed 25 cm in every adult"
+      ],
+      "answer": 0,
+      "explain": "The NEX measurement (Nose to Earlobe to Xiphisternum) estimates the distance from the nares through the oesophagus into the gastric fundus.",
+      "verified": false,
+      "open": {
+        "q": "Which three anatomical landmarks are used to estimate the insertion length of a nasogastric tube?",
+        "accept": [
+          "Tip of the nose, earlobe, and xiphoid process",
+          "Nose, earlobe, xiphisternum",
+          "NEX landmarks"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-018",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Nasogastric Tube Insertion",
+      "q": "Which first-line bedside test confirms correct intragastric placement of a nasogastric tube before initiating enteral feeding?",
+      "options": [
+        "Aspirate pH of 5.5 or below using appropriate pH indicator strips",
+        "Auscultating over the epigastrium after injecting air",
+        "Observing bubbles when the tube end is placed in water",
+        "Asking the patient to speak after tube insertion"
+      ],
+      "answer": 0,
+      "explain": "Aspirate pH <= 5.5 reliably confirms gastric acid environment; the air insufflation 'whoosh test' is unreliable because sounds from a tube in the bronchus or pleural space transmit to the epigastrium.",
+      "verified": false,
+      "open": {
+        "q": "What first-line bedside test and threshold value confirm intragastric placement of a nasogastric tube?",
+        "accept": [
+          "Gastric aspirate pH less than or equal to 5.5",
+          "Aspirate pH <= 5.5",
+          "pH testing of aspirate <= 5.5"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-019",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Electrocardiography (ECG)",
+      "q": "Where is precordial chest lead V4 placed during a standard 12-lead ECG recording?",
+      "options": [
+        "Right 4th intercostal space at the sternal border",
+        "Left 4th intercostal space at the sternal border",
+        "Left 5th intercostal space in the mid-clavicular line",
+        "Left 5th intercostal space in the mid-axillary line"
+      ],
+      "answer": 2,
+      "explain": "Lead V4 is positioned in the left 5th intercostal space at the mid-clavicular line, serving as the anatomical anchor for V3 (midway between V2 and V4), V5 (anterior axillary line), and V6 (mid-axillary line).",
+      "verified": false,
+      "open": {
+        "q": "State the exact anatomical placement for precordial ECG lead V4.",
+        "accept": [
+          "Left 5th intercostal space in the mid-clavicular line",
+          "Left fifth intercostal space midclavicular line"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-020",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Electrocardiography (ECG)",
+      "q": "At the standard ECG paper speed of 25 mm/s, how much time does one large 5 mm square represent?",
+      "options": [
+        "0.04 seconds",
+        "0.10 seconds",
+        "0.50 seconds",
+        "0.20 seconds"
+      ],
+      "answer": 3,
+      "explain": "At 25 mm/s, each small 1 mm square equals 0.04 seconds (40 ms), and one large 5 mm square equals 5 x 0.04 = 0.20 seconds (200 ms), so 300 large squares equal 1 minute.",
+      "verified": false,
+      "open": {
+        "q": "At standard ECG paper speed of 25 mm/s, how many seconds are represented by one small square (1 mm) and one large square (5 mm)?",
+        "accept": [
+          "0.04 seconds for one small square and 0.20 seconds for one large square",
+          "0.04 s and 0.20 s",
+          "40 ms and 200 ms"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-021",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Chest Radiography",
+      "q": "Why is an erect posteroanterior (PA) chest radiograph preferred over an anteroposterior (AP) film when evaluating cardiomegaly?",
+      "options": [
+        "A PA view places the anterior heart closer to the detector, reducing magnification",
+        "AP films expose patients to ten times more radiation",
+        "PA films eliminate the need for adequate inspiration",
+        "AP films cannot show the costophrenic angles"
+      ],
+      "answer": 0,
+      "explain": "Because the heart sits anteriorly in the thorax, a PA projection places it against the film cassette, avoiding the artificial beam-divergence magnification seen on AP films where cardiothoracic ratio cannot be reliably measured.",
+      "verified": false,
+      "open": {
+        "q": "Why does an anteroposterior (AP) chest X-ray artificially enlarge the cardiac silhouette compared to a posteroanterior (PA) film?",
+        "accept": [
+          "The anterior heart is farther from the detector causing geometric magnification",
+          "X-ray beam divergence magnifies the anterior heart",
+          "Geometric magnification due to greater heart-to-film distance"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-022",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Urinalysis",
+      "q": "What does a positive leukocyte esterase combined with positive nitrites on a urine dipstick test strongly suggest?",
+      "options": [
+        "Uncontrolled diabetic ketoacidosis",
+        "Bacterial UTI, commonly due to nitrate-reducing Gram-negative organisms",
+        "Rhabdomyolysis with myoglobinuria",
+        "Primary nephrotic syndrome"
+      ],
+      "answer": 1,
+      "explain": "Leukocyte esterase indicates pyuria (white blood cells in urine), while nitrites reflect bacterial conversion of urinary nitrates by Gram-negative organisms such as Escherichia coli.",
+      "verified": false,
+      "open": {
+        "q": "What clinical condition is indicated by positive leukocyte esterase and nitrites on a urine dipstick?",
+        "accept": [
+          "Urinary tract infection",
+          "UTI",
+          "Bacterial urinary tract infection"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Blood Culture Technique",
+      "q": "Which aseptic step is essential before inoculating venous blood into aerobic and anaerobic blood culture bottles to prevent false-positive skin contaminant growth?",
+      "options": [
+        "Wiping the skin with dry cotton wool only",
+        "Inoculating the anaerobic bottle first using an air-filled syringe",
+        "Disinfecting the skin and bottle septa, then allowing the antiseptic to dry",
+        "Placing blood culture bottles on ice immediately after collection"
+      ],
+      "answer": 2,
+      "explain": "Allowing alcohol/chlorhexidine skin and bottle-top antisepsis to air dry ensures bactericidal contact time and prevents residual alcohol from killing fastidious pathogens in the bottle; blood cultures are kept at room temperature or incubated, never iced.",
+      "verified": false,
+      "open": {
+        "q": "Why must alcohol or chlorhexidine skin antiseptic be allowed to air dry completely before performing venepuncture for blood cultures?",
+        "accept": [
+          "To achieve full bactericidal effect and prevent alcohol from killing organisms in the culture bottle",
+          "Ensures adequate contact time for skin disinfection",
+          "Prevents skin flora contamination and bactericidal carryover"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-024",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Bone Marrow Procedures",
+      "q": "Which anatomical site is most commonly used in adults for both bone marrow aspiration and trephine biopsy?",
+      "options": [
+        "Manubrium of the sternum",
+        "Proximal tibial tuberosity",
+        "Greater trochanter of the femur",
+        "Posterior superior iliac spine (iliac crest)"
+      ],
+      "answer": 3,
+      "explain": "The posterior superior iliac spine is safe, rich in active haematopoietic marrow in adults, distant from vital mediastinal organs (unlike the sternum), and permits both aspiration and core trephine biopsy.",
+      "verified": false,
+      "open": {
+        "q": "Which anatomical site is the standard preferred location for bone marrow aspiration and trephine biopsy in adults?",
+        "accept": [
+          "Posterior superior iliac spine",
+          "Posterior iliac crest",
+          "PSIS"
+        ]
+      }
+    },
+    {
+      "id": "mi-clinical-procedures-and-investigations-025",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Point-of-Care Investigations",
+      "q": "A 68-year-old man with severe pneumonia and cold, clammy fingers has a pulse oximeter reading of 84% despite looking comfortable and having normal arterial blood gas PaO2 of 92 mmHg. What is the most likely cause of this discrepancy?",
+      "options": [
+        "Poor peripheral perfusion can weaken the pulsatile signal and impair SpO2 accuracy",
+        "A normal PaO2 always produces an SpO2 reading of 100%",
+        "Pulse oximeters measure dissolved oxygen rather than haemoglobin saturation",
+        "Cold fingers increase the proportion of carboxyhaemoglobin"
+      ],
+      "answer": 0,
+      "explain": "Pulse oximetry relies on pulsatile arterial blood flow in the fingertip; cold extremities, hypotension, or peripheral vasoconstriction impair signal detection and yield falsely low SpO2 readings despite normal arterial oxygenation.",
+      "verified": false,
+      "open": {
+        "q": "Name two common clinical factors that cause a pulse oximeter to display a falsely low SpO2 reading despite normal arterial PaO2.",
+        "accept": [
+          "Cold extremities and poor peripheral perfusion",
+          "Peripheral vasoconstriction and nail polish",
+          "Hypotension and poor digital blood flow"
+        ]
+      }
+    }
+  ]
 }
