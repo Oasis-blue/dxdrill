@@ -15,8 +15,9 @@ Use this prompt for gross anatomy specimens and models, anatomical or physiology
 
 1. Attach 5–10 actual image files and provide the topic ID, source/licence information, what each image shows, and the meaning of any markers.
 2. Generate one intake JSON object using the schema below.
-3. Check every image, label, answer, distractor and explanation.
-4. Do not import until a reviewer confirms that every referenced image exists in the repository, loads successfully, has acceptable attribution, and has been anatomically/clinically checked.
+3. Open `visual-checker.html` on the deployed DxDrill site, paste the JSON, select the corresponding local images for preview, and run the browser check. Fix every reported error.
+4. Check every image, label, answer, distractor and explanation yourself. The browser checker cannot establish clinical correctness, consent or licence truth.
+5. Upload the actual images to the declared `data/img/` folders, then run the repository validator and importer described in `docs/visual-practical-import-contract.md`. Do not import until the repository-side image decode check passes and a reviewer has approved the content.
 
 ---
 

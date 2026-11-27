@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Visual intake checker · DxDrill</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+textarea{width:100%;min-height:260px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;padding:12px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg)}
+.msg{padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:var(--surface);overflow-wrap:anywhere}
+.msg.err{border-color:var(--bad);color:var(--bad)}.msg.warn{border-color:var(--warn);color:var(--warn)}.msg.ok{border-color:var(--good);color:var(--good)}
+.asset{display:grid;grid-template-columns:minmax(110px,180px) 1fr;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.asset img{width:100%;max-height:150px;object-fit:contain;border-radius:8px;background:var(--surface2)}
+.asset .placeholder{min-height:90px;display:grid;place-items:center;color:var(--muted);background:var(--surface2);border-radius:8px;text-align:center}
+small,.muted{color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}
+@media(max-width:520px){.asset{grid-template-columns:1fr}.asset img{max-height:220px}}
+</style>
+</head>
+<body>
+<main class="gutter"><div class="wrap stack" style="padding:24px 0 48px">
+<header><p class="eyebrow">DxDrill tools</p><h1>Visual intake checker</h1>
+<p class="lede">Check an AI-generated visual-practical intake before it is imported. This page checks curriculum IDs, question structure, image paths, attribution, licences, markers and duplicate IDs, and previews images you select from your device.</p>
+<p><a href="docs/gross-clinical-prompt.md">Open the visual-question prompt</a> · <a href="checker.html">Ordinary question checker</a></p></header>
+<section class="section stack">
+<div class="field"><label class="label" for="inp">Paste the complete intake JSON</label><textarea id="inp" spellcheck="false" placeholder='{ "schemaVersion": 1, "topic": "gr-upper-limb", "assets": [ ... ] }'></textarea></div>
+<div class="field"><label class="label" for="images">Select the actual image files (optional for a first JSON check)</label><input id="images" type="file" accept="image/*" multiple><small>Choose the same files named in each asset's file field. This creates local previews only; it does not upload them to GitHub.</small></div>
+<div class="actions"><button class="btn primary" id="check" type="button">Check intake</button><button class="btn ghost" id="clear" type="button">Clear</button></div>
+<div id="status" aria-live="polite"></div>
+</section>
+<section id="report" class="stack" aria-live="polite"></section>
+</div></main>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id);};
+  var state={topics:{},ids:{},images:[]}, last=null;
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+  function norm(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();}
+  function get(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u+" ("+r.status+")");return r.json();});}
+  var ready=get("data/curriculum.json").then(function(cur){
+    (cur.subjects||[]).forEach(function(s){(s.areas||[]).forEach(function(a){(a.topics||[]).forEach(function(t){state.topics[t.id]=t.name;});});});
+    return Promise.all([get("data/manifest.json"),get("data/visual-assets.json").catch(function(){return {assets:[]};}),get("data/visual-stations.json").catch(function(){return {stations:[]};})]);
+  }).then(function(all){
+    var manifest=all[0], assets=all[1].assets||[], stations=all[2].stations||[];
+    assets.concat(stations).forEach(function(x){if(x&&x.id)state.ids[x.id]=1;});
+    return Promise.all((manifest.questions||[]).map(function(f){return get("data/questions/"+f+".json").then(function(d){(d.questions||[]).forEach(function(q){if(q&&q.id)state.ids[q.id]=1;});}).catch(function(){});}));
+  });
+  function parse(raw){
+    var t=raw.trim().replace(/^```[a-z]*\s*/i,"").replace(/```\s*$/,"");
+    var a=t.indexOf("{"),b=t.lastIndexOf("}");
+    if(a<0||b<0)throw new Error("Paste one complete JSON object.");
+    t=t.slice(a,b+1).replace(/[“”]/g,'"').replace(/,\s*([}\]])/g,"$1");
+    return JSON.parse(t);
+  }
+  function check(obj){
+    var errors=[],warnings=[],quarantine=[],seen={};
+    function err(where,msg){errors.push(where+": "+msg);}
+    function claim(id,where){
+      if(typeof id!=="string"||! /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)){err(where,"ID must be lowercase kebab-case.");return;}
+      if(seen[id]||state.ids[id])err(where,"Duplicate ID: "+id);seen[id]=1;
+    }
+    if(!obj||typeof obj!=="object"||Array.isArray(obj)){err("$","Intake must be an object.");return {errors:errors,warnings:warnings,quarantine:quarantine};}
+    if(obj.schemaVersion!==1)err("schemaVersion","Must be numeric 1.");
+    if(!state.topics[obj.topic])err("topic","Not an exact curriculum topic ID. Check data/curriculum.json.");
+    if(!Array.isArray(obj.assets)||!obj.assets.length)err("assets","Add at least one image asset.");
+    (obj.assets||[]).forEach(function(a,i){
+      var p="assets["+i+"]";
+      if(!a||typeof a!=="object"){err(p,"Asset must be an object.");return;}
+      claim(a.id,p+".id");claim(a.station&&a.station.id,p+".station.id");
+      if(["specimen","model","diagram","xray","clinical-sign"].indexOf(a.kind)<0)err(p+".kind","Use specimen, model, diagram, xray or clinical-sign.");
+      if(!String(a.alt||"").trim())err(p+".alt","Add useful alt text.");
+      if(!String(a.credit||"").trim())err(p+".credit","Add a truthful visible credit.");
+      var lic=String(a.licence||"").trim(), own=/^own original (photograph|image|drawing)$/i.test(lic);
+      if(!(/^(own original (photograph|image|drawing)|public domain(?: .*)?|cc0(?: 1\.0)?|cc by(?:-sa)?(?: [0-9.]+)?|creative commons attribution(?:-sharealike)?(?: [0-9.]+)?)$/i.test(lic)))err(p+".licence","Use an explicit reusable licence: own original, public domain, CC0, CC BY or CC BY-SA.");
+      if(!own&& !/^https?:\/\/\S+$/i.test(String(a.sourceUrl||"")))err(p+".sourceUrl","A third-party image needs its source URL.");
+      var file=String(a.file||""),parts=file.split("/");
+      if(parts.length!==2||["gross","diagrams","clinical","xray"].indexOf(parts[0])<0||! /^[A-Za-z0-9][A-Za-z0-9._'-]*\.(jpg|jpeg|png|gif|webp)$/i.test(parts[1])||parts[1].indexOf("..")>=0)err(p+".file","Use a safe path like gross/specimen-01.jpg under an approved data/img folder.");
+      if(localFiles[parts[1]])warnings.push(p+".file: more than one asset uses the same filename.");
+      if(a.marks===null||typeof a.marks!=="object"||Array.isArray(a.marks))err(p+".marks","Use an object, even if empty.");
+      else Object.keys(a.marks).forEach(function(k){if(!/^[A-Z0-9]$/.test(k)||!String(a.marks[k]||"").trim())err(p+".marks."+k,"Marker needs one visible letter/number and a proposed structure.");});
+      if(a.unsure===true||String(a.check||"").trim())quarantine.push(p+": "+(a.check||"Asset is marked unsure."));
+      if(!a.station||typeof a.station!=="object")err(p+".station","Station details are required.");
+      else{if(!String(a.station.title||"").trim())err(p+".station.title","Add a station title.");if(a.station.seconds!==undefined&&(!Number.isInteger(a.station.seconds)||a.station.seconds<5||a.station.seconds>600))err(p+".station.seconds","Use an integer from 5 to 600 seconds.");}
+      if(!Array.isArray(a.questions)||!a.questions.length)err(p+".questions","Add at least one question.");
+      var qids={};
+      (a.questions||[]).forEach(function(q,j){
+        var qp=p+".questions["+j+"]";if(!q||typeof q!=="object"){err(qp,"Question must be an object.");return;}
+        claim(q.id,qp+".id");if(qids[q.id])err(qp+".id","Duplicate question ID in this station.");qids[q.id]=1;
+        if(!String(q.q||"").trim())err(qp+".q","Question stem is required.");
+        if(!Number.isInteger(q.level)||q.level<1||q.level>3)err(qp+".level","Use level 1, 2 or 3.");
+        if(q.sub!==undefined&&!String(q.sub||"").trim())err(qp+".sub","Section name cannot be empty.");
+        if(!Array.isArray(q.options)||q.options.length!==4||!q.options.every(function(x){return typeof x==="string"&&x.trim();}))err(qp+".options","Exactly four non-empty options are required.");
+        if(!Number.isInteger(q.answer)||q.answer<0||q.answer>3)err(qp+".answer","Use a zero-based answer index from 0 to 3.");
+        if(!String(q.explain||"").trim())err(qp+".explain","Add a teaching explanation.");
+        if(q.unsure===true||String(q.check||"").trim())quarantine.push(qp+": "+(q.check||"Question is marked unsure."));
+        var refs=String(q.q||"").matchAll(/(?:marked|labelled|labeled|marker|arrow)\s+([A-Z0-9])\b/gi);
+        for(var m of refs){var label=m[1].toUpperCase();if(!a.marks||!Object.prototype.hasOwnProperty.call(a.marks,label))err(qp+".q","Refers to marker "+label+" not defined in asset.marks.");}
+      });
+    });
+    return {errors:errors,warnings:warnings,quarantine:quarantine};
+  }
+  function render(obj,result){
+    var files=$("images").files, chosen={};Array.prototype.forEach.call(files,function(f){chosen[f.name]=f;});
+    var cards=(obj.assets||[]).map(function(a,i){
+      var base=String(a.file||"").split("/").pop(),f=chosen[base],src=f?URL.createObjectURL(f):"";
+      return '<article class="asset">'+(src?'<img src="'+src+'" alt="Local preview for '+esc(base)+'">':'<div class="placeholder">No local preview selected<br><small>'+esc(base)+'</small></div>')+
+      '<div><b>'+esc(a.station&&a.station.title||a.id||("Asset "+(i+1)))+'</b><p class="muted">'+esc(a.file||"No file path")+'</p><p>'+((a.questions||[]).length)+' question(s) · '+esc(a.kind||"")+'</p>'+(f?'<p class="msg ok">Local image selected · '+Math.round(f.size/1024)+' KB</p>':'<p class="msg warn">Select this image above to preview it. The repository validator will check the uploaded file during import.</p>')+'</div></article>';
+    }).join("");
+    var messages=result.errors.map(function(x){return '<div class="msg err">'+esc(x)+'</div>';}).join("")+
+      result.warnings.map(function(x){return '<div class="msg warn">'+esc(x)+'</div>';}).join("")+
+      result.quarantine.map(function(x){return '<div class="msg warn">Quarantined: '+esc(x)+'</div>';}).join("");
+    var ok=!result.errors.length&&!result.quarantine.length;
+    $("report").innerHTML='<section class="section stack"><h2>Validation report</h2><p class="msg '+(ok?"ok":"err")+'">'+(ok?"No structural errors found. Human review and repository-side image validation are still required.":result.errors.length+" error(s), "+result.quarantine.length+" item(s) quarantined.")+'</p>'+messages+
+      '<p>'+assetList.length+' asset(s) · '+assetList.reduce(function(n,a){return n+((a&&Array.isArray(a.questions))?a.questions.length:0);},0)+' question(s)</p><h2>Image previews</h2>'+cards+
+      (ok?'<div class="actions"><button class="btn primary" id="download" type="button">Download checked intake JSON</button></div>':"")+
+      '<p class="muted">This browser checker does not upload images or edit the question bank. After downloading, upload the images to their declared data/img folders and run the repository validator/importer. Do not import uncertain or unreviewed content.</p></section>';
+    if(ok)$("download").onclick=function(){var blob=new Blob([JSON.stringify(obj,null,2)+"\n"],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="visual-intake-"+obj.topic+".json";a.click();URL.revokeObjectURL(url);};
+  }
+  $("check").onclick=function(){
+    $("status").innerHTML="";$("report").innerHTML="";
+    ready.then(function(){
+      var obj=parse($("inp").value),result=check(obj);last=obj;
+      $("status").innerHTML='<p class="msg ok">Curriculum and existing IDs loaded.</p>';render(obj,result);
+    }).catch(function(e){$("status").innerHTML='<p class="msg err">'+esc(e.message)+'</p>';});
+  };
+  $("clear").onclick=function(){$("inp").value="";$("report").innerHTML="";$("status").innerHTML="";};
+  $("images").addEventListener("change",function(){if(last){var result=check(last);render(last,result);}});
+  ready.catch(function(e){$("status").innerHTML='<p class="msg err">Could not load repository data: '+esc(e.message)+'. Open this page from the deployed DxDrill site.</p>';});
+})();
+</script>
+</body>
+</html>
