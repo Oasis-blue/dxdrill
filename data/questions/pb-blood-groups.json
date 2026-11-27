@@ -30,6 +30,54 @@
       ],
       "answer": 0,
       "explain": "Anti-D immunoglobulin binds fetal RhD-positive erythrocytes that enter the maternal circulation, promoting their clearance before the mother mounts an active anti-D immune response. It prevents sensitisation and reduces the risk of haemolytic disease in a future RhD-positive pregnancy."
+    },
+    {
+      "id": "pb-blood-groups-003",
+      "type": "mcq",
+      "level": 2,
+      "sub": "ABO inheritance",
+      "q": "Two parents are both heterozygous for blood group A (Iᴬi). What is the probability that their child will have blood group O?",
+      "options": [
+        "0%",
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "answer": 1,
+      "explain": "The possible genotypes are IᴬIᴬ, Iᴬi, Iᴬi and ii; therefore one quarter of offspring are expected to have group O.",
+      "verified": false
+    },
+    {
+      "id": "pb-blood-groups-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transfusion reactions",
+      "q": "A patient develops fever, flank pain, hypotension and haemoglobinuria shortly after an incompatible red-cell transfusion. Which mechanism best explains this acute reaction?",
+      "options": [
+        "Recipient antibodies activate complement on donor red cells",
+        "Donor T cells attack recipient tissues",
+        "IgE-mediated mast-cell degranulation",
+        "Delayed suppression of erythropoiesis"
+      ],
+      "answer": 0,
+      "explain": "Preformed recipient antibodies, especially ABO antibodies, bind incompatible donor erythrocytes and activate complement, causing rapid intravascular haemolysis.",
+      "verified": false
+    },
+    {
+      "id": "pb-blood-groups-005",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Blood group antigens",
+      "q": "Which statement about the ABO blood group system is correct?",
+      "options": [
+        "AB individuals normally have both anti-A and anti-B antibodies",
+        "O red cells lack A and B antigens on their surface",
+        "A and B antigens are proteins encoded by the HLA locus",
+        "Anti-A and anti-B antibodies are always IgG"
+      ],
+      "answer": 1,
+      "explain": "Group O erythrocytes lack A and B transferase-modified antigens and retain H substance. Naturally occurring anti-A and/or anti-B antibodies are usually predominantly IgM.",
+      "verified": false
     }
   ]
 }
