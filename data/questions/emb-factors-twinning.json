@@ -79,10 +79,10 @@
    "sub": "Genetic and Chromosomal Factors",
    "q": "What is the single most common viable chromosomal aneuploidy in live-born infants, and what meiotic error causes approximately 95% of cases?",
    "options": [
-    "Trisomy 21 (Down syndrome) caused by maternal meiotic nondisjunction (primarily in meiosis I)",
-    "Monosomy X (Turner syndrome) caused by paternal Robertsonian translocation",
-    "Trisomy 18 (Edwards syndrome) caused by somatic mosaicism",
-    "47,XXY (Klinefelter syndrome) caused by pericentric inversion"
+    "Trisomy 21 due most often to maternal meiotic nondisjunction",
+    "Monosomy X due to a Robertsonian translocation",
+    "Trisomy 18 due to postzygotic mosaicism",
+    "47,XXY due to a pericentric inversion"
    ],
    "answer": 0,
    "explain": "Trisomy 21 (Down syndrome) is the most common autosomal trisomy compatible with survival to term; ~95% of cases result from meiotic nondisjunction (overwhelmingly maternal meiosis I), ~4% from Robertsonian translocation (such as t(14;21)), and ~1% from postzygotic mitotic mosaicism.",
@@ -196,13 +196,13 @@
    "sub": "Principles of Teratology (Wilson's Principles)",
    "q": "What is the conceptual distinction between a 'malformation', a 'deformation', and a 'disruption' in developmental pathology?",
    "options": [
-    "Intrinsic developmental error; mechanical deformation; or destruction of previously normal tissue",
-    "Malformation occurs only after birth; deformation is always chromosomal; disruption is inherited Mendelian",
-    "Malformation is caused by amniotic bands; deformation is caused by thalidomide; disruption is caused by trisomy",
-    "All three terms are exact synonyms for single-gene disorders"
+    "Intrinsic developmental error; mechanical alteration; destruction of formed tissue",
+    "Chromosomal error; single-gene disorder; multifactorial inheritance",
+    "Postnatal defect; fetal infection; maternal endocrine disorder",
+    "Vascular defect; neural tube defect; failure of organ migration"
    ],
    "answer": 0,
-   "explain": "A malformation arises from an intrinsically abnormal developmental process (e.g., neural tube defect); a deformation results from abnormal mechanical forces on a normal fetus (e.g., clubfoot from oligohydramnios); and a disruption results from vascular or mechanical destruction of an already normally formed organ (e.g., amniotic band limb amputation). Key distinction: Malformation is an intrinsic developmental error during organogenesis; deformation is mechanical molding of a normal structure; disruption is extrinsic breakdown of a previously normal structure.",
+   "explain": "A malformation results from an intrinsically abnormal developmental process. A deformation is an alteration in the shape or position of a normally formed structure due to mechanical forces. A disruption is the breakdown of tissue that initially developed normally, often from vascular or mechanical injury.",
    "verified": false,
    "open": {
     "q": "Distinguish a congenital deformation from a congenital disruption.",
@@ -452,12 +452,12 @@
    "q": "Which class of antihypertensive drugs is strictly contraindicated throughout pregnancy because it causes fetal renal tubular dysgenesis, oligohydramnios, pulmonary hypoplasia, and skull hypocalvaria?",
    "options": [
     "ACE inhibitors and angiotensin II receptor blockers (ARBs)",
-    "Labetalol",
-    "Nifedipine",
-    "Methyldopa"
+    "Labetalol and methyldopa",
+    "Nifedipine and hydralazine",
+    "Atenolol and labetalol"
    ],
    "answer": 0,
-   "explain": "ACE inhibitors and ARBs block fetal angiotensin II signaling required for normal renal perfusion and nephron development, leading to fetal anuria, severe oligohydramnios, Potter sequence, and hypocalvaria.",
+   "explain": "ACE inhibitors and ARBs are contraindicated in pregnancy because fetal renin–angiotensin system blockade can cause fetal renal dysfunction, oligohydramnios, pulmonary hypoplasia and related complications, particularly with later-pregnancy exposure.",
    "verified": false,
    "open": {
     "q": "Which class of renin-angiotensin system antihypertensives causes fetal renal dysgenesis, oligohydramnios, and skull hypocalvaria?",
@@ -522,10 +522,10 @@
    "sub": "Twinning and Multiple Gestations",
    "q": "How do dizygotic (fraternal) twins originate compared with monozygotic (identical) twins?",
    "options": [
-    "Dizygotic twins arise from two fertilised ova; monozygotic twins arise from one zygote that splits",
-    "Dizygotic twins arise from one inner cell mass; monozygotic twins from two ova",
-    "Dizygotic twins are always monochorionic; monozygotic twins are always dichorionic",
-    "Dizygotic twins share all genes; monozygotic twins share half"
+    "Two separate ova fertilized by two sperm; one zygote that divides into two embryos",
+    "One ovum fertilized by two sperm; two ova fertilized by one sperm",
+    "One inner cell mass divided after implantation; two separate ova",
+    "Two ova fertilized by one sperm; one zygote divided after implantation"
    ],
    "answer": 0,
    "explain": "Dizygotic twins result from double ovulation and fertilization of two oocytes by two sperm; they share ~50% of genes like ordinary siblings and ALWAYS have dichorionic, diamniotic placentas/membranes (though placentas may fuse secondarily).",
@@ -640,13 +640,13 @@
    "sub": "Twinning and Multiple Gestations",
    "q": "A 27-year-old woman with a monochorionic, diamniotic twin pregnancy undergoes ultrasound at 22 weeks showing one fetus with severe oligohydramnios ('stuck twin') and growth restriction, while the co-twin has severe polyhydramnios, cardiomegaly, and hydrops. What vascular mechanism explains twin-to-twin transfusion syndrome (TTTS)?",
    "options": [
-    "Unbalanced placental arteriovenous shunts transfer blood from donor to recipient twin",
-    "Umbilical cord knotting in a monoamniotic sac",
-    "Rh isoimmunisation against only the donor twin",
+    "Unbalanced placental arteriovenous anastomoses",
+    "Umbilical cord knotting in a shared amniotic sac",
+    "Maternal antibodies directed against donor fetal erythrocytes",
     "Superfetation from separate menstrual cycles"
    ],
    "answer": 0,
-   "explain": "Monochorionic placentas nearly always contain vascular anastomoses; unbalanced deep artery-to-vein shunts cause chronic hypovolemia, renal hypoperfusion, and oligohydramnios in the donor twin, and hypervolemia, polyuria, polyhydramnios, and cardiac overload in the recipient twin.",
+   "explain": "Monochorionic placentas contain vascular anastomoses. Unbalanced deep artery-to-vein shunts cause chronic hypovolemia, renal hypoperfusion and oligohydramnios in the donor twin, and hypervolemia, polyuria, polyhydramnios and cardiac overload in the recipient twin.",
    "verified": false,
    "open": {
     "q": "Which type of placentation is a prerequisite for twin-to-twin transfusion syndrome (TTTS)?",
@@ -664,10 +664,10 @@
    "sub": "Prenatal Diagnosis and Screening",
    "q": "Elevated maternal serum alpha-fetoprotein (MSAFP) during the second trimester (16–18 weeks) is classically associated with which two major categories of open fetal defects?",
    "options": [
-    "Open neural-tube defects and ventral abdominal-wall defects",
+    "Open neural-tube defects and open ventral abdominal-wall defects",
     "Trisomy 21 and trisomy 18",
-    "Cystic fibrosis and sickle-cell disease",
-    "Congenital hypothyroidism and phenylketonuria"
+    "Single-gene disorders such as cystic fibrosis and sickle-cell disease",
+    "Congenital hypothyroidism and maternal phenylketonuria"
    ],
    "answer": 0,
    "explain": "Alpha-fetoprotein synthesized by the fetal yolk sac and liver leaks directly into amniotic fluid (and across membranes into maternal blood) when fetal skin continuity is disrupted by open neural tube defects or ventral body wall defects; by contrast, MSAFP is typically low in trisomy 21 and trisomy 18.",
@@ -688,10 +688,10 @@
    "sub": "Prenatal Diagnosis and Screening",
    "q": "What is the key diagnostic difference between chorionic villus sampling (CVS, performed at 10–13 weeks) and amniocentesis (performed at 15–20 weeks)?",
    "options": [
-    "CVS permits earlier genetic testing but not amniotic-fluid AFP assessment",
-    "Amniocentesis cannot obtain fetal cells for karyotyping",
-    "CVS samples fetal blood directly from the umbilical vein",
-    "Amniocentesis is routinely performed at six weeks"
+    "CVS allows earlier genetic testing but does not provide amniotic-fluid AFP assessment",
+    "CVS is performed later and provides fetal lung-maturity testing",
+    "Amniocentesis samples placental villi directly for early karyotyping",
+    "Amniocentesis cannot provide fetal cells for chromosomal analysis"
    ],
    "answer": 0,
    "explain": "CVS aspirates placental villous tissue at 10–13 weeks for rapid genetic analysis, whereas amniocentesis samples amniotic fluid and desquamated fetal amniocytes at 15–20 weeks, permitting both chromosomal testing and AFP/acetylcholinesterase measurement.",

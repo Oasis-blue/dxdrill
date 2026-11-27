@@ -154,14 +154,14 @@
    "sub": "Sperm and capacitation",
    "q": "Capacitation of sperm involves:",
    "options": [
-    "Removal of surface glycoproteins and seminal proteins over the acrosome",
-    "Release of acrosomal enzymes",
-    "Fusion of sperm and oocyte membranes",
-    "Completion of meiosis II",
-    "Formation of male pronucleus"
+    "Removal of surface proteins and cholesterol from the sperm membrane",
+    "Release of acrosomal enzymes before zona binding",
+    "Fusion of sperm and oocyte plasma membranes",
+    "Completion of meiotic divisions by the sperm",
+    "Formation of the male pronucleus"
    ],
    "answer": 0,
-   "explain": "Capacitation takes place in the female genital tract (about 7 hours). It makes sperm able to undergo the acrosome reaction and more vigorously motile, but no enzyme is released until the sperm binds the zona pellucida.",
+   "explain": "Capacitation occurs in the female reproductive tract. It involves removal of seminal-plasma glycoproteins and membrane cholesterol from the sperm head, increasing membrane fluidity and enabling the acrosome reaction and hyperactivated motility.",
    "verified": false,
    "open": {
     "q": "What happens to the sperm during capacitation?",
@@ -178,16 +178,16 @@
    "type": "mcq",
    "level": 2,
    "sub": "Sperm and capacitation",
-   "q": "The acrosome reaction is induced when the sperm binds to:",
+   "q": "Binding of a capacitated spermatozoon to glycoproteins of which oocyte covering helps trigger the acrosome reaction?",
    "options": [
-    "ZP3 of the zona pellucida",
-    "Cortical granules",
-    "The nuclei of corona radiata cells",
-    "Oestrogen in tubal fluid",
-    "hCG"
+    "Zona pellucida",
+    "Corona radiata",
+    "Oocyte plasma membrane",
+    "Cortical granule membrane",
+    "Cumulus cell basement membrane"
    ],
    "answer": 0,
-   "explain": "ZP3 is the zona glycoprotein that acts as the sperm receptor and triggers release of the acrosomal enzymes.",
+   "explain": "Sperm interaction with zona pellucida glycoproteins triggers the acrosome reaction, allowing release of enzymes that help the sperm traverse the zona. The precise receptor interactions are species-dependent; avoiding an exclusive ZP3 claim is more accurate for a general human embryology question.",
    "verified": false,
    "open": {
     "q": "The acrosome reaction is induced when the sperm binds to which structure?",
@@ -205,10 +205,10 @@
    "sub": "Sperm and capacitation",
    "q": "Which enzymes mainly allow the sperm to digest a path through the zona pellucida?",
    "options": [
-    "Acrosin and trypsin-like enzymes",
-    "Amylase",
-    "Pepsin",
-    "Lipase"
+    "Acrosin and other zona-lytic proteases",
+    "Amylase and maltase",
+    "Pepsin and gastric lipase",
+    "Hyaluronidase alone"
    ],
    "answer": 0,
    "explain": "Hyaluronidase helps the sperm pass through the corona radiata, while acrosin and trypsin-like enzymes lyse the zona. The sperm's tail movement drives it forward.",
@@ -305,10 +305,10 @@
    "sub": "Fertilization",
    "q": "Which sequence of events is correct?",
    "options": [
-    "Capacitation → corona radiata penetration → ZP3 binding → acrosome reaction → zona penetration → membrane fusion → cortical reaction",
-    "ZP3 binding → capacitation → acrosome reaction → corona radiata penetration → membrane fusion → zona penetration",
-    "Acrosome reaction → capacitation → ZP3 binding → zona penetration → cortical reaction → membrane fusion",
-    "Capacitation → membrane fusion → ZP3 binding → acrosome reaction → cortical reaction → zona penetration"
+    "Capacitation → corona radiata penetration → zona binding → acrosome reaction → zona penetration → membrane fusion → cortical reaction",
+    "Corona radiata penetration → acrosome reaction → capacitation → zona penetration → membrane fusion → cortical reaction",
+    "Capacitation → zona penetration → zona binding → cortical reaction → acrosome reaction → membrane fusion",
+    "Capacitation → membrane fusion → zona binding → acrosome reaction → zona penetration → cortical reaction"
    ],
    "answer": 0,
    "explain": "Capacitation comes first, then the sperm crosses the corona, binds ZP3 and undergoes the acrosome reaction, digests through the zona, and fuses with the oocyte membrane. Fusion triggers the cortical reaction.",
@@ -397,10 +397,10 @@
    "sub": "Fertilization",
    "q": "Just before they come together, each pronucleus contains:",
    "options": [
-    "23 chromosomes (haploid)",
-    "46 chromosomes",
+    "23 chromosomes, in a haploid set",
+    "46 chromosomes, in a diploid set",
     "23 pairs of chromosomes",
-    "92 chromosomes"
+    "92 chromosomes, after DNA replication"
    ],
    "answer": 0,
    "explain": "The male and female pronuclei are each haploid. DNA replicates during the pronuclear stage, and the parental chromosomes mix on the spindle of the first cleavage division, restoring the diploid number (46).",
@@ -464,11 +464,11 @@
    "sub": "Fertilization",
    "q": "Fertilization of one oocyte by two sperm (dispermy) typically gives:",
    "options": [
-    "A triploid (69) zygote",
-    "A tetraploid (92) zygote",
-    "Trisomy 21",
-    "Monosomy X",
-    "Monozygotic twins"
+    "A triploid zygote with 69 chromosomes",
+    "A tetraploid zygote with 92 chromosomes",
+    "A diploid zygote with trisomy 21",
+    "A haploid zygote with 23 chromosomes",
+    "A diploid zygote with monosomy X"
    ],
    "answer": 0,
    "explain": "Dispermy produces 69 chromosomes (for example 69,XXY). It usually ends as a partial hydatidiform mole or an early miscarriage.",
@@ -490,8 +490,8 @@
    "sub": "Primordial Germ Cells",
    "q": "Where do human primordial germ cells (PGCs) first become identifiable during the third week of embryonic development?",
    "options": [
-    "Wall of the yolk sac near the allantois",
-    "Cortical cords of the developing ovary",
+    "Yolk-sac wall near the allantois",
+    "Developing ovarian cortical cords",
     "Mesonephric ridge",
     "Trophoblast shell"
    ],
@@ -608,10 +608,10 @@
    "sub": "Oogenesis",
    "q": "Why does the risk of fetal chromosomal nondisjunction (such as trisomy 21) rise markedly with advanced maternal age?",
    "options": [
-    "Age-related cohesin loss in primary oocytes arrested in prophase I",
-    "Oogonia divide rapidly throughout adult life",
-    "Spermatogonia stop dividing at 35",
-    "Zona pellucida prevents polar-body extrusion"
+    "Progressive loss of cohesin in primary oocytes arrested in prophase I",
+    "Rapid mitotic division of oogonia throughout adult life",
+    "Arrest of spermatogonia after the age of 35",
+    "Failure of the zona pellucida to permit polar-body extrusion"
    ],
    "answer": 0,
    "explain": "Because female primary oocytes are formed before birth and remain suspended in diplotene of prophase I for 12 to 50 years, progressive loss of meiotic cohesin proteins increases chromosome missegregation during meiosis I.",
@@ -773,13 +773,13 @@
    "sub": "Ovarian and Endometrial Cycles",
    "q": "If fertilization does NOT occur, approximately how many days after ovulation does the corpus luteum of menstruation degenerate into the fibrous corpus albicans?",
    "options": [
-    "About 9–14 days (around days 26–28 of a 28-day cycle)",
-    "2 days",
-    "21 days",
-    "90 days"
+    "About 12–14 days after ovulation",
+    "About 2 days after ovulation",
+    "About 21 days after ovulation",
+    "About 90 days after ovulation"
    ],
    "answer": 0,
-   "explain": "In the absence of human chorionic gonadotropin (hCG) from a syncytiotrophoblast, the corpus luteum reaches peak activity ~9 days post-ovulation and undergoes luteolysis by days 12-14 post-ovulation, causing progesterone levels to drop and menstruation to begin.",
+   "explain": "Without hCG support, the corpus luteum regresses approximately 12–14 days after ovulation. Progesterone falls and menstruation follows.",
    "verified": false,
    "open": {
     "q": "Into what white fibrous scar does the corpus luteum involute when fertilization fails to occur?",
@@ -843,9 +843,9 @@
    "sub": "Fertilization",
    "q": "What occurs during sperm capacitation in the female genital tract prior to the acrosome reaction?",
    "options": [
-    "Removal of glycoproteins and cholesterol over the acrosome",
-    "Meiosis of the sperm nucleus",
-    "Fusion of pronuclei",
+    "Removal of seminal-plasma proteins and cholesterol from the sperm membrane",
+    "Completion of meiosis by the sperm nucleus",
+    "Fusion of male and female pronuclei",
     "Loss of the sperm flagellum"
    ],
    "answer": 0,
@@ -865,15 +865,15 @@
    "type": "mcq",
    "level": 2,
    "sub": "Fertilization",
-   "q": "Binding of a capacitated spermatozoon to which specific glycoprotein in the zona pellucida triggers the acrosome reaction?",
+   "q": "Binding of a capacitated spermatozoon to which oocyte covering helps trigger the acrosome reaction?",
    "options": [
-    "ZP3",
-    "Integrin alpha-6",
-    "E-cadherin",
-    "Laminin"
+    "Zona pellucida",
+    "Oocyte plasma membrane",
+    "Cumulus cell basement membrane",
+    "Oocyte cortical granules"
    ],
    "answer": 0,
-   "explain": "The zona pellucida contains ZP1, ZP2, ZP3, and ZP4; binding of sperm surface receptors to ZP3 induces a calcium influx that triggers exocytosis of acrosomal enzymes (hyaluronidase and acrosin).",
+   "explain": "Interaction between capacitated sperm and zona pellucida glycoproteins contributes to the acrosome reaction and enables zona penetration. The exact sperm-binding interactions vary by species and are more complex than a single universal ZP3 receptor model.",
    "verified": false,
    "open": {
     "q": "Which specific zona pellucida glycoprotein binds capacitated spermatozoa to induce the acrosome reaction?",
@@ -912,13 +912,13 @@
    "sub": "Fertilization",
    "q": "How is polyspermy permanently prevented (the slow block to polyspermy) immediately after a single spermatozoon fuses with the oocyte plasma membrane?",
    "options": [
-    "Cortical granules modify ZP proteins, preventing polyspermy",
-    "Corona radiata cells seal the entry site",
-    "The first polar body blocks entry",
+    "Cortical granule release modifies zona pellucida proteins",
+    "Corona radiata cells seal the sperm entry site",
+    "The first polar body blocks sperm receptors",
     "The corpus luteum stops progesterone secretion"
    ],
    "answer": 0,
-   "explain": "Sperm-oocyte membrane fusion triggers an intracellular calcium wave that causes cortical granules beneath the oolemma to exocytose enzymes (the cortical and zona reactions), cleaving ZP2 and inactivating ZP3 so no additional sperm can bind or penetrate.",
+   "explain": "Sperm–oocyte membrane fusion triggers a calcium wave and exocytosis of cortical granules. Their enzymes modify zona pellucida proteins (including cleavage of ZP2), preventing additional sperm from binding or penetrating.",
    "verified": false,
    "open": {
     "q": "Name the calcium-triggered exocytosis of oocyte peripheral granules that modifies the zona pellucida to prevent polyspermy.",
@@ -937,9 +937,9 @@
    "q": "Which three major biological outcomes result directly from fertilization?",
    "options": [
     "Restores diploidy, determines chromosomal sex and initiates cleavage",
-    "Completes gastrulation and neural tube closure",
-    "Forms primordial germ cells and organs",
-    "Triggers menstruation and ovulation"
+    "Completes gastrulation, neurulation and organogenesis",
+    "Forms primordial germ cells and the major organ systems",
+    "Triggers ovulation, menstruation and implantation"
    ],
    "answer": 0,
    "explain": "Fertilization restores the diploid number of chromosomes (23 maternal + 23 paternal = 46), determines chromosomal sex (XX or XY based on the fertilizing sperm), and activates the zygote to begin mitotic cleavage.",
@@ -1027,10 +1027,10 @@
    "sub": "Cleavage and Blastocyst Formation",
    "q": "Why must the blastocyst shed ('hatch' from) the zona pellucida around day 5 before implantation can occur?",
    "options": [
-    "Hatching exposes trophoblast adhesion molecules needed for implantation",
-    "It blocks oxygen diffusion to the inner cell mass",
-    "It secretes progesterone",
-    "It triggers maternal immune rejection"
+    "It exposes trophoblast cells so they can attach to the endometrium",
+    "It allows the embryo to obtain nutrients from yolk",
+    "It triggers secretion of progesterone by the corpus luteum",
+    "It initiates formation of the primitive streak"
    ],
    "answer": 0,
    "explain": "While intact during tubal transit, the non-adhesive zona pellucida prevents the conceptus from implanting in the uterine tube; around day 5 in the uterine cavity, zona hatching exposes trophoblast integrins and L-selectin ligands required for endometrial attachment.",
