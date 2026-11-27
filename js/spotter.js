@@ -40,7 +40,7 @@
     var n = Math.min(S.n, avail);
     return '<div class="wrap stack"><header><p class="eyebrow">Spotter</p><h1>Steeplechase</h1>' +
       '<p class="lede">A run of stations. Each shows an image and its linked question or questions for a fixed time, then moves on by itself. You cannot go back, like the real exam.</p></header>' +
-      '<section class="section stack"><div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Slides from</span><span class="row tight"><button class="btn ghost small" data-act="selall">Select all</button><button class="btn ghost small" data-act="selnone">Clear</button></span></div>' + areas +
+      '<section class="section stack"><div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Stations from</span><span class="row tight"><button class="btn ghost small" data-act="selall">Select all</button><button class="btn ghost small" data-act="selnone">Clear</button></span></div>' + areas +
       '<p class="hint">' + nTop + ' topic' + (nTop === 1 ? "" : "s") + ' selected · ' + avail + ' slide' + (avail === 1 ? "" : "s") + '. Numbers beside each topic are slides. More subjects appear here as they get pictures.</p></div>' +
       '<div class="field"><span class="label">Stations</span>' + seg("Stations", "n", [5, 10, 15, 20, 30], S.n, "") + '</div>' +
       '<div class="field"><span class="label">Seconds per station</span>' + seg("Seconds", "secs", [5, 10, 15, 20, 30, 45], S.secs, " s") + '</div>' +
@@ -56,6 +56,9 @@
     if (!keys.length) { S.note = "Tick at least one topic."; paint(); return; }
     var items = keys.map(function (k) {
       var qs = grouped.map[k];
+      /* Preserve the legacy one-question-per-image format. Only explicitly registered
+         visual stations expand into a linked sequence of questions. */
+      if (!qs[0].visualStationId) qs = [qs[Math.floor(Math.random() * qs.length)]];
       return { questions: qs, qi: 0, orders: qs.map(function (q) { return DX.optOrder(q.options); }), picks: qs.map(function () { return null; }) };
     });
     if (DX.fx && DX.fx.unlock) DX.fx.unlock();   /* the tap on Start lets the bell play later */
@@ -97,7 +100,7 @@
       return '<button class="opt' + (it.picks[it.qi] === oi ? " sel" : "") + '" data-act="pick" data-oi="' + oi + '" aria-pressed="' + (it.picks[it.qi] === oi) + '"><span class="k">' + LETTERS[k] + '</span><span>' + esc(q.options[oi]) + '</span></button>';
     }).join("");
     return '<div class="wrap stack sp">' +
-      '<div class="top"><span id="sp-h" tabindex="-1">Station ' + (r.i + 1) + ' of ' + r.items.length + '</span><span class="sp-t' + (r.left <= 5 ? " low" : "") + '" id="sp-t" aria-label="Seconds left">' + r.left + '</span><button data-act="quit">Quit</button></div>' +
+      '<div class="top"><span id="sp-h" tabindex="-1">Station ' + (r.i + 1) + ' of ' + r.items.length + (it.questions.length > 1 ? ' · Question ' + (it.qi + 1) + ' of ' + it.questions.length : '') + '</span><span class="sp-t' + (r.left <= 5 ? " low" : "") + '" id="sp-t" aria-label="Seconds left">' + r.left + '</span><button data-act="quit">Quit</button></div>' +
       '<div class="track"><i id="sp-bar" style="width:' + Math.round(100 * r.left / S.secs) + '%;transition:width .25s linear"></i></div>' +
       DX.qImg(q) + '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' +
       '<p class="hint">You can change your answer until time is up. It moves on by itself, and there is no going back.' + (window.matchMedia && matchMedia("(pointer:fine)").matches ? " Keys: A to D." : "") + '</p>' +
