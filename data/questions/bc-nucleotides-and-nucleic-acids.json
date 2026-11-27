@@ -882,6 +882,122 @@
           "Deoxyadenosine nucleotides, especially dATP"
         ]
       }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-039",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA replication and repair",
+      "q": "A child develops severe photosensitivity and multiple skin cancers after minimal sunlight exposure. The underlying defect in xeroderma pigmentosum most commonly impairs which DNA repair pathway?",
+      "options": [
+        "Nucleotide excision repair of UV-induced pyrimidine dimers",
+        "Mismatch repair of replication errors",
+        "Homologous recombination of double-strand breaks",
+        "Base excision repair of oxidised guanine"
+      ],
+      "answer": 0,
+      "explain": "Xeroderma pigmentosum commonly results from defects in nucleotide excision repair, which removes bulky DNA lesions such as UV-induced pyrimidine (thymine) dimers. Unrepaired lesions cause mutations and markedly increase skin-cancer risk.",
+      "verified": false,
+      "open": {
+        "q": "Which DNA repair pathway is defective in classic xeroderma pigmentosum?",
+        "accept": [
+          "nucleotide excision repair",
+          "NER"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-040",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA replication and repair",
+      "q": "A patient with a strong family history of colorectal and endometrial cancers is found to have Lynch syndrome. Which molecular process is defective in this condition?",
+      "options": [
+        "Correction of base-pairing errors by DNA mismatch repair",
+        "Removal of UV-induced pyrimidine dimers by nucleotide excision repair",
+        "Removal of uracil from DNA by uracil-DNA glycosylase",
+        "Repair of double-strand breaks exclusively by non-homologous end joining"
+      ],
+      "answer": 0,
+      "explain": "Lynch syndrome is associated with inherited defects in DNA mismatch-repair genes such as MLH1, MSH2, MSH6 or PMS2. Failure to correct replication errors causes microsatellite instability and predisposes to colorectal and other cancers.",
+      "verified": false,
+      "open": {
+        "q": "Which DNA repair mechanism is impaired in Lynch syndrome?",
+        "accept": [
+          "mismatch repair",
+          "DNA mismatch repair"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-041",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA replication and telomeres",
+      "q": "A somatic cell line undergoes repeated divisions and progressively loses DNA from chromosome ends. Which enzyme can counteract this shortening by adding repetitive sequences using its own RNA template?",
+      "options": [
+        "Telomerase",
+        "DNA ligase I",
+        "Primase",
+        "RNA polymerase II"
+      ],
+      "answer": 0,
+      "explain": "Telomerase is a ribonucleoprotein reverse transcriptase that carries an RNA template and extends telomeric DNA repeats at chromosome ends. It is active in germ cells, many stem cells and most cancers, but is low or absent in many somatic cells.",
+      "verified": false,
+      "open": {
+        "q": "Which enzyme extends telomeres using an intrinsic RNA template?",
+        "accept": [
+          "telomerase"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-042",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA replication",
+      "q": "During DNA replication, a drug inhibits topoisomerase II. Which immediate problem is most likely to occur ahead of the replication fork?",
+      "options": [
+        "Accumulation of torsional strain and supercoiling",
+        "Failure to attach amino acids to tRNA",
+        "Failure to form peptide bonds",
+        "Loss of the RNA primer's 5′ cap"
+      ],
+      "answer": 0,
+      "explain": "Topoisomerase II transiently cuts both DNA strands, passes another DNA segment through the break and reseals it. This relieves torsional stress and resolves supercoils generated as the replication fork advances.",
+      "verified": false,
+      "open": {
+        "q": "What is the role of topoisomerase II during DNA replication?",
+        "accept": [
+          "relieves supercoiling",
+          "relieves torsional strain",
+          "removes supercoils"
+        ]
+      }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-043",
+      "type": "mcq",
+      "level": 2,
+      "sub": "DNA replication",
+      "q": "A newly synthesised DNA strand contains a mismatched nucleotide immediately after DNA polymerase has added it. Which activity of a replicative DNA polymerase allows correction of this error?",
+      "options": [
+        "3′ to 5′ exonuclease proofreading activity",
+        "5′ to 3′ RNA polymerase activity",
+        "5′ to 3′ exonuclease activity that removes the template",
+        "DNA-dependent RNA synthesis"
+      ],
+      "answer": 0,
+      "explain": "Many replicative DNA polymerases possess a 3′ to 5′ exonuclease activity that removes a misincorporated nucleotide from the growing strand, allowing synthesis to resume with the correct base. This proofreading improves replication fidelity.",
+      "verified": false,
+      "open": {
+        "q": "Which exonuclease activity enables DNA polymerase proofreading?",
+        "accept": [
+          "3 to 5 exonuclease",
+          "3′ to 5′ exonuclease",
+          "3-5 exonuclease"
+        ]
+      }
     }
   ]
 }
