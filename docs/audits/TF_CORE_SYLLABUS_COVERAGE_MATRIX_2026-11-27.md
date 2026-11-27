@@ -19,10 +19,10 @@ The user's three-subject structure is retained: **Anatomy includes Histology and
 
 | Subject | Stems | Share of three core subjects |
 |---|---:|---:|
-| Anatomy (including Histology and Embryology) | 127 | 32.2% |
-| Physiology | 136 | 34.5% |
-| Medical Biochemistry | 131 | 33.2% |
-| **Core-subject total** | **394** | **100%** |
+| Anatomy (including Histology and Embryology) | 132 | 32.3% |
+| Physiology | 141 | 34.5% |
+| Medical Biochemistry | 136 | 33.3% |
+| **Core-subject total** | **409** | **100%** |
 
 The additional 39 pathology/pharmacology/other stems in the same JSON file are excluded from this three-subject denominator.
 
@@ -32,15 +32,15 @@ NUC course anchors include ANA 201a/201b (upper and lower limbs), ANA 202a/202b 
 
 | Broad domain, inferred from question ID prefixes | Stems | Initial assessment |
 |---|---:|---|
-| General/structural anatomy (GA) | 23 | Present; depth varies by subtopic |
-| Regional gross anatomy (GR) | 34 | Present; depth varies by subtopic |
+| General/structural anatomy (GA) | 27 | Present; depth varies by subtopic |
+| Regional gross anatomy (GR) | 35 | Present; depth varies by subtopic |
 | Embryology (EMB+SE) | 30 | Present; depth varies by subtopic |
 | Histology (GH+SH) | 40 | Present; depth varies by subtopic |
-| Dedicated human genetics/inheritance and genetic counselling | 0 identified | **Gap** |
-| Dedicated radiological anatomy/imaging interpretation | 0 identified | **Gap** |
+| Dedicated human genetics/inheritance and genetic counselling | 2 | **Present but very thin** |
+| Dedicated radiological anatomy/imaging interpretation | 2 | **Present but very thin** |
 | Living/surface anatomy | 1 explicitly tagged | **Very thin** |
 
-**Interpretation:** The bank has broad gross-anatomy, histology and embryology coverage, but the prefix counts do not prove adequate regional balance. The explicit absence of a dedicated genetics stem and radiological anatomy stem is notable because these appear in the national curriculum baseline. Genetics material within Medical Biochemistry should not be counted as a substitute for the Anatomy/medical genetics learning objectives. The 40 histology stems and 30 embryology stems should next be checked against each organ system and developmental sequence, not treated as complete merely because the umbrella domains are represented.
+**Interpretation:** The bank has broad gross-anatomy, histology and embryology coverage, but the prefix counts do not prove adequate regional balance. The new Round 22 batch adds two dedicated genetics stems and two radiological anatomy stems, but both areas remain very thin. Genetics material within Medical Biochemistry should not be counted as a substitute for the Anatomy/medical genetics learning objectives. The 40 histology stems and 30 embryology stems should next be checked against each organ system and developmental sequence, not treated as complete merely because the umbrella domains are represented.
 
 ## 4. Physiology coverage
 
@@ -53,15 +53,15 @@ NUC course anchors include PHS 201 (introductory/cell physiology and autonomic n
 | Blood and body fluids | 16 | Present; check objective-level depth |
 | Renal/urinary/acid-base/fluid | 19 | Present; check objective-level depth |
 | Temperature/skin/exercise | 5 | Thin |
-| Respiratory | 13 | Present; check objective-level depth |
-| Cardiovascular | 18 | Present; check objective-level depth |
+| Respiratory | 14 | Present; check objective-level depth |
+| Cardiovascular | 19 | Present; check objective-level depth |
 | Gastrointestinal/nutrition | 14 | Present; check objective-level depth |
-| Endocrine | 13 | Present; check objective-level depth |
+| Endocrine | 14 | Present; check objective-level depth |
 | Reproductive | 10 | Present but needs depth |
-| Special senses | 2 | Thin |
+| Special senses | 4 | Thin |
 
 **Additional gap/quality flags:**
-- The broad special-senses group has only two primary-mapped stems; assess visual and auditory physiology separately against the course outcomes.
+- The special-senses group now has four stems after Round 22, but visual and auditory physiology still need deeper objective-level coverage.
 - Temperature/skin/exercise is a small combined cluster. These are distinct learning areas and should not be allowed to mask one another.
 - PHS 307 practical/laboratory instrumentation and practical interpretation are not comprehensively represented by a few ECG, spirometry or laboratory-related question stems. A dedicated practical-objective audit is needed.
 - The 21 neuro-locomotor stems cover a broad domain, but the separate objectives (ANS, nerve conduction, synapses/NMJ, spinal cord, cerebellum, basal ganglia, cerebrum, posture, EEG/sleep and special senses) require individual checking.
@@ -73,12 +73,12 @@ NUC course anchors include BCH 201 (cell biology, pH and buffers), BCH 203 (carb
 | Domain, assigned by primary subtopic | Stems | Initial assessment |
 |---|---:|---|
 | Enzymes and bioenergetics | 13 | Present; check objective-level depth |
-| Carbohydrate/energy pathway integration | 13 | Present; check objective-level depth |
+| Carbohydrate/energy pathway integration | 15 | Present; check objective-level depth |
 | Amino acids, proteins and nitrogen metabolism | 23 | Present; check objective-level depth |
-| Nucleic acids, molecular biology and genetics | 17 | Present; check objective-level depth |
+| Nucleic acids, molecular biology and genetics | 18 | Present; check objective-level depth |
 | Lipid metabolism | 9 | Present but needs depth |
-| Vitamins, minerals and nutrition | 9 | Present but needs depth |
-| Applied/special topics | 37 | Present; check objective-level depth |
+| Vitamins, minerals and nutrition | 10 | Present but needs depth |
+| Applied/special topics | 38 | Present; check objective-level depth |
 | Basic chemistry, biomolecules and membranes | 10 | Present but needs depth |
 
 **Interpretation:** Applied/special topics form a large share of the current Biochemistry set. This is useful, but it should not crowd out pathway-level learning outcomes. The next audit should check individual pathway steps, rate-limiting enzymes, regulation, tissue specificity, fed/fasting integration, nutritional assessment and practical interpretation. The counts above are a primary classification by each stem's subtopic; they are not counts of distinct learning outcomes.
@@ -102,20 +102,20 @@ These are priority candidates from the national-baseline comparison, not a claim
 5. Ensure every reproductive, renal and cardiovascular course outcome has more than a token stem.
 
 ### Medical Biochemistry
-1. Nutrition: dietary assessment, energy balance, malnutrition and clinical deficiency states.
-2. Metabolic integration: organ-specific and fed/fasting regulation across carbohydrate, lipid and amino-acid metabolism.
-3. Biochemical genetics and molecular biology: gene expression, genetic diagnosis and clinically relevant inheritance.
+1. Nutrition: dietary assessment, energy balance, malnutrition and clinical deficiency states; Round 22 added two nutrition-focused stems.
+2. Metabolic integration: organ-specific and fed/fasting regulation across carbohydrate, lipid and amino-acid metabolism; Round 22 added two integration-focused stems.
+3. Biochemical genetics and molecular biology: gene expression, genetic diagnosis and clinically relevant inheritance; Round 22 added one biochemical-genetics stem.
 4. Clinical/practical interpretation: enzyme assays, glucose tolerance/HbA1c, electrophoresis, body-fluid chemistry and nutrition-related tests.
 5. Confirm coverage of each BCH 309 special-topic area without over-relying on broad umbrella stems.
 
-## 7. Recommended next batches
+## 7. Round 22 completed and next priorities
 
-Do not choose the next 15 stems from total subject counts alone. Use the priority gaps above and preserve the established cadence of five new stems per core subject per round. A suitable next round would be:
-- **Anatomy:** two genetics stems, two radiological anatomy stems, one living/surface anatomy stem.
-- **Physiology:** two special-senses stems, two practical interpretation stems, one neuroendocrine integration stem.
-- **Medical Biochemistry:** two nutrition stems, two metabolic-integration stems, one biochemical genetics/clinical interpretation stem.
+Round 22 added 15 stems / 60 statements, five per core subject, selected from the gaps in the first matrix:
+- **Anatomy:** two human-genetics/inheritance stems, two radiological-anatomy stems, one living/surface-anatomy stem.
+- **Physiology:** visual and auditory physiology, ECG and spirometry interpretation, and hypothalamic-pituitary integration.
+- **Medical Biochemistry:** nutritional assessment, micronutrient deficiency, fed/fasting regulation, inter-organ fuel exchange, and biochemical genetics.
 
-Before committing those questions, compare each proposed learning objective against the existing bank at the individual-statement level to avoid near-duplicates.
+The next batch should deepen the still-thin areas rather than repeat Round 22 topics. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
 
 ## 8. Method and limitations
 
