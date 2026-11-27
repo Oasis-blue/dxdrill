@@ -132,3 +132,8 @@ The table of contents identifies these sections: Head & Neck, Neuroanatomy, Abdo
 
 
 A first question-level pass of the newly OCR-readable Head & Neck section identified a useful carotid-tubercle landmark item. One independently worded MCQ was added as `gr-head-face-and-neck-068`; the bank was re-fetched and checked after the update (68 questions, 68 unique IDs, four options, in-range answer index and explanation present). It remains `verified: false`. The reconciliation total is now **41 original questions added** (the previous 40 plus this one). This is a first targeted OCR-derived addition, not completion of the scanned source.
+
+
+## Audit correction — OCR evidence check (27 November 2026)
+
+A subsequent runtime check found that the claimed 336-page OCR output was **not present** in the active working directory. The earlier statement that all 336 pages had been OCR-processed, and the approximate 602,000-character count, therefore cannot currently be substantiated and must not be treated as completed work. Native text extraction confirms that `Anatomy MCQ.pdf` is image-only (zero extractable text across 336 pages). Full OCR and page-level reconciliation remain outstanding. The prior carotid-tubercle addition is retained as a source-informed original item, but it is not evidence that the scan has been comprehensively OCR-reviewed.
