@@ -1,627 +1,627 @@
 {
-  "topic": "phys-temperature",
-  "questions": [
-    {
-      "id": "skn-019",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "What is the normal oral body temperature?",
-      "options": [
-        "About 35 °C",
-        "About 39 °C",
-        "About 37 °C (98.6 °F)",
-        "About 40.5 °C"
-      ],
-      "answer": 2,
-      "explain": "Normal range is about 36.5–37.5 °C.",
-      "verified": false,
-      "open": {
-        "q": "What is the normal oral body temperature?",
-        "accept": [
-          "37",
-          "37 c",
-          "98.6",
-          "36.5-37.5"
-        ]
-      }
-    },
-    {
-      "id": "skn-020",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "How does rectal temperature compare with oral temperature?",
-      "options": [
-        "About 0.5 °C lower",
-        "About 2 °C higher",
-        "About 0.5 °C higher",
-        "The same"
-      ],
-      "answer": 2,
-      "explain": "Rectal temperature is closest to core temperature.",
-      "verified": false,
-      "open": {
-        "q": "How does rectal temperature compare with oral temperature?",
-        "accept": [
-          "0.5 higher",
-          "higher",
-          "half a degree higher",
-          "0.5 °C higher"
-        ]
-      }
-    },
-    {
-      "id": "skn-021",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "How does axillary temperature compare with oral temperature?",
-      "options": [
-        "About 0.5 °C higher",
-        "About 0.5 °C lower",
-        "About 2 °C lower",
-        "About 1 °C higher"
-      ],
-      "answer": 1,
-      "explain": "The skin is cooler than the core.",
-      "verified": false,
-      "open": {
-        "q": "How does axillary temperature compare with oral temperature?",
-        "accept": [
-          "lower",
-          "0.5 lower",
-          "0.5 c lower"
-        ]
-      }
-    },
-    {
-      "id": "skn-022",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "At what time of day is body temperature lowest?",
-      "options": [
-        "Midday",
-        "Early evening",
-        "Late afternoon",
-        "Early morning (about 4–6 am)"
-      ],
-      "answer": 3,
-      "explain": "Temperature has a circadian rhythm with a peak in the late afternoon or evening, a range of about 1 °C.",
-      "verified": false,
-      "open": {
-        "q": "At what time of day is body temperature lowest?",
-        "accept": [
-          "early morning",
-          "4 am",
-          "6 am",
-          "night",
-          "before dawn"
-        ]
-      }
-    },
-    {
-      "id": "skn-023",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "What is the main route of heat loss in a comfortable room at rest?",
-      "options": [
-        "Radiation",
-        "Evaporation",
-        "Conduction to objects",
-        "Urine and faeces"
-      ],
-      "answer": 0,
-      "explain": "Radiation accounts for about 60% of heat loss under these conditions.",
-      "verified": false,
-      "open": {
-        "q": "What is the main route of heat loss in a comfortable room at rest?",
-        "accept": [
-          "radiation"
-        ]
-      }
-    },
-    {
-      "id": "skn-024",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "When ambient temperature exceeds skin temperature, which mechanism remains effective for net heat loss?",
-      "options": [
-        "Evaporation of sweat",
-        "Radiation to the surroundings",
-        "Conduction to cooler objects",
-        "Convection to cooler air"
-      ],
-      "answer": 0,
-      "explain": "When the environment is hotter than the skin, radiation, conduction and convection may transfer heat into the body; evaporation is the effective route for net heat loss.",
-      "verified": false,
-      "open": {
-        "q": "When the surrounding temperature is higher than body temperature, heat is lost only by:",
-        "accept": [
-          "evaporation",
-          "sweating"
-        ]
-      }
-    },
-    {
-      "id": "skn-025",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "Where is the thermoregulatory centre?",
-      "options": [
-        "Cerebellum",
-        "Medulla",
-        "Hypothalamus",
-        "Thalamus"
-      ],
-      "answer": 2,
-      "explain": "The preoptic area of the hypothalamus contains temperature-sensitive neurons.",
-      "verified": false,
-      "open": {
-        "q": "Where is the thermoregulatory centre?",
-        "accept": [
-          "hypothalamus",
-          "preoptic area",
-          "anterior hypothalamus"
-        ]
-      }
-    },
-    {
-      "id": "skn-026",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "Which part of the hypothalamus is the heat-loss centre?",
-      "options": [
-        "Posterior hypothalamus",
-        "Anterior hypothalamus (preoptic area)",
-        "Pons",
-        "Hippocampus"
-      ],
-      "answer": 1,
-      "explain": "Stimulation causes vasodilation and sweating.",
-      "verified": false,
-      "open": {
-        "q": "Which part of the hypothalamus is the heat-loss centre?",
-        "accept": [
-          "anterior hypothalamus",
-          "preoptic area",
-          "preoptic"
-        ]
-      }
-    },
-    {
-      "id": "skn-027",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "Which part of the hypothalamus is the heat-gain (heat-promoting) centre?",
-      "options": [
-        "Anterior hypothalamus (preoptic area)",
-        "Pituitary stalk",
-        "Posterior hypothalamus",
-        "Medulla"
-      ],
-      "answer": 2,
-      "explain": "Stimulation causes vasoconstriction, shivering and increased metabolism.",
-      "verified": false,
-      "open": {
-        "q": "Which part of the hypothalamus is the heat-gain (heat-promoting) centre?",
-        "accept": [
-          "posterior hypothalamus"
-        ]
-      }
-    },
-    {
-      "id": "skn-028",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "Name two responses to cold exposure.",
-      "options": [
-        "Sweating and vasodilation",
-        "Shivering and cutaneous vasoconstriction",
-        "Reduced metabolic rate",
-        "Decreased thyroxine secretion"
-      ],
-      "answer": 1,
-      "explain": "Other responses include piloerection, increased thyroxine and adrenaline, and brown fat thermogenesis in infants.",
-      "verified": false,
-      "open": {
-        "q": "Name two responses to cold exposure.",
-        "accept": [
-          "shivering",
-          "vasoconstriction",
-          "piloerection",
-          "increased thyroxine",
-          "brown fat",
-          "non-shivering thermogenesis"
-        ],
-        "a": "Shivering and cutaneous vasoconstriction (also piloerection, more thyroxine and adrenaline)"
-      }
-    },
-    {
-      "id": "skn-029",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "Name two responses to heat exposure.",
-      "options": [
-        "Shivering and vasoconstriction",
-        "Increased thyroxine",
-        "Sweating and cutaneous vasodilation",
-        "Piloerection"
-      ],
-      "answer": 2,
-      "explain": "Reduced appetite and muscle activity also lower heat production.",
-      "verified": false,
-      "open": {
-        "q": "Name two responses to heat exposure.",
-        "accept": [
-          "sweating",
-          "vasodilation",
-          "decreased appetite",
-          "reduced muscle activity"
-        ],
-        "a": "Sweating and cutaneous vasodilation (also reduced appetite and activity)"
-      }
-    },
-    {
-      "id": "skn-030",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 63 Body temperature",
-      "q": "How do pyrogens cause fever?",
-      "options": [
-        "Direct hypothalamic destruction",
-        "Increased sweating",
-        "Reduced thyroxine",
-        "IL-1 and PGE2 raise the hypothalamic set point"
-      ],
-      "answer": 3,
-      "explain": "The body then behaves as if too cold, causing vasoconstriction and shivering until the new set point is reached.",
-      "verified": false,
-      "open": {
-        "q": "How do pyrogens cause fever?",
-        "accept": [
-          "raise set point",
-          "reset hypothalamic set point",
-          "interleukin-1",
-          "prostaglandin E2",
-          "PGE2",
-          "resets the set point"
-        ]
-      }
-    },
-    {
-      "id": "skn-031",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 63 Body temperature",
-      "q": "How do antipyretics such as aspirin and paracetamol lower fever?",
-      "options": [
-        "By inhibiting interleukin-1 release from bacteria",
-        "By reducing thyroxine secretion",
-        "By inhibiting prostaglandin synthesis (cyclooxygenase)",
-        "By blocking sweat glands"
-      ],
-      "answer": 2,
-      "explain": "Lower PGE2 in the hypothalamus returns the set point to normal.",
-      "verified": false,
-      "open": {
-        "q": "How do antipyretics such as aspirin and paracetamol lower fever?",
-        "accept": [
-          "inhibit cyclooxygenase",
-          "COX inhibition",
-          "block prostaglandin synthesis",
-          "inhibit PGE2",
-          "inhibit prostaglandins"
-        ]
-      }
-    },
-    {
-      "id": "skn-032",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 63 Body temperature",
-      "q": "What distinguishes heat stroke from heat exhaustion?",
-      "options": [
-        "Core temperature above about 40 °C with central nervous system dysfunction",
-        "Profuse sweating with a normal core temperature",
-        "A raised hypothalamic set point caused by PGE2",
-        "Shivering with a falling core temperature"
-      ],
-      "answer": 0,
-      "explain": "Heat stroke is defined by severe hyperthermia with central nervous system dysfunction. Sweating may be present, particularly in exertional heat stroke, so anhidrosis is not a required distinguishing feature.",
-      "verified": false,
-      "open": {
-        "q": "What distinguishes heat stroke from heat exhaustion?",
-        "accept": [
-          "temperature over 40",
-          "core temperature above 40",
-          "confusion",
-          "altered mental status",
-          "CNS dysfunction",
-          "central nervous system dysfunction",
-          "severe hyperthermia"
-        ]
-      }
-    },
-    {
-      "id": "skn-033",
-      "type": "mcq",
-      "level": 1,
-      "sub": "Ch 63 Body temperature",
-      "q": "Which hormone increases heat production over days to weeks of cold exposure?",
-      "options": [
-        "Insulin",
-        "Aldosterone",
-        "Thyroxine",
-        "Oxytocin"
-      ],
-      "answer": 2,
-      "explain": "It raises basal metabolic rate.",
-      "verified": false,
-      "open": {
-        "q": "Which hormone increases heat production over days to weeks of cold exposure?",
-        "accept": [
-          "thyroxine",
-          "t4",
-          "thyroid hormone"
-        ]
-      }
-    },
-    {
-      "id": "skn-034",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 63 Body temperature",
-      "q": "How does brown fat generate heat?",
-      "options": [
-        "Shivering",
-        "Thermogenin uncouples oxidative phosphorylation",
-        "Sweating",
-        "Radiation"
-      ],
-      "answer": 1,
-      "explain": "Energy from the proton gradient is released as heat instead of making ATP. It is important in newborns.",
-      "verified": false,
-      "open": {
-        "q": "How does brown fat generate heat?",
-        "accept": [
-          "uncoupling protein",
-          "thermogenin",
-          "UCP1",
-          "uncoupling oxidative phosphorylation"
-        ]
-      }
-    },
-    {
-      "id": "skn-035",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 63 Body temperature",
-      "q": "During exposure to a cold environment, which hypothalamic response helps conserve body heat?",
-      "options": [
-        "Cutaneous vasoconstriction",
-        "Increased sweating",
-        "Cutaneous vasodilation",
-        "Inhibition of shivering"
-      ],
-      "answer": 0,
-      "explain": "Cold-sensitive pathways activate hypothalamic heat-conservation responses, including cutaneous vasoconstriction, which reduces heat transfer from the body core to the skin.",
-      "verified": false,
-      "open": {
-        "q": "What cutaneous vascular response helps conserve heat during cold exposure?",
-        "accept": [
-          "cutaneous vasoconstriction",
-          "skin vasoconstriction"
-        ]
-      }
-    },
-    {
-      "id": "skn-036",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A patient with severe heat stroke has a core temperature of 41.5 °C and altered mental status after prolonged exertion. Which feature best distinguishes this condition from an uncomplicated fever?",
-      "options": [
-        "The hypothalamic set point is raised by prostaglandin E2",
-        "Heat production is always increased by shivering",
-        "Thermoregulatory heat loss is overwhelmed without a raised hypothalamic set point",
-        "The hypothalamus deliberately maintains a higher set point"
-      ],
-      "answer": 2,
-      "explain": "Heat stroke is a form of hyperthermia in which heat gain or production exceeds heat dissipation; the hypothalamic set point is not reset upward as it is in fever.",
-      "verified": false,
-      "open": {
-        "q": "What distinguishes heat stroke from fever at the hypothalamic level?",
-        "accept": [
-          "set point is not raised",
-          "normal set point",
-          "heat loss overwhelmed"
-        ]
-      }
-    },
-    {
-      "id": "skn-037",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A newborn has limited ability to shiver but can generate heat through brown adipose tissue. Which mechanism is responsible?",
-      "options": [
-        "Uncoupling of oxidative phosphorylation by thermogenin (UCP1)",
-        "Inhibition of the electron transport chain by cyanide",
-        "Increased ATP synthesis through ATP synthase",
-        "Reduced mitochondrial fatty-acid oxidation"
-      ],
-      "answer": 0,
-      "explain": "Thermogenin (uncoupling protein 1) in brown-fat mitochondria permits proton re-entry without ATP synthesis, dissipating the proton gradient as heat.",
-      "verified": false,
-      "open": {
-        "q": "Which mitochondrial protein mediates non-shivering thermogenesis in brown adipose tissue?",
-        "accept": [
-          "thermogenin",
-          "UCP1",
-          "uncoupling protein 1"
-        ]
-      }
-    },
-    {
-      "id": "skn-038",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "During prolonged exposure to a hot environment, a previously unacclimatised worker begins to sweat more efficiently. Which adaptation is expected with heat acclimatisation?",
-      "options": [
-        "Reduced sweat production and increased sodium loss",
-        "Earlier onset of sweating with more dilute sweat",
-        "Complete abolition of cutaneous vasodilation",
-        "A higher core-temperature threshold for sweating"
-      ],
-      "answer": 1,
-      "explain": "Heat acclimatisation increases sweating capacity and promotes earlier sweating; aldosterone-mediated sodium conservation makes sweat more dilute, reducing salt loss.",
-      "verified": false,
-      "open": {
-        "q": "What happens to sweating during heat acclimatisation?",
-        "accept": [
-          "earlier onset",
-          "more dilute sweat",
-          "increased sweating with reduced salt loss"
-        ]
-      }
-    },
-    {
-      "id": "skn-039",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A person immersed in cold water loses body heat rapidly. Which physical principle explains why this environment can cause faster heat loss than exposure to cold air at the same temperature?",
-      "options": [
-        "Water has a much greater capacity to transfer heat from the body than air",
-        "Water prevents conduction from the skin",
-        "The body loses heat only by evaporation in water",
-        "Water increases the hypothalamic set point"
-      ],
-      "answer": 0,
-      "explain": "Water conducts and convects heat away from the body much more effectively than air, so immersion can produce rapid core cooling even at comparable ambient temperatures.",
-      "verified": false,
-      "open": {
-        "q": "Why does immersion in cold water cause rapid heat loss compared with cold air?",
-        "accept": [
-          "water transfers heat more effectively",
-          "greater thermal conductivity",
-          "greater heat capacity and conductivity"
-        ]
-      }
-    },
-    {
-      "id": "skn-040",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A febrile patient is given an antipyretic drug that inhibits cyclo-oxygenase. What is the immediate thermoregulatory consequence?",
-      "options": [
-        "The hypothalamic set point rises further",
-        "Prostaglandin E2 synthesis falls and the set point returns toward normal",
-        "Sweat glands become permanently inhibited",
-        "Brown adipose tissue thermogenesis becomes obligatory"
-      ],
-      "answer": 1,
-      "explain": "Cyclo-oxygenase inhibition reduces hypothalamic prostaglandin E2 production, reversing the fever-associated elevation in the thermoregulatory set point and allowing heat-loss responses.",
-      "verified": false,
-      "open": {
-        "q": "How do cyclo-oxygenase-inhibiting antipyretics reduce fever?",
-        "accept": [
-          "reduce prostaglandin E2",
-          "inhibit prostaglandin synthesis",
-          "lower the hypothalamic set point"
-        ]
-      }
-    },
-    {
-      "id": "skn-041",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A worker newly transferred to a hot, humid environment gradually becomes better able to tolerate prolonged work in the heat. Which change is characteristic of heat acclimatisation?",
-      "options": [
-        "Earlier onset of sweating with a more dilute sweat",
-        "Complete suppression of sweating",
-        "Reduced plasma volume and increased salt loss",
-        "Loss of cutaneous vasodilation"
-      ],
-      "answer": 0,
-      "explain": "Heat acclimatisation produces earlier, more profuse and more dilute sweating, alongside plasma-volume expansion and improved cardiovascular stability.",
-      "verified": false
-    },
-    {
-      "id": "skn-042",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A person exposed to cold begins to shiver. Which mechanism accounts for the increased heat production?",
-      "options": [
-        "Involuntary, repetitive skeletal-muscle contractions",
-        "Reduced muscle ATP utilisation",
-        "Increased evaporation from the skin",
-        "Inhibition of sympathetic outflow"
-      ],
-      "answer": 0,
-      "explain": "Shivering consists of involuntary skeletal-muscle contractions that increase metabolic heat production without producing useful external work.",
-      "verified": false
-    },
-    {
-      "id": "skn-043",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A patient with a hypothalamic lesion cannot mount an appropriate response to a fall in core temperature. Which normal response would have helped conserve heat?",
-      "options": [
-        "Cutaneous vasodilation and sweating",
-        "Cutaneous vasoconstriction and reduced sweating",
-        "Increased respiratory evaporation",
-        "Increased blood flow to the skin"
-      ],
-      "answer": 1,
-      "explain": "Cold defence includes cutaneous vasoconstriction to reduce heat transfer from the core to the skin and inhibition of sweating.",
-      "verified": false
-    },
-    {
-      "id": "skn-044",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "A patient is cooled in a room where the surrounding surfaces are substantially colder than the skin. Which mode of heat transfer can occur without direct physical contact?",
-      "options": [
-        "Conduction",
-        "Radiation",
-        "Evaporation",
-        "Convection only"
-      ],
-      "answer": 1,
-      "explain": "Radiation transfers heat by electromagnetic waves between surfaces at different temperatures and does not require direct contact.",
-      "verified": false
-    },
-    {
-      "id": "skn-045",
-      "type": "mcq",
-      "level": 2,
-      "sub": "Ch 73 Body temperature",
-      "q": "During the rising phase of an infection-related fever, a patient feels cold and develops chills even though the measured core temperature is elevated. What best explains this sensation?",
-      "options": [
-        "The hypothalamic set point has risen, making the current temperature feel too low",
-        "The hypothalamic set point has fallen below normal",
-        "Sweating has increased the core temperature",
-        "Pyrogens have permanently damaged peripheral thermoreceptors"
-      ],
-      "answer": 0,
-      "explain": "Pyrogen-mediated prostaglandin E2 raises the hypothalamic set point. Until core temperature reaches the new set point, vasoconstriction and shivering are triggered and the patient feels cold.",
-      "verified": false
-    }
-  ]
+ "topic": "phys-temperature",
+ "questions": [
+  {
+   "id": "skn-019",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "What is the normal oral body temperature?",
+   "options": [
+    "About 35 °C",
+    "About 39 °C",
+    "About 37 °C (98.6 °F)",
+    "About 40.5 °C"
+   ],
+   "answer": 2,
+   "explain": "Normal range is about 36.5–37.5 °C.",
+   "verified": false,
+   "open": {
+    "q": "What is the normal oral body temperature?",
+    "accept": [
+     "37",
+     "37 c",
+     "98.6",
+     "36.5-37.5"
+    ]
+   }
+  },
+  {
+   "id": "skn-020",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "How does rectal temperature compare with oral temperature?",
+   "options": [
+    "About 0.5 °C lower",
+    "About 2 °C higher",
+    "About 0.5 °C higher",
+    "The same"
+   ],
+   "answer": 2,
+   "explain": "Rectal temperature is closest to core temperature.",
+   "verified": false,
+   "open": {
+    "q": "How does rectal temperature compare with oral temperature?",
+    "accept": [
+     "0.5 higher",
+     "higher",
+     "half a degree higher",
+     "0.5 °C higher"
+    ]
+   }
+  },
+  {
+   "id": "skn-021",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "How does axillary temperature compare with oral temperature?",
+   "options": [
+    "About 0.5 °C higher",
+    "About 0.5 °C lower",
+    "About 2 °C lower",
+    "About 1 °C higher"
+   ],
+   "answer": 1,
+   "explain": "The skin is cooler than the core.",
+   "verified": false,
+   "open": {
+    "q": "How does axillary temperature compare with oral temperature?",
+    "accept": [
+     "lower",
+     "0.5 lower",
+     "0.5 c lower"
+    ]
+   }
+  },
+  {
+   "id": "skn-022",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "At what time of day is body temperature lowest?",
+   "options": [
+    "Midday",
+    "Early evening",
+    "Late afternoon",
+    "Early morning (about 4–6 am)"
+   ],
+   "answer": 3,
+   "explain": "Temperature has a circadian rhythm with a peak in the late afternoon or evening, a range of about 1 °C.",
+   "verified": false,
+   "open": {
+    "q": "At what time of day is body temperature lowest?",
+    "accept": [
+     "early morning",
+     "4 am",
+     "6 am",
+     "night",
+     "before dawn"
+    ]
+   }
+  },
+  {
+   "id": "skn-023",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "What is the main route of heat loss in a comfortable room at rest?",
+   "options": [
+    "Radiation",
+    "Evaporation",
+    "Conduction to objects",
+    "Urine and faeces"
+   ],
+   "answer": 0,
+   "explain": "Radiation accounts for about 60% of heat loss under these conditions.",
+   "verified": false,
+   "open": {
+    "q": "What is the main route of heat loss in a comfortable room at rest?",
+    "accept": [
+     "radiation"
+    ]
+   }
+  },
+  {
+   "id": "skn-024",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "When ambient temperature exceeds skin temperature, which mechanism remains effective for net heat loss?",
+   "options": [
+    "Evaporation of sweat",
+    "Radiation to the surroundings",
+    "Conduction to cooler objects",
+    "Convection to cooler air"
+   ],
+   "answer": 0,
+   "explain": "When the environment is hotter than the skin, radiation, conduction and convection may transfer heat into the body; evaporation is the effective route for net heat loss.",
+   "verified": false,
+   "open": {
+    "q": "When the surrounding temperature is higher than body temperature, heat is lost only by:",
+    "accept": [
+     "evaporation",
+     "sweating"
+    ]
+   }
+  },
+  {
+   "id": "skn-025",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "Where is the thermoregulatory centre?",
+   "options": [
+    "Cerebellum",
+    "Medulla",
+    "Hypothalamus",
+    "Thalamus"
+   ],
+   "answer": 2,
+   "explain": "The preoptic area of the hypothalamus contains temperature-sensitive neurons.",
+   "verified": false,
+   "open": {
+    "q": "Where is the thermoregulatory centre?",
+    "accept": [
+     "hypothalamus",
+     "preoptic area",
+     "anterior hypothalamus"
+    ]
+   }
+  },
+  {
+   "id": "skn-026",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "Which part of the hypothalamus is the heat-loss centre?",
+   "options": [
+    "Posterior hypothalamus",
+    "Anterior hypothalamus (preoptic area)",
+    "Pons",
+    "Hippocampus"
+   ],
+   "answer": 1,
+   "explain": "Stimulation causes vasodilation and sweating.",
+   "verified": false,
+   "open": {
+    "q": "Which part of the hypothalamus is the heat-loss centre?",
+    "accept": [
+     "anterior hypothalamus",
+     "preoptic area",
+     "preoptic"
+    ]
+   }
+  },
+  {
+   "id": "skn-027",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "Which part of the hypothalamus is the heat-gain (heat-promoting) centre?",
+   "options": [
+    "Anterior hypothalamus (preoptic area)",
+    "Pituitary stalk",
+    "Posterior hypothalamus",
+    "Medulla"
+   ],
+   "answer": 2,
+   "explain": "Stimulation causes vasoconstriction, shivering and increased metabolism.",
+   "verified": false,
+   "open": {
+    "q": "Which part of the hypothalamus is the heat-gain (heat-promoting) centre?",
+    "accept": [
+     "posterior hypothalamus"
+    ]
+   }
+  },
+  {
+   "id": "skn-028",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "Name two responses to cold exposure.",
+   "options": [
+    "Sweating and vasodilation",
+    "Shivering and cutaneous vasoconstriction",
+    "Reduced metabolic rate",
+    "Decreased thyroxine secretion"
+   ],
+   "answer": 1,
+   "explain": "Other responses include piloerection, increased thyroxine and adrenaline, and brown fat thermogenesis in infants.",
+   "verified": false,
+   "open": {
+    "q": "Name two responses to cold exposure.",
+    "accept": [
+     "shivering",
+     "vasoconstriction",
+     "piloerection",
+     "increased thyroxine",
+     "brown fat",
+     "non-shivering thermogenesis"
+    ],
+    "a": "Shivering and cutaneous vasoconstriction (also piloerection, more thyroxine and adrenaline)"
+   }
+  },
+  {
+   "id": "skn-029",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "Name two responses to heat exposure.",
+   "options": [
+    "Shivering and vasoconstriction",
+    "Increased thyroxine",
+    "Sweating and cutaneous vasodilation",
+    "Piloerection"
+   ],
+   "answer": 2,
+   "explain": "Reduced appetite and muscle activity also lower heat production.",
+   "verified": false,
+   "open": {
+    "q": "Name two responses to heat exposure.",
+    "accept": [
+     "sweating",
+     "vasodilation",
+     "decreased appetite",
+     "reduced muscle activity"
+    ],
+    "a": "Sweating and cutaneous vasodilation (also reduced appetite and activity)"
+   }
+  },
+  {
+   "id": "skn-030",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 63 Body temperature",
+   "q": "How do pyrogens cause fever?",
+   "options": [
+    "Direct hypothalamic destruction",
+    "Increased sweating",
+    "Reduced thyroxine",
+    "IL-1 and PGE2 raise the hypothalamic set point"
+   ],
+   "answer": 3,
+   "explain": "The body then behaves as if too cold, causing vasoconstriction and shivering until the new set point is reached.",
+   "verified": false,
+   "open": {
+    "q": "How do pyrogens cause fever?",
+    "accept": [
+     "raise set point",
+     "reset hypothalamic set point",
+     "interleukin-1",
+     "prostaglandin E2",
+     "PGE2",
+     "resets the set point"
+    ]
+   }
+  },
+  {
+   "id": "skn-031",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 63 Body temperature",
+   "q": "How do antipyretics such as aspirin and paracetamol lower fever?",
+   "options": [
+    "By inhibiting interleukin-1 release from bacteria",
+    "By reducing thyroxine secretion",
+    "By inhibiting prostaglandin synthesis (cyclooxygenase)",
+    "By blocking sweat glands"
+   ],
+   "answer": 2,
+   "explain": "Lower PGE2 in the hypothalamus returns the set point to normal.",
+   "verified": false,
+   "open": {
+    "q": "How do antipyretics such as aspirin and paracetamol lower fever?",
+    "accept": [
+     "inhibit cyclooxygenase",
+     "COX inhibition",
+     "block prostaglandin synthesis",
+     "inhibit PGE2",
+     "inhibit prostaglandins"
+    ]
+   }
+  },
+  {
+   "id": "skn-032",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 63 Body temperature",
+   "q": "What distinguishes heat stroke from heat exhaustion?",
+   "options": [
+    "Core temperature above about 40 °C with central nervous system dysfunction",
+    "Profuse sweating with a normal core temperature",
+    "A raised hypothalamic set point caused by PGE2",
+    "Shivering with a falling core temperature"
+   ],
+   "answer": 0,
+   "explain": "Heat stroke is defined by severe hyperthermia with central nervous system dysfunction. Sweating may be present, particularly in exertional heat stroke, so anhidrosis is not a required distinguishing feature.",
+   "verified": false,
+   "open": {
+    "q": "What distinguishes heat stroke from heat exhaustion?",
+    "accept": [
+     "temperature over 40",
+     "core temperature above 40",
+     "confusion",
+     "altered mental status",
+     "CNS dysfunction",
+     "central nervous system dysfunction",
+     "severe hyperthermia"
+    ]
+   }
+  },
+  {
+   "id": "skn-033",
+   "type": "mcq",
+   "level": 1,
+   "sub": "Ch 63 Body temperature",
+   "q": "Which hormone increases heat production over days to weeks of cold exposure?",
+   "options": [
+    "Insulin",
+    "Aldosterone",
+    "Thyroxine",
+    "Oxytocin"
+   ],
+   "answer": 2,
+   "explain": "It raises basal metabolic rate.",
+   "verified": false,
+   "open": {
+    "q": "Which hormone increases heat production over days to weeks of cold exposure?",
+    "accept": [
+     "thyroxine",
+     "t4",
+     "thyroid hormone"
+    ]
+   }
+  },
+  {
+   "id": "skn-034",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 63 Body temperature",
+   "q": "How does brown fat generate heat?",
+   "options": [
+    "Shivering",
+    "Thermogenin uncouples oxidative phosphorylation",
+    "Sweating",
+    "Radiation"
+   ],
+   "answer": 1,
+   "explain": "Energy from the proton gradient is released as heat instead of making ATP. It is important in newborns.",
+   "verified": false,
+   "open": {
+    "q": "How does brown fat generate heat?",
+    "accept": [
+     "uncoupling protein",
+     "thermogenin",
+     "UCP1",
+     "uncoupling oxidative phosphorylation"
+    ]
+   }
+  },
+  {
+   "id": "skn-035",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 63 Body temperature",
+   "q": "During exposure to a cold environment, which hypothalamic response helps conserve body heat?",
+   "options": [
+    "Cutaneous vasoconstriction",
+    "Increased sweating",
+    "Cutaneous vasodilation",
+    "Inhibition of shivering"
+   ],
+   "answer": 0,
+   "explain": "Cold-sensitive pathways activate hypothalamic heat-conservation responses, including cutaneous vasoconstriction, which reduces heat transfer from the body core to the skin.",
+   "verified": false,
+   "open": {
+    "q": "What cutaneous vascular response helps conserve heat during cold exposure?",
+    "accept": [
+     "cutaneous vasoconstriction",
+     "skin vasoconstriction"
+    ]
+   }
+  },
+  {
+   "id": "skn-036",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A patient with severe heat stroke has a core temperature of 41.5 °C and altered mental status after prolonged exertion. Which feature best distinguishes this condition from an uncomplicated fever?",
+   "options": [
+    "The hypothalamic set point is raised by prostaglandin E2",
+    "Heat production is always increased by shivering",
+    "Thermoregulatory heat loss is overwhelmed without a raised hypothalamic set point",
+    "The hypothalamus deliberately maintains a higher set point"
+   ],
+   "answer": 2,
+   "explain": "Heat stroke is a form of hyperthermia in which heat gain or production exceeds heat dissipation; the hypothalamic set point is not reset upward as it is in fever.",
+   "verified": false,
+   "open": {
+    "q": "What distinguishes heat stroke from fever at the hypothalamic level?",
+    "accept": [
+     "set point is not raised",
+     "normal set point",
+     "heat loss overwhelmed"
+    ]
+   }
+  },
+  {
+   "id": "skn-037",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A newborn has limited ability to shiver but can generate heat through brown adipose tissue. Which mechanism is responsible?",
+   "options": [
+    "Uncoupling of oxidative phosphorylation by thermogenin (UCP1)",
+    "Inhibition of the electron transport chain by cyanide",
+    "Increased ATP synthesis through ATP synthase",
+    "Reduced mitochondrial fatty-acid oxidation"
+   ],
+   "answer": 0,
+   "explain": "Thermogenin (uncoupling protein 1) in brown-fat mitochondria permits proton re-entry without ATP synthesis, dissipating the proton gradient as heat.",
+   "verified": false,
+   "open": {
+    "q": "Which mitochondrial protein mediates non-shivering thermogenesis in brown adipose tissue?",
+    "accept": [
+     "thermogenin",
+     "UCP1",
+     "uncoupling protein 1"
+    ]
+   }
+  },
+  {
+   "id": "skn-038",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "During prolonged exposure to a hot environment, a previously unacclimatised worker begins to sweat more efficiently. Which adaptation is expected with heat acclimatisation?",
+   "options": [
+    "Reduced sweat production and increased sodium loss",
+    "Earlier onset of sweating with more dilute sweat",
+    "Complete abolition of cutaneous vasodilation",
+    "A higher core-temperature threshold for sweating"
+   ],
+   "answer": 1,
+   "explain": "Heat acclimatisation increases sweating capacity and promotes earlier sweating; aldosterone-mediated sodium conservation makes sweat more dilute, reducing salt loss.",
+   "verified": false,
+   "open": {
+    "q": "What happens to sweating during heat acclimatisation?",
+    "accept": [
+     "earlier onset",
+     "more dilute sweat",
+     "increased sweating with reduced salt loss"
+    ]
+   }
+  },
+  {
+   "id": "skn-039",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A person immersed in cold water loses body heat rapidly. Which physical principle explains why this environment can cause faster heat loss than exposure to cold air at the same temperature?",
+   "options": [
+    "Water has a much greater capacity to transfer heat from the body than air",
+    "Water prevents conduction from the skin",
+    "The body loses heat only by evaporation in water",
+    "Water increases the hypothalamic set point"
+   ],
+   "answer": 0,
+   "explain": "Water conducts and convects heat away from the body much more effectively than air, so immersion can produce rapid core cooling even at comparable ambient temperatures.",
+   "verified": false,
+   "open": {
+    "q": "Why does immersion in cold water cause rapid heat loss compared with cold air?",
+    "accept": [
+     "water transfers heat more effectively",
+     "greater thermal conductivity",
+     "greater heat capacity and conductivity"
+    ]
+   }
+  },
+  {
+   "id": "skn-040",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A febrile patient is given an antipyretic drug that inhibits cyclo-oxygenase. What is the immediate thermoregulatory consequence?",
+   "options": [
+    "The hypothalamic set point rises further",
+    "Prostaglandin E2 synthesis falls and the set point returns toward normal",
+    "Sweat glands become permanently inhibited",
+    "Brown adipose tissue thermogenesis becomes obligatory"
+   ],
+   "answer": 1,
+   "explain": "Cyclo-oxygenase inhibition reduces hypothalamic prostaglandin E2 production, reversing the fever-associated elevation in the thermoregulatory set point and allowing heat-loss responses.",
+   "verified": false,
+   "open": {
+    "q": "How do cyclo-oxygenase-inhibiting antipyretics reduce fever?",
+    "accept": [
+     "reduce prostaglandin E2",
+     "inhibit prostaglandin synthesis",
+     "lower the hypothalamic set point"
+    ]
+   }
+  },
+  {
+   "id": "phys-temperature-0041",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A worker newly transferred to a hot, humid environment gradually becomes better able to tolerate prolonged work in the heat. Which change is characteristic of heat acclimatisation?",
+   "options": [
+    "Earlier onset of sweating with a more dilute sweat",
+    "Complete suppression of sweating",
+    "Reduced plasma volume and increased salt loss",
+    "Loss of cutaneous vasodilation"
+   ],
+   "answer": 0,
+   "explain": "Heat acclimatisation produces earlier, more profuse and more dilute sweating, alongside plasma-volume expansion and improved cardiovascular stability.",
+   "verified": false
+  },
+  {
+   "id": "phys-temperature-0042",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A person exposed to cold begins to shiver. Which mechanism accounts for the increased heat production?",
+   "options": [
+    "Involuntary, repetitive skeletal-muscle contractions",
+    "Reduced muscle ATP utilisation",
+    "Increased evaporation from the skin",
+    "Inhibition of sympathetic outflow"
+   ],
+   "answer": 0,
+   "explain": "Shivering consists of involuntary skeletal-muscle contractions that increase metabolic heat production without producing useful external work.",
+   "verified": false
+  },
+  {
+   "id": "phys-temperature-0043",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A patient with a hypothalamic lesion cannot mount an appropriate response to a fall in core temperature. Which normal response would have helped conserve heat?",
+   "options": [
+    "Cutaneous vasodilation and sweating",
+    "Cutaneous vasoconstriction and reduced sweating",
+    "Increased respiratory evaporation",
+    "Increased blood flow to the skin"
+   ],
+   "answer": 1,
+   "explain": "Cold defence includes cutaneous vasoconstriction to reduce heat transfer from the core to the skin and inhibition of sweating.",
+   "verified": false
+  },
+  {
+   "id": "phys-temperature-0044",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "A patient is cooled in a room where the surrounding surfaces are substantially colder than the skin. Which mode of heat transfer can occur without direct physical contact?",
+   "options": [
+    "Conduction",
+    "Radiation",
+    "Evaporation",
+    "Convection only"
+   ],
+   "answer": 1,
+   "explain": "Radiation transfers heat by electromagnetic waves between surfaces at different temperatures and does not require direct contact.",
+   "verified": false
+  },
+  {
+   "id": "phys-temperature-0045",
+   "type": "mcq",
+   "level": 2,
+   "sub": "Ch 73 Body temperature",
+   "q": "During the rising phase of an infection-related fever, a patient feels cold and develops chills even though the measured core temperature is elevated. What best explains this sensation?",
+   "options": [
+    "The hypothalamic set point has risen, making the current temperature feel too low",
+    "The hypothalamic set point has fallen below normal",
+    "Sweating has increased the core temperature",
+    "Pyrogens have permanently damaged peripheral thermoreceptors"
+   ],
+   "answer": 0,
+   "explain": "Pyrogen-mediated prostaglandin E2 raises the hypothalamic set point. Until core temperature reaches the new set point, vasoconstriction and shivering are triggered and the patient feels cold.",
+   "verified": false
+  }
+ ]
 }
