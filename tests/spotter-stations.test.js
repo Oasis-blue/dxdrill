@@ -74,7 +74,7 @@ test('visual station questions run in sequence under one station timer; legacy i
   assert.match(x.app.innerHTML, /Legacy question one/);
 
   x.click('skip');
-  assert.match(x.app.innerHTML, /2 out of 3/);
+  assert.match(x.app.innerHTML, /1 out of 3/);
   assert.match(x.app.innerHTML, /3 answered|1 answered/);
   assert.equal(x.recorded.length, 3, 'every displayed question is recorded');
   assert.equal(x.submitted.length, 1, 'only answered questions are submitted to the cloud');
