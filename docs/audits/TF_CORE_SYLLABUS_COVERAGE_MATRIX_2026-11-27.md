@@ -2,8 +2,8 @@
 
 **Date:** 27 November 2026  
 **Question-bank source:** `data/questions/tf-core-expansion.json`  
-**Source blob SHA:** `148502e7cf0aa30b0a88932105781e5c30b9da0f`  
-**Bank scope:** 433 stems / 1732 true-false statements. Counts below include both verified and draft/unverified stems.
+**Source blob SHA:** `b03746648e9c6c60272634ca343079ef1796c444`  
+**Bank scope:** 448 stems / 1,792 true-false statements. Counts below include both verified and draft/unverified stems.
 
 ## 1. Curriculum baseline and provenance
 
