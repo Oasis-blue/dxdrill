@@ -94,7 +94,7 @@
   function runView() {
     var r = S.run, it = r.items[r.i], q = it.questions[it.qi];
     var opts = it.orders[it.qi].map(function (oi, k) {
-      return '<button class="opt' + (it.picks[it.qi] === oi ? " sel" : "") + '" data-act="pick" data-oi="' + oi + '" aria-pressed="' + (it.pick === oi) + '"><span class="k">' + LETTERS[k] + '</span><span>' + esc(q.options[oi]) + '</span></button>';
+      return '<button class="opt' + (it.picks[it.qi] === oi ? " sel" : "") + '" data-act="pick" data-oi="' + oi + '" aria-pressed="' + (it.picks[it.qi] === oi) + '"><span class="k">' + LETTERS[k] + '</span><span>' + esc(q.options[oi]) + '</span></button>';
     }).join("");
     return '<div class="wrap stack sp">' +
       '<div class="top"><span id="sp-h" tabindex="-1">Station ' + (r.i + 1) + ' of ' + r.items.length + '</span><span class="sp-t' + (r.left <= 5 ? " low" : "") + '" id="sp-t" aria-label="Seconds left">' + r.left + '</span><button data-act="quit">Quit</button></div>' +
