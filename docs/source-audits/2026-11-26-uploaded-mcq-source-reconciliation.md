@@ -183,3 +183,8 @@ This is targeted gap-filling, not a claim that every numbered item in the commer
 A further cardiovascular source comparison identified a missing core distinction in the existing cardiac-cycle bank: left ventricular coronary perfusion is greatest during diastole because systolic contraction compresses intramyocardial vessels. This was added as `pc-cardiac-muscle-and-the-cardiac-cycle-041`.
 
 The cumulative reconciliation count is now **47 original questions added**. The five affected files from the 27 November work were re-fetched from `main`; each parsed as JSON, all IDs were unique within the file, and all records passed the basic four-option/answer-index/explanation checks. No new item has been marked academically verified.
+
+
+The Guyton gastrointestinal physiology chapter review identified a thinly populated digestion-and-absorption bank (four questions at the time of review) and a specific gap in absorption of small peptides. `pi-digestion-and-absorption-005` was added on proton-coupled PEPT1 transport of dipeptides and tripeptides. The file was re-fetched and structurally validated (5 questions, 5 unique IDs, no basic schema errors).
+
+The cumulative reconciliation count is now **48 original questions added**. This is a targeted source-informed addition; the full gastrointestinal chapter has not yet been reconciled question by question.
