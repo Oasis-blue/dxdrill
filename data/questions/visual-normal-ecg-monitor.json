@@ -1,0 +1,41 @@
+{
+  "topic": "pc-ecg",
+  "questions": [
+    {
+      "id": "vis-ecg-01",
+      "type": "mcq",
+      "level": 1,
+      "q": "What heart rate is displayed on the monitor in this image?",
+      "options": [
+        "88 beats/min",
+        "50 beats/min",
+        "100 beats/min",
+        "150 beats/min"
+      ],
+      "answer": 0,
+      "explain": "The monitor visibly displays a heart rate of 88 beats per minute. This is within the usual resting adult range, although the clinical context still matters.",
+      "image": "clinical/330px-Normal_electrocardiogram.jpg",
+      "alt": "Photograph of an ECG monitor displaying a regular Lead III rhythm trace and a displayed heart rate of 88 beats per minute.",
+      "credit": "Image: medipics1066, CC BY 2.0, via Wikimedia Commons.",
+      "visualStationId": "station-ecg-monitor-trace"
+    },
+    {
+      "id": "vis-ecg-02",
+      "type": "mcq",
+      "level": 2,
+      "q": "The displayed Lead III trace shows repeated QRS complexes at approximately equal intervals. Which description best fits this feature?",
+      "options": [
+        "A regular ventricular rhythm",
+        "An irregularly irregular rhythm",
+        "Ventricular standstill",
+        "A pattern of frequent ventricular ectopics"
+      ],
+      "answer": 0,
+      "explain": "The R waves appear at broadly equal intervals, supporting a regular rhythm. A single small monitor photograph is insufficient for a complete 12-lead ECG interpretation or definitive diagnosis.",
+      "image": "clinical/330px-Normal_electrocardiogram.jpg",
+      "alt": "Photograph of an ECG monitor displaying a regular Lead III rhythm trace and a displayed heart rate of 88 beats per minute.",
+      "credit": "Image: medipics1066, CC BY 2.0, via Wikimedia Commons.",
+      "visualStationId": "station-ecg-monitor-trace"
+    }
+  ]
+}
