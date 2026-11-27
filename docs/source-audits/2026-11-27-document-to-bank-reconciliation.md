@@ -567,7 +567,7 @@ The item-level register now includes all **94 numbered questions** from Chapters
 | 22. Ovaries and fallopian tubes | 28 | 5 | 23 | 0 |
 | **Chapters 19–22** | **94** | **15** | **75** | **4** |
 
-The four newly identified item-level gaps concern the arterial supply of the male urethra, venous drainage of the anterior and posterior urethra, and the arterial supply of the prostate. These are specific knowledge gaps despite existing broad coverage of male pelvic viscera. No new bank records were added in this item-mapping pass because the earlier chapter-level review had already introduced targeted male and female pelvic anatomy records; this tranche records where those records match and where detail remains uncovered.
+The four newly identified item-level gaps concern the arterial supply of the male urethra, venous drainage of the anterior and posterior urethra, the arterial supply of the prostate, and the arterial supply of the urinary bladder. These are specific knowledge gaps despite existing broad coverage of male pelvic viscera. No new bank records were added in this item-mapping pass because the earlier chapter-level review had already introduced targeted male and female pelvic anatomy records; this tranche records where those records match and where detail remains uncovered.
 
 The printed key for Chapter 22 is transcribed as it appears in the source, including its apparent repetition of the Chapter 21 key sequence; it has not been independently validated. Printed answer-key letters throughout remain source metadata only. All source-informed additions remain unverified pending academic review.
 
