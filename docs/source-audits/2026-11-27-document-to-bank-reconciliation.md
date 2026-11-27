@@ -498,3 +498,24 @@ The item-level register now includes all **25 numbered questions** from Chapter 
 The source answer keys are retained as printed metadata and have not been independently validated. Classification is based on the actual tested concept rather than chapter-level similarity.
 
 **Cumulative item-level progress:** Chapters 1–8 now contain **167 registered source questions**: **49 direct matches, 93 partial matches and 25 gaps**. This is the verified subtotal for the first eight chapters only; Chapters 9–25 remain to be registered.
+
+
+## 21. Item-level source register — Chapters 9–10 (Stomach; Duodenum, Jejunum and Ileum)
+
+The item-level register now includes all **27 numbered questions** from Chapter 9 (printed pages 50–56) and all **29 numbered questions** from Chapter 10 (printed pages 57–61). Every item records the printed answer-key letters, concept tested, matched bank IDs and direct/partial/gap status.
+
+**Chapter 9 — Stomach**
+- Direct: 1
+- Partial: 26
+- Gap: 0
+- Existing bank coverage is broad but often tests only one part of multi-statement source questions; partial classification is retained rather than overstating equivalence.
+
+**Chapter 10 — Duodenum, Jejunum and Ileum**
+- Direct: 3
+- Partial: 26
+- Gap: 0
+- Direct coverage includes first-part duodenal anatomy, the hepatopancreatic ampulla and the suspensory ligament of the duodenum. Many detailed surface relations and vascular territories remain partial.
+
+Printed answer keys are recorded as source metadata, not independently validated. Direct/partial classifications are based on the tested knowledge, not merely shared subject headings.
+
+**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 11–25 remain to be registered.
