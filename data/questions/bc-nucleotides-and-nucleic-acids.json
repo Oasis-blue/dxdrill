@@ -998,6 +998,86 @@
           "3-5 exonuclease"
         ]
       }
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-044",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Transcription",
+      "q": "A mutation prevents RNA polymerase II from efficiently initiating transcription of a protein-coding gene. Which promoter-associated complex normally helps recruit and position this polymerase at the transcription start site?",
+      "options": [
+        "General transcription factors",
+        "DNA ligase",
+        "Ribosomal subunits",
+        "Aminoacyl-tRNA synthetases"
+      ],
+      "answer": 0,
+      "explain": "General transcription factors assemble at the core promoter with RNA polymerase II to form the pre-initiation complex. They help position the polymerase and regulate initiation of transcription.",
+      "verified": false
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-045",
+      "type": "mcq",
+      "level": 2,
+      "sub": "RNA processing",
+      "q": "A eukaryotic cell produces a primary mRNA transcript but fails to add the normal 3′ polyadenylate tail. Which consequence is most likely?",
+      "options": [
+        "Reduced mRNA stability and impaired nuclear export or translation",
+        "Failure to form peptide bonds directly",
+        "Conversion of all uracil residues to thymine",
+        "Immediate duplication of the entire transcript"
+      ],
+      "answer": 0,
+      "explain": "The 3′ poly-A tail contributes to mRNA stability, nuclear export and efficient translation. Defective polyadenylation can promote rapid transcript degradation and reduce protein expression.",
+      "verified": false
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-046",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Genetic code",
+      "q": "A point mutation changes a codon from GAA to GAG, but the encoded amino acid remains the same. Which property of the genetic code explains this observation?",
+      "options": [
+        "Degeneracy",
+        "Universality is absent",
+        "The code is overlapping",
+        "Each codon specifies several amino acids"
+      ],
+      "answer": 0,
+      "explain": "The genetic code is degenerate because most amino acids are specified by more than one codon. GAA and GAG both encode glutamate, so this is a synonymous or silent substitution.",
+      "verified": false
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-047",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Molecular biology techniques",
+      "q": "During polymerase chain reaction, which component provides the free 3′ hydroxyl group from which DNA polymerase begins extending a newly synthesised strand?",
+      "options": [
+        "A short DNA primer",
+        "The denatured template alone",
+        "A restriction endonuclease",
+        "A DNA ligase molecule"
+      ],
+      "answer": 0,
+      "explain": "A short DNA primer anneals to the template and provides a free 3′ hydroxyl group for thermostable DNA polymerase to extend. PCR therefore requires primers, template DNA, nucleotides and DNA polymerase.",
+      "verified": false
+    },
+    {
+      "id": "bc-nucleotides-and-nucleic-acids-048",
+      "type": "mcq",
+      "level": 2,
+      "sub": "RNA processing",
+      "q": "A mutation disrupts the conserved GU sequence at the 5′ splice site of an intron in a eukaryotic pre-mRNA. Which process is most directly affected?",
+      "options": [
+        "Removal of the intron during pre-mRNA splicing",
+        "Addition of the 5′ cap to the transcript",
+        "Replication of the DNA template",
+        "Polyadenylation of the 3′ end"
+      ],
+      "answer": 0,
+      "explain": "The spliceosome recognises conserved splice-site sequences, including the typical GU at the 5′ end of an intron and AG at its 3′ end. Disruption can cause abnormal intron removal or exon joining.",
+      "verified": false
     }
   ]
 }
