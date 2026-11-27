@@ -185,3 +185,14 @@ Printed pages 86–102 were reviewed against the same bank. Existing coverage in
 - `APP-228`: the left renal vein's relationship to the aorta and superior mesenteric artery (nutcracker anatomy).
 
 **Verification:** the abdominal/pelvic bank was re-fetched from `main` after both writes. It now contains 225 questions with 225 unique IDs; the latest appended IDs are `APP-226`–`APP-228`. These new questions remain `verified:false` pending academic review. Chapters 14 and 18–25 have not yet been reviewed in this sequence. No claim of full-source reconciliation is made.
+
+
+### Follow-on review — Suprarenal glands through Ovaries and Uterine Tubes (chapters 18–22)
+
+Printed pages 103–128 were reviewed against the abdominal/pelvic bank. Existing coverage was found for suprarenal gland position and venous drainage, prostate zones and relations, seminal vesicle/ductus deferens anatomy, bladder anatomy and trigone landmarks, uterine supports and uterine artery–ureter relationship, ovarian supports and vessels, ovarian lymphatic drainage, and uterine tube segments and ectopic pregnancy. This was a concept-level review of the source chapter content rather than a question-by-question match for every printed MCQ.
+
+Two additional expansion questions were added:
+- `APP-229`: the oblique intramural course of the ureter as the anti-reflux mechanism at the ureterovesical junction.
+- `APP-230`: the ejaculatory duct openings in relation to the seminal colliculus (verumontanum) in the prostatic urethra.
+
+**Verification:** the abdominal/pelvic bank was re-fetched from `main` after the write. It now contains 227 questions with 227 unique IDs; the latest IDs are `APP-229` and `APP-230`. New records remain `verified:false` pending academic review. The accessible PDFDrive source's chapters 14 and 23–25 remain to be reviewed; the separate 336-page scanned Anatomy PDF remains unavailable in the current file context.
