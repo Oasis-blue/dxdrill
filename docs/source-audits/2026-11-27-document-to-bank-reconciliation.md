@@ -518,7 +518,7 @@ The item-level register now includes all **27 numbered questions** from Chapter 
 
 Printed answer keys are recorded as source metadata, not independently validated. Direct/partial classifications are based on the tested knowledge, not merely shared subject headings.
 
-**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 15–25 remain to be registered.
+**Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 19–25 remain to be registered.
 
 
 ## 22. Item-level reconciliation — Chapters 11–14 (27 November 2026)
@@ -534,3 +534,22 @@ The item-level register now covers Chapters 11–14 of *Anatomy MCQ: Thorax, Abd
 | **Chapters 1–14 cumulative** | **324** | **76** | **178** | **70** |
 
 A gap means the inspected records did not test the listed detail; it does not imply the source's printed answer key is correct. Chapters 15–25 remain outside this item-level tranche.
+
+
+## 23. Item-level reconciliation — Chapters 15–18 (27 November 2026)
+
+The 90 printed questions in Chapters 15–18 have now been entered into the item-level register and matched against both the normal Anatomy MCQ bank and the True/False bank. The mapping records the learning objective, printed answer-key letters, matched DxDrill IDs and a direct/partial/gap classification. A direct match indicates substantially the same tested fact; partial indicates that the existing record covers only part of a multi-detail source item.
+
+| Chapter | Source questions | Direct | Partial | Gap |
+|---|---:|---:|---:|---:|
+| 15. Pancreas | 35 | 5 | 30 | 0 |
+| 16. Spleen | 18 | 6 | 12 | 0 |
+| 17. Kidney and Ureters | 25 | 7 | 18 | 0 |
+| 18. Suprarenal Glands | 12 | 7 | 5 | 0 |
+| **Chapters 15–18** | **90** | **25** | **65** | **0** |
+
+The matching references include the existing targeted records `APP-202`, `APP-203`, `APP-204`, `APP-205`, `APP-206`, `APP-226`, `APP-227`, `APP-228`, `APP-237`, `APP-238`, and the topic-level T/F records `tf-gr-pancreas-001`, `tf-gr-spleen-001`, `tf-gr-kidney-001`, and `tf-gr-suprarenal-001`, among other relevant existing bank records. No additional questions were added in this item-mapping pass: the chapter-level gap review and targeted additions had already been completed, and this pass records their relationship to each printed source item rather than duplicating them.
+
+**Cumulative item-level progress:** Chapters 1–18 now contain **414 registered source questions**: **101 direct matches, 243 partial matches and 70 gaps**. The 70 gaps are all in Chapters 1–14; the absence of gaps in this four-chapter tranche reflects the coverage identified in the prior dual-bank review, not a claim that the source's printed answer key has been academically validated.
+
+Printed answer-key letters remain source metadata only. All new bank questions from the preceding chapter-level passes remain unverified pending academic review. Chapters 19–25 still require item-level registration.
