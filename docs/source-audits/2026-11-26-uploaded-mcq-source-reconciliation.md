@@ -443,3 +443,18 @@ Five original MCQs were added to each of three topic banks, guided by the upload
 All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
 
 **Cumulative source-reconciliation additions: 223 original questions** (208 previously recorded plus these 15).
+
+
+## Cardiovascular histology, renal function tests and immunochemistry — 27 November 2026
+
+Five original MCQs were added to each of three topic banks, with topics selected after checking existing question coverage:
+
+**Anatomy / Histology — cardiovascular system (6 → 11):** elastic and muscular arteries, continuous and fenestrated capillaries, and Purkinje fibres.
+
+**Physiology — renal function tests and failure (18 → 23):** interpretation of creatinine clearance, fractional sodium excretion in prerenal states, early albuminuria in diabetic kidney disease, limitations of serum creatinine as an early marker and the reticulocyte response in CKD-associated anaemia.
+
+**Medical Biochemistry — immunochemistry (50 → 55):** terminal complement deficiency and Neisseria susceptibility, CD55-mediated convertase decay, loss of CD55/CD59 in PNH, IgM classical-pathway activation and pathogen IgA proteases.
+
+All three files were committed to `main` and re-fetched for structural validation. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted source-informed expansion, not a claim that every uploaded document has been fully reconciled.
+
+**Cumulative source-reconciliation additions: 238 original questions** (223 previously recorded plus these 15).
