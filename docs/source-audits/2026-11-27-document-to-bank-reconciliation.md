@@ -115,3 +115,26 @@ The source comparison identifies areas not directly represented, or only indirec
 These are **candidate gaps**, not automatic instructions to add one question for every source item. Some source items repeat one another, some OCR wording is uncertain, and several concepts may already be tested in other subject banks. New questions should be added only after checking the full candidate stem and answer for accuracy and ensuring they are not duplicates.
 
 **Disposition:** both GIT PDFs are partially reconciled; neither is complete. The duplicated upload copies are not treated as separate sources. No verbatim source questions were imported during this cross-check.
+
+
+## Source-level reconciliation update — Anatomy MCQ (PDFDrive), 27 November 2026
+
+**Source identity correction:** the accessible Library file is `Anatomy MCQ ( PDFDrive ).pdf`, a 145-page Bartoș et al. monograph titled *Anatomy MCQ: Thorax, Abdomen and Pelvis* (2018). It is not the separate 336-page scanned file previously listed as `Anatomy MCQ.pdf`. The 336-page scan is not currently available in the active conversation files or searchable Project Library, so it remains pending access. The 145-page PDFDrive source was used for this first Anatomy comparison instead.
+
+**Work completed:** the full 145-page PDF was locally text-extracted for review. Chapters 1–2 (Thoracic Wall; Abdomino-Pelvic Wall and Diaphragm; printed pages 11–22) were compared by concept against the live Anatomy banks. The source's questions were not copied verbatim. Existing matches include thoracic cage/rib and intercostal content in `gr-thorax` (e.g. `GRTH-01`, `GRTH-03`, `GRTH-04`, `GRTH-06`, `GRTH-51`) and diaphragm/abdominal-wall content in `gr-abdomen-pelvis-and-perineum` (e.g. `APP-02`, `APP-03`, `APP-53`, `APP-54`, `APP-55`, `APP-127`). These are concept-level matches, not assertions that each source MCQ has a one-to-one identical bank item.
+
+**Confirmed targeted additions (11):**
+
+| Bank file | New IDs | Coverage added |
+|---|---|---|
+| `data/questions/gr-thorax.json` | `GRTH-80`–`GRTH-83` | Superior and inferior thoracic aperture boundaries; intrinsic thoracic wall muscle group and its nerve supply |
+| `data/questions/gr-thorax.json` | `GRTH-84`–`GRTH-86` | Serratus anterior/long thoracic nerve and scapular winging; trapezius attachments and motor supply; pectoralis minor attachments and nerve supply |
+| `data/questions/gr-abdomen-pelvis-and-perineum.json` | `APP-218`–`APP-221` | Oesophageal hiatus contents; diaphragm arterial supply; linea alba formation; posterior rectus sheath above the arcuate line |
+
+The new questions use the existing topic IDs and JSON schema. Where the source's wording or keyed answer was imprecise, the added question was corrected against standard anatomical descriptions rather than reproducing the source error. No existing question was renamed or overwritten.
+
+**Verification:** both updated JSON files were re-fetched from `main` after the writes. `gr-thorax` now contains 86 questions; `gr-abdomen-pelvis-and-perineum` now contains 218 questions. The changes were committed separately:
+- Thoracic additions: `2fb62191cdb298054e8cc5939dba2bd3babdeb26`
+- Abdominal/diaphragm additions: `9f1f74a6fb7cc16587f942a9dbb27309362b4a26`
+
+**Remaining scope:** this is only the first two chapters of the 145-page PDFDrive source. Chapters 3–25 remain to be reconciled, and the separate 336-page scanned Anatomy PDF remains inaccessible in the current file context. Therefore this update does not mark the 145-page source or the Anatomy document collection as fully reconciled.
