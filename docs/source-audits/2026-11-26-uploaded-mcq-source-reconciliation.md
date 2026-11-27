@@ -263,3 +263,18 @@ A targeted review of the enzyme/bioenergetics bank (40 questions before this pas
 The updated bank was fetched again from main: 45 questions, unique IDs, and zero basic structural errors. All five additions remain verified:false pending academic review.
 
 **Cumulative source-reconciliation additions: 83 original questions** (78 previously recorded plus these five). This was a focused topic expansion, not a full question-by-question reconciliation of the 5,000-MCQ source.
+
+
+## Inborn errors of metabolism expansion — 27 November 2026
+
+A focused review of the inborn-errors bank (35 questions before this pass) identified several clinically important gaps across lysosomal storage disease, renal cystine handling, inherited lipoprotein disorders, copper metabolism and organic acidaemias. Five independently written MCQs were added to bc-inborn-errors-of-metabolism.json:
+
+- Arylsulfatase A deficiency in metachromatic leukodystrophy.
+- Defective lysosomal cystine export in nephropathic cystinosis.
+- LDL-receptor dysfunction in classic familial hypercholesterolaemia.
+- ATP7B dysfunction in Wilson disease.
+- Methylmalonyl-CoA mutase deficiency in methylmalonic acidaemia.
+
+The updated file was re-fetched from main: 40 questions, unique IDs, and zero basic structural errors. All five additions remain verified:false pending academic review.
+
+**Cumulative source-reconciliation additions: 88 original questions** (83 previously recorded plus these five). This is a targeted expansion; the uploaded biochemistry sources have not yet been fully reconciled question by question.
