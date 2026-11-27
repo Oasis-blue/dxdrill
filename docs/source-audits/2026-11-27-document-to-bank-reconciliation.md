@@ -519,3 +519,18 @@ The item-level register now includes all **27 numbered questions** from Chapter 
 Printed answer keys are recorded as source metadata, not independently validated. Direct/partial classifications are based on the tested knowledge, not merely shared subject headings.
 
 **Cumulative item-level progress:** Chapters 1–10 now contain **223 registered source questions**: **53 direct matches, 145 partial matches and 25 gaps**. This is the verified subtotal for the first ten chapters only; Chapters 11–25 remain to be registered.
+
+
+## 22. Item-level reconciliation — Chapters 11–14 (27 November 2026)
+
+The item-level register now covers Chapters 11–14 of *Anatomy MCQ: Thorax, Abdomen and Pelvis*. Printed answer-key letters are transcribed as source metadata and are not independently endorsed. Matching is based on the learning objective and level of detail, not topic-name similarity. Existing topic-level True/False records were considered alongside normal MCQs.
+
+| Chapter | Source questions | Direct | Partial | Gap |
+|---|---:|---:|---:|---:|
+| 11. Colon | 27 | 4 | 16 | 7 |
+| 12. Rectum and Anus | 23 | 5 | 7 | 11 |
+| 13. Liver | 26 | 5 | 6 | 15 |
+| 14. Gallbladder and Excretory System of the Liver | 25 | 9 | 4 | 12 |
+| **Chapters 1–14 cumulative** | **324** | **76** | **178** | **70** |
+
+A gap means the inspected records did not test the listed detail; it does not imply the source's printed answer key is correct. Chapters 15–25 remain outside this item-level tranche.
