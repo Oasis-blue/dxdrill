@@ -145,6 +145,6 @@ Contributors who cannot use a terminal should use the deployed `visual-checker.h
 3. Choose **Prepare GitHub upload files**. The page builds the same ordinary question JSON files, additive visual registries and manifest update as the importer, using the currently deployed repository data as its baseline.
 4. Download each generated JSON file from the page.
 5. Upload the question files and original images through GitHub's web interface. Replace the three generated shared files (`data/manifest.json`, `data/visual-assets.json`, `data/visual-stations.json`) with the downloaded versions.
-6. Open a pull request and wait for GitHub Actions. The repository-side validator remains authoritative for exact image paths, file signatures, full decoding, deployed delivery and all other repository checks. Do not merge on a failed check.
+6. Open a pull request and wait for GitHub Actions. CI checks station/asset/question references, required MCQ structure, safe image paths, image-file presence and full decoding of every registered image. It does not establish clinical correctness, licence/consent truth or live deployed delivery; those still require human review and a post-deployment visual check. Do not merge on a failed check.
 
 The browser page does not write to GitHub, create commits or bypass review. It only prepares downloadable files. The command-line importer documented above remains available to maintainers and CI workflows; it is not required for the browser-only contributor route.
