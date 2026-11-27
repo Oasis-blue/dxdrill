@@ -188,3 +188,18 @@ The cumulative reconciliation count is now **47 original questions added**. The 
 The Guyton gastrointestinal physiology chapter review identified a thinly populated digestion-and-absorption bank (four questions at the time of review) and a specific gap in absorption of small peptides. `pi-digestion-and-absorption-005` was added on proton-coupled PEPT1 transport of dipeptides and tripeptides. The file was re-fetched and structurally validated (5 questions, 5 unique IDs, no basic schema errors).
 
 The cumulative reconciliation count is now **48 original questions added**. This is a targeted source-informed addition; the full gastrointestinal chapter has not yet been reconciled question by question.
+
+
+## Three-subject expansion pass — 27 November 2026
+
+A further targeted expansion added **15 independently written MCQs**, five each across Anatomy, Physiology and Medical Biochemistry. The questions were placed in existing topic banks after checking their current stems to avoid simply repeating the bank's earlier recall items.
+
+| Subject | Topic bank | Added | New total | Focus |
+|---|---|---:|---:|---|
+| Anatomy | `ga-bones-and-joints` | 5 | 69 | Vertebral ligaments, atlanto-occipital movement, vertebral artery course, lumbar puncture level, facet joints |
+| Physiology | `phys-renal-acidbase` | 5 | 31 | Ammonium trapping, new bicarbonate generation, alpha/beta intercalated cells, acute respiratory acidosis buffering |
+| Medical Biochemistry | `bc-amino-acids-and-proteins` | 5 | 35 | PLP-dependent transamination, glutamate dehydrogenase, SAM, tyrosine catabolism, transsulfuration |
+
+The three edited files were fetched again from the current `main` branch after the writes. All parsed as JSON, every question ID was unique within its file, and all records passed basic structural checks for a non-empty stem, four options, a valid answer index and an explanation. All 15 new items remain `verified: false`; this is not academic sign-off or a full app test.
+
+**Cumulative source-reconciliation additions: 63 original questions** (48 previously recorded plus these 15). The broader source-level work remains in progress: OCR-complete Anatomy scan and chapter maps do not yet equal page-by-page question reconciliation of the large Anatomy, Physiology and Biochemistry collections.
