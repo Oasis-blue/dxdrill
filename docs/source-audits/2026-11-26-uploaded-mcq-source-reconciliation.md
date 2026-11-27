@@ -293,3 +293,18 @@ The temperature-regulation bank contained 17 questions, making it one of the sma
 The file was structurally validated before commit: all 22 records have unique IDs, a stem, four options, a valid answer index and an explanation. The five new items remain `verified: false` pending academic review. This is a targeted topic expansion, not a complete question-by-question reconciliation of the uploaded physiology books.
 
 **Cumulative source-reconciliation additions: 93 original questions** (88 previously recorded plus these five).
+
+
+## Nucleic acids and DNA repair expansion — 27 November 2026
+
+A review of the Medical Biochemistry nucleotides-and-nucleic-acids bank identified opportunities to extend its existing foundation in nucleotide chemistry, DNA structure, transcription/translation and nucleotide metabolism into clinically relevant DNA maintenance mechanisms. Five original MCQs were added:
+
+- Nucleotide excision repair and UV-induced pyrimidine dimers in xeroderma pigmentosum.
+- DNA mismatch repair defects and microsatellite instability in Lynch syndrome.
+- Telomerase structure and telomere extension.
+- Topoisomerase II and relief of torsional stress during replication.
+- 3′ to 5′ exonuclease proofreading by replicative DNA polymerases.
+
+The file was structurally validated before commit: unique IDs, non-empty stems and explanations, four options per item and valid answer indices. All five additions remain `verified: false` pending academic review. This is targeted expansion rather than exhaustive reconciliation of the uploaded biochemistry sources.
+
+**Cumulative source-reconciliation additions: 98 original questions** (93 previously recorded plus these five).
