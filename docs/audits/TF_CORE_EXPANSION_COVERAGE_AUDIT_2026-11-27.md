@@ -1,30 +1,30 @@
 # DxDrill true/false core expansion — coverage and data-quality audit
 
 **Audit date:** 27 November 2026  
-**Source:** `data/questions/tf-core-expansion.json` (blob SHA `25e3e4aa8bffac77a15f2c3e0ab69b930f19632a`)  
-**Scope:** structural inventory and broad subject-domain coverage of the 448-stem bank. This is not a full FUHSO/MDCN syllabus mapping or a fresh academic verification of question content.
+**Source:** `data/questions/tf-core-expansion.json` (blob SHA `51d1ed585279b6c2091ab41a4bac6207ef720982`)  
+**Scope:** structural inventory and broad subject-domain coverage of the 463-stem bank. This is not a full FUHSO/MDCN syllabus mapping or a fresh academic verification of question content.
 
 ## Current inventory
 
 | Measure | Result |
 |---|---:|
-| Total stems | 448 |
-| Total statements | 1,792 |
+| Total stems | 463 |
+| Total statements | 1,852 |
 | Statements per stem | 4 throughout |
 | Duplicate IDs | 0 |
-| Records with `type: "tf"` | 448 |
-| Records with at least 2 references | 448 |
-| Records with fewer than 2 references | 0 |
+| Records with `type: "tf"` | 463 |
+| Records with at least 2 reference entries | 461 |
+| Records with fewer than 2 reference entries | 2 |
 | Marked verified | 172 |
-| Draft/unverified | 276 |
+| Draft/unverified | 291 |
 
 ## Subject allocation
 
 | Subject | Stems |
 |---|---:|
-| Anatomy (gross, histology, embryology) | 132 |
+| Anatomy (gross, histology, embryology, genetics and radiological anatomy) | 137 |
 | Physiology | 142 |
-| Medical Biochemistry | 136 |
+| Medical Biochemistry | 141 |
 | Pathology/pharmacology/other existing material | 38 |
 
 The 38 additional records are not part of the three core subject totals; they include pathology, pharmacology and prescribing-related prefixes. Subject allocation is inferred from ID prefixes and should be checked against the bank's canonical subject taxonomy.
@@ -34,10 +34,12 @@ The 38 additional records are not part of the three core subject totals; they in
 **Anatomy**
 - `emb`: 14
 - `ga`: 27
+- `gen`: 1
 - `gh`: 15
 - `gr`: 35
-- `se`: 16
-- `sh`: 25
+- `ra`: 2
+- `se`: 17
+- `sh`: 26
 
 **Physiology**
 - `pb`: 11
@@ -52,8 +54,8 @@ The 38 additional records are not part of the three core subject totals; they in
 - `pr`: 15
 
 **Medical Biochemistry**
-- `ba`: 43
-- `bc`: 93
+- `ba`: 47
+- `bc`: 94
 
 ## Remediation completed
 
@@ -63,7 +65,7 @@ The initial audit identified three metadata/reference issues. All have now been 
 2. **15 reference-free Round 13 records:** supplied with two subject-appropriate textbook references each.
 3. **107 single-reference records:** retained their existing source and received a second subject-appropriate textbook reference.
 
-The current structural scan finds no records with fewer than two references. These are textbook-level references, not claim-by-claim citations. Adding references does not establish that every statement is correct and does not itself confer verified status.
+The current inventory shows that every record has at least one reference entry; 461 have two or more entries. Some older records include textbook titles alongside their HTTPS links, so the reference-entry count is not the same as the count of direct URLs. These are textbook-level references, not claim-by-claim citations. Adding references does not establish that every statement is correct and does not itself confer verified status.
 
 ## Round 22 expansion
 
@@ -71,16 +73,20 @@ Round 22 added 15 stems / 60 statements, five per core subject, targeting the sy
 
 ## Verification status
 
-172 records remain marked `verified` and 276 remain `draft-unverified`. Their statuses were not changed as part of metadata/reference cleanup. This audit did not re-check the medical accuracy of the 172 records already marked verified, nor did it promote any draft record.
+172 records remain marked `verified` and 291 remain `draft-unverified`. Their statuses were not changed as part of metadata/reference cleanup. This audit did not re-check the medical accuracy of the 172 records already marked verified, nor did it promote any draft record.
 
 ## Coverage interpretation and priorities
 
-- **Anatomy:** 132 stems span general and regional anatomy, histology, embryology and genetics. Counts alone do not prove balanced coverage. Map regional gross anatomy (head and neck, thorax, abdomen, pelvis/perineum, upper and lower limbs), neuroanatomy, organ-system histology, general histology, and early-to-late embryology as separate learning-objective groups.
-- **Physiology:** 142 stems span general, blood/body fluids, cardiovascular, respiratory, renal, gastrointestinal, endocrine, reproductive, neuro-locomotor, skin and temperature domains. Map mechanisms and practical interpretation objectives, especially cardiovascular regulation, renal handling/acid-base, respiratory gas exchange, neurophysiology and reproductive physiology.
-- **Medical Biochemistry:** 136 stems span general and applied biochemistry, including biomolecules, enzymes/bioenergetics, metabolism, amino-acid/protein metabolism, vitamins, nucleotides, haem, molecular biology and clinical applications. Explicitly map pathway integration and regulation, molecular biology/genetics, nutrition/minerals, inborn errors, and laboratory interpretation.
+- **Anatomy:** 137 stems span general and regional anatomy, histology, embryology, genetics and radiological anatomy. Counts alone do not prove balanced coverage. Map regional gross anatomy (head and neck, thorax, abdomen, pelvis/perineum, upper and lower limbs), neuroanatomy, organ-system histology, general histology, and early-to-late embryology as separate learning-objective groups.
+- **Physiology:** 147 stems span general, blood/body fluids, cardiovascular, respiratory, renal, gastrointestinal, endocrine, reproductive, neuro-locomotor, skin and temperature domains. Map mechanisms and practical interpretation objectives, especially cardiovascular regulation, renal handling/acid-base, respiratory gas exchange, neurophysiology and reproductive physiology.
+- **Medical Biochemistry:** 141 stems span general and applied biochemistry, including biomolecules, enzymes/bioenergetics, metabolism, amino-acid/protein metabolism, vitamins, nucleotides, haem, molecular biology and clinical applications. Explicitly map pathway integration and regulation, molecular biology/genetics, nutrition/minerals, inborn errors, and laboratory interpretation.
 - **Additional pathology/pharmacology material:** 39 stems exist in the same file. Keep these outside the three-core-subject denominator and map them to their own syllabus when that expansion is resumed.
 
 See the [syllabus-to-bank coverage matrix](TF_CORE_SYLLABUS_COVERAGE_MATRIX_2026-11-27.md) for NUC CCMAS course mapping, domain counts and remaining priorities.
+
+## Round 23 expansion — 27 November 2026
+
+Fifteen new stems (five each in Anatomy, Physiology and Medical Biochemistry) were added, taking the bank to 463 stems / 1,852 statements. They remain draft/unverified. The selected topics were chosen from low-count areas in the canonical curriculum inventory.
 
 ## Canonical topic reconciliation — 27 November 2026
 
