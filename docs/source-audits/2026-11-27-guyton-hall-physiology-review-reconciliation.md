@@ -1,0 +1,51 @@
+# Guyton & Hall Physiology Review (Second Edition) — DxDrill reconciliation
+
+- Source: *Guyton & Hall Physiology Review*, 2nd edition, John E. Hall, 2011.
+- Library source: `Physiology MCQs Book (1)(1).pdf`
+- Length: 433 PDF pages.
+- Extraction: text extraction completed; 15 units and approximately 1,106 numbered question-stem starts detected. Some case-based questions share stems or use grouped question ranges, so this count is a structural count rather than a verified count of independent questions.
+- Scope: physiology banks only. Existing curriculum and topic IDs are retained.
+
+## Unit-to-curriculum routing
+
+| Source unit | Source subject | Existing DxDrill topic routing |
+|---|---|---|
+| I | Cell and general physiology | `pg-cell-physiology-and-membrane-transport`, `pg-homeostasis` |
+| II | Membrane physiology, nerve and muscle | `pg-cell-physiology-and-membrane-transport`, `pl-excitable-tissues-and-action-potentials`, `pl-synapses-and-neurotransmitters`, `phys-muscle` |
+| III | The heart | `pc-cardiac-muscle-and-the-cardiac-cycle`, `pc-ecg`, `pc-cardiac-output` |
+| IV | The circulation | `pc-arterial-pressure-and-peripheral-resistance`, `pc-special-circulations`, `pc-control-of-cardiovascular-function` |
+| V | Body fluids and kidneys | `pb-fluid-compartments`, `pn-fluid-and-electrolyte-balance`, `phys-renal-structure`, `phys-urine-formation`, `phys-urine-concentration`, `phys-renal-acidbase`, `phys-renal-tests-failure`, `phys-micturition`, `phys-dialysis-diuretics`, `phys-renal-endocrine` |
+| VI | Blood cells, immunity and coagulation | `pb-red-blood-cells`, `pb-white-blood-cells-and-immunity`, `pb-platelets-and-haemostasis`, `pb-blood-groups` |
+| VII | Respiration | `pr-mechanics-of-breathing`, `pr-transport-of-respiratory-gases`, `pr-pulmonary-function-tests`, `pr-control-of-respiration` |
+| VIII | Aviation, space and deep-sea diving | `pr-hypoxia-and-special-environments` |
+| IX | General principles and sensory physiology | `pl-excitable-tissues-and-action-potentials`, `pl-synapses-and-neurotransmitters`, `pl-receptors-and-reflexes` |
+| X | Special senses | `pl-special-senses` |
+| XI | Motor and integrative neurophysiology | `pl-spinal-cord-brain-stem-cerebellum-and-basal-gang`, `pl-control-of-posture-and-movement`, `pl-cerebrum-eeg-sleep-and-higher-functions` |
+| XII | Gastrointestinal physiology | `pi-motor-functions-of-the-gi-tract`, `pi-digestion-and-absorption`, `pi-accessory-organs` |
+| XIII | Metabolism and temperature regulation | `pi-diets-bmr-and-malnutrition`, `phys-temperature`, plus relevant existing metabolic/endocrine topics |
+| XIV | Endocrinology and reproduction | `pe-hypothalamus-and-pituitary`, `pe-adrenal-glands`, `pe-pancreas`, `pe-gonadal-hormones`, `pe-other-hormones`, `pp-puberty`, `pp-male-reproductive-system`, `pp-female-reproductive-system-and-ovarian-cycle`, `pp-pregnancy-and-parturition`, `pp-contraception` |
+| XV | Sports physiology | Existing muscle, cardiovascular, respiratory and metabolic topics as appropriate; no new curriculum topic created. |
+
+## First remediation batch committed
+
+Fifteen original, source-informed MCQs were added to underpopulated existing topics:
+
+- `pb-platelets-and-haemostasis`: 3 additions (bank total 5)
+- `pb-blood-groups`: 3 additions (bank total 5)
+- `pe-hypothalamus-and-pituitary`: 3 additions (bank total 5)
+- `pe-adrenal-glands`: 3 additions (bank total 5)
+- `pe-pancreas`: 3 additions (bank total 7)
+
+All 15 additions are marked `verified:false` and require academic review. The additions use existing topic IDs and sequential IDs; no curriculum topic was created or renamed.
+
+## Validation performed
+
+- Re-fetched all five modified files from `main`.
+- JSON parsing succeeded for all five files.
+- IDs are unique within each modified file.
+- The 15 new questions are unverified, as intended.
+- No source question text or answer-key passage was copied verbatim.
+
+## Remaining work — not yet complete
+
+This is a progress checkpoint, not a claim that all 1,106 stem starts have been reconciled. The full item-by-item audit against both MCQ and true/false banks remains to be completed across all 15 units. Further additions should follow only after matching individual source items to existing coverage and identifying genuine gaps. The printed source answer key has not been independently validated.
