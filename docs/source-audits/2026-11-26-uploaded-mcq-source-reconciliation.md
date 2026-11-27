@@ -178,3 +178,8 @@ The Elhariry GIT scan and Guyton physiology source review identified two additio
 **Cumulative source-reconciliation additions: 46 original questions** (41 recorded before the 27 November pass, plus five subsequent additions). The four updated topic files were re-fetched from `main`; all parsed as JSON, had unique IDs, and passed basic structural validation. All new questions remain `verified: false`.
 
 This is targeted gap-filling, not a claim that every numbered item in the commercial sources has been imported. The source books are being used to guide independent, curriculum-aligned question creation; their question wording is not being copied wholesale.
+
+
+A further cardiovascular source comparison identified a missing core distinction in the existing cardiac-cycle bank: left ventricular coronary perfusion is greatest during diastole because systolic contraction compresses intramyocardial vessels. This was added as `pc-cardiac-muscle-and-the-cardiac-cycle-041`.
+
+The cumulative reconciliation count is now **47 original questions added**. The five affected files from the 27 November work were re-fetched from `main`; each parsed as JSON, all IDs were unique within the file, and all records passed the basic four-option/answer-index/explanation checks. No new item has been marked academically verified.
