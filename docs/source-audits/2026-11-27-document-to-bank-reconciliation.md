@@ -571,4 +571,22 @@ The four newly identified item-level gaps concern the arterial supply of the mal
 
 The printed key for Chapter 22 is transcribed as it appears in the source, including its apparent repetition of the Chapter 21 key sequence; it has not been independently validated. Printed answer-key letters throughout remain source metadata only. All source-informed additions remain unverified pending academic review.
 
-**Cumulative item-level progress:** Chapters 1–22 now contain **508 registered source questions**: **116 direct matches, 318 partial matches and 74 gaps**. Chapters 23–25 (76 source questions) remain for the final item-level tranche.
+**Cumulative item-level progress:** Chapters 1–22 now contain **508 registered source questions**: **116 direct matches, 318 partial matches and 74 gaps**. The final item-level tranche, Chapters 23–25, is now complete: all 584 numbered source questions have been registered.
+
+
+## 25. Item-level reconciliation — Chapters 23–25 (27 November 2026)
+
+The final **76 source questions** have now been entered into the item-level register and reviewed against the normal Anatomy MCQ bank and the True/False bank. This completes the item-level inventory of all **584 numbered questions** in the source document.
+
+| Chapter | Source questions | Direct | Partial | Gap |
+|---|---:|---:|---:|---:|
+| 23. Arteries, veins and nerves | 25 | 4 | 15 | 6 |
+| 24. Peritoneum | 25 | 4 | 21 | 0 |
+| 25. Pelvic cavity and perineum | 26 | 6 | 20 | 0 |
+| **Chapters 23–25** | **76** | **14** | **56** | **6** |
+
+The six gaps in Chapter 23 concern the branches of the thoracic aorta, branches of the abdominal aorta, splenic artery collaterals, lumbar plexus branches, cavocaval anastomoses and the afferent fibres of the coeliac plexus. These are specific uncovered facts; broader coverage of abdominal/pelvic vessels and nerves was not treated as a direct substitute. Chapters 24–25 contain no item-level gaps in this comparison, although many multi-detail source questions remain partial because the bank tests only part of their scope.
+
+**Completed-source cumulative totals:** all **584 source questions** are now registered: **130 direct matches, 374 partial matches and 80 gaps**. A direct match means substantially the same tested fact is represented; partial means only some of the source item's tested detail is covered; gap means no suitable record was identified in the inspected banks. These are coverage classifications, not a judgment that the source's printed answer keys are correct.
+
+The printed answer-key letters have been transcribed as source metadata only and have not been independently validated. Source-informed DxDrill additions remain marked unverified pending academic review. No bank content was changed in this final item-mapping tranche; the purpose here was to finish the item-to-bank register and expose remaining coverage gaps.
