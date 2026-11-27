@@ -1,473 +1,553 @@
 {
- "topic": "ba-biochemistry-of-muscle-contraction",
- "questions": [
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-001",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Contractile and Regulatory Proteins of Muscle",
-   "q": "Which protein forms the thick filaments of the sarcomere and possesses actin-activated ATPase activity in its globular head domain?",
-   "options": [
-    "Myosin II",
-    "F-actin",
-    "Tropomyosin",
-    "Titin"
-   ],
-   "answer": 0,
-   "explain": "Myosin II is a hexameric motor protein composed of two heavy chains and four light chains; its S1 globular heads bind actin and hydrolyze ATP to generate the power stroke.",
-   "verified": false,
-   "open": {
-    "q": "Name the hexameric motor protein that forms the thick filaments of skeletal muscle sarcomeres.",
-    "accept": [
-     "Myosin",
-     "Myosin II"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-002",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Contractile and Regulatory Proteins of Muscle",
-   "q": "Which subunit of the troponin complex binds calcium ions released from the sarcoplasmic reticulum to initiate skeletal muscle contraction?",
-   "options": [
-    "Troponin I",
-    "Troponin C",
-    "Troponin T",
-    "Tropomyosin"
-   ],
-   "answer": 1,
-   "explain": "Troponin C (TnC) binds four Ca2+ ions, inducing a conformational shift in troponin T and troponin I that moves tropomyosin away from the myosin-binding sites on actin.",
-   "verified": false,
-   "open": {
-    "q": "Name the specific subunit of the troponin complex that binds calcium ions during striated muscle contraction.",
-    "accept": [
-     "Troponin C",
-     "TnC"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-003",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Contractile and Regulatory Proteins of Muscle",
-   "q": "Which gigantic elastic sarcomeric protein anchors thick myosin filaments to the Z-disc and contributes to passive muscle elasticity?",
-   "options": [
-    "Nebulin",
-    "Alpha-actinin",
-    "Titin",
-    "Desmin"
-   ],
-   "answer": 2,
-   "explain": "Titin (connectin) is the largest known human polypeptide, spanning from the Z-disc to the M-line to center myosin filaments and provide passive restoring force.",
-   "verified": false,
-   "open": {
-    "q": "Name the giant elastic protein that connects thick myosin filaments to the Z-disc in a sarcomere.",
-    "accept": [
-     "Titin",
-     "Connectin"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-004",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Contractile and Regulatory Proteins of Muscle",
-   "q": "Which protein links the intracellular actin cytoskeleton of skeletal muscle fibers to the extracellular matrix via the sarcolemmal dystroglycan complex, and is absent in Duchenne muscular dystrophy?",
-   "options": [
-    "Utrophin",
-    "Spectrin",
-    "Vinculin",
-    "Dystrophin"
-   ],
-   "answer": 3,
-   "explain": "Dystrophin anchors intracellular F-actin to transmembrane beta-dystroglycan; its absence causes sarcolemmal tearing during contraction, leading to Duchenne muscular dystrophy.",
-   "verified": false,
-   "open": {
-    "q": "Name the subsarcolemmal cytoskeletal protein that is absent in Duchenne muscular dystrophy.",
-    "accept": [
-     "Dystrophin"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-005",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
-   "q": "During the cross-bridge cycle, which biochemical event directly causes the myosin head to detach from the actin filament?",
-   "options": [
-    "Binding of a fresh ATP to the myosin head",
-    "Hydrolysis of ATP into ADP and free phosphate",
-    "Release of inorganic phosphate from the myosin head",
-    "Binding of calcium ions to troponin C on the thin filament"
-   ],
-   "answer": 0,
-   "explain": "Binding of fresh ATP to the nucleotide pocket of myosin reduces its affinity for actin, detaching the cross-bridge; subsequent ATP hydrolysis re-cocks the myosin head.",
-   "verified": false,
-   "open": {
-    "q": "Which molecular event directly triggers the detachment of the myosin head from actin during the cross-bridge cycle?",
-    "accept": [
-     "Binding of ATP to myosin",
-     "ATP binding",
-     "Binding of a new ATP molecule"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-006",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
-   "q": "What is the biochemical explanation for rigor mortis after death?",
-   "options": [
-    "Excess lactate covalently crosslinks actin and myosin filaments",
-    "ATP depletion prevents myosin detachment while calcium leaks from the SR",
-    "Postmortem myosin light-chain phosphatase locks the myosin heads",
-    "Autolysis of tropomyosin exposes every actin binding site"
-   ],
-   "answer": 1,
-   "explain": "Without ATP synthesis after death, Ca2+ leaks into the sarcoplasm to expose actin binding sites, and myosin heads remain locked in the rigor conformation on actin because no ATP is available to induce detachment.",
-   "verified": false,
-   "open": {
-    "q": "Depletion of which molecule prevents myosin heads from detaching from actin, causing rigor mortis?",
-    "accept": [
-     "ATP",
-     "Adenosine triphosphate"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-007",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
-   "q": "In skeletal muscle excitation-contraction coupling, how does depolarization of the T-tubule dihydropyridine (DHP) receptor trigger calcium release from the sarcoplasmic reticulum?",
-   "options": [
-    "DHP receptor generates IP3 that opens ER calcium channels",
-    "Extracellular calcium entering via DHP channels binds troponin C directly",
-    "Mechanical coupling of the DHP receptor to the ryanodine receptor opens SR channels",
-    "DHP receptor activates adenylyl cyclase to raise cyclic AMP"
-   ],
-   "answer": 2,
-   "explain": "In skeletal muscle, the T-tubule L-type Ca2+ channel (DHP receptor) acts as a voltage sensor physically coupled to the sarcoplasmic reticulum ryanodine receptor (RyR1), unlike cardiac muscle which relies on calcium-induced calcium release.",
-   "verified": false,
-   "open": {
-    "q": "Name the calcium release channel on the sarcoplasmic reticulum membrane activated during skeletal muscle excitation-contraction coupling.",
-    "accept": [
-     "Ryanodine receptor",
-     "RyR1",
-     "Ryanodine receptor 1"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-008",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
-   "q": "A 16-year-old boy develops severe hyperthermia (41.2 C), generalized muscle rigidity, rhabdomyolysis, and hyperkalemia minutes after receiving halothane and succinylcholine during surgery. Dantrolene treats this crisis by blocking which channel?",
-   "options": [
-    "Sarcolemmal nicotinic acetylcholine receptor",
-    "T-tubule dihydropyridine receptor",
-    "SERCA calcium ATPase pump",
-    "Sarcoplasmic reticulum ryanodine receptor (RyR1)"
-   ],
-   "answer": 3,
-   "explain": "Malignant hyperthermia is triggered by volatile anesthetics or succinylcholine in patients with RYR1 mutations causing uncontrolled SR Ca2+ release; dantrolene binds RyR1 to inhibit further calcium release.",
-   "verified": false,
-   "open": {
-    "q": "Name the sarcoplasmic reticulum calcium channel inhibited by dantrolene in the treatment of malignant hyperthermia.",
-    "accept": [
-     "Ryanodine receptor",
-     "RyR1",
-     "Ryanodine receptor 1"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-009",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
-   "q": "Which ATP-dependent pump sequesters cytosolic calcium back into the sarcoplasmic reticulum lumen to allow skeletal muscle relaxation?",
-   "options": [
-    "SERCA, the sarco/endoplasmic reticulum Ca2+-ATPase",
-    "Na+/K+-ATPase, the plasma membrane sodium pump",
-    "H+/K+-ATPase, the gastric parietal proton pump",
-    "F-type ATP synthase, the mitochondrial rotary motor"
-   ],
-   "answer": 0,
-   "explain": "SERCA pumps two Ca2+ ions back into the sarcoplasmic reticulum per ATP hydrolyzed, lowering cytosolic Ca2+ so it dissociates from troponin C and tropomyosin re-blocks actin.",
-   "verified": false,
-   "open": {
-    "q": "Name the ATP-driven pump that transports calcium from the sarcoplasm back into the sarcoplasmic reticulum during muscle relaxation.",
-    "accept": [
-     "SERCA",
-     "Sarcoplasmic reticulum Ca2+-ATPase",
-     "Sarco/endoplasmic reticulum Ca2+-ATPase"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-010",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Smooth Muscle Contraction",
-   "q": "How does smooth muscle initiate contraction in response to elevated intracellular calcium, given that it lacks troponin?",
-   "options": [
-    "Calcium binds directly to actin filaments and exposes myosin sites",
-    "Calcium binds calmodulin, activating MLCK to phosphorylate myosin light chains",
-    "Calcium activates troponin C-like subunits on smooth muscle tropomyosin",
-    "Calcium directly inhibits myosin light-chain phosphatase"
-   ],
-   "answer": 1,
-   "explain": "Smooth muscle lacks troponin; Ca2+ binds calmodulin, forming a Ca2+-calmodulin complex that activates MLCK to phosphorylate the 20-kDa regulatory light chain of myosin II, enabling cross-bridge cycling.",
-   "verified": false,
-   "open": {
-    "q": "Name the enzyme activated by the calcium-calmodulin complex to initiate smooth muscle contraction.",
-    "accept": [
-     "Myosin light-chain kinase",
-     "MLCK"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-011",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Smooth Muscle Contraction",
-   "q": "How does nitric oxide (NO) induce relaxation of vascular smooth muscle?",
-   "options": [
-    "Activates adenylyl cyclase to inhibit SERCA calcium reuptake",
-    "Blocks voltage-gated potassium channels to depolarize the cell",
-    "Activates guanylyl cyclase and PKG, stimulating myosin light-chain phosphatase",
-    "Directly phosphorylates troponin I to block actin binding"
-   ],
-   "answer": 2,
-   "explain": "NO increases cGMP and activates protein kinase G (PKG), which activates myosin light-chain phosphatase (MLCP) to dephosphorylate myosin light chains and lowers cytosolic Ca2+, relaxing smooth muscle.",
-   "verified": false,
-   "open": {
-    "q": "Which phosphatase is stimulated by protein kinase G to dephosphorylate myosin light chains and relax smooth muscle?",
-    "accept": [
-     "Myosin light-chain phosphatase",
-     "MLCP"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-012",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Smooth Muscle Contraction",
-   "q": "What is the 'latch state' characteristic of tonic smooth muscle contraction?",
-   "options": [
-    "Permanent cross-bridge locking caused by intracellular ATP depletion",
-    "Rapid cycling of unphosphorylated myosin heads along actin",
-    "Calcium-independent activation of troponin T in the thin filament",
-    "MLCP dephosphorylates attached myosin heads, sustaining force at low ATP cost"
-   ],
-   "answer": 3,
-   "explain": "In the latch state, MLCP dephosphorylates myosin light chains while myosin is still bound to actin, markedly slowing detachment so tonic force is sustained with very low ATP expenditure.",
-   "verified": false,
-   "open": {
-    "q": "What term describes the energy-efficient state in smooth muscle where dephosphorylated cross-bridges remain attached to maintain sustained tone?",
-    "accept": [
-     "Latch state",
-     "Latch-bridge state"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-013",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Muscle Bioenergetics and Fiber Types",
-   "q": "Which enzyme catalyzes the reversible transfer of a high-energy phosphate group from phosphocreatine to ADP to rapidly regenerate ATP during the first few seconds of intense sprint exercise?",
-   "options": [
-    "Creatine kinase",
-    "Adenylate kinase",
-    "Pyruvate kinase",
-    "Phosphoglycerate kinase"
-   ],
-   "answer": 0,
-   "explain": "Creatine kinase (CK-MM in skeletal muscle) transfers phosphate from phosphocreatine to ADP, providing immediate ATP buffering before glycolysis and oxidative phosphorylation ramp up.",
-   "verified": false,
-   "open": {
-    "q": "Name the enzyme that transfers a high-energy phosphate from phosphocreatine to ADP to rapidly replenish ATP in contracting muscle.",
-    "accept": [
-     "Creatine kinase",
-     "Creatine phosphokinase",
-     "CK",
-     "CPK"
-    ]
-   }
-  },
-  {
- "id": "ba-biochemistry-of-muscle-contraction-014",
- "type": "mcq",
- "level": 1,
- "sub": "Muscle Bioenergetics and Fiber Types",
- "q": "Which muscle enzyme catalyzes the conversion of two ADP molecules into one ATP and one AMP during intense exercise when ATP demand outpaces supply?",
- "options": [
-  "Adenylate kinase",
-  "Creatine phosphokinase",
-  "AMP deaminase",
-  "Pyruvate carboxylase"
- ],
- "answer": 0,
- "explain": "Adenylate kinase (myokinase) catalyzes 2 ADP <-> ATP + AMP; the resulting rise in AMP allosterically activates phosphofructokinase-1 and glycogen phosphorylase b to boost ATP generation.",
- "verified": false,
- "open": {
-  "q": "Name the enzyme that converts two molecules of ADP into one ATP and one AMP in exercising skeletal muscle.",
-  "accept": [
-   "Adenylate kinase",
-   "Myokinase"
+  "topic": "ba-biochemistry-of-muscle-contraction",
+  "questions": [
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-001",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Contractile and Regulatory Proteins of Muscle",
+      "q": "Which protein forms the thick filaments of the sarcomere and possesses actin-activated ATPase activity in its globular head domain?",
+      "options": [
+        "Myosin II",
+        "F-actin",
+        "Tropomyosin",
+        "Titin"
+      ],
+      "answer": 0,
+      "explain": "Myosin II is a hexameric motor protein composed of two heavy chains and four light chains; its S1 globular heads bind actin and hydrolyze ATP to generate the power stroke.",
+      "verified": false,
+      "open": {
+        "q": "Name the hexameric motor protein that forms the thick filaments of skeletal muscle sarcomeres.",
+        "accept": [
+          "Myosin",
+          "Myosin II"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-002",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Contractile and Regulatory Proteins of Muscle",
+      "q": "Which subunit of the troponin complex binds calcium ions released from the sarcoplasmic reticulum to initiate skeletal muscle contraction?",
+      "options": [
+        "Troponin I",
+        "Troponin C",
+        "Troponin T",
+        "Tropomyosin"
+      ],
+      "answer": 1,
+      "explain": "Troponin C (TnC) binds four Ca2+ ions, inducing a conformational shift in troponin T and troponin I that moves tropomyosin away from the myosin-binding sites on actin.",
+      "verified": false,
+      "open": {
+        "q": "Name the specific subunit of the troponin complex that binds calcium ions during striated muscle contraction.",
+        "accept": [
+          "Troponin C",
+          "TnC"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-003",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Contractile and Regulatory Proteins of Muscle",
+      "q": "Which gigantic elastic sarcomeric protein anchors thick myosin filaments to the Z-disc and contributes to passive muscle elasticity?",
+      "options": [
+        "Nebulin",
+        "Alpha-actinin",
+        "Titin",
+        "Desmin"
+      ],
+      "answer": 2,
+      "explain": "Titin (connectin) is the largest known human polypeptide, spanning from the Z-disc to the M-line to center myosin filaments and provide passive restoring force.",
+      "verified": false,
+      "open": {
+        "q": "Name the giant elastic protein that connects thick myosin filaments to the Z-disc in a sarcomere.",
+        "accept": [
+          "Titin",
+          "Connectin"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-004",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Contractile and Regulatory Proteins of Muscle",
+      "q": "Which protein links the intracellular actin cytoskeleton of skeletal muscle fibers to the extracellular matrix via the sarcolemmal dystroglycan complex, and is absent in Duchenne muscular dystrophy?",
+      "options": [
+        "Utrophin",
+        "Spectrin",
+        "Vinculin",
+        "Dystrophin"
+      ],
+      "answer": 3,
+      "explain": "Dystrophin anchors intracellular F-actin to transmembrane beta-dystroglycan; its absence causes sarcolemmal tearing during contraction, leading to Duchenne muscular dystrophy.",
+      "verified": false,
+      "open": {
+        "q": "Name the subsarcolemmal cytoskeletal protein that is absent in Duchenne muscular dystrophy.",
+        "accept": [
+          "Dystrophin"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-005",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+      "q": "During the cross-bridge cycle, which biochemical event directly causes the myosin head to detach from the actin filament?",
+      "options": [
+        "Binding of a fresh ATP to the myosin head",
+        "Hydrolysis of ATP into ADP and free phosphate",
+        "Release of inorganic phosphate from the myosin head",
+        "Binding of calcium ions to troponin C on the thin filament"
+      ],
+      "answer": 0,
+      "explain": "Binding of fresh ATP to the nucleotide pocket of myosin reduces its affinity for actin, detaching the cross-bridge; subsequent ATP hydrolysis re-cocks the myosin head.",
+      "verified": false,
+      "open": {
+        "q": "Which molecular event directly triggers the detachment of the myosin head from actin during the cross-bridge cycle?",
+        "accept": [
+          "Binding of ATP to myosin",
+          "ATP binding",
+          "Binding of a new ATP molecule"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+      "q": "What is the biochemical explanation for rigor mortis after death?",
+      "options": [
+        "Excess lactate covalently crosslinks actin and myosin filaments",
+        "ATP depletion prevents myosin detachment while calcium leaks from the SR",
+        "Postmortem myosin light-chain phosphatase locks the myosin heads",
+        "Autolysis of tropomyosin exposes every actin binding site"
+      ],
+      "answer": 1,
+      "explain": "Without ATP synthesis after death, Ca2+ leaks into the sarcoplasm to expose actin binding sites, and myosin heads remain locked in the rigor conformation on actin because no ATP is available to induce detachment.",
+      "verified": false,
+      "open": {
+        "q": "Depletion of which molecule prevents myosin heads from detaching from actin, causing rigor mortis?",
+        "accept": [
+          "ATP",
+          "Adenosine triphosphate"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+      "q": "In skeletal muscle excitation-contraction coupling, how does depolarization of the T-tubule dihydropyridine (DHP) receptor trigger calcium release from the sarcoplasmic reticulum?",
+      "options": [
+        "DHP receptor generates IP3 that opens ER calcium channels",
+        "Extracellular calcium entering via DHP channels binds troponin C directly",
+        "Mechanical coupling of the DHP receptor to the ryanodine receptor opens SR channels",
+        "DHP receptor activates adenylyl cyclase to raise cyclic AMP"
+      ],
+      "answer": 2,
+      "explain": "In skeletal muscle, the T-tubule L-type Ca2+ channel (DHP receptor) acts as a voltage sensor physically coupled to the sarcoplasmic reticulum ryanodine receptor (RyR1), unlike cardiac muscle which relies on calcium-induced calcium release.",
+      "verified": false,
+      "open": {
+        "q": "Name the calcium release channel on the sarcoplasmic reticulum membrane activated during skeletal muscle excitation-contraction coupling.",
+        "accept": [
+          "Ryanodine receptor",
+          "RyR1",
+          "Ryanodine receptor 1"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-008",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+      "q": "A 16-year-old boy develops severe hyperthermia (41.2 C), generalized muscle rigidity, rhabdomyolysis, and hyperkalemia minutes after receiving halothane and succinylcholine during surgery. Dantrolene treats this crisis by blocking which channel?",
+      "options": [
+        "Sarcolemmal nicotinic acetylcholine receptor",
+        "T-tubule dihydropyridine receptor",
+        "SERCA calcium ATPase pump",
+        "Sarcoplasmic reticulum ryanodine receptor (RyR1)"
+      ],
+      "answer": 3,
+      "explain": "Malignant hyperthermia is triggered by volatile anesthetics or succinylcholine in patients with RYR1 mutations causing uncontrolled SR Ca2+ release; dantrolene binds RyR1 to inhibit further calcium release.",
+      "verified": false,
+      "open": {
+        "q": "Name the sarcoplasmic reticulum calcium channel inhibited by dantrolene in the treatment of malignant hyperthermia.",
+        "accept": [
+          "Ryanodine receptor",
+          "RyR1",
+          "Ryanodine receptor 1"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-009",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Cross-Bridge Cycle and Excitation-Contraction Coupling",
+      "q": "Which ATP-dependent pump sequesters cytosolic calcium back into the sarcoplasmic reticulum lumen to allow skeletal muscle relaxation?",
+      "options": [
+        "SERCA, the sarco/endoplasmic reticulum Ca2+-ATPase",
+        "Na+/K+-ATPase, the plasma membrane sodium pump",
+        "H+/K+-ATPase, the gastric parietal proton pump",
+        "F-type ATP synthase, the mitochondrial rotary motor"
+      ],
+      "answer": 0,
+      "explain": "SERCA pumps two Ca2+ ions back into the sarcoplasmic reticulum per ATP hydrolyzed, lowering cytosolic Ca2+ so it dissociates from troponin C and tropomyosin re-blocks actin.",
+      "verified": false,
+      "open": {
+        "q": "Name the ATP-driven pump that transports calcium from the sarcoplasm back into the sarcoplasmic reticulum during muscle relaxation.",
+        "accept": [
+          "SERCA",
+          "Sarcoplasmic reticulum Ca2+-ATPase",
+          "Sarco/endoplasmic reticulum Ca2+-ATPase"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Smooth Muscle Contraction",
+      "q": "How does smooth muscle initiate contraction in response to elevated intracellular calcium, given that it lacks troponin?",
+      "options": [
+        "Calcium binds directly to actin filaments and exposes myosin sites",
+        "Calcium binds calmodulin, activating MLCK to phosphorylate myosin light chains",
+        "Calcium activates troponin C-like subunits on smooth muscle tropomyosin",
+        "Calcium directly inhibits myosin light-chain phosphatase"
+      ],
+      "answer": 1,
+      "explain": "Smooth muscle lacks troponin; Ca2+ binds calmodulin, forming a Ca2+-calmodulin complex that activates MLCK to phosphorylate the 20-kDa regulatory light chain of myosin II, enabling cross-bridge cycling.",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme activated by the calcium-calmodulin complex to initiate smooth muscle contraction.",
+        "accept": [
+          "Myosin light-chain kinase",
+          "MLCK"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-011",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Smooth Muscle Contraction",
+      "q": "How does nitric oxide (NO) induce relaxation of vascular smooth muscle?",
+      "options": [
+        "Activates adenylyl cyclase to inhibit SERCA calcium reuptake",
+        "Blocks voltage-gated potassium channels to depolarize the cell",
+        "Activates guanylyl cyclase and PKG, stimulating myosin light-chain phosphatase",
+        "Directly phosphorylates troponin I to block actin binding"
+      ],
+      "answer": 2,
+      "explain": "NO increases cGMP and activates protein kinase G (PKG), which activates myosin light-chain phosphatase (MLCP) to dephosphorylate myosin light chains and lowers cytosolic Ca2+, relaxing smooth muscle.",
+      "verified": false,
+      "open": {
+        "q": "Which phosphatase is stimulated by protein kinase G to dephosphorylate myosin light chains and relax smooth muscle?",
+        "accept": [
+          "Myosin light-chain phosphatase",
+          "MLCP"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-012",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Smooth Muscle Contraction",
+      "q": "What is the 'latch state' characteristic of tonic smooth muscle contraction?",
+      "options": [
+        "Permanent cross-bridge locking caused by intracellular ATP depletion",
+        "Rapid cycling of unphosphorylated myosin heads along actin",
+        "Calcium-independent activation of troponin T in the thin filament",
+        "MLCP dephosphorylates attached myosin heads, sustaining force at low ATP cost"
+      ],
+      "answer": 3,
+      "explain": "In the latch state, MLCP dephosphorylates myosin light chains while myosin is still bound to actin, markedly slowing detachment so tonic force is sustained with very low ATP expenditure.",
+      "verified": false,
+      "open": {
+        "q": "What term describes the energy-efficient state in smooth muscle where dephosphorylated cross-bridges remain attached to maintain sustained tone?",
+        "accept": [
+          "Latch state",
+          "Latch-bridge state"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-013",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Muscle Bioenergetics and Fiber Types",
+      "q": "Which enzyme catalyzes the reversible transfer of a high-energy phosphate group from phosphocreatine to ADP to rapidly regenerate ATP during the first few seconds of intense sprint exercise?",
+      "options": [
+        "Creatine kinase",
+        "Adenylate kinase",
+        "Pyruvate kinase",
+        "Phosphoglycerate kinase"
+      ],
+      "answer": 0,
+      "explain": "Creatine kinase (CK-MM in skeletal muscle) transfers phosphate from phosphocreatine to ADP, providing immediate ATP buffering before glycolysis and oxidative phosphorylation ramp up.",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme that transfers a high-energy phosphate from phosphocreatine to ADP to rapidly replenish ATP in contracting muscle.",
+        "accept": [
+          "Creatine kinase",
+          "Creatine phosphokinase",
+          "CK",
+          "CPK"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-014",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Muscle Bioenergetics and Fiber Types",
+      "q": "Which muscle enzyme catalyzes the conversion of two ADP molecules into one ATP and one AMP during intense exercise when ATP demand outpaces supply?",
+      "options": [
+        "Adenylate kinase",
+        "Creatine phosphokinase",
+        "AMP deaminase",
+        "Pyruvate carboxylase"
+      ],
+      "answer": 0,
+      "explain": "Adenylate kinase (myokinase) catalyzes 2 ADP <-> ATP + AMP; the resulting rise in AMP allosterically activates phosphofructokinase-1 and glycogen phosphorylase b to boost ATP generation.",
+      "verified": false,
+      "open": {
+        "q": "Name the enzyme that converts two molecules of ADP into one ATP and one AMP in exercising skeletal muscle.",
+        "accept": [
+          "Adenylate kinase",
+          "Myokinase"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-015",
+      "type": "mcq",
+      "level": 1,
+      "sub": "Muscle Bioenergetics and Fiber Types",
+      "q": "Which monomeric heme protein in Type I (slow-twitch) skeletal and cardiac muscle stores oxygen and facilitates intracellular oxygen diffusion to mitochondria?",
+      "options": [
+        "Hemoglobin A",
+        "Neuroglobin",
+        "Myoglobin",
+        "Cytochrome c"
+      ],
+      "answer": 2,
+      "explain": "Myoglobin is a single-polypeptide globin with a hyperbolic oxygen dissociation curve and a much lower P50 (~2.8 mmHg) than hemoglobin, releasing O2 to mitochondria during intense muscle work.",
+      "verified": false,
+      "open": {
+        "q": "Name the monomeric oxygen-binding heme protein abundant in red slow-twitch skeletal and cardiac muscle fibers.",
+        "accept": [
+          "Myoglobin"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-016",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle Bioenergetics and Fiber Types",
+      "q": "How do Type I (slow oxidative) skeletal muscle fibers differ biochemically from Type IIb/IIx (fast glycolytic) fibers?",
+      "options": [
+        "Type I fibers have higher myosin ATPase activity and fewer mitochondria",
+        "Type I fibers rely predominantly on anaerobic glycogenolysis",
+        "Type I fibers contain less myoglobin and lower capillary density",
+        "Type I fibers are high in myoglobin and mitochondria with slow ATPase"
+      ],
+      "answer": 3,
+      "explain": "Type I (red) fibers are fatigue-resistant endurance fibers rich in myoglobin, capillaries, and mitochondria for aerobic fatty acid and glucose oxidation, whereas Type IIb (white) fibers rely on rapid anaerobic glycolysis and fast myosin ATPase.",
+      "verified": false,
+      "open": {
+        "q": "Which skeletal muscle fiber type is characterized by high myoglobin content, abundant mitochondria, slow myosin ATPase activity, and high fatigue resistance?",
+        "accept": [
+          "Type I",
+          "Type 1",
+          "Slow oxidative fibers",
+          "Red muscle fibers"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-017",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle Bioenergetics and Fiber Types",
+      "q": "During prolonged moderate-intensity aerobic exercise, how does skeletal muscle fuel utilization shift over time?",
+      "options": [
+        "Shifts from glycogen and blood glucose toward plasma free fatty acids",
+        "Shifts exclusively to amino acid oxidation within the first ten minutes",
+        "Relies solely on phosphocreatine stores throughout a full marathon",
+        "Switches from fatty acids to anaerobic lactate production"
+      ],
+      "answer": 0,
+      "explain": "Initial exercise consumes phosphocreatine and muscle glycogen, but as duration extends beyond 30-60 minutes, epinephrine and falling insulin stimulate lipolysis, making plasma free fatty acids the dominant aerobic fuel.",
+      "verified": false,
+      "open": {
+        "q": "What becomes the primary energy substrate oxidized by skeletal muscle during prolonged submaximal endurance exercise?",
+        "accept": [
+          "Free fatty acids",
+          "Fatty acids",
+          "Plasma free fatty acids"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-018",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Muscle Bioenergetics and Fiber Types",
+      "q": "In the glucose-alanine (Cahill) cycle, why does exercising skeletal muscle export amino nitrogen to the liver as alanine rather than free ammonia?",
+      "options": [
+        "Free ammonia cannot cross skeletal muscle capillary walls",
+        "Alanine safely carries nitrogen from BCAA transamination to the liver",
+        "Skeletal muscle contains a complete functional urea cycle",
+        "Alanine directly stimulates hepatic glycogenolysis and gluconeogenesis"
+      ],
+      "answer": 1,
+      "explain": "Muscle lacks urea cycle enzymes; transaminating pyruvate with glutamate forms non-toxic alanine, which travels to the liver to be converted back into glucose (for muscle) and urea (for renal excretion).",
+      "verified": false,
+      "open": {
+        "q": "Name the amino acid synthesized in skeletal muscle via transamination of pyruvate to transport nitrogen safely to the liver.",
+        "accept": [
+          "Alanine",
+          "L-alanine"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-019",
+      "type": "mcq",
+      "level": 3,
+      "sub": "Clinical Correlations of Muscle Biochemistry",
+      "q": "A 32-year-old man is rescued after being trapped under collapsed concrete for 8 hours and develops dark brown urine, acute kidney injury, hyperkalemia, and a serum creatine kinase of 85,000 U/L. Which heme protein released from damaged myocytes causes acute tubular necrosis?",
+      "options": [
+        "Hemoglobin",
+        "Haptoglobin",
+        "Myoglobin",
+        "Ceruloplasmin"
+      ],
+      "answer": 2,
+      "explain": "Crush injury causes rhabdomyolysis, releasing massive amounts of myoglobin into plasma; filtered myoglobin precipitates in renal tubules and generates free radicals, causing pigment-induced acute tubular necrosis.",
+      "verified": false,
+      "open": {
+        "q": "Name the muscle heme protein released during rhabdomyolysis that precipitates in renal tubules and causes acute kidney injury.",
+        "accept": [
+          "Myoglobin"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-020",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical Correlations of Muscle Biochemistry",
+      "q": "Why does cardiac muscle troponin I (cTnI) provide greater diagnostic specificity for myocardial infarction than total serum creatine kinase (CK)?",
+      "options": [
+        "Total CK is never elevated in patients with myocardial infarction",
+        "cTnI is cleared within 30 minutes of chest pain onset",
+        "Total CK is expressed exclusively in cardiac muscle tissue",
+        "cTnI is unique to cardiomyocytes, whereas total CK rises after skeletal muscle injury"
+      ],
+      "answer": 3,
+      "explain": "Because skeletal muscle contains abundant CK-MM (and small amounts of CK-MB), skeletal muscle injury elevates total CK, whereas cardiac troponin I has an amino acid sequence unique to myocardium.",
+      "verified": false,
+      "open": {
+        "q": "Which cardiac regulatory protein is the gold-standard serum biomarker for myocardial necrosis due to its exclusive expression in cardiomyocytes?",
+        "accept": [
+          "Cardiac troponin I",
+          "Troponin I",
+          "cTnI",
+          "Cardiac troponin"
+        ]
+      }
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-021",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Muscle contraction",
+      "q": "A patient with myasthenia gravis develops fatigable skeletal muscle weakness due to antibodies against postsynaptic nicotinic acetylcholine receptors. Which event is directly reduced at the motor end plate?",
+      "options": [
+        "End-plate depolarisation reaching threshold for a muscle action potential",
+        "Release of calcium from the sarcoplasmic reticulum by every action potential",
+        "Binding of oxygen to myoglobin",
+        "ATP synthesis by mitochondrial oxidative phosphorylation"
+      ],
+      "answer": 0,
+      "explain": "Loss of functional postsynaptic nicotinic receptors reduces the end-plate potential, making it less likely to reach threshold and trigger a muscle action potential.",
+      "verified": false
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-022",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Muscle contraction",
+      "q": "A patient develops muscle rigidity after exposure to a drug that causes uncontrolled calcium release from skeletal-muscle sarcoplasmic reticulum. Which channel is primarily implicated in malignant hyperthermia?",
+      "options": [
+        "Ryanodine receptor type 1 (RyR1)",
+        "Dihydropyridine receptor in the T-tubule as the calcium-release pore",
+        "Sarcolemmal voltage-gated sodium channel",
+        "SERCA calcium ATPase as the calcium-release channel"
+      ],
+      "answer": 0,
+      "explain": "Malignant hyperthermia is commonly associated with abnormal RyR1-mediated calcium release from the sarcoplasmic reticulum, producing sustained contraction and hypermetabolism.",
+      "verified": false
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-023",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Muscle contraction",
+      "q": "Dantrolene is administered during malignant hyperthermia. Which biochemical process does it reduce?",
+      "options": [
+        "Calcium release from the sarcoplasmic reticulum through RyR1",
+        "Calcium binding to troponin C",
+        "Acetylcholine synthesis in motor neurons",
+        "ATP binding to myosin heads"
+      ],
+      "answer": 0,
+      "explain": "Dantrolene reduces calcium release through skeletal-muscle ryanodine receptors, lowering cytosolic calcium and muscle contracture.",
+      "verified": false
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-024",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Muscle contraction",
+      "q": "A patient with severe hypocalcaemia develops carpopedal spasm. Which change in excitable tissue helps explain the increased neuromuscular excitability?",
+      "options": [
+        "Reduced extracellular calcium lowers the threshold for voltage-gated sodium channel activation",
+        "Increased extracellular calcium prevents sodium channel opening",
+        "Reduced intracellular potassium blocks all action potentials",
+        "Increased acetylcholinesterase activity prolongs end-plate depolarisation"
+      ],
+      "answer": 0,
+      "explain": "Low extracellular calcium increases the excitability of nerve membranes, in part by lowering the threshold for voltage-gated sodium channel activation.",
+      "verified": false
+    },
+    {
+      "id": "ba-biochemistry-of-muscle-contraction-025",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Clinical application: Muscle bioenergetics",
+      "q": "A patient with an inherited defect of muscle glycogen phosphorylase develops exercise-induced cramps and fails to increase blood lactate during forearm exercise. Which disorder is most likely?",
+      "options": [
+        "McArdle disease",
+        "Pompe disease",
+        "Duchenne muscular dystrophy",
+        "Myasthenia gravis"
+      ],
+      "answer": 0,
+      "explain": "McArdle disease (glycogen storage disease type V) is caused by muscle glycogen phosphorylase deficiency, impairing glycogenolysis and the rise in lactate during exercise.",
+      "verified": false
+    }
   ]
- }
-},
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-015",
-   "type": "mcq",
-   "level": 1,
-   "sub": "Muscle Bioenergetics and Fiber Types",
-   "q": "Which monomeric heme protein in Type I (slow-twitch) skeletal and cardiac muscle stores oxygen and facilitates intracellular oxygen diffusion to mitochondria?",
-   "options": [
-    "Hemoglobin A",
-    "Neuroglobin",
-    "Myoglobin",
-    "Cytochrome c"
-   ],
-   "answer": 2,
-   "explain": "Myoglobin is a single-polypeptide globin with a hyperbolic oxygen dissociation curve and a much lower P50 (~2.8 mmHg) than hemoglobin, releasing O2 to mitochondria during intense muscle work.",
-   "verified": false,
-   "open": {
-    "q": "Name the monomeric oxygen-binding heme protein abundant in red slow-twitch skeletal and cardiac muscle fibers.",
-    "accept": [
-     "Myoglobin"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-016",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle Bioenergetics and Fiber Types",
-   "q": "How do Type I (slow oxidative) skeletal muscle fibers differ biochemically from Type IIb/IIx (fast glycolytic) fibers?",
-   "options": [
-    "Type I fibers have higher myosin ATPase activity and fewer mitochondria",
-    "Type I fibers rely predominantly on anaerobic glycogenolysis",
-    "Type I fibers contain less myoglobin and lower capillary density",
-    "Type I fibers are high in myoglobin and mitochondria with slow ATPase"
-   ],
-   "answer": 3,
-   "explain": "Type I (red) fibers are fatigue-resistant endurance fibers rich in myoglobin, capillaries, and mitochondria for aerobic fatty acid and glucose oxidation, whereas Type IIb (white) fibers rely on rapid anaerobic glycolysis and fast myosin ATPase.",
-   "verified": false,
-   "open": {
-    "q": "Which skeletal muscle fiber type is characterized by high myoglobin content, abundant mitochondria, slow myosin ATPase activity, and high fatigue resistance?",
-    "accept": [
-     "Type I",
-     "Type 1",
-     "Slow oxidative fibers",
-     "Red muscle fibers"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-017",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle Bioenergetics and Fiber Types",
-   "q": "During prolonged moderate-intensity aerobic exercise, how does skeletal muscle fuel utilization shift over time?",
-   "options": [
-    "Shifts from glycogen and blood glucose toward plasma free fatty acids",
-    "Shifts exclusively to amino acid oxidation within the first ten minutes",
-    "Relies solely on phosphocreatine stores throughout a full marathon",
-    "Switches from fatty acids to anaerobic lactate production"
-   ],
-   "answer": 0,
-   "explain": "Initial exercise consumes phosphocreatine and muscle glycogen, but as duration extends beyond 30-60 minutes, epinephrine and falling insulin stimulate lipolysis, making plasma free fatty acids the dominant aerobic fuel.",
-   "verified": false,
-   "open": {
-    "q": "What becomes the primary energy substrate oxidized by skeletal muscle during prolonged submaximal endurance exercise?",
-    "accept": [
-     "Free fatty acids",
-     "Fatty acids",
-     "Plasma free fatty acids"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-018",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Muscle Bioenergetics and Fiber Types",
-   "q": "In the glucose-alanine (Cahill) cycle, why does exercising skeletal muscle export amino nitrogen to the liver as alanine rather than free ammonia?",
-   "options": [
-    "Free ammonia cannot cross skeletal muscle capillary walls",
-    "Alanine safely carries nitrogen from BCAA transamination to the liver",
-    "Skeletal muscle contains a complete functional urea cycle",
-    "Alanine directly stimulates hepatic glycogenolysis and gluconeogenesis"
-   ],
-   "answer": 1,
-   "explain": "Muscle lacks urea cycle enzymes; transaminating pyruvate with glutamate forms non-toxic alanine, which travels to the liver to be converted back into glucose (for muscle) and urea (for renal excretion).",
-   "verified": false,
-   "open": {
-    "q": "Name the amino acid synthesized in skeletal muscle via transamination of pyruvate to transport nitrogen safely to the liver.",
-    "accept": [
-     "Alanine",
-     "L-alanine"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-019",
-   "type": "mcq",
-   "level": 3,
-   "sub": "Clinical Correlations of Muscle Biochemistry",
-   "q": "A 32-year-old man is rescued after being trapped under collapsed concrete for 8 hours and develops dark brown urine, acute kidney injury, hyperkalemia, and a serum creatine kinase of 85,000 U/L. Which heme protein released from damaged myocytes causes acute tubular necrosis?",
-   "options": [
-    "Hemoglobin",
-    "Haptoglobin",
-    "Myoglobin",
-    "Ceruloplasmin"
-   ],
-   "answer": 2,
-   "explain": "Crush injury causes rhabdomyolysis, releasing massive amounts of myoglobin into plasma; filtered myoglobin precipitates in renal tubules and generates free radicals, causing pigment-induced acute tubular necrosis.",
-   "verified": false,
-   "open": {
-    "q": "Name the muscle heme protein released during rhabdomyolysis that precipitates in renal tubules and causes acute kidney injury.",
-    "accept": [
-     "Myoglobin"
-    ]
-   }
-  },
-  {
-   "id": "ba-biochemistry-of-muscle-contraction-020",
-   "type": "mcq",
-   "level": 2,
-   "sub": "Clinical Correlations of Muscle Biochemistry",
-   "q": "Why does cardiac muscle troponin I (cTnI) provide greater diagnostic specificity for myocardial infarction than total serum creatine kinase (CK)?",
-   "options": [
-    "Total CK is never elevated in patients with myocardial infarction",
-    "cTnI is cleared within 30 minutes of chest pain onset",
-    "Total CK is expressed exclusively in cardiac muscle tissue",
-    "cTnI is unique to cardiomyocytes, whereas total CK rises after skeletal muscle injury"
-   ],
-   "answer": 3,
-   "explain": "Because skeletal muscle contains abundant CK-MM (and small amounts of CK-MB), skeletal muscle injury elevates total CK, whereas cardiac troponin I has an amino acid sequence unique to myocardium.",
-   "verified": false,
-   "open": {
-    "q": "Which cardiac regulatory protein is the gold-standard serum biomarker for myocardial necrosis due to its exclusive expression in cardiomyocytes?",
-    "accept": [
-     "Cardiac troponin I",
-     "Troponin I",
-     "cTnI",
-     "Cardiac troponin"
-    ]
-   }
-  }
- ]
 }
