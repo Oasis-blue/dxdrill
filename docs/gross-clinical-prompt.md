@@ -8,7 +8,7 @@ Use this prompt for gross anatomy specimens and models, anatomical or physiology
 - Do not copy textbook scans or arbitrary search-result images.
 - Do not include identifiable patients or identifying metadata. Obtain written consent for clinical photographs of people and follow institutional rules for dissection-hall photography.
 - Mark structures on the image itself for this first release (letters/arrows). Keep markers readable on a phone and do not obscure the structure.
-- Put the actual image files in the repository under `data/img/` before import. Use `gross/`, `diagrams/`, `clinical/` or `xray/`. Do not invent a filename for an image that has not been supplied.
+- Give every supplied image a filename and folder under `data/img/` using `gross/`, `diagrams/`, `clinical/` or `xray/`. Do not invent a filename for an image that has not been supplied. You will upload the actual files through GitHub after the browser checker prepares the JSON files.
 - Compress images sensibly for mobile while retaining enough detail for identification.
 
 ## How to use
@@ -17,7 +17,7 @@ Use this prompt for gross anatomy specimens and models, anatomical or physiology
 2. Generate one intake JSON object using the schema below.
 3. Open `visual-checker.html` on the deployed DxDrill site, paste the JSON, select the corresponding local images for preview, and run the browser check. Fix every reported error.
 4. Check every image, label, answer, distractor and explanation yourself. The browser checker cannot establish clinical correctness, consent or licence truth.
-5. Upload the actual images to the declared `data/img/` folders, then run the repository validator and importer described in `docs/visual-practical-import-contract.md`. Do not import until the repository-side image decode check passes and a reviewer has approved the content.
+5. After the checker reports no errors or quarantined items, select all original images and choose **Prepare GitHub upload files**. Download each generated JSON file. Upload the question files and original images through GitHub's website, then replace the manifest and visual registry files with the generated versions. Open a pull request; GitHub Actions runs the full repository-side image decoding and validation. Do not merge until those checks pass and a reviewer has approved the content. No terminal is required.
 
 ---
 

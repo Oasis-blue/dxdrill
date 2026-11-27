@@ -135,3 +135,16 @@ node tools/import-visual-intake.js path/to/intake.json --apply
 The importer validates again immediately before planning, rejects uncertain/quarantined batches and existing IDs/files, and stages outputs before replacing repository files. It never edits the image files. Review the resulting diff and run the normal project test suite before committing. The importer is a local repository tool; it does not upload, deploy or publish anything by itself.
 
 CI covers both validator and importer tests. This makes the routine for future content additions: add the actual licensed image, prepare the intake JSON, dry-run, review, apply, inspect the diff, then submit the batch through the normal code-review/deployment process.
+
+## 8. Browser-only contributor workflow
+
+Contributors who cannot use a terminal should use the deployed `visual-checker.html` page:
+
+1. Paste the intake JSON and run the browser check.
+2. Select every original image file named by the intake and inspect its preview.
+3. Choose **Prepare GitHub upload files**. The page builds the same ordinary question JSON files, additive visual registries and manifest update as the importer, using the currently deployed repository data as its baseline.
+4. Download each generated JSON file from the page.
+5. Upload the question files and original images through GitHub's web interface. Replace the three generated shared files (`data/manifest.json`, `data/visual-assets.json`, `data/visual-stations.json`) with the downloaded versions.
+6. Open a pull request and wait for GitHub Actions. The repository-side validator remains authoritative for exact image paths, file signatures, full decoding, deployed delivery and all other repository checks. Do not merge on a failed check.
+
+The browser page does not write to GitHub, create commits or bypass review. It only prepares downloadable files. The command-line importer documented above remains available to maintainers and CI workflows; it is not required for the browser-only contributor route.
