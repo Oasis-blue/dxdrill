@@ -13,10 +13,10 @@ test('visual checker contains a syntactically valid browser script', () => {
 test('visual checker offers browser-based import preparation and file downloads', () => {
   const html = fs.readFileSync('visual-checker.html', 'utf8');
   assert.match(html, /Prepare GitHub upload files/);
-  assert.match(html, /data\\/questions\\//);
-  assert.match(html, /data\\/visual-assets\\.json/);
-  assert.match(html, /data\\/visual-stations\\.json/);
-  assert.match(html, /data\\/manifest\\.json/);
+  assert.ok(html.includes("data/questions/"));
+  assert.ok(html.includes("data/visual-assets.json"));
+  assert.ok(html.includes("data/visual-stations.json"));
+  assert.ok(html.includes("data/manifest.json"));
   assert.match(html, /Download file/);
   assert.match(html, /GitHub Actions/);
 });
