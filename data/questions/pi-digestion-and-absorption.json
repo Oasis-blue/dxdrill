@@ -99,6 +99,121 @@
         ]
       },
       "verified": false
+    },
+    {
+      "id": "pi-digestion-and-absorption-006",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Carbohydrate absorption",
+      "q": "A patient with a rare defect in intestinal fructose transport develops diarrhoea after consuming fruit juice, while glucose absorption remains intact. Which apical transporter is most likely defective?",
+      "options": [
+        "SGLT1",
+        "GLUT5",
+        "GLUT2",
+        "PEPT1"
+      ],
+      "answer": 1,
+      "explain": "Fructose enters small-intestinal enterocytes across the apical membrane by facilitated diffusion through GLUT5. Glucose and galactose use the sodium-dependent cotransporter SGLT1. GLUT2 normally mediates basolateral exit of monosaccharides.",
+      "verified": false,
+      "open": {
+        "q": "Which apical transporter mediates fructose uptake by small-intestinal enterocytes?",
+        "accept": [
+          "GLUT5"
+        ]
+      }
+    },
+    {
+      "id": "pi-digestion-and-absorption-007",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Carbohydrate absorption",
+      "q": "After glucose and galactose enter an enterocyte from the intestinal lumen, through which transporter do they normally leave across the basolateral membrane to enter portal blood?",
+      "options": [
+        "SGLT1",
+        "GLUT5",
+        "GLUT2",
+        "Na+/K+-ATPase"
+      ],
+      "answer": 2,
+      "explain": "Glucose, galactose and fructose leave enterocytes across the basolateral membrane mainly through GLUT2 by facilitated diffusion. The Na+/K+-ATPase maintains the sodium gradient that drives apical SGLT1-mediated glucose and galactose uptake.",
+      "verified": false,
+      "open": {
+        "q": "Which transporter mediates basolateral exit of absorbed monosaccharides from enterocytes?",
+        "accept": [
+          "GLUT2"
+        ]
+      }
+    },
+    {
+      "id": "pi-digestion-and-absorption-008",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Vitamin B12 absorption",
+      "q": "A patient undergoes surgical resection of the terminal ileum and later develops vitamin B12 deficiency. Which complex is normally taken up by specific receptors in this region?",
+      "options": [
+        "Vitamin B12 bound to intrinsic factor",
+        "Vitamin B12 bound to transcobalamin II",
+        "Free vitamin B12 bound to albumin",
+        "Vitamin B12 bound to haptocorrin in the stomach"
+      ],
+      "answer": 0,
+      "explain": "In the stomach, vitamin B12 is released from food and ultimately binds intrinsic factor secreted by parietal cells. The intrinsic factor–B12 complex binds cubilin-related receptors in the terminal ileum and is taken up by receptor-mediated endocytosis.",
+      "verified": false,
+      "open": {
+        "q": "In which form is vitamin B12 absorbed by receptor-mediated uptake in the terminal ileum?",
+        "accept": [
+          "Vitamin B12 bound to intrinsic factor",
+          "Intrinsic factor-vitamin B12 complex",
+          "IF-B12 complex"
+        ]
+      }
+    },
+    {
+      "id": "pi-digestion-and-absorption-009",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Bile salt absorption",
+      "q": "A patient with disease affecting the terminal ileum loses large quantities of bile salts in faeces. Which normal transport process is most directly impaired?",
+      "options": [
+        "Passive diffusion of bile salts throughout the stomach",
+        "Active sodium-dependent reabsorption of bile acids in the terminal ileum",
+        "SGLT1-mediated uptake of bile salts in the jejunum",
+        "Intrinsic factor-mediated uptake of bile salts in the colon"
+      ],
+      "answer": 1,
+      "explain": "Conjugated bile acids are efficiently reclaimed in the terminal ileum by the apical sodium-dependent bile acid transporter (ASBT). Ileal disease or resection disrupts enterohepatic circulation, reducing the bile salt pool and potentially causing fat malabsorption.",
+      "verified": false,
+      "open": {
+        "q": "Which transporter is responsible for active reabsorption of conjugated bile acids in the terminal ileum?",
+        "accept": [
+          "ASBT",
+          "Apical sodium-dependent bile acid transporter",
+          "Sodium-dependent bile acid transporter"
+        ]
+      }
+    },
+    {
+      "id": "pi-digestion-and-absorption-010",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Iron absorption",
+      "q": "A patient with iron deficiency has reduced absorption of non-haem iron from the duodenal lumen. Which apical transporter normally carries ferrous iron (Fe2+) into enterocytes?",
+      "options": [
+        "Ferroportin",
+        "Divalent metal transporter 1 (DMT1)",
+        "Transferrin receptor",
+        "Hepcidin"
+      ],
+      "answer": 1,
+      "explain": "Dietary non-haem ferric iron (Fe3+) is reduced to ferrous iron (Fe2+) at the brush border and enters duodenal enterocytes through DMT1. Ferroportin exports iron across the basolateral membrane, while hepcidin regulates ferroportin availability.",
+      "verified": false,
+      "open": {
+        "q": "Which apical transporter takes up ferrous iron into duodenal enterocytes?",
+        "accept": [
+          "DMT1",
+          "Divalent metal transporter 1"
+        ]
+      }
     }
   ]
 }
