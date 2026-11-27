@@ -1002,6 +1002,86 @@
           "hepatocyte damage"
         ]
       }
+    },
+    {
+      "id": "enzmeng-46",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Kinetics",
+      "q": "An enzyme-catalysed reaction is studied at several substrate concentrations. At very high substrate concentration, the reaction velocity approaches a maximum because:",
+      "options": [
+        "All enzyme active sites are occupied",
+        "The enzyme is converted into a substrate",
+        "The equilibrium constant becomes zero",
+        "The substrate concentration falls to zero"
+      ],
+      "answer": 0,
+      "explain": "At saturating substrate concentration, essentially all available active sites are occupied and the enzyme is operating near Vmax; adding more substrate produces little further increase in velocity.",
+      "verified": false
+    },
+    {
+      "id": "enzmeng-47",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Specificity",
+      "q": "A digestive enzyme hydrolyses peptide bonds adjacent to aromatic amino acids but has little activity against other peptide bonds. This property is best described as:",
+      "options": [
+        "Absolute specificity",
+        "Group specificity",
+        "Bond specificity",
+        "Stereospecificity"
+      ],
+      "answer": 1,
+      "explain": "Group specificity means an enzyme acts on a group of structurally related substrates or recognises a particular side-chain group. Absolute specificity is restricted to one substrate; stereospecificity distinguishes stereoisomers.",
+      "verified": false
+    },
+    {
+      "id": "enzmeng-48",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Cofactors",
+      "q": "A patient with severe dietary magnesium deficiency has impaired activity of several ATP-dependent kinases. Why is magnesium required by many of these enzymes?",
+      "options": [
+        "It forms a complex with ATP that is recognised by the enzyme",
+        "It permanently phosphorylates the enzyme",
+        "It acts as the terminal electron acceptor",
+        "It converts ATP directly into cyclic AMP"
+      ],
+      "answer": 0,
+      "explain": "Many kinases use Mg2+-ATP as the true substrate. Magnesium coordinates ATP phosphate groups, helps neutralise negative charge and supports correct substrate positioning during phosphoryl transfer.",
+      "verified": false
+    },
+    {
+      "id": "enzmeng-49",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Inhibition and Clinical Correlations",
+      "q": "A patient receiving methotrexate develops toxicity. The drug reduces tetrahydrofolate regeneration by inhibiting which enzyme?",
+      "options": [
+        "Dihydrofolate reductase",
+        "Xanthine oxidase",
+        "HMG-CoA reductase",
+        "Adenylate cyclase"
+      ],
+      "answer": 0,
+      "explain": "Methotrexate inhibits dihydrofolate reductase, reducing regeneration of tetrahydrofolate required for one-carbon transfer reactions and de novo nucleotide synthesis.",
+      "verified": false
+    },
+    {
+      "id": "enzmeng-50",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Enzyme Kinetics",
+      "q": "An enzyme follows Michaelis–Menten kinetics. A mutation reduces the enzyme's affinity for its substrate but does not alter catalytic capacity at saturation. Which kinetic change is expected?",
+      "options": [
+        "Increased Km with unchanged Vmax",
+        "Decreased Km with unchanged Vmax",
+        "Unchanged Km with decreased Vmax",
+        "Decreased Km and increased Vmax"
+      ],
+      "answer": 0,
+      "explain": "A reduction in apparent substrate affinity is reflected by an increased Km. If the amount of active enzyme and its turnover capacity are unchanged, Vmax remains the same.",
+      "verified": false
     }
   ]
 }
