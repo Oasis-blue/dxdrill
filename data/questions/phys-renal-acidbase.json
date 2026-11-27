@@ -606,6 +606,126 @@
           "excrete more bicarbonate"
         ]
       }
+    },
+    {
+      "id": "phys-renal-acidbase-NEW02",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Renal ammonium excretion",
+      "q": "A patient with chronic metabolic acidosis increases renal ammonium excretion. In tubular fluid, which reaction allows ammonia to promote acid excretion?",
+      "options": [
+        "NH3 combines with secreted H+ to form NH4+",
+        "NH4+ combines with bicarbonate to form carbonic acid",
+        "NH3 binds filtered bicarbonate to form urea",
+        "NH4+ is converted directly to molecular oxygen"
+      ],
+      "answer": 0,
+      "explain": "Renal tubular cells generate ammonia (NH3), largely from glutamine metabolism. NH3 diffuses into tubular fluid and combines with secreted H+ to form NH4+, which is relatively membrane-impermeant and is therefore trapped for urinary excretion. This mechanism increases net acid excretion.",
+      "verified": false,
+      "open": {
+        "q": "How does ammonia facilitate renal acid excretion in the tubular lumen?",
+        "accept": [
+          "NH3 combines with secreted H+ to form NH4+",
+          "Ammonia binds hydrogen ions to form ammonium",
+          "NH3 + H+ forms NH4+"
+        ]
+      }
+    },
+    {
+      "id": "phys-renal-acidbase-NEW03",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Renal acid-base handling",
+      "q": "During sustained metabolic acidosis, the kidney increases excretion of H+ as ammonium and titratable acid. What is the major acid-base benefit of this response beyond simply reclaiming filtered bicarbonate?",
+      "options": [
+        "Generation of new bicarbonate added to the blood",
+        "Permanent suppression of carbon dioxide production",
+        "Loss of all filtered bicarbonate in urine",
+        "Conversion of bicarbonate into carbon monoxide"
+      ],
+      "answer": 0,
+      "explain": "Reabsorbing filtered bicarbonate prevents its loss but does not add new bicarbonate to the body. When secreted H+ is excreted buffered as NH4+ or titratable acid, new bicarbonate is generated in tubular cells and returned to the blood, replacing bicarbonate consumed buffering non-volatile acids.",
+      "verified": false,
+      "open": {
+        "q": "What happens to plasma bicarbonate when H+ is excreted as ammonium or titratable acid?",
+        "accept": [
+          "New bicarbonate is generated and returned to the blood",
+          "New HCO3- is added to the blood",
+          "Generation of new bicarbonate"
+        ]
+      }
+    },
+    {
+      "id": "phys-renal-acidbase-NEW04",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Collecting duct acid-base regulation",
+      "q": "A patient with metabolic acidosis increases acid secretion by the collecting duct. Which renal tubular cell is principally responsible for secreting H+ through apical proton pumps?",
+      "options": [
+        "Principal cell",
+        "Alpha-intercalated cell",
+        "Beta-intercalated cell",
+        "Macula densa cell"
+      ],
+      "answer": 1,
+      "explain": "Alpha-intercalated (type A) cells of the collecting duct secrete H+ into the tubular lumen using apical H+-ATPase and H+/K+-ATPase. They return newly generated bicarbonate to the blood and are important in correcting acidosis.",
+      "verified": false,
+      "open": {
+        "q": "Which collecting-duct cell type secretes hydrogen ions during acidosis?",
+        "accept": [
+          "Alpha-intercalated cell",
+          "Type A intercalated cell",
+          "A-intercalated cell"
+        ]
+      }
+    },
+    {
+      "id": "phys-renal-acidbase-NEW05",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Collecting duct acid-base regulation",
+      "q": "In a patient with metabolic alkalosis, collecting-duct cells help eliminate excess base by secreting bicarbonate into the tubular fluid. Which cell type performs this function?",
+      "options": [
+        "Alpha-intercalated cell",
+        "Beta-intercalated cell",
+        "Principal cell",
+        "Podocyte"
+      ],
+      "answer": 1,
+      "explain": "Beta-intercalated (type B) cells are functionally opposite to alpha-intercalated cells: they secrete bicarbonate into the tubular lumen, principally via apical pendrin, and move H+ toward the blood. This supports correction of metabolic alkalosis.",
+      "verified": false,
+      "open": {
+        "q": "Which collecting-duct cell type secretes bicarbonate during metabolic alkalosis?",
+        "accept": [
+          "Beta-intercalated cell",
+          "Type B intercalated cell",
+          "B-intercalated cell"
+        ]
+      }
+    },
+    {
+      "id": "phys-renal-acidbase-NEW06",
+      "type": "mcq",
+      "level": 2,
+      "sub": "Acid-base compensation",
+      "q": "A patient develops acute respiratory acidosis after opioid-induced hypoventilation. Before substantial renal compensation occurs, which response provides the earliest buffering of the rise in arterial PCO2?",
+      "options": [
+        "Immediate chemical buffering by intracellular and extracellular non-bicarbonate buffers",
+        "Increased renal ammonium production over several days",
+        "Increased urinary bicarbonate excretion within minutes",
+        "Increased synthesis of haemoglobin by the bone marrow"
+      ],
+      "answer": 0,
+      "explain": "In acute respiratory acidosis, the rise in CO2 rapidly increases H+ through the carbonic acid system. Immediate buffering by haemoglobin, proteins and other non-bicarbonate buffers limits the fall in pH. Renal increases in H+ excretion and bicarbonate generation develop over hours to days.",
+      "verified": false,
+      "open": {
+        "q": "What is the earliest compensatory response to acute respiratory acidosis?",
+        "accept": [
+          "Chemical buffering by non-bicarbonate buffers",
+          "Immediate intracellular and extracellular buffering",
+          "Non-bicarbonate buffering"
+        ]
+      }
     }
   ]
 }
