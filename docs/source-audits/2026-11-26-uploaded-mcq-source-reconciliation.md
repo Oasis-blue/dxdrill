@@ -518,3 +518,18 @@ Five original MCQs were added to each of three existing curriculum topic banks a
 Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
 
 **Cumulative source-reconciliation additions: 298 original questions** (283 previously recorded plus these 15).
+
+
+## Connective-tissue histology, general homeostasis and vitamin biochemistry — 27 November 2026
+
+Five original MCQs were added to each of three existing curriculum topic banks after checking the canonical topic registry and current question stems:
+
+**Anatomy / Histology — connective tissue (19 → 24; topic ID: `gh-connective-tissue`):** mucous connective tissue of the umbilical cord, mast-cell degranulation, type III collagen in reticular fibres, white versus brown adipocytes, and osteoclast function.
+
+**Physiology — homeostasis (25 → 30; topic ID: `pg-homeostasis`):** insulin-mediated glucose regulation, renal collecting-duct effectors in osmoregulation, the raised hypothalamic set point in fever, PTH-mediated calcium regulation, and cephalic-phase feedforward control.
+
+**Medical Biochemistry — vitamins and coenzymes (48 → 53; topic ID: `bc-vitamins-and-coenzymes`):** riboflavin-status assessment using erythrocyte glutathione reductase, nitrous-oxide-related functional cobalamin inactivation, PTH regulation of vitamin D activation, folate depletion by methotrexate, and retinoic-acid regulation of gene transcription.
+
+Each bank's `topic` value matches an existing topic ID in `data/curriculum.json`. New questions have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted curriculum-aligned expansion, not a claim of exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 313 original questions** (298 previously recorded plus these 15).
