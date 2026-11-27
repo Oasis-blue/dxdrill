@@ -610,3 +610,15 @@ All 80 source items previously classified as gaps have now been linked to at lea
 **Remediation totals:** 67 new normal Anatomy MCQs and 12 new grouped T/F records were added across the two batches. New MCQs are marked `verified:false`; new T/F sets are marked `reviewStatus:draft-unverified` and `verified:false`. They remain pending academic review. The source's printed answer keys have not been independently validated.
 
 **Validation:** all 584 register items are reviewed against both formats; every matched bank ID resolves; and no duplicate IDs were found in the thorax, abdomen/pelvis or T/F files. Existing topic files and their topic IDs were retained; no curriculum topics were created or renamed.
+
+
+## 28. Targeted quality and partial-coverage pass (27 November 2026)
+
+A targeted quality pass was started against the remediation additions and the 403 source items previously classified as partial. The source-level reconciliation itself was not repeated. Clear corrections made in this pass:
+
+- Reworded APP-257 to test the precise relationship of the superior mesenteric vessels to the third part of the duodenum and corrected its explanation to distinguish the small-intestinal mesenteric root from the right mesocolon.
+- Corrected the curriculum topic assignment for `tf-gr-breast-003`, `tf-gr-thorax-010` and `tf-gr-thorax-011` to `gr-thorax`.
+- Rephrased the misleading negative statement in `tf-gr-rectum-002` as a direct false statement with an explicit explanation.
+- Added `tf-gr-thorax-012` to cover specific intercostal and transversus thoracis actions/attachments not adequately tested by the existing thoracic-wall questions.
+
+New material remains marked unverified/draft pending academic review. This is a targeted content correction, not a claim that every item in the source has been independently clinically validated.
