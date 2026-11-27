@@ -41,11 +41,11 @@
     return '<div class="wrap stack"><header><p class="eyebrow">Spotter</p><h1>Steeplechase</h1>' +
       '<p class="lede">A run of stations. Each shows an image and its linked question or questions for a fixed time, then moves on by itself. You cannot go back, like the real exam.</p></header>' +
       '<section class="section stack"><div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Stations from</span><span class="row tight"><button class="btn ghost small" data-act="selall">Select all</button><button class="btn ghost small" data-act="selnone">Clear</button></span></div>' + areas +
-      '<p class="hint">' + nTop + ' topic' + (nTop === 1 ? "" : "s") + ' selected · ' + avail + ' slide' + (avail === 1 ? "" : "s") + '. Numbers beside each topic are slides. More subjects appear here as they get pictures.</p></div>' +
+      '<p class="hint">' + nTop + ' topic' + (nTop === 1 ? "" : "s") + ' selected · ' + avail + ' station' + (avail === 1 ? "" : "s") + '. Numbers beside each topic are stations. More subjects appear here as they get pictures.</p></div>' +
       '<div class="field"><span class="label">Stations</span>' + seg("Stations", "n", [5, 10, 15, 20, 30], S.n, "") + '</div>' +
       '<div class="field"><span class="label">Seconds per station</span>' + seg("Seconds", "secs", [5, 10, 15, 20, 30, 45], S.secs, " s") + '</div>' +
       '<div class="field"><button class="chip toggle" data-act="bell" aria-pressed="' + S.bell + '">\uD83D\uDD14 Bell at each station change</button><p class="hint">The bell only sounds if Sound is on in the top bar.</p></div>' +
-      (avail && avail < S.n ? '<p class="hint">Only ' + avail + ' slide' + (avail === 1 ? "" : "s") + ' selected, so the run will have ' + avail + ' station' + (avail === 1 ? "" : "s") + '.</p>' : "") +
+      (avail && avail < S.n ? '<p class="hint">Only ' + avail + ' station' + (avail === 1 ? "" : "s") + ' selected, so the run will have ' + avail + ' station' + (avail === 1 ? "" : "s") + '.</p>' : "") +
       (S.note ? '<p class="note bad" role="status">' + esc(S.note) + '</p>' : "") +
       '<div class="row"><button class="btn primary" data-act="start"' + (avail ? "" : " disabled") + '>' + (avail ? 'Start ' + n + ' station' + (n === 1 ? "" : "s") + ' · about ' + Math.ceil(n * S.secs / 60) + ' min' : "Tick at least one topic") + '</button></div></section></div>';
   }
@@ -104,7 +104,7 @@
       '<div class="track"><i id="sp-bar" style="width:' + Math.round(100 * r.left / S.secs) + '%;transition:width .25s linear"></i></div>' +
       DX.qImg(q) + '<h2 class="qtext">' + esc(q.q) + '</h2><div class="opts">' + opts + '</div>' +
       '<p class="hint">You can change your answer until time is up. It moves on by itself, and there is no going back.' + (window.matchMedia && matchMedia("(pointer:fine)").matches ? " Keys: A to D." : "") + '</p>' +
-      '<div class="row tight">' + (it.qi + 1 < it.questions.length ? '<button class="btn primary small" data-act="nextq">Next question</button>' : '') + '<button class="btn ghost small" data-act="skip">Next station now</button></div></div>';
+      '<div class="row tight">' + (it.qi + 1 < it.questions.length ? '<button class="btn primary small" data-act="nextq">Next question →</button>' : '') + '</div>' + '<div class="field" style="border-top:1px solid var(--line);padding-top:12px;margin-top:8px"><p class="hint">Finished with this image? You can skip the remaining questions in this station.</p><button class="btn ghost small" data-act="skip">Skip station…</button></div></div>';
   }
 
   function endView() {
@@ -137,7 +137,7 @@
     else if (a === "setup") { S.view = "setup"; paint(); }
     else if (a === "pick") pick(Number(b.getAttribute("data-oi")));
     else if (a === "nextq") { var it = S.run.items[S.run.i]; if (it.qi + 1 < it.questions.length) { it.qi++; paint(); } }
-    else if (a === "skip") next();
+    else if (a === "skip") { if (window.confirm("Skip the rest of this station and move on? Any unanswered questions here will remain unanswered.")) next(); }
     else if (a === "quit") { stop(); S.run = null; S.view = "setup"; paint(); }
   }
   function onInput() { }
