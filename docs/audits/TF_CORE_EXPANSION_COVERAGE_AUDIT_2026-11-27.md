@@ -97,7 +97,7 @@ Fifteen new stems (five each in Anatomy, Physiology and Medical Biochemistry) we
 
 ## Canonical topic reconciliation — 27 November 2026
 
-The source bank's 98 legacy topic assignments were reviewed individually and remapped to the closest current canonical topic based on each stem's content. `docs/topic-ids.txt` was synchronized with `data/curriculum.json` (358 IDs in both). A fresh bank-wide check found 0 invalid topic assignments across all 448 records. Question content and verification statuses were preserved. The True/False checker was also strengthened to reject a new import if any already-loaded bank record has a topic ID absent from the canonical curriculum.
+The source bank's 98 legacy topic assignments were reviewed individually and remapped to the closest current canonical topic based on each stem's content. `docs/topic-ids.txt` was synchronized with `data/curriculum.json` (358 IDs in both). A fresh bank-wide check found 0 invalid topic assignments across all 463 records. Question content and verification statuses were preserved. The True/False checker was also strengthened to reject a new import if any already-loaded bank record has a topic ID absent from the canonical curriculum.
 
 ## Recommended next step
 
