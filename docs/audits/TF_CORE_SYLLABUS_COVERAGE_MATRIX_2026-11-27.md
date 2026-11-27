@@ -1,9 +1,13 @@
-# DxDrill — First Professional MBBS syllabus-to-bank coverage matrix
+# DxDrill — Supplementary national-baseline coverage review
 
 **Date:** 27 November 2026  
 **Question-bank source:** `data/questions/tf-core-expansion.json`  
-**Source blob SHA:** `b03746648e9c6c60272634ca343079ef1796c444`  
+**Source blob SHA:** `25e3e4aa8bffac77a15f2c3e0ab69b930f19632a`  
 **Bank scope:** 448 stems / 1,792 true-false statements. Counts below include both verified and draft/unverified stems.
+
+## Scope and source-of-truth note
+
+This is a **supplementary national-baseline comparison**, not DxDrill's curriculum registry and not a replacement for the project's existing topic hierarchy. The canonical topic source remains `data/curriculum.json`; `docs/topic-ids.txt` is its human-readable ID reference. This review uses NUC CCMAS and MDCN minimum-standards documents only as external comparison frameworks. All question-topic assignments and coverage counts below are based on the canonical DxDrill topic IDs.
 
 ## 1. Curriculum baseline and provenance
 
@@ -19,69 +23,63 @@ The user's three-subject structure is retained: **Anatomy includes Histology and
 
 | Subject | Stems | Share of three core subjects |
 |---|---:|---:|
-| Anatomy (including Histology and Embryology) | 132 | 32.3% |
-| Physiology | 141 | 34.5% |
-| Medical Biochemistry | 136 | 33.3% |
-| **Core-subject total** | **409** | **100%** |
+| Anatomy (including Histology and Embryology) | 132 | 32.2% |
+| Physiology | 142 | 34.6% |
+| Medical Biochemistry | 136 | 33.2% |
+| **Core-subject total** | **410** | **100%** |
 
-The additional 39 pathology/pharmacology/other stems in the same JSON file are excluded from this three-subject denominator.
+The additional 38 records are outside the three core subjects: 20 Pathology and 18 Pharmacology/therapeutics records. They are excluded from the core-subject denominator.
 
 ## 3. Anatomy coverage
 
 NUC course anchors include ANA 201a/201b (upper and lower limbs), ANA 202a/202b (thorax/abdomen and pelvis/perineum), ANA 203/204 (basic and systemic histology), ANA 205/206 (general and systemic embryology), and ANA 301/303/305/307/309 (head and neck/neuroanatomy, special-sense and neuro-histology, neuro-embryology/pharyngeal apparatus, genetics, and microscopy/radiological techniques).
 
-| Broad domain, inferred from question ID prefixes | Stems | Initial assessment |
+| Canonical curriculum area | Stems | Initial assessment |
 |---|---:|---|
-| General/structural anatomy (GA) | 27 | Present; depth varies by subtopic |
-| Regional gross anatomy (GR) | 35 | Present; depth varies by subtopic |
-| Embryology (EMB+SE) | 30 | Present; depth varies by subtopic |
-| Histology (GH+SH) | 40 | Present; depth varies by subtopic |
-| Dedicated human genetics/inheritance and genetic counselling | 2 | **Present but very thin** |
-| Dedicated radiological anatomy/imaging interpretation | 2 | **Present but very thin** |
-| Living/surface anatomy | 1 explicitly tagged | **Very thin** |
+| General anatomy | 14 | Present; each topic remains below six stems |
+| Regional / gross anatomy | 47 | Broadest anatomy area; regional balance still varies |
+| General histology | 14 | Thin across several topics |
+| Systemic histology | 26 | Present, but individual systems remain thin |
+| General embryology | 10 | Two stems per topic |
+| Systemic embryology | 19 | Uneven; musculoskeletal development has one stem |
+| Radiological anatomy | 0 | **No stems currently tagged to this canonical area** |
+| Genetics | 2 | **Very thin; three of five topics have no stem** |
 
-**Interpretation:** The bank has broad gross-anatomy, histology and embryology coverage, but the prefix counts do not prove adequate regional balance. The new Round 22 batch adds two dedicated genetics stems and two radiological anatomy stems, but both areas remain very thin. Genetics material within Medical Biochemistry should not be counted as a substitute for the Anatomy/medical genetics learning objectives. The 40 histology stems and 30 embryology stems should next be checked against each organ system and developmental sequence, not treated as complete merely because the umbrella domains are represented.
+**Interpretation:** These counts use each question's current canonical topic assignment, not its historical ID prefix. Round 22 added two genetics stems and two imaging-interpretation scenarios; the latter remain tagged to gross thorax and abdomen/pelvis topics because those are the closest existing canonical topics, not to the dedicated radiological-anatomy area. The radiological-anatomy area therefore still has zero tagged stems. Genetics material within Medical Biochemistry is not a substitute for Anatomy genetics objectives. Systemic histology, systemic embryology and regional gross anatomy require topic-by-topic depth review.
 
 ## 4. Physiology coverage
 
 NUC course anchors include PHS 201 (introductory/cell physiology and autonomic nervous system), PHS 203 (blood), PHS 205 (cardiovascular), PHS 202 (renal physiology/body fluids/temperature), PHS 204 (respiratory), PHS 206 (neuroscience), PHS 301 (gastrointestinal), PHS 303 (endocrinology/reproduction), PHS 307 (laboratory teaching/instrumentation) and PHS 309 (neuroendocrinology).
 
-| Domain, assigned by primary topic prefix/subtopic | Stems | Initial assessment |
+| Canonical curriculum area | Stems | Initial assessment |
 |---|---:|---|
-| General/cell/homeostasis | 5 | Thin |
-| Neuro-locomotor | 21 | Present; check objective-level depth |
-| Blood and body fluids | 16 | Present; check objective-level depth |
-| Renal/urinary/acid-base/fluid | 19 | Present; check objective-level depth |
-| Temperature/skin/exercise | 5 | Thin |
-| Respiratory | 14 | Present; check objective-level depth |
-| Cardiovascular | 19 | Present; check objective-level depth |
-| Gastrointestinal/nutrition | 14 | Present; check objective-level depth |
-| Endocrine | 14 | Present; check objective-level depth |
-| Reproductive | 10 | Present but needs depth |
-| Special senses | 4 | Thin |
+| General physiology | 5 | Thin; homeostasis has one stem |
+| Blood and body fluids | 16 | Present; each topic has 3–4 stems |
+| Respiratory system | 14 | Present; each topic has 2–3 stems |
+| Cardiovascular system | 20 | Present; arterial pressure/peripheral resistance has one stem |
+| Gastrointestinal tract and nutrition | 14 | Present, but diet/BMR/malnutrition has one stem |
+| Renal system | 20 | Present; dialysis/diuretics, renal endocrine and fluid/electrolyte topics have one each |
+| Skin and body temperature | 4 | Thin; two stems per topic |
+| Endocrinology | 16 | Present; gonadal hormones has two stems |
+| Reproduction | 8 | **Thin; three topics have one stem each** |
+| Neuro-locomotor system | 25 | Broad area; objective-level balance still needed |
 
 **Additional gap/quality flags:**
-- The special-senses group now has four stems after Round 22, but visual and auditory physiology still need deeper objective-level coverage.
+- Special senses now has six stems in the neuro-locomotor area after Round 22; visual and auditory physiology still need objective-level review.
 - Temperature/skin/exercise is a small combined cluster. These are distinct learning areas and should not be allowed to mask one another.
 - PHS 307 practical/laboratory instrumentation and practical interpretation are not comprehensively represented by a few ECG, spirometry or laboratory-related question stems. A dedicated practical-objective audit is needed.
-- The 21 neuro-locomotor stems cover a broad domain, but the separate objectives (ANS, nerve conduction, synapses/NMJ, spinal cord, cerebellum, basal ganglia, cerebrum, posture, EEG/sleep and special senses) require individual checking.
+- The 25 neuro-locomotor stems cover a broad domain, but the separate objectives (ANS, nerve conduction, synapses/NMJ, spinal cord, cerebellum, basal ganglia, cerebrum, posture, EEG/sleep and special senses) require individual checking.
 
 ## 5. Medical Biochemistry coverage
 
 NUC course anchors include BCH 201 (cell biology, pH and buffers), BCH 203 (carbohydrate chemistry), BCH 205 (amino-acid chemistry), BCH 209 (lipid metabolism), BCH 202 (nucleic-acid chemistry), BCH 204 (enzymes/coenzymes/bioenergetics), BCH 206 (amino-acid metabolism), BCH 208 (carbohydrate metabolism), BCH 301 (nucleic-acid metabolism/protein synthesis), BCH 303 (integration of metabolism), BCH 305 (nutrition), BCH 307 (biochemical genetics/molecular biology) and BCH 309 (special topics).
 
-| Domain, assigned by primary subtopic | Stems | Initial assessment |
+| Canonical curriculum area | Stems | Initial assessment |
 |---|---:|---|
-| Enzymes and bioenergetics | 13 | Present; check objective-level depth |
-| Carbohydrate/energy pathway integration | 15 | Present; check objective-level depth |
-| Amino acids, proteins and nitrogen metabolism | 23 | Present; check objective-level depth |
-| Nucleic acids, molecular biology and genetics | 18 | Present; check objective-level depth |
-| Lipid metabolism | 9 | Present but needs depth |
-| Vitamins, minerals and nutrition | 10 | Present but needs depth |
-| Applied/special topics | 38 | Present; check objective-level depth |
-| Basic chemistry, biomolecules and membranes | 10 | Present but needs depth |
+| General biochemistry | 78 | Broad area, but metabolism of biomolecules accounts for 27 stems; other topics range from 5–13 |
+| Applied biochemistry | 58 | Broad area; individual topics range from 3–9 |
 
-**Interpretation:** Applied/special topics form a large share of the current Biochemistry set. This is useful, but it should not crowd out pathway-level learning outcomes. The next audit should check individual pathway steps, rate-limiting enzymes, regulation, tissue specificity, fed/fasting integration, nutritional assessment and practical interpretation. The counts above are a primary classification by each stem's subtopic; they are not counts of distinct learning outcomes.
+**Interpretation:** General biochemistry has 78 stems and Applied biochemistry 58. The broad area counts should not obscure topic imbalance: metabolism of biomolecules has 27 stems, while basic chemistry has five; applied topics range from three to nine. The next audit should check individual pathway steps, rate-limiting enzymes, regulation, tissue specificity, fed/fasting integration, nutritional assessment and practical interpretation.
 
 ## 6. Priority gaps for the next expansion
 
@@ -115,13 +113,17 @@ Round 22 added 15 stems / 60 statements, five per core subject, selected from th
 - **Physiology:** visual and auditory physiology, ECG and spirometry interpretation, and hypothalamic-pituitary integration.
 - **Medical Biochemistry:** nutritional assessment, micronutrient deficiency, fed/fasting regulation, inter-organ fuel exchange, and biochemical genetics.
 
-The next batch should deepen the still-thin areas rather than repeat Round 22 topics. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
+The next batch should deepen the still-thin areas rather than repeat Round 22 topics. The current topic-by-topic inventory is the denominator for selecting new stems. Compare each proposed learning objective against existing stems and individual statements before committing to avoid near-duplicates.
 
-## 8. Method and limitations
+## 8. Registry reconciliation
 
-- Subject membership is inferred from the question ID prefix; the 39 pathology/pharmacology/other records are excluded from the core subject analysis.
-- Anatomy domain counts use the existing prefix families: GA, GR, GH, SH, EMB and SE. Physiology domains use topic-prefix/subtopic assignment. Biochemistry uses a primary subtopic keyword assignment. These are reproducible inventory groupings, not official NUC course-code assignments.
-- Some question stems address more than one learning objective. The tables assign each stem to one primary bucket to avoid double-counting.
+On 27 November 2026, 98 existing question records with legacy/non-canonical topic labels were reassigned to the closest matching topic in `data/curriculum.json` after review of each stem's ID, subtopic and wording. The question content, answer keys, explanations, references and verification states were not changed in that metadata pass. `docs/topic-ids.txt` was synchronized to the canonical registry; it now contains all 358 curriculum topic IDs. A bank-wide check found zero question records with an unregistered topic ID.
+
+## 9. Method and limitations
+
+- Subject and area membership are assigned from the canonical `topic` field in `data/curriculum.json`; the 38 Pathology and Pharmacology records are excluded from the three core subject analysis.
+- Area counts are based on the canonical topic hierarchy, not question ID prefixes. They are inventory counts, not proof of learning-objective mastery or official NUC course-code assignments.
+- Some stems address more than one learning objective, but each record is counted once under its single canonical topic.
 - Counts include draft/unverified questions. They indicate that content exists, not that it is academically correct or adequate.
 - No item-level correctness review was performed in this syllabus-mapping pass.
 - The NUC CCMAS permits institution-level curriculum design within its national framework; therefore, obtain FUHSO's approved current course outline before labelling this matrix a definitive FUHSO syllabus audit.
