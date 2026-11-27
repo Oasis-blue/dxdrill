@@ -361,3 +361,29 @@ All four additions are marked `verified:false` / `draft-unverified` pending acad
 **Post-write verification:** the live T/F file parses as JSON and contains **513 records with 513 unique IDs**, with all four new IDs present. The live normal abdomen/pelvis MCQ file parses as JSON and remains at **235 records with 235 unique IDs**; no normal MCQ was added in this pass. T/F batch commit: `aff6179964927e3ccbe626d3a2bd8d1788e8ffbe`.
 
 **Coverage qualification:** the 94 printed questions were reviewed at chapter/concept level against both banks. This is not yet a complete item-by-item source-to-record register, and no claim is made that each printed question has an individual DxDrill counterpart. The source-question mapping and residual-gap register remain outstanding.
+
+
+## 14. Dual-bank review — Chapters 23–25 (Arteries, Veins and Nerves; Peritoneum; Pelvic Cavity and Perineum)
+
+The final three chapters of the 145-page Bartoș et al. *Anatomy MCQ: Thorax, Abdomen and Pelvis* source were checked against the live abdomen/pelvis normal-format bank and the shared True/False bank. The printed question and answer-key pages were reviewed directly:
+
+| Chapter | Subject | Printed question count | Printed pages |
+|---|---|---:|---:|
+| 23 | Arteries, Veins and Nerves | 25 | 129–133 |
+| 24 | Peritoneum | 25 | 134–138 |
+| 25 | Pelvic Cavity and Perineum | 26 | 139–145 |
+| **Total** | | **76** | |
+
+The existing normal-format bank already provides broad coverage of the major arterial origins and branches, portal venous formation and tributaries, gonadal venous drainage, pelvic vessels and nerves, peritoneal spaces and ligaments, pelvic diaphragm, pudendal nerve, perineal pouches, sphincters and perineal body. No additional normal-format MCQ was added in this batch because the useful candidate facts were already represented and further additions risked creating near-duplicates.
+
+**True/False additions — `data/questions/tf-core-expansion.json`**
+- `tf-gr-abdominal-vessels-001`: coeliac and mesenteric arterial territories, portal vein formation and gonadal venous drainage.
+- `tf-gr-pelvic-autonomics-003`: pelvic splanchnic nerves, inferior hypogastric plexus, pudendal nerve course and somatic supply of the external anal sphincter.
+- `tf-gr-mesocolon-001`: transverse and sigmoid mesocolon roots, gastrocolic and gastrosplenic ligaments, and the mesosalpinx.
+- `tf-gr-perineal-body-001`: perineal body, anal sphincters, internal pudendal artery and inferior rectal artery.
+
+All four additions are marked `verified:false` / `draft-unverified` pending academic review. Existing question IDs and records were preserved.
+
+**Post-write verification:** the live T/F JSON was re-fetched from `main`, parsed successfully and checked for unique IDs. It contains **517 records and 517 unique IDs**; all four additions are present. Commit: `3ed8d43a7e998123c17efda3f80879ea7598d58d`.
+
+**Coverage qualification:** 76 printed questions across Chapters 23–25 were reviewed at chapter/concept level against both formats. This batch is not a full item-by-item source-question-to-bank-ID register. Exact matched/partial/missing status for each printed question remains outstanding; no claim is made that all 76 source questions have individual DxDrill counterparts.
