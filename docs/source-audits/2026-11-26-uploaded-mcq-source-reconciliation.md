@@ -383,3 +383,18 @@ Five original MCQs were added to each of three topic banks:
 All three files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted expansion, not a claim of exhaustive reconciliation of all uploaded sources.
 
 **Cumulative source-reconciliation additions: 163 original questions** (148 previously recorded plus these 15).
+
+
+## Respiratory histology, cardiovascular regulation and muscle biochemistry — 27 November 2026
+
+Five original MCQs were added to each of three topic banks:
+
+**Anatomy / Histology — respiratory system (9 → 14):** distinguishing intrapulmonary bronchi from bronchioles, bronchiolar epithelium and club cells, type I and type II pneumocytes, and alveolar macrophages.
+
+**Physiology — control of cardiovascular function (31 → 36):** carotid sinus hypersensitivity, sympathetic interruption after high spinal cord injury, central command at exercise onset, vascular redistribution during exercise and vasodilation in septic shock.
+
+**Medical Biochemistry — muscle contraction (20 → 25):** neuromuscular transmission in myasthenia gravis, RyR1 and malignant hyperthermia, dantrolene action, hypocalcaemic neuromuscular excitability and McArdle disease.
+
+All three files were committed to `main` and re-fetched for structural validation. New items have unique IDs, four options, valid answer indices and explanations; they remain `verified: false` pending academic review. This is targeted expansion, not a claim of exhaustive reconciliation of every uploaded source.
+
+**Cumulative source-reconciliation additions: 178 original questions** (163 previously recorded plus these 15).
