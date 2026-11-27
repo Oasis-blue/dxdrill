@@ -73,3 +73,9 @@ Nine original true/false sets (three statements each) were also added to the exi
 ## Remaining work — not yet complete
 
 This is a progress checkpoint, not a claim that all 1,106 stem starts have been reconciled. The full item-by-item audit against both MCQ and true/false banks remains to be completed across all 15 units. Further additions should follow only after matching individual source items to existing coverage and identifying genuine gaps. The printed source answer key has not been independently validated.
+
+## T/F format correction — 27 November 2026
+
+A follow-up check against `tf-checker.html`, `docs/tf-master-prompt.md` and the README identified that the nine newly added T/F stems initially had only three statements each. This did not meet DxDrill's required format of four or five statements per stem. The nine stems were corrected by adding one independently judged, explained statement to each. Their references were replaced with direct HTTPS source URLs. All nine remain `verified:false` / `draft-unverified`.
+
+The corrected T/F bank was re-fetched from `main` and parsed successfully. Each of the nine corrected stems now has exactly four statements, mixed True/False keys, statement-specific explanations, and HTTPS references. The T/F bank remains at 539 stems. This is a structural validation; medical accuracy and source-to-claim support still require academic review, and the full 15-unit source reconciliation remains incomplete.
