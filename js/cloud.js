@@ -56,6 +56,22 @@
   function loadMyTFStats() {
     var S = C.tfStats;
     if (!C.ok || !C.user || S.loading || S.loaded) return;
+    /* The account page can open while question files are still loading. Wait for
+       the complete bank so the topic map includes every question before querying. */
+    if (DX.loadingQuestions || !DX.questionsReady) {
+      if (!S.waitingForBank) {
+        S.waitingForBank = true;
+        var previousOnMore = DX.onMore;
+        DX.onMore = function () {
+          if (previousOnMore) previousOnMore();
+          if (S.waitingForBank) {
+            S.waitingForBank = false;
+            loadMyTFStats();
+          }
+        };
+      }
+      return;
+    }
     S.loading = true;
     C.sb.rpc("my_learning_progress", { p_map: learningTopicMap() }).then(function (r) {
       S.loading = false; S.loaded = true;
