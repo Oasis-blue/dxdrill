@@ -401,7 +401,7 @@ body.bigscreen #backbar{display:none!important}
 .streakchip small{flex:none;color:var(--muted);font-size:12px;white-space:nowrap}
 .streakchip .sk-ico{flex:none;font-size:17px;line-height:1}
 @media(max-width:420px){.streakchip{gap:7px;padding:8px 10px;font-size:13px}.streakchip small{font-size:11px}}
-.dxtoast-region{display:flex;justify-content:center;align-items:center;padding:10px 12px;box-sizing:border-box;background:var(--bg);border-bottom:1px solid var(--line)}
+.dxtoast-region{position:fixed;z-index:10000;left:0;right:0;bottom:max(14px,env(safe-area-inset-bottom));display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding:0 12px;box-sizing:border-box;background:transparent;border:0;pointer-events:none}
 .dxtoast-region:empty{display:none}
 .dxtoast{position:relative;max-width:min(92vw,380px);margin:0 auto;padding:10px 16px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:600;font-size:15px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.16);pointer-events:none;animation:dxt-in .3s ease both}
 .dxtoast.out{opacity:0;transition:opacity .35s ease}
