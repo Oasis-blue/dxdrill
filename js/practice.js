@@ -332,10 +332,21 @@
     try {
       var s = DX.store.get(KEY, null); if (!s || !s.items || !s.items.length || Date.now() - s.t > 7 * 864e5) { DX.store.set(KEY, null); return; }
       var byId = {}; DX.questions.forEach(function (q) { byId[q.id] = q; });
-      var items = s.items.map(function (x) { return byId[x.id] ? { q: byId[x.id], order: x.order, pick: x.pick } : null; }).filter(Boolean);
-      if (items.length !== s.items.length) { DX.store.set(KEY, null); return; }   /* the question bank changed, so start fresh rather than guess */
-      P.scope = s.scope; P.subs = s.subs || []; P.mode = s.mode || "study"; P.count = s.count || "all";
-      P.run = { items: items, i: Math.min(s.i || 0, items.length - 1), done: false }; P.view = "run"; P.resumed = true;
+      var items = s.items.map(function (x) {
+        var q = byId[x.id], order = x.order;
+        if (!q || !Array.isArray(order) || order.length !== q.options.length) return null;
+        var valid = {}, good = true;
+        order.forEach(function (v) { if (!Number.isInteger(v) || v < 0 || v >= q.options.length || valid[v]) good = false; valid[v] = true; });
+        if (!good || Object.keys(valid).length !== q.options.length) return null;
+        var pick = x.pick;
+        if (pick !== null && pick !== undefined && (!Number.isInteger(pick) || pick < 0 || pick >= q.options.length)) return null;
+        return { q: q, order: order.slice(), pick: pick == null ? null : pick };
+      });
+      if (items.some(function (x) { return !x; })) { DX.store.set(KEY, null); return; } /* Reject stale or malformed saved questions/options safely. */
+      var index = Number(s.i);
+      if (!isFinite(index) || index < 0 || Math.floor(index) !== index || index >= items.length) index = 0;
+      P.scope = s.scope; P.subs = Array.isArray(s.subs) ? s.subs : []; P.mode = s.mode === "exam" ? "exam" : "study"; P.count = s.count || "all";
+      P.run = { items: items, i: index, done: false }; P.view = "run"; P.resumed = true;
     } catch (e) { }
   }
   function render(el) {
