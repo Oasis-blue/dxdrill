@@ -225,7 +225,7 @@
     C.sb.auth.onAuthStateChange(function (ev, session) {
       var priorUserId = C.user && C.user.id;
       C.user = session ? session.user : null;
-      if (!C.user || priorUserId !== C.user.id) C.tfStats = { loading: false, loaded: false, data: null, error: "" };
+      if (!C.user || priorUserId !== C.user.id) { C.tfStats = { loading: false, loaded: false, data: null, error: "" }; C.analytics = { loading: false, loaded: false, data: null, error: "" }; }
       F = {};
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
       loadProfile().then(function () { flush(); repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
