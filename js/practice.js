@@ -6,17 +6,18 @@
   var P = { view: "pick", scope: null, subs: [], mode: "study", count: "all", run: null, showAll: false, report: null };
 
   function scopeQs(sc) {
-    var qs = DX.questions;
+    var qs = DX.questions, st = DX.stats();
     if (sc.kind === "all") return qs;
     if (sc.kind === "subject") return qs.filter(function (q) { return q.subject === sc.id; });
     if (sc.kind === "custom") return qs.filter(function (q) { return sc.topicIds.indexOf(q.topic) > -1; });
     if (sc.kind === "area") return qs.filter(function (q) { return q.area === sc.id; });
     if (sc.kind === "topic") return qs.filter(function (q) { return q.topic === sc.id; });
+    if (sc.kind === "new") return qs.filter(function (q) { return !(st[q.id] && Number(st[q.id].n) > 0); });
     if (sc.kind === "missed" || sc.kind === "adaptive") {
-      var st = DX.stats(), remote = DX.remoteMissedIds || {}, state = DX.remoteReviewState || {};
+      var remote = DX.remoteMissedIds || {}, state = DX.remoteReviewState || {};
       var missed = qs.filter(function (q) {
         var id = String(q.id);
-        if (Object.prototype.hasOwnProperty.call(state, id)) return state[id];
+        if (Object.prototype.hasOwnProperty.call(state, id)) return !!state[id];
         return !!(st[q.id] && st[q.id].last === 0) || !!remote[id];
       });
       if (sc.kind === "missed") return missed;
@@ -24,11 +25,7 @@
       var combined = missed.concat(qs.filter(function (q) { return topicIds.indexOf(q.topic) > -1; }));
       combined.forEach(function (q) { seen[q.id] = q; });
       return Object.keys(seen).map(function (id) { return seen[id]; }).sort(function (a, b) {
-        function score(q) {
-          var row = mistakeRow(q.id), topic = topics[q.topic] || 0;
-          return (row ? 100 + Number(row.wrong_attempts || 0) * 10 + Number(row.attempts || 0) : 0) + topic;
-        }
-        return score(b) - score(a);
+        return priorityScore(b, topics) - priorityScore(a, topics);
       });
     }
     return [];
@@ -39,17 +36,48 @@
     return null;
   }
   function weakTopicScores() {
-    var rows = DX.cloud && DX.cloud.tfStats && DX.cloud.tfStats.data && DX.cloud.tfStats.data.topics || [], out = {};
+    var out = {}, local = {}, st = DX.stats();
+    DX.questions.forEach(function (q) {
+      var s = st[q.id]; if (!s || !Number(s.n)) return;
+      var a = local[q.topic] || (local[q.topic] = { n: 0, c: 0 });
+      a.n += Number(s.n) || 0; a.c += Number(s.c) || 0;
+    });
+    Object.keys(local).forEach(function (id) {
+      var a = local[id], pct = a.n ? 100 * a.c / a.n : 100;
+      if (a.n >= 5 && pct < 70) out[id] = (70 - pct);
+    });
+    var rows = DX.cloud && DX.cloud.tfStats && DX.cloud.tfStats.data && DX.cloud.tfStats.data.topics || [];
     rows.forEach(function (t) {
       var n = Number(t.mcq_attempts || 0) + Number(t.tf_statements || 0);
       var correct = Number(t.mcq_correct || 0) + Number(t.tf_correct || 0);
-      if (n >= 5 && correct * 100 / n < 70) out[t.topic] = Math.round((70 - correct * 100 / n) * 10) / 10;
+      if (n >= 5 && correct * 100 / n < 70) out[t.topic] = Math.max(out[t.topic] || 0, 70 - correct * 100 / n);
     });
     return out;
+  }
+  function priorityScore(q, topics) {
+    var s = DX.stats()[q.id] || {}, attempts = Number(s.n) || 0, correct = Number(s.c) || 0;
+    var wrong = Math.max(0, attempts - correct), score = (topics[q.topic] || 0) * 1.5;
+    if (attempts) {
+      score += (wrong / attempts) * 35 + Math.min(wrong, 5) * 5;
+      if (s.last === 0) score += 65;
+      if (s.lastAt) {
+        var age = Math.max(0, (Date.now() - Number(s.lastAt)) / 86400000);
+        if (s.last === 0) score += Math.max(0, 24 - age) * 1.25;
+      }
+    }
+    var row = mistakeRow(q.id);
+    if (row) score += 90 + Number(row.wrong_attempts || 0) * 8 + Number(row.attempts || 0);
+    return score;
+  }
+  function localCoverage() {
+    var st = DX.stats(), attempted = 0;
+    DX.questions.forEach(function (q) { if (st[q.id] && Number(st[q.id].n) > 0) attempted++; });
+    return { attempted: attempted, total: DX.questions.length };
   }
   function scopeName(sc) {
     if (sc.kind === "all") return "All questions";
     if (sc.kind === "adaptive") return "Priority revision · mistakes and weak topics";
+    if (sc.kind === "new") return "Unanswered on this device";
     if (sc.kind === "missed") return "Questions I missed last time";
     if (sc.kind === "subject") return DX.subjectById[sc.id].name;
     if (sc.kind === "custom") return "Custom subject, area and topic selection";
@@ -75,13 +103,16 @@
   /* ---------- picker ---------- */
   function pickView() {
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
-    var adaptive = scopeQs({ kind: "adaptive" }).length, weakCount = Object.keys(weakTopicScores()).length;
+    var adaptive = scopeQs({ kind: "adaptive" }).length, fresh = scopeQs({ kind: "new" }).length;
+    var weakCount = Object.keys(weakTopicScores()).length, coverage = localCoverage();
     var h = '<div class="wrap stack"><a class="backtop" href="#home">\u2190 Home</a><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
       '<p class="lede">' + total + (DX.loadingQuestions ? ' questions loaded so far. More are arriving in the background.' : ' questions.') + ' Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p>' + (DX.tfStems && DX.tfStems.length ? '<p class="hint">Exam in true/false style? <a href="#truefalse">Practise ' + DX.tfStems.length + ' exam-style stems</a>.</p>' : '') + '</header>' +
       '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button><button class="btn" data-act="custom">Choose multiple subjects</button>' +
       (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review mistakes · ' + missed + '</button>' : '') +
-      (adaptive ? '<button class="btn primary" data-act="scope" data-kind="adaptive">Fix my weak areas · ' + adaptive + '</button>' : '') + '</section>' +
-      (DX.cloud && DX.cloud.user ? (DX.cloud.tfStats && DX.cloud.tfStats.error ? '<p class="hint">Synced learning data could not be loaded. You can still review mistakes saved on this device; weak-topic suggestions will return when account data is available.</p>' : (DX.cloud.tfStats && DX.cloud.tfStats.loaded ? (weakCount ? '<p class="hint">Priority revision combines previously missed questions with questions from ' + weakCount + ' topic' + (weakCount === 1 ? '' : 's') + ' below 70% accuracy. Repeated mistakes are placed first.</p>' : '<p class="hint">No topic currently meets the weak-area threshold. Review mistakes or choose a topic below.</p>') : '<p class="hint">Sign-in learning data is still loading; weak-topic revision will appear when it is ready.</p>')) : '<p class="hint">Sign in to include your synced weak-topic analytics in priority revision. Previously missed questions on this device are still included.</p>') +
+      (adaptive ? '<button class="btn primary" data-act="scope" data-kind="adaptive">Fix my weak areas · ' + adaptive + '</button>' : '') +
+      (fresh ? '<button class="btn" data-act="scope" data-kind="new">Explore unanswered here · ' + fresh + '</button>' : '') + '</section>' +
+      '<p class="hint">On this device: ' + coverage.attempted + ' of ' + coverage.total + ' MCQs have a recorded attempt. “Unanswered here” is device-specific; synced topic analytics are used separately for weak-area detection.</p>' +
+      (DX.cloud && DX.cloud.user ? (DX.cloud.tfStats && DX.cloud.tfStats.error ? '<p class="hint">Synced learning data could not be loaded. You can still review mistakes saved on this device; weak-topic suggestions will return when account data is available.</p>' : (DX.cloud.tfStats && DX.cloud.tfStats.loaded ? (weakCount ? '<p class="hint">Priority revision combines missed questions with locally or account-identified weak topics (' + weakCount + '). Recent and repeated errors are ranked first.</p>' : '<p class="hint">No topic currently meets the weak-area threshold. Review mistakes or choose a topic below.</p>') : '<p class="hint">Sign-in learning data is still loading; weak-topic revision will appear when it is ready.</p>')) : '<p class="hint">Sign in to include your synced weak-topic analytics in priority revision. Previously missed questions on this device are still included.</p>') +
       '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
     DX.curriculum.subjects.forEach(function (s) {
       var sc = DX.subjectCount(s.id);
