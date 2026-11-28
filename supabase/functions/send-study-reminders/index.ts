@@ -30,8 +30,8 @@ Deno.serve(async (req: Request) => {
   const service = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
   const vapidPublic = Deno.env.get("VAPID_PUBLIC_KEY") || "";
   const vapidPrivate = Deno.env.get("VAPID_PRIVATE_KEY") || "";
-  const vapidSubject = Deno.env.get("VAPID_SUBJECT") || "mailto:admin@dxdrill.app";
-  if (!vapidPublic || !vapidPrivate) return new Response("VAPID keys missing", { status: 503 });
+  const vapidSubject = Deno.env.get("VAPID_SUBJECT") || "";
+  if (!vapidPublic || !vapidPrivate || !vapidSubject) return new Response("VAPID keys or contact subject missing", { status: 503 });
 
   const db = createClient(url, service, { auth: { persistSession: false } });
   const { data: prefs, error: prefError } = await db.from("study_reminder_preferences")
