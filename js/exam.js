@@ -79,7 +79,7 @@
   }
   function runView() {
     var r = E.run, x = r.items[r.index], q = x.q, n = r.items.length, answered = r.items.filter(function (it) { return it.pick !== null; }).length;
-    var options = x.order.map(function (oi, i) { return '<button type="button" class="exam-option' + (x.pick === oi ? ' chosen' : '') + '" data-exam="answer" data-option="' + oi + '" aria-pressed="' + (x.pick === oi) + '"><span class="exam-letter">' + "ABCDE"[i] + '</span><span>' + esc(q.options[oi]) + '</span></button>'; }).join('');
+    var options = x.order.map(function (oi, i) { return '<button type="button" class="exam-option' + (x.pick === oi ? ' chosen' : '') + '" data-exam="answer" data-option="' + oi + '" aria-pressed="' + (x.pick === oi) + '"><span class="exam-letter">' + "ABCDEF"[i] + '</span><span>' + esc(q.options[oi]) + '</span></button>'; }).join('');
     var nav = r.items.map(function (it, i) { return '<button type="button" class="exam-nav' + (i === r.index ? ' current' : '') + (it.pick !== null ? ' answered' : '') + (it.flagged ? ' flagged' : '') + '" data-exam="goto" data-index="' + i + '" aria-label="Question ' + (i + 1) + (it.pick !== null ? ', answered' : ', unanswered') + (it.flagged ? ', flagged' : '') + '">' + (i + 1) + '</button>'; }).join('');
     return '<div class="wrap stack exam-wrap"><div class="exam-top"><div><p class="eyebrow">Examination in progress</p><b>Question ' + (r.index + 1) + ' of ' + n + '</b></div><div class="exam-clock" id="exam-clock" role="timer" aria-live="off">--:--</div></div>' +
       '<div class="exam-progress"><i style="width:' + Math.round(answered / n * 100) + '%"></i></div>' +
