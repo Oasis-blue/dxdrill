@@ -47,7 +47,7 @@
     var tiles = [];   /* each number appears only once it is big enough to be worth showing; they are real counts, never padded */
     if (s.members >= 25) tiles.push(["students signed up", s.members]);
     if (s.answers >= 200) tiles.push(["learning responses", s.answers]);
-    if (s.answers >= 200 && s.answers_today >= 20) tiles.push(["answered today", s.answers_today]);
+    if (s.answers >= 200 && s.answers_today >= 20) tiles.push(["responses today", s.answers_today]);
     if (!tiles.length) return;
     var sec = document.createElement("section"); sec.id = "homecounts"; sec.className = "section";
     sec.innerHTML = '<div class="statrow">' + tiles.map(function (t) { return '<div class="stat"><b class="statn" data-to="' + t[1] + '">0</b><span>' + esc(t[0]) + '</span></div>'; }).join("") + '</div>';
