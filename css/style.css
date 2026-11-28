@@ -630,3 +630,43 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .exam-review h3{font-size:16px;line-height:1.45}
 .exam-review p{font-size:14px;line-height:1.5}
 @media(max-width:520px){.exam-navgrid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.exam-nav{min-height:42px}.exam-footer .danger{margin-left:0}.exam-top{align-items:flex-start}.exam-clock{font-size:21px}}
+
+
+/* Phase 7 Run 2 · exam configuration */
+.exam-config{display:grid;gap:22px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.exam-config-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.exam-config-heading h2{font-size:21px}
+.exam-config-heading h3,.exam-config-group h3{font-size:15px}
+.exam-available{padding:6px 10px;border-radius:99px;background:var(--surface2);font-size:12px;color:var(--muted)}
+.exam-config-group{display:grid;gap:11px}
+.exam-preset-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.exam-preset,.exam-distribution button{display:grid;gap:4px;padding:12px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--fg);text-align:left}
+.exam-preset.active,.exam-distribution button.active{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--surface))}
+.exam-preset small,.exam-distribution small{font-size:12px;color:var(--muted);line-height:1.4}
+.exam-subject-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.exam-subject-block{min-width:0;padding:8px;border:1px solid var(--line);border-radius:11px;background:var(--bg)}
+.exam-subject{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;border:0;background:transparent;color:var(--fg);text-align:left}
+.exam-subject>span:first-child{display:grid;gap:2px}
+.exam-subject small{color:var(--muted);font-size:11px}
+.exam-subject.selected b{color:var(--accent)}
+.exam-check{display:grid;place-items:center;flex:none;width:25px;height:25px;border:1px solid var(--line);border-radius:50%;font-weight:700}
+.exam-subject.selected .exam-check{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.exam-topic-details{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
+.exam-topic-details summary{font-size:12px;color:var(--accent);font-weight:600;cursor:pointer}
+.exam-config-area{display:grid;gap:7px;padding:9px 0}
+.exam-config-area>b{font-size:12px;color:var(--muted)}
+.exam-topic-grid{display:grid;gap:6px}
+.exam-topic{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg);text-align:left;font-size:12px}
+.exam-topic.selected{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--surface))}
+.exam-topic small{flex:none;color:var(--muted);font-size:11px}
+.exam-text-btn{border:0;background:transparent;color:var(--accent);font-size:12px;font-weight:600}
+.exam-config-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.exam-config-row label{display:grid;gap:7px;font-size:13px;font-weight:600}
+.exam-config-row select{width:100%;min-height:44px;padding:9px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--fg)}
+.exam-distribution{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.exam-config-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:13px;border-radius:11px;background:var(--surface2)}
+.exam-config-summary>div{display:grid;gap:2px;text-align:center}
+.exam-config-summary b{font:700 20px/1.2 var(--font-display);color:var(--accent)}
+.exam-config-summary span{font-size:11px;color:var(--muted)}
+.exam-begin{width:100%;min-height:48px}
+@media(max-width:560px){.exam-config{padding:13px}.exam-subject-grid{grid-template-columns:1fr}.exam-config-row{grid-template-columns:1fr}.exam-config-summary b{font-size:17px}}
