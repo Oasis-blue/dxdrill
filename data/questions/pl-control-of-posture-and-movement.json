@@ -8,10 +8,10 @@
       "sub": "Motor Hierarchy: Motor Cortex, Premotor/SMA, Brainstem, and Spinal Cord",
       "q": "Which cerebral cortical area contains Betz giant pyramidal neurons and serves as the primary origin of corticospinal fibers controlling discrete, fractionated movements of distal contralateral limb muscles (especially hand/finger digits)?",
       "options": [
-        "Primary motor cortex (Brodmann area 4 in the precentral gyrus)",
-        "Primary somatosensory cortex (Brodmann areas 3, 1, 2 in the postcentral gyrus)",
-        "Superior temporal gyrus (Brodmann area 22)",
-        "Calcarine sulcus (Brodmann area 17)"
+        "Primary motor cortex in the precentral gyrus",
+        "Supplementary motor area on the medial frontal surface",
+        "Primary somatosensory cortex in the postcentral gyrus",
+        "Lateral premotor cortex on the convexity of Brodmann area 6"
       ],
       "answer": 0,
       "explain": "Brodmann area 4 in the precentral gyrus houses Betz cells and projects directly onto spinal motor neurons/interneurons for fine contralateral distal control; supplementary motor area (SMA, area 6) and premotor cortex plan and sequence movements.",
@@ -32,12 +32,12 @@
       "sub": "Motor Hierarchy: Motor Cortex, Premotor/SMA, Brainstem, and Spinal Cord",
       "q": "How do the 'supplementary motor area (SMA)' and 'premotor cortex' (both in Brodmann area 6) contribute differently to movement planning and execution?",
       "options": [
-        "SMA supports self-initiated sequences and bimanual movement; premotor cortex selects externally cued movements and prepares posture",
-        "SMA controls eye muscles; premotor cortex processes taste",
-        "Both areas lie in the occipital lobe and process colour vision",
-        "Premotor cortex fires only after spinal motor neurons stop firing"
+        "SMA drives distal finger motor neurons directly; premotor cortex only relays cerebellar output to the thalamus",
+        "SMA encodes sensory feedback from the hand; premotor cortex encodes movement force and vigour",
+        "SMA favours self-initiated sequences and bimanual tasks; premotor cortex favours cued movements",
+        "SMA favours externally cued reaching; premotor cortex favours internally generated sequences and bimanual tasks"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "SMA drives self-initiated sequences and bimanual coordination (and activates even during imagined movement), whereas lateral premotor cortex links external visual/sensory cues to motor selection and proximal trunk/girdle stabilization.",
       "verified": false,
       "open": {
@@ -55,12 +55,12 @@
       "sub": "Descending Tracts: Lateral vs Ventromedial Pathways",
       "q": "Contrast the 'lateral corticospinal tract (pyramidal tract)' with the 'ventromedial brainstem pathways' (vestibulospinal, reticulospinal, and tectospinal tracts) in anatomical termination and motor control:",
       "options": [
-        "Lateral corticospinal pathways control skilled distal movement; ventromedial brainstem pathways regulate posture, balance and axial/proximal muscles",
-        "Ventromedial pathways control fine finger movements; lateral corticospinal pathways control only axial posture",
-        "Both systems remain uncrossed and terminate exclusively in the cerebellum",
-        "Vestibulospinal pathways supply only intrinsic hand muscles"
+        "Lateral corticospinal fibres stay uncrossed and act bilaterally; ventromedial brainstem tracts cross fully and act contralaterally",
+        "Both systems end mainly on gamma motor neurons, with lateral tracts supplying flexors and ventromedial tracts supplying extensors",
+        "Lateral corticospinal fibres serve distal limb muscles; ventromedial brainstem tracts serve axial and proximal muscles for posture and balance",
+        "Lateral corticospinal fibres serve axial and proximal muscles; ventromedial brainstem tracts serve distal hand muscles for dexterity"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Lateral descending systems (lateral corticospinal and rubrospinal tracts) govern contralateral distal limb movement and fine motor skill; ventromedial systems (vestibulospinal, reticulospinal, tectospinal, anterior corticospinal) govern bilateral axial posture, balance, and orienting.",
       "verified": false,
       "open": {
@@ -78,13 +78,13 @@
       "sub": "Descending Tracts: Lateral vs Ventromedial Pathways",
       "q": "Why does a lesion of the 'lateral corticospinal tract' impair fine individual finger movements ('fractionation') while leaving gross whole-hand grasp and proximal posture relatively preserved?",
       "options": [
-        "Lateral CST loss removes direct distal corticomotoneuronal control; brainstem tracts preserve gross posture and grasp",
-        "Fine finger movements are controlled by the olfactory nerve",
-        "The spinal cord generates fine finger movements without descending input",
-        "The lateral corticospinal tract only inhibits the diaphragm"
+        "Gamma motor neurons to the hand are destroyed, so spindles go silent and fine control is lost while power remains",
+        "Direct cortical drive to distal motor neurons is lost, while brainstem pathways still support gross posture",
+        "Cerebellar input to the hand is interrupted, so proximal posture holds but fine movements become uncoordinated",
+        "Reticulospinal fibres to the hand are lost, so fine movements fail while the corticospinal tract keeps supporting posture"
       ],
-      "answer": 0,
-      "explain": "Loss of direct corticomotoneuronal connections eliminates independent digit control (causing loss of fine finger dexterity and Babinski sign), while brainstem reticulospinal/vestibulospinal pathways maintain gross posture and synergistic movements. Key detail: Loss of direct corticomotoneuronal drive impairs independent finger control, while brainstem pathways preserve gross synergistic and proximal movements.",
+      "answer": 1,
+      "explain": "Loss of direct corticomotoneuronal connections eliminates independent digit control (causing loss of fine finger dexterity and Babinski sign), while brainstem reticulospinal/vestibulospinal pathways maintain gross posture and synergistic movements.",
       "verified": false,
       "open": {
         "q": "Explain why damage to the lateral corticospinal tract abolishes fine independent finger movements while sparing gross postural support and synergistic limb movements.",
@@ -101,12 +101,12 @@
       "sub": "Descending Tracts: Lateral vs Ventromedial Pathways",
       "q": "How do the 'pontine reticulospinal tract' and 'medullary reticulospinal tract' exert opposing influences on spinal antigravity (extensor) motor neurons?",
       "options": [
-        "Pontine reticulospinal activity excites antigravity extensors; medullary reticulospinal activity inhibits extensors and favours flexors",
-        "Pontine reticulospinal tract inhibits all muscles while medullary reticulospinal tract excites only eye muscles",
-        "Both tracts originate in the primary visual cortex",
-        "Neither tract communicates with spinal motor neurons"
+        "Both tracts inhibit extensor motor neurons, with the pontine tract acting through Renshaw cells and the medullary tract through Ia interneurons",
+        "Medullary reticulospinal fibres excite antigravity extensor motor neurons, whereas pontine reticulospinal fibres inhibit them",
+        "Pontine reticulospinal fibres excite antigravity extensor motor neurons, whereas medullary reticulospinal fibres inhibit them",
+        "Both tracts excite extensor motor neurons, with the pontine tract acting ipsilaterally and the medullary tract contralaterally"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Tonic excitatory drive from the pontine reticular formation promotes extensor tone unless balanced by cortical/cerebellar activation of the inhibitory medullary reticular formation.",
       "verified": false,
       "open": {
@@ -125,9 +125,9 @@
       "q": "Which descending tract originates in the 'superior colliculus' of the midbrain and mediates reflexive head and eye turning toward sudden visual, auditory, or somatosensory stimuli?",
       "options": [
         "Tectospinal tract",
-        "Lateral corticospinal tract",
-        "Dorsal column-medial lemniscal tract",
-        "Spinothalamic tract"
+        "Rubrospinal tract",
+        "Pontine reticulospinal tract",
+        "Medial vestibulospinal tract"
       ],
       "answer": 0,
       "explain": "The tectospinal tract descends from the superior colliculus to upper cervical segments to orient the head and neck reflexively toward unexpected sensory stimuli.",
@@ -147,12 +147,12 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "What is 'alpha-gamma coactivation', and why must gamma motor neurons fire together with alpha motor neurons during voluntary muscle contraction?",
       "options": [
-        "Alpha motor neurons shorten extrafusal fibres while gamma motor neurons keep intrafusal spindle fibres taut and sensitive",
-        "Alpha motor neurons supply intrafusal fibres while gamma motor neurons supply extrafusal fibres",
-        "Gamma activity silences spindle afferents during voluntary movement",
-        "Alpha-gamma coactivation prevents skeletal muscle contraction"
+        "Alpha neurons contract intrafusal fibres while gamma neurons shorten extrafusal fibres, so spindles can track muscle force",
+        "Gamma neurons fire after alpha neurons stop, resetting spindle length once the movement has finished",
+        "Gamma neurons silence Ia afferents during contraction so the stretch reflex cannot oppose the movement",
+        "Alpha neurons shorten extrafusal fibres while gamma neurons tighten intrafusal fibres, preventing spindle slack"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "If gamma motor neurons did not co-activate when extrafusal fibers shorten, the muscle spindle would go slack and stop firing Ia afferents; coactivation keeps the spindle taut and responsive to unexpected load changes during active shortening.",
       "verified": false,
       "open": {
@@ -170,13 +170,13 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "Contrast 'gamma-dynamic' and 'gamma-static' motor neurons in regulating muscle spindle sensitivity:",
       "options": [
-        "Dynamic gamma: bag1/velocity sensitivity; static gamma: bag2 and chain/steady-length sensitivity",
-        "Dynamic gamma neurons inhibit all stretch reflexes while static gamma neurons cause paralysis",
-        "Static gamma neurons innervate only extrafusal fibres",
-        "Dynamic gamma neurons are located in the olfactory bulb"
+        "Dynamic gamma neurons lower spindle sensitivity during fast stretch; static gamma neurons lower it during slow stretch",
+        "Static gamma neurons raise spindle sensitivity to stretch velocity; dynamic gamma neurons maintain sensitivity to steady length",
+        "Dynamic gamma neurons excite Golgi tendon organs; static gamma neurons excite only secondary spindle endings",
+        "Dynamic gamma neurons raise spindle sensitivity to stretch velocity; static gamma neurons maintain steady-length sensitivity"
       ],
-      "answer": 0,
-      "explain": "Dynamic gamma boosts velocity sensitivity via bag1 intrafusal fibers; static gamma sustains steady-state length sensitivity via bag2 and chain fibers and prevents Ia unloading during shortening. Key detail: Dynamic gamma neurons target bag1 fibres and increase velocity sensitivity; static gamma neurons target bag2 and chain fibres and support steady-length sensitivity.",
+      "answer": 3,
+      "explain": "Dynamic gamma boosts velocity sensitivity via bag1 intrafusal fibers; static gamma sustains steady-state length sensitivity via bag2 and chain fibers and prevents Ia unloading during shortening.",
       "verified": false,
       "open": {
         "q": "Distinguish the functional effects of dynamic gamma versus static gamma motor neurons on muscle spindle afferents.",
@@ -193,12 +193,12 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "What is 'decerebrate rigidity' (extensor posturing), which anatomical transection classically produces it in experimental physiology, and why does it occur?",
       "options": [
-        "Intercollicular transection leaves vestibulospinal and pontine reticulospinal extensor drive relatively unopposed",
-        "Transection below the lumbar enlargement removes all extensor tone",
-        "Destruction of vestibular nuclei produces severe extensor rigidity",
-        "An isolated peripheral nerve lesion produces bilateral extensor posturing"
+        "Transection above the red nucleus removes cortical input only and leaves rubrospinal flexor drive unopposed",
+        "Midbrain transection between the colliculi leaves vestibulospinal and pontine reticulospinal drive unopposed",
+        "Cervical spinal transection removes all descending input, so unopposed gamma activity produces extensor rigidity",
+        "Transection at the pontomedullary junction removes pontine drive and leaves medullary inhibition of extensors unopposed"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Intercollicular decerebration leaves the pontine reticular formation and lateral vestibular nucleus intact while disconnecting higher inhibitory/modulatory inputs (cortex, red nucleus, medullary reticular formation), producing marked antigravity extensor rigidity.",
       "verified": false,
       "open": {
@@ -216,12 +216,12 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "What is 'decorticate posturing' (decorticate rigidity), and how does it differ anatomically from decerebrate posturing?",
       "options": [
-        "Flexed upper limbs and extended lower limbs after a lesion above the midbrain, with rubrospinal flexor influence preserved",
-        "Complete flaccidity of all four limbs with absent tendon reflexes",
-        "Upper-limb extension and lower-limb flexion caused by cerebellar tumour alone",
-        "Involuntary rhythmic blinking without limb posturing"
+        "Extended arms and flexed legs after a lesion above the red nucleus, with rubrospinal drive lost",
+        "Flexed arms and extended legs after a lesion above the red nucleus, with rubrospinal drive preserved",
+        "Flexed arms and flexed legs after a lesion of the medullary pyramids, with reticulospinal drive lost",
+        "Extended arms and extended legs after a lesion below the red nucleus, with vestibulospinal drive unopposed"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "In decorticate posturing, the red nucleus and rubrospinal tract remain intact above the brainstem lesion, promoting upper-limb flexor tone while lower limbs extend under vestibulospinal/reticulospinal influence.",
       "verified": false,
       "open": {
@@ -237,15 +237,15 @@
       "type": "mcq",
       "level": 2,
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
-      "q": "Match the three functional divisions of the cerebellum with their primary inputs, outputs, and motor functions:",
+      "q": "Match the three functional divisions of the cerebellum with their primary motor functions:",
       "options": [
-        "Vestibulocerebellum: balance/VOR; spinocerebellum: posture/gait; cerebrocerebellum: planning/timing",
-        "Vestibulocerebellum: speech; spinocerebellum: hearing; cerebrocerebellum: pupillary reflexes",
-        "Vestibulocerebellum: fine finger movement; spinocerebellum: smell; cerebrocerebellum: balance only",
-        "All three divisions have identical inputs and functions"
+        "Vestibulocerebellum: limb execution; spinocerebellum: planning and timing; cerebrocerebellum: balance and eye movements",
+        "Vestibulocerebellum: balance and eye movements; spinocerebellum: posture, gait and limbs; cerebrocerebellum: planning and timing",
+        "Vestibulocerebellum: planning and timing; spinocerebellum: balance and eye movements; cerebrocerebellum: posture, gait and limb execution",
+        "Vestibulocerebellum: posture and gait; spinocerebellum: balance and eye movements; cerebrocerebellum: limb execution"
       ],
-      "answer": 0,
-      "explain": "Memorize the deep nuclei rule ('Don't Eat Greasy Food, Ever' from lateral to medial: Dentate -> Emboliform -> Globose -> Fastigial) and map each division to its core function: balance/eye movements, posture/gait & limb execution, and motor planning/timing. Key detail: Vestibulocerebellum: balance and eye movements; spinocerebellum: posture, gait and limb execution; cerebrocerebellum: planning and timing skilled movement.",
+      "answer": 1,
+      "explain": "Deep nuclei, lateral to medial: Dentate, Emboliform, Globose, Fastigial ('Don't Eat Greasy Food, Ever'). Vestibulocerebellum = balance/eye movements; spinocerebellum = posture, gait and limb execution; cerebrocerebellum = planning and timing of skilled movement.",
       "verified": false,
       "open": {
         "q": "Match the vestibulocerebellum, spinocerebellum (vermis and paravermis), and cerebrocerebellum with their primary motor roles and deep cerebellar nuclei.",
@@ -260,14 +260,14 @@
       "type": "mcq",
       "level": 2,
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
-      "q": "In the cerebellar cortex, which cell type is the SOLE output neuron projecting to the deep cerebellar nuclei, and is its neurotransmitter excitatory or inhibitory?",
+      "q": "In the cerebellar cortex, which cell type is the SOLE output neuron projecting to the deep cerebellar nuclei, and which neurotransmitter does it release?",
       "options": [
-        "Purkinje cell — GABAergic (INHIBITORY) output onto deep cerebellar and vestibular nuclei",
-        "Granule cell — GABAergic inhibitory output",
-        "Mossy fiber — cholinergic excitatory output from Purkinje cells",
-        "Climbing fiber — dopaminergic output from Purkinje cells"
+        "Purkinje cell, which releases glutamate onto deep cerebellar and vestibular nuclei",
+        "Golgi cell, which releases GABA onto deep cerebellar nuclei",
+        "Granule cell, which releases glutamate onto deep cerebellar nuclei",
+        "Purkinje cell, which releases GABA onto the deep cerebellar and lateral vestibular nuclei"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Purkinje cells provide the sole inhibitory (GABA) output of the cerebellar cortex onto the deep cerebellar nuclei; mossy fibers (via granule cell parallel fibers) and climbing fibers (from the inferior olivary nucleus) are EXCITATORY inputs.",
       "verified": false,
       "open": {
@@ -285,12 +285,12 @@
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
       "q": "How do 'climbing fibers' originating from the 'inferior olivary nucleus' contribute to cerebellar motor learning ('error correction')?",
       "options": [
-        "Climbing fibres signal motor error; their co-activation with parallel fibres can induce LTD at parallel-fibre–Purkinje synapses",
-        "Climbing fibres myelinate Purkinje dendrites to increase firing rate",
-        "Climbing fibres permanently inhibit the inferior olive after one movement",
-        "Climbing fibres release acetylcholine onto skeletal muscle endplates"
+        "They carry a copy of the intended movement and potentiate parallel-fibre synapses on Purkinje cells",
+        "They relay limb position from spindles and excite granule cells to refine mossy-fibre input",
+        "They signal motor error, and paired activity with parallel fibres can depress Purkinje synapses",
+        "They provide tonic inhibition of Purkinje cells that sets the baseline firing of the deep nuclei"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Climbing-fiber error signals trigger Ca2+ influx in Purkinje dendrites that depresses ('LTD') mismatched parallel-fiber synapses, calibrating motor accuracy across trials.",
       "verified": false,
       "open": {
@@ -308,13 +308,13 @@
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
       "q": "Why does a unilateral cerebellar lesion produce 'IPSILATERAL' motor signs (ataxia, dysmetria, intention tremor, dysdiadochokinesia) despite cerebellar output ascending to the contralateral motor cortex?",
       "options": [
-        "Cerebellar output crosses to the opposite cortex; corticospinal fibres cross back at the pyramids, causing ipsilateral signs",
-        "Cerebellar output never crosses, but corticospinal output crosses twice in the spinal cord",
-        "Cerebellar lesions cause contralateral signs because both pathways remain uncrossed",
-        "Only sensory pathways cross, so cerebellar signs are always bilateral"
+        "Cerebellar output crosses to the opposite thalamus and cortex, and corticospinal fibres cross back at the pyramids",
+        "Spinocerebellar afferents cross twice in the cord, so cerebellar processing of limb input is ipsilateral",
+        "Cerebellar output crosses at the pyramids to reach the contralateral cord, and the rubrospinal tract crosses back at the midbrain",
+        "Cerebellar output reaches the ipsilateral cortex uncrossed, and ipsilateral corticospinal fibres descend without crossing"
       ],
       "answer": 0,
-      "explain": "Double crossing—first via the superior cerebellar peduncle to the opposite thalamus/cortex, then via the pyramidal decussation back to the original side—means unilateral cerebellar damage produces ipsilateral limb signs. Key detail: Double crossing—cerebellar output to the opposite cortex, then corticospinal fibres back across at the pyramidal decussation—produces ipsilateral signs.",
+      "explain": "Double crossing, first via the superior cerebellar peduncle to the opposite thalamus/cortex, then via the pyramidal decussation back to the original side, means unilateral cerebellar damage produces ipsilateral limb signs.",
       "verified": false,
       "open": {
         "q": "Explain the neuroanatomical 'double decussation' that causes a unilateral cerebellar lesion to produce ipsilateral motor signs.",
@@ -331,13 +331,13 @@
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
       "q": "Match these classic cerebellar clinical signs with their definitions: 'dysmetria', 'intention tremor', and 'dysdiadochokinesia':",
       "options": [
-        "Dysmetria: range error; intention tremor: target approach; dysdiadochokinesia: rapid alternation",
-        "Intention tremor occurs only at rest while dysmetria means muscle weakness",
-        "Dysdiadochokinesia means complete loss of vision in both eyes",
-        "Dysmetria is involuntary chorea of the tongue"
+        "Dysmetria is error in movement range; intention tremor worsens near target; dysdiadochokinesia is impaired alternation",
+        "Dysmetria is tremor at rest; intention tremor is error in movement range; dysdiadochokinesia is impaired rapid alternation",
+        "Dysmetria is slowness of initiation; intention tremor worsens near the target; dysdiadochokinesia is jerking at rest",
+        "Dysmetria is error in movement range; intention tremor is tremor at rest; dysdiadochokinesia is loss of joint position sense"
       ],
       "answer": 0,
-      "explain": "Cerebellar tremor is a kinetic/intention tremor appearing during targeted movement (unlike Parkinsonian resting 'pill-rolling' tremor), paired with dysmetria (past-pointing) and dysdiadochokinesia. Key detail: Dysmetria: inaccurate movement range; intention tremor: tremor during target-directed movement; dysdiadochokinesia: impaired rapid alternating movements.",
+      "explain": "Cerebellar tremor is a kinetic/intention tremor appearing during targeted movement (unlike Parkinsonian resting 'pill-rolling' tremor), paired with dysmetria (past-pointing) and dysdiadochokinesia.",
       "verified": false,
       "open": {
         "q": "Define dysmetria, intention tremor, and dysdiadochokinesia as manifestations of cerebellar dysfunction.",
@@ -354,10 +354,10 @@
       "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
       "q": "Which neurotransmitter does the 'striatum (caudate and putamen)' receive from the 'substantia nigra pars compacta (SNc)' via the 'nigrostriatal pathway', and what are its differential effects on D1 versus D2 medium spiny neurons?",
       "options": [
-        "Dopamine excites D1 direct-pathway neurons and inhibits D2 indirect-pathway neurons, favouring movement",
-        "Acetylcholine inhibits all striatal neurons equally",
-        "GABA excites SNc neurons to stop all movement",
-        "Glutamate permanently blocks dopamine synthesis"
+        "Dopamine, which excites striatal D1 direct-pathway neurons and inhibits D2 indirect-pathway neurons",
+        "Glutamate, which excites D1 direct-pathway neurons and inhibits D2 indirect-pathway neurons",
+        "Dopamine, which inhibits D1 direct-pathway neurons and excites D2 indirect-pathway neurons",
+        "Dopamine, which excites D2 indirect-pathway neurons and has no effect on D1 neurons"
       ],
       "answer": 0,
       "explain": "Dopamine acting on D1 (excitatory) and D2 (inhibitory) receptors in the striatum shifts the net balance toward movement initiation by disinhibiting thalamocortical motor neurons.",
@@ -377,12 +377,12 @@
       "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
       "q": "Trace how activation of the 'direct pathway' in the basal ganglia facilitates voluntary movement ('disinhibition'):",
       "options": [
-        "Striatal inhibition of GPi/SNr reduces their inhibition of the motor thalamus, disinhibiting thalamocortical output",
-        "Striatum excites GPi to strongly inhibit the thalamus",
-        "Motor thalamus directly inhibits primary motor cortex",
-        "GPi releases dopamine onto skeletal muscle fibres"
+        "Striatum excites GPi/SNr, which raises their tonic inhibition of the motor thalamus and silences cortical output",
+        "Striatum inhibits GPe, which frees the subthalamic nucleus to excite GPi/SNr and brake the motor thalamus",
+        "Motor cortex excites GPi/SNr, which in turn excite the motor thalamus and drive thalamocortical output",
+        "Striatum inhibits GPi/SNr, which lowers their tonic inhibition of the motor thalamus and frees cortical output"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "GPi/SNr neurons fire tonically to hold the motor thalamus under inhibitory brake; the direct pathway inhibits GPi/SNr ('inhibition of an inhibition' = disinhibition), releasing the thalamus to excite motor cortex.",
       "verified": false,
       "open": {
@@ -400,10 +400,10 @@
       "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
       "q": "Trace how the 'indirect pathway' (striatum -> external globus pallidus -> subthalamic nucleus -> GPi/SNr -> thalamus) suppresses unwanted movements:",
       "options": [
-        "Striatum inhibits GPe, disinhibiting STN; STN excites GPi/SNr, increasing inhibition of the motor thalamus",
-        "Striatum excites GPe to inhibit STN and increase thalamic excitation",
-        "Subthalamic nucleus releases GABA to inhibit GPi",
-        "Indirect pathway bypasses GPi/SNr completely"
+        "Striatum inhibits GPe, which frees the STN to excite GPi/SNr and strengthen inhibition of the motor thalamus",
+        "Striatum excites GPe, which inhibits the STN and weakens GPi/SNr drive, freeing the motor thalamus",
+        "Striatum inhibits GPi/SNr directly, which lowers inhibition of the motor thalamus and frees thalamocortical output",
+        "Striatum inhibits GPe, which frees the STN to inhibit GPi/SNr and release the motor thalamus"
       ],
       "answer": 0,
       "explain": "Whereas the direct pathway disinhibits the thalamus to promote movement, the indirect pathway boosts subthalamic glutamatergic drive onto GPi/SNr to increase thalamic inhibition and suppress competing/unwanted movements.",
@@ -423,12 +423,12 @@
       "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
       "q": "Which neurotransmitter does the 'subthalamic nucleus (STN)' use to excite the internal and external globus pallidus (GPi and GPe)?",
       "options": [
-        "Glutamate (excitatory)",
-        "GABA (inhibitory)",
         "Dopamine",
-        "Glycine"
+        "Glutamate",
+        "Acetylcholine",
+        "GABA"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Within the basal ganglia, the subthalamic nucleus (STN) is the major excitatory glutamatergic nucleus, whereas the striatum, GPe, GPi, and SNr are predominantly GABAergic.",
       "verified": false,
       "open": {
@@ -446,12 +446,12 @@
       "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
       "q": "Contrast 'hypokinetic movement disorders' (such as Parkinson's disease) with 'hyperkinetic movement disorders' (such as Huntington's disease or hemiballismus) in terms of basal ganglia output onto the motor thalamus:",
       "options": [
-        "Hypokinetic disorders increase GPi/SNr inhibition of the motor thalamus; hyperkinetic disorders reduce it",
-        "Hyperkinetic disorders cause excessive thalamic inhibition while hypokinetic disorders cause ballismus",
-        "Basal ganglia output to the thalamus is identical in Parkinson's and Huntington's diseases",
-        "Hypokinetic disorders are caused by excess striatal dopamine"
+        "Hypokinetic disorders lower GPi/SNr inhibition of the motor thalamus, while hyperkinetic disorders raise it",
+        "Both raise GPi/SNr inhibition, with hypokinetic disorders acting through the STN and hyperkinetic ones through the striatum",
+        "Both lower GPi/SNr inhibition, with hypokinetic disorders acting through the direct pathway alone",
+        "Hypokinetic disorders raise GPi/SNr inhibition of the motor thalamus, while hyperkinetic disorders lower it"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "In Parkinson's disease, loss of nigrostriatal dopamine shifts balance toward excessive GPi/SNr inhibition of the thalamus (hypokinesia); in Huntington's disease, early loss of indirect-pathway striatal neurons reduces GPi inhibition of the thalamus, causing choreiform hyperkinesia.",
       "verified": false,
       "open": {
@@ -469,12 +469,12 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "What are 'spinal central pattern generators (CPGs)', and how do they generate rhythmic walking/stepping movements even without supraspinal commands or rhythmic sensory feedback?",
       "options": [
-        "Spinal interneuron networks generate alternating flexor-extensor rhythms, modulated by descending commands and sensory feedback",
-        "Pacemaker cells inside the primary visual cortex",
-        "Direct skeletal muscle contraction without motor neurons",
-        "Reflexes requiring the olfactory bulb for every step"
+        "Cerebellar oscillators that send timed commands to spinal motor neurons through the rubrospinal tract",
+        "Brainstem pacemaker nuclei that drive each step through reticulospinal commands, so spinal transection abolishes stepping",
+        "Muscle spindle reflex loops that produce rhythm only when afferent feedback from each step arrives",
+        "Spinal interneuron networks that generate alternating flexor and extensor bursts for locomotion, shaped by descending and sensory input"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Decerebrate or spinalized animals with appropriate sensory/pharmacological support can still generate coordinated stepping rhythms because spinal CPG interneuron circuits generate the core alternating flexor-extensor pattern.",
       "verified": false,
       "open": {
@@ -492,12 +492,12 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "How does 'reciprocal innervation' work during a monosynaptic stretch reflex or a flexor withdrawal reflex?",
       "options": [
-        "Ia afferents excite agonist motor neurons and activate inhibitory interneurons that suppress antagonist motor neurons",
-        "Motor neurons excite agonist and antagonist muscles equally",
-        "Sensory afferents inhibit all spinal motor neurons",
-        "Reciprocal innervation occurs only in gastric smooth muscle"
+        "Ia afferents inhibit agonist motor neurons directly and release antagonist motor neurons through gamma loops",
+        "Ia afferents excite agonist and antagonist motor neurons together to stiffen the joint during stretch",
+        "Ia afferents excite agonist motor neurons and drive inhibitory interneurons that suppress antagonists",
+        "Ib afferents excite agonist motor neurons and drive Renshaw cells that suppress the same motor pool"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "During knee extension or flexor withdrawal, inhibitory Ia/spinal interneurons relax opposing antagonist muscles so limb motion is smooth and unopposed.",
       "verified": false,
       "open": {
@@ -515,12 +515,12 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "What is 'recurrent (Renshaw cell) inhibition' in the ventral horn of the spinal cord?",
       "options": [
-        "Alpha-motor axon collaterals excite Renshaw cells, which inhibit the same motor pool and related interneurons",
-        "Sympathetic fibres excite sensory dorsal root ganglion cells",
-        "Botulinum toxin facilitates acetylcholine release at the neuromuscular junction",
-        "Cerebellar Purkinje cells directly excite skeletal muscle"
+        "Golgi tendon organ afferents excite Renshaw cells, which inhibit the homonymous motor pool under high tension",
+        "Ia afferent collaterals excite Renshaw cells, which inhibit antagonist motor neurons for reciprocal inhibition",
+        "Alpha motor neuron collaterals excite Renshaw cells, which excite synergist motor neurons in positive feedback",
+        "Alpha motor neuron collaterals excite Renshaw cells, which feed back to inhibit the same motor neurons"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Renshaw cells form a classic negative-feedback recurrent loop onto alpha motor neurons, dampening excessive firing and helping focus motor output.",
       "verified": false,
       "open": {
@@ -538,10 +538,10 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "Compare the two major phases of the human walking gait cycle ('stance phase' versus 'swing phase') and their approximate share of the cycle:",
       "options": [
-        "Stance occupies about 60% of the gait cycle; swing occupies about 40%",
-        "Swing accounts for 85% of walking and stance 15%",
-        "Both feet are off the ground throughout stance",
-        "Slow walking has no stance phase"
+        "Stance takes about 60% of the cycle and swing about 40%, with double support at each end of stance",
+        "Stance takes about 40% of the cycle and swing about 60%, with double support in mid-swing",
+        "Stance takes about 80% of the cycle and swing about 20%, with double support throughout most of stance",
+        "Stance and swing each take about 50%, with no double support at normal walking speed"
       ],
       "answer": 0,
       "explain": "During normal walking, stance occupies ~60% of the stride (with double-limb support at beginning and end of stance) and swing occupies ~40%; as speed increases to running, double support disappears and periods of aerial float appear.",
@@ -561,13 +561,13 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "Which muscle group contracts to 'dorsiflex' the ankle during the 'swing phase' of gait so the toes clear the ground without dragging ('foot drop')?",
       "options": [
-        "Deep peroneal-innervated anterior compartment dorsiflexors (tibialis anterior, EHL and EDL)",
-        "Gastrocnemius and soleus (tibial nerve)",
-        "Gluteus maximus (inferior gluteal nerve)",
-        "Iliopsoas (femoral nerve)"
+        "Tibialis posterior and flexor digitorum longus, supplied by the tibial nerve",
+        "Tibialis anterior and anterior compartment muscles, supplied by the deep fibular nerve",
+        "Fibularis longus and brevis in the lateral compartment, supplied by the superficial fibular nerve",
+        "Gastrocnemius and soleus, supplied by the tibial nerve"
       ],
-      "answer": 0,
-      "explain": "Weakness of tibialis anterior / deep peroneal nerve (e.g., common fibular nerve palsy at the fibular neck or L5 radiculopathy) causes 'foot drop' and a compensatory 'steppage gait' (high knee lift) to keep toes from scraping the floor during swing. Key detail: Anterior compartment ankle dorsiflexors (tibialis anterior, extensor hallucis longus, extensor digitorum longus), innervated by the deep peroneal (fibular) nerve (L4-L5).",
+      "answer": 1,
+      "explain": "Weakness of tibialis anterior / deep peroneal nerve (e.g., common fibular nerve palsy at the fibular neck or L5 radiculopathy) causes 'foot drop' and a compensatory 'steppage gait' (high knee lift) to keep toes from scraping the floor during swing.",
       "verified": false,
       "open": {
         "q": "Which muscle and nerve produce ankle dorsiflexion during the swing phase of walking to prevent toe-dragging (foot drop)?",
@@ -584,10 +584,10 @@
       "sub": "Clinical Correlations",
       "q": "A 62-year-old man with hypertension presents 4 hours after sudden onset of right-sided weakness. Exam reveals spastic paralysis of the right arm and leg, hyperreflexia, sustained ankle clonus, loss of superficial abdominal reflexes on the right, and an upgoing right big toe (dorsiflexion with fanning of toes) on plantar stroking ('Babinski sign'). Where is the primary lesion located?",
       "options": [
-        "Left upper motor neuron (UMN) pathway—such as the left internal capsule (posterior limb) or left primary motor cortex/corticospinal tract",
-        "Right peripheral sciatic nerve (lower motor neuron)",
-        "Right neuromuscular junction",
-        "Left cerebellar flocculus"
+        "Left upper motor neuron lesion, such as the left internal capsule or the primary motor cortex",
+        "Right upper motor neuron lesion, such as the right internal capsule or motor cortex",
+        "Left cerebellar hemisphere lesion, such as a posterior inferior cerebellar artery infarct",
+        "Right lower motor neuron lesion, such as the sciatic nerve or lumbosacral roots"
       ],
       "answer": 0,
       "explain": "Spasticity, hyperreflexia, clonus, and a positive Babinski sign (extensor plantar response) are hallmark signs of an upper motor neuron (corticospinal) lesion contralateral to the deficit.",
@@ -607,13 +607,13 @@
       "sub": "Clinical Correlations",
       "q": "A 49-year-old man has a fracture of the fibular neck on his right leg and walks into clinic lifting his right knee high with each step to keep his right toes from dragging on the ground ('steppage gait'), with inability to dorsiflex or evert the right foot and decreased sensation over the dorsal foot and first web space. Which nerve is injured and what type of motor deficit is present?",
       "options": [
-        "Right common fibular nerve palsy causing LMN foot drop with weak dorsiflexion and eversion",
-        "Left lateral corticospinal tract—an upper motor neuron lesion with spasticity and clonus",
-        "Right femoral nerve—spastic knee extension",
-        "Right obturator nerve—adductor spasticity"
+        "Right superficial fibular nerve alone, a lower motor neuron lesion with weak eversion but normal dorsiflexion",
+        "Right tibial nerve, a lower motor neuron lesion with weak plantarflexion and inversion",
+        "Left lateral corticospinal tract, an upper motor neuron lesion with spastic dorsiflexors",
+        "Right common fibular nerve, a lower motor neuron lesion with weak dorsiflexion and eversion"
       ],
-      "answer": 0,
-      "explain": "Peripheral nerve injury at the fibular neck damages lower motor neurons (common/deep/superficial peroneal fibers), producing flaccid foot drop, steppage gait, and reduced/absent local reflexes rather than spasticity. Key detail: Right common peroneal (fibular) nerve—a LOWER motor neuron (LMN) lesion causing flaccid weakness/paralysis of dorsiflexion and eversion, muscle atrophy, hyporeflexia, and fasciculations/denervation.",
+      "answer": 3,
+      "explain": "Peripheral nerve injury at the fibular neck damages lower motor neurons (common/deep/superficial peroneal fibers), producing flaccid foot drop, steppage gait, and reduced/absent local reflexes rather than spasticity.",
       "verified": false,
       "open": {
         "q": "Identify the injured nerve and motor neuron classification (UMN vs LMN) in a patient with right foot drop and steppage gait after a fibular neck fracture.",
@@ -630,12 +630,12 @@
       "sub": "Clinical Correlations",
       "q": "A 67-year-old man presents with a 2-year history of progressive resting tremor ('pill-rolling' tremor of the thumb and index finger that diminishes during voluntary reaching), cogwheel/lead-pipe muscle rigidity, slowness of movement (bradykinesia), masked facial expression (hypomimia), and a shuffling gait with reduced arm swing. Which pathological loss causes these signs?",
       "options": [
+        "Loss of GABAergic medium spiny neurons in the striatum",
         "Loss of dopaminergic neurons in the substantia nigra pars compacta",
-        "Loss of GABAergic neurons in the striatum",
-        "Loss of Purkinje cells in the cerebellar cortex",
-        "Loss of lower motor neurons in the anterior horn"
+        "Loss of dopaminergic neurons in the ventral tegmental area of the midbrain",
+        "Loss of glutamatergic neurons in the subthalamic nucleus"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Parkinson's disease is driven by loss of pigmented dopaminergic neurons in the SNc (with Lewy bodies containing alpha-synuclein), reducing direct-pathway facilitation and increasing indirect-pathway brake activity.",
       "verified": false,
       "open": {
@@ -653,13 +653,13 @@
       "sub": "Clinical Correlations",
       "q": "A 42-year-old man whose father died of a progressive neurodegenerative movement disorder develops involuntary, brief, irregular, dancelike movements of his face, trunk, and limbs (chorea), irritability, and cognitive decline. Genetic testing shows CAG trinucleotide repeat expansion in the HTT gene on chromosome 4. Which striatal neurons are lost earliest in this disorder?",
       "options": [
-        "GABAergic medium spiny neurons of the striatum (especially those projecting to the external globus pallidus in the INDIRECT pathway)",
-        "Motor neurons of the abducens nucleus",
-        "Hair cells of the cochlear apex",
-        "Anterior horn cells of the cervical cord"
+        "Glutamatergic neurons of the subthalamic nucleus, projecting to the GPi",
+        "Cholinergic interneurons of the striatum, projecting locally to medium spiny neurons",
+        "GABAergic medium spiny neurons, especially indirect-pathway neurons projecting to the GPe",
+        "Dopaminergic neurons of the substantia nigra pars compacta, projecting to the dorsal striatum"
       ],
-      "answer": 0,
-      "explain": "Huntington's disease (autosomal dominant HTT CAG expansion) causes early degeneration of striatal GABAergic neurons—particularly indirect-pathway neurons—releasing the motor thalamus from inhibition and producing chorea.",
+      "answer": 2,
+      "explain": "Huntington's disease (autosomal dominant HTT CAG expansion) causes early degeneration of striatal GABAergic neurons, particularly indirect-pathway neurons, releasing the motor thalamus from inhibition and producing chorea.",
       "verified": false,
       "open": {
         "q": "Which striatal neuronal population degenerates early in Huntington's disease to disinhibit the motor thalamus and produce chorea?",
@@ -674,14 +674,14 @@
       "type": "mcq",
       "level": 3,
       "sub": "Clinical Correlations",
-      "q": "A 69-year-old woman with sudden-onset lacunar stroke in the deep brain develops violent, wide-amplitude, flinging/hurling movements of her left arm and leg ('hemiballismus') that occur unpredictably even at rest. Which small contralateral structure is infarcted?",
+      "q": "A 69-year-old woman with sudden-onset lacunar stroke in the deep brain develops violent, wide-amplitude, flinging/hurling movements of her left arm and leg ('hemiballismus') that occur unpredictably even at rest. Which structure is infarcted?",
       "options": [
-        "Right subthalamic nucleus (STN)",
-        "Left medial geniculate nucleus",
-        "Right vestibular nuclei",
-        "Left olfactory tract"
+        "Left subthalamic nucleus",
+        "Right substantia nigra pars compacta",
+        "Right caudate nucleus",
+        "Right subthalamic nucleus"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "A lesion of the contralateral subthalamic nucleus (STN) removes excitatory glutamatergic drive onto GPi/SNr, markedly reducing GPi inhibition of the motor thalamus and releasing wild, flinging contralateral limb movements (hemiballismus).",
       "verified": false,
       "open": {
@@ -699,13 +699,13 @@
       "sub": "Clinical Correlations",
       "q": "A 58-year-old man with chronic alcohol use disorder presents with a wide-based, staggering ('drunken') gait, truncal sway when standing or sitting even with eyes open, and slurred scanning speech, while fine finger-to-nose testing in his arms is nearly normal. Which cerebellar region is predominantly atrophied?",
       "options": [
-        "Cerebellar vermis and flocculonodular lobe (midline/vestibulocerebellar degeneration classic in chronic alcoholism)",
-        "Left primary motor cortex (precentral gyrus)",
-        "Right caudate head",
-        "Left occipital pole"
+        "Paravermal intermediate zone",
+        "Anterior vermis of the cerebellum",
+        "Dentate nucleus and superior cerebellar peduncle",
+        "Lateral cerebellar hemispheres"
       ],
-      "answer": 0,
-      "explain": "Chronic alcoholism (and thiamine/B1 deficiency) preferentially damages the anterior superior vermis and flocculonodular regions, causing prominent truncal and gait ataxia.",
+      "answer": 1,
+      "explain": "Chronic alcoholism (and thiamine/B1 deficiency) preferentially damages the anterior superior vermis, causing prominent truncal and gait ataxia with relative sparing of limb coordination.",
       "verified": false,
       "open": {
         "q": "Which cerebellar region is classically affected in chronic alcohol-related gait and truncal ataxia?",
@@ -722,13 +722,13 @@
       "sub": "Clinical Correlations",
       "q": "A 38-year-old woman with multiple sclerosis has a demyelinating plaque in the left cerebellar hemisphere / middle and superior cerebellar peduncles. On neurological exam, she exhibits left-sided past-pointing (dysmetria), left-sided intention tremor on finger-to-nose testing, and inability to perform rapid alternating hand taps on the left (dysdiadochokinesia). Why are her symptoms on the LEFT side?",
       "options": [
-        "Cerebellar pathways double-cross, so left cerebellar lesions cause ipsilateral limb signs",
-        "The left cerebellum controls the right arm directly without crossing",
-        "Multiple sclerosis affects only ipsilateral motor neurons in the left hand",
-        "Left cerebellar lesions cause right-sided blindness instead of ataxia"
+        "Cerebellar output crosses to the right thalamus and cortex, then corticospinal fibres cross back",
+        "Left cerebellar output crosses at the pyramids, and demyelination also spreads into the left corticospinal tract",
+        "Plaques in the peduncles also damage the left dorsal columns, producing left-sided sensory ataxia",
+        "Left cerebellar output stays uncrossed and the left corticospinal tract does not cross, so signs are ipsilateral"
       ],
       "answer": 0,
-      "explain": "Unilateral cerebellar lesions cause ipsilateral motor coordination deficits (ataxia, dysmetria, intention tremor, dysdiadochokinesia) because of the double crossing between cerebellum, thalamus/cortex, and medullary pyramids. Key detail: Cerebellar motor pathways undergo a double decussation (cerebellothalamic crossing to right thalamus/cortex, then corticospinal crossing back to left spinal cord), so unilateral left cerebellar lesions cause ipsilateral left limb signs.",
+      "explain": "Unilateral cerebellar lesions cause ipsilateral motor coordination deficits (ataxia, dysmetria, intention tremor, dysdiadochokinesia) because of the double crossing between cerebellum, thalamus/cortex, and medullary pyramids (cerebellothalamic crossing, then corticospinal crossing back).",
       "verified": false,
       "open": {
         "q": "Why does a lesion in the left cerebellar hemisphere produce ataxia and dysmetria in the left arm rather than the right arm?",
@@ -745,13 +745,13 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "What is the 'clasp-knife phenomenon' seen in spasticity (upper motor neuron lesions) when an examiner rapidly flexes or extends a patient's limb?",
       "options": [
-        "Spasticity initially resists stretch; Golgi tendon organ Ib inhibition then produces clasp-knife release",
-        "Complete absence of any resistance from the start of movement",
-        "Involuntary rhythmic twitching of the eyelid during sleep",
-        "Permanent shortening of tendons with zero neural involvement"
+        "Hyperactive stretch reflexes resist at first, then fatigue of Ia afferents and spindle adaptation let the muscle relax abruptly",
+        "Rapid stretch activates group II afferents that excite antagonist motor neurons and collapse the resistance",
+        "Stretch reflexes resist at first, then high tension activates Golgi tendon organ Ib afferents that inhibit motor neurons",
+        "Rising tension activates Renshaw cells that inhibit gamma motor neurons and soften spindle sensitivity"
       ],
-      "answer": 0,
-      "explain": "In spasticity, hyperactive stretch reflexes initially resist passive movement, until rising tension stimulates Ib Golgi tendon organ afferents to inhibit the alpha motor neurons ('clasp-knife' release). Key detail: Initial strong resistance from hyperactive muscle-spindle stretch reflexes suddenly gives way ('collapses') as high muscle tension activates Golgi tendon organ (Ib) inhibitory interneurons onto homonymous alpha motor neurons (autogenic inhibition).",
+      "answer": 2,
+      "explain": "In spasticity, hyperactive stretch reflexes initially resist passive movement, until rising tension stimulates Ib Golgi tendon organ afferents to inhibit the alpha motor neurons ('clasp-knife' release).",
       "verified": false,
       "open": {
         "q": "Explain the physiological mechanism behind the 'clasp-knife phenomenon' during passive stretch of a spastic limb.",
@@ -768,13 +768,13 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "How does 'spasticity' (velocity-dependent clasp-knife hypertonia of upper motor neuron lesions) differ from 'rigidity' (lead-pipe or cogwheel resistance throughout passive motion of basal ganglia disorders)?",
       "options": [
-        "Spasticity is velocity-dependent with hyperreflexia; rigidity is uniform in flexors and extensors",
-        "Spasticity occurs only in peripheral nerve injury while rigidity occurs only in myasthenia gravis",
-        "Rigidity causes absent tendon reflexes and muscle fasciculations",
-        "Spasticity and rigidity are identical in both mechanism and clinical exam"
+        "Spasticity gives uniform resistance throughout movement with reduced reflexes; rigidity is velocity-dependent with clasp-knife release",
+        "Spasticity is velocity-dependent with clasp-knife release and hyperreflexia; rigidity gives uniform resistance in flexors and extensors",
+        "Spasticity arises from lower motor neuron lesions with fasciculations; rigidity arises from upper motor neuron lesions with Babinski signs",
+        "Spasticity affects only flexors and rigidity only extensors, and both are velocity-dependent with hyperreflexia"
       ],
-      "answer": 0,
-      "explain": "Spasticity reflects hyperexcitable spinal stretch reflexes from UMN loss (velocity-dependent, clasp-knife, hyperreflexia), whereas rigidity reflects altered supraspinal/basal ganglia tone across flexors and extensors independent of stretch velocity. Key detail: Spasticity is velocity-dependent (increases with faster passive stretch, affects antigravity extensors in legs / flexors in arms, shows clasp-knife release, and pairs with hyperreflexia/Babinski); Rigidity causes uniform resistance across BOTH flexors and extensors throughout slow or fast passive movement without clasp-knife release or hyperreflexia.",
+      "answer": 1,
+      "explain": "Spasticity reflects hyperexcitable spinal stretch reflexes from UMN loss (velocity-dependent, clasp-knife, hyperreflexia, antigravity-muscle predominance), whereas rigidity reflects altered supraspinal/basal ganglia tone across flexors and extensors independent of stretch velocity.",
       "verified": false,
       "open": {
         "q": "Contrast spasticity (UMN lesion) and rigidity (basal ganglia disorder) in terms of velocity dependence and muscle-group distribution.",
@@ -791,13 +791,13 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "What is the 'Jendrassik maneuver' (clasping hands and pulling apart while testing a patellar or Achilles tendon reflex), and how does it enhance a sluggish deep tendon reflex?",
       "options": [
-        "Remote voluntary contraction increases spindle sensitivity and spinal excitability, reinforcing the stretch reflex",
-        "It blocks all sensory impulses from entering the dorsal horn",
-        "It paralyzes the quadriceps muscle temporarily",
-        "It directly stimulates the optic nerve"
+        "Distraction removes conscious cortical suppression of the reflex arc, revealing the true underlying reflex",
+        "Remote contraction blocks Golgi tendon organ inhibition, so tension no longer limits the reflex",
+        "Remote voluntary contraction raises fusimotor and spinal excitability, lowering reflex threshold",
+        "Remote contraction mechanically stretches the spindles of the tested muscle, increasing Ia firing"
       ],
-      "answer": 0,
-      "explain": "Reinforcement maneuvers such as the Jendrassik maneuver heighten fusimotor/spinal excitability and help distinguish true hyporeflexia from voluntary guarding or borderline low reflexes. Key detail: Voluntary remote isometric effort (like pulling clasped hands) increases descending facilitation and/or gamma motor neuron bias onto muscle spindles, increasing spindle afferent sensitivity and lowering the threshold for the stretch reflex.",
+      "answer": 2,
+      "explain": "Reinforcement maneuvers such as the Jendrassik maneuver heighten fusimotor/spinal excitability and help distinguish true hyporeflexia from borderline low reflexes: voluntary remote isometric effort increases descending facilitation and/or gamma bias onto spindles.",
       "verified": false,
       "open": {
         "q": "How does the Jendrassik maneuver reinforce a deep tendon reflex during clinical testing?",
@@ -814,13 +814,13 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "How does the 'crossed-extensor reflex' coordinate the opposite limb when one foot steps on a sharp tack and triggers a flexor withdrawal reflex?",
       "options": [
-        "Ipsilateral flexors withdraw the painful limb; crossed interneurons excite contralateral extensors to support weight",
-        "It flexes both legs simultaneously so the person falls backward",
-        "It inhibits the contralateral extensor muscles to collapse the supporting leg",
-        "It requires conscious input from the primary auditory cortex"
+        "Crossed interneurons inhibit contralateral extensors so the opposite leg relaxes during withdrawal",
+        "Ipsilateral flexors withdraw the limb while crossed interneurons excite contralateral extensors to bear weight",
+        "Ipsilateral flexors withdraw the limb while crossed interneurons excite contralateral flexors to lift both feet",
+        "Both flexors withdraw together, with cortical input adding extensor support in the opposite leg after about a second"
       ],
-      "answer": 0,
-      "explain": "The crossed-extensor reflex provides automatic postural support on the contralateral limb while the ipsilateral limb withdraws from a painful stimulus. Key detail: While ipsilateral flexor motor neurons are excited and ipsilateral extensors are inhibited to lift the injured foot away from the tack, crossing spinal interneurons EXCITATE contralateral extensor motor neurons and INHIBIT contralateral flexors to stiffen the opposite leg and support body weight during withdrawal.",
+      "answer": 1,
+      "explain": "The crossed-extensor reflex provides automatic postural support on the contralateral limb while the ipsilateral limb withdraws from a painful stimulus: crossing interneurons excite contralateral extensor motor neurons and inhibit contralateral flexors.",
       "verified": false,
       "open": {
         "q": "Explain how the crossed-extensor reflex supports posture on the opposite limb during an ipsilateral flexor withdrawal reflex.",
@@ -837,13 +837,13 @@
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
       "q": "What is 'rebound phenomenon (Stewart-Holmes sign)' in a patient with a cerebellar lesion?",
       "options": [
-        "Sudden release of resistance causes limb overshoot because cerebellar antagonist braking is impaired",
-        "The arm immediately drops limp to the floor without any movement",
-        "The pupil constricts brightly when the arm is released",
-        "The patient feels sharp pain in the opposite big toe"
+        "The limb drops limp after sudden release of resistance because stretch reflex gain is lost",
+        "The limb stays fixed after sudden release of resistance because Golgi tendon organ inhibition is excessive",
+        "The limb overshoots after sudden release of resistance because cerebellar braking by antagonists fails",
+        "The limb oscillates at rest after release of resistance because basal ganglia inhibition is lost"
       ],
-      "answer": 0,
-      "explain": "Lack of timely cerebellar braking and antagonist activation causes the limb to overshoot ('rebound') when resistance is suddenly removed. Key detail: When the patient pulls forcefully against the examiner's resistance (e.g., elbow flexion) and the examiner abruptly lets go, the limb overshoots excessively because cerebellar braking/antagonist timing is impaired.",
+      "answer": 2,
+      "explain": "Lack of timely cerebellar braking and antagonist activation causes the limb to overshoot ('rebound') when resistance is suddenly removed from a forcefully contracting muscle.",
       "verified": false,
       "open": {
         "q": "Describe the rebound phenomenon (Stewart-Holmes sign) and state what it indicates about cerebellar function.",
@@ -858,14 +858,14 @@
       "type": "mcq",
       "level": 2,
       "sub": "Basal Ganglia: Direct, Indirect, and Nigrostriatal Pathways",
-      "q": "Which cortical neurotransmitter is used by the 'corticostriate projection' from the cerebral cortex onto medium spiny neurons of the striatum?",
+      "q": "Which neurotransmitter is used by the 'corticostriate projection' from the cerebral cortex onto medium spiny neurons of the striatum?",
       "options": [
-        "Glutamate (excitatory)",
+        "GABA",
         "Dopamine",
         "Acetylcholine",
-        "Glycine"
+        "Glutamate"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Widespread regions of the cerebral cortex send excitatory glutamatergic projections into the striatum, where dopamine from the SNc modulates how corticostriate inputs drive D1 (direct) versus D2 (indirect) pathways.",
       "verified": false,
       "open": {
@@ -881,15 +881,15 @@
       "type": "mcq",
       "level": 2,
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
-      "q": "What are 'tonic neck reflexes' and 'tonic labyrinthine reflexes' in posture control, and when are they prominently unmasked in humans?",
+      "q": "What are 'tonic neck reflexes' and 'tonic labyrinthine reflexes' in posture control?",
       "options": [
-        "Tonic neck reflexes respond to head-on-body position; tonic labyrinthine reflexes respond to head orientation relative to gravity",
-        "Tonic neck reflexes respond to sound; tonic labyrinthine reflexes respond to visual acuity",
-        "Both reflexes are voluntary cortical movements used only in adults",
-        "Tonic labyrinthine reflexes are mediated by taste and olfactory receptors"
+        "Tonic neck reflexes respond to head orientation relative to gravity; tonic labyrinthine reflexes respond to head position relative to the trunk",
+        "Tonic neck reflexes respond to head position relative to the trunk; tonic labyrinthine reflexes respond to head orientation to gravity",
+        "Tonic neck reflexes are driven by visual horizon tilt; tonic labyrinthine reflexes are driven by neck muscle spindles",
+        "Both respond to head position relative to the trunk, one through cervical spindles and the other through cervical joint receptors"
       ],
-      "answer": 0,
-      "explain": "Tonic neck and tonic labyrinthine reflexes adjust antigravity posture based on head-on-body angle and head-in-gravity orientation, becoming overt when descending cortical/cerebellar inhibition is lost.",
+      "answer": 1,
+      "explain": "Tonic neck and tonic labyrinthine reflexes adjust antigravity posture based on head-on-body angle (cervical proprioceptors) and head-in-gravity orientation (otolith organs), becoming overt when descending cortical/cerebellar inhibition is lost.",
       "verified": false,
       "open": {
         "q": "Contrast the sensory origins of tonic neck reflexes and tonic labyrinthine reflexes and state when they become clinically prominent.",
@@ -906,13 +906,13 @@
       "sub": "Clinical Correlations",
       "q": "A 72-year-old man with Parkinson's disease is treated with high-dose levodopa/carbidopa. His bradykinesia and rigidity improve markedly, but he begins exhibiting writhing, purposeless, dance-like movements of his face, neck, and limbs ('peak-dose dyskinesia / chorea'). How does excess dopaminergic stimulation in the striatum produce dyskinesia?",
       "options": [
-        "Excess striatal dopamine over-facilitates the direct pathway and suppresses the indirect pathway, disinhibiting thalamus",
-        "Excess dopamine destroys all alpha motor neurons in the lumbar cord",
-        "Levodopa blocks acetylcholine receptors at the neuromuscular junction",
-        "Excess dopamine causes cerebellar flocculonodular infarction"
+        "Excess dopamine blocks striatal cholinergic interneurons, so thalamic neurons fire without cortical input",
+        "Excess dopamine suppresses the direct pathway and over-drives the indirect pathway, raising STN drive to GPi/SNr",
+        "Excess dopamine over-drives the direct pathway and suppresses the indirect pathway, lowering GPi/SNr output",
+        "Excess dopamine is toxic to nigral neurons, releasing the striatum from its tonic inhibition"
       ],
-      "answer": 0,
-      "explain": "Dopaminergic excess tips the basal ganglia balance too far toward thalamocortical disinhibition (hyperkinesia/dyskinesia), requiring careful levodopa dose adjustment or amantadine. Key detail: Excess dopamine over-excites D1 direct-pathway neurons and over-inhibits D2 indirect-pathway neurons, excessively reducing tonic GABAergic inhibition from GPi/SNr onto the motor thalamus and causing excessive thalamocortical disinhibition.",
+      "answer": 2,
+      "explain": "Dopaminergic excess tips the basal ganglia balance too far toward thalamocortical disinhibition (hyperkinesia/dyskinesia): excess D1 direct-pathway drive and excess D2 indirect-pathway suppression reduce tonic GABAergic inhibition from GPi/SNr onto the motor thalamus.",
       "verified": false,
       "open": {
         "q": "Explain the basal ganglia circuit mechanism behind levodopa-induced dyskinesia (chorea) in a patient with Parkinson's disease.",
@@ -929,10 +929,10 @@
       "sub": "Clinical Correlations",
       "q": "A 46-year-old woman with advanced amyotrophic lateral sclerosis (ALS) shows BOTH upper motor neuron signs (spasticity, hyperreflexia, Babinski sign) AND lower motor neuron signs (muscle weakness, atrophy, fasciculations, hyporeflexia) in her limbs with spared extraocular muscles and preserved sensation. Which two motor neuron populations degenerate in ALS?",
       "options": [
-        "Upper motor neurons in the motor cortex/corticospinal tracts AND lower motor neurons in the brainstem motor nuclei and spinal cord anterior horns",
-        "Retinal ganglion cells and cochlear hair cells",
-        "Olfactory sensory neurons and taste receptor cells",
-        "Cerebellar granule cells and striatal cholinergic interneurons"
+        "Upper motor neurons in the motor cortex and lower motor neurons in the brainstem and anterior horn",
+        "Corticospinal neurons and medium spiny neurons in the caudate and putamen",
+        "Lower motor neurons in the anterior horn and Purkinje cells in the cerebellar cortex",
+        "Upper motor neurons in the motor cortex and sensory neurons in the dorsal root ganglia and thalamus"
       ],
       "answer": 0,
       "explain": "ALS is a progressive neurodegenerative disease affecting both upper motor neurons (cortex/corticospinal tract) and lower motor neurons (anterior horn/bulbar motor nuclei) while typically sparing sensory pathways, cognition early on, and ocular motor nuclei.",
@@ -950,15 +950,15 @@
       "type": "mcq",
       "level": 3,
       "sub": "Clinical Correlations",
-      "q": "A 54-year-old man has a middle-aged woman's walk characterized by his pelvis dipping downward on the RIGHT side each time he lifts his RIGHT foot off the ground during the swing phase ('Trendelenburg sign / Trendelenburg gait'). Which muscle group on the LEFT (stance) side is weak, and which nerve innervates it?",
+      "q": "A 54-year-old man walks with his pelvis dipping downward on the RIGHT side each time he lifts his RIGHT foot off the ground during the swing phase ('Trendelenburg sign / Trendelenburg gait'). Which muscle group is weak, and which nerve supplies it?",
       "options": [
-        "Left hip abductors (gluteus medius and gluteus minimus), innervated by the left superior gluteal nerve (L4-S1)",
-        "Right quadriceps femoris, innervated by the femoral nerve",
-        "Left gastrocnemius, innervated by the tibial nerve",
-        "Right iliopsoas, innervated by the obturator nerve"
+        "Right adductor group, supplied by the right obturator nerve",
+        "Left gluteus maximus, supplied by the left inferior gluteal nerve",
+        "Right gluteus medius and minimus, supplied by the right superior gluteal nerve",
+        "Left gluteus medius and minimus, supplied by the left superior gluteal nerve, L4 to S1"
       ],
-      "answer": 0,
-      "explain": "During single-leg stance on the left foot, the left gluteus medius and minimus (superior gluteal nerve) contract to stabilize the pelvis and prevent the unsupported right side of the pelvis from dropping; left gluteal weakness causes a positive Trendelenburg sign (pelvic drop on the right swing side).",
+      "answer": 3,
+      "explain": "During single-leg stance on the left foot, the left gluteus medius and minimus (superior gluteal nerve, L4-S1) contract to stabilize the pelvis and prevent the unsupported right side from dropping; left gluteal weakness causes a positive Trendelenburg sign (pelvic drop on the right swing side).",
       "verified": false,
       "open": {
         "q": "When a patient's pelvis drops on the right side during right-leg swing (positive Trendelenburg sign), which side's hip abductors are weak and which nerve innervates them?",
@@ -975,12 +975,12 @@
       "sub": "Clinical Correlations",
       "q": "A 29-year-old man undergoes neurosurgical resection of a vascular lesion in the right middle cerebral artery territory that damages the right supplementary motor area (SMA) and right premotor cortex while sparing the primary motor cortex (area 4). He has no fixed paralysis, yet struggles to perform smooth bimanual tasks (such as holding a jar with one hand and unscrewing the lid with the other) and shows difficulty initiating self-paced sequential finger movements. Which deficit is highlighted?",
       "options": [
-        "Impaired motor planning, sequencing, and bimanual coordination from SMA/premotor damage despite preserved primary motor cortex (area 4) execution",
-        "Complete deafness in the left ear",
-        "Loss of pupillary constriction to light",
-        "Inability to taste sweet foods"
+        "Ipsilateral limb ataxia with intention tremor, from loss of cerebellar input",
+        "Impaired planning, sequencing and bimanual coordination with preserved primary motor execution",
+        "Contralateral flaccid paralysis of distal muscles, with planning preserved",
+        "Loss of fractionated finger movement in the contralateral hand, with sequencing and planning preserved"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Area 6 (SMA and premotor cortex) programs and coordinates sequential and bimanual movements before passing commands to primary motor cortex (area 4) and descending motor tracts.",
       "verified": false,
       "open": {
@@ -998,13 +998,13 @@
       "sub": "Clinical Correlations",
       "q": "A 61-year-old man with neurosyphilis (tabes dorsalis) or severe vitamin B12 deficiency loses large-fiber proprioceptive/Ia/II sensory input from his lower limbs. When standing with feet together, he remains steady with eyes OPEN but sways or falls immediately when closing his eyes ('positive Romberg test'). Why does closing his eyes cause loss of balance?",
       "options": [
-        "Vision compensates for proprioceptive loss; closing the eyes removes that input and unmasks sensory ataxia",
-        "Closing the eyes paralyzes the stapedius muscle",
-        "Romberg sign is positive only in patients with normal proprioception and blindness",
-        "Closing the eyes destroys the basal ganglia immediately"
+        "Closing the eyes triggers vestibulo-ocular reflexes that destabilise head position",
+        "Closing the eyes withdraws cerebellar input to the vermis, unmasking truncal ataxia that was previously hidden",
+        "Vision was compensating for lost leg proprioception, and closing the eyes removes that compensation",
+        "Closing the eyes reduces corticospinal drive to the leg extensors, so extensor tone falls"
       ],
-      "answer": 0,
-      "explain": "A positive Romberg test (markedly worse sway/falling with eyes closed vs eyes open) indicates sensory/proprioceptive ataxia (dorsal columns/peripheral proprioceptive afferents), whereas cerebellar ataxia causes unsteadiness even with eyes OPEN. Key detail: When proprioceptive somatosensory feedback from the legs is impaired, vision and vestibular input compensate while eyes are open; closing the eyes removes visual compensation, exposing the underlying proprioceptive/sensory ataxia.",
+      "answer": 2,
+      "explain": "A positive Romberg test (markedly worse sway/falling with eyes closed vs eyes open) indicates sensory/proprioceptive ataxia (dorsal columns/peripheral proprioceptive afferents), whereas cerebellar ataxia causes unsteadiness even with eyes OPEN.",
       "verified": false,
       "open": {
         "q": "Explain why a patient with lower-limb proprioceptive loss sways or falls when closing their eyes during the Romberg test.",
@@ -1021,13 +1021,13 @@
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
       "q": "Which sensory afferent fibers mediate the rapid 'monosynaptic stretch (myotatic) reflex' (such as the patellar tendon jerk), and where do they synapse?",
       "options": [
-        "Group Ia muscle-spindle afferents monosynaptically excite homonymous alpha motor neurons",
-        "Group Ib Golgi tendon organ afferents — synapse directly onto homonymous extensor motor neurons to cause excitation",
-        "C-fiber nociceptors — synapse directly onto alpha motor neurons",
-        "Olfactory receptor axons — synapse directly onto lumbar motor neurons"
+        "Group II afferents from muscle spindles, which synapse via interneurons on homonymous alpha motor neurons",
+        "Group Ia afferents from muscle spindles, which synapse on gamma motor neurons of the antagonist muscle",
+        "Group Ia afferents from muscle spindles, which synapse directly on homonymous alpha motor neurons in the ventral horn",
+        "Group Ib afferents from Golgi tendon organs, which synapse directly on homonymous alpha motor neurons"
       ],
-      "answer": 0,
-      "explain": "The stretch reflex is the classic vertebrate monosynaptic reflex: stretch of muscle spindle -> Group Ia afferent -> direct excitatory synapse onto homonymous alpha motor neuron -> muscle contraction. Key detail: Group Ia muscle spindle primary afferents — synapse DIRECTLY (monosynaptically) onto homonymous alpha motor neurons in the spinal cord ventral horn (while also exciting Ia inhibitory interneurons to antagonist muscles).",
+      "answer": 2,
+      "explain": "The stretch reflex is the classic monosynaptic reflex: stretch of muscle spindle -> Group Ia afferent -> direct excitatory synapse onto homonymous alpha motor neuron -> muscle contraction (while also exciting Ia inhibitory interneurons to antagonist muscles).",
       "verified": false,
       "open": {
         "q": "Name the sensory afferent fiber responsible for the monosynaptic stretch reflex and identify its direct spinal cord target.",
@@ -1042,14 +1042,14 @@
       "type": "mcq",
       "level": 2,
       "sub": "Posture and Muscle Tone: Alpha-Gamma Coactivation, Stretch Reflex, and Decerebrate Rigidity",
-      "q": "Contrast the sensory receptor, afferent fiber type, and reflex effect of the 'muscle spindle' versus the 'Golgi tendon organ (GTO)':",
+      "q": "Contrast the arrangement, stimulus and afferent fibres of the 'muscle spindle' versus the 'Golgi tendon organ (GTO)':",
       "options": [
-        "Muscle spindle: parallel, senses length via Ia/II afferents; Golgi tendon organ: in series, senses tension via Ib afferents",
-        "Muscle spindle: in series, senses tension via Ib afferents; Golgi tendon organ: parallel, senses length via Ia afferents",
-        "Both receptors lie in tendons and detect only muscle tension",
-        "Both receptors lie in muscle bellies and inhibit the homonymous motor neuron"
+        "Spindles lie in parallel and signal length through Ib afferents; tendon organs lie in series and signal tension through Ia afferents",
+        "Both lie in parallel with muscle fibres, but spindles signal length and tendon organs signal contraction velocity",
+        "Spindles lie in parallel and signal length via Ia and II afferents; tendon organs lie in series and signal tension via Ib afferents",
+        "Spindles lie in series and signal tension through Ib afferents; tendon organs lie in parallel and signal length through Ia afferents"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Muscle spindles sit in parallel to sense length/stretch (Ia/II), whereas Golgi tendon organs sit in series in tendons to sense force/tension (Ib) and inhibit homonymous motor neurons when tension becomes excessive.",
       "verified": false,
       "open": {
@@ -1067,13 +1067,13 @@
       "sub": "Cerebellum: Functional Divisions, Circuitry, and Motor Learning",
       "q": "What is 'decomposed movement (asynergia)' in cerebellar disease, and why do multi-joint movements look jerky and broken into sequential single-joint steps?",
       "options": [
-        "Cerebellar dysfunction breaks smooth multi-joint actions into jerky, sequential single-joint movements",
-        "Because the skeletal muscles lose all myosin filaments",
-        "Because the patient is intentionally moving slowly to avoid dizziness",
-        "Because the vestibular semicircular canals fuse together"
+        "Movements become slow and small because excessive basal ganglia output to the thalamus suppresses initiation",
+        "Movements fragment into flinging components because subthalamic drive to GPi is lost",
+        "Movements fragment because motor neurons fatigue early when alpha-gamma coactivation is lost during contraction",
+        "Smooth multi-joint movements break into single-joint steps because cerebellar timing of joint torques is lost"
       ],
-      "answer": 0,
-      "explain": "Smooth reaching requires predictive feedforward coordination of interaction torques across multiple joints; cerebellar lesions break multi-joint movements into jerky, decomposed components. Key detail: Because the cerebellum coordinates simultaneous multi-joint torques and reciprocal agonist/antagonist timing across shoulder, elbow, and wrist; without cerebellar coordination, the patient performs each joint angle one step at a time instead of smoothly blending them.",
+      "answer": 3,
+      "explain": "Smooth reaching requires predictive feedforward coordination of interaction torques and reciprocal agonist/antagonist timing across shoulder, elbow, and wrist; cerebellar lesions break multi-joint movements into jerky, decomposed components.",
       "verified": false,
       "open": {
         "q": "Explain what 'decomposed movement' is in cerebellar dysfunction and why it occurs.",
@@ -1092,8 +1092,8 @@
       "options": [
         "Rubrospinal tract",
         "Lateral vestibulospinal tract",
-        "Anterior corticospinal tract",
-        "Olfactory tract"
+        "Medullary reticulospinal tract",
+        "Tectospinal tract"
       ],
       "answer": 0,
       "explain": "The rubrospinal tract travels in the lateral funiculus alongside the lateral corticospinal tract and facilitates flexor motor neurons while inhibiting extensors in the contralateral limbs.",
@@ -1113,13 +1113,13 @@
       "sub": "Locomotion and Spinal Circuits: Central Pattern Generators, Reciprocal Innervation, and Gait",
       "q": "During normal human walking, how does 'sensory load/stretch feedback' from ankle extensors and hip flexors interact with spinal locomotor circuits to time the transition from 'stance' to 'swing'?",
       "options": [
-        "Stance-limb unloading and hip extension permit swing initiation, preventing premature lift-off",
-        "The leg lifts off the ground regardless of whether full body weight is resting on it",
-        "Sensory feedback from the foot blocks stepping completely during walking",
-        "Transition from stance to swing is controlled solely by the optic nerve"
+        "Ankle extensor load signals trigger swing as soon as they peak, so unloading is not required",
+        "Hip flexor stretch blocks swing until the opposite leg has left the ground",
+        "Loading of the stance limb after heel strike triggers swing, with hip position playing no role",
+        "Unloading of the stance limb and hip extension permit swing, so a loaded limb is not lifted"
       ],
-      "answer": 0,
-      "explain": "Load receptors (Golgi tendon organs) and hip position sensors prevent premature swing initiation while a limb is still loaded, ensuring safe weight transfer onto the opposite leg. Key detail: Unloading of weight/force on the stance limb (reduced Ib/load signals) together with hip extension/stretch signals triggers the swing-phase transition so the leg does not lift off while still bearing full body weight.",
+      "answer": 3,
+      "explain": "Load receptors (Golgi tendon organs) and hip position sensors prevent premature swing initiation while a limb is still loaded: reduced Ib/load signals plus hip extension/stretch signals trigger the swing transition.",
       "verified": false,
       "open": {
         "q": "How do limb unloading and hip position signals help regulate the transition from the stance phase to the swing phase during walking?",
@@ -1136,13 +1136,13 @@
       "sub": "Clinical Correlations",
       "q": "A 59-year-old man has a small ischemic stroke restricted to the 'left internal capsule (posterior limb)'. He develops contralateral right-sided spastic hemiparesis, hyperreflexia, and a right Babinski sign, with minimal or no impairment of eye movements or facial sensation. Why does a posterior limb internal capsule lesion produce such dense contralateral motor deficits?",
       "options": [
-        "Corticospinal fibres are densely packed in the posterior limb, so a small lesion causes dense contralateral UMN weakness",
-        "The posterior limb of the internal capsule contains only lower motor neuron cell bodies",
-        "The internal capsule carries only visual fibers from the retina",
-        "A left internal capsule stroke causes ipsilateral lower motor neuron flaccid paralysis"
+        "The posterior limb carries both corticospinal and cerebellothalamic fibres, so a small lesion also removes the feedback needed to move",
+        "The posterior limb holds upper motor neuron cell bodies, so a small lesion destroys them directly",
+        "Corticospinal fibres decussate within the posterior limb, so a small lesion causes bilateral weakness",
+        "Corticospinal fibres are tightly packed in the posterior limb, so a small lesion interrupts much of the contralateral motor output"
       ],
-      "answer": 0,
-      "explain": "Because corticospinal axons are densely packed in the posterior limb of the internal capsule, even a small lacunar infarct produces prominent contralateral upper motor neuron hemiparesis/hemiplegia. Key detail: Corticospinal tract fibers converge tightly within the posterior limb of the internal capsule, so a small focal lacunar stroke here interrupts a high density of descending upper motor neuron axons destined for contralateral spinal motor neurons.",
+      "answer": 3,
+      "explain": "Because corticospinal axons are densely packed in the posterior limb of the internal capsule, even a small lacunar infarct produces prominent contralateral upper motor neuron hemiparesis/hemiplegia.",
       "verified": false,
       "open": {
         "q": "Explain why a small focal stroke in the posterior limb of the internal capsule causes prominent contralateral upper motor neuron weakness.",
@@ -1157,14 +1157,14 @@
       "type": "mcq",
       "level": 2,
       "sub": "Corticospinal tract",
-      "q": "A small infarct selectively damages corticospinal fibres at the pyramidal decussation. Which deficit is most likely below the lesion?",
+      "q": "Most corticospinal fibres cross at the pyramidal decussation. A lesion of the tract above this crossing, such as in the internal capsule, most likely causes which deficit?",
       "options": [
-        "Ipsilateral loss of pain and temperature",
-        "Contralateral loss of fine voluntary movement below the lesion",
-        "Bilateral loss of vestibular reflexes",
-        "Isolated flaccid paralysis of facial muscles"
+        "Contralateral weakness with loss of fine voluntary movement",
+        "Ipsilateral loss of vibration and proprioception with preserved strength",
+        "Ipsilateral weakness with loss of fine voluntary movement",
+        "Contralateral loss of pain and temperature with preserved strength"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "Most corticospinal fibres cross in the caudal medulla at the pyramidal decussation to form the lateral corticospinal tract. A lesion at or above this crossing produces contralateral weakness below the lesion; a lesion in the spinal cord below the decussation produces ipsilateral upper motor neuron signs.",
       "verified": false,
       "open": {
@@ -1182,10 +1182,10 @@
       "sub": "Corticospinal tract",
       "q": "A patient has weakness of skilled finger movements after a lesion involving the lateral corticospinal tract. Which anatomical feature best explains this deficit?",
       "options": [
-        "Its fibres terminate exclusively in autonomic nuclei",
-        "It provides important control of distal limb muscles through spinal interneurons and motor neurons",
-        "It carries proprioceptive information from muscle spindles",
-        "It is the principal descending pathway for vestibulo-ocular reflexes"
+        "It maintains antigravity extensor tone by relaying from the lateral vestibular nucleus",
+        "It controls distal limb muscles, including the hand, via spinal interneurons and direct connections",
+        "It relays fine touch and vibration from the fingertips through the dorsal columns to the thalamus",
+        "It supplies axial and proximal trunk muscles bilaterally through the medial motor neuron columns"
       ],
       "answer": 1,
       "explain": "The lateral corticospinal tract is especially important for fractionated voluntary movement of distal limb muscles, including the hand. Many fibres influence motor neuron pools through spinal interneurons, with some direct corticomotoneuronal connections particularly relevant to hand control.",
@@ -1205,10 +1205,10 @@
       "sub": "Upper motor neuron signs",
       "q": "A patient develops an extensor plantar response after a stroke affecting descending motor pathways. Which mechanism best accounts for this finding in an adult?",
       "options": [
-        "Loss of descending corticospinal inhibition unmasks a normally suppressed plantar response",
-        "Increased activity of lower motor neurons in the anterior horn destroys the plantar reflex",
-        "Damage to dorsal columns causes involuntary toe extension",
-        "Excessive activity of the spinothalamic tract activates toe extensors"
+        "Loss of descending corticospinal inhibition unmasks a suppressed extensor plantar response",
+        "Release of the deep cerebellar nuclei from Purkinje inhibition excites the toe extensors",
+        "Loss of Ia input from the foot leaves the toe extensors unopposed by spindle-driven flexors",
+        "Hyperactive anterior horn lower motor neurons fire spontaneously and drive the toe extensors directly"
       ],
       "answer": 0,
       "explain": "An extensor plantar response (Babinski sign) in an adult is a pathological sign of corticospinal or other upper motor neuron pathway dysfunction. It reflects loss of normal descending control over the plantar response; it is not simply a sign of increased lower motor neuron activity.",
@@ -1229,10 +1229,10 @@
       "sub": "Brainstem descending pathways",
       "q": "A patient with a brainstem lesion has impaired postural extension and reduced antigravity extensor activity. Which descending pathway normally contributes strongly to this function?",
       "options": [
-        "Vestibulospinal tract",
-        "Spinothalamic tract",
-        "Dorsal column-medial lemniscus pathway",
-        "Medial longitudinal fasciculus"
+        "Lateral vestibulospinal tract",
+        "Medullary reticulospinal tract",
+        "Tectospinal tract",
+        "Rubrospinal tract"
       ],
       "answer": 0,
       "explain": "Vestibulospinal pathways arise from vestibular nuclei and facilitate extensor (antigravity) muscle activity, helping maintain balance and postural stability. The lateral vestibulospinal tract has a particularly important influence on extensor tone.",
@@ -1252,12 +1252,12 @@
       "sub": "Brainstem descending pathways",
       "q": "A lesion interrupts descending fibres from the pontomedullary reticular formation. Which function is most likely to be disturbed?",
       "options": [
-        "Automatic regulation of posture, muscle tone and locomotor-related activity",
-        "Conscious discrimination of two-point touch",
-        "Transmission of visual information to the occipital cortex",
-        "Voluntary control of the extraocular muscles only"
+        "Reflex orientation of the head toward sudden visual stimuli",
+        "Fractionated control of individual finger and thumb movements",
+        "Automatic control of posture, tone and locomotor activity",
+        "Conscious perception of limb position, vibration and fine touch"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Reticulospinal pathways arise from the brainstem reticular formation and contribute to postural adjustments, regulation of muscle tone, locomotor activity and coordination of automatic movements. They interact with vestibulospinal and corticospinal systems.",
       "verified": false,
       "open": {
@@ -1275,12 +1275,12 @@
       "sub": "Cerebellar function",
       "q": "A patient has truncal instability, a broad-based gait and difficulty maintaining equilibrium, but relatively preserved limb strength. Which cerebellar region is most likely affected?",
       "options": [
-        "Flocculonodular lobe",
         "Lateral cerebellar hemisphere",
-        "Dentate nucleus alone",
-        "Anterior horn of the spinal cord"
+        "Flocculonodular lobe",
+        "Dentate nucleus",
+        "Paravermal intermediate zone"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "The flocculonodular lobe (vestibulocerebellum) is closely connected with vestibular nuclei and is important for balance, equilibrium and coordination of eye movements. Lesions can produce truncal ataxia and gait instability.",
       "verified": false,
       "open": {
@@ -1298,10 +1298,10 @@
       "sub": "Cerebellar lesions",
       "q": "A patient with a unilateral cerebellar hemisphere lesion overshoots the target during finger-to-nose testing on the same side. Which principle explains the side of the limb deficit?",
       "options": [
-        "Cerebellar influence on limb movement is functionally ipsilateral",
-        "Cerebellar output controls only the contralateral lower limb",
-        "The cerebellum has no influence on voluntary movement",
-        "All cerebellar fibres cross once and therefore produce contralateral signs"
+        "Cerebellar influence on the limbs acts through double-crossed pathways, giving ipsilateral signs",
+        "Cerebellar influence on the limbs acts through the pyramidal decussation alone, giving contralateral signs",
+        "Cerebellar influence on the limbs acts through a single crossing, giving contralateral signs",
+        "Cerebellar influence on the limbs acts through the vestibulospinal tract alone, giving bilateral signs"
       ],
       "answer": 0,
       "explain": "Cerebellar lesions typically cause ipsilateral limb ataxia. Cerebellar output crosses to influence contralateral motor systems, while corticospinal output crosses again before reaching the limb, resulting in a net ipsilateral functional relationship.",
@@ -1321,12 +1321,12 @@
       "sub": "Cerebellar lesions",
       "q": "During examination, a patient shows intention tremor, dysmetria and decomposition of movement on the right. Which structure is most likely involved?",
       "options": [
-        "Right cerebellar hemisphere or its connections",
-        "Left primary visual cortex",
-        "Right dorsal column in the cervical cord only",
-        "Bilateral vestibular nuclei exclusively"
+        "Left premotor and motor cortex",
+        "Right globus pallidus and putamen",
+        "Right cerebellar hemisphere",
+        "Left cerebellar hemisphere"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Limb dysmetria, intention tremor and decomposition of movement are characteristic of cerebellar hemisphere dysfunction and generally occur ipsilateral to the lesion. The findings reflect impaired coordination and error correction rather than primary loss of muscle power.",
       "verified": false,
       "open": {
@@ -1338,50 +1338,50 @@
       }
     },
     {
+      "id": "pl-control-of-posture-and-movement-059",
       "type": "mcq",
       "level": 2,
       "sub": "Cerebellar function",
       "q": "A patient can generate muscle power but has difficulty planning and timing rapid, skilled sequences of voluntary movement. Which cerebellar division is most likely affected?",
       "options": [
-        "Cerebrocerebellum (lateral hemispheres)",
-        "Vestibulocerebellum (flocculonodular lobe)",
-        "Spinocerebellum (vermis and intermediate zone)",
-        "Flocculus alone"
+        "Spinocerebellum, formed by the vermis and intermediate zone",
+        "Vestibulocerebellum, formed by the flocculonodular lobe",
+        "Spinocerebellum, formed by the lateral hemispheres",
+        "Cerebrocerebellum, formed by the lateral hemispheres"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "The cerebrocerebellum, formed mainly by the lateral cerebellar hemispheres, participates in planning, timing and coordination of complex skilled voluntary movements. Vestibulocerebellar lesions primarily disturb balance and eye movements, while spinocerebellar lesions commonly impair posture, gait and ongoing limb coordination.",
+      "verified": false,
       "open": {
         "q": "Which functional division of the cerebellum is especially involved in planning and timing skilled voluntary movements?",
         "accept": [
           "Cerebrocerebellum",
           "Lateral cerebellar hemispheres"
         ]
-      },
-      "verified": false,
-      "id": "pl-control-of-posture-and-movement-059"
+      }
     },
     {
       "id": "pl-control-of-posture-and-movement-060",
       "type": "mcq",
       "level": 2,
       "sub": "Basal ganglia",
-      "q": "A patient with Parkinson disease has bradykinesia. Reduced activity in which pathway normally contributes to this difficulty initiating movement?",
+      "q": "A patient with Parkinson disease has bradykinesia. Degeneration of which projection is the primary cause of this difficulty initiating movement?",
       "options": [
-        "Direct striatal pathway facilitating thalamocortical activity",
-        "Nigrostriatal dopaminergic projection that modulates striatal output",
-        "Spinocerebellar pathway carrying unconscious proprioception",
-        "Lateral vestibulospinal tract maintaining extensor tone"
+        "Subthalamopallidal glutamatergic projection from the STN to GPi",
+        "Nigrostriatal dopaminergic projection from the substantia nigra pars compacta to the striatum",
+        "Corticostriatal glutamatergic projection from the cortex to the striatum",
+        "Pallidothalamic GABAergic projection from GPi to the motor thalamus"
       ],
       "answer": 1,
       "explain": "Loss of dopaminergic neurons in the substantia nigra pars compacta reduces facilitation of the direct pathway and removes inhibition of the indirect pathway, increasing inhibitory basal ganglia output to the thalamus.",
+      "verified": false,
       "open": {
         "q": "Which dopaminergic projection degenerates in Parkinson disease?",
         "accept": [
           "Nigrostriatal pathway",
           "Substantia nigra pars compacta to striatum"
         ]
-      },
-      "verified": false
+      }
     }
   ]
 }
