@@ -51,17 +51,27 @@
     var sb = C().sb;
     if (F.act === undefined) {
       F.act = null;
-      Promise.all([sb.rpc("admin_activity_summary"), sb.rpc("admin_active_people", { p_days: 7, p_limit: 20 }), sb.rpc("admin_topic_coverage", { p_map: topicMap() }), sb.rpc("admin_missed_questions", { p_days: 30, p_min: 5, p_limit: 15 })]).then(function (r) {
-        F.act = (r[0].error || r[1].error || r[2].error) ? { err: true } : { sum: (r[0].data || [])[0] || {}, people: r[1].data || [], topics: r[2].data || [], missed: r[3].error ? null : (r[3].data || []) };
+      Promise.all([sb.rpc("admin_activity_summary"), sb.rpc("admin_active_people", { p_days: 7, p_limit: 20 }), sb.rpc("admin_topic_coverage", { p_map: topicMap() }), sb.rpc("admin_missed_questions", { p_days: 30, p_min: 5, p_limit: 15 }), sb.rpc("admin_tf_active_people", { p_days: 7, p_limit: 20 }), sb.rpc("admin_tf_topic_activity", { p_days: 30 })]).then(function (r) {
+        F.act = (r[0].error || r[1].error || r[2].error || r[4].error || r[5].error) ? { err: true } : {
+          sum: (r[0].data || [])[0] || {}, people: r[1].data || [], topics: r[2].data || [],
+          missed: r[3].error ? null : (r[3].data || []), tfpeople: r[4].data || [], tftopics: r[5].data || []
+        };
         repaint();
       }, function () { F.act = { err: true }; repaint(); });
     }
     var a = F.act;
     if (!a) return '<section class="section stack"><h2>Activity</h2><p class="muted">Loading…</p></section>';
-    if (a.err) return '<section class="section stack"><h2>Activity</h2><p class="note bad">Run supabase/update-18.sql in Supabase first.</p></section>';
+    if (a.err) return '<section class="section stack"><h2>Activity</h2><p class="note bad">Run supabase/update-20.sql in Supabase first.</p></section>';
     var s = a.sum, ppl = a.people.map(function (x) {
       return '<tr><td>' + esc(x.display_name || "?") + '</td><td>' + esc(x.class_id || "") + '</td><td class="n">' + x.answers + '</td><td class="n">' + x.distinct_questions + '</td><td class="n">' + x.repeat_pct + '%</td></tr>'; }).join("");
     var shown = F.actAll ? a.topics : a.topics.slice(0, 12);
+    var tfp = a.tfpeople.map(function (x) {
+      return '<tr><td>' + esc(x.display_name || "?") + '</td><td>' + esc(x.class_id || "") + '</td><td class="n">' + x.stems_attempted + '</td><td class="n">' + x.stems_completed + '</td><td class="n">' + x.statements + '</td><td class="n">' + x.accuracy + '%</td></tr>';
+    }).join("");
+    var tft = a.tftopics.map(function (x) {
+      var t = DX.topicById && DX.topicById[x.topic]; var nm = t ? t.name : x.topic;
+      return '<tr><td>' + esc(nm) + '</td><td class="n">' + x.people + '</td><td class="n">' + x.stems_attempted + '</td><td class="n">' + x.statements + '</td><td class="n">' + (x.accuracy == null ? "-" : x.accuracy + "%") + '</td></tr>';
+    }).join("");
     var tps = shown.map(function (x) {
       var t = DX.topicById && DX.topicById[x.topic]; var nm = t ? t.name : x.topic;
       return '<tr><td>' + esc(nm) + '</td><td class="n">' + x.questions + '</td><td class="n">' + x.people + '</td><td class="n">' + x.finished + '</td><td class="n">' + x.answers + '</td><td class="n">' + (x.accuracy == null ? "-" : x.accuracy + "%") + '</td></tr>'; }).join("");
@@ -77,10 +87,15 @@
       return '<h3>Most-missed questions, last 30 days</h3><p class="hint">Questions with at least 5 answers, lowest percentage right first. A very low number can mean the question is hard, or that it is wrong or unclear. Read it before you add more on that topic.</p>' +
         (rows ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th class="n">Right</th><th class="n">Answers</th><th class="n">People</th><th>Topic</th><th>Question</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p class="muted">No question has 5 answers yet.</p>');
     }
-    return '<section class="section stack"><h2>Activity</h2><p class="hint">From signed-in answers only (practice without an account stays on the device). Your own account is left out.</p>' +
-      '<p><b>' + (s.answers_today || 0) + '</b> answers today by <b>' + (s.people_today || 0) + '</b> people · <b>' + (s.answers_7d || 0) + '</b> in 7 days by <b>' + (s.people_7d || 0) + '</b> people</p>' +
-      '<h3>Most active, last 7 days</h3><p class="hint">Repeat % is the share of a person\u2019s answers that were questions they had already answered. A high number means they are running out of fresh questions.</p>' +
+    return '<section class="section stack"><h2>Activity</h2><p class="hint">Signed-in activity only; offline practice without an account remains on the device. Admin accounts are excluded.</p>' +
+      '<p><b>' + (s.answers_today || 0) + '</b> total learning responses today by <b>' + (s.people_today || 0) + '</b> people · <b>' + (s.answers_7d || 0) + '</b> in 7 days by <b>' + (s.people_7d || 0) + '</b> people</p>' +
+      '<p class="hint">MCQ answers today: <b>' + (s.mcq_answers_today || 0) + '</b> · T/F statements today: <b>' + (s.tf_statements_today || 0) + '</b> across <b>' + (s.tf_stems_today || 0) + '</b> stem attempts. In 7 days: <b>' + (s.tf_statements_7d || 0) + '</b> T/F statements across <b>' + (s.tf_stems_7d || 0) + '</b> stem attempts; accuracy <b>' + (s.tf_accuracy_7d == null ? "-" : s.tf_accuracy_7d + "%") + '</b>.</p>' +
+      '<h3>Most active in MCQ practice, last 7 days</h3><p class="hint">Repeat % is the share of a person\u2019s answers that were questions they had already answered. A high number means they are running out of fresh questions.</p>' +
       (ppl ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Name</th><th>Class</th><th class="n">Answers</th><th class="n">Different questions</th><th class="n">Repeat</th></tr></thead><tbody>' + ppl + '</tbody></table></div>' : '<p class="muted">No answers yet.</p>') +
+      '<h3>True/False participation, last 7 days</h3><p class="hint">A stem attempt is counted once when at least one statement is answered. Fully answered stems have no blanks. Accuracy is based on individual statements, not stems.</p>' +
+      (tfp ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Name</th><th>Class</th><th class="n">Stems tried</th><th class="n">Fully answered</th><th class="n">Statements</th><th class="n">Accuracy</th></tr></thead><tbody>' + tfp + '</tbody></table></div>' : '<p class="muted">No True/False activity yet.</p>') +
+      '<h3>True/False activity by topic, last 30 days</h3>' +
+      (tft ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Topic</th><th class="n">People</th><th class="n">Stems tried</th><th class="n">Statements</th><th class="n">Accuracy</th></tr></thead><tbody>' + tft + '</tbody></table></div>' : '<p class="muted">No True/False activity yet.</p>') +
       '<h3>Topics students are finishing</h3><p class="hint">Finished = people who have answered at least 80% of that topic\u2019s questions. Write new questions for the topics at the top first.</p>' +
       (tps ? '<div style="overflow-x:auto"><table class="lvt"><thead><tr><th>Topic</th><th class="n">Questions</th><th class="n">People</th><th class="n">Finished</th><th class="n">Answers</th><th class="n">Right</th></tr></thead><tbody>' + tps + '</tbody></table></div>' : '<p class="muted">Nothing yet.</p>') +
       (!F.actAll && a.topics.length > 12 ? '<div class="row tight"><button class="btn ghost small" data-act="allsubj">Show all ' + a.topics.length + ' topics</button></div>' : "") +
