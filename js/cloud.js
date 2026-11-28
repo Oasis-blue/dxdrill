@@ -7,6 +7,7 @@
   };
   var C = { sb: null, user: null, profile: null, ok: false, msg: "", err: "", busy: false, mode: "in", board: { days: 7, cls: "", loaded: false, students: [], classes: [], error: "" } };
   DX.cloud = C;
+  C.app = null;
   C.tfStats = { loading: false, loaded: false, data: null, error: "" };
   C.reviewMistakes = { loading: false, loaded: false, rows: [], error: "" };
   DX.remoteMissedIds = {};
@@ -446,7 +447,7 @@
     return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + esc(p.display_name || "Your account") + '</h1><p class="lede">' + esc(C.user.email || "") + (p.is_admin ? " · admin" : "") + '</p></header>' + note +
       '<section class="section stack"><div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" value="' + esc(p.display_name) + '"></div>' +
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
-      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + progressHtml() + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
+      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + (DX.reminders ? DX.reminders.html() : "") + progressHtml() + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
   }
   /* What the person has typed on the account form is remembered, so an error message does not wipe their fields. Passwords stay in memory only. */
   var F = {}, FIELDS = ["ac-name", "ac-class", "ac-email", "ac-pw", "ac-pw2"];
@@ -466,6 +467,16 @@
   function accountClick(e) {
     var b = e.target.closest("[data-act]"); if (!b || b.disabled || !C.ok) return;
     var a = b.getAttribute("data-act");
+    if (a === "remsave") {
+      if (!DX.reminders) return;
+      DX.reminders.save().then(function () { C.msg = "Reminder schedule saved."; repaint(); }).catch(function (e) { C.err = e.message || "Could not save reminder settings."; repaint(); }); return;
+    } else if (a === "remon") {
+      if (!DX.reminders) return;
+      DX.reminders.enable().then(function () { C.msg = "Notifications enabled on this device."; repaint(); }).catch(function (e) { C.err = e.message || "Could not enable notifications."; repaint(); }); return;
+    } else if (a === "remoff") {
+      if (!DX.reminders) return;
+      DX.reminders.disable().then(function () { C.msg = "Notifications turned off on this device."; repaint(); }).catch(function (e) { C.err = e.message || "Could not turn off notifications."; repaint(); }); return;
+    }
     if (a === "showpw") {
       C.showpw = !C.showpw;
       ["ac-pw", "ac-pw2"].forEach(function (id) { var el = document.getElementById(id); if (el) el.type = C.showpw ? "text" : "password"; });
@@ -543,7 +554,7 @@
     var map = { "ms-q": "msearch", "ac-pw": null };
     if (e.target.id === "ms-q") { var bt = document.querySelector('[data-act="msearch"]'); if (bt) bt.click(); }
   });
-  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user) { loadMyTFStats(); loadMyAnalytics(); } if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
+  DX.account = { render: function (a) { app = a; C.app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user) { if (DX.reminders) DX.reminders.load(); loadMyTFStats(); loadMyAnalytics(); } if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
 
   /* ---------- leaderboards ---------- */
   function loadBoard() {
