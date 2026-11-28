@@ -18,9 +18,14 @@
       R.loading = false; R.loaded = true;
       if (res.error) { R.error = "Could not load synced mistakes. Check that supabase/update-22.sql has been run."; return R.rows; }
       R.rows = Array.isArray(res.data) ? res.data : [];
-      var ids = {};
-      R.rows.forEach(function (x) { if (x && x.question_id && !x.last_attempt_correct) ids[String(x.question_id)] = true; });
+      var ids = {}, state = {};
+      R.rows.forEach(function (x) {
+        if (!x || !x.question_id) return;
+        state[String(x.question_id)] = !x.last_attempt_correct;
+        if (!x.last_attempt_correct) ids[String(x.question_id)] = true;
+      });
       DX.remoteMissedIds = ids;
+      DX.remoteReviewState = state;
       if (DX.practice && DX.practice.refreshProgress) DX.practice.refreshProgress();
       return R.rows;
     }).catch(function () {
