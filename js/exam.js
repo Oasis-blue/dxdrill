@@ -100,7 +100,6 @@
   }
   function render(el) {
     if (el) app = el; if (!app) return;
-    if (!E.run || E.run.done) { if (!E.run && restore()) startTimer(); }
     if (E.run && !E.run.done) { if (!E.timer) startTimer(); app.innerHTML = runView(); E.run.resumed = false; save(); tick(); }
     else if (E.run && E.run.done) app.innerHTML = resultView();
     else app.innerHTML = startView();
