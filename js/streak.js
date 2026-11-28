@@ -7,7 +7,17 @@
   function dayStr(ms) { return new Date(ms + 3600000).toISOString().slice(0, 10); }   /* Lagos is UTC+1, no daylight saving */
   function today() { return dayStr(Date.now()); }
   function yesterday() { return dayStr(Date.now() - 86400000); }
-  function load() { var s = S.get(KEY, null); return (s && typeof s === "object") ? s : { c: 0, last: "", best: 0, d: "", n: 0 }; }
+  function load() { var s = S.get(KEY, null); if (!s || typeof s !== "object") s = { c: 0, last: "", best: 0, d: "", n: 0 };
+    if (!Array.isArray(s.days)) {
+      s.days = [];
+      if (s.last && s.c > 0) {
+        for (var i = Math.max(0, s.c - 1); i >= 0; i--) {
+          var dt = new Date(s.last + "T12:00:00Z"); dt.setUTCDate(dt.getUTCDate() - i);
+          s.days.push(dt.toISOString().slice(0, 10));
+        }
+      }
+    }
+    return s; }
 
   /* What the home page shows: the streak as it stands right now (a missed day resets it to zero). */
   DX.streakInfo = function () {
