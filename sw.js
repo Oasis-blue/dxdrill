@@ -1,6 +1,6 @@
 /* DxDrill service worker: lets the site open and run with no connection.
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
-var VERSION = "dxdrill-v14.36";
+var VERSION = "dxdrill-v14.37";
 var IMG = "dxdrill-img";   /* pictures live in their own cache that is kept when VERSION changes, so a bad connection after an update does not lose them */
 var SHELL = [
   "./", "index.html", "help.html", "checker.html", "tf-checker.html", "manifest.webmanifest", "css/style.css",
@@ -74,6 +74,59 @@ function pictureCache(req) {
     });
   });
 }
+
+
+/* Push messages must always produce a visible notification (including on Safari). */
+self.addEventListener("push", function (e) {
+  var payload = { title: "A little DxDrill reminder", body: "A few practice questions can keep your learning moving.", url: "./#practice" };
+  if (e.data) {
+    try {
+      var incoming = e.data.json();
+      if (incoming && typeof incoming === "object") {
+        if (typeof incoming.title === "string") payload.title = incoming.title.slice(0, 80);
+        if (typeof incoming.body === "string") payload.body = incoming.body.slice(0, 180);
+        if (typeof incoming.url === "string") payload.url = incoming.url;
+      }
+    } catch (err) {
+      var plain = e.data.text();
+      if (plain) payload.body = plain.slice(0, 180);
+    }
+  }
+  var target;
+  try {
+    target = new URL(payload.url, self.registration.scope);
+    if (target.origin !== self.location.origin) target = new URL("./#practice", self.registration.scope);
+  } catch (err) {
+    target = new URL("./#practice", self.registration.scope);
+  }
+  e.waitUntil(self.registration.showNotification(payload.title, {
+    body: payload.body,
+    icon: "./icons/icon-192.png",
+    badge: "./icons/icon-192.png",
+    tag: "dxdrill-study-reminder",
+    renotify: false,
+    data: { url: target.href }
+  }));
+});
+
+self.addEventListener("notificationclick", function (e) {
+  e.notification.close();
+  var target = new URL("./#practice", self.registration.scope).href;
+  try {
+    var requested = e.notification.data && e.notification.data.url;
+    var parsed = new URL(requested, self.registration.scope);
+    if (parsed.origin === self.location.origin) target = parsed.href;
+  } catch (err) { }
+  e.waitUntil(clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
+    for (var i = 0; i < list.length; i++) {
+      if (new URL(list[i].url).origin === self.location.origin) {
+        if ("navigate" in list[i]) return list[i].navigate(target).then(function (client) { return client ? client.focus() : list[i].focus(); });
+        return list[i].focus();
+      }
+    }
+    return clients.openWindow(target);
+  }));
+});
 
 self.addEventListener("fetch", function (e) {
   var req = e.request;
