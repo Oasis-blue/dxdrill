@@ -87,10 +87,9 @@
       R.subscription = true; R.busy = false; R.error = "";
       R.prefs = R.prefs || defaults(); R.prefs.enabled = true;
       return R.save().then(function () {
-      if (DX.toast) DX.toast("Study reminders enabled on this device.");
       repaint();
       });
-    }).catch(function (e) { R.busy = false; R.error = e.message || "Could not enable reminders."; repaint(); throw e; });
+    }).catch(function (e) { R.busy = false; var message = e && e.message ? e.message : "Could not enable reminders."; if (message === "Failed to fetch" || (e && e.name === "TypeError" && /fetch/i.test(message))) message = "Could not contact the reminder service. Check your connection and confirm that the study-reminders Edge Function is deployed and reachable. If it is deployed, its Supabase function logs should show the cause (for example, a startup/import error or CORS issue)."; R.error = message; repaint(); throw new Error(message); });
   };
   R.disable = function () {
     var sb = client(); if (!sb) return Promise.reject(new Error("Sign in to manage reminders."));
@@ -108,7 +107,6 @@
       return sb.from("study_reminder_preferences").upsert({ user_id: DX.cloud.user.id, enabled: false, local_time: off.local_time, timezone: off.timezone, days_of_week: off.days_of_week, reminder_type: "daily_practice" }, { onConflict: "user_id" });
     }).then(function (res) {
       if (res && res.error) throw res.error;
-      if (DX.toast) DX.toast("Study reminders turned off on this device.");
       repaint();
     }).catch(function (e) { R.busy = false; R.error = e.message || "Could not disable reminders."; repaint(); throw e; });
   };
