@@ -354,7 +354,7 @@
       });
     }
     else if (a === "custom") {
-      P.customSubjects = [];
+      P.customSubjects = []; P.customStep = "subjects"; P.customTopicIds = [];
       P.view = "custom"; P.scope = null; P.run = null;
       render(); window.scrollTo(0, 0);
     } else if (a === "custom-sub" || a === "custom-all" || a === "custom-none") {
