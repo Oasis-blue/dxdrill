@@ -94,7 +94,7 @@ The account page shows combined personal MCQ and True/False progress, strongest 
 
 ## What is in the app
 
-- **Practice:** study mode (explains each answer) and exam mode (marks at the end), topic and custom scopes, mistake review, priority revision from missed questions and weak topics, and local recovery of unfinished sessions. Practice history stays on the device.
+- **Practice:** study mode (explains each answer) and exam mode (marks at the end), topic and custom scopes, mistake review, priority revision from missed questions and weak topics, unanswered-question discovery, and local recovery of unfinished sessions. Per-question attempt history and unanswered coverage are device-specific; signed-in topic analytics and mistake review sync through the account.
 - **Flashcards**, with a six-box spaced-repetition schedule (1, 2, 4, 8, 16 and 32 days), missed-card retries and a Stop session button. Flashcard scheduling is currently saved on the device.
 - **Hall mode:** one screen, a quizmaster and teams. Rounds: rapid fire, question board, everyone answers, describe it (all teams at once, earlier guess scores more) and explain it (team by team, with forbidden words). It includes an answer key for the quizmaster.
 - **Quizmaster phone (optional):** in Hall mode, tap **Link a phone**. The shared screen then shows only questions, and the phone (`#remote`, no sign-in needed) shows answers and the Got it / Missed buttons. It needs internet on both devices and is controlled by a short code. Without it, Hall mode works offline as before.
