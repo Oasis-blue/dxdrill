@@ -30,7 +30,7 @@
   }
   function getDueCount() {
     var b = box(), t = today();
-    return pool().filter(function (c) { return b[c.id] && Number(b[c.id].d) <= t; }).length;
+    return termCards().concat(questionCards()).filter(function (c) { return b[c.id] && Number(b[c.id].d) <= t; }).length;
   }
 
   /* ---------- the deck ---------- */
