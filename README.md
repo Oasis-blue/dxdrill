@@ -88,7 +88,7 @@ Rapid fire, Question board and Everyone answers each have an **Answer format** s
 
 The project URL and publishable key are in `js/cloud.js`. The publishable key is meant to be public. Never put the `service_role` key anywhere in this folder.
 
-Points are different questions answered correctly in the period. Scores are sent from the browser, so a determined student could fake them. That is fine for practice leaderboards, but competitions will need server-side marking.
+Points are different MCQ questions answered correctly plus distinct True/False stems fully answered with at least 60% correct. Repeats do not add points. True/False activity syncs when a student is signed in; offline attempts stay queued on the device until they can sync. Scores are sent from the browser, so a determined student could fake them. That is fine for practice leaderboards, but competitions will need server-side marking.
 
 ## What is in the app
 
