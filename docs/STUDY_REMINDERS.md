@@ -4,7 +4,7 @@
 Opt-in Web Push study reminders that can arrive while DxDrill is closed, subject to browser/OS support and notification permission. Reminders are disabled by default.
 
 ## Existing app behaviour
-The current streak is device-local in `js/streak.js`. It uses the Lagos calendar day and requires five completed practice/Spotter questions. It is not synced to Supabase. The first reminder release is a scheduled practice nudge, not a claim that a cloud streak is at risk.
+The streak uses the Lagos calendar day and requires five completed practice/Spotter questions. It remains available locally offline and syncs qualifying dates to the signed-in account when online. The account merges dates idempotently across devices; the local copy remains the offline cache. The first reminder release is a scheduled practice nudge, not a claim that a cloud streak is at risk.
 
 ## Repository implementation
 - `supabase/update-24.sql`: account preferences, per-device Web Push subscriptions, RLS and duplicate-delivery log.
@@ -24,14 +24,15 @@ The current streak is device-local in `js/streak.js`. It uses the Lagos calendar
    - `VAPID_SUBJECT` — a contact URI such as `mailto:your-real-contact-email@example.com` (replace with a real address)
 5. Run `supabase/update-25.sql` in SQL Editor. It enables the scheduler extensions, creates a random shared scheduler secret in Vault, and schedules the function once per minute.
 6. Run `supabase/update-26.sql` in SQL Editor. It installs the atomic delivery-claim function used to retry failed/skipped reminders without duplicating reminders already queued or sent.
-7. Run this query in SQL Editor and copy the returned value directly into the Edge Function secret named `REMINDER_CRON_SECRET`:
+7. Run `supabase/update-27.sql` in SQL Editor. It creates the account streak tables and authenticated merge function.
+8. Run this query in SQL Editor and copy the returned value directly into the Edge Function secret named `REMINDER_CRON_SECRET`:
    ```sql
    select decrypted_secret
    from vault.decrypted_secrets
    where name = 'dxdrill_reminder_cron_secret';
    ``
    Do not put that value in GitHub or send it in chat. Supabase's built-in `SUPABASE_URL`, `SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY` environment variables are used by the function; do not expose the service-role key.
-8. Sign in to DxDrill → Account → Study reminders, choose a time and days, then press **Enable notifications on this device**. The browser will ask for permission.
+9. Sign in to DxDrill → Account → Study reminders, choose a time and days, then press **Enable notifications on this device**. The browser will ask for permission.
 
 If the function was deployed before the secrets were added, redeploy/restart it if the Dashboard requires that for new secrets to take effect. Check Edge Function logs and Cron job run history if delivery does not work.
 
@@ -43,7 +44,7 @@ If the function was deployed before the secrets were added, redeploy/restart it 
 - Each account can receive at most one successful daily-practice reminder per local calendar day, even with multiple devices. Failed/skipped attempts can be reclaimed during the five-minute schedule window; queued/sent attempts remain deduplicated.
 - Expired subscriptions (push service HTTP 404/410) are deleted.
 - Quiet hours and weekday preferences are evaluated in the saved IANA time zone.
-- The first version does not yet suppress a reminder based on same-day completed questions because the current local streak and Spotter activity are not authoritative server-side data. This can be added after the streak sync design is implemented.
+- Streak dates are merged by account and Lagos calendar date, so practice on multiple devices cannot count the same day twice. Offline qualifying dates sync after the account reconnects.
 - Push delivery is best-effort and depends on browser/OS support, connectivity and notification settings. It is not guaranteed to arrive at an exact minute.
 
 ## Platform notes
