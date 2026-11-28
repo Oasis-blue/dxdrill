@@ -217,3 +217,22 @@ end $$;
 
 revoke all on function public.admin_activity_summary(), public.admin_tf_active_people(int, int), public.admin_tf_topic_activity(int) from public, anon;
 grant execute on function public.admin_activity_summary(), public.admin_tf_active_people(int, int), public.admin_tf_topic_activity(int) to authenticated;
+
+create or replace function public.my_tf_activity()
+returns table (
+  stems_attempted bigint, stems_completed bigint, statements bigint,
+  correct bigint, accuracy int, last_activity timestamptz
+)
+language sql security definer stable set search_path = public as $$
+  select count(*)::bigint,
+    count(*) filter (where t.answered_count = t.total_count)::bigint,
+    coalesce(sum(t.answered_count), 0)::bigint,
+    coalesce(sum(t.correct_count), 0)::bigint,
+    case when coalesce(sum(t.answered_count), 0) = 0 then null
+      else round(100.0 * sum(t.correct_count) / sum(t.answered_count))::int end,
+    max(t.created_at)
+  from public.tf_attempts t
+  where t.user_id = auth.uid()
+$$;
+revoke all on function public.my_tf_activity() from public, anon;
+grant execute on function public.my_tf_activity() to authenticated;
