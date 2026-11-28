@@ -473,6 +473,9 @@
     } else if (a === "remon") {
       if (!DX.reminders) return;
       DX.reminders.enable().then(function () { if (DX.toast) DX.toast("Study reminders enabled on this device."); }).catch(function (e) { if (DX.toast) DX.toast(e.message || "Could not enable notifications."); }); return;
+    } else if (a === "remtest") {
+      if (!DX.reminders) return;
+      DX.reminders.test().catch(function (e) { if (DX.toast) DX.toast(e.message || "Could not send a test notification."); }); return;
     } else if (a === "remoff") {
       if (!DX.reminders) return;
       DX.reminders.disable().then(function () { if (DX.toast) DX.toast("Study reminders turned off on this device."); }).catch(function (e) { if (DX.toast) DX.toast(e.message || "Could not turn off notifications."); }); return;
