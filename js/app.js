@@ -22,6 +22,7 @@
       (DX.streakHtml ? DX.streakHtml() : '') +
       '<section class="cards">' +
       (DX.reminders ? DX.reminders.homeHtml() : '<article class="card"><h2>Study reminders</h2><p>Set a daily nudge in Account settings.</p><a class="btn" href="#account" style="text-decoration:none">Set a reminder</a></article>') +
+      '<article class="card"><h2>Timed examinations</h2><p>Take a closed-book style MCQ exam with a countdown, question navigator, review flags and answer review after submission.</p><a class="btn primary" href="#exam" style="text-decoration:none">Start an examination</a></article>' +
       '<article class="card"><h2>Practice</h2><p>' + (DX.loadingQuestions ? 'Loading the question bank…' : totalQ + ' questions across ' + doneTopics + ' topics.') + ' Study mode explains each answer as you go. Exam mode saves the marks for the end.</p><a class="btn primary" href="#practice" style="text-decoration:none">Start practising</a></article>' +
       ((DX.tfStems && DX.tfStems.length) || DX.loadingQuestions ? '<article class="card tf-feature"><p class="eyebrow">A second way to learn</p><h2>True / False</h2><p><b>' + (DX.tfStems && DX.tfStems.length ? DX.tfStems.length + ' exam-style stems. ' : '') + '</b>Test the details that multiple-choice questions can miss. Mark four or five statements True or False, then learn from every explanation.</p><div class="row"><a class="btn primary" href="#truefalse" style="text-decoration:none">Start True / False</a></div></article>' : '') +
       '<article class="card"><h2>Hall mode</h2><p>One screen, a quizmaster and teams. Rapid fire, a question board, everyone-answers rounds, describe-it and explain-it.</p><a class="btn" href="#hall" style="text-decoration:none">Open hall mode</a></article>' +
@@ -95,7 +96,7 @@
       }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Features and visitors: choose what students see, and check who is using DxDrill</a></p>' : "") + '</div>';
   }
   var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
-  var DATA_PAGES = { practice: 1, hall: 1, cards: 1, spotter: 1, truefalse: 1 };
+  var DATA_PAGES = { practice: 1, hall: 1, cards: 1, spotter: 1, truefalse: 1, exam: 1 };
   function navVisibility() {
     var F = DX.features, polls = document.querySelector('[data-nav="polls"]'), play = document.querySelector('[data-nav="play"]');
     if (polls) polls.hidden = !F.on("polls");
@@ -120,7 +121,8 @@
     screen: DX.screen,
     remote: DX.remote,
     spotter: DX.spotter,
-    truefalse: DX.truefalse
+    truefalse: DX.truefalse,
+    exam: DX.exam
   };
 
   /* A small "back" link above pages that sit one level down. It lives outside #app, so live pages that repaint do not remove it. */
@@ -190,7 +192,7 @@
     if (a.getAttribute("data-nav") === h && current && current.reset) { current.reset(); route(); }
   });
   app.addEventListener("input", function (e) { if (current && current.onInput) current.onInput(e); });
-  app.addEventListener("change", function (e) { if (current && current.onInput) current.onInput(e); });
+  app.addEventListener("change", function (e) { if (current && current.onInput) current.onInput(e); if (current && current.onChange) current.onChange(e); });
   document.addEventListener("keydown", function (e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     var tag = (e.target && e.target.tagName) || "";
@@ -265,7 +267,7 @@
   setTimeout(function () { if (!loaded) retryBox("Still loading…", "Your connection looks slow. Wait a little longer, or tap Try again. Nothing has been lost: your scores are saved on this phone."); }, 9000);
   DX.onQuestionsReady = function () {
     var h = (location.hash || "#home").slice(1);
-    if (h === "practice") route();
+    if (h === "practice" || h === "exam") route();
   };
   DX.onQuestionsProgress = function () {
     var h = (location.hash || "#home").slice(1);
