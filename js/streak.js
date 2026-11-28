@@ -24,7 +24,7 @@
     return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span>' + line + '</span><small>on this device' + (i.best > 1 ? " · best " + i.best : "") + '</small></div>';
   };
 
-  /* True/false statements count toward the daily streak without entering normal question history or leaderboards. */
+  /* True/false statements count toward the daily streak; signed-in stem results sync separately for admin stats and leaderboards. */
   DX.streakTick = function (count) {
     count = Math.max(0, Number(count) || 0);
     if (!count) return;
