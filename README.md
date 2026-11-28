@@ -130,3 +130,11 @@ Signed-in learners can review MCQs previously answered incorrectly. The list syn
 
 ## Personal learning analytics
 The account dashboard includes a 14-day activity trend, daily practice totals, activity in the last 7 days, active days, and topic accuracy comparisons between the latest and preceding 14-day periods. Trends require recorded activity in both periods. Existing databases should run `supabase/update-23.sql` after update-22; fresh installs use `supabase/setup.sql`.
+
+## Study reminders (Web Push)
+
+The opt-in study reminder system is being introduced in stages. The database foundation is in `supabase/update-24.sql`; run it in **Supabase → SQL Editor → New query** when instructed. It stores account-level schedules, per-device push subscriptions and a server-managed delivery log. Reminders are off by default.
+
+The service worker can now display a visible push notification and open the relevant DxDrill page when tapped. This alone does **not** mean reminders are live: browser subscription controls, secure server-side Web Push delivery, scheduled sending and real-device delivery tests still need to be completed. Do not add VAPID private keys or the Supabase service-role key to this repository.
+
+See [the study reminder implementation notes](docs/STUDY_REMINDERS.md) for the rollout plan and platform requirements. On iPhone/iPad, Web Push requires DxDrill to be installed on the Home Screen on iOS/iPadOS 16.4 or later.
