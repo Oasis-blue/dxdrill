@@ -13,9 +13,9 @@ begin
     raise exception 'bad topic map';
   end if;
   with topic_questions as (
-    select t.key as topic, q.value #>> '{}' as question_id
+    select t.key as topic, q.question_id
     from jsonb_each(p_map) t
-    cross join lateral jsonb_array_elements(t.value) q(value)
+    cross join lateral jsonb_array_elements_text(t.value) q(question_id)
   ), mcq as (
     select tq.topic, a.question_id, a.correct, a.created_at
     from topic_questions tq
