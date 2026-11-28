@@ -62,7 +62,10 @@
     if (!window.isSecureContext) return Promise.reject(new Error("Push reminders require a secure HTTPS connection."));
     if (!client()) return Promise.reject(new Error("Sign in before enabling reminders."));
     R.busy = true;
-    return authHeaders().then(function (headers) {
+    return Notification.requestPermission().then(function (permission) {
+      if (permission !== "granted") throw new Error("Allow notifications in your browser settings to enable study reminders.");
+      return authHeaders();
+    }).then(function (headers) {
       return fetch(FN, { method: "GET", headers: headers });
     }).then(function (res) {
       if (!res.ok) throw new Error("The reminder service is not deployed yet. Try again after setup is complete.");
