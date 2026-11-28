@@ -8,9 +8,9 @@ The current streak is device-local in `js/streak.js`. It uses the Lagos calendar
 
 ## Repository implementation
 - `supabase/update-24.sql`: account preferences, per-device Web Push subscriptions, RLS and duplicate-delivery log.
-- `js/reminders.js`: Account page controls; permission is requested only after the user presses Enable.
+- `js/reminders.js`: Home-page discovery card and Account page controls; permission is requested only after the user presses Enable. Signed-in users can send a real test push from Account.
 - `sw.js`: visible notification display and click-through into the app.
-- `supabase/functions/study-reminders/index.ts`: authenticated subscription endpoint plus secret-protected scheduled sender. It uses `@mmmike/web-push` (Web Crypto, RFC 8291/8292) rather than Node-only crypto.
+- `supabase/functions/study-reminders/index.ts`: authenticated subscription endpoint and test-push action, plus secret-protected scheduled sender. It uses `@mmmike/web-push` (Web Crypto, RFC 8291/8292) rather than Node-only crypto.
 - `tools/vapid-keygen.html`: creates a VAPID key pair locally in the browser. It does not upload the keys.
 
 ## Supabase setup (dashboard only; no terminal)
