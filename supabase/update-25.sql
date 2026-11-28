@@ -16,7 +16,7 @@ begin
     select 1 from vault.secrets where name = 'dxdrill_reminder_cron_secret'
   ) then
     perform vault.create_secret(
-      encode(gen_random_bytes(32), 'hex'),
+      replace(gen_random_uuid()::text || gen_random_uuid()::text, '-', ''),
       'dxdrill_reminder_cron_secret',
       'Shared secret for the DxDrill study reminder scheduled Edge Function'
     );
