@@ -38,7 +38,7 @@
   DX.streakTick = function (count) {
     count = Math.max(0, Number(count) || 0);
     if (!count) return;
-    var s = load(), t = today(), msg = "";
+    var s = load(), t = today(), msg = "", streakJustCompleted = false;
     if (s.d !== t) { s.d = t; s.n = 0; }
     s.n += count;
     if (s.last !== t && s.n >= DAY_MIN) {
@@ -117,7 +117,7 @@
       s.n += items.length;
       if (s.last !== t && s.n >= DAY_MIN) {
         s.c = (s.last === yesterday()) ? (s.c || 0) + 1 : 1;
-        s.last = t; if (s.c > (s.best || 0)) s.best = s.c;
+        s.last = t; streakJustCompleted = true; if (s.c > (s.best || 0)) s.best = s.c;
         if (s.c === 1) msgs.push("Streak started. Come back tomorrow to keep it going.");
         else if ([3, 7, 14, 30, 60, 100].indexOf(s.c) > -1) msgs.push(s.c + " days in a row. Well done.");
         else msgs.push(s.c + "-day streak. See you tomorrow.");
