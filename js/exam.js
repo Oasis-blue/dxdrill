@@ -101,7 +101,7 @@
   function render(el) {
     if (el) app = el; if (!app) return;
     if (!E.run || E.run.done) { if (!E.run && restore()) startTimer(); }
-    if (E.run && !E.run.done) { app.innerHTML = runView(); save(); tick(); }
+    if (E.run && !E.run.done) { if (!E.timer) startTimer(); app.innerHTML = runView(); E.run.resumed = false; save(); tick(); }
     else if (E.run && E.run.done) app.innerHTML = resultView();
     else app.innerHTML = startView();
   }
@@ -124,7 +124,7 @@
   }
   function onKey(e) {
     var r = E.run; if (!r || r.done) return;
-    var k = e.key.toUpperCase(), pos = 'ABCDE'.indexOf(k);
+    var k = e.key.toUpperCase(), pos = 'ABCDEF'.indexOf(k);
     if (pos > -1 && pos < r.items[r.index].order.length) {
       var oi = r.items[r.index].order[pos]; r.items[r.index].pick = oi; save(); render();
     } else if (e.key === 'ArrowRight') { r.index = Math.min(r.items.length - 1, r.index + 1); save(); render(); }
