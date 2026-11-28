@@ -113,15 +113,15 @@
       if (chosen.indexOf(sub.id) < 0) return;
       var subTopics = [];
       sub.areas.forEach(function (a) { subTopics = subTopics.concat(topicIdsForArea(a)); });
-      var subOn = subTopics.length > 0 && subTopics.every(function (id) { return selected.indexOf(id) > -1; });
+      var subSelected = subTopics.filter(function (id) { return selected.indexOf(id) > -1; }).length; var subOn = subTopics.length > 0 && subSelected === subTopics.length;
       h += '<details class="acc subj" open><summary><span>' + esc(sub.name) + '</span><small>' + (subOn ? 'Whole subject selected' : 'Selected topics') + '</small></summary>' +
         '<section class="section subjbody"><div class="shead"><button class="btn ghost small" data-act="custom-sub-all" data-id="' + esc(sub.id) + '" aria-pressed="' + subOn + '">' +
-        (subOn ? 'Clear subject' : 'Select whole subject') + '</button></div>';
+        (subSelected ? 'Clear subject' : 'Select whole subject') + '</button></div>';
       sub.areas.forEach(function (a) {
         var ids = topicIdsForArea(a), n = ids.filter(function (id) { return selected.indexOf(id) > -1; }).length;
         var allOn = ids.length > 0 && n === ids.length;
         h += '<details class="acc"><summary><span>' + esc(a.name) + '</span><small>' + n + ' of ' + ids.length + ' topics</small></summary><div class="topics">' +
-          '<button class="btn ghost small" data-act="custom-area" data-id="' + esc(a.id) + '">' + (allOn ? 'Clear this area' : 'Select whole area') + '</button>';
+          '<button class="btn ghost small" data-act="custom-area" data-id="' + esc(a.id) + '">' + (n ? 'Clear this area' : 'Select whole area') + '</button>';
         a.topics.forEach(function (t) {
           if (!t.count) {
             h += '<button class="topic empty" disabled><span>' + esc(t.name) + '</span><small>none yet</small></button>';
@@ -388,11 +388,11 @@
           if (ar.id === b.getAttribute("data-id")) ids = topicIdsForArea(ar);
         }); });
       } else ids = [b.getAttribute("data-id")];
-      var allSelected = ids.length && ids.every(function (id) { return (P.customTopicIds || []).indexOf(id) > -1; });
+      var anySelected = ids.some(function (id) { return (P.customTopicIds || []).indexOf(id) > -1; });
       if (!P.customTopicIds) P.customTopicIds = [];
       ids.forEach(function (id) {
         var ix = P.customTopicIds.indexOf(id);
-        if (allSelected) { if (ix > -1) P.customTopicIds.splice(ix, 1); }
+        if (anySelected) { if (ix > -1) P.customTopicIds.splice(ix, 1); }
         else if (ix < 0) P.customTopicIds.push(id);
       });
       var ty = window.scrollY; render(); window.scrollTo(0, ty);
