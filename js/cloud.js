@@ -271,16 +271,16 @@
     C.sb.auth.onAuthStateChange(function (ev, session) {
       var priorUserId = C.user && C.user.id;
       C.user = session ? session.user : null;
-      if (!C.user || priorUserId !== C.user.id) { C.tfStats = { loading: false, loaded: false, data: null, error: "" }; C.analytics = { loading: false, loaded: false, data: null, error: "" }; }
+      if (!C.user || priorUserId !== C.user.id) { C.tfStats = { loading: false, loaded: false, data: null, error: "" }; C.analytics = { loading: false, loaded: false, data: null, error: "" }; C.cardReviews = { loading: false, loaded: false, error: "" }; }
       F = {};
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
-      loadProfile().then(function () { flush(); if (C.user && C.syncStreak) C.syncStreak(); repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
+      loadProfile().then(function () { flush(); if (C.user && C.syncStreak) C.syncStreak(); if (C.user && C.loadCardReviews) C.loadCardReviews(true); repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
     });
     /* The page can show as soon as we know who is signed in (read from the device). The profile and class names load behind it. */
     var got = C.sb.auth.getSession().then(function (r) {
       C.user = r.data && r.data.session ? r.data.session.user : null;
     });
-    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(function () { return flush(); }).then(function () { if (C.user) C.syncStreak(); }).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
+    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(function () { return flush(); }).then(function () { if (C.user) { C.syncStreak(); if (C.loadCardReviews) C.loadCardReviews(true); } }).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
     return got.catch(function () { C.down = true; });
   };
 
@@ -338,6 +338,43 @@
     DX.store.set("dx.pending", q.slice(-500));
     flush();
   };
+  /* Spaced-repetition reviews sync across signed-in devices. The device copy remains usable offline. */
+  C.cardReviews = { loading: false, loaded: false, error: "" };
+  C.loadCardReviews = function (force) {
+    var R = C.cardReviews;
+    if (!C.ok || !C.user || R.loading || (R.loaded && !force)) return Promise.resolve(false);
+    R.loading = true; R.error = "";
+    return C.sb.from("card_reviews").select("card_id,card_kind,topic_id,box_no,due_date,updated_at")
+      .eq("user_id", C.user.id).then(function (res) {
+        R.loading = false; R.loaded = true;
+        if (res.error) { R.error = "Could not sync flashcard reviews. Run supabase/update-28.sql."; return false; }
+        var local = DX.store.get("dx.cards", {}), push = [];
+        (res.data || []).forEach(function (row) {
+          if (!row || !row.card_id) return;
+          var remoteTime = Date.parse(row.updated_at || "") || 0, current = local[row.card_id];
+          if (!current || remoteTime > (Number(current.u) || 0)) {
+            var parts = String(row.due_date || "").split("-").map(Number);
+            var due = parts.length === 3 ? Math.floor(Date.UTC(parts[0], parts[1]-1, parts[2]) / 86400000) : todayCardDay();
+            local[row.card_id] = { b: Number(row.box_no) || 0, d: due, kind: row.card_kind, topic: row.topic_id, u: remoteTime };
+          } else if ((Number(current.u) || 0) > remoteTime) push.push(cardReviewRow(row.card_id, current));
+        });
+        DX.store.set("dx.cards", local);
+        if (push.length) C.sb.from("card_reviews").upsert(push, { onConflict: "user_id,card_id" });
+        if (DX.cards && DX.cards.refreshProgress) DX.cards.refreshProgress();
+        return true;
+      }).catch(function () { R.loading = false; R.loaded = true; R.error = "Could not reach the server."; return false; });
+  };
+  function todayCardDay() { return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000); }
+  function cardReviewRow(id, s) {
+    var day = Number(s.d) || todayCardDay(), date = new Date(day * 86400000).toISOString().slice(0, 10);
+    return { card_id: String(id), card_kind: s.kind === "term" ? "term" : "question", topic_id: String(s.topic || ""), box_no: Math.max(0, Math.min(6, Number(s.b) || 0)), due_date: date, updated_at: new Date(Number(s.u) || Date.now()).toISOString() };
+  }
+  C.saveCardReview = function (id, state) {
+    if (!C.ok || !C.user || !state) return Promise.resolve(false);
+    return C.sb.from("card_reviews").upsert([cardReviewRow(id, state)], { onConflict: "user_id,card_id" })
+      .then(function (r) { if (r.error) { C.cardReviews.error = "Flashcard progress is saved on this device and will sync when available."; return false; } C.cardReviews.error = ""; return true; })
+      .catch(function () { C.cardReviews.error = "Flashcard progress is saved on this device and will sync when available."; return false; });
+  };
   C.submitTF = function (attempt) {
     if (!attempt || !attempt.answered_count) return;
     var item = {
@@ -354,7 +391,7 @@
     DX.store.set("dx.tf.pending", q.slice(-500));
     flushTF();
   };
-  window.addEventListener("online", function () { mcqRetryBlocked = false; tfRetryBlocked = false; flush(); });
+  window.addEventListener("online", function () { mcqRetryBlocked = false; tfRetryBlocked = false; flush(); if (C.user && C.loadCardReviews) C.loadCardReviews(true); });
 
   /* ---------- question reports ---------- */
   C.reports = { loaded: false, rows: [], error: "" };

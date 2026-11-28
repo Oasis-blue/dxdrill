@@ -152,7 +152,7 @@
     stem.items.forEach(function (x, i) {
       var p = it.ans[i] || ""; if (!p) return;
       var ok = (p === "t") === x.answer, s = st[sid(stem, i)] || { n: 0, c: 0, last: 0 };
-      s.n++; if (ok) { s.c++; correct++; } s.last = ok ? 1 : 0; st[sid(stem, i)] = s; answered++;
+      s.n++; if (ok) { s.c++; correct++; } s.last = ok ? 1 : 0; s.lastAt = Date.now(); st[sid(stem, i)] = s; answered++;
       net += ok ? 1 : (r.mode === "exam" ? -1 : 0);
     });
     DX.store.set(SKEY, st);

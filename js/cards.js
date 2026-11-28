@@ -4,7 +4,7 @@
   var DAYS = [1, 2, 4, 8, 16, 32];                     /* how many days until a card in box 1..6 is due again */
   var CFG = DX.store.get("dx.cards.cfg", {});
   var F = { view: "setup", scope: CFG.scope || "", kind: CFG.kind || "both", size: CFG.size || 20, q: [], i: 0, shown: false, clue: 1, got: 0, missed: [], total: 0, again: {} };
-  DX.cards = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave };
+  DX.cards = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave, getDueCount: getDueCount, refreshProgress: refreshProgress };
 
   var css = document.createElement("style");
   css.textContent =
@@ -21,10 +21,16 @@
   /* ---------- the saved box of each card ---------- */
   function today() { return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000); }
   function box() { return DX.store.get("dx.cards", {}); }
-  function rate(id, got) {
-    var b = box(), s = b[id] || { b: 0, d: 0 };
+  function rate(card, got) {
+    var b = box(), s = b[card.id] || { b: 0, d: 0 };
     if (got) { s.b = Math.min(6, s.b + 1); s.d = today() + DAYS[s.b - 1]; } else { s.b = 0; s.d = today(); }
-    b[id] = s; DX.store.set("dx.cards", b);
+    s.kind = card.kind; s.topic = card.topic; s.u = Date.now();
+    b[card.id] = s; DX.store.set("dx.cards", b);
+    if (DX.cloud && DX.cloud.saveCardReview) DX.cloud.saveCardReview(card.id, s);
+  }
+  function getDueCount() {
+    var b = box(), t = today();
+    return termCards().concat(questionCards()).filter(function (c) { return b[c.id] && Number(b[c.id].d) <= t; }).length;
   }
 
   /* ---------- the deck ---------- */
@@ -79,10 +85,11 @@
   }
   function setupHtml() {
     var c = counts(), n = build().length;
-    return '<header><p class="eyebrow">Flashcards</p><h1>Recall it first</h1><p class="lede">Try to remember the answer before you look. Cards you miss come back soon, and cards you know come back later. Your progress is saved on this device.</p></header>' +
+    return '<header><p class="eyebrow">Flashcards</p><h1>Recall it first</h1><p class="lede">Try to remember the answer before you look. Cards you miss come back soon, and cards you know come back later. Progress is saved on this device and syncs to your account when signed in and account sync is configured.</p></header>' +
       '<section class="fc fcf"><div class="field"><label class="label" for="fc-scope">What to study</label><select id="fc-scope">' + scopeOptions() + '</select></div>' +
       '<div class="field"><label class="label" for="fc-kind">Cards</label><select id="fc-kind"><option value="both"' + (F.kind === "both" ? " selected" : "") + '>Terms and questions</option><option value="t"' + (F.kind === "t" ? " selected" : "") + '>Terms only (clues)</option><option value="q"' + (F.kind === "q" ? " selected" : "") + '>Questions only</option></select></div>' +
       '<div class="field"><label class="label" for="fc-size">Cards this round</label><select id="fc-size">' + ["10", "20", "40", "all"].map(function (v) { return '<option value="' + v + '"' + (String(F.size) === v ? " selected" : "") + '>' + (v === "all" ? "All that are due and new" : v) + '</option>'; }).join("") + '</select></div>' +
+      (DX.cloud && DX.cloud.cardReviews && DX.cloud.cardReviews.error ? '<p class="hint">' + esc(DX.cloud.cardReviews.error) + '</p>' : '') +
       '<div class="fcstats"><span>' + c.all + ' cards</span><span>' + c.due + ' due</span><span>' + c.fresh + ' new</span><span>' + c.known + ' well known</span></div>' +
       (n ? '<div class="row tight"><button class="btn primary" data-act="start">Start (' + n + ' cards)</button></div>' : '<p class="muted">Nothing is due here right now. Come back tomorrow, or pick something wider.</p>') +
       '</section>';
@@ -114,6 +121,7 @@
   }
 
   function leave() { }
+  function refreshProgress() { repaint(); }
   function render(a) {
     app = a;
     if (!DX.questions.length && !DX.terms.length) { a.innerHTML = '<div class="wrap stack"><h1>Flashcards</h1><p class="lede">Loading the cards…</p></div>'; return; }
@@ -132,7 +140,7 @@
   function answer(got) {
     if (F.view !== "run" || !F.shown) return;
     var c = F.q[F.i];
-    if (!F.again[c.id]) { rate(c.id, got); if (got) F.got++; else F.missed.push(c); }   /* the first answer to a card is what counts */
+    if (!F.again[c.id]) { rate(c, got); if (got) F.got++; else F.missed.push(c); }   /* the first answer to a card is what counts */
     if (!got) { F.again[c.id] = 1; F.q.splice(Math.min(F.q.length, F.i + 4), 0, c); }   /* a missed card comes back a few cards later */
     if (DX.fx) { DX.fx.play(got ? "ok" : "bad"); }
     F.i++; F.shown = false; F.clue = 1;

@@ -100,6 +100,25 @@
   }
   function unique(a) { return a.filter(function (x, i) { return a.indexOf(x) === i; }); }
 
+  function adaptiveCount() { return scopeQs({ kind: "adaptive" }).length; }
+  function dailyPlanHtml() {
+    var weak = weakTopicScores(), topics = Object.keys(weak).sort(function (a, b) { return weak[b] - weak[a]; });
+    var adaptive = scopeQs({ kind: "adaptive" }).length, dueCards = DX.cards && DX.cards.getDueCount ? DX.cards.getDueCount() : 0;
+    var fresh = scopeQs({ kind: "new" }).length, tfCount = (DX.tfStems || []).filter(function (s) { return topics.indexOf(s.topic) > -1; }).length;
+    var topicNames = topics.slice(0, 3).map(function (id) { return DX.topicById[id] ? DX.topicById[id].name : id; });
+    var target = Math.min(15, adaptive || fresh);
+    return '<section class="section stack"><h2>Your revision plan for today</h2>' +
+      '<p class="hint">A practical session assembled from your recent mistakes, topic accuracy and flashcards due today. It updates as your learning history changes.</p>' +
+      '<div class="fcstats"><span>' + target + ' priority MCQs</span><span>' + dueCards + ' flashcards due</span>' +
+      (tfCount ? '<span>True/False available</span>' : '') + '</div>' +
+      (topicNames.length ? '<p class="hint">Focus first: ' + topicNames.map(esc).join(' · ') + '</p>' : '<p class="hint">No topic has enough evidence to be labelled weak yet. Start with unanswered questions and build your baseline.</p>') +
+      '<div class="row tight">' +
+      (target ? '<button class="btn primary" data-act="daily-start">' + (adaptive ? 'Start priority MCQs' : 'Start unanswered MCQs') + '</button>' : '') +
+      (dueCards ? '<a class="btn" href="#cards">Review due flashcards</a>' : '<a class="btn ghost" href="#cards">Open flashcards</a>') +
+      (tfCount ? '<button class="btn ghost" data-act="daily-tf">Practise weak topics in True/False</button>' : '') +
+      '</div></section>';
+  }
+
   /* ---------- picker ---------- */
   function pickView() {
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
@@ -111,7 +130,7 @@
       (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review mistakes · ' + missed + '</button>' : '') +
       (adaptive ? '<button class="btn primary" data-act="scope" data-kind="adaptive">Fix my weak areas · ' + adaptive + '</button>' : '') +
       (fresh ? '<button class="btn" data-act="scope" data-kind="new">Explore unanswered here · ' + fresh + '</button>' : '') + '</section>' +
-      '<p class="hint">On this device: ' + coverage.attempted + ' of ' + coverage.total + ' MCQs have a recorded attempt. “Unanswered here” is device-specific; synced topic analytics are used separately for weak-area detection.</p>' +
+      '<p class="hint">On this device: ' + coverage.attempted + ' of ' + coverage.total + ' MCQs have a recorded attempt. “Unanswered here” is device-specific; synced topic analytics are used separately for weak-area detection.</p>' + dailyPlanHtml() +
       (DX.cloud && DX.cloud.user ? (DX.cloud.tfStats && DX.cloud.tfStats.error ? '<p class="hint">Synced learning data could not be loaded. You can still review mistakes saved on this device; weak-topic suggestions will return when account data is available.</p>' : (DX.cloud.tfStats && DX.cloud.tfStats.loaded ? (weakCount ? '<p class="hint">Priority revision combines missed questions with locally or account-identified weak topics (' + weakCount + '). Recent and repeated errors are ranked first.</p>' : '<p class="hint">No topic currently meets the weak-area threshold. Review mistakes or choose a topic below.</p>') : '<p class="hint">Sign-in learning data is still loading; weak-topic revision will appear when it is ready.</p>')) : '<p class="hint">Sign in to include your synced weak-topic analytics in priority revision. Previously missed questions on this device are still included.</p>') +
       '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
     DX.curriculum.subjects.forEach(function (s) {
@@ -486,6 +505,12 @@
       P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.mode = "study";
       P.view = "setup"; P.run = null; P.secOpen = false;
       render(); window.scrollTo(0, 0);
+    } else if (a === "daily-start") {
+      P.scope = { kind: adaptiveCount() ? "adaptive" : "new" };
+      P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = scopeQs(P.scope).length > 15 ? "15" : "all";
+      P.mode = "study"; P.view = "setup"; P.run = null; render(); window.scrollTo(0, 0);
+    } else if (a === "daily-tf") {
+      DX.tfPreselect = Object.keys(weakTopicScores()); location.hash = "#truefalse";
     } else if (a === "scope") {
       P.scope = { kind: b.getAttribute("data-kind"), id: b.getAttribute("data-id") };
       P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.view = "setup"; P.run = null; P.secOpen = false;
