@@ -513,3 +513,9 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
   .tf-subject-row details.subj>summary>small{max-width:100%;text-align:left}
   .tf-subject-toggle{min-width:94px;padding:7px 8px;font-size:12px}
 }
+
+
+/* Compact weekday picker for study reminder preferences. */
+.rem-days{display:flex;flex-wrap:wrap;gap:8px}
+.rem-day{display:inline-flex;align-items:center;gap:5px;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--surface);font-size:13px}
+.rem-day input{accent-color:var(--accent)}
