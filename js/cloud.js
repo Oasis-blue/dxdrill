@@ -184,12 +184,24 @@
     if (S.error) return '<section class="section stack"><h2>Your learning progress</h2><p class="hint">' + esc(S.error) + '</p></section>';
     var pct = function (v) { return v == null ? "—" : Number(v) + "%"; };
     var topicActivity = function (t) { return Number(t.mcq_attempts || 0) + Number(t.tf_statements || 0); };
-    var weak = topics.filter(function (t) { return topicActivity(t) >= 3 && ((t.mcq_accuracy != null && Number(t.mcq_attempts || 0) >= 3 && Number(t.mcq_accuracy) < 70) || (t.tf_accuracy != null && Number(t.tf_statements || 0) >= 3 && Number(t.tf_accuracy) < 70)); });
+    function topicAccuracy(t) {
+      var n = topicActivity(t), correct = Number(t.mcq_correct || 0) + Number(t.tf_correct || 0);
+      return n ? Math.round(correct * 100 / n) : null;
+    }
+    var evidenced = topics.filter(function (t) { return topicActivity(t) >= 5; });
+    var strongest = evidenced.slice().sort(function (a, b) { return topicAccuracy(b) - topicAccuracy(a) || topicActivity(b) - topicActivity(a); });
+    var weak = evidenced.filter(function (t) { return topicAccuracy(t) < 70; })
+      .sort(function (a, b) { return topicAccuracy(a) - topicAccuracy(b) || topicActivity(b) - topicActivity(a); });
     var sortedTopics = topics.slice().sort(function (a, b) { return topicActivity(b) - topicActivity(a); });
     function topicRow(t) {
       var name = DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic;
       return '<div class="rep-item"><b>' + esc(name) + '</b><p class="hint">MCQ: ' + (t.mcq_attempts || 0) + ' attempts · ' + (t.mcq_correct || 0) + ' correct · ' + pct(t.mcq_accuracy) +
         ' &nbsp;|&nbsp; T/F: ' + (t.tf_stems || 0) + ' stems · ' + (t.tf_statements || 0) + ' statements · ' + pct(t.tf_accuracy) + '</p></div>';
+    }
+    function topicBar(t, rank) {
+      var score = topicAccuracy(t), name = DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic;
+      return '<div class="la-topic"><div class="la-topic-head"><b>' + rank + '. ' + esc(name) + '</b><strong>' + score + '%</strong></div>' +
+        '<div class="la-track"><i style="width:' + score + '%"></i></div><p class="hint">' + topicActivity(t) + ' responses · ' + (t.mcq_attempts || 0) + ' MCQ / ' + (t.tf_statements || 0) + ' T/F</p></div>';
     }
     function recentRow(x) {
       var name = DX.topicById[x.topic] ? DX.topicById[x.topic].name : x.topic;
@@ -199,12 +211,9 @@
     }
     var topicPreview = sortedTopics.slice(0, 5).map(topicRow).join("");
     var topicMore = sortedTopics.slice(5).map(topicRow).join("");
-    var weakPreview = weak.slice(0, 3).map(function (t) {
-      return '<p class="hint">• ' + esc(DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic) + ' — below 70% in a format with at least 3 responses</p>';
-    }).join("");
-    var weakMore = weak.slice(3).map(function (t) {
-      return '<p class="hint">• ' + esc(DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic) + ' — below 70% in a format with at least 3 responses</p>';
-    }).join("");
+    var strongHtml = strongest.length ? strongest.slice(0, 5).map(topicBar).join("") : '<p class="muted">Strongest topics appear after at least 5 responses in a topic.</p>';
+    var weakHtml = weak.length ? weak.slice(0, 5).map(function (t, i) { return topicBar(t, i + 1); }).join("") :
+      '<p class="muted">No topic is currently below 70% with at least 5 combined responses. Keep practising to build reliable comparisons.</p>';
     var recentPreview = recent.slice(0, 3).map(recentRow).join("");
     var recentMore = recent.slice(3).map(recentRow).join("");
     return '<section class="section stack"><h2>Your learning progress</h2><p class="hint">Synced to your account. MCQ attempts include repeat practice; leaderboard points still count each distinct correctly answered question only.</p>' +
@@ -213,8 +222,9 @@
       '<div class="stat"><b>' + (d.mcq_questions || 0) + '</b><span>distinct MCQs</span></div></div>' +
       '<h3>MCQ</h3><p class="hint">' + (d.mcq_attempts || 0) + ' responses · ' + (d.mcq_correct || 0) + ' correct · ' + pct(d.mcq_accuracy) + ' accuracy</p>' +
       '<h3>True/False</h3><p class="hint">' + (d.tf_stems_attempted || 0) + ' stem attempts · ' + (d.tf_stems_completed || 0) + ' fully completed · ' + (d.tf_statements || 0) + ' statements · ' + pct(d.tf_accuracy) + ' accuracy</p>' +
-      '<h3>Topic performance</h3>' + (topics.length ? topicPreview + (topicMore ? '<details class="rep-more"><summary>Show all ' + topics.length + ' topics</summary>' + topicMore + '</details>' : '') : '<p class="muted">No synced topic activity yet. Complete a signed-in practice session to begin.</p>') +
-      '<h3>Topics to revisit</h3>' + (weak.length ? weakPreview + (weakMore ? '<details class="rep-more"><summary>Show all ' + weak.length + ' topics to revisit</summary>' + weakMore + '</details>' : '') : '<p class="muted">No topic has enough low-scoring activity to flag yet.</p>') +
+      '<h3>Strongest topics</h3><p class="hint">Ranked by combined MCQ and True/False accuracy, using topics with at least 5 responses.</p>' + strongHtml +
+      '<h3>Topics needing attention</h3><p class="hint">Topics below 70% accuracy after at least 5 combined responses.</p>' + weakHtml +
+      '<h3>Topic activity</h3>' + (topics.length ? topicPreview + (topicMore ? '<details class="rep-more"><summary>Show all ' + topics.length + ' topics</summary>' + topicMore + '</details>' : '') : '<p class="muted">No synced topic activity yet. Complete a signed-in practice session to begin.</p>') +
       '<h3>Recent practice</h3>' + (recent.length ? recentPreview + (recentMore ? '<details class="rep-more"><summary>Show all ' + recent.length + ' recent entries</summary>' + recentMore + '</details>' : '') : '<p class="muted">No recent synced activity.</p>') + analyticsHtml() + '</section>';
   }
   function loadClasses() {
