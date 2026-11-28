@@ -105,6 +105,47 @@
       repaint();
     }).catch(function () { S.loading = false; S.loaded = true; S.error = "Could not reach the server."; repaint(); });
   }
+  C.analytics = { loading: false, loaded: false, data: null, error: "" };
+  function loadMyAnalytics() {
+    var A = C.analytics;
+    if (!C.ok || !C.user || A.loading || A.loaded) return;
+    if (DX.loadingQuestions || !DX.questionsReady) return;
+    A.loading = true;
+    C.sb.rpc("my_learning_analytics", { p_map: learningTopicMap() }).then(function (r) {
+      A.loading = false; A.loaded = true;
+      if (r.error) A.error = "Could not load learning analytics. Run supabase/update-23.sql in Supabase.";
+      else A.data = r.data || null;
+      repaint();
+    }).catch(function () { A.loading = false; A.loaded = true; A.error = "Could not reach the server for learning analytics."; repaint(); });
+  }
+  function analyticsHtml() {
+    var A = C.analytics, d = A.data || {}, days = d.daily || [], topics = d.topics || [];
+    if (!A.loaded || A.loading) return '<h3>Learning trends</h3><p class="muted">Loading your 14-day learning trends…</p>';
+    if (A.error) return '<h3>Learning trends</h3><p class="hint">' + esc(A.error) + '</p>';
+    var max = days.reduce(function (m, x) { return Math.max(m, Number(x.responses || 0)); }, 0) || 1;
+    var bars = days.map(function (x) {
+      var n = Number(x.responses || 0), w = Math.round(n / max * 100);
+      return '<div class="rep-item" style="display:grid;grid-template-columns:76px 1fr 34px;gap:8px;align-items:center"><span class="hint">' +
+        esc(new Date(x.day + "T12:00:00").toLocaleDateString(undefined, { day: "numeric", month: "short" })) +
+        '</span><span style="height:9px;background:var(--line);border-radius:8px;overflow:hidden"><span style="display:block;height:9px;width:' + w + '%;background:var(--accent);border-radius:8px"></span></span><b style="text-align:right">' + n + '</b></div>';
+    }).join("");
+    var active = topics.filter(function (t) { return Number(t.current_responses || 0) >= 3 && t.current_accuracy != null && t.previous_accuracy != null; });
+    active.sort(function (a, b) { return (Number(b.current_accuracy) - Number(b.previous_accuracy)) - (Number(a.current_accuracy) - Number(a.previous_accuracy)); });
+    function trendRow(t) {
+      var delta = Number(t.current_accuracy) - Number(t.previous_accuracy);
+      var label = delta >= 5 ? "Improving" : delta <= -5 ? "Needs attention" : "About steady";
+      var sign = delta > 0 ? "+" : "";
+      var name = DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic;
+      return '<div class="rep-item"><b>' + esc(name) + '</b><p class="hint">' + label + ' · ' + t.previous_accuracy + '% to ' + t.current_accuracy + '% (' + sign + delta + ' points) · ' + t.current_responses + ' recent responses</p></div>';
+    }
+    var improved = active.filter(function (t) { return Number(t.current_accuracy) - Number(t.previous_accuracy) >= 5; });
+    var declined = active.filter(function (t) { return Number(t.current_accuracy) - Number(t.previous_accuracy) <= -5; });
+    return '<h3>Learning trends</h3><p class="hint">Last 14 days · ' + (d.responses_14d || 0) + ' responses · ' + (d.responses_7d || 0) + ' in the last 7 days · active on ' + (d.active_days_14d || 0) + ' of 14 days</p>' +
+      (days.length ? '<h4>Daily practice</h4>' + bars : '<p class="muted">No recent activity yet.</p>') +
+      '<h4>Topic changes</h4>' +
+      (active.length ? active.slice(0, 8).map(trendRow).join("") : '<p class="muted">Topic trends will appear after you have enough activity in both the current and previous 14-day periods.</p>') +
+      '<p class="hint">Improving topics: ' + improved.length + ' · Topics needing attention: ' + declined.length + '. Trends compare accuracy across two 14-day periods and are shown only when each period has recorded responses.</p>';
+  }
   function progressHtml() {
     var S = C.tfStats, d = S.data || {}, topics = d.topics || [], recent = d.recent || [];
     if (!S.loaded || S.loading) return '<section class="section stack"><h2>Your learning progress</h2><p class="muted">Loading your synced MCQ and True/False activity…</p></section>';
@@ -142,7 +183,7 @@
       '<h3>True/False</h3><p class="hint">' + (d.tf_stems_attempted || 0) + ' stem attempts · ' + (d.tf_stems_completed || 0) + ' fully completed · ' + (d.tf_statements || 0) + ' statements · ' + pct(d.tf_accuracy) + ' accuracy</p>' +
       '<h3>Topic performance</h3>' + (topics.length ? topicPreview + (topicMore ? '<details class="rep-more"><summary>Show all ' + topics.length + ' topics</summary>' + topicMore + '</details>' : '') : '<p class="muted">No synced topic activity yet. Complete a signed-in practice session to begin.</p>') +
       '<h3>Topics to revisit</h3>' + (weak.length ? weakPreview + (weakMore ? '<details class="rep-more"><summary>Show all ' + weak.length + ' topics to revisit</summary>' + weakMore + '</details>' : '') : '<p class="muted">No topic has enough low-scoring activity to flag yet.</p>') +
-      '<h3>Recent practice</h3>' + (recent.length ? recentPreview + (recentMore ? '<details class="rep-more"><summary>Show all ' + recent.length + ' recent entries</summary>' + recentMore + '</details>' : '') : '<p class="muted">No recent synced activity.</p>') + '</section>';
+      '<h3>Recent practice</h3>' + (recent.length ? recentPreview + (recentMore ? '<details class="rep-more"><summary>Show all ' + recent.length + ' recent entries</summary>' + recentMore + '</details>' : '') : '<p class="muted">No recent synced activity.</p>') + analyticsHtml() + '</section>';
   }
   function loadClasses() {
     return C.sb.from("classes").select("id,name,level").then(function (r) {
@@ -484,7 +525,7 @@
     var map = { "ms-q": "msearch", "ac-pw": null };
     if (e.target.id === "ms-q") { var bt = document.querySelector('[data-act="msearch"]'); if (bt) bt.click(); }
   });
-  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user) loadMyTFStats(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
+  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user) { loadMyTFStats(); loadMyAnalytics(); } if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
 
   /* ---------- leaderboards ---------- */
   function loadBoard() {
