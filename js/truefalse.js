@@ -68,16 +68,23 @@
     var saved = savedRun();
 
     var subj = DX.curriculum.subjects.map(function (s) {
+      var subjectTopics = [];
+      s.areas.forEach(function (a) { a.topics.forEach(function (t) { if (byTopic[t.id]) subjectTopics.push(t); }); });
+      if (!subjectTopics.length) return "";
+      var subjectOn = subjectTopics.filter(function (t) { return !!T.sel[t.id]; }).length;
+      var subjectAll = subjectOn === subjectTopics.length, subjectSome = subjectOn > 0 && !subjectAll;
       var areas = s.areas.map(function (a) {
         var ts = a.topics.filter(function (t) { return byTopic[t.id]; });
         if (!ts.length) return "";
-        var allOn = ts.every(function (t) { return T.sel[t.id]; });
-        return '<div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">' + esc(a.name) + '</span><button class="chip toggle" data-act="ar" data-id="' + esc(a.id) + '" aria-pressed="' + allOn + '">' + (allOn ? "All on" : "Select all") + '</button></div>' +
-          '<div class="chips">' + ts.map(function (t) { return '<button class="chip toggle" data-act="tp" data-id="' + esc(t.id) + '" aria-pressed="' + !!T.sel[t.id] + '">' + esc(t.name) + ' · ' + byTopic[t.id] + '</button>'; }).join("") + '</div></div>';
+        var onCount = ts.filter(function (t) { return !!T.sel[t.id]; }).length;
+        var allOn = onCount === ts.length, someOn = onCount > 0 && !allOn;
+        var state = allOn ? "✓ " : (someOn ? "◐ " : "○ ");
+        return '<div class="field tf-area"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">' + esc(a.name) + ' <small class="tf-count">' + onCount + '/' + ts.length + '</small></span><button class="chip toggle tf-scope-toggle" data-act="ar" data-id="' + esc(a.id) + '" aria-pressed="' + allOn + '">' + state + (allOn ? "Deselect area" : "Select area") + '</button></div>' +
+          '<div class="chips">' + ts.map(function (t) { var on = !!T.sel[t.id]; return '<button class="chip toggle tf-topic-toggle' + (on ? ' is-on' : '') + '" data-act="tp" data-id="' + esc(t.id) + '" aria-pressed="' + on + '">' + (on ? "✓ " : "○ ") + esc(t.name) + ' · ' + byTopic[t.id] + '</button>'; }).join("") + '</div></div>';
       }).join("");
-      if (!areas) return "";
-      var cnt = 0; s.areas.forEach(function (a) { a.topics.forEach(function (t) { cnt += byTopic[t.id] || 0; }); });
-      return '<details class="acc subj"' + (T.openSubj && T.openSubj[s.id] ? " open" : "") + '><summary><span>' + esc(s.name) + '</span><small>' + cnt + ' stem' + (cnt === 1 ? "" : "s") + '</small></summary><div class="secbody">' + areas + '</div></details>';
+      var cnt = 0; subjectTopics.forEach(function (t) { cnt += byTopic[t.id] || 0; });
+      var status = subjectAll ? "All included" : (subjectSome ? "Partially included" : "None included");
+      return '<div class="tf-subject-row"><details class="acc subj"' + (T.openSubj && T.openSubj[s.id] ? " open" : "") + '><summary><span>' + esc(s.name) + '</span><small>' + (subjectAll ? "✓ " : (subjectSome ? "◐ " : "○ ")) + status + ' · ' + subjectOn + '/' + subjectTopics.length + ' topics · ' + cnt + ' stems</small></summary><div class="secbody">' + areas + '</div></details><button type="button" class="chip toggle tf-subject-toggle' + (subjectAll ? ' is-on' : '') + '" data-act="sub" data-id="' + esc(s.id) + '" aria-pressed="' + subjectAll + '">' + (subjectAll ? "✓ Deselect" : (subjectSome ? "◐ Select all" : "○ Select all")) + '</button></div>';
     }).join("");
 
     function seg(label, act, vals, cur, fmt) {
@@ -89,7 +96,7 @@
       '<section class="section stack"><div class="field"><span class="label">Marking</span>' + seg("Marking", "mode", ["exam", "practice"], T.mode, function (v) { return v === "exam" ? "Exam: +1 right, −1 wrong, 0 skipped" : "Practice: no penalty"; }) + '</div>' +
       '<div class="field"><span class="label">Stems in this run</span>' + seg("Stems", "n", [5, 10, 15, 20], T.n) + '</div>' +
       (missedN ? '<div class="field"><button class="chip toggle" data-act="only" aria-pressed="' + T.only + '">Only stems with statements I got wrong · ' + missedN + '</button></div>' : "") +
-      '<div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Topics</span><span class="row tight"><button class="chip toggle" data-act="selall" aria-pressed="false">All</button><button class="chip toggle" data-act="selnone" aria-pressed="false">None</button></span></div>' + subj + '</div>' +
+      '<div class="field"><div class="row tight" style="align-items:center;justify-content:space-between"><span class="label">Choose your topics</span><span class="row tight"><button class="chip toggle" data-act="selall" aria-pressed="false">✓ All</button><button class="chip toggle" data-act="selnone" aria-pressed="false">○ None</button></span></div><p class="hint tf-picker-help">Everything is included to start. Open a subject to choose a whole subject, an area, or individual topics.</p>' + subj + '</div>' +
       '<p class="hint">' + nTop + ' topic' + (nTop === 1 ? "" : "s") + ' ticked · ' + avail + ' stem' + (avail === 1 ? "" : "s") + ' available. Numbers beside topics are stems.' + (DX.loadingQuestions ? " More stems may appear as the bank loads." : "") + '</p>' +
       '<section class="section stack"><div class="field"><span class="label">Timed exam</span><div class="chips"><button class="chip toggle" data-act="timed" data-v="off" aria-pressed="' + !T.timed + '">Untimed</button><button class="chip toggle" data-act="timed" data-v="on" aria-pressed="' + T.timed + '">Timed</button></div></div>' +
       (T.timed ? '<div class="field"><span class="label">Time limit</span>' + seg("Time limit", "minutes", [10, 15, 20, 30, 45], T.minutes, function (v) { return v + " min"; }) + '</div>' : "") +
@@ -219,6 +226,15 @@
     else if (a === "weak") { reviseWeak(); }
     else if (a === "only") { T.only = !T.only; paint(); }
     else if (a === "tp") { var id = b.getAttribute("data-id"); T.sel[id] = !T.sel[id]; keepOpen(b); }
+    else if (a === "sub") {
+      var subId = b.getAttribute("data-id"), subject = DX.curriculum.subjects.filter(function (s) { return s.id === subId; })[0];
+      if (subject) {
+        var topicIds = []; subject.areas.forEach(function (a) { a.topics.forEach(function (t) { if (Object.prototype.hasOwnProperty.call(T.sel, t.id)) topicIds.push(t.id); }); });
+        var turnOn = !topicIds.length || !topicIds.every(function (id) { return T.sel[id]; });
+        topicIds.forEach(function (id) { T.sel[id] = turnOn; });
+      }
+      keepOpen(b);
+    }
     else if (a === "ar") {
       var ar = b.getAttribute("data-id"), ts = Object.keys(T.sel).filter(function (t) { return (DX.topicById[t] || {}).area === ar; }), on = ts.every(function (t) { return T.sel[t]; });
       ts.forEach(function (t) { T.sel[t] = !on; }); keepOpen(b);
