@@ -31,6 +31,7 @@
       return R.rows;
     }).catch(function () {
       R.loading = false; R.loaded = true; R.error = "Could not reach the server.";
+      if (DX.practice && DX.practice.refreshProgress) DX.practice.refreshProgress();
       return R.rows;
     });
   };
