@@ -252,6 +252,7 @@
       C.sb = window.supabase.createClient(CFG.url, CFG.key);
     } catch (e) { return Promise.resolve(); }
     C.ok = true;
+    window.addEventListener("online", function () { if (C.user && C.syncStreak) C.syncStreak(); });
     checkClock();
     if (DX.features) DX.features.load();
     C.sb.auth.onAuthStateChange(function (ev, session) {
