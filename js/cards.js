@@ -4,7 +4,7 @@
   var DAYS = [1, 2, 4, 8, 16, 32];                     /* how many days until a card in box 1..6 is due again */
   var CFG = DX.store.get("dx.cards.cfg", {});
   var F = { view: "setup", scope: CFG.scope || "", kind: CFG.kind || "both", size: CFG.size || 20, q: [], i: 0, shown: false, clue: 1, got: 0, missed: [], total: 0, again: {} };
-  DX.cards = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave };
+  DX.cards = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave, getDueCount: getDueCount, refreshProgress: refreshProgress };
 
   var css = document.createElement("style");
   css.textContent =
@@ -21,10 +21,16 @@
   /* ---------- the saved box of each card ---------- */
   function today() { return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000); }
   function box() { return DX.store.get("dx.cards", {}); }
-  function rate(id, got) {
-    var b = box(), s = b[id] || { b: 0, d: 0 };
+  function rate(card, got) {
+    var b = box(), s = b[card.id] || { b: 0, d: 0 };
     if (got) { s.b = Math.min(6, s.b + 1); s.d = today() + DAYS[s.b - 1]; } else { s.b = 0; s.d = today(); }
-    b[id] = s; DX.store.set("dx.cards", b);
+    s.kind = card.kind; s.topic = card.topic; s.u = Date.now();
+    b[card.id] = s; DX.store.set("dx.cards", b);
+    if (DX.cloud && DX.cloud.saveCardReview) DX.cloud.saveCardReview(card.id, s);
+  }
+  function getDueCount() {
+    var b = box(), t = today();
+    return pool().filter(function (c) { return b[c.id] && Number(b[c.id].d) <= t; }).length;
   }
 
   /* ---------- the deck ---------- */
@@ -114,6 +120,7 @@
   }
 
   function leave() { }
+  function refreshProgress() { repaint(); }
   function render(a) {
     app = a;
     if (!DX.questions.length && !DX.terms.length) { a.innerHTML = '<div class="wrap stack"><h1>Flashcards</h1><p class="lede">Loading the cards…</p></div>'; return; }
@@ -132,7 +139,7 @@
   function answer(got) {
     if (F.view !== "run" || !F.shown) return;
     var c = F.q[F.i];
-    if (!F.again[c.id]) { rate(c.id, got); if (got) F.got++; else F.missed.push(c); }   /* the first answer to a card is what counts */
+    if (!F.again[c.id]) { rate(c, got); if (got) F.got++; else F.missed.push(c); }   /* the first answer to a card is what counts */
     if (!got) { F.again[c.id] = 1; F.q.splice(Math.min(F.q.length, F.i + 4), 0, c); }   /* a missed card comes back a few cards later */
     if (DX.fx) { DX.fx.play(got ? "ok" : "bad"); }
     F.i++; F.shown = false; F.clue = 1;
