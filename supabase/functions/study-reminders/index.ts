@@ -57,14 +57,23 @@ async function sendDueReminders() {
     if (!withinScheduleWindow(local.time, String(pref.local_time))) continue;
     if (!(pref.days_of_week || []).includes(local.day)) continue;
     if (inQuiet(local.time, pref.quiet_start, pref.quiet_end)) continue;
-    const { data: inserted, error: insertError } = await db.from("study_reminder_deliveries")
-      .insert({ user_id: pref.user_id, reminder_type: "daily_practice", local_date: local.date, status: "queued" })
-      .select("id").maybeSingle();
-    if (insertError || !inserted) { skipped++; continue; }
+    // Atomically create today's delivery or reclaim a previous failed/skipped attempt.
+    // Existing queued/sent rows remain protected against duplicate sends.
+    const { data: deliveryId, error: claimError } = await db.rpc("claim_study_reminder_delivery", {
+      p_user_id: pref.user_id,
+      p_reminder_type: "daily_practice",
+      p_local_date: local.date,
+    });
+    if (claimError) {
+      console.error("Could not claim reminder delivery", claimError.message);
+      skipped++;
+      continue;
+    }
+    if (!deliveryId) { skipped++; continue; }
     const { data: subs, error: subError } = await db.from("study_push_subscriptions")
       .select("id,endpoint,p256dh,auth").eq("user_id", pref.user_id);
     if (subError || !subs?.length) {
-      await db.from("study_reminder_deliveries").update({ status: "skipped", error_code: "no_subscription" }).eq("id", inserted.id);
+      await db.from("study_reminder_deliveries").update({ status: "skipped", error_code: "no_subscription" }).eq("id", deliveryId);
       skipped++; continue;
     }
     let delivered = 0, gone = 0;
@@ -85,10 +94,10 @@ async function sendDueReminders() {
       } catch (e) { console.error("Push delivery failed", String(e).slice(0, 160)); }
     }
     if (delivered > 0) {
-      await db.from("study_reminder_deliveries").update({ status: "sent", sent_at: new Date().toISOString() }).eq("id", inserted.id);
+      await db.from("study_reminder_deliveries").update({ status: "sent", sent_at: new Date().toISOString() }).eq("id", deliveryId);
       sent++;
     } else {
-      await db.from("study_reminder_deliveries").update({ status: "failed", error_code: gone ? "expired_subscription" : "push_failed" }).eq("id", inserted.id);
+      await db.from("study_reminder_deliveries").update({ status: "failed", error_code: gone ? "expired_subscription" : "push_failed" }).eq("id", deliveryId);
       failed++;
     }
   }
