@@ -2193,7 +2193,7 @@ language sql security definer stable set search_path = public as $$
           and t.user_id not in (select id from public.profiles where is_admin));
 $$;
 revoke all on function public.public_stats() from public, anon, authenticated;
-grant execute on function public.public_stats() to public, anon, authenticated;
+grant execute on function public.public_stats() to anon, authenticated;
 
 drop function if exists public.admin_activity_summary();
 create function public.admin_activity_summary()
