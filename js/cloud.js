@@ -38,7 +38,7 @@
   C.syncStreak = function () {
     if (!C.ok || !C.user || !C.sb || C.streakSyncing) return Promise.resolve(false);
     var local = DX.store.get("dx.streak", null);
-    if (!local || typeof local !== "object") return Promise.resolve(false);
+    if (!local || typeof local !== "object") local = { c: 0, last: "", best: 0, d: "", n: 0, days: [] };
     var days = Array.isArray(local.days) ? local.days.slice() : [];
     if (!days.length && local.last && Number(local.c) > 0) {
       for (var i = Math.max(0, Number(local.c) - 1); i >= 0; i--) {
