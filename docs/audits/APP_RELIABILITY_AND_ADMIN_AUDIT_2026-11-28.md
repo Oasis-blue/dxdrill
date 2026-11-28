@@ -44,7 +44,7 @@ The sync fix does not change leaderboard scoring rules or the database schema. E
 - T/F uploads use an attempt ID and an upsert conflict key, making a retry of the same T/F attempt idempotent.
 - MCQ uploads use plain inserts and the local pending queue currently de-duplicates identical question/result pairs while they are pending. This can undercount repeated identical MCQ outcomes made before a successful sync, and a lost network response after a successful insert could result in a duplicate on retry. A fully robust solution needs a client-generated MCQ attempt ID stored with each row and a matching database migration; this was not improvised in the current patch.
 - The queue has a finite local cap of 500 entries. Very long periods offline or repeated storage failures can exceed what the app retains.
-- The server's daily insert caps are intentional anti-abuse safeguards. Pending data is now retained on a cap error instead of being deleted. It retries after a later online event or subsequent submission; the app does not currently show a dedicated pending-sync count/status.
+- The server's daily insert caps are intentional anti-abuse safeguards. Pending data is now retained on a cap error instead of being deleted. It retries after a later online event; the app does not currently show a dedicated pending-sync count/status.
 - T/F leaderboard points remain one point per distinct stem only when all statements are answered and at least 60% are correct. Repeated attempts do not farm points.
 
 ### 3. Personal learning progress and analytics
