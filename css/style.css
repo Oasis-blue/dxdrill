@@ -395,10 +395,12 @@ body.bigscreen #backbar{display:none!important}
 .qimg figcaption{margin-top:6px;font-size:12px;color:var(--muted,#6b7a72)}
 
 /* Streak chip on Home and cheering toasts */
-.streakchip{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);font-size:15px}
+.streakchip{display:flex;align-items:center;gap:9px;min-height:0;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:14px;line-height:1.35}
 .streakchip.on{border-color:var(--accent)}
-.streakchip small{color:var(--muted);margin-left:auto}
-.streakchip .sk-ico{font-size:18px;line-height:1}
+.streakchip .sk-main{flex:1;min-width:0}
+.streakchip small{flex:none;color:var(--muted);font-size:12px;white-space:nowrap}
+.streakchip .sk-ico{flex:none;font-size:17px;line-height:1}
+@media(max-width:420px){.streakchip{gap:7px;padding:8px 10px;font-size:13px}.streakchip small{font-size:11px}}
 .dxtoast-region{display:flex;justify-content:center;align-items:center;padding:10px 12px;box-sizing:border-box;background:var(--bg);border-bottom:1px solid var(--line)}
 .dxtoast-region:empty{display:none}
 .dxtoast{position:relative;max-width:min(92vw,380px);margin:0 auto;padding:10px 16px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:600;font-size:15px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.16);pointer-events:none;animation:dxt-in .3s ease both}
