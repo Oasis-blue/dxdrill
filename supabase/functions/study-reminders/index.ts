@@ -60,7 +60,7 @@ async function sendDueReminders() {
       try {
         const ok = await sendPushNotification(
           { endpoint: sub.endpoint, keys: { p256dh: sub.p256dh, auth: sub.auth } },
-          { title: "Time for a little DxDrill", body: "A few practice questions today can keep your learning moving.", url: "/#practice" },
+          { title: "Time for a little DxDrill", body: "A few practice questions today can keep your learning moving.", url: "./#practice" },
           { publicKey: vapidPublic, privateKey: vapidPrivate, subject: vapidSubject, ttl: 3600, urgency: "normal" },
         );
         if (ok) {
