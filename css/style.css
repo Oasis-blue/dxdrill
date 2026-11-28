@@ -564,3 +564,23 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .la-track{height:9px;border-radius:99px;background:var(--line);overflow:hidden}
 .la-track i{display:block;height:100%;border-radius:99px;background:var(--accent)}
 .la-topic p{margin:0;font-size:11px}
+
+
+/* Student achievements and shareable progress card */
+.achievements{margin-top:22px;padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.ach-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.ach-head h2{margin:2px 0 4px}
+.ach-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ach-card{display:flex;gap:12px;align-items:flex-start;min-width:0;padding:14px;border:1px solid var(--line);border-radius:13px;background:var(--bg)}
+.ach-card.earned{border-color:var(--good);background:color-mix(in srgb,var(--good) 7%,var(--surface))}
+.ach-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:var(--surface2);font-size:21px;color:var(--muted)}
+.ach-card.earned .ach-icon{background:var(--good);color:#fff}
+.ach-card b{display:block;font-size:14px}
+.ach-card p{margin:3px 0 6px;color:var(--muted);font-size:12px;line-height:1.4}
+.ach-card small{font-size:11px;color:var(--muted)}
+.ach-track{height:5px;margin-top:6px;border-radius:8px;background:var(--surface2);overflow:hidden}
+.ach-track i{display:block;height:100%;border-radius:8px;background:var(--accent)}
+.ach-card.earned .ach-track i{background:var(--good)}
+.ach-foot{margin:14px 0 0;color:var(--muted);font-size:12px}
+@media(max-width:760px){.ach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.achievements{padding:14px}.ach-grid{grid-template-columns:1fr}.ach-head .btn{width:100%}}
