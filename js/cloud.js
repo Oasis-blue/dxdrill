@@ -469,13 +469,13 @@
     var a = b.getAttribute("data-act");
     if (a === "remsave") {
       if (!DX.reminders) return;
-      DX.reminders.save().then(function () { C.msg = "Reminder schedule saved."; repaint(); }).catch(function (e) { C.err = e.message || "Could not save reminder settings."; repaint(); }); return;
+      DX.reminders.save().then(function () { if (DX.toast) DX.toast("Reminder schedule saved."); }).catch(function (e) { if (DX.toast) DX.toast(e.message || "Could not save reminder settings."); }); return;
     } else if (a === "remon") {
       if (!DX.reminders) return;
-      DX.reminders.enable().then(function () { C.msg = "Notifications enabled on this device."; repaint(); }).catch(function (e) { C.err = e.message || "Could not enable notifications."; repaint(); }); return;
+      DX.reminders.enable().then(function () { if (DX.toast) DX.toast("Study reminders enabled on this device."); }).catch(function (e) { if (DX.toast) DX.toast(e.message || "Could not enable notifications."); }); return;
     } else if (a === "remoff") {
       if (!DX.reminders) return;
-      DX.reminders.disable().then(function () { C.msg = "Notifications turned off on this device."; repaint(); }).catch(function (e) { C.err = e.message || "Could not turn off notifications."; repaint(); }); return;
+      DX.reminders.disable().then(function () { if (DX.toast) DX.toast("Study reminders turned off on this device."); }).catch(function (e) { if (DX.toast) DX.toast(e.message || "Could not turn off notifications."); }); return;
     }
     if (a === "showpw") {
       C.showpw = !C.showpw;
