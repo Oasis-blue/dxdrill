@@ -1,6 +1,6 @@
 -- DxDrill study reminder scheduler.
 -- Prerequisites:
--- 1. Deploy supabase/functions/study-reminders/index.ts as Edge Function "study-reminders".
+-- 1. Deploy supabase/functions/study-reminders/index.ts as Edge Function "swift-action".
 -- 2. In that function's settings, turn OFF gateway JWT verification. The function verifies
 --    student JWTs itself and protects scheduled runs with REMINDER_CRON_SECRET.
 -- 3. Add the same REMINDER_CRON_SECRET value to Edge Function secrets and this database Vault.
@@ -36,7 +36,7 @@ begin
       '* * * * *',
       $job$
         select net.http_post(
-          url := 'https://dkullruinrnwjmhlxlpl.supabase.co/functions/v1/study-reminders',
+          url := 'https://dkullruinrnwjmhlxlpl.supabase.co/functions/v1/swift-action',
           headers := jsonb_build_object(
             'Content-Type', 'application/json',
             'x-reminder-secret',
