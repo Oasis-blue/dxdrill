@@ -18,10 +18,10 @@
   };
   DX.streakHtml = function () {
     var i = DX.streakInfo(), line;
-    if (i.doneToday) line = "<b>" + i.count + "-day streak</b> · today is done";
-    else if (i.count > 0) line = "<b>" + i.count + "-day streak</b> · answer " + i.left + " more " + (i.left === 1 ? "question" : "questions") + " today to keep it";
-    else line = i.any ? "Your streak ended · answer " + i.left + (i.left === 1 ? " question" : " questions") + " today to start a new one" : "Answer " + DAY_MIN + " questions in a day to start a streak";
-    return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span>' + line + '</span><small>on this device' + (i.best > 1 ? " · best " + i.best : "") + '</small></div>';
+    if (i.doneToday) line = "<b>" + i.count + "-day streak</b> · done for today";
+    else if (i.count > 0) line = "<b>" + i.count + "-day streak</b> · " + i.left + " " + (i.left === 1 ? "question" : "questions") + " left today";
+    else line = i.any ? "Streak ended · " + i.left + (i.left === 1 ? " question" : " questions") + " to restart" : "Answer " + DAY_MIN + " questions today to start a streak";
+    return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span class="sk-main">' + line + '</span><small>Best ' + (i.best || 0) + '</small></div>';
   };
 
   /* True/false statements count toward the daily streak; signed-in stem results sync separately for admin stats and leaderboards. */
