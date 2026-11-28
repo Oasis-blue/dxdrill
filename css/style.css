@@ -584,3 +584,49 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .ach-foot{margin:14px 0 0;color:var(--muted);font-size:12px}
 @media(max-width:760px){.ach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:460px){.achievements{padding:14px}.ach-grid{grid-template-columns:1fr}.ach-head .btn{width:100%}}
+
+/* Timed examination mode */
+.exam-wrap{max-width:900px}
+.exam-start,.exam-rules,.exam-resume,.exam-navpanel,.exam-paper{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.exam-resume{border-color:var(--accent)}
+.exam-rules ul{padding-left:22px;line-height:1.8;color:var(--muted)}
+.exam-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0}
+.exam-top p{margin:0 0 4px}
+.exam-clock{font:700 24px/1.2 "Space Grotesk",system-ui,sans-serif;font-variant-numeric:tabular-nums;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--accent)}
+.exam-clock.urgent{color:var(--bad,#b3261e);border-color:var(--bad,#b3261e)}
+.exam-progress{height:7px;border-radius:9px;background:var(--line);overflow:hidden}
+.exam-progress i{display:block;height:100%;background:var(--accent);transition:width .2s}
+.exam-meta{font-size:12px;color:var(--muted);margin:0 0 10px}
+.exam-question{font-size:clamp(19px,3vw,25px);line-height:1.45;margin:8px 0 18px}
+.exam-options{display:grid;gap:10px}
+.exam-option{display:flex;align-items:flex-start;gap:12px;text-align:left;width:100%;min-height:54px;padding:12px;border:1.5px solid var(--line);border-radius:11px;background:var(--bg);color:var(--fg);font:inherit;line-height:1.45;cursor:pointer}
+.exam-option.chosen{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--surface))}
+.exam-letter{display:grid;place-items:center;flex:0 0 28px;height:28px;border-radius:50%;background:var(--surface2);font-weight:700}
+.exam-option.chosen .exam-letter{background:var(--accent);color:var(--accent-ink,#fff)}
+.exam-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.exam-navhead,.exam-legend{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.exam-navgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:7px;margin:14px 0}
+.exam-nav{min-height:38px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font-weight:700;cursor:pointer}
+.exam-nav.answered{background:color-mix(in srgb,var(--good,#17794a) 13%,var(--surface));border-color:var(--good,#17794a)}
+.exam-nav.flagged{box-shadow:inset 0 -3px 0 var(--warn,#c58b19)}
+.exam-nav.current{outline:2px solid var(--accent);outline-offset:1px}
+.exam-legend{justify-content:flex-start;color:var(--muted);font-size:11px}
+.exam-legend span{display:flex;align-items:center;gap:5px}
+.exam-legend i{width:9px;height:9px;border-radius:3px;background:var(--line)}
+.exam-legend i.answered{background:var(--good,#17794a)}.exam-legend i.flagged{background:var(--warn,#c58b19)}.exam-legend i.current{outline:2px solid var(--accent)}
+.exam-footer{align-items:center;flex-wrap:wrap}
+.exam-footer .danger{margin-left:auto}
+.exam-score{display:flex;align-items:baseline;gap:14px;margin:12px 0}
+.exam-score b{font:700 clamp(42px,9vw,64px)/1 "Space Grotesk",system-ui,sans-serif;color:var(--accent)}
+.exam-score span{color:var(--muted)}
+.exam-history{display:grid;gap:8px}
+.exam-history>div{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.exam-history b{color:var(--accent);font-variant-numeric:tabular-nums}
+.exam-history span{font-size:13px;color:var(--muted)}
+.exam-reviews{display:grid;gap:10px}
+.exam-review{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.exam-review.correct{border-left:4px solid var(--good,#17794a)}
+.exam-review.incorrect{border-left:4px solid var(--bad,#b3261e)}
+.exam-review h3{font-size:16px;line-height:1.45}
+.exam-review p{font-size:14px;line-height:1.5}
+@media(max-width:520px){.exam-navgrid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.exam-nav{min-height:42px}.exam-footer .danger{margin-left:0}.exam-top{align-items:flex-start}.exam-clock{font-size:21px}}
