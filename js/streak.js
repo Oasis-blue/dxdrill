@@ -1,5 +1,5 @@
-/* Daily streak and small cheering toasts. Kept on this device only (localStorage), counted by the Lagos calendar day.
-   A day counts once at least DAY_MIN questions have been finished in practice or Spotter that day. Nothing here is sent anywhere. */
+/* Daily streak and small cheering toasts. Local-first, counted by the Lagos calendar day.
+   A day counts once at least DAY_MIN questions have been finished in practice or Spotter that day. Qualifying dates sync to the account when signed in and online. */
 (function () {
   var DX = window.DX, S = DX.store, esc = DX.esc;
   var DAY_MIN = 5, KEY = "dx.streak", TDONE = "dx.topicdone";
