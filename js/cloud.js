@@ -97,17 +97,22 @@
   /* Scores: queued on the device and sent when signed in, so nothing is lost offline. */
   function queue() { return DX.store.get("dx.pending", []); }
   function tfQueue() { return DX.store.get("dx.tf.pending", []); }
+  var tfFlushing = false;
   function flushTF() {
-    if (!C.ok || !C.user) return Promise.resolve();
+    if (!C.ok || !C.user || tfFlushing) return Promise.resolve();
     var q = tfQueue(); if (!q.length) return Promise.resolve();
-    var batch = q.slice(0, 100);
+    var batch = q.slice(0, 100), sent = Object.create(null);
+    batch.forEach(function (x) { sent[x.attempt_id + "|" + x.stem_id] = 1; });
+    tfFlushing = true;
     return C.sb.from("tf_attempts").upsert(batch.map(function (x) {
       return { attempt_id: x.attempt_id, stem_id: x.stem_id, topic_id: x.topic_id,
         answered_count: x.answered_count, correct_count: x.correct_count, total_count: x.total_count };
     }), { onConflict: "user_id,attempt_id,stem_id", ignoreDuplicates: true }).then(function (r) {
-      if (!r.error) DX.store.set("dx.tf.pending", q.slice(batch.length));
+      if (!r.error) DX.store.set("dx.tf.pending", tfQueue().filter(function (x) { return !sent[x.attempt_id + "|" + x.stem_id]; }));
       else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.tf.pending", []);
-    }).catch(function () { });
+      tfFlushing = false;
+      if (!r.error && tfQueue().length) return flushTF();
+    }).catch(function () { tfFlushing = false; });
   }
   function flush() {
     if (!C.ok || !C.user) return Promise.resolve();
@@ -142,6 +147,7 @@
     DX.store.set("dx.tf.pending", q.slice(-500));
     flushTF();
   };
+  window.addEventListener("online", function () { flush(); });
 
   /* ---------- question reports ---------- */
   C.reports = { loaded: false, rows: [], error: "" };
@@ -218,7 +224,7 @@
         '<button class="btn ghost small" data-act="mask" data-kind="remove" data-id="' + id + '">Remove</button>';
       var box = !cf ? "" : '<p class="note bad">' + (cf === "remove" ? "Remove " + esc(m.display_name) + " and everything they have scored? This cannot be undone." : "Delete all of " + esc(m.display_name) + "’s scores? This cannot be undone.") + '</p>' +
         '<div class="row tight"><button class="btn small primary" data-act="myes" data-kind="' + cf + '" data-id="' + id + '">Yes, ' + (cf === "remove" ? "remove" : "reset") + '</button><button class="btn ghost small" data-act="mno">Cancel</button></div>';
-      return '<div class="rep-item"><span class="label">' + esc(m.email || "") + ' · joined ' + esc(joined) + ' · ' + Number(m.points) + ' points · ' + Number(m.answers_total) + ' answers</span>' +
+      return '<div class="rep-item"><span class="label">' + esc(m.email || "") + ' · joined ' + esc(joined) + ' · ' + Number(m.points) + ' points · ' + Number(m.answers_total) + ' responses</span>' +
         '<div class="teamrow"><div class="field"><input type="text" id="mn-' + id + '" value="' + esc(m.display_name) + '" maxlength="40" aria-label="Name"></div>' +
         '<div class="field">' + classSelect("mc-" + id, m.class_id || "") + '</div></div>' +
         '<div class="row tight">' + acts + '</div>' + box + '</div>';
