@@ -85,8 +85,8 @@ async function sendDueReminders() {
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: cors });
+  let body: any = null;
   if (req.method === "POST") {
-    let body: any;
     try { body = await req.json(); } catch { return reply({ error: "Invalid JSON" }, 400); }
     if (body?.action === "run") {
       const expected = Deno.env.get("REMINDER_CRON_SECRET") || "";
