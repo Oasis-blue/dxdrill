@@ -90,6 +90,8 @@ The project URL and publishable key are in `js/cloud.js`. The publishable key is
 
 Points are different MCQ questions answered correctly plus distinct True/False stems fully answered with at least 60% correct. Repeats do not add points. True/False activity syncs when a student is signed in; offline attempts stay queued on the device until they can sync. Scores are sent from the browser, so a determined student could fake them. That is fine for practice leaderboards, but competitions will need server-side marking.
 
+The account page also shows combined personal MCQ and True/False progress, topic-level performance, weak-topic flags (after at least three responses in a format), and recent synced practice. Existing MCQ answer history is grouped by topic using the current question-bank topic map. After update 20, run `supabase/update-21.sql` to enable this dashboard; fresh installations can use `supabase/setup.sql`.
+
 ## What is in the app
 
 - **Practice:** study mode (explains each answer) and exam mode (marks at the end). Practice history stays on the device.
