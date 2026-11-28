@@ -11,7 +11,7 @@ create or replace function public.claim_study_reminder_delivery(
 returns bigint
 language plpgsql
 security definer
-set search_path = public
+set search_path = ''
 as $$
 declare
   claimed_id bigint;
@@ -20,7 +20,7 @@ begin
     raise exception 'Unsupported reminder type';
   end if;
 
-  insert into public.study_reminder_deliveries (
+  insert into public.study_reminder_deliveries as existing (
     user_id, reminder_type, local_date, status, created_at, sent_at, error_code
   )
   values (
@@ -32,7 +32,7 @@ begin
     created_at = now(),
     sent_at = null,
     error_code = null
-  where public.study_reminder_deliveries.status in ('failed', 'skipped')
+  where existing.status in ('failed', 'skipped')
   returning id into claimed_id;
 
   return claimed_id;
