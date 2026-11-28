@@ -34,6 +34,72 @@
     return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span class="sk-main">' + line + '</span><small>Best ' + (i.best || 0) + '</small></div><section class="sk-panel" id="streak-calendar" aria-label="Study streak calendar and milestones"></section>';
   };
 
+  /* Student achievements: transparent milestones calculated from this device's saved MCQ history and streak. */
+  var ACHIEVEMENTS = [
+    { id: "first", title: "First Steps", detail: "Answer your first question correctly", test: function (x) { return x.correct >= 1; }, goal: 1, value: function (x) { return x.correct; } },
+    { id: "ten", title: "Building Momentum", detail: "Get 10 questions correct", test: function (x) { return x.correct >= 10; }, goal: 10, value: function (x) { return x.correct; } },
+    { id: "fifty", title: "Committed Learner", detail: "Get 50 questions correct", test: function (x) { return x.correct >= 50; }, goal: 50, value: function (x) { return x.correct; } },
+    { id: "hundred", title: "Century Club", detail: "Get 100 questions correct", test: function (x) { return x.correct >= 100; }, goal: 100, value: function (x) { return x.correct; } },
+    { id: "streak3", title: "Three-Day Streak", detail: "Build a 3-day study streak", test: function (x) { return x.best >= 3; }, goal: 3, value: function (x) { return x.best; } },
+    { id: "streak7", title: "Week of Consistency", detail: "Build a 7-day study streak", test: function (x) { return x.best >= 7; }, goal: 7, value: function (x) { return x.best; } },
+    { id: "streak30", title: "Month of Momentum", detail: "Build a 30-day study streak", test: function (x) { return x.best >= 30; }, goal: 30, value: function (x) { return x.best; } },
+    { id: "explorer5", title: "Curious Explorer", detail: "Practise questions in 5 topics", test: function (x) { return x.topics >= 5; }, goal: 5, value: function (x) { return x.topics; } },
+    { id: "explorer10", title: "Wide-Ranging Learner", detail: "Practise questions in 10 topics", test: function (x) { return x.topics >= 10; }, goal: 10, value: function (x) { return x.topics; } }
+  ];
+  function achievementStats() {
+    var st = DX.stats(), correct = 0, attempted = 0, topics = {};
+    Object.keys(st || {}).forEach(function (id) {
+      var row = st[id] || {}, n = Math.max(0, Number(row.n) || 0), c = Math.max(0, Number(row.c) || 0);
+      attempted += n; correct += c;
+      if (n) {
+        var q = (DX.questions || []).filter(function (x) { return String(x.id) === String(id); })[0];
+        if (q && q.topic) topics[q.topic] = 1;
+      }
+    });
+    var si = DX.streakInfo();
+    return { correct: correct, attempted: attempted, topics: Object.keys(topics).length, best: si.best || 0, current: si.count || 0 };
+  }
+  function achievementHtml() {
+    var x = achievementStats(), unlocked = ACHIEVEMENTS.filter(function (a) { return a.test(x); }).length;
+    var cards = ACHIEVEMENTS.map(function (a) {
+      var yes = a.test(x), progress = Math.min(100, Math.round(a.value(x) / a.goal * 100));
+      return '<article class="ach-card' + (yes ? ' earned' : '') + '"><span class="ach-icon" aria-hidden="true">' + (yes ? '★' : '◇') + '</span><div><b>' + esc(a.title) + '</b><p>' + esc(a.detail) + '</p><small>' + (yes ? 'Unlocked' : Math.min(a.value(x), a.goal) + ' / ' + a.goal) + '</small><div class="ach-track"><i style="width:' + progress + '%"></i></div></div></article>';
+    }).join("");
+    return '<section class="achievements" id="dx-achievements"><div class="ach-head"><div><p class="eyebrow">Your milestones</p><h2>Achievements</h2><p class="hint">' + unlocked + ' of ' + ACHIEVEMENTS.length + ' unlocked · ' + x.correct + ' correct · ' + x.topics + ' topics explored</p></div><button type="button" class="btn small primary" data-ach-share="1">Share progress card</button></div><div class="ach-grid">' + cards + '</div><p class="ach-foot">Achievements use practice history saved on this device. Your synced streak is shown separately.</p></section>';
+  }
+  function shareAchievement() {
+    var x = achievementStats(), unlocked = ACHIEVEMENTS.filter(function (a) { return a.test(x); });
+    var text = 'My DxDrill progress: ' + x.correct + ' correct answers across ' + x.topics + ' topics, with a ' + x.best + '-day personal-best study streak. ' + unlocked.length + '/' + ACHIEVEMENTS.length + ' achievements unlocked. Keep learning with DxDrill!';
+    var canvas = document.createElement("canvas"); canvas.width = 1200; canvas.height = 630;
+    var ctx = canvas.getContext("2d");
+    if (!ctx) { shareText(text); return; }
+    ctx.fillStyle = "#0d202b"; ctx.fillRect(0, 0, 1200, 630);
+    ctx.fillStyle = "#4cc3e0"; ctx.fillRect(72, 72, 12, 486);
+    ctx.fillStyle = "#ffffff"; ctx.font = "bold 38px Arial"; ctx.fillText("DxDrill", 120, 125);
+    ctx.fillStyle = "#a9c0ca"; ctx.font = "24px Arial"; ctx.fillText("MY LEARNING MILESTONES", 120, 190);
+    ctx.fillStyle = "#ffffff"; ctx.font = "bold 72px Arial"; ctx.fillText(x.correct.toLocaleString() + " correct answers", 120, 300);
+    ctx.font = "34px Arial"; ctx.fillStyle = "#dce9ee";
+    ctx.fillText(x.topics + " topics explored", 120, 385);
+    ctx.fillText(x.best + "-day personal-best streak", 120, 445);
+    ctx.fillStyle = "#4cc3e0"; ctx.font = "bold 26px Arial"; ctx.fillText(unlocked.length + " / " + ACHIEVEMENTS.length + " achievements unlocked", 120, 525);
+    ctx.fillStyle = "#a9c0ca"; ctx.font = "20px Arial"; ctx.fillText("Keep learning. Keep improving.", 120, 575);
+    canvas.toBlob(function (blob) {
+      if (!blob) { shareText(text); return; }
+      var file;
+      try { file = new File([blob], "dxdrill-achievement.png", { type: "image/png" }); } catch (e) { shareText(text); return; }
+      if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+        navigator.share({ files: [file], title: "My DxDrill achievements", text: text }).catch(function () { shareText(text); });
+      } else shareText(text);
+    }, "image/png");
+  }
+  function shareText(text) {
+    if (navigator.share) navigator.share({ title: "My DxDrill progress", text: text }).catch(function () { copyText(text); });
+    else copyText(text);
+  }
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { DX.toast("Progress summary copied."); }, function () { DX.toast(text); });
+    else DX.toast(text);
+  }
   /* Home streak experience: a browsable Lagos-calendar month and lifetime milestones. */
   var streakMonth = new Date(Date.now() + 3600000);
   streakMonth = new Date(Date.UTC(streakMonth.getUTCFullYear(), streakMonth.getUTCMonth(), 1));
@@ -67,7 +133,7 @@
       '<div class="sk-weekdays" aria-hidden="true">' + ["S","M","T","W","T","F","S"].map(function (x) { return '<span>' + x + '</span>'; }).join("") + '</div>' +
       '<div class="sk-days">' + cells + '</div><p class="sk-legend"><i></i> Qualifying study day</p>' +
       '<div class="sk-next"><div class="sk-next-line"><b>' + (next ? next + '-day milestone' : 'All milestones reached') + '</b><span>' + (next ? Math.max(0, next - Math.max(info.count, info.best)) + ' to go' : '100+ days') + '</span></div><div class="sk-progress"><i style="width:' + progress + '%"></i></div></div>' +
-      '<div class="sk-milestones">' + milestones + '</div>';
+      '<div class="sk-milestones">' + milestones + '</div>' + achievementHtml();
   }
   DX.mountStreakPanel = function () {
     renderStreakCalendar();
@@ -75,6 +141,8 @@
     if (!root || root.getAttribute("data-bound")) return;
     root.setAttribute("data-bound", "1");
     root.addEventListener("click", function (e) {
+      var share = e.target.closest("[data-ach-share]");
+      if (share) { shareAchievement(); return; }
       var btn = e.target.closest("[data-sk-month]");
       if (!btn || btn.disabled) return;
       streakMonth.setUTCMonth(streakMonth.getUTCMonth() + Number(btn.getAttribute("data-sk-month")));
