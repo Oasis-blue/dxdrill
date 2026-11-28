@@ -163,6 +163,17 @@
     DX.record(res);
     if (DX.cloud) DX.cloud.submit(res.filter(function (x, i) { var p = P.run.items[i].pick; return p !== null && p !== undefined; }));
   }
+  /* After a run, offer true/false stems on the same topics, if there are any. */
+  function tfOffer(items) {
+    if (!DX.tfStems || !DX.tfStems.length) return "";
+    var tops = {}; items.forEach(function (x) { tops[x.q.topic] = 1; });
+    var n = DX.tfStems.filter(function (t) { return tops[t.topic]; }).length;
+    if (!n) return "";
+    var names = Object.keys(tops).filter(function (t) { return DX.tfStems.some(function (st) { return st.topic === t; }); }).map(function (t) { return DX.topicById[t] ? DX.topicById[t].name : t; });
+    return '<section class="section stack"><p><b>Try it exam style.</b> There ' + (n === 1 ? "is 1 true/false stem" : "are " + n + " true/false stems") + ' on ' + (names.length > 2 ? "these topics" : esc(names.join(" and "))) + '.</p>' +
+      '<div class="row"><button class="btn primary" data-act="totf">Try true/false on this</button></div></section>';
+  }
+
   function resultsView() {
     var items = P.run.items, n = items.length;
     var right = items.filter(function (x) { return x.pick === x.q.answer; });
@@ -190,6 +201,7 @@
       '<section class="section"><p class="label">By section</p><div class="bars">' + bars + '</div></section>' +
       '<section class="row">' + (missed.length ? '<button class="btn primary" data-act="retry">Retry the ' + missed.length + ' missed</button>' : "") +
       '<button class="btn" data-act="again">Same set, new order</button><button class="btn ghost" data-act="topics">Choose another topic</button></section>' +
+      tfOffer(items) +
       '<section class="section"><div class="row" style="align-items:center"><h2 style="flex:2 1 200px">' + (P.showAll ? "All answers" : "Questions to review") + '</h2><button class="btn ghost" data-act="toggle">' + (P.showAll ? "Show missed only" : "Show all answers") + '</button></div><div class="rev">' + rev + '</div></section></div>';
   }
 
@@ -288,6 +300,10 @@
     else if (a === "quit" || a === "topics") { P.run = null; P.view = "pick"; render(); window.scrollTo(0, 0); }
     else if (a === "toggle") { P.showAll = !P.showAll; var y = window.scrollY; render(); window.scrollTo(0, y); }
     else if (a === "retry") { startRun(P.run.items.filter(function (x) { return x.pick !== x.q.answer; }).map(function (x) { return x.q; })); render(); window.scrollTo(0, 0); }
+    else if (a === "totf") {
+      var seen = {}; P.run.items.forEach(function (x) { seen[x.q.topic] = 1; });
+      DX.tfPreselect = Object.keys(seen); location.hash = "#truefalse";
+    }
     else if (a === "again") { startRun(P.run.items.map(function (x) { return x.q; })); render(); window.scrollTo(0, 0); }
   }
   function onKey(e) {
