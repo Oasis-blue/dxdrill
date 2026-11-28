@@ -133,8 +133,8 @@ The account dashboard includes a 14-day activity trend, daily practice totals, a
 
 ## Study reminders (Web Push)
 
-The opt-in study reminder system is being introduced in stages. The database foundation is in `supabase/update-24.sql`; run it in **Supabase → SQL Editor → New query** when instructed. It stores account-level schedules, per-device push subscriptions and a server-managed delivery log. Reminders are off by default.
+The opt-in study reminder system is being introduced in stages. The database foundation is in `supabase/update-24.sql`; the scheduled invocation is in `supabase/update-25.sql`. The Account page has schedule and opt-in controls. Reminders remain inactive until the Edge Function and its secrets are configured in Supabase. Reminders are off by default.
 
-The service worker can now display a visible push notification and open the relevant DxDrill page when tapped. This alone does **not** mean reminders are live: browser subscription controls, secure server-side Web Push delivery, scheduled sending and real-device delivery tests still need to be completed. Do not add VAPID private keys or the Supabase service-role key to this repository.
+The service worker can display a visible push notification and open the relevant DxDrill page when tapped. The authenticated subscription endpoint and scheduled sender are in `supabase/functions/study-reminders/index.ts`; deploy it from the Supabase Dashboard and follow the secret setup in the implementation notes. The feature is not live until the Dashboard configuration and real-device delivery test are complete. Never add VAPID private keys or the Supabase service-role key to this repository.
 
 See [the study reminder implementation notes](docs/STUDY_REMINDERS.md) for the rollout plan and platform requirements. On iPhone/iPad, Web Push requires DxDrill to be installed on the Home Screen on iOS/iPadOS 16.4 or later.
