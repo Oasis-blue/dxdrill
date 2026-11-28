@@ -21,7 +21,7 @@
     d.preset = c.preset || "custom";
     return d;
   }
-  var E = { run: null, timer: null, lastSecond: -1, config: null };
+  var E = { run: null, timer: null, lastSecond: -1, config: null, openSubjects: [] };
   function fmt(seconds) {
     seconds = Math.max(0, Math.floor(seconds));
     var h = Math.floor(seconds / 3600), m = Math.floor((seconds % 3600) / 60), s = seconds % 60;
@@ -56,13 +56,15 @@
       items.push({ q: q, order: x.order.slice(), pick: x.pick == null ? null : x.pick, flagged: !!x.flagged });
     }
     var cfg = saved.config || defaultConfig();
+    if (!cfg.label) cfg.label = scopeLabel(cfg);
+    if (!cfg.distribution) cfg.distribution = "balanced";
     E.run = { items: items, index: Math.max(0, Math.min(items.length - 1, Number(saved.index) || 0)),
       startedAt: Number(saved.startedAt) || Date.now(), deadline: Number(saved.deadline) || Date.now(), config: cfg, done: false, resumed: true };
     return true;
   }
   function selectedPool(cfg) {
-    var subjects = cfg.subjects || [], topics = cfg.topics || [];
-    return Object.keys(byId()).map(function (id) { return byId()[id]; }).filter(function (q) {
+    var subjects = cfg.subjects || [], topics = cfg.topics || [], map = byId();
+    return Object.keys(map).map(function (id) { return map[id]; }).filter(function (q) {
       return subjects.indexOf(q.subject) > -1 && (!topics.length || topics.indexOf(q.topic) > -1);
     });
   }
@@ -143,6 +145,10 @@
     E.config.preset = "custom"; saveConfig(); render();
   }
   function toggleTopic(id) {
+    var holder = app && app.querySelector(".exam-topic[data-topic=\"" + id + "\"]");
+    var details = holder && holder.closest(".exam-topic-details");
+    var openId = details && details.getAttribute("data-subject");
+    if (openId && E.openSubjects.indexOf(openId) < 0) E.openSubjects.push(openId);
     var a = E.config.topics.slice(), i = a.indexOf(id);
     if (i > -1) a.splice(i, 1); else a.push(id);
     E.config.topics = a; E.config.preset = "custom"; saveConfig(); render();
@@ -166,7 +172,7 @@
       }).join("");
       return '<div class="exam-subject-block"><button type="button" class="exam-subject' + (chosen ? ' selected' : '') + '" data-exam="subject" data-subject="' + esc(s.id) + '" aria-pressed="' + chosen + '">' +
         '<span><b>' + esc(s.name) + '</b><small>' + n + ' MCQs</small></span><span class="exam-check">' + (chosen ? '✓' : '+') + '</span></button>' +
-        (chosen ? '<details class="exam-topic-details"><summary>Choose topics in ' + esc(s.name) + '</summary>' + topicButtons + '</details>' : '') + '</div>';
+        (chosen ? '<details class="exam-topic-details" data-subject="' + esc(s.id) + '"' + (E.openSubjects.indexOf(s.id) > -1 ? ' open' : '') + '><summary>Choose topics in ' + esc(s.name) + '</summary>' + topicButtons + '</details>' : '') + '</div>';
     }).join("");
     var presets = Object.keys(PRESETS).map(function (id) {
       return '<button type="button" class="exam-preset' + (cfg.preset === id ? ' active' : '') + '" data-exam="preset" data-preset="' + id + '">' +
