@@ -470,3 +470,16 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 /* True/False stem hierarchy and compact analytics labels. */
 .tfstemtitle{font-size:clamp(1.25rem,4.5vw,1.55rem);font-weight:700;line-height:1.3;letter-spacing:-.02em;margin:12px 0 2px}
 .tfstemmeta{margin:0 0 4px}
+
+/* Custom practice refinement: progressive disclosure keeps long curricula compact. */
+.custom-subject>summary,.custom-area>summary{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.custom-subject>summary>span,.custom-area>summary>span{min-width:0}
+.custom-subject>summary>small,.custom-area>summary>small{flex:none;max-width:58%;text-align:right;line-height:1.35;color:var(--muted);font-family:var(--font-body,system-ui,sans-serif);font-size:12px;font-weight:500}
+.custom-subject[open]>summary{border-bottom:1px solid var(--line)}
+.custom-area[open]>summary{border-bottom:1px solid var(--line)}
+.custom-subject .subjbody{padding-top:12px}
+.custom-area .topics{padding:10px 0 4px}
+@media(max-width:520px){
+  .custom-subject>summary,.custom-area>summary{align-items:flex-start}
+  .custom-subject>summary>small,.custom-area>summary>small{max-width:48%;font-size:11px}
+}
