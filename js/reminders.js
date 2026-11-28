@@ -10,7 +10,7 @@
   }
   function normalizeTime(value) {
     if (typeof value !== "string") return "19:00";
-    var match = value.match(/^([01]\\d|2[0-3]):([0-5]\\d)(?::[0-5]\\d(?:\\.\\d+)?)?$/);
+    var match = value.match(/^([01]\d|2[0-3]):([0-5]\d)(?::[0-5]\d(?:\.\d+)?)?$/);
     return match ? match[1] + ":" + match[2] : "19:00";
   }
   function defaults() {
