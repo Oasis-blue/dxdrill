@@ -111,6 +111,7 @@ details.acc[open] summary{border-bottom:1px solid var(--line)}
   padding:11px 12px; min-height:48px; background:var(--bg); border:1.5px solid var(--line); border-radius:8px; width:100%;
 }
 .topic small{color:var(--muted); white-space:nowrap; font-size:13px}
+.topic[aria-pressed="true"]{border-color:var(--accent); background:color-mix(in srgb, var(--accent) 10%, var(--surface))}
 .topic.empty{opacity:.55; cursor:default}
 .chips{display:flex; gap:8px; flex-wrap:wrap}
 .chip{font-size:12px; font-weight:600; padding:3px 10px; border-radius:99px; border:1px solid var(--line); color:var(--muted); background:var(--surface)}
