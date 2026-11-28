@@ -28,6 +28,7 @@
       '</section>' +
       '<section class="section"><h2>Curriculum coverage</h2><p class="muted">' + (DX.loadingQuestions ? 'Loading question coverage…' : doneTopics + ' of ' + totalTopics + ' MDCN topics have questions so far. The rest are waiting to be filled as you study.') + '</p><div class="cov">' + cov + '</div></section>' +
       '</div>';
+    if (DX.mountStreakPanel) DX.mountStreakPanel();
     homeExtras();
     if (DX.cloud && DX.cloud.user && DX.reminders) DX.reminders.load();
   }
