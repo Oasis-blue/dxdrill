@@ -283,6 +283,7 @@
     if (DX.partial && DX.toast) DX.toast("You can keep exploring while we finish.", "loading");
     DX.onMore = function () {
       if (DX.toast) DX.toast("All questions have loaded successfully.", "success");
+      if (DX.refreshStreakPanel) DX.refreshStreakPanel();
       var h = (location.hash || "#home").slice(1);
       if (h === "home" || h === "") route();
       else if (DATA_PAGES[h]) route();
