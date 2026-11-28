@@ -401,9 +401,9 @@ body.bigscreen #backbar{display:none!important}
 .streakchip small{flex:none;color:var(--muted);font-size:12px;white-space:nowrap}
 .streakchip .sk-ico{flex:none;font-size:17px;line-height:1}
 @media(max-width:420px){.streakchip{gap:7px;padding:8px 10px;font-size:13px}.streakchip small{font-size:11px}}
-.dxtoast-region{position:fixed;z-index:10000;left:0;right:0;bottom:max(14px,env(safe-area-inset-bottom));display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding:0 12px;box-sizing:border-box;background:transparent;border:0;pointer-events:none}
+.dxtoast-region{position:fixed;z-index:10000;left:0;right:0;bottom:max(76px,calc(env(safe-area-inset-bottom) + 64px));display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding:0 12px;box-sizing:border-box;background:transparent;border:0;pointer-events:none}
 .dxtoast-region:empty{display:none}
-.dxtoast{position:relative;max-width:min(92vw,380px);margin:0 auto;padding:10px 16px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:600;font-size:15px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.16);pointer-events:none;animation:dxt-in .3s ease both}
+.dxtoast{position:relative;width:fit-content;max-width:min(88vw,340px);max-height:112px;overflow:hidden;margin:0 auto;padding:10px 14px;border-radius:14px;background:var(--fg);color:var(--bg);font-weight:600;font-size:13px;line-height:1.4;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.16);pointer-events:none;animation:dxt-in .3s ease both;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4}
 .dxtoast.out{opacity:0;transition:opacity .35s ease}
 .dxtoast--loading,.dxtoast--success{display:flex;align-items:center;gap:11px;max-width:min(92vw,400px);padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--fg);text-align:left}
 .dxtoast__icon{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:color-mix(in srgb,var(--accent) 13%,var(--surface));color:var(--accent);font-size:19px;font-weight:800;line-height:1}
