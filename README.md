@@ -90,11 +90,11 @@ The project URL and publishable key are in `js/cloud.js`. The publishable key is
 
 Points are different MCQ questions answered correctly plus distinct True/False stems fully answered with at least 60% correct. Repeats do not add points. True/False activity syncs when a student is signed in; offline attempts stay queued on the device until they can sync. Scores are sent from the browser, so a determined student could fake them. That is fine for practice leaderboards, but competitions will need server-side marking.
 
-The account page also shows combined personal MCQ and True/False progress, topic-level performance, weak-topic flags (after at least three responses in a format), and recent synced practice. Existing MCQ answer history is grouped by topic using the current question-bank topic map. After update 20, run `supabase/update-21.sql` to enable this dashboard; fresh installations can use `supabase/setup.sql`.
+The account page shows combined personal MCQ and True/False progress, strongest topics and topics needing attention (at least five combined responses, with weak topics below 70%), recent synced practice, and 14-day activity and topic trends. Existing MCQ answer history is grouped by topic using the current question-bank topic map. Run `supabase/update-21.sql` to enable the progress dashboard and `supabase/update-23.sql` for 14-day analytics; fresh installations can use `supabase/setup.sql`.
 
 ## What is in the app
 
-- **Practice:** study mode (explains each answer) and exam mode (marks at the end). Practice history stays on the device.
+- **Practice:** study mode (explains each answer) and exam mode (marks at the end), topic and custom scopes, mistake review, priority revision from missed questions and weak topics, and local recovery of unfinished sessions. Practice history stays on the device.
 - **Flashcards**, with spaced repetition and a Stop session button.
 - **Hall mode:** one screen, a quizmaster and teams. Rounds: rapid fire, question board, everyone answers, describe it (all teams at once, earlier guess scores more) and explain it (team by team, with forbidden words). It includes an answer key for the quizmaster.
 - **Quizmaster phone (optional):** in Hall mode, tap **Link a phone**. The shared screen then shows only questions, and the phone (`#remote`, no sign-in needed) shows answers and the Got it / Missed buttons. It needs internet on both devices and is controlled by a short code. Without it, Hall mode works offline as before.
@@ -117,7 +117,7 @@ The account page also shows combined personal MCQ and True/False progress, topic
 - It has not been tested with a large crowd yet, and rooms update by polling every couple of seconds, so there is a small lag.
 - Questions are generated with AI and unverified until marked.
 
-Ideas for later: streaks, histology picture questions, viva and clerking practice, a custom domain.
+Ideas for later: histology picture questions, viva and clerking practice, a custom domain.
 
 
 ## Reliability and admin audit
@@ -130,6 +130,9 @@ Signed-in learners can review MCQs previously answered incorrectly. The list syn
 
 ## Personal learning analytics
 The account dashboard includes a 14-day activity trend, daily practice totals, activity in the last 7 days, active days, and topic accuracy comparisons between the latest and preceding 14-day periods. Trends require recorded activity in both periods. Existing databases should run `supabase/update-23.sql` after update-22; fresh installs use `supabase/setup.sql`.
+
+## Streaks, priority revision and achievements
+The Home page includes a Lagos-calendar study streak, a browsable qualifying-day calendar and streak milestones. A day qualifies after five completed practice questions. Signed-in streak days sync to the account. The Practice picker offers mistake review and priority revision; priority revision combines previously missed MCQs with questions from synced topics below 70% after at least five combined MCQ and True/False responses. Student achievements are calculated from MCQ history saved on the current device and the personal-best streak; they are not yet account-wide. The share card shares a PNG where file sharing is supported, otherwise it shares or copies a text summary.
 
 ## Study reminders (Web Push)
 
