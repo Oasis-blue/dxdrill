@@ -50,6 +50,7 @@
       timezone: zone ? zone.value.trim() : p.timezone, days_of_week: days, reminder_type: "daily_practice" };
     if (!row.local_time || !/^([01]\d|2[0-3]):[0-5]\d$/.test(row.local_time)) return Promise.reject(new Error("Choose a valid reminder time."));
     if (!row.timezone || row.timezone.length > 80) return Promise.reject(new Error("Enter a valid time zone."));
+    try { new Intl.DateTimeFormat("en", { timeZone: row.timezone }).format(new Date()); } catch (e) { return Promise.reject(new Error("Use a valid IANA time zone, such as Africa/Lagos.")); }
     return sb.from("study_reminder_preferences").upsert(row, { onConflict: "user_id" }).then(function (res) {
       if (res.error) throw res.error;
       R.prefs = row; R.error = ""; return row;
@@ -99,7 +100,7 @@
     }).then(function (sub) {
       var remove = sub ? sub.endpoint : null;
       return (sub ? sub.unsubscribe() : Promise.resolve()).then(function () {
-        return remove ? sb.from("study_push_subscriptions").delete().eq("endpoint", remove) : null;
+        return sb.from("study_push_subscriptions").delete().eq("user_id", DX.cloud.user.id);
       });
     }).then(function () {
       R.subscription = false; R.busy = false;
@@ -123,7 +124,7 @@
       '<div class="field"><label class="label" for="rem-zone">Time zone (IANA)</label><input id="rem-zone" type="text" maxlength="80" value="' + DX.esc(p.timezone) + '" placeholder="Africa/Lagos"></div>' +
       '<div class="field"><span class="label">Days</span><div class="rem-days">' + checks + '</div></div>' +
       '<div class="row tight"><button class="btn small" data-act="remsave"' + (R.busy ? " disabled" : "") + '>Save schedule</button>' +
-      (R.subscription ? '<button class="btn small ghost" data-act="remoff"' + (R.busy ? " disabled" : "") + '>Turn off on this device</button>' : '<button class="btn small primary" data-act="remon"' + (R.busy ? " disabled" : "") + '>Enable notifications on this device</button>') + '</div>' +
+      (R.subscription ? '<button class="btn small ghost" data-act="remoff"' + (R.busy ? " disabled" : "") + '>Turn off reminders</button>' : '<button class="btn small primary" data-act="remon"' + (R.busy ? " disabled" : "") + '>Enable notifications on this device</button>') + '</div>' +
       '<p class="hint">Your browser will ask permission only when you press Enable. On iPhone/iPad, add DxDrill to your Home Screen first. Push delivery also depends on your browser and device notification settings.</p></section>';
   };
 })();
