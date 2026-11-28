@@ -13,8 +13,12 @@
     if (sc.kind === "area") return qs.filter(function (q) { return q.area === sc.id; });
     if (sc.kind === "topic") return qs.filter(function (q) { return q.topic === sc.id; });
     if (sc.kind === "missed") {
-      var st = DX.stats(), remote = DX.remoteMissedIds || {};
-      return qs.filter(function (q) { return (st[q.id] && st[q.id].last === 0) || remote[String(q.id)]; });
+      var st = DX.stats(), remote = DX.remoteMissedIds || {}, state = DX.remoteReviewState || {};
+      return qs.filter(function (q) {
+        var id = String(q.id);
+        if (Object.prototype.hasOwnProperty.call(state, id)) return state[id];
+        return !!(st[q.id] && st[q.id].last === 0) || !!remote[id];
+      });
     }
     return [];
   }
