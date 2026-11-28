@@ -48,7 +48,7 @@
     var h = '<div class="wrap stack"><a class="backtop" href="#home">\u2190 Home</a><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
       '<p class="lede">' + total + (DX.loadingQuestions ? ' questions loaded so far. More are arriving in the background.' : ' questions.') + ' Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p>' + (DX.tfStems && DX.tfStems.length ? '<p class="hint">Exam in true/false style? <a href="#truefalse">Practise ' + DX.tfStems.length + ' exam-style stems</a>.</p>' : '') + '</header>' +
       '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button><button class="btn" data-act="custom">Choose multiple subjects</button>' +
-      (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review what I missed · ' + missed + '</button>' : '') + '</section>' +
+      (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review mistakes · ' + missed + '</button>' : '') + '</section>' +
       '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
     DX.curriculum.subjects.forEach(function (s) {
       var sc = DX.subjectCount(s.id);
