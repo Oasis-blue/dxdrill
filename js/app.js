@@ -95,7 +95,7 @@
       }).join("") + '</section>' + (DX.cloud && DX.cloud.profile && DX.cloud.profile.is_admin ? '<p><a href="#features">Features and visitors: choose what students see, and check who is using DxDrill</a></p>' : "") + '</div>';
   }
   var GATE = { cards: "cards", competitions: "competitions", live: "live", debates: "debates", polls: "polls" };
-  var DATA_PAGES = { practice: 1, hall: 1, cards: 1, spotter: 1, truefalse: 1 };
+  var DATA_PAGES = { practice: 1, exam: 1, hall: 1, cards: 1, spotter: 1, truefalse: 1 };
   function navVisibility() {
     var F = DX.features, polls = document.querySelector('[data-nav="polls"]'), play = document.querySelector('[data-nav="play"]');
     if (polls) polls.hidden = !F.on("polls");
@@ -105,6 +105,7 @@
     home: { render: home },
     play: { render: playHub },
     practice: DX.practice,
+    exam: DX.exam,
     hall: DX.hall,
     board: DX.board,
     polls: DX.polls,
@@ -124,7 +125,7 @@
   };
 
   /* A small "back" link above pages that sit one level down. It lives outside #app, so live pages that repaint do not remove it. */
-  var BACK = { truefalse: ["#play", "Play"], spotter: ["#play", "Play"], cards: ["#play", "Play"], competitions: ["#play", "Play"], live: ["#play", "Play"], debates: ["#play", "Play"], polls: ["#home", "Home"], board: ["#home", "Home"], account: ["#home", "Home"] };
+  var BACK = { exam: ["#home", "Home"], truefalse: ["#play", "Play"], spotter: ["#play", "Play"], cards: ["#play", "Play"], competitions: ["#play", "Play"], live: ["#play", "Play"], debates: ["#play", "Play"], polls: ["#home", "Home"], board: ["#home", "Home"], account: ["#home", "Home"] };
   function backBar(h) {
     var bar = document.getElementById("backbar"), a = document.getElementById("backlink"), b = BACK[h];
     if (!bar || !a) return;
@@ -265,7 +266,7 @@
   setTimeout(function () { if (!loaded) retryBox("Still loading…", "Your connection looks slow. Wait a little longer, or tap Try again. Nothing has been lost: your scores are saved on this phone."); }, 9000);
   DX.onQuestionsReady = function () {
     var h = (location.hash || "#home").slice(1);
-    if (h === "practice") route();
+    if (h === "practice" || h === "exam") route();
   };
   DX.onQuestionsProgress = function () {
     var h = (location.hash || "#home").slice(1);
