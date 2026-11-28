@@ -158,6 +158,7 @@
     var countOptions = [5, 10, 20, 30, 40, 60].filter(function (n) { return n <= max; }).map(function (n) {
       return '<option value="' + n + '"' + (String(cfg.count) === String(n) ? ' selected' : '') + '>' + n + ' questions</option>';
     }).join("");
+    if (max > 0 && cfg.count !== "all" && Number(cfg.count) > max) countOptions = '<option value="' + Number(cfg.count) + '" selected>' + Number(cfg.count) + ' requested · uses all ' + max + ' available</option>' + countOptions;
     countOptions += '<option value="all"' + (cfg.count === "all" ? ' selected' : '') + '>All available · ' + max + '</option>';
     var subjectHtml = subjects.map(function (s) {
       var n = DX.subjectCount(s.id) || 0, chosen = cfg.subjects.indexOf(s.id) > -1;
