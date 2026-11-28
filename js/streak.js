@@ -46,7 +46,7 @@
     var s = load(), info = DX.streakInfo(), y = streakMonth.getUTCFullYear(), m = streakMonth.getUTCMonth();
     var first = new Date(Date.UTC(y, m, 1)).getUTCDay(), total = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
     var todayKey = today(), qualified = Object.create(null);
-    s.days.forEach(function (d) { if (/^\\d{4}-\\d{2}-\\d{2}$/.test(d)) qualified[d] = true; });
+    s.days.forEach(function (d) { if (/^\d{4}-\d{2}-\d{2}$/.test(d)) qualified[d] = true; });
     var cells = "";
     for (var blank = 0; blank < first; blank++) cells += '<span class="sk-day empty" aria-hidden="true"></span>';
     for (var day = 1; day <= total; day++) {
