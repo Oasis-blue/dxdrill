@@ -1,6 +1,6 @@
 /* True/False stems, exam style: a stem with 4 or 5 statements. Mark each True or False (or leave it blank to skip).
    Exam marking: +1 right, -1 wrong, 0 skipped. Practice marking: no penalty.
-   Scores and history stay on this device (they are not sent to leaderboards). */
+   Scores and detailed history stay on this device; signed-in stem results sync separately for activity and leaderboards. */
 (function () {
   var DX = window.DX, esc = DX.esc, app = null;
   var RUNKEY = "dx.tf.run", SKEY = "dx.tfstats";
@@ -116,7 +116,7 @@
       mode: T.mode, i: 0, done: false, startedAt: Date.now(), timed: !!T.timed, durationMs: T.timed ? T.minutes * 60000 : 0, deadline: T.timed ? Date.now() + T.minutes * 60000 : 0,
       items: picked.map(function (s) {
         var order = DX.shuffle(s.items.map(function (x, i) { return i; }));
-        return { id: s.id, order: order, ans: {}, checked: false };
+        return { id: s.id, attemptId: Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12), order: order, ans: {}, checked: false };
       })
     };
     T.view = "run"; saveRun(); startTimer(); paint(); window.scrollTo(0, 0);
@@ -148,15 +148,19 @@
 
   function check() {
     var r = T.run, it = r.items[r.i], stem = stemById(it.id); if (!stem || it.checked) return;
-    var st = stats(), net = 0, answered = 0;
+    var st = stats(), net = 0, answered = 0, correct = 0;
     stem.items.forEach(function (x, i) {
       var p = it.ans[i] || ""; if (!p) return;
       var ok = (p === "t") === x.answer, s = st[sid(stem, i)] || { n: 0, c: 0, last: 0 };
-      s.n++; if (ok) s.c++; s.last = ok ? 1 : 0; st[sid(stem, i)] = s; answered++;
+      s.n++; if (ok) { s.c++; correct++; } s.last = ok ? 1 : 0; st[sid(stem, i)] = s; answered++;
       net += ok ? 1 : (r.mode === "exam" ? -1 : 0);
     });
     DX.store.set(SKEY, st);
     it.checked = true; saveRun();
+    if (DX.cloud && DX.cloud.submitTF && answered) DX.cloud.submitTF({
+      attempt_id: it.attemptId, stem_id: stem.id, topic_id: stem.topic,
+      answered_count: answered, correct_count: correct, total_count: stem.items.length
+    });
     if (DX.fx && answered) { DX.fx.play(net > 0 ? "ok" : "bad"); }
     if (DX.streakTick && answered) DX.streakTick(answered);
     paint(); window.scrollTo(0, 0);
