@@ -44,26 +44,55 @@
       C.profile = r.data || null;
     });
   }
+  function learningTopicMap() {
+    var map = {};
+    (DX.questions || []).forEach(function (q) {
+      if (!q || !q.id || !q.topic) return;
+      if (!map[q.topic]) map[q.topic] = [];
+      map[q.topic].push(String(q.id));
+    });
+    return map;
+  }
   function loadMyTFStats() {
     var S = C.tfStats;
     if (!C.ok || !C.user || S.loading || S.loaded) return;
     S.loading = true;
-    C.sb.rpc("my_tf_activity").then(function (r) {
+    C.sb.rpc("my_learning_progress", { p_map: learningTopicMap() }).then(function (r) {
       S.loading = false; S.loaded = true;
-      if (r.error) { S.error = "Could not load synced True/False activity. Check that update-20.sql has been run."; }
-      else { S.data = (r.data || [])[0] || null; }
+      if (r.error) { S.error = "Could not load your synced learning progress. Check that supabase/update-21.sql has been run."; }
+      else { S.data = r.data || null; }
       repaint();
     }).catch(function () { S.loading = false; S.loaded = true; S.error = "Could not reach the server."; repaint(); });
   }
-  function tfStatsHtml() {
-    var S = C.tfStats, d = S.data || {};
-    if (!S.loaded || S.loading) return '<section class="section stack"><h2>True/False progress</h2><p class="muted">Loading synced activity…</p></section>';
-    if (S.error) return '<section class="section stack"><h2>True/False progress</h2><p class="hint">' + esc(S.error) + '</p></section>';
-    return '<section class="section stack"><h2>True/False progress</h2><p class="hint">Synced activity from this account. Detailed statement-by-statement revision remains available in True/False practice.</p>' +
-      '<div class="statrow"><div class="stat"><b>' + (d.stems_attempted || 0) + '</b><span>stems attempted</span></div>' +
-      '<div class="stat"><b>' + (d.stems_completed || 0) + '</b><span>fully answered</span></div>' +
-      '<div class="stat"><b>' + (d.statements || 0) + '</b><span>statements answered</span></div>' +
-      '<div class="stat"><b>' + (d.accuracy == null ? "—" : d.accuracy + "%") + '</b><span>accuracy</span></div></div></section>';
+  function progressHtml() {
+    var S = C.tfStats, d = S.data || {}, topics = d.topics || [], recent = d.recent || [];
+    if (!S.loaded || S.loading) return '<section class="section stack"><h2>Your learning progress</h2><p class="muted">Loading your synced MCQ and True/False activity…</p></section>';
+    if (S.error) return '<section class="section stack"><h2>Your learning progress</h2><p class="hint">' + esc(S.error) + '</p></section>';
+    var pct = function (v) { return v == null ? "—" : Number(v) + "%"; };
+    var weak = topics.filter(function (t) { return Number(t.mcq_attempts || 0) + Number(t.tf_statements || 0) >= 3 && ((t.mcq_accuracy != null && Number(t.mcq_attempts || 0) >= 3 && Number(t.mcq_accuracy) < 70) || (t.tf_accuracy != null && Number(t.tf_statements || 0) >= 3 && Number(t.tf_accuracy) < 70)); });
+    var topicRows = topics.slice().sort(function (a, b) {
+      var aa = Number(a.mcq_attempts || 0) + Number(a.tf_statements || 0), bb = Number(b.mcq_attempts || 0) + Number(b.tf_statements || 0);
+      return bb - aa;
+    }).map(function (t) {
+      var name = DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic;
+      return '<div class="rep-item"><b>' + esc(name) + '</b><p class="hint">MCQ: ' + (t.mcq_attempts || 0) + ' attempts · ' + (t.mcq_correct || 0) + ' correct · ' + pct(t.mcq_accuracy) +
+        ' &nbsp;|&nbsp; T/F: ' + (t.tf_stems || 0) + ' stems · ' + (t.tf_statements || 0) + ' statements · ' + pct(t.tf_accuracy) + '</p></div>';
+    }).join("");
+    var recentRows = recent.map(function (x) {
+      var name = DX.topicById[x.topic] ? DX.topicById[x.topic].name : x.topic;
+      var date = x.created_at ? new Date(x.created_at).toLocaleString() : "";
+      return '<div class="rep-item"><b>' + (x.kind === "mcq" ? "MCQ" : "True/False") + '</b> · ' + esc(name || "Topic") +
+        '<p class="hint">' + (x.kind === "mcq" ? esc(x.item_id) : "Stem " + esc(x.item_id)) + ' · ' + (x.correct || 0) + '/' + (x.answered || 0) + ' correct · ' + esc(date) + '</p></div>';
+    }).join("");
+    return '<section class="section stack"><h2>Your learning progress</h2><p class="hint">Synced to your account. MCQ attempts include repeat practice; leaderboard points still count each distinct correctly answered question only.</p>' +
+      '<h3>Overall</h3><div class="statrow"><div class="stat"><b>' + (d.overall_attempts || 0) + '</b><span>responses</span></div>' +
+      '<div class="stat"><b>' + (d.overall_correct || 0) + '</b><span>correct</span></div><div class="stat"><b>' + pct(d.overall_accuracy) + '</b><span>accuracy</span></div>' +
+      '<div class="stat"><b>' + (d.mcq_questions || 0) + '</b><span>distinct MCQs</span></div></div>' +
+      '<h3>MCQ</h3><p class="hint">' + (d.mcq_attempts || 0) + ' responses · ' + (d.mcq_correct || 0) + ' correct · ' + pct(d.mcq_accuracy) + ' accuracy</p>' +
+      '<h3>True/False</h3><p class="hint">' + (d.tf_stems_attempted || 0) + ' stem attempts · ' + (d.tf_stems_completed || 0) + ' fully completed · ' + (d.tf_statements || 0) + ' statements · ' + pct(d.tf_accuracy) + ' accuracy</p>' +
+      '<h3>Topic performance</h3>' + (topicRows || '<p class="muted">No synced topic activity yet. Complete a signed-in practice session to begin.</p>') +
+      '<h3>Topics to revisit</h3>' + (weak.length ? weak.map(function (t) { return '<p class="hint">• ' + esc(DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic) + ' — below 70% in a format with at least 3 responses</p>'; }).join("") : '<p class="muted">No topic has enough low-scoring activity to flag yet.</p>') +
+      '<h3>Recent practice</h3>' + (recentRows || '<p class="muted">No recent synced activity.</p>') + '</section>';
   }
   function loadClasses() {
     return C.sb.from("classes").select("id,name,level").then(function (r) {
@@ -308,7 +337,7 @@
     return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + esc(p.display_name || "Your account") + '</h1><p class="lede">' + esc(C.user.email || "") + (p.is_admin ? " · admin" : "") + '</p></header>' + note +
       '<section class="section stack"><div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" value="' + esc(p.display_name) + '"></div>' +
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
-      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + tfStatsHtml() + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
+      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + progressHtml() + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
   }
   /* What the person has typed on the account form is remembered, so an error message does not wipe their fields. Passwords stay in memory only. */
   var F = {}, FIELDS = ["ac-name", "ac-class", "ac-email", "ac-pw", "ac-pw2"];
