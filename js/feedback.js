@@ -53,7 +53,13 @@
     } else if (a === "again") { K.sent = false; repaint(); }
     else if (a === "del") { K.confirm = id; repaint(); }
     else if (a === "delno") { K.confirm = 0; repaint(); }
-    else if (a === "delyes") { K.confirm = 0; C().sb.rpc("admin_delete_feedback", { p_id: id }).then(function () { K.list = null; repaint(); }); }
+    else if (a === "delyes") {
+      K.confirm = 0; K.err = "";
+      C().sb.rpc("admin_delete_feedback", { p_id: id }).then(function (r) {
+        if (r.error) throw r.error;
+        K.list = null; repaint();
+      }).catch(function (e) { K.err = fail(e); repaint(); });
+    }
   }
 })();
 
