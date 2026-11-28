@@ -19,6 +19,18 @@ function localParts(date: Date, zone: string) {
   const weekdays: Record<string, number> = { Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6, Sun: 7 };
   return { date: out.year + "-" + out.month + "-" + out.day, time: out.hour + ":" + out.minute, day: weekdays[out.weekday] };
 }
+function withinScheduleWindow(now: string, scheduled: string) {
+  const [nh, nm] = now.split(":").map(Number);
+  const [sh, sm] = scheduled.slice(0, 5).split(":").map(Number);
+  const delta = (nh * 60 + nm) - (sh * 60 + sm);
+  return delta >= 0 && delta < 5;
+}
+function sameSecret(a: string, b: string) {
+  if (!a || a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
 function inQuiet(now: string, start: string | null, end: string | null) {
   if (!start || !end) return false;
   const n = now.slice(0, 5), a = start.slice(0, 5), b = end.slice(0, 5);
@@ -42,7 +54,7 @@ async function sendDueReminders() {
     let local;
     try { local = localParts(now, pref.timezone); } catch { failed++; continue; }
     checked++;
-    if (local.time !== String(pref.local_time).slice(0, 5)) continue;
+    if (!withinScheduleWindow(local.time, String(pref.local_time))) continue;
     if (!(pref.days_of_week || []).includes(local.day)) continue;
     if (inQuiet(local.time, pref.quiet_start, pref.quiet_end)) continue;
     const { data: inserted, error: insertError } = await db.from("study_reminder_deliveries")
@@ -91,7 +103,7 @@ Deno.serve(async (req: Request) => {
     if (body?.action === "run") {
       const expected = Deno.env.get("REMINDER_CRON_SECRET") || "";
       const supplied = req.headers.get("x-reminder-secret") || "";
-      if (!expected || supplied !== expected) return reply({ error: "Unauthorized scheduler" }, 401);
+      if (!sameSecret(supplied, expected)) return reply({ error: "Unauthorized scheduler" }, 401);
       return await sendDueReminders();
     }
     if (body?.action !== "subscribe" || !body.subscription) return reply({ error: "Unsupported action" }, 400);
