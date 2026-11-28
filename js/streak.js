@@ -31,8 +31,57 @@
     if (i.doneToday) line = "<b>" + i.count + "-day streak</b> · done for today";
     else if (i.count > 0) line = "<b>" + i.count + "-day streak</b> · " + i.left + " " + (i.left === 1 ? "question" : "questions") + " left today";
     else line = i.any ? "Streak ended · " + i.left + (i.left === 1 ? " question" : " questions") + " to restart" : "Answer " + DAY_MIN + " questions today to start a streak";
-    return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span class="sk-main">' + line + '</span><small>Best ' + (i.best || 0) + '</small></div>';
+    return '<div class="streakchip' + (i.count > 0 ? " on" : "") + '" id="streakchip"><span class="sk-ico" aria-hidden="true">' + (i.count > 0 ? "🔥" : "○") + '</span><span class="sk-main">' + line + '</span><small>Best ' + (i.best || 0) + '</small></div><section class="sk-panel" id="streak-calendar" aria-label="Study streak calendar and milestones"></section>';
   };
+
+  /* Home streak experience: a browsable Lagos-calendar month and lifetime milestones. */
+  var streakMonth = new Date(Date.now() + 3600000);
+  streakMonth = new Date(Date.UTC(streakMonth.getUTCFullYear(), streakMonth.getUTCMonth(), 1));
+  var STREAK_MILESTONES = [3, 7, 14, 30, 60, 100];
+  function dateKey(y, m, d) { return new Date(Date.UTC(y, m, d, 12)).toISOString().slice(0, 10); }
+  function monthLabel(y, m) { return new Date(Date.UTC(y, m, 1, 12)).toLocaleDateString("en", { month: "long", year: "numeric", timeZone: "UTC" }); }
+  function renderStreakCalendar() {
+    var root = document.getElementById("streak-calendar");
+    if (!root) return;
+    var s = load(), info = DX.streakInfo(), y = streakMonth.getUTCFullYear(), m = streakMonth.getUTCMonth();
+    var first = new Date(Date.UTC(y, m, 1)).getUTCDay(), total = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+    var todayKey = today(), qualified = Object.create(null);
+    s.days.forEach(function (d) { if (/^\\d{4}-\\d{2}-\\d{2}$/.test(d)) qualified[d] = true; });
+    var cells = "";
+    for (var blank = 0; blank < first; blank++) cells += '<span class="sk-day empty" aria-hidden="true"></span>';
+    for (var day = 1; day <= total; day++) {
+      var key = dateKey(y, m, day), future = key > todayKey, done = !!qualified[key];
+      cells += '<span class="sk-day' + (done ? ' qualified' : '') + (key === todayKey ? ' today' : '') + (future ? ' future' : '') + '"' +
+        (done ? ' aria-label="' + key + ', qualifying study day"' : ' aria-label="' + key + (future ? ', future' : '') + '"') + '>' + day + (done ? '<i aria-hidden="true">✓</i>' : '') + '</span>';
+    }
+    var next = STREAK_MILESTONES.filter(function (n) { return n > info.best; })[0] || null;
+    var progress = next ? Math.min(100, Math.round(Math.max(info.count, info.best) / next * 100)) : 100;
+    var milestones = STREAK_MILESTONES.map(function (n) {
+      var unlocked = info.best >= n;
+      return '<span class="sk-milestone' + (unlocked ? ' unlocked' : '') + '"><b>' + n + '</b><small>' + (unlocked ? 'Reached' : 'days') + '</small></span>';
+    }).join("");
+    root.innerHTML =
+      '<div class="sk-cal-head"><div><h2>Study streak</h2><p class="hint">One qualifying day = ' + DAY_MIN + ' completed questions</p></div>' +
+      '<div class="sk-stats"><span><b>' + info.count + '</b><small>Current</small></span><span><b>' + info.best + '</b><small>Personal best</small></span></div></div>' +
+      '<div class="sk-month"><button type="button" class="btn ghost small" data-sk-month="-1" aria-label="Previous month">‹</button><b>' + monthLabel(y, m) + '</b><button type="button" class="btn ghost small" data-sk-month="1" aria-label="Next month"' + (y === new Date(Date.now() + 3600000).getUTCFullYear() && m === new Date(Date.now() + 3600000).getUTCMonth() ? ' disabled' : '') + '>›</button></div>' +
+      '<div class="sk-weekdays" aria-hidden="true">' + ["S","M","T","W","T","F","S"].map(function (x) { return '<span>' + x + '</span>'; }).join("") + '</div>' +
+      '<div class="sk-days">' + cells + '</div><p class="sk-legend"><i></i> Qualifying study day</p>' +
+      '<div class="sk-next"><div class="sk-next-line"><b>' + (next ? next + '-day milestone' : 'All milestones reached') + '</b><span>' + (next ? Math.max(0, next - Math.max(info.count, info.best)) + ' to go' : '100+ days') + '</span></div><div class="sk-progress"><i style="width:' + progress + '%"></i></div></div>' +
+      '<div class="sk-milestones">' + milestones + '</div>';
+  }
+  DX.mountStreakPanel = function () {
+    renderStreakCalendar();
+    var root = document.getElementById("streak-calendar");
+    if (!root || root.getAttribute("data-bound")) return;
+    root.setAttribute("data-bound", "1");
+    root.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-sk-month]");
+      if (!btn || btn.disabled) return;
+      streakMonth.setUTCMonth(streakMonth.getUTCMonth() + Number(btn.getAttribute("data-sk-month")));
+      renderStreakCalendar();
+    });
+  };
+  DX.refreshStreakPanel = renderStreakCalendar;
 
   /* True/false statements count toward the daily streak; signed-in stem results sync separately for admin stats and leaderboards. */
   DX.streakTick = function (count) {
