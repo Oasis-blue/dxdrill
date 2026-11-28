@@ -85,30 +85,39 @@
     if (!S.loaded || S.loading) return '<section class="section stack"><h2>Your learning progress</h2><p class="muted">Loading your synced MCQ and True/False activity…</p></section>';
     if (S.error) return '<section class="section stack"><h2>Your learning progress</h2><p class="hint">' + esc(S.error) + '</p></section>';
     var pct = function (v) { return v == null ? "—" : Number(v) + "%"; };
-    var weak = topics.filter(function (t) { return Number(t.mcq_attempts || 0) + Number(t.tf_statements || 0) >= 3 && ((t.mcq_accuracy != null && Number(t.mcq_attempts || 0) >= 3 && Number(t.mcq_accuracy) < 70) || (t.tf_accuracy != null && Number(t.tf_statements || 0) >= 3 && Number(t.tf_accuracy) < 70)); });
-    var topicRows = topics.slice().sort(function (a, b) {
-      var aa = Number(a.mcq_attempts || 0) + Number(a.tf_statements || 0), bb = Number(b.mcq_attempts || 0) + Number(b.tf_statements || 0);
-      return bb - aa;
-    }).map(function (t) {
+    var topicActivity = function (t) { return Number(t.mcq_attempts || 0) + Number(t.tf_statements || 0); };
+    var weak = topics.filter(function (t) { return topicActivity(t) >= 3 && ((t.mcq_accuracy != null && Number(t.mcq_attempts || 0) >= 3 && Number(t.mcq_accuracy) < 70) || (t.tf_accuracy != null && Number(t.tf_statements || 0) >= 3 && Number(t.tf_accuracy) < 70)); });
+    var sortedTopics = topics.slice().sort(function (a, b) { return topicActivity(b) - topicActivity(a); });
+    function topicRow(t) {
       var name = DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic;
       return '<div class="rep-item"><b>' + esc(name) + '</b><p class="hint">MCQ: ' + (t.mcq_attempts || 0) + ' attempts · ' + (t.mcq_correct || 0) + ' correct · ' + pct(t.mcq_accuracy) +
         ' &nbsp;|&nbsp; T/F: ' + (t.tf_stems || 0) + ' stems · ' + (t.tf_statements || 0) + ' statements · ' + pct(t.tf_accuracy) + '</p></div>';
-    }).join("");
-    var recentRows = recent.map(function (x) {
+    }
+    function recentRow(x) {
       var name = DX.topicById[x.topic] ? DX.topicById[x.topic].name : x.topic;
       var date = x.created_at ? new Date(x.created_at).toLocaleString() : "";
       return '<div class="rep-item"><b>' + (x.kind === "mcq" ? "MCQ" : "True/False") + '</b> · ' + esc(name || "Topic") +
         '<p class="hint">' + (x.kind === "mcq" ? esc(x.item_id) : "Stem " + esc(x.item_id)) + ' · ' + (x.correct || 0) + '/' + (x.answered || 0) + ' correct · ' + esc(date) + '</p></div>';
+    }
+    var topicPreview = sortedTopics.slice(0, 5).map(topicRow).join("");
+    var topicMore = sortedTopics.slice(5).map(topicRow).join("");
+    var weakPreview = weak.slice(0, 3).map(function (t) {
+      return '<p class="hint">• ' + esc(DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic) + ' — below 70% in a format with at least 3 responses</p>';
     }).join("");
+    var weakMore = weak.slice(3).map(function (t) {
+      return '<p class="hint">• ' + esc(DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic) + ' — below 70% in a format with at least 3 responses</p>';
+    }).join("");
+    var recentPreview = recent.slice(0, 3).map(recentRow).join("");
+    var recentMore = recent.slice(3).map(recentRow).join("");
     return '<section class="section stack"><h2>Your learning progress</h2><p class="hint">Synced to your account. MCQ attempts include repeat practice; leaderboard points still count each distinct correctly answered question only.</p>' +
       '<h3>Overall</h3><div class="statrow"><div class="stat"><b>' + (d.overall_attempts || 0) + '</b><span>responses</span></div>' +
       '<div class="stat"><b>' + (d.overall_correct || 0) + '</b><span>correct</span></div><div class="stat"><b>' + pct(d.overall_accuracy) + '</b><span>accuracy</span></div>' +
       '<div class="stat"><b>' + (d.mcq_questions || 0) + '</b><span>distinct MCQs</span></div></div>' +
       '<h3>MCQ</h3><p class="hint">' + (d.mcq_attempts || 0) + ' responses · ' + (d.mcq_correct || 0) + ' correct · ' + pct(d.mcq_accuracy) + ' accuracy</p>' +
       '<h3>True/False</h3><p class="hint">' + (d.tf_stems_attempted || 0) + ' stem attempts · ' + (d.tf_stems_completed || 0) + ' fully completed · ' + (d.tf_statements || 0) + ' statements · ' + pct(d.tf_accuracy) + ' accuracy</p>' +
-      '<h3>Topic performance</h3>' + (topicRows || '<p class="muted">No synced topic activity yet. Complete a signed-in practice session to begin.</p>') +
-      '<h3>Topics to revisit</h3>' + (weak.length ? weak.map(function (t) { return '<p class="hint">• ' + esc(DX.topicById[t.topic] ? DX.topicById[t.topic].name : t.topic) + ' — below 70% in a format with at least 3 responses</p>'; }).join("") : '<p class="muted">No topic has enough low-scoring activity to flag yet.</p>') +
-      '<h3>Recent practice</h3>' + (recentRows || '<p class="muted">No recent synced activity.</p>') + '</section>';
+      '<h3>Topic performance</h3>' + (topics.length ? topicPreview + (topicMore ? '<details class="rep-more"><summary>Show all ' + topics.length + ' topics</summary>' + topicMore + '</details>' : '') : '<p class="muted">No synced topic activity yet. Complete a signed-in practice session to begin.</p>') +
+      '<h3>Topics to revisit</h3>' + (weak.length ? weakPreview + (weakMore ? '<details class="rep-more"><summary>Show all ' + weak.length + ' topics to revisit</summary>' + weakMore + '</details>' : '') : '<p class="muted">No topic has enough low-scoring activity to flag yet.</p>') +
+      '<h3>Recent practice</h3>' + (recent.length ? recentPreview + (recentMore ? '<details class="rep-more"><summary>Show all ' + recent.length + ' recent entries</summary>' + recentMore + '</details>' : '') : '<p class="muted">No recent synced activity.</p>') + '</section>';
   }
   function loadClasses() {
     return C.sb.from("classes").select("id,name,level").then(function (r) {
