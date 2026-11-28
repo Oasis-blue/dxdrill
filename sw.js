@@ -1,6 +1,6 @@
 /* DxDrill service worker: lets the site open and run with no connection.
    Bump VERSION whenever you change files in js/, css/ or index.html so phones pick up the new code. */
-var VERSION = "dxdrill-v14.32";
+var VERSION = "dxdrill-v14.33";
 var IMG = "dxdrill-img";   /* pictures live in their own cache that is kept when VERSION changes, so a bad connection after an update does not lose them */
 var SHELL = [
   "./", "index.html", "help.html", "checker.html", "tf-checker.html", "manifest.webmanifest", "css/style.css",
