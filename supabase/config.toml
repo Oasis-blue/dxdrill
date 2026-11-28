@@ -1,0 +1,5 @@
+# Supabase Edge Function configuration.
+# The function validates student JWTs itself and validates scheduled invocations
+# with the private REMINDER_CRON_SECRET header.
+[functions.study-reminders]
+verify_jwt = false
