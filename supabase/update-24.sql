@@ -96,6 +96,7 @@ grant select, insert, delete on public.study_push_subscriptions to authenticated
 grant select on public.study_reminder_deliveries to authenticated;
 grant all on public.study_reminder_preferences, public.study_push_subscriptions,
   public.study_reminder_deliveries to service_role;
+grant usage, select on sequence public.study_reminder_deliveries_id_seq to service_role;
 
 comment on table public.study_reminder_preferences is
   'Per-account opt-in study reminder schedule. Times are interpreted in the saved IANA timezone.';
