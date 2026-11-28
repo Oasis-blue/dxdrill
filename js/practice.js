@@ -255,8 +255,8 @@
     var h;
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
     if (P.report && rn) { P.report.note = rn.value; if (rr) P.report.reason = rr.value; }
-    if (P.view === "pick" || !P.scope) h = pickView();
-    else if (P.view === "custom") h = customView();
+    if (P.view === "custom") h = customView();
+    else if (P.view === "pick" || !P.scope) h = pickView();
     else if (P.view === "setup") h = setupView();
     else if (P.run && P.run.done) h = resultsView();
     else if (P.run) h = questionView();
