@@ -46,7 +46,7 @@
     if (!hero || app.querySelector("#homecounts") || !s) return;
     var tiles = [];   /* each number appears only once it is big enough to be worth showing; they are real counts, never padded */
     if (s.members >= 25) tiles.push(["students signed up", s.members]);
-    if (s.answers >= 200) tiles.push(["questions answered", s.answers]);
+    if (s.answers >= 200) tiles.push(["learning responses", s.answers]);
     if (s.answers >= 200 && s.answers_today >= 20) tiles.push(["answered today", s.answers_today]);
     if (!tiles.length) return;
     var sec = document.createElement("section"); sec.id = "homecounts"; sec.className = "section";
