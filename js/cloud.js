@@ -136,7 +136,8 @@
       if (r.error) { S.error = "Could not load your synced learning progress. Check that supabase/update-21.sql has been run."; }
       else { S.data = r.data || null; }
       repaint();
-    }).catch(function () { S.loading = false; S.loaded = true; S.error = "Could not reach the server."; repaint(); });
+      if (DX.practice && DX.practice.refreshProgress) DX.practice.refreshProgress();
+    }).catch(function () { S.loading = false; S.loaded = true; S.error = "Could not reach the server."; repaint(); if (DX.practice && DX.practice.refreshProgress) DX.practice.refreshProgress(); });
   }
   C.analytics = { loading: false, loaded: false, data: null, error: "" };
   function loadMyAnalytics() {
