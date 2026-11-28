@@ -6,7 +6,7 @@
   var FN = "https://dkullruinrnwjmhlxlpl.supabase.co/functions/v1/swift-action";
   function client() { return DX.cloud && DX.cloud.sb && DX.cloud.user ? DX.cloud.sb : null; }
   function repaint() {
-    if ((location.hash || "").slice(1) === "account" && DX.account && DX.cloud && DX.cloud.app) DX.account.render(DX.cloud.app);
+    if ((location.hash || "").slice(1) === "account" && DX.account && DX.cloud && DX.cloud.app) DX.account.render(DX.cloud.app); else if (((location.hash || "#home").slice(1) === "home" || location.hash === "") && DX.refreshHome) DX.refreshHome();
   }
   function normalizeTime(value) {
     if (typeof value !== "string") return "19:00";
@@ -97,6 +97,26 @@
       });
     }).catch(function (e) { R.busy = false; var message = e && e.message ? e.message : "Could not enable reminders."; if (message === "Failed to fetch" || (e && e.name === "TypeError" && /fetch/i.test(message))) message = "Can’t reach the reminder service. Check the Supabase function deployment and logs."; R.error = message; repaint(); throw new Error(message); });
   };
+  R.test = function () {
+    var sb = client();
+    if (!sb) return Promise.reject(new Error("Sign in to test reminders."));
+    if (!R.subscription) return Promise.reject(new Error("Enable reminders on this device first."));
+    R.busy = true; R.error = "";
+    return authHeaders().then(function (headers) {
+      return fetch(FN, { method: "POST", headers: headers, body: JSON.stringify({ action: "test" }) });
+    }).then(function (res) {
+      return res.json().then(function (data) {
+        if (!res.ok) throw new Error(data.error || "Could not send a test reminder.");
+        return data;
+      });
+    }).then(function (data) {
+      R.busy = false; repaint();
+      if (DX.toast) DX.toast("Test notification sent. Check your device notifications.");
+      return data;
+    }).catch(function (e) {
+      R.busy = false; R.error = e.message || "Could not send a test reminder."; repaint(); throw e;
+    });
+  };
   R.disable = function () {
     var sb = client(); if (!sb) return Promise.reject(new Error("Sign in to manage reminders."));
     R.busy = true;
@@ -116,12 +136,17 @@
       repaint();
     }).catch(function (e) { R.busy = false; R.error = e.message || "Could not disable reminders."; repaint(); throw e; });
   };
+  R.homeHtml = function () {
+    var p = R.prefs || defaults(), enabled = !!(R.subscription && p.enabled);
+    return '<article class="card reminder-home"><p class="eyebrow">Build a study habit</p><h2>' + (enabled ? "Your reminders are on" : "A little reminder can help") + '</h2><p>' + (enabled ? "DxDrill is set to remind you at " + DX.esc(normalizeTime(p.local_time)) + " on your selected days." : "Choose your preferred days and time, and let DxDrill nudge you to practise.") + '</p><a class="btn primary" href="#account" style="text-decoration:none">' + (enabled ? "Manage reminders" : "Set a reminder") + '</a></article>';
+  };
   R.html = function () {
     var p = R.prefs || defaults(), days = [[1,"Mon"],[2,"Tue"],[3,"Wed"],[4,"Thu"],[5,"Fri"],[6,"Sat"],[7,"Sun"]];
     var checks = days.map(function (d) {
       return '<label class="rem-day"><input type="checkbox" data-rem-day value="' + d[0] + '"' + (p.days_of_week.indexOf(d[0]) >= 0 ? " checked" : "") + '> ' + d[1] + '</label>';
     }).join("");
-    var status = R.loading ? "Loading your settings…" : R.error ? R.error : R.subscription ? "This device is subscribed to push reminders." : "No device is subscribed yet.";
+    var supported = ("serviceWorker" in navigator) && ("PushManager" in window) && ("Notification" in window) && window.isSecureContext;
+    var status = R.loading ? "Loading your settings…" : R.error ? R.error : !supported ? "Push reminders are not supported in this browser or context." : (typeof Notification !== "undefined" && Notification.permission === "denied") ? "Notifications are blocked in browser settings. Allow them there to enable reminders." : R.subscription && p.enabled ? "Reminders are enabled on this device." : R.subscription ? "This device is subscribed, but the schedule is currently off." : "Reminders are not enabled on this device.";
     var displayTime = normalizeTime(p.local_time);
     return '<section class="section stack"><h2>Study reminders</h2><p class="hint">Choose when DxDrill should gently remind you to practise. Reminders are optional and can be switched off at any time.</p>' +
       '<p class="hint">' + DX.esc(status) + '</p>' +
@@ -129,7 +154,7 @@
       '<div class="field"><label class="label" for="rem-zone">Time zone (IANA)</label><input id="rem-zone" type="text" maxlength="80" value="' + DX.esc(p.timezone) + '" placeholder="Africa/Lagos"></div>' +
       '<div class="field"><span class="label">Days</span><div class="rem-days">' + checks + '</div></div>' +
       '<div class="row tight"><button class="btn small" data-act="remsave"' + (R.busy ? " disabled" : "") + '>Save schedule</button>' +
-      (R.subscription ? '<button class="btn small ghost" data-act="remoff"' + (R.busy ? " disabled" : "") + '>Turn off reminders</button>' : '<button class="btn small primary" data-act="remon"' + (R.busy ? " disabled" : "") + '>Enable notifications on this device</button>') + '</div>' +
+      (R.subscription ? '<button class="btn small ghost" data-act="remoff"' + (R.busy ? " disabled" : "") + '>Turn off reminders</button><button class="btn small" data-act="remtest"' + (R.busy ? " disabled" : "") + '>Send test notification</button>' : '<button class="btn small primary" data-act="remon"' + (R.busy ? " disabled" : "") + '>Enable notifications on this device</button>') + '</div>' +
       '<p class="hint">Your browser will ask permission only when you press Enable. On iPhone/iPad, add DxDrill to your Home Screen first. Push delivery also depends on your browser and device notification settings.</p></section>';
   };
 })();
