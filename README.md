@@ -120,6 +120,10 @@ The account page also shows combined personal MCQ and True/False progress, topic
 Ideas for later: streaks, histology picture questions, viva and clerking practice, a custom domain.
 
 
+## Reliability and admin audit
+
+The 28 November 2026 source-code audit records offline sync safeguards, account progress, practice persistence, feedback/report handling, admin activity and remaining live-verification checks: [App reliability and admin audit](docs/audits/APP_RELIABILITY_AND_ADMIN_AUDIT_2026-11-28.md).
+
 ## Review mistakes
 Signed-in learners can review MCQs previously answered incorrectly. The list syncs across devices, uses the current question bank for full question content and explanations, and removes questions from active review after a later correct answer. Run `supabase/update-22.sql` after update-21 for existing databases; fresh installs use `supabase/setup.sql`.
 
