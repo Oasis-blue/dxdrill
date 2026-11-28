@@ -96,21 +96,51 @@
 
   /* Scores: queued on the device and sent when signed in, so nothing is lost offline. */
   function queue() { return DX.store.get("dx.pending", []); }
+  function tfQueue() { return DX.store.get("dx.tf.pending", []); }
+  function flushTF() {
+    if (!C.ok || !C.user) return Promise.resolve();
+    var q = tfQueue(); if (!q.length) return Promise.resolve();
+    var batch = q.slice(0, 100);
+    return C.sb.from("tf_attempts").upsert(batch.map(function (x) {
+      return { attempt_id: x.attempt_id, stem_id: x.stem_id, topic_id: x.topic_id,
+        answered_count: x.answered_count, correct_count: x.correct_count, total_count: x.total_count };
+    }), { onConflict: "user_id,attempt_id,stem_id", ignoreDuplicates: true }).then(function (r) {
+      if (!r.error) DX.store.set("dx.tf.pending", q.slice(batch.length));
+      else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.tf.pending", []);
+    }).catch(function () { });
+  }
   function flush() {
     if (!C.ok || !C.user) return Promise.resolve();
-    var q = queue(); if (!q.length) return Promise.resolve();
+    var q = queue();
+    if (!q.length) return flushTF();
     var batch = q.slice(0, 200);
     return C.sb.from("answers").insert(batch.map(function (x) { return { question_id: x.id, correct: x.ok }; })).then(function (r) {
       if (!r.error) DX.store.set("dx.pending", q.slice(batch.length));
-      else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.pending", []);   /* over the daily cap: do not retry forever */
-    }).catch(function () { });
+      else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.pending", []);
+      return flushTF();
+    }).catch(function () { return flushTF(); });
   }
   C.submit = function (items) {
-    if (!C.ok) return;
     var q = queue().concat(items.map(function (x) { return { id: String(x.id), ok: !!x.ok }; })), seen = Object.create(null);
-    q = q.filter(function (x) { var k = x.id + "|" + x.ok; if (seen[k]) return false; seen[k] = 1; return true; });   /* one row per question and result is enough for points */
+    q = q.filter(function (x) { var k = x.id + "|" + x.ok; if (seen[k]) return false; seen[k] = 1; return true; });
     DX.store.set("dx.pending", q.slice(-500));
     flush();
+  };
+  C.submitTF = function (attempt) {
+    if (!attempt || !attempt.answered_count) return;
+    var item = {
+      attempt_id: String(attempt.attempt_id || (Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12))),
+      stem_id: String(attempt.stem_id), topic_id: String(attempt.topic_id),
+      answered_count: Math.max(1, Math.min(5, Number(attempt.answered_count) || 0)),
+      correct_count: Math.max(0, Math.min(5, Number(attempt.correct_count) || 0)),
+      total_count: Math.max(4, Math.min(5, Number(attempt.total_count) || 4))
+    };
+    item.answered_count = Math.min(item.answered_count, item.total_count);
+    item.correct_count = Math.min(item.correct_count, item.answered_count);
+    var q = tfQueue().concat([item]), seen = Object.create(null);
+    q = q.filter(function (x) { var k = x.attempt_id + "|" + x.stem_id; if (seen[k]) return false; seen[k] = 1; return true; });
+    DX.store.set("dx.tf.pending", q.slice(-500));
+    flushTF();
   };
 
   /* ---------- question reports ---------- */
@@ -360,7 +390,7 @@
     var B = C.board;
     if (!C.ok) return '<div class="wrap stack"><h1>Leaderboards</h1><p class="lede">Leaderboards could not load. Check your connection and refresh.</p></div>';
     if (!C.user) return '<div class="wrap stack"><header><p class="eyebrow">Leaderboards</p><h1>Sign in to see the leaderboards</h1><p class="lede">Create a free account, pick your class, and your practice counts for it.</p></header><a class="btn primary" href="#account" style="text-decoration:none;align-self:flex-start">Sign in or create an account</a></div>';
-    var periods = [[7, "This week"], [30, "This month"], [0, "All time"]].map(function (p) {
+    var periods = [[-1, "Today"], [7, "This week"], [30, "This month"], [0, "All time"]].map(function (p) {
       return '<button class="btn small' + (B.days === p[0] ? " primary" : "") + '" data-act="days" data-v="' + p[0] + '">' + p[1] + '</button>';
     }).join("");
     var cls = '<label class="label" for="bd-class">Students from</label><select id="bd-class" data-bd="cls"><option value="">All classes</option>' + DX.curriculum.classes.map(function (c) {
@@ -373,7 +403,7 @@
     var st = rows(B.students, function (x, i) {
       return '<div class="r' + (i === 0 ? " first" : "") + '"><span class="pos">' + (i + 1) + '</span><span class="nm">' + esc(x.display_name) + ' <span class="muted">· ' + esc(classLabel(x.class_id)) + '</span></span><span class="pt">' + x.points + '</span></div>';
     });
-    return '<div class="wrap stack"><header><p class="eyebrow">Leaderboards</p><h1>Who is drilling</h1><p class="lede">Points are different questions answered correctly. Repeating a question does not add points.</p></header>' +
+    return '<div class="wrap stack"><header><p class="eyebrow">Leaderboards</p><h1>Who is drilling</h1><p class="lede">Each different MCQ answered correctly or True/False stem completed with at least 60% correct earns one point. Repeating a question or stem does not add points.</p></header>' +
       '<div class="row tight">' + periods + '</div>' + (B.error ? '<p class="note bad">' + esc(B.error) + '</p>' + (B.down ? '<div class="row tight"><button class="btn small" data-act="retry">Try again</button></div>' : "") : "") +
       '<section class="section"><h2>Classes</h2><p class="hint">Average points per player, so a bigger class has no advantage.</p><div class="rank">' + (B.loaded ? cl : '<p class="muted">Loading…</p>') + '</div></section>' +
       '<section class="section"><h2>Students</h2><div class="field">' + cls + '</div><div class="rank">' + (B.loaded ? st : '<p class="muted">Loading…</p>') + '</div></section></div>';
