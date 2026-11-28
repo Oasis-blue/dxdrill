@@ -86,4 +86,4 @@ $$;
 revoke all on function public.sync_my_streak(date[], integer) from public, anon;
 grant execute on function public.sync_my_streak(date[], integer) to authenticated;
 comment on function public.sync_my_streak(date[], integer) is
-  'Idempotently merges a signed-in user\'s qualifying Lagos calendar days across devices and preserves their best streak.';
+  'Idempotently merges a signed-in user''s qualifying Lagos calendar days across devices and preserves their best streak.';
