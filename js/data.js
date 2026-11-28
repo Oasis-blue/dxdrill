@@ -72,7 +72,7 @@ window.DX = window.DX || {};
     var st = DX.stats();
     items.forEach(function (it) {
       var s = st[it.id] || { n: 0, c: 0, last: 0 };
-      s.n++; if (it.ok) s.c++; s.last = it.ok ? 1 : 0;
+      s.n++; if (it.ok) s.c++; s.last = it.ok ? 1 : 0; s.lastAt = Date.now();
       st[it.id] = s;
     });
     DX.store.set("dx.stats", st);
