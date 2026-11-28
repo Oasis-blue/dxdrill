@@ -341,6 +341,7 @@
   function render(el) {
     if (el) app = el;
     if (P.view === "pick" && DX.cloud && DX.cloud.loadReviewMistakes) DX.cloud.loadReviewMistakes();
+    if (P.view === "pick" && DX.cloud && DX.cloud.loadLearningProgress) DX.cloud.loadLearningProgress();
     if (!restored && DX.questions && DX.questions.length && !DX.loadingQuestions && !(P.run && !P.run.done)) restoreRun();
     var h;
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
