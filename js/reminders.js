@@ -3,7 +3,7 @@
   var DX = window.DX;
   var R = { loaded: false, loading: false, prefs: null, subscription: null, error: "", busy: false };
   DX.reminders = R;
-  var FN = "https://dkullruinrnwjmhlxlpl.supabase.co/functions/v1/study-reminders";
+  var FN = "https://dkullruinrnwjmhlxlpl.supabase.co/functions/v1/swift-action";
   function client() { return DX.cloud && DX.cloud.sb && DX.cloud.user ? DX.cloud.sb : null; }
   function repaint() {
     if ((location.hash || "").slice(1) === "account" && DX.account && DX.cloud && DX.cloud.app) DX.account.render(DX.cloud.app);
