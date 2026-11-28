@@ -19,6 +19,12 @@
 
   function render(a) {
     app = a;
+    if (DX.tfPreselect && DX.tfPreselect.length && !(T.view === "run" && T.run && !T.run.done)) {
+      /* Arrived from a practice result: show only the stems from the topics just practised. */
+      T.pre = DX.tfPreselect.slice(); DX.tfPreselect = null;
+      T.sel = {}; DX.tfStems.forEach(function (s) { T.sel[s.topic] = T.pre.indexOf(s.topic) > -1; });
+      T.only = false; T.view = "pick"; T.note = "Showing stems from the topics you just practised.";
+    }
     if (T.view === "run" && !(T.run && !T.run.done)) T.view = "pick";
     if (T.view === "run") startTimer();
     paint();
@@ -248,6 +254,6 @@
     if (document.activeElement && document.activeElement.tagName === "BUTTON") return;
     e.preventDefault(); if (it.checked) next(); else check();
   }
-  function refreshProgress() { if (T.sel !== null) DX.tfStems.forEach(function (s) { if (!Object.prototype.hasOwnProperty.call(T.sel, s.topic)) T.sel[s.topic] = true; }); if (app && T.view === "pick") paint(); }
+  function refreshProgress() { if (T.sel !== null) DX.tfStems.forEach(function (s) { if (!Object.prototype.hasOwnProperty.call(T.sel, s.topic)) T.sel[s.topic] = T.pre ? T.pre.indexOf(s.topic) > -1 : true; }); if (app && T.view === "pick") paint(); }
   DX.truefalse = { render: render, onClick: onClick, onInput: onInput, onKey: onKey, leave: leave, refreshProgress: refreshProgress };
 })();
