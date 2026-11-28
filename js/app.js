@@ -22,6 +22,7 @@
       (DX.streakHtml ? DX.streakHtml() : '') +
       '<section class="cards">' +
       '<article class="card"><h2>Practice</h2><p>' + (DX.loadingQuestions ? 'Loading the question bank…' : totalQ + ' questions across ' + doneTopics + ' topics.') + ' Study mode explains each answer as you go. Exam mode saves the marks for the end.</p><a class="btn primary" href="#practice" style="text-decoration:none">Start practising</a></article>' +
+      ((DX.tfStems && DX.tfStems.length) || DX.loadingQuestions ? '<article class="card"><h2>True / False</h2><p>' + (DX.tfStems && DX.tfStems.length ? DX.tfStems.length + ' exam-style stems. ' : '') + 'Each stem has four or five statements. Mark every one True or False, with a mark off for a wrong answer, just like the real paper.</p><a class="btn" href="#truefalse" style="text-decoration:none">Try true/false</a></article>' : '') +
       '<article class="card"><h2>Hall mode</h2><p>One screen, a quizmaster and teams. Rapid fire, a question board, everyone-answers rounds, describe-it and explain-it.</p><a class="btn" href="#hall" style="text-decoration:none">Open hall mode</a></article>' +
       '</section>' +
       '<section class="section"><h2>Curriculum coverage</h2><p class="muted">' + (DX.loadingQuestions ? 'Loading question coverage…' : doneTopics + ' of ' + totalTopics + ' MDCN topics have questions so far. The rest are waiting to be filled as you study.') + '</p><div class="cov">' + cov + '</div></section>' +
