@@ -211,7 +211,7 @@
     }
     var topicPreview = sortedTopics.slice(0, 5).map(topicRow).join("");
     var topicMore = sortedTopics.slice(5).map(topicRow).join("");
-    var strongHtml = strongest.length ? strongest.slice(0, 5).map(topicBar).join("") : '<p class="muted">Strongest topics appear after at least 5 responses in a topic.</p>';
+    var strongHtml = strongest.length ? strongest.slice(0, 5).map(function (t, i) { return topicBar(t, i + 1); }).join("") : '<p class="muted">Strongest topics appear after at least 5 responses in a topic.</p>';
     var weakHtml = weak.length ? weak.slice(0, 5).map(function (t, i) { return topicBar(t, i + 1); }).join("") :
       '<p class="muted">No topic is currently below 70% with at least 5 combined responses. Keep practising to build reliable comparisons.</p>';
     var recentPreview = recent.slice(0, 3).map(recentRow).join("");
