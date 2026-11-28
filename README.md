@@ -94,6 +94,7 @@ The account page shows combined personal MCQ and True/False progress, strongest 
 
 ## What is in the app
 
+- **Timed examinations:** a separate exam engine with a configurable question count and time limit, shuffled MCQs and options, a live countdown, question navigator, review flags, saved in-progress attempts, automatic time expiry, and answer explanations after submission. Run 1 currently draws from the full MCQ bank; subject presets and custom exam distributions are planned for Run 2.
 - **Practice:** study mode (explains each answer) and exam mode (marks at the end), topic and custom scopes, mistake review, priority revision from missed questions and weak topics, unanswered-question discovery, a daily revision plan, and local recovery of unfinished sessions. Per-question attempt history and unanswered coverage are device-specific; signed-in topic analytics and mistake review sync through the account.
 - **Flashcards**, with a six-box spaced-repetition schedule (1, 2, 4, 8, 16 and 32 days), missed-card retries and a Stop session button. Signed-in users can sync review boxes and due dates across devices after running `supabase/update-28.sql`; the device copy remains available offline.
 - **Hall mode:** one screen, a quizmaster and teams. Rounds: rapid fire, question board, everyone answers, describe it (all teams at once, earlier guess scores more) and explain it (team by team, with forbidden words). It includes an answer key for the quizmaster.
