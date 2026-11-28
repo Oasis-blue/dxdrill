@@ -118,3 +118,7 @@ The account page also shows combined personal MCQ and True/False progress, topic
 - Questions are generated with AI and unverified until marked.
 
 Ideas for later: streaks, histology picture questions, viva and clerking practice, a custom domain.
+
+
+## Review mistakes
+Signed-in learners can review MCQs previously answered incorrectly. The list syncs across devices, uses the current question bank for full question content and explanations, and removes questions from active review after a later correct answer. Run `supabase/update-22.sql` after update-21 for existing databases; fresh installs use `supabase/setup.sql`.
