@@ -554,3 +554,13 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .sk-milestone.unlocked{opacity:1;border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--surface))}
 .sk-milestone.unlocked b{color:var(--accent)}
 @media(max-width:420px){.sk-panel{padding:12px;gap:12px}.sk-milestones{gap:4px}.sk-milestone{padding:7px 1px}.sk-milestone b{font-size:13px}.sk-milestone small{font-size:10px}.sk-day{min-height:27px;font-size:12px}}
+
+
+/* Learning analytics topic comparison charts */
+.la-topic{display:grid;gap:5px;padding:10px 0;border-bottom:1px solid var(--line)}
+.la-topic:last-child{border-bottom:0}
+.la-topic-head{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px}
+.la-topic-head strong{font-variant-numeric:tabular-nums;color:var(--accent)}
+.la-track{height:9px;border-radius:99px;background:var(--line);overflow:hidden}
+.la-track i{display:block;height:100%;border-radius:99px;background:var(--accent)}
+.la-topic p{margin:0;font-size:11px}
