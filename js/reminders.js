@@ -8,6 +8,11 @@
   function repaint() {
     if ((location.hash || "").slice(1) === "account" && DX.account && DX.cloud && DX.cloud.app) DX.account.render(DX.cloud.app);
   }
+  function normalizeTime(value) {
+    if (typeof value !== "string") return "19:00";
+    var match = value.match(/^([01]\\d|2[0-3]):([0-5]\\d)(?::[0-5]\\d(?:\\.\\d+)?)?$/);
+    return match ? match[1] + ":" + match[2] : "19:00";
+  }
   function defaults() {
     var zone = "Africa/Lagos";
     try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone || zone; } catch (e) {}
@@ -21,6 +26,7 @@
       R.loading = false; R.loaded = true;
       if (res.error) { R.error = "Reminder settings are not available yet. The database update-24.sql must be run first."; return; }
       R.prefs = res.data || defaults();
+      R.prefs.local_time = normalizeTime(R.prefs.local_time);
       return sb.from("study_push_subscriptions").select("id").then(function (s) {
         R.subscription = !s.error && s.data && s.data.length > 0;
         repaint();
@@ -46,7 +52,7 @@
     var days = Array.prototype.slice.call(document.querySelectorAll("[data-rem-day]:checked")).map(function (x) { return Number(x.value); });
     if (!days.length) return Promise.reject(new Error("Choose at least one day."));
     var p = R.prefs || defaults();
-    var row = { user_id: DX.cloud.user.id, enabled: !!p.enabled, local_time: time ? time.value : p.local_time,
+    var row = { user_id: DX.cloud.user.id, enabled: !!p.enabled, local_time: time && time.value ? time.value : normalizeTime(p.local_time),
       timezone: zone ? zone.value.trim() : p.timezone, days_of_week: days, reminder_type: "daily_practice" };
     if (!row.local_time || !/^([01]\d|2[0-3]):[0-5]\d$/.test(row.local_time)) return Promise.reject(new Error("Choose a valid reminder time."));
     if (!row.timezone || row.timezone.length > 80) return Promise.reject(new Error("Enter a valid time zone."));
@@ -116,9 +122,10 @@
       return '<label class="rem-day"><input type="checkbox" data-rem-day value="' + d[0] + '"' + (p.days_of_week.indexOf(d[0]) >= 0 ? " checked" : "") + '> ' + d[1] + '</label>';
     }).join("");
     var status = R.loading ? "Loading your settings…" : R.error ? R.error : R.subscription ? "This device is subscribed to push reminders." : "No device is subscribed yet.";
+    var displayTime = normalizeTime(p.local_time);
     return '<section class="section stack"><h2>Study reminders</h2><p class="hint">Choose when DxDrill should gently remind you to practise. Reminders are optional and can be switched off at any time.</p>' +
       '<p class="hint">' + DX.esc(status) + '</p>' +
-      '<div class="field"><label class="label" for="rem-time">Reminder time</label><input id="rem-time" type="time" value="' + p.local_time + '"></div>' +
+      '<div class="field"><label class="label" for="rem-time">Reminder time</label><input id="rem-time" type="time" value="' + displayTime + '"></div>' +
       '<div class="field"><label class="label" for="rem-zone">Time zone (IANA)</label><input id="rem-zone" type="text" maxlength="80" value="' + DX.esc(p.timezone) + '" placeholder="Africa/Lagos"></div>' +
       '<div class="field"><span class="label">Days</span><div class="rem-days">' + checks + '</div></div>' +
       '<div class="row tight"><button class="btn small" data-act="remsave"' + (R.busy ? " disabled" : "") + '>Save schedule</button>' +
