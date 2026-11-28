@@ -35,6 +35,36 @@
     });
   };
 
+  C.syncStreak = function () {
+    if (!C.ok || !C.user || !C.sb || C.streakSyncing) return Promise.resolve(false);
+    var local = DX.store.get("dx.streak", null);
+    if (!local || typeof local !== "object") return Promise.resolve(false);
+    var days = Array.isArray(local.days) ? local.days.slice() : [];
+    if (!days.length && local.last && Number(local.c) > 0) {
+      for (var i = Math.max(0, Number(local.c) - 1); i >= 0; i--) {
+        var dt = new Date(local.last + "T12:00:00Z"); dt.setUTCDate(dt.getUTCDate() - i);
+        days.push(dt.toISOString().slice(0, 10));
+      }
+    }
+    C.streakSyncing = true;
+    return C.sb.rpc("sync_my_streak", { p_days: days, p_best: Number(local.best) || 0 }).then(function (r) {
+      C.streakSyncing = false;
+      if (r.error || !r.data) { C.streakSyncError = "Streak sync is temporarily unavailable."; return false; }
+      var merged = Array.from(new Set(days.concat(Array.isArray(r.data.days) ? r.data.days : []))).sort();
+      local.days = merged;
+      local.best = Math.max(Number(local.best) || 0, Number(r.data.best) || 0);
+      var latest = merged.length ? merged[merged.length - 1] : "";
+      function shiftDay(day, n) { var d = new Date(day + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+      var count = 0, cursor = latest;
+      while (cursor && merged.indexOf(cursor) > -1) { count++; cursor = shiftDay(cursor, -1); }
+      local.c = count; local.last = latest;
+      DX.store.set("dx.streak", local);
+      C.streakSyncError = "";
+      if (DX.refreshHome && (location.hash || "#home") === "#home") DX.refreshHome();
+      return true;
+    }).catch(function () { C.streakSyncing = false; C.streakSyncError = "Streak sync is temporarily unavailable."; return false; });
+  };
+
   function classLabel(id) {
     var c = DX.curriculum.classes.filter(function (x) { return x.id === id; })[0];
     return c ? c.label + (c.name ? " · " + c.name : "") : "";
@@ -230,13 +260,13 @@
       if (!C.user || priorUserId !== C.user.id) { C.tfStats = { loading: false, loaded: false, data: null, error: "" }; C.analytics = { loading: false, loaded: false, data: null, error: "" }; }
       F = {};
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
-      loadProfile().then(function () { flush(); repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
+      loadProfile().then(function () { flush(); if (C.user && C.syncStreak) C.syncStreak(); repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
     });
     /* The page can show as soon as we know who is signed in (read from the device). The profile and class names load behind it. */
     var got = C.sb.auth.getSession().then(function (r) {
       C.user = r.data && r.data.session ? r.data.session.user : null;
     });
-    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(flush).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
+    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(function () { return flush(); }).then(function () { if (C.user) C.syncStreak(); }).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
     return got.catch(function () { C.down = true; });
   };
 
