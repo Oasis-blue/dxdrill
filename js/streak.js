@@ -47,14 +47,12 @@
     { id: "explorer10", title: "Wide-Ranging Learner", detail: "Practise questions in 10 topics", test: function (x) { return x.topics >= 10; }, goal: 10, value: function (x) { return x.topics; } }
   ];
   function achievementStats() {
-    var st = DX.stats(), correct = 0, attempted = 0, topics = {};
+    var st = DX.stats(), correct = 0, attempted = 0, topics = {}, topicByQuestion = {};
+    (DX.questions || []).forEach(function (q) { topicByQuestion[String(q.id)] = q.topic; });
     Object.keys(st || {}).forEach(function (id) {
       var row = st[id] || {}, n = Math.max(0, Number(row.n) || 0), c = Math.max(0, Number(row.c) || 0);
       attempted += n; correct += c;
-      if (n) {
-        var q = (DX.questions || []).filter(function (x) { return String(x.id) === String(id); })[0];
-        if (q && q.topic) topics[q.topic] = 1;
-      }
+      if (n && topicByQuestion[id]) topics[topicByQuestion[id]] = 1;
     });
     var si = DX.streakInfo();
     return { correct: correct, attempted: attempted, topics: Object.keys(topics).length, best: si.best || 0, current: si.count || 0 };
