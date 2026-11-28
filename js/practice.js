@@ -12,18 +12,44 @@
     if (sc.kind === "custom") return qs.filter(function (q) { return sc.topicIds.indexOf(q.topic) > -1; });
     if (sc.kind === "area") return qs.filter(function (q) { return q.area === sc.id; });
     if (sc.kind === "topic") return qs.filter(function (q) { return q.topic === sc.id; });
-    if (sc.kind === "missed") {
+    if (sc.kind === "missed" || sc.kind === "adaptive") {
       var st = DX.stats(), remote = DX.remoteMissedIds || {}, state = DX.remoteReviewState || {};
-      return qs.filter(function (q) {
+      var missed = qs.filter(function (q) {
         var id = String(q.id);
         if (Object.prototype.hasOwnProperty.call(state, id)) return state[id];
         return !!(st[q.id] && st[q.id].last === 0) || !!remote[id];
       });
+      if (sc.kind === "missed") return missed;
+      var topics = weakTopicScores(), topicIds = Object.keys(topics), seen = {};
+      var combined = missed.concat(qs.filter(function (q) { return topicIds.indexOf(q.topic) > -1; }));
+      combined.forEach(function (q) { seen[q.id] = q; });
+      return Object.keys(seen).map(function (id) { return seen[id]; }).sort(function (a, b) {
+        function score(q) {
+          var row = mistakeRow(q.id), topic = topics[q.topic] || 0;
+          return (row ? 100 + Number(row.wrong_attempts || 0) * 10 + Number(row.attempts || 0) : 0) + topic;
+        }
+        return score(b) - score(a);
+      });
     }
     return [];
   }
+  function mistakeRow(id) {
+    var rows = DX.cloud && DX.cloud.reviewMistakes && DX.cloud.reviewMistakes.rows || [];
+    for (var i = 0; i < rows.length; i++) if (String(rows[i].question_id) === String(id)) return rows[i];
+    return null;
+  }
+  function weakTopicScores() {
+    var rows = DX.cloud && DX.cloud.tfStats && DX.cloud.tfStats.data && DX.cloud.tfStats.data.topics || [], out = {};
+    rows.forEach(function (t) {
+      var n = Number(t.mcq_attempts || 0) + Number(t.tf_statements || 0);
+      var correct = Number(t.mcq_correct || 0) + Number(t.tf_correct || 0);
+      if (n >= 5 && correct * 100 / n < 70) out[t.topic] = Math.round((70 - correct * 100 / n) * 10) / 10;
+    });
+    return out;
+  }
   function scopeName(sc) {
     if (sc.kind === "all") return "All questions";
+    if (sc.kind === "adaptive") return "Priority revision · mistakes and weak topics";
     if (sc.kind === "missed") return "Questions I missed last time";
     if (sc.kind === "subject") return DX.subjectById[sc.id].name;
     if (sc.kind === "custom") return "Custom subject, area and topic selection";
@@ -49,10 +75,13 @@
   /* ---------- picker ---------- */
   function pickView() {
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
+    var adaptive = scopeQs({ kind: "adaptive" }).length, weakCount = Object.keys(weakTopicScores()).length;
     var h = '<div class="wrap stack"><a class="backtop" href="#home">\u2190 Home</a><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
       '<p class="lede">' + total + (DX.loadingQuestions ? ' questions loaded so far. More are arriving in the background.' : ' questions.') + ' Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p>' + (DX.tfStems && DX.tfStems.length ? '<p class="hint">Exam in true/false style? <a href="#truefalse">Practise ' + DX.tfStems.length + ' exam-style stems</a>.</p>' : '') + '</header>' +
       '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button><button class="btn" data-act="custom">Choose multiple subjects</button>' +
-      (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review mistakes · ' + missed + '</button>' : '') + '</section>' +
+      (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review mistakes · ' + missed + '</button>' : '') +
+      (adaptive ? '<button class="btn primary" data-act="scope" data-kind="adaptive">Fix my weak areas · ' + adaptive + '</button>' : '') + '</section>' +
+      (DX.cloud && DX.cloud.user ? (DX.cloud.tfStats && DX.cloud.tfStats.loaded ? (weakCount ? '<p class="hint">Priority revision combines previously missed questions with questions from ' + weakCount + ' topic' + (weakCount === 1 ? '' : 's') + ' below 70% accuracy. Repeated mistakes are placed first.</p>' : '<p class="hint">No topic currently meets the weak-area threshold. Review mistakes or choose a topic below.</p>') : '<p class="hint">Sign-in learning data is still loading; weak-topic revision will appear when it is ready.</p>') : '<p class="hint">Sign in to include your synced weak-topic analytics in priority revision. Previously missed questions on this device are still included.</p>') +
       '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
     DX.curriculum.subjects.forEach(function (s) {
       var sc = DX.subjectCount(s.id);
@@ -203,7 +232,8 @@
 
   /* ---------- run ---------- */
   function startRun(list) {
-    var items = DX.shuffle(list).map(function (q) {
+    var ordered = P.scope && P.scope.kind === "adaptive" ? list.slice() : DX.shuffle(list);
+    var items = ordered.map(function (q) {
       return { q: q, order: DX.optOrder(q.options), pick: null };
     });
     P.run = { items: items, i: 0, done: false };
