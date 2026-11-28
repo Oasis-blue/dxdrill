@@ -489,3 +489,25 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
 .tf-feature{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 5%,var(--surface));}
 .tf-feature .eyebrow{margin:0 0 6px;color:var(--accent);font-weight:700;}
 .tf-feature .row{margin-top:12px;flex-wrap:wrap;}
+
+
+/* True/False topic picker: clear inclusion states at subject, area and topic level. */
+.tf-subject-row{display:flex;align-items:flex-start;gap:10px;margin:10px 0;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.tf-subject-row details.subj{flex:1;min-width:0;border:0;margin:0;padding:0;background:transparent}
+.tf-subject-row details.subj>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:42px}
+.tf-subject-row details.subj>summary>span{min-width:0}
+.tf-subject-row details.subj>summary>small{max-width:58%;text-align:right;color:var(--muted);font:500 12px/1.35 var(--font-body,system-ui,sans-serif)}
+.tf-subject-row .secbody{padding:12px 0 2px;display:flex;flex-direction:column;gap:12px}
+.tf-subject-toggle{flex:none;min-width:104px;min-height:38px;font-size:13px;font-weight:700}
+.tf-subject-toggle.is-on,.tf-topic-toggle.is-on{border-color:var(--good);background:color-mix(in srgb,var(--good) 10%,var(--surface))}
+.tf-picker-help{margin:2px 0 8px}
+.tf-area{padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.tf-count{color:var(--muted);font-weight:500}
+.tf-scope-toggle{font-size:12px}
+.tf-topic-toggle{min-height:38px}
+@media(max-width:520px){
+  .tf-subject-row{gap:7px;padding:8px}
+  .tf-subject-row details.subj>summary{align-items:flex-start;flex-direction:column;gap:3px}
+  .tf-subject-row details.subj>summary>small{max-width:100%;text-align:left}
+  .tf-subject-toggle{min-width:94px;padding:7px 8px;font-size:12px}
+}
