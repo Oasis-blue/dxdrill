@@ -182,13 +182,13 @@
       if (!C.user || priorUserId !== C.user.id) C.tfStats = { loading: false, loaded: false, data: null, error: "" };
       F = {};
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
-      loadProfile().then(function () { flush(); repaint(); });
+      loadProfile().then(function () { flush(); repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
     });
     /* The page can show as soon as we know who is signed in (read from the device). The profile and class names load behind it. */
     var got = C.sb.auth.getSession().then(function (r) {
       C.user = r.data && r.data.session ? r.data.session.user : null;
     });
-    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(flush).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); });
+    C.loading = got.then(function () { return Promise.all([loadProfile(), loadClasses()]); }).then(flush).catch(function () { C.down = true; /* offline is fine */ }).then(function () { repaint(); if (C.user && C.loadReviewMistakes) C.loadReviewMistakes(true); });
     return got.catch(function () { C.down = true; });
   };
 
