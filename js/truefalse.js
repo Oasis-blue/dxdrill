@@ -84,7 +84,7 @@
       return '<div class="chips" role="group" aria-label="' + label + '">' + vals.map(function (v) { return '<button class="chip toggle" data-act="' + act + '" data-v="' + v + '" aria-pressed="' + (cur === v) + '">' + (fmt ? fmt(v) : v) + '</button>'; }).join("") + '</div>';
     }
     return '<div class="wrap stack"><header><p class="eyebrow">True or false</p><h1>Exam-style stems</h1>' +
-      '<p class="lede">Each stem has four or five statements. Mark every statement True or False, or leave it blank to skip it, like the real paper.</p></header>' +
+      '<p class="lede">Each stem has four or five statements. Mark every statement True or False, or leave it blank to skip it, like the real paper.</p><div class="row"><button class="btn primary" data-act="quick">Quick start · 5 stems</button><span class="hint">No setup needed · practice marking</span></div></header>' +
       (saved ? '<section class="section stack tfresume"><p><b>You have an unfinished run</b> (stem ' + (saved.i + 1) + ' of ' + saved.items.length + ').</p><div class="row"><button class="btn primary" data-act="resume">Continue</button><button class="btn ghost" data-act="discard">Discard it</button></div></section>' : "") +
       '<section class="section stack"><div class="field"><span class="label">Marking</span>' + seg("Marking", "mode", ["exam", "practice"], T.mode, function (v) { return v === "exam" ? "Exam: +1 right, −1 wrong, 0 skipped" : "Practice: no penalty"; }) + '</div>' +
       '<div class="field"><span class="label">Stems in this run</span>' + seg("Stems", "n", [5, 10, 15, 20], T.n) + '</div>' +
@@ -225,6 +225,11 @@
     }
     else if (a === "selall") { Object.keys(T.sel).forEach(function (t) { T.sel[t] = true; }); keepOpen(b); }
     else if (a === "selnone") { Object.keys(T.sel).forEach(function (t) { T.sel[t] = false; }); keepOpen(b); }
+    else if (a === "quick") {
+      T.sel = {}; DX.tfStems.forEach(function (s) { T.sel[s.topic] = true; });
+      T.n = 5; T.mode = "practice"; T.only = false; T.timed = false; T.note = "";
+      T.view = "pick"; start();
+    }
     else if (a === "start" || a === "again") { if (a === "again" && T.view === "end") T.view = "pick"; start(); }
     else if (a === "pickview") { T.view = "pick"; paint(); window.scrollTo(0, 0); }
     else if (a === "resume") { T.run = savedRun(); if (T.run) { T.view = "run"; startTimer(); paint(); window.scrollTo(0, 0); } }
