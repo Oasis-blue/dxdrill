@@ -16,7 +16,7 @@ The current streak is device-local in `js/streak.js`. It uses the Lagos calendar
 ## Supabase setup (dashboard only; no terminal)
 
 1. Run `supabase/update-24.sql` in Supabase → SQL Editor.
-2. In Supabase → Edge Functions, create a function named **study-reminders**. Paste the contents of `supabase/functions/study-reminders/index.ts` into its editor and deploy it.
+2. In Supabase → Edge Functions, create a function named **swift-action**. Paste the contents of `supabase/functions/study-reminders/index.ts` into its editor and deploy it.
 3. In that function's settings, turn **Verify JWT** off. The function performs its own checks: student requests must contain a valid Supabase user token; scheduled requests must contain the private `REMINDER_CRON_SECRET`. Do not remove those checks.
 4. Open the deployed DxDrill site at `/tools/vapid-keygen.html` and generate one VAPID key pair. In Supabase → Edge Functions → Secrets, add:
    - `VAPID_PUBLIC_KEY` — public key from the generator
