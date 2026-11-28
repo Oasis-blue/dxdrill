@@ -115,7 +115,8 @@ Deno.serve(async (req: Request) => {
       if (!sameSecret(supplied, expected)) return reply({ error: "Unauthorized scheduler" }, 401);
       return await sendDueReminders();
     }
-    if (body?.action !== "subscribe" || !body.subscription) return reply({ error: "Unsupported action" }, 400);
+    if (body?.action !== "subscribe" && body?.action !== "test") return reply({ error: "Unsupported action" }, 400);
+    if (body?.action === "subscribe" && !body.subscription) return reply({ error: "Missing subscription" }, 400);
   } else if (req.method !== "GET") return reply({ error: "Method not allowed" }, 405);
 
   const url = Deno.env.get("SUPABASE_URL")!;
@@ -130,6 +131,33 @@ Deno.serve(async (req: Request) => {
   if (req.method === "GET") {
     if (!publicKey) return reply({ error: "Push keys are not configured" }, 503);
     return reply({ publicKey });
+  }
+  if (body?.action === "test") {
+    const privateKey = Deno.env.get("VAPID_PRIVATE_KEY") || "";
+    const subject = Deno.env.get("VAPID_SUBJECT") || "";
+    if (!publicKey || !privateKey || !subject) return reply({ error: "Push delivery is not fully configured" }, 503);
+    const admin = createClient(url, service, { auth: { persistSession: false } });
+    const { data: subs, error: subError } = await admin.from("study_push_subscriptions")
+      .select("id,endpoint,p256dh,auth").eq("user_id", authData.user.id);
+    if (subError) return reply({ error: "Could not load this device subscription" }, 500);
+    if (!subs?.length) return reply({ error: "No subscribed device was found. Enable reminders first." }, 404);
+    let delivered = 0;
+    for (const sub of subs) {
+      try {
+        const ok = await sendPushNotification(
+          { endpoint: sub.endpoint, keys: { p256dh: sub.p256dh, auth: sub.auth } },
+          { title: "DxDrill test notification", body: "Your device is ready to receive study reminders.", url: "./#account" },
+          { publicKey, privateKey, subject, ttl: 3600, urgency: "normal" },
+        );
+        if (ok) {
+          delivered++;
+          await admin.from("study_push_subscriptions").update({ last_success_at: new Date().toISOString() }).eq("id", sub.id);
+        } else {
+          await admin.from("study_push_subscriptions").delete().eq("id", sub.id);
+        }
+      } catch (e) { console.error("Test push delivery failed", String(e).slice(0, 160)); }
+    }
+    return delivered ? reply({ ok: true, delivered }) : reply({ error: "Push could not be delivered. Check Edge Function logs and subscription status." }, 502);
   }
   const sub = body.subscription;
   if (typeof sub.endpoint !== "string" || !sub.endpoint.startsWith("https://") ||
