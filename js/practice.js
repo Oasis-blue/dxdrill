@@ -106,21 +106,26 @@
     var selectedQuestions = scopeQs({ kind: "custom", topicIds: selected }).length;
     var h = '<div class="wrap stack"><button class="backtop" data-act="custom-back" type="button">← Change subjects</button>' +
       '<header><p class="eyebrow">Custom practice · 2 of 2</p><h1>Choose areas and topics</h1>' +
-      '<p class="lede">Everything in your selected subjects starts included. Turn off a whole subject to pick only certain areas or topics within it. You can also select or clear an entire area.</p></header>' +
+      '<p class="lede">Everything starts included. Expand a subject to customise it, then expand an area to choose individual topics. Subjects and areas stay collapsed until you open them.</p></header>' +
       '<section class="row tight"><button class="btn ghost small" data-act="custom-reset">Restore all selected subjects</button>' +
       '<button class="btn ghost small" data-act="custom-clear-topics">Clear all topics</button></section>';
     subjects.forEach(function (sub) {
       if (chosen.indexOf(sub.id) < 0) return;
       var subTopics = [];
       sub.areas.forEach(function (a) { subTopics = subTopics.concat(topicIdsForArea(a)); });
-      var subSelected = subTopics.filter(function (id) { return selected.indexOf(id) > -1; }).length; var subOn = subTopics.length > 0 && subSelected === subTopics.length;
-      h += '<details class="acc subj" open><summary><span>' + esc(sub.name) + '</span><small>' + (subOn ? 'Whole subject selected' : 'Selected topics') + '</small></summary>' +
+      var subSelected = subTopics.filter(function (id) { return selected.indexOf(id) > -1; }).length;
+      var subOn = subTopics.length > 0 && subSelected === subTopics.length;
+      var subStatus = !subSelected ? 'None included' : (subOn ? 'All included' : 'Partially included');
+      var subQuestions = scopeQs({ kind: "custom", topicIds: subTopics.filter(function (id) { return selected.indexOf(id) > -1; }) }).length;
+      h += '<details class="acc subj custom-subject"><summary><span>' + esc(sub.name) + '</span><small>' + subStatus + ' · ' + subSelected + '/' + subTopics.length + ' topics · ' + subQuestions + ' questions</small></summary>' +
         '<section class="section subjbody"><div class="shead"><button class="btn ghost small" data-act="custom-sub-all" data-id="' + esc(sub.id) + '" aria-pressed="' + subOn + '">' +
         (subSelected ? 'Clear subject' : 'Select whole subject') + '</button></div>';
       sub.areas.forEach(function (a) {
         var ids = topicIdsForArea(a), n = ids.filter(function (id) { return selected.indexOf(id) > -1; }).length;
-        var allOn = ids.length > 0 && n === ids.length;
-        h += '<details class="acc"><summary><span>' + esc(a.name) + '</span><small>' + n + ' of ' + ids.length + ' topics</small></summary><div class="topics">' +
+        var areaOn = ids.length > 0 && n === ids.length;
+        var areaStatus = !n ? 'None' : (areaOn ? 'All' : 'Some');
+        var areaQuestions = scopeQs({ kind: "custom", topicIds: ids.filter(function (id) { return selected.indexOf(id) > -1; }) }).length;
+        h += '<details class="acc custom-area"><summary><span>' + esc(a.name) + '</span><small>' + areaStatus + ' · ' + n + '/' + ids.length + ' topics · ' + areaQuestions + ' questions</small></summary><div class="topics">' +
           '<button class="btn ghost small" data-act="custom-area" data-id="' + esc(a.id) + '">' + (n ? 'Clear this area' : 'Select whole area') + '</button>';
         a.topics.forEach(function (t) {
           if (!t.count) {
