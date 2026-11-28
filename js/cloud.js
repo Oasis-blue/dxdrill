@@ -8,6 +8,26 @@
   var C = { sb: null, user: null, profile: null, ok: false, msg: "", err: "", busy: false, mode: "in", board: { days: 7, cls: "", loaded: false, students: [], classes: [], error: "" } };
   DX.cloud = C;
   C.tfStats = { loading: false, loaded: false, data: null, error: "" };
+  C.reviewMistakes = { loading: false, loaded: false, rows: [], error: "" };
+  DX.remoteMissedIds = {};
+  C.loadReviewMistakes = function (force) {
+    var R = C.reviewMistakes;
+    if (!C.ok || !C.user || R.loading || (R.loaded && !force)) return Promise.resolve(R.rows);
+    R.loading = true; R.error = "";
+    return C.sb.rpc("my_review_mistakes").then(function (res) {
+      R.loading = false; R.loaded = true;
+      if (res.error) { R.error = "Could not load synced mistakes. Check that supabase/update-22.sql has been run."; return R.rows; }
+      R.rows = Array.isArray(res.data) ? res.data : [];
+      var ids = {};
+      R.rows.forEach(function (x) { if (x && x.question_id && !x.last_attempt_correct) ids[String(x.question_id)] = true; });
+      DX.remoteMissedIds = ids;
+      if (DX.practice && DX.practice.refreshProgress) DX.practice.refreshProgress();
+      return R.rows;
+    }).catch(function () {
+      R.loading = false; R.loaded = true; R.error = "Could not reach the server.";
+      return R.rows;
+    });
+  };
 
   function classLabel(id) {
     var c = DX.curriculum.classes.filter(function (x) { return x.id === id; })[0];
