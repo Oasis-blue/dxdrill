@@ -242,9 +242,9 @@
   /* Scores: queued on the device and sent when signed in, so nothing is lost offline. */
   function queue() { return DX.store.get("dx.pending", []); }
   function tfQueue() { return DX.store.get("dx.tf.pending", []); }
-  var tfFlushing = false;
+  var tfFlushing = false, tfRetryBlocked = false;
   function flushTF() {
-    if (!C.ok || !C.user || tfFlushing) return Promise.resolve();
+    if (!C.ok || !C.user || tfFlushing || tfRetryBlocked) return Promise.resolve();
     var q = tfQueue(); if (!q.length) return Promise.resolve();
     var batch = q.slice(0, 100), sent = Object.create(null);
     batch.forEach(function (x) { sent[x.attempt_id + "|" + x.stem_id] = 1; });
@@ -253,22 +253,39 @@
       return { attempt_id: x.attempt_id, stem_id: x.stem_id, topic_id: x.topic_id,
         answered_count: x.answered_count, correct_count: x.correct_count, total_count: x.total_count };
     }), { onConflict: "user_id,attempt_id,stem_id", ignoreDuplicates: true }).then(function (r) {
-      if (!r.error) DX.store.set("dx.tf.pending", tfQueue().filter(function (x) { return !sent[x.attempt_id + "|" + x.stem_id]; }));
-      else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.tf.pending", []);
+      if (!r.error) {
+        DX.store.set("dx.tf.pending", tfQueue().filter(function (x) { return !sent[x.attempt_id + "|" + x.stem_id]; }));
+        tfRetryBlocked = false;
+      } else if (/daily limit/i.test(r.error.message || "")) {
+        /* Keep the unsent attempts. Retry after the limit window, not by deleting learning history. */
+        tfRetryBlocked = true;
+      }
       tfFlushing = false;
       if (!r.error && tfQueue().length) return flushTF();
     }).catch(function () { tfFlushing = false; });
   }
+  var mcqFlushing = false, mcqRetryBlocked = false;
   function flush() {
-    if (!C.ok || !C.user) return Promise.resolve();
+    if (!C.ok || !C.user || mcqFlushing || mcqRetryBlocked) return Promise.resolve();
     var q = queue();
     if (!q.length) return flushTF();
     var batch = q.slice(0, 200);
+    mcqFlushing = true;
     return C.sb.from("answers").insert(batch.map(function (x) { return { question_id: x.id, correct: x.ok }; })).then(function (r) {
-      if (!r.error) DX.store.set("dx.pending", q.slice(batch.length));
-      else if (/daily limit/i.test(r.error.message || "")) DX.store.set("dx.pending", []);
+      if (!r.error) {
+        var current = queue();
+        /* Remove only the batch that was actually sent; keep anything queued during the request. */
+        var samePrefix = batch.every(function (x, i) { return current[i] && current[i].id === x.id && current[i].ok === x.ok; });
+        if (samePrefix) DX.store.set("dx.pending", current.slice(batch.length));
+        mcqRetryBlocked = false;
+      } else if (/daily limit/i.test(r.error.message || "")) {
+        /* Do not silently discard pending answers when the server's daily cap is reached. */
+        mcqRetryBlocked = true;
+      }
+      mcqFlushing = false;
+      if (!r.error && queue().length) return flush();
       return flushTF();
-    }).catch(function () { return flushTF(); });
+    }).catch(function () { mcqFlushing = false; return flushTF(); });
   }
   C.submit = function (items) {
     var q = queue().concat(items.map(function (x) { return { id: String(x.id), ok: !!x.ok }; })), seen = Object.create(null);
@@ -292,7 +309,7 @@
     DX.store.set("dx.tf.pending", q.slice(-500));
     flushTF();
   };
-  window.addEventListener("online", function () { flush(); });
+  window.addEventListener("online", function () { mcqRetryBlocked = false; tfRetryBlocked = false; flush(); });
 
   /* ---------- question reports ---------- */
   C.reports = { loaded: false, rows: [], error: "" };
