@@ -122,3 +122,7 @@ Ideas for later: streaks, histology picture questions, viva and clerking practic
 
 ## Review mistakes
 Signed-in learners can review MCQs previously answered incorrectly. The list syncs across devices, uses the current question bank for full question content and explanations, and removes questions from active review after a later correct answer. Run `supabase/update-22.sql` after update-21 for existing databases; fresh installs use `supabase/setup.sql`.
+
+
+## Personal learning analytics
+The account dashboard includes a 14-day activity trend, daily practice totals, activity in the last 7 days, active days, and topic accuracy comparisons between the latest and preceding 14-day periods. Trends require recorded activity in both periods. Existing databases should run `supabase/update-23.sql` after update-22; fresh installs use `supabase/setup.sql`.
