@@ -483,3 +483,9 @@ details.secs .secbody{padding:12px;display:flex;flex-direction:column;gap:10px}
   .custom-subject>summary,.custom-area>summary{align-items:flex-start}
   .custom-subject>summary>small,.custom-area>summary>small{max-width:48%;font-size:11px}
 }
+
+
+/* Promote True/False as a core learning route on the home page. */
+.tf-feature{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 5%,var(--surface));}
+.tf-feature .eyebrow{margin:0 0 6px;color:var(--accent);font-weight:700;}
+.tf-feature .row{margin-top:12px;flex-wrap:wrap;}
