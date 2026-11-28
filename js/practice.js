@@ -13,8 +13,8 @@
     if (sc.kind === "area") return qs.filter(function (q) { return q.area === sc.id; });
     if (sc.kind === "topic") return qs.filter(function (q) { return q.topic === sc.id; });
     if (sc.kind === "missed") {
-      var st = DX.stats();
-      return qs.filter(function (q) { return st[q.id] && st[q.id].last === 0; });
+      var st = DX.stats(), remote = DX.remoteMissedIds || {};
+      return qs.filter(function (q) { return (st[q.id] && st[q.id].last === 0) || remote[String(q.id)]; });
     }
     return [];
   }
@@ -306,6 +306,7 @@
   }
   function render(el) {
     if (el) app = el;
+    if (P.view === "pick" && DX.cloud && DX.cloud.loadReviewMistakes) DX.cloud.loadReviewMistakes();
     if (!restored && DX.questions && DX.questions.length && !DX.loadingQuestions && !(P.run && !P.run.done)) restoreRun();
     var h;
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
