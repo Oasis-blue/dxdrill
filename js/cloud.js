@@ -7,6 +7,7 @@
   };
   var C = { sb: null, user: null, profile: null, ok: false, msg: "", err: "", busy: false, mode: "in", board: { days: 7, cls: "", loaded: false, students: [], classes: [], error: "" } };
   DX.cloud = C;
+  C.tfStats = { loading: false, loaded: false, data: null, error: "" };
 
   function classLabel(id) {
     var c = DX.curriculum.classes.filter(function (x) { return x.id === id; })[0];
@@ -42,6 +43,27 @@
       C.down = C.isDown(r.error);
       C.profile = r.data || null;
     });
+  }
+  function loadMyTFStats() {
+    var S = C.tfStats;
+    if (!C.ok || !C.user || S.loading || S.loaded) return;
+    S.loading = true;
+    C.sb.rpc("my_tf_activity").then(function (r) {
+      S.loading = false; S.loaded = true;
+      if (r.error) { S.error = "Could not load synced True/False activity. Check that update-20.sql has been run."; }
+      else { S.data = (r.data || [])[0] || null; }
+      repaint();
+    }).catch(function () { S.loading = false; S.loaded = true; S.error = "Could not reach the server."; repaint(); });
+  }
+  function tfStatsHtml() {
+    var S = C.tfStats, d = S.data || {};
+    if (!S.loaded || S.loading) return '<section class="section stack"><h2>True/False progress</h2><p class="muted">Loading synced activity…</p></section>';
+    if (S.error) return '<section class="section stack"><h2>True/False progress</h2><p class="hint">' + esc(S.error) + '</p></section>';
+    return '<section class="section stack"><h2>True/False progress</h2><p class="hint">Synced activity from this account. Detailed statement-by-statement revision remains available in True/False practice.</p>' +
+      '<div class="statrow"><div class="stat"><b>' + (d.stems_attempted || 0) + '</b><span>stems attempted</span></div>' +
+      '<div class="stat"><b>' + (d.stems_completed || 0) + '</b><span>fully answered</span></div>' +
+      '<div class="stat"><b>' + (d.statements || 0) + '</b><span>statements answered</span></div>' +
+      '<div class="stat"><b>' + (d.accuracy == null ? "—" : d.accuracy + "%") + '</b><span>accuracy</span></div></div></section>';
   }
   function loadClasses() {
     return C.sb.from("classes").select("id,name,level").then(function (r) {
@@ -82,6 +104,7 @@
     if (DX.features) DX.features.load();
     C.sb.auth.onAuthStateChange(function (ev, session) {
       C.user = session ? session.user : null;
+      if (!C.user) C.tfStats = { loading: false, loaded: false, data: null, error: "" };
       F = {};
       if (ev === "PASSWORD_RECOVERY") { C.mode = "reset"; C.err = ""; C.msg = ""; if ((location.hash || "") !== "#account") location.hash = "#account"; }
       loadProfile().then(function () { flush(); repaint(); });
@@ -284,7 +307,7 @@
     return '<div class="wrap stack"><header><p class="eyebrow">Account</p><h1>' + esc(p.display_name || "Your account") + '</h1><p class="lede">' + esc(C.user.email || "") + (p.is_admin ? " · admin" : "") + '</p></header>' + note +
       '<section class="section stack"><div class="field"><label class="label" for="ac-name">Name shown on the leaderboard</label><input type="text" id="ac-name" maxlength="40" value="' + esc(p.display_name) + '"></div>' +
       '<div class="field"><label class="label" for="ac-class">Class</label>' + classSelect("ac-class", p.class_id || "") + '</div>' +
-      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
+      '<div class="row tight"><button class="btn primary" data-act="psave">Save</button><button class="btn ghost" data-act="signout">Sign out</button><a class="btn" href="#board" style="text-decoration:none">Open leaderboards</a></div></section>' + tfStatsHtml() + admin + (p.is_admin ? membersAdminHtml() + reportsAdminHtml() : "") + '</div>';
   }
   /* What the person has typed on the account form is remembered, so an error message does not wipe their fields. Passwords stay in memory only. */
   var F = {}, FIELDS = ["ac-name", "ac-class", "ac-email", "ac-pw", "ac-pw2"];
@@ -381,7 +404,7 @@
     var map = { "ms-q": "msearch", "ac-pw": null };
     if (e.target.id === "ms-q") { var bt = document.querySelector('[data-act="msearch"]'); if (bt) bt.click(); }
   });
-  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
+  DX.account = { render: function (a) { app = a; a.innerHTML = accountView(); restoreForm(); if (C.ok && C.user) loadMyTFStats(); if (C.ok && C.user && C.profile && C.profile.is_admin) { if (!C.reports.loaded) loadReports(); if (!C.members.loaded && !C.members.loading) { C.members.loading = true; loadMembers(); } } }, onClick: accountClick, onKey: function () { }, onInput: function (e) { var id = e.target && e.target.id; if (id && FIELDS.indexOf(id) >= 0) F[id] = e.target.value; }, leave: function () { C.reports.loaded = false; C.members.loaded = false; if (C.mode === "forgot") C.mode = "in"; } };
 
   /* ---------- leaderboards ---------- */
   function loadBoard() {
