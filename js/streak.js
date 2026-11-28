@@ -44,11 +44,14 @@
     if (s.last !== t && s.n >= DAY_MIN) {
       s.c = (s.last === yesterday()) ? (s.c || 0) + 1 : 1;
       s.last = t;
+      streakJustCompleted = true;
       if (s.c > (s.best || 0)) s.best = s.c;
       msg = s.c === 1 ? "Streak started. Come back tomorrow to keep it going." :
         ([3, 7, 14, 30, 60, 100].indexOf(s.c) > -1 ? s.c + " days in a row. Well done." : s.c + "-day streak. See you tomorrow.");
     }
+    if (streakJustCompleted && s.days.indexOf(t) < 0) s.days.push(t);
     S.set(KEY, s);
+    if (streakJustCompleted && DX.cloud && DX.cloud.syncStreak) DX.cloud.syncStreak();
     if (msg) setTimeout(function () { DX.toast(msg); }, 700);
   };
 
@@ -112,7 +115,7 @@
       if (first) seen = finishedTopics();
       orig(items); saved = true;
 
-      var s = load(), t = today();
+      var s = load(), t = today(), streakJustCompleted = false;
       if (s.d !== t) { s.d = t; s.n = 0; }
       s.n += items.length;
       if (s.last !== t && s.n >= DAY_MIN) {
@@ -122,7 +125,9 @@
         else if ([3, 7, 14, 30, 60, 100].indexOf(s.c) > -1) msgs.push(s.c + " days in a row. Well done.");
         else msgs.push(s.c + "-day streak. See you tomorrow.");
       }
+      if (streakJustCompleted && s.days.indexOf(t) < 0) s.days.push(t);
       S.set(KEY, s);
+      if (streakJustCompleted && DX.cloud && DX.cloud.syncStreak) DX.cloud.syncStreak();
 
       var run = 0, best = 0;
       items.forEach(function (x) { run = x.ok ? run + 1 : 0; if (run > best) best = run; });
