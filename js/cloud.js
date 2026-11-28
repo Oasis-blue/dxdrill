@@ -92,6 +92,7 @@
           if (S.waitingForBank) {
             S.waitingForBank = false;
             loadMyTFStats();
+            loadMyAnalytics();
           }
         };
       }
