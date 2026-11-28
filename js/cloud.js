@@ -109,6 +109,7 @@
     });
     return map;
   }
+  C.loadLearningProgress = function () { loadMyTFStats(); loadMyAnalytics(); };
   function loadMyTFStats() {
     var S = C.tfStats;
     if (!C.ok || !C.user || S.loading || S.loaded) return;
