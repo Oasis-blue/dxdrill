@@ -85,10 +85,11 @@
   }
   function setupHtml() {
     var c = counts(), n = build().length;
-    return '<header><p class="eyebrow">Flashcards</p><h1>Recall it first</h1><p class="lede">Try to remember the answer before you look. Cards you miss come back soon, and cards you know come back later. Your progress is saved on this device.</p></header>' +
+    return '<header><p class="eyebrow">Flashcards</p><h1>Recall it first</h1><p class="lede">Try to remember the answer before you look. Cards you miss come back soon, and cards you know come back later. Progress is saved on this device and syncs to your account when signed in and account sync is configured.</p></header>' +
       '<section class="fc fcf"><div class="field"><label class="label" for="fc-scope">What to study</label><select id="fc-scope">' + scopeOptions() + '</select></div>' +
       '<div class="field"><label class="label" for="fc-kind">Cards</label><select id="fc-kind"><option value="both"' + (F.kind === "both" ? " selected" : "") + '>Terms and questions</option><option value="t"' + (F.kind === "t" ? " selected" : "") + '>Terms only (clues)</option><option value="q"' + (F.kind === "q" ? " selected" : "") + '>Questions only</option></select></div>' +
       '<div class="field"><label class="label" for="fc-size">Cards this round</label><select id="fc-size">' + ["10", "20", "40", "all"].map(function (v) { return '<option value="' + v + '"' + (String(F.size) === v ? " selected" : "") + '>' + (v === "all" ? "All that are due and new" : v) + '</option>'; }).join("") + '</select></div>' +
+      (DX.cloud && DX.cloud.cardReviews && DX.cloud.cardReviews.error ? '<p class="hint">' + esc(DX.cloud.cardReviews.error) + '</p>' : '') +
       '<div class="fcstats"><span>' + c.all + ' cards</span><span>' + c.due + ' due</span><span>' + c.fresh + ' new</span><span>' + c.known + ' well known</span></div>' +
       (n ? '<div class="row tight"><button class="btn primary" data-act="start">Start (' + n + ' cards)</button></div>' : '<p class="muted">Nothing is due here right now. Come back tomorrow, or pick something wider.</p>') +
       '</section>';
