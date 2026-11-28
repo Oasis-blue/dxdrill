@@ -9,6 +9,7 @@
     var qs = DX.questions;
     if (sc.kind === "all") return qs;
     if (sc.kind === "subject") return qs.filter(function (q) { return q.subject === sc.id; });
+    if (sc.kind === "custom") return qs.filter(function (q) { return sc.ids.indexOf(q.subject) > -1; });
     if (sc.kind === "area") return qs.filter(function (q) { return q.area === sc.id; });
     if (sc.kind === "topic") return qs.filter(function (q) { return q.topic === sc.id; });
     if (sc.kind === "missed") {
@@ -21,6 +22,7 @@
     if (sc.kind === "all") return "All questions";
     if (sc.kind === "missed") return "Questions I missed last time";
     if (sc.kind === "subject") return DX.subjectById[sc.id].name;
+    if (sc.kind === "custom") return sc.ids.map(function (id) { return DX.subjectById[id] && DX.subjectById[id].name; }).filter(Boolean).join(" + ") || "Selected subjects";
     if (sc.kind === "area") return DX.areaById[sc.id].name;
     if (sc.kind === "topic") return DX.topicById[sc.id].name;
     return "";
@@ -45,7 +47,7 @@
     var total = DX.questions.length, missed = scopeQs({ kind: "missed" }).length;
     var h = '<div class="wrap stack"><a class="backtop" href="#home">\u2190 Home</a><header><p class="eyebrow">Practice</p><h1>Choose what to drill</h1>' +
       '<p class="lede">' + total + (DX.loadingQuestions ? ' questions loaded so far. More are arriving in the background.' : ' questions.') + ' Tap an area to see its topics, which follow the MDCN curriculum. Greyed-out topics have no questions yet.</p>' + (DX.tfStems && DX.tfStems.length ? '<p class="hint">Exam in true/false style? <a href="#truefalse">Practise ' + DX.tfStems.length + ' exam-style stems</a>.</p>' : '') + '</header>' +
-      '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button>' +
+      '<section class="row"><button class="btn primary" data-act="scope" data-kind="all">All questions · ' + total + '</button><button class="btn" data-act="custom">Choose multiple subjects</button>' +
       (missed ? '<button class="btn" data-act="scope" data-kind="missed">Review what I missed · ' + missed + '</button>' : '') + '</section>' +
       '<div class="pkfind"><input type="search" id="pk-find" placeholder="Find a topic, e.g. nephron or brachial" autocomplete="off" aria-label="Find a topic"></div><p class="muted" id="pk-none" hidden>No topic matches that.</p>';
     DX.curriculum.subjects.forEach(function (s) {
@@ -64,6 +66,27 @@
       h += '</section></details>';
     });
     return h + '</div>';
+  }
+
+  /* ---------- custom subject selection ---------- */
+  function customView() {
+    var subjects = DX.curriculum.subjects;
+    var selectedCount = P.customSubjects.filter(function (id) { return DX.subjectCount(id) > 0; }).length;
+    var total = subjects.filter(function (s) { return DX.subjectCount(s.id) > 0; }).length;
+    var rows = subjects.map(function (s) {
+      var n = DX.subjectCount(s.id), on = P.customSubjects.indexOf(s.id) > -1;
+      return '<button type="button" class="chip toggle subject-choice' + (n ? '' : ' empty') + '" data-act="custom-sub" data-id="' + esc(s.id) + '"' +
+        (n ? '' : ' disabled') + ' aria-pressed="' + on + '"><span>' + esc(s.name) + '</span><small>' + (n ? n + ' questions' : 'No questions yet') + '</small></button>';
+    }).join('');
+    return '<div class="wrap stack"><button class="backtop" data-act="topics" type="button">← Back to practice</button>' +
+      '<header><p class="eyebrow">Custom practice</p><h1>Choose your subjects</h1>' +
+      '<p class="lede">Select any combination. Only questions from the subjects you choose will be included.</p></header>' +
+      '<div class="row tight"><button class="btn ghost small" data-act="custom-all">Select all available</button>' +
+      '<button class="btn ghost small" data-act="custom-none">Clear selection</button></div>' +
+      '<section class="section"><div class="chips subject-choices">' + rows + '</div>' +
+      '<p class="muted">' + selectedCount + ' of ' + total + ' subjects selected</p></section>' +
+      '<section class="row stickystart"><button class="btn primary" data-act="custom-continue"' + (selectedCount ? '' : ' disabled') + '>Continue · ' + selectedCount + ' subjects</button>' +
+      '<button class="btn ghost" data-act="topics">Cancel</button></section></div>';
   }
 
   /* ---------- setup ---------- */
@@ -233,6 +256,7 @@
     var rn = document.getElementById("rp-note"), rr = document.getElementById("rp-reason");
     if (P.report && rn) { P.report.note = rn.value; if (rr) P.report.reason = rr.value; }
     if (P.view === "pick" || !P.scope) h = pickView();
+    else if (P.view === "custom") h = customView();
     else if (P.view === "setup") h = setupView();
     else if (P.run && P.run.done) h = resultsView();
     else if (P.run) h = questionView();
@@ -279,7 +303,27 @@
         keepScroll();
       });
     }
-    else if (a === "scope") {
+    else if (a === "custom") {
+      P.customSubjects = [];
+      P.view = "custom"; P.scope = null; P.run = null;
+      render(); window.scrollTo(0, 0);
+    } else if (a === "custom-sub" || a === "custom-all" || a === "custom-none") {
+      if (!P.customSubjects) P.customSubjects = [];
+      if (a === "custom-sub") {
+        var sid = b.getAttribute("data-id"), si = P.customSubjects.indexOf(sid);
+        if (si > -1) P.customSubjects.splice(si, 1); else if (DX.subjectCount(sid) > 0) P.customSubjects.push(sid);
+      } else if (a === "custom-all") {
+        P.customSubjects = DX.curriculum.subjects.filter(function (s) { return DX.subjectCount(s.id) > 0; }).map(function (s) { return s.id; });
+      } else P.customSubjects = [];
+      var cy = window.scrollY; render(); window.scrollTo(0, cy);
+    } else if (a === "custom-continue") {
+      var chosen = (P.customSubjects || []).filter(function (id) { return DX.subjectCount(id) > 0; });
+      if (!chosen.length) return;
+      P.scope = { kind: "custom", ids: chosen.slice() };
+      P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.mode = "study";
+      P.view = "setup"; P.run = null; P.secOpen = false;
+      render(); window.scrollTo(0, 0);
+    } else if (a === "scope") {
       P.scope = { kind: b.getAttribute("data-kind"), id: b.getAttribute("data-id") };
       P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.view = "setup"; P.run = null; P.secOpen = false;
       render(); window.scrollTo(0, 0);
