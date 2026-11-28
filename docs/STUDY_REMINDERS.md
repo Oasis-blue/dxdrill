@@ -23,14 +23,15 @@ The current streak is device-local in `js/streak.js`. It uses the Lagos calendar
    - `VAPID_PRIVATE_KEY` — private key from the generator (keep secret)
    - `VAPID_SUBJECT` — a contact URI such as `mailto:your-real-contact-email@example.com` (replace with a real address)
 5. Run `supabase/update-25.sql` in SQL Editor. It enables the scheduler extensions, creates a random shared scheduler secret in Vault, and schedules the function once per minute.
-6. Run this query in SQL Editor and copy the returned value directly into the Edge Function secret named `REMINDER_CRON_SECRET`:
+6. Run `supabase/update-26.sql` in SQL Editor. It installs the atomic delivery-claim function used to retry failed/skipped reminders without duplicating reminders already queued or sent.
+7. Run this query in SQL Editor and copy the returned value directly into the Edge Function secret named `REMINDER_CRON_SECRET`:
    ```sql
    select decrypted_secret
    from vault.decrypted_secrets
    where name = 'dxdrill_reminder_cron_secret';
    ``
    Do not put that value in GitHub or send it in chat. Supabase's built-in `SUPABASE_URL`, `SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY` environment variables are used by the function; do not expose the service-role key.
-7. Sign in to DxDrill → Account → Study reminders, choose a time and days, then press **Enable notifications on this device**. The browser will ask for permission.
+8. Sign in to DxDrill → Account → Study reminders, choose a time and days, then press **Enable notifications on this device**. The browser will ask for permission.
 
 If the function was deployed before the secrets were added, redeploy/restart it if the Dashboard requires that for new secrets to take effect. Check Edge Function logs and Cron job run history if delivery does not work.
 
@@ -39,7 +40,7 @@ If the function was deployed before the secrets were added, redeploy/restart it 
 - Student requests are authenticated against Supabase Auth before subscription data is written.
 - Scheduler requests are accepted only with the shared random secret.
 - Students can access only their own preferences and subscriptions through RLS; delivery logs are server-managed.
-- Each account can receive at most one daily-practice reminder per local calendar day, even with multiple devices.
+- Each account can receive at most one successful daily-practice reminder per local calendar day, even with multiple devices. Failed/skipped attempts can be reclaimed during the five-minute schedule window; queued/sent attempts remain deduplicated.
 - Expired subscriptions (push service HTTP 404/410) are deleted.
 - Quiet hours and weekday preferences are evaluated in the saved IANA time zone.
 - The first version does not yet suppress a reminder based on same-day completed questions because the current local streak and Spotter activity are not authoritative server-side data. This can be added after the streak sync design is implemented.
