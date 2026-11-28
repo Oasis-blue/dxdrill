@@ -2,7 +2,7 @@
 -- Run once in Supabase SQL Editor. Safe to run again.
 
 create table if not exists public.card_reviews (
-  user_id uuid not null references auth.users(id) on delete cascade,
+  user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
   card_id text not null check (char_length(card_id) between 1 and 300),
   card_kind text not null check (card_kind in ('term','question')),
   topic_id text not null check (char_length(topic_id) between 1 and 160),
