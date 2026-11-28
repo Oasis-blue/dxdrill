@@ -23,6 +23,7 @@
       R.prefs = res.data || defaults();
       return sb.from("study_push_subscriptions").select("id").then(function (s) {
         R.subscription = !s.error && s.data && s.data.length > 0;
+        repaint();
       });
     }).catch(function () { R.loading = false; R.loaded = true; R.error = "Could not load reminder settings. Check your connection."; });
   };
@@ -80,8 +81,11 @@
       }).then(function (res) { if (!res.ok) throw new Error("Could not save this device's push subscription."); return sub; });
     }).then(function () {
       R.subscription = true; R.busy = false; R.error = "";
+      R.prefs = R.prefs || defaults(); R.prefs.enabled = true;
+      return R.save().then(function () {
       if (DX.toast) DX.toast("Study reminders enabled on this device.");
       repaint();
+      });
     }).catch(function (e) { R.busy = false; R.error = e.message || "Could not enable reminders."; repaint(); throw e; });
   };
   R.disable = function () {
@@ -96,7 +100,8 @@
       });
     }).then(function () {
       R.subscription = false; R.busy = false;
-      return sb.from("study_reminder_preferences").upsert({ user_id: DX.cloud.user.id, enabled: false }, { onConflict: "user_id" });
+      var off = R.prefs || defaults(); off.enabled = false; R.prefs = off;
+      return sb.from("study_reminder_preferences").upsert({ user_id: DX.cloud.user.id, enabled: false, local_time: off.local_time, timezone: off.timezone, days_of_week: off.days_of_week, reminder_type: "daily_practice" }, { onConflict: "user_id" });
     }).then(function (res) {
       if (res && res.error) throw res.error;
       if (DX.toast) DX.toast("Study reminders turned off on this device.");
@@ -110,9 +115,9 @@
     }).join("");
     var status = R.loading ? "Loading your settings…" : R.error ? R.error : R.subscription ? "This device is subscribed to push reminders." : "No device is subscribed yet.";
     return '<section class="section stack"><h2>Study reminders</h2><p class="hint">Choose when DxDrill should gently remind you to practise. Reminders are optional and can be switched off at any time.</p>' +
-      '<p class="hint">' + status + '</p>' +
+      '<p class="hint">' + DX.esc(status) + '</p>' +
       '<div class="field"><label class="label" for="rem-time">Reminder time</label><input id="rem-time" type="time" value="' + p.local_time + '"></div>' +
-      '<div class="field"><label class="label" for="rem-zone">Time zone (IANA)</label><input id="rem-zone" type="text" maxlength="80" value="' + p.timezone + '" placeholder="Africa/Lagos"></div>' +
+      '<div class="field"><label class="label" for="rem-zone">Time zone (IANA)</label><input id="rem-zone" type="text" maxlength="80" value="' + DX.esc(p.timezone) + '" placeholder="Africa/Lagos"></div>' +
       '<div class="field"><span class="label">Days</span><div class="rem-days">' + checks + '</div></div>' +
       '<div class="row tight"><button class="btn small" data-act="remsave"' + (R.busy ? " disabled" : "") + '>Save schedule</button>' +
       (R.subscription ? '<button class="btn small ghost" data-act="remoff"' + (R.busy ? " disabled" : "") + '>Turn off on this device</button>' : '<button class="btn small primary" data-act="remon"' + (R.busy ? " disabled" : "") + '>Enable notifications on this device</button>') + '</div>' +
