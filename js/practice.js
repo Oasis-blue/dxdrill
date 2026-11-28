@@ -9,7 +9,7 @@
     var qs = DX.questions;
     if (sc.kind === "all") return qs;
     if (sc.kind === "subject") return qs.filter(function (q) { return q.subject === sc.id; });
-    if (sc.kind === "custom") return qs.filter(function (q) { return sc.ids.indexOf(q.subject) > -1; });
+    if (sc.kind === "custom") return qs.filter(function (q) { return sc.topicIds.indexOf(q.topic) > -1; });
     if (sc.kind === "area") return qs.filter(function (q) { return q.area === sc.id; });
     if (sc.kind === "topic") return qs.filter(function (q) { return q.topic === sc.id; });
     if (sc.kind === "missed") {
@@ -22,7 +22,7 @@
     if (sc.kind === "all") return "All questions";
     if (sc.kind === "missed") return "Questions I missed last time";
     if (sc.kind === "subject") return DX.subjectById[sc.id].name;
-    if (sc.kind === "custom") return sc.ids.map(function (id) { return DX.subjectById[id] && DX.subjectById[id].name; }).filter(Boolean).join(" + ") || "Selected subjects";
+    if (sc.kind === "custom") return "Custom subject, area and topic selection";
     if (sc.kind === "area") return DX.areaById[sc.id].name;
     if (sc.kind === "topic") return DX.topicById[sc.id].name;
     return "";
@@ -68,25 +68,75 @@
     return h + '</div>';
   }
 
-  /* ---------- custom subject selection ---------- */
+  /* ---------- custom subject, area and topic selection ---------- */
+  function topicsForSubjects(ids) {
+    var out = [];
+    DX.curriculum.subjects.forEach(function (s) {
+      if (ids.indexOf(s.id) < 0) return;
+      s.areas.forEach(function (a) { a.topics.forEach(function (t) {
+        if (t.count > 0 && out.indexOf(t.id) < 0) out.push(t.id);
+      }); });
+    });
+    return out;
+  }
+  function topicIdsForArea(a) {
+    return a.topics.filter(function (t) { return t.count > 0; }).map(function (t) { return t.id; });
+  }
   function customView() {
     var subjects = DX.curriculum.subjects;
-    var selectedCount = P.customSubjects.filter(function (id) { return DX.subjectCount(id) > 0; }).length;
-    var total = subjects.filter(function (s) { return DX.subjectCount(s.id) > 0; }).length;
-    var rows = subjects.map(function (s) {
-      var n = DX.subjectCount(s.id), on = P.customSubjects.indexOf(s.id) > -1;
-      return '<button type="button" class="chip toggle subject-choice' + (n ? '' : ' empty') + '" data-act="custom-sub" data-id="' + esc(s.id) + '"' +
-        (n ? '' : ' disabled') + ' aria-pressed="' + on + '"><span>' + esc(s.name) + '</span><small>' + (n ? n + ' questions' : 'No questions yet') + '</small></button>';
-    }).join('');
-    return '<div class="wrap stack"><button class="backtop" data-act="topics" type="button">← Back to practice</button>' +
-      '<header><p class="eyebrow">Custom practice</p><h1>Choose your subjects</h1>' +
-      '<p class="lede">Select any combination. Only questions from the subjects you choose will be included.</p></header>' +
-      '<div class="row tight"><button class="btn ghost small" data-act="custom-all">Select all available</button>' +
-      '<button class="btn ghost small" data-act="custom-none">Clear selection</button></div>' +
-      '<section class="section"><div class="chips subject-choices">' + rows + '</div>' +
-      '<p class="muted">' + selectedCount + ' of ' + total + ' subjects selected</p></section>' +
-      '<section class="row stickystart"><button class="btn primary" data-act="custom-continue"' + (selectedCount ? '' : ' disabled') + '>Continue · ' + selectedCount + ' subjects</button>' +
-      '<button class="btn ghost" data-act="topics">Cancel</button></section></div>';
+    if (P.customStep !== "topics") {
+      var selectedCount = (P.customSubjects || []).filter(function (id) { return DX.subjectCount(id) > 0; }).length;
+      var total = subjects.filter(function (s) { return DX.subjectCount(s.id) > 0; }).length;
+      var rows = subjects.map(function (s) {
+        var n = DX.subjectCount(s.id), on = (P.customSubjects || []).indexOf(s.id) > -1;
+        return '<button type="button" class="chip toggle subject-choice' + (n ? '' : ' empty') + '" data-act="custom-sub" data-id="' + esc(s.id) + '"' +
+          (n ? '' : ' disabled') + ' aria-pressed="' + on + '"><span>' + esc(s.name) + '</span><small>' + (n ? n + ' questions' : 'No questions yet') + '</small></button>';
+      }).join('');
+      return '<div class="wrap stack"><button class="backtop" data-act="topics" type="button">← Back to practice</button>' +
+        '<header><p class="eyebrow">Custom practice · 1 of 2</p><h1>Choose your subjects</h1>' +
+        '<p class="lede">Select the subjects you want to combine. You can then keep whole subjects or narrow the selection to particular areas and topics.</p></header>' +
+        '<div class="row tight"><button class="btn ghost small" data-act="custom-all">Select all available</button>' +
+        '<button class="btn ghost small" data-act="custom-none">Clear selection</button></div>' +
+        '<section class="section"><div class="chips subject-choices">' + rows + '</div>' +
+        '<p class="muted">' + selectedCount + ' of ' + total + ' subjects selected</p></section>' +
+        '<section class="row stickystart"><button class="btn primary" data-act="custom-refine"' + (selectedCount ? '' : ' disabled') + '>Continue to areas and topics</button>' +
+        '<button class="btn ghost" data-act="topics">Cancel</button></section></div>';
+    }
+    var chosen = P.customSubjects || [], selected = P.customTopicIds || [];
+    var selectedQuestions = scopeQs({ kind: "custom", topicIds: selected }).length;
+    var h = '<div class="wrap stack"><button class="backtop" data-act="custom-back" type="button">← Change subjects</button>' +
+      '<header><p class="eyebrow">Custom practice · 2 of 2</p><h1>Choose areas and topics</h1>' +
+      '<p class="lede">Everything in your selected subjects starts included. Turn off a whole subject to pick only certain areas or topics within it. You can also select or clear an entire area.</p></header>' +
+      '<section class="row tight"><button class="btn ghost small" data-act="custom-reset">Restore all selected subjects</button>' +
+      '<button class="btn ghost small" data-act="custom-clear-topics">Clear all topics</button></section>';
+    subjects.forEach(function (sub) {
+      if (chosen.indexOf(sub.id) < 0) return;
+      var subTopics = [];
+      sub.areas.forEach(function (a) { subTopics = subTopics.concat(topicIdsForArea(a)); });
+      var subOn = subTopics.length > 0 && subTopics.every(function (id) { return selected.indexOf(id) > -1; });
+      h += '<details class="acc subj" open><summary><span>' + esc(sub.name) + '</span><small>' + (subOn ? 'Whole subject selected' : 'Selected topics') + '</small></summary>' +
+        '<section class="section subjbody"><div class="shead"><button class="btn ghost small" data-act="custom-sub-all" data-id="' + esc(sub.id) + '" aria-pressed="' + subOn + '">' +
+        (subOn ? 'Clear subject' : 'Select whole subject') + '</button></div>';
+      sub.areas.forEach(function (a) {
+        var ids = topicIdsForArea(a), n = ids.filter(function (id) { return selected.indexOf(id) > -1; }).length;
+        var allOn = ids.length > 0 && n === ids.length;
+        h += '<details class="acc"><summary><span>' + esc(a.name) + '</span><small>' + n + ' of ' + ids.length + ' topics</small></summary><div class="topics">' +
+          '<button class="btn ghost small" data-act="custom-area" data-id="' + esc(a.id) + '">' + (allOn ? 'Clear this area' : 'Select whole area') + '</button>';
+        a.topics.forEach(function (t) {
+          if (!t.count) {
+            h += '<button class="topic empty" disabled><span>' + esc(t.name) + '</span><small>none yet</small></button>';
+            return;
+          }
+          var on = selected.indexOf(t.id) > -1;
+          h += '<button class="topic' + (on ? ' selected' : '') + '" data-act="custom-topic" data-id="' + esc(t.id) + '" aria-pressed="' + on + '"><span>' + esc(t.name) + '</span><small>' + t.count + ' questions · ' + (on ? 'Selected' : 'Add') + '</small></button>';
+        });
+        h += '</div></details>';
+      });
+      h += '</section></details>';
+    });
+    return h + '<section class="section"><p class="muted">' + selected.length + ' topics selected · ' + selectedQuestions + ' questions included</p></section>' +
+      '<section class="row stickystart"><button class="btn primary" data-act="custom-finish"' + (selectedQuestions ? '' : ' disabled') + '>Continue · ' + selectedQuestions + ' questions</button>' +
+      '<button class="btn ghost" data-act="custom-back">Back</button></section></div>';
   }
 
   /* ---------- setup ---------- */
@@ -316,10 +366,40 @@
         P.customSubjects = DX.curriculum.subjects.filter(function (s) { return DX.subjectCount(s.id) > 0; }).map(function (s) { return s.id; });
       } else P.customSubjects = [];
       var cy = window.scrollY; render(); window.scrollTo(0, cy);
-    } else if (a === "custom-continue") {
-      var chosen = (P.customSubjects || []).filter(function (id) { return DX.subjectCount(id) > 0; });
-      if (!chosen.length) return;
-      P.scope = { kind: "custom", ids: chosen.slice() };
+    } else if (a === "custom-refine") {
+      var chosenSubjects = (P.customSubjects || []).filter(function (id) { return DX.subjectCount(id) > 0; });
+      if (!chosenSubjects.length) return;
+      P.customSubjects = chosenSubjects;
+      P.customTopicIds = topicsForSubjects(chosenSubjects);
+      P.customStep = "topics"; render(); window.scrollTo(0, 0);
+    } else if (a === "custom-back") {
+      P.customStep = "subjects"; render(); window.scrollTo(0, 0);
+    } else if (a === "custom-reset") {
+      P.customTopicIds = topicsForSubjects(P.customSubjects || []); render(); window.scrollTo(0, 0);
+    } else if (a === "custom-clear-topics") {
+      P.customTopicIds = []; render(); window.scrollTo(0, 0);
+    } else if (a === "custom-sub-all" || a === "custom-area" || a === "custom-topic") {
+      var ids = [];
+      if (a === "custom-sub-all") {
+        var selectedSub = DX.curriculum.subjects.filter(function (x) { return x.id === b.getAttribute("data-id"); })[0];
+        if (selectedSub) selectedSub.areas.forEach(function (ar) { ids = ids.concat(topicIdsForArea(ar)); });
+      } else if (a === "custom-area") {
+        DX.curriculum.subjects.forEach(function (x) { x.areas.forEach(function (ar) {
+          if (ar.id === b.getAttribute("data-id")) ids = topicIdsForArea(ar);
+        }); });
+      } else ids = [b.getAttribute("data-id")];
+      var allSelected = ids.length && ids.every(function (id) { return (P.customTopicIds || []).indexOf(id) > -1; });
+      if (!P.customTopicIds) P.customTopicIds = [];
+      ids.forEach(function (id) {
+        var ix = P.customTopicIds.indexOf(id);
+        if (allSelected) { if (ix > -1) P.customTopicIds.splice(ix, 1); }
+        else if (ix < 0) P.customTopicIds.push(id);
+      });
+      var ty = window.scrollY; render(); window.scrollTo(0, ty);
+    } else if (a === "custom-finish") {
+      var topicIds = (P.customTopicIds || []).slice();
+      if (!topicIds.length) return;
+      P.scope = { kind: "custom", topicIds: topicIds };
       P.subs = unique(scopeQs(P.scope).map(subOf)); P.count = "all"; P.mode = "study";
       P.view = "setup"; P.run = null; P.secOpen = false;
       render(); window.scrollTo(0, 0);
